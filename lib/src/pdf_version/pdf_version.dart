@@ -14,6 +14,5 @@ abstract class PdfVersion with _$PdfVersion {
     @JsonKey(name: 'text_preview') @required String textPreview,
   }) = _PdfVersion;
 
-  factory PdfVersion.fromJson(Map<String, dynamic> json) =>
-      _$PdfVersionFromJson(json);
+  factory PdfVersion.fromJson(Map<String, dynamic> json) => _$PdfVersionFromJson(json);
 }

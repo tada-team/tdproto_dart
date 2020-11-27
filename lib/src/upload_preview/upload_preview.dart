@@ -20,6 +20,5 @@ abstract class UploadPreview with _$UploadPreview {
     @JsonKey(name: 'height') @required int height,
   }) = _UploadPreview;
 
-  factory UploadPreview.fromJson(Map<String, dynamic> json) =>
-      _$UploadPreviewFromJson(json);
+  factory UploadPreview.fromJson(Map<String, dynamic> json) => _$UploadPreviewFromJson(json);
 }
