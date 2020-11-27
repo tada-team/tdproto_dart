@@ -106,8 +106,7 @@ mixin _$Upload {
 
 /// @nodoc
 abstract class $UploadCopyWith<$Res> {
-  factory $UploadCopyWith(Upload value, $Res Function(Upload) then) =
-      _$UploadCopyWithImpl<$Res>;
+  factory $UploadCopyWith(Upload value, $Res Function(Upload) then) = _$UploadCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'created') String created,
@@ -120,6 +119,9 @@ abstract class $UploadCopyWith<$Res> {
       @JsonKey(name: 'animated') bool animated,
       @JsonKey(name: 'processing') bool processing,
       @JsonKey(name: 'pdf_version') PdfVersion pdfVersion});
+
+  $UploadPreviewCopyWith<$Res> get preview;
+  $PdfVersionCopyWith<$Res> get pdfVersion;
 }
 
 /// @nodoc
@@ -152,21 +154,37 @@ class _$UploadCopyWithImpl<$Res> implements $UploadCopyWith<$Res> {
       name: name == freezed ? _value.name : name as String,
       url: url == freezed ? _value.url : url as String,
       preview: preview == freezed ? _value.preview : preview as UploadPreview,
-      contentType:
-          contentType == freezed ? _value.contentType : contentType as String,
+      contentType: contentType == freezed ? _value.contentType : contentType as String,
       animated: animated == freezed ? _value.animated : animated as bool,
-      processing:
-          processing == freezed ? _value.processing : processing as bool,
-      pdfVersion:
-          pdfVersion == freezed ? _value.pdfVersion : pdfVersion as PdfVersion,
+      processing: processing == freezed ? _value.processing : processing as bool,
+      pdfVersion: pdfVersion == freezed ? _value.pdfVersion : pdfVersion as PdfVersion,
     ));
+  }
+
+  @override
+  $UploadPreviewCopyWith<$Res> get preview {
+    if (_value.preview == null) {
+      return null;
+    }
+    return $UploadPreviewCopyWith<$Res>(_value.preview, (value) {
+      return _then(_value.copyWith(preview: value));
+    });
+  }
+
+  @override
+  $PdfVersionCopyWith<$Res> get pdfVersion {
+    if (_value.pdfVersion == null) {
+      return null;
+    }
+    return $PdfVersionCopyWith<$Res>(_value.pdfVersion, (value) {
+      return _then(_value.copyWith(pdfVersion: value));
+    });
   }
 }
 
 /// @nodoc
 abstract class _$UploadCopyWith<$Res> implements $UploadCopyWith<$Res> {
-  factory _$UploadCopyWith(_Upload value, $Res Function(_Upload) then) =
-      __$UploadCopyWithImpl<$Res>;
+  factory _$UploadCopyWith(_Upload value, $Res Function(_Upload) then) = __$UploadCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'uid') String uid,
@@ -180,13 +198,16 @@ abstract class _$UploadCopyWith<$Res> implements $UploadCopyWith<$Res> {
       @JsonKey(name: 'animated') bool animated,
       @JsonKey(name: 'processing') bool processing,
       @JsonKey(name: 'pdf_version') PdfVersion pdfVersion});
+
+  @override
+  $UploadPreviewCopyWith<$Res> get preview;
+  @override
+  $PdfVersionCopyWith<$Res> get pdfVersion;
 }
 
 /// @nodoc
-class __$UploadCopyWithImpl<$Res> extends _$UploadCopyWithImpl<$Res>
-    implements _$UploadCopyWith<$Res> {
-  __$UploadCopyWithImpl(_Upload _value, $Res Function(_Upload) _then)
-      : super(_value, (v) => _then(v as _Upload));
+class __$UploadCopyWithImpl<$Res> extends _$UploadCopyWithImpl<$Res> implements _$UploadCopyWith<$Res> {
+  __$UploadCopyWithImpl(_Upload _value, $Res Function(_Upload) _then) : super(_value, (v) => _then(v as _Upload));
 
   @override
   _Upload get _value => super._value as _Upload;
@@ -213,13 +234,10 @@ class __$UploadCopyWithImpl<$Res> extends _$UploadCopyWithImpl<$Res>
       name: name == freezed ? _value.name : name as String,
       url: url == freezed ? _value.url : url as String,
       preview: preview == freezed ? _value.preview : preview as UploadPreview,
-      contentType:
-          contentType == freezed ? _value.contentType : contentType as String,
+      contentType: contentType == freezed ? _value.contentType : contentType as String,
       animated: animated == freezed ? _value.animated : animated as bool,
-      processing:
-          processing == freezed ? _value.processing : processing as bool,
-      pdfVersion:
-          pdfVersion == freezed ? _value.pdfVersion : pdfVersion as PdfVersion,
+      processing: processing == freezed ? _value.processing : processing as bool,
+      pdfVersion: pdfVersion == freezed ? _value.pdfVersion : pdfVersion as PdfVersion,
     ));
   }
 }
@@ -250,8 +268,7 @@ class _$_Upload implements _Upload {
         assert(animated != null),
         assert(processing != null);
 
-  factory _$_Upload.fromJson(Map<String, dynamic> json) =>
-      _$_$_UploadFromJson(json);
+  factory _$_Upload.fromJson(Map<String, dynamic> json) => _$_$_UploadFromJson(json);
 
   @override
 
@@ -318,35 +335,20 @@ class _$_Upload implements _Upload {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Upload &&
-            (identical(other.uid, uid) ||
-                const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.created, created) ||
-                const DeepCollectionEquality()
-                    .equals(other.created, created)) &&
-            (identical(other.size, size) ||
-                const DeepCollectionEquality().equals(other.size, size)) &&
-            (identical(other.duration, duration) ||
-                const DeepCollectionEquality()
-                    .equals(other.duration, duration)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.url, url) ||
-                const DeepCollectionEquality().equals(other.url, url)) &&
-            (identical(other.preview, preview) ||
-                const DeepCollectionEquality()
-                    .equals(other.preview, preview)) &&
+            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.created, created) || const DeepCollectionEquality().equals(other.created, created)) &&
+            (identical(other.size, size) || const DeepCollectionEquality().equals(other.size, size)) &&
+            (identical(other.duration, duration) || const DeepCollectionEquality().equals(other.duration, duration)) &&
+            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
+            (identical(other.url, url) || const DeepCollectionEquality().equals(other.url, url)) &&
+            (identical(other.preview, preview) || const DeepCollectionEquality().equals(other.preview, preview)) &&
             (identical(other.contentType, contentType) ||
-                const DeepCollectionEquality()
-                    .equals(other.contentType, contentType)) &&
-            (identical(other.animated, animated) ||
-                const DeepCollectionEquality()
-                    .equals(other.animated, animated)) &&
+                const DeepCollectionEquality().equals(other.contentType, contentType)) &&
+            (identical(other.animated, animated) || const DeepCollectionEquality().equals(other.animated, animated)) &&
             (identical(other.processing, processing) ||
-                const DeepCollectionEquality()
-                    .equals(other.processing, processing)) &&
+                const DeepCollectionEquality().equals(other.processing, processing)) &&
             (identical(other.pdfVersion, pdfVersion) ||
-                const DeepCollectionEquality()
-                    .equals(other.pdfVersion, pdfVersion)));
+                const DeepCollectionEquality().equals(other.pdfVersion, pdfVersion)));
   }
 
   @override
@@ -365,8 +367,7 @@ class _$_Upload implements _Upload {
       const DeepCollectionEquality().hash(pdfVersion);
 
   @override
-  _$UploadCopyWith<_Upload> get copyWith =>
-      __$UploadCopyWithImpl<_Upload>(this, _$identity);
+  _$UploadCopyWith<_Upload> get copyWith => __$UploadCopyWithImpl<_Upload>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {

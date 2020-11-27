@@ -14,11 +14,11 @@ _$_Upload _$_$_UploadFromJson(Map<String, dynamic> json) {
     duration: json['duration'] as int,
     name: json['name'] as String,
     url: json['url'] as String,
-    preview: json['preview'],
+    preview: json['preview'] == null ? null : UploadPreview.fromJson(json['preview'] as Map<String, dynamic>),
     contentType: json['content_type'] as String,
     animated: json['animated'] as bool,
     processing: json['processing'] as bool,
-    pdfVersion: json['pdf_version'],
+    pdfVersion: json['pdf_version'] == null ? null : PdfVersion.fromJson(json['pdf_version'] as Map<String, dynamic>),
   );
 }
 
