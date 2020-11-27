@@ -1,6 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-
-import '../../tdproto_dart.dart';
+import 'package:tdproto_dart/tdproto_dart.dart';
 
 part 'upload_preview.freezed.dart';
 part 'upload_preview.g.dart';
