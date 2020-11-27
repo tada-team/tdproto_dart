@@ -18,8 +18,8 @@ class _$UploadPreviewTearOff {
 
 // ignore: unused_element
   _UploadPreview call(
-      {@required @JsonKey(name: 'url') string url,
-      @required @JsonKey(name: 'url_2x') string url2x,
+      {@required @JsonKey(name: 'url') String url,
+      @required @JsonKey(name: 'url_2x') String url2x,
       @required @JsonKey(name: 'width') int width,
       @required @JsonKey(name: 'height') int height}) {
     return _UploadPreview(
@@ -44,11 +44,11 @@ const $UploadPreview = _$UploadPreviewTearOff();
 mixin _$UploadPreview {
   /// Absolute url to image.
   @JsonKey(name: 'url')
-  string get url;
+  String get url;
 
   /// Absolute url to high resolution image (retina).
   @JsonKey(name: 'url_2x')
-  string get url2x;
+  String get url2x;
 
   /// Width in pixels.
   @JsonKey(name: 'width')
@@ -68,8 +68,8 @@ abstract class $UploadPreviewCopyWith<$Res> {
           UploadPreview value, $Res Function(UploadPreview) then) =
       _$UploadPreviewCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'url') string url,
-      @JsonKey(name: 'url_2x') string url2x,
+      {@JsonKey(name: 'url') String url,
+      @JsonKey(name: 'url_2x') String url2x,
       @JsonKey(name: 'width') int width,
       @JsonKey(name: 'height') int height});
 }
@@ -91,8 +91,8 @@ class _$UploadPreviewCopyWithImpl<$Res>
     Object height = freezed,
   }) {
     return _then(_value.copyWith(
-      url: url == freezed ? _value.url : url as string,
-      url2x: url2x == freezed ? _value.url2x : url2x as string,
+      url: url == freezed ? _value.url : url as String,
+      url2x: url2x == freezed ? _value.url2x : url2x as String,
       width: width == freezed ? _value.width : width as int,
       height: height == freezed ? _value.height : height as int,
     ));
@@ -107,8 +107,8 @@ abstract class _$UploadPreviewCopyWith<$Res>
       __$UploadPreviewCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'url') string url,
-      @JsonKey(name: 'url_2x') string url2x,
+      {@JsonKey(name: 'url') String url,
+      @JsonKey(name: 'url_2x') String url2x,
       @JsonKey(name: 'width') int width,
       @JsonKey(name: 'height') int height});
 }
@@ -132,8 +132,8 @@ class __$UploadPreviewCopyWithImpl<$Res>
     Object height = freezed,
   }) {
     return _then(_UploadPreview(
-      url: url == freezed ? _value.url : url as string,
-      url2x: url2x == freezed ? _value.url2x : url2x as string,
+      url: url == freezed ? _value.url : url as String,
+      url2x: url2x == freezed ? _value.url2x : url2x as String,
       width: width == freezed ? _value.width : width as int,
       height: height == freezed ? _value.height : height as int,
     ));
@@ -161,12 +161,12 @@ class _$_UploadPreview implements _UploadPreview {
 
   /// Absolute url to image.
   @JsonKey(name: 'url')
-  final string url;
+  final String url;
   @override
 
   /// Absolute url to high resolution image (retina).
   @JsonKey(name: 'url_2x')
-  final string url2x;
+  final String url2x;
   @override
 
   /// Width in pixels.
@@ -217,8 +217,8 @@ class _$_UploadPreview implements _UploadPreview {
 
 abstract class _UploadPreview implements UploadPreview {
   const factory _UploadPreview(
-      {@required @JsonKey(name: 'url') string url,
-      @required @JsonKey(name: 'url_2x') string url2x,
+      {@required @JsonKey(name: 'url') String url,
+      @required @JsonKey(name: 'url_2x') String url2x,
       @required @JsonKey(name: 'width') int width,
       @required @JsonKey(name: 'height') int height}) = _$_UploadPreview;
 
@@ -229,12 +229,12 @@ abstract class _UploadPreview implements UploadPreview {
 
   /// Absolute url to image.
   @JsonKey(name: 'url')
-  string get url;
+  String get url;
   @override
 
   /// Absolute url to high resolution image (retina).
   @JsonKey(name: 'url_2x')
-  string get url2x;
+  String get url2x;
   @override
 
   /// Width in pixels.

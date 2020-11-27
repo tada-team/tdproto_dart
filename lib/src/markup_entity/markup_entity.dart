@@ -70,5 +70,6 @@ abstract class MarkupEntity with _$MarkupEntity {
     @JsonKey(name: 'childs') List<MarkupEntity> children,
   }) = _MarkupEntity;
 
-  factory MarkupEntity.fromJson(Map<String, dynamic> json) => _$MarkupEntityFromJson(json);
+  factory MarkupEntity.fromJson(Map<String, dynamic> json) =>
+      _$MarkupEntityFromJson(json);
 }

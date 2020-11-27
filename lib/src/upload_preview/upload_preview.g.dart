@@ -8,8 +8,8 @@ part of 'upload_preview.dart';
 
 _$_UploadPreview _$_$_UploadPreviewFromJson(Map<String, dynamic> json) {
   return _$_UploadPreview(
-    url: json['url'],
-    url2x: json['url_2x'],
+    url: json['url'] as String,
+    url2x: json['url_2x'] as String,
     width: json['width'] as int,
     height: json['height'] as int,
   );

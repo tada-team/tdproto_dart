@@ -38,15 +38,11 @@ const $PdfVersion = _$PdfVersionTearOff();
 
 /// @nodoc
 mixin _$PdfVersion {
-  /// Absolute url
+  /// Absolute url.
   @JsonKey(name: 'url')
   String get url;
 
-  /// First string of text content
-  ///
-  /// Bla bla bla, multiline comment.
-  ///
-  /// Bla.
+  /// First string of text content.
   @JsonKey(name: 'text_preview')
   String get textPreview;
 
@@ -134,16 +130,12 @@ class _$_PdfVersion implements _PdfVersion {
 
   @override
 
-  /// Absolute url
+  /// Absolute url.
   @JsonKey(name: 'url')
   final String url;
   @override
 
-  /// First string of text content
-  ///
-  /// Bla bla bla, multiline comment.
-  ///
-  /// Bla.
+  /// First string of text content.
   @JsonKey(name: 'text_preview')
   final String textPreview;
 
@@ -190,16 +182,12 @@ abstract class _PdfVersion implements PdfVersion {
 
   @override
 
-  /// Absolute url
+  /// Absolute url.
   @JsonKey(name: 'url')
   String get url;
   @override
 
-  /// First string of text content
-  ///
-  /// Bla bla bla, multiline comment.
-  ///
-  /// Bla.
+  /// First string of text content.
   @JsonKey(name: 'text_preview')
   String get textPreview;
   @override
