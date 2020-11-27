@@ -78,8 +78,7 @@ mixin _$MarkupEntity {
 
 /// @nodoc
 abstract class $MarkupEntityCopyWith<$Res> {
-  factory $MarkupEntityCopyWith(
-          MarkupEntity value, $Res Function(MarkupEntity) then) =
+  factory $MarkupEntityCopyWith(MarkupEntity value, $Res Function(MarkupEntity) then) =
       _$MarkupEntityCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'typ') MarkupType type,
@@ -115,35 +114,21 @@ class _$MarkupEntityCopyWithImpl<$Res> implements $MarkupEntityCopyWith<$Res> {
   }) {
     return _then(_value.copyWith(
       type: type == freezed ? _value.type : type as MarkupType,
-      openingMarkerOffset: openingMarkerOffset == freezed
-          ? _value.openingMarkerOffset
-          : openingMarkerOffset as int,
-      closingMarkerOffset: closingMarkerOffset == freezed
-          ? _value.closingMarkerOffset
-          : closingMarkerOffset as int,
-      openingMarkerLength: openingMarkerLength == freezed
-          ? _value.openingMarkerLength
-          : openingMarkerLength as int,
-      closingMarkerLength: closingMarkerLength == freezed
-          ? _value.closingMarkerLength
-          : closingMarkerLength as int,
+      openingMarkerOffset: openingMarkerOffset == freezed ? _value.openingMarkerOffset : openingMarkerOffset as int,
+      closingMarkerOffset: closingMarkerOffset == freezed ? _value.closingMarkerOffset : closingMarkerOffset as int,
+      openingMarkerLength: openingMarkerLength == freezed ? _value.openingMarkerLength : openingMarkerLength as int,
+      closingMarkerLength: closingMarkerLength == freezed ? _value.closingMarkerLength : closingMarkerLength as int,
       url: url == freezed ? _value.url : url as String,
-      urlReplacement: urlReplacement == freezed
-          ? _value.urlReplacement
-          : urlReplacement as String,
+      urlReplacement: urlReplacement == freezed ? _value.urlReplacement : urlReplacement as String,
       time: time == freezed ? _value.time : time as String,
-      children: children == freezed
-          ? _value.children
-          : children as List<MarkupEntity>,
+      children: children == freezed ? _value.children : children as List<MarkupEntity>,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$MarkupEntityCopyWith<$Res>
-    implements $MarkupEntityCopyWith<$Res> {
-  factory _$MarkupEntityCopyWith(
-          _MarkupEntity value, $Res Function(_MarkupEntity) then) =
+abstract class _$MarkupEntityCopyWith<$Res> implements $MarkupEntityCopyWith<$Res> {
+  factory _$MarkupEntityCopyWith(_MarkupEntity value, $Res Function(_MarkupEntity) then) =
       __$MarkupEntityCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -161,8 +146,7 @@ abstract class _$MarkupEntityCopyWith<$Res>
 /// @nodoc
 class __$MarkupEntityCopyWithImpl<$Res> extends _$MarkupEntityCopyWithImpl<$Res>
     implements _$MarkupEntityCopyWith<$Res> {
-  __$MarkupEntityCopyWithImpl(
-      _MarkupEntity _value, $Res Function(_MarkupEntity) _then)
+  __$MarkupEntityCopyWithImpl(_MarkupEntity _value, $Res Function(_MarkupEntity) _then)
       : super(_value, (v) => _then(v as _MarkupEntity));
 
   @override
@@ -182,26 +166,14 @@ class __$MarkupEntityCopyWithImpl<$Res> extends _$MarkupEntityCopyWithImpl<$Res>
   }) {
     return _then(_MarkupEntity(
       type: type == freezed ? _value.type : type as MarkupType,
-      openingMarkerOffset: openingMarkerOffset == freezed
-          ? _value.openingMarkerOffset
-          : openingMarkerOffset as int,
-      closingMarkerOffset: closingMarkerOffset == freezed
-          ? _value.closingMarkerOffset
-          : closingMarkerOffset as int,
-      openingMarkerLength: openingMarkerLength == freezed
-          ? _value.openingMarkerLength
-          : openingMarkerLength as int,
-      closingMarkerLength: closingMarkerLength == freezed
-          ? _value.closingMarkerLength
-          : closingMarkerLength as int,
+      openingMarkerOffset: openingMarkerOffset == freezed ? _value.openingMarkerOffset : openingMarkerOffset as int,
+      closingMarkerOffset: closingMarkerOffset == freezed ? _value.closingMarkerOffset : closingMarkerOffset as int,
+      openingMarkerLength: openingMarkerLength == freezed ? _value.openingMarkerLength : openingMarkerLength as int,
+      closingMarkerLength: closingMarkerLength == freezed ? _value.closingMarkerLength : closingMarkerLength as int,
       url: url == freezed ? _value.url : url as String,
-      urlReplacement: urlReplacement == freezed
-          ? _value.urlReplacement
-          : urlReplacement as String,
+      urlReplacement: urlReplacement == freezed ? _value.urlReplacement : urlReplacement as String,
       time: time == freezed ? _value.time : time as String,
-      children: children == freezed
-          ? _value.children
-          : children as List<MarkupEntity>,
+      children: children == freezed ? _value.children : children as List<MarkupEntity>,
     ));
   }
 }
@@ -234,8 +206,7 @@ class _$_MarkupEntity implements _MarkupEntity {
         }()),
         assert(openingMarkerOffset >= 0);
 
-  factory _$_MarkupEntity.fromJson(Map<String, dynamic> json) =>
-      _$_$_MarkupEntityFromJson(json);
+  factory _$_MarkupEntity.fromJson(Map<String, dynamic> json) => _$_$_MarkupEntityFromJson(json);
 
   @override // With @required annotation parameter must by non-nullable in any case.
   @JsonKey(name: 'typ')
@@ -274,30 +245,20 @@ class _$_MarkupEntity implements _MarkupEntity {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _MarkupEntity &&
-            (identical(other.type, type) ||
-                const DeepCollectionEquality().equals(other.type, type)) &&
+            (identical(other.type, type) || const DeepCollectionEquality().equals(other.type, type)) &&
             (identical(other.openingMarkerOffset, openingMarkerOffset) ||
-                const DeepCollectionEquality()
-                    .equals(other.openingMarkerOffset, openingMarkerOffset)) &&
+                const DeepCollectionEquality().equals(other.openingMarkerOffset, openingMarkerOffset)) &&
             (identical(other.closingMarkerOffset, closingMarkerOffset) ||
-                const DeepCollectionEquality()
-                    .equals(other.closingMarkerOffset, closingMarkerOffset)) &&
+                const DeepCollectionEquality().equals(other.closingMarkerOffset, closingMarkerOffset)) &&
             (identical(other.openingMarkerLength, openingMarkerLength) ||
-                const DeepCollectionEquality()
-                    .equals(other.openingMarkerLength, openingMarkerLength)) &&
+                const DeepCollectionEquality().equals(other.openingMarkerLength, openingMarkerLength)) &&
             (identical(other.closingMarkerLength, closingMarkerLength) ||
-                const DeepCollectionEquality()
-                    .equals(other.closingMarkerLength, closingMarkerLength)) &&
-            (identical(other.url, url) ||
-                const DeepCollectionEquality().equals(other.url, url)) &&
+                const DeepCollectionEquality().equals(other.closingMarkerLength, closingMarkerLength)) &&
+            (identical(other.url, url) || const DeepCollectionEquality().equals(other.url, url)) &&
             (identical(other.urlReplacement, urlReplacement) ||
-                const DeepCollectionEquality()
-                    .equals(other.urlReplacement, urlReplacement)) &&
-            (identical(other.time, time) ||
-                const DeepCollectionEquality().equals(other.time, time)) &&
-            (identical(other.children, children) ||
-                const DeepCollectionEquality()
-                    .equals(other.children, children)));
+                const DeepCollectionEquality().equals(other.urlReplacement, urlReplacement)) &&
+            (identical(other.time, time) || const DeepCollectionEquality().equals(other.time, time)) &&
+            (identical(other.children, children) || const DeepCollectionEquality().equals(other.children, children)));
   }
 
   @override
@@ -314,8 +275,7 @@ class _$_MarkupEntity implements _MarkupEntity {
       const DeepCollectionEquality().hash(children);
 
   @override
-  _$MarkupEntityCopyWith<_MarkupEntity> get copyWith =>
-      __$MarkupEntityCopyWithImpl<_MarkupEntity>(this, _$identity);
+  _$MarkupEntityCopyWith<_MarkupEntity> get copyWith => __$MarkupEntityCopyWithImpl<_MarkupEntity>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -335,8 +295,7 @@ abstract class _MarkupEntity implements MarkupEntity {
       @JsonKey(name: 'time') String time,
       @JsonKey(name: 'childs') List<MarkupEntity> children}) = _$_MarkupEntity;
 
-  factory _MarkupEntity.fromJson(Map<String, dynamic> json) =
-      _$_MarkupEntity.fromJson;
+  factory _MarkupEntity.fromJson(Map<String, dynamic> json) = _$_MarkupEntity.fromJson;
 
   @override // With @required annotation parameter must by non-nullable in any case.
   @JsonKey(name: 'typ')

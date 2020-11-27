@@ -15,8 +15,7 @@ _$_UploadPreview _$_$_UploadPreviewFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_UploadPreviewToJson(_$_UploadPreview instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$_$_UploadPreviewToJson(_$_UploadPreview instance) => <String, dynamic>{
       'url': instance.url,
       'url_2x': instance.url2x,
       'width': instance.width,

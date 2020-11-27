@@ -17,14 +17,12 @@ _$_MarkupEntity _$_$_MarkupEntityFromJson(Map<String, dynamic> json) {
     urlReplacement: json['repl'] as String,
     time: json['time'] as String,
     children: (json['childs'] as List)
-        ?.map((e) =>
-            e == null ? null : MarkupEntity.fromJson(e as Map<String, dynamic>))
+        ?.map((e) => e == null ? null : MarkupEntity.fromJson(e as Map<String, dynamic>))
         ?.toList(),
   );
 }
 
-Map<String, dynamic> _$_$_MarkupEntityToJson(_$_MarkupEntity instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$_$_MarkupEntityToJson(_$_MarkupEntity instance) => <String, dynamic>{
       'typ': _$MarkupTypeEnumMap[instance.type],
       'op': instance.openingMarkerOffset,
       'cl': instance.closingMarkerOffset,
@@ -46,9 +44,7 @@ T _$enumDecode<T>(
         '${enumValues.values.join(', ')}');
   }
 
-  final value = enumValues.entries
-      .singleWhere((e) => e.value == source, orElse: () => null)
-      ?.key;
+  final value = enumValues.entries.singleWhere((e) => e.value == source, orElse: () => null)?.key;
 
   if (value == null && unknownValue == null) {
     throw ArgumentError('`$source` is not one of the supported values: '
