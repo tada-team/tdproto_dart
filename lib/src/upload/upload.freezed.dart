@@ -19,7 +19,7 @@ class _$UploadTearOff {
 // ignore: unused_element
   _Upload call(
       {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'created') String created,
+      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @required @JsonKey(name: 'size') int size,
       @required @JsonKey(name: 'duration') int duration,
       @required @JsonKey(name: 'name') String name,
@@ -62,7 +62,8 @@ mixin _$Upload {
 
   /// Uploaded at.
   @JsonKey(name: 'created')
-  String get created;
+  @DateTimeConverter()
+  DateTime get created;
 
   /// Upload size in bytes.
   @JsonKey(name: 'size')
@@ -109,7 +110,7 @@ abstract class $UploadCopyWith<$Res> {
   factory $UploadCopyWith(Upload value, $Res Function(Upload) then) = _$UploadCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'created') String created,
+      @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @JsonKey(name: 'size') int size,
       @JsonKey(name: 'duration') int duration,
       @JsonKey(name: 'name') String name,
@@ -148,7 +149,7 @@ class _$UploadCopyWithImpl<$Res> implements $UploadCopyWith<$Res> {
   }) {
     return _then(_value.copyWith(
       uid: uid == freezed ? _value.uid : uid as String,
-      created: created == freezed ? _value.created : created as String,
+      created: created == freezed ? _value.created : created as DateTime,
       size: size == freezed ? _value.size : size as int,
       duration: duration == freezed ? _value.duration : duration as int,
       name: name == freezed ? _value.name : name as String,
@@ -188,7 +189,7 @@ abstract class _$UploadCopyWith<$Res> implements $UploadCopyWith<$Res> {
   @override
   $Res call(
       {@JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'created') String created,
+      @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @JsonKey(name: 'size') int size,
       @JsonKey(name: 'duration') int duration,
       @JsonKey(name: 'name') String name,
@@ -228,7 +229,7 @@ class __$UploadCopyWithImpl<$Res> extends _$UploadCopyWithImpl<$Res> implements 
   }) {
     return _then(_Upload(
       uid: uid == freezed ? _value.uid : uid as String,
-      created: created == freezed ? _value.created : created as String,
+      created: created == freezed ? _value.created : created as DateTime,
       size: size == freezed ? _value.size : size as int,
       duration: duration == freezed ? _value.duration : duration as int,
       name: name == freezed ? _value.name : name as String,
@@ -248,7 +249,7 @@ class __$UploadCopyWithImpl<$Res> extends _$UploadCopyWithImpl<$Res> implements 
 class _$_Upload implements _Upload {
   const _$_Upload(
       {@required @JsonKey(name: 'uid') this.uid,
-      @required @JsonKey(name: 'created') this.created,
+      @required @JsonKey(name: 'created') @DateTimeConverter() this.created,
       @required @JsonKey(name: 'size') this.size,
       @required @JsonKey(name: 'duration') this.duration,
       @required @JsonKey(name: 'name') this.name,
@@ -279,7 +280,8 @@ class _$_Upload implements _Upload {
 
   /// Uploaded at.
   @JsonKey(name: 'created')
-  final String created;
+  @DateTimeConverter()
+  final DateTime created;
   @override
 
   /// Upload size in bytes.
@@ -378,7 +380,7 @@ class _$_Upload implements _Upload {
 abstract class _Upload implements Upload {
   const factory _Upload(
       {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'created') String created,
+      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @required @JsonKey(name: 'size') int size,
       @required @JsonKey(name: 'duration') int duration,
       @required @JsonKey(name: 'name') String name,
@@ -400,7 +402,8 @@ abstract class _Upload implements Upload {
 
   /// Uploaded at.
   @JsonKey(name: 'created')
-  String get created;
+  @DateTimeConverter()
+  DateTime get created;
   @override
 
   /// Upload size in bytes.
