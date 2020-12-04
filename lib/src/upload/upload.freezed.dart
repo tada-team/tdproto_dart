@@ -21,13 +21,13 @@ class _$UploadTearOff {
       {@required @JsonKey(name: 'uid') String uid,
       @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @required @JsonKey(name: 'size') int size,
-      @required @JsonKey(name: 'duration') int duration,
+      @JsonKey(name: 'duration') int duration,
       @required @JsonKey(name: 'name') String name,
       @required @JsonKey(name: 'url') String url,
       @JsonKey(name: 'preview') UploadPreview preview,
       @required @JsonKey(name: 'content_type') String contentType,
-      @required @JsonKey(name: 'animated') bool animated,
-      @required @JsonKey(name: 'processing') bool processing,
+      @JsonKey(name: 'animated') bool animated,
+      @JsonKey(name: 'processing') bool processing,
       @JsonKey(name: 'pdf_version') PdfVersion pdfVersion}) {
     return _Upload(
       uid: uid,
@@ -251,23 +251,20 @@ class _$_Upload implements _Upload {
       {@required @JsonKey(name: 'uid') this.uid,
       @required @JsonKey(name: 'created') @DateTimeConverter() this.created,
       @required @JsonKey(name: 'size') this.size,
-      @required @JsonKey(name: 'duration') this.duration,
+      @JsonKey(name: 'duration') this.duration,
       @required @JsonKey(name: 'name') this.name,
       @required @JsonKey(name: 'url') this.url,
       @JsonKey(name: 'preview') this.preview,
       @required @JsonKey(name: 'content_type') this.contentType,
-      @required @JsonKey(name: 'animated') this.animated,
-      @required @JsonKey(name: 'processing') this.processing,
+      @JsonKey(name: 'animated') this.animated,
+      @JsonKey(name: 'processing') this.processing,
       @JsonKey(name: 'pdf_version') this.pdfVersion})
       : assert(uid != null),
         assert(created != null),
         assert(size != null),
-        assert(duration != null),
         assert(name != null),
         assert(url != null),
-        assert(contentType != null),
-        assert(animated != null),
-        assert(processing != null);
+        assert(contentType != null);
 
   factory _$_Upload.fromJson(Map<String, dynamic> json) => _$_$_UploadFromJson(json);
 
@@ -382,13 +379,13 @@ abstract class _Upload implements Upload {
       {@required @JsonKey(name: 'uid') String uid,
       @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @required @JsonKey(name: 'size') int size,
-      @required @JsonKey(name: 'duration') int duration,
+      @JsonKey(name: 'duration') int duration,
       @required @JsonKey(name: 'name') String name,
       @required @JsonKey(name: 'url') String url,
       @JsonKey(name: 'preview') UploadPreview preview,
       @required @JsonKey(name: 'content_type') String contentType,
-      @required @JsonKey(name: 'animated') bool animated,
-      @required @JsonKey(name: 'processing') bool processing,
+      @JsonKey(name: 'animated') bool animated,
+      @JsonKey(name: 'processing') bool processing,
       @JsonKey(name: 'pdf_version') PdfVersion pdfVersion}) = _$_Upload;
 
   factory _Upload.fromJson(Map<String, dynamic> json) = _$_Upload.fromJson;

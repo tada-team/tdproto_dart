@@ -18,7 +18,7 @@ abstract class Upload with _$Upload {
     @JsonKey(name: 'size') @required int size,
 
     /// Mediafile duration (for audio/video only).
-    @JsonKey(name: 'duration') @required int duration,
+    @JsonKey(name: 'duration') int duration,
 
     /// Filename.
     @JsonKey(name: 'name') @required String name,
@@ -33,10 +33,10 @@ abstract class Upload with _$Upload {
     @JsonKey(name: 'content_type') @required String contentType,
 
     /// Is animated (images only).
-    @JsonKey(name: 'animated') @required bool animated,
+    @JsonKey(name: 'animated') bool animated,
 
     /// File still processing (video only).
-    @JsonKey(name: 'processing') @required bool processing,
+    @JsonKey(name: 'processing') bool processing,
 
     /// PDF version of file. Experimental.
     @JsonKey(name: 'pdf_version') PdfVersion pdfVersion,
