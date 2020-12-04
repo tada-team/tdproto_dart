@@ -7,42 +7,42 @@ part 'markup_type.g.dart';
 /// Markup type
 enum MarkupType {
   // Bold text
-  @JsonValue('"bold"')
-  Bold,
+  @JsonValue('bold')
+  bold,
 
   // Italic text
-  @JsonValue('"italic"')
-  Italic,
+  @JsonValue('italic')
+  italic,
 
   // Underscore text
-  @JsonValue('"underscore"')
-  Underscore,
+  @JsonValue('underscore')
+  underscore,
 
   // Striked text
-  @JsonValue('"strike"')
-  Strike,
+  @JsonValue('strike')
+  strike,
 
   // Inlined code
-  @JsonValue('"code"')
-  Code,
+  @JsonValue('code')
+  code,
 
   // Code block
-  @JsonValue('"codeblock"')
-  CodeBlock,
+  @JsonValue('codeblock')
+  codeBlock,
 
   // Quote
-  @JsonValue('"quote"')
-  Quote,
+  @JsonValue('quote')
+  quote,
 
   // Link
-  @JsonValue('"link"')
-  Link,
+  @JsonValue('link')
+  link,
 
   // Datetime
-  @JsonValue('"time"')
-  Time,
+  @JsonValue('time')
+  time,
 
   // Unsafe html element
-  @JsonValue('"unsafe"')
-  Unsafe,
+  @JsonValue('unsafe')
+  unsafe,
 }

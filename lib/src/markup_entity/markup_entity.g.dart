@@ -65,14 +65,14 @@ T _$enumDecodeNullable<T>(
 }
 
 const _$MarkupTypeEnumMap = {
-  MarkupType.Bold: '"bold"',
-  MarkupType.Italic: '"italic"',
-  MarkupType.Underscore: '"underscore"',
-  MarkupType.Strike: '"strike"',
-  MarkupType.Code: '"code"',
-  MarkupType.CodeBlock: '"codeblock"',
-  MarkupType.Quote: '"quote"',
-  MarkupType.Link: '"link"',
-  MarkupType.Time: '"time"',
-  MarkupType.Unsafe: '"unsafe"',
+  MarkupType.bold: 'bold',
+  MarkupType.italic: 'italic',
+  MarkupType.underscore: 'underscore',
+  MarkupType.strike: 'strike',
+  MarkupType.code: 'code',
+  MarkupType.codeBlock: 'codeblock',
+  MarkupType.quote: 'quote',
+  MarkupType.link: 'link',
+  MarkupType.time: 'time',
+  MarkupType.unsafe: 'unsafe',
 };
