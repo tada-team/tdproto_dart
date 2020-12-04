@@ -17,8 +17,7 @@ class _$PdfVersionTearOff {
   const _$PdfVersionTearOff();
 
 // ignore: unused_element
-  _PdfVersion call(
-      {@required @JsonKey(name: 'url') String url, @required @JsonKey(name: 'text_preview') String textPreview}) {
+  _PdfVersion call({@required @JsonKey(name: 'url') String url, @JsonKey(name: 'text_preview') String textPreview}) {
     return _PdfVersion(
       url: url,
       textPreview: textPreview,
@@ -106,10 +105,8 @@ class __$PdfVersionCopyWithImpl<$Res> extends _$PdfVersionCopyWithImpl<$Res> imp
 
 /// @nodoc
 class _$_PdfVersion implements _PdfVersion {
-  const _$_PdfVersion(
-      {@required @JsonKey(name: 'url') this.url, @required @JsonKey(name: 'text_preview') this.textPreview})
-      : assert(url != null),
-        assert(textPreview != null);
+  const _$_PdfVersion({@required @JsonKey(name: 'url') this.url, @JsonKey(name: 'text_preview') this.textPreview})
+      : assert(url != null);
 
   factory _$_PdfVersion.fromJson(Map<String, dynamic> json) => _$_$_PdfVersionFromJson(json);
 
@@ -155,8 +152,7 @@ class _$_PdfVersion implements _PdfVersion {
 
 abstract class _PdfVersion implements PdfVersion {
   const factory _PdfVersion(
-      {@required @JsonKey(name: 'url') String url,
-      @required @JsonKey(name: 'text_preview') String textPreview}) = _$_PdfVersion;
+      {@required @JsonKey(name: 'url') String url, @JsonKey(name: 'text_preview') String textPreview}) = _$_PdfVersion;
 
   factory _PdfVersion.fromJson(Map<String, dynamic> json) = _$_PdfVersion.fromJson;
 

@@ -12,7 +12,7 @@ abstract class PdfVersion with _$PdfVersion {
     @JsonKey(name: 'url') @required String url,
 
     /// First string of text content.
-    @JsonKey(name: 'text_preview') @required String textPreview,
+    @JsonKey(name: 'text_preview') String textPreview,
   }) = _PdfVersion;
 
   factory PdfVersion.fromJson(Map<String, dynamic> json) => _$PdfVersionFromJson(json);

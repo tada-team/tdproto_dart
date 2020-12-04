@@ -31,7 +31,7 @@ Map<String, dynamic> _$_$_MarkupEntityToJson(_$_MarkupEntity instance) => <Strin
       'url': instance.url,
       'repl': instance.urlReplacement,
       'time': instance.time,
-      'childs': instance.children,
+      'childs': instance.children?.map((e) => e?.toJson())?.toList(),
     };
 
 T _$enumDecode<T>(
