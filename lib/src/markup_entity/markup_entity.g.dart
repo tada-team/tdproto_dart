@@ -65,7 +65,6 @@ T _$enumDecodeNullable<T>(
 }
 
 const _$MarkupTypeEnumMap = {
-  MarkupType.bold: 'bold',
   MarkupType.Bold: '"bold"',
   MarkupType.Italic: '"italic"',
   MarkupType.Underscore: '"underscore"',
