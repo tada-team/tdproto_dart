@@ -1,8 +1,4 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:tdproto_dart/tdproto_dart.dart';
-
-part 'markup_type.freezed.dart';
-part 'markup_type.g.dart';
 
 /// Markup type
 enum MarkupType {
