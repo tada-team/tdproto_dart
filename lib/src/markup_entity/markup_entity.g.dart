@@ -8,30 +8,30 @@ part of 'markup_entity.dart';
 
 _$_MarkupEntity _$_$_MarkupEntityFromJson(Map<String, dynamic> json) {
   return _$_MarkupEntity(
+    open: json['op'] as int,
+    openLength: json['oplen'] as int,
+    close: json['cl'] as int,
+    closeLength: json['cllen'] as int,
     type: _$enumDecodeNullable(_$MarkupTypeEnumMap, json['typ']),
-    openingMarkerOffset: json['op'] as int,
-    closingMarkerOffset: json['cl'] as int,
-    openingMarkerLength: json['oplen'] as int,
-    closingMarkerLength: json['cllen'] as int,
     url: json['url'] as String,
-    urlReplacement: json['repl'] as String,
+    repl: json['repl'] as String,
     time: json['time'] as String,
-    children: (json['childs'] as List)
+    childs: (json['childs'] as List)
         ?.map((e) => e == null ? null : MarkupEntity.fromJson(e as Map<String, dynamic>))
         ?.toList(),
   );
 }
 
 Map<String, dynamic> _$_$_MarkupEntityToJson(_$_MarkupEntity instance) => <String, dynamic>{
+      'op': instance.open,
+      'oplen': instance.openLength,
+      'cl': instance.close,
+      'cllen': instance.closeLength,
       'typ': _$MarkupTypeEnumMap[instance.type],
-      'op': instance.openingMarkerOffset,
-      'cl': instance.closingMarkerOffset,
-      'oplen': instance.openingMarkerLength,
-      'cllen': instance.closingMarkerLength,
       'url': instance.url,
-      'repl': instance.urlReplacement,
+      'repl': instance.repl,
       'time': instance.time,
-      'childs': instance.children?.map((e) => e?.toJson())?.toList(),
+      'childs': instance.childs?.map((e) => e?.toJson())?.toList(),
     };
 
 T _$enumDecode<T>(
@@ -68,7 +68,7 @@ const _$MarkupTypeEnumMap = {
   MarkupType.bold: 'bold',
   MarkupType.italic: 'italic',
   MarkupType.underscore: 'underscore',
-  MarkupType.strikethrough: 'strike',
+  MarkupType.strike: 'strike',
   MarkupType.code: 'code',
   MarkupType.codeBlock: 'codeblock',
   MarkupType.quote: 'quote',

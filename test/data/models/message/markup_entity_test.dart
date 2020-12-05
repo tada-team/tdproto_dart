@@ -31,7 +31,7 @@ void main() {
         // assert
         expect(firstMarkupEntity.type, MarkupType.link);
         expect(firstMarkupEntity.url, isStringWithContent);
-        expect(firstMarkupEntity.urlReplacement, isStringWithContent);
+        expect(firstMarkupEntity.repl, isStringWithContent);
       },
     );
   });
@@ -70,9 +70,9 @@ void main() {
         final json = await loadJsonFixtureFromMarkup('children/nested_children.json');
         // act
         final message = MockMessage.fromJson(json);
-        final type = message.markup.first.children.first.children.first.type; // two levels of nesting
+        final type = message.markup.first.childs.first.childs.first.type; // two levels of nesting
         // assert
-        expect(type, equals(MarkupType.strikethrough));
+        expect(type, equals(MarkupType.strike));
       },
     );
   });
