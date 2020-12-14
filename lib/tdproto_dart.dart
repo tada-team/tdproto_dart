@@ -13,3 +13,4 @@ export './src/group_status/group_status.dart';
 export './src/team_status/team_status.dart';
 export './src/country/country.dart';
 export './src/response/response.dart';
+export './src/user_info/user_info.dart';
