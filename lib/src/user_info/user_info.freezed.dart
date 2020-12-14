@@ -17,7 +17,9 @@ class _$UserInfoTearOff {
   const _$UserInfoTearOff();
 
 // ignore: unused_element
-  _UserInfo call({@JsonKey(name: 'first_name') String firstName, @JsonKey(name: 'given_name') String givenName}) {
+  _UserInfo call(
+      {@required @JsonKey(name: 'first_name') String firstName,
+      @required @JsonKey(name: 'given_name') String givenName}) {
     return _UserInfo(
       firstName: firstName,
       givenName: givenName,
@@ -105,7 +107,10 @@ class __$UserInfoCopyWithImpl<$Res> extends _$UserInfoCopyWithImpl<$Res> impleme
 
 /// @nodoc
 class _$_UserInfo implements _UserInfo {
-  const _$_UserInfo({@JsonKey(name: 'first_name') this.firstName, @JsonKey(name: 'given_name') this.givenName});
+  const _$_UserInfo(
+      {@required @JsonKey(name: 'first_name') this.firstName, @required @JsonKey(name: 'given_name') this.givenName})
+      : assert(firstName != null),
+        assert(givenName != null);
 
   factory _$_UserInfo.fromJson(Map<String, dynamic> json) => _$_$_UserInfoFromJson(json);
 
@@ -152,7 +157,8 @@ class _$_UserInfo implements _UserInfo {
 
 abstract class _UserInfo implements UserInfo {
   const factory _UserInfo(
-      {@JsonKey(name: 'first_name') String firstName, @JsonKey(name: 'given_name') String givenName}) = _$_UserInfo;
+      {@required @JsonKey(name: 'first_name') String firstName,
+      @required @JsonKey(name: 'given_name') String givenName}) = _$_UserInfo;
 
   factory _UserInfo.fromJson(Map<String, dynamic> json) = _$_UserInfo.fromJson;
 
