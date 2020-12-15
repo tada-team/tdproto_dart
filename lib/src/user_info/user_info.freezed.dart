@@ -38,11 +38,11 @@ const $UserInfo = _$UserInfoTearOff();
 
 /// @nodoc
 mixin _$UserInfo {
-  /// Family name
+  /// Family name.
   @JsonKey(name: 'first_name')
   String get firstName;
 
-  /// Given name
+  /// Given name.
   @JsonKey(name: 'given_name')
   String get givenName;
 
@@ -116,12 +116,12 @@ class _$_UserInfo implements _UserInfo {
 
   @override
 
-  /// Family name
+  /// Family name.
   @JsonKey(name: 'first_name')
   final String firstName;
   @override
 
-  /// Given name
+  /// Given name.
   @JsonKey(name: 'given_name')
   final String givenName;
 
@@ -164,12 +164,12 @@ abstract class _UserInfo implements UserInfo {
 
   @override
 
-  /// Family name
+  /// Family name.
   @JsonKey(name: 'first_name')
   String get firstName;
   @override
 
-  /// Given name
+  /// Given name.
   @JsonKey(name: 'given_name')
   String get givenName;
   @override

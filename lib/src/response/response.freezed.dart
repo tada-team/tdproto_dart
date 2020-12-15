@@ -44,23 +44,23 @@ const $Response = _$ResponseTearOff();
 
 /// @nodoc
 mixin _$Response {
-  /// Debug time
+  /// Debug time.
   @JsonKey(name: '_time')
   String get time;
 
-  /// Whether http status code is 200 or not
+  /// Whether http status code is 200 or not.
   @JsonKey(name: 'ok')
   bool get ok;
 
-  /// Requested data
+  /// Requested data.
   @JsonKey(name: 'result')
   dynamic get result;
 
-  /// Error code
+  /// Error code.
   @JsonKey(name: 'error')
   String get error;
 
-  /// Details about the error
+  /// Details about the error.
   @JsonKey(name: 'details')
   Map<String, dynamic> get details;
 
@@ -159,27 +159,27 @@ class _$_Response implements _Response {
 
   @override
 
-  /// Debug time
+  /// Debug time.
   @JsonKey(name: '_time')
   final String time;
   @override
 
-  /// Whether http status code is 200 or not
+  /// Whether http status code is 200 or not.
   @JsonKey(name: 'ok')
   final bool ok;
   @override
 
-  /// Requested data
+  /// Requested data.
   @JsonKey(name: 'result')
   final dynamic result;
   @override
 
-  /// Error code
+  /// Error code.
   @JsonKey(name: 'error')
   final String error;
   @override
 
-  /// Details about the error
+  /// Details about the error.
   @JsonKey(name: 'details')
   final Map<String, dynamic> details;
 
@@ -229,27 +229,27 @@ abstract class _Response implements Response {
 
   @override
 
-  /// Debug time
+  /// Debug time.
   @JsonKey(name: '_time')
   String get time;
   @override
 
-  /// Whether http status code is 200 or not
+  /// Whether http status code is 200 or not.
   @JsonKey(name: 'ok')
   bool get ok;
   @override
 
-  /// Requested data
+  /// Requested data.
   @JsonKey(name: 'result')
   dynamic get result;
   @override
 
-  /// Error code
+  /// Error code.
   @JsonKey(name: 'error')
   String get error;
   @override
 
-  /// Details about the error
+  /// Details about the error.
   @JsonKey(name: 'details')
   Map<String, dynamic> get details;
   @override
