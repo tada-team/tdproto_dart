@@ -4,7 +4,7 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'user_info.freezed.dart';
 part 'user_info.g.dart';
 
-/// User info. Experimental partial implementation.
+/// User info. Experimental manual implementation.
 @freezed
 abstract class UserInfo with _$UserInfo {
   const factory UserInfo({

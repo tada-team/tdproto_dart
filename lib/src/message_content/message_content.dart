@@ -4,7 +4,7 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'message_content.freezed.dart';
 part 'message_content.g.dart';
 
-/// Chat message content.
+/// Chat message content. Experimental manual implementation.
 @freezed
 abstract class MessageContent with _$MessageContent {
   const factory MessageContent({

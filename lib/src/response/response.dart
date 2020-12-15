@@ -4,7 +4,7 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'response.freezed.dart';
 part 'response.g.dart';
 
-/// Response.
+/// Response. Experimental manual implementation.
 @freezed
 abstract class Response with _$Response {
   const factory Response({
