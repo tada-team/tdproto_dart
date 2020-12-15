@@ -22,7 +22,7 @@ class _$MessageTearOff {
       @JsonKey(name: 'push_text') String pushText,
       @required @JsonKey(name: 'from') String from,
       @required @JsonKey(name: 'to') String to,
-      @required @JsonKey(name: 'messageId') String messageId,
+      @required @JsonKey(name: 'message_id') String messageId,
       @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @required @JsonKey(name: 'gentime') int gentime,
       @required @JsonKey(name: 'chat_type') ChatType chatType,
@@ -79,7 +79,7 @@ mixin _$Message {
   String get to;
 
   /// Message uid.
-  @JsonKey(name: 'messageId')
+  @JsonKey(name: 'message_id')
   String get messageId;
 
   /// Message creation datetime (set by server side) or sending datetime in future for draft messages.
@@ -132,7 +132,7 @@ abstract class $MessageCopyWith<$Res> {
       @JsonKey(name: 'push_text') String pushText,
       @JsonKey(name: 'from') String from,
       @JsonKey(name: 'to') String to,
-      @JsonKey(name: 'messageId') String messageId,
+      @JsonKey(name: 'message_id') String messageId,
       @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @JsonKey(name: 'gentime') int gentime,
       @JsonKey(name: 'chat_type') ChatType chatType,
@@ -209,7 +209,7 @@ abstract class _$MessageCopyWith<$Res> implements $MessageCopyWith<$Res> {
       @JsonKey(name: 'push_text') String pushText,
       @JsonKey(name: 'from') String from,
       @JsonKey(name: 'to') String to,
-      @JsonKey(name: 'messageId') String messageId,
+      @JsonKey(name: 'message_id') String messageId,
       @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @JsonKey(name: 'gentime') int gentime,
       @JsonKey(name: 'chat_type') ChatType chatType,
@@ -276,7 +276,7 @@ class _$_Message implements _Message {
       @JsonKey(name: 'push_text') this.pushText,
       @required @JsonKey(name: 'from') this.from,
       @required @JsonKey(name: 'to') this.to,
-      @required @JsonKey(name: 'messageId') this.messageId,
+      @required @JsonKey(name: 'message_id') this.messageId,
       @required @JsonKey(name: 'created') @DateTimeConverter() this.created,
       @required @JsonKey(name: 'gentime') this.gentime,
       @required @JsonKey(name: 'chat_type') this.chatType,
@@ -320,7 +320,7 @@ class _$_Message implements _Message {
   @override
 
   /// Message uid.
-  @JsonKey(name: 'messageId')
+  @JsonKey(name: 'message_id')
   final String messageId;
   @override
 
@@ -429,7 +429,7 @@ abstract class _Message implements Message {
       @JsonKey(name: 'push_text') String pushText,
       @required @JsonKey(name: 'from') String from,
       @required @JsonKey(name: 'to') String to,
-      @required @JsonKey(name: 'messageId') String messageId,
+      @required @JsonKey(name: 'message_id') String messageId,
       @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @required @JsonKey(name: 'gentime') int gentime,
       @required @JsonKey(name: 'chat_type') ChatType chatType,
@@ -465,7 +465,7 @@ abstract class _Message implements Message {
   @override
 
   /// Message uid.
-  @JsonKey(name: 'messageId')
+  @JsonKey(name: 'message_id')
   String get messageId;
   @override
 
