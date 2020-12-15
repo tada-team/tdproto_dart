@@ -21,7 +21,7 @@ abstract class Message with _$Message {
     @JsonKey(name: 'to') @required String to,
 
     /// Message uid.
-    @JsonKey(name: 'messageId') @required String messageId,
+    @JsonKey(name: 'message_id') @required String messageId,
 
     /// Message creation datetime (set by server side) or sending datetime in future for draft messages.
     @JsonKey(name: 'created') @DateTimeConverter() @required DateTime created,
