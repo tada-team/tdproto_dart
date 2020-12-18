@@ -1,28 +1,46 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:meta/meta.dart';
+import 'package:json_annotation/json_annotation.dart';
 import 'package:tdproto_dart/tdproto_dart.dart';
 
-part 'response.freezed.dart';
 part 'response.g.dart';
 
 /// Response. Experimental manual implementation.
-@freezed
-abstract class Response with _$Response {
-  const factory Response({
-    /// Debug time.
-    @JsonKey(name: '_time') String time,
+@JsonSerializable()
+class Response<T> implements IResponse<T> {
+  /// Debug time.
+  @override
+  final String time;
 
-    /// Whether http status code is 200 or not.
-    @JsonKey(name: 'ok') @required bool ok,
+  /// Whether http status code is 200 or not.
+  @override
+  final bool ok;
 
-    /// Requested data.
-    @JsonKey(name: 'result') dynamic result,
+  /// Requested data.
+  @override
+  final T result;
 
-    /// Error code.
-    @JsonKey(name: 'error') String error,
+  /// Error code.
+  @override
+  final String error;
 
-    /// Details about the error.
-    @JsonKey(name: 'details') Map<String, dynamic> details,
-  }) = _Response;
+  /// Details about the error.
+  @override
+  final Map<String, dynamic> details;
 
-  factory Response.fromJson(Map<String, dynamic> json) => _$ResponseFromJson(json);
+  const Response({
+    @required this.time,
+    @required this.ok,
+    @required this.result,
+    this.error,
+    this.details,
+  });
+
+  factory Response.fromJson(
+    Map<String, dynamic> json,
+    T Function(Object json) fromJsonT,
+  ) {
+    return _$ResponseFromJson(json, fromJsonT);
+  }
+
+  Map<String, dynamic> toJson(Object Function(T value) toJsonT) => _$ResponseToJson(this, toJsonT);
 }
