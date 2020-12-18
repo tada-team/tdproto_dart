@@ -11,7 +11,7 @@ Response<T> _$ResponseFromJson<T>(
   T Function(Object json) fromJsonT,
 ) {
   return Response<T>(
-    time: json['time'] as String,
+    time: json['_time'] as String,
     ok: json['ok'] as bool,
     result: fromJsonT(json['result']),
     error: json['error'] as String,
@@ -24,7 +24,7 @@ Map<String, dynamic> _$ResponseToJson<T>(
   Object Function(T value) toJsonT,
 ) =>
     <String, dynamic>{
-      'time': instance.time,
+      '_time': instance.time,
       'ok': instance.ok,
       'result': toJsonT(instance.result),
       'error': instance.error,

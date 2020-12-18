@@ -7,6 +7,7 @@ export './src/user_info/user_info.dart';
 export './src/message_content/message_content.dart';
 export './src/message/message.dart';
 export './src/i_response.dart';
+export './src/i_websocket_event.dart';
 
 // Generated:
 export './src/markup_type/markup_type.dart';

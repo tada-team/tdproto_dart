@@ -9,22 +9,27 @@ part 'response.g.dart';
 class Response<T> implements IResponse<T> {
   /// Debug time.
   @override
+  @JsonKey(name: '_time')
   final String time;
 
   /// Whether http status code is 200 or not.
   @override
+  @JsonKey(name: 'ok')
   final bool ok;
 
   /// Requested data.
   @override
+  @JsonKey(name: 'result')
   final T result;
 
   /// Error code.
   @override
+  @JsonKey(name: 'error')
   final String error;
 
   /// Details about the error.
   @override
+  @JsonKey(name: 'details')
   final Map<String, dynamic> details;
 
   const Response({
