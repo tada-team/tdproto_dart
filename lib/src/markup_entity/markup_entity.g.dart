@@ -15,7 +15,7 @@ _$_MarkupEntity _$_$_MarkupEntityFromJson(Map<String, dynamic> json) {
     type: _$enumDecodeNullable(_$MarkupTypeEnumMap, json['typ']),
     url: json['url'] as String,
     repl: json['repl'] as String,
-    time: json['time'] as String,
+    time: const DateTimeConverter().fromJson(json['time'] as String),
     childs: (json['childs'] as List)
         ?.map((e) => e == null ? null : MarkupEntity.fromJson(e as Map<String, dynamic>))
         ?.toList(),
@@ -30,7 +30,7 @@ Map<String, dynamic> _$_$_MarkupEntityToJson(_$_MarkupEntity instance) => <Strin
       'typ': _$MarkupTypeEnumMap[instance.type],
       'url': instance.url,
       'repl': instance.repl,
-      'time': instance.time,
+      'time': const DateTimeConverter().toJson(instance.time),
       'childs': instance.childs?.map((e) => e?.toJson())?.toList(),
     };
 

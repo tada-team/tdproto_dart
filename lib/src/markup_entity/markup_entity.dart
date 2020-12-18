@@ -30,7 +30,7 @@ abstract class MarkupEntity with _$MarkupEntity {
     @JsonKey(name: 'repl') String repl,
 
     /// Time, for Time type.
-    @DateTimeConverter() @JsonKey(name: 'time') String time,
+    @DateTimeConverter() @JsonKey(name: 'time') DateTime time,
 
     /// List of internal markup entities.
     @JsonKey(name: 'childs') List<MarkupEntity> childs,

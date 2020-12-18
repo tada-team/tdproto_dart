@@ -25,7 +25,7 @@ class _$MarkupEntityTearOff {
       @required @JsonKey(name: 'typ') MarkupType type,
       @JsonKey(name: 'url') String url,
       @JsonKey(name: 'repl') String repl,
-      @DateTimeConverter() @JsonKey(name: 'time') String time,
+      @DateTimeConverter() @JsonKey(name: 'time') DateTime time,
       @JsonKey(name: 'childs') List<MarkupEntity> childs}) {
     return _MarkupEntity(
       open: open,
@@ -83,7 +83,7 @@ mixin _$MarkupEntity {
   /// Time, for Time type.
   @DateTimeConverter()
   @JsonKey(name: 'time')
-  String get time;
+  DateTime get time;
 
   /// List of internal markup entities.
   @JsonKey(name: 'childs')
@@ -105,7 +105,7 @@ abstract class $MarkupEntityCopyWith<$Res> {
       @JsonKey(name: 'typ') MarkupType type,
       @JsonKey(name: 'url') String url,
       @JsonKey(name: 'repl') String repl,
-      @DateTimeConverter() @JsonKey(name: 'time') String time,
+      @DateTimeConverter() @JsonKey(name: 'time') DateTime time,
       @JsonKey(name: 'childs') List<MarkupEntity> childs});
 }
 
@@ -137,7 +137,7 @@ class _$MarkupEntityCopyWithImpl<$Res> implements $MarkupEntityCopyWith<$Res> {
       type: type == freezed ? _value.type : type as MarkupType,
       url: url == freezed ? _value.url : url as String,
       repl: repl == freezed ? _value.repl : repl as String,
-      time: time == freezed ? _value.time : time as String,
+      time: time == freezed ? _value.time : time as DateTime,
       childs: childs == freezed ? _value.childs : childs as List<MarkupEntity>,
     ));
   }
@@ -156,7 +156,7 @@ abstract class _$MarkupEntityCopyWith<$Res> implements $MarkupEntityCopyWith<$Re
       @JsonKey(name: 'typ') MarkupType type,
       @JsonKey(name: 'url') String url,
       @JsonKey(name: 'repl') String repl,
-      @DateTimeConverter() @JsonKey(name: 'time') String time,
+      @DateTimeConverter() @JsonKey(name: 'time') DateTime time,
       @JsonKey(name: 'childs') List<MarkupEntity> childs});
 }
 
@@ -189,7 +189,7 @@ class __$MarkupEntityCopyWithImpl<$Res> extends _$MarkupEntityCopyWithImpl<$Res>
       type: type == freezed ? _value.type : type as MarkupType,
       url: url == freezed ? _value.url : url as String,
       repl: repl == freezed ? _value.repl : repl as String,
-      time: time == freezed ? _value.time : time as String,
+      time: time == freezed ? _value.time : time as DateTime,
       childs: childs == freezed ? _value.childs : childs as List<MarkupEntity>,
     ));
   }
@@ -255,7 +255,7 @@ class _$_MarkupEntity implements _MarkupEntity {
   /// Time, for Time type.
   @DateTimeConverter()
   @JsonKey(name: 'time')
-  final String time;
+  final DateTime time;
   @override
 
   /// List of internal markup entities.
@@ -315,7 +315,7 @@ abstract class _MarkupEntity implements MarkupEntity {
       @required @JsonKey(name: 'typ') MarkupType type,
       @JsonKey(name: 'url') String url,
       @JsonKey(name: 'repl') String repl,
-      @DateTimeConverter() @JsonKey(name: 'time') String time,
+      @DateTimeConverter() @JsonKey(name: 'time') DateTime time,
       @JsonKey(name: 'childs') List<MarkupEntity> childs}) = _$_MarkupEntity;
 
   factory _MarkupEntity.fromJson(Map<String, dynamic> json) = _$_MarkupEntity.fromJson;
@@ -360,7 +360,7 @@ abstract class _MarkupEntity implements MarkupEntity {
   /// Time, for Time type.
   @DateTimeConverter()
   @JsonKey(name: 'time')
-  String get time;
+  DateTime get time;
   @override
 
   /// List of internal markup entities.
