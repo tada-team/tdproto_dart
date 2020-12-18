@@ -3,6 +3,7 @@ library tdproto_dart;
 export './src/date_time_converter.dart';
 
 export './src/response/response.dart';
+export './src/websocket_event/websocket_event.dart';
 export './src/user_info/user_info.dart';
 export './src/message_content/message_content.dart';
 export './src/message/message.dart';
