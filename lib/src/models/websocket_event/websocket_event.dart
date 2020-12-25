@@ -5,7 +5,7 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'websocket_event.g.dart';
 
 // This model is implemented through JsonSerializable as freezed doesn't support generics now.
-/// Websocket Event. Manual implementation.
+/// Websocket Event. Handwritten implementation.
 @JsonSerializable()
 class WebsocketEvent<T> implements IWebsocketEvent<T> {
   /// Name of event.

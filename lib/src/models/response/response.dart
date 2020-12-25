@@ -5,7 +5,7 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'response.g.dart';
 
 // This model is implemented through JsonSerializable as freezed doesn't support generics now.
-/// Response. Manual implementation.
+/// Response. Handwritten implementation.
 @JsonSerializable()
 class Response<T> implements IResponse<T> {
   /// Debug time.

@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-/// Media subtype. Manual implementation.
+/// Media subtype. Handwritten implementation.
 enum MediaSubtype {
   @JsonValue('sticker')
   sticker,

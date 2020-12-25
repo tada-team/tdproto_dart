@@ -7,16 +7,14 @@ export 'src/converters/date_time_converter.dart';
 export 'src/interfaces/i_response.dart';
 export 'src/interfaces/i_websocket_event.dart';
 
-// Manual enums:
+// Handwritten enums:
 export 'src/enums/media_type.dart';
 export 'src/enums/media_subtype.dart';
 
-// Manual models:
+// Handwritten models:
 export './src/models/response/response.dart';
 export './src/models/websocket_event/websocket_event.dart';
 export './src/models/user_info/user_info.dart';
-export './src/models/message_content/message_content.dart';
-export './src/models/message/message.dart';
 
 // Generated enums:
 export './src/enums/chat_type.dart';
@@ -36,3 +34,6 @@ export './src/models/message_link/message_link.dart';
 export './src/models/message_link_preview/message_link_preview.dart';
 export './src/models/message_reaction/message_reaction.dart';
 export './src/models/message_reaction_detail/message_reaction_detail.dart';
+export './src/models/features/features.dart';
+export './src/models/message_content/message_content.dart';
+export './src/models/message/message.dart';
