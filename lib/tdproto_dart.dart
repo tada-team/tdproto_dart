@@ -28,3 +28,7 @@ export './src/team_status/team_status.dart';
 export './src/country/country.dart';
 export './src/terms/terms.dart';
 export './src/ice_server/ice_server.dart';
+export './src/message_link/message_link.dart';
+export './src/message_link_preview/message_link_preview.dart';
+export './src/message_reaction/message_reaction.dart';
+export './src/message_reaction_detail/message_reaction_detail.dart';
