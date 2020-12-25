@@ -20,3 +20,5 @@ export './src/chat_type/chat_type.dart';
 export './src/group_status/group_status.dart';
 export './src/team_status/team_status.dart';
 export './src/country/country.dart';
+export './src/terms/terms.dart';
+export './src/ice_server/ice_server.dart';
