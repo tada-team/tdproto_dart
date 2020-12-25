@@ -10,5 +10,5 @@ class DateTimeConverter implements JsonConverter<DateTime, String> {
   DateTime fromJson(String dateTimeString) => dateTimeString == null ? null : DateTime.parse(dateTimeString);
 
   @override
-  String toJson(DateTime dateTime) => dateTime.toIso8601String();
+  String toJson(DateTime dateTime) => dateTime?.toIso8601String();
 }

@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-/// Media type.
+/// Media type. Manual implementation.
 enum MediaType {
   @JsonValue('plain')
   plain,
