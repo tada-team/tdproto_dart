@@ -18,7 +18,8 @@ class _$MockMessageTearOff {
 
 // ignore: unused_element
   _MockMessage call(
-      {@JsonKey(name: 'text') String text, @required @JsonKey(name: 'markup') List<MarkupEntity> markup}) {
+      {@JsonKey(name: 'text') String text,
+      @required @JsonKey(name: 'markup') List<MarkupEntity> markup}) {
     return _MockMessage(
       text: text,
       markup: markup,
@@ -48,8 +49,12 @@ mixin _$MockMessage {
 
 /// @nodoc
 abstract class $MockMessageCopyWith<$Res> {
-  factory $MockMessageCopyWith(MockMessage value, $Res Function(MockMessage) then) = _$MockMessageCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'text') String text, @JsonKey(name: 'markup') List<MarkupEntity> markup});
+  factory $MockMessageCopyWith(
+          MockMessage value, $Res Function(MockMessage) then) =
+      _$MockMessageCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'text') String text,
+      @JsonKey(name: 'markup') List<MarkupEntity> markup});
 }
 
 /// @nodoc
@@ -73,16 +78,22 @@ class _$MockMessageCopyWithImpl<$Res> implements $MockMessageCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$MockMessageCopyWith<$Res> implements $MockMessageCopyWith<$Res> {
-  factory _$MockMessageCopyWith(_MockMessage value, $Res Function(_MockMessage) then) =
+abstract class _$MockMessageCopyWith<$Res>
+    implements $MockMessageCopyWith<$Res> {
+  factory _$MockMessageCopyWith(
+          _MockMessage value, $Res Function(_MockMessage) then) =
       __$MockMessageCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'text') String text, @JsonKey(name: 'markup') List<MarkupEntity> markup});
+  $Res call(
+      {@JsonKey(name: 'text') String text,
+      @JsonKey(name: 'markup') List<MarkupEntity> markup});
 }
 
 /// @nodoc
-class __$MockMessageCopyWithImpl<$Res> extends _$MockMessageCopyWithImpl<$Res> implements _$MockMessageCopyWith<$Res> {
-  __$MockMessageCopyWithImpl(_MockMessage _value, $Res Function(_MockMessage) _then)
+class __$MockMessageCopyWithImpl<$Res> extends _$MockMessageCopyWithImpl<$Res>
+    implements _$MockMessageCopyWith<$Res> {
+  __$MockMessageCopyWithImpl(
+      _MockMessage _value, $Res Function(_MockMessage) _then)
       : super(_value, (v) => _then(v as _MockMessage));
 
   @override
@@ -104,10 +115,13 @@ class __$MockMessageCopyWithImpl<$Res> extends _$MockMessageCopyWithImpl<$Res> i
 
 /// @nodoc
 class _$_MockMessage implements _MockMessage {
-  const _$_MockMessage({@JsonKey(name: 'text') this.text, @required @JsonKey(name: 'markup') this.markup})
+  const _$_MockMessage(
+      {@JsonKey(name: 'text') this.text,
+      @required @JsonKey(name: 'markup') this.markup})
       : assert(markup != null);
 
-  factory _$_MockMessage.fromJson(Map<String, dynamic> json) => _$_$_MockMessageFromJson(json);
+  factory _$_MockMessage.fromJson(Map<String, dynamic> json) =>
+      _$_$_MockMessageFromJson(json);
 
   @override
   @JsonKey(name: 'text')
@@ -125,16 +139,21 @@ class _$_MockMessage implements _MockMessage {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _MockMessage &&
-            (identical(other.text, text) || const DeepCollectionEquality().equals(other.text, text)) &&
-            (identical(other.markup, markup) || const DeepCollectionEquality().equals(other.markup, markup)));
+            (identical(other.text, text) ||
+                const DeepCollectionEquality().equals(other.text, text)) &&
+            (identical(other.markup, markup) ||
+                const DeepCollectionEquality().equals(other.markup, markup)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(text) ^ const DeepCollectionEquality().hash(markup);
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(text) ^
+      const DeepCollectionEquality().hash(markup);
 
   @override
-  _$MockMessageCopyWith<_MockMessage> get copyWith => __$MockMessageCopyWithImpl<_MockMessage>(this, _$identity);
+  _$MockMessageCopyWith<_MockMessage> get copyWith =>
+      __$MockMessageCopyWithImpl<_MockMessage>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -144,10 +163,12 @@ class _$_MockMessage implements _MockMessage {
 
 abstract class _MockMessage implements MockMessage {
   const factory _MockMessage(
-      {@JsonKey(name: 'text') String text,
-      @required @JsonKey(name: 'markup') List<MarkupEntity> markup}) = _$_MockMessage;
+          {@JsonKey(name: 'text') String text,
+          @required @JsonKey(name: 'markup') List<MarkupEntity> markup}) =
+      _$_MockMessage;
 
-  factory _MockMessage.fromJson(Map<String, dynamic> json) = _$_MockMessage.fromJson;
+  factory _MockMessage.fromJson(Map<String, dynamic> json) =
+      _$_MockMessage.fromJson;
 
   @override
   @JsonKey(name: 'text')
