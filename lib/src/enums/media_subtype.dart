@@ -8,7 +8,6 @@ enum MediaSubtype {
   @JsonValue('newtask')
   newtask,
 
-  @deprecated
-  @JsonValue('speech')
-  speech,
+  @JsonValue('none')
+  none,
 }

@@ -28,12 +28,4 @@ enum MediaType {
 
   @JsonValue('pdf')
   pdf,
-
-  @deprecated
-  @JsonValue('newtask')
-  newtask,
-
-  @deprecated
-  @JsonValue('progress')
-  progress,
 }

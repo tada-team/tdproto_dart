@@ -106,12 +106,10 @@ const _$MediaTypeEnumMap = {
   MediaType.audiomsg: 'audiomsg',
   MediaType.contact: 'contact',
   MediaType.pdf: 'pdf',
-  MediaType.newtask: 'newtask',
-  MediaType.progress: 'progress',
 };
 
 const _$MediaSubtypeEnumMap = {
   MediaSubtype.sticker: 'sticker',
   MediaSubtype.newtask: 'newtask',
-  MediaSubtype.speech: 'speech',
+  MediaSubtype.none: 'none',
 };
