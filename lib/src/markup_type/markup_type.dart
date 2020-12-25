@@ -2,43 +2,43 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 
 /// Markup type
 enum MarkupType {
-  // Bold text
+  /// Bold text
   @JsonValue('bold')
   bold,
 
-  // Italic text
+  /// Italic text
   @JsonValue('italic')
   italic,
 
-  // Underscore text
+  /// Underscore text
   @JsonValue('underscore')
   underscore,
 
-  // Striked text
+  /// Striked text
   @JsonValue('strike')
   strike,
 
-  // Inlined code
+  /// Inlined code
   @JsonValue('code')
   code,
 
-  // Code block
+  /// Code block
   @JsonValue('codeblock')
   codeBlock,
 
-  // Quote
+  /// Quote
   @JsonValue('quote')
   quote,
 
-  // Link
+  /// Link
   @JsonValue('link')
   link,
 
-  // Datetime
+  /// Datetime
   @JsonValue('time')
   time,
 
-  // Unsafe html element
+  /// Unsafe html element
   @JsonValue('unsafe')
   unsafe,
 }

@@ -2,19 +2,19 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 
 /// Team status
 enum TeamStatus {
-  // Team owner. Can do anything
+  /// Team owner. Can do anything
   @JsonValue('owner')
   teamOwner,
 
-  // Team administrator
+  /// Team administrator
   @JsonValue('admin')
   teamAdmin,
 
-  // Team member
+  /// Team member
   @JsonValue('member')
   teamMember,
 
-  // Team guest. Restricted account
+  /// Team guest. Restricted account
   @JsonValue('guest')
   teamGuest,
 }

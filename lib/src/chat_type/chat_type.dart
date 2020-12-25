@@ -2,15 +2,15 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 
 /// Chat type
 enum ChatType {
-  // Direct chat
+  /// Direct chat
   @JsonValue('direct')
   direct,
 
-  // Group chat
+  /// Group chat
   @JsonValue('group')
   group,
 
-  // Task
+  /// Task
   @JsonValue('task')
   task,
 }

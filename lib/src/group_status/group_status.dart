@@ -2,11 +2,11 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 
 /// Status in team
 enum GroupStatus {
-  // Group administrator
+  /// Group administrator
   @JsonValue('admin')
   groupAdmin,
 
-  // Group member
+  /// Group member
   @JsonValue('member')
   groupMember,
 }
