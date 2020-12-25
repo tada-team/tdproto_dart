@@ -1,5 +1,4 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:tdproto_dart/tdproto_dart.dart';
 
 part 'country.freezed.dart';
 part 'country.g.dart';
