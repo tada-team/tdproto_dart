@@ -1,5 +1,5 @@
 <a href="https://pub.dev/packages/tdproto_dart"><img src="https://img.shields.io/pub/v/tdproto_dart.svg" alt="Pub"></a>
-<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="License: MIT"></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
 
 # tdproto_dart
 
