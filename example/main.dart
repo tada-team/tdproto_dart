@@ -128,7 +128,10 @@ void main() {
     });
 
     test('non-nullability', () {
-      expect(() => PdfVersion(url: 'SOME_URL'), isNot(throwsA(Error)));
+      expect(
+        () => PdfVersion(url: 'SOME_URL'),
+        isNot(throwsA(isA<Error>())),
+      );
 
       expect(
         () => PdfVersion(url: null),
