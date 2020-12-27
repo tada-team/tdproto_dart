@@ -4,7 +4,7 @@ homepage: https://github.com/tada-team/tdproto_dart
 repository: https://github.com/tada-team/tdproto_dart
 issue_tracker: https://github.com/tada-team/tdproto_dart/issues
 
-version: 1.0.0-dev.1
+version: 1.0.1-dev
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
