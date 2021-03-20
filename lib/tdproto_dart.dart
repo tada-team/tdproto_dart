@@ -1,7 +1,7 @@
 library tdproto_dart;
 
 // Converters:
-export 'src/converters/date_time_converter.dart';
+export 'src/converters/date_time_converters.dart';
 
 // Interfaces:
 export 'src/interfaces/i_response.dart';

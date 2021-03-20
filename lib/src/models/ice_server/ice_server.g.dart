@@ -12,6 +12,7 @@ _$_ICEServer _$_$_ICEServerFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_ICEServerToJson(_$_ICEServer instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_ICEServerToJson(_$_ICEServer instance) =>
+    <String, dynamic>{
       'urls': instance.urls,
     };

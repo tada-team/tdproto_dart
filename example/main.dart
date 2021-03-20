@@ -35,9 +35,8 @@ const _jsonResponse = {
 
 void main() {
   group('tdproto features:', () {
-    final message = Message.fromJson(_messageJson);
-
     test('enums', () {
+      final message = Message.fromJson(_messageJson);
       // in IDE you get the documentation about any field
       message.created;
       // in IDE you get the deprecation warnings about deprecated fields due to @Deprecated annotation
@@ -49,15 +48,18 @@ void main() {
     test('generic response serialization', () {
       // arrange
       final handwrittenResponse = Response(
-        time: _jsonResponse['_time'],
-        ok: _jsonResponse['ok'],
+        time: _jsonResponse['_time'] as String,
+        ok: _jsonResponse['ok'] as bool,
         result: PdfVersion(
           url: (_jsonResponse['result'] as Map)['url'],
           textPreview: (_jsonResponse['result'] as Map)['text_preview'],
         ),
       );
       // act
-      final serializedResponse = Response.fromJson(_jsonResponse, (json) => PdfVersion.fromJson(json));
+      final serializedResponse = Response.fromJson(
+        _jsonResponse,
+        (json) => PdfVersion.fromJson(json as Map<String, dynamic>),
+      );
       // assert
       // Can't compare responses just with equality operator because
       // response is implemented through json_serializable and doesn't have overridden equality operator.
@@ -73,7 +75,7 @@ void main() {
     test('fromJson, toJson', () {
       // arrange
       final pdfVersion = PdfVersion(
-        url: _pdfVersionJson['url'],
+        url: _pdfVersionJson['url'] as String,
         textPreview: _pdfVersionJson['text_preview'],
       );
       // act
@@ -125,18 +127,6 @@ void main() {
       final copiedPdfVersion = pdfVersion.copyWith(textPreview: 'example');
       // assert
       expect(copiedPdfVersion, PdfVersion(url: 'SOME_URL', textPreview: 'example'));
-    });
-
-    test('non-nullability', () {
-      expect(
-        () => PdfVersion(url: 'SOME_URL'),
-        isNot(throwsA(isA<Error>())),
-      );
-
-      expect(
-        () => PdfVersion(url: null),
-        throwsA(isA<AssertionError>()),
-      );
     });
   });
 }

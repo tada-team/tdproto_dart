@@ -1,4 +1,3 @@
-import 'package:meta/meta.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:tdproto_dart/tdproto_dart.dart';
 
@@ -26,24 +25,24 @@ class Response<T> implements IResponse<T> {
   /// Error code.
   @override
   @JsonKey(name: 'error')
-  final String error;
+  final String? error;
 
   /// Details about the error.
   @override
   @JsonKey(name: 'details')
-  final Map<String, dynamic> details;
+  final Map<String, dynamic>? details;
 
   const Response({
-    @required this.time,
-    @required this.ok,
-    @required this.result,
+    required this.time,
+    required this.ok,
+    required this.result,
     this.error,
     this.details,
   });
 
   factory Response.fromJson(
     Map<String, dynamic> json,
-    T Function(Object json) fromJsonT,
+    T Function(Object? json) fromJsonT,
   ) {
     return _$ResponseFromJson(json, fromJsonT);
   }

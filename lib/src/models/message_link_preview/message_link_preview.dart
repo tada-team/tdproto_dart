@@ -5,13 +5,13 @@ part 'message_link_preview.g.dart';
 
 /// Website title and description
 @freezed
-abstract class MessageLinkPreview with _$MessageLinkPreview {
+class MessageLinkPreview with _$MessageLinkPreview {
   const factory MessageLinkPreview({
     /// Website title or og:title content.
-    @JsonKey(name: 'title') @required String title,
+    @JsonKey(name: 'title') required String title,
 
     /// Website description.
-    @JsonKey(name: 'description') String description,
+    @JsonKey(name: 'description') String? description,
   }) = _MessageLinkPreview;
 
   factory MessageLinkPreview.fromJson(Map<String, dynamic> json) => _$MessageLinkPreviewFromJson(json);

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'pdf_version.dart';
 
@@ -8,6 +8,10 @@ part of 'pdf_version.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 PdfVersion _$PdfVersionFromJson(Map<String, dynamic> json) {
   return _PdfVersion.fromJson(json);
 }
@@ -16,42 +20,47 @@ PdfVersion _$PdfVersionFromJson(Map<String, dynamic> json) {
 class _$PdfVersionTearOff {
   const _$PdfVersionTearOff();
 
-// ignore: unused_element
-  _PdfVersion call({@required @JsonKey(name: 'url') String url, @JsonKey(name: 'text_preview') String textPreview}) {
+  _PdfVersion call(
+      {@JsonKey(name: 'url') required String url,
+      @JsonKey(name: 'text_preview') String? textPreview}) {
     return _PdfVersion(
       url: url,
       textPreview: textPreview,
     );
   }
 
-// ignore: unused_element
   PdfVersion fromJson(Map<String, Object> json) {
     return PdfVersion.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $PdfVersion = _$PdfVersionTearOff();
 
 /// @nodoc
 mixin _$PdfVersion {
   /// Absolute url.
   @JsonKey(name: 'url')
-  String get url;
+  String get url => throw _privateConstructorUsedError;
 
   /// First string of text content.
   @JsonKey(name: 'text_preview')
-  String get textPreview;
+  String? get textPreview => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $PdfVersionCopyWith<PdfVersion> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PdfVersionCopyWith<PdfVersion> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $PdfVersionCopyWith<$Res> {
-  factory $PdfVersionCopyWith(PdfVersion value, $Res Function(PdfVersion) then) = _$PdfVersionCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'url') String url, @JsonKey(name: 'text_preview') String textPreview});
+  factory $PdfVersionCopyWith(
+          PdfVersion value, $Res Function(PdfVersion) then) =
+      _$PdfVersionCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'url') String url,
+      @JsonKey(name: 'text_preview') String? textPreview});
 }
 
 /// @nodoc
@@ -64,26 +73,38 @@ class _$PdfVersionCopyWithImpl<$Res> implements $PdfVersionCopyWith<$Res> {
 
   @override
   $Res call({
-    Object url = freezed,
-    Object textPreview = freezed,
+    Object? url = freezed,
+    Object? textPreview = freezed,
   }) {
     return _then(_value.copyWith(
-      url: url == freezed ? _value.url : url as String,
-      textPreview: textPreview == freezed ? _value.textPreview : textPreview as String,
+      url: url == freezed
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+      textPreview: textPreview == freezed
+          ? _value.textPreview
+          : textPreview // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
 /// @nodoc
 abstract class _$PdfVersionCopyWith<$Res> implements $PdfVersionCopyWith<$Res> {
-  factory _$PdfVersionCopyWith(_PdfVersion value, $Res Function(_PdfVersion) then) = __$PdfVersionCopyWithImpl<$Res>;
+  factory _$PdfVersionCopyWith(
+          _PdfVersion value, $Res Function(_PdfVersion) then) =
+      __$PdfVersionCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'url') String url, @JsonKey(name: 'text_preview') String textPreview});
+  $Res call(
+      {@JsonKey(name: 'url') String url,
+      @JsonKey(name: 'text_preview') String? textPreview});
 }
 
 /// @nodoc
-class __$PdfVersionCopyWithImpl<$Res> extends _$PdfVersionCopyWithImpl<$Res> implements _$PdfVersionCopyWith<$Res> {
-  __$PdfVersionCopyWithImpl(_PdfVersion _value, $Res Function(_PdfVersion) _then)
+class __$PdfVersionCopyWithImpl<$Res> extends _$PdfVersionCopyWithImpl<$Res>
+    implements _$PdfVersionCopyWith<$Res> {
+  __$PdfVersionCopyWithImpl(
+      _PdfVersion _value, $Res Function(_PdfVersion) _then)
       : super(_value, (v) => _then(v as _PdfVersion));
 
   @override
@@ -91,12 +112,18 @@ class __$PdfVersionCopyWithImpl<$Res> extends _$PdfVersionCopyWithImpl<$Res> imp
 
   @override
   $Res call({
-    Object url = freezed,
-    Object textPreview = freezed,
+    Object? url = freezed,
+    Object? textPreview = freezed,
   }) {
     return _then(_PdfVersion(
-      url: url == freezed ? _value.url : url as String,
-      textPreview: textPreview == freezed ? _value.textPreview : textPreview as String,
+      url: url == freezed
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+      textPreview: textPreview == freezed
+          ? _value.textPreview
+          : textPreview // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -105,10 +132,12 @@ class __$PdfVersionCopyWithImpl<$Res> extends _$PdfVersionCopyWithImpl<$Res> imp
 
 /// @nodoc
 class _$_PdfVersion implements _PdfVersion {
-  const _$_PdfVersion({@required @JsonKey(name: 'url') this.url, @JsonKey(name: 'text_preview') this.textPreview})
-      : assert(url != null);
+  const _$_PdfVersion(
+      {@JsonKey(name: 'url') required this.url,
+      @JsonKey(name: 'text_preview') this.textPreview});
 
-  factory _$_PdfVersion.fromJson(Map<String, dynamic> json) => _$_$_PdfVersionFromJson(json);
+  factory _$_PdfVersion.fromJson(Map<String, dynamic> json) =>
+      _$_$_PdfVersionFromJson(json);
 
   @override
 
@@ -119,7 +148,7 @@ class _$_PdfVersion implements _PdfVersion {
 
   /// First string of text content.
   @JsonKey(name: 'text_preview')
-  final String textPreview;
+  final String? textPreview;
 
   @override
   String toString() {
@@ -130,9 +159,11 @@ class _$_PdfVersion implements _PdfVersion {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _PdfVersion &&
-            (identical(other.url, url) || const DeepCollectionEquality().equals(other.url, url)) &&
+            (identical(other.url, url) ||
+                const DeepCollectionEquality().equals(other.url, url)) &&
             (identical(other.textPreview, textPreview) ||
-                const DeepCollectionEquality().equals(other.textPreview, textPreview)));
+                const DeepCollectionEquality()
+                    .equals(other.textPreview, textPreview)));
   }
 
   @override
@@ -141,8 +172,10 @@ class _$_PdfVersion implements _PdfVersion {
       const DeepCollectionEquality().hash(url) ^
       const DeepCollectionEquality().hash(textPreview);
 
+  @JsonKey(ignore: true)
   @override
-  _$PdfVersionCopyWith<_PdfVersion> get copyWith => __$PdfVersionCopyWithImpl<_PdfVersion>(this, _$identity);
+  _$PdfVersionCopyWith<_PdfVersion> get copyWith =>
+      __$PdfVersionCopyWithImpl<_PdfVersion>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -152,20 +185,24 @@ class _$_PdfVersion implements _PdfVersion {
 
 abstract class _PdfVersion implements PdfVersion {
   const factory _PdfVersion(
-      {@required @JsonKey(name: 'url') String url, @JsonKey(name: 'text_preview') String textPreview}) = _$_PdfVersion;
+      {@JsonKey(name: 'url') required String url,
+      @JsonKey(name: 'text_preview') String? textPreview}) = _$_PdfVersion;
 
-  factory _PdfVersion.fromJson(Map<String, dynamic> json) = _$_PdfVersion.fromJson;
+  factory _PdfVersion.fromJson(Map<String, dynamic> json) =
+      _$_PdfVersion.fromJson;
 
   @override
 
   /// Absolute url.
   @JsonKey(name: 'url')
-  String get url;
+  String get url => throw _privateConstructorUsedError;
   @override
 
   /// First string of text content.
   @JsonKey(name: 'text_preview')
-  String get textPreview;
+  String? get textPreview => throw _privateConstructorUsedError;
   @override
-  _$PdfVersionCopyWith<_PdfVersion> get copyWith;
+  @JsonKey(ignore: true)
+  _$PdfVersionCopyWith<_PdfVersion> get copyWith =>
+      throw _privateConstructorUsedError;
 }

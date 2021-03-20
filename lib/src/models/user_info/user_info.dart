@@ -5,13 +5,13 @@ part 'user_info.g.dart';
 
 /// User info. Experimental handwritten implementation.
 @freezed
-abstract class UserInfo with _$UserInfo {
+class UserInfo with _$UserInfo {
   const factory UserInfo({
     /// Family name.
-    @JsonKey(name: 'first_name') @required String firstName,
+    @JsonKey(name: 'first_name') required String firstName,
 
     /// Given name.
-    @JsonKey(name: 'given_name') @required String givenName,
+    @JsonKey(name: 'given_name') required String givenName,
   }) = _UserInfo;
 
   factory UserInfo.fromJson(Map<String, dynamic> json) => _$UserInfoFromJson(json);

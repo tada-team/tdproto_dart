@@ -13,7 +13,8 @@ _$_Features _$_$_FeaturesFromJson(Map<String, dynamic> json) {
     desktopVersion: json['desktop_version'] as String,
     frontVersion: json['front_version'] as String,
     appTitle: json['app_title'] as String,
-    appSchemes: (json['app_schemes'] as List)?.map((e) => e as String)?.toList(),
+    appSchemes:
+        (json['app_schemes'] as List<dynamic>).map((e) => e as String).toList(),
     userver: json['userver'] as String,
     iOSApp: json['ios_app'] as String,
     androidApp: json['android_app'] as String,
@@ -31,17 +32,18 @@ _$_Features _$_$_FeaturesFromJson(Map<String, dynamic> json) {
     maxSectionLength: json['max_section_length'] as int,
     maxTagLength: json['max_tag_length'] as int,
     maxTaskTitleLength: json['max_task_title_length'] as int,
-    maxColorRuleDescriptionLength: json['max_color_rule_description_length'] as int,
+    maxColorRuleDescriptionLength:
+        json['max_color_rule_description_length'] as int,
     maxUrlLength: json['max_url_length'] as int,
     maxIntegrationCommentLength: json['max_integration_comment_length'] as int,
     maxTeams: json['max_teams'] as int,
     afkAge: json['afk_age'] as int,
-    authByPassword: json['auth_by_password'] as bool,
-    authByQrCode: json['auth_by_qr_code'] as bool,
-    authBySms: json['auth_by_sms'] as bool,
-    iceServers: (json['ice_servers'] as List)
-        ?.map((e) => e == null ? null : ICEServer.fromJson(e as Map<String, dynamic>))
-        ?.toList(),
+    authByPassword: json['auth_by_password'] as bool?,
+    authByQrCode: json['auth_by_qr_code'] as bool?,
+    authBySms: json['auth_by_sms'] as bool?,
+    iceServers: (json['ice_servers'] as List<dynamic>)
+        .map((e) => ICEServer.fromJson(e as Map<String, dynamic>))
+        .toList(),
     customServer: json['custom_server'] as bool,
     installationType: json['installation_type'] as String,
     isTesting: json['is_testing'] as bool,
@@ -60,14 +62,14 @@ _$_Features _$_$_FeaturesFromJson(Map<String, dynamic> json) {
     calls: json['calls'] as bool,
     mobileCalls: json['mobile_calls'] as bool,
     callsRecord: json['calls_record'] as bool,
-    onlyOneDevicePerCall: json['only_one_device_per_call'] as bool,
-    maxParticipantsPerCall: json['max_participants_per_call'] as int,
+    onlyOneDevicePerCall: json['only_one_device_per_call'] as bool?,
+    maxParticipantsPerCall: json['max_participants_per_call'] as int?,
     safariPushId: json['safari_push_id'] as String,
     messageUploads: json['message_uploads'] as bool,
-    terms: json['terms'] == null ? null : Terms.fromJson(json['terms'] as Map<String, dynamic>),
+    terms: Terms.fromJson(json['terms'] as Map<String, dynamic>),
     singleGroupTeams: json['single_group_teams'] as bool,
     wikiPages: json['wiki_pages'] as bool,
-    allowAdminMute: json['allow_admin_mute'] as bool,
+    allowAdminMute: json['allow_admin_mute'] as bool?,
     taskChecklist: json['task_checklist'] as bool,
     readonlyGroups: json['readonly_groups'] as bool,
     taskDashboard: json['task_dashboard'] as bool,
@@ -77,7 +79,8 @@ _$_Features _$_$_FeaturesFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_FeaturesToJson(_$_Features instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_FeaturesToJson(_$_Features instance) =>
+    <String, dynamic>{
       'host': instance.host,
       'build': instance.build,
       'desktop_version': instance.desktopVersion,
@@ -101,7 +104,8 @@ Map<String, dynamic> _$_$_FeaturesToJson(_$_Features instance) => <String, dynam
       'max_section_length': instance.maxSectionLength,
       'max_tag_length': instance.maxTagLength,
       'max_task_title_length': instance.maxTaskTitleLength,
-      'max_color_rule_description_length': instance.maxColorRuleDescriptionLength,
+      'max_color_rule_description_length':
+          instance.maxColorRuleDescriptionLength,
       'max_url_length': instance.maxUrlLength,
       'max_integration_comment_length': instance.maxIntegrationCommentLength,
       'max_teams': instance.maxTeams,
@@ -109,7 +113,7 @@ Map<String, dynamic> _$_$_FeaturesToJson(_$_Features instance) => <String, dynam
       'auth_by_password': instance.authByPassword,
       'auth_by_qr_code': instance.authByQrCode,
       'auth_by_sms': instance.authBySms,
-      'ice_servers': instance.iceServers?.map((e) => e?.toJson())?.toList(),
+      'ice_servers': instance.iceServers.map((e) => e.toJson()).toList(),
       'custom_server': instance.customServer,
       'installation_type': instance.installationType,
       'is_testing': instance.isTesting,
@@ -132,7 +136,7 @@ Map<String, dynamic> _$_$_FeaturesToJson(_$_Features instance) => <String, dynam
       'max_participants_per_call': instance.maxParticipantsPerCall,
       'safari_push_id': instance.safariPushId,
       'message_uploads': instance.messageUploads,
-      'terms': instance.terms?.toJson(),
+      'terms': instance.terms.toJson(),
       'single_group_teams': instance.singleGroupTeams,
       'wiki_pages': instance.wikiPages,
       'allow_admin_mute': instance.allowAdminMute,

@@ -1,7 +1,7 @@
 abstract class IWebsocketEvent<T> {
   String get event;
 
-  T get params;
+  T? get params;
 
-  String get confirmId;
+  String? get confirmId;
 }

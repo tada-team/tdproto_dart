@@ -8,20 +8,20 @@ part of 'user.dart';
 
 _$_User _$_$_UserFromJson(Map<String, dynamic> json) {
   return _$_User(
-    phone: json['phone'] as String,
-    email: json['email'] as String,
-    familyName: json['family_name'] as String,
-    givenName: json['given_name'] as String,
-    patronymic: json['patronymic'] as String,
-    defaultLang: json['default_lang'] as String,
+    phone: json['phone'] as String?,
+    email: json['email'] as String?,
+    familyName: json['family_name'] as String?,
+    givenName: json['given_name'] as String?,
+    patronymic: json['patronymic'] as String?,
+    defaultLang: json['default_lang'] as String?,
     altSend: json['alt_send'] as bool,
     asteriskMention: json['asterisk_mention'] as bool,
     alwaysSendPushes: json['always_send_pushes'] as bool,
     unreadFirst: json['unread_first'] as bool,
     mUnreadFirst: json['munread_first'] as bool,
     timezone: json['timezone'] as String,
-    quietTimeStart: json['quiet_time_start'] as String,
-    quietTimeFinish: json['quiet_time_finish'] as String,
+    quietTimeStart: json['quiet_time_start'] as String?,
+    quietTimeFinish: json['quiet_time_finish'] as String?,
   );
 }
 

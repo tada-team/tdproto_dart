@@ -6,34 +6,34 @@ part 'markup_entity.g.dart';
 
 /// Markup entity. Experimental
 @freezed
-abstract class MarkupEntity with _$MarkupEntity {
+class MarkupEntity with _$MarkupEntity {
   const factory MarkupEntity({
     /// Open marker offset.
-    @JsonKey(name: 'op') @required int open,
+    @JsonKey(name: 'op') required int open,
 
     /// Open marker length.
-    @JsonKey(name: 'oplen') int openLength,
+    @JsonKey(name: 'oplen') int? openLength,
 
     /// Close marker offset.
-    @JsonKey(name: 'cl') @required int close,
+    @JsonKey(name: 'cl') required int close,
 
     /// Close marker length.
-    @JsonKey(name: 'cllen') int closeLength,
+    @JsonKey(name: 'cllen') int? closeLength,
 
     /// Marker type.
-    @JsonKey(name: 'typ') @required MarkupType type,
+    @JsonKey(name: 'typ') required MarkupType type,
 
     /// Url, for Link type.
-    @JsonKey(name: 'url') String url,
+    @JsonKey(name: 'url') String? url,
 
     /// Text replacement.
-    @JsonKey(name: 'repl') String repl,
+    @JsonKey(name: 'repl') String? replacement,
 
     /// Time, for Time type.
-    @DateTimeConverter() @JsonKey(name: 'time') DateTime time,
+    @NullableDateTimeConverter() @JsonKey(name: 'time') DateTime? time,
 
     /// List of internal markup entities.
-    @JsonKey(name: 'childs') List<MarkupEntity> childs,
+    @JsonKey(name: 'childs') List<MarkupEntity>? children,
   }) = _MarkupEntity;
 
   factory MarkupEntity.fromJson(Map<String, dynamic> json) => _$MarkupEntityFromJson(json);

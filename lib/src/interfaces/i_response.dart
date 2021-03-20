@@ -5,7 +5,7 @@ abstract class IResponse<T> {
 
   T get result;
 
-  String get error;
+  String? get error;
 
-  Map<String, dynamic> get details;
+  Map<String, dynamic>? get details;
 }

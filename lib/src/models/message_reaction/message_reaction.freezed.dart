@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'message_reaction.dart';
 
@@ -8,6 +8,10 @@ part of 'message_reaction.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 MessageReaction _$MessageReactionFromJson(Map<String, dynamic> json) {
   return _MessageReaction.fromJson(json);
 }
@@ -16,11 +20,10 @@ MessageReaction _$MessageReactionFromJson(Map<String, dynamic> json) {
 class _$MessageReactionTearOff {
   const _$MessageReactionTearOff();
 
-// ignore: unused_element
   _MessageReaction call(
-      {@required @JsonKey(name: 'name') String name,
-      @required @JsonKey(name: 'counter') int counter,
-      @required @JsonKey(name: 'details') List<MessageReactionDetail> details}) {
+      {@JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'counter') required int counter,
+      @JsonKey(name: 'details') required List<MessageReactionDetail> details}) {
     return _MessageReaction(
       name: name,
       counter: counter,
@@ -28,37 +31,38 @@ class _$MessageReactionTearOff {
     );
   }
 
-// ignore: unused_element
   MessageReaction fromJson(Map<String, Object> json) {
     return MessageReaction.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $MessageReaction = _$MessageReactionTearOff();
 
 /// @nodoc
 mixin _$MessageReaction {
   /// Emoji.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// Number of reactions.
   @JsonKey(name: 'counter')
-  int get counter;
+  int get counter => throw _privateConstructorUsedError;
 
   /// Details.
   @JsonKey(name: 'details')
-  List<MessageReactionDetail> get details;
+  List<MessageReactionDetail> get details => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $MessageReactionCopyWith<MessageReaction> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $MessageReactionCopyWith<MessageReaction> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $MessageReactionCopyWith<$Res> {
-  factory $MessageReactionCopyWith(MessageReaction value, $Res Function(MessageReaction) then) =
+  factory $MessageReactionCopyWith(
+          MessageReaction value, $Res Function(MessageReaction) then) =
       _$MessageReactionCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'name') String name,
@@ -67,7 +71,8 @@ abstract class $MessageReactionCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MessageReactionCopyWithImpl<$Res> implements $MessageReactionCopyWith<$Res> {
+class _$MessageReactionCopyWithImpl<$Res>
+    implements $MessageReactionCopyWith<$Res> {
   _$MessageReactionCopyWithImpl(this._value, this._then);
 
   final MessageReaction _value;
@@ -76,21 +81,32 @@ class _$MessageReactionCopyWithImpl<$Res> implements $MessageReactionCopyWith<$R
 
   @override
   $Res call({
-    Object name = freezed,
-    Object counter = freezed,
-    Object details = freezed,
+    Object? name = freezed,
+    Object? counter = freezed,
+    Object? details = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed ? _value.name : name as String,
-      counter: counter == freezed ? _value.counter : counter as int,
-      details: details == freezed ? _value.details : details as List<MessageReactionDetail>,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      counter: counter == freezed
+          ? _value.counter
+          : counter // ignore: cast_nullable_to_non_nullable
+              as int,
+      details: details == freezed
+          ? _value.details
+          : details // ignore: cast_nullable_to_non_nullable
+              as List<MessageReactionDetail>,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$MessageReactionCopyWith<$Res> implements $MessageReactionCopyWith<$Res> {
-  factory _$MessageReactionCopyWith(_MessageReaction value, $Res Function(_MessageReaction) then) =
+abstract class _$MessageReactionCopyWith<$Res>
+    implements $MessageReactionCopyWith<$Res> {
+  factory _$MessageReactionCopyWith(
+          _MessageReaction value, $Res Function(_MessageReaction) then) =
       __$MessageReactionCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -100,9 +116,11 @@ abstract class _$MessageReactionCopyWith<$Res> implements $MessageReactionCopyWi
 }
 
 /// @nodoc
-class __$MessageReactionCopyWithImpl<$Res> extends _$MessageReactionCopyWithImpl<$Res>
+class __$MessageReactionCopyWithImpl<$Res>
+    extends _$MessageReactionCopyWithImpl<$Res>
     implements _$MessageReactionCopyWith<$Res> {
-  __$MessageReactionCopyWithImpl(_MessageReaction _value, $Res Function(_MessageReaction) _then)
+  __$MessageReactionCopyWithImpl(
+      _MessageReaction _value, $Res Function(_MessageReaction) _then)
       : super(_value, (v) => _then(v as _MessageReaction));
 
   @override
@@ -110,14 +128,23 @@ class __$MessageReactionCopyWithImpl<$Res> extends _$MessageReactionCopyWithImpl
 
   @override
   $Res call({
-    Object name = freezed,
-    Object counter = freezed,
-    Object details = freezed,
+    Object? name = freezed,
+    Object? counter = freezed,
+    Object? details = freezed,
   }) {
     return _then(_MessageReaction(
-      name: name == freezed ? _value.name : name as String,
-      counter: counter == freezed ? _value.counter : counter as int,
-      details: details == freezed ? _value.details : details as List<MessageReactionDetail>,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      counter: counter == freezed
+          ? _value.counter
+          : counter // ignore: cast_nullable_to_non_nullable
+              as int,
+      details: details == freezed
+          ? _value.details
+          : details // ignore: cast_nullable_to_non_nullable
+              as List<MessageReactionDetail>,
     ));
   }
 }
@@ -127,14 +154,12 @@ class __$MessageReactionCopyWithImpl<$Res> extends _$MessageReactionCopyWithImpl
 /// @nodoc
 class _$_MessageReaction implements _MessageReaction {
   const _$_MessageReaction(
-      {@required @JsonKey(name: 'name') this.name,
-      @required @JsonKey(name: 'counter') this.counter,
-      @required @JsonKey(name: 'details') this.details})
-      : assert(name != null),
-        assert(counter != null),
-        assert(details != null);
+      {@JsonKey(name: 'name') required this.name,
+      @JsonKey(name: 'counter') required this.counter,
+      @JsonKey(name: 'details') required this.details});
 
-  factory _$_MessageReaction.fromJson(Map<String, dynamic> json) => _$_$_MessageReactionFromJson(json);
+  factory _$_MessageReaction.fromJson(Map<String, dynamic> json) =>
+      _$_$_MessageReactionFromJson(json);
 
   @override
 
@@ -161,9 +186,13 @@ class _$_MessageReaction implements _MessageReaction {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _MessageReaction &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.counter, counter) || const DeepCollectionEquality().equals(other.counter, counter)) &&
-            (identical(other.details, details) || const DeepCollectionEquality().equals(other.details, details)));
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
+            (identical(other.counter, counter) ||
+                const DeepCollectionEquality()
+                    .equals(other.counter, counter)) &&
+            (identical(other.details, details) ||
+                const DeepCollectionEquality().equals(other.details, details)));
   }
 
   @override
@@ -173,6 +202,7 @@ class _$_MessageReaction implements _MessageReaction {
       const DeepCollectionEquality().hash(counter) ^
       const DeepCollectionEquality().hash(details);
 
+  @JsonKey(ignore: true)
   @override
   _$MessageReactionCopyWith<_MessageReaction> get copyWith =>
       __$MessageReactionCopyWithImpl<_MessageReaction>(this, _$identity);
@@ -185,27 +215,33 @@ class _$_MessageReaction implements _MessageReaction {
 
 abstract class _MessageReaction implements MessageReaction {
   const factory _MessageReaction(
-      {@required @JsonKey(name: 'name') String name,
-      @required @JsonKey(name: 'counter') int counter,
-      @required @JsonKey(name: 'details') List<MessageReactionDetail> details}) = _$_MessageReaction;
+      {@JsonKey(name: 'name')
+          required String name,
+      @JsonKey(name: 'counter')
+          required int counter,
+      @JsonKey(name: 'details')
+          required List<MessageReactionDetail> details}) = _$_MessageReaction;
 
-  factory _MessageReaction.fromJson(Map<String, dynamic> json) = _$_MessageReaction.fromJson;
+  factory _MessageReaction.fromJson(Map<String, dynamic> json) =
+      _$_MessageReaction.fromJson;
 
   @override
 
   /// Emoji.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// Number of reactions.
   @JsonKey(name: 'counter')
-  int get counter;
+  int get counter => throw _privateConstructorUsedError;
   @override
 
   /// Details.
   @JsonKey(name: 'details')
-  List<MessageReactionDetail> get details;
+  List<MessageReactionDetail> get details => throw _privateConstructorUsedError;
   @override
-  _$MessageReactionCopyWith<_MessageReaction> get copyWith;
+  @JsonKey(ignore: true)
+  _$MessageReactionCopyWith<_MessageReaction> get copyWith =>
+      throw _privateConstructorUsedError;
 }

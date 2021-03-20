@@ -1,4 +1,3 @@
-import 'package:meta/meta.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:tdproto_dart/tdproto_dart.dart';
 
@@ -16,25 +15,32 @@ class WebsocketEvent<T> implements IWebsocketEvent<T> {
   /// Event parameters. Optional.
   @override
   @JsonKey(name: 'params')
-  final T params;
+  final T? params;
 
   /// Confirm id. Optional.
   @override
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   const WebsocketEvent({
-    @required this.event,
+    required this.event,
     this.params,
     this.confirmId,
   });
 
   factory WebsocketEvent.fromJson(
     Map<String, dynamic> json,
-    T Function(Object json) fromJsonT,
+    T Function(Map<String, dynamic> json) fromJsonT,
   ) {
-    return _$WebsocketEventFromJson(json, fromJsonT);
+    return _$WebsocketEventFromJson<T>(
+      json,
+      fromJsonT as T Function(Object? json),
+    );
   }
 
-  Map<String, dynamic> toJson(Object Function(T value) toJsonT) => _$WebsocketEventToJson(this, toJsonT);
+  Map<String, dynamic> toJson(
+    Map<String, dynamic> Function(T value) toJsonT,
+  ) {
+    return _$WebsocketEventToJson(this, toJsonT);
+  }
 }

@@ -13,7 +13,8 @@ _$_UserInfo _$_$_UserInfoFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_UserInfoToJson(_$_UserInfo instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_UserInfoToJson(_$_UserInfo instance) =>
+    <String, dynamic>{
       'first_name': instance.firstName,
       'given_name': instance.givenName,
     };
