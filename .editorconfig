@@ -1,0 +1,16 @@
+# EditorConfig is awesome: https://editorconfig.org/
+
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+trim_trailing_whitespace = true
+
+[*.{dart, json, arb, yaml, md, sh, bash}]
+charset = utf-8
+indent_size = 2
+
+[*.dart]
+max_line_length = 120
