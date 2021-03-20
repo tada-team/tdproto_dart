@@ -33,18 +33,15 @@ class WebSocketEvent<T> extends Equatable implements IWebSocketEvent<T> {
 
   factory WebSocketEvent.fromJson(
     Map<String, dynamic> json,
-    T Function(Map<String, dynamic> json) fromJsonT,
+    T Function(Object? json) fromJsonT,
   ) {
-    return _$WebsocketEventFromJson<T>(
-      json,
-      fromJsonT as T Function(Object? json),
-    );
+    return _$WebSocketEventFromJson<T>(json, fromJsonT);
   }
 
   Map<String, dynamic> toJson(
-    Map<String, dynamic> Function(T value) toJsonT,
+    Object? Function(T value) toJsonT,
   ) {
-    return _$WebsocketEventToJson(this, toJsonT);
+    return _$WebSocketEventToJson(this, toJsonT);
   }
 
   @override
