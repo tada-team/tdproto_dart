@@ -1,12 +1,15 @@
+import 'package:equatable/equatable.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:tdproto_dart/tdproto_dart.dart';
 
 part 'response.g.dart';
 
 /// Response. Handwritten implementation.
-/// This model is implemented through JsonSerializable as freezed doesn't support serialization of generics.
+///
+/// This model is implemented through json_serializable and equatable due to
+/// freezed as of right now doesn't support serialization of generics.
 @JsonSerializable()
-class Response<T> implements IResponse<T> {
+class Response<T> extends Equatable implements IResponse<T> {
   /// Debug time.
   @override
   @JsonKey(name: '_time')
@@ -48,4 +51,36 @@ class Response<T> implements IResponse<T> {
   }
 
   Map<String, dynamic> toJson(Object Function(T value) toJsonT) => _$ResponseToJson(this, toJsonT);
+
+  @override
+  List<Object?> get props {
+    return [
+      time,
+      ok,
+      result,
+      error,
+      details,
+    ];
+  }
+
+  Response<T> copyWith({
+    String? time,
+    bool? ok,
+    T? result,
+    String? error,
+    Map<String, dynamic>? details,
+  }) {
+    return Response<T>(
+      time: time ?? this.time,
+      ok: ok ?? this.ok,
+      result: result ?? this.result,
+      error: error ?? this.error,
+      details: details ?? this.details,
+    );
+  }
+
+  @override
+  String toString() {
+    return 'Response(time: $time, ok: $ok, result: $result, error: $error, details: $details)';
+  }
 }
