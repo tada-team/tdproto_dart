@@ -1,4 +1,4 @@
-abstract class IWebsocketEvent<T> {
+abstract class IWebSocketEvent<T> {
   String get event;
 
   T? get params;

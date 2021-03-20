@@ -1,17 +1,17 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'websocket_event.dart';
+part of 'web_socket_event.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-WebsocketEvent<T> _$WebsocketEventFromJson<T>(
+WebSocketEvent<T> _$WebsocketEventFromJson<T>(
   Map<String, dynamic> json,
   T Function(Object? json) fromJsonT,
 ) {
   return $checkedNew('WebsocketEvent', json, () {
-    final val = WebsocketEvent<T>(
+    final val = WebSocketEvent<T>(
       event: $checkedConvert(json, 'event', (v) => v as String),
       params: $checkedConvert(
           json, 'params', (v) => _$nullableGenericFromJson(v, fromJsonT)),
@@ -22,7 +22,7 @@ WebsocketEvent<T> _$WebsocketEventFromJson<T>(
 }
 
 Map<String, dynamic> _$WebsocketEventToJson<T>(
-  WebsocketEvent<T> instance,
+  WebSocketEvent<T> instance,
   Object? Function(T value) toJsonT,
 ) =>
     <String, dynamic>{

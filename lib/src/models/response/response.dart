@@ -63,6 +63,11 @@ class Response<T> extends Equatable implements IResponse<T> {
     ];
   }
 
+  @override
+  String toString() {
+    return 'Response(time: $time, ok: $ok, result: $result, error: $error, details: $details)';
+  }
+
   Response<T> copyWith({
     String? time,
     bool? ok,
@@ -77,10 +82,5 @@ class Response<T> extends Equatable implements IResponse<T> {
       error: error ?? this.error,
       details: details ?? this.details,
     );
-  }
-
-  @override
-  String toString() {
-    return 'Response(time: $time, ok: $ok, result: $result, error: $error, details: $details)';
   }
 }

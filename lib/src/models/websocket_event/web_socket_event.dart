@@ -1,12 +1,15 @@
+import 'package:equatable/equatable.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:tdproto_dart/tdproto_dart.dart';
 
-part 'websocket_event.g.dart';
+part 'web_socket_event.g.dart';
 
 /// Websocket Event. Handwritten implementation.
-/// This model is implemented through JsonSerializable as freezed doesn't support serialization of generics
+///
+/// This model is implemented through json_serializable and equatable due to
+/// freezed as of right now doesn't support serialization of generics.
 @JsonSerializable()
-class WebsocketEvent<T> implements IWebsocketEvent<T> {
+class WebSocketEvent<T> extends Equatable implements IWebSocketEvent<T> {
   /// Name of event.
   @override
   @JsonKey(name: 'event')
@@ -22,13 +25,13 @@ class WebsocketEvent<T> implements IWebsocketEvent<T> {
   @JsonKey(name: 'confirm_id')
   final String? confirmId;
 
-  const WebsocketEvent({
+  const WebSocketEvent({
     required this.event,
     this.params,
     this.confirmId,
   });
 
-  factory WebsocketEvent.fromJson(
+  factory WebSocketEvent.fromJson(
     Map<String, dynamic> json,
     T Function(Map<String, dynamic> json) fromJsonT,
   ) {
@@ -42,5 +45,31 @@ class WebsocketEvent<T> implements IWebsocketEvent<T> {
     Map<String, dynamic> Function(T value) toJsonT,
   ) {
     return _$WebsocketEventToJson(this, toJsonT);
+  }
+
+  @override
+  List<Object?> get props {
+    return [
+      event,
+      params,
+      confirmId,
+    ];
+  }
+
+  @override
+  String toString() {
+    return 'WebsocketEvent(event: $event, params: $params, confirmId: $confirmId)';
+  }
+
+  WebSocketEvent<T> copyWith({
+    String? event,
+    T? params,
+    String? confirmId,
+  }) {
+    return WebSocketEvent<T>(
+      event: event ?? this.event,
+      params: params ?? this.params,
+      confirmId: confirmId ?? this.confirmId,
+    );
   }
 }
