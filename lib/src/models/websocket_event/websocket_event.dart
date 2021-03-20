@@ -1,8 +1,9 @@
 import 'package:equatable/equatable.dart';
 import 'package:json_annotation/json_annotation.dart';
+import 'package:tdproto_dart/src/enums/websocket_events/server_event/server_event.dart';
 import 'package:tdproto_dart/tdproto_dart.dart';
 
-part 'web_socket_event.g.dart';
+part 'websocket_event.g.dart';
 
 /// Websocket Event. Handwritten implementation.
 ///
@@ -13,7 +14,7 @@ class WebSocketEvent<T> extends Equatable implements IWebSocketEvent<T> {
   /// Name of event.
   @override
   @JsonKey(name: 'event')
-  final String event;
+  final ServerEvent eventName;
 
   /// Event parameters. Optional.
   @override
@@ -26,28 +27,33 @@ class WebSocketEvent<T> extends Equatable implements IWebSocketEvent<T> {
   final String? confirmId;
 
   const WebSocketEvent({
-    required this.event,
+    required this.eventName,
     this.params,
     this.confirmId,
   });
 
+  static ServerEvent eventNameFromJson(Map<String, dynamic> json) => ServerEvent.fromJson(json['event']);
+
   factory WebSocketEvent.fromJson(
     Map<String, dynamic> json,
-    T Function(Object? json) fromJsonT,
+    T Function(Map<String, dynamic> rawParams) paramsFromJson,
   ) {
-    return _$WebSocketEventFromJson<T>(json, fromJsonT);
+    return _$WebSocketEventFromJson<T>(
+      json,
+      (rawParams) => paramsFromJson(rawParams as Map<String, dynamic>),
+    );
   }
 
   Map<String, dynamic> toJson(
-    Object? Function(T value) toJsonT,
+    Map<String, dynamic> Function(T params) paramsToJson,
   ) {
-    return _$WebSocketEventToJson(this, toJsonT);
+    return _$WebSocketEventToJson<T>(this, paramsToJson);
   }
 
   @override
   List<Object?> get props {
     return [
-      event,
+      eventName,
       params,
       confirmId,
     ];
@@ -55,16 +61,16 @@ class WebSocketEvent<T> extends Equatable implements IWebSocketEvent<T> {
 
   @override
   String toString() {
-    return 'WebsocketEvent(event: $event, params: $params, confirmId: $confirmId)';
+    return 'WebsocketEvent(event: $eventName, params: $params, confirmId: $confirmId)';
   }
 
   WebSocketEvent<T> copyWith({
-    String? event,
+    ServerEvent? eventName,
     T? params,
     String? confirmId,
   }) {
     return WebSocketEvent<T>(
-      event: event ?? this.event,
+      eventName: eventName ?? this.eventName,
       params: params ?? this.params,
       confirmId: confirmId ?? this.confirmId,
     );

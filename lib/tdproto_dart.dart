@@ -17,7 +17,7 @@ export 'src/enums/media_subtype.dart';
 
 // Handwritten models:
 export 'src/models/response/response.dart';
-export 'src/models/websocket_event/web_socket_event.dart';
+export 'src/models/websocket_event/websocket_event.dart';
 export 'src/models/user_info/user_info.dart';
 export 'src/models/markup_entity/markup_entity.dart';
 export 'src/models/pdf_version/pdf_version.dart';
