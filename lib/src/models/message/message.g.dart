@@ -7,53 +7,90 @@ part of 'message.dart';
 // **************************************************************************
 
 _$_Message _$_$_MessageFromJson(Map<String, dynamic> json) {
-  return _$_Message(
-    content: MessageContent.fromJson(json['content'] as Map<String, dynamic>),
-    pushText: json['push_text'] as String?,
-    from: json['from'] as String,
-    to: json['to'] as String,
-    messageId: json['message_id'] as String,
-    created: const DateTimeConverter().fromJson(json['created'] as String),
-    drafted:
-        const NullableDateTimeConverter().fromJson(json['drafted'] as String?),
-    gentime: json['gentime'] as int,
-    chatType: _$enumDecode(_$ChatTypeEnumMap, json['chat_type']),
-    chat: json['chat'] as String,
-    links: (json['links'] as List<dynamic>?)
-        ?.map((e) => MessageLink.fromJson(e as Map<String, dynamic>))
-        .toList(),
-    markup: (json['markup'] as List<dynamic>?)
-        ?.map((e) => MarkupEntity.fromJson(e as Map<String, dynamic>))
-        .toList(),
-    isImportant: json['important'] as bool?,
-    edited:
-        const NullableDateTimeConverter().fromJson(json['edited'] as String?),
-    received: json['received'] as bool?,
-    numReceived: json['num_received'] as int?,
-    noPreview: json['nopreview'] as bool?,
-    hasPreviews: json['has_previews'] as bool?,
-    prev: json['prev'] as String?,
-    isFirst: json['is_first'] as bool?,
-    isLast: json['is_last'] as bool?,
-    uploads: (json['uploads'] as List<dynamic>?)
-        ?.map((e) => Upload.fromJson(e as Map<String, dynamic>))
-        .toList(),
-    reactions: (json['reactions'] as List<dynamic>?)
-        ?.map((e) => MessageReaction.fromJson(e as Map<String, dynamic>))
-        .toList(),
-    replyTo: json['reply_to'] == null
-        ? null
-        : Message.fromJson(json['reply_to'] as Map<String, dynamic>),
-    linkedMessages: (json['linked_messages'] as List<dynamic>?)
-        ?.map((e) => Message.fromJson(e as Map<String, dynamic>))
-        .toList(),
-    notice: json['notice'] as bool?,
-    silently: json['silently'] as bool?,
-    editableUntil: const NullableDateTimeConverter()
-        .fromJson(json['editable_until'] as String?),
-    num: json['num'] as int?,
-    debug: json['_debug'] as String?,
-  );
+  return $checkedNew(r'_$_Message', json, () {
+    final val = _$_Message(
+      content: $checkedConvert(json, 'content',
+          (v) => MessageContent.fromJson(v as Map<String, dynamic>)),
+      pushText: $checkedConvert(json, 'push_text', (v) => v as String?),
+      from: $checkedConvert(json, 'from', (v) => v as String),
+      to: $checkedConvert(json, 'to', (v) => v as String),
+      messageId: $checkedConvert(json, 'message_id', (v) => v as String),
+      created: $checkedConvert(json, 'created',
+          (v) => const DateTimeConverter().fromJson(v as String)),
+      drafted: $checkedConvert(json, 'drafted',
+          (v) => const NullableDateTimeConverter().fromJson(v as String?)),
+      gentime: $checkedConvert(json, 'gentime', (v) => v as int),
+      chatType: $checkedConvert(
+          json, 'chat_type', (v) => _$enumDecode(_$ChatTypeEnumMap, v)),
+      chat: $checkedConvert(json, 'chat', (v) => v as String),
+      links: $checkedConvert(
+          json,
+          'links',
+          (v) => (v as List<dynamic>?)
+              ?.map((e) => MessageLink.fromJson(e as Map<String, dynamic>))
+              .toList()),
+      markup: $checkedConvert(
+          json,
+          'markup',
+          (v) => (v as List<dynamic>?)
+              ?.map((e) => MarkupEntity.fromJson(e as Map<String, dynamic>))
+              .toList()),
+      isImportant: $checkedConvert(json, 'important', (v) => v as bool?),
+      edited: $checkedConvert(json, 'edited',
+          (v) => const NullableDateTimeConverter().fromJson(v as String?)),
+      received: $checkedConvert(json, 'received', (v) => v as bool?),
+      numReceived: $checkedConvert(json, 'num_received', (v) => v as int?),
+      noPreview: $checkedConvert(json, 'nopreview', (v) => v as bool?),
+      hasPreviews: $checkedConvert(json, 'has_previews', (v) => v as bool?),
+      prev: $checkedConvert(json, 'prev', (v) => v as String?),
+      isFirst: $checkedConvert(json, 'is_first', (v) => v as bool?),
+      isLast: $checkedConvert(json, 'is_last', (v) => v as bool?),
+      uploads: $checkedConvert(
+          json,
+          'uploads',
+          (v) => (v as List<dynamic>?)
+              ?.map((e) => Upload.fromJson(e as Map<String, dynamic>))
+              .toList()),
+      reactions: $checkedConvert(
+          json,
+          'reactions',
+          (v) => (v as List<dynamic>?)
+              ?.map((e) => MessageReaction.fromJson(e as Map<String, dynamic>))
+              .toList()),
+      replyTo: $checkedConvert(
+          json,
+          'reply_to',
+          (v) =>
+              v == null ? null : Message.fromJson(v as Map<String, dynamic>)),
+      linkedMessages: $checkedConvert(
+          json,
+          'linked_messages',
+          (v) => (v as List<dynamic>?)
+              ?.map((e) => Message.fromJson(e as Map<String, dynamic>))
+              .toList()),
+      notice: $checkedConvert(json, 'notice', (v) => v as bool?),
+      silently: $checkedConvert(json, 'silently', (v) => v as bool?),
+      editableUntil: $checkedConvert(json, 'editable_until',
+          (v) => const NullableDateTimeConverter().fromJson(v as String?)),
+      num: $checkedConvert(json, 'num', (v) => v as int?),
+      debug: $checkedConvert(json, '_debug', (v) => v as String?),
+    );
+    return val;
+  }, fieldKeyMap: const {
+    'pushText': 'push_text',
+    'messageId': 'message_id',
+    'chatType': 'chat_type',
+    'isImportant': 'important',
+    'numReceived': 'num_received',
+    'noPreview': 'nopreview',
+    'hasPreviews': 'has_previews',
+    'isFirst': 'is_first',
+    'isLast': 'is_last',
+    'replyTo': 'reply_to',
+    'linkedMessages': 'linked_messages',
+    'editableUntil': 'editable_until',
+    'debug': '_debug'
+  });
 }
 
 Map<String, dynamic> _$_$_MessageToJson(_$_Message instance) =>

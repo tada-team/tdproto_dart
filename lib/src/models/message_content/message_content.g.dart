@@ -7,38 +7,55 @@ part of 'message_content.dart';
 // **************************************************************************
 
 _$_MessageContent _$_$_MessageContentFromJson(Map<String, dynamic> json) {
-  return _$_MessageContent(
-    text: json['text'] as String,
-    type: _$enumDecode(_$MediaTypeEnumMap, json['type']),
-    subtype: _$enumDecodeNullable(_$MediaSubtypeEnumMap, json['subtype']),
-    upload: json['upload'] as String?,
-    mediaUrl: json['mediaURL'] as String?,
-    size: json['size'] as int?,
-    duration: json['duration'] as int?,
-    processing: json['processing'] as bool?,
-    previewHeight: json['previewHeight'] as int?,
-    previewWidth: json['previewWidth'] as int?,
-    previewUrl: json['previewURL'] as String?,
-    preview2xUrl: json['preview2xURL'] as String?,
-    name: json['name'] as String?,
-    animated: json['animated'] as bool?,
-    title: json['title'] as String?,
-    old: json['old'] as String?,
-    newOne: json['new'] as String?,
-    actor: json['actor'] as String?,
-    comment: json['comment'] as String?,
-    givenName: json['given_name'] as String?,
-    familyName: json['family_name'] as String?,
-    patronymic: json['patronymic'] as String?,
-    phones:
-        (json['phones'] as List<dynamic>?)?.map((e) => e as String).toList(),
-    emails:
-        (json['emails'] as List<dynamic>?)?.map((e) => e as String).toList(),
-    stickerPack: json['stickerpack'] as String?,
-    pdfVersion: json['pdf_version'] == null
-        ? null
-        : PdfVersion.fromJson(json['pdf_version'] as Map<String, dynamic>),
-  );
+  return $checkedNew(r'_$_MessageContent', json, () {
+    final val = _$_MessageContent(
+      text: $checkedConvert(json, 'text', (v) => v as String),
+      type: $checkedConvert(
+          json, 'type', (v) => _$enumDecode(_$MediaTypeEnumMap, v)),
+      subtype: $checkedConvert(json, 'subtype',
+          (v) => _$enumDecodeNullable(_$MediaSubtypeEnumMap, v)),
+      upload: $checkedConvert(json, 'upload', (v) => v as String?),
+      mediaUrl: $checkedConvert(json, 'mediaURL', (v) => v as String?),
+      size: $checkedConvert(json, 'size', (v) => v as int?),
+      duration: $checkedConvert(json, 'duration', (v) => v as int?),
+      processing: $checkedConvert(json, 'processing', (v) => v as bool?),
+      previewHeight: $checkedConvert(json, 'previewHeight', (v) => v as int?),
+      previewWidth: $checkedConvert(json, 'previewWidth', (v) => v as int?),
+      previewUrl: $checkedConvert(json, 'previewURL', (v) => v as String?),
+      preview2xUrl: $checkedConvert(json, 'preview2xURL', (v) => v as String?),
+      name: $checkedConvert(json, 'name', (v) => v as String?),
+      animated: $checkedConvert(json, 'animated', (v) => v as bool?),
+      title: $checkedConvert(json, 'title', (v) => v as String?),
+      old: $checkedConvert(json, 'old', (v) => v as String?),
+      newOne: $checkedConvert(json, 'new', (v) => v as String?),
+      actor: $checkedConvert(json, 'actor', (v) => v as String?),
+      comment: $checkedConvert(json, 'comment', (v) => v as String?),
+      givenName: $checkedConvert(json, 'given_name', (v) => v as String?),
+      familyName: $checkedConvert(json, 'family_name', (v) => v as String?),
+      patronymic: $checkedConvert(json, 'patronymic', (v) => v as String?),
+      phones: $checkedConvert(json, 'phones',
+          (v) => (v as List<dynamic>?)?.map((e) => e as String).toList()),
+      emails: $checkedConvert(json, 'emails',
+          (v) => (v as List<dynamic>?)?.map((e) => e as String).toList()),
+      stickerPack: $checkedConvert(json, 'stickerpack', (v) => v as String?),
+      pdfVersion: $checkedConvert(
+          json,
+          'pdf_version',
+          (v) => v == null
+              ? null
+              : PdfVersion.fromJson(v as Map<String, dynamic>)),
+    );
+    return val;
+  }, fieldKeyMap: const {
+    'mediaUrl': 'mediaURL',
+    'previewUrl': 'previewURL',
+    'preview2xUrl': 'preview2xURL',
+    'newOne': 'new',
+    'givenName': 'given_name',
+    'familyName': 'family_name',
+    'stickerPack': 'stickerpack',
+    'pdfVersion': 'pdf_version'
+  });
 }
 
 Map<String, dynamic> _$_$_MessageContentToJson(_$_MessageContent instance) =>

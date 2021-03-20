@@ -7,19 +7,35 @@ part of 'markup_entity.dart';
 // **************************************************************************
 
 _$_MarkupEntity _$_$_MarkupEntityFromJson(Map<String, dynamic> json) {
-  return _$_MarkupEntity(
-    open: json['op'] as int,
-    openLength: json['oplen'] as int?,
-    close: json['cl'] as int,
-    closeLength: json['cllen'] as int?,
-    type: _$enumDecode(_$MarkupTypeEnumMap, json['typ']),
-    url: json['url'] as String?,
-    replacement: json['repl'] as String?,
-    time: const NullableDateTimeConverter().fromJson(json['time'] as String?),
-    children: (json['childs'] as List<dynamic>?)
-        ?.map((e) => MarkupEntity.fromJson(e as Map<String, dynamic>))
-        .toList(),
-  );
+  return $checkedNew(r'_$_MarkupEntity', json, () {
+    final val = _$_MarkupEntity(
+      open: $checkedConvert(json, 'op', (v) => v as int),
+      openLength: $checkedConvert(json, 'oplen', (v) => v as int?),
+      close: $checkedConvert(json, 'cl', (v) => v as int),
+      closeLength: $checkedConvert(json, 'cllen', (v) => v as int?),
+      type: $checkedConvert(
+          json, 'typ', (v) => _$enumDecode(_$MarkupTypeEnumMap, v)),
+      url: $checkedConvert(json, 'url', (v) => v as String?),
+      replacement: $checkedConvert(json, 'repl', (v) => v as String?),
+      time: $checkedConvert(json, 'time',
+          (v) => const NullableDateTimeConverter().fromJson(v as String?)),
+      children: $checkedConvert(
+          json,
+          'childs',
+          (v) => (v as List<dynamic>?)
+              ?.map((e) => MarkupEntity.fromJson(e as Map<String, dynamic>))
+              .toList()),
+    );
+    return val;
+  }, fieldKeyMap: const {
+    'open': 'op',
+    'openLength': 'oplen',
+    'close': 'cl',
+    'closeLength': 'cllen',
+    'type': 'typ',
+    'replacement': 'repl',
+    'children': 'childs'
+  });
 }
 
 Map<String, dynamic> _$_$_MarkupEntityToJson(_$_MarkupEntity instance) =>

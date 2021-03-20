@@ -7,9 +7,12 @@ part of 'ice_server.dart';
 // **************************************************************************
 
 _$_ICEServer _$_$_ICEServerFromJson(Map<String, dynamic> json) {
-  return _$_ICEServer(
-    urls: json['urls'] as String,
-  );
+  return $checkedNew(r'_$_ICEServer', json, () {
+    final val = _$_ICEServer(
+      urls: $checkedConvert(json, 'urls', (v) => v as String),
+    );
+    return val;
+  });
 }
 
 Map<String, dynamic> _$_$_ICEServerToJson(_$_ICEServer instance) =>

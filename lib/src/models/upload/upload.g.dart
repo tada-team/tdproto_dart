@@ -7,23 +7,36 @@ part of 'upload.dart';
 // **************************************************************************
 
 _$_Upload _$_$_UploadFromJson(Map<String, dynamic> json) {
-  return _$_Upload(
-    uid: json['uid'] as String,
-    created: const DateTimeConverter().fromJson(json['created'] as String),
-    size: json['size'] as int,
-    duration: json['duration'] as int?,
-    name: json['name'] as String,
-    url: json['url'] as String,
-    preview: json['preview'] == null
-        ? null
-        : UploadPreview.fromJson(json['preview'] as Map<String, dynamic>),
-    contentType: json['content_type'] as String,
-    animated: json['animated'] as bool?,
-    processing: json['processing'] as bool?,
-    pdfVersion: json['pdf_version'] == null
-        ? null
-        : PdfVersion.fromJson(json['pdf_version'] as Map<String, dynamic>),
-  );
+  return $checkedNew(r'_$_Upload', json, () {
+    final val = _$_Upload(
+      uid: $checkedConvert(json, 'uid', (v) => v as String),
+      created: $checkedConvert(json, 'created',
+          (v) => const DateTimeConverter().fromJson(v as String)),
+      size: $checkedConvert(json, 'size', (v) => v as int),
+      duration: $checkedConvert(json, 'duration', (v) => v as int?),
+      name: $checkedConvert(json, 'name', (v) => v as String),
+      url: $checkedConvert(json, 'url', (v) => v as String),
+      preview: $checkedConvert(
+          json,
+          'preview',
+          (v) => v == null
+              ? null
+              : UploadPreview.fromJson(v as Map<String, dynamic>)),
+      contentType: $checkedConvert(json, 'content_type', (v) => v as String),
+      animated: $checkedConvert(json, 'animated', (v) => v as bool?),
+      processing: $checkedConvert(json, 'processing', (v) => v as bool?),
+      pdfVersion: $checkedConvert(
+          json,
+          'pdf_version',
+          (v) => v == null
+              ? null
+              : PdfVersion.fromJson(v as Map<String, dynamic>)),
+    );
+    return val;
+  }, fieldKeyMap: const {
+    'contentType': 'content_type',
+    'pdfVersion': 'pdf_version'
+  });
 }
 
 Map<String, dynamic> _$_$_UploadToJson(_$_Upload instance) => <String, dynamic>{

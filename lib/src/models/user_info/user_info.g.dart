@@ -7,10 +7,13 @@ part of 'user_info.dart';
 // **************************************************************************
 
 _$_UserInfo _$_$_UserInfoFromJson(Map<String, dynamic> json) {
-  return _$_UserInfo(
-    firstName: json['first_name'] as String,
-    givenName: json['given_name'] as String,
-  );
+  return $checkedNew(r'_$_UserInfo', json, () {
+    final val = _$_UserInfo(
+      firstName: $checkedConvert(json, 'first_name', (v) => v as String),
+      givenName: $checkedConvert(json, 'given_name', (v) => v as String),
+    );
+    return val;
+  }, fieldKeyMap: const {'firstName': 'first_name', 'givenName': 'given_name'});
 }
 
 Map<String, dynamic> _$_$_UserInfoToJson(_$_UserInfo instance) =>

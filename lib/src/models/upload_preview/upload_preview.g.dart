@@ -7,12 +7,15 @@ part of 'upload_preview.dart';
 // **************************************************************************
 
 _$_UploadPreview _$_$_UploadPreviewFromJson(Map<String, dynamic> json) {
-  return _$_UploadPreview(
-    url: json['url'] as String,
-    url2x: json['url_2x'] as String,
-    width: json['width'] as int,
-    height: json['height'] as int,
-  );
+  return $checkedNew(r'_$_UploadPreview', json, () {
+    final val = _$_UploadPreview(
+      url: $checkedConvert(json, 'url', (v) => v as String),
+      url2x: $checkedConvert(json, 'url_2x', (v) => v as String),
+      width: $checkedConvert(json, 'width', (v) => v as int),
+      height: $checkedConvert(json, 'height', (v) => v as int),
+    );
+    return val;
+  }, fieldKeyMap: const {'url2x': 'url_2x'});
 }
 
 Map<String, dynamic> _$_$_UploadPreviewToJson(_$_UploadPreview instance) =>

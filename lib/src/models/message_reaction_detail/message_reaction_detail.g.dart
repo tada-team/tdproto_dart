@@ -8,11 +8,15 @@ part of 'message_reaction_detail.dart';
 
 _$_MessageReactionDetail _$_$_MessageReactionDetailFromJson(
     Map<String, dynamic> json) {
-  return _$_MessageReactionDetail(
-    created: const DateTimeConverter().fromJson(json['created'] as String),
-    sender: json['sender'] as String,
-    name: json['name'] as String,
-  );
+  return $checkedNew(r'_$_MessageReactionDetail', json, () {
+    final val = _$_MessageReactionDetail(
+      created: $checkedConvert(json, 'created',
+          (v) => const DateTimeConverter().fromJson(v as String)),
+      sender: $checkedConvert(json, 'sender', (v) => v as String),
+      name: $checkedConvert(json, 'name', (v) => v as String),
+    );
+    return val;
+  });
 }
 
 Map<String, dynamic> _$_$_MessageReactionDetailToJson(

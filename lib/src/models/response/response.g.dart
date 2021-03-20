@@ -10,13 +10,17 @@ Response<T> _$ResponseFromJson<T>(
   Map<String, dynamic> json,
   T Function(Object? json) fromJsonT,
 ) {
-  return Response<T>(
-    time: json['_time'] as String,
-    ok: json['ok'] as bool,
-    result: fromJsonT(json['result']),
-    error: json['error'] as String?,
-    details: json['details'] as Map<String, dynamic>?,
-  );
+  return $checkedNew('Response', json, () {
+    final val = Response<T>(
+      time: $checkedConvert(json, '_time', (v) => v as String),
+      ok: $checkedConvert(json, 'ok', (v) => v as bool),
+      result: $checkedConvert(json, 'result', (v) => fromJsonT(v)),
+      error: $checkedConvert(json, 'error', (v) => v as String?),
+      details:
+          $checkedConvert(json, 'details', (v) => v as Map<String, dynamic>?),
+    );
+    return val;
+  }, fieldKeyMap: const {'time': '_time'});
 }
 
 Map<String, dynamic> _$ResponseToJson<T>(

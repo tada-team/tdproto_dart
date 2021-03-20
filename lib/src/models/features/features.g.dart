@@ -7,76 +7,168 @@ part of 'features.dart';
 // **************************************************************************
 
 _$_Features _$_$_FeaturesFromJson(Map<String, dynamic> json) {
-  return _$_Features(
-    host: json['host'] as String,
-    build: json['build'] as String,
-    desktopVersion: json['desktop_version'] as String,
-    frontVersion: json['front_version'] as String,
-    appTitle: json['app_title'] as String,
-    appSchemes:
-        (json['app_schemes'] as List<dynamic>).map((e) => e as String).toList(),
-    userver: json['userver'] as String,
-    iOSApp: json['ios_app'] as String,
-    androidApp: json['android_app'] as String,
-    theme: json['theme'] as String,
-    minAppVersion: json['min_app_version'] as String,
-    freeRegistration: json['free_registration'] as bool,
-    maxUploadMb: json['max_upload_mb'] as int,
-    maxLinkedMessages: json['max_linked_messages'] as int,
-    maxMessageUploads: json['max_message_uploads'] as int,
-    maxUsernamePartLength: json['max_username_part_length'] as int,
-    maxGroupTitleLength: json['max_group_title_length'] as int,
-    maxRoleLength: json['max_role_length'] as int,
-    maxMoodLength: json['max_mood_length'] as int,
-    maxMessageLength: json['max_message_length'] as int,
-    maxSectionLength: json['max_section_length'] as int,
-    maxTagLength: json['max_tag_length'] as int,
-    maxTaskTitleLength: json['max_task_title_length'] as int,
-    maxColorRuleDescriptionLength:
-        json['max_color_rule_description_length'] as int,
-    maxUrlLength: json['max_url_length'] as int,
-    maxIntegrationCommentLength: json['max_integration_comment_length'] as int,
-    maxTeams: json['max_teams'] as int,
-    afkAge: json['afk_age'] as int,
-    authByPassword: json['auth_by_password'] as bool?,
-    authByQrCode: json['auth_by_qr_code'] as bool?,
-    authBySms: json['auth_by_sms'] as bool?,
-    iceServers: (json['ice_servers'] as List<dynamic>)
-        .map((e) => ICEServer.fromJson(e as Map<String, dynamic>))
-        .toList(),
-    customServer: json['custom_server'] as bool,
-    installationType: json['installation_type'] as String,
-    isTesting: json['is_testing'] as bool,
-    metrika: json['metrika'] as String,
-    minSearchLength: json['min_search_length'] as int,
-    resendTimeout: json['resend_timeout'] as int,
-    sentryDsnJS: json['sentry_dsn_js'] as String,
-    serverDrafts: json['server_drafts'] as bool,
-    firebaseAppId: json['firebase_app_id'] as String,
-    firebaseSenderId: json['firebase_sender_id'] as String,
-    firebaseApiKey: json['firebase_api_key'] as String,
-    firebaseAuthDomain: json['firebase_auth_domain'] as String,
-    firebaseDatabaseUrl: json['firebase_database_url'] as String,
-    firebaseProjectId: json['firebase_project_id'] as String,
-    firebaseStorageBucket: json['firebase_storage_bucket'] as String,
-    calls: json['calls'] as bool,
-    mobileCalls: json['mobile_calls'] as bool,
-    callsRecord: json['calls_record'] as bool,
-    onlyOneDevicePerCall: json['only_one_device_per_call'] as bool?,
-    maxParticipantsPerCall: json['max_participants_per_call'] as int?,
-    safariPushId: json['safari_push_id'] as String,
-    messageUploads: json['message_uploads'] as bool,
-    terms: Terms.fromJson(json['terms'] as Map<String, dynamic>),
-    singleGroupTeams: json['single_group_teams'] as bool,
-    wikiPages: json['wiki_pages'] as bool,
-    allowAdminMute: json['allow_admin_mute'] as bool?,
-    taskChecklist: json['task_checklist'] as bool,
-    readonlyGroups: json['readonly_groups'] as bool,
-    taskDashboard: json['task_dashboard'] as bool,
-    taskMessages: json['task_messages'] as bool,
-    taskPublic: json['task_public'] as bool,
-    taskTags: json['task_tags'] as bool,
-  );
+  return $checkedNew(r'_$_Features', json, () {
+    final val = _$_Features(
+      host: $checkedConvert(json, 'host', (v) => v as String),
+      build: $checkedConvert(json, 'build', (v) => v as String),
+      desktopVersion:
+          $checkedConvert(json, 'desktop_version', (v) => v as String),
+      frontVersion: $checkedConvert(json, 'front_version', (v) => v as String),
+      appTitle: $checkedConvert(json, 'app_title', (v) => v as String),
+      appSchemes: $checkedConvert(json, 'app_schemes',
+          (v) => (v as List<dynamic>).map((e) => e as String).toList()),
+      userver: $checkedConvert(json, 'userver', (v) => v as String),
+      iOSApp: $checkedConvert(json, 'ios_app', (v) => v as String),
+      androidApp: $checkedConvert(json, 'android_app', (v) => v as String),
+      theme: $checkedConvert(json, 'theme', (v) => v as String),
+      minAppVersion:
+          $checkedConvert(json, 'min_app_version', (v) => v as String),
+      freeRegistration:
+          $checkedConvert(json, 'free_registration', (v) => v as bool),
+      maxUploadMb: $checkedConvert(json, 'max_upload_mb', (v) => v as int),
+      maxLinkedMessages:
+          $checkedConvert(json, 'max_linked_messages', (v) => v as int),
+      maxMessageUploads:
+          $checkedConvert(json, 'max_message_uploads', (v) => v as int),
+      maxUsernamePartLength:
+          $checkedConvert(json, 'max_username_part_length', (v) => v as int),
+      maxGroupTitleLength:
+          $checkedConvert(json, 'max_group_title_length', (v) => v as int),
+      maxRoleLength: $checkedConvert(json, 'max_role_length', (v) => v as int),
+      maxMoodLength: $checkedConvert(json, 'max_mood_length', (v) => v as int),
+      maxMessageLength:
+          $checkedConvert(json, 'max_message_length', (v) => v as int),
+      maxSectionLength:
+          $checkedConvert(json, 'max_section_length', (v) => v as int),
+      maxTagLength: $checkedConvert(json, 'max_tag_length', (v) => v as int),
+      maxTaskTitleLength:
+          $checkedConvert(json, 'max_task_title_length', (v) => v as int),
+      maxColorRuleDescriptionLength: $checkedConvert(
+          json, 'max_color_rule_description_length', (v) => v as int),
+      maxUrlLength: $checkedConvert(json, 'max_url_length', (v) => v as int),
+      maxIntegrationCommentLength: $checkedConvert(
+          json, 'max_integration_comment_length', (v) => v as int),
+      maxTeams: $checkedConvert(json, 'max_teams', (v) => v as int),
+      afkAge: $checkedConvert(json, 'afk_age', (v) => v as int),
+      authByPassword:
+          $checkedConvert(json, 'auth_by_password', (v) => v as bool?),
+      authByQrCode: $checkedConvert(json, 'auth_by_qr_code', (v) => v as bool?),
+      authBySms: $checkedConvert(json, 'auth_by_sms', (v) => v as bool?),
+      iceServers: $checkedConvert(
+          json,
+          'ice_servers',
+          (v) => (v as List<dynamic>)
+              .map((e) => ICEServer.fromJson(e as Map<String, dynamic>))
+              .toList()),
+      customServer: $checkedConvert(json, 'custom_server', (v) => v as bool),
+      installationType:
+          $checkedConvert(json, 'installation_type', (v) => v as String),
+      isTesting: $checkedConvert(json, 'is_testing', (v) => v as bool),
+      metrika: $checkedConvert(json, 'metrika', (v) => v as String),
+      minSearchLength:
+          $checkedConvert(json, 'min_search_length', (v) => v as int),
+      resendTimeout: $checkedConvert(json, 'resend_timeout', (v) => v as int),
+      sentryDsnJS: $checkedConvert(json, 'sentry_dsn_js', (v) => v as String),
+      serverDrafts: $checkedConvert(json, 'server_drafts', (v) => v as bool),
+      firebaseAppId:
+          $checkedConvert(json, 'firebase_app_id', (v) => v as String),
+      firebaseSenderId:
+          $checkedConvert(json, 'firebase_sender_id', (v) => v as String),
+      firebaseApiKey:
+          $checkedConvert(json, 'firebase_api_key', (v) => v as String),
+      firebaseAuthDomain:
+          $checkedConvert(json, 'firebase_auth_domain', (v) => v as String),
+      firebaseDatabaseUrl:
+          $checkedConvert(json, 'firebase_database_url', (v) => v as String),
+      firebaseProjectId:
+          $checkedConvert(json, 'firebase_project_id', (v) => v as String),
+      firebaseStorageBucket:
+          $checkedConvert(json, 'firebase_storage_bucket', (v) => v as String),
+      calls: $checkedConvert(json, 'calls', (v) => v as bool),
+      mobileCalls: $checkedConvert(json, 'mobile_calls', (v) => v as bool),
+      callsRecord: $checkedConvert(json, 'calls_record', (v) => v as bool),
+      onlyOneDevicePerCall:
+          $checkedConvert(json, 'only_one_device_per_call', (v) => v as bool?),
+      maxParticipantsPerCall:
+          $checkedConvert(json, 'max_participants_per_call', (v) => v as int?),
+      safariPushId: $checkedConvert(json, 'safari_push_id', (v) => v as String),
+      messageUploads:
+          $checkedConvert(json, 'message_uploads', (v) => v as bool),
+      terms: $checkedConvert(
+          json, 'terms', (v) => Terms.fromJson(v as Map<String, dynamic>)),
+      singleGroupTeams:
+          $checkedConvert(json, 'single_group_teams', (v) => v as bool),
+      wikiPages: $checkedConvert(json, 'wiki_pages', (v) => v as bool),
+      allowAdminMute:
+          $checkedConvert(json, 'allow_admin_mute', (v) => v as bool?),
+      taskChecklist: $checkedConvert(json, 'task_checklist', (v) => v as bool),
+      readonlyGroups:
+          $checkedConvert(json, 'readonly_groups', (v) => v as bool),
+      taskDashboard: $checkedConvert(json, 'task_dashboard', (v) => v as bool),
+      taskMessages: $checkedConvert(json, 'task_messages', (v) => v as bool),
+      taskPublic: $checkedConvert(json, 'task_public', (v) => v as bool),
+      taskTags: $checkedConvert(json, 'task_tags', (v) => v as bool),
+    );
+    return val;
+  }, fieldKeyMap: const {
+    'desktopVersion': 'desktop_version',
+    'frontVersion': 'front_version',
+    'appTitle': 'app_title',
+    'appSchemes': 'app_schemes',
+    'iOSApp': 'ios_app',
+    'androidApp': 'android_app',
+    'minAppVersion': 'min_app_version',
+    'freeRegistration': 'free_registration',
+    'maxUploadMb': 'max_upload_mb',
+    'maxLinkedMessages': 'max_linked_messages',
+    'maxMessageUploads': 'max_message_uploads',
+    'maxUsernamePartLength': 'max_username_part_length',
+    'maxGroupTitleLength': 'max_group_title_length',
+    'maxRoleLength': 'max_role_length',
+    'maxMoodLength': 'max_mood_length',
+    'maxMessageLength': 'max_message_length',
+    'maxSectionLength': 'max_section_length',
+    'maxTagLength': 'max_tag_length',
+    'maxTaskTitleLength': 'max_task_title_length',
+    'maxColorRuleDescriptionLength': 'max_color_rule_description_length',
+    'maxUrlLength': 'max_url_length',
+    'maxIntegrationCommentLength': 'max_integration_comment_length',
+    'maxTeams': 'max_teams',
+    'afkAge': 'afk_age',
+    'authByPassword': 'auth_by_password',
+    'authByQrCode': 'auth_by_qr_code',
+    'authBySms': 'auth_by_sms',
+    'iceServers': 'ice_servers',
+    'customServer': 'custom_server',
+    'installationType': 'installation_type',
+    'isTesting': 'is_testing',
+    'minSearchLength': 'min_search_length',
+    'resendTimeout': 'resend_timeout',
+    'sentryDsnJS': 'sentry_dsn_js',
+    'serverDrafts': 'server_drafts',
+    'firebaseAppId': 'firebase_app_id',
+    'firebaseSenderId': 'firebase_sender_id',
+    'firebaseApiKey': 'firebase_api_key',
+    'firebaseAuthDomain': 'firebase_auth_domain',
+    'firebaseDatabaseUrl': 'firebase_database_url',
+    'firebaseProjectId': 'firebase_project_id',
+    'firebaseStorageBucket': 'firebase_storage_bucket',
+    'mobileCalls': 'mobile_calls',
+    'callsRecord': 'calls_record',
+    'onlyOneDevicePerCall': 'only_one_device_per_call',
+    'maxParticipantsPerCall': 'max_participants_per_call',
+    'safariPushId': 'safari_push_id',
+    'messageUploads': 'message_uploads',
+    'singleGroupTeams': 'single_group_teams',
+    'wikiPages': 'wiki_pages',
+    'allowAdminMute': 'allow_admin_mute',
+    'taskChecklist': 'task_checklist',
+    'readonlyGroups': 'readonly_groups',
+    'taskDashboard': 'task_dashboard',
+    'taskMessages': 'task_messages',
+    'taskPublic': 'task_public',
+    'taskTags': 'task_tags'
+  });
 }
 
 Map<String, dynamic> _$_$_FeaturesToJson(_$_Features instance) =>

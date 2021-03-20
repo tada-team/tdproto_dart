@@ -7,13 +7,20 @@ part of 'message_reaction.dart';
 // **************************************************************************
 
 _$_MessageReaction _$_$_MessageReactionFromJson(Map<String, dynamic> json) {
-  return _$_MessageReaction(
-    name: json['name'] as String,
-    counter: json['counter'] as int,
-    details: (json['details'] as List<dynamic>)
-        .map((e) => MessageReactionDetail.fromJson(e as Map<String, dynamic>))
-        .toList(),
-  );
+  return $checkedNew(r'_$_MessageReaction', json, () {
+    final val = _$_MessageReaction(
+      name: $checkedConvert(json, 'name', (v) => v as String),
+      counter: $checkedConvert(json, 'counter', (v) => v as int),
+      details: $checkedConvert(
+          json,
+          'details',
+          (v) => (v as List<dynamic>)
+              .map((e) =>
+                  MessageReactionDetail.fromJson(e as Map<String, dynamic>))
+              .toList()),
+    );
+    return val;
+  });
 }
 
 Map<String, dynamic> _$_$_MessageReactionToJson(_$_MessageReaction instance) =>

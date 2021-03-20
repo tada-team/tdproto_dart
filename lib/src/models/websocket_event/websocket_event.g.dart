@@ -10,11 +10,15 @@ WebsocketEvent<T> _$WebsocketEventFromJson<T>(
   Map<String, dynamic> json,
   T Function(Object? json) fromJsonT,
 ) {
-  return WebsocketEvent<T>(
-    event: json['event'] as String,
-    params: _$nullableGenericFromJson(json['params'], fromJsonT),
-    confirmId: json['confirm_id'] as String?,
-  );
+  return $checkedNew('WebsocketEvent', json, () {
+    final val = WebsocketEvent<T>(
+      event: $checkedConvert(json, 'event', (v) => v as String),
+      params: $checkedConvert(
+          json, 'params', (v) => _$nullableGenericFromJson(v, fromJsonT)),
+      confirmId: $checkedConvert(json, 'confirm_id', (v) => v as String?),
+    );
+    return val;
+  }, fieldKeyMap: const {'confirmId': 'confirm_id'});
 }
 
 Map<String, dynamic> _$WebsocketEventToJson<T>(

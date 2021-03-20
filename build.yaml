@@ -13,3 +13,13 @@ targets:
           # extra "helper" parameters will be generated for fromJson and/or toJson
           # to support serializing values of those types.
           generic_argument_factories: true
+
+          # If true, generated fromJson functions include extra checks to validate proper deserialization of types.
+          #
+          # If an exception is thrown during deserialization, a CheckedFromJsonException is thrown.
+          checked: true
+
+          # When true, only fields annotated with JsonKey will have code generated.
+          #
+          # It will have the same effect as if those fields had been annotated with @JsonKey(ignore: true).
+          ignore_unannotated: true
