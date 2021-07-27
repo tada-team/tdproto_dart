@@ -1,14 +1,18 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:tdproto_dart/tdproto_dart.dart';
 
 part 'country.freezed.dart';
 part 'country.g.dart';
 
-/// Country for phone numbers selection on login screen
+/// Country for phone numbers selection on login screen.
 @freezed
 abstract class Country with _$Country {
   const factory Country({
-    /// Country code.
+    /// Phone code.
     @JsonKey(name: 'code') @required String code,
+
+    /// Country ISO code.
+    @JsonKey(name: 'iso') @required String iso,
 
     /// Country name.
     @JsonKey(name: 'name') @required String name,

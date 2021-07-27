@@ -16,11 +16,9 @@ _$_Message _$_$_MessageFromJson(Map<String, dynamic> json) {
     created: const DateTimeConverter().fromJson(json['created'] as String),
     drafted: const DateTimeConverter().fromJson(json['drafted'] as String),
     gentime: json['gentime'] as int,
-    chatType: _$enumDecodeNullable(_$ChatTypeEnumMap, json['chat_type']),
+    chatType: json['chat_type'] as String,
     chat: json['chat'] as String,
-    links: (json['links'] as List)
-        ?.map((e) => e == null ? null : MessageLink.fromJson(e as Map<String, dynamic>))
-        ?.toList(),
+    links: json['links'] == null ? null : MessageLink.fromJson(json['links'] as Map<String, dynamic>),
     markup: (json['markup'] as List)
         ?.map((e) => e == null ? null : MarkupEntity.fromJson(e as Map<String, dynamic>))
         ?.toList(),
@@ -46,6 +44,7 @@ _$_Message _$_$_MessageFromJson(Map<String, dynamic> json) {
     silently: json['silently'] as bool,
     editableUntil: const DateTimeConverter().fromJson(json['editable_until'] as String),
     num: json['num'] as int,
+    isArchive: json['is_archive'] as bool,
     debug: json['_debug'] as String,
   );
 }
@@ -59,9 +58,9 @@ Map<String, dynamic> _$_$_MessageToJson(_$_Message instance) => <String, dynamic
       'created': const DateTimeConverter().toJson(instance.created),
       'drafted': const DateTimeConverter().toJson(instance.drafted),
       'gentime': instance.gentime,
-      'chat_type': _$ChatTypeEnumMap[instance.chatType],
+      'chat_type': instance.chatType,
       'chat': instance.chat,
-      'links': instance.links?.map((e) => e?.toJson())?.toList(),
+      'links': instance.links?.toJson(),
       'markup': instance.markup?.map((e) => e?.toJson())?.toList(),
       'important': instance.important,
       'edited': const DateTimeConverter().toJson(instance.edited),
@@ -80,41 +79,6 @@ Map<String, dynamic> _$_$_MessageToJson(_$_Message instance) => <String, dynamic
       'silently': instance.silently,
       'editable_until': const DateTimeConverter().toJson(instance.editableUntil),
       'num': instance.num,
+      'is_archive': instance.isArchive,
       '_debug': instance.debug,
     };
-
-T _$enumDecode<T>(
-  Map<T, dynamic> enumValues,
-  dynamic source, {
-  T unknownValue,
-}) {
-  if (source == null) {
-    throw ArgumentError('A value must be provided. Supported values: '
-        '${enumValues.values.join(', ')}');
-  }
-
-  final value = enumValues.entries.singleWhere((e) => e.value == source, orElse: () => null)?.key;
-
-  if (value == null && unknownValue == null) {
-    throw ArgumentError('`$source` is not one of the supported values: '
-        '${enumValues.values.join(', ')}');
-  }
-  return value ?? unknownValue;
-}
-
-T _$enumDecodeNullable<T>(
-  Map<T, dynamic> enumValues,
-  dynamic source, {
-  T unknownValue,
-}) {
-  if (source == null) {
-    return null;
-  }
-  return _$enumDecode<T>(enumValues, source, unknownValue: unknownValue);
-}
-
-const _$ChatTypeEnumMap = {
-  ChatType.direct: 'direct',
-  ChatType.group: 'group',
-  ChatType.task: 'task',
-};

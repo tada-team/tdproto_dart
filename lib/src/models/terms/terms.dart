@@ -1,112 +1,113 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:tdproto_dart/tdproto_dart.dart';
 
 part 'terms.freezed.dart';
 part 'terms.g.dart';
 
-/// Experimental translation fields for "team" entity renaming.
+/// Experimental translation fields for "team" entity renaming. Readonly.
 @freezed
 abstract class Terms with _$Terms {
   const factory Terms({
-    /// EnInTeam.
+    /// "in team".
     @JsonKey(name: 'EnInTeam') @required String enInTeam,
 
-    /// EnTeam.
+    /// "team".
     @JsonKey(name: 'EnTeam') @required String enTeam,
 
-    /// EnTeamAccess.
+    /// "access to team".
     @JsonKey(name: 'EnTeamAccess') @required String enTeamAccess,
 
-    /// EnTeamAdmin.
+    /// "team admin".
     @JsonKey(name: 'EnTeamAdmin') @required String enTeamAdmin,
 
-    /// EnTeamAdmins.
+    /// "team admins".
     @JsonKey(name: 'EnTeamAdmins') @required String enTeamAdmins,
 
-    /// EnTeamGuest.
+    /// "team guest".
     @JsonKey(name: 'EnTeamGuest') @required String enTeamGuest,
 
-    /// EnTeamMember.
+    /// "team member".
     @JsonKey(name: 'EnTeamMember') @required String enTeamMember,
 
-    /// EnTeamMembers.
+    /// "team members".
     @JsonKey(name: 'EnTeamMembers') @required String enTeamMembers,
 
-    /// EnTeamOwner.
+    /// "team owner",.
     @JsonKey(name: 'EnTeamOwner') @required String enTeamOwner,
 
-    /// EnTeamSettings.
+    /// "team settings".
     @JsonKey(name: 'EnTeamSettings') @required String enTeamSettings,
 
-    /// RuTeamSettings.
+    /// "настройки команды".
     @JsonKey(name: 'RuTeamSettings') @required String ruTeamSettings,
 
-    /// EnTeams.
+    /// "teams".
     @JsonKey(name: 'EnTeams') @required String enTeams,
 
-    /// EnToTeam.
+    /// "to team".
     @JsonKey(name: 'EnToTeam') @required String enToTeam,
 
-    /// RuInTeam.
+    /// "в команде".
     @JsonKey(name: 'RuInTeam') @required String ruInTeam,
 
-    /// RuTeam.
+    /// "команда".
     @JsonKey(name: 'RuTeam') @required String ruTeam,
 
-    /// RuTeamAccess.
+    /// "доступ к команде".
     @JsonKey(name: 'RuTeamAccess') @required String ruTeamAccess,
 
-    /// RuTeamAdmin.
+    /// "администратор команды".
     @JsonKey(name: 'RuTeamAdmin') @required String ruTeamAdmin,
 
-    /// RuTeamAdmins.
+    /// "администраторы команды".
     @JsonKey(name: 'RuTeamAdmins') @required String ruTeamAdmins,
 
-    /// RuTeamD.
+    /// "команде".
     @JsonKey(name: 'RuTeamD') @required String ruTeamD,
 
-    /// RuTeamGuest.
+    /// "гость команды".
     @JsonKey(name: 'RuTeamGuest') @required String ruTeamGuest,
 
-    /// RuTeamMember.
+    /// "участник команды".
     @JsonKey(name: 'RuTeamMember') @required String ruTeamMember,
 
-    /// RuTeamMembers.
+    /// "участники команды".
     @JsonKey(name: 'RuTeamMembers') @required String ruTeamMembers,
 
-    /// RuTeamOwner.
+    /// "владелец команды".
     @JsonKey(name: 'RuTeamOwner') @required String ruTeamOwner,
 
-    /// RuTeamP.
+    /// "команде".
     @JsonKey(name: 'RuTeamP') @required String ruTeamP,
 
-    /// RuTeamR.
+    /// "команды".
     @JsonKey(name: 'RuTeamR') @required String ruTeamR,
 
-    /// RuTeams.
+    /// "команды".
     @JsonKey(name: 'RuTeams') @required String ruTeams,
 
-    /// RuTeamsD.
+    /// "командам".
     @JsonKey(name: 'RuTeamsD') @required String ruTeamsD,
 
-    /// RuTeamsP.
+    /// "командах".
     @JsonKey(name: 'RuTeamsP') @required String ruTeamsP,
 
-    /// RuTeamsR.
+    /// "команд".
     @JsonKey(name: 'RuTeamsR') @required String ruTeamsR,
 
-    /// RuTeamsT.
+    /// "командами".
     @JsonKey(name: 'RuTeamsT') @required String ruTeamsT,
 
-    /// RuTeamsV.
+    /// "команды".
     @JsonKey(name: 'RuTeamsV') @required String ruTeamsV,
 
-    /// RuTeamT.
+    /// "командой".
     @JsonKey(name: 'RuTeamT') @required String ruTeamT,
 
-    /// RuTeamV.
+    /// "команду".
     @JsonKey(name: 'RuTeamV') @required String ruTeamV,
 
-    /// RuToTeam.
+    /// "в команду".
     @JsonKey(name: 'RuToTeam') @required String ruToTeam,
   }) = _Terms;
 

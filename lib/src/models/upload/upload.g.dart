@@ -17,8 +17,10 @@ _$_Upload _$_$_UploadFromJson(Map<String, dynamic> json) {
     preview: json['preview'] == null ? null : UploadPreview.fromJson(json['preview'] as Map<String, dynamic>),
     contentType: json['content_type'] as String,
     animated: json['animated'] as bool,
+    blurhash: json['blurhash'] as String,
     processing: json['processing'] as bool,
     pdfVersion: json['pdf_version'] == null ? null : PdfVersion.fromJson(json['pdf_version'] as Map<String, dynamic>),
+    mediaType: json['type'] as String,
   );
 }
 
@@ -32,6 +34,8 @@ Map<String, dynamic> _$_$_UploadToJson(_$_Upload instance) => <String, dynamic>{
       'preview': instance.preview?.toJson(),
       'content_type': instance.contentType,
       'animated': instance.animated,
+      'blurhash': instance.blurhash,
       'processing': instance.processing,
       'pdf_version': instance.pdfVersion?.toJson(),
+      'type': instance.mediaType,
     };

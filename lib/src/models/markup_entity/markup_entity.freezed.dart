@@ -22,10 +22,10 @@ class _$MarkupEntityTearOff {
       @JsonKey(name: 'oplen') int openLength,
       @required @JsonKey(name: 'cl') int close,
       @JsonKey(name: 'cllen') int closeLength,
-      @required @JsonKey(name: 'typ') MarkupType type,
+      @required @JsonKey(name: 'typ') String type,
       @JsonKey(name: 'url') String url,
       @JsonKey(name: 'repl') String repl,
-      @DateTimeConverter() @JsonKey(name: 'time') DateTime time,
+      @JsonKey(name: 'time') String time,
       @JsonKey(name: 'childs') List<MarkupEntity> childs}) {
     return _MarkupEntity(
       open: open,
@@ -70,7 +70,7 @@ mixin _$MarkupEntity {
 
   /// Marker type.
   @JsonKey(name: 'typ')
-  MarkupType get type;
+  String get type;
 
   /// Url, for Link type.
   @JsonKey(name: 'url')
@@ -81,15 +81,15 @@ mixin _$MarkupEntity {
   String get repl;
 
   /// Time, for Time type.
-  @DateTimeConverter()
   @JsonKey(name: 'time')
-  DateTime get time;
+  String get time;
 
   /// List of internal markup entities.
   @JsonKey(name: 'childs')
   List<MarkupEntity> get childs;
 
   Map<String, dynamic> toJson();
+  @JsonKey(ignore: true)
   $MarkupEntityCopyWith<MarkupEntity> get copyWith;
 }
 
@@ -102,10 +102,10 @@ abstract class $MarkupEntityCopyWith<$Res> {
       @JsonKey(name: 'oplen') int openLength,
       @JsonKey(name: 'cl') int close,
       @JsonKey(name: 'cllen') int closeLength,
-      @JsonKey(name: 'typ') MarkupType type,
+      @JsonKey(name: 'typ') String type,
       @JsonKey(name: 'url') String url,
       @JsonKey(name: 'repl') String repl,
-      @DateTimeConverter() @JsonKey(name: 'time') DateTime time,
+      @JsonKey(name: 'time') String time,
       @JsonKey(name: 'childs') List<MarkupEntity> childs});
 }
 
@@ -134,10 +134,10 @@ class _$MarkupEntityCopyWithImpl<$Res> implements $MarkupEntityCopyWith<$Res> {
       openLength: openLength == freezed ? _value.openLength : openLength as int,
       close: close == freezed ? _value.close : close as int,
       closeLength: closeLength == freezed ? _value.closeLength : closeLength as int,
-      type: type == freezed ? _value.type : type as MarkupType,
+      type: type == freezed ? _value.type : type as String,
       url: url == freezed ? _value.url : url as String,
       repl: repl == freezed ? _value.repl : repl as String,
-      time: time == freezed ? _value.time : time as DateTime,
+      time: time == freezed ? _value.time : time as String,
       childs: childs == freezed ? _value.childs : childs as List<MarkupEntity>,
     ));
   }
@@ -153,10 +153,10 @@ abstract class _$MarkupEntityCopyWith<$Res> implements $MarkupEntityCopyWith<$Re
       @JsonKey(name: 'oplen') int openLength,
       @JsonKey(name: 'cl') int close,
       @JsonKey(name: 'cllen') int closeLength,
-      @JsonKey(name: 'typ') MarkupType type,
+      @JsonKey(name: 'typ') String type,
       @JsonKey(name: 'url') String url,
       @JsonKey(name: 'repl') String repl,
-      @DateTimeConverter() @JsonKey(name: 'time') DateTime time,
+      @JsonKey(name: 'time') String time,
       @JsonKey(name: 'childs') List<MarkupEntity> childs});
 }
 
@@ -186,10 +186,10 @@ class __$MarkupEntityCopyWithImpl<$Res> extends _$MarkupEntityCopyWithImpl<$Res>
       openLength: openLength == freezed ? _value.openLength : openLength as int,
       close: close == freezed ? _value.close : close as int,
       closeLength: closeLength == freezed ? _value.closeLength : closeLength as int,
-      type: type == freezed ? _value.type : type as MarkupType,
+      type: type == freezed ? _value.type : type as String,
       url: url == freezed ? _value.url : url as String,
       repl: repl == freezed ? _value.repl : repl as String,
-      time: time == freezed ? _value.time : time as DateTime,
+      time: time == freezed ? _value.time : time as String,
       childs: childs == freezed ? _value.childs : childs as List<MarkupEntity>,
     ));
   }
@@ -207,7 +207,7 @@ class _$_MarkupEntity implements _MarkupEntity {
       @required @JsonKey(name: 'typ') this.type,
       @JsonKey(name: 'url') this.url,
       @JsonKey(name: 'repl') this.repl,
-      @DateTimeConverter() @JsonKey(name: 'time') this.time,
+      @JsonKey(name: 'time') this.time,
       @JsonKey(name: 'childs') this.childs})
       : assert(open != null),
         assert(close != null),
@@ -239,7 +239,7 @@ class _$_MarkupEntity implements _MarkupEntity {
 
   /// Marker type.
   @JsonKey(name: 'typ')
-  final MarkupType type;
+  final String type;
   @override
 
   /// Url, for Link type.
@@ -253,9 +253,8 @@ class _$_MarkupEntity implements _MarkupEntity {
   @override
 
   /// Time, for Time type.
-  @DateTimeConverter()
   @JsonKey(name: 'time')
-  final DateTime time;
+  final String time;
   @override
 
   /// List of internal markup entities.
@@ -297,6 +296,7 @@ class _$_MarkupEntity implements _MarkupEntity {
       const DeepCollectionEquality().hash(time) ^
       const DeepCollectionEquality().hash(childs);
 
+  @JsonKey(ignore: true)
   @override
   _$MarkupEntityCopyWith<_MarkupEntity> get copyWith => __$MarkupEntityCopyWithImpl<_MarkupEntity>(this, _$identity);
 
@@ -312,10 +312,10 @@ abstract class _MarkupEntity implements MarkupEntity {
       @JsonKey(name: 'oplen') int openLength,
       @required @JsonKey(name: 'cl') int close,
       @JsonKey(name: 'cllen') int closeLength,
-      @required @JsonKey(name: 'typ') MarkupType type,
+      @required @JsonKey(name: 'typ') String type,
       @JsonKey(name: 'url') String url,
       @JsonKey(name: 'repl') String repl,
-      @DateTimeConverter() @JsonKey(name: 'time') DateTime time,
+      @JsonKey(name: 'time') String time,
       @JsonKey(name: 'childs') List<MarkupEntity> childs}) = _$_MarkupEntity;
 
   factory _MarkupEntity.fromJson(Map<String, dynamic> json) = _$_MarkupEntity.fromJson;
@@ -344,7 +344,7 @@ abstract class _MarkupEntity implements MarkupEntity {
 
   /// Marker type.
   @JsonKey(name: 'typ')
-  MarkupType get type;
+  String get type;
   @override
 
   /// Url, for Link type.
@@ -358,14 +358,14 @@ abstract class _MarkupEntity implements MarkupEntity {
   @override
 
   /// Time, for Time type.
-  @DateTimeConverter()
   @JsonKey(name: 'time')
-  DateTime get time;
+  String get time;
   @override
 
   /// List of internal markup entities.
   @JsonKey(name: 'childs')
   List<MarkupEntity> get childs;
   @override
+  @JsonKey(ignore: true)
   _$MarkupEntityCopyWith<_MarkupEntity> get copyWith;
 }

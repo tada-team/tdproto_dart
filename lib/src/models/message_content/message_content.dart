@@ -8,47 +8,64 @@ part 'message_content.g.dart';
 @freezed
 abstract class MessageContent with _$MessageContent {
   const factory MessageContent({
-    /// Text repesentation of message.
+    /// Text representation of message.
     @JsonKey(name: 'text') @required String text,
 
     /// Message type.
-    @JsonKey(name: 'type') @required MediaType type,
+    @JsonKey(name: 'type') @required String type,
 
     /// Message subtype, if any.
-    @JsonKey(name: 'subtype') MediaSubtype subtype,
+    @JsonKey(name: 'subtype') String subtype,
 
-    /// Upload id, if any. Depreacted: use Uploads instead.
-    @Deprecated('use uploads instead') @JsonKey(name: 'upload') String upload,
+    /// Upload id, if any. Deprecated: use Uploads instead.
+    @Deprecated('Upload id, if any. Deprecated: use Uploads instead.') @JsonKey(name: 'upload') String upload,
 
-    /// Upload url, if any. Depreacted: use Uploads instead.
-    @Deprecated('use uploads instead') @JsonKey(name: 'mediaURL') String mediaUrl,
+    /// Upload url, if any. Deprecated: use Uploads instead.
+    @Deprecated('Upload url, if any. Deprecated: use Uploads instead.') @JsonKey(name: 'mediaURL') String mediaUrl,
 
-    /// Upload size, if any. Depreacted: use Uploads instead.
-    @Deprecated('use uploads instead') @JsonKey(name: 'size') int size,
+    /// Upload size, if any. Deprecated: use Uploads instead.
+    @Deprecated('Upload size, if any. Deprecated: use Uploads instead.') @JsonKey(name: 'size') int size,
 
-    /// Upload duration, if any. Depreacted: use Uploads instead.
-    @Deprecated('use uploads instead') @JsonKey(name: 'duration') int duration,
+    /// Upload duration, if any. Deprecated: use Uploads instead.
+    @Deprecated('Upload duration, if any. Deprecated: use Uploads instead.') @JsonKey(name: 'duration') int duration,
 
-    /// Upload stil processing, if any. Depreacted: use Uploads instead.
-    @Deprecated('use uploads instead') @JsonKey(name: 'processing') bool processing,
+    /// Upload still processing, if any. Deprecated: use Uploads instead.
+    @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
+    @JsonKey(name: 'processing')
+        bool processing,
 
-    /// Upload preview height, in pixels, if any. Depreacted: use Uploads instead.
-    @Deprecated('use uploads instead') @JsonKey(name: 'previewHeight') int previewHeight,
+    /// Compact representation of a placeholder for an image. Deprecated: use Uploads instead.
+    @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
+    @JsonKey(name: 'blurhash')
+        String blurhash,
 
-    /// Upload width, in pixels, if any. Depreacted: use Uploads instead.
-    @Deprecated('use uploads instead') @JsonKey(name: 'previewWidth') int previewWidth,
+    /// Upload preview height, in pixels, if any. Deprecated: use Uploads instead.
+    @Deprecated('Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
+    @JsonKey(name: 'previewHeight')
+        int previewHeight,
 
-    /// Upload preview absolute url, if any. Depreacted: use Uploads instead.
-    @Deprecated('use uploads instead') @JsonKey(name: 'previewURL') String previewUrl,
+    /// Upload width, in pixels, if any. Deprecated: use Uploads instead.
+    @Deprecated('Upload width, in pixels, if any. Deprecated: use Uploads instead.')
+    @JsonKey(name: 'previewWidth')
+        int previewWidth,
 
-    /// Upload high resolution preview absolute url, if any. Depreacted: use Uploads instead.
-    @Deprecated('use uploads instead') @JsonKey(name: 'preview2xURL') String preview2xUrl,
+    /// Upload preview absolute url, if any. Deprecated: use Uploads instead.
+    @Deprecated('Upload preview absolute url, if any. Deprecated: use Uploads instead.')
+    @JsonKey(name: 'previewURL')
+        String previewUrl,
 
-    /// Upload name, if any. Depreacted: use Uploads instead.
-    @Deprecated('use uploads instead') @JsonKey(name: 'name') String name,
+    /// Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.
+    @Deprecated('Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
+    @JsonKey(name: 'preview2xURL')
+        String preview2xUrl,
 
-    /// Upload is animated image, if any. Depreacted: use Uploads instead.
-    @Deprecated('use uploads instead') @JsonKey(name: 'animated') bool animated,
+    /// Upload name, if any. Deprecated: use Uploads instead.
+    @Deprecated('Upload name, if any. Deprecated: use Uploads instead.') @JsonKey(name: 'name') String name,
+
+    /// Upload is animated image, if any. Deprecated: use Uploads instead.
+    @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
+    @JsonKey(name: 'animated')
+        bool animated,
 
     /// Change title (for "change" mediatype).
     @JsonKey(name: 'title') String title,
@@ -57,12 +74,12 @@ abstract class MessageContent with _$MessageContent {
     @JsonKey(name: 'old') String old,
 
     /// Change new value (for "change" mediatype).
-    @JsonKey(name: 'new') String newOne,
+    @JsonKey(name: 'new') String isNew,
 
     /// Change actor contact id (for "change" mediatype).
     @JsonKey(name: 'actor') String actor,
 
-    /// Comment. For audimessage.
+    /// Comment (for "audiomsg" mediatype).
     @JsonKey(name: 'comment') String comment,
 
     /// Given name (for "contact" mediatype).
@@ -81,7 +98,7 @@ abstract class MessageContent with _$MessageContent {
     @JsonKey(name: 'emails') List<String> emails,
 
     /// Stickerpack name (for "sticker" subtype).
-    @JsonKey(name: 'stickerpack') String stickerPack,
+    @JsonKey(name: 'stickerpack') String stickerpack,
 
     /// Pdf version, if any.
     @JsonKey(name: 'pdf_version') PdfVersion pdfVersion,

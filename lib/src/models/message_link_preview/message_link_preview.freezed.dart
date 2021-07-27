@@ -46,6 +46,7 @@ mixin _$MessageLinkPreview {
   String get description;
 
   Map<String, dynamic> toJson();
+  @JsonKey(ignore: true)
   $MessageLinkPreviewCopyWith<MessageLinkPreview> get copyWith;
 }
 
@@ -146,6 +147,7 @@ class _$_MessageLinkPreview implements _MessageLinkPreview {
       const DeepCollectionEquality().hash(title) ^
       const DeepCollectionEquality().hash(description);
 
+  @JsonKey(ignore: true)
   @override
   _$MessageLinkPreviewCopyWith<_MessageLinkPreview> get copyWith =>
       __$MessageLinkPreviewCopyWithImpl<_MessageLinkPreview>(this, _$identity);
@@ -174,5 +176,6 @@ abstract class _MessageLinkPreview implements MessageLinkPreview {
   @JsonKey(name: 'description')
   String get description;
   @override
+  @JsonKey(ignore: true)
   _$MessageLinkPreviewCopyWith<_MessageLinkPreview> get copyWith;
 }

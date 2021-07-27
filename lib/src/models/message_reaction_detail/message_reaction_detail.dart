@@ -4,7 +4,7 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'message_reaction_detail.freezed.dart';
 part 'message_reaction_detail.g.dart';
 
-/// Message reaction detail
+/// Message reaction detail.
 @freezed
 abstract class MessageReactionDetail with _$MessageReactionDetail {
   const factory MessageReactionDetail({

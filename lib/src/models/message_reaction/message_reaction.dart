@@ -4,7 +4,7 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'message_reaction.freezed.dart';
 part 'message_reaction.g.dart';
 
-/// Message emoji reaction
+/// Message emoji reaction.
 @freezed
 abstract class MessageReaction with _$MessageReaction {
   const factory MessageReaction({

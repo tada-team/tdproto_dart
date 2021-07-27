@@ -59,6 +59,7 @@ mixin _$UploadPreview {
   int get height;
 
   Map<String, dynamic> toJson();
+  @JsonKey(ignore: true)
   $UploadPreviewCopyWith<UploadPreview> get copyWith;
 }
 
@@ -194,6 +195,7 @@ class _$_UploadPreview implements _UploadPreview {
       const DeepCollectionEquality().hash(width) ^
       const DeepCollectionEquality().hash(height);
 
+  @JsonKey(ignore: true)
   @override
   _$UploadPreviewCopyWith<_UploadPreview> get copyWith =>
       __$UploadPreviewCopyWithImpl<_UploadPreview>(this, _$identity);
@@ -234,5 +236,6 @@ abstract class _UploadPreview implements UploadPreview {
   @JsonKey(name: 'height')
   int get height;
   @override
+  @JsonKey(ignore: true)
   _$UploadPreviewCopyWith<_UploadPreview> get copyWith;
 }

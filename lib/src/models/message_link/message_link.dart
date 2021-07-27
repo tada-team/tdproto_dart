@@ -4,14 +4,14 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'message_link.freezed.dart';
 part 'message_link.g.dart';
 
-/// Checked message links. In short: "Click here: {link.Pattern}" => "Click here: <a href='{link.Url}'>{link.Text}</a>"
+/// Checked message links. In short: "Click here: {link.Pattern}" => "Click here: <a href='{link.Url}'>{link.Text}</a>".
 @freezed
 abstract class MessageLink with _$MessageLink {
   const factory MessageLink({
     /// Text fragment that should be replaced by link.
     @JsonKey(name: 'pattern') @required String pattern,
 
-    /// Internal (tadateam://) or external link.
+    /// Internal or external link.
     @JsonKey(name: 'url') @required String url,
 
     /// Text replacement.

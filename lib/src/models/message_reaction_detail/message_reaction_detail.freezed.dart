@@ -54,6 +54,7 @@ mixin _$MessageReactionDetail {
   String get name;
 
   Map<String, dynamic> toJson();
+  @JsonKey(ignore: true)
   $MessageReactionDetailCopyWith<MessageReactionDetail> get copyWith;
 }
 
@@ -175,6 +176,7 @@ class _$_MessageReactionDetail implements _MessageReactionDetail {
       const DeepCollectionEquality().hash(sender) ^
       const DeepCollectionEquality().hash(name);
 
+  @JsonKey(ignore: true)
   @override
   _$MessageReactionDetailCopyWith<_MessageReactionDetail> get copyWith =>
       __$MessageReactionDetailCopyWithImpl<_MessageReactionDetail>(this, _$identity);
@@ -210,5 +212,6 @@ abstract class _MessageReactionDetail implements MessageReactionDetail {
   @JsonKey(name: 'name')
   String get name;
   @override
+  @JsonKey(ignore: true)
   _$MessageReactionDetailCopyWith<_MessageReactionDetail> get copyWith;
 }

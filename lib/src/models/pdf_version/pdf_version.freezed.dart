@@ -45,6 +45,7 @@ mixin _$PdfVersion {
   String get textPreview;
 
   Map<String, dynamic> toJson();
+  @JsonKey(ignore: true)
   $PdfVersionCopyWith<PdfVersion> get copyWith;
 }
 
@@ -141,6 +142,7 @@ class _$_PdfVersion implements _PdfVersion {
       const DeepCollectionEquality().hash(url) ^
       const DeepCollectionEquality().hash(textPreview);
 
+  @JsonKey(ignore: true)
   @override
   _$PdfVersionCopyWith<_PdfVersion> get copyWith => __$PdfVersionCopyWithImpl<_PdfVersion>(this, _$identity);
 
@@ -167,5 +169,6 @@ abstract class _PdfVersion implements PdfVersion {
   @JsonKey(name: 'text_preview')
   String get textPreview;
   @override
+  @JsonKey(ignore: true)
   _$PdfVersionCopyWith<_PdfVersion> get copyWith;
 }

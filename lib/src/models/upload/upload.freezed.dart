@@ -27,8 +27,10 @@ class _$UploadTearOff {
       @JsonKey(name: 'preview') UploadPreview preview,
       @required @JsonKey(name: 'content_type') String contentType,
       @JsonKey(name: 'animated') bool animated,
+      @JsonKey(name: 'blurhash') String blurhash,
       @JsonKey(name: 'processing') bool processing,
-      @JsonKey(name: 'pdf_version') PdfVersion pdfVersion}) {
+      @JsonKey(name: 'pdf_version') PdfVersion pdfVersion,
+      @required @JsonKey(name: 'type') String mediaType}) {
     return _Upload(
       uid: uid,
       created: created,
@@ -39,8 +41,10 @@ class _$UploadTearOff {
       preview: preview,
       contentType: contentType,
       animated: animated,
+      blurhash: blurhash,
       processing: processing,
       pdfVersion: pdfVersion,
+      mediaType: mediaType,
     );
   }
 
@@ -93,6 +97,10 @@ mixin _$Upload {
   @JsonKey(name: 'animated')
   bool get animated;
 
+  /// Compact representation of a placeholder for an image (images only).
+  @JsonKey(name: 'blurhash')
+  String get blurhash;
+
   /// File still processing (video only).
   @JsonKey(name: 'processing')
   bool get processing;
@@ -101,7 +109,12 @@ mixin _$Upload {
   @JsonKey(name: 'pdf_version')
   PdfVersion get pdfVersion;
 
+  /// ?type=file,image,audio,video.
+  @JsonKey(name: 'type')
+  String get mediaType;
+
   Map<String, dynamic> toJson();
+  @JsonKey(ignore: true)
   $UploadCopyWith<Upload> get copyWith;
 }
 
@@ -118,8 +131,10 @@ abstract class $UploadCopyWith<$Res> {
       @JsonKey(name: 'preview') UploadPreview preview,
       @JsonKey(name: 'content_type') String contentType,
       @JsonKey(name: 'animated') bool animated,
+      @JsonKey(name: 'blurhash') String blurhash,
       @JsonKey(name: 'processing') bool processing,
-      @JsonKey(name: 'pdf_version') PdfVersion pdfVersion});
+      @JsonKey(name: 'pdf_version') PdfVersion pdfVersion,
+      @JsonKey(name: 'type') String mediaType});
 
   $UploadPreviewCopyWith<$Res> get preview;
   $PdfVersionCopyWith<$Res> get pdfVersion;
@@ -144,8 +159,10 @@ class _$UploadCopyWithImpl<$Res> implements $UploadCopyWith<$Res> {
     Object preview = freezed,
     Object contentType = freezed,
     Object animated = freezed,
+    Object blurhash = freezed,
     Object processing = freezed,
     Object pdfVersion = freezed,
+    Object mediaType = freezed,
   }) {
     return _then(_value.copyWith(
       uid: uid == freezed ? _value.uid : uid as String,
@@ -157,8 +174,10 @@ class _$UploadCopyWithImpl<$Res> implements $UploadCopyWith<$Res> {
       preview: preview == freezed ? _value.preview : preview as UploadPreview,
       contentType: contentType == freezed ? _value.contentType : contentType as String,
       animated: animated == freezed ? _value.animated : animated as bool,
+      blurhash: blurhash == freezed ? _value.blurhash : blurhash as String,
       processing: processing == freezed ? _value.processing : processing as bool,
       pdfVersion: pdfVersion == freezed ? _value.pdfVersion : pdfVersion as PdfVersion,
+      mediaType: mediaType == freezed ? _value.mediaType : mediaType as String,
     ));
   }
 
@@ -197,8 +216,10 @@ abstract class _$UploadCopyWith<$Res> implements $UploadCopyWith<$Res> {
       @JsonKey(name: 'preview') UploadPreview preview,
       @JsonKey(name: 'content_type') String contentType,
       @JsonKey(name: 'animated') bool animated,
+      @JsonKey(name: 'blurhash') String blurhash,
       @JsonKey(name: 'processing') bool processing,
-      @JsonKey(name: 'pdf_version') PdfVersion pdfVersion});
+      @JsonKey(name: 'pdf_version') PdfVersion pdfVersion,
+      @JsonKey(name: 'type') String mediaType});
 
   @override
   $UploadPreviewCopyWith<$Res> get preview;
@@ -224,8 +245,10 @@ class __$UploadCopyWithImpl<$Res> extends _$UploadCopyWithImpl<$Res> implements 
     Object preview = freezed,
     Object contentType = freezed,
     Object animated = freezed,
+    Object blurhash = freezed,
     Object processing = freezed,
     Object pdfVersion = freezed,
+    Object mediaType = freezed,
   }) {
     return _then(_Upload(
       uid: uid == freezed ? _value.uid : uid as String,
@@ -237,8 +260,10 @@ class __$UploadCopyWithImpl<$Res> extends _$UploadCopyWithImpl<$Res> implements 
       preview: preview == freezed ? _value.preview : preview as UploadPreview,
       contentType: contentType == freezed ? _value.contentType : contentType as String,
       animated: animated == freezed ? _value.animated : animated as bool,
+      blurhash: blurhash == freezed ? _value.blurhash : blurhash as String,
       processing: processing == freezed ? _value.processing : processing as bool,
       pdfVersion: pdfVersion == freezed ? _value.pdfVersion : pdfVersion as PdfVersion,
+      mediaType: mediaType == freezed ? _value.mediaType : mediaType as String,
     ));
   }
 }
@@ -257,14 +282,17 @@ class _$_Upload implements _Upload {
       @JsonKey(name: 'preview') this.preview,
       @required @JsonKey(name: 'content_type') this.contentType,
       @JsonKey(name: 'animated') this.animated,
+      @JsonKey(name: 'blurhash') this.blurhash,
       @JsonKey(name: 'processing') this.processing,
-      @JsonKey(name: 'pdf_version') this.pdfVersion})
+      @JsonKey(name: 'pdf_version') this.pdfVersion,
+      @required @JsonKey(name: 'type') this.mediaType})
       : assert(uid != null),
         assert(created != null),
         assert(size != null),
         assert(name != null),
         assert(url != null),
-        assert(contentType != null);
+        assert(contentType != null),
+        assert(mediaType != null);
 
   factory _$_Upload.fromJson(Map<String, dynamic> json) => _$_$_UploadFromJson(json);
 
@@ -316,6 +344,11 @@ class _$_Upload implements _Upload {
   final bool animated;
   @override
 
+  /// Compact representation of a placeholder for an image (images only).
+  @JsonKey(name: 'blurhash')
+  final String blurhash;
+  @override
+
   /// File still processing (video only).
   @JsonKey(name: 'processing')
   final bool processing;
@@ -324,10 +357,15 @@ class _$_Upload implements _Upload {
   /// PDF version of file. Experimental.
   @JsonKey(name: 'pdf_version')
   final PdfVersion pdfVersion;
+  @override
+
+  /// ?type=file,image,audio,video.
+  @JsonKey(name: 'type')
+  final String mediaType;
 
   @override
   String toString() {
-    return 'Upload(uid: $uid, created: $created, size: $size, duration: $duration, name: $name, url: $url, preview: $preview, contentType: $contentType, animated: $animated, processing: $processing, pdfVersion: $pdfVersion)';
+    return 'Upload(uid: $uid, created: $created, size: $size, duration: $duration, name: $name, url: $url, preview: $preview, contentType: $contentType, animated: $animated, blurhash: $blurhash, processing: $processing, pdfVersion: $pdfVersion, mediaType: $mediaType)';
   }
 
   @override
@@ -344,10 +382,13 @@ class _$_Upload implements _Upload {
             (identical(other.contentType, contentType) ||
                 const DeepCollectionEquality().equals(other.contentType, contentType)) &&
             (identical(other.animated, animated) || const DeepCollectionEquality().equals(other.animated, animated)) &&
+            (identical(other.blurhash, blurhash) || const DeepCollectionEquality().equals(other.blurhash, blurhash)) &&
             (identical(other.processing, processing) ||
                 const DeepCollectionEquality().equals(other.processing, processing)) &&
             (identical(other.pdfVersion, pdfVersion) ||
-                const DeepCollectionEquality().equals(other.pdfVersion, pdfVersion)));
+                const DeepCollectionEquality().equals(other.pdfVersion, pdfVersion)) &&
+            (identical(other.mediaType, mediaType) ||
+                const DeepCollectionEquality().equals(other.mediaType, mediaType)));
   }
 
   @override
@@ -362,9 +403,12 @@ class _$_Upload implements _Upload {
       const DeepCollectionEquality().hash(preview) ^
       const DeepCollectionEquality().hash(contentType) ^
       const DeepCollectionEquality().hash(animated) ^
+      const DeepCollectionEquality().hash(blurhash) ^
       const DeepCollectionEquality().hash(processing) ^
-      const DeepCollectionEquality().hash(pdfVersion);
+      const DeepCollectionEquality().hash(pdfVersion) ^
+      const DeepCollectionEquality().hash(mediaType);
 
+  @JsonKey(ignore: true)
   @override
   _$UploadCopyWith<_Upload> get copyWith => __$UploadCopyWithImpl<_Upload>(this, _$identity);
 
@@ -385,8 +429,10 @@ abstract class _Upload implements Upload {
       @JsonKey(name: 'preview') UploadPreview preview,
       @required @JsonKey(name: 'content_type') String contentType,
       @JsonKey(name: 'animated') bool animated,
+      @JsonKey(name: 'blurhash') String blurhash,
       @JsonKey(name: 'processing') bool processing,
-      @JsonKey(name: 'pdf_version') PdfVersion pdfVersion}) = _$_Upload;
+      @JsonKey(name: 'pdf_version') PdfVersion pdfVersion,
+      @required @JsonKey(name: 'type') String mediaType}) = _$_Upload;
 
   factory _Upload.fromJson(Map<String, dynamic> json) = _$_Upload.fromJson;
 
@@ -438,6 +484,11 @@ abstract class _Upload implements Upload {
   bool get animated;
   @override
 
+  /// Compact representation of a placeholder for an image (images only).
+  @JsonKey(name: 'blurhash')
+  String get blurhash;
+  @override
+
   /// File still processing (video only).
   @JsonKey(name: 'processing')
   bool get processing;
@@ -447,5 +498,11 @@ abstract class _Upload implements Upload {
   @JsonKey(name: 'pdf_version')
   PdfVersion get pdfVersion;
   @override
+
+  /// ?type=file,image,audio,video.
+  @JsonKey(name: 'type')
+  String get mediaType;
+  @override
+  @JsonKey(ignore: true)
   _$UploadCopyWith<_Upload> get copyWith;
 }

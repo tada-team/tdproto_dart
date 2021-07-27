@@ -52,7 +52,7 @@ mixin _$MessageLink {
   @JsonKey(name: 'pattern')
   String get pattern;
 
-  /// Internal (tadateam://) or external link.
+  /// Internal or external link.
   @JsonKey(name: 'url')
   String get url;
 
@@ -77,6 +77,7 @@ mixin _$MessageLink {
   String get youtubeId;
 
   Map<String, dynamic> toJson();
+  @JsonKey(ignore: true)
   $MessageLinkCopyWith<MessageLink> get copyWith;
 }
 
@@ -208,7 +209,7 @@ class _$_MessageLink implements _MessageLink {
   final String pattern;
   @override
 
-  /// Internal (tadateam://) or external link.
+  /// Internal or external link.
   @JsonKey(name: 'url')
   final String url;
   @override
@@ -268,6 +269,7 @@ class _$_MessageLink implements _MessageLink {
       const DeepCollectionEquality().hash(noPreview) ^
       const DeepCollectionEquality().hash(youtubeId);
 
+  @JsonKey(ignore: true)
   @override
   _$MessageLinkCopyWith<_MessageLink> get copyWith => __$MessageLinkCopyWithImpl<_MessageLink>(this, _$identity);
 
@@ -296,7 +298,7 @@ abstract class _MessageLink implements MessageLink {
   String get pattern;
   @override
 
-  /// Internal (tadateam://) or external link.
+  /// Internal or external link.
   @JsonKey(name: 'url')
   String get url;
   @override
@@ -325,5 +327,6 @@ abstract class _MessageLink implements MessageLink {
   @JsonKey(name: 'youtube_id')
   String get youtubeId;
   @override
+  @JsonKey(ignore: true)
   _$MessageLinkCopyWith<_MessageLink> get copyWith;
 }

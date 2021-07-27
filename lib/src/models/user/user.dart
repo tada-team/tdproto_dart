@@ -1,4 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:tdproto_dart/tdproto_dart.dart';
 
 part 'user.freezed.dart';
 part 'user.g.dart';
@@ -44,10 +45,10 @@ abstract class User with _$User {
     @JsonKey(name: 'timezone') @required String timezone,
 
     /// Start silently time (no pushes, no sounds).
-    @JsonKey(name: 'quiet_time_start') String quietTimeStart,
+    @JsonKey(name: 'quiet_time_start') @required String quietTimeStart,
 
     /// Finish silently time (no pushes, no sounds).
-    @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
+    @JsonKey(name: 'quiet_time_finish') @required String quietTimeFinish,
   }) = _User;
 
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);

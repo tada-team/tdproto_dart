@@ -4,7 +4,7 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'markup_entity.freezed.dart';
 part 'markup_entity.g.dart';
 
-/// Markup entity. Experimental
+/// Markup entity. Experimental.
 @freezed
 abstract class MarkupEntity with _$MarkupEntity {
   const factory MarkupEntity({
@@ -21,7 +21,7 @@ abstract class MarkupEntity with _$MarkupEntity {
     @JsonKey(name: 'cllen') int closeLength,
 
     /// Marker type.
-    @JsonKey(name: 'typ') @required MarkupType type,
+    @JsonKey(name: 'typ') @required String type,
 
     /// Url, for Link type.
     @JsonKey(name: 'url') String url,
@@ -30,7 +30,7 @@ abstract class MarkupEntity with _$MarkupEntity {
     @JsonKey(name: 'repl') String repl,
 
     /// Time, for Time type.
-    @DateTimeConverter() @JsonKey(name: 'time') DateTime time,
+    @JsonKey(name: 'time') String time,
 
     /// List of internal markup entities.
     @JsonKey(name: 'childs') List<MarkupEntity> childs,

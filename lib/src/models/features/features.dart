@@ -4,7 +4,7 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'features.freezed.dart';
 part 'features.g.dart';
 
-/// Server information.
+/// Server information. Readonly.
 @freezed
 abstract class Features with _$Features {
   const factory Features({
@@ -23,6 +23,9 @@ abstract class Features with _$Features {
     /// Application title.
     @JsonKey(name: 'app_title') @required String appTitle,
 
+    /// Landing page address, if any.
+    @JsonKey(name: 'landing_url') String landingUrl,
+
     /// Local applications urls.
     @JsonKey(name: 'app_schemes') @required List<String> appSchemes,
 
@@ -35,11 +38,26 @@ abstract class Features with _$Features {
     /// Link to Google Play.
     @JsonKey(name: 'android_app') @required String androidApp,
 
+    /// Link to AppStore for corporate app.
+    @JsonKey(name: 'ios_corp_app') @required String iOSCorpApp,
+
+    /// Link to Google Play for corporate app.
+    @JsonKey(name: 'android_corp_app') @required String androidCorpApp,
+
     /// Default UI theme.
     @JsonKey(name: 'theme') @required String theme,
 
-    /// Minimal application version required for this server. Used for breaking changes.
-    @JsonKey(name: 'min_app_version') @required String minAppVersion,
+    /// Minimal iOS application version required for this server. Used for breaking changes.
+    @JsonKey(name: 'min_ios_version') @required String minIOSVersion,
+
+    /// Minimal android application version required for this server. Used for breaking changes.
+    @JsonKey(name: 'min_android_version') @required String minAndroidVersion,
+
+    /// Minimal iOS corp application version required for this server. Used for breaking changes.
+    @JsonKey(name: 'min_corp_ios_version') @required String minCorpIOSVersion,
+
+    /// Minimal android corp application version required for this server. Used for breaking changes.
+    @JsonKey(name: 'min_corp_android_version') @required String minCorpAndroidVersion,
 
     /// Free registration allowed.
     @JsonKey(name: 'free_registration') @required bool freeRegistration,
@@ -68,8 +86,11 @@ abstract class Features with _$Features {
     /// Maximum chars for text message.
     @JsonKey(name: 'max_message_length') @required int maxMessageLength,
 
-    /// Maximum length for project and contact's sections names.
+    /// Maximum length for contact's sections names.
     @JsonKey(name: 'max_section_length') @required int maxSectionLength,
+
+    /// Maximum length for project.
+    @JsonKey(name: 'max_project_length') @required int maxProjectLength,
 
     /// Maximum length for tags.
     @JsonKey(name: 'max_tag_length') @required int maxTagLength,
@@ -89,6 +110,12 @@ abstract class Features with _$Features {
     /// Maximum teams for one account.
     @JsonKey(name: 'max_teams') @required int maxTeams,
 
+    /// Maximum search result.
+    @JsonKey(name: 'max_message_search_limit') @required int maxMessageSearchLimit,
+
+    /// Multi nodes mode (federation) enabled.
+    @JsonKey(name: 'multi_nodes') bool multiNodes,
+
     /// Max inactivity seconds.
     @JsonKey(name: 'afk_age') @required int afkAge,
 
@@ -101,20 +128,41 @@ abstract class Features with _$Features {
     /// SMS authentication enabled.
     @JsonKey(name: 'auth_by_sms') bool authBySms,
 
-    /// ICE servers for WebRTC.
-    @JsonKey(name: 'ice_servers') @required List<ICEServer> iceServers,
+    /// Two-factor authentication (2FA) enabled.
+    @JsonKey(name: 'auth_2fa') bool auth2fa,
 
-    /// True for on-premise installation.
+    /// External services.
+    @JsonKey(name: 'oauth_services') List<OAuthService> oAuthServices,
+
+    /// ICE servers for WebRTC.
+    @JsonKey(name: 'ice_servers') @required List<ICEServer> iCEServers,
+
+    /// True for premise installation.
     @JsonKey(name: 'custom_server') @required bool customServer,
 
     /// Name of installation.
     @JsonKey(name: 'installation_type') @required String installationType,
+
+    /// Installation title, used on login screen.
+    @JsonKey(name: 'installation_title') String installationTitle,
+
+    /// Custom application icon name, if any.
+    @JsonKey(name: 'custom_app_icon_name') String customAppIconName,
+
+    /// AppBackground image url, if any.
+    @JsonKey(name: 'app_login_background') String appLoginBackground,
+
+    /// WebBackground image url, if any.
+    @JsonKey(name: 'web_login_background') String webLoginBackground,
 
     /// Testing installation.
     @JsonKey(name: 'is_testing') @required bool isTesting,
 
     /// Yandex metrika counter id.
     @JsonKey(name: 'metrika') @required String metrika,
+
+    /// Amplitude api key.
+    @JsonKey(name: 'amplitude_api_key') String amplitudeApiKey,
 
     /// Minimal chars number for starting global search.
     @JsonKey(name: 'min_search_length') @required int minSearchLength,
@@ -149,8 +197,8 @@ abstract class Features with _$Features {
     /// Firebase settings for web-push notifications.
     @JsonKey(name: 'firebase_storage_bucket') @required String firebaseStorageBucket,
 
-    /// Calls functions enabled.
-    @JsonKey(name: 'calls') @required bool calls,
+    /// Calls version. 0 = disabled, 1 = audio only, 2 = audio+video.
+    @JsonKey(name: 'calls_version') @required int callsVersion,
 
     /// Calls functions enabled for mobile applications.
     @JsonKey(name: 'mobile_calls') @required bool mobileCalls,
@@ -182,23 +230,38 @@ abstract class Features with _$Features {
     /// Wiki pages in chats. Experimental.
     @JsonKey(name: 'allow_admin_mute') bool allowAdminMute,
 
-    /// Deprecated.
-    @deprecated @JsonKey(name: 'task_checklist') @required bool taskChecklist,
+    /// Default wallpaper url for mobile apps, if any.
+    @JsonKey(name: 'default_wallpaper') Wallpaper defaultWallpaper,
+
+    /// Support email.
+    @JsonKey(name: 'support_email') @required String supportEmail,
+
+    /// True if server has custom theme.
+    @JsonKey(name: 'custom_theme') @required bool customTheme,
 
     /// Deprecated.
-    @deprecated @JsonKey(name: 'readonly_groups') @required bool readonlyGroups,
+    @Deprecated('Deprecated.') @JsonKey(name: 'task_checklist') @required bool taskChecklist,
 
     /// Deprecated.
-    @deprecated @JsonKey(name: 'task_dashboard') @required bool taskDashboard,
+    @Deprecated('Deprecated.') @JsonKey(name: 'readonly_groups') @required bool readonlyGroups,
 
     /// Deprecated.
-    @deprecated @JsonKey(name: 'task_messages') @required bool taskMessages,
+    @Deprecated('Deprecated.') @JsonKey(name: 'task_dashboard') @required bool taskDashboard,
 
     /// Deprecated.
-    @deprecated @JsonKey(name: 'task_public') @required bool taskPublic,
+    @Deprecated('Deprecated.') @JsonKey(name: 'task_messages') @required bool taskMessages,
 
     /// Deprecated.
-    @deprecated @JsonKey(name: 'task_tags') @required bool taskTags,
+    @Deprecated('Deprecated.') @JsonKey(name: 'task_public') @required bool taskPublic,
+
+    /// Deprecated.
+    @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') @required bool taskTags,
+
+    /// Deprecated.
+    @Deprecated('Deprecated.') @JsonKey(name: 'calls') @required bool calls,
+
+    /// Deprecated.
+    @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') @required String minAppVersion,
   }) = _Features;
 
   factory Features.fromJson(Map<String, dynamic> json) => _$FeaturesFromJson(json);

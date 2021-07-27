@@ -1,9 +1,10 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:tdproto_dart/tdproto_dart.dart';
 
 part 'pdf_version.freezed.dart';
 part 'pdf_version.g.dart';
 
-/// PDF preview of mediafile. Experimental
+/// PDF preview of mediafile. Experimental.
 @freezed
 abstract class PdfVersion with _$PdfVersion {
   const factory PdfVersion({

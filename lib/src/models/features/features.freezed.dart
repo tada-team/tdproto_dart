@@ -23,12 +23,18 @@ class _$FeaturesTearOff {
       @required @JsonKey(name: 'desktop_version') String desktopVersion,
       @required @JsonKey(name: 'front_version') String frontVersion,
       @required @JsonKey(name: 'app_title') String appTitle,
+      @JsonKey(name: 'landing_url') String landingUrl,
       @required @JsonKey(name: 'app_schemes') List<String> appSchemes,
       @required @JsonKey(name: 'userver') String userver,
       @required @JsonKey(name: 'ios_app') String iOSApp,
       @required @JsonKey(name: 'android_app') String androidApp,
+      @required @JsonKey(name: 'ios_corp_app') String iOSCorpApp,
+      @required @JsonKey(name: 'android_corp_app') String androidCorpApp,
       @required @JsonKey(name: 'theme') String theme,
-      @required @JsonKey(name: 'min_app_version') String minAppVersion,
+      @required @JsonKey(name: 'min_ios_version') String minIOSVersion,
+      @required @JsonKey(name: 'min_android_version') String minAndroidVersion,
+      @required @JsonKey(name: 'min_corp_ios_version') String minCorpIOSVersion,
+      @required @JsonKey(name: 'min_corp_android_version') String minCorpAndroidVersion,
       @required @JsonKey(name: 'free_registration') bool freeRegistration,
       @required @JsonKey(name: 'max_upload_mb') int maxUploadMb,
       @required @JsonKey(name: 'max_linked_messages') int maxLinkedMessages,
@@ -39,21 +45,31 @@ class _$FeaturesTearOff {
       @required @JsonKey(name: 'max_mood_length') int maxMoodLength,
       @required @JsonKey(name: 'max_message_length') int maxMessageLength,
       @required @JsonKey(name: 'max_section_length') int maxSectionLength,
+      @required @JsonKey(name: 'max_project_length') int maxProjectLength,
       @required @JsonKey(name: 'max_tag_length') int maxTagLength,
       @required @JsonKey(name: 'max_task_title_length') int maxTaskTitleLength,
       @required @JsonKey(name: 'max_color_rule_description_length') int maxColorRuleDescriptionLength,
       @required @JsonKey(name: 'max_url_length') int maxUrlLength,
       @required @JsonKey(name: 'max_integration_comment_length') int maxIntegrationCommentLength,
       @required @JsonKey(name: 'max_teams') int maxTeams,
+      @required @JsonKey(name: 'max_message_search_limit') int maxMessageSearchLimit,
+      @JsonKey(name: 'multi_nodes') bool multiNodes,
       @required @JsonKey(name: 'afk_age') int afkAge,
       @JsonKey(name: 'auth_by_password') bool authByPassword,
       @JsonKey(name: 'auth_by_qr_code') bool authByQrCode,
       @JsonKey(name: 'auth_by_sms') bool authBySms,
-      @required @JsonKey(name: 'ice_servers') List<ICEServer> iceServers,
+      @JsonKey(name: 'auth_2fa') bool auth2fa,
+      @JsonKey(name: 'oauth_services') List<OAuthService> oAuthServices,
+      @required @JsonKey(name: 'ice_servers') List<ICEServer> iCEServers,
       @required @JsonKey(name: 'custom_server') bool customServer,
       @required @JsonKey(name: 'installation_type') String installationType,
+      @JsonKey(name: 'installation_title') String installationTitle,
+      @JsonKey(name: 'custom_app_icon_name') String customAppIconName,
+      @JsonKey(name: 'app_login_background') String appLoginBackground,
+      @JsonKey(name: 'web_login_background') String webLoginBackground,
       @required @JsonKey(name: 'is_testing') bool isTesting,
       @required @JsonKey(name: 'metrika') String metrika,
+      @JsonKey(name: 'amplitude_api_key') String amplitudeApiKey,
       @required @JsonKey(name: 'min_search_length') int minSearchLength,
       @required @JsonKey(name: 'resend_timeout') int resendTimeout,
       @required @JsonKey(name: 'sentry_dsn_js') String sentryDsnJS,
@@ -65,7 +81,7 @@ class _$FeaturesTearOff {
       @required @JsonKey(name: 'firebase_database_url') String firebaseDatabaseUrl,
       @required @JsonKey(name: 'firebase_project_id') String firebaseProjectId,
       @required @JsonKey(name: 'firebase_storage_bucket') String firebaseStorageBucket,
-      @required @JsonKey(name: 'calls') bool calls,
+      @required @JsonKey(name: 'calls_version') int callsVersion,
       @required @JsonKey(name: 'mobile_calls') bool mobileCalls,
       @required @JsonKey(name: 'calls_record') bool callsRecord,
       @JsonKey(name: 'only_one_device_per_call') bool onlyOneDevicePerCall,
@@ -76,24 +92,35 @@ class _$FeaturesTearOff {
       @required @JsonKey(name: 'single_group_teams') bool singleGroupTeams,
       @required @JsonKey(name: 'wiki_pages') bool wikiPages,
       @JsonKey(name: 'allow_admin_mute') bool allowAdminMute,
-      @required @deprecated @JsonKey(name: 'task_checklist') bool taskChecklist,
-      @required @deprecated @JsonKey(name: 'readonly_groups') bool readonlyGroups,
-      @required @deprecated @JsonKey(name: 'task_dashboard') bool taskDashboard,
-      @required @deprecated @JsonKey(name: 'task_messages') bool taskMessages,
-      @required @deprecated @JsonKey(name: 'task_public') bool taskPublic,
-      @required @deprecated @JsonKey(name: 'task_tags') bool taskTags}) {
+      @JsonKey(name: 'default_wallpaper') Wallpaper defaultWallpaper,
+      @required @JsonKey(name: 'support_email') String supportEmail,
+      @required @JsonKey(name: 'custom_theme') bool customTheme,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_checklist') bool taskChecklist,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'readonly_groups') bool readonlyGroups,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_dashboard') bool taskDashboard,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_messages') bool taskMessages,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_public') bool taskPublic,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') bool taskTags,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'calls') bool calls,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion}) {
     return _Features(
       host: host,
       build: build,
       desktopVersion: desktopVersion,
       frontVersion: frontVersion,
       appTitle: appTitle,
+      landingUrl: landingUrl,
       appSchemes: appSchemes,
       userver: userver,
       iOSApp: iOSApp,
       androidApp: androidApp,
+      iOSCorpApp: iOSCorpApp,
+      androidCorpApp: androidCorpApp,
       theme: theme,
-      minAppVersion: minAppVersion,
+      minIOSVersion: minIOSVersion,
+      minAndroidVersion: minAndroidVersion,
+      minCorpIOSVersion: minCorpIOSVersion,
+      minCorpAndroidVersion: minCorpAndroidVersion,
       freeRegistration: freeRegistration,
       maxUploadMb: maxUploadMb,
       maxLinkedMessages: maxLinkedMessages,
@@ -104,21 +131,31 @@ class _$FeaturesTearOff {
       maxMoodLength: maxMoodLength,
       maxMessageLength: maxMessageLength,
       maxSectionLength: maxSectionLength,
+      maxProjectLength: maxProjectLength,
       maxTagLength: maxTagLength,
       maxTaskTitleLength: maxTaskTitleLength,
       maxColorRuleDescriptionLength: maxColorRuleDescriptionLength,
       maxUrlLength: maxUrlLength,
       maxIntegrationCommentLength: maxIntegrationCommentLength,
       maxTeams: maxTeams,
+      maxMessageSearchLimit: maxMessageSearchLimit,
+      multiNodes: multiNodes,
       afkAge: afkAge,
       authByPassword: authByPassword,
       authByQrCode: authByQrCode,
       authBySms: authBySms,
-      iceServers: iceServers,
+      auth2fa: auth2fa,
+      oAuthServices: oAuthServices,
+      iCEServers: iCEServers,
       customServer: customServer,
       installationType: installationType,
+      installationTitle: installationTitle,
+      customAppIconName: customAppIconName,
+      appLoginBackground: appLoginBackground,
+      webLoginBackground: webLoginBackground,
       isTesting: isTesting,
       metrika: metrika,
+      amplitudeApiKey: amplitudeApiKey,
       minSearchLength: minSearchLength,
       resendTimeout: resendTimeout,
       sentryDsnJS: sentryDsnJS,
@@ -130,7 +167,7 @@ class _$FeaturesTearOff {
       firebaseDatabaseUrl: firebaseDatabaseUrl,
       firebaseProjectId: firebaseProjectId,
       firebaseStorageBucket: firebaseStorageBucket,
-      calls: calls,
+      callsVersion: callsVersion,
       mobileCalls: mobileCalls,
       callsRecord: callsRecord,
       onlyOneDevicePerCall: onlyOneDevicePerCall,
@@ -141,12 +178,17 @@ class _$FeaturesTearOff {
       singleGroupTeams: singleGroupTeams,
       wikiPages: wikiPages,
       allowAdminMute: allowAdminMute,
+      defaultWallpaper: defaultWallpaper,
+      supportEmail: supportEmail,
+      customTheme: customTheme,
       taskChecklist: taskChecklist,
       readonlyGroups: readonlyGroups,
       taskDashboard: taskDashboard,
       taskMessages: taskMessages,
       taskPublic: taskPublic,
       taskTags: taskTags,
+      calls: calls,
+      minAppVersion: minAppVersion,
     );
   }
 
@@ -182,6 +224,10 @@ mixin _$Features {
   @JsonKey(name: 'app_title')
   String get appTitle;
 
+  /// Landing page address, if any.
+  @JsonKey(name: 'landing_url')
+  String get landingUrl;
+
   /// Local applications urls.
   @JsonKey(name: 'app_schemes')
   List<String> get appSchemes;
@@ -198,13 +244,33 @@ mixin _$Features {
   @JsonKey(name: 'android_app')
   String get androidApp;
 
+  /// Link to AppStore for corporate app.
+  @JsonKey(name: 'ios_corp_app')
+  String get iOSCorpApp;
+
+  /// Link to Google Play for corporate app.
+  @JsonKey(name: 'android_corp_app')
+  String get androidCorpApp;
+
   /// Default UI theme.
   @JsonKey(name: 'theme')
   String get theme;
 
-  /// Minimal application version required for this server. Used for breaking changes.
-  @JsonKey(name: 'min_app_version')
-  String get minAppVersion;
+  /// Minimal iOS application version required for this server. Used for breaking changes.
+  @JsonKey(name: 'min_ios_version')
+  String get minIOSVersion;
+
+  /// Minimal android application version required for this server. Used for breaking changes.
+  @JsonKey(name: 'min_android_version')
+  String get minAndroidVersion;
+
+  /// Minimal iOS corp application version required for this server. Used for breaking changes.
+  @JsonKey(name: 'min_corp_ios_version')
+  String get minCorpIOSVersion;
+
+  /// Minimal android corp application version required for this server. Used for breaking changes.
+  @JsonKey(name: 'min_corp_android_version')
+  String get minCorpAndroidVersion;
 
   /// Free registration allowed.
   @JsonKey(name: 'free_registration')
@@ -242,9 +308,13 @@ mixin _$Features {
   @JsonKey(name: 'max_message_length')
   int get maxMessageLength;
 
-  /// Maximum length for project and contact's sections names.
+  /// Maximum length for contact's sections names.
   @JsonKey(name: 'max_section_length')
   int get maxSectionLength;
+
+  /// Maximum length for project.
+  @JsonKey(name: 'max_project_length')
+  int get maxProjectLength;
 
   /// Maximum length for tags.
   @JsonKey(name: 'max_tag_length')
@@ -270,6 +340,14 @@ mixin _$Features {
   @JsonKey(name: 'max_teams')
   int get maxTeams;
 
+  /// Maximum search result.
+  @JsonKey(name: 'max_message_search_limit')
+  int get maxMessageSearchLimit;
+
+  /// Multi nodes mode (federation) enabled.
+  @JsonKey(name: 'multi_nodes')
+  bool get multiNodes;
+
   /// Max inactivity seconds.
   @JsonKey(name: 'afk_age')
   int get afkAge;
@@ -286,17 +364,41 @@ mixin _$Features {
   @JsonKey(name: 'auth_by_sms')
   bool get authBySms;
 
+  /// Two-factor authentication (2FA) enabled.
+  @JsonKey(name: 'auth_2fa')
+  bool get auth2fa;
+
+  /// External services.
+  @JsonKey(name: 'oauth_services')
+  List<OAuthService> get oAuthServices;
+
   /// ICE servers for WebRTC.
   @JsonKey(name: 'ice_servers')
-  List<ICEServer> get iceServers;
+  List<ICEServer> get iCEServers;
 
-  /// True for on-premise installation.
+  /// True for premise installation.
   @JsonKey(name: 'custom_server')
   bool get customServer;
 
   /// Name of installation.
   @JsonKey(name: 'installation_type')
   String get installationType;
+
+  /// Installation title, used on login screen.
+  @JsonKey(name: 'installation_title')
+  String get installationTitle;
+
+  /// Custom application icon name, if any.
+  @JsonKey(name: 'custom_app_icon_name')
+  String get customAppIconName;
+
+  /// AppBackground image url, if any.
+  @JsonKey(name: 'app_login_background')
+  String get appLoginBackground;
+
+  /// WebBackground image url, if any.
+  @JsonKey(name: 'web_login_background')
+  String get webLoginBackground;
 
   /// Testing installation.
   @JsonKey(name: 'is_testing')
@@ -305,6 +407,10 @@ mixin _$Features {
   /// Yandex metrika counter id.
   @JsonKey(name: 'metrika')
   String get metrika;
+
+  /// Amplitude api key.
+  @JsonKey(name: 'amplitude_api_key')
+  String get amplitudeApiKey;
 
   /// Minimal chars number for starting global search.
   @JsonKey(name: 'min_search_length')
@@ -350,9 +456,9 @@ mixin _$Features {
   @JsonKey(name: 'firebase_storage_bucket')
   String get firebaseStorageBucket;
 
-  /// Calls functions enabled.
-  @JsonKey(name: 'calls')
-  bool get calls;
+  /// Calls version. 0 = disabled, 1 = audio only, 2 = audio+video.
+  @JsonKey(name: 'calls_version')
+  int get callsVersion;
 
   /// Calls functions enabled for mobile applications.
   @JsonKey(name: 'mobile_calls')
@@ -394,37 +500,60 @@ mixin _$Features {
   @JsonKey(name: 'allow_admin_mute')
   bool get allowAdminMute;
 
+  /// Default wallpaper url for mobile apps, if any.
+  @JsonKey(name: 'default_wallpaper')
+  Wallpaper get defaultWallpaper;
+
+  /// Support email.
+  @JsonKey(name: 'support_email')
+  String get supportEmail;
+
+  /// True if server has custom theme.
+  @JsonKey(name: 'custom_theme')
+  bool get customTheme;
+
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'task_checklist')
   bool get taskChecklist;
 
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'readonly_groups')
   bool get readonlyGroups;
 
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'task_dashboard')
   bool get taskDashboard;
 
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'task_messages')
   bool get taskMessages;
 
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'task_public')
   bool get taskPublic;
 
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'task_tags')
   bool get taskTags;
 
+  /// Deprecated.
+  @Deprecated('Deprecated.')
+  @JsonKey(name: 'calls')
+  bool get calls;
+
+  /// Deprecated.
+  @Deprecated('Deprecated.')
+  @JsonKey(name: 'min_app_version')
+  String get minAppVersion;
+
   Map<String, dynamic> toJson();
+  @JsonKey(ignore: true)
   $FeaturesCopyWith<Features> get copyWith;
 }
 
@@ -437,12 +566,18 @@ abstract class $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'desktop_version') String desktopVersion,
       @JsonKey(name: 'front_version') String frontVersion,
       @JsonKey(name: 'app_title') String appTitle,
+      @JsonKey(name: 'landing_url') String landingUrl,
       @JsonKey(name: 'app_schemes') List<String> appSchemes,
       @JsonKey(name: 'userver') String userver,
       @JsonKey(name: 'ios_app') String iOSApp,
       @JsonKey(name: 'android_app') String androidApp,
+      @JsonKey(name: 'ios_corp_app') String iOSCorpApp,
+      @JsonKey(name: 'android_corp_app') String androidCorpApp,
       @JsonKey(name: 'theme') String theme,
-      @JsonKey(name: 'min_app_version') String minAppVersion,
+      @JsonKey(name: 'min_ios_version') String minIOSVersion,
+      @JsonKey(name: 'min_android_version') String minAndroidVersion,
+      @JsonKey(name: 'min_corp_ios_version') String minCorpIOSVersion,
+      @JsonKey(name: 'min_corp_android_version') String minCorpAndroidVersion,
       @JsonKey(name: 'free_registration') bool freeRegistration,
       @JsonKey(name: 'max_upload_mb') int maxUploadMb,
       @JsonKey(name: 'max_linked_messages') int maxLinkedMessages,
@@ -453,21 +588,31 @@ abstract class $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'max_mood_length') int maxMoodLength,
       @JsonKey(name: 'max_message_length') int maxMessageLength,
       @JsonKey(name: 'max_section_length') int maxSectionLength,
+      @JsonKey(name: 'max_project_length') int maxProjectLength,
       @JsonKey(name: 'max_tag_length') int maxTagLength,
       @JsonKey(name: 'max_task_title_length') int maxTaskTitleLength,
       @JsonKey(name: 'max_color_rule_description_length') int maxColorRuleDescriptionLength,
       @JsonKey(name: 'max_url_length') int maxUrlLength,
       @JsonKey(name: 'max_integration_comment_length') int maxIntegrationCommentLength,
       @JsonKey(name: 'max_teams') int maxTeams,
+      @JsonKey(name: 'max_message_search_limit') int maxMessageSearchLimit,
+      @JsonKey(name: 'multi_nodes') bool multiNodes,
       @JsonKey(name: 'afk_age') int afkAge,
       @JsonKey(name: 'auth_by_password') bool authByPassword,
       @JsonKey(name: 'auth_by_qr_code') bool authByQrCode,
       @JsonKey(name: 'auth_by_sms') bool authBySms,
-      @JsonKey(name: 'ice_servers') List<ICEServer> iceServers,
+      @JsonKey(name: 'auth_2fa') bool auth2fa,
+      @JsonKey(name: 'oauth_services') List<OAuthService> oAuthServices,
+      @JsonKey(name: 'ice_servers') List<ICEServer> iCEServers,
       @JsonKey(name: 'custom_server') bool customServer,
       @JsonKey(name: 'installation_type') String installationType,
+      @JsonKey(name: 'installation_title') String installationTitle,
+      @JsonKey(name: 'custom_app_icon_name') String customAppIconName,
+      @JsonKey(name: 'app_login_background') String appLoginBackground,
+      @JsonKey(name: 'web_login_background') String webLoginBackground,
       @JsonKey(name: 'is_testing') bool isTesting,
       @JsonKey(name: 'metrika') String metrika,
+      @JsonKey(name: 'amplitude_api_key') String amplitudeApiKey,
       @JsonKey(name: 'min_search_length') int minSearchLength,
       @JsonKey(name: 'resend_timeout') int resendTimeout,
       @JsonKey(name: 'sentry_dsn_js') String sentryDsnJS,
@@ -479,7 +624,7 @@ abstract class $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'firebase_database_url') String firebaseDatabaseUrl,
       @JsonKey(name: 'firebase_project_id') String firebaseProjectId,
       @JsonKey(name: 'firebase_storage_bucket') String firebaseStorageBucket,
-      @JsonKey(name: 'calls') bool calls,
+      @JsonKey(name: 'calls_version') int callsVersion,
       @JsonKey(name: 'mobile_calls') bool mobileCalls,
       @JsonKey(name: 'calls_record') bool callsRecord,
       @JsonKey(name: 'only_one_device_per_call') bool onlyOneDevicePerCall,
@@ -490,14 +635,20 @@ abstract class $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'single_group_teams') bool singleGroupTeams,
       @JsonKey(name: 'wiki_pages') bool wikiPages,
       @JsonKey(name: 'allow_admin_mute') bool allowAdminMute,
-      @deprecated @JsonKey(name: 'task_checklist') bool taskChecklist,
-      @deprecated @JsonKey(name: 'readonly_groups') bool readonlyGroups,
-      @deprecated @JsonKey(name: 'task_dashboard') bool taskDashboard,
-      @deprecated @JsonKey(name: 'task_messages') bool taskMessages,
-      @deprecated @JsonKey(name: 'task_public') bool taskPublic,
-      @deprecated @JsonKey(name: 'task_tags') bool taskTags});
+      @JsonKey(name: 'default_wallpaper') Wallpaper defaultWallpaper,
+      @JsonKey(name: 'support_email') String supportEmail,
+      @JsonKey(name: 'custom_theme') bool customTheme,
+      @Deprecated('Deprecated.') @JsonKey(name: 'task_checklist') bool taskChecklist,
+      @Deprecated('Deprecated.') @JsonKey(name: 'readonly_groups') bool readonlyGroups,
+      @Deprecated('Deprecated.') @JsonKey(name: 'task_dashboard') bool taskDashboard,
+      @Deprecated('Deprecated.') @JsonKey(name: 'task_messages') bool taskMessages,
+      @Deprecated('Deprecated.') @JsonKey(name: 'task_public') bool taskPublic,
+      @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') bool taskTags,
+      @Deprecated('Deprecated.') @JsonKey(name: 'calls') bool calls,
+      @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion});
 
   $TermsCopyWith<$Res> get terms;
+  $WallpaperCopyWith<$Res> get defaultWallpaper;
 }
 
 /// @nodoc
@@ -515,12 +666,18 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     Object desktopVersion = freezed,
     Object frontVersion = freezed,
     Object appTitle = freezed,
+    Object landingUrl = freezed,
     Object appSchemes = freezed,
     Object userver = freezed,
     Object iOSApp = freezed,
     Object androidApp = freezed,
+    Object iOSCorpApp = freezed,
+    Object androidCorpApp = freezed,
     Object theme = freezed,
-    Object minAppVersion = freezed,
+    Object minIOSVersion = freezed,
+    Object minAndroidVersion = freezed,
+    Object minCorpIOSVersion = freezed,
+    Object minCorpAndroidVersion = freezed,
     Object freeRegistration = freezed,
     Object maxUploadMb = freezed,
     Object maxLinkedMessages = freezed,
@@ -531,21 +688,31 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     Object maxMoodLength = freezed,
     Object maxMessageLength = freezed,
     Object maxSectionLength = freezed,
+    Object maxProjectLength = freezed,
     Object maxTagLength = freezed,
     Object maxTaskTitleLength = freezed,
     Object maxColorRuleDescriptionLength = freezed,
     Object maxUrlLength = freezed,
     Object maxIntegrationCommentLength = freezed,
     Object maxTeams = freezed,
+    Object maxMessageSearchLimit = freezed,
+    Object multiNodes = freezed,
     Object afkAge = freezed,
     Object authByPassword = freezed,
     Object authByQrCode = freezed,
     Object authBySms = freezed,
-    Object iceServers = freezed,
+    Object auth2fa = freezed,
+    Object oAuthServices = freezed,
+    Object iCEServers = freezed,
     Object customServer = freezed,
     Object installationType = freezed,
+    Object installationTitle = freezed,
+    Object customAppIconName = freezed,
+    Object appLoginBackground = freezed,
+    Object webLoginBackground = freezed,
     Object isTesting = freezed,
     Object metrika = freezed,
+    Object amplitudeApiKey = freezed,
     Object minSearchLength = freezed,
     Object resendTimeout = freezed,
     Object sentryDsnJS = freezed,
@@ -557,7 +724,7 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     Object firebaseDatabaseUrl = freezed,
     Object firebaseProjectId = freezed,
     Object firebaseStorageBucket = freezed,
-    Object calls = freezed,
+    Object callsVersion = freezed,
     Object mobileCalls = freezed,
     Object callsRecord = freezed,
     Object onlyOneDevicePerCall = freezed,
@@ -568,12 +735,17 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     Object singleGroupTeams = freezed,
     Object wikiPages = freezed,
     Object allowAdminMute = freezed,
+    Object defaultWallpaper = freezed,
+    Object supportEmail = freezed,
+    Object customTheme = freezed,
     Object taskChecklist = freezed,
     Object readonlyGroups = freezed,
     Object taskDashboard = freezed,
     Object taskMessages = freezed,
     Object taskPublic = freezed,
     Object taskTags = freezed,
+    Object calls = freezed,
+    Object minAppVersion = freezed,
   }) {
     return _then(_value.copyWith(
       host: host == freezed ? _value.host : host as String,
@@ -581,12 +753,19 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
       desktopVersion: desktopVersion == freezed ? _value.desktopVersion : desktopVersion as String,
       frontVersion: frontVersion == freezed ? _value.frontVersion : frontVersion as String,
       appTitle: appTitle == freezed ? _value.appTitle : appTitle as String,
+      landingUrl: landingUrl == freezed ? _value.landingUrl : landingUrl as String,
       appSchemes: appSchemes == freezed ? _value.appSchemes : appSchemes as List<String>,
       userver: userver == freezed ? _value.userver : userver as String,
       iOSApp: iOSApp == freezed ? _value.iOSApp : iOSApp as String,
       androidApp: androidApp == freezed ? _value.androidApp : androidApp as String,
+      iOSCorpApp: iOSCorpApp == freezed ? _value.iOSCorpApp : iOSCorpApp as String,
+      androidCorpApp: androidCorpApp == freezed ? _value.androidCorpApp : androidCorpApp as String,
       theme: theme == freezed ? _value.theme : theme as String,
-      minAppVersion: minAppVersion == freezed ? _value.minAppVersion : minAppVersion as String,
+      minIOSVersion: minIOSVersion == freezed ? _value.minIOSVersion : minIOSVersion as String,
+      minAndroidVersion: minAndroidVersion == freezed ? _value.minAndroidVersion : minAndroidVersion as String,
+      minCorpIOSVersion: minCorpIOSVersion == freezed ? _value.minCorpIOSVersion : minCorpIOSVersion as String,
+      minCorpAndroidVersion:
+          minCorpAndroidVersion == freezed ? _value.minCorpAndroidVersion : minCorpAndroidVersion as String,
       freeRegistration: freeRegistration == freezed ? _value.freeRegistration : freeRegistration as bool,
       maxUploadMb: maxUploadMb == freezed ? _value.maxUploadMb : maxUploadMb as int,
       maxLinkedMessages: maxLinkedMessages == freezed ? _value.maxLinkedMessages : maxLinkedMessages as int,
@@ -598,6 +777,7 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
       maxMoodLength: maxMoodLength == freezed ? _value.maxMoodLength : maxMoodLength as int,
       maxMessageLength: maxMessageLength == freezed ? _value.maxMessageLength : maxMessageLength as int,
       maxSectionLength: maxSectionLength == freezed ? _value.maxSectionLength : maxSectionLength as int,
+      maxProjectLength: maxProjectLength == freezed ? _value.maxProjectLength : maxProjectLength as int,
       maxTagLength: maxTagLength == freezed ? _value.maxTagLength : maxTagLength as int,
       maxTaskTitleLength: maxTaskTitleLength == freezed ? _value.maxTaskTitleLength : maxTaskTitleLength as int,
       maxColorRuleDescriptionLength: maxColorRuleDescriptionLength == freezed
@@ -608,15 +788,25 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
           ? _value.maxIntegrationCommentLength
           : maxIntegrationCommentLength as int,
       maxTeams: maxTeams == freezed ? _value.maxTeams : maxTeams as int,
+      maxMessageSearchLimit:
+          maxMessageSearchLimit == freezed ? _value.maxMessageSearchLimit : maxMessageSearchLimit as int,
+      multiNodes: multiNodes == freezed ? _value.multiNodes : multiNodes as bool,
       afkAge: afkAge == freezed ? _value.afkAge : afkAge as int,
       authByPassword: authByPassword == freezed ? _value.authByPassword : authByPassword as bool,
       authByQrCode: authByQrCode == freezed ? _value.authByQrCode : authByQrCode as bool,
       authBySms: authBySms == freezed ? _value.authBySms : authBySms as bool,
-      iceServers: iceServers == freezed ? _value.iceServers : iceServers as List<ICEServer>,
+      auth2fa: auth2fa == freezed ? _value.auth2fa : auth2fa as bool,
+      oAuthServices: oAuthServices == freezed ? _value.oAuthServices : oAuthServices as List<OAuthService>,
+      iCEServers: iCEServers == freezed ? _value.iCEServers : iCEServers as List<ICEServer>,
       customServer: customServer == freezed ? _value.customServer : customServer as bool,
       installationType: installationType == freezed ? _value.installationType : installationType as String,
+      installationTitle: installationTitle == freezed ? _value.installationTitle : installationTitle as String,
+      customAppIconName: customAppIconName == freezed ? _value.customAppIconName : customAppIconName as String,
+      appLoginBackground: appLoginBackground == freezed ? _value.appLoginBackground : appLoginBackground as String,
+      webLoginBackground: webLoginBackground == freezed ? _value.webLoginBackground : webLoginBackground as String,
       isTesting: isTesting == freezed ? _value.isTesting : isTesting as bool,
       metrika: metrika == freezed ? _value.metrika : metrika as String,
+      amplitudeApiKey: amplitudeApiKey == freezed ? _value.amplitudeApiKey : amplitudeApiKey as String,
       minSearchLength: minSearchLength == freezed ? _value.minSearchLength : minSearchLength as int,
       resendTimeout: resendTimeout == freezed ? _value.resendTimeout : resendTimeout as int,
       sentryDsnJS: sentryDsnJS == freezed ? _value.sentryDsnJS : sentryDsnJS as String,
@@ -629,7 +819,7 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
       firebaseProjectId: firebaseProjectId == freezed ? _value.firebaseProjectId : firebaseProjectId as String,
       firebaseStorageBucket:
           firebaseStorageBucket == freezed ? _value.firebaseStorageBucket : firebaseStorageBucket as String,
-      calls: calls == freezed ? _value.calls : calls as bool,
+      callsVersion: callsVersion == freezed ? _value.callsVersion : callsVersion as int,
       mobileCalls: mobileCalls == freezed ? _value.mobileCalls : mobileCalls as bool,
       callsRecord: callsRecord == freezed ? _value.callsRecord : callsRecord as bool,
       onlyOneDevicePerCall:
@@ -642,12 +832,17 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
       singleGroupTeams: singleGroupTeams == freezed ? _value.singleGroupTeams : singleGroupTeams as bool,
       wikiPages: wikiPages == freezed ? _value.wikiPages : wikiPages as bool,
       allowAdminMute: allowAdminMute == freezed ? _value.allowAdminMute : allowAdminMute as bool,
+      defaultWallpaper: defaultWallpaper == freezed ? _value.defaultWallpaper : defaultWallpaper as Wallpaper,
+      supportEmail: supportEmail == freezed ? _value.supportEmail : supportEmail as String,
+      customTheme: customTheme == freezed ? _value.customTheme : customTheme as bool,
       taskChecklist: taskChecklist == freezed ? _value.taskChecklist : taskChecklist as bool,
       readonlyGroups: readonlyGroups == freezed ? _value.readonlyGroups : readonlyGroups as bool,
       taskDashboard: taskDashboard == freezed ? _value.taskDashboard : taskDashboard as bool,
       taskMessages: taskMessages == freezed ? _value.taskMessages : taskMessages as bool,
       taskPublic: taskPublic == freezed ? _value.taskPublic : taskPublic as bool,
       taskTags: taskTags == freezed ? _value.taskTags : taskTags as bool,
+      calls: calls == freezed ? _value.calls : calls as bool,
+      minAppVersion: minAppVersion == freezed ? _value.minAppVersion : minAppVersion as String,
     ));
   }
 
@@ -658,6 +853,16 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     }
     return $TermsCopyWith<$Res>(_value.terms, (value) {
       return _then(_value.copyWith(terms: value));
+    });
+  }
+
+  @override
+  $WallpaperCopyWith<$Res> get defaultWallpaper {
+    if (_value.defaultWallpaper == null) {
+      return null;
+    }
+    return $WallpaperCopyWith<$Res>(_value.defaultWallpaper, (value) {
+      return _then(_value.copyWith(defaultWallpaper: value));
     });
   }
 }
@@ -672,12 +877,18 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'desktop_version') String desktopVersion,
       @JsonKey(name: 'front_version') String frontVersion,
       @JsonKey(name: 'app_title') String appTitle,
+      @JsonKey(name: 'landing_url') String landingUrl,
       @JsonKey(name: 'app_schemes') List<String> appSchemes,
       @JsonKey(name: 'userver') String userver,
       @JsonKey(name: 'ios_app') String iOSApp,
       @JsonKey(name: 'android_app') String androidApp,
+      @JsonKey(name: 'ios_corp_app') String iOSCorpApp,
+      @JsonKey(name: 'android_corp_app') String androidCorpApp,
       @JsonKey(name: 'theme') String theme,
-      @JsonKey(name: 'min_app_version') String minAppVersion,
+      @JsonKey(name: 'min_ios_version') String minIOSVersion,
+      @JsonKey(name: 'min_android_version') String minAndroidVersion,
+      @JsonKey(name: 'min_corp_ios_version') String minCorpIOSVersion,
+      @JsonKey(name: 'min_corp_android_version') String minCorpAndroidVersion,
       @JsonKey(name: 'free_registration') bool freeRegistration,
       @JsonKey(name: 'max_upload_mb') int maxUploadMb,
       @JsonKey(name: 'max_linked_messages') int maxLinkedMessages,
@@ -688,21 +899,31 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'max_mood_length') int maxMoodLength,
       @JsonKey(name: 'max_message_length') int maxMessageLength,
       @JsonKey(name: 'max_section_length') int maxSectionLength,
+      @JsonKey(name: 'max_project_length') int maxProjectLength,
       @JsonKey(name: 'max_tag_length') int maxTagLength,
       @JsonKey(name: 'max_task_title_length') int maxTaskTitleLength,
       @JsonKey(name: 'max_color_rule_description_length') int maxColorRuleDescriptionLength,
       @JsonKey(name: 'max_url_length') int maxUrlLength,
       @JsonKey(name: 'max_integration_comment_length') int maxIntegrationCommentLength,
       @JsonKey(name: 'max_teams') int maxTeams,
+      @JsonKey(name: 'max_message_search_limit') int maxMessageSearchLimit,
+      @JsonKey(name: 'multi_nodes') bool multiNodes,
       @JsonKey(name: 'afk_age') int afkAge,
       @JsonKey(name: 'auth_by_password') bool authByPassword,
       @JsonKey(name: 'auth_by_qr_code') bool authByQrCode,
       @JsonKey(name: 'auth_by_sms') bool authBySms,
-      @JsonKey(name: 'ice_servers') List<ICEServer> iceServers,
+      @JsonKey(name: 'auth_2fa') bool auth2fa,
+      @JsonKey(name: 'oauth_services') List<OAuthService> oAuthServices,
+      @JsonKey(name: 'ice_servers') List<ICEServer> iCEServers,
       @JsonKey(name: 'custom_server') bool customServer,
       @JsonKey(name: 'installation_type') String installationType,
+      @JsonKey(name: 'installation_title') String installationTitle,
+      @JsonKey(name: 'custom_app_icon_name') String customAppIconName,
+      @JsonKey(name: 'app_login_background') String appLoginBackground,
+      @JsonKey(name: 'web_login_background') String webLoginBackground,
       @JsonKey(name: 'is_testing') bool isTesting,
       @JsonKey(name: 'metrika') String metrika,
+      @JsonKey(name: 'amplitude_api_key') String amplitudeApiKey,
       @JsonKey(name: 'min_search_length') int minSearchLength,
       @JsonKey(name: 'resend_timeout') int resendTimeout,
       @JsonKey(name: 'sentry_dsn_js') String sentryDsnJS,
@@ -714,7 +935,7 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'firebase_database_url') String firebaseDatabaseUrl,
       @JsonKey(name: 'firebase_project_id') String firebaseProjectId,
       @JsonKey(name: 'firebase_storage_bucket') String firebaseStorageBucket,
-      @JsonKey(name: 'calls') bool calls,
+      @JsonKey(name: 'calls_version') int callsVersion,
       @JsonKey(name: 'mobile_calls') bool mobileCalls,
       @JsonKey(name: 'calls_record') bool callsRecord,
       @JsonKey(name: 'only_one_device_per_call') bool onlyOneDevicePerCall,
@@ -725,15 +946,22 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'single_group_teams') bool singleGroupTeams,
       @JsonKey(name: 'wiki_pages') bool wikiPages,
       @JsonKey(name: 'allow_admin_mute') bool allowAdminMute,
-      @deprecated @JsonKey(name: 'task_checklist') bool taskChecklist,
-      @deprecated @JsonKey(name: 'readonly_groups') bool readonlyGroups,
-      @deprecated @JsonKey(name: 'task_dashboard') bool taskDashboard,
-      @deprecated @JsonKey(name: 'task_messages') bool taskMessages,
-      @deprecated @JsonKey(name: 'task_public') bool taskPublic,
-      @deprecated @JsonKey(name: 'task_tags') bool taskTags});
+      @JsonKey(name: 'default_wallpaper') Wallpaper defaultWallpaper,
+      @JsonKey(name: 'support_email') String supportEmail,
+      @JsonKey(name: 'custom_theme') bool customTheme,
+      @Deprecated('Deprecated.') @JsonKey(name: 'task_checklist') bool taskChecklist,
+      @Deprecated('Deprecated.') @JsonKey(name: 'readonly_groups') bool readonlyGroups,
+      @Deprecated('Deprecated.') @JsonKey(name: 'task_dashboard') bool taskDashboard,
+      @Deprecated('Deprecated.') @JsonKey(name: 'task_messages') bool taskMessages,
+      @Deprecated('Deprecated.') @JsonKey(name: 'task_public') bool taskPublic,
+      @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') bool taskTags,
+      @Deprecated('Deprecated.') @JsonKey(name: 'calls') bool calls,
+      @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion});
 
   @override
   $TermsCopyWith<$Res> get terms;
+  @override
+  $WallpaperCopyWith<$Res> get defaultWallpaper;
 }
 
 /// @nodoc
@@ -751,12 +979,18 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
     Object desktopVersion = freezed,
     Object frontVersion = freezed,
     Object appTitle = freezed,
+    Object landingUrl = freezed,
     Object appSchemes = freezed,
     Object userver = freezed,
     Object iOSApp = freezed,
     Object androidApp = freezed,
+    Object iOSCorpApp = freezed,
+    Object androidCorpApp = freezed,
     Object theme = freezed,
-    Object minAppVersion = freezed,
+    Object minIOSVersion = freezed,
+    Object minAndroidVersion = freezed,
+    Object minCorpIOSVersion = freezed,
+    Object minCorpAndroidVersion = freezed,
     Object freeRegistration = freezed,
     Object maxUploadMb = freezed,
     Object maxLinkedMessages = freezed,
@@ -767,21 +1001,31 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
     Object maxMoodLength = freezed,
     Object maxMessageLength = freezed,
     Object maxSectionLength = freezed,
+    Object maxProjectLength = freezed,
     Object maxTagLength = freezed,
     Object maxTaskTitleLength = freezed,
     Object maxColorRuleDescriptionLength = freezed,
     Object maxUrlLength = freezed,
     Object maxIntegrationCommentLength = freezed,
     Object maxTeams = freezed,
+    Object maxMessageSearchLimit = freezed,
+    Object multiNodes = freezed,
     Object afkAge = freezed,
     Object authByPassword = freezed,
     Object authByQrCode = freezed,
     Object authBySms = freezed,
-    Object iceServers = freezed,
+    Object auth2fa = freezed,
+    Object oAuthServices = freezed,
+    Object iCEServers = freezed,
     Object customServer = freezed,
     Object installationType = freezed,
+    Object installationTitle = freezed,
+    Object customAppIconName = freezed,
+    Object appLoginBackground = freezed,
+    Object webLoginBackground = freezed,
     Object isTesting = freezed,
     Object metrika = freezed,
+    Object amplitudeApiKey = freezed,
     Object minSearchLength = freezed,
     Object resendTimeout = freezed,
     Object sentryDsnJS = freezed,
@@ -793,7 +1037,7 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
     Object firebaseDatabaseUrl = freezed,
     Object firebaseProjectId = freezed,
     Object firebaseStorageBucket = freezed,
-    Object calls = freezed,
+    Object callsVersion = freezed,
     Object mobileCalls = freezed,
     Object callsRecord = freezed,
     Object onlyOneDevicePerCall = freezed,
@@ -804,12 +1048,17 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
     Object singleGroupTeams = freezed,
     Object wikiPages = freezed,
     Object allowAdminMute = freezed,
+    Object defaultWallpaper = freezed,
+    Object supportEmail = freezed,
+    Object customTheme = freezed,
     Object taskChecklist = freezed,
     Object readonlyGroups = freezed,
     Object taskDashboard = freezed,
     Object taskMessages = freezed,
     Object taskPublic = freezed,
     Object taskTags = freezed,
+    Object calls = freezed,
+    Object minAppVersion = freezed,
   }) {
     return _then(_Features(
       host: host == freezed ? _value.host : host as String,
@@ -817,12 +1066,19 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
       desktopVersion: desktopVersion == freezed ? _value.desktopVersion : desktopVersion as String,
       frontVersion: frontVersion == freezed ? _value.frontVersion : frontVersion as String,
       appTitle: appTitle == freezed ? _value.appTitle : appTitle as String,
+      landingUrl: landingUrl == freezed ? _value.landingUrl : landingUrl as String,
       appSchemes: appSchemes == freezed ? _value.appSchemes : appSchemes as List<String>,
       userver: userver == freezed ? _value.userver : userver as String,
       iOSApp: iOSApp == freezed ? _value.iOSApp : iOSApp as String,
       androidApp: androidApp == freezed ? _value.androidApp : androidApp as String,
+      iOSCorpApp: iOSCorpApp == freezed ? _value.iOSCorpApp : iOSCorpApp as String,
+      androidCorpApp: androidCorpApp == freezed ? _value.androidCorpApp : androidCorpApp as String,
       theme: theme == freezed ? _value.theme : theme as String,
-      minAppVersion: minAppVersion == freezed ? _value.minAppVersion : minAppVersion as String,
+      minIOSVersion: minIOSVersion == freezed ? _value.minIOSVersion : minIOSVersion as String,
+      minAndroidVersion: minAndroidVersion == freezed ? _value.minAndroidVersion : minAndroidVersion as String,
+      minCorpIOSVersion: minCorpIOSVersion == freezed ? _value.minCorpIOSVersion : minCorpIOSVersion as String,
+      minCorpAndroidVersion:
+          minCorpAndroidVersion == freezed ? _value.minCorpAndroidVersion : minCorpAndroidVersion as String,
       freeRegistration: freeRegistration == freezed ? _value.freeRegistration : freeRegistration as bool,
       maxUploadMb: maxUploadMb == freezed ? _value.maxUploadMb : maxUploadMb as int,
       maxLinkedMessages: maxLinkedMessages == freezed ? _value.maxLinkedMessages : maxLinkedMessages as int,
@@ -834,6 +1090,7 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
       maxMoodLength: maxMoodLength == freezed ? _value.maxMoodLength : maxMoodLength as int,
       maxMessageLength: maxMessageLength == freezed ? _value.maxMessageLength : maxMessageLength as int,
       maxSectionLength: maxSectionLength == freezed ? _value.maxSectionLength : maxSectionLength as int,
+      maxProjectLength: maxProjectLength == freezed ? _value.maxProjectLength : maxProjectLength as int,
       maxTagLength: maxTagLength == freezed ? _value.maxTagLength : maxTagLength as int,
       maxTaskTitleLength: maxTaskTitleLength == freezed ? _value.maxTaskTitleLength : maxTaskTitleLength as int,
       maxColorRuleDescriptionLength: maxColorRuleDescriptionLength == freezed
@@ -844,15 +1101,25 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
           ? _value.maxIntegrationCommentLength
           : maxIntegrationCommentLength as int,
       maxTeams: maxTeams == freezed ? _value.maxTeams : maxTeams as int,
+      maxMessageSearchLimit:
+          maxMessageSearchLimit == freezed ? _value.maxMessageSearchLimit : maxMessageSearchLimit as int,
+      multiNodes: multiNodes == freezed ? _value.multiNodes : multiNodes as bool,
       afkAge: afkAge == freezed ? _value.afkAge : afkAge as int,
       authByPassword: authByPassword == freezed ? _value.authByPassword : authByPassword as bool,
       authByQrCode: authByQrCode == freezed ? _value.authByQrCode : authByQrCode as bool,
       authBySms: authBySms == freezed ? _value.authBySms : authBySms as bool,
-      iceServers: iceServers == freezed ? _value.iceServers : iceServers as List<ICEServer>,
+      auth2fa: auth2fa == freezed ? _value.auth2fa : auth2fa as bool,
+      oAuthServices: oAuthServices == freezed ? _value.oAuthServices : oAuthServices as List<OAuthService>,
+      iCEServers: iCEServers == freezed ? _value.iCEServers : iCEServers as List<ICEServer>,
       customServer: customServer == freezed ? _value.customServer : customServer as bool,
       installationType: installationType == freezed ? _value.installationType : installationType as String,
+      installationTitle: installationTitle == freezed ? _value.installationTitle : installationTitle as String,
+      customAppIconName: customAppIconName == freezed ? _value.customAppIconName : customAppIconName as String,
+      appLoginBackground: appLoginBackground == freezed ? _value.appLoginBackground : appLoginBackground as String,
+      webLoginBackground: webLoginBackground == freezed ? _value.webLoginBackground : webLoginBackground as String,
       isTesting: isTesting == freezed ? _value.isTesting : isTesting as bool,
       metrika: metrika == freezed ? _value.metrika : metrika as String,
+      amplitudeApiKey: amplitudeApiKey == freezed ? _value.amplitudeApiKey : amplitudeApiKey as String,
       minSearchLength: minSearchLength == freezed ? _value.minSearchLength : minSearchLength as int,
       resendTimeout: resendTimeout == freezed ? _value.resendTimeout : resendTimeout as int,
       sentryDsnJS: sentryDsnJS == freezed ? _value.sentryDsnJS : sentryDsnJS as String,
@@ -865,7 +1132,7 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
       firebaseProjectId: firebaseProjectId == freezed ? _value.firebaseProjectId : firebaseProjectId as String,
       firebaseStorageBucket:
           firebaseStorageBucket == freezed ? _value.firebaseStorageBucket : firebaseStorageBucket as String,
-      calls: calls == freezed ? _value.calls : calls as bool,
+      callsVersion: callsVersion == freezed ? _value.callsVersion : callsVersion as int,
       mobileCalls: mobileCalls == freezed ? _value.mobileCalls : mobileCalls as bool,
       callsRecord: callsRecord == freezed ? _value.callsRecord : callsRecord as bool,
       onlyOneDevicePerCall:
@@ -878,12 +1145,17 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
       singleGroupTeams: singleGroupTeams == freezed ? _value.singleGroupTeams : singleGroupTeams as bool,
       wikiPages: wikiPages == freezed ? _value.wikiPages : wikiPages as bool,
       allowAdminMute: allowAdminMute == freezed ? _value.allowAdminMute : allowAdminMute as bool,
+      defaultWallpaper: defaultWallpaper == freezed ? _value.defaultWallpaper : defaultWallpaper as Wallpaper,
+      supportEmail: supportEmail == freezed ? _value.supportEmail : supportEmail as String,
+      customTheme: customTheme == freezed ? _value.customTheme : customTheme as bool,
       taskChecklist: taskChecklist == freezed ? _value.taskChecklist : taskChecklist as bool,
       readonlyGroups: readonlyGroups == freezed ? _value.readonlyGroups : readonlyGroups as bool,
       taskDashboard: taskDashboard == freezed ? _value.taskDashboard : taskDashboard as bool,
       taskMessages: taskMessages == freezed ? _value.taskMessages : taskMessages as bool,
       taskPublic: taskPublic == freezed ? _value.taskPublic : taskPublic as bool,
       taskTags: taskTags == freezed ? _value.taskTags : taskTags as bool,
+      calls: calls == freezed ? _value.calls : calls as bool,
+      minAppVersion: minAppVersion == freezed ? _value.minAppVersion : minAppVersion as String,
     ));
   }
 }
@@ -898,12 +1170,18 @@ class _$_Features implements _Features {
       @required @JsonKey(name: 'desktop_version') this.desktopVersion,
       @required @JsonKey(name: 'front_version') this.frontVersion,
       @required @JsonKey(name: 'app_title') this.appTitle,
+      @JsonKey(name: 'landing_url') this.landingUrl,
       @required @JsonKey(name: 'app_schemes') this.appSchemes,
       @required @JsonKey(name: 'userver') this.userver,
       @required @JsonKey(name: 'ios_app') this.iOSApp,
       @required @JsonKey(name: 'android_app') this.androidApp,
+      @required @JsonKey(name: 'ios_corp_app') this.iOSCorpApp,
+      @required @JsonKey(name: 'android_corp_app') this.androidCorpApp,
       @required @JsonKey(name: 'theme') this.theme,
-      @required @JsonKey(name: 'min_app_version') this.minAppVersion,
+      @required @JsonKey(name: 'min_ios_version') this.minIOSVersion,
+      @required @JsonKey(name: 'min_android_version') this.minAndroidVersion,
+      @required @JsonKey(name: 'min_corp_ios_version') this.minCorpIOSVersion,
+      @required @JsonKey(name: 'min_corp_android_version') this.minCorpAndroidVersion,
       @required @JsonKey(name: 'free_registration') this.freeRegistration,
       @required @JsonKey(name: 'max_upload_mb') this.maxUploadMb,
       @required @JsonKey(name: 'max_linked_messages') this.maxLinkedMessages,
@@ -914,21 +1192,31 @@ class _$_Features implements _Features {
       @required @JsonKey(name: 'max_mood_length') this.maxMoodLength,
       @required @JsonKey(name: 'max_message_length') this.maxMessageLength,
       @required @JsonKey(name: 'max_section_length') this.maxSectionLength,
+      @required @JsonKey(name: 'max_project_length') this.maxProjectLength,
       @required @JsonKey(name: 'max_tag_length') this.maxTagLength,
       @required @JsonKey(name: 'max_task_title_length') this.maxTaskTitleLength,
       @required @JsonKey(name: 'max_color_rule_description_length') this.maxColorRuleDescriptionLength,
       @required @JsonKey(name: 'max_url_length') this.maxUrlLength,
       @required @JsonKey(name: 'max_integration_comment_length') this.maxIntegrationCommentLength,
       @required @JsonKey(name: 'max_teams') this.maxTeams,
+      @required @JsonKey(name: 'max_message_search_limit') this.maxMessageSearchLimit,
+      @JsonKey(name: 'multi_nodes') this.multiNodes,
       @required @JsonKey(name: 'afk_age') this.afkAge,
       @JsonKey(name: 'auth_by_password') this.authByPassword,
       @JsonKey(name: 'auth_by_qr_code') this.authByQrCode,
       @JsonKey(name: 'auth_by_sms') this.authBySms,
-      @required @JsonKey(name: 'ice_servers') this.iceServers,
+      @JsonKey(name: 'auth_2fa') this.auth2fa,
+      @JsonKey(name: 'oauth_services') this.oAuthServices,
+      @required @JsonKey(name: 'ice_servers') this.iCEServers,
       @required @JsonKey(name: 'custom_server') this.customServer,
       @required @JsonKey(name: 'installation_type') this.installationType,
+      @JsonKey(name: 'installation_title') this.installationTitle,
+      @JsonKey(name: 'custom_app_icon_name') this.customAppIconName,
+      @JsonKey(name: 'app_login_background') this.appLoginBackground,
+      @JsonKey(name: 'web_login_background') this.webLoginBackground,
       @required @JsonKey(name: 'is_testing') this.isTesting,
       @required @JsonKey(name: 'metrika') this.metrika,
+      @JsonKey(name: 'amplitude_api_key') this.amplitudeApiKey,
       @required @JsonKey(name: 'min_search_length') this.minSearchLength,
       @required @JsonKey(name: 'resend_timeout') this.resendTimeout,
       @required @JsonKey(name: 'sentry_dsn_js') this.sentryDsnJS,
@@ -940,7 +1228,7 @@ class _$_Features implements _Features {
       @required @JsonKey(name: 'firebase_database_url') this.firebaseDatabaseUrl,
       @required @JsonKey(name: 'firebase_project_id') this.firebaseProjectId,
       @required @JsonKey(name: 'firebase_storage_bucket') this.firebaseStorageBucket,
-      @required @JsonKey(name: 'calls') this.calls,
+      @required @JsonKey(name: 'calls_version') this.callsVersion,
       @required @JsonKey(name: 'mobile_calls') this.mobileCalls,
       @required @JsonKey(name: 'calls_record') this.callsRecord,
       @JsonKey(name: 'only_one_device_per_call') this.onlyOneDevicePerCall,
@@ -951,12 +1239,17 @@ class _$_Features implements _Features {
       @required @JsonKey(name: 'single_group_teams') this.singleGroupTeams,
       @required @JsonKey(name: 'wiki_pages') this.wikiPages,
       @JsonKey(name: 'allow_admin_mute') this.allowAdminMute,
-      @required @deprecated @JsonKey(name: 'task_checklist') this.taskChecklist,
-      @required @deprecated @JsonKey(name: 'readonly_groups') this.readonlyGroups,
-      @required @deprecated @JsonKey(name: 'task_dashboard') this.taskDashboard,
-      @required @deprecated @JsonKey(name: 'task_messages') this.taskMessages,
-      @required @deprecated @JsonKey(name: 'task_public') this.taskPublic,
-      @required @deprecated @JsonKey(name: 'task_tags') this.taskTags})
+      @JsonKey(name: 'default_wallpaper') this.defaultWallpaper,
+      @required @JsonKey(name: 'support_email') this.supportEmail,
+      @required @JsonKey(name: 'custom_theme') this.customTheme,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_checklist') this.taskChecklist,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'readonly_groups') this.readonlyGroups,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_dashboard') this.taskDashboard,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_messages') this.taskMessages,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_public') this.taskPublic,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') this.taskTags,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'calls') this.calls,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') this.minAppVersion})
       : assert(host != null),
         assert(build != null),
         assert(desktopVersion != null),
@@ -966,8 +1259,13 @@ class _$_Features implements _Features {
         assert(userver != null),
         assert(iOSApp != null),
         assert(androidApp != null),
+        assert(iOSCorpApp != null),
+        assert(androidCorpApp != null),
         assert(theme != null),
-        assert(minAppVersion != null),
+        assert(minIOSVersion != null),
+        assert(minAndroidVersion != null),
+        assert(minCorpIOSVersion != null),
+        assert(minCorpAndroidVersion != null),
         assert(freeRegistration != null),
         assert(maxUploadMb != null),
         assert(maxLinkedMessages != null),
@@ -978,14 +1276,16 @@ class _$_Features implements _Features {
         assert(maxMoodLength != null),
         assert(maxMessageLength != null),
         assert(maxSectionLength != null),
+        assert(maxProjectLength != null),
         assert(maxTagLength != null),
         assert(maxTaskTitleLength != null),
         assert(maxColorRuleDescriptionLength != null),
         assert(maxUrlLength != null),
         assert(maxIntegrationCommentLength != null),
         assert(maxTeams != null),
+        assert(maxMessageSearchLimit != null),
         assert(afkAge != null),
-        assert(iceServers != null),
+        assert(iCEServers != null),
         assert(customServer != null),
         assert(installationType != null),
         assert(isTesting != null),
@@ -1001,7 +1301,7 @@ class _$_Features implements _Features {
         assert(firebaseDatabaseUrl != null),
         assert(firebaseProjectId != null),
         assert(firebaseStorageBucket != null),
-        assert(calls != null),
+        assert(callsVersion != null),
         assert(mobileCalls != null),
         assert(callsRecord != null),
         assert(safariPushId != null),
@@ -1009,12 +1309,16 @@ class _$_Features implements _Features {
         assert(terms != null),
         assert(singleGroupTeams != null),
         assert(wikiPages != null),
+        assert(supportEmail != null),
+        assert(customTheme != null),
         assert(taskChecklist != null),
         assert(readonlyGroups != null),
         assert(taskDashboard != null),
         assert(taskMessages != null),
         assert(taskPublic != null),
-        assert(taskTags != null);
+        assert(taskTags != null),
+        assert(calls != null),
+        assert(minAppVersion != null);
 
   factory _$_Features.fromJson(Map<String, dynamic> json) => _$_$_FeaturesFromJson(json);
 
@@ -1045,6 +1349,11 @@ class _$_Features implements _Features {
   final String appTitle;
   @override
 
+  /// Landing page address, if any.
+  @JsonKey(name: 'landing_url')
+  final String landingUrl;
+  @override
+
   /// Local applications urls.
   @JsonKey(name: 'app_schemes')
   final List<String> appSchemes;
@@ -1065,14 +1374,39 @@ class _$_Features implements _Features {
   final String androidApp;
   @override
 
+  /// Link to AppStore for corporate app.
+  @JsonKey(name: 'ios_corp_app')
+  final String iOSCorpApp;
+  @override
+
+  /// Link to Google Play for corporate app.
+  @JsonKey(name: 'android_corp_app')
+  final String androidCorpApp;
+  @override
+
   /// Default UI theme.
   @JsonKey(name: 'theme')
   final String theme;
   @override
 
-  /// Minimal application version required for this server. Used for breaking changes.
-  @JsonKey(name: 'min_app_version')
-  final String minAppVersion;
+  /// Minimal iOS application version required for this server. Used for breaking changes.
+  @JsonKey(name: 'min_ios_version')
+  final String minIOSVersion;
+  @override
+
+  /// Minimal android application version required for this server. Used for breaking changes.
+  @JsonKey(name: 'min_android_version')
+  final String minAndroidVersion;
+  @override
+
+  /// Minimal iOS corp application version required for this server. Used for breaking changes.
+  @JsonKey(name: 'min_corp_ios_version')
+  final String minCorpIOSVersion;
+  @override
+
+  /// Minimal android corp application version required for this server. Used for breaking changes.
+  @JsonKey(name: 'min_corp_android_version')
+  final String minCorpAndroidVersion;
   @override
 
   /// Free registration allowed.
@@ -1120,9 +1454,14 @@ class _$_Features implements _Features {
   final int maxMessageLength;
   @override
 
-  /// Maximum length for project and contact's sections names.
+  /// Maximum length for contact's sections names.
   @JsonKey(name: 'max_section_length')
   final int maxSectionLength;
+  @override
+
+  /// Maximum length for project.
+  @JsonKey(name: 'max_project_length')
+  final int maxProjectLength;
   @override
 
   /// Maximum length for tags.
@@ -1155,6 +1494,16 @@ class _$_Features implements _Features {
   final int maxTeams;
   @override
 
+  /// Maximum search result.
+  @JsonKey(name: 'max_message_search_limit')
+  final int maxMessageSearchLimit;
+  @override
+
+  /// Multi nodes mode (federation) enabled.
+  @JsonKey(name: 'multi_nodes')
+  final bool multiNodes;
+  @override
+
   /// Max inactivity seconds.
   @JsonKey(name: 'afk_age')
   final int afkAge;
@@ -1175,12 +1524,22 @@ class _$_Features implements _Features {
   final bool authBySms;
   @override
 
-  /// ICE servers for WebRTC.
-  @JsonKey(name: 'ice_servers')
-  final List<ICEServer> iceServers;
+  /// Two-factor authentication (2FA) enabled.
+  @JsonKey(name: 'auth_2fa')
+  final bool auth2fa;
   @override
 
-  /// True for on-premise installation.
+  /// External services.
+  @JsonKey(name: 'oauth_services')
+  final List<OAuthService> oAuthServices;
+  @override
+
+  /// ICE servers for WebRTC.
+  @JsonKey(name: 'ice_servers')
+  final List<ICEServer> iCEServers;
+  @override
+
+  /// True for premise installation.
   @JsonKey(name: 'custom_server')
   final bool customServer;
   @override
@@ -1188,6 +1547,26 @@ class _$_Features implements _Features {
   /// Name of installation.
   @JsonKey(name: 'installation_type')
   final String installationType;
+  @override
+
+  /// Installation title, used on login screen.
+  @JsonKey(name: 'installation_title')
+  final String installationTitle;
+  @override
+
+  /// Custom application icon name, if any.
+  @JsonKey(name: 'custom_app_icon_name')
+  final String customAppIconName;
+  @override
+
+  /// AppBackground image url, if any.
+  @JsonKey(name: 'app_login_background')
+  final String appLoginBackground;
+  @override
+
+  /// WebBackground image url, if any.
+  @JsonKey(name: 'web_login_background')
+  final String webLoginBackground;
   @override
 
   /// Testing installation.
@@ -1198,6 +1577,11 @@ class _$_Features implements _Features {
   /// Yandex metrika counter id.
   @JsonKey(name: 'metrika')
   final String metrika;
+  @override
+
+  /// Amplitude api key.
+  @JsonKey(name: 'amplitude_api_key')
+  final String amplitudeApiKey;
   @override
 
   /// Minimal chars number for starting global search.
@@ -1255,9 +1639,9 @@ class _$_Features implements _Features {
   final String firebaseStorageBucket;
   @override
 
-  /// Calls functions enabled.
-  @JsonKey(name: 'calls')
-  final bool calls;
+  /// Calls version. 0 = disabled, 1 = audio only, 2 = audio+video.
+  @JsonKey(name: 'calls_version')
+  final int callsVersion;
   @override
 
   /// Calls functions enabled for mobile applications.
@@ -1310,44 +1694,71 @@ class _$_Features implements _Features {
   final bool allowAdminMute;
   @override
 
+  /// Default wallpaper url for mobile apps, if any.
+  @JsonKey(name: 'default_wallpaper')
+  final Wallpaper defaultWallpaper;
+  @override
+
+  /// Support email.
+  @JsonKey(name: 'support_email')
+  final String supportEmail;
+  @override
+
+  /// True if server has custom theme.
+  @JsonKey(name: 'custom_theme')
+  final bool customTheme;
+  @override
+
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'task_checklist')
   final bool taskChecklist;
   @override
 
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'readonly_groups')
   final bool readonlyGroups;
   @override
 
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'task_dashboard')
   final bool taskDashboard;
   @override
 
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'task_messages')
   final bool taskMessages;
   @override
 
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'task_public')
   final bool taskPublic;
   @override
 
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'task_tags')
   final bool taskTags;
+  @override
+
+  /// Deprecated.
+  @Deprecated('Deprecated.')
+  @JsonKey(name: 'calls')
+  final bool calls;
+  @override
+
+  /// Deprecated.
+  @Deprecated('Deprecated.')
+  @JsonKey(name: 'min_app_version')
+  final String minAppVersion;
 
   @override
   String toString() {
-    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, theme: $theme, minAppVersion: $minAppVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, iceServers: $iceServers, customServer: $customServer, installationType: $installationType, isTesting: $isTesting, metrika: $metrika, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, calls: $calls, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags)';
+    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, oAuthServices: $oAuthServices, iCEServers: $iCEServers, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, minAppVersion: $minAppVersion)';
   }
 
   @override
@@ -1361,15 +1772,27 @@ class _$_Features implements _Features {
             (identical(other.frontVersion, frontVersion) ||
                 const DeepCollectionEquality().equals(other.frontVersion, frontVersion)) &&
             (identical(other.appTitle, appTitle) || const DeepCollectionEquality().equals(other.appTitle, appTitle)) &&
+            (identical(other.landingUrl, landingUrl) ||
+                const DeepCollectionEquality().equals(other.landingUrl, landingUrl)) &&
             (identical(other.appSchemes, appSchemes) ||
                 const DeepCollectionEquality().equals(other.appSchemes, appSchemes)) &&
             (identical(other.userver, userver) || const DeepCollectionEquality().equals(other.userver, userver)) &&
             (identical(other.iOSApp, iOSApp) || const DeepCollectionEquality().equals(other.iOSApp, iOSApp)) &&
             (identical(other.androidApp, androidApp) ||
                 const DeepCollectionEquality().equals(other.androidApp, androidApp)) &&
+            (identical(other.iOSCorpApp, iOSCorpApp) ||
+                const DeepCollectionEquality().equals(other.iOSCorpApp, iOSCorpApp)) &&
+            (identical(other.androidCorpApp, androidCorpApp) ||
+                const DeepCollectionEquality().equals(other.androidCorpApp, androidCorpApp)) &&
             (identical(other.theme, theme) || const DeepCollectionEquality().equals(other.theme, theme)) &&
-            (identical(other.minAppVersion, minAppVersion) ||
-                const DeepCollectionEquality().equals(other.minAppVersion, minAppVersion)) &&
+            (identical(other.minIOSVersion, minIOSVersion) ||
+                const DeepCollectionEquality().equals(other.minIOSVersion, minIOSVersion)) &&
+            (identical(other.minAndroidVersion, minAndroidVersion) ||
+                const DeepCollectionEquality().equals(other.minAndroidVersion, minAndroidVersion)) &&
+            (identical(other.minCorpIOSVersion, minCorpIOSVersion) ||
+                const DeepCollectionEquality().equals(other.minCorpIOSVersion, minCorpIOSVersion)) &&
+            (identical(other.minCorpAndroidVersion, minCorpAndroidVersion) ||
+                const DeepCollectionEquality().equals(other.minCorpAndroidVersion, minCorpAndroidVersion)) &&
             (identical(other.freeRegistration, freeRegistration) ||
                 const DeepCollectionEquality().equals(other.freeRegistration, freeRegistration)) &&
             (identical(other.maxUploadMb, maxUploadMb) ||
@@ -1390,6 +1813,8 @@ class _$_Features implements _Features {
                 const DeepCollectionEquality().equals(other.maxMessageLength, maxMessageLength)) &&
             (identical(other.maxSectionLength, maxSectionLength) ||
                 const DeepCollectionEquality().equals(other.maxSectionLength, maxSectionLength)) &&
+            (identical(other.maxProjectLength, maxProjectLength) ||
+                const DeepCollectionEquality().equals(other.maxProjectLength, maxProjectLength)) &&
             (identical(other.maxTagLength, maxTagLength) ||
                 const DeepCollectionEquality().equals(other.maxTagLength, maxTagLength)) &&
             (identical(other.maxTaskTitleLength, maxTaskTitleLength) ||
@@ -1403,6 +1828,10 @@ class _$_Features implements _Features {
                 const DeepCollectionEquality()
                     .equals(other.maxIntegrationCommentLength, maxIntegrationCommentLength)) &&
             (identical(other.maxTeams, maxTeams) || const DeepCollectionEquality().equals(other.maxTeams, maxTeams)) &&
+            (identical(other.maxMessageSearchLimit, maxMessageSearchLimit) ||
+                const DeepCollectionEquality().equals(other.maxMessageSearchLimit, maxMessageSearchLimit)) &&
+            (identical(other.multiNodes, multiNodes) ||
+                const DeepCollectionEquality().equals(other.multiNodes, multiNodes)) &&
             (identical(other.afkAge, afkAge) || const DeepCollectionEquality().equals(other.afkAge, afkAge)) &&
             (identical(other.authByPassword, authByPassword) ||
                 const DeepCollectionEquality().equals(other.authByPassword, authByPassword)) &&
@@ -1410,44 +1839,43 @@ class _$_Features implements _Features {
                 const DeepCollectionEquality().equals(other.authByQrCode, authByQrCode)) &&
             (identical(other.authBySms, authBySms) ||
                 const DeepCollectionEquality().equals(other.authBySms, authBySms)) &&
-            (identical(other.iceServers, iceServers) ||
-                const DeepCollectionEquality().equals(other.iceServers, iceServers)) &&
+            (identical(other.auth2fa, auth2fa) || const DeepCollectionEquality().equals(other.auth2fa, auth2fa)) &&
+            (identical(other.oAuthServices, oAuthServices) ||
+                const DeepCollectionEquality().equals(other.oAuthServices, oAuthServices)) &&
+            (identical(other.iCEServers, iCEServers) ||
+                const DeepCollectionEquality().equals(other.iCEServers, iCEServers)) &&
             (identical(other.customServer, customServer) ||
                 const DeepCollectionEquality().equals(other.customServer, customServer)) &&
             (identical(other.installationType, installationType) ||
                 const DeepCollectionEquality().equals(other.installationType, installationType)) &&
+            (identical(other.installationTitle, installationTitle) ||
+                const DeepCollectionEquality().equals(other.installationTitle, installationTitle)) &&
+            (identical(other.customAppIconName, customAppIconName) ||
+                const DeepCollectionEquality().equals(other.customAppIconName, customAppIconName)) &&
+            (identical(other.appLoginBackground, appLoginBackground) ||
+                const DeepCollectionEquality().equals(other.appLoginBackground, appLoginBackground)) &&
+            (identical(other.webLoginBackground, webLoginBackground) ||
+                const DeepCollectionEquality().equals(other.webLoginBackground, webLoginBackground)) &&
             (identical(other.isTesting, isTesting) ||
                 const DeepCollectionEquality().equals(other.isTesting, isTesting)) &&
             (identical(other.metrika, metrika) || const DeepCollectionEquality().equals(other.metrika, metrika)) &&
-            (identical(other.minSearchLength, minSearchLength) ||
-                const DeepCollectionEquality().equals(other.minSearchLength, minSearchLength)) &&
-            (identical(other.resendTimeout, resendTimeout) ||
-                const DeepCollectionEquality().equals(other.resendTimeout, resendTimeout)) &&
-            (identical(other.sentryDsnJS, sentryDsnJS) ||
-                const DeepCollectionEquality().equals(other.sentryDsnJS, sentryDsnJS)) &&
-            (identical(other.serverDrafts, serverDrafts) ||
-                const DeepCollectionEquality().equals(other.serverDrafts, serverDrafts)) &&
-            (identical(other.firebaseAppId, firebaseAppId) ||
-                const DeepCollectionEquality().equals(other.firebaseAppId, firebaseAppId)) &&
-            (identical(other.firebaseSenderId, firebaseSenderId) ||
-                const DeepCollectionEquality().equals(other.firebaseSenderId, firebaseSenderId)) &&
-            (identical(other.firebaseApiKey, firebaseApiKey) ||
-                const DeepCollectionEquality().equals(other.firebaseApiKey, firebaseApiKey)) &&
-            (identical(other.firebaseAuthDomain, firebaseAuthDomain) ||
-                const DeepCollectionEquality().equals(other.firebaseAuthDomain, firebaseAuthDomain)) &&
-            (identical(other.firebaseDatabaseUrl, firebaseDatabaseUrl) ||
-                const DeepCollectionEquality().equals(other.firebaseDatabaseUrl, firebaseDatabaseUrl)) &&
-            (identical(other.firebaseProjectId, firebaseProjectId) ||
-                const DeepCollectionEquality().equals(other.firebaseProjectId, firebaseProjectId)) &&
-            (identical(other.firebaseStorageBucket, firebaseStorageBucket) ||
-                const DeepCollectionEquality().equals(other.firebaseStorageBucket, firebaseStorageBucket)) &&
-            (identical(other.calls, calls) || const DeepCollectionEquality().equals(other.calls, calls)) &&
-            (identical(other.mobileCalls, mobileCalls) ||
-                const DeepCollectionEquality().equals(other.mobileCalls, mobileCalls)) &&
-            (identical(other.callsRecord, callsRecord) ||
-                const DeepCollectionEquality().equals(other.callsRecord, callsRecord)) &&
-            (identical(other.onlyOneDevicePerCall, onlyOneDevicePerCall) ||
-                const DeepCollectionEquality().equals(other.onlyOneDevicePerCall, onlyOneDevicePerCall)) &&
+            (identical(other.amplitudeApiKey, amplitudeApiKey) ||
+                const DeepCollectionEquality().equals(other.amplitudeApiKey, amplitudeApiKey)) &&
+            (identical(other.minSearchLength, minSearchLength) || const DeepCollectionEquality().equals(other.minSearchLength, minSearchLength)) &&
+            (identical(other.resendTimeout, resendTimeout) || const DeepCollectionEquality().equals(other.resendTimeout, resendTimeout)) &&
+            (identical(other.sentryDsnJS, sentryDsnJS) || const DeepCollectionEquality().equals(other.sentryDsnJS, sentryDsnJS)) &&
+            (identical(other.serverDrafts, serverDrafts) || const DeepCollectionEquality().equals(other.serverDrafts, serverDrafts)) &&
+            (identical(other.firebaseAppId, firebaseAppId) || const DeepCollectionEquality().equals(other.firebaseAppId, firebaseAppId)) &&
+            (identical(other.firebaseSenderId, firebaseSenderId) || const DeepCollectionEquality().equals(other.firebaseSenderId, firebaseSenderId)) &&
+            (identical(other.firebaseApiKey, firebaseApiKey) || const DeepCollectionEquality().equals(other.firebaseApiKey, firebaseApiKey)) &&
+            (identical(other.firebaseAuthDomain, firebaseAuthDomain) || const DeepCollectionEquality().equals(other.firebaseAuthDomain, firebaseAuthDomain)) &&
+            (identical(other.firebaseDatabaseUrl, firebaseDatabaseUrl) || const DeepCollectionEquality().equals(other.firebaseDatabaseUrl, firebaseDatabaseUrl)) &&
+            (identical(other.firebaseProjectId, firebaseProjectId) || const DeepCollectionEquality().equals(other.firebaseProjectId, firebaseProjectId)) &&
+            (identical(other.firebaseStorageBucket, firebaseStorageBucket) || const DeepCollectionEquality().equals(other.firebaseStorageBucket, firebaseStorageBucket)) &&
+            (identical(other.callsVersion, callsVersion) || const DeepCollectionEquality().equals(other.callsVersion, callsVersion)) &&
+            (identical(other.mobileCalls, mobileCalls) || const DeepCollectionEquality().equals(other.mobileCalls, mobileCalls)) &&
+            (identical(other.callsRecord, callsRecord) || const DeepCollectionEquality().equals(other.callsRecord, callsRecord)) &&
+            (identical(other.onlyOneDevicePerCall, onlyOneDevicePerCall) || const DeepCollectionEquality().equals(other.onlyOneDevicePerCall, onlyOneDevicePerCall)) &&
             (identical(other.maxParticipantsPerCall, maxParticipantsPerCall) || const DeepCollectionEquality().equals(other.maxParticipantsPerCall, maxParticipantsPerCall)) &&
             (identical(other.safariPushId, safariPushId) || const DeepCollectionEquality().equals(other.safariPushId, safariPushId)) &&
             (identical(other.messageUploads, messageUploads) || const DeepCollectionEquality().equals(other.messageUploads, messageUploads)) &&
@@ -1455,12 +1883,17 @@ class _$_Features implements _Features {
             (identical(other.singleGroupTeams, singleGroupTeams) || const DeepCollectionEquality().equals(other.singleGroupTeams, singleGroupTeams)) &&
             (identical(other.wikiPages, wikiPages) || const DeepCollectionEquality().equals(other.wikiPages, wikiPages)) &&
             (identical(other.allowAdminMute, allowAdminMute) || const DeepCollectionEquality().equals(other.allowAdminMute, allowAdminMute)) &&
+            (identical(other.defaultWallpaper, defaultWallpaper) || const DeepCollectionEquality().equals(other.defaultWallpaper, defaultWallpaper)) &&
+            (identical(other.supportEmail, supportEmail) || const DeepCollectionEquality().equals(other.supportEmail, supportEmail)) &&
+            (identical(other.customTheme, customTheme) || const DeepCollectionEquality().equals(other.customTheme, customTheme)) &&
             (identical(other.taskChecklist, taskChecklist) || const DeepCollectionEquality().equals(other.taskChecklist, taskChecklist)) &&
             (identical(other.readonlyGroups, readonlyGroups) || const DeepCollectionEquality().equals(other.readonlyGroups, readonlyGroups)) &&
             (identical(other.taskDashboard, taskDashboard) || const DeepCollectionEquality().equals(other.taskDashboard, taskDashboard)) &&
             (identical(other.taskMessages, taskMessages) || const DeepCollectionEquality().equals(other.taskMessages, taskMessages)) &&
             (identical(other.taskPublic, taskPublic) || const DeepCollectionEquality().equals(other.taskPublic, taskPublic)) &&
-            (identical(other.taskTags, taskTags) || const DeepCollectionEquality().equals(other.taskTags, taskTags)));
+            (identical(other.taskTags, taskTags) || const DeepCollectionEquality().equals(other.taskTags, taskTags)) &&
+            (identical(other.calls, calls) || const DeepCollectionEquality().equals(other.calls, calls)) &&
+            (identical(other.minAppVersion, minAppVersion) || const DeepCollectionEquality().equals(other.minAppVersion, minAppVersion)));
   }
 
   @override
@@ -1471,12 +1904,18 @@ class _$_Features implements _Features {
       const DeepCollectionEquality().hash(desktopVersion) ^
       const DeepCollectionEquality().hash(frontVersion) ^
       const DeepCollectionEquality().hash(appTitle) ^
+      const DeepCollectionEquality().hash(landingUrl) ^
       const DeepCollectionEquality().hash(appSchemes) ^
       const DeepCollectionEquality().hash(userver) ^
       const DeepCollectionEquality().hash(iOSApp) ^
       const DeepCollectionEquality().hash(androidApp) ^
+      const DeepCollectionEquality().hash(iOSCorpApp) ^
+      const DeepCollectionEquality().hash(androidCorpApp) ^
       const DeepCollectionEquality().hash(theme) ^
-      const DeepCollectionEquality().hash(minAppVersion) ^
+      const DeepCollectionEquality().hash(minIOSVersion) ^
+      const DeepCollectionEquality().hash(minAndroidVersion) ^
+      const DeepCollectionEquality().hash(minCorpIOSVersion) ^
+      const DeepCollectionEquality().hash(minCorpAndroidVersion) ^
       const DeepCollectionEquality().hash(freeRegistration) ^
       const DeepCollectionEquality().hash(maxUploadMb) ^
       const DeepCollectionEquality().hash(maxLinkedMessages) ^
@@ -1487,21 +1926,31 @@ class _$_Features implements _Features {
       const DeepCollectionEquality().hash(maxMoodLength) ^
       const DeepCollectionEquality().hash(maxMessageLength) ^
       const DeepCollectionEquality().hash(maxSectionLength) ^
+      const DeepCollectionEquality().hash(maxProjectLength) ^
       const DeepCollectionEquality().hash(maxTagLength) ^
       const DeepCollectionEquality().hash(maxTaskTitleLength) ^
       const DeepCollectionEquality().hash(maxColorRuleDescriptionLength) ^
       const DeepCollectionEquality().hash(maxUrlLength) ^
       const DeepCollectionEquality().hash(maxIntegrationCommentLength) ^
       const DeepCollectionEquality().hash(maxTeams) ^
+      const DeepCollectionEquality().hash(maxMessageSearchLimit) ^
+      const DeepCollectionEquality().hash(multiNodes) ^
       const DeepCollectionEquality().hash(afkAge) ^
       const DeepCollectionEquality().hash(authByPassword) ^
       const DeepCollectionEquality().hash(authByQrCode) ^
       const DeepCollectionEquality().hash(authBySms) ^
-      const DeepCollectionEquality().hash(iceServers) ^
+      const DeepCollectionEquality().hash(auth2fa) ^
+      const DeepCollectionEquality().hash(oAuthServices) ^
+      const DeepCollectionEquality().hash(iCEServers) ^
       const DeepCollectionEquality().hash(customServer) ^
       const DeepCollectionEquality().hash(installationType) ^
+      const DeepCollectionEquality().hash(installationTitle) ^
+      const DeepCollectionEquality().hash(customAppIconName) ^
+      const DeepCollectionEquality().hash(appLoginBackground) ^
+      const DeepCollectionEquality().hash(webLoginBackground) ^
       const DeepCollectionEquality().hash(isTesting) ^
       const DeepCollectionEquality().hash(metrika) ^
+      const DeepCollectionEquality().hash(amplitudeApiKey) ^
       const DeepCollectionEquality().hash(minSearchLength) ^
       const DeepCollectionEquality().hash(resendTimeout) ^
       const DeepCollectionEquality().hash(sentryDsnJS) ^
@@ -1513,7 +1962,7 @@ class _$_Features implements _Features {
       const DeepCollectionEquality().hash(firebaseDatabaseUrl) ^
       const DeepCollectionEquality().hash(firebaseProjectId) ^
       const DeepCollectionEquality().hash(firebaseStorageBucket) ^
-      const DeepCollectionEquality().hash(calls) ^
+      const DeepCollectionEquality().hash(callsVersion) ^
       const DeepCollectionEquality().hash(mobileCalls) ^
       const DeepCollectionEquality().hash(callsRecord) ^
       const DeepCollectionEquality().hash(onlyOneDevicePerCall) ^
@@ -1524,13 +1973,19 @@ class _$_Features implements _Features {
       const DeepCollectionEquality().hash(singleGroupTeams) ^
       const DeepCollectionEquality().hash(wikiPages) ^
       const DeepCollectionEquality().hash(allowAdminMute) ^
+      const DeepCollectionEquality().hash(defaultWallpaper) ^
+      const DeepCollectionEquality().hash(supportEmail) ^
+      const DeepCollectionEquality().hash(customTheme) ^
       const DeepCollectionEquality().hash(taskChecklist) ^
       const DeepCollectionEquality().hash(readonlyGroups) ^
       const DeepCollectionEquality().hash(taskDashboard) ^
       const DeepCollectionEquality().hash(taskMessages) ^
       const DeepCollectionEquality().hash(taskPublic) ^
-      const DeepCollectionEquality().hash(taskTags);
+      const DeepCollectionEquality().hash(taskTags) ^
+      const DeepCollectionEquality().hash(calls) ^
+      const DeepCollectionEquality().hash(minAppVersion);
 
+  @JsonKey(ignore: true)
   @override
   _$FeaturesCopyWith<_Features> get copyWith => __$FeaturesCopyWithImpl<_Features>(this, _$identity);
 
@@ -1547,12 +2002,18 @@ abstract class _Features implements Features {
       @required @JsonKey(name: 'desktop_version') String desktopVersion,
       @required @JsonKey(name: 'front_version') String frontVersion,
       @required @JsonKey(name: 'app_title') String appTitle,
+      @JsonKey(name: 'landing_url') String landingUrl,
       @required @JsonKey(name: 'app_schemes') List<String> appSchemes,
       @required @JsonKey(name: 'userver') String userver,
       @required @JsonKey(name: 'ios_app') String iOSApp,
       @required @JsonKey(name: 'android_app') String androidApp,
+      @required @JsonKey(name: 'ios_corp_app') String iOSCorpApp,
+      @required @JsonKey(name: 'android_corp_app') String androidCorpApp,
       @required @JsonKey(name: 'theme') String theme,
-      @required @JsonKey(name: 'min_app_version') String minAppVersion,
+      @required @JsonKey(name: 'min_ios_version') String minIOSVersion,
+      @required @JsonKey(name: 'min_android_version') String minAndroidVersion,
+      @required @JsonKey(name: 'min_corp_ios_version') String minCorpIOSVersion,
+      @required @JsonKey(name: 'min_corp_android_version') String minCorpAndroidVersion,
       @required @JsonKey(name: 'free_registration') bool freeRegistration,
       @required @JsonKey(name: 'max_upload_mb') int maxUploadMb,
       @required @JsonKey(name: 'max_linked_messages') int maxLinkedMessages,
@@ -1563,21 +2024,31 @@ abstract class _Features implements Features {
       @required @JsonKey(name: 'max_mood_length') int maxMoodLength,
       @required @JsonKey(name: 'max_message_length') int maxMessageLength,
       @required @JsonKey(name: 'max_section_length') int maxSectionLength,
+      @required @JsonKey(name: 'max_project_length') int maxProjectLength,
       @required @JsonKey(name: 'max_tag_length') int maxTagLength,
       @required @JsonKey(name: 'max_task_title_length') int maxTaskTitleLength,
       @required @JsonKey(name: 'max_color_rule_description_length') int maxColorRuleDescriptionLength,
       @required @JsonKey(name: 'max_url_length') int maxUrlLength,
       @required @JsonKey(name: 'max_integration_comment_length') int maxIntegrationCommentLength,
       @required @JsonKey(name: 'max_teams') int maxTeams,
+      @required @JsonKey(name: 'max_message_search_limit') int maxMessageSearchLimit,
+      @JsonKey(name: 'multi_nodes') bool multiNodes,
       @required @JsonKey(name: 'afk_age') int afkAge,
       @JsonKey(name: 'auth_by_password') bool authByPassword,
       @JsonKey(name: 'auth_by_qr_code') bool authByQrCode,
       @JsonKey(name: 'auth_by_sms') bool authBySms,
-      @required @JsonKey(name: 'ice_servers') List<ICEServer> iceServers,
+      @JsonKey(name: 'auth_2fa') bool auth2fa,
+      @JsonKey(name: 'oauth_services') List<OAuthService> oAuthServices,
+      @required @JsonKey(name: 'ice_servers') List<ICEServer> iCEServers,
       @required @JsonKey(name: 'custom_server') bool customServer,
       @required @JsonKey(name: 'installation_type') String installationType,
+      @JsonKey(name: 'installation_title') String installationTitle,
+      @JsonKey(name: 'custom_app_icon_name') String customAppIconName,
+      @JsonKey(name: 'app_login_background') String appLoginBackground,
+      @JsonKey(name: 'web_login_background') String webLoginBackground,
       @required @JsonKey(name: 'is_testing') bool isTesting,
       @required @JsonKey(name: 'metrika') String metrika,
+      @JsonKey(name: 'amplitude_api_key') String amplitudeApiKey,
       @required @JsonKey(name: 'min_search_length') int minSearchLength,
       @required @JsonKey(name: 'resend_timeout') int resendTimeout,
       @required @JsonKey(name: 'sentry_dsn_js') String sentryDsnJS,
@@ -1589,7 +2060,7 @@ abstract class _Features implements Features {
       @required @JsonKey(name: 'firebase_database_url') String firebaseDatabaseUrl,
       @required @JsonKey(name: 'firebase_project_id') String firebaseProjectId,
       @required @JsonKey(name: 'firebase_storage_bucket') String firebaseStorageBucket,
-      @required @JsonKey(name: 'calls') bool calls,
+      @required @JsonKey(name: 'calls_version') int callsVersion,
       @required @JsonKey(name: 'mobile_calls') bool mobileCalls,
       @required @JsonKey(name: 'calls_record') bool callsRecord,
       @JsonKey(name: 'only_one_device_per_call') bool onlyOneDevicePerCall,
@@ -1600,12 +2071,17 @@ abstract class _Features implements Features {
       @required @JsonKey(name: 'single_group_teams') bool singleGroupTeams,
       @required @JsonKey(name: 'wiki_pages') bool wikiPages,
       @JsonKey(name: 'allow_admin_mute') bool allowAdminMute,
-      @required @deprecated @JsonKey(name: 'task_checklist') bool taskChecklist,
-      @required @deprecated @JsonKey(name: 'readonly_groups') bool readonlyGroups,
-      @required @deprecated @JsonKey(name: 'task_dashboard') bool taskDashboard,
-      @required @deprecated @JsonKey(name: 'task_messages') bool taskMessages,
-      @required @deprecated @JsonKey(name: 'task_public') bool taskPublic,
-      @required @deprecated @JsonKey(name: 'task_tags') bool taskTags}) = _$_Features;
+      @JsonKey(name: 'default_wallpaper') Wallpaper defaultWallpaper,
+      @required @JsonKey(name: 'support_email') String supportEmail,
+      @required @JsonKey(name: 'custom_theme') bool customTheme,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_checklist') bool taskChecklist,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'readonly_groups') bool readonlyGroups,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_dashboard') bool taskDashboard,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_messages') bool taskMessages,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_public') bool taskPublic,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') bool taskTags,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'calls') bool calls,
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion}) = _$_Features;
 
   factory _Features.fromJson(Map<String, dynamic> json) = _$_Features.fromJson;
 
@@ -1636,6 +2112,11 @@ abstract class _Features implements Features {
   String get appTitle;
   @override
 
+  /// Landing page address, if any.
+  @JsonKey(name: 'landing_url')
+  String get landingUrl;
+  @override
+
   /// Local applications urls.
   @JsonKey(name: 'app_schemes')
   List<String> get appSchemes;
@@ -1656,14 +2137,39 @@ abstract class _Features implements Features {
   String get androidApp;
   @override
 
+  /// Link to AppStore for corporate app.
+  @JsonKey(name: 'ios_corp_app')
+  String get iOSCorpApp;
+  @override
+
+  /// Link to Google Play for corporate app.
+  @JsonKey(name: 'android_corp_app')
+  String get androidCorpApp;
+  @override
+
   /// Default UI theme.
   @JsonKey(name: 'theme')
   String get theme;
   @override
 
-  /// Minimal application version required for this server. Used for breaking changes.
-  @JsonKey(name: 'min_app_version')
-  String get minAppVersion;
+  /// Minimal iOS application version required for this server. Used for breaking changes.
+  @JsonKey(name: 'min_ios_version')
+  String get minIOSVersion;
+  @override
+
+  /// Minimal android application version required for this server. Used for breaking changes.
+  @JsonKey(name: 'min_android_version')
+  String get minAndroidVersion;
+  @override
+
+  /// Minimal iOS corp application version required for this server. Used for breaking changes.
+  @JsonKey(name: 'min_corp_ios_version')
+  String get minCorpIOSVersion;
+  @override
+
+  /// Minimal android corp application version required for this server. Used for breaking changes.
+  @JsonKey(name: 'min_corp_android_version')
+  String get minCorpAndroidVersion;
   @override
 
   /// Free registration allowed.
@@ -1711,9 +2217,14 @@ abstract class _Features implements Features {
   int get maxMessageLength;
   @override
 
-  /// Maximum length for project and contact's sections names.
+  /// Maximum length for contact's sections names.
   @JsonKey(name: 'max_section_length')
   int get maxSectionLength;
+  @override
+
+  /// Maximum length for project.
+  @JsonKey(name: 'max_project_length')
+  int get maxProjectLength;
   @override
 
   /// Maximum length for tags.
@@ -1746,6 +2257,16 @@ abstract class _Features implements Features {
   int get maxTeams;
   @override
 
+  /// Maximum search result.
+  @JsonKey(name: 'max_message_search_limit')
+  int get maxMessageSearchLimit;
+  @override
+
+  /// Multi nodes mode (federation) enabled.
+  @JsonKey(name: 'multi_nodes')
+  bool get multiNodes;
+  @override
+
   /// Max inactivity seconds.
   @JsonKey(name: 'afk_age')
   int get afkAge;
@@ -1766,12 +2287,22 @@ abstract class _Features implements Features {
   bool get authBySms;
   @override
 
-  /// ICE servers for WebRTC.
-  @JsonKey(name: 'ice_servers')
-  List<ICEServer> get iceServers;
+  /// Two-factor authentication (2FA) enabled.
+  @JsonKey(name: 'auth_2fa')
+  bool get auth2fa;
   @override
 
-  /// True for on-premise installation.
+  /// External services.
+  @JsonKey(name: 'oauth_services')
+  List<OAuthService> get oAuthServices;
+  @override
+
+  /// ICE servers for WebRTC.
+  @JsonKey(name: 'ice_servers')
+  List<ICEServer> get iCEServers;
+  @override
+
+  /// True for premise installation.
   @JsonKey(name: 'custom_server')
   bool get customServer;
   @override
@@ -1779,6 +2310,26 @@ abstract class _Features implements Features {
   /// Name of installation.
   @JsonKey(name: 'installation_type')
   String get installationType;
+  @override
+
+  /// Installation title, used on login screen.
+  @JsonKey(name: 'installation_title')
+  String get installationTitle;
+  @override
+
+  /// Custom application icon name, if any.
+  @JsonKey(name: 'custom_app_icon_name')
+  String get customAppIconName;
+  @override
+
+  /// AppBackground image url, if any.
+  @JsonKey(name: 'app_login_background')
+  String get appLoginBackground;
+  @override
+
+  /// WebBackground image url, if any.
+  @JsonKey(name: 'web_login_background')
+  String get webLoginBackground;
   @override
 
   /// Testing installation.
@@ -1789,6 +2340,11 @@ abstract class _Features implements Features {
   /// Yandex metrika counter id.
   @JsonKey(name: 'metrika')
   String get metrika;
+  @override
+
+  /// Amplitude api key.
+  @JsonKey(name: 'amplitude_api_key')
+  String get amplitudeApiKey;
   @override
 
   /// Minimal chars number for starting global search.
@@ -1846,9 +2402,9 @@ abstract class _Features implements Features {
   String get firebaseStorageBucket;
   @override
 
-  /// Calls functions enabled.
-  @JsonKey(name: 'calls')
-  bool get calls;
+  /// Calls version. 0 = disabled, 1 = audio only, 2 = audio+video.
+  @JsonKey(name: 'calls_version')
+  int get callsVersion;
   @override
 
   /// Calls functions enabled for mobile applications.
@@ -1901,40 +2457,68 @@ abstract class _Features implements Features {
   bool get allowAdminMute;
   @override
 
+  /// Default wallpaper url for mobile apps, if any.
+  @JsonKey(name: 'default_wallpaper')
+  Wallpaper get defaultWallpaper;
+  @override
+
+  /// Support email.
+  @JsonKey(name: 'support_email')
+  String get supportEmail;
+  @override
+
+  /// True if server has custom theme.
+  @JsonKey(name: 'custom_theme')
+  bool get customTheme;
+  @override
+
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'task_checklist')
   bool get taskChecklist;
   @override
 
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'readonly_groups')
   bool get readonlyGroups;
   @override
 
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'task_dashboard')
   bool get taskDashboard;
   @override
 
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'task_messages')
   bool get taskMessages;
   @override
 
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'task_public')
   bool get taskPublic;
   @override
 
   /// Deprecated.
-  @deprecated
+  @Deprecated('Deprecated.')
   @JsonKey(name: 'task_tags')
   bool get taskTags;
   @override
+
+  /// Deprecated.
+  @Deprecated('Deprecated.')
+  @JsonKey(name: 'calls')
+  bool get calls;
+  @override
+
+  /// Deprecated.
+  @Deprecated('Deprecated.')
+  @JsonKey(name: 'min_app_version')
+  String get minAppVersion;
+  @override
+  @JsonKey(ignore: true)
   _$FeaturesCopyWith<_Features> get copyWith;
 }

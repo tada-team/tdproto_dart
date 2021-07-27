@@ -19,11 +19,13 @@ class _$CountryTearOff {
 // ignore: unused_element
   _Country call(
       {@required @JsonKey(name: 'code') String code,
+      @required @JsonKey(name: 'iso') String iso,
       @required @JsonKey(name: 'name') String name,
       @JsonKey(name: 'default') bool isDefault,
       @JsonKey(name: 'popular') bool popular}) {
     return _Country(
       code: code,
+      iso: iso,
       name: name,
       isDefault: isDefault,
       popular: popular,
@@ -42,9 +44,13 @@ const $Country = _$CountryTearOff();
 
 /// @nodoc
 mixin _$Country {
-  /// Country code.
+  /// Phone code.
   @JsonKey(name: 'code')
   String get code;
+
+  /// Country ISO code.
+  @JsonKey(name: 'iso')
+  String get iso;
 
   /// Country name.
   @JsonKey(name: 'name')
@@ -59,6 +65,7 @@ mixin _$Country {
   bool get popular;
 
   Map<String, dynamic> toJson();
+  @JsonKey(ignore: true)
   $CountryCopyWith<Country> get copyWith;
 }
 
@@ -67,6 +74,7 @@ abstract class $CountryCopyWith<$Res> {
   factory $CountryCopyWith(Country value, $Res Function(Country) then) = _$CountryCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'code') String code,
+      @JsonKey(name: 'iso') String iso,
       @JsonKey(name: 'name') String name,
       @JsonKey(name: 'default') bool isDefault,
       @JsonKey(name: 'popular') bool popular});
@@ -83,12 +91,14 @@ class _$CountryCopyWithImpl<$Res> implements $CountryCopyWith<$Res> {
   @override
   $Res call({
     Object code = freezed,
+    Object iso = freezed,
     Object name = freezed,
     Object isDefault = freezed,
     Object popular = freezed,
   }) {
     return _then(_value.copyWith(
       code: code == freezed ? _value.code : code as String,
+      iso: iso == freezed ? _value.iso : iso as String,
       name: name == freezed ? _value.name : name as String,
       isDefault: isDefault == freezed ? _value.isDefault : isDefault as bool,
       popular: popular == freezed ? _value.popular : popular as bool,
@@ -102,6 +112,7 @@ abstract class _$CountryCopyWith<$Res> implements $CountryCopyWith<$Res> {
   @override
   $Res call(
       {@JsonKey(name: 'code') String code,
+      @JsonKey(name: 'iso') String iso,
       @JsonKey(name: 'name') String name,
       @JsonKey(name: 'default') bool isDefault,
       @JsonKey(name: 'popular') bool popular});
@@ -117,12 +128,14 @@ class __$CountryCopyWithImpl<$Res> extends _$CountryCopyWithImpl<$Res> implement
   @override
   $Res call({
     Object code = freezed,
+    Object iso = freezed,
     Object name = freezed,
     Object isDefault = freezed,
     Object popular = freezed,
   }) {
     return _then(_Country(
       code: code == freezed ? _value.code : code as String,
+      iso: iso == freezed ? _value.iso : iso as String,
       name: name == freezed ? _value.name : name as String,
       isDefault: isDefault == freezed ? _value.isDefault : isDefault as bool,
       popular: popular == freezed ? _value.popular : popular as bool,
@@ -136,19 +149,26 @@ class __$CountryCopyWithImpl<$Res> extends _$CountryCopyWithImpl<$Res> implement
 class _$_Country implements _Country {
   const _$_Country(
       {@required @JsonKey(name: 'code') this.code,
+      @required @JsonKey(name: 'iso') this.iso,
       @required @JsonKey(name: 'name') this.name,
       @JsonKey(name: 'default') this.isDefault,
       @JsonKey(name: 'popular') this.popular})
       : assert(code != null),
+        assert(iso != null),
         assert(name != null);
 
   factory _$_Country.fromJson(Map<String, dynamic> json) => _$_$_CountryFromJson(json);
 
   @override
 
-  /// Country code.
+  /// Phone code.
   @JsonKey(name: 'code')
   final String code;
+  @override
+
+  /// Country ISO code.
+  @JsonKey(name: 'iso')
+  final String iso;
   @override
 
   /// Country name.
@@ -167,7 +187,7 @@ class _$_Country implements _Country {
 
   @override
   String toString() {
-    return 'Country(code: $code, name: $name, isDefault: $isDefault, popular: $popular)';
+    return 'Country(code: $code, iso: $iso, name: $name, isDefault: $isDefault, popular: $popular)';
   }
 
   @override
@@ -175,6 +195,7 @@ class _$_Country implements _Country {
     return identical(this, other) ||
         (other is _Country &&
             (identical(other.code, code) || const DeepCollectionEquality().equals(other.code, code)) &&
+            (identical(other.iso, iso) || const DeepCollectionEquality().equals(other.iso, iso)) &&
             (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
             (identical(other.isDefault, isDefault) ||
                 const DeepCollectionEquality().equals(other.isDefault, isDefault)) &&
@@ -185,10 +206,12 @@ class _$_Country implements _Country {
   int get hashCode =>
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(code) ^
+      const DeepCollectionEquality().hash(iso) ^
       const DeepCollectionEquality().hash(name) ^
       const DeepCollectionEquality().hash(isDefault) ^
       const DeepCollectionEquality().hash(popular);
 
+  @JsonKey(ignore: true)
   @override
   _$CountryCopyWith<_Country> get copyWith => __$CountryCopyWithImpl<_Country>(this, _$identity);
 
@@ -201,6 +224,7 @@ class _$_Country implements _Country {
 abstract class _Country implements Country {
   const factory _Country(
       {@required @JsonKey(name: 'code') String code,
+      @required @JsonKey(name: 'iso') String iso,
       @required @JsonKey(name: 'name') String name,
       @JsonKey(name: 'default') bool isDefault,
       @JsonKey(name: 'popular') bool popular}) = _$_Country;
@@ -209,9 +233,14 @@ abstract class _Country implements Country {
 
   @override
 
-  /// Country code.
+  /// Phone code.
   @JsonKey(name: 'code')
   String get code;
+  @override
+
+  /// Country ISO code.
+  @JsonKey(name: 'iso')
+  String get iso;
   @override
 
   /// Country name.
@@ -228,5 +257,6 @@ abstract class _Country implements Country {
   @JsonKey(name: 'popular')
   bool get popular;
   @override
+  @JsonKey(ignore: true)
   _$CountryCopyWith<_Country> get copyWith;
 }

@@ -1,9 +1,10 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:tdproto_dart/tdproto_dart.dart';
 
 part 'message_link_preview.freezed.dart';
 part 'message_link_preview.g.dart';
 
-/// Website title and description
+/// Website title and description.
 @freezed
 abstract class MessageLinkPreview with _$MessageLinkPreview {
   const factory MessageLinkPreview({

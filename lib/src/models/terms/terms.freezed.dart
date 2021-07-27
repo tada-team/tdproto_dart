@@ -102,143 +102,144 @@ const $Terms = _$TermsTearOff();
 
 /// @nodoc
 mixin _$Terms {
-  /// EnInTeam.
+  /// "in team".
   @JsonKey(name: 'EnInTeam')
   String get enInTeam;
 
-  /// EnTeam.
+  /// "team".
   @JsonKey(name: 'EnTeam')
   String get enTeam;
 
-  /// EnTeamAccess.
+  /// "access to team".
   @JsonKey(name: 'EnTeamAccess')
   String get enTeamAccess;
 
-  /// EnTeamAdmin.
+  /// "team admin".
   @JsonKey(name: 'EnTeamAdmin')
   String get enTeamAdmin;
 
-  /// EnTeamAdmins.
+  /// "team admins".
   @JsonKey(name: 'EnTeamAdmins')
   String get enTeamAdmins;
 
-  /// EnTeamGuest.
+  /// "team guest".
   @JsonKey(name: 'EnTeamGuest')
   String get enTeamGuest;
 
-  /// EnTeamMember.
+  /// "team member".
   @JsonKey(name: 'EnTeamMember')
   String get enTeamMember;
 
-  /// EnTeamMembers.
+  /// "team members".
   @JsonKey(name: 'EnTeamMembers')
   String get enTeamMembers;
 
-  /// EnTeamOwner.
+  /// "team owner",.
   @JsonKey(name: 'EnTeamOwner')
   String get enTeamOwner;
 
-  /// EnTeamSettings.
+  /// "team settings".
   @JsonKey(name: 'EnTeamSettings')
   String get enTeamSettings;
 
-  /// RuTeamSettings.
+  /// "настройки команды".
   @JsonKey(name: 'RuTeamSettings')
   String get ruTeamSettings;
 
-  /// EnTeams.
+  /// "teams".
   @JsonKey(name: 'EnTeams')
   String get enTeams;
 
-  /// EnToTeam.
+  /// "to team".
   @JsonKey(name: 'EnToTeam')
   String get enToTeam;
 
-  /// RuInTeam.
+  /// "в команде".
   @JsonKey(name: 'RuInTeam')
   String get ruInTeam;
 
-  /// RuTeam.
+  /// "команда".
   @JsonKey(name: 'RuTeam')
   String get ruTeam;
 
-  /// RuTeamAccess.
+  /// "доступ к команде".
   @JsonKey(name: 'RuTeamAccess')
   String get ruTeamAccess;
 
-  /// RuTeamAdmin.
+  /// "администратор команды".
   @JsonKey(name: 'RuTeamAdmin')
   String get ruTeamAdmin;
 
-  /// RuTeamAdmins.
+  /// "администраторы команды".
   @JsonKey(name: 'RuTeamAdmins')
   String get ruTeamAdmins;
 
-  /// RuTeamD.
+  /// "команде".
   @JsonKey(name: 'RuTeamD')
   String get ruTeamD;
 
-  /// RuTeamGuest.
+  /// "гость команды".
   @JsonKey(name: 'RuTeamGuest')
   String get ruTeamGuest;
 
-  /// RuTeamMember.
+  /// "участник команды".
   @JsonKey(name: 'RuTeamMember')
   String get ruTeamMember;
 
-  /// RuTeamMembers.
+  /// "участники команды".
   @JsonKey(name: 'RuTeamMembers')
   String get ruTeamMembers;
 
-  /// RuTeamOwner.
+  /// "владелец команды".
   @JsonKey(name: 'RuTeamOwner')
   String get ruTeamOwner;
 
-  /// RuTeamP.
+  /// "команде".
   @JsonKey(name: 'RuTeamP')
   String get ruTeamP;
 
-  /// RuTeamR.
+  /// "команды".
   @JsonKey(name: 'RuTeamR')
   String get ruTeamR;
 
-  /// RuTeams.
+  /// "команды".
   @JsonKey(name: 'RuTeams')
   String get ruTeams;
 
-  /// RuTeamsD.
+  /// "командам".
   @JsonKey(name: 'RuTeamsD')
   String get ruTeamsD;
 
-  /// RuTeamsP.
+  /// "командах".
   @JsonKey(name: 'RuTeamsP')
   String get ruTeamsP;
 
-  /// RuTeamsR.
+  /// "команд".
   @JsonKey(name: 'RuTeamsR')
   String get ruTeamsR;
 
-  /// RuTeamsT.
+  /// "командами".
   @JsonKey(name: 'RuTeamsT')
   String get ruTeamsT;
 
-  /// RuTeamsV.
+  /// "команды".
   @JsonKey(name: 'RuTeamsV')
   String get ruTeamsV;
 
-  /// RuTeamT.
+  /// "командой".
   @JsonKey(name: 'RuTeamT')
   String get ruTeamT;
 
-  /// RuTeamV.
+  /// "команду".
   @JsonKey(name: 'RuTeamV')
   String get ruTeamV;
 
-  /// RuToTeam.
+  /// "в команду".
   @JsonKey(name: 'RuToTeam')
   String get ruToTeam;
 
   Map<String, dynamic> toJson();
+  @JsonKey(ignore: true)
   $TermsCopyWith<Terms> get copyWith;
 }
 
@@ -568,172 +569,172 @@ class _$_Terms implements _Terms {
 
   @override
 
-  /// EnInTeam.
+  /// "in team".
   @JsonKey(name: 'EnInTeam')
   final String enInTeam;
   @override
 
-  /// EnTeam.
+  /// "team".
   @JsonKey(name: 'EnTeam')
   final String enTeam;
   @override
 
-  /// EnTeamAccess.
+  /// "access to team".
   @JsonKey(name: 'EnTeamAccess')
   final String enTeamAccess;
   @override
 
-  /// EnTeamAdmin.
+  /// "team admin".
   @JsonKey(name: 'EnTeamAdmin')
   final String enTeamAdmin;
   @override
 
-  /// EnTeamAdmins.
+  /// "team admins".
   @JsonKey(name: 'EnTeamAdmins')
   final String enTeamAdmins;
   @override
 
-  /// EnTeamGuest.
+  /// "team guest".
   @JsonKey(name: 'EnTeamGuest')
   final String enTeamGuest;
   @override
 
-  /// EnTeamMember.
+  /// "team member".
   @JsonKey(name: 'EnTeamMember')
   final String enTeamMember;
   @override
 
-  /// EnTeamMembers.
+  /// "team members".
   @JsonKey(name: 'EnTeamMembers')
   final String enTeamMembers;
   @override
 
-  /// EnTeamOwner.
+  /// "team owner",.
   @JsonKey(name: 'EnTeamOwner')
   final String enTeamOwner;
   @override
 
-  /// EnTeamSettings.
+  /// "team settings".
   @JsonKey(name: 'EnTeamSettings')
   final String enTeamSettings;
   @override
 
-  /// RuTeamSettings.
+  /// "настройки команды".
   @JsonKey(name: 'RuTeamSettings')
   final String ruTeamSettings;
   @override
 
-  /// EnTeams.
+  /// "teams".
   @JsonKey(name: 'EnTeams')
   final String enTeams;
   @override
 
-  /// EnToTeam.
+  /// "to team".
   @JsonKey(name: 'EnToTeam')
   final String enToTeam;
   @override
 
-  /// RuInTeam.
+  /// "в команде".
   @JsonKey(name: 'RuInTeam')
   final String ruInTeam;
   @override
 
-  /// RuTeam.
+  /// "команда".
   @JsonKey(name: 'RuTeam')
   final String ruTeam;
   @override
 
-  /// RuTeamAccess.
+  /// "доступ к команде".
   @JsonKey(name: 'RuTeamAccess')
   final String ruTeamAccess;
   @override
 
-  /// RuTeamAdmin.
+  /// "администратор команды".
   @JsonKey(name: 'RuTeamAdmin')
   final String ruTeamAdmin;
   @override
 
-  /// RuTeamAdmins.
+  /// "администраторы команды".
   @JsonKey(name: 'RuTeamAdmins')
   final String ruTeamAdmins;
   @override
 
-  /// RuTeamD.
+  /// "команде".
   @JsonKey(name: 'RuTeamD')
   final String ruTeamD;
   @override
 
-  /// RuTeamGuest.
+  /// "гость команды".
   @JsonKey(name: 'RuTeamGuest')
   final String ruTeamGuest;
   @override
 
-  /// RuTeamMember.
+  /// "участник команды".
   @JsonKey(name: 'RuTeamMember')
   final String ruTeamMember;
   @override
 
-  /// RuTeamMembers.
+  /// "участники команды".
   @JsonKey(name: 'RuTeamMembers')
   final String ruTeamMembers;
   @override
 
-  /// RuTeamOwner.
+  /// "владелец команды".
   @JsonKey(name: 'RuTeamOwner')
   final String ruTeamOwner;
   @override
 
-  /// RuTeamP.
+  /// "команде".
   @JsonKey(name: 'RuTeamP')
   final String ruTeamP;
   @override
 
-  /// RuTeamR.
+  /// "команды".
   @JsonKey(name: 'RuTeamR')
   final String ruTeamR;
   @override
 
-  /// RuTeams.
+  /// "команды".
   @JsonKey(name: 'RuTeams')
   final String ruTeams;
   @override
 
-  /// RuTeamsD.
+  /// "командам".
   @JsonKey(name: 'RuTeamsD')
   final String ruTeamsD;
   @override
 
-  /// RuTeamsP.
+  /// "командах".
   @JsonKey(name: 'RuTeamsP')
   final String ruTeamsP;
   @override
 
-  /// RuTeamsR.
+  /// "команд".
   @JsonKey(name: 'RuTeamsR')
   final String ruTeamsR;
   @override
 
-  /// RuTeamsT.
+  /// "командами".
   @JsonKey(name: 'RuTeamsT')
   final String ruTeamsT;
   @override
 
-  /// RuTeamsV.
+  /// "команды".
   @JsonKey(name: 'RuTeamsV')
   final String ruTeamsV;
   @override
 
-  /// RuTeamT.
+  /// "командой".
   @JsonKey(name: 'RuTeamT')
   final String ruTeamT;
   @override
 
-  /// RuTeamV.
+  /// "команду".
   @JsonKey(name: 'RuTeamV')
   final String ruTeamV;
   @override
 
-  /// RuToTeam.
+  /// "в команду".
   @JsonKey(name: 'RuToTeam')
   final String ruToTeam;
 
@@ -836,6 +837,7 @@ class _$_Terms implements _Terms {
       const DeepCollectionEquality().hash(ruTeamV) ^
       const DeepCollectionEquality().hash(ruToTeam);
 
+  @JsonKey(ignore: true)
   @override
   _$TermsCopyWith<_Terms> get copyWith => __$TermsCopyWithImpl<_Terms>(this, _$identity);
 
@@ -886,174 +888,175 @@ abstract class _Terms implements Terms {
 
   @override
 
-  /// EnInTeam.
+  /// "in team".
   @JsonKey(name: 'EnInTeam')
   String get enInTeam;
   @override
 
-  /// EnTeam.
+  /// "team".
   @JsonKey(name: 'EnTeam')
   String get enTeam;
   @override
 
-  /// EnTeamAccess.
+  /// "access to team".
   @JsonKey(name: 'EnTeamAccess')
   String get enTeamAccess;
   @override
 
-  /// EnTeamAdmin.
+  /// "team admin".
   @JsonKey(name: 'EnTeamAdmin')
   String get enTeamAdmin;
   @override
 
-  /// EnTeamAdmins.
+  /// "team admins".
   @JsonKey(name: 'EnTeamAdmins')
   String get enTeamAdmins;
   @override
 
-  /// EnTeamGuest.
+  /// "team guest".
   @JsonKey(name: 'EnTeamGuest')
   String get enTeamGuest;
   @override
 
-  /// EnTeamMember.
+  /// "team member".
   @JsonKey(name: 'EnTeamMember')
   String get enTeamMember;
   @override
 
-  /// EnTeamMembers.
+  /// "team members".
   @JsonKey(name: 'EnTeamMembers')
   String get enTeamMembers;
   @override
 
-  /// EnTeamOwner.
+  /// "team owner",.
   @JsonKey(name: 'EnTeamOwner')
   String get enTeamOwner;
   @override
 
-  /// EnTeamSettings.
+  /// "team settings".
   @JsonKey(name: 'EnTeamSettings')
   String get enTeamSettings;
   @override
 
-  /// RuTeamSettings.
+  /// "настройки команды".
   @JsonKey(name: 'RuTeamSettings')
   String get ruTeamSettings;
   @override
 
-  /// EnTeams.
+  /// "teams".
   @JsonKey(name: 'EnTeams')
   String get enTeams;
   @override
 
-  /// EnToTeam.
+  /// "to team".
   @JsonKey(name: 'EnToTeam')
   String get enToTeam;
   @override
 
-  /// RuInTeam.
+  /// "в команде".
   @JsonKey(name: 'RuInTeam')
   String get ruInTeam;
   @override
 
-  /// RuTeam.
+  /// "команда".
   @JsonKey(name: 'RuTeam')
   String get ruTeam;
   @override
 
-  /// RuTeamAccess.
+  /// "доступ к команде".
   @JsonKey(name: 'RuTeamAccess')
   String get ruTeamAccess;
   @override
 
-  /// RuTeamAdmin.
+  /// "администратор команды".
   @JsonKey(name: 'RuTeamAdmin')
   String get ruTeamAdmin;
   @override
 
-  /// RuTeamAdmins.
+  /// "администраторы команды".
   @JsonKey(name: 'RuTeamAdmins')
   String get ruTeamAdmins;
   @override
 
-  /// RuTeamD.
+  /// "команде".
   @JsonKey(name: 'RuTeamD')
   String get ruTeamD;
   @override
 
-  /// RuTeamGuest.
+  /// "гость команды".
   @JsonKey(name: 'RuTeamGuest')
   String get ruTeamGuest;
   @override
 
-  /// RuTeamMember.
+  /// "участник команды".
   @JsonKey(name: 'RuTeamMember')
   String get ruTeamMember;
   @override
 
-  /// RuTeamMembers.
+  /// "участники команды".
   @JsonKey(name: 'RuTeamMembers')
   String get ruTeamMembers;
   @override
 
-  /// RuTeamOwner.
+  /// "владелец команды".
   @JsonKey(name: 'RuTeamOwner')
   String get ruTeamOwner;
   @override
 
-  /// RuTeamP.
+  /// "команде".
   @JsonKey(name: 'RuTeamP')
   String get ruTeamP;
   @override
 
-  /// RuTeamR.
+  /// "команды".
   @JsonKey(name: 'RuTeamR')
   String get ruTeamR;
   @override
 
-  /// RuTeams.
+  /// "команды".
   @JsonKey(name: 'RuTeams')
   String get ruTeams;
   @override
 
-  /// RuTeamsD.
+  /// "командам".
   @JsonKey(name: 'RuTeamsD')
   String get ruTeamsD;
   @override
 
-  /// RuTeamsP.
+  /// "командах".
   @JsonKey(name: 'RuTeamsP')
   String get ruTeamsP;
   @override
 
-  /// RuTeamsR.
+  /// "команд".
   @JsonKey(name: 'RuTeamsR')
   String get ruTeamsR;
   @override
 
-  /// RuTeamsT.
+  /// "командами".
   @JsonKey(name: 'RuTeamsT')
   String get ruTeamsT;
   @override
 
-  /// RuTeamsV.
+  /// "команды".
   @JsonKey(name: 'RuTeamsV')
   String get ruTeamsV;
   @override
 
-  /// RuTeamT.
+  /// "командой".
   @JsonKey(name: 'RuTeamT')
   String get ruTeamT;
   @override
 
-  /// RuTeamV.
+  /// "команду".
   @JsonKey(name: 'RuTeamV')
   String get ruTeamV;
   @override
 
-  /// RuToTeam.
+  /// "в команду".
   @JsonKey(name: 'RuToTeam')
   String get ruToTeam;
   @override
+  @JsonKey(ignore: true)
   _$TermsCopyWith<_Terms> get copyWith;
 }

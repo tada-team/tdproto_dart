@@ -30,8 +30,8 @@ class _$UserTearOff {
       @required @JsonKey(name: 'unread_first') bool unreadFirst,
       @required @JsonKey(name: 'munread_first') bool mUnreadFirst,
       @required @JsonKey(name: 'timezone') String timezone,
-      @JsonKey(name: 'quiet_time_start') String quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish') String quietTimeFinish}) {
+      @required @JsonKey(name: 'quiet_time_start') String quietTimeStart,
+      @required @JsonKey(name: 'quiet_time_finish') String quietTimeFinish}) {
     return _User(
       phone: phone,
       email: email,
@@ -119,6 +119,7 @@ mixin _$User {
   String get quietTimeFinish;
 
   Map<String, dynamic> toJson();
+  @JsonKey(ignore: true)
   $UserCopyWith<User> get copyWith;
 }
 
@@ -267,14 +268,16 @@ class _$_User implements _User {
       @required @JsonKey(name: 'unread_first') this.unreadFirst,
       @required @JsonKey(name: 'munread_first') this.mUnreadFirst,
       @required @JsonKey(name: 'timezone') this.timezone,
-      @JsonKey(name: 'quiet_time_start') this.quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish') this.quietTimeFinish})
+      @required @JsonKey(name: 'quiet_time_start') this.quietTimeStart,
+      @required @JsonKey(name: 'quiet_time_finish') this.quietTimeFinish})
       : assert(altSend != null),
         assert(asteriskMention != null),
         assert(alwaysSendPushes != null),
         assert(unreadFirst != null),
         assert(mUnreadFirst != null),
-        assert(timezone != null);
+        assert(timezone != null),
+        assert(quietTimeStart != null),
+        assert(quietTimeFinish != null);
 
   factory _$_User.fromJson(Map<String, dynamic> json) => _$_$_UserFromJson(json);
 
@@ -402,6 +405,7 @@ class _$_User implements _User {
       const DeepCollectionEquality().hash(quietTimeStart) ^
       const DeepCollectionEquality().hash(quietTimeFinish);
 
+  @JsonKey(ignore: true)
   @override
   _$UserCopyWith<_User> get copyWith => __$UserCopyWithImpl<_User>(this, _$identity);
 
@@ -425,8 +429,8 @@ abstract class _User implements User {
       @required @JsonKey(name: 'unread_first') bool unreadFirst,
       @required @JsonKey(name: 'munread_first') bool mUnreadFirst,
       @required @JsonKey(name: 'timezone') String timezone,
-      @JsonKey(name: 'quiet_time_start') String quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish') String quietTimeFinish}) = _$_User;
+      @required @JsonKey(name: 'quiet_time_start') String quietTimeStart,
+      @required @JsonKey(name: 'quiet_time_finish') String quietTimeFinish}) = _$_User;
 
   factory _User.fromJson(Map<String, dynamic> json) = _$_User.fromJson;
 
@@ -501,5 +505,6 @@ abstract class _User implements User {
   @JsonKey(name: 'quiet_time_finish')
   String get quietTimeFinish;
   @override
+  @JsonKey(ignore: true)
   _$UserCopyWith<_User> get copyWith;
 }
