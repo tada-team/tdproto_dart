@@ -5,6 +5,9 @@
 ### Added
 - Add `User` model.
 
+## [1.0.2-dev] - 2021-07-28
+### Reworked
+- Reworked package
 
 ## [1.0.1-dev] - 2020-12-27
 ### Added
