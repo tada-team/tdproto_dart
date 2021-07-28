@@ -142,7 +142,7 @@ mixin _$Team {
   @JsonKey(name: 'use_patronymic')
   bool get usePatronymic;
 
-  /// Username fields ordering.
+  /// Username fields ordering. Possible values: "family_name", "given_name", "patronymic".
   @JsonKey(name: 'user_fields')
   List<String> get userFields;
 
@@ -611,7 +611,7 @@ class _$_Team implements _Team {
   final bool usePatronymic;
   @override
 
-  /// Username fields ordering.
+  /// Username fields ordering. Possible values: "family_name", "given_name", "patronymic".
   @JsonKey(name: 'user_fields')
   final List<String> userFields;
   @override
@@ -903,7 +903,7 @@ abstract class _Team implements Team {
   bool get usePatronymic;
   @override
 
-  /// Username fields ordering.
+  /// Username fields ordering. Possible values: "family_name", "given_name", "patronymic".
   @JsonKey(name: 'user_fields')
   List<String> get userFields;
   @override
