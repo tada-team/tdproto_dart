@@ -58,6 +58,9 @@ abstract class UserWithMe with _$UserWithMe {
 
     /// Finish silently time (no pushes, no sounds).
     @JsonKey(name: 'quiet_time_finish') @required String quietTimeFinish,
+
+    /// Icon data.
+    @JsonKey(name: 'icons') @required IconData icons,
   }) = _UserWithMe;
 
   factory UserWithMe.fromJson(Map<String, dynamic> json) => _$UserWithMeFromJson(json);

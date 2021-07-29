@@ -34,7 +34,8 @@ class _$UserWithMeTearOff {
       @required @JsonKey(name: 'munread_first') bool mUnreadFirst,
       @required @JsonKey(name: 'timezone') String timezone,
       @required @JsonKey(name: 'quiet_time_start') String quietTimeStart,
-      @required @JsonKey(name: 'quiet_time_finish') String quietTimeFinish}) {
+      @required @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
+      @required @JsonKey(name: 'icons') IconData icons}) {
     return _UserWithMe(
       inviter: inviter,
       teams: teams,
@@ -53,6 +54,7 @@ class _$UserWithMeTearOff {
       timezone: timezone,
       quietTimeStart: quietTimeStart,
       quietTimeFinish: quietTimeFinish,
+      icons: icons,
     );
   }
 
@@ -136,6 +138,10 @@ mixin _$UserWithMe {
   @JsonKey(name: 'quiet_time_finish')
   String get quietTimeFinish;
 
+  /// Icon data.
+  @JsonKey(name: 'icons')
+  IconData get icons;
+
   Map<String, dynamic> toJson();
   @JsonKey(ignore: true)
   $UserWithMeCopyWith<UserWithMe> get copyWith;
@@ -161,7 +167,10 @@ abstract class $UserWithMeCopyWith<$Res> {
       @JsonKey(name: 'munread_first') bool mUnreadFirst,
       @JsonKey(name: 'timezone') String timezone,
       @JsonKey(name: 'quiet_time_start') String quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish') String quietTimeFinish});
+      @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
+      @JsonKey(name: 'icons') IconData icons});
+
+  $IconDataCopyWith<$Res> get icons;
 }
 
 /// @nodoc
@@ -191,6 +200,7 @@ class _$UserWithMeCopyWithImpl<$Res> implements $UserWithMeCopyWith<$Res> {
     Object timezone = freezed,
     Object quietTimeStart = freezed,
     Object quietTimeFinish = freezed,
+    Object icons = freezed,
   }) {
     return _then(_value.copyWith(
       inviter: inviter == freezed ? _value.inviter : inviter as String,
@@ -210,7 +220,18 @@ class _$UserWithMeCopyWithImpl<$Res> implements $UserWithMeCopyWith<$Res> {
       timezone: timezone == freezed ? _value.timezone : timezone as String,
       quietTimeStart: quietTimeStart == freezed ? _value.quietTimeStart : quietTimeStart as String,
       quietTimeFinish: quietTimeFinish == freezed ? _value.quietTimeFinish : quietTimeFinish as String,
+      icons: icons == freezed ? _value.icons : icons as IconData,
     ));
+  }
+
+  @override
+  $IconDataCopyWith<$Res> get icons {
+    if (_value.icons == null) {
+      return null;
+    }
+    return $IconDataCopyWith<$Res>(_value.icons, (value) {
+      return _then(_value.copyWith(icons: value));
+    });
   }
 }
 
@@ -235,7 +256,11 @@ abstract class _$UserWithMeCopyWith<$Res> implements $UserWithMeCopyWith<$Res> {
       @JsonKey(name: 'munread_first') bool mUnreadFirst,
       @JsonKey(name: 'timezone') String timezone,
       @JsonKey(name: 'quiet_time_start') String quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish') String quietTimeFinish});
+      @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
+      @JsonKey(name: 'icons') IconData icons});
+
+  @override
+  $IconDataCopyWith<$Res> get icons;
 }
 
 /// @nodoc
@@ -265,6 +290,7 @@ class __$UserWithMeCopyWithImpl<$Res> extends _$UserWithMeCopyWithImpl<$Res> imp
     Object timezone = freezed,
     Object quietTimeStart = freezed,
     Object quietTimeFinish = freezed,
+    Object icons = freezed,
   }) {
     return _then(_UserWithMe(
       inviter: inviter == freezed ? _value.inviter : inviter as String,
@@ -284,6 +310,7 @@ class __$UserWithMeCopyWithImpl<$Res> extends _$UserWithMeCopyWithImpl<$Res> imp
       timezone: timezone == freezed ? _value.timezone : timezone as String,
       quietTimeStart: quietTimeStart == freezed ? _value.quietTimeStart : quietTimeStart as String,
       quietTimeFinish: quietTimeFinish == freezed ? _value.quietTimeFinish : quietTimeFinish as String,
+      icons: icons == freezed ? _value.icons : icons as IconData,
     ));
   }
 }
@@ -309,7 +336,8 @@ class _$_UserWithMe implements _UserWithMe {
       @required @JsonKey(name: 'munread_first') this.mUnreadFirst,
       @required @JsonKey(name: 'timezone') this.timezone,
       @required @JsonKey(name: 'quiet_time_start') this.quietTimeStart,
-      @required @JsonKey(name: 'quiet_time_finish') this.quietTimeFinish})
+      @required @JsonKey(name: 'quiet_time_finish') this.quietTimeFinish,
+      @required @JsonKey(name: 'icons') this.icons})
       : assert(teams != null),
         assert(devices != null),
         assert(altSend != null),
@@ -319,7 +347,8 @@ class _$_UserWithMe implements _UserWithMe {
         assert(mUnreadFirst != null),
         assert(timezone != null),
         assert(quietTimeStart != null),
-        assert(quietTimeFinish != null);
+        assert(quietTimeFinish != null),
+        assert(icons != null);
 
   factory _$_UserWithMe.fromJson(Map<String, dynamic> json) => _$_$_UserWithMeFromJson(json);
 
@@ -408,10 +437,15 @@ class _$_UserWithMe implements _UserWithMe {
   /// Finish silently time (no pushes, no sounds).
   @JsonKey(name: 'quiet_time_finish')
   final String quietTimeFinish;
+  @override
+
+  /// Icon data.
+  @JsonKey(name: 'icons')
+  final IconData icons;
 
   @override
   String toString() {
-    return 'UserWithMe(inviter: $inviter, teams: $teams, devices: $devices, phone: $phone, email: $email, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish)';
+    return 'UserWithMe(inviter: $inviter, teams: $teams, devices: $devices, phone: $phone, email: $email, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, icons: $icons)';
   }
 
   @override
@@ -444,7 +478,8 @@ class _$_UserWithMe implements _UserWithMe {
             (identical(other.quietTimeStart, quietTimeStart) ||
                 const DeepCollectionEquality().equals(other.quietTimeStart, quietTimeStart)) &&
             (identical(other.quietTimeFinish, quietTimeFinish) ||
-                const DeepCollectionEquality().equals(other.quietTimeFinish, quietTimeFinish)));
+                const DeepCollectionEquality().equals(other.quietTimeFinish, quietTimeFinish)) &&
+            (identical(other.icons, icons) || const DeepCollectionEquality().equals(other.icons, icons)));
   }
 
   @override
@@ -466,7 +501,8 @@ class _$_UserWithMe implements _UserWithMe {
       const DeepCollectionEquality().hash(mUnreadFirst) ^
       const DeepCollectionEquality().hash(timezone) ^
       const DeepCollectionEquality().hash(quietTimeStart) ^
-      const DeepCollectionEquality().hash(quietTimeFinish);
+      const DeepCollectionEquality().hash(quietTimeFinish) ^
+      const DeepCollectionEquality().hash(icons);
 
   @JsonKey(ignore: true)
   @override
@@ -496,7 +532,8 @@ abstract class _UserWithMe implements UserWithMe {
       @required @JsonKey(name: 'munread_first') bool mUnreadFirst,
       @required @JsonKey(name: 'timezone') String timezone,
       @required @JsonKey(name: 'quiet_time_start') String quietTimeStart,
-      @required @JsonKey(name: 'quiet_time_finish') String quietTimeFinish}) = _$_UserWithMe;
+      @required @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
+      @required @JsonKey(name: 'icons') IconData icons}) = _$_UserWithMe;
 
   factory _UserWithMe.fromJson(Map<String, dynamic> json) = _$_UserWithMe.fromJson;
 
@@ -585,6 +622,11 @@ abstract class _UserWithMe implements UserWithMe {
   /// Finish silently time (no pushes, no sounds).
   @JsonKey(name: 'quiet_time_finish')
   String get quietTimeFinish;
+  @override
+
+  /// Icon data.
+  @JsonKey(name: 'icons')
+  IconData get icons;
   @override
   @JsonKey(ignore: true)
   _$UserWithMeCopyWith<_UserWithMe> get copyWith;

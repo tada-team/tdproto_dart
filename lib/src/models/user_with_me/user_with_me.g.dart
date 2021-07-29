@@ -27,6 +27,7 @@ _$_UserWithMe _$_$_UserWithMeFromJson(Map<String, dynamic> json) {
     timezone: json['timezone'] as String,
     quietTimeStart: json['quiet_time_start'] as String,
     quietTimeFinish: json['quiet_time_finish'] as String,
+    icons: json['icons'] == null ? null : IconData.fromJson(json['icons'] as Map<String, dynamic>),
   );
 }
 
@@ -48,4 +49,5 @@ Map<String, dynamic> _$_$_UserWithMeToJson(_$_UserWithMe instance) => <String, d
       'timezone': instance.timezone,
       'quiet_time_start': instance.quietTimeStart,
       'quiet_time_finish': instance.quietTimeFinish,
+      'icons': instance.icons?.toJson(),
     };
