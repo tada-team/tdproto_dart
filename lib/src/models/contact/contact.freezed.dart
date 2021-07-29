@@ -288,7 +288,7 @@ mixin _$Contact {
   @JsonKey(name: 'can_call')
   bool get canCall;
 
-  /// Can I call create task for this contact.
+  /// Can I create task for this contact.
   @JsonKey(name: 'can_create_task')
   bool get canCreateTask;
 
@@ -1238,7 +1238,7 @@ class _$_Contact implements _Contact {
   final bool canCall;
   @override
 
-  /// Can I call create task for this contact.
+  /// Can I create task for this contact.
   @JsonKey(name: 'can_create_task')
   final bool canCreateTask;
   @override
@@ -1848,7 +1848,7 @@ abstract class _Contact implements Contact {
   bool get canCall;
   @override
 
-  /// Can I call create task for this contact.
+  /// Can I create task for this contact.
   @JsonKey(name: 'can_create_task')
   bool get canCreateTask;
   @override

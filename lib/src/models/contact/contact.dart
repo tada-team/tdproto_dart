@@ -59,7 +59,7 @@ abstract class Contact with _$Contact {
     /// Can I call to this contact.
     @JsonKey(name: 'can_call') bool canCall,
 
-    /// Can I call create task for this contact.
+    /// Can I create task for this contact.
     @JsonKey(name: 'can_create_task') bool canCreateTask,
 
     /// Can I import tasks in this team.
