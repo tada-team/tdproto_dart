@@ -12,6 +12,7 @@ _$_InvitableUser _$_$_InvitableUserFromJson(Map<String, dynamic> json) {
     node: json['node'] as String,
     displayName: json['display_name'] as String,
     icons: json['icons'] == null ? null : IconData.fromJson(json['icons'] as Map<String, dynamic>),
+    teams: (json['teams'] as List)?.map((e) => e as String)?.toList(),
   );
 }
 
@@ -20,4 +21,5 @@ Map<String, dynamic> _$_$_InvitableUserToJson(_$_InvitableUser instance) => <Str
       'node': instance.node,
       'display_name': instance.displayName,
       'icons': instance.icons?.toJson(),
+      'teams': instance.teams,
     };

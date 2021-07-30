@@ -21,12 +21,14 @@ class _$InvitableUserTearOff {
       {@required @JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'node') String node,
       @required @JsonKey(name: 'display_name') String displayName,
-      @required @JsonKey(name: 'icons') IconData icons}) {
+      @required @JsonKey(name: 'icons') IconData icons,
+      @JsonKey(name: 'teams') List<String> teams}) {
     return _InvitableUser(
       uid: uid,
       node: node,
       displayName: displayName,
       icons: icons,
+      teams: teams,
     );
   }
 
@@ -58,6 +60,10 @@ mixin _$InvitableUser {
   @JsonKey(name: 'icons')
   IconData get icons;
 
+  /// Common team uids, if any.
+  @JsonKey(name: 'teams')
+  List<String> get teams;
+
   Map<String, dynamic> toJson();
   @JsonKey(ignore: true)
   $InvitableUserCopyWith<InvitableUser> get copyWith;
@@ -71,7 +77,8 @@ abstract class $InvitableUserCopyWith<$Res> {
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'node') String node,
       @JsonKey(name: 'display_name') String displayName,
-      @JsonKey(name: 'icons') IconData icons});
+      @JsonKey(name: 'icons') IconData icons,
+      @JsonKey(name: 'teams') List<String> teams});
 
   $IconDataCopyWith<$Res> get icons;
 }
@@ -90,12 +97,14 @@ class _$InvitableUserCopyWithImpl<$Res> implements $InvitableUserCopyWith<$Res> 
     Object node = freezed,
     Object displayName = freezed,
     Object icons = freezed,
+    Object teams = freezed,
   }) {
     return _then(_value.copyWith(
       uid: uid == freezed ? _value.uid : uid as String,
       node: node == freezed ? _value.node : node as String,
       displayName: displayName == freezed ? _value.displayName : displayName as String,
       icons: icons == freezed ? _value.icons : icons as IconData,
+      teams: teams == freezed ? _value.teams : teams as List<String>,
     ));
   }
 
@@ -119,7 +128,8 @@ abstract class _$InvitableUserCopyWith<$Res> implements $InvitableUserCopyWith<$
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'node') String node,
       @JsonKey(name: 'display_name') String displayName,
-      @JsonKey(name: 'icons') IconData icons});
+      @JsonKey(name: 'icons') IconData icons,
+      @JsonKey(name: 'teams') List<String> teams});
 
   @override
   $IconDataCopyWith<$Res> get icons;
@@ -140,12 +150,14 @@ class __$InvitableUserCopyWithImpl<$Res> extends _$InvitableUserCopyWithImpl<$Re
     Object node = freezed,
     Object displayName = freezed,
     Object icons = freezed,
+    Object teams = freezed,
   }) {
     return _then(_InvitableUser(
       uid: uid == freezed ? _value.uid : uid as String,
       node: node == freezed ? _value.node : node as String,
       displayName: displayName == freezed ? _value.displayName : displayName as String,
       icons: icons == freezed ? _value.icons : icons as IconData,
+      teams: teams == freezed ? _value.teams : teams as List<String>,
     ));
   }
 }
@@ -158,7 +170,8 @@ class _$_InvitableUser implements _InvitableUser {
       {@required @JsonKey(name: 'uid') this.uid,
       @JsonKey(name: 'node') this.node,
       @required @JsonKey(name: 'display_name') this.displayName,
-      @required @JsonKey(name: 'icons') this.icons})
+      @required @JsonKey(name: 'icons') this.icons,
+      @JsonKey(name: 'teams') this.teams})
       : assert(uid != null),
         assert(displayName != null),
         assert(icons != null);
@@ -185,10 +198,15 @@ class _$_InvitableUser implements _InvitableUser {
   /// Icons.
   @JsonKey(name: 'icons')
   final IconData icons;
+  @override
+
+  /// Common team uids, if any.
+  @JsonKey(name: 'teams')
+  final List<String> teams;
 
   @override
   String toString() {
-    return 'InvitableUser(uid: $uid, node: $node, displayName: $displayName, icons: $icons)';
+    return 'InvitableUser(uid: $uid, node: $node, displayName: $displayName, icons: $icons, teams: $teams)';
   }
 
   @override
@@ -199,7 +217,8 @@ class _$_InvitableUser implements _InvitableUser {
             (identical(other.node, node) || const DeepCollectionEquality().equals(other.node, node)) &&
             (identical(other.displayName, displayName) ||
                 const DeepCollectionEquality().equals(other.displayName, displayName)) &&
-            (identical(other.icons, icons) || const DeepCollectionEquality().equals(other.icons, icons)));
+            (identical(other.icons, icons) || const DeepCollectionEquality().equals(other.icons, icons)) &&
+            (identical(other.teams, teams) || const DeepCollectionEquality().equals(other.teams, teams)));
   }
 
   @override
@@ -208,7 +227,8 @@ class _$_InvitableUser implements _InvitableUser {
       const DeepCollectionEquality().hash(uid) ^
       const DeepCollectionEquality().hash(node) ^
       const DeepCollectionEquality().hash(displayName) ^
-      const DeepCollectionEquality().hash(icons);
+      const DeepCollectionEquality().hash(icons) ^
+      const DeepCollectionEquality().hash(teams);
 
   @JsonKey(ignore: true)
   @override
@@ -226,7 +246,8 @@ abstract class _InvitableUser implements InvitableUser {
       {@required @JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'node') String node,
       @required @JsonKey(name: 'display_name') String displayName,
-      @required @JsonKey(name: 'icons') IconData icons}) = _$_InvitableUser;
+      @required @JsonKey(name: 'icons') IconData icons,
+      @JsonKey(name: 'teams') List<String> teams}) = _$_InvitableUser;
 
   factory _InvitableUser.fromJson(Map<String, dynamic> json) = _$_InvitableUser.fromJson;
 
@@ -250,6 +271,11 @@ abstract class _InvitableUser implements InvitableUser {
   /// Icons.
   @JsonKey(name: 'icons')
   IconData get icons;
+  @override
+
+  /// Common team uids, if any.
+  @JsonKey(name: 'teams')
+  List<String> get teams;
   @override
   @JsonKey(ignore: true)
   _$InvitableUserCopyWith<_InvitableUser> get copyWith;
