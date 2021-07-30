@@ -29,6 +29,9 @@ abstract class Contact with _$Contact {
     /// Icons data.
     @JsonKey(name: 'icons') @required IconData icons,
 
+    /// Object version.
+    @JsonKey(name: 'gentime') @required int gentime,
+
     /// Role in this team.
     @JsonKey(name: 'role') @required String role,
 
@@ -176,13 +179,11 @@ abstract class Contact with _$Contact {
     /// Can I view/join public tasks in this team.
     @JsonKey(name: 'can_join_public_tasks') bool canJoinPublicTasks,
 
-    /// Deprecated: use CanDeleteAnyMessage in chat object.
-    @Deprecated('Deprecated: use CanDeleteAnyMessage in chat object.')
-    @JsonKey(name: 'can_delete_any_message')
-        bool canDeleteAnyMessage,
-
     /// Extra contact fields.
     @JsonKey(name: 'custom_fields') ContactCustomFields customFields,
+
+    /// Deprecated.
+    @Deprecated('Deprecated.') @JsonKey(name: 'can_delete_any_message') bool canDeleteAnyMessage,
   }) = _Contact;
 
   factory Contact.fromJson(Map<String, dynamic> json) => _$ContactFromJson(json);

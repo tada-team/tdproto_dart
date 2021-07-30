@@ -15,6 +15,7 @@ _$_Contact _$_$_ContactFromJson(Map<String, dynamic> json) {
     contactEmail: json['contact_email'] as String,
     contactPhone: json['contact_phone'] as String,
     icons: json['icons'] == null ? null : IconData.fromJson(json['icons'] as Map<String, dynamic>),
+    gentime: json['gentime'] as int,
     role: json['role'] as String,
     mood: json['mood'] as String,
     teamStatus: json['status'] as String,
@@ -64,10 +65,10 @@ _$_Contact _$_$_ContactFromJson(Map<String, dynamic> json) {
     canCreateGroup: json['can_create_group'] as bool,
     canJoinPublicGroups: json['can_join_public_groups'] as bool,
     canJoinPublicTasks: json['can_join_public_tasks'] as bool,
-    canDeleteAnyMessage: json['can_delete_any_message'] as bool,
     customFields: json['custom_fields'] == null
         ? null
         : ContactCustomFields.fromJson(json['custom_fields'] as Map<String, dynamic>),
+    canDeleteAnyMessage: json['can_delete_any_message'] as bool,
   );
 }
 
@@ -79,6 +80,7 @@ Map<String, dynamic> _$_$_ContactToJson(_$_Contact instance) => <String, dynamic
       'contact_email': instance.contactEmail,
       'contact_phone': instance.contactPhone,
       'icons': instance.icons?.toJson(),
+      'gentime': instance.gentime,
       'role': instance.role,
       'mood': instance.mood,
       'status': instance.teamStatus,
@@ -128,6 +130,6 @@ Map<String, dynamic> _$_$_ContactToJson(_$_Contact instance) => <String, dynamic
       'can_create_group': instance.canCreateGroup,
       'can_join_public_groups': instance.canJoinPublicGroups,
       'can_join_public_tasks': instance.canJoinPublicTasks,
-      'can_delete_any_message': instance.canDeleteAnyMessage,
       'custom_fields': instance.customFields?.toJson(),
+      'can_delete_any_message': instance.canDeleteAnyMessage,
     };

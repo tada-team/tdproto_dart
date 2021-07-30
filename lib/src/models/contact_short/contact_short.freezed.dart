@@ -21,12 +21,14 @@ class _$ContactShortTearOff {
       {@required @JsonKey(name: 'jid') String jid,
       @required @JsonKey(name: 'display_name') String displayName,
       @required @JsonKey(name: 'short_name') String shortName,
-      @required @JsonKey(name: 'icons') IconData icons}) {
+      @required @JsonKey(name: 'icons') IconData icons,
+      @required @JsonKey(name: 'gentime') int gentime}) {
     return _ContactShort(
       jid: jid,
       displayName: displayName,
       shortName: shortName,
       icons: icons,
+      gentime: gentime,
     );
   }
 
@@ -58,6 +60,10 @@ mixin _$ContactShort {
   @JsonKey(name: 'icons')
   IconData get icons;
 
+  /// Object version.
+  @JsonKey(name: 'gentime')
+  int get gentime;
+
   Map<String, dynamic> toJson();
   @JsonKey(ignore: true)
   $ContactShortCopyWith<ContactShort> get copyWith;
@@ -71,7 +77,8 @@ abstract class $ContactShortCopyWith<$Res> {
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'display_name') String displayName,
       @JsonKey(name: 'short_name') String shortName,
-      @JsonKey(name: 'icons') IconData icons});
+      @JsonKey(name: 'icons') IconData icons,
+      @JsonKey(name: 'gentime') int gentime});
 
   $IconDataCopyWith<$Res> get icons;
 }
@@ -90,12 +97,14 @@ class _$ContactShortCopyWithImpl<$Res> implements $ContactShortCopyWith<$Res> {
     Object displayName = freezed,
     Object shortName = freezed,
     Object icons = freezed,
+    Object gentime = freezed,
   }) {
     return _then(_value.copyWith(
       jid: jid == freezed ? _value.jid : jid as String,
       displayName: displayName == freezed ? _value.displayName : displayName as String,
       shortName: shortName == freezed ? _value.shortName : shortName as String,
       icons: icons == freezed ? _value.icons : icons as IconData,
+      gentime: gentime == freezed ? _value.gentime : gentime as int,
     ));
   }
 
@@ -119,7 +128,8 @@ abstract class _$ContactShortCopyWith<$Res> implements $ContactShortCopyWith<$Re
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'display_name') String displayName,
       @JsonKey(name: 'short_name') String shortName,
-      @JsonKey(name: 'icons') IconData icons});
+      @JsonKey(name: 'icons') IconData icons,
+      @JsonKey(name: 'gentime') int gentime});
 
   @override
   $IconDataCopyWith<$Res> get icons;
@@ -140,12 +150,14 @@ class __$ContactShortCopyWithImpl<$Res> extends _$ContactShortCopyWithImpl<$Res>
     Object displayName = freezed,
     Object shortName = freezed,
     Object icons = freezed,
+    Object gentime = freezed,
   }) {
     return _then(_ContactShort(
       jid: jid == freezed ? _value.jid : jid as String,
       displayName: displayName == freezed ? _value.displayName : displayName as String,
       shortName: shortName == freezed ? _value.shortName : shortName as String,
       icons: icons == freezed ? _value.icons : icons as IconData,
+      gentime: gentime == freezed ? _value.gentime : gentime as int,
     ));
   }
 }
@@ -158,11 +170,13 @@ class _$_ContactShort implements _ContactShort {
       {@required @JsonKey(name: 'jid') this.jid,
       @required @JsonKey(name: 'display_name') this.displayName,
       @required @JsonKey(name: 'short_name') this.shortName,
-      @required @JsonKey(name: 'icons') this.icons})
+      @required @JsonKey(name: 'icons') this.icons,
+      @required @JsonKey(name: 'gentime') this.gentime})
       : assert(jid != null),
         assert(displayName != null),
         assert(shortName != null),
-        assert(icons != null);
+        assert(icons != null),
+        assert(gentime != null);
 
   factory _$_ContactShort.fromJson(Map<String, dynamic> json) => _$_$_ContactShortFromJson(json);
 
@@ -186,10 +200,15 @@ class _$_ContactShort implements _ContactShort {
   /// Icons data.
   @JsonKey(name: 'icons')
   final IconData icons;
+  @override
+
+  /// Object version.
+  @JsonKey(name: 'gentime')
+  final int gentime;
 
   @override
   String toString() {
-    return 'ContactShort(jid: $jid, displayName: $displayName, shortName: $shortName, icons: $icons)';
+    return 'ContactShort(jid: $jid, displayName: $displayName, shortName: $shortName, icons: $icons, gentime: $gentime)';
   }
 
   @override
@@ -201,7 +220,8 @@ class _$_ContactShort implements _ContactShort {
                 const DeepCollectionEquality().equals(other.displayName, displayName)) &&
             (identical(other.shortName, shortName) ||
                 const DeepCollectionEquality().equals(other.shortName, shortName)) &&
-            (identical(other.icons, icons) || const DeepCollectionEquality().equals(other.icons, icons)));
+            (identical(other.icons, icons) || const DeepCollectionEquality().equals(other.icons, icons)) &&
+            (identical(other.gentime, gentime) || const DeepCollectionEquality().equals(other.gentime, gentime)));
   }
 
   @override
@@ -210,7 +230,8 @@ class _$_ContactShort implements _ContactShort {
       const DeepCollectionEquality().hash(jid) ^
       const DeepCollectionEquality().hash(displayName) ^
       const DeepCollectionEquality().hash(shortName) ^
-      const DeepCollectionEquality().hash(icons);
+      const DeepCollectionEquality().hash(icons) ^
+      const DeepCollectionEquality().hash(gentime);
 
   @JsonKey(ignore: true)
   @override
@@ -227,7 +248,8 @@ abstract class _ContactShort implements ContactShort {
       {@required @JsonKey(name: 'jid') String jid,
       @required @JsonKey(name: 'display_name') String displayName,
       @required @JsonKey(name: 'short_name') String shortName,
-      @required @JsonKey(name: 'icons') IconData icons}) = _$_ContactShort;
+      @required @JsonKey(name: 'icons') IconData icons,
+      @required @JsonKey(name: 'gentime') int gentime}) = _$_ContactShort;
 
   factory _ContactShort.fromJson(Map<String, dynamic> json) = _$_ContactShort.fromJson;
 
@@ -251,6 +273,11 @@ abstract class _ContactShort implements ContactShort {
   /// Icons data.
   @JsonKey(name: 'icons')
   IconData get icons;
+  @override
+
+  /// Object version.
+  @JsonKey(name: 'gentime')
+  int get gentime;
   @override
   @JsonKey(ignore: true)
   _$ContactShortCopyWith<_ContactShort> get copyWith;
