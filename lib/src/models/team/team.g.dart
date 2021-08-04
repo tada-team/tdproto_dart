@@ -40,6 +40,7 @@ _$_Team _$_$_TeamFromJson(Map<String, dynamic> json) {
     theme: json['theme'] == null ? null : Theme.fromJson(json['theme'] as Map<String, dynamic>),
     hideArchivedUsers: json['hide_archived_users'] as bool,
     pinned: json['pinned'] as bool,
+    availableTariffs: (json['available_tariffs'] as List)?.map((e) => e as String)?.toList(),
   );
 }
 
@@ -74,4 +75,5 @@ Map<String, dynamic> _$_$_TeamToJson(_$_Team instance) => <String, dynamic>{
       'theme': instance.theme?.toJson(),
       'hide_archived_users': instance.hideArchivedUsers,
       'pinned': instance.pinned,
+      'available_tariffs': instance.availableTariffs,
     };

@@ -47,7 +47,8 @@ class _$TeamTearOff {
       @JsonKey(name: 'single_group') String singleGroup,
       @JsonKey(name: 'theme') Theme theme,
       @JsonKey(name: 'hide_archived_users') bool hideArchivedUsers,
-      @JsonKey(name: 'pinned') bool pinned}) {
+      @JsonKey(name: 'pinned') bool pinned,
+      @JsonKey(name: 'available_tariffs') List<String> availableTariffs}) {
     return _Team(
       uid: uid,
       isArchive: isArchive,
@@ -79,6 +80,7 @@ class _$TeamTearOff {
       theme: theme,
       hideArchivedUsers: hideArchivedUsers,
       pinned: pinned,
+      availableTariffs: availableTariffs,
     );
   }
 
@@ -214,6 +216,10 @@ mixin _$Team {
   @JsonKey(name: 'pinned')
   bool get pinned;
 
+  /// Team's available tariff by includig archive ones.
+  @JsonKey(name: 'available_tariffs')
+  List<String> get availableTariffs;
+
   Map<String, dynamic> toJson();
   @JsonKey(ignore: true)
   $TeamCopyWith<Team> get copyWith;
@@ -252,7 +258,8 @@ abstract class $TeamCopyWith<$Res> {
       @JsonKey(name: 'single_group') String singleGroup,
       @JsonKey(name: 'theme') Theme theme,
       @JsonKey(name: 'hide_archived_users') bool hideArchivedUsers,
-      @JsonKey(name: 'pinned') bool pinned});
+      @JsonKey(name: 'pinned') bool pinned,
+      @JsonKey(name: 'available_tariffs') List<String> availableTariffs});
 
   $IconDataCopyWith<$Res> get icons;
   $TeamUnreadCopyWith<$Res> get unreads;
@@ -300,6 +307,7 @@ class _$TeamCopyWithImpl<$Res> implements $TeamCopyWith<$Res> {
     Object theme = freezed,
     Object hideArchivedUsers = freezed,
     Object pinned = freezed,
+    Object availableTariffs = freezed,
   }) {
     return _then(_value.copyWith(
       uid: uid == freezed ? _value.uid : uid as String,
@@ -334,6 +342,7 @@ class _$TeamCopyWithImpl<$Res> implements $TeamCopyWith<$Res> {
       theme: theme == freezed ? _value.theme : theme as Theme,
       hideArchivedUsers: hideArchivedUsers == freezed ? _value.hideArchivedUsers : hideArchivedUsers as bool,
       pinned: pinned == freezed ? _value.pinned : pinned as bool,
+      availableTariffs: availableTariffs == freezed ? _value.availableTariffs : availableTariffs as List<String>,
     ));
   }
 
@@ -412,7 +421,8 @@ abstract class _$TeamCopyWith<$Res> implements $TeamCopyWith<$Res> {
       @JsonKey(name: 'single_group') String singleGroup,
       @JsonKey(name: 'theme') Theme theme,
       @JsonKey(name: 'hide_archived_users') bool hideArchivedUsers,
-      @JsonKey(name: 'pinned') bool pinned});
+      @JsonKey(name: 'pinned') bool pinned,
+      @JsonKey(name: 'available_tariffs') List<String> availableTariffs});
 
   @override
   $IconDataCopyWith<$Res> get icons;
@@ -463,6 +473,7 @@ class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res> implements _$Te
     Object theme = freezed,
     Object hideArchivedUsers = freezed,
     Object pinned = freezed,
+    Object availableTariffs = freezed,
   }) {
     return _then(_Team(
       uid: uid == freezed ? _value.uid : uid as String,
@@ -497,6 +508,7 @@ class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res> implements _$Te
       theme: theme == freezed ? _value.theme : theme as Theme,
       hideArchivedUsers: hideArchivedUsers == freezed ? _value.hideArchivedUsers : hideArchivedUsers as bool,
       pinned: pinned == freezed ? _value.pinned : pinned as bool,
+      availableTariffs: availableTariffs == freezed ? _value.availableTariffs : availableTariffs as List<String>,
     ));
   }
 }
@@ -535,7 +547,8 @@ class _$_Team implements _Team {
       @JsonKey(name: 'single_group') this.singleGroup,
       @JsonKey(name: 'theme') this.theme,
       @JsonKey(name: 'hide_archived_users') this.hideArchivedUsers,
-      @JsonKey(name: 'pinned') this.pinned})
+      @JsonKey(name: 'pinned') this.pinned,
+      @JsonKey(name: 'available_tariffs') this.availableTariffs})
       : assert(uid != null),
         assert(gentime != null),
         assert(name != null),
@@ -699,10 +712,15 @@ class _$_Team implements _Team {
   /// Team pinned.
   @JsonKey(name: 'pinned')
   final bool pinned;
+  @override
+
+  /// Team's available tariff by includig archive ones.
+  @JsonKey(name: 'available_tariffs')
+  final List<String> availableTariffs;
 
   @override
   String toString() {
-    return 'Team(uid: $uid, isArchive: $isArchive, gentime: $gentime, name: $name, defaultTaskDeadline: $defaultTaskDeadline, maxMessageUpdateAge: $maxMessageUpdateAge, icons: $icons, lastActive: $lastActive, changeableStatuses: $changeableStatuses, badProfile: $badProfile, needConfirmation: $needConfirmation, usePatronymic: $usePatronymic, userFields: $userFields, displayFamilyNameFirst: $displayFamilyNameFirst, useTaskImportance: $useTaskImportance, taskImportanceMin: $taskImportanceMin, taskImportanceMax: $taskImportanceMax, taskImportanceRev: $taskImportanceRev, useTaskUrgency: $useTaskUrgency, useTaskComplexity: $useTaskComplexity, useTaskSpentTime: $useTaskSpentTime, uploadsSize: $uploadsSize, uploadsSizeLimit: $uploadsSizeLimit, unreads: $unreads, me: $me, contacts: $contacts, singleGroup: $singleGroup, theme: $theme, hideArchivedUsers: $hideArchivedUsers, pinned: $pinned)';
+    return 'Team(uid: $uid, isArchive: $isArchive, gentime: $gentime, name: $name, defaultTaskDeadline: $defaultTaskDeadline, maxMessageUpdateAge: $maxMessageUpdateAge, icons: $icons, lastActive: $lastActive, changeableStatuses: $changeableStatuses, badProfile: $badProfile, needConfirmation: $needConfirmation, usePatronymic: $usePatronymic, userFields: $userFields, displayFamilyNameFirst: $displayFamilyNameFirst, useTaskImportance: $useTaskImportance, taskImportanceMin: $taskImportanceMin, taskImportanceMax: $taskImportanceMax, taskImportanceRev: $taskImportanceRev, useTaskUrgency: $useTaskUrgency, useTaskComplexity: $useTaskComplexity, useTaskSpentTime: $useTaskSpentTime, uploadsSize: $uploadsSize, uploadsSizeLimit: $uploadsSizeLimit, unreads: $unreads, me: $me, contacts: $contacts, singleGroup: $singleGroup, theme: $theme, hideArchivedUsers: $hideArchivedUsers, pinned: $pinned, availableTariffs: $availableTariffs)';
   }
 
   @override
@@ -759,7 +777,9 @@ class _$_Team implements _Team {
             (identical(other.theme, theme) || const DeepCollectionEquality().equals(other.theme, theme)) &&
             (identical(other.hideArchivedUsers, hideArchivedUsers) ||
                 const DeepCollectionEquality().equals(other.hideArchivedUsers, hideArchivedUsers)) &&
-            (identical(other.pinned, pinned) || const DeepCollectionEquality().equals(other.pinned, pinned)));
+            (identical(other.pinned, pinned) || const DeepCollectionEquality().equals(other.pinned, pinned)) &&
+            (identical(other.availableTariffs, availableTariffs) ||
+                const DeepCollectionEquality().equals(other.availableTariffs, availableTariffs)));
   }
 
   @override
@@ -794,7 +814,8 @@ class _$_Team implements _Team {
       const DeepCollectionEquality().hash(singleGroup) ^
       const DeepCollectionEquality().hash(theme) ^
       const DeepCollectionEquality().hash(hideArchivedUsers) ^
-      const DeepCollectionEquality().hash(pinned);
+      const DeepCollectionEquality().hash(pinned) ^
+      const DeepCollectionEquality().hash(availableTariffs);
 
   @JsonKey(ignore: true)
   @override
@@ -837,7 +858,8 @@ abstract class _Team implements Team {
       @JsonKey(name: 'single_group') String singleGroup,
       @JsonKey(name: 'theme') Theme theme,
       @JsonKey(name: 'hide_archived_users') bool hideArchivedUsers,
-      @JsonKey(name: 'pinned') bool pinned}) = _$_Team;
+      @JsonKey(name: 'pinned') bool pinned,
+      @JsonKey(name: 'available_tariffs') List<String> availableTariffs}) = _$_Team;
 
   factory _Team.fromJson(Map<String, dynamic> json) = _$_Team.fromJson;
 
@@ -991,6 +1013,11 @@ abstract class _Team implements Team {
   /// Team pinned.
   @JsonKey(name: 'pinned')
   bool get pinned;
+  @override
+
+  /// Team's available tariff by includig archive ones.
+  @JsonKey(name: 'available_tariffs')
+  List<String> get availableTariffs;
   @override
   @JsonKey(ignore: true)
   _$TeamCopyWith<_Team> get copyWith;

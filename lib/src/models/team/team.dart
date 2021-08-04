@@ -97,6 +97,9 @@ abstract class Team with _$Team {
 
     /// Team pinned.
     @JsonKey(name: 'pinned') bool pinned,
+
+    /// Team's available tariff by includig archive ones.
+    @JsonKey(name: 'available_tariffs') List<String> availableTariffs,
   }) = _Team;
 
   factory Team.fromJson(Map<String, dynamic> json) => _$TeamFromJson(json);
