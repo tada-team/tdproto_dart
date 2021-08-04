@@ -27,6 +27,7 @@ class _$UserTearOff {
       @required @JsonKey(name: 'alt_send') bool altSend,
       @required @JsonKey(name: 'asterisk_mention') bool asteriskMention,
       @required @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
+      @required @JsonKey(name: 'hide_pushes_content') bool hidePushesContent,
       @required @JsonKey(name: 'unread_first') bool unreadFirst,
       @required @JsonKey(name: 'munread_first') bool mUnreadFirst,
       @required @JsonKey(name: 'timezone') String timezone,
@@ -43,6 +44,7 @@ class _$UserTearOff {
       altSend: altSend,
       asteriskMention: asteriskMention,
       alwaysSendPushes: alwaysSendPushes,
+      hidePushesContent: hidePushesContent,
       unreadFirst: unreadFirst,
       mUnreadFirst: mUnreadFirst,
       timezone: timezone,
@@ -100,6 +102,10 @@ mixin _$User {
   @JsonKey(name: 'always_send_pushes')
   bool get alwaysSendPushes;
 
+  /// Hide pushes body.
+  @JsonKey(name: 'hide_pushes_content')
+  bool get hidePushesContent;
+
   /// Show unread chats in chat list first.
   @JsonKey(name: 'unread_first')
   bool get unreadFirst;
@@ -142,6 +148,7 @@ abstract class $UserCopyWith<$Res> {
       @JsonKey(name: 'alt_send') bool altSend,
       @JsonKey(name: 'asterisk_mention') bool asteriskMention,
       @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
+      @JsonKey(name: 'hide_pushes_content') bool hidePushesContent,
       @JsonKey(name: 'unread_first') bool unreadFirst,
       @JsonKey(name: 'munread_first') bool mUnreadFirst,
       @JsonKey(name: 'timezone') String timezone,
@@ -171,6 +178,7 @@ class _$UserCopyWithImpl<$Res> implements $UserCopyWith<$Res> {
     Object altSend = freezed,
     Object asteriskMention = freezed,
     Object alwaysSendPushes = freezed,
+    Object hidePushesContent = freezed,
     Object unreadFirst = freezed,
     Object mUnreadFirst = freezed,
     Object timezone = freezed,
@@ -188,6 +196,7 @@ class _$UserCopyWithImpl<$Res> implements $UserCopyWith<$Res> {
       altSend: altSend == freezed ? _value.altSend : altSend as bool,
       asteriskMention: asteriskMention == freezed ? _value.asteriskMention : asteriskMention as bool,
       alwaysSendPushes: alwaysSendPushes == freezed ? _value.alwaysSendPushes : alwaysSendPushes as bool,
+      hidePushesContent: hidePushesContent == freezed ? _value.hidePushesContent : hidePushesContent as bool,
       unreadFirst: unreadFirst == freezed ? _value.unreadFirst : unreadFirst as bool,
       mUnreadFirst: mUnreadFirst == freezed ? _value.mUnreadFirst : mUnreadFirst as bool,
       timezone: timezone == freezed ? _value.timezone : timezone as String,
@@ -222,6 +231,7 @@ abstract class _$UserCopyWith<$Res> implements $UserCopyWith<$Res> {
       @JsonKey(name: 'alt_send') bool altSend,
       @JsonKey(name: 'asterisk_mention') bool asteriskMention,
       @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
+      @JsonKey(name: 'hide_pushes_content') bool hidePushesContent,
       @JsonKey(name: 'unread_first') bool unreadFirst,
       @JsonKey(name: 'munread_first') bool mUnreadFirst,
       @JsonKey(name: 'timezone') String timezone,
@@ -251,6 +261,7 @@ class __$UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res> implements _$Us
     Object altSend = freezed,
     Object asteriskMention = freezed,
     Object alwaysSendPushes = freezed,
+    Object hidePushesContent = freezed,
     Object unreadFirst = freezed,
     Object mUnreadFirst = freezed,
     Object timezone = freezed,
@@ -268,6 +279,7 @@ class __$UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res> implements _$Us
       altSend: altSend == freezed ? _value.altSend : altSend as bool,
       asteriskMention: asteriskMention == freezed ? _value.asteriskMention : asteriskMention as bool,
       alwaysSendPushes: alwaysSendPushes == freezed ? _value.alwaysSendPushes : alwaysSendPushes as bool,
+      hidePushesContent: hidePushesContent == freezed ? _value.hidePushesContent : hidePushesContent as bool,
       unreadFirst: unreadFirst == freezed ? _value.unreadFirst : unreadFirst as bool,
       mUnreadFirst: mUnreadFirst == freezed ? _value.mUnreadFirst : mUnreadFirst as bool,
       timezone: timezone == freezed ? _value.timezone : timezone as String,
@@ -292,6 +304,7 @@ class _$_User implements _User {
       @required @JsonKey(name: 'alt_send') this.altSend,
       @required @JsonKey(name: 'asterisk_mention') this.asteriskMention,
       @required @JsonKey(name: 'always_send_pushes') this.alwaysSendPushes,
+      @required @JsonKey(name: 'hide_pushes_content') this.hidePushesContent,
       @required @JsonKey(name: 'unread_first') this.unreadFirst,
       @required @JsonKey(name: 'munread_first') this.mUnreadFirst,
       @required @JsonKey(name: 'timezone') this.timezone,
@@ -301,6 +314,7 @@ class _$_User implements _User {
       : assert(altSend != null),
         assert(asteriskMention != null),
         assert(alwaysSendPushes != null),
+        assert(hidePushesContent != null),
         assert(unreadFirst != null),
         assert(mUnreadFirst != null),
         assert(timezone != null),
@@ -357,6 +371,11 @@ class _$_User implements _User {
   final bool alwaysSendPushes;
   @override
 
+  /// Hide pushes body.
+  @JsonKey(name: 'hide_pushes_content')
+  final bool hidePushesContent;
+  @override
+
   /// Show unread chats in chat list first.
   @JsonKey(name: 'unread_first')
   final bool unreadFirst;
@@ -388,7 +407,7 @@ class _$_User implements _User {
 
   @override
   String toString() {
-    return 'User(phone: $phone, email: $email, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, icons: $icons)';
+    return 'User(phone: $phone, email: $email, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, hidePushesContent: $hidePushesContent, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, icons: $icons)';
   }
 
   @override
@@ -410,6 +429,8 @@ class _$_User implements _User {
                 const DeepCollectionEquality().equals(other.asteriskMention, asteriskMention)) &&
             (identical(other.alwaysSendPushes, alwaysSendPushes) ||
                 const DeepCollectionEquality().equals(other.alwaysSendPushes, alwaysSendPushes)) &&
+            (identical(other.hidePushesContent, hidePushesContent) ||
+                const DeepCollectionEquality().equals(other.hidePushesContent, hidePushesContent)) &&
             (identical(other.unreadFirst, unreadFirst) ||
                 const DeepCollectionEquality().equals(other.unreadFirst, unreadFirst)) &&
             (identical(other.mUnreadFirst, mUnreadFirst) ||
@@ -434,6 +455,7 @@ class _$_User implements _User {
       const DeepCollectionEquality().hash(altSend) ^
       const DeepCollectionEquality().hash(asteriskMention) ^
       const DeepCollectionEquality().hash(alwaysSendPushes) ^
+      const DeepCollectionEquality().hash(hidePushesContent) ^
       const DeepCollectionEquality().hash(unreadFirst) ^
       const DeepCollectionEquality().hash(mUnreadFirst) ^
       const DeepCollectionEquality().hash(timezone) ^
@@ -462,6 +484,7 @@ abstract class _User implements User {
       @required @JsonKey(name: 'alt_send') bool altSend,
       @required @JsonKey(name: 'asterisk_mention') bool asteriskMention,
       @required @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
+      @required @JsonKey(name: 'hide_pushes_content') bool hidePushesContent,
       @required @JsonKey(name: 'unread_first') bool unreadFirst,
       @required @JsonKey(name: 'munread_first') bool mUnreadFirst,
       @required @JsonKey(name: 'timezone') String timezone,
@@ -516,6 +539,11 @@ abstract class _User implements User {
   /// Send pushes even user is online.
   @JsonKey(name: 'always_send_pushes')
   bool get alwaysSendPushes;
+  @override
+
+  /// Hide pushes body.
+  @JsonKey(name: 'hide_pushes_content')
+  bool get hidePushesContent;
   @override
 
   /// Show unread chats in chat list first.

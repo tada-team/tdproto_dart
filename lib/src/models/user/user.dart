@@ -35,6 +35,9 @@ abstract class User with _$User {
     /// Send pushes even user is online.
     @JsonKey(name: 'always_send_pushes') @required bool alwaysSendPushes,
 
+    /// Hide pushes body.
+    @JsonKey(name: 'hide_pushes_content') @required bool hidePushesContent,
+
     /// Show unread chats in chat list first.
     @JsonKey(name: 'unread_first') @required bool unreadFirst,
 
