@@ -104,6 +104,9 @@ abstract class Contact with _$Contact {
     /// Send push notifications even contact is online.
     @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
 
+    /// Hide pushes body.
+    @JsonKey(name: 'hide_pushes_content') @required bool hidePushesContent,
+
     /// Timezone, if any.
     @JsonKey(name: 'timezone') String timezone,
 
