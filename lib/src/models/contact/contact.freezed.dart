@@ -54,7 +54,7 @@ class _$ContactTearOff {
       @JsonKey(name: 'timezone') String timezone,
       @JsonKey(name: 'quiet_time_start') String quietTimeStart,
       @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
-      @JsonKey(name: 'dnd_until') @DateTimeConverter() DateTime dndUntil,
+      @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime focusUntil,
       @JsonKey(name: 'group_notifications_enabled') bool groupNotificationsEnabled,
       @JsonKey(name: 'task_notifications_enabled') bool taskNotificationsEnabled,
       @JsonKey(name: 'contact_short_view') bool contactShortView,
@@ -116,7 +116,7 @@ class _$ContactTearOff {
       timezone: timezone,
       quietTimeStart: quietTimeStart,
       quietTimeFinish: quietTimeFinish,
-      dndUntil: dndUntil,
+      focusUntil: focusUntil,
       groupNotificationsEnabled: groupNotificationsEnabled,
       taskNotificationsEnabled: taskNotificationsEnabled,
       contactShortView: contactShortView,
@@ -301,10 +301,10 @@ mixin _$Contact {
   @JsonKey(name: 'quiet_time_finish')
   String get quietTimeFinish;
 
-  /// DND mode enabled until.
-  @JsonKey(name: 'dnd_until')
+  /// Focus mode enabled until.
+  @JsonKey(name: 'focus_until')
   @DateTimeConverter()
-  DateTime get dndUntil;
+  DateTime get focusUntil;
 
   /// Push notifications for group chats.
   @JsonKey(name: 'group_notifications_enabled')
@@ -448,7 +448,7 @@ abstract class $ContactCopyWith<$Res> {
       @JsonKey(name: 'timezone') String timezone,
       @JsonKey(name: 'quiet_time_start') String quietTimeStart,
       @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
-      @JsonKey(name: 'dnd_until') @DateTimeConverter() DateTime dndUntil,
+      @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime focusUntil,
       @JsonKey(name: 'group_notifications_enabled') bool groupNotificationsEnabled,
       @JsonKey(name: 'task_notifications_enabled') bool taskNotificationsEnabled,
       @JsonKey(name: 'contact_short_view') bool contactShortView,
@@ -524,7 +524,7 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
     Object timezone = freezed,
     Object quietTimeStart = freezed,
     Object quietTimeFinish = freezed,
-    Object dndUntil = freezed,
+    Object focusUntil = freezed,
     Object groupNotificationsEnabled = freezed,
     Object taskNotificationsEnabled = freezed,
     Object contactShortView = freezed,
@@ -588,7 +588,7 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
       timezone: timezone == freezed ? _value.timezone : timezone as String,
       quietTimeStart: quietTimeStart == freezed ? _value.quietTimeStart : quietTimeStart as String,
       quietTimeFinish: quietTimeFinish == freezed ? _value.quietTimeFinish : quietTimeFinish as String,
-      dndUntil: dndUntil == freezed ? _value.dndUntil : dndUntil as DateTime,
+      focusUntil: focusUntil == freezed ? _value.focusUntil : focusUntil as DateTime,
       groupNotificationsEnabled:
           groupNotificationsEnabled == freezed ? _value.groupNotificationsEnabled : groupNotificationsEnabled as bool,
       taskNotificationsEnabled:
@@ -681,7 +681,7 @@ abstract class _$ContactCopyWith<$Res> implements $ContactCopyWith<$Res> {
       @JsonKey(name: 'timezone') String timezone,
       @JsonKey(name: 'quiet_time_start') String quietTimeStart,
       @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
-      @JsonKey(name: 'dnd_until') @DateTimeConverter() DateTime dndUntil,
+      @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime focusUntil,
       @JsonKey(name: 'group_notifications_enabled') bool groupNotificationsEnabled,
       @JsonKey(name: 'task_notifications_enabled') bool taskNotificationsEnabled,
       @JsonKey(name: 'contact_short_view') bool contactShortView,
@@ -758,7 +758,7 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res> implement
     Object timezone = freezed,
     Object quietTimeStart = freezed,
     Object quietTimeFinish = freezed,
-    Object dndUntil = freezed,
+    Object focusUntil = freezed,
     Object groupNotificationsEnabled = freezed,
     Object taskNotificationsEnabled = freezed,
     Object contactShortView = freezed,
@@ -822,7 +822,7 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res> implement
       timezone: timezone == freezed ? _value.timezone : timezone as String,
       quietTimeStart: quietTimeStart == freezed ? _value.quietTimeStart : quietTimeStart as String,
       quietTimeFinish: quietTimeFinish == freezed ? _value.quietTimeFinish : quietTimeFinish as String,
-      dndUntil: dndUntil == freezed ? _value.dndUntil : dndUntil as DateTime,
+      focusUntil: focusUntil == freezed ? _value.focusUntil : focusUntil as DateTime,
       groupNotificationsEnabled:
           groupNotificationsEnabled == freezed ? _value.groupNotificationsEnabled : groupNotificationsEnabled as bool,
       taskNotificationsEnabled:
@@ -895,7 +895,7 @@ class _$_Contact implements _Contact {
       @JsonKey(name: 'timezone') this.timezone,
       @JsonKey(name: 'quiet_time_start') this.quietTimeStart,
       @JsonKey(name: 'quiet_time_finish') this.quietTimeFinish,
-      @JsonKey(name: 'dnd_until') @DateTimeConverter() this.dndUntil,
+      @JsonKey(name: 'focus_until') @DateTimeConverter() this.focusUntil,
       @JsonKey(name: 'group_notifications_enabled') this.groupNotificationsEnabled,
       @JsonKey(name: 'task_notifications_enabled') this.taskNotificationsEnabled,
       @JsonKey(name: 'contact_short_view') this.contactShortView,
@@ -1117,10 +1117,10 @@ class _$_Contact implements _Contact {
   final String quietTimeFinish;
   @override
 
-  /// DND mode enabled until.
-  @JsonKey(name: 'dnd_until')
+  /// Focus mode enabled until.
+  @JsonKey(name: 'focus_until')
   @DateTimeConverter()
-  final DateTime dndUntil;
+  final DateTime focusUntil;
   @override
 
   /// Push notifications for group chats.
@@ -1245,7 +1245,7 @@ class _$_Contact implements _Contact {
 
   @override
   String toString() {
-    return 'Contact(jid: $jid, node: $node, displayName: $displayName, shortName: $shortName, contactEmail: $contactEmail, contactPhone: $contactPhone, icons: $icons, gentime: $gentime, role: $role, mood: $mood, teamStatus: $teamStatus, lastActivity: $lastActivity, isArchive: $isArchive, botname: $botname, sections: $sections, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, canCall: $canCall, canCreateTask: $canCreateTask, canImportTasks: $canImportTasks, canAddToGroup: $canAddToGroup, canDelete: $canDelete, changeableFields: $changeableFields, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, debugShowActivity: $debugShowActivity, dropallEnabled: $dropallEnabled, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, hidePushesContent: $hidePushesContent, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, dndUntil: $dndUntil, groupNotificationsEnabled: $groupNotificationsEnabled, taskNotificationsEnabled: $taskNotificationsEnabled, contactShortView: $contactShortView, groupShortView: $groupShortView, taskShortView: $taskShortView, contactMshortView: $contactMshortView, groupMshortView: $groupMshortView, auth2faEnabled: $auth2faEnabled, auth2faStatus: $auth2faStatus, taskMshortView: $taskMshortView, contactShowArchived: $contactShowArchived, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, canAddToTeam: $canAddToTeam, canManageSections: $canManageSections, canManageProjects: $canManageProjects, canManageTags: $canManageTags, canManageIntegrations: $canManageIntegrations, canManageColorRules: $canManageColorRules, canCreateGroup: $canCreateGroup, canJoinPublicGroups: $canJoinPublicGroups, canJoinPublicTasks: $canJoinPublicTasks, customFields: $customFields, canDeleteAnyMessage: $canDeleteAnyMessage)';
+    return 'Contact(jid: $jid, node: $node, displayName: $displayName, shortName: $shortName, contactEmail: $contactEmail, contactPhone: $contactPhone, icons: $icons, gentime: $gentime, role: $role, mood: $mood, teamStatus: $teamStatus, lastActivity: $lastActivity, isArchive: $isArchive, botname: $botname, sections: $sections, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, canCall: $canCall, canCreateTask: $canCreateTask, canImportTasks: $canImportTasks, canAddToGroup: $canAddToGroup, canDelete: $canDelete, changeableFields: $changeableFields, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, debugShowActivity: $debugShowActivity, dropallEnabled: $dropallEnabled, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, hidePushesContent: $hidePushesContent, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, focusUntil: $focusUntil, groupNotificationsEnabled: $groupNotificationsEnabled, taskNotificationsEnabled: $taskNotificationsEnabled, contactShortView: $contactShortView, groupShortView: $groupShortView, taskShortView: $taskShortView, contactMshortView: $contactMshortView, groupMshortView: $groupMshortView, auth2faEnabled: $auth2faEnabled, auth2faStatus: $auth2faStatus, taskMshortView: $taskMshortView, contactShowArchived: $contactShowArchived, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, canAddToTeam: $canAddToTeam, canManageSections: $canManageSections, canManageProjects: $canManageProjects, canManageTags: $canManageTags, canManageIntegrations: $canManageIntegrations, canManageColorRules: $canManageColorRules, canCreateGroup: $canCreateGroup, canJoinPublicGroups: $canJoinPublicGroups, canJoinPublicTasks: $canJoinPublicTasks, customFields: $customFields, canDeleteAnyMessage: $canDeleteAnyMessage)';
   }
 
   @override
@@ -1313,7 +1313,8 @@ class _$_Contact implements _Contact {
                 const DeepCollectionEquality().equals(other.quietTimeStart, quietTimeStart)) &&
             (identical(other.quietTimeFinish, quietTimeFinish) ||
                 const DeepCollectionEquality().equals(other.quietTimeFinish, quietTimeFinish)) &&
-            (identical(other.dndUntil, dndUntil) || const DeepCollectionEquality().equals(other.dndUntil, dndUntil)) &&
+            (identical(other.focusUntil, focusUntil) ||
+                const DeepCollectionEquality().equals(other.focusUntil, focusUntil)) &&
             (identical(other.groupNotificationsEnabled, groupNotificationsEnabled) ||
                 const DeepCollectionEquality().equals(other.groupNotificationsEnabled, groupNotificationsEnabled)) &&
             (identical(other.taskNotificationsEnabled, taskNotificationsEnabled) ||
@@ -1350,8 +1351,7 @@ class _$_Contact implements _Contact {
                 const DeepCollectionEquality().equals(other.canManageTags, canManageTags)) &&
             (identical(other.canManageIntegrations, canManageIntegrations) ||
                 const DeepCollectionEquality().equals(other.canManageIntegrations, canManageIntegrations)) &&
-            (identical(other.canManageColorRules, canManageColorRules) ||
-                const DeepCollectionEquality().equals(other.canManageColorRules, canManageColorRules)) &&
+            (identical(other.canManageColorRules, canManageColorRules) || const DeepCollectionEquality().equals(other.canManageColorRules, canManageColorRules)) &&
             (identical(other.canCreateGroup, canCreateGroup) || const DeepCollectionEquality().equals(other.canCreateGroup, canCreateGroup)) &&
             (identical(other.canJoinPublicGroups, canJoinPublicGroups) || const DeepCollectionEquality().equals(other.canJoinPublicGroups, canJoinPublicGroups)) &&
             (identical(other.canJoinPublicTasks, canJoinPublicTasks) || const DeepCollectionEquality().equals(other.canJoinPublicTasks, canJoinPublicTasks)) &&
@@ -1398,7 +1398,7 @@ class _$_Contact implements _Contact {
       const DeepCollectionEquality().hash(timezone) ^
       const DeepCollectionEquality().hash(quietTimeStart) ^
       const DeepCollectionEquality().hash(quietTimeFinish) ^
-      const DeepCollectionEquality().hash(dndUntil) ^
+      const DeepCollectionEquality().hash(focusUntil) ^
       const DeepCollectionEquality().hash(groupNotificationsEnabled) ^
       const DeepCollectionEquality().hash(taskNotificationsEnabled) ^
       const DeepCollectionEquality().hash(contactShortView) ^
@@ -1472,7 +1472,7 @@ abstract class _Contact implements Contact {
       @JsonKey(name: 'timezone') String timezone,
       @JsonKey(name: 'quiet_time_start') String quietTimeStart,
       @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
-      @JsonKey(name: 'dnd_until') @DateTimeConverter() DateTime dndUntil,
+      @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime focusUntil,
       @JsonKey(name: 'group_notifications_enabled') bool groupNotificationsEnabled,
       @JsonKey(name: 'task_notifications_enabled') bool taskNotificationsEnabled,
       @JsonKey(name: 'contact_short_view') bool contactShortView,
@@ -1683,10 +1683,10 @@ abstract class _Contact implements Contact {
   String get quietTimeFinish;
   @override
 
-  /// DND mode enabled until.
-  @JsonKey(name: 'dnd_until')
+  /// Focus mode enabled until.
+  @JsonKey(name: 'focus_until')
   @DateTimeConverter()
-  DateTime get dndUntil;
+  DateTime get focusUntil;
   @override
 
   /// Push notifications for group chats.

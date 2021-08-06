@@ -20,12 +20,12 @@ class _$OnlineContactTearOff {
   _OnlineContact call(
       {@required @JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'afk') bool afk,
-      @JsonKey(name: 'dnd') bool dnd,
+      @JsonKey(name: 'focused') bool focused,
       @required @JsonKey(name: 'mobile') bool mobile}) {
     return _OnlineContact(
       jid: jid,
       afk: afk,
-      dnd: dnd,
+      focused: focused,
       mobile: mobile,
     );
   }
@@ -50,9 +50,9 @@ mixin _$OnlineContact {
   @JsonKey(name: 'afk')
   bool get afk;
 
-  /// DND mode enabled.
-  @JsonKey(name: 'dnd')
-  bool get dnd;
+  /// Focus mode enabled.
+  @JsonKey(name: 'focused')
+  bool get focused;
 
   /// Is mobile client.
   @JsonKey(name: 'mobile')
@@ -70,7 +70,7 @@ abstract class $OnlineContactCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'afk') bool afk,
-      @JsonKey(name: 'dnd') bool dnd,
+      @JsonKey(name: 'focused') bool focused,
       @JsonKey(name: 'mobile') bool mobile});
 }
 
@@ -86,13 +86,13 @@ class _$OnlineContactCopyWithImpl<$Res> implements $OnlineContactCopyWith<$Res> 
   $Res call({
     Object jid = freezed,
     Object afk = freezed,
-    Object dnd = freezed,
+    Object focused = freezed,
     Object mobile = freezed,
   }) {
     return _then(_value.copyWith(
       jid: jid == freezed ? _value.jid : jid as String,
       afk: afk == freezed ? _value.afk : afk as bool,
-      dnd: dnd == freezed ? _value.dnd : dnd as bool,
+      focused: focused == freezed ? _value.focused : focused as bool,
       mobile: mobile == freezed ? _value.mobile : mobile as bool,
     ));
   }
@@ -106,7 +106,7 @@ abstract class _$OnlineContactCopyWith<$Res> implements $OnlineContactCopyWith<$
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'afk') bool afk,
-      @JsonKey(name: 'dnd') bool dnd,
+      @JsonKey(name: 'focused') bool focused,
       @JsonKey(name: 'mobile') bool mobile});
 }
 
@@ -123,13 +123,13 @@ class __$OnlineContactCopyWithImpl<$Res> extends _$OnlineContactCopyWithImpl<$Re
   $Res call({
     Object jid = freezed,
     Object afk = freezed,
-    Object dnd = freezed,
+    Object focused = freezed,
     Object mobile = freezed,
   }) {
     return _then(_OnlineContact(
       jid: jid == freezed ? _value.jid : jid as String,
       afk: afk == freezed ? _value.afk : afk as bool,
-      dnd: dnd == freezed ? _value.dnd : dnd as bool,
+      focused: focused == freezed ? _value.focused : focused as bool,
       mobile: mobile == freezed ? _value.mobile : mobile as bool,
     ));
   }
@@ -142,7 +142,7 @@ class _$_OnlineContact implements _OnlineContact {
   const _$_OnlineContact(
       {@required @JsonKey(name: 'jid') this.jid,
       @JsonKey(name: 'afk') this.afk,
-      @JsonKey(name: 'dnd') this.dnd,
+      @JsonKey(name: 'focused') this.focused,
       @required @JsonKey(name: 'mobile') this.mobile})
       : assert(jid != null),
         assert(mobile != null);
@@ -161,9 +161,9 @@ class _$_OnlineContact implements _OnlineContact {
   final bool afk;
   @override
 
-  /// DND mode enabled.
-  @JsonKey(name: 'dnd')
-  final bool dnd;
+  /// Focus mode enabled.
+  @JsonKey(name: 'focused')
+  final bool focused;
   @override
 
   /// Is mobile client.
@@ -172,7 +172,7 @@ class _$_OnlineContact implements _OnlineContact {
 
   @override
   String toString() {
-    return 'OnlineContact(jid: $jid, afk: $afk, dnd: $dnd, mobile: $mobile)';
+    return 'OnlineContact(jid: $jid, afk: $afk, focused: $focused, mobile: $mobile)';
   }
 
   @override
@@ -181,7 +181,7 @@ class _$_OnlineContact implements _OnlineContact {
         (other is _OnlineContact &&
             (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
             (identical(other.afk, afk) || const DeepCollectionEquality().equals(other.afk, afk)) &&
-            (identical(other.dnd, dnd) || const DeepCollectionEquality().equals(other.dnd, dnd)) &&
+            (identical(other.focused, focused) || const DeepCollectionEquality().equals(other.focused, focused)) &&
             (identical(other.mobile, mobile) || const DeepCollectionEquality().equals(other.mobile, mobile)));
   }
 
@@ -190,7 +190,7 @@ class _$_OnlineContact implements _OnlineContact {
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(jid) ^
       const DeepCollectionEquality().hash(afk) ^
-      const DeepCollectionEquality().hash(dnd) ^
+      const DeepCollectionEquality().hash(focused) ^
       const DeepCollectionEquality().hash(mobile);
 
   @JsonKey(ignore: true)
@@ -208,7 +208,7 @@ abstract class _OnlineContact implements OnlineContact {
   const factory _OnlineContact(
       {@required @JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'afk') bool afk,
-      @JsonKey(name: 'dnd') bool dnd,
+      @JsonKey(name: 'focused') bool focused,
       @required @JsonKey(name: 'mobile') bool mobile}) = _$_OnlineContact;
 
   factory _OnlineContact.fromJson(Map<String, dynamic> json) = _$_OnlineContact.fromJson;
@@ -225,9 +225,9 @@ abstract class _OnlineContact implements OnlineContact {
   bool get afk;
   @override
 
-  /// DND mode enabled.
-  @JsonKey(name: 'dnd')
-  bool get dnd;
+  /// Focus mode enabled.
+  @JsonKey(name: 'focused')
+  bool get focused;
   @override
 
   /// Is mobile client.

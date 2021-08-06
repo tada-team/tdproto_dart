@@ -116,8 +116,8 @@ abstract class Contact with _$Contact {
     /// Quiet time finish.
     @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
 
-    /// DND mode enabled until.
-    @JsonKey(name: 'dnd_until') @DateTimeConverter() DateTime dndUntil,
+    /// Focus mode enabled until.
+    @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime focusUntil,
 
     /// Push notifications for group chats.
     @JsonKey(name: 'group_notifications_enabled') bool groupNotificationsEnabled,
