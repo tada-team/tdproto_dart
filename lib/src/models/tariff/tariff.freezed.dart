@@ -21,6 +21,7 @@ class _$TariffTearOff {
       {@required @JsonKey(name: 'uid') String uid,
       @required @JsonKey(name: 'title_en') String titleEn,
       @required @JsonKey(name: 'title_ru') String titleRu,
+      @JsonKey(name: 'price') String price,
       @JsonKey(name: 'cloud_space') int cloudSpace,
       @JsonKey(name: 'max_members_in_team') int maxMembersInTeam,
       @JsonKey(name: 'max_participants_per_call') int maxParticipantsPerCall,
@@ -29,6 +30,7 @@ class _$TariffTearOff {
       uid: uid,
       titleEn: titleEn,
       titleRu: titleRu,
+      price: price,
       cloudSpace: cloudSpace,
       maxMembersInTeam: maxMembersInTeam,
       maxParticipantsPerCall: maxParticipantsPerCall,
@@ -60,6 +62,10 @@ mixin _$Tariff {
   @JsonKey(name: 'title_ru')
   String get titleRu;
 
+  /// Price of tariff.
+  @JsonKey(name: 'price')
+  String get price;
+
   /// Cloud space reserved for storing team users uploads in megabytes.
   @JsonKey(name: 'cloud_space')
   int get cloudSpace;
@@ -88,6 +94,7 @@ abstract class $TariffCopyWith<$Res> {
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'title_en') String titleEn,
       @JsonKey(name: 'title_ru') String titleRu,
+      @JsonKey(name: 'price') String price,
       @JsonKey(name: 'cloud_space') int cloudSpace,
       @JsonKey(name: 'max_members_in_team') int maxMembersInTeam,
       @JsonKey(name: 'max_participants_per_call') int maxParticipantsPerCall,
@@ -107,6 +114,7 @@ class _$TariffCopyWithImpl<$Res> implements $TariffCopyWith<$Res> {
     Object uid = freezed,
     Object titleEn = freezed,
     Object titleRu = freezed,
+    Object price = freezed,
     Object cloudSpace = freezed,
     Object maxMembersInTeam = freezed,
     Object maxParticipantsPerCall = freezed,
@@ -116,6 +124,7 @@ class _$TariffCopyWithImpl<$Res> implements $TariffCopyWith<$Res> {
       uid: uid == freezed ? _value.uid : uid as String,
       titleEn: titleEn == freezed ? _value.titleEn : titleEn as String,
       titleRu: titleRu == freezed ? _value.titleRu : titleRu as String,
+      price: price == freezed ? _value.price : price as String,
       cloudSpace: cloudSpace == freezed ? _value.cloudSpace : cloudSpace as int,
       maxMembersInTeam: maxMembersInTeam == freezed ? _value.maxMembersInTeam : maxMembersInTeam as int,
       maxParticipantsPerCall:
@@ -133,6 +142,7 @@ abstract class _$TariffCopyWith<$Res> implements $TariffCopyWith<$Res> {
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'title_en') String titleEn,
       @JsonKey(name: 'title_ru') String titleRu,
+      @JsonKey(name: 'price') String price,
       @JsonKey(name: 'cloud_space') int cloudSpace,
       @JsonKey(name: 'max_members_in_team') int maxMembersInTeam,
       @JsonKey(name: 'max_participants_per_call') int maxParticipantsPerCall,
@@ -151,6 +161,7 @@ class __$TariffCopyWithImpl<$Res> extends _$TariffCopyWithImpl<$Res> implements 
     Object uid = freezed,
     Object titleEn = freezed,
     Object titleRu = freezed,
+    Object price = freezed,
     Object cloudSpace = freezed,
     Object maxMembersInTeam = freezed,
     Object maxParticipantsPerCall = freezed,
@@ -160,6 +171,7 @@ class __$TariffCopyWithImpl<$Res> extends _$TariffCopyWithImpl<$Res> implements 
       uid: uid == freezed ? _value.uid : uid as String,
       titleEn: titleEn == freezed ? _value.titleEn : titleEn as String,
       titleRu: titleRu == freezed ? _value.titleRu : titleRu as String,
+      price: price == freezed ? _value.price : price as String,
       cloudSpace: cloudSpace == freezed ? _value.cloudSpace : cloudSpace as int,
       maxMembersInTeam: maxMembersInTeam == freezed ? _value.maxMembersInTeam : maxMembersInTeam as int,
       maxParticipantsPerCall:
@@ -177,6 +189,7 @@ class _$_Tariff implements _Tariff {
       {@required @JsonKey(name: 'uid') this.uid,
       @required @JsonKey(name: 'title_en') this.titleEn,
       @required @JsonKey(name: 'title_ru') this.titleRu,
+      @JsonKey(name: 'price') this.price,
       @JsonKey(name: 'cloud_space') this.cloudSpace,
       @JsonKey(name: 'max_members_in_team') this.maxMembersInTeam,
       @JsonKey(name: 'max_participants_per_call') this.maxParticipantsPerCall,
@@ -204,6 +217,11 @@ class _$_Tariff implements _Tariff {
   final String titleRu;
   @override
 
+  /// Price of tariff.
+  @JsonKey(name: 'price')
+  final String price;
+  @override
+
   /// Cloud space reserved for storing team users uploads in megabytes.
   @JsonKey(name: 'cloud_space')
   final int cloudSpace;
@@ -225,7 +243,7 @@ class _$_Tariff implements _Tariff {
 
   @override
   String toString() {
-    return 'Tariff(uid: $uid, titleEn: $titleEn, titleRu: $titleRu, cloudSpace: $cloudSpace, maxMembersInTeam: $maxMembersInTeam, maxParticipantsPerCall: $maxParticipantsPerCall, maxUploadFilesize: $maxUploadFilesize)';
+    return 'Tariff(uid: $uid, titleEn: $titleEn, titleRu: $titleRu, price: $price, cloudSpace: $cloudSpace, maxMembersInTeam: $maxMembersInTeam, maxParticipantsPerCall: $maxParticipantsPerCall, maxUploadFilesize: $maxUploadFilesize)';
   }
 
   @override
@@ -235,6 +253,7 @@ class _$_Tariff implements _Tariff {
             (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
             (identical(other.titleEn, titleEn) || const DeepCollectionEquality().equals(other.titleEn, titleEn)) &&
             (identical(other.titleRu, titleRu) || const DeepCollectionEquality().equals(other.titleRu, titleRu)) &&
+            (identical(other.price, price) || const DeepCollectionEquality().equals(other.price, price)) &&
             (identical(other.cloudSpace, cloudSpace) ||
                 const DeepCollectionEquality().equals(other.cloudSpace, cloudSpace)) &&
             (identical(other.maxMembersInTeam, maxMembersInTeam) ||
@@ -251,6 +270,7 @@ class _$_Tariff implements _Tariff {
       const DeepCollectionEquality().hash(uid) ^
       const DeepCollectionEquality().hash(titleEn) ^
       const DeepCollectionEquality().hash(titleRu) ^
+      const DeepCollectionEquality().hash(price) ^
       const DeepCollectionEquality().hash(cloudSpace) ^
       const DeepCollectionEquality().hash(maxMembersInTeam) ^
       const DeepCollectionEquality().hash(maxParticipantsPerCall) ^
@@ -271,6 +291,7 @@ abstract class _Tariff implements Tariff {
       {@required @JsonKey(name: 'uid') String uid,
       @required @JsonKey(name: 'title_en') String titleEn,
       @required @JsonKey(name: 'title_ru') String titleRu,
+      @JsonKey(name: 'price') String price,
       @JsonKey(name: 'cloud_space') int cloudSpace,
       @JsonKey(name: 'max_members_in_team') int maxMembersInTeam,
       @JsonKey(name: 'max_participants_per_call') int maxParticipantsPerCall,
@@ -293,6 +314,11 @@ abstract class _Tariff implements Tariff {
   /// Title of tariff in russian.
   @JsonKey(name: 'title_ru')
   String get titleRu;
+  @override
+
+  /// Price of tariff.
+  @JsonKey(name: 'price')
+  String get price;
   @override
 
   /// Cloud space reserved for storing team users uploads in megabytes.
