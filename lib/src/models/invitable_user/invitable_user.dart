@@ -4,7 +4,7 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'invitable_user.freezed.dart';
 part 'invitable_user.g.dart';
 
-/// Account from other team, Active Directory or server.
+/// Account from other team, Active Directory or node.
 @freezed
 abstract class InvitableUser with _$InvitableUser {
   const factory InvitableUser({
@@ -19,6 +19,9 @@ abstract class InvitableUser with _$InvitableUser {
 
     /// Icons.
     @JsonKey(name: 'icons') @required IconData icons,
+
+    /// Common team uids, if any.
+    @JsonKey(name: 'teams') List<String> teams,
   }) = _InvitableUser;
 
   factory InvitableUser.fromJson(Map<String, dynamic> json) => _$InvitableUserFromJson(json);

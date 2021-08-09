@@ -35,6 +35,9 @@ abstract class User with _$User {
     /// Send pushes even user is online.
     @JsonKey(name: 'always_send_pushes') @required bool alwaysSendPushes,
 
+    /// Hide pushes body.
+    @JsonKey(name: 'hide_pushes_content') @required bool hidePushesContent,
+
     /// Show unread chats in chat list first.
     @JsonKey(name: 'unread_first') @required bool unreadFirst,
 
@@ -49,6 +52,9 @@ abstract class User with _$User {
 
     /// Finish silently time (no pushes, no sounds).
     @JsonKey(name: 'quiet_time_finish') @required String quietTimeFinish,
+
+    /// Icon data.
+    @JsonKey(name: 'icons') @required IconData icons,
   }) = _User;
 
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);

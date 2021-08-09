@@ -19,6 +19,9 @@ abstract class ContactShort with _$ContactShort {
 
     /// Icons data.
     @JsonKey(name: 'icons') @required IconData icons,
+
+    /// Object version.
+    @JsonKey(name: 'gentime') @required int gentime,
   }) = _ContactShort;
 
   factory ContactShort.fromJson(Map<String, dynamic> json) => _$ContactShortFromJson(json);

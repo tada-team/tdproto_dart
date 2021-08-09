@@ -17,6 +17,9 @@ abstract class Tariff with _$Tariff {
     /// Title of tariff in russian.
     @JsonKey(name: 'title_ru') @required String titleRu,
 
+    /// Price of tariff.
+    @JsonKey(name: 'price') String price,
+
     /// Cloud space reserved for storing team users uploads in megabytes.
     @JsonKey(name: 'cloud_space') int cloudSpace,
 

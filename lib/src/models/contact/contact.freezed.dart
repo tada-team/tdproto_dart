@@ -18,133 +18,67 @@ class _$ContactTearOff {
 
 // ignore: unused_element
   _Contact call(
-      {@required
-      @JsonKey(name: 'jid')
-          String jid,
-      @JsonKey(name: 'node')
-          String node,
-      @required
-      @JsonKey(name: 'display_name')
-          String displayName,
-      @required
-      @JsonKey(name: 'short_name')
-          String shortName,
-      @required
-      @JsonKey(name: 'contact_email')
-          String contactEmail,
-      @required
-      @JsonKey(name: 'contact_phone')
-          String contactPhone,
-      @required
-      @JsonKey(name: 'icons')
-          IconData icons,
-      @required
-      @JsonKey(name: 'role')
-          String role,
-      @JsonKey(name: 'mood')
-          String mood,
-      @required
-      @JsonKey(name: 'status')
-          String teamStatus,
-      @JsonKey(name: 'last_activity')
-      @DateTimeConverter()
-          DateTime lastActivity,
-      @JsonKey(name: 'is_archive')
-          bool isArchive,
-      @JsonKey(name: 'botname')
-          String botname,
-      @required
-      @JsonKey(name: 'sections')
-          List<String> sections,
-      @JsonKey(name: 'can_send_message')
-          bool canSendMessage,
-      @JsonKey(name: 'cant_send_message_reason')
-          String cantSendMessageReason,
-      @JsonKey(name: 'can_call')
-          bool canCall,
-      @JsonKey(name: 'can_create_task')
-          bool canCreateTask,
-      @JsonKey(name: 'can_import_tasks')
-          bool canImportTasks,
-      @JsonKey(name: 'can_add_to_group')
-          bool canAddToGroup,
-      @JsonKey(name: 'can_delete')
-          bool canDelete,
-      @JsonKey(name: 'changeable_fields')
-          List<String> changeableFields,
-      @JsonKey(name: 'family_name')
-          String familyName,
-      @JsonKey(name: 'given_name')
-          String givenName,
-      @JsonKey(name: 'patronymic')
-          String patronymic,
-      @JsonKey(name: 'default_lang')
-          String defaultLang,
-      @JsonKey(name: 'debug_show_activity')
-          bool debugShowActivity,
-      @JsonKey(name: 'dropall_enabled')
-          bool dropallEnabled,
-      @JsonKey(name: 'alt_send')
-          bool altSend,
-      @JsonKey(name: 'asterisk_mention')
-          bool asteriskMention,
-      @JsonKey(name: 'always_send_pushes')
-          bool alwaysSendPushes,
-      @JsonKey(name: 'timezone')
-          String timezone,
-      @JsonKey(name: 'quiet_time_start')
-          String quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish')
-          String quietTimeFinish,
-      @JsonKey(name: 'group_notifications_enabled')
-          bool groupNotificationsEnabled,
-      @JsonKey(name: 'task_notifications_enabled')
-          bool taskNotificationsEnabled,
-      @JsonKey(name: 'contact_short_view')
-          bool contactShortView,
-      @JsonKey(name: 'group_short_view')
-          bool groupShortView,
-      @JsonKey(name: 'task_short_view')
-          bool taskShortView,
-      @JsonKey(name: 'contact_mshort_view')
-          bool contactMshortView,
-      @JsonKey(name: 'group_mshort_view')
-          bool groupMshortView,
-      @JsonKey(name: 'auth_2fa_enabled')
-          bool auth2faEnabled,
-      @JsonKey(name: 'auth_2fa_status')
-          String auth2faStatus,
-      @JsonKey(name: 'task_mshort_view')
-          bool taskMshortView,
-      @JsonKey(name: 'contact_show_archived')
-          bool contactShowArchived,
-      @JsonKey(name: 'unread_first')
-          bool unreadFirst,
-      @JsonKey(name: 'munread_first')
-          bool mUnreadFirst,
-      @JsonKey(name: 'can_add_to_team')
-          bool canAddToTeam,
-      @JsonKey(name: 'can_manage_sections')
-          bool canManageSections,
-      @JsonKey(name: 'can_manage_projects')
-          bool canManageProjects,
-      @JsonKey(name: 'can_manage_tags')
-          bool canManageTags,
-      @JsonKey(name: 'can_manage_integrations')
-          bool canManageIntegrations,
-      @JsonKey(name: 'can_manage_color_rules')
-          bool canManageColorRules,
-      @JsonKey(name: 'can_create_group')
-          bool canCreateGroup,
-      @JsonKey(name: 'can_join_public_groups')
-          bool canJoinPublicGroups,
-      @JsonKey(name: 'can_join_public_tasks')
-          bool canJoinPublicTasks,
-      @Deprecated('Deprecated: use CanDeleteAnyMessage in chat object.')
-      @JsonKey(name: 'can_delete_any_message')
-          bool canDeleteAnyMessage,
-      @JsonKey(name: 'custom_fields')
-          ContactCustomFields customFields}) {
+      {@required @JsonKey(name: 'jid') String jid,
+      @JsonKey(name: 'node') String node,
+      @required @JsonKey(name: 'display_name') String displayName,
+      @required @JsonKey(name: 'short_name') String shortName,
+      @required @JsonKey(name: 'contact_email') String contactEmail,
+      @required @JsonKey(name: 'contact_phone') String contactPhone,
+      @required @JsonKey(name: 'icons') IconData icons,
+      @required @JsonKey(name: 'gentime') int gentime,
+      @required @JsonKey(name: 'role') String role,
+      @JsonKey(name: 'mood') String mood,
+      @required @JsonKey(name: 'status') String teamStatus,
+      @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime lastActivity,
+      @JsonKey(name: 'is_archive') bool isArchive,
+      @JsonKey(name: 'botname') String botname,
+      @required @JsonKey(name: 'sections') List<String> sections,
+      @JsonKey(name: 'can_send_message') bool canSendMessage,
+      @JsonKey(name: 'cant_send_message_reason') String cantSendMessageReason,
+      @JsonKey(name: 'can_call') bool canCall,
+      @JsonKey(name: 'can_create_task') bool canCreateTask,
+      @JsonKey(name: 'can_import_tasks') bool canImportTasks,
+      @JsonKey(name: 'can_add_to_group') bool canAddToGroup,
+      @JsonKey(name: 'can_delete') bool canDelete,
+      @JsonKey(name: 'changeable_fields') List<String> changeableFields,
+      @JsonKey(name: 'family_name') String familyName,
+      @JsonKey(name: 'given_name') String givenName,
+      @JsonKey(name: 'patronymic') String patronymic,
+      @JsonKey(name: 'default_lang') String defaultLang,
+      @JsonKey(name: 'debug_show_activity') bool debugShowActivity,
+      @JsonKey(name: 'dropall_enabled') bool dropallEnabled,
+      @JsonKey(name: 'alt_send') bool altSend,
+      @JsonKey(name: 'asterisk_mention') bool asteriskMention,
+      @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
+      @required @JsonKey(name: 'hide_pushes_content') bool hidePushesContent,
+      @JsonKey(name: 'timezone') String timezone,
+      @JsonKey(name: 'quiet_time_start') String quietTimeStart,
+      @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
+      @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime focusUntil,
+      @JsonKey(name: 'group_notifications_enabled') bool groupNotificationsEnabled,
+      @JsonKey(name: 'task_notifications_enabled') bool taskNotificationsEnabled,
+      @JsonKey(name: 'contact_short_view') bool contactShortView,
+      @JsonKey(name: 'group_short_view') bool groupShortView,
+      @JsonKey(name: 'task_short_view') bool taskShortView,
+      @JsonKey(name: 'contact_mshort_view') bool contactMshortView,
+      @JsonKey(name: 'group_mshort_view') bool groupMshortView,
+      @JsonKey(name: 'auth_2fa_enabled') bool auth2faEnabled,
+      @JsonKey(name: 'auth_2fa_status') String auth2faStatus,
+      @JsonKey(name: 'task_mshort_view') bool taskMshortView,
+      @JsonKey(name: 'contact_show_archived') bool contactShowArchived,
+      @JsonKey(name: 'unread_first') bool unreadFirst,
+      @JsonKey(name: 'munread_first') bool mUnreadFirst,
+      @JsonKey(name: 'can_add_to_team') bool canAddToTeam,
+      @JsonKey(name: 'can_manage_sections') bool canManageSections,
+      @JsonKey(name: 'can_manage_projects') bool canManageProjects,
+      @JsonKey(name: 'can_manage_tags') bool canManageTags,
+      @JsonKey(name: 'can_manage_integrations') bool canManageIntegrations,
+      @JsonKey(name: 'can_manage_color_rules') bool canManageColorRules,
+      @JsonKey(name: 'can_create_group') bool canCreateGroup,
+      @JsonKey(name: 'can_join_public_groups') bool canJoinPublicGroups,
+      @JsonKey(name: 'can_join_public_tasks') bool canJoinPublicTasks,
+      @JsonKey(name: 'custom_fields') ContactCustomFields customFields,
+      @Deprecated('Deprecated.') @JsonKey(name: 'can_delete_any_message') bool canDeleteAnyMessage}) {
     return _Contact(
       jid: jid,
       node: node,
@@ -153,6 +87,7 @@ class _$ContactTearOff {
       contactEmail: contactEmail,
       contactPhone: contactPhone,
       icons: icons,
+      gentime: gentime,
       role: role,
       mood: mood,
       teamStatus: teamStatus,
@@ -177,9 +112,11 @@ class _$ContactTearOff {
       altSend: altSend,
       asteriskMention: asteriskMention,
       alwaysSendPushes: alwaysSendPushes,
+      hidePushesContent: hidePushesContent,
       timezone: timezone,
       quietTimeStart: quietTimeStart,
       quietTimeFinish: quietTimeFinish,
+      focusUntil: focusUntil,
       groupNotificationsEnabled: groupNotificationsEnabled,
       taskNotificationsEnabled: taskNotificationsEnabled,
       contactShortView: contactShortView,
@@ -202,8 +139,8 @@ class _$ContactTearOff {
       canCreateGroup: canCreateGroup,
       canJoinPublicGroups: canJoinPublicGroups,
       canJoinPublicTasks: canJoinPublicTasks,
-      canDeleteAnyMessage: canDeleteAnyMessage,
       customFields: customFields,
+      canDeleteAnyMessage: canDeleteAnyMessage,
     );
   }
 
@@ -247,6 +184,10 @@ mixin _$Contact {
   @JsonKey(name: 'icons')
   IconData get icons;
 
+  /// Object version.
+  @JsonKey(name: 'gentime')
+  int get gentime;
+
   /// Role in this team.
   @JsonKey(name: 'role')
   String get role;
@@ -288,7 +229,7 @@ mixin _$Contact {
   @JsonKey(name: 'can_call')
   bool get canCall;
 
-  /// Can I call create task for this contact.
+  /// Can I create task for this contact.
   @JsonKey(name: 'can_create_task')
   bool get canCreateTask;
 
@@ -344,6 +285,10 @@ mixin _$Contact {
   @JsonKey(name: 'always_send_pushes')
   bool get alwaysSendPushes;
 
+  /// Hide pushes body.
+  @JsonKey(name: 'hide_pushes_content')
+  bool get hidePushesContent;
+
   /// Timezone, if any.
   @JsonKey(name: 'timezone')
   String get timezone;
@@ -355,6 +300,11 @@ mixin _$Contact {
   /// Quiet time finish.
   @JsonKey(name: 'quiet_time_finish')
   String get quietTimeFinish;
+
+  /// Focus mode enabled until.
+  @JsonKey(name: 'focus_until')
+  @DateTimeConverter()
+  DateTime get focusUntil;
 
   /// Push notifications for group chats.
   @JsonKey(name: 'group_notifications_enabled')
@@ -444,14 +394,14 @@ mixin _$Contact {
   @JsonKey(name: 'can_join_public_tasks')
   bool get canJoinPublicTasks;
 
-  /// Deprecated: use CanDeleteAnyMessage in chat object.
-  @Deprecated('Deprecated: use CanDeleteAnyMessage in chat object.')
-  @JsonKey(name: 'can_delete_any_message')
-  bool get canDeleteAnyMessage;
-
   /// Extra contact fields.
   @JsonKey(name: 'custom_fields')
   ContactCustomFields get customFields;
+
+  /// Deprecated.
+  @Deprecated('Deprecated.')
+  @JsonKey(name: 'can_delete_any_message')
+  bool get canDeleteAnyMessage;
 
   Map<String, dynamic> toJson();
   @JsonKey(ignore: true)
@@ -462,124 +412,67 @@ mixin _$Contact {
 abstract class $ContactCopyWith<$Res> {
   factory $ContactCopyWith(Contact value, $Res Function(Contact) then) = _$ContactCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'jid')
-          String jid,
-      @JsonKey(name: 'node')
-          String node,
-      @JsonKey(name: 'display_name')
-          String displayName,
-      @JsonKey(name: 'short_name')
-          String shortName,
-      @JsonKey(name: 'contact_email')
-          String contactEmail,
-      @JsonKey(name: 'contact_phone')
-          String contactPhone,
-      @JsonKey(name: 'icons')
-          IconData icons,
-      @JsonKey(name: 'role')
-          String role,
-      @JsonKey(name: 'mood')
-          String mood,
-      @JsonKey(name: 'status')
-          String teamStatus,
-      @JsonKey(name: 'last_activity')
-      @DateTimeConverter()
-          DateTime lastActivity,
-      @JsonKey(name: 'is_archive')
-          bool isArchive,
-      @JsonKey(name: 'botname')
-          String botname,
-      @JsonKey(name: 'sections')
-          List<String> sections,
-      @JsonKey(name: 'can_send_message')
-          bool canSendMessage,
-      @JsonKey(name: 'cant_send_message_reason')
-          String cantSendMessageReason,
-      @JsonKey(name: 'can_call')
-          bool canCall,
-      @JsonKey(name: 'can_create_task')
-          bool canCreateTask,
-      @JsonKey(name: 'can_import_tasks')
-          bool canImportTasks,
-      @JsonKey(name: 'can_add_to_group')
-          bool canAddToGroup,
-      @JsonKey(name: 'can_delete')
-          bool canDelete,
-      @JsonKey(name: 'changeable_fields')
-          List<String> changeableFields,
-      @JsonKey(name: 'family_name')
-          String familyName,
-      @JsonKey(name: 'given_name')
-          String givenName,
-      @JsonKey(name: 'patronymic')
-          String patronymic,
-      @JsonKey(name: 'default_lang')
-          String defaultLang,
-      @JsonKey(name: 'debug_show_activity')
-          bool debugShowActivity,
-      @JsonKey(name: 'dropall_enabled')
-          bool dropallEnabled,
-      @JsonKey(name: 'alt_send')
-          bool altSend,
-      @JsonKey(name: 'asterisk_mention')
-          bool asteriskMention,
-      @JsonKey(name: 'always_send_pushes')
-          bool alwaysSendPushes,
-      @JsonKey(name: 'timezone')
-          String timezone,
-      @JsonKey(name: 'quiet_time_start')
-          String quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish')
-          String quietTimeFinish,
-      @JsonKey(name: 'group_notifications_enabled')
-          bool groupNotificationsEnabled,
-      @JsonKey(name: 'task_notifications_enabled')
-          bool taskNotificationsEnabled,
-      @JsonKey(name: 'contact_short_view')
-          bool contactShortView,
-      @JsonKey(name: 'group_short_view')
-          bool groupShortView,
-      @JsonKey(name: 'task_short_view')
-          bool taskShortView,
-      @JsonKey(name: 'contact_mshort_view')
-          bool contactMshortView,
-      @JsonKey(name: 'group_mshort_view')
-          bool groupMshortView,
-      @JsonKey(name: 'auth_2fa_enabled')
-          bool auth2faEnabled,
-      @JsonKey(name: 'auth_2fa_status')
-          String auth2faStatus,
-      @JsonKey(name: 'task_mshort_view')
-          bool taskMshortView,
-      @JsonKey(name: 'contact_show_archived')
-          bool contactShowArchived,
-      @JsonKey(name: 'unread_first')
-          bool unreadFirst,
-      @JsonKey(name: 'munread_first')
-          bool mUnreadFirst,
-      @JsonKey(name: 'can_add_to_team')
-          bool canAddToTeam,
-      @JsonKey(name: 'can_manage_sections')
-          bool canManageSections,
-      @JsonKey(name: 'can_manage_projects')
-          bool canManageProjects,
-      @JsonKey(name: 'can_manage_tags')
-          bool canManageTags,
-      @JsonKey(name: 'can_manage_integrations')
-          bool canManageIntegrations,
-      @JsonKey(name: 'can_manage_color_rules')
-          bool canManageColorRules,
-      @JsonKey(name: 'can_create_group')
-          bool canCreateGroup,
-      @JsonKey(name: 'can_join_public_groups')
-          bool canJoinPublicGroups,
-      @JsonKey(name: 'can_join_public_tasks')
-          bool canJoinPublicTasks,
-      @Deprecated('Deprecated: use CanDeleteAnyMessage in chat object.')
-      @JsonKey(name: 'can_delete_any_message')
-          bool canDeleteAnyMessage,
-      @JsonKey(name: 'custom_fields')
-          ContactCustomFields customFields});
+      {@JsonKey(name: 'jid') String jid,
+      @JsonKey(name: 'node') String node,
+      @JsonKey(name: 'display_name') String displayName,
+      @JsonKey(name: 'short_name') String shortName,
+      @JsonKey(name: 'contact_email') String contactEmail,
+      @JsonKey(name: 'contact_phone') String contactPhone,
+      @JsonKey(name: 'icons') IconData icons,
+      @JsonKey(name: 'gentime') int gentime,
+      @JsonKey(name: 'role') String role,
+      @JsonKey(name: 'mood') String mood,
+      @JsonKey(name: 'status') String teamStatus,
+      @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime lastActivity,
+      @JsonKey(name: 'is_archive') bool isArchive,
+      @JsonKey(name: 'botname') String botname,
+      @JsonKey(name: 'sections') List<String> sections,
+      @JsonKey(name: 'can_send_message') bool canSendMessage,
+      @JsonKey(name: 'cant_send_message_reason') String cantSendMessageReason,
+      @JsonKey(name: 'can_call') bool canCall,
+      @JsonKey(name: 'can_create_task') bool canCreateTask,
+      @JsonKey(name: 'can_import_tasks') bool canImportTasks,
+      @JsonKey(name: 'can_add_to_group') bool canAddToGroup,
+      @JsonKey(name: 'can_delete') bool canDelete,
+      @JsonKey(name: 'changeable_fields') List<String> changeableFields,
+      @JsonKey(name: 'family_name') String familyName,
+      @JsonKey(name: 'given_name') String givenName,
+      @JsonKey(name: 'patronymic') String patronymic,
+      @JsonKey(name: 'default_lang') String defaultLang,
+      @JsonKey(name: 'debug_show_activity') bool debugShowActivity,
+      @JsonKey(name: 'dropall_enabled') bool dropallEnabled,
+      @JsonKey(name: 'alt_send') bool altSend,
+      @JsonKey(name: 'asterisk_mention') bool asteriskMention,
+      @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
+      @JsonKey(name: 'hide_pushes_content') bool hidePushesContent,
+      @JsonKey(name: 'timezone') String timezone,
+      @JsonKey(name: 'quiet_time_start') String quietTimeStart,
+      @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
+      @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime focusUntil,
+      @JsonKey(name: 'group_notifications_enabled') bool groupNotificationsEnabled,
+      @JsonKey(name: 'task_notifications_enabled') bool taskNotificationsEnabled,
+      @JsonKey(name: 'contact_short_view') bool contactShortView,
+      @JsonKey(name: 'group_short_view') bool groupShortView,
+      @JsonKey(name: 'task_short_view') bool taskShortView,
+      @JsonKey(name: 'contact_mshort_view') bool contactMshortView,
+      @JsonKey(name: 'group_mshort_view') bool groupMshortView,
+      @JsonKey(name: 'auth_2fa_enabled') bool auth2faEnabled,
+      @JsonKey(name: 'auth_2fa_status') String auth2faStatus,
+      @JsonKey(name: 'task_mshort_view') bool taskMshortView,
+      @JsonKey(name: 'contact_show_archived') bool contactShowArchived,
+      @JsonKey(name: 'unread_first') bool unreadFirst,
+      @JsonKey(name: 'munread_first') bool mUnreadFirst,
+      @JsonKey(name: 'can_add_to_team') bool canAddToTeam,
+      @JsonKey(name: 'can_manage_sections') bool canManageSections,
+      @JsonKey(name: 'can_manage_projects') bool canManageProjects,
+      @JsonKey(name: 'can_manage_tags') bool canManageTags,
+      @JsonKey(name: 'can_manage_integrations') bool canManageIntegrations,
+      @JsonKey(name: 'can_manage_color_rules') bool canManageColorRules,
+      @JsonKey(name: 'can_create_group') bool canCreateGroup,
+      @JsonKey(name: 'can_join_public_groups') bool canJoinPublicGroups,
+      @JsonKey(name: 'can_join_public_tasks') bool canJoinPublicTasks,
+      @JsonKey(name: 'custom_fields') ContactCustomFields customFields,
+      @Deprecated('Deprecated.') @JsonKey(name: 'can_delete_any_message') bool canDeleteAnyMessage});
 
   $IconDataCopyWith<$Res> get icons;
   $ContactCustomFieldsCopyWith<$Res> get customFields;
@@ -602,6 +495,7 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
     Object contactEmail = freezed,
     Object contactPhone = freezed,
     Object icons = freezed,
+    Object gentime = freezed,
     Object role = freezed,
     Object mood = freezed,
     Object teamStatus = freezed,
@@ -626,9 +520,11 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
     Object altSend = freezed,
     Object asteriskMention = freezed,
     Object alwaysSendPushes = freezed,
+    Object hidePushesContent = freezed,
     Object timezone = freezed,
     Object quietTimeStart = freezed,
     Object quietTimeFinish = freezed,
+    Object focusUntil = freezed,
     Object groupNotificationsEnabled = freezed,
     Object taskNotificationsEnabled = freezed,
     Object contactShortView = freezed,
@@ -651,8 +547,8 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
     Object canCreateGroup = freezed,
     Object canJoinPublicGroups = freezed,
     Object canJoinPublicTasks = freezed,
-    Object canDeleteAnyMessage = freezed,
     Object customFields = freezed,
+    Object canDeleteAnyMessage = freezed,
   }) {
     return _then(_value.copyWith(
       jid: jid == freezed ? _value.jid : jid as String,
@@ -662,6 +558,7 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
       contactEmail: contactEmail == freezed ? _value.contactEmail : contactEmail as String,
       contactPhone: contactPhone == freezed ? _value.contactPhone : contactPhone as String,
       icons: icons == freezed ? _value.icons : icons as IconData,
+      gentime: gentime == freezed ? _value.gentime : gentime as int,
       role: role == freezed ? _value.role : role as String,
       mood: mood == freezed ? _value.mood : mood as String,
       teamStatus: teamStatus == freezed ? _value.teamStatus : teamStatus as String,
@@ -687,9 +584,11 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
       altSend: altSend == freezed ? _value.altSend : altSend as bool,
       asteriskMention: asteriskMention == freezed ? _value.asteriskMention : asteriskMention as bool,
       alwaysSendPushes: alwaysSendPushes == freezed ? _value.alwaysSendPushes : alwaysSendPushes as bool,
+      hidePushesContent: hidePushesContent == freezed ? _value.hidePushesContent : hidePushesContent as bool,
       timezone: timezone == freezed ? _value.timezone : timezone as String,
       quietTimeStart: quietTimeStart == freezed ? _value.quietTimeStart : quietTimeStart as String,
       quietTimeFinish: quietTimeFinish == freezed ? _value.quietTimeFinish : quietTimeFinish as String,
+      focusUntil: focusUntil == freezed ? _value.focusUntil : focusUntil as DateTime,
       groupNotificationsEnabled:
           groupNotificationsEnabled == freezed ? _value.groupNotificationsEnabled : groupNotificationsEnabled as bool,
       taskNotificationsEnabled:
@@ -715,8 +614,8 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
       canCreateGroup: canCreateGroup == freezed ? _value.canCreateGroup : canCreateGroup as bool,
       canJoinPublicGroups: canJoinPublicGroups == freezed ? _value.canJoinPublicGroups : canJoinPublicGroups as bool,
       canJoinPublicTasks: canJoinPublicTasks == freezed ? _value.canJoinPublicTasks : canJoinPublicTasks as bool,
-      canDeleteAnyMessage: canDeleteAnyMessage == freezed ? _value.canDeleteAnyMessage : canDeleteAnyMessage as bool,
       customFields: customFields == freezed ? _value.customFields : customFields as ContactCustomFields,
+      canDeleteAnyMessage: canDeleteAnyMessage == freezed ? _value.canDeleteAnyMessage : canDeleteAnyMessage as bool,
     ));
   }
 
@@ -746,124 +645,67 @@ abstract class _$ContactCopyWith<$Res> implements $ContactCopyWith<$Res> {
   factory _$ContactCopyWith(_Contact value, $Res Function(_Contact) then) = __$ContactCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'jid')
-          String jid,
-      @JsonKey(name: 'node')
-          String node,
-      @JsonKey(name: 'display_name')
-          String displayName,
-      @JsonKey(name: 'short_name')
-          String shortName,
-      @JsonKey(name: 'contact_email')
-          String contactEmail,
-      @JsonKey(name: 'contact_phone')
-          String contactPhone,
-      @JsonKey(name: 'icons')
-          IconData icons,
-      @JsonKey(name: 'role')
-          String role,
-      @JsonKey(name: 'mood')
-          String mood,
-      @JsonKey(name: 'status')
-          String teamStatus,
-      @JsonKey(name: 'last_activity')
-      @DateTimeConverter()
-          DateTime lastActivity,
-      @JsonKey(name: 'is_archive')
-          bool isArchive,
-      @JsonKey(name: 'botname')
-          String botname,
-      @JsonKey(name: 'sections')
-          List<String> sections,
-      @JsonKey(name: 'can_send_message')
-          bool canSendMessage,
-      @JsonKey(name: 'cant_send_message_reason')
-          String cantSendMessageReason,
-      @JsonKey(name: 'can_call')
-          bool canCall,
-      @JsonKey(name: 'can_create_task')
-          bool canCreateTask,
-      @JsonKey(name: 'can_import_tasks')
-          bool canImportTasks,
-      @JsonKey(name: 'can_add_to_group')
-          bool canAddToGroup,
-      @JsonKey(name: 'can_delete')
-          bool canDelete,
-      @JsonKey(name: 'changeable_fields')
-          List<String> changeableFields,
-      @JsonKey(name: 'family_name')
-          String familyName,
-      @JsonKey(name: 'given_name')
-          String givenName,
-      @JsonKey(name: 'patronymic')
-          String patronymic,
-      @JsonKey(name: 'default_lang')
-          String defaultLang,
-      @JsonKey(name: 'debug_show_activity')
-          bool debugShowActivity,
-      @JsonKey(name: 'dropall_enabled')
-          bool dropallEnabled,
-      @JsonKey(name: 'alt_send')
-          bool altSend,
-      @JsonKey(name: 'asterisk_mention')
-          bool asteriskMention,
-      @JsonKey(name: 'always_send_pushes')
-          bool alwaysSendPushes,
-      @JsonKey(name: 'timezone')
-          String timezone,
-      @JsonKey(name: 'quiet_time_start')
-          String quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish')
-          String quietTimeFinish,
-      @JsonKey(name: 'group_notifications_enabled')
-          bool groupNotificationsEnabled,
-      @JsonKey(name: 'task_notifications_enabled')
-          bool taskNotificationsEnabled,
-      @JsonKey(name: 'contact_short_view')
-          bool contactShortView,
-      @JsonKey(name: 'group_short_view')
-          bool groupShortView,
-      @JsonKey(name: 'task_short_view')
-          bool taskShortView,
-      @JsonKey(name: 'contact_mshort_view')
-          bool contactMshortView,
-      @JsonKey(name: 'group_mshort_view')
-          bool groupMshortView,
-      @JsonKey(name: 'auth_2fa_enabled')
-          bool auth2faEnabled,
-      @JsonKey(name: 'auth_2fa_status')
-          String auth2faStatus,
-      @JsonKey(name: 'task_mshort_view')
-          bool taskMshortView,
-      @JsonKey(name: 'contact_show_archived')
-          bool contactShowArchived,
-      @JsonKey(name: 'unread_first')
-          bool unreadFirst,
-      @JsonKey(name: 'munread_first')
-          bool mUnreadFirst,
-      @JsonKey(name: 'can_add_to_team')
-          bool canAddToTeam,
-      @JsonKey(name: 'can_manage_sections')
-          bool canManageSections,
-      @JsonKey(name: 'can_manage_projects')
-          bool canManageProjects,
-      @JsonKey(name: 'can_manage_tags')
-          bool canManageTags,
-      @JsonKey(name: 'can_manage_integrations')
-          bool canManageIntegrations,
-      @JsonKey(name: 'can_manage_color_rules')
-          bool canManageColorRules,
-      @JsonKey(name: 'can_create_group')
-          bool canCreateGroup,
-      @JsonKey(name: 'can_join_public_groups')
-          bool canJoinPublicGroups,
-      @JsonKey(name: 'can_join_public_tasks')
-          bool canJoinPublicTasks,
-      @Deprecated('Deprecated: use CanDeleteAnyMessage in chat object.')
-      @JsonKey(name: 'can_delete_any_message')
-          bool canDeleteAnyMessage,
-      @JsonKey(name: 'custom_fields')
-          ContactCustomFields customFields});
+      {@JsonKey(name: 'jid') String jid,
+      @JsonKey(name: 'node') String node,
+      @JsonKey(name: 'display_name') String displayName,
+      @JsonKey(name: 'short_name') String shortName,
+      @JsonKey(name: 'contact_email') String contactEmail,
+      @JsonKey(name: 'contact_phone') String contactPhone,
+      @JsonKey(name: 'icons') IconData icons,
+      @JsonKey(name: 'gentime') int gentime,
+      @JsonKey(name: 'role') String role,
+      @JsonKey(name: 'mood') String mood,
+      @JsonKey(name: 'status') String teamStatus,
+      @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime lastActivity,
+      @JsonKey(name: 'is_archive') bool isArchive,
+      @JsonKey(name: 'botname') String botname,
+      @JsonKey(name: 'sections') List<String> sections,
+      @JsonKey(name: 'can_send_message') bool canSendMessage,
+      @JsonKey(name: 'cant_send_message_reason') String cantSendMessageReason,
+      @JsonKey(name: 'can_call') bool canCall,
+      @JsonKey(name: 'can_create_task') bool canCreateTask,
+      @JsonKey(name: 'can_import_tasks') bool canImportTasks,
+      @JsonKey(name: 'can_add_to_group') bool canAddToGroup,
+      @JsonKey(name: 'can_delete') bool canDelete,
+      @JsonKey(name: 'changeable_fields') List<String> changeableFields,
+      @JsonKey(name: 'family_name') String familyName,
+      @JsonKey(name: 'given_name') String givenName,
+      @JsonKey(name: 'patronymic') String patronymic,
+      @JsonKey(name: 'default_lang') String defaultLang,
+      @JsonKey(name: 'debug_show_activity') bool debugShowActivity,
+      @JsonKey(name: 'dropall_enabled') bool dropallEnabled,
+      @JsonKey(name: 'alt_send') bool altSend,
+      @JsonKey(name: 'asterisk_mention') bool asteriskMention,
+      @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
+      @JsonKey(name: 'hide_pushes_content') bool hidePushesContent,
+      @JsonKey(name: 'timezone') String timezone,
+      @JsonKey(name: 'quiet_time_start') String quietTimeStart,
+      @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
+      @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime focusUntil,
+      @JsonKey(name: 'group_notifications_enabled') bool groupNotificationsEnabled,
+      @JsonKey(name: 'task_notifications_enabled') bool taskNotificationsEnabled,
+      @JsonKey(name: 'contact_short_view') bool contactShortView,
+      @JsonKey(name: 'group_short_view') bool groupShortView,
+      @JsonKey(name: 'task_short_view') bool taskShortView,
+      @JsonKey(name: 'contact_mshort_view') bool contactMshortView,
+      @JsonKey(name: 'group_mshort_view') bool groupMshortView,
+      @JsonKey(name: 'auth_2fa_enabled') bool auth2faEnabled,
+      @JsonKey(name: 'auth_2fa_status') String auth2faStatus,
+      @JsonKey(name: 'task_mshort_view') bool taskMshortView,
+      @JsonKey(name: 'contact_show_archived') bool contactShowArchived,
+      @JsonKey(name: 'unread_first') bool unreadFirst,
+      @JsonKey(name: 'munread_first') bool mUnreadFirst,
+      @JsonKey(name: 'can_add_to_team') bool canAddToTeam,
+      @JsonKey(name: 'can_manage_sections') bool canManageSections,
+      @JsonKey(name: 'can_manage_projects') bool canManageProjects,
+      @JsonKey(name: 'can_manage_tags') bool canManageTags,
+      @JsonKey(name: 'can_manage_integrations') bool canManageIntegrations,
+      @JsonKey(name: 'can_manage_color_rules') bool canManageColorRules,
+      @JsonKey(name: 'can_create_group') bool canCreateGroup,
+      @JsonKey(name: 'can_join_public_groups') bool canJoinPublicGroups,
+      @JsonKey(name: 'can_join_public_tasks') bool canJoinPublicTasks,
+      @JsonKey(name: 'custom_fields') ContactCustomFields customFields,
+      @Deprecated('Deprecated.') @JsonKey(name: 'can_delete_any_message') bool canDeleteAnyMessage});
 
   @override
   $IconDataCopyWith<$Res> get icons;
@@ -887,6 +729,7 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res> implement
     Object contactEmail = freezed,
     Object contactPhone = freezed,
     Object icons = freezed,
+    Object gentime = freezed,
     Object role = freezed,
     Object mood = freezed,
     Object teamStatus = freezed,
@@ -911,9 +754,11 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res> implement
     Object altSend = freezed,
     Object asteriskMention = freezed,
     Object alwaysSendPushes = freezed,
+    Object hidePushesContent = freezed,
     Object timezone = freezed,
     Object quietTimeStart = freezed,
     Object quietTimeFinish = freezed,
+    Object focusUntil = freezed,
     Object groupNotificationsEnabled = freezed,
     Object taskNotificationsEnabled = freezed,
     Object contactShortView = freezed,
@@ -936,8 +781,8 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res> implement
     Object canCreateGroup = freezed,
     Object canJoinPublicGroups = freezed,
     Object canJoinPublicTasks = freezed,
-    Object canDeleteAnyMessage = freezed,
     Object customFields = freezed,
+    Object canDeleteAnyMessage = freezed,
   }) {
     return _then(_Contact(
       jid: jid == freezed ? _value.jid : jid as String,
@@ -947,6 +792,7 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res> implement
       contactEmail: contactEmail == freezed ? _value.contactEmail : contactEmail as String,
       contactPhone: contactPhone == freezed ? _value.contactPhone : contactPhone as String,
       icons: icons == freezed ? _value.icons : icons as IconData,
+      gentime: gentime == freezed ? _value.gentime : gentime as int,
       role: role == freezed ? _value.role : role as String,
       mood: mood == freezed ? _value.mood : mood as String,
       teamStatus: teamStatus == freezed ? _value.teamStatus : teamStatus as String,
@@ -972,9 +818,11 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res> implement
       altSend: altSend == freezed ? _value.altSend : altSend as bool,
       asteriskMention: asteriskMention == freezed ? _value.asteriskMention : asteriskMention as bool,
       alwaysSendPushes: alwaysSendPushes == freezed ? _value.alwaysSendPushes : alwaysSendPushes as bool,
+      hidePushesContent: hidePushesContent == freezed ? _value.hidePushesContent : hidePushesContent as bool,
       timezone: timezone == freezed ? _value.timezone : timezone as String,
       quietTimeStart: quietTimeStart == freezed ? _value.quietTimeStart : quietTimeStart as String,
       quietTimeFinish: quietTimeFinish == freezed ? _value.quietTimeFinish : quietTimeFinish as String,
+      focusUntil: focusUntil == freezed ? _value.focusUntil : focusUntil as DateTime,
       groupNotificationsEnabled:
           groupNotificationsEnabled == freezed ? _value.groupNotificationsEnabled : groupNotificationsEnabled as bool,
       taskNotificationsEnabled:
@@ -1000,8 +848,8 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res> implement
       canCreateGroup: canCreateGroup == freezed ? _value.canCreateGroup : canCreateGroup as bool,
       canJoinPublicGroups: canJoinPublicGroups == freezed ? _value.canJoinPublicGroups : canJoinPublicGroups as bool,
       canJoinPublicTasks: canJoinPublicTasks == freezed ? _value.canJoinPublicTasks : canJoinPublicTasks as bool,
-      canDeleteAnyMessage: canDeleteAnyMessage == freezed ? _value.canDeleteAnyMessage : canDeleteAnyMessage as bool,
       customFields: customFields == freezed ? _value.customFields : customFields as ContactCustomFields,
+      canDeleteAnyMessage: canDeleteAnyMessage == freezed ? _value.canDeleteAnyMessage : canDeleteAnyMessage as bool,
     ));
   }
 }
@@ -1011,142 +859,78 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res> implement
 /// @nodoc
 class _$_Contact implements _Contact {
   const _$_Contact(
-      {@required
-      @JsonKey(name: 'jid')
-          this.jid,
-      @JsonKey(name: 'node')
-          this.node,
-      @required
-      @JsonKey(name: 'display_name')
-          this.displayName,
-      @required
-      @JsonKey(name: 'short_name')
-          this.shortName,
-      @required
-      @JsonKey(name: 'contact_email')
-          this.contactEmail,
-      @required
-      @JsonKey(name: 'contact_phone')
-          this.contactPhone,
-      @required
-      @JsonKey(name: 'icons')
-          this.icons,
-      @required
-      @JsonKey(name: 'role')
-          this.role,
-      @JsonKey(name: 'mood')
-          this.mood,
-      @required
-      @JsonKey(name: 'status')
-          this.teamStatus,
-      @JsonKey(name: 'last_activity')
-      @DateTimeConverter()
-          this.lastActivity,
-      @JsonKey(name: 'is_archive')
-          this.isArchive,
-      @JsonKey(name: 'botname')
-          this.botname,
-      @required
-      @JsonKey(name: 'sections')
-          this.sections,
-      @JsonKey(name: 'can_send_message')
-          this.canSendMessage,
-      @JsonKey(name: 'cant_send_message_reason')
-          this.cantSendMessageReason,
-      @JsonKey(name: 'can_call')
-          this.canCall,
-      @JsonKey(name: 'can_create_task')
-          this.canCreateTask,
-      @JsonKey(name: 'can_import_tasks')
-          this.canImportTasks,
-      @JsonKey(name: 'can_add_to_group')
-          this.canAddToGroup,
-      @JsonKey(name: 'can_delete')
-          this.canDelete,
-      @JsonKey(name: 'changeable_fields')
-          this.changeableFields,
-      @JsonKey(name: 'family_name')
-          this.familyName,
-      @JsonKey(name: 'given_name')
-          this.givenName,
-      @JsonKey(name: 'patronymic')
-          this.patronymic,
-      @JsonKey(name: 'default_lang')
-          this.defaultLang,
-      @JsonKey(name: 'debug_show_activity')
-          this.debugShowActivity,
-      @JsonKey(name: 'dropall_enabled')
-          this.dropallEnabled,
-      @JsonKey(name: 'alt_send')
-          this.altSend,
-      @JsonKey(name: 'asterisk_mention')
-          this.asteriskMention,
-      @JsonKey(name: 'always_send_pushes')
-          this.alwaysSendPushes,
-      @JsonKey(name: 'timezone')
-          this.timezone,
-      @JsonKey(name: 'quiet_time_start')
-          this.quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish')
-          this.quietTimeFinish,
-      @JsonKey(name: 'group_notifications_enabled')
-          this.groupNotificationsEnabled,
-      @JsonKey(name: 'task_notifications_enabled')
-          this.taskNotificationsEnabled,
-      @JsonKey(name: 'contact_short_view')
-          this.contactShortView,
-      @JsonKey(name: 'group_short_view')
-          this.groupShortView,
-      @JsonKey(name: 'task_short_view')
-          this.taskShortView,
-      @JsonKey(name: 'contact_mshort_view')
-          this.contactMshortView,
-      @JsonKey(name: 'group_mshort_view')
-          this.groupMshortView,
-      @JsonKey(name: 'auth_2fa_enabled')
-          this.auth2faEnabled,
-      @JsonKey(name: 'auth_2fa_status')
-          this.auth2faStatus,
-      @JsonKey(name: 'task_mshort_view')
-          this.taskMshortView,
-      @JsonKey(name: 'contact_show_archived')
-          this.contactShowArchived,
-      @JsonKey(name: 'unread_first')
-          this.unreadFirst,
-      @JsonKey(name: 'munread_first')
-          this.mUnreadFirst,
-      @JsonKey(name: 'can_add_to_team')
-          this.canAddToTeam,
-      @JsonKey(name: 'can_manage_sections')
-          this.canManageSections,
-      @JsonKey(name: 'can_manage_projects')
-          this.canManageProjects,
-      @JsonKey(name: 'can_manage_tags')
-          this.canManageTags,
-      @JsonKey(name: 'can_manage_integrations')
-          this.canManageIntegrations,
-      @JsonKey(name: 'can_manage_color_rules')
-          this.canManageColorRules,
-      @JsonKey(name: 'can_create_group')
-          this.canCreateGroup,
-      @JsonKey(name: 'can_join_public_groups')
-          this.canJoinPublicGroups,
-      @JsonKey(name: 'can_join_public_tasks')
-          this.canJoinPublicTasks,
-      @Deprecated('Deprecated: use CanDeleteAnyMessage in chat object.')
-      @JsonKey(name: 'can_delete_any_message')
-          this.canDeleteAnyMessage,
-      @JsonKey(name: 'custom_fields')
-          this.customFields})
+      {@required @JsonKey(name: 'jid') this.jid,
+      @JsonKey(name: 'node') this.node,
+      @required @JsonKey(name: 'display_name') this.displayName,
+      @required @JsonKey(name: 'short_name') this.shortName,
+      @required @JsonKey(name: 'contact_email') this.contactEmail,
+      @required @JsonKey(name: 'contact_phone') this.contactPhone,
+      @required @JsonKey(name: 'icons') this.icons,
+      @required @JsonKey(name: 'gentime') this.gentime,
+      @required @JsonKey(name: 'role') this.role,
+      @JsonKey(name: 'mood') this.mood,
+      @required @JsonKey(name: 'status') this.teamStatus,
+      @JsonKey(name: 'last_activity') @DateTimeConverter() this.lastActivity,
+      @JsonKey(name: 'is_archive') this.isArchive,
+      @JsonKey(name: 'botname') this.botname,
+      @required @JsonKey(name: 'sections') this.sections,
+      @JsonKey(name: 'can_send_message') this.canSendMessage,
+      @JsonKey(name: 'cant_send_message_reason') this.cantSendMessageReason,
+      @JsonKey(name: 'can_call') this.canCall,
+      @JsonKey(name: 'can_create_task') this.canCreateTask,
+      @JsonKey(name: 'can_import_tasks') this.canImportTasks,
+      @JsonKey(name: 'can_add_to_group') this.canAddToGroup,
+      @JsonKey(name: 'can_delete') this.canDelete,
+      @JsonKey(name: 'changeable_fields') this.changeableFields,
+      @JsonKey(name: 'family_name') this.familyName,
+      @JsonKey(name: 'given_name') this.givenName,
+      @JsonKey(name: 'patronymic') this.patronymic,
+      @JsonKey(name: 'default_lang') this.defaultLang,
+      @JsonKey(name: 'debug_show_activity') this.debugShowActivity,
+      @JsonKey(name: 'dropall_enabled') this.dropallEnabled,
+      @JsonKey(name: 'alt_send') this.altSend,
+      @JsonKey(name: 'asterisk_mention') this.asteriskMention,
+      @JsonKey(name: 'always_send_pushes') this.alwaysSendPushes,
+      @required @JsonKey(name: 'hide_pushes_content') this.hidePushesContent,
+      @JsonKey(name: 'timezone') this.timezone,
+      @JsonKey(name: 'quiet_time_start') this.quietTimeStart,
+      @JsonKey(name: 'quiet_time_finish') this.quietTimeFinish,
+      @JsonKey(name: 'focus_until') @DateTimeConverter() this.focusUntil,
+      @JsonKey(name: 'group_notifications_enabled') this.groupNotificationsEnabled,
+      @JsonKey(name: 'task_notifications_enabled') this.taskNotificationsEnabled,
+      @JsonKey(name: 'contact_short_view') this.contactShortView,
+      @JsonKey(name: 'group_short_view') this.groupShortView,
+      @JsonKey(name: 'task_short_view') this.taskShortView,
+      @JsonKey(name: 'contact_mshort_view') this.contactMshortView,
+      @JsonKey(name: 'group_mshort_view') this.groupMshortView,
+      @JsonKey(name: 'auth_2fa_enabled') this.auth2faEnabled,
+      @JsonKey(name: 'auth_2fa_status') this.auth2faStatus,
+      @JsonKey(name: 'task_mshort_view') this.taskMshortView,
+      @JsonKey(name: 'contact_show_archived') this.contactShowArchived,
+      @JsonKey(name: 'unread_first') this.unreadFirst,
+      @JsonKey(name: 'munread_first') this.mUnreadFirst,
+      @JsonKey(name: 'can_add_to_team') this.canAddToTeam,
+      @JsonKey(name: 'can_manage_sections') this.canManageSections,
+      @JsonKey(name: 'can_manage_projects') this.canManageProjects,
+      @JsonKey(name: 'can_manage_tags') this.canManageTags,
+      @JsonKey(name: 'can_manage_integrations') this.canManageIntegrations,
+      @JsonKey(name: 'can_manage_color_rules') this.canManageColorRules,
+      @JsonKey(name: 'can_create_group') this.canCreateGroup,
+      @JsonKey(name: 'can_join_public_groups') this.canJoinPublicGroups,
+      @JsonKey(name: 'can_join_public_tasks') this.canJoinPublicTasks,
+      @JsonKey(name: 'custom_fields') this.customFields,
+      @Deprecated('Deprecated.') @JsonKey(name: 'can_delete_any_message') this.canDeleteAnyMessage})
       : assert(jid != null),
         assert(displayName != null),
         assert(shortName != null),
         assert(contactEmail != null),
         assert(contactPhone != null),
         assert(icons != null),
+        assert(gentime != null),
         assert(role != null),
         assert(teamStatus != null),
-        assert(sections != null);
+        assert(sections != null),
+        assert(hidePushesContent != null);
 
   factory _$_Contact.fromJson(Map<String, dynamic> json) => _$_$_ContactFromJson(json);
 
@@ -1185,6 +969,11 @@ class _$_Contact implements _Contact {
   /// Icons data.
   @JsonKey(name: 'icons')
   final IconData icons;
+  @override
+
+  /// Object version.
+  @JsonKey(name: 'gentime')
+  final int gentime;
   @override
 
   /// Role in this team.
@@ -1238,7 +1027,7 @@ class _$_Contact implements _Contact {
   final bool canCall;
   @override
 
-  /// Can I call create task for this contact.
+  /// Can I create task for this contact.
   @JsonKey(name: 'can_create_task')
   final bool canCreateTask;
   @override
@@ -1308,6 +1097,11 @@ class _$_Contact implements _Contact {
   final bool alwaysSendPushes;
   @override
 
+  /// Hide pushes body.
+  @JsonKey(name: 'hide_pushes_content')
+  final bool hidePushesContent;
+  @override
+
   /// Timezone, if any.
   @JsonKey(name: 'timezone')
   final String timezone;
@@ -1321,6 +1115,12 @@ class _$_Contact implements _Contact {
   /// Quiet time finish.
   @JsonKey(name: 'quiet_time_finish')
   final String quietTimeFinish;
+  @override
+
+  /// Focus mode enabled until.
+  @JsonKey(name: 'focus_until')
+  @DateTimeConverter()
+  final DateTime focusUntil;
   @override
 
   /// Push notifications for group chats.
@@ -1433,19 +1233,19 @@ class _$_Contact implements _Contact {
   final bool canJoinPublicTasks;
   @override
 
-  /// Deprecated: use CanDeleteAnyMessage in chat object.
-  @Deprecated('Deprecated: use CanDeleteAnyMessage in chat object.')
-  @JsonKey(name: 'can_delete_any_message')
-  final bool canDeleteAnyMessage;
-  @override
-
   /// Extra contact fields.
   @JsonKey(name: 'custom_fields')
   final ContactCustomFields customFields;
+  @override
+
+  /// Deprecated.
+  @Deprecated('Deprecated.')
+  @JsonKey(name: 'can_delete_any_message')
+  final bool canDeleteAnyMessage;
 
   @override
   String toString() {
-    return 'Contact(jid: $jid, node: $node, displayName: $displayName, shortName: $shortName, contactEmail: $contactEmail, contactPhone: $contactPhone, icons: $icons, role: $role, mood: $mood, teamStatus: $teamStatus, lastActivity: $lastActivity, isArchive: $isArchive, botname: $botname, sections: $sections, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, canCall: $canCall, canCreateTask: $canCreateTask, canImportTasks: $canImportTasks, canAddToGroup: $canAddToGroup, canDelete: $canDelete, changeableFields: $changeableFields, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, debugShowActivity: $debugShowActivity, dropallEnabled: $dropallEnabled, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, groupNotificationsEnabled: $groupNotificationsEnabled, taskNotificationsEnabled: $taskNotificationsEnabled, contactShortView: $contactShortView, groupShortView: $groupShortView, taskShortView: $taskShortView, contactMshortView: $contactMshortView, groupMshortView: $groupMshortView, auth2faEnabled: $auth2faEnabled, auth2faStatus: $auth2faStatus, taskMshortView: $taskMshortView, contactShowArchived: $contactShowArchived, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, canAddToTeam: $canAddToTeam, canManageSections: $canManageSections, canManageProjects: $canManageProjects, canManageTags: $canManageTags, canManageIntegrations: $canManageIntegrations, canManageColorRules: $canManageColorRules, canCreateGroup: $canCreateGroup, canJoinPublicGroups: $canJoinPublicGroups, canJoinPublicTasks: $canJoinPublicTasks, canDeleteAnyMessage: $canDeleteAnyMessage, customFields: $customFields)';
+    return 'Contact(jid: $jid, node: $node, displayName: $displayName, shortName: $shortName, contactEmail: $contactEmail, contactPhone: $contactPhone, icons: $icons, gentime: $gentime, role: $role, mood: $mood, teamStatus: $teamStatus, lastActivity: $lastActivity, isArchive: $isArchive, botname: $botname, sections: $sections, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, canCall: $canCall, canCreateTask: $canCreateTask, canImportTasks: $canImportTasks, canAddToGroup: $canAddToGroup, canDelete: $canDelete, changeableFields: $changeableFields, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, debugShowActivity: $debugShowActivity, dropallEnabled: $dropallEnabled, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, hidePushesContent: $hidePushesContent, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, focusUntil: $focusUntil, groupNotificationsEnabled: $groupNotificationsEnabled, taskNotificationsEnabled: $taskNotificationsEnabled, contactShortView: $contactShortView, groupShortView: $groupShortView, taskShortView: $taskShortView, contactMshortView: $contactMshortView, groupMshortView: $groupMshortView, auth2faEnabled: $auth2faEnabled, auth2faStatus: $auth2faStatus, taskMshortView: $taskMshortView, contactShowArchived: $contactShowArchived, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, canAddToTeam: $canAddToTeam, canManageSections: $canManageSections, canManageProjects: $canManageProjects, canManageTags: $canManageTags, canManageIntegrations: $canManageIntegrations, canManageColorRules: $canManageColorRules, canCreateGroup: $canCreateGroup, canJoinPublicGroups: $canJoinPublicGroups, canJoinPublicTasks: $canJoinPublicTasks, customFields: $customFields, canDeleteAnyMessage: $canDeleteAnyMessage)';
   }
 
   @override
@@ -1463,6 +1263,7 @@ class _$_Contact implements _Contact {
             (identical(other.contactPhone, contactPhone) ||
                 const DeepCollectionEquality().equals(other.contactPhone, contactPhone)) &&
             (identical(other.icons, icons) || const DeepCollectionEquality().equals(other.icons, icons)) &&
+            (identical(other.gentime, gentime) || const DeepCollectionEquality().equals(other.gentime, gentime)) &&
             (identical(other.role, role) || const DeepCollectionEquality().equals(other.role, role)) &&
             (identical(other.mood, mood) || const DeepCollectionEquality().equals(other.mood, mood)) &&
             (identical(other.teamStatus, teamStatus) ||
@@ -1505,11 +1306,15 @@ class _$_Contact implements _Contact {
                 const DeepCollectionEquality().equals(other.asteriskMention, asteriskMention)) &&
             (identical(other.alwaysSendPushes, alwaysSendPushes) ||
                 const DeepCollectionEquality().equals(other.alwaysSendPushes, alwaysSendPushes)) &&
+            (identical(other.hidePushesContent, hidePushesContent) ||
+                const DeepCollectionEquality().equals(other.hidePushesContent, hidePushesContent)) &&
             (identical(other.timezone, timezone) || const DeepCollectionEquality().equals(other.timezone, timezone)) &&
             (identical(other.quietTimeStart, quietTimeStart) ||
                 const DeepCollectionEquality().equals(other.quietTimeStart, quietTimeStart)) &&
             (identical(other.quietTimeFinish, quietTimeFinish) ||
                 const DeepCollectionEquality().equals(other.quietTimeFinish, quietTimeFinish)) &&
+            (identical(other.focusUntil, focusUntil) ||
+                const DeepCollectionEquality().equals(other.focusUntil, focusUntil)) &&
             (identical(other.groupNotificationsEnabled, groupNotificationsEnabled) ||
                 const DeepCollectionEquality().equals(other.groupNotificationsEnabled, groupNotificationsEnabled)) &&
             (identical(other.taskNotificationsEnabled, taskNotificationsEnabled) ||
@@ -1546,14 +1351,12 @@ class _$_Contact implements _Contact {
                 const DeepCollectionEquality().equals(other.canManageTags, canManageTags)) &&
             (identical(other.canManageIntegrations, canManageIntegrations) ||
                 const DeepCollectionEquality().equals(other.canManageIntegrations, canManageIntegrations)) &&
-            (identical(other.canManageColorRules, canManageColorRules) ||
-                const DeepCollectionEquality().equals(other.canManageColorRules, canManageColorRules)) &&
-            (identical(other.canCreateGroup, canCreateGroup) ||
-                const DeepCollectionEquality().equals(other.canCreateGroup, canCreateGroup)) &&
+            (identical(other.canManageColorRules, canManageColorRules) || const DeepCollectionEquality().equals(other.canManageColorRules, canManageColorRules)) &&
+            (identical(other.canCreateGroup, canCreateGroup) || const DeepCollectionEquality().equals(other.canCreateGroup, canCreateGroup)) &&
             (identical(other.canJoinPublicGroups, canJoinPublicGroups) || const DeepCollectionEquality().equals(other.canJoinPublicGroups, canJoinPublicGroups)) &&
             (identical(other.canJoinPublicTasks, canJoinPublicTasks) || const DeepCollectionEquality().equals(other.canJoinPublicTasks, canJoinPublicTasks)) &&
-            (identical(other.canDeleteAnyMessage, canDeleteAnyMessage) || const DeepCollectionEquality().equals(other.canDeleteAnyMessage, canDeleteAnyMessage)) &&
-            (identical(other.customFields, customFields) || const DeepCollectionEquality().equals(other.customFields, customFields)));
+            (identical(other.customFields, customFields) || const DeepCollectionEquality().equals(other.customFields, customFields)) &&
+            (identical(other.canDeleteAnyMessage, canDeleteAnyMessage) || const DeepCollectionEquality().equals(other.canDeleteAnyMessage, canDeleteAnyMessage)));
   }
 
   @override
@@ -1566,6 +1369,7 @@ class _$_Contact implements _Contact {
       const DeepCollectionEquality().hash(contactEmail) ^
       const DeepCollectionEquality().hash(contactPhone) ^
       const DeepCollectionEquality().hash(icons) ^
+      const DeepCollectionEquality().hash(gentime) ^
       const DeepCollectionEquality().hash(role) ^
       const DeepCollectionEquality().hash(mood) ^
       const DeepCollectionEquality().hash(teamStatus) ^
@@ -1590,9 +1394,11 @@ class _$_Contact implements _Contact {
       const DeepCollectionEquality().hash(altSend) ^
       const DeepCollectionEquality().hash(asteriskMention) ^
       const DeepCollectionEquality().hash(alwaysSendPushes) ^
+      const DeepCollectionEquality().hash(hidePushesContent) ^
       const DeepCollectionEquality().hash(timezone) ^
       const DeepCollectionEquality().hash(quietTimeStart) ^
       const DeepCollectionEquality().hash(quietTimeFinish) ^
+      const DeepCollectionEquality().hash(focusUntil) ^
       const DeepCollectionEquality().hash(groupNotificationsEnabled) ^
       const DeepCollectionEquality().hash(taskNotificationsEnabled) ^
       const DeepCollectionEquality().hash(contactShortView) ^
@@ -1615,8 +1421,8 @@ class _$_Contact implements _Contact {
       const DeepCollectionEquality().hash(canCreateGroup) ^
       const DeepCollectionEquality().hash(canJoinPublicGroups) ^
       const DeepCollectionEquality().hash(canJoinPublicTasks) ^
-      const DeepCollectionEquality().hash(canDeleteAnyMessage) ^
-      const DeepCollectionEquality().hash(customFields);
+      const DeepCollectionEquality().hash(customFields) ^
+      const DeepCollectionEquality().hash(canDeleteAnyMessage);
 
   @JsonKey(ignore: true)
   @override
@@ -1630,133 +1436,67 @@ class _$_Contact implements _Contact {
 
 abstract class _Contact implements Contact {
   const factory _Contact(
-      {@required
-      @JsonKey(name: 'jid')
-          String jid,
-      @JsonKey(name: 'node')
-          String node,
-      @required
-      @JsonKey(name: 'display_name')
-          String displayName,
-      @required
-      @JsonKey(name: 'short_name')
-          String shortName,
-      @required
-      @JsonKey(name: 'contact_email')
-          String contactEmail,
-      @required
-      @JsonKey(name: 'contact_phone')
-          String contactPhone,
-      @required
-      @JsonKey(name: 'icons')
-          IconData icons,
-      @required
-      @JsonKey(name: 'role')
-          String role,
-      @JsonKey(name: 'mood')
-          String mood,
-      @required
-      @JsonKey(name: 'status')
-          String teamStatus,
-      @JsonKey(name: 'last_activity')
-      @DateTimeConverter()
-          DateTime lastActivity,
-      @JsonKey(name: 'is_archive')
-          bool isArchive,
-      @JsonKey(name: 'botname')
-          String botname,
-      @required
-      @JsonKey(name: 'sections')
-          List<String> sections,
-      @JsonKey(name: 'can_send_message')
-          bool canSendMessage,
-      @JsonKey(name: 'cant_send_message_reason')
-          String cantSendMessageReason,
-      @JsonKey(name: 'can_call')
-          bool canCall,
-      @JsonKey(name: 'can_create_task')
-          bool canCreateTask,
-      @JsonKey(name: 'can_import_tasks')
-          bool canImportTasks,
-      @JsonKey(name: 'can_add_to_group')
-          bool canAddToGroup,
-      @JsonKey(name: 'can_delete')
-          bool canDelete,
-      @JsonKey(name: 'changeable_fields')
-          List<String> changeableFields,
-      @JsonKey(name: 'family_name')
-          String familyName,
-      @JsonKey(name: 'given_name')
-          String givenName,
-      @JsonKey(name: 'patronymic')
-          String patronymic,
-      @JsonKey(name: 'default_lang')
-          String defaultLang,
-      @JsonKey(name: 'debug_show_activity')
-          bool debugShowActivity,
-      @JsonKey(name: 'dropall_enabled')
-          bool dropallEnabled,
-      @JsonKey(name: 'alt_send')
-          bool altSend,
-      @JsonKey(name: 'asterisk_mention')
-          bool asteriskMention,
-      @JsonKey(name: 'always_send_pushes')
-          bool alwaysSendPushes,
-      @JsonKey(name: 'timezone')
-          String timezone,
-      @JsonKey(name: 'quiet_time_start')
-          String quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish')
-          String quietTimeFinish,
-      @JsonKey(name: 'group_notifications_enabled')
-          bool groupNotificationsEnabled,
-      @JsonKey(name: 'task_notifications_enabled')
-          bool taskNotificationsEnabled,
-      @JsonKey(name: 'contact_short_view')
-          bool contactShortView,
-      @JsonKey(name: 'group_short_view')
-          bool groupShortView,
-      @JsonKey(name: 'task_short_view')
-          bool taskShortView,
-      @JsonKey(name: 'contact_mshort_view')
-          bool contactMshortView,
-      @JsonKey(name: 'group_mshort_view')
-          bool groupMshortView,
-      @JsonKey(name: 'auth_2fa_enabled')
-          bool auth2faEnabled,
-      @JsonKey(name: 'auth_2fa_status')
-          String auth2faStatus,
-      @JsonKey(name: 'task_mshort_view')
-          bool taskMshortView,
-      @JsonKey(name: 'contact_show_archived')
-          bool contactShowArchived,
-      @JsonKey(name: 'unread_first')
-          bool unreadFirst,
-      @JsonKey(name: 'munread_first')
-          bool mUnreadFirst,
-      @JsonKey(name: 'can_add_to_team')
-          bool canAddToTeam,
-      @JsonKey(name: 'can_manage_sections')
-          bool canManageSections,
-      @JsonKey(name: 'can_manage_projects')
-          bool canManageProjects,
-      @JsonKey(name: 'can_manage_tags')
-          bool canManageTags,
-      @JsonKey(name: 'can_manage_integrations')
-          bool canManageIntegrations,
-      @JsonKey(name: 'can_manage_color_rules')
-          bool canManageColorRules,
-      @JsonKey(name: 'can_create_group')
-          bool canCreateGroup,
-      @JsonKey(name: 'can_join_public_groups')
-          bool canJoinPublicGroups,
-      @JsonKey(name: 'can_join_public_tasks')
-          bool canJoinPublicTasks,
-      @Deprecated('Deprecated: use CanDeleteAnyMessage in chat object.')
-      @JsonKey(name: 'can_delete_any_message')
-          bool canDeleteAnyMessage,
-      @JsonKey(name: 'custom_fields')
-          ContactCustomFields customFields}) = _$_Contact;
+      {@required @JsonKey(name: 'jid') String jid,
+      @JsonKey(name: 'node') String node,
+      @required @JsonKey(name: 'display_name') String displayName,
+      @required @JsonKey(name: 'short_name') String shortName,
+      @required @JsonKey(name: 'contact_email') String contactEmail,
+      @required @JsonKey(name: 'contact_phone') String contactPhone,
+      @required @JsonKey(name: 'icons') IconData icons,
+      @required @JsonKey(name: 'gentime') int gentime,
+      @required @JsonKey(name: 'role') String role,
+      @JsonKey(name: 'mood') String mood,
+      @required @JsonKey(name: 'status') String teamStatus,
+      @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime lastActivity,
+      @JsonKey(name: 'is_archive') bool isArchive,
+      @JsonKey(name: 'botname') String botname,
+      @required @JsonKey(name: 'sections') List<String> sections,
+      @JsonKey(name: 'can_send_message') bool canSendMessage,
+      @JsonKey(name: 'cant_send_message_reason') String cantSendMessageReason,
+      @JsonKey(name: 'can_call') bool canCall,
+      @JsonKey(name: 'can_create_task') bool canCreateTask,
+      @JsonKey(name: 'can_import_tasks') bool canImportTasks,
+      @JsonKey(name: 'can_add_to_group') bool canAddToGroup,
+      @JsonKey(name: 'can_delete') bool canDelete,
+      @JsonKey(name: 'changeable_fields') List<String> changeableFields,
+      @JsonKey(name: 'family_name') String familyName,
+      @JsonKey(name: 'given_name') String givenName,
+      @JsonKey(name: 'patronymic') String patronymic,
+      @JsonKey(name: 'default_lang') String defaultLang,
+      @JsonKey(name: 'debug_show_activity') bool debugShowActivity,
+      @JsonKey(name: 'dropall_enabled') bool dropallEnabled,
+      @JsonKey(name: 'alt_send') bool altSend,
+      @JsonKey(name: 'asterisk_mention') bool asteriskMention,
+      @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
+      @required @JsonKey(name: 'hide_pushes_content') bool hidePushesContent,
+      @JsonKey(name: 'timezone') String timezone,
+      @JsonKey(name: 'quiet_time_start') String quietTimeStart,
+      @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
+      @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime focusUntil,
+      @JsonKey(name: 'group_notifications_enabled') bool groupNotificationsEnabled,
+      @JsonKey(name: 'task_notifications_enabled') bool taskNotificationsEnabled,
+      @JsonKey(name: 'contact_short_view') bool contactShortView,
+      @JsonKey(name: 'group_short_view') bool groupShortView,
+      @JsonKey(name: 'task_short_view') bool taskShortView,
+      @JsonKey(name: 'contact_mshort_view') bool contactMshortView,
+      @JsonKey(name: 'group_mshort_view') bool groupMshortView,
+      @JsonKey(name: 'auth_2fa_enabled') bool auth2faEnabled,
+      @JsonKey(name: 'auth_2fa_status') String auth2faStatus,
+      @JsonKey(name: 'task_mshort_view') bool taskMshortView,
+      @JsonKey(name: 'contact_show_archived') bool contactShowArchived,
+      @JsonKey(name: 'unread_first') bool unreadFirst,
+      @JsonKey(name: 'munread_first') bool mUnreadFirst,
+      @JsonKey(name: 'can_add_to_team') bool canAddToTeam,
+      @JsonKey(name: 'can_manage_sections') bool canManageSections,
+      @JsonKey(name: 'can_manage_projects') bool canManageProjects,
+      @JsonKey(name: 'can_manage_tags') bool canManageTags,
+      @JsonKey(name: 'can_manage_integrations') bool canManageIntegrations,
+      @JsonKey(name: 'can_manage_color_rules') bool canManageColorRules,
+      @JsonKey(name: 'can_create_group') bool canCreateGroup,
+      @JsonKey(name: 'can_join_public_groups') bool canJoinPublicGroups,
+      @JsonKey(name: 'can_join_public_tasks') bool canJoinPublicTasks,
+      @JsonKey(name: 'custom_fields') ContactCustomFields customFields,
+      @Deprecated('Deprecated.') @JsonKey(name: 'can_delete_any_message') bool canDeleteAnyMessage}) = _$_Contact;
 
   factory _Contact.fromJson(Map<String, dynamic> json) = _$_Contact.fromJson;
 
@@ -1795,6 +1535,11 @@ abstract class _Contact implements Contact {
   /// Icons data.
   @JsonKey(name: 'icons')
   IconData get icons;
+  @override
+
+  /// Object version.
+  @JsonKey(name: 'gentime')
+  int get gentime;
   @override
 
   /// Role in this team.
@@ -1848,7 +1593,7 @@ abstract class _Contact implements Contact {
   bool get canCall;
   @override
 
-  /// Can I call create task for this contact.
+  /// Can I create task for this contact.
   @JsonKey(name: 'can_create_task')
   bool get canCreateTask;
   @override
@@ -1918,6 +1663,11 @@ abstract class _Contact implements Contact {
   bool get alwaysSendPushes;
   @override
 
+  /// Hide pushes body.
+  @JsonKey(name: 'hide_pushes_content')
+  bool get hidePushesContent;
+  @override
+
   /// Timezone, if any.
   @JsonKey(name: 'timezone')
   String get timezone;
@@ -1931,6 +1681,12 @@ abstract class _Contact implements Contact {
   /// Quiet time finish.
   @JsonKey(name: 'quiet_time_finish')
   String get quietTimeFinish;
+  @override
+
+  /// Focus mode enabled until.
+  @JsonKey(name: 'focus_until')
+  @DateTimeConverter()
+  DateTime get focusUntil;
   @override
 
   /// Push notifications for group chats.
@@ -2043,15 +1799,15 @@ abstract class _Contact implements Contact {
   bool get canJoinPublicTasks;
   @override
 
-  /// Deprecated: use CanDeleteAnyMessage in chat object.
-  @Deprecated('Deprecated: use CanDeleteAnyMessage in chat object.')
-  @JsonKey(name: 'can_delete_any_message')
-  bool get canDeleteAnyMessage;
-  @override
-
   /// Extra contact fields.
   @JsonKey(name: 'custom_fields')
   ContactCustomFields get customFields;
+  @override
+
+  /// Deprecated.
+  @Deprecated('Deprecated.')
+  @JsonKey(name: 'can_delete_any_message')
+  bool get canDeleteAnyMessage;
   @override
   @JsonKey(ignore: true)
   _$ContactCopyWith<_Contact> get copyWith;

@@ -12,6 +12,7 @@ _$_ContactShort _$_$_ContactShortFromJson(Map<String, dynamic> json) {
     displayName: json['display_name'] as String,
     shortName: json['short_name'] as String,
     icons: json['icons'] == null ? null : IconData.fromJson(json['icons'] as Map<String, dynamic>),
+    gentime: json['gentime'] as int,
   );
 }
 
@@ -20,4 +21,5 @@ Map<String, dynamic> _$_$_ContactShortToJson(_$_ContactShort instance) => <Strin
       'display_name': instance.displayName,
       'short_name': instance.shortName,
       'icons': instance.icons?.toJson(),
+      'gentime': instance.gentime,
     };

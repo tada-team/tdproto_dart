@@ -17,11 +17,13 @@ _$_User _$_$_UserFromJson(Map<String, dynamic> json) {
     altSend: json['alt_send'] as bool,
     asteriskMention: json['asterisk_mention'] as bool,
     alwaysSendPushes: json['always_send_pushes'] as bool,
+    hidePushesContent: json['hide_pushes_content'] as bool,
     unreadFirst: json['unread_first'] as bool,
     mUnreadFirst: json['munread_first'] as bool,
     timezone: json['timezone'] as String,
     quietTimeStart: json['quiet_time_start'] as String,
     quietTimeFinish: json['quiet_time_finish'] as String,
+    icons: json['icons'] == null ? null : IconData.fromJson(json['icons'] as Map<String, dynamic>),
   );
 }
 
@@ -35,9 +37,11 @@ Map<String, dynamic> _$_$_UserToJson(_$_User instance) => <String, dynamic>{
       'alt_send': instance.altSend,
       'asterisk_mention': instance.asteriskMention,
       'always_send_pushes': instance.alwaysSendPushes,
+      'hide_pushes_content': instance.hidePushesContent,
       'unread_first': instance.unreadFirst,
       'munread_first': instance.mUnreadFirst,
       'timezone': instance.timezone,
       'quiet_time_start': instance.quietTimeStart,
       'quiet_time_finish': instance.quietTimeFinish,
+      'icons': instance.icons?.toJson(),
     };

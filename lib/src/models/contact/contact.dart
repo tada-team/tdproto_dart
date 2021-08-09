@@ -29,6 +29,9 @@ abstract class Contact with _$Contact {
     /// Icons data.
     @JsonKey(name: 'icons') @required IconData icons,
 
+    /// Object version.
+    @JsonKey(name: 'gentime') @required int gentime,
+
     /// Role in this team.
     @JsonKey(name: 'role') @required String role,
 
@@ -59,7 +62,7 @@ abstract class Contact with _$Contact {
     /// Can I call to this contact.
     @JsonKey(name: 'can_call') bool canCall,
 
-    /// Can I call create task for this contact.
+    /// Can I create task for this contact.
     @JsonKey(name: 'can_create_task') bool canCreateTask,
 
     /// Can I import tasks in this team.
@@ -101,6 +104,9 @@ abstract class Contact with _$Contact {
     /// Send push notifications even contact is online.
     @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
 
+    /// Hide pushes body.
+    @JsonKey(name: 'hide_pushes_content') @required bool hidePushesContent,
+
     /// Timezone, if any.
     @JsonKey(name: 'timezone') String timezone,
 
@@ -109,6 +115,9 @@ abstract class Contact with _$Contact {
 
     /// Quiet time finish.
     @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
+
+    /// Focus mode enabled until.
+    @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime focusUntil,
 
     /// Push notifications for group chats.
     @JsonKey(name: 'group_notifications_enabled') bool groupNotificationsEnabled,
@@ -176,13 +185,11 @@ abstract class Contact with _$Contact {
     /// Can I view/join public tasks in this team.
     @JsonKey(name: 'can_join_public_tasks') bool canJoinPublicTasks,
 
-    /// Deprecated: use CanDeleteAnyMessage in chat object.
-    @Deprecated('Deprecated: use CanDeleteAnyMessage in chat object.')
-    @JsonKey(name: 'can_delete_any_message')
-        bool canDeleteAnyMessage,
-
     /// Extra contact fields.
     @JsonKey(name: 'custom_fields') ContactCustomFields customFields,
+
+    /// Deprecated.
+    @Deprecated('Deprecated.') @JsonKey(name: 'can_delete_any_message') bool canDeleteAnyMessage,
   }) = _Contact;
 
   factory Contact.fromJson(Map<String, dynamic> json) => _$ContactFromJson(json);

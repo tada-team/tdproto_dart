@@ -44,7 +44,7 @@ abstract class Team with _$Team {
     /// Patronymic in usernames for this team.
     @JsonKey(name: 'use_patronymic') bool usePatronymic,
 
-    /// Username fields ordering.
+    /// Username fields ordering. Possible values: "family_name", "given_name", "patronymic".
     @JsonKey(name: 'user_fields') @required List<String> userFields,
 
     /// Family name should be first in display name.
@@ -97,6 +97,9 @@ abstract class Team with _$Team {
 
     /// Team pinned.
     @JsonKey(name: 'pinned') bool pinned,
+
+    /// Team's available tariff by includig archive ones.
+    @JsonKey(name: 'available_tariffs') List<String> availableTariffs,
   }) = _Team;
 
   factory Team.fromJson(Map<String, dynamic> json) => _$TeamFromJson(json);

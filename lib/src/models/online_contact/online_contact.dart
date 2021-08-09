@@ -14,6 +14,9 @@ abstract class OnlineContact with _$OnlineContact {
     /// Is away from keyboard.
     @JsonKey(name: 'afk') bool afk,
 
+    /// Focus mode enabled.
+    @JsonKey(name: 'focused') bool focused,
+
     /// Is mobile client.
     @JsonKey(name: 'mobile') @required bool mobile,
   }) = _OnlineContact;

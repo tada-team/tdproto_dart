@@ -15,6 +15,7 @@ _$_Contact _$_$_ContactFromJson(Map<String, dynamic> json) {
     contactEmail: json['contact_email'] as String,
     contactPhone: json['contact_phone'] as String,
     icons: json['icons'] == null ? null : IconData.fromJson(json['icons'] as Map<String, dynamic>),
+    gentime: json['gentime'] as int,
     role: json['role'] as String,
     mood: json['mood'] as String,
     teamStatus: json['status'] as String,
@@ -39,9 +40,11 @@ _$_Contact _$_$_ContactFromJson(Map<String, dynamic> json) {
     altSend: json['alt_send'] as bool,
     asteriskMention: json['asterisk_mention'] as bool,
     alwaysSendPushes: json['always_send_pushes'] as bool,
+    hidePushesContent: json['hide_pushes_content'] as bool,
     timezone: json['timezone'] as String,
     quietTimeStart: json['quiet_time_start'] as String,
     quietTimeFinish: json['quiet_time_finish'] as String,
+    focusUntil: const DateTimeConverter().fromJson(json['focus_until'] as String),
     groupNotificationsEnabled: json['group_notifications_enabled'] as bool,
     taskNotificationsEnabled: json['task_notifications_enabled'] as bool,
     contactShortView: json['contact_short_view'] as bool,
@@ -64,10 +67,10 @@ _$_Contact _$_$_ContactFromJson(Map<String, dynamic> json) {
     canCreateGroup: json['can_create_group'] as bool,
     canJoinPublicGroups: json['can_join_public_groups'] as bool,
     canJoinPublicTasks: json['can_join_public_tasks'] as bool,
-    canDeleteAnyMessage: json['can_delete_any_message'] as bool,
     customFields: json['custom_fields'] == null
         ? null
         : ContactCustomFields.fromJson(json['custom_fields'] as Map<String, dynamic>),
+    canDeleteAnyMessage: json['can_delete_any_message'] as bool,
   );
 }
 
@@ -79,6 +82,7 @@ Map<String, dynamic> _$_$_ContactToJson(_$_Contact instance) => <String, dynamic
       'contact_email': instance.contactEmail,
       'contact_phone': instance.contactPhone,
       'icons': instance.icons?.toJson(),
+      'gentime': instance.gentime,
       'role': instance.role,
       'mood': instance.mood,
       'status': instance.teamStatus,
@@ -103,9 +107,11 @@ Map<String, dynamic> _$_$_ContactToJson(_$_Contact instance) => <String, dynamic
       'alt_send': instance.altSend,
       'asterisk_mention': instance.asteriskMention,
       'always_send_pushes': instance.alwaysSendPushes,
+      'hide_pushes_content': instance.hidePushesContent,
       'timezone': instance.timezone,
       'quiet_time_start': instance.quietTimeStart,
       'quiet_time_finish': instance.quietTimeFinish,
+      'focus_until': const DateTimeConverter().toJson(instance.focusUntil),
       'group_notifications_enabled': instance.groupNotificationsEnabled,
       'task_notifications_enabled': instance.taskNotificationsEnabled,
       'contact_short_view': instance.contactShortView,
@@ -128,6 +134,6 @@ Map<String, dynamic> _$_$_ContactToJson(_$_Contact instance) => <String, dynamic
       'can_create_group': instance.canCreateGroup,
       'can_join_public_groups': instance.canJoinPublicGroups,
       'can_join_public_tasks': instance.canJoinPublicTasks,
-      'can_delete_any_message': instance.canDeleteAnyMessage,
       'custom_fields': instance.customFields?.toJson(),
+      'can_delete_any_message': instance.canDeleteAnyMessage,
     };
