@@ -32,7 +32,7 @@ abstract class Task with _$Task {
     /// Deadline time, if any.
     @JsonKey(name: 'deadline') @DateTimeConverter() DateTime deadline,
 
-    /// Is task public.
+    /// Is task or group public for non-guests.
     @JsonKey(name: 'public') bool isPublic,
 
     /// Fire a reminder at this time.

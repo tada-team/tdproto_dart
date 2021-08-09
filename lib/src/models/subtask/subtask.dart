@@ -23,7 +23,7 @@ abstract class Subtask with _$Subtask {
     /// Title.
     @JsonKey(name: 'display_name') @required String displayName,
 
-    /// Can other team member see this task/group chat.
+    /// Is task or group public for non-guests.
     @JsonKey(name: 'public') bool isPublic,
 
     /// Subtask task status.

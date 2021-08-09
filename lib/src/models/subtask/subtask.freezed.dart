@@ -68,7 +68,7 @@ mixin _$Subtask {
   @JsonKey(name: 'display_name')
   String get displayName;
 
-  /// Can other team member see this task/group chat.
+  /// Is task or group public for non-guests.
   @JsonKey(name: 'public')
   bool get isPublic;
 
@@ -214,7 +214,7 @@ class _$_Subtask implements _Subtask {
   final String displayName;
   @override
 
-  /// Can other team member see this task/group chat.
+  /// Is task or group public for non-guests.
   @JsonKey(name: 'public')
   final bool isPublic;
   @override
@@ -303,7 +303,7 @@ abstract class _Subtask implements Subtask {
   String get displayName;
   @override
 
-  /// Can other team member see this task/group chat.
+  /// Is task or group public for non-guests.
   @JsonKey(name: 'public')
   bool get isPublic;
   @override

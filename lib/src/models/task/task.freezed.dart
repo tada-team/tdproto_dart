@@ -101,7 +101,7 @@ mixin _$Task {
   @DateTimeConverter()
   DateTime get deadline;
 
-  /// Is task public.
+  /// Is task or group public for non-guests.
   @JsonKey(name: 'public')
   bool get isPublic;
 
@@ -357,7 +357,7 @@ class _$_Task implements _Task {
   final DateTime deadline;
   @override
 
-  /// Is task public.
+  /// Is task or group public for non-guests.
   @JsonKey(name: 'public')
   final bool isPublic;
   @override
@@ -535,7 +535,7 @@ abstract class _Task implements Task {
   DateTime get deadline;
   @override
 
-  /// Is task public.
+  /// Is task or group public for non-guests.
   @JsonKey(name: 'public')
   bool get isPublic;
   @override
