@@ -17,7 +17,8 @@ _$_ButtonColors _$_$_ButtonColorsFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_ButtonColorsToJson(_$_ButtonColors instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_ButtonColorsToJson(_$_ButtonColors instance) =>
+    <String, dynamic>{
       'brand_static': instance.brandStatic,
       'brand_active': instance.brandActive,
       'brand_disable': instance.brandDisable,

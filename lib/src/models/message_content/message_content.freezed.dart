@@ -38,28 +38,35 @@ class _$MessageContentTearOff {
       @Deprecated('Upload duration, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'duration')
           int duration,
-      @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload still processing, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'processing')
           bool processing,
-      @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
       @JsonKey(name: 'blurhash')
           String blurhash,
-      @Deprecated('Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewHeight')
           int previewHeight,
-      @Deprecated('Upload width, in pixels, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload width, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewWidth')
           int previewWidth,
-      @Deprecated('Upload preview absolute url, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewURL')
           String previewUrl,
-      @Deprecated('Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'preview2xURL')
           String preview2xUrl,
       @Deprecated('Upload name, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'name')
           String name,
-      @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload is animated image, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'animated')
           bool animated,
       @JsonKey(name: 'title')
@@ -162,32 +169,38 @@ mixin _$MessageContent {
   int get duration;
 
   /// Upload still processing, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload still processing, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'processing')
   bool get processing;
 
   /// Compact representation of a placeholder for an image. Deprecated: use Uploads instead.
-  @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
   @JsonKey(name: 'blurhash')
   String get blurhash;
 
   /// Upload preview height, in pixels, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewHeight')
   int get previewHeight;
 
   /// Upload width, in pixels, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload width, in pixels, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload width, in pixels, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewWidth')
   int get previewWidth;
 
   /// Upload preview absolute url, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload preview absolute url, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload preview absolute url, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewURL')
   String get previewUrl;
 
   /// Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'preview2xURL')
   String get preview2xUrl;
 
@@ -197,7 +210,8 @@ mixin _$MessageContent {
   String get name;
 
   /// Upload is animated image, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload is animated image, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'animated')
   bool get animated;
 
@@ -256,7 +270,8 @@ mixin _$MessageContent {
 
 /// @nodoc
 abstract class $MessageContentCopyWith<$Res> {
-  factory $MessageContentCopyWith(MessageContent value, $Res Function(MessageContent) then) =
+  factory $MessageContentCopyWith(
+          MessageContent value, $Res Function(MessageContent) then) =
       _$MessageContentCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'text')
@@ -277,28 +292,35 @@ abstract class $MessageContentCopyWith<$Res> {
       @Deprecated('Upload duration, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'duration')
           int duration,
-      @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload still processing, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'processing')
           bool processing,
-      @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
       @JsonKey(name: 'blurhash')
           String blurhash,
-      @Deprecated('Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewHeight')
           int previewHeight,
-      @Deprecated('Upload width, in pixels, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload width, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewWidth')
           int previewWidth,
-      @Deprecated('Upload preview absolute url, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewURL')
           String previewUrl,
-      @Deprecated('Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'preview2xURL')
           String preview2xUrl,
       @Deprecated('Upload name, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'name')
           String name,
-      @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload is animated image, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'animated')
           bool animated,
       @JsonKey(name: 'title')
@@ -330,7 +352,8 @@ abstract class $MessageContentCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MessageContentCopyWithImpl<$Res> implements $MessageContentCopyWith<$Res> {
+class _$MessageContentCopyWithImpl<$Res>
+    implements $MessageContentCopyWith<$Res> {
   _$MessageContentCopyWithImpl(this._value, this._then);
 
   final MessageContent _value;
@@ -375,12 +398,19 @@ class _$MessageContentCopyWithImpl<$Res> implements $MessageContentCopyWith<$Res
       mediaUrl: mediaUrl == freezed ? _value.mediaUrl : mediaUrl as String,
       size: size == freezed ? _value.size : size as int,
       duration: duration == freezed ? _value.duration : duration as int,
-      processing: processing == freezed ? _value.processing : processing as bool,
+      processing:
+          processing == freezed ? _value.processing : processing as bool,
       blurhash: blurhash == freezed ? _value.blurhash : blurhash as String,
-      previewHeight: previewHeight == freezed ? _value.previewHeight : previewHeight as int,
-      previewWidth: previewWidth == freezed ? _value.previewWidth : previewWidth as int,
-      previewUrl: previewUrl == freezed ? _value.previewUrl : previewUrl as String,
-      preview2xUrl: preview2xUrl == freezed ? _value.preview2xUrl : preview2xUrl as String,
+      previewHeight: previewHeight == freezed
+          ? _value.previewHeight
+          : previewHeight as int,
+      previewWidth:
+          previewWidth == freezed ? _value.previewWidth : previewWidth as int,
+      previewUrl:
+          previewUrl == freezed ? _value.previewUrl : previewUrl as String,
+      preview2xUrl: preview2xUrl == freezed
+          ? _value.preview2xUrl
+          : preview2xUrl as String,
       name: name == freezed ? _value.name : name as String,
       animated: animated == freezed ? _value.animated : animated as bool,
       title: title == freezed ? _value.title : title as String,
@@ -389,12 +419,16 @@ class _$MessageContentCopyWithImpl<$Res> implements $MessageContentCopyWith<$Res
       actor: actor == freezed ? _value.actor : actor as String,
       comment: comment == freezed ? _value.comment : comment as String,
       givenName: givenName == freezed ? _value.givenName : givenName as String,
-      familyName: familyName == freezed ? _value.familyName : familyName as String,
-      patronymic: patronymic == freezed ? _value.patronymic : patronymic as String,
+      familyName:
+          familyName == freezed ? _value.familyName : familyName as String,
+      patronymic:
+          patronymic == freezed ? _value.patronymic : patronymic as String,
       phones: phones == freezed ? _value.phones : phones as List<String>,
       emails: emails == freezed ? _value.emails : emails as List<String>,
-      stickerpack: stickerpack == freezed ? _value.stickerpack : stickerpack as String,
-      pdfVersion: pdfVersion == freezed ? _value.pdfVersion : pdfVersion as PdfVersion,
+      stickerpack:
+          stickerpack == freezed ? _value.stickerpack : stickerpack as String,
+      pdfVersion:
+          pdfVersion == freezed ? _value.pdfVersion : pdfVersion as PdfVersion,
     ));
   }
 
@@ -410,8 +444,10 @@ class _$MessageContentCopyWithImpl<$Res> implements $MessageContentCopyWith<$Res
 }
 
 /// @nodoc
-abstract class _$MessageContentCopyWith<$Res> implements $MessageContentCopyWith<$Res> {
-  factory _$MessageContentCopyWith(_MessageContent value, $Res Function(_MessageContent) then) =
+abstract class _$MessageContentCopyWith<$Res>
+    implements $MessageContentCopyWith<$Res> {
+  factory _$MessageContentCopyWith(
+          _MessageContent value, $Res Function(_MessageContent) then) =
       __$MessageContentCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -433,28 +469,35 @@ abstract class _$MessageContentCopyWith<$Res> implements $MessageContentCopyWith
       @Deprecated('Upload duration, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'duration')
           int duration,
-      @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload still processing, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'processing')
           bool processing,
-      @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
       @JsonKey(name: 'blurhash')
           String blurhash,
-      @Deprecated('Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewHeight')
           int previewHeight,
-      @Deprecated('Upload width, in pixels, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload width, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewWidth')
           int previewWidth,
-      @Deprecated('Upload preview absolute url, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewURL')
           String previewUrl,
-      @Deprecated('Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'preview2xURL')
           String preview2xUrl,
       @Deprecated('Upload name, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'name')
           String name,
-      @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload is animated image, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'animated')
           bool animated,
       @JsonKey(name: 'title')
@@ -487,9 +530,11 @@ abstract class _$MessageContentCopyWith<$Res> implements $MessageContentCopyWith
 }
 
 /// @nodoc
-class __$MessageContentCopyWithImpl<$Res> extends _$MessageContentCopyWithImpl<$Res>
+class __$MessageContentCopyWithImpl<$Res>
+    extends _$MessageContentCopyWithImpl<$Res>
     implements _$MessageContentCopyWith<$Res> {
-  __$MessageContentCopyWithImpl(_MessageContent _value, $Res Function(_MessageContent) _then)
+  __$MessageContentCopyWithImpl(
+      _MessageContent _value, $Res Function(_MessageContent) _then)
       : super(_value, (v) => _then(v as _MessageContent));
 
   @override
@@ -533,12 +578,19 @@ class __$MessageContentCopyWithImpl<$Res> extends _$MessageContentCopyWithImpl<$
       mediaUrl: mediaUrl == freezed ? _value.mediaUrl : mediaUrl as String,
       size: size == freezed ? _value.size : size as int,
       duration: duration == freezed ? _value.duration : duration as int,
-      processing: processing == freezed ? _value.processing : processing as bool,
+      processing:
+          processing == freezed ? _value.processing : processing as bool,
       blurhash: blurhash == freezed ? _value.blurhash : blurhash as String,
-      previewHeight: previewHeight == freezed ? _value.previewHeight : previewHeight as int,
-      previewWidth: previewWidth == freezed ? _value.previewWidth : previewWidth as int,
-      previewUrl: previewUrl == freezed ? _value.previewUrl : previewUrl as String,
-      preview2xUrl: preview2xUrl == freezed ? _value.preview2xUrl : preview2xUrl as String,
+      previewHeight: previewHeight == freezed
+          ? _value.previewHeight
+          : previewHeight as int,
+      previewWidth:
+          previewWidth == freezed ? _value.previewWidth : previewWidth as int,
+      previewUrl:
+          previewUrl == freezed ? _value.previewUrl : previewUrl as String,
+      preview2xUrl: preview2xUrl == freezed
+          ? _value.preview2xUrl
+          : preview2xUrl as String,
       name: name == freezed ? _value.name : name as String,
       animated: animated == freezed ? _value.animated : animated as bool,
       title: title == freezed ? _value.title : title as String,
@@ -547,12 +599,16 @@ class __$MessageContentCopyWithImpl<$Res> extends _$MessageContentCopyWithImpl<$
       actor: actor == freezed ? _value.actor : actor as String,
       comment: comment == freezed ? _value.comment : comment as String,
       givenName: givenName == freezed ? _value.givenName : givenName as String,
-      familyName: familyName == freezed ? _value.familyName : familyName as String,
-      patronymic: patronymic == freezed ? _value.patronymic : patronymic as String,
+      familyName:
+          familyName == freezed ? _value.familyName : familyName as String,
+      patronymic:
+          patronymic == freezed ? _value.patronymic : patronymic as String,
       phones: phones == freezed ? _value.phones : phones as List<String>,
       emails: emails == freezed ? _value.emails : emails as List<String>,
-      stickerpack: stickerpack == freezed ? _value.stickerpack : stickerpack as String,
-      pdfVersion: pdfVersion == freezed ? _value.pdfVersion : pdfVersion as PdfVersion,
+      stickerpack:
+          stickerpack == freezed ? _value.stickerpack : stickerpack as String,
+      pdfVersion:
+          pdfVersion == freezed ? _value.pdfVersion : pdfVersion as PdfVersion,
     ));
   }
 }
@@ -582,28 +638,35 @@ class _$_MessageContent implements _MessageContent {
       @Deprecated('Upload duration, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'duration')
           this.duration,
-      @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload still processing, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'processing')
           this.processing,
-      @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
       @JsonKey(name: 'blurhash')
           this.blurhash,
-      @Deprecated('Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewHeight')
           this.previewHeight,
-      @Deprecated('Upload width, in pixels, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload width, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewWidth')
           this.previewWidth,
-      @Deprecated('Upload preview absolute url, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewURL')
           this.previewUrl,
-      @Deprecated('Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'preview2xURL')
           this.preview2xUrl,
       @Deprecated('Upload name, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'name')
           this.name,
-      @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload is animated image, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'animated')
           this.animated,
       @JsonKey(name: 'title')
@@ -633,7 +696,8 @@ class _$_MessageContent implements _MessageContent {
       : assert(text != null),
         assert(type != null);
 
-  factory _$_MessageContent.fromJson(Map<String, dynamic> json) => _$_$_MessageContentFromJson(json);
+  factory _$_MessageContent.fromJson(Map<String, dynamic> json) =>
+      _$_$_MessageContentFromJson(json);
 
   @override
 
@@ -677,37 +741,43 @@ class _$_MessageContent implements _MessageContent {
   @override
 
   /// Upload still processing, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload still processing, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'processing')
   final bool processing;
   @override
 
   /// Compact representation of a placeholder for an image. Deprecated: use Uploads instead.
-  @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
   @JsonKey(name: 'blurhash')
   final String blurhash;
   @override
 
   /// Upload preview height, in pixels, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewHeight')
   final int previewHeight;
   @override
 
   /// Upload width, in pixels, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload width, in pixels, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload width, in pixels, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewWidth')
   final int previewWidth;
   @override
 
   /// Upload preview absolute url, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload preview absolute url, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload preview absolute url, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewURL')
   final String previewUrl;
   @override
 
   /// Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'preview2xURL')
   final String preview2xUrl;
   @override
@@ -719,7 +789,8 @@ class _$_MessageContent implements _MessageContent {
   @override
 
   /// Upload is animated image, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload is animated image, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'animated')
   final bool animated;
   @override
@@ -792,43 +863,76 @@ class _$_MessageContent implements _MessageContent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _MessageContent &&
-            (identical(other.text, text) || const DeepCollectionEquality().equals(other.text, text)) &&
-            (identical(other.type, type) || const DeepCollectionEquality().equals(other.type, type)) &&
-            (identical(other.subtype, subtype) || const DeepCollectionEquality().equals(other.subtype, subtype)) &&
-            (identical(other.upload, upload) || const DeepCollectionEquality().equals(other.upload, upload)) &&
-            (identical(other.mediaUrl, mediaUrl) || const DeepCollectionEquality().equals(other.mediaUrl, mediaUrl)) &&
-            (identical(other.size, size) || const DeepCollectionEquality().equals(other.size, size)) &&
-            (identical(other.duration, duration) || const DeepCollectionEquality().equals(other.duration, duration)) &&
+            (identical(other.text, text) ||
+                const DeepCollectionEquality().equals(other.text, text)) &&
+            (identical(other.type, type) ||
+                const DeepCollectionEquality().equals(other.type, type)) &&
+            (identical(other.subtype, subtype) ||
+                const DeepCollectionEquality()
+                    .equals(other.subtype, subtype)) &&
+            (identical(other.upload, upload) ||
+                const DeepCollectionEquality().equals(other.upload, upload)) &&
+            (identical(other.mediaUrl, mediaUrl) ||
+                const DeepCollectionEquality()
+                    .equals(other.mediaUrl, mediaUrl)) &&
+            (identical(other.size, size) ||
+                const DeepCollectionEquality().equals(other.size, size)) &&
+            (identical(other.duration, duration) ||
+                const DeepCollectionEquality()
+                    .equals(other.duration, duration)) &&
             (identical(other.processing, processing) ||
-                const DeepCollectionEquality().equals(other.processing, processing)) &&
-            (identical(other.blurhash, blurhash) || const DeepCollectionEquality().equals(other.blurhash, blurhash)) &&
+                const DeepCollectionEquality()
+                    .equals(other.processing, processing)) &&
+            (identical(other.blurhash, blurhash) ||
+                const DeepCollectionEquality()
+                    .equals(other.blurhash, blurhash)) &&
             (identical(other.previewHeight, previewHeight) ||
-                const DeepCollectionEquality().equals(other.previewHeight, previewHeight)) &&
+                const DeepCollectionEquality()
+                    .equals(other.previewHeight, previewHeight)) &&
             (identical(other.previewWidth, previewWidth) ||
-                const DeepCollectionEquality().equals(other.previewWidth, previewWidth)) &&
+                const DeepCollectionEquality()
+                    .equals(other.previewWidth, previewWidth)) &&
             (identical(other.previewUrl, previewUrl) ||
-                const DeepCollectionEquality().equals(other.previewUrl, previewUrl)) &&
+                const DeepCollectionEquality()
+                    .equals(other.previewUrl, previewUrl)) &&
             (identical(other.preview2xUrl, preview2xUrl) ||
-                const DeepCollectionEquality().equals(other.preview2xUrl, preview2xUrl)) &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.animated, animated) || const DeepCollectionEquality().equals(other.animated, animated)) &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
-            (identical(other.old, old) || const DeepCollectionEquality().equals(other.old, old)) &&
-            (identical(other.isNew, isNew) || const DeepCollectionEquality().equals(other.isNew, isNew)) &&
-            (identical(other.actor, actor) || const DeepCollectionEquality().equals(other.actor, actor)) &&
-            (identical(other.comment, comment) || const DeepCollectionEquality().equals(other.comment, comment)) &&
+                const DeepCollectionEquality()
+                    .equals(other.preview2xUrl, preview2xUrl)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
+            (identical(other.animated, animated) ||
+                const DeepCollectionEquality()
+                    .equals(other.animated, animated)) &&
+            (identical(other.title, title) ||
+                const DeepCollectionEquality().equals(other.title, title)) &&
+            (identical(other.old, old) ||
+                const DeepCollectionEquality().equals(other.old, old)) &&
+            (identical(other.isNew, isNew) ||
+                const DeepCollectionEquality().equals(other.isNew, isNew)) &&
+            (identical(other.actor, actor) ||
+                const DeepCollectionEquality().equals(other.actor, actor)) &&
+            (identical(other.comment, comment) ||
+                const DeepCollectionEquality()
+                    .equals(other.comment, comment)) &&
             (identical(other.givenName, givenName) ||
-                const DeepCollectionEquality().equals(other.givenName, givenName)) &&
+                const DeepCollectionEquality()
+                    .equals(other.givenName, givenName)) &&
             (identical(other.familyName, familyName) ||
-                const DeepCollectionEquality().equals(other.familyName, familyName)) &&
+                const DeepCollectionEquality()
+                    .equals(other.familyName, familyName)) &&
             (identical(other.patronymic, patronymic) ||
-                const DeepCollectionEquality().equals(other.patronymic, patronymic)) &&
-            (identical(other.phones, phones) || const DeepCollectionEquality().equals(other.phones, phones)) &&
-            (identical(other.emails, emails) || const DeepCollectionEquality().equals(other.emails, emails)) &&
+                const DeepCollectionEquality()
+                    .equals(other.patronymic, patronymic)) &&
+            (identical(other.phones, phones) ||
+                const DeepCollectionEquality().equals(other.phones, phones)) &&
+            (identical(other.emails, emails) ||
+                const DeepCollectionEquality().equals(other.emails, emails)) &&
             (identical(other.stickerpack, stickerpack) ||
-                const DeepCollectionEquality().equals(other.stickerpack, stickerpack)) &&
+                const DeepCollectionEquality()
+                    .equals(other.stickerpack, stickerpack)) &&
             (identical(other.pdfVersion, pdfVersion) ||
-                const DeepCollectionEquality().equals(other.pdfVersion, pdfVersion)));
+                const DeepCollectionEquality()
+                    .equals(other.pdfVersion, pdfVersion)));
   }
 
   @override
@@ -895,28 +999,35 @@ abstract class _MessageContent implements MessageContent {
       @Deprecated('Upload duration, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'duration')
           int duration,
-      @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload still processing, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'processing')
           bool processing,
-      @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
       @JsonKey(name: 'blurhash')
           String blurhash,
-      @Deprecated('Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewHeight')
           int previewHeight,
-      @Deprecated('Upload width, in pixels, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload width, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewWidth')
           int previewWidth,
-      @Deprecated('Upload preview absolute url, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewURL')
           String previewUrl,
-      @Deprecated('Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'preview2xURL')
           String preview2xUrl,
       @Deprecated('Upload name, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'name')
           String name,
-      @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
+      @Deprecated(
+          'Upload is animated image, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'animated')
           bool animated,
       @JsonKey(name: 'title')
@@ -944,7 +1055,8 @@ abstract class _MessageContent implements MessageContent {
       @JsonKey(name: 'pdf_version')
           PdfVersion pdfVersion}) = _$_MessageContent;
 
-  factory _MessageContent.fromJson(Map<String, dynamic> json) = _$_MessageContent.fromJson;
+  factory _MessageContent.fromJson(Map<String, dynamic> json) =
+      _$_MessageContent.fromJson;
 
   @override
 
@@ -988,37 +1100,43 @@ abstract class _MessageContent implements MessageContent {
   @override
 
   /// Upload still processing, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload still processing, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'processing')
   bool get processing;
   @override
 
   /// Compact representation of a placeholder for an image. Deprecated: use Uploads instead.
-  @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
   @JsonKey(name: 'blurhash')
   String get blurhash;
   @override
 
   /// Upload preview height, in pixels, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewHeight')
   int get previewHeight;
   @override
 
   /// Upload width, in pixels, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload width, in pixels, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload width, in pixels, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewWidth')
   int get previewWidth;
   @override
 
   /// Upload preview absolute url, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload preview absolute url, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload preview absolute url, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewURL')
   String get previewUrl;
   @override
 
   /// Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'preview2xURL')
   String get preview2xUrl;
   @override
@@ -1030,7 +1148,8 @@ abstract class _MessageContent implements MessageContent {
   @override
 
   /// Upload is animated image, if any. Deprecated: use Uploads instead.
-  @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
+  @Deprecated(
+      'Upload is animated image, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'animated')
   bool get animated;
   @override

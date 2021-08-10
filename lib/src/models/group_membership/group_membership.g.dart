@@ -14,7 +14,8 @@ _$_GroupMembership _$_$_GroupMembershipFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_GroupMembershipToJson(_$_GroupMembership instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_GroupMembershipToJson(_$_GroupMembership instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'status': instance.status,
       'can_remove': instance.canRemove,

@@ -60,7 +60,8 @@ mixin _$GroupAccessRequest {
 
 /// @nodoc
 abstract class $GroupAccessRequestCopyWith<$Res> {
-  factory $GroupAccessRequestCopyWith(GroupAccessRequest value, $Res Function(GroupAccessRequest) then) =
+  factory $GroupAccessRequestCopyWith(
+          GroupAccessRequest value, $Res Function(GroupAccessRequest) then) =
       _$GroupAccessRequestCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
@@ -69,7 +70,8 @@ abstract class $GroupAccessRequestCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$GroupAccessRequestCopyWithImpl<$Res> implements $GroupAccessRequestCopyWith<$Res> {
+class _$GroupAccessRequestCopyWithImpl<$Res>
+    implements $GroupAccessRequestCopyWith<$Res> {
   _$GroupAccessRequestCopyWithImpl(this._value, this._then);
 
   final GroupAccessRequest _value;
@@ -91,8 +93,10 @@ class _$GroupAccessRequestCopyWithImpl<$Res> implements $GroupAccessRequestCopyW
 }
 
 /// @nodoc
-abstract class _$GroupAccessRequestCopyWith<$Res> implements $GroupAccessRequestCopyWith<$Res> {
-  factory _$GroupAccessRequestCopyWith(_GroupAccessRequest value, $Res Function(_GroupAccessRequest) then) =
+abstract class _$GroupAccessRequestCopyWith<$Res>
+    implements $GroupAccessRequestCopyWith<$Res> {
+  factory _$GroupAccessRequestCopyWith(
+          _GroupAccessRequest value, $Res Function(_GroupAccessRequest) then) =
       __$GroupAccessRequestCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -102,9 +106,11 @@ abstract class _$GroupAccessRequestCopyWith<$Res> implements $GroupAccessRequest
 }
 
 /// @nodoc
-class __$GroupAccessRequestCopyWithImpl<$Res> extends _$GroupAccessRequestCopyWithImpl<$Res>
+class __$GroupAccessRequestCopyWithImpl<$Res>
+    extends _$GroupAccessRequestCopyWithImpl<$Res>
     implements _$GroupAccessRequestCopyWith<$Res> {
-  __$GroupAccessRequestCopyWithImpl(_GroupAccessRequest _value, $Res Function(_GroupAccessRequest) _then)
+  __$GroupAccessRequestCopyWithImpl(
+      _GroupAccessRequest _value, $Res Function(_GroupAccessRequest) _then)
       : super(_value, (v) => _then(v as _GroupAccessRequest));
 
   @override
@@ -136,7 +142,8 @@ class _$_GroupAccessRequest implements _GroupAccessRequest {
         assert(created != null),
         assert(subject != null);
 
-  factory _$_GroupAccessRequest.fromJson(Map<String, dynamic> json) => _$_$_GroupAccessRequestFromJson(json);
+  factory _$_GroupAccessRequest.fromJson(Map<String, dynamic> json) =>
+      _$_$_GroupAccessRequestFromJson(json);
 
   @override
 
@@ -164,9 +171,13 @@ class _$_GroupAccessRequest implements _GroupAccessRequest {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _GroupAccessRequest &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.created, created) || const DeepCollectionEquality().equals(other.created, created)) &&
-            (identical(other.subject, subject) || const DeepCollectionEquality().equals(other.subject, subject)));
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.created, created) ||
+                const DeepCollectionEquality()
+                    .equals(other.created, created)) &&
+            (identical(other.subject, subject) ||
+                const DeepCollectionEquality().equals(other.subject, subject)));
   }
 
   @override
@@ -189,11 +200,19 @@ class _$_GroupAccessRequest implements _GroupAccessRequest {
 
 abstract class _GroupAccessRequest implements GroupAccessRequest {
   const factory _GroupAccessRequest(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @required @JsonKey(name: 'subject') String subject}) = _$_GroupAccessRequest;
+      {@required
+      @JsonKey(name: 'uid')
+          String uid,
+      @required
+      @JsonKey(name: 'created')
+      @DateTimeConverter()
+          DateTime created,
+      @required
+      @JsonKey(name: 'subject')
+          String subject}) = _$_GroupAccessRequest;
 
-  factory _GroupAccessRequest.fromJson(Map<String, dynamic> json) = _$_GroupAccessRequest.fromJson;
+  factory _GroupAccessRequest.fromJson(Map<String, dynamic> json) =
+      _$_GroupAccessRequest.fromJson;
 
   @override
 

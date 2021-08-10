@@ -10,12 +10,14 @@ abstract class TaskCounters with _$TaskCounters {
   const factory TaskCounters({
     /// Task jid.
     @JsonKey(name: 'jid') @required String jid,
-
+    
     /// Unreads counter.
     @JsonKey(name: 'num_unread') int numUnread,
-
+    
     /// Mentions (@) counter.
     @JsonKey(name: 'num_unread_notices') int numUnreadNotices,
+    
+    
   }) = _TaskCounters;
 
   factory TaskCounters.fromJson(Map<String, dynamic> json) => _$TaskCountersFromJson(json);

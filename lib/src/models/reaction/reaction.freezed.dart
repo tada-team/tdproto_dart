@@ -46,7 +46,8 @@ mixin _$Reaction {
 
 /// @nodoc
 abstract class $ReactionCopyWith<$Res> {
-  factory $ReactionCopyWith(Reaction value, $Res Function(Reaction) then) = _$ReactionCopyWithImpl<$Res>;
+  factory $ReactionCopyWith(Reaction value, $Res Function(Reaction) then) =
+      _$ReactionCopyWithImpl<$Res>;
   $Res call({@JsonKey(name: 'name') String name});
 }
 
@@ -70,13 +71,15 @@ class _$ReactionCopyWithImpl<$Res> implements $ReactionCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$ReactionCopyWith<$Res> implements $ReactionCopyWith<$Res> {
-  factory _$ReactionCopyWith(_Reaction value, $Res Function(_Reaction) then) = __$ReactionCopyWithImpl<$Res>;
+  factory _$ReactionCopyWith(_Reaction value, $Res Function(_Reaction) then) =
+      __$ReactionCopyWithImpl<$Res>;
   @override
   $Res call({@JsonKey(name: 'name') String name});
 }
 
 /// @nodoc
-class __$ReactionCopyWithImpl<$Res> extends _$ReactionCopyWithImpl<$Res> implements _$ReactionCopyWith<$Res> {
+class __$ReactionCopyWithImpl<$Res> extends _$ReactionCopyWithImpl<$Res>
+    implements _$ReactionCopyWith<$Res> {
   __$ReactionCopyWithImpl(_Reaction _value, $Res Function(_Reaction) _then)
       : super(_value, (v) => _then(v as _Reaction));
 
@@ -97,9 +100,11 @@ class __$ReactionCopyWithImpl<$Res> extends _$ReactionCopyWithImpl<$Res> impleme
 
 /// @nodoc
 class _$_Reaction implements _Reaction {
-  const _$_Reaction({@required @JsonKey(name: 'name') this.name}) : assert(name != null);
+  const _$_Reaction({@required @JsonKey(name: 'name') this.name})
+      : assert(name != null);
 
-  factory _$_Reaction.fromJson(Map<String, dynamic> json) => _$_$_ReactionFromJson(json);
+  factory _$_Reaction.fromJson(Map<String, dynamic> json) =>
+      _$_$_ReactionFromJson(json);
 
   @override
 
@@ -116,15 +121,18 @@ class _$_Reaction implements _Reaction {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Reaction &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)));
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(name);
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(name);
 
   @JsonKey(ignore: true)
   @override
-  _$ReactionCopyWith<_Reaction> get copyWith => __$ReactionCopyWithImpl<_Reaction>(this, _$identity);
+  _$ReactionCopyWith<_Reaction> get copyWith =>
+      __$ReactionCopyWithImpl<_Reaction>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -133,7 +141,8 @@ class _$_Reaction implements _Reaction {
 }
 
 abstract class _Reaction implements Reaction {
-  const factory _Reaction({@required @JsonKey(name: 'name') String name}) = _$_Reaction;
+  const factory _Reaction({@required @JsonKey(name: 'name') String name}) =
+      _$_Reaction;
 
   factory _Reaction.fromJson(Map<String, dynamic> json) = _$_Reaction.fromJson;
 

@@ -71,7 +71,8 @@ mixin _$Country {
 
 /// @nodoc
 abstract class $CountryCopyWith<$Res> {
-  factory $CountryCopyWith(Country value, $Res Function(Country) then) = _$CountryCopyWithImpl<$Res>;
+  factory $CountryCopyWith(Country value, $Res Function(Country) then) =
+      _$CountryCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'code') String code,
       @JsonKey(name: 'iso') String iso,
@@ -108,7 +109,8 @@ class _$CountryCopyWithImpl<$Res> implements $CountryCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$CountryCopyWith<$Res> implements $CountryCopyWith<$Res> {
-  factory _$CountryCopyWith(_Country value, $Res Function(_Country) then) = __$CountryCopyWithImpl<$Res>;
+  factory _$CountryCopyWith(_Country value, $Res Function(_Country) then) =
+      __$CountryCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'code') String code,
@@ -119,8 +121,10 @@ abstract class _$CountryCopyWith<$Res> implements $CountryCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$CountryCopyWithImpl<$Res> extends _$CountryCopyWithImpl<$Res> implements _$CountryCopyWith<$Res> {
-  __$CountryCopyWithImpl(_Country _value, $Res Function(_Country) _then) : super(_value, (v) => _then(v as _Country));
+class __$CountryCopyWithImpl<$Res> extends _$CountryCopyWithImpl<$Res>
+    implements _$CountryCopyWith<$Res> {
+  __$CountryCopyWithImpl(_Country _value, $Res Function(_Country) _then)
+      : super(_value, (v) => _then(v as _Country));
 
   @override
   _Country get _value => super._value as _Country;
@@ -157,7 +161,8 @@ class _$_Country implements _Country {
         assert(iso != null),
         assert(name != null);
 
-  factory _$_Country.fromJson(Map<String, dynamic> json) => _$_$_CountryFromJson(json);
+  factory _$_Country.fromJson(Map<String, dynamic> json) =>
+      _$_$_CountryFromJson(json);
 
   @override
 
@@ -194,12 +199,17 @@ class _$_Country implements _Country {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Country &&
-            (identical(other.code, code) || const DeepCollectionEquality().equals(other.code, code)) &&
-            (identical(other.iso, iso) || const DeepCollectionEquality().equals(other.iso, iso)) &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
+            (identical(other.code, code) ||
+                const DeepCollectionEquality().equals(other.code, code)) &&
+            (identical(other.iso, iso) ||
+                const DeepCollectionEquality().equals(other.iso, iso)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
             (identical(other.isDefault, isDefault) ||
-                const DeepCollectionEquality().equals(other.isDefault, isDefault)) &&
-            (identical(other.popular, popular) || const DeepCollectionEquality().equals(other.popular, popular)));
+                const DeepCollectionEquality()
+                    .equals(other.isDefault, isDefault)) &&
+            (identical(other.popular, popular) ||
+                const DeepCollectionEquality().equals(other.popular, popular)));
   }
 
   @override
@@ -213,7 +223,8 @@ class _$_Country implements _Country {
 
   @JsonKey(ignore: true)
   @override
-  _$CountryCopyWith<_Country> get copyWith => __$CountryCopyWithImpl<_Country>(this, _$identity);
+  _$CountryCopyWith<_Country> get copyWith =>
+      __$CountryCopyWithImpl<_Country>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {

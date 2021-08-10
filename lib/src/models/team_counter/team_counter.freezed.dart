@@ -18,7 +18,8 @@ class _$TeamCounterTearOff {
 
 // ignore: unused_element
   _TeamCounter call(
-      {@required @JsonKey(name: 'uid') String uid, @required @JsonKey(name: 'unread') TeamUnread unreads}) {
+      {@required @JsonKey(name: 'uid') String uid,
+      @required @JsonKey(name: 'unread') TeamUnread unreads}) {
     return _TeamCounter(
       uid: uid,
       unreads: unreads,
@@ -52,8 +53,12 @@ mixin _$TeamCounter {
 
 /// @nodoc
 abstract class $TeamCounterCopyWith<$Res> {
-  factory $TeamCounterCopyWith(TeamCounter value, $Res Function(TeamCounter) then) = _$TeamCounterCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'uid') String uid, @JsonKey(name: 'unread') TeamUnread unreads});
+  factory $TeamCounterCopyWith(
+          TeamCounter value, $Res Function(TeamCounter) then) =
+      _$TeamCounterCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'uid') String uid,
+      @JsonKey(name: 'unread') TeamUnread unreads});
 
   $TeamUnreadCopyWith<$Res> get unreads;
 }
@@ -89,19 +94,25 @@ class _$TeamCounterCopyWithImpl<$Res> implements $TeamCounterCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$TeamCounterCopyWith<$Res> implements $TeamCounterCopyWith<$Res> {
-  factory _$TeamCounterCopyWith(_TeamCounter value, $Res Function(_TeamCounter) then) =
+abstract class _$TeamCounterCopyWith<$Res>
+    implements $TeamCounterCopyWith<$Res> {
+  factory _$TeamCounterCopyWith(
+          _TeamCounter value, $Res Function(_TeamCounter) then) =
       __$TeamCounterCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'uid') String uid, @JsonKey(name: 'unread') TeamUnread unreads});
+  $Res call(
+      {@JsonKey(name: 'uid') String uid,
+      @JsonKey(name: 'unread') TeamUnread unreads});
 
   @override
   $TeamUnreadCopyWith<$Res> get unreads;
 }
 
 /// @nodoc
-class __$TeamCounterCopyWithImpl<$Res> extends _$TeamCounterCopyWithImpl<$Res> implements _$TeamCounterCopyWith<$Res> {
-  __$TeamCounterCopyWithImpl(_TeamCounter _value, $Res Function(_TeamCounter) _then)
+class __$TeamCounterCopyWithImpl<$Res> extends _$TeamCounterCopyWithImpl<$Res>
+    implements _$TeamCounterCopyWith<$Res> {
+  __$TeamCounterCopyWithImpl(
+      _TeamCounter _value, $Res Function(_TeamCounter) _then)
       : super(_value, (v) => _then(v as _TeamCounter));
 
   @override
@@ -123,11 +134,14 @@ class __$TeamCounterCopyWithImpl<$Res> extends _$TeamCounterCopyWithImpl<$Res> i
 
 /// @nodoc
 class _$_TeamCounter implements _TeamCounter {
-  const _$_TeamCounter({@required @JsonKey(name: 'uid') this.uid, @required @JsonKey(name: 'unread') this.unreads})
+  const _$_TeamCounter(
+      {@required @JsonKey(name: 'uid') this.uid,
+      @required @JsonKey(name: 'unread') this.unreads})
       : assert(uid != null),
         assert(unreads != null);
 
-  factory _$_TeamCounter.fromJson(Map<String, dynamic> json) => _$_$_TeamCounterFromJson(json);
+  factory _$_TeamCounter.fromJson(Map<String, dynamic> json) =>
+      _$_$_TeamCounterFromJson(json);
 
   @override
 
@@ -149,17 +163,22 @@ class _$_TeamCounter implements _TeamCounter {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _TeamCounter &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.unreads, unreads) || const DeepCollectionEquality().equals(other.unreads, unreads)));
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.unreads, unreads) ||
+                const DeepCollectionEquality().equals(other.unreads, unreads)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(uid) ^ const DeepCollectionEquality().hash(unreads);
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(uid) ^
+      const DeepCollectionEquality().hash(unreads);
 
   @JsonKey(ignore: true)
   @override
-  _$TeamCounterCopyWith<_TeamCounter> get copyWith => __$TeamCounterCopyWithImpl<_TeamCounter>(this, _$identity);
+  _$TeamCounterCopyWith<_TeamCounter> get copyWith =>
+      __$TeamCounterCopyWithImpl<_TeamCounter>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -172,7 +191,8 @@ abstract class _TeamCounter implements TeamCounter {
       {@required @JsonKey(name: 'uid') String uid,
       @required @JsonKey(name: 'unread') TeamUnread unreads}) = _$_TeamCounter;
 
-  factory _TeamCounter.fromJson(Map<String, dynamic> json) = _$_TeamCounter.fromJson;
+  factory _TeamCounter.fromJson(Map<String, dynamic> json) =
+      _$_TeamCounter.fromJson;
 
   @override
 

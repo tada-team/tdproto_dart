@@ -6,7 +6,8 @@ part of 'active_user_daily_stat.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ActiveUserDailyStat _$_$_ActiveUserDailyStatFromJson(Map<String, dynamic> json) {
+_$_ActiveUserDailyStat _$_$_ActiveUserDailyStatFromJson(
+    Map<String, dynamic> json) {
   return _$_ActiveUserDailyStat(
     day: json['day'] as String,
     userId: json['user_id'] as int,
@@ -20,7 +21,9 @@ _$_ActiveUserDailyStat _$_$_ActiveUserDailyStatFromJson(Map<String, dynamic> jso
   );
 }
 
-Map<String, dynamic> _$_$_ActiveUserDailyStatToJson(_$_ActiveUserDailyStat instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_ActiveUserDailyStatToJson(
+        _$_ActiveUserDailyStat instance) =>
+    <String, dynamic>{
       'day': instance.day,
       'user_id': instance.userId,
       'family_name': instance.familyName,

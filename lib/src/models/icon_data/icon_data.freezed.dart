@@ -78,7 +78,8 @@ mixin _$IconData {
 
 /// @nodoc
 abstract class $IconDataCopyWith<$Res> {
-  factory $IconDataCopyWith(IconData value, $Res Function(IconData) then) = _$IconDataCopyWithImpl<$Res>;
+  factory $IconDataCopyWith(IconData value, $Res Function(IconData) then) =
+      _$IconDataCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'sm') SingleIcon sm,
       @JsonKey(name: 'lg') SingleIcon lg,
@@ -141,7 +142,8 @@ class _$IconDataCopyWithImpl<$Res> implements $IconDataCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$IconDataCopyWith<$Res> implements $IconDataCopyWith<$Res> {
-  factory _$IconDataCopyWith(_IconData value, $Res Function(_IconData) then) = __$IconDataCopyWithImpl<$Res>;
+  factory _$IconDataCopyWith(_IconData value, $Res Function(_IconData) then) =
+      __$IconDataCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'sm') SingleIcon sm,
@@ -158,7 +160,8 @@ abstract class _$IconDataCopyWith<$Res> implements $IconDataCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$IconDataCopyWithImpl<$Res> extends _$IconDataCopyWithImpl<$Res> implements _$IconDataCopyWith<$Res> {
+class __$IconDataCopyWithImpl<$Res> extends _$IconDataCopyWithImpl<$Res>
+    implements _$IconDataCopyWith<$Res> {
   __$IconDataCopyWithImpl(_IconData _value, $Res Function(_IconData) _then)
       : super(_value, (v) => _then(v as _IconData));
 
@@ -199,7 +202,8 @@ class _$_IconData implements _IconData {
       : assert(sm != null),
         assert(lg != null);
 
-  factory _$_IconData.fromJson(Map<String, dynamic> json) => _$_$_IconDataFromJson(json);
+  factory _$_IconData.fromJson(Map<String, dynamic> json) =>
+      _$_$_IconDataFromJson(json);
 
   @override
 
@@ -242,12 +246,20 @@ class _$_IconData implements _IconData {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _IconData &&
-            (identical(other.sm, sm) || const DeepCollectionEquality().equals(other.sm, sm)) &&
-            (identical(other.lg, lg) || const DeepCollectionEquality().equals(other.lg, lg)) &&
-            (identical(other.letters, letters) || const DeepCollectionEquality().equals(other.letters, letters)) &&
-            (identical(other.color, color) || const DeepCollectionEquality().equals(other.color, color)) &&
-            (identical(other.blurhash, blurhash) || const DeepCollectionEquality().equals(other.blurhash, blurhash)) &&
-            (identical(other.stub, stub) || const DeepCollectionEquality().equals(other.stub, stub)));
+            (identical(other.sm, sm) ||
+                const DeepCollectionEquality().equals(other.sm, sm)) &&
+            (identical(other.lg, lg) ||
+                const DeepCollectionEquality().equals(other.lg, lg)) &&
+            (identical(other.letters, letters) ||
+                const DeepCollectionEquality()
+                    .equals(other.letters, letters)) &&
+            (identical(other.color, color) ||
+                const DeepCollectionEquality().equals(other.color, color)) &&
+            (identical(other.blurhash, blurhash) ||
+                const DeepCollectionEquality()
+                    .equals(other.blurhash, blurhash)) &&
+            (identical(other.stub, stub) ||
+                const DeepCollectionEquality().equals(other.stub, stub)));
   }
 
   @override
@@ -262,7 +274,8 @@ class _$_IconData implements _IconData {
 
   @JsonKey(ignore: true)
   @override
-  _$IconDataCopyWith<_IconData> get copyWith => __$IconDataCopyWithImpl<_IconData>(this, _$identity);
+  _$IconDataCopyWith<_IconData> get copyWith =>
+      __$IconDataCopyWithImpl<_IconData>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -272,12 +285,13 @@ class _$_IconData implements _IconData {
 
 abstract class _IconData implements IconData {
   const factory _IconData(
-      {@required @JsonKey(name: 'sm') SingleIcon sm,
-      @required @JsonKey(name: 'lg') SingleIcon lg,
-      @JsonKey(name: 'letters') String letters,
-      @JsonKey(name: 'color') String color,
-      @JsonKey(name: 'blurhash') String blurhash,
-      @Deprecated('Deprecated.') @JsonKey(name: 'stub') String stub}) = _$_IconData;
+          {@required @JsonKey(name: 'sm') SingleIcon sm,
+          @required @JsonKey(name: 'lg') SingleIcon lg,
+          @JsonKey(name: 'letters') String letters,
+          @JsonKey(name: 'color') String color,
+          @JsonKey(name: 'blurhash') String blurhash,
+          @Deprecated('Deprecated.') @JsonKey(name: 'stub') String stub}) =
+      _$_IconData;
 
   factory _IconData.fromJson(Map<String, dynamic> json) = _$_IconData.fromJson;
 

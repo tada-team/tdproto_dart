@@ -59,9 +59,12 @@ mixin _$Node {
 
 /// @nodoc
 abstract class $NodeCopyWith<$Res> {
-  factory $NodeCopyWith(Node value, $Res Function(Node) then) = _$NodeCopyWithImpl<$Res>;
+  factory $NodeCopyWith(Node value, $Res Function(Node) then) =
+      _$NodeCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'uid') String uid, @JsonKey(name: 'title') String title, @JsonKey(name: 'enabled') bool enabled});
+      {@JsonKey(name: 'uid') String uid,
+      @JsonKey(name: 'title') String title,
+      @JsonKey(name: 'enabled') bool enabled});
 }
 
 /// @nodoc
@@ -88,15 +91,20 @@ class _$NodeCopyWithImpl<$Res> implements $NodeCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$NodeCopyWith<$Res> implements $NodeCopyWith<$Res> {
-  factory _$NodeCopyWith(_Node value, $Res Function(_Node) then) = __$NodeCopyWithImpl<$Res>;
+  factory _$NodeCopyWith(_Node value, $Res Function(_Node) then) =
+      __$NodeCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'uid') String uid, @JsonKey(name: 'title') String title, @JsonKey(name: 'enabled') bool enabled});
+      {@JsonKey(name: 'uid') String uid,
+      @JsonKey(name: 'title') String title,
+      @JsonKey(name: 'enabled') bool enabled});
 }
 
 /// @nodoc
-class __$NodeCopyWithImpl<$Res> extends _$NodeCopyWithImpl<$Res> implements _$NodeCopyWith<$Res> {
-  __$NodeCopyWithImpl(_Node _value, $Res Function(_Node) _then) : super(_value, (v) => _then(v as _Node));
+class __$NodeCopyWithImpl<$Res> extends _$NodeCopyWithImpl<$Res>
+    implements _$NodeCopyWith<$Res> {
+  __$NodeCopyWithImpl(_Node _value, $Res Function(_Node) _then)
+      : super(_value, (v) => _then(v as _Node));
 
   @override
   _Node get _value => super._value as _Node;
@@ -127,7 +135,8 @@ class _$_Node implements _Node {
         assert(title != null),
         assert(enabled != null);
 
-  factory _$_Node.fromJson(Map<String, dynamic> json) => _$_$_NodeFromJson(json);
+  factory _$_Node.fromJson(Map<String, dynamic> json) =>
+      _$_$_NodeFromJson(json);
 
   @override
 
@@ -154,9 +163,12 @@ class _$_Node implements _Node {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Node &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
-            (identical(other.enabled, enabled) || const DeepCollectionEquality().equals(other.enabled, enabled)));
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.title, title) ||
+                const DeepCollectionEquality().equals(other.title, title)) &&
+            (identical(other.enabled, enabled) ||
+                const DeepCollectionEquality().equals(other.enabled, enabled)));
   }
 
   @override
@@ -168,7 +180,8 @@ class _$_Node implements _Node {
 
   @JsonKey(ignore: true)
   @override
-  _$NodeCopyWith<_Node> get copyWith => __$NodeCopyWithImpl<_Node>(this, _$identity);
+  _$NodeCopyWith<_Node> get copyWith =>
+      __$NodeCopyWithImpl<_Node>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {

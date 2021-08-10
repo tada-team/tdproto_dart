@@ -66,7 +66,8 @@ mixin _$Remind {
 
 /// @nodoc
 abstract class $RemindCopyWith<$Res> {
-  factory $RemindCopyWith(Remind value, $Res Function(Remind) then) = _$RemindCopyWithImpl<$Res>;
+  factory $RemindCopyWith(Remind value, $Res Function(Remind) then) =
+      _$RemindCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'chat') String chat,
@@ -100,7 +101,8 @@ class _$RemindCopyWithImpl<$Res> implements $RemindCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$RemindCopyWith<$Res> implements $RemindCopyWith<$Res> {
-  factory _$RemindCopyWith(_Remind value, $Res Function(_Remind) then) = __$RemindCopyWithImpl<$Res>;
+  factory _$RemindCopyWith(_Remind value, $Res Function(_Remind) then) =
+      __$RemindCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'uid') String uid,
@@ -110,8 +112,10 @@ abstract class _$RemindCopyWith<$Res> implements $RemindCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$RemindCopyWithImpl<$Res> extends _$RemindCopyWithImpl<$Res> implements _$RemindCopyWith<$Res> {
-  __$RemindCopyWithImpl(_Remind _value, $Res Function(_Remind) _then) : super(_value, (v) => _then(v as _Remind));
+class __$RemindCopyWithImpl<$Res> extends _$RemindCopyWithImpl<$Res>
+    implements _$RemindCopyWith<$Res> {
+  __$RemindCopyWithImpl(_Remind _value, $Res Function(_Remind) _then)
+      : super(_value, (v) => _then(v as _Remind));
 
   @override
   _Remind get _value => super._value as _Remind;
@@ -145,7 +149,8 @@ class _$_Remind implements _Remind {
         assert(chat != null),
         assert(fireAt != null);
 
-  factory _$_Remind.fromJson(Map<String, dynamic> json) => _$_$_RemindFromJson(json);
+  factory _$_Remind.fromJson(Map<String, dynamic> json) =>
+      _$_$_RemindFromJson(json);
 
   @override
 
@@ -178,10 +183,14 @@ class _$_Remind implements _Remind {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Remind &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.chat, chat) || const DeepCollectionEquality().equals(other.chat, chat)) &&
-            (identical(other.fireAt, fireAt) || const DeepCollectionEquality().equals(other.fireAt, fireAt)) &&
-            (identical(other.comment, comment) || const DeepCollectionEquality().equals(other.comment, comment)));
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.chat, chat) ||
+                const DeepCollectionEquality().equals(other.chat, chat)) &&
+            (identical(other.fireAt, fireAt) ||
+                const DeepCollectionEquality().equals(other.fireAt, fireAt)) &&
+            (identical(other.comment, comment) ||
+                const DeepCollectionEquality().equals(other.comment, comment)));
   }
 
   @override
@@ -194,7 +203,8 @@ class _$_Remind implements _Remind {
 
   @JsonKey(ignore: true)
   @override
-  _$RemindCopyWith<_Remind> get copyWith => __$RemindCopyWithImpl<_Remind>(this, _$identity);
+  _$RemindCopyWith<_Remind> get copyWith =>
+      __$RemindCopyWithImpl<_Remind>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {

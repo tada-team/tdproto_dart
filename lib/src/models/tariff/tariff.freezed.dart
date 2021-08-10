@@ -89,7 +89,8 @@ mixin _$Tariff {
 
 /// @nodoc
 abstract class $TariffCopyWith<$Res> {
-  factory $TariffCopyWith(Tariff value, $Res Function(Tariff) then) = _$TariffCopyWithImpl<$Res>;
+  factory $TariffCopyWith(Tariff value, $Res Function(Tariff) then) =
+      _$TariffCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'title_en') String titleEn,
@@ -126,17 +127,23 @@ class _$TariffCopyWithImpl<$Res> implements $TariffCopyWith<$Res> {
       titleRu: titleRu == freezed ? _value.titleRu : titleRu as String,
       price: price == freezed ? _value.price : price as String,
       cloudSpace: cloudSpace == freezed ? _value.cloudSpace : cloudSpace as int,
-      maxMembersInTeam: maxMembersInTeam == freezed ? _value.maxMembersInTeam : maxMembersInTeam as int,
-      maxParticipantsPerCall:
-          maxParticipantsPerCall == freezed ? _value.maxParticipantsPerCall : maxParticipantsPerCall as int,
-      maxUploadFilesize: maxUploadFilesize == freezed ? _value.maxUploadFilesize : maxUploadFilesize as int,
+      maxMembersInTeam: maxMembersInTeam == freezed
+          ? _value.maxMembersInTeam
+          : maxMembersInTeam as int,
+      maxParticipantsPerCall: maxParticipantsPerCall == freezed
+          ? _value.maxParticipantsPerCall
+          : maxParticipantsPerCall as int,
+      maxUploadFilesize: maxUploadFilesize == freezed
+          ? _value.maxUploadFilesize
+          : maxUploadFilesize as int,
     ));
   }
 }
 
 /// @nodoc
 abstract class _$TariffCopyWith<$Res> implements $TariffCopyWith<$Res> {
-  factory _$TariffCopyWith(_Tariff value, $Res Function(_Tariff) then) = __$TariffCopyWithImpl<$Res>;
+  factory _$TariffCopyWith(_Tariff value, $Res Function(_Tariff) then) =
+      __$TariffCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'uid') String uid,
@@ -150,8 +157,10 @@ abstract class _$TariffCopyWith<$Res> implements $TariffCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$TariffCopyWithImpl<$Res> extends _$TariffCopyWithImpl<$Res> implements _$TariffCopyWith<$Res> {
-  __$TariffCopyWithImpl(_Tariff _value, $Res Function(_Tariff) _then) : super(_value, (v) => _then(v as _Tariff));
+class __$TariffCopyWithImpl<$Res> extends _$TariffCopyWithImpl<$Res>
+    implements _$TariffCopyWith<$Res> {
+  __$TariffCopyWithImpl(_Tariff _value, $Res Function(_Tariff) _then)
+      : super(_value, (v) => _then(v as _Tariff));
 
   @override
   _Tariff get _value => super._value as _Tariff;
@@ -173,10 +182,15 @@ class __$TariffCopyWithImpl<$Res> extends _$TariffCopyWithImpl<$Res> implements 
       titleRu: titleRu == freezed ? _value.titleRu : titleRu as String,
       price: price == freezed ? _value.price : price as String,
       cloudSpace: cloudSpace == freezed ? _value.cloudSpace : cloudSpace as int,
-      maxMembersInTeam: maxMembersInTeam == freezed ? _value.maxMembersInTeam : maxMembersInTeam as int,
-      maxParticipantsPerCall:
-          maxParticipantsPerCall == freezed ? _value.maxParticipantsPerCall : maxParticipantsPerCall as int,
-      maxUploadFilesize: maxUploadFilesize == freezed ? _value.maxUploadFilesize : maxUploadFilesize as int,
+      maxMembersInTeam: maxMembersInTeam == freezed
+          ? _value.maxMembersInTeam
+          : maxMembersInTeam as int,
+      maxParticipantsPerCall: maxParticipantsPerCall == freezed
+          ? _value.maxParticipantsPerCall
+          : maxParticipantsPerCall as int,
+      maxUploadFilesize: maxUploadFilesize == freezed
+          ? _value.maxUploadFilesize
+          : maxUploadFilesize as int,
     ));
   }
 }
@@ -198,7 +212,8 @@ class _$_Tariff implements _Tariff {
         assert(titleEn != null),
         assert(titleRu != null);
 
-  factory _$_Tariff.fromJson(Map<String, dynamic> json) => _$_$_TariffFromJson(json);
+  factory _$_Tariff.fromJson(Map<String, dynamic> json) =>
+      _$_$_TariffFromJson(json);
 
   @override
 
@@ -250,18 +265,28 @@ class _$_Tariff implements _Tariff {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Tariff &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.titleEn, titleEn) || const DeepCollectionEquality().equals(other.titleEn, titleEn)) &&
-            (identical(other.titleRu, titleRu) || const DeepCollectionEquality().equals(other.titleRu, titleRu)) &&
-            (identical(other.price, price) || const DeepCollectionEquality().equals(other.price, price)) &&
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.titleEn, titleEn) ||
+                const DeepCollectionEquality()
+                    .equals(other.titleEn, titleEn)) &&
+            (identical(other.titleRu, titleRu) ||
+                const DeepCollectionEquality()
+                    .equals(other.titleRu, titleRu)) &&
+            (identical(other.price, price) ||
+                const DeepCollectionEquality().equals(other.price, price)) &&
             (identical(other.cloudSpace, cloudSpace) ||
-                const DeepCollectionEquality().equals(other.cloudSpace, cloudSpace)) &&
+                const DeepCollectionEquality()
+                    .equals(other.cloudSpace, cloudSpace)) &&
             (identical(other.maxMembersInTeam, maxMembersInTeam) ||
-                const DeepCollectionEquality().equals(other.maxMembersInTeam, maxMembersInTeam)) &&
+                const DeepCollectionEquality()
+                    .equals(other.maxMembersInTeam, maxMembersInTeam)) &&
             (identical(other.maxParticipantsPerCall, maxParticipantsPerCall) ||
-                const DeepCollectionEquality().equals(other.maxParticipantsPerCall, maxParticipantsPerCall)) &&
+                const DeepCollectionEquality().equals(
+                    other.maxParticipantsPerCall, maxParticipantsPerCall)) &&
             (identical(other.maxUploadFilesize, maxUploadFilesize) ||
-                const DeepCollectionEquality().equals(other.maxUploadFilesize, maxUploadFilesize)));
+                const DeepCollectionEquality()
+                    .equals(other.maxUploadFilesize, maxUploadFilesize)));
   }
 
   @override
@@ -278,7 +303,8 @@ class _$_Tariff implements _Tariff {
 
   @JsonKey(ignore: true)
   @override
-  _$TariffCopyWith<_Tariff> get copyWith => __$TariffCopyWithImpl<_Tariff>(this, _$identity);
+  _$TariffCopyWith<_Tariff> get copyWith =>
+      __$TariffCopyWithImpl<_Tariff>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {

@@ -12,6 +12,7 @@ _$_DeletedRemind _$_$_DeletedRemindFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_DeletedRemindToJson(_$_DeletedRemind instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_DeletedRemindToJson(_$_DeletedRemind instance) =>
+    <String, dynamic>{
       'uid': instance.uid,
     };

@@ -95,7 +95,8 @@ mixin _$ActiveUserDailyStat {
 
 /// @nodoc
 abstract class $ActiveUserDailyStatCopyWith<$Res> {
-  factory $ActiveUserDailyStatCopyWith(ActiveUserDailyStat value, $Res Function(ActiveUserDailyStat) then) =
+  factory $ActiveUserDailyStatCopyWith(
+          ActiveUserDailyStat value, $Res Function(ActiveUserDailyStat) then) =
       _$ActiveUserDailyStatCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'day') String day,
@@ -110,7 +111,8 @@ abstract class $ActiveUserDailyStatCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ActiveUserDailyStatCopyWithImpl<$Res> implements $ActiveUserDailyStatCopyWith<$Res> {
+class _$ActiveUserDailyStatCopyWithImpl<$Res>
+    implements $ActiveUserDailyStatCopyWith<$Res> {
   _$ActiveUserDailyStatCopyWithImpl(this._value, this._then);
 
   final ActiveUserDailyStat _value;
@@ -132,20 +134,28 @@ class _$ActiveUserDailyStatCopyWithImpl<$Res> implements $ActiveUserDailyStatCop
     return _then(_value.copyWith(
       day: day == freezed ? _value.day : day as String,
       userId: userId == freezed ? _value.userId : userId as int,
-      familyName: familyName == freezed ? _value.familyName : familyName as String,
+      familyName:
+          familyName == freezed ? _value.familyName : familyName as String,
       givenName: givenName == freezed ? _value.givenName : givenName as String,
-      patronymic: patronymic == freezed ? _value.patronymic : patronymic as String,
+      patronymic:
+          patronymic == freezed ? _value.patronymic : patronymic as String,
       phone: phone == freezed ? _value.phone : phone as String,
-      messagesCount: messagesCount == freezed ? _value.messagesCount : messagesCount as int,
+      messagesCount: messagesCount == freezed
+          ? _value.messagesCount
+          : messagesCount as int,
       callsCount: callsCount == freezed ? _value.callsCount : callsCount as int,
-      callSecondsTotal: callSecondsTotal == freezed ? _value.callSecondsTotal : callSecondsTotal as int,
+      callSecondsTotal: callSecondsTotal == freezed
+          ? _value.callSecondsTotal
+          : callSecondsTotal as int,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$ActiveUserDailyStatCopyWith<$Res> implements $ActiveUserDailyStatCopyWith<$Res> {
-  factory _$ActiveUserDailyStatCopyWith(_ActiveUserDailyStat value, $Res Function(_ActiveUserDailyStat) then) =
+abstract class _$ActiveUserDailyStatCopyWith<$Res>
+    implements $ActiveUserDailyStatCopyWith<$Res> {
+  factory _$ActiveUserDailyStatCopyWith(_ActiveUserDailyStat value,
+          $Res Function(_ActiveUserDailyStat) then) =
       __$ActiveUserDailyStatCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -161,9 +171,11 @@ abstract class _$ActiveUserDailyStatCopyWith<$Res> implements $ActiveUserDailySt
 }
 
 /// @nodoc
-class __$ActiveUserDailyStatCopyWithImpl<$Res> extends _$ActiveUserDailyStatCopyWithImpl<$Res>
+class __$ActiveUserDailyStatCopyWithImpl<$Res>
+    extends _$ActiveUserDailyStatCopyWithImpl<$Res>
     implements _$ActiveUserDailyStatCopyWith<$Res> {
-  __$ActiveUserDailyStatCopyWithImpl(_ActiveUserDailyStat _value, $Res Function(_ActiveUserDailyStat) _then)
+  __$ActiveUserDailyStatCopyWithImpl(
+      _ActiveUserDailyStat _value, $Res Function(_ActiveUserDailyStat) _then)
       : super(_value, (v) => _then(v as _ActiveUserDailyStat));
 
   @override
@@ -184,13 +196,19 @@ class __$ActiveUserDailyStatCopyWithImpl<$Res> extends _$ActiveUserDailyStatCopy
     return _then(_ActiveUserDailyStat(
       day: day == freezed ? _value.day : day as String,
       userId: userId == freezed ? _value.userId : userId as int,
-      familyName: familyName == freezed ? _value.familyName : familyName as String,
+      familyName:
+          familyName == freezed ? _value.familyName : familyName as String,
       givenName: givenName == freezed ? _value.givenName : givenName as String,
-      patronymic: patronymic == freezed ? _value.patronymic : patronymic as String,
+      patronymic:
+          patronymic == freezed ? _value.patronymic : patronymic as String,
       phone: phone == freezed ? _value.phone : phone as String,
-      messagesCount: messagesCount == freezed ? _value.messagesCount : messagesCount as int,
+      messagesCount: messagesCount == freezed
+          ? _value.messagesCount
+          : messagesCount as int,
       callsCount: callsCount == freezed ? _value.callsCount : callsCount as int,
-      callSecondsTotal: callSecondsTotal == freezed ? _value.callSecondsTotal : callSecondsTotal as int,
+      callSecondsTotal: callSecondsTotal == freezed
+          ? _value.callSecondsTotal
+          : callSecondsTotal as int,
     ));
   }
 }
@@ -212,7 +230,8 @@ class _$_ActiveUserDailyStat implements _ActiveUserDailyStat {
       : assert(day != null),
         assert(userId != null);
 
-  factory _$_ActiveUserDailyStat.fromJson(Map<String, dynamic> json) => _$_$_ActiveUserDailyStatFromJson(json);
+  factory _$_ActiveUserDailyStat.fromJson(Map<String, dynamic> json) =>
+      _$_$_ActiveUserDailyStatFromJson(json);
 
   @override
 
@@ -269,21 +288,30 @@ class _$_ActiveUserDailyStat implements _ActiveUserDailyStat {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _ActiveUserDailyStat &&
-            (identical(other.day, day) || const DeepCollectionEquality().equals(other.day, day)) &&
-            (identical(other.userId, userId) || const DeepCollectionEquality().equals(other.userId, userId)) &&
+            (identical(other.day, day) ||
+                const DeepCollectionEquality().equals(other.day, day)) &&
+            (identical(other.userId, userId) ||
+                const DeepCollectionEquality().equals(other.userId, userId)) &&
             (identical(other.familyName, familyName) ||
-                const DeepCollectionEquality().equals(other.familyName, familyName)) &&
+                const DeepCollectionEquality()
+                    .equals(other.familyName, familyName)) &&
             (identical(other.givenName, givenName) ||
-                const DeepCollectionEquality().equals(other.givenName, givenName)) &&
+                const DeepCollectionEquality()
+                    .equals(other.givenName, givenName)) &&
             (identical(other.patronymic, patronymic) ||
-                const DeepCollectionEquality().equals(other.patronymic, patronymic)) &&
-            (identical(other.phone, phone) || const DeepCollectionEquality().equals(other.phone, phone)) &&
+                const DeepCollectionEquality()
+                    .equals(other.patronymic, patronymic)) &&
+            (identical(other.phone, phone) ||
+                const DeepCollectionEquality().equals(other.phone, phone)) &&
             (identical(other.messagesCount, messagesCount) ||
-                const DeepCollectionEquality().equals(other.messagesCount, messagesCount)) &&
+                const DeepCollectionEquality()
+                    .equals(other.messagesCount, messagesCount)) &&
             (identical(other.callsCount, callsCount) ||
-                const DeepCollectionEquality().equals(other.callsCount, callsCount)) &&
+                const DeepCollectionEquality()
+                    .equals(other.callsCount, callsCount)) &&
             (identical(other.callSecondsTotal, callSecondsTotal) ||
-                const DeepCollectionEquality().equals(other.callSecondsTotal, callSecondsTotal)));
+                const DeepCollectionEquality()
+                    .equals(other.callSecondsTotal, callSecondsTotal)));
   }
 
   @override
@@ -302,7 +330,8 @@ class _$_ActiveUserDailyStat implements _ActiveUserDailyStat {
   @JsonKey(ignore: true)
   @override
   _$ActiveUserDailyStatCopyWith<_ActiveUserDailyStat> get copyWith =>
-      __$ActiveUserDailyStatCopyWithImpl<_ActiveUserDailyStat>(this, _$identity);
+      __$ActiveUserDailyStatCopyWithImpl<_ActiveUserDailyStat>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -312,17 +341,19 @@ class _$_ActiveUserDailyStat implements _ActiveUserDailyStat {
 
 abstract class _ActiveUserDailyStat implements ActiveUserDailyStat {
   const factory _ActiveUserDailyStat(
-      {@required @JsonKey(name: 'day') String day,
-      @required @JsonKey(name: 'user_id') int userId,
-      @JsonKey(name: 'family_name') String familyName,
-      @JsonKey(name: 'given_name') String givenName,
-      @JsonKey(name: 'patronymic') String patronymic,
-      @JsonKey(name: 'phone') String phone,
-      @JsonKey(name: 'messages_count') int messagesCount,
-      @JsonKey(name: 'calls_count') int callsCount,
-      @JsonKey(name: 'call_seconds_total') int callSecondsTotal}) = _$_ActiveUserDailyStat;
+          {@required @JsonKey(name: 'day') String day,
+          @required @JsonKey(name: 'user_id') int userId,
+          @JsonKey(name: 'family_name') String familyName,
+          @JsonKey(name: 'given_name') String givenName,
+          @JsonKey(name: 'patronymic') String patronymic,
+          @JsonKey(name: 'phone') String phone,
+          @JsonKey(name: 'messages_count') int messagesCount,
+          @JsonKey(name: 'calls_count') int callsCount,
+          @JsonKey(name: 'call_seconds_total') int callSecondsTotal}) =
+      _$_ActiveUserDailyStat;
 
-  factory _ActiveUserDailyStat.fromJson(Map<String, dynamic> json) = _$_ActiveUserDailyStat.fromJson;
+  factory _ActiveUserDailyStat.fromJson(Map<String, dynamic> json) =
+      _$_ActiveUserDailyStat.fromJson;
 
   @override
 

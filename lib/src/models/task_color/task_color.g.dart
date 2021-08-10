@@ -14,7 +14,8 @@ _$_TaskColor _$_$_TaskColorFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_TaskColorToJson(_$_TaskColor instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_TaskColorToJson(_$_TaskColor instance) =>
+    <String, dynamic>{
       'regular': instance.regular,
       'dark': instance.dark,
       'light': instance.light,

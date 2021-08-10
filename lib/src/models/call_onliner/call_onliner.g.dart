@@ -14,12 +14,14 @@ _$_CallOnliner _$_$_CallOnlinerFromJson(Map<String, dynamic> json) {
     icon: json['icon'] as String,
     muted: json['muted'] as bool,
     devices: (json['devices'] as List)
-        ?.map((e) => e == null ? null : CallDevice.fromJson(e as Map<String, dynamic>))
+        ?.map((e) =>
+            e == null ? null : CallDevice.fromJson(e as Map<String, dynamic>))
         ?.toList(),
   );
 }
 
-Map<String, dynamic> _$_$_CallOnlinerToJson(_$_CallOnliner instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_CallOnlinerToJson(_$_CallOnliner instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'display_name': instance.displayName,
       'role': instance.role,

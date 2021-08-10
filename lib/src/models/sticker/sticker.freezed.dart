@@ -18,12 +18,24 @@ class _$StickerTearOff {
 
 // ignore: unused_element
   _Sticker call(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'icon64') String icon64,
-      @required @JsonKey(name: 'icon100') String icon100,
-      @required @JsonKey(name: 'icon128') String icon128,
-      @required @JsonKey(name: 'icon200') String icon200,
-      @required @JsonKey(name: 'message_content') MessageContent messageContent}) {
+      {@required
+      @JsonKey(name: 'uid')
+          String uid,
+      @required
+      @JsonKey(name: 'icon64')
+          String icon64,
+      @required
+      @JsonKey(name: 'icon100')
+          String icon100,
+      @required
+      @JsonKey(name: 'icon128')
+          String icon128,
+      @required
+      @JsonKey(name: 'icon200')
+          String icon200,
+      @required
+      @JsonKey(name: 'message_content')
+          MessageContent messageContent}) {
     return _Sticker(
       uid: uid,
       icon64: icon64,
@@ -77,7 +89,8 @@ mixin _$Sticker {
 
 /// @nodoc
 abstract class $StickerCopyWith<$Res> {
-  factory $StickerCopyWith(Sticker value, $Res Function(Sticker) then) = _$StickerCopyWithImpl<$Res>;
+  factory $StickerCopyWith(Sticker value, $Res Function(Sticker) then) =
+      _$StickerCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'icon64') String icon64,
@@ -112,7 +125,9 @@ class _$StickerCopyWithImpl<$Res> implements $StickerCopyWith<$Res> {
       icon100: icon100 == freezed ? _value.icon100 : icon100 as String,
       icon128: icon128 == freezed ? _value.icon128 : icon128 as String,
       icon200: icon200 == freezed ? _value.icon200 : icon200 as String,
-      messageContent: messageContent == freezed ? _value.messageContent : messageContent as MessageContent,
+      messageContent: messageContent == freezed
+          ? _value.messageContent
+          : messageContent as MessageContent,
     ));
   }
 
@@ -129,7 +144,8 @@ class _$StickerCopyWithImpl<$Res> implements $StickerCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$StickerCopyWith<$Res> implements $StickerCopyWith<$Res> {
-  factory _$StickerCopyWith(_Sticker value, $Res Function(_Sticker) then) = __$StickerCopyWithImpl<$Res>;
+  factory _$StickerCopyWith(_Sticker value, $Res Function(_Sticker) then) =
+      __$StickerCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'uid') String uid,
@@ -144,8 +160,10 @@ abstract class _$StickerCopyWith<$Res> implements $StickerCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$StickerCopyWithImpl<$Res> extends _$StickerCopyWithImpl<$Res> implements _$StickerCopyWith<$Res> {
-  __$StickerCopyWithImpl(_Sticker _value, $Res Function(_Sticker) _then) : super(_value, (v) => _then(v as _Sticker));
+class __$StickerCopyWithImpl<$Res> extends _$StickerCopyWithImpl<$Res>
+    implements _$StickerCopyWith<$Res> {
+  __$StickerCopyWithImpl(_Sticker _value, $Res Function(_Sticker) _then)
+      : super(_value, (v) => _then(v as _Sticker));
 
   @override
   _Sticker get _value => super._value as _Sticker;
@@ -165,7 +183,9 @@ class __$StickerCopyWithImpl<$Res> extends _$StickerCopyWithImpl<$Res> implement
       icon100: icon100 == freezed ? _value.icon100 : icon100 as String,
       icon128: icon128 == freezed ? _value.icon128 : icon128 as String,
       icon200: icon200 == freezed ? _value.icon200 : icon200 as String,
-      messageContent: messageContent == freezed ? _value.messageContent : messageContent as MessageContent,
+      messageContent: messageContent == freezed
+          ? _value.messageContent
+          : messageContent as MessageContent,
     ));
   }
 }
@@ -188,7 +208,8 @@ class _$_Sticker implements _Sticker {
         assert(icon200 != null),
         assert(messageContent != null);
 
-  factory _$_Sticker.fromJson(Map<String, dynamic> json) => _$_$_StickerFromJson(json);
+  factory _$_Sticker.fromJson(Map<String, dynamic> json) =>
+      _$_$_StickerFromJson(json);
 
   @override
 
@@ -230,13 +251,22 @@ class _$_Sticker implements _Sticker {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Sticker &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.icon64, icon64) || const DeepCollectionEquality().equals(other.icon64, icon64)) &&
-            (identical(other.icon100, icon100) || const DeepCollectionEquality().equals(other.icon100, icon100)) &&
-            (identical(other.icon128, icon128) || const DeepCollectionEquality().equals(other.icon128, icon128)) &&
-            (identical(other.icon200, icon200) || const DeepCollectionEquality().equals(other.icon200, icon200)) &&
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.icon64, icon64) ||
+                const DeepCollectionEquality().equals(other.icon64, icon64)) &&
+            (identical(other.icon100, icon100) ||
+                const DeepCollectionEquality()
+                    .equals(other.icon100, icon100)) &&
+            (identical(other.icon128, icon128) ||
+                const DeepCollectionEquality()
+                    .equals(other.icon128, icon128)) &&
+            (identical(other.icon200, icon200) ||
+                const DeepCollectionEquality()
+                    .equals(other.icon200, icon200)) &&
             (identical(other.messageContent, messageContent) ||
-                const DeepCollectionEquality().equals(other.messageContent, messageContent)));
+                const DeepCollectionEquality()
+                    .equals(other.messageContent, messageContent)));
   }
 
   @override
@@ -251,7 +281,8 @@ class _$_Sticker implements _Sticker {
 
   @JsonKey(ignore: true)
   @override
-  _$StickerCopyWith<_Sticker> get copyWith => __$StickerCopyWithImpl<_Sticker>(this, _$identity);
+  _$StickerCopyWith<_Sticker> get copyWith =>
+      __$StickerCopyWithImpl<_Sticker>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -261,12 +292,24 @@ class _$_Sticker implements _Sticker {
 
 abstract class _Sticker implements Sticker {
   const factory _Sticker(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'icon64') String icon64,
-      @required @JsonKey(name: 'icon100') String icon100,
-      @required @JsonKey(name: 'icon128') String icon128,
-      @required @JsonKey(name: 'icon200') String icon200,
-      @required @JsonKey(name: 'message_content') MessageContent messageContent}) = _$_Sticker;
+      {@required
+      @JsonKey(name: 'uid')
+          String uid,
+      @required
+      @JsonKey(name: 'icon64')
+          String icon64,
+      @required
+      @JsonKey(name: 'icon100')
+          String icon100,
+      @required
+      @JsonKey(name: 'icon128')
+          String icon128,
+      @required
+      @JsonKey(name: 'icon200')
+          String icon200,
+      @required
+      @JsonKey(name: 'message_content')
+          MessageContent messageContent}) = _$_Sticker;
 
   factory _Sticker.fromJson(Map<String, dynamic> json) = _$_Sticker.fromJson;
 

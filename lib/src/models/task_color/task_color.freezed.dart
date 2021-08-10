@@ -59,7 +59,8 @@ mixin _$TaskColor {
 
 /// @nodoc
 abstract class $TaskColorCopyWith<$Res> {
-  factory $TaskColorCopyWith(TaskColor value, $Res Function(TaskColor) then) = _$TaskColorCopyWithImpl<$Res>;
+  factory $TaskColorCopyWith(TaskColor value, $Res Function(TaskColor) then) =
+      _$TaskColorCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'regular') String regular,
       @JsonKey(name: 'dark') String dark,
@@ -90,7 +91,9 @@ class _$TaskColorCopyWithImpl<$Res> implements $TaskColorCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$TaskColorCopyWith<$Res> implements $TaskColorCopyWith<$Res> {
-  factory _$TaskColorCopyWith(_TaskColor value, $Res Function(_TaskColor) then) = __$TaskColorCopyWithImpl<$Res>;
+  factory _$TaskColorCopyWith(
+          _TaskColor value, $Res Function(_TaskColor) then) =
+      __$TaskColorCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'regular') String regular,
@@ -99,7 +102,8 @@ abstract class _$TaskColorCopyWith<$Res> implements $TaskColorCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$TaskColorCopyWithImpl<$Res> extends _$TaskColorCopyWithImpl<$Res> implements _$TaskColorCopyWith<$Res> {
+class __$TaskColorCopyWithImpl<$Res> extends _$TaskColorCopyWithImpl<$Res>
+    implements _$TaskColorCopyWith<$Res> {
   __$TaskColorCopyWithImpl(_TaskColor _value, $Res Function(_TaskColor) _then)
       : super(_value, (v) => _then(v as _TaskColor));
 
@@ -132,7 +136,8 @@ class _$_TaskColor implements _TaskColor {
         assert(dark != null),
         assert(light != null);
 
-  factory _$_TaskColor.fromJson(Map<String, dynamic> json) => _$_$_TaskColorFromJson(json);
+  factory _$_TaskColor.fromJson(Map<String, dynamic> json) =>
+      _$_$_TaskColorFromJson(json);
 
   @override
 
@@ -159,9 +164,13 @@ class _$_TaskColor implements _TaskColor {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _TaskColor &&
-            (identical(other.regular, regular) || const DeepCollectionEquality().equals(other.regular, regular)) &&
-            (identical(other.dark, dark) || const DeepCollectionEquality().equals(other.dark, dark)) &&
-            (identical(other.light, light) || const DeepCollectionEquality().equals(other.light, light)));
+            (identical(other.regular, regular) ||
+                const DeepCollectionEquality()
+                    .equals(other.regular, regular)) &&
+            (identical(other.dark, dark) ||
+                const DeepCollectionEquality().equals(other.dark, dark)) &&
+            (identical(other.light, light) ||
+                const DeepCollectionEquality().equals(other.light, light)));
   }
 
   @override
@@ -173,7 +182,8 @@ class _$_TaskColor implements _TaskColor {
 
   @JsonKey(ignore: true)
   @override
-  _$TaskColorCopyWith<_TaskColor> get copyWith => __$TaskColorCopyWithImpl<_TaskColor>(this, _$identity);
+  _$TaskColorCopyWith<_TaskColor> get copyWith =>
+      __$TaskColorCopyWithImpl<_TaskColor>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -187,7 +197,8 @@ abstract class _TaskColor implements TaskColor {
       @required @JsonKey(name: 'dark') String dark,
       @required @JsonKey(name: 'light') String light}) = _$_TaskColor;
 
-  factory _TaskColor.fromJson(Map<String, dynamic> json) = _$_TaskColor.fromJson;
+  factory _TaskColor.fromJson(Map<String, dynamic> json) =
+      _$_TaskColor.fromJson;
 
   @override
 

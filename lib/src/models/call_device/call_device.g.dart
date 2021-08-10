@@ -13,7 +13,8 @@ _$_CallDevice _$_$_CallDeviceFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_CallDeviceToJson(_$_CallDevice instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_CallDeviceToJson(_$_CallDevice instance) =>
+    <String, dynamic>{
       'muted': instance.muted,
       'useragent': instance.useragent,
     };

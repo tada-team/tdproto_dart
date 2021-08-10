@@ -83,7 +83,8 @@ mixin _$TaskItem {
 
 /// @nodoc
 abstract class $TaskItemCopyWith<$Res> {
-  factory $TaskItemCopyWith(TaskItem value, $Res Function(TaskItem) then) = _$TaskItemCopyWithImpl<$Res>;
+  factory $TaskItemCopyWith(TaskItem value, $Res Function(TaskItem) then) =
+      _$TaskItemCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'gentime') int gentime,
@@ -117,7 +118,8 @@ class _$TaskItemCopyWithImpl<$Res> implements $TaskItemCopyWith<$Res> {
     return _then(_value.copyWith(
       uid: uid == freezed ? _value.uid : uid as String,
       gentime: gentime == freezed ? _value.gentime : gentime as int,
-      sortOrdering: sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
+      sortOrdering:
+          sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
       text: text == freezed ? _value.text : text as String,
       checked: checked == freezed ? _value.checked : checked as bool,
       canToggle: canToggle == freezed ? _value.canToggle : canToggle as bool,
@@ -138,7 +140,8 @@ class _$TaskItemCopyWithImpl<$Res> implements $TaskItemCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$TaskItemCopyWith<$Res> implements $TaskItemCopyWith<$Res> {
-  factory _$TaskItemCopyWith(_TaskItem value, $Res Function(_TaskItem) then) = __$TaskItemCopyWithImpl<$Res>;
+  factory _$TaskItemCopyWith(_TaskItem value, $Res Function(_TaskItem) then) =
+      __$TaskItemCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'uid') String uid,
@@ -154,7 +157,8 @@ abstract class _$TaskItemCopyWith<$Res> implements $TaskItemCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$TaskItemCopyWithImpl<$Res> extends _$TaskItemCopyWithImpl<$Res> implements _$TaskItemCopyWith<$Res> {
+class __$TaskItemCopyWithImpl<$Res> extends _$TaskItemCopyWithImpl<$Res>
+    implements _$TaskItemCopyWith<$Res> {
   __$TaskItemCopyWithImpl(_TaskItem _value, $Res Function(_TaskItem) _then)
       : super(_value, (v) => _then(v as _TaskItem));
 
@@ -174,7 +178,8 @@ class __$TaskItemCopyWithImpl<$Res> extends _$TaskItemCopyWithImpl<$Res> impleme
     return _then(_TaskItem(
       uid: uid == freezed ? _value.uid : uid as String,
       gentime: gentime == freezed ? _value.gentime : gentime as int,
-      sortOrdering: sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
+      sortOrdering:
+          sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
       text: text == freezed ? _value.text : text as String,
       checked: checked == freezed ? _value.checked : checked as bool,
       canToggle: canToggle == freezed ? _value.canToggle : canToggle as bool,
@@ -198,7 +203,8 @@ class _$_TaskItem implements _TaskItem {
       : assert(gentime != null),
         assert(text != null);
 
-  factory _$_TaskItem.fromJson(Map<String, dynamic> json) => _$_$_TaskItemFromJson(json);
+  factory _$_TaskItem.fromJson(Map<String, dynamic> json) =>
+      _$_$_TaskItemFromJson(json);
 
   @override
 
@@ -245,15 +251,24 @@ class _$_TaskItem implements _TaskItem {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _TaskItem &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.gentime, gentime) || const DeepCollectionEquality().equals(other.gentime, gentime)) &&
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.gentime, gentime) ||
+                const DeepCollectionEquality()
+                    .equals(other.gentime, gentime)) &&
             (identical(other.sortOrdering, sortOrdering) ||
-                const DeepCollectionEquality().equals(other.sortOrdering, sortOrdering)) &&
-            (identical(other.text, text) || const DeepCollectionEquality().equals(other.text, text)) &&
-            (identical(other.checked, checked) || const DeepCollectionEquality().equals(other.checked, checked)) &&
+                const DeepCollectionEquality()
+                    .equals(other.sortOrdering, sortOrdering)) &&
+            (identical(other.text, text) ||
+                const DeepCollectionEquality().equals(other.text, text)) &&
+            (identical(other.checked, checked) ||
+                const DeepCollectionEquality()
+                    .equals(other.checked, checked)) &&
             (identical(other.canToggle, canToggle) ||
-                const DeepCollectionEquality().equals(other.canToggle, canToggle)) &&
-            (identical(other.subtask, subtask) || const DeepCollectionEquality().equals(other.subtask, subtask)));
+                const DeepCollectionEquality()
+                    .equals(other.canToggle, canToggle)) &&
+            (identical(other.subtask, subtask) ||
+                const DeepCollectionEquality().equals(other.subtask, subtask)));
   }
 
   @override
@@ -269,7 +284,8 @@ class _$_TaskItem implements _TaskItem {
 
   @JsonKey(ignore: true)
   @override
-  _$TaskItemCopyWith<_TaskItem> get copyWith => __$TaskItemCopyWithImpl<_TaskItem>(this, _$identity);
+  _$TaskItemCopyWith<_TaskItem> get copyWith =>
+      __$TaskItemCopyWithImpl<_TaskItem>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {

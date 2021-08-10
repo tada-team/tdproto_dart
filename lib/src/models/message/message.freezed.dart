@@ -18,37 +18,80 @@ class _$MessageTearOff {
 
 // ignore: unused_element
   _Message call(
-      {@required @JsonKey(name: 'content') MessageContent content,
-      @JsonKey(name: 'push_text') String pushText,
-      @required @JsonKey(name: 'from') String from,
-      @required @JsonKey(name: 'to') String to,
-      @required @JsonKey(name: 'message_id') String messageId,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @JsonKey(name: 'drafted') @DateTimeConverter() DateTime drafted,
-      @required @JsonKey(name: 'gentime') int gentime,
-      @required @JsonKey(name: 'chat_type') String chatType,
-      @required @JsonKey(name: 'chat') String chat,
-      @JsonKey(name: 'links') MessageLink links,
-      @JsonKey(name: 'markup') List<MarkupEntity> markup,
-      @JsonKey(name: 'important') bool important,
-      @JsonKey(name: 'edited') @DateTimeConverter() DateTime edited,
-      @JsonKey(name: 'received') bool received,
-      @JsonKey(name: 'num_received') int numReceived,
-      @JsonKey(name: 'nopreview') bool nopreview,
-      @JsonKey(name: 'has_previews') bool hasPreviews,
-      @JsonKey(name: 'prev') String prev,
-      @JsonKey(name: 'is_first') bool isFirst,
-      @JsonKey(name: 'is_last') bool isLast,
-      @JsonKey(name: 'uploads') List<Upload> uploads,
-      @JsonKey(name: 'reactions') List<MessageReaction> reactions,
-      @JsonKey(name: 'reply_to') Message replyTo,
-      @JsonKey(name: 'linked_messages') List<Message> linkedMessages,
-      @JsonKey(name: 'notice') bool notice,
-      @JsonKey(name: 'silently') bool silently,
-      @JsonKey(name: 'editable_until') @DateTimeConverter() DateTime editableUntil,
-      @JsonKey(name: 'num') int num,
-      @JsonKey(name: 'is_archive') bool isArchive,
-      @JsonKey(name: '_debug') String debug}) {
+      {@required
+      @JsonKey(name: 'content')
+          MessageContent content,
+      @JsonKey(name: 'push_text')
+          String pushText,
+      @required
+      @JsonKey(name: 'from')
+          String from,
+      @required
+      @JsonKey(name: 'to')
+          String to,
+      @required
+      @JsonKey(name: 'message_id')
+          String messageId,
+      @required
+      @JsonKey(name: 'created')
+      @DateTimeConverter()
+          DateTime created,
+      @JsonKey(name: 'drafted')
+      @DateTimeConverter()
+          DateTime drafted,
+      @required
+      @JsonKey(name: 'gentime')
+          int gentime,
+      @required
+      @JsonKey(name: 'chat_type')
+          String chatType,
+      @required
+      @JsonKey(name: 'chat')
+          String chat,
+      @JsonKey(name: 'links')
+          MessageLink links,
+      @JsonKey(name: 'markup')
+          List<MarkupEntity> markup,
+      @JsonKey(name: 'important')
+          bool important,
+      @JsonKey(name: 'edited')
+      @DateTimeConverter()
+          DateTime edited,
+      @JsonKey(name: 'received')
+          bool received,
+      @JsonKey(name: 'num_received')
+          int numReceived,
+      @JsonKey(name: 'nopreview')
+          bool nopreview,
+      @JsonKey(name: 'has_previews')
+          bool hasPreviews,
+      @JsonKey(name: 'prev')
+          String prev,
+      @JsonKey(name: 'is_first')
+          bool isFirst,
+      @JsonKey(name: 'is_last')
+          bool isLast,
+      @JsonKey(name: 'uploads')
+          List<Upload> uploads,
+      @JsonKey(name: 'reactions')
+          List<MessageReaction> reactions,
+      @JsonKey(name: 'reply_to')
+          Message replyTo,
+      @JsonKey(name: 'linked_messages')
+          List<Message> linkedMessages,
+      @JsonKey(name: 'notice')
+          bool notice,
+      @JsonKey(name: 'silently')
+          bool silently,
+      @JsonKey(name: 'editable_until')
+      @DateTimeConverter()
+          DateTime editableUntil,
+      @JsonKey(name: 'num')
+          int num,
+      @JsonKey(name: 'is_archive')
+          bool isArchive,
+      @JsonKey(name: '_debug')
+          String debug}) {
     return _Message(
       content: content,
       pushText: pushText,
@@ -231,39 +274,75 @@ mixin _$Message {
 
 /// @nodoc
 abstract class $MessageCopyWith<$Res> {
-  factory $MessageCopyWith(Message value, $Res Function(Message) then) = _$MessageCopyWithImpl<$Res>;
+  factory $MessageCopyWith(Message value, $Res Function(Message) then) =
+      _$MessageCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'content') MessageContent content,
-      @JsonKey(name: 'push_text') String pushText,
-      @JsonKey(name: 'from') String from,
-      @JsonKey(name: 'to') String to,
-      @JsonKey(name: 'message_id') String messageId,
-      @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @JsonKey(name: 'drafted') @DateTimeConverter() DateTime drafted,
-      @JsonKey(name: 'gentime') int gentime,
-      @JsonKey(name: 'chat_type') String chatType,
-      @JsonKey(name: 'chat') String chat,
-      @JsonKey(name: 'links') MessageLink links,
-      @JsonKey(name: 'markup') List<MarkupEntity> markup,
-      @JsonKey(name: 'important') bool important,
-      @JsonKey(name: 'edited') @DateTimeConverter() DateTime edited,
-      @JsonKey(name: 'received') bool received,
-      @JsonKey(name: 'num_received') int numReceived,
-      @JsonKey(name: 'nopreview') bool nopreview,
-      @JsonKey(name: 'has_previews') bool hasPreviews,
-      @JsonKey(name: 'prev') String prev,
-      @JsonKey(name: 'is_first') bool isFirst,
-      @JsonKey(name: 'is_last') bool isLast,
-      @JsonKey(name: 'uploads') List<Upload> uploads,
-      @JsonKey(name: 'reactions') List<MessageReaction> reactions,
-      @JsonKey(name: 'reply_to') Message replyTo,
-      @JsonKey(name: 'linked_messages') List<Message> linkedMessages,
-      @JsonKey(name: 'notice') bool notice,
-      @JsonKey(name: 'silently') bool silently,
-      @JsonKey(name: 'editable_until') @DateTimeConverter() DateTime editableUntil,
-      @JsonKey(name: 'num') int num,
-      @JsonKey(name: 'is_archive') bool isArchive,
-      @JsonKey(name: '_debug') String debug});
+      {@JsonKey(name: 'content')
+          MessageContent content,
+      @JsonKey(name: 'push_text')
+          String pushText,
+      @JsonKey(name: 'from')
+          String from,
+      @JsonKey(name: 'to')
+          String to,
+      @JsonKey(name: 'message_id')
+          String messageId,
+      @JsonKey(name: 'created')
+      @DateTimeConverter()
+          DateTime created,
+      @JsonKey(name: 'drafted')
+      @DateTimeConverter()
+          DateTime drafted,
+      @JsonKey(name: 'gentime')
+          int gentime,
+      @JsonKey(name: 'chat_type')
+          String chatType,
+      @JsonKey(name: 'chat')
+          String chat,
+      @JsonKey(name: 'links')
+          MessageLink links,
+      @JsonKey(name: 'markup')
+          List<MarkupEntity> markup,
+      @JsonKey(name: 'important')
+          bool important,
+      @JsonKey(name: 'edited')
+      @DateTimeConverter()
+          DateTime edited,
+      @JsonKey(name: 'received')
+          bool received,
+      @JsonKey(name: 'num_received')
+          int numReceived,
+      @JsonKey(name: 'nopreview')
+          bool nopreview,
+      @JsonKey(name: 'has_previews')
+          bool hasPreviews,
+      @JsonKey(name: 'prev')
+          String prev,
+      @JsonKey(name: 'is_first')
+          bool isFirst,
+      @JsonKey(name: 'is_last')
+          bool isLast,
+      @JsonKey(name: 'uploads')
+          List<Upload> uploads,
+      @JsonKey(name: 'reactions')
+          List<MessageReaction> reactions,
+      @JsonKey(name: 'reply_to')
+          Message replyTo,
+      @JsonKey(name: 'linked_messages')
+          List<Message> linkedMessages,
+      @JsonKey(name: 'notice')
+          bool notice,
+      @JsonKey(name: 'silently')
+          bool silently,
+      @JsonKey(name: 'editable_until')
+      @DateTimeConverter()
+          DateTime editableUntil,
+      @JsonKey(name: 'num')
+          int num,
+      @JsonKey(name: 'is_archive')
+          bool isArchive,
+      @JsonKey(name: '_debug')
+          String debug});
 
   $MessageContentCopyWith<$Res> get content;
   $MessageLinkCopyWith<$Res> get links;
@@ -328,19 +407,27 @@ class _$MessageCopyWithImpl<$Res> implements $MessageCopyWith<$Res> {
       important: important == freezed ? _value.important : important as bool,
       edited: edited == freezed ? _value.edited : edited as DateTime,
       received: received == freezed ? _value.received : received as bool,
-      numReceived: numReceived == freezed ? _value.numReceived : numReceived as int,
+      numReceived:
+          numReceived == freezed ? _value.numReceived : numReceived as int,
       nopreview: nopreview == freezed ? _value.nopreview : nopreview as bool,
-      hasPreviews: hasPreviews == freezed ? _value.hasPreviews : hasPreviews as bool,
+      hasPreviews:
+          hasPreviews == freezed ? _value.hasPreviews : hasPreviews as bool,
       prev: prev == freezed ? _value.prev : prev as String,
       isFirst: isFirst == freezed ? _value.isFirst : isFirst as bool,
       isLast: isLast == freezed ? _value.isLast : isLast as bool,
       uploads: uploads == freezed ? _value.uploads : uploads as List<Upload>,
-      reactions: reactions == freezed ? _value.reactions : reactions as List<MessageReaction>,
+      reactions: reactions == freezed
+          ? _value.reactions
+          : reactions as List<MessageReaction>,
       replyTo: replyTo == freezed ? _value.replyTo : replyTo as Message,
-      linkedMessages: linkedMessages == freezed ? _value.linkedMessages : linkedMessages as List<Message>,
+      linkedMessages: linkedMessages == freezed
+          ? _value.linkedMessages
+          : linkedMessages as List<Message>,
       notice: notice == freezed ? _value.notice : notice as bool,
       silently: silently == freezed ? _value.silently : silently as bool,
-      editableUntil: editableUntil == freezed ? _value.editableUntil : editableUntil as DateTime,
+      editableUntil: editableUntil == freezed
+          ? _value.editableUntil
+          : editableUntil as DateTime,
       num: num == freezed ? _value.num : num as int,
       isArchive: isArchive == freezed ? _value.isArchive : isArchive as bool,
       debug: debug == freezed ? _value.debug : debug as String,
@@ -380,40 +467,76 @@ class _$MessageCopyWithImpl<$Res> implements $MessageCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$MessageCopyWith<$Res> implements $MessageCopyWith<$Res> {
-  factory _$MessageCopyWith(_Message value, $Res Function(_Message) then) = __$MessageCopyWithImpl<$Res>;
+  factory _$MessageCopyWith(_Message value, $Res Function(_Message) then) =
+      __$MessageCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'content') MessageContent content,
-      @JsonKey(name: 'push_text') String pushText,
-      @JsonKey(name: 'from') String from,
-      @JsonKey(name: 'to') String to,
-      @JsonKey(name: 'message_id') String messageId,
-      @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @JsonKey(name: 'drafted') @DateTimeConverter() DateTime drafted,
-      @JsonKey(name: 'gentime') int gentime,
-      @JsonKey(name: 'chat_type') String chatType,
-      @JsonKey(name: 'chat') String chat,
-      @JsonKey(name: 'links') MessageLink links,
-      @JsonKey(name: 'markup') List<MarkupEntity> markup,
-      @JsonKey(name: 'important') bool important,
-      @JsonKey(name: 'edited') @DateTimeConverter() DateTime edited,
-      @JsonKey(name: 'received') bool received,
-      @JsonKey(name: 'num_received') int numReceived,
-      @JsonKey(name: 'nopreview') bool nopreview,
-      @JsonKey(name: 'has_previews') bool hasPreviews,
-      @JsonKey(name: 'prev') String prev,
-      @JsonKey(name: 'is_first') bool isFirst,
-      @JsonKey(name: 'is_last') bool isLast,
-      @JsonKey(name: 'uploads') List<Upload> uploads,
-      @JsonKey(name: 'reactions') List<MessageReaction> reactions,
-      @JsonKey(name: 'reply_to') Message replyTo,
-      @JsonKey(name: 'linked_messages') List<Message> linkedMessages,
-      @JsonKey(name: 'notice') bool notice,
-      @JsonKey(name: 'silently') bool silently,
-      @JsonKey(name: 'editable_until') @DateTimeConverter() DateTime editableUntil,
-      @JsonKey(name: 'num') int num,
-      @JsonKey(name: 'is_archive') bool isArchive,
-      @JsonKey(name: '_debug') String debug});
+      {@JsonKey(name: 'content')
+          MessageContent content,
+      @JsonKey(name: 'push_text')
+          String pushText,
+      @JsonKey(name: 'from')
+          String from,
+      @JsonKey(name: 'to')
+          String to,
+      @JsonKey(name: 'message_id')
+          String messageId,
+      @JsonKey(name: 'created')
+      @DateTimeConverter()
+          DateTime created,
+      @JsonKey(name: 'drafted')
+      @DateTimeConverter()
+          DateTime drafted,
+      @JsonKey(name: 'gentime')
+          int gentime,
+      @JsonKey(name: 'chat_type')
+          String chatType,
+      @JsonKey(name: 'chat')
+          String chat,
+      @JsonKey(name: 'links')
+          MessageLink links,
+      @JsonKey(name: 'markup')
+          List<MarkupEntity> markup,
+      @JsonKey(name: 'important')
+          bool important,
+      @JsonKey(name: 'edited')
+      @DateTimeConverter()
+          DateTime edited,
+      @JsonKey(name: 'received')
+          bool received,
+      @JsonKey(name: 'num_received')
+          int numReceived,
+      @JsonKey(name: 'nopreview')
+          bool nopreview,
+      @JsonKey(name: 'has_previews')
+          bool hasPreviews,
+      @JsonKey(name: 'prev')
+          String prev,
+      @JsonKey(name: 'is_first')
+          bool isFirst,
+      @JsonKey(name: 'is_last')
+          bool isLast,
+      @JsonKey(name: 'uploads')
+          List<Upload> uploads,
+      @JsonKey(name: 'reactions')
+          List<MessageReaction> reactions,
+      @JsonKey(name: 'reply_to')
+          Message replyTo,
+      @JsonKey(name: 'linked_messages')
+          List<Message> linkedMessages,
+      @JsonKey(name: 'notice')
+          bool notice,
+      @JsonKey(name: 'silently')
+          bool silently,
+      @JsonKey(name: 'editable_until')
+      @DateTimeConverter()
+          DateTime editableUntil,
+      @JsonKey(name: 'num')
+          int num,
+      @JsonKey(name: 'is_archive')
+          bool isArchive,
+      @JsonKey(name: '_debug')
+          String debug});
 
   @override
   $MessageContentCopyWith<$Res> get content;
@@ -424,8 +547,10 @@ abstract class _$MessageCopyWith<$Res> implements $MessageCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$MessageCopyWithImpl<$Res> extends _$MessageCopyWithImpl<$Res> implements _$MessageCopyWith<$Res> {
-  __$MessageCopyWithImpl(_Message _value, $Res Function(_Message) _then) : super(_value, (v) => _then(v as _Message));
+class __$MessageCopyWithImpl<$Res> extends _$MessageCopyWithImpl<$Res>
+    implements _$MessageCopyWith<$Res> {
+  __$MessageCopyWithImpl(_Message _value, $Res Function(_Message) _then)
+      : super(_value, (v) => _then(v as _Message));
 
   @override
   _Message get _value => super._value as _Message;
@@ -480,19 +605,27 @@ class __$MessageCopyWithImpl<$Res> extends _$MessageCopyWithImpl<$Res> implement
       important: important == freezed ? _value.important : important as bool,
       edited: edited == freezed ? _value.edited : edited as DateTime,
       received: received == freezed ? _value.received : received as bool,
-      numReceived: numReceived == freezed ? _value.numReceived : numReceived as int,
+      numReceived:
+          numReceived == freezed ? _value.numReceived : numReceived as int,
       nopreview: nopreview == freezed ? _value.nopreview : nopreview as bool,
-      hasPreviews: hasPreviews == freezed ? _value.hasPreviews : hasPreviews as bool,
+      hasPreviews:
+          hasPreviews == freezed ? _value.hasPreviews : hasPreviews as bool,
       prev: prev == freezed ? _value.prev : prev as String,
       isFirst: isFirst == freezed ? _value.isFirst : isFirst as bool,
       isLast: isLast == freezed ? _value.isLast : isLast as bool,
       uploads: uploads == freezed ? _value.uploads : uploads as List<Upload>,
-      reactions: reactions == freezed ? _value.reactions : reactions as List<MessageReaction>,
+      reactions: reactions == freezed
+          ? _value.reactions
+          : reactions as List<MessageReaction>,
       replyTo: replyTo == freezed ? _value.replyTo : replyTo as Message,
-      linkedMessages: linkedMessages == freezed ? _value.linkedMessages : linkedMessages as List<Message>,
+      linkedMessages: linkedMessages == freezed
+          ? _value.linkedMessages
+          : linkedMessages as List<Message>,
       notice: notice == freezed ? _value.notice : notice as bool,
       silently: silently == freezed ? _value.silently : silently as bool,
-      editableUntil: editableUntil == freezed ? _value.editableUntil : editableUntil as DateTime,
+      editableUntil: editableUntil == freezed
+          ? _value.editableUntil
+          : editableUntil as DateTime,
       num: num == freezed ? _value.num : num as int,
       isArchive: isArchive == freezed ? _value.isArchive : isArchive as bool,
       debug: debug == freezed ? _value.debug : debug as String,
@@ -545,7 +678,8 @@ class _$_Message implements _Message {
         assert(chatType != null),
         assert(chat != null);
 
-  factory _$_Message.fromJson(Map<String, dynamic> json) => _$_$_MessageFromJson(json);
+  factory _$_Message.fromJson(Map<String, dynamic> json) =>
+      _$_$_MessageFromJson(json);
 
   @override
 
@@ -716,45 +850,79 @@ class _$_Message implements _Message {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Message &&
-            (identical(other.content, content) || const DeepCollectionEquality().equals(other.content, content)) &&
-            (identical(other.pushText, pushText) || const DeepCollectionEquality().equals(other.pushText, pushText)) &&
-            (identical(other.from, from) || const DeepCollectionEquality().equals(other.from, from)) &&
-            (identical(other.to, to) || const DeepCollectionEquality().equals(other.to, to)) &&
+            (identical(other.content, content) ||
+                const DeepCollectionEquality()
+                    .equals(other.content, content)) &&
+            (identical(other.pushText, pushText) ||
+                const DeepCollectionEquality()
+                    .equals(other.pushText, pushText)) &&
+            (identical(other.from, from) ||
+                const DeepCollectionEquality().equals(other.from, from)) &&
+            (identical(other.to, to) ||
+                const DeepCollectionEquality().equals(other.to, to)) &&
             (identical(other.messageId, messageId) ||
-                const DeepCollectionEquality().equals(other.messageId, messageId)) &&
-            (identical(other.created, created) || const DeepCollectionEquality().equals(other.created, created)) &&
-            (identical(other.drafted, drafted) || const DeepCollectionEquality().equals(other.drafted, drafted)) &&
-            (identical(other.gentime, gentime) || const DeepCollectionEquality().equals(other.gentime, gentime)) &&
-            (identical(other.chatType, chatType) || const DeepCollectionEquality().equals(other.chatType, chatType)) &&
-            (identical(other.chat, chat) || const DeepCollectionEquality().equals(other.chat, chat)) &&
-            (identical(other.links, links) || const DeepCollectionEquality().equals(other.links, links)) &&
-            (identical(other.markup, markup) || const DeepCollectionEquality().equals(other.markup, markup)) &&
+                const DeepCollectionEquality()
+                    .equals(other.messageId, messageId)) &&
+            (identical(other.created, created) ||
+                const DeepCollectionEquality()
+                    .equals(other.created, created)) &&
+            (identical(other.drafted, drafted) ||
+                const DeepCollectionEquality()
+                    .equals(other.drafted, drafted)) &&
+            (identical(other.gentime, gentime) ||
+                const DeepCollectionEquality()
+                    .equals(other.gentime, gentime)) &&
+            (identical(other.chatType, chatType) ||
+                const DeepCollectionEquality()
+                    .equals(other.chatType, chatType)) &&
+            (identical(other.chat, chat) ||
+                const DeepCollectionEquality().equals(other.chat, chat)) &&
+            (identical(other.links, links) ||
+                const DeepCollectionEquality().equals(other.links, links)) &&
+            (identical(other.markup, markup) ||
+                const DeepCollectionEquality().equals(other.markup, markup)) &&
             (identical(other.important, important) ||
-                const DeepCollectionEquality().equals(other.important, important)) &&
-            (identical(other.edited, edited) || const DeepCollectionEquality().equals(other.edited, edited)) &&
-            (identical(other.received, received) || const DeepCollectionEquality().equals(other.received, received)) &&
+                const DeepCollectionEquality()
+                    .equals(other.important, important)) &&
+            (identical(other.edited, edited) ||
+                const DeepCollectionEquality().equals(other.edited, edited)) &&
+            (identical(other.received, received) ||
+                const DeepCollectionEquality()
+                    .equals(other.received, received)) &&
             (identical(other.numReceived, numReceived) ||
-                const DeepCollectionEquality().equals(other.numReceived, numReceived)) &&
+                const DeepCollectionEquality()
+                    .equals(other.numReceived, numReceived)) &&
             (identical(other.nopreview, nopreview) ||
-                const DeepCollectionEquality().equals(other.nopreview, nopreview)) &&
+                const DeepCollectionEquality()
+                    .equals(other.nopreview, nopreview)) &&
             (identical(other.hasPreviews, hasPreviews) ||
-                const DeepCollectionEquality().equals(other.hasPreviews, hasPreviews)) &&
-            (identical(other.prev, prev) || const DeepCollectionEquality().equals(other.prev, prev)) &&
-            (identical(other.isFirst, isFirst) || const DeepCollectionEquality().equals(other.isFirst, isFirst)) &&
-            (identical(other.isLast, isLast) || const DeepCollectionEquality().equals(other.isLast, isLast)) &&
-            (identical(other.uploads, uploads) || const DeepCollectionEquality().equals(other.uploads, uploads)) &&
+                const DeepCollectionEquality()
+                    .equals(other.hasPreviews, hasPreviews)) &&
+            (identical(other.prev, prev) ||
+                const DeepCollectionEquality().equals(other.prev, prev)) &&
+            (identical(other.isFirst, isFirst) ||
+                const DeepCollectionEquality()
+                    .equals(other.isFirst, isFirst)) &&
+            (identical(other.isLast, isLast) ||
+                const DeepCollectionEquality().equals(other.isLast, isLast)) &&
+            (identical(other.uploads, uploads) ||
+                const DeepCollectionEquality()
+                    .equals(other.uploads, uploads)) &&
             (identical(other.reactions, reactions) ||
-                const DeepCollectionEquality().equals(other.reactions, reactions)) &&
-            (identical(other.replyTo, replyTo) || const DeepCollectionEquality().equals(other.replyTo, replyTo)) &&
+                const DeepCollectionEquality()
+                    .equals(other.reactions, reactions)) &&
+            (identical(other.replyTo, replyTo) ||
+                const DeepCollectionEquality()
+                    .equals(other.replyTo, replyTo)) &&
             (identical(other.linkedMessages, linkedMessages) ||
-                const DeepCollectionEquality().equals(other.linkedMessages, linkedMessages)) &&
-            (identical(other.notice, notice) || const DeepCollectionEquality().equals(other.notice, notice)) &&
+                const DeepCollectionEquality()
+                    .equals(other.linkedMessages, linkedMessages)) &&
+            (identical(other.notice, notice) ||
+                const DeepCollectionEquality().equals(other.notice, notice)) &&
             (identical(other.silently, silently) || const DeepCollectionEquality().equals(other.silently, silently)) &&
-            (identical(other.editableUntil, editableUntil) ||
-                const DeepCollectionEquality().equals(other.editableUntil, editableUntil)) &&
+            (identical(other.editableUntil, editableUntil) || const DeepCollectionEquality().equals(other.editableUntil, editableUntil)) &&
             (identical(other.num, num) || const DeepCollectionEquality().equals(other.num, num)) &&
-            (identical(other.isArchive, isArchive) ||
-                const DeepCollectionEquality().equals(other.isArchive, isArchive)) &&
+            (identical(other.isArchive, isArchive) || const DeepCollectionEquality().equals(other.isArchive, isArchive)) &&
             (identical(other.debug, debug) || const DeepCollectionEquality().equals(other.debug, debug)));
   }
 
@@ -795,7 +963,8 @@ class _$_Message implements _Message {
 
   @JsonKey(ignore: true)
   @override
-  _$MessageCopyWith<_Message> get copyWith => __$MessageCopyWithImpl<_Message>(this, _$identity);
+  _$MessageCopyWith<_Message> get copyWith =>
+      __$MessageCopyWithImpl<_Message>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -805,37 +974,80 @@ class _$_Message implements _Message {
 
 abstract class _Message implements Message {
   const factory _Message(
-      {@required @JsonKey(name: 'content') MessageContent content,
-      @JsonKey(name: 'push_text') String pushText,
-      @required @JsonKey(name: 'from') String from,
-      @required @JsonKey(name: 'to') String to,
-      @required @JsonKey(name: 'message_id') String messageId,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @JsonKey(name: 'drafted') @DateTimeConverter() DateTime drafted,
-      @required @JsonKey(name: 'gentime') int gentime,
-      @required @JsonKey(name: 'chat_type') String chatType,
-      @required @JsonKey(name: 'chat') String chat,
-      @JsonKey(name: 'links') MessageLink links,
-      @JsonKey(name: 'markup') List<MarkupEntity> markup,
-      @JsonKey(name: 'important') bool important,
-      @JsonKey(name: 'edited') @DateTimeConverter() DateTime edited,
-      @JsonKey(name: 'received') bool received,
-      @JsonKey(name: 'num_received') int numReceived,
-      @JsonKey(name: 'nopreview') bool nopreview,
-      @JsonKey(name: 'has_previews') bool hasPreviews,
-      @JsonKey(name: 'prev') String prev,
-      @JsonKey(name: 'is_first') bool isFirst,
-      @JsonKey(name: 'is_last') bool isLast,
-      @JsonKey(name: 'uploads') List<Upload> uploads,
-      @JsonKey(name: 'reactions') List<MessageReaction> reactions,
-      @JsonKey(name: 'reply_to') Message replyTo,
-      @JsonKey(name: 'linked_messages') List<Message> linkedMessages,
-      @JsonKey(name: 'notice') bool notice,
-      @JsonKey(name: 'silently') bool silently,
-      @JsonKey(name: 'editable_until') @DateTimeConverter() DateTime editableUntil,
-      @JsonKey(name: 'num') int num,
-      @JsonKey(name: 'is_archive') bool isArchive,
-      @JsonKey(name: '_debug') String debug}) = _$_Message;
+      {@required
+      @JsonKey(name: 'content')
+          MessageContent content,
+      @JsonKey(name: 'push_text')
+          String pushText,
+      @required
+      @JsonKey(name: 'from')
+          String from,
+      @required
+      @JsonKey(name: 'to')
+          String to,
+      @required
+      @JsonKey(name: 'message_id')
+          String messageId,
+      @required
+      @JsonKey(name: 'created')
+      @DateTimeConverter()
+          DateTime created,
+      @JsonKey(name: 'drafted')
+      @DateTimeConverter()
+          DateTime drafted,
+      @required
+      @JsonKey(name: 'gentime')
+          int gentime,
+      @required
+      @JsonKey(name: 'chat_type')
+          String chatType,
+      @required
+      @JsonKey(name: 'chat')
+          String chat,
+      @JsonKey(name: 'links')
+          MessageLink links,
+      @JsonKey(name: 'markup')
+          List<MarkupEntity> markup,
+      @JsonKey(name: 'important')
+          bool important,
+      @JsonKey(name: 'edited')
+      @DateTimeConverter()
+          DateTime edited,
+      @JsonKey(name: 'received')
+          bool received,
+      @JsonKey(name: 'num_received')
+          int numReceived,
+      @JsonKey(name: 'nopreview')
+          bool nopreview,
+      @JsonKey(name: 'has_previews')
+          bool hasPreviews,
+      @JsonKey(name: 'prev')
+          String prev,
+      @JsonKey(name: 'is_first')
+          bool isFirst,
+      @JsonKey(name: 'is_last')
+          bool isLast,
+      @JsonKey(name: 'uploads')
+          List<Upload> uploads,
+      @JsonKey(name: 'reactions')
+          List<MessageReaction> reactions,
+      @JsonKey(name: 'reply_to')
+          Message replyTo,
+      @JsonKey(name: 'linked_messages')
+          List<Message> linkedMessages,
+      @JsonKey(name: 'notice')
+          bool notice,
+      @JsonKey(name: 'silently')
+          bool silently,
+      @JsonKey(name: 'editable_until')
+      @DateTimeConverter()
+          DateTime editableUntil,
+      @JsonKey(name: 'num')
+          int num,
+      @JsonKey(name: 'is_archive')
+          bool isArchive,
+      @JsonKey(name: '_debug')
+          String debug}) = _$_Message;
 
   factory _Message.fromJson(Map<String, dynamic> json) = _$_Message.fromJson;
 

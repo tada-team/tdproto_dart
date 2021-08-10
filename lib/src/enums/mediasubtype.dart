@@ -1,9 +1,10 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-enum Mediasubtype {
+enum Mediasubtype { 
   @JsonValue('sticker')
   sticker,
-
+  
   @JsonValue('newtask')
   newtask,
+  
 }

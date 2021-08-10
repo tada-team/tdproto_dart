@@ -11,12 +11,15 @@ _$_ContactShort _$_$_ContactShortFromJson(Map<String, dynamic> json) {
     jid: json['jid'] as String,
     displayName: json['display_name'] as String,
     shortName: json['short_name'] as String,
-    icons: json['icons'] == null ? null : IconData.fromJson(json['icons'] as Map<String, dynamic>),
+    icons: json['icons'] == null
+        ? null
+        : IconData.fromJson(json['icons'] as Map<String, dynamic>),
     gentime: json['gentime'] as int,
   );
 }
 
-Map<String, dynamic> _$_$_ContactShortToJson(_$_ContactShort instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_ContactShortToJson(_$_ContactShort instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'display_name': instance.displayName,
       'short_name': instance.shortName,

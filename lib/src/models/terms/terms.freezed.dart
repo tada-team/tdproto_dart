@@ -245,7 +245,8 @@ mixin _$Terms {
 
 /// @nodoc
 abstract class $TermsCopyWith<$Res> {
-  factory $TermsCopyWith(Terms value, $Res Function(Terms) then) = _$TermsCopyWithImpl<$Res>;
+  factory $TermsCopyWith(Terms value, $Res Function(Terms) then) =
+      _$TermsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'EnInTeam') String enInTeam,
       @JsonKey(name: 'EnTeam') String enTeam,
@@ -331,27 +332,53 @@ class _$TermsCopyWithImpl<$Res> implements $TermsCopyWith<$Res> {
     return _then(_value.copyWith(
       enInTeam: enInTeam == freezed ? _value.enInTeam : enInTeam as String,
       enTeam: enTeam == freezed ? _value.enTeam : enTeam as String,
-      enTeamAccess: enTeamAccess == freezed ? _value.enTeamAccess : enTeamAccess as String,
-      enTeamAdmin: enTeamAdmin == freezed ? _value.enTeamAdmin : enTeamAdmin as String,
-      enTeamAdmins: enTeamAdmins == freezed ? _value.enTeamAdmins : enTeamAdmins as String,
-      enTeamGuest: enTeamGuest == freezed ? _value.enTeamGuest : enTeamGuest as String,
-      enTeamMember: enTeamMember == freezed ? _value.enTeamMember : enTeamMember as String,
-      enTeamMembers: enTeamMembers == freezed ? _value.enTeamMembers : enTeamMembers as String,
-      enTeamOwner: enTeamOwner == freezed ? _value.enTeamOwner : enTeamOwner as String,
-      enTeamSettings: enTeamSettings == freezed ? _value.enTeamSettings : enTeamSettings as String,
-      ruTeamSettings: ruTeamSettings == freezed ? _value.ruTeamSettings : ruTeamSettings as String,
+      enTeamAccess: enTeamAccess == freezed
+          ? _value.enTeamAccess
+          : enTeamAccess as String,
+      enTeamAdmin:
+          enTeamAdmin == freezed ? _value.enTeamAdmin : enTeamAdmin as String,
+      enTeamAdmins: enTeamAdmins == freezed
+          ? _value.enTeamAdmins
+          : enTeamAdmins as String,
+      enTeamGuest:
+          enTeamGuest == freezed ? _value.enTeamGuest : enTeamGuest as String,
+      enTeamMember: enTeamMember == freezed
+          ? _value.enTeamMember
+          : enTeamMember as String,
+      enTeamMembers: enTeamMembers == freezed
+          ? _value.enTeamMembers
+          : enTeamMembers as String,
+      enTeamOwner:
+          enTeamOwner == freezed ? _value.enTeamOwner : enTeamOwner as String,
+      enTeamSettings: enTeamSettings == freezed
+          ? _value.enTeamSettings
+          : enTeamSettings as String,
+      ruTeamSettings: ruTeamSettings == freezed
+          ? _value.ruTeamSettings
+          : ruTeamSettings as String,
       enTeams: enTeams == freezed ? _value.enTeams : enTeams as String,
       enToTeam: enToTeam == freezed ? _value.enToTeam : enToTeam as String,
       ruInTeam: ruInTeam == freezed ? _value.ruInTeam : ruInTeam as String,
       ruTeam: ruTeam == freezed ? _value.ruTeam : ruTeam as String,
-      ruTeamAccess: ruTeamAccess == freezed ? _value.ruTeamAccess : ruTeamAccess as String,
-      ruTeamAdmin: ruTeamAdmin == freezed ? _value.ruTeamAdmin : ruTeamAdmin as String,
-      ruTeamAdmins: ruTeamAdmins == freezed ? _value.ruTeamAdmins : ruTeamAdmins as String,
+      ruTeamAccess: ruTeamAccess == freezed
+          ? _value.ruTeamAccess
+          : ruTeamAccess as String,
+      ruTeamAdmin:
+          ruTeamAdmin == freezed ? _value.ruTeamAdmin : ruTeamAdmin as String,
+      ruTeamAdmins: ruTeamAdmins == freezed
+          ? _value.ruTeamAdmins
+          : ruTeamAdmins as String,
       ruTeamD: ruTeamD == freezed ? _value.ruTeamD : ruTeamD as String,
-      ruTeamGuest: ruTeamGuest == freezed ? _value.ruTeamGuest : ruTeamGuest as String,
-      ruTeamMember: ruTeamMember == freezed ? _value.ruTeamMember : ruTeamMember as String,
-      ruTeamMembers: ruTeamMembers == freezed ? _value.ruTeamMembers : ruTeamMembers as String,
-      ruTeamOwner: ruTeamOwner == freezed ? _value.ruTeamOwner : ruTeamOwner as String,
+      ruTeamGuest:
+          ruTeamGuest == freezed ? _value.ruTeamGuest : ruTeamGuest as String,
+      ruTeamMember: ruTeamMember == freezed
+          ? _value.ruTeamMember
+          : ruTeamMember as String,
+      ruTeamMembers: ruTeamMembers == freezed
+          ? _value.ruTeamMembers
+          : ruTeamMembers as String,
+      ruTeamOwner:
+          ruTeamOwner == freezed ? _value.ruTeamOwner : ruTeamOwner as String,
       ruTeamP: ruTeamP == freezed ? _value.ruTeamP : ruTeamP as String,
       ruTeamR: ruTeamR == freezed ? _value.ruTeamR : ruTeamR as String,
       ruTeams: ruTeams == freezed ? _value.ruTeams : ruTeams as String,
@@ -369,7 +396,8 @@ class _$TermsCopyWithImpl<$Res> implements $TermsCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$TermsCopyWith<$Res> implements $TermsCopyWith<$Res> {
-  factory _$TermsCopyWith(_Terms value, $Res Function(_Terms) then) = __$TermsCopyWithImpl<$Res>;
+  factory _$TermsCopyWith(_Terms value, $Res Function(_Terms) then) =
+      __$TermsCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'EnInTeam') String enInTeam,
@@ -409,8 +437,10 @@ abstract class _$TermsCopyWith<$Res> implements $TermsCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$TermsCopyWithImpl<$Res> extends _$TermsCopyWithImpl<$Res> implements _$TermsCopyWith<$Res> {
-  __$TermsCopyWithImpl(_Terms _value, $Res Function(_Terms) _then) : super(_value, (v) => _then(v as _Terms));
+class __$TermsCopyWithImpl<$Res> extends _$TermsCopyWithImpl<$Res>
+    implements _$TermsCopyWith<$Res> {
+  __$TermsCopyWithImpl(_Terms _value, $Res Function(_Terms) _then)
+      : super(_value, (v) => _then(v as _Terms));
 
   @override
   _Terms get _value => super._value as _Terms;
@@ -455,27 +485,53 @@ class __$TermsCopyWithImpl<$Res> extends _$TermsCopyWithImpl<$Res> implements _$
     return _then(_Terms(
       enInTeam: enInTeam == freezed ? _value.enInTeam : enInTeam as String,
       enTeam: enTeam == freezed ? _value.enTeam : enTeam as String,
-      enTeamAccess: enTeamAccess == freezed ? _value.enTeamAccess : enTeamAccess as String,
-      enTeamAdmin: enTeamAdmin == freezed ? _value.enTeamAdmin : enTeamAdmin as String,
-      enTeamAdmins: enTeamAdmins == freezed ? _value.enTeamAdmins : enTeamAdmins as String,
-      enTeamGuest: enTeamGuest == freezed ? _value.enTeamGuest : enTeamGuest as String,
-      enTeamMember: enTeamMember == freezed ? _value.enTeamMember : enTeamMember as String,
-      enTeamMembers: enTeamMembers == freezed ? _value.enTeamMembers : enTeamMembers as String,
-      enTeamOwner: enTeamOwner == freezed ? _value.enTeamOwner : enTeamOwner as String,
-      enTeamSettings: enTeamSettings == freezed ? _value.enTeamSettings : enTeamSettings as String,
-      ruTeamSettings: ruTeamSettings == freezed ? _value.ruTeamSettings : ruTeamSettings as String,
+      enTeamAccess: enTeamAccess == freezed
+          ? _value.enTeamAccess
+          : enTeamAccess as String,
+      enTeamAdmin:
+          enTeamAdmin == freezed ? _value.enTeamAdmin : enTeamAdmin as String,
+      enTeamAdmins: enTeamAdmins == freezed
+          ? _value.enTeamAdmins
+          : enTeamAdmins as String,
+      enTeamGuest:
+          enTeamGuest == freezed ? _value.enTeamGuest : enTeamGuest as String,
+      enTeamMember: enTeamMember == freezed
+          ? _value.enTeamMember
+          : enTeamMember as String,
+      enTeamMembers: enTeamMembers == freezed
+          ? _value.enTeamMembers
+          : enTeamMembers as String,
+      enTeamOwner:
+          enTeamOwner == freezed ? _value.enTeamOwner : enTeamOwner as String,
+      enTeamSettings: enTeamSettings == freezed
+          ? _value.enTeamSettings
+          : enTeamSettings as String,
+      ruTeamSettings: ruTeamSettings == freezed
+          ? _value.ruTeamSettings
+          : ruTeamSettings as String,
       enTeams: enTeams == freezed ? _value.enTeams : enTeams as String,
       enToTeam: enToTeam == freezed ? _value.enToTeam : enToTeam as String,
       ruInTeam: ruInTeam == freezed ? _value.ruInTeam : ruInTeam as String,
       ruTeam: ruTeam == freezed ? _value.ruTeam : ruTeam as String,
-      ruTeamAccess: ruTeamAccess == freezed ? _value.ruTeamAccess : ruTeamAccess as String,
-      ruTeamAdmin: ruTeamAdmin == freezed ? _value.ruTeamAdmin : ruTeamAdmin as String,
-      ruTeamAdmins: ruTeamAdmins == freezed ? _value.ruTeamAdmins : ruTeamAdmins as String,
+      ruTeamAccess: ruTeamAccess == freezed
+          ? _value.ruTeamAccess
+          : ruTeamAccess as String,
+      ruTeamAdmin:
+          ruTeamAdmin == freezed ? _value.ruTeamAdmin : ruTeamAdmin as String,
+      ruTeamAdmins: ruTeamAdmins == freezed
+          ? _value.ruTeamAdmins
+          : ruTeamAdmins as String,
       ruTeamD: ruTeamD == freezed ? _value.ruTeamD : ruTeamD as String,
-      ruTeamGuest: ruTeamGuest == freezed ? _value.ruTeamGuest : ruTeamGuest as String,
-      ruTeamMember: ruTeamMember == freezed ? _value.ruTeamMember : ruTeamMember as String,
-      ruTeamMembers: ruTeamMembers == freezed ? _value.ruTeamMembers : ruTeamMembers as String,
-      ruTeamOwner: ruTeamOwner == freezed ? _value.ruTeamOwner : ruTeamOwner as String,
+      ruTeamGuest:
+          ruTeamGuest == freezed ? _value.ruTeamGuest : ruTeamGuest as String,
+      ruTeamMember: ruTeamMember == freezed
+          ? _value.ruTeamMember
+          : ruTeamMember as String,
+      ruTeamMembers: ruTeamMembers == freezed
+          ? _value.ruTeamMembers
+          : ruTeamMembers as String,
+      ruTeamOwner:
+          ruTeamOwner == freezed ? _value.ruTeamOwner : ruTeamOwner as String,
       ruTeamP: ruTeamP == freezed ? _value.ruTeamP : ruTeamP as String,
       ruTeamR: ruTeamR == freezed ? _value.ruTeamR : ruTeamR as String,
       ruTeams: ruTeams == freezed ? _value.ruTeams : ruTeams as String,
@@ -565,7 +621,8 @@ class _$_Terms implements _Terms {
         assert(ruTeamV != null),
         assert(ruToTeam != null);
 
-  factory _$_Terms.fromJson(Map<String, dynamic> json) => _$_$_TermsFromJson(json);
+  factory _$_Terms.fromJson(Map<String, dynamic> json) =>
+      _$_$_TermsFromJson(json);
 
   @override
 
@@ -747,43 +804,70 @@ class _$_Terms implements _Terms {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Terms &&
-            (identical(other.enInTeam, enInTeam) || const DeepCollectionEquality().equals(other.enInTeam, enInTeam)) &&
-            (identical(other.enTeam, enTeam) || const DeepCollectionEquality().equals(other.enTeam, enTeam)) &&
+            (identical(other.enInTeam, enInTeam) ||
+                const DeepCollectionEquality()
+                    .equals(other.enInTeam, enInTeam)) &&
+            (identical(other.enTeam, enTeam) ||
+                const DeepCollectionEquality().equals(other.enTeam, enTeam)) &&
             (identical(other.enTeamAccess, enTeamAccess) ||
-                const DeepCollectionEquality().equals(other.enTeamAccess, enTeamAccess)) &&
+                const DeepCollectionEquality()
+                    .equals(other.enTeamAccess, enTeamAccess)) &&
             (identical(other.enTeamAdmin, enTeamAdmin) ||
-                const DeepCollectionEquality().equals(other.enTeamAdmin, enTeamAdmin)) &&
+                const DeepCollectionEquality()
+                    .equals(other.enTeamAdmin, enTeamAdmin)) &&
             (identical(other.enTeamAdmins, enTeamAdmins) ||
-                const DeepCollectionEquality().equals(other.enTeamAdmins, enTeamAdmins)) &&
+                const DeepCollectionEquality()
+                    .equals(other.enTeamAdmins, enTeamAdmins)) &&
             (identical(other.enTeamGuest, enTeamGuest) ||
-                const DeepCollectionEquality().equals(other.enTeamGuest, enTeamGuest)) &&
+                const DeepCollectionEquality()
+                    .equals(other.enTeamGuest, enTeamGuest)) &&
             (identical(other.enTeamMember, enTeamMember) ||
-                const DeepCollectionEquality().equals(other.enTeamMember, enTeamMember)) &&
+                const DeepCollectionEquality()
+                    .equals(other.enTeamMember, enTeamMember)) &&
             (identical(other.enTeamMembers, enTeamMembers) ||
-                const DeepCollectionEquality().equals(other.enTeamMembers, enTeamMembers)) &&
+                const DeepCollectionEquality()
+                    .equals(other.enTeamMembers, enTeamMembers)) &&
             (identical(other.enTeamOwner, enTeamOwner) ||
-                const DeepCollectionEquality().equals(other.enTeamOwner, enTeamOwner)) &&
+                const DeepCollectionEquality()
+                    .equals(other.enTeamOwner, enTeamOwner)) &&
             (identical(other.enTeamSettings, enTeamSettings) ||
-                const DeepCollectionEquality().equals(other.enTeamSettings, enTeamSettings)) &&
+                const DeepCollectionEquality()
+                    .equals(other.enTeamSettings, enTeamSettings)) &&
             (identical(other.ruTeamSettings, ruTeamSettings) ||
-                const DeepCollectionEquality().equals(other.ruTeamSettings, ruTeamSettings)) &&
-            (identical(other.enTeams, enTeams) || const DeepCollectionEquality().equals(other.enTeams, enTeams)) &&
-            (identical(other.enToTeam, enToTeam) || const DeepCollectionEquality().equals(other.enToTeam, enToTeam)) &&
-            (identical(other.ruInTeam, ruInTeam) || const DeepCollectionEquality().equals(other.ruInTeam, ruInTeam)) &&
-            (identical(other.ruTeam, ruTeam) || const DeepCollectionEquality().equals(other.ruTeam, ruTeam)) &&
+                const DeepCollectionEquality()
+                    .equals(other.ruTeamSettings, ruTeamSettings)) &&
+            (identical(other.enTeams, enTeams) ||
+                const DeepCollectionEquality()
+                    .equals(other.enTeams, enTeams)) &&
+            (identical(other.enToTeam, enToTeam) ||
+                const DeepCollectionEquality()
+                    .equals(other.enToTeam, enToTeam)) &&
+            (identical(other.ruInTeam, ruInTeam) ||
+                const DeepCollectionEquality()
+                    .equals(other.ruInTeam, ruInTeam)) &&
+            (identical(other.ruTeam, ruTeam) ||
+                const DeepCollectionEquality().equals(other.ruTeam, ruTeam)) &&
             (identical(other.ruTeamAccess, ruTeamAccess) ||
-                const DeepCollectionEquality().equals(other.ruTeamAccess, ruTeamAccess)) &&
+                const DeepCollectionEquality()
+                    .equals(other.ruTeamAccess, ruTeamAccess)) &&
             (identical(other.ruTeamAdmin, ruTeamAdmin) ||
-                const DeepCollectionEquality().equals(other.ruTeamAdmin, ruTeamAdmin)) &&
+                const DeepCollectionEquality()
+                    .equals(other.ruTeamAdmin, ruTeamAdmin)) &&
             (identical(other.ruTeamAdmins, ruTeamAdmins) ||
-                const DeepCollectionEquality().equals(other.ruTeamAdmins, ruTeamAdmins)) &&
-            (identical(other.ruTeamD, ruTeamD) || const DeepCollectionEquality().equals(other.ruTeamD, ruTeamD)) &&
+                const DeepCollectionEquality()
+                    .equals(other.ruTeamAdmins, ruTeamAdmins)) &&
+            (identical(other.ruTeamD, ruTeamD) ||
+                const DeepCollectionEquality()
+                    .equals(other.ruTeamD, ruTeamD)) &&
             (identical(other.ruTeamGuest, ruTeamGuest) ||
-                const DeepCollectionEquality().equals(other.ruTeamGuest, ruTeamGuest)) &&
+                const DeepCollectionEquality()
+                    .equals(other.ruTeamGuest, ruTeamGuest)) &&
             (identical(other.ruTeamMember, ruTeamMember) ||
-                const DeepCollectionEquality().equals(other.ruTeamMember, ruTeamMember)) &&
+                const DeepCollectionEquality()
+                    .equals(other.ruTeamMember, ruTeamMember)) &&
             (identical(other.ruTeamMembers, ruTeamMembers) ||
-                const DeepCollectionEquality().equals(other.ruTeamMembers, ruTeamMembers)) &&
+                const DeepCollectionEquality()
+                    .equals(other.ruTeamMembers, ruTeamMembers)) &&
             (identical(other.ruTeamOwner, ruTeamOwner) ||
                 const DeepCollectionEquality().equals(other.ruTeamOwner, ruTeamOwner)) &&
             (identical(other.ruTeamP, ruTeamP) || const DeepCollectionEquality().equals(other.ruTeamP, ruTeamP)) &&
@@ -839,7 +923,8 @@ class _$_Terms implements _Terms {
 
   @JsonKey(ignore: true)
   @override
-  _$TermsCopyWith<_Terms> get copyWith => __$TermsCopyWithImpl<_Terms>(this, _$identity);
+  _$TermsCopyWith<_Terms> get copyWith =>
+      __$TermsCopyWithImpl<_Terms>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {

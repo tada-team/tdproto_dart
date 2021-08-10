@@ -59,7 +59,8 @@ mixin _$Unread {
 
 /// @nodoc
 abstract class $UnreadCopyWith<$Res> {
-  factory $UnreadCopyWith(Unread value, $Res Function(Unread) then) = _$UnreadCopyWithImpl<$Res>;
+  factory $UnreadCopyWith(Unread value, $Res Function(Unread) then) =
+      _$UnreadCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'messages') int numMessages,
       @JsonKey(name: 'notice_messages') int numNoticeMessages,
@@ -81,8 +82,11 @@ class _$UnreadCopyWithImpl<$Res> implements $UnreadCopyWith<$Res> {
     Object numChats = freezed,
   }) {
     return _then(_value.copyWith(
-      numMessages: numMessages == freezed ? _value.numMessages : numMessages as int,
-      numNoticeMessages: numNoticeMessages == freezed ? _value.numNoticeMessages : numNoticeMessages as int,
+      numMessages:
+          numMessages == freezed ? _value.numMessages : numMessages as int,
+      numNoticeMessages: numNoticeMessages == freezed
+          ? _value.numNoticeMessages
+          : numNoticeMessages as int,
       numChats: numChats == freezed ? _value.numChats : numChats as int,
     ));
   }
@@ -90,7 +94,8 @@ class _$UnreadCopyWithImpl<$Res> implements $UnreadCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$UnreadCopyWith<$Res> implements $UnreadCopyWith<$Res> {
-  factory _$UnreadCopyWith(_Unread value, $Res Function(_Unread) then) = __$UnreadCopyWithImpl<$Res>;
+  factory _$UnreadCopyWith(_Unread value, $Res Function(_Unread) then) =
+      __$UnreadCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'messages') int numMessages,
@@ -99,8 +104,10 @@ abstract class _$UnreadCopyWith<$Res> implements $UnreadCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$UnreadCopyWithImpl<$Res> extends _$UnreadCopyWithImpl<$Res> implements _$UnreadCopyWith<$Res> {
-  __$UnreadCopyWithImpl(_Unread _value, $Res Function(_Unread) _then) : super(_value, (v) => _then(v as _Unread));
+class __$UnreadCopyWithImpl<$Res> extends _$UnreadCopyWithImpl<$Res>
+    implements _$UnreadCopyWith<$Res> {
+  __$UnreadCopyWithImpl(_Unread _value, $Res Function(_Unread) _then)
+      : super(_value, (v) => _then(v as _Unread));
 
   @override
   _Unread get _value => super._value as _Unread;
@@ -112,8 +119,11 @@ class __$UnreadCopyWithImpl<$Res> extends _$UnreadCopyWithImpl<$Res> implements 
     Object numChats = freezed,
   }) {
     return _then(_Unread(
-      numMessages: numMessages == freezed ? _value.numMessages : numMessages as int,
-      numNoticeMessages: numNoticeMessages == freezed ? _value.numNoticeMessages : numNoticeMessages as int,
+      numMessages:
+          numMessages == freezed ? _value.numMessages : numMessages as int,
+      numNoticeMessages: numNoticeMessages == freezed
+          ? _value.numNoticeMessages
+          : numNoticeMessages as int,
       numChats: numChats == freezed ? _value.numChats : numChats as int,
     ));
   }
@@ -131,7 +141,8 @@ class _$_Unread implements _Unread {
         assert(numNoticeMessages != null),
         assert(numChats != null);
 
-  factory _$_Unread.fromJson(Map<String, dynamic> json) => _$_$_UnreadFromJson(json);
+  factory _$_Unread.fromJson(Map<String, dynamic> json) =>
+      _$_$_UnreadFromJson(json);
 
   @override
 
@@ -159,10 +170,14 @@ class _$_Unread implements _Unread {
     return identical(this, other) ||
         (other is _Unread &&
             (identical(other.numMessages, numMessages) ||
-                const DeepCollectionEquality().equals(other.numMessages, numMessages)) &&
+                const DeepCollectionEquality()
+                    .equals(other.numMessages, numMessages)) &&
             (identical(other.numNoticeMessages, numNoticeMessages) ||
-                const DeepCollectionEquality().equals(other.numNoticeMessages, numNoticeMessages)) &&
-            (identical(other.numChats, numChats) || const DeepCollectionEquality().equals(other.numChats, numChats)));
+                const DeepCollectionEquality()
+                    .equals(other.numNoticeMessages, numNoticeMessages)) &&
+            (identical(other.numChats, numChats) ||
+                const DeepCollectionEquality()
+                    .equals(other.numChats, numChats)));
   }
 
   @override
@@ -174,7 +189,8 @@ class _$_Unread implements _Unread {
 
   @JsonKey(ignore: true)
   @override
-  _$UnreadCopyWith<_Unread> get copyWith => __$UnreadCopyWithImpl<_Unread>(this, _$identity);
+  _$UnreadCopyWith<_Unread> get copyWith =>
+      __$UnreadCopyWithImpl<_Unread>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {

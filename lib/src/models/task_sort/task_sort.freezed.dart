@@ -17,7 +17,9 @@ class _$TaskSortTearOff {
   const _$TaskSortTearOff();
 
 // ignore: unused_element
-  _TaskSort call({@required @JsonKey(name: 'key') String key, @required @JsonKey(name: 'title') String title}) {
+  _TaskSort call(
+      {@required @JsonKey(name: 'key') String key,
+      @required @JsonKey(name: 'title') String title}) {
     return _TaskSort(
       key: key,
       title: title,
@@ -51,8 +53,10 @@ mixin _$TaskSort {
 
 /// @nodoc
 abstract class $TaskSortCopyWith<$Res> {
-  factory $TaskSortCopyWith(TaskSort value, $Res Function(TaskSort) then) = _$TaskSortCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'key') String key, @JsonKey(name: 'title') String title});
+  factory $TaskSortCopyWith(TaskSort value, $Res Function(TaskSort) then) =
+      _$TaskSortCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'key') String key, @JsonKey(name: 'title') String title});
 }
 
 /// @nodoc
@@ -77,13 +81,16 @@ class _$TaskSortCopyWithImpl<$Res> implements $TaskSortCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$TaskSortCopyWith<$Res> implements $TaskSortCopyWith<$Res> {
-  factory _$TaskSortCopyWith(_TaskSort value, $Res Function(_TaskSort) then) = __$TaskSortCopyWithImpl<$Res>;
+  factory _$TaskSortCopyWith(_TaskSort value, $Res Function(_TaskSort) then) =
+      __$TaskSortCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'key') String key, @JsonKey(name: 'title') String title});
+  $Res call(
+      {@JsonKey(name: 'key') String key, @JsonKey(name: 'title') String title});
 }
 
 /// @nodoc
-class __$TaskSortCopyWithImpl<$Res> extends _$TaskSortCopyWithImpl<$Res> implements _$TaskSortCopyWith<$Res> {
+class __$TaskSortCopyWithImpl<$Res> extends _$TaskSortCopyWithImpl<$Res>
+    implements _$TaskSortCopyWith<$Res> {
   __$TaskSortCopyWithImpl(_TaskSort _value, $Res Function(_TaskSort) _then)
       : super(_value, (v) => _then(v as _TaskSort));
 
@@ -106,11 +113,14 @@ class __$TaskSortCopyWithImpl<$Res> extends _$TaskSortCopyWithImpl<$Res> impleme
 
 /// @nodoc
 class _$_TaskSort implements _TaskSort {
-  const _$_TaskSort({@required @JsonKey(name: 'key') this.key, @required @JsonKey(name: 'title') this.title})
+  const _$_TaskSort(
+      {@required @JsonKey(name: 'key') this.key,
+      @required @JsonKey(name: 'title') this.title})
       : assert(key != null),
         assert(title != null);
 
-  factory _$_TaskSort.fromJson(Map<String, dynamic> json) => _$_$_TaskSortFromJson(json);
+  factory _$_TaskSort.fromJson(Map<String, dynamic> json) =>
+      _$_$_TaskSortFromJson(json);
 
   @override
 
@@ -132,17 +142,22 @@ class _$_TaskSort implements _TaskSort {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _TaskSort &&
-            (identical(other.key, key) || const DeepCollectionEquality().equals(other.key, key)) &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)));
+            (identical(other.key, key) ||
+                const DeepCollectionEquality().equals(other.key, key)) &&
+            (identical(other.title, title) ||
+                const DeepCollectionEquality().equals(other.title, title)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(key) ^ const DeepCollectionEquality().hash(title);
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(key) ^
+      const DeepCollectionEquality().hash(title);
 
   @JsonKey(ignore: true)
   @override
-  _$TaskSortCopyWith<_TaskSort> get copyWith => __$TaskSortCopyWithImpl<_TaskSort>(this, _$identity);
+  _$TaskSortCopyWith<_TaskSort> get copyWith =>
+      __$TaskSortCopyWithImpl<_TaskSort>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -152,7 +167,8 @@ class _$_TaskSort implements _TaskSort {
 
 abstract class _TaskSort implements TaskSort {
   const factory _TaskSort(
-      {@required @JsonKey(name: 'key') String key, @required @JsonKey(name: 'title') String title}) = _$_TaskSort;
+      {@required @JsonKey(name: 'key') String key,
+      @required @JsonKey(name: 'title') String title}) = _$_TaskSort;
 
   factory _TaskSort.fromJson(Map<String, dynamic> json) = _$_TaskSort.fromJson;
 

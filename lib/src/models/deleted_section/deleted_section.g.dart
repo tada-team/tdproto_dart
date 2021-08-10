@@ -13,7 +13,8 @@ _$_DeletedSection _$_$_DeletedSectionFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_DeletedSectionToJson(_$_DeletedSection instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_DeletedSectionToJson(_$_DeletedSection instance) =>
+    <String, dynamic>{
       'uid': instance.uid,
       'gentime': instance.gentime,
     };

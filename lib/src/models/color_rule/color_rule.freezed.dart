@@ -119,7 +119,8 @@ mixin _$ColorRule {
 
 /// @nodoc
 abstract class $ColorRuleCopyWith<$Res> {
-  factory $ColorRuleCopyWith(ColorRule value, $Res Function(ColorRule) then) = _$ColorRuleCopyWithImpl<$Res>;
+  factory $ColorRuleCopyWith(ColorRule value, $Res Function(ColorRule) then) =
+      _$ColorRuleCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'priority') int priority,
@@ -163,25 +164,38 @@ class _$ColorRuleCopyWithImpl<$Res> implements $ColorRuleCopyWith<$Res> {
     return _then(_value.copyWith(
       uid: uid == freezed ? _value.uid : uid as String,
       priority: priority == freezed ? _value.priority : priority as int,
-      description: description == freezed ? _value.description : description as String,
+      description:
+          description == freezed ? _value.description : description as String,
       colorIndex: colorIndex == freezed ? _value.colorIndex : colorIndex as int,
-      projectEnabled: projectEnabled == freezed ? _value.projectEnabled : projectEnabled as bool,
+      projectEnabled: projectEnabled == freezed
+          ? _value.projectEnabled
+          : projectEnabled as bool,
       project: project == freezed ? _value.project : project as String,
-      tagsEnabled: tagsEnabled == freezed ? _value.tagsEnabled : tagsEnabled as bool,
+      tagsEnabled:
+          tagsEnabled == freezed ? _value.tagsEnabled : tagsEnabled as bool,
       tags: tags == freezed ? _value.tags : tags as List<String>,
-      taskStatus: taskStatus == freezed ? _value.taskStatus : taskStatus as String,
-      taskImportanceEnabled:
-          taskImportanceEnabled == freezed ? _value.taskImportanceEnabled : taskImportanceEnabled as bool,
-      taskImportance: taskImportance == freezed ? _value.taskImportance : taskImportance as int,
-      taskUrgencyEnabled: taskUrgencyEnabled == freezed ? _value.taskUrgencyEnabled : taskUrgencyEnabled as bool,
-      taskUrgency: taskUrgency == freezed ? _value.taskUrgency : taskUrgency as int,
+      taskStatus:
+          taskStatus == freezed ? _value.taskStatus : taskStatus as String,
+      taskImportanceEnabled: taskImportanceEnabled == freezed
+          ? _value.taskImportanceEnabled
+          : taskImportanceEnabled as bool,
+      taskImportance: taskImportance == freezed
+          ? _value.taskImportance
+          : taskImportance as int,
+      taskUrgencyEnabled: taskUrgencyEnabled == freezed
+          ? _value.taskUrgencyEnabled
+          : taskUrgencyEnabled as bool,
+      taskUrgency:
+          taskUrgency == freezed ? _value.taskUrgency : taskUrgency as int,
     ));
   }
 }
 
 /// @nodoc
 abstract class _$ColorRuleCopyWith<$Res> implements $ColorRuleCopyWith<$Res> {
-  factory _$ColorRuleCopyWith(_ColorRule value, $Res Function(_ColorRule) then) = __$ColorRuleCopyWithImpl<$Res>;
+  factory _$ColorRuleCopyWith(
+          _ColorRule value, $Res Function(_ColorRule) then) =
+      __$ColorRuleCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'uid') String uid,
@@ -200,7 +214,8 @@ abstract class _$ColorRuleCopyWith<$Res> implements $ColorRuleCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$ColorRuleCopyWithImpl<$Res> extends _$ColorRuleCopyWithImpl<$Res> implements _$ColorRuleCopyWith<$Res> {
+class __$ColorRuleCopyWithImpl<$Res> extends _$ColorRuleCopyWithImpl<$Res>
+    implements _$ColorRuleCopyWith<$Res> {
   __$ColorRuleCopyWithImpl(_ColorRule _value, $Res Function(_ColorRule) _then)
       : super(_value, (v) => _then(v as _ColorRule));
 
@@ -226,18 +241,29 @@ class __$ColorRuleCopyWithImpl<$Res> extends _$ColorRuleCopyWithImpl<$Res> imple
     return _then(_ColorRule(
       uid: uid == freezed ? _value.uid : uid as String,
       priority: priority == freezed ? _value.priority : priority as int,
-      description: description == freezed ? _value.description : description as String,
+      description:
+          description == freezed ? _value.description : description as String,
       colorIndex: colorIndex == freezed ? _value.colorIndex : colorIndex as int,
-      projectEnabled: projectEnabled == freezed ? _value.projectEnabled : projectEnabled as bool,
+      projectEnabled: projectEnabled == freezed
+          ? _value.projectEnabled
+          : projectEnabled as bool,
       project: project == freezed ? _value.project : project as String,
-      tagsEnabled: tagsEnabled == freezed ? _value.tagsEnabled : tagsEnabled as bool,
+      tagsEnabled:
+          tagsEnabled == freezed ? _value.tagsEnabled : tagsEnabled as bool,
       tags: tags == freezed ? _value.tags : tags as List<String>,
-      taskStatus: taskStatus == freezed ? _value.taskStatus : taskStatus as String,
-      taskImportanceEnabled:
-          taskImportanceEnabled == freezed ? _value.taskImportanceEnabled : taskImportanceEnabled as bool,
-      taskImportance: taskImportance == freezed ? _value.taskImportance : taskImportance as int,
-      taskUrgencyEnabled: taskUrgencyEnabled == freezed ? _value.taskUrgencyEnabled : taskUrgencyEnabled as bool,
-      taskUrgency: taskUrgency == freezed ? _value.taskUrgency : taskUrgency as int,
+      taskStatus:
+          taskStatus == freezed ? _value.taskStatus : taskStatus as String,
+      taskImportanceEnabled: taskImportanceEnabled == freezed
+          ? _value.taskImportanceEnabled
+          : taskImportanceEnabled as bool,
+      taskImportance: taskImportance == freezed
+          ? _value.taskImportance
+          : taskImportance as int,
+      taskUrgencyEnabled: taskUrgencyEnabled == freezed
+          ? _value.taskUrgencyEnabled
+          : taskUrgencyEnabled as bool,
+      taskUrgency:
+          taskUrgency == freezed ? _value.taskUrgency : taskUrgency as int,
     ));
   }
 }
@@ -264,7 +290,8 @@ class _$_ColorRule implements _ColorRule {
         assert(priority != null),
         assert(colorIndex != null);
 
-  factory _$_ColorRule.fromJson(Map<String, dynamic> json) => _$_$_ColorRuleFromJson(json);
+  factory _$_ColorRule.fromJson(Map<String, dynamic> json) =>
+      _$_$_ColorRuleFromJson(json);
 
   @override
 
@@ -341,28 +368,43 @@ class _$_ColorRule implements _ColorRule {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _ColorRule &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.priority, priority) || const DeepCollectionEquality().equals(other.priority, priority)) &&
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.priority, priority) ||
+                const DeepCollectionEquality()
+                    .equals(other.priority, priority)) &&
             (identical(other.description, description) ||
-                const DeepCollectionEquality().equals(other.description, description)) &&
+                const DeepCollectionEquality()
+                    .equals(other.description, description)) &&
             (identical(other.colorIndex, colorIndex) ||
-                const DeepCollectionEquality().equals(other.colorIndex, colorIndex)) &&
+                const DeepCollectionEquality()
+                    .equals(other.colorIndex, colorIndex)) &&
             (identical(other.projectEnabled, projectEnabled) ||
-                const DeepCollectionEquality().equals(other.projectEnabled, projectEnabled)) &&
-            (identical(other.project, project) || const DeepCollectionEquality().equals(other.project, project)) &&
+                const DeepCollectionEquality()
+                    .equals(other.projectEnabled, projectEnabled)) &&
+            (identical(other.project, project) ||
+                const DeepCollectionEquality()
+                    .equals(other.project, project)) &&
             (identical(other.tagsEnabled, tagsEnabled) ||
-                const DeepCollectionEquality().equals(other.tagsEnabled, tagsEnabled)) &&
-            (identical(other.tags, tags) || const DeepCollectionEquality().equals(other.tags, tags)) &&
+                const DeepCollectionEquality()
+                    .equals(other.tagsEnabled, tagsEnabled)) &&
+            (identical(other.tags, tags) ||
+                const DeepCollectionEquality().equals(other.tags, tags)) &&
             (identical(other.taskStatus, taskStatus) ||
-                const DeepCollectionEquality().equals(other.taskStatus, taskStatus)) &&
+                const DeepCollectionEquality()
+                    .equals(other.taskStatus, taskStatus)) &&
             (identical(other.taskImportanceEnabled, taskImportanceEnabled) ||
-                const DeepCollectionEquality().equals(other.taskImportanceEnabled, taskImportanceEnabled)) &&
+                const DeepCollectionEquality().equals(
+                    other.taskImportanceEnabled, taskImportanceEnabled)) &&
             (identical(other.taskImportance, taskImportance) ||
-                const DeepCollectionEquality().equals(other.taskImportance, taskImportance)) &&
+                const DeepCollectionEquality()
+                    .equals(other.taskImportance, taskImportance)) &&
             (identical(other.taskUrgencyEnabled, taskUrgencyEnabled) ||
-                const DeepCollectionEquality().equals(other.taskUrgencyEnabled, taskUrgencyEnabled)) &&
+                const DeepCollectionEquality()
+                    .equals(other.taskUrgencyEnabled, taskUrgencyEnabled)) &&
             (identical(other.taskUrgency, taskUrgency) ||
-                const DeepCollectionEquality().equals(other.taskUrgency, taskUrgency)));
+                const DeepCollectionEquality()
+                    .equals(other.taskUrgency, taskUrgency)));
   }
 
   @override
@@ -384,7 +426,8 @@ class _$_ColorRule implements _ColorRule {
 
   @JsonKey(ignore: true)
   @override
-  _$ColorRuleCopyWith<_ColorRule> get copyWith => __$ColorRuleCopyWithImpl<_ColorRule>(this, _$identity);
+  _$ColorRuleCopyWith<_ColorRule> get copyWith =>
+      __$ColorRuleCopyWithImpl<_ColorRule>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -408,7 +451,8 @@ abstract class _ColorRule implements ColorRule {
       @JsonKey(name: 'task_urgency_enabled') bool taskUrgencyEnabled,
       @JsonKey(name: 'task_urgency') int taskUrgency}) = _$_ColorRule;
 
-  factory _ColorRule.fromJson(Map<String, dynamic> json) = _$_ColorRule.fromJson;
+  factory _ColorRule.fromJson(Map<String, dynamic> json) =
+      _$_ColorRule.fromJson;
 
   @override
 

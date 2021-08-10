@@ -59,8 +59,12 @@ mixin _$Wallpaper {
 
 /// @nodoc
 abstract class $WallpaperCopyWith<$Res> {
-  factory $WallpaperCopyWith(Wallpaper value, $Res Function(Wallpaper) then) = _$WallpaperCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'key') String key, @JsonKey(name: 'name') String name, @JsonKey(name: 'url') String url});
+  factory $WallpaperCopyWith(Wallpaper value, $Res Function(Wallpaper) then) =
+      _$WallpaperCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'key') String key,
+      @JsonKey(name: 'name') String name,
+      @JsonKey(name: 'url') String url});
 }
 
 /// @nodoc
@@ -87,13 +91,19 @@ class _$WallpaperCopyWithImpl<$Res> implements $WallpaperCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$WallpaperCopyWith<$Res> implements $WallpaperCopyWith<$Res> {
-  factory _$WallpaperCopyWith(_Wallpaper value, $Res Function(_Wallpaper) then) = __$WallpaperCopyWithImpl<$Res>;
+  factory _$WallpaperCopyWith(
+          _Wallpaper value, $Res Function(_Wallpaper) then) =
+      __$WallpaperCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'key') String key, @JsonKey(name: 'name') String name, @JsonKey(name: 'url') String url});
+  $Res call(
+      {@JsonKey(name: 'key') String key,
+      @JsonKey(name: 'name') String name,
+      @JsonKey(name: 'url') String url});
 }
 
 /// @nodoc
-class __$WallpaperCopyWithImpl<$Res> extends _$WallpaperCopyWithImpl<$Res> implements _$WallpaperCopyWith<$Res> {
+class __$WallpaperCopyWithImpl<$Res> extends _$WallpaperCopyWithImpl<$Res>
+    implements _$WallpaperCopyWith<$Res> {
   __$WallpaperCopyWithImpl(_Wallpaper _value, $Res Function(_Wallpaper) _then)
       : super(_value, (v) => _then(v as _Wallpaper));
 
@@ -126,7 +136,8 @@ class _$_Wallpaper implements _Wallpaper {
         assert(name != null),
         assert(url != null);
 
-  factory _$_Wallpaper.fromJson(Map<String, dynamic> json) => _$_$_WallpaperFromJson(json);
+  factory _$_Wallpaper.fromJson(Map<String, dynamic> json) =>
+      _$_$_WallpaperFromJson(json);
 
   @override
 
@@ -153,9 +164,12 @@ class _$_Wallpaper implements _Wallpaper {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Wallpaper &&
-            (identical(other.key, key) || const DeepCollectionEquality().equals(other.key, key)) &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.url, url) || const DeepCollectionEquality().equals(other.url, url)));
+            (identical(other.key, key) ||
+                const DeepCollectionEquality().equals(other.key, key)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
+            (identical(other.url, url) ||
+                const DeepCollectionEquality().equals(other.url, url)));
   }
 
   @override
@@ -167,7 +181,8 @@ class _$_Wallpaper implements _Wallpaper {
 
   @JsonKey(ignore: true)
   @override
-  _$WallpaperCopyWith<_Wallpaper> get copyWith => __$WallpaperCopyWithImpl<_Wallpaper>(this, _$identity);
+  _$WallpaperCopyWith<_Wallpaper> get copyWith =>
+      __$WallpaperCopyWithImpl<_Wallpaper>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -181,7 +196,8 @@ abstract class _Wallpaper implements Wallpaper {
       @required @JsonKey(name: 'name') String name,
       @required @JsonKey(name: 'url') String url}) = _$_Wallpaper;
 
-  factory _Wallpaper.fromJson(Map<String, dynamic> json) = _$_Wallpaper.fromJson;
+  factory _Wallpaper.fromJson(Map<String, dynamic> json) =
+      _$_Wallpaper.fromJson;
 
   @override
 

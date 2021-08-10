@@ -9,9 +9,13 @@ part of 'user_with_me.dart';
 _$_UserWithMe _$_$_UserWithMeFromJson(Map<String, dynamic> json) {
   return _$_UserWithMe(
     inviter: json['inviter'] as String,
-    teams: (json['teams'] as List)?.map((e) => e == null ? null : Team.fromJson(e as Map<String, dynamic>))?.toList(),
+    teams: (json['teams'] as List)
+        ?.map(
+            (e) => e == null ? null : Team.fromJson(e as Map<String, dynamic>))
+        ?.toList(),
     devices: (json['devices'] as List)
-        ?.map((e) => e == null ? null : PushDevice.fromJson(e as Map<String, dynamic>))
+        ?.map((e) =>
+            e == null ? null : PushDevice.fromJson(e as Map<String, dynamic>))
         ?.toList(),
     phone: json['phone'] as String,
     email: json['email'] as String,
@@ -28,11 +32,14 @@ _$_UserWithMe _$_$_UserWithMeFromJson(Map<String, dynamic> json) {
     timezone: json['timezone'] as String,
     quietTimeStart: json['quiet_time_start'] as String,
     quietTimeFinish: json['quiet_time_finish'] as String,
-    icons: json['icons'] == null ? null : IconData.fromJson(json['icons'] as Map<String, dynamic>),
+    icons: json['icons'] == null
+        ? null
+        : IconData.fromJson(json['icons'] as Map<String, dynamic>),
   );
 }
 
-Map<String, dynamic> _$_$_UserWithMeToJson(_$_UserWithMe instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_UserWithMeToJson(_$_UserWithMe instance) =>
+    <String, dynamic>{
       'inviter': instance.inviter,
       'teams': instance.teams?.map((e) => e?.toJson())?.toList(),
       'devices': instance.devices?.map((e) => e?.toJson())?.toList(),

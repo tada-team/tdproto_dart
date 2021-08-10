@@ -6,7 +6,8 @@ part of 'contact_custom_fields.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ContactCustomFields _$_$_ContactCustomFieldsFromJson(Map<String, dynamic> json) {
+_$_ContactCustomFields _$_$_ContactCustomFieldsFromJson(
+    Map<String, dynamic> json) {
   return _$_ContactCustomFields(
     company: json['company'] as String,
     department: json['department'] as String,
@@ -16,7 +17,9 @@ _$_ContactCustomFields _$_$_ContactCustomFieldsFromJson(Map<String, dynamic> jso
   );
 }
 
-Map<String, dynamic> _$_$_ContactCustomFieldsToJson(_$_ContactCustomFields instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_ContactCustomFieldsToJson(
+        _$_ContactCustomFields instance) =>
+    <String, dynamic>{
       'company': instance.company,
       'department': instance.department,
       'title': instance.title,

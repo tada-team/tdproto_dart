@@ -71,7 +71,9 @@ mixin _$TaskStatus {
 
 /// @nodoc
 abstract class $TaskStatusCopyWith<$Res> {
-  factory $TaskStatusCopyWith(TaskStatus value, $Res Function(TaskStatus) then) = _$TaskStatusCopyWithImpl<$Res>;
+  factory $TaskStatusCopyWith(
+          TaskStatus value, $Res Function(TaskStatus) then) =
+      _$TaskStatusCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'sort_ordering') int sortOrdering,
@@ -98,7 +100,8 @@ class _$TaskStatusCopyWithImpl<$Res> implements $TaskStatusCopyWith<$Res> {
   }) {
     return _then(_value.copyWith(
       uid: uid == freezed ? _value.uid : uid as String,
-      sortOrdering: sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
+      sortOrdering:
+          sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
       name: name == freezed ? _value.name : name as String,
       title: title == freezed ? _value.title : title as String,
       isArchive: isArchive == freezed ? _value.isArchive : isArchive as bool,
@@ -108,7 +111,9 @@ class _$TaskStatusCopyWithImpl<$Res> implements $TaskStatusCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$TaskStatusCopyWith<$Res> implements $TaskStatusCopyWith<$Res> {
-  factory _$TaskStatusCopyWith(_TaskStatus value, $Res Function(_TaskStatus) then) = __$TaskStatusCopyWithImpl<$Res>;
+  factory _$TaskStatusCopyWith(
+          _TaskStatus value, $Res Function(_TaskStatus) then) =
+      __$TaskStatusCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'uid') String uid,
@@ -119,8 +124,10 @@ abstract class _$TaskStatusCopyWith<$Res> implements $TaskStatusCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$TaskStatusCopyWithImpl<$Res> extends _$TaskStatusCopyWithImpl<$Res> implements _$TaskStatusCopyWith<$Res> {
-  __$TaskStatusCopyWithImpl(_TaskStatus _value, $Res Function(_TaskStatus) _then)
+class __$TaskStatusCopyWithImpl<$Res> extends _$TaskStatusCopyWithImpl<$Res>
+    implements _$TaskStatusCopyWith<$Res> {
+  __$TaskStatusCopyWithImpl(
+      _TaskStatus _value, $Res Function(_TaskStatus) _then)
       : super(_value, (v) => _then(v as _TaskStatus));
 
   @override
@@ -136,7 +143,8 @@ class __$TaskStatusCopyWithImpl<$Res> extends _$TaskStatusCopyWithImpl<$Res> imp
   }) {
     return _then(_TaskStatus(
       uid: uid == freezed ? _value.uid : uid as String,
-      sortOrdering: sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
+      sortOrdering:
+          sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
       name: name == freezed ? _value.name : name as String,
       title: title == freezed ? _value.title : title as String,
       isArchive: isArchive == freezed ? _value.isArchive : isArchive as bool,
@@ -158,7 +166,8 @@ class _$_TaskStatus implements _TaskStatus {
         assert(name != null),
         assert(title != null);
 
-  factory _$_TaskStatus.fromJson(Map<String, dynamic> json) => _$_$_TaskStatusFromJson(json);
+  factory _$_TaskStatus.fromJson(Map<String, dynamic> json) =>
+      _$_$_TaskStatusFromJson(json);
 
   @override
 
@@ -195,13 +204,18 @@ class _$_TaskStatus implements _TaskStatus {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _TaskStatus &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
             (identical(other.sortOrdering, sortOrdering) ||
-                const DeepCollectionEquality().equals(other.sortOrdering, sortOrdering)) &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
+                const DeepCollectionEquality()
+                    .equals(other.sortOrdering, sortOrdering)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
+            (identical(other.title, title) ||
+                const DeepCollectionEquality().equals(other.title, title)) &&
             (identical(other.isArchive, isArchive) ||
-                const DeepCollectionEquality().equals(other.isArchive, isArchive)));
+                const DeepCollectionEquality()
+                    .equals(other.isArchive, isArchive)));
   }
 
   @override
@@ -215,7 +229,8 @@ class _$_TaskStatus implements _TaskStatus {
 
   @JsonKey(ignore: true)
   @override
-  _$TaskStatusCopyWith<_TaskStatus> get copyWith => __$TaskStatusCopyWithImpl<_TaskStatus>(this, _$identity);
+  _$TaskStatusCopyWith<_TaskStatus> get copyWith =>
+      __$TaskStatusCopyWithImpl<_TaskStatus>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -231,7 +246,8 @@ abstract class _TaskStatus implements TaskStatus {
       @required @JsonKey(name: 'title') String title,
       @JsonKey(name: 'is_archive') bool isArchive}) = _$_TaskStatus;
 
-  factory _TaskStatus.fromJson(Map<String, dynamic> json) = _$_TaskStatus.fromJson;
+  factory _TaskStatus.fromJson(Map<String, dynamic> json) =
+      _$_TaskStatus.fromJson;
 
   @override
 

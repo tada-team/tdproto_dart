@@ -13,7 +13,8 @@ _$_PdfVersion _$_$_PdfVersionFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_PdfVersionToJson(_$_PdfVersion instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_PdfVersionToJson(_$_PdfVersion instance) =>
+    <String, dynamic>{
       'url': instance.url,
       'text_preview': instance.textPreview,
     };

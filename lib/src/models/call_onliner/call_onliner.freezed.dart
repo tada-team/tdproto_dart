@@ -77,7 +77,9 @@ mixin _$CallOnliner {
 
 /// @nodoc
 abstract class $CallOnlinerCopyWith<$Res> {
-  factory $CallOnlinerCopyWith(CallOnliner value, $Res Function(CallOnliner) then) = _$CallOnlinerCopyWithImpl<$Res>;
+  factory $CallOnlinerCopyWith(
+          CallOnliner value, $Res Function(CallOnliner) then) =
+      _$CallOnlinerCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'display_name') String displayName,
@@ -106,18 +108,22 @@ class _$CallOnlinerCopyWithImpl<$Res> implements $CallOnlinerCopyWith<$Res> {
   }) {
     return _then(_value.copyWith(
       jid: jid == freezed ? _value.jid : jid as String,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
+      displayName:
+          displayName == freezed ? _value.displayName : displayName as String,
       role: role == freezed ? _value.role : role as String,
       icon: icon == freezed ? _value.icon : icon as String,
       muted: muted == freezed ? _value.muted : muted as bool,
-      devices: devices == freezed ? _value.devices : devices as List<CallDevice>,
+      devices:
+          devices == freezed ? _value.devices : devices as List<CallDevice>,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$CallOnlinerCopyWith<$Res> implements $CallOnlinerCopyWith<$Res> {
-  factory _$CallOnlinerCopyWith(_CallOnliner value, $Res Function(_CallOnliner) then) =
+abstract class _$CallOnlinerCopyWith<$Res>
+    implements $CallOnlinerCopyWith<$Res> {
+  factory _$CallOnlinerCopyWith(
+          _CallOnliner value, $Res Function(_CallOnliner) then) =
       __$CallOnlinerCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -130,8 +136,10 @@ abstract class _$CallOnlinerCopyWith<$Res> implements $CallOnlinerCopyWith<$Res>
 }
 
 /// @nodoc
-class __$CallOnlinerCopyWithImpl<$Res> extends _$CallOnlinerCopyWithImpl<$Res> implements _$CallOnlinerCopyWith<$Res> {
-  __$CallOnlinerCopyWithImpl(_CallOnliner _value, $Res Function(_CallOnliner) _then)
+class __$CallOnlinerCopyWithImpl<$Res> extends _$CallOnlinerCopyWithImpl<$Res>
+    implements _$CallOnlinerCopyWith<$Res> {
+  __$CallOnlinerCopyWithImpl(
+      _CallOnliner _value, $Res Function(_CallOnliner) _then)
       : super(_value, (v) => _then(v as _CallOnliner));
 
   @override
@@ -148,11 +156,13 @@ class __$CallOnlinerCopyWithImpl<$Res> extends _$CallOnlinerCopyWithImpl<$Res> i
   }) {
     return _then(_CallOnliner(
       jid: jid == freezed ? _value.jid : jid as String,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
+      displayName:
+          displayName == freezed ? _value.displayName : displayName as String,
       role: role == freezed ? _value.role : role as String,
       icon: icon == freezed ? _value.icon : icon as String,
       muted: muted == freezed ? _value.muted : muted as bool,
-      devices: devices == freezed ? _value.devices : devices as List<CallDevice>,
+      devices:
+          devices == freezed ? _value.devices : devices as List<CallDevice>,
     ));
   }
 }
@@ -175,7 +185,8 @@ class _$_CallOnliner implements _CallOnliner {
         assert(muted != null),
         assert(devices != null);
 
-  factory _$_CallOnliner.fromJson(Map<String, dynamic> json) => _$_$_CallOnlinerFromJson(json);
+  factory _$_CallOnliner.fromJson(Map<String, dynamic> json) =>
+      _$_$_CallOnlinerFromJson(json);
 
   @override
 
@@ -217,13 +228,19 @@ class _$_CallOnliner implements _CallOnliner {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _CallOnliner &&
-            (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
+            (identical(other.jid, jid) ||
+                const DeepCollectionEquality().equals(other.jid, jid)) &&
             (identical(other.displayName, displayName) ||
-                const DeepCollectionEquality().equals(other.displayName, displayName)) &&
-            (identical(other.role, role) || const DeepCollectionEquality().equals(other.role, role)) &&
-            (identical(other.icon, icon) || const DeepCollectionEquality().equals(other.icon, icon)) &&
-            (identical(other.muted, muted) || const DeepCollectionEquality().equals(other.muted, muted)) &&
-            (identical(other.devices, devices) || const DeepCollectionEquality().equals(other.devices, devices)));
+                const DeepCollectionEquality()
+                    .equals(other.displayName, displayName)) &&
+            (identical(other.role, role) ||
+                const DeepCollectionEquality().equals(other.role, role)) &&
+            (identical(other.icon, icon) ||
+                const DeepCollectionEquality().equals(other.icon, icon)) &&
+            (identical(other.muted, muted) ||
+                const DeepCollectionEquality().equals(other.muted, muted)) &&
+            (identical(other.devices, devices) ||
+                const DeepCollectionEquality().equals(other.devices, devices)));
   }
 
   @override
@@ -238,7 +255,8 @@ class _$_CallOnliner implements _CallOnliner {
 
   @JsonKey(ignore: true)
   @override
-  _$CallOnlinerCopyWith<_CallOnliner> get copyWith => __$CallOnlinerCopyWithImpl<_CallOnliner>(this, _$identity);
+  _$CallOnlinerCopyWith<_CallOnliner> get copyWith =>
+      __$CallOnlinerCopyWithImpl<_CallOnliner>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -248,14 +266,16 @@ class _$_CallOnliner implements _CallOnliner {
 
 abstract class _CallOnliner implements CallOnliner {
   const factory _CallOnliner(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'display_name') String displayName,
-      @required @JsonKey(name: 'role') String role,
-      @required @JsonKey(name: 'icon') String icon,
-      @required @JsonKey(name: 'muted') bool muted,
-      @required @JsonKey(name: 'devices') List<CallDevice> devices}) = _$_CallOnliner;
+          {@required @JsonKey(name: 'jid') String jid,
+          @required @JsonKey(name: 'display_name') String displayName,
+          @required @JsonKey(name: 'role') String role,
+          @required @JsonKey(name: 'icon') String icon,
+          @required @JsonKey(name: 'muted') bool muted,
+          @required @JsonKey(name: 'devices') List<CallDevice> devices}) =
+      _$_CallOnliner;
 
-  factory _CallOnliner.fromJson(Map<String, dynamic> json) = _$_CallOnliner.fromJson;
+  factory _CallOnliner.fromJson(Map<String, dynamic> json) =
+      _$_CallOnliner.fromJson;
 
   @override
 

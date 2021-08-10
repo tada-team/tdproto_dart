@@ -71,7 +71,8 @@ mixin _$InvitableUser {
 
 /// @nodoc
 abstract class $InvitableUserCopyWith<$Res> {
-  factory $InvitableUserCopyWith(InvitableUser value, $Res Function(InvitableUser) then) =
+  factory $InvitableUserCopyWith(
+          InvitableUser value, $Res Function(InvitableUser) then) =
       _$InvitableUserCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
@@ -84,7 +85,8 @@ abstract class $InvitableUserCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$InvitableUserCopyWithImpl<$Res> implements $InvitableUserCopyWith<$Res> {
+class _$InvitableUserCopyWithImpl<$Res>
+    implements $InvitableUserCopyWith<$Res> {
   _$InvitableUserCopyWithImpl(this._value, this._then);
 
   final InvitableUser _value;
@@ -102,7 +104,8 @@ class _$InvitableUserCopyWithImpl<$Res> implements $InvitableUserCopyWith<$Res> 
     return _then(_value.copyWith(
       uid: uid == freezed ? _value.uid : uid as String,
       node: node == freezed ? _value.node : node as String,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
+      displayName:
+          displayName == freezed ? _value.displayName : displayName as String,
       icons: icons == freezed ? _value.icons : icons as IconData,
       teams: teams == freezed ? _value.teams : teams as List<String>,
     ));
@@ -120,8 +123,10 @@ class _$InvitableUserCopyWithImpl<$Res> implements $InvitableUserCopyWith<$Res> 
 }
 
 /// @nodoc
-abstract class _$InvitableUserCopyWith<$Res> implements $InvitableUserCopyWith<$Res> {
-  factory _$InvitableUserCopyWith(_InvitableUser value, $Res Function(_InvitableUser) then) =
+abstract class _$InvitableUserCopyWith<$Res>
+    implements $InvitableUserCopyWith<$Res> {
+  factory _$InvitableUserCopyWith(
+          _InvitableUser value, $Res Function(_InvitableUser) then) =
       __$InvitableUserCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -136,9 +141,11 @@ abstract class _$InvitableUserCopyWith<$Res> implements $InvitableUserCopyWith<$
 }
 
 /// @nodoc
-class __$InvitableUserCopyWithImpl<$Res> extends _$InvitableUserCopyWithImpl<$Res>
+class __$InvitableUserCopyWithImpl<$Res>
+    extends _$InvitableUserCopyWithImpl<$Res>
     implements _$InvitableUserCopyWith<$Res> {
-  __$InvitableUserCopyWithImpl(_InvitableUser _value, $Res Function(_InvitableUser) _then)
+  __$InvitableUserCopyWithImpl(
+      _InvitableUser _value, $Res Function(_InvitableUser) _then)
       : super(_value, (v) => _then(v as _InvitableUser));
 
   @override
@@ -155,7 +162,8 @@ class __$InvitableUserCopyWithImpl<$Res> extends _$InvitableUserCopyWithImpl<$Re
     return _then(_InvitableUser(
       uid: uid == freezed ? _value.uid : uid as String,
       node: node == freezed ? _value.node : node as String,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
+      displayName:
+          displayName == freezed ? _value.displayName : displayName as String,
       icons: icons == freezed ? _value.icons : icons as IconData,
       teams: teams == freezed ? _value.teams : teams as List<String>,
     ));
@@ -176,7 +184,8 @@ class _$_InvitableUser implements _InvitableUser {
         assert(displayName != null),
         assert(icons != null);
 
-  factory _$_InvitableUser.fromJson(Map<String, dynamic> json) => _$_$_InvitableUserFromJson(json);
+  factory _$_InvitableUser.fromJson(Map<String, dynamic> json) =>
+      _$_$_InvitableUserFromJson(json);
 
   @override
 
@@ -213,12 +222,17 @@ class _$_InvitableUser implements _InvitableUser {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _InvitableUser &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.node, node) || const DeepCollectionEquality().equals(other.node, node)) &&
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.node, node) ||
+                const DeepCollectionEquality().equals(other.node, node)) &&
             (identical(other.displayName, displayName) ||
-                const DeepCollectionEquality().equals(other.displayName, displayName)) &&
-            (identical(other.icons, icons) || const DeepCollectionEquality().equals(other.icons, icons)) &&
-            (identical(other.teams, teams) || const DeepCollectionEquality().equals(other.teams, teams)));
+                const DeepCollectionEquality()
+                    .equals(other.displayName, displayName)) &&
+            (identical(other.icons, icons) ||
+                const DeepCollectionEquality().equals(other.icons, icons)) &&
+            (identical(other.teams, teams) ||
+                const DeepCollectionEquality().equals(other.teams, teams)));
   }
 
   @override
@@ -249,7 +263,8 @@ abstract class _InvitableUser implements InvitableUser {
       @required @JsonKey(name: 'icons') IconData icons,
       @JsonKey(name: 'teams') List<String> teams}) = _$_InvitableUser;
 
-  factory _InvitableUser.fromJson(Map<String, dynamic> json) = _$_InvitableUser.fromJson;
+  factory _InvitableUser.fromJson(Map<String, dynamic> json) =
+      _$_InvitableUser.fromJson;
 
   @override
 

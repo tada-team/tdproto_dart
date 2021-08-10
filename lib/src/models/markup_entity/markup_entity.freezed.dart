@@ -95,7 +95,8 @@ mixin _$MarkupEntity {
 
 /// @nodoc
 abstract class $MarkupEntityCopyWith<$Res> {
-  factory $MarkupEntityCopyWith(MarkupEntity value, $Res Function(MarkupEntity) then) =
+  factory $MarkupEntityCopyWith(
+          MarkupEntity value, $Res Function(MarkupEntity) then) =
       _$MarkupEntityCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'op') int open,
@@ -133,7 +134,8 @@ class _$MarkupEntityCopyWithImpl<$Res> implements $MarkupEntityCopyWith<$Res> {
       open: open == freezed ? _value.open : open as int,
       openLength: openLength == freezed ? _value.openLength : openLength as int,
       close: close == freezed ? _value.close : close as int,
-      closeLength: closeLength == freezed ? _value.closeLength : closeLength as int,
+      closeLength:
+          closeLength == freezed ? _value.closeLength : closeLength as int,
       type: type == freezed ? _value.type : type as String,
       url: url == freezed ? _value.url : url as String,
       repl: repl == freezed ? _value.repl : repl as String,
@@ -144,8 +146,10 @@ class _$MarkupEntityCopyWithImpl<$Res> implements $MarkupEntityCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$MarkupEntityCopyWith<$Res> implements $MarkupEntityCopyWith<$Res> {
-  factory _$MarkupEntityCopyWith(_MarkupEntity value, $Res Function(_MarkupEntity) then) =
+abstract class _$MarkupEntityCopyWith<$Res>
+    implements $MarkupEntityCopyWith<$Res> {
+  factory _$MarkupEntityCopyWith(
+          _MarkupEntity value, $Res Function(_MarkupEntity) then) =
       __$MarkupEntityCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -163,7 +167,8 @@ abstract class _$MarkupEntityCopyWith<$Res> implements $MarkupEntityCopyWith<$Re
 /// @nodoc
 class __$MarkupEntityCopyWithImpl<$Res> extends _$MarkupEntityCopyWithImpl<$Res>
     implements _$MarkupEntityCopyWith<$Res> {
-  __$MarkupEntityCopyWithImpl(_MarkupEntity _value, $Res Function(_MarkupEntity) _then)
+  __$MarkupEntityCopyWithImpl(
+      _MarkupEntity _value, $Res Function(_MarkupEntity) _then)
       : super(_value, (v) => _then(v as _MarkupEntity));
 
   @override
@@ -185,7 +190,8 @@ class __$MarkupEntityCopyWithImpl<$Res> extends _$MarkupEntityCopyWithImpl<$Res>
       open: open == freezed ? _value.open : open as int,
       openLength: openLength == freezed ? _value.openLength : openLength as int,
       close: close == freezed ? _value.close : close as int,
-      closeLength: closeLength == freezed ? _value.closeLength : closeLength as int,
+      closeLength:
+          closeLength == freezed ? _value.closeLength : closeLength as int,
       type: type == freezed ? _value.type : type as String,
       url: url == freezed ? _value.url : url as String,
       repl: repl == freezed ? _value.repl : repl as String,
@@ -213,7 +219,8 @@ class _$_MarkupEntity implements _MarkupEntity {
         assert(close != null),
         assert(type != null);
 
-  factory _$_MarkupEntity.fromJson(Map<String, dynamic> json) => _$_$_MarkupEntityFromJson(json);
+  factory _$_MarkupEntity.fromJson(Map<String, dynamic> json) =>
+      _$_$_MarkupEntityFromJson(json);
 
   @override
 
@@ -270,17 +277,26 @@ class _$_MarkupEntity implements _MarkupEntity {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _MarkupEntity &&
-            (identical(other.open, open) || const DeepCollectionEquality().equals(other.open, open)) &&
+            (identical(other.open, open) ||
+                const DeepCollectionEquality().equals(other.open, open)) &&
             (identical(other.openLength, openLength) ||
-                const DeepCollectionEquality().equals(other.openLength, openLength)) &&
-            (identical(other.close, close) || const DeepCollectionEquality().equals(other.close, close)) &&
+                const DeepCollectionEquality()
+                    .equals(other.openLength, openLength)) &&
+            (identical(other.close, close) ||
+                const DeepCollectionEquality().equals(other.close, close)) &&
             (identical(other.closeLength, closeLength) ||
-                const DeepCollectionEquality().equals(other.closeLength, closeLength)) &&
-            (identical(other.type, type) || const DeepCollectionEquality().equals(other.type, type)) &&
-            (identical(other.url, url) || const DeepCollectionEquality().equals(other.url, url)) &&
-            (identical(other.repl, repl) || const DeepCollectionEquality().equals(other.repl, repl)) &&
-            (identical(other.time, time) || const DeepCollectionEquality().equals(other.time, time)) &&
-            (identical(other.childs, childs) || const DeepCollectionEquality().equals(other.childs, childs)));
+                const DeepCollectionEquality()
+                    .equals(other.closeLength, closeLength)) &&
+            (identical(other.type, type) ||
+                const DeepCollectionEquality().equals(other.type, type)) &&
+            (identical(other.url, url) ||
+                const DeepCollectionEquality().equals(other.url, url)) &&
+            (identical(other.repl, repl) ||
+                const DeepCollectionEquality().equals(other.repl, repl)) &&
+            (identical(other.time, time) ||
+                const DeepCollectionEquality().equals(other.time, time)) &&
+            (identical(other.childs, childs) ||
+                const DeepCollectionEquality().equals(other.childs, childs)));
   }
 
   @override
@@ -298,7 +314,8 @@ class _$_MarkupEntity implements _MarkupEntity {
 
   @JsonKey(ignore: true)
   @override
-  _$MarkupEntityCopyWith<_MarkupEntity> get copyWith => __$MarkupEntityCopyWithImpl<_MarkupEntity>(this, _$identity);
+  _$MarkupEntityCopyWith<_MarkupEntity> get copyWith =>
+      __$MarkupEntityCopyWithImpl<_MarkupEntity>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -318,7 +335,8 @@ abstract class _MarkupEntity implements MarkupEntity {
       @JsonKey(name: 'time') String time,
       @JsonKey(name: 'childs') List<MarkupEntity> childs}) = _$_MarkupEntity;
 
-  factory _MarkupEntity.fromJson(Map<String, dynamic> json) = _$_MarkupEntity.fromJson;
+  factory _MarkupEntity.fromJson(Map<String, dynamic> json) =
+      _$_MarkupEntity.fromJson;
 
   @override
 

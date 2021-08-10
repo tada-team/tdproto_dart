@@ -96,7 +96,9 @@ mixin _$Integration {
 
 /// @nodoc
 abstract class $IntegrationCopyWith<$Res> {
-  factory $IntegrationCopyWith(Integration value, $Res Function(Integration) then) = _$IntegrationCopyWithImpl<$Res>;
+  factory $IntegrationCopyWith(
+          Integration value, $Res Function(Integration) then) =
+      _$IntegrationCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'comment') String comment,
@@ -156,8 +158,10 @@ class _$IntegrationCopyWithImpl<$Res> implements $IntegrationCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$IntegrationCopyWith<$Res> implements $IntegrationCopyWith<$Res> {
-  factory _$IntegrationCopyWith(_Integration value, $Res Function(_Integration) then) =
+abstract class _$IntegrationCopyWith<$Res>
+    implements $IntegrationCopyWith<$Res> {
+  factory _$IntegrationCopyWith(
+          _Integration value, $Res Function(_Integration) then) =
       __$IntegrationCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -176,8 +180,10 @@ abstract class _$IntegrationCopyWith<$Res> implements $IntegrationCopyWith<$Res>
 }
 
 /// @nodoc
-class __$IntegrationCopyWithImpl<$Res> extends _$IntegrationCopyWithImpl<$Res> implements _$IntegrationCopyWith<$Res> {
-  __$IntegrationCopyWithImpl(_Integration _value, $Res Function(_Integration) _then)
+class __$IntegrationCopyWithImpl<$Res> extends _$IntegrationCopyWithImpl<$Res>
+    implements _$IntegrationCopyWith<$Res> {
+  __$IntegrationCopyWithImpl(
+      _Integration _value, $Res Function(_Integration) _then)
       : super(_value, (v) => _then(v as _Integration));
 
   @override
@@ -230,7 +236,8 @@ class _$_Integration implements _Integration {
         assert(kind != null),
         assert(title != null);
 
-  factory _$_Integration.fromJson(Map<String, dynamic> json) => _$_$_IntegrationFromJson(json);
+  factory _$_Integration.fromJson(Map<String, dynamic> json) =>
+      _$_$_IntegrationFromJson(json);
 
   @override
 
@@ -288,15 +295,27 @@ class _$_Integration implements _Integration {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Integration &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.comment, comment) || const DeepCollectionEquality().equals(other.comment, comment)) &&
-            (identical(other.created, created) || const DeepCollectionEquality().equals(other.created, created)) &&
-            (identical(other.enabled, enabled) || const DeepCollectionEquality().equals(other.enabled, enabled)) &&
-            (identical(other.form, form) || const DeepCollectionEquality().equals(other.form, form)) &&
-            (identical(other.group, group) || const DeepCollectionEquality().equals(other.group, group)) &&
-            (identical(other.help, help) || const DeepCollectionEquality().equals(other.help, help)) &&
-            (identical(other.kind, kind) || const DeepCollectionEquality().equals(other.kind, kind)) &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)));
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.comment, comment) ||
+                const DeepCollectionEquality()
+                    .equals(other.comment, comment)) &&
+            (identical(other.created, created) ||
+                const DeepCollectionEquality()
+                    .equals(other.created, created)) &&
+            (identical(other.enabled, enabled) ||
+                const DeepCollectionEquality()
+                    .equals(other.enabled, enabled)) &&
+            (identical(other.form, form) ||
+                const DeepCollectionEquality().equals(other.form, form)) &&
+            (identical(other.group, group) ||
+                const DeepCollectionEquality().equals(other.group, group)) &&
+            (identical(other.help, help) ||
+                const DeepCollectionEquality().equals(other.help, help)) &&
+            (identical(other.kind, kind) ||
+                const DeepCollectionEquality().equals(other.kind, kind)) &&
+            (identical(other.title, title) ||
+                const DeepCollectionEquality().equals(other.title, title)));
   }
 
   @override
@@ -314,7 +333,8 @@ class _$_Integration implements _Integration {
 
   @JsonKey(ignore: true)
   @override
-  _$IntegrationCopyWith<_Integration> get copyWith => __$IntegrationCopyWithImpl<_Integration>(this, _$identity);
+  _$IntegrationCopyWith<_Integration> get copyWith =>
+      __$IntegrationCopyWithImpl<_Integration>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -334,7 +354,8 @@ abstract class _Integration implements Integration {
       @required @JsonKey(name: 'kind') String kind,
       @required @JsonKey(name: '-') String title}) = _$_Integration;
 
-  factory _Integration.fromJson(Map<String, dynamic> json) = _$_Integration.fromJson;
+  factory _Integration.fromJson(Map<String, dynamic> json) =
+      _$_Integration.fromJson;
 
   @override
 

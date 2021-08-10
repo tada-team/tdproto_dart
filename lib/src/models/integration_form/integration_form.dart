@@ -10,12 +10,14 @@ abstract class IntegrationForm with _$IntegrationForm {
   const factory IntegrationForm({
     /// Api key field, if any.
     @JsonKey(name: 'api_key') IntegrationField apiKey,
-
+    
     /// Webhook url, if any.
     @JsonKey(name: 'webhook_url') IntegrationField webhookUrl,
-
+    
     /// Url, if any.
     @JsonKey(name: 'url') IntegrationField url,
+    
+    
   }) = _IntegrationForm;
 
   factory IntegrationForm.fromJson(Map<String, dynamic> json) => _$IntegrationFormFromJson(json);

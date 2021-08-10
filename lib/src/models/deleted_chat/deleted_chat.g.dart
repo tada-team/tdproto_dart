@@ -15,7 +15,8 @@ _$_DeletedChat _$_$_DeletedChatFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_DeletedChatToJson(_$_DeletedChat instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_DeletedChatToJson(_$_DeletedChat instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'chat_type': instance.chatType,
       'gentime': instance.gentime,

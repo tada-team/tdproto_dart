@@ -18,7 +18,8 @@ _$_Subtask _$_$_SubtaskFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_SubtaskToJson(_$_Subtask instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_SubtaskToJson(_$_Subtask instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'assignee': instance.assignee,
       'title': instance.title,

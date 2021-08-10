@@ -17,7 +17,9 @@ class _$EmojiTearOff {
   const _$EmojiTearOff();
 
 // ignore: unused_element
-  _Emoji call({@required @JsonKey(name: 'char') String char, @required @JsonKey(name: 'key') String key}) {
+  _Emoji call(
+      {@required @JsonKey(name: 'char') String char,
+      @required @JsonKey(name: 'key') String key}) {
     return _Emoji(
       char: char,
       key: key,
@@ -51,8 +53,10 @@ mixin _$Emoji {
 
 /// @nodoc
 abstract class $EmojiCopyWith<$Res> {
-  factory $EmojiCopyWith(Emoji value, $Res Function(Emoji) then) = _$EmojiCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'char') String char, @JsonKey(name: 'key') String key});
+  factory $EmojiCopyWith(Emoji value, $Res Function(Emoji) then) =
+      _$EmojiCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'char') String char, @JsonKey(name: 'key') String key});
 }
 
 /// @nodoc
@@ -77,14 +81,18 @@ class _$EmojiCopyWithImpl<$Res> implements $EmojiCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$EmojiCopyWith<$Res> implements $EmojiCopyWith<$Res> {
-  factory _$EmojiCopyWith(_Emoji value, $Res Function(_Emoji) then) = __$EmojiCopyWithImpl<$Res>;
+  factory _$EmojiCopyWith(_Emoji value, $Res Function(_Emoji) then) =
+      __$EmojiCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'char') String char, @JsonKey(name: 'key') String key});
+  $Res call(
+      {@JsonKey(name: 'char') String char, @JsonKey(name: 'key') String key});
 }
 
 /// @nodoc
-class __$EmojiCopyWithImpl<$Res> extends _$EmojiCopyWithImpl<$Res> implements _$EmojiCopyWith<$Res> {
-  __$EmojiCopyWithImpl(_Emoji _value, $Res Function(_Emoji) _then) : super(_value, (v) => _then(v as _Emoji));
+class __$EmojiCopyWithImpl<$Res> extends _$EmojiCopyWithImpl<$Res>
+    implements _$EmojiCopyWith<$Res> {
+  __$EmojiCopyWithImpl(_Emoji _value, $Res Function(_Emoji) _then)
+      : super(_value, (v) => _then(v as _Emoji));
 
   @override
   _Emoji get _value => super._value as _Emoji;
@@ -105,11 +113,14 @@ class __$EmojiCopyWithImpl<$Res> extends _$EmojiCopyWithImpl<$Res> implements _$
 
 /// @nodoc
 class _$_Emoji implements _Emoji {
-  const _$_Emoji({@required @JsonKey(name: 'char') this.char, @required @JsonKey(name: 'key') this.key})
+  const _$_Emoji(
+      {@required @JsonKey(name: 'char') this.char,
+      @required @JsonKey(name: 'key') this.key})
       : assert(char != null),
         assert(key != null);
 
-  factory _$_Emoji.fromJson(Map<String, dynamic> json) => _$_$_EmojiFromJson(json);
+  factory _$_Emoji.fromJson(Map<String, dynamic> json) =>
+      _$_$_EmojiFromJson(json);
 
   @override
 
@@ -131,17 +142,22 @@ class _$_Emoji implements _Emoji {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Emoji &&
-            (identical(other.char, char) || const DeepCollectionEquality().equals(other.char, char)) &&
-            (identical(other.key, key) || const DeepCollectionEquality().equals(other.key, key)));
+            (identical(other.char, char) ||
+                const DeepCollectionEquality().equals(other.char, char)) &&
+            (identical(other.key, key) ||
+                const DeepCollectionEquality().equals(other.key, key)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(char) ^ const DeepCollectionEquality().hash(key);
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(char) ^
+      const DeepCollectionEquality().hash(key);
 
   @JsonKey(ignore: true)
   @override
-  _$EmojiCopyWith<_Emoji> get copyWith => __$EmojiCopyWithImpl<_Emoji>(this, _$identity);
+  _$EmojiCopyWith<_Emoji> get copyWith =>
+      __$EmojiCopyWithImpl<_Emoji>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -150,8 +166,9 @@ class _$_Emoji implements _Emoji {
 }
 
 abstract class _Emoji implements Emoji {
-  const factory _Emoji({@required @JsonKey(name: 'char') String char, @required @JsonKey(name: 'key') String key}) =
-      _$_Emoji;
+  const factory _Emoji(
+      {@required @JsonKey(name: 'char') String char,
+      @required @JsonKey(name: 'key') String key}) = _$_Emoji;
 
   factory _Emoji.fromJson(Map<String, dynamic> json) = _$_Emoji.fromJson;
 

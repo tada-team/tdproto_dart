@@ -13,7 +13,8 @@ _$_TaskSort _$_$_TaskSortFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_TaskSortToJson(_$_TaskSort instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_TaskSortToJson(_$_TaskSort instance) =>
+    <String, dynamic>{
       'key': instance.key,
       'title': instance.title,
     };

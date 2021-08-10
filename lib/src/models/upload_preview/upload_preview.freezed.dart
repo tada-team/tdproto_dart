@@ -65,7 +65,8 @@ mixin _$UploadPreview {
 
 /// @nodoc
 abstract class $UploadPreviewCopyWith<$Res> {
-  factory $UploadPreviewCopyWith(UploadPreview value, $Res Function(UploadPreview) then) =
+  factory $UploadPreviewCopyWith(
+          UploadPreview value, $Res Function(UploadPreview) then) =
       _$UploadPreviewCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'url') String url,
@@ -75,7 +76,8 @@ abstract class $UploadPreviewCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UploadPreviewCopyWithImpl<$Res> implements $UploadPreviewCopyWith<$Res> {
+class _$UploadPreviewCopyWithImpl<$Res>
+    implements $UploadPreviewCopyWith<$Res> {
   _$UploadPreviewCopyWithImpl(this._value, this._then);
 
   final UploadPreview _value;
@@ -99,8 +101,10 @@ class _$UploadPreviewCopyWithImpl<$Res> implements $UploadPreviewCopyWith<$Res> 
 }
 
 /// @nodoc
-abstract class _$UploadPreviewCopyWith<$Res> implements $UploadPreviewCopyWith<$Res> {
-  factory _$UploadPreviewCopyWith(_UploadPreview value, $Res Function(_UploadPreview) then) =
+abstract class _$UploadPreviewCopyWith<$Res>
+    implements $UploadPreviewCopyWith<$Res> {
+  factory _$UploadPreviewCopyWith(
+          _UploadPreview value, $Res Function(_UploadPreview) then) =
       __$UploadPreviewCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -111,9 +115,11 @@ abstract class _$UploadPreviewCopyWith<$Res> implements $UploadPreviewCopyWith<$
 }
 
 /// @nodoc
-class __$UploadPreviewCopyWithImpl<$Res> extends _$UploadPreviewCopyWithImpl<$Res>
+class __$UploadPreviewCopyWithImpl<$Res>
+    extends _$UploadPreviewCopyWithImpl<$Res>
     implements _$UploadPreviewCopyWith<$Res> {
-  __$UploadPreviewCopyWithImpl(_UploadPreview _value, $Res Function(_UploadPreview) _then)
+  __$UploadPreviewCopyWithImpl(
+      _UploadPreview _value, $Res Function(_UploadPreview) _then)
       : super(_value, (v) => _then(v as _UploadPreview));
 
   @override
@@ -149,7 +155,8 @@ class _$_UploadPreview implements _UploadPreview {
         assert(width != null),
         assert(height != null);
 
-  factory _$_UploadPreview.fromJson(Map<String, dynamic> json) => _$_$_UploadPreviewFromJson(json);
+  factory _$_UploadPreview.fromJson(Map<String, dynamic> json) =>
+      _$_$_UploadPreviewFromJson(json);
 
   @override
 
@@ -181,10 +188,14 @@ class _$_UploadPreview implements _UploadPreview {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _UploadPreview &&
-            (identical(other.url, url) || const DeepCollectionEquality().equals(other.url, url)) &&
-            (identical(other.url2x, url2x) || const DeepCollectionEquality().equals(other.url2x, url2x)) &&
-            (identical(other.width, width) || const DeepCollectionEquality().equals(other.width, width)) &&
-            (identical(other.height, height) || const DeepCollectionEquality().equals(other.height, height)));
+            (identical(other.url, url) ||
+                const DeepCollectionEquality().equals(other.url, url)) &&
+            (identical(other.url2x, url2x) ||
+                const DeepCollectionEquality().equals(other.url2x, url2x)) &&
+            (identical(other.width, width) ||
+                const DeepCollectionEquality().equals(other.width, width)) &&
+            (identical(other.height, height) ||
+                const DeepCollectionEquality().equals(other.height, height)));
   }
 
   @override
@@ -213,7 +224,8 @@ abstract class _UploadPreview implements UploadPreview {
       @required @JsonKey(name: 'width') int width,
       @required @JsonKey(name: 'height') int height}) = _$_UploadPreview;
 
-  factory _UploadPreview.fromJson(Map<String, dynamic> json) = _$_UploadPreview.fromJson;
+  factory _UploadPreview.fromJson(Map<String, dynamic> json) =
+      _$_UploadPreview.fromJson;
 
   @override
 

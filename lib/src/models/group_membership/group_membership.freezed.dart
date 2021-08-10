@@ -59,7 +59,8 @@ mixin _$GroupMembership {
 
 /// @nodoc
 abstract class $GroupMembershipCopyWith<$Res> {
-  factory $GroupMembershipCopyWith(GroupMembership value, $Res Function(GroupMembership) then) =
+  factory $GroupMembershipCopyWith(
+          GroupMembership value, $Res Function(GroupMembership) then) =
       _$GroupMembershipCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'jid') String jid,
@@ -68,7 +69,8 @@ abstract class $GroupMembershipCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$GroupMembershipCopyWithImpl<$Res> implements $GroupMembershipCopyWith<$Res> {
+class _$GroupMembershipCopyWithImpl<$Res>
+    implements $GroupMembershipCopyWith<$Res> {
   _$GroupMembershipCopyWithImpl(this._value, this._then);
 
   final GroupMembership _value;
@@ -90,8 +92,10 @@ class _$GroupMembershipCopyWithImpl<$Res> implements $GroupMembershipCopyWith<$R
 }
 
 /// @nodoc
-abstract class _$GroupMembershipCopyWith<$Res> implements $GroupMembershipCopyWith<$Res> {
-  factory _$GroupMembershipCopyWith(_GroupMembership value, $Res Function(_GroupMembership) then) =
+abstract class _$GroupMembershipCopyWith<$Res>
+    implements $GroupMembershipCopyWith<$Res> {
+  factory _$GroupMembershipCopyWith(
+          _GroupMembership value, $Res Function(_GroupMembership) then) =
       __$GroupMembershipCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -101,9 +105,11 @@ abstract class _$GroupMembershipCopyWith<$Res> implements $GroupMembershipCopyWi
 }
 
 /// @nodoc
-class __$GroupMembershipCopyWithImpl<$Res> extends _$GroupMembershipCopyWithImpl<$Res>
+class __$GroupMembershipCopyWithImpl<$Res>
+    extends _$GroupMembershipCopyWithImpl<$Res>
     implements _$GroupMembershipCopyWith<$Res> {
-  __$GroupMembershipCopyWithImpl(_GroupMembership _value, $Res Function(_GroupMembership) _then)
+  __$GroupMembershipCopyWithImpl(
+      _GroupMembership _value, $Res Function(_GroupMembership) _then)
       : super(_value, (v) => _then(v as _GroupMembership));
 
   @override
@@ -133,7 +139,8 @@ class _$_GroupMembership implements _GroupMembership {
       @JsonKey(name: 'can_remove') this.canRemove})
       : assert(jid != null);
 
-  factory _$_GroupMembership.fromJson(Map<String, dynamic> json) => _$_$_GroupMembershipFromJson(json);
+  factory _$_GroupMembership.fromJson(Map<String, dynamic> json) =>
+      _$_$_GroupMembershipFromJson(json);
 
   @override
 
@@ -160,10 +167,13 @@ class _$_GroupMembership implements _GroupMembership {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _GroupMembership &&
-            (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
-            (identical(other.status, status) || const DeepCollectionEquality().equals(other.status, status)) &&
+            (identical(other.jid, jid) ||
+                const DeepCollectionEquality().equals(other.jid, jid)) &&
+            (identical(other.status, status) ||
+                const DeepCollectionEquality().equals(other.status, status)) &&
             (identical(other.canRemove, canRemove) ||
-                const DeepCollectionEquality().equals(other.canRemove, canRemove)));
+                const DeepCollectionEquality()
+                    .equals(other.canRemove, canRemove)));
   }
 
   @override
@@ -190,7 +200,8 @@ abstract class _GroupMembership implements GroupMembership {
       @JsonKey(name: 'status') String status,
       @JsonKey(name: 'can_remove') bool canRemove}) = _$_GroupMembership;
 
-  factory _GroupMembership.fromJson(Map<String, dynamic> json) = _$_GroupMembership.fromJson;
+  factory _GroupMembership.fromJson(Map<String, dynamic> json) =
+      _$_GroupMembership.fromJson;
 
   @override
 

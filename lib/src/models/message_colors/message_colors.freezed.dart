@@ -77,7 +77,8 @@ mixin _$MessageColors {
 
 /// @nodoc
 abstract class $MessageColorsCopyWith<$Res> {
-  factory $MessageColorsCopyWith(MessageColors value, $Res Function(MessageColors) then) =
+  factory $MessageColorsCopyWith(
+          MessageColors value, $Res Function(MessageColors) then) =
       _$MessageColorsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'bubble_sent') String bubbleSent,
@@ -89,7 +90,8 @@ abstract class $MessageColorsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MessageColorsCopyWithImpl<$Res> implements $MessageColorsCopyWith<$Res> {
+class _$MessageColorsCopyWithImpl<$Res>
+    implements $MessageColorsCopyWith<$Res> {
   _$MessageColorsCopyWithImpl(this._value, this._then);
 
   final MessageColors _value;
@@ -106,19 +108,29 @@ class _$MessageColorsCopyWithImpl<$Res> implements $MessageColorsCopyWith<$Res> 
     Object allocated = freezed,
   }) {
     return _then(_value.copyWith(
-      bubbleSent: bubbleSent == freezed ? _value.bubbleSent : bubbleSent as String,
-      bubbleReceived: bubbleReceived == freezed ? _value.bubbleReceived : bubbleReceived as String,
-      bubbleImportant: bubbleImportant == freezed ? _value.bubbleImportant : bubbleImportant as String,
-      statusFeed: statusFeed == freezed ? _value.statusFeed : statusFeed as String,
-      statusBubble: statusBubble == freezed ? _value.statusBubble : statusBubble as String,
+      bubbleSent:
+          bubbleSent == freezed ? _value.bubbleSent : bubbleSent as String,
+      bubbleReceived: bubbleReceived == freezed
+          ? _value.bubbleReceived
+          : bubbleReceived as String,
+      bubbleImportant: bubbleImportant == freezed
+          ? _value.bubbleImportant
+          : bubbleImportant as String,
+      statusFeed:
+          statusFeed == freezed ? _value.statusFeed : statusFeed as String,
+      statusBubble: statusBubble == freezed
+          ? _value.statusBubble
+          : statusBubble as String,
       allocated: allocated == freezed ? _value.allocated : allocated as String,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$MessageColorsCopyWith<$Res> implements $MessageColorsCopyWith<$Res> {
-  factory _$MessageColorsCopyWith(_MessageColors value, $Res Function(_MessageColors) then) =
+abstract class _$MessageColorsCopyWith<$Res>
+    implements $MessageColorsCopyWith<$Res> {
+  factory _$MessageColorsCopyWith(
+          _MessageColors value, $Res Function(_MessageColors) then) =
       __$MessageColorsCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -131,9 +143,11 @@ abstract class _$MessageColorsCopyWith<$Res> implements $MessageColorsCopyWith<$
 }
 
 /// @nodoc
-class __$MessageColorsCopyWithImpl<$Res> extends _$MessageColorsCopyWithImpl<$Res>
+class __$MessageColorsCopyWithImpl<$Res>
+    extends _$MessageColorsCopyWithImpl<$Res>
     implements _$MessageColorsCopyWith<$Res> {
-  __$MessageColorsCopyWithImpl(_MessageColors _value, $Res Function(_MessageColors) _then)
+  __$MessageColorsCopyWithImpl(
+      _MessageColors _value, $Res Function(_MessageColors) _then)
       : super(_value, (v) => _then(v as _MessageColors));
 
   @override
@@ -149,11 +163,19 @@ class __$MessageColorsCopyWithImpl<$Res> extends _$MessageColorsCopyWithImpl<$Re
     Object allocated = freezed,
   }) {
     return _then(_MessageColors(
-      bubbleSent: bubbleSent == freezed ? _value.bubbleSent : bubbleSent as String,
-      bubbleReceived: bubbleReceived == freezed ? _value.bubbleReceived : bubbleReceived as String,
-      bubbleImportant: bubbleImportant == freezed ? _value.bubbleImportant : bubbleImportant as String,
-      statusFeed: statusFeed == freezed ? _value.statusFeed : statusFeed as String,
-      statusBubble: statusBubble == freezed ? _value.statusBubble : statusBubble as String,
+      bubbleSent:
+          bubbleSent == freezed ? _value.bubbleSent : bubbleSent as String,
+      bubbleReceived: bubbleReceived == freezed
+          ? _value.bubbleReceived
+          : bubbleReceived as String,
+      bubbleImportant: bubbleImportant == freezed
+          ? _value.bubbleImportant
+          : bubbleImportant as String,
+      statusFeed:
+          statusFeed == freezed ? _value.statusFeed : statusFeed as String,
+      statusBubble: statusBubble == freezed
+          ? _value.statusBubble
+          : statusBubble as String,
       allocated: allocated == freezed ? _value.allocated : allocated as String,
     ));
   }
@@ -177,7 +199,8 @@ class _$_MessageColors implements _MessageColors {
         assert(statusBubble != null),
         assert(allocated != null);
 
-  factory _$_MessageColors.fromJson(Map<String, dynamic> json) => _$_$_MessageColorsFromJson(json);
+  factory _$_MessageColors.fromJson(Map<String, dynamic> json) =>
+      _$_$_MessageColorsFromJson(json);
 
   @override
 
@@ -220,17 +243,23 @@ class _$_MessageColors implements _MessageColors {
     return identical(this, other) ||
         (other is _MessageColors &&
             (identical(other.bubbleSent, bubbleSent) ||
-                const DeepCollectionEquality().equals(other.bubbleSent, bubbleSent)) &&
+                const DeepCollectionEquality()
+                    .equals(other.bubbleSent, bubbleSent)) &&
             (identical(other.bubbleReceived, bubbleReceived) ||
-                const DeepCollectionEquality().equals(other.bubbleReceived, bubbleReceived)) &&
+                const DeepCollectionEquality()
+                    .equals(other.bubbleReceived, bubbleReceived)) &&
             (identical(other.bubbleImportant, bubbleImportant) ||
-                const DeepCollectionEquality().equals(other.bubbleImportant, bubbleImportant)) &&
+                const DeepCollectionEquality()
+                    .equals(other.bubbleImportant, bubbleImportant)) &&
             (identical(other.statusFeed, statusFeed) ||
-                const DeepCollectionEquality().equals(other.statusFeed, statusFeed)) &&
+                const DeepCollectionEquality()
+                    .equals(other.statusFeed, statusFeed)) &&
             (identical(other.statusBubble, statusBubble) ||
-                const DeepCollectionEquality().equals(other.statusBubble, statusBubble)) &&
+                const DeepCollectionEquality()
+                    .equals(other.statusBubble, statusBubble)) &&
             (identical(other.allocated, allocated) ||
-                const DeepCollectionEquality().equals(other.allocated, allocated)));
+                const DeepCollectionEquality()
+                    .equals(other.allocated, allocated)));
   }
 
   @override
@@ -256,14 +285,16 @@ class _$_MessageColors implements _MessageColors {
 
 abstract class _MessageColors implements MessageColors {
   const factory _MessageColors(
-      {@required @JsonKey(name: 'bubble_sent') String bubbleSent,
-      @required @JsonKey(name: 'bubble_received') String bubbleReceived,
-      @required @JsonKey(name: 'bubble_important') String bubbleImportant,
-      @required @JsonKey(name: 'status_feed') String statusFeed,
-      @required @JsonKey(name: 'status_bubble') String statusBubble,
-      @required @JsonKey(name: 'allocated') String allocated}) = _$_MessageColors;
+          {@required @JsonKey(name: 'bubble_sent') String bubbleSent,
+          @required @JsonKey(name: 'bubble_received') String bubbleReceived,
+          @required @JsonKey(name: 'bubble_important') String bubbleImportant,
+          @required @JsonKey(name: 'status_feed') String statusFeed,
+          @required @JsonKey(name: 'status_bubble') String statusBubble,
+          @required @JsonKey(name: 'allocated') String allocated}) =
+      _$_MessageColors;
 
-  factory _MessageColors.fromJson(Map<String, dynamic> json) = _$_MessageColors.fromJson;
+  factory _MessageColors.fromJson(Map<String, dynamic> json) =
+      _$_MessageColors.fromJson;
 
   @override
 

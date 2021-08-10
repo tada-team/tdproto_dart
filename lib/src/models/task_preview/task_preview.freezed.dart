@@ -89,7 +89,9 @@ mixin _$TaskPreview {
 
 /// @nodoc
 abstract class $TaskPreviewCopyWith<$Res> {
-  factory $TaskPreviewCopyWith(TaskPreview value, $Res Function(TaskPreview) then) = _$TaskPreviewCopyWithImpl<$Res>;
+  factory $TaskPreviewCopyWith(
+          TaskPreview value, $Res Function(TaskPreview) then) =
+      _$TaskPreviewCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: '_error') String error,
       @JsonKey(name: 'assignee') String assignee,
@@ -124,7 +126,8 @@ class _$TaskPreviewCopyWithImpl<$Res> implements $TaskPreviewCopyWith<$Res> {
       error: error == freezed ? _value.error : error as String,
       assignee: assignee == freezed ? _value.assignee : assignee as String,
       deadline: deadline == freezed ? _value.deadline : deadline as String,
-      description: description == freezed ? _value.description : description as String,
+      description:
+          description == freezed ? _value.description : description as String,
       section: section == freezed ? _value.section : section as String,
       isPublic: isPublic == freezed ? _value.isPublic : isPublic as bool,
       tags: tags == freezed ? _value.tags : tags as List<String>,
@@ -134,8 +137,10 @@ class _$TaskPreviewCopyWithImpl<$Res> implements $TaskPreviewCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$TaskPreviewCopyWith<$Res> implements $TaskPreviewCopyWith<$Res> {
-  factory _$TaskPreviewCopyWith(_TaskPreview value, $Res Function(_TaskPreview) then) =
+abstract class _$TaskPreviewCopyWith<$Res>
+    implements $TaskPreviewCopyWith<$Res> {
+  factory _$TaskPreviewCopyWith(
+          _TaskPreview value, $Res Function(_TaskPreview) then) =
       __$TaskPreviewCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -150,8 +155,10 @@ abstract class _$TaskPreviewCopyWith<$Res> implements $TaskPreviewCopyWith<$Res>
 }
 
 /// @nodoc
-class __$TaskPreviewCopyWithImpl<$Res> extends _$TaskPreviewCopyWithImpl<$Res> implements _$TaskPreviewCopyWith<$Res> {
-  __$TaskPreviewCopyWithImpl(_TaskPreview _value, $Res Function(_TaskPreview) _then)
+class __$TaskPreviewCopyWithImpl<$Res> extends _$TaskPreviewCopyWithImpl<$Res>
+    implements _$TaskPreviewCopyWith<$Res> {
+  __$TaskPreviewCopyWithImpl(
+      _TaskPreview _value, $Res Function(_TaskPreview) _then)
       : super(_value, (v) => _then(v as _TaskPreview));
 
   @override
@@ -172,7 +179,8 @@ class __$TaskPreviewCopyWithImpl<$Res> extends _$TaskPreviewCopyWithImpl<$Res> i
       error: error == freezed ? _value.error : error as String,
       assignee: assignee == freezed ? _value.assignee : assignee as String,
       deadline: deadline == freezed ? _value.deadline : deadline as String,
-      description: description == freezed ? _value.description : description as String,
+      description:
+          description == freezed ? _value.description : description as String,
       section: section == freezed ? _value.section : section as String,
       isPublic: isPublic == freezed ? _value.isPublic : isPublic as bool,
       tags: tags == freezed ? _value.tags : tags as List<String>,
@@ -202,7 +210,8 @@ class _$_TaskPreview implements _TaskPreview {
         assert(tags != null),
         assert(items != null);
 
-  factory _$_TaskPreview.fromJson(Map<String, dynamic> json) => _$_$_TaskPreviewFromJson(json);
+  factory _$_TaskPreview.fromJson(Map<String, dynamic> json) =>
+      _$_$_TaskPreviewFromJson(json);
 
   @override
 
@@ -254,15 +263,27 @@ class _$_TaskPreview implements _TaskPreview {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _TaskPreview &&
-            (identical(other.error, error) || const DeepCollectionEquality().equals(other.error, error)) &&
-            (identical(other.assignee, assignee) || const DeepCollectionEquality().equals(other.assignee, assignee)) &&
-            (identical(other.deadline, deadline) || const DeepCollectionEquality().equals(other.deadline, deadline)) &&
+            (identical(other.error, error) ||
+                const DeepCollectionEquality().equals(other.error, error)) &&
+            (identical(other.assignee, assignee) ||
+                const DeepCollectionEquality()
+                    .equals(other.assignee, assignee)) &&
+            (identical(other.deadline, deadline) ||
+                const DeepCollectionEquality()
+                    .equals(other.deadline, deadline)) &&
             (identical(other.description, description) ||
-                const DeepCollectionEquality().equals(other.description, description)) &&
-            (identical(other.section, section) || const DeepCollectionEquality().equals(other.section, section)) &&
-            (identical(other.isPublic, isPublic) || const DeepCollectionEquality().equals(other.isPublic, isPublic)) &&
-            (identical(other.tags, tags) || const DeepCollectionEquality().equals(other.tags, tags)) &&
-            (identical(other.items, items) || const DeepCollectionEquality().equals(other.items, items)));
+                const DeepCollectionEquality()
+                    .equals(other.description, description)) &&
+            (identical(other.section, section) ||
+                const DeepCollectionEquality()
+                    .equals(other.section, section)) &&
+            (identical(other.isPublic, isPublic) ||
+                const DeepCollectionEquality()
+                    .equals(other.isPublic, isPublic)) &&
+            (identical(other.tags, tags) ||
+                const DeepCollectionEquality().equals(other.tags, tags)) &&
+            (identical(other.items, items) ||
+                const DeepCollectionEquality().equals(other.items, items)));
   }
 
   @override
@@ -279,7 +300,8 @@ class _$_TaskPreview implements _TaskPreview {
 
   @JsonKey(ignore: true)
   @override
-  _$TaskPreviewCopyWith<_TaskPreview> get copyWith => __$TaskPreviewCopyWithImpl<_TaskPreview>(this, _$identity);
+  _$TaskPreviewCopyWith<_TaskPreview> get copyWith =>
+      __$TaskPreviewCopyWithImpl<_TaskPreview>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -289,16 +311,18 @@ class _$_TaskPreview implements _TaskPreview {
 
 abstract class _TaskPreview implements TaskPreview {
   const factory _TaskPreview(
-      {@JsonKey(name: '_error') String error,
-      @required @JsonKey(name: 'assignee') String assignee,
-      @required @JsonKey(name: 'deadline') String deadline,
-      @required @JsonKey(name: 'description') String description,
-      @required @JsonKey(name: 'section') String section,
-      @required @JsonKey(name: 'public') bool isPublic,
-      @required @JsonKey(name: 'tags') List<String> tags,
-      @required @JsonKey(name: 'items') List<TaskItems> items}) = _$_TaskPreview;
+          {@JsonKey(name: '_error') String error,
+          @required @JsonKey(name: 'assignee') String assignee,
+          @required @JsonKey(name: 'deadline') String deadline,
+          @required @JsonKey(name: 'description') String description,
+          @required @JsonKey(name: 'section') String section,
+          @required @JsonKey(name: 'public') bool isPublic,
+          @required @JsonKey(name: 'tags') List<String> tags,
+          @required @JsonKey(name: 'items') List<TaskItems> items}) =
+      _$_TaskPreview;
 
-  factory _TaskPreview.fromJson(Map<String, dynamic> json) = _$_TaskPreview.fromJson;
+  factory _TaskPreview.fromJson(Map<String, dynamic> json) =
+      _$_TaskPreview.fromJson;
 
   @override
 

@@ -14,16 +14,22 @@ _$_TaskTab _$_$_TaskTabFromJson(Map<String, dynamic> json) {
     showCounter: json['show_counter'] as bool,
     pagination: json['pagination'] as bool,
     filters: (json['filters'] as List)
-        ?.map((e) => e == null ? null : TaskFilter.fromJson(e as Map<String, dynamic>))
+        ?.map((e) =>
+            e == null ? null : TaskFilter.fromJson(e as Map<String, dynamic>))
         ?.toList(),
-    sort: (json['sort'] as List)?.map((e) => e == null ? null : TaskSort.fromJson(e as Map<String, dynamic>))?.toList(),
+    sort: (json['sort'] as List)
+        ?.map((e) =>
+            e == null ? null : TaskSort.fromJson(e as Map<String, dynamic>))
+        ?.toList(),
     unreadTasks: (json['unread_tasks'] as List)
-        ?.map((e) => e == null ? null : TaskCounters.fromJson(e as Map<String, dynamic>))
+        ?.map((e) =>
+            e == null ? null : TaskCounters.fromJson(e as Map<String, dynamic>))
         ?.toList(),
   );
 }
 
-Map<String, dynamic> _$_$_TaskTabToJson(_$_TaskTab instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_TaskTabToJson(_$_TaskTab instance) =>
+    <String, dynamic>{
       'key': instance.key,
       'title': instance.title,
       'hide_empty': instance.hideEmpty,

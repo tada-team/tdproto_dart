@@ -18,14 +18,30 @@ class _$PushDeviceTearOff {
 
 // ignore: unused_element
   _PushDevice call(
-      {@required @JsonKey(name: 'type') String type,
-      @required @JsonKey(name: 'device_id') String deviceId,
-      @required @JsonKey(name: 'notification_token') String notificationToken,
-      @required @JsonKey(name: 'voip_notification_token') String voipNotificationToken,
-      @required @JsonKey(name: 'name') String name,
-      @required @JsonKey(name: 'data_pushes') bool dataPushes,
-      @required @JsonKey(name: 'data_badges') bool dataBadges,
-      @required @JsonKey(name: 'allowed_notifications') bool allowedNotifications}) {
+      {@required
+      @JsonKey(name: 'type')
+          String type,
+      @required
+      @JsonKey(name: 'device_id')
+          String deviceId,
+      @required
+      @JsonKey(name: 'notification_token')
+          String notificationToken,
+      @required
+      @JsonKey(name: 'voip_notification_token')
+          String voipNotificationToken,
+      @required
+      @JsonKey(name: 'name')
+          String name,
+      @required
+      @JsonKey(name: 'data_pushes')
+          bool dataPushes,
+      @required
+      @JsonKey(name: 'data_badges')
+          bool dataBadges,
+      @required
+      @JsonKey(name: 'allowed_notifications')
+          bool allowedNotifications}) {
     return _PushDevice(
       type: type,
       deviceId: deviceId,
@@ -89,7 +105,9 @@ mixin _$PushDevice {
 
 /// @nodoc
 abstract class $PushDeviceCopyWith<$Res> {
-  factory $PushDeviceCopyWith(PushDevice value, $Res Function(PushDevice) then) = _$PushDeviceCopyWithImpl<$Res>;
+  factory $PushDeviceCopyWith(
+          PushDevice value, $Res Function(PushDevice) then) =
+      _$PushDeviceCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'type') String type,
       @JsonKey(name: 'device_id') String deviceId,
@@ -123,21 +141,29 @@ class _$PushDeviceCopyWithImpl<$Res> implements $PushDeviceCopyWith<$Res> {
     return _then(_value.copyWith(
       type: type == freezed ? _value.type : type as String,
       deviceId: deviceId == freezed ? _value.deviceId : deviceId as String,
-      notificationToken: notificationToken == freezed ? _value.notificationToken : notificationToken as String,
-      voipNotificationToken:
-          voipNotificationToken == freezed ? _value.voipNotificationToken : voipNotificationToken as String,
+      notificationToken: notificationToken == freezed
+          ? _value.notificationToken
+          : notificationToken as String,
+      voipNotificationToken: voipNotificationToken == freezed
+          ? _value.voipNotificationToken
+          : voipNotificationToken as String,
       name: name == freezed ? _value.name : name as String,
-      dataPushes: dataPushes == freezed ? _value.dataPushes : dataPushes as bool,
-      dataBadges: dataBadges == freezed ? _value.dataBadges : dataBadges as bool,
-      allowedNotifications:
-          allowedNotifications == freezed ? _value.allowedNotifications : allowedNotifications as bool,
+      dataPushes:
+          dataPushes == freezed ? _value.dataPushes : dataPushes as bool,
+      dataBadges:
+          dataBadges == freezed ? _value.dataBadges : dataBadges as bool,
+      allowedNotifications: allowedNotifications == freezed
+          ? _value.allowedNotifications
+          : allowedNotifications as bool,
     ));
   }
 }
 
 /// @nodoc
 abstract class _$PushDeviceCopyWith<$Res> implements $PushDeviceCopyWith<$Res> {
-  factory _$PushDeviceCopyWith(_PushDevice value, $Res Function(_PushDevice) then) = __$PushDeviceCopyWithImpl<$Res>;
+  factory _$PushDeviceCopyWith(
+          _PushDevice value, $Res Function(_PushDevice) then) =
+      __$PushDeviceCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'type') String type,
@@ -151,8 +177,10 @@ abstract class _$PushDeviceCopyWith<$Res> implements $PushDeviceCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$PushDeviceCopyWithImpl<$Res> extends _$PushDeviceCopyWithImpl<$Res> implements _$PushDeviceCopyWith<$Res> {
-  __$PushDeviceCopyWithImpl(_PushDevice _value, $Res Function(_PushDevice) _then)
+class __$PushDeviceCopyWithImpl<$Res> extends _$PushDeviceCopyWithImpl<$Res>
+    implements _$PushDeviceCopyWith<$Res> {
+  __$PushDeviceCopyWithImpl(
+      _PushDevice _value, $Res Function(_PushDevice) _then)
       : super(_value, (v) => _then(v as _PushDevice));
 
   @override
@@ -172,14 +200,20 @@ class __$PushDeviceCopyWithImpl<$Res> extends _$PushDeviceCopyWithImpl<$Res> imp
     return _then(_PushDevice(
       type: type == freezed ? _value.type : type as String,
       deviceId: deviceId == freezed ? _value.deviceId : deviceId as String,
-      notificationToken: notificationToken == freezed ? _value.notificationToken : notificationToken as String,
-      voipNotificationToken:
-          voipNotificationToken == freezed ? _value.voipNotificationToken : voipNotificationToken as String,
+      notificationToken: notificationToken == freezed
+          ? _value.notificationToken
+          : notificationToken as String,
+      voipNotificationToken: voipNotificationToken == freezed
+          ? _value.voipNotificationToken
+          : voipNotificationToken as String,
       name: name == freezed ? _value.name : name as String,
-      dataPushes: dataPushes == freezed ? _value.dataPushes : dataPushes as bool,
-      dataBadges: dataBadges == freezed ? _value.dataBadges : dataBadges as bool,
-      allowedNotifications:
-          allowedNotifications == freezed ? _value.allowedNotifications : allowedNotifications as bool,
+      dataPushes:
+          dataPushes == freezed ? _value.dataPushes : dataPushes as bool,
+      dataBadges:
+          dataBadges == freezed ? _value.dataBadges : dataBadges as bool,
+      allowedNotifications: allowedNotifications == freezed
+          ? _value.allowedNotifications
+          : allowedNotifications as bool,
     ));
   }
 }
@@ -189,14 +223,30 @@ class __$PushDeviceCopyWithImpl<$Res> extends _$PushDeviceCopyWithImpl<$Res> imp
 /// @nodoc
 class _$_PushDevice implements _PushDevice {
   const _$_PushDevice(
-      {@required @JsonKey(name: 'type') this.type,
-      @required @JsonKey(name: 'device_id') this.deviceId,
-      @required @JsonKey(name: 'notification_token') this.notificationToken,
-      @required @JsonKey(name: 'voip_notification_token') this.voipNotificationToken,
-      @required @JsonKey(name: 'name') this.name,
-      @required @JsonKey(name: 'data_pushes') this.dataPushes,
-      @required @JsonKey(name: 'data_badges') this.dataBadges,
-      @required @JsonKey(name: 'allowed_notifications') this.allowedNotifications})
+      {@required
+      @JsonKey(name: 'type')
+          this.type,
+      @required
+      @JsonKey(name: 'device_id')
+          this.deviceId,
+      @required
+      @JsonKey(name: 'notification_token')
+          this.notificationToken,
+      @required
+      @JsonKey(name: 'voip_notification_token')
+          this.voipNotificationToken,
+      @required
+      @JsonKey(name: 'name')
+          this.name,
+      @required
+      @JsonKey(name: 'data_pushes')
+          this.dataPushes,
+      @required
+      @JsonKey(name: 'data_badges')
+          this.dataBadges,
+      @required
+      @JsonKey(name: 'allowed_notifications')
+          this.allowedNotifications})
       : assert(type != null),
         assert(deviceId != null),
         assert(notificationToken != null),
@@ -206,7 +256,8 @@ class _$_PushDevice implements _PushDevice {
         assert(dataBadges != null),
         assert(allowedNotifications != null);
 
-  factory _$_PushDevice.fromJson(Map<String, dynamic> json) => _$_$_PushDeviceFromJson(json);
+  factory _$_PushDevice.fromJson(Map<String, dynamic> json) =>
+      _$_$_PushDeviceFromJson(json);
 
   @override
 
@@ -258,19 +309,28 @@ class _$_PushDevice implements _PushDevice {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _PushDevice &&
-            (identical(other.type, type) || const DeepCollectionEquality().equals(other.type, type)) &&
-            (identical(other.deviceId, deviceId) || const DeepCollectionEquality().equals(other.deviceId, deviceId)) &&
+            (identical(other.type, type) ||
+                const DeepCollectionEquality().equals(other.type, type)) &&
+            (identical(other.deviceId, deviceId) ||
+                const DeepCollectionEquality()
+                    .equals(other.deviceId, deviceId)) &&
             (identical(other.notificationToken, notificationToken) ||
-                const DeepCollectionEquality().equals(other.notificationToken, notificationToken)) &&
+                const DeepCollectionEquality()
+                    .equals(other.notificationToken, notificationToken)) &&
             (identical(other.voipNotificationToken, voipNotificationToken) ||
-                const DeepCollectionEquality().equals(other.voipNotificationToken, voipNotificationToken)) &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
+                const DeepCollectionEquality().equals(
+                    other.voipNotificationToken, voipNotificationToken)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
             (identical(other.dataPushes, dataPushes) ||
-                const DeepCollectionEquality().equals(other.dataPushes, dataPushes)) &&
+                const DeepCollectionEquality()
+                    .equals(other.dataPushes, dataPushes)) &&
             (identical(other.dataBadges, dataBadges) ||
-                const DeepCollectionEquality().equals(other.dataBadges, dataBadges)) &&
+                const DeepCollectionEquality()
+                    .equals(other.dataBadges, dataBadges)) &&
             (identical(other.allowedNotifications, allowedNotifications) ||
-                const DeepCollectionEquality().equals(other.allowedNotifications, allowedNotifications)));
+                const DeepCollectionEquality()
+                    .equals(other.allowedNotifications, allowedNotifications)));
   }
 
   @override
@@ -287,7 +347,8 @@ class _$_PushDevice implements _PushDevice {
 
   @JsonKey(ignore: true)
   @override
-  _$PushDeviceCopyWith<_PushDevice> get copyWith => __$PushDeviceCopyWithImpl<_PushDevice>(this, _$identity);
+  _$PushDeviceCopyWith<_PushDevice> get copyWith =>
+      __$PushDeviceCopyWithImpl<_PushDevice>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -297,16 +358,33 @@ class _$_PushDevice implements _PushDevice {
 
 abstract class _PushDevice implements PushDevice {
   const factory _PushDevice(
-      {@required @JsonKey(name: 'type') String type,
-      @required @JsonKey(name: 'device_id') String deviceId,
-      @required @JsonKey(name: 'notification_token') String notificationToken,
-      @required @JsonKey(name: 'voip_notification_token') String voipNotificationToken,
-      @required @JsonKey(name: 'name') String name,
-      @required @JsonKey(name: 'data_pushes') bool dataPushes,
-      @required @JsonKey(name: 'data_badges') bool dataBadges,
-      @required @JsonKey(name: 'allowed_notifications') bool allowedNotifications}) = _$_PushDevice;
+      {@required
+      @JsonKey(name: 'type')
+          String type,
+      @required
+      @JsonKey(name: 'device_id')
+          String deviceId,
+      @required
+      @JsonKey(name: 'notification_token')
+          String notificationToken,
+      @required
+      @JsonKey(name: 'voip_notification_token')
+          String voipNotificationToken,
+      @required
+      @JsonKey(name: 'name')
+          String name,
+      @required
+      @JsonKey(name: 'data_pushes')
+          bool dataPushes,
+      @required
+      @JsonKey(name: 'data_badges')
+          bool dataBadges,
+      @required
+      @JsonKey(name: 'allowed_notifications')
+          bool allowedNotifications}) = _$_PushDevice;
 
-  factory _PushDevice.fromJson(Map<String, dynamic> json) = _$_PushDevice.fromJson;
+  factory _PushDevice.fromJson(Map<String, dynamic> json) =
+      _$_PushDevice.fromJson;
 
   @override
 

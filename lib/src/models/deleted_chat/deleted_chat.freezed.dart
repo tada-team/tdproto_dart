@@ -65,7 +65,9 @@ mixin _$DeletedChat {
 
 /// @nodoc
 abstract class $DeletedChatCopyWith<$Res> {
-  factory $DeletedChatCopyWith(DeletedChat value, $Res Function(DeletedChat) then) = _$DeletedChatCopyWithImpl<$Res>;
+  factory $DeletedChatCopyWith(
+          DeletedChat value, $Res Function(DeletedChat) then) =
+      _$DeletedChatCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'chat_type') String chatType,
@@ -98,8 +100,10 @@ class _$DeletedChatCopyWithImpl<$Res> implements $DeletedChatCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$DeletedChatCopyWith<$Res> implements $DeletedChatCopyWith<$Res> {
-  factory _$DeletedChatCopyWith(_DeletedChat value, $Res Function(_DeletedChat) then) =
+abstract class _$DeletedChatCopyWith<$Res>
+    implements $DeletedChatCopyWith<$Res> {
+  factory _$DeletedChatCopyWith(
+          _DeletedChat value, $Res Function(_DeletedChat) then) =
       __$DeletedChatCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -110,8 +114,10 @@ abstract class _$DeletedChatCopyWith<$Res> implements $DeletedChatCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DeletedChatCopyWithImpl<$Res> extends _$DeletedChatCopyWithImpl<$Res> implements _$DeletedChatCopyWith<$Res> {
-  __$DeletedChatCopyWithImpl(_DeletedChat _value, $Res Function(_DeletedChat) _then)
+class __$DeletedChatCopyWithImpl<$Res> extends _$DeletedChatCopyWithImpl<$Res>
+    implements _$DeletedChatCopyWith<$Res> {
+  __$DeletedChatCopyWithImpl(
+      _DeletedChat _value, $Res Function(_DeletedChat) _then)
       : super(_value, (v) => _then(v as _DeletedChat));
 
   @override
@@ -147,7 +153,8 @@ class _$_DeletedChat implements _DeletedChat {
         assert(gentime != null),
         assert(isArchive != null);
 
-  factory _$_DeletedChat.fromJson(Map<String, dynamic> json) => _$_$_DeletedChatFromJson(json);
+  factory _$_DeletedChat.fromJson(Map<String, dynamic> json) =>
+      _$_$_DeletedChatFromJson(json);
 
   @override
 
@@ -179,11 +186,17 @@ class _$_DeletedChat implements _DeletedChat {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _DeletedChat &&
-            (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
-            (identical(other.chatType, chatType) || const DeepCollectionEquality().equals(other.chatType, chatType)) &&
-            (identical(other.gentime, gentime) || const DeepCollectionEquality().equals(other.gentime, gentime)) &&
+            (identical(other.jid, jid) ||
+                const DeepCollectionEquality().equals(other.jid, jid)) &&
+            (identical(other.chatType, chatType) ||
+                const DeepCollectionEquality()
+                    .equals(other.chatType, chatType)) &&
+            (identical(other.gentime, gentime) ||
+                const DeepCollectionEquality()
+                    .equals(other.gentime, gentime)) &&
             (identical(other.isArchive, isArchive) ||
-                const DeepCollectionEquality().equals(other.isArchive, isArchive)));
+                const DeepCollectionEquality()
+                    .equals(other.isArchive, isArchive)));
   }
 
   @override
@@ -196,7 +209,8 @@ class _$_DeletedChat implements _DeletedChat {
 
   @JsonKey(ignore: true)
   @override
-  _$DeletedChatCopyWith<_DeletedChat> get copyWith => __$DeletedChatCopyWithImpl<_DeletedChat>(this, _$identity);
+  _$DeletedChatCopyWith<_DeletedChat> get copyWith =>
+      __$DeletedChatCopyWithImpl<_DeletedChat>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -211,7 +225,8 @@ abstract class _DeletedChat implements DeletedChat {
       @required @JsonKey(name: 'gentime') int gentime,
       @required @JsonKey(name: 'is_archive') bool isArchive}) = _$_DeletedChat;
 
-  factory _DeletedChat.fromJson(Map<String, dynamic> json) = _$_DeletedChat.fromJson;
+  factory _DeletedChat.fromJson(Map<String, dynamic> json) =
+      _$_DeletedChat.fromJson;
 
   @override
 

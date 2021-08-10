@@ -19,7 +19,8 @@ _$_PushDevice _$_$_PushDeviceFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_PushDeviceToJson(_$_PushDevice instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_PushDeviceToJson(_$_PushDevice instance) =>
+    <String, dynamic>{
       'type': instance.type,
       'device_id': instance.deviceId,
       'notification_token': instance.notificationToken,

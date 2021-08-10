@@ -71,7 +71,8 @@ mixin _$IntegrationKind {
 
 /// @nodoc
 abstract class $IntegrationKindCopyWith<$Res> {
-  factory $IntegrationKindCopyWith(IntegrationKind value, $Res Function(IntegrationKind) then) =
+  factory $IntegrationKindCopyWith(
+          IntegrationKind value, $Res Function(IntegrationKind) then) =
       _$IntegrationKindCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'kind') String kind,
@@ -84,7 +85,8 @@ abstract class $IntegrationKindCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$IntegrationKindCopyWithImpl<$Res> implements $IntegrationKindCopyWith<$Res> {
+class _$IntegrationKindCopyWithImpl<$Res>
+    implements $IntegrationKindCopyWith<$Res> {
   _$IntegrationKindCopyWithImpl(this._value, this._then);
 
   final IntegrationKind _value;
@@ -104,7 +106,8 @@ class _$IntegrationKindCopyWithImpl<$Res> implements $IntegrationKindCopyWith<$R
       title: title == freezed ? _value.title : title as String,
       template: template == freezed ? _value.template : template as Integration,
       icon: icon == freezed ? _value.icon : icon as String,
-      description: description == freezed ? _value.description : description as String,
+      description:
+          description == freezed ? _value.description : description as String,
     ));
   }
 
@@ -120,8 +123,10 @@ class _$IntegrationKindCopyWithImpl<$Res> implements $IntegrationKindCopyWith<$R
 }
 
 /// @nodoc
-abstract class _$IntegrationKindCopyWith<$Res> implements $IntegrationKindCopyWith<$Res> {
-  factory _$IntegrationKindCopyWith(_IntegrationKind value, $Res Function(_IntegrationKind) then) =
+abstract class _$IntegrationKindCopyWith<$Res>
+    implements $IntegrationKindCopyWith<$Res> {
+  factory _$IntegrationKindCopyWith(
+          _IntegrationKind value, $Res Function(_IntegrationKind) then) =
       __$IntegrationKindCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -136,9 +141,11 @@ abstract class _$IntegrationKindCopyWith<$Res> implements $IntegrationKindCopyWi
 }
 
 /// @nodoc
-class __$IntegrationKindCopyWithImpl<$Res> extends _$IntegrationKindCopyWithImpl<$Res>
+class __$IntegrationKindCopyWithImpl<$Res>
+    extends _$IntegrationKindCopyWithImpl<$Res>
     implements _$IntegrationKindCopyWith<$Res> {
-  __$IntegrationKindCopyWithImpl(_IntegrationKind _value, $Res Function(_IntegrationKind) _then)
+  __$IntegrationKindCopyWithImpl(
+      _IntegrationKind _value, $Res Function(_IntegrationKind) _then)
       : super(_value, (v) => _then(v as _IntegrationKind));
 
   @override
@@ -157,7 +164,8 @@ class __$IntegrationKindCopyWithImpl<$Res> extends _$IntegrationKindCopyWithImpl
       title: title == freezed ? _value.title : title as String,
       template: template == freezed ? _value.template : template as Integration,
       icon: icon == freezed ? _value.icon : icon as String,
-      description: description == freezed ? _value.description : description as String,
+      description:
+          description == freezed ? _value.description : description as String,
     ));
   }
 }
@@ -178,7 +186,8 @@ class _$_IntegrationKind implements _IntegrationKind {
         assert(icon != null),
         assert(description != null);
 
-  factory _$_IntegrationKind.fromJson(Map<String, dynamic> json) => _$_$_IntegrationKindFromJson(json);
+  factory _$_IntegrationKind.fromJson(Map<String, dynamic> json) =>
+      _$_$_IntegrationKindFromJson(json);
 
   @override
 
@@ -215,12 +224,18 @@ class _$_IntegrationKind implements _IntegrationKind {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _IntegrationKind &&
-            (identical(other.kind, kind) || const DeepCollectionEquality().equals(other.kind, kind)) &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
-            (identical(other.template, template) || const DeepCollectionEquality().equals(other.template, template)) &&
-            (identical(other.icon, icon) || const DeepCollectionEquality().equals(other.icon, icon)) &&
+            (identical(other.kind, kind) ||
+                const DeepCollectionEquality().equals(other.kind, kind)) &&
+            (identical(other.title, title) ||
+                const DeepCollectionEquality().equals(other.title, title)) &&
+            (identical(other.template, template) ||
+                const DeepCollectionEquality()
+                    .equals(other.template, template)) &&
+            (identical(other.icon, icon) ||
+                const DeepCollectionEquality().equals(other.icon, icon)) &&
             (identical(other.description, description) ||
-                const DeepCollectionEquality().equals(other.description, description)));
+                const DeepCollectionEquality()
+                    .equals(other.description, description)));
   }
 
   @override
@@ -245,13 +260,15 @@ class _$_IntegrationKind implements _IntegrationKind {
 
 abstract class _IntegrationKind implements IntegrationKind {
   const factory _IntegrationKind(
-      {@required @JsonKey(name: 'kind') String kind,
-      @required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'template') Integration template,
-      @required @JsonKey(name: 'icon') String icon,
-      @required @JsonKey(name: 'description') String description}) = _$_IntegrationKind;
+          {@required @JsonKey(name: 'kind') String kind,
+          @required @JsonKey(name: 'title') String title,
+          @required @JsonKey(name: 'template') Integration template,
+          @required @JsonKey(name: 'icon') String icon,
+          @required @JsonKey(name: 'description') String description}) =
+      _$_IntegrationKind;
 
-  factory _IntegrationKind.fromJson(Map<String, dynamic> json) = _$_IntegrationKind.fromJson;
+  factory _IntegrationKind.fromJson(Map<String, dynamic> json) =
+      _$_IntegrationKind.fromJson;
 
   @override
 

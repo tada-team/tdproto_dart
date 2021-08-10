@@ -16,14 +16,16 @@ _$_CallEvent _$_$_CallEventFromJson(Map<String, dynamic> json) {
     finish: const DateTimeConverter().fromJson(json['finish'] as String),
     audiorecord: json['audiorecord'] as bool,
     onliners: (json['onliners'] as List)
-        ?.map((e) => e == null ? null : CallOnliner.fromJson(e as Map<String, dynamic>))
+        ?.map((e) =>
+            e == null ? null : CallOnliner.fromJson(e as Map<String, dynamic>))
         ?.toList(),
     gentime: json['gentime'] as int,
     timestamp: json['timestamp'] as int,
   );
 }
 
-Map<String, dynamic> _$_$_CallEventToJson(_$_CallEvent instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_CallEventToJson(_$_CallEvent instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'uid': instance.uid,
       'buzz': instance.buzz,

@@ -83,7 +83,8 @@ mixin _$ContactPreview {
 
 /// @nodoc
 abstract class $ContactPreviewCopyWith<$Res> {
-  factory $ContactPreviewCopyWith(ContactPreview value, $Res Function(ContactPreview) then) =
+  factory $ContactPreviewCopyWith(
+          ContactPreview value, $Res Function(ContactPreview) then) =
       _$ContactPreviewCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: '_error') String error,
@@ -96,7 +97,8 @@ abstract class $ContactPreviewCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ContactPreviewCopyWithImpl<$Res> implements $ContactPreviewCopyWith<$Res> {
+class _$ContactPreviewCopyWithImpl<$Res>
+    implements $ContactPreviewCopyWith<$Res> {
   _$ContactPreviewCopyWithImpl(this._value, this._then);
 
   final ContactPreview _value;
@@ -117,8 +119,10 @@ class _$ContactPreviewCopyWithImpl<$Res> implements $ContactPreviewCopyWith<$Res
       error: error == freezed ? _value.error : error as String,
       phone: phone == freezed ? _value.phone : phone as String,
       givenName: givenName == freezed ? _value.givenName : givenName as String,
-      familyName: familyName == freezed ? _value.familyName : familyName as String,
-      patronymic: patronymic == freezed ? _value.patronymic : patronymic as String,
+      familyName:
+          familyName == freezed ? _value.familyName : familyName as String,
+      patronymic:
+          patronymic == freezed ? _value.patronymic : patronymic as String,
       role: role == freezed ? _value.role : role as String,
       section: section == freezed ? _value.section : section as String,
     ));
@@ -126,8 +130,10 @@ class _$ContactPreviewCopyWithImpl<$Res> implements $ContactPreviewCopyWith<$Res
 }
 
 /// @nodoc
-abstract class _$ContactPreviewCopyWith<$Res> implements $ContactPreviewCopyWith<$Res> {
-  factory _$ContactPreviewCopyWith(_ContactPreview value, $Res Function(_ContactPreview) then) =
+abstract class _$ContactPreviewCopyWith<$Res>
+    implements $ContactPreviewCopyWith<$Res> {
+  factory _$ContactPreviewCopyWith(
+          _ContactPreview value, $Res Function(_ContactPreview) then) =
       __$ContactPreviewCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -141,9 +147,11 @@ abstract class _$ContactPreviewCopyWith<$Res> implements $ContactPreviewCopyWith
 }
 
 /// @nodoc
-class __$ContactPreviewCopyWithImpl<$Res> extends _$ContactPreviewCopyWithImpl<$Res>
+class __$ContactPreviewCopyWithImpl<$Res>
+    extends _$ContactPreviewCopyWithImpl<$Res>
     implements _$ContactPreviewCopyWith<$Res> {
-  __$ContactPreviewCopyWithImpl(_ContactPreview _value, $Res Function(_ContactPreview) _then)
+  __$ContactPreviewCopyWithImpl(
+      _ContactPreview _value, $Res Function(_ContactPreview) _then)
       : super(_value, (v) => _then(v as _ContactPreview));
 
   @override
@@ -163,8 +171,10 @@ class __$ContactPreviewCopyWithImpl<$Res> extends _$ContactPreviewCopyWithImpl<$
       error: error == freezed ? _value.error : error as String,
       phone: phone == freezed ? _value.phone : phone as String,
       givenName: givenName == freezed ? _value.givenName : givenName as String,
-      familyName: familyName == freezed ? _value.familyName : familyName as String,
-      patronymic: patronymic == freezed ? _value.patronymic : patronymic as String,
+      familyName:
+          familyName == freezed ? _value.familyName : familyName as String,
+      patronymic:
+          patronymic == freezed ? _value.patronymic : patronymic as String,
       role: role == freezed ? _value.role : role as String,
       section: section == freezed ? _value.section : section as String,
     ));
@@ -189,7 +199,8 @@ class _$_ContactPreview implements _ContactPreview {
         assert(role != null),
         assert(section != null);
 
-  factory _$_ContactPreview.fromJson(Map<String, dynamic> json) => _$_$_ContactPreviewFromJson(json);
+  factory _$_ContactPreview.fromJson(Map<String, dynamic> json) =>
+      _$_$_ContactPreviewFromJson(json);
 
   @override
 
@@ -236,16 +247,23 @@ class _$_ContactPreview implements _ContactPreview {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _ContactPreview &&
-            (identical(other.error, error) || const DeepCollectionEquality().equals(other.error, error)) &&
-            (identical(other.phone, phone) || const DeepCollectionEquality().equals(other.phone, phone)) &&
+            (identical(other.error, error) ||
+                const DeepCollectionEquality().equals(other.error, error)) &&
+            (identical(other.phone, phone) ||
+                const DeepCollectionEquality().equals(other.phone, phone)) &&
             (identical(other.givenName, givenName) ||
-                const DeepCollectionEquality().equals(other.givenName, givenName)) &&
+                const DeepCollectionEquality()
+                    .equals(other.givenName, givenName)) &&
             (identical(other.familyName, familyName) ||
-                const DeepCollectionEquality().equals(other.familyName, familyName)) &&
+                const DeepCollectionEquality()
+                    .equals(other.familyName, familyName)) &&
             (identical(other.patronymic, patronymic) ||
-                const DeepCollectionEquality().equals(other.patronymic, patronymic)) &&
-            (identical(other.role, role) || const DeepCollectionEquality().equals(other.role, role)) &&
-            (identical(other.section, section) || const DeepCollectionEquality().equals(other.section, section)));
+                const DeepCollectionEquality()
+                    .equals(other.patronymic, patronymic)) &&
+            (identical(other.role, role) ||
+                const DeepCollectionEquality().equals(other.role, role)) &&
+            (identical(other.section, section) ||
+                const DeepCollectionEquality().equals(other.section, section)));
   }
 
   @override
@@ -280,7 +298,8 @@ abstract class _ContactPreview implements ContactPreview {
       @required @JsonKey(name: 'role') String role,
       @required @JsonKey(name: 'section') String section}) = _$_ContactPreview;
 
-  factory _ContactPreview.fromJson(Map<String, dynamic> json) = _$_ContactPreview.fromJson;
+  factory _ContactPreview.fromJson(Map<String, dynamic> json) =
+      _$_ContactPreview.fromJson;
 
   @override
 

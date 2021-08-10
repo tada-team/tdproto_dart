@@ -19,7 +19,8 @@ _$_ShortMessage _$_$_ShortMessageFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_ShortMessageToJson(_$_ShortMessage instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_ShortMessageToJson(_$_ShortMessage instance) =>
+    <String, dynamic>{
       'from': instance.from,
       'to': instance.to,
       'message_id': instance.messageId,

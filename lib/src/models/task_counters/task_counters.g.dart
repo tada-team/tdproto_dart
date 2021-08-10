@@ -14,7 +14,8 @@ _$_TaskCounters _$_$_TaskCountersFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_TaskCountersToJson(_$_TaskCounters instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_TaskCountersToJson(_$_TaskCounters instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'num_unread': instance.numUnread,
       'num_unread_notices': instance.numUnreadNotices,

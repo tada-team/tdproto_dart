@@ -13,7 +13,8 @@ _$_OAuthService _$_$_OAuthServiceFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_OAuthServiceToJson(_$_OAuthService instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_OAuthServiceToJson(_$_OAuthService instance) =>
+    <String, dynamic>{
       'name': instance.name,
       'url': instance.url,
     };

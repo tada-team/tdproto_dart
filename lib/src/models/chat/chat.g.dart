@@ -14,7 +14,9 @@ _$_Chat _$_$_ChatFromJson(Map<String, dynamic> json) {
     gentime: json['gentime'] as int,
     created: const DateTimeConverter().fromJson(json['created'] as String),
     displayName: json['display_name'] as String,
-    icons: json['icons'] == null ? null : IconData.fromJson(json['icons'] as Map<String, dynamic>),
+    icons: json['icons'] == null
+        ? null
+        : IconData.fromJson(json['icons'] as Map<String, dynamic>),
     countersEnabled: json['counters_enabled'] as bool,
     canCall: json['can_call'] as bool,
     canSendMessage: json['can_send_message'] as bool,
@@ -27,21 +29,26 @@ _$_Chat _$_$_ChatFromJson(Map<String, dynamic> json) {
     numImportants: json['num_importants'] as int,
     numUnread: json['num_unread'] as int,
     numUnreadNotices: json['num_unread_notices'] as int,
-    lastMessage: json['last_message'] == null ? null : Message.fromJson(json['last_message'] as Map<String, dynamic>),
+    lastMessage: json['last_message'] == null
+        ? null
+        : Message.fromJson(json['last_message'] as Map<String, dynamic>),
     lastReadMessageId: json['last_read_message_id'] as String,
     section: json['section'] as String,
-    changeableFields: (json['changeable_fields'] as List)?.map((e) => e as String)?.toList(),
+    changeableFields:
+        (json['changeable_fields'] as List)?.map((e) => e as String)?.toList(),
     pinned: json['pinned'] as bool,
     pinnedSortOrdering: json['pinned_sort_ordering'] as int,
     numMembers: json['num_members'] as int,
     canDelete: json['can_delete'] as bool,
     description: json['description'] as String,
     markup: (json['markup'] as List)
-        ?.map((e) => e == null ? null : MarkupEntity.fromJson(e as Map<String, dynamic>))
+        ?.map((e) =>
+            e == null ? null : MarkupEntity.fromJson(e as Map<String, dynamic>))
         ?.toList(),
     feed: json['feed'] as bool,
-    pinnedMessage:
-        json['pinned_message'] == null ? null : Message.fromJson(json['pinned_message'] as Map<String, dynamic>),
+    pinnedMessage: json['pinned_message'] == null
+        ? null
+        : Message.fromJson(json['pinned_message'] as Map<String, dynamic>),
     colorIndex: json['color_index'] as int,
     numItems: json['num_items'] as int,
     numCheckedItems: json['num_checked_items'] as int,
@@ -55,23 +62,33 @@ _$_Chat _$_$_ChatFromJson(Map<String, dynamic> json) {
     doneReason: json['done_reason'] as String,
     deadline: const DateTimeConverter().fromJson(json['deadline'] as String),
     deadlineExpired: json['deadline_expired'] as bool,
-    links: json['links'] == null ? null : MessageLink.fromJson(json['links'] as Map<String, dynamic>),
+    links: json['links'] == null
+        ? null
+        : MessageLink.fromJson(json['links'] as Map<String, dynamic>),
     tags: (json['tags'] as List)?.map((e) => e as String)?.toList(),
     importance: json['importance'] as int,
     urgency: json['urgency'] as int,
     spentTime: json['spent_time'] as int,
     complexity: json['complexity'] as int,
     linkedMessages: json['linked_messages'] as List,
-    uploads:
-        (json['uploads'] as List)?.map((e) => e == null ? null : Upload.fromJson(e as Map<String, dynamic>))?.toList(),
-    items:
-        (json['items'] as List)?.map((e) => e == null ? null : TaskItem.fromJson(e as Map<String, dynamic>))?.toList(),
-    parents:
-        (json['parents'] as List)?.map((e) => e == null ? null : Subtask.fromJson(e as Map<String, dynamic>))?.toList(),
+    uploads: (json['uploads'] as List)
+        ?.map((e) =>
+            e == null ? null : Upload.fromJson(e as Map<String, dynamic>))
+        ?.toList(),
+    items: (json['items'] as List)
+        ?.map((e) =>
+            e == null ? null : TaskItem.fromJson(e as Map<String, dynamic>))
+        ?.toList(),
+    parents: (json['parents'] as List)
+        ?.map((e) =>
+            e == null ? null : Subtask.fromJson(e as Map<String, dynamic>))
+        ?.toList(),
     tabs: (json['tabs'] as List)?.map((e) => e as String)?.toList(),
     status: json['status'] as String,
     members: (json['members'] as List)
-        ?.map((e) => e == null ? null : GroupMembership.fromJson(e as Map<String, dynamic>))
+        ?.map((e) => e == null
+            ? null
+            : GroupMembership.fromJson(e as Map<String, dynamic>))
         ?.toList(),
     canAddMember: json['can_add_member'] as bool,
     canRemoveMember: json['can_remove_member'] as bool,
@@ -84,7 +101,8 @@ _$_Chat _$_$_ChatFromJson(Map<String, dynamic> json) {
     canJoin: json['can_join'] as bool,
     canDeleteAnyMessage: json['can_delete_any_message'] as bool,
     canSetImportantAnyMessage: json['can_set_important_any_message'] as bool,
-    lastActivity: const DateTimeConverter().fromJson(json['last_activity'] as String),
+    lastActivity:
+        const DateTimeConverter().fromJson(json['last_activity'] as String),
     draftNum: json['draft_num'] as int,
   );
 }

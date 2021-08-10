@@ -17,7 +17,9 @@ class _$PdfVersionTearOff {
   const _$PdfVersionTearOff();
 
 // ignore: unused_element
-  _PdfVersion call({@required @JsonKey(name: 'url') String url, @JsonKey(name: 'text_preview') String textPreview}) {
+  _PdfVersion call(
+      {@required @JsonKey(name: 'url') String url,
+      @JsonKey(name: 'text_preview') String textPreview}) {
     return _PdfVersion(
       url: url,
       textPreview: textPreview,
@@ -51,8 +53,12 @@ mixin _$PdfVersion {
 
 /// @nodoc
 abstract class $PdfVersionCopyWith<$Res> {
-  factory $PdfVersionCopyWith(PdfVersion value, $Res Function(PdfVersion) then) = _$PdfVersionCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'url') String url, @JsonKey(name: 'text_preview') String textPreview});
+  factory $PdfVersionCopyWith(
+          PdfVersion value, $Res Function(PdfVersion) then) =
+      _$PdfVersionCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'url') String url,
+      @JsonKey(name: 'text_preview') String textPreview});
 }
 
 /// @nodoc
@@ -70,21 +76,28 @@ class _$PdfVersionCopyWithImpl<$Res> implements $PdfVersionCopyWith<$Res> {
   }) {
     return _then(_value.copyWith(
       url: url == freezed ? _value.url : url as String,
-      textPreview: textPreview == freezed ? _value.textPreview : textPreview as String,
+      textPreview:
+          textPreview == freezed ? _value.textPreview : textPreview as String,
     ));
   }
 }
 
 /// @nodoc
 abstract class _$PdfVersionCopyWith<$Res> implements $PdfVersionCopyWith<$Res> {
-  factory _$PdfVersionCopyWith(_PdfVersion value, $Res Function(_PdfVersion) then) = __$PdfVersionCopyWithImpl<$Res>;
+  factory _$PdfVersionCopyWith(
+          _PdfVersion value, $Res Function(_PdfVersion) then) =
+      __$PdfVersionCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'url') String url, @JsonKey(name: 'text_preview') String textPreview});
+  $Res call(
+      {@JsonKey(name: 'url') String url,
+      @JsonKey(name: 'text_preview') String textPreview});
 }
 
 /// @nodoc
-class __$PdfVersionCopyWithImpl<$Res> extends _$PdfVersionCopyWithImpl<$Res> implements _$PdfVersionCopyWith<$Res> {
-  __$PdfVersionCopyWithImpl(_PdfVersion _value, $Res Function(_PdfVersion) _then)
+class __$PdfVersionCopyWithImpl<$Res> extends _$PdfVersionCopyWithImpl<$Res>
+    implements _$PdfVersionCopyWith<$Res> {
+  __$PdfVersionCopyWithImpl(
+      _PdfVersion _value, $Res Function(_PdfVersion) _then)
       : super(_value, (v) => _then(v as _PdfVersion));
 
   @override
@@ -97,7 +110,8 @@ class __$PdfVersionCopyWithImpl<$Res> extends _$PdfVersionCopyWithImpl<$Res> imp
   }) {
     return _then(_PdfVersion(
       url: url == freezed ? _value.url : url as String,
-      textPreview: textPreview == freezed ? _value.textPreview : textPreview as String,
+      textPreview:
+          textPreview == freezed ? _value.textPreview : textPreview as String,
     ));
   }
 }
@@ -106,10 +120,13 @@ class __$PdfVersionCopyWithImpl<$Res> extends _$PdfVersionCopyWithImpl<$Res> imp
 
 /// @nodoc
 class _$_PdfVersion implements _PdfVersion {
-  const _$_PdfVersion({@required @JsonKey(name: 'url') this.url, @JsonKey(name: 'text_preview') this.textPreview})
+  const _$_PdfVersion(
+      {@required @JsonKey(name: 'url') this.url,
+      @JsonKey(name: 'text_preview') this.textPreview})
       : assert(url != null);
 
-  factory _$_PdfVersion.fromJson(Map<String, dynamic> json) => _$_$_PdfVersionFromJson(json);
+  factory _$_PdfVersion.fromJson(Map<String, dynamic> json) =>
+      _$_$_PdfVersionFromJson(json);
 
   @override
 
@@ -131,9 +148,11 @@ class _$_PdfVersion implements _PdfVersion {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _PdfVersion &&
-            (identical(other.url, url) || const DeepCollectionEquality().equals(other.url, url)) &&
+            (identical(other.url, url) ||
+                const DeepCollectionEquality().equals(other.url, url)) &&
             (identical(other.textPreview, textPreview) ||
-                const DeepCollectionEquality().equals(other.textPreview, textPreview)));
+                const DeepCollectionEquality()
+                    .equals(other.textPreview, textPreview)));
   }
 
   @override
@@ -144,7 +163,8 @@ class _$_PdfVersion implements _PdfVersion {
 
   @JsonKey(ignore: true)
   @override
-  _$PdfVersionCopyWith<_PdfVersion> get copyWith => __$PdfVersionCopyWithImpl<_PdfVersion>(this, _$identity);
+  _$PdfVersionCopyWith<_PdfVersion> get copyWith =>
+      __$PdfVersionCopyWithImpl<_PdfVersion>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -154,9 +174,11 @@ class _$_PdfVersion implements _PdfVersion {
 
 abstract class _PdfVersion implements PdfVersion {
   const factory _PdfVersion(
-      {@required @JsonKey(name: 'url') String url, @JsonKey(name: 'text_preview') String textPreview}) = _$_PdfVersion;
+      {@required @JsonKey(name: 'url') String url,
+      @JsonKey(name: 'text_preview') String textPreview}) = _$_PdfVersion;
 
-  factory _PdfVersion.fromJson(Map<String, dynamic> json) = _$_PdfVersion.fromJson;
+  factory _PdfVersion.fromJson(Map<String, dynamic> json) =
+      _$_PdfVersion.fromJson;
 
   @override
 

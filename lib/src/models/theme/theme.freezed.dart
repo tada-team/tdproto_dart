@@ -18,44 +18,122 @@ class _$ThemeTearOff {
 
 // ignore: unused_element
   _Theme call(
-      {@required @JsonKey(name: 'BgColor') String bgColor,
-      @required @JsonKey(name: 'BgHoverColor') String bgHoverColor,
-      @required @JsonKey(name: 'TextColor') String textColor,
-      @required @JsonKey(name: 'MutedTextColor') String mutedTextColor,
-      @required @JsonKey(name: 'AccentColor') String accentColor,
-      @required @JsonKey(name: 'AccentHoverColor') String accentHoverColor,
-      @required @JsonKey(name: 'TextOnAccentHoverColor') String textOnAccentHoverColor,
-      @required @JsonKey(name: 'MainAccent') String mainAccent,
-      @required @JsonKey(name: 'MainAccentHover') String mainAccentHover,
-      @required @JsonKey(name: 'MainLightAccent') String mainLightAccent,
-      @required @JsonKey(name: 'MainLink') String mainLink,
-      @required @JsonKey(name: 'brand') String brand,
-      @required @JsonKey(name: 'brand_dark') String brandDark,
-      @required @JsonKey(name: 'brand_light') String brandLight,
-      @required @JsonKey(name: 'back') String back,
-      @required @JsonKey(name: 'back_light') String backLight,
-      @required @JsonKey(name: 'back_dark') String backDark,
-      @required @JsonKey(name: 'success') String success,
-      @required @JsonKey(name: 'success_light') String successLight,
-      @required @JsonKey(name: 'error') String error,
-      @required @JsonKey(name: 'error_light') String errorLight,
-      @required @JsonKey(name: 'background') String background,
-      @required @JsonKey(name: 'tab_background') String tabBackground,
-      @required @JsonKey(name: 'chat_input_background') String chatInputBackground,
-      @required @JsonKey(name: 'substrate_background') String substrateBackground,
-      @required @JsonKey(name: 'modal_background') String modalBackground,
-      @required @JsonKey(name: 'title_background') String titleBackground,
-      @required @JsonKey(name: 'attention') String attention,
-      @required @JsonKey(name: 'attention_light') String attentionLight,
-      @required @JsonKey(name: 'font') FontColors font,
-      @required @JsonKey(name: 'message') MessageColors message,
-      @required @JsonKey(name: 'switcher') SwitcherColors switcher,
-      @required @JsonKey(name: 'button') ButtonColors button,
-      @required @JsonKey(name: 'input') InputColors input,
-      @required @JsonKey(name: 'ic') IconColors icon,
-      @required @JsonKey(name: 'web_base') WebBase webBase,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'AppAccentColor') String appAccentColor,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'AppPrimaryColor') String appPrimaryColor}) {
+      {@required
+      @JsonKey(name: 'BgColor')
+          String bgColor,
+      @required
+      @JsonKey(name: 'BgHoverColor')
+          String bgHoverColor,
+      @required
+      @JsonKey(name: 'TextColor')
+          String textColor,
+      @required
+      @JsonKey(name: 'MutedTextColor')
+          String mutedTextColor,
+      @required
+      @JsonKey(name: 'AccentColor')
+          String accentColor,
+      @required
+      @JsonKey(name: 'AccentHoverColor')
+          String accentHoverColor,
+      @required
+      @JsonKey(name: 'TextOnAccentHoverColor')
+          String textOnAccentHoverColor,
+      @required
+      @JsonKey(name: 'MainAccent')
+          String mainAccent,
+      @required
+      @JsonKey(name: 'MainAccentHover')
+          String mainAccentHover,
+      @required
+      @JsonKey(name: 'MainLightAccent')
+          String mainLightAccent,
+      @required
+      @JsonKey(name: 'MainLink')
+          String mainLink,
+      @required
+      @JsonKey(name: 'brand')
+          String brand,
+      @required
+      @JsonKey(name: 'brand_dark')
+          String brandDark,
+      @required
+      @JsonKey(name: 'brand_light')
+          String brandLight,
+      @required
+      @JsonKey(name: 'back')
+          String back,
+      @required
+      @JsonKey(name: 'back_light')
+          String backLight,
+      @required
+      @JsonKey(name: 'back_dark')
+          String backDark,
+      @required
+      @JsonKey(name: 'success')
+          String success,
+      @required
+      @JsonKey(name: 'success_light')
+          String successLight,
+      @required
+      @JsonKey(name: 'error')
+          String error,
+      @required
+      @JsonKey(name: 'error_light')
+          String errorLight,
+      @required
+      @JsonKey(name: 'background')
+          String background,
+      @required
+      @JsonKey(name: 'tab_background')
+          String tabBackground,
+      @required
+      @JsonKey(name: 'chat_input_background')
+          String chatInputBackground,
+      @required
+      @JsonKey(name: 'substrate_background')
+          String substrateBackground,
+      @required
+      @JsonKey(name: 'modal_background')
+          String modalBackground,
+      @required
+      @JsonKey(name: 'title_background')
+          String titleBackground,
+      @required
+      @JsonKey(name: 'attention')
+          String attention,
+      @required
+      @JsonKey(name: 'attention_light')
+          String attentionLight,
+      @required
+      @JsonKey(name: 'font')
+          FontColors font,
+      @required
+      @JsonKey(name: 'message')
+          MessageColors message,
+      @required
+      @JsonKey(name: 'switcher')
+          SwitcherColors switcher,
+      @required
+      @JsonKey(name: 'button')
+          ButtonColors button,
+      @required
+      @JsonKey(name: 'input')
+          InputColors input,
+      @required
+      @JsonKey(name: 'ic')
+          IconColors icon,
+      @required
+      @JsonKey(name: 'web_base')
+          WebBase webBase,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'AppAccentColor')
+          String appAccentColor,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'AppPrimaryColor')
+          String appPrimaryColor}) {
     return _Theme(
       bgColor: bgColor,
       bgHoverColor: bgHoverColor,
@@ -271,46 +349,87 @@ mixin _$Theme {
 
 /// @nodoc
 abstract class $ThemeCopyWith<$Res> {
-  factory $ThemeCopyWith(Theme value, $Res Function(Theme) then) = _$ThemeCopyWithImpl<$Res>;
+  factory $ThemeCopyWith(Theme value, $Res Function(Theme) then) =
+      _$ThemeCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'BgColor') String bgColor,
-      @JsonKey(name: 'BgHoverColor') String bgHoverColor,
-      @JsonKey(name: 'TextColor') String textColor,
-      @JsonKey(name: 'MutedTextColor') String mutedTextColor,
-      @JsonKey(name: 'AccentColor') String accentColor,
-      @JsonKey(name: 'AccentHoverColor') String accentHoverColor,
-      @JsonKey(name: 'TextOnAccentHoverColor') String textOnAccentHoverColor,
-      @JsonKey(name: 'MainAccent') String mainAccent,
-      @JsonKey(name: 'MainAccentHover') String mainAccentHover,
-      @JsonKey(name: 'MainLightAccent') String mainLightAccent,
-      @JsonKey(name: 'MainLink') String mainLink,
-      @JsonKey(name: 'brand') String brand,
-      @JsonKey(name: 'brand_dark') String brandDark,
-      @JsonKey(name: 'brand_light') String brandLight,
-      @JsonKey(name: 'back') String back,
-      @JsonKey(name: 'back_light') String backLight,
-      @JsonKey(name: 'back_dark') String backDark,
-      @JsonKey(name: 'success') String success,
-      @JsonKey(name: 'success_light') String successLight,
-      @JsonKey(name: 'error') String error,
-      @JsonKey(name: 'error_light') String errorLight,
-      @JsonKey(name: 'background') String background,
-      @JsonKey(name: 'tab_background') String tabBackground,
-      @JsonKey(name: 'chat_input_background') String chatInputBackground,
-      @JsonKey(name: 'substrate_background') String substrateBackground,
-      @JsonKey(name: 'modal_background') String modalBackground,
-      @JsonKey(name: 'title_background') String titleBackground,
-      @JsonKey(name: 'attention') String attention,
-      @JsonKey(name: 'attention_light') String attentionLight,
-      @JsonKey(name: 'font') FontColors font,
-      @JsonKey(name: 'message') MessageColors message,
-      @JsonKey(name: 'switcher') SwitcherColors switcher,
-      @JsonKey(name: 'button') ButtonColors button,
-      @JsonKey(name: 'input') InputColors input,
-      @JsonKey(name: 'ic') IconColors icon,
-      @JsonKey(name: 'web_base') WebBase webBase,
-      @Deprecated('Deprecated.') @JsonKey(name: 'AppAccentColor') String appAccentColor,
-      @Deprecated('Deprecated.') @JsonKey(name: 'AppPrimaryColor') String appPrimaryColor});
+      {@JsonKey(name: 'BgColor')
+          String bgColor,
+      @JsonKey(name: 'BgHoverColor')
+          String bgHoverColor,
+      @JsonKey(name: 'TextColor')
+          String textColor,
+      @JsonKey(name: 'MutedTextColor')
+          String mutedTextColor,
+      @JsonKey(name: 'AccentColor')
+          String accentColor,
+      @JsonKey(name: 'AccentHoverColor')
+          String accentHoverColor,
+      @JsonKey(name: 'TextOnAccentHoverColor')
+          String textOnAccentHoverColor,
+      @JsonKey(name: 'MainAccent')
+          String mainAccent,
+      @JsonKey(name: 'MainAccentHover')
+          String mainAccentHover,
+      @JsonKey(name: 'MainLightAccent')
+          String mainLightAccent,
+      @JsonKey(name: 'MainLink')
+          String mainLink,
+      @JsonKey(name: 'brand')
+          String brand,
+      @JsonKey(name: 'brand_dark')
+          String brandDark,
+      @JsonKey(name: 'brand_light')
+          String brandLight,
+      @JsonKey(name: 'back')
+          String back,
+      @JsonKey(name: 'back_light')
+          String backLight,
+      @JsonKey(name: 'back_dark')
+          String backDark,
+      @JsonKey(name: 'success')
+          String success,
+      @JsonKey(name: 'success_light')
+          String successLight,
+      @JsonKey(name: 'error')
+          String error,
+      @JsonKey(name: 'error_light')
+          String errorLight,
+      @JsonKey(name: 'background')
+          String background,
+      @JsonKey(name: 'tab_background')
+          String tabBackground,
+      @JsonKey(name: 'chat_input_background')
+          String chatInputBackground,
+      @JsonKey(name: 'substrate_background')
+          String substrateBackground,
+      @JsonKey(name: 'modal_background')
+          String modalBackground,
+      @JsonKey(name: 'title_background')
+          String titleBackground,
+      @JsonKey(name: 'attention')
+          String attention,
+      @JsonKey(name: 'attention_light')
+          String attentionLight,
+      @JsonKey(name: 'font')
+          FontColors font,
+      @JsonKey(name: 'message')
+          MessageColors message,
+      @JsonKey(name: 'switcher')
+          SwitcherColors switcher,
+      @JsonKey(name: 'button')
+          ButtonColors button,
+      @JsonKey(name: 'input')
+          InputColors input,
+      @JsonKey(name: 'ic')
+          IconColors icon,
+      @JsonKey(name: 'web_base')
+          WebBase webBase,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'AppAccentColor')
+          String appAccentColor,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'AppPrimaryColor')
+          String appPrimaryColor});
 
   $FontColorsCopyWith<$Res> get font;
   $MessageColorsCopyWith<$Res> get message;
@@ -372,44 +491,79 @@ class _$ThemeCopyWithImpl<$Res> implements $ThemeCopyWith<$Res> {
   }) {
     return _then(_value.copyWith(
       bgColor: bgColor == freezed ? _value.bgColor : bgColor as String,
-      bgHoverColor: bgHoverColor == freezed ? _value.bgHoverColor : bgHoverColor as String,
+      bgHoverColor: bgHoverColor == freezed
+          ? _value.bgHoverColor
+          : bgHoverColor as String,
       textColor: textColor == freezed ? _value.textColor : textColor as String,
-      mutedTextColor: mutedTextColor == freezed ? _value.mutedTextColor : mutedTextColor as String,
-      accentColor: accentColor == freezed ? _value.accentColor : accentColor as String,
-      accentHoverColor: accentHoverColor == freezed ? _value.accentHoverColor : accentHoverColor as String,
-      textOnAccentHoverColor:
-          textOnAccentHoverColor == freezed ? _value.textOnAccentHoverColor : textOnAccentHoverColor as String,
-      mainAccent: mainAccent == freezed ? _value.mainAccent : mainAccent as String,
-      mainAccentHover: mainAccentHover == freezed ? _value.mainAccentHover : mainAccentHover as String,
-      mainLightAccent: mainLightAccent == freezed ? _value.mainLightAccent : mainLightAccent as String,
+      mutedTextColor: mutedTextColor == freezed
+          ? _value.mutedTextColor
+          : mutedTextColor as String,
+      accentColor:
+          accentColor == freezed ? _value.accentColor : accentColor as String,
+      accentHoverColor: accentHoverColor == freezed
+          ? _value.accentHoverColor
+          : accentHoverColor as String,
+      textOnAccentHoverColor: textOnAccentHoverColor == freezed
+          ? _value.textOnAccentHoverColor
+          : textOnAccentHoverColor as String,
+      mainAccent:
+          mainAccent == freezed ? _value.mainAccent : mainAccent as String,
+      mainAccentHover: mainAccentHover == freezed
+          ? _value.mainAccentHover
+          : mainAccentHover as String,
+      mainLightAccent: mainLightAccent == freezed
+          ? _value.mainLightAccent
+          : mainLightAccent as String,
       mainLink: mainLink == freezed ? _value.mainLink : mainLink as String,
       brand: brand == freezed ? _value.brand : brand as String,
       brandDark: brandDark == freezed ? _value.brandDark : brandDark as String,
-      brandLight: brandLight == freezed ? _value.brandLight : brandLight as String,
+      brandLight:
+          brandLight == freezed ? _value.brandLight : brandLight as String,
       back: back == freezed ? _value.back : back as String,
       backLight: backLight == freezed ? _value.backLight : backLight as String,
       backDark: backDark == freezed ? _value.backDark : backDark as String,
       success: success == freezed ? _value.success : success as String,
-      successLight: successLight == freezed ? _value.successLight : successLight as String,
+      successLight: successLight == freezed
+          ? _value.successLight
+          : successLight as String,
       error: error == freezed ? _value.error : error as String,
-      errorLight: errorLight == freezed ? _value.errorLight : errorLight as String,
-      background: background == freezed ? _value.background : background as String,
-      tabBackground: tabBackground == freezed ? _value.tabBackground : tabBackground as String,
-      chatInputBackground: chatInputBackground == freezed ? _value.chatInputBackground : chatInputBackground as String,
-      substrateBackground: substrateBackground == freezed ? _value.substrateBackground : substrateBackground as String,
-      modalBackground: modalBackground == freezed ? _value.modalBackground : modalBackground as String,
-      titleBackground: titleBackground == freezed ? _value.titleBackground : titleBackground as String,
+      errorLight:
+          errorLight == freezed ? _value.errorLight : errorLight as String,
+      background:
+          background == freezed ? _value.background : background as String,
+      tabBackground: tabBackground == freezed
+          ? _value.tabBackground
+          : tabBackground as String,
+      chatInputBackground: chatInputBackground == freezed
+          ? _value.chatInputBackground
+          : chatInputBackground as String,
+      substrateBackground: substrateBackground == freezed
+          ? _value.substrateBackground
+          : substrateBackground as String,
+      modalBackground: modalBackground == freezed
+          ? _value.modalBackground
+          : modalBackground as String,
+      titleBackground: titleBackground == freezed
+          ? _value.titleBackground
+          : titleBackground as String,
       attention: attention == freezed ? _value.attention : attention as String,
-      attentionLight: attentionLight == freezed ? _value.attentionLight : attentionLight as String,
+      attentionLight: attentionLight == freezed
+          ? _value.attentionLight
+          : attentionLight as String,
       font: font == freezed ? _value.font : font as FontColors,
       message: message == freezed ? _value.message : message as MessageColors,
-      switcher: switcher == freezed ? _value.switcher : switcher as SwitcherColors,
+      switcher:
+          switcher == freezed ? _value.switcher : switcher as SwitcherColors,
       button: button == freezed ? _value.button : button as ButtonColors,
       input: input == freezed ? _value.input : input as InputColors,
       icon: icon == freezed ? _value.icon : icon as IconColors,
       webBase: webBase == freezed ? _value.webBase : webBase as WebBase,
-      appAccentColor: appAccentColor == freezed ? _value.appAccentColor : appAccentColor as String,
-      appPrimaryColor: appPrimaryColor == freezed ? _value.appPrimaryColor : appPrimaryColor as String,
+      appAccentColor: appAccentColor == freezed
+          ? _value.appAccentColor
+          : appAccentColor as String,
+      appPrimaryColor: appPrimaryColor == freezed
+          ? _value.appPrimaryColor
+          : appPrimaryColor as String,
     ));
   }
 
@@ -486,47 +640,88 @@ class _$ThemeCopyWithImpl<$Res> implements $ThemeCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$ThemeCopyWith<$Res> implements $ThemeCopyWith<$Res> {
-  factory _$ThemeCopyWith(_Theme value, $Res Function(_Theme) then) = __$ThemeCopyWithImpl<$Res>;
+  factory _$ThemeCopyWith(_Theme value, $Res Function(_Theme) then) =
+      __$ThemeCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'BgColor') String bgColor,
-      @JsonKey(name: 'BgHoverColor') String bgHoverColor,
-      @JsonKey(name: 'TextColor') String textColor,
-      @JsonKey(name: 'MutedTextColor') String mutedTextColor,
-      @JsonKey(name: 'AccentColor') String accentColor,
-      @JsonKey(name: 'AccentHoverColor') String accentHoverColor,
-      @JsonKey(name: 'TextOnAccentHoverColor') String textOnAccentHoverColor,
-      @JsonKey(name: 'MainAccent') String mainAccent,
-      @JsonKey(name: 'MainAccentHover') String mainAccentHover,
-      @JsonKey(name: 'MainLightAccent') String mainLightAccent,
-      @JsonKey(name: 'MainLink') String mainLink,
-      @JsonKey(name: 'brand') String brand,
-      @JsonKey(name: 'brand_dark') String brandDark,
-      @JsonKey(name: 'brand_light') String brandLight,
-      @JsonKey(name: 'back') String back,
-      @JsonKey(name: 'back_light') String backLight,
-      @JsonKey(name: 'back_dark') String backDark,
-      @JsonKey(name: 'success') String success,
-      @JsonKey(name: 'success_light') String successLight,
-      @JsonKey(name: 'error') String error,
-      @JsonKey(name: 'error_light') String errorLight,
-      @JsonKey(name: 'background') String background,
-      @JsonKey(name: 'tab_background') String tabBackground,
-      @JsonKey(name: 'chat_input_background') String chatInputBackground,
-      @JsonKey(name: 'substrate_background') String substrateBackground,
-      @JsonKey(name: 'modal_background') String modalBackground,
-      @JsonKey(name: 'title_background') String titleBackground,
-      @JsonKey(name: 'attention') String attention,
-      @JsonKey(name: 'attention_light') String attentionLight,
-      @JsonKey(name: 'font') FontColors font,
-      @JsonKey(name: 'message') MessageColors message,
-      @JsonKey(name: 'switcher') SwitcherColors switcher,
-      @JsonKey(name: 'button') ButtonColors button,
-      @JsonKey(name: 'input') InputColors input,
-      @JsonKey(name: 'ic') IconColors icon,
-      @JsonKey(name: 'web_base') WebBase webBase,
-      @Deprecated('Deprecated.') @JsonKey(name: 'AppAccentColor') String appAccentColor,
-      @Deprecated('Deprecated.') @JsonKey(name: 'AppPrimaryColor') String appPrimaryColor});
+      {@JsonKey(name: 'BgColor')
+          String bgColor,
+      @JsonKey(name: 'BgHoverColor')
+          String bgHoverColor,
+      @JsonKey(name: 'TextColor')
+          String textColor,
+      @JsonKey(name: 'MutedTextColor')
+          String mutedTextColor,
+      @JsonKey(name: 'AccentColor')
+          String accentColor,
+      @JsonKey(name: 'AccentHoverColor')
+          String accentHoverColor,
+      @JsonKey(name: 'TextOnAccentHoverColor')
+          String textOnAccentHoverColor,
+      @JsonKey(name: 'MainAccent')
+          String mainAccent,
+      @JsonKey(name: 'MainAccentHover')
+          String mainAccentHover,
+      @JsonKey(name: 'MainLightAccent')
+          String mainLightAccent,
+      @JsonKey(name: 'MainLink')
+          String mainLink,
+      @JsonKey(name: 'brand')
+          String brand,
+      @JsonKey(name: 'brand_dark')
+          String brandDark,
+      @JsonKey(name: 'brand_light')
+          String brandLight,
+      @JsonKey(name: 'back')
+          String back,
+      @JsonKey(name: 'back_light')
+          String backLight,
+      @JsonKey(name: 'back_dark')
+          String backDark,
+      @JsonKey(name: 'success')
+          String success,
+      @JsonKey(name: 'success_light')
+          String successLight,
+      @JsonKey(name: 'error')
+          String error,
+      @JsonKey(name: 'error_light')
+          String errorLight,
+      @JsonKey(name: 'background')
+          String background,
+      @JsonKey(name: 'tab_background')
+          String tabBackground,
+      @JsonKey(name: 'chat_input_background')
+          String chatInputBackground,
+      @JsonKey(name: 'substrate_background')
+          String substrateBackground,
+      @JsonKey(name: 'modal_background')
+          String modalBackground,
+      @JsonKey(name: 'title_background')
+          String titleBackground,
+      @JsonKey(name: 'attention')
+          String attention,
+      @JsonKey(name: 'attention_light')
+          String attentionLight,
+      @JsonKey(name: 'font')
+          FontColors font,
+      @JsonKey(name: 'message')
+          MessageColors message,
+      @JsonKey(name: 'switcher')
+          SwitcherColors switcher,
+      @JsonKey(name: 'button')
+          ButtonColors button,
+      @JsonKey(name: 'input')
+          InputColors input,
+      @JsonKey(name: 'ic')
+          IconColors icon,
+      @JsonKey(name: 'web_base')
+          WebBase webBase,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'AppAccentColor')
+          String appAccentColor,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'AppPrimaryColor')
+          String appPrimaryColor});
 
   @override
   $FontColorsCopyWith<$Res> get font;
@@ -545,8 +740,10 @@ abstract class _$ThemeCopyWith<$Res> implements $ThemeCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$ThemeCopyWithImpl<$Res> extends _$ThemeCopyWithImpl<$Res> implements _$ThemeCopyWith<$Res> {
-  __$ThemeCopyWithImpl(_Theme _value, $Res Function(_Theme) _then) : super(_value, (v) => _then(v as _Theme));
+class __$ThemeCopyWithImpl<$Res> extends _$ThemeCopyWithImpl<$Res>
+    implements _$ThemeCopyWith<$Res> {
+  __$ThemeCopyWithImpl(_Theme _value, $Res Function(_Theme) _then)
+      : super(_value, (v) => _then(v as _Theme));
 
   @override
   _Theme get _value => super._value as _Theme;
@@ -594,44 +791,79 @@ class __$ThemeCopyWithImpl<$Res> extends _$ThemeCopyWithImpl<$Res> implements _$
   }) {
     return _then(_Theme(
       bgColor: bgColor == freezed ? _value.bgColor : bgColor as String,
-      bgHoverColor: bgHoverColor == freezed ? _value.bgHoverColor : bgHoverColor as String,
+      bgHoverColor: bgHoverColor == freezed
+          ? _value.bgHoverColor
+          : bgHoverColor as String,
       textColor: textColor == freezed ? _value.textColor : textColor as String,
-      mutedTextColor: mutedTextColor == freezed ? _value.mutedTextColor : mutedTextColor as String,
-      accentColor: accentColor == freezed ? _value.accentColor : accentColor as String,
-      accentHoverColor: accentHoverColor == freezed ? _value.accentHoverColor : accentHoverColor as String,
-      textOnAccentHoverColor:
-          textOnAccentHoverColor == freezed ? _value.textOnAccentHoverColor : textOnAccentHoverColor as String,
-      mainAccent: mainAccent == freezed ? _value.mainAccent : mainAccent as String,
-      mainAccentHover: mainAccentHover == freezed ? _value.mainAccentHover : mainAccentHover as String,
-      mainLightAccent: mainLightAccent == freezed ? _value.mainLightAccent : mainLightAccent as String,
+      mutedTextColor: mutedTextColor == freezed
+          ? _value.mutedTextColor
+          : mutedTextColor as String,
+      accentColor:
+          accentColor == freezed ? _value.accentColor : accentColor as String,
+      accentHoverColor: accentHoverColor == freezed
+          ? _value.accentHoverColor
+          : accentHoverColor as String,
+      textOnAccentHoverColor: textOnAccentHoverColor == freezed
+          ? _value.textOnAccentHoverColor
+          : textOnAccentHoverColor as String,
+      mainAccent:
+          mainAccent == freezed ? _value.mainAccent : mainAccent as String,
+      mainAccentHover: mainAccentHover == freezed
+          ? _value.mainAccentHover
+          : mainAccentHover as String,
+      mainLightAccent: mainLightAccent == freezed
+          ? _value.mainLightAccent
+          : mainLightAccent as String,
       mainLink: mainLink == freezed ? _value.mainLink : mainLink as String,
       brand: brand == freezed ? _value.brand : brand as String,
       brandDark: brandDark == freezed ? _value.brandDark : brandDark as String,
-      brandLight: brandLight == freezed ? _value.brandLight : brandLight as String,
+      brandLight:
+          brandLight == freezed ? _value.brandLight : brandLight as String,
       back: back == freezed ? _value.back : back as String,
       backLight: backLight == freezed ? _value.backLight : backLight as String,
       backDark: backDark == freezed ? _value.backDark : backDark as String,
       success: success == freezed ? _value.success : success as String,
-      successLight: successLight == freezed ? _value.successLight : successLight as String,
+      successLight: successLight == freezed
+          ? _value.successLight
+          : successLight as String,
       error: error == freezed ? _value.error : error as String,
-      errorLight: errorLight == freezed ? _value.errorLight : errorLight as String,
-      background: background == freezed ? _value.background : background as String,
-      tabBackground: tabBackground == freezed ? _value.tabBackground : tabBackground as String,
-      chatInputBackground: chatInputBackground == freezed ? _value.chatInputBackground : chatInputBackground as String,
-      substrateBackground: substrateBackground == freezed ? _value.substrateBackground : substrateBackground as String,
-      modalBackground: modalBackground == freezed ? _value.modalBackground : modalBackground as String,
-      titleBackground: titleBackground == freezed ? _value.titleBackground : titleBackground as String,
+      errorLight:
+          errorLight == freezed ? _value.errorLight : errorLight as String,
+      background:
+          background == freezed ? _value.background : background as String,
+      tabBackground: tabBackground == freezed
+          ? _value.tabBackground
+          : tabBackground as String,
+      chatInputBackground: chatInputBackground == freezed
+          ? _value.chatInputBackground
+          : chatInputBackground as String,
+      substrateBackground: substrateBackground == freezed
+          ? _value.substrateBackground
+          : substrateBackground as String,
+      modalBackground: modalBackground == freezed
+          ? _value.modalBackground
+          : modalBackground as String,
+      titleBackground: titleBackground == freezed
+          ? _value.titleBackground
+          : titleBackground as String,
       attention: attention == freezed ? _value.attention : attention as String,
-      attentionLight: attentionLight == freezed ? _value.attentionLight : attentionLight as String,
+      attentionLight: attentionLight == freezed
+          ? _value.attentionLight
+          : attentionLight as String,
       font: font == freezed ? _value.font : font as FontColors,
       message: message == freezed ? _value.message : message as MessageColors,
-      switcher: switcher == freezed ? _value.switcher : switcher as SwitcherColors,
+      switcher:
+          switcher == freezed ? _value.switcher : switcher as SwitcherColors,
       button: button == freezed ? _value.button : button as ButtonColors,
       input: input == freezed ? _value.input : input as InputColors,
       icon: icon == freezed ? _value.icon : icon as IconColors,
       webBase: webBase == freezed ? _value.webBase : webBase as WebBase,
-      appAccentColor: appAccentColor == freezed ? _value.appAccentColor : appAccentColor as String,
-      appPrimaryColor: appPrimaryColor == freezed ? _value.appPrimaryColor : appPrimaryColor as String,
+      appAccentColor: appAccentColor == freezed
+          ? _value.appAccentColor
+          : appAccentColor as String,
+      appPrimaryColor: appPrimaryColor == freezed
+          ? _value.appPrimaryColor
+          : appPrimaryColor as String,
     ));
   }
 }
@@ -641,44 +873,122 @@ class __$ThemeCopyWithImpl<$Res> extends _$ThemeCopyWithImpl<$Res> implements _$
 /// @nodoc
 class _$_Theme implements _Theme {
   const _$_Theme(
-      {@required @JsonKey(name: 'BgColor') this.bgColor,
-      @required @JsonKey(name: 'BgHoverColor') this.bgHoverColor,
-      @required @JsonKey(name: 'TextColor') this.textColor,
-      @required @JsonKey(name: 'MutedTextColor') this.mutedTextColor,
-      @required @JsonKey(name: 'AccentColor') this.accentColor,
-      @required @JsonKey(name: 'AccentHoverColor') this.accentHoverColor,
-      @required @JsonKey(name: 'TextOnAccentHoverColor') this.textOnAccentHoverColor,
-      @required @JsonKey(name: 'MainAccent') this.mainAccent,
-      @required @JsonKey(name: 'MainAccentHover') this.mainAccentHover,
-      @required @JsonKey(name: 'MainLightAccent') this.mainLightAccent,
-      @required @JsonKey(name: 'MainLink') this.mainLink,
-      @required @JsonKey(name: 'brand') this.brand,
-      @required @JsonKey(name: 'brand_dark') this.brandDark,
-      @required @JsonKey(name: 'brand_light') this.brandLight,
-      @required @JsonKey(name: 'back') this.back,
-      @required @JsonKey(name: 'back_light') this.backLight,
-      @required @JsonKey(name: 'back_dark') this.backDark,
-      @required @JsonKey(name: 'success') this.success,
-      @required @JsonKey(name: 'success_light') this.successLight,
-      @required @JsonKey(name: 'error') this.error,
-      @required @JsonKey(name: 'error_light') this.errorLight,
-      @required @JsonKey(name: 'background') this.background,
-      @required @JsonKey(name: 'tab_background') this.tabBackground,
-      @required @JsonKey(name: 'chat_input_background') this.chatInputBackground,
-      @required @JsonKey(name: 'substrate_background') this.substrateBackground,
-      @required @JsonKey(name: 'modal_background') this.modalBackground,
-      @required @JsonKey(name: 'title_background') this.titleBackground,
-      @required @JsonKey(name: 'attention') this.attention,
-      @required @JsonKey(name: 'attention_light') this.attentionLight,
-      @required @JsonKey(name: 'font') this.font,
-      @required @JsonKey(name: 'message') this.message,
-      @required @JsonKey(name: 'switcher') this.switcher,
-      @required @JsonKey(name: 'button') this.button,
-      @required @JsonKey(name: 'input') this.input,
-      @required @JsonKey(name: 'ic') this.icon,
-      @required @JsonKey(name: 'web_base') this.webBase,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'AppAccentColor') this.appAccentColor,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'AppPrimaryColor') this.appPrimaryColor})
+      {@required
+      @JsonKey(name: 'BgColor')
+          this.bgColor,
+      @required
+      @JsonKey(name: 'BgHoverColor')
+          this.bgHoverColor,
+      @required
+      @JsonKey(name: 'TextColor')
+          this.textColor,
+      @required
+      @JsonKey(name: 'MutedTextColor')
+          this.mutedTextColor,
+      @required
+      @JsonKey(name: 'AccentColor')
+          this.accentColor,
+      @required
+      @JsonKey(name: 'AccentHoverColor')
+          this.accentHoverColor,
+      @required
+      @JsonKey(name: 'TextOnAccentHoverColor')
+          this.textOnAccentHoverColor,
+      @required
+      @JsonKey(name: 'MainAccent')
+          this.mainAccent,
+      @required
+      @JsonKey(name: 'MainAccentHover')
+          this.mainAccentHover,
+      @required
+      @JsonKey(name: 'MainLightAccent')
+          this.mainLightAccent,
+      @required
+      @JsonKey(name: 'MainLink')
+          this.mainLink,
+      @required
+      @JsonKey(name: 'brand')
+          this.brand,
+      @required
+      @JsonKey(name: 'brand_dark')
+          this.brandDark,
+      @required
+      @JsonKey(name: 'brand_light')
+          this.brandLight,
+      @required
+      @JsonKey(name: 'back')
+          this.back,
+      @required
+      @JsonKey(name: 'back_light')
+          this.backLight,
+      @required
+      @JsonKey(name: 'back_dark')
+          this.backDark,
+      @required
+      @JsonKey(name: 'success')
+          this.success,
+      @required
+      @JsonKey(name: 'success_light')
+          this.successLight,
+      @required
+      @JsonKey(name: 'error')
+          this.error,
+      @required
+      @JsonKey(name: 'error_light')
+          this.errorLight,
+      @required
+      @JsonKey(name: 'background')
+          this.background,
+      @required
+      @JsonKey(name: 'tab_background')
+          this.tabBackground,
+      @required
+      @JsonKey(name: 'chat_input_background')
+          this.chatInputBackground,
+      @required
+      @JsonKey(name: 'substrate_background')
+          this.substrateBackground,
+      @required
+      @JsonKey(name: 'modal_background')
+          this.modalBackground,
+      @required
+      @JsonKey(name: 'title_background')
+          this.titleBackground,
+      @required
+      @JsonKey(name: 'attention')
+          this.attention,
+      @required
+      @JsonKey(name: 'attention_light')
+          this.attentionLight,
+      @required
+      @JsonKey(name: 'font')
+          this.font,
+      @required
+      @JsonKey(name: 'message')
+          this.message,
+      @required
+      @JsonKey(name: 'switcher')
+          this.switcher,
+      @required
+      @JsonKey(name: 'button')
+          this.button,
+      @required
+      @JsonKey(name: 'input')
+          this.input,
+      @required
+      @JsonKey(name: 'ic')
+          this.icon,
+      @required
+      @JsonKey(name: 'web_base')
+          this.webBase,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'AppAccentColor')
+          this.appAccentColor,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'AppPrimaryColor')
+          this.appPrimaryColor})
       : assert(bgColor != null),
         assert(bgHoverColor != null),
         assert(textColor != null),
@@ -718,7 +1028,8 @@ class _$_Theme implements _Theme {
         assert(appAccentColor != null),
         assert(appPrimaryColor != null);
 
-  factory _$_Theme.fromJson(Map<String, dynamic> json) => _$_$_ThemeFromJson(json);
+  factory _$_Theme.fromJson(Map<String, dynamic> json) =>
+      _$_$_ThemeFromJson(json);
 
   @override
 
@@ -922,57 +1233,78 @@ class _$_Theme implements _Theme {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Theme &&
-            (identical(other.bgColor, bgColor) || const DeepCollectionEquality().equals(other.bgColor, bgColor)) &&
+            (identical(other.bgColor, bgColor) ||
+                const DeepCollectionEquality()
+                    .equals(other.bgColor, bgColor)) &&
             (identical(other.bgHoverColor, bgHoverColor) ||
-                const DeepCollectionEquality().equals(other.bgHoverColor, bgHoverColor)) &&
+                const DeepCollectionEquality()
+                    .equals(other.bgHoverColor, bgHoverColor)) &&
             (identical(other.textColor, textColor) ||
-                const DeepCollectionEquality().equals(other.textColor, textColor)) &&
+                const DeepCollectionEquality()
+                    .equals(other.textColor, textColor)) &&
             (identical(other.mutedTextColor, mutedTextColor) ||
-                const DeepCollectionEquality().equals(other.mutedTextColor, mutedTextColor)) &&
+                const DeepCollectionEquality()
+                    .equals(other.mutedTextColor, mutedTextColor)) &&
             (identical(other.accentColor, accentColor) ||
-                const DeepCollectionEquality().equals(other.accentColor, accentColor)) &&
+                const DeepCollectionEquality()
+                    .equals(other.accentColor, accentColor)) &&
             (identical(other.accentHoverColor, accentHoverColor) ||
-                const DeepCollectionEquality().equals(other.accentHoverColor, accentHoverColor)) &&
+                const DeepCollectionEquality()
+                    .equals(other.accentHoverColor, accentHoverColor)) &&
             (identical(other.textOnAccentHoverColor, textOnAccentHoverColor) ||
-                const DeepCollectionEquality().equals(other.textOnAccentHoverColor, textOnAccentHoverColor)) &&
+                const DeepCollectionEquality().equals(
+                    other.textOnAccentHoverColor, textOnAccentHoverColor)) &&
             (identical(other.mainAccent, mainAccent) ||
-                const DeepCollectionEquality().equals(other.mainAccent, mainAccent)) &&
+                const DeepCollectionEquality()
+                    .equals(other.mainAccent, mainAccent)) &&
             (identical(other.mainAccentHover, mainAccentHover) ||
-                const DeepCollectionEquality().equals(other.mainAccentHover, mainAccentHover)) &&
+                const DeepCollectionEquality()
+                    .equals(other.mainAccentHover, mainAccentHover)) &&
             (identical(other.mainLightAccent, mainLightAccent) ||
-                const DeepCollectionEquality().equals(other.mainLightAccent, mainLightAccent)) &&
-            (identical(other.mainLink, mainLink) || const DeepCollectionEquality().equals(other.mainLink, mainLink)) &&
-            (identical(other.brand, brand) || const DeepCollectionEquality().equals(other.brand, brand)) &&
+                const DeepCollectionEquality()
+                    .equals(other.mainLightAccent, mainLightAccent)) &&
+            (identical(other.mainLink, mainLink) ||
+                const DeepCollectionEquality()
+                    .equals(other.mainLink, mainLink)) &&
+            (identical(other.brand, brand) ||
+                const DeepCollectionEquality().equals(other.brand, brand)) &&
             (identical(other.brandDark, brandDark) ||
-                const DeepCollectionEquality().equals(other.brandDark, brandDark)) &&
+                const DeepCollectionEquality()
+                    .equals(other.brandDark, brandDark)) &&
             (identical(other.brandLight, brandLight) ||
-                const DeepCollectionEquality().equals(other.brandLight, brandLight)) &&
-            (identical(other.back, back) || const DeepCollectionEquality().equals(other.back, back)) &&
+                const DeepCollectionEquality()
+                    .equals(other.brandLight, brandLight)) &&
+            (identical(other.back, back) ||
+                const DeepCollectionEquality().equals(other.back, back)) &&
             (identical(other.backLight, backLight) ||
-                const DeepCollectionEquality().equals(other.backLight, backLight)) &&
-            (identical(other.backDark, backDark) || const DeepCollectionEquality().equals(other.backDark, backDark)) &&
-            (identical(other.success, success) || const DeepCollectionEquality().equals(other.success, success)) &&
+                const DeepCollectionEquality()
+                    .equals(other.backLight, backLight)) &&
+            (identical(other.backDark, backDark) ||
+                const DeepCollectionEquality()
+                    .equals(other.backDark, backDark)) &&
+            (identical(other.success, success) ||
+                const DeepCollectionEquality()
+                    .equals(other.success, success)) &&
             (identical(other.successLight, successLight) ||
-                const DeepCollectionEquality().equals(other.successLight, successLight)) &&
-            (identical(other.error, error) || const DeepCollectionEquality().equals(other.error, error)) &&
+                const DeepCollectionEquality()
+                    .equals(other.successLight, successLight)) &&
+            (identical(other.error, error) ||
+                const DeepCollectionEquality().equals(other.error, error)) &&
             (identical(other.errorLight, errorLight) ||
-                const DeepCollectionEquality().equals(other.errorLight, errorLight)) &&
+                const DeepCollectionEquality()
+                    .equals(other.errorLight, errorLight)) &&
             (identical(other.background, background) ||
-                const DeepCollectionEquality().equals(other.background, background)) &&
+                const DeepCollectionEquality()
+                    .equals(other.background, background)) &&
             (identical(other.tabBackground, tabBackground) ||
-                const DeepCollectionEquality().equals(other.tabBackground, tabBackground)) &&
-            (identical(other.chatInputBackground, chatInputBackground) ||
-                const DeepCollectionEquality().equals(other.chatInputBackground, chatInputBackground)) &&
-            (identical(other.substrateBackground, substrateBackground) ||
-                const DeepCollectionEquality().equals(other.substrateBackground, substrateBackground)) &&
-            (identical(other.modalBackground, modalBackground) ||
-                const DeepCollectionEquality().equals(other.modalBackground, modalBackground)) &&
-            (identical(other.titleBackground, titleBackground) ||
-                const DeepCollectionEquality().equals(other.titleBackground, titleBackground)) &&
-            (identical(other.attention, attention) ||
-                const DeepCollectionEquality().equals(other.attention, attention)) &&
-            (identical(other.attentionLight, attentionLight) ||
-                const DeepCollectionEquality().equals(other.attentionLight, attentionLight)) &&
+                const DeepCollectionEquality()
+                    .equals(other.tabBackground, tabBackground)) &&
+            (identical(other.chatInputBackground, chatInputBackground) || const DeepCollectionEquality().equals(other.chatInputBackground, chatInputBackground)) &&
+            (identical(other.substrateBackground, substrateBackground) || const DeepCollectionEquality().equals(other.substrateBackground, substrateBackground)) &&
+            (identical(other.modalBackground, modalBackground) || const DeepCollectionEquality().equals(other.modalBackground, modalBackground)) &&
+            (identical(other.titleBackground, titleBackground) || const DeepCollectionEquality().equals(other.titleBackground, titleBackground)) &&
+            (identical(other.attention, attention) || const DeepCollectionEquality().equals(other.attention, attention)) &&
+            (identical(other.attentionLight, attentionLight) || const DeepCollectionEquality().equals(other.attentionLight, attentionLight)) &&
             (identical(other.font, font) || const DeepCollectionEquality().equals(other.font, font)) &&
             (identical(other.message, message) || const DeepCollectionEquality().equals(other.message, message)) &&
             (identical(other.switcher, switcher) || const DeepCollectionEquality().equals(other.switcher, switcher)) &&
@@ -980,10 +1312,8 @@ class _$_Theme implements _Theme {
             (identical(other.input, input) || const DeepCollectionEquality().equals(other.input, input)) &&
             (identical(other.icon, icon) || const DeepCollectionEquality().equals(other.icon, icon)) &&
             (identical(other.webBase, webBase) || const DeepCollectionEquality().equals(other.webBase, webBase)) &&
-            (identical(other.appAccentColor, appAccentColor) ||
-                const DeepCollectionEquality().equals(other.appAccentColor, appAccentColor)) &&
-            (identical(other.appPrimaryColor, appPrimaryColor) ||
-                const DeepCollectionEquality().equals(other.appPrimaryColor, appPrimaryColor)));
+            (identical(other.appAccentColor, appAccentColor) || const DeepCollectionEquality().equals(other.appAccentColor, appAccentColor)) &&
+            (identical(other.appPrimaryColor, appPrimaryColor) || const DeepCollectionEquality().equals(other.appPrimaryColor, appPrimaryColor)));
   }
 
   @override
@@ -1030,7 +1360,8 @@ class _$_Theme implements _Theme {
 
   @JsonKey(ignore: true)
   @override
-  _$ThemeCopyWith<_Theme> get copyWith => __$ThemeCopyWithImpl<_Theme>(this, _$identity);
+  _$ThemeCopyWith<_Theme> get copyWith =>
+      __$ThemeCopyWithImpl<_Theme>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -1040,44 +1371,122 @@ class _$_Theme implements _Theme {
 
 abstract class _Theme implements Theme {
   const factory _Theme(
-      {@required @JsonKey(name: 'BgColor') String bgColor,
-      @required @JsonKey(name: 'BgHoverColor') String bgHoverColor,
-      @required @JsonKey(name: 'TextColor') String textColor,
-      @required @JsonKey(name: 'MutedTextColor') String mutedTextColor,
-      @required @JsonKey(name: 'AccentColor') String accentColor,
-      @required @JsonKey(name: 'AccentHoverColor') String accentHoverColor,
-      @required @JsonKey(name: 'TextOnAccentHoverColor') String textOnAccentHoverColor,
-      @required @JsonKey(name: 'MainAccent') String mainAccent,
-      @required @JsonKey(name: 'MainAccentHover') String mainAccentHover,
-      @required @JsonKey(name: 'MainLightAccent') String mainLightAccent,
-      @required @JsonKey(name: 'MainLink') String mainLink,
-      @required @JsonKey(name: 'brand') String brand,
-      @required @JsonKey(name: 'brand_dark') String brandDark,
-      @required @JsonKey(name: 'brand_light') String brandLight,
-      @required @JsonKey(name: 'back') String back,
-      @required @JsonKey(name: 'back_light') String backLight,
-      @required @JsonKey(name: 'back_dark') String backDark,
-      @required @JsonKey(name: 'success') String success,
-      @required @JsonKey(name: 'success_light') String successLight,
-      @required @JsonKey(name: 'error') String error,
-      @required @JsonKey(name: 'error_light') String errorLight,
-      @required @JsonKey(name: 'background') String background,
-      @required @JsonKey(name: 'tab_background') String tabBackground,
-      @required @JsonKey(name: 'chat_input_background') String chatInputBackground,
-      @required @JsonKey(name: 'substrate_background') String substrateBackground,
-      @required @JsonKey(name: 'modal_background') String modalBackground,
-      @required @JsonKey(name: 'title_background') String titleBackground,
-      @required @JsonKey(name: 'attention') String attention,
-      @required @JsonKey(name: 'attention_light') String attentionLight,
-      @required @JsonKey(name: 'font') FontColors font,
-      @required @JsonKey(name: 'message') MessageColors message,
-      @required @JsonKey(name: 'switcher') SwitcherColors switcher,
-      @required @JsonKey(name: 'button') ButtonColors button,
-      @required @JsonKey(name: 'input') InputColors input,
-      @required @JsonKey(name: 'ic') IconColors icon,
-      @required @JsonKey(name: 'web_base') WebBase webBase,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'AppAccentColor') String appAccentColor,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'AppPrimaryColor') String appPrimaryColor}) = _$_Theme;
+      {@required
+      @JsonKey(name: 'BgColor')
+          String bgColor,
+      @required
+      @JsonKey(name: 'BgHoverColor')
+          String bgHoverColor,
+      @required
+      @JsonKey(name: 'TextColor')
+          String textColor,
+      @required
+      @JsonKey(name: 'MutedTextColor')
+          String mutedTextColor,
+      @required
+      @JsonKey(name: 'AccentColor')
+          String accentColor,
+      @required
+      @JsonKey(name: 'AccentHoverColor')
+          String accentHoverColor,
+      @required
+      @JsonKey(name: 'TextOnAccentHoverColor')
+          String textOnAccentHoverColor,
+      @required
+      @JsonKey(name: 'MainAccent')
+          String mainAccent,
+      @required
+      @JsonKey(name: 'MainAccentHover')
+          String mainAccentHover,
+      @required
+      @JsonKey(name: 'MainLightAccent')
+          String mainLightAccent,
+      @required
+      @JsonKey(name: 'MainLink')
+          String mainLink,
+      @required
+      @JsonKey(name: 'brand')
+          String brand,
+      @required
+      @JsonKey(name: 'brand_dark')
+          String brandDark,
+      @required
+      @JsonKey(name: 'brand_light')
+          String brandLight,
+      @required
+      @JsonKey(name: 'back')
+          String back,
+      @required
+      @JsonKey(name: 'back_light')
+          String backLight,
+      @required
+      @JsonKey(name: 'back_dark')
+          String backDark,
+      @required
+      @JsonKey(name: 'success')
+          String success,
+      @required
+      @JsonKey(name: 'success_light')
+          String successLight,
+      @required
+      @JsonKey(name: 'error')
+          String error,
+      @required
+      @JsonKey(name: 'error_light')
+          String errorLight,
+      @required
+      @JsonKey(name: 'background')
+          String background,
+      @required
+      @JsonKey(name: 'tab_background')
+          String tabBackground,
+      @required
+      @JsonKey(name: 'chat_input_background')
+          String chatInputBackground,
+      @required
+      @JsonKey(name: 'substrate_background')
+          String substrateBackground,
+      @required
+      @JsonKey(name: 'modal_background')
+          String modalBackground,
+      @required
+      @JsonKey(name: 'title_background')
+          String titleBackground,
+      @required
+      @JsonKey(name: 'attention')
+          String attention,
+      @required
+      @JsonKey(name: 'attention_light')
+          String attentionLight,
+      @required
+      @JsonKey(name: 'font')
+          FontColors font,
+      @required
+      @JsonKey(name: 'message')
+          MessageColors message,
+      @required
+      @JsonKey(name: 'switcher')
+          SwitcherColors switcher,
+      @required
+      @JsonKey(name: 'button')
+          ButtonColors button,
+      @required
+      @JsonKey(name: 'input')
+          InputColors input,
+      @required
+      @JsonKey(name: 'ic')
+          IconColors icon,
+      @required
+      @JsonKey(name: 'web_base')
+          WebBase webBase,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'AppAccentColor')
+          String appAccentColor,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'AppPrimaryColor')
+          String appPrimaryColor}) = _$_Theme;
 
   factory _Theme.fromJson(Map<String, dynamic> json) = _$_Theme.fromJson;
 

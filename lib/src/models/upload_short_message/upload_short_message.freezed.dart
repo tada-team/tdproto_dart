@@ -18,7 +18,8 @@ class _$UploadShortMessageTearOff {
 
 // ignore: unused_element
   _UploadShortMessage call(
-      {@required @JsonKey(name: 'upload') Upload upload, @required @JsonKey(name: 'message') ShortMessage message}) {
+      {@required @JsonKey(name: 'upload') Upload upload,
+      @required @JsonKey(name: 'message') ShortMessage message}) {
     return _UploadShortMessage(
       upload: upload,
       message: message,
@@ -52,16 +53,20 @@ mixin _$UploadShortMessage {
 
 /// @nodoc
 abstract class $UploadShortMessageCopyWith<$Res> {
-  factory $UploadShortMessageCopyWith(UploadShortMessage value, $Res Function(UploadShortMessage) then) =
+  factory $UploadShortMessageCopyWith(
+          UploadShortMessage value, $Res Function(UploadShortMessage) then) =
       _$UploadShortMessageCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'upload') Upload upload, @JsonKey(name: 'message') ShortMessage message});
+  $Res call(
+      {@JsonKey(name: 'upload') Upload upload,
+      @JsonKey(name: 'message') ShortMessage message});
 
   $UploadCopyWith<$Res> get upload;
   $ShortMessageCopyWith<$Res> get message;
 }
 
 /// @nodoc
-class _$UploadShortMessageCopyWithImpl<$Res> implements $UploadShortMessageCopyWith<$Res> {
+class _$UploadShortMessageCopyWithImpl<$Res>
+    implements $UploadShortMessageCopyWith<$Res> {
   _$UploadShortMessageCopyWithImpl(this._value, this._then);
 
   final UploadShortMessage _value;
@@ -101,11 +106,15 @@ class _$UploadShortMessageCopyWithImpl<$Res> implements $UploadShortMessageCopyW
 }
 
 /// @nodoc
-abstract class _$UploadShortMessageCopyWith<$Res> implements $UploadShortMessageCopyWith<$Res> {
-  factory _$UploadShortMessageCopyWith(_UploadShortMessage value, $Res Function(_UploadShortMessage) then) =
+abstract class _$UploadShortMessageCopyWith<$Res>
+    implements $UploadShortMessageCopyWith<$Res> {
+  factory _$UploadShortMessageCopyWith(
+          _UploadShortMessage value, $Res Function(_UploadShortMessage) then) =
       __$UploadShortMessageCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'upload') Upload upload, @JsonKey(name: 'message') ShortMessage message});
+  $Res call(
+      {@JsonKey(name: 'upload') Upload upload,
+      @JsonKey(name: 'message') ShortMessage message});
 
   @override
   $UploadCopyWith<$Res> get upload;
@@ -114,9 +123,11 @@ abstract class _$UploadShortMessageCopyWith<$Res> implements $UploadShortMessage
 }
 
 /// @nodoc
-class __$UploadShortMessageCopyWithImpl<$Res> extends _$UploadShortMessageCopyWithImpl<$Res>
+class __$UploadShortMessageCopyWithImpl<$Res>
+    extends _$UploadShortMessageCopyWithImpl<$Res>
     implements _$UploadShortMessageCopyWith<$Res> {
-  __$UploadShortMessageCopyWithImpl(_UploadShortMessage _value, $Res Function(_UploadShortMessage) _then)
+  __$UploadShortMessageCopyWithImpl(
+      _UploadShortMessage _value, $Res Function(_UploadShortMessage) _then)
       : super(_value, (v) => _then(v as _UploadShortMessage));
 
   @override
@@ -139,11 +150,13 @@ class __$UploadShortMessageCopyWithImpl<$Res> extends _$UploadShortMessageCopyWi
 /// @nodoc
 class _$_UploadShortMessage implements _UploadShortMessage {
   const _$_UploadShortMessage(
-      {@required @JsonKey(name: 'upload') this.upload, @required @JsonKey(name: 'message') this.message})
+      {@required @JsonKey(name: 'upload') this.upload,
+      @required @JsonKey(name: 'message') this.message})
       : assert(upload != null),
         assert(message != null);
 
-  factory _$_UploadShortMessage.fromJson(Map<String, dynamic> json) => _$_$_UploadShortMessageFromJson(json);
+  factory _$_UploadShortMessage.fromJson(Map<String, dynamic> json) =>
+      _$_$_UploadShortMessageFromJson(json);
 
   @override
 
@@ -165,13 +178,17 @@ class _$_UploadShortMessage implements _UploadShortMessage {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _UploadShortMessage &&
-            (identical(other.upload, upload) || const DeepCollectionEquality().equals(other.upload, upload)) &&
-            (identical(other.message, message) || const DeepCollectionEquality().equals(other.message, message)));
+            (identical(other.upload, upload) ||
+                const DeepCollectionEquality().equals(other.upload, upload)) &&
+            (identical(other.message, message) ||
+                const DeepCollectionEquality().equals(other.message, message)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(upload) ^ const DeepCollectionEquality().hash(message);
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(upload) ^
+      const DeepCollectionEquality().hash(message);
 
   @JsonKey(ignore: true)
   @override
@@ -186,10 +203,12 @@ class _$_UploadShortMessage implements _UploadShortMessage {
 
 abstract class _UploadShortMessage implements UploadShortMessage {
   const factory _UploadShortMessage(
-      {@required @JsonKey(name: 'upload') Upload upload,
-      @required @JsonKey(name: 'message') ShortMessage message}) = _$_UploadShortMessage;
+          {@required @JsonKey(name: 'upload') Upload upload,
+          @required @JsonKey(name: 'message') ShortMessage message}) =
+      _$_UploadShortMessage;
 
-  factory _UploadShortMessage.fromJson(Map<String, dynamic> json) = _$_UploadShortMessage.fromJson;
+  factory _UploadShortMessage.fromJson(Map<String, dynamic> json) =
+      _$_UploadShortMessage.fromJson;
 
   @override
 

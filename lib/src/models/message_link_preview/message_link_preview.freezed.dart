@@ -18,7 +18,8 @@ class _$MessageLinkPreviewTearOff {
 
 // ignore: unused_element
   _MessageLinkPreview call(
-      {@required @JsonKey(name: 'title') String title, @JsonKey(name: 'description') String description}) {
+      {@required @JsonKey(name: 'title') String title,
+      @JsonKey(name: 'description') String description}) {
     return _MessageLinkPreview(
       title: title,
       description: description,
@@ -52,13 +53,17 @@ mixin _$MessageLinkPreview {
 
 /// @nodoc
 abstract class $MessageLinkPreviewCopyWith<$Res> {
-  factory $MessageLinkPreviewCopyWith(MessageLinkPreview value, $Res Function(MessageLinkPreview) then) =
+  factory $MessageLinkPreviewCopyWith(
+          MessageLinkPreview value, $Res Function(MessageLinkPreview) then) =
       _$MessageLinkPreviewCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'title') String title, @JsonKey(name: 'description') String description});
+  $Res call(
+      {@JsonKey(name: 'title') String title,
+      @JsonKey(name: 'description') String description});
 }
 
 /// @nodoc
-class _$MessageLinkPreviewCopyWithImpl<$Res> implements $MessageLinkPreviewCopyWith<$Res> {
+class _$MessageLinkPreviewCopyWithImpl<$Res>
+    implements $MessageLinkPreviewCopyWith<$Res> {
   _$MessageLinkPreviewCopyWithImpl(this._value, this._then);
 
   final MessageLinkPreview _value;
@@ -72,23 +77,30 @@ class _$MessageLinkPreviewCopyWithImpl<$Res> implements $MessageLinkPreviewCopyW
   }) {
     return _then(_value.copyWith(
       title: title == freezed ? _value.title : title as String,
-      description: description == freezed ? _value.description : description as String,
+      description:
+          description == freezed ? _value.description : description as String,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$MessageLinkPreviewCopyWith<$Res> implements $MessageLinkPreviewCopyWith<$Res> {
-  factory _$MessageLinkPreviewCopyWith(_MessageLinkPreview value, $Res Function(_MessageLinkPreview) then) =
+abstract class _$MessageLinkPreviewCopyWith<$Res>
+    implements $MessageLinkPreviewCopyWith<$Res> {
+  factory _$MessageLinkPreviewCopyWith(
+          _MessageLinkPreview value, $Res Function(_MessageLinkPreview) then) =
       __$MessageLinkPreviewCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'title') String title, @JsonKey(name: 'description') String description});
+  $Res call(
+      {@JsonKey(name: 'title') String title,
+      @JsonKey(name: 'description') String description});
 }
 
 /// @nodoc
-class __$MessageLinkPreviewCopyWithImpl<$Res> extends _$MessageLinkPreviewCopyWithImpl<$Res>
+class __$MessageLinkPreviewCopyWithImpl<$Res>
+    extends _$MessageLinkPreviewCopyWithImpl<$Res>
     implements _$MessageLinkPreviewCopyWith<$Res> {
-  __$MessageLinkPreviewCopyWithImpl(_MessageLinkPreview _value, $Res Function(_MessageLinkPreview) _then)
+  __$MessageLinkPreviewCopyWithImpl(
+      _MessageLinkPreview _value, $Res Function(_MessageLinkPreview) _then)
       : super(_value, (v) => _then(v as _MessageLinkPreview));
 
   @override
@@ -101,7 +113,8 @@ class __$MessageLinkPreviewCopyWithImpl<$Res> extends _$MessageLinkPreviewCopyWi
   }) {
     return _then(_MessageLinkPreview(
       title: title == freezed ? _value.title : title as String,
-      description: description == freezed ? _value.description : description as String,
+      description:
+          description == freezed ? _value.description : description as String,
     ));
   }
 }
@@ -111,10 +124,12 @@ class __$MessageLinkPreviewCopyWithImpl<$Res> extends _$MessageLinkPreviewCopyWi
 /// @nodoc
 class _$_MessageLinkPreview implements _MessageLinkPreview {
   const _$_MessageLinkPreview(
-      {@required @JsonKey(name: 'title') this.title, @JsonKey(name: 'description') this.description})
+      {@required @JsonKey(name: 'title') this.title,
+      @JsonKey(name: 'description') this.description})
       : assert(title != null);
 
-  factory _$_MessageLinkPreview.fromJson(Map<String, dynamic> json) => _$_$_MessageLinkPreviewFromJson(json);
+  factory _$_MessageLinkPreview.fromJson(Map<String, dynamic> json) =>
+      _$_$_MessageLinkPreviewFromJson(json);
 
   @override
 
@@ -136,9 +151,11 @@ class _$_MessageLinkPreview implements _MessageLinkPreview {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _MessageLinkPreview &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
+            (identical(other.title, title) ||
+                const DeepCollectionEquality().equals(other.title, title)) &&
             (identical(other.description, description) ||
-                const DeepCollectionEquality().equals(other.description, description)));
+                const DeepCollectionEquality()
+                    .equals(other.description, description)));
   }
 
   @override
@@ -160,10 +177,12 @@ class _$_MessageLinkPreview implements _MessageLinkPreview {
 
 abstract class _MessageLinkPreview implements MessageLinkPreview {
   const factory _MessageLinkPreview(
-      {@required @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'description') String description}) = _$_MessageLinkPreview;
+          {@required @JsonKey(name: 'title') String title,
+          @JsonKey(name: 'description') String description}) =
+      _$_MessageLinkPreview;
 
-  factory _MessageLinkPreview.fromJson(Map<String, dynamic> json) = _$_MessageLinkPreview.fromJson;
+  factory _MessageLinkPreview.fromJson(Map<String, dynamic> json) =
+      _$_MessageLinkPreview.fromJson;
 
   @override
 

@@ -18,7 +18,8 @@ class _$CallDeviceTearOff {
 
 // ignore: unused_element
   _CallDevice call(
-      {@required @JsonKey(name: 'muted') bool muted, @required @JsonKey(name: 'useragent') String useragent}) {
+      {@required @JsonKey(name: 'muted') bool muted,
+      @required @JsonKey(name: 'useragent') String useragent}) {
     return _CallDevice(
       muted: muted,
       useragent: useragent,
@@ -52,8 +53,12 @@ mixin _$CallDevice {
 
 /// @nodoc
 abstract class $CallDeviceCopyWith<$Res> {
-  factory $CallDeviceCopyWith(CallDevice value, $Res Function(CallDevice) then) = _$CallDeviceCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'muted') bool muted, @JsonKey(name: 'useragent') String useragent});
+  factory $CallDeviceCopyWith(
+          CallDevice value, $Res Function(CallDevice) then) =
+      _$CallDeviceCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'muted') bool muted,
+      @JsonKey(name: 'useragent') String useragent});
 }
 
 /// @nodoc
@@ -78,14 +83,20 @@ class _$CallDeviceCopyWithImpl<$Res> implements $CallDeviceCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$CallDeviceCopyWith<$Res> implements $CallDeviceCopyWith<$Res> {
-  factory _$CallDeviceCopyWith(_CallDevice value, $Res Function(_CallDevice) then) = __$CallDeviceCopyWithImpl<$Res>;
+  factory _$CallDeviceCopyWith(
+          _CallDevice value, $Res Function(_CallDevice) then) =
+      __$CallDeviceCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'muted') bool muted, @JsonKey(name: 'useragent') String useragent});
+  $Res call(
+      {@JsonKey(name: 'muted') bool muted,
+      @JsonKey(name: 'useragent') String useragent});
 }
 
 /// @nodoc
-class __$CallDeviceCopyWithImpl<$Res> extends _$CallDeviceCopyWithImpl<$Res> implements _$CallDeviceCopyWith<$Res> {
-  __$CallDeviceCopyWithImpl(_CallDevice _value, $Res Function(_CallDevice) _then)
+class __$CallDeviceCopyWithImpl<$Res> extends _$CallDeviceCopyWithImpl<$Res>
+    implements _$CallDeviceCopyWith<$Res> {
+  __$CallDeviceCopyWithImpl(
+      _CallDevice _value, $Res Function(_CallDevice) _then)
       : super(_value, (v) => _then(v as _CallDevice));
 
   @override
@@ -108,11 +119,13 @@ class __$CallDeviceCopyWithImpl<$Res> extends _$CallDeviceCopyWithImpl<$Res> imp
 /// @nodoc
 class _$_CallDevice implements _CallDevice {
   const _$_CallDevice(
-      {@required @JsonKey(name: 'muted') this.muted, @required @JsonKey(name: 'useragent') this.useragent})
+      {@required @JsonKey(name: 'muted') this.muted,
+      @required @JsonKey(name: 'useragent') this.useragent})
       : assert(muted != null),
         assert(useragent != null);
 
-  factory _$_CallDevice.fromJson(Map<String, dynamic> json) => _$_$_CallDeviceFromJson(json);
+  factory _$_CallDevice.fromJson(Map<String, dynamic> json) =>
+      _$_$_CallDeviceFromJson(json);
 
   @override
 
@@ -134,9 +147,11 @@ class _$_CallDevice implements _CallDevice {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _CallDevice &&
-            (identical(other.muted, muted) || const DeepCollectionEquality().equals(other.muted, muted)) &&
+            (identical(other.muted, muted) ||
+                const DeepCollectionEquality().equals(other.muted, muted)) &&
             (identical(other.useragent, useragent) ||
-                const DeepCollectionEquality().equals(other.useragent, useragent)));
+                const DeepCollectionEquality()
+                    .equals(other.useragent, useragent)));
   }
 
   @override
@@ -147,7 +162,8 @@ class _$_CallDevice implements _CallDevice {
 
   @JsonKey(ignore: true)
   @override
-  _$CallDeviceCopyWith<_CallDevice> get copyWith => __$CallDeviceCopyWithImpl<_CallDevice>(this, _$identity);
+  _$CallDeviceCopyWith<_CallDevice> get copyWith =>
+      __$CallDeviceCopyWithImpl<_CallDevice>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -160,7 +176,8 @@ abstract class _CallDevice implements CallDevice {
       {@required @JsonKey(name: 'muted') bool muted,
       @required @JsonKey(name: 'useragent') String useragent}) = _$_CallDevice;
 
-  factory _CallDevice.fromJson(Map<String, dynamic> json) = _$_CallDevice.fromJson;
+  factory _CallDevice.fromJson(Map<String, dynamic> json) =
+      _$_CallDevice.fromJson;
 
   @override
 

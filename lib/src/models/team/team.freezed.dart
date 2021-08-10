@@ -18,37 +18,78 @@ class _$TeamTearOff {
 
 // ignore: unused_element
   _Team call(
-      {@required @JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'is_archive') bool isArchive,
-      @required @JsonKey(name: 'gentime') int gentime,
-      @required @JsonKey(name: 'name') String name,
-      @JsonKey(name: 'default_task_deadline') String defaultTaskDeadline,
-      @required @JsonKey(name: 'max_message_update_age') int maxMessageUpdateAge,
-      @required @JsonKey(name: 'icons') IconData icons,
-      @required @JsonKey(name: 'last_active') bool lastActive,
-      @JsonKey(name: 'changeable_statuses') List<String> changeableStatuses,
-      @JsonKey(name: 'bad_profile') bool badProfile,
-      @required @JsonKey(name: 'need_confirmation') bool needConfirmation,
-      @JsonKey(name: 'use_patronymic') bool usePatronymic,
-      @required @JsonKey(name: 'user_fields') List<String> userFields,
-      @JsonKey(name: 'display_family_name_first') bool displayFamilyNameFirst,
-      @JsonKey(name: 'use_task_importance') bool useTaskImportance,
-      @JsonKey(name: 'task_importance_min') int taskImportanceMin,
-      @JsonKey(name: 'task_importance_max') int taskImportanceMax,
-      @JsonKey(name: 'task_importance_rev') bool taskImportanceRev,
-      @JsonKey(name: 'use_task_urgency') bool useTaskUrgency,
-      @JsonKey(name: 'use_task_complexity') bool useTaskComplexity,
-      @JsonKey(name: 'use_task_spent_time') bool useTaskSpentTime,
-      @JsonKey(name: 'uploads_size') int uploadsSize,
-      @JsonKey(name: 'uploads_size_limit') int uploadsSizeLimit,
-      @required @JsonKey(name: 'unread') TeamUnread unreads,
-      @required @JsonKey(name: 'me') Contact me,
-      @JsonKey(name: 'contacts') List<Contact> contacts,
-      @JsonKey(name: 'single_group') String singleGroup,
-      @JsonKey(name: 'theme') Theme theme,
-      @JsonKey(name: 'hide_archived_users') bool hideArchivedUsers,
-      @JsonKey(name: 'pinned') bool pinned,
-      @JsonKey(name: 'available_tariffs') List<String> availableTariffs}) {
+      {@required
+      @JsonKey(name: 'uid')
+          String uid,
+      @JsonKey(name: 'is_archive')
+          bool isArchive,
+      @required
+      @JsonKey(name: 'gentime')
+          int gentime,
+      @required
+      @JsonKey(name: 'name')
+          String name,
+      @JsonKey(name: 'default_task_deadline')
+          String defaultTaskDeadline,
+      @required
+      @JsonKey(name: 'max_message_update_age')
+          int maxMessageUpdateAge,
+      @required
+      @JsonKey(name: 'icons')
+          IconData icons,
+      @required
+      @JsonKey(name: 'last_active')
+          bool lastActive,
+      @JsonKey(name: 'changeable_statuses')
+          List<String> changeableStatuses,
+      @JsonKey(name: 'bad_profile')
+          bool badProfile,
+      @required
+      @JsonKey(name: 'need_confirmation')
+          bool needConfirmation,
+      @JsonKey(name: 'use_patronymic')
+          bool usePatronymic,
+      @required
+      @JsonKey(name: 'user_fields')
+          List<String> userFields,
+      @JsonKey(name: 'display_family_name_first')
+          bool displayFamilyNameFirst,
+      @JsonKey(name: 'use_task_importance')
+          bool useTaskImportance,
+      @JsonKey(name: 'task_importance_min')
+          int taskImportanceMin,
+      @JsonKey(name: 'task_importance_max')
+          int taskImportanceMax,
+      @JsonKey(name: 'task_importance_rev')
+          bool taskImportanceRev,
+      @JsonKey(name: 'use_task_urgency')
+          bool useTaskUrgency,
+      @JsonKey(name: 'use_task_complexity')
+          bool useTaskComplexity,
+      @JsonKey(name: 'use_task_spent_time')
+          bool useTaskSpentTime,
+      @JsonKey(name: 'uploads_size')
+          int uploadsSize,
+      @JsonKey(name: 'uploads_size_limit')
+          int uploadsSizeLimit,
+      @required
+      @JsonKey(name: 'unread')
+          TeamUnread unreads,
+      @required
+      @JsonKey(name: 'me')
+          Contact me,
+      @JsonKey(name: 'contacts')
+          List<Contact> contacts,
+      @JsonKey(name: 'single_group')
+          String singleGroup,
+      @JsonKey(name: 'theme')
+          Theme theme,
+      @JsonKey(name: 'hide_archived_users')
+          bool hideArchivedUsers,
+      @JsonKey(name: 'pinned')
+          bool pinned,
+      @JsonKey(name: 'available_tariffs')
+          List<String> availableTariffs}) {
     return _Team(
       uid: uid,
       isArchive: isArchive,
@@ -227,7 +268,8 @@ mixin _$Team {
 
 /// @nodoc
 abstract class $TeamCopyWith<$Res> {
-  factory $TeamCopyWith(Team value, $Res Function(Team) then) = _$TeamCopyWithImpl<$Res>;
+  factory $TeamCopyWith(Team value, $Res Function(Team) then) =
+      _$TeamCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'is_archive') bool isArchive,
@@ -314,35 +356,72 @@ class _$TeamCopyWithImpl<$Res> implements $TeamCopyWith<$Res> {
       isArchive: isArchive == freezed ? _value.isArchive : isArchive as bool,
       gentime: gentime == freezed ? _value.gentime : gentime as int,
       name: name == freezed ? _value.name : name as String,
-      defaultTaskDeadline: defaultTaskDeadline == freezed ? _value.defaultTaskDeadline : defaultTaskDeadline as String,
-      maxMessageUpdateAge: maxMessageUpdateAge == freezed ? _value.maxMessageUpdateAge : maxMessageUpdateAge as int,
+      defaultTaskDeadline: defaultTaskDeadline == freezed
+          ? _value.defaultTaskDeadline
+          : defaultTaskDeadline as String,
+      maxMessageUpdateAge: maxMessageUpdateAge == freezed
+          ? _value.maxMessageUpdateAge
+          : maxMessageUpdateAge as int,
       icons: icons == freezed ? _value.icons : icons as IconData,
-      lastActive: lastActive == freezed ? _value.lastActive : lastActive as bool,
-      changeableStatuses:
-          changeableStatuses == freezed ? _value.changeableStatuses : changeableStatuses as List<String>,
-      badProfile: badProfile == freezed ? _value.badProfile : badProfile as bool,
-      needConfirmation: needConfirmation == freezed ? _value.needConfirmation : needConfirmation as bool,
-      usePatronymic: usePatronymic == freezed ? _value.usePatronymic : usePatronymic as bool,
-      userFields: userFields == freezed ? _value.userFields : userFields as List<String>,
-      displayFamilyNameFirst:
-          displayFamilyNameFirst == freezed ? _value.displayFamilyNameFirst : displayFamilyNameFirst as bool,
-      useTaskImportance: useTaskImportance == freezed ? _value.useTaskImportance : useTaskImportance as bool,
-      taskImportanceMin: taskImportanceMin == freezed ? _value.taskImportanceMin : taskImportanceMin as int,
-      taskImportanceMax: taskImportanceMax == freezed ? _value.taskImportanceMax : taskImportanceMax as int,
-      taskImportanceRev: taskImportanceRev == freezed ? _value.taskImportanceRev : taskImportanceRev as bool,
-      useTaskUrgency: useTaskUrgency == freezed ? _value.useTaskUrgency : useTaskUrgency as bool,
-      useTaskComplexity: useTaskComplexity == freezed ? _value.useTaskComplexity : useTaskComplexity as bool,
-      useTaskSpentTime: useTaskSpentTime == freezed ? _value.useTaskSpentTime : useTaskSpentTime as bool,
-      uploadsSize: uploadsSize == freezed ? _value.uploadsSize : uploadsSize as int,
-      uploadsSizeLimit: uploadsSizeLimit == freezed ? _value.uploadsSizeLimit : uploadsSizeLimit as int,
+      lastActive:
+          lastActive == freezed ? _value.lastActive : lastActive as bool,
+      changeableStatuses: changeableStatuses == freezed
+          ? _value.changeableStatuses
+          : changeableStatuses as List<String>,
+      badProfile:
+          badProfile == freezed ? _value.badProfile : badProfile as bool,
+      needConfirmation: needConfirmation == freezed
+          ? _value.needConfirmation
+          : needConfirmation as bool,
+      usePatronymic: usePatronymic == freezed
+          ? _value.usePatronymic
+          : usePatronymic as bool,
+      userFields: userFields == freezed
+          ? _value.userFields
+          : userFields as List<String>,
+      displayFamilyNameFirst: displayFamilyNameFirst == freezed
+          ? _value.displayFamilyNameFirst
+          : displayFamilyNameFirst as bool,
+      useTaskImportance: useTaskImportance == freezed
+          ? _value.useTaskImportance
+          : useTaskImportance as bool,
+      taskImportanceMin: taskImportanceMin == freezed
+          ? _value.taskImportanceMin
+          : taskImportanceMin as int,
+      taskImportanceMax: taskImportanceMax == freezed
+          ? _value.taskImportanceMax
+          : taskImportanceMax as int,
+      taskImportanceRev: taskImportanceRev == freezed
+          ? _value.taskImportanceRev
+          : taskImportanceRev as bool,
+      useTaskUrgency: useTaskUrgency == freezed
+          ? _value.useTaskUrgency
+          : useTaskUrgency as bool,
+      useTaskComplexity: useTaskComplexity == freezed
+          ? _value.useTaskComplexity
+          : useTaskComplexity as bool,
+      useTaskSpentTime: useTaskSpentTime == freezed
+          ? _value.useTaskSpentTime
+          : useTaskSpentTime as bool,
+      uploadsSize:
+          uploadsSize == freezed ? _value.uploadsSize : uploadsSize as int,
+      uploadsSizeLimit: uploadsSizeLimit == freezed
+          ? _value.uploadsSizeLimit
+          : uploadsSizeLimit as int,
       unreads: unreads == freezed ? _value.unreads : unreads as TeamUnread,
       me: me == freezed ? _value.me : me as Contact,
-      contacts: contacts == freezed ? _value.contacts : contacts as List<Contact>,
-      singleGroup: singleGroup == freezed ? _value.singleGroup : singleGroup as String,
+      contacts:
+          contacts == freezed ? _value.contacts : contacts as List<Contact>,
+      singleGroup:
+          singleGroup == freezed ? _value.singleGroup : singleGroup as String,
       theme: theme == freezed ? _value.theme : theme as Theme,
-      hideArchivedUsers: hideArchivedUsers == freezed ? _value.hideArchivedUsers : hideArchivedUsers as bool,
+      hideArchivedUsers: hideArchivedUsers == freezed
+          ? _value.hideArchivedUsers
+          : hideArchivedUsers as bool,
       pinned: pinned == freezed ? _value.pinned : pinned as bool,
-      availableTariffs: availableTariffs == freezed ? _value.availableTariffs : availableTariffs as List<String>,
+      availableTariffs: availableTariffs == freezed
+          ? _value.availableTariffs
+          : availableTariffs as List<String>,
     ));
   }
 
@@ -389,7 +468,8 @@ class _$TeamCopyWithImpl<$Res> implements $TeamCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$TeamCopyWith<$Res> implements $TeamCopyWith<$Res> {
-  factory _$TeamCopyWith(_Team value, $Res Function(_Team) then) = __$TeamCopyWithImpl<$Res>;
+  factory _$TeamCopyWith(_Team value, $Res Function(_Team) then) =
+      __$TeamCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'uid') String uid,
@@ -435,8 +515,10 @@ abstract class _$TeamCopyWith<$Res> implements $TeamCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res> implements _$TeamCopyWith<$Res> {
-  __$TeamCopyWithImpl(_Team _value, $Res Function(_Team) _then) : super(_value, (v) => _then(v as _Team));
+class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res>
+    implements _$TeamCopyWith<$Res> {
+  __$TeamCopyWithImpl(_Team _value, $Res Function(_Team) _then)
+      : super(_value, (v) => _then(v as _Team));
 
   @override
   _Team get _value => super._value as _Team;
@@ -480,35 +562,72 @@ class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res> implements _$Te
       isArchive: isArchive == freezed ? _value.isArchive : isArchive as bool,
       gentime: gentime == freezed ? _value.gentime : gentime as int,
       name: name == freezed ? _value.name : name as String,
-      defaultTaskDeadline: defaultTaskDeadline == freezed ? _value.defaultTaskDeadline : defaultTaskDeadline as String,
-      maxMessageUpdateAge: maxMessageUpdateAge == freezed ? _value.maxMessageUpdateAge : maxMessageUpdateAge as int,
+      defaultTaskDeadline: defaultTaskDeadline == freezed
+          ? _value.defaultTaskDeadline
+          : defaultTaskDeadline as String,
+      maxMessageUpdateAge: maxMessageUpdateAge == freezed
+          ? _value.maxMessageUpdateAge
+          : maxMessageUpdateAge as int,
       icons: icons == freezed ? _value.icons : icons as IconData,
-      lastActive: lastActive == freezed ? _value.lastActive : lastActive as bool,
-      changeableStatuses:
-          changeableStatuses == freezed ? _value.changeableStatuses : changeableStatuses as List<String>,
-      badProfile: badProfile == freezed ? _value.badProfile : badProfile as bool,
-      needConfirmation: needConfirmation == freezed ? _value.needConfirmation : needConfirmation as bool,
-      usePatronymic: usePatronymic == freezed ? _value.usePatronymic : usePatronymic as bool,
-      userFields: userFields == freezed ? _value.userFields : userFields as List<String>,
-      displayFamilyNameFirst:
-          displayFamilyNameFirst == freezed ? _value.displayFamilyNameFirst : displayFamilyNameFirst as bool,
-      useTaskImportance: useTaskImportance == freezed ? _value.useTaskImportance : useTaskImportance as bool,
-      taskImportanceMin: taskImportanceMin == freezed ? _value.taskImportanceMin : taskImportanceMin as int,
-      taskImportanceMax: taskImportanceMax == freezed ? _value.taskImportanceMax : taskImportanceMax as int,
-      taskImportanceRev: taskImportanceRev == freezed ? _value.taskImportanceRev : taskImportanceRev as bool,
-      useTaskUrgency: useTaskUrgency == freezed ? _value.useTaskUrgency : useTaskUrgency as bool,
-      useTaskComplexity: useTaskComplexity == freezed ? _value.useTaskComplexity : useTaskComplexity as bool,
-      useTaskSpentTime: useTaskSpentTime == freezed ? _value.useTaskSpentTime : useTaskSpentTime as bool,
-      uploadsSize: uploadsSize == freezed ? _value.uploadsSize : uploadsSize as int,
-      uploadsSizeLimit: uploadsSizeLimit == freezed ? _value.uploadsSizeLimit : uploadsSizeLimit as int,
+      lastActive:
+          lastActive == freezed ? _value.lastActive : lastActive as bool,
+      changeableStatuses: changeableStatuses == freezed
+          ? _value.changeableStatuses
+          : changeableStatuses as List<String>,
+      badProfile:
+          badProfile == freezed ? _value.badProfile : badProfile as bool,
+      needConfirmation: needConfirmation == freezed
+          ? _value.needConfirmation
+          : needConfirmation as bool,
+      usePatronymic: usePatronymic == freezed
+          ? _value.usePatronymic
+          : usePatronymic as bool,
+      userFields: userFields == freezed
+          ? _value.userFields
+          : userFields as List<String>,
+      displayFamilyNameFirst: displayFamilyNameFirst == freezed
+          ? _value.displayFamilyNameFirst
+          : displayFamilyNameFirst as bool,
+      useTaskImportance: useTaskImportance == freezed
+          ? _value.useTaskImportance
+          : useTaskImportance as bool,
+      taskImportanceMin: taskImportanceMin == freezed
+          ? _value.taskImportanceMin
+          : taskImportanceMin as int,
+      taskImportanceMax: taskImportanceMax == freezed
+          ? _value.taskImportanceMax
+          : taskImportanceMax as int,
+      taskImportanceRev: taskImportanceRev == freezed
+          ? _value.taskImportanceRev
+          : taskImportanceRev as bool,
+      useTaskUrgency: useTaskUrgency == freezed
+          ? _value.useTaskUrgency
+          : useTaskUrgency as bool,
+      useTaskComplexity: useTaskComplexity == freezed
+          ? _value.useTaskComplexity
+          : useTaskComplexity as bool,
+      useTaskSpentTime: useTaskSpentTime == freezed
+          ? _value.useTaskSpentTime
+          : useTaskSpentTime as bool,
+      uploadsSize:
+          uploadsSize == freezed ? _value.uploadsSize : uploadsSize as int,
+      uploadsSizeLimit: uploadsSizeLimit == freezed
+          ? _value.uploadsSizeLimit
+          : uploadsSizeLimit as int,
       unreads: unreads == freezed ? _value.unreads : unreads as TeamUnread,
       me: me == freezed ? _value.me : me as Contact,
-      contacts: contacts == freezed ? _value.contacts : contacts as List<Contact>,
-      singleGroup: singleGroup == freezed ? _value.singleGroup : singleGroup as String,
+      contacts:
+          contacts == freezed ? _value.contacts : contacts as List<Contact>,
+      singleGroup:
+          singleGroup == freezed ? _value.singleGroup : singleGroup as String,
       theme: theme == freezed ? _value.theme : theme as Theme,
-      hideArchivedUsers: hideArchivedUsers == freezed ? _value.hideArchivedUsers : hideArchivedUsers as bool,
+      hideArchivedUsers: hideArchivedUsers == freezed
+          ? _value.hideArchivedUsers
+          : hideArchivedUsers as bool,
       pinned: pinned == freezed ? _value.pinned : pinned as bool,
-      availableTariffs: availableTariffs == freezed ? _value.availableTariffs : availableTariffs as List<String>,
+      availableTariffs: availableTariffs == freezed
+          ? _value.availableTariffs
+          : availableTariffs as List<String>,
     ));
   }
 }
@@ -518,37 +637,78 @@ class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res> implements _$Te
 /// @nodoc
 class _$_Team implements _Team {
   const _$_Team(
-      {@required @JsonKey(name: 'uid') this.uid,
-      @JsonKey(name: 'is_archive') this.isArchive,
-      @required @JsonKey(name: 'gentime') this.gentime,
-      @required @JsonKey(name: 'name') this.name,
-      @JsonKey(name: 'default_task_deadline') this.defaultTaskDeadline,
-      @required @JsonKey(name: 'max_message_update_age') this.maxMessageUpdateAge,
-      @required @JsonKey(name: 'icons') this.icons,
-      @required @JsonKey(name: 'last_active') this.lastActive,
-      @JsonKey(name: 'changeable_statuses') this.changeableStatuses,
-      @JsonKey(name: 'bad_profile') this.badProfile,
-      @required @JsonKey(name: 'need_confirmation') this.needConfirmation,
-      @JsonKey(name: 'use_patronymic') this.usePatronymic,
-      @required @JsonKey(name: 'user_fields') this.userFields,
-      @JsonKey(name: 'display_family_name_first') this.displayFamilyNameFirst,
-      @JsonKey(name: 'use_task_importance') this.useTaskImportance,
-      @JsonKey(name: 'task_importance_min') this.taskImportanceMin,
-      @JsonKey(name: 'task_importance_max') this.taskImportanceMax,
-      @JsonKey(name: 'task_importance_rev') this.taskImportanceRev,
-      @JsonKey(name: 'use_task_urgency') this.useTaskUrgency,
-      @JsonKey(name: 'use_task_complexity') this.useTaskComplexity,
-      @JsonKey(name: 'use_task_spent_time') this.useTaskSpentTime,
-      @JsonKey(name: 'uploads_size') this.uploadsSize,
-      @JsonKey(name: 'uploads_size_limit') this.uploadsSizeLimit,
-      @required @JsonKey(name: 'unread') this.unreads,
-      @required @JsonKey(name: 'me') this.me,
-      @JsonKey(name: 'contacts') this.contacts,
-      @JsonKey(name: 'single_group') this.singleGroup,
-      @JsonKey(name: 'theme') this.theme,
-      @JsonKey(name: 'hide_archived_users') this.hideArchivedUsers,
-      @JsonKey(name: 'pinned') this.pinned,
-      @JsonKey(name: 'available_tariffs') this.availableTariffs})
+      {@required
+      @JsonKey(name: 'uid')
+          this.uid,
+      @JsonKey(name: 'is_archive')
+          this.isArchive,
+      @required
+      @JsonKey(name: 'gentime')
+          this.gentime,
+      @required
+      @JsonKey(name: 'name')
+          this.name,
+      @JsonKey(name: 'default_task_deadline')
+          this.defaultTaskDeadline,
+      @required
+      @JsonKey(name: 'max_message_update_age')
+          this.maxMessageUpdateAge,
+      @required
+      @JsonKey(name: 'icons')
+          this.icons,
+      @required
+      @JsonKey(name: 'last_active')
+          this.lastActive,
+      @JsonKey(name: 'changeable_statuses')
+          this.changeableStatuses,
+      @JsonKey(name: 'bad_profile')
+          this.badProfile,
+      @required
+      @JsonKey(name: 'need_confirmation')
+          this.needConfirmation,
+      @JsonKey(name: 'use_patronymic')
+          this.usePatronymic,
+      @required
+      @JsonKey(name: 'user_fields')
+          this.userFields,
+      @JsonKey(name: 'display_family_name_first')
+          this.displayFamilyNameFirst,
+      @JsonKey(name: 'use_task_importance')
+          this.useTaskImportance,
+      @JsonKey(name: 'task_importance_min')
+          this.taskImportanceMin,
+      @JsonKey(name: 'task_importance_max')
+          this.taskImportanceMax,
+      @JsonKey(name: 'task_importance_rev')
+          this.taskImportanceRev,
+      @JsonKey(name: 'use_task_urgency')
+          this.useTaskUrgency,
+      @JsonKey(name: 'use_task_complexity')
+          this.useTaskComplexity,
+      @JsonKey(name: 'use_task_spent_time')
+          this.useTaskSpentTime,
+      @JsonKey(name: 'uploads_size')
+          this.uploadsSize,
+      @JsonKey(name: 'uploads_size_limit')
+          this.uploadsSizeLimit,
+      @required
+      @JsonKey(name: 'unread')
+          this.unreads,
+      @required
+      @JsonKey(name: 'me')
+          this.me,
+      @JsonKey(name: 'contacts')
+          this.contacts,
+      @JsonKey(name: 'single_group')
+          this.singleGroup,
+      @JsonKey(name: 'theme')
+          this.theme,
+      @JsonKey(name: 'hide_archived_users')
+          this.hideArchivedUsers,
+      @JsonKey(name: 'pinned')
+          this.pinned,
+      @JsonKey(name: 'available_tariffs')
+          this.availableTariffs})
       : assert(uid != null),
         assert(gentime != null),
         assert(name != null),
@@ -560,7 +720,8 @@ class _$_Team implements _Team {
         assert(unreads != null),
         assert(me != null);
 
-  factory _$_Team.fromJson(Map<String, dynamic> json) => _$_$_TeamFromJson(json);
+  factory _$_Team.fromJson(Map<String, dynamic> json) =>
+      _$_$_TeamFromJson(json);
 
   @override
 
@@ -727,59 +888,80 @@ class _$_Team implements _Team {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Team &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
             (identical(other.isArchive, isArchive) ||
-                const DeepCollectionEquality().equals(other.isArchive, isArchive)) &&
-            (identical(other.gentime, gentime) || const DeepCollectionEquality().equals(other.gentime, gentime)) &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
+                const DeepCollectionEquality()
+                    .equals(other.isArchive, isArchive)) &&
+            (identical(other.gentime, gentime) ||
+                const DeepCollectionEquality()
+                    .equals(other.gentime, gentime)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
             (identical(other.defaultTaskDeadline, defaultTaskDeadline) ||
-                const DeepCollectionEquality().equals(other.defaultTaskDeadline, defaultTaskDeadline)) &&
+                const DeepCollectionEquality()
+                    .equals(other.defaultTaskDeadline, defaultTaskDeadline)) &&
             (identical(other.maxMessageUpdateAge, maxMessageUpdateAge) ||
-                const DeepCollectionEquality().equals(other.maxMessageUpdateAge, maxMessageUpdateAge)) &&
-            (identical(other.icons, icons) || const DeepCollectionEquality().equals(other.icons, icons)) &&
+                const DeepCollectionEquality()
+                    .equals(other.maxMessageUpdateAge, maxMessageUpdateAge)) &&
+            (identical(other.icons, icons) ||
+                const DeepCollectionEquality().equals(other.icons, icons)) &&
             (identical(other.lastActive, lastActive) ||
-                const DeepCollectionEquality().equals(other.lastActive, lastActive)) &&
+                const DeepCollectionEquality()
+                    .equals(other.lastActive, lastActive)) &&
             (identical(other.changeableStatuses, changeableStatuses) ||
-                const DeepCollectionEquality().equals(other.changeableStatuses, changeableStatuses)) &&
+                const DeepCollectionEquality()
+                    .equals(other.changeableStatuses, changeableStatuses)) &&
             (identical(other.badProfile, badProfile) ||
-                const DeepCollectionEquality().equals(other.badProfile, badProfile)) &&
+                const DeepCollectionEquality()
+                    .equals(other.badProfile, badProfile)) &&
             (identical(other.needConfirmation, needConfirmation) ||
-                const DeepCollectionEquality().equals(other.needConfirmation, needConfirmation)) &&
+                const DeepCollectionEquality()
+                    .equals(other.needConfirmation, needConfirmation)) &&
             (identical(other.usePatronymic, usePatronymic) ||
-                const DeepCollectionEquality().equals(other.usePatronymic, usePatronymic)) &&
+                const DeepCollectionEquality()
+                    .equals(other.usePatronymic, usePatronymic)) &&
             (identical(other.userFields, userFields) ||
-                const DeepCollectionEquality().equals(other.userFields, userFields)) &&
+                const DeepCollectionEquality()
+                    .equals(other.userFields, userFields)) &&
             (identical(other.displayFamilyNameFirst, displayFamilyNameFirst) ||
-                const DeepCollectionEquality().equals(other.displayFamilyNameFirst, displayFamilyNameFirst)) &&
+                const DeepCollectionEquality().equals(
+                    other.displayFamilyNameFirst, displayFamilyNameFirst)) &&
             (identical(other.useTaskImportance, useTaskImportance) ||
-                const DeepCollectionEquality().equals(other.useTaskImportance, useTaskImportance)) &&
+                const DeepCollectionEquality()
+                    .equals(other.useTaskImportance, useTaskImportance)) &&
             (identical(other.taskImportanceMin, taskImportanceMin) ||
-                const DeepCollectionEquality().equals(other.taskImportanceMin, taskImportanceMin)) &&
+                const DeepCollectionEquality()
+                    .equals(other.taskImportanceMin, taskImportanceMin)) &&
             (identical(other.taskImportanceMax, taskImportanceMax) ||
-                const DeepCollectionEquality().equals(other.taskImportanceMax, taskImportanceMax)) &&
+                const DeepCollectionEquality()
+                    .equals(other.taskImportanceMax, taskImportanceMax)) &&
             (identical(other.taskImportanceRev, taskImportanceRev) ||
-                const DeepCollectionEquality().equals(other.taskImportanceRev, taskImportanceRev)) &&
+                const DeepCollectionEquality()
+                    .equals(other.taskImportanceRev, taskImportanceRev)) &&
             (identical(other.useTaskUrgency, useTaskUrgency) ||
-                const DeepCollectionEquality().equals(other.useTaskUrgency, useTaskUrgency)) &&
+                const DeepCollectionEquality()
+                    .equals(other.useTaskUrgency, useTaskUrgency)) &&
             (identical(other.useTaskComplexity, useTaskComplexity) ||
-                const DeepCollectionEquality().equals(other.useTaskComplexity, useTaskComplexity)) &&
+                const DeepCollectionEquality()
+                    .equals(other.useTaskComplexity, useTaskComplexity)) &&
             (identical(other.useTaskSpentTime, useTaskSpentTime) ||
-                const DeepCollectionEquality().equals(other.useTaskSpentTime, useTaskSpentTime)) &&
+                const DeepCollectionEquality()
+                    .equals(other.useTaskSpentTime, useTaskSpentTime)) &&
             (identical(other.uploadsSize, uploadsSize) ||
-                const DeepCollectionEquality().equals(other.uploadsSize, uploadsSize)) &&
+                const DeepCollectionEquality()
+                    .equals(other.uploadsSize, uploadsSize)) &&
             (identical(other.uploadsSizeLimit, uploadsSizeLimit) ||
-                const DeepCollectionEquality().equals(other.uploadsSizeLimit, uploadsSizeLimit)) &&
+                const DeepCollectionEquality()
+                    .equals(other.uploadsSizeLimit, uploadsSizeLimit)) &&
             (identical(other.unreads, unreads) || const DeepCollectionEquality().equals(other.unreads, unreads)) &&
             (identical(other.me, me) || const DeepCollectionEquality().equals(other.me, me)) &&
             (identical(other.contacts, contacts) || const DeepCollectionEquality().equals(other.contacts, contacts)) &&
-            (identical(other.singleGroup, singleGroup) ||
-                const DeepCollectionEquality().equals(other.singleGroup, singleGroup)) &&
+            (identical(other.singleGroup, singleGroup) || const DeepCollectionEquality().equals(other.singleGroup, singleGroup)) &&
             (identical(other.theme, theme) || const DeepCollectionEquality().equals(other.theme, theme)) &&
-            (identical(other.hideArchivedUsers, hideArchivedUsers) ||
-                const DeepCollectionEquality().equals(other.hideArchivedUsers, hideArchivedUsers)) &&
+            (identical(other.hideArchivedUsers, hideArchivedUsers) || const DeepCollectionEquality().equals(other.hideArchivedUsers, hideArchivedUsers)) &&
             (identical(other.pinned, pinned) || const DeepCollectionEquality().equals(other.pinned, pinned)) &&
-            (identical(other.availableTariffs, availableTariffs) ||
-                const DeepCollectionEquality().equals(other.availableTariffs, availableTariffs)));
+            (identical(other.availableTariffs, availableTariffs) || const DeepCollectionEquality().equals(other.availableTariffs, availableTariffs)));
   }
 
   @override
@@ -819,7 +1001,8 @@ class _$_Team implements _Team {
 
   @JsonKey(ignore: true)
   @override
-  _$TeamCopyWith<_Team> get copyWith => __$TeamCopyWithImpl<_Team>(this, _$identity);
+  _$TeamCopyWith<_Team> get copyWith =>
+      __$TeamCopyWithImpl<_Team>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -829,37 +1012,78 @@ class _$_Team implements _Team {
 
 abstract class _Team implements Team {
   const factory _Team(
-      {@required @JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'is_archive') bool isArchive,
-      @required @JsonKey(name: 'gentime') int gentime,
-      @required @JsonKey(name: 'name') String name,
-      @JsonKey(name: 'default_task_deadline') String defaultTaskDeadline,
-      @required @JsonKey(name: 'max_message_update_age') int maxMessageUpdateAge,
-      @required @JsonKey(name: 'icons') IconData icons,
-      @required @JsonKey(name: 'last_active') bool lastActive,
-      @JsonKey(name: 'changeable_statuses') List<String> changeableStatuses,
-      @JsonKey(name: 'bad_profile') bool badProfile,
-      @required @JsonKey(name: 'need_confirmation') bool needConfirmation,
-      @JsonKey(name: 'use_patronymic') bool usePatronymic,
-      @required @JsonKey(name: 'user_fields') List<String> userFields,
-      @JsonKey(name: 'display_family_name_first') bool displayFamilyNameFirst,
-      @JsonKey(name: 'use_task_importance') bool useTaskImportance,
-      @JsonKey(name: 'task_importance_min') int taskImportanceMin,
-      @JsonKey(name: 'task_importance_max') int taskImportanceMax,
-      @JsonKey(name: 'task_importance_rev') bool taskImportanceRev,
-      @JsonKey(name: 'use_task_urgency') bool useTaskUrgency,
-      @JsonKey(name: 'use_task_complexity') bool useTaskComplexity,
-      @JsonKey(name: 'use_task_spent_time') bool useTaskSpentTime,
-      @JsonKey(name: 'uploads_size') int uploadsSize,
-      @JsonKey(name: 'uploads_size_limit') int uploadsSizeLimit,
-      @required @JsonKey(name: 'unread') TeamUnread unreads,
-      @required @JsonKey(name: 'me') Contact me,
-      @JsonKey(name: 'contacts') List<Contact> contacts,
-      @JsonKey(name: 'single_group') String singleGroup,
-      @JsonKey(name: 'theme') Theme theme,
-      @JsonKey(name: 'hide_archived_users') bool hideArchivedUsers,
-      @JsonKey(name: 'pinned') bool pinned,
-      @JsonKey(name: 'available_tariffs') List<String> availableTariffs}) = _$_Team;
+      {@required
+      @JsonKey(name: 'uid')
+          String uid,
+      @JsonKey(name: 'is_archive')
+          bool isArchive,
+      @required
+      @JsonKey(name: 'gentime')
+          int gentime,
+      @required
+      @JsonKey(name: 'name')
+          String name,
+      @JsonKey(name: 'default_task_deadline')
+          String defaultTaskDeadline,
+      @required
+      @JsonKey(name: 'max_message_update_age')
+          int maxMessageUpdateAge,
+      @required
+      @JsonKey(name: 'icons')
+          IconData icons,
+      @required
+      @JsonKey(name: 'last_active')
+          bool lastActive,
+      @JsonKey(name: 'changeable_statuses')
+          List<String> changeableStatuses,
+      @JsonKey(name: 'bad_profile')
+          bool badProfile,
+      @required
+      @JsonKey(name: 'need_confirmation')
+          bool needConfirmation,
+      @JsonKey(name: 'use_patronymic')
+          bool usePatronymic,
+      @required
+      @JsonKey(name: 'user_fields')
+          List<String> userFields,
+      @JsonKey(name: 'display_family_name_first')
+          bool displayFamilyNameFirst,
+      @JsonKey(name: 'use_task_importance')
+          bool useTaskImportance,
+      @JsonKey(name: 'task_importance_min')
+          int taskImportanceMin,
+      @JsonKey(name: 'task_importance_max')
+          int taskImportanceMax,
+      @JsonKey(name: 'task_importance_rev')
+          bool taskImportanceRev,
+      @JsonKey(name: 'use_task_urgency')
+          bool useTaskUrgency,
+      @JsonKey(name: 'use_task_complexity')
+          bool useTaskComplexity,
+      @JsonKey(name: 'use_task_spent_time')
+          bool useTaskSpentTime,
+      @JsonKey(name: 'uploads_size')
+          int uploadsSize,
+      @JsonKey(name: 'uploads_size_limit')
+          int uploadsSizeLimit,
+      @required
+      @JsonKey(name: 'unread')
+          TeamUnread unreads,
+      @required
+      @JsonKey(name: 'me')
+          Contact me,
+      @JsonKey(name: 'contacts')
+          List<Contact> contacts,
+      @JsonKey(name: 'single_group')
+          String singleGroup,
+      @JsonKey(name: 'theme')
+          Theme theme,
+      @JsonKey(name: 'hide_archived_users')
+          bool hideArchivedUsers,
+      @JsonKey(name: 'pinned')
+          bool pinned,
+      @JsonKey(name: 'available_tariffs')
+          List<String> availableTariffs}) = _$_Team;
 
   factory _Team.fromJson(Map<String, dynamic> json) = _$_Team.fromJson;
 

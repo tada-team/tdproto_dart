@@ -15,12 +15,15 @@ _$_TaskPreview _$_$_TaskPreviewFromJson(Map<String, dynamic> json) {
     section: json['section'] as String,
     isPublic: json['public'] as bool,
     tags: (json['tags'] as List)?.map((e) => e as String)?.toList(),
-    items:
-        (json['items'] as List)?.map((e) => e == null ? null : TaskItems.fromJson(e as Map<String, dynamic>))?.toList(),
+    items: (json['items'] as List)
+        ?.map((e) =>
+            e == null ? null : TaskItems.fromJson(e as Map<String, dynamic>))
+        ?.toList(),
   );
 }
 
-Map<String, dynamic> _$_$_TaskPreviewToJson(_$_TaskPreview instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_TaskPreviewToJson(_$_TaskPreview instance) =>
+    <String, dynamic>{
       '_error': instance.error,
       'assignee': instance.assignee,
       'deadline': instance.deadline,

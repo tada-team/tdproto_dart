@@ -77,7 +77,8 @@ mixin _$ButtonColors {
 
 /// @nodoc
 abstract class $ButtonColorsCopyWith<$Res> {
-  factory $ButtonColorsCopyWith(ButtonColors value, $Res Function(ButtonColors) then) =
+  factory $ButtonColorsCopyWith(
+          ButtonColors value, $Res Function(ButtonColors) then) =
       _$ButtonColorsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'brand_static') String brandStatic,
@@ -106,19 +107,31 @@ class _$ButtonColorsCopyWithImpl<$Res> implements $ButtonColorsCopyWith<$Res> {
     Object simpleDisable = freezed,
   }) {
     return _then(_value.copyWith(
-      brandStatic: brandStatic == freezed ? _value.brandStatic : brandStatic as String,
-      brandActive: brandActive == freezed ? _value.brandActive : brandActive as String,
-      brandDisable: brandDisable == freezed ? _value.brandDisable : brandDisable as String,
-      simpleStatic: simpleStatic == freezed ? _value.simpleStatic : simpleStatic as String,
-      simpleActive: simpleActive == freezed ? _value.simpleActive : simpleActive as String,
-      simpleDisable: simpleDisable == freezed ? _value.simpleDisable : simpleDisable as String,
+      brandStatic:
+          brandStatic == freezed ? _value.brandStatic : brandStatic as String,
+      brandActive:
+          brandActive == freezed ? _value.brandActive : brandActive as String,
+      brandDisable: brandDisable == freezed
+          ? _value.brandDisable
+          : brandDisable as String,
+      simpleStatic: simpleStatic == freezed
+          ? _value.simpleStatic
+          : simpleStatic as String,
+      simpleActive: simpleActive == freezed
+          ? _value.simpleActive
+          : simpleActive as String,
+      simpleDisable: simpleDisable == freezed
+          ? _value.simpleDisable
+          : simpleDisable as String,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$ButtonColorsCopyWith<$Res> implements $ButtonColorsCopyWith<$Res> {
-  factory _$ButtonColorsCopyWith(_ButtonColors value, $Res Function(_ButtonColors) then) =
+abstract class _$ButtonColorsCopyWith<$Res>
+    implements $ButtonColorsCopyWith<$Res> {
+  factory _$ButtonColorsCopyWith(
+          _ButtonColors value, $Res Function(_ButtonColors) then) =
       __$ButtonColorsCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -133,7 +146,8 @@ abstract class _$ButtonColorsCopyWith<$Res> implements $ButtonColorsCopyWith<$Re
 /// @nodoc
 class __$ButtonColorsCopyWithImpl<$Res> extends _$ButtonColorsCopyWithImpl<$Res>
     implements _$ButtonColorsCopyWith<$Res> {
-  __$ButtonColorsCopyWithImpl(_ButtonColors _value, $Res Function(_ButtonColors) _then)
+  __$ButtonColorsCopyWithImpl(
+      _ButtonColors _value, $Res Function(_ButtonColors) _then)
       : super(_value, (v) => _then(v as _ButtonColors));
 
   @override
@@ -149,12 +163,22 @@ class __$ButtonColorsCopyWithImpl<$Res> extends _$ButtonColorsCopyWithImpl<$Res>
     Object simpleDisable = freezed,
   }) {
     return _then(_ButtonColors(
-      brandStatic: brandStatic == freezed ? _value.brandStatic : brandStatic as String,
-      brandActive: brandActive == freezed ? _value.brandActive : brandActive as String,
-      brandDisable: brandDisable == freezed ? _value.brandDisable : brandDisable as String,
-      simpleStatic: simpleStatic == freezed ? _value.simpleStatic : simpleStatic as String,
-      simpleActive: simpleActive == freezed ? _value.simpleActive : simpleActive as String,
-      simpleDisable: simpleDisable == freezed ? _value.simpleDisable : simpleDisable as String,
+      brandStatic:
+          brandStatic == freezed ? _value.brandStatic : brandStatic as String,
+      brandActive:
+          brandActive == freezed ? _value.brandActive : brandActive as String,
+      brandDisable: brandDisable == freezed
+          ? _value.brandDisable
+          : brandDisable as String,
+      simpleStatic: simpleStatic == freezed
+          ? _value.simpleStatic
+          : simpleStatic as String,
+      simpleActive: simpleActive == freezed
+          ? _value.simpleActive
+          : simpleActive as String,
+      simpleDisable: simpleDisable == freezed
+          ? _value.simpleDisable
+          : simpleDisable as String,
     ));
   }
 }
@@ -177,7 +201,8 @@ class _$_ButtonColors implements _ButtonColors {
         assert(simpleActive != null),
         assert(simpleDisable != null);
 
-  factory _$_ButtonColors.fromJson(Map<String, dynamic> json) => _$_$_ButtonColorsFromJson(json);
+  factory _$_ButtonColors.fromJson(Map<String, dynamic> json) =>
+      _$_$_ButtonColorsFromJson(json);
 
   @override
 
@@ -220,17 +245,23 @@ class _$_ButtonColors implements _ButtonColors {
     return identical(this, other) ||
         (other is _ButtonColors &&
             (identical(other.brandStatic, brandStatic) ||
-                const DeepCollectionEquality().equals(other.brandStatic, brandStatic)) &&
+                const DeepCollectionEquality()
+                    .equals(other.brandStatic, brandStatic)) &&
             (identical(other.brandActive, brandActive) ||
-                const DeepCollectionEquality().equals(other.brandActive, brandActive)) &&
+                const DeepCollectionEquality()
+                    .equals(other.brandActive, brandActive)) &&
             (identical(other.brandDisable, brandDisable) ||
-                const DeepCollectionEquality().equals(other.brandDisable, brandDisable)) &&
+                const DeepCollectionEquality()
+                    .equals(other.brandDisable, brandDisable)) &&
             (identical(other.simpleStatic, simpleStatic) ||
-                const DeepCollectionEquality().equals(other.simpleStatic, simpleStatic)) &&
+                const DeepCollectionEquality()
+                    .equals(other.simpleStatic, simpleStatic)) &&
             (identical(other.simpleActive, simpleActive) ||
-                const DeepCollectionEquality().equals(other.simpleActive, simpleActive)) &&
+                const DeepCollectionEquality()
+                    .equals(other.simpleActive, simpleActive)) &&
             (identical(other.simpleDisable, simpleDisable) ||
-                const DeepCollectionEquality().equals(other.simpleDisable, simpleDisable)));
+                const DeepCollectionEquality()
+                    .equals(other.simpleDisable, simpleDisable)));
   }
 
   @override
@@ -245,7 +276,8 @@ class _$_ButtonColors implements _ButtonColors {
 
   @JsonKey(ignore: true)
   @override
-  _$ButtonColorsCopyWith<_ButtonColors> get copyWith => __$ButtonColorsCopyWithImpl<_ButtonColors>(this, _$identity);
+  _$ButtonColorsCopyWith<_ButtonColors> get copyWith =>
+      __$ButtonColorsCopyWithImpl<_ButtonColors>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -255,14 +287,16 @@ class _$_ButtonColors implements _ButtonColors {
 
 abstract class _ButtonColors implements ButtonColors {
   const factory _ButtonColors(
-      {@required @JsonKey(name: 'brand_static') String brandStatic,
-      @required @JsonKey(name: 'brand_active') String brandActive,
-      @required @JsonKey(name: 'brand_disable') String brandDisable,
-      @required @JsonKey(name: 'simple_static') String simpleStatic,
-      @required @JsonKey(name: 'simple_active') String simpleActive,
-      @required @JsonKey(name: 'simple_disable') String simpleDisable}) = _$_ButtonColors;
+          {@required @JsonKey(name: 'brand_static') String brandStatic,
+          @required @JsonKey(name: 'brand_active') String brandActive,
+          @required @JsonKey(name: 'brand_disable') String brandDisable,
+          @required @JsonKey(name: 'simple_static') String simpleStatic,
+          @required @JsonKey(name: 'simple_active') String simpleActive,
+          @required @JsonKey(name: 'simple_disable') String simpleDisable}) =
+      _$_ButtonColors;
 
-  factory _ButtonColors.fromJson(Map<String, dynamic> json) = _$_ButtonColors.fromJson;
+  factory _ButtonColors.fromJson(Map<String, dynamic> json) =
+      _$_ButtonColors.fromJson;
 
   @override
 

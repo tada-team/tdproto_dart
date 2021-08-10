@@ -107,7 +107,8 @@ mixin _$WebBase {
 
 /// @nodoc
 abstract class $WebBaseCopyWith<$Res> {
-  factory $WebBaseCopyWith(WebBase value, $Res Function(WebBase) then) = _$WebBaseCopyWithImpl<$Res>;
+  factory $WebBaseCopyWith(WebBase value, $Res Function(WebBase) then) =
+      _$WebBaseCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'brand') String brand,
       @JsonKey(name: 'brand_light') String brandLight,
@@ -146,15 +147,21 @@ class _$WebBaseCopyWithImpl<$Res> implements $WebBaseCopyWith<$Res> {
   }) {
     return _then(_value.copyWith(
       brand: brand == freezed ? _value.brand : brand as String,
-      brandLight: brandLight == freezed ? _value.brandLight : brandLight as String,
+      brandLight:
+          brandLight == freezed ? _value.brandLight : brandLight as String,
       brandDark: brandDark == freezed ? _value.brandDark : brandDark as String,
       backLight: backLight == freezed ? _value.backLight : backLight as String,
       error: error == freezed ? _value.error : error as String,
-      errorLight: errorLight == freezed ? _value.errorLight : errorLight as String,
+      errorLight:
+          errorLight == freezed ? _value.errorLight : errorLight as String,
       success: success == freezed ? _value.success : success as String,
-      successLight: successLight == freezed ? _value.successLight : successLight as String,
+      successLight: successLight == freezed
+          ? _value.successLight
+          : successLight as String,
       attention: attention == freezed ? _value.attention : attention as String,
-      attentionLight: attentionLight == freezed ? _value.attentionLight : attentionLight as String,
+      attentionLight: attentionLight == freezed
+          ? _value.attentionLight
+          : attentionLight as String,
       fade: fade == freezed ? _value.fade : fade as String,
     ));
   }
@@ -162,7 +169,8 @@ class _$WebBaseCopyWithImpl<$Res> implements $WebBaseCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$WebBaseCopyWith<$Res> implements $WebBaseCopyWith<$Res> {
-  factory _$WebBaseCopyWith(_WebBase value, $Res Function(_WebBase) then) = __$WebBaseCopyWithImpl<$Res>;
+  factory _$WebBaseCopyWith(_WebBase value, $Res Function(_WebBase) then) =
+      __$WebBaseCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'brand') String brand,
@@ -179,8 +187,10 @@ abstract class _$WebBaseCopyWith<$Res> implements $WebBaseCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$WebBaseCopyWithImpl<$Res> extends _$WebBaseCopyWithImpl<$Res> implements _$WebBaseCopyWith<$Res> {
-  __$WebBaseCopyWithImpl(_WebBase _value, $Res Function(_WebBase) _then) : super(_value, (v) => _then(v as _WebBase));
+class __$WebBaseCopyWithImpl<$Res> extends _$WebBaseCopyWithImpl<$Res>
+    implements _$WebBaseCopyWith<$Res> {
+  __$WebBaseCopyWithImpl(_WebBase _value, $Res Function(_WebBase) _then)
+      : super(_value, (v) => _then(v as _WebBase));
 
   @override
   _WebBase get _value => super._value as _WebBase;
@@ -201,15 +211,21 @@ class __$WebBaseCopyWithImpl<$Res> extends _$WebBaseCopyWithImpl<$Res> implement
   }) {
     return _then(_WebBase(
       brand: brand == freezed ? _value.brand : brand as String,
-      brandLight: brandLight == freezed ? _value.brandLight : brandLight as String,
+      brandLight:
+          brandLight == freezed ? _value.brandLight : brandLight as String,
       brandDark: brandDark == freezed ? _value.brandDark : brandDark as String,
       backLight: backLight == freezed ? _value.backLight : backLight as String,
       error: error == freezed ? _value.error : error as String,
-      errorLight: errorLight == freezed ? _value.errorLight : errorLight as String,
+      errorLight:
+          errorLight == freezed ? _value.errorLight : errorLight as String,
       success: success == freezed ? _value.success : success as String,
-      successLight: successLight == freezed ? _value.successLight : successLight as String,
+      successLight: successLight == freezed
+          ? _value.successLight
+          : successLight as String,
       attention: attention == freezed ? _value.attention : attention as String,
-      attentionLight: attentionLight == freezed ? _value.attentionLight : attentionLight as String,
+      attentionLight: attentionLight == freezed
+          ? _value.attentionLight
+          : attentionLight as String,
       fade: fade == freezed ? _value.fade : fade as String,
     ));
   }
@@ -243,7 +259,8 @@ class _$_WebBase implements _WebBase {
         assert(attentionLight != null),
         assert(fade != null);
 
-  factory _$_WebBase.fromJson(Map<String, dynamic> json) => _$_$_WebBaseFromJson(json);
+  factory _$_WebBase.fromJson(Map<String, dynamic> json) =>
+      _$_$_WebBaseFromJson(json);
 
   @override
 
@@ -310,24 +327,36 @@ class _$_WebBase implements _WebBase {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _WebBase &&
-            (identical(other.brand, brand) || const DeepCollectionEquality().equals(other.brand, brand)) &&
+            (identical(other.brand, brand) ||
+                const DeepCollectionEquality().equals(other.brand, brand)) &&
             (identical(other.brandLight, brandLight) ||
-                const DeepCollectionEquality().equals(other.brandLight, brandLight)) &&
+                const DeepCollectionEquality()
+                    .equals(other.brandLight, brandLight)) &&
             (identical(other.brandDark, brandDark) ||
-                const DeepCollectionEquality().equals(other.brandDark, brandDark)) &&
+                const DeepCollectionEquality()
+                    .equals(other.brandDark, brandDark)) &&
             (identical(other.backLight, backLight) ||
-                const DeepCollectionEquality().equals(other.backLight, backLight)) &&
-            (identical(other.error, error) || const DeepCollectionEquality().equals(other.error, error)) &&
+                const DeepCollectionEquality()
+                    .equals(other.backLight, backLight)) &&
+            (identical(other.error, error) ||
+                const DeepCollectionEquality().equals(other.error, error)) &&
             (identical(other.errorLight, errorLight) ||
-                const DeepCollectionEquality().equals(other.errorLight, errorLight)) &&
-            (identical(other.success, success) || const DeepCollectionEquality().equals(other.success, success)) &&
+                const DeepCollectionEquality()
+                    .equals(other.errorLight, errorLight)) &&
+            (identical(other.success, success) ||
+                const DeepCollectionEquality()
+                    .equals(other.success, success)) &&
             (identical(other.successLight, successLight) ||
-                const DeepCollectionEquality().equals(other.successLight, successLight)) &&
+                const DeepCollectionEquality()
+                    .equals(other.successLight, successLight)) &&
             (identical(other.attention, attention) ||
-                const DeepCollectionEquality().equals(other.attention, attention)) &&
+                const DeepCollectionEquality()
+                    .equals(other.attention, attention)) &&
             (identical(other.attentionLight, attentionLight) ||
-                const DeepCollectionEquality().equals(other.attentionLight, attentionLight)) &&
-            (identical(other.fade, fade) || const DeepCollectionEquality().equals(other.fade, fade)));
+                const DeepCollectionEquality()
+                    .equals(other.attentionLight, attentionLight)) &&
+            (identical(other.fade, fade) ||
+                const DeepCollectionEquality().equals(other.fade, fade)));
   }
 
   @override
@@ -347,7 +376,8 @@ class _$_WebBase implements _WebBase {
 
   @JsonKey(ignore: true)
   @override
-  _$WebBaseCopyWith<_WebBase> get copyWith => __$WebBaseCopyWithImpl<_WebBase>(this, _$identity);
+  _$WebBaseCopyWith<_WebBase> get copyWith =>
+      __$WebBaseCopyWithImpl<_WebBase>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {

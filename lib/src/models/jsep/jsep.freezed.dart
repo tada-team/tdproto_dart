@@ -17,7 +17,9 @@ class _$JSEPTearOff {
   const _$JSEPTearOff();
 
 // ignore: unused_element
-  _JSEP call({@required @JsonKey(name: 'sdp') String sdp, @required @JsonKey(name: 'type') String type}) {
+  _JSEP call(
+      {@required @JsonKey(name: 'sdp') String sdp,
+      @required @JsonKey(name: 'type') String type}) {
     return _JSEP(
       sdp: sdp,
       type: type,
@@ -51,8 +53,10 @@ mixin _$JSEP {
 
 /// @nodoc
 abstract class $JSEPCopyWith<$Res> {
-  factory $JSEPCopyWith(JSEP value, $Res Function(JSEP) then) = _$JSEPCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'sdp') String sdp, @JsonKey(name: 'type') String type});
+  factory $JSEPCopyWith(JSEP value, $Res Function(JSEP) then) =
+      _$JSEPCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'sdp') String sdp, @JsonKey(name: 'type') String type});
 }
 
 /// @nodoc
@@ -77,14 +81,18 @@ class _$JSEPCopyWithImpl<$Res> implements $JSEPCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$JSEPCopyWith<$Res> implements $JSEPCopyWith<$Res> {
-  factory _$JSEPCopyWith(_JSEP value, $Res Function(_JSEP) then) = __$JSEPCopyWithImpl<$Res>;
+  factory _$JSEPCopyWith(_JSEP value, $Res Function(_JSEP) then) =
+      __$JSEPCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'sdp') String sdp, @JsonKey(name: 'type') String type});
+  $Res call(
+      {@JsonKey(name: 'sdp') String sdp, @JsonKey(name: 'type') String type});
 }
 
 /// @nodoc
-class __$JSEPCopyWithImpl<$Res> extends _$JSEPCopyWithImpl<$Res> implements _$JSEPCopyWith<$Res> {
-  __$JSEPCopyWithImpl(_JSEP _value, $Res Function(_JSEP) _then) : super(_value, (v) => _then(v as _JSEP));
+class __$JSEPCopyWithImpl<$Res> extends _$JSEPCopyWithImpl<$Res>
+    implements _$JSEPCopyWith<$Res> {
+  __$JSEPCopyWithImpl(_JSEP _value, $Res Function(_JSEP) _then)
+      : super(_value, (v) => _then(v as _JSEP));
 
   @override
   _JSEP get _value => super._value as _JSEP;
@@ -105,11 +113,14 @@ class __$JSEPCopyWithImpl<$Res> extends _$JSEPCopyWithImpl<$Res> implements _$JS
 
 /// @nodoc
 class _$_JSEP implements _JSEP {
-  const _$_JSEP({@required @JsonKey(name: 'sdp') this.sdp, @required @JsonKey(name: 'type') this.type})
+  const _$_JSEP(
+      {@required @JsonKey(name: 'sdp') this.sdp,
+      @required @JsonKey(name: 'type') this.type})
       : assert(sdp != null),
         assert(type != null);
 
-  factory _$_JSEP.fromJson(Map<String, dynamic> json) => _$_$_JSEPFromJson(json);
+  factory _$_JSEP.fromJson(Map<String, dynamic> json) =>
+      _$_$_JSEPFromJson(json);
 
   @override
 
@@ -131,17 +142,22 @@ class _$_JSEP implements _JSEP {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _JSEP &&
-            (identical(other.sdp, sdp) || const DeepCollectionEquality().equals(other.sdp, sdp)) &&
-            (identical(other.type, type) || const DeepCollectionEquality().equals(other.type, type)));
+            (identical(other.sdp, sdp) ||
+                const DeepCollectionEquality().equals(other.sdp, sdp)) &&
+            (identical(other.type, type) ||
+                const DeepCollectionEquality().equals(other.type, type)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(sdp) ^ const DeepCollectionEquality().hash(type);
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(sdp) ^
+      const DeepCollectionEquality().hash(type);
 
   @JsonKey(ignore: true)
   @override
-  _$JSEPCopyWith<_JSEP> get copyWith => __$JSEPCopyWithImpl<_JSEP>(this, _$identity);
+  _$JSEPCopyWith<_JSEP> get copyWith =>
+      __$JSEPCopyWithImpl<_JSEP>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -150,8 +166,9 @@ class _$_JSEP implements _JSEP {
 }
 
 abstract class _JSEP implements JSEP {
-  const factory _JSEP({@required @JsonKey(name: 'sdp') String sdp, @required @JsonKey(name: 'type') String type}) =
-      _$_JSEP;
+  const factory _JSEP(
+      {@required @JsonKey(name: 'sdp') String sdp,
+      @required @JsonKey(name: 'type') String type}) = _$_JSEP;
 
   factory _JSEP.fromJson(Map<String, dynamic> json) = _$_JSEP.fromJson;
 

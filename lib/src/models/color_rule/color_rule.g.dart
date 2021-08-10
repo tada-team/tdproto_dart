@@ -24,7 +24,8 @@ _$_ColorRule _$_$_ColorRuleFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_ColorRuleToJson(_$_ColorRule instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_ColorRuleToJson(_$_ColorRule instance) =>
+    <String, dynamic>{
       'uid': instance.uid,
       'priority': instance.priority,
       'description': instance.description,

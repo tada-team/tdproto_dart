@@ -18,7 +18,8 @@ _$_FontColors _$_$_FontColorsFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_FontColorsToJson(_$_FontColors instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_FontColorsToJson(_$_FontColors instance) =>
+    <String, dynamic>{
       'text': instance.text,
       'title': instance.title,
       'sub': instance.sub,

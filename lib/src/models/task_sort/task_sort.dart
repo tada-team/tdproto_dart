@@ -10,9 +10,11 @@ abstract class TaskSort with _$TaskSort {
   const factory TaskSort({
     /// Field.
     @JsonKey(name: 'key') @required String key,
-
+    
     /// Sort title.
     @JsonKey(name: 'title') @required String title,
+    
+    
   }) = _TaskSort;
 
   factory TaskSort.fromJson(Map<String, dynamic> json) => _$TaskSortFromJson(json);

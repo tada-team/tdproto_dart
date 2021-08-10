@@ -22,7 +22,8 @@ _$_MessagePush _$_$_MessagePushFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_MessagePushToJson(_$_MessagePush instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_MessagePushToJson(_$_MessagePush instance) =>
+    <String, dynamic>{
       'title': instance.title,
       'subtitle': instance.subtitle,
       'message': instance.message,

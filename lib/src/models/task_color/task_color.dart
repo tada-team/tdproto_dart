@@ -10,12 +10,14 @@ abstract class TaskColor with _$TaskColor {
   const factory TaskColor({
     /// Regular color.
     @JsonKey(name: 'regular') @required String regular,
-
+    
     /// Dark color.
     @JsonKey(name: 'dark') @required String dark,
-
+    
     /// Light color.
     @JsonKey(name: 'light') @required String light,
+    
+    
   }) = _TaskColor;
 
   factory TaskColor.fromJson(Map<String, dynamic> json) => _$TaskColorFromJson(json);

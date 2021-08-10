@@ -59,7 +59,9 @@ mixin _$IconColors {
 
 /// @nodoc
 abstract class $IconColorsCopyWith<$Res> {
-  factory $IconColorsCopyWith(IconColors value, $Res Function(IconColors) then) = _$IconColorsCopyWithImpl<$Res>;
+  factory $IconColorsCopyWith(
+          IconColors value, $Res Function(IconColors) then) =
+      _$IconColorsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'title') String title,
       @JsonKey(name: 'brand') String brand,
@@ -90,7 +92,9 @@ class _$IconColorsCopyWithImpl<$Res> implements $IconColorsCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$IconColorsCopyWith<$Res> implements $IconColorsCopyWith<$Res> {
-  factory _$IconColorsCopyWith(_IconColors value, $Res Function(_IconColors) then) = __$IconColorsCopyWithImpl<$Res>;
+  factory _$IconColorsCopyWith(
+          _IconColors value, $Res Function(_IconColors) then) =
+      __$IconColorsCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'title') String title,
@@ -99,8 +103,10 @@ abstract class _$IconColorsCopyWith<$Res> implements $IconColorsCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$IconColorsCopyWithImpl<$Res> extends _$IconColorsCopyWithImpl<$Res> implements _$IconColorsCopyWith<$Res> {
-  __$IconColorsCopyWithImpl(_IconColors _value, $Res Function(_IconColors) _then)
+class __$IconColorsCopyWithImpl<$Res> extends _$IconColorsCopyWithImpl<$Res>
+    implements _$IconColorsCopyWith<$Res> {
+  __$IconColorsCopyWithImpl(
+      _IconColors _value, $Res Function(_IconColors) _then)
       : super(_value, (v) => _then(v as _IconColors));
 
   @override
@@ -132,7 +138,8 @@ class _$_IconColors implements _IconColors {
         assert(brand != null),
         assert(other != null);
 
-  factory _$_IconColors.fromJson(Map<String, dynamic> json) => _$_$_IconColorsFromJson(json);
+  factory _$_IconColors.fromJson(Map<String, dynamic> json) =>
+      _$_$_IconColorsFromJson(json);
 
   @override
 
@@ -159,9 +166,13 @@ class _$_IconColors implements _IconColors {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _IconColors &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
-            (identical(other.brand, brand) || const DeepCollectionEquality().equals(other.brand, brand)) &&
-            (identical(other.other, this.other) || const DeepCollectionEquality().equals(other.other, this.other)));
+            (identical(other.title, title) ||
+                const DeepCollectionEquality().equals(other.title, title)) &&
+            (identical(other.brand, brand) ||
+                const DeepCollectionEquality().equals(other.brand, brand)) &&
+            (identical(other.other, this.other) ||
+                const DeepCollectionEquality()
+                    .equals(other.other, this.other)));
   }
 
   @override
@@ -173,7 +184,8 @@ class _$_IconColors implements _IconColors {
 
   @JsonKey(ignore: true)
   @override
-  _$IconColorsCopyWith<_IconColors> get copyWith => __$IconColorsCopyWithImpl<_IconColors>(this, _$identity);
+  _$IconColorsCopyWith<_IconColors> get copyWith =>
+      __$IconColorsCopyWithImpl<_IconColors>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -187,7 +199,8 @@ abstract class _IconColors implements IconColors {
       @required @JsonKey(name: 'brand') String brand,
       @required @JsonKey(name: 'other') String other}) = _$_IconColors;
 
-  factory _IconColors.fromJson(Map<String, dynamic> json) = _$_IconColors.fromJson;
+  factory _IconColors.fromJson(Map<String, dynamic> json) =
+      _$_IconColors.fromJson;
 
   @override
 

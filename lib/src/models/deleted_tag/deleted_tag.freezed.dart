@@ -46,7 +46,9 @@ mixin _$DeletedTag {
 
 /// @nodoc
 abstract class $DeletedTagCopyWith<$Res> {
-  factory $DeletedTagCopyWith(DeletedTag value, $Res Function(DeletedTag) then) = _$DeletedTagCopyWithImpl<$Res>;
+  factory $DeletedTagCopyWith(
+          DeletedTag value, $Res Function(DeletedTag) then) =
+      _$DeletedTagCopyWithImpl<$Res>;
   $Res call({@JsonKey(name: 'uid') String uid});
 }
 
@@ -70,14 +72,18 @@ class _$DeletedTagCopyWithImpl<$Res> implements $DeletedTagCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$DeletedTagCopyWith<$Res> implements $DeletedTagCopyWith<$Res> {
-  factory _$DeletedTagCopyWith(_DeletedTag value, $Res Function(_DeletedTag) then) = __$DeletedTagCopyWithImpl<$Res>;
+  factory _$DeletedTagCopyWith(
+          _DeletedTag value, $Res Function(_DeletedTag) then) =
+      __$DeletedTagCopyWithImpl<$Res>;
   @override
   $Res call({@JsonKey(name: 'uid') String uid});
 }
 
 /// @nodoc
-class __$DeletedTagCopyWithImpl<$Res> extends _$DeletedTagCopyWithImpl<$Res> implements _$DeletedTagCopyWith<$Res> {
-  __$DeletedTagCopyWithImpl(_DeletedTag _value, $Res Function(_DeletedTag) _then)
+class __$DeletedTagCopyWithImpl<$Res> extends _$DeletedTagCopyWithImpl<$Res>
+    implements _$DeletedTagCopyWith<$Res> {
+  __$DeletedTagCopyWithImpl(
+      _DeletedTag _value, $Res Function(_DeletedTag) _then)
       : super(_value, (v) => _then(v as _DeletedTag));
 
   @override
@@ -97,9 +103,11 @@ class __$DeletedTagCopyWithImpl<$Res> extends _$DeletedTagCopyWithImpl<$Res> imp
 
 /// @nodoc
 class _$_DeletedTag implements _DeletedTag {
-  const _$_DeletedTag({@required @JsonKey(name: 'uid') this.uid}) : assert(uid != null);
+  const _$_DeletedTag({@required @JsonKey(name: 'uid') this.uid})
+      : assert(uid != null);
 
-  factory _$_DeletedTag.fromJson(Map<String, dynamic> json) => _$_$_DeletedTagFromJson(json);
+  factory _$_DeletedTag.fromJson(Map<String, dynamic> json) =>
+      _$_$_DeletedTagFromJson(json);
 
   @override
 
@@ -115,15 +123,19 @@ class _$_DeletedTag implements _DeletedTag {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _DeletedTag && (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)));
+        (other is _DeletedTag &&
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(uid);
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(uid);
 
   @JsonKey(ignore: true)
   @override
-  _$DeletedTagCopyWith<_DeletedTag> get copyWith => __$DeletedTagCopyWithImpl<_DeletedTag>(this, _$identity);
+  _$DeletedTagCopyWith<_DeletedTag> get copyWith =>
+      __$DeletedTagCopyWithImpl<_DeletedTag>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -132,9 +144,11 @@ class _$_DeletedTag implements _DeletedTag {
 }
 
 abstract class _DeletedTag implements DeletedTag {
-  const factory _DeletedTag({@required @JsonKey(name: 'uid') String uid}) = _$_DeletedTag;
+  const factory _DeletedTag({@required @JsonKey(name: 'uid') String uid}) =
+      _$_DeletedTag;
 
-  factory _DeletedTag.fromJson(Map<String, dynamic> json) = _$_DeletedTag.fromJson;
+  factory _DeletedTag.fromJson(Map<String, dynamic> json) =
+      _$_DeletedTag.fromJson;
 
   @override
 

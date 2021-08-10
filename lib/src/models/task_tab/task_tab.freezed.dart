@@ -18,14 +18,30 @@ class _$TaskTabTearOff {
 
 // ignore: unused_element
   _TaskTab call(
-      {@required @JsonKey(name: 'key') String key,
-      @required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'hide_empty') bool hideEmpty,
-      @required @JsonKey(name: 'show_counter') bool showCounter,
-      @required @JsonKey(name: 'pagination') bool pagination,
-      @required @JsonKey(name: 'filters') List<TaskFilter> filters,
-      @required @JsonKey(name: 'sort') List<TaskSort> sort,
-      @required @JsonKey(name: 'unread_tasks') List<TaskCounters> unreadTasks}) {
+      {@required
+      @JsonKey(name: 'key')
+          String key,
+      @required
+      @JsonKey(name: 'title')
+          String title,
+      @required
+      @JsonKey(name: 'hide_empty')
+          bool hideEmpty,
+      @required
+      @JsonKey(name: 'show_counter')
+          bool showCounter,
+      @required
+      @JsonKey(name: 'pagination')
+          bool pagination,
+      @required
+      @JsonKey(name: 'filters')
+          List<TaskFilter> filters,
+      @required
+      @JsonKey(name: 'sort')
+          List<TaskSort> sort,
+      @required
+      @JsonKey(name: 'unread_tasks')
+          List<TaskCounters> unreadTasks}) {
     return _TaskTab(
       key: key,
       title: title,
@@ -89,7 +105,8 @@ mixin _$TaskTab {
 
 /// @nodoc
 abstract class $TaskTabCopyWith<$Res> {
-  factory $TaskTabCopyWith(TaskTab value, $Res Function(TaskTab) then) = _$TaskTabCopyWithImpl<$Res>;
+  factory $TaskTabCopyWith(TaskTab value, $Res Function(TaskTab) then) =
+      _$TaskTabCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'key') String key,
       @JsonKey(name: 'title') String title,
@@ -124,18 +141,24 @@ class _$TaskTabCopyWithImpl<$Res> implements $TaskTabCopyWith<$Res> {
       key: key == freezed ? _value.key : key as String,
       title: title == freezed ? _value.title : title as String,
       hideEmpty: hideEmpty == freezed ? _value.hideEmpty : hideEmpty as bool,
-      showCounter: showCounter == freezed ? _value.showCounter : showCounter as bool,
-      pagination: pagination == freezed ? _value.pagination : pagination as bool,
-      filters: filters == freezed ? _value.filters : filters as List<TaskFilter>,
+      showCounter:
+          showCounter == freezed ? _value.showCounter : showCounter as bool,
+      pagination:
+          pagination == freezed ? _value.pagination : pagination as bool,
+      filters:
+          filters == freezed ? _value.filters : filters as List<TaskFilter>,
       sort: sort == freezed ? _value.sort : sort as List<TaskSort>,
-      unreadTasks: unreadTasks == freezed ? _value.unreadTasks : unreadTasks as List<TaskCounters>,
+      unreadTasks: unreadTasks == freezed
+          ? _value.unreadTasks
+          : unreadTasks as List<TaskCounters>,
     ));
   }
 }
 
 /// @nodoc
 abstract class _$TaskTabCopyWith<$Res> implements $TaskTabCopyWith<$Res> {
-  factory _$TaskTabCopyWith(_TaskTab value, $Res Function(_TaskTab) then) = __$TaskTabCopyWithImpl<$Res>;
+  factory _$TaskTabCopyWith(_TaskTab value, $Res Function(_TaskTab) then) =
+      __$TaskTabCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'key') String key,
@@ -149,8 +172,10 @@ abstract class _$TaskTabCopyWith<$Res> implements $TaskTabCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$TaskTabCopyWithImpl<$Res> extends _$TaskTabCopyWithImpl<$Res> implements _$TaskTabCopyWith<$Res> {
-  __$TaskTabCopyWithImpl(_TaskTab _value, $Res Function(_TaskTab) _then) : super(_value, (v) => _then(v as _TaskTab));
+class __$TaskTabCopyWithImpl<$Res> extends _$TaskTabCopyWithImpl<$Res>
+    implements _$TaskTabCopyWith<$Res> {
+  __$TaskTabCopyWithImpl(_TaskTab _value, $Res Function(_TaskTab) _then)
+      : super(_value, (v) => _then(v as _TaskTab));
 
   @override
   _TaskTab get _value => super._value as _TaskTab;
@@ -170,11 +195,16 @@ class __$TaskTabCopyWithImpl<$Res> extends _$TaskTabCopyWithImpl<$Res> implement
       key: key == freezed ? _value.key : key as String,
       title: title == freezed ? _value.title : title as String,
       hideEmpty: hideEmpty == freezed ? _value.hideEmpty : hideEmpty as bool,
-      showCounter: showCounter == freezed ? _value.showCounter : showCounter as bool,
-      pagination: pagination == freezed ? _value.pagination : pagination as bool,
-      filters: filters == freezed ? _value.filters : filters as List<TaskFilter>,
+      showCounter:
+          showCounter == freezed ? _value.showCounter : showCounter as bool,
+      pagination:
+          pagination == freezed ? _value.pagination : pagination as bool,
+      filters:
+          filters == freezed ? _value.filters : filters as List<TaskFilter>,
       sort: sort == freezed ? _value.sort : sort as List<TaskSort>,
-      unreadTasks: unreadTasks == freezed ? _value.unreadTasks : unreadTasks as List<TaskCounters>,
+      unreadTasks: unreadTasks == freezed
+          ? _value.unreadTasks
+          : unreadTasks as List<TaskCounters>,
     ));
   }
 }
@@ -201,7 +231,8 @@ class _$_TaskTab implements _TaskTab {
         assert(sort != null),
         assert(unreadTasks != null);
 
-  factory _$_TaskTab.fromJson(Map<String, dynamic> json) => _$_$_TaskTabFromJson(json);
+  factory _$_TaskTab.fromJson(Map<String, dynamic> json) =>
+      _$_$_TaskTabFromJson(json);
 
   @override
 
@@ -253,18 +284,27 @@ class _$_TaskTab implements _TaskTab {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _TaskTab &&
-            (identical(other.key, key) || const DeepCollectionEquality().equals(other.key, key)) &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
+            (identical(other.key, key) ||
+                const DeepCollectionEquality().equals(other.key, key)) &&
+            (identical(other.title, title) ||
+                const DeepCollectionEquality().equals(other.title, title)) &&
             (identical(other.hideEmpty, hideEmpty) ||
-                const DeepCollectionEquality().equals(other.hideEmpty, hideEmpty)) &&
+                const DeepCollectionEquality()
+                    .equals(other.hideEmpty, hideEmpty)) &&
             (identical(other.showCounter, showCounter) ||
-                const DeepCollectionEquality().equals(other.showCounter, showCounter)) &&
+                const DeepCollectionEquality()
+                    .equals(other.showCounter, showCounter)) &&
             (identical(other.pagination, pagination) ||
-                const DeepCollectionEquality().equals(other.pagination, pagination)) &&
-            (identical(other.filters, filters) || const DeepCollectionEquality().equals(other.filters, filters)) &&
-            (identical(other.sort, sort) || const DeepCollectionEquality().equals(other.sort, sort)) &&
+                const DeepCollectionEquality()
+                    .equals(other.pagination, pagination)) &&
+            (identical(other.filters, filters) ||
+                const DeepCollectionEquality()
+                    .equals(other.filters, filters)) &&
+            (identical(other.sort, sort) ||
+                const DeepCollectionEquality().equals(other.sort, sort)) &&
             (identical(other.unreadTasks, unreadTasks) ||
-                const DeepCollectionEquality().equals(other.unreadTasks, unreadTasks)));
+                const DeepCollectionEquality()
+                    .equals(other.unreadTasks, unreadTasks)));
   }
 
   @override
@@ -281,7 +321,8 @@ class _$_TaskTab implements _TaskTab {
 
   @JsonKey(ignore: true)
   @override
-  _$TaskTabCopyWith<_TaskTab> get copyWith => __$TaskTabCopyWithImpl<_TaskTab>(this, _$identity);
+  _$TaskTabCopyWith<_TaskTab> get copyWith =>
+      __$TaskTabCopyWithImpl<_TaskTab>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -291,14 +332,30 @@ class _$_TaskTab implements _TaskTab {
 
 abstract class _TaskTab implements TaskTab {
   const factory _TaskTab(
-      {@required @JsonKey(name: 'key') String key,
-      @required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'hide_empty') bool hideEmpty,
-      @required @JsonKey(name: 'show_counter') bool showCounter,
-      @required @JsonKey(name: 'pagination') bool pagination,
-      @required @JsonKey(name: 'filters') List<TaskFilter> filters,
-      @required @JsonKey(name: 'sort') List<TaskSort> sort,
-      @required @JsonKey(name: 'unread_tasks') List<TaskCounters> unreadTasks}) = _$_TaskTab;
+      {@required
+      @JsonKey(name: 'key')
+          String key,
+      @required
+      @JsonKey(name: 'title')
+          String title,
+      @required
+      @JsonKey(name: 'hide_empty')
+          bool hideEmpty,
+      @required
+      @JsonKey(name: 'show_counter')
+          bool showCounter,
+      @required
+      @JsonKey(name: 'pagination')
+          bool pagination,
+      @required
+      @JsonKey(name: 'filters')
+          List<TaskFilter> filters,
+      @required
+      @JsonKey(name: 'sort')
+          List<TaskSort> sort,
+      @required
+      @JsonKey(name: 'unread_tasks')
+          List<TaskCounters> unreadTasks}) = _$_TaskTab;
 
   factory _TaskTab.fromJson(Map<String, dynamic> json) = _$_TaskTab.fromJson;
 

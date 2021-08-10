@@ -17,12 +17,14 @@ _$_MarkupEntity _$_$_MarkupEntityFromJson(Map<String, dynamic> json) {
     repl: json['repl'] as String,
     time: json['time'] as String,
     childs: (json['childs'] as List)
-        ?.map((e) => e == null ? null : MarkupEntity.fromJson(e as Map<String, dynamic>))
+        ?.map((e) =>
+            e == null ? null : MarkupEntity.fromJson(e as Map<String, dynamic>))
         ?.toList(),
   );
 }
 
-Map<String, dynamic> _$_$_MarkupEntityToJson(_$_MarkupEntity instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_MarkupEntityToJson(_$_MarkupEntity instance) =>
+    <String, dynamic>{
       'op': instance.open,
       'oplen': instance.openLength,
       'cl': instance.close,

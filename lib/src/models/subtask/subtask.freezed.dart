@@ -68,7 +68,7 @@ mixin _$Subtask {
   @JsonKey(name: 'display_name')
   String get displayName;
 
-  /// Can other team member see this task/group chat.
+  /// Is task or group public for non-guests.
   @JsonKey(name: 'public')
   bool get isPublic;
 
@@ -83,7 +83,8 @@ mixin _$Subtask {
 
 /// @nodoc
 abstract class $SubtaskCopyWith<$Res> {
-  factory $SubtaskCopyWith(Subtask value, $Res Function(Subtask) then) = _$SubtaskCopyWithImpl<$Res>;
+  factory $SubtaskCopyWith(Subtask value, $Res Function(Subtask) then) =
+      _$SubtaskCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'assignee') String assignee,
@@ -117,16 +118,19 @@ class _$SubtaskCopyWithImpl<$Res> implements $SubtaskCopyWith<$Res> {
       assignee: assignee == freezed ? _value.assignee : assignee as String,
       title: title == freezed ? _value.title : title as String,
       num: num == freezed ? _value.num : num as int,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
+      displayName:
+          displayName == freezed ? _value.displayName : displayName as String,
       isPublic: isPublic == freezed ? _value.isPublic : isPublic as bool,
-      taskStatus: taskStatus == freezed ? _value.taskStatus : taskStatus as String,
+      taskStatus:
+          taskStatus == freezed ? _value.taskStatus : taskStatus as String,
     ));
   }
 }
 
 /// @nodoc
 abstract class _$SubtaskCopyWith<$Res> implements $SubtaskCopyWith<$Res> {
-  factory _$SubtaskCopyWith(_Subtask value, $Res Function(_Subtask) then) = __$SubtaskCopyWithImpl<$Res>;
+  factory _$SubtaskCopyWith(_Subtask value, $Res Function(_Subtask) then) =
+      __$SubtaskCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'jid') String jid,
@@ -139,8 +143,10 @@ abstract class _$SubtaskCopyWith<$Res> implements $SubtaskCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$SubtaskCopyWithImpl<$Res> extends _$SubtaskCopyWithImpl<$Res> implements _$SubtaskCopyWith<$Res> {
-  __$SubtaskCopyWithImpl(_Subtask _value, $Res Function(_Subtask) _then) : super(_value, (v) => _then(v as _Subtask));
+class __$SubtaskCopyWithImpl<$Res> extends _$SubtaskCopyWithImpl<$Res>
+    implements _$SubtaskCopyWith<$Res> {
+  __$SubtaskCopyWithImpl(_Subtask _value, $Res Function(_Subtask) _then)
+      : super(_value, (v) => _then(v as _Subtask));
 
   @override
   _Subtask get _value => super._value as _Subtask;
@@ -160,9 +166,11 @@ class __$SubtaskCopyWithImpl<$Res> extends _$SubtaskCopyWithImpl<$Res> implement
       assignee: assignee == freezed ? _value.assignee : assignee as String,
       title: title == freezed ? _value.title : title as String,
       num: num == freezed ? _value.num : num as int,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
+      displayName:
+          displayName == freezed ? _value.displayName : displayName as String,
       isPublic: isPublic == freezed ? _value.isPublic : isPublic as bool,
-      taskStatus: taskStatus == freezed ? _value.taskStatus : taskStatus as String,
+      taskStatus:
+          taskStatus == freezed ? _value.taskStatus : taskStatus as String,
     ));
   }
 }
@@ -185,7 +193,8 @@ class _$_Subtask implements _Subtask {
         assert(num != null),
         assert(displayName != null);
 
-  factory _$_Subtask.fromJson(Map<String, dynamic> json) => _$_$_SubtaskFromJson(json);
+  factory _$_Subtask.fromJson(Map<String, dynamic> json) =>
+      _$_$_SubtaskFromJson(json);
 
   @override
 
@@ -214,7 +223,7 @@ class _$_Subtask implements _Subtask {
   final String displayName;
   @override
 
-  /// Can other team member see this task/group chat.
+  /// Is task or group public for non-guests.
   @JsonKey(name: 'public')
   final bool isPublic;
   @override
@@ -232,15 +241,24 @@ class _$_Subtask implements _Subtask {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Subtask &&
-            (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
-            (identical(other.assignee, assignee) || const DeepCollectionEquality().equals(other.assignee, assignee)) &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
-            (identical(other.num, num) || const DeepCollectionEquality().equals(other.num, num)) &&
+            (identical(other.jid, jid) ||
+                const DeepCollectionEquality().equals(other.jid, jid)) &&
+            (identical(other.assignee, assignee) ||
+                const DeepCollectionEquality()
+                    .equals(other.assignee, assignee)) &&
+            (identical(other.title, title) ||
+                const DeepCollectionEquality().equals(other.title, title)) &&
+            (identical(other.num, num) ||
+                const DeepCollectionEquality().equals(other.num, num)) &&
             (identical(other.displayName, displayName) ||
-                const DeepCollectionEquality().equals(other.displayName, displayName)) &&
-            (identical(other.isPublic, isPublic) || const DeepCollectionEquality().equals(other.isPublic, isPublic)) &&
+                const DeepCollectionEquality()
+                    .equals(other.displayName, displayName)) &&
+            (identical(other.isPublic, isPublic) ||
+                const DeepCollectionEquality()
+                    .equals(other.isPublic, isPublic)) &&
             (identical(other.taskStatus, taskStatus) ||
-                const DeepCollectionEquality().equals(other.taskStatus, taskStatus)));
+                const DeepCollectionEquality()
+                    .equals(other.taskStatus, taskStatus)));
   }
 
   @override
@@ -256,7 +274,8 @@ class _$_Subtask implements _Subtask {
 
   @JsonKey(ignore: true)
   @override
-  _$SubtaskCopyWith<_Subtask> get copyWith => __$SubtaskCopyWithImpl<_Subtask>(this, _$identity);
+  _$SubtaskCopyWith<_Subtask> get copyWith =>
+      __$SubtaskCopyWithImpl<_Subtask>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -303,7 +322,7 @@ abstract class _Subtask implements Subtask {
   String get displayName;
   @override
 
-  /// Can other team member see this task/group chat.
+  /// Is task or group public for non-guests.
   @JsonKey(name: 'public')
   bool get isPublic;
   @override

@@ -71,7 +71,8 @@ mixin _$ContactCustomFields {
 
 /// @nodoc
 abstract class $ContactCustomFieldsCopyWith<$Res> {
-  factory $ContactCustomFieldsCopyWith(ContactCustomFields value, $Res Function(ContactCustomFields) then) =
+  factory $ContactCustomFieldsCopyWith(
+          ContactCustomFields value, $Res Function(ContactCustomFields) then) =
       _$ContactCustomFieldsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'company') String company,
@@ -82,7 +83,8 @@ abstract class $ContactCustomFieldsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ContactCustomFieldsCopyWithImpl<$Res> implements $ContactCustomFieldsCopyWith<$Res> {
+class _$ContactCustomFieldsCopyWithImpl<$Res>
+    implements $ContactCustomFieldsCopyWith<$Res> {
   _$ContactCustomFieldsCopyWithImpl(this._value, this._then);
 
   final ContactCustomFields _value;
@@ -99,17 +101,21 @@ class _$ContactCustomFieldsCopyWithImpl<$Res> implements $ContactCustomFieldsCop
   }) {
     return _then(_value.copyWith(
       company: company == freezed ? _value.company : company as String,
-      department: department == freezed ? _value.department : department as String,
+      department:
+          department == freezed ? _value.department : department as String,
       title: title == freezed ? _value.title : title as String,
-      mobilePhone: mobilePhone == freezed ? _value.mobilePhone : mobilePhone as String,
+      mobilePhone:
+          mobilePhone == freezed ? _value.mobilePhone : mobilePhone as String,
       source: source == freezed ? _value.source : source as String,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$ContactCustomFieldsCopyWith<$Res> implements $ContactCustomFieldsCopyWith<$Res> {
-  factory _$ContactCustomFieldsCopyWith(_ContactCustomFields value, $Res Function(_ContactCustomFields) then) =
+abstract class _$ContactCustomFieldsCopyWith<$Res>
+    implements $ContactCustomFieldsCopyWith<$Res> {
+  factory _$ContactCustomFieldsCopyWith(_ContactCustomFields value,
+          $Res Function(_ContactCustomFields) then) =
       __$ContactCustomFieldsCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -121,9 +127,11 @@ abstract class _$ContactCustomFieldsCopyWith<$Res> implements $ContactCustomFiel
 }
 
 /// @nodoc
-class __$ContactCustomFieldsCopyWithImpl<$Res> extends _$ContactCustomFieldsCopyWithImpl<$Res>
+class __$ContactCustomFieldsCopyWithImpl<$Res>
+    extends _$ContactCustomFieldsCopyWithImpl<$Res>
     implements _$ContactCustomFieldsCopyWith<$Res> {
-  __$ContactCustomFieldsCopyWithImpl(_ContactCustomFields _value, $Res Function(_ContactCustomFields) _then)
+  __$ContactCustomFieldsCopyWithImpl(
+      _ContactCustomFields _value, $Res Function(_ContactCustomFields) _then)
       : super(_value, (v) => _then(v as _ContactCustomFields));
 
   @override
@@ -139,9 +147,11 @@ class __$ContactCustomFieldsCopyWithImpl<$Res> extends _$ContactCustomFieldsCopy
   }) {
     return _then(_ContactCustomFields(
       company: company == freezed ? _value.company : company as String,
-      department: department == freezed ? _value.department : department as String,
+      department:
+          department == freezed ? _value.department : department as String,
       title: title == freezed ? _value.title : title as String,
-      mobilePhone: mobilePhone == freezed ? _value.mobilePhone : mobilePhone as String,
+      mobilePhone:
+          mobilePhone == freezed ? _value.mobilePhone : mobilePhone as String,
       source: source == freezed ? _value.source : source as String,
     ));
   }
@@ -158,7 +168,8 @@ class _$_ContactCustomFields implements _ContactCustomFields {
       @JsonKey(name: 'mobile_phone') this.mobilePhone,
       @JsonKey(name: 'source') this.source});
 
-  factory _$_ContactCustomFields.fromJson(Map<String, dynamic> json) => _$_$_ContactCustomFieldsFromJson(json);
+  factory _$_ContactCustomFields.fromJson(Map<String, dynamic> json) =>
+      _$_$_ContactCustomFieldsFromJson(json);
 
   @override
 
@@ -195,13 +206,19 @@ class _$_ContactCustomFields implements _ContactCustomFields {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _ContactCustomFields &&
-            (identical(other.company, company) || const DeepCollectionEquality().equals(other.company, company)) &&
+            (identical(other.company, company) ||
+                const DeepCollectionEquality()
+                    .equals(other.company, company)) &&
             (identical(other.department, department) ||
-                const DeepCollectionEquality().equals(other.department, department)) &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
+                const DeepCollectionEquality()
+                    .equals(other.department, department)) &&
+            (identical(other.title, title) ||
+                const DeepCollectionEquality().equals(other.title, title)) &&
             (identical(other.mobilePhone, mobilePhone) ||
-                const DeepCollectionEquality().equals(other.mobilePhone, mobilePhone)) &&
-            (identical(other.source, source) || const DeepCollectionEquality().equals(other.source, source)));
+                const DeepCollectionEquality()
+                    .equals(other.mobilePhone, mobilePhone)) &&
+            (identical(other.source, source) ||
+                const DeepCollectionEquality().equals(other.source, source)));
   }
 
   @override
@@ -216,7 +233,8 @@ class _$_ContactCustomFields implements _ContactCustomFields {
   @JsonKey(ignore: true)
   @override
   _$ContactCustomFieldsCopyWith<_ContactCustomFields> get copyWith =>
-      __$ContactCustomFieldsCopyWithImpl<_ContactCustomFields>(this, _$identity);
+      __$ContactCustomFieldsCopyWithImpl<_ContactCustomFields>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -232,7 +250,8 @@ abstract class _ContactCustomFields implements ContactCustomFields {
       @JsonKey(name: 'mobile_phone') String mobilePhone,
       @JsonKey(name: 'source') String source}) = _$_ContactCustomFields;
 
-  factory _ContactCustomFields.fromJson(Map<String, dynamic> json) = _$_ContactCustomFields.fromJson;
+  factory _ContactCustomFields.fromJson(Map<String, dynamic> json) =
+      _$_ContactCustomFields.fromJson;
 
   @override
 

@@ -90,7 +90,8 @@ mixin _$Session {
 
 /// @nodoc
 abstract class $SessionCopyWith<$Res> {
-  factory $SessionCopyWith(Session value, $Res Function(Session) then) = _$SessionCopyWithImpl<$Res>;
+  factory $SessionCopyWith(Session value, $Res Function(Session) then) =
+      _$SessionCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
@@ -136,7 +137,8 @@ class _$SessionCopyWithImpl<$Res> implements $SessionCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$SessionCopyWith<$Res> implements $SessionCopyWith<$Res> {
-  factory _$SessionCopyWith(_Session value, $Res Function(_Session) then) = __$SessionCopyWithImpl<$Res>;
+  factory _$SessionCopyWith(_Session value, $Res Function(_Session) then) =
+      __$SessionCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'uid') String uid,
@@ -150,8 +152,10 @@ abstract class _$SessionCopyWith<$Res> implements $SessionCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$SessionCopyWithImpl<$Res> extends _$SessionCopyWithImpl<$Res> implements _$SessionCopyWith<$Res> {
-  __$SessionCopyWithImpl(_Session _value, $Res Function(_Session) _then) : super(_value, (v) => _then(v as _Session));
+class __$SessionCopyWithImpl<$Res> extends _$SessionCopyWithImpl<$Res>
+    implements _$SessionCopyWith<$Res> {
+  __$SessionCopyWithImpl(_Session _value, $Res Function(_Session) _then)
+      : super(_value, (v) => _then(v as _Session));
 
   @override
   _Session get _value => super._value as _Session;
@@ -196,7 +200,8 @@ class _$_Session implements _Session {
       : assert(uid != null),
         assert(created != null);
 
-  factory _$_Session.fromJson(Map<String, dynamic> json) => _$_$_SessionFromJson(json);
+  factory _$_Session.fromJson(Map<String, dynamic> json) =>
+      _$_$_SessionFromJson(json);
 
   @override
 
@@ -249,15 +254,25 @@ class _$_Session implements _Session {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Session &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.created, created) || const DeepCollectionEquality().equals(other.created, created)) &&
-            (identical(other.lang, lang) || const DeepCollectionEquality().equals(other.lang, lang)) &&
-            (identical(other.team, team) || const DeepCollectionEquality().equals(other.team, team)) &&
-            (identical(other.isMobile, isMobile) || const DeepCollectionEquality().equals(other.isMobile, isMobile)) &&
-            (identical(other.afk, afk) || const DeepCollectionEquality().equals(other.afk, afk)) &&
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.created, created) ||
+                const DeepCollectionEquality()
+                    .equals(other.created, created)) &&
+            (identical(other.lang, lang) ||
+                const DeepCollectionEquality().equals(other.lang, lang)) &&
+            (identical(other.team, team) ||
+                const DeepCollectionEquality().equals(other.team, team)) &&
+            (identical(other.isMobile, isMobile) ||
+                const DeepCollectionEquality()
+                    .equals(other.isMobile, isMobile)) &&
+            (identical(other.afk, afk) ||
+                const DeepCollectionEquality().equals(other.afk, afk)) &&
             (identical(other.useragent, useragent) ||
-                const DeepCollectionEquality().equals(other.useragent, useragent)) &&
-            (identical(other.addr, addr) || const DeepCollectionEquality().equals(other.addr, addr)));
+                const DeepCollectionEquality()
+                    .equals(other.useragent, useragent)) &&
+            (identical(other.addr, addr) ||
+                const DeepCollectionEquality().equals(other.addr, addr)));
   }
 
   @override
@@ -274,7 +289,8 @@ class _$_Session implements _Session {
 
   @JsonKey(ignore: true)
   @override
-  _$SessionCopyWith<_Session> get copyWith => __$SessionCopyWithImpl<_Session>(this, _$identity);
+  _$SessionCopyWith<_Session> get copyWith =>
+      __$SessionCopyWithImpl<_Session>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {

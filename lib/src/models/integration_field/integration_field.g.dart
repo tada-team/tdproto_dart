@@ -14,7 +14,9 @@ _$_IntegrationField _$_$_IntegrationFieldFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_IntegrationFieldToJson(_$_IntegrationField instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_IntegrationFieldToJson(
+        _$_IntegrationField instance) =>
+    <String, dynamic>{
       'label': instance.label,
       'readonly': instance.readonly,
       'value': instance.value,

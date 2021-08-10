@@ -46,7 +46,8 @@ mixin _$ICEServer {
 
 /// @nodoc
 abstract class $ICEServerCopyWith<$Res> {
-  factory $ICEServerCopyWith(ICEServer value, $Res Function(ICEServer) then) = _$ICEServerCopyWithImpl<$Res>;
+  factory $ICEServerCopyWith(ICEServer value, $Res Function(ICEServer) then) =
+      _$ICEServerCopyWithImpl<$Res>;
   $Res call({@JsonKey(name: 'urls') String urls});
 }
 
@@ -70,13 +71,16 @@ class _$ICEServerCopyWithImpl<$Res> implements $ICEServerCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$ICEServerCopyWith<$Res> implements $ICEServerCopyWith<$Res> {
-  factory _$ICEServerCopyWith(_ICEServer value, $Res Function(_ICEServer) then) = __$ICEServerCopyWithImpl<$Res>;
+  factory _$ICEServerCopyWith(
+          _ICEServer value, $Res Function(_ICEServer) then) =
+      __$ICEServerCopyWithImpl<$Res>;
   @override
   $Res call({@JsonKey(name: 'urls') String urls});
 }
 
 /// @nodoc
-class __$ICEServerCopyWithImpl<$Res> extends _$ICEServerCopyWithImpl<$Res> implements _$ICEServerCopyWith<$Res> {
+class __$ICEServerCopyWithImpl<$Res> extends _$ICEServerCopyWithImpl<$Res>
+    implements _$ICEServerCopyWith<$Res> {
   __$ICEServerCopyWithImpl(_ICEServer _value, $Res Function(_ICEServer) _then)
       : super(_value, (v) => _then(v as _ICEServer));
 
@@ -97,9 +101,11 @@ class __$ICEServerCopyWithImpl<$Res> extends _$ICEServerCopyWithImpl<$Res> imple
 
 /// @nodoc
 class _$_ICEServer implements _ICEServer {
-  const _$_ICEServer({@required @JsonKey(name: 'urls') this.urls}) : assert(urls != null);
+  const _$_ICEServer({@required @JsonKey(name: 'urls') this.urls})
+      : assert(urls != null);
 
-  factory _$_ICEServer.fromJson(Map<String, dynamic> json) => _$_$_ICEServerFromJson(json);
+  factory _$_ICEServer.fromJson(Map<String, dynamic> json) =>
+      _$_$_ICEServerFromJson(json);
 
   @override
 
@@ -116,15 +122,18 @@ class _$_ICEServer implements _ICEServer {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _ICEServer &&
-            (identical(other.urls, urls) || const DeepCollectionEquality().equals(other.urls, urls)));
+            (identical(other.urls, urls) ||
+                const DeepCollectionEquality().equals(other.urls, urls)));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(urls);
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(urls);
 
   @JsonKey(ignore: true)
   @override
-  _$ICEServerCopyWith<_ICEServer> get copyWith => __$ICEServerCopyWithImpl<_ICEServer>(this, _$identity);
+  _$ICEServerCopyWith<_ICEServer> get copyWith =>
+      __$ICEServerCopyWithImpl<_ICEServer>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -133,9 +142,11 @@ class _$_ICEServer implements _ICEServer {
 }
 
 abstract class _ICEServer implements ICEServer {
-  const factory _ICEServer({@required @JsonKey(name: 'urls') String urls}) = _$_ICEServer;
+  const factory _ICEServer({@required @JsonKey(name: 'urls') String urls}) =
+      _$_ICEServer;
 
-  factory _ICEServer.fromJson(Map<String, dynamic> json) = _$_ICEServer.fromJson;
+  factory _ICEServer.fromJson(Map<String, dynamic> json) =
+      _$_ICEServer.fromJson;
 
   @override
 

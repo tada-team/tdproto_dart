@@ -17,7 +17,9 @@ class _$SwitcherColorsTearOff {
   const _$SwitcherColorsTearOff();
 
 // ignore: unused_element
-  _SwitcherColors call({@required @JsonKey(name: 'on') String on, @required @JsonKey(name: 'off') String off}) {
+  _SwitcherColors call(
+      {@required @JsonKey(name: 'on') String on,
+      @required @JsonKey(name: 'off') String off}) {
     return _SwitcherColors(
       on: on,
       off: off,
@@ -51,13 +53,15 @@ mixin _$SwitcherColors {
 
 /// @nodoc
 abstract class $SwitcherColorsCopyWith<$Res> {
-  factory $SwitcherColorsCopyWith(SwitcherColors value, $Res Function(SwitcherColors) then) =
+  factory $SwitcherColorsCopyWith(
+          SwitcherColors value, $Res Function(SwitcherColors) then) =
       _$SwitcherColorsCopyWithImpl<$Res>;
   $Res call({@JsonKey(name: 'on') String on, @JsonKey(name: 'off') String off});
 }
 
 /// @nodoc
-class _$SwitcherColorsCopyWithImpl<$Res> implements $SwitcherColorsCopyWith<$Res> {
+class _$SwitcherColorsCopyWithImpl<$Res>
+    implements $SwitcherColorsCopyWith<$Res> {
   _$SwitcherColorsCopyWithImpl(this._value, this._then);
 
   final SwitcherColors _value;
@@ -77,17 +81,21 @@ class _$SwitcherColorsCopyWithImpl<$Res> implements $SwitcherColorsCopyWith<$Res
 }
 
 /// @nodoc
-abstract class _$SwitcherColorsCopyWith<$Res> implements $SwitcherColorsCopyWith<$Res> {
-  factory _$SwitcherColorsCopyWith(_SwitcherColors value, $Res Function(_SwitcherColors) then) =
+abstract class _$SwitcherColorsCopyWith<$Res>
+    implements $SwitcherColorsCopyWith<$Res> {
+  factory _$SwitcherColorsCopyWith(
+          _SwitcherColors value, $Res Function(_SwitcherColors) then) =
       __$SwitcherColorsCopyWithImpl<$Res>;
   @override
   $Res call({@JsonKey(name: 'on') String on, @JsonKey(name: 'off') String off});
 }
 
 /// @nodoc
-class __$SwitcherColorsCopyWithImpl<$Res> extends _$SwitcherColorsCopyWithImpl<$Res>
+class __$SwitcherColorsCopyWithImpl<$Res>
+    extends _$SwitcherColorsCopyWithImpl<$Res>
     implements _$SwitcherColorsCopyWith<$Res> {
-  __$SwitcherColorsCopyWithImpl(_SwitcherColors _value, $Res Function(_SwitcherColors) _then)
+  __$SwitcherColorsCopyWithImpl(
+      _SwitcherColors _value, $Res Function(_SwitcherColors) _then)
       : super(_value, (v) => _then(v as _SwitcherColors));
 
   @override
@@ -109,11 +117,14 @@ class __$SwitcherColorsCopyWithImpl<$Res> extends _$SwitcherColorsCopyWithImpl<$
 
 /// @nodoc
 class _$_SwitcherColors implements _SwitcherColors {
-  const _$_SwitcherColors({@required @JsonKey(name: 'on') this.on, @required @JsonKey(name: 'off') this.off})
+  const _$_SwitcherColors(
+      {@required @JsonKey(name: 'on') this.on,
+      @required @JsonKey(name: 'off') this.off})
       : assert(on != null),
         assert(off != null);
 
-  factory _$_SwitcherColors.fromJson(Map<String, dynamic> json) => _$_$_SwitcherColorsFromJson(json);
+  factory _$_SwitcherColors.fromJson(Map<String, dynamic> json) =>
+      _$_$_SwitcherColorsFromJson(json);
 
   @override
 
@@ -135,13 +146,17 @@ class _$_SwitcherColors implements _SwitcherColors {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _SwitcherColors &&
-            (identical(other.on, on) || const DeepCollectionEquality().equals(other.on, on)) &&
-            (identical(other.off, off) || const DeepCollectionEquality().equals(other.off, off)));
+            (identical(other.on, on) ||
+                const DeepCollectionEquality().equals(other.on, on)) &&
+            (identical(other.off, off) ||
+                const DeepCollectionEquality().equals(other.off, off)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(on) ^ const DeepCollectionEquality().hash(off);
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(on) ^
+      const DeepCollectionEquality().hash(off);
 
   @JsonKey(ignore: true)
   @override
@@ -156,9 +171,11 @@ class _$_SwitcherColors implements _SwitcherColors {
 
 abstract class _SwitcherColors implements SwitcherColors {
   const factory _SwitcherColors(
-      {@required @JsonKey(name: 'on') String on, @required @JsonKey(name: 'off') String off}) = _$_SwitcherColors;
+      {@required @JsonKey(name: 'on') String on,
+      @required @JsonKey(name: 'off') String off}) = _$_SwitcherColors;
 
-  factory _SwitcherColors.fromJson(Map<String, dynamic> json) = _$_SwitcherColors.fromJson;
+  factory _SwitcherColors.fromJson(Map<String, dynamic> json) =
+      _$_SwitcherColors.fromJson;
 
   @override
 

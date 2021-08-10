@@ -14,12 +14,15 @@ _$_Contact _$_$_ContactFromJson(Map<String, dynamic> json) {
     shortName: json['short_name'] as String,
     contactEmail: json['contact_email'] as String,
     contactPhone: json['contact_phone'] as String,
-    icons: json['icons'] == null ? null : IconData.fromJson(json['icons'] as Map<String, dynamic>),
+    icons: json['icons'] == null
+        ? null
+        : IconData.fromJson(json['icons'] as Map<String, dynamic>),
     gentime: json['gentime'] as int,
     role: json['role'] as String,
     mood: json['mood'] as String,
     teamStatus: json['status'] as String,
-    lastActivity: const DateTimeConverter().fromJson(json['last_activity'] as String),
+    lastActivity:
+        const DateTimeConverter().fromJson(json['last_activity'] as String),
     isArchive: json['is_archive'] as bool,
     botname: json['botname'] as String,
     sections: (json['sections'] as List)?.map((e) => e as String)?.toList(),
@@ -30,7 +33,8 @@ _$_Contact _$_$_ContactFromJson(Map<String, dynamic> json) {
     canImportTasks: json['can_import_tasks'] as bool,
     canAddToGroup: json['can_add_to_group'] as bool,
     canDelete: json['can_delete'] as bool,
-    changeableFields: (json['changeable_fields'] as List)?.map((e) => e as String)?.toList(),
+    changeableFields:
+        (json['changeable_fields'] as List)?.map((e) => e as String)?.toList(),
     familyName: json['family_name'] as String,
     givenName: json['given_name'] as String,
     patronymic: json['patronymic'] as String,
@@ -44,7 +48,8 @@ _$_Contact _$_$_ContactFromJson(Map<String, dynamic> json) {
     timezone: json['timezone'] as String,
     quietTimeStart: json['quiet_time_start'] as String,
     quietTimeFinish: json['quiet_time_finish'] as String,
-    focusUntil: const DateTimeConverter().fromJson(json['focus_until'] as String),
+    focusUntil:
+        const DateTimeConverter().fromJson(json['focus_until'] as String),
     groupNotificationsEnabled: json['group_notifications_enabled'] as bool,
     taskNotificationsEnabled: json['task_notifications_enabled'] as bool,
     contactShortView: json['contact_short_view'] as bool,
@@ -69,12 +74,14 @@ _$_Contact _$_$_ContactFromJson(Map<String, dynamic> json) {
     canJoinPublicTasks: json['can_join_public_tasks'] as bool,
     customFields: json['custom_fields'] == null
         ? null
-        : ContactCustomFields.fromJson(json['custom_fields'] as Map<String, dynamic>),
+        : ContactCustomFields.fromJson(
+            json['custom_fields'] as Map<String, dynamic>),
     canDeleteAnyMessage: json['can_delete_any_message'] as bool,
   );
 }
 
-Map<String, dynamic> _$_$_ContactToJson(_$_Contact instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_ContactToJson(_$_Contact instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'node': instance.node,
       'display_name': instance.displayName,

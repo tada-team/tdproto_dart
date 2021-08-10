@@ -18,17 +18,40 @@ class _$MessagePushTearOff {
 
 // ignore: unused_element
   _MessagePush call(
-      {@required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'subtitle') String subtitle,
-      @required @JsonKey(name: 'message') String message,
-      @required @JsonKey(name: 'icon_url') String iconUrl,
-      @required @JsonKey(name: 'click_action') String clickAction,
-      @required @JsonKey(name: 'tag') String tag,
-      @required @JsonKey(name: 'team') String team,
-      @required @JsonKey(name: 'sender') String sender,
-      @required @JsonKey(name: 'chat') String chat,
-      @required @JsonKey(name: 'message_id') String messageId,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created}) {
+      {@required
+      @JsonKey(name: 'title')
+          String title,
+      @required
+      @JsonKey(name: 'subtitle')
+          String subtitle,
+      @required
+      @JsonKey(name: 'message')
+          String message,
+      @required
+      @JsonKey(name: 'icon_url')
+          String iconUrl,
+      @required
+      @JsonKey(name: 'click_action')
+          String clickAction,
+      @required
+      @JsonKey(name: 'tag')
+          String tag,
+      @required
+      @JsonKey(name: 'team')
+          String team,
+      @required
+      @JsonKey(name: 'sender')
+          String sender,
+      @required
+      @JsonKey(name: 'chat')
+          String chat,
+      @required
+      @JsonKey(name: 'message_id')
+          String messageId,
+      @required
+      @JsonKey(name: 'created')
+      @DateTimeConverter()
+          DateTime created}) {
     return _MessagePush(
       title: title,
       subtitle: subtitle,
@@ -108,7 +131,9 @@ mixin _$MessagePush {
 
 /// @nodoc
 abstract class $MessagePushCopyWith<$Res> {
-  factory $MessagePushCopyWith(MessagePush value, $Res Function(MessagePush) then) = _$MessagePushCopyWithImpl<$Res>;
+  factory $MessagePushCopyWith(
+          MessagePush value, $Res Function(MessagePush) then) =
+      _$MessagePushCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'title') String title,
       @JsonKey(name: 'subtitle') String subtitle,
@@ -150,7 +175,8 @@ class _$MessagePushCopyWithImpl<$Res> implements $MessagePushCopyWith<$Res> {
       subtitle: subtitle == freezed ? _value.subtitle : subtitle as String,
       message: message == freezed ? _value.message : message as String,
       iconUrl: iconUrl == freezed ? _value.iconUrl : iconUrl as String,
-      clickAction: clickAction == freezed ? _value.clickAction : clickAction as String,
+      clickAction:
+          clickAction == freezed ? _value.clickAction : clickAction as String,
       tag: tag == freezed ? _value.tag : tag as String,
       team: team == freezed ? _value.team : team as String,
       sender: sender == freezed ? _value.sender : sender as String,
@@ -162,8 +188,10 @@ class _$MessagePushCopyWithImpl<$Res> implements $MessagePushCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$MessagePushCopyWith<$Res> implements $MessagePushCopyWith<$Res> {
-  factory _$MessagePushCopyWith(_MessagePush value, $Res Function(_MessagePush) then) =
+abstract class _$MessagePushCopyWith<$Res>
+    implements $MessagePushCopyWith<$Res> {
+  factory _$MessagePushCopyWith(
+          _MessagePush value, $Res Function(_MessagePush) then) =
       __$MessagePushCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -181,8 +209,10 @@ abstract class _$MessagePushCopyWith<$Res> implements $MessagePushCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MessagePushCopyWithImpl<$Res> extends _$MessagePushCopyWithImpl<$Res> implements _$MessagePushCopyWith<$Res> {
-  __$MessagePushCopyWithImpl(_MessagePush _value, $Res Function(_MessagePush) _then)
+class __$MessagePushCopyWithImpl<$Res> extends _$MessagePushCopyWithImpl<$Res>
+    implements _$MessagePushCopyWith<$Res> {
+  __$MessagePushCopyWithImpl(
+      _MessagePush _value, $Res Function(_MessagePush) _then)
       : super(_value, (v) => _then(v as _MessagePush));
 
   @override
@@ -207,7 +237,8 @@ class __$MessagePushCopyWithImpl<$Res> extends _$MessagePushCopyWithImpl<$Res> i
       subtitle: subtitle == freezed ? _value.subtitle : subtitle as String,
       message: message == freezed ? _value.message : message as String,
       iconUrl: iconUrl == freezed ? _value.iconUrl : iconUrl as String,
-      clickAction: clickAction == freezed ? _value.clickAction : clickAction as String,
+      clickAction:
+          clickAction == freezed ? _value.clickAction : clickAction as String,
       tag: tag == freezed ? _value.tag : tag as String,
       team: team == freezed ? _value.team : team as String,
       sender: sender == freezed ? _value.sender : sender as String,
@@ -246,7 +277,8 @@ class _$_MessagePush implements _MessagePush {
         assert(messageId != null),
         assert(created != null);
 
-  factory _$_MessagePush.fromJson(Map<String, dynamic> json) => _$_$_MessagePushFromJson(json);
+  factory _$_MessagePush.fromJson(Map<String, dynamic> json) =>
+      _$_$_MessagePushFromJson(json);
 
   @override
 
@@ -314,19 +346,33 @@ class _$_MessagePush implements _MessagePush {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _MessagePush &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
-            (identical(other.subtitle, subtitle) || const DeepCollectionEquality().equals(other.subtitle, subtitle)) &&
-            (identical(other.message, message) || const DeepCollectionEquality().equals(other.message, message)) &&
-            (identical(other.iconUrl, iconUrl) || const DeepCollectionEquality().equals(other.iconUrl, iconUrl)) &&
+            (identical(other.title, title) ||
+                const DeepCollectionEquality().equals(other.title, title)) &&
+            (identical(other.subtitle, subtitle) ||
+                const DeepCollectionEquality()
+                    .equals(other.subtitle, subtitle)) &&
+            (identical(other.message, message) ||
+                const DeepCollectionEquality()
+                    .equals(other.message, message)) &&
+            (identical(other.iconUrl, iconUrl) ||
+                const DeepCollectionEquality()
+                    .equals(other.iconUrl, iconUrl)) &&
             (identical(other.clickAction, clickAction) ||
-                const DeepCollectionEquality().equals(other.clickAction, clickAction)) &&
-            (identical(other.tag, tag) || const DeepCollectionEquality().equals(other.tag, tag)) &&
-            (identical(other.team, team) || const DeepCollectionEquality().equals(other.team, team)) &&
-            (identical(other.sender, sender) || const DeepCollectionEquality().equals(other.sender, sender)) &&
-            (identical(other.chat, chat) || const DeepCollectionEquality().equals(other.chat, chat)) &&
+                const DeepCollectionEquality()
+                    .equals(other.clickAction, clickAction)) &&
+            (identical(other.tag, tag) ||
+                const DeepCollectionEquality().equals(other.tag, tag)) &&
+            (identical(other.team, team) ||
+                const DeepCollectionEquality().equals(other.team, team)) &&
+            (identical(other.sender, sender) ||
+                const DeepCollectionEquality().equals(other.sender, sender)) &&
+            (identical(other.chat, chat) ||
+                const DeepCollectionEquality().equals(other.chat, chat)) &&
             (identical(other.messageId, messageId) ||
-                const DeepCollectionEquality().equals(other.messageId, messageId)) &&
-            (identical(other.created, created) || const DeepCollectionEquality().equals(other.created, created)));
+                const DeepCollectionEquality()
+                    .equals(other.messageId, messageId)) &&
+            (identical(other.created, created) ||
+                const DeepCollectionEquality().equals(other.created, created)));
   }
 
   @override
@@ -346,7 +392,8 @@ class _$_MessagePush implements _MessagePush {
 
   @JsonKey(ignore: true)
   @override
-  _$MessagePushCopyWith<_MessagePush> get copyWith => __$MessagePushCopyWithImpl<_MessagePush>(this, _$identity);
+  _$MessagePushCopyWith<_MessagePush> get copyWith =>
+      __$MessagePushCopyWithImpl<_MessagePush>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -356,19 +403,43 @@ class _$_MessagePush implements _MessagePush {
 
 abstract class _MessagePush implements MessagePush {
   const factory _MessagePush(
-      {@required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'subtitle') String subtitle,
-      @required @JsonKey(name: 'message') String message,
-      @required @JsonKey(name: 'icon_url') String iconUrl,
-      @required @JsonKey(name: 'click_action') String clickAction,
-      @required @JsonKey(name: 'tag') String tag,
-      @required @JsonKey(name: 'team') String team,
-      @required @JsonKey(name: 'sender') String sender,
-      @required @JsonKey(name: 'chat') String chat,
-      @required @JsonKey(name: 'message_id') String messageId,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created}) = _$_MessagePush;
+      {@required
+      @JsonKey(name: 'title')
+          String title,
+      @required
+      @JsonKey(name: 'subtitle')
+          String subtitle,
+      @required
+      @JsonKey(name: 'message')
+          String message,
+      @required
+      @JsonKey(name: 'icon_url')
+          String iconUrl,
+      @required
+      @JsonKey(name: 'click_action')
+          String clickAction,
+      @required
+      @JsonKey(name: 'tag')
+          String tag,
+      @required
+      @JsonKey(name: 'team')
+          String team,
+      @required
+      @JsonKey(name: 'sender')
+          String sender,
+      @required
+      @JsonKey(name: 'chat')
+          String chat,
+      @required
+      @JsonKey(name: 'message_id')
+          String messageId,
+      @required
+      @JsonKey(name: 'created')
+      @DateTimeConverter()
+          DateTime created}) = _$_MessagePush;
 
-  factory _MessagePush.fromJson(Map<String, dynamic> json) = _$_MessagePush.fromJson;
+  factory _MessagePush.fromJson(Map<String, dynamic> json) =
+      _$_MessagePush.fromJson;
 
   @override
 

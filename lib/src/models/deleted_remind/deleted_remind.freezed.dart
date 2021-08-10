@@ -46,13 +46,15 @@ mixin _$DeletedRemind {
 
 /// @nodoc
 abstract class $DeletedRemindCopyWith<$Res> {
-  factory $DeletedRemindCopyWith(DeletedRemind value, $Res Function(DeletedRemind) then) =
+  factory $DeletedRemindCopyWith(
+          DeletedRemind value, $Res Function(DeletedRemind) then) =
       _$DeletedRemindCopyWithImpl<$Res>;
   $Res call({@JsonKey(name: 'uid') String uid});
 }
 
 /// @nodoc
-class _$DeletedRemindCopyWithImpl<$Res> implements $DeletedRemindCopyWith<$Res> {
+class _$DeletedRemindCopyWithImpl<$Res>
+    implements $DeletedRemindCopyWith<$Res> {
   _$DeletedRemindCopyWithImpl(this._value, this._then);
 
   final DeletedRemind _value;
@@ -70,17 +72,21 @@ class _$DeletedRemindCopyWithImpl<$Res> implements $DeletedRemindCopyWith<$Res> 
 }
 
 /// @nodoc
-abstract class _$DeletedRemindCopyWith<$Res> implements $DeletedRemindCopyWith<$Res> {
-  factory _$DeletedRemindCopyWith(_DeletedRemind value, $Res Function(_DeletedRemind) then) =
+abstract class _$DeletedRemindCopyWith<$Res>
+    implements $DeletedRemindCopyWith<$Res> {
+  factory _$DeletedRemindCopyWith(
+          _DeletedRemind value, $Res Function(_DeletedRemind) then) =
       __$DeletedRemindCopyWithImpl<$Res>;
   @override
   $Res call({@JsonKey(name: 'uid') String uid});
 }
 
 /// @nodoc
-class __$DeletedRemindCopyWithImpl<$Res> extends _$DeletedRemindCopyWithImpl<$Res>
+class __$DeletedRemindCopyWithImpl<$Res>
+    extends _$DeletedRemindCopyWithImpl<$Res>
     implements _$DeletedRemindCopyWith<$Res> {
-  __$DeletedRemindCopyWithImpl(_DeletedRemind _value, $Res Function(_DeletedRemind) _then)
+  __$DeletedRemindCopyWithImpl(
+      _DeletedRemind _value, $Res Function(_DeletedRemind) _then)
       : super(_value, (v) => _then(v as _DeletedRemind));
 
   @override
@@ -100,9 +106,11 @@ class __$DeletedRemindCopyWithImpl<$Res> extends _$DeletedRemindCopyWithImpl<$Re
 
 /// @nodoc
 class _$_DeletedRemind implements _DeletedRemind {
-  const _$_DeletedRemind({@required @JsonKey(name: 'uid') this.uid}) : assert(uid != null);
+  const _$_DeletedRemind({@required @JsonKey(name: 'uid') this.uid})
+      : assert(uid != null);
 
-  factory _$_DeletedRemind.fromJson(Map<String, dynamic> json) => _$_$_DeletedRemindFromJson(json);
+  factory _$_DeletedRemind.fromJson(Map<String, dynamic> json) =>
+      _$_$_DeletedRemindFromJson(json);
 
   @override
 
@@ -119,11 +127,13 @@ class _$_DeletedRemind implements _DeletedRemind {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _DeletedRemind &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)));
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(uid);
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(uid);
 
   @JsonKey(ignore: true)
   @override
@@ -137,9 +147,11 @@ class _$_DeletedRemind implements _DeletedRemind {
 }
 
 abstract class _DeletedRemind implements DeletedRemind {
-  const factory _DeletedRemind({@required @JsonKey(name: 'uid') String uid}) = _$_DeletedRemind;
+  const factory _DeletedRemind({@required @JsonKey(name: 'uid') String uid}) =
+      _$_DeletedRemind;
 
-  factory _DeletedRemind.fromJson(Map<String, dynamic> json) = _$_DeletedRemind.fromJson;
+  factory _DeletedRemind.fromJson(Map<String, dynamic> json) =
+      _$_DeletedRemind.fromJson;
 
   @override
 

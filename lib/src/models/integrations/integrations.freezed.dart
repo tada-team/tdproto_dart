@@ -53,7 +53,8 @@ mixin _$Integrations {
 
 /// @nodoc
 abstract class $IntegrationsCopyWith<$Res> {
-  factory $IntegrationsCopyWith(Integrations value, $Res Function(Integrations) then) =
+  factory $IntegrationsCopyWith(
+          Integrations value, $Res Function(Integrations) then) =
       _$IntegrationsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'integrations') List<Integration> integrations,
@@ -74,15 +75,19 @@ class _$IntegrationsCopyWithImpl<$Res> implements $IntegrationsCopyWith<$Res> {
     Object kinds = freezed,
   }) {
     return _then(_value.copyWith(
-      integrations: integrations == freezed ? _value.integrations : integrations as List<Integration>,
+      integrations: integrations == freezed
+          ? _value.integrations
+          : integrations as List<Integration>,
       kinds: kinds == freezed ? _value.kinds : kinds as List<IntegrationKind>,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$IntegrationsCopyWith<$Res> implements $IntegrationsCopyWith<$Res> {
-  factory _$IntegrationsCopyWith(_Integrations value, $Res Function(_Integrations) then) =
+abstract class _$IntegrationsCopyWith<$Res>
+    implements $IntegrationsCopyWith<$Res> {
+  factory _$IntegrationsCopyWith(
+          _Integrations value, $Res Function(_Integrations) then) =
       __$IntegrationsCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -93,7 +98,8 @@ abstract class _$IntegrationsCopyWith<$Res> implements $IntegrationsCopyWith<$Re
 /// @nodoc
 class __$IntegrationsCopyWithImpl<$Res> extends _$IntegrationsCopyWithImpl<$Res>
     implements _$IntegrationsCopyWith<$Res> {
-  __$IntegrationsCopyWithImpl(_Integrations _value, $Res Function(_Integrations) _then)
+  __$IntegrationsCopyWithImpl(
+      _Integrations _value, $Res Function(_Integrations) _then)
       : super(_value, (v) => _then(v as _Integrations));
 
   @override
@@ -105,7 +111,9 @@ class __$IntegrationsCopyWithImpl<$Res> extends _$IntegrationsCopyWithImpl<$Res>
     Object kinds = freezed,
   }) {
     return _then(_Integrations(
-      integrations: integrations == freezed ? _value.integrations : integrations as List<Integration>,
+      integrations: integrations == freezed
+          ? _value.integrations
+          : integrations as List<Integration>,
       kinds: kinds == freezed ? _value.kinds : kinds as List<IntegrationKind>,
     ));
   }
@@ -116,11 +124,13 @@ class __$IntegrationsCopyWithImpl<$Res> extends _$IntegrationsCopyWithImpl<$Res>
 /// @nodoc
 class _$_Integrations implements _Integrations {
   const _$_Integrations(
-      {@required @JsonKey(name: 'integrations') this.integrations, @required @JsonKey(name: 'kinds') this.kinds})
+      {@required @JsonKey(name: 'integrations') this.integrations,
+      @required @JsonKey(name: 'kinds') this.kinds})
       : assert(integrations != null),
         assert(kinds != null);
 
-  factory _$_Integrations.fromJson(Map<String, dynamic> json) => _$_$_IntegrationsFromJson(json);
+  factory _$_Integrations.fromJson(Map<String, dynamic> json) =>
+      _$_$_IntegrationsFromJson(json);
 
   @override
 
@@ -143,8 +153,10 @@ class _$_Integrations implements _Integrations {
     return identical(this, other) ||
         (other is _Integrations &&
             (identical(other.integrations, integrations) ||
-                const DeepCollectionEquality().equals(other.integrations, integrations)) &&
-            (identical(other.kinds, kinds) || const DeepCollectionEquality().equals(other.kinds, kinds)));
+                const DeepCollectionEquality()
+                    .equals(other.integrations, integrations)) &&
+            (identical(other.kinds, kinds) ||
+                const DeepCollectionEquality().equals(other.kinds, kinds)));
   }
 
   @override
@@ -155,7 +167,8 @@ class _$_Integrations implements _Integrations {
 
   @JsonKey(ignore: true)
   @override
-  _$IntegrationsCopyWith<_Integrations> get copyWith => __$IntegrationsCopyWithImpl<_Integrations>(this, _$identity);
+  _$IntegrationsCopyWith<_Integrations> get copyWith =>
+      __$IntegrationsCopyWithImpl<_Integrations>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -165,10 +178,15 @@ class _$_Integrations implements _Integrations {
 
 abstract class _Integrations implements Integrations {
   const factory _Integrations(
-      {@required @JsonKey(name: 'integrations') List<Integration> integrations,
-      @required @JsonKey(name: 'kinds') List<IntegrationKind> kinds}) = _$_Integrations;
+      {@required
+      @JsonKey(name: 'integrations')
+          List<Integration> integrations,
+      @required
+      @JsonKey(name: 'kinds')
+          List<IntegrationKind> kinds}) = _$_Integrations;
 
-  factory _Integrations.fromJson(Map<String, dynamic> json) = _$_Integrations.fromJson;
+  factory _Integrations.fromJson(Map<String, dynamic> json) =
+      _$_Integrations.fromJson;
 
   @override
 

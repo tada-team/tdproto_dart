@@ -71,7 +71,8 @@ mixin _$ContactShort {
 
 /// @nodoc
 abstract class $ContactShortCopyWith<$Res> {
-  factory $ContactShortCopyWith(ContactShort value, $Res Function(ContactShort) then) =
+  factory $ContactShortCopyWith(
+          ContactShort value, $Res Function(ContactShort) then) =
       _$ContactShortCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'jid') String jid,
@@ -101,7 +102,8 @@ class _$ContactShortCopyWithImpl<$Res> implements $ContactShortCopyWith<$Res> {
   }) {
     return _then(_value.copyWith(
       jid: jid == freezed ? _value.jid : jid as String,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
+      displayName:
+          displayName == freezed ? _value.displayName : displayName as String,
       shortName: shortName == freezed ? _value.shortName : shortName as String,
       icons: icons == freezed ? _value.icons : icons as IconData,
       gentime: gentime == freezed ? _value.gentime : gentime as int,
@@ -120,8 +122,10 @@ class _$ContactShortCopyWithImpl<$Res> implements $ContactShortCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$ContactShortCopyWith<$Res> implements $ContactShortCopyWith<$Res> {
-  factory _$ContactShortCopyWith(_ContactShort value, $Res Function(_ContactShort) then) =
+abstract class _$ContactShortCopyWith<$Res>
+    implements $ContactShortCopyWith<$Res> {
+  factory _$ContactShortCopyWith(
+          _ContactShort value, $Res Function(_ContactShort) then) =
       __$ContactShortCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -138,7 +142,8 @@ abstract class _$ContactShortCopyWith<$Res> implements $ContactShortCopyWith<$Re
 /// @nodoc
 class __$ContactShortCopyWithImpl<$Res> extends _$ContactShortCopyWithImpl<$Res>
     implements _$ContactShortCopyWith<$Res> {
-  __$ContactShortCopyWithImpl(_ContactShort _value, $Res Function(_ContactShort) _then)
+  __$ContactShortCopyWithImpl(
+      _ContactShort _value, $Res Function(_ContactShort) _then)
       : super(_value, (v) => _then(v as _ContactShort));
 
   @override
@@ -154,7 +159,8 @@ class __$ContactShortCopyWithImpl<$Res> extends _$ContactShortCopyWithImpl<$Res>
   }) {
     return _then(_ContactShort(
       jid: jid == freezed ? _value.jid : jid as String,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
+      displayName:
+          displayName == freezed ? _value.displayName : displayName as String,
       shortName: shortName == freezed ? _value.shortName : shortName as String,
       icons: icons == freezed ? _value.icons : icons as IconData,
       gentime: gentime == freezed ? _value.gentime : gentime as int,
@@ -178,7 +184,8 @@ class _$_ContactShort implements _ContactShort {
         assert(icons != null),
         assert(gentime != null);
 
-  factory _$_ContactShort.fromJson(Map<String, dynamic> json) => _$_$_ContactShortFromJson(json);
+  factory _$_ContactShort.fromJson(Map<String, dynamic> json) =>
+      _$_$_ContactShortFromJson(json);
 
   @override
 
@@ -215,13 +222,18 @@ class _$_ContactShort implements _ContactShort {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _ContactShort &&
-            (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
+            (identical(other.jid, jid) ||
+                const DeepCollectionEquality().equals(other.jid, jid)) &&
             (identical(other.displayName, displayName) ||
-                const DeepCollectionEquality().equals(other.displayName, displayName)) &&
+                const DeepCollectionEquality()
+                    .equals(other.displayName, displayName)) &&
             (identical(other.shortName, shortName) ||
-                const DeepCollectionEquality().equals(other.shortName, shortName)) &&
-            (identical(other.icons, icons) || const DeepCollectionEquality().equals(other.icons, icons)) &&
-            (identical(other.gentime, gentime) || const DeepCollectionEquality().equals(other.gentime, gentime)));
+                const DeepCollectionEquality()
+                    .equals(other.shortName, shortName)) &&
+            (identical(other.icons, icons) ||
+                const DeepCollectionEquality().equals(other.icons, icons)) &&
+            (identical(other.gentime, gentime) ||
+                const DeepCollectionEquality().equals(other.gentime, gentime)));
   }
 
   @override
@@ -235,7 +247,8 @@ class _$_ContactShort implements _ContactShort {
 
   @JsonKey(ignore: true)
   @override
-  _$ContactShortCopyWith<_ContactShort> get copyWith => __$ContactShortCopyWithImpl<_ContactShort>(this, _$identity);
+  _$ContactShortCopyWith<_ContactShort> get copyWith =>
+      __$ContactShortCopyWithImpl<_ContactShort>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -251,7 +264,8 @@ abstract class _ContactShort implements ContactShort {
       @required @JsonKey(name: 'icons') IconData icons,
       @required @JsonKey(name: 'gentime') int gentime}) = _$_ContactShort;
 
-  factory _ContactShort.fromJson(Map<String, dynamic> json) = _$_ContactShort.fromJson;
+  factory _ContactShort.fromJson(Map<String, dynamic> json) =
+      _$_ContactShort.fromJson;
 
   @override
 

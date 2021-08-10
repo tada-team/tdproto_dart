@@ -13,7 +13,8 @@ _$_TaskFilter _$_$_TaskFilterFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_TaskFilterToJson(_$_TaskFilter instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_TaskFilterToJson(_$_TaskFilter instance) =>
+    <String, dynamic>{
       'field': instance.field,
       'title': instance.title,
     };

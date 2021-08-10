@@ -59,7 +59,9 @@ mixin _$DeletedTeam {
 
 /// @nodoc
 abstract class $DeletedTeamCopyWith<$Res> {
-  factory $DeletedTeamCopyWith(DeletedTeam value, $Res Function(DeletedTeam) then) = _$DeletedTeamCopyWithImpl<$Res>;
+  factory $DeletedTeamCopyWith(
+          DeletedTeam value, $Res Function(DeletedTeam) then) =
+      _$DeletedTeamCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'is_archive') bool isArchive,
@@ -89,8 +91,10 @@ class _$DeletedTeamCopyWithImpl<$Res> implements $DeletedTeamCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$DeletedTeamCopyWith<$Res> implements $DeletedTeamCopyWith<$Res> {
-  factory _$DeletedTeamCopyWith(_DeletedTeam value, $Res Function(_DeletedTeam) then) =
+abstract class _$DeletedTeamCopyWith<$Res>
+    implements $DeletedTeamCopyWith<$Res> {
+  factory _$DeletedTeamCopyWith(
+          _DeletedTeam value, $Res Function(_DeletedTeam) then) =
       __$DeletedTeamCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -100,8 +104,10 @@ abstract class _$DeletedTeamCopyWith<$Res> implements $DeletedTeamCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DeletedTeamCopyWithImpl<$Res> extends _$DeletedTeamCopyWithImpl<$Res> implements _$DeletedTeamCopyWith<$Res> {
-  __$DeletedTeamCopyWithImpl(_DeletedTeam _value, $Res Function(_DeletedTeam) _then)
+class __$DeletedTeamCopyWithImpl<$Res> extends _$DeletedTeamCopyWithImpl<$Res>
+    implements _$DeletedTeamCopyWith<$Res> {
+  __$DeletedTeamCopyWithImpl(
+      _DeletedTeam _value, $Res Function(_DeletedTeam) _then)
       : super(_value, (v) => _then(v as _DeletedTeam));
 
   @override
@@ -133,7 +139,8 @@ class _$_DeletedTeam implements _DeletedTeam {
         assert(isArchive != null),
         assert(gentime != null);
 
-  factory _$_DeletedTeam.fromJson(Map<String, dynamic> json) => _$_$_DeletedTeamFromJson(json);
+  factory _$_DeletedTeam.fromJson(Map<String, dynamic> json) =>
+      _$_$_DeletedTeamFromJson(json);
 
   @override
 
@@ -160,10 +167,13 @@ class _$_DeletedTeam implements _DeletedTeam {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _DeletedTeam &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
             (identical(other.isArchive, isArchive) ||
-                const DeepCollectionEquality().equals(other.isArchive, isArchive)) &&
-            (identical(other.gentime, gentime) || const DeepCollectionEquality().equals(other.gentime, gentime)));
+                const DeepCollectionEquality()
+                    .equals(other.isArchive, isArchive)) &&
+            (identical(other.gentime, gentime) ||
+                const DeepCollectionEquality().equals(other.gentime, gentime)));
   }
 
   @override
@@ -175,7 +185,8 @@ class _$_DeletedTeam implements _DeletedTeam {
 
   @JsonKey(ignore: true)
   @override
-  _$DeletedTeamCopyWith<_DeletedTeam> get copyWith => __$DeletedTeamCopyWithImpl<_DeletedTeam>(this, _$identity);
+  _$DeletedTeamCopyWith<_DeletedTeam> get copyWith =>
+      __$DeletedTeamCopyWithImpl<_DeletedTeam>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -189,7 +200,8 @@ abstract class _DeletedTeam implements DeletedTeam {
       @required @JsonKey(name: 'is_archive') bool isArchive,
       @required @JsonKey(name: 'gentime') int gentime}) = _$_DeletedTeam;
 
-  factory _DeletedTeam.fromJson(Map<String, dynamic> json) = _$_DeletedTeam.fromJson;
+  factory _DeletedTeam.fromJson(Map<String, dynamic> json) =
+      _$_DeletedTeam.fromJson;
 
   @override
 

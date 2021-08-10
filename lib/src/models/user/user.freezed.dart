@@ -137,7 +137,8 @@ mixin _$User {
 
 /// @nodoc
 abstract class $UserCopyWith<$Res> {
-  factory $UserCopyWith(User value, $Res Function(User) then) = _$UserCopyWithImpl<$Res>;
+  factory $UserCopyWith(User value, $Res Function(User) then) =
+      _$UserCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'phone') String phone,
       @JsonKey(name: 'email') String email,
@@ -189,19 +190,34 @@ class _$UserCopyWithImpl<$Res> implements $UserCopyWith<$Res> {
     return _then(_value.copyWith(
       phone: phone == freezed ? _value.phone : phone as String,
       email: email == freezed ? _value.email : email as String,
-      familyName: familyName == freezed ? _value.familyName : familyName as String,
+      familyName:
+          familyName == freezed ? _value.familyName : familyName as String,
       givenName: givenName == freezed ? _value.givenName : givenName as String,
-      patronymic: patronymic == freezed ? _value.patronymic : patronymic as String,
-      defaultLang: defaultLang == freezed ? _value.defaultLang : defaultLang as String,
+      patronymic:
+          patronymic == freezed ? _value.patronymic : patronymic as String,
+      defaultLang:
+          defaultLang == freezed ? _value.defaultLang : defaultLang as String,
       altSend: altSend == freezed ? _value.altSend : altSend as bool,
-      asteriskMention: asteriskMention == freezed ? _value.asteriskMention : asteriskMention as bool,
-      alwaysSendPushes: alwaysSendPushes == freezed ? _value.alwaysSendPushes : alwaysSendPushes as bool,
-      hidePushesContent: hidePushesContent == freezed ? _value.hidePushesContent : hidePushesContent as bool,
-      unreadFirst: unreadFirst == freezed ? _value.unreadFirst : unreadFirst as bool,
-      mUnreadFirst: mUnreadFirst == freezed ? _value.mUnreadFirst : mUnreadFirst as bool,
+      asteriskMention: asteriskMention == freezed
+          ? _value.asteriskMention
+          : asteriskMention as bool,
+      alwaysSendPushes: alwaysSendPushes == freezed
+          ? _value.alwaysSendPushes
+          : alwaysSendPushes as bool,
+      hidePushesContent: hidePushesContent == freezed
+          ? _value.hidePushesContent
+          : hidePushesContent as bool,
+      unreadFirst:
+          unreadFirst == freezed ? _value.unreadFirst : unreadFirst as bool,
+      mUnreadFirst:
+          mUnreadFirst == freezed ? _value.mUnreadFirst : mUnreadFirst as bool,
       timezone: timezone == freezed ? _value.timezone : timezone as String,
-      quietTimeStart: quietTimeStart == freezed ? _value.quietTimeStart : quietTimeStart as String,
-      quietTimeFinish: quietTimeFinish == freezed ? _value.quietTimeFinish : quietTimeFinish as String,
+      quietTimeStart: quietTimeStart == freezed
+          ? _value.quietTimeStart
+          : quietTimeStart as String,
+      quietTimeFinish: quietTimeFinish == freezed
+          ? _value.quietTimeFinish
+          : quietTimeFinish as String,
       icons: icons == freezed ? _value.icons : icons as IconData,
     ));
   }
@@ -219,7 +235,8 @@ class _$UserCopyWithImpl<$Res> implements $UserCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$UserCopyWith<$Res> implements $UserCopyWith<$Res> {
-  factory _$UserCopyWith(_User value, $Res Function(_User) then) = __$UserCopyWithImpl<$Res>;
+  factory _$UserCopyWith(_User value, $Res Function(_User) then) =
+      __$UserCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'phone') String phone,
@@ -244,8 +261,10 @@ abstract class _$UserCopyWith<$Res> implements $UserCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res> implements _$UserCopyWith<$Res> {
-  __$UserCopyWithImpl(_User _value, $Res Function(_User) _then) : super(_value, (v) => _then(v as _User));
+class __$UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res>
+    implements _$UserCopyWith<$Res> {
+  __$UserCopyWithImpl(_User _value, $Res Function(_User) _then)
+      : super(_value, (v) => _then(v as _User));
 
   @override
   _User get _value => super._value as _User;
@@ -272,19 +291,34 @@ class __$UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res> implements _$Us
     return _then(_User(
       phone: phone == freezed ? _value.phone : phone as String,
       email: email == freezed ? _value.email : email as String,
-      familyName: familyName == freezed ? _value.familyName : familyName as String,
+      familyName:
+          familyName == freezed ? _value.familyName : familyName as String,
       givenName: givenName == freezed ? _value.givenName : givenName as String,
-      patronymic: patronymic == freezed ? _value.patronymic : patronymic as String,
-      defaultLang: defaultLang == freezed ? _value.defaultLang : defaultLang as String,
+      patronymic:
+          patronymic == freezed ? _value.patronymic : patronymic as String,
+      defaultLang:
+          defaultLang == freezed ? _value.defaultLang : defaultLang as String,
       altSend: altSend == freezed ? _value.altSend : altSend as bool,
-      asteriskMention: asteriskMention == freezed ? _value.asteriskMention : asteriskMention as bool,
-      alwaysSendPushes: alwaysSendPushes == freezed ? _value.alwaysSendPushes : alwaysSendPushes as bool,
-      hidePushesContent: hidePushesContent == freezed ? _value.hidePushesContent : hidePushesContent as bool,
-      unreadFirst: unreadFirst == freezed ? _value.unreadFirst : unreadFirst as bool,
-      mUnreadFirst: mUnreadFirst == freezed ? _value.mUnreadFirst : mUnreadFirst as bool,
+      asteriskMention: asteriskMention == freezed
+          ? _value.asteriskMention
+          : asteriskMention as bool,
+      alwaysSendPushes: alwaysSendPushes == freezed
+          ? _value.alwaysSendPushes
+          : alwaysSendPushes as bool,
+      hidePushesContent: hidePushesContent == freezed
+          ? _value.hidePushesContent
+          : hidePushesContent as bool,
+      unreadFirst:
+          unreadFirst == freezed ? _value.unreadFirst : unreadFirst as bool,
+      mUnreadFirst:
+          mUnreadFirst == freezed ? _value.mUnreadFirst : mUnreadFirst as bool,
       timezone: timezone == freezed ? _value.timezone : timezone as String,
-      quietTimeStart: quietTimeStart == freezed ? _value.quietTimeStart : quietTimeStart as String,
-      quietTimeFinish: quietTimeFinish == freezed ? _value.quietTimeFinish : quietTimeFinish as String,
+      quietTimeStart: quietTimeStart == freezed
+          ? _value.quietTimeStart
+          : quietTimeStart as String,
+      quietTimeFinish: quietTimeFinish == freezed
+          ? _value.quietTimeFinish
+          : quietTimeFinish as String,
       icons: icons == freezed ? _value.icons : icons as IconData,
     ));
   }
@@ -322,7 +356,8 @@ class _$_User implements _User {
         assert(quietTimeFinish != null),
         assert(icons != null);
 
-  factory _$_User.fromJson(Map<String, dynamic> json) => _$_$_UserFromJson(json);
+  factory _$_User.fromJson(Map<String, dynamic> json) =>
+      _$_$_UserFromJson(json);
 
   @override
 
@@ -414,33 +449,51 @@ class _$_User implements _User {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _User &&
-            (identical(other.phone, phone) || const DeepCollectionEquality().equals(other.phone, phone)) &&
-            (identical(other.email, email) || const DeepCollectionEquality().equals(other.email, email)) &&
+            (identical(other.phone, phone) ||
+                const DeepCollectionEquality().equals(other.phone, phone)) &&
+            (identical(other.email, email) ||
+                const DeepCollectionEquality().equals(other.email, email)) &&
             (identical(other.familyName, familyName) ||
-                const DeepCollectionEquality().equals(other.familyName, familyName)) &&
+                const DeepCollectionEquality()
+                    .equals(other.familyName, familyName)) &&
             (identical(other.givenName, givenName) ||
-                const DeepCollectionEquality().equals(other.givenName, givenName)) &&
+                const DeepCollectionEquality()
+                    .equals(other.givenName, givenName)) &&
             (identical(other.patronymic, patronymic) ||
-                const DeepCollectionEquality().equals(other.patronymic, patronymic)) &&
+                const DeepCollectionEquality()
+                    .equals(other.patronymic, patronymic)) &&
             (identical(other.defaultLang, defaultLang) ||
-                const DeepCollectionEquality().equals(other.defaultLang, defaultLang)) &&
-            (identical(other.altSend, altSend) || const DeepCollectionEquality().equals(other.altSend, altSend)) &&
+                const DeepCollectionEquality()
+                    .equals(other.defaultLang, defaultLang)) &&
+            (identical(other.altSend, altSend) ||
+                const DeepCollectionEquality()
+                    .equals(other.altSend, altSend)) &&
             (identical(other.asteriskMention, asteriskMention) ||
-                const DeepCollectionEquality().equals(other.asteriskMention, asteriskMention)) &&
+                const DeepCollectionEquality()
+                    .equals(other.asteriskMention, asteriskMention)) &&
             (identical(other.alwaysSendPushes, alwaysSendPushes) ||
-                const DeepCollectionEquality().equals(other.alwaysSendPushes, alwaysSendPushes)) &&
+                const DeepCollectionEquality()
+                    .equals(other.alwaysSendPushes, alwaysSendPushes)) &&
             (identical(other.hidePushesContent, hidePushesContent) ||
-                const DeepCollectionEquality().equals(other.hidePushesContent, hidePushesContent)) &&
+                const DeepCollectionEquality()
+                    .equals(other.hidePushesContent, hidePushesContent)) &&
             (identical(other.unreadFirst, unreadFirst) ||
-                const DeepCollectionEquality().equals(other.unreadFirst, unreadFirst)) &&
+                const DeepCollectionEquality()
+                    .equals(other.unreadFirst, unreadFirst)) &&
             (identical(other.mUnreadFirst, mUnreadFirst) ||
-                const DeepCollectionEquality().equals(other.mUnreadFirst, mUnreadFirst)) &&
-            (identical(other.timezone, timezone) || const DeepCollectionEquality().equals(other.timezone, timezone)) &&
+                const DeepCollectionEquality()
+                    .equals(other.mUnreadFirst, mUnreadFirst)) &&
+            (identical(other.timezone, timezone) ||
+                const DeepCollectionEquality()
+                    .equals(other.timezone, timezone)) &&
             (identical(other.quietTimeStart, quietTimeStart) ||
-                const DeepCollectionEquality().equals(other.quietTimeStart, quietTimeStart)) &&
+                const DeepCollectionEquality()
+                    .equals(other.quietTimeStart, quietTimeStart)) &&
             (identical(other.quietTimeFinish, quietTimeFinish) ||
-                const DeepCollectionEquality().equals(other.quietTimeFinish, quietTimeFinish)) &&
-            (identical(other.icons, icons) || const DeepCollectionEquality().equals(other.icons, icons)));
+                const DeepCollectionEquality()
+                    .equals(other.quietTimeFinish, quietTimeFinish)) &&
+            (identical(other.icons, icons) ||
+                const DeepCollectionEquality().equals(other.icons, icons)));
   }
 
   @override
@@ -465,7 +518,8 @@ class _$_User implements _User {
 
   @JsonKey(ignore: true)
   @override
-  _$UserCopyWith<_User> get copyWith => __$UserCopyWithImpl<_User>(this, _$identity);
+  _$UserCopyWith<_User> get copyWith =>
+      __$UserCopyWithImpl<_User>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {

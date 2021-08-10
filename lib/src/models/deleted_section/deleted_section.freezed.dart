@@ -17,7 +17,9 @@ class _$DeletedSectionTearOff {
   const _$DeletedSectionTearOff();
 
 // ignore: unused_element
-  _DeletedSection call({@required @JsonKey(name: 'uid') String uid, @required @JsonKey(name: 'gentime') int gentime}) {
+  _DeletedSection call(
+      {@required @JsonKey(name: 'uid') String uid,
+      @required @JsonKey(name: 'gentime') int gentime}) {
     return _DeletedSection(
       uid: uid,
       gentime: gentime,
@@ -51,13 +53,17 @@ mixin _$DeletedSection {
 
 /// @nodoc
 abstract class $DeletedSectionCopyWith<$Res> {
-  factory $DeletedSectionCopyWith(DeletedSection value, $Res Function(DeletedSection) then) =
+  factory $DeletedSectionCopyWith(
+          DeletedSection value, $Res Function(DeletedSection) then) =
       _$DeletedSectionCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'uid') String uid, @JsonKey(name: 'gentime') int gentime});
+  $Res call(
+      {@JsonKey(name: 'uid') String uid,
+      @JsonKey(name: 'gentime') int gentime});
 }
 
 /// @nodoc
-class _$DeletedSectionCopyWithImpl<$Res> implements $DeletedSectionCopyWith<$Res> {
+class _$DeletedSectionCopyWithImpl<$Res>
+    implements $DeletedSectionCopyWith<$Res> {
   _$DeletedSectionCopyWithImpl(this._value, this._then);
 
   final DeletedSection _value;
@@ -77,17 +83,23 @@ class _$DeletedSectionCopyWithImpl<$Res> implements $DeletedSectionCopyWith<$Res
 }
 
 /// @nodoc
-abstract class _$DeletedSectionCopyWith<$Res> implements $DeletedSectionCopyWith<$Res> {
-  factory _$DeletedSectionCopyWith(_DeletedSection value, $Res Function(_DeletedSection) then) =
+abstract class _$DeletedSectionCopyWith<$Res>
+    implements $DeletedSectionCopyWith<$Res> {
+  factory _$DeletedSectionCopyWith(
+          _DeletedSection value, $Res Function(_DeletedSection) then) =
       __$DeletedSectionCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'uid') String uid, @JsonKey(name: 'gentime') int gentime});
+  $Res call(
+      {@JsonKey(name: 'uid') String uid,
+      @JsonKey(name: 'gentime') int gentime});
 }
 
 /// @nodoc
-class __$DeletedSectionCopyWithImpl<$Res> extends _$DeletedSectionCopyWithImpl<$Res>
+class __$DeletedSectionCopyWithImpl<$Res>
+    extends _$DeletedSectionCopyWithImpl<$Res>
     implements _$DeletedSectionCopyWith<$Res> {
-  __$DeletedSectionCopyWithImpl(_DeletedSection _value, $Res Function(_DeletedSection) _then)
+  __$DeletedSectionCopyWithImpl(
+      _DeletedSection _value, $Res Function(_DeletedSection) _then)
       : super(_value, (v) => _then(v as _DeletedSection));
 
   @override
@@ -109,11 +121,14 @@ class __$DeletedSectionCopyWithImpl<$Res> extends _$DeletedSectionCopyWithImpl<$
 
 /// @nodoc
 class _$_DeletedSection implements _DeletedSection {
-  const _$_DeletedSection({@required @JsonKey(name: 'uid') this.uid, @required @JsonKey(name: 'gentime') this.gentime})
+  const _$_DeletedSection(
+      {@required @JsonKey(name: 'uid') this.uid,
+      @required @JsonKey(name: 'gentime') this.gentime})
       : assert(uid != null),
         assert(gentime != null);
 
-  factory _$_DeletedSection.fromJson(Map<String, dynamic> json) => _$_$_DeletedSectionFromJson(json);
+  factory _$_DeletedSection.fromJson(Map<String, dynamic> json) =>
+      _$_$_DeletedSectionFromJson(json);
 
   @override
 
@@ -135,13 +150,17 @@ class _$_DeletedSection implements _DeletedSection {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _DeletedSection &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.gentime, gentime) || const DeepCollectionEquality().equals(other.gentime, gentime)));
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.gentime, gentime) ||
+                const DeepCollectionEquality().equals(other.gentime, gentime)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(uid) ^ const DeepCollectionEquality().hash(gentime);
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(uid) ^
+      const DeepCollectionEquality().hash(gentime);
 
   @JsonKey(ignore: true)
   @override
@@ -159,7 +178,8 @@ abstract class _DeletedSection implements DeletedSection {
       {@required @JsonKey(name: 'uid') String uid,
       @required @JsonKey(name: 'gentime') int gentime}) = _$_DeletedSection;
 
-  factory _DeletedSection.fromJson(Map<String, dynamic> json) = _$_DeletedSection.fromJson;
+  factory _DeletedSection.fromJson(Map<String, dynamic> json) =
+      _$_DeletedSection.fromJson;
 
   @override
 

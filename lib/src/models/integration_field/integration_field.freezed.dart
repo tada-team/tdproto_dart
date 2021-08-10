@@ -59,7 +59,8 @@ mixin _$IntegrationField {
 
 /// @nodoc
 abstract class $IntegrationFieldCopyWith<$Res> {
-  factory $IntegrationFieldCopyWith(IntegrationField value, $Res Function(IntegrationField) then) =
+  factory $IntegrationFieldCopyWith(
+          IntegrationField value, $Res Function(IntegrationField) then) =
       _$IntegrationFieldCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'label') String label,
@@ -68,7 +69,8 @@ abstract class $IntegrationFieldCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$IntegrationFieldCopyWithImpl<$Res> implements $IntegrationFieldCopyWith<$Res> {
+class _$IntegrationFieldCopyWithImpl<$Res>
+    implements $IntegrationFieldCopyWith<$Res> {
   _$IntegrationFieldCopyWithImpl(this._value, this._then);
 
   final IntegrationField _value;
@@ -90,8 +92,10 @@ class _$IntegrationFieldCopyWithImpl<$Res> implements $IntegrationFieldCopyWith<
 }
 
 /// @nodoc
-abstract class _$IntegrationFieldCopyWith<$Res> implements $IntegrationFieldCopyWith<$Res> {
-  factory _$IntegrationFieldCopyWith(_IntegrationField value, $Res Function(_IntegrationField) then) =
+abstract class _$IntegrationFieldCopyWith<$Res>
+    implements $IntegrationFieldCopyWith<$Res> {
+  factory _$IntegrationFieldCopyWith(
+          _IntegrationField value, $Res Function(_IntegrationField) then) =
       __$IntegrationFieldCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -101,9 +105,11 @@ abstract class _$IntegrationFieldCopyWith<$Res> implements $IntegrationFieldCopy
 }
 
 /// @nodoc
-class __$IntegrationFieldCopyWithImpl<$Res> extends _$IntegrationFieldCopyWithImpl<$Res>
+class __$IntegrationFieldCopyWithImpl<$Res>
+    extends _$IntegrationFieldCopyWithImpl<$Res>
     implements _$IntegrationFieldCopyWith<$Res> {
-  __$IntegrationFieldCopyWithImpl(_IntegrationField _value, $Res Function(_IntegrationField) _then)
+  __$IntegrationFieldCopyWithImpl(
+      _IntegrationField _value, $Res Function(_IntegrationField) _then)
       : super(_value, (v) => _then(v as _IntegrationField));
 
   @override
@@ -135,7 +141,8 @@ class _$_IntegrationField implements _IntegrationField {
         assert(readonly != null),
         assert(value != null);
 
-  factory _$_IntegrationField.fromJson(Map<String, dynamic> json) => _$_$_IntegrationFieldFromJson(json);
+  factory _$_IntegrationField.fromJson(Map<String, dynamic> json) =>
+      _$_$_IntegrationFieldFromJson(json);
 
   @override
 
@@ -162,9 +169,13 @@ class _$_IntegrationField implements _IntegrationField {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _IntegrationField &&
-            (identical(other.label, label) || const DeepCollectionEquality().equals(other.label, label)) &&
-            (identical(other.readonly, readonly) || const DeepCollectionEquality().equals(other.readonly, readonly)) &&
-            (identical(other.value, value) || const DeepCollectionEquality().equals(other.value, value)));
+            (identical(other.label, label) ||
+                const DeepCollectionEquality().equals(other.label, label)) &&
+            (identical(other.readonly, readonly) ||
+                const DeepCollectionEquality()
+                    .equals(other.readonly, readonly)) &&
+            (identical(other.value, value) ||
+                const DeepCollectionEquality().equals(other.value, value)));
   }
 
   @override
@@ -191,7 +202,8 @@ abstract class _IntegrationField implements IntegrationField {
       @required @JsonKey(name: 'readonly') bool readonly,
       @required @JsonKey(name: 'value') String value}) = _$_IntegrationField;
 
-  factory _IntegrationField.fromJson(Map<String, dynamic> json) = _$_IntegrationField.fromJson;
+  factory _IntegrationField.fromJson(Map<String, dynamic> json) =
+      _$_IntegrationField.fromJson;
 
   @override
 

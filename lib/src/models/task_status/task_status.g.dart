@@ -16,7 +16,8 @@ _$_TaskStatus _$_$_TaskStatusFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_TaskStatusToJson(_$_TaskStatus instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_TaskStatusToJson(_$_TaskStatus instance) =>
+    <String, dynamic>{
       'uid': instance.uid,
       'sort_ordering': instance.sortOrdering,
       'name': instance.name,

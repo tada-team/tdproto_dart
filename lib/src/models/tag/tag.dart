@@ -10,9 +10,11 @@ abstract class Tag with _$Tag {
   const factory Tag({
     /// Tag id.
     @JsonKey(name: 'uid') @required String uid,
-
+    
     /// Tag name.
     @JsonKey(name: 'name') @required String name,
+    
+    
   }) = _Tag;
 
   factory Tag.fromJson(Map<String, dynamic> json) => _$TagFromJson(json);

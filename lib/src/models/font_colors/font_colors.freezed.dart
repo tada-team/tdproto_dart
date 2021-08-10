@@ -83,7 +83,9 @@ mixin _$FontColors {
 
 /// @nodoc
 abstract class $FontColorsCopyWith<$Res> {
-  factory $FontColorsCopyWith(FontColors value, $Res Function(FontColors) then) = _$FontColorsCopyWithImpl<$Res>;
+  factory $FontColorsCopyWith(
+          FontColors value, $Res Function(FontColors) then) =
+      _$FontColorsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'text') String text,
       @JsonKey(name: 'title') String title,
@@ -116,17 +118,25 @@ class _$FontColorsCopyWithImpl<$Res> implements $FontColorsCopyWith<$Res> {
       text: text == freezed ? _value.text : text as String,
       title: title == freezed ? _value.title : title as String,
       sub: sub == freezed ? _value.sub : sub as String,
-      brandButton: brandButton == freezed ? _value.brandButton : brandButton as String,
-      simpleButton: simpleButton == freezed ? _value.simpleButton : simpleButton as String,
-      bubbleSent: bubbleSent == freezed ? _value.bubbleSent : bubbleSent as String,
-      bubbleReceived: bubbleReceived == freezed ? _value.bubbleReceived : bubbleReceived as String,
+      brandButton:
+          brandButton == freezed ? _value.brandButton : brandButton as String,
+      simpleButton: simpleButton == freezed
+          ? _value.simpleButton
+          : simpleButton as String,
+      bubbleSent:
+          bubbleSent == freezed ? _value.bubbleSent : bubbleSent as String,
+      bubbleReceived: bubbleReceived == freezed
+          ? _value.bubbleReceived
+          : bubbleReceived as String,
     ));
   }
 }
 
 /// @nodoc
 abstract class _$FontColorsCopyWith<$Res> implements $FontColorsCopyWith<$Res> {
-  factory _$FontColorsCopyWith(_FontColors value, $Res Function(_FontColors) then) = __$FontColorsCopyWithImpl<$Res>;
+  factory _$FontColorsCopyWith(
+          _FontColors value, $Res Function(_FontColors) then) =
+      __$FontColorsCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'text') String text,
@@ -139,8 +149,10 @@ abstract class _$FontColorsCopyWith<$Res> implements $FontColorsCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$FontColorsCopyWithImpl<$Res> extends _$FontColorsCopyWithImpl<$Res> implements _$FontColorsCopyWith<$Res> {
-  __$FontColorsCopyWithImpl(_FontColors _value, $Res Function(_FontColors) _then)
+class __$FontColorsCopyWithImpl<$Res> extends _$FontColorsCopyWithImpl<$Res>
+    implements _$FontColorsCopyWith<$Res> {
+  __$FontColorsCopyWithImpl(
+      _FontColors _value, $Res Function(_FontColors) _then)
       : super(_value, (v) => _then(v as _FontColors));
 
   @override
@@ -160,10 +172,16 @@ class __$FontColorsCopyWithImpl<$Res> extends _$FontColorsCopyWithImpl<$Res> imp
       text: text == freezed ? _value.text : text as String,
       title: title == freezed ? _value.title : title as String,
       sub: sub == freezed ? _value.sub : sub as String,
-      brandButton: brandButton == freezed ? _value.brandButton : brandButton as String,
-      simpleButton: simpleButton == freezed ? _value.simpleButton : simpleButton as String,
-      bubbleSent: bubbleSent == freezed ? _value.bubbleSent : bubbleSent as String,
-      bubbleReceived: bubbleReceived == freezed ? _value.bubbleReceived : bubbleReceived as String,
+      brandButton:
+          brandButton == freezed ? _value.brandButton : brandButton as String,
+      simpleButton: simpleButton == freezed
+          ? _value.simpleButton
+          : simpleButton as String,
+      bubbleSent:
+          bubbleSent == freezed ? _value.bubbleSent : bubbleSent as String,
+      bubbleReceived: bubbleReceived == freezed
+          ? _value.bubbleReceived
+          : bubbleReceived as String,
     ));
   }
 }
@@ -188,7 +206,8 @@ class _$_FontColors implements _FontColors {
         assert(bubbleSent != null),
         assert(bubbleReceived != null);
 
-  factory _$_FontColors.fromJson(Map<String, dynamic> json) => _$_$_FontColorsFromJson(json);
+  factory _$_FontColors.fromJson(Map<String, dynamic> json) =>
+      _$_$_FontColorsFromJson(json);
 
   @override
 
@@ -235,17 +254,24 @@ class _$_FontColors implements _FontColors {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _FontColors &&
-            (identical(other.text, text) || const DeepCollectionEquality().equals(other.text, text)) &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
-            (identical(other.sub, sub) || const DeepCollectionEquality().equals(other.sub, sub)) &&
+            (identical(other.text, text) ||
+                const DeepCollectionEquality().equals(other.text, text)) &&
+            (identical(other.title, title) ||
+                const DeepCollectionEquality().equals(other.title, title)) &&
+            (identical(other.sub, sub) ||
+                const DeepCollectionEquality().equals(other.sub, sub)) &&
             (identical(other.brandButton, brandButton) ||
-                const DeepCollectionEquality().equals(other.brandButton, brandButton)) &&
+                const DeepCollectionEquality()
+                    .equals(other.brandButton, brandButton)) &&
             (identical(other.simpleButton, simpleButton) ||
-                const DeepCollectionEquality().equals(other.simpleButton, simpleButton)) &&
+                const DeepCollectionEquality()
+                    .equals(other.simpleButton, simpleButton)) &&
             (identical(other.bubbleSent, bubbleSent) ||
-                const DeepCollectionEquality().equals(other.bubbleSent, bubbleSent)) &&
+                const DeepCollectionEquality()
+                    .equals(other.bubbleSent, bubbleSent)) &&
             (identical(other.bubbleReceived, bubbleReceived) ||
-                const DeepCollectionEquality().equals(other.bubbleReceived, bubbleReceived)));
+                const DeepCollectionEquality()
+                    .equals(other.bubbleReceived, bubbleReceived)));
   }
 
   @override
@@ -261,7 +287,8 @@ class _$_FontColors implements _FontColors {
 
   @JsonKey(ignore: true)
   @override
-  _$FontColorsCopyWith<_FontColors> get copyWith => __$FontColorsCopyWithImpl<_FontColors>(this, _$identity);
+  _$FontColorsCopyWith<_FontColors> get copyWith =>
+      __$FontColorsCopyWithImpl<_FontColors>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -271,15 +298,17 @@ class _$_FontColors implements _FontColors {
 
 abstract class _FontColors implements FontColors {
   const factory _FontColors(
-      {@required @JsonKey(name: 'text') String text,
-      @required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'sub') String sub,
-      @required @JsonKey(name: 'brand_button') String brandButton,
-      @required @JsonKey(name: 'simple_button') String simpleButton,
-      @required @JsonKey(name: 'bubble_sent') String bubbleSent,
-      @required @JsonKey(name: 'bubble_received') String bubbleReceived}) = _$_FontColors;
+          {@required @JsonKey(name: 'text') String text,
+          @required @JsonKey(name: 'title') String title,
+          @required @JsonKey(name: 'sub') String sub,
+          @required @JsonKey(name: 'brand_button') String brandButton,
+          @required @JsonKey(name: 'simple_button') String simpleButton,
+          @required @JsonKey(name: 'bubble_sent') String bubbleSent,
+          @required @JsonKey(name: 'bubble_received') String bubbleReceived}) =
+      _$_FontColors;
 
-  factory _FontColors.fromJson(Map<String, dynamic> json) = _$_FontColors.fromJson;
+  factory _FontColors.fromJson(Map<String, dynamic> json) =
+      _$_FontColors.fromJson;
 
   @override
 

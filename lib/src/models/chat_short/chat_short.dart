@@ -10,15 +10,17 @@ abstract class ChatShort with _$ChatShort {
   const factory ChatShort({
     /// Group/Task/Contact id.
     @JsonKey(name: 'jid') @required String jid,
-
+    
     /// Chat type.
     @JsonKey(name: 'chat_type') @required String chatType,
-
+    
     /// Title.
     @JsonKey(name: 'display_name') @required String displayName,
-
+    
     /// Icon data.
     @JsonKey(name: 'icons') @required IconData icons,
+    
+    
   }) = _ChatShort;
 
   factory ChatShort.fromJson(Map<String, dynamic> json) => _$ChatShortFromJson(json);

@@ -83,7 +83,9 @@ mixin _$MessageLink {
 
 /// @nodoc
 abstract class $MessageLinkCopyWith<$Res> {
-  factory $MessageLinkCopyWith(MessageLink value, $Res Function(MessageLink) then) = _$MessageLinkCopyWithImpl<$Res>;
+  factory $MessageLinkCopyWith(
+          MessageLink value, $Res Function(MessageLink) then) =
+      _$MessageLinkCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'pattern') String pattern,
       @JsonKey(name: 'url') String url,
@@ -118,7 +120,8 @@ class _$MessageLinkCopyWithImpl<$Res> implements $MessageLinkCopyWith<$Res> {
       pattern: pattern == freezed ? _value.pattern : pattern as String,
       url: url == freezed ? _value.url : url as String,
       text: text == freezed ? _value.text : text as String,
-      preview: preview == freezed ? _value.preview : preview as MessageLinkPreview,
+      preview:
+          preview == freezed ? _value.preview : preview as MessageLinkPreview,
       uploads: uploads == freezed ? _value.uploads : uploads as List<Upload>,
       noPreview: noPreview == freezed ? _value.noPreview : noPreview as bool,
       youtubeId: youtubeId == freezed ? _value.youtubeId : youtubeId as String,
@@ -137,8 +140,10 @@ class _$MessageLinkCopyWithImpl<$Res> implements $MessageLinkCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$MessageLinkCopyWith<$Res> implements $MessageLinkCopyWith<$Res> {
-  factory _$MessageLinkCopyWith(_MessageLink value, $Res Function(_MessageLink) then) =
+abstract class _$MessageLinkCopyWith<$Res>
+    implements $MessageLinkCopyWith<$Res> {
+  factory _$MessageLinkCopyWith(
+          _MessageLink value, $Res Function(_MessageLink) then) =
       __$MessageLinkCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -155,8 +160,10 @@ abstract class _$MessageLinkCopyWith<$Res> implements $MessageLinkCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MessageLinkCopyWithImpl<$Res> extends _$MessageLinkCopyWithImpl<$Res> implements _$MessageLinkCopyWith<$Res> {
-  __$MessageLinkCopyWithImpl(_MessageLink _value, $Res Function(_MessageLink) _then)
+class __$MessageLinkCopyWithImpl<$Res> extends _$MessageLinkCopyWithImpl<$Res>
+    implements _$MessageLinkCopyWith<$Res> {
+  __$MessageLinkCopyWithImpl(
+      _MessageLink _value, $Res Function(_MessageLink) _then)
       : super(_value, (v) => _then(v as _MessageLink));
 
   @override
@@ -176,7 +183,8 @@ class __$MessageLinkCopyWithImpl<$Res> extends _$MessageLinkCopyWithImpl<$Res> i
       pattern: pattern == freezed ? _value.pattern : pattern as String,
       url: url == freezed ? _value.url : url as String,
       text: text == freezed ? _value.text : text as String,
-      preview: preview == freezed ? _value.preview : preview as MessageLinkPreview,
+      preview:
+          preview == freezed ? _value.preview : preview as MessageLinkPreview,
       uploads: uploads == freezed ? _value.uploads : uploads as List<Upload>,
       noPreview: noPreview == freezed ? _value.noPreview : noPreview as bool,
       youtubeId: youtubeId == freezed ? _value.youtubeId : youtubeId as String,
@@ -200,7 +208,8 @@ class _$_MessageLink implements _MessageLink {
         assert(url != null),
         assert(text != null);
 
-  factory _$_MessageLink.fromJson(Map<String, dynamic> json) => _$_$_MessageLinkFromJson(json);
+  factory _$_MessageLink.fromJson(Map<String, dynamic> json) =>
+      _$_$_MessageLinkFromJson(json);
 
   @override
 
@@ -247,15 +256,25 @@ class _$_MessageLink implements _MessageLink {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _MessageLink &&
-            (identical(other.pattern, pattern) || const DeepCollectionEquality().equals(other.pattern, pattern)) &&
-            (identical(other.url, url) || const DeepCollectionEquality().equals(other.url, url)) &&
-            (identical(other.text, text) || const DeepCollectionEquality().equals(other.text, text)) &&
-            (identical(other.preview, preview) || const DeepCollectionEquality().equals(other.preview, preview)) &&
-            (identical(other.uploads, uploads) || const DeepCollectionEquality().equals(other.uploads, uploads)) &&
+            (identical(other.pattern, pattern) ||
+                const DeepCollectionEquality()
+                    .equals(other.pattern, pattern)) &&
+            (identical(other.url, url) ||
+                const DeepCollectionEquality().equals(other.url, url)) &&
+            (identical(other.text, text) ||
+                const DeepCollectionEquality().equals(other.text, text)) &&
+            (identical(other.preview, preview) ||
+                const DeepCollectionEquality()
+                    .equals(other.preview, preview)) &&
+            (identical(other.uploads, uploads) ||
+                const DeepCollectionEquality()
+                    .equals(other.uploads, uploads)) &&
             (identical(other.noPreview, noPreview) ||
-                const DeepCollectionEquality().equals(other.noPreview, noPreview)) &&
+                const DeepCollectionEquality()
+                    .equals(other.noPreview, noPreview)) &&
             (identical(other.youtubeId, youtubeId) ||
-                const DeepCollectionEquality().equals(other.youtubeId, youtubeId)));
+                const DeepCollectionEquality()
+                    .equals(other.youtubeId, youtubeId)));
   }
 
   @override
@@ -271,7 +290,8 @@ class _$_MessageLink implements _MessageLink {
 
   @JsonKey(ignore: true)
   @override
-  _$MessageLinkCopyWith<_MessageLink> get copyWith => __$MessageLinkCopyWithImpl<_MessageLink>(this, _$identity);
+  _$MessageLinkCopyWith<_MessageLink> get copyWith =>
+      __$MessageLinkCopyWithImpl<_MessageLink>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -289,7 +309,8 @@ abstract class _MessageLink implements MessageLink {
       @JsonKey(name: 'nopreview') bool noPreview,
       @JsonKey(name: 'youtube_id') String youtubeId}) = _$_MessageLink;
 
-  factory _MessageLink.fromJson(Map<String, dynamic> json) = _$_MessageLink.fromJson;
+  factory _MessageLink.fromJson(Map<String, dynamic> json) =
+      _$_MessageLink.fromJson;
 
   @override
 

@@ -15,7 +15,8 @@ _$_Invitation _$_$_InvitationFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_InvitationToJson(_$_Invitation instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_InvitationToJson(_$_Invitation instance) =>
+    <String, dynamic>{
       'uid': instance.uid,
       'token': instance.token,
       'created': const DateTimeConverter().toJson(instance.created),

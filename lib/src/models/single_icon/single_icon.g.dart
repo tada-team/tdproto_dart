@@ -14,7 +14,8 @@ _$_SingleIcon _$_$_SingleIconFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_SingleIconToJson(_$_SingleIcon instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_SingleIconToJson(_$_SingleIcon instance) =>
+    <String, dynamic>{
       'url': instance.url,
       'width': instance.width,
       'height': instance.height,

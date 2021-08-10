@@ -18,13 +18,27 @@ class _$ChatCountersTearOff {
 
 // ignore: unused_element
   _ChatCounters call(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'chat_type') String chatType,
-      @required @JsonKey(name: 'gentime') int gentime,
-      @required @JsonKey(name: 'num_unread') int numUnread,
-      @required @JsonKey(name: 'num_unread_notices') int numUnreadNotices,
-      @required @JsonKey(name: 'last_read_message_id') String lastReadMessageUid,
-      @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime lastActivity}) {
+      {@required
+      @JsonKey(name: 'jid')
+          String jid,
+      @required
+      @JsonKey(name: 'chat_type')
+          String chatType,
+      @required
+      @JsonKey(name: 'gentime')
+          int gentime,
+      @required
+      @JsonKey(name: 'num_unread')
+          int numUnread,
+      @required
+      @JsonKey(name: 'num_unread_notices')
+          int numUnreadNotices,
+      @required
+      @JsonKey(name: 'last_read_message_id')
+          String lastReadMessageUid,
+      @JsonKey(name: 'last_activity')
+      @DateTimeConverter()
+          DateTime lastActivity}) {
     return _ChatCounters(
       jid: jid,
       chatType: chatType,
@@ -84,16 +98,25 @@ mixin _$ChatCounters {
 
 /// @nodoc
 abstract class $ChatCountersCopyWith<$Res> {
-  factory $ChatCountersCopyWith(ChatCounters value, $Res Function(ChatCounters) then) =
+  factory $ChatCountersCopyWith(
+          ChatCounters value, $Res Function(ChatCounters) then) =
       _$ChatCountersCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'chat_type') String chatType,
-      @JsonKey(name: 'gentime') int gentime,
-      @JsonKey(name: 'num_unread') int numUnread,
-      @JsonKey(name: 'num_unread_notices') int numUnreadNotices,
-      @JsonKey(name: 'last_read_message_id') String lastReadMessageUid,
-      @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime lastActivity});
+      {@JsonKey(name: 'jid')
+          String jid,
+      @JsonKey(name: 'chat_type')
+          String chatType,
+      @JsonKey(name: 'gentime')
+          int gentime,
+      @JsonKey(name: 'num_unread')
+          int numUnread,
+      @JsonKey(name: 'num_unread_notices')
+          int numUnreadNotices,
+      @JsonKey(name: 'last_read_message_id')
+          String lastReadMessageUid,
+      @JsonKey(name: 'last_activity')
+      @DateTimeConverter()
+          DateTime lastActivity});
 }
 
 /// @nodoc
@@ -119,32 +142,49 @@ class _$ChatCountersCopyWithImpl<$Res> implements $ChatCountersCopyWith<$Res> {
       chatType: chatType == freezed ? _value.chatType : chatType as String,
       gentime: gentime == freezed ? _value.gentime : gentime as int,
       numUnread: numUnread == freezed ? _value.numUnread : numUnread as int,
-      numUnreadNotices: numUnreadNotices == freezed ? _value.numUnreadNotices : numUnreadNotices as int,
-      lastReadMessageUid: lastReadMessageUid == freezed ? _value.lastReadMessageUid : lastReadMessageUid as String,
-      lastActivity: lastActivity == freezed ? _value.lastActivity : lastActivity as DateTime,
+      numUnreadNotices: numUnreadNotices == freezed
+          ? _value.numUnreadNotices
+          : numUnreadNotices as int,
+      lastReadMessageUid: lastReadMessageUid == freezed
+          ? _value.lastReadMessageUid
+          : lastReadMessageUid as String,
+      lastActivity: lastActivity == freezed
+          ? _value.lastActivity
+          : lastActivity as DateTime,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$ChatCountersCopyWith<$Res> implements $ChatCountersCopyWith<$Res> {
-  factory _$ChatCountersCopyWith(_ChatCounters value, $Res Function(_ChatCounters) then) =
+abstract class _$ChatCountersCopyWith<$Res>
+    implements $ChatCountersCopyWith<$Res> {
+  factory _$ChatCountersCopyWith(
+          _ChatCounters value, $Res Function(_ChatCounters) then) =
       __$ChatCountersCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'chat_type') String chatType,
-      @JsonKey(name: 'gentime') int gentime,
-      @JsonKey(name: 'num_unread') int numUnread,
-      @JsonKey(name: 'num_unread_notices') int numUnreadNotices,
-      @JsonKey(name: 'last_read_message_id') String lastReadMessageUid,
-      @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime lastActivity});
+      {@JsonKey(name: 'jid')
+          String jid,
+      @JsonKey(name: 'chat_type')
+          String chatType,
+      @JsonKey(name: 'gentime')
+          int gentime,
+      @JsonKey(name: 'num_unread')
+          int numUnread,
+      @JsonKey(name: 'num_unread_notices')
+          int numUnreadNotices,
+      @JsonKey(name: 'last_read_message_id')
+          String lastReadMessageUid,
+      @JsonKey(name: 'last_activity')
+      @DateTimeConverter()
+          DateTime lastActivity});
 }
 
 /// @nodoc
 class __$ChatCountersCopyWithImpl<$Res> extends _$ChatCountersCopyWithImpl<$Res>
     implements _$ChatCountersCopyWith<$Res> {
-  __$ChatCountersCopyWithImpl(_ChatCounters _value, $Res Function(_ChatCounters) _then)
+  __$ChatCountersCopyWithImpl(
+      _ChatCounters _value, $Res Function(_ChatCounters) _then)
       : super(_value, (v) => _then(v as _ChatCounters));
 
   @override
@@ -165,9 +205,15 @@ class __$ChatCountersCopyWithImpl<$Res> extends _$ChatCountersCopyWithImpl<$Res>
       chatType: chatType == freezed ? _value.chatType : chatType as String,
       gentime: gentime == freezed ? _value.gentime : gentime as int,
       numUnread: numUnread == freezed ? _value.numUnread : numUnread as int,
-      numUnreadNotices: numUnreadNotices == freezed ? _value.numUnreadNotices : numUnreadNotices as int,
-      lastReadMessageUid: lastReadMessageUid == freezed ? _value.lastReadMessageUid : lastReadMessageUid as String,
-      lastActivity: lastActivity == freezed ? _value.lastActivity : lastActivity as DateTime,
+      numUnreadNotices: numUnreadNotices == freezed
+          ? _value.numUnreadNotices
+          : numUnreadNotices as int,
+      lastReadMessageUid: lastReadMessageUid == freezed
+          ? _value.lastReadMessageUid
+          : lastReadMessageUid as String,
+      lastActivity: lastActivity == freezed
+          ? _value.lastActivity
+          : lastActivity as DateTime,
     ));
   }
 }
@@ -191,7 +237,8 @@ class _$_ChatCounters implements _ChatCounters {
         assert(numUnreadNotices != null),
         assert(lastReadMessageUid != null);
 
-  factory _$_ChatCounters.fromJson(Map<String, dynamic> json) => _$_$_ChatCountersFromJson(json);
+  factory _$_ChatCounters.fromJson(Map<String, dynamic> json) =>
+      _$_$_ChatCountersFromJson(json);
 
   @override
 
@@ -239,17 +286,26 @@ class _$_ChatCounters implements _ChatCounters {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _ChatCounters &&
-            (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
-            (identical(other.chatType, chatType) || const DeepCollectionEquality().equals(other.chatType, chatType)) &&
-            (identical(other.gentime, gentime) || const DeepCollectionEquality().equals(other.gentime, gentime)) &&
+            (identical(other.jid, jid) ||
+                const DeepCollectionEquality().equals(other.jid, jid)) &&
+            (identical(other.chatType, chatType) ||
+                const DeepCollectionEquality()
+                    .equals(other.chatType, chatType)) &&
+            (identical(other.gentime, gentime) ||
+                const DeepCollectionEquality()
+                    .equals(other.gentime, gentime)) &&
             (identical(other.numUnread, numUnread) ||
-                const DeepCollectionEquality().equals(other.numUnread, numUnread)) &&
+                const DeepCollectionEquality()
+                    .equals(other.numUnread, numUnread)) &&
             (identical(other.numUnreadNotices, numUnreadNotices) ||
-                const DeepCollectionEquality().equals(other.numUnreadNotices, numUnreadNotices)) &&
+                const DeepCollectionEquality()
+                    .equals(other.numUnreadNotices, numUnreadNotices)) &&
             (identical(other.lastReadMessageUid, lastReadMessageUid) ||
-                const DeepCollectionEquality().equals(other.lastReadMessageUid, lastReadMessageUid)) &&
+                const DeepCollectionEquality()
+                    .equals(other.lastReadMessageUid, lastReadMessageUid)) &&
             (identical(other.lastActivity, lastActivity) ||
-                const DeepCollectionEquality().equals(other.lastActivity, lastActivity)));
+                const DeepCollectionEquality()
+                    .equals(other.lastActivity, lastActivity)));
   }
 
   @override
@@ -265,7 +321,8 @@ class _$_ChatCounters implements _ChatCounters {
 
   @JsonKey(ignore: true)
   @override
-  _$ChatCountersCopyWith<_ChatCounters> get copyWith => __$ChatCountersCopyWithImpl<_ChatCounters>(this, _$identity);
+  _$ChatCountersCopyWith<_ChatCounters> get copyWith =>
+      __$ChatCountersCopyWithImpl<_ChatCounters>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -275,15 +332,30 @@ class _$_ChatCounters implements _ChatCounters {
 
 abstract class _ChatCounters implements ChatCounters {
   const factory _ChatCounters(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'chat_type') String chatType,
-      @required @JsonKey(name: 'gentime') int gentime,
-      @required @JsonKey(name: 'num_unread') int numUnread,
-      @required @JsonKey(name: 'num_unread_notices') int numUnreadNotices,
-      @required @JsonKey(name: 'last_read_message_id') String lastReadMessageUid,
-      @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime lastActivity}) = _$_ChatCounters;
+      {@required
+      @JsonKey(name: 'jid')
+          String jid,
+      @required
+      @JsonKey(name: 'chat_type')
+          String chatType,
+      @required
+      @JsonKey(name: 'gentime')
+          int gentime,
+      @required
+      @JsonKey(name: 'num_unread')
+          int numUnread,
+      @required
+      @JsonKey(name: 'num_unread_notices')
+          int numUnreadNotices,
+      @required
+      @JsonKey(name: 'last_read_message_id')
+          String lastReadMessageUid,
+      @JsonKey(name: 'last_activity')
+      @DateTimeConverter()
+          DateTime lastActivity}) = _$_ChatCounters;
 
-  factory _ChatCounters.fromJson(Map<String, dynamic> json) = _$_ChatCounters.fromJson;
+  factory _ChatCounters.fromJson(Map<String, dynamic> json) =
+      _$_ChatCounters.fromJson;
 
   @override
 

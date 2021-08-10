@@ -90,7 +90,8 @@ mixin _$ShortMessage {
 
 /// @nodoc
 abstract class $ShortMessageCopyWith<$Res> {
-  factory $ShortMessageCopyWith(ShortMessage value, $Res Function(ShortMessage) then) =
+  factory $ShortMessageCopyWith(
+          ShortMessage value, $Res Function(ShortMessage) then) =
       _$ShortMessageCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'from') String from,
@@ -136,8 +137,10 @@ class _$ShortMessageCopyWithImpl<$Res> implements $ShortMessageCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$ShortMessageCopyWith<$Res> implements $ShortMessageCopyWith<$Res> {
-  factory _$ShortMessageCopyWith(_ShortMessage value, $Res Function(_ShortMessage) then) =
+abstract class _$ShortMessageCopyWith<$Res>
+    implements $ShortMessageCopyWith<$Res> {
+  factory _$ShortMessageCopyWith(
+          _ShortMessage value, $Res Function(_ShortMessage) then) =
       __$ShortMessageCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -154,7 +157,8 @@ abstract class _$ShortMessageCopyWith<$Res> implements $ShortMessageCopyWith<$Re
 /// @nodoc
 class __$ShortMessageCopyWithImpl<$Res> extends _$ShortMessageCopyWithImpl<$Res>
     implements _$ShortMessageCopyWith<$Res> {
-  __$ShortMessageCopyWithImpl(_ShortMessage _value, $Res Function(_ShortMessage) _then)
+  __$ShortMessageCopyWithImpl(
+      _ShortMessage _value, $Res Function(_ShortMessage) _then)
       : super(_value, (v) => _then(v as _ShortMessage));
 
   @override
@@ -205,7 +209,8 @@ class _$_ShortMessage implements _ShortMessage {
         assert(chatType != null),
         assert(chat != null);
 
-  factory _$_ShortMessage.fromJson(Map<String, dynamic> json) => _$_$_ShortMessageFromJson(json);
+  factory _$_ShortMessage.fromJson(Map<String, dynamic> json) =>
+      _$_$_ShortMessageFromJson(json);
 
   @override
 
@@ -258,16 +263,27 @@ class _$_ShortMessage implements _ShortMessage {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _ShortMessage &&
-            (identical(other.from, from) || const DeepCollectionEquality().equals(other.from, from)) &&
-            (identical(other.to, to) || const DeepCollectionEquality().equals(other.to, to)) &&
+            (identical(other.from, from) ||
+                const DeepCollectionEquality().equals(other.from, from)) &&
+            (identical(other.to, to) ||
+                const DeepCollectionEquality().equals(other.to, to)) &&
             (identical(other.messageId, messageId) ||
-                const DeepCollectionEquality().equals(other.messageId, messageId)) &&
-            (identical(other.created, created) || const DeepCollectionEquality().equals(other.created, created)) &&
-            (identical(other.gentime, gentime) || const DeepCollectionEquality().equals(other.gentime, gentime)) &&
-            (identical(other.chatType, chatType) || const DeepCollectionEquality().equals(other.chatType, chatType)) &&
-            (identical(other.chat, chat) || const DeepCollectionEquality().equals(other.chat, chat)) &&
+                const DeepCollectionEquality()
+                    .equals(other.messageId, messageId)) &&
+            (identical(other.created, created) ||
+                const DeepCollectionEquality()
+                    .equals(other.created, created)) &&
+            (identical(other.gentime, gentime) ||
+                const DeepCollectionEquality()
+                    .equals(other.gentime, gentime)) &&
+            (identical(other.chatType, chatType) ||
+                const DeepCollectionEquality()
+                    .equals(other.chatType, chatType)) &&
+            (identical(other.chat, chat) ||
+                const DeepCollectionEquality().equals(other.chat, chat)) &&
             (identical(other.isArchive, isArchive) ||
-                const DeepCollectionEquality().equals(other.isArchive, isArchive)));
+                const DeepCollectionEquality()
+                    .equals(other.isArchive, isArchive)));
   }
 
   @override
@@ -284,7 +300,8 @@ class _$_ShortMessage implements _ShortMessage {
 
   @JsonKey(ignore: true)
   @override
-  _$ShortMessageCopyWith<_ShortMessage> get copyWith => __$ShortMessageCopyWithImpl<_ShortMessage>(this, _$identity);
+  _$ShortMessageCopyWith<_ShortMessage> get copyWith =>
+      __$ShortMessageCopyWithImpl<_ShortMessage>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -303,7 +320,8 @@ abstract class _ShortMessage implements ShortMessage {
       @required @JsonKey(name: 'chat') String chat,
       @JsonKey(name: 'is_archive') bool isArchive}) = _$_ShortMessage;
 
-  factory _ShortMessage.fromJson(Map<String, dynamic> json) = _$_ShortMessage.fromJson;
+  factory _ShortMessage.fromJson(Map<String, dynamic> json) =
+      _$_ShortMessage.fromJson;
 
   @override
 

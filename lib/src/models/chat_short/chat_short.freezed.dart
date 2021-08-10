@@ -65,7 +65,8 @@ mixin _$ChatShort {
 
 /// @nodoc
 abstract class $ChatShortCopyWith<$Res> {
-  factory $ChatShortCopyWith(ChatShort value, $Res Function(ChatShort) then) = _$ChatShortCopyWithImpl<$Res>;
+  factory $ChatShortCopyWith(ChatShort value, $Res Function(ChatShort) then) =
+      _$ChatShortCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'chat_type') String chatType,
@@ -93,7 +94,8 @@ class _$ChatShortCopyWithImpl<$Res> implements $ChatShortCopyWith<$Res> {
     return _then(_value.copyWith(
       jid: jid == freezed ? _value.jid : jid as String,
       chatType: chatType == freezed ? _value.chatType : chatType as String,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
+      displayName:
+          displayName == freezed ? _value.displayName : displayName as String,
       icons: icons == freezed ? _value.icons : icons as IconData,
     ));
   }
@@ -111,7 +113,9 @@ class _$ChatShortCopyWithImpl<$Res> implements $ChatShortCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$ChatShortCopyWith<$Res> implements $ChatShortCopyWith<$Res> {
-  factory _$ChatShortCopyWith(_ChatShort value, $Res Function(_ChatShort) then) = __$ChatShortCopyWithImpl<$Res>;
+  factory _$ChatShortCopyWith(
+          _ChatShort value, $Res Function(_ChatShort) then) =
+      __$ChatShortCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'jid') String jid,
@@ -124,7 +128,8 @@ abstract class _$ChatShortCopyWith<$Res> implements $ChatShortCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$ChatShortCopyWithImpl<$Res> extends _$ChatShortCopyWithImpl<$Res> implements _$ChatShortCopyWith<$Res> {
+class __$ChatShortCopyWithImpl<$Res> extends _$ChatShortCopyWithImpl<$Res>
+    implements _$ChatShortCopyWith<$Res> {
   __$ChatShortCopyWithImpl(_ChatShort _value, $Res Function(_ChatShort) _then)
       : super(_value, (v) => _then(v as _ChatShort));
 
@@ -141,7 +146,8 @@ class __$ChatShortCopyWithImpl<$Res> extends _$ChatShortCopyWithImpl<$Res> imple
     return _then(_ChatShort(
       jid: jid == freezed ? _value.jid : jid as String,
       chatType: chatType == freezed ? _value.chatType : chatType as String,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
+      displayName:
+          displayName == freezed ? _value.displayName : displayName as String,
       icons: icons == freezed ? _value.icons : icons as IconData,
     ));
   }
@@ -161,7 +167,8 @@ class _$_ChatShort implements _ChatShort {
         assert(displayName != null),
         assert(icons != null);
 
-  factory _$_ChatShort.fromJson(Map<String, dynamic> json) => _$_$_ChatShortFromJson(json);
+  factory _$_ChatShort.fromJson(Map<String, dynamic> json) =>
+      _$_$_ChatShortFromJson(json);
 
   @override
 
@@ -193,11 +200,16 @@ class _$_ChatShort implements _ChatShort {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _ChatShort &&
-            (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
-            (identical(other.chatType, chatType) || const DeepCollectionEquality().equals(other.chatType, chatType)) &&
+            (identical(other.jid, jid) ||
+                const DeepCollectionEquality().equals(other.jid, jid)) &&
+            (identical(other.chatType, chatType) ||
+                const DeepCollectionEquality()
+                    .equals(other.chatType, chatType)) &&
             (identical(other.displayName, displayName) ||
-                const DeepCollectionEquality().equals(other.displayName, displayName)) &&
-            (identical(other.icons, icons) || const DeepCollectionEquality().equals(other.icons, icons)));
+                const DeepCollectionEquality()
+                    .equals(other.displayName, displayName)) &&
+            (identical(other.icons, icons) ||
+                const DeepCollectionEquality().equals(other.icons, icons)));
   }
 
   @override
@@ -210,7 +222,8 @@ class _$_ChatShort implements _ChatShort {
 
   @JsonKey(ignore: true)
   @override
-  _$ChatShortCopyWith<_ChatShort> get copyWith => __$ChatShortCopyWithImpl<_ChatShort>(this, _$identity);
+  _$ChatShortCopyWith<_ChatShort> get copyWith =>
+      __$ChatShortCopyWithImpl<_ChatShort>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -225,7 +238,8 @@ abstract class _ChatShort implements ChatShort {
       @required @JsonKey(name: 'display_name') String displayName,
       @required @JsonKey(name: 'icons') IconData icons}) = _$_ChatShort;
 
-  factory _ChatShort.fromJson(Map<String, dynamic> json) = _$_ChatShort.fromJson;
+  factory _ChatShort.fromJson(Map<String, dynamic> json) =
+      _$_ChatShort.fromJson;
 
   @override
 

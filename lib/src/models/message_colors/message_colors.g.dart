@@ -17,7 +17,8 @@ _$_MessageColors _$_$_MessageColorsFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_MessageColorsToJson(_$_MessageColors instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_MessageColorsToJson(_$_MessageColors instance) =>
+    <String, dynamic>{
       'bubble_sent': instance.bubbleSent,
       'bubble_received': instance.bubbleReceived,
       'bubble_important': instance.bubbleImportant,

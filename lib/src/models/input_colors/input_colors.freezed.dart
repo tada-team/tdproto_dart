@@ -65,7 +65,9 @@ mixin _$InputColors {
 
 /// @nodoc
 abstract class $InputColorsCopyWith<$Res> {
-  factory $InputColorsCopyWith(InputColors value, $Res Function(InputColors) then) = _$InputColorsCopyWithImpl<$Res>;
+  factory $InputColorsCopyWith(
+          InputColors value, $Res Function(InputColors) then) =
+      _$InputColorsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'static') String isStatic,
       @JsonKey(name: 'active') String active,
@@ -98,8 +100,10 @@ class _$InputColorsCopyWithImpl<$Res> implements $InputColorsCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$InputColorsCopyWith<$Res> implements $InputColorsCopyWith<$Res> {
-  factory _$InputColorsCopyWith(_InputColors value, $Res Function(_InputColors) then) =
+abstract class _$InputColorsCopyWith<$Res>
+    implements $InputColorsCopyWith<$Res> {
+  factory _$InputColorsCopyWith(
+          _InputColors value, $Res Function(_InputColors) then) =
       __$InputColorsCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -110,8 +114,10 @@ abstract class _$InputColorsCopyWith<$Res> implements $InputColorsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$InputColorsCopyWithImpl<$Res> extends _$InputColorsCopyWithImpl<$Res> implements _$InputColorsCopyWith<$Res> {
-  __$InputColorsCopyWithImpl(_InputColors _value, $Res Function(_InputColors) _then)
+class __$InputColorsCopyWithImpl<$Res> extends _$InputColorsCopyWithImpl<$Res>
+    implements _$InputColorsCopyWith<$Res> {
+  __$InputColorsCopyWithImpl(
+      _InputColors _value, $Res Function(_InputColors) _then)
       : super(_value, (v) => _then(v as _InputColors));
 
   @override
@@ -147,7 +153,8 @@ class _$_InputColors implements _InputColors {
         assert(disable != null),
         assert(error != null);
 
-  factory _$_InputColors.fromJson(Map<String, dynamic> json) => _$_$_InputColorsFromJson(json);
+  factory _$_InputColors.fromJson(Map<String, dynamic> json) =>
+      _$_$_InputColorsFromJson(json);
 
   @override
 
@@ -179,10 +186,16 @@ class _$_InputColors implements _InputColors {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _InputColors &&
-            (identical(other.isStatic, isStatic) || const DeepCollectionEquality().equals(other.isStatic, isStatic)) &&
-            (identical(other.active, active) || const DeepCollectionEquality().equals(other.active, active)) &&
-            (identical(other.disable, disable) || const DeepCollectionEquality().equals(other.disable, disable)) &&
-            (identical(other.error, error) || const DeepCollectionEquality().equals(other.error, error)));
+            (identical(other.isStatic, isStatic) ||
+                const DeepCollectionEquality()
+                    .equals(other.isStatic, isStatic)) &&
+            (identical(other.active, active) ||
+                const DeepCollectionEquality().equals(other.active, active)) &&
+            (identical(other.disable, disable) ||
+                const DeepCollectionEquality()
+                    .equals(other.disable, disable)) &&
+            (identical(other.error, error) ||
+                const DeepCollectionEquality().equals(other.error, error)));
   }
 
   @override
@@ -195,7 +208,8 @@ class _$_InputColors implements _InputColors {
 
   @JsonKey(ignore: true)
   @override
-  _$InputColorsCopyWith<_InputColors> get copyWith => __$InputColorsCopyWithImpl<_InputColors>(this, _$identity);
+  _$InputColorsCopyWith<_InputColors> get copyWith =>
+      __$InputColorsCopyWithImpl<_InputColors>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -210,7 +224,8 @@ abstract class _InputColors implements InputColors {
       @required @JsonKey(name: 'disable') String disable,
       @required @JsonKey(name: 'error') String error}) = _$_InputColors;
 
-  factory _InputColors.fromJson(Map<String, dynamic> json) = _$_InputColors.fromJson;
+  factory _InputColors.fromJson(Map<String, dynamic> json) =
+      _$_InputColors.fromJson;
 
   @override
 

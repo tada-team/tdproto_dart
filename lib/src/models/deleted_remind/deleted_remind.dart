@@ -10,6 +10,8 @@ abstract class DeletedRemind with _$DeletedRemind {
   const factory DeletedRemind({
     /// Remind id.
     @JsonKey(name: 'uid') @required String uid,
+    
+    
   }) = _DeletedRemind;
 
   factory DeletedRemind.fromJson(Map<String, dynamic> json) => _$DeletedRemindFromJson(json);

@@ -23,7 +23,9 @@ _$_User _$_$_UserFromJson(Map<String, dynamic> json) {
     timezone: json['timezone'] as String,
     quietTimeStart: json['quiet_time_start'] as String,
     quietTimeFinish: json['quiet_time_finish'] as String,
-    icons: json['icons'] == null ? null : IconData.fromJson(json['icons'] as Map<String, dynamic>),
+    icons: json['icons'] == null
+        ? null
+        : IconData.fromJson(json['icons'] as Map<String, dynamic>),
   );
 }
 

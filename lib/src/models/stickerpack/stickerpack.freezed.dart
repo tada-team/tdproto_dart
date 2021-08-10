@@ -77,7 +77,9 @@ mixin _$Stickerpack {
 
 /// @nodoc
 abstract class $StickerpackCopyWith<$Res> {
-  factory $StickerpackCopyWith(Stickerpack value, $Res Function(Stickerpack) then) = _$StickerpackCopyWithImpl<$Res>;
+  factory $StickerpackCopyWith(
+          Stickerpack value, $Res Function(Stickerpack) then) =
+      _$StickerpackCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'name') String name,
@@ -109,15 +111,19 @@ class _$StickerpackCopyWithImpl<$Res> implements $StickerpackCopyWith<$Res> {
       name: name == freezed ? _value.name : name as String,
       title: title == freezed ? _value.title : title as String,
       author: author == freezed ? _value.author : author as String,
-      authorLink: authorLink == freezed ? _value.authorLink : authorLink as String,
-      stickers: stickers == freezed ? _value.stickers : stickers as List<Sticker>,
+      authorLink:
+          authorLink == freezed ? _value.authorLink : authorLink as String,
+      stickers:
+          stickers == freezed ? _value.stickers : stickers as List<Sticker>,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$StickerpackCopyWith<$Res> implements $StickerpackCopyWith<$Res> {
-  factory _$StickerpackCopyWith(_Stickerpack value, $Res Function(_Stickerpack) then) =
+abstract class _$StickerpackCopyWith<$Res>
+    implements $StickerpackCopyWith<$Res> {
+  factory _$StickerpackCopyWith(
+          _Stickerpack value, $Res Function(_Stickerpack) then) =
       __$StickerpackCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -130,8 +136,10 @@ abstract class _$StickerpackCopyWith<$Res> implements $StickerpackCopyWith<$Res>
 }
 
 /// @nodoc
-class __$StickerpackCopyWithImpl<$Res> extends _$StickerpackCopyWithImpl<$Res> implements _$StickerpackCopyWith<$Res> {
-  __$StickerpackCopyWithImpl(_Stickerpack _value, $Res Function(_Stickerpack) _then)
+class __$StickerpackCopyWithImpl<$Res> extends _$StickerpackCopyWithImpl<$Res>
+    implements _$StickerpackCopyWith<$Res> {
+  __$StickerpackCopyWithImpl(
+      _Stickerpack _value, $Res Function(_Stickerpack) _then)
       : super(_value, (v) => _then(v as _Stickerpack));
 
   @override
@@ -151,8 +159,10 @@ class __$StickerpackCopyWithImpl<$Res> extends _$StickerpackCopyWithImpl<$Res> i
       name: name == freezed ? _value.name : name as String,
       title: title == freezed ? _value.title : title as String,
       author: author == freezed ? _value.author : author as String,
-      authorLink: authorLink == freezed ? _value.authorLink : authorLink as String,
-      stickers: stickers == freezed ? _value.stickers : stickers as List<Sticker>,
+      authorLink:
+          authorLink == freezed ? _value.authorLink : authorLink as String,
+      stickers:
+          stickers == freezed ? _value.stickers : stickers as List<Sticker>,
     ));
   }
 }
@@ -173,7 +183,8 @@ class _$_Stickerpack implements _Stickerpack {
         assert(title != null),
         assert(stickers != null);
 
-  factory _$_Stickerpack.fromJson(Map<String, dynamic> json) => _$_$_StickerpackFromJson(json);
+  factory _$_Stickerpack.fromJson(Map<String, dynamic> json) =>
+      _$_$_StickerpackFromJson(json);
 
   @override
 
@@ -215,13 +226,20 @@ class _$_Stickerpack implements _Stickerpack {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Stickerpack &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
-            (identical(other.author, author) || const DeepCollectionEquality().equals(other.author, author)) &&
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
+            (identical(other.title, title) ||
+                const DeepCollectionEquality().equals(other.title, title)) &&
+            (identical(other.author, author) ||
+                const DeepCollectionEquality().equals(other.author, author)) &&
             (identical(other.authorLink, authorLink) ||
-                const DeepCollectionEquality().equals(other.authorLink, authorLink)) &&
-            (identical(other.stickers, stickers) || const DeepCollectionEquality().equals(other.stickers, stickers)));
+                const DeepCollectionEquality()
+                    .equals(other.authorLink, authorLink)) &&
+            (identical(other.stickers, stickers) ||
+                const DeepCollectionEquality()
+                    .equals(other.stickers, stickers)));
   }
 
   @override
@@ -236,7 +254,8 @@ class _$_Stickerpack implements _Stickerpack {
 
   @JsonKey(ignore: true)
   @override
-  _$StickerpackCopyWith<_Stickerpack> get copyWith => __$StickerpackCopyWithImpl<_Stickerpack>(this, _$identity);
+  _$StickerpackCopyWith<_Stickerpack> get copyWith =>
+      __$StickerpackCopyWithImpl<_Stickerpack>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -246,14 +265,16 @@ class _$_Stickerpack implements _Stickerpack {
 
 abstract class _Stickerpack implements Stickerpack {
   const factory _Stickerpack(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'name') String name,
-      @required @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'author') String author,
-      @JsonKey(name: 'author_link') String authorLink,
-      @required @JsonKey(name: 'stickers') List<Sticker> stickers}) = _$_Stickerpack;
+          {@required @JsonKey(name: 'uid') String uid,
+          @required @JsonKey(name: 'name') String name,
+          @required @JsonKey(name: 'title') String title,
+          @JsonKey(name: 'author') String author,
+          @JsonKey(name: 'author_link') String authorLink,
+          @required @JsonKey(name: 'stickers') List<Sticker> stickers}) =
+      _$_Stickerpack;
 
-  factory _Stickerpack.fromJson(Map<String, dynamic> json) = _$_Stickerpack.fromJson;
+  factory _Stickerpack.fromJson(Map<String, dynamic> json) =
+      _$_Stickerpack.fromJson;
 
   @override
 

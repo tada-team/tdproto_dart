@@ -59,7 +59,9 @@ mixin _$TeamUnread {
 
 /// @nodoc
 abstract class $TeamUnreadCopyWith<$Res> {
-  factory $TeamUnreadCopyWith(TeamUnread value, $Res Function(TeamUnread) then) = _$TeamUnreadCopyWithImpl<$Res>;
+  factory $TeamUnreadCopyWith(
+          TeamUnread value, $Res Function(TeamUnread) then) =
+      _$TeamUnreadCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'direct') Unread Direct,
       @JsonKey(name: 'group') Unread Group,
@@ -124,7 +126,9 @@ class _$TeamUnreadCopyWithImpl<$Res> implements $TeamUnreadCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$TeamUnreadCopyWith<$Res> implements $TeamUnreadCopyWith<$Res> {
-  factory _$TeamUnreadCopyWith(_TeamUnread value, $Res Function(_TeamUnread) then) = __$TeamUnreadCopyWithImpl<$Res>;
+  factory _$TeamUnreadCopyWith(
+          _TeamUnread value, $Res Function(_TeamUnread) then) =
+      __$TeamUnreadCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'direct') Unread Direct,
@@ -140,8 +144,10 @@ abstract class _$TeamUnreadCopyWith<$Res> implements $TeamUnreadCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$TeamUnreadCopyWithImpl<$Res> extends _$TeamUnreadCopyWithImpl<$Res> implements _$TeamUnreadCopyWith<$Res> {
-  __$TeamUnreadCopyWithImpl(_TeamUnread _value, $Res Function(_TeamUnread) _then)
+class __$TeamUnreadCopyWithImpl<$Res> extends _$TeamUnreadCopyWithImpl<$Res>
+    implements _$TeamUnreadCopyWith<$Res> {
+  __$TeamUnreadCopyWithImpl(
+      _TeamUnread _value, $Res Function(_TeamUnread) _then)
       : super(_value, (v) => _then(v as _TeamUnread));
 
   @override
@@ -173,7 +179,8 @@ class _$_TeamUnread implements _TeamUnread {
         assert(Group != null),
         assert(Task != null);
 
-  factory _$_TeamUnread.fromJson(Map<String, dynamic> json) => _$_$_TeamUnreadFromJson(json);
+  factory _$_TeamUnread.fromJson(Map<String, dynamic> json) =>
+      _$_$_TeamUnreadFromJson(json);
 
   @override
 
@@ -200,9 +207,12 @@ class _$_TeamUnread implements _TeamUnread {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _TeamUnread &&
-            (identical(other.Direct, Direct) || const DeepCollectionEquality().equals(other.Direct, Direct)) &&
-            (identical(other.Group, Group) || const DeepCollectionEquality().equals(other.Group, Group)) &&
-            (identical(other.Task, Task) || const DeepCollectionEquality().equals(other.Task, Task)));
+            (identical(other.Direct, Direct) ||
+                const DeepCollectionEquality().equals(other.Direct, Direct)) &&
+            (identical(other.Group, Group) ||
+                const DeepCollectionEquality().equals(other.Group, Group)) &&
+            (identical(other.Task, Task) ||
+                const DeepCollectionEquality().equals(other.Task, Task)));
   }
 
   @override
@@ -214,7 +224,8 @@ class _$_TeamUnread implements _TeamUnread {
 
   @JsonKey(ignore: true)
   @override
-  _$TeamUnreadCopyWith<_TeamUnread> get copyWith => __$TeamUnreadCopyWithImpl<_TeamUnread>(this, _$identity);
+  _$TeamUnreadCopyWith<_TeamUnread> get copyWith =>
+      __$TeamUnreadCopyWithImpl<_TeamUnread>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -228,7 +239,8 @@ abstract class _TeamUnread implements TeamUnread {
       @required @JsonKey(name: 'group') Unread Group,
       @required @JsonKey(name: 'taks') Unread Task}) = _$_TeamUnread;
 
-  factory _TeamUnread.fromJson(Map<String, dynamic> json) = _$_TeamUnread.fromJson;
+  factory _TeamUnread.fromJson(Map<String, dynamic> json) =
+      _$_TeamUnread.fromJson;
 
   @override
 

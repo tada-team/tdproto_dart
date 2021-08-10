@@ -17,7 +17,9 @@ class _$OAuthServiceTearOff {
   const _$OAuthServiceTearOff();
 
 // ignore: unused_element
-  _OAuthService call({@required @JsonKey(name: 'name') String name, @required @JsonKey(name: 'url') String url}) {
+  _OAuthService call(
+      {@required @JsonKey(name: 'name') String name,
+      @required @JsonKey(name: 'url') String url}) {
     return _OAuthService(
       name: name,
       url: url,
@@ -51,9 +53,11 @@ mixin _$OAuthService {
 
 /// @nodoc
 abstract class $OAuthServiceCopyWith<$Res> {
-  factory $OAuthServiceCopyWith(OAuthService value, $Res Function(OAuthService) then) =
+  factory $OAuthServiceCopyWith(
+          OAuthService value, $Res Function(OAuthService) then) =
       _$OAuthServiceCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'name') String name, @JsonKey(name: 'url') String url});
+  $Res call(
+      {@JsonKey(name: 'name') String name, @JsonKey(name: 'url') String url});
 }
 
 /// @nodoc
@@ -77,17 +81,21 @@ class _$OAuthServiceCopyWithImpl<$Res> implements $OAuthServiceCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$OAuthServiceCopyWith<$Res> implements $OAuthServiceCopyWith<$Res> {
-  factory _$OAuthServiceCopyWith(_OAuthService value, $Res Function(_OAuthService) then) =
+abstract class _$OAuthServiceCopyWith<$Res>
+    implements $OAuthServiceCopyWith<$Res> {
+  factory _$OAuthServiceCopyWith(
+          _OAuthService value, $Res Function(_OAuthService) then) =
       __$OAuthServiceCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'name') String name, @JsonKey(name: 'url') String url});
+  $Res call(
+      {@JsonKey(name: 'name') String name, @JsonKey(name: 'url') String url});
 }
 
 /// @nodoc
 class __$OAuthServiceCopyWithImpl<$Res> extends _$OAuthServiceCopyWithImpl<$Res>
     implements _$OAuthServiceCopyWith<$Res> {
-  __$OAuthServiceCopyWithImpl(_OAuthService _value, $Res Function(_OAuthService) _then)
+  __$OAuthServiceCopyWithImpl(
+      _OAuthService _value, $Res Function(_OAuthService) _then)
       : super(_value, (v) => _then(v as _OAuthService));
 
   @override
@@ -109,11 +117,14 @@ class __$OAuthServiceCopyWithImpl<$Res> extends _$OAuthServiceCopyWithImpl<$Res>
 
 /// @nodoc
 class _$_OAuthService implements _OAuthService {
-  const _$_OAuthService({@required @JsonKey(name: 'name') this.name, @required @JsonKey(name: 'url') this.url})
+  const _$_OAuthService(
+      {@required @JsonKey(name: 'name') this.name,
+      @required @JsonKey(name: 'url') this.url})
       : assert(name != null),
         assert(url != null);
 
-  factory _$_OAuthService.fromJson(Map<String, dynamic> json) => _$_$_OAuthServiceFromJson(json);
+  factory _$_OAuthService.fromJson(Map<String, dynamic> json) =>
+      _$_$_OAuthServiceFromJson(json);
 
   @override
 
@@ -135,17 +146,22 @@ class _$_OAuthService implements _OAuthService {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _OAuthService &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.url, url) || const DeepCollectionEquality().equals(other.url, url)));
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
+            (identical(other.url, url) ||
+                const DeepCollectionEquality().equals(other.url, url)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(name) ^ const DeepCollectionEquality().hash(url);
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(name) ^
+      const DeepCollectionEquality().hash(url);
 
   @JsonKey(ignore: true)
   @override
-  _$OAuthServiceCopyWith<_OAuthService> get copyWith => __$OAuthServiceCopyWithImpl<_OAuthService>(this, _$identity);
+  _$OAuthServiceCopyWith<_OAuthService> get copyWith =>
+      __$OAuthServiceCopyWithImpl<_OAuthService>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -155,9 +171,11 @@ class _$_OAuthService implements _OAuthService {
 
 abstract class _OAuthService implements OAuthService {
   const factory _OAuthService(
-      {@required @JsonKey(name: 'name') String name, @required @JsonKey(name: 'url') String url}) = _$_OAuthService;
+      {@required @JsonKey(name: 'name') String name,
+      @required @JsonKey(name: 'url') String url}) = _$_OAuthService;
 
-  factory _OAuthService.fromJson(Map<String, dynamic> json) = _$_OAuthService.fromJson;
+  factory _OAuthService.fromJson(Map<String, dynamic> json) =
+      _$_OAuthService.fromJson;
 
   @override
 

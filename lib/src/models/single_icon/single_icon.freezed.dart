@@ -59,8 +59,13 @@ mixin _$SingleIcon {
 
 /// @nodoc
 abstract class $SingleIconCopyWith<$Res> {
-  factory $SingleIconCopyWith(SingleIcon value, $Res Function(SingleIcon) then) = _$SingleIconCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'url') String url, @JsonKey(name: 'width') int width, @JsonKey(name: 'height') int height});
+  factory $SingleIconCopyWith(
+          SingleIcon value, $Res Function(SingleIcon) then) =
+      _$SingleIconCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'url') String url,
+      @JsonKey(name: 'width') int width,
+      @JsonKey(name: 'height') int height});
 }
 
 /// @nodoc
@@ -87,14 +92,21 @@ class _$SingleIconCopyWithImpl<$Res> implements $SingleIconCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$SingleIconCopyWith<$Res> implements $SingleIconCopyWith<$Res> {
-  factory _$SingleIconCopyWith(_SingleIcon value, $Res Function(_SingleIcon) then) = __$SingleIconCopyWithImpl<$Res>;
+  factory _$SingleIconCopyWith(
+          _SingleIcon value, $Res Function(_SingleIcon) then) =
+      __$SingleIconCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'url') String url, @JsonKey(name: 'width') int width, @JsonKey(name: 'height') int height});
+  $Res call(
+      {@JsonKey(name: 'url') String url,
+      @JsonKey(name: 'width') int width,
+      @JsonKey(name: 'height') int height});
 }
 
 /// @nodoc
-class __$SingleIconCopyWithImpl<$Res> extends _$SingleIconCopyWithImpl<$Res> implements _$SingleIconCopyWith<$Res> {
-  __$SingleIconCopyWithImpl(_SingleIcon _value, $Res Function(_SingleIcon) _then)
+class __$SingleIconCopyWithImpl<$Res> extends _$SingleIconCopyWithImpl<$Res>
+    implements _$SingleIconCopyWith<$Res> {
+  __$SingleIconCopyWithImpl(
+      _SingleIcon _value, $Res Function(_SingleIcon) _then)
       : super(_value, (v) => _then(v as _SingleIcon));
 
   @override
@@ -126,7 +138,8 @@ class _$_SingleIcon implements _SingleIcon {
         assert(width != null),
         assert(height != null);
 
-  factory _$_SingleIcon.fromJson(Map<String, dynamic> json) => _$_$_SingleIconFromJson(json);
+  factory _$_SingleIcon.fromJson(Map<String, dynamic> json) =>
+      _$_$_SingleIconFromJson(json);
 
   @override
 
@@ -153,9 +166,12 @@ class _$_SingleIcon implements _SingleIcon {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _SingleIcon &&
-            (identical(other.url, url) || const DeepCollectionEquality().equals(other.url, url)) &&
-            (identical(other.width, width) || const DeepCollectionEquality().equals(other.width, width)) &&
-            (identical(other.height, height) || const DeepCollectionEquality().equals(other.height, height)));
+            (identical(other.url, url) ||
+                const DeepCollectionEquality().equals(other.url, url)) &&
+            (identical(other.width, width) ||
+                const DeepCollectionEquality().equals(other.width, width)) &&
+            (identical(other.height, height) ||
+                const DeepCollectionEquality().equals(other.height, height)));
   }
 
   @override
@@ -167,7 +183,8 @@ class _$_SingleIcon implements _SingleIcon {
 
   @JsonKey(ignore: true)
   @override
-  _$SingleIconCopyWith<_SingleIcon> get copyWith => __$SingleIconCopyWithImpl<_SingleIcon>(this, _$identity);
+  _$SingleIconCopyWith<_SingleIcon> get copyWith =>
+      __$SingleIconCopyWithImpl<_SingleIcon>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -181,7 +198,8 @@ abstract class _SingleIcon implements SingleIcon {
       @required @JsonKey(name: 'width') int width,
       @required @JsonKey(name: 'height') int height}) = _$_SingleIcon;
 
-  factory _SingleIcon.fromJson(Map<String, dynamic> json) = _$_SingleIcon.fromJson;
+  factory _SingleIcon.fromJson(Map<String, dynamic> json) =
+      _$_SingleIcon.fromJson;
 
   @override
 

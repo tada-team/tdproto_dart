@@ -59,7 +59,8 @@ mixin _$IntegrationForm {
 
 /// @nodoc
 abstract class $IntegrationFormCopyWith<$Res> {
-  factory $IntegrationFormCopyWith(IntegrationForm value, $Res Function(IntegrationForm) then) =
+  factory $IntegrationFormCopyWith(
+          IntegrationForm value, $Res Function(IntegrationForm) then) =
       _$IntegrationFormCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'api_key') IntegrationField apiKey,
@@ -72,7 +73,8 @@ abstract class $IntegrationFormCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$IntegrationFormCopyWithImpl<$Res> implements $IntegrationFormCopyWith<$Res> {
+class _$IntegrationFormCopyWithImpl<$Res>
+    implements $IntegrationFormCopyWith<$Res> {
   _$IntegrationFormCopyWithImpl(this._value, this._then);
 
   final IntegrationForm _value;
@@ -87,7 +89,9 @@ class _$IntegrationFormCopyWithImpl<$Res> implements $IntegrationFormCopyWith<$R
   }) {
     return _then(_value.copyWith(
       apiKey: apiKey == freezed ? _value.apiKey : apiKey as IntegrationField,
-      webhookUrl: webhookUrl == freezed ? _value.webhookUrl : webhookUrl as IntegrationField,
+      webhookUrl: webhookUrl == freezed
+          ? _value.webhookUrl
+          : webhookUrl as IntegrationField,
       url: url == freezed ? _value.url : url as IntegrationField,
     ));
   }
@@ -124,8 +128,10 @@ class _$IntegrationFormCopyWithImpl<$Res> implements $IntegrationFormCopyWith<$R
 }
 
 /// @nodoc
-abstract class _$IntegrationFormCopyWith<$Res> implements $IntegrationFormCopyWith<$Res> {
-  factory _$IntegrationFormCopyWith(_IntegrationForm value, $Res Function(_IntegrationForm) then) =
+abstract class _$IntegrationFormCopyWith<$Res>
+    implements $IntegrationFormCopyWith<$Res> {
+  factory _$IntegrationFormCopyWith(
+          _IntegrationForm value, $Res Function(_IntegrationForm) then) =
       __$IntegrationFormCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -142,9 +148,11 @@ abstract class _$IntegrationFormCopyWith<$Res> implements $IntegrationFormCopyWi
 }
 
 /// @nodoc
-class __$IntegrationFormCopyWithImpl<$Res> extends _$IntegrationFormCopyWithImpl<$Res>
+class __$IntegrationFormCopyWithImpl<$Res>
+    extends _$IntegrationFormCopyWithImpl<$Res>
     implements _$IntegrationFormCopyWith<$Res> {
-  __$IntegrationFormCopyWithImpl(_IntegrationForm _value, $Res Function(_IntegrationForm) _then)
+  __$IntegrationFormCopyWithImpl(
+      _IntegrationForm _value, $Res Function(_IntegrationForm) _then)
       : super(_value, (v) => _then(v as _IntegrationForm));
 
   @override
@@ -158,7 +166,9 @@ class __$IntegrationFormCopyWithImpl<$Res> extends _$IntegrationFormCopyWithImpl
   }) {
     return _then(_IntegrationForm(
       apiKey: apiKey == freezed ? _value.apiKey : apiKey as IntegrationField,
-      webhookUrl: webhookUrl == freezed ? _value.webhookUrl : webhookUrl as IntegrationField,
+      webhookUrl: webhookUrl == freezed
+          ? _value.webhookUrl
+          : webhookUrl as IntegrationField,
       url: url == freezed ? _value.url : url as IntegrationField,
     ));
   }
@@ -173,7 +183,8 @@ class _$_IntegrationForm implements _IntegrationForm {
       @JsonKey(name: 'webhook_url') this.webhookUrl,
       @JsonKey(name: 'url') this.url});
 
-  factory _$_IntegrationForm.fromJson(Map<String, dynamic> json) => _$_$_IntegrationFormFromJson(json);
+  factory _$_IntegrationForm.fromJson(Map<String, dynamic> json) =>
+      _$_$_IntegrationFormFromJson(json);
 
   @override
 
@@ -200,10 +211,13 @@ class _$_IntegrationForm implements _IntegrationForm {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _IntegrationForm &&
-            (identical(other.apiKey, apiKey) || const DeepCollectionEquality().equals(other.apiKey, apiKey)) &&
+            (identical(other.apiKey, apiKey) ||
+                const DeepCollectionEquality().equals(other.apiKey, apiKey)) &&
             (identical(other.webhookUrl, webhookUrl) ||
-                const DeepCollectionEquality().equals(other.webhookUrl, webhookUrl)) &&
-            (identical(other.url, url) || const DeepCollectionEquality().equals(other.url, url)));
+                const DeepCollectionEquality()
+                    .equals(other.webhookUrl, webhookUrl)) &&
+            (identical(other.url, url) ||
+                const DeepCollectionEquality().equals(other.url, url)));
   }
 
   @override
@@ -230,7 +244,8 @@ abstract class _IntegrationForm implements IntegrationForm {
       @JsonKey(name: 'webhook_url') IntegrationField webhookUrl,
       @JsonKey(name: 'url') IntegrationField url}) = _$_IntegrationForm;
 
-  factory _IntegrationForm.fromJson(Map<String, dynamic> json) = _$_IntegrationForm.fromJson;
+  factory _IntegrationForm.fromJson(Map<String, dynamic> json) =
+      _$_IntegrationForm.fromJson;
 
   @override
 

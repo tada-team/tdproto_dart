@@ -8,7 +8,8 @@ part of 'message_reaction_detail.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
-MessageReactionDetail _$MessageReactionDetailFromJson(Map<String, dynamic> json) {
+MessageReactionDetail _$MessageReactionDetailFromJson(
+    Map<String, dynamic> json) {
   return _MessageReactionDetail.fromJson(json);
 }
 
@@ -18,9 +19,16 @@ class _$MessageReactionDetailTearOff {
 
 // ignore: unused_element
   _MessageReactionDetail call(
-      {@required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @required @JsonKey(name: 'sender') String sender,
-      @required @JsonKey(name: 'name') String name}) {
+      {@required
+      @JsonKey(name: 'created')
+      @DateTimeConverter()
+          DateTime created,
+      @required
+      @JsonKey(name: 'sender')
+          String sender,
+      @required
+      @JsonKey(name: 'name')
+          String name}) {
     return _MessageReactionDetail(
       created: created,
       sender: sender,
@@ -60,7 +68,8 @@ mixin _$MessageReactionDetail {
 
 /// @nodoc
 abstract class $MessageReactionDetailCopyWith<$Res> {
-  factory $MessageReactionDetailCopyWith(MessageReactionDetail value, $Res Function(MessageReactionDetail) then) =
+  factory $MessageReactionDetailCopyWith(MessageReactionDetail value,
+          $Res Function(MessageReactionDetail) then) =
       _$MessageReactionDetailCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'created') @DateTimeConverter() DateTime created,
@@ -69,7 +78,8 @@ abstract class $MessageReactionDetailCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MessageReactionDetailCopyWithImpl<$Res> implements $MessageReactionDetailCopyWith<$Res> {
+class _$MessageReactionDetailCopyWithImpl<$Res>
+    implements $MessageReactionDetailCopyWith<$Res> {
   _$MessageReactionDetailCopyWithImpl(this._value, this._then);
 
   final MessageReactionDetail _value;
@@ -91,8 +101,10 @@ class _$MessageReactionDetailCopyWithImpl<$Res> implements $MessageReactionDetai
 }
 
 /// @nodoc
-abstract class _$MessageReactionDetailCopyWith<$Res> implements $MessageReactionDetailCopyWith<$Res> {
-  factory _$MessageReactionDetailCopyWith(_MessageReactionDetail value, $Res Function(_MessageReactionDetail) then) =
+abstract class _$MessageReactionDetailCopyWith<$Res>
+    implements $MessageReactionDetailCopyWith<$Res> {
+  factory _$MessageReactionDetailCopyWith(_MessageReactionDetail value,
+          $Res Function(_MessageReactionDetail) then) =
       __$MessageReactionDetailCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -102,9 +114,11 @@ abstract class _$MessageReactionDetailCopyWith<$Res> implements $MessageReaction
 }
 
 /// @nodoc
-class __$MessageReactionDetailCopyWithImpl<$Res> extends _$MessageReactionDetailCopyWithImpl<$Res>
+class __$MessageReactionDetailCopyWithImpl<$Res>
+    extends _$MessageReactionDetailCopyWithImpl<$Res>
     implements _$MessageReactionDetailCopyWith<$Res> {
-  __$MessageReactionDetailCopyWithImpl(_MessageReactionDetail _value, $Res Function(_MessageReactionDetail) _then)
+  __$MessageReactionDetailCopyWithImpl(_MessageReactionDetail _value,
+      $Res Function(_MessageReactionDetail) _then)
       : super(_value, (v) => _then(v as _MessageReactionDetail));
 
   @override
@@ -136,7 +150,8 @@ class _$_MessageReactionDetail implements _MessageReactionDetail {
         assert(sender != null),
         assert(name != null);
 
-  factory _$_MessageReactionDetail.fromJson(Map<String, dynamic> json) => _$_$_MessageReactionDetailFromJson(json);
+  factory _$_MessageReactionDetail.fromJson(Map<String, dynamic> json) =>
+      _$_$_MessageReactionDetailFromJson(json);
 
   @override
 
@@ -164,9 +179,13 @@ class _$_MessageReactionDetail implements _MessageReactionDetail {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _MessageReactionDetail &&
-            (identical(other.created, created) || const DeepCollectionEquality().equals(other.created, created)) &&
-            (identical(other.sender, sender) || const DeepCollectionEquality().equals(other.sender, sender)) &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)));
+            (identical(other.created, created) ||
+                const DeepCollectionEquality()
+                    .equals(other.created, created)) &&
+            (identical(other.sender, sender) ||
+                const DeepCollectionEquality().equals(other.sender, sender)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)));
   }
 
   @override
@@ -179,7 +198,8 @@ class _$_MessageReactionDetail implements _MessageReactionDetail {
   @JsonKey(ignore: true)
   @override
   _$MessageReactionDetailCopyWith<_MessageReactionDetail> get copyWith =>
-      __$MessageReactionDetailCopyWithImpl<_MessageReactionDetail>(this, _$identity);
+      __$MessageReactionDetailCopyWithImpl<_MessageReactionDetail>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -189,11 +209,19 @@ class _$_MessageReactionDetail implements _MessageReactionDetail {
 
 abstract class _MessageReactionDetail implements MessageReactionDetail {
   const factory _MessageReactionDetail(
-      {@required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @required @JsonKey(name: 'sender') String sender,
-      @required @JsonKey(name: 'name') String name}) = _$_MessageReactionDetail;
+      {@required
+      @JsonKey(name: 'created')
+      @DateTimeConverter()
+          DateTime created,
+      @required
+      @JsonKey(name: 'sender')
+          String sender,
+      @required
+      @JsonKey(name: 'name')
+          String name}) = _$_MessageReactionDetail;
 
-  factory _MessageReactionDetail.fromJson(Map<String, dynamic> json) = _$_MessageReactionDetail.fromJson;
+  factory _MessageReactionDetail.fromJson(Map<String, dynamic> json) =
+      _$_MessageReactionDetail.fromJson;
 
   @override
 

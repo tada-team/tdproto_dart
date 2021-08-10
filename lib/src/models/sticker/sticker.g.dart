@@ -15,11 +15,13 @@ _$_Sticker _$_$_StickerFromJson(Map<String, dynamic> json) {
     icon200: json['icon200'] as String,
     messageContent: json['message_content'] == null
         ? null
-        : MessageContent.fromJson(json['message_content'] as Map<String, dynamic>),
+        : MessageContent.fromJson(
+            json['message_content'] as Map<String, dynamic>),
   );
 }
 
-Map<String, dynamic> _$_$_StickerToJson(_$_Sticker instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_StickerToJson(_$_Sticker instance) =>
+    <String, dynamic>{
       'uid': instance.uid,
       'icon64': instance.icon64,
       'icon100': instance.icon100,

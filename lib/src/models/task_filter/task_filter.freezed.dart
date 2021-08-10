@@ -17,7 +17,9 @@ class _$TaskFilterTearOff {
   const _$TaskFilterTearOff();
 
 // ignore: unused_element
-  _TaskFilter call({@required @JsonKey(name: 'field') String field, @required @JsonKey(name: 'title') String title}) {
+  _TaskFilter call(
+      {@required @JsonKey(name: 'field') String field,
+      @required @JsonKey(name: 'title') String title}) {
     return _TaskFilter(
       field: field,
       title: title,
@@ -51,8 +53,12 @@ mixin _$TaskFilter {
 
 /// @nodoc
 abstract class $TaskFilterCopyWith<$Res> {
-  factory $TaskFilterCopyWith(TaskFilter value, $Res Function(TaskFilter) then) = _$TaskFilterCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'field') String field, @JsonKey(name: 'title') String title});
+  factory $TaskFilterCopyWith(
+          TaskFilter value, $Res Function(TaskFilter) then) =
+      _$TaskFilterCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'field') String field,
+      @JsonKey(name: 'title') String title});
 }
 
 /// @nodoc
@@ -77,14 +83,20 @@ class _$TaskFilterCopyWithImpl<$Res> implements $TaskFilterCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$TaskFilterCopyWith<$Res> implements $TaskFilterCopyWith<$Res> {
-  factory _$TaskFilterCopyWith(_TaskFilter value, $Res Function(_TaskFilter) then) = __$TaskFilterCopyWithImpl<$Res>;
+  factory _$TaskFilterCopyWith(
+          _TaskFilter value, $Res Function(_TaskFilter) then) =
+      __$TaskFilterCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'field') String field, @JsonKey(name: 'title') String title});
+  $Res call(
+      {@JsonKey(name: 'field') String field,
+      @JsonKey(name: 'title') String title});
 }
 
 /// @nodoc
-class __$TaskFilterCopyWithImpl<$Res> extends _$TaskFilterCopyWithImpl<$Res> implements _$TaskFilterCopyWith<$Res> {
-  __$TaskFilterCopyWithImpl(_TaskFilter _value, $Res Function(_TaskFilter) _then)
+class __$TaskFilterCopyWithImpl<$Res> extends _$TaskFilterCopyWithImpl<$Res>
+    implements _$TaskFilterCopyWith<$Res> {
+  __$TaskFilterCopyWithImpl(
+      _TaskFilter _value, $Res Function(_TaskFilter) _then)
       : super(_value, (v) => _then(v as _TaskFilter));
 
   @override
@@ -106,11 +118,14 @@ class __$TaskFilterCopyWithImpl<$Res> extends _$TaskFilterCopyWithImpl<$Res> imp
 
 /// @nodoc
 class _$_TaskFilter implements _TaskFilter {
-  const _$_TaskFilter({@required @JsonKey(name: 'field') this.field, @required @JsonKey(name: 'title') this.title})
+  const _$_TaskFilter(
+      {@required @JsonKey(name: 'field') this.field,
+      @required @JsonKey(name: 'title') this.title})
       : assert(field != null),
         assert(title != null);
 
-  factory _$_TaskFilter.fromJson(Map<String, dynamic> json) => _$_$_TaskFilterFromJson(json);
+  factory _$_TaskFilter.fromJson(Map<String, dynamic> json) =>
+      _$_$_TaskFilterFromJson(json);
 
   @override
 
@@ -132,17 +147,22 @@ class _$_TaskFilter implements _TaskFilter {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _TaskFilter &&
-            (identical(other.field, field) || const DeepCollectionEquality().equals(other.field, field)) &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)));
+            (identical(other.field, field) ||
+                const DeepCollectionEquality().equals(other.field, field)) &&
+            (identical(other.title, title) ||
+                const DeepCollectionEquality().equals(other.title, title)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(field) ^ const DeepCollectionEquality().hash(title);
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(field) ^
+      const DeepCollectionEquality().hash(title);
 
   @JsonKey(ignore: true)
   @override
-  _$TaskFilterCopyWith<_TaskFilter> get copyWith => __$TaskFilterCopyWithImpl<_TaskFilter>(this, _$identity);
+  _$TaskFilterCopyWith<_TaskFilter> get copyWith =>
+      __$TaskFilterCopyWithImpl<_TaskFilter>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -152,9 +172,11 @@ class _$_TaskFilter implements _TaskFilter {
 
 abstract class _TaskFilter implements TaskFilter {
   const factory _TaskFilter(
-      {@required @JsonKey(name: 'field') String field, @required @JsonKey(name: 'title') String title}) = _$_TaskFilter;
+      {@required @JsonKey(name: 'field') String field,
+      @required @JsonKey(name: 'title') String title}) = _$_TaskFilter;
 
-  factory _TaskFilter.fromJson(Map<String, dynamic> json) = _$_TaskFilter.fromJson;
+  factory _TaskFilter.fromJson(Map<String, dynamic> json) =
+      _$_TaskFilter.fromJson;
 
   @override
 

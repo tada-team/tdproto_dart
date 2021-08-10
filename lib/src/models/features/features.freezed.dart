@@ -18,91 +18,253 @@ class _$FeaturesTearOff {
 
 // ignore: unused_element
   _Features call(
-      {@required @JsonKey(name: 'host') String host,
-      @required @JsonKey(name: 'build') String build,
-      @required @JsonKey(name: 'desktop_version') String desktopVersion,
-      @required @JsonKey(name: 'front_version') String frontVersion,
-      @required @JsonKey(name: 'app_title') String appTitle,
-      @JsonKey(name: 'landing_url') String landingUrl,
-      @required @JsonKey(name: 'app_schemes') List<String> appSchemes,
-      @required @JsonKey(name: 'userver') String userver,
-      @required @JsonKey(name: 'ios_app') String iOSApp,
-      @required @JsonKey(name: 'android_app') String androidApp,
-      @required @JsonKey(name: 'ios_corp_app') String iOSCorpApp,
-      @required @JsonKey(name: 'android_corp_app') String androidCorpApp,
-      @required @JsonKey(name: 'theme') String theme,
-      @required @JsonKey(name: 'min_ios_version') String minIOSVersion,
-      @required @JsonKey(name: 'min_android_version') String minAndroidVersion,
-      @required @JsonKey(name: 'min_corp_ios_version') String minCorpIOSVersion,
-      @required @JsonKey(name: 'min_corp_android_version') String minCorpAndroidVersion,
-      @required @JsonKey(name: 'free_registration') bool freeRegistration,
-      @required @JsonKey(name: 'max_upload_mb') int maxUploadMb,
-      @required @JsonKey(name: 'max_linked_messages') int maxLinkedMessages,
-      @required @JsonKey(name: 'max_message_uploads') int maxMessageUploads,
-      @required @JsonKey(name: 'max_username_part_length') int maxUsernamePartLength,
-      @required @JsonKey(name: 'max_group_title_length') int maxGroupTitleLength,
-      @required @JsonKey(name: 'max_role_length') int maxRoleLength,
-      @required @JsonKey(name: 'max_mood_length') int maxMoodLength,
-      @required @JsonKey(name: 'max_message_length') int maxMessageLength,
-      @required @JsonKey(name: 'max_section_length') int maxSectionLength,
-      @required @JsonKey(name: 'max_project_length') int maxProjectLength,
-      @required @JsonKey(name: 'max_tag_length') int maxTagLength,
-      @required @JsonKey(name: 'max_task_title_length') int maxTaskTitleLength,
-      @required @JsonKey(name: 'max_color_rule_description_length') int maxColorRuleDescriptionLength,
-      @required @JsonKey(name: 'max_url_length') int maxUrlLength,
-      @required @JsonKey(name: 'max_integration_comment_length') int maxIntegrationCommentLength,
-      @required @JsonKey(name: 'max_teams') int maxTeams,
-      @required @JsonKey(name: 'max_message_search_limit') int maxMessageSearchLimit,
-      @JsonKey(name: 'multi_nodes') bool multiNodes,
-      @required @JsonKey(name: 'afk_age') int afkAge,
-      @JsonKey(name: 'auth_by_password') bool authByPassword,
-      @JsonKey(name: 'auth_by_qr_code') bool authByQrCode,
-      @JsonKey(name: 'auth_by_sms') bool authBySms,
-      @JsonKey(name: 'auth_2fa') bool auth2fa,
-      @JsonKey(name: 'oauth_services') List<OAuthService> oAuthServices,
-      @required @JsonKey(name: 'ice_servers') List<ICEServer> iCEServers,
-      @required @JsonKey(name: 'custom_server') bool customServer,
-      @required @JsonKey(name: 'installation_type') String installationType,
-      @JsonKey(name: 'installation_title') String installationTitle,
-      @JsonKey(name: 'custom_app_icon_name') String customAppIconName,
-      @JsonKey(name: 'app_login_background') String appLoginBackground,
-      @JsonKey(name: 'web_login_background') String webLoginBackground,
-      @required @JsonKey(name: 'is_testing') bool isTesting,
-      @required @JsonKey(name: 'metrika') String metrika,
-      @JsonKey(name: 'amplitude_api_key') String amplitudeApiKey,
-      @required @JsonKey(name: 'min_search_length') int minSearchLength,
-      @required @JsonKey(name: 'resend_timeout') int resendTimeout,
-      @required @JsonKey(name: 'sentry_dsn_js') String sentryDsnJS,
-      @required @JsonKey(name: 'server_drafts') bool serverDrafts,
-      @required @JsonKey(name: 'firebase_app_id') String firebaseAppId,
-      @required @JsonKey(name: 'firebase_sender_id') String firebaseSenderId,
-      @required @JsonKey(name: 'firebase_api_key') String firebaseApiKey,
-      @required @JsonKey(name: 'firebase_auth_domain') String firebaseAuthDomain,
-      @required @JsonKey(name: 'firebase_database_url') String firebaseDatabaseUrl,
-      @required @JsonKey(name: 'firebase_project_id') String firebaseProjectId,
-      @required @JsonKey(name: 'firebase_storage_bucket') String firebaseStorageBucket,
-      @required @JsonKey(name: 'calls_version') int callsVersion,
-      @required @JsonKey(name: 'mobile_calls') bool mobileCalls,
-      @required @JsonKey(name: 'calls_record') bool callsRecord,
-      @JsonKey(name: 'only_one_device_per_call') bool onlyOneDevicePerCall,
-      @JsonKey(name: 'max_participants_per_call') int maxParticipantsPerCall,
-      @required @JsonKey(name: 'safari_push_id') String safariPushId,
-      @required @JsonKey(name: 'message_uploads') bool messageUploads,
-      @required @JsonKey(name: 'terms') Terms terms,
-      @required @JsonKey(name: 'single_group_teams') bool singleGroupTeams,
-      @required @JsonKey(name: 'wiki_pages') bool wikiPages,
-      @JsonKey(name: 'allow_admin_mute') bool allowAdminMute,
-      @JsonKey(name: 'default_wallpaper') Wallpaper defaultWallpaper,
-      @required @JsonKey(name: 'support_email') String supportEmail,
-      @required @JsonKey(name: 'custom_theme') bool customTheme,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_checklist') bool taskChecklist,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'readonly_groups') bool readonlyGroups,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_dashboard') bool taskDashboard,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_messages') bool taskMessages,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_public') bool taskPublic,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') bool taskTags,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'calls') bool calls,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion}) {
+      {@required
+      @JsonKey(name: 'host')
+          String host,
+      @required
+      @JsonKey(name: 'build')
+          String build,
+      @required
+      @JsonKey(name: 'desktop_version')
+          String desktopVersion,
+      @required
+      @JsonKey(name: 'front_version')
+          String frontVersion,
+      @required
+      @JsonKey(name: 'app_title')
+          String appTitle,
+      @JsonKey(name: 'landing_url')
+          String landingUrl,
+      @required
+      @JsonKey(name: 'app_schemes')
+          List<String> appSchemes,
+      @required
+      @JsonKey(name: 'userver')
+          String userver,
+      @required
+      @JsonKey(name: 'ios_app')
+          String iOSApp,
+      @required
+      @JsonKey(name: 'android_app')
+          String androidApp,
+      @required
+      @JsonKey(name: 'ios_corp_app')
+          String iOSCorpApp,
+      @required
+      @JsonKey(name: 'android_corp_app')
+          String androidCorpApp,
+      @required
+      @JsonKey(name: 'theme')
+          String theme,
+      @required
+      @JsonKey(name: 'min_ios_version')
+          String minIOSVersion,
+      @required
+      @JsonKey(name: 'min_android_version')
+          String minAndroidVersion,
+      @required
+      @JsonKey(name: 'min_corp_ios_version')
+          String minCorpIOSVersion,
+      @required
+      @JsonKey(name: 'min_corp_android_version')
+          String minCorpAndroidVersion,
+      @required
+      @JsonKey(name: 'free_registration')
+          bool freeRegistration,
+      @required
+      @JsonKey(name: 'max_upload_mb')
+          int maxUploadMb,
+      @required
+      @JsonKey(name: 'max_linked_messages')
+          int maxLinkedMessages,
+      @required
+      @JsonKey(name: 'max_message_uploads')
+          int maxMessageUploads,
+      @required
+      @JsonKey(name: 'max_username_part_length')
+          int maxUsernamePartLength,
+      @required
+      @JsonKey(name: 'max_group_title_length')
+          int maxGroupTitleLength,
+      @required
+      @JsonKey(name: 'max_role_length')
+          int maxRoleLength,
+      @required
+      @JsonKey(name: 'max_mood_length')
+          int maxMoodLength,
+      @required
+      @JsonKey(name: 'max_message_length')
+          int maxMessageLength,
+      @required
+      @JsonKey(name: 'max_section_length')
+          int maxSectionLength,
+      @required
+      @JsonKey(name: 'max_project_length')
+          int maxProjectLength,
+      @required
+      @JsonKey(name: 'max_tag_length')
+          int maxTagLength,
+      @required
+      @JsonKey(name: 'max_task_title_length')
+          int maxTaskTitleLength,
+      @required
+      @JsonKey(name: 'max_color_rule_description_length')
+          int maxColorRuleDescriptionLength,
+      @required
+      @JsonKey(name: 'max_url_length')
+          int maxUrlLength,
+      @required
+      @JsonKey(name: 'max_integration_comment_length')
+          int maxIntegrationCommentLength,
+      @required
+      @JsonKey(name: 'max_teams')
+          int maxTeams,
+      @required
+      @JsonKey(name: 'max_message_search_limit')
+          int maxMessageSearchLimit,
+      @JsonKey(name: 'multi_nodes')
+          bool multiNodes,
+      @required
+      @JsonKey(name: 'afk_age')
+          int afkAge,
+      @JsonKey(name: 'auth_by_password')
+          bool authByPassword,
+      @JsonKey(name: 'auth_by_qr_code')
+          bool authByQrCode,
+      @JsonKey(name: 'auth_by_sms')
+          bool authBySms,
+      @JsonKey(name: 'auth_2fa')
+          bool auth2fa,
+      @JsonKey(name: 'oauth_services')
+          List<OAuthService> oAuthServices,
+      @required
+      @JsonKey(name: 'ice_servers')
+          List<ICEServer> iCEServers,
+      @required
+      @JsonKey(name: 'custom_server')
+          bool customServer,
+      @required
+      @JsonKey(name: 'installation_type')
+          String installationType,
+      @JsonKey(name: 'installation_title')
+          String installationTitle,
+      @JsonKey(name: 'custom_app_icon_name')
+          String customAppIconName,
+      @JsonKey(name: 'app_login_background')
+          String appLoginBackground,
+      @JsonKey(name: 'web_login_background')
+          String webLoginBackground,
+      @required
+      @JsonKey(name: 'is_testing')
+          bool isTesting,
+      @required
+      @JsonKey(name: 'metrika')
+          String metrika,
+      @JsonKey(name: 'amplitude_api_key')
+          String amplitudeApiKey,
+      @required
+      @JsonKey(name: 'min_search_length')
+          int minSearchLength,
+      @required
+      @JsonKey(name: 'resend_timeout')
+          int resendTimeout,
+      @required
+      @JsonKey(name: 'sentry_dsn_js')
+          String sentryDsnJS,
+      @required
+      @JsonKey(name: 'server_drafts')
+          bool serverDrafts,
+      @required
+      @JsonKey(name: 'firebase_app_id')
+          String firebaseAppId,
+      @required
+      @JsonKey(name: 'firebase_sender_id')
+          String firebaseSenderId,
+      @required
+      @JsonKey(name: 'firebase_api_key')
+          String firebaseApiKey,
+      @required
+      @JsonKey(name: 'firebase_auth_domain')
+          String firebaseAuthDomain,
+      @required
+      @JsonKey(name: 'firebase_database_url')
+          String firebaseDatabaseUrl,
+      @required
+      @JsonKey(name: 'firebase_project_id')
+          String firebaseProjectId,
+      @required
+      @JsonKey(name: 'firebase_storage_bucket')
+          String firebaseStorageBucket,
+      @required
+      @JsonKey(name: 'calls_version')
+          int callsVersion,
+      @required
+      @JsonKey(name: 'mobile_calls')
+          bool mobileCalls,
+      @required
+      @JsonKey(name: 'calls_record')
+          bool callsRecord,
+      @JsonKey(name: 'only_one_device_per_call')
+          bool onlyOneDevicePerCall,
+      @JsonKey(name: 'max_participants_per_call')
+          int maxParticipantsPerCall,
+      @required
+      @JsonKey(name: 'safari_push_id')
+          String safariPushId,
+      @required
+      @JsonKey(name: 'message_uploads')
+          bool messageUploads,
+      @required
+      @JsonKey(name: 'terms')
+          Terms terms,
+      @required
+      @JsonKey(name: 'single_group_teams')
+          bool singleGroupTeams,
+      @required
+      @JsonKey(name: 'wiki_pages')
+          bool wikiPages,
+      @JsonKey(name: 'allow_admin_mute')
+          bool allowAdminMute,
+      @JsonKey(name: 'default_wallpaper')
+          Wallpaper defaultWallpaper,
+      @required
+      @JsonKey(name: 'support_email')
+          String supportEmail,
+      @required
+      @JsonKey(name: 'custom_theme')
+          bool customTheme,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_checklist')
+          bool taskChecklist,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'readonly_groups')
+          bool readonlyGroups,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_dashboard')
+          bool taskDashboard,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_messages')
+          bool taskMessages,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_public')
+          bool taskPublic,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_tags')
+          bool taskTags,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'calls')
+          bool calls,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'min_app_version')
+          String minAppVersion}) {
     return _Features(
       host: host,
       build: build,
@@ -559,93 +721,187 @@ mixin _$Features {
 
 /// @nodoc
 abstract class $FeaturesCopyWith<$Res> {
-  factory $FeaturesCopyWith(Features value, $Res Function(Features) then) = _$FeaturesCopyWithImpl<$Res>;
+  factory $FeaturesCopyWith(Features value, $Res Function(Features) then) =
+      _$FeaturesCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'host') String host,
-      @JsonKey(name: 'build') String build,
-      @JsonKey(name: 'desktop_version') String desktopVersion,
-      @JsonKey(name: 'front_version') String frontVersion,
-      @JsonKey(name: 'app_title') String appTitle,
-      @JsonKey(name: 'landing_url') String landingUrl,
-      @JsonKey(name: 'app_schemes') List<String> appSchemes,
-      @JsonKey(name: 'userver') String userver,
-      @JsonKey(name: 'ios_app') String iOSApp,
-      @JsonKey(name: 'android_app') String androidApp,
-      @JsonKey(name: 'ios_corp_app') String iOSCorpApp,
-      @JsonKey(name: 'android_corp_app') String androidCorpApp,
-      @JsonKey(name: 'theme') String theme,
-      @JsonKey(name: 'min_ios_version') String minIOSVersion,
-      @JsonKey(name: 'min_android_version') String minAndroidVersion,
-      @JsonKey(name: 'min_corp_ios_version') String minCorpIOSVersion,
-      @JsonKey(name: 'min_corp_android_version') String minCorpAndroidVersion,
-      @JsonKey(name: 'free_registration') bool freeRegistration,
-      @JsonKey(name: 'max_upload_mb') int maxUploadMb,
-      @JsonKey(name: 'max_linked_messages') int maxLinkedMessages,
-      @JsonKey(name: 'max_message_uploads') int maxMessageUploads,
-      @JsonKey(name: 'max_username_part_length') int maxUsernamePartLength,
-      @JsonKey(name: 'max_group_title_length') int maxGroupTitleLength,
-      @JsonKey(name: 'max_role_length') int maxRoleLength,
-      @JsonKey(name: 'max_mood_length') int maxMoodLength,
-      @JsonKey(name: 'max_message_length') int maxMessageLength,
-      @JsonKey(name: 'max_section_length') int maxSectionLength,
-      @JsonKey(name: 'max_project_length') int maxProjectLength,
-      @JsonKey(name: 'max_tag_length') int maxTagLength,
-      @JsonKey(name: 'max_task_title_length') int maxTaskTitleLength,
-      @JsonKey(name: 'max_color_rule_description_length') int maxColorRuleDescriptionLength,
-      @JsonKey(name: 'max_url_length') int maxUrlLength,
-      @JsonKey(name: 'max_integration_comment_length') int maxIntegrationCommentLength,
-      @JsonKey(name: 'max_teams') int maxTeams,
-      @JsonKey(name: 'max_message_search_limit') int maxMessageSearchLimit,
-      @JsonKey(name: 'multi_nodes') bool multiNodes,
-      @JsonKey(name: 'afk_age') int afkAge,
-      @JsonKey(name: 'auth_by_password') bool authByPassword,
-      @JsonKey(name: 'auth_by_qr_code') bool authByQrCode,
-      @JsonKey(name: 'auth_by_sms') bool authBySms,
-      @JsonKey(name: 'auth_2fa') bool auth2fa,
-      @JsonKey(name: 'oauth_services') List<OAuthService> oAuthServices,
-      @JsonKey(name: 'ice_servers') List<ICEServer> iCEServers,
-      @JsonKey(name: 'custom_server') bool customServer,
-      @JsonKey(name: 'installation_type') String installationType,
-      @JsonKey(name: 'installation_title') String installationTitle,
-      @JsonKey(name: 'custom_app_icon_name') String customAppIconName,
-      @JsonKey(name: 'app_login_background') String appLoginBackground,
-      @JsonKey(name: 'web_login_background') String webLoginBackground,
-      @JsonKey(name: 'is_testing') bool isTesting,
-      @JsonKey(name: 'metrika') String metrika,
-      @JsonKey(name: 'amplitude_api_key') String amplitudeApiKey,
-      @JsonKey(name: 'min_search_length') int minSearchLength,
-      @JsonKey(name: 'resend_timeout') int resendTimeout,
-      @JsonKey(name: 'sentry_dsn_js') String sentryDsnJS,
-      @JsonKey(name: 'server_drafts') bool serverDrafts,
-      @JsonKey(name: 'firebase_app_id') String firebaseAppId,
-      @JsonKey(name: 'firebase_sender_id') String firebaseSenderId,
-      @JsonKey(name: 'firebase_api_key') String firebaseApiKey,
-      @JsonKey(name: 'firebase_auth_domain') String firebaseAuthDomain,
-      @JsonKey(name: 'firebase_database_url') String firebaseDatabaseUrl,
-      @JsonKey(name: 'firebase_project_id') String firebaseProjectId,
-      @JsonKey(name: 'firebase_storage_bucket') String firebaseStorageBucket,
-      @JsonKey(name: 'calls_version') int callsVersion,
-      @JsonKey(name: 'mobile_calls') bool mobileCalls,
-      @JsonKey(name: 'calls_record') bool callsRecord,
-      @JsonKey(name: 'only_one_device_per_call') bool onlyOneDevicePerCall,
-      @JsonKey(name: 'max_participants_per_call') int maxParticipantsPerCall,
-      @JsonKey(name: 'safari_push_id') String safariPushId,
-      @JsonKey(name: 'message_uploads') bool messageUploads,
-      @JsonKey(name: 'terms') Terms terms,
-      @JsonKey(name: 'single_group_teams') bool singleGroupTeams,
-      @JsonKey(name: 'wiki_pages') bool wikiPages,
-      @JsonKey(name: 'allow_admin_mute') bool allowAdminMute,
-      @JsonKey(name: 'default_wallpaper') Wallpaper defaultWallpaper,
-      @JsonKey(name: 'support_email') String supportEmail,
-      @JsonKey(name: 'custom_theme') bool customTheme,
-      @Deprecated('Deprecated.') @JsonKey(name: 'task_checklist') bool taskChecklist,
-      @Deprecated('Deprecated.') @JsonKey(name: 'readonly_groups') bool readonlyGroups,
-      @Deprecated('Deprecated.') @JsonKey(name: 'task_dashboard') bool taskDashboard,
-      @Deprecated('Deprecated.') @JsonKey(name: 'task_messages') bool taskMessages,
-      @Deprecated('Deprecated.') @JsonKey(name: 'task_public') bool taskPublic,
-      @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') bool taskTags,
-      @Deprecated('Deprecated.') @JsonKey(name: 'calls') bool calls,
-      @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion});
+      {@JsonKey(name: 'host')
+          String host,
+      @JsonKey(name: 'build')
+          String build,
+      @JsonKey(name: 'desktop_version')
+          String desktopVersion,
+      @JsonKey(name: 'front_version')
+          String frontVersion,
+      @JsonKey(name: 'app_title')
+          String appTitle,
+      @JsonKey(name: 'landing_url')
+          String landingUrl,
+      @JsonKey(name: 'app_schemes')
+          List<String> appSchemes,
+      @JsonKey(name: 'userver')
+          String userver,
+      @JsonKey(name: 'ios_app')
+          String iOSApp,
+      @JsonKey(name: 'android_app')
+          String androidApp,
+      @JsonKey(name: 'ios_corp_app')
+          String iOSCorpApp,
+      @JsonKey(name: 'android_corp_app')
+          String androidCorpApp,
+      @JsonKey(name: 'theme')
+          String theme,
+      @JsonKey(name: 'min_ios_version')
+          String minIOSVersion,
+      @JsonKey(name: 'min_android_version')
+          String minAndroidVersion,
+      @JsonKey(name: 'min_corp_ios_version')
+          String minCorpIOSVersion,
+      @JsonKey(name: 'min_corp_android_version')
+          String minCorpAndroidVersion,
+      @JsonKey(name: 'free_registration')
+          bool freeRegistration,
+      @JsonKey(name: 'max_upload_mb')
+          int maxUploadMb,
+      @JsonKey(name: 'max_linked_messages')
+          int maxLinkedMessages,
+      @JsonKey(name: 'max_message_uploads')
+          int maxMessageUploads,
+      @JsonKey(name: 'max_username_part_length')
+          int maxUsernamePartLength,
+      @JsonKey(name: 'max_group_title_length')
+          int maxGroupTitleLength,
+      @JsonKey(name: 'max_role_length')
+          int maxRoleLength,
+      @JsonKey(name: 'max_mood_length')
+          int maxMoodLength,
+      @JsonKey(name: 'max_message_length')
+          int maxMessageLength,
+      @JsonKey(name: 'max_section_length')
+          int maxSectionLength,
+      @JsonKey(name: 'max_project_length')
+          int maxProjectLength,
+      @JsonKey(name: 'max_tag_length')
+          int maxTagLength,
+      @JsonKey(name: 'max_task_title_length')
+          int maxTaskTitleLength,
+      @JsonKey(name: 'max_color_rule_description_length')
+          int maxColorRuleDescriptionLength,
+      @JsonKey(name: 'max_url_length')
+          int maxUrlLength,
+      @JsonKey(name: 'max_integration_comment_length')
+          int maxIntegrationCommentLength,
+      @JsonKey(name: 'max_teams')
+          int maxTeams,
+      @JsonKey(name: 'max_message_search_limit')
+          int maxMessageSearchLimit,
+      @JsonKey(name: 'multi_nodes')
+          bool multiNodes,
+      @JsonKey(name: 'afk_age')
+          int afkAge,
+      @JsonKey(name: 'auth_by_password')
+          bool authByPassword,
+      @JsonKey(name: 'auth_by_qr_code')
+          bool authByQrCode,
+      @JsonKey(name: 'auth_by_sms')
+          bool authBySms,
+      @JsonKey(name: 'auth_2fa')
+          bool auth2fa,
+      @JsonKey(name: 'oauth_services')
+          List<OAuthService> oAuthServices,
+      @JsonKey(name: 'ice_servers')
+          List<ICEServer> iCEServers,
+      @JsonKey(name: 'custom_server')
+          bool customServer,
+      @JsonKey(name: 'installation_type')
+          String installationType,
+      @JsonKey(name: 'installation_title')
+          String installationTitle,
+      @JsonKey(name: 'custom_app_icon_name')
+          String customAppIconName,
+      @JsonKey(name: 'app_login_background')
+          String appLoginBackground,
+      @JsonKey(name: 'web_login_background')
+          String webLoginBackground,
+      @JsonKey(name: 'is_testing')
+          bool isTesting,
+      @JsonKey(name: 'metrika')
+          String metrika,
+      @JsonKey(name: 'amplitude_api_key')
+          String amplitudeApiKey,
+      @JsonKey(name: 'min_search_length')
+          int minSearchLength,
+      @JsonKey(name: 'resend_timeout')
+          int resendTimeout,
+      @JsonKey(name: 'sentry_dsn_js')
+          String sentryDsnJS,
+      @JsonKey(name: 'server_drafts')
+          bool serverDrafts,
+      @JsonKey(name: 'firebase_app_id')
+          String firebaseAppId,
+      @JsonKey(name: 'firebase_sender_id')
+          String firebaseSenderId,
+      @JsonKey(name: 'firebase_api_key')
+          String firebaseApiKey,
+      @JsonKey(name: 'firebase_auth_domain')
+          String firebaseAuthDomain,
+      @JsonKey(name: 'firebase_database_url')
+          String firebaseDatabaseUrl,
+      @JsonKey(name: 'firebase_project_id')
+          String firebaseProjectId,
+      @JsonKey(name: 'firebase_storage_bucket')
+          String firebaseStorageBucket,
+      @JsonKey(name: 'calls_version')
+          int callsVersion,
+      @JsonKey(name: 'mobile_calls')
+          bool mobileCalls,
+      @JsonKey(name: 'calls_record')
+          bool callsRecord,
+      @JsonKey(name: 'only_one_device_per_call')
+          bool onlyOneDevicePerCall,
+      @JsonKey(name: 'max_participants_per_call')
+          int maxParticipantsPerCall,
+      @JsonKey(name: 'safari_push_id')
+          String safariPushId,
+      @JsonKey(name: 'message_uploads')
+          bool messageUploads,
+      @JsonKey(name: 'terms')
+          Terms terms,
+      @JsonKey(name: 'single_group_teams')
+          bool singleGroupTeams,
+      @JsonKey(name: 'wiki_pages')
+          bool wikiPages,
+      @JsonKey(name: 'allow_admin_mute')
+          bool allowAdminMute,
+      @JsonKey(name: 'default_wallpaper')
+          Wallpaper defaultWallpaper,
+      @JsonKey(name: 'support_email')
+          String supportEmail,
+      @JsonKey(name: 'custom_theme')
+          bool customTheme,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_checklist')
+          bool taskChecklist,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'readonly_groups')
+          bool readonlyGroups,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_dashboard')
+          bool taskDashboard,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_messages')
+          bool taskMessages,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_public')
+          bool taskPublic,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_tags')
+          bool taskTags,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'calls')
+          bool calls,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'min_app_version')
+          String minAppVersion});
 
   $TermsCopyWith<$Res> get terms;
   $WallpaperCopyWith<$Res> get defaultWallpaper;
@@ -750,99 +1006,210 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     return _then(_value.copyWith(
       host: host == freezed ? _value.host : host as String,
       build: build == freezed ? _value.build : build as String,
-      desktopVersion: desktopVersion == freezed ? _value.desktopVersion : desktopVersion as String,
-      frontVersion: frontVersion == freezed ? _value.frontVersion : frontVersion as String,
+      desktopVersion: desktopVersion == freezed
+          ? _value.desktopVersion
+          : desktopVersion as String,
+      frontVersion: frontVersion == freezed
+          ? _value.frontVersion
+          : frontVersion as String,
       appTitle: appTitle == freezed ? _value.appTitle : appTitle as String,
-      landingUrl: landingUrl == freezed ? _value.landingUrl : landingUrl as String,
-      appSchemes: appSchemes == freezed ? _value.appSchemes : appSchemes as List<String>,
+      landingUrl:
+          landingUrl == freezed ? _value.landingUrl : landingUrl as String,
+      appSchemes: appSchemes == freezed
+          ? _value.appSchemes
+          : appSchemes as List<String>,
       userver: userver == freezed ? _value.userver : userver as String,
       iOSApp: iOSApp == freezed ? _value.iOSApp : iOSApp as String,
-      androidApp: androidApp == freezed ? _value.androidApp : androidApp as String,
-      iOSCorpApp: iOSCorpApp == freezed ? _value.iOSCorpApp : iOSCorpApp as String,
-      androidCorpApp: androidCorpApp == freezed ? _value.androidCorpApp : androidCorpApp as String,
+      androidApp:
+          androidApp == freezed ? _value.androidApp : androidApp as String,
+      iOSCorpApp:
+          iOSCorpApp == freezed ? _value.iOSCorpApp : iOSCorpApp as String,
+      androidCorpApp: androidCorpApp == freezed
+          ? _value.androidCorpApp
+          : androidCorpApp as String,
       theme: theme == freezed ? _value.theme : theme as String,
-      minIOSVersion: minIOSVersion == freezed ? _value.minIOSVersion : minIOSVersion as String,
-      minAndroidVersion: minAndroidVersion == freezed ? _value.minAndroidVersion : minAndroidVersion as String,
-      minCorpIOSVersion: minCorpIOSVersion == freezed ? _value.minCorpIOSVersion : minCorpIOSVersion as String,
-      minCorpAndroidVersion:
-          minCorpAndroidVersion == freezed ? _value.minCorpAndroidVersion : minCorpAndroidVersion as String,
-      freeRegistration: freeRegistration == freezed ? _value.freeRegistration : freeRegistration as bool,
-      maxUploadMb: maxUploadMb == freezed ? _value.maxUploadMb : maxUploadMb as int,
-      maxLinkedMessages: maxLinkedMessages == freezed ? _value.maxLinkedMessages : maxLinkedMessages as int,
-      maxMessageUploads: maxMessageUploads == freezed ? _value.maxMessageUploads : maxMessageUploads as int,
-      maxUsernamePartLength:
-          maxUsernamePartLength == freezed ? _value.maxUsernamePartLength : maxUsernamePartLength as int,
-      maxGroupTitleLength: maxGroupTitleLength == freezed ? _value.maxGroupTitleLength : maxGroupTitleLength as int,
-      maxRoleLength: maxRoleLength == freezed ? _value.maxRoleLength : maxRoleLength as int,
-      maxMoodLength: maxMoodLength == freezed ? _value.maxMoodLength : maxMoodLength as int,
-      maxMessageLength: maxMessageLength == freezed ? _value.maxMessageLength : maxMessageLength as int,
-      maxSectionLength: maxSectionLength == freezed ? _value.maxSectionLength : maxSectionLength as int,
-      maxProjectLength: maxProjectLength == freezed ? _value.maxProjectLength : maxProjectLength as int,
-      maxTagLength: maxTagLength == freezed ? _value.maxTagLength : maxTagLength as int,
-      maxTaskTitleLength: maxTaskTitleLength == freezed ? _value.maxTaskTitleLength : maxTaskTitleLength as int,
+      minIOSVersion: minIOSVersion == freezed
+          ? _value.minIOSVersion
+          : minIOSVersion as String,
+      minAndroidVersion: minAndroidVersion == freezed
+          ? _value.minAndroidVersion
+          : minAndroidVersion as String,
+      minCorpIOSVersion: minCorpIOSVersion == freezed
+          ? _value.minCorpIOSVersion
+          : minCorpIOSVersion as String,
+      minCorpAndroidVersion: minCorpAndroidVersion == freezed
+          ? _value.minCorpAndroidVersion
+          : minCorpAndroidVersion as String,
+      freeRegistration: freeRegistration == freezed
+          ? _value.freeRegistration
+          : freeRegistration as bool,
+      maxUploadMb:
+          maxUploadMb == freezed ? _value.maxUploadMb : maxUploadMb as int,
+      maxLinkedMessages: maxLinkedMessages == freezed
+          ? _value.maxLinkedMessages
+          : maxLinkedMessages as int,
+      maxMessageUploads: maxMessageUploads == freezed
+          ? _value.maxMessageUploads
+          : maxMessageUploads as int,
+      maxUsernamePartLength: maxUsernamePartLength == freezed
+          ? _value.maxUsernamePartLength
+          : maxUsernamePartLength as int,
+      maxGroupTitleLength: maxGroupTitleLength == freezed
+          ? _value.maxGroupTitleLength
+          : maxGroupTitleLength as int,
+      maxRoleLength: maxRoleLength == freezed
+          ? _value.maxRoleLength
+          : maxRoleLength as int,
+      maxMoodLength: maxMoodLength == freezed
+          ? _value.maxMoodLength
+          : maxMoodLength as int,
+      maxMessageLength: maxMessageLength == freezed
+          ? _value.maxMessageLength
+          : maxMessageLength as int,
+      maxSectionLength: maxSectionLength == freezed
+          ? _value.maxSectionLength
+          : maxSectionLength as int,
+      maxProjectLength: maxProjectLength == freezed
+          ? _value.maxProjectLength
+          : maxProjectLength as int,
+      maxTagLength:
+          maxTagLength == freezed ? _value.maxTagLength : maxTagLength as int,
+      maxTaskTitleLength: maxTaskTitleLength == freezed
+          ? _value.maxTaskTitleLength
+          : maxTaskTitleLength as int,
       maxColorRuleDescriptionLength: maxColorRuleDescriptionLength == freezed
           ? _value.maxColorRuleDescriptionLength
           : maxColorRuleDescriptionLength as int,
-      maxUrlLength: maxUrlLength == freezed ? _value.maxUrlLength : maxUrlLength as int,
+      maxUrlLength:
+          maxUrlLength == freezed ? _value.maxUrlLength : maxUrlLength as int,
       maxIntegrationCommentLength: maxIntegrationCommentLength == freezed
           ? _value.maxIntegrationCommentLength
           : maxIntegrationCommentLength as int,
       maxTeams: maxTeams == freezed ? _value.maxTeams : maxTeams as int,
-      maxMessageSearchLimit:
-          maxMessageSearchLimit == freezed ? _value.maxMessageSearchLimit : maxMessageSearchLimit as int,
-      multiNodes: multiNodes == freezed ? _value.multiNodes : multiNodes as bool,
+      maxMessageSearchLimit: maxMessageSearchLimit == freezed
+          ? _value.maxMessageSearchLimit
+          : maxMessageSearchLimit as int,
+      multiNodes:
+          multiNodes == freezed ? _value.multiNodes : multiNodes as bool,
       afkAge: afkAge == freezed ? _value.afkAge : afkAge as int,
-      authByPassword: authByPassword == freezed ? _value.authByPassword : authByPassword as bool,
-      authByQrCode: authByQrCode == freezed ? _value.authByQrCode : authByQrCode as bool,
+      authByPassword: authByPassword == freezed
+          ? _value.authByPassword
+          : authByPassword as bool,
+      authByQrCode:
+          authByQrCode == freezed ? _value.authByQrCode : authByQrCode as bool,
       authBySms: authBySms == freezed ? _value.authBySms : authBySms as bool,
       auth2fa: auth2fa == freezed ? _value.auth2fa : auth2fa as bool,
-      oAuthServices: oAuthServices == freezed ? _value.oAuthServices : oAuthServices as List<OAuthService>,
-      iCEServers: iCEServers == freezed ? _value.iCEServers : iCEServers as List<ICEServer>,
-      customServer: customServer == freezed ? _value.customServer : customServer as bool,
-      installationType: installationType == freezed ? _value.installationType : installationType as String,
-      installationTitle: installationTitle == freezed ? _value.installationTitle : installationTitle as String,
-      customAppIconName: customAppIconName == freezed ? _value.customAppIconName : customAppIconName as String,
-      appLoginBackground: appLoginBackground == freezed ? _value.appLoginBackground : appLoginBackground as String,
-      webLoginBackground: webLoginBackground == freezed ? _value.webLoginBackground : webLoginBackground as String,
+      oAuthServices: oAuthServices == freezed
+          ? _value.oAuthServices
+          : oAuthServices as List<OAuthService>,
+      iCEServers: iCEServers == freezed
+          ? _value.iCEServers
+          : iCEServers as List<ICEServer>,
+      customServer:
+          customServer == freezed ? _value.customServer : customServer as bool,
+      installationType: installationType == freezed
+          ? _value.installationType
+          : installationType as String,
+      installationTitle: installationTitle == freezed
+          ? _value.installationTitle
+          : installationTitle as String,
+      customAppIconName: customAppIconName == freezed
+          ? _value.customAppIconName
+          : customAppIconName as String,
+      appLoginBackground: appLoginBackground == freezed
+          ? _value.appLoginBackground
+          : appLoginBackground as String,
+      webLoginBackground: webLoginBackground == freezed
+          ? _value.webLoginBackground
+          : webLoginBackground as String,
       isTesting: isTesting == freezed ? _value.isTesting : isTesting as bool,
       metrika: metrika == freezed ? _value.metrika : metrika as String,
-      amplitudeApiKey: amplitudeApiKey == freezed ? _value.amplitudeApiKey : amplitudeApiKey as String,
-      minSearchLength: minSearchLength == freezed ? _value.minSearchLength : minSearchLength as int,
-      resendTimeout: resendTimeout == freezed ? _value.resendTimeout : resendTimeout as int,
-      sentryDsnJS: sentryDsnJS == freezed ? _value.sentryDsnJS : sentryDsnJS as String,
-      serverDrafts: serverDrafts == freezed ? _value.serverDrafts : serverDrafts as bool,
-      firebaseAppId: firebaseAppId == freezed ? _value.firebaseAppId : firebaseAppId as String,
-      firebaseSenderId: firebaseSenderId == freezed ? _value.firebaseSenderId : firebaseSenderId as String,
-      firebaseApiKey: firebaseApiKey == freezed ? _value.firebaseApiKey : firebaseApiKey as String,
-      firebaseAuthDomain: firebaseAuthDomain == freezed ? _value.firebaseAuthDomain : firebaseAuthDomain as String,
-      firebaseDatabaseUrl: firebaseDatabaseUrl == freezed ? _value.firebaseDatabaseUrl : firebaseDatabaseUrl as String,
-      firebaseProjectId: firebaseProjectId == freezed ? _value.firebaseProjectId : firebaseProjectId as String,
-      firebaseStorageBucket:
-          firebaseStorageBucket == freezed ? _value.firebaseStorageBucket : firebaseStorageBucket as String,
-      callsVersion: callsVersion == freezed ? _value.callsVersion : callsVersion as int,
-      mobileCalls: mobileCalls == freezed ? _value.mobileCalls : mobileCalls as bool,
-      callsRecord: callsRecord == freezed ? _value.callsRecord : callsRecord as bool,
-      onlyOneDevicePerCall:
-          onlyOneDevicePerCall == freezed ? _value.onlyOneDevicePerCall : onlyOneDevicePerCall as bool,
-      maxParticipantsPerCall:
-          maxParticipantsPerCall == freezed ? _value.maxParticipantsPerCall : maxParticipantsPerCall as int,
-      safariPushId: safariPushId == freezed ? _value.safariPushId : safariPushId as String,
-      messageUploads: messageUploads == freezed ? _value.messageUploads : messageUploads as bool,
+      amplitudeApiKey: amplitudeApiKey == freezed
+          ? _value.amplitudeApiKey
+          : amplitudeApiKey as String,
+      minSearchLength: minSearchLength == freezed
+          ? _value.minSearchLength
+          : minSearchLength as int,
+      resendTimeout: resendTimeout == freezed
+          ? _value.resendTimeout
+          : resendTimeout as int,
+      sentryDsnJS:
+          sentryDsnJS == freezed ? _value.sentryDsnJS : sentryDsnJS as String,
+      serverDrafts:
+          serverDrafts == freezed ? _value.serverDrafts : serverDrafts as bool,
+      firebaseAppId: firebaseAppId == freezed
+          ? _value.firebaseAppId
+          : firebaseAppId as String,
+      firebaseSenderId: firebaseSenderId == freezed
+          ? _value.firebaseSenderId
+          : firebaseSenderId as String,
+      firebaseApiKey: firebaseApiKey == freezed
+          ? _value.firebaseApiKey
+          : firebaseApiKey as String,
+      firebaseAuthDomain: firebaseAuthDomain == freezed
+          ? _value.firebaseAuthDomain
+          : firebaseAuthDomain as String,
+      firebaseDatabaseUrl: firebaseDatabaseUrl == freezed
+          ? _value.firebaseDatabaseUrl
+          : firebaseDatabaseUrl as String,
+      firebaseProjectId: firebaseProjectId == freezed
+          ? _value.firebaseProjectId
+          : firebaseProjectId as String,
+      firebaseStorageBucket: firebaseStorageBucket == freezed
+          ? _value.firebaseStorageBucket
+          : firebaseStorageBucket as String,
+      callsVersion:
+          callsVersion == freezed ? _value.callsVersion : callsVersion as int,
+      mobileCalls:
+          mobileCalls == freezed ? _value.mobileCalls : mobileCalls as bool,
+      callsRecord:
+          callsRecord == freezed ? _value.callsRecord : callsRecord as bool,
+      onlyOneDevicePerCall: onlyOneDevicePerCall == freezed
+          ? _value.onlyOneDevicePerCall
+          : onlyOneDevicePerCall as bool,
+      maxParticipantsPerCall: maxParticipantsPerCall == freezed
+          ? _value.maxParticipantsPerCall
+          : maxParticipantsPerCall as int,
+      safariPushId: safariPushId == freezed
+          ? _value.safariPushId
+          : safariPushId as String,
+      messageUploads: messageUploads == freezed
+          ? _value.messageUploads
+          : messageUploads as bool,
       terms: terms == freezed ? _value.terms : terms as Terms,
-      singleGroupTeams: singleGroupTeams == freezed ? _value.singleGroupTeams : singleGroupTeams as bool,
+      singleGroupTeams: singleGroupTeams == freezed
+          ? _value.singleGroupTeams
+          : singleGroupTeams as bool,
       wikiPages: wikiPages == freezed ? _value.wikiPages : wikiPages as bool,
-      allowAdminMute: allowAdminMute == freezed ? _value.allowAdminMute : allowAdminMute as bool,
-      defaultWallpaper: defaultWallpaper == freezed ? _value.defaultWallpaper : defaultWallpaper as Wallpaper,
-      supportEmail: supportEmail == freezed ? _value.supportEmail : supportEmail as String,
-      customTheme: customTheme == freezed ? _value.customTheme : customTheme as bool,
-      taskChecklist: taskChecklist == freezed ? _value.taskChecklist : taskChecklist as bool,
-      readonlyGroups: readonlyGroups == freezed ? _value.readonlyGroups : readonlyGroups as bool,
-      taskDashboard: taskDashboard == freezed ? _value.taskDashboard : taskDashboard as bool,
-      taskMessages: taskMessages == freezed ? _value.taskMessages : taskMessages as bool,
-      taskPublic: taskPublic == freezed ? _value.taskPublic : taskPublic as bool,
+      allowAdminMute: allowAdminMute == freezed
+          ? _value.allowAdminMute
+          : allowAdminMute as bool,
+      defaultWallpaper: defaultWallpaper == freezed
+          ? _value.defaultWallpaper
+          : defaultWallpaper as Wallpaper,
+      supportEmail: supportEmail == freezed
+          ? _value.supportEmail
+          : supportEmail as String,
+      customTheme:
+          customTheme == freezed ? _value.customTheme : customTheme as bool,
+      taskChecklist: taskChecklist == freezed
+          ? _value.taskChecklist
+          : taskChecklist as bool,
+      readonlyGroups: readonlyGroups == freezed
+          ? _value.readonlyGroups
+          : readonlyGroups as bool,
+      taskDashboard: taskDashboard == freezed
+          ? _value.taskDashboard
+          : taskDashboard as bool,
+      taskMessages:
+          taskMessages == freezed ? _value.taskMessages : taskMessages as bool,
+      taskPublic:
+          taskPublic == freezed ? _value.taskPublic : taskPublic as bool,
       taskTags: taskTags == freezed ? _value.taskTags : taskTags as bool,
       calls: calls == freezed ? _value.calls : calls as bool,
-      minAppVersion: minAppVersion == freezed ? _value.minAppVersion : minAppVersion as String,
+      minAppVersion: minAppVersion == freezed
+          ? _value.minAppVersion
+          : minAppVersion as String,
     ));
   }
 
@@ -869,94 +1236,188 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
-  factory _$FeaturesCopyWith(_Features value, $Res Function(_Features) then) = __$FeaturesCopyWithImpl<$Res>;
+  factory _$FeaturesCopyWith(_Features value, $Res Function(_Features) then) =
+      __$FeaturesCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'host') String host,
-      @JsonKey(name: 'build') String build,
-      @JsonKey(name: 'desktop_version') String desktopVersion,
-      @JsonKey(name: 'front_version') String frontVersion,
-      @JsonKey(name: 'app_title') String appTitle,
-      @JsonKey(name: 'landing_url') String landingUrl,
-      @JsonKey(name: 'app_schemes') List<String> appSchemes,
-      @JsonKey(name: 'userver') String userver,
-      @JsonKey(name: 'ios_app') String iOSApp,
-      @JsonKey(name: 'android_app') String androidApp,
-      @JsonKey(name: 'ios_corp_app') String iOSCorpApp,
-      @JsonKey(name: 'android_corp_app') String androidCorpApp,
-      @JsonKey(name: 'theme') String theme,
-      @JsonKey(name: 'min_ios_version') String minIOSVersion,
-      @JsonKey(name: 'min_android_version') String minAndroidVersion,
-      @JsonKey(name: 'min_corp_ios_version') String minCorpIOSVersion,
-      @JsonKey(name: 'min_corp_android_version') String minCorpAndroidVersion,
-      @JsonKey(name: 'free_registration') bool freeRegistration,
-      @JsonKey(name: 'max_upload_mb') int maxUploadMb,
-      @JsonKey(name: 'max_linked_messages') int maxLinkedMessages,
-      @JsonKey(name: 'max_message_uploads') int maxMessageUploads,
-      @JsonKey(name: 'max_username_part_length') int maxUsernamePartLength,
-      @JsonKey(name: 'max_group_title_length') int maxGroupTitleLength,
-      @JsonKey(name: 'max_role_length') int maxRoleLength,
-      @JsonKey(name: 'max_mood_length') int maxMoodLength,
-      @JsonKey(name: 'max_message_length') int maxMessageLength,
-      @JsonKey(name: 'max_section_length') int maxSectionLength,
-      @JsonKey(name: 'max_project_length') int maxProjectLength,
-      @JsonKey(name: 'max_tag_length') int maxTagLength,
-      @JsonKey(name: 'max_task_title_length') int maxTaskTitleLength,
-      @JsonKey(name: 'max_color_rule_description_length') int maxColorRuleDescriptionLength,
-      @JsonKey(name: 'max_url_length') int maxUrlLength,
-      @JsonKey(name: 'max_integration_comment_length') int maxIntegrationCommentLength,
-      @JsonKey(name: 'max_teams') int maxTeams,
-      @JsonKey(name: 'max_message_search_limit') int maxMessageSearchLimit,
-      @JsonKey(name: 'multi_nodes') bool multiNodes,
-      @JsonKey(name: 'afk_age') int afkAge,
-      @JsonKey(name: 'auth_by_password') bool authByPassword,
-      @JsonKey(name: 'auth_by_qr_code') bool authByQrCode,
-      @JsonKey(name: 'auth_by_sms') bool authBySms,
-      @JsonKey(name: 'auth_2fa') bool auth2fa,
-      @JsonKey(name: 'oauth_services') List<OAuthService> oAuthServices,
-      @JsonKey(name: 'ice_servers') List<ICEServer> iCEServers,
-      @JsonKey(name: 'custom_server') bool customServer,
-      @JsonKey(name: 'installation_type') String installationType,
-      @JsonKey(name: 'installation_title') String installationTitle,
-      @JsonKey(name: 'custom_app_icon_name') String customAppIconName,
-      @JsonKey(name: 'app_login_background') String appLoginBackground,
-      @JsonKey(name: 'web_login_background') String webLoginBackground,
-      @JsonKey(name: 'is_testing') bool isTesting,
-      @JsonKey(name: 'metrika') String metrika,
-      @JsonKey(name: 'amplitude_api_key') String amplitudeApiKey,
-      @JsonKey(name: 'min_search_length') int minSearchLength,
-      @JsonKey(name: 'resend_timeout') int resendTimeout,
-      @JsonKey(name: 'sentry_dsn_js') String sentryDsnJS,
-      @JsonKey(name: 'server_drafts') bool serverDrafts,
-      @JsonKey(name: 'firebase_app_id') String firebaseAppId,
-      @JsonKey(name: 'firebase_sender_id') String firebaseSenderId,
-      @JsonKey(name: 'firebase_api_key') String firebaseApiKey,
-      @JsonKey(name: 'firebase_auth_domain') String firebaseAuthDomain,
-      @JsonKey(name: 'firebase_database_url') String firebaseDatabaseUrl,
-      @JsonKey(name: 'firebase_project_id') String firebaseProjectId,
-      @JsonKey(name: 'firebase_storage_bucket') String firebaseStorageBucket,
-      @JsonKey(name: 'calls_version') int callsVersion,
-      @JsonKey(name: 'mobile_calls') bool mobileCalls,
-      @JsonKey(name: 'calls_record') bool callsRecord,
-      @JsonKey(name: 'only_one_device_per_call') bool onlyOneDevicePerCall,
-      @JsonKey(name: 'max_participants_per_call') int maxParticipantsPerCall,
-      @JsonKey(name: 'safari_push_id') String safariPushId,
-      @JsonKey(name: 'message_uploads') bool messageUploads,
-      @JsonKey(name: 'terms') Terms terms,
-      @JsonKey(name: 'single_group_teams') bool singleGroupTeams,
-      @JsonKey(name: 'wiki_pages') bool wikiPages,
-      @JsonKey(name: 'allow_admin_mute') bool allowAdminMute,
-      @JsonKey(name: 'default_wallpaper') Wallpaper defaultWallpaper,
-      @JsonKey(name: 'support_email') String supportEmail,
-      @JsonKey(name: 'custom_theme') bool customTheme,
-      @Deprecated('Deprecated.') @JsonKey(name: 'task_checklist') bool taskChecklist,
-      @Deprecated('Deprecated.') @JsonKey(name: 'readonly_groups') bool readonlyGroups,
-      @Deprecated('Deprecated.') @JsonKey(name: 'task_dashboard') bool taskDashboard,
-      @Deprecated('Deprecated.') @JsonKey(name: 'task_messages') bool taskMessages,
-      @Deprecated('Deprecated.') @JsonKey(name: 'task_public') bool taskPublic,
-      @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') bool taskTags,
-      @Deprecated('Deprecated.') @JsonKey(name: 'calls') bool calls,
-      @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion});
+      {@JsonKey(name: 'host')
+          String host,
+      @JsonKey(name: 'build')
+          String build,
+      @JsonKey(name: 'desktop_version')
+          String desktopVersion,
+      @JsonKey(name: 'front_version')
+          String frontVersion,
+      @JsonKey(name: 'app_title')
+          String appTitle,
+      @JsonKey(name: 'landing_url')
+          String landingUrl,
+      @JsonKey(name: 'app_schemes')
+          List<String> appSchemes,
+      @JsonKey(name: 'userver')
+          String userver,
+      @JsonKey(name: 'ios_app')
+          String iOSApp,
+      @JsonKey(name: 'android_app')
+          String androidApp,
+      @JsonKey(name: 'ios_corp_app')
+          String iOSCorpApp,
+      @JsonKey(name: 'android_corp_app')
+          String androidCorpApp,
+      @JsonKey(name: 'theme')
+          String theme,
+      @JsonKey(name: 'min_ios_version')
+          String minIOSVersion,
+      @JsonKey(name: 'min_android_version')
+          String minAndroidVersion,
+      @JsonKey(name: 'min_corp_ios_version')
+          String minCorpIOSVersion,
+      @JsonKey(name: 'min_corp_android_version')
+          String minCorpAndroidVersion,
+      @JsonKey(name: 'free_registration')
+          bool freeRegistration,
+      @JsonKey(name: 'max_upload_mb')
+          int maxUploadMb,
+      @JsonKey(name: 'max_linked_messages')
+          int maxLinkedMessages,
+      @JsonKey(name: 'max_message_uploads')
+          int maxMessageUploads,
+      @JsonKey(name: 'max_username_part_length')
+          int maxUsernamePartLength,
+      @JsonKey(name: 'max_group_title_length')
+          int maxGroupTitleLength,
+      @JsonKey(name: 'max_role_length')
+          int maxRoleLength,
+      @JsonKey(name: 'max_mood_length')
+          int maxMoodLength,
+      @JsonKey(name: 'max_message_length')
+          int maxMessageLength,
+      @JsonKey(name: 'max_section_length')
+          int maxSectionLength,
+      @JsonKey(name: 'max_project_length')
+          int maxProjectLength,
+      @JsonKey(name: 'max_tag_length')
+          int maxTagLength,
+      @JsonKey(name: 'max_task_title_length')
+          int maxTaskTitleLength,
+      @JsonKey(name: 'max_color_rule_description_length')
+          int maxColorRuleDescriptionLength,
+      @JsonKey(name: 'max_url_length')
+          int maxUrlLength,
+      @JsonKey(name: 'max_integration_comment_length')
+          int maxIntegrationCommentLength,
+      @JsonKey(name: 'max_teams')
+          int maxTeams,
+      @JsonKey(name: 'max_message_search_limit')
+          int maxMessageSearchLimit,
+      @JsonKey(name: 'multi_nodes')
+          bool multiNodes,
+      @JsonKey(name: 'afk_age')
+          int afkAge,
+      @JsonKey(name: 'auth_by_password')
+          bool authByPassword,
+      @JsonKey(name: 'auth_by_qr_code')
+          bool authByQrCode,
+      @JsonKey(name: 'auth_by_sms')
+          bool authBySms,
+      @JsonKey(name: 'auth_2fa')
+          bool auth2fa,
+      @JsonKey(name: 'oauth_services')
+          List<OAuthService> oAuthServices,
+      @JsonKey(name: 'ice_servers')
+          List<ICEServer> iCEServers,
+      @JsonKey(name: 'custom_server')
+          bool customServer,
+      @JsonKey(name: 'installation_type')
+          String installationType,
+      @JsonKey(name: 'installation_title')
+          String installationTitle,
+      @JsonKey(name: 'custom_app_icon_name')
+          String customAppIconName,
+      @JsonKey(name: 'app_login_background')
+          String appLoginBackground,
+      @JsonKey(name: 'web_login_background')
+          String webLoginBackground,
+      @JsonKey(name: 'is_testing')
+          bool isTesting,
+      @JsonKey(name: 'metrika')
+          String metrika,
+      @JsonKey(name: 'amplitude_api_key')
+          String amplitudeApiKey,
+      @JsonKey(name: 'min_search_length')
+          int minSearchLength,
+      @JsonKey(name: 'resend_timeout')
+          int resendTimeout,
+      @JsonKey(name: 'sentry_dsn_js')
+          String sentryDsnJS,
+      @JsonKey(name: 'server_drafts')
+          bool serverDrafts,
+      @JsonKey(name: 'firebase_app_id')
+          String firebaseAppId,
+      @JsonKey(name: 'firebase_sender_id')
+          String firebaseSenderId,
+      @JsonKey(name: 'firebase_api_key')
+          String firebaseApiKey,
+      @JsonKey(name: 'firebase_auth_domain')
+          String firebaseAuthDomain,
+      @JsonKey(name: 'firebase_database_url')
+          String firebaseDatabaseUrl,
+      @JsonKey(name: 'firebase_project_id')
+          String firebaseProjectId,
+      @JsonKey(name: 'firebase_storage_bucket')
+          String firebaseStorageBucket,
+      @JsonKey(name: 'calls_version')
+          int callsVersion,
+      @JsonKey(name: 'mobile_calls')
+          bool mobileCalls,
+      @JsonKey(name: 'calls_record')
+          bool callsRecord,
+      @JsonKey(name: 'only_one_device_per_call')
+          bool onlyOneDevicePerCall,
+      @JsonKey(name: 'max_participants_per_call')
+          int maxParticipantsPerCall,
+      @JsonKey(name: 'safari_push_id')
+          String safariPushId,
+      @JsonKey(name: 'message_uploads')
+          bool messageUploads,
+      @JsonKey(name: 'terms')
+          Terms terms,
+      @JsonKey(name: 'single_group_teams')
+          bool singleGroupTeams,
+      @JsonKey(name: 'wiki_pages')
+          bool wikiPages,
+      @JsonKey(name: 'allow_admin_mute')
+          bool allowAdminMute,
+      @JsonKey(name: 'default_wallpaper')
+          Wallpaper defaultWallpaper,
+      @JsonKey(name: 'support_email')
+          String supportEmail,
+      @JsonKey(name: 'custom_theme')
+          bool customTheme,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_checklist')
+          bool taskChecklist,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'readonly_groups')
+          bool readonlyGroups,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_dashboard')
+          bool taskDashboard,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_messages')
+          bool taskMessages,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_public')
+          bool taskPublic,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_tags')
+          bool taskTags,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'calls')
+          bool calls,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'min_app_version')
+          String minAppVersion});
 
   @override
   $TermsCopyWith<$Res> get terms;
@@ -965,7 +1426,8 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> implements _$FeaturesCopyWith<$Res> {
+class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res>
+    implements _$FeaturesCopyWith<$Res> {
   __$FeaturesCopyWithImpl(_Features _value, $Res Function(_Features) _then)
       : super(_value, (v) => _then(v as _Features));
 
@@ -1063,99 +1525,210 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
     return _then(_Features(
       host: host == freezed ? _value.host : host as String,
       build: build == freezed ? _value.build : build as String,
-      desktopVersion: desktopVersion == freezed ? _value.desktopVersion : desktopVersion as String,
-      frontVersion: frontVersion == freezed ? _value.frontVersion : frontVersion as String,
+      desktopVersion: desktopVersion == freezed
+          ? _value.desktopVersion
+          : desktopVersion as String,
+      frontVersion: frontVersion == freezed
+          ? _value.frontVersion
+          : frontVersion as String,
       appTitle: appTitle == freezed ? _value.appTitle : appTitle as String,
-      landingUrl: landingUrl == freezed ? _value.landingUrl : landingUrl as String,
-      appSchemes: appSchemes == freezed ? _value.appSchemes : appSchemes as List<String>,
+      landingUrl:
+          landingUrl == freezed ? _value.landingUrl : landingUrl as String,
+      appSchemes: appSchemes == freezed
+          ? _value.appSchemes
+          : appSchemes as List<String>,
       userver: userver == freezed ? _value.userver : userver as String,
       iOSApp: iOSApp == freezed ? _value.iOSApp : iOSApp as String,
-      androidApp: androidApp == freezed ? _value.androidApp : androidApp as String,
-      iOSCorpApp: iOSCorpApp == freezed ? _value.iOSCorpApp : iOSCorpApp as String,
-      androidCorpApp: androidCorpApp == freezed ? _value.androidCorpApp : androidCorpApp as String,
+      androidApp:
+          androidApp == freezed ? _value.androidApp : androidApp as String,
+      iOSCorpApp:
+          iOSCorpApp == freezed ? _value.iOSCorpApp : iOSCorpApp as String,
+      androidCorpApp: androidCorpApp == freezed
+          ? _value.androidCorpApp
+          : androidCorpApp as String,
       theme: theme == freezed ? _value.theme : theme as String,
-      minIOSVersion: minIOSVersion == freezed ? _value.minIOSVersion : minIOSVersion as String,
-      minAndroidVersion: minAndroidVersion == freezed ? _value.minAndroidVersion : minAndroidVersion as String,
-      minCorpIOSVersion: minCorpIOSVersion == freezed ? _value.minCorpIOSVersion : minCorpIOSVersion as String,
-      minCorpAndroidVersion:
-          minCorpAndroidVersion == freezed ? _value.minCorpAndroidVersion : minCorpAndroidVersion as String,
-      freeRegistration: freeRegistration == freezed ? _value.freeRegistration : freeRegistration as bool,
-      maxUploadMb: maxUploadMb == freezed ? _value.maxUploadMb : maxUploadMb as int,
-      maxLinkedMessages: maxLinkedMessages == freezed ? _value.maxLinkedMessages : maxLinkedMessages as int,
-      maxMessageUploads: maxMessageUploads == freezed ? _value.maxMessageUploads : maxMessageUploads as int,
-      maxUsernamePartLength:
-          maxUsernamePartLength == freezed ? _value.maxUsernamePartLength : maxUsernamePartLength as int,
-      maxGroupTitleLength: maxGroupTitleLength == freezed ? _value.maxGroupTitleLength : maxGroupTitleLength as int,
-      maxRoleLength: maxRoleLength == freezed ? _value.maxRoleLength : maxRoleLength as int,
-      maxMoodLength: maxMoodLength == freezed ? _value.maxMoodLength : maxMoodLength as int,
-      maxMessageLength: maxMessageLength == freezed ? _value.maxMessageLength : maxMessageLength as int,
-      maxSectionLength: maxSectionLength == freezed ? _value.maxSectionLength : maxSectionLength as int,
-      maxProjectLength: maxProjectLength == freezed ? _value.maxProjectLength : maxProjectLength as int,
-      maxTagLength: maxTagLength == freezed ? _value.maxTagLength : maxTagLength as int,
-      maxTaskTitleLength: maxTaskTitleLength == freezed ? _value.maxTaskTitleLength : maxTaskTitleLength as int,
+      minIOSVersion: minIOSVersion == freezed
+          ? _value.minIOSVersion
+          : minIOSVersion as String,
+      minAndroidVersion: minAndroidVersion == freezed
+          ? _value.minAndroidVersion
+          : minAndroidVersion as String,
+      minCorpIOSVersion: minCorpIOSVersion == freezed
+          ? _value.minCorpIOSVersion
+          : minCorpIOSVersion as String,
+      minCorpAndroidVersion: minCorpAndroidVersion == freezed
+          ? _value.minCorpAndroidVersion
+          : minCorpAndroidVersion as String,
+      freeRegistration: freeRegistration == freezed
+          ? _value.freeRegistration
+          : freeRegistration as bool,
+      maxUploadMb:
+          maxUploadMb == freezed ? _value.maxUploadMb : maxUploadMb as int,
+      maxLinkedMessages: maxLinkedMessages == freezed
+          ? _value.maxLinkedMessages
+          : maxLinkedMessages as int,
+      maxMessageUploads: maxMessageUploads == freezed
+          ? _value.maxMessageUploads
+          : maxMessageUploads as int,
+      maxUsernamePartLength: maxUsernamePartLength == freezed
+          ? _value.maxUsernamePartLength
+          : maxUsernamePartLength as int,
+      maxGroupTitleLength: maxGroupTitleLength == freezed
+          ? _value.maxGroupTitleLength
+          : maxGroupTitleLength as int,
+      maxRoleLength: maxRoleLength == freezed
+          ? _value.maxRoleLength
+          : maxRoleLength as int,
+      maxMoodLength: maxMoodLength == freezed
+          ? _value.maxMoodLength
+          : maxMoodLength as int,
+      maxMessageLength: maxMessageLength == freezed
+          ? _value.maxMessageLength
+          : maxMessageLength as int,
+      maxSectionLength: maxSectionLength == freezed
+          ? _value.maxSectionLength
+          : maxSectionLength as int,
+      maxProjectLength: maxProjectLength == freezed
+          ? _value.maxProjectLength
+          : maxProjectLength as int,
+      maxTagLength:
+          maxTagLength == freezed ? _value.maxTagLength : maxTagLength as int,
+      maxTaskTitleLength: maxTaskTitleLength == freezed
+          ? _value.maxTaskTitleLength
+          : maxTaskTitleLength as int,
       maxColorRuleDescriptionLength: maxColorRuleDescriptionLength == freezed
           ? _value.maxColorRuleDescriptionLength
           : maxColorRuleDescriptionLength as int,
-      maxUrlLength: maxUrlLength == freezed ? _value.maxUrlLength : maxUrlLength as int,
+      maxUrlLength:
+          maxUrlLength == freezed ? _value.maxUrlLength : maxUrlLength as int,
       maxIntegrationCommentLength: maxIntegrationCommentLength == freezed
           ? _value.maxIntegrationCommentLength
           : maxIntegrationCommentLength as int,
       maxTeams: maxTeams == freezed ? _value.maxTeams : maxTeams as int,
-      maxMessageSearchLimit:
-          maxMessageSearchLimit == freezed ? _value.maxMessageSearchLimit : maxMessageSearchLimit as int,
-      multiNodes: multiNodes == freezed ? _value.multiNodes : multiNodes as bool,
+      maxMessageSearchLimit: maxMessageSearchLimit == freezed
+          ? _value.maxMessageSearchLimit
+          : maxMessageSearchLimit as int,
+      multiNodes:
+          multiNodes == freezed ? _value.multiNodes : multiNodes as bool,
       afkAge: afkAge == freezed ? _value.afkAge : afkAge as int,
-      authByPassword: authByPassword == freezed ? _value.authByPassword : authByPassword as bool,
-      authByQrCode: authByQrCode == freezed ? _value.authByQrCode : authByQrCode as bool,
+      authByPassword: authByPassword == freezed
+          ? _value.authByPassword
+          : authByPassword as bool,
+      authByQrCode:
+          authByQrCode == freezed ? _value.authByQrCode : authByQrCode as bool,
       authBySms: authBySms == freezed ? _value.authBySms : authBySms as bool,
       auth2fa: auth2fa == freezed ? _value.auth2fa : auth2fa as bool,
-      oAuthServices: oAuthServices == freezed ? _value.oAuthServices : oAuthServices as List<OAuthService>,
-      iCEServers: iCEServers == freezed ? _value.iCEServers : iCEServers as List<ICEServer>,
-      customServer: customServer == freezed ? _value.customServer : customServer as bool,
-      installationType: installationType == freezed ? _value.installationType : installationType as String,
-      installationTitle: installationTitle == freezed ? _value.installationTitle : installationTitle as String,
-      customAppIconName: customAppIconName == freezed ? _value.customAppIconName : customAppIconName as String,
-      appLoginBackground: appLoginBackground == freezed ? _value.appLoginBackground : appLoginBackground as String,
-      webLoginBackground: webLoginBackground == freezed ? _value.webLoginBackground : webLoginBackground as String,
+      oAuthServices: oAuthServices == freezed
+          ? _value.oAuthServices
+          : oAuthServices as List<OAuthService>,
+      iCEServers: iCEServers == freezed
+          ? _value.iCEServers
+          : iCEServers as List<ICEServer>,
+      customServer:
+          customServer == freezed ? _value.customServer : customServer as bool,
+      installationType: installationType == freezed
+          ? _value.installationType
+          : installationType as String,
+      installationTitle: installationTitle == freezed
+          ? _value.installationTitle
+          : installationTitle as String,
+      customAppIconName: customAppIconName == freezed
+          ? _value.customAppIconName
+          : customAppIconName as String,
+      appLoginBackground: appLoginBackground == freezed
+          ? _value.appLoginBackground
+          : appLoginBackground as String,
+      webLoginBackground: webLoginBackground == freezed
+          ? _value.webLoginBackground
+          : webLoginBackground as String,
       isTesting: isTesting == freezed ? _value.isTesting : isTesting as bool,
       metrika: metrika == freezed ? _value.metrika : metrika as String,
-      amplitudeApiKey: amplitudeApiKey == freezed ? _value.amplitudeApiKey : amplitudeApiKey as String,
-      minSearchLength: minSearchLength == freezed ? _value.minSearchLength : minSearchLength as int,
-      resendTimeout: resendTimeout == freezed ? _value.resendTimeout : resendTimeout as int,
-      sentryDsnJS: sentryDsnJS == freezed ? _value.sentryDsnJS : sentryDsnJS as String,
-      serverDrafts: serverDrafts == freezed ? _value.serverDrafts : serverDrafts as bool,
-      firebaseAppId: firebaseAppId == freezed ? _value.firebaseAppId : firebaseAppId as String,
-      firebaseSenderId: firebaseSenderId == freezed ? _value.firebaseSenderId : firebaseSenderId as String,
-      firebaseApiKey: firebaseApiKey == freezed ? _value.firebaseApiKey : firebaseApiKey as String,
-      firebaseAuthDomain: firebaseAuthDomain == freezed ? _value.firebaseAuthDomain : firebaseAuthDomain as String,
-      firebaseDatabaseUrl: firebaseDatabaseUrl == freezed ? _value.firebaseDatabaseUrl : firebaseDatabaseUrl as String,
-      firebaseProjectId: firebaseProjectId == freezed ? _value.firebaseProjectId : firebaseProjectId as String,
-      firebaseStorageBucket:
-          firebaseStorageBucket == freezed ? _value.firebaseStorageBucket : firebaseStorageBucket as String,
-      callsVersion: callsVersion == freezed ? _value.callsVersion : callsVersion as int,
-      mobileCalls: mobileCalls == freezed ? _value.mobileCalls : mobileCalls as bool,
-      callsRecord: callsRecord == freezed ? _value.callsRecord : callsRecord as bool,
-      onlyOneDevicePerCall:
-          onlyOneDevicePerCall == freezed ? _value.onlyOneDevicePerCall : onlyOneDevicePerCall as bool,
-      maxParticipantsPerCall:
-          maxParticipantsPerCall == freezed ? _value.maxParticipantsPerCall : maxParticipantsPerCall as int,
-      safariPushId: safariPushId == freezed ? _value.safariPushId : safariPushId as String,
-      messageUploads: messageUploads == freezed ? _value.messageUploads : messageUploads as bool,
+      amplitudeApiKey: amplitudeApiKey == freezed
+          ? _value.amplitudeApiKey
+          : amplitudeApiKey as String,
+      minSearchLength: minSearchLength == freezed
+          ? _value.minSearchLength
+          : minSearchLength as int,
+      resendTimeout: resendTimeout == freezed
+          ? _value.resendTimeout
+          : resendTimeout as int,
+      sentryDsnJS:
+          sentryDsnJS == freezed ? _value.sentryDsnJS : sentryDsnJS as String,
+      serverDrafts:
+          serverDrafts == freezed ? _value.serverDrafts : serverDrafts as bool,
+      firebaseAppId: firebaseAppId == freezed
+          ? _value.firebaseAppId
+          : firebaseAppId as String,
+      firebaseSenderId: firebaseSenderId == freezed
+          ? _value.firebaseSenderId
+          : firebaseSenderId as String,
+      firebaseApiKey: firebaseApiKey == freezed
+          ? _value.firebaseApiKey
+          : firebaseApiKey as String,
+      firebaseAuthDomain: firebaseAuthDomain == freezed
+          ? _value.firebaseAuthDomain
+          : firebaseAuthDomain as String,
+      firebaseDatabaseUrl: firebaseDatabaseUrl == freezed
+          ? _value.firebaseDatabaseUrl
+          : firebaseDatabaseUrl as String,
+      firebaseProjectId: firebaseProjectId == freezed
+          ? _value.firebaseProjectId
+          : firebaseProjectId as String,
+      firebaseStorageBucket: firebaseStorageBucket == freezed
+          ? _value.firebaseStorageBucket
+          : firebaseStorageBucket as String,
+      callsVersion:
+          callsVersion == freezed ? _value.callsVersion : callsVersion as int,
+      mobileCalls:
+          mobileCalls == freezed ? _value.mobileCalls : mobileCalls as bool,
+      callsRecord:
+          callsRecord == freezed ? _value.callsRecord : callsRecord as bool,
+      onlyOneDevicePerCall: onlyOneDevicePerCall == freezed
+          ? _value.onlyOneDevicePerCall
+          : onlyOneDevicePerCall as bool,
+      maxParticipantsPerCall: maxParticipantsPerCall == freezed
+          ? _value.maxParticipantsPerCall
+          : maxParticipantsPerCall as int,
+      safariPushId: safariPushId == freezed
+          ? _value.safariPushId
+          : safariPushId as String,
+      messageUploads: messageUploads == freezed
+          ? _value.messageUploads
+          : messageUploads as bool,
       terms: terms == freezed ? _value.terms : terms as Terms,
-      singleGroupTeams: singleGroupTeams == freezed ? _value.singleGroupTeams : singleGroupTeams as bool,
+      singleGroupTeams: singleGroupTeams == freezed
+          ? _value.singleGroupTeams
+          : singleGroupTeams as bool,
       wikiPages: wikiPages == freezed ? _value.wikiPages : wikiPages as bool,
-      allowAdminMute: allowAdminMute == freezed ? _value.allowAdminMute : allowAdminMute as bool,
-      defaultWallpaper: defaultWallpaper == freezed ? _value.defaultWallpaper : defaultWallpaper as Wallpaper,
-      supportEmail: supportEmail == freezed ? _value.supportEmail : supportEmail as String,
-      customTheme: customTheme == freezed ? _value.customTheme : customTheme as bool,
-      taskChecklist: taskChecklist == freezed ? _value.taskChecklist : taskChecklist as bool,
-      readonlyGroups: readonlyGroups == freezed ? _value.readonlyGroups : readonlyGroups as bool,
-      taskDashboard: taskDashboard == freezed ? _value.taskDashboard : taskDashboard as bool,
-      taskMessages: taskMessages == freezed ? _value.taskMessages : taskMessages as bool,
-      taskPublic: taskPublic == freezed ? _value.taskPublic : taskPublic as bool,
+      allowAdminMute: allowAdminMute == freezed
+          ? _value.allowAdminMute
+          : allowAdminMute as bool,
+      defaultWallpaper: defaultWallpaper == freezed
+          ? _value.defaultWallpaper
+          : defaultWallpaper as Wallpaper,
+      supportEmail: supportEmail == freezed
+          ? _value.supportEmail
+          : supportEmail as String,
+      customTheme:
+          customTheme == freezed ? _value.customTheme : customTheme as bool,
+      taskChecklist: taskChecklist == freezed
+          ? _value.taskChecklist
+          : taskChecklist as bool,
+      readonlyGroups: readonlyGroups == freezed
+          ? _value.readonlyGroups
+          : readonlyGroups as bool,
+      taskDashboard: taskDashboard == freezed
+          ? _value.taskDashboard
+          : taskDashboard as bool,
+      taskMessages:
+          taskMessages == freezed ? _value.taskMessages : taskMessages as bool,
+      taskPublic:
+          taskPublic == freezed ? _value.taskPublic : taskPublic as bool,
       taskTags: taskTags == freezed ? _value.taskTags : taskTags as bool,
       calls: calls == freezed ? _value.calls : calls as bool,
-      minAppVersion: minAppVersion == freezed ? _value.minAppVersion : minAppVersion as String,
+      minAppVersion: minAppVersion == freezed
+          ? _value.minAppVersion
+          : minAppVersion as String,
     ));
   }
 }
@@ -1165,91 +1738,253 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
 /// @nodoc
 class _$_Features implements _Features {
   const _$_Features(
-      {@required @JsonKey(name: 'host') this.host,
-      @required @JsonKey(name: 'build') this.build,
-      @required @JsonKey(name: 'desktop_version') this.desktopVersion,
-      @required @JsonKey(name: 'front_version') this.frontVersion,
-      @required @JsonKey(name: 'app_title') this.appTitle,
-      @JsonKey(name: 'landing_url') this.landingUrl,
-      @required @JsonKey(name: 'app_schemes') this.appSchemes,
-      @required @JsonKey(name: 'userver') this.userver,
-      @required @JsonKey(name: 'ios_app') this.iOSApp,
-      @required @JsonKey(name: 'android_app') this.androidApp,
-      @required @JsonKey(name: 'ios_corp_app') this.iOSCorpApp,
-      @required @JsonKey(name: 'android_corp_app') this.androidCorpApp,
-      @required @JsonKey(name: 'theme') this.theme,
-      @required @JsonKey(name: 'min_ios_version') this.minIOSVersion,
-      @required @JsonKey(name: 'min_android_version') this.minAndroidVersion,
-      @required @JsonKey(name: 'min_corp_ios_version') this.minCorpIOSVersion,
-      @required @JsonKey(name: 'min_corp_android_version') this.minCorpAndroidVersion,
-      @required @JsonKey(name: 'free_registration') this.freeRegistration,
-      @required @JsonKey(name: 'max_upload_mb') this.maxUploadMb,
-      @required @JsonKey(name: 'max_linked_messages') this.maxLinkedMessages,
-      @required @JsonKey(name: 'max_message_uploads') this.maxMessageUploads,
-      @required @JsonKey(name: 'max_username_part_length') this.maxUsernamePartLength,
-      @required @JsonKey(name: 'max_group_title_length') this.maxGroupTitleLength,
-      @required @JsonKey(name: 'max_role_length') this.maxRoleLength,
-      @required @JsonKey(name: 'max_mood_length') this.maxMoodLength,
-      @required @JsonKey(name: 'max_message_length') this.maxMessageLength,
-      @required @JsonKey(name: 'max_section_length') this.maxSectionLength,
-      @required @JsonKey(name: 'max_project_length') this.maxProjectLength,
-      @required @JsonKey(name: 'max_tag_length') this.maxTagLength,
-      @required @JsonKey(name: 'max_task_title_length') this.maxTaskTitleLength,
-      @required @JsonKey(name: 'max_color_rule_description_length') this.maxColorRuleDescriptionLength,
-      @required @JsonKey(name: 'max_url_length') this.maxUrlLength,
-      @required @JsonKey(name: 'max_integration_comment_length') this.maxIntegrationCommentLength,
-      @required @JsonKey(name: 'max_teams') this.maxTeams,
-      @required @JsonKey(name: 'max_message_search_limit') this.maxMessageSearchLimit,
-      @JsonKey(name: 'multi_nodes') this.multiNodes,
-      @required @JsonKey(name: 'afk_age') this.afkAge,
-      @JsonKey(name: 'auth_by_password') this.authByPassword,
-      @JsonKey(name: 'auth_by_qr_code') this.authByQrCode,
-      @JsonKey(name: 'auth_by_sms') this.authBySms,
-      @JsonKey(name: 'auth_2fa') this.auth2fa,
-      @JsonKey(name: 'oauth_services') this.oAuthServices,
-      @required @JsonKey(name: 'ice_servers') this.iCEServers,
-      @required @JsonKey(name: 'custom_server') this.customServer,
-      @required @JsonKey(name: 'installation_type') this.installationType,
-      @JsonKey(name: 'installation_title') this.installationTitle,
-      @JsonKey(name: 'custom_app_icon_name') this.customAppIconName,
-      @JsonKey(name: 'app_login_background') this.appLoginBackground,
-      @JsonKey(name: 'web_login_background') this.webLoginBackground,
-      @required @JsonKey(name: 'is_testing') this.isTesting,
-      @required @JsonKey(name: 'metrika') this.metrika,
-      @JsonKey(name: 'amplitude_api_key') this.amplitudeApiKey,
-      @required @JsonKey(name: 'min_search_length') this.minSearchLength,
-      @required @JsonKey(name: 'resend_timeout') this.resendTimeout,
-      @required @JsonKey(name: 'sentry_dsn_js') this.sentryDsnJS,
-      @required @JsonKey(name: 'server_drafts') this.serverDrafts,
-      @required @JsonKey(name: 'firebase_app_id') this.firebaseAppId,
-      @required @JsonKey(name: 'firebase_sender_id') this.firebaseSenderId,
-      @required @JsonKey(name: 'firebase_api_key') this.firebaseApiKey,
-      @required @JsonKey(name: 'firebase_auth_domain') this.firebaseAuthDomain,
-      @required @JsonKey(name: 'firebase_database_url') this.firebaseDatabaseUrl,
-      @required @JsonKey(name: 'firebase_project_id') this.firebaseProjectId,
-      @required @JsonKey(name: 'firebase_storage_bucket') this.firebaseStorageBucket,
-      @required @JsonKey(name: 'calls_version') this.callsVersion,
-      @required @JsonKey(name: 'mobile_calls') this.mobileCalls,
-      @required @JsonKey(name: 'calls_record') this.callsRecord,
-      @JsonKey(name: 'only_one_device_per_call') this.onlyOneDevicePerCall,
-      @JsonKey(name: 'max_participants_per_call') this.maxParticipantsPerCall,
-      @required @JsonKey(name: 'safari_push_id') this.safariPushId,
-      @required @JsonKey(name: 'message_uploads') this.messageUploads,
-      @required @JsonKey(name: 'terms') this.terms,
-      @required @JsonKey(name: 'single_group_teams') this.singleGroupTeams,
-      @required @JsonKey(name: 'wiki_pages') this.wikiPages,
-      @JsonKey(name: 'allow_admin_mute') this.allowAdminMute,
-      @JsonKey(name: 'default_wallpaper') this.defaultWallpaper,
-      @required @JsonKey(name: 'support_email') this.supportEmail,
-      @required @JsonKey(name: 'custom_theme') this.customTheme,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_checklist') this.taskChecklist,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'readonly_groups') this.readonlyGroups,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_dashboard') this.taskDashboard,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_messages') this.taskMessages,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_public') this.taskPublic,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') this.taskTags,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'calls') this.calls,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') this.minAppVersion})
+      {@required
+      @JsonKey(name: 'host')
+          this.host,
+      @required
+      @JsonKey(name: 'build')
+          this.build,
+      @required
+      @JsonKey(name: 'desktop_version')
+          this.desktopVersion,
+      @required
+      @JsonKey(name: 'front_version')
+          this.frontVersion,
+      @required
+      @JsonKey(name: 'app_title')
+          this.appTitle,
+      @JsonKey(name: 'landing_url')
+          this.landingUrl,
+      @required
+      @JsonKey(name: 'app_schemes')
+          this.appSchemes,
+      @required
+      @JsonKey(name: 'userver')
+          this.userver,
+      @required
+      @JsonKey(name: 'ios_app')
+          this.iOSApp,
+      @required
+      @JsonKey(name: 'android_app')
+          this.androidApp,
+      @required
+      @JsonKey(name: 'ios_corp_app')
+          this.iOSCorpApp,
+      @required
+      @JsonKey(name: 'android_corp_app')
+          this.androidCorpApp,
+      @required
+      @JsonKey(name: 'theme')
+          this.theme,
+      @required
+      @JsonKey(name: 'min_ios_version')
+          this.minIOSVersion,
+      @required
+      @JsonKey(name: 'min_android_version')
+          this.minAndroidVersion,
+      @required
+      @JsonKey(name: 'min_corp_ios_version')
+          this.minCorpIOSVersion,
+      @required
+      @JsonKey(name: 'min_corp_android_version')
+          this.minCorpAndroidVersion,
+      @required
+      @JsonKey(name: 'free_registration')
+          this.freeRegistration,
+      @required
+      @JsonKey(name: 'max_upload_mb')
+          this.maxUploadMb,
+      @required
+      @JsonKey(name: 'max_linked_messages')
+          this.maxLinkedMessages,
+      @required
+      @JsonKey(name: 'max_message_uploads')
+          this.maxMessageUploads,
+      @required
+      @JsonKey(name: 'max_username_part_length')
+          this.maxUsernamePartLength,
+      @required
+      @JsonKey(name: 'max_group_title_length')
+          this.maxGroupTitleLength,
+      @required
+      @JsonKey(name: 'max_role_length')
+          this.maxRoleLength,
+      @required
+      @JsonKey(name: 'max_mood_length')
+          this.maxMoodLength,
+      @required
+      @JsonKey(name: 'max_message_length')
+          this.maxMessageLength,
+      @required
+      @JsonKey(name: 'max_section_length')
+          this.maxSectionLength,
+      @required
+      @JsonKey(name: 'max_project_length')
+          this.maxProjectLength,
+      @required
+      @JsonKey(name: 'max_tag_length')
+          this.maxTagLength,
+      @required
+      @JsonKey(name: 'max_task_title_length')
+          this.maxTaskTitleLength,
+      @required
+      @JsonKey(name: 'max_color_rule_description_length')
+          this.maxColorRuleDescriptionLength,
+      @required
+      @JsonKey(name: 'max_url_length')
+          this.maxUrlLength,
+      @required
+      @JsonKey(name: 'max_integration_comment_length')
+          this.maxIntegrationCommentLength,
+      @required
+      @JsonKey(name: 'max_teams')
+          this.maxTeams,
+      @required
+      @JsonKey(name: 'max_message_search_limit')
+          this.maxMessageSearchLimit,
+      @JsonKey(name: 'multi_nodes')
+          this.multiNodes,
+      @required
+      @JsonKey(name: 'afk_age')
+          this.afkAge,
+      @JsonKey(name: 'auth_by_password')
+          this.authByPassword,
+      @JsonKey(name: 'auth_by_qr_code')
+          this.authByQrCode,
+      @JsonKey(name: 'auth_by_sms')
+          this.authBySms,
+      @JsonKey(name: 'auth_2fa')
+          this.auth2fa,
+      @JsonKey(name: 'oauth_services')
+          this.oAuthServices,
+      @required
+      @JsonKey(name: 'ice_servers')
+          this.iCEServers,
+      @required
+      @JsonKey(name: 'custom_server')
+          this.customServer,
+      @required
+      @JsonKey(name: 'installation_type')
+          this.installationType,
+      @JsonKey(name: 'installation_title')
+          this.installationTitle,
+      @JsonKey(name: 'custom_app_icon_name')
+          this.customAppIconName,
+      @JsonKey(name: 'app_login_background')
+          this.appLoginBackground,
+      @JsonKey(name: 'web_login_background')
+          this.webLoginBackground,
+      @required
+      @JsonKey(name: 'is_testing')
+          this.isTesting,
+      @required
+      @JsonKey(name: 'metrika')
+          this.metrika,
+      @JsonKey(name: 'amplitude_api_key')
+          this.amplitudeApiKey,
+      @required
+      @JsonKey(name: 'min_search_length')
+          this.minSearchLength,
+      @required
+      @JsonKey(name: 'resend_timeout')
+          this.resendTimeout,
+      @required
+      @JsonKey(name: 'sentry_dsn_js')
+          this.sentryDsnJS,
+      @required
+      @JsonKey(name: 'server_drafts')
+          this.serverDrafts,
+      @required
+      @JsonKey(name: 'firebase_app_id')
+          this.firebaseAppId,
+      @required
+      @JsonKey(name: 'firebase_sender_id')
+          this.firebaseSenderId,
+      @required
+      @JsonKey(name: 'firebase_api_key')
+          this.firebaseApiKey,
+      @required
+      @JsonKey(name: 'firebase_auth_domain')
+          this.firebaseAuthDomain,
+      @required
+      @JsonKey(name: 'firebase_database_url')
+          this.firebaseDatabaseUrl,
+      @required
+      @JsonKey(name: 'firebase_project_id')
+          this.firebaseProjectId,
+      @required
+      @JsonKey(name: 'firebase_storage_bucket')
+          this.firebaseStorageBucket,
+      @required
+      @JsonKey(name: 'calls_version')
+          this.callsVersion,
+      @required
+      @JsonKey(name: 'mobile_calls')
+          this.mobileCalls,
+      @required
+      @JsonKey(name: 'calls_record')
+          this.callsRecord,
+      @JsonKey(name: 'only_one_device_per_call')
+          this.onlyOneDevicePerCall,
+      @JsonKey(name: 'max_participants_per_call')
+          this.maxParticipantsPerCall,
+      @required
+      @JsonKey(name: 'safari_push_id')
+          this.safariPushId,
+      @required
+      @JsonKey(name: 'message_uploads')
+          this.messageUploads,
+      @required
+      @JsonKey(name: 'terms')
+          this.terms,
+      @required
+      @JsonKey(name: 'single_group_teams')
+          this.singleGroupTeams,
+      @required
+      @JsonKey(name: 'wiki_pages')
+          this.wikiPages,
+      @JsonKey(name: 'allow_admin_mute')
+          this.allowAdminMute,
+      @JsonKey(name: 'default_wallpaper')
+          this.defaultWallpaper,
+      @required
+      @JsonKey(name: 'support_email')
+          this.supportEmail,
+      @required
+      @JsonKey(name: 'custom_theme')
+          this.customTheme,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_checklist')
+          this.taskChecklist,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'readonly_groups')
+          this.readonlyGroups,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_dashboard')
+          this.taskDashboard,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_messages')
+          this.taskMessages,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_public')
+          this.taskPublic,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_tags')
+          this.taskTags,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'calls')
+          this.calls,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'min_app_version')
+          this.minAppVersion})
       : assert(host != null),
         assert(build != null),
         assert(desktopVersion != null),
@@ -1320,7 +2055,8 @@ class _$_Features implements _Features {
         assert(calls != null),
         assert(minAppVersion != null);
 
-  factory _$_Features.fromJson(Map<String, dynamic> json) => _$_$_FeaturesFromJson(json);
+  factory _$_Features.fromJson(Map<String, dynamic> json) =>
+      _$_$_FeaturesFromJson(json);
 
   @override
 
@@ -1765,102 +2501,100 @@ class _$_Features implements _Features {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Features &&
-            (identical(other.host, host) || const DeepCollectionEquality().equals(other.host, host)) &&
-            (identical(other.build, build) || const DeepCollectionEquality().equals(other.build, build)) &&
+            (identical(other.host, host) ||
+                const DeepCollectionEquality().equals(other.host, host)) &&
+            (identical(other.build, build) ||
+                const DeepCollectionEquality().equals(other.build, build)) &&
             (identical(other.desktopVersion, desktopVersion) ||
-                const DeepCollectionEquality().equals(other.desktopVersion, desktopVersion)) &&
+                const DeepCollectionEquality()
+                    .equals(other.desktopVersion, desktopVersion)) &&
             (identical(other.frontVersion, frontVersion) ||
-                const DeepCollectionEquality().equals(other.frontVersion, frontVersion)) &&
-            (identical(other.appTitle, appTitle) || const DeepCollectionEquality().equals(other.appTitle, appTitle)) &&
+                const DeepCollectionEquality()
+                    .equals(other.frontVersion, frontVersion)) &&
+            (identical(other.appTitle, appTitle) ||
+                const DeepCollectionEquality()
+                    .equals(other.appTitle, appTitle)) &&
             (identical(other.landingUrl, landingUrl) ||
-                const DeepCollectionEquality().equals(other.landingUrl, landingUrl)) &&
+                const DeepCollectionEquality()
+                    .equals(other.landingUrl, landingUrl)) &&
             (identical(other.appSchemes, appSchemes) ||
-                const DeepCollectionEquality().equals(other.appSchemes, appSchemes)) &&
-            (identical(other.userver, userver) || const DeepCollectionEquality().equals(other.userver, userver)) &&
-            (identical(other.iOSApp, iOSApp) || const DeepCollectionEquality().equals(other.iOSApp, iOSApp)) &&
+                const DeepCollectionEquality()
+                    .equals(other.appSchemes, appSchemes)) &&
+            (identical(other.userver, userver) ||
+                const DeepCollectionEquality()
+                    .equals(other.userver, userver)) &&
+            (identical(other.iOSApp, iOSApp) ||
+                const DeepCollectionEquality().equals(other.iOSApp, iOSApp)) &&
             (identical(other.androidApp, androidApp) ||
-                const DeepCollectionEquality().equals(other.androidApp, androidApp)) &&
+                const DeepCollectionEquality()
+                    .equals(other.androidApp, androidApp)) &&
             (identical(other.iOSCorpApp, iOSCorpApp) ||
-                const DeepCollectionEquality().equals(other.iOSCorpApp, iOSCorpApp)) &&
+                const DeepCollectionEquality()
+                    .equals(other.iOSCorpApp, iOSCorpApp)) &&
             (identical(other.androidCorpApp, androidCorpApp) ||
-                const DeepCollectionEquality().equals(other.androidCorpApp, androidCorpApp)) &&
-            (identical(other.theme, theme) || const DeepCollectionEquality().equals(other.theme, theme)) &&
+                const DeepCollectionEquality()
+                    .equals(other.androidCorpApp, androidCorpApp)) &&
+            (identical(other.theme, theme) ||
+                const DeepCollectionEquality().equals(other.theme, theme)) &&
             (identical(other.minIOSVersion, minIOSVersion) ||
-                const DeepCollectionEquality().equals(other.minIOSVersion, minIOSVersion)) &&
+                const DeepCollectionEquality()
+                    .equals(other.minIOSVersion, minIOSVersion)) &&
             (identical(other.minAndroidVersion, minAndroidVersion) ||
-                const DeepCollectionEquality().equals(other.minAndroidVersion, minAndroidVersion)) &&
+                const DeepCollectionEquality()
+                    .equals(other.minAndroidVersion, minAndroidVersion)) &&
             (identical(other.minCorpIOSVersion, minCorpIOSVersion) ||
-                const DeepCollectionEquality().equals(other.minCorpIOSVersion, minCorpIOSVersion)) &&
+                const DeepCollectionEquality()
+                    .equals(other.minCorpIOSVersion, minCorpIOSVersion)) &&
             (identical(other.minCorpAndroidVersion, minCorpAndroidVersion) ||
-                const DeepCollectionEquality().equals(other.minCorpAndroidVersion, minCorpAndroidVersion)) &&
+                const DeepCollectionEquality().equals(
+                    other.minCorpAndroidVersion, minCorpAndroidVersion)) &&
             (identical(other.freeRegistration, freeRegistration) ||
-                const DeepCollectionEquality().equals(other.freeRegistration, freeRegistration)) &&
+                const DeepCollectionEquality()
+                    .equals(other.freeRegistration, freeRegistration)) &&
             (identical(other.maxUploadMb, maxUploadMb) ||
-                const DeepCollectionEquality().equals(other.maxUploadMb, maxUploadMb)) &&
+                const DeepCollectionEquality()
+                    .equals(other.maxUploadMb, maxUploadMb)) &&
             (identical(other.maxLinkedMessages, maxLinkedMessages) ||
-                const DeepCollectionEquality().equals(other.maxLinkedMessages, maxLinkedMessages)) &&
+                const DeepCollectionEquality()
+                    .equals(other.maxLinkedMessages, maxLinkedMessages)) &&
             (identical(other.maxMessageUploads, maxMessageUploads) ||
-                const DeepCollectionEquality().equals(other.maxMessageUploads, maxMessageUploads)) &&
+                const DeepCollectionEquality()
+                    .equals(other.maxMessageUploads, maxMessageUploads)) &&
             (identical(other.maxUsernamePartLength, maxUsernamePartLength) ||
-                const DeepCollectionEquality().equals(other.maxUsernamePartLength, maxUsernamePartLength)) &&
+                const DeepCollectionEquality().equals(
+                    other.maxUsernamePartLength, maxUsernamePartLength)) &&
             (identical(other.maxGroupTitleLength, maxGroupTitleLength) ||
-                const DeepCollectionEquality().equals(other.maxGroupTitleLength, maxGroupTitleLength)) &&
-            (identical(other.maxRoleLength, maxRoleLength) ||
-                const DeepCollectionEquality().equals(other.maxRoleLength, maxRoleLength)) &&
-            (identical(other.maxMoodLength, maxMoodLength) ||
-                const DeepCollectionEquality().equals(other.maxMoodLength, maxMoodLength)) &&
-            (identical(other.maxMessageLength, maxMessageLength) ||
-                const DeepCollectionEquality().equals(other.maxMessageLength, maxMessageLength)) &&
-            (identical(other.maxSectionLength, maxSectionLength) ||
-                const DeepCollectionEquality().equals(other.maxSectionLength, maxSectionLength)) &&
-            (identical(other.maxProjectLength, maxProjectLength) ||
-                const DeepCollectionEquality().equals(other.maxProjectLength, maxProjectLength)) &&
-            (identical(other.maxTagLength, maxTagLength) ||
-                const DeepCollectionEquality().equals(other.maxTagLength, maxTagLength)) &&
-            (identical(other.maxTaskTitleLength, maxTaskTitleLength) ||
-                const DeepCollectionEquality().equals(other.maxTaskTitleLength, maxTaskTitleLength)) &&
-            (identical(other.maxColorRuleDescriptionLength, maxColorRuleDescriptionLength) ||
                 const DeepCollectionEquality()
-                    .equals(other.maxColorRuleDescriptionLength, maxColorRuleDescriptionLength)) &&
-            (identical(other.maxUrlLength, maxUrlLength) ||
-                const DeepCollectionEquality().equals(other.maxUrlLength, maxUrlLength)) &&
-            (identical(other.maxIntegrationCommentLength, maxIntegrationCommentLength) ||
-                const DeepCollectionEquality()
-                    .equals(other.maxIntegrationCommentLength, maxIntegrationCommentLength)) &&
+                    .equals(other.maxGroupTitleLength, maxGroupTitleLength)) &&
+            (identical(other.maxRoleLength, maxRoleLength) || const DeepCollectionEquality().equals(other.maxRoleLength, maxRoleLength)) &&
+            (identical(other.maxMoodLength, maxMoodLength) || const DeepCollectionEquality().equals(other.maxMoodLength, maxMoodLength)) &&
+            (identical(other.maxMessageLength, maxMessageLength) || const DeepCollectionEquality().equals(other.maxMessageLength, maxMessageLength)) &&
+            (identical(other.maxSectionLength, maxSectionLength) || const DeepCollectionEquality().equals(other.maxSectionLength, maxSectionLength)) &&
+            (identical(other.maxProjectLength, maxProjectLength) || const DeepCollectionEquality().equals(other.maxProjectLength, maxProjectLength)) &&
+            (identical(other.maxTagLength, maxTagLength) || const DeepCollectionEquality().equals(other.maxTagLength, maxTagLength)) &&
+            (identical(other.maxTaskTitleLength, maxTaskTitleLength) || const DeepCollectionEquality().equals(other.maxTaskTitleLength, maxTaskTitleLength)) &&
+            (identical(other.maxColorRuleDescriptionLength, maxColorRuleDescriptionLength) || const DeepCollectionEquality().equals(other.maxColorRuleDescriptionLength, maxColorRuleDescriptionLength)) &&
+            (identical(other.maxUrlLength, maxUrlLength) || const DeepCollectionEquality().equals(other.maxUrlLength, maxUrlLength)) &&
+            (identical(other.maxIntegrationCommentLength, maxIntegrationCommentLength) || const DeepCollectionEquality().equals(other.maxIntegrationCommentLength, maxIntegrationCommentLength)) &&
             (identical(other.maxTeams, maxTeams) || const DeepCollectionEquality().equals(other.maxTeams, maxTeams)) &&
-            (identical(other.maxMessageSearchLimit, maxMessageSearchLimit) ||
-                const DeepCollectionEquality().equals(other.maxMessageSearchLimit, maxMessageSearchLimit)) &&
-            (identical(other.multiNodes, multiNodes) ||
-                const DeepCollectionEquality().equals(other.multiNodes, multiNodes)) &&
+            (identical(other.maxMessageSearchLimit, maxMessageSearchLimit) || const DeepCollectionEquality().equals(other.maxMessageSearchLimit, maxMessageSearchLimit)) &&
+            (identical(other.multiNodes, multiNodes) || const DeepCollectionEquality().equals(other.multiNodes, multiNodes)) &&
             (identical(other.afkAge, afkAge) || const DeepCollectionEquality().equals(other.afkAge, afkAge)) &&
-            (identical(other.authByPassword, authByPassword) ||
-                const DeepCollectionEquality().equals(other.authByPassword, authByPassword)) &&
-            (identical(other.authByQrCode, authByQrCode) ||
-                const DeepCollectionEquality().equals(other.authByQrCode, authByQrCode)) &&
-            (identical(other.authBySms, authBySms) ||
-                const DeepCollectionEquality().equals(other.authBySms, authBySms)) &&
+            (identical(other.authByPassword, authByPassword) || const DeepCollectionEquality().equals(other.authByPassword, authByPassword)) &&
+            (identical(other.authByQrCode, authByQrCode) || const DeepCollectionEquality().equals(other.authByQrCode, authByQrCode)) &&
+            (identical(other.authBySms, authBySms) || const DeepCollectionEquality().equals(other.authBySms, authBySms)) &&
             (identical(other.auth2fa, auth2fa) || const DeepCollectionEquality().equals(other.auth2fa, auth2fa)) &&
-            (identical(other.oAuthServices, oAuthServices) ||
-                const DeepCollectionEquality().equals(other.oAuthServices, oAuthServices)) &&
-            (identical(other.iCEServers, iCEServers) ||
-                const DeepCollectionEquality().equals(other.iCEServers, iCEServers)) &&
-            (identical(other.customServer, customServer) ||
-                const DeepCollectionEquality().equals(other.customServer, customServer)) &&
-            (identical(other.installationType, installationType) ||
-                const DeepCollectionEquality().equals(other.installationType, installationType)) &&
-            (identical(other.installationTitle, installationTitle) ||
-                const DeepCollectionEquality().equals(other.installationTitle, installationTitle)) &&
-            (identical(other.customAppIconName, customAppIconName) ||
-                const DeepCollectionEquality().equals(other.customAppIconName, customAppIconName)) &&
-            (identical(other.appLoginBackground, appLoginBackground) ||
-                const DeepCollectionEquality().equals(other.appLoginBackground, appLoginBackground)) &&
-            (identical(other.webLoginBackground, webLoginBackground) ||
-                const DeepCollectionEquality().equals(other.webLoginBackground, webLoginBackground)) &&
-            (identical(other.isTesting, isTesting) ||
-                const DeepCollectionEquality().equals(other.isTesting, isTesting)) &&
+            (identical(other.oAuthServices, oAuthServices) || const DeepCollectionEquality().equals(other.oAuthServices, oAuthServices)) &&
+            (identical(other.iCEServers, iCEServers) || const DeepCollectionEquality().equals(other.iCEServers, iCEServers)) &&
+            (identical(other.customServer, customServer) || const DeepCollectionEquality().equals(other.customServer, customServer)) &&
+            (identical(other.installationType, installationType) || const DeepCollectionEquality().equals(other.installationType, installationType)) &&
+            (identical(other.installationTitle, installationTitle) || const DeepCollectionEquality().equals(other.installationTitle, installationTitle)) &&
+            (identical(other.customAppIconName, customAppIconName) || const DeepCollectionEquality().equals(other.customAppIconName, customAppIconName)) &&
+            (identical(other.appLoginBackground, appLoginBackground) || const DeepCollectionEquality().equals(other.appLoginBackground, appLoginBackground)) &&
+            (identical(other.webLoginBackground, webLoginBackground) || const DeepCollectionEquality().equals(other.webLoginBackground, webLoginBackground)) &&
+            (identical(other.isTesting, isTesting) || const DeepCollectionEquality().equals(other.isTesting, isTesting)) &&
             (identical(other.metrika, metrika) || const DeepCollectionEquality().equals(other.metrika, metrika)) &&
-            (identical(other.amplitudeApiKey, amplitudeApiKey) ||
-                const DeepCollectionEquality().equals(other.amplitudeApiKey, amplitudeApiKey)) &&
+            (identical(other.amplitudeApiKey, amplitudeApiKey) || const DeepCollectionEquality().equals(other.amplitudeApiKey, amplitudeApiKey)) &&
             (identical(other.minSearchLength, minSearchLength) || const DeepCollectionEquality().equals(other.minSearchLength, minSearchLength)) &&
             (identical(other.resendTimeout, resendTimeout) || const DeepCollectionEquality().equals(other.resendTimeout, resendTimeout)) &&
             (identical(other.sentryDsnJS, sentryDsnJS) || const DeepCollectionEquality().equals(other.sentryDsnJS, sentryDsnJS)) &&
@@ -1987,7 +2721,8 @@ class _$_Features implements _Features {
 
   @JsonKey(ignore: true)
   @override
-  _$FeaturesCopyWith<_Features> get copyWith => __$FeaturesCopyWithImpl<_Features>(this, _$identity);
+  _$FeaturesCopyWith<_Features> get copyWith =>
+      __$FeaturesCopyWithImpl<_Features>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -1997,91 +2732,253 @@ class _$_Features implements _Features {
 
 abstract class _Features implements Features {
   const factory _Features(
-      {@required @JsonKey(name: 'host') String host,
-      @required @JsonKey(name: 'build') String build,
-      @required @JsonKey(name: 'desktop_version') String desktopVersion,
-      @required @JsonKey(name: 'front_version') String frontVersion,
-      @required @JsonKey(name: 'app_title') String appTitle,
-      @JsonKey(name: 'landing_url') String landingUrl,
-      @required @JsonKey(name: 'app_schemes') List<String> appSchemes,
-      @required @JsonKey(name: 'userver') String userver,
-      @required @JsonKey(name: 'ios_app') String iOSApp,
-      @required @JsonKey(name: 'android_app') String androidApp,
-      @required @JsonKey(name: 'ios_corp_app') String iOSCorpApp,
-      @required @JsonKey(name: 'android_corp_app') String androidCorpApp,
-      @required @JsonKey(name: 'theme') String theme,
-      @required @JsonKey(name: 'min_ios_version') String minIOSVersion,
-      @required @JsonKey(name: 'min_android_version') String minAndroidVersion,
-      @required @JsonKey(name: 'min_corp_ios_version') String minCorpIOSVersion,
-      @required @JsonKey(name: 'min_corp_android_version') String minCorpAndroidVersion,
-      @required @JsonKey(name: 'free_registration') bool freeRegistration,
-      @required @JsonKey(name: 'max_upload_mb') int maxUploadMb,
-      @required @JsonKey(name: 'max_linked_messages') int maxLinkedMessages,
-      @required @JsonKey(name: 'max_message_uploads') int maxMessageUploads,
-      @required @JsonKey(name: 'max_username_part_length') int maxUsernamePartLength,
-      @required @JsonKey(name: 'max_group_title_length') int maxGroupTitleLength,
-      @required @JsonKey(name: 'max_role_length') int maxRoleLength,
-      @required @JsonKey(name: 'max_mood_length') int maxMoodLength,
-      @required @JsonKey(name: 'max_message_length') int maxMessageLength,
-      @required @JsonKey(name: 'max_section_length') int maxSectionLength,
-      @required @JsonKey(name: 'max_project_length') int maxProjectLength,
-      @required @JsonKey(name: 'max_tag_length') int maxTagLength,
-      @required @JsonKey(name: 'max_task_title_length') int maxTaskTitleLength,
-      @required @JsonKey(name: 'max_color_rule_description_length') int maxColorRuleDescriptionLength,
-      @required @JsonKey(name: 'max_url_length') int maxUrlLength,
-      @required @JsonKey(name: 'max_integration_comment_length') int maxIntegrationCommentLength,
-      @required @JsonKey(name: 'max_teams') int maxTeams,
-      @required @JsonKey(name: 'max_message_search_limit') int maxMessageSearchLimit,
-      @JsonKey(name: 'multi_nodes') bool multiNodes,
-      @required @JsonKey(name: 'afk_age') int afkAge,
-      @JsonKey(name: 'auth_by_password') bool authByPassword,
-      @JsonKey(name: 'auth_by_qr_code') bool authByQrCode,
-      @JsonKey(name: 'auth_by_sms') bool authBySms,
-      @JsonKey(name: 'auth_2fa') bool auth2fa,
-      @JsonKey(name: 'oauth_services') List<OAuthService> oAuthServices,
-      @required @JsonKey(name: 'ice_servers') List<ICEServer> iCEServers,
-      @required @JsonKey(name: 'custom_server') bool customServer,
-      @required @JsonKey(name: 'installation_type') String installationType,
-      @JsonKey(name: 'installation_title') String installationTitle,
-      @JsonKey(name: 'custom_app_icon_name') String customAppIconName,
-      @JsonKey(name: 'app_login_background') String appLoginBackground,
-      @JsonKey(name: 'web_login_background') String webLoginBackground,
-      @required @JsonKey(name: 'is_testing') bool isTesting,
-      @required @JsonKey(name: 'metrika') String metrika,
-      @JsonKey(name: 'amplitude_api_key') String amplitudeApiKey,
-      @required @JsonKey(name: 'min_search_length') int minSearchLength,
-      @required @JsonKey(name: 'resend_timeout') int resendTimeout,
-      @required @JsonKey(name: 'sentry_dsn_js') String sentryDsnJS,
-      @required @JsonKey(name: 'server_drafts') bool serverDrafts,
-      @required @JsonKey(name: 'firebase_app_id') String firebaseAppId,
-      @required @JsonKey(name: 'firebase_sender_id') String firebaseSenderId,
-      @required @JsonKey(name: 'firebase_api_key') String firebaseApiKey,
-      @required @JsonKey(name: 'firebase_auth_domain') String firebaseAuthDomain,
-      @required @JsonKey(name: 'firebase_database_url') String firebaseDatabaseUrl,
-      @required @JsonKey(name: 'firebase_project_id') String firebaseProjectId,
-      @required @JsonKey(name: 'firebase_storage_bucket') String firebaseStorageBucket,
-      @required @JsonKey(name: 'calls_version') int callsVersion,
-      @required @JsonKey(name: 'mobile_calls') bool mobileCalls,
-      @required @JsonKey(name: 'calls_record') bool callsRecord,
-      @JsonKey(name: 'only_one_device_per_call') bool onlyOneDevicePerCall,
-      @JsonKey(name: 'max_participants_per_call') int maxParticipantsPerCall,
-      @required @JsonKey(name: 'safari_push_id') String safariPushId,
-      @required @JsonKey(name: 'message_uploads') bool messageUploads,
-      @required @JsonKey(name: 'terms') Terms terms,
-      @required @JsonKey(name: 'single_group_teams') bool singleGroupTeams,
-      @required @JsonKey(name: 'wiki_pages') bool wikiPages,
-      @JsonKey(name: 'allow_admin_mute') bool allowAdminMute,
-      @JsonKey(name: 'default_wallpaper') Wallpaper defaultWallpaper,
-      @required @JsonKey(name: 'support_email') String supportEmail,
-      @required @JsonKey(name: 'custom_theme') bool customTheme,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_checklist') bool taskChecklist,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'readonly_groups') bool readonlyGroups,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_dashboard') bool taskDashboard,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_messages') bool taskMessages,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_public') bool taskPublic,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') bool taskTags,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'calls') bool calls,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion}) = _$_Features;
+      {@required
+      @JsonKey(name: 'host')
+          String host,
+      @required
+      @JsonKey(name: 'build')
+          String build,
+      @required
+      @JsonKey(name: 'desktop_version')
+          String desktopVersion,
+      @required
+      @JsonKey(name: 'front_version')
+          String frontVersion,
+      @required
+      @JsonKey(name: 'app_title')
+          String appTitle,
+      @JsonKey(name: 'landing_url')
+          String landingUrl,
+      @required
+      @JsonKey(name: 'app_schemes')
+          List<String> appSchemes,
+      @required
+      @JsonKey(name: 'userver')
+          String userver,
+      @required
+      @JsonKey(name: 'ios_app')
+          String iOSApp,
+      @required
+      @JsonKey(name: 'android_app')
+          String androidApp,
+      @required
+      @JsonKey(name: 'ios_corp_app')
+          String iOSCorpApp,
+      @required
+      @JsonKey(name: 'android_corp_app')
+          String androidCorpApp,
+      @required
+      @JsonKey(name: 'theme')
+          String theme,
+      @required
+      @JsonKey(name: 'min_ios_version')
+          String minIOSVersion,
+      @required
+      @JsonKey(name: 'min_android_version')
+          String minAndroidVersion,
+      @required
+      @JsonKey(name: 'min_corp_ios_version')
+          String minCorpIOSVersion,
+      @required
+      @JsonKey(name: 'min_corp_android_version')
+          String minCorpAndroidVersion,
+      @required
+      @JsonKey(name: 'free_registration')
+          bool freeRegistration,
+      @required
+      @JsonKey(name: 'max_upload_mb')
+          int maxUploadMb,
+      @required
+      @JsonKey(name: 'max_linked_messages')
+          int maxLinkedMessages,
+      @required
+      @JsonKey(name: 'max_message_uploads')
+          int maxMessageUploads,
+      @required
+      @JsonKey(name: 'max_username_part_length')
+          int maxUsernamePartLength,
+      @required
+      @JsonKey(name: 'max_group_title_length')
+          int maxGroupTitleLength,
+      @required
+      @JsonKey(name: 'max_role_length')
+          int maxRoleLength,
+      @required
+      @JsonKey(name: 'max_mood_length')
+          int maxMoodLength,
+      @required
+      @JsonKey(name: 'max_message_length')
+          int maxMessageLength,
+      @required
+      @JsonKey(name: 'max_section_length')
+          int maxSectionLength,
+      @required
+      @JsonKey(name: 'max_project_length')
+          int maxProjectLength,
+      @required
+      @JsonKey(name: 'max_tag_length')
+          int maxTagLength,
+      @required
+      @JsonKey(name: 'max_task_title_length')
+          int maxTaskTitleLength,
+      @required
+      @JsonKey(name: 'max_color_rule_description_length')
+          int maxColorRuleDescriptionLength,
+      @required
+      @JsonKey(name: 'max_url_length')
+          int maxUrlLength,
+      @required
+      @JsonKey(name: 'max_integration_comment_length')
+          int maxIntegrationCommentLength,
+      @required
+      @JsonKey(name: 'max_teams')
+          int maxTeams,
+      @required
+      @JsonKey(name: 'max_message_search_limit')
+          int maxMessageSearchLimit,
+      @JsonKey(name: 'multi_nodes')
+          bool multiNodes,
+      @required
+      @JsonKey(name: 'afk_age')
+          int afkAge,
+      @JsonKey(name: 'auth_by_password')
+          bool authByPassword,
+      @JsonKey(name: 'auth_by_qr_code')
+          bool authByQrCode,
+      @JsonKey(name: 'auth_by_sms')
+          bool authBySms,
+      @JsonKey(name: 'auth_2fa')
+          bool auth2fa,
+      @JsonKey(name: 'oauth_services')
+          List<OAuthService> oAuthServices,
+      @required
+      @JsonKey(name: 'ice_servers')
+          List<ICEServer> iCEServers,
+      @required
+      @JsonKey(name: 'custom_server')
+          bool customServer,
+      @required
+      @JsonKey(name: 'installation_type')
+          String installationType,
+      @JsonKey(name: 'installation_title')
+          String installationTitle,
+      @JsonKey(name: 'custom_app_icon_name')
+          String customAppIconName,
+      @JsonKey(name: 'app_login_background')
+          String appLoginBackground,
+      @JsonKey(name: 'web_login_background')
+          String webLoginBackground,
+      @required
+      @JsonKey(name: 'is_testing')
+          bool isTesting,
+      @required
+      @JsonKey(name: 'metrika')
+          String metrika,
+      @JsonKey(name: 'amplitude_api_key')
+          String amplitudeApiKey,
+      @required
+      @JsonKey(name: 'min_search_length')
+          int minSearchLength,
+      @required
+      @JsonKey(name: 'resend_timeout')
+          int resendTimeout,
+      @required
+      @JsonKey(name: 'sentry_dsn_js')
+          String sentryDsnJS,
+      @required
+      @JsonKey(name: 'server_drafts')
+          bool serverDrafts,
+      @required
+      @JsonKey(name: 'firebase_app_id')
+          String firebaseAppId,
+      @required
+      @JsonKey(name: 'firebase_sender_id')
+          String firebaseSenderId,
+      @required
+      @JsonKey(name: 'firebase_api_key')
+          String firebaseApiKey,
+      @required
+      @JsonKey(name: 'firebase_auth_domain')
+          String firebaseAuthDomain,
+      @required
+      @JsonKey(name: 'firebase_database_url')
+          String firebaseDatabaseUrl,
+      @required
+      @JsonKey(name: 'firebase_project_id')
+          String firebaseProjectId,
+      @required
+      @JsonKey(name: 'firebase_storage_bucket')
+          String firebaseStorageBucket,
+      @required
+      @JsonKey(name: 'calls_version')
+          int callsVersion,
+      @required
+      @JsonKey(name: 'mobile_calls')
+          bool mobileCalls,
+      @required
+      @JsonKey(name: 'calls_record')
+          bool callsRecord,
+      @JsonKey(name: 'only_one_device_per_call')
+          bool onlyOneDevicePerCall,
+      @JsonKey(name: 'max_participants_per_call')
+          int maxParticipantsPerCall,
+      @required
+      @JsonKey(name: 'safari_push_id')
+          String safariPushId,
+      @required
+      @JsonKey(name: 'message_uploads')
+          bool messageUploads,
+      @required
+      @JsonKey(name: 'terms')
+          Terms terms,
+      @required
+      @JsonKey(name: 'single_group_teams')
+          bool singleGroupTeams,
+      @required
+      @JsonKey(name: 'wiki_pages')
+          bool wikiPages,
+      @JsonKey(name: 'allow_admin_mute')
+          bool allowAdminMute,
+      @JsonKey(name: 'default_wallpaper')
+          Wallpaper defaultWallpaper,
+      @required
+      @JsonKey(name: 'support_email')
+          String supportEmail,
+      @required
+      @JsonKey(name: 'custom_theme')
+          bool customTheme,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_checklist')
+          bool taskChecklist,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'readonly_groups')
+          bool readonlyGroups,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_dashboard')
+          bool taskDashboard,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_messages')
+          bool taskMessages,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_public')
+          bool taskPublic,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'task_tags')
+          bool taskTags,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'calls')
+          bool calls,
+      @required
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'min_app_version')
+          String minAppVersion}) = _$_Features;
 
   factory _Features.fromJson(Map<String, dynamic> json) = _$_Features.fromJson;
 

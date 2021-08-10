@@ -10,6 +10,8 @@ abstract class ICEServer with _$ICEServer {
   const factory ICEServer({
     /// URls.
     @JsonKey(name: 'urls') @required String urls,
+    
+    
   }) = _ICEServer;
 
   factory ICEServer.fromJson(Map<String, dynamic> json) => _$ICEServerFromJson(json);

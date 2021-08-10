@@ -10,12 +10,14 @@ abstract class IntegrationField with _$IntegrationField {
   const factory IntegrationField({
     /// Label.
     @JsonKey(name: 'label') @required String label,
-
+    
     /// Is field readonly.
     @JsonKey(name: 'readonly') @required bool readonly,
-
+    
     /// Current value.
     @JsonKey(name: 'value') @required String value,
+    
+    
   }) = _IntegrationField;
 
   factory IntegrationField.fromJson(Map<String, dynamic> json) => _$IntegrationFieldFromJson(json);

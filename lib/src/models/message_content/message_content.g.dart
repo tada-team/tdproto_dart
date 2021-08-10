@@ -34,11 +34,14 @@ _$_MessageContent _$_$_MessageContentFromJson(Map<String, dynamic> json) {
     phones: (json['phones'] as List)?.map((e) => e as String)?.toList(),
     emails: (json['emails'] as List)?.map((e) => e as String)?.toList(),
     stickerpack: json['stickerpack'] as String,
-    pdfVersion: json['pdf_version'] == null ? null : PdfVersion.fromJson(json['pdf_version'] as Map<String, dynamic>),
+    pdfVersion: json['pdf_version'] == null
+        ? null
+        : PdfVersion.fromJson(json['pdf_version'] as Map<String, dynamic>),
   );
 }
 
-Map<String, dynamic> _$_$_MessageContentToJson(_$_MessageContent instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_MessageContentToJson(_$_MessageContent instance) =>
+    <String, dynamic>{
       'text': instance.text,
       'type': instance.type,
       'subtype': instance.subtype,

@@ -17,7 +17,9 @@ class _$TagTearOff {
   const _$TagTearOff();
 
 // ignore: unused_element
-  _Tag call({@required @JsonKey(name: 'uid') String uid, @required @JsonKey(name: 'name') String name}) {
+  _Tag call(
+      {@required @JsonKey(name: 'uid') String uid,
+      @required @JsonKey(name: 'name') String name}) {
     return _Tag(
       uid: uid,
       name: name,
@@ -51,8 +53,10 @@ mixin _$Tag {
 
 /// @nodoc
 abstract class $TagCopyWith<$Res> {
-  factory $TagCopyWith(Tag value, $Res Function(Tag) then) = _$TagCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'uid') String uid, @JsonKey(name: 'name') String name});
+  factory $TagCopyWith(Tag value, $Res Function(Tag) then) =
+      _$TagCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'uid') String uid, @JsonKey(name: 'name') String name});
 }
 
 /// @nodoc
@@ -77,14 +81,18 @@ class _$TagCopyWithImpl<$Res> implements $TagCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$TagCopyWith<$Res> implements $TagCopyWith<$Res> {
-  factory _$TagCopyWith(_Tag value, $Res Function(_Tag) then) = __$TagCopyWithImpl<$Res>;
+  factory _$TagCopyWith(_Tag value, $Res Function(_Tag) then) =
+      __$TagCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'uid') String uid, @JsonKey(name: 'name') String name});
+  $Res call(
+      {@JsonKey(name: 'uid') String uid, @JsonKey(name: 'name') String name});
 }
 
 /// @nodoc
-class __$TagCopyWithImpl<$Res> extends _$TagCopyWithImpl<$Res> implements _$TagCopyWith<$Res> {
-  __$TagCopyWithImpl(_Tag _value, $Res Function(_Tag) _then) : super(_value, (v) => _then(v as _Tag));
+class __$TagCopyWithImpl<$Res> extends _$TagCopyWithImpl<$Res>
+    implements _$TagCopyWith<$Res> {
+  __$TagCopyWithImpl(_Tag _value, $Res Function(_Tag) _then)
+      : super(_value, (v) => _then(v as _Tag));
 
   @override
   _Tag get _value => super._value as _Tag;
@@ -105,7 +113,9 @@ class __$TagCopyWithImpl<$Res> extends _$TagCopyWithImpl<$Res> implements _$TagC
 
 /// @nodoc
 class _$_Tag implements _Tag {
-  const _$_Tag({@required @JsonKey(name: 'uid') this.uid, @required @JsonKey(name: 'name') this.name})
+  const _$_Tag(
+      {@required @JsonKey(name: 'uid') this.uid,
+      @required @JsonKey(name: 'name') this.name})
       : assert(uid != null),
         assert(name != null);
 
@@ -131,17 +141,22 @@ class _$_Tag implements _Tag {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Tag &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)));
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(uid) ^ const DeepCollectionEquality().hash(name);
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(uid) ^
+      const DeepCollectionEquality().hash(name);
 
   @JsonKey(ignore: true)
   @override
-  _$TagCopyWith<_Tag> get copyWith => __$TagCopyWithImpl<_Tag>(this, _$identity);
+  _$TagCopyWith<_Tag> get copyWith =>
+      __$TagCopyWithImpl<_Tag>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -150,8 +165,9 @@ class _$_Tag implements _Tag {
 }
 
 abstract class _Tag implements Tag {
-  const factory _Tag({@required @JsonKey(name: 'uid') String uid, @required @JsonKey(name: 'name') String name}) =
-      _$_Tag;
+  const factory _Tag(
+      {@required @JsonKey(name: 'uid') String uid,
+      @required @JsonKey(name: 'name') String name}) = _$_Tag;
 
   factory _Tag.fromJson(Map<String, dynamic> json) = _$_Tag.fromJson;
 

@@ -14,12 +14,14 @@ _$_Stickerpack _$_$_StickerpackFromJson(Map<String, dynamic> json) {
     author: json['author'] as String,
     authorLink: json['author_link'] as String,
     stickers: (json['stickers'] as List)
-        ?.map((e) => e == null ? null : Sticker.fromJson(e as Map<String, dynamic>))
+        ?.map((e) =>
+            e == null ? null : Sticker.fromJson(e as Map<String, dynamic>))
         ?.toList(),
   );
 }
 
-Map<String, dynamic> _$_$_StickerpackToJson(_$_Stickerpack instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_StickerpackToJson(_$_Stickerpack instance) =>
+    <String, dynamic>{
       'uid': instance.uid,
       'name': instance.name,
       'title': instance.title,

@@ -77,7 +77,8 @@ mixin _$Section {
 
 /// @nodoc
 abstract class $SectionCopyWith<$Res> {
-  factory $SectionCopyWith(Section value, $Res Function(Section) then) = _$SectionCopyWithImpl<$Res>;
+  factory $SectionCopyWith(Section value, $Res Function(Section) then) =
+      _$SectionCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'sort_ordering') int sortOrdering,
@@ -106,10 +107,12 @@ class _$SectionCopyWithImpl<$Res> implements $SectionCopyWith<$Res> {
   }) {
     return _then(_value.copyWith(
       uid: uid == freezed ? _value.uid : uid as String,
-      sortOrdering: sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
+      sortOrdering:
+          sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
       name: name == freezed ? _value.name : name as String,
       gentime: gentime == freezed ? _value.gentime : gentime as int,
-      description: description == freezed ? _value.description : description as String,
+      description:
+          description == freezed ? _value.description : description as String,
       isArchive: isArchive == freezed ? _value.isArchive : isArchive as bool,
     ));
   }
@@ -117,7 +120,8 @@ class _$SectionCopyWithImpl<$Res> implements $SectionCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$SectionCopyWith<$Res> implements $SectionCopyWith<$Res> {
-  factory _$SectionCopyWith(_Section value, $Res Function(_Section) then) = __$SectionCopyWithImpl<$Res>;
+  factory _$SectionCopyWith(_Section value, $Res Function(_Section) then) =
+      __$SectionCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'uid') String uid,
@@ -129,8 +133,10 @@ abstract class _$SectionCopyWith<$Res> implements $SectionCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$SectionCopyWithImpl<$Res> extends _$SectionCopyWithImpl<$Res> implements _$SectionCopyWith<$Res> {
-  __$SectionCopyWithImpl(_Section _value, $Res Function(_Section) _then) : super(_value, (v) => _then(v as _Section));
+class __$SectionCopyWithImpl<$Res> extends _$SectionCopyWithImpl<$Res>
+    implements _$SectionCopyWith<$Res> {
+  __$SectionCopyWithImpl(_Section _value, $Res Function(_Section) _then)
+      : super(_value, (v) => _then(v as _Section));
 
   @override
   _Section get _value => super._value as _Section;
@@ -146,10 +152,12 @@ class __$SectionCopyWithImpl<$Res> extends _$SectionCopyWithImpl<$Res> implement
   }) {
     return _then(_Section(
       uid: uid == freezed ? _value.uid : uid as String,
-      sortOrdering: sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
+      sortOrdering:
+          sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
       name: name == freezed ? _value.name : name as String,
       gentime: gentime == freezed ? _value.gentime : gentime as int,
-      description: description == freezed ? _value.description : description as String,
+      description:
+          description == freezed ? _value.description : description as String,
       isArchive: isArchive == freezed ? _value.isArchive : isArchive as bool,
     ));
   }
@@ -171,7 +179,8 @@ class _$_Section implements _Section {
         assert(name != null),
         assert(gentime != null);
 
-  factory _$_Section.fromJson(Map<String, dynamic> json) => _$_$_SectionFromJson(json);
+  factory _$_Section.fromJson(Map<String, dynamic> json) =>
+      _$_$_SectionFromJson(json);
 
   @override
 
@@ -213,15 +222,22 @@ class _$_Section implements _Section {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Section &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
             (identical(other.sortOrdering, sortOrdering) ||
-                const DeepCollectionEquality().equals(other.sortOrdering, sortOrdering)) &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.gentime, gentime) || const DeepCollectionEquality().equals(other.gentime, gentime)) &&
+                const DeepCollectionEquality()
+                    .equals(other.sortOrdering, sortOrdering)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
+            (identical(other.gentime, gentime) ||
+                const DeepCollectionEquality()
+                    .equals(other.gentime, gentime)) &&
             (identical(other.description, description) ||
-                const DeepCollectionEquality().equals(other.description, description)) &&
+                const DeepCollectionEquality()
+                    .equals(other.description, description)) &&
             (identical(other.isArchive, isArchive) ||
-                const DeepCollectionEquality().equals(other.isArchive, isArchive)));
+                const DeepCollectionEquality()
+                    .equals(other.isArchive, isArchive)));
   }
 
   @override
@@ -236,7 +252,8 @@ class _$_Section implements _Section {
 
   @JsonKey(ignore: true)
   @override
-  _$SectionCopyWith<_Section> get copyWith => __$SectionCopyWithImpl<_Section>(this, _$identity);
+  _$SectionCopyWith<_Section> get copyWith =>
+      __$SectionCopyWithImpl<_Section>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {

@@ -101,7 +101,8 @@ mixin _$UserAuth {
 
 /// @nodoc
 abstract class $UserAuthCopyWith<$Res> {
-  factory $UserAuthCopyWith(UserAuth value, $Res Function(UserAuth) then) = _$UserAuthCopyWithImpl<$Res>;
+  factory $UserAuthCopyWith(UserAuth value, $Res Function(UserAuth) then) =
+      _$UserAuthCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'created') String created,
       @JsonKey(name: 'last_access') String lastAccess,
@@ -140,7 +141,8 @@ class _$UserAuthCopyWithImpl<$Res> implements $UserAuthCopyWith<$Res> {
   }) {
     return _then(_value.copyWith(
       created: created == freezed ? _value.created : created as String,
-      lastAccess: lastAccess == freezed ? _value.lastAccess : lastAccess as String,
+      lastAccess:
+          lastAccess == freezed ? _value.lastAccess : lastAccess as String,
       debugAge: debugAge == freezed ? _value.debugAge : debugAge as int,
       uid: uid == freezed ? _value.uid : uid as String,
       kind: kind == freezed ? _value.kind : kind as String,
@@ -165,7 +167,8 @@ class _$UserAuthCopyWithImpl<$Res> implements $UserAuthCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$UserAuthCopyWith<$Res> implements $UserAuthCopyWith<$Res> {
-  factory _$UserAuthCopyWith(_UserAuth value, $Res Function(_UserAuth) then) = __$UserAuthCopyWithImpl<$Res>;
+  factory _$UserAuthCopyWith(_UserAuth value, $Res Function(_UserAuth) then) =
+      __$UserAuthCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'created') String created,
@@ -184,7 +187,8 @@ abstract class _$UserAuthCopyWith<$Res> implements $UserAuthCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$UserAuthCopyWithImpl<$Res> extends _$UserAuthCopyWithImpl<$Res> implements _$UserAuthCopyWith<$Res> {
+class __$UserAuthCopyWithImpl<$Res> extends _$UserAuthCopyWithImpl<$Res>
+    implements _$UserAuthCopyWith<$Res> {
   __$UserAuthCopyWithImpl(_UserAuth _value, $Res Function(_UserAuth) _then)
       : super(_value, (v) => _then(v as _UserAuth));
 
@@ -206,7 +210,8 @@ class __$UserAuthCopyWithImpl<$Res> extends _$UserAuthCopyWithImpl<$Res> impleme
   }) {
     return _then(_UserAuth(
       created: created == freezed ? _value.created : created as String,
-      lastAccess: lastAccess == freezed ? _value.lastAccess : lastAccess as String,
+      lastAccess:
+          lastAccess == freezed ? _value.lastAccess : lastAccess as String,
       debugAge: debugAge == freezed ? _value.debugAge : debugAge as int,
       uid: uid == freezed ? _value.uid : uid as String,
       kind: kind == freezed ? _value.kind : kind as String,
@@ -238,7 +243,8 @@ class _$_UserAuth implements _UserAuth {
         assert(uid != null),
         assert(kind != null);
 
-  factory _$_UserAuth.fromJson(Map<String, dynamic> json) => _$_$_UserAuthFromJson(json);
+  factory _$_UserAuth.fromJson(Map<String, dynamic> json) =>
+      _$_$_UserAuthFromJson(json);
 
   @override
 
@@ -300,18 +306,31 @@ class _$_UserAuth implements _UserAuth {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _UserAuth &&
-            (identical(other.created, created) || const DeepCollectionEquality().equals(other.created, created)) &&
+            (identical(other.created, created) ||
+                const DeepCollectionEquality()
+                    .equals(other.created, created)) &&
             (identical(other.lastAccess, lastAccess) ||
-                const DeepCollectionEquality().equals(other.lastAccess, lastAccess)) &&
-            (identical(other.debugAge, debugAge) || const DeepCollectionEquality().equals(other.debugAge, debugAge)) &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.kind, kind) || const DeepCollectionEquality().equals(other.kind, kind)) &&
-            (identical(other.addr, addr) || const DeepCollectionEquality().equals(other.addr, addr)) &&
+                const DeepCollectionEquality()
+                    .equals(other.lastAccess, lastAccess)) &&
+            (identical(other.debugAge, debugAge) ||
+                const DeepCollectionEquality()
+                    .equals(other.debugAge, debugAge)) &&
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.kind, kind) ||
+                const DeepCollectionEquality().equals(other.kind, kind)) &&
+            (identical(other.addr, addr) ||
+                const DeepCollectionEquality().equals(other.addr, addr)) &&
             (identical(other.useragent, useragent) ||
-                const DeepCollectionEquality().equals(other.useragent, useragent)) &&
-            (identical(other.country, country) || const DeepCollectionEquality().equals(other.country, country)) &&
-            (identical(other.region, region) || const DeepCollectionEquality().equals(other.region, region)) &&
-            (identical(other.device, device) || const DeepCollectionEquality().equals(other.device, device)));
+                const DeepCollectionEquality()
+                    .equals(other.useragent, useragent)) &&
+            (identical(other.country, country) ||
+                const DeepCollectionEquality()
+                    .equals(other.country, country)) &&
+            (identical(other.region, region) ||
+                const DeepCollectionEquality().equals(other.region, region)) &&
+            (identical(other.device, device) ||
+                const DeepCollectionEquality().equals(other.device, device)));
   }
 
   @override
@@ -330,7 +349,8 @@ class _$_UserAuth implements _UserAuth {
 
   @JsonKey(ignore: true)
   @override
-  _$UserAuthCopyWith<_UserAuth> get copyWith => __$UserAuthCopyWithImpl<_UserAuth>(this, _$identity);
+  _$UserAuthCopyWith<_UserAuth> get copyWith =>
+      __$UserAuthCopyWithImpl<_UserAuth>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {

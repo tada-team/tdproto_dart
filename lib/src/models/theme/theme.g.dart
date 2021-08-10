@@ -37,13 +37,27 @@ _$_Theme _$_$_ThemeFromJson(Map<String, dynamic> json) {
     titleBackground: json['title_background'] as String,
     attention: json['attention'] as String,
     attentionLight: json['attention_light'] as String,
-    font: json['font'] == null ? null : FontColors.fromJson(json['font'] as Map<String, dynamic>),
-    message: json['message'] == null ? null : MessageColors.fromJson(json['message'] as Map<String, dynamic>),
-    switcher: json['switcher'] == null ? null : SwitcherColors.fromJson(json['switcher'] as Map<String, dynamic>),
-    button: json['button'] == null ? null : ButtonColors.fromJson(json['button'] as Map<String, dynamic>),
-    input: json['input'] == null ? null : InputColors.fromJson(json['input'] as Map<String, dynamic>),
-    icon: json['ic'] == null ? null : IconColors.fromJson(json['ic'] as Map<String, dynamic>),
-    webBase: json['web_base'] == null ? null : WebBase.fromJson(json['web_base'] as Map<String, dynamic>),
+    font: json['font'] == null
+        ? null
+        : FontColors.fromJson(json['font'] as Map<String, dynamic>),
+    message: json['message'] == null
+        ? null
+        : MessageColors.fromJson(json['message'] as Map<String, dynamic>),
+    switcher: json['switcher'] == null
+        ? null
+        : SwitcherColors.fromJson(json['switcher'] as Map<String, dynamic>),
+    button: json['button'] == null
+        ? null
+        : ButtonColors.fromJson(json['button'] as Map<String, dynamic>),
+    input: json['input'] == null
+        ? null
+        : InputColors.fromJson(json['input'] as Map<String, dynamic>),
+    icon: json['ic'] == null
+        ? null
+        : IconColors.fromJson(json['ic'] as Map<String, dynamic>),
+    webBase: json['web_base'] == null
+        ? null
+        : WebBase.fromJson(json['web_base'] as Map<String, dynamic>),
     appAccentColor: json['AppAccentColor'] as String,
     appPrimaryColor: json['AppPrimaryColor'] as String,
   );

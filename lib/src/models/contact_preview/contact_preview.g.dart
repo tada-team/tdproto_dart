@@ -18,7 +18,8 @@ _$_ContactPreview _$_$_ContactPreviewFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_ContactPreviewToJson(_$_ContactPreview instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_ContactPreviewToJson(_$_ContactPreview instance) =>
+    <String, dynamic>{
       '_error': instance.error,
       'phone': instance.phone,
       'given_name': instance.givenName,

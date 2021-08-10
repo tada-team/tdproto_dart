@@ -16,7 +16,8 @@ _$_Country _$_$_CountryFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_CountryToJson(_$_Country instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_CountryToJson(_$_Country instance) =>
+    <String, dynamic>{
       'code': instance.code,
       'iso': instance.iso,
       'name': instance.name,

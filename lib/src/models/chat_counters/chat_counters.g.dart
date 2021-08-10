@@ -14,11 +14,13 @@ _$_ChatCounters _$_$_ChatCountersFromJson(Map<String, dynamic> json) {
     numUnread: json['num_unread'] as int,
     numUnreadNotices: json['num_unread_notices'] as int,
     lastReadMessageUid: json['last_read_message_id'] as String,
-    lastActivity: const DateTimeConverter().fromJson(json['last_activity'] as String),
+    lastActivity:
+        const DateTimeConverter().fromJson(json['last_activity'] as String),
   );
 }
 
-Map<String, dynamic> _$_$_ChatCountersToJson(_$_ChatCounters instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_ChatCountersToJson(_$_ChatCounters instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'chat_type': instance.chatType,
       'gentime': instance.gentime,

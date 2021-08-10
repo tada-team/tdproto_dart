@@ -14,7 +14,8 @@ _$_DeletedTeam _$_$_DeletedTeamFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_DeletedTeamToJson(_$_DeletedTeam instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_DeletedTeamToJson(_$_DeletedTeam instance) =>
+    <String, dynamic>{
       'uid': instance.uid,
       'is_archive': instance.isArchive,
       'gentime': instance.gentime,

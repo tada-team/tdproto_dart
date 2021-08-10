@@ -66,7 +66,9 @@ mixin _$Invitation {
 
 /// @nodoc
 abstract class $InvitationCopyWith<$Res> {
-  factory $InvitationCopyWith(Invitation value, $Res Function(Invitation) then) = _$InvitationCopyWithImpl<$Res>;
+  factory $InvitationCopyWith(
+          Invitation value, $Res Function(Invitation) then) =
+      _$InvitationCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'token') String token,
@@ -100,7 +102,9 @@ class _$InvitationCopyWithImpl<$Res> implements $InvitationCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$InvitationCopyWith<$Res> implements $InvitationCopyWith<$Res> {
-  factory _$InvitationCopyWith(_Invitation value, $Res Function(_Invitation) then) = __$InvitationCopyWithImpl<$Res>;
+  factory _$InvitationCopyWith(
+          _Invitation value, $Res Function(_Invitation) then) =
+      __$InvitationCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'uid') String uid,
@@ -110,8 +114,10 @@ abstract class _$InvitationCopyWith<$Res> implements $InvitationCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$InvitationCopyWithImpl<$Res> extends _$InvitationCopyWithImpl<$Res> implements _$InvitationCopyWith<$Res> {
-  __$InvitationCopyWithImpl(_Invitation _value, $Res Function(_Invitation) _then)
+class __$InvitationCopyWithImpl<$Res> extends _$InvitationCopyWithImpl<$Res>
+    implements _$InvitationCopyWith<$Res> {
+  __$InvitationCopyWithImpl(
+      _Invitation _value, $Res Function(_Invitation) _then)
       : super(_value, (v) => _then(v as _Invitation));
 
   @override
@@ -147,7 +153,8 @@ class _$_Invitation implements _Invitation {
         assert(created != null),
         assert(qr != null);
 
-  factory _$_Invitation.fromJson(Map<String, dynamic> json) => _$_$_InvitationFromJson(json);
+  factory _$_Invitation.fromJson(Map<String, dynamic> json) =>
+      _$_$_InvitationFromJson(json);
 
   @override
 
@@ -180,10 +187,15 @@ class _$_Invitation implements _Invitation {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Invitation &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.token, token) || const DeepCollectionEquality().equals(other.token, token)) &&
-            (identical(other.created, created) || const DeepCollectionEquality().equals(other.created, created)) &&
-            (identical(other.qr, qr) || const DeepCollectionEquality().equals(other.qr, qr)));
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.token, token) ||
+                const DeepCollectionEquality().equals(other.token, token)) &&
+            (identical(other.created, created) ||
+                const DeepCollectionEquality()
+                    .equals(other.created, created)) &&
+            (identical(other.qr, qr) ||
+                const DeepCollectionEquality().equals(other.qr, qr)));
   }
 
   @override
@@ -196,7 +208,8 @@ class _$_Invitation implements _Invitation {
 
   @JsonKey(ignore: true)
   @override
-  _$InvitationCopyWith<_Invitation> get copyWith => __$InvitationCopyWithImpl<_Invitation>(this, _$identity);
+  _$InvitationCopyWith<_Invitation> get copyWith =>
+      __$InvitationCopyWithImpl<_Invitation>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -211,7 +224,8 @@ abstract class _Invitation implements Invitation {
       @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @required @JsonKey(name: 'qr') String qr}) = _$_Invitation;
 
-  factory _Invitation.fromJson(Map<String, dynamic> json) = _$_Invitation.fromJson;
+  factory _Invitation.fromJson(Map<String, dynamic> json) =
+      _$_Invitation.fromJson;
 
   @override
 

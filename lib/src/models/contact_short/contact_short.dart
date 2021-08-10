@@ -10,18 +10,20 @@ abstract class ContactShort with _$ContactShort {
   const factory ContactShort({
     /// Contact Id.
     @JsonKey(name: 'jid') @required String jid,
-
+    
     /// Full name in chats.
     @JsonKey(name: 'display_name') @required String displayName,
-
+    
     /// Short name in chats.
     @JsonKey(name: 'short_name') @required String shortName,
-
+    
     /// Icons data.
     @JsonKey(name: 'icons') @required IconData icons,
-
+    
     /// Object version.
     @JsonKey(name: 'gentime') @required int gentime,
+    
+    
   }) = _ContactShort;
 
   factory ContactShort.fromJson(Map<String, dynamic> json) => _$ContactShortFromJson(json);

@@ -8,8 +8,12 @@ part of 'icon_data.dart';
 
 _$_IconData _$_$_IconDataFromJson(Map<String, dynamic> json) {
   return _$_IconData(
-    sm: json['sm'] == null ? null : SingleIcon.fromJson(json['sm'] as Map<String, dynamic>),
-    lg: json['lg'] == null ? null : SingleIcon.fromJson(json['lg'] as Map<String, dynamic>),
+    sm: json['sm'] == null
+        ? null
+        : SingleIcon.fromJson(json['sm'] as Map<String, dynamic>),
+    lg: json['lg'] == null
+        ? null
+        : SingleIcon.fromJson(json['lg'] as Map<String, dynamic>),
     letters: json['letters'] as String,
     color: json['color'] as String,
     blurhash: json['blurhash'] as String,
@@ -17,7 +21,8 @@ _$_IconData _$_$_IconDataFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_IconDataToJson(_$_IconData instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_IconDataToJson(_$_IconData instance) =>
+    <String, dynamic>{
       'sm': instance.sm?.toJson(),
       'lg': instance.lg?.toJson(),
       'letters': instance.letters,

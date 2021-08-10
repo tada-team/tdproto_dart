@@ -17,7 +17,8 @@ _$_Section _$_$_SectionFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_SectionToJson(_$_Section instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_SectionToJson(_$_Section instance) =>
+    <String, dynamic>{
       'uid': instance.uid,
       'sort_ordering': instance.sortOrdering,
       'name': instance.name,

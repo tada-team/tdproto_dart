@@ -13,7 +13,8 @@ _$_SwitcherColors _$_$_SwitcherColorsFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_SwitcherColorsToJson(_$_SwitcherColors instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_SwitcherColorsToJson(_$_SwitcherColors instance) =>
+    <String, dynamic>{
       'on': instance.on,
       'off': instance.off,
     };

@@ -59,7 +59,8 @@ mixin _$TaskCounters {
 
 /// @nodoc
 abstract class $TaskCountersCopyWith<$Res> {
-  factory $TaskCountersCopyWith(TaskCounters value, $Res Function(TaskCounters) then) =
+  factory $TaskCountersCopyWith(
+          TaskCounters value, $Res Function(TaskCounters) then) =
       _$TaskCountersCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'jid') String jid,
@@ -84,14 +85,18 @@ class _$TaskCountersCopyWithImpl<$Res> implements $TaskCountersCopyWith<$Res> {
     return _then(_value.copyWith(
       jid: jid == freezed ? _value.jid : jid as String,
       numUnread: numUnread == freezed ? _value.numUnread : numUnread as int,
-      numUnreadNotices: numUnreadNotices == freezed ? _value.numUnreadNotices : numUnreadNotices as int,
+      numUnreadNotices: numUnreadNotices == freezed
+          ? _value.numUnreadNotices
+          : numUnreadNotices as int,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$TaskCountersCopyWith<$Res> implements $TaskCountersCopyWith<$Res> {
-  factory _$TaskCountersCopyWith(_TaskCounters value, $Res Function(_TaskCounters) then) =
+abstract class _$TaskCountersCopyWith<$Res>
+    implements $TaskCountersCopyWith<$Res> {
+  factory _$TaskCountersCopyWith(
+          _TaskCounters value, $Res Function(_TaskCounters) then) =
       __$TaskCountersCopyWithImpl<$Res>;
   @override
   $Res call(
@@ -103,7 +108,8 @@ abstract class _$TaskCountersCopyWith<$Res> implements $TaskCountersCopyWith<$Re
 /// @nodoc
 class __$TaskCountersCopyWithImpl<$Res> extends _$TaskCountersCopyWithImpl<$Res>
     implements _$TaskCountersCopyWith<$Res> {
-  __$TaskCountersCopyWithImpl(_TaskCounters _value, $Res Function(_TaskCounters) _then)
+  __$TaskCountersCopyWithImpl(
+      _TaskCounters _value, $Res Function(_TaskCounters) _then)
       : super(_value, (v) => _then(v as _TaskCounters));
 
   @override
@@ -118,7 +124,9 @@ class __$TaskCountersCopyWithImpl<$Res> extends _$TaskCountersCopyWithImpl<$Res>
     return _then(_TaskCounters(
       jid: jid == freezed ? _value.jid : jid as String,
       numUnread: numUnread == freezed ? _value.numUnread : numUnread as int,
-      numUnreadNotices: numUnreadNotices == freezed ? _value.numUnreadNotices : numUnreadNotices as int,
+      numUnreadNotices: numUnreadNotices == freezed
+          ? _value.numUnreadNotices
+          : numUnreadNotices as int,
     ));
   }
 }
@@ -133,7 +141,8 @@ class _$_TaskCounters implements _TaskCounters {
       @JsonKey(name: 'num_unread_notices') this.numUnreadNotices})
       : assert(jid != null);
 
-  factory _$_TaskCounters.fromJson(Map<String, dynamic> json) => _$_$_TaskCountersFromJson(json);
+  factory _$_TaskCounters.fromJson(Map<String, dynamic> json) =>
+      _$_$_TaskCountersFromJson(json);
 
   @override
 
@@ -160,11 +169,14 @@ class _$_TaskCounters implements _TaskCounters {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _TaskCounters &&
-            (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
+            (identical(other.jid, jid) ||
+                const DeepCollectionEquality().equals(other.jid, jid)) &&
             (identical(other.numUnread, numUnread) ||
-                const DeepCollectionEquality().equals(other.numUnread, numUnread)) &&
+                const DeepCollectionEquality()
+                    .equals(other.numUnread, numUnread)) &&
             (identical(other.numUnreadNotices, numUnreadNotices) ||
-                const DeepCollectionEquality().equals(other.numUnreadNotices, numUnreadNotices)));
+                const DeepCollectionEquality()
+                    .equals(other.numUnreadNotices, numUnreadNotices)));
   }
 
   @override
@@ -176,7 +188,8 @@ class _$_TaskCounters implements _TaskCounters {
 
   @JsonKey(ignore: true)
   @override
-  _$TaskCountersCopyWith<_TaskCounters> get copyWith => __$TaskCountersCopyWithImpl<_TaskCounters>(this, _$identity);
+  _$TaskCountersCopyWith<_TaskCounters> get copyWith =>
+      __$TaskCountersCopyWithImpl<_TaskCounters>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -186,11 +199,13 @@ class _$_TaskCounters implements _TaskCounters {
 
 abstract class _TaskCounters implements TaskCounters {
   const factory _TaskCounters(
-      {@required @JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'num_unread') int numUnread,
-      @JsonKey(name: 'num_unread_notices') int numUnreadNotices}) = _$_TaskCounters;
+          {@required @JsonKey(name: 'jid') String jid,
+          @JsonKey(name: 'num_unread') int numUnread,
+          @JsonKey(name: 'num_unread_notices') int numUnreadNotices}) =
+      _$_TaskCounters;
 
-  factory _TaskCounters.fromJson(Map<String, dynamic> json) = _$_TaskCounters.fromJson;
+  factory _TaskCounters.fromJson(Map<String, dynamic> json) =
+      _$_TaskCounters.fromJson;
 
   @override
 

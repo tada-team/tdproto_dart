@@ -59,9 +59,12 @@ mixin _$TeamShort {
 
 /// @nodoc
 abstract class $TeamShortCopyWith<$Res> {
-  factory $TeamShortCopyWith(TeamShort value, $Res Function(TeamShort) then) = _$TeamShortCopyWithImpl<$Res>;
+  factory $TeamShortCopyWith(TeamShort value, $Res Function(TeamShort) then) =
+      _$TeamShortCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'uid') String uid, @JsonKey(name: 'name') String name, @JsonKey(name: 'icons') IconData icons});
+      {@JsonKey(name: 'uid') String uid,
+      @JsonKey(name: 'name') String name,
+      @JsonKey(name: 'icons') IconData icons});
 
   $IconDataCopyWith<$Res> get icons;
 }
@@ -100,17 +103,22 @@ class _$TeamShortCopyWithImpl<$Res> implements $TeamShortCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$TeamShortCopyWith<$Res> implements $TeamShortCopyWith<$Res> {
-  factory _$TeamShortCopyWith(_TeamShort value, $Res Function(_TeamShort) then) = __$TeamShortCopyWithImpl<$Res>;
+  factory _$TeamShortCopyWith(
+          _TeamShort value, $Res Function(_TeamShort) then) =
+      __$TeamShortCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'uid') String uid, @JsonKey(name: 'name') String name, @JsonKey(name: 'icons') IconData icons});
+      {@JsonKey(name: 'uid') String uid,
+      @JsonKey(name: 'name') String name,
+      @JsonKey(name: 'icons') IconData icons});
 
   @override
   $IconDataCopyWith<$Res> get icons;
 }
 
 /// @nodoc
-class __$TeamShortCopyWithImpl<$Res> extends _$TeamShortCopyWithImpl<$Res> implements _$TeamShortCopyWith<$Res> {
+class __$TeamShortCopyWithImpl<$Res> extends _$TeamShortCopyWithImpl<$Res>
+    implements _$TeamShortCopyWith<$Res> {
   __$TeamShortCopyWithImpl(_TeamShort _value, $Res Function(_TeamShort) _then)
       : super(_value, (v) => _then(v as _TeamShort));
 
@@ -143,7 +151,8 @@ class _$_TeamShort implements _TeamShort {
         assert(name != null),
         assert(icons != null);
 
-  factory _$_TeamShort.fromJson(Map<String, dynamic> json) => _$_$_TeamShortFromJson(json);
+  factory _$_TeamShort.fromJson(Map<String, dynamic> json) =>
+      _$_$_TeamShortFromJson(json);
 
   @override
 
@@ -170,9 +179,12 @@ class _$_TeamShort implements _TeamShort {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _TeamShort &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.icons, icons) || const DeepCollectionEquality().equals(other.icons, icons)));
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
+            (identical(other.icons, icons) ||
+                const DeepCollectionEquality().equals(other.icons, icons)));
   }
 
   @override
@@ -184,7 +196,8 @@ class _$_TeamShort implements _TeamShort {
 
   @JsonKey(ignore: true)
   @override
-  _$TeamShortCopyWith<_TeamShort> get copyWith => __$TeamShortCopyWithImpl<_TeamShort>(this, _$identity);
+  _$TeamShortCopyWith<_TeamShort> get copyWith =>
+      __$TeamShortCopyWithImpl<_TeamShort>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -198,7 +211,8 @@ abstract class _TeamShort implements TeamShort {
       @required @JsonKey(name: 'name') String name,
       @required @JsonKey(name: 'icons') IconData icons}) = _$_TeamShort;
 
-  factory _TeamShort.fromJson(Map<String, dynamic> json) = _$_TeamShort.fromJson;
+  factory _TeamShort.fromJson(Map<String, dynamic> json) =
+      _$_TeamShort.fromJson;
 
   @override
 
