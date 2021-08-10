@@ -20,7 +20,7 @@ class _$TeamUnreadTearOff {
   _TeamUnread call(
       {@required @JsonKey(name: 'direct') Unread Direct,
       @required @JsonKey(name: 'group') Unread Group,
-      @required @JsonKey(name: 'taks') Unread Task}) {
+      @required @JsonKey(name: 'task') Unread Task}) {
     return _TeamUnread(
       Direct: Direct,
       Group: Group,
@@ -49,7 +49,7 @@ mixin _$TeamUnread {
   Unread get Group;
 
   /// Manually added.
-  @JsonKey(name: 'taks')
+  @JsonKey(name: 'task')
   Unread get Task;
 
   Map<String, dynamic> toJson();
@@ -63,7 +63,7 @@ abstract class $TeamUnreadCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'direct') Unread Direct,
       @JsonKey(name: 'group') Unread Group,
-      @JsonKey(name: 'taks') Unread Task});
+      @JsonKey(name: 'task') Unread Task});
 
   $UnreadCopyWith<$Res> get Direct;
   $UnreadCopyWith<$Res> get Group;
@@ -129,7 +129,7 @@ abstract class _$TeamUnreadCopyWith<$Res> implements $TeamUnreadCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'direct') Unread Direct,
       @JsonKey(name: 'group') Unread Group,
-      @JsonKey(name: 'taks') Unread Task});
+      @JsonKey(name: 'task') Unread Task});
 
   @override
   $UnreadCopyWith<$Res> get Direct;
@@ -168,7 +168,7 @@ class _$_TeamUnread implements _TeamUnread {
   const _$_TeamUnread(
       {@required @JsonKey(name: 'direct') this.Direct,
       @required @JsonKey(name: 'group') this.Group,
-      @required @JsonKey(name: 'taks') this.Task})
+      @required @JsonKey(name: 'task') this.Task})
       : assert(Direct != null),
         assert(Group != null),
         assert(Task != null);
@@ -188,7 +188,7 @@ class _$_TeamUnread implements _TeamUnread {
   @override
 
   /// Manually added.
-  @JsonKey(name: 'taks')
+  @JsonKey(name: 'task')
   final Unread Task;
 
   @override
@@ -226,7 +226,7 @@ abstract class _TeamUnread implements TeamUnread {
   const factory _TeamUnread(
       {@required @JsonKey(name: 'direct') Unread Direct,
       @required @JsonKey(name: 'group') Unread Group,
-      @required @JsonKey(name: 'taks') Unread Task}) = _$_TeamUnread;
+      @required @JsonKey(name: 'task') Unread Task}) = _$_TeamUnread;
 
   factory _TeamUnread.fromJson(Map<String, dynamic> json) = _$_TeamUnread.fromJson;
 
@@ -243,7 +243,7 @@ abstract class _TeamUnread implements TeamUnread {
   @override
 
   /// Manually added.
-  @JsonKey(name: 'taks')
+  @JsonKey(name: 'task')
   Unread get Task;
   @override
   @JsonKey(ignore: true)
