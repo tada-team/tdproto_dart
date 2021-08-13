@@ -20,10 +20,12 @@ class _$SharpLinkTearOff {
   _SharpLink call(
       {@required @JsonKey(name: 'key') String key,
       @required @JsonKey(name: 'title') String title,
+      @JsonKey(name: 'icons') IconData icons,
       @required @JsonKey(name: 'meta') SharpLinkMeta meta}) {
     return _SharpLink(
       key: key,
       title: title,
+      icons: icons,
       meta: meta,
     );
   }
@@ -48,6 +50,10 @@ mixin _$SharpLink {
   @JsonKey(name: 'title')
   String get title;
 
+  /// Icon data, if any.
+  @JsonKey(name: 'icons')
+  IconData get icons;
+
   /// Internal details.
   @JsonKey(name: 'meta')
   SharpLinkMeta get meta;
@@ -63,8 +69,10 @@ abstract class $SharpLinkCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'key') String key,
       @JsonKey(name: 'title') String title,
+      @JsonKey(name: 'icons') IconData icons,
       @JsonKey(name: 'meta') SharpLinkMeta meta});
 
+  $IconDataCopyWith<$Res> get icons;
   $SharpLinkMetaCopyWith<$Res> get meta;
 }
 
@@ -80,13 +88,25 @@ class _$SharpLinkCopyWithImpl<$Res> implements $SharpLinkCopyWith<$Res> {
   $Res call({
     Object key = freezed,
     Object title = freezed,
+    Object icons = freezed,
     Object meta = freezed,
   }) {
     return _then(_value.copyWith(
       key: key == freezed ? _value.key : key as String,
       title: title == freezed ? _value.title : title as String,
+      icons: icons == freezed ? _value.icons : icons as IconData,
       meta: meta == freezed ? _value.meta : meta as SharpLinkMeta,
     ));
+  }
+
+  @override
+  $IconDataCopyWith<$Res> get icons {
+    if (_value.icons == null) {
+      return null;
+    }
+    return $IconDataCopyWith<$Res>(_value.icons, (value) {
+      return _then(_value.copyWith(icons: value));
+    });
   }
 
   @override
@@ -107,8 +127,11 @@ abstract class _$SharpLinkCopyWith<$Res> implements $SharpLinkCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'key') String key,
       @JsonKey(name: 'title') String title,
+      @JsonKey(name: 'icons') IconData icons,
       @JsonKey(name: 'meta') SharpLinkMeta meta});
 
+  @override
+  $IconDataCopyWith<$Res> get icons;
   @override
   $SharpLinkMetaCopyWith<$Res> get meta;
 }
@@ -125,11 +148,13 @@ class __$SharpLinkCopyWithImpl<$Res> extends _$SharpLinkCopyWithImpl<$Res> imple
   $Res call({
     Object key = freezed,
     Object title = freezed,
+    Object icons = freezed,
     Object meta = freezed,
   }) {
     return _then(_SharpLink(
       key: key == freezed ? _value.key : key as String,
       title: title == freezed ? _value.title : title as String,
+      icons: icons == freezed ? _value.icons : icons as IconData,
       meta: meta == freezed ? _value.meta : meta as SharpLinkMeta,
     ));
   }
@@ -142,6 +167,7 @@ class _$_SharpLink implements _SharpLink {
   const _$_SharpLink(
       {@required @JsonKey(name: 'key') this.key,
       @required @JsonKey(name: 'title') this.title,
+      @JsonKey(name: 'icons') this.icons,
       @required @JsonKey(name: 'meta') this.meta})
       : assert(key != null),
         assert(title != null),
@@ -161,13 +187,18 @@ class _$_SharpLink implements _SharpLink {
   final String title;
   @override
 
+  /// Icon data, if any.
+  @JsonKey(name: 'icons')
+  final IconData icons;
+  @override
+
   /// Internal details.
   @JsonKey(name: 'meta')
   final SharpLinkMeta meta;
 
   @override
   String toString() {
-    return 'SharpLink(key: $key, title: $title, meta: $meta)';
+    return 'SharpLink(key: $key, title: $title, icons: $icons, meta: $meta)';
   }
 
   @override
@@ -176,6 +207,7 @@ class _$_SharpLink implements _SharpLink {
         (other is _SharpLink &&
             (identical(other.key, key) || const DeepCollectionEquality().equals(other.key, key)) &&
             (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
+            (identical(other.icons, icons) || const DeepCollectionEquality().equals(other.icons, icons)) &&
             (identical(other.meta, meta) || const DeepCollectionEquality().equals(other.meta, meta)));
   }
 
@@ -184,6 +216,7 @@ class _$_SharpLink implements _SharpLink {
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(key) ^
       const DeepCollectionEquality().hash(title) ^
+      const DeepCollectionEquality().hash(icons) ^
       const DeepCollectionEquality().hash(meta);
 
   @JsonKey(ignore: true)
@@ -200,6 +233,7 @@ abstract class _SharpLink implements SharpLink {
   const factory _SharpLink(
       {@required @JsonKey(name: 'key') String key,
       @required @JsonKey(name: 'title') String title,
+      @JsonKey(name: 'icons') IconData icons,
       @required @JsonKey(name: 'meta') SharpLinkMeta meta}) = _$_SharpLink;
 
   factory _SharpLink.fromJson(Map<String, dynamic> json) = _$_SharpLink.fromJson;
@@ -214,6 +248,11 @@ abstract class _SharpLink implements SharpLink {
   /// What should be visible by user.
   @JsonKey(name: 'title')
   String get title;
+  @override
+
+  /// Icon data, if any.
+  @JsonKey(name: 'icons')
+  IconData get icons;
   @override
 
   /// Internal details.

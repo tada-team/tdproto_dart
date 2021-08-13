@@ -14,6 +14,9 @@ abstract class SharpLink with _$SharpLink {
     /// What should be visible by user.
     @JsonKey(name: 'title') @required String title,
 
+    /// Icon data, if any.
+    @JsonKey(name: 'icons') IconData icons,
+
     /// Internal details.
     @JsonKey(name: 'meta') @required SharpLinkMeta meta,
   }) = _SharpLink;
