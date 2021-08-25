@@ -206,7 +206,7 @@ abstract class Features with _$Features {
     /// Calls record enabled.
     @JsonKey(name: 'calls_record') @required bool callsRecord,
 
-    /// Disallow call from multiply devices. Experimental.
+    /// Disallow call from multiple devices. Experimental.
     @JsonKey(name: 'only_one_device_per_call') bool onlyOneDevicePerCall,
 
     /// Maximum number of participants per call.

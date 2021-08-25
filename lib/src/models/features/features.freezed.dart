@@ -468,7 +468,7 @@ mixin _$Features {
   @JsonKey(name: 'calls_record')
   bool get callsRecord;
 
-  /// Disallow call from multiply devices. Experimental.
+  /// Disallow call from multiple devices. Experimental.
   @JsonKey(name: 'only_one_device_per_call')
   bool get onlyOneDevicePerCall;
 
@@ -1654,7 +1654,7 @@ class _$_Features implements _Features {
   final bool callsRecord;
   @override
 
-  /// Disallow call from multiply devices. Experimental.
+  /// Disallow call from multiple devices. Experimental.
   @JsonKey(name: 'only_one_device_per_call')
   final bool onlyOneDevicePerCall;
   @override
@@ -2417,7 +2417,7 @@ abstract class _Features implements Features {
   bool get callsRecord;
   @override
 
-  /// Disallow call from multiply devices. Experimental.
+  /// Disallow call from multiple devices. Experimental.
   @JsonKey(name: 'only_one_device_per_call')
   bool get onlyOneDevicePerCall;
   @override
