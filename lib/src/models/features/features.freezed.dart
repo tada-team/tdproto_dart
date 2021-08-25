@@ -41,6 +41,7 @@ class _$FeaturesTearOff {
       @required @JsonKey(name: 'max_message_uploads') int maxMessageUploads,
       @required @JsonKey(name: 'max_username_part_length') int maxUsernamePartLength,
       @required @JsonKey(name: 'max_group_title_length') int maxGroupTitleLength,
+      @required @JsonKey(name: 'max_team_title_length') int maxTeamTitleLength,
       @required @JsonKey(name: 'max_role_length') int maxRoleLength,
       @required @JsonKey(name: 'max_mood_length') int maxMoodLength,
       @required @JsonKey(name: 'max_message_length') int maxMessageLength,
@@ -127,6 +128,7 @@ class _$FeaturesTearOff {
       maxMessageUploads: maxMessageUploads,
       maxUsernamePartLength: maxUsernamePartLength,
       maxGroupTitleLength: maxGroupTitleLength,
+      maxTeamTitleLength: maxTeamTitleLength,
       maxRoleLength: maxRoleLength,
       maxMoodLength: maxMoodLength,
       maxMessageLength: maxMessageLength,
@@ -295,6 +297,10 @@ mixin _$Features {
   /// Maximum chars for group chat name.
   @JsonKey(name: 'max_group_title_length')
   int get maxGroupTitleLength;
+
+  /// Maximum chars for team name.
+  @JsonKey(name: 'max_team_title_length')
+  int get maxTeamTitleLength;
 
   /// Maximum chars for role in team.
   @JsonKey(name: 'max_role_length')
@@ -584,6 +590,7 @@ abstract class $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'max_message_uploads') int maxMessageUploads,
       @JsonKey(name: 'max_username_part_length') int maxUsernamePartLength,
       @JsonKey(name: 'max_group_title_length') int maxGroupTitleLength,
+      @JsonKey(name: 'max_team_title_length') int maxTeamTitleLength,
       @JsonKey(name: 'max_role_length') int maxRoleLength,
       @JsonKey(name: 'max_mood_length') int maxMoodLength,
       @JsonKey(name: 'max_message_length') int maxMessageLength,
@@ -684,6 +691,7 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     Object maxMessageUploads = freezed,
     Object maxUsernamePartLength = freezed,
     Object maxGroupTitleLength = freezed,
+    Object maxTeamTitleLength = freezed,
     Object maxRoleLength = freezed,
     Object maxMoodLength = freezed,
     Object maxMessageLength = freezed,
@@ -773,6 +781,7 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
       maxUsernamePartLength:
           maxUsernamePartLength == freezed ? _value.maxUsernamePartLength : maxUsernamePartLength as int,
       maxGroupTitleLength: maxGroupTitleLength == freezed ? _value.maxGroupTitleLength : maxGroupTitleLength as int,
+      maxTeamTitleLength: maxTeamTitleLength == freezed ? _value.maxTeamTitleLength : maxTeamTitleLength as int,
       maxRoleLength: maxRoleLength == freezed ? _value.maxRoleLength : maxRoleLength as int,
       maxMoodLength: maxMoodLength == freezed ? _value.maxMoodLength : maxMoodLength as int,
       maxMessageLength: maxMessageLength == freezed ? _value.maxMessageLength : maxMessageLength as int,
@@ -895,6 +904,7 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'max_message_uploads') int maxMessageUploads,
       @JsonKey(name: 'max_username_part_length') int maxUsernamePartLength,
       @JsonKey(name: 'max_group_title_length') int maxGroupTitleLength,
+      @JsonKey(name: 'max_team_title_length') int maxTeamTitleLength,
       @JsonKey(name: 'max_role_length') int maxRoleLength,
       @JsonKey(name: 'max_mood_length') int maxMoodLength,
       @JsonKey(name: 'max_message_length') int maxMessageLength,
@@ -997,6 +1007,7 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
     Object maxMessageUploads = freezed,
     Object maxUsernamePartLength = freezed,
     Object maxGroupTitleLength = freezed,
+    Object maxTeamTitleLength = freezed,
     Object maxRoleLength = freezed,
     Object maxMoodLength = freezed,
     Object maxMessageLength = freezed,
@@ -1086,6 +1097,7 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
       maxUsernamePartLength:
           maxUsernamePartLength == freezed ? _value.maxUsernamePartLength : maxUsernamePartLength as int,
       maxGroupTitleLength: maxGroupTitleLength == freezed ? _value.maxGroupTitleLength : maxGroupTitleLength as int,
+      maxTeamTitleLength: maxTeamTitleLength == freezed ? _value.maxTeamTitleLength : maxTeamTitleLength as int,
       maxRoleLength: maxRoleLength == freezed ? _value.maxRoleLength : maxRoleLength as int,
       maxMoodLength: maxMoodLength == freezed ? _value.maxMoodLength : maxMoodLength as int,
       maxMessageLength: maxMessageLength == freezed ? _value.maxMessageLength : maxMessageLength as int,
@@ -1188,6 +1200,7 @@ class _$_Features implements _Features {
       @required @JsonKey(name: 'max_message_uploads') this.maxMessageUploads,
       @required @JsonKey(name: 'max_username_part_length') this.maxUsernamePartLength,
       @required @JsonKey(name: 'max_group_title_length') this.maxGroupTitleLength,
+      @required @JsonKey(name: 'max_team_title_length') this.maxTeamTitleLength,
       @required @JsonKey(name: 'max_role_length') this.maxRoleLength,
       @required @JsonKey(name: 'max_mood_length') this.maxMoodLength,
       @required @JsonKey(name: 'max_message_length') this.maxMessageLength,
@@ -1272,6 +1285,7 @@ class _$_Features implements _Features {
         assert(maxMessageUploads != null),
         assert(maxUsernamePartLength != null),
         assert(maxGroupTitleLength != null),
+        assert(maxTeamTitleLength != null),
         assert(maxRoleLength != null),
         assert(maxMoodLength != null),
         assert(maxMessageLength != null),
@@ -1437,6 +1451,11 @@ class _$_Features implements _Features {
   /// Maximum chars for group chat name.
   @JsonKey(name: 'max_group_title_length')
   final int maxGroupTitleLength;
+  @override
+
+  /// Maximum chars for team name.
+  @JsonKey(name: 'max_team_title_length')
+  final int maxTeamTitleLength;
   @override
 
   /// Maximum chars for role in team.
@@ -1758,7 +1777,7 @@ class _$_Features implements _Features {
 
   @override
   String toString() {
-    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, oAuthServices: $oAuthServices, iCEServers: $iCEServers, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, minAppVersion: $minAppVersion)';
+    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, oAuthServices: $oAuthServices, iCEServers: $iCEServers, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, minAppVersion: $minAppVersion)';
   }
 
   @override
@@ -1805,6 +1824,8 @@ class _$_Features implements _Features {
                 const DeepCollectionEquality().equals(other.maxUsernamePartLength, maxUsernamePartLength)) &&
             (identical(other.maxGroupTitleLength, maxGroupTitleLength) ||
                 const DeepCollectionEquality().equals(other.maxGroupTitleLength, maxGroupTitleLength)) &&
+            (identical(other.maxTeamTitleLength, maxTeamTitleLength) ||
+                const DeepCollectionEquality().equals(other.maxTeamTitleLength, maxTeamTitleLength)) &&
             (identical(other.maxRoleLength, maxRoleLength) ||
                 const DeepCollectionEquality().equals(other.maxRoleLength, maxRoleLength)) &&
             (identical(other.maxMoodLength, maxMoodLength) ||
@@ -1859,8 +1880,7 @@ class _$_Features implements _Features {
             (identical(other.isTesting, isTesting) ||
                 const DeepCollectionEquality().equals(other.isTesting, isTesting)) &&
             (identical(other.metrika, metrika) || const DeepCollectionEquality().equals(other.metrika, metrika)) &&
-            (identical(other.amplitudeApiKey, amplitudeApiKey) ||
-                const DeepCollectionEquality().equals(other.amplitudeApiKey, amplitudeApiKey)) &&
+            (identical(other.amplitudeApiKey, amplitudeApiKey) || const DeepCollectionEquality().equals(other.amplitudeApiKey, amplitudeApiKey)) &&
             (identical(other.minSearchLength, minSearchLength) || const DeepCollectionEquality().equals(other.minSearchLength, minSearchLength)) &&
             (identical(other.resendTimeout, resendTimeout) || const DeepCollectionEquality().equals(other.resendTimeout, resendTimeout)) &&
             (identical(other.sentryDsnJS, sentryDsnJS) || const DeepCollectionEquality().equals(other.sentryDsnJS, sentryDsnJS)) &&
@@ -1922,6 +1942,7 @@ class _$_Features implements _Features {
       const DeepCollectionEquality().hash(maxMessageUploads) ^
       const DeepCollectionEquality().hash(maxUsernamePartLength) ^
       const DeepCollectionEquality().hash(maxGroupTitleLength) ^
+      const DeepCollectionEquality().hash(maxTeamTitleLength) ^
       const DeepCollectionEquality().hash(maxRoleLength) ^
       const DeepCollectionEquality().hash(maxMoodLength) ^
       const DeepCollectionEquality().hash(maxMessageLength) ^
@@ -2020,6 +2041,7 @@ abstract class _Features implements Features {
       @required @JsonKey(name: 'max_message_uploads') int maxMessageUploads,
       @required @JsonKey(name: 'max_username_part_length') int maxUsernamePartLength,
       @required @JsonKey(name: 'max_group_title_length') int maxGroupTitleLength,
+      @required @JsonKey(name: 'max_team_title_length') int maxTeamTitleLength,
       @required @JsonKey(name: 'max_role_length') int maxRoleLength,
       @required @JsonKey(name: 'max_mood_length') int maxMoodLength,
       @required @JsonKey(name: 'max_message_length') int maxMessageLength,
@@ -2200,6 +2222,11 @@ abstract class _Features implements Features {
   /// Maximum chars for group chat name.
   @JsonKey(name: 'max_group_title_length')
   int get maxGroupTitleLength;
+  @override
+
+  /// Maximum chars for team name.
+  @JsonKey(name: 'max_team_title_length')
+  int get maxTeamTitleLength;
   @override
 
   /// Maximum chars for role in team.

@@ -9,7 +9,7 @@ part 'server_ui_settings.g.dart';
 abstract class ServerUiSettings with _$ServerUiSettings {
   const factory ServerUiSettings({
     /// .
-    @JsonKey(name: 'params') @required Map<String, dynamic> params,
+    @JsonKey(name: 'params') @required ServerUiSettingsParams params,
 
     /// .
     @JsonKey(name: 'event') @required String name,

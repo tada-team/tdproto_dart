@@ -77,6 +77,9 @@ abstract class Features with _$Features {
     /// Maximum chars for group chat name.
     @JsonKey(name: 'max_group_title_length') @required int maxGroupTitleLength,
 
+    /// Maximum chars for team name.
+    @JsonKey(name: 'max_team_title_length') @required int maxTeamTitleLength,
+
     /// Maximum chars for role in team.
     @JsonKey(name: 'max_role_length') @required int maxRoleLength,
 

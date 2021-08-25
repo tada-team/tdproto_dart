@@ -18,7 +18,7 @@ class _$ServerUiSettingsTearOff {
 
 // ignore: unused_element
   _ServerUiSettings call(
-      {@required @JsonKey(name: 'params') Map<String, dynamic> params,
+      {@required @JsonKey(name: 'params') ServerUiSettingsParams params,
       @required @JsonKey(name: 'event') String name,
       @JsonKey(name: 'confirm_id') String confirmId}) {
     return _ServerUiSettings(
@@ -42,7 +42,7 @@ const $ServerUiSettings = _$ServerUiSettingsTearOff();
 mixin _$ServerUiSettings {
   /// .
   @JsonKey(name: 'params')
-  Map<String, dynamic> get params;
+  ServerUiSettingsParams get params;
 
   /// .
   @JsonKey(name: 'event')
@@ -62,9 +62,11 @@ abstract class $ServerUiSettingsCopyWith<$Res> {
   factory $ServerUiSettingsCopyWith(ServerUiSettings value, $Res Function(ServerUiSettings) then) =
       _$ServerUiSettingsCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'params') Map<String, dynamic> params,
+      {@JsonKey(name: 'params') ServerUiSettingsParams params,
       @JsonKey(name: 'event') String name,
       @JsonKey(name: 'confirm_id') String confirmId});
+
+  $ServerUiSettingsParamsCopyWith<$Res> get params;
 }
 
 /// @nodoc
@@ -82,10 +84,20 @@ class _$ServerUiSettingsCopyWithImpl<$Res> implements $ServerUiSettingsCopyWith<
     Object confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as Map<String, dynamic>,
+      params: params == freezed ? _value.params : params as ServerUiSettingsParams,
       name: name == freezed ? _value.name : name as String,
       confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
     ));
+  }
+
+  @override
+  $ServerUiSettingsParamsCopyWith<$Res> get params {
+    if (_value.params == null) {
+      return null;
+    }
+    return $ServerUiSettingsParamsCopyWith<$Res>(_value.params, (value) {
+      return _then(_value.copyWith(params: value));
+    });
   }
 }
 
@@ -95,9 +107,12 @@ abstract class _$ServerUiSettingsCopyWith<$Res> implements $ServerUiSettingsCopy
       __$ServerUiSettingsCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'params') Map<String, dynamic> params,
+      {@JsonKey(name: 'params') ServerUiSettingsParams params,
       @JsonKey(name: 'event') String name,
       @JsonKey(name: 'confirm_id') String confirmId});
+
+  @override
+  $ServerUiSettingsParamsCopyWith<$Res> get params;
 }
 
 /// @nodoc
@@ -116,7 +131,7 @@ class __$ServerUiSettingsCopyWithImpl<$Res> extends _$ServerUiSettingsCopyWithIm
     Object confirmId = freezed,
   }) {
     return _then(_ServerUiSettings(
-      params: params == freezed ? _value.params : params as Map<String, dynamic>,
+      params: params == freezed ? _value.params : params as ServerUiSettingsParams,
       name: name == freezed ? _value.name : name as String,
       confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
     ));
@@ -140,7 +155,7 @@ class _$_ServerUiSettings implements _ServerUiSettings {
 
   /// .
   @JsonKey(name: 'params')
-  final Map<String, dynamic> params;
+  final ServerUiSettingsParams params;
   @override
 
   /// .
@@ -187,7 +202,7 @@ class _$_ServerUiSettings implements _ServerUiSettings {
 
 abstract class _ServerUiSettings implements ServerUiSettings {
   const factory _ServerUiSettings(
-      {@required @JsonKey(name: 'params') Map<String, dynamic> params,
+      {@required @JsonKey(name: 'params') ServerUiSettingsParams params,
       @required @JsonKey(name: 'event') String name,
       @JsonKey(name: 'confirm_id') String confirmId}) = _$_ServerUiSettings;
 
@@ -197,7 +212,7 @@ abstract class _ServerUiSettings implements ServerUiSettings {
 
   /// .
   @JsonKey(name: 'params')
-  Map<String, dynamic> get params;
+  ServerUiSettingsParams get params;
   @override
 
   /// .
