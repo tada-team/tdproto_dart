@@ -26,6 +26,9 @@ abstract class TaskItem with _$TaskItem {
     /// Can I toggle this item.
     @JsonKey(name: 'can_toggle') bool canToggle,
 
+    /// Can I change this item.
+    @JsonKey(name: 'can_change') bool canChange,
+
     /// Link to subtask. Optional.
     @JsonKey(name: 'subtask') Subtask subtask,
   }) = _TaskItem;

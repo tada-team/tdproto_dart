@@ -24,6 +24,7 @@ class _$TaskItemTearOff {
       @required @JsonKey(name: 'text') String text,
       @JsonKey(name: 'checked') bool checked,
       @JsonKey(name: 'can_toggle') bool canToggle,
+      @JsonKey(name: 'can_change') bool canChange,
       @JsonKey(name: 'subtask') Subtask subtask}) {
     return _TaskItem(
       uid: uid,
@@ -32,6 +33,7 @@ class _$TaskItemTearOff {
       text: text,
       checked: checked,
       canToggle: canToggle,
+      canChange: canChange,
       subtask: subtask,
     );
   }
@@ -72,6 +74,10 @@ mixin _$TaskItem {
   @JsonKey(name: 'can_toggle')
   bool get canToggle;
 
+  /// Can I change this item.
+  @JsonKey(name: 'can_change')
+  bool get canChange;
+
   /// Link to subtask. Optional.
   @JsonKey(name: 'subtask')
   Subtask get subtask;
@@ -91,6 +97,7 @@ abstract class $TaskItemCopyWith<$Res> {
       @JsonKey(name: 'text') String text,
       @JsonKey(name: 'checked') bool checked,
       @JsonKey(name: 'can_toggle') bool canToggle,
+      @JsonKey(name: 'can_change') bool canChange,
       @JsonKey(name: 'subtask') Subtask subtask});
 
   $SubtaskCopyWith<$Res> get subtask;
@@ -112,6 +119,7 @@ class _$TaskItemCopyWithImpl<$Res> implements $TaskItemCopyWith<$Res> {
     Object text = freezed,
     Object checked = freezed,
     Object canToggle = freezed,
+    Object canChange = freezed,
     Object subtask = freezed,
   }) {
     return _then(_value.copyWith(
@@ -121,6 +129,7 @@ class _$TaskItemCopyWithImpl<$Res> implements $TaskItemCopyWith<$Res> {
       text: text == freezed ? _value.text : text as String,
       checked: checked == freezed ? _value.checked : checked as bool,
       canToggle: canToggle == freezed ? _value.canToggle : canToggle as bool,
+      canChange: canChange == freezed ? _value.canChange : canChange as bool,
       subtask: subtask == freezed ? _value.subtask : subtask as Subtask,
     ));
   }
@@ -147,6 +156,7 @@ abstract class _$TaskItemCopyWith<$Res> implements $TaskItemCopyWith<$Res> {
       @JsonKey(name: 'text') String text,
       @JsonKey(name: 'checked') bool checked,
       @JsonKey(name: 'can_toggle') bool canToggle,
+      @JsonKey(name: 'can_change') bool canChange,
       @JsonKey(name: 'subtask') Subtask subtask});
 
   @override
@@ -169,6 +179,7 @@ class __$TaskItemCopyWithImpl<$Res> extends _$TaskItemCopyWithImpl<$Res> impleme
     Object text = freezed,
     Object checked = freezed,
     Object canToggle = freezed,
+    Object canChange = freezed,
     Object subtask = freezed,
   }) {
     return _then(_TaskItem(
@@ -178,6 +189,7 @@ class __$TaskItemCopyWithImpl<$Res> extends _$TaskItemCopyWithImpl<$Res> impleme
       text: text == freezed ? _value.text : text as String,
       checked: checked == freezed ? _value.checked : checked as bool,
       canToggle: canToggle == freezed ? _value.canToggle : canToggle as bool,
+      canChange: canChange == freezed ? _value.canChange : canChange as bool,
       subtask: subtask == freezed ? _value.subtask : subtask as Subtask,
     ));
   }
@@ -194,6 +206,7 @@ class _$_TaskItem implements _TaskItem {
       @required @JsonKey(name: 'text') this.text,
       @JsonKey(name: 'checked') this.checked,
       @JsonKey(name: 'can_toggle') this.canToggle,
+      @JsonKey(name: 'can_change') this.canChange,
       @JsonKey(name: 'subtask') this.subtask})
       : assert(gentime != null),
         assert(text != null);
@@ -232,13 +245,18 @@ class _$_TaskItem implements _TaskItem {
   final bool canToggle;
   @override
 
+  /// Can I change this item.
+  @JsonKey(name: 'can_change')
+  final bool canChange;
+  @override
+
   /// Link to subtask. Optional.
   @JsonKey(name: 'subtask')
   final Subtask subtask;
 
   @override
   String toString() {
-    return 'TaskItem(uid: $uid, gentime: $gentime, sortOrdering: $sortOrdering, text: $text, checked: $checked, canToggle: $canToggle, subtask: $subtask)';
+    return 'TaskItem(uid: $uid, gentime: $gentime, sortOrdering: $sortOrdering, text: $text, checked: $checked, canToggle: $canToggle, canChange: $canChange, subtask: $subtask)';
   }
 
   @override
@@ -253,6 +271,8 @@ class _$_TaskItem implements _TaskItem {
             (identical(other.checked, checked) || const DeepCollectionEquality().equals(other.checked, checked)) &&
             (identical(other.canToggle, canToggle) ||
                 const DeepCollectionEquality().equals(other.canToggle, canToggle)) &&
+            (identical(other.canChange, canChange) ||
+                const DeepCollectionEquality().equals(other.canChange, canChange)) &&
             (identical(other.subtask, subtask) || const DeepCollectionEquality().equals(other.subtask, subtask)));
   }
 
@@ -265,6 +285,7 @@ class _$_TaskItem implements _TaskItem {
       const DeepCollectionEquality().hash(text) ^
       const DeepCollectionEquality().hash(checked) ^
       const DeepCollectionEquality().hash(canToggle) ^
+      const DeepCollectionEquality().hash(canChange) ^
       const DeepCollectionEquality().hash(subtask);
 
   @JsonKey(ignore: true)
@@ -285,6 +306,7 @@ abstract class _TaskItem implements TaskItem {
       @required @JsonKey(name: 'text') String text,
       @JsonKey(name: 'checked') bool checked,
       @JsonKey(name: 'can_toggle') bool canToggle,
+      @JsonKey(name: 'can_change') bool canChange,
       @JsonKey(name: 'subtask') Subtask subtask}) = _$_TaskItem;
 
   factory _TaskItem.fromJson(Map<String, dynamic> json) = _$_TaskItem.fromJson;
@@ -319,6 +341,11 @@ abstract class _TaskItem implements TaskItem {
   /// Can I toggle this item.
   @JsonKey(name: 'can_toggle')
   bool get canToggle;
+  @override
+
+  /// Can I change this item.
+  @JsonKey(name: 'can_change')
+  bool get canChange;
   @override
 
   /// Link to subtask. Optional.

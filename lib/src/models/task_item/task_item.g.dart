@@ -14,6 +14,7 @@ _$_TaskItem _$_$_TaskItemFromJson(Map<String, dynamic> json) {
     text: json['text'] as String,
     checked: json['checked'] as bool,
     canToggle: json['can_toggle'] as bool,
+    canChange: json['can_change'] as bool,
     subtask: json['subtask'] == null ? null : Subtask.fromJson(json['subtask'] as Map<String, dynamic>),
   );
 }
@@ -25,5 +26,6 @@ Map<String, dynamic> _$_$_TaskItemToJson(_$_TaskItem instance) => <String, dynam
       'text': instance.text,
       'checked': instance.checked,
       'can_toggle': instance.canToggle,
+      'can_change': instance.canChange,
       'subtask': instance.subtask?.toJson(),
     };
