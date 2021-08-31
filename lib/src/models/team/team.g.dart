@@ -41,6 +41,8 @@ _$_Team _$_$_TeamFromJson(Map<String, dynamic> json) {
     hideArchivedUsers: json['hide_archived_users'] as bool,
     pinned: json['pinned'] as bool,
     availableTariffs: (json['available_tariffs'] as List)?.map((e) => e as String)?.toList(),
+    subscription:
+        json['subscription'] == null ? null : Subscription.fromJson(json['subscription'] as Map<String, dynamic>),
   );
 }
 
@@ -76,4 +78,5 @@ Map<String, dynamic> _$_$_TeamToJson(_$_Team instance) => <String, dynamic>{
       'hide_archived_users': instance.hideArchivedUsers,
       'pinned': instance.pinned,
       'available_tariffs': instance.availableTariffs,
+      'subscription': instance.subscription?.toJson(),
     };
