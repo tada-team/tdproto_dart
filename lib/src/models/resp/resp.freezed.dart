@@ -18,21 +18,21 @@ class _$RespTearOff {
 
 // ignore: unused_element
   _Resp call(
-      {@required @JsonKey(name: 'ok') bool ok,
+      {@JsonKey(name: '_time') String debugTime,
+      @required @JsonKey(name: 'ok') bool ok,
       @JsonKey(name: 'result') dynamic result,
       @JsonKey(name: 'error') String error,
       @JsonKey(name: 'details') String details,
       @JsonKey(name: 'reason') String reason,
-      @JsonKey(name: 'markup') List<MarkupEntity> markup,
-      @JsonKey(name: '_time') String debugTime}) {
+      @JsonKey(name: 'markup') List<MarkupEntity> markup}) {
     return _Resp(
+      debugTime: debugTime,
       ok: ok,
       result: result,
       error: error,
       details: details,
       reason: reason,
       markup: markup,
-      debugTime: debugTime,
     );
   }
 
@@ -48,6 +48,10 @@ const $Resp = _$RespTearOff();
 
 /// @nodoc
 mixin _$Resp {
+  /// Server side work time.
+  @JsonKey(name: '_time')
+  String get debugTime;
+
   /// Request status.
   @JsonKey(name: 'ok')
   bool get ok;
@@ -72,10 +76,6 @@ mixin _$Resp {
   @JsonKey(name: 'markup')
   List<MarkupEntity> get markup;
 
-  /// Server side work time.
-  @JsonKey(name: '_time')
-  String get debugTime;
-
   Map<String, dynamic> toJson();
   @JsonKey(ignore: true)
   $RespCopyWith<Resp> get copyWith;
@@ -85,13 +85,13 @@ mixin _$Resp {
 abstract class $RespCopyWith<$Res> {
   factory $RespCopyWith(Resp value, $Res Function(Resp) then) = _$RespCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'ok') bool ok,
+      {@JsonKey(name: '_time') String debugTime,
+      @JsonKey(name: 'ok') bool ok,
       @JsonKey(name: 'result') dynamic result,
       @JsonKey(name: 'error') String error,
       @JsonKey(name: 'details') String details,
       @JsonKey(name: 'reason') String reason,
-      @JsonKey(name: 'markup') List<MarkupEntity> markup,
-      @JsonKey(name: '_time') String debugTime});
+      @JsonKey(name: 'markup') List<MarkupEntity> markup});
 }
 
 /// @nodoc
@@ -104,22 +104,22 @@ class _$RespCopyWithImpl<$Res> implements $RespCopyWith<$Res> {
 
   @override
   $Res call({
+    Object debugTime = freezed,
     Object ok = freezed,
     Object result = freezed,
     Object error = freezed,
     Object details = freezed,
     Object reason = freezed,
     Object markup = freezed,
-    Object debugTime = freezed,
   }) {
     return _then(_value.copyWith(
+      debugTime: debugTime == freezed ? _value.debugTime : debugTime as String,
       ok: ok == freezed ? _value.ok : ok as bool,
       result: result == freezed ? _value.result : result as dynamic,
       error: error == freezed ? _value.error : error as String,
       details: details == freezed ? _value.details : details as String,
       reason: reason == freezed ? _value.reason : reason as String,
       markup: markup == freezed ? _value.markup : markup as List<MarkupEntity>,
-      debugTime: debugTime == freezed ? _value.debugTime : debugTime as String,
     ));
   }
 }
@@ -129,13 +129,13 @@ abstract class _$RespCopyWith<$Res> implements $RespCopyWith<$Res> {
   factory _$RespCopyWith(_Resp value, $Res Function(_Resp) then) = __$RespCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'ok') bool ok,
+      {@JsonKey(name: '_time') String debugTime,
+      @JsonKey(name: 'ok') bool ok,
       @JsonKey(name: 'result') dynamic result,
       @JsonKey(name: 'error') String error,
       @JsonKey(name: 'details') String details,
       @JsonKey(name: 'reason') String reason,
-      @JsonKey(name: 'markup') List<MarkupEntity> markup,
-      @JsonKey(name: '_time') String debugTime});
+      @JsonKey(name: 'markup') List<MarkupEntity> markup});
 }
 
 /// @nodoc
@@ -147,22 +147,22 @@ class __$RespCopyWithImpl<$Res> extends _$RespCopyWithImpl<$Res> implements _$Re
 
   @override
   $Res call({
+    Object debugTime = freezed,
     Object ok = freezed,
     Object result = freezed,
     Object error = freezed,
     Object details = freezed,
     Object reason = freezed,
     Object markup = freezed,
-    Object debugTime = freezed,
   }) {
     return _then(_Resp(
+      debugTime: debugTime == freezed ? _value.debugTime : debugTime as String,
       ok: ok == freezed ? _value.ok : ok as bool,
       result: result == freezed ? _value.result : result as dynamic,
       error: error == freezed ? _value.error : error as String,
       details: details == freezed ? _value.details : details as String,
       reason: reason == freezed ? _value.reason : reason as String,
       markup: markup == freezed ? _value.markup : markup as List<MarkupEntity>,
-      debugTime: debugTime == freezed ? _value.debugTime : debugTime as String,
     ));
   }
 }
@@ -172,17 +172,22 @@ class __$RespCopyWithImpl<$Res> extends _$RespCopyWithImpl<$Res> implements _$Re
 /// @nodoc
 class _$_Resp implements _Resp {
   const _$_Resp(
-      {@required @JsonKey(name: 'ok') this.ok,
+      {@JsonKey(name: '_time') this.debugTime,
+      @required @JsonKey(name: 'ok') this.ok,
       @JsonKey(name: 'result') this.result,
       @JsonKey(name: 'error') this.error,
       @JsonKey(name: 'details') this.details,
       @JsonKey(name: 'reason') this.reason,
-      @JsonKey(name: 'markup') this.markup,
-      @JsonKey(name: '_time') this.debugTime})
+      @JsonKey(name: 'markup') this.markup})
       : assert(ok != null);
 
   factory _$_Resp.fromJson(Map<String, dynamic> json) => _$_$_RespFromJson(json);
 
+  @override
+
+  /// Server side work time.
+  @JsonKey(name: '_time')
+  final String debugTime;
   @override
 
   /// Request status.
@@ -213,41 +218,36 @@ class _$_Resp implements _Resp {
   /// Reason markup (only if ok is false and Error is `AccessDenied`).
   @JsonKey(name: 'markup')
   final List<MarkupEntity> markup;
-  @override
-
-  /// Server side work time.
-  @JsonKey(name: '_time')
-  final String debugTime;
 
   @override
   String toString() {
-    return 'Resp(ok: $ok, result: $result, error: $error, details: $details, reason: $reason, markup: $markup, debugTime: $debugTime)';
+    return 'Resp(debugTime: $debugTime, ok: $ok, result: $result, error: $error, details: $details, reason: $reason, markup: $markup)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Resp &&
+            (identical(other.debugTime, debugTime) ||
+                const DeepCollectionEquality().equals(other.debugTime, debugTime)) &&
             (identical(other.ok, ok) || const DeepCollectionEquality().equals(other.ok, ok)) &&
             (identical(other.result, result) || const DeepCollectionEquality().equals(other.result, result)) &&
             (identical(other.error, error) || const DeepCollectionEquality().equals(other.error, error)) &&
             (identical(other.details, details) || const DeepCollectionEquality().equals(other.details, details)) &&
             (identical(other.reason, reason) || const DeepCollectionEquality().equals(other.reason, reason)) &&
-            (identical(other.markup, markup) || const DeepCollectionEquality().equals(other.markup, markup)) &&
-            (identical(other.debugTime, debugTime) ||
-                const DeepCollectionEquality().equals(other.debugTime, debugTime)));
+            (identical(other.markup, markup) || const DeepCollectionEquality().equals(other.markup, markup)));
   }
 
   @override
   int get hashCode =>
       runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(debugTime) ^
       const DeepCollectionEquality().hash(ok) ^
       const DeepCollectionEquality().hash(result) ^
       const DeepCollectionEquality().hash(error) ^
       const DeepCollectionEquality().hash(details) ^
       const DeepCollectionEquality().hash(reason) ^
-      const DeepCollectionEquality().hash(markup) ^
-      const DeepCollectionEquality().hash(debugTime);
+      const DeepCollectionEquality().hash(markup);
 
   @JsonKey(ignore: true)
   @override
@@ -261,16 +261,21 @@ class _$_Resp implements _Resp {
 
 abstract class _Resp implements Resp {
   const factory _Resp(
-      {@required @JsonKey(name: 'ok') bool ok,
+      {@JsonKey(name: '_time') String debugTime,
+      @required @JsonKey(name: 'ok') bool ok,
       @JsonKey(name: 'result') dynamic result,
       @JsonKey(name: 'error') String error,
       @JsonKey(name: 'details') String details,
       @JsonKey(name: 'reason') String reason,
-      @JsonKey(name: 'markup') List<MarkupEntity> markup,
-      @JsonKey(name: '_time') String debugTime}) = _$_Resp;
+      @JsonKey(name: 'markup') List<MarkupEntity> markup}) = _$_Resp;
 
   factory _Resp.fromJson(Map<String, dynamic> json) = _$_Resp.fromJson;
 
+  @override
+
+  /// Server side work time.
+  @JsonKey(name: '_time')
+  String get debugTime;
   @override
 
   /// Request status.
@@ -301,11 +306,6 @@ abstract class _Resp implements Resp {
   /// Reason markup (only if ok is false and Error is `AccessDenied`).
   @JsonKey(name: 'markup')
   List<MarkupEntity> get markup;
-  @override
-
-  /// Server side work time.
-  @JsonKey(name: '_time')
-  String get debugTime;
   @override
   @JsonKey(ignore: true)
   _$RespCopyWith<_Resp> get copyWith;

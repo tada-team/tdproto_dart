@@ -8,6 +8,9 @@ part 'resp.g.dart';
 @freezed
 abstract class Resp with _$Resp {
   const factory Resp({
+    /// Server side work time.
+    @JsonKey(name: '_time') String debugTime,
+
     /// Request status.
     @JsonKey(name: 'ok') @required bool ok,
 
@@ -25,9 +28,6 @@ abstract class Resp with _$Resp {
 
     /// Reason markup (only if ok is false and Error is `AccessDenied`).
     @JsonKey(name: 'markup') List<MarkupEntity> markup,
-
-    /// Server side work time.
-    @JsonKey(name: '_time') String debugTime,
   }) = _Resp;
 
   factory Resp.fromJson(Map<String, dynamic> json) => _$RespFromJson(json);
