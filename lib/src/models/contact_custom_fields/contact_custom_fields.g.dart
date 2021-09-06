@@ -13,6 +13,7 @@ _$_ContactCustomFields _$_$_ContactCustomFieldsFromJson(Map<String, dynamic> jso
     title: json['title'] as String,
     mobilePhone: json['mobile_phone'] as String,
     source: json['source'] as String,
+    aDUid: json['ad_uid'] as String,
   );
 }
 
@@ -22,4 +23,5 @@ Map<String, dynamic> _$_$_ContactCustomFieldsToJson(_$_ContactCustomFields insta
       'title': instance.title,
       'mobile_phone': instance.mobilePhone,
       'source': instance.source,
+      'ad_uid': instance.aDUid,
     };

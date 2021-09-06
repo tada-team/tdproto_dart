@@ -22,13 +22,15 @@ class _$ContactCustomFieldsTearOff {
       @JsonKey(name: 'department') String department,
       @JsonKey(name: 'title') String title,
       @JsonKey(name: 'mobile_phone') String mobilePhone,
-      @JsonKey(name: 'source') String source}) {
+      @JsonKey(name: 'source') String source,
+      @JsonKey(name: 'ad_uid') String aDUid}) {
     return _ContactCustomFields(
       company: company,
       department: department,
       title: title,
       mobilePhone: mobilePhone,
       source: source,
+      aDUid: aDUid,
     );
   }
 
@@ -64,6 +66,10 @@ mixin _$ContactCustomFields {
   @JsonKey(name: 'source')
   String get source;
 
+  /// AD UID.
+  @JsonKey(name: 'ad_uid')
+  String get aDUid;
+
   Map<String, dynamic> toJson();
   @JsonKey(ignore: true)
   $ContactCustomFieldsCopyWith<ContactCustomFields> get copyWith;
@@ -78,7 +84,8 @@ abstract class $ContactCustomFieldsCopyWith<$Res> {
       @JsonKey(name: 'department') String department,
       @JsonKey(name: 'title') String title,
       @JsonKey(name: 'mobile_phone') String mobilePhone,
-      @JsonKey(name: 'source') String source});
+      @JsonKey(name: 'source') String source,
+      @JsonKey(name: 'ad_uid') String aDUid});
 }
 
 /// @nodoc
@@ -96,6 +103,7 @@ class _$ContactCustomFieldsCopyWithImpl<$Res> implements $ContactCustomFieldsCop
     Object title = freezed,
     Object mobilePhone = freezed,
     Object source = freezed,
+    Object aDUid = freezed,
   }) {
     return _then(_value.copyWith(
       company: company == freezed ? _value.company : company as String,
@@ -103,6 +111,7 @@ class _$ContactCustomFieldsCopyWithImpl<$Res> implements $ContactCustomFieldsCop
       title: title == freezed ? _value.title : title as String,
       mobilePhone: mobilePhone == freezed ? _value.mobilePhone : mobilePhone as String,
       source: source == freezed ? _value.source : source as String,
+      aDUid: aDUid == freezed ? _value.aDUid : aDUid as String,
     ));
   }
 }
@@ -117,7 +126,8 @@ abstract class _$ContactCustomFieldsCopyWith<$Res> implements $ContactCustomFiel
       @JsonKey(name: 'department') String department,
       @JsonKey(name: 'title') String title,
       @JsonKey(name: 'mobile_phone') String mobilePhone,
-      @JsonKey(name: 'source') String source});
+      @JsonKey(name: 'source') String source,
+      @JsonKey(name: 'ad_uid') String aDUid});
 }
 
 /// @nodoc
@@ -136,6 +146,7 @@ class __$ContactCustomFieldsCopyWithImpl<$Res> extends _$ContactCustomFieldsCopy
     Object title = freezed,
     Object mobilePhone = freezed,
     Object source = freezed,
+    Object aDUid = freezed,
   }) {
     return _then(_ContactCustomFields(
       company: company == freezed ? _value.company : company as String,
@@ -143,6 +154,7 @@ class __$ContactCustomFieldsCopyWithImpl<$Res> extends _$ContactCustomFieldsCopy
       title: title == freezed ? _value.title : title as String,
       mobilePhone: mobilePhone == freezed ? _value.mobilePhone : mobilePhone as String,
       source: source == freezed ? _value.source : source as String,
+      aDUid: aDUid == freezed ? _value.aDUid : aDUid as String,
     ));
   }
 }
@@ -156,7 +168,8 @@ class _$_ContactCustomFields implements _ContactCustomFields {
       @JsonKey(name: 'department') this.department,
       @JsonKey(name: 'title') this.title,
       @JsonKey(name: 'mobile_phone') this.mobilePhone,
-      @JsonKey(name: 'source') this.source});
+      @JsonKey(name: 'source') this.source,
+      @JsonKey(name: 'ad_uid') this.aDUid});
 
   factory _$_ContactCustomFields.fromJson(Map<String, dynamic> json) => _$_$_ContactCustomFieldsFromJson(json);
 
@@ -185,10 +198,15 @@ class _$_ContactCustomFields implements _ContactCustomFields {
   /// Import source.
   @JsonKey(name: 'source')
   final String source;
+  @override
+
+  /// AD UID.
+  @JsonKey(name: 'ad_uid')
+  final String aDUid;
 
   @override
   String toString() {
-    return 'ContactCustomFields(company: $company, department: $department, title: $title, mobilePhone: $mobilePhone, source: $source)';
+    return 'ContactCustomFields(company: $company, department: $department, title: $title, mobilePhone: $mobilePhone, source: $source, aDUid: $aDUid)';
   }
 
   @override
@@ -201,7 +219,8 @@ class _$_ContactCustomFields implements _ContactCustomFields {
             (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
             (identical(other.mobilePhone, mobilePhone) ||
                 const DeepCollectionEquality().equals(other.mobilePhone, mobilePhone)) &&
-            (identical(other.source, source) || const DeepCollectionEquality().equals(other.source, source)));
+            (identical(other.source, source) || const DeepCollectionEquality().equals(other.source, source)) &&
+            (identical(other.aDUid, aDUid) || const DeepCollectionEquality().equals(other.aDUid, aDUid)));
   }
 
   @override
@@ -211,7 +230,8 @@ class _$_ContactCustomFields implements _ContactCustomFields {
       const DeepCollectionEquality().hash(department) ^
       const DeepCollectionEquality().hash(title) ^
       const DeepCollectionEquality().hash(mobilePhone) ^
-      const DeepCollectionEquality().hash(source);
+      const DeepCollectionEquality().hash(source) ^
+      const DeepCollectionEquality().hash(aDUid);
 
   @JsonKey(ignore: true)
   @override
@@ -230,7 +250,8 @@ abstract class _ContactCustomFields implements ContactCustomFields {
       @JsonKey(name: 'department') String department,
       @JsonKey(name: 'title') String title,
       @JsonKey(name: 'mobile_phone') String mobilePhone,
-      @JsonKey(name: 'source') String source}) = _$_ContactCustomFields;
+      @JsonKey(name: 'source') String source,
+      @JsonKey(name: 'ad_uid') String aDUid}) = _$_ContactCustomFields;
 
   factory _ContactCustomFields.fromJson(Map<String, dynamic> json) = _$_ContactCustomFields.fromJson;
 
@@ -259,6 +280,11 @@ abstract class _ContactCustomFields implements ContactCustomFields {
   /// Import source.
   @JsonKey(name: 'source')
   String get source;
+  @override
+
+  /// AD UID.
+  @JsonKey(name: 'ad_uid')
+  String get aDUid;
   @override
   @JsonKey(ignore: true)
   _$ContactCustomFieldsCopyWith<_ContactCustomFields> get copyWith;

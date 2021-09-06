@@ -22,6 +22,9 @@ abstract class ContactCustomFields with _$ContactCustomFields {
 
     /// Import source.
     @JsonKey(name: 'source') String source,
+
+    /// AD UID.
+    @JsonKey(name: 'ad_uid') String aDUid,
   }) = _ContactCustomFields;
 
   factory ContactCustomFields.fromJson(Map<String, dynamic> json) => _$ContactCustomFieldsFromJson(json);
