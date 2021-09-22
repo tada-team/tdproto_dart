@@ -50,7 +50,7 @@ class _$ContactTearOff {
       @JsonKey(name: 'alt_send') bool altSend,
       @JsonKey(name: 'asterisk_mention') bool asteriskMention,
       @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
-      @required @JsonKey(name: 'hide_pushes_content') bool hidePushesContent,
+      @JsonKey(name: 'hide_pushes_content') bool hidePushesContent,
       @JsonKey(name: 'timezone') String timezone,
       @JsonKey(name: 'quiet_time_start') String quietTimeStart,
       @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
@@ -891,7 +891,7 @@ class _$_Contact implements _Contact {
       @JsonKey(name: 'alt_send') this.altSend,
       @JsonKey(name: 'asterisk_mention') this.asteriskMention,
       @JsonKey(name: 'always_send_pushes') this.alwaysSendPushes,
-      @required @JsonKey(name: 'hide_pushes_content') this.hidePushesContent,
+      @JsonKey(name: 'hide_pushes_content') this.hidePushesContent,
       @JsonKey(name: 'timezone') this.timezone,
       @JsonKey(name: 'quiet_time_start') this.quietTimeStart,
       @JsonKey(name: 'quiet_time_finish') this.quietTimeFinish,
@@ -929,8 +929,7 @@ class _$_Contact implements _Contact {
         assert(gentime != null),
         assert(role != null),
         assert(teamStatus != null),
-        assert(sections != null),
-        assert(hidePushesContent != null);
+        assert(sections != null);
 
   factory _$_Contact.fromJson(Map<String, dynamic> json) => _$_$_ContactFromJson(json);
 
@@ -1468,7 +1467,7 @@ abstract class _Contact implements Contact {
       @JsonKey(name: 'alt_send') bool altSend,
       @JsonKey(name: 'asterisk_mention') bool asteriskMention,
       @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
-      @required @JsonKey(name: 'hide_pushes_content') bool hidePushesContent,
+      @JsonKey(name: 'hide_pushes_content') bool hidePushesContent,
       @JsonKey(name: 'timezone') String timezone,
       @JsonKey(name: 'quiet_time_start') String quietTimeStart,
       @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,

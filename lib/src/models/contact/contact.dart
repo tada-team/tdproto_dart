@@ -105,7 +105,7 @@ abstract class Contact with _$Contact {
     @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
 
     /// Hide pushes body.
-    @JsonKey(name: 'hide_pushes_content') @required bool hidePushesContent,
+    @JsonKey(name: 'hide_pushes_content') bool hidePushesContent,
 
     /// Timezone, if any.
     @JsonKey(name: 'timezone') String timezone,
