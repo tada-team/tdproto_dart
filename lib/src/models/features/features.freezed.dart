@@ -60,6 +60,8 @@ class _$FeaturesTearOff {
       @JsonKey(name: 'auth_by_qr_code') bool authByQrCode,
       @JsonKey(name: 'auth_by_sms') bool authBySms,
       @JsonKey(name: 'auth_2fa') bool auth2fa,
+      @required @JsonKey(name: 'is_pin_code_required') bool isPinCodeRequired,
+      @required @JsonKey(name: 'pin_code_wrong_limit') int pinCodeWrongLimit,
       @JsonKey(name: 'oauth_services') List<OAuthService> oAuthServices,
       @required @JsonKey(name: 'ice_servers') List<ICEServer> iCEServers,
       @required @JsonKey(name: 'custom_server') bool customServer,
@@ -147,6 +149,8 @@ class _$FeaturesTearOff {
       authByQrCode: authByQrCode,
       authBySms: authBySms,
       auth2fa: auth2fa,
+      isPinCodeRequired: isPinCodeRequired,
+      pinCodeWrongLimit: pinCodeWrongLimit,
       oAuthServices: oAuthServices,
       iCEServers: iCEServers,
       customServer: customServer,
@@ -373,6 +377,14 @@ mixin _$Features {
   /// Two-factor authentication (2FA) enabled.
   @JsonKey(name: 'auth_2fa')
   bool get auth2fa;
+
+  /// Mandatory setting of the pin code in the application.
+  @JsonKey(name: 'is_pin_code_required')
+  bool get isPinCodeRequired;
+
+  /// Max number of attempts to enter an invalid PIN code.
+  @JsonKey(name: 'pin_code_wrong_limit')
+  int get pinCodeWrongLimit;
 
   /// External services.
   @JsonKey(name: 'oauth_services')
@@ -609,6 +621,8 @@ abstract class $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'auth_by_qr_code') bool authByQrCode,
       @JsonKey(name: 'auth_by_sms') bool authBySms,
       @JsonKey(name: 'auth_2fa') bool auth2fa,
+      @JsonKey(name: 'is_pin_code_required') bool isPinCodeRequired,
+      @JsonKey(name: 'pin_code_wrong_limit') int pinCodeWrongLimit,
       @JsonKey(name: 'oauth_services') List<OAuthService> oAuthServices,
       @JsonKey(name: 'ice_servers') List<ICEServer> iCEServers,
       @JsonKey(name: 'custom_server') bool customServer,
@@ -710,6 +724,8 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     Object authByQrCode = freezed,
     Object authBySms = freezed,
     Object auth2fa = freezed,
+    Object isPinCodeRequired = freezed,
+    Object pinCodeWrongLimit = freezed,
     Object oAuthServices = freezed,
     Object iCEServers = freezed,
     Object customServer = freezed,
@@ -805,6 +821,8 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
       authByQrCode: authByQrCode == freezed ? _value.authByQrCode : authByQrCode as bool,
       authBySms: authBySms == freezed ? _value.authBySms : authBySms as bool,
       auth2fa: auth2fa == freezed ? _value.auth2fa : auth2fa as bool,
+      isPinCodeRequired: isPinCodeRequired == freezed ? _value.isPinCodeRequired : isPinCodeRequired as bool,
+      pinCodeWrongLimit: pinCodeWrongLimit == freezed ? _value.pinCodeWrongLimit : pinCodeWrongLimit as int,
       oAuthServices: oAuthServices == freezed ? _value.oAuthServices : oAuthServices as List<OAuthService>,
       iCEServers: iCEServers == freezed ? _value.iCEServers : iCEServers as List<ICEServer>,
       customServer: customServer == freezed ? _value.customServer : customServer as bool,
@@ -923,6 +941,8 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'auth_by_qr_code') bool authByQrCode,
       @JsonKey(name: 'auth_by_sms') bool authBySms,
       @JsonKey(name: 'auth_2fa') bool auth2fa,
+      @JsonKey(name: 'is_pin_code_required') bool isPinCodeRequired,
+      @JsonKey(name: 'pin_code_wrong_limit') int pinCodeWrongLimit,
       @JsonKey(name: 'oauth_services') List<OAuthService> oAuthServices,
       @JsonKey(name: 'ice_servers') List<ICEServer> iCEServers,
       @JsonKey(name: 'custom_server') bool customServer,
@@ -1026,6 +1046,8 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
     Object authByQrCode = freezed,
     Object authBySms = freezed,
     Object auth2fa = freezed,
+    Object isPinCodeRequired = freezed,
+    Object pinCodeWrongLimit = freezed,
     Object oAuthServices = freezed,
     Object iCEServers = freezed,
     Object customServer = freezed,
@@ -1121,6 +1143,8 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
       authByQrCode: authByQrCode == freezed ? _value.authByQrCode : authByQrCode as bool,
       authBySms: authBySms == freezed ? _value.authBySms : authBySms as bool,
       auth2fa: auth2fa == freezed ? _value.auth2fa : auth2fa as bool,
+      isPinCodeRequired: isPinCodeRequired == freezed ? _value.isPinCodeRequired : isPinCodeRequired as bool,
+      pinCodeWrongLimit: pinCodeWrongLimit == freezed ? _value.pinCodeWrongLimit : pinCodeWrongLimit as int,
       oAuthServices: oAuthServices == freezed ? _value.oAuthServices : oAuthServices as List<OAuthService>,
       iCEServers: iCEServers == freezed ? _value.iCEServers : iCEServers as List<ICEServer>,
       customServer: customServer == freezed ? _value.customServer : customServer as bool,
@@ -1219,6 +1243,8 @@ class _$_Features implements _Features {
       @JsonKey(name: 'auth_by_qr_code') this.authByQrCode,
       @JsonKey(name: 'auth_by_sms') this.authBySms,
       @JsonKey(name: 'auth_2fa') this.auth2fa,
+      @required @JsonKey(name: 'is_pin_code_required') this.isPinCodeRequired,
+      @required @JsonKey(name: 'pin_code_wrong_limit') this.pinCodeWrongLimit,
       @JsonKey(name: 'oauth_services') this.oAuthServices,
       @required @JsonKey(name: 'ice_servers') this.iCEServers,
       @required @JsonKey(name: 'custom_server') this.customServer,
@@ -1299,6 +1325,8 @@ class _$_Features implements _Features {
         assert(maxTeams != null),
         assert(maxMessageSearchLimit != null),
         assert(afkAge != null),
+        assert(isPinCodeRequired != null),
+        assert(pinCodeWrongLimit != null),
         assert(iCEServers != null),
         assert(customServer != null),
         assert(installationType != null),
@@ -1548,6 +1576,16 @@ class _$_Features implements _Features {
   final bool auth2fa;
   @override
 
+  /// Mandatory setting of the pin code in the application.
+  @JsonKey(name: 'is_pin_code_required')
+  final bool isPinCodeRequired;
+  @override
+
+  /// Max number of attempts to enter an invalid PIN code.
+  @JsonKey(name: 'pin_code_wrong_limit')
+  final int pinCodeWrongLimit;
+  @override
+
   /// External services.
   @JsonKey(name: 'oauth_services')
   final List<OAuthService> oAuthServices;
@@ -1777,7 +1815,7 @@ class _$_Features implements _Features {
 
   @override
   String toString() {
-    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, oAuthServices: $oAuthServices, iCEServers: $iCEServers, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, minAppVersion: $minAppVersion)';
+    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, minAppVersion: $minAppVersion)';
   }
 
   @override
@@ -1861,6 +1899,10 @@ class _$_Features implements _Features {
             (identical(other.authBySms, authBySms) ||
                 const DeepCollectionEquality().equals(other.authBySms, authBySms)) &&
             (identical(other.auth2fa, auth2fa) || const DeepCollectionEquality().equals(other.auth2fa, auth2fa)) &&
+            (identical(other.isPinCodeRequired, isPinCodeRequired) ||
+                const DeepCollectionEquality().equals(other.isPinCodeRequired, isPinCodeRequired)) &&
+            (identical(other.pinCodeWrongLimit, pinCodeWrongLimit) ||
+                const DeepCollectionEquality().equals(other.pinCodeWrongLimit, pinCodeWrongLimit)) &&
             (identical(other.oAuthServices, oAuthServices) ||
                 const DeepCollectionEquality().equals(other.oAuthServices, oAuthServices)) &&
             (identical(other.iCEServers, iCEServers) ||
@@ -1875,10 +1917,8 @@ class _$_Features implements _Features {
                 const DeepCollectionEquality().equals(other.customAppIconName, customAppIconName)) &&
             (identical(other.appLoginBackground, appLoginBackground) ||
                 const DeepCollectionEquality().equals(other.appLoginBackground, appLoginBackground)) &&
-            (identical(other.webLoginBackground, webLoginBackground) ||
-                const DeepCollectionEquality().equals(other.webLoginBackground, webLoginBackground)) &&
-            (identical(other.isTesting, isTesting) ||
-                const DeepCollectionEquality().equals(other.isTesting, isTesting)) &&
+            (identical(other.webLoginBackground, webLoginBackground) || const DeepCollectionEquality().equals(other.webLoginBackground, webLoginBackground)) &&
+            (identical(other.isTesting, isTesting) || const DeepCollectionEquality().equals(other.isTesting, isTesting)) &&
             (identical(other.metrika, metrika) || const DeepCollectionEquality().equals(other.metrika, metrika)) &&
             (identical(other.amplitudeApiKey, amplitudeApiKey) || const DeepCollectionEquality().equals(other.amplitudeApiKey, amplitudeApiKey)) &&
             (identical(other.minSearchLength, minSearchLength) || const DeepCollectionEquality().equals(other.minSearchLength, minSearchLength)) &&
@@ -1961,6 +2001,8 @@ class _$_Features implements _Features {
       const DeepCollectionEquality().hash(authByQrCode) ^
       const DeepCollectionEquality().hash(authBySms) ^
       const DeepCollectionEquality().hash(auth2fa) ^
+      const DeepCollectionEquality().hash(isPinCodeRequired) ^
+      const DeepCollectionEquality().hash(pinCodeWrongLimit) ^
       const DeepCollectionEquality().hash(oAuthServices) ^
       const DeepCollectionEquality().hash(iCEServers) ^
       const DeepCollectionEquality().hash(customServer) ^
@@ -2060,6 +2102,8 @@ abstract class _Features implements Features {
       @JsonKey(name: 'auth_by_qr_code') bool authByQrCode,
       @JsonKey(name: 'auth_by_sms') bool authBySms,
       @JsonKey(name: 'auth_2fa') bool auth2fa,
+      @required @JsonKey(name: 'is_pin_code_required') bool isPinCodeRequired,
+      @required @JsonKey(name: 'pin_code_wrong_limit') int pinCodeWrongLimit,
       @JsonKey(name: 'oauth_services') List<OAuthService> oAuthServices,
       @required @JsonKey(name: 'ice_servers') List<ICEServer> iCEServers,
       @required @JsonKey(name: 'custom_server') bool customServer,
@@ -2317,6 +2361,16 @@ abstract class _Features implements Features {
   /// Two-factor authentication (2FA) enabled.
   @JsonKey(name: 'auth_2fa')
   bool get auth2fa;
+  @override
+
+  /// Mandatory setting of the pin code in the application.
+  @JsonKey(name: 'is_pin_code_required')
+  bool get isPinCodeRequired;
+  @override
+
+  /// Max number of attempts to enter an invalid PIN code.
+  @JsonKey(name: 'pin_code_wrong_limit')
+  int get pinCodeWrongLimit;
   @override
 
   /// External services.

@@ -134,6 +134,12 @@ abstract class Features with _$Features {
     /// Two-factor authentication (2FA) enabled.
     @JsonKey(name: 'auth_2fa') bool auth2fa,
 
+    /// Mandatory setting of the pin code in the application.
+    @JsonKey(name: 'is_pin_code_required') @required bool isPinCodeRequired,
+
+    /// Max number of attempts to enter an invalid PIN code.
+    @JsonKey(name: 'pin_code_wrong_limit') @required int pinCodeWrongLimit,
+
     /// External services.
     @JsonKey(name: 'oauth_services') List<OAuthService> oAuthServices,
 

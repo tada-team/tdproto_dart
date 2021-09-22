@@ -50,6 +50,8 @@ _$_Features _$_$_FeaturesFromJson(Map<String, dynamic> json) {
     authByQrCode: json['auth_by_qr_code'] as bool,
     authBySms: json['auth_by_sms'] as bool,
     auth2fa: json['auth_2fa'] as bool,
+    isPinCodeRequired: json['is_pin_code_required'] as bool,
+    pinCodeWrongLimit: json['pin_code_wrong_limit'] as int,
     oAuthServices: (json['oauth_services'] as List)
         ?.map((e) => e == null ? null : OAuthService.fromJson(e as Map<String, dynamic>))
         ?.toList(),
@@ -146,6 +148,8 @@ Map<String, dynamic> _$_$_FeaturesToJson(_$_Features instance) => <String, dynam
       'auth_by_qr_code': instance.authByQrCode,
       'auth_by_sms': instance.authBySms,
       'auth_2fa': instance.auth2fa,
+      'is_pin_code_required': instance.isPinCodeRequired,
+      'pin_code_wrong_limit': instance.pinCodeWrongLimit,
       'oauth_services': instance.oAuthServices?.map((e) => e?.toJson())?.toList(),
       'ice_servers': instance.iCEServers?.map((e) => e?.toJson())?.toList(),
       'custom_server': instance.customServer,
