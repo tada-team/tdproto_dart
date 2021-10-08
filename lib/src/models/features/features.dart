@@ -271,6 +271,15 @@ abstract class Features with _$Features {
 
     /// Deprecated.
     @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') @required String minAppVersion,
+
+    /// File Extension Whitelist.
+    @JsonKey(name: 'file_extension_whitelist') @required List<String> fileExtensionWhitelist,
+
+    /// File Extension Blacklist.
+    @JsonKey(name: 'file_extension_blacklist') @required List<String> fileExtensionBlacklist,
+
+    /// File Extension Whitelist Priority.
+    @JsonKey(name: 'file_extension_whitelist_priority') @required bool fileExtensionWhitelistPriority,
   }) = _Features;
 
   factory Features.fromJson(Map<String, dynamic> json) => _$FeaturesFromJson(json);

@@ -102,6 +102,9 @@ _$_Features _$_$_FeaturesFromJson(Map<String, dynamic> json) {
     taskTags: json['task_tags'] as bool,
     calls: json['calls'] as bool,
     minAppVersion: json['min_app_version'] as String,
+    fileExtensionWhitelist: (json['file_extension_whitelist'] as List)?.map((e) => e as String)?.toList(),
+    fileExtensionBlacklist: (json['file_extension_blacklist'] as List)?.map((e) => e as String)?.toList(),
+    fileExtensionWhitelistPriority: json['file_extension_whitelist_priority'] as bool,
   );
 }
 
@@ -194,4 +197,7 @@ Map<String, dynamic> _$_$_FeaturesToJson(_$_Features instance) => <String, dynam
       'task_tags': instance.taskTags,
       'calls': instance.calls,
       'min_app_version': instance.minAppVersion,
+      'file_extension_whitelist': instance.fileExtensionWhitelist,
+      'file_extension_blacklist': instance.fileExtensionBlacklist,
+      'file_extension_whitelist_priority': instance.fileExtensionWhitelistPriority,
     };

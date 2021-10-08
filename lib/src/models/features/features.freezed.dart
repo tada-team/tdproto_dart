@@ -105,7 +105,10 @@ class _$FeaturesTearOff {
       @required @Deprecated('Deprecated.') @JsonKey(name: 'task_public') bool taskPublic,
       @required @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') bool taskTags,
       @required @Deprecated('Deprecated.') @JsonKey(name: 'calls') bool calls,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion}) {
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion,
+      @required @JsonKey(name: 'file_extension_whitelist') List<String> fileExtensionWhitelist,
+      @required @JsonKey(name: 'file_extension_blacklist') List<String> fileExtensionBlacklist,
+      @required @JsonKey(name: 'file_extension_whitelist_priority') bool fileExtensionWhitelistPriority}) {
     return _Features(
       host: host,
       build: build,
@@ -195,6 +198,9 @@ class _$FeaturesTearOff {
       taskTags: taskTags,
       calls: calls,
       minAppVersion: minAppVersion,
+      fileExtensionWhitelist: fileExtensionWhitelist,
+      fileExtensionBlacklist: fileExtensionBlacklist,
+      fileExtensionWhitelistPriority: fileExtensionWhitelistPriority,
     );
   }
 
@@ -570,6 +576,18 @@ mixin _$Features {
   @JsonKey(name: 'min_app_version')
   String get minAppVersion;
 
+  /// File Extension Whitelist.
+  @JsonKey(name: 'file_extension_whitelist')
+  List<String> get fileExtensionWhitelist;
+
+  /// File Extension Blacklist.
+  @JsonKey(name: 'file_extension_blacklist')
+  List<String> get fileExtensionBlacklist;
+
+  /// File Extension Whitelist Priority.
+  @JsonKey(name: 'file_extension_whitelist_priority')
+  bool get fileExtensionWhitelistPriority;
+
   Map<String, dynamic> toJson();
   @JsonKey(ignore: true)
   $FeaturesCopyWith<Features> get copyWith;
@@ -666,7 +684,10 @@ abstract class $FeaturesCopyWith<$Res> {
       @Deprecated('Deprecated.') @JsonKey(name: 'task_public') bool taskPublic,
       @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') bool taskTags,
       @Deprecated('Deprecated.') @JsonKey(name: 'calls') bool calls,
-      @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion});
+      @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion,
+      @JsonKey(name: 'file_extension_whitelist') List<String> fileExtensionWhitelist,
+      @JsonKey(name: 'file_extension_blacklist') List<String> fileExtensionBlacklist,
+      @JsonKey(name: 'file_extension_whitelist_priority') bool fileExtensionWhitelistPriority});
 
   $TermsCopyWith<$Res> get terms;
   $WallpaperCopyWith<$Res> get defaultWallpaper;
@@ -770,6 +791,9 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     Object taskTags = freezed,
     Object calls = freezed,
     Object minAppVersion = freezed,
+    Object fileExtensionWhitelist = freezed,
+    Object fileExtensionBlacklist = freezed,
+    Object fileExtensionWhitelistPriority = freezed,
   }) {
     return _then(_value.copyWith(
       host: host == freezed ? _value.host : host as String,
@@ -870,6 +894,13 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
       taskTags: taskTags == freezed ? _value.taskTags : taskTags as bool,
       calls: calls == freezed ? _value.calls : calls as bool,
       minAppVersion: minAppVersion == freezed ? _value.minAppVersion : minAppVersion as String,
+      fileExtensionWhitelist:
+          fileExtensionWhitelist == freezed ? _value.fileExtensionWhitelist : fileExtensionWhitelist as List<String>,
+      fileExtensionBlacklist:
+          fileExtensionBlacklist == freezed ? _value.fileExtensionBlacklist : fileExtensionBlacklist as List<String>,
+      fileExtensionWhitelistPriority: fileExtensionWhitelistPriority == freezed
+          ? _value.fileExtensionWhitelistPriority
+          : fileExtensionWhitelistPriority as bool,
     ));
   }
 
@@ -986,7 +1017,10 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
       @Deprecated('Deprecated.') @JsonKey(name: 'task_public') bool taskPublic,
       @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') bool taskTags,
       @Deprecated('Deprecated.') @JsonKey(name: 'calls') bool calls,
-      @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion});
+      @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion,
+      @JsonKey(name: 'file_extension_whitelist') List<String> fileExtensionWhitelist,
+      @JsonKey(name: 'file_extension_blacklist') List<String> fileExtensionBlacklist,
+      @JsonKey(name: 'file_extension_whitelist_priority') bool fileExtensionWhitelistPriority});
 
   @override
   $TermsCopyWith<$Res> get terms;
@@ -1092,6 +1126,9 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
     Object taskTags = freezed,
     Object calls = freezed,
     Object minAppVersion = freezed,
+    Object fileExtensionWhitelist = freezed,
+    Object fileExtensionBlacklist = freezed,
+    Object fileExtensionWhitelistPriority = freezed,
   }) {
     return _then(_Features(
       host: host == freezed ? _value.host : host as String,
@@ -1192,6 +1229,13 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
       taskTags: taskTags == freezed ? _value.taskTags : taskTags as bool,
       calls: calls == freezed ? _value.calls : calls as bool,
       minAppVersion: minAppVersion == freezed ? _value.minAppVersion : minAppVersion as String,
+      fileExtensionWhitelist:
+          fileExtensionWhitelist == freezed ? _value.fileExtensionWhitelist : fileExtensionWhitelist as List<String>,
+      fileExtensionBlacklist:
+          fileExtensionBlacklist == freezed ? _value.fileExtensionBlacklist : fileExtensionBlacklist as List<String>,
+      fileExtensionWhitelistPriority: fileExtensionWhitelistPriority == freezed
+          ? _value.fileExtensionWhitelistPriority
+          : fileExtensionWhitelistPriority as bool,
     ));
   }
 }
@@ -1288,7 +1332,10 @@ class _$_Features implements _Features {
       @required @Deprecated('Deprecated.') @JsonKey(name: 'task_public') this.taskPublic,
       @required @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') this.taskTags,
       @required @Deprecated('Deprecated.') @JsonKey(name: 'calls') this.calls,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') this.minAppVersion})
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') this.minAppVersion,
+      @required @JsonKey(name: 'file_extension_whitelist') this.fileExtensionWhitelist,
+      @required @JsonKey(name: 'file_extension_blacklist') this.fileExtensionBlacklist,
+      @required @JsonKey(name: 'file_extension_whitelist_priority') this.fileExtensionWhitelistPriority})
       : assert(host != null),
         assert(build != null),
         assert(desktopVersion != null),
@@ -1360,7 +1407,10 @@ class _$_Features implements _Features {
         assert(taskPublic != null),
         assert(taskTags != null),
         assert(calls != null),
-        assert(minAppVersion != null);
+        assert(minAppVersion != null),
+        assert(fileExtensionWhitelist != null),
+        assert(fileExtensionBlacklist != null),
+        assert(fileExtensionWhitelistPriority != null);
 
   factory _$_Features.fromJson(Map<String, dynamic> json) => _$_$_FeaturesFromJson(json);
 
@@ -1812,10 +1862,25 @@ class _$_Features implements _Features {
   @Deprecated('Deprecated.')
   @JsonKey(name: 'min_app_version')
   final String minAppVersion;
+  @override
+
+  /// File Extension Whitelist.
+  @JsonKey(name: 'file_extension_whitelist')
+  final List<String> fileExtensionWhitelist;
+  @override
+
+  /// File Extension Blacklist.
+  @JsonKey(name: 'file_extension_blacklist')
+  final List<String> fileExtensionBlacklist;
+  @override
+
+  /// File Extension Whitelist Priority.
+  @JsonKey(name: 'file_extension_whitelist_priority')
+  final bool fileExtensionWhitelistPriority;
 
   @override
   String toString() {
-    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, minAppVersion: $minAppVersion)';
+    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority)';
   }
 
   @override
@@ -1953,7 +2018,10 @@ class _$_Features implements _Features {
             (identical(other.taskPublic, taskPublic) || const DeepCollectionEquality().equals(other.taskPublic, taskPublic)) &&
             (identical(other.taskTags, taskTags) || const DeepCollectionEquality().equals(other.taskTags, taskTags)) &&
             (identical(other.calls, calls) || const DeepCollectionEquality().equals(other.calls, calls)) &&
-            (identical(other.minAppVersion, minAppVersion) || const DeepCollectionEquality().equals(other.minAppVersion, minAppVersion)));
+            (identical(other.minAppVersion, minAppVersion) || const DeepCollectionEquality().equals(other.minAppVersion, minAppVersion)) &&
+            (identical(other.fileExtensionWhitelist, fileExtensionWhitelist) || const DeepCollectionEquality().equals(other.fileExtensionWhitelist, fileExtensionWhitelist)) &&
+            (identical(other.fileExtensionBlacklist, fileExtensionBlacklist) || const DeepCollectionEquality().equals(other.fileExtensionBlacklist, fileExtensionBlacklist)) &&
+            (identical(other.fileExtensionWhitelistPriority, fileExtensionWhitelistPriority) || const DeepCollectionEquality().equals(other.fileExtensionWhitelistPriority, fileExtensionWhitelistPriority)));
   }
 
   @override
@@ -2046,7 +2114,10 @@ class _$_Features implements _Features {
       const DeepCollectionEquality().hash(taskPublic) ^
       const DeepCollectionEquality().hash(taskTags) ^
       const DeepCollectionEquality().hash(calls) ^
-      const DeepCollectionEquality().hash(minAppVersion);
+      const DeepCollectionEquality().hash(minAppVersion) ^
+      const DeepCollectionEquality().hash(fileExtensionWhitelist) ^
+      const DeepCollectionEquality().hash(fileExtensionBlacklist) ^
+      const DeepCollectionEquality().hash(fileExtensionWhitelistPriority);
 
   @JsonKey(ignore: true)
   @override
@@ -2147,7 +2218,10 @@ abstract class _Features implements Features {
       @required @Deprecated('Deprecated.') @JsonKey(name: 'task_public') bool taskPublic,
       @required @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') bool taskTags,
       @required @Deprecated('Deprecated.') @JsonKey(name: 'calls') bool calls,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion}) = _$_Features;
+      @required @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion,
+      @required @JsonKey(name: 'file_extension_whitelist') List<String> fileExtensionWhitelist,
+      @required @JsonKey(name: 'file_extension_blacklist') List<String> fileExtensionBlacklist,
+      @required @JsonKey(name: 'file_extension_whitelist_priority') bool fileExtensionWhitelistPriority}) = _$_Features;
 
   factory _Features.fromJson(Map<String, dynamic> json) = _$_Features.fromJson;
 
@@ -2599,6 +2673,21 @@ abstract class _Features implements Features {
   @Deprecated('Deprecated.')
   @JsonKey(name: 'min_app_version')
   String get minAppVersion;
+  @override
+
+  /// File Extension Whitelist.
+  @JsonKey(name: 'file_extension_whitelist')
+  List<String> get fileExtensionWhitelist;
+  @override
+
+  /// File Extension Blacklist.
+  @JsonKey(name: 'file_extension_blacklist')
+  List<String> get fileExtensionBlacklist;
+  @override
+
+  /// File Extension Whitelist Priority.
+  @JsonKey(name: 'file_extension_whitelist_priority')
+  bool get fileExtensionWhitelistPriority;
   @override
   @JsonKey(ignore: true)
   _$FeaturesCopyWith<_Features> get copyWith;
