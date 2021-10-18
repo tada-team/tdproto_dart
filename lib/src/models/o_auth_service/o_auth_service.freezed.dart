@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'o_auth_service.dart';
 
@@ -8,6 +9,10 @@ part of 'o_auth_service.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 OAuthService _$OAuthServiceFromJson(Map<String, dynamic> json) {
   return _OAuthService.fromJson(json);
 }
@@ -16,37 +21,34 @@ OAuthService _$OAuthServiceFromJson(Map<String, dynamic> json) {
 class _$OAuthServiceTearOff {
   const _$OAuthServiceTearOff();
 
-// ignore: unused_element
-  _OAuthService call({@required @JsonKey(name: 'name') String name, @required @JsonKey(name: 'url') String url}) {
+  _OAuthService call({@JsonKey(name: 'name') required String name, @JsonKey(name: 'url') required String url}) {
     return _OAuthService(
       name: name,
       url: url,
     );
   }
 
-// ignore: unused_element
   OAuthService fromJson(Map<String, Object> json) {
     return OAuthService.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $OAuthService = _$OAuthServiceTearOff();
 
 /// @nodoc
 mixin _$OAuthService {
   /// Integration title.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// Redirect url.
   @JsonKey(name: 'url')
-  String get url;
+  String get url => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $OAuthServiceCopyWith<OAuthService> get copyWith;
+  $OAuthServiceCopyWith<OAuthService> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -66,12 +68,18 @@ class _$OAuthServiceCopyWithImpl<$Res> implements $OAuthServiceCopyWith<$Res> {
 
   @override
   $Res call({
-    Object name = freezed,
-    Object url = freezed,
+    Object? name = freezed,
+    Object? url = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed ? _value.name : name as String,
-      url: url == freezed ? _value.url : url as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: url == freezed
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -95,25 +103,28 @@ class __$OAuthServiceCopyWithImpl<$Res> extends _$OAuthServiceCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object name = freezed,
-    Object url = freezed,
+    Object? name = freezed,
+    Object? url = freezed,
   }) {
     return _then(_OAuthService(
-      name: name == freezed ? _value.name : name as String,
-      url: url == freezed ? _value.url : url as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: url == freezed
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_OAuthService implements _OAuthService {
-  const _$_OAuthService({@required @JsonKey(name: 'name') this.name, @required @JsonKey(name: 'url') this.url})
-      : assert(name != null),
-        assert(url != null);
+  const _$_OAuthService({@JsonKey(name: 'name') required this.name, @JsonKey(name: 'url') required this.url});
 
-  factory _$_OAuthService.fromJson(Map<String, dynamic> json) => _$_$_OAuthServiceFromJson(json);
+  factory _$_OAuthService.fromJson(Map<String, dynamic> json) => _$$_OAuthServiceFromJson(json);
 
   @override
 
@@ -149,13 +160,13 @@ class _$_OAuthService implements _OAuthService {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_OAuthServiceToJson(this);
+    return _$$_OAuthServiceToJson(this);
   }
 }
 
 abstract class _OAuthService implements OAuthService {
   const factory _OAuthService(
-      {@required @JsonKey(name: 'name') String name, @required @JsonKey(name: 'url') String url}) = _$_OAuthService;
+      {@JsonKey(name: 'name') required String name, @JsonKey(name: 'url') required String url}) = _$_OAuthService;
 
   factory _OAuthService.fromJson(Map<String, dynamic> json) = _$_OAuthService.fromJson;
 
@@ -163,13 +174,13 @@ abstract class _OAuthService implements OAuthService {
 
   /// Integration title.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// Redirect url.
   @JsonKey(name: 'url')
-  String get url;
+  String get url => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$OAuthServiceCopyWith<_OAuthService> get copyWith;
+  _$OAuthServiceCopyWith<_OAuthService> get copyWith => throw _privateConstructorUsedError;
 }

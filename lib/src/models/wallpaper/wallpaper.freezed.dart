@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'wallpaper.dart';
 
@@ -8,6 +9,10 @@ part of 'wallpaper.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Wallpaper _$WallpaperFromJson(Map<String, dynamic> json) {
   return _Wallpaper.fromJson(json);
 }
@@ -16,11 +21,10 @@ Wallpaper _$WallpaperFromJson(Map<String, dynamic> json) {
 class _$WallpaperTearOff {
   const _$WallpaperTearOff();
 
-// ignore: unused_element
   _Wallpaper call(
-      {@required @JsonKey(name: 'key') String key,
-      @required @JsonKey(name: 'name') String name,
-      @required @JsonKey(name: 'url') String url}) {
+      {@JsonKey(name: 'key') required String key,
+      @JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'url') required String url}) {
     return _Wallpaper(
       key: key,
       name: name,
@@ -28,33 +32,31 @@ class _$WallpaperTearOff {
     );
   }
 
-// ignore: unused_element
   Wallpaper fromJson(Map<String, Object> json) {
     return Wallpaper.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Wallpaper = _$WallpaperTearOff();
 
 /// @nodoc
 mixin _$Wallpaper {
   /// Unique identifier.
   @JsonKey(name: 'key')
-  String get key;
+  String get key => throw _privateConstructorUsedError;
 
   /// Localized description.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// Url to jpg or png.
   @JsonKey(name: 'url')
-  String get url;
+  String get url => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $WallpaperCopyWith<Wallpaper> get copyWith;
+  $WallpaperCopyWith<Wallpaper> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -73,14 +75,23 @@ class _$WallpaperCopyWithImpl<$Res> implements $WallpaperCopyWith<$Res> {
 
   @override
   $Res call({
-    Object key = freezed,
-    Object name = freezed,
-    Object url = freezed,
+    Object? key = freezed,
+    Object? name = freezed,
+    Object? url = freezed,
   }) {
     return _then(_value.copyWith(
-      key: key == freezed ? _value.key : key as String,
-      name: name == freezed ? _value.name : name as String,
-      url: url == freezed ? _value.url : url as String,
+      key: key == freezed
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: url == freezed
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -102,31 +113,36 @@ class __$WallpaperCopyWithImpl<$Res> extends _$WallpaperCopyWithImpl<$Res> imple
 
   @override
   $Res call({
-    Object key = freezed,
-    Object name = freezed,
-    Object url = freezed,
+    Object? key = freezed,
+    Object? name = freezed,
+    Object? url = freezed,
   }) {
     return _then(_Wallpaper(
-      key: key == freezed ? _value.key : key as String,
-      name: name == freezed ? _value.name : name as String,
-      url: url == freezed ? _value.url : url as String,
+      key: key == freezed
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: url == freezed
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Wallpaper implements _Wallpaper {
   const _$_Wallpaper(
-      {@required @JsonKey(name: 'key') this.key,
-      @required @JsonKey(name: 'name') this.name,
-      @required @JsonKey(name: 'url') this.url})
-      : assert(key != null),
-        assert(name != null),
-        assert(url != null);
+      {@JsonKey(name: 'key') required this.key,
+      @JsonKey(name: 'name') required this.name,
+      @JsonKey(name: 'url') required this.url});
 
-  factory _$_Wallpaper.fromJson(Map<String, dynamic> json) => _$_$_WallpaperFromJson(json);
+  factory _$_Wallpaper.fromJson(Map<String, dynamic> json) => _$$_WallpaperFromJson(json);
 
   @override
 
@@ -171,15 +187,15 @@ class _$_Wallpaper implements _Wallpaper {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_WallpaperToJson(this);
+    return _$$_WallpaperToJson(this);
   }
 }
 
 abstract class _Wallpaper implements Wallpaper {
   const factory _Wallpaper(
-      {@required @JsonKey(name: 'key') String key,
-      @required @JsonKey(name: 'name') String name,
-      @required @JsonKey(name: 'url') String url}) = _$_Wallpaper;
+      {@JsonKey(name: 'key') required String key,
+      @JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'url') required String url}) = _$_Wallpaper;
 
   factory _Wallpaper.fromJson(Map<String, dynamic> json) = _$_Wallpaper.fromJson;
 
@@ -187,18 +203,18 @@ abstract class _Wallpaper implements Wallpaper {
 
   /// Unique identifier.
   @JsonKey(name: 'key')
-  String get key;
+  String get key => throw _privateConstructorUsedError;
   @override
 
   /// Localized description.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// Url to jpg or png.
   @JsonKey(name: 'url')
-  String get url;
+  String get url => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$WallpaperCopyWith<_Wallpaper> get copyWith;
+  _$WallpaperCopyWith<_Wallpaper> get copyWith => throw _privateConstructorUsedError;
 }

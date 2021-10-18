@@ -6,13 +6,13 @@ part 'deleted_section.g.dart';
 
 /// Deleted task project or contact section.
 @freezed
-abstract class DeletedSection with _$DeletedSection {
+class DeletedSection with _$DeletedSection {
   const factory DeletedSection({
     /// Section uid.
-    @JsonKey(name: 'uid') @required String uid,
+    @JsonKey(name: 'uid') required String uid,
 
     /// Object version.
-    @JsonKey(name: 'gentime') @required int gentime,
+    @JsonKey(name: 'gentime') required int gentime,
   }) = _DeletedSection;
 
   factory DeletedSection.fromJson(Map<String, dynamic> json) => _$DeletedSectionFromJson(json);

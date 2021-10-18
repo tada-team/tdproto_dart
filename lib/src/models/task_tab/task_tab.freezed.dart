@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'task_tab.dart';
 
@@ -8,6 +9,10 @@ part of 'task_tab.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 TaskTab _$TaskTabFromJson(Map<String, dynamic> json) {
   return _TaskTab.fromJson(json);
 }
@@ -16,16 +21,15 @@ TaskTab _$TaskTabFromJson(Map<String, dynamic> json) {
 class _$TaskTabTearOff {
   const _$TaskTabTearOff();
 
-// ignore: unused_element
   _TaskTab call(
-      {@required @JsonKey(name: 'key') String key,
-      @required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'hide_empty') bool hideEmpty,
-      @required @JsonKey(name: 'show_counter') bool showCounter,
-      @required @JsonKey(name: 'pagination') bool pagination,
-      @required @JsonKey(name: 'filters') List<TaskFilter> filters,
-      @required @JsonKey(name: 'sort') List<TaskSort> sort,
-      @required @JsonKey(name: 'unread_tasks') List<TaskCounters> unreadTasks}) {
+      {@JsonKey(name: 'key') required String key,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'hide_empty') required bool hideEmpty = false,
+      @JsonKey(name: 'show_counter') required bool showCounter = false,
+      @JsonKey(name: 'pagination') required bool pagination = false,
+      @JsonKey(name: 'filters') required List<TaskFilter> filters,
+      @JsonKey(name: 'sort') required List<TaskSort> sort,
+      @JsonKey(name: 'unread_tasks') required List<TaskCounters> unreadTasks}) {
     return _TaskTab(
       key: key,
       title: title,
@@ -38,53 +42,51 @@ class _$TaskTabTearOff {
     );
   }
 
-// ignore: unused_element
   TaskTab fromJson(Map<String, Object> json) {
     return TaskTab.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $TaskTab = _$TaskTabTearOff();
 
 /// @nodoc
 mixin _$TaskTab {
   /// Tab name.
   @JsonKey(name: 'key')
-  String get key;
+  String get key => throw _privateConstructorUsedError;
 
   /// Tab title.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
 
   /// Disable this tab when it has no contents.
   @JsonKey(name: 'hide_empty')
-  bool get hideEmpty;
+  bool get hideEmpty => throw _privateConstructorUsedError;
 
   /// Show unread badge.
   @JsonKey(name: 'show_counter')
-  bool get showCounter;
+  bool get showCounter => throw _privateConstructorUsedError;
 
   /// Enable pagination.
   @JsonKey(name: 'pagination')
-  bool get pagination;
+  bool get pagination => throw _privateConstructorUsedError;
 
   /// Filters inside tab.
   @JsonKey(name: 'filters')
-  List<TaskFilter> get filters;
+  List<TaskFilter> get filters => throw _privateConstructorUsedError;
 
   /// Sort available in tab.
   @JsonKey(name: 'sort')
-  List<TaskSort> get sort;
+  List<TaskSort> get sort => throw _privateConstructorUsedError;
 
   /// Unread tasks with jid and counters.
   @JsonKey(name: 'unread_tasks')
-  List<TaskCounters> get unreadTasks;
+  List<TaskCounters> get unreadTasks => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $TaskTabCopyWith<TaskTab> get copyWith;
+  $TaskTabCopyWith<TaskTab> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -111,24 +113,48 @@ class _$TaskTabCopyWithImpl<$Res> implements $TaskTabCopyWith<$Res> {
 
   @override
   $Res call({
-    Object key = freezed,
-    Object title = freezed,
-    Object hideEmpty = freezed,
-    Object showCounter = freezed,
-    Object pagination = freezed,
-    Object filters = freezed,
-    Object sort = freezed,
-    Object unreadTasks = freezed,
+    Object? key = freezed,
+    Object? title = freezed,
+    Object? hideEmpty = freezed,
+    Object? showCounter = freezed,
+    Object? pagination = freezed,
+    Object? filters = freezed,
+    Object? sort = freezed,
+    Object? unreadTasks = freezed,
   }) {
     return _then(_value.copyWith(
-      key: key == freezed ? _value.key : key as String,
-      title: title == freezed ? _value.title : title as String,
-      hideEmpty: hideEmpty == freezed ? _value.hideEmpty : hideEmpty as bool,
-      showCounter: showCounter == freezed ? _value.showCounter : showCounter as bool,
-      pagination: pagination == freezed ? _value.pagination : pagination as bool,
-      filters: filters == freezed ? _value.filters : filters as List<TaskFilter>,
-      sort: sort == freezed ? _value.sort : sort as List<TaskSort>,
-      unreadTasks: unreadTasks == freezed ? _value.unreadTasks : unreadTasks as List<TaskCounters>,
+      key: key == freezed
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      hideEmpty: hideEmpty == freezed
+          ? _value.hideEmpty
+          : hideEmpty // ignore: cast_nullable_to_non_nullable
+              as bool,
+      showCounter: showCounter == freezed
+          ? _value.showCounter
+          : showCounter // ignore: cast_nullable_to_non_nullable
+              as bool,
+      pagination: pagination == freezed
+          ? _value.pagination
+          : pagination // ignore: cast_nullable_to_non_nullable
+              as bool,
+      filters: filters == freezed
+          ? _value.filters
+          : filters // ignore: cast_nullable_to_non_nullable
+              as List<TaskFilter>,
+      sort: sort == freezed
+          ? _value.sort
+          : sort // ignore: cast_nullable_to_non_nullable
+              as List<TaskSort>,
+      unreadTasks: unreadTasks == freezed
+          ? _value.unreadTasks
+          : unreadTasks // ignore: cast_nullable_to_non_nullable
+              as List<TaskCounters>,
     ));
   }
 }
@@ -157,51 +183,66 @@ class __$TaskTabCopyWithImpl<$Res> extends _$TaskTabCopyWithImpl<$Res> implement
 
   @override
   $Res call({
-    Object key = freezed,
-    Object title = freezed,
-    Object hideEmpty = freezed,
-    Object showCounter = freezed,
-    Object pagination = freezed,
-    Object filters = freezed,
-    Object sort = freezed,
-    Object unreadTasks = freezed,
+    Object? key = freezed,
+    Object? title = freezed,
+    Object? hideEmpty = freezed,
+    Object? showCounter = freezed,
+    Object? pagination = freezed,
+    Object? filters = freezed,
+    Object? sort = freezed,
+    Object? unreadTasks = freezed,
   }) {
     return _then(_TaskTab(
-      key: key == freezed ? _value.key : key as String,
-      title: title == freezed ? _value.title : title as String,
-      hideEmpty: hideEmpty == freezed ? _value.hideEmpty : hideEmpty as bool,
-      showCounter: showCounter == freezed ? _value.showCounter : showCounter as bool,
-      pagination: pagination == freezed ? _value.pagination : pagination as bool,
-      filters: filters == freezed ? _value.filters : filters as List<TaskFilter>,
-      sort: sort == freezed ? _value.sort : sort as List<TaskSort>,
-      unreadTasks: unreadTasks == freezed ? _value.unreadTasks : unreadTasks as List<TaskCounters>,
+      key: key == freezed
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      hideEmpty: hideEmpty == freezed
+          ? _value.hideEmpty
+          : hideEmpty // ignore: cast_nullable_to_non_nullable
+              as bool,
+      showCounter: showCounter == freezed
+          ? _value.showCounter
+          : showCounter // ignore: cast_nullable_to_non_nullable
+              as bool,
+      pagination: pagination == freezed
+          ? _value.pagination
+          : pagination // ignore: cast_nullable_to_non_nullable
+              as bool,
+      filters: filters == freezed
+          ? _value.filters
+          : filters // ignore: cast_nullable_to_non_nullable
+              as List<TaskFilter>,
+      sort: sort == freezed
+          ? _value.sort
+          : sort // ignore: cast_nullable_to_non_nullable
+              as List<TaskSort>,
+      unreadTasks: unreadTasks == freezed
+          ? _value.unreadTasks
+          : unreadTasks // ignore: cast_nullable_to_non_nullable
+              as List<TaskCounters>,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_TaskTab implements _TaskTab {
   const _$_TaskTab(
-      {@required @JsonKey(name: 'key') this.key,
-      @required @JsonKey(name: 'title') this.title,
-      @required @JsonKey(name: 'hide_empty') this.hideEmpty,
-      @required @JsonKey(name: 'show_counter') this.showCounter,
-      @required @JsonKey(name: 'pagination') this.pagination,
-      @required @JsonKey(name: 'filters') this.filters,
-      @required @JsonKey(name: 'sort') this.sort,
-      @required @JsonKey(name: 'unread_tasks') this.unreadTasks})
-      : assert(key != null),
-        assert(title != null),
-        assert(hideEmpty != null),
-        assert(showCounter != null),
-        assert(pagination != null),
-        assert(filters != null),
-        assert(sort != null),
-        assert(unreadTasks != null);
+      {@JsonKey(name: 'key') required this.key,
+      @JsonKey(name: 'title') required this.title,
+      @JsonKey(name: 'hide_empty') required this.hideEmpty = false,
+      @JsonKey(name: 'show_counter') required this.showCounter = false,
+      @JsonKey(name: 'pagination') required this.pagination = false,
+      @JsonKey(name: 'filters') required this.filters,
+      @JsonKey(name: 'sort') required this.sort,
+      @JsonKey(name: 'unread_tasks') required this.unreadTasks});
 
-  factory _$_TaskTab.fromJson(Map<String, dynamic> json) => _$_$_TaskTabFromJson(json);
+  factory _$_TaskTab.fromJson(Map<String, dynamic> json) => _$$_TaskTabFromJson(json);
 
   @override
 
@@ -285,20 +326,20 @@ class _$_TaskTab implements _TaskTab {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_TaskTabToJson(this);
+    return _$$_TaskTabToJson(this);
   }
 }
 
 abstract class _TaskTab implements TaskTab {
   const factory _TaskTab(
-      {@required @JsonKey(name: 'key') String key,
-      @required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'hide_empty') bool hideEmpty,
-      @required @JsonKey(name: 'show_counter') bool showCounter,
-      @required @JsonKey(name: 'pagination') bool pagination,
-      @required @JsonKey(name: 'filters') List<TaskFilter> filters,
-      @required @JsonKey(name: 'sort') List<TaskSort> sort,
-      @required @JsonKey(name: 'unread_tasks') List<TaskCounters> unreadTasks}) = _$_TaskTab;
+      {@JsonKey(name: 'key') required String key,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'hide_empty') required bool hideEmpty,
+      @JsonKey(name: 'show_counter') required bool showCounter,
+      @JsonKey(name: 'pagination') required bool pagination,
+      @JsonKey(name: 'filters') required List<TaskFilter> filters,
+      @JsonKey(name: 'sort') required List<TaskSort> sort,
+      @JsonKey(name: 'unread_tasks') required List<TaskCounters> unreadTasks}) = _$_TaskTab;
 
   factory _TaskTab.fromJson(Map<String, dynamic> json) = _$_TaskTab.fromJson;
 
@@ -306,43 +347,43 @@ abstract class _TaskTab implements TaskTab {
 
   /// Tab name.
   @JsonKey(name: 'key')
-  String get key;
+  String get key => throw _privateConstructorUsedError;
   @override
 
   /// Tab title.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
 
   /// Disable this tab when it has no contents.
   @JsonKey(name: 'hide_empty')
-  bool get hideEmpty;
+  bool get hideEmpty => throw _privateConstructorUsedError;
   @override
 
   /// Show unread badge.
   @JsonKey(name: 'show_counter')
-  bool get showCounter;
+  bool get showCounter => throw _privateConstructorUsedError;
   @override
 
   /// Enable pagination.
   @JsonKey(name: 'pagination')
-  bool get pagination;
+  bool get pagination => throw _privateConstructorUsedError;
   @override
 
   /// Filters inside tab.
   @JsonKey(name: 'filters')
-  List<TaskFilter> get filters;
+  List<TaskFilter> get filters => throw _privateConstructorUsedError;
   @override
 
   /// Sort available in tab.
   @JsonKey(name: 'sort')
-  List<TaskSort> get sort;
+  List<TaskSort> get sort => throw _privateConstructorUsedError;
   @override
 
   /// Unread tasks with jid and counters.
   @JsonKey(name: 'unread_tasks')
-  List<TaskCounters> get unreadTasks;
+  List<TaskCounters> get unreadTasks => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TaskTabCopyWith<_TaskTab> get copyWith;
+  _$TaskTabCopyWith<_TaskTab> get copyWith => throw _privateConstructorUsedError;
 }

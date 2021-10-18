@@ -6,18 +6,16 @@ part of 'sharp_link_meta.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_SharpLinkMeta _$_$_SharpLinkMetaFromJson(Map<String, dynamic> json) {
-  return _$_SharpLinkMeta(
-    jid: json['jid'] as String,
-    chatType: json['chat_type'] as String,
-    isPublic: json['public'] as bool,
-    taskStatus: json['task_status'] as String,
-    num: json['num'] as int,
-    done: json['done'] as bool,
-  );
-}
+_$_SharpLinkMeta _$$_SharpLinkMetaFromJson(Map<String, dynamic> json) => _$_SharpLinkMeta(
+      jid: json['jid'] as String,
+      chatType: json['chat_type'] as String,
+      isPublic: json['public'] as bool? ?? false,
+      taskStatus: json['task_status'] as String?,
+      num: json['num'] as int?,
+      done: json['done'] as bool? ?? false,
+    );
 
-Map<String, dynamic> _$_$_SharpLinkMetaToJson(_$_SharpLinkMeta instance) => <String, dynamic>{
+Map<String, dynamic> _$$_SharpLinkMetaToJson(_$_SharpLinkMeta instance) => <String, dynamic>{
       'jid': instance.jid,
       'chat_type': instance.chatType,
       'public': instance.isPublic,

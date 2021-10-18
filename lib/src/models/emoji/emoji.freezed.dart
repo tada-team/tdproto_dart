@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'emoji.dart';
 
@@ -8,6 +9,10 @@ part of 'emoji.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Emoji _$EmojiFromJson(Map<String, dynamic> json) {
   return _Emoji.fromJson(json);
 }
@@ -16,37 +21,34 @@ Emoji _$EmojiFromJson(Map<String, dynamic> json) {
 class _$EmojiTearOff {
   const _$EmojiTearOff();
 
-// ignore: unused_element
-  _Emoji call({@required @JsonKey(name: 'char') String char, @required @JsonKey(name: 'key') String key}) {
+  _Emoji call({@JsonKey(name: 'char') required String char, @JsonKey(name: 'key') required String key}) {
     return _Emoji(
       char: char,
       key: key,
     );
   }
 
-// ignore: unused_element
   Emoji fromJson(Map<String, Object> json) {
     return Emoji.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Emoji = _$EmojiTearOff();
 
 /// @nodoc
 mixin _$Emoji {
   /// Unicode symbol.
   @JsonKey(name: 'char')
-  String get char;
+  String get char => throw _privateConstructorUsedError;
 
   /// Text representation.
   @JsonKey(name: 'key')
-  String get key;
+  String get key => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $EmojiCopyWith<Emoji> get copyWith;
+  $EmojiCopyWith<Emoji> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -65,12 +67,18 @@ class _$EmojiCopyWithImpl<$Res> implements $EmojiCopyWith<$Res> {
 
   @override
   $Res call({
-    Object char = freezed,
-    Object key = freezed,
+    Object? char = freezed,
+    Object? key = freezed,
   }) {
     return _then(_value.copyWith(
-      char: char == freezed ? _value.char : char as String,
-      key: key == freezed ? _value.key : key as String,
+      char: char == freezed
+          ? _value.char
+          : char // ignore: cast_nullable_to_non_nullable
+              as String,
+      key: key == freezed
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -91,25 +99,28 @@ class __$EmojiCopyWithImpl<$Res> extends _$EmojiCopyWithImpl<$Res> implements _$
 
   @override
   $Res call({
-    Object char = freezed,
-    Object key = freezed,
+    Object? char = freezed,
+    Object? key = freezed,
   }) {
     return _then(_Emoji(
-      char: char == freezed ? _value.char : char as String,
-      key: key == freezed ? _value.key : key as String,
+      char: char == freezed
+          ? _value.char
+          : char // ignore: cast_nullable_to_non_nullable
+              as String,
+      key: key == freezed
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Emoji implements _Emoji {
-  const _$_Emoji({@required @JsonKey(name: 'char') this.char, @required @JsonKey(name: 'key') this.key})
-      : assert(char != null),
-        assert(key != null);
+  const _$_Emoji({@JsonKey(name: 'char') required this.char, @JsonKey(name: 'key') required this.key});
 
-  factory _$_Emoji.fromJson(Map<String, dynamic> json) => _$_$_EmojiFromJson(json);
+  factory _$_Emoji.fromJson(Map<String, dynamic> json) => _$$_EmojiFromJson(json);
 
   @override
 
@@ -145,12 +156,12 @@ class _$_Emoji implements _Emoji {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_EmojiToJson(this);
+    return _$$_EmojiToJson(this);
   }
 }
 
 abstract class _Emoji implements Emoji {
-  const factory _Emoji({@required @JsonKey(name: 'char') String char, @required @JsonKey(name: 'key') String key}) =
+  const factory _Emoji({@JsonKey(name: 'char') required String char, @JsonKey(name: 'key') required String key}) =
       _$_Emoji;
 
   factory _Emoji.fromJson(Map<String, dynamic> json) = _$_Emoji.fromJson;
@@ -159,13 +170,13 @@ abstract class _Emoji implements Emoji {
 
   /// Unicode symbol.
   @JsonKey(name: 'char')
-  String get char;
+  String get char => throw _privateConstructorUsedError;
   @override
 
   /// Text representation.
   @JsonKey(name: 'key')
-  String get key;
+  String get key => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$EmojiCopyWith<_Emoji> get copyWith;
+  _$EmojiCopyWith<_Emoji> get copyWith => throw _privateConstructorUsedError;
 }

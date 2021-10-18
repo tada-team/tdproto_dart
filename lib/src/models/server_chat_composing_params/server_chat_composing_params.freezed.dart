@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_chat_composing_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_chat_composing_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerChatComposingParams _$ServerChatComposingParamsFromJson(Map<String, dynamic> json) {
   return _ServerChatComposingParams.fromJson(json);
 }
@@ -16,13 +21,12 @@ ServerChatComposingParams _$ServerChatComposingParamsFromJson(Map<String, dynami
 class _$ServerChatComposingParamsTearOff {
   const _$ServerChatComposingParamsTearOff();
 
-// ignore: unused_element
   _ServerChatComposingParams call(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'actor') String actor,
-      @required @JsonKey(name: 'composing') bool composing,
-      @JsonKey(name: 'is_audio') bool isAudio,
-      @JsonKey(name: 'valid_until') @DateTimeConverter() DateTime validUntil}) {
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'actor') required String actor,
+      @JsonKey(name: 'composing') required bool composing = false,
+      @JsonKey(name: 'is_audio') bool? isAudio = false,
+      @JsonKey(name: 'valid_until') @DateTimeConverter() DateTime? validUntil}) {
     return _ServerChatComposingParams(
       jid: jid,
       actor: actor,
@@ -32,42 +36,40 @@ class _$ServerChatComposingParamsTearOff {
     );
   }
 
-// ignore: unused_element
   ServerChatComposingParams fromJson(Map<String, Object> json) {
     return ServerChatComposingParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerChatComposingParams = _$ServerChatComposingParamsTearOff();
 
 /// @nodoc
 mixin _$ServerChatComposingParams {
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
   /// Actor id.
   @JsonKey(name: 'actor')
-  String get actor;
+  String get actor => throw _privateConstructorUsedError;
 
   /// true = start typing / audio recording, false = stop.
   @JsonKey(name: 'composing')
-  bool get composing;
+  bool get composing => throw _privateConstructorUsedError;
 
   /// true = audiomessage, false = text typing.
   @JsonKey(name: 'is_audio')
-  bool get isAudio;
+  bool? get isAudio => throw _privateConstructorUsedError;
 
   /// Composing event max lifetime.
   @JsonKey(name: 'valid_until')
   @DateTimeConverter()
-  DateTime get validUntil;
+  DateTime? get validUntil => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerChatComposingParamsCopyWith<ServerChatComposingParams> get copyWith;
+  $ServerChatComposingParamsCopyWith<ServerChatComposingParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -79,8 +81,8 @@ abstract class $ServerChatComposingParamsCopyWith<$Res> {
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'actor') String actor,
       @JsonKey(name: 'composing') bool composing,
-      @JsonKey(name: 'is_audio') bool isAudio,
-      @JsonKey(name: 'valid_until') @DateTimeConverter() DateTime validUntil});
+      @JsonKey(name: 'is_audio') bool? isAudio,
+      @JsonKey(name: 'valid_until') @DateTimeConverter() DateTime? validUntil});
 }
 
 /// @nodoc
@@ -93,18 +95,33 @@ class _$ServerChatComposingParamsCopyWithImpl<$Res> implements $ServerChatCompos
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object actor = freezed,
-    Object composing = freezed,
-    Object isAudio = freezed,
-    Object validUntil = freezed,
+    Object? jid = freezed,
+    Object? actor = freezed,
+    Object? composing = freezed,
+    Object? isAudio = freezed,
+    Object? validUntil = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
-      actor: actor == freezed ? _value.actor : actor as String,
-      composing: composing == freezed ? _value.composing : composing as bool,
-      isAudio: isAudio == freezed ? _value.isAudio : isAudio as bool,
-      validUntil: validUntil == freezed ? _value.validUntil : validUntil as DateTime,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      actor: actor == freezed
+          ? _value.actor
+          : actor // ignore: cast_nullable_to_non_nullable
+              as String,
+      composing: composing == freezed
+          ? _value.composing
+          : composing // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isAudio: isAudio == freezed
+          ? _value.isAudio
+          : isAudio // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      validUntil: validUntil == freezed
+          ? _value.validUntil
+          : validUntil // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
     ));
   }
 }
@@ -119,8 +136,8 @@ abstract class _$ServerChatComposingParamsCopyWith<$Res> implements $ServerChatC
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'actor') String actor,
       @JsonKey(name: 'composing') bool composing,
-      @JsonKey(name: 'is_audio') bool isAudio,
-      @JsonKey(name: 'valid_until') @DateTimeConverter() DateTime validUntil});
+      @JsonKey(name: 'is_audio') bool? isAudio,
+      @JsonKey(name: 'valid_until') @DateTimeConverter() DateTime? validUntil});
 }
 
 /// @nodoc
@@ -135,38 +152,49 @@ class __$ServerChatComposingParamsCopyWithImpl<$Res> extends _$ServerChatComposi
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object actor = freezed,
-    Object composing = freezed,
-    Object isAudio = freezed,
-    Object validUntil = freezed,
+    Object? jid = freezed,
+    Object? actor = freezed,
+    Object? composing = freezed,
+    Object? isAudio = freezed,
+    Object? validUntil = freezed,
   }) {
     return _then(_ServerChatComposingParams(
-      jid: jid == freezed ? _value.jid : jid as String,
-      actor: actor == freezed ? _value.actor : actor as String,
-      composing: composing == freezed ? _value.composing : composing as bool,
-      isAudio: isAudio == freezed ? _value.isAudio : isAudio as bool,
-      validUntil: validUntil == freezed ? _value.validUntil : validUntil as DateTime,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      actor: actor == freezed
+          ? _value.actor
+          : actor // ignore: cast_nullable_to_non_nullable
+              as String,
+      composing: composing == freezed
+          ? _value.composing
+          : composing // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isAudio: isAudio == freezed
+          ? _value.isAudio
+          : isAudio // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      validUntil: validUntil == freezed
+          ? _value.validUntil
+          : validUntil // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerChatComposingParams implements _ServerChatComposingParams {
   const _$_ServerChatComposingParams(
-      {@required @JsonKey(name: 'jid') this.jid,
-      @required @JsonKey(name: 'actor') this.actor,
-      @required @JsonKey(name: 'composing') this.composing,
-      @JsonKey(name: 'is_audio') this.isAudio,
-      @JsonKey(name: 'valid_until') @DateTimeConverter() this.validUntil})
-      : assert(jid != null),
-        assert(actor != null),
-        assert(composing != null);
+      {@JsonKey(name: 'jid') required this.jid,
+      @JsonKey(name: 'actor') required this.actor,
+      @JsonKey(name: 'composing') required this.composing = false,
+      @JsonKey(name: 'is_audio') this.isAudio = false,
+      @JsonKey(name: 'valid_until') @DateTimeConverter() this.validUntil});
 
   factory _$_ServerChatComposingParams.fromJson(Map<String, dynamic> json) =>
-      _$_$_ServerChatComposingParamsFromJson(json);
+      _$$_ServerChatComposingParamsFromJson(json);
 
   @override
 
@@ -187,13 +215,13 @@ class _$_ServerChatComposingParams implements _ServerChatComposingParams {
 
   /// true = audiomessage, false = text typing.
   @JsonKey(name: 'is_audio')
-  final bool isAudio;
+  final bool? isAudio;
   @override
 
   /// Composing event max lifetime.
   @JsonKey(name: 'valid_until')
   @DateTimeConverter()
-  final DateTime validUntil;
+  final DateTime? validUntil;
 
   @override
   String toString() {
@@ -229,17 +257,17 @@ class _$_ServerChatComposingParams implements _ServerChatComposingParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerChatComposingParamsToJson(this);
+    return _$$_ServerChatComposingParamsToJson(this);
   }
 }
 
 abstract class _ServerChatComposingParams implements ServerChatComposingParams {
   const factory _ServerChatComposingParams(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'actor') String actor,
-      @required @JsonKey(name: 'composing') bool composing,
-      @JsonKey(name: 'is_audio') bool isAudio,
-      @JsonKey(name: 'valid_until') @DateTimeConverter() DateTime validUntil}) = _$_ServerChatComposingParams;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'actor') required String actor,
+      @JsonKey(name: 'composing') required bool composing,
+      @JsonKey(name: 'is_audio') bool? isAudio,
+      @JsonKey(name: 'valid_until') @DateTimeConverter() DateTime? validUntil}) = _$_ServerChatComposingParams;
 
   factory _ServerChatComposingParams.fromJson(Map<String, dynamic> json) = _$_ServerChatComposingParams.fromJson;
 
@@ -247,29 +275,29 @@ abstract class _ServerChatComposingParams implements ServerChatComposingParams {
 
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Actor id.
   @JsonKey(name: 'actor')
-  String get actor;
+  String get actor => throw _privateConstructorUsedError;
   @override
 
   /// true = start typing / audio recording, false = stop.
   @JsonKey(name: 'composing')
-  bool get composing;
+  bool get composing => throw _privateConstructorUsedError;
   @override
 
   /// true = audiomessage, false = text typing.
   @JsonKey(name: 'is_audio')
-  bool get isAudio;
+  bool? get isAudio => throw _privateConstructorUsedError;
   @override
 
   /// Composing event max lifetime.
   @JsonKey(name: 'valid_until')
   @DateTimeConverter()
-  DateTime get validUntil;
+  DateTime? get validUntil => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerChatComposingParamsCopyWith<_ServerChatComposingParams> get copyWith;
+  _$ServerChatComposingParamsCopyWith<_ServerChatComposingParams> get copyWith => throw _privateConstructorUsedError;
 }

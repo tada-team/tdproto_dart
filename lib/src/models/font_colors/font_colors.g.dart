@@ -6,19 +6,17 @@ part of 'font_colors.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_FontColors _$_$_FontColorsFromJson(Map<String, dynamic> json) {
-  return _$_FontColors(
-    text: json['text'] as String,
-    title: json['title'] as String,
-    sub: json['sub'] as String,
-    brandButton: json['brand_button'] as String,
-    simpleButton: json['simple_button'] as String,
-    bubbleSent: json['bubble_sent'] as String,
-    bubbleReceived: json['bubble_received'] as String,
-  );
-}
+_$_FontColors _$$_FontColorsFromJson(Map<String, dynamic> json) => _$_FontColors(
+      text: json['text'] as String,
+      title: json['title'] as String,
+      sub: json['sub'] as String,
+      brandButton: json['brand_button'] as String,
+      simpleButton: json['simple_button'] as String,
+      bubbleSent: json['bubble_sent'] as String,
+      bubbleReceived: json['bubble_received'] as String,
+    );
 
-Map<String, dynamic> _$_$_FontColorsToJson(_$_FontColors instance) => <String, dynamic>{
+Map<String, dynamic> _$$_FontColorsToJson(_$_FontColors instance) => <String, dynamic>{
       'text': instance.text,
       'title': instance.title,
       'sub': instance.sub,

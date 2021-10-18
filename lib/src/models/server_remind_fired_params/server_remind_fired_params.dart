@@ -6,10 +6,10 @@ part 'server_remind_fired_params.g.dart';
 
 /// Params of the server.remind.fired event.
 @freezed
-abstract class ServerRemindFiredParams with _$ServerRemindFiredParams {
+class ServerRemindFiredParams with _$ServerRemindFiredParams {
   const factory ServerRemindFiredParams({
     /// Remind information.
-    @JsonKey(name: 'reminds') @required List<Remind> reminds,
+    @JsonKey(name: 'reminds') required List<Remind> reminds,
   }) = _ServerRemindFiredParams;
 
   factory ServerRemindFiredParams.fromJson(Map<String, dynamic> json) => _$ServerRemindFiredParamsFromJson(json);

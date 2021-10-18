@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'any_event.dart';
 
@@ -8,6 +9,10 @@ part of 'any_event.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 AnyEvent _$AnyEventFromJson(Map<String, dynamic> json) {
   return _AnyEvent.fromJson(json);
 }
@@ -16,43 +21,40 @@ AnyEvent _$AnyEventFromJson(Map<String, dynamic> json) {
 class _$AnyEventTearOff {
   const _$AnyEventTearOff();
 
-// ignore: unused_element
-  _AnyEvent call({@required @JsonKey(name: 'event') String name, @JsonKey(name: 'confirm_id') String confirmId}) {
+  _AnyEvent call({@JsonKey(name: 'event') required String name, @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _AnyEvent(
       name: name,
       confirmId: confirmId,
     );
   }
 
-// ignore: unused_element
   AnyEvent fromJson(Map<String, Object> json) {
     return AnyEvent.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $AnyEvent = _$AnyEventTearOff();
 
 /// @nodoc
 mixin _$AnyEvent {
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $AnyEventCopyWith<AnyEvent> get copyWith;
+  $AnyEventCopyWith<AnyEvent> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $AnyEventCopyWith<$Res> {
   factory $AnyEventCopyWith(AnyEvent value, $Res Function(AnyEvent) then) = _$AnyEventCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'event') String name, @JsonKey(name: 'confirm_id') String confirmId});
+  $Res call({@JsonKey(name: 'event') String name, @JsonKey(name: 'confirm_id') String? confirmId});
 }
 
 /// @nodoc
@@ -65,12 +67,18 @@ class _$AnyEventCopyWithImpl<$Res> implements $AnyEventCopyWith<$Res> {
 
   @override
   $Res call({
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -79,7 +87,7 @@ class _$AnyEventCopyWithImpl<$Res> implements $AnyEventCopyWith<$Res> {
 abstract class _$AnyEventCopyWith<$Res> implements $AnyEventCopyWith<$Res> {
   factory _$AnyEventCopyWith(_AnyEvent value, $Res Function(_AnyEvent) then) = __$AnyEventCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'event') String name, @JsonKey(name: 'confirm_id') String confirmId});
+  $Res call({@JsonKey(name: 'event') String name, @JsonKey(name: 'confirm_id') String? confirmId});
 }
 
 /// @nodoc
@@ -92,24 +100,28 @@ class __$AnyEventCopyWithImpl<$Res> extends _$AnyEventCopyWithImpl<$Res> impleme
 
   @override
   $Res call({
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_AnyEvent(
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_AnyEvent implements _AnyEvent {
-  const _$_AnyEvent({@required @JsonKey(name: 'event') this.name, @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(name != null);
+  const _$_AnyEvent({@JsonKey(name: 'event') required this.name, @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_AnyEvent.fromJson(Map<String, dynamic> json) => _$_$_AnyEventFromJson(json);
+  factory _$_AnyEvent.fromJson(Map<String, dynamic> json) => _$$_AnyEventFromJson(json);
 
   @override
 
@@ -120,7 +132,7 @@ class _$_AnyEvent implements _AnyEvent {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -146,13 +158,13 @@ class _$_AnyEvent implements _AnyEvent {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_AnyEventToJson(this);
+    return _$$_AnyEventToJson(this);
   }
 }
 
 abstract class _AnyEvent implements AnyEvent {
   const factory _AnyEvent(
-      {@required @JsonKey(name: 'event') String name, @JsonKey(name: 'confirm_id') String confirmId}) = _$_AnyEvent;
+      {@JsonKey(name: 'event') required String name, @JsonKey(name: 'confirm_id') String? confirmId}) = _$_AnyEvent;
 
   factory _AnyEvent.fromJson(Map<String, dynamic> json) = _$_AnyEvent.fromJson;
 
@@ -160,13 +172,13 @@ abstract class _AnyEvent implements AnyEvent {
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$AnyEventCopyWith<_AnyEvent> get copyWith;
+  _$AnyEventCopyWith<_AnyEvent> get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_chat_lastread_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_chat_lastread_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerChatLastreadParams _$ServerChatLastreadParamsFromJson(Map<String, dynamic> json) {
   return _ServerChatLastreadParams.fromJson(json);
 }
@@ -16,11 +21,10 @@ ServerChatLastreadParams _$ServerChatLastreadParamsFromJson(Map<String, dynamic>
 class _$ServerChatLastreadParamsTearOff {
   const _$ServerChatLastreadParamsTearOff();
 
-// ignore: unused_element
   _ServerChatLastreadParams call(
-      {@required @JsonKey(name: 'chats') List<ChatCounters> chats,
-      @required @JsonKey(name: 'team_unread') TeamUnread teamUnread,
-      @required @JsonKey(name: 'badge') int badge}) {
+      {@JsonKey(name: 'chats') required List<ChatCounters> chats,
+      @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
+      @JsonKey(name: 'badge') required int badge}) {
     return _ServerChatLastreadParams(
       chats: chats,
       teamUnread: teamUnread,
@@ -28,33 +32,31 @@ class _$ServerChatLastreadParamsTearOff {
     );
   }
 
-// ignore: unused_element
   ServerChatLastreadParams fromJson(Map<String, Object> json) {
     return ServerChatLastreadParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerChatLastreadParams = _$ServerChatLastreadParamsTearOff();
 
 /// @nodoc
 mixin _$ServerChatLastreadParams {
   /// Chat counters.
   @JsonKey(name: 'chats')
-  List<ChatCounters> get chats;
+  List<ChatCounters> get chats => throw _privateConstructorUsedError;
 
   /// Current team counters.
   @JsonKey(name: 'team_unread')
-  TeamUnread get teamUnread;
+  TeamUnread? get teamUnread => throw _privateConstructorUsedError;
 
   /// Total number of unreads.
   @JsonKey(name: 'badge')
-  int get badge;
+  int get badge => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerChatLastreadParamsCopyWith<ServerChatLastreadParams> get copyWith;
+  $ServerChatLastreadParamsCopyWith<ServerChatLastreadParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -64,10 +66,10 @@ abstract class $ServerChatLastreadParamsCopyWith<$Res> {
       _$ServerChatLastreadParamsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'chats') List<ChatCounters> chats,
-      @JsonKey(name: 'team_unread') TeamUnread teamUnread,
+      @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
       @JsonKey(name: 'badge') int badge});
 
-  $TeamUnreadCopyWith<$Res> get teamUnread;
+  $TeamUnreadCopyWith<$Res>? get teamUnread;
 }
 
 /// @nodoc
@@ -80,23 +82,33 @@ class _$ServerChatLastreadParamsCopyWithImpl<$Res> implements $ServerChatLastrea
 
   @override
   $Res call({
-    Object chats = freezed,
-    Object teamUnread = freezed,
-    Object badge = freezed,
+    Object? chats = freezed,
+    Object? teamUnread = freezed,
+    Object? badge = freezed,
   }) {
     return _then(_value.copyWith(
-      chats: chats == freezed ? _value.chats : chats as List<ChatCounters>,
-      teamUnread: teamUnread == freezed ? _value.teamUnread : teamUnread as TeamUnread,
-      badge: badge == freezed ? _value.badge : badge as int,
+      chats: chats == freezed
+          ? _value.chats
+          : chats // ignore: cast_nullable_to_non_nullable
+              as List<ChatCounters>,
+      teamUnread: teamUnread == freezed
+          ? _value.teamUnread
+          : teamUnread // ignore: cast_nullable_to_non_nullable
+              as TeamUnread?,
+      badge: badge == freezed
+          ? _value.badge
+          : badge // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 
   @override
-  $TeamUnreadCopyWith<$Res> get teamUnread {
+  $TeamUnreadCopyWith<$Res>? get teamUnread {
     if (_value.teamUnread == null) {
       return null;
     }
-    return $TeamUnreadCopyWith<$Res>(_value.teamUnread, (value) {
+
+    return $TeamUnreadCopyWith<$Res>(_value.teamUnread!, (value) {
       return _then(_value.copyWith(teamUnread: value));
     });
   }
@@ -110,11 +122,11 @@ abstract class _$ServerChatLastreadParamsCopyWith<$Res> implements $ServerChatLa
   @override
   $Res call(
       {@JsonKey(name: 'chats') List<ChatCounters> chats,
-      @JsonKey(name: 'team_unread') TeamUnread teamUnread,
+      @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
       @JsonKey(name: 'badge') int badge});
 
   @override
-  $TeamUnreadCopyWith<$Res> get teamUnread;
+  $TeamUnreadCopyWith<$Res>? get teamUnread;
 }
 
 /// @nodoc
@@ -129,32 +141,36 @@ class __$ServerChatLastreadParamsCopyWithImpl<$Res> extends _$ServerChatLastread
 
   @override
   $Res call({
-    Object chats = freezed,
-    Object teamUnread = freezed,
-    Object badge = freezed,
+    Object? chats = freezed,
+    Object? teamUnread = freezed,
+    Object? badge = freezed,
   }) {
     return _then(_ServerChatLastreadParams(
-      chats: chats == freezed ? _value.chats : chats as List<ChatCounters>,
-      teamUnread: teamUnread == freezed ? _value.teamUnread : teamUnread as TeamUnread,
-      badge: badge == freezed ? _value.badge : badge as int,
+      chats: chats == freezed
+          ? _value.chats
+          : chats // ignore: cast_nullable_to_non_nullable
+              as List<ChatCounters>,
+      teamUnread: teamUnread == freezed
+          ? _value.teamUnread
+          : teamUnread // ignore: cast_nullable_to_non_nullable
+              as TeamUnread?,
+      badge: badge == freezed
+          ? _value.badge
+          : badge // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerChatLastreadParams implements _ServerChatLastreadParams {
   const _$_ServerChatLastreadParams(
-      {@required @JsonKey(name: 'chats') this.chats,
-      @required @JsonKey(name: 'team_unread') this.teamUnread,
-      @required @JsonKey(name: 'badge') this.badge})
-      : assert(chats != null),
-        assert(teamUnread != null),
-        assert(badge != null);
+      {@JsonKey(name: 'chats') required this.chats,
+      @JsonKey(name: 'team_unread') this.teamUnread,
+      @JsonKey(name: 'badge') required this.badge});
 
-  factory _$_ServerChatLastreadParams.fromJson(Map<String, dynamic> json) =>
-      _$_$_ServerChatLastreadParamsFromJson(json);
+  factory _$_ServerChatLastreadParams.fromJson(Map<String, dynamic> json) => _$$_ServerChatLastreadParamsFromJson(json);
 
   @override
 
@@ -165,7 +181,7 @@ class _$_ServerChatLastreadParams implements _ServerChatLastreadParams {
 
   /// Current team counters.
   @JsonKey(name: 'team_unread')
-  final TeamUnread teamUnread;
+  final TeamUnread? teamUnread;
   @override
 
   /// Total number of unreads.
@@ -201,15 +217,15 @@ class _$_ServerChatLastreadParams implements _ServerChatLastreadParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerChatLastreadParamsToJson(this);
+    return _$$_ServerChatLastreadParamsToJson(this);
   }
 }
 
 abstract class _ServerChatLastreadParams implements ServerChatLastreadParams {
   const factory _ServerChatLastreadParams(
-      {@required @JsonKey(name: 'chats') List<ChatCounters> chats,
-      @required @JsonKey(name: 'team_unread') TeamUnread teamUnread,
-      @required @JsonKey(name: 'badge') int badge}) = _$_ServerChatLastreadParams;
+      {@JsonKey(name: 'chats') required List<ChatCounters> chats,
+      @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
+      @JsonKey(name: 'badge') required int badge}) = _$_ServerChatLastreadParams;
 
   factory _ServerChatLastreadParams.fromJson(Map<String, dynamic> json) = _$_ServerChatLastreadParams.fromJson;
 
@@ -217,18 +233,18 @@ abstract class _ServerChatLastreadParams implements ServerChatLastreadParams {
 
   /// Chat counters.
   @JsonKey(name: 'chats')
-  List<ChatCounters> get chats;
+  List<ChatCounters> get chats => throw _privateConstructorUsedError;
   @override
 
   /// Current team counters.
   @JsonKey(name: 'team_unread')
-  TeamUnread get teamUnread;
+  TeamUnread? get teamUnread => throw _privateConstructorUsedError;
   @override
 
   /// Total number of unreads.
   @JsonKey(name: 'badge')
-  int get badge;
+  int get badge => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerChatLastreadParamsCopyWith<_ServerChatLastreadParams> get copyWith;
+  _$ServerChatLastreadParamsCopyWith<_ServerChatLastreadParams> get copyWith => throw _privateConstructorUsedError;
 }

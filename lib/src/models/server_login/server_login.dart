@@ -6,16 +6,16 @@ part 'server_login.g.dart';
 
 /// Login from other device.
 @freezed
-abstract class ServerLogin with _$ServerLogin {
+class ServerLogin with _$ServerLogin {
   const factory ServerLogin({
     /// .
-    @JsonKey(name: 'params') @required ServerLoginParams params,
+    @JsonKey(name: 'params') required ServerLoginParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerLogin;
 
   factory ServerLogin.fromJson(Map<String, dynamic> json) => _$ServerLoginFromJson(json);

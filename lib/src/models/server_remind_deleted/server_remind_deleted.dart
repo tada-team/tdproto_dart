@@ -6,16 +6,16 @@ part 'server_remind_deleted.g.dart';
 
 /// Task or group remind deleted.
 @freezed
-abstract class ServerRemindDeleted with _$ServerRemindDeleted {
+class ServerRemindDeleted with _$ServerRemindDeleted {
   const factory ServerRemindDeleted({
     /// .
-    @JsonKey(name: 'params') @required ServerRemindDeletedParams params,
+    @JsonKey(name: 'params') required ServerRemindDeletedParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerRemindDeleted;
 
   factory ServerRemindDeleted.fromJson(Map<String, dynamic> json) => _$ServerRemindDeletedFromJson(json);

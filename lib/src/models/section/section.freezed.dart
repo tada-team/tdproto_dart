@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'section.dart';
 
@@ -8,6 +9,10 @@ part of 'section.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Section _$SectionFromJson(Map<String, dynamic> json) {
   return _Section.fromJson(json);
 }
@@ -16,14 +21,13 @@ Section _$SectionFromJson(Map<String, dynamic> json) {
 class _$SectionTearOff {
   const _$SectionTearOff();
 
-// ignore: unused_element
   _Section call(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'sort_ordering') int sortOrdering,
-      @required @JsonKey(name: 'name') String name,
-      @required @JsonKey(name: 'gentime') int gentime,
-      @JsonKey(name: 'description') String description,
-      @JsonKey(name: 'is_archive') bool isArchive}) {
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'sort_ordering') required int sortOrdering,
+      @JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'gentime') required int gentime,
+      @JsonKey(name: 'description') String? description,
+      @JsonKey(name: 'is_archive') bool? isArchive = false}) {
     return _Section(
       uid: uid,
       sortOrdering: sortOrdering,
@@ -34,45 +38,43 @@ class _$SectionTearOff {
     );
   }
 
-// ignore: unused_element
   Section fromJson(Map<String, Object> json) {
     return Section.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Section = _$SectionTearOff();
 
 /// @nodoc
 mixin _$Section {
   /// Section uid.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// Sort ordering.
   @JsonKey(name: 'sort_ordering')
-  int get sortOrdering;
+  int get sortOrdering => throw _privateConstructorUsedError;
 
   /// Name.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// Object version.
   @JsonKey(name: 'gentime')
-  int get gentime;
+  int get gentime => throw _privateConstructorUsedError;
 
   /// Description, if any.
   @JsonKey(name: 'description')
-  String get description;
+  String? get description => throw _privateConstructorUsedError;
 
   /// Is deleted.
   @JsonKey(name: 'is_archive')
-  bool get isArchive;
+  bool? get isArchive => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $SectionCopyWith<Section> get copyWith;
+  $SectionCopyWith<Section> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -83,8 +85,8 @@ abstract class $SectionCopyWith<$Res> {
       @JsonKey(name: 'sort_ordering') int sortOrdering,
       @JsonKey(name: 'name') String name,
       @JsonKey(name: 'gentime') int gentime,
-      @JsonKey(name: 'description') String description,
-      @JsonKey(name: 'is_archive') bool isArchive});
+      @JsonKey(name: 'description') String? description,
+      @JsonKey(name: 'is_archive') bool? isArchive});
 }
 
 /// @nodoc
@@ -97,20 +99,38 @@ class _$SectionCopyWithImpl<$Res> implements $SectionCopyWith<$Res> {
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object sortOrdering = freezed,
-    Object name = freezed,
-    Object gentime = freezed,
-    Object description = freezed,
-    Object isArchive = freezed,
+    Object? uid = freezed,
+    Object? sortOrdering = freezed,
+    Object? name = freezed,
+    Object? gentime = freezed,
+    Object? description = freezed,
+    Object? isArchive = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
-      sortOrdering: sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
-      name: name == freezed ? _value.name : name as String,
-      gentime: gentime == freezed ? _value.gentime : gentime as int,
-      description: description == freezed ? _value.description : description as String,
-      isArchive: isArchive == freezed ? _value.isArchive : isArchive as bool,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      sortOrdering: sortOrdering == freezed
+          ? _value.sortOrdering
+          : sortOrdering // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      gentime: gentime == freezed
+          ? _value.gentime
+          : gentime // ignore: cast_nullable_to_non_nullable
+              as int,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isArchive: isArchive == freezed
+          ? _value.isArchive
+          : isArchive // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -124,8 +144,8 @@ abstract class _$SectionCopyWith<$Res> implements $SectionCopyWith<$Res> {
       @JsonKey(name: 'sort_ordering') int sortOrdering,
       @JsonKey(name: 'name') String name,
       @JsonKey(name: 'gentime') int gentime,
-      @JsonKey(name: 'description') String description,
-      @JsonKey(name: 'is_archive') bool isArchive});
+      @JsonKey(name: 'description') String? description,
+      @JsonKey(name: 'is_archive') bool? isArchive});
 }
 
 /// @nodoc
@@ -137,41 +157,54 @@ class __$SectionCopyWithImpl<$Res> extends _$SectionCopyWithImpl<$Res> implement
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object sortOrdering = freezed,
-    Object name = freezed,
-    Object gentime = freezed,
-    Object description = freezed,
-    Object isArchive = freezed,
+    Object? uid = freezed,
+    Object? sortOrdering = freezed,
+    Object? name = freezed,
+    Object? gentime = freezed,
+    Object? description = freezed,
+    Object? isArchive = freezed,
   }) {
     return _then(_Section(
-      uid: uid == freezed ? _value.uid : uid as String,
-      sortOrdering: sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
-      name: name == freezed ? _value.name : name as String,
-      gentime: gentime == freezed ? _value.gentime : gentime as int,
-      description: description == freezed ? _value.description : description as String,
-      isArchive: isArchive == freezed ? _value.isArchive : isArchive as bool,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      sortOrdering: sortOrdering == freezed
+          ? _value.sortOrdering
+          : sortOrdering // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      gentime: gentime == freezed
+          ? _value.gentime
+          : gentime // ignore: cast_nullable_to_non_nullable
+              as int,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isArchive: isArchive == freezed
+          ? _value.isArchive
+          : isArchive // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Section implements _Section {
   const _$_Section(
-      {@required @JsonKey(name: 'uid') this.uid,
-      @required @JsonKey(name: 'sort_ordering') this.sortOrdering,
-      @required @JsonKey(name: 'name') this.name,
-      @required @JsonKey(name: 'gentime') this.gentime,
+      {@JsonKey(name: 'uid') required this.uid,
+      @JsonKey(name: 'sort_ordering') required this.sortOrdering,
+      @JsonKey(name: 'name') required this.name,
+      @JsonKey(name: 'gentime') required this.gentime,
       @JsonKey(name: 'description') this.description,
-      @JsonKey(name: 'is_archive') this.isArchive})
-      : assert(uid != null),
-        assert(sortOrdering != null),
-        assert(name != null),
-        assert(gentime != null);
+      @JsonKey(name: 'is_archive') this.isArchive = false});
 
-  factory _$_Section.fromJson(Map<String, dynamic> json) => _$_$_SectionFromJson(json);
+  factory _$_Section.fromJson(Map<String, dynamic> json) => _$$_SectionFromJson(json);
 
   @override
 
@@ -197,12 +230,12 @@ class _$_Section implements _Section {
 
   /// Description, if any.
   @JsonKey(name: 'description')
-  final String description;
+  final String? description;
   @override
 
   /// Is deleted.
   @JsonKey(name: 'is_archive')
-  final bool isArchive;
+  final bool? isArchive;
 
   @override
   String toString() {
@@ -240,18 +273,18 @@ class _$_Section implements _Section {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_SectionToJson(this);
+    return _$$_SectionToJson(this);
   }
 }
 
 abstract class _Section implements Section {
   const factory _Section(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'sort_ordering') int sortOrdering,
-      @required @JsonKey(name: 'name') String name,
-      @required @JsonKey(name: 'gentime') int gentime,
-      @JsonKey(name: 'description') String description,
-      @JsonKey(name: 'is_archive') bool isArchive}) = _$_Section;
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'sort_ordering') required int sortOrdering,
+      @JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'gentime') required int gentime,
+      @JsonKey(name: 'description') String? description,
+      @JsonKey(name: 'is_archive') bool? isArchive}) = _$_Section;
 
   factory _Section.fromJson(Map<String, dynamic> json) = _$_Section.fromJson;
 
@@ -259,33 +292,33 @@ abstract class _Section implements Section {
 
   /// Section uid.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// Sort ordering.
   @JsonKey(name: 'sort_ordering')
-  int get sortOrdering;
+  int get sortOrdering => throw _privateConstructorUsedError;
   @override
 
   /// Name.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// Object version.
   @JsonKey(name: 'gentime')
-  int get gentime;
+  int get gentime => throw _privateConstructorUsedError;
   @override
 
   /// Description, if any.
   @JsonKey(name: 'description')
-  String get description;
+  String? get description => throw _privateConstructorUsedError;
   @override
 
   /// Is deleted.
   @JsonKey(name: 'is_archive')
-  bool get isArchive;
+  bool? get isArchive => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$SectionCopyWith<_Section> get copyWith;
+  _$SectionCopyWith<_Section> get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'client_call_leave.dart';
 
@@ -8,6 +9,10 @@ part of 'client_call_leave.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ClientCallLeave _$ClientCallLeaveFromJson(Map<String, dynamic> json) {
   return _ClientCallLeave.fromJson(json);
 }
@@ -16,11 +21,10 @@ ClientCallLeave _$ClientCallLeaveFromJson(Map<String, dynamic> json) {
 class _$ClientCallLeaveTearOff {
   const _$ClientCallLeaveTearOff();
 
-// ignore: unused_element
   _ClientCallLeave call(
-      {@required @JsonKey(name: 'params') ClientCallLeaveParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) {
+      {@JsonKey(name: 'params') required ClientCallLeaveParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ClientCallLeave(
       params: params,
       name: name,
@@ -28,33 +32,31 @@ class _$ClientCallLeaveTearOff {
     );
   }
 
-// ignore: unused_element
   ClientCallLeave fromJson(Map<String, Object> json) {
     return ClientCallLeave.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ClientCallLeave = _$ClientCallLeaveTearOff();
 
 /// @nodoc
 mixin _$ClientCallLeave {
   /// .
   @JsonKey(name: 'params')
-  ClientCallLeaveParams get params;
+  ClientCallLeaveParams get params => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ClientCallLeaveCopyWith<ClientCallLeave> get copyWith;
+  $ClientCallLeaveCopyWith<ClientCallLeave> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -64,7 +66,7 @@ abstract class $ClientCallLeaveCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'params') ClientCallLeaveParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   $ClientCallLeaveParamsCopyWith<$Res> get params;
 }
@@ -79,22 +81,28 @@ class _$ClientCallLeaveCopyWithImpl<$Res> implements $ClientCallLeaveCopyWith<$R
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as ClientCallLeaveParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ClientCallLeaveParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $ClientCallLeaveParamsCopyWith<$Res> get params {
-    if (_value.params == null) {
-      return null;
-    }
     return $ClientCallLeaveParamsCopyWith<$Res>(_value.params, (value) {
       return _then(_value.copyWith(params: value));
     });
@@ -109,7 +117,7 @@ abstract class _$ClientCallLeaveCopyWith<$Res> implements $ClientCallLeaveCopyWi
   $Res call(
       {@JsonKey(name: 'params') ClientCallLeaveParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   @override
   $ClientCallLeaveParamsCopyWith<$Res> get params;
@@ -126,30 +134,36 @@ class __$ClientCallLeaveCopyWithImpl<$Res> extends _$ClientCallLeaveCopyWithImpl
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ClientCallLeave(
-      params: params == freezed ? _value.params : params as ClientCallLeaveParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ClientCallLeaveParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ClientCallLeave implements _ClientCallLeave {
   const _$_ClientCallLeave(
-      {@required @JsonKey(name: 'params') this.params,
-      @required @JsonKey(name: 'event') this.name,
-      @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(params != null),
-        assert(name != null);
+      {@JsonKey(name: 'params') required this.params,
+      @JsonKey(name: 'event') required this.name,
+      @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ClientCallLeave.fromJson(Map<String, dynamic> json) => _$_$_ClientCallLeaveFromJson(json);
+  factory _$_ClientCallLeave.fromJson(Map<String, dynamic> json) => _$$_ClientCallLeaveFromJson(json);
 
   @override
 
@@ -165,7 +179,7 @@ class _$_ClientCallLeave implements _ClientCallLeave {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -196,15 +210,15 @@ class _$_ClientCallLeave implements _ClientCallLeave {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ClientCallLeaveToJson(this);
+    return _$$_ClientCallLeaveToJson(this);
   }
 }
 
 abstract class _ClientCallLeave implements ClientCallLeave {
   const factory _ClientCallLeave(
-      {@required @JsonKey(name: 'params') ClientCallLeaveParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) = _$_ClientCallLeave;
+      {@JsonKey(name: 'params') required ClientCallLeaveParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ClientCallLeave;
 
   factory _ClientCallLeave.fromJson(Map<String, dynamic> json) = _$_ClientCallLeave.fromJson;
 
@@ -212,18 +226,18 @@ abstract class _ClientCallLeave implements ClientCallLeave {
 
   /// .
   @JsonKey(name: 'params')
-  ClientCallLeaveParams get params;
+  ClientCallLeaveParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ClientCallLeaveCopyWith<_ClientCallLeave> get copyWith;
+  _$ClientCallLeaveCopyWith<_ClientCallLeave> get copyWith => throw _privateConstructorUsedError;
 }

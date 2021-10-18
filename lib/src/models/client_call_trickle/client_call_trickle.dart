@@ -6,16 +6,16 @@ part 'client_call_trickle.g.dart';
 
 /// Send trickle candidate for webrtc connection.
 @freezed
-abstract class ClientCallTrickle with _$ClientCallTrickle {
+class ClientCallTrickle with _$ClientCallTrickle {
   const factory ClientCallTrickle({
     /// .
-    @JsonKey(name: 'params') @required ClientCallTrickleParams params,
+    @JsonKey(name: 'params') required ClientCallTrickleParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ClientCallTrickle;
 
   factory ClientCallTrickle.fromJson(Map<String, dynamic> json) => _$ClientCallTrickleFromJson(json);

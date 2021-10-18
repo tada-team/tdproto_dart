@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'button_colors.dart';
 
@@ -8,6 +9,10 @@ part of 'button_colors.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ButtonColors _$ButtonColorsFromJson(Map<String, dynamic> json) {
   return _ButtonColors.fromJson(json);
 }
@@ -16,14 +21,13 @@ ButtonColors _$ButtonColorsFromJson(Map<String, dynamic> json) {
 class _$ButtonColorsTearOff {
   const _$ButtonColorsTearOff();
 
-// ignore: unused_element
   _ButtonColors call(
-      {@required @JsonKey(name: 'brand_static') String brandStatic,
-      @required @JsonKey(name: 'brand_active') String brandActive,
-      @required @JsonKey(name: 'brand_disable') String brandDisable,
-      @required @JsonKey(name: 'simple_static') String simpleStatic,
-      @required @JsonKey(name: 'simple_active') String simpleActive,
-      @required @JsonKey(name: 'simple_disable') String simpleDisable}) {
+      {@JsonKey(name: 'brand_static') required String brandStatic,
+      @JsonKey(name: 'brand_active') required String brandActive,
+      @JsonKey(name: 'brand_disable') required String brandDisable,
+      @JsonKey(name: 'simple_static') required String simpleStatic,
+      @JsonKey(name: 'simple_active') required String simpleActive,
+      @JsonKey(name: 'simple_disable') required String simpleDisable}) {
     return _ButtonColors(
       brandStatic: brandStatic,
       brandActive: brandActive,
@@ -34,45 +38,43 @@ class _$ButtonColorsTearOff {
     );
   }
 
-// ignore: unused_element
   ButtonColors fromJson(Map<String, Object> json) {
     return ButtonColors.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ButtonColors = _$ButtonColorsTearOff();
 
 /// @nodoc
 mixin _$ButtonColors {
   /// Brand static color.
   @JsonKey(name: 'brand_static')
-  String get brandStatic;
+  String get brandStatic => throw _privateConstructorUsedError;
 
   /// Brand active color.
   @JsonKey(name: 'brand_active')
-  String get brandActive;
+  String get brandActive => throw _privateConstructorUsedError;
 
   /// Brand disable color.
   @JsonKey(name: 'brand_disable')
-  String get brandDisable;
+  String get brandDisable => throw _privateConstructorUsedError;
 
   /// Simple static color.
   @JsonKey(name: 'simple_static')
-  String get simpleStatic;
+  String get simpleStatic => throw _privateConstructorUsedError;
 
   /// Simple active color.
   @JsonKey(name: 'simple_active')
-  String get simpleActive;
+  String get simpleActive => throw _privateConstructorUsedError;
 
   /// Simple disable color.
   @JsonKey(name: 'simple_disable')
-  String get simpleDisable;
+  String get simpleDisable => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ButtonColorsCopyWith<ButtonColors> get copyWith;
+  $ButtonColorsCopyWith<ButtonColors> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -98,20 +100,38 @@ class _$ButtonColorsCopyWithImpl<$Res> implements $ButtonColorsCopyWith<$Res> {
 
   @override
   $Res call({
-    Object brandStatic = freezed,
-    Object brandActive = freezed,
-    Object brandDisable = freezed,
-    Object simpleStatic = freezed,
-    Object simpleActive = freezed,
-    Object simpleDisable = freezed,
+    Object? brandStatic = freezed,
+    Object? brandActive = freezed,
+    Object? brandDisable = freezed,
+    Object? simpleStatic = freezed,
+    Object? simpleActive = freezed,
+    Object? simpleDisable = freezed,
   }) {
     return _then(_value.copyWith(
-      brandStatic: brandStatic == freezed ? _value.brandStatic : brandStatic as String,
-      brandActive: brandActive == freezed ? _value.brandActive : brandActive as String,
-      brandDisable: brandDisable == freezed ? _value.brandDisable : brandDisable as String,
-      simpleStatic: simpleStatic == freezed ? _value.simpleStatic : simpleStatic as String,
-      simpleActive: simpleActive == freezed ? _value.simpleActive : simpleActive as String,
-      simpleDisable: simpleDisable == freezed ? _value.simpleDisable : simpleDisable as String,
+      brandStatic: brandStatic == freezed
+          ? _value.brandStatic
+          : brandStatic // ignore: cast_nullable_to_non_nullable
+              as String,
+      brandActive: brandActive == freezed
+          ? _value.brandActive
+          : brandActive // ignore: cast_nullable_to_non_nullable
+              as String,
+      brandDisable: brandDisable == freezed
+          ? _value.brandDisable
+          : brandDisable // ignore: cast_nullable_to_non_nullable
+              as String,
+      simpleStatic: simpleStatic == freezed
+          ? _value.simpleStatic
+          : simpleStatic // ignore: cast_nullable_to_non_nullable
+              as String,
+      simpleActive: simpleActive == freezed
+          ? _value.simpleActive
+          : simpleActive // ignore: cast_nullable_to_non_nullable
+              as String,
+      simpleDisable: simpleDisable == freezed
+          ? _value.simpleDisable
+          : simpleDisable // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -141,43 +161,54 @@ class __$ButtonColorsCopyWithImpl<$Res> extends _$ButtonColorsCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object brandStatic = freezed,
-    Object brandActive = freezed,
-    Object brandDisable = freezed,
-    Object simpleStatic = freezed,
-    Object simpleActive = freezed,
-    Object simpleDisable = freezed,
+    Object? brandStatic = freezed,
+    Object? brandActive = freezed,
+    Object? brandDisable = freezed,
+    Object? simpleStatic = freezed,
+    Object? simpleActive = freezed,
+    Object? simpleDisable = freezed,
   }) {
     return _then(_ButtonColors(
-      brandStatic: brandStatic == freezed ? _value.brandStatic : brandStatic as String,
-      brandActive: brandActive == freezed ? _value.brandActive : brandActive as String,
-      brandDisable: brandDisable == freezed ? _value.brandDisable : brandDisable as String,
-      simpleStatic: simpleStatic == freezed ? _value.simpleStatic : simpleStatic as String,
-      simpleActive: simpleActive == freezed ? _value.simpleActive : simpleActive as String,
-      simpleDisable: simpleDisable == freezed ? _value.simpleDisable : simpleDisable as String,
+      brandStatic: brandStatic == freezed
+          ? _value.brandStatic
+          : brandStatic // ignore: cast_nullable_to_non_nullable
+              as String,
+      brandActive: brandActive == freezed
+          ? _value.brandActive
+          : brandActive // ignore: cast_nullable_to_non_nullable
+              as String,
+      brandDisable: brandDisable == freezed
+          ? _value.brandDisable
+          : brandDisable // ignore: cast_nullable_to_non_nullable
+              as String,
+      simpleStatic: simpleStatic == freezed
+          ? _value.simpleStatic
+          : simpleStatic // ignore: cast_nullable_to_non_nullable
+              as String,
+      simpleActive: simpleActive == freezed
+          ? _value.simpleActive
+          : simpleActive // ignore: cast_nullable_to_non_nullable
+              as String,
+      simpleDisable: simpleDisable == freezed
+          ? _value.simpleDisable
+          : simpleDisable // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ButtonColors implements _ButtonColors {
   const _$_ButtonColors(
-      {@required @JsonKey(name: 'brand_static') this.brandStatic,
-      @required @JsonKey(name: 'brand_active') this.brandActive,
-      @required @JsonKey(name: 'brand_disable') this.brandDisable,
-      @required @JsonKey(name: 'simple_static') this.simpleStatic,
-      @required @JsonKey(name: 'simple_active') this.simpleActive,
-      @required @JsonKey(name: 'simple_disable') this.simpleDisable})
-      : assert(brandStatic != null),
-        assert(brandActive != null),
-        assert(brandDisable != null),
-        assert(simpleStatic != null),
-        assert(simpleActive != null),
-        assert(simpleDisable != null);
+      {@JsonKey(name: 'brand_static') required this.brandStatic,
+      @JsonKey(name: 'brand_active') required this.brandActive,
+      @JsonKey(name: 'brand_disable') required this.brandDisable,
+      @JsonKey(name: 'simple_static') required this.simpleStatic,
+      @JsonKey(name: 'simple_active') required this.simpleActive,
+      @JsonKey(name: 'simple_disable') required this.simpleDisable});
 
-  factory _$_ButtonColors.fromJson(Map<String, dynamic> json) => _$_$_ButtonColorsFromJson(json);
+  factory _$_ButtonColors.fromJson(Map<String, dynamic> json) => _$$_ButtonColorsFromJson(json);
 
   @override
 
@@ -249,18 +280,18 @@ class _$_ButtonColors implements _ButtonColors {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ButtonColorsToJson(this);
+    return _$$_ButtonColorsToJson(this);
   }
 }
 
 abstract class _ButtonColors implements ButtonColors {
   const factory _ButtonColors(
-      {@required @JsonKey(name: 'brand_static') String brandStatic,
-      @required @JsonKey(name: 'brand_active') String brandActive,
-      @required @JsonKey(name: 'brand_disable') String brandDisable,
-      @required @JsonKey(name: 'simple_static') String simpleStatic,
-      @required @JsonKey(name: 'simple_active') String simpleActive,
-      @required @JsonKey(name: 'simple_disable') String simpleDisable}) = _$_ButtonColors;
+      {@JsonKey(name: 'brand_static') required String brandStatic,
+      @JsonKey(name: 'brand_active') required String brandActive,
+      @JsonKey(name: 'brand_disable') required String brandDisable,
+      @JsonKey(name: 'simple_static') required String simpleStatic,
+      @JsonKey(name: 'simple_active') required String simpleActive,
+      @JsonKey(name: 'simple_disable') required String simpleDisable}) = _$_ButtonColors;
 
   factory _ButtonColors.fromJson(Map<String, dynamic> json) = _$_ButtonColors.fromJson;
 
@@ -268,33 +299,33 @@ abstract class _ButtonColors implements ButtonColors {
 
   /// Brand static color.
   @JsonKey(name: 'brand_static')
-  String get brandStatic;
+  String get brandStatic => throw _privateConstructorUsedError;
   @override
 
   /// Brand active color.
   @JsonKey(name: 'brand_active')
-  String get brandActive;
+  String get brandActive => throw _privateConstructorUsedError;
   @override
 
   /// Brand disable color.
   @JsonKey(name: 'brand_disable')
-  String get brandDisable;
+  String get brandDisable => throw _privateConstructorUsedError;
   @override
 
   /// Simple static color.
   @JsonKey(name: 'simple_static')
-  String get simpleStatic;
+  String get simpleStatic => throw _privateConstructorUsedError;
   @override
 
   /// Simple active color.
   @JsonKey(name: 'simple_active')
-  String get simpleActive;
+  String get simpleActive => throw _privateConstructorUsedError;
   @override
 
   /// Simple disable color.
   @JsonKey(name: 'simple_disable')
-  String get simpleDisable;
+  String get simpleDisable => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ButtonColorsCopyWith<_ButtonColors> get copyWith;
+  _$ButtonColorsCopyWith<_ButtonColors> get copyWith => throw _privateConstructorUsedError;
 }

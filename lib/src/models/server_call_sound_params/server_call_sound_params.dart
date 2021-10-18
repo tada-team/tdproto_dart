@@ -6,13 +6,13 @@ part 'server_call_sound_params.g.dart';
 
 /// Params of the server.call.sound event.
 @freezed
-abstract class ServerCallSoundParams with _$ServerCallSoundParams {
+class ServerCallSoundParams with _$ServerCallSoundParams {
   const factory ServerCallSoundParams({
     /// Chat or contact id.
-    @JsonKey(name: 'jid') @required String jid,
+    @JsonKey(name: 'jid') required String jid,
 
     /// Mute state.
-    @JsonKey(name: 'muted') @required bool muted,
+    @Default(false) @JsonKey(name: 'muted') required bool muted,
   }) = _ServerCallSoundParams;
 
   factory ServerCallSoundParams.fromJson(Map<String, dynamic> json) => _$ServerCallSoundParamsFromJson(json);

@@ -6,16 +6,16 @@ part 'task_counters.g.dart';
 
 /// Tasks counters.
 @freezed
-abstract class TaskCounters with _$TaskCounters {
+class TaskCounters with _$TaskCounters {
   const factory TaskCounters({
     /// Task jid.
-    @JsonKey(name: 'jid') @required String jid,
+    @JsonKey(name: 'jid') required String jid,
 
     /// Unreads counter.
-    @JsonKey(name: 'num_unread') int numUnread,
+    @JsonKey(name: 'num_unread') int? numUnread,
 
     /// Mentions (@) counter.
-    @JsonKey(name: 'num_unread_notices') int numUnreadNotices,
+    @JsonKey(name: 'num_unread_notices') int? numUnreadNotices,
   }) = _TaskCounters;
 
   factory TaskCounters.fromJson(Map<String, dynamic> json) => _$TaskCountersFromJson(json);

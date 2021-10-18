@@ -6,10 +6,10 @@ part 'server_debug_params.g.dart';
 
 /// Params of the server.debug event.
 @freezed
-abstract class ServerDebugParams with _$ServerDebugParams {
+class ServerDebugParams with _$ServerDebugParams {
   const factory ServerDebugParams({
     /// Debug message.
-    @JsonKey(name: 'text') @required String text,
+    @JsonKey(name: 'text') required String text,
   }) = _ServerDebugParams;
 
   factory ServerDebugParams.fromJson(Map<String, dynamic> json) => _$ServerDebugParamsFromJson(json);

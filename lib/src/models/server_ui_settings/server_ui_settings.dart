@@ -6,16 +6,16 @@ part 'server_ui_settings.g.dart';
 
 /// Part of UI settings changed.
 @freezed
-abstract class ServerUiSettings with _$ServerUiSettings {
+class ServerUiSettings with _$ServerUiSettings {
   const factory ServerUiSettings({
     /// .
-    @JsonKey(name: 'params') @required ServerUiSettingsParams params,
+    @JsonKey(name: 'params') required ServerUiSettingsParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerUiSettings;
 
   factory ServerUiSettings.fromJson(Map<String, dynamic> json) => _$ServerUiSettingsFromJson(json);

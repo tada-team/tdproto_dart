@@ -6,13 +6,13 @@ part 'task_sort.g.dart';
 
 /// Task sort type.
 @freezed
-abstract class TaskSort with _$TaskSort {
+class TaskSort with _$TaskSort {
   const factory TaskSort({
     /// Field.
-    @JsonKey(name: 'key') @required String key,
+    @JsonKey(name: 'key') required String key,
 
     /// Sort title.
-    @JsonKey(name: 'title') @required String title,
+    @JsonKey(name: 'title') required String title,
   }) = _TaskSort;
 
   factory TaskSort.fromJson(Map<String, dynamic> json) => _$TaskSortFromJson(json);

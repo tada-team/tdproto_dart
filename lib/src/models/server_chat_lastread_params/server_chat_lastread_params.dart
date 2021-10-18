@@ -6,16 +6,16 @@ part 'server_chat_lastread_params.g.dart';
 
 /// Params of the server.chat.lastread event.
 @freezed
-abstract class ServerChatLastreadParams with _$ServerChatLastreadParams {
+class ServerChatLastreadParams with _$ServerChatLastreadParams {
   const factory ServerChatLastreadParams({
     /// Chat counters.
-    @JsonKey(name: 'chats') @required List<ChatCounters> chats,
+    @JsonKey(name: 'chats') required List<ChatCounters> chats,
 
     /// Current team counters.
-    @JsonKey(name: 'team_unread') @required TeamUnread teamUnread,
+    @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
 
     /// Total number of unreads.
-    @JsonKey(name: 'badge') @required int badge,
+    @JsonKey(name: 'badge') required int badge,
   }) = _ServerChatLastreadParams;
 
   factory ServerChatLastreadParams.fromJson(Map<String, dynamic> json) => _$ServerChatLastreadParamsFromJson(json);

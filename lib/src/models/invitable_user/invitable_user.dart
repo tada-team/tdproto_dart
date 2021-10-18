@@ -6,22 +6,22 @@ part 'invitable_user.g.dart';
 
 /// Account from other team, Active Directory or node.
 @freezed
-abstract class InvitableUser with _$InvitableUser {
+class InvitableUser with _$InvitableUser {
   const factory InvitableUser({
     /// Account id.
-    @JsonKey(name: 'uid') @required String uid,
+    @JsonKey(name: 'uid') required String uid,
 
     /// Node uid for external users.
-    @JsonKey(name: 'node') String node,
+    @JsonKey(name: 'node') String? node,
 
     /// Full name.
-    @JsonKey(name: 'display_name') @required String displayName,
+    @JsonKey(name: 'display_name') required String displayName,
 
     /// Icons.
-    @JsonKey(name: 'icons') @required IconData icons,
+    @JsonKey(name: 'icons') required IconData icons,
 
     /// Common team uids, if any.
-    @JsonKey(name: 'teams') List<String> teams,
+    @JsonKey(name: 'teams') List<String>? teams,
   }) = _InvitableUser;
 
   factory InvitableUser.fromJson(Map<String, dynamic> json) => _$InvitableUserFromJson(json);

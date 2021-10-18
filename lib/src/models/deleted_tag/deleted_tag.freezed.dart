@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'deleted_tag.dart';
 
@@ -8,6 +9,10 @@ part of 'deleted_tag.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 DeletedTag _$DeletedTagFromJson(Map<String, dynamic> json) {
   return _DeletedTag.fromJson(json);
 }
@@ -16,32 +21,29 @@ DeletedTag _$DeletedTagFromJson(Map<String, dynamic> json) {
 class _$DeletedTagTearOff {
   const _$DeletedTagTearOff();
 
-// ignore: unused_element
-  _DeletedTag call({@required @JsonKey(name: 'uid') String uid}) {
+  _DeletedTag call({@JsonKey(name: 'uid') required String uid}) {
     return _DeletedTag(
       uid: uid,
     );
   }
 
-// ignore: unused_element
   DeletedTag fromJson(Map<String, Object> json) {
     return DeletedTag.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $DeletedTag = _$DeletedTagTearOff();
 
 /// @nodoc
 mixin _$DeletedTag {
   /// Tag id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $DeletedTagCopyWith<DeletedTag> get copyWith;
+  $DeletedTagCopyWith<DeletedTag> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -60,10 +62,13 @@ class _$DeletedTagCopyWithImpl<$Res> implements $DeletedTagCopyWith<$Res> {
 
   @override
   $Res call({
-    Object uid = freezed,
+    Object? uid = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -85,21 +90,23 @@ class __$DeletedTagCopyWithImpl<$Res> extends _$DeletedTagCopyWithImpl<$Res> imp
 
   @override
   $Res call({
-    Object uid = freezed,
+    Object? uid = freezed,
   }) {
     return _then(_DeletedTag(
-      uid: uid == freezed ? _value.uid : uid as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_DeletedTag implements _DeletedTag {
-  const _$_DeletedTag({@required @JsonKey(name: 'uid') this.uid}) : assert(uid != null);
+  const _$_DeletedTag({@JsonKey(name: 'uid') required this.uid});
 
-  factory _$_DeletedTag.fromJson(Map<String, dynamic> json) => _$_$_DeletedTagFromJson(json);
+  factory _$_DeletedTag.fromJson(Map<String, dynamic> json) => _$$_DeletedTagFromJson(json);
 
   @override
 
@@ -127,12 +134,12 @@ class _$_DeletedTag implements _DeletedTag {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_DeletedTagToJson(this);
+    return _$$_DeletedTagToJson(this);
   }
 }
 
 abstract class _DeletedTag implements DeletedTag {
-  const factory _DeletedTag({@required @JsonKey(name: 'uid') String uid}) = _$_DeletedTag;
+  const factory _DeletedTag({@JsonKey(name: 'uid') required String uid}) = _$_DeletedTag;
 
   factory _DeletedTag.fromJson(Map<String, dynamic> json) = _$_DeletedTag.fromJson;
 
@@ -140,8 +147,8 @@ abstract class _DeletedTag implements DeletedTag {
 
   /// Tag id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$DeletedTagCopyWith<_DeletedTag> get copyWith;
+  _$DeletedTagCopyWith<_DeletedTag> get copyWith => throw _privateConstructorUsedError;
 }

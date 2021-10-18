@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'task_preview.dart';
 
@@ -8,6 +9,10 @@ part of 'task_preview.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 TaskPreview _$TaskPreviewFromJson(Map<String, dynamic> json) {
   return _TaskPreview.fromJson(json);
 }
@@ -16,16 +21,15 @@ TaskPreview _$TaskPreviewFromJson(Map<String, dynamic> json) {
 class _$TaskPreviewTearOff {
   const _$TaskPreviewTearOff();
 
-// ignore: unused_element
   _TaskPreview call(
-      {@JsonKey(name: '_error') String error,
-      @required @JsonKey(name: 'assignee') String assignee,
-      @required @JsonKey(name: 'deadline') String deadline,
-      @required @JsonKey(name: 'description') String description,
-      @required @JsonKey(name: 'section') String section,
-      @required @JsonKey(name: 'public') bool isPublic,
-      @required @JsonKey(name: 'tags') List<String> tags,
-      @required @JsonKey(name: 'items') List<TaskItems> items}) {
+      {@JsonKey(name: '_error') String? error,
+      @JsonKey(name: 'assignee') required String assignee,
+      @JsonKey(name: 'deadline') String? deadline,
+      @JsonKey(name: 'description') required String description,
+      @JsonKey(name: 'section') required String section,
+      @JsonKey(name: 'public') required bool isPublic = false,
+      @JsonKey(name: 'tags') required List<String> tags,
+      @JsonKey(name: 'items') required List<TaskItems> items}) {
     return _TaskPreview(
       error: error,
       assignee: assignee,
@@ -38,62 +42,60 @@ class _$TaskPreviewTearOff {
     );
   }
 
-// ignore: unused_element
   TaskPreview fromJson(Map<String, Object> json) {
     return TaskPreview.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $TaskPreview = _$TaskPreviewTearOff();
 
 /// @nodoc
 mixin _$TaskPreview {
   /// .
   @JsonKey(name: '_error')
-  String get error;
+  String? get error => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'assignee')
-  String get assignee;
+  String get assignee => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'deadline')
-  String get deadline;
+  String? get deadline => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'description')
-  String get description;
+  String get description => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'section')
-  String get section;
+  String get section => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'public')
-  bool get isPublic;
+  bool get isPublic => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'tags')
-  List<String> get tags;
+  List<String> get tags => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'items')
-  List<TaskItems> get items;
+  List<TaskItems> get items => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $TaskPreviewCopyWith<TaskPreview> get copyWith;
+  $TaskPreviewCopyWith<TaskPreview> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $TaskPreviewCopyWith<$Res> {
   factory $TaskPreviewCopyWith(TaskPreview value, $Res Function(TaskPreview) then) = _$TaskPreviewCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: '_error') String error,
+      {@JsonKey(name: '_error') String? error,
       @JsonKey(name: 'assignee') String assignee,
-      @JsonKey(name: 'deadline') String deadline,
+      @JsonKey(name: 'deadline') String? deadline,
       @JsonKey(name: 'description') String description,
       @JsonKey(name: 'section') String section,
       @JsonKey(name: 'public') bool isPublic,
@@ -111,24 +113,48 @@ class _$TaskPreviewCopyWithImpl<$Res> implements $TaskPreviewCopyWith<$Res> {
 
   @override
   $Res call({
-    Object error = freezed,
-    Object assignee = freezed,
-    Object deadline = freezed,
-    Object description = freezed,
-    Object section = freezed,
-    Object isPublic = freezed,
-    Object tags = freezed,
-    Object items = freezed,
+    Object? error = freezed,
+    Object? assignee = freezed,
+    Object? deadline = freezed,
+    Object? description = freezed,
+    Object? section = freezed,
+    Object? isPublic = freezed,
+    Object? tags = freezed,
+    Object? items = freezed,
   }) {
     return _then(_value.copyWith(
-      error: error == freezed ? _value.error : error as String,
-      assignee: assignee == freezed ? _value.assignee : assignee as String,
-      deadline: deadline == freezed ? _value.deadline : deadline as String,
-      description: description == freezed ? _value.description : description as String,
-      section: section == freezed ? _value.section : section as String,
-      isPublic: isPublic == freezed ? _value.isPublic : isPublic as bool,
-      tags: tags == freezed ? _value.tags : tags as List<String>,
-      items: items == freezed ? _value.items : items as List<TaskItems>,
+      error: error == freezed
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String?,
+      assignee: assignee == freezed
+          ? _value.assignee
+          : assignee // ignore: cast_nullable_to_non_nullable
+              as String,
+      deadline: deadline == freezed
+          ? _value.deadline
+          : deadline // ignore: cast_nullable_to_non_nullable
+              as String?,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      section: section == freezed
+          ? _value.section
+          : section // ignore: cast_nullable_to_non_nullable
+              as String,
+      isPublic: isPublic == freezed
+          ? _value.isPublic
+          : isPublic // ignore: cast_nullable_to_non_nullable
+              as bool,
+      tags: tags == freezed
+          ? _value.tags
+          : tags // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      items: items == freezed
+          ? _value.items
+          : items // ignore: cast_nullable_to_non_nullable
+              as List<TaskItems>,
     ));
   }
 }
@@ -139,9 +165,9 @@ abstract class _$TaskPreviewCopyWith<$Res> implements $TaskPreviewCopyWith<$Res>
       __$TaskPreviewCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: '_error') String error,
+      {@JsonKey(name: '_error') String? error,
       @JsonKey(name: 'assignee') String assignee,
-      @JsonKey(name: 'deadline') String deadline,
+      @JsonKey(name: 'deadline') String? deadline,
       @JsonKey(name: 'description') String description,
       @JsonKey(name: 'section') String section,
       @JsonKey(name: 'public') bool isPublic,
@@ -159,56 +185,72 @@ class __$TaskPreviewCopyWithImpl<$Res> extends _$TaskPreviewCopyWithImpl<$Res> i
 
   @override
   $Res call({
-    Object error = freezed,
-    Object assignee = freezed,
-    Object deadline = freezed,
-    Object description = freezed,
-    Object section = freezed,
-    Object isPublic = freezed,
-    Object tags = freezed,
-    Object items = freezed,
+    Object? error = freezed,
+    Object? assignee = freezed,
+    Object? deadline = freezed,
+    Object? description = freezed,
+    Object? section = freezed,
+    Object? isPublic = freezed,
+    Object? tags = freezed,
+    Object? items = freezed,
   }) {
     return _then(_TaskPreview(
-      error: error == freezed ? _value.error : error as String,
-      assignee: assignee == freezed ? _value.assignee : assignee as String,
-      deadline: deadline == freezed ? _value.deadline : deadline as String,
-      description: description == freezed ? _value.description : description as String,
-      section: section == freezed ? _value.section : section as String,
-      isPublic: isPublic == freezed ? _value.isPublic : isPublic as bool,
-      tags: tags == freezed ? _value.tags : tags as List<String>,
-      items: items == freezed ? _value.items : items as List<TaskItems>,
+      error: error == freezed
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String?,
+      assignee: assignee == freezed
+          ? _value.assignee
+          : assignee // ignore: cast_nullable_to_non_nullable
+              as String,
+      deadline: deadline == freezed
+          ? _value.deadline
+          : deadline // ignore: cast_nullable_to_non_nullable
+              as String?,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      section: section == freezed
+          ? _value.section
+          : section // ignore: cast_nullable_to_non_nullable
+              as String,
+      isPublic: isPublic == freezed
+          ? _value.isPublic
+          : isPublic // ignore: cast_nullable_to_non_nullable
+              as bool,
+      tags: tags == freezed
+          ? _value.tags
+          : tags // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      items: items == freezed
+          ? _value.items
+          : items // ignore: cast_nullable_to_non_nullable
+              as List<TaskItems>,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_TaskPreview implements _TaskPreview {
   const _$_TaskPreview(
       {@JsonKey(name: '_error') this.error,
-      @required @JsonKey(name: 'assignee') this.assignee,
-      @required @JsonKey(name: 'deadline') this.deadline,
-      @required @JsonKey(name: 'description') this.description,
-      @required @JsonKey(name: 'section') this.section,
-      @required @JsonKey(name: 'public') this.isPublic,
-      @required @JsonKey(name: 'tags') this.tags,
-      @required @JsonKey(name: 'items') this.items})
-      : assert(assignee != null),
-        assert(deadline != null),
-        assert(description != null),
-        assert(section != null),
-        assert(isPublic != null),
-        assert(tags != null),
-        assert(items != null);
+      @JsonKey(name: 'assignee') required this.assignee,
+      @JsonKey(name: 'deadline') this.deadline,
+      @JsonKey(name: 'description') required this.description,
+      @JsonKey(name: 'section') required this.section,
+      @JsonKey(name: 'public') required this.isPublic = false,
+      @JsonKey(name: 'tags') required this.tags,
+      @JsonKey(name: 'items') required this.items});
 
-  factory _$_TaskPreview.fromJson(Map<String, dynamic> json) => _$_$_TaskPreviewFromJson(json);
+  factory _$_TaskPreview.fromJson(Map<String, dynamic> json) => _$$_TaskPreviewFromJson(json);
 
   @override
 
   /// .
   @JsonKey(name: '_error')
-  final String error;
+  final String? error;
   @override
 
   /// .
@@ -218,7 +260,7 @@ class _$_TaskPreview implements _TaskPreview {
 
   /// .
   @JsonKey(name: 'deadline')
-  final String deadline;
+  final String? deadline;
   @override
 
   /// .
@@ -283,20 +325,20 @@ class _$_TaskPreview implements _TaskPreview {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_TaskPreviewToJson(this);
+    return _$$_TaskPreviewToJson(this);
   }
 }
 
 abstract class _TaskPreview implements TaskPreview {
   const factory _TaskPreview(
-      {@JsonKey(name: '_error') String error,
-      @required @JsonKey(name: 'assignee') String assignee,
-      @required @JsonKey(name: 'deadline') String deadline,
-      @required @JsonKey(name: 'description') String description,
-      @required @JsonKey(name: 'section') String section,
-      @required @JsonKey(name: 'public') bool isPublic,
-      @required @JsonKey(name: 'tags') List<String> tags,
-      @required @JsonKey(name: 'items') List<TaskItems> items}) = _$_TaskPreview;
+      {@JsonKey(name: '_error') String? error,
+      @JsonKey(name: 'assignee') required String assignee,
+      @JsonKey(name: 'deadline') String? deadline,
+      @JsonKey(name: 'description') required String description,
+      @JsonKey(name: 'section') required String section,
+      @JsonKey(name: 'public') required bool isPublic,
+      @JsonKey(name: 'tags') required List<String> tags,
+      @JsonKey(name: 'items') required List<TaskItems> items}) = _$_TaskPreview;
 
   factory _TaskPreview.fromJson(Map<String, dynamic> json) = _$_TaskPreview.fromJson;
 
@@ -304,43 +346,43 @@ abstract class _TaskPreview implements TaskPreview {
 
   /// .
   @JsonKey(name: '_error')
-  String get error;
+  String? get error => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'assignee')
-  String get assignee;
+  String get assignee => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'deadline')
-  String get deadline;
+  String? get deadline => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'description')
-  String get description;
+  String get description => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'section')
-  String get section;
+  String get section => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'public')
-  bool get isPublic;
+  bool get isPublic => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'tags')
-  List<String> get tags;
+  List<String> get tags => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'items')
-  List<TaskItems> get items;
+  List<TaskItems> get items => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TaskPreviewCopyWith<_TaskPreview> get copyWith;
+  _$TaskPreviewCopyWith<_TaskPreview> get copyWith => throw _privateConstructorUsedError;
 }

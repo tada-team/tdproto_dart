@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'contact_custom_fields.dart';
 
@@ -8,6 +9,10 @@ part of 'contact_custom_fields.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ContactCustomFields _$ContactCustomFieldsFromJson(Map<String, dynamic> json) {
   return _ContactCustomFields.fromJson(json);
 }
@@ -16,14 +21,13 @@ ContactCustomFields _$ContactCustomFieldsFromJson(Map<String, dynamic> json) {
 class _$ContactCustomFieldsTearOff {
   const _$ContactCustomFieldsTearOff();
 
-// ignore: unused_element
   _ContactCustomFields call(
-      {@JsonKey(name: 'company') String company,
-      @JsonKey(name: 'department') String department,
-      @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'mobile_phone') String mobilePhone,
-      @JsonKey(name: 'source') String source,
-      @JsonKey(name: 'ad_uid') String aDUid}) {
+      {@JsonKey(name: 'company') String? company,
+      @JsonKey(name: 'department') String? department,
+      @JsonKey(name: 'title') String? title,
+      @JsonKey(name: 'mobile_phone') String? mobilePhone,
+      @JsonKey(name: 'source') String? source,
+      @JsonKey(name: 'ad_uid') String? aDUid}) {
     return _ContactCustomFields(
       company: company,
       department: department,
@@ -34,45 +38,43 @@ class _$ContactCustomFieldsTearOff {
     );
   }
 
-// ignore: unused_element
   ContactCustomFields fromJson(Map<String, Object> json) {
     return ContactCustomFields.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ContactCustomFields = _$ContactCustomFieldsTearOff();
 
 /// @nodoc
 mixin _$ContactCustomFields {
   /// Company.
   @JsonKey(name: 'company')
-  String get company;
+  String? get company => throw _privateConstructorUsedError;
 
   /// Department.
   @JsonKey(name: 'department')
-  String get department;
+  String? get department => throw _privateConstructorUsedError;
 
   /// Title.
   @JsonKey(name: 'title')
-  String get title;
+  String? get title => throw _privateConstructorUsedError;
 
   /// MobilePhone.
   @JsonKey(name: 'mobile_phone')
-  String get mobilePhone;
+  String? get mobilePhone => throw _privateConstructorUsedError;
 
   /// Import source.
   @JsonKey(name: 'source')
-  String get source;
+  String? get source => throw _privateConstructorUsedError;
 
   /// AD UID.
   @JsonKey(name: 'ad_uid')
-  String get aDUid;
+  String? get aDUid => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ContactCustomFieldsCopyWith<ContactCustomFields> get copyWith;
+  $ContactCustomFieldsCopyWith<ContactCustomFields> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -80,12 +82,12 @@ abstract class $ContactCustomFieldsCopyWith<$Res> {
   factory $ContactCustomFieldsCopyWith(ContactCustomFields value, $Res Function(ContactCustomFields) then) =
       _$ContactCustomFieldsCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'company') String company,
-      @JsonKey(name: 'department') String department,
-      @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'mobile_phone') String mobilePhone,
-      @JsonKey(name: 'source') String source,
-      @JsonKey(name: 'ad_uid') String aDUid});
+      {@JsonKey(name: 'company') String? company,
+      @JsonKey(name: 'department') String? department,
+      @JsonKey(name: 'title') String? title,
+      @JsonKey(name: 'mobile_phone') String? mobilePhone,
+      @JsonKey(name: 'source') String? source,
+      @JsonKey(name: 'ad_uid') String? aDUid});
 }
 
 /// @nodoc
@@ -98,20 +100,38 @@ class _$ContactCustomFieldsCopyWithImpl<$Res> implements $ContactCustomFieldsCop
 
   @override
   $Res call({
-    Object company = freezed,
-    Object department = freezed,
-    Object title = freezed,
-    Object mobilePhone = freezed,
-    Object source = freezed,
-    Object aDUid = freezed,
+    Object? company = freezed,
+    Object? department = freezed,
+    Object? title = freezed,
+    Object? mobilePhone = freezed,
+    Object? source = freezed,
+    Object? aDUid = freezed,
   }) {
     return _then(_value.copyWith(
-      company: company == freezed ? _value.company : company as String,
-      department: department == freezed ? _value.department : department as String,
-      title: title == freezed ? _value.title : title as String,
-      mobilePhone: mobilePhone == freezed ? _value.mobilePhone : mobilePhone as String,
-      source: source == freezed ? _value.source : source as String,
-      aDUid: aDUid == freezed ? _value.aDUid : aDUid as String,
+      company: company == freezed
+          ? _value.company
+          : company // ignore: cast_nullable_to_non_nullable
+              as String?,
+      department: department == freezed
+          ? _value.department
+          : department // ignore: cast_nullable_to_non_nullable
+              as String?,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      mobilePhone: mobilePhone == freezed
+          ? _value.mobilePhone
+          : mobilePhone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      source: source == freezed
+          ? _value.source
+          : source // ignore: cast_nullable_to_non_nullable
+              as String?,
+      aDUid: aDUid == freezed
+          ? _value.aDUid
+          : aDUid // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -122,12 +142,12 @@ abstract class _$ContactCustomFieldsCopyWith<$Res> implements $ContactCustomFiel
       __$ContactCustomFieldsCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'company') String company,
-      @JsonKey(name: 'department') String department,
-      @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'mobile_phone') String mobilePhone,
-      @JsonKey(name: 'source') String source,
-      @JsonKey(name: 'ad_uid') String aDUid});
+      {@JsonKey(name: 'company') String? company,
+      @JsonKey(name: 'department') String? department,
+      @JsonKey(name: 'title') String? title,
+      @JsonKey(name: 'mobile_phone') String? mobilePhone,
+      @JsonKey(name: 'source') String? source,
+      @JsonKey(name: 'ad_uid') String? aDUid});
 }
 
 /// @nodoc
@@ -141,27 +161,44 @@ class __$ContactCustomFieldsCopyWithImpl<$Res> extends _$ContactCustomFieldsCopy
 
   @override
   $Res call({
-    Object company = freezed,
-    Object department = freezed,
-    Object title = freezed,
-    Object mobilePhone = freezed,
-    Object source = freezed,
-    Object aDUid = freezed,
+    Object? company = freezed,
+    Object? department = freezed,
+    Object? title = freezed,
+    Object? mobilePhone = freezed,
+    Object? source = freezed,
+    Object? aDUid = freezed,
   }) {
     return _then(_ContactCustomFields(
-      company: company == freezed ? _value.company : company as String,
-      department: department == freezed ? _value.department : department as String,
-      title: title == freezed ? _value.title : title as String,
-      mobilePhone: mobilePhone == freezed ? _value.mobilePhone : mobilePhone as String,
-      source: source == freezed ? _value.source : source as String,
-      aDUid: aDUid == freezed ? _value.aDUid : aDUid as String,
+      company: company == freezed
+          ? _value.company
+          : company // ignore: cast_nullable_to_non_nullable
+              as String?,
+      department: department == freezed
+          ? _value.department
+          : department // ignore: cast_nullable_to_non_nullable
+              as String?,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      mobilePhone: mobilePhone == freezed
+          ? _value.mobilePhone
+          : mobilePhone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      source: source == freezed
+          ? _value.source
+          : source // ignore: cast_nullable_to_non_nullable
+              as String?,
+      aDUid: aDUid == freezed
+          ? _value.aDUid
+          : aDUid // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ContactCustomFields implements _ContactCustomFields {
   const _$_ContactCustomFields(
       {@JsonKey(name: 'company') this.company,
@@ -171,38 +208,38 @@ class _$_ContactCustomFields implements _ContactCustomFields {
       @JsonKey(name: 'source') this.source,
       @JsonKey(name: 'ad_uid') this.aDUid});
 
-  factory _$_ContactCustomFields.fromJson(Map<String, dynamic> json) => _$_$_ContactCustomFieldsFromJson(json);
+  factory _$_ContactCustomFields.fromJson(Map<String, dynamic> json) => _$$_ContactCustomFieldsFromJson(json);
 
   @override
 
   /// Company.
   @JsonKey(name: 'company')
-  final String company;
+  final String? company;
   @override
 
   /// Department.
   @JsonKey(name: 'department')
-  final String department;
+  final String? department;
   @override
 
   /// Title.
   @JsonKey(name: 'title')
-  final String title;
+  final String? title;
   @override
 
   /// MobilePhone.
   @JsonKey(name: 'mobile_phone')
-  final String mobilePhone;
+  final String? mobilePhone;
   @override
 
   /// Import source.
   @JsonKey(name: 'source')
-  final String source;
+  final String? source;
   @override
 
   /// AD UID.
   @JsonKey(name: 'ad_uid')
-  final String aDUid;
+  final String? aDUid;
 
   @override
   String toString() {
@@ -240,18 +277,18 @@ class _$_ContactCustomFields implements _ContactCustomFields {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ContactCustomFieldsToJson(this);
+    return _$$_ContactCustomFieldsToJson(this);
   }
 }
 
 abstract class _ContactCustomFields implements ContactCustomFields {
   const factory _ContactCustomFields(
-      {@JsonKey(name: 'company') String company,
-      @JsonKey(name: 'department') String department,
-      @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'mobile_phone') String mobilePhone,
-      @JsonKey(name: 'source') String source,
-      @JsonKey(name: 'ad_uid') String aDUid}) = _$_ContactCustomFields;
+      {@JsonKey(name: 'company') String? company,
+      @JsonKey(name: 'department') String? department,
+      @JsonKey(name: 'title') String? title,
+      @JsonKey(name: 'mobile_phone') String? mobilePhone,
+      @JsonKey(name: 'source') String? source,
+      @JsonKey(name: 'ad_uid') String? aDUid}) = _$_ContactCustomFields;
 
   factory _ContactCustomFields.fromJson(Map<String, dynamic> json) = _$_ContactCustomFields.fromJson;
 
@@ -259,33 +296,33 @@ abstract class _ContactCustomFields implements ContactCustomFields {
 
   /// Company.
   @JsonKey(name: 'company')
-  String get company;
+  String? get company => throw _privateConstructorUsedError;
   @override
 
   /// Department.
   @JsonKey(name: 'department')
-  String get department;
+  String? get department => throw _privateConstructorUsedError;
   @override
 
   /// Title.
   @JsonKey(name: 'title')
-  String get title;
+  String? get title => throw _privateConstructorUsedError;
   @override
 
   /// MobilePhone.
   @JsonKey(name: 'mobile_phone')
-  String get mobilePhone;
+  String? get mobilePhone => throw _privateConstructorUsedError;
   @override
 
   /// Import source.
   @JsonKey(name: 'source')
-  String get source;
+  String? get source => throw _privateConstructorUsedError;
   @override
 
   /// AD UID.
   @JsonKey(name: 'ad_uid')
-  String get aDUid;
+  String? get aDUid => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ContactCustomFieldsCopyWith<_ContactCustomFields> get copyWith;
+  _$ContactCustomFieldsCopyWith<_ContactCustomFields> get copyWith => throw _privateConstructorUsedError;
 }

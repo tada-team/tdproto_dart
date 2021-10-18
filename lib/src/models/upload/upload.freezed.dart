@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'upload.dart';
 
@@ -8,6 +9,10 @@ part of 'upload.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Upload _$UploadFromJson(Map<String, dynamic> json) {
   return _Upload.fromJson(json);
 }
@@ -16,21 +21,20 @@ Upload _$UploadFromJson(Map<String, dynamic> json) {
 class _$UploadTearOff {
   const _$UploadTearOff();
 
-// ignore: unused_element
   _Upload call(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @required @JsonKey(name: 'size') int size,
-      @JsonKey(name: 'duration') int duration,
-      @required @JsonKey(name: 'name') String name,
-      @required @JsonKey(name: 'url') String url,
-      @JsonKey(name: 'preview') UploadPreview preview,
-      @required @JsonKey(name: 'content_type') String contentType,
-      @JsonKey(name: 'animated') bool animated,
-      @JsonKey(name: 'blurhash') String blurhash,
-      @JsonKey(name: 'processing') bool processing,
-      @JsonKey(name: 'pdf_version') PdfVersion pdfVersion,
-      @required @JsonKey(name: 'type') String mediaType}) {
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'size') required int size,
+      @JsonKey(name: 'duration') int? duration,
+      @JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'url') required String url,
+      @JsonKey(name: 'preview') UploadPreview? preview,
+      @JsonKey(name: 'content_type') required String contentType,
+      @JsonKey(name: 'animated') bool? animated = false,
+      @JsonKey(name: 'blurhash') String? blurhash,
+      @JsonKey(name: 'processing') bool? processing = false,
+      @JsonKey(name: 'pdf_version') PdfVersion? pdfVersion,
+      @JsonKey(name: 'type') required String mediaType}) {
     return _Upload(
       uid: uid,
       created: created,
@@ -48,74 +52,72 @@ class _$UploadTearOff {
     );
   }
 
-// ignore: unused_element
   Upload fromJson(Map<String, Object> json) {
     return Upload.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Upload = _$UploadTearOff();
 
 /// @nodoc
 mixin _$Upload {
   /// Upload id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// Uploaded at.
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created;
+  DateTime get created => throw _privateConstructorUsedError;
 
   /// Upload size in bytes.
   @JsonKey(name: 'size')
-  int get size;
+  int get size => throw _privateConstructorUsedError;
 
   /// Mediafile duration (for audio/video only).
   @JsonKey(name: 'duration')
-  int get duration;
+  int? get duration => throw _privateConstructorUsedError;
 
   /// Filename.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// Absolute url.
   @JsonKey(name: 'url')
-  String get url;
+  String get url => throw _privateConstructorUsedError;
 
   /// Preview details.
   @JsonKey(name: 'preview')
-  UploadPreview get preview;
+  UploadPreview? get preview => throw _privateConstructorUsedError;
 
   /// Content type.
   @JsonKey(name: 'content_type')
-  String get contentType;
+  String get contentType => throw _privateConstructorUsedError;
 
   /// Is animated (images only).
   @JsonKey(name: 'animated')
-  bool get animated;
+  bool? get animated => throw _privateConstructorUsedError;
 
   /// Compact representation of a placeholder for an image (images only).
   @JsonKey(name: 'blurhash')
-  String get blurhash;
+  String? get blurhash => throw _privateConstructorUsedError;
 
   /// File still processing (video only).
   @JsonKey(name: 'processing')
-  bool get processing;
+  bool? get processing => throw _privateConstructorUsedError;
 
   /// PDF version of file. Experimental.
   @JsonKey(name: 'pdf_version')
-  PdfVersion get pdfVersion;
+  PdfVersion? get pdfVersion => throw _privateConstructorUsedError;
 
   /// ?type=file,image,audio,video.
   @JsonKey(name: 'type')
-  String get mediaType;
+  String get mediaType => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $UploadCopyWith<Upload> get copyWith;
+  $UploadCopyWith<Upload> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -125,19 +127,19 @@ abstract class $UploadCopyWith<$Res> {
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @JsonKey(name: 'size') int size,
-      @JsonKey(name: 'duration') int duration,
+      @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'name') String name,
       @JsonKey(name: 'url') String url,
-      @JsonKey(name: 'preview') UploadPreview preview,
+      @JsonKey(name: 'preview') UploadPreview? preview,
       @JsonKey(name: 'content_type') String contentType,
-      @JsonKey(name: 'animated') bool animated,
-      @JsonKey(name: 'blurhash') String blurhash,
-      @JsonKey(name: 'processing') bool processing,
-      @JsonKey(name: 'pdf_version') PdfVersion pdfVersion,
+      @JsonKey(name: 'animated') bool? animated,
+      @JsonKey(name: 'blurhash') String? blurhash,
+      @JsonKey(name: 'processing') bool? processing,
+      @JsonKey(name: 'pdf_version') PdfVersion? pdfVersion,
       @JsonKey(name: 'type') String mediaType});
 
-  $UploadPreviewCopyWith<$Res> get preview;
-  $PdfVersionCopyWith<$Res> get pdfVersion;
+  $UploadPreviewCopyWith<$Res>? get preview;
+  $PdfVersionCopyWith<$Res>? get pdfVersion;
 }
 
 /// @nodoc
@@ -150,53 +152,94 @@ class _$UploadCopyWithImpl<$Res> implements $UploadCopyWith<$Res> {
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object created = freezed,
-    Object size = freezed,
-    Object duration = freezed,
-    Object name = freezed,
-    Object url = freezed,
-    Object preview = freezed,
-    Object contentType = freezed,
-    Object animated = freezed,
-    Object blurhash = freezed,
-    Object processing = freezed,
-    Object pdfVersion = freezed,
-    Object mediaType = freezed,
+    Object? uid = freezed,
+    Object? created = freezed,
+    Object? size = freezed,
+    Object? duration = freezed,
+    Object? name = freezed,
+    Object? url = freezed,
+    Object? preview = freezed,
+    Object? contentType = freezed,
+    Object? animated = freezed,
+    Object? blurhash = freezed,
+    Object? processing = freezed,
+    Object? pdfVersion = freezed,
+    Object? mediaType = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
-      created: created == freezed ? _value.created : created as DateTime,
-      size: size == freezed ? _value.size : size as int,
-      duration: duration == freezed ? _value.duration : duration as int,
-      name: name == freezed ? _value.name : name as String,
-      url: url == freezed ? _value.url : url as String,
-      preview: preview == freezed ? _value.preview : preview as UploadPreview,
-      contentType: contentType == freezed ? _value.contentType : contentType as String,
-      animated: animated == freezed ? _value.animated : animated as bool,
-      blurhash: blurhash == freezed ? _value.blurhash : blurhash as String,
-      processing: processing == freezed ? _value.processing : processing as bool,
-      pdfVersion: pdfVersion == freezed ? _value.pdfVersion : pdfVersion as PdfVersion,
-      mediaType: mediaType == freezed ? _value.mediaType : mediaType as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      created: created == freezed
+          ? _value.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      size: size == freezed
+          ? _value.size
+          : size // ignore: cast_nullable_to_non_nullable
+              as int,
+      duration: duration == freezed
+          ? _value.duration
+          : duration // ignore: cast_nullable_to_non_nullable
+              as int?,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: url == freezed
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+      preview: preview == freezed
+          ? _value.preview
+          : preview // ignore: cast_nullable_to_non_nullable
+              as UploadPreview?,
+      contentType: contentType == freezed
+          ? _value.contentType
+          : contentType // ignore: cast_nullable_to_non_nullable
+              as String,
+      animated: animated == freezed
+          ? _value.animated
+          : animated // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      blurhash: blurhash == freezed
+          ? _value.blurhash
+          : blurhash // ignore: cast_nullable_to_non_nullable
+              as String?,
+      processing: processing == freezed
+          ? _value.processing
+          : processing // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      pdfVersion: pdfVersion == freezed
+          ? _value.pdfVersion
+          : pdfVersion // ignore: cast_nullable_to_non_nullable
+              as PdfVersion?,
+      mediaType: mediaType == freezed
+          ? _value.mediaType
+          : mediaType // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 
   @override
-  $UploadPreviewCopyWith<$Res> get preview {
+  $UploadPreviewCopyWith<$Res>? get preview {
     if (_value.preview == null) {
       return null;
     }
-    return $UploadPreviewCopyWith<$Res>(_value.preview, (value) {
+
+    return $UploadPreviewCopyWith<$Res>(_value.preview!, (value) {
       return _then(_value.copyWith(preview: value));
     });
   }
 
   @override
-  $PdfVersionCopyWith<$Res> get pdfVersion {
+  $PdfVersionCopyWith<$Res>? get pdfVersion {
     if (_value.pdfVersion == null) {
       return null;
     }
-    return $PdfVersionCopyWith<$Res>(_value.pdfVersion, (value) {
+
+    return $PdfVersionCopyWith<$Res>(_value.pdfVersion!, (value) {
       return _then(_value.copyWith(pdfVersion: value));
     });
   }
@@ -210,21 +253,21 @@ abstract class _$UploadCopyWith<$Res> implements $UploadCopyWith<$Res> {
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @JsonKey(name: 'size') int size,
-      @JsonKey(name: 'duration') int duration,
+      @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'name') String name,
       @JsonKey(name: 'url') String url,
-      @JsonKey(name: 'preview') UploadPreview preview,
+      @JsonKey(name: 'preview') UploadPreview? preview,
       @JsonKey(name: 'content_type') String contentType,
-      @JsonKey(name: 'animated') bool animated,
-      @JsonKey(name: 'blurhash') String blurhash,
-      @JsonKey(name: 'processing') bool processing,
-      @JsonKey(name: 'pdf_version') PdfVersion pdfVersion,
+      @JsonKey(name: 'animated') bool? animated,
+      @JsonKey(name: 'blurhash') String? blurhash,
+      @JsonKey(name: 'processing') bool? processing,
+      @JsonKey(name: 'pdf_version') PdfVersion? pdfVersion,
       @JsonKey(name: 'type') String mediaType});
 
   @override
-  $UploadPreviewCopyWith<$Res> get preview;
+  $UploadPreviewCopyWith<$Res>? get preview;
   @override
-  $PdfVersionCopyWith<$Res> get pdfVersion;
+  $PdfVersionCopyWith<$Res>? get pdfVersion;
 }
 
 /// @nodoc
@@ -236,65 +279,96 @@ class __$UploadCopyWithImpl<$Res> extends _$UploadCopyWithImpl<$Res> implements 
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object created = freezed,
-    Object size = freezed,
-    Object duration = freezed,
-    Object name = freezed,
-    Object url = freezed,
-    Object preview = freezed,
-    Object contentType = freezed,
-    Object animated = freezed,
-    Object blurhash = freezed,
-    Object processing = freezed,
-    Object pdfVersion = freezed,
-    Object mediaType = freezed,
+    Object? uid = freezed,
+    Object? created = freezed,
+    Object? size = freezed,
+    Object? duration = freezed,
+    Object? name = freezed,
+    Object? url = freezed,
+    Object? preview = freezed,
+    Object? contentType = freezed,
+    Object? animated = freezed,
+    Object? blurhash = freezed,
+    Object? processing = freezed,
+    Object? pdfVersion = freezed,
+    Object? mediaType = freezed,
   }) {
     return _then(_Upload(
-      uid: uid == freezed ? _value.uid : uid as String,
-      created: created == freezed ? _value.created : created as DateTime,
-      size: size == freezed ? _value.size : size as int,
-      duration: duration == freezed ? _value.duration : duration as int,
-      name: name == freezed ? _value.name : name as String,
-      url: url == freezed ? _value.url : url as String,
-      preview: preview == freezed ? _value.preview : preview as UploadPreview,
-      contentType: contentType == freezed ? _value.contentType : contentType as String,
-      animated: animated == freezed ? _value.animated : animated as bool,
-      blurhash: blurhash == freezed ? _value.blurhash : blurhash as String,
-      processing: processing == freezed ? _value.processing : processing as bool,
-      pdfVersion: pdfVersion == freezed ? _value.pdfVersion : pdfVersion as PdfVersion,
-      mediaType: mediaType == freezed ? _value.mediaType : mediaType as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      created: created == freezed
+          ? _value.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      size: size == freezed
+          ? _value.size
+          : size // ignore: cast_nullable_to_non_nullable
+              as int,
+      duration: duration == freezed
+          ? _value.duration
+          : duration // ignore: cast_nullable_to_non_nullable
+              as int?,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: url == freezed
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+      preview: preview == freezed
+          ? _value.preview
+          : preview // ignore: cast_nullable_to_non_nullable
+              as UploadPreview?,
+      contentType: contentType == freezed
+          ? _value.contentType
+          : contentType // ignore: cast_nullable_to_non_nullable
+              as String,
+      animated: animated == freezed
+          ? _value.animated
+          : animated // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      blurhash: blurhash == freezed
+          ? _value.blurhash
+          : blurhash // ignore: cast_nullable_to_non_nullable
+              as String?,
+      processing: processing == freezed
+          ? _value.processing
+          : processing // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      pdfVersion: pdfVersion == freezed
+          ? _value.pdfVersion
+          : pdfVersion // ignore: cast_nullable_to_non_nullable
+              as PdfVersion?,
+      mediaType: mediaType == freezed
+          ? _value.mediaType
+          : mediaType // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Upload implements _Upload {
   const _$_Upload(
-      {@required @JsonKey(name: 'uid') this.uid,
-      @required @JsonKey(name: 'created') @DateTimeConverter() this.created,
-      @required @JsonKey(name: 'size') this.size,
+      {@JsonKey(name: 'uid') required this.uid,
+      @JsonKey(name: 'created') @DateTimeConverter() required this.created,
+      @JsonKey(name: 'size') required this.size,
       @JsonKey(name: 'duration') this.duration,
-      @required @JsonKey(name: 'name') this.name,
-      @required @JsonKey(name: 'url') this.url,
+      @JsonKey(name: 'name') required this.name,
+      @JsonKey(name: 'url') required this.url,
       @JsonKey(name: 'preview') this.preview,
-      @required @JsonKey(name: 'content_type') this.contentType,
-      @JsonKey(name: 'animated') this.animated,
+      @JsonKey(name: 'content_type') required this.contentType,
+      @JsonKey(name: 'animated') this.animated = false,
       @JsonKey(name: 'blurhash') this.blurhash,
-      @JsonKey(name: 'processing') this.processing,
+      @JsonKey(name: 'processing') this.processing = false,
       @JsonKey(name: 'pdf_version') this.pdfVersion,
-      @required @JsonKey(name: 'type') this.mediaType})
-      : assert(uid != null),
-        assert(created != null),
-        assert(size != null),
-        assert(name != null),
-        assert(url != null),
-        assert(contentType != null),
-        assert(mediaType != null);
+      @JsonKey(name: 'type') required this.mediaType});
 
-  factory _$_Upload.fromJson(Map<String, dynamic> json) => _$_$_UploadFromJson(json);
+  factory _$_Upload.fromJson(Map<String, dynamic> json) => _$$_UploadFromJson(json);
 
   @override
 
@@ -316,7 +390,7 @@ class _$_Upload implements _Upload {
 
   /// Mediafile duration (for audio/video only).
   @JsonKey(name: 'duration')
-  final int duration;
+  final int? duration;
   @override
 
   /// Filename.
@@ -331,7 +405,7 @@ class _$_Upload implements _Upload {
 
   /// Preview details.
   @JsonKey(name: 'preview')
-  final UploadPreview preview;
+  final UploadPreview? preview;
   @override
 
   /// Content type.
@@ -341,22 +415,22 @@ class _$_Upload implements _Upload {
 
   /// Is animated (images only).
   @JsonKey(name: 'animated')
-  final bool animated;
+  final bool? animated;
   @override
 
   /// Compact representation of a placeholder for an image (images only).
   @JsonKey(name: 'blurhash')
-  final String blurhash;
+  final String? blurhash;
   @override
 
   /// File still processing (video only).
   @JsonKey(name: 'processing')
-  final bool processing;
+  final bool? processing;
   @override
 
   /// PDF version of file. Experimental.
   @JsonKey(name: 'pdf_version')
-  final PdfVersion pdfVersion;
+  final PdfVersion? pdfVersion;
   @override
 
   /// ?type=file,image,audio,video.
@@ -414,25 +488,25 @@ class _$_Upload implements _Upload {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_UploadToJson(this);
+    return _$$_UploadToJson(this);
   }
 }
 
 abstract class _Upload implements Upload {
   const factory _Upload(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @required @JsonKey(name: 'size') int size,
-      @JsonKey(name: 'duration') int duration,
-      @required @JsonKey(name: 'name') String name,
-      @required @JsonKey(name: 'url') String url,
-      @JsonKey(name: 'preview') UploadPreview preview,
-      @required @JsonKey(name: 'content_type') String contentType,
-      @JsonKey(name: 'animated') bool animated,
-      @JsonKey(name: 'blurhash') String blurhash,
-      @JsonKey(name: 'processing') bool processing,
-      @JsonKey(name: 'pdf_version') PdfVersion pdfVersion,
-      @required @JsonKey(name: 'type') String mediaType}) = _$_Upload;
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'size') required int size,
+      @JsonKey(name: 'duration') int? duration,
+      @JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'url') required String url,
+      @JsonKey(name: 'preview') UploadPreview? preview,
+      @JsonKey(name: 'content_type') required String contentType,
+      @JsonKey(name: 'animated') bool? animated,
+      @JsonKey(name: 'blurhash') String? blurhash,
+      @JsonKey(name: 'processing') bool? processing,
+      @JsonKey(name: 'pdf_version') PdfVersion? pdfVersion,
+      @JsonKey(name: 'type') required String mediaType}) = _$_Upload;
 
   factory _Upload.fromJson(Map<String, dynamic> json) = _$_Upload.fromJson;
 
@@ -440,69 +514,69 @@ abstract class _Upload implements Upload {
 
   /// Upload id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// Uploaded at.
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created;
+  DateTime get created => throw _privateConstructorUsedError;
   @override
 
   /// Upload size in bytes.
   @JsonKey(name: 'size')
-  int get size;
+  int get size => throw _privateConstructorUsedError;
   @override
 
   /// Mediafile duration (for audio/video only).
   @JsonKey(name: 'duration')
-  int get duration;
+  int? get duration => throw _privateConstructorUsedError;
   @override
 
   /// Filename.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// Absolute url.
   @JsonKey(name: 'url')
-  String get url;
+  String get url => throw _privateConstructorUsedError;
   @override
 
   /// Preview details.
   @JsonKey(name: 'preview')
-  UploadPreview get preview;
+  UploadPreview? get preview => throw _privateConstructorUsedError;
   @override
 
   /// Content type.
   @JsonKey(name: 'content_type')
-  String get contentType;
+  String get contentType => throw _privateConstructorUsedError;
   @override
 
   /// Is animated (images only).
   @JsonKey(name: 'animated')
-  bool get animated;
+  bool? get animated => throw _privateConstructorUsedError;
   @override
 
   /// Compact representation of a placeholder for an image (images only).
   @JsonKey(name: 'blurhash')
-  String get blurhash;
+  String? get blurhash => throw _privateConstructorUsedError;
   @override
 
   /// File still processing (video only).
   @JsonKey(name: 'processing')
-  bool get processing;
+  bool? get processing => throw _privateConstructorUsedError;
   @override
 
   /// PDF version of file. Experimental.
   @JsonKey(name: 'pdf_version')
-  PdfVersion get pdfVersion;
+  PdfVersion? get pdfVersion => throw _privateConstructorUsedError;
   @override
 
   /// ?type=file,image,audio,video.
   @JsonKey(name: 'type')
-  String get mediaType;
+  String get mediaType => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$UploadCopyWith<_Upload> get copyWith;
+  _$UploadCopyWith<_Upload> get copyWith => throw _privateConstructorUsedError;
 }

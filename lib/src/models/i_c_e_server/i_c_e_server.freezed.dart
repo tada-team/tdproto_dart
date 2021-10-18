@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'i_c_e_server.dart';
 
@@ -8,6 +9,10 @@ part of 'i_c_e_server.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ICEServer _$ICEServerFromJson(Map<String, dynamic> json) {
   return _ICEServer.fromJson(json);
 }
@@ -16,32 +21,29 @@ ICEServer _$ICEServerFromJson(Map<String, dynamic> json) {
 class _$ICEServerTearOff {
   const _$ICEServerTearOff();
 
-// ignore: unused_element
-  _ICEServer call({@required @JsonKey(name: 'urls') String urls}) {
+  _ICEServer call({@JsonKey(name: 'urls') required String urls}) {
     return _ICEServer(
       urls: urls,
     );
   }
 
-// ignore: unused_element
   ICEServer fromJson(Map<String, Object> json) {
     return ICEServer.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ICEServer = _$ICEServerTearOff();
 
 /// @nodoc
 mixin _$ICEServer {
   /// URls.
   @JsonKey(name: 'urls')
-  String get urls;
+  String get urls => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ICEServerCopyWith<ICEServer> get copyWith;
+  $ICEServerCopyWith<ICEServer> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -60,10 +62,13 @@ class _$ICEServerCopyWithImpl<$Res> implements $ICEServerCopyWith<$Res> {
 
   @override
   $Res call({
-    Object urls = freezed,
+    Object? urls = freezed,
   }) {
     return _then(_value.copyWith(
-      urls: urls == freezed ? _value.urls : urls as String,
+      urls: urls == freezed
+          ? _value.urls
+          : urls // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -85,21 +90,23 @@ class __$ICEServerCopyWithImpl<$Res> extends _$ICEServerCopyWithImpl<$Res> imple
 
   @override
   $Res call({
-    Object urls = freezed,
+    Object? urls = freezed,
   }) {
     return _then(_ICEServer(
-      urls: urls == freezed ? _value.urls : urls as String,
+      urls: urls == freezed
+          ? _value.urls
+          : urls // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ICEServer implements _ICEServer {
-  const _$_ICEServer({@required @JsonKey(name: 'urls') this.urls}) : assert(urls != null);
+  const _$_ICEServer({@JsonKey(name: 'urls') required this.urls});
 
-  factory _$_ICEServer.fromJson(Map<String, dynamic> json) => _$_$_ICEServerFromJson(json);
+  factory _$_ICEServer.fromJson(Map<String, dynamic> json) => _$$_ICEServerFromJson(json);
 
   @override
 
@@ -128,12 +135,12 @@ class _$_ICEServer implements _ICEServer {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ICEServerToJson(this);
+    return _$$_ICEServerToJson(this);
   }
 }
 
 abstract class _ICEServer implements ICEServer {
-  const factory _ICEServer({@required @JsonKey(name: 'urls') String urls}) = _$_ICEServer;
+  const factory _ICEServer({@JsonKey(name: 'urls') required String urls}) = _$_ICEServer;
 
   factory _ICEServer.fromJson(Map<String, dynamic> json) = _$_ICEServer.fromJson;
 
@@ -141,8 +148,8 @@ abstract class _ICEServer implements ICEServer {
 
   /// URls.
   @JsonKey(name: 'urls')
-  String get urls;
+  String get urls => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ICEServerCopyWith<_ICEServer> get copyWith;
+  _$ICEServerCopyWith<_ICEServer> get copyWith => throw _privateConstructorUsedError;
 }

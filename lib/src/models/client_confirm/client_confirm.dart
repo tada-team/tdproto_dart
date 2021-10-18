@@ -6,16 +6,16 @@ part 'client_confirm.g.dart';
 
 /// Client confirmed server message.
 @freezed
-abstract class ClientConfirm with _$ClientConfirm {
+class ClientConfirm with _$ClientConfirm {
   const factory ClientConfirm({
     /// .
-    @JsonKey(name: 'params') @required ClientConfirmParams params,
+    @JsonKey(name: 'params') required ClientConfirmParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ClientConfirm;
 
   factory ClientConfirm.fromJson(Map<String, dynamic> json) => _$ClientConfirmFromJson(json);

@@ -6,20 +6,18 @@ part of 'session.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_Session _$_$_SessionFromJson(Map<String, dynamic> json) {
-  return _$_Session(
-    uid: json['uid'] as String,
-    created: const DateTimeConverter().fromJson(json['created'] as String),
-    lang: json['lang'] as String,
-    team: json['team'] as String,
-    isMobile: json['is_mobile'] as bool,
-    afk: json['afk'] as bool,
-    useragent: json['useragent'] as String,
-    addr: json['addr'] as String,
-  );
-}
+_$_Session _$$_SessionFromJson(Map<String, dynamic> json) => _$_Session(
+      uid: json['uid'] as String,
+      created: const DateTimeConverter().fromJson(json['created'] as String),
+      lang: json['lang'] as String?,
+      team: json['team'] as String?,
+      isMobile: json['is_mobile'] as bool? ?? false,
+      afk: json['afk'] as bool? ?? false,
+      useragent: json['useragent'] as String?,
+      addr: json['addr'] as String?,
+    );
 
-Map<String, dynamic> _$_$_SessionToJson(_$_Session instance) => <String, dynamic>{
+Map<String, dynamic> _$$_SessionToJson(_$_Session instance) => <String, dynamic>{
       'uid': instance.uid,
       'created': const DateTimeConverter().toJson(instance.created),
       'lang': instance.lang,

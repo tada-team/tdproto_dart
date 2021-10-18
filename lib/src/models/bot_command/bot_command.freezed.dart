@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'bot_command.dart';
 
@@ -8,6 +9,10 @@ part of 'bot_command.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 BotCommand _$BotCommandFromJson(Map<String, dynamic> json) {
   return _BotCommand.fromJson(json);
 }
@@ -16,11 +21,10 @@ BotCommand _$BotCommandFromJson(Map<String, dynamic> json) {
 class _$BotCommandTearOff {
   const _$BotCommandTearOff();
 
-// ignore: unused_element
   _BotCommand call(
-      {@required @JsonKey(name: 'key') String key,
-      @required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'args') List<String> args}) {
+      {@JsonKey(name: 'key') required String key,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'args') required List<String> args}) {
     return _BotCommand(
       key: key,
       title: title,
@@ -28,33 +32,31 @@ class _$BotCommandTearOff {
     );
   }
 
-// ignore: unused_element
   BotCommand fromJson(Map<String, Object> json) {
     return BotCommand.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $BotCommand = _$BotCommandTearOff();
 
 /// @nodoc
 mixin _$BotCommand {
   /// What should be inserted to the chat.
   @JsonKey(name: 'key')
-  String get key;
+  String get key => throw _privateConstructorUsedError;
 
   /// What should be visible by user.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
 
   /// Command options, if any.
   @JsonKey(name: 'args')
-  List<String> get args;
+  List<String> get args => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $BotCommandCopyWith<BotCommand> get copyWith;
+  $BotCommandCopyWith<BotCommand> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -76,14 +78,23 @@ class _$BotCommandCopyWithImpl<$Res> implements $BotCommandCopyWith<$Res> {
 
   @override
   $Res call({
-    Object key = freezed,
-    Object title = freezed,
-    Object args = freezed,
+    Object? key = freezed,
+    Object? title = freezed,
+    Object? args = freezed,
   }) {
     return _then(_value.copyWith(
-      key: key == freezed ? _value.key : key as String,
-      title: title == freezed ? _value.title : title as String,
-      args: args == freezed ? _value.args : args as List<String>,
+      key: key == freezed
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      args: args == freezed
+          ? _value.args
+          : args // ignore: cast_nullable_to_non_nullable
+              as List<String>,
     ));
   }
 }
@@ -108,31 +119,36 @@ class __$BotCommandCopyWithImpl<$Res> extends _$BotCommandCopyWithImpl<$Res> imp
 
   @override
   $Res call({
-    Object key = freezed,
-    Object title = freezed,
-    Object args = freezed,
+    Object? key = freezed,
+    Object? title = freezed,
+    Object? args = freezed,
   }) {
     return _then(_BotCommand(
-      key: key == freezed ? _value.key : key as String,
-      title: title == freezed ? _value.title : title as String,
-      args: args == freezed ? _value.args : args as List<String>,
+      key: key == freezed
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      args: args == freezed
+          ? _value.args
+          : args // ignore: cast_nullable_to_non_nullable
+              as List<String>,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_BotCommand implements _BotCommand {
   const _$_BotCommand(
-      {@required @JsonKey(name: 'key') this.key,
-      @required @JsonKey(name: 'title') this.title,
-      @required @JsonKey(name: 'args') this.args})
-      : assert(key != null),
-        assert(title != null),
-        assert(args != null);
+      {@JsonKey(name: 'key') required this.key,
+      @JsonKey(name: 'title') required this.title,
+      @JsonKey(name: 'args') required this.args});
 
-  factory _$_BotCommand.fromJson(Map<String, dynamic> json) => _$_$_BotCommandFromJson(json);
+  factory _$_BotCommand.fromJson(Map<String, dynamic> json) => _$$_BotCommandFromJson(json);
 
   @override
 
@@ -177,15 +193,15 @@ class _$_BotCommand implements _BotCommand {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_BotCommandToJson(this);
+    return _$$_BotCommandToJson(this);
   }
 }
 
 abstract class _BotCommand implements BotCommand {
   const factory _BotCommand(
-      {@required @JsonKey(name: 'key') String key,
-      @required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'args') List<String> args}) = _$_BotCommand;
+      {@JsonKey(name: 'key') required String key,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'args') required List<String> args}) = _$_BotCommand;
 
   factory _BotCommand.fromJson(Map<String, dynamic> json) = _$_BotCommand.fromJson;
 
@@ -193,18 +209,18 @@ abstract class _BotCommand implements BotCommand {
 
   /// What should be inserted to the chat.
   @JsonKey(name: 'key')
-  String get key;
+  String get key => throw _privateConstructorUsedError;
   @override
 
   /// What should be visible by user.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
 
   /// Command options, if any.
   @JsonKey(name: 'args')
-  List<String> get args;
+  List<String> get args => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$BotCommandCopyWith<_BotCommand> get copyWith;
+  _$BotCommandCopyWith<_BotCommand> get copyWith => throw _privateConstructorUsedError;
 }

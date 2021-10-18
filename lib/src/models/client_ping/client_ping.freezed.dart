@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'client_ping.dart';
 
@@ -8,6 +9,10 @@ part of 'client_ping.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ClientPing _$ClientPingFromJson(Map<String, dynamic> json) {
   return _ClientPing.fromJson(json);
 }
@@ -16,43 +21,40 @@ ClientPing _$ClientPingFromJson(Map<String, dynamic> json) {
 class _$ClientPingTearOff {
   const _$ClientPingTearOff();
 
-// ignore: unused_element
-  _ClientPing call({@required @JsonKey(name: 'event') String name, @JsonKey(name: 'confirm_id') String confirmId}) {
+  _ClientPing call({@JsonKey(name: 'event') required String name, @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ClientPing(
       name: name,
       confirmId: confirmId,
     );
   }
 
-// ignore: unused_element
   ClientPing fromJson(Map<String, Object> json) {
     return ClientPing.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ClientPing = _$ClientPingTearOff();
 
 /// @nodoc
 mixin _$ClientPing {
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ClientPingCopyWith<ClientPing> get copyWith;
+  $ClientPingCopyWith<ClientPing> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ClientPingCopyWith<$Res> {
   factory $ClientPingCopyWith(ClientPing value, $Res Function(ClientPing) then) = _$ClientPingCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'event') String name, @JsonKey(name: 'confirm_id') String confirmId});
+  $Res call({@JsonKey(name: 'event') String name, @JsonKey(name: 'confirm_id') String? confirmId});
 }
 
 /// @nodoc
@@ -65,12 +67,18 @@ class _$ClientPingCopyWithImpl<$Res> implements $ClientPingCopyWith<$Res> {
 
   @override
   $Res call({
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -79,7 +87,7 @@ class _$ClientPingCopyWithImpl<$Res> implements $ClientPingCopyWith<$Res> {
 abstract class _$ClientPingCopyWith<$Res> implements $ClientPingCopyWith<$Res> {
   factory _$ClientPingCopyWith(_ClientPing value, $Res Function(_ClientPing) then) = __$ClientPingCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'event') String name, @JsonKey(name: 'confirm_id') String confirmId});
+  $Res call({@JsonKey(name: 'event') String name, @JsonKey(name: 'confirm_id') String? confirmId});
 }
 
 /// @nodoc
@@ -92,24 +100,28 @@ class __$ClientPingCopyWithImpl<$Res> extends _$ClientPingCopyWithImpl<$Res> imp
 
   @override
   $Res call({
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ClientPing(
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ClientPing implements _ClientPing {
-  const _$_ClientPing({@required @JsonKey(name: 'event') this.name, @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(name != null);
+  const _$_ClientPing({@JsonKey(name: 'event') required this.name, @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ClientPing.fromJson(Map<String, dynamic> json) => _$_$_ClientPingFromJson(json);
+  factory _$_ClientPing.fromJson(Map<String, dynamic> json) => _$$_ClientPingFromJson(json);
 
   @override
 
@@ -120,7 +132,7 @@ class _$_ClientPing implements _ClientPing {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -146,13 +158,13 @@ class _$_ClientPing implements _ClientPing {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ClientPingToJson(this);
+    return _$$_ClientPingToJson(this);
   }
 }
 
 abstract class _ClientPing implements ClientPing {
   const factory _ClientPing(
-      {@required @JsonKey(name: 'event') String name, @JsonKey(name: 'confirm_id') String confirmId}) = _$_ClientPing;
+      {@JsonKey(name: 'event') required String name, @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ClientPing;
 
   factory _ClientPing.fromJson(Map<String, dynamic> json) = _$_ClientPing.fromJson;
 
@@ -160,13 +172,13 @@ abstract class _ClientPing implements ClientPing {
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ClientPingCopyWith<_ClientPing> get copyWith;
+  _$ClientPingCopyWith<_ClientPing> get copyWith => throw _privateConstructorUsedError;
 }

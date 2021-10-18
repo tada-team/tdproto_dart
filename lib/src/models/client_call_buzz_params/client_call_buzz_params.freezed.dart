@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'client_call_buzz_params.dart';
 
@@ -8,6 +9,10 @@ part of 'client_call_buzz_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ClientCallBuzzParams _$ClientCallBuzzParamsFromJson(Map<String, dynamic> json) {
   return _ClientCallBuzzParams.fromJson(json);
 }
@@ -16,45 +21,42 @@ ClientCallBuzzParams _$ClientCallBuzzParamsFromJson(Map<String, dynamic> json) {
 class _$ClientCallBuzzParamsTearOff {
   const _$ClientCallBuzzParamsTearOff();
 
-// ignore: unused_element
   _ClientCallBuzzParams call(
-      {@required @JsonKey(name: 'jid') String jid, @JsonKey(name: 'members') List<String> members}) {
+      {@JsonKey(name: 'jid') required String jid, @JsonKey(name: 'members') List<String>? members}) {
     return _ClientCallBuzzParams(
       jid: jid,
       members: members,
     );
   }
 
-// ignore: unused_element
   ClientCallBuzzParams fromJson(Map<String, Object> json) {
     return ClientCallBuzzParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ClientCallBuzzParams = _$ClientCallBuzzParamsTearOff();
 
 /// @nodoc
 mixin _$ClientCallBuzzParams {
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
   /// List of call participants. Empty value means all participants in call.
   @JsonKey(name: 'members')
-  List<String> get members;
+  List<String>? get members => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ClientCallBuzzParamsCopyWith<ClientCallBuzzParams> get copyWith;
+  $ClientCallBuzzParamsCopyWith<ClientCallBuzzParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ClientCallBuzzParamsCopyWith<$Res> {
   factory $ClientCallBuzzParamsCopyWith(ClientCallBuzzParams value, $Res Function(ClientCallBuzzParams) then) =
       _$ClientCallBuzzParamsCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'jid') String jid, @JsonKey(name: 'members') List<String> members});
+  $Res call({@JsonKey(name: 'jid') String jid, @JsonKey(name: 'members') List<String>? members});
 }
 
 /// @nodoc
@@ -67,12 +69,18 @@ class _$ClientCallBuzzParamsCopyWithImpl<$Res> implements $ClientCallBuzzParamsC
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object members = freezed,
+    Object? jid = freezed,
+    Object? members = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
-      members: members == freezed ? _value.members : members as List<String>,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      members: members == freezed
+          ? _value.members
+          : members // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
     ));
   }
 }
@@ -82,7 +90,7 @@ abstract class _$ClientCallBuzzParamsCopyWith<$Res> implements $ClientCallBuzzPa
   factory _$ClientCallBuzzParamsCopyWith(_ClientCallBuzzParams value, $Res Function(_ClientCallBuzzParams) then) =
       __$ClientCallBuzzParamsCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'jid') String jid, @JsonKey(name: 'members') List<String> members});
+  $Res call({@JsonKey(name: 'jid') String jid, @JsonKey(name: 'members') List<String>? members});
 }
 
 /// @nodoc
@@ -96,24 +104,28 @@ class __$ClientCallBuzzParamsCopyWithImpl<$Res> extends _$ClientCallBuzzParamsCo
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object members = freezed,
+    Object? jid = freezed,
+    Object? members = freezed,
   }) {
     return _then(_ClientCallBuzzParams(
-      jid: jid == freezed ? _value.jid : jid as String,
-      members: members == freezed ? _value.members : members as List<String>,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      members: members == freezed
+          ? _value.members
+          : members // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ClientCallBuzzParams implements _ClientCallBuzzParams {
-  const _$_ClientCallBuzzParams({@required @JsonKey(name: 'jid') this.jid, @JsonKey(name: 'members') this.members})
-      : assert(jid != null);
+  const _$_ClientCallBuzzParams({@JsonKey(name: 'jid') required this.jid, @JsonKey(name: 'members') this.members});
 
-  factory _$_ClientCallBuzzParams.fromJson(Map<String, dynamic> json) => _$_$_ClientCallBuzzParamsFromJson(json);
+  factory _$_ClientCallBuzzParams.fromJson(Map<String, dynamic> json) => _$$_ClientCallBuzzParamsFromJson(json);
 
   @override
 
@@ -124,7 +136,7 @@ class _$_ClientCallBuzzParams implements _ClientCallBuzzParams {
 
   /// List of call participants. Empty value means all participants in call.
   @JsonKey(name: 'members')
-  final List<String> members;
+  final List<String>? members;
 
   @override
   String toString() {
@@ -150,14 +162,14 @@ class _$_ClientCallBuzzParams implements _ClientCallBuzzParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ClientCallBuzzParamsToJson(this);
+    return _$$_ClientCallBuzzParamsToJson(this);
   }
 }
 
 abstract class _ClientCallBuzzParams implements ClientCallBuzzParams {
   const factory _ClientCallBuzzParams(
-      {@required @JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'members') List<String> members}) = _$_ClientCallBuzzParams;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'members') List<String>? members}) = _$_ClientCallBuzzParams;
 
   factory _ClientCallBuzzParams.fromJson(Map<String, dynamic> json) = _$_ClientCallBuzzParams.fromJson;
 
@@ -165,13 +177,13 @@ abstract class _ClientCallBuzzParams implements ClientCallBuzzParams {
 
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// List of call participants. Empty value means all participants in call.
   @JsonKey(name: 'members')
-  List<String> get members;
+  List<String>? get members => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ClientCallBuzzParamsCopyWith<_ClientCallBuzzParams> get copyWith;
+  _$ClientCallBuzzParamsCopyWith<_ClientCallBuzzParams> get copyWith => throw _privateConstructorUsedError;
 }

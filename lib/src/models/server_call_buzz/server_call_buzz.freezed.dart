@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_call_buzz.dart';
 
@@ -8,6 +9,10 @@ part of 'server_call_buzz.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerCallBuzz _$ServerCallBuzzFromJson(Map<String, dynamic> json) {
   return _ServerCallBuzz.fromJson(json);
 }
@@ -16,11 +21,10 @@ ServerCallBuzz _$ServerCallBuzzFromJson(Map<String, dynamic> json) {
 class _$ServerCallBuzzTearOff {
   const _$ServerCallBuzzTearOff();
 
-// ignore: unused_element
   _ServerCallBuzz call(
-      {@required @JsonKey(name: 'params') ServerCallBuzzParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) {
+      {@JsonKey(name: 'params') required ServerCallBuzzParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ServerCallBuzz(
       params: params,
       name: name,
@@ -28,33 +32,31 @@ class _$ServerCallBuzzTearOff {
     );
   }
 
-// ignore: unused_element
   ServerCallBuzz fromJson(Map<String, Object> json) {
     return ServerCallBuzz.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerCallBuzz = _$ServerCallBuzzTearOff();
 
 /// @nodoc
 mixin _$ServerCallBuzz {
   /// .
   @JsonKey(name: 'params')
-  ServerCallBuzzParams get params;
+  ServerCallBuzzParams get params => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerCallBuzzCopyWith<ServerCallBuzz> get copyWith;
+  $ServerCallBuzzCopyWith<ServerCallBuzz> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -64,7 +66,7 @@ abstract class $ServerCallBuzzCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'params') ServerCallBuzzParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   $ServerCallBuzzParamsCopyWith<$Res> get params;
 }
@@ -79,22 +81,28 @@ class _$ServerCallBuzzCopyWithImpl<$Res> implements $ServerCallBuzzCopyWith<$Res
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as ServerCallBuzzParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerCallBuzzParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $ServerCallBuzzParamsCopyWith<$Res> get params {
-    if (_value.params == null) {
-      return null;
-    }
     return $ServerCallBuzzParamsCopyWith<$Res>(_value.params, (value) {
       return _then(_value.copyWith(params: value));
     });
@@ -109,7 +117,7 @@ abstract class _$ServerCallBuzzCopyWith<$Res> implements $ServerCallBuzzCopyWith
   $Res call(
       {@JsonKey(name: 'params') ServerCallBuzzParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   @override
   $ServerCallBuzzParamsCopyWith<$Res> get params;
@@ -126,30 +134,36 @@ class __$ServerCallBuzzCopyWithImpl<$Res> extends _$ServerCallBuzzCopyWithImpl<$
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ServerCallBuzz(
-      params: params == freezed ? _value.params : params as ServerCallBuzzParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerCallBuzzParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerCallBuzz implements _ServerCallBuzz {
   const _$_ServerCallBuzz(
-      {@required @JsonKey(name: 'params') this.params,
-      @required @JsonKey(name: 'event') this.name,
-      @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(params != null),
-        assert(name != null);
+      {@JsonKey(name: 'params') required this.params,
+      @JsonKey(name: 'event') required this.name,
+      @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ServerCallBuzz.fromJson(Map<String, dynamic> json) => _$_$_ServerCallBuzzFromJson(json);
+  factory _$_ServerCallBuzz.fromJson(Map<String, dynamic> json) => _$$_ServerCallBuzzFromJson(json);
 
   @override
 
@@ -165,7 +179,7 @@ class _$_ServerCallBuzz implements _ServerCallBuzz {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -196,15 +210,15 @@ class _$_ServerCallBuzz implements _ServerCallBuzz {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerCallBuzzToJson(this);
+    return _$$_ServerCallBuzzToJson(this);
   }
 }
 
 abstract class _ServerCallBuzz implements ServerCallBuzz {
   const factory _ServerCallBuzz(
-      {@required @JsonKey(name: 'params') ServerCallBuzzParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) = _$_ServerCallBuzz;
+      {@JsonKey(name: 'params') required ServerCallBuzzParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerCallBuzz;
 
   factory _ServerCallBuzz.fromJson(Map<String, dynamic> json) = _$_ServerCallBuzz.fromJson;
 
@@ -212,18 +226,18 @@ abstract class _ServerCallBuzz implements ServerCallBuzz {
 
   /// .
   @JsonKey(name: 'params')
-  ServerCallBuzzParams get params;
+  ServerCallBuzzParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerCallBuzzCopyWith<_ServerCallBuzz> get copyWith;
+  _$ServerCallBuzzCopyWith<_ServerCallBuzz> get copyWith => throw _privateConstructorUsedError;
 }

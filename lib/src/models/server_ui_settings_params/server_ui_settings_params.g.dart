@@ -6,14 +6,12 @@ part of 'server_ui_settings_params.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ServerUiSettingsParams _$_$_ServerUiSettingsParamsFromJson(Map<String, dynamic> json) {
-  return _$_ServerUiSettingsParams(
-    namespace: json['namespace'] as String,
-    data: json['data'],
-  );
-}
+_$_ServerUiSettingsParams _$$_ServerUiSettingsParamsFromJson(Map<String, dynamic> json) => _$_ServerUiSettingsParams(
+      namespace: json['namespace'] as String,
+      data: json['data'],
+    );
 
-Map<String, dynamic> _$_$_ServerUiSettingsParamsToJson(_$_ServerUiSettingsParams instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ServerUiSettingsParamsToJson(_$_ServerUiSettingsParams instance) => <String, dynamic>{
       'namespace': instance.namespace,
       'data': instance.data,
     };

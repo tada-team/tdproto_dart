@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'tariff.dart';
 
@@ -8,6 +9,10 @@ part of 'tariff.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Tariff _$TariffFromJson(Map<String, dynamic> json) {
   return _Tariff.fromJson(json);
 }
@@ -16,16 +21,15 @@ Tariff _$TariffFromJson(Map<String, dynamic> json) {
 class _$TariffTearOff {
   const _$TariffTearOff();
 
-// ignore: unused_element
   _Tariff call(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'title_en') String titleEn,
-      @required @JsonKey(name: 'title_ru') String titleRu,
-      @JsonKey(name: 'price') String price,
-      @JsonKey(name: 'cloud_space') int cloudSpace,
-      @JsonKey(name: 'max_members_in_team') int maxMembersInTeam,
-      @JsonKey(name: 'max_participants_per_call') int maxParticipantsPerCall,
-      @JsonKey(name: 'max_upload_filesize') int maxUploadFilesize}) {
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'title_en') required String titleEn,
+      @JsonKey(name: 'title_ru') required String titleRu,
+      @JsonKey(name: 'price') String? price,
+      @JsonKey(name: 'cloud_space') int? cloudSpace,
+      @JsonKey(name: 'max_members_in_team') int? maxMembersInTeam,
+      @JsonKey(name: 'max_participants_per_call') int? maxParticipantsPerCall,
+      @JsonKey(name: 'max_upload_filesize') int? maxUploadFilesize}) {
     return _Tariff(
       uid: uid,
       titleEn: titleEn,
@@ -38,53 +42,51 @@ class _$TariffTearOff {
     );
   }
 
-// ignore: unused_element
   Tariff fromJson(Map<String, Object> json) {
     return Tariff.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Tariff = _$TariffTearOff();
 
 /// @nodoc
 mixin _$Tariff {
   /// Tariff id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// Title of tariff in enlish.
   @JsonKey(name: 'title_en')
-  String get titleEn;
+  String get titleEn => throw _privateConstructorUsedError;
 
   /// Title of tariff in russian.
   @JsonKey(name: 'title_ru')
-  String get titleRu;
+  String get titleRu => throw _privateConstructorUsedError;
 
   /// Price of tariff.
   @JsonKey(name: 'price')
-  String get price;
+  String? get price => throw _privateConstructorUsedError;
 
   /// Cloud space reserved for storing team users uploads in megabytes.
   @JsonKey(name: 'cloud_space')
-  int get cloudSpace;
+  int? get cloudSpace => throw _privateConstructorUsedError;
 
   /// Maximum allowed number of members in a team.
   @JsonKey(name: 'max_members_in_team')
-  int get maxMembersInTeam;
+  int? get maxMembersInTeam => throw _privateConstructorUsedError;
 
   /// Maximum number of participants per call.
   @JsonKey(name: 'max_participants_per_call')
-  int get maxParticipantsPerCall;
+  int? get maxParticipantsPerCall => throw _privateConstructorUsedError;
 
   /// maximum file size for uploading.
   @JsonKey(name: 'max_upload_filesize')
-  int get maxUploadFilesize;
+  int? get maxUploadFilesize => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $TariffCopyWith<Tariff> get copyWith;
+  $TariffCopyWith<Tariff> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -94,11 +96,11 @@ abstract class $TariffCopyWith<$Res> {
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'title_en') String titleEn,
       @JsonKey(name: 'title_ru') String titleRu,
-      @JsonKey(name: 'price') String price,
-      @JsonKey(name: 'cloud_space') int cloudSpace,
-      @JsonKey(name: 'max_members_in_team') int maxMembersInTeam,
-      @JsonKey(name: 'max_participants_per_call') int maxParticipantsPerCall,
-      @JsonKey(name: 'max_upload_filesize') int maxUploadFilesize});
+      @JsonKey(name: 'price') String? price,
+      @JsonKey(name: 'cloud_space') int? cloudSpace,
+      @JsonKey(name: 'max_members_in_team') int? maxMembersInTeam,
+      @JsonKey(name: 'max_participants_per_call') int? maxParticipantsPerCall,
+      @JsonKey(name: 'max_upload_filesize') int? maxUploadFilesize});
 }
 
 /// @nodoc
@@ -111,25 +113,48 @@ class _$TariffCopyWithImpl<$Res> implements $TariffCopyWith<$Res> {
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object titleEn = freezed,
-    Object titleRu = freezed,
-    Object price = freezed,
-    Object cloudSpace = freezed,
-    Object maxMembersInTeam = freezed,
-    Object maxParticipantsPerCall = freezed,
-    Object maxUploadFilesize = freezed,
+    Object? uid = freezed,
+    Object? titleEn = freezed,
+    Object? titleRu = freezed,
+    Object? price = freezed,
+    Object? cloudSpace = freezed,
+    Object? maxMembersInTeam = freezed,
+    Object? maxParticipantsPerCall = freezed,
+    Object? maxUploadFilesize = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
-      titleEn: titleEn == freezed ? _value.titleEn : titleEn as String,
-      titleRu: titleRu == freezed ? _value.titleRu : titleRu as String,
-      price: price == freezed ? _value.price : price as String,
-      cloudSpace: cloudSpace == freezed ? _value.cloudSpace : cloudSpace as int,
-      maxMembersInTeam: maxMembersInTeam == freezed ? _value.maxMembersInTeam : maxMembersInTeam as int,
-      maxParticipantsPerCall:
-          maxParticipantsPerCall == freezed ? _value.maxParticipantsPerCall : maxParticipantsPerCall as int,
-      maxUploadFilesize: maxUploadFilesize == freezed ? _value.maxUploadFilesize : maxUploadFilesize as int,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      titleEn: titleEn == freezed
+          ? _value.titleEn
+          : titleEn // ignore: cast_nullable_to_non_nullable
+              as String,
+      titleRu: titleRu == freezed
+          ? _value.titleRu
+          : titleRu // ignore: cast_nullable_to_non_nullable
+              as String,
+      price: price == freezed
+          ? _value.price
+          : price // ignore: cast_nullable_to_non_nullable
+              as String?,
+      cloudSpace: cloudSpace == freezed
+          ? _value.cloudSpace
+          : cloudSpace // ignore: cast_nullable_to_non_nullable
+              as int?,
+      maxMembersInTeam: maxMembersInTeam == freezed
+          ? _value.maxMembersInTeam
+          : maxMembersInTeam // ignore: cast_nullable_to_non_nullable
+              as int?,
+      maxParticipantsPerCall: maxParticipantsPerCall == freezed
+          ? _value.maxParticipantsPerCall
+          : maxParticipantsPerCall // ignore: cast_nullable_to_non_nullable
+              as int?,
+      maxUploadFilesize: maxUploadFilesize == freezed
+          ? _value.maxUploadFilesize
+          : maxUploadFilesize // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 }
@@ -142,11 +167,11 @@ abstract class _$TariffCopyWith<$Res> implements $TariffCopyWith<$Res> {
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'title_en') String titleEn,
       @JsonKey(name: 'title_ru') String titleRu,
-      @JsonKey(name: 'price') String price,
-      @JsonKey(name: 'cloud_space') int cloudSpace,
-      @JsonKey(name: 'max_members_in_team') int maxMembersInTeam,
-      @JsonKey(name: 'max_participants_per_call') int maxParticipantsPerCall,
-      @JsonKey(name: 'max_upload_filesize') int maxUploadFilesize});
+      @JsonKey(name: 'price') String? price,
+      @JsonKey(name: 'cloud_space') int? cloudSpace,
+      @JsonKey(name: 'max_members_in_team') int? maxMembersInTeam,
+      @JsonKey(name: 'max_participants_per_call') int? maxParticipantsPerCall,
+      @JsonKey(name: 'max_upload_filesize') int? maxUploadFilesize});
 }
 
 /// @nodoc
@@ -158,47 +183,66 @@ class __$TariffCopyWithImpl<$Res> extends _$TariffCopyWithImpl<$Res> implements 
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object titleEn = freezed,
-    Object titleRu = freezed,
-    Object price = freezed,
-    Object cloudSpace = freezed,
-    Object maxMembersInTeam = freezed,
-    Object maxParticipantsPerCall = freezed,
-    Object maxUploadFilesize = freezed,
+    Object? uid = freezed,
+    Object? titleEn = freezed,
+    Object? titleRu = freezed,
+    Object? price = freezed,
+    Object? cloudSpace = freezed,
+    Object? maxMembersInTeam = freezed,
+    Object? maxParticipantsPerCall = freezed,
+    Object? maxUploadFilesize = freezed,
   }) {
     return _then(_Tariff(
-      uid: uid == freezed ? _value.uid : uid as String,
-      titleEn: titleEn == freezed ? _value.titleEn : titleEn as String,
-      titleRu: titleRu == freezed ? _value.titleRu : titleRu as String,
-      price: price == freezed ? _value.price : price as String,
-      cloudSpace: cloudSpace == freezed ? _value.cloudSpace : cloudSpace as int,
-      maxMembersInTeam: maxMembersInTeam == freezed ? _value.maxMembersInTeam : maxMembersInTeam as int,
-      maxParticipantsPerCall:
-          maxParticipantsPerCall == freezed ? _value.maxParticipantsPerCall : maxParticipantsPerCall as int,
-      maxUploadFilesize: maxUploadFilesize == freezed ? _value.maxUploadFilesize : maxUploadFilesize as int,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      titleEn: titleEn == freezed
+          ? _value.titleEn
+          : titleEn // ignore: cast_nullable_to_non_nullable
+              as String,
+      titleRu: titleRu == freezed
+          ? _value.titleRu
+          : titleRu // ignore: cast_nullable_to_non_nullable
+              as String,
+      price: price == freezed
+          ? _value.price
+          : price // ignore: cast_nullable_to_non_nullable
+              as String?,
+      cloudSpace: cloudSpace == freezed
+          ? _value.cloudSpace
+          : cloudSpace // ignore: cast_nullable_to_non_nullable
+              as int?,
+      maxMembersInTeam: maxMembersInTeam == freezed
+          ? _value.maxMembersInTeam
+          : maxMembersInTeam // ignore: cast_nullable_to_non_nullable
+              as int?,
+      maxParticipantsPerCall: maxParticipantsPerCall == freezed
+          ? _value.maxParticipantsPerCall
+          : maxParticipantsPerCall // ignore: cast_nullable_to_non_nullable
+              as int?,
+      maxUploadFilesize: maxUploadFilesize == freezed
+          ? _value.maxUploadFilesize
+          : maxUploadFilesize // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Tariff implements _Tariff {
   const _$_Tariff(
-      {@required @JsonKey(name: 'uid') this.uid,
-      @required @JsonKey(name: 'title_en') this.titleEn,
-      @required @JsonKey(name: 'title_ru') this.titleRu,
+      {@JsonKey(name: 'uid') required this.uid,
+      @JsonKey(name: 'title_en') required this.titleEn,
+      @JsonKey(name: 'title_ru') required this.titleRu,
       @JsonKey(name: 'price') this.price,
       @JsonKey(name: 'cloud_space') this.cloudSpace,
       @JsonKey(name: 'max_members_in_team') this.maxMembersInTeam,
       @JsonKey(name: 'max_participants_per_call') this.maxParticipantsPerCall,
-      @JsonKey(name: 'max_upload_filesize') this.maxUploadFilesize})
-      : assert(uid != null),
-        assert(titleEn != null),
-        assert(titleRu != null);
+      @JsonKey(name: 'max_upload_filesize') this.maxUploadFilesize});
 
-  factory _$_Tariff.fromJson(Map<String, dynamic> json) => _$_$_TariffFromJson(json);
+  factory _$_Tariff.fromJson(Map<String, dynamic> json) => _$$_TariffFromJson(json);
 
   @override
 
@@ -219,27 +263,27 @@ class _$_Tariff implements _Tariff {
 
   /// Price of tariff.
   @JsonKey(name: 'price')
-  final String price;
+  final String? price;
   @override
 
   /// Cloud space reserved for storing team users uploads in megabytes.
   @JsonKey(name: 'cloud_space')
-  final int cloudSpace;
+  final int? cloudSpace;
   @override
 
   /// Maximum allowed number of members in a team.
   @JsonKey(name: 'max_members_in_team')
-  final int maxMembersInTeam;
+  final int? maxMembersInTeam;
   @override
 
   /// Maximum number of participants per call.
   @JsonKey(name: 'max_participants_per_call')
-  final int maxParticipantsPerCall;
+  final int? maxParticipantsPerCall;
   @override
 
   /// maximum file size for uploading.
   @JsonKey(name: 'max_upload_filesize')
-  final int maxUploadFilesize;
+  final int? maxUploadFilesize;
 
   @override
   String toString() {
@@ -282,20 +326,20 @@ class _$_Tariff implements _Tariff {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_TariffToJson(this);
+    return _$$_TariffToJson(this);
   }
 }
 
 abstract class _Tariff implements Tariff {
   const factory _Tariff(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'title_en') String titleEn,
-      @required @JsonKey(name: 'title_ru') String titleRu,
-      @JsonKey(name: 'price') String price,
-      @JsonKey(name: 'cloud_space') int cloudSpace,
-      @JsonKey(name: 'max_members_in_team') int maxMembersInTeam,
-      @JsonKey(name: 'max_participants_per_call') int maxParticipantsPerCall,
-      @JsonKey(name: 'max_upload_filesize') int maxUploadFilesize}) = _$_Tariff;
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'title_en') required String titleEn,
+      @JsonKey(name: 'title_ru') required String titleRu,
+      @JsonKey(name: 'price') String? price,
+      @JsonKey(name: 'cloud_space') int? cloudSpace,
+      @JsonKey(name: 'max_members_in_team') int? maxMembersInTeam,
+      @JsonKey(name: 'max_participants_per_call') int? maxParticipantsPerCall,
+      @JsonKey(name: 'max_upload_filesize') int? maxUploadFilesize}) = _$_Tariff;
 
   factory _Tariff.fromJson(Map<String, dynamic> json) = _$_Tariff.fromJson;
 
@@ -303,43 +347,43 @@ abstract class _Tariff implements Tariff {
 
   /// Tariff id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// Title of tariff in enlish.
   @JsonKey(name: 'title_en')
-  String get titleEn;
+  String get titleEn => throw _privateConstructorUsedError;
   @override
 
   /// Title of tariff in russian.
   @JsonKey(name: 'title_ru')
-  String get titleRu;
+  String get titleRu => throw _privateConstructorUsedError;
   @override
 
   /// Price of tariff.
   @JsonKey(name: 'price')
-  String get price;
+  String? get price => throw _privateConstructorUsedError;
   @override
 
   /// Cloud space reserved for storing team users uploads in megabytes.
   @JsonKey(name: 'cloud_space')
-  int get cloudSpace;
+  int? get cloudSpace => throw _privateConstructorUsedError;
   @override
 
   /// Maximum allowed number of members in a team.
   @JsonKey(name: 'max_members_in_team')
-  int get maxMembersInTeam;
+  int? get maxMembersInTeam => throw _privateConstructorUsedError;
   @override
 
   /// Maximum number of participants per call.
   @JsonKey(name: 'max_participants_per_call')
-  int get maxParticipantsPerCall;
+  int? get maxParticipantsPerCall => throw _privateConstructorUsedError;
   @override
 
   /// maximum file size for uploading.
   @JsonKey(name: 'max_upload_filesize')
-  int get maxUploadFilesize;
+  int? get maxUploadFilesize => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TariffCopyWith<_Tariff> get copyWith;
+  _$TariffCopyWith<_Tariff> get copyWith => throw _privateConstructorUsedError;
 }

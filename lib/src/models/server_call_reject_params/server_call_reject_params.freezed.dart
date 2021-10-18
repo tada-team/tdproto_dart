@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_call_reject_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_call_reject_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerCallRejectParams _$ServerCallRejectParamsFromJson(Map<String, dynamic> json) {
   return _ServerCallRejectParams.fromJson(json);
 }
@@ -16,11 +21,10 @@ ServerCallRejectParams _$ServerCallRejectParamsFromJson(Map<String, dynamic> jso
 class _$ServerCallRejectParamsTearOff {
   const _$ServerCallRejectParamsTearOff();
 
-// ignore: unused_element
   _ServerCallRejectParams call(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'reason') String reason}) {
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'reason') required String reason}) {
     return _ServerCallRejectParams(
       jid: jid,
       uid: uid,
@@ -28,33 +32,31 @@ class _$ServerCallRejectParamsTearOff {
     );
   }
 
-// ignore: unused_element
   ServerCallRejectParams fromJson(Map<String, Object> json) {
     return ServerCallRejectParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerCallRejectParams = _$ServerCallRejectParamsTearOff();
 
 /// @nodoc
 mixin _$ServerCallRejectParams {
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
   /// Call id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// Reason, if any.
   @JsonKey(name: 'reason')
-  String get reason;
+  String get reason => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerCallRejectParamsCopyWith<ServerCallRejectParams> get copyWith;
+  $ServerCallRejectParamsCopyWith<ServerCallRejectParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -75,14 +77,23 @@ class _$ServerCallRejectParamsCopyWithImpl<$Res> implements $ServerCallRejectPar
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object uid = freezed,
-    Object reason = freezed,
+    Object? jid = freezed,
+    Object? uid = freezed,
+    Object? reason = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
-      uid: uid == freezed ? _value.uid : uid as String,
-      reason: reason == freezed ? _value.reason : reason as String,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      reason: reason == freezed
+          ? _value.reason
+          : reason // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -107,31 +118,36 @@ class __$ServerCallRejectParamsCopyWithImpl<$Res> extends _$ServerCallRejectPara
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object uid = freezed,
-    Object reason = freezed,
+    Object? jid = freezed,
+    Object? uid = freezed,
+    Object? reason = freezed,
   }) {
     return _then(_ServerCallRejectParams(
-      jid: jid == freezed ? _value.jid : jid as String,
-      uid: uid == freezed ? _value.uid : uid as String,
-      reason: reason == freezed ? _value.reason : reason as String,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      reason: reason == freezed
+          ? _value.reason
+          : reason // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerCallRejectParams implements _ServerCallRejectParams {
   const _$_ServerCallRejectParams(
-      {@required @JsonKey(name: 'jid') this.jid,
-      @required @JsonKey(name: 'uid') this.uid,
-      @required @JsonKey(name: 'reason') this.reason})
-      : assert(jid != null),
-        assert(uid != null),
-        assert(reason != null);
+      {@JsonKey(name: 'jid') required this.jid,
+      @JsonKey(name: 'uid') required this.uid,
+      @JsonKey(name: 'reason') required this.reason});
 
-  factory _$_ServerCallRejectParams.fromJson(Map<String, dynamic> json) => _$_$_ServerCallRejectParamsFromJson(json);
+  factory _$_ServerCallRejectParams.fromJson(Map<String, dynamic> json) => _$$_ServerCallRejectParamsFromJson(json);
 
   @override
 
@@ -177,15 +193,15 @@ class _$_ServerCallRejectParams implements _ServerCallRejectParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerCallRejectParamsToJson(this);
+    return _$$_ServerCallRejectParamsToJson(this);
   }
 }
 
 abstract class _ServerCallRejectParams implements ServerCallRejectParams {
   const factory _ServerCallRejectParams(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'reason') String reason}) = _$_ServerCallRejectParams;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'reason') required String reason}) = _$_ServerCallRejectParams;
 
   factory _ServerCallRejectParams.fromJson(Map<String, dynamic> json) = _$_ServerCallRejectParams.fromJson;
 
@@ -193,18 +209,18 @@ abstract class _ServerCallRejectParams implements ServerCallRejectParams {
 
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Call id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// Reason, if any.
   @JsonKey(name: 'reason')
-  String get reason;
+  String get reason => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerCallRejectParamsCopyWith<_ServerCallRejectParams> get copyWith;
+  _$ServerCallRejectParamsCopyWith<_ServerCallRejectParams> get copyWith => throw _privateConstructorUsedError;
 }

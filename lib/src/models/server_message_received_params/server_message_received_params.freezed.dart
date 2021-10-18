@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_message_received_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_message_received_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerMessageReceivedParams _$ServerMessageReceivedParamsFromJson(Map<String, dynamic> json) {
   return _ServerMessageReceivedParams.fromJson(json);
 }
@@ -16,32 +21,29 @@ ServerMessageReceivedParams _$ServerMessageReceivedParamsFromJson(Map<String, dy
 class _$ServerMessageReceivedParamsTearOff {
   const _$ServerMessageReceivedParamsTearOff();
 
-// ignore: unused_element
-  _ServerMessageReceivedParams call({@required @JsonKey(name: 'messages') List<ReceivedMessage> messages}) {
+  _ServerMessageReceivedParams call({@JsonKey(name: 'messages') required List<ReceivedMessage> messages}) {
     return _ServerMessageReceivedParams(
       messages: messages,
     );
   }
 
-// ignore: unused_element
   ServerMessageReceivedParams fromJson(Map<String, Object> json) {
     return ServerMessageReceivedParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerMessageReceivedParams = _$ServerMessageReceivedParamsTearOff();
 
 /// @nodoc
 mixin _$ServerMessageReceivedParams {
   /// received message data.
   @JsonKey(name: 'messages')
-  List<ReceivedMessage> get messages;
+  List<ReceivedMessage> get messages => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerMessageReceivedParamsCopyWith<ServerMessageReceivedParams> get copyWith;
+  $ServerMessageReceivedParamsCopyWith<ServerMessageReceivedParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -62,10 +64,13 @@ class _$ServerMessageReceivedParamsCopyWithImpl<$Res> implements $ServerMessageR
 
   @override
   $Res call({
-    Object messages = freezed,
+    Object? messages = freezed,
   }) {
     return _then(_value.copyWith(
-      messages: messages == freezed ? _value.messages : messages as List<ReceivedMessage>,
+      messages: messages == freezed
+          ? _value.messages
+          : messages // ignore: cast_nullable_to_non_nullable
+              as List<ReceivedMessage>,
     ));
   }
 }
@@ -91,22 +96,24 @@ class __$ServerMessageReceivedParamsCopyWithImpl<$Res> extends _$ServerMessageRe
 
   @override
   $Res call({
-    Object messages = freezed,
+    Object? messages = freezed,
   }) {
     return _then(_ServerMessageReceivedParams(
-      messages: messages == freezed ? _value.messages : messages as List<ReceivedMessage>,
+      messages: messages == freezed
+          ? _value.messages
+          : messages // ignore: cast_nullable_to_non_nullable
+              as List<ReceivedMessage>,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerMessageReceivedParams implements _ServerMessageReceivedParams {
-  const _$_ServerMessageReceivedParams({@required @JsonKey(name: 'messages') this.messages}) : assert(messages != null);
+  const _$_ServerMessageReceivedParams({@JsonKey(name: 'messages') required this.messages});
 
   factory _$_ServerMessageReceivedParams.fromJson(Map<String, dynamic> json) =>
-      _$_$_ServerMessageReceivedParamsFromJson(json);
+      _$$_ServerMessageReceivedParamsFromJson(json);
 
   @override
 
@@ -136,12 +143,12 @@ class _$_ServerMessageReceivedParams implements _ServerMessageReceivedParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerMessageReceivedParamsToJson(this);
+    return _$$_ServerMessageReceivedParamsToJson(this);
   }
 }
 
 abstract class _ServerMessageReceivedParams implements ServerMessageReceivedParams {
-  const factory _ServerMessageReceivedParams({@required @JsonKey(name: 'messages') List<ReceivedMessage> messages}) =
+  const factory _ServerMessageReceivedParams({@JsonKey(name: 'messages') required List<ReceivedMessage> messages}) =
       _$_ServerMessageReceivedParams;
 
   factory _ServerMessageReceivedParams.fromJson(Map<String, dynamic> json) = _$_ServerMessageReceivedParams.fromJson;
@@ -150,8 +157,9 @@ abstract class _ServerMessageReceivedParams implements ServerMessageReceivedPara
 
   /// received message data.
   @JsonKey(name: 'messages')
-  List<ReceivedMessage> get messages;
+  List<ReceivedMessage> get messages => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerMessageReceivedParamsCopyWith<_ServerMessageReceivedParams> get copyWith;
+  _$ServerMessageReceivedParamsCopyWith<_ServerMessageReceivedParams> get copyWith =>
+      throw _privateConstructorUsedError;
 }

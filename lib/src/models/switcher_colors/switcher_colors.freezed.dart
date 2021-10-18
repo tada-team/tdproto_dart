@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'switcher_colors.dart';
 
@@ -8,6 +9,10 @@ part of 'switcher_colors.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 SwitcherColors _$SwitcherColorsFromJson(Map<String, dynamic> json) {
   return _SwitcherColors.fromJson(json);
 }
@@ -16,37 +21,34 @@ SwitcherColors _$SwitcherColorsFromJson(Map<String, dynamic> json) {
 class _$SwitcherColorsTearOff {
   const _$SwitcherColorsTearOff();
 
-// ignore: unused_element
-  _SwitcherColors call({@required @JsonKey(name: 'on') String on, @required @JsonKey(name: 'off') String off}) {
+  _SwitcherColors call({@JsonKey(name: 'on') required String on, @JsonKey(name: 'off') required String off}) {
     return _SwitcherColors(
       on: on,
       off: off,
     );
   }
 
-// ignore: unused_element
   SwitcherColors fromJson(Map<String, Object> json) {
     return SwitcherColors.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $SwitcherColors = _$SwitcherColorsTearOff();
 
 /// @nodoc
 mixin _$SwitcherColors {
   /// On color.
   @JsonKey(name: 'on')
-  String get on;
+  String get on => throw _privateConstructorUsedError;
 
   /// Off color.
   @JsonKey(name: 'off')
-  String get off;
+  String get off => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $SwitcherColorsCopyWith<SwitcherColors> get copyWith;
+  $SwitcherColorsCopyWith<SwitcherColors> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -66,12 +68,18 @@ class _$SwitcherColorsCopyWithImpl<$Res> implements $SwitcherColorsCopyWith<$Res
 
   @override
   $Res call({
-    Object on = freezed,
-    Object off = freezed,
+    Object? on = freezed,
+    Object? off = freezed,
   }) {
     return _then(_value.copyWith(
-      on: on == freezed ? _value.on : on as String,
-      off: off == freezed ? _value.off : off as String,
+      on: on == freezed
+          ? _value.on
+          : on // ignore: cast_nullable_to_non_nullable
+              as String,
+      off: off == freezed
+          ? _value.off
+          : off // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -95,25 +103,28 @@ class __$SwitcherColorsCopyWithImpl<$Res> extends _$SwitcherColorsCopyWithImpl<$
 
   @override
   $Res call({
-    Object on = freezed,
-    Object off = freezed,
+    Object? on = freezed,
+    Object? off = freezed,
   }) {
     return _then(_SwitcherColors(
-      on: on == freezed ? _value.on : on as String,
-      off: off == freezed ? _value.off : off as String,
+      on: on == freezed
+          ? _value.on
+          : on // ignore: cast_nullable_to_non_nullable
+              as String,
+      off: off == freezed
+          ? _value.off
+          : off // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_SwitcherColors implements _SwitcherColors {
-  const _$_SwitcherColors({@required @JsonKey(name: 'on') this.on, @required @JsonKey(name: 'off') this.off})
-      : assert(on != null),
-        assert(off != null);
+  const _$_SwitcherColors({@JsonKey(name: 'on') required this.on, @JsonKey(name: 'off') required this.off});
 
-  factory _$_SwitcherColors.fromJson(Map<String, dynamic> json) => _$_$_SwitcherColorsFromJson(json);
+  factory _$_SwitcherColors.fromJson(Map<String, dynamic> json) => _$$_SwitcherColorsFromJson(json);
 
   @override
 
@@ -150,13 +161,13 @@ class _$_SwitcherColors implements _SwitcherColors {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_SwitcherColorsToJson(this);
+    return _$$_SwitcherColorsToJson(this);
   }
 }
 
 abstract class _SwitcherColors implements SwitcherColors {
-  const factory _SwitcherColors(
-      {@required @JsonKey(name: 'on') String on, @required @JsonKey(name: 'off') String off}) = _$_SwitcherColors;
+  const factory _SwitcherColors({@JsonKey(name: 'on') required String on, @JsonKey(name: 'off') required String off}) =
+      _$_SwitcherColors;
 
   factory _SwitcherColors.fromJson(Map<String, dynamic> json) = _$_SwitcherColors.fromJson;
 
@@ -164,13 +175,13 @@ abstract class _SwitcherColors implements SwitcherColors {
 
   /// On color.
   @JsonKey(name: 'on')
-  String get on;
+  String get on => throw _privateConstructorUsedError;
   @override
 
   /// Off color.
   @JsonKey(name: 'off')
-  String get off;
+  String get off => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$SwitcherColorsCopyWith<_SwitcherColors> get copyWith;
+  _$SwitcherColorsCopyWith<_SwitcherColors> get copyWith => throw _privateConstructorUsedError;
 }

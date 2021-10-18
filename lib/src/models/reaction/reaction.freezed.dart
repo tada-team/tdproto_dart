@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'reaction.dart';
 
@@ -8,6 +9,10 @@ part of 'reaction.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Reaction _$ReactionFromJson(Map<String, dynamic> json) {
   return _Reaction.fromJson(json);
 }
@@ -16,32 +21,29 @@ Reaction _$ReactionFromJson(Map<String, dynamic> json) {
 class _$ReactionTearOff {
   const _$ReactionTearOff();
 
-// ignore: unused_element
-  _Reaction call({@required @JsonKey(name: 'name') String name}) {
+  _Reaction call({@JsonKey(name: 'name') required String name}) {
     return _Reaction(
       name: name,
     );
   }
 
-// ignore: unused_element
   Reaction fromJson(Map<String, Object> json) {
     return Reaction.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Reaction = _$ReactionTearOff();
 
 /// @nodoc
 mixin _$Reaction {
   /// Unicode symbol.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ReactionCopyWith<Reaction> get copyWith;
+  $ReactionCopyWith<Reaction> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -60,10 +62,13 @@ class _$ReactionCopyWithImpl<$Res> implements $ReactionCopyWith<$Res> {
 
   @override
   $Res call({
-    Object name = freezed,
+    Object? name = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed ? _value.name : name as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -85,21 +90,23 @@ class __$ReactionCopyWithImpl<$Res> extends _$ReactionCopyWithImpl<$Res> impleme
 
   @override
   $Res call({
-    Object name = freezed,
+    Object? name = freezed,
   }) {
     return _then(_Reaction(
-      name: name == freezed ? _value.name : name as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Reaction implements _Reaction {
-  const _$_Reaction({@required @JsonKey(name: 'name') this.name}) : assert(name != null);
+  const _$_Reaction({@JsonKey(name: 'name') required this.name});
 
-  factory _$_Reaction.fromJson(Map<String, dynamic> json) => _$_$_ReactionFromJson(json);
+  factory _$_Reaction.fromJson(Map<String, dynamic> json) => _$$_ReactionFromJson(json);
 
   @override
 
@@ -128,12 +135,12 @@ class _$_Reaction implements _Reaction {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ReactionToJson(this);
+    return _$$_ReactionToJson(this);
   }
 }
 
 abstract class _Reaction implements Reaction {
-  const factory _Reaction({@required @JsonKey(name: 'name') String name}) = _$_Reaction;
+  const factory _Reaction({@JsonKey(name: 'name') required String name}) = _$_Reaction;
 
   factory _Reaction.fromJson(Map<String, dynamic> json) = _$_Reaction.fromJson;
 
@@ -141,8 +148,8 @@ abstract class _Reaction implements Reaction {
 
   /// Unicode symbol.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ReactionCopyWith<_Reaction> get copyWith;
+  _$ReactionCopyWith<_Reaction> get copyWith => throw _privateConstructorUsedError;
 }

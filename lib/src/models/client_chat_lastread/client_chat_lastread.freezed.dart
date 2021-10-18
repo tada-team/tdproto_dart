@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'client_chat_lastread.dart';
 
@@ -8,6 +9,10 @@ part of 'client_chat_lastread.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ClientChatLastread _$ClientChatLastreadFromJson(Map<String, dynamic> json) {
   return _ClientChatLastread.fromJson(json);
 }
@@ -16,11 +21,10 @@ ClientChatLastread _$ClientChatLastreadFromJson(Map<String, dynamic> json) {
 class _$ClientChatLastreadTearOff {
   const _$ClientChatLastreadTearOff();
 
-// ignore: unused_element
   _ClientChatLastread call(
-      {@required @JsonKey(name: 'params') ClientChatLastreadParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) {
+      {@JsonKey(name: 'params') required ClientChatLastreadParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ClientChatLastread(
       params: params,
       name: name,
@@ -28,33 +32,31 @@ class _$ClientChatLastreadTearOff {
     );
   }
 
-// ignore: unused_element
   ClientChatLastread fromJson(Map<String, Object> json) {
     return ClientChatLastread.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ClientChatLastread = _$ClientChatLastreadTearOff();
 
 /// @nodoc
 mixin _$ClientChatLastread {
   /// .
   @JsonKey(name: 'params')
-  ClientChatLastreadParams get params;
+  ClientChatLastreadParams get params => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ClientChatLastreadCopyWith<ClientChatLastread> get copyWith;
+  $ClientChatLastreadCopyWith<ClientChatLastread> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -64,7 +66,7 @@ abstract class $ClientChatLastreadCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'params') ClientChatLastreadParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   $ClientChatLastreadParamsCopyWith<$Res> get params;
 }
@@ -79,22 +81,28 @@ class _$ClientChatLastreadCopyWithImpl<$Res> implements $ClientChatLastreadCopyW
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as ClientChatLastreadParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ClientChatLastreadParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $ClientChatLastreadParamsCopyWith<$Res> get params {
-    if (_value.params == null) {
-      return null;
-    }
     return $ClientChatLastreadParamsCopyWith<$Res>(_value.params, (value) {
       return _then(_value.copyWith(params: value));
     });
@@ -109,7 +117,7 @@ abstract class _$ClientChatLastreadCopyWith<$Res> implements $ClientChatLastread
   $Res call(
       {@JsonKey(name: 'params') ClientChatLastreadParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   @override
   $ClientChatLastreadParamsCopyWith<$Res> get params;
@@ -126,30 +134,36 @@ class __$ClientChatLastreadCopyWithImpl<$Res> extends _$ClientChatLastreadCopyWi
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ClientChatLastread(
-      params: params == freezed ? _value.params : params as ClientChatLastreadParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ClientChatLastreadParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ClientChatLastread implements _ClientChatLastread {
   const _$_ClientChatLastread(
-      {@required @JsonKey(name: 'params') this.params,
-      @required @JsonKey(name: 'event') this.name,
-      @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(params != null),
-        assert(name != null);
+      {@JsonKey(name: 'params') required this.params,
+      @JsonKey(name: 'event') required this.name,
+      @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ClientChatLastread.fromJson(Map<String, dynamic> json) => _$_$_ClientChatLastreadFromJson(json);
+  factory _$_ClientChatLastread.fromJson(Map<String, dynamic> json) => _$$_ClientChatLastreadFromJson(json);
 
   @override
 
@@ -165,7 +179,7 @@ class _$_ClientChatLastread implements _ClientChatLastread {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -196,15 +210,15 @@ class _$_ClientChatLastread implements _ClientChatLastread {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ClientChatLastreadToJson(this);
+    return _$$_ClientChatLastreadToJson(this);
   }
 }
 
 abstract class _ClientChatLastread implements ClientChatLastread {
   const factory _ClientChatLastread(
-      {@required @JsonKey(name: 'params') ClientChatLastreadParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) = _$_ClientChatLastread;
+      {@JsonKey(name: 'params') required ClientChatLastreadParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ClientChatLastread;
 
   factory _ClientChatLastread.fromJson(Map<String, dynamic> json) = _$_ClientChatLastread.fromJson;
 
@@ -212,18 +226,18 @@ abstract class _ClientChatLastread implements ClientChatLastread {
 
   /// .
   @JsonKey(name: 'params')
-  ClientChatLastreadParams get params;
+  ClientChatLastreadParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ClientChatLastreadCopyWith<_ClientChatLastread> get copyWith;
+  _$ClientChatLastreadCopyWith<_ClientChatLastread> get copyWith => throw _privateConstructorUsedError;
 }

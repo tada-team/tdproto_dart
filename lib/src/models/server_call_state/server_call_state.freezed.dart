@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_call_state.dart';
 
@@ -8,6 +9,10 @@ part of 'server_call_state.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerCallState _$ServerCallStateFromJson(Map<String, dynamic> json) {
   return _ServerCallState.fromJson(json);
 }
@@ -16,11 +21,10 @@ ServerCallState _$ServerCallStateFromJson(Map<String, dynamic> json) {
 class _$ServerCallStateTearOff {
   const _$ServerCallStateTearOff();
 
-// ignore: unused_element
   _ServerCallState call(
-      {@required @JsonKey(name: 'params') CallEvent params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) {
+      {@JsonKey(name: 'params') required CallEvent params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ServerCallState(
       params: params,
       name: name,
@@ -28,33 +32,31 @@ class _$ServerCallStateTearOff {
     );
   }
 
-// ignore: unused_element
   ServerCallState fromJson(Map<String, Object> json) {
     return ServerCallState.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerCallState = _$ServerCallStateTearOff();
 
 /// @nodoc
 mixin _$ServerCallState {
   /// .
   @JsonKey(name: 'params')
-  CallEvent get params;
+  CallEvent get params => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerCallStateCopyWith<ServerCallState> get copyWith;
+  $ServerCallStateCopyWith<ServerCallState> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -64,7 +66,7 @@ abstract class $ServerCallStateCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'params') CallEvent params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   $CallEventCopyWith<$Res> get params;
 }
@@ -79,22 +81,28 @@ class _$ServerCallStateCopyWithImpl<$Res> implements $ServerCallStateCopyWith<$R
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as CallEvent,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as CallEvent,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $CallEventCopyWith<$Res> get params {
-    if (_value.params == null) {
-      return null;
-    }
     return $CallEventCopyWith<$Res>(_value.params, (value) {
       return _then(_value.copyWith(params: value));
     });
@@ -109,7 +117,7 @@ abstract class _$ServerCallStateCopyWith<$Res> implements $ServerCallStateCopyWi
   $Res call(
       {@JsonKey(name: 'params') CallEvent params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   @override
   $CallEventCopyWith<$Res> get params;
@@ -126,30 +134,36 @@ class __$ServerCallStateCopyWithImpl<$Res> extends _$ServerCallStateCopyWithImpl
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ServerCallState(
-      params: params == freezed ? _value.params : params as CallEvent,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as CallEvent,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerCallState implements _ServerCallState {
   const _$_ServerCallState(
-      {@required @JsonKey(name: 'params') this.params,
-      @required @JsonKey(name: 'event') this.name,
-      @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(params != null),
-        assert(name != null);
+      {@JsonKey(name: 'params') required this.params,
+      @JsonKey(name: 'event') required this.name,
+      @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ServerCallState.fromJson(Map<String, dynamic> json) => _$_$_ServerCallStateFromJson(json);
+  factory _$_ServerCallState.fromJson(Map<String, dynamic> json) => _$$_ServerCallStateFromJson(json);
 
   @override
 
@@ -165,7 +179,7 @@ class _$_ServerCallState implements _ServerCallState {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -196,15 +210,15 @@ class _$_ServerCallState implements _ServerCallState {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerCallStateToJson(this);
+    return _$$_ServerCallStateToJson(this);
   }
 }
 
 abstract class _ServerCallState implements ServerCallState {
   const factory _ServerCallState(
-      {@required @JsonKey(name: 'params') CallEvent params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) = _$_ServerCallState;
+      {@JsonKey(name: 'params') required CallEvent params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerCallState;
 
   factory _ServerCallState.fromJson(Map<String, dynamic> json) = _$_ServerCallState.fromJson;
 
@@ -212,18 +226,18 @@ abstract class _ServerCallState implements ServerCallState {
 
   /// .
   @JsonKey(name: 'params')
-  CallEvent get params;
+  CallEvent get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerCallStateCopyWith<_ServerCallState> get copyWith;
+  _$ServerCallStateCopyWith<_ServerCallState> get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'client_activity.dart';
 
@@ -8,6 +9,10 @@ part of 'client_activity.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ClientActivity _$ClientActivityFromJson(Map<String, dynamic> json) {
   return _ClientActivity.fromJson(json);
 }
@@ -16,11 +21,10 @@ ClientActivity _$ClientActivityFromJson(Map<String, dynamic> json) {
 class _$ClientActivityTearOff {
   const _$ClientActivityTearOff();
 
-// ignore: unused_element
   _ClientActivity call(
-      {@required @JsonKey(name: 'params') ClientActivityParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) {
+      {@JsonKey(name: 'params') required ClientActivityParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ClientActivity(
       params: params,
       name: name,
@@ -28,33 +32,31 @@ class _$ClientActivityTearOff {
     );
   }
 
-// ignore: unused_element
   ClientActivity fromJson(Map<String, Object> json) {
     return ClientActivity.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ClientActivity = _$ClientActivityTearOff();
 
 /// @nodoc
 mixin _$ClientActivity {
   /// .
   @JsonKey(name: 'params')
-  ClientActivityParams get params;
+  ClientActivityParams get params => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ClientActivityCopyWith<ClientActivity> get copyWith;
+  $ClientActivityCopyWith<ClientActivity> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -64,7 +66,7 @@ abstract class $ClientActivityCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'params') ClientActivityParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   $ClientActivityParamsCopyWith<$Res> get params;
 }
@@ -79,22 +81,28 @@ class _$ClientActivityCopyWithImpl<$Res> implements $ClientActivityCopyWith<$Res
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as ClientActivityParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ClientActivityParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $ClientActivityParamsCopyWith<$Res> get params {
-    if (_value.params == null) {
-      return null;
-    }
     return $ClientActivityParamsCopyWith<$Res>(_value.params, (value) {
       return _then(_value.copyWith(params: value));
     });
@@ -109,7 +117,7 @@ abstract class _$ClientActivityCopyWith<$Res> implements $ClientActivityCopyWith
   $Res call(
       {@JsonKey(name: 'params') ClientActivityParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   @override
   $ClientActivityParamsCopyWith<$Res> get params;
@@ -126,30 +134,36 @@ class __$ClientActivityCopyWithImpl<$Res> extends _$ClientActivityCopyWithImpl<$
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ClientActivity(
-      params: params == freezed ? _value.params : params as ClientActivityParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ClientActivityParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ClientActivity implements _ClientActivity {
   const _$_ClientActivity(
-      {@required @JsonKey(name: 'params') this.params,
-      @required @JsonKey(name: 'event') this.name,
-      @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(params != null),
-        assert(name != null);
+      {@JsonKey(name: 'params') required this.params,
+      @JsonKey(name: 'event') required this.name,
+      @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ClientActivity.fromJson(Map<String, dynamic> json) => _$_$_ClientActivityFromJson(json);
+  factory _$_ClientActivity.fromJson(Map<String, dynamic> json) => _$$_ClientActivityFromJson(json);
 
   @override
 
@@ -165,7 +179,7 @@ class _$_ClientActivity implements _ClientActivity {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -196,15 +210,15 @@ class _$_ClientActivity implements _ClientActivity {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ClientActivityToJson(this);
+    return _$$_ClientActivityToJson(this);
   }
 }
 
 abstract class _ClientActivity implements ClientActivity {
   const factory _ClientActivity(
-      {@required @JsonKey(name: 'params') ClientActivityParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) = _$_ClientActivity;
+      {@JsonKey(name: 'params') required ClientActivityParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ClientActivity;
 
   factory _ClientActivity.fromJson(Map<String, dynamic> json) = _$_ClientActivity.fromJson;
 
@@ -212,18 +226,18 @@ abstract class _ClientActivity implements ClientActivity {
 
   /// .
   @JsonKey(name: 'params')
-  ClientActivityParams get params;
+  ClientActivityParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ClientActivityCopyWith<_ClientActivity> get copyWith;
+  _$ClientActivityCopyWith<_ClientActivity> get copyWith => throw _privateConstructorUsedError;
 }

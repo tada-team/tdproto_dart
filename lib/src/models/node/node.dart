@@ -6,16 +6,16 @@ part 'node.g.dart';
 
 /// Node (for external users).
 @freezed
-abstract class Node with _$Node {
+class Node with _$Node {
   const factory Node({
     /// Node uid.
-    @JsonKey(name: 'uid') @required String uid,
+    @JsonKey(name: 'uid') required String uid,
 
     /// Node title.
-    @JsonKey(name: 'title') @required String title,
+    @JsonKey(name: 'title') required String title,
 
     /// Synchronization with node works.
-    @JsonKey(name: 'enabled') @required bool enabled,
+    @Default(false) @JsonKey(name: 'enabled') required bool enabled,
   }) = _Node;
 
   factory Node.fromJson(Map<String, dynamic> json) => _$NodeFromJson(json);

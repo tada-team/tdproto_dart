@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_call_answer_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_call_answer_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerCallAnswerParams _$ServerCallAnswerParamsFromJson(Map<String, dynamic> json) {
   return _ServerCallAnswerParams.fromJson(json);
 }
@@ -16,13 +21,12 @@ ServerCallAnswerParams _$ServerCallAnswerParamsFromJson(Map<String, dynamic> jso
 class _$ServerCallAnswerParamsTearOff {
   const _$ServerCallAnswerParamsTearOff();
 
-// ignore: unused_element
   _ServerCallAnswerParams call(
-      {@required @JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'candidates') List<ServerCallAnswerCandidate> candidates,
-      @JsonKey(name: 'onliners') List<CallOnliner> onliners,
-      @required @JsonKey(name: 'jsep') JSEP jsep,
-      @required @JsonKey(name: 'uid') String uid}) {
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'candidates') List<ServerCallAnswerCandidate>? candidates,
+      @JsonKey(name: 'onliners') List<CallOnliner>? onliners,
+      @JsonKey(name: 'jsep') required JSEP jsep,
+      @JsonKey(name: 'uid') required String uid}) {
     return _ServerCallAnswerParams(
       jid: jid,
       candidates: candidates,
@@ -32,41 +36,39 @@ class _$ServerCallAnswerParamsTearOff {
     );
   }
 
-// ignore: unused_element
   ServerCallAnswerParams fromJson(Map<String, Object> json) {
     return ServerCallAnswerParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerCallAnswerParams = _$ServerCallAnswerParamsTearOff();
 
 /// @nodoc
 mixin _$ServerCallAnswerParams {
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
   /// List of ICE candidates (when trickle = false).
   @JsonKey(name: 'candidates')
-  List<ServerCallAnswerCandidate> get candidates;
+  List<ServerCallAnswerCandidate>? get candidates => throw _privateConstructorUsedError;
 
   /// Current call participants.
   @JsonKey(name: 'onliners')
-  List<CallOnliner> get onliners;
+  List<CallOnliner>? get onliners => throw _privateConstructorUsedError;
 
   /// SDP data.
   @JsonKey(name: 'jsep')
-  JSEP get jsep;
+  JSEP get jsep => throw _privateConstructorUsedError;
 
   /// Call id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerCallAnswerParamsCopyWith<ServerCallAnswerParams> get copyWith;
+  $ServerCallAnswerParamsCopyWith<ServerCallAnswerParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -75,8 +77,8 @@ abstract class $ServerCallAnswerParamsCopyWith<$Res> {
       _$ServerCallAnswerParamsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'candidates') List<ServerCallAnswerCandidate> candidates,
-      @JsonKey(name: 'onliners') List<CallOnliner> onliners,
+      @JsonKey(name: 'candidates') List<ServerCallAnswerCandidate>? candidates,
+      @JsonKey(name: 'onliners') List<CallOnliner>? onliners,
       @JsonKey(name: 'jsep') JSEP jsep,
       @JsonKey(name: 'uid') String uid});
 
@@ -93,26 +95,38 @@ class _$ServerCallAnswerParamsCopyWithImpl<$Res> implements $ServerCallAnswerPar
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object candidates = freezed,
-    Object onliners = freezed,
-    Object jsep = freezed,
-    Object uid = freezed,
+    Object? jid = freezed,
+    Object? candidates = freezed,
+    Object? onliners = freezed,
+    Object? jsep = freezed,
+    Object? uid = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
-      candidates: candidates == freezed ? _value.candidates : candidates as List<ServerCallAnswerCandidate>,
-      onliners: onliners == freezed ? _value.onliners : onliners as List<CallOnliner>,
-      jsep: jsep == freezed ? _value.jsep : jsep as JSEP,
-      uid: uid == freezed ? _value.uid : uid as String,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      candidates: candidates == freezed
+          ? _value.candidates
+          : candidates // ignore: cast_nullable_to_non_nullable
+              as List<ServerCallAnswerCandidate>?,
+      onliners: onliners == freezed
+          ? _value.onliners
+          : onliners // ignore: cast_nullable_to_non_nullable
+              as List<CallOnliner>?,
+      jsep: jsep == freezed
+          ? _value.jsep
+          : jsep // ignore: cast_nullable_to_non_nullable
+              as JSEP,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 
   @override
   $JSEPCopyWith<$Res> get jsep {
-    if (_value.jsep == null) {
-      return null;
-    }
     return $JSEPCopyWith<$Res>(_value.jsep, (value) {
       return _then(_value.copyWith(jsep: value));
     });
@@ -126,8 +140,8 @@ abstract class _$ServerCallAnswerParamsCopyWith<$Res> implements $ServerCallAnsw
   @override
   $Res call(
       {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'candidates') List<ServerCallAnswerCandidate> candidates,
-      @JsonKey(name: 'onliners') List<CallOnliner> onliners,
+      @JsonKey(name: 'candidates') List<ServerCallAnswerCandidate>? candidates,
+      @JsonKey(name: 'onliners') List<CallOnliner>? onliners,
       @JsonKey(name: 'jsep') JSEP jsep,
       @JsonKey(name: 'uid') String uid});
 
@@ -146,37 +160,48 @@ class __$ServerCallAnswerParamsCopyWithImpl<$Res> extends _$ServerCallAnswerPara
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object candidates = freezed,
-    Object onliners = freezed,
-    Object jsep = freezed,
-    Object uid = freezed,
+    Object? jid = freezed,
+    Object? candidates = freezed,
+    Object? onliners = freezed,
+    Object? jsep = freezed,
+    Object? uid = freezed,
   }) {
     return _then(_ServerCallAnswerParams(
-      jid: jid == freezed ? _value.jid : jid as String,
-      candidates: candidates == freezed ? _value.candidates : candidates as List<ServerCallAnswerCandidate>,
-      onliners: onliners == freezed ? _value.onliners : onliners as List<CallOnliner>,
-      jsep: jsep == freezed ? _value.jsep : jsep as JSEP,
-      uid: uid == freezed ? _value.uid : uid as String,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      candidates: candidates == freezed
+          ? _value.candidates
+          : candidates // ignore: cast_nullable_to_non_nullable
+              as List<ServerCallAnswerCandidate>?,
+      onliners: onliners == freezed
+          ? _value.onliners
+          : onliners // ignore: cast_nullable_to_non_nullable
+              as List<CallOnliner>?,
+      jsep: jsep == freezed
+          ? _value.jsep
+          : jsep // ignore: cast_nullable_to_non_nullable
+              as JSEP,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerCallAnswerParams implements _ServerCallAnswerParams {
   const _$_ServerCallAnswerParams(
-      {@required @JsonKey(name: 'jid') this.jid,
+      {@JsonKey(name: 'jid') required this.jid,
       @JsonKey(name: 'candidates') this.candidates,
       @JsonKey(name: 'onliners') this.onliners,
-      @required @JsonKey(name: 'jsep') this.jsep,
-      @required @JsonKey(name: 'uid') this.uid})
-      : assert(jid != null),
-        assert(jsep != null),
-        assert(uid != null);
+      @JsonKey(name: 'jsep') required this.jsep,
+      @JsonKey(name: 'uid') required this.uid});
 
-  factory _$_ServerCallAnswerParams.fromJson(Map<String, dynamic> json) => _$_$_ServerCallAnswerParamsFromJson(json);
+  factory _$_ServerCallAnswerParams.fromJson(Map<String, dynamic> json) => _$$_ServerCallAnswerParamsFromJson(json);
 
   @override
 
@@ -187,12 +212,12 @@ class _$_ServerCallAnswerParams implements _ServerCallAnswerParams {
 
   /// List of ICE candidates (when trickle = false).
   @JsonKey(name: 'candidates')
-  final List<ServerCallAnswerCandidate> candidates;
+  final List<ServerCallAnswerCandidate>? candidates;
   @override
 
   /// Current call participants.
   @JsonKey(name: 'onliners')
-  final List<CallOnliner> onliners;
+  final List<CallOnliner>? onliners;
   @override
 
   /// SDP data.
@@ -237,17 +262,17 @@ class _$_ServerCallAnswerParams implements _ServerCallAnswerParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerCallAnswerParamsToJson(this);
+    return _$$_ServerCallAnswerParamsToJson(this);
   }
 }
 
 abstract class _ServerCallAnswerParams implements ServerCallAnswerParams {
   const factory _ServerCallAnswerParams(
-      {@required @JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'candidates') List<ServerCallAnswerCandidate> candidates,
-      @JsonKey(name: 'onliners') List<CallOnliner> onliners,
-      @required @JsonKey(name: 'jsep') JSEP jsep,
-      @required @JsonKey(name: 'uid') String uid}) = _$_ServerCallAnswerParams;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'candidates') List<ServerCallAnswerCandidate>? candidates,
+      @JsonKey(name: 'onliners') List<CallOnliner>? onliners,
+      @JsonKey(name: 'jsep') required JSEP jsep,
+      @JsonKey(name: 'uid') required String uid}) = _$_ServerCallAnswerParams;
 
   factory _ServerCallAnswerParams.fromJson(Map<String, dynamic> json) = _$_ServerCallAnswerParams.fromJson;
 
@@ -255,28 +280,28 @@ abstract class _ServerCallAnswerParams implements ServerCallAnswerParams {
 
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// List of ICE candidates (when trickle = false).
   @JsonKey(name: 'candidates')
-  List<ServerCallAnswerCandidate> get candidates;
+  List<ServerCallAnswerCandidate>? get candidates => throw _privateConstructorUsedError;
   @override
 
   /// Current call participants.
   @JsonKey(name: 'onliners')
-  List<CallOnliner> get onliners;
+  List<CallOnliner>? get onliners => throw _privateConstructorUsedError;
   @override
 
   /// SDP data.
   @JsonKey(name: 'jsep')
-  JSEP get jsep;
+  JSEP get jsep => throw _privateConstructorUsedError;
   @override
 
   /// Call id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerCallAnswerParamsCopyWith<_ServerCallAnswerParams> get copyWith;
+  _$ServerCallAnswerParamsCopyWith<_ServerCallAnswerParams> get copyWith => throw _privateConstructorUsedError;
 }

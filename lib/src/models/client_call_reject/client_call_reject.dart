@@ -6,16 +6,16 @@ part 'client_call_reject.g.dart';
 
 /// Reject the call.
 @freezed
-abstract class ClientCallReject with _$ClientCallReject {
+class ClientCallReject with _$ClientCallReject {
   const factory ClientCallReject({
     /// .
-    @JsonKey(name: 'params') @required ClientCallRejectParams params,
+    @JsonKey(name: 'params') required ClientCallRejectParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ClientCallReject;
 
   factory ClientCallReject.fromJson(Map<String, dynamic> json) => _$ClientCallRejectFromJson(json);

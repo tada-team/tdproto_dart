@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'unread.dart';
 
@@ -8,6 +9,10 @@ part of 'unread.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Unread _$UnreadFromJson(Map<String, dynamic> json) {
   return _Unread.fromJson(json);
 }
@@ -16,11 +21,10 @@ Unread _$UnreadFromJson(Map<String, dynamic> json) {
 class _$UnreadTearOff {
   const _$UnreadTearOff();
 
-// ignore: unused_element
   _Unread call(
-      {@required @JsonKey(name: 'messages') int numMessages,
-      @required @JsonKey(name: 'notice_messages') int numNoticeMessages,
-      @required @JsonKey(name: 'chats') int numChats}) {
+      {@JsonKey(name: 'messages') required int numMessages,
+      @JsonKey(name: 'notice_messages') required int numNoticeMessages,
+      @JsonKey(name: 'chats') required int numChats}) {
     return _Unread(
       numMessages: numMessages,
       numNoticeMessages: numNoticeMessages,
@@ -28,33 +32,31 @@ class _$UnreadTearOff {
     );
   }
 
-// ignore: unused_element
   Unread fromJson(Map<String, Object> json) {
     return Unread.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Unread = _$UnreadTearOff();
 
 /// @nodoc
 mixin _$Unread {
   /// Total unread messages.
   @JsonKey(name: 'messages')
-  int get numMessages;
+  int get numMessages => throw _privateConstructorUsedError;
 
   /// Total unread messages with mentions.
   @JsonKey(name: 'notice_messages')
-  int get numNoticeMessages;
+  int get numNoticeMessages => throw _privateConstructorUsedError;
 
   /// Total chats with unread messages.
   @JsonKey(name: 'chats')
-  int get numChats;
+  int get numChats => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $UnreadCopyWith<Unread> get copyWith;
+  $UnreadCopyWith<Unread> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -76,14 +78,23 @@ class _$UnreadCopyWithImpl<$Res> implements $UnreadCopyWith<$Res> {
 
   @override
   $Res call({
-    Object numMessages = freezed,
-    Object numNoticeMessages = freezed,
-    Object numChats = freezed,
+    Object? numMessages = freezed,
+    Object? numNoticeMessages = freezed,
+    Object? numChats = freezed,
   }) {
     return _then(_value.copyWith(
-      numMessages: numMessages == freezed ? _value.numMessages : numMessages as int,
-      numNoticeMessages: numNoticeMessages == freezed ? _value.numNoticeMessages : numNoticeMessages as int,
-      numChats: numChats == freezed ? _value.numChats : numChats as int,
+      numMessages: numMessages == freezed
+          ? _value.numMessages
+          : numMessages // ignore: cast_nullable_to_non_nullable
+              as int,
+      numNoticeMessages: numNoticeMessages == freezed
+          ? _value.numNoticeMessages
+          : numNoticeMessages // ignore: cast_nullable_to_non_nullable
+              as int,
+      numChats: numChats == freezed
+          ? _value.numChats
+          : numChats // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -107,31 +118,36 @@ class __$UnreadCopyWithImpl<$Res> extends _$UnreadCopyWithImpl<$Res> implements 
 
   @override
   $Res call({
-    Object numMessages = freezed,
-    Object numNoticeMessages = freezed,
-    Object numChats = freezed,
+    Object? numMessages = freezed,
+    Object? numNoticeMessages = freezed,
+    Object? numChats = freezed,
   }) {
     return _then(_Unread(
-      numMessages: numMessages == freezed ? _value.numMessages : numMessages as int,
-      numNoticeMessages: numNoticeMessages == freezed ? _value.numNoticeMessages : numNoticeMessages as int,
-      numChats: numChats == freezed ? _value.numChats : numChats as int,
+      numMessages: numMessages == freezed
+          ? _value.numMessages
+          : numMessages // ignore: cast_nullable_to_non_nullable
+              as int,
+      numNoticeMessages: numNoticeMessages == freezed
+          ? _value.numNoticeMessages
+          : numNoticeMessages // ignore: cast_nullable_to_non_nullable
+              as int,
+      numChats: numChats == freezed
+          ? _value.numChats
+          : numChats // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Unread implements _Unread {
   const _$_Unread(
-      {@required @JsonKey(name: 'messages') this.numMessages,
-      @required @JsonKey(name: 'notice_messages') this.numNoticeMessages,
-      @required @JsonKey(name: 'chats') this.numChats})
-      : assert(numMessages != null),
-        assert(numNoticeMessages != null),
-        assert(numChats != null);
+      {@JsonKey(name: 'messages') required this.numMessages,
+      @JsonKey(name: 'notice_messages') required this.numNoticeMessages,
+      @JsonKey(name: 'chats') required this.numChats});
 
-  factory _$_Unread.fromJson(Map<String, dynamic> json) => _$_$_UnreadFromJson(json);
+  factory _$_Unread.fromJson(Map<String, dynamic> json) => _$$_UnreadFromJson(json);
 
   @override
 
@@ -178,15 +194,15 @@ class _$_Unread implements _Unread {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_UnreadToJson(this);
+    return _$$_UnreadToJson(this);
   }
 }
 
 abstract class _Unread implements Unread {
   const factory _Unread(
-      {@required @JsonKey(name: 'messages') int numMessages,
-      @required @JsonKey(name: 'notice_messages') int numNoticeMessages,
-      @required @JsonKey(name: 'chats') int numChats}) = _$_Unread;
+      {@JsonKey(name: 'messages') required int numMessages,
+      @JsonKey(name: 'notice_messages') required int numNoticeMessages,
+      @JsonKey(name: 'chats') required int numChats}) = _$_Unread;
 
   factory _Unread.fromJson(Map<String, dynamic> json) = _$_Unread.fromJson;
 
@@ -194,18 +210,18 @@ abstract class _Unread implements Unread {
 
   /// Total unread messages.
   @JsonKey(name: 'messages')
-  int get numMessages;
+  int get numMessages => throw _privateConstructorUsedError;
   @override
 
   /// Total unread messages with mentions.
   @JsonKey(name: 'notice_messages')
-  int get numNoticeMessages;
+  int get numNoticeMessages => throw _privateConstructorUsedError;
   @override
 
   /// Total chats with unread messages.
   @JsonKey(name: 'chats')
-  int get numChats;
+  int get numChats => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$UnreadCopyWith<_Unread> get copyWith;
+  _$UnreadCopyWith<_Unread> get copyWith => throw _privateConstructorUsedError;
 }

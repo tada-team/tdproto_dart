@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_ui_settings_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_ui_settings_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerUiSettingsParams _$ServerUiSettingsParamsFromJson(Map<String, dynamic> json) {
   return _ServerUiSettingsParams.fromJson(json);
 }
@@ -16,38 +21,35 @@ ServerUiSettingsParams _$ServerUiSettingsParamsFromJson(Map<String, dynamic> jso
 class _$ServerUiSettingsParamsTearOff {
   const _$ServerUiSettingsParamsTearOff();
 
-// ignore: unused_element
   _ServerUiSettingsParams call(
-      {@required @JsonKey(name: 'namespace') String namespace, @required @JsonKey(name: 'data') UiSettingsData data}) {
+      {@JsonKey(name: 'namespace') required String namespace, @JsonKey(name: 'data') required UiSettingsData data}) {
     return _ServerUiSettingsParams(
       namespace: namespace,
       data: data,
     );
   }
 
-// ignore: unused_element
   ServerUiSettingsParams fromJson(Map<String, Object> json) {
     return ServerUiSettingsParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerUiSettingsParams = _$ServerUiSettingsParamsTearOff();
 
 /// @nodoc
 mixin _$ServerUiSettingsParams {
   /// Namespace. For example: web, app.
   @JsonKey(name: 'namespace')
-  String get namespace;
+  String get namespace => throw _privateConstructorUsedError;
 
   /// UiSettingsData.
   @JsonKey(name: 'data')
-  UiSettingsData get data;
+  UiSettingsData get data => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerUiSettingsParamsCopyWith<ServerUiSettingsParams> get copyWith;
+  $ServerUiSettingsParamsCopyWith<ServerUiSettingsParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -67,12 +69,18 @@ class _$ServerUiSettingsParamsCopyWithImpl<$Res> implements $ServerUiSettingsPar
 
   @override
   $Res call({
-    Object namespace = freezed,
-    Object data = freezed,
+    Object? namespace = freezed,
+    Object? data = freezed,
   }) {
     return _then(_value.copyWith(
-      namespace: namespace == freezed ? _value.namespace : namespace as String,
-      data: data == freezed ? _value.data : data as UiSettingsData,
+      namespace: namespace == freezed
+          ? _value.namespace
+          : namespace // ignore: cast_nullable_to_non_nullable
+              as String,
+      data: data == freezed
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as UiSettingsData,
     ));
   }
 }
@@ -96,26 +104,29 @@ class __$ServerUiSettingsParamsCopyWithImpl<$Res> extends _$ServerUiSettingsPara
 
   @override
   $Res call({
-    Object namespace = freezed,
-    Object data = freezed,
+    Object? namespace = freezed,
+    Object? data = freezed,
   }) {
     return _then(_ServerUiSettingsParams(
-      namespace: namespace == freezed ? _value.namespace : namespace as String,
-      data: data == freezed ? _value.data : data as UiSettingsData,
+      namespace: namespace == freezed
+          ? _value.namespace
+          : namespace // ignore: cast_nullable_to_non_nullable
+              as String,
+      data: data == freezed
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as UiSettingsData,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerUiSettingsParams implements _ServerUiSettingsParams {
   const _$_ServerUiSettingsParams(
-      {@required @JsonKey(name: 'namespace') this.namespace, @required @JsonKey(name: 'data') this.data})
-      : assert(namespace != null),
-        assert(data != null);
+      {@JsonKey(name: 'namespace') required this.namespace, @JsonKey(name: 'data') required this.data});
 
-  factory _$_ServerUiSettingsParams.fromJson(Map<String, dynamic> json) => _$_$_ServerUiSettingsParamsFromJson(json);
+  factory _$_ServerUiSettingsParams.fromJson(Map<String, dynamic> json) => _$$_ServerUiSettingsParamsFromJson(json);
 
   @override
 
@@ -153,14 +164,14 @@ class _$_ServerUiSettingsParams implements _ServerUiSettingsParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerUiSettingsParamsToJson(this);
+    return _$$_ServerUiSettingsParamsToJson(this);
   }
 }
 
 abstract class _ServerUiSettingsParams implements ServerUiSettingsParams {
   const factory _ServerUiSettingsParams(
-      {@required @JsonKey(name: 'namespace') String namespace,
-      @required @JsonKey(name: 'data') UiSettingsData data}) = _$_ServerUiSettingsParams;
+      {@JsonKey(name: 'namespace') required String namespace,
+      @JsonKey(name: 'data') required UiSettingsData data}) = _$_ServerUiSettingsParams;
 
   factory _ServerUiSettingsParams.fromJson(Map<String, dynamic> json) = _$_ServerUiSettingsParams.fromJson;
 
@@ -168,13 +179,13 @@ abstract class _ServerUiSettingsParams implements ServerUiSettingsParams {
 
   /// Namespace. For example: web, app.
   @JsonKey(name: 'namespace')
-  String get namespace;
+  String get namespace => throw _privateConstructorUsedError;
   @override
 
   /// UiSettingsData.
   @JsonKey(name: 'data')
-  UiSettingsData get data;
+  UiSettingsData get data => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerUiSettingsParamsCopyWith<_ServerUiSettingsParams> get copyWith;
+  _$ServerUiSettingsParamsCopyWith<_ServerUiSettingsParams> get copyWith => throw _privateConstructorUsedError;
 }

@@ -6,10 +6,10 @@ part 'server_team_updated_params.g.dart';
 
 /// Params of the server.team.updated event.
 @freezed
-abstract class ServerTeamUpdatedParams with _$ServerTeamUpdatedParams {
+class ServerTeamUpdatedParams with _$ServerTeamUpdatedParams {
   const factory ServerTeamUpdatedParams({
     /// .
-    @JsonKey(name: 'teams') @required List<Team> teams,
+    @JsonKey(name: 'teams') required List<Team> teams,
   }) = _ServerTeamUpdatedParams;
 
   factory ServerTeamUpdatedParams.fromJson(Map<String, dynamic> json) => _$ServerTeamUpdatedParamsFromJson(json);

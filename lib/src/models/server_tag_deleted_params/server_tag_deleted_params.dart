@@ -6,10 +6,10 @@ part 'server_tag_deleted_params.g.dart';
 
 /// Params of the server.tag.deleted event.
 @freezed
-abstract class ServerTagDeletedParams with _$ServerTagDeletedParams {
+class ServerTagDeletedParams with _$ServerTagDeletedParams {
   const factory ServerTagDeletedParams({
     /// Tags info.
-    @JsonKey(name: 'tags') @required List<DeletedTag> tags,
+    @JsonKey(name: 'tags') required List<DeletedTag> tags,
   }) = _ServerTagDeletedParams;
 
   factory ServerTagDeletedParams.fromJson(Map<String, dynamic> json) => _$ServerTagDeletedParamsFromJson(json);

@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'task_color.dart';
 
@@ -8,6 +9,10 @@ part of 'task_color.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 TaskColor _$TaskColorFromJson(Map<String, dynamic> json) {
   return _TaskColor.fromJson(json);
 }
@@ -16,11 +21,10 @@ TaskColor _$TaskColorFromJson(Map<String, dynamic> json) {
 class _$TaskColorTearOff {
   const _$TaskColorTearOff();
 
-// ignore: unused_element
   _TaskColor call(
-      {@required @JsonKey(name: 'regular') String regular,
-      @required @JsonKey(name: 'dark') String dark,
-      @required @JsonKey(name: 'light') String light}) {
+      {@JsonKey(name: 'regular') required String regular,
+      @JsonKey(name: 'dark') required String dark,
+      @JsonKey(name: 'light') required String light}) {
     return _TaskColor(
       regular: regular,
       dark: dark,
@@ -28,33 +32,31 @@ class _$TaskColorTearOff {
     );
   }
 
-// ignore: unused_element
   TaskColor fromJson(Map<String, Object> json) {
     return TaskColor.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $TaskColor = _$TaskColorTearOff();
 
 /// @nodoc
 mixin _$TaskColor {
   /// Regular color.
   @JsonKey(name: 'regular')
-  String get regular;
+  String get regular => throw _privateConstructorUsedError;
 
   /// Dark color.
   @JsonKey(name: 'dark')
-  String get dark;
+  String get dark => throw _privateConstructorUsedError;
 
   /// Light color.
   @JsonKey(name: 'light')
-  String get light;
+  String get light => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $TaskColorCopyWith<TaskColor> get copyWith;
+  $TaskColorCopyWith<TaskColor> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -76,14 +78,23 @@ class _$TaskColorCopyWithImpl<$Res> implements $TaskColorCopyWith<$Res> {
 
   @override
   $Res call({
-    Object regular = freezed,
-    Object dark = freezed,
-    Object light = freezed,
+    Object? regular = freezed,
+    Object? dark = freezed,
+    Object? light = freezed,
   }) {
     return _then(_value.copyWith(
-      regular: regular == freezed ? _value.regular : regular as String,
-      dark: dark == freezed ? _value.dark : dark as String,
-      light: light == freezed ? _value.light : light as String,
+      regular: regular == freezed
+          ? _value.regular
+          : regular // ignore: cast_nullable_to_non_nullable
+              as String,
+      dark: dark == freezed
+          ? _value.dark
+          : dark // ignore: cast_nullable_to_non_nullable
+              as String,
+      light: light == freezed
+          ? _value.light
+          : light // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -108,31 +119,36 @@ class __$TaskColorCopyWithImpl<$Res> extends _$TaskColorCopyWithImpl<$Res> imple
 
   @override
   $Res call({
-    Object regular = freezed,
-    Object dark = freezed,
-    Object light = freezed,
+    Object? regular = freezed,
+    Object? dark = freezed,
+    Object? light = freezed,
   }) {
     return _then(_TaskColor(
-      regular: regular == freezed ? _value.regular : regular as String,
-      dark: dark == freezed ? _value.dark : dark as String,
-      light: light == freezed ? _value.light : light as String,
+      regular: regular == freezed
+          ? _value.regular
+          : regular // ignore: cast_nullable_to_non_nullable
+              as String,
+      dark: dark == freezed
+          ? _value.dark
+          : dark // ignore: cast_nullable_to_non_nullable
+              as String,
+      light: light == freezed
+          ? _value.light
+          : light // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_TaskColor implements _TaskColor {
   const _$_TaskColor(
-      {@required @JsonKey(name: 'regular') this.regular,
-      @required @JsonKey(name: 'dark') this.dark,
-      @required @JsonKey(name: 'light') this.light})
-      : assert(regular != null),
-        assert(dark != null),
-        assert(light != null);
+      {@JsonKey(name: 'regular') required this.regular,
+      @JsonKey(name: 'dark') required this.dark,
+      @JsonKey(name: 'light') required this.light});
 
-  factory _$_TaskColor.fromJson(Map<String, dynamic> json) => _$_$_TaskColorFromJson(json);
+  factory _$_TaskColor.fromJson(Map<String, dynamic> json) => _$$_TaskColorFromJson(json);
 
   @override
 
@@ -177,15 +193,15 @@ class _$_TaskColor implements _TaskColor {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_TaskColorToJson(this);
+    return _$$_TaskColorToJson(this);
   }
 }
 
 abstract class _TaskColor implements TaskColor {
   const factory _TaskColor(
-      {@required @JsonKey(name: 'regular') String regular,
-      @required @JsonKey(name: 'dark') String dark,
-      @required @JsonKey(name: 'light') String light}) = _$_TaskColor;
+      {@JsonKey(name: 'regular') required String regular,
+      @JsonKey(name: 'dark') required String dark,
+      @JsonKey(name: 'light') required String light}) = _$_TaskColor;
 
   factory _TaskColor.fromJson(Map<String, dynamic> json) = _$_TaskColor.fromJson;
 
@@ -193,18 +209,18 @@ abstract class _TaskColor implements TaskColor {
 
   /// Regular color.
   @JsonKey(name: 'regular')
-  String get regular;
+  String get regular => throw _privateConstructorUsedError;
   @override
 
   /// Dark color.
   @JsonKey(name: 'dark')
-  String get dark;
+  String get dark => throw _privateConstructorUsedError;
   @override
 
   /// Light color.
   @JsonKey(name: 'light')
-  String get light;
+  String get light => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TaskColorCopyWith<_TaskColor> get copyWith;
+  _$TaskColorCopyWith<_TaskColor> get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'easy_api_message.dart';
 
@@ -8,6 +9,10 @@ part of 'easy_api_message.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 EasyApiMessage _$EasyApiMessageFromJson(Map<String, dynamic> json) {
   return _EasyApiMessage.fromJson(json);
 }
@@ -16,15 +21,14 @@ EasyApiMessage _$EasyApiMessageFromJson(Map<String, dynamic> json) {
 class _$EasyApiMessageTearOff {
   const _$EasyApiMessageTearOff();
 
-// ignore: unused_element
   _EasyApiMessage call(
-      {@required @JsonKey(name: 'key') String key,
-      @required @JsonKey(name: 'message') String text,
-      @required @JsonKey(name: 'message_id') String messageUid,
-      @required @JsonKey(name: 'nopreview') bool nopreview,
-      @required @JsonKey(name: 'important') bool important,
-      @required @JsonKey(name: 'silently') bool silently,
-      @required @JsonKey(name: 'convert_linebreaks') bool convertLinebreaks}) {
+      {@JsonKey(name: 'key') required String key,
+      @JsonKey(name: 'message') required String text,
+      @JsonKey(name: 'message_id') required String messageUid,
+      @JsonKey(name: 'nopreview') required bool nopreview = false,
+      @JsonKey(name: 'important') required bool important = false,
+      @JsonKey(name: 'silently') required bool silently = false,
+      @JsonKey(name: 'convert_linebreaks') required bool convertLinebreaks = false}) {
     return _EasyApiMessage(
       key: key,
       text: text,
@@ -36,49 +40,47 @@ class _$EasyApiMessageTearOff {
     );
   }
 
-// ignore: unused_element
   EasyApiMessage fromJson(Map<String, Object> json) {
     return EasyApiMessage.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $EasyApiMessage = _$EasyApiMessageTearOff();
 
 /// @nodoc
 mixin _$EasyApiMessage {
   /// Comma separated api keys (for /api/message calls only).
   @JsonKey(name: 'key')
-  String get key;
+  String get key => throw _privateConstructorUsedError;
 
   /// Message text. Required.
   @JsonKey(name: 'message')
-  String get text;
+  String get text => throw _privateConstructorUsedError;
 
   /// Message uuid. Optional.
   @JsonKey(name: 'message_id')
-  String get messageUid;
+  String get messageUid => throw _privateConstructorUsedError;
 
   /// Disable links preview.
   @JsonKey(name: 'nopreview')
-  bool get nopreview;
+  bool get nopreview => throw _privateConstructorUsedError;
 
   /// Mark message as important.
   @JsonKey(name: 'important')
-  bool get important;
+  bool get important => throw _privateConstructorUsedError;
 
   /// Disable counters and push notifications.
   @JsonKey(name: 'silently')
-  bool get silently;
+  bool get silently => throw _privateConstructorUsedError;
 
   /// Convert "\\n" to "\n".
   @JsonKey(name: 'convert_linebreaks')
-  bool get convertLinebreaks;
+  bool get convertLinebreaks => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $EasyApiMessageCopyWith<EasyApiMessage> get copyWith;
+  $EasyApiMessageCopyWith<EasyApiMessage> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -105,22 +107,43 @@ class _$EasyApiMessageCopyWithImpl<$Res> implements $EasyApiMessageCopyWith<$Res
 
   @override
   $Res call({
-    Object key = freezed,
-    Object text = freezed,
-    Object messageUid = freezed,
-    Object nopreview = freezed,
-    Object important = freezed,
-    Object silently = freezed,
-    Object convertLinebreaks = freezed,
+    Object? key = freezed,
+    Object? text = freezed,
+    Object? messageUid = freezed,
+    Object? nopreview = freezed,
+    Object? important = freezed,
+    Object? silently = freezed,
+    Object? convertLinebreaks = freezed,
   }) {
     return _then(_value.copyWith(
-      key: key == freezed ? _value.key : key as String,
-      text: text == freezed ? _value.text : text as String,
-      messageUid: messageUid == freezed ? _value.messageUid : messageUid as String,
-      nopreview: nopreview == freezed ? _value.nopreview : nopreview as bool,
-      important: important == freezed ? _value.important : important as bool,
-      silently: silently == freezed ? _value.silently : silently as bool,
-      convertLinebreaks: convertLinebreaks == freezed ? _value.convertLinebreaks : convertLinebreaks as bool,
+      key: key == freezed
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String,
+      text: text == freezed
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String,
+      messageUid: messageUid == freezed
+          ? _value.messageUid
+          : messageUid // ignore: cast_nullable_to_non_nullable
+              as String,
+      nopreview: nopreview == freezed
+          ? _value.nopreview
+          : nopreview // ignore: cast_nullable_to_non_nullable
+              as bool,
+      important: important == freezed
+          ? _value.important
+          : important // ignore: cast_nullable_to_non_nullable
+              as bool,
+      silently: silently == freezed
+          ? _value.silently
+          : silently // ignore: cast_nullable_to_non_nullable
+              as bool,
+      convertLinebreaks: convertLinebreaks == freezed
+          ? _value.convertLinebreaks
+          : convertLinebreaks // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -151,47 +174,60 @@ class __$EasyApiMessageCopyWithImpl<$Res> extends _$EasyApiMessageCopyWithImpl<$
 
   @override
   $Res call({
-    Object key = freezed,
-    Object text = freezed,
-    Object messageUid = freezed,
-    Object nopreview = freezed,
-    Object important = freezed,
-    Object silently = freezed,
-    Object convertLinebreaks = freezed,
+    Object? key = freezed,
+    Object? text = freezed,
+    Object? messageUid = freezed,
+    Object? nopreview = freezed,
+    Object? important = freezed,
+    Object? silently = freezed,
+    Object? convertLinebreaks = freezed,
   }) {
     return _then(_EasyApiMessage(
-      key: key == freezed ? _value.key : key as String,
-      text: text == freezed ? _value.text : text as String,
-      messageUid: messageUid == freezed ? _value.messageUid : messageUid as String,
-      nopreview: nopreview == freezed ? _value.nopreview : nopreview as bool,
-      important: important == freezed ? _value.important : important as bool,
-      silently: silently == freezed ? _value.silently : silently as bool,
-      convertLinebreaks: convertLinebreaks == freezed ? _value.convertLinebreaks : convertLinebreaks as bool,
+      key: key == freezed
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String,
+      text: text == freezed
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String,
+      messageUid: messageUid == freezed
+          ? _value.messageUid
+          : messageUid // ignore: cast_nullable_to_non_nullable
+              as String,
+      nopreview: nopreview == freezed
+          ? _value.nopreview
+          : nopreview // ignore: cast_nullable_to_non_nullable
+              as bool,
+      important: important == freezed
+          ? _value.important
+          : important // ignore: cast_nullable_to_non_nullable
+              as bool,
+      silently: silently == freezed
+          ? _value.silently
+          : silently // ignore: cast_nullable_to_non_nullable
+              as bool,
+      convertLinebreaks: convertLinebreaks == freezed
+          ? _value.convertLinebreaks
+          : convertLinebreaks // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_EasyApiMessage implements _EasyApiMessage {
   const _$_EasyApiMessage(
-      {@required @JsonKey(name: 'key') this.key,
-      @required @JsonKey(name: 'message') this.text,
-      @required @JsonKey(name: 'message_id') this.messageUid,
-      @required @JsonKey(name: 'nopreview') this.nopreview,
-      @required @JsonKey(name: 'important') this.important,
-      @required @JsonKey(name: 'silently') this.silently,
-      @required @JsonKey(name: 'convert_linebreaks') this.convertLinebreaks})
-      : assert(key != null),
-        assert(text != null),
-        assert(messageUid != null),
-        assert(nopreview != null),
-        assert(important != null),
-        assert(silently != null),
-        assert(convertLinebreaks != null);
+      {@JsonKey(name: 'key') required this.key,
+      @JsonKey(name: 'message') required this.text,
+      @JsonKey(name: 'message_id') required this.messageUid,
+      @JsonKey(name: 'nopreview') required this.nopreview = false,
+      @JsonKey(name: 'important') required this.important = false,
+      @JsonKey(name: 'silently') required this.silently = false,
+      @JsonKey(name: 'convert_linebreaks') required this.convertLinebreaks = false});
 
-  factory _$_EasyApiMessage.fromJson(Map<String, dynamic> json) => _$_$_EasyApiMessageFromJson(json);
+  factory _$_EasyApiMessage.fromJson(Map<String, dynamic> json) => _$$_EasyApiMessageFromJson(json);
 
   @override
 
@@ -269,19 +305,19 @@ class _$_EasyApiMessage implements _EasyApiMessage {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_EasyApiMessageToJson(this);
+    return _$$_EasyApiMessageToJson(this);
   }
 }
 
 abstract class _EasyApiMessage implements EasyApiMessage {
   const factory _EasyApiMessage(
-      {@required @JsonKey(name: 'key') String key,
-      @required @JsonKey(name: 'message') String text,
-      @required @JsonKey(name: 'message_id') String messageUid,
-      @required @JsonKey(name: 'nopreview') bool nopreview,
-      @required @JsonKey(name: 'important') bool important,
-      @required @JsonKey(name: 'silently') bool silently,
-      @required @JsonKey(name: 'convert_linebreaks') bool convertLinebreaks}) = _$_EasyApiMessage;
+      {@JsonKey(name: 'key') required String key,
+      @JsonKey(name: 'message') required String text,
+      @JsonKey(name: 'message_id') required String messageUid,
+      @JsonKey(name: 'nopreview') required bool nopreview,
+      @JsonKey(name: 'important') required bool important,
+      @JsonKey(name: 'silently') required bool silently,
+      @JsonKey(name: 'convert_linebreaks') required bool convertLinebreaks}) = _$_EasyApiMessage;
 
   factory _EasyApiMessage.fromJson(Map<String, dynamic> json) = _$_EasyApiMessage.fromJson;
 
@@ -289,38 +325,38 @@ abstract class _EasyApiMessage implements EasyApiMessage {
 
   /// Comma separated api keys (for /api/message calls only).
   @JsonKey(name: 'key')
-  String get key;
+  String get key => throw _privateConstructorUsedError;
   @override
 
   /// Message text. Required.
   @JsonKey(name: 'message')
-  String get text;
+  String get text => throw _privateConstructorUsedError;
   @override
 
   /// Message uuid. Optional.
   @JsonKey(name: 'message_id')
-  String get messageUid;
+  String get messageUid => throw _privateConstructorUsedError;
   @override
 
   /// Disable links preview.
   @JsonKey(name: 'nopreview')
-  bool get nopreview;
+  bool get nopreview => throw _privateConstructorUsedError;
   @override
 
   /// Mark message as important.
   @JsonKey(name: 'important')
-  bool get important;
+  bool get important => throw _privateConstructorUsedError;
   @override
 
   /// Disable counters and push notifications.
   @JsonKey(name: 'silently')
-  bool get silently;
+  bool get silently => throw _privateConstructorUsedError;
   @override
 
   /// Convert "\\n" to "\n".
   @JsonKey(name: 'convert_linebreaks')
-  bool get convertLinebreaks;
+  bool get convertLinebreaks => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$EasyApiMessageCopyWith<_EasyApiMessage> get copyWith;
+  _$EasyApiMessageCopyWith<_EasyApiMessage> get copyWith => throw _privateConstructorUsedError;
 }

@@ -6,16 +6,16 @@ part 'server_call_buzzcancel.g.dart';
 
 /// Call cancelled on buzzing.
 @freezed
-abstract class ServerCallBuzzcancel with _$ServerCallBuzzcancel {
+class ServerCallBuzzcancel with _$ServerCallBuzzcancel {
   const factory ServerCallBuzzcancel({
     /// .
-    @JsonKey(name: 'params') @required ServerCallBuzzcancelParams params,
+    @JsonKey(name: 'params') required ServerCallBuzzcancelParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerCallBuzzcancel;
 
   factory ServerCallBuzzcancel.fromJson(Map<String, dynamic> json) => _$ServerCallBuzzcancelFromJson(json);

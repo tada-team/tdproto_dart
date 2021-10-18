@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_login_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_login_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerLoginParams _$ServerLoginParamsFromJson(Map<String, dynamic> json) {
   return _ServerLoginParams.fromJson(json);
 }
@@ -16,32 +21,29 @@ ServerLoginParams _$ServerLoginParamsFromJson(Map<String, dynamic> json) {
 class _$ServerLoginParamsTearOff {
   const _$ServerLoginParamsTearOff();
 
-// ignore: unused_element
-  _ServerLoginParams call({@required @JsonKey(name: 'device_name') String deviceName}) {
+  _ServerLoginParams call({@JsonKey(name: 'device_name') required String deviceName}) {
     return _ServerLoginParams(
       deviceName: deviceName,
     );
   }
 
-// ignore: unused_element
   ServerLoginParams fromJson(Map<String, Object> json) {
     return ServerLoginParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerLoginParams = _$ServerLoginParamsTearOff();
 
 /// @nodoc
 mixin _$ServerLoginParams {
   /// Device name.
   @JsonKey(name: 'device_name')
-  String get deviceName;
+  String get deviceName => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerLoginParamsCopyWith<ServerLoginParams> get copyWith;
+  $ServerLoginParamsCopyWith<ServerLoginParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -61,10 +63,13 @@ class _$ServerLoginParamsCopyWithImpl<$Res> implements $ServerLoginParamsCopyWit
 
   @override
   $Res call({
-    Object deviceName = freezed,
+    Object? deviceName = freezed,
   }) {
     return _then(_value.copyWith(
-      deviceName: deviceName == freezed ? _value.deviceName : deviceName as String,
+      deviceName: deviceName == freezed
+          ? _value.deviceName
+          : deviceName // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -88,21 +93,23 @@ class __$ServerLoginParamsCopyWithImpl<$Res> extends _$ServerLoginParamsCopyWith
 
   @override
   $Res call({
-    Object deviceName = freezed,
+    Object? deviceName = freezed,
   }) {
     return _then(_ServerLoginParams(
-      deviceName: deviceName == freezed ? _value.deviceName : deviceName as String,
+      deviceName: deviceName == freezed
+          ? _value.deviceName
+          : deviceName // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerLoginParams implements _ServerLoginParams {
-  const _$_ServerLoginParams({@required @JsonKey(name: 'device_name') this.deviceName}) : assert(deviceName != null);
+  const _$_ServerLoginParams({@JsonKey(name: 'device_name') required this.deviceName});
 
-  factory _$_ServerLoginParams.fromJson(Map<String, dynamic> json) => _$_$_ServerLoginParamsFromJson(json);
+  factory _$_ServerLoginParams.fromJson(Map<String, dynamic> json) => _$$_ServerLoginParamsFromJson(json);
 
   @override
 
@@ -133,12 +140,12 @@ class _$_ServerLoginParams implements _ServerLoginParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerLoginParamsToJson(this);
+    return _$$_ServerLoginParamsToJson(this);
   }
 }
 
 abstract class _ServerLoginParams implements ServerLoginParams {
-  const factory _ServerLoginParams({@required @JsonKey(name: 'device_name') String deviceName}) = _$_ServerLoginParams;
+  const factory _ServerLoginParams({@JsonKey(name: 'device_name') required String deviceName}) = _$_ServerLoginParams;
 
   factory _ServerLoginParams.fromJson(Map<String, dynamic> json) = _$_ServerLoginParams.fromJson;
 
@@ -146,8 +153,8 @@ abstract class _ServerLoginParams implements ServerLoginParams {
 
   /// Device name.
   @JsonKey(name: 'device_name')
-  String get deviceName;
+  String get deviceName => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerLoginParamsCopyWith<_ServerLoginParams> get copyWith;
+  _$ServerLoginParamsCopyWith<_ServerLoginParams> get copyWith => throw _privateConstructorUsedError;
 }

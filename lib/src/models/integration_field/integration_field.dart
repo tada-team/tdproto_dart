@@ -6,16 +6,16 @@ part 'integration_field.g.dart';
 
 /// Integration form field.
 @freezed
-abstract class IntegrationField with _$IntegrationField {
+class IntegrationField with _$IntegrationField {
   const factory IntegrationField({
     /// Label.
-    @JsonKey(name: 'label') @required String label,
+    @JsonKey(name: 'label') required String label,
 
     /// Is field readonly.
-    @JsonKey(name: 'readonly') @required bool readonly,
+    @Default(false) @JsonKey(name: 'readonly') required bool readonly,
 
     /// Current value.
-    @JsonKey(name: 'value') @required String value,
+    @JsonKey(name: 'value') required String value,
   }) = _IntegrationField;
 
   factory IntegrationField.fromJson(Map<String, dynamic> json) => _$IntegrationFieldFromJson(json);

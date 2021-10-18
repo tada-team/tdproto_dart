@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'paginated_contacts.dart';
 
@@ -8,6 +9,10 @@ part of 'paginated_contacts.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 PaginatedContacts _$PaginatedContactsFromJson(Map<String, dynamic> json) {
   return _PaginatedContacts.fromJson(json);
 }
@@ -16,12 +21,11 @@ PaginatedContacts _$PaginatedContactsFromJson(Map<String, dynamic> json) {
 class _$PaginatedContactsTearOff {
   const _$PaginatedContactsTearOff();
 
-// ignore: unused_element
   _PaginatedContacts call(
-      {@required @JsonKey(name: 'objects') List<Contact> objects,
-      @required @JsonKey(name: 'count') int count,
-      @required @JsonKey(name: 'limit') int limit,
-      @required @JsonKey(name: 'offset') int offset}) {
+      {@JsonKey(name: 'objects') required List<Contact> objects,
+      @JsonKey(name: 'count') required int count,
+      @JsonKey(name: 'limit') required int limit,
+      @JsonKey(name: 'offset') required int offset}) {
     return _PaginatedContacts(
       objects: objects,
       count: count,
@@ -30,37 +34,35 @@ class _$PaginatedContactsTearOff {
     );
   }
 
-// ignore: unused_element
   PaginatedContacts fromJson(Map<String, Object> json) {
     return PaginatedContacts.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $PaginatedContacts = _$PaginatedContactsTearOff();
 
 /// @nodoc
 mixin _$PaginatedContacts {
   /// .
   @JsonKey(name: 'objects')
-  List<Contact> get objects;
+  List<Contact> get objects => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'count')
-  int get count;
+  int get count => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'limit')
-  int get limit;
+  int get limit => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'offset')
-  int get offset;
+  int get offset => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $PaginatedContactsCopyWith<PaginatedContacts> get copyWith;
+  $PaginatedContactsCopyWith<PaginatedContacts> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -84,16 +86,28 @@ class _$PaginatedContactsCopyWithImpl<$Res> implements $PaginatedContactsCopyWit
 
   @override
   $Res call({
-    Object objects = freezed,
-    Object count = freezed,
-    Object limit = freezed,
-    Object offset = freezed,
+    Object? objects = freezed,
+    Object? count = freezed,
+    Object? limit = freezed,
+    Object? offset = freezed,
   }) {
     return _then(_value.copyWith(
-      objects: objects == freezed ? _value.objects : objects as List<Contact>,
-      count: count == freezed ? _value.count : count as int,
-      limit: limit == freezed ? _value.limit : limit as int,
-      offset: offset == freezed ? _value.offset : offset as int,
+      objects: objects == freezed
+          ? _value.objects
+          : objects // ignore: cast_nullable_to_non_nullable
+              as List<Contact>,
+      count: count == freezed
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as int,
+      limit: limit == freezed
+          ? _value.limit
+          : limit // ignore: cast_nullable_to_non_nullable
+              as int,
+      offset: offset == freezed
+          ? _value.offset
+          : offset // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -121,35 +135,42 @@ class __$PaginatedContactsCopyWithImpl<$Res> extends _$PaginatedContactsCopyWith
 
   @override
   $Res call({
-    Object objects = freezed,
-    Object count = freezed,
-    Object limit = freezed,
-    Object offset = freezed,
+    Object? objects = freezed,
+    Object? count = freezed,
+    Object? limit = freezed,
+    Object? offset = freezed,
   }) {
     return _then(_PaginatedContacts(
-      objects: objects == freezed ? _value.objects : objects as List<Contact>,
-      count: count == freezed ? _value.count : count as int,
-      limit: limit == freezed ? _value.limit : limit as int,
-      offset: offset == freezed ? _value.offset : offset as int,
+      objects: objects == freezed
+          ? _value.objects
+          : objects // ignore: cast_nullable_to_non_nullable
+              as List<Contact>,
+      count: count == freezed
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as int,
+      limit: limit == freezed
+          ? _value.limit
+          : limit // ignore: cast_nullable_to_non_nullable
+              as int,
+      offset: offset == freezed
+          ? _value.offset
+          : offset // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_PaginatedContacts implements _PaginatedContacts {
   const _$_PaginatedContacts(
-      {@required @JsonKey(name: 'objects') this.objects,
-      @required @JsonKey(name: 'count') this.count,
-      @required @JsonKey(name: 'limit') this.limit,
-      @required @JsonKey(name: 'offset') this.offset})
-      : assert(objects != null),
-        assert(count != null),
-        assert(limit != null),
-        assert(offset != null);
+      {@JsonKey(name: 'objects') required this.objects,
+      @JsonKey(name: 'count') required this.count,
+      @JsonKey(name: 'limit') required this.limit,
+      @JsonKey(name: 'offset') required this.offset});
 
-  factory _$_PaginatedContacts.fromJson(Map<String, dynamic> json) => _$_$_PaginatedContactsFromJson(json);
+  factory _$_PaginatedContacts.fromJson(Map<String, dynamic> json) => _$$_PaginatedContactsFromJson(json);
 
   @override
 
@@ -202,16 +223,16 @@ class _$_PaginatedContacts implements _PaginatedContacts {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_PaginatedContactsToJson(this);
+    return _$$_PaginatedContactsToJson(this);
   }
 }
 
 abstract class _PaginatedContacts implements PaginatedContacts {
   const factory _PaginatedContacts(
-      {@required @JsonKey(name: 'objects') List<Contact> objects,
-      @required @JsonKey(name: 'count') int count,
-      @required @JsonKey(name: 'limit') int limit,
-      @required @JsonKey(name: 'offset') int offset}) = _$_PaginatedContacts;
+      {@JsonKey(name: 'objects') required List<Contact> objects,
+      @JsonKey(name: 'count') required int count,
+      @JsonKey(name: 'limit') required int limit,
+      @JsonKey(name: 'offset') required int offset}) = _$_PaginatedContacts;
 
   factory _PaginatedContacts.fromJson(Map<String, dynamic> json) = _$_PaginatedContacts.fromJson;
 
@@ -219,23 +240,23 @@ abstract class _PaginatedContacts implements PaginatedContacts {
 
   /// .
   @JsonKey(name: 'objects')
-  List<Contact> get objects;
+  List<Contact> get objects => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'count')
-  int get count;
+  int get count => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'limit')
-  int get limit;
+  int get limit => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'offset')
-  int get offset;
+  int get offset => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$PaginatedContactsCopyWith<_PaginatedContacts> get copyWith;
+  _$PaginatedContactsCopyWith<_PaginatedContacts> get copyWith => throw _privateConstructorUsedError;
 }

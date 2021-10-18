@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_processing_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_processing_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerProcessingParams _$ServerProcessingParamsFromJson(Map<String, dynamic> json) {
   return _ServerProcessingParams.fromJson(json);
 }
@@ -16,13 +21,12 @@ ServerProcessingParams _$ServerProcessingParamsFromJson(Map<String, dynamic> jso
 class _$ServerProcessingParamsTearOff {
   const _$ServerProcessingParamsTearOff();
 
-// ignore: unused_element
   _ServerProcessingParams call(
-      {@required @JsonKey(name: 'action') String action,
-      @required @JsonKey(name: 'message') String message,
-      @required @JsonKey(name: 'has_error') bool hasError,
-      @required @JsonKey(name: 'num') int num,
-      @required @JsonKey(name: 'total') int total}) {
+      {@JsonKey(name: 'action') required String action,
+      @JsonKey(name: 'message') required String message,
+      @JsonKey(name: 'has_error') required bool hasError = false,
+      @JsonKey(name: 'num') required int num,
+      @JsonKey(name: 'total') required int total}) {
     return _ServerProcessingParams(
       action: action,
       message: message,
@@ -32,41 +36,39 @@ class _$ServerProcessingParamsTearOff {
     );
   }
 
-// ignore: unused_element
   ServerProcessingParams fromJson(Map<String, Object> json) {
     return ServerProcessingParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerProcessingParams = _$ServerProcessingParamsTearOff();
 
 /// @nodoc
 mixin _$ServerProcessingParams {
   /// Action name.
   @JsonKey(name: 'action')
-  String get action;
+  String get action => throw _privateConstructorUsedError;
 
   /// Message.
   @JsonKey(name: 'message')
-  String get message;
+  String get message => throw _privateConstructorUsedError;
 
   /// Has error.
   @JsonKey(name: 'has_error')
-  bool get hasError;
+  bool get hasError => throw _privateConstructorUsedError;
 
   /// Current processing item.
   @JsonKey(name: 'num')
-  int get num;
+  int get num => throw _privateConstructorUsedError;
 
   /// Total processing items.
   @JsonKey(name: 'total')
-  int get total;
+  int get total => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerProcessingParamsCopyWith<ServerProcessingParams> get copyWith;
+  $ServerProcessingParamsCopyWith<ServerProcessingParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -91,18 +93,33 @@ class _$ServerProcessingParamsCopyWithImpl<$Res> implements $ServerProcessingPar
 
   @override
   $Res call({
-    Object action = freezed,
-    Object message = freezed,
-    Object hasError = freezed,
-    Object num = freezed,
-    Object total = freezed,
+    Object? action = freezed,
+    Object? message = freezed,
+    Object? hasError = freezed,
+    Object? num = freezed,
+    Object? total = freezed,
   }) {
     return _then(_value.copyWith(
-      action: action == freezed ? _value.action : action as String,
-      message: message == freezed ? _value.message : message as String,
-      hasError: hasError == freezed ? _value.hasError : hasError as bool,
-      num: num == freezed ? _value.num : num as int,
-      total: total == freezed ? _value.total : total as int,
+      action: action == freezed
+          ? _value.action
+          : action // ignore: cast_nullable_to_non_nullable
+              as String,
+      message: message == freezed
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String,
+      hasError: hasError == freezed
+          ? _value.hasError
+          : hasError // ignore: cast_nullable_to_non_nullable
+              as bool,
+      num: num == freezed
+          ? _value.num
+          : num // ignore: cast_nullable_to_non_nullable
+              as int,
+      total: total == freezed
+          ? _value.total
+          : total // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -131,39 +148,48 @@ class __$ServerProcessingParamsCopyWithImpl<$Res> extends _$ServerProcessingPara
 
   @override
   $Res call({
-    Object action = freezed,
-    Object message = freezed,
-    Object hasError = freezed,
-    Object num = freezed,
-    Object total = freezed,
+    Object? action = freezed,
+    Object? message = freezed,
+    Object? hasError = freezed,
+    Object? num = freezed,
+    Object? total = freezed,
   }) {
     return _then(_ServerProcessingParams(
-      action: action == freezed ? _value.action : action as String,
-      message: message == freezed ? _value.message : message as String,
-      hasError: hasError == freezed ? _value.hasError : hasError as bool,
-      num: num == freezed ? _value.num : num as int,
-      total: total == freezed ? _value.total : total as int,
+      action: action == freezed
+          ? _value.action
+          : action // ignore: cast_nullable_to_non_nullable
+              as String,
+      message: message == freezed
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String,
+      hasError: hasError == freezed
+          ? _value.hasError
+          : hasError // ignore: cast_nullable_to_non_nullable
+              as bool,
+      num: num == freezed
+          ? _value.num
+          : num // ignore: cast_nullable_to_non_nullable
+              as int,
+      total: total == freezed
+          ? _value.total
+          : total // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerProcessingParams implements _ServerProcessingParams {
   const _$_ServerProcessingParams(
-      {@required @JsonKey(name: 'action') this.action,
-      @required @JsonKey(name: 'message') this.message,
-      @required @JsonKey(name: 'has_error') this.hasError,
-      @required @JsonKey(name: 'num') this.num,
-      @required @JsonKey(name: 'total') this.total})
-      : assert(action != null),
-        assert(message != null),
-        assert(hasError != null),
-        assert(num != null),
-        assert(total != null);
+      {@JsonKey(name: 'action') required this.action,
+      @JsonKey(name: 'message') required this.message,
+      @JsonKey(name: 'has_error') required this.hasError = false,
+      @JsonKey(name: 'num') required this.num,
+      @JsonKey(name: 'total') required this.total});
 
-  factory _$_ServerProcessingParams.fromJson(Map<String, dynamic> json) => _$_$_ServerProcessingParamsFromJson(json);
+  factory _$_ServerProcessingParams.fromJson(Map<String, dynamic> json) => _$$_ServerProcessingParamsFromJson(json);
 
   @override
 
@@ -223,17 +249,17 @@ class _$_ServerProcessingParams implements _ServerProcessingParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerProcessingParamsToJson(this);
+    return _$$_ServerProcessingParamsToJson(this);
   }
 }
 
 abstract class _ServerProcessingParams implements ServerProcessingParams {
   const factory _ServerProcessingParams(
-      {@required @JsonKey(name: 'action') String action,
-      @required @JsonKey(name: 'message') String message,
-      @required @JsonKey(name: 'has_error') bool hasError,
-      @required @JsonKey(name: 'num') int num,
-      @required @JsonKey(name: 'total') int total}) = _$_ServerProcessingParams;
+      {@JsonKey(name: 'action') required String action,
+      @JsonKey(name: 'message') required String message,
+      @JsonKey(name: 'has_error') required bool hasError,
+      @JsonKey(name: 'num') required int num,
+      @JsonKey(name: 'total') required int total}) = _$_ServerProcessingParams;
 
   factory _ServerProcessingParams.fromJson(Map<String, dynamic> json) = _$_ServerProcessingParams.fromJson;
 
@@ -241,28 +267,28 @@ abstract class _ServerProcessingParams implements ServerProcessingParams {
 
   /// Action name.
   @JsonKey(name: 'action')
-  String get action;
+  String get action => throw _privateConstructorUsedError;
   @override
 
   /// Message.
   @JsonKey(name: 'message')
-  String get message;
+  String get message => throw _privateConstructorUsedError;
   @override
 
   /// Has error.
   @JsonKey(name: 'has_error')
-  bool get hasError;
+  bool get hasError => throw _privateConstructorUsedError;
   @override
 
   /// Current processing item.
   @JsonKey(name: 'num')
-  int get num;
+  int get num => throw _privateConstructorUsedError;
   @override
 
   /// Total processing items.
   @JsonKey(name: 'total')
-  int get total;
+  int get total => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerProcessingParamsCopyWith<_ServerProcessingParams> get copyWith;
+  _$ServerProcessingParamsCopyWith<_ServerProcessingParams> get copyWith => throw _privateConstructorUsedError;
 }

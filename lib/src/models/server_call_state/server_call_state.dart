@@ -6,16 +6,16 @@ part 'server_call_state.g.dart';
 
 /// Call information.
 @freezed
-abstract class ServerCallState with _$ServerCallState {
+class ServerCallState with _$ServerCallState {
   const factory ServerCallState({
     /// .
-    @JsonKey(name: 'params') @required CallEvent params,
+    @JsonKey(name: 'params') required CallEvent params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerCallState;
 
   factory ServerCallState.fromJson(Map<String, dynamic> json) => _$ServerCallStateFromJson(json);

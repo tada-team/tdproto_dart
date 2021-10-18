@@ -6,22 +6,22 @@ part 'server_call_answer_params.g.dart';
 
 /// Params of the server.call.answer event.
 @freezed
-abstract class ServerCallAnswerParams with _$ServerCallAnswerParams {
+class ServerCallAnswerParams with _$ServerCallAnswerParams {
   const factory ServerCallAnswerParams({
     /// Chat or contact id.
-    @JsonKey(name: 'jid') @required String jid,
+    @JsonKey(name: 'jid') required String jid,
 
     /// List of ICE candidates (when trickle = false).
-    @JsonKey(name: 'candidates') List<ServerCallAnswerCandidate> candidates,
+    @JsonKey(name: 'candidates') List<ServerCallAnswerCandidate>? candidates,
 
     /// Current call participants.
-    @JsonKey(name: 'onliners') List<CallOnliner> onliners,
+    @JsonKey(name: 'onliners') List<CallOnliner>? onliners,
 
     /// SDP data.
-    @JsonKey(name: 'jsep') @required JSEP jsep,
+    @JsonKey(name: 'jsep') required JSEP jsep,
 
     /// Call id.
-    @JsonKey(name: 'uid') @required String uid,
+    @JsonKey(name: 'uid') required String uid,
   }) = _ServerCallAnswerParams;
 
   factory ServerCallAnswerParams.fromJson(Map<String, dynamic> json) => _$ServerCallAnswerParamsFromJson(json);

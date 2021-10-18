@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_team_deleted.dart';
 
@@ -8,6 +9,10 @@ part of 'server_team_deleted.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerTeamDeleted _$ServerTeamDeletedFromJson(Map<String, dynamic> json) {
   return _ServerTeamDeleted.fromJson(json);
 }
@@ -16,11 +21,10 @@ ServerTeamDeleted _$ServerTeamDeletedFromJson(Map<String, dynamic> json) {
 class _$ServerTeamDeletedTearOff {
   const _$ServerTeamDeletedTearOff();
 
-// ignore: unused_element
   _ServerTeamDeleted call(
-      {@required @JsonKey(name: 'params') ServerTeamDeletedParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) {
+      {@JsonKey(name: 'params') required ServerTeamDeletedParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ServerTeamDeleted(
       params: params,
       name: name,
@@ -28,33 +32,31 @@ class _$ServerTeamDeletedTearOff {
     );
   }
 
-// ignore: unused_element
   ServerTeamDeleted fromJson(Map<String, Object> json) {
     return ServerTeamDeleted.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerTeamDeleted = _$ServerTeamDeletedTearOff();
 
 /// @nodoc
 mixin _$ServerTeamDeleted {
   /// .
   @JsonKey(name: 'params')
-  ServerTeamDeletedParams get params;
+  ServerTeamDeletedParams get params => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerTeamDeletedCopyWith<ServerTeamDeleted> get copyWith;
+  $ServerTeamDeletedCopyWith<ServerTeamDeleted> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -64,7 +66,7 @@ abstract class $ServerTeamDeletedCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'params') ServerTeamDeletedParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   $ServerTeamDeletedParamsCopyWith<$Res> get params;
 }
@@ -79,22 +81,28 @@ class _$ServerTeamDeletedCopyWithImpl<$Res> implements $ServerTeamDeletedCopyWit
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as ServerTeamDeletedParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerTeamDeletedParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $ServerTeamDeletedParamsCopyWith<$Res> get params {
-    if (_value.params == null) {
-      return null;
-    }
     return $ServerTeamDeletedParamsCopyWith<$Res>(_value.params, (value) {
       return _then(_value.copyWith(params: value));
     });
@@ -109,7 +117,7 @@ abstract class _$ServerTeamDeletedCopyWith<$Res> implements $ServerTeamDeletedCo
   $Res call(
       {@JsonKey(name: 'params') ServerTeamDeletedParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   @override
   $ServerTeamDeletedParamsCopyWith<$Res> get params;
@@ -126,30 +134,36 @@ class __$ServerTeamDeletedCopyWithImpl<$Res> extends _$ServerTeamDeletedCopyWith
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ServerTeamDeleted(
-      params: params == freezed ? _value.params : params as ServerTeamDeletedParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerTeamDeletedParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerTeamDeleted implements _ServerTeamDeleted {
   const _$_ServerTeamDeleted(
-      {@required @JsonKey(name: 'params') this.params,
-      @required @JsonKey(name: 'event') this.name,
-      @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(params != null),
-        assert(name != null);
+      {@JsonKey(name: 'params') required this.params,
+      @JsonKey(name: 'event') required this.name,
+      @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ServerTeamDeleted.fromJson(Map<String, dynamic> json) => _$_$_ServerTeamDeletedFromJson(json);
+  factory _$_ServerTeamDeleted.fromJson(Map<String, dynamic> json) => _$$_ServerTeamDeletedFromJson(json);
 
   @override
 
@@ -165,7 +179,7 @@ class _$_ServerTeamDeleted implements _ServerTeamDeleted {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -196,15 +210,15 @@ class _$_ServerTeamDeleted implements _ServerTeamDeleted {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerTeamDeletedToJson(this);
+    return _$$_ServerTeamDeletedToJson(this);
   }
 }
 
 abstract class _ServerTeamDeleted implements ServerTeamDeleted {
   const factory _ServerTeamDeleted(
-      {@required @JsonKey(name: 'params') ServerTeamDeletedParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) = _$_ServerTeamDeleted;
+      {@JsonKey(name: 'params') required ServerTeamDeletedParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerTeamDeleted;
 
   factory _ServerTeamDeleted.fromJson(Map<String, dynamic> json) = _$_ServerTeamDeleted.fromJson;
 
@@ -212,18 +226,18 @@ abstract class _ServerTeamDeleted implements ServerTeamDeleted {
 
   /// .
   @JsonKey(name: 'params')
-  ServerTeamDeletedParams get params;
+  ServerTeamDeletedParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerTeamDeletedCopyWith<_ServerTeamDeleted> get copyWith;
+  _$ServerTeamDeletedCopyWith<_ServerTeamDeleted> get copyWith => throw _privateConstructorUsedError;
 }

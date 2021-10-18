@@ -6,25 +6,25 @@ part 'button_colors.g.dart';
 
 /// ButtonColors button colors for app.
 @freezed
-abstract class ButtonColors with _$ButtonColors {
+class ButtonColors with _$ButtonColors {
   const factory ButtonColors({
     /// Brand static color.
-    @JsonKey(name: 'brand_static') @required String brandStatic,
+    @JsonKey(name: 'brand_static') required String brandStatic,
 
     /// Brand active color.
-    @JsonKey(name: 'brand_active') @required String brandActive,
+    @JsonKey(name: 'brand_active') required String brandActive,
 
     /// Brand disable color.
-    @JsonKey(name: 'brand_disable') @required String brandDisable,
+    @JsonKey(name: 'brand_disable') required String brandDisable,
 
     /// Simple static color.
-    @JsonKey(name: 'simple_static') @required String simpleStatic,
+    @JsonKey(name: 'simple_static') required String simpleStatic,
 
     /// Simple active color.
-    @JsonKey(name: 'simple_active') @required String simpleActive,
+    @JsonKey(name: 'simple_active') required String simpleActive,
 
     /// Simple disable color.
-    @JsonKey(name: 'simple_disable') @required String simpleDisable,
+    @JsonKey(name: 'simple_disable') required String simpleDisable,
   }) = _ButtonColors;
 
   factory ButtonColors.fromJson(Map<String, dynamic> json) => _$ButtonColorsFromJson(json);

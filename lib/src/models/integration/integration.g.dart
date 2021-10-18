@@ -6,26 +6,24 @@ part of 'integration.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_Integration _$_$_IntegrationFromJson(Map<String, dynamic> json) {
-  return _$_Integration(
-    uid: json['uid'] as String,
-    comment: json['comment'] as String,
-    created: const DateTimeConverter().fromJson(json['created'] as String),
-    enabled: json['enabled'] as bool,
-    form: json['form'] == null ? null : IntegrationForm.fromJson(json['form'] as Map<String, dynamic>),
-    group: json['group'] as String,
-    help: json['help'] as String,
-    kind: json['kind'] as String,
-    title: json['-'] as String,
-  );
-}
+_$_Integration _$$_IntegrationFromJson(Map<String, dynamic> json) => _$_Integration(
+      uid: json['uid'] as String?,
+      comment: json['comment'] as String,
+      created: json['created'] == null ? null : DateTime.parse(json['created'] as String),
+      enabled: json['enabled'] as bool? ?? false,
+      form: IntegrationForm.fromJson(json['form'] as Map<String, dynamic>),
+      group: json['group'] as String,
+      help: json['help'] as String?,
+      kind: json['kind'] as String,
+      title: json['-'] as String,
+    );
 
-Map<String, dynamic> _$_$_IntegrationToJson(_$_Integration instance) => <String, dynamic>{
+Map<String, dynamic> _$$_IntegrationToJson(_$_Integration instance) => <String, dynamic>{
       'uid': instance.uid,
       'comment': instance.comment,
-      'created': const DateTimeConverter().toJson(instance.created),
+      'created': instance.created?.toIso8601String(),
       'enabled': instance.enabled,
-      'form': instance.form?.toJson(),
+      'form': instance.form.toJson(),
       'group': instance.group,
       'help': instance.help,
       'kind': instance.kind,

@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_team_counters_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_team_counters_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerTeamCountersParams _$ServerTeamCountersParamsFromJson(Map<String, dynamic> json) {
   return _ServerTeamCountersParams.fromJson(json);
 }
@@ -16,38 +21,35 @@ ServerTeamCountersParams _$ServerTeamCountersParamsFromJson(Map<String, dynamic>
 class _$ServerTeamCountersParamsTearOff {
   const _$ServerTeamCountersParamsTearOff();
 
-// ignore: unused_element
   _ServerTeamCountersParams call(
-      {@required @JsonKey(name: 'teams') List<TeamCounter> teams, @required @JsonKey(name: 'badge') int badge}) {
+      {@JsonKey(name: 'teams') required List<TeamCounter> teams, @JsonKey(name: 'badge') required int badge}) {
     return _ServerTeamCountersParams(
       teams: teams,
       badge: badge,
     );
   }
 
-// ignore: unused_element
   ServerTeamCountersParams fromJson(Map<String, Object> json) {
     return ServerTeamCountersParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerTeamCountersParams = _$ServerTeamCountersParamsTearOff();
 
 /// @nodoc
 mixin _$ServerTeamCountersParams {
   /// Counters.
   @JsonKey(name: 'teams')
-  List<TeamCounter> get teams;
+  List<TeamCounter> get teams => throw _privateConstructorUsedError;
 
   /// Total number of unreads.
   @JsonKey(name: 'badge')
-  int get badge;
+  int get badge => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerTeamCountersParamsCopyWith<ServerTeamCountersParams> get copyWith;
+  $ServerTeamCountersParamsCopyWith<ServerTeamCountersParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -68,12 +70,18 @@ class _$ServerTeamCountersParamsCopyWithImpl<$Res> implements $ServerTeamCounter
 
   @override
   $Res call({
-    Object teams = freezed,
-    Object badge = freezed,
+    Object? teams = freezed,
+    Object? badge = freezed,
   }) {
     return _then(_value.copyWith(
-      teams: teams == freezed ? _value.teams : teams as List<TeamCounter>,
-      badge: badge == freezed ? _value.badge : badge as int,
+      teams: teams == freezed
+          ? _value.teams
+          : teams // ignore: cast_nullable_to_non_nullable
+              as List<TeamCounter>,
+      badge: badge == freezed
+          ? _value.badge
+          : badge // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -99,27 +107,29 @@ class __$ServerTeamCountersParamsCopyWithImpl<$Res> extends _$ServerTeamCounters
 
   @override
   $Res call({
-    Object teams = freezed,
-    Object badge = freezed,
+    Object? teams = freezed,
+    Object? badge = freezed,
   }) {
     return _then(_ServerTeamCountersParams(
-      teams: teams == freezed ? _value.teams : teams as List<TeamCounter>,
-      badge: badge == freezed ? _value.badge : badge as int,
+      teams: teams == freezed
+          ? _value.teams
+          : teams // ignore: cast_nullable_to_non_nullable
+              as List<TeamCounter>,
+      badge: badge == freezed
+          ? _value.badge
+          : badge // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerTeamCountersParams implements _ServerTeamCountersParams {
   const _$_ServerTeamCountersParams(
-      {@required @JsonKey(name: 'teams') this.teams, @required @JsonKey(name: 'badge') this.badge})
-      : assert(teams != null),
-        assert(badge != null);
+      {@JsonKey(name: 'teams') required this.teams, @JsonKey(name: 'badge') required this.badge});
 
-  factory _$_ServerTeamCountersParams.fromJson(Map<String, dynamic> json) =>
-      _$_$_ServerTeamCountersParamsFromJson(json);
+  factory _$_ServerTeamCountersParams.fromJson(Map<String, dynamic> json) => _$$_ServerTeamCountersParamsFromJson(json);
 
   @override
 
@@ -156,14 +166,14 @@ class _$_ServerTeamCountersParams implements _ServerTeamCountersParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerTeamCountersParamsToJson(this);
+    return _$$_ServerTeamCountersParamsToJson(this);
   }
 }
 
 abstract class _ServerTeamCountersParams implements ServerTeamCountersParams {
   const factory _ServerTeamCountersParams(
-      {@required @JsonKey(name: 'teams') List<TeamCounter> teams,
-      @required @JsonKey(name: 'badge') int badge}) = _$_ServerTeamCountersParams;
+      {@JsonKey(name: 'teams') required List<TeamCounter> teams,
+      @JsonKey(name: 'badge') required int badge}) = _$_ServerTeamCountersParams;
 
   factory _ServerTeamCountersParams.fromJson(Map<String, dynamic> json) = _$_ServerTeamCountersParams.fromJson;
 
@@ -171,13 +181,13 @@ abstract class _ServerTeamCountersParams implements ServerTeamCountersParams {
 
   /// Counters.
   @JsonKey(name: 'teams')
-  List<TeamCounter> get teams;
+  List<TeamCounter> get teams => throw _privateConstructorUsedError;
   @override
 
   /// Total number of unreads.
   @JsonKey(name: 'badge')
-  int get badge;
+  int get badge => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerTeamCountersParamsCopyWith<_ServerTeamCountersParams> get copyWith;
+  _$ServerTeamCountersParamsCopyWith<_ServerTeamCountersParams> get copyWith => throw _privateConstructorUsedError;
 }

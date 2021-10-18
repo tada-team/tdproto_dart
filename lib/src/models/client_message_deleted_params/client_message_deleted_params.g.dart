@@ -6,12 +6,11 @@ part of 'client_message_deleted_params.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ClientMessageDeletedParams _$_$_ClientMessageDeletedParamsFromJson(Map<String, dynamic> json) {
-  return _$_ClientMessageDeletedParams(
-    messageId: json['message_id'] as String,
-  );
-}
+_$_ClientMessageDeletedParams _$$_ClientMessageDeletedParamsFromJson(Map<String, dynamic> json) =>
+    _$_ClientMessageDeletedParams(
+      messageId: json['message_id'] as String?,
+    );
 
-Map<String, dynamic> _$_$_ClientMessageDeletedParamsToJson(_$_ClientMessageDeletedParams instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ClientMessageDeletedParamsToJson(_$_ClientMessageDeletedParams instance) => <String, dynamic>{
       'message_id': instance.messageId,
     };

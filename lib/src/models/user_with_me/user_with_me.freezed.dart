@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'user_with_me.dart';
 
@@ -8,6 +9,10 @@ part of 'user_with_me.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 UserWithMe _$UserWithMeFromJson(Map<String, dynamic> json) {
   return _UserWithMe.fromJson(json);
 }
@@ -16,27 +21,26 @@ UserWithMe _$UserWithMeFromJson(Map<String, dynamic> json) {
 class _$UserWithMeTearOff {
   const _$UserWithMeTearOff();
 
-// ignore: unused_element
   _UserWithMe call(
-      {@JsonKey(name: 'inviter') String inviter,
-      @required @JsonKey(name: 'teams') List<Team> teams,
-      @required @JsonKey(name: 'devices') List<PushDevice> devices,
-      @JsonKey(name: 'phone') String phone,
-      @JsonKey(name: 'email') String email,
-      @JsonKey(name: 'family_name') String familyName,
-      @JsonKey(name: 'given_name') String givenName,
-      @JsonKey(name: 'patronymic') String patronymic,
-      @JsonKey(name: 'default_lang') String defaultLang,
-      @required @JsonKey(name: 'alt_send') bool altSend,
-      @required @JsonKey(name: 'asterisk_mention') bool asteriskMention,
-      @required @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
-      @required @JsonKey(name: 'hide_pushes_content') bool hidePushesContent,
-      @required @JsonKey(name: 'unread_first') bool unreadFirst,
-      @required @JsonKey(name: 'munread_first') bool mUnreadFirst,
-      @required @JsonKey(name: 'timezone') String timezone,
-      @required @JsonKey(name: 'quiet_time_start') String quietTimeStart,
-      @required @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
-      @required @JsonKey(name: 'icons') IconData icons}) {
+      {@JsonKey(name: 'inviter') String? inviter,
+      @JsonKey(name: 'teams') required List<Team> teams,
+      @JsonKey(name: 'devices') required List<PushDevice> devices,
+      @JsonKey(name: 'phone') String? phone,
+      @JsonKey(name: 'email') String? email,
+      @JsonKey(name: 'family_name') String? familyName,
+      @JsonKey(name: 'given_name') String? givenName,
+      @JsonKey(name: 'patronymic') String? patronymic,
+      @JsonKey(name: 'default_lang') String? defaultLang,
+      @JsonKey(name: 'alt_send') required bool altSend = false,
+      @JsonKey(name: 'asterisk_mention') required bool asteriskMention = false,
+      @JsonKey(name: 'always_send_pushes') required bool alwaysSendPushes = false,
+      @JsonKey(name: 'hide_pushes_content') required bool hidePushesContent = false,
+      @JsonKey(name: 'unread_first') required bool unreadFirst = false,
+      @JsonKey(name: 'munread_first') required bool mUnreadFirst = false,
+      @JsonKey(name: 'timezone') required String timezone,
+      @JsonKey(name: 'quiet_time_start') String? quietTimeStart,
+      @JsonKey(name: 'quiet_time_finish') String? quietTimeFinish,
+      @JsonKey(name: 'icons') required IconData icons}) {
     return _UserWithMe(
       inviter: inviter,
       teams: teams,
@@ -60,112 +64,110 @@ class _$UserWithMeTearOff {
     );
   }
 
-// ignore: unused_element
   UserWithMe fromJson(Map<String, Object> json) {
     return UserWithMe.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $UserWithMe = _$UserWithMeTearOff();
 
 /// @nodoc
 mixin _$UserWithMe {
   /// Inviter id, if any.
   @JsonKey(name: 'inviter')
-  String get inviter;
+  String? get inviter => throw _privateConstructorUsedError;
 
   /// Available teams.
   @JsonKey(name: 'teams')
-  List<Team> get teams;
+  List<Team> get teams => throw _privateConstructorUsedError;
 
   /// Registered push devices.
   @JsonKey(name: 'devices')
-  List<PushDevice> get devices;
+  List<PushDevice> get devices => throw _privateConstructorUsedError;
 
   /// Phone for login.
   @JsonKey(name: 'phone')
-  String get phone;
+  String? get phone => throw _privateConstructorUsedError;
 
   /// Email for login.
   @JsonKey(name: 'email')
-  String get email;
+  String? get email => throw _privateConstructorUsedError;
 
   /// Family name.
   @JsonKey(name: 'family_name')
-  String get familyName;
+  String? get familyName => throw _privateConstructorUsedError;
 
   /// Given name.
   @JsonKey(name: 'given_name')
-  String get givenName;
+  String? get givenName => throw _privateConstructorUsedError;
 
   /// Patronymic, if any.
   @JsonKey(name: 'patronymic')
-  String get patronymic;
+  String? get patronymic => throw _privateConstructorUsedError;
 
   /// Default language code.
   @JsonKey(name: 'default_lang')
-  String get defaultLang;
+  String? get defaultLang => throw _privateConstructorUsedError;
 
   /// Use Ctrl/Cmd + Enter instead Enter.
   @JsonKey(name: 'alt_send')
-  bool get altSend;
+  bool get altSend => throw _privateConstructorUsedError;
 
   /// Use * as @ for mentions.
   @JsonKey(name: 'asterisk_mention')
-  bool get asteriskMention;
+  bool get asteriskMention => throw _privateConstructorUsedError;
 
   /// Send pushes even user is online.
   @JsonKey(name: 'always_send_pushes')
-  bool get alwaysSendPushes;
+  bool get alwaysSendPushes => throw _privateConstructorUsedError;
 
   /// Hide pushes body.
   @JsonKey(name: 'hide_pushes_content')
-  bool get hidePushesContent;
+  bool get hidePushesContent => throw _privateConstructorUsedError;
 
   /// Show unread chats in chat list first.
   @JsonKey(name: 'unread_first')
-  bool get unreadFirst;
+  bool get unreadFirst => throw _privateConstructorUsedError;
 
   /// Show unread chats in chat list first on mobiles.
   @JsonKey(name: 'munread_first')
-  bool get mUnreadFirst;
+  bool get mUnreadFirst => throw _privateConstructorUsedError;
 
   /// Timezone.
   @JsonKey(name: 'timezone')
-  String get timezone;
+  String get timezone => throw _privateConstructorUsedError;
 
   /// Start silently time (no pushes, no sounds).
   @JsonKey(name: 'quiet_time_start')
-  String get quietTimeStart;
+  String? get quietTimeStart => throw _privateConstructorUsedError;
 
   /// Finish silently time (no pushes, no sounds).
   @JsonKey(name: 'quiet_time_finish')
-  String get quietTimeFinish;
+  String? get quietTimeFinish => throw _privateConstructorUsedError;
 
   /// Icon data.
   @JsonKey(name: 'icons')
-  IconData get icons;
+  IconData get icons => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $UserWithMeCopyWith<UserWithMe> get copyWith;
+  $UserWithMeCopyWith<UserWithMe> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $UserWithMeCopyWith<$Res> {
   factory $UserWithMeCopyWith(UserWithMe value, $Res Function(UserWithMe) then) = _$UserWithMeCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'inviter') String inviter,
+      {@JsonKey(name: 'inviter') String? inviter,
       @JsonKey(name: 'teams') List<Team> teams,
       @JsonKey(name: 'devices') List<PushDevice> devices,
-      @JsonKey(name: 'phone') String phone,
-      @JsonKey(name: 'email') String email,
-      @JsonKey(name: 'family_name') String familyName,
-      @JsonKey(name: 'given_name') String givenName,
-      @JsonKey(name: 'patronymic') String patronymic,
-      @JsonKey(name: 'default_lang') String defaultLang,
+      @JsonKey(name: 'phone') String? phone,
+      @JsonKey(name: 'email') String? email,
+      @JsonKey(name: 'family_name') String? familyName,
+      @JsonKey(name: 'given_name') String? givenName,
+      @JsonKey(name: 'patronymic') String? patronymic,
+      @JsonKey(name: 'default_lang') String? defaultLang,
       @JsonKey(name: 'alt_send') bool altSend,
       @JsonKey(name: 'asterisk_mention') bool asteriskMention,
       @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
@@ -173,8 +175,8 @@ abstract class $UserWithMeCopyWith<$Res> {
       @JsonKey(name: 'unread_first') bool unreadFirst,
       @JsonKey(name: 'munread_first') bool mUnreadFirst,
       @JsonKey(name: 'timezone') String timezone,
-      @JsonKey(name: 'quiet_time_start') String quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
+      @JsonKey(name: 'quiet_time_start') String? quietTimeStart,
+      @JsonKey(name: 'quiet_time_finish') String? quietTimeFinish,
       @JsonKey(name: 'icons') IconData icons});
 
   $IconDataCopyWith<$Res> get icons;
@@ -190,54 +192,108 @@ class _$UserWithMeCopyWithImpl<$Res> implements $UserWithMeCopyWith<$Res> {
 
   @override
   $Res call({
-    Object inviter = freezed,
-    Object teams = freezed,
-    Object devices = freezed,
-    Object phone = freezed,
-    Object email = freezed,
-    Object familyName = freezed,
-    Object givenName = freezed,
-    Object patronymic = freezed,
-    Object defaultLang = freezed,
-    Object altSend = freezed,
-    Object asteriskMention = freezed,
-    Object alwaysSendPushes = freezed,
-    Object hidePushesContent = freezed,
-    Object unreadFirst = freezed,
-    Object mUnreadFirst = freezed,
-    Object timezone = freezed,
-    Object quietTimeStart = freezed,
-    Object quietTimeFinish = freezed,
-    Object icons = freezed,
+    Object? inviter = freezed,
+    Object? teams = freezed,
+    Object? devices = freezed,
+    Object? phone = freezed,
+    Object? email = freezed,
+    Object? familyName = freezed,
+    Object? givenName = freezed,
+    Object? patronymic = freezed,
+    Object? defaultLang = freezed,
+    Object? altSend = freezed,
+    Object? asteriskMention = freezed,
+    Object? alwaysSendPushes = freezed,
+    Object? hidePushesContent = freezed,
+    Object? unreadFirst = freezed,
+    Object? mUnreadFirst = freezed,
+    Object? timezone = freezed,
+    Object? quietTimeStart = freezed,
+    Object? quietTimeFinish = freezed,
+    Object? icons = freezed,
   }) {
     return _then(_value.copyWith(
-      inviter: inviter == freezed ? _value.inviter : inviter as String,
-      teams: teams == freezed ? _value.teams : teams as List<Team>,
-      devices: devices == freezed ? _value.devices : devices as List<PushDevice>,
-      phone: phone == freezed ? _value.phone : phone as String,
-      email: email == freezed ? _value.email : email as String,
-      familyName: familyName == freezed ? _value.familyName : familyName as String,
-      givenName: givenName == freezed ? _value.givenName : givenName as String,
-      patronymic: patronymic == freezed ? _value.patronymic : patronymic as String,
-      defaultLang: defaultLang == freezed ? _value.defaultLang : defaultLang as String,
-      altSend: altSend == freezed ? _value.altSend : altSend as bool,
-      asteriskMention: asteriskMention == freezed ? _value.asteriskMention : asteriskMention as bool,
-      alwaysSendPushes: alwaysSendPushes == freezed ? _value.alwaysSendPushes : alwaysSendPushes as bool,
-      hidePushesContent: hidePushesContent == freezed ? _value.hidePushesContent : hidePushesContent as bool,
-      unreadFirst: unreadFirst == freezed ? _value.unreadFirst : unreadFirst as bool,
-      mUnreadFirst: mUnreadFirst == freezed ? _value.mUnreadFirst : mUnreadFirst as bool,
-      timezone: timezone == freezed ? _value.timezone : timezone as String,
-      quietTimeStart: quietTimeStart == freezed ? _value.quietTimeStart : quietTimeStart as String,
-      quietTimeFinish: quietTimeFinish == freezed ? _value.quietTimeFinish : quietTimeFinish as String,
-      icons: icons == freezed ? _value.icons : icons as IconData,
+      inviter: inviter == freezed
+          ? _value.inviter
+          : inviter // ignore: cast_nullable_to_non_nullable
+              as String?,
+      teams: teams == freezed
+          ? _value.teams
+          : teams // ignore: cast_nullable_to_non_nullable
+              as List<Team>,
+      devices: devices == freezed
+          ? _value.devices
+          : devices // ignore: cast_nullable_to_non_nullable
+              as List<PushDevice>,
+      phone: phone == freezed
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      email: email == freezed
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as String?,
+      familyName: familyName == freezed
+          ? _value.familyName
+          : familyName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      givenName: givenName == freezed
+          ? _value.givenName
+          : givenName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      patronymic: patronymic == freezed
+          ? _value.patronymic
+          : patronymic // ignore: cast_nullable_to_non_nullable
+              as String?,
+      defaultLang: defaultLang == freezed
+          ? _value.defaultLang
+          : defaultLang // ignore: cast_nullable_to_non_nullable
+              as String?,
+      altSend: altSend == freezed
+          ? _value.altSend
+          : altSend // ignore: cast_nullable_to_non_nullable
+              as bool,
+      asteriskMention: asteriskMention == freezed
+          ? _value.asteriskMention
+          : asteriskMention // ignore: cast_nullable_to_non_nullable
+              as bool,
+      alwaysSendPushes: alwaysSendPushes == freezed
+          ? _value.alwaysSendPushes
+          : alwaysSendPushes // ignore: cast_nullable_to_non_nullable
+              as bool,
+      hidePushesContent: hidePushesContent == freezed
+          ? _value.hidePushesContent
+          : hidePushesContent // ignore: cast_nullable_to_non_nullable
+              as bool,
+      unreadFirst: unreadFirst == freezed
+          ? _value.unreadFirst
+          : unreadFirst // ignore: cast_nullable_to_non_nullable
+              as bool,
+      mUnreadFirst: mUnreadFirst == freezed
+          ? _value.mUnreadFirst
+          : mUnreadFirst // ignore: cast_nullable_to_non_nullable
+              as bool,
+      timezone: timezone == freezed
+          ? _value.timezone
+          : timezone // ignore: cast_nullable_to_non_nullable
+              as String,
+      quietTimeStart: quietTimeStart == freezed
+          ? _value.quietTimeStart
+          : quietTimeStart // ignore: cast_nullable_to_non_nullable
+              as String?,
+      quietTimeFinish: quietTimeFinish == freezed
+          ? _value.quietTimeFinish
+          : quietTimeFinish // ignore: cast_nullable_to_non_nullable
+              as String?,
+      icons: icons == freezed
+          ? _value.icons
+          : icons // ignore: cast_nullable_to_non_nullable
+              as IconData,
     ));
   }
 
   @override
   $IconDataCopyWith<$Res> get icons {
-    if (_value.icons == null) {
-      return null;
-    }
     return $IconDataCopyWith<$Res>(_value.icons, (value) {
       return _then(_value.copyWith(icons: value));
     });
@@ -249,15 +305,15 @@ abstract class _$UserWithMeCopyWith<$Res> implements $UserWithMeCopyWith<$Res> {
   factory _$UserWithMeCopyWith(_UserWithMe value, $Res Function(_UserWithMe) then) = __$UserWithMeCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'inviter') String inviter,
+      {@JsonKey(name: 'inviter') String? inviter,
       @JsonKey(name: 'teams') List<Team> teams,
       @JsonKey(name: 'devices') List<PushDevice> devices,
-      @JsonKey(name: 'phone') String phone,
-      @JsonKey(name: 'email') String email,
-      @JsonKey(name: 'family_name') String familyName,
-      @JsonKey(name: 'given_name') String givenName,
-      @JsonKey(name: 'patronymic') String patronymic,
-      @JsonKey(name: 'default_lang') String defaultLang,
+      @JsonKey(name: 'phone') String? phone,
+      @JsonKey(name: 'email') String? email,
+      @JsonKey(name: 'family_name') String? familyName,
+      @JsonKey(name: 'given_name') String? givenName,
+      @JsonKey(name: 'patronymic') String? patronymic,
+      @JsonKey(name: 'default_lang') String? defaultLang,
       @JsonKey(name: 'alt_send') bool altSend,
       @JsonKey(name: 'asterisk_mention') bool asteriskMention,
       @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
@@ -265,8 +321,8 @@ abstract class _$UserWithMeCopyWith<$Res> implements $UserWithMeCopyWith<$Res> {
       @JsonKey(name: 'unread_first') bool unreadFirst,
       @JsonKey(name: 'munread_first') bool mUnreadFirst,
       @JsonKey(name: 'timezone') String timezone,
-      @JsonKey(name: 'quiet_time_start') String quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
+      @JsonKey(name: 'quiet_time_start') String? quietTimeStart,
+      @JsonKey(name: 'quiet_time_finish') String? quietTimeFinish,
       @JsonKey(name: 'icons') IconData icons});
 
   @override
@@ -283,94 +339,138 @@ class __$UserWithMeCopyWithImpl<$Res> extends _$UserWithMeCopyWithImpl<$Res> imp
 
   @override
   $Res call({
-    Object inviter = freezed,
-    Object teams = freezed,
-    Object devices = freezed,
-    Object phone = freezed,
-    Object email = freezed,
-    Object familyName = freezed,
-    Object givenName = freezed,
-    Object patronymic = freezed,
-    Object defaultLang = freezed,
-    Object altSend = freezed,
-    Object asteriskMention = freezed,
-    Object alwaysSendPushes = freezed,
-    Object hidePushesContent = freezed,
-    Object unreadFirst = freezed,
-    Object mUnreadFirst = freezed,
-    Object timezone = freezed,
-    Object quietTimeStart = freezed,
-    Object quietTimeFinish = freezed,
-    Object icons = freezed,
+    Object? inviter = freezed,
+    Object? teams = freezed,
+    Object? devices = freezed,
+    Object? phone = freezed,
+    Object? email = freezed,
+    Object? familyName = freezed,
+    Object? givenName = freezed,
+    Object? patronymic = freezed,
+    Object? defaultLang = freezed,
+    Object? altSend = freezed,
+    Object? asteriskMention = freezed,
+    Object? alwaysSendPushes = freezed,
+    Object? hidePushesContent = freezed,
+    Object? unreadFirst = freezed,
+    Object? mUnreadFirst = freezed,
+    Object? timezone = freezed,
+    Object? quietTimeStart = freezed,
+    Object? quietTimeFinish = freezed,
+    Object? icons = freezed,
   }) {
     return _then(_UserWithMe(
-      inviter: inviter == freezed ? _value.inviter : inviter as String,
-      teams: teams == freezed ? _value.teams : teams as List<Team>,
-      devices: devices == freezed ? _value.devices : devices as List<PushDevice>,
-      phone: phone == freezed ? _value.phone : phone as String,
-      email: email == freezed ? _value.email : email as String,
-      familyName: familyName == freezed ? _value.familyName : familyName as String,
-      givenName: givenName == freezed ? _value.givenName : givenName as String,
-      patronymic: patronymic == freezed ? _value.patronymic : patronymic as String,
-      defaultLang: defaultLang == freezed ? _value.defaultLang : defaultLang as String,
-      altSend: altSend == freezed ? _value.altSend : altSend as bool,
-      asteriskMention: asteriskMention == freezed ? _value.asteriskMention : asteriskMention as bool,
-      alwaysSendPushes: alwaysSendPushes == freezed ? _value.alwaysSendPushes : alwaysSendPushes as bool,
-      hidePushesContent: hidePushesContent == freezed ? _value.hidePushesContent : hidePushesContent as bool,
-      unreadFirst: unreadFirst == freezed ? _value.unreadFirst : unreadFirst as bool,
-      mUnreadFirst: mUnreadFirst == freezed ? _value.mUnreadFirst : mUnreadFirst as bool,
-      timezone: timezone == freezed ? _value.timezone : timezone as String,
-      quietTimeStart: quietTimeStart == freezed ? _value.quietTimeStart : quietTimeStart as String,
-      quietTimeFinish: quietTimeFinish == freezed ? _value.quietTimeFinish : quietTimeFinish as String,
-      icons: icons == freezed ? _value.icons : icons as IconData,
+      inviter: inviter == freezed
+          ? _value.inviter
+          : inviter // ignore: cast_nullable_to_non_nullable
+              as String?,
+      teams: teams == freezed
+          ? _value.teams
+          : teams // ignore: cast_nullable_to_non_nullable
+              as List<Team>,
+      devices: devices == freezed
+          ? _value.devices
+          : devices // ignore: cast_nullable_to_non_nullable
+              as List<PushDevice>,
+      phone: phone == freezed
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      email: email == freezed
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as String?,
+      familyName: familyName == freezed
+          ? _value.familyName
+          : familyName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      givenName: givenName == freezed
+          ? _value.givenName
+          : givenName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      patronymic: patronymic == freezed
+          ? _value.patronymic
+          : patronymic // ignore: cast_nullable_to_non_nullable
+              as String?,
+      defaultLang: defaultLang == freezed
+          ? _value.defaultLang
+          : defaultLang // ignore: cast_nullable_to_non_nullable
+              as String?,
+      altSend: altSend == freezed
+          ? _value.altSend
+          : altSend // ignore: cast_nullable_to_non_nullable
+              as bool,
+      asteriskMention: asteriskMention == freezed
+          ? _value.asteriskMention
+          : asteriskMention // ignore: cast_nullable_to_non_nullable
+              as bool,
+      alwaysSendPushes: alwaysSendPushes == freezed
+          ? _value.alwaysSendPushes
+          : alwaysSendPushes // ignore: cast_nullable_to_non_nullable
+              as bool,
+      hidePushesContent: hidePushesContent == freezed
+          ? _value.hidePushesContent
+          : hidePushesContent // ignore: cast_nullable_to_non_nullable
+              as bool,
+      unreadFirst: unreadFirst == freezed
+          ? _value.unreadFirst
+          : unreadFirst // ignore: cast_nullable_to_non_nullable
+              as bool,
+      mUnreadFirst: mUnreadFirst == freezed
+          ? _value.mUnreadFirst
+          : mUnreadFirst // ignore: cast_nullable_to_non_nullable
+              as bool,
+      timezone: timezone == freezed
+          ? _value.timezone
+          : timezone // ignore: cast_nullable_to_non_nullable
+              as String,
+      quietTimeStart: quietTimeStart == freezed
+          ? _value.quietTimeStart
+          : quietTimeStart // ignore: cast_nullable_to_non_nullable
+              as String?,
+      quietTimeFinish: quietTimeFinish == freezed
+          ? _value.quietTimeFinish
+          : quietTimeFinish // ignore: cast_nullable_to_non_nullable
+              as String?,
+      icons: icons == freezed
+          ? _value.icons
+          : icons // ignore: cast_nullable_to_non_nullable
+              as IconData,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_UserWithMe implements _UserWithMe {
   const _$_UserWithMe(
       {@JsonKey(name: 'inviter') this.inviter,
-      @required @JsonKey(name: 'teams') this.teams,
-      @required @JsonKey(name: 'devices') this.devices,
+      @JsonKey(name: 'teams') required this.teams,
+      @JsonKey(name: 'devices') required this.devices,
       @JsonKey(name: 'phone') this.phone,
       @JsonKey(name: 'email') this.email,
       @JsonKey(name: 'family_name') this.familyName,
       @JsonKey(name: 'given_name') this.givenName,
       @JsonKey(name: 'patronymic') this.patronymic,
       @JsonKey(name: 'default_lang') this.defaultLang,
-      @required @JsonKey(name: 'alt_send') this.altSend,
-      @required @JsonKey(name: 'asterisk_mention') this.asteriskMention,
-      @required @JsonKey(name: 'always_send_pushes') this.alwaysSendPushes,
-      @required @JsonKey(name: 'hide_pushes_content') this.hidePushesContent,
-      @required @JsonKey(name: 'unread_first') this.unreadFirst,
-      @required @JsonKey(name: 'munread_first') this.mUnreadFirst,
-      @required @JsonKey(name: 'timezone') this.timezone,
-      @required @JsonKey(name: 'quiet_time_start') this.quietTimeStart,
-      @required @JsonKey(name: 'quiet_time_finish') this.quietTimeFinish,
-      @required @JsonKey(name: 'icons') this.icons})
-      : assert(teams != null),
-        assert(devices != null),
-        assert(altSend != null),
-        assert(asteriskMention != null),
-        assert(alwaysSendPushes != null),
-        assert(hidePushesContent != null),
-        assert(unreadFirst != null),
-        assert(mUnreadFirst != null),
-        assert(timezone != null),
-        assert(quietTimeStart != null),
-        assert(quietTimeFinish != null),
-        assert(icons != null);
+      @JsonKey(name: 'alt_send') required this.altSend = false,
+      @JsonKey(name: 'asterisk_mention') required this.asteriskMention = false,
+      @JsonKey(name: 'always_send_pushes') required this.alwaysSendPushes = false,
+      @JsonKey(name: 'hide_pushes_content') required this.hidePushesContent = false,
+      @JsonKey(name: 'unread_first') required this.unreadFirst = false,
+      @JsonKey(name: 'munread_first') required this.mUnreadFirst = false,
+      @JsonKey(name: 'timezone') required this.timezone,
+      @JsonKey(name: 'quiet_time_start') this.quietTimeStart,
+      @JsonKey(name: 'quiet_time_finish') this.quietTimeFinish,
+      @JsonKey(name: 'icons') required this.icons});
 
-  factory _$_UserWithMe.fromJson(Map<String, dynamic> json) => _$_$_UserWithMeFromJson(json);
+  factory _$_UserWithMe.fromJson(Map<String, dynamic> json) => _$$_UserWithMeFromJson(json);
 
   @override
 
   /// Inviter id, if any.
   @JsonKey(name: 'inviter')
-  final String inviter;
+  final String? inviter;
   @override
 
   /// Available teams.
@@ -385,32 +485,32 @@ class _$_UserWithMe implements _UserWithMe {
 
   /// Phone for login.
   @JsonKey(name: 'phone')
-  final String phone;
+  final String? phone;
   @override
 
   /// Email for login.
   @JsonKey(name: 'email')
-  final String email;
+  final String? email;
   @override
 
   /// Family name.
   @JsonKey(name: 'family_name')
-  final String familyName;
+  final String? familyName;
   @override
 
   /// Given name.
   @JsonKey(name: 'given_name')
-  final String givenName;
+  final String? givenName;
   @override
 
   /// Patronymic, if any.
   @JsonKey(name: 'patronymic')
-  final String patronymic;
+  final String? patronymic;
   @override
 
   /// Default language code.
   @JsonKey(name: 'default_lang')
-  final String defaultLang;
+  final String? defaultLang;
   @override
 
   /// Use Ctrl/Cmd + Enter instead Enter.
@@ -450,12 +550,12 @@ class _$_UserWithMe implements _UserWithMe {
 
   /// Start silently time (no pushes, no sounds).
   @JsonKey(name: 'quiet_time_start')
-  final String quietTimeStart;
+  final String? quietTimeStart;
   @override
 
   /// Finish silently time (no pushes, no sounds).
   @JsonKey(name: 'quiet_time_finish')
-  final String quietTimeFinish;
+  final String? quietTimeFinish;
   @override
 
   /// Icon data.
@@ -532,31 +632,31 @@ class _$_UserWithMe implements _UserWithMe {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_UserWithMeToJson(this);
+    return _$$_UserWithMeToJson(this);
   }
 }
 
 abstract class _UserWithMe implements UserWithMe {
   const factory _UserWithMe(
-      {@JsonKey(name: 'inviter') String inviter,
-      @required @JsonKey(name: 'teams') List<Team> teams,
-      @required @JsonKey(name: 'devices') List<PushDevice> devices,
-      @JsonKey(name: 'phone') String phone,
-      @JsonKey(name: 'email') String email,
-      @JsonKey(name: 'family_name') String familyName,
-      @JsonKey(name: 'given_name') String givenName,
-      @JsonKey(name: 'patronymic') String patronymic,
-      @JsonKey(name: 'default_lang') String defaultLang,
-      @required @JsonKey(name: 'alt_send') bool altSend,
-      @required @JsonKey(name: 'asterisk_mention') bool asteriskMention,
-      @required @JsonKey(name: 'always_send_pushes') bool alwaysSendPushes,
-      @required @JsonKey(name: 'hide_pushes_content') bool hidePushesContent,
-      @required @JsonKey(name: 'unread_first') bool unreadFirst,
-      @required @JsonKey(name: 'munread_first') bool mUnreadFirst,
-      @required @JsonKey(name: 'timezone') String timezone,
-      @required @JsonKey(name: 'quiet_time_start') String quietTimeStart,
-      @required @JsonKey(name: 'quiet_time_finish') String quietTimeFinish,
-      @required @JsonKey(name: 'icons') IconData icons}) = _$_UserWithMe;
+      {@JsonKey(name: 'inviter') String? inviter,
+      @JsonKey(name: 'teams') required List<Team> teams,
+      @JsonKey(name: 'devices') required List<PushDevice> devices,
+      @JsonKey(name: 'phone') String? phone,
+      @JsonKey(name: 'email') String? email,
+      @JsonKey(name: 'family_name') String? familyName,
+      @JsonKey(name: 'given_name') String? givenName,
+      @JsonKey(name: 'patronymic') String? patronymic,
+      @JsonKey(name: 'default_lang') String? defaultLang,
+      @JsonKey(name: 'alt_send') required bool altSend,
+      @JsonKey(name: 'asterisk_mention') required bool asteriskMention,
+      @JsonKey(name: 'always_send_pushes') required bool alwaysSendPushes,
+      @JsonKey(name: 'hide_pushes_content') required bool hidePushesContent,
+      @JsonKey(name: 'unread_first') required bool unreadFirst,
+      @JsonKey(name: 'munread_first') required bool mUnreadFirst,
+      @JsonKey(name: 'timezone') required String timezone,
+      @JsonKey(name: 'quiet_time_start') String? quietTimeStart,
+      @JsonKey(name: 'quiet_time_finish') String? quietTimeFinish,
+      @JsonKey(name: 'icons') required IconData icons}) = _$_UserWithMe;
 
   factory _UserWithMe.fromJson(Map<String, dynamic> json) = _$_UserWithMe.fromJson;
 
@@ -564,98 +664,98 @@ abstract class _UserWithMe implements UserWithMe {
 
   /// Inviter id, if any.
   @JsonKey(name: 'inviter')
-  String get inviter;
+  String? get inviter => throw _privateConstructorUsedError;
   @override
 
   /// Available teams.
   @JsonKey(name: 'teams')
-  List<Team> get teams;
+  List<Team> get teams => throw _privateConstructorUsedError;
   @override
 
   /// Registered push devices.
   @JsonKey(name: 'devices')
-  List<PushDevice> get devices;
+  List<PushDevice> get devices => throw _privateConstructorUsedError;
   @override
 
   /// Phone for login.
   @JsonKey(name: 'phone')
-  String get phone;
+  String? get phone => throw _privateConstructorUsedError;
   @override
 
   /// Email for login.
   @JsonKey(name: 'email')
-  String get email;
+  String? get email => throw _privateConstructorUsedError;
   @override
 
   /// Family name.
   @JsonKey(name: 'family_name')
-  String get familyName;
+  String? get familyName => throw _privateConstructorUsedError;
   @override
 
   /// Given name.
   @JsonKey(name: 'given_name')
-  String get givenName;
+  String? get givenName => throw _privateConstructorUsedError;
   @override
 
   /// Patronymic, if any.
   @JsonKey(name: 'patronymic')
-  String get patronymic;
+  String? get patronymic => throw _privateConstructorUsedError;
   @override
 
   /// Default language code.
   @JsonKey(name: 'default_lang')
-  String get defaultLang;
+  String? get defaultLang => throw _privateConstructorUsedError;
   @override
 
   /// Use Ctrl/Cmd + Enter instead Enter.
   @JsonKey(name: 'alt_send')
-  bool get altSend;
+  bool get altSend => throw _privateConstructorUsedError;
   @override
 
   /// Use * as @ for mentions.
   @JsonKey(name: 'asterisk_mention')
-  bool get asteriskMention;
+  bool get asteriskMention => throw _privateConstructorUsedError;
   @override
 
   /// Send pushes even user is online.
   @JsonKey(name: 'always_send_pushes')
-  bool get alwaysSendPushes;
+  bool get alwaysSendPushes => throw _privateConstructorUsedError;
   @override
 
   /// Hide pushes body.
   @JsonKey(name: 'hide_pushes_content')
-  bool get hidePushesContent;
+  bool get hidePushesContent => throw _privateConstructorUsedError;
   @override
 
   /// Show unread chats in chat list first.
   @JsonKey(name: 'unread_first')
-  bool get unreadFirst;
+  bool get unreadFirst => throw _privateConstructorUsedError;
   @override
 
   /// Show unread chats in chat list first on mobiles.
   @JsonKey(name: 'munread_first')
-  bool get mUnreadFirst;
+  bool get mUnreadFirst => throw _privateConstructorUsedError;
   @override
 
   /// Timezone.
   @JsonKey(name: 'timezone')
-  String get timezone;
+  String get timezone => throw _privateConstructorUsedError;
   @override
 
   /// Start silently time (no pushes, no sounds).
   @JsonKey(name: 'quiet_time_start')
-  String get quietTimeStart;
+  String? get quietTimeStart => throw _privateConstructorUsedError;
   @override
 
   /// Finish silently time (no pushes, no sounds).
   @JsonKey(name: 'quiet_time_finish')
-  String get quietTimeFinish;
+  String? get quietTimeFinish => throw _privateConstructorUsedError;
   @override
 
   /// Icon data.
   @JsonKey(name: 'icons')
-  IconData get icons;
+  IconData get icons => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$UserWithMeCopyWith<_UserWithMe> get copyWith;
+  _$UserWithMeCopyWith<_UserWithMe> get copyWith => throw _privateConstructorUsedError;
 }

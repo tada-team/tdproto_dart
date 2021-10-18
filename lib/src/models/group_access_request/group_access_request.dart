@@ -6,16 +6,16 @@ part 'group_access_request.g.dart';
 
 /// Group Access Request.
 @freezed
-abstract class GroupAccessRequest with _$GroupAccessRequest {
+class GroupAccessRequest with _$GroupAccessRequest {
   const factory GroupAccessRequest({
     /// .
-    @JsonKey(name: 'uid') @required String uid,
+    @JsonKey(name: 'uid') required String uid,
 
     /// .
-    @JsonKey(name: 'created') @DateTimeConverter() @required DateTime created,
+    @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
 
     /// .
-    @JsonKey(name: 'subject') @required String subject,
+    @JsonKey(name: 'subject') required String subject,
   }) = _GroupAccessRequest;
 
   factory GroupAccessRequest.fromJson(Map<String, dynamic> json) => _$GroupAccessRequestFromJson(json);

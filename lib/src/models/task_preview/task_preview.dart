@@ -6,31 +6,31 @@ part 'task_preview.g.dart';
 
 /// Task Preview.
 @freezed
-abstract class TaskPreview with _$TaskPreview {
+class TaskPreview with _$TaskPreview {
   const factory TaskPreview({
     /// .
-    @JsonKey(name: '_error') String error,
+    @JsonKey(name: '_error') String? error,
 
     /// .
-    @JsonKey(name: 'assignee') @required String assignee,
+    @JsonKey(name: 'assignee') required String assignee,
 
     /// .
-    @JsonKey(name: 'deadline') @required String deadline,
+    @JsonKey(name: 'deadline') String? deadline,
 
     /// .
-    @JsonKey(name: 'description') @required String description,
+    @JsonKey(name: 'description') required String description,
 
     /// .
-    @JsonKey(name: 'section') @required String section,
+    @JsonKey(name: 'section') required String section,
 
     /// .
-    @JsonKey(name: 'public') @required bool isPublic,
+    @Default(false) @JsonKey(name: 'public') required bool isPublic,
 
     /// .
-    @JsonKey(name: 'tags') @required List<String> tags,
+    @JsonKey(name: 'tags') required List<String> tags,
 
     /// .
-    @JsonKey(name: 'items') @required List<TaskItems> items,
+    @JsonKey(name: 'items') required List<TaskItems> items,
   }) = _TaskPreview;
 
   factory TaskPreview.fromJson(Map<String, dynamic> json) => _$TaskPreviewFromJson(json);

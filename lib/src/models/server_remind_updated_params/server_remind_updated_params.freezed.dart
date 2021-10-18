@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_remind_updated_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_remind_updated_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerRemindUpdatedParams _$ServerRemindUpdatedParamsFromJson(Map<String, dynamic> json) {
   return _ServerRemindUpdatedParams.fromJson(json);
 }
@@ -16,32 +21,29 @@ ServerRemindUpdatedParams _$ServerRemindUpdatedParamsFromJson(Map<String, dynami
 class _$ServerRemindUpdatedParamsTearOff {
   const _$ServerRemindUpdatedParamsTearOff();
 
-// ignore: unused_element
-  _ServerRemindUpdatedParams call({@required @JsonKey(name: 'reminds') List<Remind> reminds}) {
+  _ServerRemindUpdatedParams call({@JsonKey(name: 'reminds') required List<Remind> reminds}) {
     return _ServerRemindUpdatedParams(
       reminds: reminds,
     );
   }
 
-// ignore: unused_element
   ServerRemindUpdatedParams fromJson(Map<String, Object> json) {
     return ServerRemindUpdatedParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerRemindUpdatedParams = _$ServerRemindUpdatedParamsTearOff();
 
 /// @nodoc
 mixin _$ServerRemindUpdatedParams {
   /// Remind information.
   @JsonKey(name: 'reminds')
-  List<Remind> get reminds;
+  List<Remind> get reminds => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerRemindUpdatedParamsCopyWith<ServerRemindUpdatedParams> get copyWith;
+  $ServerRemindUpdatedParamsCopyWith<ServerRemindUpdatedParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -62,10 +64,13 @@ class _$ServerRemindUpdatedParamsCopyWithImpl<$Res> implements $ServerRemindUpda
 
   @override
   $Res call({
-    Object reminds = freezed,
+    Object? reminds = freezed,
   }) {
     return _then(_value.copyWith(
-      reminds: reminds == freezed ? _value.reminds : reminds as List<Remind>,
+      reminds: reminds == freezed
+          ? _value.reminds
+          : reminds // ignore: cast_nullable_to_non_nullable
+              as List<Remind>,
     ));
   }
 }
@@ -91,22 +96,24 @@ class __$ServerRemindUpdatedParamsCopyWithImpl<$Res> extends _$ServerRemindUpdat
 
   @override
   $Res call({
-    Object reminds = freezed,
+    Object? reminds = freezed,
   }) {
     return _then(_ServerRemindUpdatedParams(
-      reminds: reminds == freezed ? _value.reminds : reminds as List<Remind>,
+      reminds: reminds == freezed
+          ? _value.reminds
+          : reminds // ignore: cast_nullable_to_non_nullable
+              as List<Remind>,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerRemindUpdatedParams implements _ServerRemindUpdatedParams {
-  const _$_ServerRemindUpdatedParams({@required @JsonKey(name: 'reminds') this.reminds}) : assert(reminds != null);
+  const _$_ServerRemindUpdatedParams({@JsonKey(name: 'reminds') required this.reminds});
 
   factory _$_ServerRemindUpdatedParams.fromJson(Map<String, dynamic> json) =>
-      _$_$_ServerRemindUpdatedParamsFromJson(json);
+      _$$_ServerRemindUpdatedParamsFromJson(json);
 
   @override
 
@@ -136,12 +143,12 @@ class _$_ServerRemindUpdatedParams implements _ServerRemindUpdatedParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerRemindUpdatedParamsToJson(this);
+    return _$$_ServerRemindUpdatedParamsToJson(this);
   }
 }
 
 abstract class _ServerRemindUpdatedParams implements ServerRemindUpdatedParams {
-  const factory _ServerRemindUpdatedParams({@required @JsonKey(name: 'reminds') List<Remind> reminds}) =
+  const factory _ServerRemindUpdatedParams({@JsonKey(name: 'reminds') required List<Remind> reminds}) =
       _$_ServerRemindUpdatedParams;
 
   factory _ServerRemindUpdatedParams.fromJson(Map<String, dynamic> json) = _$_ServerRemindUpdatedParams.fromJson;
@@ -150,8 +157,8 @@ abstract class _ServerRemindUpdatedParams implements ServerRemindUpdatedParams {
 
   /// Remind information.
   @JsonKey(name: 'reminds')
-  List<Remind> get reminds;
+  List<Remind> get reminds => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerRemindUpdatedParamsCopyWith<_ServerRemindUpdatedParams> get copyWith;
+  _$ServerRemindUpdatedParamsCopyWith<_ServerRemindUpdatedParams> get copyWith => throw _privateConstructorUsedError;
 }

@@ -6,16 +6,16 @@ part 'deleted_team.g.dart';
 
 /// Team deletion message. Readonly.
 @freezed
-abstract class DeletedTeam with _$DeletedTeam {
+class DeletedTeam with _$DeletedTeam {
   const factory DeletedTeam({
     /// Team id.
-    @JsonKey(name: 'uid') @required String uid,
+    @JsonKey(name: 'uid') required String uid,
 
     /// Team deleted.
-    @JsonKey(name: 'is_archive') @required bool isArchive,
+    @Default(false) @JsonKey(name: 'is_archive') required bool isArchive,
 
     /// Object version.
-    @JsonKey(name: 'gentime') @required int gentime,
+    @JsonKey(name: 'gentime') required int gentime,
   }) = _DeletedTeam;
 
   factory DeletedTeam.fromJson(Map<String, dynamic> json) => _$DeletedTeamFromJson(json);

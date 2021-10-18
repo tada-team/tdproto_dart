@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'call_device.dart';
 
@@ -8,6 +9,10 @@ part of 'call_device.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 CallDevice _$CallDeviceFromJson(Map<String, dynamic> json) {
   return _CallDevice.fromJson(json);
 }
@@ -16,38 +21,35 @@ CallDevice _$CallDeviceFromJson(Map<String, dynamic> json) {
 class _$CallDeviceTearOff {
   const _$CallDeviceTearOff();
 
-// ignore: unused_element
   _CallDevice call(
-      {@required @JsonKey(name: 'muted') bool muted, @required @JsonKey(name: 'useragent') String useragent}) {
+      {@JsonKey(name: 'muted') required bool muted = false, @JsonKey(name: 'useragent') required String useragent}) {
     return _CallDevice(
       muted: muted,
       useragent: useragent,
     );
   }
 
-// ignore: unused_element
   CallDevice fromJson(Map<String, Object> json) {
     return CallDevice.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $CallDevice = _$CallDeviceTearOff();
 
 /// @nodoc
 mixin _$CallDevice {
   /// Device muted.
   @JsonKey(name: 'muted')
-  bool get muted;
+  bool get muted => throw _privateConstructorUsedError;
 
   /// Device description.
   @JsonKey(name: 'useragent')
-  String get useragent;
+  String get useragent => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $CallDeviceCopyWith<CallDevice> get copyWith;
+  $CallDeviceCopyWith<CallDevice> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -66,12 +68,18 @@ class _$CallDeviceCopyWithImpl<$Res> implements $CallDeviceCopyWith<$Res> {
 
   @override
   $Res call({
-    Object muted = freezed,
-    Object useragent = freezed,
+    Object? muted = freezed,
+    Object? useragent = freezed,
   }) {
     return _then(_value.copyWith(
-      muted: muted == freezed ? _value.muted : muted as bool,
-      useragent: useragent == freezed ? _value.useragent : useragent as String,
+      muted: muted == freezed
+          ? _value.muted
+          : muted // ignore: cast_nullable_to_non_nullable
+              as bool,
+      useragent: useragent == freezed
+          ? _value.useragent
+          : useragent // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -93,26 +101,29 @@ class __$CallDeviceCopyWithImpl<$Res> extends _$CallDeviceCopyWithImpl<$Res> imp
 
   @override
   $Res call({
-    Object muted = freezed,
-    Object useragent = freezed,
+    Object? muted = freezed,
+    Object? useragent = freezed,
   }) {
     return _then(_CallDevice(
-      muted: muted == freezed ? _value.muted : muted as bool,
-      useragent: useragent == freezed ? _value.useragent : useragent as String,
+      muted: muted == freezed
+          ? _value.muted
+          : muted // ignore: cast_nullable_to_non_nullable
+              as bool,
+      useragent: useragent == freezed
+          ? _value.useragent
+          : useragent // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_CallDevice implements _CallDevice {
   const _$_CallDevice(
-      {@required @JsonKey(name: 'muted') this.muted, @required @JsonKey(name: 'useragent') this.useragent})
-      : assert(muted != null),
-        assert(useragent != null);
+      {@JsonKey(name: 'muted') required this.muted = false, @JsonKey(name: 'useragent') required this.useragent});
 
-  factory _$_CallDevice.fromJson(Map<String, dynamic> json) => _$_$_CallDeviceFromJson(json);
+  factory _$_CallDevice.fromJson(Map<String, dynamic> json) => _$$_CallDeviceFromJson(json);
 
   @override
 
@@ -151,14 +162,14 @@ class _$_CallDevice implements _CallDevice {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_CallDeviceToJson(this);
+    return _$$_CallDeviceToJson(this);
   }
 }
 
 abstract class _CallDevice implements CallDevice {
   const factory _CallDevice(
-      {@required @JsonKey(name: 'muted') bool muted,
-      @required @JsonKey(name: 'useragent') String useragent}) = _$_CallDevice;
+      {@JsonKey(name: 'muted') required bool muted,
+      @JsonKey(name: 'useragent') required String useragent}) = _$_CallDevice;
 
   factory _CallDevice.fromJson(Map<String, dynamic> json) = _$_CallDevice.fromJson;
 
@@ -166,13 +177,13 @@ abstract class _CallDevice implements CallDevice {
 
   /// Device muted.
   @JsonKey(name: 'muted')
-  bool get muted;
+  bool get muted => throw _privateConstructorUsedError;
   @override
 
   /// Device description.
   @JsonKey(name: 'useragent')
-  String get useragent;
+  String get useragent => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$CallDeviceCopyWith<_CallDevice> get copyWith;
+  _$CallDeviceCopyWith<_CallDevice> get copyWith => throw _privateConstructorUsedError;
 }

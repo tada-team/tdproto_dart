@@ -6,19 +6,19 @@ part 'online_contact.g.dart';
 
 /// Contact online status.
 @freezed
-abstract class OnlineContact with _$OnlineContact {
+class OnlineContact with _$OnlineContact {
   const factory OnlineContact({
     /// Contact id.
-    @JsonKey(name: 'jid') @required String jid,
+    @JsonKey(name: 'jid') required String jid,
 
     /// Is away from keyboard.
-    @JsonKey(name: 'afk') bool afk,
+    @Default(false) @JsonKey(name: 'afk') bool? afk,
 
     /// Focus mode enabled.
-    @JsonKey(name: 'focused') bool focused,
+    @Default(false) @JsonKey(name: 'focused') bool? focused,
 
     /// Is mobile client.
-    @JsonKey(name: 'mobile') @required bool mobile,
+    @Default(false) @JsonKey(name: 'mobile') required bool mobile,
   }) = _OnlineContact;
 
   factory OnlineContact.fromJson(Map<String, dynamic> json) => _$OnlineContactFromJson(json);

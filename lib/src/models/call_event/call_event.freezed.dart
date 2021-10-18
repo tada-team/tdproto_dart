@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'call_event.dart';
 
@@ -8,6 +9,10 @@ part of 'call_event.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 CallEvent _$CallEventFromJson(Map<String, dynamic> json) {
   return _CallEvent.fromJson(json);
 }
@@ -16,18 +21,17 @@ CallEvent _$CallEventFromJson(Map<String, dynamic> json) {
 class _$CallEventTearOff {
   const _$CallEventTearOff();
 
-// ignore: unused_element
   _CallEvent call(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'buzz') bool buzz,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @JsonKey(name: 'start') @DateTimeConverter() DateTime start,
-      @JsonKey(name: 'finish') @DateTimeConverter() DateTime finish,
-      @required @JsonKey(name: 'audiorecord') bool audiorecord,
-      @JsonKey(name: 'onliners') List<CallOnliner> onliners,
-      @required @JsonKey(name: 'gentime') int gentime,
-      @required @Deprecated('Deprecated: use gentime or created.') @JsonKey(name: 'timestamp') int timestamp}) {
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'buzz') bool? buzz = false,
+      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
+      @JsonKey(name: 'finish') @DateTimeConverter() DateTime? finish,
+      @JsonKey(name: 'audiorecord') required bool audiorecord = false,
+      @JsonKey(name: 'onliners') List<CallOnliner>? onliners,
+      @JsonKey(name: 'gentime') required int gentime,
+      @Deprecated('Deprecated: use gentime or created.') @JsonKey(name: 'timestamp') required int timestamp}) {
     return _CallEvent(
       jid: jid,
       uid: uid,
@@ -42,65 +46,63 @@ class _$CallEventTearOff {
     );
   }
 
-// ignore: unused_element
   CallEvent fromJson(Map<String, Object> json) {
     return CallEvent.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $CallEvent = _$CallEventTearOff();
 
 /// @nodoc
 mixin _$CallEvent {
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
   /// Call id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// Call buzzing.
   @JsonKey(name: 'buzz')
-  bool get buzz;
+  bool? get buzz => throw _privateConstructorUsedError;
 
   /// Creation date, iso datetime.
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created;
+  DateTime get created => throw _privateConstructorUsedError;
 
   /// Call start. For direct calls can be empty when buzzing.
   @JsonKey(name: 'start')
   @DateTimeConverter()
-  DateTime get start;
+  DateTime? get start => throw _privateConstructorUsedError;
 
   /// Call finish.
   @JsonKey(name: 'finish')
   @DateTimeConverter()
-  DateTime get finish;
+  DateTime? get finish => throw _privateConstructorUsedError;
 
   /// Call record enabled.
   @JsonKey(name: 'audiorecord')
-  bool get audiorecord;
+  bool get audiorecord => throw _privateConstructorUsedError;
 
   /// Call participants.
   @JsonKey(name: 'onliners')
-  List<CallOnliner> get onliners;
+  List<CallOnliner>? get onliners => throw _privateConstructorUsedError;
 
   /// Version.
   @JsonKey(name: 'gentime')
-  int get gentime;
+  int get gentime => throw _privateConstructorUsedError;
 
   /// Deprecated: use gentime or created.
   @Deprecated('Deprecated: use gentime or created.')
   @JsonKey(name: 'timestamp')
-  int get timestamp;
+  int get timestamp => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $CallEventCopyWith<CallEvent> get copyWith;
+  $CallEventCopyWith<CallEvent> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -109,12 +111,12 @@ abstract class $CallEventCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'buzz') bool buzz,
+      @JsonKey(name: 'buzz') bool? buzz,
       @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @JsonKey(name: 'start') @DateTimeConverter() DateTime start,
-      @JsonKey(name: 'finish') @DateTimeConverter() DateTime finish,
+      @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
+      @JsonKey(name: 'finish') @DateTimeConverter() DateTime? finish,
       @JsonKey(name: 'audiorecord') bool audiorecord,
-      @JsonKey(name: 'onliners') List<CallOnliner> onliners,
+      @JsonKey(name: 'onliners') List<CallOnliner>? onliners,
       @JsonKey(name: 'gentime') int gentime,
       @Deprecated('Deprecated: use gentime or created.') @JsonKey(name: 'timestamp') int timestamp});
 }
@@ -129,28 +131,58 @@ class _$CallEventCopyWithImpl<$Res> implements $CallEventCopyWith<$Res> {
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object uid = freezed,
-    Object buzz = freezed,
-    Object created = freezed,
-    Object start = freezed,
-    Object finish = freezed,
-    Object audiorecord = freezed,
-    Object onliners = freezed,
-    Object gentime = freezed,
-    Object timestamp = freezed,
+    Object? jid = freezed,
+    Object? uid = freezed,
+    Object? buzz = freezed,
+    Object? created = freezed,
+    Object? start = freezed,
+    Object? finish = freezed,
+    Object? audiorecord = freezed,
+    Object? onliners = freezed,
+    Object? gentime = freezed,
+    Object? timestamp = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
-      uid: uid == freezed ? _value.uid : uid as String,
-      buzz: buzz == freezed ? _value.buzz : buzz as bool,
-      created: created == freezed ? _value.created : created as DateTime,
-      start: start == freezed ? _value.start : start as DateTime,
-      finish: finish == freezed ? _value.finish : finish as DateTime,
-      audiorecord: audiorecord == freezed ? _value.audiorecord : audiorecord as bool,
-      onliners: onliners == freezed ? _value.onliners : onliners as List<CallOnliner>,
-      gentime: gentime == freezed ? _value.gentime : gentime as int,
-      timestamp: timestamp == freezed ? _value.timestamp : timestamp as int,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      buzz: buzz == freezed
+          ? _value.buzz
+          : buzz // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      created: created == freezed
+          ? _value.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      start: start == freezed
+          ? _value.start
+          : start // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      finish: finish == freezed
+          ? _value.finish
+          : finish // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      audiorecord: audiorecord == freezed
+          ? _value.audiorecord
+          : audiorecord // ignore: cast_nullable_to_non_nullable
+              as bool,
+      onliners: onliners == freezed
+          ? _value.onliners
+          : onliners // ignore: cast_nullable_to_non_nullable
+              as List<CallOnliner>?,
+      gentime: gentime == freezed
+          ? _value.gentime
+          : gentime // ignore: cast_nullable_to_non_nullable
+              as int,
+      timestamp: timestamp == freezed
+          ? _value.timestamp
+          : timestamp // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -162,12 +194,12 @@ abstract class _$CallEventCopyWith<$Res> implements $CallEventCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'buzz') bool buzz,
+      @JsonKey(name: 'buzz') bool? buzz,
       @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @JsonKey(name: 'start') @DateTimeConverter() DateTime start,
-      @JsonKey(name: 'finish') @DateTimeConverter() DateTime finish,
+      @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
+      @JsonKey(name: 'finish') @DateTimeConverter() DateTime? finish,
       @JsonKey(name: 'audiorecord') bool audiorecord,
-      @JsonKey(name: 'onliners') List<CallOnliner> onliners,
+      @JsonKey(name: 'onliners') List<CallOnliner>? onliners,
       @JsonKey(name: 'gentime') int gentime,
       @Deprecated('Deprecated: use gentime or created.') @JsonKey(name: 'timestamp') int timestamp});
 }
@@ -182,55 +214,78 @@ class __$CallEventCopyWithImpl<$Res> extends _$CallEventCopyWithImpl<$Res> imple
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object uid = freezed,
-    Object buzz = freezed,
-    Object created = freezed,
-    Object start = freezed,
-    Object finish = freezed,
-    Object audiorecord = freezed,
-    Object onliners = freezed,
-    Object gentime = freezed,
-    Object timestamp = freezed,
+    Object? jid = freezed,
+    Object? uid = freezed,
+    Object? buzz = freezed,
+    Object? created = freezed,
+    Object? start = freezed,
+    Object? finish = freezed,
+    Object? audiorecord = freezed,
+    Object? onliners = freezed,
+    Object? gentime = freezed,
+    Object? timestamp = freezed,
   }) {
     return _then(_CallEvent(
-      jid: jid == freezed ? _value.jid : jid as String,
-      uid: uid == freezed ? _value.uid : uid as String,
-      buzz: buzz == freezed ? _value.buzz : buzz as bool,
-      created: created == freezed ? _value.created : created as DateTime,
-      start: start == freezed ? _value.start : start as DateTime,
-      finish: finish == freezed ? _value.finish : finish as DateTime,
-      audiorecord: audiorecord == freezed ? _value.audiorecord : audiorecord as bool,
-      onliners: onliners == freezed ? _value.onliners : onliners as List<CallOnliner>,
-      gentime: gentime == freezed ? _value.gentime : gentime as int,
-      timestamp: timestamp == freezed ? _value.timestamp : timestamp as int,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      buzz: buzz == freezed
+          ? _value.buzz
+          : buzz // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      created: created == freezed
+          ? _value.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      start: start == freezed
+          ? _value.start
+          : start // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      finish: finish == freezed
+          ? _value.finish
+          : finish // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      audiorecord: audiorecord == freezed
+          ? _value.audiorecord
+          : audiorecord // ignore: cast_nullable_to_non_nullable
+              as bool,
+      onliners: onliners == freezed
+          ? _value.onliners
+          : onliners // ignore: cast_nullable_to_non_nullable
+              as List<CallOnliner>?,
+      gentime: gentime == freezed
+          ? _value.gentime
+          : gentime // ignore: cast_nullable_to_non_nullable
+              as int,
+      timestamp: timestamp == freezed
+          ? _value.timestamp
+          : timestamp // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_CallEvent implements _CallEvent {
   const _$_CallEvent(
-      {@required @JsonKey(name: 'jid') this.jid,
-      @required @JsonKey(name: 'uid') this.uid,
-      @JsonKey(name: 'buzz') this.buzz,
-      @required @JsonKey(name: 'created') @DateTimeConverter() this.created,
+      {@JsonKey(name: 'jid') required this.jid,
+      @JsonKey(name: 'uid') required this.uid,
+      @JsonKey(name: 'buzz') this.buzz = false,
+      @JsonKey(name: 'created') @DateTimeConverter() required this.created,
       @JsonKey(name: 'start') @DateTimeConverter() this.start,
       @JsonKey(name: 'finish') @DateTimeConverter() this.finish,
-      @required @JsonKey(name: 'audiorecord') this.audiorecord,
+      @JsonKey(name: 'audiorecord') required this.audiorecord = false,
       @JsonKey(name: 'onliners') this.onliners,
-      @required @JsonKey(name: 'gentime') this.gentime,
-      @required @Deprecated('Deprecated: use gentime or created.') @JsonKey(name: 'timestamp') this.timestamp})
-      : assert(jid != null),
-        assert(uid != null),
-        assert(created != null),
-        assert(audiorecord != null),
-        assert(gentime != null),
-        assert(timestamp != null);
+      @JsonKey(name: 'gentime') required this.gentime,
+      @Deprecated('Deprecated: use gentime or created.') @JsonKey(name: 'timestamp') required this.timestamp});
 
-  factory _$_CallEvent.fromJson(Map<String, dynamic> json) => _$_$_CallEventFromJson(json);
+  factory _$_CallEvent.fromJson(Map<String, dynamic> json) => _$$_CallEventFromJson(json);
 
   @override
 
@@ -246,7 +301,7 @@ class _$_CallEvent implements _CallEvent {
 
   /// Call buzzing.
   @JsonKey(name: 'buzz')
-  final bool buzz;
+  final bool? buzz;
   @override
 
   /// Creation date, iso datetime.
@@ -258,13 +313,13 @@ class _$_CallEvent implements _CallEvent {
   /// Call start. For direct calls can be empty when buzzing.
   @JsonKey(name: 'start')
   @DateTimeConverter()
-  final DateTime start;
+  final DateTime? start;
   @override
 
   /// Call finish.
   @JsonKey(name: 'finish')
   @DateTimeConverter()
-  final DateTime finish;
+  final DateTime? finish;
   @override
 
   /// Call record enabled.
@@ -274,7 +329,7 @@ class _$_CallEvent implements _CallEvent {
 
   /// Call participants.
   @JsonKey(name: 'onliners')
-  final List<CallOnliner> onliners;
+  final List<CallOnliner>? onliners;
   @override
 
   /// Version.
@@ -330,22 +385,22 @@ class _$_CallEvent implements _CallEvent {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_CallEventToJson(this);
+    return _$$_CallEventToJson(this);
   }
 }
 
 abstract class _CallEvent implements CallEvent {
   const factory _CallEvent(
-          {@required @JsonKey(name: 'jid') String jid,
-          @required @JsonKey(name: 'uid') String uid,
-          @JsonKey(name: 'buzz') bool buzz,
-          @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-          @JsonKey(name: 'start') @DateTimeConverter() DateTime start,
-          @JsonKey(name: 'finish') @DateTimeConverter() DateTime finish,
-          @required @JsonKey(name: 'audiorecord') bool audiorecord,
-          @JsonKey(name: 'onliners') List<CallOnliner> onliners,
-          @required @JsonKey(name: 'gentime') int gentime,
-          @required @Deprecated('Deprecated: use gentime or created.') @JsonKey(name: 'timestamp') int timestamp}) =
+          {@JsonKey(name: 'jid') required String jid,
+          @JsonKey(name: 'uid') required String uid,
+          @JsonKey(name: 'buzz') bool? buzz,
+          @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+          @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
+          @JsonKey(name: 'finish') @DateTimeConverter() DateTime? finish,
+          @JsonKey(name: 'audiorecord') required bool audiorecord,
+          @JsonKey(name: 'onliners') List<CallOnliner>? onliners,
+          @JsonKey(name: 'gentime') required int gentime,
+          @Deprecated('Deprecated: use gentime or created.') @JsonKey(name: 'timestamp') required int timestamp}) =
       _$_CallEvent;
 
   factory _CallEvent.fromJson(Map<String, dynamic> json) = _$_CallEvent.fromJson;
@@ -354,57 +409,57 @@ abstract class _CallEvent implements CallEvent {
 
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Call id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// Call buzzing.
   @JsonKey(name: 'buzz')
-  bool get buzz;
+  bool? get buzz => throw _privateConstructorUsedError;
   @override
 
   /// Creation date, iso datetime.
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created;
+  DateTime get created => throw _privateConstructorUsedError;
   @override
 
   /// Call start. For direct calls can be empty when buzzing.
   @JsonKey(name: 'start')
   @DateTimeConverter()
-  DateTime get start;
+  DateTime? get start => throw _privateConstructorUsedError;
   @override
 
   /// Call finish.
   @JsonKey(name: 'finish')
   @DateTimeConverter()
-  DateTime get finish;
+  DateTime? get finish => throw _privateConstructorUsedError;
   @override
 
   /// Call record enabled.
   @JsonKey(name: 'audiorecord')
-  bool get audiorecord;
+  bool get audiorecord => throw _privateConstructorUsedError;
   @override
 
   /// Call participants.
   @JsonKey(name: 'onliners')
-  List<CallOnliner> get onliners;
+  List<CallOnliner>? get onliners => throw _privateConstructorUsedError;
   @override
 
   /// Version.
   @JsonKey(name: 'gentime')
-  int get gentime;
+  int get gentime => throw _privateConstructorUsedError;
   @override
 
   /// Deprecated: use gentime or created.
   @Deprecated('Deprecated: use gentime or created.')
   @JsonKey(name: 'timestamp')
-  int get timestamp;
+  int get timestamp => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$CallEventCopyWith<_CallEvent> get copyWith;
+  _$CallEventCopyWith<_CallEvent> get copyWith => throw _privateConstructorUsedError;
 }

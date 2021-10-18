@@ -6,16 +6,16 @@ part 'server_chat_composing.g.dart';
 
 /// Someone typing or recording audiomessage in chat.
 @freezed
-abstract class ServerChatComposing with _$ServerChatComposing {
+class ServerChatComposing with _$ServerChatComposing {
   const factory ServerChatComposing({
     /// .
-    @JsonKey(name: 'params') @required ServerChatComposingParams params,
+    @JsonKey(name: 'params') required ServerChatComposingParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerChatComposing;
 
   factory ServerChatComposing.fromJson(Map<String, dynamic> json) => _$ServerChatComposingFromJson(json);

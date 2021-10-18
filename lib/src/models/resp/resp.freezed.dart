@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'resp.dart';
 
@@ -8,6 +9,10 @@ part of 'resp.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Resp _$RespFromJson(Map<String, dynamic> json) {
   return _Resp.fromJson(json);
 }
@@ -16,15 +21,14 @@ Resp _$RespFromJson(Map<String, dynamic> json) {
 class _$RespTearOff {
   const _$RespTearOff();
 
-// ignore: unused_element
   _Resp call(
-      {@JsonKey(name: '_time') String debugTime,
-      @required @JsonKey(name: 'ok') bool ok,
-      @JsonKey(name: 'result') dynamic result,
-      @JsonKey(name: 'error') String error,
-      @JsonKey(name: 'details') String details,
-      @JsonKey(name: 'reason') String reason,
-      @JsonKey(name: 'markup') List<MarkupEntity> markup}) {
+      {@JsonKey(name: '_time') String? debugTime,
+      @JsonKey(name: 'ok') required bool ok = false,
+      @JsonKey(name: 'result') dynamic? result,
+      @JsonKey(name: 'error') String? error,
+      @JsonKey(name: 'details') String? details,
+      @JsonKey(name: 'reason') String? reason,
+      @JsonKey(name: 'markup') List<MarkupEntity>? markup}) {
     return _Resp(
       debugTime: debugTime,
       ok: ok,
@@ -36,62 +40,60 @@ class _$RespTearOff {
     );
   }
 
-// ignore: unused_element
   Resp fromJson(Map<String, Object> json) {
     return Resp.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Resp = _$RespTearOff();
 
 /// @nodoc
 mixin _$Resp {
   /// Server side work time.
   @JsonKey(name: '_time')
-  String get debugTime;
+  String? get debugTime => throw _privateConstructorUsedError;
 
   /// Request status.
   @JsonKey(name: 'ok')
-  bool get ok;
+  bool get ok => throw _privateConstructorUsedError;
 
   /// Result only if ok is true).
   @JsonKey(name: 'result')
-  dynamic get result;
+  dynamic? get result => throw _privateConstructorUsedError;
 
   /// Error (only if ok is false).
   @JsonKey(name: 'error')
-  String get error;
+  String? get error => throw _privateConstructorUsedError;
 
   /// Error (only if ok is false and Error is 'InvalidData').
   @JsonKey(name: 'details')
-  String get details;
+  String? get details => throw _privateConstructorUsedError;
 
   /// Reason (only if ok is false and Error is `AccessDenied`).
   @JsonKey(name: 'reason')
-  String get reason;
+  String? get reason => throw _privateConstructorUsedError;
 
   /// Reason markup (only if ok is false and Error is `AccessDenied`).
   @JsonKey(name: 'markup')
-  List<MarkupEntity> get markup;
+  List<MarkupEntity>? get markup => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $RespCopyWith<Resp> get copyWith;
+  $RespCopyWith<Resp> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $RespCopyWith<$Res> {
   factory $RespCopyWith(Resp value, $Res Function(Resp) then) = _$RespCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: '_time') String debugTime,
+      {@JsonKey(name: '_time') String? debugTime,
       @JsonKey(name: 'ok') bool ok,
-      @JsonKey(name: 'result') dynamic result,
-      @JsonKey(name: 'error') String error,
-      @JsonKey(name: 'details') String details,
-      @JsonKey(name: 'reason') String reason,
-      @JsonKey(name: 'markup') List<MarkupEntity> markup});
+      @JsonKey(name: 'result') dynamic? result,
+      @JsonKey(name: 'error') String? error,
+      @JsonKey(name: 'details') String? details,
+      @JsonKey(name: 'reason') String? reason,
+      @JsonKey(name: 'markup') List<MarkupEntity>? markup});
 }
 
 /// @nodoc
@@ -104,22 +106,43 @@ class _$RespCopyWithImpl<$Res> implements $RespCopyWith<$Res> {
 
   @override
   $Res call({
-    Object debugTime = freezed,
-    Object ok = freezed,
-    Object result = freezed,
-    Object error = freezed,
-    Object details = freezed,
-    Object reason = freezed,
-    Object markup = freezed,
+    Object? debugTime = freezed,
+    Object? ok = freezed,
+    Object? result = freezed,
+    Object? error = freezed,
+    Object? details = freezed,
+    Object? reason = freezed,
+    Object? markup = freezed,
   }) {
     return _then(_value.copyWith(
-      debugTime: debugTime == freezed ? _value.debugTime : debugTime as String,
-      ok: ok == freezed ? _value.ok : ok as bool,
-      result: result == freezed ? _value.result : result as dynamic,
-      error: error == freezed ? _value.error : error as String,
-      details: details == freezed ? _value.details : details as String,
-      reason: reason == freezed ? _value.reason : reason as String,
-      markup: markup == freezed ? _value.markup : markup as List<MarkupEntity>,
+      debugTime: debugTime == freezed
+          ? _value.debugTime
+          : debugTime // ignore: cast_nullable_to_non_nullable
+              as String?,
+      ok: ok == freezed
+          ? _value.ok
+          : ok // ignore: cast_nullable_to_non_nullable
+              as bool,
+      result: result == freezed
+          ? _value.result
+          : result // ignore: cast_nullable_to_non_nullable
+              as dynamic?,
+      error: error == freezed
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String?,
+      details: details == freezed
+          ? _value.details
+          : details // ignore: cast_nullable_to_non_nullable
+              as String?,
+      reason: reason == freezed
+          ? _value.reason
+          : reason // ignore: cast_nullable_to_non_nullable
+              as String?,
+      markup: markup == freezed
+          ? _value.markup
+          : markup // ignore: cast_nullable_to_non_nullable
+              as List<MarkupEntity>?,
     ));
   }
 }
@@ -129,13 +152,13 @@ abstract class _$RespCopyWith<$Res> implements $RespCopyWith<$Res> {
   factory _$RespCopyWith(_Resp value, $Res Function(_Resp) then) = __$RespCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: '_time') String debugTime,
+      {@JsonKey(name: '_time') String? debugTime,
       @JsonKey(name: 'ok') bool ok,
-      @JsonKey(name: 'result') dynamic result,
-      @JsonKey(name: 'error') String error,
-      @JsonKey(name: 'details') String details,
-      @JsonKey(name: 'reason') String reason,
-      @JsonKey(name: 'markup') List<MarkupEntity> markup});
+      @JsonKey(name: 'result') dynamic? result,
+      @JsonKey(name: 'error') String? error,
+      @JsonKey(name: 'details') String? details,
+      @JsonKey(name: 'reason') String? reason,
+      @JsonKey(name: 'markup') List<MarkupEntity>? markup});
 }
 
 /// @nodoc
@@ -147,47 +170,66 @@ class __$RespCopyWithImpl<$Res> extends _$RespCopyWithImpl<$Res> implements _$Re
 
   @override
   $Res call({
-    Object debugTime = freezed,
-    Object ok = freezed,
-    Object result = freezed,
-    Object error = freezed,
-    Object details = freezed,
-    Object reason = freezed,
-    Object markup = freezed,
+    Object? debugTime = freezed,
+    Object? ok = freezed,
+    Object? result = freezed,
+    Object? error = freezed,
+    Object? details = freezed,
+    Object? reason = freezed,
+    Object? markup = freezed,
   }) {
     return _then(_Resp(
-      debugTime: debugTime == freezed ? _value.debugTime : debugTime as String,
-      ok: ok == freezed ? _value.ok : ok as bool,
-      result: result == freezed ? _value.result : result as dynamic,
-      error: error == freezed ? _value.error : error as String,
-      details: details == freezed ? _value.details : details as String,
-      reason: reason == freezed ? _value.reason : reason as String,
-      markup: markup == freezed ? _value.markup : markup as List<MarkupEntity>,
+      debugTime: debugTime == freezed
+          ? _value.debugTime
+          : debugTime // ignore: cast_nullable_to_non_nullable
+              as String?,
+      ok: ok == freezed
+          ? _value.ok
+          : ok // ignore: cast_nullable_to_non_nullable
+              as bool,
+      result: result == freezed
+          ? _value.result
+          : result // ignore: cast_nullable_to_non_nullable
+              as dynamic?,
+      error: error == freezed
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String?,
+      details: details == freezed
+          ? _value.details
+          : details // ignore: cast_nullable_to_non_nullable
+              as String?,
+      reason: reason == freezed
+          ? _value.reason
+          : reason // ignore: cast_nullable_to_non_nullable
+              as String?,
+      markup: markup == freezed
+          ? _value.markup
+          : markup // ignore: cast_nullable_to_non_nullable
+              as List<MarkupEntity>?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Resp implements _Resp {
   const _$_Resp(
       {@JsonKey(name: '_time') this.debugTime,
-      @required @JsonKey(name: 'ok') this.ok,
+      @JsonKey(name: 'ok') required this.ok = false,
       @JsonKey(name: 'result') this.result,
       @JsonKey(name: 'error') this.error,
       @JsonKey(name: 'details') this.details,
       @JsonKey(name: 'reason') this.reason,
-      @JsonKey(name: 'markup') this.markup})
-      : assert(ok != null);
+      @JsonKey(name: 'markup') this.markup});
 
-  factory _$_Resp.fromJson(Map<String, dynamic> json) => _$_$_RespFromJson(json);
+  factory _$_Resp.fromJson(Map<String, dynamic> json) => _$$_RespFromJson(json);
 
   @override
 
   /// Server side work time.
   @JsonKey(name: '_time')
-  final String debugTime;
+  final String? debugTime;
   @override
 
   /// Request status.
@@ -197,27 +239,27 @@ class _$_Resp implements _Resp {
 
   /// Result only if ok is true).
   @JsonKey(name: 'result')
-  final dynamic result;
+  final dynamic? result;
   @override
 
   /// Error (only if ok is false).
   @JsonKey(name: 'error')
-  final String error;
+  final String? error;
   @override
 
   /// Error (only if ok is false and Error is 'InvalidData').
   @JsonKey(name: 'details')
-  final String details;
+  final String? details;
   @override
 
   /// Reason (only if ok is false and Error is `AccessDenied`).
   @JsonKey(name: 'reason')
-  final String reason;
+  final String? reason;
   @override
 
   /// Reason markup (only if ok is false and Error is `AccessDenied`).
   @JsonKey(name: 'markup')
-  final List<MarkupEntity> markup;
+  final List<MarkupEntity>? markup;
 
   @override
   String toString() {
@@ -255,19 +297,19 @@ class _$_Resp implements _Resp {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_RespToJson(this);
+    return _$$_RespToJson(this);
   }
 }
 
 abstract class _Resp implements Resp {
   const factory _Resp(
-      {@JsonKey(name: '_time') String debugTime,
-      @required @JsonKey(name: 'ok') bool ok,
-      @JsonKey(name: 'result') dynamic result,
-      @JsonKey(name: 'error') String error,
-      @JsonKey(name: 'details') String details,
-      @JsonKey(name: 'reason') String reason,
-      @JsonKey(name: 'markup') List<MarkupEntity> markup}) = _$_Resp;
+      {@JsonKey(name: '_time') String? debugTime,
+      @JsonKey(name: 'ok') required bool ok,
+      @JsonKey(name: 'result') dynamic? result,
+      @JsonKey(name: 'error') String? error,
+      @JsonKey(name: 'details') String? details,
+      @JsonKey(name: 'reason') String? reason,
+      @JsonKey(name: 'markup') List<MarkupEntity>? markup}) = _$_Resp;
 
   factory _Resp.fromJson(Map<String, dynamic> json) = _$_Resp.fromJson;
 
@@ -275,38 +317,38 @@ abstract class _Resp implements Resp {
 
   /// Server side work time.
   @JsonKey(name: '_time')
-  String get debugTime;
+  String? get debugTime => throw _privateConstructorUsedError;
   @override
 
   /// Request status.
   @JsonKey(name: 'ok')
-  bool get ok;
+  bool get ok => throw _privateConstructorUsedError;
   @override
 
   /// Result only if ok is true).
   @JsonKey(name: 'result')
-  dynamic get result;
+  dynamic? get result => throw _privateConstructorUsedError;
   @override
 
   /// Error (only if ok is false).
   @JsonKey(name: 'error')
-  String get error;
+  String? get error => throw _privateConstructorUsedError;
   @override
 
   /// Error (only if ok is false and Error is 'InvalidData').
   @JsonKey(name: 'details')
-  String get details;
+  String? get details => throw _privateConstructorUsedError;
   @override
 
   /// Reason (only if ok is false and Error is `AccessDenied`).
   @JsonKey(name: 'reason')
-  String get reason;
+  String? get reason => throw _privateConstructorUsedError;
   @override
 
   /// Reason markup (only if ok is false and Error is `AccessDenied`).
   @JsonKey(name: 'markup')
-  List<MarkupEntity> get markup;
+  List<MarkupEntity>? get markup => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$RespCopyWith<_Resp> get copyWith;
+  _$RespCopyWith<_Resp> get copyWith => throw _privateConstructorUsedError;
 }

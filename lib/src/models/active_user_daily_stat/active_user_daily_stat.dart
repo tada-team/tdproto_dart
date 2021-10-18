@@ -6,34 +6,34 @@ part 'active_user_daily_stat.g.dart';
 
 /// Active daily users statistics.
 @freezed
-abstract class ActiveUserDailyStat with _$ActiveUserDailyStat {
+class ActiveUserDailyStat with _$ActiveUserDailyStat {
   const factory ActiveUserDailyStat({
     /// .
-    @JsonKey(name: 'day') @required String day,
+    @JsonKey(name: 'day') required String day,
 
     /// .
-    @JsonKey(name: 'user_id') @required int userId,
+    @JsonKey(name: 'user_id') required int userId,
 
     /// .
-    @JsonKey(name: 'family_name') String familyName,
+    @JsonKey(name: 'family_name') String? familyName,
 
     /// .
-    @JsonKey(name: 'given_name') String givenName,
+    @JsonKey(name: 'given_name') String? givenName,
 
     /// .
-    @JsonKey(name: 'patronymic') String patronymic,
+    @JsonKey(name: 'patronymic') String? patronymic,
 
     /// .
-    @JsonKey(name: 'phone') String phone,
+    @JsonKey(name: 'phone') String? phone,
 
     /// .
-    @JsonKey(name: 'messages_count') int messagesCount,
+    @JsonKey(name: 'messages_count') int? messagesCount,
 
     /// .
-    @JsonKey(name: 'calls_count') int callsCount,
+    @JsonKey(name: 'calls_count') int? callsCount,
 
     /// .
-    @JsonKey(name: 'call_seconds_total') int callSecondsTotal,
+    @JsonKey(name: 'call_seconds_total') int? callSecondsTotal,
   }) = _ActiveUserDailyStat;
 
   factory ActiveUserDailyStat.fromJson(Map<String, dynamic> json) => _$ActiveUserDailyStatFromJson(json);

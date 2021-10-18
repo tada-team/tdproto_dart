@@ -6,46 +6,46 @@ part 'color_rule.g.dart';
 
 /// Set of rules to apply to tasks for coloring.
 @freezed
-abstract class ColorRule with _$ColorRule {
+class ColorRule with _$ColorRule {
   const factory ColorRule({
     /// Rule id.
-    @JsonKey(name: 'uid') @required String uid,
+    @JsonKey(name: 'uid') required String uid,
 
     /// Rule priority.
-    @JsonKey(name: 'priority') @required int priority,
+    @JsonKey(name: 'priority') required int priority,
 
     /// Rule description.
-    @JsonKey(name: 'description') String description,
+    @JsonKey(name: 'description') String? description,
 
     /// Color index.
-    @JsonKey(name: 'color_index') @required int colorIndex,
+    @JsonKey(name: 'color_index') required int colorIndex,
 
     /// Project filter enabled.
-    @JsonKey(name: 'section_enabled') bool projectEnabled,
+    @Default(false) @JsonKey(name: 'section_enabled') bool? projectEnabled,
 
     /// Project id if project filter enabled.
-    @JsonKey(name: 'section') String project,
+    @JsonKey(name: 'section') String? project,
 
     /// Tags filter enabled.
-    @JsonKey(name: 'tags_enabled') bool tagsEnabled,
+    @Default(false) @JsonKey(name: 'tags_enabled') bool? tagsEnabled,
 
     /// Tag ids if tags filter enabled.
-    @JsonKey(name: 'tags') List<String> tags,
+    @JsonKey(name: 'tags') List<String>? tags,
 
     /// Task status.
-    @JsonKey(name: 'task_status') String taskStatus,
+    @JsonKey(name: 'task_status') String? taskStatus,
 
     /// Task importance filter enabled.
-    @JsonKey(name: 'task_importance_enabled') bool taskImportanceEnabled,
+    @Default(false) @JsonKey(name: 'task_importance_enabled') bool? taskImportanceEnabled,
 
     /// Task importance if task importance filter enabled.
-    @JsonKey(name: 'task_importance') int taskImportance,
+    @JsonKey(name: 'task_importance') int? taskImportance,
 
     /// Task urgency filter enabled.
-    @JsonKey(name: 'task_urgency_enabled') bool taskUrgencyEnabled,
+    @Default(false) @JsonKey(name: 'task_urgency_enabled') bool? taskUrgencyEnabled,
 
     /// Task urgency if task urgency filter enabled.
-    @JsonKey(name: 'task_urgency') int taskUrgency,
+    @JsonKey(name: 'task_urgency') int? taskUrgency,
   }) = _ColorRule;
 
   factory ColorRule.fromJson(Map<String, dynamic> json) => _$ColorRuleFromJson(json);

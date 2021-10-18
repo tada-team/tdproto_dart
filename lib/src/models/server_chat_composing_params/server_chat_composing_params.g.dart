@@ -6,20 +6,19 @@ part of 'server_chat_composing_params.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ServerChatComposingParams _$_$_ServerChatComposingParamsFromJson(Map<String, dynamic> json) {
-  return _$_ServerChatComposingParams(
-    jid: json['jid'] as String,
-    actor: json['actor'] as String,
-    composing: json['composing'] as bool,
-    isAudio: json['is_audio'] as bool,
-    validUntil: const DateTimeConverter().fromJson(json['valid_until'] as String),
-  );
-}
+_$_ServerChatComposingParams _$$_ServerChatComposingParamsFromJson(Map<String, dynamic> json) =>
+    _$_ServerChatComposingParams(
+      jid: json['jid'] as String,
+      actor: json['actor'] as String,
+      composing: json['composing'] as bool? ?? false,
+      isAudio: json['is_audio'] as bool? ?? false,
+      validUntil: json['valid_until'] == null ? null : DateTime.parse(json['valid_until'] as String),
+    );
 
-Map<String, dynamic> _$_$_ServerChatComposingParamsToJson(_$_ServerChatComposingParams instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ServerChatComposingParamsToJson(_$_ServerChatComposingParams instance) => <String, dynamic>{
       'jid': instance.jid,
       'actor': instance.actor,
       'composing': instance.composing,
       'is_audio': instance.isAudio,
-      'valid_until': const DateTimeConverter().toJson(instance.validUntil),
+      'valid_until': instance.validUntil?.toIso8601String(),
     };

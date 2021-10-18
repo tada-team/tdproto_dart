@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'message_push.dart';
 
@@ -8,6 +9,10 @@ part of 'message_push.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 MessagePush _$MessagePushFromJson(Map<String, dynamic> json) {
   return _MessagePush.fromJson(json);
 }
@@ -16,19 +21,18 @@ MessagePush _$MessagePushFromJson(Map<String, dynamic> json) {
 class _$MessagePushTearOff {
   const _$MessagePushTearOff();
 
-// ignore: unused_element
   _MessagePush call(
-      {@required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'subtitle') String subtitle,
-      @required @JsonKey(name: 'message') String message,
-      @required @JsonKey(name: 'icon_url') String iconUrl,
-      @required @JsonKey(name: 'click_action') String clickAction,
-      @required @JsonKey(name: 'tag') String tag,
-      @required @JsonKey(name: 'team') String team,
-      @required @JsonKey(name: 'sender') String sender,
-      @required @JsonKey(name: 'chat') String chat,
-      @required @JsonKey(name: 'message_id') String messageId,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created}) {
+      {@JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'subtitle') required String subtitle,
+      @JsonKey(name: 'message') required String message,
+      @JsonKey(name: 'icon_url') required String iconUrl,
+      @JsonKey(name: 'click_action') required String clickAction,
+      @JsonKey(name: 'tag') required String tag,
+      @JsonKey(name: 'team') required String team,
+      @JsonKey(name: 'sender') required String sender,
+      @JsonKey(name: 'chat') required String chat,
+      @JsonKey(name: 'message_id') required String messageId,
+      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created}) {
     return _MessagePush(
       title: title,
       subtitle: subtitle,
@@ -44,66 +48,64 @@ class _$MessagePushTearOff {
     );
   }
 
-// ignore: unused_element
   MessagePush fromJson(Map<String, Object> json) {
     return MessagePush.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $MessagePush = _$MessagePushTearOff();
 
 /// @nodoc
 mixin _$MessagePush {
   /// Push title.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
 
   /// Push subtitle.
   @JsonKey(name: 'subtitle')
-  String get subtitle;
+  String get subtitle => throw _privateConstructorUsedError;
 
   /// Push body.
   @JsonKey(name: 'message')
-  String get message;
+  String get message => throw _privateConstructorUsedError;
 
   /// Absolute url to push icon.
   @JsonKey(name: 'icon_url')
-  String get iconUrl;
+  String get iconUrl => throw _privateConstructorUsedError;
 
   /// Url opened on click.
   @JsonKey(name: 'click_action')
-  String get clickAction;
+  String get clickAction => throw _privateConstructorUsedError;
 
   /// Push tag (for join pushes).
   @JsonKey(name: 'tag')
-  String get tag;
+  String get tag => throw _privateConstructorUsedError;
 
   /// Team uid.
   @JsonKey(name: 'team')
-  String get team;
+  String get team => throw _privateConstructorUsedError;
 
   /// Sender contact id.
   @JsonKey(name: 'sender')
-  String get sender;
+  String get sender => throw _privateConstructorUsedError;
 
   /// Chat id.
   @JsonKey(name: 'chat')
-  String get chat;
+  String get chat => throw _privateConstructorUsedError;
 
   /// Message id.
   @JsonKey(name: 'message_id')
-  String get messageId;
+  String get messageId => throw _privateConstructorUsedError;
 
   /// Message creation iso datetime.
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created;
+  DateTime get created => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $MessagePushCopyWith<MessagePush> get copyWith;
+  $MessagePushCopyWith<MessagePush> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -133,30 +135,63 @@ class _$MessagePushCopyWithImpl<$Res> implements $MessagePushCopyWith<$Res> {
 
   @override
   $Res call({
-    Object title = freezed,
-    Object subtitle = freezed,
-    Object message = freezed,
-    Object iconUrl = freezed,
-    Object clickAction = freezed,
-    Object tag = freezed,
-    Object team = freezed,
-    Object sender = freezed,
-    Object chat = freezed,
-    Object messageId = freezed,
-    Object created = freezed,
+    Object? title = freezed,
+    Object? subtitle = freezed,
+    Object? message = freezed,
+    Object? iconUrl = freezed,
+    Object? clickAction = freezed,
+    Object? tag = freezed,
+    Object? team = freezed,
+    Object? sender = freezed,
+    Object? chat = freezed,
+    Object? messageId = freezed,
+    Object? created = freezed,
   }) {
     return _then(_value.copyWith(
-      title: title == freezed ? _value.title : title as String,
-      subtitle: subtitle == freezed ? _value.subtitle : subtitle as String,
-      message: message == freezed ? _value.message : message as String,
-      iconUrl: iconUrl == freezed ? _value.iconUrl : iconUrl as String,
-      clickAction: clickAction == freezed ? _value.clickAction : clickAction as String,
-      tag: tag == freezed ? _value.tag : tag as String,
-      team: team == freezed ? _value.team : team as String,
-      sender: sender == freezed ? _value.sender : sender as String,
-      chat: chat == freezed ? _value.chat : chat as String,
-      messageId: messageId == freezed ? _value.messageId : messageId as String,
-      created: created == freezed ? _value.created : created as DateTime,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      subtitle: subtitle == freezed
+          ? _value.subtitle
+          : subtitle // ignore: cast_nullable_to_non_nullable
+              as String,
+      message: message == freezed
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String,
+      iconUrl: iconUrl == freezed
+          ? _value.iconUrl
+          : iconUrl // ignore: cast_nullable_to_non_nullable
+              as String,
+      clickAction: clickAction == freezed
+          ? _value.clickAction
+          : clickAction // ignore: cast_nullable_to_non_nullable
+              as String,
+      tag: tag == freezed
+          ? _value.tag
+          : tag // ignore: cast_nullable_to_non_nullable
+              as String,
+      team: team == freezed
+          ? _value.team
+          : team // ignore: cast_nullable_to_non_nullable
+              as String,
+      sender: sender == freezed
+          ? _value.sender
+          : sender // ignore: cast_nullable_to_non_nullable
+              as String,
+      chat: chat == freezed
+          ? _value.chat
+          : chat // ignore: cast_nullable_to_non_nullable
+              as String,
+      messageId: messageId == freezed
+          ? _value.messageId
+          : messageId // ignore: cast_nullable_to_non_nullable
+              as String,
+      created: created == freezed
+          ? _value.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as DateTime,
     ));
   }
 }
@@ -190,63 +225,84 @@ class __$MessagePushCopyWithImpl<$Res> extends _$MessagePushCopyWithImpl<$Res> i
 
   @override
   $Res call({
-    Object title = freezed,
-    Object subtitle = freezed,
-    Object message = freezed,
-    Object iconUrl = freezed,
-    Object clickAction = freezed,
-    Object tag = freezed,
-    Object team = freezed,
-    Object sender = freezed,
-    Object chat = freezed,
-    Object messageId = freezed,
-    Object created = freezed,
+    Object? title = freezed,
+    Object? subtitle = freezed,
+    Object? message = freezed,
+    Object? iconUrl = freezed,
+    Object? clickAction = freezed,
+    Object? tag = freezed,
+    Object? team = freezed,
+    Object? sender = freezed,
+    Object? chat = freezed,
+    Object? messageId = freezed,
+    Object? created = freezed,
   }) {
     return _then(_MessagePush(
-      title: title == freezed ? _value.title : title as String,
-      subtitle: subtitle == freezed ? _value.subtitle : subtitle as String,
-      message: message == freezed ? _value.message : message as String,
-      iconUrl: iconUrl == freezed ? _value.iconUrl : iconUrl as String,
-      clickAction: clickAction == freezed ? _value.clickAction : clickAction as String,
-      tag: tag == freezed ? _value.tag : tag as String,
-      team: team == freezed ? _value.team : team as String,
-      sender: sender == freezed ? _value.sender : sender as String,
-      chat: chat == freezed ? _value.chat : chat as String,
-      messageId: messageId == freezed ? _value.messageId : messageId as String,
-      created: created == freezed ? _value.created : created as DateTime,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      subtitle: subtitle == freezed
+          ? _value.subtitle
+          : subtitle // ignore: cast_nullable_to_non_nullable
+              as String,
+      message: message == freezed
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String,
+      iconUrl: iconUrl == freezed
+          ? _value.iconUrl
+          : iconUrl // ignore: cast_nullable_to_non_nullable
+              as String,
+      clickAction: clickAction == freezed
+          ? _value.clickAction
+          : clickAction // ignore: cast_nullable_to_non_nullable
+              as String,
+      tag: tag == freezed
+          ? _value.tag
+          : tag // ignore: cast_nullable_to_non_nullable
+              as String,
+      team: team == freezed
+          ? _value.team
+          : team // ignore: cast_nullable_to_non_nullable
+              as String,
+      sender: sender == freezed
+          ? _value.sender
+          : sender // ignore: cast_nullable_to_non_nullable
+              as String,
+      chat: chat == freezed
+          ? _value.chat
+          : chat // ignore: cast_nullable_to_non_nullable
+              as String,
+      messageId: messageId == freezed
+          ? _value.messageId
+          : messageId // ignore: cast_nullable_to_non_nullable
+              as String,
+      created: created == freezed
+          ? _value.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as DateTime,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_MessagePush implements _MessagePush {
   const _$_MessagePush(
-      {@required @JsonKey(name: 'title') this.title,
-      @required @JsonKey(name: 'subtitle') this.subtitle,
-      @required @JsonKey(name: 'message') this.message,
-      @required @JsonKey(name: 'icon_url') this.iconUrl,
-      @required @JsonKey(name: 'click_action') this.clickAction,
-      @required @JsonKey(name: 'tag') this.tag,
-      @required @JsonKey(name: 'team') this.team,
-      @required @JsonKey(name: 'sender') this.sender,
-      @required @JsonKey(name: 'chat') this.chat,
-      @required @JsonKey(name: 'message_id') this.messageId,
-      @required @JsonKey(name: 'created') @DateTimeConverter() this.created})
-      : assert(title != null),
-        assert(subtitle != null),
-        assert(message != null),
-        assert(iconUrl != null),
-        assert(clickAction != null),
-        assert(tag != null),
-        assert(team != null),
-        assert(sender != null),
-        assert(chat != null),
-        assert(messageId != null),
-        assert(created != null);
+      {@JsonKey(name: 'title') required this.title,
+      @JsonKey(name: 'subtitle') required this.subtitle,
+      @JsonKey(name: 'message') required this.message,
+      @JsonKey(name: 'icon_url') required this.iconUrl,
+      @JsonKey(name: 'click_action') required this.clickAction,
+      @JsonKey(name: 'tag') required this.tag,
+      @JsonKey(name: 'team') required this.team,
+      @JsonKey(name: 'sender') required this.sender,
+      @JsonKey(name: 'chat') required this.chat,
+      @JsonKey(name: 'message_id') required this.messageId,
+      @JsonKey(name: 'created') @DateTimeConverter() required this.created});
 
-  factory _$_MessagePush.fromJson(Map<String, dynamic> json) => _$_$_MessagePushFromJson(json);
+  factory _$_MessagePush.fromJson(Map<String, dynamic> json) => _$$_MessagePushFromJson(json);
 
   @override
 
@@ -350,23 +406,23 @@ class _$_MessagePush implements _MessagePush {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_MessagePushToJson(this);
+    return _$$_MessagePushToJson(this);
   }
 }
 
 abstract class _MessagePush implements MessagePush {
   const factory _MessagePush(
-      {@required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'subtitle') String subtitle,
-      @required @JsonKey(name: 'message') String message,
-      @required @JsonKey(name: 'icon_url') String iconUrl,
-      @required @JsonKey(name: 'click_action') String clickAction,
-      @required @JsonKey(name: 'tag') String tag,
-      @required @JsonKey(name: 'team') String team,
-      @required @JsonKey(name: 'sender') String sender,
-      @required @JsonKey(name: 'chat') String chat,
-      @required @JsonKey(name: 'message_id') String messageId,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created}) = _$_MessagePush;
+      {@JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'subtitle') required String subtitle,
+      @JsonKey(name: 'message') required String message,
+      @JsonKey(name: 'icon_url') required String iconUrl,
+      @JsonKey(name: 'click_action') required String clickAction,
+      @JsonKey(name: 'tag') required String tag,
+      @JsonKey(name: 'team') required String team,
+      @JsonKey(name: 'sender') required String sender,
+      @JsonKey(name: 'chat') required String chat,
+      @JsonKey(name: 'message_id') required String messageId,
+      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created}) = _$_MessagePush;
 
   factory _MessagePush.fromJson(Map<String, dynamic> json) = _$_MessagePush.fromJson;
 
@@ -374,59 +430,59 @@ abstract class _MessagePush implements MessagePush {
 
   /// Push title.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
 
   /// Push subtitle.
   @JsonKey(name: 'subtitle')
-  String get subtitle;
+  String get subtitle => throw _privateConstructorUsedError;
   @override
 
   /// Push body.
   @JsonKey(name: 'message')
-  String get message;
+  String get message => throw _privateConstructorUsedError;
   @override
 
   /// Absolute url to push icon.
   @JsonKey(name: 'icon_url')
-  String get iconUrl;
+  String get iconUrl => throw _privateConstructorUsedError;
   @override
 
   /// Url opened on click.
   @JsonKey(name: 'click_action')
-  String get clickAction;
+  String get clickAction => throw _privateConstructorUsedError;
   @override
 
   /// Push tag (for join pushes).
   @JsonKey(name: 'tag')
-  String get tag;
+  String get tag => throw _privateConstructorUsedError;
   @override
 
   /// Team uid.
   @JsonKey(name: 'team')
-  String get team;
+  String get team => throw _privateConstructorUsedError;
   @override
 
   /// Sender contact id.
   @JsonKey(name: 'sender')
-  String get sender;
+  String get sender => throw _privateConstructorUsedError;
   @override
 
   /// Chat id.
   @JsonKey(name: 'chat')
-  String get chat;
+  String get chat => throw _privateConstructorUsedError;
   @override
 
   /// Message id.
   @JsonKey(name: 'message_id')
-  String get messageId;
+  String get messageId => throw _privateConstructorUsedError;
   @override
 
   /// Message creation iso datetime.
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created;
+  DateTime get created => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$MessagePushCopyWith<_MessagePush> get copyWith;
+  _$MessagePushCopyWith<_MessagePush> get copyWith => throw _privateConstructorUsedError;
 }

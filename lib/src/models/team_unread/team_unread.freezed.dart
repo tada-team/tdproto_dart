@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'team_unread.dart';
 
@@ -8,6 +9,10 @@ part of 'team_unread.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 TeamUnread _$TeamUnreadFromJson(Map<String, dynamic> json) {
   return _TeamUnread.fromJson(json);
 }
@@ -16,11 +21,10 @@ TeamUnread _$TeamUnreadFromJson(Map<String, dynamic> json) {
 class _$TeamUnreadTearOff {
   const _$TeamUnreadTearOff();
 
-// ignore: unused_element
   _TeamUnread call(
-      {@required @JsonKey(name: 'direct') Unread Direct,
-      @required @JsonKey(name: 'group') Unread Group,
-      @required @JsonKey(name: 'task') Unread Task}) {
+      {@JsonKey(name: 'direct') required Unread Direct,
+      @JsonKey(name: 'group') required Unread Group,
+      @JsonKey(name: 'task') required Unread Task}) {
     return _TeamUnread(
       Direct: Direct,
       Group: Group,
@@ -28,33 +32,31 @@ class _$TeamUnreadTearOff {
     );
   }
 
-// ignore: unused_element
   TeamUnread fromJson(Map<String, Object> json) {
     return TeamUnread.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $TeamUnread = _$TeamUnreadTearOff();
 
 /// @nodoc
 mixin _$TeamUnread {
   /// Manually added.
   @JsonKey(name: 'direct')
-  Unread get Direct;
+  Unread get Direct => throw _privateConstructorUsedError;
 
   /// Manually added.
   @JsonKey(name: 'group')
-  Unread get Group;
+  Unread get Group => throw _privateConstructorUsedError;
 
   /// Manually added.
   @JsonKey(name: 'task')
-  Unread get Task;
+  Unread get Task => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $TeamUnreadCopyWith<TeamUnread> get copyWith;
+  $TeamUnreadCopyWith<TeamUnread> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -80,22 +82,28 @@ class _$TeamUnreadCopyWithImpl<$Res> implements $TeamUnreadCopyWith<$Res> {
 
   @override
   $Res call({
-    Object Direct = freezed,
-    Object Group = freezed,
-    Object Task = freezed,
+    Object? Direct = freezed,
+    Object? Group = freezed,
+    Object? Task = freezed,
   }) {
     return _then(_value.copyWith(
-      Direct: Direct == freezed ? _value.Direct : Direct as Unread,
-      Group: Group == freezed ? _value.Group : Group as Unread,
-      Task: Task == freezed ? _value.Task : Task as Unread,
+      Direct: Direct == freezed
+          ? _value.Direct
+          : Direct // ignore: cast_nullable_to_non_nullable
+              as Unread,
+      Group: Group == freezed
+          ? _value.Group
+          : Group // ignore: cast_nullable_to_non_nullable
+              as Unread,
+      Task: Task == freezed
+          ? _value.Task
+          : Task // ignore: cast_nullable_to_non_nullable
+              as Unread,
     ));
   }
 
   @override
   $UnreadCopyWith<$Res> get Direct {
-    if (_value.Direct == null) {
-      return null;
-    }
     return $UnreadCopyWith<$Res>(_value.Direct, (value) {
       return _then(_value.copyWith(Direct: value));
     });
@@ -103,9 +111,6 @@ class _$TeamUnreadCopyWithImpl<$Res> implements $TeamUnreadCopyWith<$Res> {
 
   @override
   $UnreadCopyWith<$Res> get Group {
-    if (_value.Group == null) {
-      return null;
-    }
     return $UnreadCopyWith<$Res>(_value.Group, (value) {
       return _then(_value.copyWith(Group: value));
     });
@@ -113,9 +118,6 @@ class _$TeamUnreadCopyWithImpl<$Res> implements $TeamUnreadCopyWith<$Res> {
 
   @override
   $UnreadCopyWith<$Res> get Task {
-    if (_value.Task == null) {
-      return null;
-    }
     return $UnreadCopyWith<$Res>(_value.Task, (value) {
       return _then(_value.copyWith(Task: value));
     });
@@ -149,31 +151,36 @@ class __$TeamUnreadCopyWithImpl<$Res> extends _$TeamUnreadCopyWithImpl<$Res> imp
 
   @override
   $Res call({
-    Object Direct = freezed,
-    Object Group = freezed,
-    Object Task = freezed,
+    Object? Direct = freezed,
+    Object? Group = freezed,
+    Object? Task = freezed,
   }) {
     return _then(_TeamUnread(
-      Direct: Direct == freezed ? _value.Direct : Direct as Unread,
-      Group: Group == freezed ? _value.Group : Group as Unread,
-      Task: Task == freezed ? _value.Task : Task as Unread,
+      Direct: Direct == freezed
+          ? _value.Direct
+          : Direct // ignore: cast_nullable_to_non_nullable
+              as Unread,
+      Group: Group == freezed
+          ? _value.Group
+          : Group // ignore: cast_nullable_to_non_nullable
+              as Unread,
+      Task: Task == freezed
+          ? _value.Task
+          : Task // ignore: cast_nullable_to_non_nullable
+              as Unread,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_TeamUnread implements _TeamUnread {
   const _$_TeamUnread(
-      {@required @JsonKey(name: 'direct') this.Direct,
-      @required @JsonKey(name: 'group') this.Group,
-      @required @JsonKey(name: 'task') this.Task})
-      : assert(Direct != null),
-        assert(Group != null),
-        assert(Task != null);
+      {@JsonKey(name: 'direct') required this.Direct,
+      @JsonKey(name: 'group') required this.Group,
+      @JsonKey(name: 'task') required this.Task});
 
-  factory _$_TeamUnread.fromJson(Map<String, dynamic> json) => _$_$_TeamUnreadFromJson(json);
+  factory _$_TeamUnread.fromJson(Map<String, dynamic> json) => _$$_TeamUnreadFromJson(json);
 
   @override
 
@@ -218,15 +225,15 @@ class _$_TeamUnread implements _TeamUnread {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_TeamUnreadToJson(this);
+    return _$$_TeamUnreadToJson(this);
   }
 }
 
 abstract class _TeamUnread implements TeamUnread {
   const factory _TeamUnread(
-      {@required @JsonKey(name: 'direct') Unread Direct,
-      @required @JsonKey(name: 'group') Unread Group,
-      @required @JsonKey(name: 'task') Unread Task}) = _$_TeamUnread;
+      {@JsonKey(name: 'direct') required Unread Direct,
+      @JsonKey(name: 'group') required Unread Group,
+      @JsonKey(name: 'task') required Unread Task}) = _$_TeamUnread;
 
   factory _TeamUnread.fromJson(Map<String, dynamic> json) = _$_TeamUnread.fromJson;
 
@@ -234,18 +241,18 @@ abstract class _TeamUnread implements TeamUnread {
 
   /// Manually added.
   @JsonKey(name: 'direct')
-  Unread get Direct;
+  Unread get Direct => throw _privateConstructorUsedError;
   @override
 
   /// Manually added.
   @JsonKey(name: 'group')
-  Unread get Group;
+  Unread get Group => throw _privateConstructorUsedError;
   @override
 
   /// Manually added.
   @JsonKey(name: 'task')
-  Unread get Task;
+  Unread get Task => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TeamUnreadCopyWith<_TeamUnread> get copyWith;
+  _$TeamUnreadCopyWith<_TeamUnread> get copyWith => throw _privateConstructorUsedError;
 }

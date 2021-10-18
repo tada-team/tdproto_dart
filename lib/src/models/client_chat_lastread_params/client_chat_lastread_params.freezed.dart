@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'client_chat_lastread_params.dart';
 
@@ -8,6 +9,10 @@ part of 'client_chat_lastread_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ClientChatLastreadParams _$ClientChatLastreadParamsFromJson(Map<String, dynamic> json) {
   return _ClientChatLastreadParams.fromJson(json);
 }
@@ -16,38 +21,35 @@ ClientChatLastreadParams _$ClientChatLastreadParamsFromJson(Map<String, dynamic>
 class _$ClientChatLastreadParamsTearOff {
   const _$ClientChatLastreadParamsTearOff();
 
-// ignore: unused_element
   _ClientChatLastreadParams call(
-      {@required @JsonKey(name: 'jid') String jid, @JsonKey(name: 'last_read_message_id') String lastReadMessageId}) {
+      {@JsonKey(name: 'jid') required String jid, @JsonKey(name: 'last_read_message_id') String? lastReadMessageId}) {
     return _ClientChatLastreadParams(
       jid: jid,
       lastReadMessageId: lastReadMessageId,
     );
   }
 
-// ignore: unused_element
   ClientChatLastreadParams fromJson(Map<String, Object> json) {
     return ClientChatLastreadParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ClientChatLastreadParams = _$ClientChatLastreadParamsTearOff();
 
 /// @nodoc
 mixin _$ClientChatLastreadParams {
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
   /// Last read message id. Omitted = last message in chat.
   @JsonKey(name: 'last_read_message_id')
-  String get lastReadMessageId;
+  String? get lastReadMessageId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ClientChatLastreadParamsCopyWith<ClientChatLastreadParams> get copyWith;
+  $ClientChatLastreadParamsCopyWith<ClientChatLastreadParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -55,7 +57,7 @@ abstract class $ClientChatLastreadParamsCopyWith<$Res> {
   factory $ClientChatLastreadParamsCopyWith(
           ClientChatLastreadParams value, $Res Function(ClientChatLastreadParams) then) =
       _$ClientChatLastreadParamsCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'jid') String jid, @JsonKey(name: 'last_read_message_id') String lastReadMessageId});
+  $Res call({@JsonKey(name: 'jid') String jid, @JsonKey(name: 'last_read_message_id') String? lastReadMessageId});
 }
 
 /// @nodoc
@@ -68,12 +70,18 @@ class _$ClientChatLastreadParamsCopyWithImpl<$Res> implements $ClientChatLastrea
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object lastReadMessageId = freezed,
+    Object? jid = freezed,
+    Object? lastReadMessageId = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
-      lastReadMessageId: lastReadMessageId == freezed ? _value.lastReadMessageId : lastReadMessageId as String,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      lastReadMessageId: lastReadMessageId == freezed
+          ? _value.lastReadMessageId
+          : lastReadMessageId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -84,7 +92,7 @@ abstract class _$ClientChatLastreadParamsCopyWith<$Res> implements $ClientChatLa
           _ClientChatLastreadParams value, $Res Function(_ClientChatLastreadParams) then) =
       __$ClientChatLastreadParamsCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'jid') String jid, @JsonKey(name: 'last_read_message_id') String lastReadMessageId});
+  $Res call({@JsonKey(name: 'jid') String jid, @JsonKey(name: 'last_read_message_id') String? lastReadMessageId});
 }
 
 /// @nodoc
@@ -99,26 +107,29 @@ class __$ClientChatLastreadParamsCopyWithImpl<$Res> extends _$ClientChatLastread
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object lastReadMessageId = freezed,
+    Object? jid = freezed,
+    Object? lastReadMessageId = freezed,
   }) {
     return _then(_ClientChatLastreadParams(
-      jid: jid == freezed ? _value.jid : jid as String,
-      lastReadMessageId: lastReadMessageId == freezed ? _value.lastReadMessageId : lastReadMessageId as String,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      lastReadMessageId: lastReadMessageId == freezed
+          ? _value.lastReadMessageId
+          : lastReadMessageId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ClientChatLastreadParams implements _ClientChatLastreadParams {
   const _$_ClientChatLastreadParams(
-      {@required @JsonKey(name: 'jid') this.jid, @JsonKey(name: 'last_read_message_id') this.lastReadMessageId})
-      : assert(jid != null);
+      {@JsonKey(name: 'jid') required this.jid, @JsonKey(name: 'last_read_message_id') this.lastReadMessageId});
 
-  factory _$_ClientChatLastreadParams.fromJson(Map<String, dynamic> json) =>
-      _$_$_ClientChatLastreadParamsFromJson(json);
+  factory _$_ClientChatLastreadParams.fromJson(Map<String, dynamic> json) => _$$_ClientChatLastreadParamsFromJson(json);
 
   @override
 
@@ -129,7 +140,7 @@ class _$_ClientChatLastreadParams implements _ClientChatLastreadParams {
 
   /// Last read message id. Omitted = last message in chat.
   @JsonKey(name: 'last_read_message_id')
-  final String lastReadMessageId;
+  final String? lastReadMessageId;
 
   @override
   String toString() {
@@ -158,14 +169,14 @@ class _$_ClientChatLastreadParams implements _ClientChatLastreadParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ClientChatLastreadParamsToJson(this);
+    return _$$_ClientChatLastreadParamsToJson(this);
   }
 }
 
 abstract class _ClientChatLastreadParams implements ClientChatLastreadParams {
   const factory _ClientChatLastreadParams(
-      {@required @JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'last_read_message_id') String lastReadMessageId}) = _$_ClientChatLastreadParams;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'last_read_message_id') String? lastReadMessageId}) = _$_ClientChatLastreadParams;
 
   factory _ClientChatLastreadParams.fromJson(Map<String, dynamic> json) = _$_ClientChatLastreadParams.fromJson;
 
@@ -173,13 +184,13 @@ abstract class _ClientChatLastreadParams implements ClientChatLastreadParams {
 
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Last read message id. Omitted = last message in chat.
   @JsonKey(name: 'last_read_message_id')
-  String get lastReadMessageId;
+  String? get lastReadMessageId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ClientChatLastreadParamsCopyWith<_ClientChatLastreadParams> get copyWith;
+  _$ClientChatLastreadParamsCopyWith<_ClientChatLastreadParams> get copyWith => throw _privateConstructorUsedError;
 }

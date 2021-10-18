@@ -6,20 +6,18 @@ part of 'tariff.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_Tariff _$_$_TariffFromJson(Map<String, dynamic> json) {
-  return _$_Tariff(
-    uid: json['uid'] as String,
-    titleEn: json['title_en'] as String,
-    titleRu: json['title_ru'] as String,
-    price: json['price'] as String,
-    cloudSpace: json['cloud_space'] as int,
-    maxMembersInTeam: json['max_members_in_team'] as int,
-    maxParticipantsPerCall: json['max_participants_per_call'] as int,
-    maxUploadFilesize: json['max_upload_filesize'] as int,
-  );
-}
+_$_Tariff _$$_TariffFromJson(Map<String, dynamic> json) => _$_Tariff(
+      uid: json['uid'] as String,
+      titleEn: json['title_en'] as String,
+      titleRu: json['title_ru'] as String,
+      price: json['price'] as String?,
+      cloudSpace: json['cloud_space'] as int?,
+      maxMembersInTeam: json['max_members_in_team'] as int?,
+      maxParticipantsPerCall: json['max_participants_per_call'] as int?,
+      maxUploadFilesize: json['max_upload_filesize'] as int?,
+    );
 
-Map<String, dynamic> _$_$_TariffToJson(_$_Tariff instance) => <String, dynamic>{
+Map<String, dynamic> _$$_TariffToJson(_$_Tariff instance) => <String, dynamic>{
       'uid': instance.uid,
       'title_en': instance.titleEn,
       'title_ru': instance.titleRu,

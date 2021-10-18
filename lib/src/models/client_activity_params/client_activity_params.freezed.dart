@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'client_activity_params.dart';
 
@@ -8,6 +9,10 @@ part of 'client_activity_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ClientActivityParams _$ClientActivityParamsFromJson(Map<String, dynamic> json) {
   return _ClientActivityParams.fromJson(json);
 }
@@ -16,32 +21,29 @@ ClientActivityParams _$ClientActivityParamsFromJson(Map<String, dynamic> json) {
 class _$ClientActivityParamsTearOff {
   const _$ClientActivityParamsTearOff();
 
-// ignore: unused_element
-  _ClientActivityParams call({@required @JsonKey(name: 'afk') bool afk}) {
+  _ClientActivityParams call({@JsonKey(name: 'afk') required bool afk = false}) {
     return _ClientActivityParams(
       afk: afk,
     );
   }
 
-// ignore: unused_element
   ClientActivityParams fromJson(Map<String, Object> json) {
     return ClientActivityParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ClientActivityParams = _$ClientActivityParamsTearOff();
 
 /// @nodoc
 mixin _$ClientActivityParams {
   /// Is away from keyboard.
   @JsonKey(name: 'afk')
-  bool get afk;
+  bool get afk => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ClientActivityParamsCopyWith<ClientActivityParams> get copyWith;
+  $ClientActivityParamsCopyWith<ClientActivityParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -61,10 +63,13 @@ class _$ClientActivityParamsCopyWithImpl<$Res> implements $ClientActivityParamsC
 
   @override
   $Res call({
-    Object afk = freezed,
+    Object? afk = freezed,
   }) {
     return _then(_value.copyWith(
-      afk: afk == freezed ? _value.afk : afk as bool,
+      afk: afk == freezed
+          ? _value.afk
+          : afk // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -88,21 +93,23 @@ class __$ClientActivityParamsCopyWithImpl<$Res> extends _$ClientActivityParamsCo
 
   @override
   $Res call({
-    Object afk = freezed,
+    Object? afk = freezed,
   }) {
     return _then(_ClientActivityParams(
-      afk: afk == freezed ? _value.afk : afk as bool,
+      afk: afk == freezed
+          ? _value.afk
+          : afk // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ClientActivityParams implements _ClientActivityParams {
-  const _$_ClientActivityParams({@required @JsonKey(name: 'afk') this.afk}) : assert(afk != null);
+  const _$_ClientActivityParams({@JsonKey(name: 'afk') required this.afk = false});
 
-  factory _$_ClientActivityParams.fromJson(Map<String, dynamic> json) => _$_$_ClientActivityParamsFromJson(json);
+  factory _$_ClientActivityParams.fromJson(Map<String, dynamic> json) => _$$_ClientActivityParamsFromJson(json);
 
   @override
 
@@ -132,12 +139,12 @@ class _$_ClientActivityParams implements _ClientActivityParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ClientActivityParamsToJson(this);
+    return _$$_ClientActivityParamsToJson(this);
   }
 }
 
 abstract class _ClientActivityParams implements ClientActivityParams {
-  const factory _ClientActivityParams({@required @JsonKey(name: 'afk') bool afk}) = _$_ClientActivityParams;
+  const factory _ClientActivityParams({@JsonKey(name: 'afk') required bool afk}) = _$_ClientActivityParams;
 
   factory _ClientActivityParams.fromJson(Map<String, dynamic> json) = _$_ClientActivityParams.fromJson;
 
@@ -145,8 +152,8 @@ abstract class _ClientActivityParams implements ClientActivityParams {
 
   /// Is away from keyboard.
   @JsonKey(name: 'afk')
-  bool get afk;
+  bool get afk => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ClientActivityParamsCopyWith<_ClientActivityParams> get copyWith;
+  _$ClientActivityParamsCopyWith<_ClientActivityParams> get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'session.dart';
 
@@ -8,6 +9,10 @@ part of 'session.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Session _$SessionFromJson(Map<String, dynamic> json) {
   return _Session.fromJson(json);
 }
@@ -16,16 +21,15 @@ Session _$SessionFromJson(Map<String, dynamic> json) {
 class _$SessionTearOff {
   const _$SessionTearOff();
 
-// ignore: unused_element
   _Session call(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @JsonKey(name: 'lang') String lang,
-      @JsonKey(name: 'team') String team,
-      @JsonKey(name: 'is_mobile') bool isMobile,
-      @JsonKey(name: 'afk') bool afk,
-      @JsonKey(name: 'useragent') String useragent,
-      @JsonKey(name: 'addr') String addr}) {
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'lang') String? lang,
+      @JsonKey(name: 'team') String? team,
+      @JsonKey(name: 'is_mobile') bool? isMobile = false,
+      @JsonKey(name: 'afk') bool? afk = false,
+      @JsonKey(name: 'useragent') String? useragent,
+      @JsonKey(name: 'addr') String? addr}) {
     return _Session(
       uid: uid,
       created: created,
@@ -38,54 +42,52 @@ class _$SessionTearOff {
     );
   }
 
-// ignore: unused_element
   Session fromJson(Map<String, Object> json) {
     return Session.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Session = _$SessionTearOff();
 
 /// @nodoc
 mixin _$Session {
   /// Session id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// Creation datetime.
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created;
+  DateTime get created => throw _privateConstructorUsedError;
 
   /// Language code.
   @JsonKey(name: 'lang')
-  String get lang;
+  String? get lang => throw _privateConstructorUsedError;
 
   /// Team id.
   @JsonKey(name: 'team')
-  String get team;
+  String? get team => throw _privateConstructorUsedError;
 
   /// Mobile.
   @JsonKey(name: 'is_mobile')
-  bool get isMobile;
+  bool? get isMobile => throw _privateConstructorUsedError;
 
   /// Away from keyboard.
   @JsonKey(name: 'afk')
-  bool get afk;
+  bool? get afk => throw _privateConstructorUsedError;
 
   /// User agent.
   @JsonKey(name: 'useragent')
-  String get useragent;
+  String? get useragent => throw _privateConstructorUsedError;
 
   /// IP address.
   @JsonKey(name: 'addr')
-  String get addr;
+  String? get addr => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $SessionCopyWith<Session> get copyWith;
+  $SessionCopyWith<Session> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -94,12 +96,12 @@ abstract class $SessionCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @JsonKey(name: 'lang') String lang,
-      @JsonKey(name: 'team') String team,
-      @JsonKey(name: 'is_mobile') bool isMobile,
-      @JsonKey(name: 'afk') bool afk,
-      @JsonKey(name: 'useragent') String useragent,
-      @JsonKey(name: 'addr') String addr});
+      @JsonKey(name: 'lang') String? lang,
+      @JsonKey(name: 'team') String? team,
+      @JsonKey(name: 'is_mobile') bool? isMobile,
+      @JsonKey(name: 'afk') bool? afk,
+      @JsonKey(name: 'useragent') String? useragent,
+      @JsonKey(name: 'addr') String? addr});
 }
 
 /// @nodoc
@@ -112,24 +114,48 @@ class _$SessionCopyWithImpl<$Res> implements $SessionCopyWith<$Res> {
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object created = freezed,
-    Object lang = freezed,
-    Object team = freezed,
-    Object isMobile = freezed,
-    Object afk = freezed,
-    Object useragent = freezed,
-    Object addr = freezed,
+    Object? uid = freezed,
+    Object? created = freezed,
+    Object? lang = freezed,
+    Object? team = freezed,
+    Object? isMobile = freezed,
+    Object? afk = freezed,
+    Object? useragent = freezed,
+    Object? addr = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
-      created: created == freezed ? _value.created : created as DateTime,
-      lang: lang == freezed ? _value.lang : lang as String,
-      team: team == freezed ? _value.team : team as String,
-      isMobile: isMobile == freezed ? _value.isMobile : isMobile as bool,
-      afk: afk == freezed ? _value.afk : afk as bool,
-      useragent: useragent == freezed ? _value.useragent : useragent as String,
-      addr: addr == freezed ? _value.addr : addr as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      created: created == freezed
+          ? _value.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      lang: lang == freezed
+          ? _value.lang
+          : lang // ignore: cast_nullable_to_non_nullable
+              as String?,
+      team: team == freezed
+          ? _value.team
+          : team // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isMobile: isMobile == freezed
+          ? _value.isMobile
+          : isMobile // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      afk: afk == freezed
+          ? _value.afk
+          : afk // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      useragent: useragent == freezed
+          ? _value.useragent
+          : useragent // ignore: cast_nullable_to_non_nullable
+              as String?,
+      addr: addr == freezed
+          ? _value.addr
+          : addr // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -141,12 +167,12 @@ abstract class _$SessionCopyWith<$Res> implements $SessionCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @JsonKey(name: 'lang') String lang,
-      @JsonKey(name: 'team') String team,
-      @JsonKey(name: 'is_mobile') bool isMobile,
-      @JsonKey(name: 'afk') bool afk,
-      @JsonKey(name: 'useragent') String useragent,
-      @JsonKey(name: 'addr') String addr});
+      @JsonKey(name: 'lang') String? lang,
+      @JsonKey(name: 'team') String? team,
+      @JsonKey(name: 'is_mobile') bool? isMobile,
+      @JsonKey(name: 'afk') bool? afk,
+      @JsonKey(name: 'useragent') String? useragent,
+      @JsonKey(name: 'addr') String? addr});
 }
 
 /// @nodoc
@@ -158,45 +184,66 @@ class __$SessionCopyWithImpl<$Res> extends _$SessionCopyWithImpl<$Res> implement
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object created = freezed,
-    Object lang = freezed,
-    Object team = freezed,
-    Object isMobile = freezed,
-    Object afk = freezed,
-    Object useragent = freezed,
-    Object addr = freezed,
+    Object? uid = freezed,
+    Object? created = freezed,
+    Object? lang = freezed,
+    Object? team = freezed,
+    Object? isMobile = freezed,
+    Object? afk = freezed,
+    Object? useragent = freezed,
+    Object? addr = freezed,
   }) {
     return _then(_Session(
-      uid: uid == freezed ? _value.uid : uid as String,
-      created: created == freezed ? _value.created : created as DateTime,
-      lang: lang == freezed ? _value.lang : lang as String,
-      team: team == freezed ? _value.team : team as String,
-      isMobile: isMobile == freezed ? _value.isMobile : isMobile as bool,
-      afk: afk == freezed ? _value.afk : afk as bool,
-      useragent: useragent == freezed ? _value.useragent : useragent as String,
-      addr: addr == freezed ? _value.addr : addr as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      created: created == freezed
+          ? _value.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      lang: lang == freezed
+          ? _value.lang
+          : lang // ignore: cast_nullable_to_non_nullable
+              as String?,
+      team: team == freezed
+          ? _value.team
+          : team // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isMobile: isMobile == freezed
+          ? _value.isMobile
+          : isMobile // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      afk: afk == freezed
+          ? _value.afk
+          : afk // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      useragent: useragent == freezed
+          ? _value.useragent
+          : useragent // ignore: cast_nullable_to_non_nullable
+              as String?,
+      addr: addr == freezed
+          ? _value.addr
+          : addr // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Session implements _Session {
   const _$_Session(
-      {@required @JsonKey(name: 'uid') this.uid,
-      @required @JsonKey(name: 'created') @DateTimeConverter() this.created,
+      {@JsonKey(name: 'uid') required this.uid,
+      @JsonKey(name: 'created') @DateTimeConverter() required this.created,
       @JsonKey(name: 'lang') this.lang,
       @JsonKey(name: 'team') this.team,
-      @JsonKey(name: 'is_mobile') this.isMobile,
-      @JsonKey(name: 'afk') this.afk,
+      @JsonKey(name: 'is_mobile') this.isMobile = false,
+      @JsonKey(name: 'afk') this.afk = false,
       @JsonKey(name: 'useragent') this.useragent,
-      @JsonKey(name: 'addr') this.addr})
-      : assert(uid != null),
-        assert(created != null);
+      @JsonKey(name: 'addr') this.addr});
 
-  factory _$_Session.fromJson(Map<String, dynamic> json) => _$_$_SessionFromJson(json);
+  factory _$_Session.fromJson(Map<String, dynamic> json) => _$$_SessionFromJson(json);
 
   @override
 
@@ -213,32 +260,32 @@ class _$_Session implements _Session {
 
   /// Language code.
   @JsonKey(name: 'lang')
-  final String lang;
+  final String? lang;
   @override
 
   /// Team id.
   @JsonKey(name: 'team')
-  final String team;
+  final String? team;
   @override
 
   /// Mobile.
   @JsonKey(name: 'is_mobile')
-  final bool isMobile;
+  final bool? isMobile;
   @override
 
   /// Away from keyboard.
   @JsonKey(name: 'afk')
-  final bool afk;
+  final bool? afk;
   @override
 
   /// User agent.
   @JsonKey(name: 'useragent')
-  final String useragent;
+  final String? useragent;
   @override
 
   /// IP address.
   @JsonKey(name: 'addr')
-  final String addr;
+  final String? addr;
 
   @override
   String toString() {
@@ -278,20 +325,20 @@ class _$_Session implements _Session {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_SessionToJson(this);
+    return _$$_SessionToJson(this);
   }
 }
 
 abstract class _Session implements Session {
   const factory _Session(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @JsonKey(name: 'lang') String lang,
-      @JsonKey(name: 'team') String team,
-      @JsonKey(name: 'is_mobile') bool isMobile,
-      @JsonKey(name: 'afk') bool afk,
-      @JsonKey(name: 'useragent') String useragent,
-      @JsonKey(name: 'addr') String addr}) = _$_Session;
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'lang') String? lang,
+      @JsonKey(name: 'team') String? team,
+      @JsonKey(name: 'is_mobile') bool? isMobile,
+      @JsonKey(name: 'afk') bool? afk,
+      @JsonKey(name: 'useragent') String? useragent,
+      @JsonKey(name: 'addr') String? addr}) = _$_Session;
 
   factory _Session.fromJson(Map<String, dynamic> json) = _$_Session.fromJson;
 
@@ -299,44 +346,44 @@ abstract class _Session implements Session {
 
   /// Session id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// Creation datetime.
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created;
+  DateTime get created => throw _privateConstructorUsedError;
   @override
 
   /// Language code.
   @JsonKey(name: 'lang')
-  String get lang;
+  String? get lang => throw _privateConstructorUsedError;
   @override
 
   /// Team id.
   @JsonKey(name: 'team')
-  String get team;
+  String? get team => throw _privateConstructorUsedError;
   @override
 
   /// Mobile.
   @JsonKey(name: 'is_mobile')
-  bool get isMobile;
+  bool? get isMobile => throw _privateConstructorUsedError;
   @override
 
   /// Away from keyboard.
   @JsonKey(name: 'afk')
-  bool get afk;
+  bool? get afk => throw _privateConstructorUsedError;
   @override
 
   /// User agent.
   @JsonKey(name: 'useragent')
-  String get useragent;
+  String? get useragent => throw _privateConstructorUsedError;
   @override
 
   /// IP address.
   @JsonKey(name: 'addr')
-  String get addr;
+  String? get addr => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$SessionCopyWith<_Session> get copyWith;
+  _$SessionCopyWith<_Session> get copyWith => throw _privateConstructorUsedError;
 }

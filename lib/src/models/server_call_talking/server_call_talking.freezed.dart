@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_call_talking.dart';
 
@@ -8,6 +9,10 @@ part of 'server_call_talking.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerCallTalking _$ServerCallTalkingFromJson(Map<String, dynamic> json) {
   return _ServerCallTalking.fromJson(json);
 }
@@ -16,11 +21,10 @@ ServerCallTalking _$ServerCallTalkingFromJson(Map<String, dynamic> json) {
 class _$ServerCallTalkingTearOff {
   const _$ServerCallTalkingTearOff();
 
-// ignore: unused_element
   _ServerCallTalking call(
-      {@required @JsonKey(name: 'params') ServerCallTalkingParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) {
+      {@JsonKey(name: 'params') required ServerCallTalkingParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ServerCallTalking(
       params: params,
       name: name,
@@ -28,33 +32,31 @@ class _$ServerCallTalkingTearOff {
     );
   }
 
-// ignore: unused_element
   ServerCallTalking fromJson(Map<String, Object> json) {
     return ServerCallTalking.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerCallTalking = _$ServerCallTalkingTearOff();
 
 /// @nodoc
 mixin _$ServerCallTalking {
   /// .
   @JsonKey(name: 'params')
-  ServerCallTalkingParams get params;
+  ServerCallTalkingParams get params => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerCallTalkingCopyWith<ServerCallTalking> get copyWith;
+  $ServerCallTalkingCopyWith<ServerCallTalking> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -64,7 +66,7 @@ abstract class $ServerCallTalkingCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'params') ServerCallTalkingParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   $ServerCallTalkingParamsCopyWith<$Res> get params;
 }
@@ -79,22 +81,28 @@ class _$ServerCallTalkingCopyWithImpl<$Res> implements $ServerCallTalkingCopyWit
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as ServerCallTalkingParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerCallTalkingParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $ServerCallTalkingParamsCopyWith<$Res> get params {
-    if (_value.params == null) {
-      return null;
-    }
     return $ServerCallTalkingParamsCopyWith<$Res>(_value.params, (value) {
       return _then(_value.copyWith(params: value));
     });
@@ -109,7 +117,7 @@ abstract class _$ServerCallTalkingCopyWith<$Res> implements $ServerCallTalkingCo
   $Res call(
       {@JsonKey(name: 'params') ServerCallTalkingParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   @override
   $ServerCallTalkingParamsCopyWith<$Res> get params;
@@ -126,30 +134,36 @@ class __$ServerCallTalkingCopyWithImpl<$Res> extends _$ServerCallTalkingCopyWith
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ServerCallTalking(
-      params: params == freezed ? _value.params : params as ServerCallTalkingParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerCallTalkingParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerCallTalking implements _ServerCallTalking {
   const _$_ServerCallTalking(
-      {@required @JsonKey(name: 'params') this.params,
-      @required @JsonKey(name: 'event') this.name,
-      @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(params != null),
-        assert(name != null);
+      {@JsonKey(name: 'params') required this.params,
+      @JsonKey(name: 'event') required this.name,
+      @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ServerCallTalking.fromJson(Map<String, dynamic> json) => _$_$_ServerCallTalkingFromJson(json);
+  factory _$_ServerCallTalking.fromJson(Map<String, dynamic> json) => _$$_ServerCallTalkingFromJson(json);
 
   @override
 
@@ -165,7 +179,7 @@ class _$_ServerCallTalking implements _ServerCallTalking {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -196,15 +210,15 @@ class _$_ServerCallTalking implements _ServerCallTalking {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerCallTalkingToJson(this);
+    return _$$_ServerCallTalkingToJson(this);
   }
 }
 
 abstract class _ServerCallTalking implements ServerCallTalking {
   const factory _ServerCallTalking(
-      {@required @JsonKey(name: 'params') ServerCallTalkingParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) = _$_ServerCallTalking;
+      {@JsonKey(name: 'params') required ServerCallTalkingParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerCallTalking;
 
   factory _ServerCallTalking.fromJson(Map<String, dynamic> json) = _$_ServerCallTalking.fromJson;
 
@@ -212,18 +226,18 @@ abstract class _ServerCallTalking implements ServerCallTalking {
 
   /// .
   @JsonKey(name: 'params')
-  ServerCallTalkingParams get params;
+  ServerCallTalkingParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerCallTalkingCopyWith<_ServerCallTalking> get copyWith;
+  _$ServerCallTalkingCopyWith<_ServerCallTalking> get copyWith => throw _privateConstructorUsedError;
 }

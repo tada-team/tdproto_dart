@@ -6,25 +6,25 @@ part 'contact_custom_fields.g.dart';
 
 /// Extra contact fields.
 @freezed
-abstract class ContactCustomFields with _$ContactCustomFields {
+class ContactCustomFields with _$ContactCustomFields {
   const factory ContactCustomFields({
     /// Company.
-    @JsonKey(name: 'company') String company,
+    @JsonKey(name: 'company') String? company,
 
     /// Department.
-    @JsonKey(name: 'department') String department,
+    @JsonKey(name: 'department') String? department,
 
     /// Title.
-    @JsonKey(name: 'title') String title,
+    @JsonKey(name: 'title') String? title,
 
     /// MobilePhone.
-    @JsonKey(name: 'mobile_phone') String mobilePhone,
+    @JsonKey(name: 'mobile_phone') String? mobilePhone,
 
     /// Import source.
-    @JsonKey(name: 'source') String source,
+    @JsonKey(name: 'source') String? source,
 
     /// AD UID.
-    @JsonKey(name: 'ad_uid') String aDUid,
+    @JsonKey(name: 'ad_uid') String? aDUid,
   }) = _ContactCustomFields;
 
   factory ContactCustomFields.fromJson(Map<String, dynamic> json) => _$ContactCustomFieldsFromJson(json);

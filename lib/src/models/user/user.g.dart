@@ -6,28 +6,26 @@ part of 'user.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_User _$_$_UserFromJson(Map<String, dynamic> json) {
-  return _$_User(
-    phone: json['phone'] as String,
-    email: json['email'] as String,
-    familyName: json['family_name'] as String,
-    givenName: json['given_name'] as String,
-    patronymic: json['patronymic'] as String,
-    defaultLang: json['default_lang'] as String,
-    altSend: json['alt_send'] as bool,
-    asteriskMention: json['asterisk_mention'] as bool,
-    alwaysSendPushes: json['always_send_pushes'] as bool,
-    hidePushesContent: json['hide_pushes_content'] as bool,
-    unreadFirst: json['unread_first'] as bool,
-    mUnreadFirst: json['munread_first'] as bool,
-    timezone: json['timezone'] as String,
-    quietTimeStart: json['quiet_time_start'] as String,
-    quietTimeFinish: json['quiet_time_finish'] as String,
-    icons: json['icons'] == null ? null : IconData.fromJson(json['icons'] as Map<String, dynamic>),
-  );
-}
+_$_User _$$_UserFromJson(Map<String, dynamic> json) => _$_User(
+      phone: json['phone'] as String?,
+      email: json['email'] as String?,
+      familyName: json['family_name'] as String?,
+      givenName: json['given_name'] as String?,
+      patronymic: json['patronymic'] as String?,
+      defaultLang: json['default_lang'] as String?,
+      altSend: json['alt_send'] as bool? ?? false,
+      asteriskMention: json['asterisk_mention'] as bool? ?? false,
+      alwaysSendPushes: json['always_send_pushes'] as bool? ?? false,
+      hidePushesContent: json['hide_pushes_content'] as bool? ?? false,
+      unreadFirst: json['unread_first'] as bool? ?? false,
+      mUnreadFirst: json['munread_first'] as bool? ?? false,
+      timezone: json['timezone'] as String,
+      quietTimeStart: json['quiet_time_start'] as String?,
+      quietTimeFinish: json['quiet_time_finish'] as String?,
+      icons: IconData.fromJson(json['icons'] as Map<String, dynamic>),
+    );
 
-Map<String, dynamic> _$_$_UserToJson(_$_User instance) => <String, dynamic>{
+Map<String, dynamic> _$$_UserToJson(_$_User instance) => <String, dynamic>{
       'phone': instance.phone,
       'email': instance.email,
       'family_name': instance.familyName,
@@ -43,5 +41,5 @@ Map<String, dynamic> _$_$_UserToJson(_$_User instance) => <String, dynamic>{
       'timezone': instance.timezone,
       'quiet_time_start': instance.quietTimeStart,
       'quiet_time_finish': instance.quietTimeFinish,
-      'icons': instance.icons?.toJson(),
+      'icons': instance.icons.toJson(),
     };

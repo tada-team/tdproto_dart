@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'subtask.dart';
 
@@ -8,6 +9,10 @@ part of 'subtask.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Subtask _$SubtaskFromJson(Map<String, dynamic> json) {
   return _Subtask.fromJson(json);
 }
@@ -16,15 +21,14 @@ Subtask _$SubtaskFromJson(Map<String, dynamic> json) {
 class _$SubtaskTearOff {
   const _$SubtaskTearOff();
 
-// ignore: unused_element
   _Subtask call(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'assignee') String assignee,
-      @required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'num') int num,
-      @required @JsonKey(name: 'display_name') String displayName,
-      @JsonKey(name: 'public') bool isPublic,
-      @JsonKey(name: 'task_status') String taskStatus}) {
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'assignee') required String assignee,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'num') required int num,
+      @JsonKey(name: 'display_name') required String displayName,
+      @JsonKey(name: 'public') bool? isPublic = false,
+      @JsonKey(name: 'task_status') String? taskStatus}) {
     return _Subtask(
       jid: jid,
       assignee: assignee,
@@ -36,49 +40,47 @@ class _$SubtaskTearOff {
     );
   }
 
-// ignore: unused_element
   Subtask fromJson(Map<String, Object> json) {
     return Subtask.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Subtask = _$SubtaskTearOff();
 
 /// @nodoc
 mixin _$Subtask {
   /// Task id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
   /// Assignee contact id. Tasks only.
   @JsonKey(name: 'assignee')
-  String get assignee;
+  String get assignee => throw _privateConstructorUsedError;
 
   /// Task title. Generated from number and description.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
 
   /// Task number in this team.
   @JsonKey(name: 'num')
-  int get num;
+  int get num => throw _privateConstructorUsedError;
 
   /// Title.
   @JsonKey(name: 'display_name')
-  String get displayName;
+  String get displayName => throw _privateConstructorUsedError;
 
   /// Is task or group public for non-guests.
   @JsonKey(name: 'public')
-  bool get isPublic;
+  bool? get isPublic => throw _privateConstructorUsedError;
 
   /// Subtask task status.
   @JsonKey(name: 'task_status')
-  String get taskStatus;
+  String? get taskStatus => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $SubtaskCopyWith<Subtask> get copyWith;
+  $SubtaskCopyWith<Subtask> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -90,8 +92,8 @@ abstract class $SubtaskCopyWith<$Res> {
       @JsonKey(name: 'title') String title,
       @JsonKey(name: 'num') int num,
       @JsonKey(name: 'display_name') String displayName,
-      @JsonKey(name: 'public') bool isPublic,
-      @JsonKey(name: 'task_status') String taskStatus});
+      @JsonKey(name: 'public') bool? isPublic,
+      @JsonKey(name: 'task_status') String? taskStatus});
 }
 
 /// @nodoc
@@ -104,22 +106,43 @@ class _$SubtaskCopyWithImpl<$Res> implements $SubtaskCopyWith<$Res> {
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object assignee = freezed,
-    Object title = freezed,
-    Object num = freezed,
-    Object displayName = freezed,
-    Object isPublic = freezed,
-    Object taskStatus = freezed,
+    Object? jid = freezed,
+    Object? assignee = freezed,
+    Object? title = freezed,
+    Object? num = freezed,
+    Object? displayName = freezed,
+    Object? isPublic = freezed,
+    Object? taskStatus = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
-      assignee: assignee == freezed ? _value.assignee : assignee as String,
-      title: title == freezed ? _value.title : title as String,
-      num: num == freezed ? _value.num : num as int,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
-      isPublic: isPublic == freezed ? _value.isPublic : isPublic as bool,
-      taskStatus: taskStatus == freezed ? _value.taskStatus : taskStatus as String,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      assignee: assignee == freezed
+          ? _value.assignee
+          : assignee // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      num: num == freezed
+          ? _value.num
+          : num // ignore: cast_nullable_to_non_nullable
+              as int,
+      displayName: displayName == freezed
+          ? _value.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String,
+      isPublic: isPublic == freezed
+          ? _value.isPublic
+          : isPublic // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      taskStatus: taskStatus == freezed
+          ? _value.taskStatus
+          : taskStatus // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -134,8 +157,8 @@ abstract class _$SubtaskCopyWith<$Res> implements $SubtaskCopyWith<$Res> {
       @JsonKey(name: 'title') String title,
       @JsonKey(name: 'num') int num,
       @JsonKey(name: 'display_name') String displayName,
-      @JsonKey(name: 'public') bool isPublic,
-      @JsonKey(name: 'task_status') String taskStatus});
+      @JsonKey(name: 'public') bool? isPublic,
+      @JsonKey(name: 'task_status') String? taskStatus});
 }
 
 /// @nodoc
@@ -147,45 +170,60 @@ class __$SubtaskCopyWithImpl<$Res> extends _$SubtaskCopyWithImpl<$Res> implement
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object assignee = freezed,
-    Object title = freezed,
-    Object num = freezed,
-    Object displayName = freezed,
-    Object isPublic = freezed,
-    Object taskStatus = freezed,
+    Object? jid = freezed,
+    Object? assignee = freezed,
+    Object? title = freezed,
+    Object? num = freezed,
+    Object? displayName = freezed,
+    Object? isPublic = freezed,
+    Object? taskStatus = freezed,
   }) {
     return _then(_Subtask(
-      jid: jid == freezed ? _value.jid : jid as String,
-      assignee: assignee == freezed ? _value.assignee : assignee as String,
-      title: title == freezed ? _value.title : title as String,
-      num: num == freezed ? _value.num : num as int,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
-      isPublic: isPublic == freezed ? _value.isPublic : isPublic as bool,
-      taskStatus: taskStatus == freezed ? _value.taskStatus : taskStatus as String,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      assignee: assignee == freezed
+          ? _value.assignee
+          : assignee // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      num: num == freezed
+          ? _value.num
+          : num // ignore: cast_nullable_to_non_nullable
+              as int,
+      displayName: displayName == freezed
+          ? _value.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String,
+      isPublic: isPublic == freezed
+          ? _value.isPublic
+          : isPublic // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      taskStatus: taskStatus == freezed
+          ? _value.taskStatus
+          : taskStatus // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Subtask implements _Subtask {
   const _$_Subtask(
-      {@required @JsonKey(name: 'jid') this.jid,
-      @required @JsonKey(name: 'assignee') this.assignee,
-      @required @JsonKey(name: 'title') this.title,
-      @required @JsonKey(name: 'num') this.num,
-      @required @JsonKey(name: 'display_name') this.displayName,
-      @JsonKey(name: 'public') this.isPublic,
-      @JsonKey(name: 'task_status') this.taskStatus})
-      : assert(jid != null),
-        assert(assignee != null),
-        assert(title != null),
-        assert(num != null),
-        assert(displayName != null);
+      {@JsonKey(name: 'jid') required this.jid,
+      @JsonKey(name: 'assignee') required this.assignee,
+      @JsonKey(name: 'title') required this.title,
+      @JsonKey(name: 'num') required this.num,
+      @JsonKey(name: 'display_name') required this.displayName,
+      @JsonKey(name: 'public') this.isPublic = false,
+      @JsonKey(name: 'task_status') this.taskStatus});
 
-  factory _$_Subtask.fromJson(Map<String, dynamic> json) => _$_$_SubtaskFromJson(json);
+  factory _$_Subtask.fromJson(Map<String, dynamic> json) => _$$_SubtaskFromJson(json);
 
   @override
 
@@ -216,12 +254,12 @@ class _$_Subtask implements _Subtask {
 
   /// Is task or group public for non-guests.
   @JsonKey(name: 'public')
-  final bool isPublic;
+  final bool? isPublic;
   @override
 
   /// Subtask task status.
   @JsonKey(name: 'task_status')
-  final String taskStatus;
+  final String? taskStatus;
 
   @override
   String toString() {
@@ -260,19 +298,19 @@ class _$_Subtask implements _Subtask {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_SubtaskToJson(this);
+    return _$$_SubtaskToJson(this);
   }
 }
 
 abstract class _Subtask implements Subtask {
   const factory _Subtask(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'assignee') String assignee,
-      @required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'num') int num,
-      @required @JsonKey(name: 'display_name') String displayName,
-      @JsonKey(name: 'public') bool isPublic,
-      @JsonKey(name: 'task_status') String taskStatus}) = _$_Subtask;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'assignee') required String assignee,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'num') required int num,
+      @JsonKey(name: 'display_name') required String displayName,
+      @JsonKey(name: 'public') bool? isPublic,
+      @JsonKey(name: 'task_status') String? taskStatus}) = _$_Subtask;
 
   factory _Subtask.fromJson(Map<String, dynamic> json) = _$_Subtask.fromJson;
 
@@ -280,38 +318,38 @@ abstract class _Subtask implements Subtask {
 
   /// Task id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Assignee contact id. Tasks only.
   @JsonKey(name: 'assignee')
-  String get assignee;
+  String get assignee => throw _privateConstructorUsedError;
   @override
 
   /// Task title. Generated from number and description.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
 
   /// Task number in this team.
   @JsonKey(name: 'num')
-  int get num;
+  int get num => throw _privateConstructorUsedError;
   @override
 
   /// Title.
   @JsonKey(name: 'display_name')
-  String get displayName;
+  String get displayName => throw _privateConstructorUsedError;
   @override
 
   /// Is task or group public for non-guests.
   @JsonKey(name: 'public')
-  bool get isPublic;
+  bool? get isPublic => throw _privateConstructorUsedError;
   @override
 
   /// Subtask task status.
   @JsonKey(name: 'task_status')
-  String get taskStatus;
+  String? get taskStatus => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$SubtaskCopyWith<_Subtask> get copyWith;
+  _$SubtaskCopyWith<_Subtask> get copyWith => throw _privateConstructorUsedError;
 }

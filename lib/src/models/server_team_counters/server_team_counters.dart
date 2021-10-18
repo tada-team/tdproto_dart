@@ -6,16 +6,16 @@ part 'server_team_counters.g.dart';
 
 /// Counters form other teams.
 @freezed
-abstract class ServerTeamCounters with _$ServerTeamCounters {
+class ServerTeamCounters with _$ServerTeamCounters {
   const factory ServerTeamCounters({
     /// .
-    @JsonKey(name: 'params') @required ServerTeamCountersParams params,
+    @JsonKey(name: 'params') required ServerTeamCountersParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerTeamCounters;
 
   factory ServerTeamCounters.fromJson(Map<String, dynamic> json) => _$ServerTeamCountersFromJson(json);

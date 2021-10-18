@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'stickerpack.dart';
 
@@ -8,6 +9,10 @@ part of 'stickerpack.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Stickerpack _$StickerpackFromJson(Map<String, dynamic> json) {
   return _Stickerpack.fromJson(json);
 }
@@ -16,14 +21,13 @@ Stickerpack _$StickerpackFromJson(Map<String, dynamic> json) {
 class _$StickerpackTearOff {
   const _$StickerpackTearOff();
 
-// ignore: unused_element
   _Stickerpack call(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'name') String name,
-      @required @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'author') String author,
-      @JsonKey(name: 'author_link') String authorLink,
-      @required @JsonKey(name: 'stickers') List<Sticker> stickers}) {
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'author') String? author,
+      @JsonKey(name: 'author_link') String? authorLink,
+      @JsonKey(name: 'stickers') required List<Sticker> stickers}) {
     return _Stickerpack(
       uid: uid,
       name: name,
@@ -34,45 +38,43 @@ class _$StickerpackTearOff {
     );
   }
 
-// ignore: unused_element
   Stickerpack fromJson(Map<String, Object> json) {
     return Stickerpack.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Stickerpack = _$StickerpackTearOff();
 
 /// @nodoc
 mixin _$Stickerpack {
   /// .
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'author')
-  String get author;
+  String? get author => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'author_link')
-  String get authorLink;
+  String? get authorLink => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'stickers')
-  List<Sticker> get stickers;
+  List<Sticker> get stickers => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $StickerpackCopyWith<Stickerpack> get copyWith;
+  $StickerpackCopyWith<Stickerpack> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -82,8 +84,8 @@ abstract class $StickerpackCopyWith<$Res> {
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'name') String name,
       @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'author') String author,
-      @JsonKey(name: 'author_link') String authorLink,
+      @JsonKey(name: 'author') String? author,
+      @JsonKey(name: 'author_link') String? authorLink,
       @JsonKey(name: 'stickers') List<Sticker> stickers});
 }
 
@@ -97,20 +99,38 @@ class _$StickerpackCopyWithImpl<$Res> implements $StickerpackCopyWith<$Res> {
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object name = freezed,
-    Object title = freezed,
-    Object author = freezed,
-    Object authorLink = freezed,
-    Object stickers = freezed,
+    Object? uid = freezed,
+    Object? name = freezed,
+    Object? title = freezed,
+    Object? author = freezed,
+    Object? authorLink = freezed,
+    Object? stickers = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
-      name: name == freezed ? _value.name : name as String,
-      title: title == freezed ? _value.title : title as String,
-      author: author == freezed ? _value.author : author as String,
-      authorLink: authorLink == freezed ? _value.authorLink : authorLink as String,
-      stickers: stickers == freezed ? _value.stickers : stickers as List<Sticker>,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      author: author == freezed
+          ? _value.author
+          : author // ignore: cast_nullable_to_non_nullable
+              as String?,
+      authorLink: authorLink == freezed
+          ? _value.authorLink
+          : authorLink // ignore: cast_nullable_to_non_nullable
+              as String?,
+      stickers: stickers == freezed
+          ? _value.stickers
+          : stickers // ignore: cast_nullable_to_non_nullable
+              as List<Sticker>,
     ));
   }
 }
@@ -124,8 +144,8 @@ abstract class _$StickerpackCopyWith<$Res> implements $StickerpackCopyWith<$Res>
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'name') String name,
       @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'author') String author,
-      @JsonKey(name: 'author_link') String authorLink,
+      @JsonKey(name: 'author') String? author,
+      @JsonKey(name: 'author_link') String? authorLink,
       @JsonKey(name: 'stickers') List<Sticker> stickers});
 }
 
@@ -139,41 +159,54 @@ class __$StickerpackCopyWithImpl<$Res> extends _$StickerpackCopyWithImpl<$Res> i
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object name = freezed,
-    Object title = freezed,
-    Object author = freezed,
-    Object authorLink = freezed,
-    Object stickers = freezed,
+    Object? uid = freezed,
+    Object? name = freezed,
+    Object? title = freezed,
+    Object? author = freezed,
+    Object? authorLink = freezed,
+    Object? stickers = freezed,
   }) {
     return _then(_Stickerpack(
-      uid: uid == freezed ? _value.uid : uid as String,
-      name: name == freezed ? _value.name : name as String,
-      title: title == freezed ? _value.title : title as String,
-      author: author == freezed ? _value.author : author as String,
-      authorLink: authorLink == freezed ? _value.authorLink : authorLink as String,
-      stickers: stickers == freezed ? _value.stickers : stickers as List<Sticker>,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      author: author == freezed
+          ? _value.author
+          : author // ignore: cast_nullable_to_non_nullable
+              as String?,
+      authorLink: authorLink == freezed
+          ? _value.authorLink
+          : authorLink // ignore: cast_nullable_to_non_nullable
+              as String?,
+      stickers: stickers == freezed
+          ? _value.stickers
+          : stickers // ignore: cast_nullable_to_non_nullable
+              as List<Sticker>,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Stickerpack implements _Stickerpack {
   const _$_Stickerpack(
-      {@required @JsonKey(name: 'uid') this.uid,
-      @required @JsonKey(name: 'name') this.name,
-      @required @JsonKey(name: 'title') this.title,
+      {@JsonKey(name: 'uid') required this.uid,
+      @JsonKey(name: 'name') required this.name,
+      @JsonKey(name: 'title') required this.title,
       @JsonKey(name: 'author') this.author,
       @JsonKey(name: 'author_link') this.authorLink,
-      @required @JsonKey(name: 'stickers') this.stickers})
-      : assert(uid != null),
-        assert(name != null),
-        assert(title != null),
-        assert(stickers != null);
+      @JsonKey(name: 'stickers') required this.stickers});
 
-  factory _$_Stickerpack.fromJson(Map<String, dynamic> json) => _$_$_StickerpackFromJson(json);
+  factory _$_Stickerpack.fromJson(Map<String, dynamic> json) => _$$_StickerpackFromJson(json);
 
   @override
 
@@ -194,12 +227,12 @@ class _$_Stickerpack implements _Stickerpack {
 
   /// .
   @JsonKey(name: 'author')
-  final String author;
+  final String? author;
   @override
 
   /// .
   @JsonKey(name: 'author_link')
-  final String authorLink;
+  final String? authorLink;
   @override
 
   /// .
@@ -240,18 +273,18 @@ class _$_Stickerpack implements _Stickerpack {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_StickerpackToJson(this);
+    return _$$_StickerpackToJson(this);
   }
 }
 
 abstract class _Stickerpack implements Stickerpack {
   const factory _Stickerpack(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'name') String name,
-      @required @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'author') String author,
-      @JsonKey(name: 'author_link') String authorLink,
-      @required @JsonKey(name: 'stickers') List<Sticker> stickers}) = _$_Stickerpack;
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'author') String? author,
+      @JsonKey(name: 'author_link') String? authorLink,
+      @JsonKey(name: 'stickers') required List<Sticker> stickers}) = _$_Stickerpack;
 
   factory _Stickerpack.fromJson(Map<String, dynamic> json) = _$_Stickerpack.fromJson;
 
@@ -259,33 +292,33 @@ abstract class _Stickerpack implements Stickerpack {
 
   /// .
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'author')
-  String get author;
+  String? get author => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'author_link')
-  String get authorLink;
+  String? get authorLink => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'stickers')
-  List<Sticker> get stickers;
+  List<Sticker> get stickers => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$StickerpackCopyWith<_Stickerpack> get copyWith;
+  _$StickerpackCopyWith<_Stickerpack> get copyWith => throw _privateConstructorUsedError;
 }

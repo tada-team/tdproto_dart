@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'integration_kind.dart';
 
@@ -8,6 +9,10 @@ part of 'integration_kind.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 IntegrationKind _$IntegrationKindFromJson(Map<String, dynamic> json) {
   return _IntegrationKind.fromJson(json);
 }
@@ -16,13 +21,12 @@ IntegrationKind _$IntegrationKindFromJson(Map<String, dynamic> json) {
 class _$IntegrationKindTearOff {
   const _$IntegrationKindTearOff();
 
-// ignore: unused_element
   _IntegrationKind call(
-      {@required @JsonKey(name: 'kind') String kind,
-      @required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'template') Integration template,
-      @required @JsonKey(name: 'icon') String icon,
-      @required @JsonKey(name: 'description') String description}) {
+      {@JsonKey(name: 'kind') required String kind,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'template') required Integration template,
+      @JsonKey(name: 'icon') required String icon,
+      @JsonKey(name: 'description') required String description}) {
     return _IntegrationKind(
       kind: kind,
       title: title,
@@ -32,41 +36,39 @@ class _$IntegrationKindTearOff {
     );
   }
 
-// ignore: unused_element
   IntegrationKind fromJson(Map<String, Object> json) {
     return IntegrationKind.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $IntegrationKind = _$IntegrationKindTearOff();
 
 /// @nodoc
 mixin _$IntegrationKind {
   /// Integration unique name.
   @JsonKey(name: 'kind')
-  String get kind;
+  String get kind => throw _privateConstructorUsedError;
 
   /// Plugin title.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
 
   /// Integration template.
   @JsonKey(name: 'template')
-  Integration get template;
+  Integration get template => throw _privateConstructorUsedError;
 
   /// Path to icon.
   @JsonKey(name: 'icon')
-  String get icon;
+  String get icon => throw _privateConstructorUsedError;
 
   /// Plugin description.
   @JsonKey(name: 'description')
-  String get description;
+  String get description => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $IntegrationKindCopyWith<IntegrationKind> get copyWith;
+  $IntegrationKindCopyWith<IntegrationKind> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -93,26 +95,38 @@ class _$IntegrationKindCopyWithImpl<$Res> implements $IntegrationKindCopyWith<$R
 
   @override
   $Res call({
-    Object kind = freezed,
-    Object title = freezed,
-    Object template = freezed,
-    Object icon = freezed,
-    Object description = freezed,
+    Object? kind = freezed,
+    Object? title = freezed,
+    Object? template = freezed,
+    Object? icon = freezed,
+    Object? description = freezed,
   }) {
     return _then(_value.copyWith(
-      kind: kind == freezed ? _value.kind : kind as String,
-      title: title == freezed ? _value.title : title as String,
-      template: template == freezed ? _value.template : template as Integration,
-      icon: icon == freezed ? _value.icon : icon as String,
-      description: description == freezed ? _value.description : description as String,
+      kind: kind == freezed
+          ? _value.kind
+          : kind // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      template: template == freezed
+          ? _value.template
+          : template // ignore: cast_nullable_to_non_nullable
+              as Integration,
+      icon: icon == freezed
+          ? _value.icon
+          : icon // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 
   @override
   $IntegrationCopyWith<$Res> get template {
-    if (_value.template == null) {
-      return null;
-    }
     return $IntegrationCopyWith<$Res>(_value.template, (value) {
       return _then(_value.copyWith(template: value));
     });
@@ -146,39 +160,48 @@ class __$IntegrationKindCopyWithImpl<$Res> extends _$IntegrationKindCopyWithImpl
 
   @override
   $Res call({
-    Object kind = freezed,
-    Object title = freezed,
-    Object template = freezed,
-    Object icon = freezed,
-    Object description = freezed,
+    Object? kind = freezed,
+    Object? title = freezed,
+    Object? template = freezed,
+    Object? icon = freezed,
+    Object? description = freezed,
   }) {
     return _then(_IntegrationKind(
-      kind: kind == freezed ? _value.kind : kind as String,
-      title: title == freezed ? _value.title : title as String,
-      template: template == freezed ? _value.template : template as Integration,
-      icon: icon == freezed ? _value.icon : icon as String,
-      description: description == freezed ? _value.description : description as String,
+      kind: kind == freezed
+          ? _value.kind
+          : kind // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      template: template == freezed
+          ? _value.template
+          : template // ignore: cast_nullable_to_non_nullable
+              as Integration,
+      icon: icon == freezed
+          ? _value.icon
+          : icon // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_IntegrationKind implements _IntegrationKind {
   const _$_IntegrationKind(
-      {@required @JsonKey(name: 'kind') this.kind,
-      @required @JsonKey(name: 'title') this.title,
-      @required @JsonKey(name: 'template') this.template,
-      @required @JsonKey(name: 'icon') this.icon,
-      @required @JsonKey(name: 'description') this.description})
-      : assert(kind != null),
-        assert(title != null),
-        assert(template != null),
-        assert(icon != null),
-        assert(description != null);
+      {@JsonKey(name: 'kind') required this.kind,
+      @JsonKey(name: 'title') required this.title,
+      @JsonKey(name: 'template') required this.template,
+      @JsonKey(name: 'icon') required this.icon,
+      @JsonKey(name: 'description') required this.description});
 
-  factory _$_IntegrationKind.fromJson(Map<String, dynamic> json) => _$_$_IntegrationKindFromJson(json);
+  factory _$_IntegrationKind.fromJson(Map<String, dynamic> json) => _$$_IntegrationKindFromJson(json);
 
   @override
 
@@ -239,17 +262,17 @@ class _$_IntegrationKind implements _IntegrationKind {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_IntegrationKindToJson(this);
+    return _$$_IntegrationKindToJson(this);
   }
 }
 
 abstract class _IntegrationKind implements IntegrationKind {
   const factory _IntegrationKind(
-      {@required @JsonKey(name: 'kind') String kind,
-      @required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'template') Integration template,
-      @required @JsonKey(name: 'icon') String icon,
-      @required @JsonKey(name: 'description') String description}) = _$_IntegrationKind;
+      {@JsonKey(name: 'kind') required String kind,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'template') required Integration template,
+      @JsonKey(name: 'icon') required String icon,
+      @JsonKey(name: 'description') required String description}) = _$_IntegrationKind;
 
   factory _IntegrationKind.fromJson(Map<String, dynamic> json) = _$_IntegrationKind.fromJson;
 
@@ -257,28 +280,28 @@ abstract class _IntegrationKind implements IntegrationKind {
 
   /// Integration unique name.
   @JsonKey(name: 'kind')
-  String get kind;
+  String get kind => throw _privateConstructorUsedError;
   @override
 
   /// Plugin title.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
 
   /// Integration template.
   @JsonKey(name: 'template')
-  Integration get template;
+  Integration get template => throw _privateConstructorUsedError;
   @override
 
   /// Path to icon.
   @JsonKey(name: 'icon')
-  String get icon;
+  String get icon => throw _privateConstructorUsedError;
   @override
 
   /// Plugin description.
   @JsonKey(name: 'description')
-  String get description;
+  String get description => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$IntegrationKindCopyWith<_IntegrationKind> get copyWith;
+  _$IntegrationKindCopyWith<_IntegrationKind> get copyWith => throw _privateConstructorUsedError;
 }

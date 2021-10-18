@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'icon_data.dart';
 
@@ -8,6 +9,10 @@ part of 'icon_data.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 IconData _$IconDataFromJson(Map<String, dynamic> json) {
   return _IconData.fromJson(json);
 }
@@ -16,14 +21,13 @@ IconData _$IconDataFromJson(Map<String, dynamic> json) {
 class _$IconDataTearOff {
   const _$IconDataTearOff();
 
-// ignore: unused_element
   _IconData call(
-      {@required @JsonKey(name: 'sm') SingleIcon sm,
-      @required @JsonKey(name: 'lg') SingleIcon lg,
-      @JsonKey(name: 'letters') String letters,
-      @JsonKey(name: 'color') String color,
-      @JsonKey(name: 'blurhash') String blurhash,
-      @Deprecated('Deprecated.') @JsonKey(name: 'stub') String stub}) {
+      {@JsonKey(name: 'sm') required SingleIcon sm,
+      @JsonKey(name: 'lg') required SingleIcon lg,
+      @JsonKey(name: 'letters') String? letters,
+      @JsonKey(name: 'color') String? color,
+      @JsonKey(name: 'blurhash') String? blurhash,
+      @Deprecated('Deprecated.') @JsonKey(name: 'stub') String? stub}) {
     return _IconData(
       sm: sm,
       lg: lg,
@@ -34,46 +38,44 @@ class _$IconDataTearOff {
     );
   }
 
-// ignore: unused_element
   IconData fromJson(Map<String, Object> json) {
     return IconData.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $IconData = _$IconDataTearOff();
 
 /// @nodoc
 mixin _$IconData {
   /// Small icon.
   @JsonKey(name: 'sm')
-  SingleIcon get sm;
+  SingleIcon get sm => throw _privateConstructorUsedError;
 
   /// Large image.
   @JsonKey(name: 'lg')
-  SingleIcon get lg;
+  SingleIcon get lg => throw _privateConstructorUsedError;
 
   /// Letters (only for stub icon).
   @JsonKey(name: 'letters')
-  String get letters;
+  String? get letters => throw _privateConstructorUsedError;
 
   /// Icon background color (only for stub icon).
   @JsonKey(name: 'color')
-  String get color;
+  String? get color => throw _privateConstructorUsedError;
 
   /// Compact representation of a placeholder for an image (experimental).
   @JsonKey(name: 'blurhash')
-  String get blurhash;
+  String? get blurhash => throw _privateConstructorUsedError;
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'stub')
-  String get stub;
+  String? get stub => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $IconDataCopyWith<IconData> get copyWith;
+  $IconDataCopyWith<IconData> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -82,10 +84,10 @@ abstract class $IconDataCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'sm') SingleIcon sm,
       @JsonKey(name: 'lg') SingleIcon lg,
-      @JsonKey(name: 'letters') String letters,
-      @JsonKey(name: 'color') String color,
-      @JsonKey(name: 'blurhash') String blurhash,
-      @Deprecated('Deprecated.') @JsonKey(name: 'stub') String stub});
+      @JsonKey(name: 'letters') String? letters,
+      @JsonKey(name: 'color') String? color,
+      @JsonKey(name: 'blurhash') String? blurhash,
+      @Deprecated('Deprecated.') @JsonKey(name: 'stub') String? stub});
 
   $SingleIconCopyWith<$Res> get sm;
   $SingleIconCopyWith<$Res> get lg;
@@ -101,28 +103,43 @@ class _$IconDataCopyWithImpl<$Res> implements $IconDataCopyWith<$Res> {
 
   @override
   $Res call({
-    Object sm = freezed,
-    Object lg = freezed,
-    Object letters = freezed,
-    Object color = freezed,
-    Object blurhash = freezed,
-    Object stub = freezed,
+    Object? sm = freezed,
+    Object? lg = freezed,
+    Object? letters = freezed,
+    Object? color = freezed,
+    Object? blurhash = freezed,
+    Object? stub = freezed,
   }) {
     return _then(_value.copyWith(
-      sm: sm == freezed ? _value.sm : sm as SingleIcon,
-      lg: lg == freezed ? _value.lg : lg as SingleIcon,
-      letters: letters == freezed ? _value.letters : letters as String,
-      color: color == freezed ? _value.color : color as String,
-      blurhash: blurhash == freezed ? _value.blurhash : blurhash as String,
-      stub: stub == freezed ? _value.stub : stub as String,
+      sm: sm == freezed
+          ? _value.sm
+          : sm // ignore: cast_nullable_to_non_nullable
+              as SingleIcon,
+      lg: lg == freezed
+          ? _value.lg
+          : lg // ignore: cast_nullable_to_non_nullable
+              as SingleIcon,
+      letters: letters == freezed
+          ? _value.letters
+          : letters // ignore: cast_nullable_to_non_nullable
+              as String?,
+      color: color == freezed
+          ? _value.color
+          : color // ignore: cast_nullable_to_non_nullable
+              as String?,
+      blurhash: blurhash == freezed
+          ? _value.blurhash
+          : blurhash // ignore: cast_nullable_to_non_nullable
+              as String?,
+      stub: stub == freezed
+          ? _value.stub
+          : stub // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $SingleIconCopyWith<$Res> get sm {
-    if (_value.sm == null) {
-      return null;
-    }
     return $SingleIconCopyWith<$Res>(_value.sm, (value) {
       return _then(_value.copyWith(sm: value));
     });
@@ -130,9 +147,6 @@ class _$IconDataCopyWithImpl<$Res> implements $IconDataCopyWith<$Res> {
 
   @override
   $SingleIconCopyWith<$Res> get lg {
-    if (_value.lg == null) {
-      return null;
-    }
     return $SingleIconCopyWith<$Res>(_value.lg, (value) {
       return _then(_value.copyWith(lg: value));
     });
@@ -146,10 +160,10 @@ abstract class _$IconDataCopyWith<$Res> implements $IconDataCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'sm') SingleIcon sm,
       @JsonKey(name: 'lg') SingleIcon lg,
-      @JsonKey(name: 'letters') String letters,
-      @JsonKey(name: 'color') String color,
-      @JsonKey(name: 'blurhash') String blurhash,
-      @Deprecated('Deprecated.') @JsonKey(name: 'stub') String stub});
+      @JsonKey(name: 'letters') String? letters,
+      @JsonKey(name: 'color') String? color,
+      @JsonKey(name: 'blurhash') String? blurhash,
+      @Deprecated('Deprecated.') @JsonKey(name: 'stub') String? stub});
 
   @override
   $SingleIconCopyWith<$Res> get sm;
@@ -167,39 +181,54 @@ class __$IconDataCopyWithImpl<$Res> extends _$IconDataCopyWithImpl<$Res> impleme
 
   @override
   $Res call({
-    Object sm = freezed,
-    Object lg = freezed,
-    Object letters = freezed,
-    Object color = freezed,
-    Object blurhash = freezed,
-    Object stub = freezed,
+    Object? sm = freezed,
+    Object? lg = freezed,
+    Object? letters = freezed,
+    Object? color = freezed,
+    Object? blurhash = freezed,
+    Object? stub = freezed,
   }) {
     return _then(_IconData(
-      sm: sm == freezed ? _value.sm : sm as SingleIcon,
-      lg: lg == freezed ? _value.lg : lg as SingleIcon,
-      letters: letters == freezed ? _value.letters : letters as String,
-      color: color == freezed ? _value.color : color as String,
-      blurhash: blurhash == freezed ? _value.blurhash : blurhash as String,
-      stub: stub == freezed ? _value.stub : stub as String,
+      sm: sm == freezed
+          ? _value.sm
+          : sm // ignore: cast_nullable_to_non_nullable
+              as SingleIcon,
+      lg: lg == freezed
+          ? _value.lg
+          : lg // ignore: cast_nullable_to_non_nullable
+              as SingleIcon,
+      letters: letters == freezed
+          ? _value.letters
+          : letters // ignore: cast_nullable_to_non_nullable
+              as String?,
+      color: color == freezed
+          ? _value.color
+          : color // ignore: cast_nullable_to_non_nullable
+              as String?,
+      blurhash: blurhash == freezed
+          ? _value.blurhash
+          : blurhash // ignore: cast_nullable_to_non_nullable
+              as String?,
+      stub: stub == freezed
+          ? _value.stub
+          : stub // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_IconData implements _IconData {
   const _$_IconData(
-      {@required @JsonKey(name: 'sm') this.sm,
-      @required @JsonKey(name: 'lg') this.lg,
+      {@JsonKey(name: 'sm') required this.sm,
+      @JsonKey(name: 'lg') required this.lg,
       @JsonKey(name: 'letters') this.letters,
       @JsonKey(name: 'color') this.color,
       @JsonKey(name: 'blurhash') this.blurhash,
-      @Deprecated('Deprecated.') @JsonKey(name: 'stub') this.stub})
-      : assert(sm != null),
-        assert(lg != null);
+      @Deprecated('Deprecated.') @JsonKey(name: 'stub') this.stub});
 
-  factory _$_IconData.fromJson(Map<String, dynamic> json) => _$_$_IconDataFromJson(json);
+  factory _$_IconData.fromJson(Map<String, dynamic> json) => _$$_IconDataFromJson(json);
 
   @override
 
@@ -215,23 +244,23 @@ class _$_IconData implements _IconData {
 
   /// Letters (only for stub icon).
   @JsonKey(name: 'letters')
-  final String letters;
+  final String? letters;
   @override
 
   /// Icon background color (only for stub icon).
   @JsonKey(name: 'color')
-  final String color;
+  final String? color;
   @override
 
   /// Compact representation of a placeholder for an image (experimental).
   @JsonKey(name: 'blurhash')
-  final String blurhash;
+  final String? blurhash;
   @override
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'stub')
-  final String stub;
+  final String? stub;
 
   @override
   String toString() {
@@ -266,18 +295,18 @@ class _$_IconData implements _IconData {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_IconDataToJson(this);
+    return _$$_IconDataToJson(this);
   }
 }
 
 abstract class _IconData implements IconData {
   const factory _IconData(
-      {@required @JsonKey(name: 'sm') SingleIcon sm,
-      @required @JsonKey(name: 'lg') SingleIcon lg,
-      @JsonKey(name: 'letters') String letters,
-      @JsonKey(name: 'color') String color,
-      @JsonKey(name: 'blurhash') String blurhash,
-      @Deprecated('Deprecated.') @JsonKey(name: 'stub') String stub}) = _$_IconData;
+      {@JsonKey(name: 'sm') required SingleIcon sm,
+      @JsonKey(name: 'lg') required SingleIcon lg,
+      @JsonKey(name: 'letters') String? letters,
+      @JsonKey(name: 'color') String? color,
+      @JsonKey(name: 'blurhash') String? blurhash,
+      @Deprecated('Deprecated.') @JsonKey(name: 'stub') String? stub}) = _$_IconData;
 
   factory _IconData.fromJson(Map<String, dynamic> json) = _$_IconData.fromJson;
 
@@ -285,34 +314,34 @@ abstract class _IconData implements IconData {
 
   /// Small icon.
   @JsonKey(name: 'sm')
-  SingleIcon get sm;
+  SingleIcon get sm => throw _privateConstructorUsedError;
   @override
 
   /// Large image.
   @JsonKey(name: 'lg')
-  SingleIcon get lg;
+  SingleIcon get lg => throw _privateConstructorUsedError;
   @override
 
   /// Letters (only for stub icon).
   @JsonKey(name: 'letters')
-  String get letters;
+  String? get letters => throw _privateConstructorUsedError;
   @override
 
   /// Icon background color (only for stub icon).
   @JsonKey(name: 'color')
-  String get color;
+  String? get color => throw _privateConstructorUsedError;
   @override
 
   /// Compact representation of a placeholder for an image (experimental).
   @JsonKey(name: 'blurhash')
-  String get blurhash;
+  String? get blurhash => throw _privateConstructorUsedError;
   @override
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'stub')
-  String get stub;
+  String? get stub => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$IconDataCopyWith<_IconData> get copyWith;
+  _$IconDataCopyWith<_IconData> get copyWith => throw _privateConstructorUsedError;
 }

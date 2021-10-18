@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'jsep.dart';
 
@@ -8,6 +9,10 @@ part of 'jsep.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 JSEP _$JSEPFromJson(Map<String, dynamic> json) {
   return _JSEP.fromJson(json);
 }
@@ -16,37 +21,34 @@ JSEP _$JSEPFromJson(Map<String, dynamic> json) {
 class _$JSEPTearOff {
   const _$JSEPTearOff();
 
-// ignore: unused_element
-  _JSEP call({@required @JsonKey(name: 'sdp') String sdp, @required @JsonKey(name: 'type') String type}) {
+  _JSEP call({@JsonKey(name: 'sdp') required String sdp, @JsonKey(name: 'type') required String type}) {
     return _JSEP(
       sdp: sdp,
       type: type,
     );
   }
 
-// ignore: unused_element
   JSEP fromJson(Map<String, Object> json) {
     return JSEP.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $JSEP = _$JSEPTearOff();
 
 /// @nodoc
 mixin _$JSEP {
   /// Session Description Protocol information.
   @JsonKey(name: 'sdp')
-  String get sdp;
+  String get sdp => throw _privateConstructorUsedError;
 
   /// See https://rtcweb-wg.github.io/jsep/#rfc.section.4.1.8.
   @JsonKey(name: 'type')
-  String get type;
+  String get type => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $JSEPCopyWith<JSEP> get copyWith;
+  $JSEPCopyWith<JSEP> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -65,12 +67,18 @@ class _$JSEPCopyWithImpl<$Res> implements $JSEPCopyWith<$Res> {
 
   @override
   $Res call({
-    Object sdp = freezed,
-    Object type = freezed,
+    Object? sdp = freezed,
+    Object? type = freezed,
   }) {
     return _then(_value.copyWith(
-      sdp: sdp == freezed ? _value.sdp : sdp as String,
-      type: type == freezed ? _value.type : type as String,
+      sdp: sdp == freezed
+          ? _value.sdp
+          : sdp // ignore: cast_nullable_to_non_nullable
+              as String,
+      type: type == freezed
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -91,25 +99,28 @@ class __$JSEPCopyWithImpl<$Res> extends _$JSEPCopyWithImpl<$Res> implements _$JS
 
   @override
   $Res call({
-    Object sdp = freezed,
-    Object type = freezed,
+    Object? sdp = freezed,
+    Object? type = freezed,
   }) {
     return _then(_JSEP(
-      sdp: sdp == freezed ? _value.sdp : sdp as String,
-      type: type == freezed ? _value.type : type as String,
+      sdp: sdp == freezed
+          ? _value.sdp
+          : sdp // ignore: cast_nullable_to_non_nullable
+              as String,
+      type: type == freezed
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_JSEP implements _JSEP {
-  const _$_JSEP({@required @JsonKey(name: 'sdp') this.sdp, @required @JsonKey(name: 'type') this.type})
-      : assert(sdp != null),
-        assert(type != null);
+  const _$_JSEP({@JsonKey(name: 'sdp') required this.sdp, @JsonKey(name: 'type') required this.type});
 
-  factory _$_JSEP.fromJson(Map<String, dynamic> json) => _$_$_JSEPFromJson(json);
+  factory _$_JSEP.fromJson(Map<String, dynamic> json) => _$$_JSEPFromJson(json);
 
   @override
 
@@ -145,12 +156,12 @@ class _$_JSEP implements _JSEP {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_JSEPToJson(this);
+    return _$$_JSEPToJson(this);
   }
 }
 
 abstract class _JSEP implements JSEP {
-  const factory _JSEP({@required @JsonKey(name: 'sdp') String sdp, @required @JsonKey(name: 'type') String type}) =
+  const factory _JSEP({@JsonKey(name: 'sdp') required String sdp, @JsonKey(name: 'type') required String type}) =
       _$_JSEP;
 
   factory _JSEP.fromJson(Map<String, dynamic> json) = _$_JSEP.fromJson;
@@ -159,13 +170,13 @@ abstract class _JSEP implements JSEP {
 
   /// Session Description Protocol information.
   @JsonKey(name: 'sdp')
-  String get sdp;
+  String get sdp => throw _privateConstructorUsedError;
   @override
 
   /// See https://rtcweb-wg.github.io/jsep/#rfc.section.4.1.8.
   @JsonKey(name: 'type')
-  String get type;
+  String get type => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$JSEPCopyWith<_JSEP> get copyWith;
+  _$JSEPCopyWith<_JSEP> get copyWith => throw _privateConstructorUsedError;
 }

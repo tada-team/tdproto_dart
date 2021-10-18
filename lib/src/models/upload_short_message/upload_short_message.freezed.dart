@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'upload_short_message.dart';
 
@@ -8,6 +9,10 @@ part of 'upload_short_message.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 UploadShortMessage _$UploadShortMessageFromJson(Map<String, dynamic> json) {
   return _UploadShortMessage.fromJson(json);
 }
@@ -16,38 +21,35 @@ UploadShortMessage _$UploadShortMessageFromJson(Map<String, dynamic> json) {
 class _$UploadShortMessageTearOff {
   const _$UploadShortMessageTearOff();
 
-// ignore: unused_element
   _UploadShortMessage call(
-      {@required @JsonKey(name: 'upload') Upload upload, @required @JsonKey(name: 'message') ShortMessage message}) {
+      {@JsonKey(name: 'upload') required Upload upload, @JsonKey(name: 'message') required ShortMessage message}) {
     return _UploadShortMessage(
       upload: upload,
       message: message,
     );
   }
 
-// ignore: unused_element
   UploadShortMessage fromJson(Map<String, Object> json) {
     return UploadShortMessage.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $UploadShortMessage = _$UploadShortMessageTearOff();
 
 /// @nodoc
 mixin _$UploadShortMessage {
   /// Upload information.
   @JsonKey(name: 'upload')
-  Upload get upload;
+  Upload get upload => throw _privateConstructorUsedError;
 
   /// Short message information.
   @JsonKey(name: 'message')
-  ShortMessage get message;
+  ShortMessage get message => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $UploadShortMessageCopyWith<UploadShortMessage> get copyWith;
+  $UploadShortMessageCopyWith<UploadShortMessage> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -70,20 +72,23 @@ class _$UploadShortMessageCopyWithImpl<$Res> implements $UploadShortMessageCopyW
 
   @override
   $Res call({
-    Object upload = freezed,
-    Object message = freezed,
+    Object? upload = freezed,
+    Object? message = freezed,
   }) {
     return _then(_value.copyWith(
-      upload: upload == freezed ? _value.upload : upload as Upload,
-      message: message == freezed ? _value.message : message as ShortMessage,
+      upload: upload == freezed
+          ? _value.upload
+          : upload // ignore: cast_nullable_to_non_nullable
+              as Upload,
+      message: message == freezed
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as ShortMessage,
     ));
   }
 
   @override
   $UploadCopyWith<$Res> get upload {
-    if (_value.upload == null) {
-      return null;
-    }
     return $UploadCopyWith<$Res>(_value.upload, (value) {
       return _then(_value.copyWith(upload: value));
     });
@@ -91,9 +96,6 @@ class _$UploadShortMessageCopyWithImpl<$Res> implements $UploadShortMessageCopyW
 
   @override
   $ShortMessageCopyWith<$Res> get message {
-    if (_value.message == null) {
-      return null;
-    }
     return $ShortMessageCopyWith<$Res>(_value.message, (value) {
       return _then(_value.copyWith(message: value));
     });
@@ -124,26 +126,29 @@ class __$UploadShortMessageCopyWithImpl<$Res> extends _$UploadShortMessageCopyWi
 
   @override
   $Res call({
-    Object upload = freezed,
-    Object message = freezed,
+    Object? upload = freezed,
+    Object? message = freezed,
   }) {
     return _then(_UploadShortMessage(
-      upload: upload == freezed ? _value.upload : upload as Upload,
-      message: message == freezed ? _value.message : message as ShortMessage,
+      upload: upload == freezed
+          ? _value.upload
+          : upload // ignore: cast_nullable_to_non_nullable
+              as Upload,
+      message: message == freezed
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as ShortMessage,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_UploadShortMessage implements _UploadShortMessage {
   const _$_UploadShortMessage(
-      {@required @JsonKey(name: 'upload') this.upload, @required @JsonKey(name: 'message') this.message})
-      : assert(upload != null),
-        assert(message != null);
+      {@JsonKey(name: 'upload') required this.upload, @JsonKey(name: 'message') required this.message});
 
-  factory _$_UploadShortMessage.fromJson(Map<String, dynamic> json) => _$_$_UploadShortMessageFromJson(json);
+  factory _$_UploadShortMessage.fromJson(Map<String, dynamic> json) => _$$_UploadShortMessageFromJson(json);
 
   @override
 
@@ -180,14 +185,14 @@ class _$_UploadShortMessage implements _UploadShortMessage {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_UploadShortMessageToJson(this);
+    return _$$_UploadShortMessageToJson(this);
   }
 }
 
 abstract class _UploadShortMessage implements UploadShortMessage {
   const factory _UploadShortMessage(
-      {@required @JsonKey(name: 'upload') Upload upload,
-      @required @JsonKey(name: 'message') ShortMessage message}) = _$_UploadShortMessage;
+      {@JsonKey(name: 'upload') required Upload upload,
+      @JsonKey(name: 'message') required ShortMessage message}) = _$_UploadShortMessage;
 
   factory _UploadShortMessage.fromJson(Map<String, dynamic> json) = _$_UploadShortMessage.fromJson;
 
@@ -195,13 +200,13 @@ abstract class _UploadShortMessage implements UploadShortMessage {
 
   /// Upload information.
   @JsonKey(name: 'upload')
-  Upload get upload;
+  Upload get upload => throw _privateConstructorUsedError;
   @override
 
   /// Short message information.
   @JsonKey(name: 'message')
-  ShortMessage get message;
+  ShortMessage get message => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$UploadShortMessageCopyWith<_UploadShortMessage> get copyWith;
+  _$UploadShortMessageCopyWith<_UploadShortMessage> get copyWith => throw _privateConstructorUsedError;
 }

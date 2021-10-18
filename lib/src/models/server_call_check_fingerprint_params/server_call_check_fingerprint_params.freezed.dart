@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_call_check_fingerprint_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_call_check_fingerprint_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerCallCheckFingerprintParams _$ServerCallCheckFingerprintParamsFromJson(Map<String, dynamic> json) {
   return _ServerCallCheckFingerprintParams.fromJson(json);
 }
@@ -16,32 +21,30 @@ ServerCallCheckFingerprintParams _$ServerCallCheckFingerprintParamsFromJson(Map<
 class _$ServerCallCheckFingerprintParamsTearOff {
   const _$ServerCallCheckFingerprintParamsTearOff();
 
-// ignore: unused_element
-  _ServerCallCheckFingerprintParams call({@required @JsonKey(name: 'fingerprint') String fingerprint}) {
+  _ServerCallCheckFingerprintParams call({@JsonKey(name: 'fingerprint') required String fingerprint}) {
     return _ServerCallCheckFingerprintParams(
       fingerprint: fingerprint,
     );
   }
 
-// ignore: unused_element
   ServerCallCheckFingerprintParams fromJson(Map<String, Object> json) {
     return ServerCallCheckFingerprintParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerCallCheckFingerprintParams = _$ServerCallCheckFingerprintParamsTearOff();
 
 /// @nodoc
 mixin _$ServerCallCheckFingerprintParams {
   /// .
   @JsonKey(name: 'fingerprint')
-  String get fingerprint;
+  String get fingerprint => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerCallCheckFingerprintParamsCopyWith<ServerCallCheckFingerprintParams> get copyWith;
+  $ServerCallCheckFingerprintParamsCopyWith<ServerCallCheckFingerprintParams> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -62,10 +65,13 @@ class _$ServerCallCheckFingerprintParamsCopyWithImpl<$Res> implements $ServerCal
 
   @override
   $Res call({
-    Object fingerprint = freezed,
+    Object? fingerprint = freezed,
   }) {
     return _then(_value.copyWith(
-      fingerprint: fingerprint == freezed ? _value.fingerprint : fingerprint as String,
+      fingerprint: fingerprint == freezed
+          ? _value.fingerprint
+          : fingerprint // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -92,23 +98,24 @@ class __$ServerCallCheckFingerprintParamsCopyWithImpl<$Res> extends _$ServerCall
 
   @override
   $Res call({
-    Object fingerprint = freezed,
+    Object? fingerprint = freezed,
   }) {
     return _then(_ServerCallCheckFingerprintParams(
-      fingerprint: fingerprint == freezed ? _value.fingerprint : fingerprint as String,
+      fingerprint: fingerprint == freezed
+          ? _value.fingerprint
+          : fingerprint // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerCallCheckFingerprintParams implements _ServerCallCheckFingerprintParams {
-  const _$_ServerCallCheckFingerprintParams({@required @JsonKey(name: 'fingerprint') this.fingerprint})
-      : assert(fingerprint != null);
+  const _$_ServerCallCheckFingerprintParams({@JsonKey(name: 'fingerprint') required this.fingerprint});
 
   factory _$_ServerCallCheckFingerprintParams.fromJson(Map<String, dynamic> json) =>
-      _$_$_ServerCallCheckFingerprintParamsFromJson(json);
+      _$$_ServerCallCheckFingerprintParamsFromJson(json);
 
   @override
 
@@ -139,12 +146,12 @@ class _$_ServerCallCheckFingerprintParams implements _ServerCallCheckFingerprint
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerCallCheckFingerprintParamsToJson(this);
+    return _$$_ServerCallCheckFingerprintParamsToJson(this);
   }
 }
 
 abstract class _ServerCallCheckFingerprintParams implements ServerCallCheckFingerprintParams {
-  const factory _ServerCallCheckFingerprintParams({@required @JsonKey(name: 'fingerprint') String fingerprint}) =
+  const factory _ServerCallCheckFingerprintParams({@JsonKey(name: 'fingerprint') required String fingerprint}) =
       _$_ServerCallCheckFingerprintParams;
 
   factory _ServerCallCheckFingerprintParams.fromJson(Map<String, dynamic> json) =
@@ -154,8 +161,9 @@ abstract class _ServerCallCheckFingerprintParams implements ServerCallCheckFinge
 
   /// .
   @JsonKey(name: 'fingerprint')
-  String get fingerprint;
+  String get fingerprint => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerCallCheckFingerprintParamsCopyWith<_ServerCallCheckFingerprintParams> get copyWith;
+  _$ServerCallCheckFingerprintParamsCopyWith<_ServerCallCheckFingerprintParams> get copyWith =>
+      throw _privateConstructorUsedError;
 }

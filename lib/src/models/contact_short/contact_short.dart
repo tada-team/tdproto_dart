@@ -6,22 +6,22 @@ part 'contact_short.g.dart';
 
 /// Short contact representation.
 @freezed
-abstract class ContactShort with _$ContactShort {
+class ContactShort with _$ContactShort {
   const factory ContactShort({
     /// Contact Id.
-    @JsonKey(name: 'jid') @required String jid,
+    @JsonKey(name: 'jid') required String jid,
 
     /// Full name in chats.
-    @JsonKey(name: 'display_name') @required String displayName,
+    @JsonKey(name: 'display_name') required String displayName,
 
     /// Short name in chats.
-    @JsonKey(name: 'short_name') @required String shortName,
+    @JsonKey(name: 'short_name') required String shortName,
 
     /// Icons data.
-    @JsonKey(name: 'icons') @required IconData icons,
+    @JsonKey(name: 'icons') required IconData icons,
 
     /// Object version.
-    @JsonKey(name: 'gentime') @required int gentime,
+    @JsonKey(name: 'gentime') required int gentime,
   }) = _ContactShort;
 
   factory ContactShort.fromJson(Map<String, dynamic> json) => _$ContactShortFromJson(json);

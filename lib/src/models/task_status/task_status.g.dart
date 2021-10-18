@@ -6,17 +6,15 @@ part of 'task_status.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_TaskStatus _$_$_TaskStatusFromJson(Map<String, dynamic> json) {
-  return _$_TaskStatus(
-    uid: json['uid'] as String,
-    sortOrdering: json['sort_ordering'] as int,
-    name: json['name'] as String,
-    title: json['title'] as String,
-    isArchive: json['is_archive'] as bool,
-  );
-}
+_$_TaskStatus _$$_TaskStatusFromJson(Map<String, dynamic> json) => _$_TaskStatus(
+      uid: json['uid'] as String?,
+      sortOrdering: json['sort_ordering'] as int,
+      name: json['name'] as String,
+      title: json['title'] as String,
+      isArchive: json['is_archive'] as bool? ?? false,
+    );
 
-Map<String, dynamic> _$_$_TaskStatusToJson(_$_TaskStatus instance) => <String, dynamic>{
+Map<String, dynamic> _$$_TaskStatusToJson(_$_TaskStatus instance) => <String, dynamic>{
       'uid': instance.uid,
       'sort_ordering': instance.sortOrdering,
       'name': instance.name,

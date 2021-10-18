@@ -6,16 +6,16 @@ part 'client_chat_lastread.g.dart';
 
 /// Last read message in chat changed.
 @freezed
-abstract class ClientChatLastread with _$ClientChatLastread {
+class ClientChatLastread with _$ClientChatLastread {
   const factory ClientChatLastread({
     /// .
-    @JsonKey(name: 'params') @required ClientChatLastreadParams params,
+    @JsonKey(name: 'params') required ClientChatLastreadParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ClientChatLastread;
 
   factory ClientChatLastread.fromJson(Map<String, dynamic> json) => _$ClientChatLastreadFromJson(json);

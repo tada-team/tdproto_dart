@@ -6,13 +6,13 @@ part 'server_warning_params.g.dart';
 
 /// Params of the server.warning event.
 @freezed
-abstract class ServerWarningParams with _$ServerWarningParams {
+class ServerWarningParams with _$ServerWarningParams {
   const factory ServerWarningParams({
     /// Message.
-    @JsonKey(name: 'message') @required String message,
+    @JsonKey(name: 'message') required String message,
 
     /// Debug information.
-    @JsonKey(name: 'orig') @required dynamic orig,
+    @JsonKey(name: 'orig') required dynamic orig,
   }) = _ServerWarningParams;
 
   factory ServerWarningParams.fromJson(Map<String, dynamic> json) => _$ServerWarningParamsFromJson(json);

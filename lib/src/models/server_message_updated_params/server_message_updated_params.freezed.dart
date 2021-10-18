@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_message_updated_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_message_updated_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerMessageUpdatedParams _$ServerMessageUpdatedParamsFromJson(Map<String, dynamic> json) {
   return _ServerMessageUpdatedParams.fromJson(json);
 }
@@ -16,13 +21,12 @@ ServerMessageUpdatedParams _$ServerMessageUpdatedParamsFromJson(Map<String, dyna
 class _$ServerMessageUpdatedParamsTearOff {
   const _$ServerMessageUpdatedParamsTearOff();
 
-// ignore: unused_element
   _ServerMessageUpdatedParams call(
-      {@required @JsonKey(name: 'messages') List<Message> messages,
-      @required @JsonKey(name: 'delayed') bool delayed,
-      @required @JsonKey(name: 'chat_counters') List<ChatCounters> chatCounters,
-      @required @JsonKey(name: 'team_unread') TeamUnread teamUnread,
-      @required @JsonKey(name: 'badge') int badge}) {
+      {@JsonKey(name: 'messages') required List<Message> messages,
+      @JsonKey(name: 'delayed') required bool delayed = false,
+      @JsonKey(name: 'chat_counters') required List<ChatCounters> chatCounters,
+      @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
+      @JsonKey(name: 'badge') int? badge}) {
     return _ServerMessageUpdatedParams(
       messages: messages,
       delayed: delayed,
@@ -32,41 +36,39 @@ class _$ServerMessageUpdatedParamsTearOff {
     );
   }
 
-// ignore: unused_element
   ServerMessageUpdatedParams fromJson(Map<String, Object> json) {
     return ServerMessageUpdatedParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerMessageUpdatedParams = _$ServerMessageUpdatedParamsTearOff();
 
 /// @nodoc
 mixin _$ServerMessageUpdatedParams {
   /// Messages data.
   @JsonKey(name: 'messages')
-  List<Message> get messages;
+  List<Message> get messages => throw _privateConstructorUsedError;
 
   /// true = silently message update, false = new message.
   @JsonKey(name: 'delayed')
-  bool get delayed;
+  bool get delayed => throw _privateConstructorUsedError;
 
   /// Chat counters.
   @JsonKey(name: 'chat_counters')
-  List<ChatCounters> get chatCounters;
+  List<ChatCounters> get chatCounters => throw _privateConstructorUsedError;
 
   /// Current team counters.
   @JsonKey(name: 'team_unread')
-  TeamUnread get teamUnread;
+  TeamUnread? get teamUnread => throw _privateConstructorUsedError;
 
   /// Total number of unreads, if changed.
   @JsonKey(name: 'badge')
-  int get badge;
+  int? get badge => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerMessageUpdatedParamsCopyWith<ServerMessageUpdatedParams> get copyWith;
+  $ServerMessageUpdatedParamsCopyWith<ServerMessageUpdatedParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -78,10 +80,10 @@ abstract class $ServerMessageUpdatedParamsCopyWith<$Res> {
       {@JsonKey(name: 'messages') List<Message> messages,
       @JsonKey(name: 'delayed') bool delayed,
       @JsonKey(name: 'chat_counters') List<ChatCounters> chatCounters,
-      @JsonKey(name: 'team_unread') TeamUnread teamUnread,
-      @JsonKey(name: 'badge') int badge});
+      @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
+      @JsonKey(name: 'badge') int? badge});
 
-  $TeamUnreadCopyWith<$Res> get teamUnread;
+  $TeamUnreadCopyWith<$Res>? get teamUnread;
 }
 
 /// @nodoc
@@ -94,27 +96,43 @@ class _$ServerMessageUpdatedParamsCopyWithImpl<$Res> implements $ServerMessageUp
 
   @override
   $Res call({
-    Object messages = freezed,
-    Object delayed = freezed,
-    Object chatCounters = freezed,
-    Object teamUnread = freezed,
-    Object badge = freezed,
+    Object? messages = freezed,
+    Object? delayed = freezed,
+    Object? chatCounters = freezed,
+    Object? teamUnread = freezed,
+    Object? badge = freezed,
   }) {
     return _then(_value.copyWith(
-      messages: messages == freezed ? _value.messages : messages as List<Message>,
-      delayed: delayed == freezed ? _value.delayed : delayed as bool,
-      chatCounters: chatCounters == freezed ? _value.chatCounters : chatCounters as List<ChatCounters>,
-      teamUnread: teamUnread == freezed ? _value.teamUnread : teamUnread as TeamUnread,
-      badge: badge == freezed ? _value.badge : badge as int,
+      messages: messages == freezed
+          ? _value.messages
+          : messages // ignore: cast_nullable_to_non_nullable
+              as List<Message>,
+      delayed: delayed == freezed
+          ? _value.delayed
+          : delayed // ignore: cast_nullable_to_non_nullable
+              as bool,
+      chatCounters: chatCounters == freezed
+          ? _value.chatCounters
+          : chatCounters // ignore: cast_nullable_to_non_nullable
+              as List<ChatCounters>,
+      teamUnread: teamUnread == freezed
+          ? _value.teamUnread
+          : teamUnread // ignore: cast_nullable_to_non_nullable
+              as TeamUnread?,
+      badge: badge == freezed
+          ? _value.badge
+          : badge // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 
   @override
-  $TeamUnreadCopyWith<$Res> get teamUnread {
+  $TeamUnreadCopyWith<$Res>? get teamUnread {
     if (_value.teamUnread == null) {
       return null;
     }
-    return $TeamUnreadCopyWith<$Res>(_value.teamUnread, (value) {
+
+    return $TeamUnreadCopyWith<$Res>(_value.teamUnread!, (value) {
       return _then(_value.copyWith(teamUnread: value));
     });
   }
@@ -130,11 +148,11 @@ abstract class _$ServerMessageUpdatedParamsCopyWith<$Res> implements $ServerMess
       {@JsonKey(name: 'messages') List<Message> messages,
       @JsonKey(name: 'delayed') bool delayed,
       @JsonKey(name: 'chat_counters') List<ChatCounters> chatCounters,
-      @JsonKey(name: 'team_unread') TeamUnread teamUnread,
-      @JsonKey(name: 'badge') int badge});
+      @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
+      @JsonKey(name: 'badge') int? badge});
 
   @override
-  $TeamUnreadCopyWith<$Res> get teamUnread;
+  $TeamUnreadCopyWith<$Res>? get teamUnread;
 }
 
 /// @nodoc
@@ -149,40 +167,49 @@ class __$ServerMessageUpdatedParamsCopyWithImpl<$Res> extends _$ServerMessageUpd
 
   @override
   $Res call({
-    Object messages = freezed,
-    Object delayed = freezed,
-    Object chatCounters = freezed,
-    Object teamUnread = freezed,
-    Object badge = freezed,
+    Object? messages = freezed,
+    Object? delayed = freezed,
+    Object? chatCounters = freezed,
+    Object? teamUnread = freezed,
+    Object? badge = freezed,
   }) {
     return _then(_ServerMessageUpdatedParams(
-      messages: messages == freezed ? _value.messages : messages as List<Message>,
-      delayed: delayed == freezed ? _value.delayed : delayed as bool,
-      chatCounters: chatCounters == freezed ? _value.chatCounters : chatCounters as List<ChatCounters>,
-      teamUnread: teamUnread == freezed ? _value.teamUnread : teamUnread as TeamUnread,
-      badge: badge == freezed ? _value.badge : badge as int,
+      messages: messages == freezed
+          ? _value.messages
+          : messages // ignore: cast_nullable_to_non_nullable
+              as List<Message>,
+      delayed: delayed == freezed
+          ? _value.delayed
+          : delayed // ignore: cast_nullable_to_non_nullable
+              as bool,
+      chatCounters: chatCounters == freezed
+          ? _value.chatCounters
+          : chatCounters // ignore: cast_nullable_to_non_nullable
+              as List<ChatCounters>,
+      teamUnread: teamUnread == freezed
+          ? _value.teamUnread
+          : teamUnread // ignore: cast_nullable_to_non_nullable
+              as TeamUnread?,
+      badge: badge == freezed
+          ? _value.badge
+          : badge // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerMessageUpdatedParams implements _ServerMessageUpdatedParams {
   const _$_ServerMessageUpdatedParams(
-      {@required @JsonKey(name: 'messages') this.messages,
-      @required @JsonKey(name: 'delayed') this.delayed,
-      @required @JsonKey(name: 'chat_counters') this.chatCounters,
-      @required @JsonKey(name: 'team_unread') this.teamUnread,
-      @required @JsonKey(name: 'badge') this.badge})
-      : assert(messages != null),
-        assert(delayed != null),
-        assert(chatCounters != null),
-        assert(teamUnread != null),
-        assert(badge != null);
+      {@JsonKey(name: 'messages') required this.messages,
+      @JsonKey(name: 'delayed') required this.delayed = false,
+      @JsonKey(name: 'chat_counters') required this.chatCounters,
+      @JsonKey(name: 'team_unread') this.teamUnread,
+      @JsonKey(name: 'badge') this.badge});
 
   factory _$_ServerMessageUpdatedParams.fromJson(Map<String, dynamic> json) =>
-      _$_$_ServerMessageUpdatedParamsFromJson(json);
+      _$$_ServerMessageUpdatedParamsFromJson(json);
 
   @override
 
@@ -203,12 +230,12 @@ class _$_ServerMessageUpdatedParams implements _ServerMessageUpdatedParams {
 
   /// Current team counters.
   @JsonKey(name: 'team_unread')
-  final TeamUnread teamUnread;
+  final TeamUnread? teamUnread;
   @override
 
   /// Total number of unreads, if changed.
   @JsonKey(name: 'badge')
-  final int badge;
+  final int? badge;
 
   @override
   String toString() {
@@ -244,17 +271,17 @@ class _$_ServerMessageUpdatedParams implements _ServerMessageUpdatedParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerMessageUpdatedParamsToJson(this);
+    return _$$_ServerMessageUpdatedParamsToJson(this);
   }
 }
 
 abstract class _ServerMessageUpdatedParams implements ServerMessageUpdatedParams {
   const factory _ServerMessageUpdatedParams(
-      {@required @JsonKey(name: 'messages') List<Message> messages,
-      @required @JsonKey(name: 'delayed') bool delayed,
-      @required @JsonKey(name: 'chat_counters') List<ChatCounters> chatCounters,
-      @required @JsonKey(name: 'team_unread') TeamUnread teamUnread,
-      @required @JsonKey(name: 'badge') int badge}) = _$_ServerMessageUpdatedParams;
+      {@JsonKey(name: 'messages') required List<Message> messages,
+      @JsonKey(name: 'delayed') required bool delayed,
+      @JsonKey(name: 'chat_counters') required List<ChatCounters> chatCounters,
+      @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
+      @JsonKey(name: 'badge') int? badge}) = _$_ServerMessageUpdatedParams;
 
   factory _ServerMessageUpdatedParams.fromJson(Map<String, dynamic> json) = _$_ServerMessageUpdatedParams.fromJson;
 
@@ -262,28 +289,28 @@ abstract class _ServerMessageUpdatedParams implements ServerMessageUpdatedParams
 
   /// Messages data.
   @JsonKey(name: 'messages')
-  List<Message> get messages;
+  List<Message> get messages => throw _privateConstructorUsedError;
   @override
 
   /// true = silently message update, false = new message.
   @JsonKey(name: 'delayed')
-  bool get delayed;
+  bool get delayed => throw _privateConstructorUsedError;
   @override
 
   /// Chat counters.
   @JsonKey(name: 'chat_counters')
-  List<ChatCounters> get chatCounters;
+  List<ChatCounters> get chatCounters => throw _privateConstructorUsedError;
   @override
 
   /// Current team counters.
   @JsonKey(name: 'team_unread')
-  TeamUnread get teamUnread;
+  TeamUnread? get teamUnread => throw _privateConstructorUsedError;
   @override
 
   /// Total number of unreads, if changed.
   @JsonKey(name: 'badge')
-  int get badge;
+  int? get badge => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerMessageUpdatedParamsCopyWith<_ServerMessageUpdatedParams> get copyWith;
+  _$ServerMessageUpdatedParamsCopyWith<_ServerMessageUpdatedParams> get copyWith => throw _privateConstructorUsedError;
 }

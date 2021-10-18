@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'team_counter.dart';
 
@@ -8,6 +9,10 @@ part of 'team_counter.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 TeamCounter _$TeamCounterFromJson(Map<String, dynamic> json) {
   return _TeamCounter.fromJson(json);
 }
@@ -16,38 +21,34 @@ TeamCounter _$TeamCounterFromJson(Map<String, dynamic> json) {
 class _$TeamCounterTearOff {
   const _$TeamCounterTearOff();
 
-// ignore: unused_element
-  _TeamCounter call(
-      {@required @JsonKey(name: 'uid') String uid, @required @JsonKey(name: 'unread') TeamUnread unreads}) {
+  _TeamCounter call({@JsonKey(name: 'uid') required String uid, @JsonKey(name: 'unread') required TeamUnread unreads}) {
     return _TeamCounter(
       uid: uid,
       unreads: unreads,
     );
   }
 
-// ignore: unused_element
   TeamCounter fromJson(Map<String, Object> json) {
     return TeamCounter.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $TeamCounter = _$TeamCounterTearOff();
 
 /// @nodoc
 mixin _$TeamCounter {
   /// Team id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// Unread message counters.
   @JsonKey(name: 'unread')
-  TeamUnread get unreads;
+  TeamUnread get unreads => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $TeamCounterCopyWith<TeamCounter> get copyWith;
+  $TeamCounterCopyWith<TeamCounter> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -68,20 +69,23 @@ class _$TeamCounterCopyWithImpl<$Res> implements $TeamCounterCopyWith<$Res> {
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object unreads = freezed,
+    Object? uid = freezed,
+    Object? unreads = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
-      unreads: unreads == freezed ? _value.unreads : unreads as TeamUnread,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      unreads: unreads == freezed
+          ? _value.unreads
+          : unreads // ignore: cast_nullable_to_non_nullable
+              as TeamUnread,
     ));
   }
 
   @override
   $TeamUnreadCopyWith<$Res> get unreads {
-    if (_value.unreads == null) {
-      return null;
-    }
     return $TeamUnreadCopyWith<$Res>(_value.unreads, (value) {
       return _then(_value.copyWith(unreads: value));
     });
@@ -109,25 +113,28 @@ class __$TeamCounterCopyWithImpl<$Res> extends _$TeamCounterCopyWithImpl<$Res> i
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object unreads = freezed,
+    Object? uid = freezed,
+    Object? unreads = freezed,
   }) {
     return _then(_TeamCounter(
-      uid: uid == freezed ? _value.uid : uid as String,
-      unreads: unreads == freezed ? _value.unreads : unreads as TeamUnread,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      unreads: unreads == freezed
+          ? _value.unreads
+          : unreads // ignore: cast_nullable_to_non_nullable
+              as TeamUnread,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_TeamCounter implements _TeamCounter {
-  const _$_TeamCounter({@required @JsonKey(name: 'uid') this.uid, @required @JsonKey(name: 'unread') this.unreads})
-      : assert(uid != null),
-        assert(unreads != null);
+  const _$_TeamCounter({@JsonKey(name: 'uid') required this.uid, @JsonKey(name: 'unread') required this.unreads});
 
-  factory _$_TeamCounter.fromJson(Map<String, dynamic> json) => _$_$_TeamCounterFromJson(json);
+  factory _$_TeamCounter.fromJson(Map<String, dynamic> json) => _$$_TeamCounterFromJson(json);
 
   @override
 
@@ -163,14 +170,14 @@ class _$_TeamCounter implements _TeamCounter {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_TeamCounterToJson(this);
+    return _$$_TeamCounterToJson(this);
   }
 }
 
 abstract class _TeamCounter implements TeamCounter {
   const factory _TeamCounter(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'unread') TeamUnread unreads}) = _$_TeamCounter;
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'unread') required TeamUnread unreads}) = _$_TeamCounter;
 
   factory _TeamCounter.fromJson(Map<String, dynamic> json) = _$_TeamCounter.fromJson;
 
@@ -178,13 +185,13 @@ abstract class _TeamCounter implements TeamCounter {
 
   /// Team id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// Unread message counters.
   @JsonKey(name: 'unread')
-  TeamUnread get unreads;
+  TeamUnread get unreads => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TeamCounterCopyWith<_TeamCounter> get copyWith;
+  _$TeamCounterCopyWith<_TeamCounter> get copyWith => throw _privateConstructorUsedError;
 }

@@ -6,22 +6,22 @@ part 'task_status.g.dart';
 
 /// Custom task status.
 @freezed
-abstract class TaskStatus with _$TaskStatus {
+class TaskStatus with _$TaskStatus {
   const factory TaskStatus({
     /// Status id.
-    @JsonKey(name: 'uid') String uid,
+    @JsonKey(name: 'uid') String? uid,
 
     /// Status sort ordering.
-    @JsonKey(name: 'sort_ordering') @required int sortOrdering,
+    @JsonKey(name: 'sort_ordering') required int sortOrdering,
 
     /// Status internal name.
-    @JsonKey(name: 'name') @required String name,
+    @JsonKey(name: 'name') required String name,
 
     /// Status localized name.
-    @JsonKey(name: 'title') @required String title,
+    @JsonKey(name: 'title') required String title,
 
     /// Status not used anymore.
-    @JsonKey(name: 'is_archive') bool isArchive,
+    @Default(false) @JsonKey(name: 'is_archive') bool? isArchive,
   }) = _TaskStatus;
 
   factory TaskStatus.fromJson(Map<String, dynamic> json) => _$TaskStatusFromJson(json);

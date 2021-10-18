@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'online_contact.dart';
 
@@ -8,6 +9,10 @@ part of 'online_contact.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 OnlineContact _$OnlineContactFromJson(Map<String, dynamic> json) {
   return _OnlineContact.fromJson(json);
 }
@@ -16,12 +21,11 @@ OnlineContact _$OnlineContactFromJson(Map<String, dynamic> json) {
 class _$OnlineContactTearOff {
   const _$OnlineContactTearOff();
 
-// ignore: unused_element
   _OnlineContact call(
-      {@required @JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'afk') bool afk,
-      @JsonKey(name: 'focused') bool focused,
-      @required @JsonKey(name: 'mobile') bool mobile}) {
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'afk') bool? afk = false,
+      @JsonKey(name: 'focused') bool? focused = false,
+      @JsonKey(name: 'mobile') required bool mobile = false}) {
     return _OnlineContact(
       jid: jid,
       afk: afk,
@@ -30,37 +34,35 @@ class _$OnlineContactTearOff {
     );
   }
 
-// ignore: unused_element
   OnlineContact fromJson(Map<String, Object> json) {
     return OnlineContact.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $OnlineContact = _$OnlineContactTearOff();
 
 /// @nodoc
 mixin _$OnlineContact {
   /// Contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
   /// Is away from keyboard.
   @JsonKey(name: 'afk')
-  bool get afk;
+  bool? get afk => throw _privateConstructorUsedError;
 
   /// Focus mode enabled.
   @JsonKey(name: 'focused')
-  bool get focused;
+  bool? get focused => throw _privateConstructorUsedError;
 
   /// Is mobile client.
   @JsonKey(name: 'mobile')
-  bool get mobile;
+  bool get mobile => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $OnlineContactCopyWith<OnlineContact> get copyWith;
+  $OnlineContactCopyWith<OnlineContact> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -69,8 +71,8 @@ abstract class $OnlineContactCopyWith<$Res> {
       _$OnlineContactCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'afk') bool afk,
-      @JsonKey(name: 'focused') bool focused,
+      @JsonKey(name: 'afk') bool? afk,
+      @JsonKey(name: 'focused') bool? focused,
       @JsonKey(name: 'mobile') bool mobile});
 }
 
@@ -84,16 +86,28 @@ class _$OnlineContactCopyWithImpl<$Res> implements $OnlineContactCopyWith<$Res> 
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object afk = freezed,
-    Object focused = freezed,
-    Object mobile = freezed,
+    Object? jid = freezed,
+    Object? afk = freezed,
+    Object? focused = freezed,
+    Object? mobile = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
-      afk: afk == freezed ? _value.afk : afk as bool,
-      focused: focused == freezed ? _value.focused : focused as bool,
-      mobile: mobile == freezed ? _value.mobile : mobile as bool,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      afk: afk == freezed
+          ? _value.afk
+          : afk // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      focused: focused == freezed
+          ? _value.focused
+          : focused // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      mobile: mobile == freezed
+          ? _value.mobile
+          : mobile // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -105,8 +119,8 @@ abstract class _$OnlineContactCopyWith<$Res> implements $OnlineContactCopyWith<$
   @override
   $Res call(
       {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'afk') bool afk,
-      @JsonKey(name: 'focused') bool focused,
+      @JsonKey(name: 'afk') bool? afk,
+      @JsonKey(name: 'focused') bool? focused,
       @JsonKey(name: 'mobile') bool mobile});
 }
 
@@ -121,33 +135,42 @@ class __$OnlineContactCopyWithImpl<$Res> extends _$OnlineContactCopyWithImpl<$Re
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object afk = freezed,
-    Object focused = freezed,
-    Object mobile = freezed,
+    Object? jid = freezed,
+    Object? afk = freezed,
+    Object? focused = freezed,
+    Object? mobile = freezed,
   }) {
     return _then(_OnlineContact(
-      jid: jid == freezed ? _value.jid : jid as String,
-      afk: afk == freezed ? _value.afk : afk as bool,
-      focused: focused == freezed ? _value.focused : focused as bool,
-      mobile: mobile == freezed ? _value.mobile : mobile as bool,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      afk: afk == freezed
+          ? _value.afk
+          : afk // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      focused: focused == freezed
+          ? _value.focused
+          : focused // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      mobile: mobile == freezed
+          ? _value.mobile
+          : mobile // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_OnlineContact implements _OnlineContact {
   const _$_OnlineContact(
-      {@required @JsonKey(name: 'jid') this.jid,
-      @JsonKey(name: 'afk') this.afk,
-      @JsonKey(name: 'focused') this.focused,
-      @required @JsonKey(name: 'mobile') this.mobile})
-      : assert(jid != null),
-        assert(mobile != null);
+      {@JsonKey(name: 'jid') required this.jid,
+      @JsonKey(name: 'afk') this.afk = false,
+      @JsonKey(name: 'focused') this.focused = false,
+      @JsonKey(name: 'mobile') required this.mobile = false});
 
-  factory _$_OnlineContact.fromJson(Map<String, dynamic> json) => _$_$_OnlineContactFromJson(json);
+  factory _$_OnlineContact.fromJson(Map<String, dynamic> json) => _$$_OnlineContactFromJson(json);
 
   @override
 
@@ -158,12 +181,12 @@ class _$_OnlineContact implements _OnlineContact {
 
   /// Is away from keyboard.
   @JsonKey(name: 'afk')
-  final bool afk;
+  final bool? afk;
   @override
 
   /// Focus mode enabled.
   @JsonKey(name: 'focused')
-  final bool focused;
+  final bool? focused;
   @override
 
   /// Is mobile client.
@@ -200,16 +223,16 @@ class _$_OnlineContact implements _OnlineContact {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_OnlineContactToJson(this);
+    return _$$_OnlineContactToJson(this);
   }
 }
 
 abstract class _OnlineContact implements OnlineContact {
   const factory _OnlineContact(
-      {@required @JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'afk') bool afk,
-      @JsonKey(name: 'focused') bool focused,
-      @required @JsonKey(name: 'mobile') bool mobile}) = _$_OnlineContact;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'afk') bool? afk,
+      @JsonKey(name: 'focused') bool? focused,
+      @JsonKey(name: 'mobile') required bool mobile}) = _$_OnlineContact;
 
   factory _OnlineContact.fromJson(Map<String, dynamic> json) = _$_OnlineContact.fromJson;
 
@@ -217,23 +240,23 @@ abstract class _OnlineContact implements OnlineContact {
 
   /// Contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Is away from keyboard.
   @JsonKey(name: 'afk')
-  bool get afk;
+  bool? get afk => throw _privateConstructorUsedError;
   @override
 
   /// Focus mode enabled.
   @JsonKey(name: 'focused')
-  bool get focused;
+  bool? get focused => throw _privateConstructorUsedError;
   @override
 
   /// Is mobile client.
   @JsonKey(name: 'mobile')
-  bool get mobile;
+  bool get mobile => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$OnlineContactCopyWith<_OnlineContact> get copyWith;
+  _$OnlineContactCopyWith<_OnlineContact> get copyWith => throw _privateConstructorUsedError;
 }

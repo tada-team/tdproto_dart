@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'country.dart';
 
@@ -8,6 +9,10 @@ part of 'country.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Country _$CountryFromJson(Map<String, dynamic> json) {
   return _Country.fromJson(json);
 }
@@ -16,13 +21,12 @@ Country _$CountryFromJson(Map<String, dynamic> json) {
 class _$CountryTearOff {
   const _$CountryTearOff();
 
-// ignore: unused_element
   _Country call(
-      {@required @JsonKey(name: 'code') String code,
-      @required @JsonKey(name: 'iso') String iso,
-      @required @JsonKey(name: 'name') String name,
-      @JsonKey(name: 'default') bool isDefault,
-      @JsonKey(name: 'popular') bool popular}) {
+      {@JsonKey(name: 'code') required String code,
+      @JsonKey(name: 'iso') required String iso,
+      @JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'default') bool? isDefault = false,
+      @JsonKey(name: 'popular') bool? popular = false}) {
     return _Country(
       code: code,
       iso: iso,
@@ -32,41 +36,39 @@ class _$CountryTearOff {
     );
   }
 
-// ignore: unused_element
   Country fromJson(Map<String, Object> json) {
     return Country.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Country = _$CountryTearOff();
 
 /// @nodoc
 mixin _$Country {
   /// Phone code.
   @JsonKey(name: 'code')
-  String get code;
+  String get code => throw _privateConstructorUsedError;
 
   /// Country ISO code.
   @JsonKey(name: 'iso')
-  String get iso;
+  String get iso => throw _privateConstructorUsedError;
 
   /// Country name.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// Selected by default.
   @JsonKey(name: 'default')
-  bool get isDefault;
+  bool? get isDefault => throw _privateConstructorUsedError;
 
   /// Is popular, need to cache.
   @JsonKey(name: 'popular')
-  bool get popular;
+  bool? get popular => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $CountryCopyWith<Country> get copyWith;
+  $CountryCopyWith<Country> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -76,8 +78,8 @@ abstract class $CountryCopyWith<$Res> {
       {@JsonKey(name: 'code') String code,
       @JsonKey(name: 'iso') String iso,
       @JsonKey(name: 'name') String name,
-      @JsonKey(name: 'default') bool isDefault,
-      @JsonKey(name: 'popular') bool popular});
+      @JsonKey(name: 'default') bool? isDefault,
+      @JsonKey(name: 'popular') bool? popular});
 }
 
 /// @nodoc
@@ -90,18 +92,33 @@ class _$CountryCopyWithImpl<$Res> implements $CountryCopyWith<$Res> {
 
   @override
   $Res call({
-    Object code = freezed,
-    Object iso = freezed,
-    Object name = freezed,
-    Object isDefault = freezed,
-    Object popular = freezed,
+    Object? code = freezed,
+    Object? iso = freezed,
+    Object? name = freezed,
+    Object? isDefault = freezed,
+    Object? popular = freezed,
   }) {
     return _then(_value.copyWith(
-      code: code == freezed ? _value.code : code as String,
-      iso: iso == freezed ? _value.iso : iso as String,
-      name: name == freezed ? _value.name : name as String,
-      isDefault: isDefault == freezed ? _value.isDefault : isDefault as bool,
-      popular: popular == freezed ? _value.popular : popular as bool,
+      code: code == freezed
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as String,
+      iso: iso == freezed
+          ? _value.iso
+          : iso // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      isDefault: isDefault == freezed
+          ? _value.isDefault
+          : isDefault // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      popular: popular == freezed
+          ? _value.popular
+          : popular // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -114,8 +131,8 @@ abstract class _$CountryCopyWith<$Res> implements $CountryCopyWith<$Res> {
       {@JsonKey(name: 'code') String code,
       @JsonKey(name: 'iso') String iso,
       @JsonKey(name: 'name') String name,
-      @JsonKey(name: 'default') bool isDefault,
-      @JsonKey(name: 'popular') bool popular});
+      @JsonKey(name: 'default') bool? isDefault,
+      @JsonKey(name: 'popular') bool? popular});
 }
 
 /// @nodoc
@@ -127,37 +144,48 @@ class __$CountryCopyWithImpl<$Res> extends _$CountryCopyWithImpl<$Res> implement
 
   @override
   $Res call({
-    Object code = freezed,
-    Object iso = freezed,
-    Object name = freezed,
-    Object isDefault = freezed,
-    Object popular = freezed,
+    Object? code = freezed,
+    Object? iso = freezed,
+    Object? name = freezed,
+    Object? isDefault = freezed,
+    Object? popular = freezed,
   }) {
     return _then(_Country(
-      code: code == freezed ? _value.code : code as String,
-      iso: iso == freezed ? _value.iso : iso as String,
-      name: name == freezed ? _value.name : name as String,
-      isDefault: isDefault == freezed ? _value.isDefault : isDefault as bool,
-      popular: popular == freezed ? _value.popular : popular as bool,
+      code: code == freezed
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as String,
+      iso: iso == freezed
+          ? _value.iso
+          : iso // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      isDefault: isDefault == freezed
+          ? _value.isDefault
+          : isDefault // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      popular: popular == freezed
+          ? _value.popular
+          : popular // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Country implements _Country {
   const _$_Country(
-      {@required @JsonKey(name: 'code') this.code,
-      @required @JsonKey(name: 'iso') this.iso,
-      @required @JsonKey(name: 'name') this.name,
-      @JsonKey(name: 'default') this.isDefault,
-      @JsonKey(name: 'popular') this.popular})
-      : assert(code != null),
-        assert(iso != null),
-        assert(name != null);
+      {@JsonKey(name: 'code') required this.code,
+      @JsonKey(name: 'iso') required this.iso,
+      @JsonKey(name: 'name') required this.name,
+      @JsonKey(name: 'default') this.isDefault = false,
+      @JsonKey(name: 'popular') this.popular = false});
 
-  factory _$_Country.fromJson(Map<String, dynamic> json) => _$_$_CountryFromJson(json);
+  factory _$_Country.fromJson(Map<String, dynamic> json) => _$$_CountryFromJson(json);
 
   @override
 
@@ -178,12 +206,12 @@ class _$_Country implements _Country {
 
   /// Selected by default.
   @JsonKey(name: 'default')
-  final bool isDefault;
+  final bool? isDefault;
   @override
 
   /// Is popular, need to cache.
   @JsonKey(name: 'popular')
-  final bool popular;
+  final bool? popular;
 
   @override
   String toString() {
@@ -217,17 +245,17 @@ class _$_Country implements _Country {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_CountryToJson(this);
+    return _$$_CountryToJson(this);
   }
 }
 
 abstract class _Country implements Country {
   const factory _Country(
-      {@required @JsonKey(name: 'code') String code,
-      @required @JsonKey(name: 'iso') String iso,
-      @required @JsonKey(name: 'name') String name,
-      @JsonKey(name: 'default') bool isDefault,
-      @JsonKey(name: 'popular') bool popular}) = _$_Country;
+      {@JsonKey(name: 'code') required String code,
+      @JsonKey(name: 'iso') required String iso,
+      @JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'default') bool? isDefault,
+      @JsonKey(name: 'popular') bool? popular}) = _$_Country;
 
   factory _Country.fromJson(Map<String, dynamic> json) = _$_Country.fromJson;
 
@@ -235,28 +263,28 @@ abstract class _Country implements Country {
 
   /// Phone code.
   @JsonKey(name: 'code')
-  String get code;
+  String get code => throw _privateConstructorUsedError;
   @override
 
   /// Country ISO code.
   @JsonKey(name: 'iso')
-  String get iso;
+  String get iso => throw _privateConstructorUsedError;
   @override
 
   /// Country name.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// Selected by default.
   @JsonKey(name: 'default')
-  bool get isDefault;
+  bool? get isDefault => throw _privateConstructorUsedError;
   @override
 
   /// Is popular, need to cache.
   @JsonKey(name: 'popular')
-  bool get popular;
+  bool? get popular => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$CountryCopyWith<_Country> get copyWith;
+  _$CountryCopyWith<_Country> get copyWith => throw _privateConstructorUsedError;
 }

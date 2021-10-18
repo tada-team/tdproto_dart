@@ -6,16 +6,16 @@ part 'server_confirm.g.dart';
 
 /// Server confirmed client message.
 @freezed
-abstract class ServerConfirm with _$ServerConfirm {
+class ServerConfirm with _$ServerConfirm {
   const factory ServerConfirm({
     /// .
-    @JsonKey(name: 'params') @required ServerConfirmParams params,
+    @JsonKey(name: 'params') required ServerConfirmParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerConfirm;
 
   factory ServerConfirm.fromJson(Map<String, dynamic> json) => _$ServerConfirmFromJson(json);

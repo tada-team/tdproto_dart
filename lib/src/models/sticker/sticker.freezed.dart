@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'sticker.dart';
 
@@ -8,6 +9,10 @@ part of 'sticker.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Sticker _$StickerFromJson(Map<String, dynamic> json) {
   return _Sticker.fromJson(json);
 }
@@ -16,14 +21,13 @@ Sticker _$StickerFromJson(Map<String, dynamic> json) {
 class _$StickerTearOff {
   const _$StickerTearOff();
 
-// ignore: unused_element
   _Sticker call(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'icon64') String icon64,
-      @required @JsonKey(name: 'icon100') String icon100,
-      @required @JsonKey(name: 'icon128') String icon128,
-      @required @JsonKey(name: 'icon200') String icon200,
-      @required @JsonKey(name: 'message_content') MessageContent messageContent}) {
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'icon64') required String icon64,
+      @JsonKey(name: 'icon100') required String icon100,
+      @JsonKey(name: 'icon128') required String icon128,
+      @JsonKey(name: 'icon200') required String icon200,
+      @JsonKey(name: 'message_content') required MessageContent messageContent}) {
     return _Sticker(
       uid: uid,
       icon64: icon64,
@@ -34,45 +38,43 @@ class _$StickerTearOff {
     );
   }
 
-// ignore: unused_element
   Sticker fromJson(Map<String, Object> json) {
     return Sticker.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Sticker = _$StickerTearOff();
 
 /// @nodoc
 mixin _$Sticker {
   /// .
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'icon64')
-  String get icon64;
+  String get icon64 => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'icon100')
-  String get icon100;
+  String get icon100 => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'icon128')
-  String get icon128;
+  String get icon128 => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'icon200')
-  String get icon200;
+  String get icon200 => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'message_content')
-  MessageContent get messageContent;
+  MessageContent get messageContent => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $StickerCopyWith<Sticker> get copyWith;
+  $StickerCopyWith<Sticker> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -99,28 +101,43 @@ class _$StickerCopyWithImpl<$Res> implements $StickerCopyWith<$Res> {
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object icon64 = freezed,
-    Object icon100 = freezed,
-    Object icon128 = freezed,
-    Object icon200 = freezed,
-    Object messageContent = freezed,
+    Object? uid = freezed,
+    Object? icon64 = freezed,
+    Object? icon100 = freezed,
+    Object? icon128 = freezed,
+    Object? icon200 = freezed,
+    Object? messageContent = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
-      icon64: icon64 == freezed ? _value.icon64 : icon64 as String,
-      icon100: icon100 == freezed ? _value.icon100 : icon100 as String,
-      icon128: icon128 == freezed ? _value.icon128 : icon128 as String,
-      icon200: icon200 == freezed ? _value.icon200 : icon200 as String,
-      messageContent: messageContent == freezed ? _value.messageContent : messageContent as MessageContent,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      icon64: icon64 == freezed
+          ? _value.icon64
+          : icon64 // ignore: cast_nullable_to_non_nullable
+              as String,
+      icon100: icon100 == freezed
+          ? _value.icon100
+          : icon100 // ignore: cast_nullable_to_non_nullable
+              as String,
+      icon128: icon128 == freezed
+          ? _value.icon128
+          : icon128 // ignore: cast_nullable_to_non_nullable
+              as String,
+      icon200: icon200 == freezed
+          ? _value.icon200
+          : icon200 // ignore: cast_nullable_to_non_nullable
+              as String,
+      messageContent: messageContent == freezed
+          ? _value.messageContent
+          : messageContent // ignore: cast_nullable_to_non_nullable
+              as MessageContent,
     ));
   }
 
   @override
   $MessageContentCopyWith<$Res> get messageContent {
-    if (_value.messageContent == null) {
-      return null;
-    }
     return $MessageContentCopyWith<$Res>(_value.messageContent, (value) {
       return _then(_value.copyWith(messageContent: value));
     });
@@ -152,43 +169,54 @@ class __$StickerCopyWithImpl<$Res> extends _$StickerCopyWithImpl<$Res> implement
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object icon64 = freezed,
-    Object icon100 = freezed,
-    Object icon128 = freezed,
-    Object icon200 = freezed,
-    Object messageContent = freezed,
+    Object? uid = freezed,
+    Object? icon64 = freezed,
+    Object? icon100 = freezed,
+    Object? icon128 = freezed,
+    Object? icon200 = freezed,
+    Object? messageContent = freezed,
   }) {
     return _then(_Sticker(
-      uid: uid == freezed ? _value.uid : uid as String,
-      icon64: icon64 == freezed ? _value.icon64 : icon64 as String,
-      icon100: icon100 == freezed ? _value.icon100 : icon100 as String,
-      icon128: icon128 == freezed ? _value.icon128 : icon128 as String,
-      icon200: icon200 == freezed ? _value.icon200 : icon200 as String,
-      messageContent: messageContent == freezed ? _value.messageContent : messageContent as MessageContent,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      icon64: icon64 == freezed
+          ? _value.icon64
+          : icon64 // ignore: cast_nullable_to_non_nullable
+              as String,
+      icon100: icon100 == freezed
+          ? _value.icon100
+          : icon100 // ignore: cast_nullable_to_non_nullable
+              as String,
+      icon128: icon128 == freezed
+          ? _value.icon128
+          : icon128 // ignore: cast_nullable_to_non_nullable
+              as String,
+      icon200: icon200 == freezed
+          ? _value.icon200
+          : icon200 // ignore: cast_nullable_to_non_nullable
+              as String,
+      messageContent: messageContent == freezed
+          ? _value.messageContent
+          : messageContent // ignore: cast_nullable_to_non_nullable
+              as MessageContent,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Sticker implements _Sticker {
   const _$_Sticker(
-      {@required @JsonKey(name: 'uid') this.uid,
-      @required @JsonKey(name: 'icon64') this.icon64,
-      @required @JsonKey(name: 'icon100') this.icon100,
-      @required @JsonKey(name: 'icon128') this.icon128,
-      @required @JsonKey(name: 'icon200') this.icon200,
-      @required @JsonKey(name: 'message_content') this.messageContent})
-      : assert(uid != null),
-        assert(icon64 != null),
-        assert(icon100 != null),
-        assert(icon128 != null),
-        assert(icon200 != null),
-        assert(messageContent != null);
+      {@JsonKey(name: 'uid') required this.uid,
+      @JsonKey(name: 'icon64') required this.icon64,
+      @JsonKey(name: 'icon100') required this.icon100,
+      @JsonKey(name: 'icon128') required this.icon128,
+      @JsonKey(name: 'icon200') required this.icon200,
+      @JsonKey(name: 'message_content') required this.messageContent});
 
-  factory _$_Sticker.fromJson(Map<String, dynamic> json) => _$_$_StickerFromJson(json);
+  factory _$_Sticker.fromJson(Map<String, dynamic> json) => _$$_StickerFromJson(json);
 
   @override
 
@@ -255,18 +283,18 @@ class _$_Sticker implements _Sticker {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_StickerToJson(this);
+    return _$$_StickerToJson(this);
   }
 }
 
 abstract class _Sticker implements Sticker {
   const factory _Sticker(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'icon64') String icon64,
-      @required @JsonKey(name: 'icon100') String icon100,
-      @required @JsonKey(name: 'icon128') String icon128,
-      @required @JsonKey(name: 'icon200') String icon200,
-      @required @JsonKey(name: 'message_content') MessageContent messageContent}) = _$_Sticker;
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'icon64') required String icon64,
+      @JsonKey(name: 'icon100') required String icon100,
+      @JsonKey(name: 'icon128') required String icon128,
+      @JsonKey(name: 'icon200') required String icon200,
+      @JsonKey(name: 'message_content') required MessageContent messageContent}) = _$_Sticker;
 
   factory _Sticker.fromJson(Map<String, dynamic> json) = _$_Sticker.fromJson;
 
@@ -274,33 +302,33 @@ abstract class _Sticker implements Sticker {
 
   /// .
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'icon64')
-  String get icon64;
+  String get icon64 => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'icon100')
-  String get icon100;
+  String get icon100 => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'icon128')
-  String get icon128;
+  String get icon128 => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'icon200')
-  String get icon200;
+  String get icon200 => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'message_content')
-  MessageContent get messageContent;
+  MessageContent get messageContent => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$StickerCopyWith<_Sticker> get copyWith;
+  _$StickerCopyWith<_Sticker> get copyWith => throw _privateConstructorUsedError;
 }

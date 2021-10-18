@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_warning.dart';
 
@@ -8,6 +9,10 @@ part of 'server_warning.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerWarning _$ServerWarningFromJson(Map<String, dynamic> json) {
   return _ServerWarning.fromJson(json);
 }
@@ -16,11 +21,10 @@ ServerWarning _$ServerWarningFromJson(Map<String, dynamic> json) {
 class _$ServerWarningTearOff {
   const _$ServerWarningTearOff();
 
-// ignore: unused_element
   _ServerWarning call(
-      {@required @JsonKey(name: 'params') ServerWarningParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) {
+      {@JsonKey(name: 'params') required ServerWarningParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ServerWarning(
       params: params,
       name: name,
@@ -28,33 +32,31 @@ class _$ServerWarningTearOff {
     );
   }
 
-// ignore: unused_element
   ServerWarning fromJson(Map<String, Object> json) {
     return ServerWarning.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerWarning = _$ServerWarningTearOff();
 
 /// @nodoc
 mixin _$ServerWarning {
   /// .
   @JsonKey(name: 'params')
-  ServerWarningParams get params;
+  ServerWarningParams get params => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerWarningCopyWith<ServerWarning> get copyWith;
+  $ServerWarningCopyWith<ServerWarning> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -64,7 +66,7 @@ abstract class $ServerWarningCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'params') ServerWarningParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   $ServerWarningParamsCopyWith<$Res> get params;
 }
@@ -79,22 +81,28 @@ class _$ServerWarningCopyWithImpl<$Res> implements $ServerWarningCopyWith<$Res> 
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as ServerWarningParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerWarningParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $ServerWarningParamsCopyWith<$Res> get params {
-    if (_value.params == null) {
-      return null;
-    }
     return $ServerWarningParamsCopyWith<$Res>(_value.params, (value) {
       return _then(_value.copyWith(params: value));
     });
@@ -109,7 +117,7 @@ abstract class _$ServerWarningCopyWith<$Res> implements $ServerWarningCopyWith<$
   $Res call(
       {@JsonKey(name: 'params') ServerWarningParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   @override
   $ServerWarningParamsCopyWith<$Res> get params;
@@ -126,30 +134,36 @@ class __$ServerWarningCopyWithImpl<$Res> extends _$ServerWarningCopyWithImpl<$Re
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ServerWarning(
-      params: params == freezed ? _value.params : params as ServerWarningParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerWarningParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerWarning implements _ServerWarning {
   const _$_ServerWarning(
-      {@required @JsonKey(name: 'params') this.params,
-      @required @JsonKey(name: 'event') this.name,
-      @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(params != null),
-        assert(name != null);
+      {@JsonKey(name: 'params') required this.params,
+      @JsonKey(name: 'event') required this.name,
+      @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ServerWarning.fromJson(Map<String, dynamic> json) => _$_$_ServerWarningFromJson(json);
+  factory _$_ServerWarning.fromJson(Map<String, dynamic> json) => _$$_ServerWarningFromJson(json);
 
   @override
 
@@ -165,7 +179,7 @@ class _$_ServerWarning implements _ServerWarning {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -196,15 +210,15 @@ class _$_ServerWarning implements _ServerWarning {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerWarningToJson(this);
+    return _$$_ServerWarningToJson(this);
   }
 }
 
 abstract class _ServerWarning implements ServerWarning {
   const factory _ServerWarning(
-      {@required @JsonKey(name: 'params') ServerWarningParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) = _$_ServerWarning;
+      {@JsonKey(name: 'params') required ServerWarningParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerWarning;
 
   factory _ServerWarning.fromJson(Map<String, dynamic> json) = _$_ServerWarning.fromJson;
 
@@ -212,18 +226,18 @@ abstract class _ServerWarning implements ServerWarning {
 
   /// .
   @JsonKey(name: 'params')
-  ServerWarningParams get params;
+  ServerWarningParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerWarningCopyWith<_ServerWarning> get copyWith;
+  _$ServerWarningCopyWith<_ServerWarning> get copyWith => throw _privateConstructorUsedError;
 }

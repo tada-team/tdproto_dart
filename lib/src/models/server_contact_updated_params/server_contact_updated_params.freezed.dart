@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_contact_updated_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_contact_updated_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerContactUpdatedParams _$ServerContactUpdatedParamsFromJson(Map<String, dynamic> json) {
   return _ServerContactUpdatedParams.fromJson(json);
 }
@@ -16,32 +21,29 @@ ServerContactUpdatedParams _$ServerContactUpdatedParamsFromJson(Map<String, dyna
 class _$ServerContactUpdatedParamsTearOff {
   const _$ServerContactUpdatedParamsTearOff();
 
-// ignore: unused_element
-  _ServerContactUpdatedParams call({@required @JsonKey(name: 'contacts') List<Contact> contacts}) {
+  _ServerContactUpdatedParams call({@JsonKey(name: 'contacts') required List<Contact> contacts}) {
     return _ServerContactUpdatedParams(
       contacts: contacts,
     );
   }
 
-// ignore: unused_element
   ServerContactUpdatedParams fromJson(Map<String, Object> json) {
     return ServerContactUpdatedParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerContactUpdatedParams = _$ServerContactUpdatedParamsTearOff();
 
 /// @nodoc
 mixin _$ServerContactUpdatedParams {
   /// Contact info.
   @JsonKey(name: 'contacts')
-  List<Contact> get contacts;
+  List<Contact> get contacts => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerContactUpdatedParamsCopyWith<ServerContactUpdatedParams> get copyWith;
+  $ServerContactUpdatedParamsCopyWith<ServerContactUpdatedParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -62,10 +64,13 @@ class _$ServerContactUpdatedParamsCopyWithImpl<$Res> implements $ServerContactUp
 
   @override
   $Res call({
-    Object contacts = freezed,
+    Object? contacts = freezed,
   }) {
     return _then(_value.copyWith(
-      contacts: contacts == freezed ? _value.contacts : contacts as List<Contact>,
+      contacts: contacts == freezed
+          ? _value.contacts
+          : contacts // ignore: cast_nullable_to_non_nullable
+              as List<Contact>,
     ));
   }
 }
@@ -91,22 +96,24 @@ class __$ServerContactUpdatedParamsCopyWithImpl<$Res> extends _$ServerContactUpd
 
   @override
   $Res call({
-    Object contacts = freezed,
+    Object? contacts = freezed,
   }) {
     return _then(_ServerContactUpdatedParams(
-      contacts: contacts == freezed ? _value.contacts : contacts as List<Contact>,
+      contacts: contacts == freezed
+          ? _value.contacts
+          : contacts // ignore: cast_nullable_to_non_nullable
+              as List<Contact>,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerContactUpdatedParams implements _ServerContactUpdatedParams {
-  const _$_ServerContactUpdatedParams({@required @JsonKey(name: 'contacts') this.contacts}) : assert(contacts != null);
+  const _$_ServerContactUpdatedParams({@JsonKey(name: 'contacts') required this.contacts});
 
   factory _$_ServerContactUpdatedParams.fromJson(Map<String, dynamic> json) =>
-      _$_$_ServerContactUpdatedParamsFromJson(json);
+      _$$_ServerContactUpdatedParamsFromJson(json);
 
   @override
 
@@ -136,12 +143,12 @@ class _$_ServerContactUpdatedParams implements _ServerContactUpdatedParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerContactUpdatedParamsToJson(this);
+    return _$$_ServerContactUpdatedParamsToJson(this);
   }
 }
 
 abstract class _ServerContactUpdatedParams implements ServerContactUpdatedParams {
-  const factory _ServerContactUpdatedParams({@required @JsonKey(name: 'contacts') List<Contact> contacts}) =
+  const factory _ServerContactUpdatedParams({@JsonKey(name: 'contacts') required List<Contact> contacts}) =
       _$_ServerContactUpdatedParams;
 
   factory _ServerContactUpdatedParams.fromJson(Map<String, dynamic> json) = _$_ServerContactUpdatedParams.fromJson;
@@ -150,8 +157,8 @@ abstract class _ServerContactUpdatedParams implements ServerContactUpdatedParams
 
   /// Contact info.
   @JsonKey(name: 'contacts')
-  List<Contact> get contacts;
+  List<Contact> get contacts => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerContactUpdatedParamsCopyWith<_ServerContactUpdatedParams> get copyWith;
+  _$ServerContactUpdatedParamsCopyWith<_ServerContactUpdatedParams> get copyWith => throw _privateConstructorUsedError;
 }

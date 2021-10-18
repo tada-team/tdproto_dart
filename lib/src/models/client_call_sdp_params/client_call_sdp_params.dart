@@ -6,16 +6,16 @@ part 'client_call_sdp_params.g.dart';
 
 /// Params of the client.call.sdp event.
 @freezed
-abstract class ClientCallSdpParams with _$ClientCallSdpParams {
+class ClientCallSdpParams with _$ClientCallSdpParams {
   const factory ClientCallSdpParams({
     /// Chat or contact id.
-    @JsonKey(name: 'jid') @required String jid,
+    @JsonKey(name: 'jid') required String jid,
 
     /// Call id.
-    @JsonKey(name: 'uid') @required String uid,
+    @JsonKey(name: 'uid') required String uid,
 
     /// SDP data.
-    @JsonKey(name: 'jsep') @required JSEP jsep,
+    @JsonKey(name: 'jsep') required JSEP jsep,
   }) = _ClientCallSdpParams;
 
   factory ClientCallSdpParams.fromJson(Map<String, dynamic> json) => _$ClientCallSdpParamsFromJson(json);

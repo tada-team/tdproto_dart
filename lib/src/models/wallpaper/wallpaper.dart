@@ -6,16 +6,16 @@ part 'wallpaper.g.dart';
 
 /// Chat wallpaper.
 @freezed
-abstract class Wallpaper with _$Wallpaper {
+class Wallpaper with _$Wallpaper {
   const factory Wallpaper({
     /// Unique identifier.
-    @JsonKey(name: 'key') @required String key,
+    @JsonKey(name: 'key') required String key,
 
     /// Localized description.
-    @JsonKey(name: 'name') @required String name,
+    @JsonKey(name: 'name') required String name,
 
     /// Url to jpg or png.
-    @JsonKey(name: 'url') @required String url,
+    @JsonKey(name: 'url') required String url,
   }) = _Wallpaper;
 
   factory Wallpaper.fromJson(Map<String, dynamic> json) => _$WallpaperFromJson(json);

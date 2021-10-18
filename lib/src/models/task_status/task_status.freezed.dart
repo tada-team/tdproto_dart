@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'task_status.dart';
 
@@ -8,6 +9,10 @@ part of 'task_status.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 TaskStatus _$TaskStatusFromJson(Map<String, dynamic> json) {
   return _TaskStatus.fromJson(json);
 }
@@ -16,13 +21,12 @@ TaskStatus _$TaskStatusFromJson(Map<String, dynamic> json) {
 class _$TaskStatusTearOff {
   const _$TaskStatusTearOff();
 
-// ignore: unused_element
   _TaskStatus call(
-      {@JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'sort_ordering') int sortOrdering,
-      @required @JsonKey(name: 'name') String name,
-      @required @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'is_archive') bool isArchive}) {
+      {@JsonKey(name: 'uid') String? uid,
+      @JsonKey(name: 'sort_ordering') required int sortOrdering,
+      @JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'is_archive') bool? isArchive = false}) {
     return _TaskStatus(
       uid: uid,
       sortOrdering: sortOrdering,
@@ -32,52 +36,50 @@ class _$TaskStatusTearOff {
     );
   }
 
-// ignore: unused_element
   TaskStatus fromJson(Map<String, Object> json) {
     return TaskStatus.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $TaskStatus = _$TaskStatusTearOff();
 
 /// @nodoc
 mixin _$TaskStatus {
   /// Status id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String? get uid => throw _privateConstructorUsedError;
 
   /// Status sort ordering.
   @JsonKey(name: 'sort_ordering')
-  int get sortOrdering;
+  int get sortOrdering => throw _privateConstructorUsedError;
 
   /// Status internal name.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// Status localized name.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
 
   /// Status not used anymore.
   @JsonKey(name: 'is_archive')
-  bool get isArchive;
+  bool? get isArchive => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $TaskStatusCopyWith<TaskStatus> get copyWith;
+  $TaskStatusCopyWith<TaskStatus> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $TaskStatusCopyWith<$Res> {
   factory $TaskStatusCopyWith(TaskStatus value, $Res Function(TaskStatus) then) = _$TaskStatusCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'uid') String uid,
+      {@JsonKey(name: 'uid') String? uid,
       @JsonKey(name: 'sort_ordering') int sortOrdering,
       @JsonKey(name: 'name') String name,
       @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'is_archive') bool isArchive});
+      @JsonKey(name: 'is_archive') bool? isArchive});
 }
 
 /// @nodoc
@@ -90,18 +92,33 @@ class _$TaskStatusCopyWithImpl<$Res> implements $TaskStatusCopyWith<$Res> {
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object sortOrdering = freezed,
-    Object name = freezed,
-    Object title = freezed,
-    Object isArchive = freezed,
+    Object? uid = freezed,
+    Object? sortOrdering = freezed,
+    Object? name = freezed,
+    Object? title = freezed,
+    Object? isArchive = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
-      sortOrdering: sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
-      name: name == freezed ? _value.name : name as String,
-      title: title == freezed ? _value.title : title as String,
-      isArchive: isArchive == freezed ? _value.isArchive : isArchive as bool,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String?,
+      sortOrdering: sortOrdering == freezed
+          ? _value.sortOrdering
+          : sortOrdering // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      isArchive: isArchive == freezed
+          ? _value.isArchive
+          : isArchive // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -111,11 +128,11 @@ abstract class _$TaskStatusCopyWith<$Res> implements $TaskStatusCopyWith<$Res> {
   factory _$TaskStatusCopyWith(_TaskStatus value, $Res Function(_TaskStatus) then) = __$TaskStatusCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'uid') String uid,
+      {@JsonKey(name: 'uid') String? uid,
       @JsonKey(name: 'sort_ordering') int sortOrdering,
       @JsonKey(name: 'name') String name,
       @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'is_archive') bool isArchive});
+      @JsonKey(name: 'is_archive') bool? isArchive});
 }
 
 /// @nodoc
@@ -128,43 +145,54 @@ class __$TaskStatusCopyWithImpl<$Res> extends _$TaskStatusCopyWithImpl<$Res> imp
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object sortOrdering = freezed,
-    Object name = freezed,
-    Object title = freezed,
-    Object isArchive = freezed,
+    Object? uid = freezed,
+    Object? sortOrdering = freezed,
+    Object? name = freezed,
+    Object? title = freezed,
+    Object? isArchive = freezed,
   }) {
     return _then(_TaskStatus(
-      uid: uid == freezed ? _value.uid : uid as String,
-      sortOrdering: sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
-      name: name == freezed ? _value.name : name as String,
-      title: title == freezed ? _value.title : title as String,
-      isArchive: isArchive == freezed ? _value.isArchive : isArchive as bool,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String?,
+      sortOrdering: sortOrdering == freezed
+          ? _value.sortOrdering
+          : sortOrdering // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      isArchive: isArchive == freezed
+          ? _value.isArchive
+          : isArchive // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_TaskStatus implements _TaskStatus {
   const _$_TaskStatus(
       {@JsonKey(name: 'uid') this.uid,
-      @required @JsonKey(name: 'sort_ordering') this.sortOrdering,
-      @required @JsonKey(name: 'name') this.name,
-      @required @JsonKey(name: 'title') this.title,
-      @JsonKey(name: 'is_archive') this.isArchive})
-      : assert(sortOrdering != null),
-        assert(name != null),
-        assert(title != null);
+      @JsonKey(name: 'sort_ordering') required this.sortOrdering,
+      @JsonKey(name: 'name') required this.name,
+      @JsonKey(name: 'title') required this.title,
+      @JsonKey(name: 'is_archive') this.isArchive = false});
 
-  factory _$_TaskStatus.fromJson(Map<String, dynamic> json) => _$_$_TaskStatusFromJson(json);
+  factory _$_TaskStatus.fromJson(Map<String, dynamic> json) => _$$_TaskStatusFromJson(json);
 
   @override
 
   /// Status id.
   @JsonKey(name: 'uid')
-  final String uid;
+  final String? uid;
   @override
 
   /// Status sort ordering.
@@ -184,7 +212,7 @@ class _$_TaskStatus implements _TaskStatus {
 
   /// Status not used anymore.
   @JsonKey(name: 'is_archive')
-  final bool isArchive;
+  final bool? isArchive;
 
   @override
   String toString() {
@@ -219,17 +247,17 @@ class _$_TaskStatus implements _TaskStatus {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_TaskStatusToJson(this);
+    return _$$_TaskStatusToJson(this);
   }
 }
 
 abstract class _TaskStatus implements TaskStatus {
   const factory _TaskStatus(
-      {@JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'sort_ordering') int sortOrdering,
-      @required @JsonKey(name: 'name') String name,
-      @required @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'is_archive') bool isArchive}) = _$_TaskStatus;
+      {@JsonKey(name: 'uid') String? uid,
+      @JsonKey(name: 'sort_ordering') required int sortOrdering,
+      @JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'is_archive') bool? isArchive}) = _$_TaskStatus;
 
   factory _TaskStatus.fromJson(Map<String, dynamic> json) = _$_TaskStatus.fromJson;
 
@@ -237,28 +265,28 @@ abstract class _TaskStatus implements TaskStatus {
 
   /// Status id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String? get uid => throw _privateConstructorUsedError;
   @override
 
   /// Status sort ordering.
   @JsonKey(name: 'sort_ordering')
-  int get sortOrdering;
+  int get sortOrdering => throw _privateConstructorUsedError;
   @override
 
   /// Status internal name.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// Status localized name.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
 
   /// Status not used anymore.
   @JsonKey(name: 'is_archive')
-  bool get isArchive;
+  bool? get isArchive => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TaskStatusCopyWith<_TaskStatus> get copyWith;
+  _$TaskStatusCopyWith<_TaskStatus> get copyWith => throw _privateConstructorUsedError;
 }

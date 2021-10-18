@@ -6,13 +6,13 @@ part 'client_ping.g.dart';
 
 /// Empty message for checking server connection.
 @freezed
-abstract class ClientPing with _$ClientPing {
+class ClientPing with _$ClientPing {
   const factory ClientPing({
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ClientPing;
 
   factory ClientPing.fromJson(Map<String, dynamic> json) => _$ClientPingFromJson(json);

@@ -6,16 +6,16 @@ part 'server_upload_updated.g.dart';
 
 /// Upload object created or changed.
 @freezed
-abstract class ServerUploadUpdated with _$ServerUploadUpdated {
+class ServerUploadUpdated with _$ServerUploadUpdated {
   const factory ServerUploadUpdated({
     /// .
-    @JsonKey(name: 'params') @required ServerUploadUpdatedParams params,
+    @JsonKey(name: 'params') required ServerUploadUpdatedParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerUploadUpdated;
 
   factory ServerUploadUpdated.fromJson(Map<String, dynamic> json) => _$ServerUploadUpdatedFromJson(json);

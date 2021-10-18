@@ -6,16 +6,16 @@ part 'group_membership.g.dart';
 
 /// Group chat membership status.
 @freezed
-abstract class GroupMembership with _$GroupMembership {
+class GroupMembership with _$GroupMembership {
   const factory GroupMembership({
     /// Contact id.
-    @JsonKey(name: 'jid') @required String jid,
+    @JsonKey(name: 'jid') required String jid,
 
     /// Status in group.
-    @JsonKey(name: 'status') String status,
+    @JsonKey(name: 'status') String? status,
 
     /// Can I remove this member.
-    @JsonKey(name: 'can_remove') bool canRemove,
+    @Default(false) @JsonKey(name: 'can_remove') bool? canRemove,
   }) = _GroupMembership;
 
   factory GroupMembership.fromJson(Map<String, dynamic> json) => _$GroupMembershipFromJson(json);

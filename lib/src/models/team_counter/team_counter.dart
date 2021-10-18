@@ -6,13 +6,13 @@ part 'team_counter.g.dart';
 
 /// Unread message counters.
 @freezed
-abstract class TeamCounter with _$TeamCounter {
+class TeamCounter with _$TeamCounter {
   const factory TeamCounter({
     /// Team id.
-    @JsonKey(name: 'uid') @required String uid,
+    @JsonKey(name: 'uid') required String uid,
 
     /// Unread message counters.
-    @JsonKey(name: 'unread') @required TeamUnread unreads,
+    @JsonKey(name: 'unread') required TeamUnread unreads,
   }) = _TeamCounter;
 
   factory TeamCounter.fromJson(Map<String, dynamic> json) => _$TeamCounterFromJson(json);

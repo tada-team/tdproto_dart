@@ -6,16 +6,16 @@ part 'client_call_mute_all.g.dart';
 
 /// Mute all other call participants.
 @freezed
-abstract class ClientCallMuteAll with _$ClientCallMuteAll {
+class ClientCallMuteAll with _$ClientCallMuteAll {
   const factory ClientCallMuteAll({
     /// .
-    @JsonKey(name: 'params') @required ClientCallMuteAllParams params,
+    @JsonKey(name: 'params') required ClientCallMuteAllParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ClientCallMuteAll;
 
   factory ClientCallMuteAll.fromJson(Map<String, dynamic> json) => _$ClientCallMuteAllFromJson(json);

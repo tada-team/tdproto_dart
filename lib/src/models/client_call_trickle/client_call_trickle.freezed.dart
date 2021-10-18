@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'client_call_trickle.dart';
 
@@ -8,6 +9,10 @@ part of 'client_call_trickle.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ClientCallTrickle _$ClientCallTrickleFromJson(Map<String, dynamic> json) {
   return _ClientCallTrickle.fromJson(json);
 }
@@ -16,11 +21,10 @@ ClientCallTrickle _$ClientCallTrickleFromJson(Map<String, dynamic> json) {
 class _$ClientCallTrickleTearOff {
   const _$ClientCallTrickleTearOff();
 
-// ignore: unused_element
   _ClientCallTrickle call(
-      {@required @JsonKey(name: 'params') ClientCallTrickleParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) {
+      {@JsonKey(name: 'params') required ClientCallTrickleParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ClientCallTrickle(
       params: params,
       name: name,
@@ -28,33 +32,31 @@ class _$ClientCallTrickleTearOff {
     );
   }
 
-// ignore: unused_element
   ClientCallTrickle fromJson(Map<String, Object> json) {
     return ClientCallTrickle.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ClientCallTrickle = _$ClientCallTrickleTearOff();
 
 /// @nodoc
 mixin _$ClientCallTrickle {
   /// .
   @JsonKey(name: 'params')
-  ClientCallTrickleParams get params;
+  ClientCallTrickleParams get params => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ClientCallTrickleCopyWith<ClientCallTrickle> get copyWith;
+  $ClientCallTrickleCopyWith<ClientCallTrickle> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -64,7 +66,7 @@ abstract class $ClientCallTrickleCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'params') ClientCallTrickleParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   $ClientCallTrickleParamsCopyWith<$Res> get params;
 }
@@ -79,22 +81,28 @@ class _$ClientCallTrickleCopyWithImpl<$Res> implements $ClientCallTrickleCopyWit
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as ClientCallTrickleParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ClientCallTrickleParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $ClientCallTrickleParamsCopyWith<$Res> get params {
-    if (_value.params == null) {
-      return null;
-    }
     return $ClientCallTrickleParamsCopyWith<$Res>(_value.params, (value) {
       return _then(_value.copyWith(params: value));
     });
@@ -109,7 +117,7 @@ abstract class _$ClientCallTrickleCopyWith<$Res> implements $ClientCallTrickleCo
   $Res call(
       {@JsonKey(name: 'params') ClientCallTrickleParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   @override
   $ClientCallTrickleParamsCopyWith<$Res> get params;
@@ -126,30 +134,36 @@ class __$ClientCallTrickleCopyWithImpl<$Res> extends _$ClientCallTrickleCopyWith
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ClientCallTrickle(
-      params: params == freezed ? _value.params : params as ClientCallTrickleParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ClientCallTrickleParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ClientCallTrickle implements _ClientCallTrickle {
   const _$_ClientCallTrickle(
-      {@required @JsonKey(name: 'params') this.params,
-      @required @JsonKey(name: 'event') this.name,
-      @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(params != null),
-        assert(name != null);
+      {@JsonKey(name: 'params') required this.params,
+      @JsonKey(name: 'event') required this.name,
+      @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ClientCallTrickle.fromJson(Map<String, dynamic> json) => _$_$_ClientCallTrickleFromJson(json);
+  factory _$_ClientCallTrickle.fromJson(Map<String, dynamic> json) => _$$_ClientCallTrickleFromJson(json);
 
   @override
 
@@ -165,7 +179,7 @@ class _$_ClientCallTrickle implements _ClientCallTrickle {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -196,15 +210,15 @@ class _$_ClientCallTrickle implements _ClientCallTrickle {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ClientCallTrickleToJson(this);
+    return _$$_ClientCallTrickleToJson(this);
   }
 }
 
 abstract class _ClientCallTrickle implements ClientCallTrickle {
   const factory _ClientCallTrickle(
-      {@required @JsonKey(name: 'params') ClientCallTrickleParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) = _$_ClientCallTrickle;
+      {@JsonKey(name: 'params') required ClientCallTrickleParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ClientCallTrickle;
 
   factory _ClientCallTrickle.fromJson(Map<String, dynamic> json) = _$_ClientCallTrickle.fromJson;
 
@@ -212,18 +226,18 @@ abstract class _ClientCallTrickle implements ClientCallTrickle {
 
   /// .
   @JsonKey(name: 'params')
-  ClientCallTrickleParams get params;
+  ClientCallTrickleParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ClientCallTrickleCopyWith<_ClientCallTrickle> get copyWith;
+  _$ClientCallTrickleCopyWith<_ClientCallTrickle> get copyWith => throw _privateConstructorUsedError;
 }

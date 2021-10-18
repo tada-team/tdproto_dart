@@ -6,10 +6,10 @@ part 'server_contact_updated_params.g.dart';
 
 /// Params of the server.contact.updated event.
 @freezed
-abstract class ServerContactUpdatedParams with _$ServerContactUpdatedParams {
+class ServerContactUpdatedParams with _$ServerContactUpdatedParams {
   const factory ServerContactUpdatedParams({
     /// Contact info.
-    @JsonKey(name: 'contacts') @required List<Contact> contacts,
+    @JsonKey(name: 'contacts') required List<Contact> contacts,
   }) = _ServerContactUpdatedParams;
 
   factory ServerContactUpdatedParams.fromJson(Map<String, dynamic> json) => _$ServerContactUpdatedParamsFromJson(json);

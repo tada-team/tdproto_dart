@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'upload_preview.dart';
 
@@ -8,6 +9,10 @@ part of 'upload_preview.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 UploadPreview _$UploadPreviewFromJson(Map<String, dynamic> json) {
   return _UploadPreview.fromJson(json);
 }
@@ -16,12 +21,11 @@ UploadPreview _$UploadPreviewFromJson(Map<String, dynamic> json) {
 class _$UploadPreviewTearOff {
   const _$UploadPreviewTearOff();
 
-// ignore: unused_element
   _UploadPreview call(
-      {@required @JsonKey(name: 'url') String url,
-      @required @JsonKey(name: 'url_2x') String url2x,
-      @required @JsonKey(name: 'width') int width,
-      @required @JsonKey(name: 'height') int height}) {
+      {@JsonKey(name: 'url') required String url,
+      @JsonKey(name: 'url_2x') required String url2x,
+      @JsonKey(name: 'width') required int width,
+      @JsonKey(name: 'height') required int height}) {
     return _UploadPreview(
       url: url,
       url2x: url2x,
@@ -30,37 +34,35 @@ class _$UploadPreviewTearOff {
     );
   }
 
-// ignore: unused_element
   UploadPreview fromJson(Map<String, Object> json) {
     return UploadPreview.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $UploadPreview = _$UploadPreviewTearOff();
 
 /// @nodoc
 mixin _$UploadPreview {
   /// Absolute url to image.
   @JsonKey(name: 'url')
-  String get url;
+  String get url => throw _privateConstructorUsedError;
 
   /// Absolute url to high resolution image (retina).
   @JsonKey(name: 'url_2x')
-  String get url2x;
+  String get url2x => throw _privateConstructorUsedError;
 
   /// Width in pixels.
   @JsonKey(name: 'width')
-  int get width;
+  int get width => throw _privateConstructorUsedError;
 
   /// Height in pixels.
   @JsonKey(name: 'height')
-  int get height;
+  int get height => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $UploadPreviewCopyWith<UploadPreview> get copyWith;
+  $UploadPreviewCopyWith<UploadPreview> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -84,16 +86,28 @@ class _$UploadPreviewCopyWithImpl<$Res> implements $UploadPreviewCopyWith<$Res> 
 
   @override
   $Res call({
-    Object url = freezed,
-    Object url2x = freezed,
-    Object width = freezed,
-    Object height = freezed,
+    Object? url = freezed,
+    Object? url2x = freezed,
+    Object? width = freezed,
+    Object? height = freezed,
   }) {
     return _then(_value.copyWith(
-      url: url == freezed ? _value.url : url as String,
-      url2x: url2x == freezed ? _value.url2x : url2x as String,
-      width: width == freezed ? _value.width : width as int,
-      height: height == freezed ? _value.height : height as int,
+      url: url == freezed
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+      url2x: url2x == freezed
+          ? _value.url2x
+          : url2x // ignore: cast_nullable_to_non_nullable
+              as String,
+      width: width == freezed
+          ? _value.width
+          : width // ignore: cast_nullable_to_non_nullable
+              as int,
+      height: height == freezed
+          ? _value.height
+          : height // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -121,35 +135,42 @@ class __$UploadPreviewCopyWithImpl<$Res> extends _$UploadPreviewCopyWithImpl<$Re
 
   @override
   $Res call({
-    Object url = freezed,
-    Object url2x = freezed,
-    Object width = freezed,
-    Object height = freezed,
+    Object? url = freezed,
+    Object? url2x = freezed,
+    Object? width = freezed,
+    Object? height = freezed,
   }) {
     return _then(_UploadPreview(
-      url: url == freezed ? _value.url : url as String,
-      url2x: url2x == freezed ? _value.url2x : url2x as String,
-      width: width == freezed ? _value.width : width as int,
-      height: height == freezed ? _value.height : height as int,
+      url: url == freezed
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+      url2x: url2x == freezed
+          ? _value.url2x
+          : url2x // ignore: cast_nullable_to_non_nullable
+              as String,
+      width: width == freezed
+          ? _value.width
+          : width // ignore: cast_nullable_to_non_nullable
+              as int,
+      height: height == freezed
+          ? _value.height
+          : height // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_UploadPreview implements _UploadPreview {
   const _$_UploadPreview(
-      {@required @JsonKey(name: 'url') this.url,
-      @required @JsonKey(name: 'url_2x') this.url2x,
-      @required @JsonKey(name: 'width') this.width,
-      @required @JsonKey(name: 'height') this.height})
-      : assert(url != null),
-        assert(url2x != null),
-        assert(width != null),
-        assert(height != null);
+      {@JsonKey(name: 'url') required this.url,
+      @JsonKey(name: 'url_2x') required this.url2x,
+      @JsonKey(name: 'width') required this.width,
+      @JsonKey(name: 'height') required this.height});
 
-  factory _$_UploadPreview.fromJson(Map<String, dynamic> json) => _$_$_UploadPreviewFromJson(json);
+  factory _$_UploadPreview.fromJson(Map<String, dynamic> json) => _$$_UploadPreviewFromJson(json);
 
   @override
 
@@ -202,16 +223,16 @@ class _$_UploadPreview implements _UploadPreview {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_UploadPreviewToJson(this);
+    return _$$_UploadPreviewToJson(this);
   }
 }
 
 abstract class _UploadPreview implements UploadPreview {
   const factory _UploadPreview(
-      {@required @JsonKey(name: 'url') String url,
-      @required @JsonKey(name: 'url_2x') String url2x,
-      @required @JsonKey(name: 'width') int width,
-      @required @JsonKey(name: 'height') int height}) = _$_UploadPreview;
+      {@JsonKey(name: 'url') required String url,
+      @JsonKey(name: 'url_2x') required String url2x,
+      @JsonKey(name: 'width') required int width,
+      @JsonKey(name: 'height') required int height}) = _$_UploadPreview;
 
   factory _UploadPreview.fromJson(Map<String, dynamic> json) = _$_UploadPreview.fromJson;
 
@@ -219,23 +240,23 @@ abstract class _UploadPreview implements UploadPreview {
 
   /// Absolute url to image.
   @JsonKey(name: 'url')
-  String get url;
+  String get url => throw _privateConstructorUsedError;
   @override
 
   /// Absolute url to high resolution image (retina).
   @JsonKey(name: 'url_2x')
-  String get url2x;
+  String get url2x => throw _privateConstructorUsedError;
   @override
 
   /// Width in pixels.
   @JsonKey(name: 'width')
-  int get width;
+  int get width => throw _privateConstructorUsedError;
   @override
 
   /// Height in pixels.
   @JsonKey(name: 'height')
-  int get height;
+  int get height => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$UploadPreviewCopyWith<_UploadPreview> get copyWith;
+  _$UploadPreviewCopyWith<_UploadPreview> get copyWith => throw _privateConstructorUsedError;
 }

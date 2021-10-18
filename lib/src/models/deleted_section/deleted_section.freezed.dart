@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'deleted_section.dart';
 
@@ -8,6 +9,10 @@ part of 'deleted_section.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 DeletedSection _$DeletedSectionFromJson(Map<String, dynamic> json) {
   return _DeletedSection.fromJson(json);
 }
@@ -16,37 +21,34 @@ DeletedSection _$DeletedSectionFromJson(Map<String, dynamic> json) {
 class _$DeletedSectionTearOff {
   const _$DeletedSectionTearOff();
 
-// ignore: unused_element
-  _DeletedSection call({@required @JsonKey(name: 'uid') String uid, @required @JsonKey(name: 'gentime') int gentime}) {
+  _DeletedSection call({@JsonKey(name: 'uid') required String uid, @JsonKey(name: 'gentime') required int gentime}) {
     return _DeletedSection(
       uid: uid,
       gentime: gentime,
     );
   }
 
-// ignore: unused_element
   DeletedSection fromJson(Map<String, Object> json) {
     return DeletedSection.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $DeletedSection = _$DeletedSectionTearOff();
 
 /// @nodoc
 mixin _$DeletedSection {
   /// Section uid.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// Object version.
   @JsonKey(name: 'gentime')
-  int get gentime;
+  int get gentime => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $DeletedSectionCopyWith<DeletedSection> get copyWith;
+  $DeletedSectionCopyWith<DeletedSection> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -66,12 +68,18 @@ class _$DeletedSectionCopyWithImpl<$Res> implements $DeletedSectionCopyWith<$Res
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object gentime = freezed,
+    Object? uid = freezed,
+    Object? gentime = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
-      gentime: gentime == freezed ? _value.gentime : gentime as int,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      gentime: gentime == freezed
+          ? _value.gentime
+          : gentime // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -95,25 +103,28 @@ class __$DeletedSectionCopyWithImpl<$Res> extends _$DeletedSectionCopyWithImpl<$
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object gentime = freezed,
+    Object? uid = freezed,
+    Object? gentime = freezed,
   }) {
     return _then(_DeletedSection(
-      uid: uid == freezed ? _value.uid : uid as String,
-      gentime: gentime == freezed ? _value.gentime : gentime as int,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      gentime: gentime == freezed
+          ? _value.gentime
+          : gentime // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_DeletedSection implements _DeletedSection {
-  const _$_DeletedSection({@required @JsonKey(name: 'uid') this.uid, @required @JsonKey(name: 'gentime') this.gentime})
-      : assert(uid != null),
-        assert(gentime != null);
+  const _$_DeletedSection({@JsonKey(name: 'uid') required this.uid, @JsonKey(name: 'gentime') required this.gentime});
 
-  factory _$_DeletedSection.fromJson(Map<String, dynamic> json) => _$_$_DeletedSectionFromJson(json);
+  factory _$_DeletedSection.fromJson(Map<String, dynamic> json) => _$$_DeletedSectionFromJson(json);
 
   @override
 
@@ -150,14 +161,13 @@ class _$_DeletedSection implements _DeletedSection {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_DeletedSectionToJson(this);
+    return _$$_DeletedSectionToJson(this);
   }
 }
 
 abstract class _DeletedSection implements DeletedSection {
   const factory _DeletedSection(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'gentime') int gentime}) = _$_DeletedSection;
+      {@JsonKey(name: 'uid') required String uid, @JsonKey(name: 'gentime') required int gentime}) = _$_DeletedSection;
 
   factory _DeletedSection.fromJson(Map<String, dynamic> json) = _$_DeletedSection.fromJson;
 
@@ -165,13 +175,13 @@ abstract class _DeletedSection implements DeletedSection {
 
   /// Section uid.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// Object version.
   @JsonKey(name: 'gentime')
-  int get gentime;
+  int get gentime => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$DeletedSectionCopyWith<_DeletedSection> get copyWith;
+  _$DeletedSectionCopyWith<_DeletedSection> get copyWith => throw _privateConstructorUsedError;
 }

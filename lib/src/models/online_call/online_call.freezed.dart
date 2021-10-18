@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'online_call.dart';
 
@@ -8,6 +9,10 @@ part of 'online_call.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 OnlineCall _$OnlineCallFromJson(Map<String, dynamic> json) {
   return _OnlineCall.fromJson(json);
 }
@@ -16,12 +21,11 @@ OnlineCall _$OnlineCallFromJson(Map<String, dynamic> json) {
 class _$OnlineCallTearOff {
   const _$OnlineCallTearOff();
 
-// ignore: unused_element
   _OnlineCall call(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'start') @DateTimeConverter() DateTime start,
-      @JsonKey(name: 'online_count') int onlineCount}) {
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
+      @JsonKey(name: 'online_count') int? onlineCount}) {
     return _OnlineCall(
       jid: jid,
       uid: uid,
@@ -30,38 +34,36 @@ class _$OnlineCallTearOff {
     );
   }
 
-// ignore: unused_element
   OnlineCall fromJson(Map<String, Object> json) {
     return OnlineCall.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $OnlineCall = _$OnlineCallTearOff();
 
 /// @nodoc
 mixin _$OnlineCall {
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
   /// Call id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// Call start.
   @JsonKey(name: 'start')
   @DateTimeConverter()
-  DateTime get start;
+  DateTime? get start => throw _privateConstructorUsedError;
 
   /// Number participants in call.
   @JsonKey(name: 'online_count')
-  int get onlineCount;
+  int? get onlineCount => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $OnlineCallCopyWith<OnlineCall> get copyWith;
+  $OnlineCallCopyWith<OnlineCall> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -70,8 +72,8 @@ abstract class $OnlineCallCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'start') @DateTimeConverter() DateTime start,
-      @JsonKey(name: 'online_count') int onlineCount});
+      @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
+      @JsonKey(name: 'online_count') int? onlineCount});
 }
 
 /// @nodoc
@@ -84,16 +86,28 @@ class _$OnlineCallCopyWithImpl<$Res> implements $OnlineCallCopyWith<$Res> {
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object uid = freezed,
-    Object start = freezed,
-    Object onlineCount = freezed,
+    Object? jid = freezed,
+    Object? uid = freezed,
+    Object? start = freezed,
+    Object? onlineCount = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
-      uid: uid == freezed ? _value.uid : uid as String,
-      start: start == freezed ? _value.start : start as DateTime,
-      onlineCount: onlineCount == freezed ? _value.onlineCount : onlineCount as int,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      start: start == freezed
+          ? _value.start
+          : start // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      onlineCount: onlineCount == freezed
+          ? _value.onlineCount
+          : onlineCount // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 }
@@ -105,8 +119,8 @@ abstract class _$OnlineCallCopyWith<$Res> implements $OnlineCallCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'start') @DateTimeConverter() DateTime start,
-      @JsonKey(name: 'online_count') int onlineCount});
+      @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
+      @JsonKey(name: 'online_count') int? onlineCount});
 }
 
 /// @nodoc
@@ -119,33 +133,42 @@ class __$OnlineCallCopyWithImpl<$Res> extends _$OnlineCallCopyWithImpl<$Res> imp
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object uid = freezed,
-    Object start = freezed,
-    Object onlineCount = freezed,
+    Object? jid = freezed,
+    Object? uid = freezed,
+    Object? start = freezed,
+    Object? onlineCount = freezed,
   }) {
     return _then(_OnlineCall(
-      jid: jid == freezed ? _value.jid : jid as String,
-      uid: uid == freezed ? _value.uid : uid as String,
-      start: start == freezed ? _value.start : start as DateTime,
-      onlineCount: onlineCount == freezed ? _value.onlineCount : onlineCount as int,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      start: start == freezed
+          ? _value.start
+          : start // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      onlineCount: onlineCount == freezed
+          ? _value.onlineCount
+          : onlineCount // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_OnlineCall implements _OnlineCall {
   const _$_OnlineCall(
-      {@required @JsonKey(name: 'jid') this.jid,
-      @required @JsonKey(name: 'uid') this.uid,
+      {@JsonKey(name: 'jid') required this.jid,
+      @JsonKey(name: 'uid') required this.uid,
       @JsonKey(name: 'start') @DateTimeConverter() this.start,
-      @JsonKey(name: 'online_count') this.onlineCount})
-      : assert(jid != null),
-        assert(uid != null);
+      @JsonKey(name: 'online_count') this.onlineCount});
 
-  factory _$_OnlineCall.fromJson(Map<String, dynamic> json) => _$_$_OnlineCallFromJson(json);
+  factory _$_OnlineCall.fromJson(Map<String, dynamic> json) => _$$_OnlineCallFromJson(json);
 
   @override
 
@@ -162,12 +185,12 @@ class _$_OnlineCall implements _OnlineCall {
   /// Call start.
   @JsonKey(name: 'start')
   @DateTimeConverter()
-  final DateTime start;
+  final DateTime? start;
   @override
 
   /// Number participants in call.
   @JsonKey(name: 'online_count')
-  final int onlineCount;
+  final int? onlineCount;
 
   @override
   String toString() {
@@ -199,16 +222,16 @@ class _$_OnlineCall implements _OnlineCall {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_OnlineCallToJson(this);
+    return _$$_OnlineCallToJson(this);
   }
 }
 
 abstract class _OnlineCall implements OnlineCall {
   const factory _OnlineCall(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'start') @DateTimeConverter() DateTime start,
-      @JsonKey(name: 'online_count') int onlineCount}) = _$_OnlineCall;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
+      @JsonKey(name: 'online_count') int? onlineCount}) = _$_OnlineCall;
 
   factory _OnlineCall.fromJson(Map<String, dynamic> json) = _$_OnlineCall.fromJson;
 
@@ -216,24 +239,24 @@ abstract class _OnlineCall implements OnlineCall {
 
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Call id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// Call start.
   @JsonKey(name: 'start')
   @DateTimeConverter()
-  DateTime get start;
+  DateTime? get start => throw _privateConstructorUsedError;
   @override
 
   /// Number participants in call.
   @JsonKey(name: 'online_count')
-  int get onlineCount;
+  int? get onlineCount => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$OnlineCallCopyWith<_OnlineCall> get copyWith;
+  _$OnlineCallCopyWith<_OnlineCall> get copyWith => throw _privateConstructorUsedError;
 }

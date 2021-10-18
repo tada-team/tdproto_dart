@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'icon_colors.dart';
 
@@ -8,6 +9,10 @@ part of 'icon_colors.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 IconColors _$IconColorsFromJson(Map<String, dynamic> json) {
   return _IconColors.fromJson(json);
 }
@@ -16,11 +21,10 @@ IconColors _$IconColorsFromJson(Map<String, dynamic> json) {
 class _$IconColorsTearOff {
   const _$IconColorsTearOff();
 
-// ignore: unused_element
   _IconColors call(
-      {@required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'brand') String brand,
-      @required @JsonKey(name: 'other') String other}) {
+      {@JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'brand') required String brand,
+      @JsonKey(name: 'other') required String other}) {
     return _IconColors(
       title: title,
       brand: brand,
@@ -28,33 +32,31 @@ class _$IconColorsTearOff {
     );
   }
 
-// ignore: unused_element
   IconColors fromJson(Map<String, Object> json) {
     return IconColors.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $IconColors = _$IconColorsTearOff();
 
 /// @nodoc
 mixin _$IconColors {
   /// Title color.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
 
   /// Brand color.
   @JsonKey(name: 'brand')
-  String get brand;
+  String get brand => throw _privateConstructorUsedError;
 
   /// Other color.
   @JsonKey(name: 'other')
-  String get other;
+  String get other => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $IconColorsCopyWith<IconColors> get copyWith;
+  $IconColorsCopyWith<IconColors> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -76,14 +78,23 @@ class _$IconColorsCopyWithImpl<$Res> implements $IconColorsCopyWith<$Res> {
 
   @override
   $Res call({
-    Object title = freezed,
-    Object brand = freezed,
-    Object other = freezed,
+    Object? title = freezed,
+    Object? brand = freezed,
+    Object? other = freezed,
   }) {
     return _then(_value.copyWith(
-      title: title == freezed ? _value.title : title as String,
-      brand: brand == freezed ? _value.brand : brand as String,
-      other: other == freezed ? _value.other : other as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      brand: brand == freezed
+          ? _value.brand
+          : brand // ignore: cast_nullable_to_non_nullable
+              as String,
+      other: other == freezed
+          ? _value.other
+          : other // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -108,31 +119,36 @@ class __$IconColorsCopyWithImpl<$Res> extends _$IconColorsCopyWithImpl<$Res> imp
 
   @override
   $Res call({
-    Object title = freezed,
-    Object brand = freezed,
-    Object other = freezed,
+    Object? title = freezed,
+    Object? brand = freezed,
+    Object? other = freezed,
   }) {
     return _then(_IconColors(
-      title: title == freezed ? _value.title : title as String,
-      brand: brand == freezed ? _value.brand : brand as String,
-      other: other == freezed ? _value.other : other as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      brand: brand == freezed
+          ? _value.brand
+          : brand // ignore: cast_nullable_to_non_nullable
+              as String,
+      other: other == freezed
+          ? _value.other
+          : other // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_IconColors implements _IconColors {
   const _$_IconColors(
-      {@required @JsonKey(name: 'title') this.title,
-      @required @JsonKey(name: 'brand') this.brand,
-      @required @JsonKey(name: 'other') this.other})
-      : assert(title != null),
-        assert(brand != null),
-        assert(other != null);
+      {@JsonKey(name: 'title') required this.title,
+      @JsonKey(name: 'brand') required this.brand,
+      @JsonKey(name: 'other') required this.other});
 
-  factory _$_IconColors.fromJson(Map<String, dynamic> json) => _$_$_IconColorsFromJson(json);
+  factory _$_IconColors.fromJson(Map<String, dynamic> json) => _$$_IconColorsFromJson(json);
 
   @override
 
@@ -177,15 +193,15 @@ class _$_IconColors implements _IconColors {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_IconColorsToJson(this);
+    return _$$_IconColorsToJson(this);
   }
 }
 
 abstract class _IconColors implements IconColors {
   const factory _IconColors(
-      {@required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'brand') String brand,
-      @required @JsonKey(name: 'other') String other}) = _$_IconColors;
+      {@JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'brand') required String brand,
+      @JsonKey(name: 'other') required String other}) = _$_IconColors;
 
   factory _IconColors.fromJson(Map<String, dynamic> json) = _$_IconColors.fromJson;
 
@@ -193,18 +209,18 @@ abstract class _IconColors implements IconColors {
 
   /// Title color.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
 
   /// Brand color.
   @JsonKey(name: 'brand')
-  String get brand;
+  String get brand => throw _privateConstructorUsedError;
   @override
 
   /// Other color.
   @JsonKey(name: 'other')
-  String get other;
+  String get other => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$IconColorsCopyWith<_IconColors> get copyWith;
+  _$IconColorsCopyWith<_IconColors> get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'web_base.dart';
 
@@ -8,6 +9,10 @@ part of 'web_base.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 WebBase _$WebBaseFromJson(Map<String, dynamic> json) {
   return _WebBase.fromJson(json);
 }
@@ -16,19 +21,18 @@ WebBase _$WebBaseFromJson(Map<String, dynamic> json) {
 class _$WebBaseTearOff {
   const _$WebBaseTearOff();
 
-// ignore: unused_element
   _WebBase call(
-      {@required @JsonKey(name: 'brand') String brand,
-      @required @JsonKey(name: 'brand_light') String brandLight,
-      @required @JsonKey(name: 'brand_dark') String brandDark,
-      @required @JsonKey(name: 'back_light') String backLight,
-      @required @JsonKey(name: 'error') String error,
-      @required @JsonKey(name: 'error_light') String errorLight,
-      @required @JsonKey(name: 'success') String success,
-      @required @JsonKey(name: 'success_light') String successLight,
-      @required @JsonKey(name: 'attention') String attention,
-      @required @JsonKey(name: 'attention_light') String attentionLight,
-      @required @JsonKey(name: 'fade') String fade}) {
+      {@JsonKey(name: 'brand') required String brand,
+      @JsonKey(name: 'brand_light') required String brandLight,
+      @JsonKey(name: 'brand_dark') required String brandDark,
+      @JsonKey(name: 'back_light') required String backLight,
+      @JsonKey(name: 'error') required String error,
+      @JsonKey(name: 'error_light') required String errorLight,
+      @JsonKey(name: 'success') required String success,
+      @JsonKey(name: 'success_light') required String successLight,
+      @JsonKey(name: 'attention') required String attention,
+      @JsonKey(name: 'attention_light') required String attentionLight,
+      @JsonKey(name: 'fade') required String fade}) {
     return _WebBase(
       brand: brand,
       brandLight: brandLight,
@@ -44,65 +48,63 @@ class _$WebBaseTearOff {
     );
   }
 
-// ignore: unused_element
   WebBase fromJson(Map<String, Object> json) {
     return WebBase.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $WebBase = _$WebBaseTearOff();
 
 /// @nodoc
 mixin _$WebBase {
   /// .
   @JsonKey(name: 'brand')
-  String get brand;
+  String get brand => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'brand_light')
-  String get brandLight;
+  String get brandLight => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'brand_dark')
-  String get brandDark;
+  String get brandDark => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'back_light')
-  String get backLight;
+  String get backLight => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'error')
-  String get error;
+  String get error => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'error_light')
-  String get errorLight;
+  String get errorLight => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'success')
-  String get success;
+  String get success => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'success_light')
-  String get successLight;
+  String get successLight => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'attention')
-  String get attention;
+  String get attention => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'attention_light')
-  String get attentionLight;
+  String get attentionLight => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'fade')
-  String get fade;
+  String get fade => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $WebBaseCopyWith<WebBase> get copyWith;
+  $WebBaseCopyWith<WebBase> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -132,30 +134,63 @@ class _$WebBaseCopyWithImpl<$Res> implements $WebBaseCopyWith<$Res> {
 
   @override
   $Res call({
-    Object brand = freezed,
-    Object brandLight = freezed,
-    Object brandDark = freezed,
-    Object backLight = freezed,
-    Object error = freezed,
-    Object errorLight = freezed,
-    Object success = freezed,
-    Object successLight = freezed,
-    Object attention = freezed,
-    Object attentionLight = freezed,
-    Object fade = freezed,
+    Object? brand = freezed,
+    Object? brandLight = freezed,
+    Object? brandDark = freezed,
+    Object? backLight = freezed,
+    Object? error = freezed,
+    Object? errorLight = freezed,
+    Object? success = freezed,
+    Object? successLight = freezed,
+    Object? attention = freezed,
+    Object? attentionLight = freezed,
+    Object? fade = freezed,
   }) {
     return _then(_value.copyWith(
-      brand: brand == freezed ? _value.brand : brand as String,
-      brandLight: brandLight == freezed ? _value.brandLight : brandLight as String,
-      brandDark: brandDark == freezed ? _value.brandDark : brandDark as String,
-      backLight: backLight == freezed ? _value.backLight : backLight as String,
-      error: error == freezed ? _value.error : error as String,
-      errorLight: errorLight == freezed ? _value.errorLight : errorLight as String,
-      success: success == freezed ? _value.success : success as String,
-      successLight: successLight == freezed ? _value.successLight : successLight as String,
-      attention: attention == freezed ? _value.attention : attention as String,
-      attentionLight: attentionLight == freezed ? _value.attentionLight : attentionLight as String,
-      fade: fade == freezed ? _value.fade : fade as String,
+      brand: brand == freezed
+          ? _value.brand
+          : brand // ignore: cast_nullable_to_non_nullable
+              as String,
+      brandLight: brandLight == freezed
+          ? _value.brandLight
+          : brandLight // ignore: cast_nullable_to_non_nullable
+              as String,
+      brandDark: brandDark == freezed
+          ? _value.brandDark
+          : brandDark // ignore: cast_nullable_to_non_nullable
+              as String,
+      backLight: backLight == freezed
+          ? _value.backLight
+          : backLight // ignore: cast_nullable_to_non_nullable
+              as String,
+      error: error == freezed
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String,
+      errorLight: errorLight == freezed
+          ? _value.errorLight
+          : errorLight // ignore: cast_nullable_to_non_nullable
+              as String,
+      success: success == freezed
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as String,
+      successLight: successLight == freezed
+          ? _value.successLight
+          : successLight // ignore: cast_nullable_to_non_nullable
+              as String,
+      attention: attention == freezed
+          ? _value.attention
+          : attention // ignore: cast_nullable_to_non_nullable
+              as String,
+      attentionLight: attentionLight == freezed
+          ? _value.attentionLight
+          : attentionLight // ignore: cast_nullable_to_non_nullable
+              as String,
+      fade: fade == freezed
+          ? _value.fade
+          : fade // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -187,63 +222,84 @@ class __$WebBaseCopyWithImpl<$Res> extends _$WebBaseCopyWithImpl<$Res> implement
 
   @override
   $Res call({
-    Object brand = freezed,
-    Object brandLight = freezed,
-    Object brandDark = freezed,
-    Object backLight = freezed,
-    Object error = freezed,
-    Object errorLight = freezed,
-    Object success = freezed,
-    Object successLight = freezed,
-    Object attention = freezed,
-    Object attentionLight = freezed,
-    Object fade = freezed,
+    Object? brand = freezed,
+    Object? brandLight = freezed,
+    Object? brandDark = freezed,
+    Object? backLight = freezed,
+    Object? error = freezed,
+    Object? errorLight = freezed,
+    Object? success = freezed,
+    Object? successLight = freezed,
+    Object? attention = freezed,
+    Object? attentionLight = freezed,
+    Object? fade = freezed,
   }) {
     return _then(_WebBase(
-      brand: brand == freezed ? _value.brand : brand as String,
-      brandLight: brandLight == freezed ? _value.brandLight : brandLight as String,
-      brandDark: brandDark == freezed ? _value.brandDark : brandDark as String,
-      backLight: backLight == freezed ? _value.backLight : backLight as String,
-      error: error == freezed ? _value.error : error as String,
-      errorLight: errorLight == freezed ? _value.errorLight : errorLight as String,
-      success: success == freezed ? _value.success : success as String,
-      successLight: successLight == freezed ? _value.successLight : successLight as String,
-      attention: attention == freezed ? _value.attention : attention as String,
-      attentionLight: attentionLight == freezed ? _value.attentionLight : attentionLight as String,
-      fade: fade == freezed ? _value.fade : fade as String,
+      brand: brand == freezed
+          ? _value.brand
+          : brand // ignore: cast_nullable_to_non_nullable
+              as String,
+      brandLight: brandLight == freezed
+          ? _value.brandLight
+          : brandLight // ignore: cast_nullable_to_non_nullable
+              as String,
+      brandDark: brandDark == freezed
+          ? _value.brandDark
+          : brandDark // ignore: cast_nullable_to_non_nullable
+              as String,
+      backLight: backLight == freezed
+          ? _value.backLight
+          : backLight // ignore: cast_nullable_to_non_nullable
+              as String,
+      error: error == freezed
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String,
+      errorLight: errorLight == freezed
+          ? _value.errorLight
+          : errorLight // ignore: cast_nullable_to_non_nullable
+              as String,
+      success: success == freezed
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as String,
+      successLight: successLight == freezed
+          ? _value.successLight
+          : successLight // ignore: cast_nullable_to_non_nullable
+              as String,
+      attention: attention == freezed
+          ? _value.attention
+          : attention // ignore: cast_nullable_to_non_nullable
+              as String,
+      attentionLight: attentionLight == freezed
+          ? _value.attentionLight
+          : attentionLight // ignore: cast_nullable_to_non_nullable
+              as String,
+      fade: fade == freezed
+          ? _value.fade
+          : fade // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_WebBase implements _WebBase {
   const _$_WebBase(
-      {@required @JsonKey(name: 'brand') this.brand,
-      @required @JsonKey(name: 'brand_light') this.brandLight,
-      @required @JsonKey(name: 'brand_dark') this.brandDark,
-      @required @JsonKey(name: 'back_light') this.backLight,
-      @required @JsonKey(name: 'error') this.error,
-      @required @JsonKey(name: 'error_light') this.errorLight,
-      @required @JsonKey(name: 'success') this.success,
-      @required @JsonKey(name: 'success_light') this.successLight,
-      @required @JsonKey(name: 'attention') this.attention,
-      @required @JsonKey(name: 'attention_light') this.attentionLight,
-      @required @JsonKey(name: 'fade') this.fade})
-      : assert(brand != null),
-        assert(brandLight != null),
-        assert(brandDark != null),
-        assert(backLight != null),
-        assert(error != null),
-        assert(errorLight != null),
-        assert(success != null),
-        assert(successLight != null),
-        assert(attention != null),
-        assert(attentionLight != null),
-        assert(fade != null);
+      {@JsonKey(name: 'brand') required this.brand,
+      @JsonKey(name: 'brand_light') required this.brandLight,
+      @JsonKey(name: 'brand_dark') required this.brandDark,
+      @JsonKey(name: 'back_light') required this.backLight,
+      @JsonKey(name: 'error') required this.error,
+      @JsonKey(name: 'error_light') required this.errorLight,
+      @JsonKey(name: 'success') required this.success,
+      @JsonKey(name: 'success_light') required this.successLight,
+      @JsonKey(name: 'attention') required this.attention,
+      @JsonKey(name: 'attention_light') required this.attentionLight,
+      @JsonKey(name: 'fade') required this.fade});
 
-  factory _$_WebBase.fromJson(Map<String, dynamic> json) => _$_$_WebBaseFromJson(json);
+  factory _$_WebBase.fromJson(Map<String, dynamic> json) => _$$_WebBaseFromJson(json);
 
   @override
 
@@ -351,23 +407,23 @@ class _$_WebBase implements _WebBase {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_WebBaseToJson(this);
+    return _$$_WebBaseToJson(this);
   }
 }
 
 abstract class _WebBase implements WebBase {
   const factory _WebBase(
-      {@required @JsonKey(name: 'brand') String brand,
-      @required @JsonKey(name: 'brand_light') String brandLight,
-      @required @JsonKey(name: 'brand_dark') String brandDark,
-      @required @JsonKey(name: 'back_light') String backLight,
-      @required @JsonKey(name: 'error') String error,
-      @required @JsonKey(name: 'error_light') String errorLight,
-      @required @JsonKey(name: 'success') String success,
-      @required @JsonKey(name: 'success_light') String successLight,
-      @required @JsonKey(name: 'attention') String attention,
-      @required @JsonKey(name: 'attention_light') String attentionLight,
-      @required @JsonKey(name: 'fade') String fade}) = _$_WebBase;
+      {@JsonKey(name: 'brand') required String brand,
+      @JsonKey(name: 'brand_light') required String brandLight,
+      @JsonKey(name: 'brand_dark') required String brandDark,
+      @JsonKey(name: 'back_light') required String backLight,
+      @JsonKey(name: 'error') required String error,
+      @JsonKey(name: 'error_light') required String errorLight,
+      @JsonKey(name: 'success') required String success,
+      @JsonKey(name: 'success_light') required String successLight,
+      @JsonKey(name: 'attention') required String attention,
+      @JsonKey(name: 'attention_light') required String attentionLight,
+      @JsonKey(name: 'fade') required String fade}) = _$_WebBase;
 
   factory _WebBase.fromJson(Map<String, dynamic> json) = _$_WebBase.fromJson;
 
@@ -375,58 +431,58 @@ abstract class _WebBase implements WebBase {
 
   /// .
   @JsonKey(name: 'brand')
-  String get brand;
+  String get brand => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'brand_light')
-  String get brandLight;
+  String get brandLight => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'brand_dark')
-  String get brandDark;
+  String get brandDark => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'back_light')
-  String get backLight;
+  String get backLight => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'error')
-  String get error;
+  String get error => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'error_light')
-  String get errorLight;
+  String get errorLight => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'success')
-  String get success;
+  String get success => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'success_light')
-  String get successLight;
+  String get successLight => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'attention')
-  String get attention;
+  String get attention => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'attention_light')
-  String get attentionLight;
+  String get attentionLight => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'fade')
-  String get fade;
+  String get fade => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$WebBaseCopyWith<_WebBase> get copyWith;
+  _$WebBaseCopyWith<_WebBase> get copyWith => throw _privateConstructorUsedError;
 }

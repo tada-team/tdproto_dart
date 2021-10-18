@@ -6,18 +6,15 @@ part of 'server_call_check_fingerprint.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ServerCallCheckFingerprint _$_$_ServerCallCheckFingerprintFromJson(Map<String, dynamic> json) {
-  return _$_ServerCallCheckFingerprint(
-    params: json['params'] == null
-        ? null
-        : ServerCallCheckFingerprintParams.fromJson(json['params'] as Map<String, dynamic>),
-    name: json['event'] as String,
-    confirmId: json['confirm_id'] as String,
-  );
-}
+_$_ServerCallCheckFingerprint _$$_ServerCallCheckFingerprintFromJson(Map<String, dynamic> json) =>
+    _$_ServerCallCheckFingerprint(
+      params: ServerCallCheckFingerprintParams.fromJson(json['params'] as Map<String, dynamic>),
+      name: json['event'] as String,
+      confirmId: json['confirm_id'] as String?,
+    );
 
-Map<String, dynamic> _$_$_ServerCallCheckFingerprintToJson(_$_ServerCallCheckFingerprint instance) => <String, dynamic>{
-      'params': instance.params?.toJson(),
+Map<String, dynamic> _$$_ServerCallCheckFingerprintToJson(_$_ServerCallCheckFingerprint instance) => <String, dynamic>{
+      'params': instance.params.toJson(),
       'event': instance.name,
       'confirm_id': instance.confirmId,
     };

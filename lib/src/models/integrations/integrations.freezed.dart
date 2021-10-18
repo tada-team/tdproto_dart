@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'integrations.dart';
 
@@ -8,6 +9,10 @@ part of 'integrations.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Integrations _$IntegrationsFromJson(Map<String, dynamic> json) {
   return _Integrations.fromJson(json);
 }
@@ -16,39 +21,36 @@ Integrations _$IntegrationsFromJson(Map<String, dynamic> json) {
 class _$IntegrationsTearOff {
   const _$IntegrationsTearOff();
 
-// ignore: unused_element
   _Integrations call(
-      {@required @JsonKey(name: 'integrations') List<Integration> integrations,
-      @required @JsonKey(name: 'kinds') List<IntegrationKind> kinds}) {
+      {@JsonKey(name: 'integrations') required List<Integration> integrations,
+      @JsonKey(name: 'kinds') required List<IntegrationKind> kinds}) {
     return _Integrations(
       integrations: integrations,
       kinds: kinds,
     );
   }
 
-// ignore: unused_element
   Integrations fromJson(Map<String, Object> json) {
     return Integrations.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Integrations = _$IntegrationsTearOff();
 
 /// @nodoc
 mixin _$Integrations {
   /// Currently existing integrations.
   @JsonKey(name: 'integrations')
-  List<Integration> get integrations;
+  List<Integration> get integrations => throw _privateConstructorUsedError;
 
   /// Types of integrations available for setup.
   @JsonKey(name: 'kinds')
-  List<IntegrationKind> get kinds;
+  List<IntegrationKind> get kinds => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $IntegrationsCopyWith<Integrations> get copyWith;
+  $IntegrationsCopyWith<Integrations> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -70,12 +72,18 @@ class _$IntegrationsCopyWithImpl<$Res> implements $IntegrationsCopyWith<$Res> {
 
   @override
   $Res call({
-    Object integrations = freezed,
-    Object kinds = freezed,
+    Object? integrations = freezed,
+    Object? kinds = freezed,
   }) {
     return _then(_value.copyWith(
-      integrations: integrations == freezed ? _value.integrations : integrations as List<Integration>,
-      kinds: kinds == freezed ? _value.kinds : kinds as List<IntegrationKind>,
+      integrations: integrations == freezed
+          ? _value.integrations
+          : integrations // ignore: cast_nullable_to_non_nullable
+              as List<Integration>,
+      kinds: kinds == freezed
+          ? _value.kinds
+          : kinds // ignore: cast_nullable_to_non_nullable
+              as List<IntegrationKind>,
     ));
   }
 }
@@ -101,26 +109,29 @@ class __$IntegrationsCopyWithImpl<$Res> extends _$IntegrationsCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object integrations = freezed,
-    Object kinds = freezed,
+    Object? integrations = freezed,
+    Object? kinds = freezed,
   }) {
     return _then(_Integrations(
-      integrations: integrations == freezed ? _value.integrations : integrations as List<Integration>,
-      kinds: kinds == freezed ? _value.kinds : kinds as List<IntegrationKind>,
+      integrations: integrations == freezed
+          ? _value.integrations
+          : integrations // ignore: cast_nullable_to_non_nullable
+              as List<Integration>,
+      kinds: kinds == freezed
+          ? _value.kinds
+          : kinds // ignore: cast_nullable_to_non_nullable
+              as List<IntegrationKind>,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Integrations implements _Integrations {
   const _$_Integrations(
-      {@required @JsonKey(name: 'integrations') this.integrations, @required @JsonKey(name: 'kinds') this.kinds})
-      : assert(integrations != null),
-        assert(kinds != null);
+      {@JsonKey(name: 'integrations') required this.integrations, @JsonKey(name: 'kinds') required this.kinds});
 
-  factory _$_Integrations.fromJson(Map<String, dynamic> json) => _$_$_IntegrationsFromJson(json);
+  factory _$_Integrations.fromJson(Map<String, dynamic> json) => _$$_IntegrationsFromJson(json);
 
   @override
 
@@ -159,14 +170,14 @@ class _$_Integrations implements _Integrations {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_IntegrationsToJson(this);
+    return _$$_IntegrationsToJson(this);
   }
 }
 
 abstract class _Integrations implements Integrations {
   const factory _Integrations(
-      {@required @JsonKey(name: 'integrations') List<Integration> integrations,
-      @required @JsonKey(name: 'kinds') List<IntegrationKind> kinds}) = _$_Integrations;
+      {@JsonKey(name: 'integrations') required List<Integration> integrations,
+      @JsonKey(name: 'kinds') required List<IntegrationKind> kinds}) = _$_Integrations;
 
   factory _Integrations.fromJson(Map<String, dynamic> json) = _$_Integrations.fromJson;
 
@@ -174,13 +185,13 @@ abstract class _Integrations implements Integrations {
 
   /// Currently existing integrations.
   @JsonKey(name: 'integrations')
-  List<Integration> get integrations;
+  List<Integration> get integrations => throw _privateConstructorUsedError;
   @override
 
   /// Types of integrations available for setup.
   @JsonKey(name: 'kinds')
-  List<IntegrationKind> get kinds;
+  List<IntegrationKind> get kinds => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$IntegrationsCopyWith<_Integrations> get copyWith;
+  _$IntegrationsCopyWith<_Integrations> get copyWith => throw _privateConstructorUsedError;
 }

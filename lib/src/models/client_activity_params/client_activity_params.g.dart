@@ -6,12 +6,10 @@ part of 'client_activity_params.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ClientActivityParams _$_$_ClientActivityParamsFromJson(Map<String, dynamic> json) {
-  return _$_ClientActivityParams(
-    afk: json['afk'] as bool,
-  );
-}
+_$_ClientActivityParams _$$_ClientActivityParamsFromJson(Map<String, dynamic> json) => _$_ClientActivityParams(
+      afk: json['afk'] as bool? ?? false,
+    );
 
-Map<String, dynamic> _$_$_ClientActivityParamsToJson(_$_ClientActivityParams instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ClientActivityParamsToJson(_$_ClientActivityParams instance) => <String, dynamic>{
       'afk': instance.afk,
     };

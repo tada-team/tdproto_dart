@@ -6,22 +6,22 @@ part 'server_message_updated_params.g.dart';
 
 /// Params of the server.message.updated event.
 @freezed
-abstract class ServerMessageUpdatedParams with _$ServerMessageUpdatedParams {
+class ServerMessageUpdatedParams with _$ServerMessageUpdatedParams {
   const factory ServerMessageUpdatedParams({
     /// Messages data.
-    @JsonKey(name: 'messages') @required List<Message> messages,
+    @JsonKey(name: 'messages') required List<Message> messages,
 
     /// true = silently message update, false = new message.
-    @JsonKey(name: 'delayed') @required bool delayed,
+    @Default(false) @JsonKey(name: 'delayed') required bool delayed,
 
     /// Chat counters.
-    @JsonKey(name: 'chat_counters') @required List<ChatCounters> chatCounters,
+    @JsonKey(name: 'chat_counters') required List<ChatCounters> chatCounters,
 
     /// Current team counters.
-    @JsonKey(name: 'team_unread') @required TeamUnread teamUnread,
+    @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
 
     /// Total number of unreads, if changed.
-    @JsonKey(name: 'badge') @required int badge,
+    @JsonKey(name: 'badge') int? badge,
   }) = _ServerMessageUpdatedParams;
 
   factory ServerMessageUpdatedParams.fromJson(Map<String, dynamic> json) => _$ServerMessageUpdatedParamsFromJson(json);

@@ -6,10 +6,10 @@ part 'server_call_check_fingerprint_params.g.dart';
 
 /// Params of the server.call.checkfingerprint event.
 @freezed
-abstract class ServerCallCheckFingerprintParams with _$ServerCallCheckFingerprintParams {
+class ServerCallCheckFingerprintParams with _$ServerCallCheckFingerprintParams {
   const factory ServerCallCheckFingerprintParams({
     /// .
-    @JsonKey(name: 'fingerprint') @required String fingerprint,
+    @JsonKey(name: 'fingerprint') required String fingerprint,
   }) = _ServerCallCheckFingerprintParams;
 
   factory ServerCallCheckFingerprintParams.fromJson(Map<String, dynamic> json) =>

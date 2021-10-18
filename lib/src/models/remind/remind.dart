@@ -6,19 +6,19 @@ part 'remind.g.dart';
 
 /// Remind.
 @freezed
-abstract class Remind with _$Remind {
+class Remind with _$Remind {
   const factory Remind({
     /// Remind id.
-    @JsonKey(name: 'uid') @required String uid,
+    @JsonKey(name: 'uid') required String uid,
 
     /// Chat id.
-    @JsonKey(name: 'chat') @required String chat,
+    @JsonKey(name: 'chat') required String chat,
 
     /// Activation time, iso.
-    @JsonKey(name: 'fire_at') @DateTimeConverter() @required DateTime fireAt,
+    @JsonKey(name: 'fire_at') @DateTimeConverter() required DateTime fireAt,
 
     /// Comment, if any.
-    @JsonKey(name: 'comment') String comment,
+    @JsonKey(name: 'comment') String? comment,
   }) = _Remind;
 
   factory Remind.fromJson(Map<String, dynamic> json) => _$RemindFromJson(json);

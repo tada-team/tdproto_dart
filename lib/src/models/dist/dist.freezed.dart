@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'dist.dart';
 
@@ -8,6 +9,10 @@ part of 'dist.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Dist _$DistFromJson(Map<String, dynamic> json) {
   return _Dist.fromJson(json);
 }
@@ -16,37 +21,34 @@ Dist _$DistFromJson(Map<String, dynamic> json) {
 class _$DistTearOff {
   const _$DistTearOff();
 
-// ignore: unused_element
-  _Dist call({@required @JsonKey(name: 'type') String type, @required @JsonKey(name: 'url') String url}) {
+  _Dist call({@JsonKey(name: 'type') required String type, @JsonKey(name: 'url') required String url}) {
     return _Dist(
       type: type,
       url: url,
     );
   }
 
-// ignore: unused_element
   Dist fromJson(Map<String, Object> json) {
     return Dist.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Dist = _$DistTearOff();
 
 /// @nodoc
 mixin _$Dist {
   /// .
   @JsonKey(name: 'type')
-  String get type;
+  String get type => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'url')
-  String get url;
+  String get url => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $DistCopyWith<Dist> get copyWith;
+  $DistCopyWith<Dist> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -65,12 +67,18 @@ class _$DistCopyWithImpl<$Res> implements $DistCopyWith<$Res> {
 
   @override
   $Res call({
-    Object type = freezed,
-    Object url = freezed,
+    Object? type = freezed,
+    Object? url = freezed,
   }) {
     return _then(_value.copyWith(
-      type: type == freezed ? _value.type : type as String,
-      url: url == freezed ? _value.url : url as String,
+      type: type == freezed
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: url == freezed
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -91,25 +99,28 @@ class __$DistCopyWithImpl<$Res> extends _$DistCopyWithImpl<$Res> implements _$Di
 
   @override
   $Res call({
-    Object type = freezed,
-    Object url = freezed,
+    Object? type = freezed,
+    Object? url = freezed,
   }) {
     return _then(_Dist(
-      type: type == freezed ? _value.type : type as String,
-      url: url == freezed ? _value.url : url as String,
+      type: type == freezed
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: url == freezed
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Dist implements _Dist {
-  const _$_Dist({@required @JsonKey(name: 'type') this.type, @required @JsonKey(name: 'url') this.url})
-      : assert(type != null),
-        assert(url != null);
+  const _$_Dist({@JsonKey(name: 'type') required this.type, @JsonKey(name: 'url') required this.url});
 
-  factory _$_Dist.fromJson(Map<String, dynamic> json) => _$_$_DistFromJson(json);
+  factory _$_Dist.fromJson(Map<String, dynamic> json) => _$$_DistFromJson(json);
 
   @override
 
@@ -145,12 +156,12 @@ class _$_Dist implements _Dist {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_DistToJson(this);
+    return _$$_DistToJson(this);
   }
 }
 
 abstract class _Dist implements Dist {
-  const factory _Dist({@required @JsonKey(name: 'type') String type, @required @JsonKey(name: 'url') String url}) =
+  const factory _Dist({@JsonKey(name: 'type') required String type, @JsonKey(name: 'url') required String url}) =
       _$_Dist;
 
   factory _Dist.fromJson(Map<String, dynamic> json) = _$_Dist.fromJson;
@@ -159,13 +170,13 @@ abstract class _Dist implements Dist {
 
   /// .
   @JsonKey(name: 'type')
-  String get type;
+  String get type => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'url')
-  String get url;
+  String get url => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$DistCopyWith<_Dist> get copyWith;
+  _$DistCopyWith<_Dist> get copyWith => throw _privateConstructorUsedError;
 }

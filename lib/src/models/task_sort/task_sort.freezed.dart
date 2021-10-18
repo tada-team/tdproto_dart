@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'task_sort.dart';
 
@@ -8,6 +9,10 @@ part of 'task_sort.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 TaskSort _$TaskSortFromJson(Map<String, dynamic> json) {
   return _TaskSort.fromJson(json);
 }
@@ -16,37 +21,34 @@ TaskSort _$TaskSortFromJson(Map<String, dynamic> json) {
 class _$TaskSortTearOff {
   const _$TaskSortTearOff();
 
-// ignore: unused_element
-  _TaskSort call({@required @JsonKey(name: 'key') String key, @required @JsonKey(name: 'title') String title}) {
+  _TaskSort call({@JsonKey(name: 'key') required String key, @JsonKey(name: 'title') required String title}) {
     return _TaskSort(
       key: key,
       title: title,
     );
   }
 
-// ignore: unused_element
   TaskSort fromJson(Map<String, Object> json) {
     return TaskSort.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $TaskSort = _$TaskSortTearOff();
 
 /// @nodoc
 mixin _$TaskSort {
   /// Field.
   @JsonKey(name: 'key')
-  String get key;
+  String get key => throw _privateConstructorUsedError;
 
   /// Sort title.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $TaskSortCopyWith<TaskSort> get copyWith;
+  $TaskSortCopyWith<TaskSort> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -65,12 +67,18 @@ class _$TaskSortCopyWithImpl<$Res> implements $TaskSortCopyWith<$Res> {
 
   @override
   $Res call({
-    Object key = freezed,
-    Object title = freezed,
+    Object? key = freezed,
+    Object? title = freezed,
   }) {
     return _then(_value.copyWith(
-      key: key == freezed ? _value.key : key as String,
-      title: title == freezed ? _value.title : title as String,
+      key: key == freezed
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -92,25 +100,28 @@ class __$TaskSortCopyWithImpl<$Res> extends _$TaskSortCopyWithImpl<$Res> impleme
 
   @override
   $Res call({
-    Object key = freezed,
-    Object title = freezed,
+    Object? key = freezed,
+    Object? title = freezed,
   }) {
     return _then(_TaskSort(
-      key: key == freezed ? _value.key : key as String,
-      title: title == freezed ? _value.title : title as String,
+      key: key == freezed
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_TaskSort implements _TaskSort {
-  const _$_TaskSort({@required @JsonKey(name: 'key') this.key, @required @JsonKey(name: 'title') this.title})
-      : assert(key != null),
-        assert(title != null);
+  const _$_TaskSort({@JsonKey(name: 'key') required this.key, @JsonKey(name: 'title') required this.title});
 
-  factory _$_TaskSort.fromJson(Map<String, dynamic> json) => _$_$_TaskSortFromJson(json);
+  factory _$_TaskSort.fromJson(Map<String, dynamic> json) => _$$_TaskSortFromJson(json);
 
   @override
 
@@ -146,13 +157,13 @@ class _$_TaskSort implements _TaskSort {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_TaskSortToJson(this);
+    return _$$_TaskSortToJson(this);
   }
 }
 
 abstract class _TaskSort implements TaskSort {
-  const factory _TaskSort(
-      {@required @JsonKey(name: 'key') String key, @required @JsonKey(name: 'title') String title}) = _$_TaskSort;
+  const factory _TaskSort({@JsonKey(name: 'key') required String key, @JsonKey(name: 'title') required String title}) =
+      _$_TaskSort;
 
   factory _TaskSort.fromJson(Map<String, dynamic> json) = _$_TaskSort.fromJson;
 
@@ -160,13 +171,13 @@ abstract class _TaskSort implements TaskSort {
 
   /// Field.
   @JsonKey(name: 'key')
-  String get key;
+  String get key => throw _privateConstructorUsedError;
   @override
 
   /// Sort title.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TaskSortCopyWith<_TaskSort> get copyWith;
+  _$TaskSortCopyWith<_TaskSort> get copyWith => throw _privateConstructorUsedError;
 }

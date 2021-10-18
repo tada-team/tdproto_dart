@@ -6,15 +6,13 @@ part of 'node.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_Node _$_$_NodeFromJson(Map<String, dynamic> json) {
-  return _$_Node(
-    uid: json['uid'] as String,
-    title: json['title'] as String,
-    enabled: json['enabled'] as bool,
-  );
-}
+_$_Node _$$_NodeFromJson(Map<String, dynamic> json) => _$_Node(
+      uid: json['uid'] as String,
+      title: json['title'] as String,
+      enabled: json['enabled'] as bool? ?? false,
+    );
 
-Map<String, dynamic> _$_$_NodeToJson(_$_Node instance) => <String, dynamic>{
+Map<String, dynamic> _$$_NodeToJson(_$_Node instance) => <String, dynamic>{
       'uid': instance.uid,
       'title': instance.title,
       'enabled': instance.enabled,

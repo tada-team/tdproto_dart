@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'deleted_team.dart';
 
@@ -8,6 +9,10 @@ part of 'deleted_team.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 DeletedTeam _$DeletedTeamFromJson(Map<String, dynamic> json) {
   return _DeletedTeam.fromJson(json);
 }
@@ -16,11 +21,10 @@ DeletedTeam _$DeletedTeamFromJson(Map<String, dynamic> json) {
 class _$DeletedTeamTearOff {
   const _$DeletedTeamTearOff();
 
-// ignore: unused_element
   _DeletedTeam call(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'is_archive') bool isArchive,
-      @required @JsonKey(name: 'gentime') int gentime}) {
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'is_archive') required bool isArchive = false,
+      @JsonKey(name: 'gentime') required int gentime}) {
     return _DeletedTeam(
       uid: uid,
       isArchive: isArchive,
@@ -28,33 +32,31 @@ class _$DeletedTeamTearOff {
     );
   }
 
-// ignore: unused_element
   DeletedTeam fromJson(Map<String, Object> json) {
     return DeletedTeam.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $DeletedTeam = _$DeletedTeamTearOff();
 
 /// @nodoc
 mixin _$DeletedTeam {
   /// Team id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// Team deleted.
   @JsonKey(name: 'is_archive')
-  bool get isArchive;
+  bool get isArchive => throw _privateConstructorUsedError;
 
   /// Object version.
   @JsonKey(name: 'gentime')
-  int get gentime;
+  int get gentime => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $DeletedTeamCopyWith<DeletedTeam> get copyWith;
+  $DeletedTeamCopyWith<DeletedTeam> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -76,14 +78,23 @@ class _$DeletedTeamCopyWithImpl<$Res> implements $DeletedTeamCopyWith<$Res> {
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object isArchive = freezed,
-    Object gentime = freezed,
+    Object? uid = freezed,
+    Object? isArchive = freezed,
+    Object? gentime = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
-      isArchive: isArchive == freezed ? _value.isArchive : isArchive as bool,
-      gentime: gentime == freezed ? _value.gentime : gentime as int,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      isArchive: isArchive == freezed
+          ? _value.isArchive
+          : isArchive // ignore: cast_nullable_to_non_nullable
+              as bool,
+      gentime: gentime == freezed
+          ? _value.gentime
+          : gentime // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -109,31 +120,36 @@ class __$DeletedTeamCopyWithImpl<$Res> extends _$DeletedTeamCopyWithImpl<$Res> i
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object isArchive = freezed,
-    Object gentime = freezed,
+    Object? uid = freezed,
+    Object? isArchive = freezed,
+    Object? gentime = freezed,
   }) {
     return _then(_DeletedTeam(
-      uid: uid == freezed ? _value.uid : uid as String,
-      isArchive: isArchive == freezed ? _value.isArchive : isArchive as bool,
-      gentime: gentime == freezed ? _value.gentime : gentime as int,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      isArchive: isArchive == freezed
+          ? _value.isArchive
+          : isArchive // ignore: cast_nullable_to_non_nullable
+              as bool,
+      gentime: gentime == freezed
+          ? _value.gentime
+          : gentime // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_DeletedTeam implements _DeletedTeam {
   const _$_DeletedTeam(
-      {@required @JsonKey(name: 'uid') this.uid,
-      @required @JsonKey(name: 'is_archive') this.isArchive,
-      @required @JsonKey(name: 'gentime') this.gentime})
-      : assert(uid != null),
-        assert(isArchive != null),
-        assert(gentime != null);
+      {@JsonKey(name: 'uid') required this.uid,
+      @JsonKey(name: 'is_archive') required this.isArchive = false,
+      @JsonKey(name: 'gentime') required this.gentime});
 
-  factory _$_DeletedTeam.fromJson(Map<String, dynamic> json) => _$_$_DeletedTeamFromJson(json);
+  factory _$_DeletedTeam.fromJson(Map<String, dynamic> json) => _$$_DeletedTeamFromJson(json);
 
   @override
 
@@ -179,15 +195,15 @@ class _$_DeletedTeam implements _DeletedTeam {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_DeletedTeamToJson(this);
+    return _$$_DeletedTeamToJson(this);
   }
 }
 
 abstract class _DeletedTeam implements DeletedTeam {
   const factory _DeletedTeam(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'is_archive') bool isArchive,
-      @required @JsonKey(name: 'gentime') int gentime}) = _$_DeletedTeam;
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'is_archive') required bool isArchive,
+      @JsonKey(name: 'gentime') required int gentime}) = _$_DeletedTeam;
 
   factory _DeletedTeam.fromJson(Map<String, dynamic> json) = _$_DeletedTeam.fromJson;
 
@@ -195,18 +211,18 @@ abstract class _DeletedTeam implements DeletedTeam {
 
   /// Team id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// Team deleted.
   @JsonKey(name: 'is_archive')
-  bool get isArchive;
+  bool get isArchive => throw _privateConstructorUsedError;
   @override
 
   /// Object version.
   @JsonKey(name: 'gentime')
-  int get gentime;
+  int get gentime => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$DeletedTeamCopyWith<_DeletedTeam> get copyWith;
+  _$DeletedTeamCopyWith<_DeletedTeam> get copyWith => throw _privateConstructorUsedError;
 }

@@ -6,10 +6,10 @@ part 'server_upload_updated_params.g.dart';
 
 /// Params of the server.upload.updated event.
 @freezed
-abstract class ServerUploadUpdatedParams with _$ServerUploadUpdatedParams {
+class ServerUploadUpdatedParams with _$ServerUploadUpdatedParams {
   const factory ServerUploadUpdatedParams({
     /// Uploads data.
-    @JsonKey(name: 'uploads') @required List<Upload> uploads,
+    @JsonKey(name: 'uploads') required List<Upload> uploads,
   }) = _ServerUploadUpdatedParams;
 
   factory ServerUploadUpdatedParams.fromJson(Map<String, dynamic> json) => _$ServerUploadUpdatedParamsFromJson(json);

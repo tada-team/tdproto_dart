@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_debug.dart';
 
@@ -8,6 +9,10 @@ part of 'server_debug.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerDebug _$ServerDebugFromJson(Map<String, dynamic> json) {
   return _ServerDebug.fromJson(json);
 }
@@ -16,11 +21,10 @@ ServerDebug _$ServerDebugFromJson(Map<String, dynamic> json) {
 class _$ServerDebugTearOff {
   const _$ServerDebugTearOff();
 
-// ignore: unused_element
   _ServerDebug call(
-      {@required @JsonKey(name: 'params') ServerDebugParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) {
+      {@JsonKey(name: 'params') required ServerDebugParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ServerDebug(
       params: params,
       name: name,
@@ -28,33 +32,31 @@ class _$ServerDebugTearOff {
     );
   }
 
-// ignore: unused_element
   ServerDebug fromJson(Map<String, Object> json) {
     return ServerDebug.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerDebug = _$ServerDebugTearOff();
 
 /// @nodoc
 mixin _$ServerDebug {
   /// .
   @JsonKey(name: 'params')
-  ServerDebugParams get params;
+  ServerDebugParams get params => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerDebugCopyWith<ServerDebug> get copyWith;
+  $ServerDebugCopyWith<ServerDebug> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -63,7 +65,7 @@ abstract class $ServerDebugCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'params') ServerDebugParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   $ServerDebugParamsCopyWith<$Res> get params;
 }
@@ -78,22 +80,28 @@ class _$ServerDebugCopyWithImpl<$Res> implements $ServerDebugCopyWith<$Res> {
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as ServerDebugParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerDebugParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $ServerDebugParamsCopyWith<$Res> get params {
-    if (_value.params == null) {
-      return null;
-    }
     return $ServerDebugParamsCopyWith<$Res>(_value.params, (value) {
       return _then(_value.copyWith(params: value));
     });
@@ -108,7 +116,7 @@ abstract class _$ServerDebugCopyWith<$Res> implements $ServerDebugCopyWith<$Res>
   $Res call(
       {@JsonKey(name: 'params') ServerDebugParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   @override
   $ServerDebugParamsCopyWith<$Res> get params;
@@ -124,30 +132,36 @@ class __$ServerDebugCopyWithImpl<$Res> extends _$ServerDebugCopyWithImpl<$Res> i
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ServerDebug(
-      params: params == freezed ? _value.params : params as ServerDebugParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerDebugParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerDebug implements _ServerDebug {
   const _$_ServerDebug(
-      {@required @JsonKey(name: 'params') this.params,
-      @required @JsonKey(name: 'event') this.name,
-      @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(params != null),
-        assert(name != null);
+      {@JsonKey(name: 'params') required this.params,
+      @JsonKey(name: 'event') required this.name,
+      @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ServerDebug.fromJson(Map<String, dynamic> json) => _$_$_ServerDebugFromJson(json);
+  factory _$_ServerDebug.fromJson(Map<String, dynamic> json) => _$$_ServerDebugFromJson(json);
 
   @override
 
@@ -163,7 +177,7 @@ class _$_ServerDebug implements _ServerDebug {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -193,15 +207,15 @@ class _$_ServerDebug implements _ServerDebug {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerDebugToJson(this);
+    return _$$_ServerDebugToJson(this);
   }
 }
 
 abstract class _ServerDebug implements ServerDebug {
   const factory _ServerDebug(
-      {@required @JsonKey(name: 'params') ServerDebugParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) = _$_ServerDebug;
+      {@JsonKey(name: 'params') required ServerDebugParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerDebug;
 
   factory _ServerDebug.fromJson(Map<String, dynamic> json) = _$_ServerDebug.fromJson;
 
@@ -209,18 +223,18 @@ abstract class _ServerDebug implements ServerDebug {
 
   /// .
   @JsonKey(name: 'params')
-  ServerDebugParams get params;
+  ServerDebugParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerDebugCopyWith<_ServerDebug> get copyWith;
+  _$ServerDebugCopyWith<_ServerDebug> get copyWith => throw _privateConstructorUsedError;
 }

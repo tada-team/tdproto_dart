@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_section_updated.dart';
 
@@ -8,6 +9,10 @@ part of 'server_section_updated.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerSectionUpdated _$ServerSectionUpdatedFromJson(Map<String, dynamic> json) {
   return _ServerSectionUpdated.fromJson(json);
 }
@@ -16,11 +21,10 @@ ServerSectionUpdated _$ServerSectionUpdatedFromJson(Map<String, dynamic> json) {
 class _$ServerSectionUpdatedTearOff {
   const _$ServerSectionUpdatedTearOff();
 
-// ignore: unused_element
   _ServerSectionUpdated call(
-      {@required @JsonKey(name: 'params') ServerSectionUpdatedParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) {
+      {@JsonKey(name: 'params') required ServerSectionUpdatedParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ServerSectionUpdated(
       params: params,
       name: name,
@@ -28,33 +32,31 @@ class _$ServerSectionUpdatedTearOff {
     );
   }
 
-// ignore: unused_element
   ServerSectionUpdated fromJson(Map<String, Object> json) {
     return ServerSectionUpdated.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerSectionUpdated = _$ServerSectionUpdatedTearOff();
 
 /// @nodoc
 mixin _$ServerSectionUpdated {
   /// .
   @JsonKey(name: 'params')
-  ServerSectionUpdatedParams get params;
+  ServerSectionUpdatedParams get params => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerSectionUpdatedCopyWith<ServerSectionUpdated> get copyWith;
+  $ServerSectionUpdatedCopyWith<ServerSectionUpdated> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -64,7 +66,7 @@ abstract class $ServerSectionUpdatedCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'params') ServerSectionUpdatedParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   $ServerSectionUpdatedParamsCopyWith<$Res> get params;
 }
@@ -79,22 +81,28 @@ class _$ServerSectionUpdatedCopyWithImpl<$Res> implements $ServerSectionUpdatedC
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as ServerSectionUpdatedParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerSectionUpdatedParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $ServerSectionUpdatedParamsCopyWith<$Res> get params {
-    if (_value.params == null) {
-      return null;
-    }
     return $ServerSectionUpdatedParamsCopyWith<$Res>(_value.params, (value) {
       return _then(_value.copyWith(params: value));
     });
@@ -109,7 +117,7 @@ abstract class _$ServerSectionUpdatedCopyWith<$Res> implements $ServerSectionUpd
   $Res call(
       {@JsonKey(name: 'params') ServerSectionUpdatedParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   @override
   $ServerSectionUpdatedParamsCopyWith<$Res> get params;
@@ -126,30 +134,36 @@ class __$ServerSectionUpdatedCopyWithImpl<$Res> extends _$ServerSectionUpdatedCo
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ServerSectionUpdated(
-      params: params == freezed ? _value.params : params as ServerSectionUpdatedParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerSectionUpdatedParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerSectionUpdated implements _ServerSectionUpdated {
   const _$_ServerSectionUpdated(
-      {@required @JsonKey(name: 'params') this.params,
-      @required @JsonKey(name: 'event') this.name,
-      @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(params != null),
-        assert(name != null);
+      {@JsonKey(name: 'params') required this.params,
+      @JsonKey(name: 'event') required this.name,
+      @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ServerSectionUpdated.fromJson(Map<String, dynamic> json) => _$_$_ServerSectionUpdatedFromJson(json);
+  factory _$_ServerSectionUpdated.fromJson(Map<String, dynamic> json) => _$$_ServerSectionUpdatedFromJson(json);
 
   @override
 
@@ -165,7 +179,7 @@ class _$_ServerSectionUpdated implements _ServerSectionUpdated {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -196,15 +210,15 @@ class _$_ServerSectionUpdated implements _ServerSectionUpdated {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerSectionUpdatedToJson(this);
+    return _$$_ServerSectionUpdatedToJson(this);
   }
 }
 
 abstract class _ServerSectionUpdated implements ServerSectionUpdated {
   const factory _ServerSectionUpdated(
-      {@required @JsonKey(name: 'params') ServerSectionUpdatedParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) = _$_ServerSectionUpdated;
+      {@JsonKey(name: 'params') required ServerSectionUpdatedParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerSectionUpdated;
 
   factory _ServerSectionUpdated.fromJson(Map<String, dynamic> json) = _$_ServerSectionUpdated.fromJson;
 
@@ -212,18 +226,18 @@ abstract class _ServerSectionUpdated implements ServerSectionUpdated {
 
   /// .
   @JsonKey(name: 'params')
-  ServerSectionUpdatedParams get params;
+  ServerSectionUpdatedParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerSectionUpdatedCopyWith<_ServerSectionUpdated> get copyWith;
+  _$ServerSectionUpdatedCopyWith<_ServerSectionUpdated> get copyWith => throw _privateConstructorUsedError;
 }

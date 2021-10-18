@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'message_link_preview.dart';
 
@@ -8,6 +9,10 @@ part of 'message_link_preview.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 MessageLinkPreview _$MessageLinkPreviewFromJson(Map<String, dynamic> json) {
   return _MessageLinkPreview.fromJson(json);
 }
@@ -16,45 +21,42 @@ MessageLinkPreview _$MessageLinkPreviewFromJson(Map<String, dynamic> json) {
 class _$MessageLinkPreviewTearOff {
   const _$MessageLinkPreviewTearOff();
 
-// ignore: unused_element
   _MessageLinkPreview call(
-      {@required @JsonKey(name: 'title') String title, @JsonKey(name: 'description') String description}) {
+      {@JsonKey(name: 'title') required String title, @JsonKey(name: 'description') String? description}) {
     return _MessageLinkPreview(
       title: title,
       description: description,
     );
   }
 
-// ignore: unused_element
   MessageLinkPreview fromJson(Map<String, Object> json) {
     return MessageLinkPreview.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $MessageLinkPreview = _$MessageLinkPreviewTearOff();
 
 /// @nodoc
 mixin _$MessageLinkPreview {
   /// Website title or og:title content.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
 
   /// Website description.
   @JsonKey(name: 'description')
-  String get description;
+  String? get description => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $MessageLinkPreviewCopyWith<MessageLinkPreview> get copyWith;
+  $MessageLinkPreviewCopyWith<MessageLinkPreview> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $MessageLinkPreviewCopyWith<$Res> {
   factory $MessageLinkPreviewCopyWith(MessageLinkPreview value, $Res Function(MessageLinkPreview) then) =
       _$MessageLinkPreviewCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'title') String title, @JsonKey(name: 'description') String description});
+  $Res call({@JsonKey(name: 'title') String title, @JsonKey(name: 'description') String? description});
 }
 
 /// @nodoc
@@ -67,12 +69,18 @@ class _$MessageLinkPreviewCopyWithImpl<$Res> implements $MessageLinkPreviewCopyW
 
   @override
   $Res call({
-    Object title = freezed,
-    Object description = freezed,
+    Object? title = freezed,
+    Object? description = freezed,
   }) {
     return _then(_value.copyWith(
-      title: title == freezed ? _value.title : title as String,
-      description: description == freezed ? _value.description : description as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -82,7 +90,7 @@ abstract class _$MessageLinkPreviewCopyWith<$Res> implements $MessageLinkPreview
   factory _$MessageLinkPreviewCopyWith(_MessageLinkPreview value, $Res Function(_MessageLinkPreview) then) =
       __$MessageLinkPreviewCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'title') String title, @JsonKey(name: 'description') String description});
+  $Res call({@JsonKey(name: 'title') String title, @JsonKey(name: 'description') String? description});
 }
 
 /// @nodoc
@@ -96,25 +104,29 @@ class __$MessageLinkPreviewCopyWithImpl<$Res> extends _$MessageLinkPreviewCopyWi
 
   @override
   $Res call({
-    Object title = freezed,
-    Object description = freezed,
+    Object? title = freezed,
+    Object? description = freezed,
   }) {
     return _then(_MessageLinkPreview(
-      title: title == freezed ? _value.title : title as String,
-      description: description == freezed ? _value.description : description as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_MessageLinkPreview implements _MessageLinkPreview {
   const _$_MessageLinkPreview(
-      {@required @JsonKey(name: 'title') this.title, @JsonKey(name: 'description') this.description})
-      : assert(title != null);
+      {@JsonKey(name: 'title') required this.title, @JsonKey(name: 'description') this.description});
 
-  factory _$_MessageLinkPreview.fromJson(Map<String, dynamic> json) => _$_$_MessageLinkPreviewFromJson(json);
+  factory _$_MessageLinkPreview.fromJson(Map<String, dynamic> json) => _$$_MessageLinkPreviewFromJson(json);
 
   @override
 
@@ -125,7 +137,7 @@ class _$_MessageLinkPreview implements _MessageLinkPreview {
 
   /// Website description.
   @JsonKey(name: 'description')
-  final String description;
+  final String? description;
 
   @override
   String toString() {
@@ -154,14 +166,14 @@ class _$_MessageLinkPreview implements _MessageLinkPreview {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_MessageLinkPreviewToJson(this);
+    return _$$_MessageLinkPreviewToJson(this);
   }
 }
 
 abstract class _MessageLinkPreview implements MessageLinkPreview {
   const factory _MessageLinkPreview(
-      {@required @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'description') String description}) = _$_MessageLinkPreview;
+      {@JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'description') String? description}) = _$_MessageLinkPreview;
 
   factory _MessageLinkPreview.fromJson(Map<String, dynamic> json) = _$_MessageLinkPreview.fromJson;
 
@@ -169,13 +181,13 @@ abstract class _MessageLinkPreview implements MessageLinkPreview {
 
   /// Website title or og:title content.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
 
   /// Website description.
   @JsonKey(name: 'description')
-  String get description;
+  String? get description => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$MessageLinkPreviewCopyWith<_MessageLinkPreview> get copyWith;
+  _$MessageLinkPreviewCopyWith<_MessageLinkPreview> get copyWith => throw _privateConstructorUsedError;
 }

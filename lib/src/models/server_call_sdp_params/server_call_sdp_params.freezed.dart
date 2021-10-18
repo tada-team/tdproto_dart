@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_call_sdp_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_call_sdp_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerCallSdpParams _$ServerCallSdpParamsFromJson(Map<String, dynamic> json) {
   return _ServerCallSdpParams.fromJson(json);
 }
@@ -16,11 +21,10 @@ ServerCallSdpParams _$ServerCallSdpParamsFromJson(Map<String, dynamic> json) {
 class _$ServerCallSdpParamsTearOff {
   const _$ServerCallSdpParamsTearOff();
 
-// ignore: unused_element
   _ServerCallSdpParams call(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'jsep') JSEP jsep}) {
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'jsep') required JSEP jsep}) {
     return _ServerCallSdpParams(
       jid: jid,
       uid: uid,
@@ -28,33 +32,31 @@ class _$ServerCallSdpParamsTearOff {
     );
   }
 
-// ignore: unused_element
   ServerCallSdpParams fromJson(Map<String, Object> json) {
     return ServerCallSdpParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerCallSdpParams = _$ServerCallSdpParamsTearOff();
 
 /// @nodoc
 mixin _$ServerCallSdpParams {
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
   /// Call id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// SDP data.
   @JsonKey(name: 'jsep')
-  JSEP get jsep;
+  JSEP get jsep => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerCallSdpParamsCopyWith<ServerCallSdpParams> get copyWith;
+  $ServerCallSdpParamsCopyWith<ServerCallSdpParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -76,22 +78,28 @@ class _$ServerCallSdpParamsCopyWithImpl<$Res> implements $ServerCallSdpParamsCop
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object uid = freezed,
-    Object jsep = freezed,
+    Object? jid = freezed,
+    Object? uid = freezed,
+    Object? jsep = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
-      uid: uid == freezed ? _value.uid : uid as String,
-      jsep: jsep == freezed ? _value.jsep : jsep as JSEP,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      jsep: jsep == freezed
+          ? _value.jsep
+          : jsep // ignore: cast_nullable_to_non_nullable
+              as JSEP,
     ));
   }
 
   @override
   $JSEPCopyWith<$Res> get jsep {
-    if (_value.jsep == null) {
-      return null;
-    }
     return $JSEPCopyWith<$Res>(_value.jsep, (value) {
       return _then(_value.copyWith(jsep: value));
     });
@@ -120,31 +128,36 @@ class __$ServerCallSdpParamsCopyWithImpl<$Res> extends _$ServerCallSdpParamsCopy
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object uid = freezed,
-    Object jsep = freezed,
+    Object? jid = freezed,
+    Object? uid = freezed,
+    Object? jsep = freezed,
   }) {
     return _then(_ServerCallSdpParams(
-      jid: jid == freezed ? _value.jid : jid as String,
-      uid: uid == freezed ? _value.uid : uid as String,
-      jsep: jsep == freezed ? _value.jsep : jsep as JSEP,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      jsep: jsep == freezed
+          ? _value.jsep
+          : jsep // ignore: cast_nullable_to_non_nullable
+              as JSEP,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerCallSdpParams implements _ServerCallSdpParams {
   const _$_ServerCallSdpParams(
-      {@required @JsonKey(name: 'jid') this.jid,
-      @required @JsonKey(name: 'uid') this.uid,
-      @required @JsonKey(name: 'jsep') this.jsep})
-      : assert(jid != null),
-        assert(uid != null),
-        assert(jsep != null);
+      {@JsonKey(name: 'jid') required this.jid,
+      @JsonKey(name: 'uid') required this.uid,
+      @JsonKey(name: 'jsep') required this.jsep});
 
-  factory _$_ServerCallSdpParams.fromJson(Map<String, dynamic> json) => _$_$_ServerCallSdpParamsFromJson(json);
+  factory _$_ServerCallSdpParams.fromJson(Map<String, dynamic> json) => _$$_ServerCallSdpParamsFromJson(json);
 
   @override
 
@@ -190,15 +203,15 @@ class _$_ServerCallSdpParams implements _ServerCallSdpParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerCallSdpParamsToJson(this);
+    return _$$_ServerCallSdpParamsToJson(this);
   }
 }
 
 abstract class _ServerCallSdpParams implements ServerCallSdpParams {
   const factory _ServerCallSdpParams(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'jsep') JSEP jsep}) = _$_ServerCallSdpParams;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'jsep') required JSEP jsep}) = _$_ServerCallSdpParams;
 
   factory _ServerCallSdpParams.fromJson(Map<String, dynamic> json) = _$_ServerCallSdpParams.fromJson;
 
@@ -206,18 +219,18 @@ abstract class _ServerCallSdpParams implements ServerCallSdpParams {
 
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Call id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// SDP data.
   @JsonKey(name: 'jsep')
-  JSEP get jsep;
+  JSEP get jsep => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerCallSdpParamsCopyWith<_ServerCallSdpParams> get copyWith;
+  _$ServerCallSdpParamsCopyWith<_ServerCallSdpParams> get copyWith => throw _privateConstructorUsedError;
 }

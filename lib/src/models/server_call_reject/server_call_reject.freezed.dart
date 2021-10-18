@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_call_reject.dart';
 
@@ -8,6 +9,10 @@ part of 'server_call_reject.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerCallReject _$ServerCallRejectFromJson(Map<String, dynamic> json) {
   return _ServerCallReject.fromJson(json);
 }
@@ -16,11 +21,10 @@ ServerCallReject _$ServerCallRejectFromJson(Map<String, dynamic> json) {
 class _$ServerCallRejectTearOff {
   const _$ServerCallRejectTearOff();
 
-// ignore: unused_element
   _ServerCallReject call(
-      {@required @JsonKey(name: 'params') ServerCallRejectParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) {
+      {@JsonKey(name: 'params') required ServerCallRejectParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ServerCallReject(
       params: params,
       name: name,
@@ -28,33 +32,31 @@ class _$ServerCallRejectTearOff {
     );
   }
 
-// ignore: unused_element
   ServerCallReject fromJson(Map<String, Object> json) {
     return ServerCallReject.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerCallReject = _$ServerCallRejectTearOff();
 
 /// @nodoc
 mixin _$ServerCallReject {
   /// .
   @JsonKey(name: 'params')
-  ServerCallRejectParams get params;
+  ServerCallRejectParams get params => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerCallRejectCopyWith<ServerCallReject> get copyWith;
+  $ServerCallRejectCopyWith<ServerCallReject> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -64,7 +66,7 @@ abstract class $ServerCallRejectCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'params') ServerCallRejectParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   $ServerCallRejectParamsCopyWith<$Res> get params;
 }
@@ -79,22 +81,28 @@ class _$ServerCallRejectCopyWithImpl<$Res> implements $ServerCallRejectCopyWith<
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as ServerCallRejectParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerCallRejectParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $ServerCallRejectParamsCopyWith<$Res> get params {
-    if (_value.params == null) {
-      return null;
-    }
     return $ServerCallRejectParamsCopyWith<$Res>(_value.params, (value) {
       return _then(_value.copyWith(params: value));
     });
@@ -109,7 +117,7 @@ abstract class _$ServerCallRejectCopyWith<$Res> implements $ServerCallRejectCopy
   $Res call(
       {@JsonKey(name: 'params') ServerCallRejectParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   @override
   $ServerCallRejectParamsCopyWith<$Res> get params;
@@ -126,30 +134,36 @@ class __$ServerCallRejectCopyWithImpl<$Res> extends _$ServerCallRejectCopyWithIm
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ServerCallReject(
-      params: params == freezed ? _value.params : params as ServerCallRejectParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerCallRejectParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerCallReject implements _ServerCallReject {
   const _$_ServerCallReject(
-      {@required @JsonKey(name: 'params') this.params,
-      @required @JsonKey(name: 'event') this.name,
-      @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(params != null),
-        assert(name != null);
+      {@JsonKey(name: 'params') required this.params,
+      @JsonKey(name: 'event') required this.name,
+      @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ServerCallReject.fromJson(Map<String, dynamic> json) => _$_$_ServerCallRejectFromJson(json);
+  factory _$_ServerCallReject.fromJson(Map<String, dynamic> json) => _$$_ServerCallRejectFromJson(json);
 
   @override
 
@@ -165,7 +179,7 @@ class _$_ServerCallReject implements _ServerCallReject {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -196,15 +210,15 @@ class _$_ServerCallReject implements _ServerCallReject {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerCallRejectToJson(this);
+    return _$$_ServerCallRejectToJson(this);
   }
 }
 
 abstract class _ServerCallReject implements ServerCallReject {
   const factory _ServerCallReject(
-      {@required @JsonKey(name: 'params') ServerCallRejectParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) = _$_ServerCallReject;
+      {@JsonKey(name: 'params') required ServerCallRejectParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerCallReject;
 
   factory _ServerCallReject.fromJson(Map<String, dynamic> json) = _$_ServerCallReject.fromJson;
 
@@ -212,18 +226,18 @@ abstract class _ServerCallReject implements ServerCallReject {
 
   /// .
   @JsonKey(name: 'params')
-  ServerCallRejectParams get params;
+  ServerCallRejectParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerCallRejectCopyWith<_ServerCallReject> get copyWith;
+  _$ServerCallRejectCopyWith<_ServerCallReject> get copyWith => throw _privateConstructorUsedError;
 }

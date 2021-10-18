@@ -6,31 +6,31 @@ part 'short_message.g.dart';
 
 /// Short message based on chat message.
 @freezed
-abstract class ShortMessage with _$ShortMessage {
+class ShortMessage with _$ShortMessage {
   const factory ShortMessage({
     /// Sender contact id.
-    @JsonKey(name: 'from') @required String from,
+    @JsonKey(name: 'from') required String from,
 
     /// Recipient id (group, task or contact).
-    @JsonKey(name: 'to') @required String to,
+    @JsonKey(name: 'to') required String to,
 
     /// Message uid.
-    @JsonKey(name: 'message_id') @required String messageId,
+    @JsonKey(name: 'message_id') required String messageId,
 
     /// Message creation datetime (set by server side) or sending datetime in future for draft messages.
-    @JsonKey(name: 'created') @DateTimeConverter() @required DateTime created,
+    @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
 
     /// Object version.
-    @JsonKey(name: 'gentime') @required int gentime,
+    @JsonKey(name: 'gentime') required int gentime,
 
     /// Chat type.
-    @JsonKey(name: 'chat_type') @required String chatType,
+    @JsonKey(name: 'chat_type') required String chatType,
 
     /// Chat id.
-    @JsonKey(name: 'chat') @required String chat,
+    @JsonKey(name: 'chat') required String chat,
 
     /// This message is archive. True or null.
-    @JsonKey(name: 'is_archive') bool isArchive,
+    @Default(false) @JsonKey(name: 'is_archive') bool? isArchive,
   }) = _ShortMessage;
 
   factory ShortMessage.fromJson(Map<String, dynamic> json) => _$ShortMessageFromJson(json);

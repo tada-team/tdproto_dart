@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'task_filter.dart';
 
@@ -8,6 +9,10 @@ part of 'task_filter.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 TaskFilter _$TaskFilterFromJson(Map<String, dynamic> json) {
   return _TaskFilter.fromJson(json);
 }
@@ -16,37 +21,34 @@ TaskFilter _$TaskFilterFromJson(Map<String, dynamic> json) {
 class _$TaskFilterTearOff {
   const _$TaskFilterTearOff();
 
-// ignore: unused_element
-  _TaskFilter call({@required @JsonKey(name: 'field') String field, @required @JsonKey(name: 'title') String title}) {
+  _TaskFilter call({@JsonKey(name: 'field') required String field, @JsonKey(name: 'title') required String title}) {
     return _TaskFilter(
       field: field,
       title: title,
     );
   }
 
-// ignore: unused_element
   TaskFilter fromJson(Map<String, Object> json) {
     return TaskFilter.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $TaskFilter = _$TaskFilterTearOff();
 
 /// @nodoc
 mixin _$TaskFilter {
   /// Task filter field.
   @JsonKey(name: 'field')
-  String get field;
+  String get field => throw _privateConstructorUsedError;
 
   /// Filter title.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $TaskFilterCopyWith<TaskFilter> get copyWith;
+  $TaskFilterCopyWith<TaskFilter> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -65,12 +67,18 @@ class _$TaskFilterCopyWithImpl<$Res> implements $TaskFilterCopyWith<$Res> {
 
   @override
   $Res call({
-    Object field = freezed,
-    Object title = freezed,
+    Object? field = freezed,
+    Object? title = freezed,
   }) {
     return _then(_value.copyWith(
-      field: field == freezed ? _value.field : field as String,
-      title: title == freezed ? _value.title : title as String,
+      field: field == freezed
+          ? _value.field
+          : field // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -92,25 +100,28 @@ class __$TaskFilterCopyWithImpl<$Res> extends _$TaskFilterCopyWithImpl<$Res> imp
 
   @override
   $Res call({
-    Object field = freezed,
-    Object title = freezed,
+    Object? field = freezed,
+    Object? title = freezed,
   }) {
     return _then(_TaskFilter(
-      field: field == freezed ? _value.field : field as String,
-      title: title == freezed ? _value.title : title as String,
+      field: field == freezed
+          ? _value.field
+          : field // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_TaskFilter implements _TaskFilter {
-  const _$_TaskFilter({@required @JsonKey(name: 'field') this.field, @required @JsonKey(name: 'title') this.title})
-      : assert(field != null),
-        assert(title != null);
+  const _$_TaskFilter({@JsonKey(name: 'field') required this.field, @JsonKey(name: 'title') required this.title});
 
-  factory _$_TaskFilter.fromJson(Map<String, dynamic> json) => _$_$_TaskFilterFromJson(json);
+  factory _$_TaskFilter.fromJson(Map<String, dynamic> json) => _$$_TaskFilterFromJson(json);
 
   @override
 
@@ -146,13 +157,13 @@ class _$_TaskFilter implements _TaskFilter {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_TaskFilterToJson(this);
+    return _$$_TaskFilterToJson(this);
   }
 }
 
 abstract class _TaskFilter implements TaskFilter {
   const factory _TaskFilter(
-      {@required @JsonKey(name: 'field') String field, @required @JsonKey(name: 'title') String title}) = _$_TaskFilter;
+      {@JsonKey(name: 'field') required String field, @JsonKey(name: 'title') required String title}) = _$_TaskFilter;
 
   factory _TaskFilter.fromJson(Map<String, dynamic> json) = _$_TaskFilter.fromJson;
 
@@ -160,13 +171,13 @@ abstract class _TaskFilter implements TaskFilter {
 
   /// Task filter field.
   @JsonKey(name: 'field')
-  String get field;
+  String get field => throw _privateConstructorUsedError;
   @override
 
   /// Filter title.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TaskFilterCopyWith<_TaskFilter> get copyWith;
+  _$TaskFilterCopyWith<_TaskFilter> get copyWith => throw _privateConstructorUsedError;
 }

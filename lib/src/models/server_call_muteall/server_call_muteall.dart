@@ -6,16 +6,16 @@ part 'server_call_muteall.g.dart';
 
 /// All participants in call muted.
 @freezed
-abstract class ServerCallMuteall with _$ServerCallMuteall {
+class ServerCallMuteall with _$ServerCallMuteall {
   const factory ServerCallMuteall({
     /// .
-    @JsonKey(name: 'params') @required ServerCallMuteallParams params,
+    @JsonKey(name: 'params') required ServerCallMuteallParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerCallMuteall;
 
   factory ServerCallMuteall.fromJson(Map<String, dynamic> json) => _$ServerCallMuteallFromJson(json);

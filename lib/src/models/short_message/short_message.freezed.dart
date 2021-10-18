@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'short_message.dart';
 
@@ -8,6 +9,10 @@ part of 'short_message.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ShortMessage _$ShortMessageFromJson(Map<String, dynamic> json) {
   return _ShortMessage.fromJson(json);
 }
@@ -16,16 +21,15 @@ ShortMessage _$ShortMessageFromJson(Map<String, dynamic> json) {
 class _$ShortMessageTearOff {
   const _$ShortMessageTearOff();
 
-// ignore: unused_element
   _ShortMessage call(
-      {@required @JsonKey(name: 'from') String from,
-      @required @JsonKey(name: 'to') String to,
-      @required @JsonKey(name: 'message_id') String messageId,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @required @JsonKey(name: 'gentime') int gentime,
-      @required @JsonKey(name: 'chat_type') String chatType,
-      @required @JsonKey(name: 'chat') String chat,
-      @JsonKey(name: 'is_archive') bool isArchive}) {
+      {@JsonKey(name: 'from') required String from,
+      @JsonKey(name: 'to') required String to,
+      @JsonKey(name: 'message_id') required String messageId,
+      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'gentime') required int gentime,
+      @JsonKey(name: 'chat_type') required String chatType,
+      @JsonKey(name: 'chat') required String chat,
+      @JsonKey(name: 'is_archive') bool? isArchive = false}) {
     return _ShortMessage(
       from: from,
       to: to,
@@ -38,54 +42,52 @@ class _$ShortMessageTearOff {
     );
   }
 
-// ignore: unused_element
   ShortMessage fromJson(Map<String, Object> json) {
     return ShortMessage.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ShortMessage = _$ShortMessageTearOff();
 
 /// @nodoc
 mixin _$ShortMessage {
   /// Sender contact id.
   @JsonKey(name: 'from')
-  String get from;
+  String get from => throw _privateConstructorUsedError;
 
   /// Recipient id (group, task or contact).
   @JsonKey(name: 'to')
-  String get to;
+  String get to => throw _privateConstructorUsedError;
 
   /// Message uid.
   @JsonKey(name: 'message_id')
-  String get messageId;
+  String get messageId => throw _privateConstructorUsedError;
 
   /// Message creation datetime (set by server side) or sending datetime in future for draft messages.
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created;
+  DateTime get created => throw _privateConstructorUsedError;
 
   /// Object version.
   @JsonKey(name: 'gentime')
-  int get gentime;
+  int get gentime => throw _privateConstructorUsedError;
 
   /// Chat type.
   @JsonKey(name: 'chat_type')
-  String get chatType;
+  String get chatType => throw _privateConstructorUsedError;
 
   /// Chat id.
   @JsonKey(name: 'chat')
-  String get chat;
+  String get chat => throw _privateConstructorUsedError;
 
   /// This message is archive. True or null.
   @JsonKey(name: 'is_archive')
-  bool get isArchive;
+  bool? get isArchive => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ShortMessageCopyWith<ShortMessage> get copyWith;
+  $ShortMessageCopyWith<ShortMessage> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -100,7 +102,7 @@ abstract class $ShortMessageCopyWith<$Res> {
       @JsonKey(name: 'gentime') int gentime,
       @JsonKey(name: 'chat_type') String chatType,
       @JsonKey(name: 'chat') String chat,
-      @JsonKey(name: 'is_archive') bool isArchive});
+      @JsonKey(name: 'is_archive') bool? isArchive});
 }
 
 /// @nodoc
@@ -113,24 +115,48 @@ class _$ShortMessageCopyWithImpl<$Res> implements $ShortMessageCopyWith<$Res> {
 
   @override
   $Res call({
-    Object from = freezed,
-    Object to = freezed,
-    Object messageId = freezed,
-    Object created = freezed,
-    Object gentime = freezed,
-    Object chatType = freezed,
-    Object chat = freezed,
-    Object isArchive = freezed,
+    Object? from = freezed,
+    Object? to = freezed,
+    Object? messageId = freezed,
+    Object? created = freezed,
+    Object? gentime = freezed,
+    Object? chatType = freezed,
+    Object? chat = freezed,
+    Object? isArchive = freezed,
   }) {
     return _then(_value.copyWith(
-      from: from == freezed ? _value.from : from as String,
-      to: to == freezed ? _value.to : to as String,
-      messageId: messageId == freezed ? _value.messageId : messageId as String,
-      created: created == freezed ? _value.created : created as DateTime,
-      gentime: gentime == freezed ? _value.gentime : gentime as int,
-      chatType: chatType == freezed ? _value.chatType : chatType as String,
-      chat: chat == freezed ? _value.chat : chat as String,
-      isArchive: isArchive == freezed ? _value.isArchive : isArchive as bool,
+      from: from == freezed
+          ? _value.from
+          : from // ignore: cast_nullable_to_non_nullable
+              as String,
+      to: to == freezed
+          ? _value.to
+          : to // ignore: cast_nullable_to_non_nullable
+              as String,
+      messageId: messageId == freezed
+          ? _value.messageId
+          : messageId // ignore: cast_nullable_to_non_nullable
+              as String,
+      created: created == freezed
+          ? _value.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      gentime: gentime == freezed
+          ? _value.gentime
+          : gentime // ignore: cast_nullable_to_non_nullable
+              as int,
+      chatType: chatType == freezed
+          ? _value.chatType
+          : chatType // ignore: cast_nullable_to_non_nullable
+              as String,
+      chat: chat == freezed
+          ? _value.chat
+          : chat // ignore: cast_nullable_to_non_nullable
+              as String,
+      isArchive: isArchive == freezed
+          ? _value.isArchive
+          : isArchive // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -148,7 +174,7 @@ abstract class _$ShortMessageCopyWith<$Res> implements $ShortMessageCopyWith<$Re
       @JsonKey(name: 'gentime') int gentime,
       @JsonKey(name: 'chat_type') String chatType,
       @JsonKey(name: 'chat') String chat,
-      @JsonKey(name: 'is_archive') bool isArchive});
+      @JsonKey(name: 'is_archive') bool? isArchive});
 }
 
 /// @nodoc
@@ -162,50 +188,66 @@ class __$ShortMessageCopyWithImpl<$Res> extends _$ShortMessageCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object from = freezed,
-    Object to = freezed,
-    Object messageId = freezed,
-    Object created = freezed,
-    Object gentime = freezed,
-    Object chatType = freezed,
-    Object chat = freezed,
-    Object isArchive = freezed,
+    Object? from = freezed,
+    Object? to = freezed,
+    Object? messageId = freezed,
+    Object? created = freezed,
+    Object? gentime = freezed,
+    Object? chatType = freezed,
+    Object? chat = freezed,
+    Object? isArchive = freezed,
   }) {
     return _then(_ShortMessage(
-      from: from == freezed ? _value.from : from as String,
-      to: to == freezed ? _value.to : to as String,
-      messageId: messageId == freezed ? _value.messageId : messageId as String,
-      created: created == freezed ? _value.created : created as DateTime,
-      gentime: gentime == freezed ? _value.gentime : gentime as int,
-      chatType: chatType == freezed ? _value.chatType : chatType as String,
-      chat: chat == freezed ? _value.chat : chat as String,
-      isArchive: isArchive == freezed ? _value.isArchive : isArchive as bool,
+      from: from == freezed
+          ? _value.from
+          : from // ignore: cast_nullable_to_non_nullable
+              as String,
+      to: to == freezed
+          ? _value.to
+          : to // ignore: cast_nullable_to_non_nullable
+              as String,
+      messageId: messageId == freezed
+          ? _value.messageId
+          : messageId // ignore: cast_nullable_to_non_nullable
+              as String,
+      created: created == freezed
+          ? _value.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      gentime: gentime == freezed
+          ? _value.gentime
+          : gentime // ignore: cast_nullable_to_non_nullable
+              as int,
+      chatType: chatType == freezed
+          ? _value.chatType
+          : chatType // ignore: cast_nullable_to_non_nullable
+              as String,
+      chat: chat == freezed
+          ? _value.chat
+          : chat // ignore: cast_nullable_to_non_nullable
+              as String,
+      isArchive: isArchive == freezed
+          ? _value.isArchive
+          : isArchive // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ShortMessage implements _ShortMessage {
   const _$_ShortMessage(
-      {@required @JsonKey(name: 'from') this.from,
-      @required @JsonKey(name: 'to') this.to,
-      @required @JsonKey(name: 'message_id') this.messageId,
-      @required @JsonKey(name: 'created') @DateTimeConverter() this.created,
-      @required @JsonKey(name: 'gentime') this.gentime,
-      @required @JsonKey(name: 'chat_type') this.chatType,
-      @required @JsonKey(name: 'chat') this.chat,
-      @JsonKey(name: 'is_archive') this.isArchive})
-      : assert(from != null),
-        assert(to != null),
-        assert(messageId != null),
-        assert(created != null),
-        assert(gentime != null),
-        assert(chatType != null),
-        assert(chat != null);
+      {@JsonKey(name: 'from') required this.from,
+      @JsonKey(name: 'to') required this.to,
+      @JsonKey(name: 'message_id') required this.messageId,
+      @JsonKey(name: 'created') @DateTimeConverter() required this.created,
+      @JsonKey(name: 'gentime') required this.gentime,
+      @JsonKey(name: 'chat_type') required this.chatType,
+      @JsonKey(name: 'chat') required this.chat,
+      @JsonKey(name: 'is_archive') this.isArchive = false});
 
-  factory _$_ShortMessage.fromJson(Map<String, dynamic> json) => _$_$_ShortMessageFromJson(json);
+  factory _$_ShortMessage.fromJson(Map<String, dynamic> json) => _$$_ShortMessageFromJson(json);
 
   @override
 
@@ -247,7 +289,7 @@ class _$_ShortMessage implements _ShortMessage {
 
   /// This message is archive. True or null.
   @JsonKey(name: 'is_archive')
-  final bool isArchive;
+  final bool? isArchive;
 
   @override
   String toString() {
@@ -288,20 +330,20 @@ class _$_ShortMessage implements _ShortMessage {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ShortMessageToJson(this);
+    return _$$_ShortMessageToJson(this);
   }
 }
 
 abstract class _ShortMessage implements ShortMessage {
   const factory _ShortMessage(
-      {@required @JsonKey(name: 'from') String from,
-      @required @JsonKey(name: 'to') String to,
-      @required @JsonKey(name: 'message_id') String messageId,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @required @JsonKey(name: 'gentime') int gentime,
-      @required @JsonKey(name: 'chat_type') String chatType,
-      @required @JsonKey(name: 'chat') String chat,
-      @JsonKey(name: 'is_archive') bool isArchive}) = _$_ShortMessage;
+      {@JsonKey(name: 'from') required String from,
+      @JsonKey(name: 'to') required String to,
+      @JsonKey(name: 'message_id') required String messageId,
+      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'gentime') required int gentime,
+      @JsonKey(name: 'chat_type') required String chatType,
+      @JsonKey(name: 'chat') required String chat,
+      @JsonKey(name: 'is_archive') bool? isArchive}) = _$_ShortMessage;
 
   factory _ShortMessage.fromJson(Map<String, dynamic> json) = _$_ShortMessage.fromJson;
 
@@ -309,44 +351,44 @@ abstract class _ShortMessage implements ShortMessage {
 
   /// Sender contact id.
   @JsonKey(name: 'from')
-  String get from;
+  String get from => throw _privateConstructorUsedError;
   @override
 
   /// Recipient id (group, task or contact).
   @JsonKey(name: 'to')
-  String get to;
+  String get to => throw _privateConstructorUsedError;
   @override
 
   /// Message uid.
   @JsonKey(name: 'message_id')
-  String get messageId;
+  String get messageId => throw _privateConstructorUsedError;
   @override
 
   /// Message creation datetime (set by server side) or sending datetime in future for draft messages.
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created;
+  DateTime get created => throw _privateConstructorUsedError;
   @override
 
   /// Object version.
   @JsonKey(name: 'gentime')
-  int get gentime;
+  int get gentime => throw _privateConstructorUsedError;
   @override
 
   /// Chat type.
   @JsonKey(name: 'chat_type')
-  String get chatType;
+  String get chatType => throw _privateConstructorUsedError;
   @override
 
   /// Chat id.
   @JsonKey(name: 'chat')
-  String get chat;
+  String get chat => throw _privateConstructorUsedError;
   @override
 
   /// This message is archive. True or null.
   @JsonKey(name: 'is_archive')
-  bool get isArchive;
+  bool? get isArchive => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ShortMessageCopyWith<_ShortMessage> get copyWith;
+  _$ShortMessageCopyWith<_ShortMessage> get copyWith => throw _privateConstructorUsedError;
 }

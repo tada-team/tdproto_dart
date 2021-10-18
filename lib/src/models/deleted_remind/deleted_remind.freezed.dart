@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'deleted_remind.dart';
 
@@ -8,6 +9,10 @@ part of 'deleted_remind.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 DeletedRemind _$DeletedRemindFromJson(Map<String, dynamic> json) {
   return _DeletedRemind.fromJson(json);
 }
@@ -16,32 +21,29 @@ DeletedRemind _$DeletedRemindFromJson(Map<String, dynamic> json) {
 class _$DeletedRemindTearOff {
   const _$DeletedRemindTearOff();
 
-// ignore: unused_element
-  _DeletedRemind call({@required @JsonKey(name: 'uid') String uid}) {
+  _DeletedRemind call({@JsonKey(name: 'uid') required String uid}) {
     return _DeletedRemind(
       uid: uid,
     );
   }
 
-// ignore: unused_element
   DeletedRemind fromJson(Map<String, Object> json) {
     return DeletedRemind.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $DeletedRemind = _$DeletedRemindTearOff();
 
 /// @nodoc
 mixin _$DeletedRemind {
   /// Remind id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $DeletedRemindCopyWith<DeletedRemind> get copyWith;
+  $DeletedRemindCopyWith<DeletedRemind> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -61,10 +63,13 @@ class _$DeletedRemindCopyWithImpl<$Res> implements $DeletedRemindCopyWith<$Res> 
 
   @override
   $Res call({
-    Object uid = freezed,
+    Object? uid = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -88,21 +93,23 @@ class __$DeletedRemindCopyWithImpl<$Res> extends _$DeletedRemindCopyWithImpl<$Re
 
   @override
   $Res call({
-    Object uid = freezed,
+    Object? uid = freezed,
   }) {
     return _then(_DeletedRemind(
-      uid: uid == freezed ? _value.uid : uid as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_DeletedRemind implements _DeletedRemind {
-  const _$_DeletedRemind({@required @JsonKey(name: 'uid') this.uid}) : assert(uid != null);
+  const _$_DeletedRemind({@JsonKey(name: 'uid') required this.uid});
 
-  factory _$_DeletedRemind.fromJson(Map<String, dynamic> json) => _$_$_DeletedRemindFromJson(json);
+  factory _$_DeletedRemind.fromJson(Map<String, dynamic> json) => _$$_DeletedRemindFromJson(json);
 
   @override
 
@@ -132,12 +139,12 @@ class _$_DeletedRemind implements _DeletedRemind {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_DeletedRemindToJson(this);
+    return _$$_DeletedRemindToJson(this);
   }
 }
 
 abstract class _DeletedRemind implements DeletedRemind {
-  const factory _DeletedRemind({@required @JsonKey(name: 'uid') String uid}) = _$_DeletedRemind;
+  const factory _DeletedRemind({@JsonKey(name: 'uid') required String uid}) = _$_DeletedRemind;
 
   factory _DeletedRemind.fromJson(Map<String, dynamic> json) = _$_DeletedRemind.fromJson;
 
@@ -145,8 +152,8 @@ abstract class _DeletedRemind implements DeletedRemind {
 
   /// Remind id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$DeletedRemindCopyWith<_DeletedRemind> get copyWith;
+  _$DeletedRemindCopyWith<_DeletedRemind> get copyWith => throw _privateConstructorUsedError;
 }

@@ -6,16 +6,14 @@ part of 'online_contact.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_OnlineContact _$_$_OnlineContactFromJson(Map<String, dynamic> json) {
-  return _$_OnlineContact(
-    jid: json['jid'] as String,
-    afk: json['afk'] as bool,
-    focused: json['focused'] as bool,
-    mobile: json['mobile'] as bool,
-  );
-}
+_$_OnlineContact _$$_OnlineContactFromJson(Map<String, dynamic> json) => _$_OnlineContact(
+      jid: json['jid'] as String,
+      afk: json['afk'] as bool? ?? false,
+      focused: json['focused'] as bool? ?? false,
+      mobile: json['mobile'] as bool? ?? false,
+    );
 
-Map<String, dynamic> _$_$_OnlineContactToJson(_$_OnlineContact instance) => <String, dynamic>{
+Map<String, dynamic> _$$_OnlineContactToJson(_$_OnlineContact instance) => <String, dynamic>{
       'jid': instance.jid,
       'afk': instance.afk,
       'focused': instance.focused,

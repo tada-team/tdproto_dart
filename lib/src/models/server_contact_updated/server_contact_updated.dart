@@ -6,16 +6,16 @@ part 'server_contact_updated.g.dart';
 
 /// Contact created or updated.
 @freezed
-abstract class ServerContactUpdated with _$ServerContactUpdated {
+class ServerContactUpdated with _$ServerContactUpdated {
   const factory ServerContactUpdated({
     /// .
-    @JsonKey(name: 'params') @required ServerContactUpdatedParams params,
+    @JsonKey(name: 'params') required ServerContactUpdatedParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerContactUpdated;
 
   factory ServerContactUpdated.fromJson(Map<String, dynamic> json) => _$ServerContactUpdatedFromJson(json);

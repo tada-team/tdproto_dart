@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_upload_updated_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_upload_updated_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerUploadUpdatedParams _$ServerUploadUpdatedParamsFromJson(Map<String, dynamic> json) {
   return _ServerUploadUpdatedParams.fromJson(json);
 }
@@ -16,32 +21,29 @@ ServerUploadUpdatedParams _$ServerUploadUpdatedParamsFromJson(Map<String, dynami
 class _$ServerUploadUpdatedParamsTearOff {
   const _$ServerUploadUpdatedParamsTearOff();
 
-// ignore: unused_element
-  _ServerUploadUpdatedParams call({@required @JsonKey(name: 'uploads') List<Upload> uploads}) {
+  _ServerUploadUpdatedParams call({@JsonKey(name: 'uploads') required List<Upload> uploads}) {
     return _ServerUploadUpdatedParams(
       uploads: uploads,
     );
   }
 
-// ignore: unused_element
   ServerUploadUpdatedParams fromJson(Map<String, Object> json) {
     return ServerUploadUpdatedParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerUploadUpdatedParams = _$ServerUploadUpdatedParamsTearOff();
 
 /// @nodoc
 mixin _$ServerUploadUpdatedParams {
   /// Uploads data.
   @JsonKey(name: 'uploads')
-  List<Upload> get uploads;
+  List<Upload> get uploads => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerUploadUpdatedParamsCopyWith<ServerUploadUpdatedParams> get copyWith;
+  $ServerUploadUpdatedParamsCopyWith<ServerUploadUpdatedParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -62,10 +64,13 @@ class _$ServerUploadUpdatedParamsCopyWithImpl<$Res> implements $ServerUploadUpda
 
   @override
   $Res call({
-    Object uploads = freezed,
+    Object? uploads = freezed,
   }) {
     return _then(_value.copyWith(
-      uploads: uploads == freezed ? _value.uploads : uploads as List<Upload>,
+      uploads: uploads == freezed
+          ? _value.uploads
+          : uploads // ignore: cast_nullable_to_non_nullable
+              as List<Upload>,
     ));
   }
 }
@@ -91,22 +96,24 @@ class __$ServerUploadUpdatedParamsCopyWithImpl<$Res> extends _$ServerUploadUpdat
 
   @override
   $Res call({
-    Object uploads = freezed,
+    Object? uploads = freezed,
   }) {
     return _then(_ServerUploadUpdatedParams(
-      uploads: uploads == freezed ? _value.uploads : uploads as List<Upload>,
+      uploads: uploads == freezed
+          ? _value.uploads
+          : uploads // ignore: cast_nullable_to_non_nullable
+              as List<Upload>,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerUploadUpdatedParams implements _ServerUploadUpdatedParams {
-  const _$_ServerUploadUpdatedParams({@required @JsonKey(name: 'uploads') this.uploads}) : assert(uploads != null);
+  const _$_ServerUploadUpdatedParams({@JsonKey(name: 'uploads') required this.uploads});
 
   factory _$_ServerUploadUpdatedParams.fromJson(Map<String, dynamic> json) =>
-      _$_$_ServerUploadUpdatedParamsFromJson(json);
+      _$$_ServerUploadUpdatedParamsFromJson(json);
 
   @override
 
@@ -136,12 +143,12 @@ class _$_ServerUploadUpdatedParams implements _ServerUploadUpdatedParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerUploadUpdatedParamsToJson(this);
+    return _$$_ServerUploadUpdatedParamsToJson(this);
   }
 }
 
 abstract class _ServerUploadUpdatedParams implements ServerUploadUpdatedParams {
-  const factory _ServerUploadUpdatedParams({@required @JsonKey(name: 'uploads') List<Upload> uploads}) =
+  const factory _ServerUploadUpdatedParams({@JsonKey(name: 'uploads') required List<Upload> uploads}) =
       _$_ServerUploadUpdatedParams;
 
   factory _ServerUploadUpdatedParams.fromJson(Map<String, dynamic> json) = _$_ServerUploadUpdatedParams.fromJson;
@@ -150,8 +157,8 @@ abstract class _ServerUploadUpdatedParams implements ServerUploadUpdatedParams {
 
   /// Uploads data.
   @JsonKey(name: 'uploads')
-  List<Upload> get uploads;
+  List<Upload> get uploads => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerUploadUpdatedParamsCopyWith<_ServerUploadUpdatedParams> get copyWith;
+  _$ServerUploadUpdatedParamsCopyWith<_ServerUploadUpdatedParams> get copyWith => throw _privateConstructorUsedError;
 }

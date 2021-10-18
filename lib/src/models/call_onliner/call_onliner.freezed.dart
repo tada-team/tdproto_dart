@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'call_onliner.dart';
 
@@ -8,6 +9,10 @@ part of 'call_onliner.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 CallOnliner _$CallOnlinerFromJson(Map<String, dynamic> json) {
   return _CallOnliner.fromJson(json);
 }
@@ -16,14 +21,13 @@ CallOnliner _$CallOnlinerFromJson(Map<String, dynamic> json) {
 class _$CallOnlinerTearOff {
   const _$CallOnlinerTearOff();
 
-// ignore: unused_element
   _CallOnliner call(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'display_name') String displayName,
-      @required @JsonKey(name: 'role') String role,
-      @required @JsonKey(name: 'icon') String icon,
-      @required @JsonKey(name: 'muted') bool muted,
-      @required @JsonKey(name: 'devices') List<CallDevice> devices}) {
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'display_name') required String displayName,
+      @JsonKey(name: 'role') required String role,
+      @JsonKey(name: 'icon') required String icon,
+      @JsonKey(name: 'muted') required bool muted = false,
+      @JsonKey(name: 'devices') required List<CallDevice> devices}) {
     return _CallOnliner(
       jid: jid,
       displayName: displayName,
@@ -34,45 +38,43 @@ class _$CallOnlinerTearOff {
     );
   }
 
-// ignore: unused_element
   CallOnliner fromJson(Map<String, Object> json) {
     return CallOnliner.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $CallOnliner = _$CallOnlinerTearOff();
 
 /// @nodoc
 mixin _$CallOnliner {
   /// Contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
   /// Contact name.
   @JsonKey(name: 'display_name')
-  String get displayName;
+  String get displayName => throw _privateConstructorUsedError;
 
   /// Contact role.
   @JsonKey(name: 'role')
-  String get role;
+  String get role => throw _privateConstructorUsedError;
 
   /// Contact icon.
   @JsonKey(name: 'icon')
-  String get icon;
+  String get icon => throw _privateConstructorUsedError;
 
   /// Microphone muted. Computed from devices muted states.
   @JsonKey(name: 'muted')
-  bool get muted;
+  bool get muted => throw _privateConstructorUsedError;
 
   /// Member devices, strictly one for now.
   @JsonKey(name: 'devices')
-  List<CallDevice> get devices;
+  List<CallDevice> get devices => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $CallOnlinerCopyWith<CallOnliner> get copyWith;
+  $CallOnlinerCopyWith<CallOnliner> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -97,20 +99,38 @@ class _$CallOnlinerCopyWithImpl<$Res> implements $CallOnlinerCopyWith<$Res> {
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object displayName = freezed,
-    Object role = freezed,
-    Object icon = freezed,
-    Object muted = freezed,
-    Object devices = freezed,
+    Object? jid = freezed,
+    Object? displayName = freezed,
+    Object? role = freezed,
+    Object? icon = freezed,
+    Object? muted = freezed,
+    Object? devices = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
-      role: role == freezed ? _value.role : role as String,
-      icon: icon == freezed ? _value.icon : icon as String,
-      muted: muted == freezed ? _value.muted : muted as bool,
-      devices: devices == freezed ? _value.devices : devices as List<CallDevice>,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      displayName: displayName == freezed
+          ? _value.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String,
+      role: role == freezed
+          ? _value.role
+          : role // ignore: cast_nullable_to_non_nullable
+              as String,
+      icon: icon == freezed
+          ? _value.icon
+          : icon // ignore: cast_nullable_to_non_nullable
+              as String,
+      muted: muted == freezed
+          ? _value.muted
+          : muted // ignore: cast_nullable_to_non_nullable
+              as bool,
+      devices: devices == freezed
+          ? _value.devices
+          : devices // ignore: cast_nullable_to_non_nullable
+              as List<CallDevice>,
     ));
   }
 }
@@ -139,43 +159,54 @@ class __$CallOnlinerCopyWithImpl<$Res> extends _$CallOnlinerCopyWithImpl<$Res> i
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object displayName = freezed,
-    Object role = freezed,
-    Object icon = freezed,
-    Object muted = freezed,
-    Object devices = freezed,
+    Object? jid = freezed,
+    Object? displayName = freezed,
+    Object? role = freezed,
+    Object? icon = freezed,
+    Object? muted = freezed,
+    Object? devices = freezed,
   }) {
     return _then(_CallOnliner(
-      jid: jid == freezed ? _value.jid : jid as String,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
-      role: role == freezed ? _value.role : role as String,
-      icon: icon == freezed ? _value.icon : icon as String,
-      muted: muted == freezed ? _value.muted : muted as bool,
-      devices: devices == freezed ? _value.devices : devices as List<CallDevice>,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      displayName: displayName == freezed
+          ? _value.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String,
+      role: role == freezed
+          ? _value.role
+          : role // ignore: cast_nullable_to_non_nullable
+              as String,
+      icon: icon == freezed
+          ? _value.icon
+          : icon // ignore: cast_nullable_to_non_nullable
+              as String,
+      muted: muted == freezed
+          ? _value.muted
+          : muted // ignore: cast_nullable_to_non_nullable
+              as bool,
+      devices: devices == freezed
+          ? _value.devices
+          : devices // ignore: cast_nullable_to_non_nullable
+              as List<CallDevice>,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_CallOnliner implements _CallOnliner {
   const _$_CallOnliner(
-      {@required @JsonKey(name: 'jid') this.jid,
-      @required @JsonKey(name: 'display_name') this.displayName,
-      @required @JsonKey(name: 'role') this.role,
-      @required @JsonKey(name: 'icon') this.icon,
-      @required @JsonKey(name: 'muted') this.muted,
-      @required @JsonKey(name: 'devices') this.devices})
-      : assert(jid != null),
-        assert(displayName != null),
-        assert(role != null),
-        assert(icon != null),
-        assert(muted != null),
-        assert(devices != null);
+      {@JsonKey(name: 'jid') required this.jid,
+      @JsonKey(name: 'display_name') required this.displayName,
+      @JsonKey(name: 'role') required this.role,
+      @JsonKey(name: 'icon') required this.icon,
+      @JsonKey(name: 'muted') required this.muted = false,
+      @JsonKey(name: 'devices') required this.devices});
 
-  factory _$_CallOnliner.fromJson(Map<String, dynamic> json) => _$_$_CallOnlinerFromJson(json);
+  factory _$_CallOnliner.fromJson(Map<String, dynamic> json) => _$$_CallOnlinerFromJson(json);
 
   @override
 
@@ -242,18 +273,18 @@ class _$_CallOnliner implements _CallOnliner {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_CallOnlinerToJson(this);
+    return _$$_CallOnlinerToJson(this);
   }
 }
 
 abstract class _CallOnliner implements CallOnliner {
   const factory _CallOnliner(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'display_name') String displayName,
-      @required @JsonKey(name: 'role') String role,
-      @required @JsonKey(name: 'icon') String icon,
-      @required @JsonKey(name: 'muted') bool muted,
-      @required @JsonKey(name: 'devices') List<CallDevice> devices}) = _$_CallOnliner;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'display_name') required String displayName,
+      @JsonKey(name: 'role') required String role,
+      @JsonKey(name: 'icon') required String icon,
+      @JsonKey(name: 'muted') required bool muted,
+      @JsonKey(name: 'devices') required List<CallDevice> devices}) = _$_CallOnliner;
 
   factory _CallOnliner.fromJson(Map<String, dynamic> json) = _$_CallOnliner.fromJson;
 
@@ -261,33 +292,33 @@ abstract class _CallOnliner implements CallOnliner {
 
   /// Contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Contact name.
   @JsonKey(name: 'display_name')
-  String get displayName;
+  String get displayName => throw _privateConstructorUsedError;
   @override
 
   /// Contact role.
   @JsonKey(name: 'role')
-  String get role;
+  String get role => throw _privateConstructorUsedError;
   @override
 
   /// Contact icon.
   @JsonKey(name: 'icon')
-  String get icon;
+  String get icon => throw _privateConstructorUsedError;
   @override
 
   /// Microphone muted. Computed from devices muted states.
   @JsonKey(name: 'muted')
-  bool get muted;
+  bool get muted => throw _privateConstructorUsedError;
   @override
 
   /// Member devices, strictly one for now.
   @JsonKey(name: 'devices')
-  List<CallDevice> get devices;
+  List<CallDevice> get devices => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$CallOnlinerCopyWith<_CallOnliner> get copyWith;
+  _$CallOnlinerCopyWith<_CallOnliner> get copyWith => throw _privateConstructorUsedError;
 }

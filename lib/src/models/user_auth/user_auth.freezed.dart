@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'user_auth.dart';
 
@@ -8,6 +9,10 @@ part of 'user_auth.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 UserAuth _$UserAuthFromJson(Map<String, dynamic> json) {
   return _UserAuth.fromJson(json);
 }
@@ -16,18 +21,17 @@ UserAuth _$UserAuthFromJson(Map<String, dynamic> json) {
 class _$UserAuthTearOff {
   const _$UserAuthTearOff();
 
-// ignore: unused_element
   _UserAuth call(
-      {@required @JsonKey(name: 'created') String created,
-      @JsonKey(name: 'last_access') String lastAccess,
-      @JsonKey(name: '_age') int debugAge,
-      @required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'kind') String kind,
-      @JsonKey(name: 'addr') String addr,
-      @JsonKey(name: 'user_agent') String useragent,
-      @JsonKey(name: 'country') String country,
-      @JsonKey(name: 'region') String region,
-      @JsonKey(name: 'device') PushDevice device}) {
+      {@JsonKey(name: 'created') required String created,
+      @JsonKey(name: 'last_access') String? lastAccess,
+      @JsonKey(name: '_age') int? debugAge,
+      @JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'kind') required String kind,
+      @JsonKey(name: 'addr') String? addr,
+      @JsonKey(name: 'user_agent') String? useragent,
+      @JsonKey(name: 'country') String? country,
+      @JsonKey(name: 'region') String? region,
+      @JsonKey(name: 'device') PushDevice? device}) {
     return _UserAuth(
       created: created,
       lastAccess: lastAccess,
@@ -42,61 +46,59 @@ class _$UserAuthTearOff {
     );
   }
 
-// ignore: unused_element
   UserAuth fromJson(Map<String, Object> json) {
     return UserAuth.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $UserAuth = _$UserAuthTearOff();
 
 /// @nodoc
 mixin _$UserAuth {
   /// .
   @JsonKey(name: 'created')
-  String get created;
+  String get created => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'last_access')
-  String get lastAccess;
+  String? get lastAccess => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: '_age')
-  int get debugAge;
+  int? get debugAge => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// type of auth.
   @JsonKey(name: 'kind')
-  String get kind;
+  String get kind => throw _privateConstructorUsedError;
 
   /// ip address.
   @JsonKey(name: 'addr')
-  String get addr;
+  String? get addr => throw _privateConstructorUsedError;
 
   /// info about useragent.
   @JsonKey(name: 'user_agent')
-  String get useragent;
+  String? get useragent => throw _privateConstructorUsedError;
 
   /// name of country.
   @JsonKey(name: 'country')
-  String get country;
+  String? get country => throw _privateConstructorUsedError;
 
   /// name of region.
   @JsonKey(name: 'region')
-  String get region;
+  String? get region => throw _privateConstructorUsedError;
 
   /// info about device (struct).
   @JsonKey(name: 'device')
-  PushDevice get device;
+  PushDevice? get device => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $UserAuthCopyWith<UserAuth> get copyWith;
+  $UserAuthCopyWith<UserAuth> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -104,17 +106,17 @@ abstract class $UserAuthCopyWith<$Res> {
   factory $UserAuthCopyWith(UserAuth value, $Res Function(UserAuth) then) = _$UserAuthCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'created') String created,
-      @JsonKey(name: 'last_access') String lastAccess,
-      @JsonKey(name: '_age') int debugAge,
+      @JsonKey(name: 'last_access') String? lastAccess,
+      @JsonKey(name: '_age') int? debugAge,
       @JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'kind') String kind,
-      @JsonKey(name: 'addr') String addr,
-      @JsonKey(name: 'user_agent') String useragent,
-      @JsonKey(name: 'country') String country,
-      @JsonKey(name: 'region') String region,
-      @JsonKey(name: 'device') PushDevice device});
+      @JsonKey(name: 'addr') String? addr,
+      @JsonKey(name: 'user_agent') String? useragent,
+      @JsonKey(name: 'country') String? country,
+      @JsonKey(name: 'region') String? region,
+      @JsonKey(name: 'device') PushDevice? device});
 
-  $PushDeviceCopyWith<$Res> get device;
+  $PushDeviceCopyWith<$Res>? get device;
 }
 
 /// @nodoc
@@ -127,37 +129,68 @@ class _$UserAuthCopyWithImpl<$Res> implements $UserAuthCopyWith<$Res> {
 
   @override
   $Res call({
-    Object created = freezed,
-    Object lastAccess = freezed,
-    Object debugAge = freezed,
-    Object uid = freezed,
-    Object kind = freezed,
-    Object addr = freezed,
-    Object useragent = freezed,
-    Object country = freezed,
-    Object region = freezed,
-    Object device = freezed,
+    Object? created = freezed,
+    Object? lastAccess = freezed,
+    Object? debugAge = freezed,
+    Object? uid = freezed,
+    Object? kind = freezed,
+    Object? addr = freezed,
+    Object? useragent = freezed,
+    Object? country = freezed,
+    Object? region = freezed,
+    Object? device = freezed,
   }) {
     return _then(_value.copyWith(
-      created: created == freezed ? _value.created : created as String,
-      lastAccess: lastAccess == freezed ? _value.lastAccess : lastAccess as String,
-      debugAge: debugAge == freezed ? _value.debugAge : debugAge as int,
-      uid: uid == freezed ? _value.uid : uid as String,
-      kind: kind == freezed ? _value.kind : kind as String,
-      addr: addr == freezed ? _value.addr : addr as String,
-      useragent: useragent == freezed ? _value.useragent : useragent as String,
-      country: country == freezed ? _value.country : country as String,
-      region: region == freezed ? _value.region : region as String,
-      device: device == freezed ? _value.device : device as PushDevice,
+      created: created == freezed
+          ? _value.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as String,
+      lastAccess: lastAccess == freezed
+          ? _value.lastAccess
+          : lastAccess // ignore: cast_nullable_to_non_nullable
+              as String?,
+      debugAge: debugAge == freezed
+          ? _value.debugAge
+          : debugAge // ignore: cast_nullable_to_non_nullable
+              as int?,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      kind: kind == freezed
+          ? _value.kind
+          : kind // ignore: cast_nullable_to_non_nullable
+              as String,
+      addr: addr == freezed
+          ? _value.addr
+          : addr // ignore: cast_nullable_to_non_nullable
+              as String?,
+      useragent: useragent == freezed
+          ? _value.useragent
+          : useragent // ignore: cast_nullable_to_non_nullable
+              as String?,
+      country: country == freezed
+          ? _value.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as String?,
+      region: region == freezed
+          ? _value.region
+          : region // ignore: cast_nullable_to_non_nullable
+              as String?,
+      device: device == freezed
+          ? _value.device
+          : device // ignore: cast_nullable_to_non_nullable
+              as PushDevice?,
     ));
   }
 
   @override
-  $PushDeviceCopyWith<$Res> get device {
+  $PushDeviceCopyWith<$Res>? get device {
     if (_value.device == null) {
       return null;
     }
-    return $PushDeviceCopyWith<$Res>(_value.device, (value) {
+
+    return $PushDeviceCopyWith<$Res>(_value.device!, (value) {
       return _then(_value.copyWith(device: value));
     });
   }
@@ -169,18 +202,18 @@ abstract class _$UserAuthCopyWith<$Res> implements $UserAuthCopyWith<$Res> {
   @override
   $Res call(
       {@JsonKey(name: 'created') String created,
-      @JsonKey(name: 'last_access') String lastAccess,
-      @JsonKey(name: '_age') int debugAge,
+      @JsonKey(name: 'last_access') String? lastAccess,
+      @JsonKey(name: '_age') int? debugAge,
       @JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'kind') String kind,
-      @JsonKey(name: 'addr') String addr,
-      @JsonKey(name: 'user_agent') String useragent,
-      @JsonKey(name: 'country') String country,
-      @JsonKey(name: 'region') String region,
-      @JsonKey(name: 'device') PushDevice device});
+      @JsonKey(name: 'addr') String? addr,
+      @JsonKey(name: 'user_agent') String? useragent,
+      @JsonKey(name: 'country') String? country,
+      @JsonKey(name: 'region') String? region,
+      @JsonKey(name: 'device') PushDevice? device});
 
   @override
-  $PushDeviceCopyWith<$Res> get device;
+  $PushDeviceCopyWith<$Res>? get device;
 }
 
 /// @nodoc
@@ -193,52 +226,78 @@ class __$UserAuthCopyWithImpl<$Res> extends _$UserAuthCopyWithImpl<$Res> impleme
 
   @override
   $Res call({
-    Object created = freezed,
-    Object lastAccess = freezed,
-    Object debugAge = freezed,
-    Object uid = freezed,
-    Object kind = freezed,
-    Object addr = freezed,
-    Object useragent = freezed,
-    Object country = freezed,
-    Object region = freezed,
-    Object device = freezed,
+    Object? created = freezed,
+    Object? lastAccess = freezed,
+    Object? debugAge = freezed,
+    Object? uid = freezed,
+    Object? kind = freezed,
+    Object? addr = freezed,
+    Object? useragent = freezed,
+    Object? country = freezed,
+    Object? region = freezed,
+    Object? device = freezed,
   }) {
     return _then(_UserAuth(
-      created: created == freezed ? _value.created : created as String,
-      lastAccess: lastAccess == freezed ? _value.lastAccess : lastAccess as String,
-      debugAge: debugAge == freezed ? _value.debugAge : debugAge as int,
-      uid: uid == freezed ? _value.uid : uid as String,
-      kind: kind == freezed ? _value.kind : kind as String,
-      addr: addr == freezed ? _value.addr : addr as String,
-      useragent: useragent == freezed ? _value.useragent : useragent as String,
-      country: country == freezed ? _value.country : country as String,
-      region: region == freezed ? _value.region : region as String,
-      device: device == freezed ? _value.device : device as PushDevice,
+      created: created == freezed
+          ? _value.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as String,
+      lastAccess: lastAccess == freezed
+          ? _value.lastAccess
+          : lastAccess // ignore: cast_nullable_to_non_nullable
+              as String?,
+      debugAge: debugAge == freezed
+          ? _value.debugAge
+          : debugAge // ignore: cast_nullable_to_non_nullable
+              as int?,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      kind: kind == freezed
+          ? _value.kind
+          : kind // ignore: cast_nullable_to_non_nullable
+              as String,
+      addr: addr == freezed
+          ? _value.addr
+          : addr // ignore: cast_nullable_to_non_nullable
+              as String?,
+      useragent: useragent == freezed
+          ? _value.useragent
+          : useragent // ignore: cast_nullable_to_non_nullable
+              as String?,
+      country: country == freezed
+          ? _value.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as String?,
+      region: region == freezed
+          ? _value.region
+          : region // ignore: cast_nullable_to_non_nullable
+              as String?,
+      device: device == freezed
+          ? _value.device
+          : device // ignore: cast_nullable_to_non_nullable
+              as PushDevice?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_UserAuth implements _UserAuth {
   const _$_UserAuth(
-      {@required @JsonKey(name: 'created') this.created,
+      {@JsonKey(name: 'created') required this.created,
       @JsonKey(name: 'last_access') this.lastAccess,
       @JsonKey(name: '_age') this.debugAge,
-      @required @JsonKey(name: 'uid') this.uid,
-      @required @JsonKey(name: 'kind') this.kind,
+      @JsonKey(name: 'uid') required this.uid,
+      @JsonKey(name: 'kind') required this.kind,
       @JsonKey(name: 'addr') this.addr,
       @JsonKey(name: 'user_agent') this.useragent,
       @JsonKey(name: 'country') this.country,
       @JsonKey(name: 'region') this.region,
-      @JsonKey(name: 'device') this.device})
-      : assert(created != null),
-        assert(uid != null),
-        assert(kind != null);
+      @JsonKey(name: 'device') this.device});
 
-  factory _$_UserAuth.fromJson(Map<String, dynamic> json) => _$_$_UserAuthFromJson(json);
+  factory _$_UserAuth.fromJson(Map<String, dynamic> json) => _$$_UserAuthFromJson(json);
 
   @override
 
@@ -249,12 +308,12 @@ class _$_UserAuth implements _UserAuth {
 
   /// .
   @JsonKey(name: 'last_access')
-  final String lastAccess;
+  final String? lastAccess;
   @override
 
   /// .
   @JsonKey(name: '_age')
-  final int debugAge;
+  final int? debugAge;
   @override
 
   /// .
@@ -269,27 +328,27 @@ class _$_UserAuth implements _UserAuth {
 
   /// ip address.
   @JsonKey(name: 'addr')
-  final String addr;
+  final String? addr;
   @override
 
   /// info about useragent.
   @JsonKey(name: 'user_agent')
-  final String useragent;
+  final String? useragent;
   @override
 
   /// name of country.
   @JsonKey(name: 'country')
-  final String country;
+  final String? country;
   @override
 
   /// name of region.
   @JsonKey(name: 'region')
-  final String region;
+  final String? region;
   @override
 
   /// info about device (struct).
   @JsonKey(name: 'device')
-  final PushDevice device;
+  final PushDevice? device;
 
   @override
   String toString() {
@@ -334,22 +393,22 @@ class _$_UserAuth implements _UserAuth {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_UserAuthToJson(this);
+    return _$$_UserAuthToJson(this);
   }
 }
 
 abstract class _UserAuth implements UserAuth {
   const factory _UserAuth(
-      {@required @JsonKey(name: 'created') String created,
-      @JsonKey(name: 'last_access') String lastAccess,
-      @JsonKey(name: '_age') int debugAge,
-      @required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'kind') String kind,
-      @JsonKey(name: 'addr') String addr,
-      @JsonKey(name: 'user_agent') String useragent,
-      @JsonKey(name: 'country') String country,
-      @JsonKey(name: 'region') String region,
-      @JsonKey(name: 'device') PushDevice device}) = _$_UserAuth;
+      {@JsonKey(name: 'created') required String created,
+      @JsonKey(name: 'last_access') String? lastAccess,
+      @JsonKey(name: '_age') int? debugAge,
+      @JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'kind') required String kind,
+      @JsonKey(name: 'addr') String? addr,
+      @JsonKey(name: 'user_agent') String? useragent,
+      @JsonKey(name: 'country') String? country,
+      @JsonKey(name: 'region') String? region,
+      @JsonKey(name: 'device') PushDevice? device}) = _$_UserAuth;
 
   factory _UserAuth.fromJson(Map<String, dynamic> json) = _$_UserAuth.fromJson;
 
@@ -357,53 +416,53 @@ abstract class _UserAuth implements UserAuth {
 
   /// .
   @JsonKey(name: 'created')
-  String get created;
+  String get created => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'last_access')
-  String get lastAccess;
+  String? get lastAccess => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: '_age')
-  int get debugAge;
+  int? get debugAge => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// type of auth.
   @JsonKey(name: 'kind')
-  String get kind;
+  String get kind => throw _privateConstructorUsedError;
   @override
 
   /// ip address.
   @JsonKey(name: 'addr')
-  String get addr;
+  String? get addr => throw _privateConstructorUsedError;
   @override
 
   /// info about useragent.
   @JsonKey(name: 'user_agent')
-  String get useragent;
+  String? get useragent => throw _privateConstructorUsedError;
   @override
 
   /// name of country.
   @JsonKey(name: 'country')
-  String get country;
+  String? get country => throw _privateConstructorUsedError;
   @override
 
   /// name of region.
   @JsonKey(name: 'region')
-  String get region;
+  String? get region => throw _privateConstructorUsedError;
   @override
 
   /// info about device (struct).
   @JsonKey(name: 'device')
-  PushDevice get device;
+  PushDevice? get device => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$UserAuthCopyWith<_UserAuth> get copyWith;
+  _$UserAuthCopyWith<_UserAuth> get copyWith => throw _privateConstructorUsedError;
 }

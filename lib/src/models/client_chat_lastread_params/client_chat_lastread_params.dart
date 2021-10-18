@@ -6,13 +6,13 @@ part 'client_chat_lastread_params.g.dart';
 
 /// Params of the client.chat.lastread event.
 @freezed
-abstract class ClientChatLastreadParams with _$ClientChatLastreadParams {
+class ClientChatLastreadParams with _$ClientChatLastreadParams {
   const factory ClientChatLastreadParams({
     /// Chat or contact id.
-    @JsonKey(name: 'jid') @required String jid,
+    @JsonKey(name: 'jid') required String jid,
 
     /// Last read message id. Omitted = last message in chat.
-    @JsonKey(name: 'last_read_message_id') String lastReadMessageId,
+    @JsonKey(name: 'last_read_message_id') String? lastReadMessageId,
   }) = _ClientChatLastreadParams;
 
   factory ClientChatLastreadParams.fromJson(Map<String, dynamic> json) => _$ClientChatLastreadParamsFromJson(json);

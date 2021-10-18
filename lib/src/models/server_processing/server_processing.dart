@@ -6,16 +6,16 @@ part 'server_processing.g.dart';
 
 /// Status of background operation.
 @freezed
-abstract class ServerProcessing with _$ServerProcessing {
+class ServerProcessing with _$ServerProcessing {
   const factory ServerProcessing({
     /// .
-    @JsonKey(name: 'params') @required ServerProcessingParams params,
+    @JsonKey(name: 'params') required ServerProcessingParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerProcessing;
 
   factory ServerProcessing.fromJson(Map<String, dynamic> json) => _$ServerProcessingFromJson(json);

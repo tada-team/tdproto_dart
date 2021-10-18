@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_call_talking_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_call_talking_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerCallTalkingParams _$ServerCallTalkingParamsFromJson(Map<String, dynamic> json) {
   return _ServerCallTalkingParams.fromJson(json);
 }
@@ -16,11 +21,10 @@ ServerCallTalkingParams _$ServerCallTalkingParamsFromJson(Map<String, dynamic> j
 class _$ServerCallTalkingParamsTearOff {
   const _$ServerCallTalkingParamsTearOff();
 
-// ignore: unused_element
   _ServerCallTalkingParams call(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'actor') String actor,
-      @required @JsonKey(name: 'talking') bool talking}) {
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'actor') required String actor,
+      @JsonKey(name: 'talking') required bool talking = false}) {
     return _ServerCallTalkingParams(
       jid: jid,
       actor: actor,
@@ -28,33 +32,31 @@ class _$ServerCallTalkingParamsTearOff {
     );
   }
 
-// ignore: unused_element
   ServerCallTalkingParams fromJson(Map<String, Object> json) {
     return ServerCallTalkingParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerCallTalkingParams = _$ServerCallTalkingParamsTearOff();
 
 /// @nodoc
 mixin _$ServerCallTalkingParams {
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
   /// Actor id.
   @JsonKey(name: 'actor')
-  String get actor;
+  String get actor => throw _privateConstructorUsedError;
 
   /// Is talking.
   @JsonKey(name: 'talking')
-  bool get talking;
+  bool get talking => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerCallTalkingParamsCopyWith<ServerCallTalkingParams> get copyWith;
+  $ServerCallTalkingParamsCopyWith<ServerCallTalkingParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -75,14 +77,23 @@ class _$ServerCallTalkingParamsCopyWithImpl<$Res> implements $ServerCallTalkingP
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object actor = freezed,
-    Object talking = freezed,
+    Object? jid = freezed,
+    Object? actor = freezed,
+    Object? talking = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
-      actor: actor == freezed ? _value.actor : actor as String,
-      talking: talking == freezed ? _value.talking : talking as bool,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      actor: actor == freezed
+          ? _value.actor
+          : actor // ignore: cast_nullable_to_non_nullable
+              as String,
+      talking: talking == freezed
+          ? _value.talking
+          : talking // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -108,31 +119,36 @@ class __$ServerCallTalkingParamsCopyWithImpl<$Res> extends _$ServerCallTalkingPa
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object actor = freezed,
-    Object talking = freezed,
+    Object? jid = freezed,
+    Object? actor = freezed,
+    Object? talking = freezed,
   }) {
     return _then(_ServerCallTalkingParams(
-      jid: jid == freezed ? _value.jid : jid as String,
-      actor: actor == freezed ? _value.actor : actor as String,
-      talking: talking == freezed ? _value.talking : talking as bool,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      actor: actor == freezed
+          ? _value.actor
+          : actor // ignore: cast_nullable_to_non_nullable
+              as String,
+      talking: talking == freezed
+          ? _value.talking
+          : talking // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerCallTalkingParams implements _ServerCallTalkingParams {
   const _$_ServerCallTalkingParams(
-      {@required @JsonKey(name: 'jid') this.jid,
-      @required @JsonKey(name: 'actor') this.actor,
-      @required @JsonKey(name: 'talking') this.talking})
-      : assert(jid != null),
-        assert(actor != null),
-        assert(talking != null);
+      {@JsonKey(name: 'jid') required this.jid,
+      @JsonKey(name: 'actor') required this.actor,
+      @JsonKey(name: 'talking') required this.talking = false});
 
-  factory _$_ServerCallTalkingParams.fromJson(Map<String, dynamic> json) => _$_$_ServerCallTalkingParamsFromJson(json);
+  factory _$_ServerCallTalkingParams.fromJson(Map<String, dynamic> json) => _$$_ServerCallTalkingParamsFromJson(json);
 
   @override
 
@@ -178,15 +194,15 @@ class _$_ServerCallTalkingParams implements _ServerCallTalkingParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerCallTalkingParamsToJson(this);
+    return _$$_ServerCallTalkingParamsToJson(this);
   }
 }
 
 abstract class _ServerCallTalkingParams implements ServerCallTalkingParams {
   const factory _ServerCallTalkingParams(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'actor') String actor,
-      @required @JsonKey(name: 'talking') bool talking}) = _$_ServerCallTalkingParams;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'actor') required String actor,
+      @JsonKey(name: 'talking') required bool talking}) = _$_ServerCallTalkingParams;
 
   factory _ServerCallTalkingParams.fromJson(Map<String, dynamic> json) = _$_ServerCallTalkingParams.fromJson;
 
@@ -194,18 +210,18 @@ abstract class _ServerCallTalkingParams implements ServerCallTalkingParams {
 
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Actor id.
   @JsonKey(name: 'actor')
-  String get actor;
+  String get actor => throw _privateConstructorUsedError;
   @override
 
   /// Is talking.
   @JsonKey(name: 'talking')
-  bool get talking;
+  bool get talking => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerCallTalkingParamsCopyWith<_ServerCallTalkingParams> get copyWith;
+  _$ServerCallTalkingParamsCopyWith<_ServerCallTalkingParams> get copyWith => throw _privateConstructorUsedError;
 }

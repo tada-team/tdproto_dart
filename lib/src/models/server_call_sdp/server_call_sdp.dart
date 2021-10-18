@@ -6,16 +6,16 @@ part 'server_call_sdp.g.dart';
 
 /// For exchange Session Description with client when server's Local Session Description is changed.
 @freezed
-abstract class ServerCallSdp with _$ServerCallSdp {
+class ServerCallSdp with _$ServerCallSdp {
   const factory ServerCallSdp({
     /// .
-    @JsonKey(name: 'params') @required ServerCallSdpParams params,
+    @JsonKey(name: 'params') required ServerCallSdpParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerCallSdp;
 
   factory ServerCallSdp.fromJson(Map<String, dynamic> json) => _$ServerCallSdpFromJson(json);

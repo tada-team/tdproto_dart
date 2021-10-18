@@ -6,16 +6,16 @@ part 'unread.g.dart';
 
 /// Unread message counters.
 @freezed
-abstract class Unread with _$Unread {
+class Unread with _$Unread {
   const factory Unread({
     /// Total unread messages.
-    @JsonKey(name: 'messages') @required int numMessages,
+    @JsonKey(name: 'messages') required int numMessages,
 
     /// Total unread messages with mentions.
-    @JsonKey(name: 'notice_messages') @required int numNoticeMessages,
+    @JsonKey(name: 'notice_messages') required int numNoticeMessages,
 
     /// Total chats with unread messages.
-    @JsonKey(name: 'chats') @required int numChats,
+    @JsonKey(name: 'chats') required int numChats,
   }) = _Unread;
 
   factory Unread.fromJson(Map<String, dynamic> json) => _$UnreadFromJson(json);

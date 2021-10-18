@@ -6,13 +6,13 @@ part 'call_device.g.dart';
 
 /// Call participant device.
 @freezed
-abstract class CallDevice with _$CallDevice {
+class CallDevice with _$CallDevice {
   const factory CallDevice({
     /// Device muted.
-    @JsonKey(name: 'muted') @required bool muted,
+    @Default(false) @JsonKey(name: 'muted') required bool muted,
 
     /// Device description.
-    @JsonKey(name: 'useragent') @required String useragent,
+    @JsonKey(name: 'useragent') required String useragent,
   }) = _CallDevice;
 
   factory CallDevice.fromJson(Map<String, dynamic> json) => _$CallDeviceFromJson(json);

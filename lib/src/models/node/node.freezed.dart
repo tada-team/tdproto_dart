@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'node.dart';
 
@@ -8,6 +9,10 @@ part of 'node.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Node _$NodeFromJson(Map<String, dynamic> json) {
   return _Node.fromJson(json);
 }
@@ -16,11 +21,10 @@ Node _$NodeFromJson(Map<String, dynamic> json) {
 class _$NodeTearOff {
   const _$NodeTearOff();
 
-// ignore: unused_element
   _Node call(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'enabled') bool enabled}) {
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'enabled') required bool enabled = false}) {
     return _Node(
       uid: uid,
       title: title,
@@ -28,33 +32,31 @@ class _$NodeTearOff {
     );
   }
 
-// ignore: unused_element
   Node fromJson(Map<String, Object> json) {
     return Node.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Node = _$NodeTearOff();
 
 /// @nodoc
 mixin _$Node {
   /// Node uid.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// Node title.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
 
   /// Synchronization with node works.
   @JsonKey(name: 'enabled')
-  bool get enabled;
+  bool get enabled => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $NodeCopyWith<Node> get copyWith;
+  $NodeCopyWith<Node> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -74,14 +76,23 @@ class _$NodeCopyWithImpl<$Res> implements $NodeCopyWith<$Res> {
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object title = freezed,
-    Object enabled = freezed,
+    Object? uid = freezed,
+    Object? title = freezed,
+    Object? enabled = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
-      title: title == freezed ? _value.title : title as String,
-      enabled: enabled == freezed ? _value.enabled : enabled as bool,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      enabled: enabled == freezed
+          ? _value.enabled
+          : enabled // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -103,31 +114,36 @@ class __$NodeCopyWithImpl<$Res> extends _$NodeCopyWithImpl<$Res> implements _$No
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object title = freezed,
-    Object enabled = freezed,
+    Object? uid = freezed,
+    Object? title = freezed,
+    Object? enabled = freezed,
   }) {
     return _then(_Node(
-      uid: uid == freezed ? _value.uid : uid as String,
-      title: title == freezed ? _value.title : title as String,
-      enabled: enabled == freezed ? _value.enabled : enabled as bool,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      enabled: enabled == freezed
+          ? _value.enabled
+          : enabled // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Node implements _Node {
   const _$_Node(
-      {@required @JsonKey(name: 'uid') this.uid,
-      @required @JsonKey(name: 'title') this.title,
-      @required @JsonKey(name: 'enabled') this.enabled})
-      : assert(uid != null),
-        assert(title != null),
-        assert(enabled != null);
+      {@JsonKey(name: 'uid') required this.uid,
+      @JsonKey(name: 'title') required this.title,
+      @JsonKey(name: 'enabled') required this.enabled = false});
 
-  factory _$_Node.fromJson(Map<String, dynamic> json) => _$_$_NodeFromJson(json);
+  factory _$_Node.fromJson(Map<String, dynamic> json) => _$$_NodeFromJson(json);
 
   @override
 
@@ -172,15 +188,15 @@ class _$_Node implements _Node {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_NodeToJson(this);
+    return _$$_NodeToJson(this);
   }
 }
 
 abstract class _Node implements Node {
   const factory _Node(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'title') String title,
-      @required @JsonKey(name: 'enabled') bool enabled}) = _$_Node;
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'enabled') required bool enabled}) = _$_Node;
 
   factory _Node.fromJson(Map<String, dynamic> json) = _$_Node.fromJson;
 
@@ -188,18 +204,18 @@ abstract class _Node implements Node {
 
   /// Node uid.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// Node title.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
 
   /// Synchronization with node works.
   @JsonKey(name: 'enabled')
-  bool get enabled;
+  bool get enabled => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$NodeCopyWith<_Node> get copyWith;
+  _$NodeCopyWith<_Node> get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'invitable_user.dart';
 
@@ -8,6 +9,10 @@ part of 'invitable_user.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 InvitableUser _$InvitableUserFromJson(Map<String, dynamic> json) {
   return _InvitableUser.fromJson(json);
 }
@@ -16,13 +21,12 @@ InvitableUser _$InvitableUserFromJson(Map<String, dynamic> json) {
 class _$InvitableUserTearOff {
   const _$InvitableUserTearOff();
 
-// ignore: unused_element
   _InvitableUser call(
-      {@required @JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'node') String node,
-      @required @JsonKey(name: 'display_name') String displayName,
-      @required @JsonKey(name: 'icons') IconData icons,
-      @JsonKey(name: 'teams') List<String> teams}) {
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'node') String? node,
+      @JsonKey(name: 'display_name') required String displayName,
+      @JsonKey(name: 'icons') required IconData icons,
+      @JsonKey(name: 'teams') List<String>? teams}) {
     return _InvitableUser(
       uid: uid,
       node: node,
@@ -32,41 +36,39 @@ class _$InvitableUserTearOff {
     );
   }
 
-// ignore: unused_element
   InvitableUser fromJson(Map<String, Object> json) {
     return InvitableUser.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $InvitableUser = _$InvitableUserTearOff();
 
 /// @nodoc
 mixin _$InvitableUser {
   /// Account id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// Node uid for external users.
   @JsonKey(name: 'node')
-  String get node;
+  String? get node => throw _privateConstructorUsedError;
 
   /// Full name.
   @JsonKey(name: 'display_name')
-  String get displayName;
+  String get displayName => throw _privateConstructorUsedError;
 
   /// Icons.
   @JsonKey(name: 'icons')
-  IconData get icons;
+  IconData get icons => throw _privateConstructorUsedError;
 
   /// Common team uids, if any.
   @JsonKey(name: 'teams')
-  List<String> get teams;
+  List<String>? get teams => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $InvitableUserCopyWith<InvitableUser> get copyWith;
+  $InvitableUserCopyWith<InvitableUser> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -75,10 +77,10 @@ abstract class $InvitableUserCopyWith<$Res> {
       _$InvitableUserCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'node') String node,
+      @JsonKey(name: 'node') String? node,
       @JsonKey(name: 'display_name') String displayName,
       @JsonKey(name: 'icons') IconData icons,
-      @JsonKey(name: 'teams') List<String> teams});
+      @JsonKey(name: 'teams') List<String>? teams});
 
   $IconDataCopyWith<$Res> get icons;
 }
@@ -93,26 +95,38 @@ class _$InvitableUserCopyWithImpl<$Res> implements $InvitableUserCopyWith<$Res> 
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object node = freezed,
-    Object displayName = freezed,
-    Object icons = freezed,
-    Object teams = freezed,
+    Object? uid = freezed,
+    Object? node = freezed,
+    Object? displayName = freezed,
+    Object? icons = freezed,
+    Object? teams = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
-      node: node == freezed ? _value.node : node as String,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
-      icons: icons == freezed ? _value.icons : icons as IconData,
-      teams: teams == freezed ? _value.teams : teams as List<String>,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      node: node == freezed
+          ? _value.node
+          : node // ignore: cast_nullable_to_non_nullable
+              as String?,
+      displayName: displayName == freezed
+          ? _value.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String,
+      icons: icons == freezed
+          ? _value.icons
+          : icons // ignore: cast_nullable_to_non_nullable
+              as IconData,
+      teams: teams == freezed
+          ? _value.teams
+          : teams // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
     ));
   }
 
   @override
   $IconDataCopyWith<$Res> get icons {
-    if (_value.icons == null) {
-      return null;
-    }
     return $IconDataCopyWith<$Res>(_value.icons, (value) {
       return _then(_value.copyWith(icons: value));
     });
@@ -126,10 +140,10 @@ abstract class _$InvitableUserCopyWith<$Res> implements $InvitableUserCopyWith<$
   @override
   $Res call(
       {@JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'node') String node,
+      @JsonKey(name: 'node') String? node,
       @JsonKey(name: 'display_name') String displayName,
       @JsonKey(name: 'icons') IconData icons,
-      @JsonKey(name: 'teams') List<String> teams});
+      @JsonKey(name: 'teams') List<String>? teams});
 
   @override
   $IconDataCopyWith<$Res> get icons;
@@ -146,37 +160,48 @@ class __$InvitableUserCopyWithImpl<$Res> extends _$InvitableUserCopyWithImpl<$Re
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object node = freezed,
-    Object displayName = freezed,
-    Object icons = freezed,
-    Object teams = freezed,
+    Object? uid = freezed,
+    Object? node = freezed,
+    Object? displayName = freezed,
+    Object? icons = freezed,
+    Object? teams = freezed,
   }) {
     return _then(_InvitableUser(
-      uid: uid == freezed ? _value.uid : uid as String,
-      node: node == freezed ? _value.node : node as String,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
-      icons: icons == freezed ? _value.icons : icons as IconData,
-      teams: teams == freezed ? _value.teams : teams as List<String>,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      node: node == freezed
+          ? _value.node
+          : node // ignore: cast_nullable_to_non_nullable
+              as String?,
+      displayName: displayName == freezed
+          ? _value.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String,
+      icons: icons == freezed
+          ? _value.icons
+          : icons // ignore: cast_nullable_to_non_nullable
+              as IconData,
+      teams: teams == freezed
+          ? _value.teams
+          : teams // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_InvitableUser implements _InvitableUser {
   const _$_InvitableUser(
-      {@required @JsonKey(name: 'uid') this.uid,
+      {@JsonKey(name: 'uid') required this.uid,
       @JsonKey(name: 'node') this.node,
-      @required @JsonKey(name: 'display_name') this.displayName,
-      @required @JsonKey(name: 'icons') this.icons,
-      @JsonKey(name: 'teams') this.teams})
-      : assert(uid != null),
-        assert(displayName != null),
-        assert(icons != null);
+      @JsonKey(name: 'display_name') required this.displayName,
+      @JsonKey(name: 'icons') required this.icons,
+      @JsonKey(name: 'teams') this.teams});
 
-  factory _$_InvitableUser.fromJson(Map<String, dynamic> json) => _$_$_InvitableUserFromJson(json);
+  factory _$_InvitableUser.fromJson(Map<String, dynamic> json) => _$$_InvitableUserFromJson(json);
 
   @override
 
@@ -187,7 +212,7 @@ class _$_InvitableUser implements _InvitableUser {
 
   /// Node uid for external users.
   @JsonKey(name: 'node')
-  final String node;
+  final String? node;
   @override
 
   /// Full name.
@@ -202,7 +227,7 @@ class _$_InvitableUser implements _InvitableUser {
 
   /// Common team uids, if any.
   @JsonKey(name: 'teams')
-  final List<String> teams;
+  final List<String>? teams;
 
   @override
   String toString() {
@@ -237,17 +262,17 @@ class _$_InvitableUser implements _InvitableUser {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_InvitableUserToJson(this);
+    return _$$_InvitableUserToJson(this);
   }
 }
 
 abstract class _InvitableUser implements InvitableUser {
   const factory _InvitableUser(
-      {@required @JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'node') String node,
-      @required @JsonKey(name: 'display_name') String displayName,
-      @required @JsonKey(name: 'icons') IconData icons,
-      @JsonKey(name: 'teams') List<String> teams}) = _$_InvitableUser;
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'node') String? node,
+      @JsonKey(name: 'display_name') required String displayName,
+      @JsonKey(name: 'icons') required IconData icons,
+      @JsonKey(name: 'teams') List<String>? teams}) = _$_InvitableUser;
 
   factory _InvitableUser.fromJson(Map<String, dynamic> json) = _$_InvitableUser.fromJson;
 
@@ -255,28 +280,28 @@ abstract class _InvitableUser implements InvitableUser {
 
   /// Account id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// Node uid for external users.
   @JsonKey(name: 'node')
-  String get node;
+  String? get node => throw _privateConstructorUsedError;
   @override
 
   /// Full name.
   @JsonKey(name: 'display_name')
-  String get displayName;
+  String get displayName => throw _privateConstructorUsedError;
   @override
 
   /// Icons.
   @JsonKey(name: 'icons')
-  IconData get icons;
+  IconData get icons => throw _privateConstructorUsedError;
   @override
 
   /// Common team uids, if any.
   @JsonKey(name: 'teams')
-  List<String> get teams;
+  List<String>? get teams => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$InvitableUserCopyWith<_InvitableUser> get copyWith;
+  _$InvitableUserCopyWith<_InvitableUser> get copyWith => throw _privateConstructorUsedError;
 }

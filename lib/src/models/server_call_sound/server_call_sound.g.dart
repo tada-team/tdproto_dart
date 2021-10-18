@@ -6,16 +6,14 @@ part of 'server_call_sound.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ServerCallSound _$_$_ServerCallSoundFromJson(Map<String, dynamic> json) {
-  return _$_ServerCallSound(
-    params: json['params'] == null ? null : ServerCallSoundParams.fromJson(json['params'] as Map<String, dynamic>),
-    name: json['event'] as String,
-    confirmId: json['confirm_id'] as String,
-  );
-}
+_$_ServerCallSound _$$_ServerCallSoundFromJson(Map<String, dynamic> json) => _$_ServerCallSound(
+      params: ServerCallSoundParams.fromJson(json['params'] as Map<String, dynamic>),
+      name: json['event'] as String,
+      confirmId: json['confirm_id'] as String?,
+    );
 
-Map<String, dynamic> _$_$_ServerCallSoundToJson(_$_ServerCallSound instance) => <String, dynamic>{
-      'params': instance.params?.toJson(),
+Map<String, dynamic> _$$_ServerCallSoundToJson(_$_ServerCallSound instance) => <String, dynamic>{
+      'params': instance.params.toJson(),
       'event': instance.name,
       'confirm_id': instance.confirmId,
     };

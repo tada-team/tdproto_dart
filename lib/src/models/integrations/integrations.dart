@@ -6,13 +6,13 @@ part 'integrations.g.dart';
 
 /// Complete integrations data, as received from server.
 @freezed
-abstract class Integrations with _$Integrations {
+class Integrations with _$Integrations {
   const factory Integrations({
     /// Currently existing integrations.
-    @JsonKey(name: 'integrations') @required List<Integration> integrations,
+    @JsonKey(name: 'integrations') required List<Integration> integrations,
 
     /// Types of integrations available for setup.
-    @JsonKey(name: 'kinds') @required List<IntegrationKind> kinds,
+    @JsonKey(name: 'kinds') required List<IntegrationKind> kinds,
   }) = _Integrations;
 
   factory Integrations.fromJson(Map<String, dynamic> json) => _$IntegrationsFromJson(json);

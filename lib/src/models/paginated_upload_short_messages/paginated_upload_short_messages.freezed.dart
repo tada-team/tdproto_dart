@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'paginated_upload_short_messages.dart';
 
@@ -8,6 +9,10 @@ part of 'paginated_upload_short_messages.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 PaginatedUploadShortMessages _$PaginatedUploadShortMessagesFromJson(Map<String, dynamic> json) {
   return _PaginatedUploadShortMessages.fromJson(json);
 }
@@ -16,12 +21,11 @@ PaginatedUploadShortMessages _$PaginatedUploadShortMessagesFromJson(Map<String, 
 class _$PaginatedUploadShortMessagesTearOff {
   const _$PaginatedUploadShortMessagesTearOff();
 
-// ignore: unused_element
   _PaginatedUploadShortMessages call(
-      {@required @JsonKey(name: 'objects') List<UploadShortMessage> objects,
-      @required @JsonKey(name: 'count') int count,
-      @required @JsonKey(name: 'limit') int limit,
-      @required @JsonKey(name: 'offset') int offset}) {
+      {@JsonKey(name: 'objects') required List<UploadShortMessage> objects,
+      @JsonKey(name: 'count') required int count,
+      @JsonKey(name: 'limit') required int limit,
+      @JsonKey(name: 'offset') required int offset}) {
     return _PaginatedUploadShortMessages(
       objects: objects,
       count: count,
@@ -30,37 +34,36 @@ class _$PaginatedUploadShortMessagesTearOff {
     );
   }
 
-// ignore: unused_element
   PaginatedUploadShortMessages fromJson(Map<String, Object> json) {
     return PaginatedUploadShortMessages.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $PaginatedUploadShortMessages = _$PaginatedUploadShortMessagesTearOff();
 
 /// @nodoc
 mixin _$PaginatedUploadShortMessages {
   /// .
   @JsonKey(name: 'objects')
-  List<UploadShortMessage> get objects;
+  List<UploadShortMessage> get objects => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'count')
-  int get count;
+  int get count => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'limit')
-  int get limit;
+  int get limit => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'offset')
-  int get offset;
+  int get offset => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $PaginatedUploadShortMessagesCopyWith<PaginatedUploadShortMessages> get copyWith;
+  $PaginatedUploadShortMessagesCopyWith<PaginatedUploadShortMessages> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -85,16 +88,28 @@ class _$PaginatedUploadShortMessagesCopyWithImpl<$Res> implements $PaginatedUplo
 
   @override
   $Res call({
-    Object objects = freezed,
-    Object count = freezed,
-    Object limit = freezed,
-    Object offset = freezed,
+    Object? objects = freezed,
+    Object? count = freezed,
+    Object? limit = freezed,
+    Object? offset = freezed,
   }) {
     return _then(_value.copyWith(
-      objects: objects == freezed ? _value.objects : objects as List<UploadShortMessage>,
-      count: count == freezed ? _value.count : count as int,
-      limit: limit == freezed ? _value.limit : limit as int,
-      offset: offset == freezed ? _value.offset : offset as int,
+      objects: objects == freezed
+          ? _value.objects
+          : objects // ignore: cast_nullable_to_non_nullable
+              as List<UploadShortMessage>,
+      count: count == freezed
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as int,
+      limit: limit == freezed
+          ? _value.limit
+          : limit // ignore: cast_nullable_to_non_nullable
+              as int,
+      offset: offset == freezed
+          ? _value.offset
+          : offset // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -124,36 +139,43 @@ class __$PaginatedUploadShortMessagesCopyWithImpl<$Res> extends _$PaginatedUploa
 
   @override
   $Res call({
-    Object objects = freezed,
-    Object count = freezed,
-    Object limit = freezed,
-    Object offset = freezed,
+    Object? objects = freezed,
+    Object? count = freezed,
+    Object? limit = freezed,
+    Object? offset = freezed,
   }) {
     return _then(_PaginatedUploadShortMessages(
-      objects: objects == freezed ? _value.objects : objects as List<UploadShortMessage>,
-      count: count == freezed ? _value.count : count as int,
-      limit: limit == freezed ? _value.limit : limit as int,
-      offset: offset == freezed ? _value.offset : offset as int,
+      objects: objects == freezed
+          ? _value.objects
+          : objects // ignore: cast_nullable_to_non_nullable
+              as List<UploadShortMessage>,
+      count: count == freezed
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as int,
+      limit: limit == freezed
+          ? _value.limit
+          : limit // ignore: cast_nullable_to_non_nullable
+              as int,
+      offset: offset == freezed
+          ? _value.offset
+          : offset // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_PaginatedUploadShortMessages implements _PaginatedUploadShortMessages {
   const _$_PaginatedUploadShortMessages(
-      {@required @JsonKey(name: 'objects') this.objects,
-      @required @JsonKey(name: 'count') this.count,
-      @required @JsonKey(name: 'limit') this.limit,
-      @required @JsonKey(name: 'offset') this.offset})
-      : assert(objects != null),
-        assert(count != null),
-        assert(limit != null),
-        assert(offset != null);
+      {@JsonKey(name: 'objects') required this.objects,
+      @JsonKey(name: 'count') required this.count,
+      @JsonKey(name: 'limit') required this.limit,
+      @JsonKey(name: 'offset') required this.offset});
 
   factory _$_PaginatedUploadShortMessages.fromJson(Map<String, dynamic> json) =>
-      _$_$_PaginatedUploadShortMessagesFromJson(json);
+      _$$_PaginatedUploadShortMessagesFromJson(json);
 
   @override
 
@@ -206,16 +228,16 @@ class _$_PaginatedUploadShortMessages implements _PaginatedUploadShortMessages {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_PaginatedUploadShortMessagesToJson(this);
+    return _$$_PaginatedUploadShortMessagesToJson(this);
   }
 }
 
 abstract class _PaginatedUploadShortMessages implements PaginatedUploadShortMessages {
   const factory _PaginatedUploadShortMessages(
-      {@required @JsonKey(name: 'objects') List<UploadShortMessage> objects,
-      @required @JsonKey(name: 'count') int count,
-      @required @JsonKey(name: 'limit') int limit,
-      @required @JsonKey(name: 'offset') int offset}) = _$_PaginatedUploadShortMessages;
+      {@JsonKey(name: 'objects') required List<UploadShortMessage> objects,
+      @JsonKey(name: 'count') required int count,
+      @JsonKey(name: 'limit') required int limit,
+      @JsonKey(name: 'offset') required int offset}) = _$_PaginatedUploadShortMessages;
 
   factory _PaginatedUploadShortMessages.fromJson(Map<String, dynamic> json) = _$_PaginatedUploadShortMessages.fromJson;
 
@@ -223,23 +245,24 @@ abstract class _PaginatedUploadShortMessages implements PaginatedUploadShortMess
 
   /// .
   @JsonKey(name: 'objects')
-  List<UploadShortMessage> get objects;
+  List<UploadShortMessage> get objects => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'count')
-  int get count;
+  int get count => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'limit')
-  int get limit;
+  int get limit => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'offset')
-  int get offset;
+  int get offset => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$PaginatedUploadShortMessagesCopyWith<_PaginatedUploadShortMessages> get copyWith;
+  _$PaginatedUploadShortMessagesCopyWith<_PaginatedUploadShortMessages> get copyWith =>
+      throw _privateConstructorUsedError;
 }

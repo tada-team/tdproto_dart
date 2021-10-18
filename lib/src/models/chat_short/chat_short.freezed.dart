@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'chat_short.dart';
 
@@ -8,6 +9,10 @@ part of 'chat_short.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ChatShort _$ChatShortFromJson(Map<String, dynamic> json) {
   return _ChatShort.fromJson(json);
 }
@@ -16,12 +21,11 @@ ChatShort _$ChatShortFromJson(Map<String, dynamic> json) {
 class _$ChatShortTearOff {
   const _$ChatShortTearOff();
 
-// ignore: unused_element
   _ChatShort call(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'chat_type') String chatType,
-      @required @JsonKey(name: 'display_name') String displayName,
-      @required @JsonKey(name: 'icons') IconData icons}) {
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'chat_type') required String chatType,
+      @JsonKey(name: 'display_name') required String displayName,
+      @JsonKey(name: 'icons') required IconData icons}) {
     return _ChatShort(
       jid: jid,
       chatType: chatType,
@@ -30,37 +34,35 @@ class _$ChatShortTearOff {
     );
   }
 
-// ignore: unused_element
   ChatShort fromJson(Map<String, Object> json) {
     return ChatShort.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ChatShort = _$ChatShortTearOff();
 
 /// @nodoc
 mixin _$ChatShort {
   /// Group/Task/Contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
   /// Chat type.
   @JsonKey(name: 'chat_type')
-  String get chatType;
+  String get chatType => throw _privateConstructorUsedError;
 
   /// Title.
   @JsonKey(name: 'display_name')
-  String get displayName;
+  String get displayName => throw _privateConstructorUsedError;
 
   /// Icon data.
   @JsonKey(name: 'icons')
-  IconData get icons;
+  IconData get icons => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ChatShortCopyWith<ChatShort> get copyWith;
+  $ChatShortCopyWith<ChatShort> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -85,24 +87,33 @@ class _$ChatShortCopyWithImpl<$Res> implements $ChatShortCopyWith<$Res> {
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object chatType = freezed,
-    Object displayName = freezed,
-    Object icons = freezed,
+    Object? jid = freezed,
+    Object? chatType = freezed,
+    Object? displayName = freezed,
+    Object? icons = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
-      chatType: chatType == freezed ? _value.chatType : chatType as String,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
-      icons: icons == freezed ? _value.icons : icons as IconData,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      chatType: chatType == freezed
+          ? _value.chatType
+          : chatType // ignore: cast_nullable_to_non_nullable
+              as String,
+      displayName: displayName == freezed
+          ? _value.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String,
+      icons: icons == freezed
+          ? _value.icons
+          : icons // ignore: cast_nullable_to_non_nullable
+              as IconData,
     ));
   }
 
   @override
   $IconDataCopyWith<$Res> get icons {
-    if (_value.icons == null) {
-      return null;
-    }
     return $IconDataCopyWith<$Res>(_value.icons, (value) {
       return _then(_value.copyWith(icons: value));
     });
@@ -133,35 +144,42 @@ class __$ChatShortCopyWithImpl<$Res> extends _$ChatShortCopyWithImpl<$Res> imple
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object chatType = freezed,
-    Object displayName = freezed,
-    Object icons = freezed,
+    Object? jid = freezed,
+    Object? chatType = freezed,
+    Object? displayName = freezed,
+    Object? icons = freezed,
   }) {
     return _then(_ChatShort(
-      jid: jid == freezed ? _value.jid : jid as String,
-      chatType: chatType == freezed ? _value.chatType : chatType as String,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
-      icons: icons == freezed ? _value.icons : icons as IconData,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      chatType: chatType == freezed
+          ? _value.chatType
+          : chatType // ignore: cast_nullable_to_non_nullable
+              as String,
+      displayName: displayName == freezed
+          ? _value.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String,
+      icons: icons == freezed
+          ? _value.icons
+          : icons // ignore: cast_nullable_to_non_nullable
+              as IconData,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ChatShort implements _ChatShort {
   const _$_ChatShort(
-      {@required @JsonKey(name: 'jid') this.jid,
-      @required @JsonKey(name: 'chat_type') this.chatType,
-      @required @JsonKey(name: 'display_name') this.displayName,
-      @required @JsonKey(name: 'icons') this.icons})
-      : assert(jid != null),
-        assert(chatType != null),
-        assert(displayName != null),
-        assert(icons != null);
+      {@JsonKey(name: 'jid') required this.jid,
+      @JsonKey(name: 'chat_type') required this.chatType,
+      @JsonKey(name: 'display_name') required this.displayName,
+      @JsonKey(name: 'icons') required this.icons});
 
-  factory _$_ChatShort.fromJson(Map<String, dynamic> json) => _$_$_ChatShortFromJson(json);
+  factory _$_ChatShort.fromJson(Map<String, dynamic> json) => _$$_ChatShortFromJson(json);
 
   @override
 
@@ -214,16 +232,16 @@ class _$_ChatShort implements _ChatShort {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ChatShortToJson(this);
+    return _$$_ChatShortToJson(this);
   }
 }
 
 abstract class _ChatShort implements ChatShort {
   const factory _ChatShort(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'chat_type') String chatType,
-      @required @JsonKey(name: 'display_name') String displayName,
-      @required @JsonKey(name: 'icons') IconData icons}) = _$_ChatShort;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'chat_type') required String chatType,
+      @JsonKey(name: 'display_name') required String displayName,
+      @JsonKey(name: 'icons') required IconData icons}) = _$_ChatShort;
 
   factory _ChatShort.fromJson(Map<String, dynamic> json) = _$_ChatShort.fromJson;
 
@@ -231,23 +249,23 @@ abstract class _ChatShort implements ChatShort {
 
   /// Group/Task/Contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Chat type.
   @JsonKey(name: 'chat_type')
-  String get chatType;
+  String get chatType => throw _privateConstructorUsedError;
   @override
 
   /// Title.
   @JsonKey(name: 'display_name')
-  String get displayName;
+  String get displayName => throw _privateConstructorUsedError;
   @override
 
   /// Icon data.
   @JsonKey(name: 'icons')
-  IconData get icons;
+  IconData get icons => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ChatShortCopyWith<_ChatShort> get copyWith;
+  _$ChatShortCopyWith<_ChatShort> get copyWith => throw _privateConstructorUsedError;
 }

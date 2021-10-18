@@ -6,16 +6,16 @@ part 'server_call_buzzcancel_params.g.dart';
 
 /// Params of the server.call.buzzcancel event.
 @freezed
-abstract class ServerCallBuzzcancelParams with _$ServerCallBuzzcancelParams {
+class ServerCallBuzzcancelParams with _$ServerCallBuzzcancelParams {
   const factory ServerCallBuzzcancelParams({
     /// Chat or contact id.
-    @JsonKey(name: 'jid') @required String jid,
+    @JsonKey(name: 'jid') required String jid,
 
     /// Team id.
-    @JsonKey(name: 'team') @required String team,
+    @JsonKey(name: 'team') required String team,
 
     /// Call id.
-    @JsonKey(name: 'uid') @required String uid,
+    @JsonKey(name: 'uid') required String uid,
   }) = _ServerCallBuzzcancelParams;
 
   factory ServerCallBuzzcancelParams.fromJson(Map<String, dynamic> json) => _$ServerCallBuzzcancelParamsFromJson(json);

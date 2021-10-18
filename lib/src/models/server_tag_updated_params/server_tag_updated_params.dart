@@ -6,10 +6,10 @@ part 'server_tag_updated_params.g.dart';
 
 /// Params of the server.tag.updated event.
 @freezed
-abstract class ServerTagUpdatedParams with _$ServerTagUpdatedParams {
+class ServerTagUpdatedParams with _$ServerTagUpdatedParams {
   const factory ServerTagUpdatedParams({
     /// Tags info.
-    @JsonKey(name: 'tags') @required List<Tag> tags,
+    @JsonKey(name: 'tags') required List<Tag> tags,
   }) = _ServerTagUpdatedParams;
 
   factory ServerTagUpdatedParams.fromJson(Map<String, dynamic> json) => _$ServerTagUpdatedParamsFromJson(json);

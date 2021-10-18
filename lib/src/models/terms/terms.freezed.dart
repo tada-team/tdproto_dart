@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'terms.dart';
 
@@ -8,6 +9,10 @@ part of 'terms.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Terms _$TermsFromJson(Map<String, dynamic> json) {
   return _Terms.fromJson(json);
 }
@@ -16,42 +21,41 @@ Terms _$TermsFromJson(Map<String, dynamic> json) {
 class _$TermsTearOff {
   const _$TermsTearOff();
 
-// ignore: unused_element
   _Terms call(
-      {@required @JsonKey(name: 'EnInTeam') String enInTeam,
-      @required @JsonKey(name: 'EnTeam') String enTeam,
-      @required @JsonKey(name: 'EnTeamAccess') String enTeamAccess,
-      @required @JsonKey(name: 'EnTeamAdmin') String enTeamAdmin,
-      @required @JsonKey(name: 'EnTeamAdmins') String enTeamAdmins,
-      @required @JsonKey(name: 'EnTeamGuest') String enTeamGuest,
-      @required @JsonKey(name: 'EnTeamMember') String enTeamMember,
-      @required @JsonKey(name: 'EnTeamMembers') String enTeamMembers,
-      @required @JsonKey(name: 'EnTeamOwner') String enTeamOwner,
-      @required @JsonKey(name: 'EnTeamSettings') String enTeamSettings,
-      @required @JsonKey(name: 'RuTeamSettings') String ruTeamSettings,
-      @required @JsonKey(name: 'EnTeams') String enTeams,
-      @required @JsonKey(name: 'EnToTeam') String enToTeam,
-      @required @JsonKey(name: 'RuInTeam') String ruInTeam,
-      @required @JsonKey(name: 'RuTeam') String ruTeam,
-      @required @JsonKey(name: 'RuTeamAccess') String ruTeamAccess,
-      @required @JsonKey(name: 'RuTeamAdmin') String ruTeamAdmin,
-      @required @JsonKey(name: 'RuTeamAdmins') String ruTeamAdmins,
-      @required @JsonKey(name: 'RuTeamD') String ruTeamD,
-      @required @JsonKey(name: 'RuTeamGuest') String ruTeamGuest,
-      @required @JsonKey(name: 'RuTeamMember') String ruTeamMember,
-      @required @JsonKey(name: 'RuTeamMembers') String ruTeamMembers,
-      @required @JsonKey(name: 'RuTeamOwner') String ruTeamOwner,
-      @required @JsonKey(name: 'RuTeamP') String ruTeamP,
-      @required @JsonKey(name: 'RuTeamR') String ruTeamR,
-      @required @JsonKey(name: 'RuTeams') String ruTeams,
-      @required @JsonKey(name: 'RuTeamsD') String ruTeamsD,
-      @required @JsonKey(name: 'RuTeamsP') String ruTeamsP,
-      @required @JsonKey(name: 'RuTeamsR') String ruTeamsR,
-      @required @JsonKey(name: 'RuTeamsT') String ruTeamsT,
-      @required @JsonKey(name: 'RuTeamsV') String ruTeamsV,
-      @required @JsonKey(name: 'RuTeamT') String ruTeamT,
-      @required @JsonKey(name: 'RuTeamV') String ruTeamV,
-      @required @JsonKey(name: 'RuToTeam') String ruToTeam}) {
+      {@JsonKey(name: 'EnInTeam') required String enInTeam,
+      @JsonKey(name: 'EnTeam') required String enTeam,
+      @JsonKey(name: 'EnTeamAccess') required String enTeamAccess,
+      @JsonKey(name: 'EnTeamAdmin') required String enTeamAdmin,
+      @JsonKey(name: 'EnTeamAdmins') required String enTeamAdmins,
+      @JsonKey(name: 'EnTeamGuest') required String enTeamGuest,
+      @JsonKey(name: 'EnTeamMember') required String enTeamMember,
+      @JsonKey(name: 'EnTeamMembers') required String enTeamMembers,
+      @JsonKey(name: 'EnTeamOwner') required String enTeamOwner,
+      @JsonKey(name: 'EnTeamSettings') required String enTeamSettings,
+      @JsonKey(name: 'RuTeamSettings') required String ruTeamSettings,
+      @JsonKey(name: 'EnTeams') required String enTeams,
+      @JsonKey(name: 'EnToTeam') required String enToTeam,
+      @JsonKey(name: 'RuInTeam') required String ruInTeam,
+      @JsonKey(name: 'RuTeam') required String ruTeam,
+      @JsonKey(name: 'RuTeamAccess') required String ruTeamAccess,
+      @JsonKey(name: 'RuTeamAdmin') required String ruTeamAdmin,
+      @JsonKey(name: 'RuTeamAdmins') required String ruTeamAdmins,
+      @JsonKey(name: 'RuTeamD') required String ruTeamD,
+      @JsonKey(name: 'RuTeamGuest') required String ruTeamGuest,
+      @JsonKey(name: 'RuTeamMember') required String ruTeamMember,
+      @JsonKey(name: 'RuTeamMembers') required String ruTeamMembers,
+      @JsonKey(name: 'RuTeamOwner') required String ruTeamOwner,
+      @JsonKey(name: 'RuTeamP') required String ruTeamP,
+      @JsonKey(name: 'RuTeamR') required String ruTeamR,
+      @JsonKey(name: 'RuTeams') required String ruTeams,
+      @JsonKey(name: 'RuTeamsD') required String ruTeamsD,
+      @JsonKey(name: 'RuTeamsP') required String ruTeamsP,
+      @JsonKey(name: 'RuTeamsR') required String ruTeamsR,
+      @JsonKey(name: 'RuTeamsT') required String ruTeamsT,
+      @JsonKey(name: 'RuTeamsV') required String ruTeamsV,
+      @JsonKey(name: 'RuTeamT') required String ruTeamT,
+      @JsonKey(name: 'RuTeamV') required String ruTeamV,
+      @JsonKey(name: 'RuToTeam') required String ruToTeam}) {
     return _Terms(
       enInTeam: enInTeam,
       enTeam: enTeam,
@@ -90,157 +94,155 @@ class _$TermsTearOff {
     );
   }
 
-// ignore: unused_element
   Terms fromJson(Map<String, Object> json) {
     return Terms.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Terms = _$TermsTearOff();
 
 /// @nodoc
 mixin _$Terms {
   /// "in team".
   @JsonKey(name: 'EnInTeam')
-  String get enInTeam;
+  String get enInTeam => throw _privateConstructorUsedError;
 
   /// "team".
   @JsonKey(name: 'EnTeam')
-  String get enTeam;
+  String get enTeam => throw _privateConstructorUsedError;
 
   /// "access to team".
   @JsonKey(name: 'EnTeamAccess')
-  String get enTeamAccess;
+  String get enTeamAccess => throw _privateConstructorUsedError;
 
   /// "team admin".
   @JsonKey(name: 'EnTeamAdmin')
-  String get enTeamAdmin;
+  String get enTeamAdmin => throw _privateConstructorUsedError;
 
   /// "team admins".
   @JsonKey(name: 'EnTeamAdmins')
-  String get enTeamAdmins;
+  String get enTeamAdmins => throw _privateConstructorUsedError;
 
   /// "team guest".
   @JsonKey(name: 'EnTeamGuest')
-  String get enTeamGuest;
+  String get enTeamGuest => throw _privateConstructorUsedError;
 
   /// "team member".
   @JsonKey(name: 'EnTeamMember')
-  String get enTeamMember;
+  String get enTeamMember => throw _privateConstructorUsedError;
 
   /// "team members".
   @JsonKey(name: 'EnTeamMembers')
-  String get enTeamMembers;
+  String get enTeamMembers => throw _privateConstructorUsedError;
 
   /// "team owner",.
   @JsonKey(name: 'EnTeamOwner')
-  String get enTeamOwner;
+  String get enTeamOwner => throw _privateConstructorUsedError;
 
   /// "team settings".
   @JsonKey(name: 'EnTeamSettings')
-  String get enTeamSettings;
+  String get enTeamSettings => throw _privateConstructorUsedError;
 
   /// "настройки команды".
   @JsonKey(name: 'RuTeamSettings')
-  String get ruTeamSettings;
+  String get ruTeamSettings => throw _privateConstructorUsedError;
 
   /// "teams".
   @JsonKey(name: 'EnTeams')
-  String get enTeams;
+  String get enTeams => throw _privateConstructorUsedError;
 
   /// "to team".
   @JsonKey(name: 'EnToTeam')
-  String get enToTeam;
+  String get enToTeam => throw _privateConstructorUsedError;
 
   /// "в команде".
   @JsonKey(name: 'RuInTeam')
-  String get ruInTeam;
+  String get ruInTeam => throw _privateConstructorUsedError;
 
   /// "команда".
   @JsonKey(name: 'RuTeam')
-  String get ruTeam;
+  String get ruTeam => throw _privateConstructorUsedError;
 
   /// "доступ к команде".
   @JsonKey(name: 'RuTeamAccess')
-  String get ruTeamAccess;
+  String get ruTeamAccess => throw _privateConstructorUsedError;
 
   /// "администратор команды".
   @JsonKey(name: 'RuTeamAdmin')
-  String get ruTeamAdmin;
+  String get ruTeamAdmin => throw _privateConstructorUsedError;
 
   /// "администраторы команды".
   @JsonKey(name: 'RuTeamAdmins')
-  String get ruTeamAdmins;
+  String get ruTeamAdmins => throw _privateConstructorUsedError;
 
   /// "команде".
   @JsonKey(name: 'RuTeamD')
-  String get ruTeamD;
+  String get ruTeamD => throw _privateConstructorUsedError;
 
   /// "гость команды".
   @JsonKey(name: 'RuTeamGuest')
-  String get ruTeamGuest;
+  String get ruTeamGuest => throw _privateConstructorUsedError;
 
   /// "участник команды".
   @JsonKey(name: 'RuTeamMember')
-  String get ruTeamMember;
+  String get ruTeamMember => throw _privateConstructorUsedError;
 
   /// "участники команды".
   @JsonKey(name: 'RuTeamMembers')
-  String get ruTeamMembers;
+  String get ruTeamMembers => throw _privateConstructorUsedError;
 
   /// "владелец команды".
   @JsonKey(name: 'RuTeamOwner')
-  String get ruTeamOwner;
+  String get ruTeamOwner => throw _privateConstructorUsedError;
 
   /// "команде".
   @JsonKey(name: 'RuTeamP')
-  String get ruTeamP;
+  String get ruTeamP => throw _privateConstructorUsedError;
 
   /// "команды".
   @JsonKey(name: 'RuTeamR')
-  String get ruTeamR;
+  String get ruTeamR => throw _privateConstructorUsedError;
 
   /// "команды".
   @JsonKey(name: 'RuTeams')
-  String get ruTeams;
+  String get ruTeams => throw _privateConstructorUsedError;
 
   /// "командам".
   @JsonKey(name: 'RuTeamsD')
-  String get ruTeamsD;
+  String get ruTeamsD => throw _privateConstructorUsedError;
 
   /// "командах".
   @JsonKey(name: 'RuTeamsP')
-  String get ruTeamsP;
+  String get ruTeamsP => throw _privateConstructorUsedError;
 
   /// "команд".
   @JsonKey(name: 'RuTeamsR')
-  String get ruTeamsR;
+  String get ruTeamsR => throw _privateConstructorUsedError;
 
   /// "командами".
   @JsonKey(name: 'RuTeamsT')
-  String get ruTeamsT;
+  String get ruTeamsT => throw _privateConstructorUsedError;
 
   /// "команды".
   @JsonKey(name: 'RuTeamsV')
-  String get ruTeamsV;
+  String get ruTeamsV => throw _privateConstructorUsedError;
 
   /// "командой".
   @JsonKey(name: 'RuTeamT')
-  String get ruTeamT;
+  String get ruTeamT => throw _privateConstructorUsedError;
 
   /// "команду".
   @JsonKey(name: 'RuTeamV')
-  String get ruTeamV;
+  String get ruTeamV => throw _privateConstructorUsedError;
 
   /// "в команду".
   @JsonKey(name: 'RuToTeam')
-  String get ruToTeam;
+  String get ruToTeam => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $TermsCopyWith<Terms> get copyWith;
+  $TermsCopyWith<Terms> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -293,76 +295,178 @@ class _$TermsCopyWithImpl<$Res> implements $TermsCopyWith<$Res> {
 
   @override
   $Res call({
-    Object enInTeam = freezed,
-    Object enTeam = freezed,
-    Object enTeamAccess = freezed,
-    Object enTeamAdmin = freezed,
-    Object enTeamAdmins = freezed,
-    Object enTeamGuest = freezed,
-    Object enTeamMember = freezed,
-    Object enTeamMembers = freezed,
-    Object enTeamOwner = freezed,
-    Object enTeamSettings = freezed,
-    Object ruTeamSettings = freezed,
-    Object enTeams = freezed,
-    Object enToTeam = freezed,
-    Object ruInTeam = freezed,
-    Object ruTeam = freezed,
-    Object ruTeamAccess = freezed,
-    Object ruTeamAdmin = freezed,
-    Object ruTeamAdmins = freezed,
-    Object ruTeamD = freezed,
-    Object ruTeamGuest = freezed,
-    Object ruTeamMember = freezed,
-    Object ruTeamMembers = freezed,
-    Object ruTeamOwner = freezed,
-    Object ruTeamP = freezed,
-    Object ruTeamR = freezed,
-    Object ruTeams = freezed,
-    Object ruTeamsD = freezed,
-    Object ruTeamsP = freezed,
-    Object ruTeamsR = freezed,
-    Object ruTeamsT = freezed,
-    Object ruTeamsV = freezed,
-    Object ruTeamT = freezed,
-    Object ruTeamV = freezed,
-    Object ruToTeam = freezed,
+    Object? enInTeam = freezed,
+    Object? enTeam = freezed,
+    Object? enTeamAccess = freezed,
+    Object? enTeamAdmin = freezed,
+    Object? enTeamAdmins = freezed,
+    Object? enTeamGuest = freezed,
+    Object? enTeamMember = freezed,
+    Object? enTeamMembers = freezed,
+    Object? enTeamOwner = freezed,
+    Object? enTeamSettings = freezed,
+    Object? ruTeamSettings = freezed,
+    Object? enTeams = freezed,
+    Object? enToTeam = freezed,
+    Object? ruInTeam = freezed,
+    Object? ruTeam = freezed,
+    Object? ruTeamAccess = freezed,
+    Object? ruTeamAdmin = freezed,
+    Object? ruTeamAdmins = freezed,
+    Object? ruTeamD = freezed,
+    Object? ruTeamGuest = freezed,
+    Object? ruTeamMember = freezed,
+    Object? ruTeamMembers = freezed,
+    Object? ruTeamOwner = freezed,
+    Object? ruTeamP = freezed,
+    Object? ruTeamR = freezed,
+    Object? ruTeams = freezed,
+    Object? ruTeamsD = freezed,
+    Object? ruTeamsP = freezed,
+    Object? ruTeamsR = freezed,
+    Object? ruTeamsT = freezed,
+    Object? ruTeamsV = freezed,
+    Object? ruTeamT = freezed,
+    Object? ruTeamV = freezed,
+    Object? ruToTeam = freezed,
   }) {
     return _then(_value.copyWith(
-      enInTeam: enInTeam == freezed ? _value.enInTeam : enInTeam as String,
-      enTeam: enTeam == freezed ? _value.enTeam : enTeam as String,
-      enTeamAccess: enTeamAccess == freezed ? _value.enTeamAccess : enTeamAccess as String,
-      enTeamAdmin: enTeamAdmin == freezed ? _value.enTeamAdmin : enTeamAdmin as String,
-      enTeamAdmins: enTeamAdmins == freezed ? _value.enTeamAdmins : enTeamAdmins as String,
-      enTeamGuest: enTeamGuest == freezed ? _value.enTeamGuest : enTeamGuest as String,
-      enTeamMember: enTeamMember == freezed ? _value.enTeamMember : enTeamMember as String,
-      enTeamMembers: enTeamMembers == freezed ? _value.enTeamMembers : enTeamMembers as String,
-      enTeamOwner: enTeamOwner == freezed ? _value.enTeamOwner : enTeamOwner as String,
-      enTeamSettings: enTeamSettings == freezed ? _value.enTeamSettings : enTeamSettings as String,
-      ruTeamSettings: ruTeamSettings == freezed ? _value.ruTeamSettings : ruTeamSettings as String,
-      enTeams: enTeams == freezed ? _value.enTeams : enTeams as String,
-      enToTeam: enToTeam == freezed ? _value.enToTeam : enToTeam as String,
-      ruInTeam: ruInTeam == freezed ? _value.ruInTeam : ruInTeam as String,
-      ruTeam: ruTeam == freezed ? _value.ruTeam : ruTeam as String,
-      ruTeamAccess: ruTeamAccess == freezed ? _value.ruTeamAccess : ruTeamAccess as String,
-      ruTeamAdmin: ruTeamAdmin == freezed ? _value.ruTeamAdmin : ruTeamAdmin as String,
-      ruTeamAdmins: ruTeamAdmins == freezed ? _value.ruTeamAdmins : ruTeamAdmins as String,
-      ruTeamD: ruTeamD == freezed ? _value.ruTeamD : ruTeamD as String,
-      ruTeamGuest: ruTeamGuest == freezed ? _value.ruTeamGuest : ruTeamGuest as String,
-      ruTeamMember: ruTeamMember == freezed ? _value.ruTeamMember : ruTeamMember as String,
-      ruTeamMembers: ruTeamMembers == freezed ? _value.ruTeamMembers : ruTeamMembers as String,
-      ruTeamOwner: ruTeamOwner == freezed ? _value.ruTeamOwner : ruTeamOwner as String,
-      ruTeamP: ruTeamP == freezed ? _value.ruTeamP : ruTeamP as String,
-      ruTeamR: ruTeamR == freezed ? _value.ruTeamR : ruTeamR as String,
-      ruTeams: ruTeams == freezed ? _value.ruTeams : ruTeams as String,
-      ruTeamsD: ruTeamsD == freezed ? _value.ruTeamsD : ruTeamsD as String,
-      ruTeamsP: ruTeamsP == freezed ? _value.ruTeamsP : ruTeamsP as String,
-      ruTeamsR: ruTeamsR == freezed ? _value.ruTeamsR : ruTeamsR as String,
-      ruTeamsT: ruTeamsT == freezed ? _value.ruTeamsT : ruTeamsT as String,
-      ruTeamsV: ruTeamsV == freezed ? _value.ruTeamsV : ruTeamsV as String,
-      ruTeamT: ruTeamT == freezed ? _value.ruTeamT : ruTeamT as String,
-      ruTeamV: ruTeamV == freezed ? _value.ruTeamV : ruTeamV as String,
-      ruToTeam: ruToTeam == freezed ? _value.ruToTeam : ruToTeam as String,
+      enInTeam: enInTeam == freezed
+          ? _value.enInTeam
+          : enInTeam // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeam: enTeam == freezed
+          ? _value.enTeam
+          : enTeam // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeamAccess: enTeamAccess == freezed
+          ? _value.enTeamAccess
+          : enTeamAccess // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeamAdmin: enTeamAdmin == freezed
+          ? _value.enTeamAdmin
+          : enTeamAdmin // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeamAdmins: enTeamAdmins == freezed
+          ? _value.enTeamAdmins
+          : enTeamAdmins // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeamGuest: enTeamGuest == freezed
+          ? _value.enTeamGuest
+          : enTeamGuest // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeamMember: enTeamMember == freezed
+          ? _value.enTeamMember
+          : enTeamMember // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeamMembers: enTeamMembers == freezed
+          ? _value.enTeamMembers
+          : enTeamMembers // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeamOwner: enTeamOwner == freezed
+          ? _value.enTeamOwner
+          : enTeamOwner // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeamSettings: enTeamSettings == freezed
+          ? _value.enTeamSettings
+          : enTeamSettings // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamSettings: ruTeamSettings == freezed
+          ? _value.ruTeamSettings
+          : ruTeamSettings // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeams: enTeams == freezed
+          ? _value.enTeams
+          : enTeams // ignore: cast_nullable_to_non_nullable
+              as String,
+      enToTeam: enToTeam == freezed
+          ? _value.enToTeam
+          : enToTeam // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruInTeam: ruInTeam == freezed
+          ? _value.ruInTeam
+          : ruInTeam // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeam: ruTeam == freezed
+          ? _value.ruTeam
+          : ruTeam // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamAccess: ruTeamAccess == freezed
+          ? _value.ruTeamAccess
+          : ruTeamAccess // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamAdmin: ruTeamAdmin == freezed
+          ? _value.ruTeamAdmin
+          : ruTeamAdmin // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamAdmins: ruTeamAdmins == freezed
+          ? _value.ruTeamAdmins
+          : ruTeamAdmins // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamD: ruTeamD == freezed
+          ? _value.ruTeamD
+          : ruTeamD // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamGuest: ruTeamGuest == freezed
+          ? _value.ruTeamGuest
+          : ruTeamGuest // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamMember: ruTeamMember == freezed
+          ? _value.ruTeamMember
+          : ruTeamMember // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamMembers: ruTeamMembers == freezed
+          ? _value.ruTeamMembers
+          : ruTeamMembers // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamOwner: ruTeamOwner == freezed
+          ? _value.ruTeamOwner
+          : ruTeamOwner // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamP: ruTeamP == freezed
+          ? _value.ruTeamP
+          : ruTeamP // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamR: ruTeamR == freezed
+          ? _value.ruTeamR
+          : ruTeamR // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeams: ruTeams == freezed
+          ? _value.ruTeams
+          : ruTeams // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamsD: ruTeamsD == freezed
+          ? _value.ruTeamsD
+          : ruTeamsD // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamsP: ruTeamsP == freezed
+          ? _value.ruTeamsP
+          : ruTeamsP // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamsR: ruTeamsR == freezed
+          ? _value.ruTeamsR
+          : ruTeamsR // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamsT: ruTeamsT == freezed
+          ? _value.ruTeamsT
+          : ruTeamsT // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamsV: ruTeamsV == freezed
+          ? _value.ruTeamsV
+          : ruTeamsV // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamT: ruTeamT == freezed
+          ? _value.ruTeamT
+          : ruTeamT // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamV: ruTeamV == freezed
+          ? _value.ruTeamV
+          : ruTeamV // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruToTeam: ruToTeam == freezed
+          ? _value.ruToTeam
+          : ruToTeam // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -417,155 +521,222 @@ class __$TermsCopyWithImpl<$Res> extends _$TermsCopyWithImpl<$Res> implements _$
 
   @override
   $Res call({
-    Object enInTeam = freezed,
-    Object enTeam = freezed,
-    Object enTeamAccess = freezed,
-    Object enTeamAdmin = freezed,
-    Object enTeamAdmins = freezed,
-    Object enTeamGuest = freezed,
-    Object enTeamMember = freezed,
-    Object enTeamMembers = freezed,
-    Object enTeamOwner = freezed,
-    Object enTeamSettings = freezed,
-    Object ruTeamSettings = freezed,
-    Object enTeams = freezed,
-    Object enToTeam = freezed,
-    Object ruInTeam = freezed,
-    Object ruTeam = freezed,
-    Object ruTeamAccess = freezed,
-    Object ruTeamAdmin = freezed,
-    Object ruTeamAdmins = freezed,
-    Object ruTeamD = freezed,
-    Object ruTeamGuest = freezed,
-    Object ruTeamMember = freezed,
-    Object ruTeamMembers = freezed,
-    Object ruTeamOwner = freezed,
-    Object ruTeamP = freezed,
-    Object ruTeamR = freezed,
-    Object ruTeams = freezed,
-    Object ruTeamsD = freezed,
-    Object ruTeamsP = freezed,
-    Object ruTeamsR = freezed,
-    Object ruTeamsT = freezed,
-    Object ruTeamsV = freezed,
-    Object ruTeamT = freezed,
-    Object ruTeamV = freezed,
-    Object ruToTeam = freezed,
+    Object? enInTeam = freezed,
+    Object? enTeam = freezed,
+    Object? enTeamAccess = freezed,
+    Object? enTeamAdmin = freezed,
+    Object? enTeamAdmins = freezed,
+    Object? enTeamGuest = freezed,
+    Object? enTeamMember = freezed,
+    Object? enTeamMembers = freezed,
+    Object? enTeamOwner = freezed,
+    Object? enTeamSettings = freezed,
+    Object? ruTeamSettings = freezed,
+    Object? enTeams = freezed,
+    Object? enToTeam = freezed,
+    Object? ruInTeam = freezed,
+    Object? ruTeam = freezed,
+    Object? ruTeamAccess = freezed,
+    Object? ruTeamAdmin = freezed,
+    Object? ruTeamAdmins = freezed,
+    Object? ruTeamD = freezed,
+    Object? ruTeamGuest = freezed,
+    Object? ruTeamMember = freezed,
+    Object? ruTeamMembers = freezed,
+    Object? ruTeamOwner = freezed,
+    Object? ruTeamP = freezed,
+    Object? ruTeamR = freezed,
+    Object? ruTeams = freezed,
+    Object? ruTeamsD = freezed,
+    Object? ruTeamsP = freezed,
+    Object? ruTeamsR = freezed,
+    Object? ruTeamsT = freezed,
+    Object? ruTeamsV = freezed,
+    Object? ruTeamT = freezed,
+    Object? ruTeamV = freezed,
+    Object? ruToTeam = freezed,
   }) {
     return _then(_Terms(
-      enInTeam: enInTeam == freezed ? _value.enInTeam : enInTeam as String,
-      enTeam: enTeam == freezed ? _value.enTeam : enTeam as String,
-      enTeamAccess: enTeamAccess == freezed ? _value.enTeamAccess : enTeamAccess as String,
-      enTeamAdmin: enTeamAdmin == freezed ? _value.enTeamAdmin : enTeamAdmin as String,
-      enTeamAdmins: enTeamAdmins == freezed ? _value.enTeamAdmins : enTeamAdmins as String,
-      enTeamGuest: enTeamGuest == freezed ? _value.enTeamGuest : enTeamGuest as String,
-      enTeamMember: enTeamMember == freezed ? _value.enTeamMember : enTeamMember as String,
-      enTeamMembers: enTeamMembers == freezed ? _value.enTeamMembers : enTeamMembers as String,
-      enTeamOwner: enTeamOwner == freezed ? _value.enTeamOwner : enTeamOwner as String,
-      enTeamSettings: enTeamSettings == freezed ? _value.enTeamSettings : enTeamSettings as String,
-      ruTeamSettings: ruTeamSettings == freezed ? _value.ruTeamSettings : ruTeamSettings as String,
-      enTeams: enTeams == freezed ? _value.enTeams : enTeams as String,
-      enToTeam: enToTeam == freezed ? _value.enToTeam : enToTeam as String,
-      ruInTeam: ruInTeam == freezed ? _value.ruInTeam : ruInTeam as String,
-      ruTeam: ruTeam == freezed ? _value.ruTeam : ruTeam as String,
-      ruTeamAccess: ruTeamAccess == freezed ? _value.ruTeamAccess : ruTeamAccess as String,
-      ruTeamAdmin: ruTeamAdmin == freezed ? _value.ruTeamAdmin : ruTeamAdmin as String,
-      ruTeamAdmins: ruTeamAdmins == freezed ? _value.ruTeamAdmins : ruTeamAdmins as String,
-      ruTeamD: ruTeamD == freezed ? _value.ruTeamD : ruTeamD as String,
-      ruTeamGuest: ruTeamGuest == freezed ? _value.ruTeamGuest : ruTeamGuest as String,
-      ruTeamMember: ruTeamMember == freezed ? _value.ruTeamMember : ruTeamMember as String,
-      ruTeamMembers: ruTeamMembers == freezed ? _value.ruTeamMembers : ruTeamMembers as String,
-      ruTeamOwner: ruTeamOwner == freezed ? _value.ruTeamOwner : ruTeamOwner as String,
-      ruTeamP: ruTeamP == freezed ? _value.ruTeamP : ruTeamP as String,
-      ruTeamR: ruTeamR == freezed ? _value.ruTeamR : ruTeamR as String,
-      ruTeams: ruTeams == freezed ? _value.ruTeams : ruTeams as String,
-      ruTeamsD: ruTeamsD == freezed ? _value.ruTeamsD : ruTeamsD as String,
-      ruTeamsP: ruTeamsP == freezed ? _value.ruTeamsP : ruTeamsP as String,
-      ruTeamsR: ruTeamsR == freezed ? _value.ruTeamsR : ruTeamsR as String,
-      ruTeamsT: ruTeamsT == freezed ? _value.ruTeamsT : ruTeamsT as String,
-      ruTeamsV: ruTeamsV == freezed ? _value.ruTeamsV : ruTeamsV as String,
-      ruTeamT: ruTeamT == freezed ? _value.ruTeamT : ruTeamT as String,
-      ruTeamV: ruTeamV == freezed ? _value.ruTeamV : ruTeamV as String,
-      ruToTeam: ruToTeam == freezed ? _value.ruToTeam : ruToTeam as String,
+      enInTeam: enInTeam == freezed
+          ? _value.enInTeam
+          : enInTeam // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeam: enTeam == freezed
+          ? _value.enTeam
+          : enTeam // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeamAccess: enTeamAccess == freezed
+          ? _value.enTeamAccess
+          : enTeamAccess // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeamAdmin: enTeamAdmin == freezed
+          ? _value.enTeamAdmin
+          : enTeamAdmin // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeamAdmins: enTeamAdmins == freezed
+          ? _value.enTeamAdmins
+          : enTeamAdmins // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeamGuest: enTeamGuest == freezed
+          ? _value.enTeamGuest
+          : enTeamGuest // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeamMember: enTeamMember == freezed
+          ? _value.enTeamMember
+          : enTeamMember // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeamMembers: enTeamMembers == freezed
+          ? _value.enTeamMembers
+          : enTeamMembers // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeamOwner: enTeamOwner == freezed
+          ? _value.enTeamOwner
+          : enTeamOwner // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeamSettings: enTeamSettings == freezed
+          ? _value.enTeamSettings
+          : enTeamSettings // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamSettings: ruTeamSettings == freezed
+          ? _value.ruTeamSettings
+          : ruTeamSettings // ignore: cast_nullable_to_non_nullable
+              as String,
+      enTeams: enTeams == freezed
+          ? _value.enTeams
+          : enTeams // ignore: cast_nullable_to_non_nullable
+              as String,
+      enToTeam: enToTeam == freezed
+          ? _value.enToTeam
+          : enToTeam // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruInTeam: ruInTeam == freezed
+          ? _value.ruInTeam
+          : ruInTeam // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeam: ruTeam == freezed
+          ? _value.ruTeam
+          : ruTeam // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamAccess: ruTeamAccess == freezed
+          ? _value.ruTeamAccess
+          : ruTeamAccess // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamAdmin: ruTeamAdmin == freezed
+          ? _value.ruTeamAdmin
+          : ruTeamAdmin // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamAdmins: ruTeamAdmins == freezed
+          ? _value.ruTeamAdmins
+          : ruTeamAdmins // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamD: ruTeamD == freezed
+          ? _value.ruTeamD
+          : ruTeamD // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamGuest: ruTeamGuest == freezed
+          ? _value.ruTeamGuest
+          : ruTeamGuest // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamMember: ruTeamMember == freezed
+          ? _value.ruTeamMember
+          : ruTeamMember // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamMembers: ruTeamMembers == freezed
+          ? _value.ruTeamMembers
+          : ruTeamMembers // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamOwner: ruTeamOwner == freezed
+          ? _value.ruTeamOwner
+          : ruTeamOwner // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamP: ruTeamP == freezed
+          ? _value.ruTeamP
+          : ruTeamP // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamR: ruTeamR == freezed
+          ? _value.ruTeamR
+          : ruTeamR // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeams: ruTeams == freezed
+          ? _value.ruTeams
+          : ruTeams // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamsD: ruTeamsD == freezed
+          ? _value.ruTeamsD
+          : ruTeamsD // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamsP: ruTeamsP == freezed
+          ? _value.ruTeamsP
+          : ruTeamsP // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamsR: ruTeamsR == freezed
+          ? _value.ruTeamsR
+          : ruTeamsR // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamsT: ruTeamsT == freezed
+          ? _value.ruTeamsT
+          : ruTeamsT // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamsV: ruTeamsV == freezed
+          ? _value.ruTeamsV
+          : ruTeamsV // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamT: ruTeamT == freezed
+          ? _value.ruTeamT
+          : ruTeamT // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruTeamV: ruTeamV == freezed
+          ? _value.ruTeamV
+          : ruTeamV // ignore: cast_nullable_to_non_nullable
+              as String,
+      ruToTeam: ruToTeam == freezed
+          ? _value.ruToTeam
+          : ruToTeam // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Terms implements _Terms {
   const _$_Terms(
-      {@required @JsonKey(name: 'EnInTeam') this.enInTeam,
-      @required @JsonKey(name: 'EnTeam') this.enTeam,
-      @required @JsonKey(name: 'EnTeamAccess') this.enTeamAccess,
-      @required @JsonKey(name: 'EnTeamAdmin') this.enTeamAdmin,
-      @required @JsonKey(name: 'EnTeamAdmins') this.enTeamAdmins,
-      @required @JsonKey(name: 'EnTeamGuest') this.enTeamGuest,
-      @required @JsonKey(name: 'EnTeamMember') this.enTeamMember,
-      @required @JsonKey(name: 'EnTeamMembers') this.enTeamMembers,
-      @required @JsonKey(name: 'EnTeamOwner') this.enTeamOwner,
-      @required @JsonKey(name: 'EnTeamSettings') this.enTeamSettings,
-      @required @JsonKey(name: 'RuTeamSettings') this.ruTeamSettings,
-      @required @JsonKey(name: 'EnTeams') this.enTeams,
-      @required @JsonKey(name: 'EnToTeam') this.enToTeam,
-      @required @JsonKey(name: 'RuInTeam') this.ruInTeam,
-      @required @JsonKey(name: 'RuTeam') this.ruTeam,
-      @required @JsonKey(name: 'RuTeamAccess') this.ruTeamAccess,
-      @required @JsonKey(name: 'RuTeamAdmin') this.ruTeamAdmin,
-      @required @JsonKey(name: 'RuTeamAdmins') this.ruTeamAdmins,
-      @required @JsonKey(name: 'RuTeamD') this.ruTeamD,
-      @required @JsonKey(name: 'RuTeamGuest') this.ruTeamGuest,
-      @required @JsonKey(name: 'RuTeamMember') this.ruTeamMember,
-      @required @JsonKey(name: 'RuTeamMembers') this.ruTeamMembers,
-      @required @JsonKey(name: 'RuTeamOwner') this.ruTeamOwner,
-      @required @JsonKey(name: 'RuTeamP') this.ruTeamP,
-      @required @JsonKey(name: 'RuTeamR') this.ruTeamR,
-      @required @JsonKey(name: 'RuTeams') this.ruTeams,
-      @required @JsonKey(name: 'RuTeamsD') this.ruTeamsD,
-      @required @JsonKey(name: 'RuTeamsP') this.ruTeamsP,
-      @required @JsonKey(name: 'RuTeamsR') this.ruTeamsR,
-      @required @JsonKey(name: 'RuTeamsT') this.ruTeamsT,
-      @required @JsonKey(name: 'RuTeamsV') this.ruTeamsV,
-      @required @JsonKey(name: 'RuTeamT') this.ruTeamT,
-      @required @JsonKey(name: 'RuTeamV') this.ruTeamV,
-      @required @JsonKey(name: 'RuToTeam') this.ruToTeam})
-      : assert(enInTeam != null),
-        assert(enTeam != null),
-        assert(enTeamAccess != null),
-        assert(enTeamAdmin != null),
-        assert(enTeamAdmins != null),
-        assert(enTeamGuest != null),
-        assert(enTeamMember != null),
-        assert(enTeamMembers != null),
-        assert(enTeamOwner != null),
-        assert(enTeamSettings != null),
-        assert(ruTeamSettings != null),
-        assert(enTeams != null),
-        assert(enToTeam != null),
-        assert(ruInTeam != null),
-        assert(ruTeam != null),
-        assert(ruTeamAccess != null),
-        assert(ruTeamAdmin != null),
-        assert(ruTeamAdmins != null),
-        assert(ruTeamD != null),
-        assert(ruTeamGuest != null),
-        assert(ruTeamMember != null),
-        assert(ruTeamMembers != null),
-        assert(ruTeamOwner != null),
-        assert(ruTeamP != null),
-        assert(ruTeamR != null),
-        assert(ruTeams != null),
-        assert(ruTeamsD != null),
-        assert(ruTeamsP != null),
-        assert(ruTeamsR != null),
-        assert(ruTeamsT != null),
-        assert(ruTeamsV != null),
-        assert(ruTeamT != null),
-        assert(ruTeamV != null),
-        assert(ruToTeam != null);
+      {@JsonKey(name: 'EnInTeam') required this.enInTeam,
+      @JsonKey(name: 'EnTeam') required this.enTeam,
+      @JsonKey(name: 'EnTeamAccess') required this.enTeamAccess,
+      @JsonKey(name: 'EnTeamAdmin') required this.enTeamAdmin,
+      @JsonKey(name: 'EnTeamAdmins') required this.enTeamAdmins,
+      @JsonKey(name: 'EnTeamGuest') required this.enTeamGuest,
+      @JsonKey(name: 'EnTeamMember') required this.enTeamMember,
+      @JsonKey(name: 'EnTeamMembers') required this.enTeamMembers,
+      @JsonKey(name: 'EnTeamOwner') required this.enTeamOwner,
+      @JsonKey(name: 'EnTeamSettings') required this.enTeamSettings,
+      @JsonKey(name: 'RuTeamSettings') required this.ruTeamSettings,
+      @JsonKey(name: 'EnTeams') required this.enTeams,
+      @JsonKey(name: 'EnToTeam') required this.enToTeam,
+      @JsonKey(name: 'RuInTeam') required this.ruInTeam,
+      @JsonKey(name: 'RuTeam') required this.ruTeam,
+      @JsonKey(name: 'RuTeamAccess') required this.ruTeamAccess,
+      @JsonKey(name: 'RuTeamAdmin') required this.ruTeamAdmin,
+      @JsonKey(name: 'RuTeamAdmins') required this.ruTeamAdmins,
+      @JsonKey(name: 'RuTeamD') required this.ruTeamD,
+      @JsonKey(name: 'RuTeamGuest') required this.ruTeamGuest,
+      @JsonKey(name: 'RuTeamMember') required this.ruTeamMember,
+      @JsonKey(name: 'RuTeamMembers') required this.ruTeamMembers,
+      @JsonKey(name: 'RuTeamOwner') required this.ruTeamOwner,
+      @JsonKey(name: 'RuTeamP') required this.ruTeamP,
+      @JsonKey(name: 'RuTeamR') required this.ruTeamR,
+      @JsonKey(name: 'RuTeams') required this.ruTeams,
+      @JsonKey(name: 'RuTeamsD') required this.ruTeamsD,
+      @JsonKey(name: 'RuTeamsP') required this.ruTeamsP,
+      @JsonKey(name: 'RuTeamsR') required this.ruTeamsR,
+      @JsonKey(name: 'RuTeamsT') required this.ruTeamsT,
+      @JsonKey(name: 'RuTeamsV') required this.ruTeamsV,
+      @JsonKey(name: 'RuTeamT') required this.ruTeamT,
+      @JsonKey(name: 'RuTeamV') required this.ruTeamV,
+      @JsonKey(name: 'RuToTeam') required this.ruToTeam});
 
-  factory _$_Terms.fromJson(Map<String, dynamic> json) => _$_$_TermsFromJson(json);
+  factory _$_Terms.fromJson(Map<String, dynamic> json) => _$$_TermsFromJson(json);
 
   @override
 
@@ -843,46 +1014,46 @@ class _$_Terms implements _Terms {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_TermsToJson(this);
+    return _$$_TermsToJson(this);
   }
 }
 
 abstract class _Terms implements Terms {
   const factory _Terms(
-      {@required @JsonKey(name: 'EnInTeam') String enInTeam,
-      @required @JsonKey(name: 'EnTeam') String enTeam,
-      @required @JsonKey(name: 'EnTeamAccess') String enTeamAccess,
-      @required @JsonKey(name: 'EnTeamAdmin') String enTeamAdmin,
-      @required @JsonKey(name: 'EnTeamAdmins') String enTeamAdmins,
-      @required @JsonKey(name: 'EnTeamGuest') String enTeamGuest,
-      @required @JsonKey(name: 'EnTeamMember') String enTeamMember,
-      @required @JsonKey(name: 'EnTeamMembers') String enTeamMembers,
-      @required @JsonKey(name: 'EnTeamOwner') String enTeamOwner,
-      @required @JsonKey(name: 'EnTeamSettings') String enTeamSettings,
-      @required @JsonKey(name: 'RuTeamSettings') String ruTeamSettings,
-      @required @JsonKey(name: 'EnTeams') String enTeams,
-      @required @JsonKey(name: 'EnToTeam') String enToTeam,
-      @required @JsonKey(name: 'RuInTeam') String ruInTeam,
-      @required @JsonKey(name: 'RuTeam') String ruTeam,
-      @required @JsonKey(name: 'RuTeamAccess') String ruTeamAccess,
-      @required @JsonKey(name: 'RuTeamAdmin') String ruTeamAdmin,
-      @required @JsonKey(name: 'RuTeamAdmins') String ruTeamAdmins,
-      @required @JsonKey(name: 'RuTeamD') String ruTeamD,
-      @required @JsonKey(name: 'RuTeamGuest') String ruTeamGuest,
-      @required @JsonKey(name: 'RuTeamMember') String ruTeamMember,
-      @required @JsonKey(name: 'RuTeamMembers') String ruTeamMembers,
-      @required @JsonKey(name: 'RuTeamOwner') String ruTeamOwner,
-      @required @JsonKey(name: 'RuTeamP') String ruTeamP,
-      @required @JsonKey(name: 'RuTeamR') String ruTeamR,
-      @required @JsonKey(name: 'RuTeams') String ruTeams,
-      @required @JsonKey(name: 'RuTeamsD') String ruTeamsD,
-      @required @JsonKey(name: 'RuTeamsP') String ruTeamsP,
-      @required @JsonKey(name: 'RuTeamsR') String ruTeamsR,
-      @required @JsonKey(name: 'RuTeamsT') String ruTeamsT,
-      @required @JsonKey(name: 'RuTeamsV') String ruTeamsV,
-      @required @JsonKey(name: 'RuTeamT') String ruTeamT,
-      @required @JsonKey(name: 'RuTeamV') String ruTeamV,
-      @required @JsonKey(name: 'RuToTeam') String ruToTeam}) = _$_Terms;
+      {@JsonKey(name: 'EnInTeam') required String enInTeam,
+      @JsonKey(name: 'EnTeam') required String enTeam,
+      @JsonKey(name: 'EnTeamAccess') required String enTeamAccess,
+      @JsonKey(name: 'EnTeamAdmin') required String enTeamAdmin,
+      @JsonKey(name: 'EnTeamAdmins') required String enTeamAdmins,
+      @JsonKey(name: 'EnTeamGuest') required String enTeamGuest,
+      @JsonKey(name: 'EnTeamMember') required String enTeamMember,
+      @JsonKey(name: 'EnTeamMembers') required String enTeamMembers,
+      @JsonKey(name: 'EnTeamOwner') required String enTeamOwner,
+      @JsonKey(name: 'EnTeamSettings') required String enTeamSettings,
+      @JsonKey(name: 'RuTeamSettings') required String ruTeamSettings,
+      @JsonKey(name: 'EnTeams') required String enTeams,
+      @JsonKey(name: 'EnToTeam') required String enToTeam,
+      @JsonKey(name: 'RuInTeam') required String ruInTeam,
+      @JsonKey(name: 'RuTeam') required String ruTeam,
+      @JsonKey(name: 'RuTeamAccess') required String ruTeamAccess,
+      @JsonKey(name: 'RuTeamAdmin') required String ruTeamAdmin,
+      @JsonKey(name: 'RuTeamAdmins') required String ruTeamAdmins,
+      @JsonKey(name: 'RuTeamD') required String ruTeamD,
+      @JsonKey(name: 'RuTeamGuest') required String ruTeamGuest,
+      @JsonKey(name: 'RuTeamMember') required String ruTeamMember,
+      @JsonKey(name: 'RuTeamMembers') required String ruTeamMembers,
+      @JsonKey(name: 'RuTeamOwner') required String ruTeamOwner,
+      @JsonKey(name: 'RuTeamP') required String ruTeamP,
+      @JsonKey(name: 'RuTeamR') required String ruTeamR,
+      @JsonKey(name: 'RuTeams') required String ruTeams,
+      @JsonKey(name: 'RuTeamsD') required String ruTeamsD,
+      @JsonKey(name: 'RuTeamsP') required String ruTeamsP,
+      @JsonKey(name: 'RuTeamsR') required String ruTeamsR,
+      @JsonKey(name: 'RuTeamsT') required String ruTeamsT,
+      @JsonKey(name: 'RuTeamsV') required String ruTeamsV,
+      @JsonKey(name: 'RuTeamT') required String ruTeamT,
+      @JsonKey(name: 'RuTeamV') required String ruTeamV,
+      @JsonKey(name: 'RuToTeam') required String ruToTeam}) = _$_Terms;
 
   factory _Terms.fromJson(Map<String, dynamic> json) = _$_Terms.fromJson;
 
@@ -890,173 +1061,173 @@ abstract class _Terms implements Terms {
 
   /// "in team".
   @JsonKey(name: 'EnInTeam')
-  String get enInTeam;
+  String get enInTeam => throw _privateConstructorUsedError;
   @override
 
   /// "team".
   @JsonKey(name: 'EnTeam')
-  String get enTeam;
+  String get enTeam => throw _privateConstructorUsedError;
   @override
 
   /// "access to team".
   @JsonKey(name: 'EnTeamAccess')
-  String get enTeamAccess;
+  String get enTeamAccess => throw _privateConstructorUsedError;
   @override
 
   /// "team admin".
   @JsonKey(name: 'EnTeamAdmin')
-  String get enTeamAdmin;
+  String get enTeamAdmin => throw _privateConstructorUsedError;
   @override
 
   /// "team admins".
   @JsonKey(name: 'EnTeamAdmins')
-  String get enTeamAdmins;
+  String get enTeamAdmins => throw _privateConstructorUsedError;
   @override
 
   /// "team guest".
   @JsonKey(name: 'EnTeamGuest')
-  String get enTeamGuest;
+  String get enTeamGuest => throw _privateConstructorUsedError;
   @override
 
   /// "team member".
   @JsonKey(name: 'EnTeamMember')
-  String get enTeamMember;
+  String get enTeamMember => throw _privateConstructorUsedError;
   @override
 
   /// "team members".
   @JsonKey(name: 'EnTeamMembers')
-  String get enTeamMembers;
+  String get enTeamMembers => throw _privateConstructorUsedError;
   @override
 
   /// "team owner",.
   @JsonKey(name: 'EnTeamOwner')
-  String get enTeamOwner;
+  String get enTeamOwner => throw _privateConstructorUsedError;
   @override
 
   /// "team settings".
   @JsonKey(name: 'EnTeamSettings')
-  String get enTeamSettings;
+  String get enTeamSettings => throw _privateConstructorUsedError;
   @override
 
   /// "настройки команды".
   @JsonKey(name: 'RuTeamSettings')
-  String get ruTeamSettings;
+  String get ruTeamSettings => throw _privateConstructorUsedError;
   @override
 
   /// "teams".
   @JsonKey(name: 'EnTeams')
-  String get enTeams;
+  String get enTeams => throw _privateConstructorUsedError;
   @override
 
   /// "to team".
   @JsonKey(name: 'EnToTeam')
-  String get enToTeam;
+  String get enToTeam => throw _privateConstructorUsedError;
   @override
 
   /// "в команде".
   @JsonKey(name: 'RuInTeam')
-  String get ruInTeam;
+  String get ruInTeam => throw _privateConstructorUsedError;
   @override
 
   /// "команда".
   @JsonKey(name: 'RuTeam')
-  String get ruTeam;
+  String get ruTeam => throw _privateConstructorUsedError;
   @override
 
   /// "доступ к команде".
   @JsonKey(name: 'RuTeamAccess')
-  String get ruTeamAccess;
+  String get ruTeamAccess => throw _privateConstructorUsedError;
   @override
 
   /// "администратор команды".
   @JsonKey(name: 'RuTeamAdmin')
-  String get ruTeamAdmin;
+  String get ruTeamAdmin => throw _privateConstructorUsedError;
   @override
 
   /// "администраторы команды".
   @JsonKey(name: 'RuTeamAdmins')
-  String get ruTeamAdmins;
+  String get ruTeamAdmins => throw _privateConstructorUsedError;
   @override
 
   /// "команде".
   @JsonKey(name: 'RuTeamD')
-  String get ruTeamD;
+  String get ruTeamD => throw _privateConstructorUsedError;
   @override
 
   /// "гость команды".
   @JsonKey(name: 'RuTeamGuest')
-  String get ruTeamGuest;
+  String get ruTeamGuest => throw _privateConstructorUsedError;
   @override
 
   /// "участник команды".
   @JsonKey(name: 'RuTeamMember')
-  String get ruTeamMember;
+  String get ruTeamMember => throw _privateConstructorUsedError;
   @override
 
   /// "участники команды".
   @JsonKey(name: 'RuTeamMembers')
-  String get ruTeamMembers;
+  String get ruTeamMembers => throw _privateConstructorUsedError;
   @override
 
   /// "владелец команды".
   @JsonKey(name: 'RuTeamOwner')
-  String get ruTeamOwner;
+  String get ruTeamOwner => throw _privateConstructorUsedError;
   @override
 
   /// "команде".
   @JsonKey(name: 'RuTeamP')
-  String get ruTeamP;
+  String get ruTeamP => throw _privateConstructorUsedError;
   @override
 
   /// "команды".
   @JsonKey(name: 'RuTeamR')
-  String get ruTeamR;
+  String get ruTeamR => throw _privateConstructorUsedError;
   @override
 
   /// "команды".
   @JsonKey(name: 'RuTeams')
-  String get ruTeams;
+  String get ruTeams => throw _privateConstructorUsedError;
   @override
 
   /// "командам".
   @JsonKey(name: 'RuTeamsD')
-  String get ruTeamsD;
+  String get ruTeamsD => throw _privateConstructorUsedError;
   @override
 
   /// "командах".
   @JsonKey(name: 'RuTeamsP')
-  String get ruTeamsP;
+  String get ruTeamsP => throw _privateConstructorUsedError;
   @override
 
   /// "команд".
   @JsonKey(name: 'RuTeamsR')
-  String get ruTeamsR;
+  String get ruTeamsR => throw _privateConstructorUsedError;
   @override
 
   /// "командами".
   @JsonKey(name: 'RuTeamsT')
-  String get ruTeamsT;
+  String get ruTeamsT => throw _privateConstructorUsedError;
   @override
 
   /// "команды".
   @JsonKey(name: 'RuTeamsV')
-  String get ruTeamsV;
+  String get ruTeamsV => throw _privateConstructorUsedError;
   @override
 
   /// "командой".
   @JsonKey(name: 'RuTeamT')
-  String get ruTeamT;
+  String get ruTeamT => throw _privateConstructorUsedError;
   @override
 
   /// "команду".
   @JsonKey(name: 'RuTeamV')
-  String get ruTeamV;
+  String get ruTeamV => throw _privateConstructorUsedError;
   @override
 
   /// "в команду".
   @JsonKey(name: 'RuToTeam')
-  String get ruToTeam;
+  String get ruToTeam => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TermsCopyWith<_Terms> get copyWith;
+  _$TermsCopyWith<_Terms> get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'group_membership.dart';
 
@@ -8,6 +9,10 @@ part of 'group_membership.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 GroupMembership _$GroupMembershipFromJson(Map<String, dynamic> json) {
   return _GroupMembership.fromJson(json);
 }
@@ -16,11 +21,10 @@ GroupMembership _$GroupMembershipFromJson(Map<String, dynamic> json) {
 class _$GroupMembershipTearOff {
   const _$GroupMembershipTearOff();
 
-// ignore: unused_element
   _GroupMembership call(
-      {@required @JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'status') String status,
-      @JsonKey(name: 'can_remove') bool canRemove}) {
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'status') String? status,
+      @JsonKey(name: 'can_remove') bool? canRemove = false}) {
     return _GroupMembership(
       jid: jid,
       status: status,
@@ -28,33 +32,31 @@ class _$GroupMembershipTearOff {
     );
   }
 
-// ignore: unused_element
   GroupMembership fromJson(Map<String, Object> json) {
     return GroupMembership.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $GroupMembership = _$GroupMembershipTearOff();
 
 /// @nodoc
 mixin _$GroupMembership {
   /// Contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
   /// Status in group.
   @JsonKey(name: 'status')
-  String get status;
+  String? get status => throw _privateConstructorUsedError;
 
   /// Can I remove this member.
   @JsonKey(name: 'can_remove')
-  bool get canRemove;
+  bool? get canRemove => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $GroupMembershipCopyWith<GroupMembership> get copyWith;
+  $GroupMembershipCopyWith<GroupMembership> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -63,8 +65,8 @@ abstract class $GroupMembershipCopyWith<$Res> {
       _$GroupMembershipCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'status') String status,
-      @JsonKey(name: 'can_remove') bool canRemove});
+      @JsonKey(name: 'status') String? status,
+      @JsonKey(name: 'can_remove') bool? canRemove});
 }
 
 /// @nodoc
@@ -77,14 +79,23 @@ class _$GroupMembershipCopyWithImpl<$Res> implements $GroupMembershipCopyWith<$R
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object status = freezed,
-    Object canRemove = freezed,
+    Object? jid = freezed,
+    Object? status = freezed,
+    Object? canRemove = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
-      status: status == freezed ? _value.status : status as String,
-      canRemove: canRemove == freezed ? _value.canRemove : canRemove as bool,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      status: status == freezed
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as String?,
+      canRemove: canRemove == freezed
+          ? _value.canRemove
+          : canRemove // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -96,8 +107,8 @@ abstract class _$GroupMembershipCopyWith<$Res> implements $GroupMembershipCopyWi
   @override
   $Res call(
       {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'status') String status,
-      @JsonKey(name: 'can_remove') bool canRemove});
+      @JsonKey(name: 'status') String? status,
+      @JsonKey(name: 'can_remove') bool? canRemove});
 }
 
 /// @nodoc
@@ -111,29 +122,36 @@ class __$GroupMembershipCopyWithImpl<$Res> extends _$GroupMembershipCopyWithImpl
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object status = freezed,
-    Object canRemove = freezed,
+    Object? jid = freezed,
+    Object? status = freezed,
+    Object? canRemove = freezed,
   }) {
     return _then(_GroupMembership(
-      jid: jid == freezed ? _value.jid : jid as String,
-      status: status == freezed ? _value.status : status as String,
-      canRemove: canRemove == freezed ? _value.canRemove : canRemove as bool,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      status: status == freezed
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as String?,
+      canRemove: canRemove == freezed
+          ? _value.canRemove
+          : canRemove // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_GroupMembership implements _GroupMembership {
   const _$_GroupMembership(
-      {@required @JsonKey(name: 'jid') this.jid,
+      {@JsonKey(name: 'jid') required this.jid,
       @JsonKey(name: 'status') this.status,
-      @JsonKey(name: 'can_remove') this.canRemove})
-      : assert(jid != null);
+      @JsonKey(name: 'can_remove') this.canRemove = false});
 
-  factory _$_GroupMembership.fromJson(Map<String, dynamic> json) => _$_$_GroupMembershipFromJson(json);
+  factory _$_GroupMembership.fromJson(Map<String, dynamic> json) => _$$_GroupMembershipFromJson(json);
 
   @override
 
@@ -144,12 +162,12 @@ class _$_GroupMembership implements _GroupMembership {
 
   /// Status in group.
   @JsonKey(name: 'status')
-  final String status;
+  final String? status;
   @override
 
   /// Can I remove this member.
   @JsonKey(name: 'can_remove')
-  final bool canRemove;
+  final bool? canRemove;
 
   @override
   String toString() {
@@ -180,15 +198,15 @@ class _$_GroupMembership implements _GroupMembership {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_GroupMembershipToJson(this);
+    return _$$_GroupMembershipToJson(this);
   }
 }
 
 abstract class _GroupMembership implements GroupMembership {
   const factory _GroupMembership(
-      {@required @JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'status') String status,
-      @JsonKey(name: 'can_remove') bool canRemove}) = _$_GroupMembership;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'status') String? status,
+      @JsonKey(name: 'can_remove') bool? canRemove}) = _$_GroupMembership;
 
   factory _GroupMembership.fromJson(Map<String, dynamic> json) = _$_GroupMembership.fromJson;
 
@@ -196,18 +214,18 @@ abstract class _GroupMembership implements GroupMembership {
 
   /// Contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Status in group.
   @JsonKey(name: 'status')
-  String get status;
+  String? get status => throw _privateConstructorUsedError;
   @override
 
   /// Can I remove this member.
   @JsonKey(name: 'can_remove')
-  bool get canRemove;
+  bool? get canRemove => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$GroupMembershipCopyWith<_GroupMembership> get copyWith;
+  _$GroupMembershipCopyWith<_GroupMembership> get copyWith => throw _privateConstructorUsedError;
 }

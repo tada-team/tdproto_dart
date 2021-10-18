@@ -6,16 +6,16 @@ part 'server_message_received.g.dart';
 
 /// Message received by someone in chat.
 @freezed
-abstract class ServerMessageReceived with _$ServerMessageReceived {
+class ServerMessageReceived with _$ServerMessageReceived {
   const factory ServerMessageReceived({
     /// .
-    @JsonKey(name: 'params') @required ServerMessageReceivedParams params,
+    @JsonKey(name: 'params') required ServerMessageReceivedParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerMessageReceived;
 
   factory ServerMessageReceived.fromJson(Map<String, dynamic> json) => _$ServerMessageReceivedFromJson(json);

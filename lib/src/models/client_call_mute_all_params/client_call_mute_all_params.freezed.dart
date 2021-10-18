@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'client_call_mute_all_params.dart';
 
@@ -8,6 +9,10 @@ part of 'client_call_mute_all_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ClientCallMuteAllParams _$ClientCallMuteAllParamsFromJson(Map<String, dynamic> json) {
   return _ClientCallMuteAllParams.fromJson(json);
 }
@@ -16,32 +21,29 @@ ClientCallMuteAllParams _$ClientCallMuteAllParamsFromJson(Map<String, dynamic> j
 class _$ClientCallMuteAllParamsTearOff {
   const _$ClientCallMuteAllParamsTearOff();
 
-// ignore: unused_element
-  _ClientCallMuteAllParams call({@required @JsonKey(name: 'jid') String jid}) {
+  _ClientCallMuteAllParams call({@JsonKey(name: 'jid') required String jid}) {
     return _ClientCallMuteAllParams(
       jid: jid,
     );
   }
 
-// ignore: unused_element
   ClientCallMuteAllParams fromJson(Map<String, Object> json) {
     return ClientCallMuteAllParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ClientCallMuteAllParams = _$ClientCallMuteAllParamsTearOff();
 
 /// @nodoc
 mixin _$ClientCallMuteAllParams {
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ClientCallMuteAllParamsCopyWith<ClientCallMuteAllParams> get copyWith;
+  $ClientCallMuteAllParamsCopyWith<ClientCallMuteAllParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -61,10 +63,13 @@ class _$ClientCallMuteAllParamsCopyWithImpl<$Res> implements $ClientCallMuteAllP
 
   @override
   $Res call({
-    Object jid = freezed,
+    Object? jid = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -89,21 +94,23 @@ class __$ClientCallMuteAllParamsCopyWithImpl<$Res> extends _$ClientCallMuteAllPa
 
   @override
   $Res call({
-    Object jid = freezed,
+    Object? jid = freezed,
   }) {
     return _then(_ClientCallMuteAllParams(
-      jid: jid == freezed ? _value.jid : jid as String,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ClientCallMuteAllParams implements _ClientCallMuteAllParams {
-  const _$_ClientCallMuteAllParams({@required @JsonKey(name: 'jid') this.jid}) : assert(jid != null);
+  const _$_ClientCallMuteAllParams({@JsonKey(name: 'jid') required this.jid});
 
-  factory _$_ClientCallMuteAllParams.fromJson(Map<String, dynamic> json) => _$_$_ClientCallMuteAllParamsFromJson(json);
+  factory _$_ClientCallMuteAllParams.fromJson(Map<String, dynamic> json) => _$$_ClientCallMuteAllParamsFromJson(json);
 
   @override
 
@@ -133,12 +140,12 @@ class _$_ClientCallMuteAllParams implements _ClientCallMuteAllParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ClientCallMuteAllParamsToJson(this);
+    return _$$_ClientCallMuteAllParamsToJson(this);
   }
 }
 
 abstract class _ClientCallMuteAllParams implements ClientCallMuteAllParams {
-  const factory _ClientCallMuteAllParams({@required @JsonKey(name: 'jid') String jid}) = _$_ClientCallMuteAllParams;
+  const factory _ClientCallMuteAllParams({@JsonKey(name: 'jid') required String jid}) = _$_ClientCallMuteAllParams;
 
   factory _ClientCallMuteAllParams.fromJson(Map<String, dynamic> json) = _$_ClientCallMuteAllParams.fromJson;
 
@@ -146,8 +153,8 @@ abstract class _ClientCallMuteAllParams implements ClientCallMuteAllParams {
 
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ClientCallMuteAllParamsCopyWith<_ClientCallMuteAllParams> get copyWith;
+  _$ClientCallMuteAllParamsCopyWith<_ClientCallMuteAllParams> get copyWith => throw _privateConstructorUsedError;
 }

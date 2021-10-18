@@ -6,16 +6,16 @@ part 'server_chat_deleted.g.dart';
 
 /// Chat deleted.
 @freezed
-abstract class ServerChatDeleted with _$ServerChatDeleted {
+class ServerChatDeleted with _$ServerChatDeleted {
   const factory ServerChatDeleted({
     /// .
-    @JsonKey(name: 'params') @required ServerChatDeletedParams params,
+    @JsonKey(name: 'params') required ServerChatDeletedParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerChatDeleted;
 
   factory ServerChatDeleted.fromJson(Map<String, dynamic> json) => _$ServerChatDeletedFromJson(json);

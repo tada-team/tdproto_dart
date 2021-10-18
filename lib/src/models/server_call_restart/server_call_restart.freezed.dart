@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_call_restart.dart';
 
@@ -8,6 +9,10 @@ part of 'server_call_restart.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerCallRestart _$ServerCallRestartFromJson(Map<String, dynamic> json) {
   return _ServerCallRestart.fromJson(json);
 }
@@ -16,11 +21,10 @@ ServerCallRestart _$ServerCallRestartFromJson(Map<String, dynamic> json) {
 class _$ServerCallRestartTearOff {
   const _$ServerCallRestartTearOff();
 
-// ignore: unused_element
   _ServerCallRestart call(
-      {@required @JsonKey(name: 'params') ServerCallRestartParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) {
+      {@JsonKey(name: 'params') required ServerCallRestartParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ServerCallRestart(
       params: params,
       name: name,
@@ -28,33 +32,31 @@ class _$ServerCallRestartTearOff {
     );
   }
 
-// ignore: unused_element
   ServerCallRestart fromJson(Map<String, Object> json) {
     return ServerCallRestart.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerCallRestart = _$ServerCallRestartTearOff();
 
 /// @nodoc
 mixin _$ServerCallRestart {
   /// .
   @JsonKey(name: 'params')
-  ServerCallRestartParams get params;
+  ServerCallRestartParams get params => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerCallRestartCopyWith<ServerCallRestart> get copyWith;
+  $ServerCallRestartCopyWith<ServerCallRestart> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -64,7 +66,7 @@ abstract class $ServerCallRestartCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'params') ServerCallRestartParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   $ServerCallRestartParamsCopyWith<$Res> get params;
 }
@@ -79,22 +81,28 @@ class _$ServerCallRestartCopyWithImpl<$Res> implements $ServerCallRestartCopyWit
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as ServerCallRestartParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerCallRestartParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $ServerCallRestartParamsCopyWith<$Res> get params {
-    if (_value.params == null) {
-      return null;
-    }
     return $ServerCallRestartParamsCopyWith<$Res>(_value.params, (value) {
       return _then(_value.copyWith(params: value));
     });
@@ -109,7 +117,7 @@ abstract class _$ServerCallRestartCopyWith<$Res> implements $ServerCallRestartCo
   $Res call(
       {@JsonKey(name: 'params') ServerCallRestartParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   @override
   $ServerCallRestartParamsCopyWith<$Res> get params;
@@ -126,30 +134,36 @@ class __$ServerCallRestartCopyWithImpl<$Res> extends _$ServerCallRestartCopyWith
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ServerCallRestart(
-      params: params == freezed ? _value.params : params as ServerCallRestartParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerCallRestartParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerCallRestart implements _ServerCallRestart {
   const _$_ServerCallRestart(
-      {@required @JsonKey(name: 'params') this.params,
-      @required @JsonKey(name: 'event') this.name,
-      @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(params != null),
-        assert(name != null);
+      {@JsonKey(name: 'params') required this.params,
+      @JsonKey(name: 'event') required this.name,
+      @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ServerCallRestart.fromJson(Map<String, dynamic> json) => _$_$_ServerCallRestartFromJson(json);
+  factory _$_ServerCallRestart.fromJson(Map<String, dynamic> json) => _$$_ServerCallRestartFromJson(json);
 
   @override
 
@@ -165,7 +179,7 @@ class _$_ServerCallRestart implements _ServerCallRestart {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -196,15 +210,15 @@ class _$_ServerCallRestart implements _ServerCallRestart {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerCallRestartToJson(this);
+    return _$$_ServerCallRestartToJson(this);
   }
 }
 
 abstract class _ServerCallRestart implements ServerCallRestart {
   const factory _ServerCallRestart(
-      {@required @JsonKey(name: 'params') ServerCallRestartParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) = _$_ServerCallRestart;
+      {@JsonKey(name: 'params') required ServerCallRestartParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerCallRestart;
 
   factory _ServerCallRestart.fromJson(Map<String, dynamic> json) = _$_ServerCallRestart.fromJson;
 
@@ -212,18 +226,18 @@ abstract class _ServerCallRestart implements ServerCallRestart {
 
   /// .
   @JsonKey(name: 'params')
-  ServerCallRestartParams get params;
+  ServerCallRestartParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerCallRestartCopyWith<_ServerCallRestart> get copyWith;
+  _$ServerCallRestartCopyWith<_ServerCallRestart> get copyWith => throw _privateConstructorUsedError;
 }

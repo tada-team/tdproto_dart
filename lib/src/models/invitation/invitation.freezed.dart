@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'invitation.dart';
 
@@ -8,6 +9,10 @@ part of 'invitation.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Invitation _$InvitationFromJson(Map<String, dynamic> json) {
   return _Invitation.fromJson(json);
 }
@@ -16,12 +21,11 @@ Invitation _$InvitationFromJson(Map<String, dynamic> json) {
 class _$InvitationTearOff {
   const _$InvitationTearOff();
 
-// ignore: unused_element
   _Invitation call(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'token') String token,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @required @JsonKey(name: 'qr') String qr}) {
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'token') required String token,
+      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'qr') required String qr}) {
     return _Invitation(
       uid: uid,
       token: token,
@@ -30,38 +34,36 @@ class _$InvitationTearOff {
     );
   }
 
-// ignore: unused_element
   Invitation fromJson(Map<String, Object> json) {
     return Invitation.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Invitation = _$InvitationTearOff();
 
 /// @nodoc
 mixin _$Invitation {
   /// .
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'token')
-  String get token;
+  String get token => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created;
+  DateTime get created => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'qr')
-  String get qr;
+  String get qr => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $InvitationCopyWith<Invitation> get copyWith;
+  $InvitationCopyWith<Invitation> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -84,16 +86,28 @@ class _$InvitationCopyWithImpl<$Res> implements $InvitationCopyWith<$Res> {
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object token = freezed,
-    Object created = freezed,
-    Object qr = freezed,
+    Object? uid = freezed,
+    Object? token = freezed,
+    Object? created = freezed,
+    Object? qr = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
-      token: token == freezed ? _value.token : token as String,
-      created: created == freezed ? _value.created : created as DateTime,
-      qr: qr == freezed ? _value.qr : qr as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      token: token == freezed
+          ? _value.token
+          : token // ignore: cast_nullable_to_non_nullable
+              as String,
+      created: created == freezed
+          ? _value.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      qr: qr == freezed
+          ? _value.qr
+          : qr // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -119,35 +133,42 @@ class __$InvitationCopyWithImpl<$Res> extends _$InvitationCopyWithImpl<$Res> imp
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object token = freezed,
-    Object created = freezed,
-    Object qr = freezed,
+    Object? uid = freezed,
+    Object? token = freezed,
+    Object? created = freezed,
+    Object? qr = freezed,
   }) {
     return _then(_Invitation(
-      uid: uid == freezed ? _value.uid : uid as String,
-      token: token == freezed ? _value.token : token as String,
-      created: created == freezed ? _value.created : created as DateTime,
-      qr: qr == freezed ? _value.qr : qr as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      token: token == freezed
+          ? _value.token
+          : token // ignore: cast_nullable_to_non_nullable
+              as String,
+      created: created == freezed
+          ? _value.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      qr: qr == freezed
+          ? _value.qr
+          : qr // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Invitation implements _Invitation {
   const _$_Invitation(
-      {@required @JsonKey(name: 'uid') this.uid,
-      @required @JsonKey(name: 'token') this.token,
-      @required @JsonKey(name: 'created') @DateTimeConverter() this.created,
-      @required @JsonKey(name: 'qr') this.qr})
-      : assert(uid != null),
-        assert(token != null),
-        assert(created != null),
-        assert(qr != null);
+      {@JsonKey(name: 'uid') required this.uid,
+      @JsonKey(name: 'token') required this.token,
+      @JsonKey(name: 'created') @DateTimeConverter() required this.created,
+      @JsonKey(name: 'qr') required this.qr});
 
-  factory _$_Invitation.fromJson(Map<String, dynamic> json) => _$_$_InvitationFromJson(json);
+  factory _$_Invitation.fromJson(Map<String, dynamic> json) => _$$_InvitationFromJson(json);
 
   @override
 
@@ -200,16 +221,16 @@ class _$_Invitation implements _Invitation {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_InvitationToJson(this);
+    return _$$_InvitationToJson(this);
   }
 }
 
 abstract class _Invitation implements Invitation {
   const factory _Invitation(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'token') String token,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @required @JsonKey(name: 'qr') String qr}) = _$_Invitation;
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'token') required String token,
+      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'qr') required String qr}) = _$_Invitation;
 
   factory _Invitation.fromJson(Map<String, dynamic> json) = _$_Invitation.fromJson;
 
@@ -217,24 +238,24 @@ abstract class _Invitation implements Invitation {
 
   /// .
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'token')
-  String get token;
+  String get token => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created;
+  DateTime get created => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'qr')
-  String get qr;
+  String get qr => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$InvitationCopyWith<_Invitation> get copyWith;
+  _$InvitationCopyWith<_Invitation> get copyWith => throw _privateConstructorUsedError;
 }

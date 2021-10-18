@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'group_access_request.dart';
 
@@ -8,6 +9,10 @@ part of 'group_access_request.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 GroupAccessRequest _$GroupAccessRequestFromJson(Map<String, dynamic> json) {
   return _GroupAccessRequest.fromJson(json);
 }
@@ -16,11 +21,10 @@ GroupAccessRequest _$GroupAccessRequestFromJson(Map<String, dynamic> json) {
 class _$GroupAccessRequestTearOff {
   const _$GroupAccessRequestTearOff();
 
-// ignore: unused_element
   _GroupAccessRequest call(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @required @JsonKey(name: 'subject') String subject}) {
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'subject') required String subject}) {
     return _GroupAccessRequest(
       uid: uid,
       created: created,
@@ -28,34 +32,32 @@ class _$GroupAccessRequestTearOff {
     );
   }
 
-// ignore: unused_element
   GroupAccessRequest fromJson(Map<String, Object> json) {
     return GroupAccessRequest.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $GroupAccessRequest = _$GroupAccessRequestTearOff();
 
 /// @nodoc
 mixin _$GroupAccessRequest {
   /// .
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created;
+  DateTime get created => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'subject')
-  String get subject;
+  String get subject => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $GroupAccessRequestCopyWith<GroupAccessRequest> get copyWith;
+  $GroupAccessRequestCopyWith<GroupAccessRequest> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -78,14 +80,23 @@ class _$GroupAccessRequestCopyWithImpl<$Res> implements $GroupAccessRequestCopyW
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object created = freezed,
-    Object subject = freezed,
+    Object? uid = freezed,
+    Object? created = freezed,
+    Object? subject = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
-      created: created == freezed ? _value.created : created as DateTime,
-      subject: subject == freezed ? _value.subject : subject as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      created: created == freezed
+          ? _value.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      subject: subject == freezed
+          ? _value.subject
+          : subject // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -112,31 +123,36 @@ class __$GroupAccessRequestCopyWithImpl<$Res> extends _$GroupAccessRequestCopyWi
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object created = freezed,
-    Object subject = freezed,
+    Object? uid = freezed,
+    Object? created = freezed,
+    Object? subject = freezed,
   }) {
     return _then(_GroupAccessRequest(
-      uid: uid == freezed ? _value.uid : uid as String,
-      created: created == freezed ? _value.created : created as DateTime,
-      subject: subject == freezed ? _value.subject : subject as String,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String,
+      created: created == freezed
+          ? _value.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      subject: subject == freezed
+          ? _value.subject
+          : subject // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_GroupAccessRequest implements _GroupAccessRequest {
   const _$_GroupAccessRequest(
-      {@required @JsonKey(name: 'uid') this.uid,
-      @required @JsonKey(name: 'created') @DateTimeConverter() this.created,
-      @required @JsonKey(name: 'subject') this.subject})
-      : assert(uid != null),
-        assert(created != null),
-        assert(subject != null);
+      {@JsonKey(name: 'uid') required this.uid,
+      @JsonKey(name: 'created') @DateTimeConverter() required this.created,
+      @JsonKey(name: 'subject') required this.subject});
 
-  factory _$_GroupAccessRequest.fromJson(Map<String, dynamic> json) => _$_$_GroupAccessRequestFromJson(json);
+  factory _$_GroupAccessRequest.fromJson(Map<String, dynamic> json) => _$$_GroupAccessRequestFromJson(json);
 
   @override
 
@@ -183,15 +199,15 @@ class _$_GroupAccessRequest implements _GroupAccessRequest {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_GroupAccessRequestToJson(this);
+    return _$$_GroupAccessRequestToJson(this);
   }
 }
 
 abstract class _GroupAccessRequest implements GroupAccessRequest {
   const factory _GroupAccessRequest(
-      {@required @JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
-      @required @JsonKey(name: 'subject') String subject}) = _$_GroupAccessRequest;
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'subject') required String subject}) = _$_GroupAccessRequest;
 
   factory _GroupAccessRequest.fromJson(Map<String, dynamic> json) = _$_GroupAccessRequest.fromJson;
 
@@ -199,19 +215,19 @@ abstract class _GroupAccessRequest implements GroupAccessRequest {
 
   /// .
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created;
+  DateTime get created => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'subject')
-  String get subject;
+  String get subject => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$GroupAccessRequestCopyWith<_GroupAccessRequest> get copyWith;
+  _$GroupAccessRequestCopyWith<_GroupAccessRequest> get copyWith => throw _privateConstructorUsedError;
 }

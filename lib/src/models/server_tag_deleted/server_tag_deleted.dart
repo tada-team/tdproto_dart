@@ -6,16 +6,16 @@ part 'server_tag_deleted.g.dart';
 
 /// Tag deleted.
 @freezed
-abstract class ServerTagDeleted with _$ServerTagDeleted {
+class ServerTagDeleted with _$ServerTagDeleted {
   const factory ServerTagDeleted({
     /// .
-    @JsonKey(name: 'params') @required ServerTagDeletedParams params,
+    @JsonKey(name: 'params') required ServerTagDeletedParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerTagDeleted;
 
   factory ServerTagDeleted.fromJson(Map<String, dynamic> json) => _$ServerTagDeletedFromJson(json);

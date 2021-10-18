@@ -6,16 +6,16 @@ part 'team_short.g.dart';
 
 /// Short team representation. For invites, push notifications, etc. Readonly.
 @freezed
-abstract class TeamShort with _$TeamShort {
+class TeamShort with _$TeamShort {
   const factory TeamShort({
     /// Team id.
-    @JsonKey(name: 'uid') @required String uid,
+    @JsonKey(name: 'uid') required String uid,
 
     /// Team name.
-    @JsonKey(name: 'name') @required String name,
+    @JsonKey(name: 'name') required String name,
 
     /// Team icons.
-    @JsonKey(name: 'icons') @required IconData icons,
+    @JsonKey(name: 'icons') required IconData icons,
   }) = _TeamShort;
 
   factory TeamShort.fromJson(Map<String, dynamic> json) => _$TeamShortFromJson(json);

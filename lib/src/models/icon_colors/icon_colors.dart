@@ -6,16 +6,16 @@ part 'icon_colors.g.dart';
 
 /// IconColors icon colors for app.
 @freezed
-abstract class IconColors with _$IconColors {
+class IconColors with _$IconColors {
   const factory IconColors({
     /// Title color.
-    @JsonKey(name: 'title') @required String title,
+    @JsonKey(name: 'title') required String title,
 
     /// Brand color.
-    @JsonKey(name: 'brand') @required String brand,
+    @JsonKey(name: 'brand') required String brand,
 
     /// Other color.
-    @JsonKey(name: 'other') @required String other,
+    @JsonKey(name: 'other') required String other,
   }) = _IconColors;
 
   factory IconColors.fromJson(Map<String, dynamic> json) => _$IconColorsFromJson(json);

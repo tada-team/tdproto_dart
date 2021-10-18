@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_chat_draft_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_chat_draft_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerChatDraftParams _$ServerChatDraftParamsFromJson(Map<String, dynamic> json) {
   return _ServerChatDraftParams.fromJson(json);
 }
@@ -16,12 +21,11 @@ ServerChatDraftParams _$ServerChatDraftParamsFromJson(Map<String, dynamic> json)
 class _$ServerChatDraftParamsTearOff {
   const _$ServerChatDraftParamsTearOff();
 
-// ignore: unused_element
   _ServerChatDraftParams call(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'draft') String draft,
-      @required @JsonKey(name: 'draft_gentime') int draftGentime,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') int draftNum}) {
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'draft') required String draft,
+      @JsonKey(name: 'draft_gentime') required int draftGentime,
+      @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') required int draftNum}) {
     return _ServerChatDraftParams(
       jid: jid,
       draft: draft,
@@ -30,38 +34,36 @@ class _$ServerChatDraftParamsTearOff {
     );
   }
 
-// ignore: unused_element
   ServerChatDraftParams fromJson(Map<String, Object> json) {
     return ServerChatDraftParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerChatDraftParams = _$ServerChatDraftParamsTearOff();
 
 /// @nodoc
 mixin _$ServerChatDraftParams {
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
   /// Draft text.
   @JsonKey(name: 'draft')
-  String get draft;
+  String get draft => throw _privateConstructorUsedError;
 
   /// Draft version.
   @JsonKey(name: 'draft_gentime')
-  int get draftGentime;
+  int get draftGentime => throw _privateConstructorUsedError;
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'draft_num')
-  int get draftNum;
+  int get draftNum => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerChatDraftParamsCopyWith<ServerChatDraftParams> get copyWith;
+  $ServerChatDraftParamsCopyWith<ServerChatDraftParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -85,16 +87,28 @@ class _$ServerChatDraftParamsCopyWithImpl<$Res> implements $ServerChatDraftParam
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object draft = freezed,
-    Object draftGentime = freezed,
-    Object draftNum = freezed,
+    Object? jid = freezed,
+    Object? draft = freezed,
+    Object? draftGentime = freezed,
+    Object? draftNum = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
-      draft: draft == freezed ? _value.draft : draft as String,
-      draftGentime: draftGentime == freezed ? _value.draftGentime : draftGentime as int,
-      draftNum: draftNum == freezed ? _value.draftNum : draftNum as int,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      draft: draft == freezed
+          ? _value.draft
+          : draft // ignore: cast_nullable_to_non_nullable
+              as String,
+      draftGentime: draftGentime == freezed
+          ? _value.draftGentime
+          : draftGentime // ignore: cast_nullable_to_non_nullable
+              as int,
+      draftNum: draftNum == freezed
+          ? _value.draftNum
+          : draftNum // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -122,35 +136,42 @@ class __$ServerChatDraftParamsCopyWithImpl<$Res> extends _$ServerChatDraftParams
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object draft = freezed,
-    Object draftGentime = freezed,
-    Object draftNum = freezed,
+    Object? jid = freezed,
+    Object? draft = freezed,
+    Object? draftGentime = freezed,
+    Object? draftNum = freezed,
   }) {
     return _then(_ServerChatDraftParams(
-      jid: jid == freezed ? _value.jid : jid as String,
-      draft: draft == freezed ? _value.draft : draft as String,
-      draftGentime: draftGentime == freezed ? _value.draftGentime : draftGentime as int,
-      draftNum: draftNum == freezed ? _value.draftNum : draftNum as int,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      draft: draft == freezed
+          ? _value.draft
+          : draft // ignore: cast_nullable_to_non_nullable
+              as String,
+      draftGentime: draftGentime == freezed
+          ? _value.draftGentime
+          : draftGentime // ignore: cast_nullable_to_non_nullable
+              as int,
+      draftNum: draftNum == freezed
+          ? _value.draftNum
+          : draftNum // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerChatDraftParams implements _ServerChatDraftParams {
   const _$_ServerChatDraftParams(
-      {@required @JsonKey(name: 'jid') this.jid,
-      @required @JsonKey(name: 'draft') this.draft,
-      @required @JsonKey(name: 'draft_gentime') this.draftGentime,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') this.draftNum})
-      : assert(jid != null),
-        assert(draft != null),
-        assert(draftGentime != null),
-        assert(draftNum != null);
+      {@JsonKey(name: 'jid') required this.jid,
+      @JsonKey(name: 'draft') required this.draft,
+      @JsonKey(name: 'draft_gentime') required this.draftGentime,
+      @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') required this.draftNum});
 
-  factory _$_ServerChatDraftParams.fromJson(Map<String, dynamic> json) => _$_$_ServerChatDraftParamsFromJson(json);
+  factory _$_ServerChatDraftParams.fromJson(Map<String, dynamic> json) => _$$_ServerChatDraftParamsFromJson(json);
 
   @override
 
@@ -205,16 +226,16 @@ class _$_ServerChatDraftParams implements _ServerChatDraftParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerChatDraftParamsToJson(this);
+    return _$$_ServerChatDraftParamsToJson(this);
   }
 }
 
 abstract class _ServerChatDraftParams implements ServerChatDraftParams {
   const factory _ServerChatDraftParams(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'draft') String draft,
-      @required @JsonKey(name: 'draft_gentime') int draftGentime,
-      @required @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') int draftNum}) = _$_ServerChatDraftParams;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'draft') required String draft,
+      @JsonKey(name: 'draft_gentime') required int draftGentime,
+      @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') required int draftNum}) = _$_ServerChatDraftParams;
 
   factory _ServerChatDraftParams.fromJson(Map<String, dynamic> json) = _$_ServerChatDraftParams.fromJson;
 
@@ -222,24 +243,24 @@ abstract class _ServerChatDraftParams implements ServerChatDraftParams {
 
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Draft text.
   @JsonKey(name: 'draft')
-  String get draft;
+  String get draft => throw _privateConstructorUsedError;
   @override
 
   /// Draft version.
   @JsonKey(name: 'draft_gentime')
-  int get draftGentime;
+  int get draftGentime => throw _privateConstructorUsedError;
   @override
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'draft_num')
-  int get draftNum;
+  int get draftNum => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerChatDraftParamsCopyWith<_ServerChatDraftParams> get copyWith;
+  _$ServerChatDraftParamsCopyWith<_ServerChatDraftParams> get copyWith => throw _privateConstructorUsedError;
 }

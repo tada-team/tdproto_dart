@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'active_user_daily_stat.dart';
 
@@ -8,6 +9,10 @@ part of 'active_user_daily_stat.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ActiveUserDailyStat _$ActiveUserDailyStatFromJson(Map<String, dynamic> json) {
   return _ActiveUserDailyStat.fromJson(json);
 }
@@ -16,17 +21,16 @@ ActiveUserDailyStat _$ActiveUserDailyStatFromJson(Map<String, dynamic> json) {
 class _$ActiveUserDailyStatTearOff {
   const _$ActiveUserDailyStatTearOff();
 
-// ignore: unused_element
   _ActiveUserDailyStat call(
-      {@required @JsonKey(name: 'day') String day,
-      @required @JsonKey(name: 'user_id') int userId,
-      @JsonKey(name: 'family_name') String familyName,
-      @JsonKey(name: 'given_name') String givenName,
-      @JsonKey(name: 'patronymic') String patronymic,
-      @JsonKey(name: 'phone') String phone,
-      @JsonKey(name: 'messages_count') int messagesCount,
-      @JsonKey(name: 'calls_count') int callsCount,
-      @JsonKey(name: 'call_seconds_total') int callSecondsTotal}) {
+      {@JsonKey(name: 'day') required String day,
+      @JsonKey(name: 'user_id') required int userId,
+      @JsonKey(name: 'family_name') String? familyName,
+      @JsonKey(name: 'given_name') String? givenName,
+      @JsonKey(name: 'patronymic') String? patronymic,
+      @JsonKey(name: 'phone') String? phone,
+      @JsonKey(name: 'messages_count') int? messagesCount,
+      @JsonKey(name: 'calls_count') int? callsCount,
+      @JsonKey(name: 'call_seconds_total') int? callSecondsTotal}) {
     return _ActiveUserDailyStat(
       day: day,
       userId: userId,
@@ -40,57 +44,55 @@ class _$ActiveUserDailyStatTearOff {
     );
   }
 
-// ignore: unused_element
   ActiveUserDailyStat fromJson(Map<String, Object> json) {
     return ActiveUserDailyStat.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ActiveUserDailyStat = _$ActiveUserDailyStatTearOff();
 
 /// @nodoc
 mixin _$ActiveUserDailyStat {
   /// .
   @JsonKey(name: 'day')
-  String get day;
+  String get day => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'user_id')
-  int get userId;
+  int get userId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'family_name')
-  String get familyName;
+  String? get familyName => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'given_name')
-  String get givenName;
+  String? get givenName => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'patronymic')
-  String get patronymic;
+  String? get patronymic => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'phone')
-  String get phone;
+  String? get phone => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'messages_count')
-  int get messagesCount;
+  int? get messagesCount => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'calls_count')
-  int get callsCount;
+  int? get callsCount => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'call_seconds_total')
-  int get callSecondsTotal;
+  int? get callSecondsTotal => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ActiveUserDailyStatCopyWith<ActiveUserDailyStat> get copyWith;
+  $ActiveUserDailyStatCopyWith<ActiveUserDailyStat> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -100,13 +102,13 @@ abstract class $ActiveUserDailyStatCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'day') String day,
       @JsonKey(name: 'user_id') int userId,
-      @JsonKey(name: 'family_name') String familyName,
-      @JsonKey(name: 'given_name') String givenName,
-      @JsonKey(name: 'patronymic') String patronymic,
-      @JsonKey(name: 'phone') String phone,
-      @JsonKey(name: 'messages_count') int messagesCount,
-      @JsonKey(name: 'calls_count') int callsCount,
-      @JsonKey(name: 'call_seconds_total') int callSecondsTotal});
+      @JsonKey(name: 'family_name') String? familyName,
+      @JsonKey(name: 'given_name') String? givenName,
+      @JsonKey(name: 'patronymic') String? patronymic,
+      @JsonKey(name: 'phone') String? phone,
+      @JsonKey(name: 'messages_count') int? messagesCount,
+      @JsonKey(name: 'calls_count') int? callsCount,
+      @JsonKey(name: 'call_seconds_total') int? callSecondsTotal});
 }
 
 /// @nodoc
@@ -119,26 +121,53 @@ class _$ActiveUserDailyStatCopyWithImpl<$Res> implements $ActiveUserDailyStatCop
 
   @override
   $Res call({
-    Object day = freezed,
-    Object userId = freezed,
-    Object familyName = freezed,
-    Object givenName = freezed,
-    Object patronymic = freezed,
-    Object phone = freezed,
-    Object messagesCount = freezed,
-    Object callsCount = freezed,
-    Object callSecondsTotal = freezed,
+    Object? day = freezed,
+    Object? userId = freezed,
+    Object? familyName = freezed,
+    Object? givenName = freezed,
+    Object? patronymic = freezed,
+    Object? phone = freezed,
+    Object? messagesCount = freezed,
+    Object? callsCount = freezed,
+    Object? callSecondsTotal = freezed,
   }) {
     return _then(_value.copyWith(
-      day: day == freezed ? _value.day : day as String,
-      userId: userId == freezed ? _value.userId : userId as int,
-      familyName: familyName == freezed ? _value.familyName : familyName as String,
-      givenName: givenName == freezed ? _value.givenName : givenName as String,
-      patronymic: patronymic == freezed ? _value.patronymic : patronymic as String,
-      phone: phone == freezed ? _value.phone : phone as String,
-      messagesCount: messagesCount == freezed ? _value.messagesCount : messagesCount as int,
-      callsCount: callsCount == freezed ? _value.callsCount : callsCount as int,
-      callSecondsTotal: callSecondsTotal == freezed ? _value.callSecondsTotal : callSecondsTotal as int,
+      day: day == freezed
+          ? _value.day
+          : day // ignore: cast_nullable_to_non_nullable
+              as String,
+      userId: userId == freezed
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as int,
+      familyName: familyName == freezed
+          ? _value.familyName
+          : familyName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      givenName: givenName == freezed
+          ? _value.givenName
+          : givenName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      patronymic: patronymic == freezed
+          ? _value.patronymic
+          : patronymic // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phone: phone == freezed
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      messagesCount: messagesCount == freezed
+          ? _value.messagesCount
+          : messagesCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      callsCount: callsCount == freezed
+          ? _value.callsCount
+          : callsCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      callSecondsTotal: callSecondsTotal == freezed
+          ? _value.callSecondsTotal
+          : callSecondsTotal // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 }
@@ -151,13 +180,13 @@ abstract class _$ActiveUserDailyStatCopyWith<$Res> implements $ActiveUserDailySt
   $Res call(
       {@JsonKey(name: 'day') String day,
       @JsonKey(name: 'user_id') int userId,
-      @JsonKey(name: 'family_name') String familyName,
-      @JsonKey(name: 'given_name') String givenName,
-      @JsonKey(name: 'patronymic') String patronymic,
-      @JsonKey(name: 'phone') String phone,
-      @JsonKey(name: 'messages_count') int messagesCount,
-      @JsonKey(name: 'calls_count') int callsCount,
-      @JsonKey(name: 'call_seconds_total') int callSecondsTotal});
+      @JsonKey(name: 'family_name') String? familyName,
+      @JsonKey(name: 'given_name') String? givenName,
+      @JsonKey(name: 'patronymic') String? patronymic,
+      @JsonKey(name: 'phone') String? phone,
+      @JsonKey(name: 'messages_count') int? messagesCount,
+      @JsonKey(name: 'calls_count') int? callsCount,
+      @JsonKey(name: 'call_seconds_total') int? callSecondsTotal});
 }
 
 /// @nodoc
@@ -171,48 +200,72 @@ class __$ActiveUserDailyStatCopyWithImpl<$Res> extends _$ActiveUserDailyStatCopy
 
   @override
   $Res call({
-    Object day = freezed,
-    Object userId = freezed,
-    Object familyName = freezed,
-    Object givenName = freezed,
-    Object patronymic = freezed,
-    Object phone = freezed,
-    Object messagesCount = freezed,
-    Object callsCount = freezed,
-    Object callSecondsTotal = freezed,
+    Object? day = freezed,
+    Object? userId = freezed,
+    Object? familyName = freezed,
+    Object? givenName = freezed,
+    Object? patronymic = freezed,
+    Object? phone = freezed,
+    Object? messagesCount = freezed,
+    Object? callsCount = freezed,
+    Object? callSecondsTotal = freezed,
   }) {
     return _then(_ActiveUserDailyStat(
-      day: day == freezed ? _value.day : day as String,
-      userId: userId == freezed ? _value.userId : userId as int,
-      familyName: familyName == freezed ? _value.familyName : familyName as String,
-      givenName: givenName == freezed ? _value.givenName : givenName as String,
-      patronymic: patronymic == freezed ? _value.patronymic : patronymic as String,
-      phone: phone == freezed ? _value.phone : phone as String,
-      messagesCount: messagesCount == freezed ? _value.messagesCount : messagesCount as int,
-      callsCount: callsCount == freezed ? _value.callsCount : callsCount as int,
-      callSecondsTotal: callSecondsTotal == freezed ? _value.callSecondsTotal : callSecondsTotal as int,
+      day: day == freezed
+          ? _value.day
+          : day // ignore: cast_nullable_to_non_nullable
+              as String,
+      userId: userId == freezed
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as int,
+      familyName: familyName == freezed
+          ? _value.familyName
+          : familyName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      givenName: givenName == freezed
+          ? _value.givenName
+          : givenName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      patronymic: patronymic == freezed
+          ? _value.patronymic
+          : patronymic // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phone: phone == freezed
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      messagesCount: messagesCount == freezed
+          ? _value.messagesCount
+          : messagesCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      callsCount: callsCount == freezed
+          ? _value.callsCount
+          : callsCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      callSecondsTotal: callSecondsTotal == freezed
+          ? _value.callSecondsTotal
+          : callSecondsTotal // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ActiveUserDailyStat implements _ActiveUserDailyStat {
   const _$_ActiveUserDailyStat(
-      {@required @JsonKey(name: 'day') this.day,
-      @required @JsonKey(name: 'user_id') this.userId,
+      {@JsonKey(name: 'day') required this.day,
+      @JsonKey(name: 'user_id') required this.userId,
       @JsonKey(name: 'family_name') this.familyName,
       @JsonKey(name: 'given_name') this.givenName,
       @JsonKey(name: 'patronymic') this.patronymic,
       @JsonKey(name: 'phone') this.phone,
       @JsonKey(name: 'messages_count') this.messagesCount,
       @JsonKey(name: 'calls_count') this.callsCount,
-      @JsonKey(name: 'call_seconds_total') this.callSecondsTotal})
-      : assert(day != null),
-        assert(userId != null);
+      @JsonKey(name: 'call_seconds_total') this.callSecondsTotal});
 
-  factory _$_ActiveUserDailyStat.fromJson(Map<String, dynamic> json) => _$_$_ActiveUserDailyStatFromJson(json);
+  factory _$_ActiveUserDailyStat.fromJson(Map<String, dynamic> json) => _$$_ActiveUserDailyStatFromJson(json);
 
   @override
 
@@ -228,37 +281,37 @@ class _$_ActiveUserDailyStat implements _ActiveUserDailyStat {
 
   /// .
   @JsonKey(name: 'family_name')
-  final String familyName;
+  final String? familyName;
   @override
 
   /// .
   @JsonKey(name: 'given_name')
-  final String givenName;
+  final String? givenName;
   @override
 
   /// .
   @JsonKey(name: 'patronymic')
-  final String patronymic;
+  final String? patronymic;
   @override
 
   /// .
   @JsonKey(name: 'phone')
-  final String phone;
+  final String? phone;
   @override
 
   /// .
   @JsonKey(name: 'messages_count')
-  final int messagesCount;
+  final int? messagesCount;
   @override
 
   /// .
   @JsonKey(name: 'calls_count')
-  final int callsCount;
+  final int? callsCount;
   @override
 
   /// .
   @JsonKey(name: 'call_seconds_total')
-  final int callSecondsTotal;
+  final int? callSecondsTotal;
 
   @override
   String toString() {
@@ -306,21 +359,21 @@ class _$_ActiveUserDailyStat implements _ActiveUserDailyStat {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ActiveUserDailyStatToJson(this);
+    return _$$_ActiveUserDailyStatToJson(this);
   }
 }
 
 abstract class _ActiveUserDailyStat implements ActiveUserDailyStat {
   const factory _ActiveUserDailyStat(
-      {@required @JsonKey(name: 'day') String day,
-      @required @JsonKey(name: 'user_id') int userId,
-      @JsonKey(name: 'family_name') String familyName,
-      @JsonKey(name: 'given_name') String givenName,
-      @JsonKey(name: 'patronymic') String patronymic,
-      @JsonKey(name: 'phone') String phone,
-      @JsonKey(name: 'messages_count') int messagesCount,
-      @JsonKey(name: 'calls_count') int callsCount,
-      @JsonKey(name: 'call_seconds_total') int callSecondsTotal}) = _$_ActiveUserDailyStat;
+      {@JsonKey(name: 'day') required String day,
+      @JsonKey(name: 'user_id') required int userId,
+      @JsonKey(name: 'family_name') String? familyName,
+      @JsonKey(name: 'given_name') String? givenName,
+      @JsonKey(name: 'patronymic') String? patronymic,
+      @JsonKey(name: 'phone') String? phone,
+      @JsonKey(name: 'messages_count') int? messagesCount,
+      @JsonKey(name: 'calls_count') int? callsCount,
+      @JsonKey(name: 'call_seconds_total') int? callSecondsTotal}) = _$_ActiveUserDailyStat;
 
   factory _ActiveUserDailyStat.fromJson(Map<String, dynamic> json) = _$_ActiveUserDailyStat.fromJson;
 
@@ -328,48 +381,48 @@ abstract class _ActiveUserDailyStat implements ActiveUserDailyStat {
 
   /// .
   @JsonKey(name: 'day')
-  String get day;
+  String get day => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'user_id')
-  int get userId;
+  int get userId => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'family_name')
-  String get familyName;
+  String? get familyName => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'given_name')
-  String get givenName;
+  String? get givenName => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'patronymic')
-  String get patronymic;
+  String? get patronymic => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'phone')
-  String get phone;
+  String? get phone => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'messages_count')
-  int get messagesCount;
+  int? get messagesCount => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'calls_count')
-  int get callsCount;
+  int? get callsCount => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'call_seconds_total')
-  int get callSecondsTotal;
+  int? get callSecondsTotal => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ActiveUserDailyStatCopyWith<_ActiveUserDailyStat> get copyWith;
+  _$ActiveUserDailyStatCopyWith<_ActiveUserDailyStat> get copyWith => throw _privateConstructorUsedError;
 }

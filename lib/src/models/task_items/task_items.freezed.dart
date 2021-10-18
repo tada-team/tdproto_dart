@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'task_items.dart';
 
@@ -8,6 +9,10 @@ part of 'task_items.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 TaskItems _$TaskItemsFromJson(Map<String, dynamic> json) {
   return _TaskItems.fromJson(json);
 }
@@ -16,37 +21,35 @@ TaskItems _$TaskItemsFromJson(Map<String, dynamic> json) {
 class _$TaskItemsTearOff {
   const _$TaskItemsTearOff();
 
-// ignore: unused_element
-  _TaskItems call({@required @JsonKey(name: 'name') String name, @required @JsonKey(name: 'checked') bool checked}) {
+  _TaskItems call(
+      {@JsonKey(name: 'name') required String name, @JsonKey(name: 'checked') required bool checked = false}) {
     return _TaskItems(
       name: name,
       checked: checked,
     );
   }
 
-// ignore: unused_element
   TaskItems fromJson(Map<String, Object> json) {
     return TaskItems.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $TaskItems = _$TaskItemsTearOff();
 
 /// @nodoc
 mixin _$TaskItems {
   /// .
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'checked')
-  bool get checked;
+  bool get checked => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $TaskItemsCopyWith<TaskItems> get copyWith;
+  $TaskItemsCopyWith<TaskItems> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -65,12 +68,18 @@ class _$TaskItemsCopyWithImpl<$Res> implements $TaskItemsCopyWith<$Res> {
 
   @override
   $Res call({
-    Object name = freezed,
-    Object checked = freezed,
+    Object? name = freezed,
+    Object? checked = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed ? _value.name : name as String,
-      checked: checked == freezed ? _value.checked : checked as bool,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      checked: checked == freezed
+          ? _value.checked
+          : checked // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -92,25 +101,29 @@ class __$TaskItemsCopyWithImpl<$Res> extends _$TaskItemsCopyWithImpl<$Res> imple
 
   @override
   $Res call({
-    Object name = freezed,
-    Object checked = freezed,
+    Object? name = freezed,
+    Object? checked = freezed,
   }) {
     return _then(_TaskItems(
-      name: name == freezed ? _value.name : name as String,
-      checked: checked == freezed ? _value.checked : checked as bool,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      checked: checked == freezed
+          ? _value.checked
+          : checked // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_TaskItems implements _TaskItems {
-  const _$_TaskItems({@required @JsonKey(name: 'name') this.name, @required @JsonKey(name: 'checked') this.checked})
-      : assert(name != null),
-        assert(checked != null);
+  const _$_TaskItems(
+      {@JsonKey(name: 'name') required this.name, @JsonKey(name: 'checked') required this.checked = false});
 
-  factory _$_TaskItems.fromJson(Map<String, dynamic> json) => _$_$_TaskItemsFromJson(json);
+  factory _$_TaskItems.fromJson(Map<String, dynamic> json) => _$$_TaskItemsFromJson(json);
 
   @override
 
@@ -146,13 +159,13 @@ class _$_TaskItems implements _TaskItems {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_TaskItemsToJson(this);
+    return _$$_TaskItemsToJson(this);
   }
 }
 
 abstract class _TaskItems implements TaskItems {
   const factory _TaskItems(
-      {@required @JsonKey(name: 'name') String name, @required @JsonKey(name: 'checked') bool checked}) = _$_TaskItems;
+      {@JsonKey(name: 'name') required String name, @JsonKey(name: 'checked') required bool checked}) = _$_TaskItems;
 
   factory _TaskItems.fromJson(Map<String, dynamic> json) = _$_TaskItems.fromJson;
 
@@ -160,13 +173,13 @@ abstract class _TaskItems implements TaskItems {
 
   /// .
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'checked')
-  bool get checked;
+  bool get checked => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TaskItemsCopyWith<_TaskItems> get copyWith;
+  _$TaskItemsCopyWith<_TaskItems> get copyWith => throw _privateConstructorUsedError;
 }

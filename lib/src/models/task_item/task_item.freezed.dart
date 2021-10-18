@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'task_item.dart';
 
@@ -8,6 +9,10 @@ part of 'task_item.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 TaskItem _$TaskItemFromJson(Map<String, dynamic> json) {
   return _TaskItem.fromJson(json);
 }
@@ -16,16 +21,15 @@ TaskItem _$TaskItemFromJson(Map<String, dynamic> json) {
 class _$TaskItemTearOff {
   const _$TaskItemTearOff();
 
-// ignore: unused_element
   _TaskItem call(
-      {@JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'gentime') int gentime,
-      @JsonKey(name: 'sort_ordering') int sortOrdering,
-      @required @JsonKey(name: 'text') String text,
-      @JsonKey(name: 'checked') bool checked,
-      @JsonKey(name: 'can_toggle') bool canToggle,
-      @JsonKey(name: 'can_change') bool canChange,
-      @JsonKey(name: 'subtask') Subtask subtask}) {
+      {@JsonKey(name: 'uid') String? uid,
+      @JsonKey(name: 'gentime') required int gentime,
+      @JsonKey(name: 'sort_ordering') int? sortOrdering,
+      @JsonKey(name: 'text') required String text,
+      @JsonKey(name: 'checked') bool? checked = false,
+      @JsonKey(name: 'can_toggle') bool? canToggle = false,
+      @JsonKey(name: 'can_change') bool? canChange = false,
+      @JsonKey(name: 'subtask') Subtask? subtask}) {
     return _TaskItem(
       uid: uid,
       gentime: gentime,
@@ -38,69 +42,67 @@ class _$TaskItemTearOff {
     );
   }
 
-// ignore: unused_element
   TaskItem fromJson(Map<String, Object> json) {
     return TaskItem.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $TaskItem = _$TaskItemTearOff();
 
 /// @nodoc
 mixin _$TaskItem {
   /// Id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String? get uid => throw _privateConstructorUsedError;
 
   /// Object version.
   @JsonKey(name: 'gentime')
-  int get gentime;
+  int get gentime => throw _privateConstructorUsedError;
 
   /// Sort ordering.
   @JsonKey(name: 'sort_ordering')
-  int get sortOrdering;
+  int? get sortOrdering => throw _privateConstructorUsedError;
 
   /// Text or "#{OtherTaskNumber}".
   @JsonKey(name: 'text')
-  String get text;
+  String get text => throw _privateConstructorUsedError;
 
   /// Item checked.
   @JsonKey(name: 'checked')
-  bool get checked;
+  bool? get checked => throw _privateConstructorUsedError;
 
   /// Can I toggle this item.
   @JsonKey(name: 'can_toggle')
-  bool get canToggle;
+  bool? get canToggle => throw _privateConstructorUsedError;
 
   /// Can I change this item.
   @JsonKey(name: 'can_change')
-  bool get canChange;
+  bool? get canChange => throw _privateConstructorUsedError;
 
   /// Link to subtask. Optional.
   @JsonKey(name: 'subtask')
-  Subtask get subtask;
+  Subtask? get subtask => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $TaskItemCopyWith<TaskItem> get copyWith;
+  $TaskItemCopyWith<TaskItem> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $TaskItemCopyWith<$Res> {
   factory $TaskItemCopyWith(TaskItem value, $Res Function(TaskItem) then) = _$TaskItemCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'uid') String uid,
+      {@JsonKey(name: 'uid') String? uid,
       @JsonKey(name: 'gentime') int gentime,
-      @JsonKey(name: 'sort_ordering') int sortOrdering,
+      @JsonKey(name: 'sort_ordering') int? sortOrdering,
       @JsonKey(name: 'text') String text,
-      @JsonKey(name: 'checked') bool checked,
-      @JsonKey(name: 'can_toggle') bool canToggle,
-      @JsonKey(name: 'can_change') bool canChange,
-      @JsonKey(name: 'subtask') Subtask subtask});
+      @JsonKey(name: 'checked') bool? checked,
+      @JsonKey(name: 'can_toggle') bool? canToggle,
+      @JsonKey(name: 'can_change') bool? canChange,
+      @JsonKey(name: 'subtask') Subtask? subtask});
 
-  $SubtaskCopyWith<$Res> get subtask;
+  $SubtaskCopyWith<$Res>? get subtask;
 }
 
 /// @nodoc
@@ -113,33 +115,58 @@ class _$TaskItemCopyWithImpl<$Res> implements $TaskItemCopyWith<$Res> {
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object gentime = freezed,
-    Object sortOrdering = freezed,
-    Object text = freezed,
-    Object checked = freezed,
-    Object canToggle = freezed,
-    Object canChange = freezed,
-    Object subtask = freezed,
+    Object? uid = freezed,
+    Object? gentime = freezed,
+    Object? sortOrdering = freezed,
+    Object? text = freezed,
+    Object? checked = freezed,
+    Object? canToggle = freezed,
+    Object? canChange = freezed,
+    Object? subtask = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed ? _value.uid : uid as String,
-      gentime: gentime == freezed ? _value.gentime : gentime as int,
-      sortOrdering: sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
-      text: text == freezed ? _value.text : text as String,
-      checked: checked == freezed ? _value.checked : checked as bool,
-      canToggle: canToggle == freezed ? _value.canToggle : canToggle as bool,
-      canChange: canChange == freezed ? _value.canChange : canChange as bool,
-      subtask: subtask == freezed ? _value.subtask : subtask as Subtask,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String?,
+      gentime: gentime == freezed
+          ? _value.gentime
+          : gentime // ignore: cast_nullable_to_non_nullable
+              as int,
+      sortOrdering: sortOrdering == freezed
+          ? _value.sortOrdering
+          : sortOrdering // ignore: cast_nullable_to_non_nullable
+              as int?,
+      text: text == freezed
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String,
+      checked: checked == freezed
+          ? _value.checked
+          : checked // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      canToggle: canToggle == freezed
+          ? _value.canToggle
+          : canToggle // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      canChange: canChange == freezed
+          ? _value.canChange
+          : canChange // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      subtask: subtask == freezed
+          ? _value.subtask
+          : subtask // ignore: cast_nullable_to_non_nullable
+              as Subtask?,
     ));
   }
 
   @override
-  $SubtaskCopyWith<$Res> get subtask {
+  $SubtaskCopyWith<$Res>? get subtask {
     if (_value.subtask == null) {
       return null;
     }
-    return $SubtaskCopyWith<$Res>(_value.subtask, (value) {
+
+    return $SubtaskCopyWith<$Res>(_value.subtask!, (value) {
       return _then(_value.copyWith(subtask: value));
     });
   }
@@ -150,17 +177,17 @@ abstract class _$TaskItemCopyWith<$Res> implements $TaskItemCopyWith<$Res> {
   factory _$TaskItemCopyWith(_TaskItem value, $Res Function(_TaskItem) then) = __$TaskItemCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'uid') String uid,
+      {@JsonKey(name: 'uid') String? uid,
       @JsonKey(name: 'gentime') int gentime,
-      @JsonKey(name: 'sort_ordering') int sortOrdering,
+      @JsonKey(name: 'sort_ordering') int? sortOrdering,
       @JsonKey(name: 'text') String text,
-      @JsonKey(name: 'checked') bool checked,
-      @JsonKey(name: 'can_toggle') bool canToggle,
-      @JsonKey(name: 'can_change') bool canChange,
-      @JsonKey(name: 'subtask') Subtask subtask});
+      @JsonKey(name: 'checked') bool? checked,
+      @JsonKey(name: 'can_toggle') bool? canToggle,
+      @JsonKey(name: 'can_change') bool? canChange,
+      @JsonKey(name: 'subtask') Subtask? subtask});
 
   @override
-  $SubtaskCopyWith<$Res> get subtask;
+  $SubtaskCopyWith<$Res>? get subtask;
 }
 
 /// @nodoc
@@ -173,51 +200,72 @@ class __$TaskItemCopyWithImpl<$Res> extends _$TaskItemCopyWithImpl<$Res> impleme
 
   @override
   $Res call({
-    Object uid = freezed,
-    Object gentime = freezed,
-    Object sortOrdering = freezed,
-    Object text = freezed,
-    Object checked = freezed,
-    Object canToggle = freezed,
-    Object canChange = freezed,
-    Object subtask = freezed,
+    Object? uid = freezed,
+    Object? gentime = freezed,
+    Object? sortOrdering = freezed,
+    Object? text = freezed,
+    Object? checked = freezed,
+    Object? canToggle = freezed,
+    Object? canChange = freezed,
+    Object? subtask = freezed,
   }) {
     return _then(_TaskItem(
-      uid: uid == freezed ? _value.uid : uid as String,
-      gentime: gentime == freezed ? _value.gentime : gentime as int,
-      sortOrdering: sortOrdering == freezed ? _value.sortOrdering : sortOrdering as int,
-      text: text == freezed ? _value.text : text as String,
-      checked: checked == freezed ? _value.checked : checked as bool,
-      canToggle: canToggle == freezed ? _value.canToggle : canToggle as bool,
-      canChange: canChange == freezed ? _value.canChange : canChange as bool,
-      subtask: subtask == freezed ? _value.subtask : subtask as Subtask,
+      uid: uid == freezed
+          ? _value.uid
+          : uid // ignore: cast_nullable_to_non_nullable
+              as String?,
+      gentime: gentime == freezed
+          ? _value.gentime
+          : gentime // ignore: cast_nullable_to_non_nullable
+              as int,
+      sortOrdering: sortOrdering == freezed
+          ? _value.sortOrdering
+          : sortOrdering // ignore: cast_nullable_to_non_nullable
+              as int?,
+      text: text == freezed
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String,
+      checked: checked == freezed
+          ? _value.checked
+          : checked // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      canToggle: canToggle == freezed
+          ? _value.canToggle
+          : canToggle // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      canChange: canChange == freezed
+          ? _value.canChange
+          : canChange // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      subtask: subtask == freezed
+          ? _value.subtask
+          : subtask // ignore: cast_nullable_to_non_nullable
+              as Subtask?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_TaskItem implements _TaskItem {
   const _$_TaskItem(
       {@JsonKey(name: 'uid') this.uid,
-      @required @JsonKey(name: 'gentime') this.gentime,
+      @JsonKey(name: 'gentime') required this.gentime,
       @JsonKey(name: 'sort_ordering') this.sortOrdering,
-      @required @JsonKey(name: 'text') this.text,
-      @JsonKey(name: 'checked') this.checked,
-      @JsonKey(name: 'can_toggle') this.canToggle,
-      @JsonKey(name: 'can_change') this.canChange,
-      @JsonKey(name: 'subtask') this.subtask})
-      : assert(gentime != null),
-        assert(text != null);
+      @JsonKey(name: 'text') required this.text,
+      @JsonKey(name: 'checked') this.checked = false,
+      @JsonKey(name: 'can_toggle') this.canToggle = false,
+      @JsonKey(name: 'can_change') this.canChange = false,
+      @JsonKey(name: 'subtask') this.subtask});
 
-  factory _$_TaskItem.fromJson(Map<String, dynamic> json) => _$_$_TaskItemFromJson(json);
+  factory _$_TaskItem.fromJson(Map<String, dynamic> json) => _$$_TaskItemFromJson(json);
 
   @override
 
   /// Id.
   @JsonKey(name: 'uid')
-  final String uid;
+  final String? uid;
   @override
 
   /// Object version.
@@ -227,7 +275,7 @@ class _$_TaskItem implements _TaskItem {
 
   /// Sort ordering.
   @JsonKey(name: 'sort_ordering')
-  final int sortOrdering;
+  final int? sortOrdering;
   @override
 
   /// Text or "#{OtherTaskNumber}".
@@ -237,22 +285,22 @@ class _$_TaskItem implements _TaskItem {
 
   /// Item checked.
   @JsonKey(name: 'checked')
-  final bool checked;
+  final bool? checked;
   @override
 
   /// Can I toggle this item.
   @JsonKey(name: 'can_toggle')
-  final bool canToggle;
+  final bool? canToggle;
   @override
 
   /// Can I change this item.
   @JsonKey(name: 'can_change')
-  final bool canChange;
+  final bool? canChange;
   @override
 
   /// Link to subtask. Optional.
   @JsonKey(name: 'subtask')
-  final Subtask subtask;
+  final Subtask? subtask;
 
   @override
   String toString() {
@@ -294,20 +342,20 @@ class _$_TaskItem implements _TaskItem {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_TaskItemToJson(this);
+    return _$$_TaskItemToJson(this);
   }
 }
 
 abstract class _TaskItem implements TaskItem {
   const factory _TaskItem(
-      {@JsonKey(name: 'uid') String uid,
-      @required @JsonKey(name: 'gentime') int gentime,
-      @JsonKey(name: 'sort_ordering') int sortOrdering,
-      @required @JsonKey(name: 'text') String text,
-      @JsonKey(name: 'checked') bool checked,
-      @JsonKey(name: 'can_toggle') bool canToggle,
-      @JsonKey(name: 'can_change') bool canChange,
-      @JsonKey(name: 'subtask') Subtask subtask}) = _$_TaskItem;
+      {@JsonKey(name: 'uid') String? uid,
+      @JsonKey(name: 'gentime') required int gentime,
+      @JsonKey(name: 'sort_ordering') int? sortOrdering,
+      @JsonKey(name: 'text') required String text,
+      @JsonKey(name: 'checked') bool? checked,
+      @JsonKey(name: 'can_toggle') bool? canToggle,
+      @JsonKey(name: 'can_change') bool? canChange,
+      @JsonKey(name: 'subtask') Subtask? subtask}) = _$_TaskItem;
 
   factory _TaskItem.fromJson(Map<String, dynamic> json) = _$_TaskItem.fromJson;
 
@@ -315,43 +363,43 @@ abstract class _TaskItem implements TaskItem {
 
   /// Id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String? get uid => throw _privateConstructorUsedError;
   @override
 
   /// Object version.
   @JsonKey(name: 'gentime')
-  int get gentime;
+  int get gentime => throw _privateConstructorUsedError;
   @override
 
   /// Sort ordering.
   @JsonKey(name: 'sort_ordering')
-  int get sortOrdering;
+  int? get sortOrdering => throw _privateConstructorUsedError;
   @override
 
   /// Text or "#{OtherTaskNumber}".
   @JsonKey(name: 'text')
-  String get text;
+  String get text => throw _privateConstructorUsedError;
   @override
 
   /// Item checked.
   @JsonKey(name: 'checked')
-  bool get checked;
+  bool? get checked => throw _privateConstructorUsedError;
   @override
 
   /// Can I toggle this item.
   @JsonKey(name: 'can_toggle')
-  bool get canToggle;
+  bool? get canToggle => throw _privateConstructorUsedError;
   @override
 
   /// Can I change this item.
   @JsonKey(name: 'can_change')
-  bool get canChange;
+  bool? get canChange => throw _privateConstructorUsedError;
   @override
 
   /// Link to subtask. Optional.
   @JsonKey(name: 'subtask')
-  Subtask get subtask;
+  Subtask? get subtask => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TaskItemCopyWith<_TaskItem> get copyWith;
+  _$TaskItemCopyWith<_TaskItem> get copyWith => throw _privateConstructorUsedError;
 }

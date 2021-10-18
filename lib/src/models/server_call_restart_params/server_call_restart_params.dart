@@ -6,16 +6,16 @@ part 'server_call_restart_params.g.dart';
 
 /// Params of the server.call.restart event.
 @freezed
-abstract class ServerCallRestartParams with _$ServerCallRestartParams {
+class ServerCallRestartParams with _$ServerCallRestartParams {
   const factory ServerCallRestartParams({
     /// Chat or contact id.
-    @JsonKey(name: 'jid') @required String jid,
+    @JsonKey(name: 'jid') required String jid,
 
     /// Call id.
-    @JsonKey(name: 'uid') @required String uid,
+    @JsonKey(name: 'uid') required String uid,
 
     /// Team id.
-    @JsonKey(name: 'team') @required String team,
+    @JsonKey(name: 'team') required String team,
   }) = _ServerCallRestartParams;
 
   factory ServerCallRestartParams.fromJson(Map<String, dynamic> json) => _$ServerCallRestartParamsFromJson(json);

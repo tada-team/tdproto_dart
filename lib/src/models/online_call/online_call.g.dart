@@ -6,18 +6,16 @@ part of 'online_call.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_OnlineCall _$_$_OnlineCallFromJson(Map<String, dynamic> json) {
-  return _$_OnlineCall(
-    jid: json['jid'] as String,
-    uid: json['uid'] as String,
-    start: const DateTimeConverter().fromJson(json['start'] as String),
-    onlineCount: json['online_count'] as int,
-  );
-}
+_$_OnlineCall _$$_OnlineCallFromJson(Map<String, dynamic> json) => _$_OnlineCall(
+      jid: json['jid'] as String,
+      uid: json['uid'] as String,
+      start: json['start'] == null ? null : DateTime.parse(json['start'] as String),
+      onlineCount: json['online_count'] as int?,
+    );
 
-Map<String, dynamic> _$_$_OnlineCallToJson(_$_OnlineCall instance) => <String, dynamic>{
+Map<String, dynamic> _$$_OnlineCallToJson(_$_OnlineCall instance) => <String, dynamic>{
       'jid': instance.jid,
       'uid': instance.uid,
-      'start': const DateTimeConverter().toJson(instance.start),
+      'start': instance.start?.toIso8601String(),
       'online_count': instance.onlineCount,
     };

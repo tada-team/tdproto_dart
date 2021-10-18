@@ -6,13 +6,13 @@ part 'base_event.g.dart';
 
 /// Base of all events.
 @freezed
-abstract class BaseEvent with _$BaseEvent {
+class BaseEvent with _$BaseEvent {
   const factory BaseEvent({
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _BaseEvent;
 
   factory BaseEvent.fromJson(Map<String, dynamic> json) => _$BaseEventFromJson(json);

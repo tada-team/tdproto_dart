@@ -6,16 +6,16 @@ part 'server_team_updated.g.dart';
 
 /// Team created or changed.
 @freezed
-abstract class ServerTeamUpdated with _$ServerTeamUpdated {
+class ServerTeamUpdated with _$ServerTeamUpdated {
   const factory ServerTeamUpdated({
     /// .
-    @JsonKey(name: 'params') @required ServerTeamUpdatedParams params,
+    @JsonKey(name: 'params') required ServerTeamUpdatedParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerTeamUpdated;
 
   factory ServerTeamUpdated.fromJson(Map<String, dynamic> json) => _$ServerTeamUpdatedFromJson(json);

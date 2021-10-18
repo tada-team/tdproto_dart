@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_ui_settings.dart';
 
@@ -8,6 +9,10 @@ part of 'server_ui_settings.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerUiSettings _$ServerUiSettingsFromJson(Map<String, dynamic> json) {
   return _ServerUiSettings.fromJson(json);
 }
@@ -16,11 +21,10 @@ ServerUiSettings _$ServerUiSettingsFromJson(Map<String, dynamic> json) {
 class _$ServerUiSettingsTearOff {
   const _$ServerUiSettingsTearOff();
 
-// ignore: unused_element
   _ServerUiSettings call(
-      {@required @JsonKey(name: 'params') ServerUiSettingsParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) {
+      {@JsonKey(name: 'params') required ServerUiSettingsParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ServerUiSettings(
       params: params,
       name: name,
@@ -28,33 +32,31 @@ class _$ServerUiSettingsTearOff {
     );
   }
 
-// ignore: unused_element
   ServerUiSettings fromJson(Map<String, Object> json) {
     return ServerUiSettings.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerUiSettings = _$ServerUiSettingsTearOff();
 
 /// @nodoc
 mixin _$ServerUiSettings {
   /// .
   @JsonKey(name: 'params')
-  ServerUiSettingsParams get params;
+  ServerUiSettingsParams get params => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerUiSettingsCopyWith<ServerUiSettings> get copyWith;
+  $ServerUiSettingsCopyWith<ServerUiSettings> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -64,7 +66,7 @@ abstract class $ServerUiSettingsCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'params') ServerUiSettingsParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   $ServerUiSettingsParamsCopyWith<$Res> get params;
 }
@@ -79,22 +81,28 @@ class _$ServerUiSettingsCopyWithImpl<$Res> implements $ServerUiSettingsCopyWith<
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as ServerUiSettingsParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerUiSettingsParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $ServerUiSettingsParamsCopyWith<$Res> get params {
-    if (_value.params == null) {
-      return null;
-    }
     return $ServerUiSettingsParamsCopyWith<$Res>(_value.params, (value) {
       return _then(_value.copyWith(params: value));
     });
@@ -109,7 +117,7 @@ abstract class _$ServerUiSettingsCopyWith<$Res> implements $ServerUiSettingsCopy
   $Res call(
       {@JsonKey(name: 'params') ServerUiSettingsParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   @override
   $ServerUiSettingsParamsCopyWith<$Res> get params;
@@ -126,30 +134,36 @@ class __$ServerUiSettingsCopyWithImpl<$Res> extends _$ServerUiSettingsCopyWithIm
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ServerUiSettings(
-      params: params == freezed ? _value.params : params as ServerUiSettingsParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerUiSettingsParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerUiSettings implements _ServerUiSettings {
   const _$_ServerUiSettings(
-      {@required @JsonKey(name: 'params') this.params,
-      @required @JsonKey(name: 'event') this.name,
-      @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(params != null),
-        assert(name != null);
+      {@JsonKey(name: 'params') required this.params,
+      @JsonKey(name: 'event') required this.name,
+      @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ServerUiSettings.fromJson(Map<String, dynamic> json) => _$_$_ServerUiSettingsFromJson(json);
+  factory _$_ServerUiSettings.fromJson(Map<String, dynamic> json) => _$$_ServerUiSettingsFromJson(json);
 
   @override
 
@@ -165,7 +179,7 @@ class _$_ServerUiSettings implements _ServerUiSettings {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -196,15 +210,15 @@ class _$_ServerUiSettings implements _ServerUiSettings {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerUiSettingsToJson(this);
+    return _$$_ServerUiSettingsToJson(this);
   }
 }
 
 abstract class _ServerUiSettings implements ServerUiSettings {
   const factory _ServerUiSettings(
-      {@required @JsonKey(name: 'params') ServerUiSettingsParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) = _$_ServerUiSettings;
+      {@JsonKey(name: 'params') required ServerUiSettingsParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerUiSettings;
 
   factory _ServerUiSettings.fromJson(Map<String, dynamic> json) = _$_ServerUiSettings.fromJson;
 
@@ -212,18 +226,18 @@ abstract class _ServerUiSettings implements ServerUiSettings {
 
   /// .
   @JsonKey(name: 'params')
-  ServerUiSettingsParams get params;
+  ServerUiSettingsParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerUiSettingsCopyWith<_ServerUiSettings> get copyWith;
+  _$ServerUiSettingsCopyWith<_ServerUiSettings> get copyWith => throw _privateConstructorUsedError;
 }

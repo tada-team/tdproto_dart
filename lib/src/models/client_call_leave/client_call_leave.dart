@@ -6,16 +6,16 @@ part 'client_call_leave.g.dart';
 
 /// Leave call.
 @freezed
-abstract class ClientCallLeave with _$ClientCallLeave {
+class ClientCallLeave with _$ClientCallLeave {
   const factory ClientCallLeave({
     /// .
-    @JsonKey(name: 'params') @required ClientCallLeaveParams params,
+    @JsonKey(name: 'params') required ClientCallLeaveParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ClientCallLeave;
 
   factory ClientCallLeave.fromJson(Map<String, dynamic> json) => _$ClientCallLeaveFromJson(json);

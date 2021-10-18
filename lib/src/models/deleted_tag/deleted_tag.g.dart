@@ -6,12 +6,10 @@ part of 'deleted_tag.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_DeletedTag _$_$_DeletedTagFromJson(Map<String, dynamic> json) {
-  return _$_DeletedTag(
-    uid: json['uid'] as String,
-  );
-}
+_$_DeletedTag _$$_DeletedTagFromJson(Map<String, dynamic> json) => _$_DeletedTag(
+      uid: json['uid'] as String,
+    );
 
-Map<String, dynamic> _$_$_DeletedTagToJson(_$_DeletedTag instance) => <String, dynamic>{
+Map<String, dynamic> _$$_DeletedTagToJson(_$_DeletedTag instance) => <String, dynamic>{
       'uid': instance.uid,
     };

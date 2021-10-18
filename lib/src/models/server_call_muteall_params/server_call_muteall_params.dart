@@ -6,13 +6,13 @@ part 'server_call_muteall_params.g.dart';
 
 /// Params of the server.call.muteall event.
 @freezed
-abstract class ServerCallMuteallParams with _$ServerCallMuteallParams {
+class ServerCallMuteallParams with _$ServerCallMuteallParams {
   const factory ServerCallMuteallParams({
     /// Chat or contact id.
-    @JsonKey(name: 'jid') @required String jid,
+    @JsonKey(name: 'jid') required String jid,
 
     /// Mute state.
-    @JsonKey(name: 'muted') @required bool muted,
+    @Default(false) @JsonKey(name: 'muted') required bool muted,
   }) = _ServerCallMuteallParams;
 
   factory ServerCallMuteallParams.fromJson(Map<String, dynamic> json) => _$ServerCallMuteallParamsFromJson(json);

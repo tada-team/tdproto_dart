@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_call_check_fingerprint.dart';
 
@@ -8,6 +9,10 @@ part of 'server_call_check_fingerprint.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerCallCheckFingerprint _$ServerCallCheckFingerprintFromJson(Map<String, dynamic> json) {
   return _ServerCallCheckFingerprint.fromJson(json);
 }
@@ -16,11 +21,10 @@ ServerCallCheckFingerprint _$ServerCallCheckFingerprintFromJson(Map<String, dyna
 class _$ServerCallCheckFingerprintTearOff {
   const _$ServerCallCheckFingerprintTearOff();
 
-// ignore: unused_element
   _ServerCallCheckFingerprint call(
-      {@required @JsonKey(name: 'params') ServerCallCheckFingerprintParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) {
+      {@JsonKey(name: 'params') required ServerCallCheckFingerprintParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ServerCallCheckFingerprint(
       params: params,
       name: name,
@@ -28,33 +32,31 @@ class _$ServerCallCheckFingerprintTearOff {
     );
   }
 
-// ignore: unused_element
   ServerCallCheckFingerprint fromJson(Map<String, Object> json) {
     return ServerCallCheckFingerprint.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerCallCheckFingerprint = _$ServerCallCheckFingerprintTearOff();
 
 /// @nodoc
 mixin _$ServerCallCheckFingerprint {
   /// .
   @JsonKey(name: 'params')
-  ServerCallCheckFingerprintParams get params;
+  ServerCallCheckFingerprintParams get params => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerCallCheckFingerprintCopyWith<ServerCallCheckFingerprint> get copyWith;
+  $ServerCallCheckFingerprintCopyWith<ServerCallCheckFingerprint> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -65,7 +67,7 @@ abstract class $ServerCallCheckFingerprintCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'params') ServerCallCheckFingerprintParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   $ServerCallCheckFingerprintParamsCopyWith<$Res> get params;
 }
@@ -80,22 +82,28 @@ class _$ServerCallCheckFingerprintCopyWithImpl<$Res> implements $ServerCallCheck
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as ServerCallCheckFingerprintParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerCallCheckFingerprintParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $ServerCallCheckFingerprintParamsCopyWith<$Res> get params {
-    if (_value.params == null) {
-      return null;
-    }
     return $ServerCallCheckFingerprintParamsCopyWith<$Res>(_value.params, (value) {
       return _then(_value.copyWith(params: value));
     });
@@ -111,7 +119,7 @@ abstract class _$ServerCallCheckFingerprintCopyWith<$Res> implements $ServerCall
   $Res call(
       {@JsonKey(name: 'params') ServerCallCheckFingerprintParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   @override
   $ServerCallCheckFingerprintParamsCopyWith<$Res> get params;
@@ -129,31 +137,37 @@ class __$ServerCallCheckFingerprintCopyWithImpl<$Res> extends _$ServerCallCheckF
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ServerCallCheckFingerprint(
-      params: params == freezed ? _value.params : params as ServerCallCheckFingerprintParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ServerCallCheckFingerprintParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerCallCheckFingerprint implements _ServerCallCheckFingerprint {
   const _$_ServerCallCheckFingerprint(
-      {@required @JsonKey(name: 'params') this.params,
-      @required @JsonKey(name: 'event') this.name,
-      @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(params != null),
-        assert(name != null);
+      {@JsonKey(name: 'params') required this.params,
+      @JsonKey(name: 'event') required this.name,
+      @JsonKey(name: 'confirm_id') this.confirmId});
 
   factory _$_ServerCallCheckFingerprint.fromJson(Map<String, dynamic> json) =>
-      _$_$_ServerCallCheckFingerprintFromJson(json);
+      _$$_ServerCallCheckFingerprintFromJson(json);
 
   @override
 
@@ -169,7 +183,7 @@ class _$_ServerCallCheckFingerprint implements _ServerCallCheckFingerprint {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -200,15 +214,15 @@ class _$_ServerCallCheckFingerprint implements _ServerCallCheckFingerprint {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerCallCheckFingerprintToJson(this);
+    return _$$_ServerCallCheckFingerprintToJson(this);
   }
 }
 
 abstract class _ServerCallCheckFingerprint implements ServerCallCheckFingerprint {
   const factory _ServerCallCheckFingerprint(
-      {@required @JsonKey(name: 'params') ServerCallCheckFingerprintParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) = _$_ServerCallCheckFingerprint;
+      {@JsonKey(name: 'params') required ServerCallCheckFingerprintParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerCallCheckFingerprint;
 
   factory _ServerCallCheckFingerprint.fromJson(Map<String, dynamic> json) = _$_ServerCallCheckFingerprint.fromJson;
 
@@ -216,18 +230,18 @@ abstract class _ServerCallCheckFingerprint implements ServerCallCheckFingerprint
 
   /// .
   @JsonKey(name: 'params')
-  ServerCallCheckFingerprintParams get params;
+  ServerCallCheckFingerprintParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerCallCheckFingerprintCopyWith<_ServerCallCheckFingerprint> get copyWith;
+  _$ServerCallCheckFingerprintCopyWith<_ServerCallCheckFingerprint> get copyWith => throw _privateConstructorUsedError;
 }

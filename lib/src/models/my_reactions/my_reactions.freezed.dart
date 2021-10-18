@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'my_reactions.dart';
 
@@ -8,6 +9,10 @@ part of 'my_reactions.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 MyReactions _$MyReactionsFromJson(Map<String, dynamic> json) {
   return _MyReactions.fromJson(json);
 }
@@ -16,38 +21,35 @@ MyReactions _$MyReactionsFromJson(Map<String, dynamic> json) {
 class _$MyReactionsTearOff {
   const _$MyReactionsTearOff();
 
-// ignore: unused_element
   _MyReactions call(
-      {@required @JsonKey(name: 'top') List<Reaction> top, @required @JsonKey(name: 'all') List<Reaction> all}) {
+      {@JsonKey(name: 'top') required List<Reaction> top, @JsonKey(name: 'all') required List<Reaction> all}) {
     return _MyReactions(
       top: top,
       all: all,
     );
   }
 
-// ignore: unused_element
   MyReactions fromJson(Map<String, Object> json) {
     return MyReactions.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $MyReactions = _$MyReactionsTearOff();
 
 /// @nodoc
 mixin _$MyReactions {
   /// My frequently used reactions.
   @JsonKey(name: 'top')
-  List<Reaction> get top;
+  List<Reaction> get top => throw _privateConstructorUsedError;
 
   /// All available reactions.
   @JsonKey(name: 'all')
-  List<Reaction> get all;
+  List<Reaction> get all => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $MyReactionsCopyWith<MyReactions> get copyWith;
+  $MyReactionsCopyWith<MyReactions> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -66,12 +68,18 @@ class _$MyReactionsCopyWithImpl<$Res> implements $MyReactionsCopyWith<$Res> {
 
   @override
   $Res call({
-    Object top = freezed,
-    Object all = freezed,
+    Object? top = freezed,
+    Object? all = freezed,
   }) {
     return _then(_value.copyWith(
-      top: top == freezed ? _value.top : top as List<Reaction>,
-      all: all == freezed ? _value.all : all as List<Reaction>,
+      top: top == freezed
+          ? _value.top
+          : top // ignore: cast_nullable_to_non_nullable
+              as List<Reaction>,
+      all: all == freezed
+          ? _value.all
+          : all // ignore: cast_nullable_to_non_nullable
+              as List<Reaction>,
     ));
   }
 }
@@ -94,25 +102,28 @@ class __$MyReactionsCopyWithImpl<$Res> extends _$MyReactionsCopyWithImpl<$Res> i
 
   @override
   $Res call({
-    Object top = freezed,
-    Object all = freezed,
+    Object? top = freezed,
+    Object? all = freezed,
   }) {
     return _then(_MyReactions(
-      top: top == freezed ? _value.top : top as List<Reaction>,
-      all: all == freezed ? _value.all : all as List<Reaction>,
+      top: top == freezed
+          ? _value.top
+          : top // ignore: cast_nullable_to_non_nullable
+              as List<Reaction>,
+      all: all == freezed
+          ? _value.all
+          : all // ignore: cast_nullable_to_non_nullable
+              as List<Reaction>,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_MyReactions implements _MyReactions {
-  const _$_MyReactions({@required @JsonKey(name: 'top') this.top, @required @JsonKey(name: 'all') this.all})
-      : assert(top != null),
-        assert(all != null);
+  const _$_MyReactions({@JsonKey(name: 'top') required this.top, @JsonKey(name: 'all') required this.all});
 
-  factory _$_MyReactions.fromJson(Map<String, dynamic> json) => _$_$_MyReactionsFromJson(json);
+  factory _$_MyReactions.fromJson(Map<String, dynamic> json) => _$$_MyReactionsFromJson(json);
 
   @override
 
@@ -148,14 +159,14 @@ class _$_MyReactions implements _MyReactions {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_MyReactionsToJson(this);
+    return _$$_MyReactionsToJson(this);
   }
 }
 
 abstract class _MyReactions implements MyReactions {
   const factory _MyReactions(
-      {@required @JsonKey(name: 'top') List<Reaction> top,
-      @required @JsonKey(name: 'all') List<Reaction> all}) = _$_MyReactions;
+      {@JsonKey(name: 'top') required List<Reaction> top,
+      @JsonKey(name: 'all') required List<Reaction> all}) = _$_MyReactions;
 
   factory _MyReactions.fromJson(Map<String, dynamic> json) = _$_MyReactions.fromJson;
 
@@ -163,13 +174,13 @@ abstract class _MyReactions implements MyReactions {
 
   /// My frequently used reactions.
   @JsonKey(name: 'top')
-  List<Reaction> get top;
+  List<Reaction> get top => throw _privateConstructorUsedError;
   @override
 
   /// All available reactions.
   @JsonKey(name: 'all')
-  List<Reaction> get all;
+  List<Reaction> get all => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$MyReactionsCopyWith<_MyReactions> get copyWith;
+  _$MyReactionsCopyWith<_MyReactions> get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'sharp_link.dart';
 
@@ -8,6 +9,10 @@ part of 'sharp_link.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 SharpLink _$SharpLinkFromJson(Map<String, dynamic> json) {
   return _SharpLink.fromJson(json);
 }
@@ -16,12 +21,11 @@ SharpLink _$SharpLinkFromJson(Map<String, dynamic> json) {
 class _$SharpLinkTearOff {
   const _$SharpLinkTearOff();
 
-// ignore: unused_element
   _SharpLink call(
-      {@required @JsonKey(name: 'key') String key,
-      @required @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'icons') IconData icons,
-      @required @JsonKey(name: 'meta') SharpLinkMeta meta}) {
+      {@JsonKey(name: 'key') required String key,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'icons') IconData? icons,
+      @JsonKey(name: 'meta') required SharpLinkMeta meta}) {
     return _SharpLink(
       key: key,
       title: title,
@@ -30,37 +34,35 @@ class _$SharpLinkTearOff {
     );
   }
 
-// ignore: unused_element
   SharpLink fromJson(Map<String, Object> json) {
     return SharpLink.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $SharpLink = _$SharpLinkTearOff();
 
 /// @nodoc
 mixin _$SharpLink {
   /// What should be inserted to the chat.
   @JsonKey(name: 'key')
-  String get key;
+  String get key => throw _privateConstructorUsedError;
 
   /// What should be visible by user.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
 
   /// Icon data, if any.
   @JsonKey(name: 'icons')
-  IconData get icons;
+  IconData? get icons => throw _privateConstructorUsedError;
 
   /// Internal details.
   @JsonKey(name: 'meta')
-  SharpLinkMeta get meta;
+  SharpLinkMeta get meta => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $SharpLinkCopyWith<SharpLink> get copyWith;
+  $SharpLinkCopyWith<SharpLink> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -69,10 +71,10 @@ abstract class $SharpLinkCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'key') String key,
       @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'icons') IconData icons,
+      @JsonKey(name: 'icons') IconData? icons,
       @JsonKey(name: 'meta') SharpLinkMeta meta});
 
-  $IconDataCopyWith<$Res> get icons;
+  $IconDataCopyWith<$Res>? get icons;
   $SharpLinkMetaCopyWith<$Res> get meta;
 }
 
@@ -86,34 +88,44 @@ class _$SharpLinkCopyWithImpl<$Res> implements $SharpLinkCopyWith<$Res> {
 
   @override
   $Res call({
-    Object key = freezed,
-    Object title = freezed,
-    Object icons = freezed,
-    Object meta = freezed,
+    Object? key = freezed,
+    Object? title = freezed,
+    Object? icons = freezed,
+    Object? meta = freezed,
   }) {
     return _then(_value.copyWith(
-      key: key == freezed ? _value.key : key as String,
-      title: title == freezed ? _value.title : title as String,
-      icons: icons == freezed ? _value.icons : icons as IconData,
-      meta: meta == freezed ? _value.meta : meta as SharpLinkMeta,
+      key: key == freezed
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      icons: icons == freezed
+          ? _value.icons
+          : icons // ignore: cast_nullable_to_non_nullable
+              as IconData?,
+      meta: meta == freezed
+          ? _value.meta
+          : meta // ignore: cast_nullable_to_non_nullable
+              as SharpLinkMeta,
     ));
   }
 
   @override
-  $IconDataCopyWith<$Res> get icons {
+  $IconDataCopyWith<$Res>? get icons {
     if (_value.icons == null) {
       return null;
     }
-    return $IconDataCopyWith<$Res>(_value.icons, (value) {
+
+    return $IconDataCopyWith<$Res>(_value.icons!, (value) {
       return _then(_value.copyWith(icons: value));
     });
   }
 
   @override
   $SharpLinkMetaCopyWith<$Res> get meta {
-    if (_value.meta == null) {
-      return null;
-    }
     return $SharpLinkMetaCopyWith<$Res>(_value.meta, (value) {
       return _then(_value.copyWith(meta: value));
     });
@@ -127,11 +139,11 @@ abstract class _$SharpLinkCopyWith<$Res> implements $SharpLinkCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'key') String key,
       @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'icons') IconData icons,
+      @JsonKey(name: 'icons') IconData? icons,
       @JsonKey(name: 'meta') SharpLinkMeta meta});
 
   @override
-  $IconDataCopyWith<$Res> get icons;
+  $IconDataCopyWith<$Res>? get icons;
   @override
   $SharpLinkMetaCopyWith<$Res> get meta;
 }
@@ -146,34 +158,42 @@ class __$SharpLinkCopyWithImpl<$Res> extends _$SharpLinkCopyWithImpl<$Res> imple
 
   @override
   $Res call({
-    Object key = freezed,
-    Object title = freezed,
-    Object icons = freezed,
-    Object meta = freezed,
+    Object? key = freezed,
+    Object? title = freezed,
+    Object? icons = freezed,
+    Object? meta = freezed,
   }) {
     return _then(_SharpLink(
-      key: key == freezed ? _value.key : key as String,
-      title: title == freezed ? _value.title : title as String,
-      icons: icons == freezed ? _value.icons : icons as IconData,
-      meta: meta == freezed ? _value.meta : meta as SharpLinkMeta,
+      key: key == freezed
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      icons: icons == freezed
+          ? _value.icons
+          : icons // ignore: cast_nullable_to_non_nullable
+              as IconData?,
+      meta: meta == freezed
+          ? _value.meta
+          : meta // ignore: cast_nullable_to_non_nullable
+              as SharpLinkMeta,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_SharpLink implements _SharpLink {
   const _$_SharpLink(
-      {@required @JsonKey(name: 'key') this.key,
-      @required @JsonKey(name: 'title') this.title,
+      {@JsonKey(name: 'key') required this.key,
+      @JsonKey(name: 'title') required this.title,
       @JsonKey(name: 'icons') this.icons,
-      @required @JsonKey(name: 'meta') this.meta})
-      : assert(key != null),
-        assert(title != null),
-        assert(meta != null);
+      @JsonKey(name: 'meta') required this.meta});
 
-  factory _$_SharpLink.fromJson(Map<String, dynamic> json) => _$_$_SharpLinkFromJson(json);
+  factory _$_SharpLink.fromJson(Map<String, dynamic> json) => _$$_SharpLinkFromJson(json);
 
   @override
 
@@ -189,7 +209,7 @@ class _$_SharpLink implements _SharpLink {
 
   /// Icon data, if any.
   @JsonKey(name: 'icons')
-  final IconData icons;
+  final IconData? icons;
   @override
 
   /// Internal details.
@@ -225,16 +245,16 @@ class _$_SharpLink implements _SharpLink {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_SharpLinkToJson(this);
+    return _$$_SharpLinkToJson(this);
   }
 }
 
 abstract class _SharpLink implements SharpLink {
   const factory _SharpLink(
-      {@required @JsonKey(name: 'key') String key,
-      @required @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'icons') IconData icons,
-      @required @JsonKey(name: 'meta') SharpLinkMeta meta}) = _$_SharpLink;
+      {@JsonKey(name: 'key') required String key,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'icons') IconData? icons,
+      @JsonKey(name: 'meta') required SharpLinkMeta meta}) = _$_SharpLink;
 
   factory _SharpLink.fromJson(Map<String, dynamic> json) = _$_SharpLink.fromJson;
 
@@ -242,23 +262,23 @@ abstract class _SharpLink implements SharpLink {
 
   /// What should be inserted to the chat.
   @JsonKey(name: 'key')
-  String get key;
+  String get key => throw _privateConstructorUsedError;
   @override
 
   /// What should be visible by user.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
 
   /// Icon data, if any.
   @JsonKey(name: 'icons')
-  IconData get icons;
+  IconData? get icons => throw _privateConstructorUsedError;
   @override
 
   /// Internal details.
   @JsonKey(name: 'meta')
-  SharpLinkMeta get meta;
+  SharpLinkMeta get meta => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$SharpLinkCopyWith<_SharpLink> get copyWith;
+  _$SharpLinkCopyWith<_SharpLink> get copyWith => throw _privateConstructorUsedError;
 }

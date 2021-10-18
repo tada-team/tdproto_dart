@@ -6,16 +6,16 @@ part 'server_call_buzz.g.dart';
 
 /// Call buzzing.
 @freezed
-abstract class ServerCallBuzz with _$ServerCallBuzz {
+class ServerCallBuzz with _$ServerCallBuzz {
   const factory ServerCallBuzz({
     /// .
-    @JsonKey(name: 'params') @required ServerCallBuzzParams params,
+    @JsonKey(name: 'params') required ServerCallBuzzParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerCallBuzz;
 
   factory ServerCallBuzz.fromJson(Map<String, dynamic> json) => _$ServerCallBuzzFromJson(json);

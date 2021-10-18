@@ -6,34 +6,34 @@ part 'integration.g.dart';
 
 /// Integration for concrete chat.
 @freezed
-abstract class Integration with _$Integration {
+class Integration with _$Integration {
   const factory Integration({
     /// Id.
-    @JsonKey(name: 'uid') String uid,
+    @JsonKey(name: 'uid') String? uid,
 
     /// Comment, if any.
-    @JsonKey(name: 'comment') @required String comment,
+    @JsonKey(name: 'comment') required String comment,
 
     /// Creation datetime, iso.
-    @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
+    @JsonKey(name: 'created') @DateTimeConverter() DateTime? created,
 
     /// Integration enabled.
-    @JsonKey(name: 'enabled') @required bool enabled,
+    @Default(false) @JsonKey(name: 'enabled') required bool enabled,
 
     /// Integration form.
-    @JsonKey(name: 'form') @required IntegrationForm form,
+    @JsonKey(name: 'form') required IntegrationForm form,
 
     /// Chat id.
-    @JsonKey(name: 'group') @required String group,
+    @JsonKey(name: 'group') required String group,
 
     /// Full description.
-    @JsonKey(name: 'help') String help,
+    @JsonKey(name: 'help') String? help,
 
     /// Unique integration name.
-    @JsonKey(name: 'kind') @required String kind,
+    @JsonKey(name: 'kind') required String kind,
 
     /// .
-    @JsonKey(name: '-') @required String title,
+    @JsonKey(name: '-') required String title,
   }) = _Integration;
 
   factory Integration.fromJson(Map<String, dynamic> json) => _$IntegrationFromJson(json);

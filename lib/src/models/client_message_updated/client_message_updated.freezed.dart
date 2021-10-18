@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'client_message_updated.dart';
 
@@ -8,6 +9,10 @@ part of 'client_message_updated.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ClientMessageUpdated _$ClientMessageUpdatedFromJson(Map<String, dynamic> json) {
   return _ClientMessageUpdated.fromJson(json);
 }
@@ -16,11 +21,10 @@ ClientMessageUpdated _$ClientMessageUpdatedFromJson(Map<String, dynamic> json) {
 class _$ClientMessageUpdatedTearOff {
   const _$ClientMessageUpdatedTearOff();
 
-// ignore: unused_element
   _ClientMessageUpdated call(
-      {@required @JsonKey(name: 'params') ClientMessageUpdatedParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) {
+      {@JsonKey(name: 'params') required ClientMessageUpdatedParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
     return _ClientMessageUpdated(
       params: params,
       name: name,
@@ -28,33 +32,31 @@ class _$ClientMessageUpdatedTearOff {
     );
   }
 
-// ignore: unused_element
   ClientMessageUpdated fromJson(Map<String, Object> json) {
     return ClientMessageUpdated.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ClientMessageUpdated = _$ClientMessageUpdatedTearOff();
 
 /// @nodoc
 mixin _$ClientMessageUpdated {
   /// .
   @JsonKey(name: 'params')
-  ClientMessageUpdatedParams get params;
+  ClientMessageUpdatedParams get params => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ClientMessageUpdatedCopyWith<ClientMessageUpdated> get copyWith;
+  $ClientMessageUpdatedCopyWith<ClientMessageUpdated> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -64,7 +66,7 @@ abstract class $ClientMessageUpdatedCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'params') ClientMessageUpdatedParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   $ClientMessageUpdatedParamsCopyWith<$Res> get params;
 }
@@ -79,22 +81,28 @@ class _$ClientMessageUpdatedCopyWithImpl<$Res> implements $ClientMessageUpdatedC
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed ? _value.params : params as ClientMessageUpdatedParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ClientMessageUpdatedParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
   $ClientMessageUpdatedParamsCopyWith<$Res> get params {
-    if (_value.params == null) {
-      return null;
-    }
     return $ClientMessageUpdatedParamsCopyWith<$Res>(_value.params, (value) {
       return _then(_value.copyWith(params: value));
     });
@@ -109,7 +117,7 @@ abstract class _$ClientMessageUpdatedCopyWith<$Res> implements $ClientMessageUpd
   $Res call(
       {@JsonKey(name: 'params') ClientMessageUpdatedParams params,
       @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId});
+      @JsonKey(name: 'confirm_id') String? confirmId});
 
   @override
   $ClientMessageUpdatedParamsCopyWith<$Res> get params;
@@ -126,30 +134,36 @@ class __$ClientMessageUpdatedCopyWithImpl<$Res> extends _$ClientMessageUpdatedCo
 
   @override
   $Res call({
-    Object params = freezed,
-    Object name = freezed,
-    Object confirmId = freezed,
+    Object? params = freezed,
+    Object? name = freezed,
+    Object? confirmId = freezed,
   }) {
     return _then(_ClientMessageUpdated(
-      params: params == freezed ? _value.params : params as ClientMessageUpdatedParams,
-      name: name == freezed ? _value.name : name as String,
-      confirmId: confirmId == freezed ? _value.confirmId : confirmId as String,
+      params: params == freezed
+          ? _value.params
+          : params // ignore: cast_nullable_to_non_nullable
+              as ClientMessageUpdatedParams,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      confirmId: confirmId == freezed
+          ? _value.confirmId
+          : confirmId // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ClientMessageUpdated implements _ClientMessageUpdated {
   const _$_ClientMessageUpdated(
-      {@required @JsonKey(name: 'params') this.params,
-      @required @JsonKey(name: 'event') this.name,
-      @JsonKey(name: 'confirm_id') this.confirmId})
-      : assert(params != null),
-        assert(name != null);
+      {@JsonKey(name: 'params') required this.params,
+      @JsonKey(name: 'event') required this.name,
+      @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ClientMessageUpdated.fromJson(Map<String, dynamic> json) => _$_$_ClientMessageUpdatedFromJson(json);
+  factory _$_ClientMessageUpdated.fromJson(Map<String, dynamic> json) => _$$_ClientMessageUpdatedFromJson(json);
 
   @override
 
@@ -165,7 +179,7 @@ class _$_ClientMessageUpdated implements _ClientMessageUpdated {
 
   /// .
   @JsonKey(name: 'confirm_id')
-  final String confirmId;
+  final String? confirmId;
 
   @override
   String toString() {
@@ -196,15 +210,15 @@ class _$_ClientMessageUpdated implements _ClientMessageUpdated {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ClientMessageUpdatedToJson(this);
+    return _$$_ClientMessageUpdatedToJson(this);
   }
 }
 
 abstract class _ClientMessageUpdated implements ClientMessageUpdated {
   const factory _ClientMessageUpdated(
-      {@required @JsonKey(name: 'params') ClientMessageUpdatedParams params,
-      @required @JsonKey(name: 'event') String name,
-      @JsonKey(name: 'confirm_id') String confirmId}) = _$_ClientMessageUpdated;
+      {@JsonKey(name: 'params') required ClientMessageUpdatedParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ClientMessageUpdated;
 
   factory _ClientMessageUpdated.fromJson(Map<String, dynamic> json) = _$_ClientMessageUpdated.fromJson;
 
@@ -212,18 +226,18 @@ abstract class _ClientMessageUpdated implements ClientMessageUpdated {
 
   /// .
   @JsonKey(name: 'params')
-  ClientMessageUpdatedParams get params;
+  ClientMessageUpdatedParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ClientMessageUpdatedCopyWith<_ClientMessageUpdated> get copyWith;
+  _$ClientMessageUpdatedCopyWith<_ClientMessageUpdated> get copyWith => throw _privateConstructorUsedError;
 }

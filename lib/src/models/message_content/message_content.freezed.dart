@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'message_content.dart';
 
@@ -8,6 +9,10 @@ part of 'message_content.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 MessageContent _$MessageContentFromJson(Map<String, dynamic> json) {
   return _MessageContent.fromJson(json);
 }
@@ -16,76 +21,73 @@ MessageContent _$MessageContentFromJson(Map<String, dynamic> json) {
 class _$MessageContentTearOff {
   const _$MessageContentTearOff();
 
-// ignore: unused_element
   _MessageContent call(
-      {@required
-      @JsonKey(name: 'text')
-          String text,
-      @required
+      {@JsonKey(name: 'text')
+          required String text,
       @JsonKey(name: 'type')
-          String type,
+          required String type,
       @JsonKey(name: 'subtype')
-          String subtype,
+          String? subtype,
       @Deprecated('Upload id, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'upload')
-          String upload,
+          String? upload,
       @Deprecated('Upload url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'mediaURL')
-          String mediaUrl,
+          String? mediaUrl,
       @Deprecated('Upload size, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'size')
-          int size,
+          int? size,
       @Deprecated('Upload duration, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'duration')
-          int duration,
+          int? duration,
       @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'processing')
-          bool processing,
+          bool? processing = false,
       @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
       @JsonKey(name: 'blurhash')
-          String blurhash,
+          String? blurhash,
       @Deprecated('Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewHeight')
-          int previewHeight,
+          int? previewHeight,
       @Deprecated('Upload width, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewWidth')
-          int previewWidth,
+          int? previewWidth,
       @Deprecated('Upload preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewURL')
-          String previewUrl,
+          String? previewUrl,
       @Deprecated('Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'preview2xURL')
-          String preview2xUrl,
+          String? preview2xUrl,
       @Deprecated('Upload name, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'name')
-          String name,
+          String? name,
       @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'animated')
-          bool animated,
+          bool? animated = false,
       @JsonKey(name: 'title')
-          String title,
+          String? title,
       @JsonKey(name: 'old')
-          String old,
+          String? old,
       @JsonKey(name: 'new')
-          String isNew,
+          String? isNew,
       @JsonKey(name: 'actor')
-          String actor,
+          String? actor,
       @JsonKey(name: 'comment')
-          String comment,
+          String? comment,
       @JsonKey(name: 'given_name')
-          String givenName,
+          String? givenName,
       @JsonKey(name: 'family_name')
-          String familyName,
+          String? familyName,
       @JsonKey(name: 'patronymic')
-          String patronymic,
+          String? patronymic,
       @JsonKey(name: 'phones')
-          List<String> phones,
+          List<String>? phones,
       @JsonKey(name: 'emails')
-          List<String> emails,
+          List<String>? emails,
       @JsonKey(name: 'stickerpack')
-          String stickerpack,
+          String? stickerpack,
       @JsonKey(name: 'pdf_version')
-          PdfVersion pdfVersion}) {
+          PdfVersion? pdfVersion}) {
     return _MessageContent(
       text: text,
       type: type,
@@ -117,141 +119,139 @@ class _$MessageContentTearOff {
     );
   }
 
-// ignore: unused_element
   MessageContent fromJson(Map<String, Object> json) {
     return MessageContent.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $MessageContent = _$MessageContentTearOff();
 
 /// @nodoc
 mixin _$MessageContent {
   /// Text representation of message.
   @JsonKey(name: 'text')
-  String get text;
+  String get text => throw _privateConstructorUsedError;
 
   /// Message type.
   @JsonKey(name: 'type')
-  String get type;
+  String get type => throw _privateConstructorUsedError;
 
   /// Message subtype, if any.
   @JsonKey(name: 'subtype')
-  String get subtype;
+  String? get subtype => throw _privateConstructorUsedError;
 
   /// Upload id, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload id, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'upload')
-  String get upload;
+  String? get upload => throw _privateConstructorUsedError;
 
   /// Upload url, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload url, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'mediaURL')
-  String get mediaUrl;
+  String? get mediaUrl => throw _privateConstructorUsedError;
 
   /// Upload size, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload size, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'size')
-  int get size;
+  int? get size => throw _privateConstructorUsedError;
 
   /// Upload duration, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload duration, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'duration')
-  int get duration;
+  int? get duration => throw _privateConstructorUsedError;
 
   /// Upload still processing, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'processing')
-  bool get processing;
+  bool? get processing => throw _privateConstructorUsedError;
 
   /// Compact representation of a placeholder for an image. Deprecated: use Uploads instead.
   @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
   @JsonKey(name: 'blurhash')
-  String get blurhash;
+  String? get blurhash => throw _privateConstructorUsedError;
 
   /// Upload preview height, in pixels, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewHeight')
-  int get previewHeight;
+  int? get previewHeight => throw _privateConstructorUsedError;
 
   /// Upload width, in pixels, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload width, in pixels, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewWidth')
-  int get previewWidth;
+  int? get previewWidth => throw _privateConstructorUsedError;
 
   /// Upload preview absolute url, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload preview absolute url, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewURL')
-  String get previewUrl;
+  String? get previewUrl => throw _privateConstructorUsedError;
 
   /// Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'preview2xURL')
-  String get preview2xUrl;
+  String? get preview2xUrl => throw _privateConstructorUsedError;
 
   /// Upload name, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload name, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'name')
-  String get name;
+  String? get name => throw _privateConstructorUsedError;
 
   /// Upload is animated image, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'animated')
-  bool get animated;
+  bool? get animated => throw _privateConstructorUsedError;
 
   /// Change title (for "change" mediatype).
   @JsonKey(name: 'title')
-  String get title;
+  String? get title => throw _privateConstructorUsedError;
 
   /// Change old value (for "change" mediatype).
   @JsonKey(name: 'old')
-  String get old;
+  String? get old => throw _privateConstructorUsedError;
 
   /// Change new value (for "change" mediatype).
   @JsonKey(name: 'new')
-  String get isNew;
+  String? get isNew => throw _privateConstructorUsedError;
 
   /// Change actor contact id (for "change" mediatype).
   @JsonKey(name: 'actor')
-  String get actor;
+  String? get actor => throw _privateConstructorUsedError;
 
   /// Comment (for "audiomsg" mediatype).
   @JsonKey(name: 'comment')
-  String get comment;
+  String? get comment => throw _privateConstructorUsedError;
 
   /// Given name (for "contact" mediatype).
   @JsonKey(name: 'given_name')
-  String get givenName;
+  String? get givenName => throw _privateConstructorUsedError;
 
   /// Family name (for "contact" mediatype).
   @JsonKey(name: 'family_name')
-  String get familyName;
+  String? get familyName => throw _privateConstructorUsedError;
 
   /// Patronymic name (for "contact" mediatype).
   @JsonKey(name: 'patronymic')
-  String get patronymic;
+  String? get patronymic => throw _privateConstructorUsedError;
 
   /// Contact phones list (for "contact" mediatype).
   @JsonKey(name: 'phones')
-  List<String> get phones;
+  List<String>? get phones => throw _privateConstructorUsedError;
 
   /// Emails list (for "contact" mediatype).
   @JsonKey(name: 'emails')
-  List<String> get emails;
+  List<String>? get emails => throw _privateConstructorUsedError;
 
   /// Stickerpack name (for "sticker" subtype).
   @JsonKey(name: 'stickerpack')
-  String get stickerpack;
+  String? get stickerpack => throw _privateConstructorUsedError;
 
   /// Pdf version, if any.
   @JsonKey(name: 'pdf_version')
-  PdfVersion get pdfVersion;
+  PdfVersion? get pdfVersion => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $MessageContentCopyWith<MessageContent> get copyWith;
+  $MessageContentCopyWith<MessageContent> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -264,69 +264,69 @@ abstract class $MessageContentCopyWith<$Res> {
       @JsonKey(name: 'type')
           String type,
       @JsonKey(name: 'subtype')
-          String subtype,
+          String? subtype,
       @Deprecated('Upload id, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'upload')
-          String upload,
+          String? upload,
       @Deprecated('Upload url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'mediaURL')
-          String mediaUrl,
+          String? mediaUrl,
       @Deprecated('Upload size, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'size')
-          int size,
+          int? size,
       @Deprecated('Upload duration, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'duration')
-          int duration,
+          int? duration,
       @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'processing')
-          bool processing,
+          bool? processing,
       @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
       @JsonKey(name: 'blurhash')
-          String blurhash,
+          String? blurhash,
       @Deprecated('Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewHeight')
-          int previewHeight,
+          int? previewHeight,
       @Deprecated('Upload width, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewWidth')
-          int previewWidth,
+          int? previewWidth,
       @Deprecated('Upload preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewURL')
-          String previewUrl,
+          String? previewUrl,
       @Deprecated('Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'preview2xURL')
-          String preview2xUrl,
+          String? preview2xUrl,
       @Deprecated('Upload name, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'name')
-          String name,
+          String? name,
       @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'animated')
-          bool animated,
+          bool? animated,
       @JsonKey(name: 'title')
-          String title,
+          String? title,
       @JsonKey(name: 'old')
-          String old,
+          String? old,
       @JsonKey(name: 'new')
-          String isNew,
+          String? isNew,
       @JsonKey(name: 'actor')
-          String actor,
+          String? actor,
       @JsonKey(name: 'comment')
-          String comment,
+          String? comment,
       @JsonKey(name: 'given_name')
-          String givenName,
+          String? givenName,
       @JsonKey(name: 'family_name')
-          String familyName,
+          String? familyName,
       @JsonKey(name: 'patronymic')
-          String patronymic,
+          String? patronymic,
       @JsonKey(name: 'phones')
-          List<String> phones,
+          List<String>? phones,
       @JsonKey(name: 'emails')
-          List<String> emails,
+          List<String>? emails,
       @JsonKey(name: 'stickerpack')
-          String stickerpack,
+          String? stickerpack,
       @JsonKey(name: 'pdf_version')
-          PdfVersion pdfVersion});
+          PdfVersion? pdfVersion});
 
-  $PdfVersionCopyWith<$Res> get pdfVersion;
+  $PdfVersionCopyWith<$Res>? get pdfVersion;
 }
 
 /// @nodoc
@@ -339,71 +339,153 @@ class _$MessageContentCopyWithImpl<$Res> implements $MessageContentCopyWith<$Res
 
   @override
   $Res call({
-    Object text = freezed,
-    Object type = freezed,
-    Object subtype = freezed,
-    Object upload = freezed,
-    Object mediaUrl = freezed,
-    Object size = freezed,
-    Object duration = freezed,
-    Object processing = freezed,
-    Object blurhash = freezed,
-    Object previewHeight = freezed,
-    Object previewWidth = freezed,
-    Object previewUrl = freezed,
-    Object preview2xUrl = freezed,
-    Object name = freezed,
-    Object animated = freezed,
-    Object title = freezed,
-    Object old = freezed,
-    Object isNew = freezed,
-    Object actor = freezed,
-    Object comment = freezed,
-    Object givenName = freezed,
-    Object familyName = freezed,
-    Object patronymic = freezed,
-    Object phones = freezed,
-    Object emails = freezed,
-    Object stickerpack = freezed,
-    Object pdfVersion = freezed,
+    Object? text = freezed,
+    Object? type = freezed,
+    Object? subtype = freezed,
+    Object? upload = freezed,
+    Object? mediaUrl = freezed,
+    Object? size = freezed,
+    Object? duration = freezed,
+    Object? processing = freezed,
+    Object? blurhash = freezed,
+    Object? previewHeight = freezed,
+    Object? previewWidth = freezed,
+    Object? previewUrl = freezed,
+    Object? preview2xUrl = freezed,
+    Object? name = freezed,
+    Object? animated = freezed,
+    Object? title = freezed,
+    Object? old = freezed,
+    Object? isNew = freezed,
+    Object? actor = freezed,
+    Object? comment = freezed,
+    Object? givenName = freezed,
+    Object? familyName = freezed,
+    Object? patronymic = freezed,
+    Object? phones = freezed,
+    Object? emails = freezed,
+    Object? stickerpack = freezed,
+    Object? pdfVersion = freezed,
   }) {
     return _then(_value.copyWith(
-      text: text == freezed ? _value.text : text as String,
-      type: type == freezed ? _value.type : type as String,
-      subtype: subtype == freezed ? _value.subtype : subtype as String,
-      upload: upload == freezed ? _value.upload : upload as String,
-      mediaUrl: mediaUrl == freezed ? _value.mediaUrl : mediaUrl as String,
-      size: size == freezed ? _value.size : size as int,
-      duration: duration == freezed ? _value.duration : duration as int,
-      processing: processing == freezed ? _value.processing : processing as bool,
-      blurhash: blurhash == freezed ? _value.blurhash : blurhash as String,
-      previewHeight: previewHeight == freezed ? _value.previewHeight : previewHeight as int,
-      previewWidth: previewWidth == freezed ? _value.previewWidth : previewWidth as int,
-      previewUrl: previewUrl == freezed ? _value.previewUrl : previewUrl as String,
-      preview2xUrl: preview2xUrl == freezed ? _value.preview2xUrl : preview2xUrl as String,
-      name: name == freezed ? _value.name : name as String,
-      animated: animated == freezed ? _value.animated : animated as bool,
-      title: title == freezed ? _value.title : title as String,
-      old: old == freezed ? _value.old : old as String,
-      isNew: isNew == freezed ? _value.isNew : isNew as String,
-      actor: actor == freezed ? _value.actor : actor as String,
-      comment: comment == freezed ? _value.comment : comment as String,
-      givenName: givenName == freezed ? _value.givenName : givenName as String,
-      familyName: familyName == freezed ? _value.familyName : familyName as String,
-      patronymic: patronymic == freezed ? _value.patronymic : patronymic as String,
-      phones: phones == freezed ? _value.phones : phones as List<String>,
-      emails: emails == freezed ? _value.emails : emails as List<String>,
-      stickerpack: stickerpack == freezed ? _value.stickerpack : stickerpack as String,
-      pdfVersion: pdfVersion == freezed ? _value.pdfVersion : pdfVersion as PdfVersion,
+      text: text == freezed
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String,
+      type: type == freezed
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as String,
+      subtype: subtype == freezed
+          ? _value.subtype
+          : subtype // ignore: cast_nullable_to_non_nullable
+              as String?,
+      upload: upload == freezed
+          ? _value.upload
+          : upload // ignore: cast_nullable_to_non_nullable
+              as String?,
+      mediaUrl: mediaUrl == freezed
+          ? _value.mediaUrl
+          : mediaUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      size: size == freezed
+          ? _value.size
+          : size // ignore: cast_nullable_to_non_nullable
+              as int?,
+      duration: duration == freezed
+          ? _value.duration
+          : duration // ignore: cast_nullable_to_non_nullable
+              as int?,
+      processing: processing == freezed
+          ? _value.processing
+          : processing // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      blurhash: blurhash == freezed
+          ? _value.blurhash
+          : blurhash // ignore: cast_nullable_to_non_nullable
+              as String?,
+      previewHeight: previewHeight == freezed
+          ? _value.previewHeight
+          : previewHeight // ignore: cast_nullable_to_non_nullable
+              as int?,
+      previewWidth: previewWidth == freezed
+          ? _value.previewWidth
+          : previewWidth // ignore: cast_nullable_to_non_nullable
+              as int?,
+      previewUrl: previewUrl == freezed
+          ? _value.previewUrl
+          : previewUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      preview2xUrl: preview2xUrl == freezed
+          ? _value.preview2xUrl
+          : preview2xUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      animated: animated == freezed
+          ? _value.animated
+          : animated // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      old: old == freezed
+          ? _value.old
+          : old // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isNew: isNew == freezed
+          ? _value.isNew
+          : isNew // ignore: cast_nullable_to_non_nullable
+              as String?,
+      actor: actor == freezed
+          ? _value.actor
+          : actor // ignore: cast_nullable_to_non_nullable
+              as String?,
+      comment: comment == freezed
+          ? _value.comment
+          : comment // ignore: cast_nullable_to_non_nullable
+              as String?,
+      givenName: givenName == freezed
+          ? _value.givenName
+          : givenName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      familyName: familyName == freezed
+          ? _value.familyName
+          : familyName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      patronymic: patronymic == freezed
+          ? _value.patronymic
+          : patronymic // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phones: phones == freezed
+          ? _value.phones
+          : phones // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
+      emails: emails == freezed
+          ? _value.emails
+          : emails // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
+      stickerpack: stickerpack == freezed
+          ? _value.stickerpack
+          : stickerpack // ignore: cast_nullable_to_non_nullable
+              as String?,
+      pdfVersion: pdfVersion == freezed
+          ? _value.pdfVersion
+          : pdfVersion // ignore: cast_nullable_to_non_nullable
+              as PdfVersion?,
     ));
   }
 
   @override
-  $PdfVersionCopyWith<$Res> get pdfVersion {
+  $PdfVersionCopyWith<$Res>? get pdfVersion {
     if (_value.pdfVersion == null) {
       return null;
     }
-    return $PdfVersionCopyWith<$Res>(_value.pdfVersion, (value) {
+
+    return $PdfVersionCopyWith<$Res>(_value.pdfVersion!, (value) {
       return _then(_value.copyWith(pdfVersion: value));
     });
   }
@@ -420,70 +502,70 @@ abstract class _$MessageContentCopyWith<$Res> implements $MessageContentCopyWith
       @JsonKey(name: 'type')
           String type,
       @JsonKey(name: 'subtype')
-          String subtype,
+          String? subtype,
       @Deprecated('Upload id, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'upload')
-          String upload,
+          String? upload,
       @Deprecated('Upload url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'mediaURL')
-          String mediaUrl,
+          String? mediaUrl,
       @Deprecated('Upload size, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'size')
-          int size,
+          int? size,
       @Deprecated('Upload duration, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'duration')
-          int duration,
+          int? duration,
       @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'processing')
-          bool processing,
+          bool? processing,
       @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
       @JsonKey(name: 'blurhash')
-          String blurhash,
+          String? blurhash,
       @Deprecated('Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewHeight')
-          int previewHeight,
+          int? previewHeight,
       @Deprecated('Upload width, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewWidth')
-          int previewWidth,
+          int? previewWidth,
       @Deprecated('Upload preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewURL')
-          String previewUrl,
+          String? previewUrl,
       @Deprecated('Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'preview2xURL')
-          String preview2xUrl,
+          String? preview2xUrl,
       @Deprecated('Upload name, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'name')
-          String name,
+          String? name,
       @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'animated')
-          bool animated,
+          bool? animated,
       @JsonKey(name: 'title')
-          String title,
+          String? title,
       @JsonKey(name: 'old')
-          String old,
+          String? old,
       @JsonKey(name: 'new')
-          String isNew,
+          String? isNew,
       @JsonKey(name: 'actor')
-          String actor,
+          String? actor,
       @JsonKey(name: 'comment')
-          String comment,
+          String? comment,
       @JsonKey(name: 'given_name')
-          String givenName,
+          String? givenName,
       @JsonKey(name: 'family_name')
-          String familyName,
+          String? familyName,
       @JsonKey(name: 'patronymic')
-          String patronymic,
+          String? patronymic,
       @JsonKey(name: 'phones')
-          List<String> phones,
+          List<String>? phones,
       @JsonKey(name: 'emails')
-          List<String> emails,
+          List<String>? emails,
       @JsonKey(name: 'stickerpack')
-          String stickerpack,
+          String? stickerpack,
       @JsonKey(name: 'pdf_version')
-          PdfVersion pdfVersion});
+          PdfVersion? pdfVersion});
 
   @override
-  $PdfVersionCopyWith<$Res> get pdfVersion;
+  $PdfVersionCopyWith<$Res>? get pdfVersion;
 }
 
 /// @nodoc
@@ -497,77 +579,155 @@ class __$MessageContentCopyWithImpl<$Res> extends _$MessageContentCopyWithImpl<$
 
   @override
   $Res call({
-    Object text = freezed,
-    Object type = freezed,
-    Object subtype = freezed,
-    Object upload = freezed,
-    Object mediaUrl = freezed,
-    Object size = freezed,
-    Object duration = freezed,
-    Object processing = freezed,
-    Object blurhash = freezed,
-    Object previewHeight = freezed,
-    Object previewWidth = freezed,
-    Object previewUrl = freezed,
-    Object preview2xUrl = freezed,
-    Object name = freezed,
-    Object animated = freezed,
-    Object title = freezed,
-    Object old = freezed,
-    Object isNew = freezed,
-    Object actor = freezed,
-    Object comment = freezed,
-    Object givenName = freezed,
-    Object familyName = freezed,
-    Object patronymic = freezed,
-    Object phones = freezed,
-    Object emails = freezed,
-    Object stickerpack = freezed,
-    Object pdfVersion = freezed,
+    Object? text = freezed,
+    Object? type = freezed,
+    Object? subtype = freezed,
+    Object? upload = freezed,
+    Object? mediaUrl = freezed,
+    Object? size = freezed,
+    Object? duration = freezed,
+    Object? processing = freezed,
+    Object? blurhash = freezed,
+    Object? previewHeight = freezed,
+    Object? previewWidth = freezed,
+    Object? previewUrl = freezed,
+    Object? preview2xUrl = freezed,
+    Object? name = freezed,
+    Object? animated = freezed,
+    Object? title = freezed,
+    Object? old = freezed,
+    Object? isNew = freezed,
+    Object? actor = freezed,
+    Object? comment = freezed,
+    Object? givenName = freezed,
+    Object? familyName = freezed,
+    Object? patronymic = freezed,
+    Object? phones = freezed,
+    Object? emails = freezed,
+    Object? stickerpack = freezed,
+    Object? pdfVersion = freezed,
   }) {
     return _then(_MessageContent(
-      text: text == freezed ? _value.text : text as String,
-      type: type == freezed ? _value.type : type as String,
-      subtype: subtype == freezed ? _value.subtype : subtype as String,
-      upload: upload == freezed ? _value.upload : upload as String,
-      mediaUrl: mediaUrl == freezed ? _value.mediaUrl : mediaUrl as String,
-      size: size == freezed ? _value.size : size as int,
-      duration: duration == freezed ? _value.duration : duration as int,
-      processing: processing == freezed ? _value.processing : processing as bool,
-      blurhash: blurhash == freezed ? _value.blurhash : blurhash as String,
-      previewHeight: previewHeight == freezed ? _value.previewHeight : previewHeight as int,
-      previewWidth: previewWidth == freezed ? _value.previewWidth : previewWidth as int,
-      previewUrl: previewUrl == freezed ? _value.previewUrl : previewUrl as String,
-      preview2xUrl: preview2xUrl == freezed ? _value.preview2xUrl : preview2xUrl as String,
-      name: name == freezed ? _value.name : name as String,
-      animated: animated == freezed ? _value.animated : animated as bool,
-      title: title == freezed ? _value.title : title as String,
-      old: old == freezed ? _value.old : old as String,
-      isNew: isNew == freezed ? _value.isNew : isNew as String,
-      actor: actor == freezed ? _value.actor : actor as String,
-      comment: comment == freezed ? _value.comment : comment as String,
-      givenName: givenName == freezed ? _value.givenName : givenName as String,
-      familyName: familyName == freezed ? _value.familyName : familyName as String,
-      patronymic: patronymic == freezed ? _value.patronymic : patronymic as String,
-      phones: phones == freezed ? _value.phones : phones as List<String>,
-      emails: emails == freezed ? _value.emails : emails as List<String>,
-      stickerpack: stickerpack == freezed ? _value.stickerpack : stickerpack as String,
-      pdfVersion: pdfVersion == freezed ? _value.pdfVersion : pdfVersion as PdfVersion,
+      text: text == freezed
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String,
+      type: type == freezed
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as String,
+      subtype: subtype == freezed
+          ? _value.subtype
+          : subtype // ignore: cast_nullable_to_non_nullable
+              as String?,
+      upload: upload == freezed
+          ? _value.upload
+          : upload // ignore: cast_nullable_to_non_nullable
+              as String?,
+      mediaUrl: mediaUrl == freezed
+          ? _value.mediaUrl
+          : mediaUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      size: size == freezed
+          ? _value.size
+          : size // ignore: cast_nullable_to_non_nullable
+              as int?,
+      duration: duration == freezed
+          ? _value.duration
+          : duration // ignore: cast_nullable_to_non_nullable
+              as int?,
+      processing: processing == freezed
+          ? _value.processing
+          : processing // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      blurhash: blurhash == freezed
+          ? _value.blurhash
+          : blurhash // ignore: cast_nullable_to_non_nullable
+              as String?,
+      previewHeight: previewHeight == freezed
+          ? _value.previewHeight
+          : previewHeight // ignore: cast_nullable_to_non_nullable
+              as int?,
+      previewWidth: previewWidth == freezed
+          ? _value.previewWidth
+          : previewWidth // ignore: cast_nullable_to_non_nullable
+              as int?,
+      previewUrl: previewUrl == freezed
+          ? _value.previewUrl
+          : previewUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      preview2xUrl: preview2xUrl == freezed
+          ? _value.preview2xUrl
+          : preview2xUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      animated: animated == freezed
+          ? _value.animated
+          : animated // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      old: old == freezed
+          ? _value.old
+          : old // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isNew: isNew == freezed
+          ? _value.isNew
+          : isNew // ignore: cast_nullable_to_non_nullable
+              as String?,
+      actor: actor == freezed
+          ? _value.actor
+          : actor // ignore: cast_nullable_to_non_nullable
+              as String?,
+      comment: comment == freezed
+          ? _value.comment
+          : comment // ignore: cast_nullable_to_non_nullable
+              as String?,
+      givenName: givenName == freezed
+          ? _value.givenName
+          : givenName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      familyName: familyName == freezed
+          ? _value.familyName
+          : familyName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      patronymic: patronymic == freezed
+          ? _value.patronymic
+          : patronymic // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phones: phones == freezed
+          ? _value.phones
+          : phones // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
+      emails: emails == freezed
+          ? _value.emails
+          : emails // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
+      stickerpack: stickerpack == freezed
+          ? _value.stickerpack
+          : stickerpack // ignore: cast_nullable_to_non_nullable
+              as String?,
+      pdfVersion: pdfVersion == freezed
+          ? _value.pdfVersion
+          : pdfVersion // ignore: cast_nullable_to_non_nullable
+              as PdfVersion?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_MessageContent implements _MessageContent {
   const _$_MessageContent(
-      {@required
-      @JsonKey(name: 'text')
-          this.text,
-      @required
+      {@JsonKey(name: 'text')
+          required this.text,
       @JsonKey(name: 'type')
-          this.type,
+          required this.type,
       @JsonKey(name: 'subtype')
           this.subtype,
       @Deprecated('Upload id, if any. Deprecated: use Uploads instead.')
@@ -584,7 +744,7 @@ class _$_MessageContent implements _MessageContent {
           this.duration,
       @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'processing')
-          this.processing,
+          this.processing = false,
       @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
       @JsonKey(name: 'blurhash')
           this.blurhash,
@@ -605,7 +765,7 @@ class _$_MessageContent implements _MessageContent {
           this.name,
       @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'animated')
-          this.animated,
+          this.animated = false,
       @JsonKey(name: 'title')
           this.title,
       @JsonKey(name: 'old')
@@ -629,11 +789,9 @@ class _$_MessageContent implements _MessageContent {
       @JsonKey(name: 'stickerpack')
           this.stickerpack,
       @JsonKey(name: 'pdf_version')
-          this.pdfVersion})
-      : assert(text != null),
-        assert(type != null);
+          this.pdfVersion});
 
-  factory _$_MessageContent.fromJson(Map<String, dynamic> json) => _$_$_MessageContentFromJson(json);
+  factory _$_MessageContent.fromJson(Map<String, dynamic> json) => _$$_MessageContentFromJson(json);
 
   @override
 
@@ -649,139 +807,139 @@ class _$_MessageContent implements _MessageContent {
 
   /// Message subtype, if any.
   @JsonKey(name: 'subtype')
-  final String subtype;
+  final String? subtype;
   @override
 
   /// Upload id, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload id, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'upload')
-  final String upload;
+  final String? upload;
   @override
 
   /// Upload url, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload url, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'mediaURL')
-  final String mediaUrl;
+  final String? mediaUrl;
   @override
 
   /// Upload size, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload size, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'size')
-  final int size;
+  final int? size;
   @override
 
   /// Upload duration, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload duration, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'duration')
-  final int duration;
+  final int? duration;
   @override
 
   /// Upload still processing, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'processing')
-  final bool processing;
+  final bool? processing;
   @override
 
   /// Compact representation of a placeholder for an image. Deprecated: use Uploads instead.
   @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
   @JsonKey(name: 'blurhash')
-  final String blurhash;
+  final String? blurhash;
   @override
 
   /// Upload preview height, in pixels, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewHeight')
-  final int previewHeight;
+  final int? previewHeight;
   @override
 
   /// Upload width, in pixels, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload width, in pixels, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewWidth')
-  final int previewWidth;
+  final int? previewWidth;
   @override
 
   /// Upload preview absolute url, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload preview absolute url, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewURL')
-  final String previewUrl;
+  final String? previewUrl;
   @override
 
   /// Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'preview2xURL')
-  final String preview2xUrl;
+  final String? preview2xUrl;
   @override
 
   /// Upload name, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload name, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'name')
-  final String name;
+  final String? name;
   @override
 
   /// Upload is animated image, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'animated')
-  final bool animated;
+  final bool? animated;
   @override
 
   /// Change title (for "change" mediatype).
   @JsonKey(name: 'title')
-  final String title;
+  final String? title;
   @override
 
   /// Change old value (for "change" mediatype).
   @JsonKey(name: 'old')
-  final String old;
+  final String? old;
   @override
 
   /// Change new value (for "change" mediatype).
   @JsonKey(name: 'new')
-  final String isNew;
+  final String? isNew;
   @override
 
   /// Change actor contact id (for "change" mediatype).
   @JsonKey(name: 'actor')
-  final String actor;
+  final String? actor;
   @override
 
   /// Comment (for "audiomsg" mediatype).
   @JsonKey(name: 'comment')
-  final String comment;
+  final String? comment;
   @override
 
   /// Given name (for "contact" mediatype).
   @JsonKey(name: 'given_name')
-  final String givenName;
+  final String? givenName;
   @override
 
   /// Family name (for "contact" mediatype).
   @JsonKey(name: 'family_name')
-  final String familyName;
+  final String? familyName;
   @override
 
   /// Patronymic name (for "contact" mediatype).
   @JsonKey(name: 'patronymic')
-  final String patronymic;
+  final String? patronymic;
   @override
 
   /// Contact phones list (for "contact" mediatype).
   @JsonKey(name: 'phones')
-  final List<String> phones;
+  final List<String>? phones;
   @override
 
   /// Emails list (for "contact" mediatype).
   @JsonKey(name: 'emails')
-  final List<String> emails;
+  final List<String>? emails;
   @override
 
   /// Stickerpack name (for "sticker" subtype).
   @JsonKey(name: 'stickerpack')
-  final String stickerpack;
+  final String? stickerpack;
   @override
 
   /// Pdf version, if any.
   @JsonKey(name: 'pdf_version')
-  final PdfVersion pdfVersion;
+  final PdfVersion? pdfVersion;
 
   @override
   String toString() {
@@ -869,80 +1027,78 @@ class _$_MessageContent implements _MessageContent {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_MessageContentToJson(this);
+    return _$$_MessageContentToJson(this);
   }
 }
 
 abstract class _MessageContent implements MessageContent {
   const factory _MessageContent(
-      {@required
-      @JsonKey(name: 'text')
-          String text,
-      @required
+      {@JsonKey(name: 'text')
+          required String text,
       @JsonKey(name: 'type')
-          String type,
+          required String type,
       @JsonKey(name: 'subtype')
-          String subtype,
+          String? subtype,
       @Deprecated('Upload id, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'upload')
-          String upload,
+          String? upload,
       @Deprecated('Upload url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'mediaURL')
-          String mediaUrl,
+          String? mediaUrl,
       @Deprecated('Upload size, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'size')
-          int size,
+          int? size,
       @Deprecated('Upload duration, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'duration')
-          int duration,
+          int? duration,
       @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'processing')
-          bool processing,
+          bool? processing,
       @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
       @JsonKey(name: 'blurhash')
-          String blurhash,
+          String? blurhash,
       @Deprecated('Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewHeight')
-          int previewHeight,
+          int? previewHeight,
       @Deprecated('Upload width, in pixels, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewWidth')
-          int previewWidth,
+          int? previewWidth,
       @Deprecated('Upload preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'previewURL')
-          String previewUrl,
+          String? previewUrl,
       @Deprecated('Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'preview2xURL')
-          String preview2xUrl,
+          String? preview2xUrl,
       @Deprecated('Upload name, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'name')
-          String name,
+          String? name,
       @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'animated')
-          bool animated,
+          bool? animated,
       @JsonKey(name: 'title')
-          String title,
+          String? title,
       @JsonKey(name: 'old')
-          String old,
+          String? old,
       @JsonKey(name: 'new')
-          String isNew,
+          String? isNew,
       @JsonKey(name: 'actor')
-          String actor,
+          String? actor,
       @JsonKey(name: 'comment')
-          String comment,
+          String? comment,
       @JsonKey(name: 'given_name')
-          String givenName,
+          String? givenName,
       @JsonKey(name: 'family_name')
-          String familyName,
+          String? familyName,
       @JsonKey(name: 'patronymic')
-          String patronymic,
+          String? patronymic,
       @JsonKey(name: 'phones')
-          List<String> phones,
+          List<String>? phones,
       @JsonKey(name: 'emails')
-          List<String> emails,
+          List<String>? emails,
       @JsonKey(name: 'stickerpack')
-          String stickerpack,
+          String? stickerpack,
       @JsonKey(name: 'pdf_version')
-          PdfVersion pdfVersion}) = _$_MessageContent;
+          PdfVersion? pdfVersion}) = _$_MessageContent;
 
   factory _MessageContent.fromJson(Map<String, dynamic> json) = _$_MessageContent.fromJson;
 
@@ -950,150 +1106,150 @@ abstract class _MessageContent implements MessageContent {
 
   /// Text representation of message.
   @JsonKey(name: 'text')
-  String get text;
+  String get text => throw _privateConstructorUsedError;
   @override
 
   /// Message type.
   @JsonKey(name: 'type')
-  String get type;
+  String get type => throw _privateConstructorUsedError;
   @override
 
   /// Message subtype, if any.
   @JsonKey(name: 'subtype')
-  String get subtype;
+  String? get subtype => throw _privateConstructorUsedError;
   @override
 
   /// Upload id, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload id, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'upload')
-  String get upload;
+  String? get upload => throw _privateConstructorUsedError;
   @override
 
   /// Upload url, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload url, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'mediaURL')
-  String get mediaUrl;
+  String? get mediaUrl => throw _privateConstructorUsedError;
   @override
 
   /// Upload size, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload size, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'size')
-  int get size;
+  int? get size => throw _privateConstructorUsedError;
   @override
 
   /// Upload duration, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload duration, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'duration')
-  int get duration;
+  int? get duration => throw _privateConstructorUsedError;
   @override
 
   /// Upload still processing, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'processing')
-  bool get processing;
+  bool? get processing => throw _privateConstructorUsedError;
   @override
 
   /// Compact representation of a placeholder for an image. Deprecated: use Uploads instead.
   @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
   @JsonKey(name: 'blurhash')
-  String get blurhash;
+  String? get blurhash => throw _privateConstructorUsedError;
   @override
 
   /// Upload preview height, in pixels, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload preview height, in pixels, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewHeight')
-  int get previewHeight;
+  int? get previewHeight => throw _privateConstructorUsedError;
   @override
 
   /// Upload width, in pixels, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload width, in pixels, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewWidth')
-  int get previewWidth;
+  int? get previewWidth => throw _privateConstructorUsedError;
   @override
 
   /// Upload preview absolute url, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload preview absolute url, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'previewURL')
-  String get previewUrl;
+  String? get previewUrl => throw _privateConstructorUsedError;
   @override
 
   /// Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload high resolution preview absolute url, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'preview2xURL')
-  String get preview2xUrl;
+  String? get preview2xUrl => throw _privateConstructorUsedError;
   @override
 
   /// Upload name, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload name, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'name')
-  String get name;
+  String? get name => throw _privateConstructorUsedError;
   @override
 
   /// Upload is animated image, if any. Deprecated: use Uploads instead.
   @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
   @JsonKey(name: 'animated')
-  bool get animated;
+  bool? get animated => throw _privateConstructorUsedError;
   @override
 
   /// Change title (for "change" mediatype).
   @JsonKey(name: 'title')
-  String get title;
+  String? get title => throw _privateConstructorUsedError;
   @override
 
   /// Change old value (for "change" mediatype).
   @JsonKey(name: 'old')
-  String get old;
+  String? get old => throw _privateConstructorUsedError;
   @override
 
   /// Change new value (for "change" mediatype).
   @JsonKey(name: 'new')
-  String get isNew;
+  String? get isNew => throw _privateConstructorUsedError;
   @override
 
   /// Change actor contact id (for "change" mediatype).
   @JsonKey(name: 'actor')
-  String get actor;
+  String? get actor => throw _privateConstructorUsedError;
   @override
 
   /// Comment (for "audiomsg" mediatype).
   @JsonKey(name: 'comment')
-  String get comment;
+  String? get comment => throw _privateConstructorUsedError;
   @override
 
   /// Given name (for "contact" mediatype).
   @JsonKey(name: 'given_name')
-  String get givenName;
+  String? get givenName => throw _privateConstructorUsedError;
   @override
 
   /// Family name (for "contact" mediatype).
   @JsonKey(name: 'family_name')
-  String get familyName;
+  String? get familyName => throw _privateConstructorUsedError;
   @override
 
   /// Patronymic name (for "contact" mediatype).
   @JsonKey(name: 'patronymic')
-  String get patronymic;
+  String? get patronymic => throw _privateConstructorUsedError;
   @override
 
   /// Contact phones list (for "contact" mediatype).
   @JsonKey(name: 'phones')
-  List<String> get phones;
+  List<String>? get phones => throw _privateConstructorUsedError;
   @override
 
   /// Emails list (for "contact" mediatype).
   @JsonKey(name: 'emails')
-  List<String> get emails;
+  List<String>? get emails => throw _privateConstructorUsedError;
   @override
 
   /// Stickerpack name (for "sticker" subtype).
   @JsonKey(name: 'stickerpack')
-  String get stickerpack;
+  String? get stickerpack => throw _privateConstructorUsedError;
   @override
 
   /// Pdf version, if any.
   @JsonKey(name: 'pdf_version')
-  PdfVersion get pdfVersion;
+  PdfVersion? get pdfVersion => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$MessageContentCopyWith<_MessageContent> get copyWith;
+  _$MessageContentCopyWith<_MessageContent> get copyWith => throw _privateConstructorUsedError;
 }

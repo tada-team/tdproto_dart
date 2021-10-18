@@ -6,16 +6,16 @@ part 'server_chat_updated.g.dart';
 
 /// Chat created or updated.
 @freezed
-abstract class ServerChatUpdated with _$ServerChatUpdated {
+class ServerChatUpdated with _$ServerChatUpdated {
   const factory ServerChatUpdated({
     /// .
-    @JsonKey(name: 'params') @required ServerChatUpdatedParams params,
+    @JsonKey(name: 'params') required ServerChatUpdatedParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerChatUpdated;
 
   factory ServerChatUpdated.fromJson(Map<String, dynamic> json) => _$ServerChatUpdatedFromJson(json);

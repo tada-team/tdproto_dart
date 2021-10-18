@@ -6,25 +6,23 @@ part of 'color_rule.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ColorRule _$_$_ColorRuleFromJson(Map<String, dynamic> json) {
-  return _$_ColorRule(
-    uid: json['uid'] as String,
-    priority: json['priority'] as int,
-    description: json['description'] as String,
-    colorIndex: json['color_index'] as int,
-    projectEnabled: json['section_enabled'] as bool,
-    project: json['section'] as String,
-    tagsEnabled: json['tags_enabled'] as bool,
-    tags: (json['tags'] as List)?.map((e) => e as String)?.toList(),
-    taskStatus: json['task_status'] as String,
-    taskImportanceEnabled: json['task_importance_enabled'] as bool,
-    taskImportance: json['task_importance'] as int,
-    taskUrgencyEnabled: json['task_urgency_enabled'] as bool,
-    taskUrgency: json['task_urgency'] as int,
-  );
-}
+_$_ColorRule _$$_ColorRuleFromJson(Map<String, dynamic> json) => _$_ColorRule(
+      uid: json['uid'] as String,
+      priority: json['priority'] as int,
+      description: json['description'] as String?,
+      colorIndex: json['color_index'] as int,
+      projectEnabled: json['section_enabled'] as bool? ?? false,
+      project: json['section'] as String?,
+      tagsEnabled: json['tags_enabled'] as bool? ?? false,
+      tags: (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      taskStatus: json['task_status'] as String?,
+      taskImportanceEnabled: json['task_importance_enabled'] as bool? ?? false,
+      taskImportance: json['task_importance'] as int?,
+      taskUrgencyEnabled: json['task_urgency_enabled'] as bool? ?? false,
+      taskUrgency: json['task_urgency'] as int?,
+    );
 
-Map<String, dynamic> _$_$_ColorRuleToJson(_$_ColorRule instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ColorRuleToJson(_$_ColorRule instance) => <String, dynamic>{
       'uid': instance.uid,
       'priority': instance.priority,
       'description': instance.description,

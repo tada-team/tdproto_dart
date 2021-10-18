@@ -6,19 +6,19 @@ part 'client_chat_composing_params.g.dart';
 
 /// Params of the client.chat.composing event.
 @freezed
-abstract class ClientChatComposingParams with _$ClientChatComposingParams {
+class ClientChatComposingParams with _$ClientChatComposingParams {
   const factory ClientChatComposingParams({
     /// Chat or contact id.
-    @JsonKey(name: 'jid') @required String jid,
+    @JsonKey(name: 'jid') required String jid,
 
     /// true = audiomessage, false = text typing.
-    @JsonKey(name: 'is_audio') bool isAudio,
+    @Default(false) @JsonKey(name: 'is_audio') bool? isAudio,
 
     /// true = start typing / audio recording, false = stop.
-    @JsonKey(name: 'composing') bool composing,
+    @Default(false) @JsonKey(name: 'composing') bool? composing,
 
     /// Message draft data.
-    @JsonKey(name: 'draft') String draft,
+    @JsonKey(name: 'draft') String? draft,
   }) = _ClientChatComposingParams;
 
   factory ClientChatComposingParams.fromJson(Map<String, dynamic> json) => _$ClientChatComposingParamsFromJson(json);

@@ -6,13 +6,13 @@ part 'server_ui_settings_params.g.dart';
 
 /// .
 @freezed
-abstract class ServerUiSettingsParams with _$ServerUiSettingsParams {
+class ServerUiSettingsParams with _$ServerUiSettingsParams {
   const factory ServerUiSettingsParams({
     /// Namespace. For example: web, app.
-    @JsonKey(name: 'namespace') @required String namespace,
+    @JsonKey(name: 'namespace') required String namespace,
 
     /// UiSettingsData.
-    @JsonKey(name: 'data') @required UiSettingsData data,
+    @JsonKey(name: 'data') required UiSettingsData data,
   }) = _ServerUiSettingsParams;
 
   factory ServerUiSettingsParams.fromJson(Map<String, dynamic> json) => _$ServerUiSettingsParamsFromJson(json);

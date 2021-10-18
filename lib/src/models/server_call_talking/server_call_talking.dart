@@ -6,16 +6,16 @@ part 'server_call_talking.g.dart';
 
 /// Someone talks in call.
 @freezed
-abstract class ServerCallTalking with _$ServerCallTalking {
+class ServerCallTalking with _$ServerCallTalking {
   const factory ServerCallTalking({
     /// .
-    @JsonKey(name: 'params') @required ServerCallTalkingParams params,
+    @JsonKey(name: 'params') required ServerCallTalkingParams params,
 
     /// .
-    @JsonKey(name: 'event') @required String name,
+    @JsonKey(name: 'event') required String name,
 
     /// .
-    @JsonKey(name: 'confirm_id') String confirmId,
+    @JsonKey(name: 'confirm_id') String? confirmId,
   }) = _ServerCallTalking;
 
   factory ServerCallTalking.fromJson(Map<String, dynamic> json) => _$ServerCallTalkingFromJson(json);

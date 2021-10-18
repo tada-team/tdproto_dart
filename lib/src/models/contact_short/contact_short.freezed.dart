@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'contact_short.dart';
 
@@ -8,6 +9,10 @@ part of 'contact_short.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ContactShort _$ContactShortFromJson(Map<String, dynamic> json) {
   return _ContactShort.fromJson(json);
 }
@@ -16,13 +21,12 @@ ContactShort _$ContactShortFromJson(Map<String, dynamic> json) {
 class _$ContactShortTearOff {
   const _$ContactShortTearOff();
 
-// ignore: unused_element
   _ContactShort call(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'display_name') String displayName,
-      @required @JsonKey(name: 'short_name') String shortName,
-      @required @JsonKey(name: 'icons') IconData icons,
-      @required @JsonKey(name: 'gentime') int gentime}) {
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'display_name') required String displayName,
+      @JsonKey(name: 'short_name') required String shortName,
+      @JsonKey(name: 'icons') required IconData icons,
+      @JsonKey(name: 'gentime') required int gentime}) {
     return _ContactShort(
       jid: jid,
       displayName: displayName,
@@ -32,41 +36,39 @@ class _$ContactShortTearOff {
     );
   }
 
-// ignore: unused_element
   ContactShort fromJson(Map<String, Object> json) {
     return ContactShort.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ContactShort = _$ContactShortTearOff();
 
 /// @nodoc
 mixin _$ContactShort {
   /// Contact Id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
 
   /// Full name in chats.
   @JsonKey(name: 'display_name')
-  String get displayName;
+  String get displayName => throw _privateConstructorUsedError;
 
   /// Short name in chats.
   @JsonKey(name: 'short_name')
-  String get shortName;
+  String get shortName => throw _privateConstructorUsedError;
 
   /// Icons data.
   @JsonKey(name: 'icons')
-  IconData get icons;
+  IconData get icons => throw _privateConstructorUsedError;
 
   /// Object version.
   @JsonKey(name: 'gentime')
-  int get gentime;
+  int get gentime => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ContactShortCopyWith<ContactShort> get copyWith;
+  $ContactShortCopyWith<ContactShort> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -93,26 +95,38 @@ class _$ContactShortCopyWithImpl<$Res> implements $ContactShortCopyWith<$Res> {
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object displayName = freezed,
-    Object shortName = freezed,
-    Object icons = freezed,
-    Object gentime = freezed,
+    Object? jid = freezed,
+    Object? displayName = freezed,
+    Object? shortName = freezed,
+    Object? icons = freezed,
+    Object? gentime = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed ? _value.jid : jid as String,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
-      shortName: shortName == freezed ? _value.shortName : shortName as String,
-      icons: icons == freezed ? _value.icons : icons as IconData,
-      gentime: gentime == freezed ? _value.gentime : gentime as int,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      displayName: displayName == freezed
+          ? _value.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String,
+      shortName: shortName == freezed
+          ? _value.shortName
+          : shortName // ignore: cast_nullable_to_non_nullable
+              as String,
+      icons: icons == freezed
+          ? _value.icons
+          : icons // ignore: cast_nullable_to_non_nullable
+              as IconData,
+      gentime: gentime == freezed
+          ? _value.gentime
+          : gentime // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 
   @override
   $IconDataCopyWith<$Res> get icons {
-    if (_value.icons == null) {
-      return null;
-    }
     return $IconDataCopyWith<$Res>(_value.icons, (value) {
       return _then(_value.copyWith(icons: value));
     });
@@ -146,39 +160,48 @@ class __$ContactShortCopyWithImpl<$Res> extends _$ContactShortCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object jid = freezed,
-    Object displayName = freezed,
-    Object shortName = freezed,
-    Object icons = freezed,
-    Object gentime = freezed,
+    Object? jid = freezed,
+    Object? displayName = freezed,
+    Object? shortName = freezed,
+    Object? icons = freezed,
+    Object? gentime = freezed,
   }) {
     return _then(_ContactShort(
-      jid: jid == freezed ? _value.jid : jid as String,
-      displayName: displayName == freezed ? _value.displayName : displayName as String,
-      shortName: shortName == freezed ? _value.shortName : shortName as String,
-      icons: icons == freezed ? _value.icons : icons as IconData,
-      gentime: gentime == freezed ? _value.gentime : gentime as int,
+      jid: jid == freezed
+          ? _value.jid
+          : jid // ignore: cast_nullable_to_non_nullable
+              as String,
+      displayName: displayName == freezed
+          ? _value.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String,
+      shortName: shortName == freezed
+          ? _value.shortName
+          : shortName // ignore: cast_nullable_to_non_nullable
+              as String,
+      icons: icons == freezed
+          ? _value.icons
+          : icons // ignore: cast_nullable_to_non_nullable
+              as IconData,
+      gentime: gentime == freezed
+          ? _value.gentime
+          : gentime // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ContactShort implements _ContactShort {
   const _$_ContactShort(
-      {@required @JsonKey(name: 'jid') this.jid,
-      @required @JsonKey(name: 'display_name') this.displayName,
-      @required @JsonKey(name: 'short_name') this.shortName,
-      @required @JsonKey(name: 'icons') this.icons,
-      @required @JsonKey(name: 'gentime') this.gentime})
-      : assert(jid != null),
-        assert(displayName != null),
-        assert(shortName != null),
-        assert(icons != null),
-        assert(gentime != null);
+      {@JsonKey(name: 'jid') required this.jid,
+      @JsonKey(name: 'display_name') required this.displayName,
+      @JsonKey(name: 'short_name') required this.shortName,
+      @JsonKey(name: 'icons') required this.icons,
+      @JsonKey(name: 'gentime') required this.gentime});
 
-  factory _$_ContactShort.fromJson(Map<String, dynamic> json) => _$_$_ContactShortFromJson(json);
+  factory _$_ContactShort.fromJson(Map<String, dynamic> json) => _$$_ContactShortFromJson(json);
 
   @override
 
@@ -239,17 +262,17 @@ class _$_ContactShort implements _ContactShort {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ContactShortToJson(this);
+    return _$$_ContactShortToJson(this);
   }
 }
 
 abstract class _ContactShort implements ContactShort {
   const factory _ContactShort(
-      {@required @JsonKey(name: 'jid') String jid,
-      @required @JsonKey(name: 'display_name') String displayName,
-      @required @JsonKey(name: 'short_name') String shortName,
-      @required @JsonKey(name: 'icons') IconData icons,
-      @required @JsonKey(name: 'gentime') int gentime}) = _$_ContactShort;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'display_name') required String displayName,
+      @JsonKey(name: 'short_name') required String shortName,
+      @JsonKey(name: 'icons') required IconData icons,
+      @JsonKey(name: 'gentime') required int gentime}) = _$_ContactShort;
 
   factory _ContactShort.fromJson(Map<String, dynamic> json) = _$_ContactShort.fromJson;
 
@@ -257,28 +280,28 @@ abstract class _ContactShort implements ContactShort {
 
   /// Contact Id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Full name in chats.
   @JsonKey(name: 'display_name')
-  String get displayName;
+  String get displayName => throw _privateConstructorUsedError;
   @override
 
   /// Short name in chats.
   @JsonKey(name: 'short_name')
-  String get shortName;
+  String get shortName => throw _privateConstructorUsedError;
   @override
 
   /// Icons data.
   @JsonKey(name: 'icons')
-  IconData get icons;
+  IconData get icons => throw _privateConstructorUsedError;
   @override
 
   /// Object version.
   @JsonKey(name: 'gentime')
-  int get gentime;
+  int get gentime => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ContactShortCopyWith<_ContactShort> get copyWith;
+  _$ContactShortCopyWith<_ContactShort> get copyWith => throw _privateConstructorUsedError;
 }

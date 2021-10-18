@@ -6,19 +6,17 @@ part of 'easy_api_message.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_EasyApiMessage _$_$_EasyApiMessageFromJson(Map<String, dynamic> json) {
-  return _$_EasyApiMessage(
-    key: json['key'] as String,
-    text: json['message'] as String,
-    messageUid: json['message_id'] as String,
-    nopreview: json['nopreview'] as bool,
-    important: json['important'] as bool,
-    silently: json['silently'] as bool,
-    convertLinebreaks: json['convert_linebreaks'] as bool,
-  );
-}
+_$_EasyApiMessage _$$_EasyApiMessageFromJson(Map<String, dynamic> json) => _$_EasyApiMessage(
+      key: json['key'] as String,
+      text: json['message'] as String,
+      messageUid: json['message_id'] as String,
+      nopreview: json['nopreview'] as bool? ?? false,
+      important: json['important'] as bool? ?? false,
+      silently: json['silently'] as bool? ?? false,
+      convertLinebreaks: json['convert_linebreaks'] as bool? ?? false,
+    );
 
-Map<String, dynamic> _$_$_EasyApiMessageToJson(_$_EasyApiMessage instance) => <String, dynamic>{
+Map<String, dynamic> _$$_EasyApiMessageToJson(_$_EasyApiMessage instance) => <String, dynamic>{
       'key': instance.key,
       'message': instance.text,
       'message_id': instance.messageUid,

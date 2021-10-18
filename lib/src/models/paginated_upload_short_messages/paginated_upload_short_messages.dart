@@ -6,19 +6,19 @@ part 'paginated_upload_short_messages.g.dart';
 
 /// Paginated UploadShortMessage.
 @freezed
-abstract class PaginatedUploadShortMessages with _$PaginatedUploadShortMessages {
+class PaginatedUploadShortMessages with _$PaginatedUploadShortMessages {
   const factory PaginatedUploadShortMessages({
     /// .
-    @JsonKey(name: 'objects') @required List<UploadShortMessage> objects,
+    @JsonKey(name: 'objects') required List<UploadShortMessage> objects,
 
     /// .
-    @JsonKey(name: 'count') @required int count,
+    @JsonKey(name: 'count') required int count,
 
     /// .
-    @JsonKey(name: 'limit') @required int limit,
+    @JsonKey(name: 'limit') required int limit,
 
     /// .
-    @JsonKey(name: 'offset') @required int offset,
+    @JsonKey(name: 'offset') required int offset,
   }) = _PaginatedUploadShortMessages;
 
   factory PaginatedUploadShortMessages.fromJson(Map<String, dynamic> json) =>

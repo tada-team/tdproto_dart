@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'received_message.dart';
 
@@ -8,6 +9,10 @@ part of 'received_message.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ReceivedMessage _$ReceivedMessageFromJson(Map<String, dynamic> json) {
   return _ReceivedMessage.fromJson(json);
 }
@@ -16,13 +21,12 @@ ReceivedMessage _$ReceivedMessageFromJson(Map<String, dynamic> json) {
 class _$ReceivedMessageTearOff {
   const _$ReceivedMessageTearOff();
 
-// ignore: unused_element
   _ReceivedMessage call(
-      {@required @JsonKey(name: 'chat') String chat,
-      @required @JsonKey(name: 'message_id') String messageId,
-      @required @JsonKey(name: 'received') bool received,
-      @JsonKey(name: 'num_received') int numReceived,
-      @JsonKey(name: '_debug') String debug}) {
+      {@JsonKey(name: 'chat') required String chat,
+      @JsonKey(name: 'message_id') required String messageId,
+      @JsonKey(name: 'received') required bool received = false,
+      @JsonKey(name: 'num_received') int? numReceived,
+      @JsonKey(name: '_debug') String? debug}) {
     return _ReceivedMessage(
       chat: chat,
       messageId: messageId,
@@ -32,41 +36,39 @@ class _$ReceivedMessageTearOff {
     );
   }
 
-// ignore: unused_element
   ReceivedMessage fromJson(Map<String, Object> json) {
     return ReceivedMessage.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ReceivedMessage = _$ReceivedMessageTearOff();
 
 /// @nodoc
 mixin _$ReceivedMessage {
   /// Chat or contact id.
   @JsonKey(name: 'chat')
-  String get chat;
+  String get chat => throw _privateConstructorUsedError;
 
   /// Message id.
   @JsonKey(name: 'message_id')
-  String get messageId;
+  String get messageId => throw _privateConstructorUsedError;
 
   /// Is received.
   @JsonKey(name: 'received')
-  bool get received;
+  bool get received => throw _privateConstructorUsedError;
 
   /// Number of contacts received this message. Experimental.
   @JsonKey(name: 'num_received')
-  int get numReceived;
+  int? get numReceived => throw _privateConstructorUsedError;
 
   /// Debug message, if any.
   @JsonKey(name: '_debug')
-  String get debug;
+  String? get debug => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ReceivedMessageCopyWith<ReceivedMessage> get copyWith;
+  $ReceivedMessageCopyWith<ReceivedMessage> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -77,8 +79,8 @@ abstract class $ReceivedMessageCopyWith<$Res> {
       {@JsonKey(name: 'chat') String chat,
       @JsonKey(name: 'message_id') String messageId,
       @JsonKey(name: 'received') bool received,
-      @JsonKey(name: 'num_received') int numReceived,
-      @JsonKey(name: '_debug') String debug});
+      @JsonKey(name: 'num_received') int? numReceived,
+      @JsonKey(name: '_debug') String? debug});
 }
 
 /// @nodoc
@@ -91,18 +93,33 @@ class _$ReceivedMessageCopyWithImpl<$Res> implements $ReceivedMessageCopyWith<$R
 
   @override
   $Res call({
-    Object chat = freezed,
-    Object messageId = freezed,
-    Object received = freezed,
-    Object numReceived = freezed,
-    Object debug = freezed,
+    Object? chat = freezed,
+    Object? messageId = freezed,
+    Object? received = freezed,
+    Object? numReceived = freezed,
+    Object? debug = freezed,
   }) {
     return _then(_value.copyWith(
-      chat: chat == freezed ? _value.chat : chat as String,
-      messageId: messageId == freezed ? _value.messageId : messageId as String,
-      received: received == freezed ? _value.received : received as bool,
-      numReceived: numReceived == freezed ? _value.numReceived : numReceived as int,
-      debug: debug == freezed ? _value.debug : debug as String,
+      chat: chat == freezed
+          ? _value.chat
+          : chat // ignore: cast_nullable_to_non_nullable
+              as String,
+      messageId: messageId == freezed
+          ? _value.messageId
+          : messageId // ignore: cast_nullable_to_non_nullable
+              as String,
+      received: received == freezed
+          ? _value.received
+          : received // ignore: cast_nullable_to_non_nullable
+              as bool,
+      numReceived: numReceived == freezed
+          ? _value.numReceived
+          : numReceived // ignore: cast_nullable_to_non_nullable
+              as int?,
+      debug: debug == freezed
+          ? _value.debug
+          : debug // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -116,8 +133,8 @@ abstract class _$ReceivedMessageCopyWith<$Res> implements $ReceivedMessageCopyWi
       {@JsonKey(name: 'chat') String chat,
       @JsonKey(name: 'message_id') String messageId,
       @JsonKey(name: 'received') bool received,
-      @JsonKey(name: 'num_received') int numReceived,
-      @JsonKey(name: '_debug') String debug});
+      @JsonKey(name: 'num_received') int? numReceived,
+      @JsonKey(name: '_debug') String? debug});
 }
 
 /// @nodoc
@@ -131,37 +148,48 @@ class __$ReceivedMessageCopyWithImpl<$Res> extends _$ReceivedMessageCopyWithImpl
 
   @override
   $Res call({
-    Object chat = freezed,
-    Object messageId = freezed,
-    Object received = freezed,
-    Object numReceived = freezed,
-    Object debug = freezed,
+    Object? chat = freezed,
+    Object? messageId = freezed,
+    Object? received = freezed,
+    Object? numReceived = freezed,
+    Object? debug = freezed,
   }) {
     return _then(_ReceivedMessage(
-      chat: chat == freezed ? _value.chat : chat as String,
-      messageId: messageId == freezed ? _value.messageId : messageId as String,
-      received: received == freezed ? _value.received : received as bool,
-      numReceived: numReceived == freezed ? _value.numReceived : numReceived as int,
-      debug: debug == freezed ? _value.debug : debug as String,
+      chat: chat == freezed
+          ? _value.chat
+          : chat // ignore: cast_nullable_to_non_nullable
+              as String,
+      messageId: messageId == freezed
+          ? _value.messageId
+          : messageId // ignore: cast_nullable_to_non_nullable
+              as String,
+      received: received == freezed
+          ? _value.received
+          : received // ignore: cast_nullable_to_non_nullable
+              as bool,
+      numReceived: numReceived == freezed
+          ? _value.numReceived
+          : numReceived // ignore: cast_nullable_to_non_nullable
+              as int?,
+      debug: debug == freezed
+          ? _value.debug
+          : debug // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ReceivedMessage implements _ReceivedMessage {
   const _$_ReceivedMessage(
-      {@required @JsonKey(name: 'chat') this.chat,
-      @required @JsonKey(name: 'message_id') this.messageId,
-      @required @JsonKey(name: 'received') this.received,
+      {@JsonKey(name: 'chat') required this.chat,
+      @JsonKey(name: 'message_id') required this.messageId,
+      @JsonKey(name: 'received') required this.received = false,
       @JsonKey(name: 'num_received') this.numReceived,
-      @JsonKey(name: '_debug') this.debug})
-      : assert(chat != null),
-        assert(messageId != null),
-        assert(received != null);
+      @JsonKey(name: '_debug') this.debug});
 
-  factory _$_ReceivedMessage.fromJson(Map<String, dynamic> json) => _$_$_ReceivedMessageFromJson(json);
+  factory _$_ReceivedMessage.fromJson(Map<String, dynamic> json) => _$$_ReceivedMessageFromJson(json);
 
   @override
 
@@ -182,12 +210,12 @@ class _$_ReceivedMessage implements _ReceivedMessage {
 
   /// Number of contacts received this message. Experimental.
   @JsonKey(name: 'num_received')
-  final int numReceived;
+  final int? numReceived;
   @override
 
   /// Debug message, if any.
   @JsonKey(name: '_debug')
-  final String debug;
+  final String? debug;
 
   @override
   String toString() {
@@ -223,17 +251,17 @@ class _$_ReceivedMessage implements _ReceivedMessage {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ReceivedMessageToJson(this);
+    return _$$_ReceivedMessageToJson(this);
   }
 }
 
 abstract class _ReceivedMessage implements ReceivedMessage {
   const factory _ReceivedMessage(
-      {@required @JsonKey(name: 'chat') String chat,
-      @required @JsonKey(name: 'message_id') String messageId,
-      @required @JsonKey(name: 'received') bool received,
-      @JsonKey(name: 'num_received') int numReceived,
-      @JsonKey(name: '_debug') String debug}) = _$_ReceivedMessage;
+      {@JsonKey(name: 'chat') required String chat,
+      @JsonKey(name: 'message_id') required String messageId,
+      @JsonKey(name: 'received') required bool received,
+      @JsonKey(name: 'num_received') int? numReceived,
+      @JsonKey(name: '_debug') String? debug}) = _$_ReceivedMessage;
 
   factory _ReceivedMessage.fromJson(Map<String, dynamic> json) = _$_ReceivedMessage.fromJson;
 
@@ -241,28 +269,28 @@ abstract class _ReceivedMessage implements ReceivedMessage {
 
   /// Chat or contact id.
   @JsonKey(name: 'chat')
-  String get chat;
+  String get chat => throw _privateConstructorUsedError;
   @override
 
   /// Message id.
   @JsonKey(name: 'message_id')
-  String get messageId;
+  String get messageId => throw _privateConstructorUsedError;
   @override
 
   /// Is received.
   @JsonKey(name: 'received')
-  bool get received;
+  bool get received => throw _privateConstructorUsedError;
   @override
 
   /// Number of contacts received this message. Experimental.
   @JsonKey(name: 'num_received')
-  int get numReceived;
+  int? get numReceived => throw _privateConstructorUsedError;
   @override
 
   /// Debug message, if any.
   @JsonKey(name: '_debug')
-  String get debug;
+  String? get debug => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ReceivedMessageCopyWith<_ReceivedMessage> get copyWith;
+  _$ReceivedMessageCopyWith<_ReceivedMessage> get copyWith => throw _privateConstructorUsedError;
 }

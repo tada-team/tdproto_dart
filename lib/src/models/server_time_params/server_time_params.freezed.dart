@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_time_params.dart';
 
@@ -8,6 +9,10 @@ part of 'server_time_params.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ServerTimeParams _$ServerTimeParamsFromJson(Map<String, dynamic> json) {
   return _ServerTimeParams.fromJson(json);
 }
@@ -16,21 +21,18 @@ ServerTimeParams _$ServerTimeParamsFromJson(Map<String, dynamic> json) {
 class _$ServerTimeParamsTearOff {
   const _$ServerTimeParamsTearOff();
 
-// ignore: unused_element
-  _ServerTimeParams call({@required @JsonKey(name: 'time') @DateTimeConverter() DateTime time}) {
+  _ServerTimeParams call({@JsonKey(name: 'time') @DateTimeConverter() required DateTime time}) {
     return _ServerTimeParams(
       time: time,
     );
   }
 
-// ignore: unused_element
   ServerTimeParams fromJson(Map<String, Object> json) {
     return ServerTimeParams.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ServerTimeParams = _$ServerTimeParamsTearOff();
 
 /// @nodoc
@@ -38,11 +40,11 @@ mixin _$ServerTimeParams {
   /// Current time.
   @JsonKey(name: 'time')
   @DateTimeConverter()
-  DateTime get time;
+  DateTime get time => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerTimeParamsCopyWith<ServerTimeParams> get copyWith;
+  $ServerTimeParamsCopyWith<ServerTimeParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -62,10 +64,13 @@ class _$ServerTimeParamsCopyWithImpl<$Res> implements $ServerTimeParamsCopyWith<
 
   @override
   $Res call({
-    Object time = freezed,
+    Object? time = freezed,
   }) {
     return _then(_value.copyWith(
-      time: time == freezed ? _value.time : time as DateTime,
+      time: time == freezed
+          ? _value.time
+          : time // ignore: cast_nullable_to_non_nullable
+              as DateTime,
     ));
   }
 }
@@ -89,21 +94,23 @@ class __$ServerTimeParamsCopyWithImpl<$Res> extends _$ServerTimeParamsCopyWithIm
 
   @override
   $Res call({
-    Object time = freezed,
+    Object? time = freezed,
   }) {
     return _then(_ServerTimeParams(
-      time: time == freezed ? _value.time : time as DateTime,
+      time: time == freezed
+          ? _value.time
+          : time // ignore: cast_nullable_to_non_nullable
+              as DateTime,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ServerTimeParams implements _ServerTimeParams {
-  const _$_ServerTimeParams({@required @JsonKey(name: 'time') @DateTimeConverter() this.time}) : assert(time != null);
+  const _$_ServerTimeParams({@JsonKey(name: 'time') @DateTimeConverter() required this.time});
 
-  factory _$_ServerTimeParams.fromJson(Map<String, dynamic> json) => _$_$_ServerTimeParamsFromJson(json);
+  factory _$_ServerTimeParams.fromJson(Map<String, dynamic> json) => _$$_ServerTimeParamsFromJson(json);
 
   @override
 
@@ -134,12 +141,12 @@ class _$_ServerTimeParams implements _ServerTimeParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ServerTimeParamsToJson(this);
+    return _$$_ServerTimeParamsToJson(this);
   }
 }
 
 abstract class _ServerTimeParams implements ServerTimeParams {
-  const factory _ServerTimeParams({@required @JsonKey(name: 'time') @DateTimeConverter() DateTime time}) =
+  const factory _ServerTimeParams({@JsonKey(name: 'time') @DateTimeConverter() required DateTime time}) =
       _$_ServerTimeParams;
 
   factory _ServerTimeParams.fromJson(Map<String, dynamic> json) = _$_ServerTimeParams.fromJson;
@@ -149,8 +156,8 @@ abstract class _ServerTimeParams implements ServerTimeParams {
   /// Current time.
   @JsonKey(name: 'time')
   @DateTimeConverter()
-  DateTime get time;
+  DateTime get time => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ServerTimeParamsCopyWith<_ServerTimeParams> get copyWith;
+  _$ServerTimeParamsCopyWith<_ServerTimeParams> get copyWith => throw _privateConstructorUsedError;
 }
