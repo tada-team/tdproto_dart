@@ -23,7 +23,7 @@ class ContactCustomFields with _$ContactCustomFields {
     /// Import source.
     @JsonKey(name: 'source') String? source,
 
-    /// AD UID.
+    /// User UUID in Active Directory.
     @JsonKey(name: 'ad_uid') String? aDUid,
   }) = _ContactCustomFields;
 

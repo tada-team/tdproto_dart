@@ -68,7 +68,7 @@ mixin _$ContactCustomFields {
   @JsonKey(name: 'source')
   String? get source => throw _privateConstructorUsedError;
 
-  /// AD UID.
+  /// User UUID in Active Directory.
   @JsonKey(name: 'ad_uid')
   String? get aDUid => throw _privateConstructorUsedError;
 
@@ -237,7 +237,7 @@ class _$_ContactCustomFields implements _ContactCustomFields {
   final String? source;
   @override
 
-  /// AD UID.
+  /// User UUID in Active Directory.
   @JsonKey(name: 'ad_uid')
   final String? aDUid;
 
@@ -319,7 +319,7 @@ abstract class _ContactCustomFields implements ContactCustomFields {
   String? get source => throw _privateConstructorUsedError;
   @override
 
-  /// AD UID.
+  /// User UUID in Active Directory.
   @JsonKey(name: 'ad_uid')
   String? get aDUid => throw _privateConstructorUsedError;
   @override
