@@ -273,13 +273,13 @@ class Features with _$Features {
     @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') required String minAppVersion,
 
     /// File Extension Whitelist.
-    @JsonKey(name: 'file_extension_whitelist') required List<String> fileExtensionWhitelist,
+    @JsonKey(name: 'file_extension_whitelist') List<String>? fileExtensionWhitelist,
 
     /// File Extension Blacklist.
-    @JsonKey(name: 'file_extension_blacklist') required List<String> fileExtensionBlacklist,
+    @JsonKey(name: 'file_extension_blacklist') List<String>? fileExtensionBlacklist,
 
     /// File Extension Whitelist Priority.
-    @Default(false) @JsonKey(name: 'file_extension_whitelist_priority') required bool fileExtensionWhitelistPriority,
+    @Default(false) @JsonKey(name: 'file_extension_whitelist_priority') bool? fileExtensionWhitelistPriority,
   }) = _Features;
 
   factory Features.fromJson(Map<String, dynamic> json) => _$FeaturesFromJson(json);

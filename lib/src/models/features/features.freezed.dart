@@ -110,9 +110,9 @@ class _$FeaturesTearOff {
       @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') required bool taskTags = false,
       @Deprecated('Deprecated.') @JsonKey(name: 'calls') required bool calls = false,
       @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') required String minAppVersion,
-      @JsonKey(name: 'file_extension_whitelist') required List<String> fileExtensionWhitelist,
-      @JsonKey(name: 'file_extension_blacklist') required List<String> fileExtensionBlacklist,
-      @JsonKey(name: 'file_extension_whitelist_priority') required bool fileExtensionWhitelistPriority = false}) {
+      @JsonKey(name: 'file_extension_whitelist') List<String>? fileExtensionWhitelist,
+      @JsonKey(name: 'file_extension_blacklist') List<String>? fileExtensionBlacklist,
+      @JsonKey(name: 'file_extension_whitelist_priority') bool? fileExtensionWhitelistPriority = false}) {
     return _Features(
       host: host,
       build: build,
@@ -580,15 +580,15 @@ mixin _$Features {
 
   /// File Extension Whitelist.
   @JsonKey(name: 'file_extension_whitelist')
-  List<String> get fileExtensionWhitelist => throw _privateConstructorUsedError;
+  List<String>? get fileExtensionWhitelist => throw _privateConstructorUsedError;
 
   /// File Extension Blacklist.
   @JsonKey(name: 'file_extension_blacklist')
-  List<String> get fileExtensionBlacklist => throw _privateConstructorUsedError;
+  List<String>? get fileExtensionBlacklist => throw _privateConstructorUsedError;
 
   /// File Extension Whitelist Priority.
   @JsonKey(name: 'file_extension_whitelist_priority')
-  bool get fileExtensionWhitelistPriority => throw _privateConstructorUsedError;
+  bool? get fileExtensionWhitelistPriority => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -687,9 +687,9 @@ abstract class $FeaturesCopyWith<$Res> {
       @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') bool taskTags,
       @Deprecated('Deprecated.') @JsonKey(name: 'calls') bool calls,
       @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion,
-      @JsonKey(name: 'file_extension_whitelist') List<String> fileExtensionWhitelist,
-      @JsonKey(name: 'file_extension_blacklist') List<String> fileExtensionBlacklist,
-      @JsonKey(name: 'file_extension_whitelist_priority') bool fileExtensionWhitelistPriority});
+      @JsonKey(name: 'file_extension_whitelist') List<String>? fileExtensionWhitelist,
+      @JsonKey(name: 'file_extension_blacklist') List<String>? fileExtensionBlacklist,
+      @JsonKey(name: 'file_extension_whitelist_priority') bool? fileExtensionWhitelistPriority});
 
   $TermsCopyWith<$Res> get terms;
   $WallpaperCopyWith<$Res>? get defaultWallpaper;
@@ -1153,15 +1153,15 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
       fileExtensionWhitelist: fileExtensionWhitelist == freezed
           ? _value.fileExtensionWhitelist
           : fileExtensionWhitelist // ignore: cast_nullable_to_non_nullable
-              as List<String>,
+              as List<String>?,
       fileExtensionBlacklist: fileExtensionBlacklist == freezed
           ? _value.fileExtensionBlacklist
           : fileExtensionBlacklist // ignore: cast_nullable_to_non_nullable
-              as List<String>,
+              as List<String>?,
       fileExtensionWhitelistPriority: fileExtensionWhitelistPriority == freezed
           ? _value.fileExtensionWhitelistPriority
           : fileExtensionWhitelistPriority // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as bool?,
     ));
   }
 
@@ -1277,9 +1277,9 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
       @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') bool taskTags,
       @Deprecated('Deprecated.') @JsonKey(name: 'calls') bool calls,
       @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') String minAppVersion,
-      @JsonKey(name: 'file_extension_whitelist') List<String> fileExtensionWhitelist,
-      @JsonKey(name: 'file_extension_blacklist') List<String> fileExtensionBlacklist,
-      @JsonKey(name: 'file_extension_whitelist_priority') bool fileExtensionWhitelistPriority});
+      @JsonKey(name: 'file_extension_whitelist') List<String>? fileExtensionWhitelist,
+      @JsonKey(name: 'file_extension_blacklist') List<String>? fileExtensionBlacklist,
+      @JsonKey(name: 'file_extension_whitelist_priority') bool? fileExtensionWhitelistPriority});
 
   @override
   $TermsCopyWith<$Res> get terms;
@@ -1745,15 +1745,15 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
       fileExtensionWhitelist: fileExtensionWhitelist == freezed
           ? _value.fileExtensionWhitelist
           : fileExtensionWhitelist // ignore: cast_nullable_to_non_nullable
-              as List<String>,
+              as List<String>?,
       fileExtensionBlacklist: fileExtensionBlacklist == freezed
           ? _value.fileExtensionBlacklist
           : fileExtensionBlacklist // ignore: cast_nullable_to_non_nullable
-              as List<String>,
+              as List<String>?,
       fileExtensionWhitelistPriority: fileExtensionWhitelistPriority == freezed
           ? _value.fileExtensionWhitelistPriority
           : fileExtensionWhitelistPriority // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as bool?,
     ));
   }
 }
@@ -1850,9 +1850,9 @@ class _$_Features implements _Features {
       @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') required this.taskTags = false,
       @Deprecated('Deprecated.') @JsonKey(name: 'calls') required this.calls = false,
       @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') required this.minAppVersion,
-      @JsonKey(name: 'file_extension_whitelist') required this.fileExtensionWhitelist,
-      @JsonKey(name: 'file_extension_blacklist') required this.fileExtensionBlacklist,
-      @JsonKey(name: 'file_extension_whitelist_priority') required this.fileExtensionWhitelistPriority = false});
+      @JsonKey(name: 'file_extension_whitelist') this.fileExtensionWhitelist,
+      @JsonKey(name: 'file_extension_blacklist') this.fileExtensionBlacklist,
+      @JsonKey(name: 'file_extension_whitelist_priority') this.fileExtensionWhitelistPriority = false});
 
   factory _$_Features.fromJson(Map<String, dynamic> json) => _$$_FeaturesFromJson(json);
 
@@ -2308,17 +2308,17 @@ class _$_Features implements _Features {
 
   /// File Extension Whitelist.
   @JsonKey(name: 'file_extension_whitelist')
-  final List<String> fileExtensionWhitelist;
+  final List<String>? fileExtensionWhitelist;
   @override
 
   /// File Extension Blacklist.
   @JsonKey(name: 'file_extension_blacklist')
-  final List<String> fileExtensionBlacklist;
+  final List<String>? fileExtensionBlacklist;
   @override
 
   /// File Extension Whitelist Priority.
   @JsonKey(name: 'file_extension_whitelist_priority')
-  final bool fileExtensionWhitelistPriority;
+  final bool? fileExtensionWhitelistPriority;
 
   @override
   String toString() {
@@ -2661,9 +2661,9 @@ abstract class _Features implements Features {
       @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') required bool taskTags,
       @Deprecated('Deprecated.') @JsonKey(name: 'calls') required bool calls,
       @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') required String minAppVersion,
-      @JsonKey(name: 'file_extension_whitelist') required List<String> fileExtensionWhitelist,
-      @JsonKey(name: 'file_extension_blacklist') required List<String> fileExtensionBlacklist,
-      @JsonKey(name: 'file_extension_whitelist_priority') required bool fileExtensionWhitelistPriority}) = _$_Features;
+      @JsonKey(name: 'file_extension_whitelist') List<String>? fileExtensionWhitelist,
+      @JsonKey(name: 'file_extension_blacklist') List<String>? fileExtensionBlacklist,
+      @JsonKey(name: 'file_extension_whitelist_priority') bool? fileExtensionWhitelistPriority}) = _$_Features;
 
   factory _Features.fromJson(Map<String, dynamic> json) = _$_Features.fromJson;
 
@@ -3119,17 +3119,17 @@ abstract class _Features implements Features {
 
   /// File Extension Whitelist.
   @JsonKey(name: 'file_extension_whitelist')
-  List<String> get fileExtensionWhitelist => throw _privateConstructorUsedError;
+  List<String>? get fileExtensionWhitelist => throw _privateConstructorUsedError;
   @override
 
   /// File Extension Blacklist.
   @JsonKey(name: 'file_extension_blacklist')
-  List<String> get fileExtensionBlacklist => throw _privateConstructorUsedError;
+  List<String>? get fileExtensionBlacklist => throw _privateConstructorUsedError;
   @override
 
   /// File Extension Whitelist Priority.
   @JsonKey(name: 'file_extension_whitelist_priority')
-  bool get fileExtensionWhitelistPriority => throw _privateConstructorUsedError;
+  bool? get fileExtensionWhitelistPriority => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$FeaturesCopyWith<_Features> get copyWith => throw _privateConstructorUsedError;

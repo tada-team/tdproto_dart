@@ -100,8 +100,8 @@ _$_Features _$$_FeaturesFromJson(Map<String, dynamic> json) => _$_Features(
       taskTags: json['task_tags'] as bool? ?? false,
       calls: json['calls'] as bool? ?? false,
       minAppVersion: json['min_app_version'] as String,
-      fileExtensionWhitelist: (json['file_extension_whitelist'] as List<dynamic>).map((e) => e as String).toList(),
-      fileExtensionBlacklist: (json['file_extension_blacklist'] as List<dynamic>).map((e) => e as String).toList(),
+      fileExtensionWhitelist: (json['file_extension_whitelist'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      fileExtensionBlacklist: (json['file_extension_blacklist'] as List<dynamic>?)?.map((e) => e as String).toList(),
       fileExtensionWhitelistPriority: json['file_extension_whitelist_priority'] as bool? ?? false,
     );
 
