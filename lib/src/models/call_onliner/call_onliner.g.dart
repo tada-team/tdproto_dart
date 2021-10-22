@@ -12,6 +12,7 @@ _$_CallOnliner _$$_CallOnlinerFromJson(Map<String, dynamic> json) => _$_CallOnli
       role: json['role'] as String,
       icon: json['icon'] as String,
       muted: json['muted'] as bool? ?? false,
+      enabledVideo: json['enabled_video'] as bool? ?? false,
       devices: (json['devices'] as List<dynamic>).map((e) => CallDevice.fromJson(e as Map<String, dynamic>)).toList(),
     );
 
@@ -21,5 +22,6 @@ Map<String, dynamic> _$$_CallOnlinerToJson(_$_CallOnliner instance) => <String, 
       'role': instance.role,
       'icon': instance.icon,
       'muted': instance.muted,
+      'enabled_video': instance.enabledVideo,
       'devices': instance.devices.map((e) => e.toJson()).toList(),
     };

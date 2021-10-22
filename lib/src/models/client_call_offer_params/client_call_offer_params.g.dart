@@ -11,6 +11,9 @@ _$_ClientCallOfferParams _$$_ClientCallOfferParamsFromJson(Map<String, dynamic> 
       muted: json['muted'] as bool? ?? false,
       trickle: json['trickle'] as bool? ?? false,
       sdp: json['sdp'] as String,
+      callType: json['call_type'] as String?,
+      enabledAudio: json['enabled_audio'] as bool? ?? false,
+      enabledVideo: json['enabled_video'] as bool? ?? false,
     );
 
 Map<String, dynamic> _$$_ClientCallOfferParamsToJson(_$_ClientCallOfferParams instance) => <String, dynamic>{
@@ -18,4 +21,7 @@ Map<String, dynamic> _$$_ClientCallOfferParamsToJson(_$_ClientCallOfferParams in
       'muted': instance.muted,
       'trickle': instance.trickle,
       'sdp': instance.sdp,
+      'call_type': instance.callType,
+      'enabled_audio': instance.enabledAudio,
+      'enabled_video': instance.enabledVideo,
     };

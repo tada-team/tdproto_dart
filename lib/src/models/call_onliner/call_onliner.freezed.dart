@@ -27,6 +27,7 @@ class _$CallOnlinerTearOff {
       @JsonKey(name: 'role') required String role,
       @JsonKey(name: 'icon') required String icon,
       @JsonKey(name: 'muted') required bool muted = false,
+      @JsonKey(name: 'enabled_video') bool? enabledVideo = false,
       @JsonKey(name: 'devices') required List<CallDevice> devices}) {
     return _CallOnliner(
       jid: jid,
@@ -34,6 +35,7 @@ class _$CallOnlinerTearOff {
       role: role,
       icon: icon,
       muted: muted,
+      enabledVideo: enabledVideo,
       devices: devices,
     );
   }
@@ -68,6 +70,10 @@ mixin _$CallOnliner {
   @JsonKey(name: 'muted')
   bool get muted => throw _privateConstructorUsedError;
 
+  /// Video state.
+  @JsonKey(name: 'enabled_video')
+  bool? get enabledVideo => throw _privateConstructorUsedError;
+
   /// Member devices, strictly one for now.
   @JsonKey(name: 'devices')
   List<CallDevice> get devices => throw _privateConstructorUsedError;
@@ -86,6 +92,7 @@ abstract class $CallOnlinerCopyWith<$Res> {
       @JsonKey(name: 'role') String role,
       @JsonKey(name: 'icon') String icon,
       @JsonKey(name: 'muted') bool muted,
+      @JsonKey(name: 'enabled_video') bool? enabledVideo,
       @JsonKey(name: 'devices') List<CallDevice> devices});
 }
 
@@ -104,6 +111,7 @@ class _$CallOnlinerCopyWithImpl<$Res> implements $CallOnlinerCopyWith<$Res> {
     Object? role = freezed,
     Object? icon = freezed,
     Object? muted = freezed,
+    Object? enabledVideo = freezed,
     Object? devices = freezed,
   }) {
     return _then(_value.copyWith(
@@ -127,6 +135,10 @@ class _$CallOnlinerCopyWithImpl<$Res> implements $CallOnlinerCopyWith<$Res> {
           ? _value.muted
           : muted // ignore: cast_nullable_to_non_nullable
               as bool,
+      enabledVideo: enabledVideo == freezed
+          ? _value.enabledVideo
+          : enabledVideo // ignore: cast_nullable_to_non_nullable
+              as bool?,
       devices: devices == freezed
           ? _value.devices
           : devices // ignore: cast_nullable_to_non_nullable
@@ -146,6 +158,7 @@ abstract class _$CallOnlinerCopyWith<$Res> implements $CallOnlinerCopyWith<$Res>
       @JsonKey(name: 'role') String role,
       @JsonKey(name: 'icon') String icon,
       @JsonKey(name: 'muted') bool muted,
+      @JsonKey(name: 'enabled_video') bool? enabledVideo,
       @JsonKey(name: 'devices') List<CallDevice> devices});
 }
 
@@ -164,6 +177,7 @@ class __$CallOnlinerCopyWithImpl<$Res> extends _$CallOnlinerCopyWithImpl<$Res> i
     Object? role = freezed,
     Object? icon = freezed,
     Object? muted = freezed,
+    Object? enabledVideo = freezed,
     Object? devices = freezed,
   }) {
     return _then(_CallOnliner(
@@ -187,6 +201,10 @@ class __$CallOnlinerCopyWithImpl<$Res> extends _$CallOnlinerCopyWithImpl<$Res> i
           ? _value.muted
           : muted // ignore: cast_nullable_to_non_nullable
               as bool,
+      enabledVideo: enabledVideo == freezed
+          ? _value.enabledVideo
+          : enabledVideo // ignore: cast_nullable_to_non_nullable
+              as bool?,
       devices: devices == freezed
           ? _value.devices
           : devices // ignore: cast_nullable_to_non_nullable
@@ -204,6 +222,7 @@ class _$_CallOnliner implements _CallOnliner {
       @JsonKey(name: 'role') required this.role,
       @JsonKey(name: 'icon') required this.icon,
       @JsonKey(name: 'muted') required this.muted = false,
+      @JsonKey(name: 'enabled_video') this.enabledVideo = false,
       @JsonKey(name: 'devices') required this.devices});
 
   factory _$_CallOnliner.fromJson(Map<String, dynamic> json) => _$$_CallOnlinerFromJson(json);
@@ -235,13 +254,18 @@ class _$_CallOnliner implements _CallOnliner {
   final bool muted;
   @override
 
+  /// Video state.
+  @JsonKey(name: 'enabled_video')
+  final bool? enabledVideo;
+  @override
+
   /// Member devices, strictly one for now.
   @JsonKey(name: 'devices')
   final List<CallDevice> devices;
 
   @override
   String toString() {
-    return 'CallOnliner(jid: $jid, displayName: $displayName, role: $role, icon: $icon, muted: $muted, devices: $devices)';
+    return 'CallOnliner(jid: $jid, displayName: $displayName, role: $role, icon: $icon, muted: $muted, enabledVideo: $enabledVideo, devices: $devices)';
   }
 
   @override
@@ -254,6 +278,8 @@ class _$_CallOnliner implements _CallOnliner {
             (identical(other.role, role) || const DeepCollectionEquality().equals(other.role, role)) &&
             (identical(other.icon, icon) || const DeepCollectionEquality().equals(other.icon, icon)) &&
             (identical(other.muted, muted) || const DeepCollectionEquality().equals(other.muted, muted)) &&
+            (identical(other.enabledVideo, enabledVideo) ||
+                const DeepCollectionEquality().equals(other.enabledVideo, enabledVideo)) &&
             (identical(other.devices, devices) || const DeepCollectionEquality().equals(other.devices, devices)));
   }
 
@@ -265,6 +291,7 @@ class _$_CallOnliner implements _CallOnliner {
       const DeepCollectionEquality().hash(role) ^
       const DeepCollectionEquality().hash(icon) ^
       const DeepCollectionEquality().hash(muted) ^
+      const DeepCollectionEquality().hash(enabledVideo) ^
       const DeepCollectionEquality().hash(devices);
 
   @JsonKey(ignore: true)
@@ -284,6 +311,7 @@ abstract class _CallOnliner implements CallOnliner {
       @JsonKey(name: 'role') required String role,
       @JsonKey(name: 'icon') required String icon,
       @JsonKey(name: 'muted') required bool muted,
+      @JsonKey(name: 'enabled_video') bool? enabledVideo,
       @JsonKey(name: 'devices') required List<CallDevice> devices}) = _$_CallOnliner;
 
   factory _CallOnliner.fromJson(Map<String, dynamic> json) = _$_CallOnliner.fromJson;
@@ -313,6 +341,11 @@ abstract class _CallOnliner implements CallOnliner {
   /// Microphone muted. Computed from devices muted states.
   @JsonKey(name: 'muted')
   bool get muted => throw _privateConstructorUsedError;
+  @override
+
+  /// Video state.
+  @JsonKey(name: 'enabled_video')
+  bool? get enabledVideo => throw _privateConstructorUsedError;
   @override
 
   /// Member devices, strictly one for now.

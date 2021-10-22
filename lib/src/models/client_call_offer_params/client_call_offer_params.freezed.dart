@@ -23,14 +23,20 @@ class _$ClientCallOfferParamsTearOff {
 
   _ClientCallOfferParams call(
       {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'muted') required bool muted = false,
+      @Deprecated('Mute state Deprecated: use EnabledAudio.') @JsonKey(name: 'muted') required bool muted = false,
       @JsonKey(name: 'trickle') required bool trickle = false,
-      @JsonKey(name: 'sdp') required String sdp}) {
+      @JsonKey(name: 'sdp') required String sdp,
+      @JsonKey(name: 'call_type') String? callType,
+      @JsonKey(name: 'enabled_audio') bool? enabledAudio = false,
+      @JsonKey(name: 'enabled_video') bool? enabledVideo = false}) {
     return _ClientCallOfferParams(
       jid: jid,
       muted: muted,
       trickle: trickle,
       sdp: sdp,
+      callType: callType,
+      enabledAudio: enabledAudio,
+      enabledVideo: enabledVideo,
     );
   }
 
@@ -48,7 +54,8 @@ mixin _$ClientCallOfferParams {
   @JsonKey(name: 'jid')
   String get jid => throw _privateConstructorUsedError;
 
-  /// Mute state.
+  /// Mute state Deprecated: use EnabledAudio.
+  @Deprecated('Mute state Deprecated: use EnabledAudio.')
   @JsonKey(name: 'muted')
   bool get muted => throw _privateConstructorUsedError;
 
@@ -59,6 +66,18 @@ mixin _$ClientCallOfferParams {
   /// SDP (session description protocol) data.
   @JsonKey(name: 'sdp')
   String get sdp => throw _privateConstructorUsedError;
+
+  /// CallType is a type of call("audio" - audio room, "video" - video room). default = "audio".
+  @JsonKey(name: 'call_type')
+  String? get callType => throw _privateConstructorUsedError;
+
+  /// Audio state.
+  @JsonKey(name: 'enabled_audio')
+  bool? get enabledAudio => throw _privateConstructorUsedError;
+
+  /// Video state.
+  @JsonKey(name: 'enabled_video')
+  bool? get enabledVideo => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -71,9 +90,12 @@ abstract class $ClientCallOfferParamsCopyWith<$Res> {
       _$ClientCallOfferParamsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'muted') bool muted,
+      @Deprecated('Mute state Deprecated: use EnabledAudio.') @JsonKey(name: 'muted') bool muted,
       @JsonKey(name: 'trickle') bool trickle,
-      @JsonKey(name: 'sdp') String sdp});
+      @JsonKey(name: 'sdp') String sdp,
+      @JsonKey(name: 'call_type') String? callType,
+      @JsonKey(name: 'enabled_audio') bool? enabledAudio,
+      @JsonKey(name: 'enabled_video') bool? enabledVideo});
 }
 
 /// @nodoc
@@ -90,6 +112,9 @@ class _$ClientCallOfferParamsCopyWithImpl<$Res> implements $ClientCallOfferParam
     Object? muted = freezed,
     Object? trickle = freezed,
     Object? sdp = freezed,
+    Object? callType = freezed,
+    Object? enabledAudio = freezed,
+    Object? enabledVideo = freezed,
   }) {
     return _then(_value.copyWith(
       jid: jid == freezed
@@ -108,6 +133,18 @@ class _$ClientCallOfferParamsCopyWithImpl<$Res> implements $ClientCallOfferParam
           ? _value.sdp
           : sdp // ignore: cast_nullable_to_non_nullable
               as String,
+      callType: callType == freezed
+          ? _value.callType
+          : callType // ignore: cast_nullable_to_non_nullable
+              as String?,
+      enabledAudio: enabledAudio == freezed
+          ? _value.enabledAudio
+          : enabledAudio // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      enabledVideo: enabledVideo == freezed
+          ? _value.enabledVideo
+          : enabledVideo // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -119,9 +156,12 @@ abstract class _$ClientCallOfferParamsCopyWith<$Res> implements $ClientCallOffer
   @override
   $Res call(
       {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'muted') bool muted,
+      @Deprecated('Mute state Deprecated: use EnabledAudio.') @JsonKey(name: 'muted') bool muted,
       @JsonKey(name: 'trickle') bool trickle,
-      @JsonKey(name: 'sdp') String sdp});
+      @JsonKey(name: 'sdp') String sdp,
+      @JsonKey(name: 'call_type') String? callType,
+      @JsonKey(name: 'enabled_audio') bool? enabledAudio,
+      @JsonKey(name: 'enabled_video') bool? enabledVideo});
 }
 
 /// @nodoc
@@ -139,6 +179,9 @@ class __$ClientCallOfferParamsCopyWithImpl<$Res> extends _$ClientCallOfferParams
     Object? muted = freezed,
     Object? trickle = freezed,
     Object? sdp = freezed,
+    Object? callType = freezed,
+    Object? enabledAudio = freezed,
+    Object? enabledVideo = freezed,
   }) {
     return _then(_ClientCallOfferParams(
       jid: jid == freezed
@@ -157,6 +200,18 @@ class __$ClientCallOfferParamsCopyWithImpl<$Res> extends _$ClientCallOfferParams
           ? _value.sdp
           : sdp // ignore: cast_nullable_to_non_nullable
               as String,
+      callType: callType == freezed
+          ? _value.callType
+          : callType // ignore: cast_nullable_to_non_nullable
+              as String?,
+      enabledAudio: enabledAudio == freezed
+          ? _value.enabledAudio
+          : enabledAudio // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      enabledVideo: enabledVideo == freezed
+          ? _value.enabledVideo
+          : enabledVideo // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -166,9 +221,12 @@ class __$ClientCallOfferParamsCopyWithImpl<$Res> extends _$ClientCallOfferParams
 class _$_ClientCallOfferParams implements _ClientCallOfferParams {
   const _$_ClientCallOfferParams(
       {@JsonKey(name: 'jid') required this.jid,
-      @JsonKey(name: 'muted') required this.muted = false,
+      @Deprecated('Mute state Deprecated: use EnabledAudio.') @JsonKey(name: 'muted') required this.muted = false,
       @JsonKey(name: 'trickle') required this.trickle = false,
-      @JsonKey(name: 'sdp') required this.sdp});
+      @JsonKey(name: 'sdp') required this.sdp,
+      @JsonKey(name: 'call_type') this.callType,
+      @JsonKey(name: 'enabled_audio') this.enabledAudio = false,
+      @JsonKey(name: 'enabled_video') this.enabledVideo = false});
 
   factory _$_ClientCallOfferParams.fromJson(Map<String, dynamic> json) => _$$_ClientCallOfferParamsFromJson(json);
 
@@ -179,7 +237,8 @@ class _$_ClientCallOfferParams implements _ClientCallOfferParams {
   final String jid;
   @override
 
-  /// Mute state.
+  /// Mute state Deprecated: use EnabledAudio.
+  @Deprecated('Mute state Deprecated: use EnabledAudio.')
   @JsonKey(name: 'muted')
   final bool muted;
   @override
@@ -192,10 +251,25 @@ class _$_ClientCallOfferParams implements _ClientCallOfferParams {
   /// SDP (session description protocol) data.
   @JsonKey(name: 'sdp')
   final String sdp;
+  @override
+
+  /// CallType is a type of call("audio" - audio room, "video" - video room). default = "audio".
+  @JsonKey(name: 'call_type')
+  final String? callType;
+  @override
+
+  /// Audio state.
+  @JsonKey(name: 'enabled_audio')
+  final bool? enabledAudio;
+  @override
+
+  /// Video state.
+  @JsonKey(name: 'enabled_video')
+  final bool? enabledVideo;
 
   @override
   String toString() {
-    return 'ClientCallOfferParams(jid: $jid, muted: $muted, trickle: $trickle, sdp: $sdp)';
+    return 'ClientCallOfferParams(jid: $jid, muted: $muted, trickle: $trickle, sdp: $sdp, callType: $callType, enabledAudio: $enabledAudio, enabledVideo: $enabledVideo)';
   }
 
   @override
@@ -205,7 +279,12 @@ class _$_ClientCallOfferParams implements _ClientCallOfferParams {
             (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
             (identical(other.muted, muted) || const DeepCollectionEquality().equals(other.muted, muted)) &&
             (identical(other.trickle, trickle) || const DeepCollectionEquality().equals(other.trickle, trickle)) &&
-            (identical(other.sdp, sdp) || const DeepCollectionEquality().equals(other.sdp, sdp)));
+            (identical(other.sdp, sdp) || const DeepCollectionEquality().equals(other.sdp, sdp)) &&
+            (identical(other.callType, callType) || const DeepCollectionEquality().equals(other.callType, callType)) &&
+            (identical(other.enabledAudio, enabledAudio) ||
+                const DeepCollectionEquality().equals(other.enabledAudio, enabledAudio)) &&
+            (identical(other.enabledVideo, enabledVideo) ||
+                const DeepCollectionEquality().equals(other.enabledVideo, enabledVideo)));
   }
 
   @override
@@ -214,7 +293,10 @@ class _$_ClientCallOfferParams implements _ClientCallOfferParams {
       const DeepCollectionEquality().hash(jid) ^
       const DeepCollectionEquality().hash(muted) ^
       const DeepCollectionEquality().hash(trickle) ^
-      const DeepCollectionEquality().hash(sdp);
+      const DeepCollectionEquality().hash(sdp) ^
+      const DeepCollectionEquality().hash(callType) ^
+      const DeepCollectionEquality().hash(enabledAudio) ^
+      const DeepCollectionEquality().hash(enabledVideo);
 
   @JsonKey(ignore: true)
   @override
@@ -230,9 +312,12 @@ class _$_ClientCallOfferParams implements _ClientCallOfferParams {
 abstract class _ClientCallOfferParams implements ClientCallOfferParams {
   const factory _ClientCallOfferParams(
       {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'muted') required bool muted,
+      @Deprecated('Mute state Deprecated: use EnabledAudio.') @JsonKey(name: 'muted') required bool muted,
       @JsonKey(name: 'trickle') required bool trickle,
-      @JsonKey(name: 'sdp') required String sdp}) = _$_ClientCallOfferParams;
+      @JsonKey(name: 'sdp') required String sdp,
+      @JsonKey(name: 'call_type') String? callType,
+      @JsonKey(name: 'enabled_audio') bool? enabledAudio,
+      @JsonKey(name: 'enabled_video') bool? enabledVideo}) = _$_ClientCallOfferParams;
 
   factory _ClientCallOfferParams.fromJson(Map<String, dynamic> json) = _$_ClientCallOfferParams.fromJson;
 
@@ -243,7 +328,8 @@ abstract class _ClientCallOfferParams implements ClientCallOfferParams {
   String get jid => throw _privateConstructorUsedError;
   @override
 
-  /// Mute state.
+  /// Mute state Deprecated: use EnabledAudio.
+  @Deprecated('Mute state Deprecated: use EnabledAudio.')
   @JsonKey(name: 'muted')
   bool get muted => throw _privateConstructorUsedError;
   @override
@@ -256,6 +342,21 @@ abstract class _ClientCallOfferParams implements ClientCallOfferParams {
   /// SDP (session description protocol) data.
   @JsonKey(name: 'sdp')
   String get sdp => throw _privateConstructorUsedError;
+  @override
+
+  /// CallType is a type of call("audio" - audio room, "video" - video room). default = "audio".
+  @JsonKey(name: 'call_type')
+  String? get callType => throw _privateConstructorUsedError;
+  @override
+
+  /// Audio state.
+  @JsonKey(name: 'enabled_audio')
+  bool? get enabledAudio => throw _privateConstructorUsedError;
+  @override
+
+  /// Video state.
+  @JsonKey(name: 'enabled_video')
+  bool? get enabledVideo => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ClientCallOfferParamsCopyWith<_ClientCallOfferParams> get copyWith => throw _privateConstructorUsedError;

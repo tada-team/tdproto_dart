@@ -23,6 +23,9 @@ class CallOnliner with _$CallOnliner {
     /// Microphone muted. Computed from devices muted states.
     @Default(false) @JsonKey(name: 'muted') required bool muted,
 
+    /// Video state.
+    @Default(false) @JsonKey(name: 'enabled_video') bool? enabledVideo,
+
     /// Member devices, strictly one for now.
     @JsonKey(name: 'devices') required List<CallDevice> devices,
   }) = _CallOnliner;

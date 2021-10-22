@@ -34,6 +34,9 @@ class ServerCallBuzzParams with _$ServerCallBuzzParams {
 
     /// Deprecated.
     @Deprecated('Deprecated.') @JsonKey(name: 'team') required String team,
+
+    /// CallType is a type of call("audio" - audio room, "video" - video room).
+    @JsonKey(name: 'call_type') String? callType,
   }) = _ServerCallBuzzParams;
 
   factory ServerCallBuzzParams.fromJson(Map<String, dynamic> json) => _$ServerCallBuzzParamsFromJson(json);

@@ -16,6 +16,7 @@ _$_ServerCallBuzzParams _$$_ServerCallBuzzParamsFromJson(Map<String, dynamic> js
       uid: json['uid'] as String,
       buzzTimeout: json['buzz_timeout'] as int,
       team: json['team'] as String,
+      callType: json['call_type'] as String?,
     );
 
 Map<String, dynamic> _$$_ServerCallBuzzParamsToJson(_$_ServerCallBuzzParams instance) => <String, dynamic>{
@@ -28,4 +29,5 @@ Map<String, dynamic> _$$_ServerCallBuzzParamsToJson(_$_ServerCallBuzzParams inst
       'uid': instance.uid,
       'buzz_timeout': instance.buzzTimeout,
       'team': instance.team,
+      'call_type': instance.callType,
     };

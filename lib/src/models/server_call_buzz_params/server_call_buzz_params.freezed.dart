@@ -30,7 +30,8 @@ class _$ServerCallBuzzParamsTearOff {
       @JsonKey(name: 'actor') required ContactShort actorShort,
       @JsonKey(name: 'uid') required String uid,
       @JsonKey(name: 'buzz_timeout') required int buzzTimeout,
-      @Deprecated('Deprecated.') @JsonKey(name: 'team') required String team}) {
+      @Deprecated('Deprecated.') @JsonKey(name: 'team') required String team,
+      @JsonKey(name: 'call_type') String? callType}) {
     return _ServerCallBuzzParams(
       jid: jid,
       icons: icons,
@@ -41,6 +42,7 @@ class _$ServerCallBuzzParamsTearOff {
       uid: uid,
       buzzTimeout: buzzTimeout,
       team: team,
+      callType: callType,
     );
   }
 
@@ -91,6 +93,10 @@ mixin _$ServerCallBuzzParams {
   @JsonKey(name: 'team')
   String get team => throw _privateConstructorUsedError;
 
+  /// CallType is a type of call("audio" - audio room, "video" - video room).
+  @JsonKey(name: 'call_type')
+  String? get callType => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $ServerCallBuzzParamsCopyWith<ServerCallBuzzParams> get copyWith => throw _privateConstructorUsedError;
@@ -109,7 +115,8 @@ abstract class $ServerCallBuzzParamsCopyWith<$Res> {
       @JsonKey(name: 'actor') ContactShort actorShort,
       @JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'buzz_timeout') int buzzTimeout,
-      @Deprecated('Deprecated.') @JsonKey(name: 'team') String team});
+      @Deprecated('Deprecated.') @JsonKey(name: 'team') String team,
+      @JsonKey(name: 'call_type') String? callType});
 
   $IconDataCopyWith<$Res> get icons;
   $TeamShortCopyWith<$Res> get teamShort;
@@ -136,6 +143,7 @@ class _$ServerCallBuzzParamsCopyWithImpl<$Res> implements $ServerCallBuzzParamsC
     Object? uid = freezed,
     Object? buzzTimeout = freezed,
     Object? team = freezed,
+    Object? callType = freezed,
   }) {
     return _then(_value.copyWith(
       jid: jid == freezed
@@ -174,6 +182,10 @@ class _$ServerCallBuzzParamsCopyWithImpl<$Res> implements $ServerCallBuzzParamsC
           ? _value.team
           : team // ignore: cast_nullable_to_non_nullable
               as String,
+      callType: callType == freezed
+          ? _value.callType
+          : callType // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
@@ -220,7 +232,8 @@ abstract class _$ServerCallBuzzParamsCopyWith<$Res> implements $ServerCallBuzzPa
       @JsonKey(name: 'actor') ContactShort actorShort,
       @JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'buzz_timeout') int buzzTimeout,
-      @Deprecated('Deprecated.') @JsonKey(name: 'team') String team});
+      @Deprecated('Deprecated.') @JsonKey(name: 'team') String team,
+      @JsonKey(name: 'call_type') String? callType});
 
   @override
   $IconDataCopyWith<$Res> get icons;
@@ -252,6 +265,7 @@ class __$ServerCallBuzzParamsCopyWithImpl<$Res> extends _$ServerCallBuzzParamsCo
     Object? uid = freezed,
     Object? buzzTimeout = freezed,
     Object? team = freezed,
+    Object? callType = freezed,
   }) {
     return _then(_ServerCallBuzzParams(
       jid: jid == freezed
@@ -290,6 +304,10 @@ class __$ServerCallBuzzParamsCopyWithImpl<$Res> extends _$ServerCallBuzzParamsCo
           ? _value.team
           : team // ignore: cast_nullable_to_non_nullable
               as String,
+      callType: callType == freezed
+          ? _value.callType
+          : callType // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -306,7 +324,8 @@ class _$_ServerCallBuzzParams implements _ServerCallBuzzParams {
       @JsonKey(name: 'actor') required this.actorShort,
       @JsonKey(name: 'uid') required this.uid,
       @JsonKey(name: 'buzz_timeout') required this.buzzTimeout,
-      @Deprecated('Deprecated.') @JsonKey(name: 'team') required this.team});
+      @Deprecated('Deprecated.') @JsonKey(name: 'team') required this.team,
+      @JsonKey(name: 'call_type') this.callType});
 
   factory _$_ServerCallBuzzParams.fromJson(Map<String, dynamic> json) => _$$_ServerCallBuzzParamsFromJson(json);
 
@@ -356,10 +375,15 @@ class _$_ServerCallBuzzParams implements _ServerCallBuzzParams {
   @Deprecated('Deprecated.')
   @JsonKey(name: 'team')
   final String team;
+  @override
+
+  /// CallType is a type of call("audio" - audio room, "video" - video room).
+  @JsonKey(name: 'call_type')
+  final String? callType;
 
   @override
   String toString() {
-    return 'ServerCallBuzzParams(jid: $jid, icons: $icons, displayName: $displayName, teamShort: $teamShort, chatShort: $chatShort, actorShort: $actorShort, uid: $uid, buzzTimeout: $buzzTimeout, team: $team)';
+    return 'ServerCallBuzzParams(jid: $jid, icons: $icons, displayName: $displayName, teamShort: $teamShort, chatShort: $chatShort, actorShort: $actorShort, uid: $uid, buzzTimeout: $buzzTimeout, team: $team, callType: $callType)';
   }
 
   @override
@@ -379,7 +403,8 @@ class _$_ServerCallBuzzParams implements _ServerCallBuzzParams {
             (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
             (identical(other.buzzTimeout, buzzTimeout) ||
                 const DeepCollectionEquality().equals(other.buzzTimeout, buzzTimeout)) &&
-            (identical(other.team, team) || const DeepCollectionEquality().equals(other.team, team)));
+            (identical(other.team, team) || const DeepCollectionEquality().equals(other.team, team)) &&
+            (identical(other.callType, callType) || const DeepCollectionEquality().equals(other.callType, callType)));
   }
 
   @override
@@ -393,7 +418,8 @@ class _$_ServerCallBuzzParams implements _ServerCallBuzzParams {
       const DeepCollectionEquality().hash(actorShort) ^
       const DeepCollectionEquality().hash(uid) ^
       const DeepCollectionEquality().hash(buzzTimeout) ^
-      const DeepCollectionEquality().hash(team);
+      const DeepCollectionEquality().hash(team) ^
+      const DeepCollectionEquality().hash(callType);
 
   @JsonKey(ignore: true)
   @override
@@ -416,7 +442,8 @@ abstract class _ServerCallBuzzParams implements ServerCallBuzzParams {
       @JsonKey(name: 'actor') required ContactShort actorShort,
       @JsonKey(name: 'uid') required String uid,
       @JsonKey(name: 'buzz_timeout') required int buzzTimeout,
-      @Deprecated('Deprecated.') @JsonKey(name: 'team') required String team}) = _$_ServerCallBuzzParams;
+      @Deprecated('Deprecated.') @JsonKey(name: 'team') required String team,
+      @JsonKey(name: 'call_type') String? callType}) = _$_ServerCallBuzzParams;
 
   factory _ServerCallBuzzParams.fromJson(Map<String, dynamic> json) = _$_ServerCallBuzzParams.fromJson;
 
@@ -466,6 +493,11 @@ abstract class _ServerCallBuzzParams implements ServerCallBuzzParams {
   @Deprecated('Deprecated.')
   @JsonKey(name: 'team')
   String get team => throw _privateConstructorUsedError;
+  @override
+
+  /// CallType is a type of call("audio" - audio room, "video" - video room).
+  @JsonKey(name: 'call_type')
+  String? get callType => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ServerCallBuzzParamsCopyWith<_ServerCallBuzzParams> get copyWith => throw _privateConstructorUsedError;

@@ -25,12 +25,14 @@ class _$OnlineCallTearOff {
       {@JsonKey(name: 'jid') required String jid,
       @JsonKey(name: 'uid') required String uid,
       @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
-      @JsonKey(name: 'online_count') int? onlineCount}) {
+      @JsonKey(name: 'online_count') int? onlineCount,
+      @JsonKey(name: 'call_type') String? callType}) {
     return _OnlineCall(
       jid: jid,
       uid: uid,
       start: start,
       onlineCount: onlineCount,
+      callType: callType,
     );
   }
 
@@ -61,6 +63,10 @@ mixin _$OnlineCall {
   @JsonKey(name: 'online_count')
   int? get onlineCount => throw _privateConstructorUsedError;
 
+  /// CallType is a type of call("audio" - audio room, "video" - video room).
+  @JsonKey(name: 'call_type')
+  String? get callType => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $OnlineCallCopyWith<OnlineCall> get copyWith => throw _privateConstructorUsedError;
@@ -73,7 +79,8 @@ abstract class $OnlineCallCopyWith<$Res> {
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
-      @JsonKey(name: 'online_count') int? onlineCount});
+      @JsonKey(name: 'online_count') int? onlineCount,
+      @JsonKey(name: 'call_type') String? callType});
 }
 
 /// @nodoc
@@ -90,6 +97,7 @@ class _$OnlineCallCopyWithImpl<$Res> implements $OnlineCallCopyWith<$Res> {
     Object? uid = freezed,
     Object? start = freezed,
     Object? onlineCount = freezed,
+    Object? callType = freezed,
   }) {
     return _then(_value.copyWith(
       jid: jid == freezed
@@ -108,6 +116,10 @@ class _$OnlineCallCopyWithImpl<$Res> implements $OnlineCallCopyWith<$Res> {
           ? _value.onlineCount
           : onlineCount // ignore: cast_nullable_to_non_nullable
               as int?,
+      callType: callType == freezed
+          ? _value.callType
+          : callType // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -120,7 +132,8 @@ abstract class _$OnlineCallCopyWith<$Res> implements $OnlineCallCopyWith<$Res> {
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
-      @JsonKey(name: 'online_count') int? onlineCount});
+      @JsonKey(name: 'online_count') int? onlineCount,
+      @JsonKey(name: 'call_type') String? callType});
 }
 
 /// @nodoc
@@ -137,6 +150,7 @@ class __$OnlineCallCopyWithImpl<$Res> extends _$OnlineCallCopyWithImpl<$Res> imp
     Object? uid = freezed,
     Object? start = freezed,
     Object? onlineCount = freezed,
+    Object? callType = freezed,
   }) {
     return _then(_OnlineCall(
       jid: jid == freezed
@@ -155,6 +169,10 @@ class __$OnlineCallCopyWithImpl<$Res> extends _$OnlineCallCopyWithImpl<$Res> imp
           ? _value.onlineCount
           : onlineCount // ignore: cast_nullable_to_non_nullable
               as int?,
+      callType: callType == freezed
+          ? _value.callType
+          : callType // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -166,7 +184,8 @@ class _$_OnlineCall implements _OnlineCall {
       {@JsonKey(name: 'jid') required this.jid,
       @JsonKey(name: 'uid') required this.uid,
       @JsonKey(name: 'start') @DateTimeConverter() this.start,
-      @JsonKey(name: 'online_count') this.onlineCount});
+      @JsonKey(name: 'online_count') this.onlineCount,
+      @JsonKey(name: 'call_type') this.callType});
 
   factory _$_OnlineCall.fromJson(Map<String, dynamic> json) => _$$_OnlineCallFromJson(json);
 
@@ -191,10 +210,15 @@ class _$_OnlineCall implements _OnlineCall {
   /// Number participants in call.
   @JsonKey(name: 'online_count')
   final int? onlineCount;
+  @override
+
+  /// CallType is a type of call("audio" - audio room, "video" - video room).
+  @JsonKey(name: 'call_type')
+  final String? callType;
 
   @override
   String toString() {
-    return 'OnlineCall(jid: $jid, uid: $uid, start: $start, onlineCount: $onlineCount)';
+    return 'OnlineCall(jid: $jid, uid: $uid, start: $start, onlineCount: $onlineCount, callType: $callType)';
   }
 
   @override
@@ -205,7 +229,8 @@ class _$_OnlineCall implements _OnlineCall {
             (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
             (identical(other.start, start) || const DeepCollectionEquality().equals(other.start, start)) &&
             (identical(other.onlineCount, onlineCount) ||
-                const DeepCollectionEquality().equals(other.onlineCount, onlineCount)));
+                const DeepCollectionEquality().equals(other.onlineCount, onlineCount)) &&
+            (identical(other.callType, callType) || const DeepCollectionEquality().equals(other.callType, callType)));
   }
 
   @override
@@ -214,7 +239,8 @@ class _$_OnlineCall implements _OnlineCall {
       const DeepCollectionEquality().hash(jid) ^
       const DeepCollectionEquality().hash(uid) ^
       const DeepCollectionEquality().hash(start) ^
-      const DeepCollectionEquality().hash(onlineCount);
+      const DeepCollectionEquality().hash(onlineCount) ^
+      const DeepCollectionEquality().hash(callType);
 
   @JsonKey(ignore: true)
   @override
@@ -231,7 +257,8 @@ abstract class _OnlineCall implements OnlineCall {
       {@JsonKey(name: 'jid') required String jid,
       @JsonKey(name: 'uid') required String uid,
       @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
-      @JsonKey(name: 'online_count') int? onlineCount}) = _$_OnlineCall;
+      @JsonKey(name: 'online_count') int? onlineCount,
+      @JsonKey(name: 'call_type') String? callType}) = _$_OnlineCall;
 
   factory _OnlineCall.fromJson(Map<String, dynamic> json) = _$_OnlineCall.fromJson;
 
@@ -256,6 +283,11 @@ abstract class _OnlineCall implements OnlineCall {
   /// Number participants in call.
   @JsonKey(name: 'online_count')
   int? get onlineCount => throw _privateConstructorUsedError;
+  @override
+
+  /// CallType is a type of call("audio" - audio room, "video" - video room).
+  @JsonKey(name: 'call_type')
+  String? get callType => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$OnlineCallCopyWith<_OnlineCall> get copyWith => throw _privateConstructorUsedError;

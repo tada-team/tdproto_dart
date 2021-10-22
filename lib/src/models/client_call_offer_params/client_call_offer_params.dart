@@ -11,14 +11,23 @@ class ClientCallOfferParams with _$ClientCallOfferParams {
     /// Chat or contact id.
     @JsonKey(name: 'jid') required String jid,
 
-    /// Mute state.
-    @Default(false) @JsonKey(name: 'muted') required bool muted,
+    /// Mute state Deprecated: use EnabledAudio.
+    @Default(false) @Deprecated('Mute state Deprecated: use EnabledAudio.') @JsonKey(name: 'muted') required bool muted,
 
     /// Is trickle mode enabled.
     @Default(false) @JsonKey(name: 'trickle') required bool trickle,
 
     /// SDP (session description protocol) data.
     @JsonKey(name: 'sdp') required String sdp,
+
+    /// CallType is a type of call("audio" - audio room, "video" - video room). default = "audio".
+    @JsonKey(name: 'call_type') String? callType,
+
+    /// Audio state.
+    @Default(false) @JsonKey(name: 'enabled_audio') bool? enabledAudio,
+
+    /// Video state.
+    @Default(false) @JsonKey(name: 'enabled_video') bool? enabledVideo,
   }) = _ClientCallOfferParams;
 
   factory ClientCallOfferParams.fromJson(Map<String, dynamic> json) => _$ClientCallOfferParamsFromJson(json);
