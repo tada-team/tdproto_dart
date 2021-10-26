@@ -134,6 +134,9 @@ class Features with _$Features {
     /// Two-factor authentication (2FA) enabled.
     @Default(false) @JsonKey(name: 'auth_2fa') bool? auth2fa,
 
+    /// NTLM authentication enabled.
+    @Default(false) @JsonKey(name: 'auth_by_ntlm') bool? authByNTLM,
+
     /// Mandatory setting of the pin code in the application.
     @Default(false) @JsonKey(name: 'is_pin_code_required') required bool isPinCodeRequired,
 
