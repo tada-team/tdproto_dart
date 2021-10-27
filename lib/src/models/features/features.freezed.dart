@@ -65,6 +65,8 @@ class _$FeaturesTearOff {
       @JsonKey(name: 'auth_by_sms') bool? authBySms = false,
       @JsonKey(name: 'auth_2fa') bool? auth2fa = false,
       @JsonKey(name: 'auth_by_ntlm') bool? authByNTLM = false,
+      @JsonKey(name: 'is_recaptcha_enabled') bool? reCaptchaEnabled = false,
+      @JsonKey(name: 'recaptcha_web_key') bool? reCaptchaWebKey = false,
       @JsonKey(name: 'is_pin_code_required') required bool isPinCodeRequired = false,
       @JsonKey(name: 'pin_code_wrong_limit') required int pinCodeWrongLimit,
       @JsonKey(name: 'oauth_services') List<OAuthService>? oAuthServices,
@@ -158,6 +160,8 @@ class _$FeaturesTearOff {
       authBySms: authBySms,
       auth2fa: auth2fa,
       authByNTLM: authByNTLM,
+      reCaptchaEnabled: reCaptchaEnabled,
+      reCaptchaWebKey: reCaptchaWebKey,
       isPinCodeRequired: isPinCodeRequired,
       pinCodeWrongLimit: pinCodeWrongLimit,
       oAuthServices: oAuthServices,
@@ -391,6 +395,14 @@ mixin _$Features {
   /// NTLM authentication enabled.
   @JsonKey(name: 'auth_by_ntlm')
   bool? get authByNTLM => throw _privateConstructorUsedError;
+
+  /// Captcha enabled.
+  @JsonKey(name: 'is_recaptcha_enabled')
+  bool? get reCaptchaEnabled => throw _privateConstructorUsedError;
+
+  /// ReCaptcha Web Key.
+  @JsonKey(name: 'recaptcha_web_key')
+  bool? get reCaptchaWebKey => throw _privateConstructorUsedError;
 
   /// Mandatory setting of the pin code in the application.
   @JsonKey(name: 'is_pin_code_required')
@@ -648,6 +660,8 @@ abstract class $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'auth_by_sms') bool? authBySms,
       @JsonKey(name: 'auth_2fa') bool? auth2fa,
       @JsonKey(name: 'auth_by_ntlm') bool? authByNTLM,
+      @JsonKey(name: 'is_recaptcha_enabled') bool? reCaptchaEnabled,
+      @JsonKey(name: 'recaptcha_web_key') bool? reCaptchaWebKey,
       @JsonKey(name: 'is_pin_code_required') bool isPinCodeRequired,
       @JsonKey(name: 'pin_code_wrong_limit') int pinCodeWrongLimit,
       @JsonKey(name: 'oauth_services') List<OAuthService>? oAuthServices,
@@ -755,6 +769,8 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     Object? authBySms = freezed,
     Object? auth2fa = freezed,
     Object? authByNTLM = freezed,
+    Object? reCaptchaEnabled = freezed,
+    Object? reCaptchaWebKey = freezed,
     Object? isPinCodeRequired = freezed,
     Object? pinCodeWrongLimit = freezed,
     Object? oAuthServices = freezed,
@@ -977,6 +993,14 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
       authByNTLM: authByNTLM == freezed
           ? _value.authByNTLM
           : authByNTLM // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      reCaptchaEnabled: reCaptchaEnabled == freezed
+          ? _value.reCaptchaEnabled
+          : reCaptchaEnabled // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      reCaptchaWebKey: reCaptchaWebKey == freezed
+          ? _value.reCaptchaWebKey
+          : reCaptchaWebKey // ignore: cast_nullable_to_non_nullable
               as bool?,
       isPinCodeRequired: isPinCodeRequired == freezed
           ? _value.isPinCodeRequired
@@ -1244,6 +1268,8 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'auth_by_sms') bool? authBySms,
       @JsonKey(name: 'auth_2fa') bool? auth2fa,
       @JsonKey(name: 'auth_by_ntlm') bool? authByNTLM,
+      @JsonKey(name: 'is_recaptcha_enabled') bool? reCaptchaEnabled,
+      @JsonKey(name: 'recaptcha_web_key') bool? reCaptchaWebKey,
       @JsonKey(name: 'is_pin_code_required') bool isPinCodeRequired,
       @JsonKey(name: 'pin_code_wrong_limit') int pinCodeWrongLimit,
       @JsonKey(name: 'oauth_services') List<OAuthService>? oAuthServices,
@@ -1353,6 +1379,8 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
     Object? authBySms = freezed,
     Object? auth2fa = freezed,
     Object? authByNTLM = freezed,
+    Object? reCaptchaEnabled = freezed,
+    Object? reCaptchaWebKey = freezed,
     Object? isPinCodeRequired = freezed,
     Object? pinCodeWrongLimit = freezed,
     Object? oAuthServices = freezed,
@@ -1575,6 +1603,14 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
       authByNTLM: authByNTLM == freezed
           ? _value.authByNTLM
           : authByNTLM // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      reCaptchaEnabled: reCaptchaEnabled == freezed
+          ? _value.reCaptchaEnabled
+          : reCaptchaEnabled // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      reCaptchaWebKey: reCaptchaWebKey == freezed
+          ? _value.reCaptchaWebKey
+          : reCaptchaWebKey // ignore: cast_nullable_to_non_nullable
               as bool?,
       isPinCodeRequired: isPinCodeRequired == freezed
           ? _value.isPinCodeRequired
@@ -1823,6 +1859,8 @@ class _$_Features implements _Features {
       @JsonKey(name: 'auth_by_sms') this.authBySms = false,
       @JsonKey(name: 'auth_2fa') this.auth2fa = false,
       @JsonKey(name: 'auth_by_ntlm') this.authByNTLM = false,
+      @JsonKey(name: 'is_recaptcha_enabled') this.reCaptchaEnabled = false,
+      @JsonKey(name: 'recaptcha_web_key') this.reCaptchaWebKey = false,
       @JsonKey(name: 'is_pin_code_required') required this.isPinCodeRequired = false,
       @JsonKey(name: 'pin_code_wrong_limit') required this.pinCodeWrongLimit,
       @JsonKey(name: 'oauth_services') this.oAuthServices,
@@ -2092,6 +2130,16 @@ class _$_Features implements _Features {
   final bool? authByNTLM;
   @override
 
+  /// Captcha enabled.
+  @JsonKey(name: 'is_recaptcha_enabled')
+  final bool? reCaptchaEnabled;
+  @override
+
+  /// ReCaptcha Web Key.
+  @JsonKey(name: 'recaptcha_web_key')
+  final bool? reCaptchaWebKey;
+  @override
+
   /// Mandatory setting of the pin code in the application.
   @JsonKey(name: 'is_pin_code_required')
   final bool isPinCodeRequired;
@@ -2346,7 +2394,7 @@ class _$_Features implements _Features {
 
   @override
   String toString() {
-    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, authByNTLM: $authByNTLM, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority)';
+    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, authByNTLM: $authByNTLM, reCaptchaEnabled: $reCaptchaEnabled, reCaptchaWebKey: $reCaptchaWebKey, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority)';
   }
 
   @override
@@ -2432,6 +2480,10 @@ class _$_Features implements _Features {
             (identical(other.auth2fa, auth2fa) || const DeepCollectionEquality().equals(other.auth2fa, auth2fa)) &&
             (identical(other.authByNTLM, authByNTLM) ||
                 const DeepCollectionEquality().equals(other.authByNTLM, authByNTLM)) &&
+            (identical(other.reCaptchaEnabled, reCaptchaEnabled) ||
+                const DeepCollectionEquality().equals(other.reCaptchaEnabled, reCaptchaEnabled)) &&
+            (identical(other.reCaptchaWebKey, reCaptchaWebKey) ||
+                const DeepCollectionEquality().equals(other.reCaptchaWebKey, reCaptchaWebKey)) &&
             (identical(other.isPinCodeRequired, isPinCodeRequired) ||
                 const DeepCollectionEquality().equals(other.isPinCodeRequired, isPinCodeRequired)) &&
             (identical(other.pinCodeWrongLimit, pinCodeWrongLimit) ||
@@ -2444,10 +2496,8 @@ class _$_Features implements _Features {
                 const DeepCollectionEquality().equals(other.customServer, customServer)) &&
             (identical(other.installationType, installationType) ||
                 const DeepCollectionEquality().equals(other.installationType, installationType)) &&
-            (identical(other.installationTitle, installationTitle) ||
-                const DeepCollectionEquality().equals(other.installationTitle, installationTitle)) &&
-            (identical(other.customAppIconName, customAppIconName) ||
-                const DeepCollectionEquality().equals(other.customAppIconName, customAppIconName)) &&
+            (identical(other.installationTitle, installationTitle) || const DeepCollectionEquality().equals(other.installationTitle, installationTitle)) &&
+            (identical(other.customAppIconName, customAppIconName) || const DeepCollectionEquality().equals(other.customAppIconName, customAppIconName)) &&
             (identical(other.appLoginBackground, appLoginBackground) || const DeepCollectionEquality().equals(other.appLoginBackground, appLoginBackground)) &&
             (identical(other.webLoginBackground, webLoginBackground) || const DeepCollectionEquality().equals(other.webLoginBackground, webLoginBackground)) &&
             (identical(other.isTesting, isTesting) || const DeepCollectionEquality().equals(other.isTesting, isTesting)) &&
@@ -2537,6 +2587,8 @@ class _$_Features implements _Features {
       const DeepCollectionEquality().hash(authBySms) ^
       const DeepCollectionEquality().hash(auth2fa) ^
       const DeepCollectionEquality().hash(authByNTLM) ^
+      const DeepCollectionEquality().hash(reCaptchaEnabled) ^
+      const DeepCollectionEquality().hash(reCaptchaWebKey) ^
       const DeepCollectionEquality().hash(isPinCodeRequired) ^
       const DeepCollectionEquality().hash(pinCodeWrongLimit) ^
       const DeepCollectionEquality().hash(oAuthServices) ^
@@ -2642,6 +2694,8 @@ abstract class _Features implements Features {
       @JsonKey(name: 'auth_by_sms') bool? authBySms,
       @JsonKey(name: 'auth_2fa') bool? auth2fa,
       @JsonKey(name: 'auth_by_ntlm') bool? authByNTLM,
+      @JsonKey(name: 'is_recaptcha_enabled') bool? reCaptchaEnabled,
+      @JsonKey(name: 'recaptcha_web_key') bool? reCaptchaWebKey,
       @JsonKey(name: 'is_pin_code_required') required bool isPinCodeRequired,
       @JsonKey(name: 'pin_code_wrong_limit') required int pinCodeWrongLimit,
       @JsonKey(name: 'oauth_services') List<OAuthService>? oAuthServices,
@@ -2909,6 +2963,16 @@ abstract class _Features implements Features {
   /// NTLM authentication enabled.
   @JsonKey(name: 'auth_by_ntlm')
   bool? get authByNTLM => throw _privateConstructorUsedError;
+  @override
+
+  /// Captcha enabled.
+  @JsonKey(name: 'is_recaptcha_enabled')
+  bool? get reCaptchaEnabled => throw _privateConstructorUsedError;
+  @override
+
+  /// ReCaptcha Web Key.
+  @JsonKey(name: 'recaptcha_web_key')
+  bool? get reCaptchaWebKey => throw _privateConstructorUsedError;
   @override
 
   /// Mandatory setting of the pin code in the application.

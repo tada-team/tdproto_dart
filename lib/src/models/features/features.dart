@@ -137,6 +137,12 @@ class Features with _$Features {
     /// NTLM authentication enabled.
     @Default(false) @JsonKey(name: 'auth_by_ntlm') bool? authByNTLM,
 
+    /// Captcha enabled.
+    @Default(false) @JsonKey(name: 'is_recaptcha_enabled') bool? reCaptchaEnabled,
+
+    /// ReCaptcha Web Key.
+    @Default(false) @JsonKey(name: 'recaptcha_web_key') bool? reCaptchaWebKey,
+
     /// Mandatory setting of the pin code in the application.
     @Default(false) @JsonKey(name: 'is_pin_code_required') required bool isPinCodeRequired,
 

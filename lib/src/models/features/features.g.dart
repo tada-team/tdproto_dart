@@ -50,6 +50,8 @@ _$_Features _$$_FeaturesFromJson(Map<String, dynamic> json) => _$_Features(
       authBySms: json['auth_by_sms'] as bool? ?? false,
       auth2fa: json['auth_2fa'] as bool? ?? false,
       authByNTLM: json['auth_by_ntlm'] as bool? ?? false,
+      reCaptchaEnabled: json['is_recaptcha_enabled'] as bool? ?? false,
+      reCaptchaWebKey: json['recaptcha_web_key'] as bool? ?? false,
       isPinCodeRequired: json['is_pin_code_required'] as bool? ?? false,
       pinCodeWrongLimit: json['pin_code_wrong_limit'] as int,
       oAuthServices: (json['oauth_services'] as List<dynamic>?)
@@ -150,6 +152,8 @@ Map<String, dynamic> _$$_FeaturesToJson(_$_Features instance) => <String, dynami
       'auth_by_sms': instance.authBySms,
       'auth_2fa': instance.auth2fa,
       'auth_by_ntlm': instance.authByNTLM,
+      'is_recaptcha_enabled': instance.reCaptchaEnabled,
+      'recaptcha_web_key': instance.reCaptchaWebKey,
       'is_pin_code_required': instance.isPinCodeRequired,
       'pin_code_wrong_limit': instance.pinCodeWrongLimit,
       'oauth_services': instance.oAuthServices?.map((e) => e.toJson()).toList(),
