@@ -1,6 +1,10 @@
 # Changelog
 
 
+## [2.0.0] - 2021-11-01
+### Added
+- Null-safety rework
+
 ## [Unreleased]
 ### Added
 - Add `User` model.
