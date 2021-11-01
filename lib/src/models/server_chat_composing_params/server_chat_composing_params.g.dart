@@ -10,7 +10,7 @@ _$_ServerChatComposingParams _$$_ServerChatComposingParamsFromJson(Map<String, d
     _$_ServerChatComposingParams(
       jid: json['jid'] as String,
       actor: json['actor'] as String,
-      composing: json['composing'] as bool? ?? false,
+      composing: json['composing'] as bool,
       isAudio: json['is_audio'] as bool? ?? false,
       validUntil: json['valid_until'] == null ? null : DateTime.parse(json['valid_until'] as String),
     );

@@ -9,7 +9,7 @@ part of 'server_processing_params.dart';
 _$_ServerProcessingParams _$$_ServerProcessingParamsFromJson(Map<String, dynamic> json) => _$_ServerProcessingParams(
       action: json['action'] as String,
       message: json['message'] as String,
-      hasError: json['has_error'] as bool? ?? false,
+      hasError: json['has_error'] as bool,
       num: json['num'] as int,
       total: json['total'] as int,
     );

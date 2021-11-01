@@ -24,9 +24,9 @@ class _$TaskTabTearOff {
   _TaskTab call(
       {@JsonKey(name: 'key') required String key,
       @JsonKey(name: 'title') required String title,
-      @JsonKey(name: 'hide_empty') required bool hideEmpty = false,
-      @JsonKey(name: 'show_counter') required bool showCounter = false,
-      @JsonKey(name: 'pagination') required bool pagination = false,
+      @JsonKey(name: 'hide_empty') required bool hideEmpty,
+      @JsonKey(name: 'show_counter') required bool showCounter,
+      @JsonKey(name: 'pagination') required bool pagination,
       @JsonKey(name: 'filters') required List<TaskFilter> filters,
       @JsonKey(name: 'sort') required List<TaskSort> sort,
       @JsonKey(name: 'unread_tasks') required List<TaskCounters> unreadTasks}) {
@@ -235,9 +235,9 @@ class _$_TaskTab implements _TaskTab {
   const _$_TaskTab(
       {@JsonKey(name: 'key') required this.key,
       @JsonKey(name: 'title') required this.title,
-      @JsonKey(name: 'hide_empty') required this.hideEmpty = false,
-      @JsonKey(name: 'show_counter') required this.showCounter = false,
-      @JsonKey(name: 'pagination') required this.pagination = false,
+      @JsonKey(name: 'hide_empty') required this.hideEmpty,
+      @JsonKey(name: 'show_counter') required this.showCounter,
+      @JsonKey(name: 'pagination') required this.pagination,
       @JsonKey(name: 'filters') required this.filters,
       @JsonKey(name: 'sort') required this.sort,
       @JsonKey(name: 'unread_tasks') required this.unreadTasks});

@@ -15,7 +15,7 @@ class Node with _$Node {
     @JsonKey(name: 'title') required String title,
 
     /// Synchronization with node works.
-    @Default(false) @JsonKey(name: 'enabled') required bool enabled,
+    @JsonKey(name: 'enabled') required bool enabled,
   }) = _Node;
 
   factory Node.fromJson(Map<String, dynamic> json) => _$NodeFromJson(json);

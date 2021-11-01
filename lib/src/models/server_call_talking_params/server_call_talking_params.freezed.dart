@@ -24,7 +24,7 @@ class _$ServerCallTalkingParamsTearOff {
   _ServerCallTalkingParams call(
       {@JsonKey(name: 'jid') required String jid,
       @JsonKey(name: 'actor') required String actor,
-      @JsonKey(name: 'talking') required bool talking = false}) {
+      @JsonKey(name: 'talking') required bool talking}) {
     return _ServerCallTalkingParams(
       jid: jid,
       actor: actor,
@@ -146,7 +146,7 @@ class _$_ServerCallTalkingParams implements _ServerCallTalkingParams {
   const _$_ServerCallTalkingParams(
       {@JsonKey(name: 'jid') required this.jid,
       @JsonKey(name: 'actor') required this.actor,
-      @JsonKey(name: 'talking') required this.talking = false});
+      @JsonKey(name: 'talking') required this.talking});
 
   factory _$_ServerCallTalkingParams.fromJson(Map<String, dynamic> json) => _$$_ServerCallTalkingParamsFromJson(json);
 

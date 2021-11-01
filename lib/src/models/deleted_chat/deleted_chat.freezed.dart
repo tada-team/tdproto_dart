@@ -25,7 +25,7 @@ class _$DeletedChatTearOff {
       {@JsonKey(name: 'jid') required String jid,
       @JsonKey(name: 'chat_type') required String chatType,
       @JsonKey(name: 'gentime') required int gentime,
-      @JsonKey(name: 'is_archive') required bool isArchive = false}) {
+      @JsonKey(name: 'is_archive') required bool isArchive}) {
     return _DeletedChat(
       jid: jid,
       chatType: chatType,
@@ -166,7 +166,7 @@ class _$_DeletedChat implements _DeletedChat {
       {@JsonKey(name: 'jid') required this.jid,
       @JsonKey(name: 'chat_type') required this.chatType,
       @JsonKey(name: 'gentime') required this.gentime,
-      @JsonKey(name: 'is_archive') required this.isArchive = false});
+      @JsonKey(name: 'is_archive') required this.isArchive});
 
   factory _$_DeletedChat.fromJson(Map<String, dynamic> json) => _$$_DeletedChatFromJson(json);
 

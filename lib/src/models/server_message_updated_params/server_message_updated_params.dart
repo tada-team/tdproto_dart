@@ -12,7 +12,7 @@ class ServerMessageUpdatedParams with _$ServerMessageUpdatedParams {
     @JsonKey(name: 'messages') required List<Message> messages,
 
     /// true = silently message update, false = new message.
-    @Default(false) @JsonKey(name: 'delayed') required bool delayed,
+    @JsonKey(name: 'delayed') required bool delayed,
 
     /// Chat counters.
     @JsonKey(name: 'chat_counters') required List<ChatCounters> chatCounters,

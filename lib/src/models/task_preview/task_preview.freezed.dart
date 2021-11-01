@@ -27,7 +27,7 @@ class _$TaskPreviewTearOff {
       @JsonKey(name: 'deadline') String? deadline,
       @JsonKey(name: 'description') required String description,
       @JsonKey(name: 'section') required String section,
-      @JsonKey(name: 'public') required bool isPublic = false,
+      @JsonKey(name: 'public') required bool isPublic,
       @JsonKey(name: 'tags') required List<String> tags,
       @JsonKey(name: 'items') required List<TaskItems> items}) {
     return _TaskPreview(
@@ -240,7 +240,7 @@ class _$_TaskPreview implements _TaskPreview {
       @JsonKey(name: 'deadline') this.deadline,
       @JsonKey(name: 'description') required this.description,
       @JsonKey(name: 'section') required this.section,
-      @JsonKey(name: 'public') required this.isPublic = false,
+      @JsonKey(name: 'public') required this.isPublic,
       @JsonKey(name: 'tags') required this.tags,
       @JsonKey(name: 'items') required this.items});
 

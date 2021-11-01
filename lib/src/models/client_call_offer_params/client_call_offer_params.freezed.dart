@@ -23,8 +23,8 @@ class _$ClientCallOfferParamsTearOff {
 
   _ClientCallOfferParams call(
       {@JsonKey(name: 'jid') required String jid,
-      @Deprecated('Mute state Deprecated: use EnabledAudio.') @JsonKey(name: 'muted') required bool muted = false,
-      @JsonKey(name: 'trickle') required bool trickle = false,
+      @Deprecated('Mute state Deprecated: use EnabledAudio.') @JsonKey(name: 'muted') required bool muted,
+      @JsonKey(name: 'trickle') required bool trickle,
       @JsonKey(name: 'sdp') required String sdp,
       @JsonKey(name: 'call_type') String? callType,
       @JsonKey(name: 'enabled_audio') bool? enabledAudio = false,
@@ -221,8 +221,8 @@ class __$ClientCallOfferParamsCopyWithImpl<$Res> extends _$ClientCallOfferParams
 class _$_ClientCallOfferParams implements _ClientCallOfferParams {
   const _$_ClientCallOfferParams(
       {@JsonKey(name: 'jid') required this.jid,
-      @Deprecated('Mute state Deprecated: use EnabledAudio.') @JsonKey(name: 'muted') required this.muted = false,
-      @JsonKey(name: 'trickle') required this.trickle = false,
+      @Deprecated('Mute state Deprecated: use EnabledAudio.') @JsonKey(name: 'muted') required this.muted,
+      @JsonKey(name: 'trickle') required this.trickle,
       @JsonKey(name: 'sdp') required this.sdp,
       @JsonKey(name: 'call_type') this.callType,
       @JsonKey(name: 'enabled_audio') this.enabledAudio = false,

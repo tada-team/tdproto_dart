@@ -23,7 +23,7 @@ class _$IntegrationFieldTearOff {
 
   _IntegrationField call(
       {@JsonKey(name: 'label') required String label,
-      @JsonKey(name: 'readonly') required bool readonly = false,
+      @JsonKey(name: 'readonly') required bool readonly,
       @JsonKey(name: 'value') required String value}) {
     return _IntegrationField(
       label: label,
@@ -148,7 +148,7 @@ class __$IntegrationFieldCopyWithImpl<$Res> extends _$IntegrationFieldCopyWithIm
 class _$_IntegrationField implements _IntegrationField {
   const _$_IntegrationField(
       {@JsonKey(name: 'label') required this.label,
-      @JsonKey(name: 'readonly') required this.readonly = false,
+      @JsonKey(name: 'readonly') required this.readonly,
       @JsonKey(name: 'value') required this.value});
 
   factory _$_IntegrationField.fromJson(Map<String, dynamic> json) => _$$_IntegrationFieldFromJson(json);

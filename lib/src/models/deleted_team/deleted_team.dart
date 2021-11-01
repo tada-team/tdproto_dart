@@ -12,7 +12,7 @@ class DeletedTeam with _$DeletedTeam {
     @JsonKey(name: 'uid') required String uid,
 
     /// Team deleted.
-    @Default(false) @JsonKey(name: 'is_archive') required bool isArchive,
+    @JsonKey(name: 'is_archive') required bool isArchive,
 
     /// Object version.
     @JsonKey(name: 'gentime') required int gentime,

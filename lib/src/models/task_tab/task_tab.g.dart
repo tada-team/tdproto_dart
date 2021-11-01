@@ -9,9 +9,9 @@ part of 'task_tab.dart';
 _$_TaskTab _$$_TaskTabFromJson(Map<String, dynamic> json) => _$_TaskTab(
       key: json['key'] as String,
       title: json['title'] as String,
-      hideEmpty: json['hide_empty'] as bool? ?? false,
-      showCounter: json['show_counter'] as bool? ?? false,
-      pagination: json['pagination'] as bool? ?? false,
+      hideEmpty: json['hide_empty'] as bool,
+      showCounter: json['show_counter'] as bool,
+      pagination: json['pagination'] as bool,
       filters: (json['filters'] as List<dynamic>).map((e) => TaskFilter.fromJson(e as Map<String, dynamic>)).toList(),
       sort: (json['sort'] as List<dynamic>).map((e) => TaskSort.fromJson(e as Map<String, dynamic>)).toList(),
       unreadTasks:

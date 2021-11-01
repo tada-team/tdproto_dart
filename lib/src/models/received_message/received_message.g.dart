@@ -9,7 +9,7 @@ part of 'received_message.dart';
 _$_ReceivedMessage _$$_ReceivedMessageFromJson(Map<String, dynamic> json) => _$_ReceivedMessage(
       chat: json['chat'] as String,
       messageId: json['message_id'] as String,
-      received: json['received'] as bool? ?? false,
+      received: json['received'] as bool,
       numReceived: json['num_received'] as int?,
       debug: json['_debug'] as String?,
     );

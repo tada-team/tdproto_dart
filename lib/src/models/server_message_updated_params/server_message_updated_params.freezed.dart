@@ -23,7 +23,7 @@ class _$ServerMessageUpdatedParamsTearOff {
 
   _ServerMessageUpdatedParams call(
       {@JsonKey(name: 'messages') required List<Message> messages,
-      @JsonKey(name: 'delayed') required bool delayed = false,
+      @JsonKey(name: 'delayed') required bool delayed,
       @JsonKey(name: 'chat_counters') required List<ChatCounters> chatCounters,
       @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
       @JsonKey(name: 'badge') int? badge}) {
@@ -203,7 +203,7 @@ class __$ServerMessageUpdatedParamsCopyWithImpl<$Res> extends _$ServerMessageUpd
 class _$_ServerMessageUpdatedParams implements _ServerMessageUpdatedParams {
   const _$_ServerMessageUpdatedParams(
       {@JsonKey(name: 'messages') required this.messages,
-      @JsonKey(name: 'delayed') required this.delayed = false,
+      @JsonKey(name: 'delayed') required this.delayed,
       @JsonKey(name: 'chat_counters') required this.chatCounters,
       @JsonKey(name: 'team_unread') this.teamUnread,
       @JsonKey(name: 'badge') this.badge});

@@ -15,7 +15,7 @@ class ServerCallTalkingParams with _$ServerCallTalkingParams {
     @JsonKey(name: 'actor') required String actor,
 
     /// Is talking.
-    @Default(false) @JsonKey(name: 'talking') required bool talking,
+    @JsonKey(name: 'talking') required bool talking,
   }) = _ServerCallTalkingParams;
 
   factory ServerCallTalkingParams.fromJson(Map<String, dynamic> json) => _$ServerCallTalkingParamsFromJson(json);

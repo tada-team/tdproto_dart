@@ -60,7 +60,7 @@ class Features with _$Features {
     @JsonKey(name: 'min_corp_android_version') required String minCorpAndroidVersion,
 
     /// Free registration allowed.
-    @Default(false) @JsonKey(name: 'free_registration') required bool freeRegistration,
+    @JsonKey(name: 'free_registration') required bool freeRegistration,
 
     /// Maximum size of user's upload.
     @JsonKey(name: 'max_upload_mb') required int maxUploadMb,
@@ -140,11 +140,14 @@ class Features with _$Features {
     /// Captcha enabled.
     @Default(false) @JsonKey(name: 'is_recaptcha_enabled') bool? reCaptchaEnabled,
 
-    /// ReCaptcha Web Key.
-    @Default(false) @JsonKey(name: 'recaptcha_web_key') bool? reCaptchaWebKey,
+    /// ReCaptcha Web Key V3.
+    @JsonKey(name: 'recaptcha_web_key_v3') String? reCaptchaWebKeyV3,
+
+    /// ReCaptcha Web Key V2.
+    @JsonKey(name: 'recaptcha_web_key_v2') String? reCaptchaWebKeyV2,
 
     /// Mandatory setting of the pin code in the application.
-    @Default(false) @JsonKey(name: 'is_pin_code_required') required bool isPinCodeRequired,
+    @JsonKey(name: 'is_pin_code_required') required bool isPinCodeRequired,
 
     /// Max number of attempts to enter an invalid PIN code.
     @JsonKey(name: 'pin_code_wrong_limit') required int pinCodeWrongLimit,
@@ -156,7 +159,7 @@ class Features with _$Features {
     @JsonKey(name: 'ice_servers') required List<ICEServer> iCEServers,
 
     /// True for premise installation.
-    @Default(false) @JsonKey(name: 'custom_server') required bool customServer,
+    @JsonKey(name: 'custom_server') required bool customServer,
 
     /// Name of installation.
     @JsonKey(name: 'installation_type') required String installationType,
@@ -174,7 +177,7 @@ class Features with _$Features {
     @JsonKey(name: 'web_login_background') String? webLoginBackground,
 
     /// Testing installation.
-    @Default(false) @JsonKey(name: 'is_testing') required bool isTesting,
+    @JsonKey(name: 'is_testing') required bool isTesting,
 
     /// Yandex metrika counter id.
     @JsonKey(name: 'metrika') required String metrika,
@@ -192,7 +195,7 @@ class Features with _$Features {
     @JsonKey(name: 'sentry_dsn_js') required String sentryDsnJS,
 
     /// Message drafts saved on server.
-    @Default(false) @JsonKey(name: 'server_drafts') required bool serverDrafts,
+    @JsonKey(name: 'server_drafts') required bool serverDrafts,
 
     /// Firebase settings for web-push notifications.
     @JsonKey(name: 'firebase_app_id') required String firebaseAppId,
@@ -219,10 +222,10 @@ class Features with _$Features {
     @JsonKey(name: 'calls_version') required int callsVersion,
 
     /// Calls functions enabled for mobile applications.
-    @Default(false) @JsonKey(name: 'mobile_calls') required bool mobileCalls,
+    @JsonKey(name: 'mobile_calls') required bool mobileCalls,
 
     /// Calls record enabled.
-    @Default(false) @JsonKey(name: 'calls_record') required bool callsRecord,
+    @JsonKey(name: 'calls_record') required bool callsRecord,
 
     /// Disallow call from multiple devices. Experimental.
     @Default(false) @JsonKey(name: 'only_one_device_per_call') bool? onlyOneDevicePerCall,
@@ -234,16 +237,16 @@ class Features with _$Features {
     @JsonKey(name: 'safari_push_id') required String safariPushId,
 
     /// Multiple message uploads.
-    @Default(false) @JsonKey(name: 'message_uploads') required bool messageUploads,
+    @JsonKey(name: 'message_uploads') required bool messageUploads,
 
     /// Team entity naming. Experimental.
     @JsonKey(name: 'terms') required Terms terms,
 
     /// Cross team communication. Experimental.
-    @Default(false) @JsonKey(name: 'single_group_teams') required bool singleGroupTeams,
+    @JsonKey(name: 'single_group_teams') required bool singleGroupTeams,
 
     /// Wiki pages in chats. Experimental.
-    @Default(false) @JsonKey(name: 'wiki_pages') required bool wikiPages,
+    @JsonKey(name: 'wiki_pages') required bool wikiPages,
 
     /// Wiki pages in chats. Experimental.
     @Default(false) @JsonKey(name: 'allow_admin_mute') bool? allowAdminMute,
@@ -255,28 +258,28 @@ class Features with _$Features {
     @JsonKey(name: 'support_email') required String supportEmail,
 
     /// True if server has custom theme.
-    @Default(false) @JsonKey(name: 'custom_theme') required bool customTheme,
+    @JsonKey(name: 'custom_theme') required bool customTheme,
 
     /// Deprecated.
-    @Default(false) @Deprecated('Deprecated.') @JsonKey(name: 'task_checklist') required bool taskChecklist,
+    @Deprecated('Deprecated.') @JsonKey(name: 'task_checklist') required bool taskChecklist,
 
     /// Deprecated.
-    @Default(false) @Deprecated('Deprecated.') @JsonKey(name: 'readonly_groups') required bool readonlyGroups,
+    @Deprecated('Deprecated.') @JsonKey(name: 'readonly_groups') required bool readonlyGroups,
 
     /// Deprecated.
-    @Default(false) @Deprecated('Deprecated.') @JsonKey(name: 'task_dashboard') required bool taskDashboard,
+    @Deprecated('Deprecated.') @JsonKey(name: 'task_dashboard') required bool taskDashboard,
 
     /// Deprecated.
-    @Default(false) @Deprecated('Deprecated.') @JsonKey(name: 'task_messages') required bool taskMessages,
+    @Deprecated('Deprecated.') @JsonKey(name: 'task_messages') required bool taskMessages,
 
     /// Deprecated.
-    @Default(false) @Deprecated('Deprecated.') @JsonKey(name: 'task_public') required bool taskPublic,
+    @Deprecated('Deprecated.') @JsonKey(name: 'task_public') required bool taskPublic,
 
     /// Deprecated.
-    @Default(false) @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') required bool taskTags,
+    @Deprecated('Deprecated.') @JsonKey(name: 'task_tags') required bool taskTags,
 
     /// Deprecated.
-    @Default(false) @Deprecated('Deprecated.') @JsonKey(name: 'calls') required bool calls,
+    @Deprecated('Deprecated.') @JsonKey(name: 'calls') required bool calls,
 
     /// Deprecated.
     @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') required String minAppVersion,

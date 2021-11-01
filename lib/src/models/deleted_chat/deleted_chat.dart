@@ -18,7 +18,7 @@ class DeletedChat with _$DeletedChat {
     @JsonKey(name: 'gentime') required int gentime,
 
     /// Archive flag. Always true for this structure.
-    @Default(false) @JsonKey(name: 'is_archive') required bool isArchive,
+    @JsonKey(name: 'is_archive') required bool isArchive,
   }) = _DeletedChat;
 
   factory DeletedChat.fromJson(Map<String, dynamic> json) => _$DeletedChatFromJson(json);

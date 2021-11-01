@@ -27,9 +27,9 @@ class _$PushDeviceTearOff {
       @JsonKey(name: 'notification_token') required String notificationToken,
       @JsonKey(name: 'voip_notification_token') required String voipNotificationToken,
       @JsonKey(name: 'name') required String name,
-      @JsonKey(name: 'data_pushes') required bool dataPushes = false,
-      @JsonKey(name: 'data_badges') required bool dataBadges = false,
-      @JsonKey(name: 'allowed_notifications') required bool allowedNotifications = false}) {
+      @JsonKey(name: 'data_pushes') required bool dataPushes,
+      @JsonKey(name: 'data_badges') required bool dataBadges,
+      @JsonKey(name: 'allowed_notifications') required bool allowedNotifications}) {
     return _PushDevice(
       type: type,
       deviceId: deviceId,
@@ -239,9 +239,9 @@ class _$_PushDevice implements _PushDevice {
       @JsonKey(name: 'notification_token') required this.notificationToken,
       @JsonKey(name: 'voip_notification_token') required this.voipNotificationToken,
       @JsonKey(name: 'name') required this.name,
-      @JsonKey(name: 'data_pushes') required this.dataPushes = false,
-      @JsonKey(name: 'data_badges') required this.dataBadges = false,
-      @JsonKey(name: 'allowed_notifications') required this.allowedNotifications = false});
+      @JsonKey(name: 'data_pushes') required this.dataPushes,
+      @JsonKey(name: 'data_badges') required this.dataBadges,
+      @JsonKey(name: 'allowed_notifications') required this.allowedNotifications});
 
   factory _$_PushDevice.fromJson(Map<String, dynamic> json) => _$$_PushDeviceFromJson(json);
 

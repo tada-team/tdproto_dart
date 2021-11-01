@@ -28,7 +28,7 @@ class _$CallEventTearOff {
       @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
       @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
       @JsonKey(name: 'finish') @DateTimeConverter() DateTime? finish,
-      @JsonKey(name: 'audiorecord') required bool audiorecord = false,
+      @JsonKey(name: 'audiorecord') required bool audiorecord,
       @JsonKey(name: 'onliners') List<CallOnliner>? onliners,
       @JsonKey(name: 'gentime') required int gentime,
       @Deprecated('Deprecated: use gentime or created.') @JsonKey(name: 'timestamp') required int timestamp}) {
@@ -280,7 +280,7 @@ class _$_CallEvent implements _CallEvent {
       @JsonKey(name: 'created') @DateTimeConverter() required this.created,
       @JsonKey(name: 'start') @DateTimeConverter() this.start,
       @JsonKey(name: 'finish') @DateTimeConverter() this.finish,
-      @JsonKey(name: 'audiorecord') required this.audiorecord = false,
+      @JsonKey(name: 'audiorecord') required this.audiorecord,
       @JsonKey(name: 'onliners') this.onliners,
       @JsonKey(name: 'gentime') required this.gentime,
       @Deprecated('Deprecated: use gentime or created.') @JsonKey(name: 'timestamp') required this.timestamp});

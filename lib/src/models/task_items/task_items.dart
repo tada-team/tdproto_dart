@@ -12,7 +12,7 @@ class TaskItems with _$TaskItems {
     @JsonKey(name: 'name') required String name,
 
     /// .
-    @Default(false) @JsonKey(name: 'checked') required bool checked,
+    @JsonKey(name: 'checked') required bool checked,
   }) = _TaskItems;
 
   factory TaskItems.fromJson(Map<String, dynamic> json) => _$TaskItemsFromJson(json);

@@ -12,7 +12,7 @@ class ClientCallSoundParams with _$ClientCallSoundParams {
     @JsonKey(name: 'jid') required String jid,
 
     /// Mute state.
-    @Default(false) @JsonKey(name: 'muted') required bool muted,
+    @JsonKey(name: 'muted') required bool muted,
   }) = _ClientCallSoundParams;
 
   factory ClientCallSoundParams.fromJson(Map<String, dynamic> json) => _$ClientCallSoundParamsFromJson(json);

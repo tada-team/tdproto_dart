@@ -8,7 +8,7 @@ part of 'resp.dart';
 
 _$_Resp _$$_RespFromJson(Map<String, dynamic> json) => _$_Resp(
       debugTime: json['_time'] as String?,
-      ok: json['ok'] as bool? ?? false,
+      ok: json['ok'] as bool,
       result: json['result'],
       error: json['error'] as String?,
       details: json['details'] as String?,

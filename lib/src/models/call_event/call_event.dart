@@ -27,7 +27,7 @@ class CallEvent with _$CallEvent {
     @JsonKey(name: 'finish') @DateTimeConverter() DateTime? finish,
 
     /// Call record enabled.
-    @Default(false) @JsonKey(name: 'audiorecord') required bool audiorecord,
+    @JsonKey(name: 'audiorecord') required bool audiorecord,
 
     /// Call participants.
     @JsonKey(name: 'onliners') List<CallOnliner>? onliners,

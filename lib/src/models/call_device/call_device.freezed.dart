@@ -22,7 +22,7 @@ class _$CallDeviceTearOff {
   const _$CallDeviceTearOff();
 
   _CallDevice call(
-      {@JsonKey(name: 'muted') required bool muted = false, @JsonKey(name: 'useragent') required String useragent}) {
+      {@JsonKey(name: 'muted') required bool muted, @JsonKey(name: 'useragent') required String useragent}) {
     return _CallDevice(
       muted: muted,
       useragent: useragent,
@@ -121,7 +121,7 @@ class __$CallDeviceCopyWithImpl<$Res> extends _$CallDeviceCopyWithImpl<$Res> imp
 @JsonSerializable()
 class _$_CallDevice implements _CallDevice {
   const _$_CallDevice(
-      {@JsonKey(name: 'muted') required this.muted = false, @JsonKey(name: 'useragent') required this.useragent});
+      {@JsonKey(name: 'muted') required this.muted, @JsonKey(name: 'useragent') required this.useragent});
 
   factory _$_CallDevice.fromJson(Map<String, dynamic> json) => _$$_CallDeviceFromJson(json);
 

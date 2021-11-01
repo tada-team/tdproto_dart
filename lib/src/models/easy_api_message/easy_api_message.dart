@@ -18,16 +18,16 @@ class EasyApiMessage with _$EasyApiMessage {
     @JsonKey(name: 'message_id') required String messageUid,
 
     /// Disable links preview.
-    @Default(false) @JsonKey(name: 'nopreview') required bool nopreview,
+    @JsonKey(name: 'nopreview') required bool nopreview,
 
     /// Mark message as important.
-    @Default(false) @JsonKey(name: 'important') required bool important,
+    @JsonKey(name: 'important') required bool important,
 
     /// Disable counters and push notifications.
-    @Default(false) @JsonKey(name: 'silently') required bool silently,
+    @JsonKey(name: 'silently') required bool silently,
 
     /// Convert "\\n" to "\n".
-    @Default(false) @JsonKey(name: 'convert_linebreaks') required bool convertLinebreaks,
+    @JsonKey(name: 'convert_linebreaks') required bool convertLinebreaks,
   }) = _EasyApiMessage;
 
   factory EasyApiMessage.fromJson(Map<String, dynamic> json) => _$EasyApiMessageFromJson(json);

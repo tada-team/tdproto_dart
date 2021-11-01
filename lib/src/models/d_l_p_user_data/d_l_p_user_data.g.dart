@@ -16,7 +16,7 @@ _$_DLPUserData _$$_DLPUserDataFromJson(Map<String, dynamic> json) => _$_DLPUserD
       role: json['role'] as String,
       contactPhone: json['contact_phone'] as String,
       contactEmail: json['contact_email'] as String,
-      isBot: json['is_bot'] as bool? ?? false,
+      isBot: json['is_bot'] as bool,
     );
 
 Map<String, dynamic> _$$_DLPUserDataToJson(_$_DLPUserData instance) => <String, dynamic>{

@@ -26,7 +26,7 @@ class _$CallOnlinerTearOff {
       @JsonKey(name: 'display_name') required String displayName,
       @JsonKey(name: 'role') required String role,
       @JsonKey(name: 'icon') required String icon,
-      @JsonKey(name: 'muted') required bool muted = false,
+      @JsonKey(name: 'muted') required bool muted,
       @JsonKey(name: 'enabled_video') bool? enabledVideo = false,
       @JsonKey(name: 'devices') required List<CallDevice> devices}) {
     return _CallOnliner(
@@ -221,7 +221,7 @@ class _$_CallOnliner implements _CallOnliner {
       @JsonKey(name: 'display_name') required this.displayName,
       @JsonKey(name: 'role') required this.role,
       @JsonKey(name: 'icon') required this.icon,
-      @JsonKey(name: 'muted') required this.muted = false,
+      @JsonKey(name: 'muted') required this.muted,
       @JsonKey(name: 'enabled_video') this.enabledVideo = false,
       @JsonKey(name: 'devices') required this.devices});
 

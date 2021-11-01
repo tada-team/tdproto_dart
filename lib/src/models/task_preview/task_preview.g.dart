@@ -12,7 +12,7 @@ _$_TaskPreview _$$_TaskPreviewFromJson(Map<String, dynamic> json) => _$_TaskPrev
       deadline: json['deadline'] as String?,
       description: json['description'] as String,
       section: json['section'] as String,
-      isPublic: json['public'] as bool? ?? false,
+      isPublic: json['public'] as bool,
       tags: (json['tags'] as List<dynamic>).map((e) => e as String).toList(),
       items: (json['items'] as List<dynamic>).map((e) => TaskItems.fromJson(e as Map<String, dynamic>)).toList(),
     );

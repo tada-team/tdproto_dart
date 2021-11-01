@@ -7,7 +7,7 @@ part of 'client_activity_params.dart';
 // **************************************************************************
 
 _$_ClientActivityParams _$$_ClientActivityParamsFromJson(Map<String, dynamic> json) => _$_ClientActivityParams(
-      afk: json['afk'] as bool? ?? false,
+      afk: json['afk'] as bool,
     );
 
 Map<String, dynamic> _$$_ClientActivityParamsToJson(_$_ClientActivityParams instance) => <String, dynamic>{

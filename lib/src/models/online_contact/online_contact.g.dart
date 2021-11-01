@@ -10,7 +10,7 @@ _$_OnlineContact _$$_OnlineContactFromJson(Map<String, dynamic> json) => _$_Onli
       jid: json['jid'] as String,
       afk: json['afk'] as bool? ?? false,
       focused: json['focused'] as bool? ?? false,
-      mobile: json['mobile'] as bool? ?? false,
+      mobile: json['mobile'] as bool,
     );
 
 Map<String, dynamic> _$$_OnlineContactToJson(_$_OnlineContact instance) => <String, dynamic>{

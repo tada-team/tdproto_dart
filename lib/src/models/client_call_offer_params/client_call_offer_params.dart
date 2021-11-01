@@ -12,10 +12,10 @@ class ClientCallOfferParams with _$ClientCallOfferParams {
     @JsonKey(name: 'jid') required String jid,
 
     /// Mute state Deprecated: use EnabledAudio.
-    @Default(false) @Deprecated('Mute state Deprecated: use EnabledAudio.') @JsonKey(name: 'muted') required bool muted,
+    @Deprecated('Mute state Deprecated: use EnabledAudio.') @JsonKey(name: 'muted') required bool muted,
 
     /// Is trickle mode enabled.
-    @Default(false) @JsonKey(name: 'trickle') required bool trickle,
+    @JsonKey(name: 'trickle') required bool trickle,
 
     /// SDP (session description protocol) data.
     @JsonKey(name: 'sdp') required String sdp,

@@ -12,7 +12,7 @@ class ServerCallMuteallParams with _$ServerCallMuteallParams {
     @JsonKey(name: 'jid') required String jid,
 
     /// Mute state.
-    @Default(false) @JsonKey(name: 'muted') required bool muted,
+    @JsonKey(name: 'muted') required bool muted,
   }) = _ServerCallMuteallParams;
 
   factory ServerCallMuteallParams.fromJson(Map<String, dynamic> json) => _$ServerCallMuteallParamsFromJson(json);

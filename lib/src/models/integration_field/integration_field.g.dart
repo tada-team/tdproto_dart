@@ -8,7 +8,7 @@ part of 'integration_field.dart';
 
 _$_IntegrationField _$$_IntegrationFieldFromJson(Map<String, dynamic> json) => _$_IntegrationField(
       label: json['label'] as String,
-      readonly: json['readonly'] as bool? ?? false,
+      readonly: json['readonly'] as bool,
       value: json['value'] as String,
     );
 

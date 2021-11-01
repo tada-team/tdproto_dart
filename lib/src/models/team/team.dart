@@ -30,7 +30,7 @@ class Team with _$Team {
     @JsonKey(name: 'icons') required IconData icons,
 
     /// User last activity was in this team.
-    @Default(false) @JsonKey(name: 'last_active') required bool lastActive,
+    @JsonKey(name: 'last_active') required bool lastActive,
 
     /// What status I can set to other team members.
     @JsonKey(name: 'changeable_statuses') List<String>? changeableStatuses,
@@ -39,7 +39,7 @@ class Team with _$Team {
     @Default(false) @JsonKey(name: 'bad_profile') bool? badProfile,
 
     /// Need confirmation after invite to this team.
-    @Default(false) @JsonKey(name: 'need_confirmation') required bool needConfirmation,
+    @JsonKey(name: 'need_confirmation') required bool needConfirmation,
 
     /// Patronymic in usernames for this team.
     @Default(false) @JsonKey(name: 'use_patronymic') bool? usePatronymic,

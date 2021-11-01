@@ -31,7 +31,7 @@ class _$DLPUserDataTearOff {
       @JsonKey(name: 'role') required String role,
       @JsonKey(name: 'contact_phone') required String contactPhone,
       @JsonKey(name: 'contact_email') required String contactEmail,
-      @JsonKey(name: 'is_bot') required bool isBot = false}) {
+      @JsonKey(name: 'is_bot') required bool isBot}) {
     return _DLPUserData(
       uuid: uuid,
       contactUUID: contactUUID,
@@ -280,7 +280,7 @@ class _$_DLPUserData implements _DLPUserData {
       @JsonKey(name: 'role') required this.role,
       @JsonKey(name: 'contact_phone') required this.contactPhone,
       @JsonKey(name: 'contact_email') required this.contactEmail,
-      @JsonKey(name: 'is_bot') required this.isBot = false});
+      @JsonKey(name: 'is_bot') required this.isBot});
 
   factory _$_DLPUserData.fromJson(Map<String, dynamic> json) => _$$_DLPUserDataFromJson(json);
 

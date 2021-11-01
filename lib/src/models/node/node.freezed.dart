@@ -24,7 +24,7 @@ class _$NodeTearOff {
   _Node call(
       {@JsonKey(name: 'uid') required String uid,
       @JsonKey(name: 'title') required String title,
-      @JsonKey(name: 'enabled') required bool enabled = false}) {
+      @JsonKey(name: 'enabled') required bool enabled}) {
     return _Node(
       uid: uid,
       title: title,
@@ -141,7 +141,7 @@ class _$_Node implements _Node {
   const _$_Node(
       {@JsonKey(name: 'uid') required this.uid,
       @JsonKey(name: 'title') required this.title,
-      @JsonKey(name: 'enabled') required this.enabled = false});
+      @JsonKey(name: 'enabled') required this.enabled});
 
   factory _$_Node.fromJson(Map<String, dynamic> json) => _$$_NodeFromJson(json);
 

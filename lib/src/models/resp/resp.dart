@@ -12,7 +12,7 @@ class Resp with _$Resp {
     @JsonKey(name: '_time') String? debugTime,
 
     /// Request status.
-    @Default(false) @JsonKey(name: 'ok') required bool ok,
+    @JsonKey(name: 'ok') required bool ok,
 
     /// Result only if ok is true).
     @JsonKey(name: 'result') dynamic? result,

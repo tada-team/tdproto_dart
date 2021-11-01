@@ -22,7 +22,7 @@ class _$ClientCallVideoParamsTearOff {
   const _$ClientCallVideoParamsTearOff();
 
   _ClientCallVideoParams call(
-      {@JsonKey(name: 'jid') required String jid, @JsonKey(name: 'enabled') required bool enabled = false}) {
+      {@JsonKey(name: 'jid') required String jid, @JsonKey(name: 'enabled') required bool enabled}) {
     return _ClientCallVideoParams(
       jid: jid,
       enabled: enabled,
@@ -124,7 +124,7 @@ class __$ClientCallVideoParamsCopyWithImpl<$Res> extends _$ClientCallVideoParams
 @JsonSerializable()
 class _$_ClientCallVideoParams implements _ClientCallVideoParams {
   const _$_ClientCallVideoParams(
-      {@JsonKey(name: 'jid') required this.jid, @JsonKey(name: 'enabled') required this.enabled = false});
+      {@JsonKey(name: 'jid') required this.jid, @JsonKey(name: 'enabled') required this.enabled});
 
   factory _$_ClientCallVideoParams.fromJson(Map<String, dynamic> json) => _$$_ClientCallVideoParamsFromJson(json);
 

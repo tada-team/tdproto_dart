@@ -27,22 +27,22 @@ class User with _$User {
     @JsonKey(name: 'default_lang') String? defaultLang,
 
     /// Use Ctrl/Cmd + Enter instead Enter.
-    @Default(false) @JsonKey(name: 'alt_send') required bool altSend,
+    @JsonKey(name: 'alt_send') required bool altSend,
 
     /// Use * as @ for mentions.
-    @Default(false) @JsonKey(name: 'asterisk_mention') required bool asteriskMention,
+    @JsonKey(name: 'asterisk_mention') required bool asteriskMention,
 
     /// Send pushes even user is online.
-    @Default(false) @JsonKey(name: 'always_send_pushes') required bool alwaysSendPushes,
+    @JsonKey(name: 'always_send_pushes') required bool alwaysSendPushes,
 
     /// Hide pushes body.
-    @Default(false) @JsonKey(name: 'hide_pushes_content') required bool hidePushesContent,
+    @JsonKey(name: 'hide_pushes_content') required bool hidePushesContent,
 
     /// Show unread chats in chat list first.
-    @Default(false) @JsonKey(name: 'unread_first') required bool unreadFirst,
+    @JsonKey(name: 'unread_first') required bool unreadFirst,
 
     /// Show unread chats in chat list first on mobiles.
-    @Default(false) @JsonKey(name: 'munread_first') required bool mUnreadFirst,
+    @JsonKey(name: 'munread_first') required bool mUnreadFirst,
 
     /// Timezone.
     @JsonKey(name: 'timezone') required String timezone,

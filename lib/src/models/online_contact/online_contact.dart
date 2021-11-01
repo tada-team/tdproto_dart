@@ -18,7 +18,7 @@ class OnlineContact with _$OnlineContact {
     @Default(false) @JsonKey(name: 'focused') bool? focused,
 
     /// Is mobile client.
-    @Default(false) @JsonKey(name: 'mobile') required bool mobile,
+    @JsonKey(name: 'mobile') required bool mobile,
   }) = _OnlineContact;
 
   factory OnlineContact.fromJson(Map<String, dynamic> json) => _$OnlineContactFromJson(json);

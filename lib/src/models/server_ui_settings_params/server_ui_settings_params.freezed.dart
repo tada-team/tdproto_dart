@@ -22,7 +22,8 @@ class _$ServerUiSettingsParamsTearOff {
   const _$ServerUiSettingsParamsTearOff();
 
   _ServerUiSettingsParams call(
-      {@JsonKey(name: 'namespace') required String namespace, @JsonKey(name: 'data') required UiSettingsData data}) {
+      {@JsonKey(name: 'namespace') required String namespace,
+      @JsonKey(name: 'data') required Map<String, dynamic> data}) {
     return _ServerUiSettingsParams(
       namespace: namespace,
       data: data,
@@ -45,7 +46,7 @@ mixin _$ServerUiSettingsParams {
 
   /// UiSettingsData.
   @JsonKey(name: 'data')
-  UiSettingsData get data => throw _privateConstructorUsedError;
+  Map<String, dynamic> get data => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -56,7 +57,7 @@ mixin _$ServerUiSettingsParams {
 abstract class $ServerUiSettingsParamsCopyWith<$Res> {
   factory $ServerUiSettingsParamsCopyWith(ServerUiSettingsParams value, $Res Function(ServerUiSettingsParams) then) =
       _$ServerUiSettingsParamsCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'namespace') String namespace, @JsonKey(name: 'data') UiSettingsData data});
+  $Res call({@JsonKey(name: 'namespace') String namespace, @JsonKey(name: 'data') Map<String, dynamic> data});
 }
 
 /// @nodoc
@@ -80,7 +81,7 @@ class _$ServerUiSettingsParamsCopyWithImpl<$Res> implements $ServerUiSettingsPar
       data: data == freezed
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
-              as UiSettingsData,
+              as Map<String, dynamic>,
     ));
   }
 }
@@ -90,7 +91,7 @@ abstract class _$ServerUiSettingsParamsCopyWith<$Res> implements $ServerUiSettin
   factory _$ServerUiSettingsParamsCopyWith(_ServerUiSettingsParams value, $Res Function(_ServerUiSettingsParams) then) =
       __$ServerUiSettingsParamsCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'namespace') String namespace, @JsonKey(name: 'data') UiSettingsData data});
+  $Res call({@JsonKey(name: 'namespace') String namespace, @JsonKey(name: 'data') Map<String, dynamic> data});
 }
 
 /// @nodoc
@@ -115,7 +116,7 @@ class __$ServerUiSettingsParamsCopyWithImpl<$Res> extends _$ServerUiSettingsPara
       data: data == freezed
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
-              as UiSettingsData,
+              as Map<String, dynamic>,
     ));
   }
 }
@@ -137,7 +138,7 @@ class _$_ServerUiSettingsParams implements _ServerUiSettingsParams {
 
   /// UiSettingsData.
   @JsonKey(name: 'data')
-  final UiSettingsData data;
+  final Map<String, dynamic> data;
 
   @override
   String toString() {
@@ -171,7 +172,7 @@ class _$_ServerUiSettingsParams implements _ServerUiSettingsParams {
 abstract class _ServerUiSettingsParams implements ServerUiSettingsParams {
   const factory _ServerUiSettingsParams(
       {@JsonKey(name: 'namespace') required String namespace,
-      @JsonKey(name: 'data') required UiSettingsData data}) = _$_ServerUiSettingsParams;
+      @JsonKey(name: 'data') required Map<String, dynamic> data}) = _$_ServerUiSettingsParams;
 
   factory _ServerUiSettingsParams.fromJson(Map<String, dynamic> json) = _$_ServerUiSettingsParams.fromJson;
 
@@ -184,7 +185,7 @@ abstract class _ServerUiSettingsParams implements ServerUiSettingsParams {
 
   /// UiSettingsData.
   @JsonKey(name: 'data')
-  UiSettingsData get data => throw _privateConstructorUsedError;
+  Map<String, dynamic> get data => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ServerUiSettingsParamsCopyWith<_ServerUiSettingsParams> get copyWith => throw _privateConstructorUsedError;

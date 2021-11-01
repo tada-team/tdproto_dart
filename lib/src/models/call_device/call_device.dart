@@ -9,7 +9,7 @@ part 'call_device.g.dart';
 class CallDevice with _$CallDevice {
   const factory CallDevice({
     /// Device muted.
-    @Default(false) @JsonKey(name: 'muted') required bool muted,
+    @JsonKey(name: 'muted') required bool muted,
 
     /// Device description.
     @JsonKey(name: 'useragent') required String useragent,

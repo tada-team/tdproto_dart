@@ -25,7 +25,7 @@ class _$OnlineContactTearOff {
       {@JsonKey(name: 'jid') required String jid,
       @JsonKey(name: 'afk') bool? afk = false,
       @JsonKey(name: 'focused') bool? focused = false,
-      @JsonKey(name: 'mobile') required bool mobile = false}) {
+      @JsonKey(name: 'mobile') required bool mobile}) {
     return _OnlineContact(
       jid: jid,
       afk: afk,
@@ -168,7 +168,7 @@ class _$_OnlineContact implements _OnlineContact {
       {@JsonKey(name: 'jid') required this.jid,
       @JsonKey(name: 'afk') this.afk = false,
       @JsonKey(name: 'focused') this.focused = false,
-      @JsonKey(name: 'mobile') required this.mobile = false});
+      @JsonKey(name: 'mobile') required this.mobile});
 
   factory _$_OnlineContact.fromJson(Map<String, dynamic> json) => _$$_OnlineContactFromJson(json);
 

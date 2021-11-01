@@ -15,7 +15,7 @@ class ReceivedMessage with _$ReceivedMessage {
     @JsonKey(name: 'message_id') required String messageId,
 
     /// Is received.
-    @Default(false) @JsonKey(name: 'received') required bool received,
+    @JsonKey(name: 'received') required bool received,
 
     /// Number of contacts received this message. Experimental.
     @JsonKey(name: 'num_received') int? numReceived,

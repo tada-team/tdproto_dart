@@ -36,7 +36,7 @@ class DLPUserData with _$DLPUserData {
     @JsonKey(name: 'contact_email') required String contactEmail,
 
     /// .
-    @Default(false) @JsonKey(name: 'is_bot') required bool isBot,
+    @JsonKey(name: 'is_bot') required bool isBot,
   }) = _DLPUserData;
 
   factory DLPUserData.fromJson(Map<String, dynamic> json) => _$DLPUserDataFromJson(json);

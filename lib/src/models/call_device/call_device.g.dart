@@ -7,7 +7,7 @@ part of 'call_device.dart';
 // **************************************************************************
 
 _$_CallDevice _$$_CallDeviceFromJson(Map<String, dynamic> json) => _$_CallDevice(
-      muted: json['muted'] as bool? ?? false,
+      muted: json['muted'] as bool,
       useragent: json['useragent'] as String,
     );
 

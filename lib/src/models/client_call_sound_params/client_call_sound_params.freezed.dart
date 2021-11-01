@@ -22,7 +22,7 @@ class _$ClientCallSoundParamsTearOff {
   const _$ClientCallSoundParamsTearOff();
 
   _ClientCallSoundParams call(
-      {@JsonKey(name: 'jid') required String jid, @JsonKey(name: 'muted') required bool muted = false}) {
+      {@JsonKey(name: 'jid') required String jid, @JsonKey(name: 'muted') required bool muted}) {
     return _ClientCallSoundParams(
       jid: jid,
       muted: muted,
@@ -124,7 +124,7 @@ class __$ClientCallSoundParamsCopyWithImpl<$Res> extends _$ClientCallSoundParams
 @JsonSerializable()
 class _$_ClientCallSoundParams implements _ClientCallSoundParams {
   const _$_ClientCallSoundParams(
-      {@JsonKey(name: 'jid') required this.jid, @JsonKey(name: 'muted') required this.muted = false});
+      {@JsonKey(name: 'jid') required this.jid, @JsonKey(name: 'muted') required this.muted});
 
   factory _$_ClientCallSoundParams.fromJson(Map<String, dynamic> json) => _$$_ClientCallSoundParamsFromJson(json);
 

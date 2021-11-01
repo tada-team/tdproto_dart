@@ -12,7 +12,7 @@ class IntegrationField with _$IntegrationField {
     @JsonKey(name: 'label') required String label,
 
     /// Is field readonly.
-    @Default(false) @JsonKey(name: 'readonly') required bool readonly,
+    @JsonKey(name: 'readonly') required bool readonly,
 
     /// Current value.
     @JsonKey(name: 'value') required String value,

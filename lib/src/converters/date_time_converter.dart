@@ -7,8 +7,8 @@ class DateTimeConverter implements JsonConverter<DateTime, String> {
   const DateTimeConverter();
 
   @override
-  DateTime fromJson(String dateTimeString) => dateTimeString == null ? null : DateTime.parse(dateTimeString);
+  DateTime fromJson(String dateTimeString) => DateTime.parse(dateTimeString);
 
   @override
-  String toJson(DateTime dateTime) => dateTime?.toIso8601String();
+  String toJson(DateTime dateTime) => dateTime.toIso8601String();
 }

@@ -24,7 +24,7 @@ class _$ReceivedMessageTearOff {
   _ReceivedMessage call(
       {@JsonKey(name: 'chat') required String chat,
       @JsonKey(name: 'message_id') required String messageId,
-      @JsonKey(name: 'received') required bool received = false,
+      @JsonKey(name: 'received') required bool received,
       @JsonKey(name: 'num_received') int? numReceived,
       @JsonKey(name: '_debug') String? debug}) {
     return _ReceivedMessage(
@@ -185,7 +185,7 @@ class _$_ReceivedMessage implements _ReceivedMessage {
   const _$_ReceivedMessage(
       {@JsonKey(name: 'chat') required this.chat,
       @JsonKey(name: 'message_id') required this.messageId,
-      @JsonKey(name: 'received') required this.received = false,
+      @JsonKey(name: 'received') required this.received,
       @JsonKey(name: 'num_received') this.numReceived,
       @JsonKey(name: '_debug') this.debug});
 

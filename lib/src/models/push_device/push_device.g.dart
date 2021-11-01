@@ -12,9 +12,9 @@ _$_PushDevice _$$_PushDeviceFromJson(Map<String, dynamic> json) => _$_PushDevice
       notificationToken: json['notification_token'] as String,
       voipNotificationToken: json['voip_notification_token'] as String,
       name: json['name'] as String,
-      dataPushes: json['data_pushes'] as bool? ?? false,
-      dataBadges: json['data_badges'] as bool? ?? false,
-      allowedNotifications: json['allowed_notifications'] as bool? ?? false,
+      dataPushes: json['data_pushes'] as bool,
+      dataBadges: json['data_badges'] as bool,
+      allowedNotifications: json['allowed_notifications'] as bool,
     );
 
 Map<String, dynamic> _$$_PushDeviceToJson(_$_PushDevice instance) => <String, dynamic>{

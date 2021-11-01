@@ -22,7 +22,7 @@ class _$ServerCallMuteallParamsTearOff {
   const _$ServerCallMuteallParamsTearOff();
 
   _ServerCallMuteallParams call(
-      {@JsonKey(name: 'jid') required String jid, @JsonKey(name: 'muted') required bool muted = false}) {
+      {@JsonKey(name: 'jid') required String jid, @JsonKey(name: 'muted') required bool muted}) {
     return _ServerCallMuteallParams(
       jid: jid,
       muted: muted,
@@ -125,7 +125,7 @@ class __$ServerCallMuteallParamsCopyWithImpl<$Res> extends _$ServerCallMuteallPa
 @JsonSerializable()
 class _$_ServerCallMuteallParams implements _ServerCallMuteallParams {
   const _$_ServerCallMuteallParams(
-      {@JsonKey(name: 'jid') required this.jid, @JsonKey(name: 'muted') required this.muted = false});
+      {@JsonKey(name: 'jid') required this.jid, @JsonKey(name: 'muted') required this.muted});
 
   factory _$_ServerCallMuteallParams.fromJson(Map<String, dynamic> json) => _$$_ServerCallMuteallParamsFromJson(json);
 

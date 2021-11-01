@@ -15,7 +15,7 @@ class ServerChatComposingParams with _$ServerChatComposingParams {
     @JsonKey(name: 'actor') required String actor,
 
     /// true = start typing / audio recording, false = stop.
-    @Default(false) @JsonKey(name: 'composing') required bool composing,
+    @JsonKey(name: 'composing') required bool composing,
 
     /// true = audiomessage, false = text typing.
     @Default(false) @JsonKey(name: 'is_audio') bool? isAudio,

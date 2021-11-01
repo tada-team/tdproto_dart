@@ -15,13 +15,13 @@ class TaskTab with _$TaskTab {
     @JsonKey(name: 'title') required String title,
 
     /// Disable this tab when it has no contents.
-    @Default(false) @JsonKey(name: 'hide_empty') required bool hideEmpty,
+    @JsonKey(name: 'hide_empty') required bool hideEmpty,
 
     /// Show unread badge.
-    @Default(false) @JsonKey(name: 'show_counter') required bool showCounter,
+    @JsonKey(name: 'show_counter') required bool showCounter,
 
     /// Enable pagination.
-    @Default(false) @JsonKey(name: 'pagination') required bool pagination,
+    @JsonKey(name: 'pagination') required bool pagination,
 
     /// Filters inside tab.
     @JsonKey(name: 'filters') required List<TaskFilter> filters,

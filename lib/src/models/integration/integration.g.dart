@@ -10,7 +10,7 @@ _$_Integration _$$_IntegrationFromJson(Map<String, dynamic> json) => _$_Integrat
       uid: json['uid'] as String?,
       comment: json['comment'] as String,
       created: json['created'] == null ? null : DateTime.parse(json['created'] as String),
-      enabled: json['enabled'] as bool? ?? false,
+      enabled: json['enabled'] as bool,
       form: IntegrationForm.fromJson(json['form'] as Map<String, dynamic>),
       group: json['group'] as String,
       help: json['help'] as String?,

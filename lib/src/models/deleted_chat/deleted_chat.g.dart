@@ -10,7 +10,7 @@ _$_DeletedChat _$$_DeletedChatFromJson(Map<String, dynamic> json) => _$_DeletedC
       jid: json['jid'] as String,
       chatType: json['chat_type'] as String,
       gentime: json['gentime'] as int,
-      isArchive: json['is_archive'] as bool? ?? false,
+      isArchive: json['is_archive'] as bool,
     );
 
 Map<String, dynamic> _$$_DeletedChatToJson(_$_DeletedChat instance) => <String, dynamic>{

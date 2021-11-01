@@ -23,7 +23,7 @@ class _$DeletedTeamTearOff {
 
   _DeletedTeam call(
       {@JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'is_archive') required bool isArchive = false,
+      @JsonKey(name: 'is_archive') required bool isArchive,
       @JsonKey(name: 'gentime') required int gentime}) {
     return _DeletedTeam(
       uid: uid,
@@ -146,7 +146,7 @@ class __$DeletedTeamCopyWithImpl<$Res> extends _$DeletedTeamCopyWithImpl<$Res> i
 class _$_DeletedTeam implements _DeletedTeam {
   const _$_DeletedTeam(
       {@JsonKey(name: 'uid') required this.uid,
-      @JsonKey(name: 'is_archive') required this.isArchive = false,
+      @JsonKey(name: 'is_archive') required this.isArchive,
       @JsonKey(name: 'gentime') required this.gentime});
 
   factory _$_DeletedTeam.fromJson(Map<String, dynamic> json) => _$$_DeletedTeamFromJson(json);

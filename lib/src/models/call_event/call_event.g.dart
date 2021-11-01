@@ -13,7 +13,7 @@ _$_CallEvent _$$_CallEventFromJson(Map<String, dynamic> json) => _$_CallEvent(
       created: const DateTimeConverter().fromJson(json['created'] as String),
       start: json['start'] == null ? null : DateTime.parse(json['start'] as String),
       finish: json['finish'] == null ? null : DateTime.parse(json['finish'] as String),
-      audiorecord: json['audiorecord'] as bool? ?? false,
+      audiorecord: json['audiorecord'] as bool,
       onliners:
           (json['onliners'] as List<dynamic>?)?.map((e) => CallOnliner.fromJson(e as Map<String, dynamic>)).toList(),
       gentime: json['gentime'] as int,

@@ -21,7 +21,7 @@ ClientActivityParams _$ClientActivityParamsFromJson(Map<String, dynamic> json) {
 class _$ClientActivityParamsTearOff {
   const _$ClientActivityParamsTearOff();
 
-  _ClientActivityParams call({@JsonKey(name: 'afk') required bool afk = false}) {
+  _ClientActivityParams call({@JsonKey(name: 'afk') required bool afk}) {
     return _ClientActivityParams(
       afk: afk,
     );
@@ -107,7 +107,7 @@ class __$ClientActivityParamsCopyWithImpl<$Res> extends _$ClientActivityParamsCo
 /// @nodoc
 @JsonSerializable()
 class _$_ClientActivityParams implements _ClientActivityParams {
-  const _$_ClientActivityParams({@JsonKey(name: 'afk') required this.afk = false});
+  const _$_ClientActivityParams({@JsonKey(name: 'afk') required this.afk});
 
   factory _$_ClientActivityParams.fromJson(Map<String, dynamic> json) => _$$_ClientActivityParamsFromJson(json);
 

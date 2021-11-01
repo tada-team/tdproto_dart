@@ -24,7 +24,7 @@ class _$ServerChatComposingParamsTearOff {
   _ServerChatComposingParams call(
       {@JsonKey(name: 'jid') required String jid,
       @JsonKey(name: 'actor') required String actor,
-      @JsonKey(name: 'composing') required bool composing = false,
+      @JsonKey(name: 'composing') required bool composing,
       @JsonKey(name: 'is_audio') bool? isAudio = false,
       @JsonKey(name: 'valid_until') @DateTimeConverter() DateTime? validUntil}) {
     return _ServerChatComposingParams(
@@ -189,7 +189,7 @@ class _$_ServerChatComposingParams implements _ServerChatComposingParams {
   const _$_ServerChatComposingParams(
       {@JsonKey(name: 'jid') required this.jid,
       @JsonKey(name: 'actor') required this.actor,
-      @JsonKey(name: 'composing') required this.composing = false,
+      @JsonKey(name: 'composing') required this.composing,
       @JsonKey(name: 'is_audio') this.isAudio = false,
       @JsonKey(name: 'valid_until') @DateTimeConverter() this.validUntil});
 

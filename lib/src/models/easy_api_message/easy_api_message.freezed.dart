@@ -25,10 +25,10 @@ class _$EasyApiMessageTearOff {
       {@JsonKey(name: 'key') required String key,
       @JsonKey(name: 'message') required String text,
       @JsonKey(name: 'message_id') required String messageUid,
-      @JsonKey(name: 'nopreview') required bool nopreview = false,
-      @JsonKey(name: 'important') required bool important = false,
-      @JsonKey(name: 'silently') required bool silently = false,
-      @JsonKey(name: 'convert_linebreaks') required bool convertLinebreaks = false}) {
+      @JsonKey(name: 'nopreview') required bool nopreview,
+      @JsonKey(name: 'important') required bool important,
+      @JsonKey(name: 'silently') required bool silently,
+      @JsonKey(name: 'convert_linebreaks') required bool convertLinebreaks}) {
     return _EasyApiMessage(
       key: key,
       text: text,
@@ -222,10 +222,10 @@ class _$_EasyApiMessage implements _EasyApiMessage {
       {@JsonKey(name: 'key') required this.key,
       @JsonKey(name: 'message') required this.text,
       @JsonKey(name: 'message_id') required this.messageUid,
-      @JsonKey(name: 'nopreview') required this.nopreview = false,
-      @JsonKey(name: 'important') required this.important = false,
-      @JsonKey(name: 'silently') required this.silently = false,
-      @JsonKey(name: 'convert_linebreaks') required this.convertLinebreaks = false});
+      @JsonKey(name: 'nopreview') required this.nopreview,
+      @JsonKey(name: 'important') required this.important,
+      @JsonKey(name: 'silently') required this.silently,
+      @JsonKey(name: 'convert_linebreaks') required this.convertLinebreaks});
 
   factory _$_EasyApiMessage.fromJson(Map<String, dynamic> json) => _$$_EasyApiMessageFromJson(json);
 

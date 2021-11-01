@@ -8,8 +8,8 @@ part of 'client_call_offer_params.dart';
 
 _$_ClientCallOfferParams _$$_ClientCallOfferParamsFromJson(Map<String, dynamic> json) => _$_ClientCallOfferParams(
       jid: json['jid'] as String,
-      muted: json['muted'] as bool? ?? false,
-      trickle: json['trickle'] as bool? ?? false,
+      muted: json['muted'] as bool,
+      trickle: json['trickle'] as bool,
       sdp: json['sdp'] as String,
       callType: json['call_type'] as String?,
       enabledAudio: json['enabled_audio'] as bool? ?? false,

@@ -21,8 +21,7 @@ TaskItems _$TaskItemsFromJson(Map<String, dynamic> json) {
 class _$TaskItemsTearOff {
   const _$TaskItemsTearOff();
 
-  _TaskItems call(
-      {@JsonKey(name: 'name') required String name, @JsonKey(name: 'checked') required bool checked = false}) {
+  _TaskItems call({@JsonKey(name: 'name') required String name, @JsonKey(name: 'checked') required bool checked}) {
     return _TaskItems(
       name: name,
       checked: checked,
@@ -120,8 +119,7 @@ class __$TaskItemsCopyWithImpl<$Res> extends _$TaskItemsCopyWithImpl<$Res> imple
 /// @nodoc
 @JsonSerializable()
 class _$_TaskItems implements _TaskItems {
-  const _$_TaskItems(
-      {@JsonKey(name: 'name') required this.name, @JsonKey(name: 'checked') required this.checked = false});
+  const _$_TaskItems({@JsonKey(name: 'name') required this.name, @JsonKey(name: 'checked') required this.checked});
 
   factory _$_TaskItems.fromJson(Map<String, dynamic> json) => _$$_TaskItemsFromJson(json);
 

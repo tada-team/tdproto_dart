@@ -12,7 +12,7 @@ class ServerUiSettingsParams with _$ServerUiSettingsParams {
     @JsonKey(name: 'namespace') required String namespace,
 
     /// UiSettingsData.
-    @JsonKey(name: 'data') required UiSettingsData data,
+    @JsonKey(name: 'data') required Map<String, dynamic> data,
   }) = _ServerUiSettingsParams;
 
   factory ServerUiSettingsParams.fromJson(Map<String, dynamic> json) => _$ServerUiSettingsParamsFromJson(json);

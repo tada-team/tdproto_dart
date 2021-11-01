@@ -24,7 +24,7 @@ class _$ServerProcessingParamsTearOff {
   _ServerProcessingParams call(
       {@JsonKey(name: 'action') required String action,
       @JsonKey(name: 'message') required String message,
-      @JsonKey(name: 'has_error') required bool hasError = false,
+      @JsonKey(name: 'has_error') required bool hasError,
       @JsonKey(name: 'num') required int num,
       @JsonKey(name: 'total') required int total}) {
     return _ServerProcessingParams(
@@ -185,7 +185,7 @@ class _$_ServerProcessingParams implements _ServerProcessingParams {
   const _$_ServerProcessingParams(
       {@JsonKey(name: 'action') required this.action,
       @JsonKey(name: 'message') required this.message,
-      @JsonKey(name: 'has_error') required this.hasError = false,
+      @JsonKey(name: 'has_error') required this.hasError,
       @JsonKey(name: 'num') required this.num,
       @JsonKey(name: 'total') required this.total});
 

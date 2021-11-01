@@ -12,7 +12,7 @@ class ClientCallVideoParams with _$ClientCallVideoParams {
     @JsonKey(name: 'jid') required String jid,
 
     /// Enable video state.
-    @Default(false) @JsonKey(name: 'enabled') required bool enabled,
+    @JsonKey(name: 'enabled') required bool enabled,
   }) = _ClientCallVideoParams;
 
   factory ClientCallVideoParams.fromJson(Map<String, dynamic> json) => _$ClientCallVideoParamsFromJson(json);

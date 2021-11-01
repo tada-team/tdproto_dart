@@ -24,13 +24,13 @@ class PushDevice with _$PushDevice {
     @JsonKey(name: 'name') required String name,
 
     /// Send silently data pushes that must be fully processed by app. Must be true for modern mobile clients.
-    @Default(false) @JsonKey(name: 'data_pushes') required bool dataPushes,
+    @JsonKey(name: 'data_pushes') required bool dataPushes,
 
     /// Send badge value as data. Experimental.
-    @Default(false) @JsonKey(name: 'data_badges') required bool dataBadges,
+    @JsonKey(name: 'data_badges') required bool dataBadges,
 
     /// deprecated.
-    @Default(false) @JsonKey(name: 'allowed_notifications') required bool allowedNotifications,
+    @JsonKey(name: 'allowed_notifications') required bool allowedNotifications,
   }) = _PushDevice;
 
   factory PushDevice.fromJson(Map<String, dynamic> json) => _$PushDeviceFromJson(json);

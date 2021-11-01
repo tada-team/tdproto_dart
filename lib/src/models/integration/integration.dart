@@ -18,7 +18,7 @@ class Integration with _$Integration {
     @JsonKey(name: 'created') @DateTimeConverter() DateTime? created,
 
     /// Integration enabled.
-    @Default(false) @JsonKey(name: 'enabled') required bool enabled,
+    @JsonKey(name: 'enabled') required bool enabled,
 
     /// Integration form.
     @JsonKey(name: 'form') required IntegrationForm form,

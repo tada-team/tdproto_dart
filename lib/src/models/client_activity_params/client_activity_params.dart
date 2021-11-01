@@ -9,7 +9,7 @@ part 'client_activity_params.g.dart';
 class ClientActivityParams with _$ClientActivityParams {
   const factory ClientActivityParams({
     /// Is away from keyboard.
-    @Default(false) @JsonKey(name: 'afk') required bool afk,
+    @JsonKey(name: 'afk') required bool afk,
   }) = _ClientActivityParams;
 
   factory ClientActivityParams.fromJson(Map<String, dynamic> json) => _$ClientActivityParamsFromJson(json);

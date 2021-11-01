@@ -21,7 +21,7 @@ class CallOnliner with _$CallOnliner {
     @JsonKey(name: 'icon') required String icon,
 
     /// Microphone muted. Computed from devices muted states.
-    @Default(false) @JsonKey(name: 'muted') required bool muted,
+    @JsonKey(name: 'muted') required bool muted,
 
     /// Video state.
     @Default(false) @JsonKey(name: 'enabled_video') bool? enabledVideo,

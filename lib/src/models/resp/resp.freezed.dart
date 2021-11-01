@@ -23,7 +23,7 @@ class _$RespTearOff {
 
   _Resp call(
       {@JsonKey(name: '_time') String? debugTime,
-      @JsonKey(name: 'ok') required bool ok = false,
+      @JsonKey(name: 'ok') required bool ok,
       @JsonKey(name: 'result') dynamic? result,
       @JsonKey(name: 'error') String? error,
       @JsonKey(name: 'details') String? details,
@@ -216,7 +216,7 @@ class __$RespCopyWithImpl<$Res> extends _$RespCopyWithImpl<$Res> implements _$Re
 class _$_Resp implements _Resp {
   const _$_Resp(
       {@JsonKey(name: '_time') this.debugTime,
-      @JsonKey(name: 'ok') required this.ok = false,
+      @JsonKey(name: 'ok') required this.ok,
       @JsonKey(name: 'result') this.result,
       @JsonKey(name: 'error') this.error,
       @JsonKey(name: 'details') this.details,

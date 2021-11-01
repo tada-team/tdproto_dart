@@ -24,7 +24,7 @@ class TaskPreview with _$TaskPreview {
     @JsonKey(name: 'section') required String section,
 
     /// .
-    @Default(false) @JsonKey(name: 'public') required bool isPublic,
+    @JsonKey(name: 'public') required bool isPublic,
 
     /// .
     @JsonKey(name: 'tags') required List<String> tags,

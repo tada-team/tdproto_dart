@@ -8,7 +8,7 @@ part of 'task_items.dart';
 
 _$_TaskItems _$$_TaskItemsFromJson(Map<String, dynamic> json) => _$_TaskItems(
       name: json['name'] as String,
-      checked: json['checked'] as bool? ?? false,
+      checked: json['checked'] as bool,
     );
 
 Map<String, dynamic> _$$_TaskItemsToJson(_$_TaskItems instance) => <String, dynamic>{

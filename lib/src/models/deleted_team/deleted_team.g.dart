@@ -8,7 +8,7 @@ part of 'deleted_team.dart';
 
 _$_DeletedTeam _$$_DeletedTeamFromJson(Map<String, dynamic> json) => _$_DeletedTeam(
       uid: json['uid'] as String,
-      isArchive: json['is_archive'] as bool? ?? false,
+      isArchive: json['is_archive'] as bool,
       gentime: json['gentime'] as int,
     );
 

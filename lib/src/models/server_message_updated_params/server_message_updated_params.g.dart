@@ -9,7 +9,7 @@ part of 'server_message_updated_params.dart';
 _$_ServerMessageUpdatedParams _$$_ServerMessageUpdatedParamsFromJson(Map<String, dynamic> json) =>
     _$_ServerMessageUpdatedParams(
       messages: (json['messages'] as List<dynamic>).map((e) => Message.fromJson(e as Map<String, dynamic>)).toList(),
-      delayed: json['delayed'] as bool? ?? false,
+      delayed: json['delayed'] as bool,
       chatCounters: (json['chat_counters'] as List<dynamic>)
           .map((e) => ChatCounters.fromJson(e as Map<String, dynamic>))
           .toList(),
