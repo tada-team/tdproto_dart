@@ -1,12 +1,12 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'tariff_billing.dart';
+part of 'get_tariff_by_id_response.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_TariffBilling _$$_TariffBillingFromJson(Map<String, dynamic> json) => _$_TariffBilling(
+_$_GetTariffByIdResponse _$$_GetTariffByIdResponseFromJson(Map<String, dynamic> json) => _$_GetTariffByIdResponse(
       tariffId: json['tariff_id'] as int,
       tariffName: json['tariff_name'] as String?,
       freeWorkplace: json['free_workplace'] as int?,
@@ -25,7 +25,7 @@ _$_TariffBilling _$$_TariffBillingFromJson(Map<String, dynamic> json) => _$_Tari
       status: json['status'] as String?,
     );
 
-Map<String, dynamic> _$$_TariffBillingToJson(_$_TariffBilling instance) => <String, dynamic>{
+Map<String, dynamic> _$$_GetTariffByIdResponseToJson(_$_GetTariffByIdResponse instance) => <String, dynamic>{
       'tariff_id': instance.tariffId,
       'tariff_name': instance.tariffName,
       'free_workplace': instance.freeWorkplace,

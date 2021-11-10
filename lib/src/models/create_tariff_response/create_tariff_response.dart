@@ -1,13 +1,13 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:tdproto_dart/tdproto_dart.dart';
 
-part 'tariff_billing.freezed.dart';
-part 'tariff_billing.g.dart';
+part 'create_tariff_response.freezed.dart';
+part 'create_tariff_response.g.dart';
 
-/// TariffBilling struct of billing api.
+/// CreateTariffResponse response on create tariff.
 @freezed
-class TariffBilling with _$TariffBilling {
-  const factory TariffBilling({
+class CreateTariffResponse with _$CreateTariffResponse {
+  const factory CreateTariffResponse({
     /// Tariff id.
     @JsonKey(name: 'tariff_id') required int tariffId,
 
@@ -55,7 +55,7 @@ class TariffBilling with _$TariffBilling {
 
     /// Status of tariff.
     @JsonKey(name: 'status') String? status,
-  }) = _TariffBilling;
+  }) = _CreateTariffResponse;
 
-  factory TariffBilling.fromJson(Map<String, dynamic> json) => _$TariffBillingFromJson(json);
+  factory CreateTariffResponse.fromJson(Map<String, dynamic> json) => _$CreateTariffResponseFromJson(json);
 }

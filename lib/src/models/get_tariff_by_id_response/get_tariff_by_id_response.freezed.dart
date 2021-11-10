@@ -2,7 +2,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'tariff_billing.dart';
+part of 'get_tariff_by_id_response.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -13,15 +13,15 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-TariffBilling _$TariffBillingFromJson(Map<String, dynamic> json) {
-  return _TariffBilling.fromJson(json);
+GetTariffByIdResponse _$GetTariffByIdResponseFromJson(Map<String, dynamic> json) {
+  return _GetTariffByIdResponse.fromJson(json);
 }
 
 /// @nodoc
-class _$TariffBillingTearOff {
-  const _$TariffBillingTearOff();
+class _$GetTariffByIdResponseTearOff {
+  const _$GetTariffByIdResponseTearOff();
 
-  _TariffBilling call(
+  _GetTariffByIdResponse call(
       {@JsonKey(name: 'tariff_id') required int tariffId,
       @JsonKey(name: 'tariff_name') String? tariffName,
       @JsonKey(name: 'free_workplace') int? freeWorkplace,
@@ -38,7 +38,7 @@ class _$TariffBillingTearOff {
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'close_date') String? closeDate,
       @JsonKey(name: 'status') String? status}) {
-    return _TariffBilling(
+    return _GetTariffByIdResponse(
       tariffId: tariffId,
       tariffName: tariffName,
       freeWorkplace: freeWorkplace,
@@ -58,16 +58,16 @@ class _$TariffBillingTearOff {
     );
   }
 
-  TariffBilling fromJson(Map<String, Object> json) {
-    return TariffBilling.fromJson(json);
+  GetTariffByIdResponse fromJson(Map<String, Object> json) {
+    return GetTariffByIdResponse.fromJson(json);
   }
 }
 
 /// @nodoc
-const $TariffBilling = _$TariffBillingTearOff();
+const $GetTariffByIdResponse = _$GetTariffByIdResponseTearOff();
 
 /// @nodoc
-mixin _$TariffBilling {
+mixin _$GetTariffByIdResponse {
   /// Tariff id.
   @JsonKey(name: 'tariff_id')
   int get tariffId => throw _privateConstructorUsedError;
@@ -134,13 +134,13 @@ mixin _$TariffBilling {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $TariffBillingCopyWith<TariffBilling> get copyWith => throw _privateConstructorUsedError;
+  $GetTariffByIdResponseCopyWith<GetTariffByIdResponse> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $TariffBillingCopyWith<$Res> {
-  factory $TariffBillingCopyWith(TariffBilling value, $Res Function(TariffBilling) then) =
-      _$TariffBillingCopyWithImpl<$Res>;
+abstract class $GetTariffByIdResponseCopyWith<$Res> {
+  factory $GetTariffByIdResponseCopyWith(GetTariffByIdResponse value, $Res Function(GetTariffByIdResponse) then) =
+      _$GetTariffByIdResponseCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'tariff_id') int tariffId,
       @JsonKey(name: 'tariff_name') String? tariffName,
@@ -161,12 +161,12 @@ abstract class $TariffBillingCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$TariffBillingCopyWithImpl<$Res> implements $TariffBillingCopyWith<$Res> {
-  _$TariffBillingCopyWithImpl(this._value, this._then);
+class _$GetTariffByIdResponseCopyWithImpl<$Res> implements $GetTariffByIdResponseCopyWith<$Res> {
+  _$GetTariffByIdResponseCopyWithImpl(this._value, this._then);
 
-  final TariffBilling _value;
+  final GetTariffByIdResponse _value;
   // ignore: unused_field
-  final $Res Function(TariffBilling) _then;
+  final $Res Function(GetTariffByIdResponse) _then;
 
   @override
   $Res call({
@@ -257,9 +257,9 @@ class _$TariffBillingCopyWithImpl<$Res> implements $TariffBillingCopyWith<$Res> 
 }
 
 /// @nodoc
-abstract class _$TariffBillingCopyWith<$Res> implements $TariffBillingCopyWith<$Res> {
-  factory _$TariffBillingCopyWith(_TariffBilling value, $Res Function(_TariffBilling) then) =
-      __$TariffBillingCopyWithImpl<$Res>;
+abstract class _$GetTariffByIdResponseCopyWith<$Res> implements $GetTariffByIdResponseCopyWith<$Res> {
+  factory _$GetTariffByIdResponseCopyWith(_GetTariffByIdResponse value, $Res Function(_GetTariffByIdResponse) then) =
+      __$GetTariffByIdResponseCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'tariff_id') int tariffId,
@@ -281,13 +281,13 @@ abstract class _$TariffBillingCopyWith<$Res> implements $TariffBillingCopyWith<$
 }
 
 /// @nodoc
-class __$TariffBillingCopyWithImpl<$Res> extends _$TariffBillingCopyWithImpl<$Res>
-    implements _$TariffBillingCopyWith<$Res> {
-  __$TariffBillingCopyWithImpl(_TariffBilling _value, $Res Function(_TariffBilling) _then)
-      : super(_value, (v) => _then(v as _TariffBilling));
+class __$GetTariffByIdResponseCopyWithImpl<$Res> extends _$GetTariffByIdResponseCopyWithImpl<$Res>
+    implements _$GetTariffByIdResponseCopyWith<$Res> {
+  __$GetTariffByIdResponseCopyWithImpl(_GetTariffByIdResponse _value, $Res Function(_GetTariffByIdResponse) _then)
+      : super(_value, (v) => _then(v as _GetTariffByIdResponse));
 
   @override
-  _TariffBilling get _value => super._value as _TariffBilling;
+  _GetTariffByIdResponse get _value => super._value as _GetTariffByIdResponse;
 
   @override
   $Res call({
@@ -308,7 +308,7 @@ class __$TariffBillingCopyWithImpl<$Res> extends _$TariffBillingCopyWithImpl<$Re
     Object? closeDate = freezed,
     Object? status = freezed,
   }) {
-    return _then(_TariffBilling(
+    return _then(_GetTariffByIdResponse(
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
@@ -379,8 +379,8 @@ class __$TariffBillingCopyWithImpl<$Res> extends _$TariffBillingCopyWithImpl<$Re
 
 /// @nodoc
 @JsonSerializable()
-class _$_TariffBilling implements _TariffBilling {
-  const _$_TariffBilling(
+class _$_GetTariffByIdResponse implements _GetTariffByIdResponse {
+  const _$_GetTariffByIdResponse(
       {@JsonKey(name: 'tariff_id') required this.tariffId,
       @JsonKey(name: 'tariff_name') this.tariffName,
       @JsonKey(name: 'free_workplace') this.freeWorkplace,
@@ -398,7 +398,7 @@ class _$_TariffBilling implements _TariffBilling {
       @JsonKey(name: 'close_date') this.closeDate,
       @JsonKey(name: 'status') this.status});
 
-  factory _$_TariffBilling.fromJson(Map<String, dynamic> json) => _$$_TariffBillingFromJson(json);
+  factory _$_GetTariffByIdResponse.fromJson(Map<String, dynamic> json) => _$$_GetTariffByIdResponseFromJson(json);
 
   @override
 
@@ -483,13 +483,13 @@ class _$_TariffBilling implements _TariffBilling {
 
   @override
   String toString() {
-    return 'TariffBilling(tariffId: $tariffId, tariffName: $tariffName, freeWorkplace: $freeWorkplace, diskSpaceQuota: $diskSpaceQuota, isBillingFree: $isBillingFree, isBillingFullTime: $isBillingFullTime, periodDays: $periodDays, costWorkplace: $costWorkplace, currency: $currency, isRecalcChangeTariff: $isRecalcChangeTariff, maxVoiceUser: $maxVoiceUser, maxVideoUser: $maxVideoUser, isDefaultTariff: $isDefaultTariff, openDate: $openDate, closeDate: $closeDate, status: $status)';
+    return 'GetTariffByIdResponse(tariffId: $tariffId, tariffName: $tariffName, freeWorkplace: $freeWorkplace, diskSpaceQuota: $diskSpaceQuota, isBillingFree: $isBillingFree, isBillingFullTime: $isBillingFullTime, periodDays: $periodDays, costWorkplace: $costWorkplace, currency: $currency, isRecalcChangeTariff: $isRecalcChangeTariff, maxVoiceUser: $maxVoiceUser, maxVideoUser: $maxVideoUser, isDefaultTariff: $isDefaultTariff, openDate: $openDate, closeDate: $closeDate, status: $status)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _TariffBilling &&
+        (other is _GetTariffByIdResponse &&
             (identical(other.tariffId, tariffId) || const DeepCollectionEquality().equals(other.tariffId, tariffId)) &&
             (identical(other.tariffName, tariffName) ||
                 const DeepCollectionEquality().equals(other.tariffName, tariffName)) &&
@@ -542,17 +542,17 @@ class _$_TariffBilling implements _TariffBilling {
 
   @JsonKey(ignore: true)
   @override
-  _$TariffBillingCopyWith<_TariffBilling> get copyWith =>
-      __$TariffBillingCopyWithImpl<_TariffBilling>(this, _$identity);
+  _$GetTariffByIdResponseCopyWith<_GetTariffByIdResponse> get copyWith =>
+      __$GetTariffByIdResponseCopyWithImpl<_GetTariffByIdResponse>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_TariffBillingToJson(this);
+    return _$$_GetTariffByIdResponseToJson(this);
   }
 }
 
-abstract class _TariffBilling implements TariffBilling {
-  const factory _TariffBilling(
+abstract class _GetTariffByIdResponse implements GetTariffByIdResponse {
+  const factory _GetTariffByIdResponse(
       {@JsonKey(name: 'tariff_id') required int tariffId,
       @JsonKey(name: 'tariff_name') String? tariffName,
       @JsonKey(name: 'free_workplace') int? freeWorkplace,
@@ -568,9 +568,9 @@ abstract class _TariffBilling implements TariffBilling {
       @JsonKey(name: 'default_tariff') bool? isDefaultTariff,
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'close_date') String? closeDate,
-      @JsonKey(name: 'status') String? status}) = _$_TariffBilling;
+      @JsonKey(name: 'status') String? status}) = _$_GetTariffByIdResponse;
 
-  factory _TariffBilling.fromJson(Map<String, dynamic> json) = _$_TariffBilling.fromJson;
+  factory _GetTariffByIdResponse.fromJson(Map<String, dynamic> json) = _$_GetTariffByIdResponse.fromJson;
 
   @override
 
@@ -654,5 +654,5 @@ abstract class _TariffBilling implements TariffBilling {
   String? get status => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TariffBillingCopyWith<_TariffBilling> get copyWith => throw _privateConstructorUsedError;
+  _$GetTariffByIdResponseCopyWith<_GetTariffByIdResponse> get copyWith => throw _privateConstructorUsedError;
 }
