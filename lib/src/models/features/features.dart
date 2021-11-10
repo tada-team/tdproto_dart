@@ -218,8 +218,14 @@ class Features with _$Features {
     /// Firebase settings for web-push notifications.
     @JsonKey(name: 'firebase_storage_bucket') required String firebaseStorageBucket,
 
-    /// Calls version. 0 = disabled, 1 = audio only, 2 = audio+video.
+    /// Calls version. 0 = disabled, 1 = audio only, 2 = audio+video deprecated: use CallsAudioEnabled and CallsVideoEnabled.
     @JsonKey(name: 'calls_version') required int callsVersion,
+
+    /// CallsAudioEnabled enabled or disabled audio calls.
+    @JsonKey(name: 'calls_audio_enabled') required bool callsAudioEnabled,
+
+    /// CallsVideoEnabled enabled or disabled video calls.
+    @JsonKey(name: 'calls_video_enabled') required bool callsVideoEnabled,
 
     /// Calls functions enabled for mobile applications.
     @JsonKey(name: 'mobile_calls') required bool mobileCalls,

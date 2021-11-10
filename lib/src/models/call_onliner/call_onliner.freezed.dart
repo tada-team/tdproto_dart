@@ -27,7 +27,7 @@ class _$CallOnlinerTearOff {
       @JsonKey(name: 'role') required String role,
       @JsonKey(name: 'icon') required String icon,
       @JsonKey(name: 'muted') required bool muted,
-      @JsonKey(name: 'enabled_video') bool? enabledVideo = false,
+      @JsonKey(name: 'enabled_video') required bool enabledVideo,
       @JsonKey(name: 'devices') required List<CallDevice> devices}) {
     return _CallOnliner(
       jid: jid,
@@ -72,7 +72,7 @@ mixin _$CallOnliner {
 
   /// Video state.
   @JsonKey(name: 'enabled_video')
-  bool? get enabledVideo => throw _privateConstructorUsedError;
+  bool get enabledVideo => throw _privateConstructorUsedError;
 
   /// Member devices, strictly one for now.
   @JsonKey(name: 'devices')
@@ -92,7 +92,7 @@ abstract class $CallOnlinerCopyWith<$Res> {
       @JsonKey(name: 'role') String role,
       @JsonKey(name: 'icon') String icon,
       @JsonKey(name: 'muted') bool muted,
-      @JsonKey(name: 'enabled_video') bool? enabledVideo,
+      @JsonKey(name: 'enabled_video') bool enabledVideo,
       @JsonKey(name: 'devices') List<CallDevice> devices});
 }
 
@@ -138,7 +138,7 @@ class _$CallOnlinerCopyWithImpl<$Res> implements $CallOnlinerCopyWith<$Res> {
       enabledVideo: enabledVideo == freezed
           ? _value.enabledVideo
           : enabledVideo // ignore: cast_nullable_to_non_nullable
-              as bool?,
+              as bool,
       devices: devices == freezed
           ? _value.devices
           : devices // ignore: cast_nullable_to_non_nullable
@@ -158,7 +158,7 @@ abstract class _$CallOnlinerCopyWith<$Res> implements $CallOnlinerCopyWith<$Res>
       @JsonKey(name: 'role') String role,
       @JsonKey(name: 'icon') String icon,
       @JsonKey(name: 'muted') bool muted,
-      @JsonKey(name: 'enabled_video') bool? enabledVideo,
+      @JsonKey(name: 'enabled_video') bool enabledVideo,
       @JsonKey(name: 'devices') List<CallDevice> devices});
 }
 
@@ -204,7 +204,7 @@ class __$CallOnlinerCopyWithImpl<$Res> extends _$CallOnlinerCopyWithImpl<$Res> i
       enabledVideo: enabledVideo == freezed
           ? _value.enabledVideo
           : enabledVideo // ignore: cast_nullable_to_non_nullable
-              as bool?,
+              as bool,
       devices: devices == freezed
           ? _value.devices
           : devices // ignore: cast_nullable_to_non_nullable
@@ -222,7 +222,7 @@ class _$_CallOnliner implements _CallOnliner {
       @JsonKey(name: 'role') required this.role,
       @JsonKey(name: 'icon') required this.icon,
       @JsonKey(name: 'muted') required this.muted,
-      @JsonKey(name: 'enabled_video') this.enabledVideo = false,
+      @JsonKey(name: 'enabled_video') required this.enabledVideo,
       @JsonKey(name: 'devices') required this.devices});
 
   factory _$_CallOnliner.fromJson(Map<String, dynamic> json) => _$$_CallOnlinerFromJson(json);
@@ -256,7 +256,7 @@ class _$_CallOnliner implements _CallOnliner {
 
   /// Video state.
   @JsonKey(name: 'enabled_video')
-  final bool? enabledVideo;
+  final bool enabledVideo;
   @override
 
   /// Member devices, strictly one for now.
@@ -311,7 +311,7 @@ abstract class _CallOnliner implements CallOnliner {
       @JsonKey(name: 'role') required String role,
       @JsonKey(name: 'icon') required String icon,
       @JsonKey(name: 'muted') required bool muted,
-      @JsonKey(name: 'enabled_video') bool? enabledVideo,
+      @JsonKey(name: 'enabled_video') required bool enabledVideo,
       @JsonKey(name: 'devices') required List<CallDevice> devices}) = _$_CallOnliner;
 
   factory _CallOnliner.fromJson(Map<String, dynamic> json) = _$_CallOnliner.fromJson;
@@ -345,7 +345,7 @@ abstract class _CallOnliner implements CallOnliner {
 
   /// Video state.
   @JsonKey(name: 'enabled_video')
-  bool? get enabledVideo => throw _privateConstructorUsedError;
+  bool get enabledVideo => throw _privateConstructorUsedError;
   @override
 
   /// Member devices, strictly one for now.

@@ -12,7 +12,7 @@ _$_CallOnliner _$$_CallOnlinerFromJson(Map<String, dynamic> json) => _$_CallOnli
       role: json['role'] as String,
       icon: json['icon'] as String,
       muted: json['muted'] as bool,
-      enabledVideo: json['enabled_video'] as bool? ?? false,
+      enabledVideo: json['enabled_video'] as bool,
       devices: (json['devices'] as List<dynamic>).map((e) => CallDevice.fromJson(e as Map<String, dynamic>)).toList(),
     );
 

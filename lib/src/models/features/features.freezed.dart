@@ -93,6 +93,8 @@ class _$FeaturesTearOff {
       @JsonKey(name: 'firebase_project_id') required String firebaseProjectId,
       @JsonKey(name: 'firebase_storage_bucket') required String firebaseStorageBucket,
       @JsonKey(name: 'calls_version') required int callsVersion,
+      @JsonKey(name: 'calls_audio_enabled') required bool callsAudioEnabled,
+      @JsonKey(name: 'calls_video_enabled') required bool callsVideoEnabled,
       @JsonKey(name: 'mobile_calls') required bool mobileCalls,
       @JsonKey(name: 'calls_record') required bool callsRecord,
       @JsonKey(name: 'only_one_device_per_call') bool? onlyOneDevicePerCall = false,
@@ -189,6 +191,8 @@ class _$FeaturesTearOff {
       firebaseProjectId: firebaseProjectId,
       firebaseStorageBucket: firebaseStorageBucket,
       callsVersion: callsVersion,
+      callsAudioEnabled: callsAudioEnabled,
+      callsVideoEnabled: callsVideoEnabled,
       mobileCalls: mobileCalls,
       callsRecord: callsRecord,
       onlyOneDevicePerCall: onlyOneDevicePerCall,
@@ -506,9 +510,17 @@ mixin _$Features {
   @JsonKey(name: 'firebase_storage_bucket')
   String get firebaseStorageBucket => throw _privateConstructorUsedError;
 
-  /// Calls version. 0 = disabled, 1 = audio only, 2 = audio+video.
+  /// Calls version. 0 = disabled, 1 = audio only, 2 = audio+video deprecated: use CallsAudioEnabled and CallsVideoEnabled.
   @JsonKey(name: 'calls_version')
   int get callsVersion => throw _privateConstructorUsedError;
+
+  /// CallsAudioEnabled enabled or disabled audio calls.
+  @JsonKey(name: 'calls_audio_enabled')
+  bool get callsAudioEnabled => throw _privateConstructorUsedError;
+
+  /// CallsVideoEnabled enabled or disabled video calls.
+  @JsonKey(name: 'calls_video_enabled')
+  bool get callsVideoEnabled => throw _privateConstructorUsedError;
 
   /// Calls functions enabled for mobile applications.
   @JsonKey(name: 'mobile_calls')
@@ -694,6 +706,8 @@ abstract class $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'firebase_project_id') String firebaseProjectId,
       @JsonKey(name: 'firebase_storage_bucket') String firebaseStorageBucket,
       @JsonKey(name: 'calls_version') int callsVersion,
+      @JsonKey(name: 'calls_audio_enabled') bool callsAudioEnabled,
+      @JsonKey(name: 'calls_video_enabled') bool callsVideoEnabled,
       @JsonKey(name: 'mobile_calls') bool mobileCalls,
       @JsonKey(name: 'calls_record') bool callsRecord,
       @JsonKey(name: 'only_one_device_per_call') bool? onlyOneDevicePerCall,
@@ -804,6 +818,8 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     Object? firebaseProjectId = freezed,
     Object? firebaseStorageBucket = freezed,
     Object? callsVersion = freezed,
+    Object? callsAudioEnabled = freezed,
+    Object? callsVideoEnabled = freezed,
     Object? mobileCalls = freezed,
     Object? callsRecord = freezed,
     Object? onlyOneDevicePerCall = freezed,
@@ -1114,6 +1130,14 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
           ? _value.callsVersion
           : callsVersion // ignore: cast_nullable_to_non_nullable
               as int,
+      callsAudioEnabled: callsAudioEnabled == freezed
+          ? _value.callsAudioEnabled
+          : callsAudioEnabled // ignore: cast_nullable_to_non_nullable
+              as bool,
+      callsVideoEnabled: callsVideoEnabled == freezed
+          ? _value.callsVideoEnabled
+          : callsVideoEnabled // ignore: cast_nullable_to_non_nullable
+              as bool,
       mobileCalls: mobileCalls == freezed
           ? _value.mobileCalls
           : mobileCalls // ignore: cast_nullable_to_non_nullable
@@ -1308,6 +1332,8 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'firebase_project_id') String firebaseProjectId,
       @JsonKey(name: 'firebase_storage_bucket') String firebaseStorageBucket,
       @JsonKey(name: 'calls_version') int callsVersion,
+      @JsonKey(name: 'calls_audio_enabled') bool callsAudioEnabled,
+      @JsonKey(name: 'calls_video_enabled') bool callsVideoEnabled,
       @JsonKey(name: 'mobile_calls') bool mobileCalls,
       @JsonKey(name: 'calls_record') bool callsRecord,
       @JsonKey(name: 'only_one_device_per_call') bool? onlyOneDevicePerCall,
@@ -1420,6 +1446,8 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
     Object? firebaseProjectId = freezed,
     Object? firebaseStorageBucket = freezed,
     Object? callsVersion = freezed,
+    Object? callsAudioEnabled = freezed,
+    Object? callsVideoEnabled = freezed,
     Object? mobileCalls = freezed,
     Object? callsRecord = freezed,
     Object? onlyOneDevicePerCall = freezed,
@@ -1730,6 +1758,14 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
           ? _value.callsVersion
           : callsVersion // ignore: cast_nullable_to_non_nullable
               as int,
+      callsAudioEnabled: callsAudioEnabled == freezed
+          ? _value.callsAudioEnabled
+          : callsAudioEnabled // ignore: cast_nullable_to_non_nullable
+              as bool,
+      callsVideoEnabled: callsVideoEnabled == freezed
+          ? _value.callsVideoEnabled
+          : callsVideoEnabled // ignore: cast_nullable_to_non_nullable
+              as bool,
       mobileCalls: mobileCalls == freezed
           ? _value.mobileCalls
           : mobileCalls // ignore: cast_nullable_to_non_nullable
@@ -1905,6 +1941,8 @@ class _$_Features implements _Features {
       @JsonKey(name: 'firebase_project_id') required this.firebaseProjectId,
       @JsonKey(name: 'firebase_storage_bucket') required this.firebaseStorageBucket,
       @JsonKey(name: 'calls_version') required this.callsVersion,
+      @JsonKey(name: 'calls_audio_enabled') required this.callsAudioEnabled,
+      @JsonKey(name: 'calls_video_enabled') required this.callsVideoEnabled,
       @JsonKey(name: 'mobile_calls') required this.mobileCalls,
       @JsonKey(name: 'calls_record') required this.callsRecord,
       @JsonKey(name: 'only_one_device_per_call') this.onlyOneDevicePerCall = false,
@@ -2284,9 +2322,19 @@ class _$_Features implements _Features {
   final String firebaseStorageBucket;
   @override
 
-  /// Calls version. 0 = disabled, 1 = audio only, 2 = audio+video.
+  /// Calls version. 0 = disabled, 1 = audio only, 2 = audio+video deprecated: use CallsAudioEnabled and CallsVideoEnabled.
   @JsonKey(name: 'calls_version')
   final int callsVersion;
+  @override
+
+  /// CallsAudioEnabled enabled or disabled audio calls.
+  @JsonKey(name: 'calls_audio_enabled')
+  final bool callsAudioEnabled;
+  @override
+
+  /// CallsVideoEnabled enabled or disabled video calls.
+  @JsonKey(name: 'calls_video_enabled')
+  final bool callsVideoEnabled;
   @override
 
   /// Calls functions enabled for mobile applications.
@@ -2418,7 +2466,7 @@ class _$_Features implements _Features {
 
   @override
   String toString() {
-    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, authByNTLM: $authByNTLM, reCaptchaEnabled: $reCaptchaEnabled, reCaptchaWebKeyV3: $reCaptchaWebKeyV3, reCaptchaWebKeyV2: $reCaptchaWebKeyV2, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority)';
+    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, authByNTLM: $authByNTLM, reCaptchaEnabled: $reCaptchaEnabled, reCaptchaWebKeyV3: $reCaptchaWebKeyV3, reCaptchaWebKeyV2: $reCaptchaWebKeyV2, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, callsAudioEnabled: $callsAudioEnabled, callsVideoEnabled: $callsVideoEnabled, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority)';
   }
 
   @override
@@ -2540,6 +2588,8 @@ class _$_Features implements _Features {
             (identical(other.firebaseProjectId, firebaseProjectId) || const DeepCollectionEquality().equals(other.firebaseProjectId, firebaseProjectId)) &&
             (identical(other.firebaseStorageBucket, firebaseStorageBucket) || const DeepCollectionEquality().equals(other.firebaseStorageBucket, firebaseStorageBucket)) &&
             (identical(other.callsVersion, callsVersion) || const DeepCollectionEquality().equals(other.callsVersion, callsVersion)) &&
+            (identical(other.callsAudioEnabled, callsAudioEnabled) || const DeepCollectionEquality().equals(other.callsAudioEnabled, callsAudioEnabled)) &&
+            (identical(other.callsVideoEnabled, callsVideoEnabled) || const DeepCollectionEquality().equals(other.callsVideoEnabled, callsVideoEnabled)) &&
             (identical(other.mobileCalls, mobileCalls) || const DeepCollectionEquality().equals(other.mobileCalls, mobileCalls)) &&
             (identical(other.callsRecord, callsRecord) || const DeepCollectionEquality().equals(other.callsRecord, callsRecord)) &&
             (identical(other.onlyOneDevicePerCall, onlyOneDevicePerCall) || const DeepCollectionEquality().equals(other.onlyOneDevicePerCall, onlyOneDevicePerCall)) &&
@@ -2640,6 +2690,8 @@ class _$_Features implements _Features {
       const DeepCollectionEquality().hash(firebaseProjectId) ^
       const DeepCollectionEquality().hash(firebaseStorageBucket) ^
       const DeepCollectionEquality().hash(callsVersion) ^
+      const DeepCollectionEquality().hash(callsAudioEnabled) ^
+      const DeepCollectionEquality().hash(callsVideoEnabled) ^
       const DeepCollectionEquality().hash(mobileCalls) ^
       const DeepCollectionEquality().hash(callsRecord) ^
       const DeepCollectionEquality().hash(onlyOneDevicePerCall) ^
@@ -2748,6 +2800,8 @@ abstract class _Features implements Features {
       @JsonKey(name: 'firebase_project_id') required String firebaseProjectId,
       @JsonKey(name: 'firebase_storage_bucket') required String firebaseStorageBucket,
       @JsonKey(name: 'calls_version') required int callsVersion,
+      @JsonKey(name: 'calls_audio_enabled') required bool callsAudioEnabled,
+      @JsonKey(name: 'calls_video_enabled') required bool callsVideoEnabled,
       @JsonKey(name: 'mobile_calls') required bool mobileCalls,
       @JsonKey(name: 'calls_record') required bool callsRecord,
       @JsonKey(name: 'only_one_device_per_call') bool? onlyOneDevicePerCall,
@@ -3127,9 +3181,19 @@ abstract class _Features implements Features {
   String get firebaseStorageBucket => throw _privateConstructorUsedError;
   @override
 
-  /// Calls version. 0 = disabled, 1 = audio only, 2 = audio+video.
+  /// Calls version. 0 = disabled, 1 = audio only, 2 = audio+video deprecated: use CallsAudioEnabled and CallsVideoEnabled.
   @JsonKey(name: 'calls_version')
   int get callsVersion => throw _privateConstructorUsedError;
+  @override
+
+  /// CallsAudioEnabled enabled or disabled audio calls.
+  @JsonKey(name: 'calls_audio_enabled')
+  bool get callsAudioEnabled => throw _privateConstructorUsedError;
+  @override
+
+  /// CallsVideoEnabled enabled or disabled video calls.
+  @JsonKey(name: 'calls_video_enabled')
+  bool get callsVideoEnabled => throw _privateConstructorUsedError;
   @override
 
   /// Calls functions enabled for mobile applications.

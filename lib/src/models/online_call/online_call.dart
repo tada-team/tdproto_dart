@@ -21,7 +21,7 @@ class OnlineCall with _$OnlineCall {
     @JsonKey(name: 'online_count') int? onlineCount,
 
     /// CallType is a type of call("audio" - audio room, "video" - video room).
-    @JsonKey(name: 'call_type') String? callType,
+    @JsonKey(name: 'call_type') required String callType,
   }) = _OnlineCall;
 
   factory OnlineCall.fromJson(Map<String, dynamic> json) => _$OnlineCallFromJson(json);

@@ -31,7 +31,7 @@ class _$ServerCallBuzzParamsTearOff {
       @JsonKey(name: 'uid') required String uid,
       @JsonKey(name: 'buzz_timeout') required int buzzTimeout,
       @Deprecated('Deprecated.') @JsonKey(name: 'team') required String team,
-      @JsonKey(name: 'call_type') String? callType}) {
+      @JsonKey(name: 'call_type') required String callType}) {
     return _ServerCallBuzzParams(
       jid: jid,
       icons: icons,
@@ -95,7 +95,7 @@ mixin _$ServerCallBuzzParams {
 
   /// CallType is a type of call("audio" - audio room, "video" - video room).
   @JsonKey(name: 'call_type')
-  String? get callType => throw _privateConstructorUsedError;
+  String get callType => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -116,7 +116,7 @@ abstract class $ServerCallBuzzParamsCopyWith<$Res> {
       @JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'buzz_timeout') int buzzTimeout,
       @Deprecated('Deprecated.') @JsonKey(name: 'team') String team,
-      @JsonKey(name: 'call_type') String? callType});
+      @JsonKey(name: 'call_type') String callType});
 
   $IconDataCopyWith<$Res> get icons;
   $TeamShortCopyWith<$Res> get teamShort;
@@ -185,7 +185,7 @@ class _$ServerCallBuzzParamsCopyWithImpl<$Res> implements $ServerCallBuzzParamsC
       callType: callType == freezed
           ? _value.callType
           : callType // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
     ));
   }
 
@@ -233,7 +233,7 @@ abstract class _$ServerCallBuzzParamsCopyWith<$Res> implements $ServerCallBuzzPa
       @JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'buzz_timeout') int buzzTimeout,
       @Deprecated('Deprecated.') @JsonKey(name: 'team') String team,
-      @JsonKey(name: 'call_type') String? callType});
+      @JsonKey(name: 'call_type') String callType});
 
   @override
   $IconDataCopyWith<$Res> get icons;
@@ -307,7 +307,7 @@ class __$ServerCallBuzzParamsCopyWithImpl<$Res> extends _$ServerCallBuzzParamsCo
       callType: callType == freezed
           ? _value.callType
           : callType // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
     ));
   }
 }
@@ -325,7 +325,7 @@ class _$_ServerCallBuzzParams implements _ServerCallBuzzParams {
       @JsonKey(name: 'uid') required this.uid,
       @JsonKey(name: 'buzz_timeout') required this.buzzTimeout,
       @Deprecated('Deprecated.') @JsonKey(name: 'team') required this.team,
-      @JsonKey(name: 'call_type') this.callType});
+      @JsonKey(name: 'call_type') required this.callType});
 
   factory _$_ServerCallBuzzParams.fromJson(Map<String, dynamic> json) => _$$_ServerCallBuzzParamsFromJson(json);
 
@@ -379,7 +379,7 @@ class _$_ServerCallBuzzParams implements _ServerCallBuzzParams {
 
   /// CallType is a type of call("audio" - audio room, "video" - video room).
   @JsonKey(name: 'call_type')
-  final String? callType;
+  final String callType;
 
   @override
   String toString() {
@@ -443,7 +443,7 @@ abstract class _ServerCallBuzzParams implements ServerCallBuzzParams {
       @JsonKey(name: 'uid') required String uid,
       @JsonKey(name: 'buzz_timeout') required int buzzTimeout,
       @Deprecated('Deprecated.') @JsonKey(name: 'team') required String team,
-      @JsonKey(name: 'call_type') String? callType}) = _$_ServerCallBuzzParams;
+      @JsonKey(name: 'call_type') required String callType}) = _$_ServerCallBuzzParams;
 
   factory _ServerCallBuzzParams.fromJson(Map<String, dynamic> json) = _$_ServerCallBuzzParams.fromJson;
 
@@ -497,7 +497,7 @@ abstract class _ServerCallBuzzParams implements ServerCallBuzzParams {
 
   /// CallType is a type of call("audio" - audio room, "video" - video room).
   @JsonKey(name: 'call_type')
-  String? get callType => throw _privateConstructorUsedError;
+  String get callType => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ServerCallBuzzParamsCopyWith<_ServerCallBuzzParams> get copyWith => throw _privateConstructorUsedError;

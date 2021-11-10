@@ -24,7 +24,7 @@ class CallOnliner with _$CallOnliner {
     @JsonKey(name: 'muted') required bool muted,
 
     /// Video state.
-    @Default(false) @JsonKey(name: 'enabled_video') bool? enabledVideo,
+    @JsonKey(name: 'enabled_video') required bool enabledVideo,
 
     /// Member devices, strictly one for now.
     @JsonKey(name: 'devices') required List<CallDevice> devices,

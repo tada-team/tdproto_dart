@@ -26,7 +26,7 @@ class _$OnlineCallTearOff {
       @JsonKey(name: 'uid') required String uid,
       @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
       @JsonKey(name: 'online_count') int? onlineCount,
-      @JsonKey(name: 'call_type') String? callType}) {
+      @JsonKey(name: 'call_type') required String callType}) {
     return _OnlineCall(
       jid: jid,
       uid: uid,
@@ -65,7 +65,7 @@ mixin _$OnlineCall {
 
   /// CallType is a type of call("audio" - audio room, "video" - video room).
   @JsonKey(name: 'call_type')
-  String? get callType => throw _privateConstructorUsedError;
+  String get callType => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -80,7 +80,7 @@ abstract class $OnlineCallCopyWith<$Res> {
       @JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
       @JsonKey(name: 'online_count') int? onlineCount,
-      @JsonKey(name: 'call_type') String? callType});
+      @JsonKey(name: 'call_type') String callType});
 }
 
 /// @nodoc
@@ -119,7 +119,7 @@ class _$OnlineCallCopyWithImpl<$Res> implements $OnlineCallCopyWith<$Res> {
       callType: callType == freezed
           ? _value.callType
           : callType // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
     ));
   }
 }
@@ -133,7 +133,7 @@ abstract class _$OnlineCallCopyWith<$Res> implements $OnlineCallCopyWith<$Res> {
       @JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
       @JsonKey(name: 'online_count') int? onlineCount,
-      @JsonKey(name: 'call_type') String? callType});
+      @JsonKey(name: 'call_type') String callType});
 }
 
 /// @nodoc
@@ -172,7 +172,7 @@ class __$OnlineCallCopyWithImpl<$Res> extends _$OnlineCallCopyWithImpl<$Res> imp
       callType: callType == freezed
           ? _value.callType
           : callType // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
     ));
   }
 }
@@ -185,7 +185,7 @@ class _$_OnlineCall implements _OnlineCall {
       @JsonKey(name: 'uid') required this.uid,
       @JsonKey(name: 'start') @DateTimeConverter() this.start,
       @JsonKey(name: 'online_count') this.onlineCount,
-      @JsonKey(name: 'call_type') this.callType});
+      @JsonKey(name: 'call_type') required this.callType});
 
   factory _$_OnlineCall.fromJson(Map<String, dynamic> json) => _$$_OnlineCallFromJson(json);
 
@@ -214,7 +214,7 @@ class _$_OnlineCall implements _OnlineCall {
 
   /// CallType is a type of call("audio" - audio room, "video" - video room).
   @JsonKey(name: 'call_type')
-  final String? callType;
+  final String callType;
 
   @override
   String toString() {
@@ -258,7 +258,7 @@ abstract class _OnlineCall implements OnlineCall {
       @JsonKey(name: 'uid') required String uid,
       @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
       @JsonKey(name: 'online_count') int? onlineCount,
-      @JsonKey(name: 'call_type') String? callType}) = _$_OnlineCall;
+      @JsonKey(name: 'call_type') required String callType}) = _$_OnlineCall;
 
   factory _OnlineCall.fromJson(Map<String, dynamic> json) = _$_OnlineCall.fromJson;
 
@@ -287,7 +287,7 @@ abstract class _OnlineCall implements OnlineCall {
 
   /// CallType is a type of call("audio" - audio room, "video" - video room).
   @JsonKey(name: 'call_type')
-  String? get callType => throw _privateConstructorUsedError;
+  String get callType => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$OnlineCallCopyWith<_OnlineCall> get copyWith => throw _privateConstructorUsedError;
