@@ -9,7 +9,7 @@ part 'set_tariff_as_default_request.g.dart';
 class SetTariffAsDefaultRequest with _$SetTariffAsDefaultRequest {
   const factory SetTariffAsDefaultRequest({
     /// .
-    @JsonKey(name: 'tariff_id') required int tariffId,
+    @JsonKey(name: 'tariff_id') int? tariffId,
   }) = _SetTariffAsDefaultRequest;
 
   factory SetTariffAsDefaultRequest.fromJson(Map<String, dynamic> json) => _$SetTariffAsDefaultRequestFromJson(json);

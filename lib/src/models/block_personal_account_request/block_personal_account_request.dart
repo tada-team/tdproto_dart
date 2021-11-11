@@ -9,7 +9,7 @@ part 'block_personal_account_request.g.dart';
 class BlockPersonalAccountRequest with _$BlockPersonalAccountRequest {
   const factory BlockPersonalAccountRequest({
     /// .
-    @JsonKey(name: 'personal_account_id') required int personalAccountId,
+    @JsonKey(name: 'personal_account_id') int? personalAccountId,
   }) = _BlockPersonalAccountRequest;
 
   factory BlockPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>

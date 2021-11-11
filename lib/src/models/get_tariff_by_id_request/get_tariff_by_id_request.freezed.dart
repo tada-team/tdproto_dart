@@ -21,7 +21,7 @@ GetTariffByIdRequest _$GetTariffByIdRequestFromJson(Map<String, dynamic> json) {
 class _$GetTariffByIdRequestTearOff {
   const _$GetTariffByIdRequestTearOff();
 
-  _GetTariffByIdRequest call({@JsonKey(name: 'id') required int id}) {
+  _GetTariffByIdRequest call({@JsonKey(name: 'id') int? id}) {
     return _GetTariffByIdRequest(
       id: id,
     );
@@ -39,7 +39,7 @@ const $GetTariffByIdRequest = _$GetTariffByIdRequestTearOff();
 mixin _$GetTariffByIdRequest {
   /// .
   @JsonKey(name: 'id')
-  int get id => throw _privateConstructorUsedError;
+  int? get id => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -50,7 +50,7 @@ mixin _$GetTariffByIdRequest {
 abstract class $GetTariffByIdRequestCopyWith<$Res> {
   factory $GetTariffByIdRequestCopyWith(GetTariffByIdRequest value, $Res Function(GetTariffByIdRequest) then) =
       _$GetTariffByIdRequestCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'id') int id});
+  $Res call({@JsonKey(name: 'id') int? id});
 }
 
 /// @nodoc
@@ -69,7 +69,7 @@ class _$GetTariffByIdRequestCopyWithImpl<$Res> implements $GetTariffByIdRequestC
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -79,7 +79,7 @@ abstract class _$GetTariffByIdRequestCopyWith<$Res> implements $GetTariffByIdReq
   factory _$GetTariffByIdRequestCopyWith(_GetTariffByIdRequest value, $Res Function(_GetTariffByIdRequest) then) =
       __$GetTariffByIdRequestCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'id') int id});
+  $Res call({@JsonKey(name: 'id') int? id});
 }
 
 /// @nodoc
@@ -99,7 +99,7 @@ class __$GetTariffByIdRequestCopyWithImpl<$Res> extends _$GetTariffByIdRequestCo
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -107,7 +107,7 @@ class __$GetTariffByIdRequestCopyWithImpl<$Res> extends _$GetTariffByIdRequestCo
 /// @nodoc
 @JsonSerializable()
 class _$_GetTariffByIdRequest implements _GetTariffByIdRequest {
-  const _$_GetTariffByIdRequest({@JsonKey(name: 'id') required this.id});
+  const _$_GetTariffByIdRequest({@JsonKey(name: 'id') this.id});
 
   factory _$_GetTariffByIdRequest.fromJson(Map<String, dynamic> json) => _$$_GetTariffByIdRequestFromJson(json);
 
@@ -115,7 +115,7 @@ class _$_GetTariffByIdRequest implements _GetTariffByIdRequest {
 
   /// .
   @JsonKey(name: 'id')
-  final int id;
+  final int? id;
 
   @override
   String toString() {
@@ -144,7 +144,7 @@ class _$_GetTariffByIdRequest implements _GetTariffByIdRequest {
 }
 
 abstract class _GetTariffByIdRequest implements GetTariffByIdRequest {
-  const factory _GetTariffByIdRequest({@JsonKey(name: 'id') required int id}) = _$_GetTariffByIdRequest;
+  const factory _GetTariffByIdRequest({@JsonKey(name: 'id') int? id}) = _$_GetTariffByIdRequest;
 
   factory _GetTariffByIdRequest.fromJson(Map<String, dynamic> json) = _$_GetTariffByIdRequest.fromJson;
 
@@ -152,7 +152,7 @@ abstract class _GetTariffByIdRequest implements GetTariffByIdRequest {
 
   /// .
   @JsonKey(name: 'id')
-  int get id => throw _privateConstructorUsedError;
+  int? get id => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$GetTariffByIdRequestCopyWith<_GetTariffByIdRequest> get copyWith => throw _privateConstructorUsedError;

@@ -8,7 +8,9 @@ part of 'create_personal_account_response.dart';
 
 _$_CreatePersonalAccountResponse _$$_CreatePersonalAccountResponseFromJson(Map<String, dynamic> json) =>
     _$_CreatePersonalAccountResponse(
-      personalAccountId: json['personal_account_id'] as int,
+      personalAccountId: json['personal_account_id'] as int?,
+      fullName: json['full_name'] as String?,
+      phone: json['phone'] as String?,
       ownerUuid: json['owner_uuid'] as String,
       tariffId: json['tariff_id'] as int,
       tariffName: json['tariff_name'] as String,
@@ -26,6 +28,8 @@ _$_CreatePersonalAccountResponse _$$_CreatePersonalAccountResponseFromJson(Map<S
 Map<String, dynamic> _$$_CreatePersonalAccountResponseToJson(_$_CreatePersonalAccountResponse instance) =>
     <String, dynamic>{
       'personal_account_id': instance.personalAccountId,
+      'full_name': instance.fullName,
+      'phone': instance.phone,
       'owner_uuid': instance.ownerUuid,
       'tariff_id': instance.tariffId,
       'tariff_name': instance.tariffName,

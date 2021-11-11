@@ -9,7 +9,7 @@ part 'activate_personal_account_request.g.dart';
 class ActivatePersonalAccountRequest with _$ActivatePersonalAccountRequest {
   const factory ActivatePersonalAccountRequest({
     /// .
-    @JsonKey(name: 'personal_account_id') required int personalAccountId,
+    @JsonKey(name: 'personal_account_id') int? personalAccountId,
   }) = _ActivatePersonalAccountRequest;
 
   factory ActivatePersonalAccountRequest.fromJson(Map<String, dynamic> json) =>

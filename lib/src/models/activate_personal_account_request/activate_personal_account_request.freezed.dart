@@ -21,7 +21,7 @@ ActivatePersonalAccountRequest _$ActivatePersonalAccountRequestFromJson(Map<Stri
 class _$ActivatePersonalAccountRequestTearOff {
   const _$ActivatePersonalAccountRequestTearOff();
 
-  _ActivatePersonalAccountRequest call({@JsonKey(name: 'personal_account_id') required int personalAccountId}) {
+  _ActivatePersonalAccountRequest call({@JsonKey(name: 'personal_account_id') int? personalAccountId}) {
     return _ActivatePersonalAccountRequest(
       personalAccountId: personalAccountId,
     );
@@ -39,7 +39,7 @@ const $ActivatePersonalAccountRequest = _$ActivatePersonalAccountRequestTearOff(
 mixin _$ActivatePersonalAccountRequest {
   /// .
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  int? get personalAccountId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -52,7 +52,7 @@ abstract class $ActivatePersonalAccountRequestCopyWith<$Res> {
   factory $ActivatePersonalAccountRequestCopyWith(
           ActivatePersonalAccountRequest value, $Res Function(ActivatePersonalAccountRequest) then) =
       _$ActivatePersonalAccountRequestCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'personal_account_id') int personalAccountId});
+  $Res call({@JsonKey(name: 'personal_account_id') int? personalAccountId});
 }
 
 /// @nodoc
@@ -71,7 +71,7 @@ class _$ActivatePersonalAccountRequestCopyWithImpl<$Res> implements $ActivatePer
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -82,7 +82,7 @@ abstract class _$ActivatePersonalAccountRequestCopyWith<$Res> implements $Activa
           _ActivatePersonalAccountRequest value, $Res Function(_ActivatePersonalAccountRequest) then) =
       __$ActivatePersonalAccountRequestCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'personal_account_id') int personalAccountId});
+  $Res call({@JsonKey(name: 'personal_account_id') int? personalAccountId});
 }
 
 /// @nodoc
@@ -103,7 +103,7 @@ class __$ActivatePersonalAccountRequestCopyWithImpl<$Res> extends _$ActivatePers
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -111,7 +111,7 @@ class __$ActivatePersonalAccountRequestCopyWithImpl<$Res> extends _$ActivatePers
 /// @nodoc
 @JsonSerializable()
 class _$_ActivatePersonalAccountRequest implements _ActivatePersonalAccountRequest {
-  const _$_ActivatePersonalAccountRequest({@JsonKey(name: 'personal_account_id') required this.personalAccountId});
+  const _$_ActivatePersonalAccountRequest({@JsonKey(name: 'personal_account_id') this.personalAccountId});
 
   factory _$_ActivatePersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
       _$$_ActivatePersonalAccountRequestFromJson(json);
@@ -120,7 +120,7 @@ class _$_ActivatePersonalAccountRequest implements _ActivatePersonalAccountReque
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  final int personalAccountId;
+  final int? personalAccountId;
 
   @override
   String toString() {
@@ -150,8 +150,8 @@ class _$_ActivatePersonalAccountRequest implements _ActivatePersonalAccountReque
 }
 
 abstract class _ActivatePersonalAccountRequest implements ActivatePersonalAccountRequest {
-  const factory _ActivatePersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') required int personalAccountId}) = _$_ActivatePersonalAccountRequest;
+  const factory _ActivatePersonalAccountRequest({@JsonKey(name: 'personal_account_id') int? personalAccountId}) =
+      _$_ActivatePersonalAccountRequest;
 
   factory _ActivatePersonalAccountRequest.fromJson(Map<String, dynamic> json) =
       _$_ActivatePersonalAccountRequest.fromJson;
@@ -160,7 +160,7 @@ abstract class _ActivatePersonalAccountRequest implements ActivatePersonalAccoun
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  int? get personalAccountId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ActivatePersonalAccountRequestCopyWith<_ActivatePersonalAccountRequest> get copyWith =>

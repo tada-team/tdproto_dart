@@ -22,7 +22,7 @@ class _$CreateTariffRequestTearOff {
   const _$CreateTariffRequestTearOff();
 
   _CreateTariffRequest call(
-      {@JsonKey(name: 'tariff_id') required int tariffId,
+      {@JsonKey(name: 'tariff_id') int? tariffId,
       @JsonKey(name: 'tariff_name') String? tariffName,
       @JsonKey(name: 'free_workplace') int? freeWorkplace,
       @JsonKey(name: 'disk_space_quota') String? diskSpaceQuota,
@@ -70,7 +70,7 @@ const $CreateTariffRequest = _$CreateTariffRequestTearOff();
 mixin _$CreateTariffRequest {
   /// Tariff id.
   @JsonKey(name: 'tariff_id')
-  int get tariffId => throw _privateConstructorUsedError;
+  int? get tariffId => throw _privateConstructorUsedError;
 
   /// Name of tariff.
   @JsonKey(name: 'tariff_name')
@@ -142,7 +142,7 @@ abstract class $CreateTariffRequestCopyWith<$Res> {
   factory $CreateTariffRequestCopyWith(CreateTariffRequest value, $Res Function(CreateTariffRequest) then) =
       _$CreateTariffRequestCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'tariff_id') int tariffId,
+      {@JsonKey(name: 'tariff_id') int? tariffId,
       @JsonKey(name: 'tariff_name') String? tariffName,
       @JsonKey(name: 'free_workplace') int? freeWorkplace,
       @JsonKey(name: 'disk_space_quota') String? diskSpaceQuota,
@@ -191,7 +191,7 @@ class _$CreateTariffRequestCopyWithImpl<$Res> implements $CreateTariffRequestCop
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       tariffName: tariffName == freezed
           ? _value.tariffName
           : tariffName // ignore: cast_nullable_to_non_nullable
@@ -262,7 +262,7 @@ abstract class _$CreateTariffRequestCopyWith<$Res> implements $CreateTariffReque
       __$CreateTariffRequestCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'tariff_id') int tariffId,
+      {@JsonKey(name: 'tariff_id') int? tariffId,
       @JsonKey(name: 'tariff_name') String? tariffName,
       @JsonKey(name: 'free_workplace') int? freeWorkplace,
       @JsonKey(name: 'disk_space_quota') String? diskSpaceQuota,
@@ -312,7 +312,7 @@ class __$CreateTariffRequestCopyWithImpl<$Res> extends _$CreateTariffRequestCopy
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       tariffName: tariffName == freezed
           ? _value.tariffName
           : tariffName // ignore: cast_nullable_to_non_nullable
@@ -381,7 +381,7 @@ class __$CreateTariffRequestCopyWithImpl<$Res> extends _$CreateTariffRequestCopy
 @JsonSerializable()
 class _$_CreateTariffRequest implements _CreateTariffRequest {
   const _$_CreateTariffRequest(
-      {@JsonKey(name: 'tariff_id') required this.tariffId,
+      {@JsonKey(name: 'tariff_id') this.tariffId,
       @JsonKey(name: 'tariff_name') this.tariffName,
       @JsonKey(name: 'free_workplace') this.freeWorkplace,
       @JsonKey(name: 'disk_space_quota') this.diskSpaceQuota,
@@ -404,7 +404,7 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
 
   /// Tariff id.
   @JsonKey(name: 'tariff_id')
-  final int tariffId;
+  final int? tariffId;
   @override
 
   /// Name of tariff.
@@ -553,7 +553,7 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
 
 abstract class _CreateTariffRequest implements CreateTariffRequest {
   const factory _CreateTariffRequest(
-      {@JsonKey(name: 'tariff_id') required int tariffId,
+      {@JsonKey(name: 'tariff_id') int? tariffId,
       @JsonKey(name: 'tariff_name') String? tariffName,
       @JsonKey(name: 'free_workplace') int? freeWorkplace,
       @JsonKey(name: 'disk_space_quota') String? diskSpaceQuota,
@@ -576,7 +576,7 @@ abstract class _CreateTariffRequest implements CreateTariffRequest {
 
   /// Tariff id.
   @JsonKey(name: 'tariff_id')
-  int get tariffId => throw _privateConstructorUsedError;
+  int? get tariffId => throw _privateConstructorUsedError;
   @override
 
   /// Name of tariff.

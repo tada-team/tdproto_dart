@@ -22,9 +22,14 @@ class _$CreatePersonalAccountRequestTearOff {
   const _$CreatePersonalAccountRequestTearOff();
 
   _CreatePersonalAccountRequest call(
-      {@JsonKey(name: 'owner_uuid') required String ownerUuid, @JsonKey(name: 'team_uuid') required String teamUuid}) {
+      {@JsonKey(name: 'owner_uuid') required String ownerUuid,
+      @JsonKey(name: 'full_name') String? fullName,
+      @JsonKey(name: 'phone') String? phone,
+      @JsonKey(name: 'team_uuid') required String teamUuid}) {
     return _CreatePersonalAccountRequest(
       ownerUuid: ownerUuid,
+      fullName: fullName,
+      phone: phone,
       teamUuid: teamUuid,
     );
   }
@@ -44,6 +49,14 @@ mixin _$CreatePersonalAccountRequest {
   String get ownerUuid => throw _privateConstructorUsedError;
 
   /// .
+  @JsonKey(name: 'full_name')
+  String? get fullName => throw _privateConstructorUsedError;
+
+  /// .
+  @JsonKey(name: 'phone')
+  String? get phone => throw _privateConstructorUsedError;
+
+  /// .
   @JsonKey(name: 'team_uuid')
   String get teamUuid => throw _privateConstructorUsedError;
 
@@ -58,7 +71,11 @@ abstract class $CreatePersonalAccountRequestCopyWith<$Res> {
   factory $CreatePersonalAccountRequestCopyWith(
           CreatePersonalAccountRequest value, $Res Function(CreatePersonalAccountRequest) then) =
       _$CreatePersonalAccountRequestCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'owner_uuid') String ownerUuid, @JsonKey(name: 'team_uuid') String teamUuid});
+  $Res call(
+      {@JsonKey(name: 'owner_uuid') String ownerUuid,
+      @JsonKey(name: 'full_name') String? fullName,
+      @JsonKey(name: 'phone') String? phone,
+      @JsonKey(name: 'team_uuid') String teamUuid});
 }
 
 /// @nodoc
@@ -72,6 +89,8 @@ class _$CreatePersonalAccountRequestCopyWithImpl<$Res> implements $CreatePersona
   @override
   $Res call({
     Object? ownerUuid = freezed,
+    Object? fullName = freezed,
+    Object? phone = freezed,
     Object? teamUuid = freezed,
   }) {
     return _then(_value.copyWith(
@@ -79,6 +98,14 @@ class _$CreatePersonalAccountRequestCopyWithImpl<$Res> implements $CreatePersona
           ? _value.ownerUuid
           : ownerUuid // ignore: cast_nullable_to_non_nullable
               as String,
+      fullName: fullName == freezed
+          ? _value.fullName
+          : fullName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phone: phone == freezed
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
@@ -93,7 +120,11 @@ abstract class _$CreatePersonalAccountRequestCopyWith<$Res> implements $CreatePe
           _CreatePersonalAccountRequest value, $Res Function(_CreatePersonalAccountRequest) then) =
       __$CreatePersonalAccountRequestCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'owner_uuid') String ownerUuid, @JsonKey(name: 'team_uuid') String teamUuid});
+  $Res call(
+      {@JsonKey(name: 'owner_uuid') String ownerUuid,
+      @JsonKey(name: 'full_name') String? fullName,
+      @JsonKey(name: 'phone') String? phone,
+      @JsonKey(name: 'team_uuid') String teamUuid});
 }
 
 /// @nodoc
@@ -109,6 +140,8 @@ class __$CreatePersonalAccountRequestCopyWithImpl<$Res> extends _$CreatePersonal
   @override
   $Res call({
     Object? ownerUuid = freezed,
+    Object? fullName = freezed,
+    Object? phone = freezed,
     Object? teamUuid = freezed,
   }) {
     return _then(_CreatePersonalAccountRequest(
@@ -116,6 +149,14 @@ class __$CreatePersonalAccountRequestCopyWithImpl<$Res> extends _$CreatePersonal
           ? _value.ownerUuid
           : ownerUuid // ignore: cast_nullable_to_non_nullable
               as String,
+      fullName: fullName == freezed
+          ? _value.fullName
+          : fullName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phone: phone == freezed
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
@@ -128,7 +169,10 @@ class __$CreatePersonalAccountRequestCopyWithImpl<$Res> extends _$CreatePersonal
 @JsonSerializable()
 class _$_CreatePersonalAccountRequest implements _CreatePersonalAccountRequest {
   const _$_CreatePersonalAccountRequest(
-      {@JsonKey(name: 'owner_uuid') required this.ownerUuid, @JsonKey(name: 'team_uuid') required this.teamUuid});
+      {@JsonKey(name: 'owner_uuid') required this.ownerUuid,
+      @JsonKey(name: 'full_name') this.fullName,
+      @JsonKey(name: 'phone') this.phone,
+      @JsonKey(name: 'team_uuid') required this.teamUuid});
 
   factory _$_CreatePersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
       _$$_CreatePersonalAccountRequestFromJson(json);
@@ -141,12 +185,22 @@ class _$_CreatePersonalAccountRequest implements _CreatePersonalAccountRequest {
   @override
 
   /// .
+  @JsonKey(name: 'full_name')
+  final String? fullName;
+  @override
+
+  /// .
+  @JsonKey(name: 'phone')
+  final String? phone;
+  @override
+
+  /// .
   @JsonKey(name: 'team_uuid')
   final String teamUuid;
 
   @override
   String toString() {
-    return 'CreatePersonalAccountRequest(ownerUuid: $ownerUuid, teamUuid: $teamUuid)';
+    return 'CreatePersonalAccountRequest(ownerUuid: $ownerUuid, fullName: $fullName, phone: $phone, teamUuid: $teamUuid)';
   }
 
   @override
@@ -155,6 +209,8 @@ class _$_CreatePersonalAccountRequest implements _CreatePersonalAccountRequest {
         (other is _CreatePersonalAccountRequest &&
             (identical(other.ownerUuid, ownerUuid) ||
                 const DeepCollectionEquality().equals(other.ownerUuid, ownerUuid)) &&
+            (identical(other.fullName, fullName) || const DeepCollectionEquality().equals(other.fullName, fullName)) &&
+            (identical(other.phone, phone) || const DeepCollectionEquality().equals(other.phone, phone)) &&
             (identical(other.teamUuid, teamUuid) || const DeepCollectionEquality().equals(other.teamUuid, teamUuid)));
   }
 
@@ -162,6 +218,8 @@ class _$_CreatePersonalAccountRequest implements _CreatePersonalAccountRequest {
   int get hashCode =>
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(ownerUuid) ^
+      const DeepCollectionEquality().hash(fullName) ^
+      const DeepCollectionEquality().hash(phone) ^
       const DeepCollectionEquality().hash(teamUuid);
 
   @JsonKey(ignore: true)
@@ -178,6 +236,8 @@ class _$_CreatePersonalAccountRequest implements _CreatePersonalAccountRequest {
 abstract class _CreatePersonalAccountRequest implements CreatePersonalAccountRequest {
   const factory _CreatePersonalAccountRequest(
       {@JsonKey(name: 'owner_uuid') required String ownerUuid,
+      @JsonKey(name: 'full_name') String? fullName,
+      @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'team_uuid') required String teamUuid}) = _$_CreatePersonalAccountRequest;
 
   factory _CreatePersonalAccountRequest.fromJson(Map<String, dynamic> json) = _$_CreatePersonalAccountRequest.fromJson;
@@ -187,6 +247,16 @@ abstract class _CreatePersonalAccountRequest implements CreatePersonalAccountReq
   /// .
   @JsonKey(name: 'owner_uuid')
   String get ownerUuid => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'full_name')
+  String? get fullName => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'phone')
+  String? get phone => throw _privateConstructorUsedError;
   @override
 
   /// .

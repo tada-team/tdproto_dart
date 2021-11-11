@@ -21,7 +21,7 @@ SuspendPersonalAccountRequest _$SuspendPersonalAccountRequestFromJson(Map<String
 class _$SuspendPersonalAccountRequestTearOff {
   const _$SuspendPersonalAccountRequestTearOff();
 
-  _SuspendPersonalAccountRequest call({@JsonKey(name: 'personal_account_id') required int personalAccountId}) {
+  _SuspendPersonalAccountRequest call({@JsonKey(name: 'personal_account_id') int? personalAccountId}) {
     return _SuspendPersonalAccountRequest(
       personalAccountId: personalAccountId,
     );
@@ -39,7 +39,7 @@ const $SuspendPersonalAccountRequest = _$SuspendPersonalAccountRequestTearOff();
 mixin _$SuspendPersonalAccountRequest {
   /// .
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  int? get personalAccountId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -52,7 +52,7 @@ abstract class $SuspendPersonalAccountRequestCopyWith<$Res> {
   factory $SuspendPersonalAccountRequestCopyWith(
           SuspendPersonalAccountRequest value, $Res Function(SuspendPersonalAccountRequest) then) =
       _$SuspendPersonalAccountRequestCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'personal_account_id') int personalAccountId});
+  $Res call({@JsonKey(name: 'personal_account_id') int? personalAccountId});
 }
 
 /// @nodoc
@@ -71,7 +71,7 @@ class _$SuspendPersonalAccountRequestCopyWithImpl<$Res> implements $SuspendPerso
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -82,7 +82,7 @@ abstract class _$SuspendPersonalAccountRequestCopyWith<$Res> implements $Suspend
           _SuspendPersonalAccountRequest value, $Res Function(_SuspendPersonalAccountRequest) then) =
       __$SuspendPersonalAccountRequestCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'personal_account_id') int personalAccountId});
+  $Res call({@JsonKey(name: 'personal_account_id') int? personalAccountId});
 }
 
 /// @nodoc
@@ -103,7 +103,7 @@ class __$SuspendPersonalAccountRequestCopyWithImpl<$Res> extends _$SuspendPerson
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -111,7 +111,7 @@ class __$SuspendPersonalAccountRequestCopyWithImpl<$Res> extends _$SuspendPerson
 /// @nodoc
 @JsonSerializable()
 class _$_SuspendPersonalAccountRequest implements _SuspendPersonalAccountRequest {
-  const _$_SuspendPersonalAccountRequest({@JsonKey(name: 'personal_account_id') required this.personalAccountId});
+  const _$_SuspendPersonalAccountRequest({@JsonKey(name: 'personal_account_id') this.personalAccountId});
 
   factory _$_SuspendPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
       _$$_SuspendPersonalAccountRequestFromJson(json);
@@ -120,7 +120,7 @@ class _$_SuspendPersonalAccountRequest implements _SuspendPersonalAccountRequest
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  final int personalAccountId;
+  final int? personalAccountId;
 
   @override
   String toString() {
@@ -150,7 +150,7 @@ class _$_SuspendPersonalAccountRequest implements _SuspendPersonalAccountRequest
 }
 
 abstract class _SuspendPersonalAccountRequest implements SuspendPersonalAccountRequest {
-  const factory _SuspendPersonalAccountRequest({@JsonKey(name: 'personal_account_id') required int personalAccountId}) =
+  const factory _SuspendPersonalAccountRequest({@JsonKey(name: 'personal_account_id') int? personalAccountId}) =
       _$_SuspendPersonalAccountRequest;
 
   factory _SuspendPersonalAccountRequest.fromJson(Map<String, dynamic> json) =
@@ -160,7 +160,7 @@ abstract class _SuspendPersonalAccountRequest implements SuspendPersonalAccountR
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  int? get personalAccountId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$SuspendPersonalAccountRequestCopyWith<_SuspendPersonalAccountRequest> get copyWith =>

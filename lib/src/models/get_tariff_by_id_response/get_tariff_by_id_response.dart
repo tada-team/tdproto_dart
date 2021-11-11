@@ -9,7 +9,7 @@ part 'get_tariff_by_id_response.g.dart';
 class GetTariffByIdResponse with _$GetTariffByIdResponse {
   const factory GetTariffByIdResponse({
     /// Tariff id.
-    @JsonKey(name: 'tariff_id') required int tariffId,
+    @JsonKey(name: 'tariff_id') int? tariffId,
 
     /// Name of tariff.
     @JsonKey(name: 'tariff_name') String? tariffName,

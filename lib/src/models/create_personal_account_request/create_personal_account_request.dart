@@ -12,6 +12,12 @@ class CreatePersonalAccountRequest with _$CreatePersonalAccountRequest {
     @JsonKey(name: 'owner_uuid') required String ownerUuid,
 
     /// .
+    @JsonKey(name: 'full_name') String? fullName,
+
+    /// .
+    @JsonKey(name: 'phone') String? phone,
+
+    /// .
     @JsonKey(name: 'team_uuid') required String teamUuid,
   }) = _CreatePersonalAccountRequest;
 

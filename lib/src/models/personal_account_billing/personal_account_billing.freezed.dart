@@ -22,7 +22,9 @@ class _$PersonalAccountBillingTearOff {
   const _$PersonalAccountBillingTearOff();
 
   _PersonalAccountBilling call(
-      {@JsonKey(name: 'personal_account_id') required int personalAccountId,
+      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      @JsonKey(name: 'full_name') String? fullName,
+      @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') required String ownerUuid,
       @JsonKey(name: 'tariff_id') required int tariffId,
       @JsonKey(name: 'tariff_name') required String tariffName,
@@ -37,6 +39,8 @@ class _$PersonalAccountBillingTearOff {
       @JsonKey(name: 'paid_workplaces') required int paidWorkplaces}) {
     return _PersonalAccountBilling(
       personalAccountId: personalAccountId,
+      fullName: fullName,
+      phone: phone,
       ownerUuid: ownerUuid,
       tariffId: tariffId,
       tariffName: tariffName,
@@ -64,7 +68,15 @@ const $PersonalAccountBilling = _$PersonalAccountBillingTearOff();
 mixin _$PersonalAccountBilling {
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  int? get personalAccountId => throw _privateConstructorUsedError;
+
+  /// Full name of owner personal account.
+  @JsonKey(name: 'full_name')
+  String? get fullName => throw _privateConstructorUsedError;
+
+  /// Phone number of owner account.
+  @JsonKey(name: 'phone')
+  String? get phone => throw _privateConstructorUsedError;
 
   /// ID User who owns this personal account.
   @JsonKey(name: 'owner_uuid')
@@ -124,7 +136,9 @@ abstract class $PersonalAccountBillingCopyWith<$Res> {
   factory $PersonalAccountBillingCopyWith(PersonalAccountBilling value, $Res Function(PersonalAccountBilling) then) =
       _$PersonalAccountBillingCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int personalAccountId,
+      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      @JsonKey(name: 'full_name') String? fullName,
+      @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') String ownerUuid,
       @JsonKey(name: 'tariff_id') int tariffId,
       @JsonKey(name: 'tariff_name') String tariffName,
@@ -150,6 +164,8 @@ class _$PersonalAccountBillingCopyWithImpl<$Res> implements $PersonalAccountBill
   @override
   $Res call({
     Object? personalAccountId = freezed,
+    Object? fullName = freezed,
+    Object? phone = freezed,
     Object? ownerUuid = freezed,
     Object? tariffId = freezed,
     Object? tariffName = freezed,
@@ -167,7 +183,15 @@ class _$PersonalAccountBillingCopyWithImpl<$Res> implements $PersonalAccountBill
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
+      fullName: fullName == freezed
+          ? _value.fullName
+          : fullName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phone: phone == freezed
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
       ownerUuid: ownerUuid == freezed
           ? _value.ownerUuid
           : ownerUuid // ignore: cast_nullable_to_non_nullable
@@ -226,7 +250,9 @@ abstract class _$PersonalAccountBillingCopyWith<$Res> implements $PersonalAccoun
       __$PersonalAccountBillingCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int personalAccountId,
+      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      @JsonKey(name: 'full_name') String? fullName,
+      @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') String ownerUuid,
       @JsonKey(name: 'tariff_id') int tariffId,
       @JsonKey(name: 'tariff_name') String tariffName,
@@ -253,6 +279,8 @@ class __$PersonalAccountBillingCopyWithImpl<$Res> extends _$PersonalAccountBilli
   @override
   $Res call({
     Object? personalAccountId = freezed,
+    Object? fullName = freezed,
+    Object? phone = freezed,
     Object? ownerUuid = freezed,
     Object? tariffId = freezed,
     Object? tariffName = freezed,
@@ -270,7 +298,15 @@ class __$PersonalAccountBillingCopyWithImpl<$Res> extends _$PersonalAccountBilli
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
+      fullName: fullName == freezed
+          ? _value.fullName
+          : fullName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phone: phone == freezed
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
       ownerUuid: ownerUuid == freezed
           ? _value.ownerUuid
           : ownerUuid // ignore: cast_nullable_to_non_nullable
@@ -327,7 +363,9 @@ class __$PersonalAccountBillingCopyWithImpl<$Res> extends _$PersonalAccountBilli
 @JsonSerializable()
 class _$_PersonalAccountBilling implements _PersonalAccountBilling {
   const _$_PersonalAccountBilling(
-      {@JsonKey(name: 'personal_account_id') required this.personalAccountId,
+      {@JsonKey(name: 'personal_account_id') this.personalAccountId,
+      @JsonKey(name: 'full_name') this.fullName,
+      @JsonKey(name: 'phone') this.phone,
       @JsonKey(name: 'owner_uuid') required this.ownerUuid,
       @JsonKey(name: 'tariff_id') required this.tariffId,
       @JsonKey(name: 'tariff_name') required this.tariffName,
@@ -347,7 +385,17 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
 
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  final int personalAccountId;
+  final int? personalAccountId;
+  @override
+
+  /// Full name of owner personal account.
+  @JsonKey(name: 'full_name')
+  final String? fullName;
+  @override
+
+  /// Phone number of owner account.
+  @JsonKey(name: 'phone')
+  final String? phone;
   @override
 
   /// ID User who owns this personal account.
@@ -411,7 +459,7 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
 
   @override
   String toString() {
-    return 'PersonalAccountBilling(personalAccountId: $personalAccountId, ownerUuid: $ownerUuid, tariffId: $tariffId, tariffName: $tariffName, discountId: $discountId, discountAmount: $discountAmount, status: $status, nextBillingDate: $nextBillingDate, teamCount: $teamCount, workplaceCount: $workplaceCount, usersCount: $usersCount, freeWorkplaces: $freeWorkplaces, paidWorkplaces: $paidWorkplaces)';
+    return 'PersonalAccountBilling(personalAccountId: $personalAccountId, fullName: $fullName, phone: $phone, ownerUuid: $ownerUuid, tariffId: $tariffId, tariffName: $tariffName, discountId: $discountId, discountAmount: $discountAmount, status: $status, nextBillingDate: $nextBillingDate, teamCount: $teamCount, workplaceCount: $workplaceCount, usersCount: $usersCount, freeWorkplaces: $freeWorkplaces, paidWorkplaces: $paidWorkplaces)';
   }
 
   @override
@@ -420,6 +468,8 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
         (other is _PersonalAccountBilling &&
             (identical(other.personalAccountId, personalAccountId) ||
                 const DeepCollectionEquality().equals(other.personalAccountId, personalAccountId)) &&
+            (identical(other.fullName, fullName) || const DeepCollectionEquality().equals(other.fullName, fullName)) &&
+            (identical(other.phone, phone) || const DeepCollectionEquality().equals(other.phone, phone)) &&
             (identical(other.ownerUuid, ownerUuid) ||
                 const DeepCollectionEquality().equals(other.ownerUuid, ownerUuid)) &&
             (identical(other.tariffId, tariffId) || const DeepCollectionEquality().equals(other.tariffId, tariffId)) &&
@@ -448,6 +498,8 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
   int get hashCode =>
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(personalAccountId) ^
+      const DeepCollectionEquality().hash(fullName) ^
+      const DeepCollectionEquality().hash(phone) ^
       const DeepCollectionEquality().hash(ownerUuid) ^
       const DeepCollectionEquality().hash(tariffId) ^
       const DeepCollectionEquality().hash(tariffName) ^
@@ -474,7 +526,9 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
 
 abstract class _PersonalAccountBilling implements PersonalAccountBilling {
   const factory _PersonalAccountBilling(
-      {@JsonKey(name: 'personal_account_id') required int personalAccountId,
+      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      @JsonKey(name: 'full_name') String? fullName,
+      @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') required String ownerUuid,
       @JsonKey(name: 'tariff_id') required int tariffId,
       @JsonKey(name: 'tariff_name') required String tariffName,
@@ -494,7 +548,17 @@ abstract class _PersonalAccountBilling implements PersonalAccountBilling {
 
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  int? get personalAccountId => throw _privateConstructorUsedError;
+  @override
+
+  /// Full name of owner personal account.
+  @JsonKey(name: 'full_name')
+  String? get fullName => throw _privateConstructorUsedError;
+  @override
+
+  /// Phone number of owner account.
+  @JsonKey(name: 'phone')
+  String? get phone => throw _privateConstructorUsedError;
   @override
 
   /// ID User who owns this personal account.

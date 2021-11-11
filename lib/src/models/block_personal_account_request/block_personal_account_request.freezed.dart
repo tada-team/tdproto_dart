@@ -21,7 +21,7 @@ BlockPersonalAccountRequest _$BlockPersonalAccountRequestFromJson(Map<String, dy
 class _$BlockPersonalAccountRequestTearOff {
   const _$BlockPersonalAccountRequestTearOff();
 
-  _BlockPersonalAccountRequest call({@JsonKey(name: 'personal_account_id') required int personalAccountId}) {
+  _BlockPersonalAccountRequest call({@JsonKey(name: 'personal_account_id') int? personalAccountId}) {
     return _BlockPersonalAccountRequest(
       personalAccountId: personalAccountId,
     );
@@ -39,7 +39,7 @@ const $BlockPersonalAccountRequest = _$BlockPersonalAccountRequestTearOff();
 mixin _$BlockPersonalAccountRequest {
   /// .
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  int? get personalAccountId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -51,7 +51,7 @@ abstract class $BlockPersonalAccountRequestCopyWith<$Res> {
   factory $BlockPersonalAccountRequestCopyWith(
           BlockPersonalAccountRequest value, $Res Function(BlockPersonalAccountRequest) then) =
       _$BlockPersonalAccountRequestCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'personal_account_id') int personalAccountId});
+  $Res call({@JsonKey(name: 'personal_account_id') int? personalAccountId});
 }
 
 /// @nodoc
@@ -70,7 +70,7 @@ class _$BlockPersonalAccountRequestCopyWithImpl<$Res> implements $BlockPersonalA
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -81,7 +81,7 @@ abstract class _$BlockPersonalAccountRequestCopyWith<$Res> implements $BlockPers
           _BlockPersonalAccountRequest value, $Res Function(_BlockPersonalAccountRequest) then) =
       __$BlockPersonalAccountRequestCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'personal_account_id') int personalAccountId});
+  $Res call({@JsonKey(name: 'personal_account_id') int? personalAccountId});
 }
 
 /// @nodoc
@@ -102,7 +102,7 @@ class __$BlockPersonalAccountRequestCopyWithImpl<$Res> extends _$BlockPersonalAc
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -110,7 +110,7 @@ class __$BlockPersonalAccountRequestCopyWithImpl<$Res> extends _$BlockPersonalAc
 /// @nodoc
 @JsonSerializable()
 class _$_BlockPersonalAccountRequest implements _BlockPersonalAccountRequest {
-  const _$_BlockPersonalAccountRequest({@JsonKey(name: 'personal_account_id') required this.personalAccountId});
+  const _$_BlockPersonalAccountRequest({@JsonKey(name: 'personal_account_id') this.personalAccountId});
 
   factory _$_BlockPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
       _$$_BlockPersonalAccountRequestFromJson(json);
@@ -119,7 +119,7 @@ class _$_BlockPersonalAccountRequest implements _BlockPersonalAccountRequest {
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  final int personalAccountId;
+  final int? personalAccountId;
 
   @override
   String toString() {
@@ -149,7 +149,7 @@ class _$_BlockPersonalAccountRequest implements _BlockPersonalAccountRequest {
 }
 
 abstract class _BlockPersonalAccountRequest implements BlockPersonalAccountRequest {
-  const factory _BlockPersonalAccountRequest({@JsonKey(name: 'personal_account_id') required int personalAccountId}) =
+  const factory _BlockPersonalAccountRequest({@JsonKey(name: 'personal_account_id') int? personalAccountId}) =
       _$_BlockPersonalAccountRequest;
 
   factory _BlockPersonalAccountRequest.fromJson(Map<String, dynamic> json) = _$_BlockPersonalAccountRequest.fromJson;
@@ -158,7 +158,7 @@ abstract class _BlockPersonalAccountRequest implements BlockPersonalAccountReque
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  int? get personalAccountId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$BlockPersonalAccountRequestCopyWith<_BlockPersonalAccountRequest> get copyWith =>

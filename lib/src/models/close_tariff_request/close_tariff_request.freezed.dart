@@ -22,7 +22,7 @@ class _$CloseTariffRequestTearOff {
   const _$CloseTariffRequestTearOff();
 
   _CloseTariffRequest call(
-      {@JsonKey(name: 'tariff_id') required int tariffId, @JsonKey(name: 'close_date') String? closeDate}) {
+      {@JsonKey(name: 'tariff_id') int? tariffId, @JsonKey(name: 'close_date') String? closeDate}) {
     return _CloseTariffRequest(
       tariffId: tariffId,
       closeDate: closeDate,
@@ -41,7 +41,7 @@ const $CloseTariffRequest = _$CloseTariffRequestTearOff();
 mixin _$CloseTariffRequest {
   /// .
   @JsonKey(name: 'tariff_id')
-  int get tariffId => throw _privateConstructorUsedError;
+  int? get tariffId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'close_date')
@@ -56,7 +56,7 @@ mixin _$CloseTariffRequest {
 abstract class $CloseTariffRequestCopyWith<$Res> {
   factory $CloseTariffRequestCopyWith(CloseTariffRequest value, $Res Function(CloseTariffRequest) then) =
       _$CloseTariffRequestCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'tariff_id') int tariffId, @JsonKey(name: 'close_date') String? closeDate});
+  $Res call({@JsonKey(name: 'tariff_id') int? tariffId, @JsonKey(name: 'close_date') String? closeDate});
 }
 
 /// @nodoc
@@ -76,7 +76,7 @@ class _$CloseTariffRequestCopyWithImpl<$Res> implements $CloseTariffRequestCopyW
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       closeDate: closeDate == freezed
           ? _value.closeDate
           : closeDate // ignore: cast_nullable_to_non_nullable
@@ -90,7 +90,7 @@ abstract class _$CloseTariffRequestCopyWith<$Res> implements $CloseTariffRequest
   factory _$CloseTariffRequestCopyWith(_CloseTariffRequest value, $Res Function(_CloseTariffRequest) then) =
       __$CloseTariffRequestCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'tariff_id') int tariffId, @JsonKey(name: 'close_date') String? closeDate});
+  $Res call({@JsonKey(name: 'tariff_id') int? tariffId, @JsonKey(name: 'close_date') String? closeDate});
 }
 
 /// @nodoc
@@ -111,7 +111,7 @@ class __$CloseTariffRequestCopyWithImpl<$Res> extends _$CloseTariffRequestCopyWi
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       closeDate: closeDate == freezed
           ? _value.closeDate
           : closeDate // ignore: cast_nullable_to_non_nullable
@@ -123,8 +123,7 @@ class __$CloseTariffRequestCopyWithImpl<$Res> extends _$CloseTariffRequestCopyWi
 /// @nodoc
 @JsonSerializable()
 class _$_CloseTariffRequest implements _CloseTariffRequest {
-  const _$_CloseTariffRequest(
-      {@JsonKey(name: 'tariff_id') required this.tariffId, @JsonKey(name: 'close_date') this.closeDate});
+  const _$_CloseTariffRequest({@JsonKey(name: 'tariff_id') this.tariffId, @JsonKey(name: 'close_date') this.closeDate});
 
   factory _$_CloseTariffRequest.fromJson(Map<String, dynamic> json) => _$$_CloseTariffRequestFromJson(json);
 
@@ -132,7 +131,7 @@ class _$_CloseTariffRequest implements _CloseTariffRequest {
 
   /// .
   @JsonKey(name: 'tariff_id')
-  final int tariffId;
+  final int? tariffId;
   @override
 
   /// .
@@ -172,7 +171,7 @@ class _$_CloseTariffRequest implements _CloseTariffRequest {
 
 abstract class _CloseTariffRequest implements CloseTariffRequest {
   const factory _CloseTariffRequest(
-      {@JsonKey(name: 'tariff_id') required int tariffId,
+      {@JsonKey(name: 'tariff_id') int? tariffId,
       @JsonKey(name: 'close_date') String? closeDate}) = _$_CloseTariffRequest;
 
   factory _CloseTariffRequest.fromJson(Map<String, dynamic> json) = _$_CloseTariffRequest.fromJson;
@@ -181,7 +180,7 @@ abstract class _CloseTariffRequest implements CloseTariffRequest {
 
   /// .
   @JsonKey(name: 'tariff_id')
-  int get tariffId => throw _privateConstructorUsedError;
+  int? get tariffId => throw _privateConstructorUsedError;
   @override
 
   /// .

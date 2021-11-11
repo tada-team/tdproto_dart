@@ -8,7 +8,7 @@ part of 'activate_personal_account_request.dart';
 
 _$_ActivatePersonalAccountRequest _$$_ActivatePersonalAccountRequestFromJson(Map<String, dynamic> json) =>
     _$_ActivatePersonalAccountRequest(
-      personalAccountId: json['personal_account_id'] as int,
+      personalAccountId: json['personal_account_id'] as int?,
     );
 
 Map<String, dynamic> _$$_ActivatePersonalAccountRequestToJson(_$_ActivatePersonalAccountRequest instance) =>

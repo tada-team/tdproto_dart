@@ -14,6 +14,8 @@ export 'src/enums/group_status.dart';
 export 'src/enums/markup_type.dart';
 export 'src/enums/mediasubtype.dart';
 export 'src/enums/mediatype.dart';
+export 'src/enums/personal_account_status.dart';
+export 'src/enums/tariff_status.dart';
 export 'src/enums/team_status.dart';
 export 'src/enums/upload_media_type.dart';
 

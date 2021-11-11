@@ -21,7 +21,7 @@ GetPersonalAccountByIDRequest _$GetPersonalAccountByIDRequestFromJson(Map<String
 class _$GetPersonalAccountByIDRequestTearOff {
   const _$GetPersonalAccountByIDRequestTearOff();
 
-  _GetPersonalAccountByIDRequest call({@JsonKey(name: 'personal_account_id') required int personalAccountId}) {
+  _GetPersonalAccountByIDRequest call({@JsonKey(name: 'personal_account_id') int? personalAccountId}) {
     return _GetPersonalAccountByIDRequest(
       personalAccountId: personalAccountId,
     );
@@ -39,7 +39,7 @@ const $GetPersonalAccountByIDRequest = _$GetPersonalAccountByIDRequestTearOff();
 mixin _$GetPersonalAccountByIDRequest {
   /// .
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  int? get personalAccountId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -52,7 +52,7 @@ abstract class $GetPersonalAccountByIDRequestCopyWith<$Res> {
   factory $GetPersonalAccountByIDRequestCopyWith(
           GetPersonalAccountByIDRequest value, $Res Function(GetPersonalAccountByIDRequest) then) =
       _$GetPersonalAccountByIDRequestCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'personal_account_id') int personalAccountId});
+  $Res call({@JsonKey(name: 'personal_account_id') int? personalAccountId});
 }
 
 /// @nodoc
@@ -71,7 +71,7 @@ class _$GetPersonalAccountByIDRequestCopyWithImpl<$Res> implements $GetPersonalA
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -82,7 +82,7 @@ abstract class _$GetPersonalAccountByIDRequestCopyWith<$Res> implements $GetPers
           _GetPersonalAccountByIDRequest value, $Res Function(_GetPersonalAccountByIDRequest) then) =
       __$GetPersonalAccountByIDRequestCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'personal_account_id') int personalAccountId});
+  $Res call({@JsonKey(name: 'personal_account_id') int? personalAccountId});
 }
 
 /// @nodoc
@@ -103,7 +103,7 @@ class __$GetPersonalAccountByIDRequestCopyWithImpl<$Res> extends _$GetPersonalAc
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -111,7 +111,7 @@ class __$GetPersonalAccountByIDRequestCopyWithImpl<$Res> extends _$GetPersonalAc
 /// @nodoc
 @JsonSerializable()
 class _$_GetPersonalAccountByIDRequest implements _GetPersonalAccountByIDRequest {
-  const _$_GetPersonalAccountByIDRequest({@JsonKey(name: 'personal_account_id') required this.personalAccountId});
+  const _$_GetPersonalAccountByIDRequest({@JsonKey(name: 'personal_account_id') this.personalAccountId});
 
   factory _$_GetPersonalAccountByIDRequest.fromJson(Map<String, dynamic> json) =>
       _$$_GetPersonalAccountByIDRequestFromJson(json);
@@ -120,7 +120,7 @@ class _$_GetPersonalAccountByIDRequest implements _GetPersonalAccountByIDRequest
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  final int personalAccountId;
+  final int? personalAccountId;
 
   @override
   String toString() {
@@ -150,7 +150,7 @@ class _$_GetPersonalAccountByIDRequest implements _GetPersonalAccountByIDRequest
 }
 
 abstract class _GetPersonalAccountByIDRequest implements GetPersonalAccountByIDRequest {
-  const factory _GetPersonalAccountByIDRequest({@JsonKey(name: 'personal_account_id') required int personalAccountId}) =
+  const factory _GetPersonalAccountByIDRequest({@JsonKey(name: 'personal_account_id') int? personalAccountId}) =
       _$_GetPersonalAccountByIDRequest;
 
   factory _GetPersonalAccountByIDRequest.fromJson(Map<String, dynamic> json) =
@@ -160,7 +160,7 @@ abstract class _GetPersonalAccountByIDRequest implements GetPersonalAccountByIDR
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  int? get personalAccountId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$GetPersonalAccountByIDRequestCopyWith<_GetPersonalAccountByIDRequest> get copyWith =>

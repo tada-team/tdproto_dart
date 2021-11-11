@@ -7,7 +7,7 @@ part of 'create_tariff_response.dart';
 // **************************************************************************
 
 _$_CreateTariffResponse _$$_CreateTariffResponseFromJson(Map<String, dynamic> json) => _$_CreateTariffResponse(
-      tariffId: json['tariff_id'] as int,
+      tariffId: json['tariff_id'] as int?,
       tariffName: json['tariff_name'] as String?,
       freeWorkplace: json['free_workplace'] as int?,
       diskSpaceQuota: json['disk_space_quota'] as String?,

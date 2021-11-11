@@ -9,7 +9,7 @@ part 'create_tariff_response.g.dart';
 class CreateTariffResponse with _$CreateTariffResponse {
   const factory CreateTariffResponse({
     /// Tariff id.
-    @JsonKey(name: 'tariff_id') required int tariffId,
+    @JsonKey(name: 'tariff_id') int? tariffId,
 
     /// Name of tariff.
     @JsonKey(name: 'tariff_name') String? tariffName,

@@ -9,7 +9,13 @@ part 'personal_account_billing.g.dart';
 class PersonalAccountBilling with _$PersonalAccountBilling {
   const factory PersonalAccountBilling({
     /// PersonalAccountBilling ID.
-    @JsonKey(name: 'personal_account_id') required int personalAccountId,
+    @JsonKey(name: 'personal_account_id') int? personalAccountId,
+
+    /// Full name of owner personal account.
+    @JsonKey(name: 'full_name') String? fullName,
+
+    /// Phone number of owner account.
+    @JsonKey(name: 'phone') String? phone,
 
     /// ID User who owns this personal account.
     @JsonKey(name: 'owner_uuid') required String ownerUuid,

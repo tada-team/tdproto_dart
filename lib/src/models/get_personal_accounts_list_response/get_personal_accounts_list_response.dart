@@ -9,7 +9,7 @@ part 'get_personal_accounts_list_response.g.dart';
 class GetPersonalAccountsListResponse with _$GetPersonalAccountsListResponse {
   const factory GetPersonalAccountsListResponse({
     /// .
-    @JsonKey(name: 'personal_accounts') required List<PersonalAccountBilling> personalAccounts,
+    @JsonKey(name: 'personal_accounts') List<PersonalAccountBilling>? personalAccounts,
   }) = _GetPersonalAccountsListResponse;
 
   factory GetPersonalAccountsListResponse.fromJson(Map<String, dynamic> json) =>

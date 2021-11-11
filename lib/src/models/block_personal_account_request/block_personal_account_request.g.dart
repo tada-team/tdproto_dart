@@ -8,7 +8,7 @@ part of 'block_personal_account_request.dart';
 
 _$_BlockPersonalAccountRequest _$$_BlockPersonalAccountRequestFromJson(Map<String, dynamic> json) =>
     _$_BlockPersonalAccountRequest(
-      personalAccountId: json['personal_account_id'] as int,
+      personalAccountId: json['personal_account_id'] as int?,
     );
 
 Map<String, dynamic> _$$_BlockPersonalAccountRequestToJson(_$_BlockPersonalAccountRequest instance) =>

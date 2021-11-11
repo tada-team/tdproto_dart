@@ -7,7 +7,7 @@ part of 'close_tariff_request.dart';
 // **************************************************************************
 
 _$_CloseTariffRequest _$$_CloseTariffRequestFromJson(Map<String, dynamic> json) => _$_CloseTariffRequest(
-      tariffId: json['tariff_id'] as int,
+      tariffId: json['tariff_id'] as int?,
       closeDate: json['close_date'] as String?,
     );
 

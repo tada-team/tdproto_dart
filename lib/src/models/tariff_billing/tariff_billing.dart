@@ -9,7 +9,7 @@ part 'tariff_billing.g.dart';
 class TariffBilling with _$TariffBilling {
   const factory TariffBilling({
     /// Tariff id.
-    @JsonKey(name: 'tariff_id') required int tariffId,
+    @JsonKey(name: 'tariff_id') int? tariffId,
 
     /// Name of tariff.
     @JsonKey(name: 'tariff_name') String? tariffName,

@@ -22,7 +22,7 @@ class _$CreateTariffResponseTearOff {
   const _$CreateTariffResponseTearOff();
 
   _CreateTariffResponse call(
-      {@JsonKey(name: 'tariff_id') required int tariffId,
+      {@JsonKey(name: 'tariff_id') int? tariffId,
       @JsonKey(name: 'tariff_name') String? tariffName,
       @JsonKey(name: 'free_workplace') int? freeWorkplace,
       @JsonKey(name: 'disk_space_quota') String? diskSpaceQuota,
@@ -70,7 +70,7 @@ const $CreateTariffResponse = _$CreateTariffResponseTearOff();
 mixin _$CreateTariffResponse {
   /// Tariff id.
   @JsonKey(name: 'tariff_id')
-  int get tariffId => throw _privateConstructorUsedError;
+  int? get tariffId => throw _privateConstructorUsedError;
 
   /// Name of tariff.
   @JsonKey(name: 'tariff_name')
@@ -142,7 +142,7 @@ abstract class $CreateTariffResponseCopyWith<$Res> {
   factory $CreateTariffResponseCopyWith(CreateTariffResponse value, $Res Function(CreateTariffResponse) then) =
       _$CreateTariffResponseCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'tariff_id') int tariffId,
+      {@JsonKey(name: 'tariff_id') int? tariffId,
       @JsonKey(name: 'tariff_name') String? tariffName,
       @JsonKey(name: 'free_workplace') int? freeWorkplace,
       @JsonKey(name: 'disk_space_quota') String? diskSpaceQuota,
@@ -191,7 +191,7 @@ class _$CreateTariffResponseCopyWithImpl<$Res> implements $CreateTariffResponseC
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       tariffName: tariffName == freezed
           ? _value.tariffName
           : tariffName // ignore: cast_nullable_to_non_nullable
@@ -262,7 +262,7 @@ abstract class _$CreateTariffResponseCopyWith<$Res> implements $CreateTariffResp
       __$CreateTariffResponseCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'tariff_id') int tariffId,
+      {@JsonKey(name: 'tariff_id') int? tariffId,
       @JsonKey(name: 'tariff_name') String? tariffName,
       @JsonKey(name: 'free_workplace') int? freeWorkplace,
       @JsonKey(name: 'disk_space_quota') String? diskSpaceQuota,
@@ -312,7 +312,7 @@ class __$CreateTariffResponseCopyWithImpl<$Res> extends _$CreateTariffResponseCo
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       tariffName: tariffName == freezed
           ? _value.tariffName
           : tariffName // ignore: cast_nullable_to_non_nullable
@@ -381,7 +381,7 @@ class __$CreateTariffResponseCopyWithImpl<$Res> extends _$CreateTariffResponseCo
 @JsonSerializable()
 class _$_CreateTariffResponse implements _CreateTariffResponse {
   const _$_CreateTariffResponse(
-      {@JsonKey(name: 'tariff_id') required this.tariffId,
+      {@JsonKey(name: 'tariff_id') this.tariffId,
       @JsonKey(name: 'tariff_name') this.tariffName,
       @JsonKey(name: 'free_workplace') this.freeWorkplace,
       @JsonKey(name: 'disk_space_quota') this.diskSpaceQuota,
@@ -404,7 +404,7 @@ class _$_CreateTariffResponse implements _CreateTariffResponse {
 
   /// Tariff id.
   @JsonKey(name: 'tariff_id')
-  final int tariffId;
+  final int? tariffId;
   @override
 
   /// Name of tariff.
@@ -553,7 +553,7 @@ class _$_CreateTariffResponse implements _CreateTariffResponse {
 
 abstract class _CreateTariffResponse implements CreateTariffResponse {
   const factory _CreateTariffResponse(
-      {@JsonKey(name: 'tariff_id') required int tariffId,
+      {@JsonKey(name: 'tariff_id') int? tariffId,
       @JsonKey(name: 'tariff_name') String? tariffName,
       @JsonKey(name: 'free_workplace') int? freeWorkplace,
       @JsonKey(name: 'disk_space_quota') String? diskSpaceQuota,
@@ -576,7 +576,7 @@ abstract class _CreateTariffResponse implements CreateTariffResponse {
 
   /// Tariff id.
   @JsonKey(name: 'tariff_id')
-  int get tariffId => throw _privateConstructorUsedError;
+  int? get tariffId => throw _privateConstructorUsedError;
   @override
 
   /// Name of tariff.

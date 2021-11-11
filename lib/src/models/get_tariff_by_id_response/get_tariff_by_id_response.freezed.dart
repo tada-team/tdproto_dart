@@ -22,7 +22,7 @@ class _$GetTariffByIdResponseTearOff {
   const _$GetTariffByIdResponseTearOff();
 
   _GetTariffByIdResponse call(
-      {@JsonKey(name: 'tariff_id') required int tariffId,
+      {@JsonKey(name: 'tariff_id') int? tariffId,
       @JsonKey(name: 'tariff_name') String? tariffName,
       @JsonKey(name: 'free_workplace') int? freeWorkplace,
       @JsonKey(name: 'disk_space_quota') String? diskSpaceQuota,
@@ -70,7 +70,7 @@ const $GetTariffByIdResponse = _$GetTariffByIdResponseTearOff();
 mixin _$GetTariffByIdResponse {
   /// Tariff id.
   @JsonKey(name: 'tariff_id')
-  int get tariffId => throw _privateConstructorUsedError;
+  int? get tariffId => throw _privateConstructorUsedError;
 
   /// Name of tariff.
   @JsonKey(name: 'tariff_name')
@@ -142,7 +142,7 @@ abstract class $GetTariffByIdResponseCopyWith<$Res> {
   factory $GetTariffByIdResponseCopyWith(GetTariffByIdResponse value, $Res Function(GetTariffByIdResponse) then) =
       _$GetTariffByIdResponseCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'tariff_id') int tariffId,
+      {@JsonKey(name: 'tariff_id') int? tariffId,
       @JsonKey(name: 'tariff_name') String? tariffName,
       @JsonKey(name: 'free_workplace') int? freeWorkplace,
       @JsonKey(name: 'disk_space_quota') String? diskSpaceQuota,
@@ -191,7 +191,7 @@ class _$GetTariffByIdResponseCopyWithImpl<$Res> implements $GetTariffByIdRespons
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       tariffName: tariffName == freezed
           ? _value.tariffName
           : tariffName // ignore: cast_nullable_to_non_nullable
@@ -262,7 +262,7 @@ abstract class _$GetTariffByIdResponseCopyWith<$Res> implements $GetTariffByIdRe
       __$GetTariffByIdResponseCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'tariff_id') int tariffId,
+      {@JsonKey(name: 'tariff_id') int? tariffId,
       @JsonKey(name: 'tariff_name') String? tariffName,
       @JsonKey(name: 'free_workplace') int? freeWorkplace,
       @JsonKey(name: 'disk_space_quota') String? diskSpaceQuota,
@@ -312,7 +312,7 @@ class __$GetTariffByIdResponseCopyWithImpl<$Res> extends _$GetTariffByIdResponse
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       tariffName: tariffName == freezed
           ? _value.tariffName
           : tariffName // ignore: cast_nullable_to_non_nullable
@@ -381,7 +381,7 @@ class __$GetTariffByIdResponseCopyWithImpl<$Res> extends _$GetTariffByIdResponse
 @JsonSerializable()
 class _$_GetTariffByIdResponse implements _GetTariffByIdResponse {
   const _$_GetTariffByIdResponse(
-      {@JsonKey(name: 'tariff_id') required this.tariffId,
+      {@JsonKey(name: 'tariff_id') this.tariffId,
       @JsonKey(name: 'tariff_name') this.tariffName,
       @JsonKey(name: 'free_workplace') this.freeWorkplace,
       @JsonKey(name: 'disk_space_quota') this.diskSpaceQuota,
@@ -404,7 +404,7 @@ class _$_GetTariffByIdResponse implements _GetTariffByIdResponse {
 
   /// Tariff id.
   @JsonKey(name: 'tariff_id')
-  final int tariffId;
+  final int? tariffId;
   @override
 
   /// Name of tariff.
@@ -553,7 +553,7 @@ class _$_GetTariffByIdResponse implements _GetTariffByIdResponse {
 
 abstract class _GetTariffByIdResponse implements GetTariffByIdResponse {
   const factory _GetTariffByIdResponse(
-      {@JsonKey(name: 'tariff_id') required int tariffId,
+      {@JsonKey(name: 'tariff_id') int? tariffId,
       @JsonKey(name: 'tariff_name') String? tariffName,
       @JsonKey(name: 'free_workplace') int? freeWorkplace,
       @JsonKey(name: 'disk_space_quota') String? diskSpaceQuota,
@@ -576,7 +576,7 @@ abstract class _GetTariffByIdResponse implements GetTariffByIdResponse {
 
   /// Tariff id.
   @JsonKey(name: 'tariff_id')
-  int get tariffId => throw _privateConstructorUsedError;
+  int? get tariffId => throw _privateConstructorUsedError;
   @override
 
   /// Name of tariff.

@@ -9,7 +9,7 @@ part 'get_personal_account_by_i_d_request.g.dart';
 class GetPersonalAccountByIDRequest with _$GetPersonalAccountByIDRequest {
   const factory GetPersonalAccountByIDRequest({
     /// .
-    @JsonKey(name: 'personal_account_id') required int personalAccountId,
+    @JsonKey(name: 'personal_account_id') int? personalAccountId,
   }) = _GetPersonalAccountByIDRequest;
 
   factory GetPersonalAccountByIDRequest.fromJson(Map<String, dynamic> json) =>

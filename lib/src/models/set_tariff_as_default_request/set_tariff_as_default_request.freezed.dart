@@ -21,7 +21,7 @@ SetTariffAsDefaultRequest _$SetTariffAsDefaultRequestFromJson(Map<String, dynami
 class _$SetTariffAsDefaultRequestTearOff {
   const _$SetTariffAsDefaultRequestTearOff();
 
-  _SetTariffAsDefaultRequest call({@JsonKey(name: 'tariff_id') required int tariffId}) {
+  _SetTariffAsDefaultRequest call({@JsonKey(name: 'tariff_id') int? tariffId}) {
     return _SetTariffAsDefaultRequest(
       tariffId: tariffId,
     );
@@ -39,7 +39,7 @@ const $SetTariffAsDefaultRequest = _$SetTariffAsDefaultRequestTearOff();
 mixin _$SetTariffAsDefaultRequest {
   /// .
   @JsonKey(name: 'tariff_id')
-  int get tariffId => throw _privateConstructorUsedError;
+  int? get tariffId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -51,7 +51,7 @@ abstract class $SetTariffAsDefaultRequestCopyWith<$Res> {
   factory $SetTariffAsDefaultRequestCopyWith(
           SetTariffAsDefaultRequest value, $Res Function(SetTariffAsDefaultRequest) then) =
       _$SetTariffAsDefaultRequestCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'tariff_id') int tariffId});
+  $Res call({@JsonKey(name: 'tariff_id') int? tariffId});
 }
 
 /// @nodoc
@@ -70,7 +70,7 @@ class _$SetTariffAsDefaultRequestCopyWithImpl<$Res> implements $SetTariffAsDefau
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -81,7 +81,7 @@ abstract class _$SetTariffAsDefaultRequestCopyWith<$Res> implements $SetTariffAs
           _SetTariffAsDefaultRequest value, $Res Function(_SetTariffAsDefaultRequest) then) =
       __$SetTariffAsDefaultRequestCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'tariff_id') int tariffId});
+  $Res call({@JsonKey(name: 'tariff_id') int? tariffId});
 }
 
 /// @nodoc
@@ -102,7 +102,7 @@ class __$SetTariffAsDefaultRequestCopyWithImpl<$Res> extends _$SetTariffAsDefaul
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -110,7 +110,7 @@ class __$SetTariffAsDefaultRequestCopyWithImpl<$Res> extends _$SetTariffAsDefaul
 /// @nodoc
 @JsonSerializable()
 class _$_SetTariffAsDefaultRequest implements _SetTariffAsDefaultRequest {
-  const _$_SetTariffAsDefaultRequest({@JsonKey(name: 'tariff_id') required this.tariffId});
+  const _$_SetTariffAsDefaultRequest({@JsonKey(name: 'tariff_id') this.tariffId});
 
   factory _$_SetTariffAsDefaultRequest.fromJson(Map<String, dynamic> json) =>
       _$$_SetTariffAsDefaultRequestFromJson(json);
@@ -119,7 +119,7 @@ class _$_SetTariffAsDefaultRequest implements _SetTariffAsDefaultRequest {
 
   /// .
   @JsonKey(name: 'tariff_id')
-  final int tariffId;
+  final int? tariffId;
 
   @override
   String toString() {
@@ -148,8 +148,7 @@ class _$_SetTariffAsDefaultRequest implements _SetTariffAsDefaultRequest {
 }
 
 abstract class _SetTariffAsDefaultRequest implements SetTariffAsDefaultRequest {
-  const factory _SetTariffAsDefaultRequest({@JsonKey(name: 'tariff_id') required int tariffId}) =
-      _$_SetTariffAsDefaultRequest;
+  const factory _SetTariffAsDefaultRequest({@JsonKey(name: 'tariff_id') int? tariffId}) = _$_SetTariffAsDefaultRequest;
 
   factory _SetTariffAsDefaultRequest.fromJson(Map<String, dynamic> json) = _$_SetTariffAsDefaultRequest.fromJson;
 
@@ -157,7 +156,7 @@ abstract class _SetTariffAsDefaultRequest implements SetTariffAsDefaultRequest {
 
   /// .
   @JsonKey(name: 'tariff_id')
-  int get tariffId => throw _privateConstructorUsedError;
+  int? get tariffId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$SetTariffAsDefaultRequestCopyWith<_SetTariffAsDefaultRequest> get copyWith => throw _privateConstructorUsedError;

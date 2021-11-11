@@ -8,7 +8,7 @@ part of 'unblock_personal_account_request.dart';
 
 _$_UnblockPersonalAccountRequest _$$_UnblockPersonalAccountRequestFromJson(Map<String, dynamic> json) =>
     _$_UnblockPersonalAccountRequest(
-      personalAccountId: json['personal_account_id'] as int,
+      personalAccountId: json['personal_account_id'] as int?,
     );
 
 Map<String, dynamic> _$$_UnblockPersonalAccountRequestToJson(_$_UnblockPersonalAccountRequest instance) =>

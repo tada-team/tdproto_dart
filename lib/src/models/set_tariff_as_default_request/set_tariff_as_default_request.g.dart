@@ -8,7 +8,7 @@ part of 'set_tariff_as_default_request.dart';
 
 _$_SetTariffAsDefaultRequest _$$_SetTariffAsDefaultRequestFromJson(Map<String, dynamic> json) =>
     _$_SetTariffAsDefaultRequest(
-      tariffId: json['tariff_id'] as int,
+      tariffId: json['tariff_id'] as int?,
     );
 
 Map<String, dynamic> _$$_SetTariffAsDefaultRequestToJson(_$_SetTariffAsDefaultRequest instance) => <String, dynamic>{
