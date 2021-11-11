@@ -253,6 +253,7 @@ export 'src/models/suspend_personal_account_request/suspend_personal_account_req
 export 'src/models/suspend_personal_account_response/suspend_personal_account_response.dart';
 export 'src/models/switcher_colors/switcher_colors.dart';
 export 'src/models/tag/tag.dart';
+export 'src/models/tariff/tariff.dart';
 export 'src/models/tariff_billing/tariff_billing.dart';
 export 'src/models/task/task.dart';
 export 'src/models/task_color/task_color.dart';
