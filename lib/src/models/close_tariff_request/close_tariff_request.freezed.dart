@@ -21,10 +21,8 @@ CloseTariffRequest _$CloseTariffRequestFromJson(Map<String, dynamic> json) {
 class _$CloseTariffRequestTearOff {
   const _$CloseTariffRequestTearOff();
 
-  _CloseTariffRequest call(
-      {@JsonKey(name: 'tariff_id') int? tariffId, @JsonKey(name: 'close_date') String? closeDate}) {
+  _CloseTariffRequest call({@JsonKey(name: 'close_date') String? closeDate}) {
     return _CloseTariffRequest(
-      tariffId: tariffId,
       closeDate: closeDate,
     );
   }
@@ -40,10 +38,6 @@ const $CloseTariffRequest = _$CloseTariffRequestTearOff();
 /// @nodoc
 mixin _$CloseTariffRequest {
   /// .
-  @JsonKey(name: 'tariff_id')
-  int? get tariffId => throw _privateConstructorUsedError;
-
-  /// .
   @JsonKey(name: 'close_date')
   String? get closeDate => throw _privateConstructorUsedError;
 
@@ -56,7 +50,7 @@ mixin _$CloseTariffRequest {
 abstract class $CloseTariffRequestCopyWith<$Res> {
   factory $CloseTariffRequestCopyWith(CloseTariffRequest value, $Res Function(CloseTariffRequest) then) =
       _$CloseTariffRequestCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'tariff_id') int? tariffId, @JsonKey(name: 'close_date') String? closeDate});
+  $Res call({@JsonKey(name: 'close_date') String? closeDate});
 }
 
 /// @nodoc
@@ -69,14 +63,9 @@ class _$CloseTariffRequestCopyWithImpl<$Res> implements $CloseTariffRequestCopyW
 
   @override
   $Res call({
-    Object? tariffId = freezed,
     Object? closeDate = freezed,
   }) {
     return _then(_value.copyWith(
-      tariffId: tariffId == freezed
-          ? _value.tariffId
-          : tariffId // ignore: cast_nullable_to_non_nullable
-              as int?,
       closeDate: closeDate == freezed
           ? _value.closeDate
           : closeDate // ignore: cast_nullable_to_non_nullable
@@ -90,7 +79,7 @@ abstract class _$CloseTariffRequestCopyWith<$Res> implements $CloseTariffRequest
   factory _$CloseTariffRequestCopyWith(_CloseTariffRequest value, $Res Function(_CloseTariffRequest) then) =
       __$CloseTariffRequestCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'tariff_id') int? tariffId, @JsonKey(name: 'close_date') String? closeDate});
+  $Res call({@JsonKey(name: 'close_date') String? closeDate});
 }
 
 /// @nodoc
@@ -104,14 +93,9 @@ class __$CloseTariffRequestCopyWithImpl<$Res> extends _$CloseTariffRequestCopyWi
 
   @override
   $Res call({
-    Object? tariffId = freezed,
     Object? closeDate = freezed,
   }) {
     return _then(_CloseTariffRequest(
-      tariffId: tariffId == freezed
-          ? _value.tariffId
-          : tariffId // ignore: cast_nullable_to_non_nullable
-              as int?,
       closeDate: closeDate == freezed
           ? _value.closeDate
           : closeDate // ignore: cast_nullable_to_non_nullable
@@ -123,15 +107,10 @@ class __$CloseTariffRequestCopyWithImpl<$Res> extends _$CloseTariffRequestCopyWi
 /// @nodoc
 @JsonSerializable()
 class _$_CloseTariffRequest implements _CloseTariffRequest {
-  const _$_CloseTariffRequest({@JsonKey(name: 'tariff_id') this.tariffId, @JsonKey(name: 'close_date') this.closeDate});
+  const _$_CloseTariffRequest({@JsonKey(name: 'close_date') this.closeDate});
 
   factory _$_CloseTariffRequest.fromJson(Map<String, dynamic> json) => _$$_CloseTariffRequestFromJson(json);
 
-  @override
-
-  /// .
-  @JsonKey(name: 'tariff_id')
-  final int? tariffId;
   @override
 
   /// .
@@ -140,23 +119,19 @@ class _$_CloseTariffRequest implements _CloseTariffRequest {
 
   @override
   String toString() {
-    return 'CloseTariffRequest(tariffId: $tariffId, closeDate: $closeDate)';
+    return 'CloseTariffRequest(closeDate: $closeDate)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _CloseTariffRequest &&
-            (identical(other.tariffId, tariffId) || const DeepCollectionEquality().equals(other.tariffId, tariffId)) &&
             (identical(other.closeDate, closeDate) ||
                 const DeepCollectionEquality().equals(other.closeDate, closeDate)));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(tariffId) ^
-      const DeepCollectionEquality().hash(closeDate);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(closeDate);
 
   @JsonKey(ignore: true)
   @override
@@ -170,17 +145,10 @@ class _$_CloseTariffRequest implements _CloseTariffRequest {
 }
 
 abstract class _CloseTariffRequest implements CloseTariffRequest {
-  const factory _CloseTariffRequest(
-      {@JsonKey(name: 'tariff_id') int? tariffId,
-      @JsonKey(name: 'close_date') String? closeDate}) = _$_CloseTariffRequest;
+  const factory _CloseTariffRequest({@JsonKey(name: 'close_date') String? closeDate}) = _$_CloseTariffRequest;
 
   factory _CloseTariffRequest.fromJson(Map<String, dynamic> json) = _$_CloseTariffRequest.fromJson;
 
-  @override
-
-  /// .
-  @JsonKey(name: 'tariff_id')
-  int? get tariffId => throw _privateConstructorUsedError;
   @override
 
   /// .

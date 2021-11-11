@@ -10,6 +10,7 @@ export 'src/interfaces/i_websocket_event.dart';
 // Generated enums:
 export 'src/enums/call_type.dart';
 export 'src/enums/chat_type.dart';
+export 'src/enums/currency.dart';
 export 'src/enums/group_status.dart';
 export 'src/enums/markup_type.dart';
 export 'src/enums/mediasubtype.dart';
@@ -87,7 +88,6 @@ export 'src/models/country/country.dart';
 export 'src/models/create_personal_account_request/create_personal_account_request.dart';
 export 'src/models/create_personal_account_response/create_personal_account_response.dart';
 export 'src/models/create_tariff_request/create_tariff_request.dart';
-export 'src/models/create_tariff_response/create_tariff_response.dart';
 export 'src/models/d_l_p_basic_data/d_l_p_basic_data.dart';
 export 'src/models/d_l_p_event/d_l_p_event.dart';
 export 'src/models/d_l_p_file_data/d_l_p_file_data.dart';
@@ -114,8 +114,6 @@ export 'src/models/get_personal_account_by_i_d_request/get_personal_account_by_i
 export 'src/models/get_personal_account_by_i_d_response/get_personal_account_by_i_d_response.dart';
 export 'src/models/get_personal_accounts_list_request/get_personal_accounts_list_request.dart';
 export 'src/models/get_personal_accounts_list_response/get_personal_accounts_list_response.dart';
-export 'src/models/get_tariff_by_id_request/get_tariff_by_id_request.dart';
-export 'src/models/get_tariff_by_id_response/get_tariff_by_id_response.dart';
 export 'src/models/get_tariffs_list_response/get_tariffs_list_response.dart';
 export 'src/models/group_access_request/group_access_request.dart';
 export 'src/models/group_membership/group_membership.dart';
@@ -239,7 +237,6 @@ export 'src/models/server_upload_updated_params/server_upload_updated_params.dar
 export 'src/models/server_warning/server_warning.dart';
 export 'src/models/server_warning_params/server_warning_params.dart';
 export 'src/models/session/session.dart';
-export 'src/models/set_tariff_as_default_request/set_tariff_as_default_request.dart';
 export 'src/models/set_tariff_as_default_response/set_tariff_as_default_response.dart';
 export 'src/models/sharp_link/sharp_link.dart';
 export 'src/models/sharp_link_meta/sharp_link_meta.dart';

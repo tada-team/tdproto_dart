@@ -8,17 +8,20 @@ part 'create_tariff_request.g.dart';
 @freezed
 class CreateTariffRequest with _$CreateTariffRequest {
   const factory CreateTariffRequest({
-    /// Tariff id.
-    @JsonKey(name: 'tariff_id') int? tariffId,
+    /// Date of closing tariff.
+    @JsonKey(name: 'close_date') String? closeDate,
 
-    /// Name of tariff.
-    @JsonKey(name: 'tariff_name') String? tariffName,
+    /// Cost of one workplace.
+    @JsonKey(name: 'cost_workplace') String? costWorkplace,
 
-    /// Count of free workspaces.
-    @JsonKey(name: 'free_workplace') int? freeWorkplace,
+    /// Currency of tariff.
+    @JsonKey(name: 'currency') required String currency,
 
     /// Disk space limit per user.
     @JsonKey(name: 'disk_space_quota') String? diskSpaceQuota,
+
+    /// Count of free workspaces.
+    @JsonKey(name: 'free_workplace') int? freeWorkplace,
 
     /// Flag of availability of free seats when exceeding FreeWorkplace.
     @Default(false) @JsonKey(name: 'billing_free') bool? isBillingFree,
@@ -26,14 +29,8 @@ class CreateTariffRequest with _$CreateTariffRequest {
     /// Flag of accounting without looking at the number of days before the billing period.
     @Default(false) @JsonKey(name: 'billing_full_time') bool? isBillingFullTime,
 
-    /// Number of paid days.
-    @JsonKey(name: 'period_days') int? periodDays,
-
-    /// Cost of one workplace.
-    @JsonKey(name: 'cost_workplace') String? costWorkplace,
-
-    /// Currency of tariff in ISO.
-    @JsonKey(name: 'currency') String? currency,
+    /// Default tariff flag that is set when registering an account.
+    @Default(false) @JsonKey(name: 'default_tariff') bool? isDefaultTariff,
 
     /// Flag for accounting for unspent days when switching to a new tariff.
     @Default(false) @JsonKey(name: 'recalc_change_tariff') bool? isRecalcChangeTariff,
@@ -44,17 +41,14 @@ class CreateTariffRequest with _$CreateTariffRequest {
     /// Maximum count of users in video conference.
     @JsonKey(name: 'max_video_user') int? maxVideoUser,
 
-    /// Default tariff flag that is set when registering an account.
-    @Default(false) @JsonKey(name: 'default_tariff') bool? isDefaultTariff,
-
     /// Date of opening tariff.
     @JsonKey(name: 'open_date') String? openDate,
 
-    /// Date of closing tariff.
-    @JsonKey(name: 'close_date') String? closeDate,
+    /// Number of paid days.
+    @JsonKey(name: 'period_days') required int periodDays,
 
-    /// Status of tariff.
-    @JsonKey(name: 'status') String? status,
+    /// Name of tariff.
+    @JsonKey(name: 'tariff_name') required String tariffName,
   }) = _CreateTariffRequest;
 
   factory CreateTariffRequest.fromJson(Map<String, dynamic> json) => _$CreateTariffRequestFromJson(json);

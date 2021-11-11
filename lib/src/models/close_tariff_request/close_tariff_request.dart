@@ -9,9 +9,6 @@ part 'close_tariff_request.g.dart';
 class CloseTariffRequest with _$CloseTariffRequest {
   const factory CloseTariffRequest({
     /// .
-    @JsonKey(name: 'tariff_id') int? tariffId,
-
-    /// .
     @JsonKey(name: 'close_date') String? closeDate,
   }) = _CloseTariffRequest;
 
