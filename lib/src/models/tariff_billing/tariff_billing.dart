@@ -4,7 +4,7 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'tariff_billing.freezed.dart';
 part 'tariff_billing.g.dart';
 
-/// TariffBilling struct of billing api.
+/// Tariff struct of billing API.
 @freezed
 class TariffBilling with _$TariffBilling {
   const factory TariffBilling({
@@ -18,22 +18,22 @@ class TariffBilling with _$TariffBilling {
     @JsonKey(name: 'currency') required String currency,
 
     /// Disk space limit per user.
-    @JsonKey(name: 'disk_space_quota') required String diskSpaceQuota,
+    @JsonKey(name: 'disk_space_quota_mb') required String diskSpaceQuotaMb,
 
     /// Count of free workspaces.
-    @JsonKey(name: 'free_workplace') required int freeWorkplace,
+    @JsonKey(name: 'free_workplaces') required int freeWorkplaces,
 
     /// Flag of availability of free seats when exceeding FreeWorkplace.
-    @JsonKey(name: 'billing_free') required bool isBillingFree,
+    @JsonKey(name: 'is_billing_free') required bool isBillingFree,
 
     /// Flag of accounting without looking at the number of days before the billing period.
-    @JsonKey(name: 'billing_full_time') required bool isBillingFullTime,
+    @JsonKey(name: 'is_billing_full_time') required bool isBillingFullTime,
 
     /// Default tariff flag that is set when registering an account.
-    @JsonKey(name: 'default_tariff') required bool isDefaultTariff,
+    @JsonKey(name: 'is_default_tariff') required bool isDefaultTariff,
 
     /// Flag for accounting for unspent days when switching to a new tariff.
-    @JsonKey(name: 'recalc_change_tariff') required bool isRecalcChangeTariff,
+    @JsonKey(name: 'is_recalc_change_tariff') required bool isRecalcChangeTariff,
 
     /// Maximum count of users in voice conference.
     @JsonKey(name: 'max_voice_user') required int maxVoiceUser,

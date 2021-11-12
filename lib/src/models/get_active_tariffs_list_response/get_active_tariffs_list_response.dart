@@ -4,7 +4,7 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'get_active_tariffs_list_response.freezed.dart';
 part 'get_active_tariffs_list_response.g.dart';
 
-/// GetActiveTariffsListResponse response on get active tariffs list.
+/// Response from getting a list of active tariffs.
 @freezed
 class GetActiveTariffsListResponse with _$GetActiveTariffsListResponse {
   const factory GetActiveTariffsListResponse({

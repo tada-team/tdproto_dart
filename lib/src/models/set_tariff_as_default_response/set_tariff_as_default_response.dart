@@ -4,7 +4,7 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'set_tariff_as_default_response.freezed.dart';
 part 'set_tariff_as_default_response.g.dart';
 
-/// SetTariffAsDefaultResponse response on set tariff as default.
+/// Response from setting the tariff as default.
 @freezed
 class SetTariffAsDefaultResponse with _$SetTariffAsDefaultResponse {
   const factory SetTariffAsDefaultResponse({

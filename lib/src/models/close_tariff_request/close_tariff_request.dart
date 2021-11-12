@@ -4,7 +4,7 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'close_tariff_request.freezed.dart';
 part 'close_tariff_request.g.dart';
 
-/// CloseTariffRequest request on close(archive) tariff.
+/// Request to close (archive) the tariff.
 @freezed
 class CloseTariffRequest with _$CloseTariffRequest {
   const factory CloseTariffRequest({

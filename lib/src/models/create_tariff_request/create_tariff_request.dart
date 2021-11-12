@@ -4,7 +4,7 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'create_tariff_request.freezed.dart';
 part 'create_tariff_request.g.dart';
 
-/// CreateTariffRequest request on create tariff.
+/// Request to create the tariff.
 @freezed
 class CreateTariffRequest with _$CreateTariffRequest {
   const factory CreateTariffRequest({
@@ -18,22 +18,22 @@ class CreateTariffRequest with _$CreateTariffRequest {
     @JsonKey(name: 'currency') required String currency,
 
     /// Disk space limit per user.
-    @JsonKey(name: 'disk_space_quota') String? diskSpaceQuota,
+    @JsonKey(name: 'disk_space_quota_mb') String? diskSpaceQuotaMb,
 
     /// Count of free workspaces.
-    @JsonKey(name: 'free_workplace') int? freeWorkplace,
+    @JsonKey(name: 'free_workplaces') int? freeWorkplaces,
 
     /// Flag of availability of free seats when exceeding FreeWorkplace.
-    @Default(false) @JsonKey(name: 'billing_free') bool? isBillingFree,
+    @Default(false) @JsonKey(name: 'is_billing_free') bool? isBillingFree,
 
     /// Flag of accounting without looking at the number of days before the billing period.
-    @Default(false) @JsonKey(name: 'billing_full_time') bool? isBillingFullTime,
+    @Default(false) @JsonKey(name: 'is_billing_full_time') bool? isBillingFullTime,
 
     /// Default tariff flag that is set when registering an account.
-    @Default(false) @JsonKey(name: 'default_tariff') bool? isDefaultTariff,
+    @Default(false) @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
 
     /// Flag for accounting for unspent days when switching to a new tariff.
-    @Default(false) @JsonKey(name: 'recalc_change_tariff') bool? isRecalcChangeTariff,
+    @Default(false) @JsonKey(name: 'is_recalc_change_tariff') bool? isRecalcChangeTariff,
 
     /// Maximum count of users in voice conference.
     @JsonKey(name: 'max_voice_user') int? maxVoiceUser,
