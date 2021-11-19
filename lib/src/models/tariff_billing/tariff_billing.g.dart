@@ -21,7 +21,7 @@ _$_TariffBilling _$$_TariffBillingFromJson(Map<String, dynamic> json) => _$_Tari
       openDate: json['open_date'] as String?,
       periodDays: json['period_days'] as int,
       status: json['status'] as String,
-      tariffId: json['tariff_id'] as int,
+      tariffId: json['tariff_id'] as String,
       tariffName: json['tariff_name'] as String,
     );
 

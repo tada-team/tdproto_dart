@@ -51,7 +51,7 @@ class TariffBilling with _$TariffBilling {
     @JsonKey(name: 'status') required String status,
 
     /// Tariff id.
-    @JsonKey(name: 'tariff_id') required int tariffId,
+    @JsonKey(name: 'tariff_id') required String tariffId,
 
     /// Name of tariff.
     @JsonKey(name: 'tariff_name') required String tariffName,

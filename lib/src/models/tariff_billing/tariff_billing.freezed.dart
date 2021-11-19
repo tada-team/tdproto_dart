@@ -36,7 +36,7 @@ class _$TariffBillingTearOff {
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'period_days') required int periodDays,
       @JsonKey(name: 'status') required String status,
-      @JsonKey(name: 'tariff_id') required int tariffId,
+      @JsonKey(name: 'tariff_id') required String tariffId,
       @JsonKey(name: 'tariff_name') required String tariffName}) {
     return _TariffBilling(
       closeDate: closeDate,
@@ -126,7 +126,7 @@ mixin _$TariffBilling {
 
   /// Tariff id.
   @JsonKey(name: 'tariff_id')
-  int get tariffId => throw _privateConstructorUsedError;
+  String get tariffId => throw _privateConstructorUsedError;
 
   /// Name of tariff.
   @JsonKey(name: 'tariff_name')
@@ -156,7 +156,7 @@ abstract class $TariffBillingCopyWith<$Res> {
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'period_days') int periodDays,
       @JsonKey(name: 'status') String status,
-      @JsonKey(name: 'tariff_id') int tariffId,
+      @JsonKey(name: 'tariff_id') String tariffId,
       @JsonKey(name: 'tariff_name') String tariffName});
 }
 
@@ -247,7 +247,7 @@ class _$TariffBillingCopyWithImpl<$Res> implements $TariffBillingCopyWith<$Res> 
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       tariffName: tariffName == freezed
           ? _value.tariffName
           : tariffName // ignore: cast_nullable_to_non_nullable
@@ -276,7 +276,7 @@ abstract class _$TariffBillingCopyWith<$Res> implements $TariffBillingCopyWith<$
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'period_days') int periodDays,
       @JsonKey(name: 'status') String status,
-      @JsonKey(name: 'tariff_id') int tariffId,
+      @JsonKey(name: 'tariff_id') String tariffId,
       @JsonKey(name: 'tariff_name') String tariffName});
 }
 
@@ -368,7 +368,7 @@ class __$TariffBillingCopyWithImpl<$Res> extends _$TariffBillingCopyWithImpl<$Re
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       tariffName: tariffName == freezed
           ? _value.tariffName
           : tariffName // ignore: cast_nullable_to_non_nullable
@@ -474,7 +474,7 @@ class _$_TariffBilling implements _TariffBilling {
 
   /// Tariff id.
   @JsonKey(name: 'tariff_id')
-  final int tariffId;
+  final String tariffId;
   @override
 
   /// Name of tariff.
@@ -567,7 +567,7 @@ abstract class _TariffBilling implements TariffBilling {
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'period_days') required int periodDays,
       @JsonKey(name: 'status') required String status,
-      @JsonKey(name: 'tariff_id') required int tariffId,
+      @JsonKey(name: 'tariff_id') required String tariffId,
       @JsonKey(name: 'tariff_name') required String tariffName}) = _$_TariffBilling;
 
   factory _TariffBilling.fromJson(Map<String, dynamic> json) = _$_TariffBilling.fromJson;
@@ -646,7 +646,7 @@ abstract class _TariffBilling implements TariffBilling {
 
   /// Tariff id.
   @JsonKey(name: 'tariff_id')
-  int get tariffId => throw _privateConstructorUsedError;
+  String get tariffId => throw _privateConstructorUsedError;
   @override
 
   /// Name of tariff.
