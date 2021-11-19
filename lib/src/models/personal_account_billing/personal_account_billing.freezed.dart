@@ -22,13 +22,13 @@ class _$PersonalAccountBillingTearOff {
   const _$PersonalAccountBillingTearOff();
 
   _PersonalAccountBilling call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') required String ownerUuid,
-      @JsonKey(name: 'tariff_id') required int tariffId,
+      @JsonKey(name: 'tariff_id') required String tariffId,
       @JsonKey(name: 'tariff_name') required String tariffName,
-      @JsonKey(name: 'discount_id') required int discountId,
+      @JsonKey(name: 'discount_id') required String discountId,
       @JsonKey(name: 'discount_amount') required int discountAmount,
       @JsonKey(name: 'status') required String status,
       @JsonKey(name: 'next_billing_date') required String nextBillingDate,
@@ -68,7 +68,7 @@ const $PersonalAccountBilling = _$PersonalAccountBillingTearOff();
 mixin _$PersonalAccountBilling {
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  int? get personalAccountId => throw _privateConstructorUsedError;
+  String? get personalAccountId => throw _privateConstructorUsedError;
 
   /// Full name of owner personal account.
   @JsonKey(name: 'full_name')
@@ -84,7 +84,7 @@ mixin _$PersonalAccountBilling {
 
   /// ID Tariff on this personal account.
   @JsonKey(name: 'tariff_id')
-  int get tariffId => throw _privateConstructorUsedError;
+  String get tariffId => throw _privateConstructorUsedError;
 
   /// Name Tariff on this personal account.
   @JsonKey(name: 'tariff_name')
@@ -92,7 +92,7 @@ mixin _$PersonalAccountBilling {
 
   /// ID Discount on personal account.
   @JsonKey(name: 'discount_id')
-  int get discountId => throw _privateConstructorUsedError;
+  String get discountId => throw _privateConstructorUsedError;
 
   /// Amount of Discount on personal account.
   @JsonKey(name: 'discount_amount')
@@ -136,13 +136,13 @@ abstract class $PersonalAccountBillingCopyWith<$Res> {
   factory $PersonalAccountBillingCopyWith(PersonalAccountBilling value, $Res Function(PersonalAccountBilling) then) =
       _$PersonalAccountBillingCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') String ownerUuid,
-      @JsonKey(name: 'tariff_id') int tariffId,
+      @JsonKey(name: 'tariff_id') String tariffId,
       @JsonKey(name: 'tariff_name') String tariffName,
-      @JsonKey(name: 'discount_id') int discountId,
+      @JsonKey(name: 'discount_id') String discountId,
       @JsonKey(name: 'discount_amount') int discountAmount,
       @JsonKey(name: 'status') String status,
       @JsonKey(name: 'next_billing_date') String nextBillingDate,
@@ -183,7 +183,7 @@ class _$PersonalAccountBillingCopyWithImpl<$Res> implements $PersonalAccountBill
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       fullName: fullName == freezed
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
@@ -199,7 +199,7 @@ class _$PersonalAccountBillingCopyWithImpl<$Res> implements $PersonalAccountBill
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       tariffName: tariffName == freezed
           ? _value.tariffName
           : tariffName // ignore: cast_nullable_to_non_nullable
@@ -207,7 +207,7 @@ class _$PersonalAccountBillingCopyWithImpl<$Res> implements $PersonalAccountBill
       discountId: discountId == freezed
           ? _value.discountId
           : discountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       discountAmount: discountAmount == freezed
           ? _value.discountAmount
           : discountAmount // ignore: cast_nullable_to_non_nullable
@@ -250,13 +250,13 @@ abstract class _$PersonalAccountBillingCopyWith<$Res> implements $PersonalAccoun
       __$PersonalAccountBillingCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') String ownerUuid,
-      @JsonKey(name: 'tariff_id') int tariffId,
+      @JsonKey(name: 'tariff_id') String tariffId,
       @JsonKey(name: 'tariff_name') String tariffName,
-      @JsonKey(name: 'discount_id') int discountId,
+      @JsonKey(name: 'discount_id') String discountId,
       @JsonKey(name: 'discount_amount') int discountAmount,
       @JsonKey(name: 'status') String status,
       @JsonKey(name: 'next_billing_date') String nextBillingDate,
@@ -298,7 +298,7 @@ class __$PersonalAccountBillingCopyWithImpl<$Res> extends _$PersonalAccountBilli
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       fullName: fullName == freezed
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
@@ -314,7 +314,7 @@ class __$PersonalAccountBillingCopyWithImpl<$Res> extends _$PersonalAccountBilli
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       tariffName: tariffName == freezed
           ? _value.tariffName
           : tariffName // ignore: cast_nullable_to_non_nullable
@@ -322,7 +322,7 @@ class __$PersonalAccountBillingCopyWithImpl<$Res> extends _$PersonalAccountBilli
       discountId: discountId == freezed
           ? _value.discountId
           : discountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       discountAmount: discountAmount == freezed
           ? _value.discountAmount
           : discountAmount // ignore: cast_nullable_to_non_nullable
@@ -385,7 +385,7 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
 
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  final int? personalAccountId;
+  final String? personalAccountId;
   @override
 
   /// Full name of owner personal account.
@@ -405,7 +405,7 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
 
   /// ID Tariff on this personal account.
   @JsonKey(name: 'tariff_id')
-  final int tariffId;
+  final String tariffId;
   @override
 
   /// Name Tariff on this personal account.
@@ -415,7 +415,7 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
 
   /// ID Discount on personal account.
   @JsonKey(name: 'discount_id')
-  final int discountId;
+  final String discountId;
   @override
 
   /// Amount of Discount on personal account.
@@ -526,13 +526,13 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
 
 abstract class _PersonalAccountBilling implements PersonalAccountBilling {
   const factory _PersonalAccountBilling(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') required String ownerUuid,
-      @JsonKey(name: 'tariff_id') required int tariffId,
+      @JsonKey(name: 'tariff_id') required String tariffId,
       @JsonKey(name: 'tariff_name') required String tariffName,
-      @JsonKey(name: 'discount_id') required int discountId,
+      @JsonKey(name: 'discount_id') required String discountId,
       @JsonKey(name: 'discount_amount') required int discountAmount,
       @JsonKey(name: 'status') required String status,
       @JsonKey(name: 'next_billing_date') required String nextBillingDate,
@@ -548,7 +548,7 @@ abstract class _PersonalAccountBilling implements PersonalAccountBilling {
 
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  int? get personalAccountId => throw _privateConstructorUsedError;
+  String? get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// Full name of owner personal account.
@@ -568,7 +568,7 @@ abstract class _PersonalAccountBilling implements PersonalAccountBilling {
 
   /// ID Tariff on this personal account.
   @JsonKey(name: 'tariff_id')
-  int get tariffId => throw _privateConstructorUsedError;
+  String get tariffId => throw _privateConstructorUsedError;
   @override
 
   /// Name Tariff on this personal account.
@@ -578,7 +578,7 @@ abstract class _PersonalAccountBilling implements PersonalAccountBilling {
 
   /// ID Discount on personal account.
   @JsonKey(name: 'discount_id')
-  int get discountId => throw _privateConstructorUsedError;
+  String get discountId => throw _privateConstructorUsedError;
   @override
 
   /// Amount of Discount on personal account.

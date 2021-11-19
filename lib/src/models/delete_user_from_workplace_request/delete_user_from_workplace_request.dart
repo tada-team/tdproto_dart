@@ -9,7 +9,7 @@ part 'delete_user_from_workplace_request.g.dart';
 class DeleteUserFromWorkplaceRequest with _$DeleteUserFromWorkplaceRequest {
   const factory DeleteUserFromWorkplaceRequest({
     /// .
-    @JsonKey(name: 'personal_account_id') int? personalAccountId,
+    @JsonKey(name: 'personal_account_id') String? personalAccountId,
 
     /// .
     @JsonKey(name: 'user_uuid') String? userUuid,

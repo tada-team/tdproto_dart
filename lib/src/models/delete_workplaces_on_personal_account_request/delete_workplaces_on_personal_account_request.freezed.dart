@@ -22,7 +22,7 @@ class _$DeleteWorkplacesOnPersonalAccountRequestTearOff {
   const _$DeleteWorkplacesOnPersonalAccountRequestTearOff();
 
   _DeleteWorkplacesOnPersonalAccountRequest call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'count_workplaces') int? countWorkplaces}) {
     return _DeleteWorkplacesOnPersonalAccountRequest(
       personalAccountId: personalAccountId,
@@ -42,7 +42,7 @@ const $DeleteWorkplacesOnPersonalAccountRequest = _$DeleteWorkplacesOnPersonalAc
 mixin _$DeleteWorkplacesOnPersonalAccountRequest {
   /// .
   @JsonKey(name: 'personal_account_id')
-  int? get personalAccountId => throw _privateConstructorUsedError;
+  String? get personalAccountId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'count_workplaces')
@@ -60,7 +60,7 @@ abstract class $DeleteWorkplacesOnPersonalAccountRequestCopyWith<$Res> {
           $Res Function(DeleteWorkplacesOnPersonalAccountRequest) then) =
       _$DeleteWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'count_workplaces') int? countWorkplaces});
 }
 
@@ -82,7 +82,7 @@ class _$DeleteWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       countWorkplaces: countWorkplaces == freezed
           ? _value.countWorkplaces
           : countWorkplaces // ignore: cast_nullable_to_non_nullable
@@ -99,7 +99,7 @@ abstract class _$DeleteWorkplacesOnPersonalAccountRequestCopyWith<$Res>
       __$DeleteWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'count_workplaces') int? countWorkplaces});
 }
 
@@ -123,7 +123,7 @@ class __$DeleteWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       countWorkplaces: countWorkplaces == freezed
           ? _value.countWorkplaces
           : countWorkplaces // ignore: cast_nullable_to_non_nullable
@@ -146,7 +146,7 @@ class _$_DeleteWorkplacesOnPersonalAccountRequest implements _DeleteWorkplacesOn
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  final int? personalAccountId;
+  final String? personalAccountId;
   @override
 
   /// .
@@ -188,7 +188,7 @@ class _$_DeleteWorkplacesOnPersonalAccountRequest implements _DeleteWorkplacesOn
 
 abstract class _DeleteWorkplacesOnPersonalAccountRequest implements DeleteWorkplacesOnPersonalAccountRequest {
   const factory _DeleteWorkplacesOnPersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'count_workplaces') int? countWorkplaces}) = _$_DeleteWorkplacesOnPersonalAccountRequest;
 
   factory _DeleteWorkplacesOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =
@@ -198,7 +198,7 @@ abstract class _DeleteWorkplacesOnPersonalAccountRequest implements DeleteWorkpl
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  int? get personalAccountId => throw _privateConstructorUsedError;
+  String? get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .

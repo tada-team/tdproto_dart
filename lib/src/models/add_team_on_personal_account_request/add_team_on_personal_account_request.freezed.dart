@@ -22,7 +22,7 @@ class _$AddTeamOnPersonalAccountRequestTearOff {
   const _$AddTeamOnPersonalAccountRequestTearOff();
 
   _AddTeamOnPersonalAccountRequest call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'team_uuid') String? teamUuid,
       @JsonKey(name: 'delete_date') String? deleteDate}) {
     return _AddTeamOnPersonalAccountRequest(
@@ -44,7 +44,7 @@ const $AddTeamOnPersonalAccountRequest = _$AddTeamOnPersonalAccountRequestTearOf
 mixin _$AddTeamOnPersonalAccountRequest {
   /// .
   @JsonKey(name: 'personal_account_id')
-  int? get personalAccountId => throw _privateConstructorUsedError;
+  String? get personalAccountId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'team_uuid')
@@ -66,7 +66,7 @@ abstract class $AddTeamOnPersonalAccountRequestCopyWith<$Res> {
           AddTeamOnPersonalAccountRequest value, $Res Function(AddTeamOnPersonalAccountRequest) then) =
       _$AddTeamOnPersonalAccountRequestCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'team_uuid') String? teamUuid,
       @JsonKey(name: 'delete_date') String? deleteDate});
 }
@@ -89,7 +89,7 @@ class _$AddTeamOnPersonalAccountRequestCopyWithImpl<$Res> implements $AddTeamOnP
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
@@ -110,7 +110,7 @@ abstract class _$AddTeamOnPersonalAccountRequestCopyWith<$Res>
       __$AddTeamOnPersonalAccountRequestCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'team_uuid') String? teamUuid,
       @JsonKey(name: 'delete_date') String? deleteDate});
 }
@@ -135,7 +135,7 @@ class __$AddTeamOnPersonalAccountRequestCopyWithImpl<$Res> extends _$AddTeamOnPe
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
@@ -163,7 +163,7 @@ class _$_AddTeamOnPersonalAccountRequest implements _AddTeamOnPersonalAccountReq
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  final int? personalAccountId;
+  final String? personalAccountId;
   @override
 
   /// .
@@ -211,7 +211,7 @@ class _$_AddTeamOnPersonalAccountRequest implements _AddTeamOnPersonalAccountReq
 
 abstract class _AddTeamOnPersonalAccountRequest implements AddTeamOnPersonalAccountRequest {
   const factory _AddTeamOnPersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'team_uuid') String? teamUuid,
       @JsonKey(name: 'delete_date') String? deleteDate}) = _$_AddTeamOnPersonalAccountRequest;
 
@@ -222,7 +222,7 @@ abstract class _AddTeamOnPersonalAccountRequest implements AddTeamOnPersonalAcco
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  int? get personalAccountId => throw _privateConstructorUsedError;
+  String? get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .

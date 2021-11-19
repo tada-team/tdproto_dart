@@ -22,7 +22,7 @@ class _$DeleteTeamFromPersonalAccountRequestTearOff {
   const _$DeleteTeamFromPersonalAccountRequestTearOff();
 
   _DeleteTeamFromPersonalAccountRequest call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'team_uuid') String? teamUuid,
       @JsonKey(name: 'delete_date') String? deleteDate}) {
     return _DeleteTeamFromPersonalAccountRequest(
@@ -44,7 +44,7 @@ const $DeleteTeamFromPersonalAccountRequest = _$DeleteTeamFromPersonalAccountReq
 mixin _$DeleteTeamFromPersonalAccountRequest {
   /// .
   @JsonKey(name: 'personal_account_id')
-  int? get personalAccountId => throw _privateConstructorUsedError;
+  String? get personalAccountId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'team_uuid')
@@ -66,7 +66,7 @@ abstract class $DeleteTeamFromPersonalAccountRequestCopyWith<$Res> {
           DeleteTeamFromPersonalAccountRequest value, $Res Function(DeleteTeamFromPersonalAccountRequest) then) =
       _$DeleteTeamFromPersonalAccountRequestCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'team_uuid') String? teamUuid,
       @JsonKey(name: 'delete_date') String? deleteDate});
 }
@@ -90,7 +90,7 @@ class _$DeleteTeamFromPersonalAccountRequestCopyWithImpl<$Res>
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
@@ -111,7 +111,7 @@ abstract class _$DeleteTeamFromPersonalAccountRequestCopyWith<$Res>
       __$DeleteTeamFromPersonalAccountRequestCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'team_uuid') String? teamUuid,
       @JsonKey(name: 'delete_date') String? deleteDate});
 }
@@ -137,7 +137,7 @@ class __$DeleteTeamFromPersonalAccountRequestCopyWithImpl<$Res>
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
@@ -165,7 +165,7 @@ class _$_DeleteTeamFromPersonalAccountRequest implements _DeleteTeamFromPersonal
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  final int? personalAccountId;
+  final String? personalAccountId;
   @override
 
   /// .
@@ -213,7 +213,7 @@ class _$_DeleteTeamFromPersonalAccountRequest implements _DeleteTeamFromPersonal
 
 abstract class _DeleteTeamFromPersonalAccountRequest implements DeleteTeamFromPersonalAccountRequest {
   const factory _DeleteTeamFromPersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'team_uuid') String? teamUuid,
       @JsonKey(name: 'delete_date') String? deleteDate}) = _$_DeleteTeamFromPersonalAccountRequest;
 
@@ -224,7 +224,7 @@ abstract class _DeleteTeamFromPersonalAccountRequest implements DeleteTeamFromPe
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  int? get personalAccountId => throw _privateConstructorUsedError;
+  String? get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .

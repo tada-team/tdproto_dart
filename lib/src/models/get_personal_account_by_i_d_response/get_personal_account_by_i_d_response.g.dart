@@ -8,13 +8,13 @@ part of 'get_personal_account_by_i_d_response.dart';
 
 _$_GetPersonalAccountByIDResponse _$$_GetPersonalAccountByIDResponseFromJson(Map<String, dynamic> json) =>
     _$_GetPersonalAccountByIDResponse(
-      personalAccountId: json['personal_account_id'] as int?,
+      personalAccountId: json['personal_account_id'] as String?,
       fullName: json['full_name'] as String?,
       phone: json['phone'] as String?,
       ownerUuid: json['owner_uuid'] as String,
-      tariffId: json['tariff_id'] as int,
+      tariffId: json['tariff_id'] as String,
       tariffName: json['tariff_name'] as String,
-      discountId: json['discount_id'] as int,
+      discountId: json['discount_id'] as String,
       discountAmount: json['discount_amount'] as int,
       status: json['status'] as String,
       nextBillingDate: json['next_billing_date'] as String,

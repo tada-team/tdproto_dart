@@ -9,7 +9,7 @@ part 'activate_workplaces_on_personal_account_request.g.dart';
 class ActivateWorkplacesOnPersonalAccountRequest with _$ActivateWorkplacesOnPersonalAccountRequest {
   const factory ActivateWorkplacesOnPersonalAccountRequest({
     /// .
-    @JsonKey(name: 'personal_account_id') int? personalAccountId,
+    @JsonKey(name: 'personal_account_id') String? personalAccountId,
 
     /// .
     @JsonKey(name: 'count_workplaces') int? countWorkplaces,

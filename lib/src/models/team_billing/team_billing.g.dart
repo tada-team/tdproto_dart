@@ -7,7 +7,7 @@ part of 'team_billing.dart';
 // **************************************************************************
 
 _$_TeamBilling _$$_TeamBillingFromJson(Map<String, dynamic> json) => _$_TeamBilling(
-      personalAccountId: json['personal_account_id'] as int?,
+      personalAccountId: json['personal_account_id'] as String?,
       teamUuid: json['team_uuid'] as String?,
       deleteDate: json['delete_date'] as String?,
     );

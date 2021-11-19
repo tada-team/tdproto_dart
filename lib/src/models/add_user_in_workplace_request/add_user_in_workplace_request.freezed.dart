@@ -22,7 +22,7 @@ class _$AddUserInWorkplaceRequestTearOff {
   const _$AddUserInWorkplaceRequestTearOff();
 
   _AddUserInWorkplaceRequest call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId, @JsonKey(name: 'user_uuid') String? userUuid}) {
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId, @JsonKey(name: 'user_uuid') String? userUuid}) {
     return _AddUserInWorkplaceRequest(
       personalAccountId: personalAccountId,
       userUuid: userUuid,
@@ -41,7 +41,7 @@ const $AddUserInWorkplaceRequest = _$AddUserInWorkplaceRequestTearOff();
 mixin _$AddUserInWorkplaceRequest {
   /// .
   @JsonKey(name: 'personal_account_id')
-  int? get personalAccountId => throw _privateConstructorUsedError;
+  String? get personalAccountId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'user_uuid')
@@ -58,7 +58,7 @@ abstract class $AddUserInWorkplaceRequestCopyWith<$Res> {
           AddUserInWorkplaceRequest value, $Res Function(AddUserInWorkplaceRequest) then) =
       _$AddUserInWorkplaceRequestCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId, @JsonKey(name: 'user_uuid') String? userUuid});
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId, @JsonKey(name: 'user_uuid') String? userUuid});
 }
 
 /// @nodoc
@@ -78,7 +78,7 @@ class _$AddUserInWorkplaceRequestCopyWithImpl<$Res> implements $AddUserInWorkpla
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       userUuid: userUuid == freezed
           ? _value.userUuid
           : userUuid // ignore: cast_nullable_to_non_nullable
@@ -94,7 +94,7 @@ abstract class _$AddUserInWorkplaceRequestCopyWith<$Res> implements $AddUserInWo
       __$AddUserInWorkplaceRequestCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId, @JsonKey(name: 'user_uuid') String? userUuid});
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId, @JsonKey(name: 'user_uuid') String? userUuid});
 }
 
 /// @nodoc
@@ -116,7 +116,7 @@ class __$AddUserInWorkplaceRequestCopyWithImpl<$Res> extends _$AddUserInWorkplac
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       userUuid: userUuid == freezed
           ? _value.userUuid
           : userUuid // ignore: cast_nullable_to_non_nullable
@@ -138,7 +138,7 @@ class _$_AddUserInWorkplaceRequest implements _AddUserInWorkplaceRequest {
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  final int? personalAccountId;
+  final String? personalAccountId;
   @override
 
   /// .
@@ -178,7 +178,7 @@ class _$_AddUserInWorkplaceRequest implements _AddUserInWorkplaceRequest {
 
 abstract class _AddUserInWorkplaceRequest implements AddUserInWorkplaceRequest {
   const factory _AddUserInWorkplaceRequest(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'user_uuid') String? userUuid}) = _$_AddUserInWorkplaceRequest;
 
   factory _AddUserInWorkplaceRequest.fromJson(Map<String, dynamic> json) = _$_AddUserInWorkplaceRequest.fromJson;
@@ -187,7 +187,7 @@ abstract class _AddUserInWorkplaceRequest implements AddUserInWorkplaceRequest {
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  int? get personalAccountId => throw _privateConstructorUsedError;
+  String? get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .

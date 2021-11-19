@@ -9,7 +9,7 @@ part 'add_team_on_personal_account_request.g.dart';
 class AddTeamOnPersonalAccountRequest with _$AddTeamOnPersonalAccountRequest {
   const factory AddTeamOnPersonalAccountRequest({
     /// .
-    @JsonKey(name: 'personal_account_id') int? personalAccountId,
+    @JsonKey(name: 'personal_account_id') String? personalAccountId,
 
     /// .
     @JsonKey(name: 'team_uuid') String? teamUuid,

@@ -8,7 +8,7 @@ part of 'add_team_on_personal_account_request.dart';
 
 _$_AddTeamOnPersonalAccountRequest _$$_AddTeamOnPersonalAccountRequestFromJson(Map<String, dynamic> json) =>
     _$_AddTeamOnPersonalAccountRequest(
-      personalAccountId: json['personal_account_id'] as int?,
+      personalAccountId: json['personal_account_id'] as String?,
       teamUuid: json['team_uuid'] as String?,
       deleteDate: json['delete_date'] as String?,
     );

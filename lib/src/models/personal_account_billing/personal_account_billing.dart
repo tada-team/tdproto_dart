@@ -9,7 +9,7 @@ part 'personal_account_billing.g.dart';
 class PersonalAccountBilling with _$PersonalAccountBilling {
   const factory PersonalAccountBilling({
     /// PersonalAccountBilling ID.
-    @JsonKey(name: 'personal_account_id') int? personalAccountId,
+    @JsonKey(name: 'personal_account_id') String? personalAccountId,
 
     /// Full name of owner personal account.
     @JsonKey(name: 'full_name') String? fullName,
@@ -21,13 +21,13 @@ class PersonalAccountBilling with _$PersonalAccountBilling {
     @JsonKey(name: 'owner_uuid') required String ownerUuid,
 
     /// ID Tariff on this personal account.
-    @JsonKey(name: 'tariff_id') required int tariffId,
+    @JsonKey(name: 'tariff_id') required String tariffId,
 
     /// Name Tariff on this personal account.
     @JsonKey(name: 'tariff_name') required String tariffName,
 
     /// ID Discount on personal account.
-    @JsonKey(name: 'discount_id') required int discountId,
+    @JsonKey(name: 'discount_id') required String discountId,
 
     /// Amount of Discount on personal account.
     @JsonKey(name: 'discount_amount') required int discountAmount,

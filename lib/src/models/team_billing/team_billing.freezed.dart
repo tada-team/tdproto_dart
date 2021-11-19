@@ -22,7 +22,7 @@ class _$TeamBillingTearOff {
   const _$TeamBillingTearOff();
 
   _TeamBilling call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'team_uuid') String? teamUuid,
       @JsonKey(name: 'delete_date') String? deleteDate}) {
     return _TeamBilling(
@@ -44,7 +44,7 @@ const $TeamBilling = _$TeamBillingTearOff();
 mixin _$TeamBilling {
   /// .
   @JsonKey(name: 'personal_account_id')
-  int? get personalAccountId => throw _privateConstructorUsedError;
+  String? get personalAccountId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'team_uuid')
@@ -63,7 +63,7 @@ mixin _$TeamBilling {
 abstract class $TeamBillingCopyWith<$Res> {
   factory $TeamBillingCopyWith(TeamBilling value, $Res Function(TeamBilling) then) = _$TeamBillingCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'team_uuid') String? teamUuid,
       @JsonKey(name: 'delete_date') String? deleteDate});
 }
@@ -86,7 +86,7 @@ class _$TeamBillingCopyWithImpl<$Res> implements $TeamBillingCopyWith<$Res> {
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
@@ -105,7 +105,7 @@ abstract class _$TeamBillingCopyWith<$Res> implements $TeamBillingCopyWith<$Res>
       __$TeamBillingCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'team_uuid') String? teamUuid,
       @JsonKey(name: 'delete_date') String? deleteDate});
 }
@@ -128,7 +128,7 @@ class __$TeamBillingCopyWithImpl<$Res> extends _$TeamBillingCopyWithImpl<$Res> i
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
@@ -155,7 +155,7 @@ class _$_TeamBilling implements _TeamBilling {
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  final int? personalAccountId;
+  final String? personalAccountId;
   @override
 
   /// .
@@ -202,7 +202,7 @@ class _$_TeamBilling implements _TeamBilling {
 
 abstract class _TeamBilling implements TeamBilling {
   const factory _TeamBilling(
-      {@JsonKey(name: 'personal_account_id') int? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'team_uuid') String? teamUuid,
       @JsonKey(name: 'delete_date') String? deleteDate}) = _$_TeamBilling;
 
@@ -212,7 +212,7 @@ abstract class _TeamBilling implements TeamBilling {
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  int? get personalAccountId => throw _privateConstructorUsedError;
+  String? get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .
