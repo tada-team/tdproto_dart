@@ -75,8 +75,6 @@ export 'src/models/client_message_deleted_params/client_message_deleted_params.d
 export 'src/models/client_message_updated/client_message_updated.dart';
 export 'src/models/client_message_updated_params/client_message_updated_params.dart';
 export 'src/models/client_ping/client_ping.dart';
-export 'src/models/close_tariff_request/close_tariff_request.dart';
-export 'src/models/close_tariff_response/close_tariff_response.dart';
 export 'src/models/color_rule/color_rule.dart';
 export 'src/models/contact/contact.dart';
 export 'src/models/contact_custom_fields/contact_custom_fields.dart';
@@ -232,7 +230,6 @@ export 'src/models/server_upload_updated_params/server_upload_updated_params.dar
 export 'src/models/server_warning/server_warning.dart';
 export 'src/models/server_warning_params/server_warning_params.dart';
 export 'src/models/session/session.dart';
-export 'src/models/set_tariff_as_default_response/set_tariff_as_default_response.dart';
 export 'src/models/sharp_link/sharp_link.dart';
 export 'src/models/sharp_link_meta/sharp_link_meta.dart';
 export 'src/models/short_message/short_message.dart';
@@ -265,6 +262,7 @@ export 'src/models/terms/terms.dart';
 export 'src/models/theme/theme.dart';
 export 'src/models/unblock_personal_account_response/unblock_personal_account_response.dart';
 export 'src/models/unread/unread.dart';
+export 'src/models/update_tariff_request/update_tariff_request.dart';
 export 'src/models/upload/upload.dart';
 export 'src/models/upload_preview/upload_preview.dart';
 export 'src/models/upload_short_message/upload_short_message.dart';
