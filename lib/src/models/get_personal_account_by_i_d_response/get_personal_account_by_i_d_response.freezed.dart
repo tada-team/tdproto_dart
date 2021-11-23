@@ -22,7 +22,7 @@ class _$GetPersonalAccountByIDResponseTearOff {
   const _$GetPersonalAccountByIDResponseTearOff();
 
   _GetPersonalAccountByIDResponse call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') required String ownerUuid,
@@ -68,7 +68,7 @@ const $GetPersonalAccountByIDResponse = _$GetPersonalAccountByIDResponseTearOff(
 mixin _$GetPersonalAccountByIDResponse {
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  String? get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
 
   /// Full name of owner personal account.
   @JsonKey(name: 'full_name')
@@ -138,7 +138,7 @@ abstract class $GetPersonalAccountByIDResponseCopyWith<$Res> {
           GetPersonalAccountByIDResponse value, $Res Function(GetPersonalAccountByIDResponse) then) =
       _$GetPersonalAccountByIDResponseCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') String ownerUuid,
@@ -185,7 +185,7 @@ class _$GetPersonalAccountByIDResponseCopyWithImpl<$Res> implements $GetPersonal
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       fullName: fullName == freezed
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
@@ -253,7 +253,7 @@ abstract class _$GetPersonalAccountByIDResponseCopyWith<$Res> implements $GetPer
       __$GetPersonalAccountByIDResponseCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') String ownerUuid,
@@ -302,7 +302,7 @@ class __$GetPersonalAccountByIDResponseCopyWithImpl<$Res> extends _$GetPersonalA
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       fullName: fullName == freezed
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
@@ -367,7 +367,7 @@ class __$GetPersonalAccountByIDResponseCopyWithImpl<$Res> extends _$GetPersonalA
 @JsonSerializable()
 class _$_GetPersonalAccountByIDResponse implements _GetPersonalAccountByIDResponse {
   const _$_GetPersonalAccountByIDResponse(
-      {@JsonKey(name: 'personal_account_id') this.personalAccountId,
+      {@JsonKey(name: 'personal_account_id') required this.personalAccountId,
       @JsonKey(name: 'full_name') this.fullName,
       @JsonKey(name: 'phone') this.phone,
       @JsonKey(name: 'owner_uuid') required this.ownerUuid,
@@ -390,7 +390,7 @@ class _$_GetPersonalAccountByIDResponse implements _GetPersonalAccountByIDRespon
 
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  final String? personalAccountId;
+  final String personalAccountId;
   @override
 
   /// Full name of owner personal account.
@@ -531,7 +531,7 @@ class _$_GetPersonalAccountByIDResponse implements _GetPersonalAccountByIDRespon
 
 abstract class _GetPersonalAccountByIDResponse implements GetPersonalAccountByIDResponse {
   const factory _GetPersonalAccountByIDResponse(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') required String ownerUuid,
@@ -554,7 +554,7 @@ abstract class _GetPersonalAccountByIDResponse implements GetPersonalAccountByID
 
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  String? get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// Full name of owner personal account.

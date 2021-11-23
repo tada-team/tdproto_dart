@@ -22,7 +22,7 @@ class _$CreatePersonalAccountResponseTearOff {
   const _$CreatePersonalAccountResponseTearOff();
 
   _CreatePersonalAccountResponse call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') required String ownerUuid,
@@ -68,7 +68,7 @@ const $CreatePersonalAccountResponse = _$CreatePersonalAccountResponseTearOff();
 mixin _$CreatePersonalAccountResponse {
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  String? get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
 
   /// Full name of owner personal account.
   @JsonKey(name: 'full_name')
@@ -138,7 +138,7 @@ abstract class $CreatePersonalAccountResponseCopyWith<$Res> {
           CreatePersonalAccountResponse value, $Res Function(CreatePersonalAccountResponse) then) =
       _$CreatePersonalAccountResponseCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') String ownerUuid,
@@ -185,7 +185,7 @@ class _$CreatePersonalAccountResponseCopyWithImpl<$Res> implements $CreatePerson
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       fullName: fullName == freezed
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
@@ -253,7 +253,7 @@ abstract class _$CreatePersonalAccountResponseCopyWith<$Res> implements $CreateP
       __$CreatePersonalAccountResponseCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') String ownerUuid,
@@ -302,7 +302,7 @@ class __$CreatePersonalAccountResponseCopyWithImpl<$Res> extends _$CreatePersona
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       fullName: fullName == freezed
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
@@ -367,7 +367,7 @@ class __$CreatePersonalAccountResponseCopyWithImpl<$Res> extends _$CreatePersona
 @JsonSerializable()
 class _$_CreatePersonalAccountResponse implements _CreatePersonalAccountResponse {
   const _$_CreatePersonalAccountResponse(
-      {@JsonKey(name: 'personal_account_id') this.personalAccountId,
+      {@JsonKey(name: 'personal_account_id') required this.personalAccountId,
       @JsonKey(name: 'full_name') this.fullName,
       @JsonKey(name: 'phone') this.phone,
       @JsonKey(name: 'owner_uuid') required this.ownerUuid,
@@ -390,7 +390,7 @@ class _$_CreatePersonalAccountResponse implements _CreatePersonalAccountResponse
 
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  final String? personalAccountId;
+  final String personalAccountId;
   @override
 
   /// Full name of owner personal account.
@@ -531,7 +531,7 @@ class _$_CreatePersonalAccountResponse implements _CreatePersonalAccountResponse
 
 abstract class _CreatePersonalAccountResponse implements CreatePersonalAccountResponse {
   const factory _CreatePersonalAccountResponse(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') required String ownerUuid,
@@ -554,7 +554,7 @@ abstract class _CreatePersonalAccountResponse implements CreatePersonalAccountRe
 
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  String? get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// Full name of owner personal account.

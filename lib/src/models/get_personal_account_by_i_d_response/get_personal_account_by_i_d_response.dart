@@ -9,7 +9,7 @@ part 'get_personal_account_by_i_d_response.g.dart';
 class GetPersonalAccountByIDResponse with _$GetPersonalAccountByIDResponse {
   const factory GetPersonalAccountByIDResponse({
     /// PersonalAccountBilling ID.
-    @JsonKey(name: 'personal_account_id') String? personalAccountId,
+    @JsonKey(name: 'personal_account_id') required String personalAccountId,
 
     /// Full name of owner personal account.
     @JsonKey(name: 'full_name') String? fullName,

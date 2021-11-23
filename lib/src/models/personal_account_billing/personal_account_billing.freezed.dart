@@ -22,7 +22,7 @@ class _$PersonalAccountBillingTearOff {
   const _$PersonalAccountBillingTearOff();
 
   _PersonalAccountBilling call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') required String ownerUuid,
@@ -68,7 +68,7 @@ const $PersonalAccountBilling = _$PersonalAccountBillingTearOff();
 mixin _$PersonalAccountBilling {
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  String? get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
 
   /// Full name of owner personal account.
   @JsonKey(name: 'full_name')
@@ -136,7 +136,7 @@ abstract class $PersonalAccountBillingCopyWith<$Res> {
   factory $PersonalAccountBillingCopyWith(PersonalAccountBilling value, $Res Function(PersonalAccountBilling) then) =
       _$PersonalAccountBillingCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') String ownerUuid,
@@ -183,7 +183,7 @@ class _$PersonalAccountBillingCopyWithImpl<$Res> implements $PersonalAccountBill
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       fullName: fullName == freezed
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
@@ -250,7 +250,7 @@ abstract class _$PersonalAccountBillingCopyWith<$Res> implements $PersonalAccoun
       __$PersonalAccountBillingCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') String ownerUuid,
@@ -298,7 +298,7 @@ class __$PersonalAccountBillingCopyWithImpl<$Res> extends _$PersonalAccountBilli
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       fullName: fullName == freezed
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
@@ -363,7 +363,7 @@ class __$PersonalAccountBillingCopyWithImpl<$Res> extends _$PersonalAccountBilli
 @JsonSerializable()
 class _$_PersonalAccountBilling implements _PersonalAccountBilling {
   const _$_PersonalAccountBilling(
-      {@JsonKey(name: 'personal_account_id') this.personalAccountId,
+      {@JsonKey(name: 'personal_account_id') required this.personalAccountId,
       @JsonKey(name: 'full_name') this.fullName,
       @JsonKey(name: 'phone') this.phone,
       @JsonKey(name: 'owner_uuid') required this.ownerUuid,
@@ -385,7 +385,7 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
 
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  final String? personalAccountId;
+  final String personalAccountId;
   @override
 
   /// Full name of owner personal account.
@@ -526,7 +526,7 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
 
 abstract class _PersonalAccountBilling implements PersonalAccountBilling {
   const factory _PersonalAccountBilling(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'owner_uuid') required String ownerUuid,
@@ -548,7 +548,7 @@ abstract class _PersonalAccountBilling implements PersonalAccountBilling {
 
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  String? get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// Full name of owner personal account.
