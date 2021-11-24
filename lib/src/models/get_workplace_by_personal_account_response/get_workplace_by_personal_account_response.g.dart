@@ -8,9 +8,9 @@ part of 'get_workplace_by_personal_account_response.dart';
 
 _$_GetWorkplaceByPersonalAccountResponse _$$_GetWorkplaceByPersonalAccountResponseFromJson(Map<String, dynamic> json) =>
     _$_GetWorkplaceByPersonalAccountResponse(
-      personalAccountId: json['personal_account_id'] as int,
-      workplaceId: json['workplace_id'] as int?,
-      userId: json['user_id'] as int?,
+      personalAccountId: json['personal_account_id'] as String,
+      workplaceId: json['workplace_id'] as String?,
+      userId: json['user_id'] as String?,
       userUuid: json['user_uuid'] as String?,
     );
 

@@ -22,9 +22,9 @@ class _$GetWorkplaceByPersonalAccountResponseTearOff {
   const _$GetWorkplaceByPersonalAccountResponseTearOff();
 
   _GetWorkplaceByPersonalAccountResponse call(
-      {@JsonKey(name: 'personal_account_id') required int personalAccountId,
-      @JsonKey(name: 'workplace_id') int? workplaceId,
-      @JsonKey(name: 'user_id') int? userId,
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
+      @JsonKey(name: 'workplace_id') String? workplaceId,
+      @JsonKey(name: 'user_id') String? userId,
       @JsonKey(name: 'user_uuid') String? userUuid}) {
     return _GetWorkplaceByPersonalAccountResponse(
       personalAccountId: personalAccountId,
@@ -46,15 +46,15 @@ const $GetWorkplaceByPersonalAccountResponse = _$GetWorkplaceByPersonalAccountRe
 mixin _$GetWorkplaceByPersonalAccountResponse {
   /// .
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'workplace_id')
-  int? get workplaceId => throw _privateConstructorUsedError;
+  String? get workplaceId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'user_id')
-  int? get userId => throw _privateConstructorUsedError;
+  String? get userId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'user_uuid')
@@ -72,9 +72,9 @@ abstract class $GetWorkplaceByPersonalAccountResponseCopyWith<$Res> {
           GetWorkplaceByPersonalAccountResponse value, $Res Function(GetWorkplaceByPersonalAccountResponse) then) =
       _$GetWorkplaceByPersonalAccountResponseCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int personalAccountId,
-      @JsonKey(name: 'workplace_id') int? workplaceId,
-      @JsonKey(name: 'user_id') int? userId,
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
+      @JsonKey(name: 'workplace_id') String? workplaceId,
+      @JsonKey(name: 'user_id') String? userId,
       @JsonKey(name: 'user_uuid') String? userUuid});
 }
 
@@ -98,15 +98,15 @@ class _$GetWorkplaceByPersonalAccountResponseCopyWithImpl<$Res>
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       workplaceId: workplaceId == freezed
           ? _value.workplaceId
           : workplaceId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       userId: userId == freezed
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       userUuid: userUuid == freezed
           ? _value.userUuid
           : userUuid // ignore: cast_nullable_to_non_nullable
@@ -123,9 +123,9 @@ abstract class _$GetWorkplaceByPersonalAccountResponseCopyWith<$Res>
       __$GetWorkplaceByPersonalAccountResponseCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int personalAccountId,
-      @JsonKey(name: 'workplace_id') int? workplaceId,
-      @JsonKey(name: 'user_id') int? userId,
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
+      @JsonKey(name: 'workplace_id') String? workplaceId,
+      @JsonKey(name: 'user_id') String? userId,
       @JsonKey(name: 'user_uuid') String? userUuid});
 }
 
@@ -151,15 +151,15 @@ class __$GetWorkplaceByPersonalAccountResponseCopyWithImpl<$Res>
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       workplaceId: workplaceId == freezed
           ? _value.workplaceId
           : workplaceId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       userId: userId == freezed
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       userUuid: userUuid == freezed
           ? _value.userUuid
           : userUuid // ignore: cast_nullable_to_non_nullable
@@ -184,17 +184,17 @@ class _$_GetWorkplaceByPersonalAccountResponse implements _GetWorkplaceByPersona
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  final int personalAccountId;
+  final String personalAccountId;
   @override
 
   /// .
   @JsonKey(name: 'workplace_id')
-  final int? workplaceId;
+  final String? workplaceId;
   @override
 
   /// .
   @JsonKey(name: 'user_id')
-  final int? userId;
+  final String? userId;
   @override
 
   /// .
@@ -239,9 +239,9 @@ class _$_GetWorkplaceByPersonalAccountResponse implements _GetWorkplaceByPersona
 
 abstract class _GetWorkplaceByPersonalAccountResponse implements GetWorkplaceByPersonalAccountResponse {
   const factory _GetWorkplaceByPersonalAccountResponse(
-      {@JsonKey(name: 'personal_account_id') required int personalAccountId,
-      @JsonKey(name: 'workplace_id') int? workplaceId,
-      @JsonKey(name: 'user_id') int? userId,
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
+      @JsonKey(name: 'workplace_id') String? workplaceId,
+      @JsonKey(name: 'user_id') String? userId,
       @JsonKey(name: 'user_uuid') String? userUuid}) = _$_GetWorkplaceByPersonalAccountResponse;
 
   factory _GetWorkplaceByPersonalAccountResponse.fromJson(Map<String, dynamic> json) =
@@ -251,17 +251,17 @@ abstract class _GetWorkplaceByPersonalAccountResponse implements GetWorkplaceByP
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'workplace_id')
-  int? get workplaceId => throw _privateConstructorUsedError;
+  String? get workplaceId => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'user_id')
-  int? get userId => throw _privateConstructorUsedError;
+  String? get userId => throw _privateConstructorUsedError;
   @override
 
   /// .

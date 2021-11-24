@@ -8,8 +8,8 @@ part of 'add_workplaces_on_personal_account_request.dart';
 
 _$_AddWorkplacesOnPersonalAccountRequest _$$_AddWorkplacesOnPersonalAccountRequestFromJson(Map<String, dynamic> json) =>
     _$_AddWorkplacesOnPersonalAccountRequest(
-      personalAccountId: json['personal_account_id'] as String?,
-      countWorkplaces: json['count_workplaces'] as int?,
+      personalAccountId: json['personal_account_id'] as String,
+      countWorkplaces: json['count_workplaces'] as int,
     );
 
 Map<String, dynamic> _$$_AddWorkplacesOnPersonalAccountRequestToJson(

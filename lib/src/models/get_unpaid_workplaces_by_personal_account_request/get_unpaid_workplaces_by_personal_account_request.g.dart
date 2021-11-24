@@ -9,7 +9,7 @@ part of 'get_unpaid_workplaces_by_personal_account_request.dart';
 _$_GetUnpaidWorkplacesByPersonalAccountRequest _$$_GetUnpaidWorkplacesByPersonalAccountRequestFromJson(
         Map<String, dynamic> json) =>
     _$_GetUnpaidWorkplacesByPersonalAccountRequest(
-      personalAccountId: json['personal_account_id'] as int,
+      personalAccountId: json['personal_account_id'] as String,
     );
 
 Map<String, dynamic> _$$_GetUnpaidWorkplacesByPersonalAccountRequestToJson(

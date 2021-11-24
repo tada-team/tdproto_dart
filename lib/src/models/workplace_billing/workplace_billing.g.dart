@@ -7,9 +7,9 @@ part of 'workplace_billing.dart';
 // **************************************************************************
 
 _$_WorkplaceBilling _$$_WorkplaceBillingFromJson(Map<String, dynamic> json) => _$_WorkplaceBilling(
-      personalAccountId: json['personal_account_id'] as int,
-      workplaceId: json['workplace_id'] as int?,
-      userId: json['user_id'] as int?,
+      personalAccountId: json['personal_account_id'] as String,
+      workplaceId: json['workplace_id'] as String?,
+      userId: json['user_id'] as String?,
       userUuid: json['user_uuid'] as String?,
     );
 

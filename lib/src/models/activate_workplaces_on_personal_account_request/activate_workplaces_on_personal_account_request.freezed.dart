@@ -23,8 +23,8 @@ class _$ActivateWorkplacesOnPersonalAccountRequestTearOff {
   const _$ActivateWorkplacesOnPersonalAccountRequestTearOff();
 
   _ActivateWorkplacesOnPersonalAccountRequest call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'count_workplaces') int? countWorkplaces}) {
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
+      @JsonKey(name: 'count_workplaces') required int countWorkplaces}) {
     return _ActivateWorkplacesOnPersonalAccountRequest(
       personalAccountId: personalAccountId,
       countWorkplaces: countWorkplaces,
@@ -43,11 +43,11 @@ const $ActivateWorkplacesOnPersonalAccountRequest = _$ActivateWorkplacesOnPerson
 mixin _$ActivateWorkplacesOnPersonalAccountRequest {
   /// .
   @JsonKey(name: 'personal_account_id')
-  String? get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'count_workplaces')
-  int? get countWorkplaces => throw _privateConstructorUsedError;
+  int get countWorkplaces => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -61,8 +61,8 @@ abstract class $ActivateWorkplacesOnPersonalAccountRequestCopyWith<$Res> {
           $Res Function(ActivateWorkplacesOnPersonalAccountRequest) then) =
       _$ActivateWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'count_workplaces') int? countWorkplaces});
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
+      @JsonKey(name: 'count_workplaces') int countWorkplaces});
 }
 
 /// @nodoc
@@ -83,11 +83,11 @@ class _$ActivateWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       countWorkplaces: countWorkplaces == freezed
           ? _value.countWorkplaces
           : countWorkplaces // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as int,
     ));
   }
 }
@@ -100,8 +100,8 @@ abstract class _$ActivateWorkplacesOnPersonalAccountRequestCopyWith<$Res>
       __$ActivateWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'count_workplaces') int? countWorkplaces});
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
+      @JsonKey(name: 'count_workplaces') int countWorkplaces});
 }
 
 /// @nodoc
@@ -124,11 +124,11 @@ class __$ActivateWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       countWorkplaces: countWorkplaces == freezed
           ? _value.countWorkplaces
           : countWorkplaces // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as int,
     ));
   }
 }
@@ -137,8 +137,8 @@ class __$ActivateWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_ActivateWorkplacesOnPersonalAccountRequest implements _ActivateWorkplacesOnPersonalAccountRequest {
   const _$_ActivateWorkplacesOnPersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') this.personalAccountId,
-      @JsonKey(name: 'count_workplaces') this.countWorkplaces});
+      {@JsonKey(name: 'personal_account_id') required this.personalAccountId,
+      @JsonKey(name: 'count_workplaces') required this.countWorkplaces});
 
   factory _$_ActivateWorkplacesOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
       _$$_ActivateWorkplacesOnPersonalAccountRequestFromJson(json);
@@ -147,12 +147,12 @@ class _$_ActivateWorkplacesOnPersonalAccountRequest implements _ActivateWorkplac
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  final String? personalAccountId;
+  final String personalAccountId;
   @override
 
   /// .
   @JsonKey(name: 'count_workplaces')
-  final int? countWorkplaces;
+  final int countWorkplaces;
 
   @override
   String toString() {
@@ -189,8 +189,8 @@ class _$_ActivateWorkplacesOnPersonalAccountRequest implements _ActivateWorkplac
 
 abstract class _ActivateWorkplacesOnPersonalAccountRequest implements ActivateWorkplacesOnPersonalAccountRequest {
   const factory _ActivateWorkplacesOnPersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'count_workplaces') int? countWorkplaces}) = _$_ActivateWorkplacesOnPersonalAccountRequest;
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
+      @JsonKey(name: 'count_workplaces') required int countWorkplaces}) = _$_ActivateWorkplacesOnPersonalAccountRequest;
 
   factory _ActivateWorkplacesOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =
       _$_ActivateWorkplacesOnPersonalAccountRequest.fromJson;
@@ -199,12 +199,12 @@ abstract class _ActivateWorkplacesOnPersonalAccountRequest implements ActivateWo
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  String? get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'count_workplaces')
-  int? get countWorkplaces => throw _privateConstructorUsedError;
+  int get countWorkplaces => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ActivateWorkplacesOnPersonalAccountRequestCopyWith<_ActivateWorkplacesOnPersonalAccountRequest> get copyWith =>

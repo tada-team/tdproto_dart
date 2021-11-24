@@ -9,8 +9,8 @@ part of 'activate_workplaces_on_personal_account_request.dart';
 _$_ActivateWorkplacesOnPersonalAccountRequest _$$_ActivateWorkplacesOnPersonalAccountRequestFromJson(
         Map<String, dynamic> json) =>
     _$_ActivateWorkplacesOnPersonalAccountRequest(
-      personalAccountId: json['personal_account_id'] as String?,
-      countWorkplaces: json['count_workplaces'] as int?,
+      personalAccountId: json['personal_account_id'] as String,
+      countWorkplaces: json['count_workplaces'] as int,
     );
 
 Map<String, dynamic> _$$_ActivateWorkplacesOnPersonalAccountRequestToJson(

@@ -22,7 +22,7 @@ class _$GetWorkplacesByPersonalAccountRequestTearOff {
   const _$GetWorkplacesByPersonalAccountRequestTearOff();
 
   _GetWorkplacesByPersonalAccountRequest call(
-      {@JsonKey(name: 'personal_account_id') required int personalAccountId,
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
       @JsonKey(name: 'options') WorkplaceOptions? options}) {
     return _GetWorkplacesByPersonalAccountRequest(
       personalAccountId: personalAccountId,
@@ -42,7 +42,7 @@ const $GetWorkplacesByPersonalAccountRequest = _$GetWorkplacesByPersonalAccountR
 mixin _$GetWorkplacesByPersonalAccountRequest {
   /// .
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'options')
@@ -60,7 +60,7 @@ abstract class $GetWorkplacesByPersonalAccountRequestCopyWith<$Res> {
           GetWorkplacesByPersonalAccountRequest value, $Res Function(GetWorkplacesByPersonalAccountRequest) then) =
       _$GetWorkplacesByPersonalAccountRequestCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
       @JsonKey(name: 'options') WorkplaceOptions? options});
 
   $WorkplaceOptionsCopyWith<$Res>? get options;
@@ -84,7 +84,7 @@ class _$GetWorkplacesByPersonalAccountRequestCopyWithImpl<$Res>
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       options: options == freezed
           ? _value.options
           : options // ignore: cast_nullable_to_non_nullable
@@ -112,7 +112,7 @@ abstract class _$GetWorkplacesByPersonalAccountRequestCopyWith<$Res>
       __$GetWorkplacesByPersonalAccountRequestCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int personalAccountId,
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
       @JsonKey(name: 'options') WorkplaceOptions? options});
 
   @override
@@ -139,7 +139,7 @@ class __$GetWorkplacesByPersonalAccountRequestCopyWithImpl<$Res>
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       options: options == freezed
           ? _value.options
           : options // ignore: cast_nullable_to_non_nullable
@@ -161,7 +161,7 @@ class _$_GetWorkplacesByPersonalAccountRequest implements _GetWorkplacesByPerson
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  final int personalAccountId;
+  final String personalAccountId;
   @override
 
   /// .
@@ -201,7 +201,7 @@ class _$_GetWorkplacesByPersonalAccountRequest implements _GetWorkplacesByPerson
 
 abstract class _GetWorkplacesByPersonalAccountRequest implements GetWorkplacesByPersonalAccountRequest {
   const factory _GetWorkplacesByPersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') required int personalAccountId,
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
       @JsonKey(name: 'options') WorkplaceOptions? options}) = _$_GetWorkplacesByPersonalAccountRequest;
 
   factory _GetWorkplacesByPersonalAccountRequest.fromJson(Map<String, dynamic> json) =
@@ -211,7 +211,7 @@ abstract class _GetWorkplacesByPersonalAccountRequest implements GetWorkplacesBy
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .

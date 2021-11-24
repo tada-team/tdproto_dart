@@ -121,6 +121,10 @@ export 'src/models/get_personal_accounts_list_response/get_personal_accounts_lis
 export 'src/models/get_tariffs_list_response/get_tariffs_list_response.dart';
 export 'src/models/get_unpaid_workplaces_by_personal_account_request/get_unpaid_workplaces_by_personal_account_request.dart';
 export 'src/models/get_unpaid_workplaces_by_personal_account_response/get_unpaid_workplaces_by_personal_account_response.dart';
+export 'src/models/get_users_info_by_user_u_u_i_d_array_excluding_team_members_request/get_users_info_by_user_u_u_i_d_array_excluding_team_members_request.dart';
+export 'src/models/get_users_info_by_user_u_u_i_d_array_excluding_team_members_response/get_users_info_by_user_u_u_i_d_array_excluding_team_members_response.dart';
+export 'src/models/get_users_info_by_user_u_u_i_d_array_request/get_users_info_by_user_u_u_i_d_array_request.dart';
+export 'src/models/get_users_info_by_user_u_u_i_d_array_response/get_users_info_by_user_u_u_i_d_array_response.dart';
 export 'src/models/get_workplace_by_personal_account_response/get_workplace_by_personal_account_response.dart';
 export 'src/models/get_workplaces_by_personal_account_request/get_workplaces_by_personal_account_request.dart';
 export 'src/models/get_workplaces_by_personal_account_response/get_workplaces_by_personal_account_response.dart';
@@ -285,6 +289,7 @@ export 'src/models/upload_preview/upload_preview.dart';
 export 'src/models/upload_short_message/upload_short_message.dart';
 export 'src/models/user/user.dart';
 export 'src/models/user_auth/user_auth.dart';
+export 'src/models/user_info/user_info.dart';
 export 'src/models/user_with_me/user_with_me.dart';
 export 'src/models/wallpaper/wallpaper.dart';
 export 'src/models/web_base/web_base.dart';

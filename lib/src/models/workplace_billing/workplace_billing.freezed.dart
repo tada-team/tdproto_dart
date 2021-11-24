@@ -22,9 +22,9 @@ class _$WorkplaceBillingTearOff {
   const _$WorkplaceBillingTearOff();
 
   _WorkplaceBilling call(
-      {@JsonKey(name: 'personal_account_id') required int personalAccountId,
-      @JsonKey(name: 'workplace_id') int? workplaceId,
-      @JsonKey(name: 'user_id') int? userId,
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
+      @JsonKey(name: 'workplace_id') String? workplaceId,
+      @JsonKey(name: 'user_id') String? userId,
       @JsonKey(name: 'user_uuid') String? userUuid}) {
     return _WorkplaceBilling(
       personalAccountId: personalAccountId,
@@ -46,15 +46,15 @@ const $WorkplaceBilling = _$WorkplaceBillingTearOff();
 mixin _$WorkplaceBilling {
   /// .
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'workplace_id')
-  int? get workplaceId => throw _privateConstructorUsedError;
+  String? get workplaceId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'user_id')
-  int? get userId => throw _privateConstructorUsedError;
+  String? get userId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'user_uuid')
@@ -70,9 +70,9 @@ abstract class $WorkplaceBillingCopyWith<$Res> {
   factory $WorkplaceBillingCopyWith(WorkplaceBilling value, $Res Function(WorkplaceBilling) then) =
       _$WorkplaceBillingCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int personalAccountId,
-      @JsonKey(name: 'workplace_id') int? workplaceId,
-      @JsonKey(name: 'user_id') int? userId,
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
+      @JsonKey(name: 'workplace_id') String? workplaceId,
+      @JsonKey(name: 'user_id') String? userId,
       @JsonKey(name: 'user_uuid') String? userUuid});
 }
 
@@ -95,15 +95,15 @@ class _$WorkplaceBillingCopyWithImpl<$Res> implements $WorkplaceBillingCopyWith<
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       workplaceId: workplaceId == freezed
           ? _value.workplaceId
           : workplaceId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       userId: userId == freezed
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       userUuid: userUuid == freezed
           ? _value.userUuid
           : userUuid // ignore: cast_nullable_to_non_nullable
@@ -118,9 +118,9 @@ abstract class _$WorkplaceBillingCopyWith<$Res> implements $WorkplaceBillingCopy
       __$WorkplaceBillingCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int personalAccountId,
-      @JsonKey(name: 'workplace_id') int? workplaceId,
-      @JsonKey(name: 'user_id') int? userId,
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
+      @JsonKey(name: 'workplace_id') String? workplaceId,
+      @JsonKey(name: 'user_id') String? userId,
       @JsonKey(name: 'user_uuid') String? userUuid});
 }
 
@@ -144,15 +144,15 @@ class __$WorkplaceBillingCopyWithImpl<$Res> extends _$WorkplaceBillingCopyWithIm
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       workplaceId: workplaceId == freezed
           ? _value.workplaceId
           : workplaceId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       userId: userId == freezed
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       userUuid: userUuid == freezed
           ? _value.userUuid
           : userUuid // ignore: cast_nullable_to_non_nullable
@@ -176,17 +176,17 @@ class _$_WorkplaceBilling implements _WorkplaceBilling {
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  final int personalAccountId;
+  final String personalAccountId;
   @override
 
   /// .
   @JsonKey(name: 'workplace_id')
-  final int? workplaceId;
+  final String? workplaceId;
   @override
 
   /// .
   @JsonKey(name: 'user_id')
-  final int? userId;
+  final String? userId;
   @override
 
   /// .
@@ -231,9 +231,9 @@ class _$_WorkplaceBilling implements _WorkplaceBilling {
 
 abstract class _WorkplaceBilling implements WorkplaceBilling {
   const factory _WorkplaceBilling(
-      {@JsonKey(name: 'personal_account_id') required int personalAccountId,
-      @JsonKey(name: 'workplace_id') int? workplaceId,
-      @JsonKey(name: 'user_id') int? userId,
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
+      @JsonKey(name: 'workplace_id') String? workplaceId,
+      @JsonKey(name: 'user_id') String? userId,
       @JsonKey(name: 'user_uuid') String? userUuid}) = _$_WorkplaceBilling;
 
   factory _WorkplaceBilling.fromJson(Map<String, dynamic> json) = _$_WorkplaceBilling.fromJson;
@@ -242,17 +242,17 @@ abstract class _WorkplaceBilling implements WorkplaceBilling {
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'workplace_id')
-  int? get workplaceId => throw _privateConstructorUsedError;
+  String? get workplaceId => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'user_id')
-  int? get userId => throw _privateConstructorUsedError;
+  String? get userId => throw _privateConstructorUsedError;
   @override
 
   /// .

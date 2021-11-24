@@ -22,7 +22,8 @@ class _$DeleteUserFromWorkplaceRequestTearOff {
   const _$DeleteUserFromWorkplaceRequestTearOff();
 
   _DeleteUserFromWorkplaceRequest call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId, @JsonKey(name: 'user_uuid') String? userUuid}) {
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
+      @JsonKey(name: 'user_uuid') required String userUuid}) {
     return _DeleteUserFromWorkplaceRequest(
       personalAccountId: personalAccountId,
       userUuid: userUuid,
@@ -41,11 +42,11 @@ const $DeleteUserFromWorkplaceRequest = _$DeleteUserFromWorkplaceRequestTearOff(
 mixin _$DeleteUserFromWorkplaceRequest {
   /// .
   @JsonKey(name: 'personal_account_id')
-  String? get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'user_uuid')
-  String? get userUuid => throw _privateConstructorUsedError;
+  String get userUuid => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -59,7 +60,7 @@ abstract class $DeleteUserFromWorkplaceRequestCopyWith<$Res> {
           DeleteUserFromWorkplaceRequest value, $Res Function(DeleteUserFromWorkplaceRequest) then) =
       _$DeleteUserFromWorkplaceRequestCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId, @JsonKey(name: 'user_uuid') String? userUuid});
+      {@JsonKey(name: 'personal_account_id') String personalAccountId, @JsonKey(name: 'user_uuid') String userUuid});
 }
 
 /// @nodoc
@@ -79,11 +80,11 @@ class _$DeleteUserFromWorkplaceRequestCopyWithImpl<$Res> implements $DeleteUserF
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       userUuid: userUuid == freezed
           ? _value.userUuid
           : userUuid // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
     ));
   }
 }
@@ -95,7 +96,7 @@ abstract class _$DeleteUserFromWorkplaceRequestCopyWith<$Res> implements $Delete
       __$DeleteUserFromWorkplaceRequestCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId, @JsonKey(name: 'user_uuid') String? userUuid});
+      {@JsonKey(name: 'personal_account_id') String personalAccountId, @JsonKey(name: 'user_uuid') String userUuid});
 }
 
 /// @nodoc
@@ -117,11 +118,11 @@ class __$DeleteUserFromWorkplaceRequestCopyWithImpl<$Res> extends _$DeleteUserFr
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       userUuid: userUuid == freezed
           ? _value.userUuid
           : userUuid // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
     ));
   }
 }
@@ -130,7 +131,8 @@ class __$DeleteUserFromWorkplaceRequestCopyWithImpl<$Res> extends _$DeleteUserFr
 @JsonSerializable()
 class _$_DeleteUserFromWorkplaceRequest implements _DeleteUserFromWorkplaceRequest {
   const _$_DeleteUserFromWorkplaceRequest(
-      {@JsonKey(name: 'personal_account_id') this.personalAccountId, @JsonKey(name: 'user_uuid') this.userUuid});
+      {@JsonKey(name: 'personal_account_id') required this.personalAccountId,
+      @JsonKey(name: 'user_uuid') required this.userUuid});
 
   factory _$_DeleteUserFromWorkplaceRequest.fromJson(Map<String, dynamic> json) =>
       _$$_DeleteUserFromWorkplaceRequestFromJson(json);
@@ -139,12 +141,12 @@ class _$_DeleteUserFromWorkplaceRequest implements _DeleteUserFromWorkplaceReque
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  final String? personalAccountId;
+  final String personalAccountId;
   @override
 
   /// .
   @JsonKey(name: 'user_uuid')
-  final String? userUuid;
+  final String userUuid;
 
   @override
   String toString() {
@@ -179,8 +181,8 @@ class _$_DeleteUserFromWorkplaceRequest implements _DeleteUserFromWorkplaceReque
 
 abstract class _DeleteUserFromWorkplaceRequest implements DeleteUserFromWorkplaceRequest {
   const factory _DeleteUserFromWorkplaceRequest(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'user_uuid') String? userUuid}) = _$_DeleteUserFromWorkplaceRequest;
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
+      @JsonKey(name: 'user_uuid') required String userUuid}) = _$_DeleteUserFromWorkplaceRequest;
 
   factory _DeleteUserFromWorkplaceRequest.fromJson(Map<String, dynamic> json) =
       _$_DeleteUserFromWorkplaceRequest.fromJson;
@@ -189,12 +191,12 @@ abstract class _DeleteUserFromWorkplaceRequest implements DeleteUserFromWorkplac
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  String? get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'user_uuid')
-  String? get userUuid => throw _privateConstructorUsedError;
+  String get userUuid => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$DeleteUserFromWorkplaceRequestCopyWith<_DeleteUserFromWorkplaceRequest> get copyWith =>

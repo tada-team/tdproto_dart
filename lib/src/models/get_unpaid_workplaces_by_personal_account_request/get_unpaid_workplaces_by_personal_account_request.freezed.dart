@@ -23,7 +23,7 @@ class _$GetUnpaidWorkplacesByPersonalAccountRequestTearOff {
   const _$GetUnpaidWorkplacesByPersonalAccountRequestTearOff();
 
   _GetUnpaidWorkplacesByPersonalAccountRequest call(
-      {@JsonKey(name: 'personal_account_id') required int personalAccountId}) {
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId}) {
     return _GetUnpaidWorkplacesByPersonalAccountRequest(
       personalAccountId: personalAccountId,
     );
@@ -41,7 +41,7 @@ const $GetUnpaidWorkplacesByPersonalAccountRequest = _$GetUnpaidWorkplacesByPers
 mixin _$GetUnpaidWorkplacesByPersonalAccountRequest {
   /// .
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -54,7 +54,7 @@ abstract class $GetUnpaidWorkplacesByPersonalAccountRequestCopyWith<$Res> {
   factory $GetUnpaidWorkplacesByPersonalAccountRequestCopyWith(GetUnpaidWorkplacesByPersonalAccountRequest value,
           $Res Function(GetUnpaidWorkplacesByPersonalAccountRequest) then) =
       _$GetUnpaidWorkplacesByPersonalAccountRequestCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'personal_account_id') int personalAccountId});
+  $Res call({@JsonKey(name: 'personal_account_id') String personalAccountId});
 }
 
 /// @nodoc
@@ -74,7 +74,7 @@ class _$GetUnpaidWorkplacesByPersonalAccountRequestCopyWithImpl<$Res>
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
     ));
   }
 }
@@ -86,7 +86,7 @@ abstract class _$GetUnpaidWorkplacesByPersonalAccountRequestCopyWith<$Res>
           $Res Function(_GetUnpaidWorkplacesByPersonalAccountRequest) then) =
       __$GetUnpaidWorkplacesByPersonalAccountRequestCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'personal_account_id') int personalAccountId});
+  $Res call({@JsonKey(name: 'personal_account_id') String personalAccountId});
 }
 
 /// @nodoc
@@ -109,7 +109,7 @@ class __$GetUnpaidWorkplacesByPersonalAccountRequestCopyWithImpl<$Res>
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
     ));
   }
 }
@@ -127,7 +127,7 @@ class _$_GetUnpaidWorkplacesByPersonalAccountRequest implements _GetUnpaidWorkpl
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  final int personalAccountId;
+  final String personalAccountId;
 
   @override
   String toString() {
@@ -159,7 +159,7 @@ class _$_GetUnpaidWorkplacesByPersonalAccountRequest implements _GetUnpaidWorkpl
 
 abstract class _GetUnpaidWorkplacesByPersonalAccountRequest implements GetUnpaidWorkplacesByPersonalAccountRequest {
   const factory _GetUnpaidWorkplacesByPersonalAccountRequest(
-          {@JsonKey(name: 'personal_account_id') required int personalAccountId}) =
+          {@JsonKey(name: 'personal_account_id') required String personalAccountId}) =
       _$_GetUnpaidWorkplacesByPersonalAccountRequest;
 
   factory _GetUnpaidWorkplacesByPersonalAccountRequest.fromJson(Map<String, dynamic> json) =
@@ -169,7 +169,7 @@ abstract class _GetUnpaidWorkplacesByPersonalAccountRequest implements GetUnpaid
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$GetUnpaidWorkplacesByPersonalAccountRequestCopyWith<_GetUnpaidWorkplacesByPersonalAccountRequest> get copyWith =>

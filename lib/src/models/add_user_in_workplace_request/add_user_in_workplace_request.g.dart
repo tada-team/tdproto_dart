@@ -8,8 +8,8 @@ part of 'add_user_in_workplace_request.dart';
 
 _$_AddUserInWorkplaceRequest _$$_AddUserInWorkplaceRequestFromJson(Map<String, dynamic> json) =>
     _$_AddUserInWorkplaceRequest(
-      personalAccountId: json['personal_account_id'] as String?,
-      userUuid: json['user_uuid'] as String?,
+      personalAccountId: json['personal_account_id'] as String,
+      userUuid: json['user_uuid'] as String,
     );
 
 Map<String, dynamic> _$$_AddUserInWorkplaceRequestToJson(_$_AddUserInWorkplaceRequest instance) => <String, dynamic>{

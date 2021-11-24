@@ -9,7 +9,7 @@ part 'get_unpaid_workplaces_by_personal_account_request.g.dart';
 class GetUnpaidWorkplacesByPersonalAccountRequest with _$GetUnpaidWorkplacesByPersonalAccountRequest {
   const factory GetUnpaidWorkplacesByPersonalAccountRequest({
     /// .
-    @JsonKey(name: 'personal_account_id') required int personalAccountId,
+    @JsonKey(name: 'personal_account_id') required String personalAccountId,
   }) = _GetUnpaidWorkplacesByPersonalAccountRequest;
 
   factory GetUnpaidWorkplacesByPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
