@@ -8,6 +8,9 @@ part 'update_tariff_request.g.dart';
 @freezed
 class UpdateTariffRequest with _$UpdateTariffRequest {
   const factory UpdateTariffRequest({
+    /// Tariff id.
+    @JsonKey(name: 'tariff_id') required String tariffId,
+
     /// Date of closing tariff.
     @JsonKey(name: 'close_date') String? closeDate,
 

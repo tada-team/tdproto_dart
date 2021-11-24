@@ -17,6 +17,12 @@ class TariffBilling with _$TariffBilling {
     /// Currency of tariff.
     @JsonKey(name: 'currency') required String currency,
 
+    /// Count of minimum workspaces on tariff.
+    @JsonKey(name: 'min_tariff_workplaces') required int minTariffWorkplaces,
+
+    /// Minimum step of change count workspaces on tariff.
+    @JsonKey(name: 'min_step_workplaces') required int minStepWorkplaces,
+
     /// Disk space limit per user.
     @JsonKey(name: 'disk_space_quota_mb') required String diskSpaceQuotaMb,
 
@@ -40,6 +46,9 @@ class TariffBilling with _$TariffBilling {
 
     /// Maximum count of users in video conference.
     @JsonKey(name: 'max_video_user') required int maxVideoUser,
+
+    /// Bitrate of video in video co.
+    @JsonKey(name: 'video_call_bitrate') required int videoCallBitrate,
 
     /// Date of opening tariff.
     @JsonKey(name: 'open_date') String? openDate,

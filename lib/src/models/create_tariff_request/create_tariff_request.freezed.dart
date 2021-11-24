@@ -25,14 +25,17 @@ class _$CreateTariffRequestTearOff {
       {@JsonKey(name: 'close_date') String? closeDate,
       @JsonKey(name: 'cost_workplace') String? costWorkplace,
       @JsonKey(name: 'currency') required String currency,
+      @JsonKey(name: 'min_tariff_workplaces') required int minTariffWorkplaces,
+      @JsonKey(name: 'min_step_workplaces') required int minStepWorkplaces,
       @JsonKey(name: 'disk_space_quota_mb') String? diskSpaceQuotaMb,
       @JsonKey(name: 'free_workplaces') int? freeWorkplaces,
       @JsonKey(name: 'is_billing_free') bool? isBillingFree = false,
       @JsonKey(name: 'is_billing_full_time') bool? isBillingFullTime = false,
-      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff = false,
       @JsonKey(name: 'is_recalc_change_tariff') bool? isRecalcChangeTariff = false,
       @JsonKey(name: 'max_voice_user') int? maxVoiceUser,
       @JsonKey(name: 'max_video_user') int? maxVideoUser,
+      @JsonKey(name: 'video_call_bitrate') required int videoCallBitrate,
+      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff = false,
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'period_days') required int periodDays,
       @JsonKey(name: 'tariff_name') required String tariffName}) {
@@ -40,14 +43,17 @@ class _$CreateTariffRequestTearOff {
       closeDate: closeDate,
       costWorkplace: costWorkplace,
       currency: currency,
+      minTariffWorkplaces: minTariffWorkplaces,
+      minStepWorkplaces: minStepWorkplaces,
       diskSpaceQuotaMb: diskSpaceQuotaMb,
       freeWorkplaces: freeWorkplaces,
       isBillingFree: isBillingFree,
       isBillingFullTime: isBillingFullTime,
-      isDefaultTariff: isDefaultTariff,
       isRecalcChangeTariff: isRecalcChangeTariff,
       maxVoiceUser: maxVoiceUser,
       maxVideoUser: maxVideoUser,
+      videoCallBitrate: videoCallBitrate,
+      isDefaultTariff: isDefaultTariff,
       openDate: openDate,
       periodDays: periodDays,
       tariffName: tariffName,
@@ -76,6 +82,14 @@ mixin _$CreateTariffRequest {
   @JsonKey(name: 'currency')
   String get currency => throw _privateConstructorUsedError;
 
+  /// Count of minimum workspaces on tariff.
+  @JsonKey(name: 'min_tariff_workplaces')
+  int get minTariffWorkplaces => throw _privateConstructorUsedError;
+
+  /// Minimum step of change count workspaces on tariff.
+  @JsonKey(name: 'min_step_workplaces')
+  int get minStepWorkplaces => throw _privateConstructorUsedError;
+
   /// Disk space limit per user.
   @JsonKey(name: 'disk_space_quota_mb')
   String? get diskSpaceQuotaMb => throw _privateConstructorUsedError;
@@ -92,10 +106,6 @@ mixin _$CreateTariffRequest {
   @JsonKey(name: 'is_billing_full_time')
   bool? get isBillingFullTime => throw _privateConstructorUsedError;
 
-  /// Default tariff flag that is set when registering an account.
-  @JsonKey(name: 'is_default_tariff')
-  bool? get isDefaultTariff => throw _privateConstructorUsedError;
-
   /// Flag for accounting for unspent days when switching to a new tariff.
   @JsonKey(name: 'is_recalc_change_tariff')
   bool? get isRecalcChangeTariff => throw _privateConstructorUsedError;
@@ -107,6 +117,14 @@ mixin _$CreateTariffRequest {
   /// Maximum count of users in video conference.
   @JsonKey(name: 'max_video_user')
   int? get maxVideoUser => throw _privateConstructorUsedError;
+
+  /// Bitrate of video in video co.
+  @JsonKey(name: 'video_call_bitrate')
+  int get videoCallBitrate => throw _privateConstructorUsedError;
+
+  /// Default tariff flag that is set when registering an account.
+  @JsonKey(name: 'is_default_tariff')
+  bool? get isDefaultTariff => throw _privateConstructorUsedError;
 
   /// Date of opening tariff.
   @JsonKey(name: 'open_date')
@@ -133,14 +151,17 @@ abstract class $CreateTariffRequestCopyWith<$Res> {
       {@JsonKey(name: 'close_date') String? closeDate,
       @JsonKey(name: 'cost_workplace') String? costWorkplace,
       @JsonKey(name: 'currency') String currency,
+      @JsonKey(name: 'min_tariff_workplaces') int minTariffWorkplaces,
+      @JsonKey(name: 'min_step_workplaces') int minStepWorkplaces,
       @JsonKey(name: 'disk_space_quota_mb') String? diskSpaceQuotaMb,
       @JsonKey(name: 'free_workplaces') int? freeWorkplaces,
       @JsonKey(name: 'is_billing_free') bool? isBillingFree,
       @JsonKey(name: 'is_billing_full_time') bool? isBillingFullTime,
-      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
       @JsonKey(name: 'is_recalc_change_tariff') bool? isRecalcChangeTariff,
       @JsonKey(name: 'max_voice_user') int? maxVoiceUser,
       @JsonKey(name: 'max_video_user') int? maxVideoUser,
+      @JsonKey(name: 'video_call_bitrate') int videoCallBitrate,
+      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'period_days') int periodDays,
       @JsonKey(name: 'tariff_name') String tariffName});
@@ -159,14 +180,17 @@ class _$CreateTariffRequestCopyWithImpl<$Res> implements $CreateTariffRequestCop
     Object? closeDate = freezed,
     Object? costWorkplace = freezed,
     Object? currency = freezed,
+    Object? minTariffWorkplaces = freezed,
+    Object? minStepWorkplaces = freezed,
     Object? diskSpaceQuotaMb = freezed,
     Object? freeWorkplaces = freezed,
     Object? isBillingFree = freezed,
     Object? isBillingFullTime = freezed,
-    Object? isDefaultTariff = freezed,
     Object? isRecalcChangeTariff = freezed,
     Object? maxVoiceUser = freezed,
     Object? maxVideoUser = freezed,
+    Object? videoCallBitrate = freezed,
+    Object? isDefaultTariff = freezed,
     Object? openDate = freezed,
     Object? periodDays = freezed,
     Object? tariffName = freezed,
@@ -184,6 +208,14 @@ class _$CreateTariffRequestCopyWithImpl<$Res> implements $CreateTariffRequestCop
           ? _value.currency
           : currency // ignore: cast_nullable_to_non_nullable
               as String,
+      minTariffWorkplaces: minTariffWorkplaces == freezed
+          ? _value.minTariffWorkplaces
+          : minTariffWorkplaces // ignore: cast_nullable_to_non_nullable
+              as int,
+      minStepWorkplaces: minStepWorkplaces == freezed
+          ? _value.minStepWorkplaces
+          : minStepWorkplaces // ignore: cast_nullable_to_non_nullable
+              as int,
       diskSpaceQuotaMb: diskSpaceQuotaMb == freezed
           ? _value.diskSpaceQuotaMb
           : diskSpaceQuotaMb // ignore: cast_nullable_to_non_nullable
@@ -200,10 +232,6 @@ class _$CreateTariffRequestCopyWithImpl<$Res> implements $CreateTariffRequestCop
           ? _value.isBillingFullTime
           : isBillingFullTime // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isDefaultTariff: isDefaultTariff == freezed
-          ? _value.isDefaultTariff
-          : isDefaultTariff // ignore: cast_nullable_to_non_nullable
-              as bool?,
       isRecalcChangeTariff: isRecalcChangeTariff == freezed
           ? _value.isRecalcChangeTariff
           : isRecalcChangeTariff // ignore: cast_nullable_to_non_nullable
@@ -216,6 +244,14 @@ class _$CreateTariffRequestCopyWithImpl<$Res> implements $CreateTariffRequestCop
           ? _value.maxVideoUser
           : maxVideoUser // ignore: cast_nullable_to_non_nullable
               as int?,
+      videoCallBitrate: videoCallBitrate == freezed
+          ? _value.videoCallBitrate
+          : videoCallBitrate // ignore: cast_nullable_to_non_nullable
+              as int,
+      isDefaultTariff: isDefaultTariff == freezed
+          ? _value.isDefaultTariff
+          : isDefaultTariff // ignore: cast_nullable_to_non_nullable
+              as bool?,
       openDate: openDate == freezed
           ? _value.openDate
           : openDate // ignore: cast_nullable_to_non_nullable
@@ -241,14 +277,17 @@ abstract class _$CreateTariffRequestCopyWith<$Res> implements $CreateTariffReque
       {@JsonKey(name: 'close_date') String? closeDate,
       @JsonKey(name: 'cost_workplace') String? costWorkplace,
       @JsonKey(name: 'currency') String currency,
+      @JsonKey(name: 'min_tariff_workplaces') int minTariffWorkplaces,
+      @JsonKey(name: 'min_step_workplaces') int minStepWorkplaces,
       @JsonKey(name: 'disk_space_quota_mb') String? diskSpaceQuotaMb,
       @JsonKey(name: 'free_workplaces') int? freeWorkplaces,
       @JsonKey(name: 'is_billing_free') bool? isBillingFree,
       @JsonKey(name: 'is_billing_full_time') bool? isBillingFullTime,
-      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
       @JsonKey(name: 'is_recalc_change_tariff') bool? isRecalcChangeTariff,
       @JsonKey(name: 'max_voice_user') int? maxVoiceUser,
       @JsonKey(name: 'max_video_user') int? maxVideoUser,
+      @JsonKey(name: 'video_call_bitrate') int videoCallBitrate,
+      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'period_days') int periodDays,
       @JsonKey(name: 'tariff_name') String tariffName});
@@ -268,14 +307,17 @@ class __$CreateTariffRequestCopyWithImpl<$Res> extends _$CreateTariffRequestCopy
     Object? closeDate = freezed,
     Object? costWorkplace = freezed,
     Object? currency = freezed,
+    Object? minTariffWorkplaces = freezed,
+    Object? minStepWorkplaces = freezed,
     Object? diskSpaceQuotaMb = freezed,
     Object? freeWorkplaces = freezed,
     Object? isBillingFree = freezed,
     Object? isBillingFullTime = freezed,
-    Object? isDefaultTariff = freezed,
     Object? isRecalcChangeTariff = freezed,
     Object? maxVoiceUser = freezed,
     Object? maxVideoUser = freezed,
+    Object? videoCallBitrate = freezed,
+    Object? isDefaultTariff = freezed,
     Object? openDate = freezed,
     Object? periodDays = freezed,
     Object? tariffName = freezed,
@@ -293,6 +335,14 @@ class __$CreateTariffRequestCopyWithImpl<$Res> extends _$CreateTariffRequestCopy
           ? _value.currency
           : currency // ignore: cast_nullable_to_non_nullable
               as String,
+      minTariffWorkplaces: minTariffWorkplaces == freezed
+          ? _value.minTariffWorkplaces
+          : minTariffWorkplaces // ignore: cast_nullable_to_non_nullable
+              as int,
+      minStepWorkplaces: minStepWorkplaces == freezed
+          ? _value.minStepWorkplaces
+          : minStepWorkplaces // ignore: cast_nullable_to_non_nullable
+              as int,
       diskSpaceQuotaMb: diskSpaceQuotaMb == freezed
           ? _value.diskSpaceQuotaMb
           : diskSpaceQuotaMb // ignore: cast_nullable_to_non_nullable
@@ -309,10 +359,6 @@ class __$CreateTariffRequestCopyWithImpl<$Res> extends _$CreateTariffRequestCopy
           ? _value.isBillingFullTime
           : isBillingFullTime // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isDefaultTariff: isDefaultTariff == freezed
-          ? _value.isDefaultTariff
-          : isDefaultTariff // ignore: cast_nullable_to_non_nullable
-              as bool?,
       isRecalcChangeTariff: isRecalcChangeTariff == freezed
           ? _value.isRecalcChangeTariff
           : isRecalcChangeTariff // ignore: cast_nullable_to_non_nullable
@@ -325,6 +371,14 @@ class __$CreateTariffRequestCopyWithImpl<$Res> extends _$CreateTariffRequestCopy
           ? _value.maxVideoUser
           : maxVideoUser // ignore: cast_nullable_to_non_nullable
               as int?,
+      videoCallBitrate: videoCallBitrate == freezed
+          ? _value.videoCallBitrate
+          : videoCallBitrate // ignore: cast_nullable_to_non_nullable
+              as int,
+      isDefaultTariff: isDefaultTariff == freezed
+          ? _value.isDefaultTariff
+          : isDefaultTariff // ignore: cast_nullable_to_non_nullable
+              as bool?,
       openDate: openDate == freezed
           ? _value.openDate
           : openDate // ignore: cast_nullable_to_non_nullable
@@ -348,14 +402,17 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
       {@JsonKey(name: 'close_date') this.closeDate,
       @JsonKey(name: 'cost_workplace') this.costWorkplace,
       @JsonKey(name: 'currency') required this.currency,
+      @JsonKey(name: 'min_tariff_workplaces') required this.minTariffWorkplaces,
+      @JsonKey(name: 'min_step_workplaces') required this.minStepWorkplaces,
       @JsonKey(name: 'disk_space_quota_mb') this.diskSpaceQuotaMb,
       @JsonKey(name: 'free_workplaces') this.freeWorkplaces,
       @JsonKey(name: 'is_billing_free') this.isBillingFree = false,
       @JsonKey(name: 'is_billing_full_time') this.isBillingFullTime = false,
-      @JsonKey(name: 'is_default_tariff') this.isDefaultTariff = false,
       @JsonKey(name: 'is_recalc_change_tariff') this.isRecalcChangeTariff = false,
       @JsonKey(name: 'max_voice_user') this.maxVoiceUser,
       @JsonKey(name: 'max_video_user') this.maxVideoUser,
+      @JsonKey(name: 'video_call_bitrate') required this.videoCallBitrate,
+      @JsonKey(name: 'is_default_tariff') this.isDefaultTariff = false,
       @JsonKey(name: 'open_date') this.openDate,
       @JsonKey(name: 'period_days') required this.periodDays,
       @JsonKey(name: 'tariff_name') required this.tariffName});
@@ -379,6 +436,16 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
   final String currency;
   @override
 
+  /// Count of minimum workspaces on tariff.
+  @JsonKey(name: 'min_tariff_workplaces')
+  final int minTariffWorkplaces;
+  @override
+
+  /// Minimum step of change count workspaces on tariff.
+  @JsonKey(name: 'min_step_workplaces')
+  final int minStepWorkplaces;
+  @override
+
   /// Disk space limit per user.
   @JsonKey(name: 'disk_space_quota_mb')
   final String? diskSpaceQuotaMb;
@@ -399,11 +466,6 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
   final bool? isBillingFullTime;
   @override
 
-  /// Default tariff flag that is set when registering an account.
-  @JsonKey(name: 'is_default_tariff')
-  final bool? isDefaultTariff;
-  @override
-
   /// Flag for accounting for unspent days when switching to a new tariff.
   @JsonKey(name: 'is_recalc_change_tariff')
   final bool? isRecalcChangeTariff;
@@ -417,6 +479,16 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
   /// Maximum count of users in video conference.
   @JsonKey(name: 'max_video_user')
   final int? maxVideoUser;
+  @override
+
+  /// Bitrate of video in video co.
+  @JsonKey(name: 'video_call_bitrate')
+  final int videoCallBitrate;
+  @override
+
+  /// Default tariff flag that is set when registering an account.
+  @JsonKey(name: 'is_default_tariff')
+  final bool? isDefaultTariff;
   @override
 
   /// Date of opening tariff.
@@ -435,7 +507,7 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
 
   @override
   String toString() {
-    return 'CreateTariffRequest(closeDate: $closeDate, costWorkplace: $costWorkplace, currency: $currency, diskSpaceQuotaMb: $diskSpaceQuotaMb, freeWorkplaces: $freeWorkplaces, isBillingFree: $isBillingFree, isBillingFullTime: $isBillingFullTime, isDefaultTariff: $isDefaultTariff, isRecalcChangeTariff: $isRecalcChangeTariff, maxVoiceUser: $maxVoiceUser, maxVideoUser: $maxVideoUser, openDate: $openDate, periodDays: $periodDays, tariffName: $tariffName)';
+    return 'CreateTariffRequest(closeDate: $closeDate, costWorkplace: $costWorkplace, currency: $currency, minTariffWorkplaces: $minTariffWorkplaces, minStepWorkplaces: $minStepWorkplaces, diskSpaceQuotaMb: $diskSpaceQuotaMb, freeWorkplaces: $freeWorkplaces, isBillingFree: $isBillingFree, isBillingFullTime: $isBillingFullTime, isRecalcChangeTariff: $isRecalcChangeTariff, maxVoiceUser: $maxVoiceUser, maxVideoUser: $maxVideoUser, videoCallBitrate: $videoCallBitrate, isDefaultTariff: $isDefaultTariff, openDate: $openDate, periodDays: $periodDays, tariffName: $tariffName)';
   }
 
   @override
@@ -447,6 +519,10 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
             (identical(other.costWorkplace, costWorkplace) ||
                 const DeepCollectionEquality().equals(other.costWorkplace, costWorkplace)) &&
             (identical(other.currency, currency) || const DeepCollectionEquality().equals(other.currency, currency)) &&
+            (identical(other.minTariffWorkplaces, minTariffWorkplaces) ||
+                const DeepCollectionEquality().equals(other.minTariffWorkplaces, minTariffWorkplaces)) &&
+            (identical(other.minStepWorkplaces, minStepWorkplaces) ||
+                const DeepCollectionEquality().equals(other.minStepWorkplaces, minStepWorkplaces)) &&
             (identical(other.diskSpaceQuotaMb, diskSpaceQuotaMb) ||
                 const DeepCollectionEquality().equals(other.diskSpaceQuotaMb, diskSpaceQuotaMb)) &&
             (identical(other.freeWorkplaces, freeWorkplaces) ||
@@ -455,14 +531,16 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
                 const DeepCollectionEquality().equals(other.isBillingFree, isBillingFree)) &&
             (identical(other.isBillingFullTime, isBillingFullTime) ||
                 const DeepCollectionEquality().equals(other.isBillingFullTime, isBillingFullTime)) &&
-            (identical(other.isDefaultTariff, isDefaultTariff) ||
-                const DeepCollectionEquality().equals(other.isDefaultTariff, isDefaultTariff)) &&
             (identical(other.isRecalcChangeTariff, isRecalcChangeTariff) ||
                 const DeepCollectionEquality().equals(other.isRecalcChangeTariff, isRecalcChangeTariff)) &&
             (identical(other.maxVoiceUser, maxVoiceUser) ||
                 const DeepCollectionEquality().equals(other.maxVoiceUser, maxVoiceUser)) &&
             (identical(other.maxVideoUser, maxVideoUser) ||
                 const DeepCollectionEquality().equals(other.maxVideoUser, maxVideoUser)) &&
+            (identical(other.videoCallBitrate, videoCallBitrate) ||
+                const DeepCollectionEquality().equals(other.videoCallBitrate, videoCallBitrate)) &&
+            (identical(other.isDefaultTariff, isDefaultTariff) ||
+                const DeepCollectionEquality().equals(other.isDefaultTariff, isDefaultTariff)) &&
             (identical(other.openDate, openDate) || const DeepCollectionEquality().equals(other.openDate, openDate)) &&
             (identical(other.periodDays, periodDays) ||
                 const DeepCollectionEquality().equals(other.periodDays, periodDays)) &&
@@ -476,14 +554,17 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
       const DeepCollectionEquality().hash(closeDate) ^
       const DeepCollectionEquality().hash(costWorkplace) ^
       const DeepCollectionEquality().hash(currency) ^
+      const DeepCollectionEquality().hash(minTariffWorkplaces) ^
+      const DeepCollectionEquality().hash(minStepWorkplaces) ^
       const DeepCollectionEquality().hash(diskSpaceQuotaMb) ^
       const DeepCollectionEquality().hash(freeWorkplaces) ^
       const DeepCollectionEquality().hash(isBillingFree) ^
       const DeepCollectionEquality().hash(isBillingFullTime) ^
-      const DeepCollectionEquality().hash(isDefaultTariff) ^
       const DeepCollectionEquality().hash(isRecalcChangeTariff) ^
       const DeepCollectionEquality().hash(maxVoiceUser) ^
       const DeepCollectionEquality().hash(maxVideoUser) ^
+      const DeepCollectionEquality().hash(videoCallBitrate) ^
+      const DeepCollectionEquality().hash(isDefaultTariff) ^
       const DeepCollectionEquality().hash(openDate) ^
       const DeepCollectionEquality().hash(periodDays) ^
       const DeepCollectionEquality().hash(tariffName);
@@ -504,14 +585,17 @@ abstract class _CreateTariffRequest implements CreateTariffRequest {
       {@JsonKey(name: 'close_date') String? closeDate,
       @JsonKey(name: 'cost_workplace') String? costWorkplace,
       @JsonKey(name: 'currency') required String currency,
+      @JsonKey(name: 'min_tariff_workplaces') required int minTariffWorkplaces,
+      @JsonKey(name: 'min_step_workplaces') required int minStepWorkplaces,
       @JsonKey(name: 'disk_space_quota_mb') String? diskSpaceQuotaMb,
       @JsonKey(name: 'free_workplaces') int? freeWorkplaces,
       @JsonKey(name: 'is_billing_free') bool? isBillingFree,
       @JsonKey(name: 'is_billing_full_time') bool? isBillingFullTime,
-      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
       @JsonKey(name: 'is_recalc_change_tariff') bool? isRecalcChangeTariff,
       @JsonKey(name: 'max_voice_user') int? maxVoiceUser,
       @JsonKey(name: 'max_video_user') int? maxVideoUser,
+      @JsonKey(name: 'video_call_bitrate') required int videoCallBitrate,
+      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'period_days') required int periodDays,
       @JsonKey(name: 'tariff_name') required String tariffName}) = _$_CreateTariffRequest;
@@ -535,6 +619,16 @@ abstract class _CreateTariffRequest implements CreateTariffRequest {
   String get currency => throw _privateConstructorUsedError;
   @override
 
+  /// Count of minimum workspaces on tariff.
+  @JsonKey(name: 'min_tariff_workplaces')
+  int get minTariffWorkplaces => throw _privateConstructorUsedError;
+  @override
+
+  /// Minimum step of change count workspaces on tariff.
+  @JsonKey(name: 'min_step_workplaces')
+  int get minStepWorkplaces => throw _privateConstructorUsedError;
+  @override
+
   /// Disk space limit per user.
   @JsonKey(name: 'disk_space_quota_mb')
   String? get diskSpaceQuotaMb => throw _privateConstructorUsedError;
@@ -555,11 +649,6 @@ abstract class _CreateTariffRequest implements CreateTariffRequest {
   bool? get isBillingFullTime => throw _privateConstructorUsedError;
   @override
 
-  /// Default tariff flag that is set when registering an account.
-  @JsonKey(name: 'is_default_tariff')
-  bool? get isDefaultTariff => throw _privateConstructorUsedError;
-  @override
-
   /// Flag for accounting for unspent days when switching to a new tariff.
   @JsonKey(name: 'is_recalc_change_tariff')
   bool? get isRecalcChangeTariff => throw _privateConstructorUsedError;
@@ -573,6 +662,16 @@ abstract class _CreateTariffRequest implements CreateTariffRequest {
   /// Maximum count of users in video conference.
   @JsonKey(name: 'max_video_user')
   int? get maxVideoUser => throw _privateConstructorUsedError;
+  @override
+
+  /// Bitrate of video in video co.
+  @JsonKey(name: 'video_call_bitrate')
+  int get videoCallBitrate => throw _privateConstructorUsedError;
+  @override
+
+  /// Default tariff flag that is set when registering an account.
+  @JsonKey(name: 'is_default_tariff')
+  bool? get isDefaultTariff => throw _privateConstructorUsedError;
   @override
 
   /// Date of opening tariff.

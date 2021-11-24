@@ -1,0 +1,24 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'get_workplace_by_personal_account_response.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$_GetWorkplaceByPersonalAccountResponse _$$_GetWorkplaceByPersonalAccountResponseFromJson(Map<String, dynamic> json) =>
+    _$_GetWorkplaceByPersonalAccountResponse(
+      personalAccountId: json['personal_account_id'] as int,
+      workplaceId: json['workplace_id'] as int?,
+      userId: json['user_id'] as int?,
+      userUuid: json['user_uuid'] as String?,
+    );
+
+Map<String, dynamic> _$$_GetWorkplaceByPersonalAccountResponseToJson(
+        _$_GetWorkplaceByPersonalAccountResponse instance) =>
+    <String, dynamic>{
+      'personal_account_id': instance.personalAccountId,
+      'workplace_id': instance.workplaceId,
+      'user_id': instance.userId,
+      'user_uuid': instance.userUuid,
+    };

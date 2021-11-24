@@ -17,6 +17,12 @@ class CreateTariffRequest with _$CreateTariffRequest {
     /// Currency of tariff.
     @JsonKey(name: 'currency') required String currency,
 
+    /// Count of minimum workspaces on tariff.
+    @JsonKey(name: 'min_tariff_workplaces') required int minTariffWorkplaces,
+
+    /// Minimum step of change count workspaces on tariff.
+    @JsonKey(name: 'min_step_workplaces') required int minStepWorkplaces,
+
     /// Disk space limit per user.
     @JsonKey(name: 'disk_space_quota_mb') String? diskSpaceQuotaMb,
 
@@ -29,9 +35,6 @@ class CreateTariffRequest with _$CreateTariffRequest {
     /// Flag of accounting without looking at the number of days before the billing period.
     @Default(false) @JsonKey(name: 'is_billing_full_time') bool? isBillingFullTime,
 
-    /// Default tariff flag that is set when registering an account.
-    @Default(false) @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
-
     /// Flag for accounting for unspent days when switching to a new tariff.
     @Default(false) @JsonKey(name: 'is_recalc_change_tariff') bool? isRecalcChangeTariff,
 
@@ -40,6 +43,12 @@ class CreateTariffRequest with _$CreateTariffRequest {
 
     /// Maximum count of users in video conference.
     @JsonKey(name: 'max_video_user') int? maxVideoUser,
+
+    /// Bitrate of video in video co.
+    @JsonKey(name: 'video_call_bitrate') required int videoCallBitrate,
+
+    /// Default tariff flag that is set when registering an account.
+    @Default(false) @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
 
     /// Date of opening tariff.
     @JsonKey(name: 'open_date') String? openDate,

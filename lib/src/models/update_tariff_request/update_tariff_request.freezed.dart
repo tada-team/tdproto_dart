@@ -22,10 +22,12 @@ class _$UpdateTariffRequestTearOff {
   const _$UpdateTariffRequestTearOff();
 
   _UpdateTariffRequest call(
-      {@JsonKey(name: 'close_date') String? closeDate,
+      {@JsonKey(name: 'tariff_id') required String tariffId,
+      @JsonKey(name: 'close_date') String? closeDate,
       @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff = false,
       @JsonKey(name: 'status') String? status}) {
     return _UpdateTariffRequest(
+      tariffId: tariffId,
       closeDate: closeDate,
       isDefaultTariff: isDefaultTariff,
       status: status,
@@ -42,6 +44,10 @@ const $UpdateTariffRequest = _$UpdateTariffRequestTearOff();
 
 /// @nodoc
 mixin _$UpdateTariffRequest {
+  /// Tariff id.
+  @JsonKey(name: 'tariff_id')
+  String get tariffId => throw _privateConstructorUsedError;
+
   /// Date of closing tariff.
   @JsonKey(name: 'close_date')
   String? get closeDate => throw _privateConstructorUsedError;
@@ -64,7 +70,8 @@ abstract class $UpdateTariffRequestCopyWith<$Res> {
   factory $UpdateTariffRequestCopyWith(UpdateTariffRequest value, $Res Function(UpdateTariffRequest) then) =
       _$UpdateTariffRequestCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'close_date') String? closeDate,
+      {@JsonKey(name: 'tariff_id') String tariffId,
+      @JsonKey(name: 'close_date') String? closeDate,
       @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
       @JsonKey(name: 'status') String? status});
 }
@@ -79,11 +86,16 @@ class _$UpdateTariffRequestCopyWithImpl<$Res> implements $UpdateTariffRequestCop
 
   @override
   $Res call({
+    Object? tariffId = freezed,
     Object? closeDate = freezed,
     Object? isDefaultTariff = freezed,
     Object? status = freezed,
   }) {
     return _then(_value.copyWith(
+      tariffId: tariffId == freezed
+          ? _value.tariffId
+          : tariffId // ignore: cast_nullable_to_non_nullable
+              as String,
       closeDate: closeDate == freezed
           ? _value.closeDate
           : closeDate // ignore: cast_nullable_to_non_nullable
@@ -106,7 +118,8 @@ abstract class _$UpdateTariffRequestCopyWith<$Res> implements $UpdateTariffReque
       __$UpdateTariffRequestCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'close_date') String? closeDate,
+      {@JsonKey(name: 'tariff_id') String tariffId,
+      @JsonKey(name: 'close_date') String? closeDate,
       @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
       @JsonKey(name: 'status') String? status});
 }
@@ -122,11 +135,16 @@ class __$UpdateTariffRequestCopyWithImpl<$Res> extends _$UpdateTariffRequestCopy
 
   @override
   $Res call({
+    Object? tariffId = freezed,
     Object? closeDate = freezed,
     Object? isDefaultTariff = freezed,
     Object? status = freezed,
   }) {
     return _then(_UpdateTariffRequest(
+      tariffId: tariffId == freezed
+          ? _value.tariffId
+          : tariffId // ignore: cast_nullable_to_non_nullable
+              as String,
       closeDate: closeDate == freezed
           ? _value.closeDate
           : closeDate // ignore: cast_nullable_to_non_nullable
@@ -147,12 +165,18 @@ class __$UpdateTariffRequestCopyWithImpl<$Res> extends _$UpdateTariffRequestCopy
 @JsonSerializable()
 class _$_UpdateTariffRequest implements _UpdateTariffRequest {
   const _$_UpdateTariffRequest(
-      {@JsonKey(name: 'close_date') this.closeDate,
+      {@JsonKey(name: 'tariff_id') required this.tariffId,
+      @JsonKey(name: 'close_date') this.closeDate,
       @JsonKey(name: 'is_default_tariff') this.isDefaultTariff = false,
       @JsonKey(name: 'status') this.status});
 
   factory _$_UpdateTariffRequest.fromJson(Map<String, dynamic> json) => _$$_UpdateTariffRequestFromJson(json);
 
+  @override
+
+  /// Tariff id.
+  @JsonKey(name: 'tariff_id')
+  final String tariffId;
   @override
 
   /// Date of closing tariff.
@@ -171,13 +195,14 @@ class _$_UpdateTariffRequest implements _UpdateTariffRequest {
 
   @override
   String toString() {
-    return 'UpdateTariffRequest(closeDate: $closeDate, isDefaultTariff: $isDefaultTariff, status: $status)';
+    return 'UpdateTariffRequest(tariffId: $tariffId, closeDate: $closeDate, isDefaultTariff: $isDefaultTariff, status: $status)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _UpdateTariffRequest &&
+            (identical(other.tariffId, tariffId) || const DeepCollectionEquality().equals(other.tariffId, tariffId)) &&
             (identical(other.closeDate, closeDate) ||
                 const DeepCollectionEquality().equals(other.closeDate, closeDate)) &&
             (identical(other.isDefaultTariff, isDefaultTariff) ||
@@ -188,6 +213,7 @@ class _$_UpdateTariffRequest implements _UpdateTariffRequest {
   @override
   int get hashCode =>
       runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(tariffId) ^
       const DeepCollectionEquality().hash(closeDate) ^
       const DeepCollectionEquality().hash(isDefaultTariff) ^
       const DeepCollectionEquality().hash(status);
@@ -205,12 +231,18 @@ class _$_UpdateTariffRequest implements _UpdateTariffRequest {
 
 abstract class _UpdateTariffRequest implements UpdateTariffRequest {
   const factory _UpdateTariffRequest(
-      {@JsonKey(name: 'close_date') String? closeDate,
+      {@JsonKey(name: 'tariff_id') required String tariffId,
+      @JsonKey(name: 'close_date') String? closeDate,
       @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
       @JsonKey(name: 'status') String? status}) = _$_UpdateTariffRequest;
 
   factory _UpdateTariffRequest.fromJson(Map<String, dynamic> json) = _$_UpdateTariffRequest.fromJson;
 
+  @override
+
+  /// Tariff id.
+  @JsonKey(name: 'tariff_id')
+  String get tariffId => throw _privateConstructorUsedError;
   @override
 
   /// Date of closing tariff.
