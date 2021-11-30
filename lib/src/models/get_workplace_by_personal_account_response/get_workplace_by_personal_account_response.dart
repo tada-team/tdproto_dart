@@ -9,9 +9,6 @@ part 'get_workplace_by_personal_account_response.g.dart';
 class GetWorkplaceByPersonalAccountResponse with _$GetWorkplaceByPersonalAccountResponse {
   const factory GetWorkplaceByPersonalAccountResponse({
     /// .
-    @JsonKey(name: 'personal_account_id') required String personalAccountId,
-
-    /// .
     @JsonKey(name: 'workplace_id') String? workplaceId,
 
     /// .

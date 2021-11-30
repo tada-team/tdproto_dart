@@ -8,14 +8,12 @@ part of 'update_personal_account_request.dart';
 
 _$_UpdatePersonalAccountRequest _$$_UpdatePersonalAccountRequestFromJson(Map<String, dynamic> json) =>
     _$_UpdatePersonalAccountRequest(
-      personalAccountId: json['personal_account_id'] as int,
       fullName: json['full_name'] as String?,
       phone: json['phone'] as String?,
     );
 
 Map<String, dynamic> _$$_UpdatePersonalAccountRequestToJson(_$_UpdatePersonalAccountRequest instance) =>
     <String, dynamic>{
-      'personal_account_id': instance.personalAccountId,
       'full_name': instance.fullName,
       'phone': instance.phone,
     };

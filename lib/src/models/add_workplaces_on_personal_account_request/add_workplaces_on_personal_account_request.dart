@@ -9,9 +9,6 @@ part 'add_workplaces_on_personal_account_request.g.dart';
 class AddWorkplacesOnPersonalAccountRequest with _$AddWorkplacesOnPersonalAccountRequest {
   const factory AddWorkplacesOnPersonalAccountRequest({
     /// .
-    @JsonKey(name: 'personal_account_id') required String personalAccountId,
-
-    /// .
     @JsonKey(name: 'count_workplaces') required int countWorkplaces,
   }) = _AddWorkplacesOnPersonalAccountRequest;
 

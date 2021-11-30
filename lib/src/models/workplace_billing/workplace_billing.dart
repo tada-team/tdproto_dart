@@ -9,9 +9,6 @@ part 'workplace_billing.g.dart';
 class WorkplaceBilling with _$WorkplaceBilling {
   const factory WorkplaceBilling({
     /// .
-    @JsonKey(name: 'personal_account_id') required String personalAccountId,
-
-    /// .
     @JsonKey(name: 'workplace_id') String? workplaceId,
 
     /// .

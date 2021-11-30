@@ -9,9 +9,6 @@ part 'get_workplaces_by_personal_account_request.g.dart';
 class GetWorkplacesByPersonalAccountRequest with _$GetWorkplacesByPersonalAccountRequest {
   const factory GetWorkplacesByPersonalAccountRequest({
     /// .
-    @JsonKey(name: 'personal_account_id') required String personalAccountId,
-
-    /// .
     @JsonKey(name: 'options') WorkplaceOptions? options,
   }) = _GetWorkplacesByPersonalAccountRequest;
 

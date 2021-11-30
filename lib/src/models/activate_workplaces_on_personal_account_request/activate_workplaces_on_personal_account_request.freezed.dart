@@ -22,11 +22,8 @@ ActivateWorkplacesOnPersonalAccountRequest _$ActivateWorkplacesOnPersonalAccount
 class _$ActivateWorkplacesOnPersonalAccountRequestTearOff {
   const _$ActivateWorkplacesOnPersonalAccountRequestTearOff();
 
-  _ActivateWorkplacesOnPersonalAccountRequest call(
-      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
-      @JsonKey(name: 'count_workplaces') required int countWorkplaces}) {
+  _ActivateWorkplacesOnPersonalAccountRequest call({@JsonKey(name: 'count_workplaces') required int countWorkplaces}) {
     return _ActivateWorkplacesOnPersonalAccountRequest(
-      personalAccountId: personalAccountId,
       countWorkplaces: countWorkplaces,
     );
   }
@@ -42,10 +39,6 @@ const $ActivateWorkplacesOnPersonalAccountRequest = _$ActivateWorkplacesOnPerson
 /// @nodoc
 mixin _$ActivateWorkplacesOnPersonalAccountRequest {
   /// .
-  @JsonKey(name: 'personal_account_id')
-  String get personalAccountId => throw _privateConstructorUsedError;
-
-  /// .
   @JsonKey(name: 'count_workplaces')
   int get countWorkplaces => throw _privateConstructorUsedError;
 
@@ -60,9 +53,7 @@ abstract class $ActivateWorkplacesOnPersonalAccountRequestCopyWith<$Res> {
   factory $ActivateWorkplacesOnPersonalAccountRequestCopyWith(ActivateWorkplacesOnPersonalAccountRequest value,
           $Res Function(ActivateWorkplacesOnPersonalAccountRequest) then) =
       _$ActivateWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>;
-  $Res call(
-      {@JsonKey(name: 'personal_account_id') String personalAccountId,
-      @JsonKey(name: 'count_workplaces') int countWorkplaces});
+  $Res call({@JsonKey(name: 'count_workplaces') int countWorkplaces});
 }
 
 /// @nodoc
@@ -76,14 +67,9 @@ class _$ActivateWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? countWorkplaces = freezed,
   }) {
     return _then(_value.copyWith(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String,
       countWorkplaces: countWorkplaces == freezed
           ? _value.countWorkplaces
           : countWorkplaces // ignore: cast_nullable_to_non_nullable
@@ -99,9 +85,7 @@ abstract class _$ActivateWorkplacesOnPersonalAccountRequestCopyWith<$Res>
           $Res Function(_ActivateWorkplacesOnPersonalAccountRequest) then) =
       __$ActivateWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {@JsonKey(name: 'personal_account_id') String personalAccountId,
-      @JsonKey(name: 'count_workplaces') int countWorkplaces});
+  $Res call({@JsonKey(name: 'count_workplaces') int countWorkplaces});
 }
 
 /// @nodoc
@@ -117,14 +101,9 @@ class __$ActivateWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? countWorkplaces = freezed,
   }) {
     return _then(_ActivateWorkplacesOnPersonalAccountRequest(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String,
       countWorkplaces: countWorkplaces == freezed
           ? _value.countWorkplaces
           : countWorkplaces // ignore: cast_nullable_to_non_nullable
@@ -137,17 +116,11 @@ class __$ActivateWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_ActivateWorkplacesOnPersonalAccountRequest implements _ActivateWorkplacesOnPersonalAccountRequest {
   const _$_ActivateWorkplacesOnPersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') required this.personalAccountId,
-      @JsonKey(name: 'count_workplaces') required this.countWorkplaces});
+      {@JsonKey(name: 'count_workplaces') required this.countWorkplaces});
 
   factory _$_ActivateWorkplacesOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
       _$$_ActivateWorkplacesOnPersonalAccountRequestFromJson(json);
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  final String personalAccountId;
   @override
 
   /// .
@@ -156,24 +129,19 @@ class _$_ActivateWorkplacesOnPersonalAccountRequest implements _ActivateWorkplac
 
   @override
   String toString() {
-    return 'ActivateWorkplacesOnPersonalAccountRequest(personalAccountId: $personalAccountId, countWorkplaces: $countWorkplaces)';
+    return 'ActivateWorkplacesOnPersonalAccountRequest(countWorkplaces: $countWorkplaces)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _ActivateWorkplacesOnPersonalAccountRequest &&
-            (identical(other.personalAccountId, personalAccountId) ||
-                const DeepCollectionEquality().equals(other.personalAccountId, personalAccountId)) &&
             (identical(other.countWorkplaces, countWorkplaces) ||
                 const DeepCollectionEquality().equals(other.countWorkplaces, countWorkplaces)));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(personalAccountId) ^
-      const DeepCollectionEquality().hash(countWorkplaces);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(countWorkplaces);
 
   @JsonKey(ignore: true)
   @override
@@ -189,17 +157,12 @@ class _$_ActivateWorkplacesOnPersonalAccountRequest implements _ActivateWorkplac
 
 abstract class _ActivateWorkplacesOnPersonalAccountRequest implements ActivateWorkplacesOnPersonalAccountRequest {
   const factory _ActivateWorkplacesOnPersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
-      @JsonKey(name: 'count_workplaces') required int countWorkplaces}) = _$_ActivateWorkplacesOnPersonalAccountRequest;
+          {@JsonKey(name: 'count_workplaces') required int countWorkplaces}) =
+      _$_ActivateWorkplacesOnPersonalAccountRequest;
 
   factory _ActivateWorkplacesOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =
       _$_ActivateWorkplacesOnPersonalAccountRequest.fromJson;
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .

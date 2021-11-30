@@ -22,11 +22,8 @@ class _$AddTeamOnPersonalAccountRequestTearOff {
   const _$AddTeamOnPersonalAccountRequestTearOff();
 
   _AddTeamOnPersonalAccountRequest call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'team_uuid') String? teamUuid,
-      @JsonKey(name: 'delete_date') String? deleteDate}) {
+      {@JsonKey(name: 'team_uuid') String? teamUuid, @JsonKey(name: 'delete_date') String? deleteDate}) {
     return _AddTeamOnPersonalAccountRequest(
-      personalAccountId: personalAccountId,
       teamUuid: teamUuid,
       deleteDate: deleteDate,
     );
@@ -42,10 +39,6 @@ const $AddTeamOnPersonalAccountRequest = _$AddTeamOnPersonalAccountRequestTearOf
 
 /// @nodoc
 mixin _$AddTeamOnPersonalAccountRequest {
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  String? get personalAccountId => throw _privateConstructorUsedError;
-
   /// .
   @JsonKey(name: 'team_uuid')
   String? get teamUuid => throw _privateConstructorUsedError;
@@ -65,10 +58,7 @@ abstract class $AddTeamOnPersonalAccountRequestCopyWith<$Res> {
   factory $AddTeamOnPersonalAccountRequestCopyWith(
           AddTeamOnPersonalAccountRequest value, $Res Function(AddTeamOnPersonalAccountRequest) then) =
       _$AddTeamOnPersonalAccountRequestCopyWithImpl<$Res>;
-  $Res call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'team_uuid') String? teamUuid,
-      @JsonKey(name: 'delete_date') String? deleteDate});
+  $Res call({@JsonKey(name: 'team_uuid') String? teamUuid, @JsonKey(name: 'delete_date') String? deleteDate});
 }
 
 /// @nodoc
@@ -81,15 +71,10 @@ class _$AddTeamOnPersonalAccountRequestCopyWithImpl<$Res> implements $AddTeamOnP
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? teamUuid = freezed,
     Object? deleteDate = freezed,
   }) {
     return _then(_value.copyWith(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String?,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
@@ -109,10 +94,7 @@ abstract class _$AddTeamOnPersonalAccountRequestCopyWith<$Res>
           _AddTeamOnPersonalAccountRequest value, $Res Function(_AddTeamOnPersonalAccountRequest) then) =
       __$AddTeamOnPersonalAccountRequestCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'team_uuid') String? teamUuid,
-      @JsonKey(name: 'delete_date') String? deleteDate});
+  $Res call({@JsonKey(name: 'team_uuid') String? teamUuid, @JsonKey(name: 'delete_date') String? deleteDate});
 }
 
 /// @nodoc
@@ -127,15 +109,10 @@ class __$AddTeamOnPersonalAccountRequestCopyWithImpl<$Res> extends _$AddTeamOnPe
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? teamUuid = freezed,
     Object? deleteDate = freezed,
   }) {
     return _then(_AddTeamOnPersonalAccountRequest(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String?,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
@@ -152,18 +129,11 @@ class __$AddTeamOnPersonalAccountRequestCopyWithImpl<$Res> extends _$AddTeamOnPe
 @JsonSerializable()
 class _$_AddTeamOnPersonalAccountRequest implements _AddTeamOnPersonalAccountRequest {
   const _$_AddTeamOnPersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') this.personalAccountId,
-      @JsonKey(name: 'team_uuid') this.teamUuid,
-      @JsonKey(name: 'delete_date') this.deleteDate});
+      {@JsonKey(name: 'team_uuid') this.teamUuid, @JsonKey(name: 'delete_date') this.deleteDate});
 
   factory _$_AddTeamOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
       _$$_AddTeamOnPersonalAccountRequestFromJson(json);
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  final String? personalAccountId;
   @override
 
   /// .
@@ -177,15 +147,13 @@ class _$_AddTeamOnPersonalAccountRequest implements _AddTeamOnPersonalAccountReq
 
   @override
   String toString() {
-    return 'AddTeamOnPersonalAccountRequest(personalAccountId: $personalAccountId, teamUuid: $teamUuid, deleteDate: $deleteDate)';
+    return 'AddTeamOnPersonalAccountRequest(teamUuid: $teamUuid, deleteDate: $deleteDate)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _AddTeamOnPersonalAccountRequest &&
-            (identical(other.personalAccountId, personalAccountId) ||
-                const DeepCollectionEquality().equals(other.personalAccountId, personalAccountId)) &&
             (identical(other.teamUuid, teamUuid) || const DeepCollectionEquality().equals(other.teamUuid, teamUuid)) &&
             (identical(other.deleteDate, deleteDate) ||
                 const DeepCollectionEquality().equals(other.deleteDate, deleteDate)));
@@ -194,7 +162,6 @@ class _$_AddTeamOnPersonalAccountRequest implements _AddTeamOnPersonalAccountReq
   @override
   int get hashCode =>
       runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(personalAccountId) ^
       const DeepCollectionEquality().hash(teamUuid) ^
       const DeepCollectionEquality().hash(deleteDate);
 
@@ -211,18 +178,12 @@ class _$_AddTeamOnPersonalAccountRequest implements _AddTeamOnPersonalAccountReq
 
 abstract class _AddTeamOnPersonalAccountRequest implements AddTeamOnPersonalAccountRequest {
   const factory _AddTeamOnPersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'team_uuid') String? teamUuid,
+      {@JsonKey(name: 'team_uuid') String? teamUuid,
       @JsonKey(name: 'delete_date') String? deleteDate}) = _$_AddTeamOnPersonalAccountRequest;
 
   factory _AddTeamOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =
       _$_AddTeamOnPersonalAccountRequest.fromJson;
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  String? get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .

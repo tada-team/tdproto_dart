@@ -36,6 +36,7 @@ class _$TariffBillingTearOff {
       @JsonKey(name: 'max_voice_user') required int maxVoiceUser,
       @JsonKey(name: 'max_video_user') required int maxVideoUser,
       @JsonKey(name: 'video_call_bitrate') required int videoCallBitrate,
+      @JsonKey(name: 'video_sharing_bitrate') required int videoSharingBitrate,
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'period_days') required int periodDays,
       @JsonKey(name: 'status') required String status,
@@ -56,6 +57,7 @@ class _$TariffBillingTearOff {
       maxVoiceUser: maxVoiceUser,
       maxVideoUser: maxVideoUser,
       videoCallBitrate: videoCallBitrate,
+      videoSharingBitrate: videoSharingBitrate,
       openDate: openDate,
       periodDays: periodDays,
       status: status,
@@ -130,6 +132,10 @@ mixin _$TariffBilling {
   @JsonKey(name: 'video_call_bitrate')
   int get videoCallBitrate => throw _privateConstructorUsedError;
 
+  /// Bitrate of video in video sharing.
+  @JsonKey(name: 'video_sharing_bitrate')
+  int get videoSharingBitrate => throw _privateConstructorUsedError;
+
   /// Date of opening tariff.
   @JsonKey(name: 'open_date')
   String? get openDate => throw _privateConstructorUsedError;
@@ -174,6 +180,7 @@ abstract class $TariffBillingCopyWith<$Res> {
       @JsonKey(name: 'max_voice_user') int maxVoiceUser,
       @JsonKey(name: 'max_video_user') int maxVideoUser,
       @JsonKey(name: 'video_call_bitrate') int videoCallBitrate,
+      @JsonKey(name: 'video_sharing_bitrate') int videoSharingBitrate,
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'period_days') int periodDays,
       @JsonKey(name: 'status') String status,
@@ -205,6 +212,7 @@ class _$TariffBillingCopyWithImpl<$Res> implements $TariffBillingCopyWith<$Res> 
     Object? maxVoiceUser = freezed,
     Object? maxVideoUser = freezed,
     Object? videoCallBitrate = freezed,
+    Object? videoSharingBitrate = freezed,
     Object? openDate = freezed,
     Object? periodDays = freezed,
     Object? status = freezed,
@@ -268,6 +276,10 @@ class _$TariffBillingCopyWithImpl<$Res> implements $TariffBillingCopyWith<$Res> 
           ? _value.videoCallBitrate
           : videoCallBitrate // ignore: cast_nullable_to_non_nullable
               as int,
+      videoSharingBitrate: videoSharingBitrate == freezed
+          ? _value.videoSharingBitrate
+          : videoSharingBitrate // ignore: cast_nullable_to_non_nullable
+              as int,
       openDate: openDate == freezed
           ? _value.openDate
           : openDate // ignore: cast_nullable_to_non_nullable
@@ -312,6 +324,7 @@ abstract class _$TariffBillingCopyWith<$Res> implements $TariffBillingCopyWith<$
       @JsonKey(name: 'max_voice_user') int maxVoiceUser,
       @JsonKey(name: 'max_video_user') int maxVideoUser,
       @JsonKey(name: 'video_call_bitrate') int videoCallBitrate,
+      @JsonKey(name: 'video_sharing_bitrate') int videoSharingBitrate,
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'period_days') int periodDays,
       @JsonKey(name: 'status') String status,
@@ -344,6 +357,7 @@ class __$TariffBillingCopyWithImpl<$Res> extends _$TariffBillingCopyWithImpl<$Re
     Object? maxVoiceUser = freezed,
     Object? maxVideoUser = freezed,
     Object? videoCallBitrate = freezed,
+    Object? videoSharingBitrate = freezed,
     Object? openDate = freezed,
     Object? periodDays = freezed,
     Object? status = freezed,
@@ -407,6 +421,10 @@ class __$TariffBillingCopyWithImpl<$Res> extends _$TariffBillingCopyWithImpl<$Re
           ? _value.videoCallBitrate
           : videoCallBitrate // ignore: cast_nullable_to_non_nullable
               as int,
+      videoSharingBitrate: videoSharingBitrate == freezed
+          ? _value.videoSharingBitrate
+          : videoSharingBitrate // ignore: cast_nullable_to_non_nullable
+              as int,
       openDate: openDate == freezed
           ? _value.openDate
           : openDate // ignore: cast_nullable_to_non_nullable
@@ -449,6 +467,7 @@ class _$_TariffBilling implements _TariffBilling {
       @JsonKey(name: 'max_voice_user') required this.maxVoiceUser,
       @JsonKey(name: 'max_video_user') required this.maxVideoUser,
       @JsonKey(name: 'video_call_bitrate') required this.videoCallBitrate,
+      @JsonKey(name: 'video_sharing_bitrate') required this.videoSharingBitrate,
       @JsonKey(name: 'open_date') this.openDate,
       @JsonKey(name: 'period_days') required this.periodDays,
       @JsonKey(name: 'status') required this.status,
@@ -529,6 +548,11 @@ class _$_TariffBilling implements _TariffBilling {
   final int videoCallBitrate;
   @override
 
+  /// Bitrate of video in video sharing.
+  @JsonKey(name: 'video_sharing_bitrate')
+  final int videoSharingBitrate;
+  @override
+
   /// Date of opening tariff.
   @JsonKey(name: 'open_date')
   final String? openDate;
@@ -555,7 +579,7 @@ class _$_TariffBilling implements _TariffBilling {
 
   @override
   String toString() {
-    return 'TariffBilling(closeDate: $closeDate, costWorkplace: $costWorkplace, currency: $currency, minTariffWorkplaces: $minTariffWorkplaces, minStepWorkplaces: $minStepWorkplaces, diskSpaceQuotaMb: $diskSpaceQuotaMb, freeWorkplaces: $freeWorkplaces, isBillingFree: $isBillingFree, isBillingFullTime: $isBillingFullTime, isDefaultTariff: $isDefaultTariff, isRecalcChangeTariff: $isRecalcChangeTariff, maxVoiceUser: $maxVoiceUser, maxVideoUser: $maxVideoUser, videoCallBitrate: $videoCallBitrate, openDate: $openDate, periodDays: $periodDays, status: $status, tariffId: $tariffId, tariffName: $tariffName)';
+    return 'TariffBilling(closeDate: $closeDate, costWorkplace: $costWorkplace, currency: $currency, minTariffWorkplaces: $minTariffWorkplaces, minStepWorkplaces: $minStepWorkplaces, diskSpaceQuotaMb: $diskSpaceQuotaMb, freeWorkplaces: $freeWorkplaces, isBillingFree: $isBillingFree, isBillingFullTime: $isBillingFullTime, isDefaultTariff: $isDefaultTariff, isRecalcChangeTariff: $isRecalcChangeTariff, maxVoiceUser: $maxVoiceUser, maxVideoUser: $maxVideoUser, videoCallBitrate: $videoCallBitrate, videoSharingBitrate: $videoSharingBitrate, openDate: $openDate, periodDays: $periodDays, status: $status, tariffId: $tariffId, tariffName: $tariffName)';
   }
 
   @override
@@ -589,6 +613,8 @@ class _$_TariffBilling implements _TariffBilling {
                 const DeepCollectionEquality().equals(other.maxVideoUser, maxVideoUser)) &&
             (identical(other.videoCallBitrate, videoCallBitrate) ||
                 const DeepCollectionEquality().equals(other.videoCallBitrate, videoCallBitrate)) &&
+            (identical(other.videoSharingBitrate, videoSharingBitrate) ||
+                const DeepCollectionEquality().equals(other.videoSharingBitrate, videoSharingBitrate)) &&
             (identical(other.openDate, openDate) || const DeepCollectionEquality().equals(other.openDate, openDate)) &&
             (identical(other.periodDays, periodDays) ||
                 const DeepCollectionEquality().equals(other.periodDays, periodDays)) &&
@@ -615,6 +641,7 @@ class _$_TariffBilling implements _TariffBilling {
       const DeepCollectionEquality().hash(maxVoiceUser) ^
       const DeepCollectionEquality().hash(maxVideoUser) ^
       const DeepCollectionEquality().hash(videoCallBitrate) ^
+      const DeepCollectionEquality().hash(videoSharingBitrate) ^
       const DeepCollectionEquality().hash(openDate) ^
       const DeepCollectionEquality().hash(periodDays) ^
       const DeepCollectionEquality().hash(status) ^
@@ -648,6 +675,7 @@ abstract class _TariffBilling implements TariffBilling {
       @JsonKey(name: 'max_voice_user') required int maxVoiceUser,
       @JsonKey(name: 'max_video_user') required int maxVideoUser,
       @JsonKey(name: 'video_call_bitrate') required int videoCallBitrate,
+      @JsonKey(name: 'video_sharing_bitrate') required int videoSharingBitrate,
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'period_days') required int periodDays,
       @JsonKey(name: 'status') required String status,
@@ -726,6 +754,11 @@ abstract class _TariffBilling implements TariffBilling {
   /// Bitrate of video in video co.
   @JsonKey(name: 'video_call_bitrate')
   int get videoCallBitrate => throw _privateConstructorUsedError;
+  @override
+
+  /// Bitrate of video in video sharing.
+  @JsonKey(name: 'video_sharing_bitrate')
+  int get videoSharingBitrate => throw _privateConstructorUsedError;
   @override
 
   /// Date of opening tariff.

@@ -9,9 +9,6 @@ part 'delete_workplaces_on_personal_account_request.g.dart';
 class DeleteWorkplacesOnPersonalAccountRequest with _$DeleteWorkplacesOnPersonalAccountRequest {
   const factory DeleteWorkplacesOnPersonalAccountRequest({
     /// .
-    @JsonKey(name: 'personal_account_id') required String personalAccountId,
-
-    /// .
     @JsonKey(name: 'count_workplaces') required int countWorkplaces,
   }) = _DeleteWorkplacesOnPersonalAccountRequest;
 

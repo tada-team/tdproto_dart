@@ -21,12 +21,8 @@ TeamBilling _$TeamBillingFromJson(Map<String, dynamic> json) {
 class _$TeamBillingTearOff {
   const _$TeamBillingTearOff();
 
-  _TeamBilling call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'team_uuid') String? teamUuid,
-      @JsonKey(name: 'delete_date') String? deleteDate}) {
+  _TeamBilling call({@JsonKey(name: 'team_uuid') String? teamUuid, @JsonKey(name: 'delete_date') String? deleteDate}) {
     return _TeamBilling(
-      personalAccountId: personalAccountId,
       teamUuid: teamUuid,
       deleteDate: deleteDate,
     );
@@ -43,10 +39,6 @@ const $TeamBilling = _$TeamBillingTearOff();
 /// @nodoc
 mixin _$TeamBilling {
   /// .
-  @JsonKey(name: 'personal_account_id')
-  String? get personalAccountId => throw _privateConstructorUsedError;
-
-  /// .
   @JsonKey(name: 'team_uuid')
   String? get teamUuid => throw _privateConstructorUsedError;
 
@@ -62,10 +54,7 @@ mixin _$TeamBilling {
 /// @nodoc
 abstract class $TeamBillingCopyWith<$Res> {
   factory $TeamBillingCopyWith(TeamBilling value, $Res Function(TeamBilling) then) = _$TeamBillingCopyWithImpl<$Res>;
-  $Res call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'team_uuid') String? teamUuid,
-      @JsonKey(name: 'delete_date') String? deleteDate});
+  $Res call({@JsonKey(name: 'team_uuid') String? teamUuid, @JsonKey(name: 'delete_date') String? deleteDate});
 }
 
 /// @nodoc
@@ -78,15 +67,10 @@ class _$TeamBillingCopyWithImpl<$Res> implements $TeamBillingCopyWith<$Res> {
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? teamUuid = freezed,
     Object? deleteDate = freezed,
   }) {
     return _then(_value.copyWith(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String?,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
@@ -104,10 +88,7 @@ abstract class _$TeamBillingCopyWith<$Res> implements $TeamBillingCopyWith<$Res>
   factory _$TeamBillingCopyWith(_TeamBilling value, $Res Function(_TeamBilling) then) =
       __$TeamBillingCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'team_uuid') String? teamUuid,
-      @JsonKey(name: 'delete_date') String? deleteDate});
+  $Res call({@JsonKey(name: 'team_uuid') String? teamUuid, @JsonKey(name: 'delete_date') String? deleteDate});
 }
 
 /// @nodoc
@@ -120,15 +101,10 @@ class __$TeamBillingCopyWithImpl<$Res> extends _$TeamBillingCopyWithImpl<$Res> i
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? teamUuid = freezed,
     Object? deleteDate = freezed,
   }) {
     return _then(_TeamBilling(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String?,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
@@ -144,18 +120,10 @@ class __$TeamBillingCopyWithImpl<$Res> extends _$TeamBillingCopyWithImpl<$Res> i
 /// @nodoc
 @JsonSerializable()
 class _$_TeamBilling implements _TeamBilling {
-  const _$_TeamBilling(
-      {@JsonKey(name: 'personal_account_id') this.personalAccountId,
-      @JsonKey(name: 'team_uuid') this.teamUuid,
-      @JsonKey(name: 'delete_date') this.deleteDate});
+  const _$_TeamBilling({@JsonKey(name: 'team_uuid') this.teamUuid, @JsonKey(name: 'delete_date') this.deleteDate});
 
   factory _$_TeamBilling.fromJson(Map<String, dynamic> json) => _$$_TeamBillingFromJson(json);
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  final String? personalAccountId;
   @override
 
   /// .
@@ -169,15 +137,13 @@ class _$_TeamBilling implements _TeamBilling {
 
   @override
   String toString() {
-    return 'TeamBilling(personalAccountId: $personalAccountId, teamUuid: $teamUuid, deleteDate: $deleteDate)';
+    return 'TeamBilling(teamUuid: $teamUuid, deleteDate: $deleteDate)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _TeamBilling &&
-            (identical(other.personalAccountId, personalAccountId) ||
-                const DeepCollectionEquality().equals(other.personalAccountId, personalAccountId)) &&
             (identical(other.teamUuid, teamUuid) || const DeepCollectionEquality().equals(other.teamUuid, teamUuid)) &&
             (identical(other.deleteDate, deleteDate) ||
                 const DeepCollectionEquality().equals(other.deleteDate, deleteDate)));
@@ -186,7 +152,6 @@ class _$_TeamBilling implements _TeamBilling {
   @override
   int get hashCode =>
       runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(personalAccountId) ^
       const DeepCollectionEquality().hash(teamUuid) ^
       const DeepCollectionEquality().hash(deleteDate);
 
@@ -202,17 +167,11 @@ class _$_TeamBilling implements _TeamBilling {
 
 abstract class _TeamBilling implements TeamBilling {
   const factory _TeamBilling(
-      {@JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'team_uuid') String? teamUuid,
+      {@JsonKey(name: 'team_uuid') String? teamUuid,
       @JsonKey(name: 'delete_date') String? deleteDate}) = _$_TeamBilling;
 
   factory _TeamBilling.fromJson(Map<String, dynamic> json) = _$_TeamBilling.fromJson;
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  String? get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .

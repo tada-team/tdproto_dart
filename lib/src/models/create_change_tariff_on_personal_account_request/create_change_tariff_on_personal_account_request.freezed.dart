@@ -23,11 +23,8 @@ class _$CreateChangeTariffOnPersonalAccountRequestTearOff {
   const _$CreateChangeTariffOnPersonalAccountRequestTearOff();
 
   _CreateChangeTariffOnPersonalAccountRequest call(
-      {@JsonKey(name: 'personal_account_id') required int personalAccountId,
-      @JsonKey(name: 'tariff_id') required int tariffId,
-      @JsonKey(name: 'open_date') String? openDate}) {
+      {@JsonKey(name: 'tariff_id') required int tariffId, @JsonKey(name: 'open_date') String? openDate}) {
     return _CreateChangeTariffOnPersonalAccountRequest(
-      personalAccountId: personalAccountId,
       tariffId: tariffId,
       openDate: openDate,
     );
@@ -43,10 +40,6 @@ const $CreateChangeTariffOnPersonalAccountRequest = _$CreateChangeTariffOnPerson
 
 /// @nodoc
 mixin _$CreateChangeTariffOnPersonalAccountRequest {
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
-
   /// .
   @JsonKey(name: 'tariff_id')
   int get tariffId => throw _privateConstructorUsedError;
@@ -66,10 +59,7 @@ abstract class $CreateChangeTariffOnPersonalAccountRequestCopyWith<$Res> {
   factory $CreateChangeTariffOnPersonalAccountRequestCopyWith(CreateChangeTariffOnPersonalAccountRequest value,
           $Res Function(CreateChangeTariffOnPersonalAccountRequest) then) =
       _$CreateChangeTariffOnPersonalAccountRequestCopyWithImpl<$Res>;
-  $Res call(
-      {@JsonKey(name: 'personal_account_id') int personalAccountId,
-      @JsonKey(name: 'tariff_id') int tariffId,
-      @JsonKey(name: 'open_date') String? openDate});
+  $Res call({@JsonKey(name: 'tariff_id') int tariffId, @JsonKey(name: 'open_date') String? openDate});
 }
 
 /// @nodoc
@@ -83,15 +73,10 @@ class _$CreateChangeTariffOnPersonalAccountRequestCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? tariffId = freezed,
     Object? openDate = freezed,
   }) {
     return _then(_value.copyWith(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
@@ -111,10 +96,7 @@ abstract class _$CreateChangeTariffOnPersonalAccountRequestCopyWith<$Res>
           $Res Function(_CreateChangeTariffOnPersonalAccountRequest) then) =
       __$CreateChangeTariffOnPersonalAccountRequestCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {@JsonKey(name: 'personal_account_id') int personalAccountId,
-      @JsonKey(name: 'tariff_id') int tariffId,
-      @JsonKey(name: 'open_date') String? openDate});
+  $Res call({@JsonKey(name: 'tariff_id') int tariffId, @JsonKey(name: 'open_date') String? openDate});
 }
 
 /// @nodoc
@@ -130,15 +112,10 @@ class __$CreateChangeTariffOnPersonalAccountRequestCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? tariffId = freezed,
     Object? openDate = freezed,
   }) {
     return _then(_CreateChangeTariffOnPersonalAccountRequest(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
@@ -155,18 +132,11 @@ class __$CreateChangeTariffOnPersonalAccountRequestCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_CreateChangeTariffOnPersonalAccountRequest implements _CreateChangeTariffOnPersonalAccountRequest {
   const _$_CreateChangeTariffOnPersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') required this.personalAccountId,
-      @JsonKey(name: 'tariff_id') required this.tariffId,
-      @JsonKey(name: 'open_date') this.openDate});
+      {@JsonKey(name: 'tariff_id') required this.tariffId, @JsonKey(name: 'open_date') this.openDate});
 
   factory _$_CreateChangeTariffOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
       _$$_CreateChangeTariffOnPersonalAccountRequestFromJson(json);
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  final int personalAccountId;
   @override
 
   /// .
@@ -180,15 +150,13 @@ class _$_CreateChangeTariffOnPersonalAccountRequest implements _CreateChangeTari
 
   @override
   String toString() {
-    return 'CreateChangeTariffOnPersonalAccountRequest(personalAccountId: $personalAccountId, tariffId: $tariffId, openDate: $openDate)';
+    return 'CreateChangeTariffOnPersonalAccountRequest(tariffId: $tariffId, openDate: $openDate)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _CreateChangeTariffOnPersonalAccountRequest &&
-            (identical(other.personalAccountId, personalAccountId) ||
-                const DeepCollectionEquality().equals(other.personalAccountId, personalAccountId)) &&
             (identical(other.tariffId, tariffId) || const DeepCollectionEquality().equals(other.tariffId, tariffId)) &&
             (identical(other.openDate, openDate) || const DeepCollectionEquality().equals(other.openDate, openDate)));
   }
@@ -196,7 +164,6 @@ class _$_CreateChangeTariffOnPersonalAccountRequest implements _CreateChangeTari
   @override
   int get hashCode =>
       runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(personalAccountId) ^
       const DeepCollectionEquality().hash(tariffId) ^
       const DeepCollectionEquality().hash(openDate);
 
@@ -214,18 +181,12 @@ class _$_CreateChangeTariffOnPersonalAccountRequest implements _CreateChangeTari
 
 abstract class _CreateChangeTariffOnPersonalAccountRequest implements CreateChangeTariffOnPersonalAccountRequest {
   const factory _CreateChangeTariffOnPersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') required int personalAccountId,
-      @JsonKey(name: 'tariff_id') required int tariffId,
+      {@JsonKey(name: 'tariff_id') required int tariffId,
       @JsonKey(name: 'open_date') String? openDate}) = _$_CreateChangeTariffOnPersonalAccountRequest;
 
   factory _CreateChangeTariffOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =
       _$_CreateChangeTariffOnPersonalAccountRequest.fromJson;
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .

@@ -9,9 +9,6 @@ part 'delete_team_from_personal_account_request.g.dart';
 class DeleteTeamFromPersonalAccountRequest with _$DeleteTeamFromPersonalAccountRequest {
   const factory DeleteTeamFromPersonalAccountRequest({
     /// .
-    @JsonKey(name: 'personal_account_id') String? personalAccountId,
-
-    /// .
     @JsonKey(name: 'team_uuid') String? teamUuid,
 
     /// .

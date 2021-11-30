@@ -2,7 +2,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'user_info.dart';
+part of 'add_user_in_workplace_by_jid_response.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -13,21 +13,21 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-UserInfo _$UserInfoFromJson(Map<String, dynamic> json) {
-  return _UserInfo.fromJson(json);
+AddUserInWorkplaceByJidResponse _$AddUserInWorkplaceByJidResponseFromJson(Map<String, dynamic> json) {
+  return _AddUserInWorkplaceByJidResponse.fromJson(json);
 }
 
 /// @nodoc
-class _$UserInfoTearOff {
-  const _$UserInfoTearOff();
+class _$AddUserInWorkplaceByJidResponseTearOff {
+  const _$AddUserInWorkplaceByJidResponseTearOff();
 
-  _UserInfo call(
+  _AddUserInWorkplaceByJidResponse call(
       {@JsonKey(name: 'uuid') required String uuid,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'email') String? email,
       @JsonKey(name: 'last_activity') String? lastActivity}) {
-    return _UserInfo(
+    return _AddUserInWorkplaceByJidResponse(
       uuid: uuid,
       fullName: fullName,
       phone: phone,
@@ -36,16 +36,16 @@ class _$UserInfoTearOff {
     );
   }
 
-  UserInfo fromJson(Map<String, Object> json) {
-    return UserInfo.fromJson(json);
+  AddUserInWorkplaceByJidResponse fromJson(Map<String, Object> json) {
+    return AddUserInWorkplaceByJidResponse.fromJson(json);
   }
 }
 
 /// @nodoc
-const $UserInfo = _$UserInfoTearOff();
+const $AddUserInWorkplaceByJidResponse = _$AddUserInWorkplaceByJidResponseTearOff();
 
 /// @nodoc
-mixin _$UserInfo {
+mixin _$AddUserInWorkplaceByJidResponse {
   /// .
   @JsonKey(name: 'uuid')
   String get uuid => throw _privateConstructorUsedError;
@@ -68,12 +68,15 @@ mixin _$UserInfo {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $UserInfoCopyWith<UserInfo> get copyWith => throw _privateConstructorUsedError;
+  $AddUserInWorkplaceByJidResponseCopyWith<AddUserInWorkplaceByJidResponse> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $UserInfoCopyWith<$Res> {
-  factory $UserInfoCopyWith(UserInfo value, $Res Function(UserInfo) then) = _$UserInfoCopyWithImpl<$Res>;
+abstract class $AddUserInWorkplaceByJidResponseCopyWith<$Res> {
+  factory $AddUserInWorkplaceByJidResponseCopyWith(
+          AddUserInWorkplaceByJidResponse value, $Res Function(AddUserInWorkplaceByJidResponse) then) =
+      _$AddUserInWorkplaceByJidResponseCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uuid') String uuid,
       @JsonKey(name: 'full_name') String? fullName,
@@ -83,12 +86,12 @@ abstract class $UserInfoCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UserInfoCopyWithImpl<$Res> implements $UserInfoCopyWith<$Res> {
-  _$UserInfoCopyWithImpl(this._value, this._then);
+class _$AddUserInWorkplaceByJidResponseCopyWithImpl<$Res> implements $AddUserInWorkplaceByJidResponseCopyWith<$Res> {
+  _$AddUserInWorkplaceByJidResponseCopyWithImpl(this._value, this._then);
 
-  final UserInfo _value;
+  final AddUserInWorkplaceByJidResponse _value;
   // ignore: unused_field
-  final $Res Function(UserInfo) _then;
+  final $Res Function(AddUserInWorkplaceByJidResponse) _then;
 
   @override
   $Res call({
@@ -124,8 +127,11 @@ class _$UserInfoCopyWithImpl<$Res> implements $UserInfoCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$UserInfoCopyWith<$Res> implements $UserInfoCopyWith<$Res> {
-  factory _$UserInfoCopyWith(_UserInfo value, $Res Function(_UserInfo) then) = __$UserInfoCopyWithImpl<$Res>;
+abstract class _$AddUserInWorkplaceByJidResponseCopyWith<$Res>
+    implements $AddUserInWorkplaceByJidResponseCopyWith<$Res> {
+  factory _$AddUserInWorkplaceByJidResponseCopyWith(
+          _AddUserInWorkplaceByJidResponse value, $Res Function(_AddUserInWorkplaceByJidResponse) then) =
+      __$AddUserInWorkplaceByJidResponseCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'uuid') String uuid,
@@ -136,12 +142,14 @@ abstract class _$UserInfoCopyWith<$Res> implements $UserInfoCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$UserInfoCopyWithImpl<$Res> extends _$UserInfoCopyWithImpl<$Res> implements _$UserInfoCopyWith<$Res> {
-  __$UserInfoCopyWithImpl(_UserInfo _value, $Res Function(_UserInfo) _then)
-      : super(_value, (v) => _then(v as _UserInfo));
+class __$AddUserInWorkplaceByJidResponseCopyWithImpl<$Res> extends _$AddUserInWorkplaceByJidResponseCopyWithImpl<$Res>
+    implements _$AddUserInWorkplaceByJidResponseCopyWith<$Res> {
+  __$AddUserInWorkplaceByJidResponseCopyWithImpl(
+      _AddUserInWorkplaceByJidResponse _value, $Res Function(_AddUserInWorkplaceByJidResponse) _then)
+      : super(_value, (v) => _then(v as _AddUserInWorkplaceByJidResponse));
 
   @override
-  _UserInfo get _value => super._value as _UserInfo;
+  _AddUserInWorkplaceByJidResponse get _value => super._value as _AddUserInWorkplaceByJidResponse;
 
   @override
   $Res call({
@@ -151,7 +159,7 @@ class __$UserInfoCopyWithImpl<$Res> extends _$UserInfoCopyWithImpl<$Res> impleme
     Object? email = freezed,
     Object? lastActivity = freezed,
   }) {
-    return _then(_UserInfo(
+    return _then(_AddUserInWorkplaceByJidResponse(
       uuid: uuid == freezed
           ? _value.uuid
           : uuid // ignore: cast_nullable_to_non_nullable
@@ -178,15 +186,16 @@ class __$UserInfoCopyWithImpl<$Res> extends _$UserInfoCopyWithImpl<$Res> impleme
 
 /// @nodoc
 @JsonSerializable()
-class _$_UserInfo implements _UserInfo {
-  const _$_UserInfo(
+class _$_AddUserInWorkplaceByJidResponse implements _AddUserInWorkplaceByJidResponse {
+  const _$_AddUserInWorkplaceByJidResponse(
       {@JsonKey(name: 'uuid') required this.uuid,
       @JsonKey(name: 'full_name') this.fullName,
       @JsonKey(name: 'phone') this.phone,
       @JsonKey(name: 'email') this.email,
       @JsonKey(name: 'last_activity') this.lastActivity});
 
-  factory _$_UserInfo.fromJson(Map<String, dynamic> json) => _$$_UserInfoFromJson(json);
+  factory _$_AddUserInWorkplaceByJidResponse.fromJson(Map<String, dynamic> json) =>
+      _$$_AddUserInWorkplaceByJidResponseFromJson(json);
 
   @override
 
@@ -216,13 +225,13 @@ class _$_UserInfo implements _UserInfo {
 
   @override
   String toString() {
-    return 'UserInfo(uuid: $uuid, fullName: $fullName, phone: $phone, email: $email, lastActivity: $lastActivity)';
+    return 'AddUserInWorkplaceByJidResponse(uuid: $uuid, fullName: $fullName, phone: $phone, email: $email, lastActivity: $lastActivity)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _UserInfo &&
+        (other is _AddUserInWorkplaceByJidResponse &&
             (identical(other.uuid, uuid) || const DeepCollectionEquality().equals(other.uuid, uuid)) &&
             (identical(other.fullName, fullName) || const DeepCollectionEquality().equals(other.fullName, fullName)) &&
             (identical(other.phone, phone) || const DeepCollectionEquality().equals(other.phone, phone)) &&
@@ -242,23 +251,25 @@ class _$_UserInfo implements _UserInfo {
 
   @JsonKey(ignore: true)
   @override
-  _$UserInfoCopyWith<_UserInfo> get copyWith => __$UserInfoCopyWithImpl<_UserInfo>(this, _$identity);
+  _$AddUserInWorkplaceByJidResponseCopyWith<_AddUserInWorkplaceByJidResponse> get copyWith =>
+      __$AddUserInWorkplaceByJidResponseCopyWithImpl<_AddUserInWorkplaceByJidResponse>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UserInfoToJson(this);
+    return _$$_AddUserInWorkplaceByJidResponseToJson(this);
   }
 }
 
-abstract class _UserInfo implements UserInfo {
-  const factory _UserInfo(
+abstract class _AddUserInWorkplaceByJidResponse implements AddUserInWorkplaceByJidResponse {
+  const factory _AddUserInWorkplaceByJidResponse(
       {@JsonKey(name: 'uuid') required String uuid,
       @JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'email') String? email,
-      @JsonKey(name: 'last_activity') String? lastActivity}) = _$_UserInfo;
+      @JsonKey(name: 'last_activity') String? lastActivity}) = _$_AddUserInWorkplaceByJidResponse;
 
-  factory _UserInfo.fromJson(Map<String, dynamic> json) = _$_UserInfo.fromJson;
+  factory _AddUserInWorkplaceByJidResponse.fromJson(Map<String, dynamic> json) =
+      _$_AddUserInWorkplaceByJidResponse.fromJson;
 
   @override
 
@@ -287,5 +298,6 @@ abstract class _UserInfo implements UserInfo {
   String? get lastActivity => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$UserInfoCopyWith<_UserInfo> get copyWith => throw _privateConstructorUsedError;
+  _$AddUserInWorkplaceByJidResponseCopyWith<_AddUserInWorkplaceByJidResponse> get copyWith =>
+      throw _privateConstructorUsedError;
 }

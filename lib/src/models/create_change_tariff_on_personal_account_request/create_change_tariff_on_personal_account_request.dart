@@ -9,9 +9,6 @@ part 'create_change_tariff_on_personal_account_request.g.dart';
 class CreateChangeTariffOnPersonalAccountRequest with _$CreateChangeTariffOnPersonalAccountRequest {
   const factory CreateChangeTariffOnPersonalAccountRequest({
     /// .
-    @JsonKey(name: 'personal_account_id') required int personalAccountId,
-
-    /// .
     @JsonKey(name: 'tariff_id') required int tariffId,
 
     /// .

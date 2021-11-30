@@ -9,9 +9,6 @@ part 'add_user_in_workplace_request.g.dart';
 class AddUserInWorkplaceRequest with _$AddUserInWorkplaceRequest {
   const factory AddUserInWorkplaceRequest({
     /// .
-    @JsonKey(name: 'personal_account_id') required String personalAccountId,
-
-    /// .
     @JsonKey(name: 'user_uuid') required String userUuid,
   }) = _AddUserInWorkplaceRequest;
 

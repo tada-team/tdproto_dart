@@ -1,12 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'user_info.dart';
+part of 'add_user_in_workplace_by_jid_response.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UserInfo _$$_UserInfoFromJson(Map<String, dynamic> json) => _$_UserInfo(
+_$_AddUserInWorkplaceByJidResponse _$$_AddUserInWorkplaceByJidResponseFromJson(Map<String, dynamic> json) =>
+    _$_AddUserInWorkplaceByJidResponse(
       uuid: json['uuid'] as String,
       fullName: json['full_name'] as String?,
       phone: json['phone'] as String?,
@@ -14,7 +15,8 @@ _$_UserInfo _$$_UserInfoFromJson(Map<String, dynamic> json) => _$_UserInfo(
       lastActivity: json['last_activity'] as String?,
     );
 
-Map<String, dynamic> _$$_UserInfoToJson(_$_UserInfo instance) => <String, dynamic>{
+Map<String, dynamic> _$$_AddUserInWorkplaceByJidResponseToJson(_$_AddUserInWorkplaceByJidResponse instance) =>
+    <String, dynamic>{
       'uuid': instance.uuid,
       'full_name': instance.fullName,
       'phone': instance.phone,

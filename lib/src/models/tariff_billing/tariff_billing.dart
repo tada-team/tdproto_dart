@@ -50,6 +50,9 @@ class TariffBilling with _$TariffBilling {
     /// Bitrate of video in video co.
     @JsonKey(name: 'video_call_bitrate') required int videoCallBitrate,
 
+    /// Bitrate of video in video sharing.
+    @JsonKey(name: 'video_sharing_bitrate') required int videoSharingBitrate,
+
     /// Date of opening tariff.
     @JsonKey(name: 'open_date') String? openDate,
 

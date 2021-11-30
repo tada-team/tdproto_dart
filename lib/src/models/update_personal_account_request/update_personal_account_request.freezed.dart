@@ -22,11 +22,8 @@ class _$UpdatePersonalAccountRequestTearOff {
   const _$UpdatePersonalAccountRequestTearOff();
 
   _UpdatePersonalAccountRequest call(
-      {@JsonKey(name: 'personal_account_id') required int personalAccountId,
-      @JsonKey(name: 'full_name') String? fullName,
-      @JsonKey(name: 'phone') String? phone}) {
+      {@JsonKey(name: 'full_name') String? fullName, @JsonKey(name: 'phone') String? phone}) {
     return _UpdatePersonalAccountRequest(
-      personalAccountId: personalAccountId,
       fullName: fullName,
       phone: phone,
     );
@@ -42,10 +39,6 @@ const $UpdatePersonalAccountRequest = _$UpdatePersonalAccountRequestTearOff();
 
 /// @nodoc
 mixin _$UpdatePersonalAccountRequest {
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
-
   /// .
   @JsonKey(name: 'full_name')
   String? get fullName => throw _privateConstructorUsedError;
@@ -65,10 +58,7 @@ abstract class $UpdatePersonalAccountRequestCopyWith<$Res> {
   factory $UpdatePersonalAccountRequestCopyWith(
           UpdatePersonalAccountRequest value, $Res Function(UpdatePersonalAccountRequest) then) =
       _$UpdatePersonalAccountRequestCopyWithImpl<$Res>;
-  $Res call(
-      {@JsonKey(name: 'personal_account_id') int personalAccountId,
-      @JsonKey(name: 'full_name') String? fullName,
-      @JsonKey(name: 'phone') String? phone});
+  $Res call({@JsonKey(name: 'full_name') String? fullName, @JsonKey(name: 'phone') String? phone});
 }
 
 /// @nodoc
@@ -81,15 +71,10 @@ class _$UpdatePersonalAccountRequestCopyWithImpl<$Res> implements $UpdatePersona
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? fullName = freezed,
     Object? phone = freezed,
   }) {
     return _then(_value.copyWith(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
       fullName: fullName == freezed
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
@@ -108,10 +93,7 @@ abstract class _$UpdatePersonalAccountRequestCopyWith<$Res> implements $UpdatePe
           _UpdatePersonalAccountRequest value, $Res Function(_UpdatePersonalAccountRequest) then) =
       __$UpdatePersonalAccountRequestCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {@JsonKey(name: 'personal_account_id') int personalAccountId,
-      @JsonKey(name: 'full_name') String? fullName,
-      @JsonKey(name: 'phone') String? phone});
+  $Res call({@JsonKey(name: 'full_name') String? fullName, @JsonKey(name: 'phone') String? phone});
 }
 
 /// @nodoc
@@ -126,15 +108,10 @@ class __$UpdatePersonalAccountRequestCopyWithImpl<$Res> extends _$UpdatePersonal
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? fullName = freezed,
     Object? phone = freezed,
   }) {
     return _then(_UpdatePersonalAccountRequest(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
       fullName: fullName == freezed
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
@@ -151,18 +128,11 @@ class __$UpdatePersonalAccountRequestCopyWithImpl<$Res> extends _$UpdatePersonal
 @JsonSerializable()
 class _$_UpdatePersonalAccountRequest implements _UpdatePersonalAccountRequest {
   const _$_UpdatePersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') required this.personalAccountId,
-      @JsonKey(name: 'full_name') this.fullName,
-      @JsonKey(name: 'phone') this.phone});
+      {@JsonKey(name: 'full_name') this.fullName, @JsonKey(name: 'phone') this.phone});
 
   factory _$_UpdatePersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
       _$$_UpdatePersonalAccountRequestFromJson(json);
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  final int personalAccountId;
   @override
 
   /// .
@@ -176,25 +146,20 @@ class _$_UpdatePersonalAccountRequest implements _UpdatePersonalAccountRequest {
 
   @override
   String toString() {
-    return 'UpdatePersonalAccountRequest(personalAccountId: $personalAccountId, fullName: $fullName, phone: $phone)';
+    return 'UpdatePersonalAccountRequest(fullName: $fullName, phone: $phone)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _UpdatePersonalAccountRequest &&
-            (identical(other.personalAccountId, personalAccountId) ||
-                const DeepCollectionEquality().equals(other.personalAccountId, personalAccountId)) &&
             (identical(other.fullName, fullName) || const DeepCollectionEquality().equals(other.fullName, fullName)) &&
             (identical(other.phone, phone) || const DeepCollectionEquality().equals(other.phone, phone)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(personalAccountId) ^
-      const DeepCollectionEquality().hash(fullName) ^
-      const DeepCollectionEquality().hash(phone);
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(fullName) ^ const DeepCollectionEquality().hash(phone);
 
   @JsonKey(ignore: true)
   @override
@@ -209,17 +174,11 @@ class _$_UpdatePersonalAccountRequest implements _UpdatePersonalAccountRequest {
 
 abstract class _UpdatePersonalAccountRequest implements UpdatePersonalAccountRequest {
   const factory _UpdatePersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') required int personalAccountId,
-      @JsonKey(name: 'full_name') String? fullName,
+      {@JsonKey(name: 'full_name') String? fullName,
       @JsonKey(name: 'phone') String? phone}) = _$_UpdatePersonalAccountRequest;
 
   factory _UpdatePersonalAccountRequest.fromJson(Map<String, dynamic> json) = _$_UpdatePersonalAccountRequest.fromJson;
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .

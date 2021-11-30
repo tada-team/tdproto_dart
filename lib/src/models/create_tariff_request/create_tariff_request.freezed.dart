@@ -35,6 +35,7 @@ class _$CreateTariffRequestTearOff {
       @JsonKey(name: 'max_voice_user') int? maxVoiceUser,
       @JsonKey(name: 'max_video_user') int? maxVideoUser,
       @JsonKey(name: 'video_call_bitrate') required int videoCallBitrate,
+      @JsonKey(name: 'video_sharing_bitrate') required int videoSharingBitrate,
       @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff = false,
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'period_days') required int periodDays,
@@ -53,6 +54,7 @@ class _$CreateTariffRequestTearOff {
       maxVoiceUser: maxVoiceUser,
       maxVideoUser: maxVideoUser,
       videoCallBitrate: videoCallBitrate,
+      videoSharingBitrate: videoSharingBitrate,
       isDefaultTariff: isDefaultTariff,
       openDate: openDate,
       periodDays: periodDays,
@@ -122,6 +124,10 @@ mixin _$CreateTariffRequest {
   @JsonKey(name: 'video_call_bitrate')
   int get videoCallBitrate => throw _privateConstructorUsedError;
 
+  /// Bitrate of video in video sharing.
+  @JsonKey(name: 'video_sharing_bitrate')
+  int get videoSharingBitrate => throw _privateConstructorUsedError;
+
   /// Default tariff flag that is set when registering an account.
   @JsonKey(name: 'is_default_tariff')
   bool? get isDefaultTariff => throw _privateConstructorUsedError;
@@ -161,6 +167,7 @@ abstract class $CreateTariffRequestCopyWith<$Res> {
       @JsonKey(name: 'max_voice_user') int? maxVoiceUser,
       @JsonKey(name: 'max_video_user') int? maxVideoUser,
       @JsonKey(name: 'video_call_bitrate') int videoCallBitrate,
+      @JsonKey(name: 'video_sharing_bitrate') int videoSharingBitrate,
       @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'period_days') int periodDays,
@@ -190,6 +197,7 @@ class _$CreateTariffRequestCopyWithImpl<$Res> implements $CreateTariffRequestCop
     Object? maxVoiceUser = freezed,
     Object? maxVideoUser = freezed,
     Object? videoCallBitrate = freezed,
+    Object? videoSharingBitrate = freezed,
     Object? isDefaultTariff = freezed,
     Object? openDate = freezed,
     Object? periodDays = freezed,
@@ -248,6 +256,10 @@ class _$CreateTariffRequestCopyWithImpl<$Res> implements $CreateTariffRequestCop
           ? _value.videoCallBitrate
           : videoCallBitrate // ignore: cast_nullable_to_non_nullable
               as int,
+      videoSharingBitrate: videoSharingBitrate == freezed
+          ? _value.videoSharingBitrate
+          : videoSharingBitrate // ignore: cast_nullable_to_non_nullable
+              as int,
       isDefaultTariff: isDefaultTariff == freezed
           ? _value.isDefaultTariff
           : isDefaultTariff // ignore: cast_nullable_to_non_nullable
@@ -287,6 +299,7 @@ abstract class _$CreateTariffRequestCopyWith<$Res> implements $CreateTariffReque
       @JsonKey(name: 'max_voice_user') int? maxVoiceUser,
       @JsonKey(name: 'max_video_user') int? maxVideoUser,
       @JsonKey(name: 'video_call_bitrate') int videoCallBitrate,
+      @JsonKey(name: 'video_sharing_bitrate') int videoSharingBitrate,
       @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'period_days') int periodDays,
@@ -317,6 +330,7 @@ class __$CreateTariffRequestCopyWithImpl<$Res> extends _$CreateTariffRequestCopy
     Object? maxVoiceUser = freezed,
     Object? maxVideoUser = freezed,
     Object? videoCallBitrate = freezed,
+    Object? videoSharingBitrate = freezed,
     Object? isDefaultTariff = freezed,
     Object? openDate = freezed,
     Object? periodDays = freezed,
@@ -375,6 +389,10 @@ class __$CreateTariffRequestCopyWithImpl<$Res> extends _$CreateTariffRequestCopy
           ? _value.videoCallBitrate
           : videoCallBitrate // ignore: cast_nullable_to_non_nullable
               as int,
+      videoSharingBitrate: videoSharingBitrate == freezed
+          ? _value.videoSharingBitrate
+          : videoSharingBitrate // ignore: cast_nullable_to_non_nullable
+              as int,
       isDefaultTariff: isDefaultTariff == freezed
           ? _value.isDefaultTariff
           : isDefaultTariff // ignore: cast_nullable_to_non_nullable
@@ -412,6 +430,7 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
       @JsonKey(name: 'max_voice_user') this.maxVoiceUser,
       @JsonKey(name: 'max_video_user') this.maxVideoUser,
       @JsonKey(name: 'video_call_bitrate') required this.videoCallBitrate,
+      @JsonKey(name: 'video_sharing_bitrate') required this.videoSharingBitrate,
       @JsonKey(name: 'is_default_tariff') this.isDefaultTariff = false,
       @JsonKey(name: 'open_date') this.openDate,
       @JsonKey(name: 'period_days') required this.periodDays,
@@ -486,6 +505,11 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
   final int videoCallBitrate;
   @override
 
+  /// Bitrate of video in video sharing.
+  @JsonKey(name: 'video_sharing_bitrate')
+  final int videoSharingBitrate;
+  @override
+
   /// Default tariff flag that is set when registering an account.
   @JsonKey(name: 'is_default_tariff')
   final bool? isDefaultTariff;
@@ -507,7 +531,7 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
 
   @override
   String toString() {
-    return 'CreateTariffRequest(closeDate: $closeDate, costWorkplace: $costWorkplace, currency: $currency, minTariffWorkplaces: $minTariffWorkplaces, minStepWorkplaces: $minStepWorkplaces, diskSpaceQuotaMb: $diskSpaceQuotaMb, freeWorkplaces: $freeWorkplaces, isBillingFree: $isBillingFree, isBillingFullTime: $isBillingFullTime, isRecalcChangeTariff: $isRecalcChangeTariff, maxVoiceUser: $maxVoiceUser, maxVideoUser: $maxVideoUser, videoCallBitrate: $videoCallBitrate, isDefaultTariff: $isDefaultTariff, openDate: $openDate, periodDays: $periodDays, tariffName: $tariffName)';
+    return 'CreateTariffRequest(closeDate: $closeDate, costWorkplace: $costWorkplace, currency: $currency, minTariffWorkplaces: $minTariffWorkplaces, minStepWorkplaces: $minStepWorkplaces, diskSpaceQuotaMb: $diskSpaceQuotaMb, freeWorkplaces: $freeWorkplaces, isBillingFree: $isBillingFree, isBillingFullTime: $isBillingFullTime, isRecalcChangeTariff: $isRecalcChangeTariff, maxVoiceUser: $maxVoiceUser, maxVideoUser: $maxVideoUser, videoCallBitrate: $videoCallBitrate, videoSharingBitrate: $videoSharingBitrate, isDefaultTariff: $isDefaultTariff, openDate: $openDate, periodDays: $periodDays, tariffName: $tariffName)';
   }
 
   @override
@@ -539,6 +563,8 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
                 const DeepCollectionEquality().equals(other.maxVideoUser, maxVideoUser)) &&
             (identical(other.videoCallBitrate, videoCallBitrate) ||
                 const DeepCollectionEquality().equals(other.videoCallBitrate, videoCallBitrate)) &&
+            (identical(other.videoSharingBitrate, videoSharingBitrate) ||
+                const DeepCollectionEquality().equals(other.videoSharingBitrate, videoSharingBitrate)) &&
             (identical(other.isDefaultTariff, isDefaultTariff) ||
                 const DeepCollectionEquality().equals(other.isDefaultTariff, isDefaultTariff)) &&
             (identical(other.openDate, openDate) || const DeepCollectionEquality().equals(other.openDate, openDate)) &&
@@ -564,6 +590,7 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
       const DeepCollectionEquality().hash(maxVoiceUser) ^
       const DeepCollectionEquality().hash(maxVideoUser) ^
       const DeepCollectionEquality().hash(videoCallBitrate) ^
+      const DeepCollectionEquality().hash(videoSharingBitrate) ^
       const DeepCollectionEquality().hash(isDefaultTariff) ^
       const DeepCollectionEquality().hash(openDate) ^
       const DeepCollectionEquality().hash(periodDays) ^
@@ -595,6 +622,7 @@ abstract class _CreateTariffRequest implements CreateTariffRequest {
       @JsonKey(name: 'max_voice_user') int? maxVoiceUser,
       @JsonKey(name: 'max_video_user') int? maxVideoUser,
       @JsonKey(name: 'video_call_bitrate') required int videoCallBitrate,
+      @JsonKey(name: 'video_sharing_bitrate') required int videoSharingBitrate,
       @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
       @JsonKey(name: 'open_date') String? openDate,
       @JsonKey(name: 'period_days') required int periodDays,
@@ -667,6 +695,11 @@ abstract class _CreateTariffRequest implements CreateTariffRequest {
   /// Bitrate of video in video co.
   @JsonKey(name: 'video_call_bitrate')
   int get videoCallBitrate => throw _privateConstructorUsedError;
+  @override
+
+  /// Bitrate of video in video sharing.
+  @JsonKey(name: 'video_sharing_bitrate')
+  int get videoSharingBitrate => throw _privateConstructorUsedError;
   @override
 
   /// Default tariff flag that is set when registering an account.

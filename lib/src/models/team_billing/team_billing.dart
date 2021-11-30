@@ -9,9 +9,6 @@ part 'team_billing.g.dart';
 class TeamBilling with _$TeamBilling {
   const factory TeamBilling({
     /// .
-    @JsonKey(name: 'personal_account_id') String? personalAccountId,
-
-    /// .
     @JsonKey(name: 'team_uuid') String? teamUuid,
 
     /// .

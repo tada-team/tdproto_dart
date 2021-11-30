@@ -21,11 +21,8 @@ DeleteWorkplacesOnPersonalAccountRequest _$DeleteWorkplacesOnPersonalAccountRequ
 class _$DeleteWorkplacesOnPersonalAccountRequestTearOff {
   const _$DeleteWorkplacesOnPersonalAccountRequestTearOff();
 
-  _DeleteWorkplacesOnPersonalAccountRequest call(
-      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
-      @JsonKey(name: 'count_workplaces') required int countWorkplaces}) {
+  _DeleteWorkplacesOnPersonalAccountRequest call({@JsonKey(name: 'count_workplaces') required int countWorkplaces}) {
     return _DeleteWorkplacesOnPersonalAccountRequest(
-      personalAccountId: personalAccountId,
       countWorkplaces: countWorkplaces,
     );
   }
@@ -41,10 +38,6 @@ const $DeleteWorkplacesOnPersonalAccountRequest = _$DeleteWorkplacesOnPersonalAc
 /// @nodoc
 mixin _$DeleteWorkplacesOnPersonalAccountRequest {
   /// .
-  @JsonKey(name: 'personal_account_id')
-  String get personalAccountId => throw _privateConstructorUsedError;
-
-  /// .
   @JsonKey(name: 'count_workplaces')
   int get countWorkplaces => throw _privateConstructorUsedError;
 
@@ -59,9 +52,7 @@ abstract class $DeleteWorkplacesOnPersonalAccountRequestCopyWith<$Res> {
   factory $DeleteWorkplacesOnPersonalAccountRequestCopyWith(DeleteWorkplacesOnPersonalAccountRequest value,
           $Res Function(DeleteWorkplacesOnPersonalAccountRequest) then) =
       _$DeleteWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>;
-  $Res call(
-      {@JsonKey(name: 'personal_account_id') String personalAccountId,
-      @JsonKey(name: 'count_workplaces') int countWorkplaces});
+  $Res call({@JsonKey(name: 'count_workplaces') int countWorkplaces});
 }
 
 /// @nodoc
@@ -75,14 +66,9 @@ class _$DeleteWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? countWorkplaces = freezed,
   }) {
     return _then(_value.copyWith(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String,
       countWorkplaces: countWorkplaces == freezed
           ? _value.countWorkplaces
           : countWorkplaces // ignore: cast_nullable_to_non_nullable
@@ -98,9 +84,7 @@ abstract class _$DeleteWorkplacesOnPersonalAccountRequestCopyWith<$Res>
           $Res Function(_DeleteWorkplacesOnPersonalAccountRequest) then) =
       __$DeleteWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {@JsonKey(name: 'personal_account_id') String personalAccountId,
-      @JsonKey(name: 'count_workplaces') int countWorkplaces});
+  $Res call({@JsonKey(name: 'count_workplaces') int countWorkplaces});
 }
 
 /// @nodoc
@@ -116,14 +100,9 @@ class __$DeleteWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? countWorkplaces = freezed,
   }) {
     return _then(_DeleteWorkplacesOnPersonalAccountRequest(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String,
       countWorkplaces: countWorkplaces == freezed
           ? _value.countWorkplaces
           : countWorkplaces // ignore: cast_nullable_to_non_nullable
@@ -135,18 +114,11 @@ class __$DeleteWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_DeleteWorkplacesOnPersonalAccountRequest implements _DeleteWorkplacesOnPersonalAccountRequest {
-  const _$_DeleteWorkplacesOnPersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') required this.personalAccountId,
-      @JsonKey(name: 'count_workplaces') required this.countWorkplaces});
+  const _$_DeleteWorkplacesOnPersonalAccountRequest({@JsonKey(name: 'count_workplaces') required this.countWorkplaces});
 
   factory _$_DeleteWorkplacesOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
       _$$_DeleteWorkplacesOnPersonalAccountRequestFromJson(json);
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  final String personalAccountId;
   @override
 
   /// .
@@ -155,24 +127,19 @@ class _$_DeleteWorkplacesOnPersonalAccountRequest implements _DeleteWorkplacesOn
 
   @override
   String toString() {
-    return 'DeleteWorkplacesOnPersonalAccountRequest(personalAccountId: $personalAccountId, countWorkplaces: $countWorkplaces)';
+    return 'DeleteWorkplacesOnPersonalAccountRequest(countWorkplaces: $countWorkplaces)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _DeleteWorkplacesOnPersonalAccountRequest &&
-            (identical(other.personalAccountId, personalAccountId) ||
-                const DeepCollectionEquality().equals(other.personalAccountId, personalAccountId)) &&
             (identical(other.countWorkplaces, countWorkplaces) ||
                 const DeepCollectionEquality().equals(other.countWorkplaces, countWorkplaces)));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(personalAccountId) ^
-      const DeepCollectionEquality().hash(countWorkplaces);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(countWorkplaces);
 
   @JsonKey(ignore: true)
   @override
@@ -188,17 +155,11 @@ class _$_DeleteWorkplacesOnPersonalAccountRequest implements _DeleteWorkplacesOn
 
 abstract class _DeleteWorkplacesOnPersonalAccountRequest implements DeleteWorkplacesOnPersonalAccountRequest {
   const factory _DeleteWorkplacesOnPersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
-      @JsonKey(name: 'count_workplaces') required int countWorkplaces}) = _$_DeleteWorkplacesOnPersonalAccountRequest;
+      {@JsonKey(name: 'count_workplaces') required int countWorkplaces}) = _$_DeleteWorkplacesOnPersonalAccountRequest;
 
   factory _DeleteWorkplacesOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =
       _$_DeleteWorkplacesOnPersonalAccountRequest.fromJson;
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .

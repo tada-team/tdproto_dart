@@ -21,11 +21,8 @@ AddUserInWorkplaceRequest _$AddUserInWorkplaceRequestFromJson(Map<String, dynami
 class _$AddUserInWorkplaceRequestTearOff {
   const _$AddUserInWorkplaceRequestTearOff();
 
-  _AddUserInWorkplaceRequest call(
-      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
-      @JsonKey(name: 'user_uuid') required String userUuid}) {
+  _AddUserInWorkplaceRequest call({@JsonKey(name: 'user_uuid') required String userUuid}) {
     return _AddUserInWorkplaceRequest(
-      personalAccountId: personalAccountId,
       userUuid: userUuid,
     );
   }
@@ -41,10 +38,6 @@ const $AddUserInWorkplaceRequest = _$AddUserInWorkplaceRequestTearOff();
 /// @nodoc
 mixin _$AddUserInWorkplaceRequest {
   /// .
-  @JsonKey(name: 'personal_account_id')
-  String get personalAccountId => throw _privateConstructorUsedError;
-
-  /// .
   @JsonKey(name: 'user_uuid')
   String get userUuid => throw _privateConstructorUsedError;
 
@@ -58,8 +51,7 @@ abstract class $AddUserInWorkplaceRequestCopyWith<$Res> {
   factory $AddUserInWorkplaceRequestCopyWith(
           AddUserInWorkplaceRequest value, $Res Function(AddUserInWorkplaceRequest) then) =
       _$AddUserInWorkplaceRequestCopyWithImpl<$Res>;
-  $Res call(
-      {@JsonKey(name: 'personal_account_id') String personalAccountId, @JsonKey(name: 'user_uuid') String userUuid});
+  $Res call({@JsonKey(name: 'user_uuid') String userUuid});
 }
 
 /// @nodoc
@@ -72,14 +64,9 @@ class _$AddUserInWorkplaceRequestCopyWithImpl<$Res> implements $AddUserInWorkpla
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? userUuid = freezed,
   }) {
     return _then(_value.copyWith(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String,
       userUuid: userUuid == freezed
           ? _value.userUuid
           : userUuid // ignore: cast_nullable_to_non_nullable
@@ -94,8 +81,7 @@ abstract class _$AddUserInWorkplaceRequestCopyWith<$Res> implements $AddUserInWo
           _AddUserInWorkplaceRequest value, $Res Function(_AddUserInWorkplaceRequest) then) =
       __$AddUserInWorkplaceRequestCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {@JsonKey(name: 'personal_account_id') String personalAccountId, @JsonKey(name: 'user_uuid') String userUuid});
+  $Res call({@JsonKey(name: 'user_uuid') String userUuid});
 }
 
 /// @nodoc
@@ -110,14 +96,9 @@ class __$AddUserInWorkplaceRequestCopyWithImpl<$Res> extends _$AddUserInWorkplac
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? userUuid = freezed,
   }) {
     return _then(_AddUserInWorkplaceRequest(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String,
       userUuid: userUuid == freezed
           ? _value.userUuid
           : userUuid // ignore: cast_nullable_to_non_nullable
@@ -129,18 +110,11 @@ class __$AddUserInWorkplaceRequestCopyWithImpl<$Res> extends _$AddUserInWorkplac
 /// @nodoc
 @JsonSerializable()
 class _$_AddUserInWorkplaceRequest implements _AddUserInWorkplaceRequest {
-  const _$_AddUserInWorkplaceRequest(
-      {@JsonKey(name: 'personal_account_id') required this.personalAccountId,
-      @JsonKey(name: 'user_uuid') required this.userUuid});
+  const _$_AddUserInWorkplaceRequest({@JsonKey(name: 'user_uuid') required this.userUuid});
 
   factory _$_AddUserInWorkplaceRequest.fromJson(Map<String, dynamic> json) =>
       _$$_AddUserInWorkplaceRequestFromJson(json);
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  final String personalAccountId;
   @override
 
   /// .
@@ -149,23 +123,18 @@ class _$_AddUserInWorkplaceRequest implements _AddUserInWorkplaceRequest {
 
   @override
   String toString() {
-    return 'AddUserInWorkplaceRequest(personalAccountId: $personalAccountId, userUuid: $userUuid)';
+    return 'AddUserInWorkplaceRequest(userUuid: $userUuid)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _AddUserInWorkplaceRequest &&
-            (identical(other.personalAccountId, personalAccountId) ||
-                const DeepCollectionEquality().equals(other.personalAccountId, personalAccountId)) &&
             (identical(other.userUuid, userUuid) || const DeepCollectionEquality().equals(other.userUuid, userUuid)));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(personalAccountId) ^
-      const DeepCollectionEquality().hash(userUuid);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(userUuid);
 
   @JsonKey(ignore: true)
   @override
@@ -179,17 +148,11 @@ class _$_AddUserInWorkplaceRequest implements _AddUserInWorkplaceRequest {
 }
 
 abstract class _AddUserInWorkplaceRequest implements AddUserInWorkplaceRequest {
-  const factory _AddUserInWorkplaceRequest(
-      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
-      @JsonKey(name: 'user_uuid') required String userUuid}) = _$_AddUserInWorkplaceRequest;
+  const factory _AddUserInWorkplaceRequest({@JsonKey(name: 'user_uuid') required String userUuid}) =
+      _$_AddUserInWorkplaceRequest;
 
   factory _AddUserInWorkplaceRequest.fromJson(Map<String, dynamic> json) = _$_AddUserInWorkplaceRequest.fromJson;
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .

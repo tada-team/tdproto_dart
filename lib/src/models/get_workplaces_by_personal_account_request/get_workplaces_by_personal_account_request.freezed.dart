@@ -21,11 +21,8 @@ GetWorkplacesByPersonalAccountRequest _$GetWorkplacesByPersonalAccountRequestFro
 class _$GetWorkplacesByPersonalAccountRequestTearOff {
   const _$GetWorkplacesByPersonalAccountRequestTearOff();
 
-  _GetWorkplacesByPersonalAccountRequest call(
-      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
-      @JsonKey(name: 'options') WorkplaceOptions? options}) {
+  _GetWorkplacesByPersonalAccountRequest call({@JsonKey(name: 'options') WorkplaceOptions? options}) {
     return _GetWorkplacesByPersonalAccountRequest(
-      personalAccountId: personalAccountId,
       options: options,
     );
   }
@@ -41,10 +38,6 @@ const $GetWorkplacesByPersonalAccountRequest = _$GetWorkplacesByPersonalAccountR
 /// @nodoc
 mixin _$GetWorkplacesByPersonalAccountRequest {
   /// .
-  @JsonKey(name: 'personal_account_id')
-  String get personalAccountId => throw _privateConstructorUsedError;
-
-  /// .
   @JsonKey(name: 'options')
   WorkplaceOptions? get options => throw _privateConstructorUsedError;
 
@@ -59,9 +52,7 @@ abstract class $GetWorkplacesByPersonalAccountRequestCopyWith<$Res> {
   factory $GetWorkplacesByPersonalAccountRequestCopyWith(
           GetWorkplacesByPersonalAccountRequest value, $Res Function(GetWorkplacesByPersonalAccountRequest) then) =
       _$GetWorkplacesByPersonalAccountRequestCopyWithImpl<$Res>;
-  $Res call(
-      {@JsonKey(name: 'personal_account_id') String personalAccountId,
-      @JsonKey(name: 'options') WorkplaceOptions? options});
+  $Res call({@JsonKey(name: 'options') WorkplaceOptions? options});
 
   $WorkplaceOptionsCopyWith<$Res>? get options;
 }
@@ -77,14 +68,9 @@ class _$GetWorkplacesByPersonalAccountRequestCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? options = freezed,
   }) {
     return _then(_value.copyWith(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String,
       options: options == freezed
           ? _value.options
           : options // ignore: cast_nullable_to_non_nullable
@@ -111,9 +97,7 @@ abstract class _$GetWorkplacesByPersonalAccountRequestCopyWith<$Res>
           _GetWorkplacesByPersonalAccountRequest value, $Res Function(_GetWorkplacesByPersonalAccountRequest) then) =
       __$GetWorkplacesByPersonalAccountRequestCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {@JsonKey(name: 'personal_account_id') String personalAccountId,
-      @JsonKey(name: 'options') WorkplaceOptions? options});
+  $Res call({@JsonKey(name: 'options') WorkplaceOptions? options});
 
   @override
   $WorkplaceOptionsCopyWith<$Res>? get options;
@@ -132,14 +116,9 @@ class __$GetWorkplacesByPersonalAccountRequestCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? options = freezed,
   }) {
     return _then(_GetWorkplacesByPersonalAccountRequest(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String,
       options: options == freezed
           ? _value.options
           : options // ignore: cast_nullable_to_non_nullable
@@ -151,17 +130,11 @@ class __$GetWorkplacesByPersonalAccountRequestCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_GetWorkplacesByPersonalAccountRequest implements _GetWorkplacesByPersonalAccountRequest {
-  const _$_GetWorkplacesByPersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') required this.personalAccountId, @JsonKey(name: 'options') this.options});
+  const _$_GetWorkplacesByPersonalAccountRequest({@JsonKey(name: 'options') this.options});
 
   factory _$_GetWorkplacesByPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
       _$$_GetWorkplacesByPersonalAccountRequestFromJson(json);
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  final String personalAccountId;
   @override
 
   /// .
@@ -170,23 +143,18 @@ class _$_GetWorkplacesByPersonalAccountRequest implements _GetWorkplacesByPerson
 
   @override
   String toString() {
-    return 'GetWorkplacesByPersonalAccountRequest(personalAccountId: $personalAccountId, options: $options)';
+    return 'GetWorkplacesByPersonalAccountRequest(options: $options)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _GetWorkplacesByPersonalAccountRequest &&
-            (identical(other.personalAccountId, personalAccountId) ||
-                const DeepCollectionEquality().equals(other.personalAccountId, personalAccountId)) &&
             (identical(other.options, options) || const DeepCollectionEquality().equals(other.options, options)));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(personalAccountId) ^
-      const DeepCollectionEquality().hash(options);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(options);
 
   @JsonKey(ignore: true)
   @override
@@ -200,18 +168,12 @@ class _$_GetWorkplacesByPersonalAccountRequest implements _GetWorkplacesByPerson
 }
 
 abstract class _GetWorkplacesByPersonalAccountRequest implements GetWorkplacesByPersonalAccountRequest {
-  const factory _GetWorkplacesByPersonalAccountRequest(
-      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
-      @JsonKey(name: 'options') WorkplaceOptions? options}) = _$_GetWorkplacesByPersonalAccountRequest;
+  const factory _GetWorkplacesByPersonalAccountRequest({@JsonKey(name: 'options') WorkplaceOptions? options}) =
+      _$_GetWorkplacesByPersonalAccountRequest;
 
   factory _GetWorkplacesByPersonalAccountRequest.fromJson(Map<String, dynamic> json) =
       _$_GetWorkplacesByPersonalAccountRequest.fromJson;
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .

@@ -47,6 +47,9 @@ class CreateTariffRequest with _$CreateTariffRequest {
     /// Bitrate of video in video co.
     @JsonKey(name: 'video_call_bitrate') required int videoCallBitrate,
 
+    /// Bitrate of video in video sharing.
+    @JsonKey(name: 'video_sharing_bitrate') required int videoSharingBitrate,
+
     /// Default tariff flag that is set when registering an account.
     @Default(false) @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
 

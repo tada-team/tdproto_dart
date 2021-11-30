@@ -7,14 +7,12 @@ part of 'workplace_billing.dart';
 // **************************************************************************
 
 _$_WorkplaceBilling _$$_WorkplaceBillingFromJson(Map<String, dynamic> json) => _$_WorkplaceBilling(
-      personalAccountId: json['personal_account_id'] as String,
       workplaceId: json['workplace_id'] as String?,
       userId: json['user_id'] as String?,
       userUuid: json['user_uuid'] as String?,
     );
 
 Map<String, dynamic> _$$_WorkplaceBillingToJson(_$_WorkplaceBilling instance) => <String, dynamic>{
-      'personal_account_id': instance.personalAccountId,
       'workplace_id': instance.workplaceId,
       'user_id': instance.userId,
       'user_uuid': instance.userUuid,

@@ -9,9 +9,6 @@ part 'update_personal_account_request.g.dart';
 class UpdatePersonalAccountRequest with _$UpdatePersonalAccountRequest {
   const factory UpdatePersonalAccountRequest({
     /// .
-    @JsonKey(name: 'personal_account_id') required int personalAccountId,
-
-    /// .
     @JsonKey(name: 'full_name') String? fullName,
 
     /// .

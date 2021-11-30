@@ -22,12 +22,10 @@ class _$GetWorkplaceByPersonalAccountResponseTearOff {
   const _$GetWorkplaceByPersonalAccountResponseTearOff();
 
   _GetWorkplaceByPersonalAccountResponse call(
-      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
-      @JsonKey(name: 'workplace_id') String? workplaceId,
+      {@JsonKey(name: 'workplace_id') String? workplaceId,
       @JsonKey(name: 'user_id') String? userId,
       @JsonKey(name: 'user_uuid') String? userUuid}) {
     return _GetWorkplaceByPersonalAccountResponse(
-      personalAccountId: personalAccountId,
       workplaceId: workplaceId,
       userId: userId,
       userUuid: userUuid,
@@ -44,10 +42,6 @@ const $GetWorkplaceByPersonalAccountResponse = _$GetWorkplaceByPersonalAccountRe
 
 /// @nodoc
 mixin _$GetWorkplaceByPersonalAccountResponse {
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  String get personalAccountId => throw _privateConstructorUsedError;
-
   /// .
   @JsonKey(name: 'workplace_id')
   String? get workplaceId => throw _privateConstructorUsedError;
@@ -72,8 +66,7 @@ abstract class $GetWorkplaceByPersonalAccountResponseCopyWith<$Res> {
           GetWorkplaceByPersonalAccountResponse value, $Res Function(GetWorkplaceByPersonalAccountResponse) then) =
       _$GetWorkplaceByPersonalAccountResponseCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') String personalAccountId,
-      @JsonKey(name: 'workplace_id') String? workplaceId,
+      {@JsonKey(name: 'workplace_id') String? workplaceId,
       @JsonKey(name: 'user_id') String? userId,
       @JsonKey(name: 'user_uuid') String? userUuid});
 }
@@ -89,16 +82,11 @@ class _$GetWorkplaceByPersonalAccountResponseCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? workplaceId = freezed,
     Object? userId = freezed,
     Object? userUuid = freezed,
   }) {
     return _then(_value.copyWith(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String,
       workplaceId: workplaceId == freezed
           ? _value.workplaceId
           : workplaceId // ignore: cast_nullable_to_non_nullable
@@ -123,8 +111,7 @@ abstract class _$GetWorkplaceByPersonalAccountResponseCopyWith<$Res>
       __$GetWorkplaceByPersonalAccountResponseCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') String personalAccountId,
-      @JsonKey(name: 'workplace_id') String? workplaceId,
+      {@JsonKey(name: 'workplace_id') String? workplaceId,
       @JsonKey(name: 'user_id') String? userId,
       @JsonKey(name: 'user_uuid') String? userUuid});
 }
@@ -142,16 +129,11 @@ class __$GetWorkplaceByPersonalAccountResponseCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? personalAccountId = freezed,
     Object? workplaceId = freezed,
     Object? userId = freezed,
     Object? userUuid = freezed,
   }) {
     return _then(_GetWorkplaceByPersonalAccountResponse(
-      personalAccountId: personalAccountId == freezed
-          ? _value.personalAccountId
-          : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String,
       workplaceId: workplaceId == freezed
           ? _value.workplaceId
           : workplaceId // ignore: cast_nullable_to_non_nullable
@@ -172,19 +154,13 @@ class __$GetWorkplaceByPersonalAccountResponseCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_GetWorkplaceByPersonalAccountResponse implements _GetWorkplaceByPersonalAccountResponse {
   const _$_GetWorkplaceByPersonalAccountResponse(
-      {@JsonKey(name: 'personal_account_id') required this.personalAccountId,
-      @JsonKey(name: 'workplace_id') this.workplaceId,
+      {@JsonKey(name: 'workplace_id') this.workplaceId,
       @JsonKey(name: 'user_id') this.userId,
       @JsonKey(name: 'user_uuid') this.userUuid});
 
   factory _$_GetWorkplaceByPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
       _$$_GetWorkplaceByPersonalAccountResponseFromJson(json);
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  final String personalAccountId;
   @override
 
   /// .
@@ -203,15 +179,13 @@ class _$_GetWorkplaceByPersonalAccountResponse implements _GetWorkplaceByPersona
 
   @override
   String toString() {
-    return 'GetWorkplaceByPersonalAccountResponse(personalAccountId: $personalAccountId, workplaceId: $workplaceId, userId: $userId, userUuid: $userUuid)';
+    return 'GetWorkplaceByPersonalAccountResponse(workplaceId: $workplaceId, userId: $userId, userUuid: $userUuid)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _GetWorkplaceByPersonalAccountResponse &&
-            (identical(other.personalAccountId, personalAccountId) ||
-                const DeepCollectionEquality().equals(other.personalAccountId, personalAccountId)) &&
             (identical(other.workplaceId, workplaceId) ||
                 const DeepCollectionEquality().equals(other.workplaceId, workplaceId)) &&
             (identical(other.userId, userId) || const DeepCollectionEquality().equals(other.userId, userId)) &&
@@ -221,7 +195,6 @@ class _$_GetWorkplaceByPersonalAccountResponse implements _GetWorkplaceByPersona
   @override
   int get hashCode =>
       runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(personalAccountId) ^
       const DeepCollectionEquality().hash(workplaceId) ^
       const DeepCollectionEquality().hash(userId) ^
       const DeepCollectionEquality().hash(userUuid);
@@ -239,19 +212,13 @@ class _$_GetWorkplaceByPersonalAccountResponse implements _GetWorkplaceByPersona
 
 abstract class _GetWorkplaceByPersonalAccountResponse implements GetWorkplaceByPersonalAccountResponse {
   const factory _GetWorkplaceByPersonalAccountResponse(
-      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
-      @JsonKey(name: 'workplace_id') String? workplaceId,
+      {@JsonKey(name: 'workplace_id') String? workplaceId,
       @JsonKey(name: 'user_id') String? userId,
       @JsonKey(name: 'user_uuid') String? userUuid}) = _$_GetWorkplaceByPersonalAccountResponse;
 
   factory _GetWorkplaceByPersonalAccountResponse.fromJson(Map<String, dynamic> json) =
       _$_GetWorkplaceByPersonalAccountResponse.fromJson;
 
-  @override
-
-  /// .
-  @JsonKey(name: 'personal_account_id')
-  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .

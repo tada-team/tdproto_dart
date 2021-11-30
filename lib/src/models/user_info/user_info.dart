@@ -12,7 +12,7 @@ class UserInfo with _$UserInfo {
     @JsonKey(name: 'uuid') required String uuid,
 
     /// .
-    @JsonKey(name: 'fio') String? fio,
+    @JsonKey(name: 'full_name') String? fullName,
 
     /// .
     @JsonKey(name: 'phone') String? phone,

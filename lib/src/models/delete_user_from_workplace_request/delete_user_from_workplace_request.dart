@@ -9,9 +9,6 @@ part 'delete_user_from_workplace_request.g.dart';
 class DeleteUserFromWorkplaceRequest with _$DeleteUserFromWorkplaceRequest {
   const factory DeleteUserFromWorkplaceRequest({
     /// .
-    @JsonKey(name: 'personal_account_id') required String personalAccountId,
-
-    /// .
     @JsonKey(name: 'user_uuid') required String userUuid,
   }) = _DeleteUserFromWorkplaceRequest;
 
