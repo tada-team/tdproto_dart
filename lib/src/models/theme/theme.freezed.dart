@@ -57,6 +57,7 @@ class _$ThemeTearOff {
       @JsonKey(name: 'button') ButtonColors? button,
       @JsonKey(name: 'input') InputColors? input,
       @JsonKey(name: 'ic') IconColors? icon,
+      @JsonKey(name: 'avatar') AvatarColors? avatar,
       @JsonKey(name: 'web_base') WebBase? webBase,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppAccentColor') required String appAccentColor,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppPrimaryColor') required String appPrimaryColor}) {
@@ -96,6 +97,7 @@ class _$ThemeTearOff {
       button: button,
       input: input,
       icon: icon,
+      avatar: avatar,
       webBase: webBase,
       appAccentColor: appAccentColor,
       appPrimaryColor: appPrimaryColor,
@@ -252,6 +254,10 @@ mixin _$Theme {
   @JsonKey(name: 'ic')
   IconColors? get icon => throw _privateConstructorUsedError;
 
+  /// Avatar colors for app.
+  @JsonKey(name: 'avatar')
+  AvatarColors? get avatar => throw _privateConstructorUsedError;
+
   /// WebBase colors for web.
   @JsonKey(name: 'web_base')
   WebBase? get webBase => throw _privateConstructorUsedError;
@@ -310,6 +316,7 @@ abstract class $ThemeCopyWith<$Res> {
       @JsonKey(name: 'button') ButtonColors? button,
       @JsonKey(name: 'input') InputColors? input,
       @JsonKey(name: 'ic') IconColors? icon,
+      @JsonKey(name: 'avatar') AvatarColors? avatar,
       @JsonKey(name: 'web_base') WebBase? webBase,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppAccentColor') String appAccentColor,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppPrimaryColor') String appPrimaryColor});
@@ -320,6 +327,7 @@ abstract class $ThemeCopyWith<$Res> {
   $ButtonColorsCopyWith<$Res>? get button;
   $InputColorsCopyWith<$Res>? get input;
   $IconColorsCopyWith<$Res>? get icon;
+  $AvatarColorsCopyWith<$Res>? get avatar;
   $WebBaseCopyWith<$Res>? get webBase;
 }
 
@@ -368,6 +376,7 @@ class _$ThemeCopyWithImpl<$Res> implements $ThemeCopyWith<$Res> {
     Object? button = freezed,
     Object? input = freezed,
     Object? icon = freezed,
+    Object? avatar = freezed,
     Object? webBase = freezed,
     Object? appAccentColor = freezed,
     Object? appPrimaryColor = freezed,
@@ -513,6 +522,10 @@ class _$ThemeCopyWithImpl<$Res> implements $ThemeCopyWith<$Res> {
           ? _value.icon
           : icon // ignore: cast_nullable_to_non_nullable
               as IconColors?,
+      avatar: avatar == freezed
+          ? _value.avatar
+          : avatar // ignore: cast_nullable_to_non_nullable
+              as AvatarColors?,
       webBase: webBase == freezed
           ? _value.webBase
           : webBase // ignore: cast_nullable_to_non_nullable
@@ -595,6 +608,17 @@ class _$ThemeCopyWithImpl<$Res> implements $ThemeCopyWith<$Res> {
   }
 
   @override
+  $AvatarColorsCopyWith<$Res>? get avatar {
+    if (_value.avatar == null) {
+      return null;
+    }
+
+    return $AvatarColorsCopyWith<$Res>(_value.avatar!, (value) {
+      return _then(_value.copyWith(avatar: value));
+    });
+  }
+
+  @override
   $WebBaseCopyWith<$Res>? get webBase {
     if (_value.webBase == null) {
       return null;
@@ -646,6 +670,7 @@ abstract class _$ThemeCopyWith<$Res> implements $ThemeCopyWith<$Res> {
       @JsonKey(name: 'button') ButtonColors? button,
       @JsonKey(name: 'input') InputColors? input,
       @JsonKey(name: 'ic') IconColors? icon,
+      @JsonKey(name: 'avatar') AvatarColors? avatar,
       @JsonKey(name: 'web_base') WebBase? webBase,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppAccentColor') String appAccentColor,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppPrimaryColor') String appPrimaryColor});
@@ -662,6 +687,8 @@ abstract class _$ThemeCopyWith<$Res> implements $ThemeCopyWith<$Res> {
   $InputColorsCopyWith<$Res>? get input;
   @override
   $IconColorsCopyWith<$Res>? get icon;
+  @override
+  $AvatarColorsCopyWith<$Res>? get avatar;
   @override
   $WebBaseCopyWith<$Res>? get webBase;
 }
@@ -710,6 +737,7 @@ class __$ThemeCopyWithImpl<$Res> extends _$ThemeCopyWithImpl<$Res> implements _$
     Object? button = freezed,
     Object? input = freezed,
     Object? icon = freezed,
+    Object? avatar = freezed,
     Object? webBase = freezed,
     Object? appAccentColor = freezed,
     Object? appPrimaryColor = freezed,
@@ -855,6 +883,10 @@ class __$ThemeCopyWithImpl<$Res> extends _$ThemeCopyWithImpl<$Res> implements _$
           ? _value.icon
           : icon // ignore: cast_nullable_to_non_nullable
               as IconColors?,
+      avatar: avatar == freezed
+          ? _value.avatar
+          : avatar // ignore: cast_nullable_to_non_nullable
+              as AvatarColors?,
       webBase: webBase == freezed
           ? _value.webBase
           : webBase // ignore: cast_nullable_to_non_nullable
@@ -910,6 +942,7 @@ class _$_Theme implements _Theme {
       @JsonKey(name: 'button') this.button,
       @JsonKey(name: 'input') this.input,
       @JsonKey(name: 'ic') this.icon,
+      @JsonKey(name: 'avatar') this.avatar,
       @JsonKey(name: 'web_base') this.webBase,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppAccentColor') required this.appAccentColor,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppPrimaryColor') required this.appPrimaryColor});
@@ -1093,6 +1126,11 @@ class _$_Theme implements _Theme {
   final IconColors? icon;
   @override
 
+  /// Avatar colors for app.
+  @JsonKey(name: 'avatar')
+  final AvatarColors? avatar;
+  @override
+
   /// WebBase colors for web.
   @JsonKey(name: 'web_base')
   final WebBase? webBase;
@@ -1111,7 +1149,7 @@ class _$_Theme implements _Theme {
 
   @override
   String toString() {
-    return 'Theme(bgColor: $bgColor, bgHoverColor: $bgHoverColor, textColor: $textColor, mutedTextColor: $mutedTextColor, accentColor: $accentColor, accentHoverColor: $accentHoverColor, textOnAccentHoverColor: $textOnAccentHoverColor, mainAccent: $mainAccent, mainAccentHover: $mainAccentHover, mainLightAccent: $mainLightAccent, mainLink: $mainLink, brand: $brand, brandDark: $brandDark, brandLight: $brandLight, back: $back, backLight: $backLight, backDark: $backDark, success: $success, successLight: $successLight, error: $error, errorLight: $errorLight, background: $background, tabBackground: $tabBackground, chatInputBackground: $chatInputBackground, substrateBackground: $substrateBackground, modalBackground: $modalBackground, titleBackground: $titleBackground, attention: $attention, attentionLight: $attentionLight, font: $font, message: $message, switcher: $switcher, button: $button, input: $input, icon: $icon, webBase: $webBase, appAccentColor: $appAccentColor, appPrimaryColor: $appPrimaryColor)';
+    return 'Theme(bgColor: $bgColor, bgHoverColor: $bgHoverColor, textColor: $textColor, mutedTextColor: $mutedTextColor, accentColor: $accentColor, accentHoverColor: $accentHoverColor, textOnAccentHoverColor: $textOnAccentHoverColor, mainAccent: $mainAccent, mainAccentHover: $mainAccentHover, mainLightAccent: $mainLightAccent, mainLink: $mainLink, brand: $brand, brandDark: $brandDark, brandLight: $brandLight, back: $back, backLight: $backLight, backDark: $backDark, success: $success, successLight: $successLight, error: $error, errorLight: $errorLight, background: $background, tabBackground: $tabBackground, chatInputBackground: $chatInputBackground, substrateBackground: $substrateBackground, modalBackground: $modalBackground, titleBackground: $titleBackground, attention: $attention, attentionLight: $attentionLight, font: $font, message: $message, switcher: $switcher, button: $button, input: $input, icon: $icon, avatar: $avatar, webBase: $webBase, appAccentColor: $appAccentColor, appPrimaryColor: $appPrimaryColor)';
   }
 
   @override
@@ -1175,6 +1213,7 @@ class _$_Theme implements _Theme {
             (identical(other.button, button) || const DeepCollectionEquality().equals(other.button, button)) &&
             (identical(other.input, input) || const DeepCollectionEquality().equals(other.input, input)) &&
             (identical(other.icon, icon) || const DeepCollectionEquality().equals(other.icon, icon)) &&
+            (identical(other.avatar, avatar) || const DeepCollectionEquality().equals(other.avatar, avatar)) &&
             (identical(other.webBase, webBase) || const DeepCollectionEquality().equals(other.webBase, webBase)) &&
             (identical(other.appAccentColor, appAccentColor) ||
                 const DeepCollectionEquality().equals(other.appAccentColor, appAccentColor)) &&
@@ -1220,6 +1259,7 @@ class _$_Theme implements _Theme {
       const DeepCollectionEquality().hash(button) ^
       const DeepCollectionEquality().hash(input) ^
       const DeepCollectionEquality().hash(icon) ^
+      const DeepCollectionEquality().hash(avatar) ^
       const DeepCollectionEquality().hash(webBase) ^
       const DeepCollectionEquality().hash(appAccentColor) ^
       const DeepCollectionEquality().hash(appPrimaryColor);
@@ -1271,6 +1311,7 @@ abstract class _Theme implements Theme {
       @JsonKey(name: 'button') ButtonColors? button,
       @JsonKey(name: 'input') InputColors? input,
       @JsonKey(name: 'ic') IconColors? icon,
+      @JsonKey(name: 'avatar') AvatarColors? avatar,
       @JsonKey(name: 'web_base') WebBase? webBase,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppAccentColor') required String appAccentColor,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppPrimaryColor') required String appPrimaryColor}) = _$_Theme;
@@ -1452,6 +1493,11 @@ abstract class _Theme implements Theme {
   /// Icon colors for app.
   @JsonKey(name: 'ic')
   IconColors? get icon => throw _privateConstructorUsedError;
+  @override
+
+  /// Avatar colors for app.
+  @JsonKey(name: 'avatar')
+  AvatarColors? get avatar => throw _privateConstructorUsedError;
   @override
 
   /// WebBase colors for web.

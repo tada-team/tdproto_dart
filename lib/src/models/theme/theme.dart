@@ -113,6 +113,9 @@ class Theme with _$Theme {
     /// Icon colors for app.
     @JsonKey(name: 'ic') IconColors? icon,
 
+    /// Avatar colors for app.
+    @JsonKey(name: 'avatar') AvatarColors? avatar,
+
     /// WebBase colors for web.
     @JsonKey(name: 'web_base') WebBase? webBase,
 
