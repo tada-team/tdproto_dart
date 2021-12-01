@@ -9,7 +9,7 @@ part of 'create_change_tariff_on_personal_account_request.dart';
 _$_CreateChangeTariffOnPersonalAccountRequest _$$_CreateChangeTariffOnPersonalAccountRequestFromJson(
         Map<String, dynamic> json) =>
     _$_CreateChangeTariffOnPersonalAccountRequest(
-      tariffId: json['tariff_id'] as int,
+      tariffId: json['tariff_id'] as String,
       openDate: json['open_date'] as String?,
     );
 

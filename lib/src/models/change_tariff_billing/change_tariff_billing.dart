@@ -9,10 +9,7 @@ part 'change_tariff_billing.g.dart';
 class ChangeTariffBilling with _$ChangeTariffBilling {
   const factory ChangeTariffBilling({
     /// .
-    @JsonKey(name: 'personal_account_id') required int personalAccountId,
-
-    /// .
-    @JsonKey(name: 'tariff_id') int? tariffId,
+    @JsonKey(name: 'tariff_id') required String tariffId,
 
     /// .
     @JsonKey(name: 'open_date') String? openDate,

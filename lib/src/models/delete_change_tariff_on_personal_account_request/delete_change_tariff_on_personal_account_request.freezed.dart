@@ -22,7 +22,7 @@ DeleteChangeTariffOnPersonalAccountRequest _$DeleteChangeTariffOnPersonalAccount
 class _$DeleteChangeTariffOnPersonalAccountRequestTearOff {
   const _$DeleteChangeTariffOnPersonalAccountRequestTearOff();
 
-  _DeleteChangeTariffOnPersonalAccountRequest call({@JsonKey(name: 'tariff_id') required int tariffId}) {
+  _DeleteChangeTariffOnPersonalAccountRequest call({@JsonKey(name: 'tariff_id') required String tariffId}) {
     return _DeleteChangeTariffOnPersonalAccountRequest(
       tariffId: tariffId,
     );
@@ -40,7 +40,7 @@ const $DeleteChangeTariffOnPersonalAccountRequest = _$DeleteChangeTariffOnPerson
 mixin _$DeleteChangeTariffOnPersonalAccountRequest {
   /// .
   @JsonKey(name: 'tariff_id')
-  int get tariffId => throw _privateConstructorUsedError;
+  String get tariffId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -53,7 +53,7 @@ abstract class $DeleteChangeTariffOnPersonalAccountRequestCopyWith<$Res> {
   factory $DeleteChangeTariffOnPersonalAccountRequestCopyWith(DeleteChangeTariffOnPersonalAccountRequest value,
           $Res Function(DeleteChangeTariffOnPersonalAccountRequest) then) =
       _$DeleteChangeTariffOnPersonalAccountRequestCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'tariff_id') int tariffId});
+  $Res call({@JsonKey(name: 'tariff_id') String tariffId});
 }
 
 /// @nodoc
@@ -73,7 +73,7 @@ class _$DeleteChangeTariffOnPersonalAccountRequestCopyWithImpl<$Res>
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
     ));
   }
 }
@@ -85,7 +85,7 @@ abstract class _$DeleteChangeTariffOnPersonalAccountRequestCopyWith<$Res>
           $Res Function(_DeleteChangeTariffOnPersonalAccountRequest) then) =
       __$DeleteChangeTariffOnPersonalAccountRequestCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'tariff_id') int tariffId});
+  $Res call({@JsonKey(name: 'tariff_id') String tariffId});
 }
 
 /// @nodoc
@@ -107,7 +107,7 @@ class __$DeleteChangeTariffOnPersonalAccountRequestCopyWithImpl<$Res>
       tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
     ));
   }
 }
@@ -124,7 +124,7 @@ class _$_DeleteChangeTariffOnPersonalAccountRequest implements _DeleteChangeTari
 
   /// .
   @JsonKey(name: 'tariff_id')
-  final int tariffId;
+  final String tariffId;
 
   @override
   String toString() {
@@ -154,7 +154,7 @@ class _$_DeleteChangeTariffOnPersonalAccountRequest implements _DeleteChangeTari
 }
 
 abstract class _DeleteChangeTariffOnPersonalAccountRequest implements DeleteChangeTariffOnPersonalAccountRequest {
-  const factory _DeleteChangeTariffOnPersonalAccountRequest({@JsonKey(name: 'tariff_id') required int tariffId}) =
+  const factory _DeleteChangeTariffOnPersonalAccountRequest({@JsonKey(name: 'tariff_id') required String tariffId}) =
       _$_DeleteChangeTariffOnPersonalAccountRequest;
 
   factory _DeleteChangeTariffOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =
@@ -164,7 +164,7 @@ abstract class _DeleteChangeTariffOnPersonalAccountRequest implements DeleteChan
 
   /// .
   @JsonKey(name: 'tariff_id')
-  int get tariffId => throw _privateConstructorUsedError;
+  String get tariffId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$DeleteChangeTariffOnPersonalAccountRequestCopyWith<_DeleteChangeTariffOnPersonalAccountRequest> get copyWith =>
