@@ -119,6 +119,15 @@ class Theme with _$Theme {
     /// WebBase colors for web.
     @JsonKey(name: 'web_base') WebBase? webBase,
 
+    /// Bg colors for app.
+    @JsonKey(name: 'bg') Bg? bg,
+
+    /// Swipe colors for app.
+    @JsonKey(name: 'swipe') SwipeColors? swipe,
+
+    /// Call colors for app.
+    @JsonKey(name: 'call') CallColors? callColors,
+
     /// Deprecated.
     @Deprecated('Deprecated.') @JsonKey(name: 'AppAccentColor') required String appAccentColor,
 

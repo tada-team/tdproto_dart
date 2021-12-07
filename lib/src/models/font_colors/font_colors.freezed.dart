@@ -28,7 +28,9 @@ class _$FontColorsTearOff {
       @JsonKey(name: 'brand_button') required String brandButton,
       @JsonKey(name: 'simple_button') required String simpleButton,
       @JsonKey(name: 'bubble_sent') required String bubbleSent,
-      @JsonKey(name: 'bubble_received') required String bubbleReceived}) {
+      @JsonKey(name: 'bubble_received') required String bubbleReceived,
+      @JsonKey(name: 'text_avatar') required String textAvatar,
+      @JsonKey(name: 'text_badge') required String textBadge}) {
     return _FontColors(
       text: text,
       title: title,
@@ -37,6 +39,8 @@ class _$FontColorsTearOff {
       simpleButton: simpleButton,
       bubbleSent: bubbleSent,
       bubbleReceived: bubbleReceived,
+      textAvatar: textAvatar,
+      textBadge: textBadge,
     );
   }
 
@@ -78,6 +82,14 @@ mixin _$FontColors {
   @JsonKey(name: 'bubble_received')
   String get bubbleReceived => throw _privateConstructorUsedError;
 
+  /// TextAvatar color.
+  @JsonKey(name: 'text_avatar')
+  String get textAvatar => throw _privateConstructorUsedError;
+
+  /// TextBadge color.
+  @JsonKey(name: 'text_badge')
+  String get textBadge => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $FontColorsCopyWith<FontColors> get copyWith => throw _privateConstructorUsedError;
@@ -93,7 +105,9 @@ abstract class $FontColorsCopyWith<$Res> {
       @JsonKey(name: 'brand_button') String brandButton,
       @JsonKey(name: 'simple_button') String simpleButton,
       @JsonKey(name: 'bubble_sent') String bubbleSent,
-      @JsonKey(name: 'bubble_received') String bubbleReceived});
+      @JsonKey(name: 'bubble_received') String bubbleReceived,
+      @JsonKey(name: 'text_avatar') String textAvatar,
+      @JsonKey(name: 'text_badge') String textBadge});
 }
 
 /// @nodoc
@@ -113,6 +127,8 @@ class _$FontColorsCopyWithImpl<$Res> implements $FontColorsCopyWith<$Res> {
     Object? simpleButton = freezed,
     Object? bubbleSent = freezed,
     Object? bubbleReceived = freezed,
+    Object? textAvatar = freezed,
+    Object? textBadge = freezed,
   }) {
     return _then(_value.copyWith(
       text: text == freezed
@@ -143,6 +159,14 @@ class _$FontColorsCopyWithImpl<$Res> implements $FontColorsCopyWith<$Res> {
           ? _value.bubbleReceived
           : bubbleReceived // ignore: cast_nullable_to_non_nullable
               as String,
+      textAvatar: textAvatar == freezed
+          ? _value.textAvatar
+          : textAvatar // ignore: cast_nullable_to_non_nullable
+              as String,
+      textBadge: textBadge == freezed
+          ? _value.textBadge
+          : textBadge // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -158,7 +182,9 @@ abstract class _$FontColorsCopyWith<$Res> implements $FontColorsCopyWith<$Res> {
       @JsonKey(name: 'brand_button') String brandButton,
       @JsonKey(name: 'simple_button') String simpleButton,
       @JsonKey(name: 'bubble_sent') String bubbleSent,
-      @JsonKey(name: 'bubble_received') String bubbleReceived});
+      @JsonKey(name: 'bubble_received') String bubbleReceived,
+      @JsonKey(name: 'text_avatar') String textAvatar,
+      @JsonKey(name: 'text_badge') String textBadge});
 }
 
 /// @nodoc
@@ -178,6 +204,8 @@ class __$FontColorsCopyWithImpl<$Res> extends _$FontColorsCopyWithImpl<$Res> imp
     Object? simpleButton = freezed,
     Object? bubbleSent = freezed,
     Object? bubbleReceived = freezed,
+    Object? textAvatar = freezed,
+    Object? textBadge = freezed,
   }) {
     return _then(_FontColors(
       text: text == freezed
@@ -208,6 +236,14 @@ class __$FontColorsCopyWithImpl<$Res> extends _$FontColorsCopyWithImpl<$Res> imp
           ? _value.bubbleReceived
           : bubbleReceived // ignore: cast_nullable_to_non_nullable
               as String,
+      textAvatar: textAvatar == freezed
+          ? _value.textAvatar
+          : textAvatar // ignore: cast_nullable_to_non_nullable
+              as String,
+      textBadge: textBadge == freezed
+          ? _value.textBadge
+          : textBadge // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -222,7 +258,9 @@ class _$_FontColors implements _FontColors {
       @JsonKey(name: 'brand_button') required this.brandButton,
       @JsonKey(name: 'simple_button') required this.simpleButton,
       @JsonKey(name: 'bubble_sent') required this.bubbleSent,
-      @JsonKey(name: 'bubble_received') required this.bubbleReceived});
+      @JsonKey(name: 'bubble_received') required this.bubbleReceived,
+      @JsonKey(name: 'text_avatar') required this.textAvatar,
+      @JsonKey(name: 'text_badge') required this.textBadge});
 
   factory _$_FontColors.fromJson(Map<String, dynamic> json) => _$$_FontColorsFromJson(json);
 
@@ -261,10 +299,20 @@ class _$_FontColors implements _FontColors {
   /// Bubble received color.
   @JsonKey(name: 'bubble_received')
   final String bubbleReceived;
+  @override
+
+  /// TextAvatar color.
+  @JsonKey(name: 'text_avatar')
+  final String textAvatar;
+  @override
+
+  /// TextBadge color.
+  @JsonKey(name: 'text_badge')
+  final String textBadge;
 
   @override
   String toString() {
-    return 'FontColors(text: $text, title: $title, sub: $sub, brandButton: $brandButton, simpleButton: $simpleButton, bubbleSent: $bubbleSent, bubbleReceived: $bubbleReceived)';
+    return 'FontColors(text: $text, title: $title, sub: $sub, brandButton: $brandButton, simpleButton: $simpleButton, bubbleSent: $bubbleSent, bubbleReceived: $bubbleReceived, textAvatar: $textAvatar, textBadge: $textBadge)';
   }
 
   @override
@@ -281,7 +329,11 @@ class _$_FontColors implements _FontColors {
             (identical(other.bubbleSent, bubbleSent) ||
                 const DeepCollectionEquality().equals(other.bubbleSent, bubbleSent)) &&
             (identical(other.bubbleReceived, bubbleReceived) ||
-                const DeepCollectionEquality().equals(other.bubbleReceived, bubbleReceived)));
+                const DeepCollectionEquality().equals(other.bubbleReceived, bubbleReceived)) &&
+            (identical(other.textAvatar, textAvatar) ||
+                const DeepCollectionEquality().equals(other.textAvatar, textAvatar)) &&
+            (identical(other.textBadge, textBadge) ||
+                const DeepCollectionEquality().equals(other.textBadge, textBadge)));
   }
 
   @override
@@ -293,7 +345,9 @@ class _$_FontColors implements _FontColors {
       const DeepCollectionEquality().hash(brandButton) ^
       const DeepCollectionEquality().hash(simpleButton) ^
       const DeepCollectionEquality().hash(bubbleSent) ^
-      const DeepCollectionEquality().hash(bubbleReceived);
+      const DeepCollectionEquality().hash(bubbleReceived) ^
+      const DeepCollectionEquality().hash(textAvatar) ^
+      const DeepCollectionEquality().hash(textBadge);
 
   @JsonKey(ignore: true)
   @override
@@ -313,7 +367,9 @@ abstract class _FontColors implements FontColors {
       @JsonKey(name: 'brand_button') required String brandButton,
       @JsonKey(name: 'simple_button') required String simpleButton,
       @JsonKey(name: 'bubble_sent') required String bubbleSent,
-      @JsonKey(name: 'bubble_received') required String bubbleReceived}) = _$_FontColors;
+      @JsonKey(name: 'bubble_received') required String bubbleReceived,
+      @JsonKey(name: 'text_avatar') required String textAvatar,
+      @JsonKey(name: 'text_badge') required String textBadge}) = _$_FontColors;
 
   factory _FontColors.fromJson(Map<String, dynamic> json) = _$_FontColors.fromJson;
 
@@ -352,6 +408,16 @@ abstract class _FontColors implements FontColors {
   /// Bubble received color.
   @JsonKey(name: 'bubble_received')
   String get bubbleReceived => throw _privateConstructorUsedError;
+  @override
+
+  /// TextAvatar color.
+  @JsonKey(name: 'text_avatar')
+  String get textAvatar => throw _privateConstructorUsedError;
+  @override
+
+  /// TextBadge color.
+  @JsonKey(name: 'text_badge')
+  String get textBadge => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$FontColorsCopyWith<_FontColors> get copyWith => throw _privateConstructorUsedError;

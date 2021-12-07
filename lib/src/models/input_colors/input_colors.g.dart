@@ -11,6 +11,7 @@ _$_InputColors _$$_InputColorsFromJson(Map<String, dynamic> json) => _$_InputCol
       active: json['active'] as String,
       disable: json['disable'] as String,
       error: json['error'] as String,
+      selection: json['selection'] as String,
     );
 
 Map<String, dynamic> _$$_InputColorsToJson(_$_InputColors instance) => <String, dynamic>{
@@ -18,4 +19,5 @@ Map<String, dynamic> _$$_InputColorsToJson(_$_InputColors instance) => <String, 
       'active': instance.active,
       'disable': instance.disable,
       'error': instance.error,
+      'selection': instance.selection,
     };

@@ -58,47 +58,47 @@ const $WebBase = _$WebBaseTearOff();
 
 /// @nodoc
 mixin _$WebBase {
-  /// .
+  /// Brand color.
   @JsonKey(name: 'brand')
   String get brand => throw _privateConstructorUsedError;
 
-  /// .
+  /// BrandLight color.
   @JsonKey(name: 'brand_light')
   String get brandLight => throw _privateConstructorUsedError;
 
-  /// .
+  /// BrandDark color.
   @JsonKey(name: 'brand_dark')
   String get brandDark => throw _privateConstructorUsedError;
 
-  /// .
+  /// BackLight color.
   @JsonKey(name: 'back_light')
   String get backLight => throw _privateConstructorUsedError;
 
-  /// .
+  /// Error color.
   @JsonKey(name: 'error')
   String get error => throw _privateConstructorUsedError;
 
-  /// .
+  /// ErrorLight color.
   @JsonKey(name: 'error_light')
   String get errorLight => throw _privateConstructorUsedError;
 
-  /// .
+  /// Success color.
   @JsonKey(name: 'success')
   String get success => throw _privateConstructorUsedError;
 
-  /// .
+  /// SuccessLight color.
   @JsonKey(name: 'success_light')
   String get successLight => throw _privateConstructorUsedError;
 
-  /// .
+  /// Attention color.
   @JsonKey(name: 'attention')
   String get attention => throw _privateConstructorUsedError;
 
-  /// .
+  /// AttentionLight color.
   @JsonKey(name: 'attention_light')
   String get attentionLight => throw _privateConstructorUsedError;
 
-  /// .
+  /// Fade color.
   @JsonKey(name: 'fade')
   String get fade => throw _privateConstructorUsedError;
 
@@ -303,57 +303,57 @@ class _$_WebBase implements _WebBase {
 
   @override
 
-  /// .
+  /// Brand color.
   @JsonKey(name: 'brand')
   final String brand;
   @override
 
-  /// .
+  /// BrandLight color.
   @JsonKey(name: 'brand_light')
   final String brandLight;
   @override
 
-  /// .
+  /// BrandDark color.
   @JsonKey(name: 'brand_dark')
   final String brandDark;
   @override
 
-  /// .
+  /// BackLight color.
   @JsonKey(name: 'back_light')
   final String backLight;
   @override
 
-  /// .
+  /// Error color.
   @JsonKey(name: 'error')
   final String error;
   @override
 
-  /// .
+  /// ErrorLight color.
   @JsonKey(name: 'error_light')
   final String errorLight;
   @override
 
-  /// .
+  /// Success color.
   @JsonKey(name: 'success')
   final String success;
   @override
 
-  /// .
+  /// SuccessLight color.
   @JsonKey(name: 'success_light')
   final String successLight;
   @override
 
-  /// .
+  /// Attention color.
   @JsonKey(name: 'attention')
   final String attention;
   @override
 
-  /// .
+  /// AttentionLight color.
   @JsonKey(name: 'attention_light')
   final String attentionLight;
   @override
 
-  /// .
+  /// Fade color.
   @JsonKey(name: 'fade')
   final String fade;
 
@@ -429,57 +429,57 @@ abstract class _WebBase implements WebBase {
 
   @override
 
-  /// .
+  /// Brand color.
   @JsonKey(name: 'brand')
   String get brand => throw _privateConstructorUsedError;
   @override
 
-  /// .
+  /// BrandLight color.
   @JsonKey(name: 'brand_light')
   String get brandLight => throw _privateConstructorUsedError;
   @override
 
-  /// .
+  /// BrandDark color.
   @JsonKey(name: 'brand_dark')
   String get brandDark => throw _privateConstructorUsedError;
   @override
 
-  /// .
+  /// BackLight color.
   @JsonKey(name: 'back_light')
   String get backLight => throw _privateConstructorUsedError;
   @override
 
-  /// .
+  /// Error color.
   @JsonKey(name: 'error')
   String get error => throw _privateConstructorUsedError;
   @override
 
-  /// .
+  /// ErrorLight color.
   @JsonKey(name: 'error_light')
   String get errorLight => throw _privateConstructorUsedError;
   @override
 
-  /// .
+  /// Success color.
   @JsonKey(name: 'success')
   String get success => throw _privateConstructorUsedError;
   @override
 
-  /// .
+  /// SuccessLight color.
   @JsonKey(name: 'success_light')
   String get successLight => throw _privateConstructorUsedError;
   @override
 
-  /// .
+  /// Attention color.
   @JsonKey(name: 'attention')
   String get attention => throw _privateConstructorUsedError;
   @override
 
-  /// .
+  /// AttentionLight color.
   @JsonKey(name: 'attention_light')
   String get attentionLight => throw _privateConstructorUsedError;
   @override
 
-  /// .
+  /// Fade color.
   @JsonKey(name: 'fade')
   String get fade => throw _privateConstructorUsedError;
   @override

@@ -28,6 +28,12 @@ class FontColors with _$FontColors {
 
     /// Bubble received color.
     @JsonKey(name: 'bubble_received') required String bubbleReceived,
+
+    /// TextAvatar color.
+    @JsonKey(name: 'text_avatar') required String textAvatar,
+
+    /// TextBadge color.
+    @JsonKey(name: 'text_badge') required String textBadge,
   }) = _FontColors;
 
   factory FontColors.fromJson(Map<String, dynamic> json) => _$FontColorsFromJson(json);

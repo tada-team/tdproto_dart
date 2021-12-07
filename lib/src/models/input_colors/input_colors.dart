@@ -19,6 +19,9 @@ class InputColors with _$InputColors {
 
     /// Error color.
     @JsonKey(name: 'error') required String error,
+
+    /// Selection color.
+    @JsonKey(name: 'selection') required String selection,
   }) = _InputColors;
 
   factory InputColors.fromJson(Map<String, dynamic> json) => _$InputColorsFromJson(json);

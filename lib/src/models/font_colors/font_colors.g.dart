@@ -14,6 +14,8 @@ _$_FontColors _$$_FontColorsFromJson(Map<String, dynamic> json) => _$_FontColors
       simpleButton: json['simple_button'] as String,
       bubbleSent: json['bubble_sent'] as String,
       bubbleReceived: json['bubble_received'] as String,
+      textAvatar: json['text_avatar'] as String,
+      textBadge: json['text_badge'] as String,
     );
 
 Map<String, dynamic> _$$_FontColorsToJson(_$_FontColors instance) => <String, dynamic>{
@@ -24,4 +26,6 @@ Map<String, dynamic> _$$_FontColorsToJson(_$_FontColors instance) => <String, dy
       'simple_button': instance.simpleButton,
       'bubble_sent': instance.bubbleSent,
       'bubble_received': instance.bubbleReceived,
+      'text_avatar': instance.textAvatar,
+      'text_badge': instance.textBadge,
     };

@@ -44,6 +44,9 @@ _$_Theme _$$_ThemeFromJson(Map<String, dynamic> json) => _$_Theme(
       icon: json['ic'] == null ? null : IconColors.fromJson(json['ic'] as Map<String, dynamic>),
       avatar: json['avatar'] == null ? null : AvatarColors.fromJson(json['avatar'] as Map<String, dynamic>),
       webBase: json['web_base'] == null ? null : WebBase.fromJson(json['web_base'] as Map<String, dynamic>),
+      bg: json['bg'] == null ? null : Bg.fromJson(json['bg'] as Map<String, dynamic>),
+      swipe: json['swipe'] == null ? null : SwipeColors.fromJson(json['swipe'] as Map<String, dynamic>),
+      callColors: json['call'] == null ? null : CallColors.fromJson(json['call'] as Map<String, dynamic>),
       appAccentColor: json['AppAccentColor'] as String,
       appPrimaryColor: json['AppPrimaryColor'] as String,
     );
@@ -86,6 +89,9 @@ Map<String, dynamic> _$$_ThemeToJson(_$_Theme instance) => <String, dynamic>{
       'ic': instance.icon?.toJson(),
       'avatar': instance.avatar?.toJson(),
       'web_base': instance.webBase?.toJson(),
+      'bg': instance.bg?.toJson(),
+      'swipe': instance.swipe?.toJson(),
+      'call': instance.callColors?.toJson(),
       'AppAccentColor': instance.appAccentColor,
       'AppPrimaryColor': instance.appPrimaryColor,
     };

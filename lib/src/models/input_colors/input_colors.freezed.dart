@@ -25,12 +25,14 @@ class _$InputColorsTearOff {
       {@JsonKey(name: 'static') required String isStatic,
       @JsonKey(name: 'active') required String active,
       @JsonKey(name: 'disable') required String disable,
-      @JsonKey(name: 'error') required String error}) {
+      @JsonKey(name: 'error') required String error,
+      @JsonKey(name: 'selection') required String selection}) {
     return _InputColors(
       isStatic: isStatic,
       active: active,
       disable: disable,
       error: error,
+      selection: selection,
     );
   }
 
@@ -60,6 +62,10 @@ mixin _$InputColors {
   @JsonKey(name: 'error')
   String get error => throw _privateConstructorUsedError;
 
+  /// Selection color.
+  @JsonKey(name: 'selection')
+  String get selection => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $InputColorsCopyWith<InputColors> get copyWith => throw _privateConstructorUsedError;
@@ -72,7 +78,8 @@ abstract class $InputColorsCopyWith<$Res> {
       {@JsonKey(name: 'static') String isStatic,
       @JsonKey(name: 'active') String active,
       @JsonKey(name: 'disable') String disable,
-      @JsonKey(name: 'error') String error});
+      @JsonKey(name: 'error') String error,
+      @JsonKey(name: 'selection') String selection});
 }
 
 /// @nodoc
@@ -89,6 +96,7 @@ class _$InputColorsCopyWithImpl<$Res> implements $InputColorsCopyWith<$Res> {
     Object? active = freezed,
     Object? disable = freezed,
     Object? error = freezed,
+    Object? selection = freezed,
   }) {
     return _then(_value.copyWith(
       isStatic: isStatic == freezed
@@ -107,6 +115,10 @@ class _$InputColorsCopyWithImpl<$Res> implements $InputColorsCopyWith<$Res> {
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as String,
+      selection: selection == freezed
+          ? _value.selection
+          : selection // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -120,7 +132,8 @@ abstract class _$InputColorsCopyWith<$Res> implements $InputColorsCopyWith<$Res>
       {@JsonKey(name: 'static') String isStatic,
       @JsonKey(name: 'active') String active,
       @JsonKey(name: 'disable') String disable,
-      @JsonKey(name: 'error') String error});
+      @JsonKey(name: 'error') String error,
+      @JsonKey(name: 'selection') String selection});
 }
 
 /// @nodoc
@@ -137,6 +150,7 @@ class __$InputColorsCopyWithImpl<$Res> extends _$InputColorsCopyWithImpl<$Res> i
     Object? active = freezed,
     Object? disable = freezed,
     Object? error = freezed,
+    Object? selection = freezed,
   }) {
     return _then(_InputColors(
       isStatic: isStatic == freezed
@@ -155,6 +169,10 @@ class __$InputColorsCopyWithImpl<$Res> extends _$InputColorsCopyWithImpl<$Res> i
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as String,
+      selection: selection == freezed
+          ? _value.selection
+          : selection // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -166,7 +184,8 @@ class _$_InputColors implements _InputColors {
       {@JsonKey(name: 'static') required this.isStatic,
       @JsonKey(name: 'active') required this.active,
       @JsonKey(name: 'disable') required this.disable,
-      @JsonKey(name: 'error') required this.error});
+      @JsonKey(name: 'error') required this.error,
+      @JsonKey(name: 'selection') required this.selection});
 
   factory _$_InputColors.fromJson(Map<String, dynamic> json) => _$$_InputColorsFromJson(json);
 
@@ -190,10 +209,15 @@ class _$_InputColors implements _InputColors {
   /// Error color.
   @JsonKey(name: 'error')
   final String error;
+  @override
+
+  /// Selection color.
+  @JsonKey(name: 'selection')
+  final String selection;
 
   @override
   String toString() {
-    return 'InputColors(isStatic: $isStatic, active: $active, disable: $disable, error: $error)';
+    return 'InputColors(isStatic: $isStatic, active: $active, disable: $disable, error: $error, selection: $selection)';
   }
 
   @override
@@ -203,7 +227,9 @@ class _$_InputColors implements _InputColors {
             (identical(other.isStatic, isStatic) || const DeepCollectionEquality().equals(other.isStatic, isStatic)) &&
             (identical(other.active, active) || const DeepCollectionEquality().equals(other.active, active)) &&
             (identical(other.disable, disable) || const DeepCollectionEquality().equals(other.disable, disable)) &&
-            (identical(other.error, error) || const DeepCollectionEquality().equals(other.error, error)));
+            (identical(other.error, error) || const DeepCollectionEquality().equals(other.error, error)) &&
+            (identical(other.selection, selection) ||
+                const DeepCollectionEquality().equals(other.selection, selection)));
   }
 
   @override
@@ -212,7 +238,8 @@ class _$_InputColors implements _InputColors {
       const DeepCollectionEquality().hash(isStatic) ^
       const DeepCollectionEquality().hash(active) ^
       const DeepCollectionEquality().hash(disable) ^
-      const DeepCollectionEquality().hash(error);
+      const DeepCollectionEquality().hash(error) ^
+      const DeepCollectionEquality().hash(selection);
 
   @JsonKey(ignore: true)
   @override
@@ -229,7 +256,8 @@ abstract class _InputColors implements InputColors {
       {@JsonKey(name: 'static') required String isStatic,
       @JsonKey(name: 'active') required String active,
       @JsonKey(name: 'disable') required String disable,
-      @JsonKey(name: 'error') required String error}) = _$_InputColors;
+      @JsonKey(name: 'error') required String error,
+      @JsonKey(name: 'selection') required String selection}) = _$_InputColors;
 
   factory _InputColors.fromJson(Map<String, dynamic> json) = _$_InputColors.fromJson;
 
@@ -253,6 +281,11 @@ abstract class _InputColors implements InputColors {
   /// Error color.
   @JsonKey(name: 'error')
   String get error => throw _privateConstructorUsedError;
+  @override
+
+  /// Selection color.
+  @JsonKey(name: 'selection')
+  String get selection => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$InputColorsCopyWith<_InputColors> get copyWith => throw _privateConstructorUsedError;

@@ -59,6 +59,9 @@ class _$ThemeTearOff {
       @JsonKey(name: 'ic') IconColors? icon,
       @JsonKey(name: 'avatar') AvatarColors? avatar,
       @JsonKey(name: 'web_base') WebBase? webBase,
+      @JsonKey(name: 'bg') Bg? bg,
+      @JsonKey(name: 'swipe') SwipeColors? swipe,
+      @JsonKey(name: 'call') CallColors? callColors,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppAccentColor') required String appAccentColor,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppPrimaryColor') required String appPrimaryColor}) {
     return _Theme(
@@ -99,6 +102,9 @@ class _$ThemeTearOff {
       icon: icon,
       avatar: avatar,
       webBase: webBase,
+      bg: bg,
+      swipe: swipe,
+      callColors: callColors,
       appAccentColor: appAccentColor,
       appPrimaryColor: appPrimaryColor,
     );
@@ -262,6 +268,18 @@ mixin _$Theme {
   @JsonKey(name: 'web_base')
   WebBase? get webBase => throw _privateConstructorUsedError;
 
+  /// Bg colors for app.
+  @JsonKey(name: 'bg')
+  Bg? get bg => throw _privateConstructorUsedError;
+
+  /// Swipe colors for app.
+  @JsonKey(name: 'swipe')
+  SwipeColors? get swipe => throw _privateConstructorUsedError;
+
+  /// Call colors for app.
+  @JsonKey(name: 'call')
+  CallColors? get callColors => throw _privateConstructorUsedError;
+
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'AppAccentColor')
@@ -318,6 +336,9 @@ abstract class $ThemeCopyWith<$Res> {
       @JsonKey(name: 'ic') IconColors? icon,
       @JsonKey(name: 'avatar') AvatarColors? avatar,
       @JsonKey(name: 'web_base') WebBase? webBase,
+      @JsonKey(name: 'bg') Bg? bg,
+      @JsonKey(name: 'swipe') SwipeColors? swipe,
+      @JsonKey(name: 'call') CallColors? callColors,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppAccentColor') String appAccentColor,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppPrimaryColor') String appPrimaryColor});
 
@@ -329,6 +350,9 @@ abstract class $ThemeCopyWith<$Res> {
   $IconColorsCopyWith<$Res>? get icon;
   $AvatarColorsCopyWith<$Res>? get avatar;
   $WebBaseCopyWith<$Res>? get webBase;
+  $BgCopyWith<$Res>? get bg;
+  $SwipeColorsCopyWith<$Res>? get swipe;
+  $CallColorsCopyWith<$Res>? get callColors;
 }
 
 /// @nodoc
@@ -378,6 +402,9 @@ class _$ThemeCopyWithImpl<$Res> implements $ThemeCopyWith<$Res> {
     Object? icon = freezed,
     Object? avatar = freezed,
     Object? webBase = freezed,
+    Object? bg = freezed,
+    Object? swipe = freezed,
+    Object? callColors = freezed,
     Object? appAccentColor = freezed,
     Object? appPrimaryColor = freezed,
   }) {
@@ -530,6 +557,18 @@ class _$ThemeCopyWithImpl<$Res> implements $ThemeCopyWith<$Res> {
           ? _value.webBase
           : webBase // ignore: cast_nullable_to_non_nullable
               as WebBase?,
+      bg: bg == freezed
+          ? _value.bg
+          : bg // ignore: cast_nullable_to_non_nullable
+              as Bg?,
+      swipe: swipe == freezed
+          ? _value.swipe
+          : swipe // ignore: cast_nullable_to_non_nullable
+              as SwipeColors?,
+      callColors: callColors == freezed
+          ? _value.callColors
+          : callColors // ignore: cast_nullable_to_non_nullable
+              as CallColors?,
       appAccentColor: appAccentColor == freezed
           ? _value.appAccentColor
           : appAccentColor // ignore: cast_nullable_to_non_nullable
@@ -628,6 +667,39 @@ class _$ThemeCopyWithImpl<$Res> implements $ThemeCopyWith<$Res> {
       return _then(_value.copyWith(webBase: value));
     });
   }
+
+  @override
+  $BgCopyWith<$Res>? get bg {
+    if (_value.bg == null) {
+      return null;
+    }
+
+    return $BgCopyWith<$Res>(_value.bg!, (value) {
+      return _then(_value.copyWith(bg: value));
+    });
+  }
+
+  @override
+  $SwipeColorsCopyWith<$Res>? get swipe {
+    if (_value.swipe == null) {
+      return null;
+    }
+
+    return $SwipeColorsCopyWith<$Res>(_value.swipe!, (value) {
+      return _then(_value.copyWith(swipe: value));
+    });
+  }
+
+  @override
+  $CallColorsCopyWith<$Res>? get callColors {
+    if (_value.callColors == null) {
+      return null;
+    }
+
+    return $CallColorsCopyWith<$Res>(_value.callColors!, (value) {
+      return _then(_value.copyWith(callColors: value));
+    });
+  }
 }
 
 /// @nodoc
@@ -672,6 +744,9 @@ abstract class _$ThemeCopyWith<$Res> implements $ThemeCopyWith<$Res> {
       @JsonKey(name: 'ic') IconColors? icon,
       @JsonKey(name: 'avatar') AvatarColors? avatar,
       @JsonKey(name: 'web_base') WebBase? webBase,
+      @JsonKey(name: 'bg') Bg? bg,
+      @JsonKey(name: 'swipe') SwipeColors? swipe,
+      @JsonKey(name: 'call') CallColors? callColors,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppAccentColor') String appAccentColor,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppPrimaryColor') String appPrimaryColor});
 
@@ -691,6 +766,12 @@ abstract class _$ThemeCopyWith<$Res> implements $ThemeCopyWith<$Res> {
   $AvatarColorsCopyWith<$Res>? get avatar;
   @override
   $WebBaseCopyWith<$Res>? get webBase;
+  @override
+  $BgCopyWith<$Res>? get bg;
+  @override
+  $SwipeColorsCopyWith<$Res>? get swipe;
+  @override
+  $CallColorsCopyWith<$Res>? get callColors;
 }
 
 /// @nodoc
@@ -739,6 +820,9 @@ class __$ThemeCopyWithImpl<$Res> extends _$ThemeCopyWithImpl<$Res> implements _$
     Object? icon = freezed,
     Object? avatar = freezed,
     Object? webBase = freezed,
+    Object? bg = freezed,
+    Object? swipe = freezed,
+    Object? callColors = freezed,
     Object? appAccentColor = freezed,
     Object? appPrimaryColor = freezed,
   }) {
@@ -891,6 +975,18 @@ class __$ThemeCopyWithImpl<$Res> extends _$ThemeCopyWithImpl<$Res> implements _$
           ? _value.webBase
           : webBase // ignore: cast_nullable_to_non_nullable
               as WebBase?,
+      bg: bg == freezed
+          ? _value.bg
+          : bg // ignore: cast_nullable_to_non_nullable
+              as Bg?,
+      swipe: swipe == freezed
+          ? _value.swipe
+          : swipe // ignore: cast_nullable_to_non_nullable
+              as SwipeColors?,
+      callColors: callColors == freezed
+          ? _value.callColors
+          : callColors // ignore: cast_nullable_to_non_nullable
+              as CallColors?,
       appAccentColor: appAccentColor == freezed
           ? _value.appAccentColor
           : appAccentColor // ignore: cast_nullable_to_non_nullable
@@ -944,6 +1040,9 @@ class _$_Theme implements _Theme {
       @JsonKey(name: 'ic') this.icon,
       @JsonKey(name: 'avatar') this.avatar,
       @JsonKey(name: 'web_base') this.webBase,
+      @JsonKey(name: 'bg') this.bg,
+      @JsonKey(name: 'swipe') this.swipe,
+      @JsonKey(name: 'call') this.callColors,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppAccentColor') required this.appAccentColor,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppPrimaryColor') required this.appPrimaryColor});
 
@@ -1136,6 +1235,21 @@ class _$_Theme implements _Theme {
   final WebBase? webBase;
   @override
 
+  /// Bg colors for app.
+  @JsonKey(name: 'bg')
+  final Bg? bg;
+  @override
+
+  /// Swipe colors for app.
+  @JsonKey(name: 'swipe')
+  final SwipeColors? swipe;
+  @override
+
+  /// Call colors for app.
+  @JsonKey(name: 'call')
+  final CallColors? callColors;
+  @override
+
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'AppAccentColor')
@@ -1149,7 +1263,7 @@ class _$_Theme implements _Theme {
 
   @override
   String toString() {
-    return 'Theme(bgColor: $bgColor, bgHoverColor: $bgHoverColor, textColor: $textColor, mutedTextColor: $mutedTextColor, accentColor: $accentColor, accentHoverColor: $accentHoverColor, textOnAccentHoverColor: $textOnAccentHoverColor, mainAccent: $mainAccent, mainAccentHover: $mainAccentHover, mainLightAccent: $mainLightAccent, mainLink: $mainLink, brand: $brand, brandDark: $brandDark, brandLight: $brandLight, back: $back, backLight: $backLight, backDark: $backDark, success: $success, successLight: $successLight, error: $error, errorLight: $errorLight, background: $background, tabBackground: $tabBackground, chatInputBackground: $chatInputBackground, substrateBackground: $substrateBackground, modalBackground: $modalBackground, titleBackground: $titleBackground, attention: $attention, attentionLight: $attentionLight, font: $font, message: $message, switcher: $switcher, button: $button, input: $input, icon: $icon, avatar: $avatar, webBase: $webBase, appAccentColor: $appAccentColor, appPrimaryColor: $appPrimaryColor)';
+    return 'Theme(bgColor: $bgColor, bgHoverColor: $bgHoverColor, textColor: $textColor, mutedTextColor: $mutedTextColor, accentColor: $accentColor, accentHoverColor: $accentHoverColor, textOnAccentHoverColor: $textOnAccentHoverColor, mainAccent: $mainAccent, mainAccentHover: $mainAccentHover, mainLightAccent: $mainLightAccent, mainLink: $mainLink, brand: $brand, brandDark: $brandDark, brandLight: $brandLight, back: $back, backLight: $backLight, backDark: $backDark, success: $success, successLight: $successLight, error: $error, errorLight: $errorLight, background: $background, tabBackground: $tabBackground, chatInputBackground: $chatInputBackground, substrateBackground: $substrateBackground, modalBackground: $modalBackground, titleBackground: $titleBackground, attention: $attention, attentionLight: $attentionLight, font: $font, message: $message, switcher: $switcher, button: $button, input: $input, icon: $icon, avatar: $avatar, webBase: $webBase, bg: $bg, swipe: $swipe, callColors: $callColors, appAccentColor: $appAccentColor, appPrimaryColor: $appPrimaryColor)';
   }
 
   @override
@@ -1215,6 +1329,10 @@ class _$_Theme implements _Theme {
             (identical(other.icon, icon) || const DeepCollectionEquality().equals(other.icon, icon)) &&
             (identical(other.avatar, avatar) || const DeepCollectionEquality().equals(other.avatar, avatar)) &&
             (identical(other.webBase, webBase) || const DeepCollectionEquality().equals(other.webBase, webBase)) &&
+            (identical(other.bg, bg) || const DeepCollectionEquality().equals(other.bg, bg)) &&
+            (identical(other.swipe, swipe) || const DeepCollectionEquality().equals(other.swipe, swipe)) &&
+            (identical(other.callColors, callColors) ||
+                const DeepCollectionEquality().equals(other.callColors, callColors)) &&
             (identical(other.appAccentColor, appAccentColor) ||
                 const DeepCollectionEquality().equals(other.appAccentColor, appAccentColor)) &&
             (identical(other.appPrimaryColor, appPrimaryColor) ||
@@ -1261,6 +1379,9 @@ class _$_Theme implements _Theme {
       const DeepCollectionEquality().hash(icon) ^
       const DeepCollectionEquality().hash(avatar) ^
       const DeepCollectionEquality().hash(webBase) ^
+      const DeepCollectionEquality().hash(bg) ^
+      const DeepCollectionEquality().hash(swipe) ^
+      const DeepCollectionEquality().hash(callColors) ^
       const DeepCollectionEquality().hash(appAccentColor) ^
       const DeepCollectionEquality().hash(appPrimaryColor);
 
@@ -1313,6 +1434,9 @@ abstract class _Theme implements Theme {
       @JsonKey(name: 'ic') IconColors? icon,
       @JsonKey(name: 'avatar') AvatarColors? avatar,
       @JsonKey(name: 'web_base') WebBase? webBase,
+      @JsonKey(name: 'bg') Bg? bg,
+      @JsonKey(name: 'swipe') SwipeColors? swipe,
+      @JsonKey(name: 'call') CallColors? callColors,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppAccentColor') required String appAccentColor,
       @Deprecated('Deprecated.') @JsonKey(name: 'AppPrimaryColor') required String appPrimaryColor}) = _$_Theme;
 
@@ -1503,6 +1627,21 @@ abstract class _Theme implements Theme {
   /// WebBase colors for web.
   @JsonKey(name: 'web_base')
   WebBase? get webBase => throw _privateConstructorUsedError;
+  @override
+
+  /// Bg colors for app.
+  @JsonKey(name: 'bg')
+  Bg? get bg => throw _privateConstructorUsedError;
+  @override
+
+  /// Swipe colors for app.
+  @JsonKey(name: 'swipe')
+  SwipeColors? get swipe => throw _privateConstructorUsedError;
+  @override
+
+  /// Call colors for app.
+  @JsonKey(name: 'call')
+  CallColors? get callColors => throw _privateConstructorUsedError;
   @override
 
   /// Deprecated.
