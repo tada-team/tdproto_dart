@@ -106,8 +106,8 @@ class _$FeaturesTearOff {
           bool? authBySms = false,
       @JsonKey(name: 'auth_2fa')
           bool? auth2fa = false,
-      @JsonKey(name: 'auth_by_ntlm')
-          bool? authByNTLM = false,
+      @JsonKey(name: 'auth_by_kerberos')
+          bool? authByKerberos = false,
       @JsonKey(name: 'is_recaptcha_enabled')
           bool? reCaptchaEnabled = false,
       @JsonKey(name: 'recaptcha_web_key_v3')
@@ -269,7 +269,7 @@ class _$FeaturesTearOff {
       authByQrCode: authByQrCode,
       authBySms: authBySms,
       auth2fa: auth2fa,
-      authByNTLM: authByNTLM,
+      authByKerberos: authByKerberos,
       reCaptchaEnabled: reCaptchaEnabled,
       reCaptchaWebKeyV3: reCaptchaWebKeyV3,
       reCaptchaWebKeyV2: reCaptchaWebKeyV2,
@@ -505,9 +505,9 @@ mixin _$Features {
   @JsonKey(name: 'auth_2fa')
   bool? get auth2fa => throw _privateConstructorUsedError;
 
-  /// NTLM authentication enabled.
-  @JsonKey(name: 'auth_by_ntlm')
-  bool? get authByNTLM => throw _privateConstructorUsedError;
+  /// Kerberos authentication enabled.
+  @JsonKey(name: 'auth_by_kerberos')
+  bool? get authByKerberos => throw _privateConstructorUsedError;
 
   /// Captcha enabled.
   @JsonKey(name: 'is_recaptcha_enabled')
@@ -828,8 +828,8 @@ abstract class $FeaturesCopyWith<$Res> {
           bool? authBySms,
       @JsonKey(name: 'auth_2fa')
           bool? auth2fa,
-      @JsonKey(name: 'auth_by_ntlm')
-          bool? authByNTLM,
+      @JsonKey(name: 'auth_by_kerberos')
+          bool? authByKerberos,
       @JsonKey(name: 'is_recaptcha_enabled')
           bool? reCaptchaEnabled,
       @JsonKey(name: 'recaptcha_web_key_v3')
@@ -1005,7 +1005,7 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     Object? authByQrCode = freezed,
     Object? authBySms = freezed,
     Object? auth2fa = freezed,
-    Object? authByNTLM = freezed,
+    Object? authByKerberos = freezed,
     Object? reCaptchaEnabled = freezed,
     Object? reCaptchaWebKeyV3 = freezed,
     Object? reCaptchaWebKeyV2 = freezed,
@@ -1230,9 +1230,9 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
           ? _value.auth2fa
           : auth2fa // ignore: cast_nullable_to_non_nullable
               as bool?,
-      authByNTLM: authByNTLM == freezed
-          ? _value.authByNTLM
-          : authByNTLM // ignore: cast_nullable_to_non_nullable
+      authByKerberos: authByKerberos == freezed
+          ? _value.authByKerberos
+          : authByKerberos // ignore: cast_nullable_to_non_nullable
               as bool?,
       reCaptchaEnabled: reCaptchaEnabled == freezed
           ? _value.reCaptchaEnabled
@@ -1561,8 +1561,8 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
           bool? authBySms,
       @JsonKey(name: 'auth_2fa')
           bool? auth2fa,
-      @JsonKey(name: 'auth_by_ntlm')
-          bool? authByNTLM,
+      @JsonKey(name: 'auth_by_kerberos')
+          bool? authByKerberos,
       @JsonKey(name: 'is_recaptcha_enabled')
           bool? reCaptchaEnabled,
       @JsonKey(name: 'recaptcha_web_key_v3')
@@ -1740,7 +1740,7 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
     Object? authByQrCode = freezed,
     Object? authBySms = freezed,
     Object? auth2fa = freezed,
-    Object? authByNTLM = freezed,
+    Object? authByKerberos = freezed,
     Object? reCaptchaEnabled = freezed,
     Object? reCaptchaWebKeyV3 = freezed,
     Object? reCaptchaWebKeyV2 = freezed,
@@ -1965,9 +1965,9 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
           ? _value.auth2fa
           : auth2fa // ignore: cast_nullable_to_non_nullable
               as bool?,
-      authByNTLM: authByNTLM == freezed
-          ? _value.authByNTLM
-          : authByNTLM // ignore: cast_nullable_to_non_nullable
+      authByKerberos: authByKerberos == freezed
+          ? _value.authByKerberos
+          : authByKerberos // ignore: cast_nullable_to_non_nullable
               as bool?,
       reCaptchaEnabled: reCaptchaEnabled == freezed
           ? _value.reCaptchaEnabled
@@ -2277,8 +2277,8 @@ class _$_Features implements _Features {
           this.authBySms = false,
       @JsonKey(name: 'auth_2fa')
           this.auth2fa = false,
-      @JsonKey(name: 'auth_by_ntlm')
-          this.authByNTLM = false,
+      @JsonKey(name: 'auth_by_kerberos')
+          this.authByKerberos = false,
       @JsonKey(name: 'is_recaptcha_enabled')
           this.reCaptchaEnabled = false,
       @JsonKey(name: 'recaptcha_web_key_v3')
@@ -2612,9 +2612,9 @@ class _$_Features implements _Features {
   final bool? auth2fa;
   @override
 
-  /// NTLM authentication enabled.
-  @JsonKey(name: 'auth_by_ntlm')
-  final bool? authByNTLM;
+  /// Kerberos authentication enabled.
+  @JsonKey(name: 'auth_by_kerberos')
+  final bool? authByKerberos;
   @override
 
   /// Captcha enabled.
@@ -2898,7 +2898,7 @@ class _$_Features implements _Features {
 
   @override
   String toString() {
-    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, authByNTLM: $authByNTLM, reCaptchaEnabled: $reCaptchaEnabled, reCaptchaWebKeyV3: $reCaptchaWebKeyV3, reCaptchaWebKeyV2: $reCaptchaWebKeyV2, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, callsAudioEnabled: $callsAudioEnabled, callsVideoEnabled: $callsVideoEnabled, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority)';
+    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, authByKerberos: $authByKerberos, reCaptchaEnabled: $reCaptchaEnabled, reCaptchaWebKeyV3: $reCaptchaWebKeyV3, reCaptchaWebKeyV2: $reCaptchaWebKeyV2, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, callsAudioEnabled: $callsAudioEnabled, callsVideoEnabled: $callsVideoEnabled, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority)';
   }
 
   @override
@@ -2982,8 +2982,8 @@ class _$_Features implements _Features {
             (identical(other.authBySms, authBySms) ||
                 const DeepCollectionEquality().equals(other.authBySms, authBySms)) &&
             (identical(other.auth2fa, auth2fa) || const DeepCollectionEquality().equals(other.auth2fa, auth2fa)) &&
-            (identical(other.authByNTLM, authByNTLM) ||
-                const DeepCollectionEquality().equals(other.authByNTLM, authByNTLM)) &&
+            (identical(other.authByKerberos, authByKerberos) ||
+                const DeepCollectionEquality().equals(other.authByKerberos, authByKerberos)) &&
             (identical(other.reCaptchaEnabled, reCaptchaEnabled) ||
                 const DeepCollectionEquality().equals(other.reCaptchaEnabled, reCaptchaEnabled)) &&
             (identical(other.reCaptchaWebKeyV3, reCaptchaWebKeyV3) ||
@@ -3093,7 +3093,7 @@ class _$_Features implements _Features {
       const DeepCollectionEquality().hash(authByQrCode) ^
       const DeepCollectionEquality().hash(authBySms) ^
       const DeepCollectionEquality().hash(auth2fa) ^
-      const DeepCollectionEquality().hash(authByNTLM) ^
+      const DeepCollectionEquality().hash(authByKerberos) ^
       const DeepCollectionEquality().hash(reCaptchaEnabled) ^
       const DeepCollectionEquality().hash(reCaptchaWebKeyV3) ^
       const DeepCollectionEquality().hash(reCaptchaWebKeyV2) ^
@@ -3245,8 +3245,8 @@ abstract class _Features implements Features {
           bool? authBySms,
       @JsonKey(name: 'auth_2fa')
           bool? auth2fa,
-      @JsonKey(name: 'auth_by_ntlm')
-          bool? authByNTLM,
+      @JsonKey(name: 'auth_by_kerberos')
+          bool? authByKerberos,
       @JsonKey(name: 'is_recaptcha_enabled')
           bool? reCaptchaEnabled,
       @JsonKey(name: 'recaptcha_web_key_v3')
@@ -3580,9 +3580,9 @@ abstract class _Features implements Features {
   bool? get auth2fa => throw _privateConstructorUsedError;
   @override
 
-  /// NTLM authentication enabled.
-  @JsonKey(name: 'auth_by_ntlm')
-  bool? get authByNTLM => throw _privateConstructorUsedError;
+  /// Kerberos authentication enabled.
+  @JsonKey(name: 'auth_by_kerberos')
+  bool? get authByKerberos => throw _privateConstructorUsedError;
   @override
 
   /// Captcha enabled.
