@@ -25,6 +25,7 @@ class _$UserWithMeTearOff {
       {@JsonKey(name: 'inviter') String? inviter,
       @JsonKey(name: 'teams') required List<Team> teams,
       @JsonKey(name: 'devices') required List<PushDevice> devices,
+      @JsonKey(name: 'account') required PersonalAccountBilling account,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'email') String? email,
       @JsonKey(name: 'family_name') String? familyName,
@@ -45,6 +46,7 @@ class _$UserWithMeTearOff {
       inviter: inviter,
       teams: teams,
       devices: devices,
+      account: account,
       phone: phone,
       email: email,
       familyName: familyName,
@@ -85,6 +87,10 @@ mixin _$UserWithMe {
   /// Registered push devices.
   @JsonKey(name: 'devices')
   List<PushDevice> get devices => throw _privateConstructorUsedError;
+
+  /// Billing personal account.
+  @JsonKey(name: 'account')
+  PersonalAccountBilling get account => throw _privateConstructorUsedError;
 
   /// Phone for login.
   @JsonKey(name: 'phone')
@@ -162,6 +168,7 @@ abstract class $UserWithMeCopyWith<$Res> {
       {@JsonKey(name: 'inviter') String? inviter,
       @JsonKey(name: 'teams') List<Team> teams,
       @JsonKey(name: 'devices') List<PushDevice> devices,
+      @JsonKey(name: 'account') PersonalAccountBilling account,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'email') String? email,
       @JsonKey(name: 'family_name') String? familyName,
@@ -179,6 +186,7 @@ abstract class $UserWithMeCopyWith<$Res> {
       @JsonKey(name: 'quiet_time_finish') String? quietTimeFinish,
       @JsonKey(name: 'icons') IconData icons});
 
+  $PersonalAccountBillingCopyWith<$Res> get account;
   $IconDataCopyWith<$Res> get icons;
 }
 
@@ -195,6 +203,7 @@ class _$UserWithMeCopyWithImpl<$Res> implements $UserWithMeCopyWith<$Res> {
     Object? inviter = freezed,
     Object? teams = freezed,
     Object? devices = freezed,
+    Object? account = freezed,
     Object? phone = freezed,
     Object? email = freezed,
     Object? familyName = freezed,
@@ -225,6 +234,10 @@ class _$UserWithMeCopyWithImpl<$Res> implements $UserWithMeCopyWith<$Res> {
           ? _value.devices
           : devices // ignore: cast_nullable_to_non_nullable
               as List<PushDevice>,
+      account: account == freezed
+          ? _value.account
+          : account // ignore: cast_nullable_to_non_nullable
+              as PersonalAccountBilling,
       phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
@@ -293,6 +306,13 @@ class _$UserWithMeCopyWithImpl<$Res> implements $UserWithMeCopyWith<$Res> {
   }
 
   @override
+  $PersonalAccountBillingCopyWith<$Res> get account {
+    return $PersonalAccountBillingCopyWith<$Res>(_value.account, (value) {
+      return _then(_value.copyWith(account: value));
+    });
+  }
+
+  @override
   $IconDataCopyWith<$Res> get icons {
     return $IconDataCopyWith<$Res>(_value.icons, (value) {
       return _then(_value.copyWith(icons: value));
@@ -308,6 +328,7 @@ abstract class _$UserWithMeCopyWith<$Res> implements $UserWithMeCopyWith<$Res> {
       {@JsonKey(name: 'inviter') String? inviter,
       @JsonKey(name: 'teams') List<Team> teams,
       @JsonKey(name: 'devices') List<PushDevice> devices,
+      @JsonKey(name: 'account') PersonalAccountBilling account,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'email') String? email,
       @JsonKey(name: 'family_name') String? familyName,
@@ -326,6 +347,8 @@ abstract class _$UserWithMeCopyWith<$Res> implements $UserWithMeCopyWith<$Res> {
       @JsonKey(name: 'icons') IconData icons});
 
   @override
+  $PersonalAccountBillingCopyWith<$Res> get account;
+  @override
   $IconDataCopyWith<$Res> get icons;
 }
 
@@ -342,6 +365,7 @@ class __$UserWithMeCopyWithImpl<$Res> extends _$UserWithMeCopyWithImpl<$Res> imp
     Object? inviter = freezed,
     Object? teams = freezed,
     Object? devices = freezed,
+    Object? account = freezed,
     Object? phone = freezed,
     Object? email = freezed,
     Object? familyName = freezed,
@@ -372,6 +396,10 @@ class __$UserWithMeCopyWithImpl<$Res> extends _$UserWithMeCopyWithImpl<$Res> imp
           ? _value.devices
           : devices // ignore: cast_nullable_to_non_nullable
               as List<PushDevice>,
+      account: account == freezed
+          ? _value.account
+          : account // ignore: cast_nullable_to_non_nullable
+              as PersonalAccountBilling,
       phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
@@ -447,6 +475,7 @@ class _$_UserWithMe implements _UserWithMe {
       {@JsonKey(name: 'inviter') this.inviter,
       @JsonKey(name: 'teams') required this.teams,
       @JsonKey(name: 'devices') required this.devices,
+      @JsonKey(name: 'account') required this.account,
       @JsonKey(name: 'phone') this.phone,
       @JsonKey(name: 'email') this.email,
       @JsonKey(name: 'family_name') this.familyName,
@@ -481,6 +510,11 @@ class _$_UserWithMe implements _UserWithMe {
   /// Registered push devices.
   @JsonKey(name: 'devices')
   final List<PushDevice> devices;
+  @override
+
+  /// Billing personal account.
+  @JsonKey(name: 'account')
+  final PersonalAccountBilling account;
   @override
 
   /// Phone for login.
@@ -564,7 +598,7 @@ class _$_UserWithMe implements _UserWithMe {
 
   @override
   String toString() {
-    return 'UserWithMe(inviter: $inviter, teams: $teams, devices: $devices, phone: $phone, email: $email, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, hidePushesContent: $hidePushesContent, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, icons: $icons)';
+    return 'UserWithMe(inviter: $inviter, teams: $teams, devices: $devices, account: $account, phone: $phone, email: $email, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, hidePushesContent: $hidePushesContent, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, icons: $icons)';
   }
 
   @override
@@ -574,6 +608,7 @@ class _$_UserWithMe implements _UserWithMe {
             (identical(other.inviter, inviter) || const DeepCollectionEquality().equals(other.inviter, inviter)) &&
             (identical(other.teams, teams) || const DeepCollectionEquality().equals(other.teams, teams)) &&
             (identical(other.devices, devices) || const DeepCollectionEquality().equals(other.devices, devices)) &&
+            (identical(other.account, account) || const DeepCollectionEquality().equals(other.account, account)) &&
             (identical(other.phone, phone) || const DeepCollectionEquality().equals(other.phone, phone)) &&
             (identical(other.email, email) || const DeepCollectionEquality().equals(other.email, email)) &&
             (identical(other.familyName, familyName) ||
@@ -609,6 +644,7 @@ class _$_UserWithMe implements _UserWithMe {
       const DeepCollectionEquality().hash(inviter) ^
       const DeepCollectionEquality().hash(teams) ^
       const DeepCollectionEquality().hash(devices) ^
+      const DeepCollectionEquality().hash(account) ^
       const DeepCollectionEquality().hash(phone) ^
       const DeepCollectionEquality().hash(email) ^
       const DeepCollectionEquality().hash(familyName) ^
@@ -641,6 +677,7 @@ abstract class _UserWithMe implements UserWithMe {
       {@JsonKey(name: 'inviter') String? inviter,
       @JsonKey(name: 'teams') required List<Team> teams,
       @JsonKey(name: 'devices') required List<PushDevice> devices,
+      @JsonKey(name: 'account') required PersonalAccountBilling account,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'email') String? email,
       @JsonKey(name: 'family_name') String? familyName,
@@ -675,6 +712,11 @@ abstract class _UserWithMe implements UserWithMe {
   /// Registered push devices.
   @JsonKey(name: 'devices')
   List<PushDevice> get devices => throw _privateConstructorUsedError;
+  @override
+
+  /// Billing personal account.
+  @JsonKey(name: 'account')
+  PersonalAccountBilling get account => throw _privateConstructorUsedError;
   @override
 
   /// Phone for login.
