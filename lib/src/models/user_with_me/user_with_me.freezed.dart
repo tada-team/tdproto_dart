@@ -25,7 +25,7 @@ class _$UserWithMeTearOff {
       {@JsonKey(name: 'inviter') String? inviter,
       @JsonKey(name: 'teams') required List<Team> teams,
       @JsonKey(name: 'devices') required List<PushDevice> devices,
-      @JsonKey(name: 'account') required PersonalAccountBilling account,
+      @JsonKey(name: 'account') PersonalAccountBilling? account,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'email') String? email,
       @JsonKey(name: 'family_name') String? familyName,
@@ -88,9 +88,9 @@ mixin _$UserWithMe {
   @JsonKey(name: 'devices')
   List<PushDevice> get devices => throw _privateConstructorUsedError;
 
-  /// Billing personal account.
+  /// Personal account from billing.
   @JsonKey(name: 'account')
-  PersonalAccountBilling get account => throw _privateConstructorUsedError;
+  PersonalAccountBilling? get account => throw _privateConstructorUsedError;
 
   /// Phone for login.
   @JsonKey(name: 'phone')
@@ -168,7 +168,7 @@ abstract class $UserWithMeCopyWith<$Res> {
       {@JsonKey(name: 'inviter') String? inviter,
       @JsonKey(name: 'teams') List<Team> teams,
       @JsonKey(name: 'devices') List<PushDevice> devices,
-      @JsonKey(name: 'account') PersonalAccountBilling account,
+      @JsonKey(name: 'account') PersonalAccountBilling? account,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'email') String? email,
       @JsonKey(name: 'family_name') String? familyName,
@@ -186,7 +186,7 @@ abstract class $UserWithMeCopyWith<$Res> {
       @JsonKey(name: 'quiet_time_finish') String? quietTimeFinish,
       @JsonKey(name: 'icons') IconData icons});
 
-  $PersonalAccountBillingCopyWith<$Res> get account;
+  $PersonalAccountBillingCopyWith<$Res>? get account;
   $IconDataCopyWith<$Res> get icons;
 }
 
@@ -237,7 +237,7 @@ class _$UserWithMeCopyWithImpl<$Res> implements $UserWithMeCopyWith<$Res> {
       account: account == freezed
           ? _value.account
           : account // ignore: cast_nullable_to_non_nullable
-              as PersonalAccountBilling,
+              as PersonalAccountBilling?,
       phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
@@ -306,8 +306,12 @@ class _$UserWithMeCopyWithImpl<$Res> implements $UserWithMeCopyWith<$Res> {
   }
 
   @override
-  $PersonalAccountBillingCopyWith<$Res> get account {
-    return $PersonalAccountBillingCopyWith<$Res>(_value.account, (value) {
+  $PersonalAccountBillingCopyWith<$Res>? get account {
+    if (_value.account == null) {
+      return null;
+    }
+
+    return $PersonalAccountBillingCopyWith<$Res>(_value.account!, (value) {
       return _then(_value.copyWith(account: value));
     });
   }
@@ -328,7 +332,7 @@ abstract class _$UserWithMeCopyWith<$Res> implements $UserWithMeCopyWith<$Res> {
       {@JsonKey(name: 'inviter') String? inviter,
       @JsonKey(name: 'teams') List<Team> teams,
       @JsonKey(name: 'devices') List<PushDevice> devices,
-      @JsonKey(name: 'account') PersonalAccountBilling account,
+      @JsonKey(name: 'account') PersonalAccountBilling? account,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'email') String? email,
       @JsonKey(name: 'family_name') String? familyName,
@@ -347,7 +351,7 @@ abstract class _$UserWithMeCopyWith<$Res> implements $UserWithMeCopyWith<$Res> {
       @JsonKey(name: 'icons') IconData icons});
 
   @override
-  $PersonalAccountBillingCopyWith<$Res> get account;
+  $PersonalAccountBillingCopyWith<$Res>? get account;
   @override
   $IconDataCopyWith<$Res> get icons;
 }
@@ -399,7 +403,7 @@ class __$UserWithMeCopyWithImpl<$Res> extends _$UserWithMeCopyWithImpl<$Res> imp
       account: account == freezed
           ? _value.account
           : account // ignore: cast_nullable_to_non_nullable
-              as PersonalAccountBilling,
+              as PersonalAccountBilling?,
       phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
@@ -475,7 +479,7 @@ class _$_UserWithMe implements _UserWithMe {
       {@JsonKey(name: 'inviter') this.inviter,
       @JsonKey(name: 'teams') required this.teams,
       @JsonKey(name: 'devices') required this.devices,
-      @JsonKey(name: 'account') required this.account,
+      @JsonKey(name: 'account') this.account,
       @JsonKey(name: 'phone') this.phone,
       @JsonKey(name: 'email') this.email,
       @JsonKey(name: 'family_name') this.familyName,
@@ -512,9 +516,9 @@ class _$_UserWithMe implements _UserWithMe {
   final List<PushDevice> devices;
   @override
 
-  /// Billing personal account.
+  /// Personal account from billing.
   @JsonKey(name: 'account')
-  final PersonalAccountBilling account;
+  final PersonalAccountBilling? account;
   @override
 
   /// Phone for login.
@@ -677,7 +681,7 @@ abstract class _UserWithMe implements UserWithMe {
       {@JsonKey(name: 'inviter') String? inviter,
       @JsonKey(name: 'teams') required List<Team> teams,
       @JsonKey(name: 'devices') required List<PushDevice> devices,
-      @JsonKey(name: 'account') required PersonalAccountBilling account,
+      @JsonKey(name: 'account') PersonalAccountBilling? account,
       @JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'email') String? email,
       @JsonKey(name: 'family_name') String? familyName,
@@ -714,9 +718,9 @@ abstract class _UserWithMe implements UserWithMe {
   List<PushDevice> get devices => throw _privateConstructorUsedError;
   @override
 
-  /// Billing personal account.
+  /// Personal account from billing.
   @JsonKey(name: 'account')
-  PersonalAccountBilling get account => throw _privateConstructorUsedError;
+  PersonalAccountBilling? get account => throw _privateConstructorUsedError;
   @override
 
   /// Phone for login.

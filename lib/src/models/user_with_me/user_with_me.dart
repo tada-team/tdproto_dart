@@ -17,8 +17,8 @@ class UserWithMe with _$UserWithMe {
     /// Registered push devices.
     @JsonKey(name: 'devices') required List<PushDevice> devices,
 
-    /// Billing personal account.
-    @JsonKey(name: 'account') required PersonalAccountBilling account,
+    /// Personal account from billing.
+    @JsonKey(name: 'account') PersonalAccountBilling? account,
 
     /// Phone for login.
     @JsonKey(name: 'phone') String? phone,
