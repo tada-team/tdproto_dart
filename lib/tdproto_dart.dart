@@ -34,6 +34,7 @@ export 'src/models/add_user_in_workplace_response/add_user_in_workplace_response
 export 'src/models/add_workplaces_on_personal_account_request/add_workplaces_on_personal_account_request.dart';
 export 'src/models/add_workplaces_on_personal_account_response/add_workplaces_on_personal_account_response.dart';
 export 'src/models/any_event/any_event.dart';
+export 'src/models/auth/auth.dart';
 export 'src/models/avatar_colors/avatar_colors.dart';
 export 'src/models/base_event/base_event.dart';
 export 'src/models/bg/bg.dart';
