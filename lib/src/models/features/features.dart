@@ -290,6 +290,9 @@ class Features with _$Features {
     /// Deprecated.
     @Deprecated('Deprecated.') @JsonKey(name: 'calls') required bool calls,
 
+    /// Billing services integrations.
+    @Default(false) @JsonKey(name: 'billing') bool? billing,
+
     /// Deprecated.
     @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') required String minAppVersion,
 

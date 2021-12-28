@@ -21,9 +21,9 @@ AddWorkplacesOnPersonalAccountRequest _$AddWorkplacesOnPersonalAccountRequestFro
 class _$AddWorkplacesOnPersonalAccountRequestTearOff {
   const _$AddWorkplacesOnPersonalAccountRequestTearOff();
 
-  _AddWorkplacesOnPersonalAccountRequest call({@JsonKey(name: 'count_workplaces') required int countWorkplaces}) {
+  _AddWorkplacesOnPersonalAccountRequest call({@JsonKey(name: 'workplaces_count') required int workplacesCount}) {
     return _AddWorkplacesOnPersonalAccountRequest(
-      countWorkplaces: countWorkplaces,
+      workplacesCount: workplacesCount,
     );
   }
 
@@ -38,8 +38,8 @@ const $AddWorkplacesOnPersonalAccountRequest = _$AddWorkplacesOnPersonalAccountR
 /// @nodoc
 mixin _$AddWorkplacesOnPersonalAccountRequest {
   /// .
-  @JsonKey(name: 'count_workplaces')
-  int get countWorkplaces => throw _privateConstructorUsedError;
+  @JsonKey(name: 'workplaces_count')
+  int get workplacesCount => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -52,7 +52,7 @@ abstract class $AddWorkplacesOnPersonalAccountRequestCopyWith<$Res> {
   factory $AddWorkplacesOnPersonalAccountRequestCopyWith(
           AddWorkplacesOnPersonalAccountRequest value, $Res Function(AddWorkplacesOnPersonalAccountRequest) then) =
       _$AddWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'count_workplaces') int countWorkplaces});
+  $Res call({@JsonKey(name: 'workplaces_count') int workplacesCount});
 }
 
 /// @nodoc
@@ -66,12 +66,12 @@ class _$AddWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? countWorkplaces = freezed,
+    Object? workplacesCount = freezed,
   }) {
     return _then(_value.copyWith(
-      countWorkplaces: countWorkplaces == freezed
-          ? _value.countWorkplaces
-          : countWorkplaces // ignore: cast_nullable_to_non_nullable
+      workplacesCount: workplacesCount == freezed
+          ? _value.workplacesCount
+          : workplacesCount // ignore: cast_nullable_to_non_nullable
               as int,
     ));
   }
@@ -84,7 +84,7 @@ abstract class _$AddWorkplacesOnPersonalAccountRequestCopyWith<$Res>
           _AddWorkplacesOnPersonalAccountRequest value, $Res Function(_AddWorkplacesOnPersonalAccountRequest) then) =
       __$AddWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'count_workplaces') int countWorkplaces});
+  $Res call({@JsonKey(name: 'workplaces_count') int workplacesCount});
 }
 
 /// @nodoc
@@ -100,12 +100,12 @@ class __$AddWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? countWorkplaces = freezed,
+    Object? workplacesCount = freezed,
   }) {
     return _then(_AddWorkplacesOnPersonalAccountRequest(
-      countWorkplaces: countWorkplaces == freezed
-          ? _value.countWorkplaces
-          : countWorkplaces // ignore: cast_nullable_to_non_nullable
+      workplacesCount: workplacesCount == freezed
+          ? _value.workplacesCount
+          : workplacesCount // ignore: cast_nullable_to_non_nullable
               as int,
     ));
   }
@@ -114,7 +114,7 @@ class __$AddWorkplacesOnPersonalAccountRequestCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_AddWorkplacesOnPersonalAccountRequest implements _AddWorkplacesOnPersonalAccountRequest {
-  const _$_AddWorkplacesOnPersonalAccountRequest({@JsonKey(name: 'count_workplaces') required this.countWorkplaces});
+  const _$_AddWorkplacesOnPersonalAccountRequest({@JsonKey(name: 'workplaces_count') required this.workplacesCount});
 
   factory _$_AddWorkplacesOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
       _$$_AddWorkplacesOnPersonalAccountRequestFromJson(json);
@@ -122,24 +122,24 @@ class _$_AddWorkplacesOnPersonalAccountRequest implements _AddWorkplacesOnPerson
   @override
 
   /// .
-  @JsonKey(name: 'count_workplaces')
-  final int countWorkplaces;
+  @JsonKey(name: 'workplaces_count')
+  final int workplacesCount;
 
   @override
   String toString() {
-    return 'AddWorkplacesOnPersonalAccountRequest(countWorkplaces: $countWorkplaces)';
+    return 'AddWorkplacesOnPersonalAccountRequest(workplacesCount: $workplacesCount)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _AddWorkplacesOnPersonalAccountRequest &&
-            (identical(other.countWorkplaces, countWorkplaces) ||
-                const DeepCollectionEquality().equals(other.countWorkplaces, countWorkplaces)));
+            (identical(other.workplacesCount, workplacesCount) ||
+                const DeepCollectionEquality().equals(other.workplacesCount, workplacesCount)));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(countWorkplaces);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(workplacesCount);
 
   @JsonKey(ignore: true)
   @override
@@ -154,7 +154,7 @@ class _$_AddWorkplacesOnPersonalAccountRequest implements _AddWorkplacesOnPerson
 
 abstract class _AddWorkplacesOnPersonalAccountRequest implements AddWorkplacesOnPersonalAccountRequest {
   const factory _AddWorkplacesOnPersonalAccountRequest(
-      {@JsonKey(name: 'count_workplaces') required int countWorkplaces}) = _$_AddWorkplacesOnPersonalAccountRequest;
+      {@JsonKey(name: 'workplaces_count') required int workplacesCount}) = _$_AddWorkplacesOnPersonalAccountRequest;
 
   factory _AddWorkplacesOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =
       _$_AddWorkplacesOnPersonalAccountRequest.fromJson;
@@ -162,8 +162,8 @@ abstract class _AddWorkplacesOnPersonalAccountRequest implements AddWorkplacesOn
   @override
 
   /// .
-  @JsonKey(name: 'count_workplaces')
-  int get countWorkplaces => throw _privateConstructorUsedError;
+  @JsonKey(name: 'workplaces_count')
+  int get workplacesCount => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$AddWorkplacesOnPersonalAccountRequestCopyWith<_AddWorkplacesOnPersonalAccountRequest> get copyWith =>

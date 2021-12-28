@@ -217,6 +217,8 @@ class _$FeaturesTearOff {
       @Deprecated('Deprecated.')
       @JsonKey(name: 'calls')
           required bool calls,
+      @JsonKey(name: 'billing')
+          bool? billing = false,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'min_app_version')
           required String minAppVersion,
@@ -320,6 +322,7 @@ class _$FeaturesTearOff {
       taskPublic: taskPublic,
       taskTags: taskTags,
       calls: calls,
+      billing: billing,
       minAppVersion: minAppVersion,
       fileExtensionWhitelist: fileExtensionWhitelist,
       fileExtensionBlacklist: fileExtensionBlacklist,
@@ -718,6 +721,10 @@ mixin _$Features {
   @JsonKey(name: 'calls')
   bool get calls => throw _privateConstructorUsedError;
 
+  /// Billing services integrations.
+  @JsonKey(name: 'billing')
+  bool? get billing => throw _privateConstructorUsedError;
+
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'min_app_version')
@@ -939,6 +946,8 @@ abstract class $FeaturesCopyWith<$Res> {
       @Deprecated('Deprecated.')
       @JsonKey(name: 'calls')
           bool calls,
+      @JsonKey(name: 'billing')
+          bool? billing,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'min_app_version')
           String minAppVersion,
@@ -1056,6 +1065,7 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     Object? taskPublic = freezed,
     Object? taskTags = freezed,
     Object? calls = freezed,
+    Object? billing = freezed,
     Object? minAppVersion = freezed,
     Object? fileExtensionWhitelist = freezed,
     Object? fileExtensionBlacklist = freezed,
@@ -1434,6 +1444,10 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
           ? _value.calls
           : calls // ignore: cast_nullable_to_non_nullable
               as bool,
+      billing: billing == freezed
+          ? _value.billing
+          : billing // ignore: cast_nullable_to_non_nullable
+              as bool?,
       minAppVersion: minAppVersion == freezed
           ? _value.minAppVersion
           : minAppVersion // ignore: cast_nullable_to_non_nullable
@@ -1672,6 +1686,8 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
       @Deprecated('Deprecated.')
       @JsonKey(name: 'calls')
           bool calls,
+      @JsonKey(name: 'billing')
+          bool? billing,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'min_app_version')
           String minAppVersion,
@@ -1791,6 +1807,7 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
     Object? taskPublic = freezed,
     Object? taskTags = freezed,
     Object? calls = freezed,
+    Object? billing = freezed,
     Object? minAppVersion = freezed,
     Object? fileExtensionWhitelist = freezed,
     Object? fileExtensionBlacklist = freezed,
@@ -2169,6 +2186,10 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
           ? _value.calls
           : calls // ignore: cast_nullable_to_non_nullable
               as bool,
+      billing: billing == freezed
+          ? _value.billing
+          : billing // ignore: cast_nullable_to_non_nullable
+              as bool?,
       minAppVersion: minAppVersion == freezed
           ? _value.minAppVersion
           : minAppVersion // ignore: cast_nullable_to_non_nullable
@@ -2388,6 +2409,8 @@ class _$_Features implements _Features {
       @Deprecated('Deprecated.')
       @JsonKey(name: 'calls')
           required this.calls,
+      @JsonKey(name: 'billing')
+          this.billing = false,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'min_app_version')
           required this.minAppVersion,
@@ -2876,6 +2899,11 @@ class _$_Features implements _Features {
   final bool calls;
   @override
 
+  /// Billing services integrations.
+  @JsonKey(name: 'billing')
+  final bool? billing;
+  @override
+
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'min_app_version')
@@ -2898,7 +2926,7 @@ class _$_Features implements _Features {
 
   @override
   String toString() {
-    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, authByKerberos: $authByKerberos, reCaptchaEnabled: $reCaptchaEnabled, reCaptchaWebKeyV3: $reCaptchaWebKeyV3, reCaptchaWebKeyV2: $reCaptchaWebKeyV2, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, callsAudioEnabled: $callsAudioEnabled, callsVideoEnabled: $callsVideoEnabled, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority)';
+    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, authByKerberos: $authByKerberos, reCaptchaEnabled: $reCaptchaEnabled, reCaptchaWebKeyV3: $reCaptchaWebKeyV3, reCaptchaWebKeyV2: $reCaptchaWebKeyV2, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, callsAudioEnabled: $callsAudioEnabled, callsVideoEnabled: $callsVideoEnabled, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, billing: $billing, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority)';
   }
 
   @override
@@ -3042,6 +3070,7 @@ class _$_Features implements _Features {
             (identical(other.taskPublic, taskPublic) || const DeepCollectionEquality().equals(other.taskPublic, taskPublic)) &&
             (identical(other.taskTags, taskTags) || const DeepCollectionEquality().equals(other.taskTags, taskTags)) &&
             (identical(other.calls, calls) || const DeepCollectionEquality().equals(other.calls, calls)) &&
+            (identical(other.billing, billing) || const DeepCollectionEquality().equals(other.billing, billing)) &&
             (identical(other.minAppVersion, minAppVersion) || const DeepCollectionEquality().equals(other.minAppVersion, minAppVersion)) &&
             (identical(other.fileExtensionWhitelist, fileExtensionWhitelist) || const DeepCollectionEquality().equals(other.fileExtensionWhitelist, fileExtensionWhitelist)) &&
             (identical(other.fileExtensionBlacklist, fileExtensionBlacklist) || const DeepCollectionEquality().equals(other.fileExtensionBlacklist, fileExtensionBlacklist)) &&
@@ -3144,6 +3173,7 @@ class _$_Features implements _Features {
       const DeepCollectionEquality().hash(taskPublic) ^
       const DeepCollectionEquality().hash(taskTags) ^
       const DeepCollectionEquality().hash(calls) ^
+      const DeepCollectionEquality().hash(billing) ^
       const DeepCollectionEquality().hash(minAppVersion) ^
       const DeepCollectionEquality().hash(fileExtensionWhitelist) ^
       const DeepCollectionEquality().hash(fileExtensionBlacklist) ^
@@ -3356,6 +3386,8 @@ abstract class _Features implements Features {
       @Deprecated('Deprecated.')
       @JsonKey(name: 'calls')
           required bool calls,
+      @JsonKey(name: 'billing')
+          bool? billing,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'min_app_version')
           required String minAppVersion,
@@ -3842,6 +3874,11 @@ abstract class _Features implements Features {
   @Deprecated('Deprecated.')
   @JsonKey(name: 'calls')
   bool get calls => throw _privateConstructorUsedError;
+  @override
+
+  /// Billing services integrations.
+  @JsonKey(name: 'billing')
+  bool? get billing => throw _privateConstructorUsedError;
   @override
 
   /// Deprecated.
