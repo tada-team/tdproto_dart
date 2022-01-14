@@ -91,6 +91,7 @@ export 'src/models/contact_custom_fields/contact_custom_fields.dart';
 export 'src/models/contact_preview/contact_preview.dart';
 export 'src/models/contact_short/contact_short.dart';
 export 'src/models/country/country.dart';
+export 'src/models/create_billing_contact_request/create_billing_contact_request.dart';
 export 'src/models/create_change_tariff_on_personal_account_request/create_change_tariff_on_personal_account_request.dart';
 export 'src/models/create_change_tariff_on_personal_account_response/create_change_tariff_on_personal_account_response.dart';
 export 'src/models/create_personal_account_request/create_personal_account_request.dart';
