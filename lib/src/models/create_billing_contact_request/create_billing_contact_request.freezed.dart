@@ -23,13 +23,13 @@ class _$CreateBillingContactRequestTearOff {
 
   _CreateBillingContactRequest call(
       {@JsonKey(name: 'phone') required String phone,
-      @JsonKey(name: 'given_name') required String givenName,
-      @JsonKey(name: 'family_name') required String familyName,
-      @JsonKey(name: 'patronymic') required String patronymic,
-      @JsonKey(name: 'status') required String status,
-      @JsonKey(name: 'role') required String role,
-      @JsonKey(name: 'user_uid') required String userUid,
-      @JsonKey(name: 'sections') required List<String> sections}) {
+      @JsonKey(name: 'given_name') String? givenName,
+      @JsonKey(name: 'family_name') String? familyName,
+      @JsonKey(name: 'patronymic') String? patronymic,
+      @JsonKey(name: 'status') String? status,
+      @JsonKey(name: 'role') String? role,
+      @JsonKey(name: 'user_uid') String? userUid,
+      @JsonKey(name: 'sections') List<String>? sections}) {
     return _CreateBillingContactRequest(
       phone: phone,
       givenName: givenName,
@@ -58,31 +58,31 @@ mixin _$CreateBillingContactRequest {
 
   /// .
   @JsonKey(name: 'given_name')
-  String get givenName => throw _privateConstructorUsedError;
+  String? get givenName => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'family_name')
-  String get familyName => throw _privateConstructorUsedError;
+  String? get familyName => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'patronymic')
-  String get patronymic => throw _privateConstructorUsedError;
+  String? get patronymic => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'status')
-  String get status => throw _privateConstructorUsedError;
+  String? get status => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'role')
-  String get role => throw _privateConstructorUsedError;
+  String? get role => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'user_uid')
-  String get userUid => throw _privateConstructorUsedError;
+  String? get userUid => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'sections')
-  List<String> get sections => throw _privateConstructorUsedError;
+  List<String>? get sections => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -96,13 +96,13 @@ abstract class $CreateBillingContactRequestCopyWith<$Res> {
       _$CreateBillingContactRequestCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'phone') String phone,
-      @JsonKey(name: 'given_name') String givenName,
-      @JsonKey(name: 'family_name') String familyName,
-      @JsonKey(name: 'patronymic') String patronymic,
-      @JsonKey(name: 'status') String status,
-      @JsonKey(name: 'role') String role,
-      @JsonKey(name: 'user_uid') String userUid,
-      @JsonKey(name: 'sections') List<String> sections});
+      @JsonKey(name: 'given_name') String? givenName,
+      @JsonKey(name: 'family_name') String? familyName,
+      @JsonKey(name: 'patronymic') String? patronymic,
+      @JsonKey(name: 'status') String? status,
+      @JsonKey(name: 'role') String? role,
+      @JsonKey(name: 'user_uid') String? userUid,
+      @JsonKey(name: 'sections') List<String>? sections});
 }
 
 /// @nodoc
@@ -132,31 +132,31 @@ class _$CreateBillingContactRequestCopyWithImpl<$Res> implements $CreateBillingC
       givenName: givenName == freezed
           ? _value.givenName
           : givenName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       familyName: familyName == freezed
           ? _value.familyName
           : familyName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       patronymic: patronymic == freezed
           ? _value.patronymic
           : patronymic // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       status: status == freezed
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       role: role == freezed
           ? _value.role
           : role // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       userUid: userUid == freezed
           ? _value.userUid
           : userUid // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       sections: sections == freezed
           ? _value.sections
           : sections // ignore: cast_nullable_to_non_nullable
-              as List<String>,
+              as List<String>?,
     ));
   }
 }
@@ -169,13 +169,13 @@ abstract class _$CreateBillingContactRequestCopyWith<$Res> implements $CreateBil
   @override
   $Res call(
       {@JsonKey(name: 'phone') String phone,
-      @JsonKey(name: 'given_name') String givenName,
-      @JsonKey(name: 'family_name') String familyName,
-      @JsonKey(name: 'patronymic') String patronymic,
-      @JsonKey(name: 'status') String status,
-      @JsonKey(name: 'role') String role,
-      @JsonKey(name: 'user_uid') String userUid,
-      @JsonKey(name: 'sections') List<String> sections});
+      @JsonKey(name: 'given_name') String? givenName,
+      @JsonKey(name: 'family_name') String? familyName,
+      @JsonKey(name: 'patronymic') String? patronymic,
+      @JsonKey(name: 'status') String? status,
+      @JsonKey(name: 'role') String? role,
+      @JsonKey(name: 'user_uid') String? userUid,
+      @JsonKey(name: 'sections') List<String>? sections});
 }
 
 /// @nodoc
@@ -207,31 +207,31 @@ class __$CreateBillingContactRequestCopyWithImpl<$Res> extends _$CreateBillingCo
       givenName: givenName == freezed
           ? _value.givenName
           : givenName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       familyName: familyName == freezed
           ? _value.familyName
           : familyName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       patronymic: patronymic == freezed
           ? _value.patronymic
           : patronymic // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       status: status == freezed
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       role: role == freezed
           ? _value.role
           : role // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       userUid: userUid == freezed
           ? _value.userUid
           : userUid // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       sections: sections == freezed
           ? _value.sections
           : sections // ignore: cast_nullable_to_non_nullable
-              as List<String>,
+              as List<String>?,
     ));
   }
 }
@@ -241,13 +241,13 @@ class __$CreateBillingContactRequestCopyWithImpl<$Res> extends _$CreateBillingCo
 class _$_CreateBillingContactRequest implements _CreateBillingContactRequest {
   const _$_CreateBillingContactRequest(
       {@JsonKey(name: 'phone') required this.phone,
-      @JsonKey(name: 'given_name') required this.givenName,
-      @JsonKey(name: 'family_name') required this.familyName,
-      @JsonKey(name: 'patronymic') required this.patronymic,
-      @JsonKey(name: 'status') required this.status,
-      @JsonKey(name: 'role') required this.role,
-      @JsonKey(name: 'user_uid') required this.userUid,
-      @JsonKey(name: 'sections') required this.sections});
+      @JsonKey(name: 'given_name') this.givenName,
+      @JsonKey(name: 'family_name') this.familyName,
+      @JsonKey(name: 'patronymic') this.patronymic,
+      @JsonKey(name: 'status') this.status,
+      @JsonKey(name: 'role') this.role,
+      @JsonKey(name: 'user_uid') this.userUid,
+      @JsonKey(name: 'sections') this.sections});
 
   factory _$_CreateBillingContactRequest.fromJson(Map<String, dynamic> json) =>
       _$$_CreateBillingContactRequestFromJson(json);
@@ -261,37 +261,37 @@ class _$_CreateBillingContactRequest implements _CreateBillingContactRequest {
 
   /// .
   @JsonKey(name: 'given_name')
-  final String givenName;
+  final String? givenName;
   @override
 
   /// .
   @JsonKey(name: 'family_name')
-  final String familyName;
+  final String? familyName;
   @override
 
   /// .
   @JsonKey(name: 'patronymic')
-  final String patronymic;
+  final String? patronymic;
   @override
 
   /// .
   @JsonKey(name: 'status')
-  final String status;
+  final String? status;
   @override
 
   /// .
   @JsonKey(name: 'role')
-  final String role;
+  final String? role;
   @override
 
   /// .
   @JsonKey(name: 'user_uid')
-  final String userUid;
+  final String? userUid;
   @override
 
   /// .
   @JsonKey(name: 'sections')
-  final List<String> sections;
+  final List<String>? sections;
 
   @override
   String toString() {
@@ -341,13 +341,13 @@ class _$_CreateBillingContactRequest implements _CreateBillingContactRequest {
 abstract class _CreateBillingContactRequest implements CreateBillingContactRequest {
   const factory _CreateBillingContactRequest(
       {@JsonKey(name: 'phone') required String phone,
-      @JsonKey(name: 'given_name') required String givenName,
-      @JsonKey(name: 'family_name') required String familyName,
-      @JsonKey(name: 'patronymic') required String patronymic,
-      @JsonKey(name: 'status') required String status,
-      @JsonKey(name: 'role') required String role,
-      @JsonKey(name: 'user_uid') required String userUid,
-      @JsonKey(name: 'sections') required List<String> sections}) = _$_CreateBillingContactRequest;
+      @JsonKey(name: 'given_name') String? givenName,
+      @JsonKey(name: 'family_name') String? familyName,
+      @JsonKey(name: 'patronymic') String? patronymic,
+      @JsonKey(name: 'status') String? status,
+      @JsonKey(name: 'role') String? role,
+      @JsonKey(name: 'user_uid') String? userUid,
+      @JsonKey(name: 'sections') List<String>? sections}) = _$_CreateBillingContactRequest;
 
   factory _CreateBillingContactRequest.fromJson(Map<String, dynamic> json) = _$_CreateBillingContactRequest.fromJson;
 
@@ -360,37 +360,37 @@ abstract class _CreateBillingContactRequest implements CreateBillingContactReque
 
   /// .
   @JsonKey(name: 'given_name')
-  String get givenName => throw _privateConstructorUsedError;
+  String? get givenName => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'family_name')
-  String get familyName => throw _privateConstructorUsedError;
+  String? get familyName => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'patronymic')
-  String get patronymic => throw _privateConstructorUsedError;
+  String? get patronymic => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'status')
-  String get status => throw _privateConstructorUsedError;
+  String? get status => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'role')
-  String get role => throw _privateConstructorUsedError;
+  String? get role => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'user_uid')
-  String get userUid => throw _privateConstructorUsedError;
+  String? get userUid => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'sections')
-  List<String> get sections => throw _privateConstructorUsedError;
+  List<String>? get sections => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$CreateBillingContactRequestCopyWith<_CreateBillingContactRequest> get copyWith =>

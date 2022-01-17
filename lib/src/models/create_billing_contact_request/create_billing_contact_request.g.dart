@@ -9,13 +9,13 @@ part of 'create_billing_contact_request.dart';
 _$_CreateBillingContactRequest _$$_CreateBillingContactRequestFromJson(Map<String, dynamic> json) =>
     _$_CreateBillingContactRequest(
       phone: json['phone'] as String,
-      givenName: json['given_name'] as String,
-      familyName: json['family_name'] as String,
-      patronymic: json['patronymic'] as String,
-      status: json['status'] as String,
-      role: json['role'] as String,
-      userUid: json['user_uid'] as String,
-      sections: (json['sections'] as List<dynamic>).map((e) => e as String).toList(),
+      givenName: json['given_name'] as String?,
+      familyName: json['family_name'] as String?,
+      patronymic: json['patronymic'] as String?,
+      status: json['status'] as String?,
+      role: json['role'] as String?,
+      userUid: json['user_uid'] as String?,
+      sections: (json['sections'] as List<dynamic>?)?.map((e) => e as String).toList(),
     );
 
 Map<String, dynamic> _$$_CreateBillingContactRequestToJson(_$_CreateBillingContactRequest instance) =>

@@ -12,25 +12,25 @@ class CreateBillingContactRequest with _$CreateBillingContactRequest {
     @JsonKey(name: 'phone') required String phone,
 
     /// .
-    @JsonKey(name: 'given_name') required String givenName,
+    @JsonKey(name: 'given_name') String? givenName,
 
     /// .
-    @JsonKey(name: 'family_name') required String familyName,
+    @JsonKey(name: 'family_name') String? familyName,
 
     /// .
-    @JsonKey(name: 'patronymic') required String patronymic,
+    @JsonKey(name: 'patronymic') String? patronymic,
 
     /// .
-    @JsonKey(name: 'status') required String status,
+    @JsonKey(name: 'status') String? status,
 
     /// .
-    @JsonKey(name: 'role') required String role,
+    @JsonKey(name: 'role') String? role,
 
     /// .
-    @JsonKey(name: 'user_uid') required String userUid,
+    @JsonKey(name: 'user_uid') String? userUid,
 
     /// .
-    @JsonKey(name: 'sections') required List<String> sections,
+    @JsonKey(name: 'sections') List<String>? sections,
   }) = _CreateBillingContactRequest;
 
   factory CreateBillingContactRequest.fromJson(Map<String, dynamic> json) =>
