@@ -176,6 +176,8 @@ export 'src/models/received_message/received_message.dart';
 export 'src/models/remind/remind.dart';
 export 'src/models/resp/resp.dart';
 export 'src/models/section/section.dart';
+export 'src/models/server_account_updated/server_account_updated.dart';
+export 'src/models/server_account_updated_params/server_account_updated_params.dart';
 export 'src/models/server_call_answer/server_call_answer.dart';
 export 'src/models/server_call_answer_candidate/server_call_answer_candidate.dart';
 export 'src/models/server_call_answer_params/server_call_answer_params.dart';
