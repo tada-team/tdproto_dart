@@ -259,6 +259,8 @@ export 'src/models/server_upload_updated/server_upload_updated.dart';
 export 'src/models/server_upload_updated_params/server_upload_updated_params.dart';
 export 'src/models/server_warning/server_warning.dart';
 export 'src/models/server_warning_params/server_warning_params.dart';
+export 'src/models/server_workplace_updated/server_workplace_updated.dart';
+export 'src/models/server_workplace_updated_params/server_workplace_updated_params.dart';
 export 'src/models/session/session.dart';
 export 'src/models/sharp_link/sharp_link.dart';
 export 'src/models/sharp_link_meta/sharp_link_meta.dart';
