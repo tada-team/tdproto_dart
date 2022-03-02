@@ -155,6 +155,7 @@ export 'src/models/meeting/meeting.dart';
 export 'src/models/meeting_member/meeting_member.dart';
 export 'src/models/meetings_create_request/meetings_create_request.dart';
 export 'src/models/meetings_create_request_members/meetings_create_request_members.dart';
+export 'src/models/meetings_delete_request_params/meetings_delete_request_params.dart';
 export 'src/models/meetings_members_create_request/meetings_members_create_request.dart';
 export 'src/models/meetings_members_request_params/meetings_members_request_params.dart';
 export 'src/models/meetings_members_response/meetings_members_response.dart';
