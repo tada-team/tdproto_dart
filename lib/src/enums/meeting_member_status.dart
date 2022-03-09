@@ -1,24 +1,15 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum MeetingMemberStatus {
-  @JsonValue('owner')
-  owner,
+  @JsonValue('MEETING_MEMBER_STATUS_OWNER')
+  MEETING_MEMBER_STATUS_OWNER,
 
-  @JsonValue('admin')
-  admin,
+  @JsonValue('MEETING_MEMBER_STATUS_ADMIN')
+  MEETING_MEMBER_STATUS_ADMIN,
 
-  @JsonValue('member')
-  member,
+  @JsonValue('MEETING_MEMBER_STATUS_MEMBER')
+  MEETING_MEMBER_STATUS_MEMBER,
 
-  @JsonValue('accepted')
-  accepted,
-
-  @JsonValue('rejected')
-  rejected,
-
-  @JsonValue('doubts')
-  doubts,
-
-  @JsonValue('waiting')
-  waiting,
+  @JsonValue('MEETING_MEMBER_STATUS_OPTIONAL_MEMBER')
+  MEETING_MEMBER_STATUS_OPTIONAL_MEMBER,
 }
