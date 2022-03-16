@@ -9,4 +9,7 @@ enum ChatType {
 
   @JsonValue('task')
   task,
+
+  @JsonValue('meeting')
+  meeting,
 }
