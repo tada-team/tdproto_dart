@@ -9,6 +9,9 @@ part 'meeting_member.g.dart';
 class MeetingMember with _$MeetingMember {
   const factory MeetingMember({
     /// .
+    @JsonKey(name: 'meeting_id') String? meetingId,
+
+    /// .
     @JsonKey(name: 'contact') required Contact contact,
 
     /// .

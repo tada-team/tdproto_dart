@@ -22,7 +22,8 @@ class _$MeetingsRequestParamsTearOff {
   const _$MeetingsRequestParamsTearOff();
 
   _MeetingsRequestParams call(
-      {@JsonKey(name: 'year') required int year,
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
+      @JsonKey(name: 'year') required int year,
       @JsonKey(name: 'month') required int month,
       @JsonKey(name: 'day') int? day,
       @JsonKey(name: 'team_uuid') String? teamUuid,
@@ -36,6 +37,7 @@ class _$MeetingsRequestParamsTearOff {
       @JsonKey(name: 'is_public') bool? isPublic = false,
       @JsonKey(name: 'is_outside') bool? isOutside = false}) {
     return _MeetingsRequestParams(
+      personalAccountId: personalAccountId,
       year: year,
       month: month,
       day: day,
@@ -62,6 +64,10 @@ const $MeetingsRequestParams = _$MeetingsRequestParamsTearOff();
 
 /// @nodoc
 mixin _$MeetingsRequestParams {
+  /// .
+  @JsonKey(name: 'personal_account_id')
+  String get personalAccountId => throw _privateConstructorUsedError;
+
   /// .
   @JsonKey(name: 'year')
   int get year => throw _privateConstructorUsedError;
@@ -124,7 +130,8 @@ abstract class $MeetingsRequestParamsCopyWith<$Res> {
   factory $MeetingsRequestParamsCopyWith(MeetingsRequestParams value, $Res Function(MeetingsRequestParams) then) =
       _$MeetingsRequestParamsCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'year') int year,
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
+      @JsonKey(name: 'year') int year,
       @JsonKey(name: 'month') int month,
       @JsonKey(name: 'day') int? day,
       @JsonKey(name: 'team_uuid') String? teamUuid,
@@ -149,6 +156,7 @@ class _$MeetingsRequestParamsCopyWithImpl<$Res> implements $MeetingsRequestParam
 
   @override
   $Res call({
+    Object? personalAccountId = freezed,
     Object? year = freezed,
     Object? month = freezed,
     Object? day = freezed,
@@ -164,6 +172,10 @@ class _$MeetingsRequestParamsCopyWithImpl<$Res> implements $MeetingsRequestParam
     Object? isOutside = freezed,
   }) {
     return _then(_value.copyWith(
+      personalAccountId: personalAccountId == freezed
+          ? _value.personalAccountId
+          : personalAccountId // ignore: cast_nullable_to_non_nullable
+              as String,
       year: year == freezed
           ? _value.year
           : year // ignore: cast_nullable_to_non_nullable
@@ -226,7 +238,8 @@ abstract class _$MeetingsRequestParamsCopyWith<$Res> implements $MeetingsRequest
       __$MeetingsRequestParamsCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'year') int year,
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
+      @JsonKey(name: 'year') int year,
       @JsonKey(name: 'month') int month,
       @JsonKey(name: 'day') int? day,
       @JsonKey(name: 'team_uuid') String? teamUuid,
@@ -252,6 +265,7 @@ class __$MeetingsRequestParamsCopyWithImpl<$Res> extends _$MeetingsRequestParams
 
   @override
   $Res call({
+    Object? personalAccountId = freezed,
     Object? year = freezed,
     Object? month = freezed,
     Object? day = freezed,
@@ -267,6 +281,10 @@ class __$MeetingsRequestParamsCopyWithImpl<$Res> extends _$MeetingsRequestParams
     Object? isOutside = freezed,
   }) {
     return _then(_MeetingsRequestParams(
+      personalAccountId: personalAccountId == freezed
+          ? _value.personalAccountId
+          : personalAccountId // ignore: cast_nullable_to_non_nullable
+              as String,
       year: year == freezed
           ? _value.year
           : year // ignore: cast_nullable_to_non_nullable
@@ -327,7 +345,8 @@ class __$MeetingsRequestParamsCopyWithImpl<$Res> extends _$MeetingsRequestParams
 @JsonSerializable()
 class _$_MeetingsRequestParams implements _MeetingsRequestParams {
   const _$_MeetingsRequestParams(
-      {@JsonKey(name: 'year') required this.year,
+      {@JsonKey(name: 'personal_account_id') required this.personalAccountId,
+      @JsonKey(name: 'year') required this.year,
       @JsonKey(name: 'month') required this.month,
       @JsonKey(name: 'day') this.day,
       @JsonKey(name: 'team_uuid') this.teamUuid,
@@ -343,6 +362,11 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
 
   factory _$_MeetingsRequestParams.fromJson(Map<String, dynamic> json) => _$$_MeetingsRequestParamsFromJson(json);
 
+  @override
+
+  /// .
+  @JsonKey(name: 'personal_account_id')
+  final String personalAccountId;
   @override
 
   /// .
@@ -411,13 +435,15 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
 
   @override
   String toString() {
-    return 'MeetingsRequestParams(year: $year, month: $month, day: $day, teamUuid: $teamUuid, owners: $owners, ownersSections: $ownersSections, members: $members, limit: $limit, offset: $offset, isArchive: $isArchive, isFreq: $isFreq, isPublic: $isPublic, isOutside: $isOutside)';
+    return 'MeetingsRequestParams(personalAccountId: $personalAccountId, year: $year, month: $month, day: $day, teamUuid: $teamUuid, owners: $owners, ownersSections: $ownersSections, members: $members, limit: $limit, offset: $offset, isArchive: $isArchive, isFreq: $isFreq, isPublic: $isPublic, isOutside: $isOutside)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _MeetingsRequestParams &&
+            (identical(other.personalAccountId, personalAccountId) ||
+                const DeepCollectionEquality().equals(other.personalAccountId, personalAccountId)) &&
             (identical(other.year, year) || const DeepCollectionEquality().equals(other.year, year)) &&
             (identical(other.month, month) || const DeepCollectionEquality().equals(other.month, month)) &&
             (identical(other.day, day) || const DeepCollectionEquality().equals(other.day, day)) &&
@@ -439,6 +465,7 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
   @override
   int get hashCode =>
       runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(personalAccountId) ^
       const DeepCollectionEquality().hash(year) ^
       const DeepCollectionEquality().hash(month) ^
       const DeepCollectionEquality().hash(day) ^
@@ -466,7 +493,8 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
 
 abstract class _MeetingsRequestParams implements MeetingsRequestParams {
   const factory _MeetingsRequestParams(
-      {@JsonKey(name: 'year') required int year,
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
+      @JsonKey(name: 'year') required int year,
       @JsonKey(name: 'month') required int month,
       @JsonKey(name: 'day') int? day,
       @JsonKey(name: 'team_uuid') String? teamUuid,
@@ -482,6 +510,11 @@ abstract class _MeetingsRequestParams implements MeetingsRequestParams {
 
   factory _MeetingsRequestParams.fromJson(Map<String, dynamic> json) = _$_MeetingsRequestParams.fromJson;
 
+  @override
+
+  /// .
+  @JsonKey(name: 'personal_account_id')
+  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .

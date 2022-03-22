@@ -28,9 +28,9 @@ class _$MeetingsCreateRequestTearOff {
       @JsonKey(name: 'freq') int? freq,
       @JsonKey(name: 'freq_days') List<int>? freqDays,
       @JsonKey(name: 'members') required List<MeetingsCreateRequestMembers> members,
-      @JsonKey(name: 'owner_presence') required String ownerPresence,
       @JsonKey(name: 'is_public') bool? isPublic = false,
-      @JsonKey(name: 'is_outside') bool? isOutside = false}) {
+      @JsonKey(name: 'is_outside') bool? isOutside = false,
+      @JsonKey(name: 'is_freq') required bool isFreq}) {
     return _MeetingsCreateRequest(
       teamUuid: teamUuid,
       startAt: startAt,
@@ -38,9 +38,9 @@ class _$MeetingsCreateRequestTearOff {
       freq: freq,
       freqDays: freqDays,
       members: members,
-      ownerPresence: ownerPresence,
       isPublic: isPublic,
       isOutside: isOutside,
+      isFreq: isFreq,
     );
   }
 
@@ -80,16 +80,16 @@ mixin _$MeetingsCreateRequest {
   List<MeetingsCreateRequestMembers> get members => throw _privateConstructorUsedError;
 
   /// .
-  @JsonKey(name: 'owner_presence')
-  String get ownerPresence => throw _privateConstructorUsedError;
-
-  /// .
   @JsonKey(name: 'is_public')
   bool? get isPublic => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'is_outside')
   bool? get isOutside => throw _privateConstructorUsedError;
+
+  /// .
+  @JsonKey(name: 'is_freq')
+  bool get isFreq => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -107,9 +107,9 @@ abstract class $MeetingsCreateRequestCopyWith<$Res> {
       @JsonKey(name: 'freq') int? freq,
       @JsonKey(name: 'freq_days') List<int>? freqDays,
       @JsonKey(name: 'members') List<MeetingsCreateRequestMembers> members,
-      @JsonKey(name: 'owner_presence') String ownerPresence,
       @JsonKey(name: 'is_public') bool? isPublic,
-      @JsonKey(name: 'is_outside') bool? isOutside});
+      @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'is_freq') bool isFreq});
 }
 
 /// @nodoc
@@ -128,9 +128,9 @@ class _$MeetingsCreateRequestCopyWithImpl<$Res> implements $MeetingsCreateReques
     Object? freq = freezed,
     Object? freqDays = freezed,
     Object? members = freezed,
-    Object? ownerPresence = freezed,
     Object? isPublic = freezed,
     Object? isOutside = freezed,
+    Object? isFreq = freezed,
   }) {
     return _then(_value.copyWith(
       teamUuid: teamUuid == freezed
@@ -157,10 +157,6 @@ class _$MeetingsCreateRequestCopyWithImpl<$Res> implements $MeetingsCreateReques
           ? _value.members
           : members // ignore: cast_nullable_to_non_nullable
               as List<MeetingsCreateRequestMembers>,
-      ownerPresence: ownerPresence == freezed
-          ? _value.ownerPresence
-          : ownerPresence // ignore: cast_nullable_to_non_nullable
-              as String,
       isPublic: isPublic == freezed
           ? _value.isPublic
           : isPublic // ignore: cast_nullable_to_non_nullable
@@ -169,6 +165,10 @@ class _$MeetingsCreateRequestCopyWithImpl<$Res> implements $MeetingsCreateReques
           ? _value.isOutside
           : isOutside // ignore: cast_nullable_to_non_nullable
               as bool?,
+      isFreq: isFreq == freezed
+          ? _value.isFreq
+          : isFreq // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -185,9 +185,9 @@ abstract class _$MeetingsCreateRequestCopyWith<$Res> implements $MeetingsCreateR
       @JsonKey(name: 'freq') int? freq,
       @JsonKey(name: 'freq_days') List<int>? freqDays,
       @JsonKey(name: 'members') List<MeetingsCreateRequestMembers> members,
-      @JsonKey(name: 'owner_presence') String ownerPresence,
       @JsonKey(name: 'is_public') bool? isPublic,
-      @JsonKey(name: 'is_outside') bool? isOutside});
+      @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'is_freq') bool isFreq});
 }
 
 /// @nodoc
@@ -207,9 +207,9 @@ class __$MeetingsCreateRequestCopyWithImpl<$Res> extends _$MeetingsCreateRequest
     Object? freq = freezed,
     Object? freqDays = freezed,
     Object? members = freezed,
-    Object? ownerPresence = freezed,
     Object? isPublic = freezed,
     Object? isOutside = freezed,
+    Object? isFreq = freezed,
   }) {
     return _then(_MeetingsCreateRequest(
       teamUuid: teamUuid == freezed
@@ -236,10 +236,6 @@ class __$MeetingsCreateRequestCopyWithImpl<$Res> extends _$MeetingsCreateRequest
           ? _value.members
           : members // ignore: cast_nullable_to_non_nullable
               as List<MeetingsCreateRequestMembers>,
-      ownerPresence: ownerPresence == freezed
-          ? _value.ownerPresence
-          : ownerPresence // ignore: cast_nullable_to_non_nullable
-              as String,
       isPublic: isPublic == freezed
           ? _value.isPublic
           : isPublic // ignore: cast_nullable_to_non_nullable
@@ -248,6 +244,10 @@ class __$MeetingsCreateRequestCopyWithImpl<$Res> extends _$MeetingsCreateRequest
           ? _value.isOutside
           : isOutside // ignore: cast_nullable_to_non_nullable
               as bool?,
+      isFreq: isFreq == freezed
+          ? _value.isFreq
+          : isFreq // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -262,9 +262,9 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
       @JsonKey(name: 'freq') this.freq,
       @JsonKey(name: 'freq_days') this.freqDays,
       @JsonKey(name: 'members') required this.members,
-      @JsonKey(name: 'owner_presence') required this.ownerPresence,
       @JsonKey(name: 'is_public') this.isPublic = false,
-      @JsonKey(name: 'is_outside') this.isOutside = false});
+      @JsonKey(name: 'is_outside') this.isOutside = false,
+      @JsonKey(name: 'is_freq') required this.isFreq});
 
   factory _$_MeetingsCreateRequest.fromJson(Map<String, dynamic> json) => _$$_MeetingsCreateRequestFromJson(json);
 
@@ -302,11 +302,6 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
   @override
 
   /// .
-  @JsonKey(name: 'owner_presence')
-  final String ownerPresence;
-  @override
-
-  /// .
   @JsonKey(name: 'is_public')
   final bool? isPublic;
   @override
@@ -314,10 +309,15 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
   /// .
   @JsonKey(name: 'is_outside')
   final bool? isOutside;
+  @override
+
+  /// .
+  @JsonKey(name: 'is_freq')
+  final bool isFreq;
 
   @override
   String toString() {
-    return 'MeetingsCreateRequest(teamUuid: $teamUuid, startAt: $startAt, endAt: $endAt, freq: $freq, freqDays: $freqDays, members: $members, ownerPresence: $ownerPresence, isPublic: $isPublic, isOutside: $isOutside)';
+    return 'MeetingsCreateRequest(teamUuid: $teamUuid, startAt: $startAt, endAt: $endAt, freq: $freq, freqDays: $freqDays, members: $members, isPublic: $isPublic, isOutside: $isOutside, isFreq: $isFreq)';
   }
 
   @override
@@ -330,11 +330,10 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
             (identical(other.freq, freq) || const DeepCollectionEquality().equals(other.freq, freq)) &&
             (identical(other.freqDays, freqDays) || const DeepCollectionEquality().equals(other.freqDays, freqDays)) &&
             (identical(other.members, members) || const DeepCollectionEquality().equals(other.members, members)) &&
-            (identical(other.ownerPresence, ownerPresence) ||
-                const DeepCollectionEquality().equals(other.ownerPresence, ownerPresence)) &&
             (identical(other.isPublic, isPublic) || const DeepCollectionEquality().equals(other.isPublic, isPublic)) &&
             (identical(other.isOutside, isOutside) ||
-                const DeepCollectionEquality().equals(other.isOutside, isOutside)));
+                const DeepCollectionEquality().equals(other.isOutside, isOutside)) &&
+            (identical(other.isFreq, isFreq) || const DeepCollectionEquality().equals(other.isFreq, isFreq)));
   }
 
   @override
@@ -346,9 +345,9 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
       const DeepCollectionEquality().hash(freq) ^
       const DeepCollectionEquality().hash(freqDays) ^
       const DeepCollectionEquality().hash(members) ^
-      const DeepCollectionEquality().hash(ownerPresence) ^
       const DeepCollectionEquality().hash(isPublic) ^
-      const DeepCollectionEquality().hash(isOutside);
+      const DeepCollectionEquality().hash(isOutside) ^
+      const DeepCollectionEquality().hash(isFreq);
 
   @JsonKey(ignore: true)
   @override
@@ -369,9 +368,9 @@ abstract class _MeetingsCreateRequest implements MeetingsCreateRequest {
       @JsonKey(name: 'freq') int? freq,
       @JsonKey(name: 'freq_days') List<int>? freqDays,
       @JsonKey(name: 'members') required List<MeetingsCreateRequestMembers> members,
-      @JsonKey(name: 'owner_presence') required String ownerPresence,
       @JsonKey(name: 'is_public') bool? isPublic,
-      @JsonKey(name: 'is_outside') bool? isOutside}) = _$_MeetingsCreateRequest;
+      @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'is_freq') required bool isFreq}) = _$_MeetingsCreateRequest;
 
   factory _MeetingsCreateRequest.fromJson(Map<String, dynamic> json) = _$_MeetingsCreateRequest.fromJson;
 
@@ -409,11 +408,6 @@ abstract class _MeetingsCreateRequest implements MeetingsCreateRequest {
   @override
 
   /// .
-  @JsonKey(name: 'owner_presence')
-  String get ownerPresence => throw _privateConstructorUsedError;
-  @override
-
-  /// .
   @JsonKey(name: 'is_public')
   bool? get isPublic => throw _privateConstructorUsedError;
   @override
@@ -421,6 +415,11 @@ abstract class _MeetingsCreateRequest implements MeetingsCreateRequest {
   /// .
   @JsonKey(name: 'is_outside')
   bool? get isOutside => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'is_freq')
+  bool get isFreq => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MeetingsCreateRequestCopyWith<_MeetingsCreateRequest> get copyWith => throw _privateConstructorUsedError;

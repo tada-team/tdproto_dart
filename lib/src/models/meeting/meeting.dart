@@ -24,6 +24,9 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'end_at') @DateTimeConverter() required DateTime endAt,
 
     /// .
+    @JsonKey(name: 'personal_account_id') required String personalAccountId,
+
+    /// .
     @JsonKey(name: 'freq_days') List<int>? freqDays,
 
     /// .
@@ -49,6 +52,9 @@ class Meeting with _$Meeting {
 
     /// .
     @Default(false) @JsonKey(name: 'can_join') bool? canJoin,
+
+    /// .
+    @JsonKey(name: 'is_freq') required bool isFreq,
   }) = _Meeting;
 
   factory Meeting.fromJson(Map<String, dynamic> json) => _$MeetingFromJson(json);

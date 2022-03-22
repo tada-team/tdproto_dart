@@ -7,6 +7,7 @@ part of 'meetings_request_params.dart';
 // **************************************************************************
 
 _$_MeetingsRequestParams _$$_MeetingsRequestParamsFromJson(Map<String, dynamic> json) => _$_MeetingsRequestParams(
+      personalAccountId: json['personal_account_id'] as String,
       year: json['year'] as int,
       month: json['month'] as int,
       day: json['day'] as int?,
@@ -23,6 +24,7 @@ _$_MeetingsRequestParams _$$_MeetingsRequestParamsFromJson(Map<String, dynamic> 
     );
 
 Map<String, dynamic> _$$_MeetingsRequestParamsToJson(_$_MeetingsRequestParams instance) => <String, dynamic>{
+      'personal_account_id': instance.personalAccountId,
       'year': instance.year,
       'month': instance.month,
       'day': instance.day,

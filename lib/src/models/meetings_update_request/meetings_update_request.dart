@@ -9,6 +9,9 @@ part 'meetings_update_request.g.dart';
 class MeetingsUpdateRequest with _$MeetingsUpdateRequest {
   const factory MeetingsUpdateRequest({
     /// .
+    @JsonKey(name: 'meeting_id') required String meetingId,
+
+    /// .
     @JsonKey(name: 'active_from') String? activeFrom,
 
     /// .
@@ -16,6 +19,9 @@ class MeetingsUpdateRequest with _$MeetingsUpdateRequest {
 
     /// .
     @JsonKey(name: 'end_at') String? endAt,
+
+    /// .
+    @JsonKey(name: 'team_uuid') String? teamUuid,
 
     /// .
     @JsonKey(name: 'freq') int? freq,
@@ -28,6 +34,9 @@ class MeetingsUpdateRequest with _$MeetingsUpdateRequest {
 
     /// .
     @Default(false) @JsonKey(name: 'is_outside') bool? isOutside,
+
+    /// .
+    @JsonKey(name: 'is_freq') required bool isFreq,
   }) = _MeetingsUpdateRequest;
 
   factory MeetingsUpdateRequest.fromJson(Map<String, dynamic> json) => _$MeetingsUpdateRequestFromJson(json);

@@ -22,7 +22,8 @@ class _$MeetingMemberTearOff {
   const _$MeetingMemberTearOff();
 
   _MeetingMember call(
-      {@JsonKey(name: 'contact') required Contact contact,
+      {@JsonKey(name: 'meeting_id') String? meetingId,
+      @JsonKey(name: 'contact') required Contact contact,
       @JsonKey(name: 'presence') required String presence,
       @JsonKey(name: 'status') required String status,
       @JsonKey(name: 'is_required') bool? isRequired = false,
@@ -30,6 +31,7 @@ class _$MeetingMemberTearOff {
       @JsonKey(name: 'can_change_status') bool? canChangeStatus = false,
       @JsonKey(name: 'can_remove') bool? canRemove = false}) {
     return _MeetingMember(
+      meetingId: meetingId,
       contact: contact,
       presence: presence,
       status: status,
@@ -50,6 +52,10 @@ const $MeetingMember = _$MeetingMemberTearOff();
 
 /// @nodoc
 mixin _$MeetingMember {
+  /// .
+  @JsonKey(name: 'meeting_id')
+  String? get meetingId => throw _privateConstructorUsedError;
+
   /// .
   @JsonKey(name: 'contact')
   Contact get contact => throw _privateConstructorUsedError;
@@ -88,7 +94,8 @@ abstract class $MeetingMemberCopyWith<$Res> {
   factory $MeetingMemberCopyWith(MeetingMember value, $Res Function(MeetingMember) then) =
       _$MeetingMemberCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'contact') Contact contact,
+      {@JsonKey(name: 'meeting_id') String? meetingId,
+      @JsonKey(name: 'contact') Contact contact,
       @JsonKey(name: 'presence') String presence,
       @JsonKey(name: 'status') String status,
       @JsonKey(name: 'is_required') bool? isRequired,
@@ -109,6 +116,7 @@ class _$MeetingMemberCopyWithImpl<$Res> implements $MeetingMemberCopyWith<$Res> 
 
   @override
   $Res call({
+    Object? meetingId = freezed,
     Object? contact = freezed,
     Object? presence = freezed,
     Object? status = freezed,
@@ -118,6 +126,10 @@ class _$MeetingMemberCopyWithImpl<$Res> implements $MeetingMemberCopyWith<$Res> 
     Object? canRemove = freezed,
   }) {
     return _then(_value.copyWith(
+      meetingId: meetingId == freezed
+          ? _value.meetingId
+          : meetingId // ignore: cast_nullable_to_non_nullable
+              as String?,
       contact: contact == freezed
           ? _value.contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -163,7 +175,8 @@ abstract class _$MeetingMemberCopyWith<$Res> implements $MeetingMemberCopyWith<$
       __$MeetingMemberCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'contact') Contact contact,
+      {@JsonKey(name: 'meeting_id') String? meetingId,
+      @JsonKey(name: 'contact') Contact contact,
       @JsonKey(name: 'presence') String presence,
       @JsonKey(name: 'status') String status,
       @JsonKey(name: 'is_required') bool? isRequired,
@@ -186,6 +199,7 @@ class __$MeetingMemberCopyWithImpl<$Res> extends _$MeetingMemberCopyWithImpl<$Re
 
   @override
   $Res call({
+    Object? meetingId = freezed,
     Object? contact = freezed,
     Object? presence = freezed,
     Object? status = freezed,
@@ -195,6 +209,10 @@ class __$MeetingMemberCopyWithImpl<$Res> extends _$MeetingMemberCopyWithImpl<$Re
     Object? canRemove = freezed,
   }) {
     return _then(_MeetingMember(
+      meetingId: meetingId == freezed
+          ? _value.meetingId
+          : meetingId // ignore: cast_nullable_to_non_nullable
+              as String?,
       contact: contact == freezed
           ? _value.contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -231,7 +249,8 @@ class __$MeetingMemberCopyWithImpl<$Res> extends _$MeetingMemberCopyWithImpl<$Re
 @JsonSerializable()
 class _$_MeetingMember implements _MeetingMember {
   const _$_MeetingMember(
-      {@JsonKey(name: 'contact') required this.contact,
+      {@JsonKey(name: 'meeting_id') this.meetingId,
+      @JsonKey(name: 'contact') required this.contact,
       @JsonKey(name: 'presence') required this.presence,
       @JsonKey(name: 'status') required this.status,
       @JsonKey(name: 'is_required') this.isRequired = false,
@@ -241,6 +260,11 @@ class _$_MeetingMember implements _MeetingMember {
 
   factory _$_MeetingMember.fromJson(Map<String, dynamic> json) => _$$_MeetingMemberFromJson(json);
 
+  @override
+
+  /// .
+  @JsonKey(name: 'meeting_id')
+  final String? meetingId;
   @override
 
   /// .
@@ -279,13 +303,15 @@ class _$_MeetingMember implements _MeetingMember {
 
   @override
   String toString() {
-    return 'MeetingMember(contact: $contact, presence: $presence, status: $status, isRequired: $isRequired, canChangePresence: $canChangePresence, canChangeStatus: $canChangeStatus, canRemove: $canRemove)';
+    return 'MeetingMember(meetingId: $meetingId, contact: $contact, presence: $presence, status: $status, isRequired: $isRequired, canChangePresence: $canChangePresence, canChangeStatus: $canChangeStatus, canRemove: $canRemove)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _MeetingMember &&
+            (identical(other.meetingId, meetingId) ||
+                const DeepCollectionEquality().equals(other.meetingId, meetingId)) &&
             (identical(other.contact, contact) || const DeepCollectionEquality().equals(other.contact, contact)) &&
             (identical(other.presence, presence) || const DeepCollectionEquality().equals(other.presence, presence)) &&
             (identical(other.status, status) || const DeepCollectionEquality().equals(other.status, status)) &&
@@ -302,6 +328,7 @@ class _$_MeetingMember implements _MeetingMember {
   @override
   int get hashCode =>
       runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(meetingId) ^
       const DeepCollectionEquality().hash(contact) ^
       const DeepCollectionEquality().hash(presence) ^
       const DeepCollectionEquality().hash(status) ^
@@ -323,7 +350,8 @@ class _$_MeetingMember implements _MeetingMember {
 
 abstract class _MeetingMember implements MeetingMember {
   const factory _MeetingMember(
-      {@JsonKey(name: 'contact') required Contact contact,
+      {@JsonKey(name: 'meeting_id') String? meetingId,
+      @JsonKey(name: 'contact') required Contact contact,
       @JsonKey(name: 'presence') required String presence,
       @JsonKey(name: 'status') required String status,
       @JsonKey(name: 'is_required') bool? isRequired,
@@ -333,6 +361,11 @@ abstract class _MeetingMember implements MeetingMember {
 
   factory _MeetingMember.fromJson(Map<String, dynamic> json) = _$_MeetingMember.fromJson;
 
+  @override
+
+  /// .
+  @JsonKey(name: 'meeting_id')
+  String? get meetingId => throw _privateConstructorUsedError;
   @override
 
   /// .

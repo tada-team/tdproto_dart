@@ -12,6 +12,7 @@ _$_Meeting _$$_MeetingFromJson(Map<String, dynamic> json) => _$_Meeting(
       chatUuid: json['chat_uuid'] as String,
       startAt: const DateTimeConverter().fromJson(json['start_at'] as String),
       endAt: const DateTimeConverter().fromJson(json['end_at'] as String),
+      personalAccountId: json['personal_account_id'] as String,
       freqDays: (json['freq_days'] as List<dynamic>?)?.map((e) => e as int).toList(),
       freq: json['freq'] as int?,
       isArchive: json['is_archive'] as bool? ?? false,
@@ -21,6 +22,7 @@ _$_Meeting _$$_MeetingFromJson(Map<String, dynamic> json) => _$_Meeting(
       canDelete: json['can_delete'] as bool? ?? false,
       canEdit: json['can_edit'] as bool? ?? false,
       canJoin: json['can_join'] as bool? ?? false,
+      isFreq: json['is_freq'] as bool,
     );
 
 Map<String, dynamic> _$$_MeetingToJson(_$_Meeting instance) => <String, dynamic>{
@@ -29,6 +31,7 @@ Map<String, dynamic> _$$_MeetingToJson(_$_Meeting instance) => <String, dynamic>
       'chat_uuid': instance.chatUuid,
       'start_at': const DateTimeConverter().toJson(instance.startAt),
       'end_at': const DateTimeConverter().toJson(instance.endAt),
+      'personal_account_id': instance.personalAccountId,
       'freq_days': instance.freqDays,
       'freq': instance.freq,
       'is_archive': instance.isArchive,
@@ -38,4 +41,5 @@ Map<String, dynamic> _$$_MeetingToJson(_$_Meeting instance) => <String, dynamic>
       'can_delete': instance.canDelete,
       'can_edit': instance.canEdit,
       'can_join': instance.canJoin,
+      'is_freq': instance.isFreq,
     };

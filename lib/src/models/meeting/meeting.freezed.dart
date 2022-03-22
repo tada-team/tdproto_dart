@@ -27,6 +27,7 @@ class _$MeetingTearOff {
       @JsonKey(name: 'chat_uuid') required String chatUuid,
       @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
       @JsonKey(name: 'end_at') @DateTimeConverter() required DateTime endAt,
+      @JsonKey(name: 'personal_account_id') required String personalAccountId,
       @JsonKey(name: 'freq_days') List<int>? freqDays,
       @JsonKey(name: 'freq') int? freq,
       @JsonKey(name: 'is_archive') bool? isArchive = false,
@@ -35,13 +36,15 @@ class _$MeetingTearOff {
       @JsonKey(name: 'can_add_member') bool? canAddMember = false,
       @JsonKey(name: 'can_delete') bool? canDelete = false,
       @JsonKey(name: 'can_edit') bool? canEdit = false,
-      @JsonKey(name: 'can_join') bool? canJoin = false}) {
+      @JsonKey(name: 'can_join') bool? canJoin = false,
+      @JsonKey(name: 'is_freq') required bool isFreq}) {
     return _Meeting(
       id: id,
       teamUuid: teamUuid,
       chatUuid: chatUuid,
       startAt: startAt,
       endAt: endAt,
+      personalAccountId: personalAccountId,
       freqDays: freqDays,
       freq: freq,
       isArchive: isArchive,
@@ -51,6 +54,7 @@ class _$MeetingTearOff {
       canDelete: canDelete,
       canEdit: canEdit,
       canJoin: canJoin,
+      isFreq: isFreq,
     );
   }
 
@@ -85,6 +89,10 @@ mixin _$Meeting {
   @JsonKey(name: 'end_at')
   @DateTimeConverter()
   DateTime get endAt => throw _privateConstructorUsedError;
+
+  /// .
+  @JsonKey(name: 'personal_account_id')
+  String get personalAccountId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'freq_days')
@@ -122,6 +130,10 @@ mixin _$Meeting {
   @JsonKey(name: 'can_join')
   bool? get canJoin => throw _privateConstructorUsedError;
 
+  /// .
+  @JsonKey(name: 'is_freq')
+  bool get isFreq => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $MeetingCopyWith<Meeting> get copyWith => throw _privateConstructorUsedError;
@@ -136,6 +148,7 @@ abstract class $MeetingCopyWith<$Res> {
       @JsonKey(name: 'chat_uuid') String chatUuid,
       @JsonKey(name: 'start_at') @DateTimeConverter() DateTime startAt,
       @JsonKey(name: 'end_at') @DateTimeConverter() DateTime endAt,
+      @JsonKey(name: 'personal_account_id') String personalAccountId,
       @JsonKey(name: 'freq_days') List<int>? freqDays,
       @JsonKey(name: 'freq') int? freq,
       @JsonKey(name: 'is_archive') bool? isArchive,
@@ -144,7 +157,8 @@ abstract class $MeetingCopyWith<$Res> {
       @JsonKey(name: 'can_add_member') bool? canAddMember,
       @JsonKey(name: 'can_delete') bool? canDelete,
       @JsonKey(name: 'can_edit') bool? canEdit,
-      @JsonKey(name: 'can_join') bool? canJoin});
+      @JsonKey(name: 'can_join') bool? canJoin,
+      @JsonKey(name: 'is_freq') bool isFreq});
 }
 
 /// @nodoc
@@ -162,6 +176,7 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
     Object? chatUuid = freezed,
     Object? startAt = freezed,
     Object? endAt = freezed,
+    Object? personalAccountId = freezed,
     Object? freqDays = freezed,
     Object? freq = freezed,
     Object? isArchive = freezed,
@@ -171,6 +186,7 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
     Object? canDelete = freezed,
     Object? canEdit = freezed,
     Object? canJoin = freezed,
+    Object? isFreq = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed
@@ -193,6 +209,10 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
           ? _value.endAt
           : endAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
+      personalAccountId: personalAccountId == freezed
+          ? _value.personalAccountId
+          : personalAccountId // ignore: cast_nullable_to_non_nullable
+              as String,
       freqDays: freqDays == freezed
           ? _value.freqDays
           : freqDays // ignore: cast_nullable_to_non_nullable
@@ -229,6 +249,10 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
           ? _value.canJoin
           : canJoin // ignore: cast_nullable_to_non_nullable
               as bool?,
+      isFreq: isFreq == freezed
+          ? _value.isFreq
+          : isFreq // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -243,6 +267,7 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
       @JsonKey(name: 'chat_uuid') String chatUuid,
       @JsonKey(name: 'start_at') @DateTimeConverter() DateTime startAt,
       @JsonKey(name: 'end_at') @DateTimeConverter() DateTime endAt,
+      @JsonKey(name: 'personal_account_id') String personalAccountId,
       @JsonKey(name: 'freq_days') List<int>? freqDays,
       @JsonKey(name: 'freq') int? freq,
       @JsonKey(name: 'is_archive') bool? isArchive,
@@ -251,7 +276,8 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
       @JsonKey(name: 'can_add_member') bool? canAddMember,
       @JsonKey(name: 'can_delete') bool? canDelete,
       @JsonKey(name: 'can_edit') bool? canEdit,
-      @JsonKey(name: 'can_join') bool? canJoin});
+      @JsonKey(name: 'can_join') bool? canJoin,
+      @JsonKey(name: 'is_freq') bool isFreq});
 }
 
 /// @nodoc
@@ -268,6 +294,7 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res> implement
     Object? chatUuid = freezed,
     Object? startAt = freezed,
     Object? endAt = freezed,
+    Object? personalAccountId = freezed,
     Object? freqDays = freezed,
     Object? freq = freezed,
     Object? isArchive = freezed,
@@ -277,6 +304,7 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res> implement
     Object? canDelete = freezed,
     Object? canEdit = freezed,
     Object? canJoin = freezed,
+    Object? isFreq = freezed,
   }) {
     return _then(_Meeting(
       id: id == freezed
@@ -299,6 +327,10 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res> implement
           ? _value.endAt
           : endAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
+      personalAccountId: personalAccountId == freezed
+          ? _value.personalAccountId
+          : personalAccountId // ignore: cast_nullable_to_non_nullable
+              as String,
       freqDays: freqDays == freezed
           ? _value.freqDays
           : freqDays // ignore: cast_nullable_to_non_nullable
@@ -335,6 +367,10 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res> implement
           ? _value.canJoin
           : canJoin // ignore: cast_nullable_to_non_nullable
               as bool?,
+      isFreq: isFreq == freezed
+          ? _value.isFreq
+          : isFreq // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -348,6 +384,7 @@ class _$_Meeting implements _Meeting {
       @JsonKey(name: 'chat_uuid') required this.chatUuid,
       @JsonKey(name: 'start_at') @DateTimeConverter() required this.startAt,
       @JsonKey(name: 'end_at') @DateTimeConverter() required this.endAt,
+      @JsonKey(name: 'personal_account_id') required this.personalAccountId,
       @JsonKey(name: 'freq_days') this.freqDays,
       @JsonKey(name: 'freq') this.freq,
       @JsonKey(name: 'is_archive') this.isArchive = false,
@@ -356,7 +393,8 @@ class _$_Meeting implements _Meeting {
       @JsonKey(name: 'can_add_member') this.canAddMember = false,
       @JsonKey(name: 'can_delete') this.canDelete = false,
       @JsonKey(name: 'can_edit') this.canEdit = false,
-      @JsonKey(name: 'can_join') this.canJoin = false});
+      @JsonKey(name: 'can_join') this.canJoin = false,
+      @JsonKey(name: 'is_freq') required this.isFreq});
 
   factory _$_Meeting.fromJson(Map<String, dynamic> json) => _$$_MeetingFromJson(json);
 
@@ -387,6 +425,11 @@ class _$_Meeting implements _Meeting {
   @JsonKey(name: 'end_at')
   @DateTimeConverter()
   final DateTime endAt;
+  @override
+
+  /// .
+  @JsonKey(name: 'personal_account_id')
+  final String personalAccountId;
   @override
 
   /// .
@@ -432,10 +475,15 @@ class _$_Meeting implements _Meeting {
   /// .
   @JsonKey(name: 'can_join')
   final bool? canJoin;
+  @override
+
+  /// .
+  @JsonKey(name: 'is_freq')
+  final bool isFreq;
 
   @override
   String toString() {
-    return 'Meeting(id: $id, teamUuid: $teamUuid, chatUuid: $chatUuid, startAt: $startAt, endAt: $endAt, freqDays: $freqDays, freq: $freq, isArchive: $isArchive, isPublic: $isPublic, isOutside: $isOutside, canAddMember: $canAddMember, canDelete: $canDelete, canEdit: $canEdit, canJoin: $canJoin)';
+    return 'Meeting(id: $id, teamUuid: $teamUuid, chatUuid: $chatUuid, startAt: $startAt, endAt: $endAt, personalAccountId: $personalAccountId, freqDays: $freqDays, freq: $freq, isArchive: $isArchive, isPublic: $isPublic, isOutside: $isOutside, canAddMember: $canAddMember, canDelete: $canDelete, canEdit: $canEdit, canJoin: $canJoin, isFreq: $isFreq)';
   }
 
   @override
@@ -447,6 +495,8 @@ class _$_Meeting implements _Meeting {
             (identical(other.chatUuid, chatUuid) || const DeepCollectionEquality().equals(other.chatUuid, chatUuid)) &&
             (identical(other.startAt, startAt) || const DeepCollectionEquality().equals(other.startAt, startAt)) &&
             (identical(other.endAt, endAt) || const DeepCollectionEquality().equals(other.endAt, endAt)) &&
+            (identical(other.personalAccountId, personalAccountId) ||
+                const DeepCollectionEquality().equals(other.personalAccountId, personalAccountId)) &&
             (identical(other.freqDays, freqDays) || const DeepCollectionEquality().equals(other.freqDays, freqDays)) &&
             (identical(other.freq, freq) || const DeepCollectionEquality().equals(other.freq, freq)) &&
             (identical(other.isArchive, isArchive) ||
@@ -459,7 +509,8 @@ class _$_Meeting implements _Meeting {
             (identical(other.canDelete, canDelete) ||
                 const DeepCollectionEquality().equals(other.canDelete, canDelete)) &&
             (identical(other.canEdit, canEdit) || const DeepCollectionEquality().equals(other.canEdit, canEdit)) &&
-            (identical(other.canJoin, canJoin) || const DeepCollectionEquality().equals(other.canJoin, canJoin)));
+            (identical(other.canJoin, canJoin) || const DeepCollectionEquality().equals(other.canJoin, canJoin)) &&
+            (identical(other.isFreq, isFreq) || const DeepCollectionEquality().equals(other.isFreq, isFreq)));
   }
 
   @override
@@ -470,6 +521,7 @@ class _$_Meeting implements _Meeting {
       const DeepCollectionEquality().hash(chatUuid) ^
       const DeepCollectionEquality().hash(startAt) ^
       const DeepCollectionEquality().hash(endAt) ^
+      const DeepCollectionEquality().hash(personalAccountId) ^
       const DeepCollectionEquality().hash(freqDays) ^
       const DeepCollectionEquality().hash(freq) ^
       const DeepCollectionEquality().hash(isArchive) ^
@@ -478,7 +530,8 @@ class _$_Meeting implements _Meeting {
       const DeepCollectionEquality().hash(canAddMember) ^
       const DeepCollectionEquality().hash(canDelete) ^
       const DeepCollectionEquality().hash(canEdit) ^
-      const DeepCollectionEquality().hash(canJoin);
+      const DeepCollectionEquality().hash(canJoin) ^
+      const DeepCollectionEquality().hash(isFreq);
 
   @JsonKey(ignore: true)
   @override
@@ -497,6 +550,7 @@ abstract class _Meeting implements Meeting {
       @JsonKey(name: 'chat_uuid') required String chatUuid,
       @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
       @JsonKey(name: 'end_at') @DateTimeConverter() required DateTime endAt,
+      @JsonKey(name: 'personal_account_id') required String personalAccountId,
       @JsonKey(name: 'freq_days') List<int>? freqDays,
       @JsonKey(name: 'freq') int? freq,
       @JsonKey(name: 'is_archive') bool? isArchive,
@@ -505,7 +559,8 @@ abstract class _Meeting implements Meeting {
       @JsonKey(name: 'can_add_member') bool? canAddMember,
       @JsonKey(name: 'can_delete') bool? canDelete,
       @JsonKey(name: 'can_edit') bool? canEdit,
-      @JsonKey(name: 'can_join') bool? canJoin}) = _$_Meeting;
+      @JsonKey(name: 'can_join') bool? canJoin,
+      @JsonKey(name: 'is_freq') required bool isFreq}) = _$_Meeting;
 
   factory _Meeting.fromJson(Map<String, dynamic> json) = _$_Meeting.fromJson;
 
@@ -536,6 +591,11 @@ abstract class _Meeting implements Meeting {
   @JsonKey(name: 'end_at')
   @DateTimeConverter()
   DateTime get endAt => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'personal_account_id')
+  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// .
@@ -581,6 +641,11 @@ abstract class _Meeting implements Meeting {
   /// .
   @JsonKey(name: 'can_join')
   bool? get canJoin => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'is_freq')
+  bool get isFreq => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MeetingCopyWith<_Meeting> get copyWith => throw _privateConstructorUsedError;

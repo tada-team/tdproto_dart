@@ -15,9 +15,9 @@ _$_MeetingsCreateRequest _$$_MeetingsCreateRequestFromJson(Map<String, dynamic> 
       members: (json['members'] as List<dynamic>)
           .map((e) => MeetingsCreateRequestMembers.fromJson(e as Map<String, dynamic>))
           .toList(),
-      ownerPresence: json['owner_presence'] as String,
       isPublic: json['is_public'] as bool? ?? false,
       isOutside: json['is_outside'] as bool? ?? false,
+      isFreq: json['is_freq'] as bool,
     );
 
 Map<String, dynamic> _$$_MeetingsCreateRequestToJson(_$_MeetingsCreateRequest instance) => <String, dynamic>{
@@ -27,7 +27,7 @@ Map<String, dynamic> _$$_MeetingsCreateRequestToJson(_$_MeetingsCreateRequest in
       'freq': instance.freq,
       'freq_days': instance.freqDays,
       'members': instance.members.map((e) => e.toJson()).toList(),
-      'owner_presence': instance.ownerPresence,
       'is_public': instance.isPublic,
       'is_outside': instance.isOutside,
+      'is_freq': instance.isFreq,
     };

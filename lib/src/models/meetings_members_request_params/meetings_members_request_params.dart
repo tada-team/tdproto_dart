@@ -9,7 +9,7 @@ part 'meetings_members_request_params.g.dart';
 class MeetingsMembersRequestParams with _$MeetingsMembersRequestParams {
   const factory MeetingsMembersRequestParams({
     /// .
-    @JsonKey(name: 'sections') List<String>? sections,
+    @JsonKey(name: 'uuid_sections') List<String>? uuidSections,
 
     /// .
     @JsonKey(name: 'presence') String? presence,
@@ -18,13 +18,13 @@ class MeetingsMembersRequestParams with _$MeetingsMembersRequestParams {
     @JsonKey(name: 'status') String? status,
 
     /// .
+    @JsonKey(name: 'meeting_id') required String meetingId,
+
+    /// .
     @JsonKey(name: 'limit') int? limit,
 
     /// .
     @JsonKey(name: 'offset') int? offset,
-
-    /// .
-    @Default(false) @JsonKey(name: 'is_required') bool? isRequired,
   }) = _MeetingsMembersRequestParams;
 
   factory MeetingsMembersRequestParams.fromJson(Map<String, dynamic> json) =>
