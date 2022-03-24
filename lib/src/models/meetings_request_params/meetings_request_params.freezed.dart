@@ -27,8 +27,6 @@ class _$MeetingsRequestParamsTearOff {
       @JsonKey(name: 'month') required int month,
       @JsonKey(name: 'day') int? day,
       @JsonKey(name: 'team_uuid') String? teamUuid,
-      @JsonKey(name: 'owners') List<String>? owners,
-      @JsonKey(name: 'owners_sections') List<String>? ownersSections,
       @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
@@ -42,8 +40,6 @@ class _$MeetingsRequestParamsTearOff {
       month: month,
       day: day,
       teamUuid: teamUuid,
-      owners: owners,
-      ownersSections: ownersSections,
       members: members,
       limit: limit,
       offset: offset,
@@ -83,14 +79,6 @@ mixin _$MeetingsRequestParams {
   /// .
   @JsonKey(name: 'team_uuid')
   String? get teamUuid => throw _privateConstructorUsedError;
-
-  /// .
-  @JsonKey(name: 'owners')
-  List<String>? get owners => throw _privateConstructorUsedError;
-
-  /// .
-  @JsonKey(name: 'owners_sections')
-  List<String>? get ownersSections => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'members')
@@ -135,8 +123,6 @@ abstract class $MeetingsRequestParamsCopyWith<$Res> {
       @JsonKey(name: 'month') int month,
       @JsonKey(name: 'day') int? day,
       @JsonKey(name: 'team_uuid') String? teamUuid,
-      @JsonKey(name: 'owners') List<String>? owners,
-      @JsonKey(name: 'owners_sections') List<String>? ownersSections,
       @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
@@ -161,8 +147,6 @@ class _$MeetingsRequestParamsCopyWithImpl<$Res> implements $MeetingsRequestParam
     Object? month = freezed,
     Object? day = freezed,
     Object? teamUuid = freezed,
-    Object? owners = freezed,
-    Object? ownersSections = freezed,
     Object? members = freezed,
     Object? limit = freezed,
     Object? offset = freezed,
@@ -192,14 +176,6 @@ class _$MeetingsRequestParamsCopyWithImpl<$Res> implements $MeetingsRequestParam
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
               as String?,
-      owners: owners == freezed
-          ? _value.owners
-          : owners // ignore: cast_nullable_to_non_nullable
-              as List<String>?,
-      ownersSections: ownersSections == freezed
-          ? _value.ownersSections
-          : ownersSections // ignore: cast_nullable_to_non_nullable
-              as List<String>?,
       members: members == freezed
           ? _value.members
           : members // ignore: cast_nullable_to_non_nullable
@@ -243,8 +219,6 @@ abstract class _$MeetingsRequestParamsCopyWith<$Res> implements $MeetingsRequest
       @JsonKey(name: 'month') int month,
       @JsonKey(name: 'day') int? day,
       @JsonKey(name: 'team_uuid') String? teamUuid,
-      @JsonKey(name: 'owners') List<String>? owners,
-      @JsonKey(name: 'owners_sections') List<String>? ownersSections,
       @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
@@ -270,8 +244,6 @@ class __$MeetingsRequestParamsCopyWithImpl<$Res> extends _$MeetingsRequestParams
     Object? month = freezed,
     Object? day = freezed,
     Object? teamUuid = freezed,
-    Object? owners = freezed,
-    Object? ownersSections = freezed,
     Object? members = freezed,
     Object? limit = freezed,
     Object? offset = freezed,
@@ -301,14 +273,6 @@ class __$MeetingsRequestParamsCopyWithImpl<$Res> extends _$MeetingsRequestParams
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
               as String?,
-      owners: owners == freezed
-          ? _value.owners
-          : owners // ignore: cast_nullable_to_non_nullable
-              as List<String>?,
-      ownersSections: ownersSections == freezed
-          ? _value.ownersSections
-          : ownersSections // ignore: cast_nullable_to_non_nullable
-              as List<String>?,
       members: members == freezed
           ? _value.members
           : members // ignore: cast_nullable_to_non_nullable
@@ -350,8 +314,6 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
       @JsonKey(name: 'month') required this.month,
       @JsonKey(name: 'day') this.day,
       @JsonKey(name: 'team_uuid') this.teamUuid,
-      @JsonKey(name: 'owners') this.owners,
-      @JsonKey(name: 'owners_sections') this.ownersSections,
       @JsonKey(name: 'members') this.members,
       @JsonKey(name: 'limit') this.limit,
       @JsonKey(name: 'offset') this.offset,
@@ -390,16 +352,6 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
   @override
 
   /// .
-  @JsonKey(name: 'owners')
-  final List<String>? owners;
-  @override
-
-  /// .
-  @JsonKey(name: 'owners_sections')
-  final List<String>? ownersSections;
-  @override
-
-  /// .
   @JsonKey(name: 'members')
   final List<String>? members;
   @override
@@ -435,7 +387,7 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
 
   @override
   String toString() {
-    return 'MeetingsRequestParams(personalAccountId: $personalAccountId, year: $year, month: $month, day: $day, teamUuid: $teamUuid, owners: $owners, ownersSections: $ownersSections, members: $members, limit: $limit, offset: $offset, isArchive: $isArchive, isFreq: $isFreq, isPublic: $isPublic, isOutside: $isOutside)';
+    return 'MeetingsRequestParams(personalAccountId: $personalAccountId, year: $year, month: $month, day: $day, teamUuid: $teamUuid, members: $members, limit: $limit, offset: $offset, isArchive: $isArchive, isFreq: $isFreq, isPublic: $isPublic, isOutside: $isOutside)';
   }
 
   @override
@@ -448,9 +400,6 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
             (identical(other.month, month) || const DeepCollectionEquality().equals(other.month, month)) &&
             (identical(other.day, day) || const DeepCollectionEquality().equals(other.day, day)) &&
             (identical(other.teamUuid, teamUuid) || const DeepCollectionEquality().equals(other.teamUuid, teamUuid)) &&
-            (identical(other.owners, owners) || const DeepCollectionEquality().equals(other.owners, owners)) &&
-            (identical(other.ownersSections, ownersSections) ||
-                const DeepCollectionEquality().equals(other.ownersSections, ownersSections)) &&
             (identical(other.members, members) || const DeepCollectionEquality().equals(other.members, members)) &&
             (identical(other.limit, limit) || const DeepCollectionEquality().equals(other.limit, limit)) &&
             (identical(other.offset, offset) || const DeepCollectionEquality().equals(other.offset, offset)) &&
@@ -470,8 +419,6 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
       const DeepCollectionEquality().hash(month) ^
       const DeepCollectionEquality().hash(day) ^
       const DeepCollectionEquality().hash(teamUuid) ^
-      const DeepCollectionEquality().hash(owners) ^
-      const DeepCollectionEquality().hash(ownersSections) ^
       const DeepCollectionEquality().hash(members) ^
       const DeepCollectionEquality().hash(limit) ^
       const DeepCollectionEquality().hash(offset) ^
@@ -498,8 +445,6 @@ abstract class _MeetingsRequestParams implements MeetingsRequestParams {
       @JsonKey(name: 'month') required int month,
       @JsonKey(name: 'day') int? day,
       @JsonKey(name: 'team_uuid') String? teamUuid,
-      @JsonKey(name: 'owners') List<String>? owners,
-      @JsonKey(name: 'owners_sections') List<String>? ownersSections,
       @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
@@ -535,16 +480,6 @@ abstract class _MeetingsRequestParams implements MeetingsRequestParams {
   /// .
   @JsonKey(name: 'team_uuid')
   String? get teamUuid => throw _privateConstructorUsedError;
-  @override
-
-  /// .
-  @JsonKey(name: 'owners')
-  List<String>? get owners => throw _privateConstructorUsedError;
-  @override
-
-  /// .
-  @JsonKey(name: 'owners_sections')
-  List<String>? get ownersSections => throw _privateConstructorUsedError;
   @override
 
   /// .

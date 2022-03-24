@@ -24,12 +24,6 @@ class MeetingsRequestParams with _$MeetingsRequestParams {
     @JsonKey(name: 'team_uuid') String? teamUuid,
 
     /// .
-    @JsonKey(name: 'owners') List<String>? owners,
-
-    /// .
-    @JsonKey(name: 'owners_sections') List<String>? ownersSections,
-
-    /// .
     @JsonKey(name: 'members') List<String>? members,
 
     /// .
