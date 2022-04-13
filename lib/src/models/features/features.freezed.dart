@@ -122,6 +122,8 @@ class _$FeaturesTearOff {
           List<OAuthService>? oAuthServices,
       @JsonKey(name: 'ice_servers')
           required List<ICEServer> iCEServers,
+      @JsonKey(name: 'ice_transport_policy')
+          String? iceTransportPolicy,
       @JsonKey(name: 'custom_server')
           required bool customServer,
       @JsonKey(name: 'installation_type')
@@ -279,6 +281,7 @@ class _$FeaturesTearOff {
       pinCodeWrongLimit: pinCodeWrongLimit,
       oAuthServices: oAuthServices,
       iCEServers: iCEServers,
+      iceTransportPolicy: iceTransportPolicy,
       customServer: customServer,
       installationType: installationType,
       installationTitle: installationTitle,
@@ -539,6 +542,10 @@ mixin _$Features {
   /// ICE servers for WebRTC.
   @JsonKey(name: 'ice_servers')
   List<ICEServer> get iCEServers => throw _privateConstructorUsedError;
+
+  /// IceTransportPolicy a ice transport policy.
+  @JsonKey(name: 'ice_transport_policy')
+  String? get iceTransportPolicy => throw _privateConstructorUsedError;
 
   /// True for premise installation.
   @JsonKey(name: 'custom_server')
@@ -851,6 +858,8 @@ abstract class $FeaturesCopyWith<$Res> {
           List<OAuthService>? oAuthServices,
       @JsonKey(name: 'ice_servers')
           List<ICEServer> iCEServers,
+      @JsonKey(name: 'ice_transport_policy')
+          String? iceTransportPolicy,
       @JsonKey(name: 'custom_server')
           bool customServer,
       @JsonKey(name: 'installation_type')
@@ -1022,6 +1031,7 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     Object? pinCodeWrongLimit = freezed,
     Object? oAuthServices = freezed,
     Object? iCEServers = freezed,
+    Object? iceTransportPolicy = freezed,
     Object? customServer = freezed,
     Object? installationType = freezed,
     Object? installationTitle = freezed,
@@ -1272,6 +1282,10 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
           ? _value.iCEServers
           : iCEServers // ignore: cast_nullable_to_non_nullable
               as List<ICEServer>,
+      iceTransportPolicy: iceTransportPolicy == freezed
+          ? _value.iceTransportPolicy
+          : iceTransportPolicy // ignore: cast_nullable_to_non_nullable
+              as String?,
       customServer: customServer == freezed
           ? _value.customServer
           : customServer // ignore: cast_nullable_to_non_nullable
@@ -1591,6 +1605,8 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
           List<OAuthService>? oAuthServices,
       @JsonKey(name: 'ice_servers')
           List<ICEServer> iCEServers,
+      @JsonKey(name: 'ice_transport_policy')
+          String? iceTransportPolicy,
       @JsonKey(name: 'custom_server')
           bool customServer,
       @JsonKey(name: 'installation_type')
@@ -1764,6 +1780,7 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
     Object? pinCodeWrongLimit = freezed,
     Object? oAuthServices = freezed,
     Object? iCEServers = freezed,
+    Object? iceTransportPolicy = freezed,
     Object? customServer = freezed,
     Object? installationType = freezed,
     Object? installationTitle = freezed,
@@ -2014,6 +2031,10 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
           ? _value.iCEServers
           : iCEServers // ignore: cast_nullable_to_non_nullable
               as List<ICEServer>,
+      iceTransportPolicy: iceTransportPolicy == freezed
+          ? _value.iceTransportPolicy
+          : iceTransportPolicy // ignore: cast_nullable_to_non_nullable
+              as String?,
       customServer: customServer == freezed
           ? _value.customServer
           : customServer // ignore: cast_nullable_to_non_nullable
@@ -2314,6 +2335,8 @@ class _$_Features implements _Features {
           this.oAuthServices,
       @JsonKey(name: 'ice_servers')
           required this.iCEServers,
+      @JsonKey(name: 'ice_transport_policy')
+          this.iceTransportPolicy,
       @JsonKey(name: 'custom_server')
           required this.customServer,
       @JsonKey(name: 'installation_type')
@@ -2675,6 +2698,11 @@ class _$_Features implements _Features {
   final List<ICEServer> iCEServers;
   @override
 
+  /// IceTransportPolicy a ice transport policy.
+  @JsonKey(name: 'ice_transport_policy')
+  final String? iceTransportPolicy;
+  @override
+
   /// True for premise installation.
   @JsonKey(name: 'custom_server')
   final bool customServer;
@@ -2926,7 +2954,7 @@ class _$_Features implements _Features {
 
   @override
   String toString() {
-    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, authByKerberos: $authByKerberos, reCaptchaEnabled: $reCaptchaEnabled, reCaptchaWebKeyV3: $reCaptchaWebKeyV3, reCaptchaWebKeyV2: $reCaptchaWebKeyV2, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, callsAudioEnabled: $callsAudioEnabled, callsVideoEnabled: $callsVideoEnabled, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, billing: $billing, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority)';
+    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, authByKerberos: $authByKerberos, reCaptchaEnabled: $reCaptchaEnabled, reCaptchaWebKeyV3: $reCaptchaWebKeyV3, reCaptchaWebKeyV2: $reCaptchaWebKeyV2, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, iceTransportPolicy: $iceTransportPolicy, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, callsAudioEnabled: $callsAudioEnabled, callsVideoEnabled: $callsVideoEnabled, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, billing: $billing, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority)';
   }
 
   @override
@@ -3026,8 +3054,9 @@ class _$_Features implements _Features {
                 const DeepCollectionEquality().equals(other.oAuthServices, oAuthServices)) &&
             (identical(other.iCEServers, iCEServers) ||
                 const DeepCollectionEquality().equals(other.iCEServers, iCEServers)) &&
-            (identical(other.customServer, customServer) ||
-                const DeepCollectionEquality().equals(other.customServer, customServer)) &&
+            (identical(other.iceTransportPolicy, iceTransportPolicy) ||
+                const DeepCollectionEquality().equals(other.iceTransportPolicy, iceTransportPolicy)) &&
+            (identical(other.customServer, customServer) || const DeepCollectionEquality().equals(other.customServer, customServer)) &&
             (identical(other.installationType, installationType) || const DeepCollectionEquality().equals(other.installationType, installationType)) &&
             (identical(other.installationTitle, installationTitle) || const DeepCollectionEquality().equals(other.installationTitle, installationTitle)) &&
             (identical(other.customAppIconName, customAppIconName) || const DeepCollectionEquality().equals(other.customAppIconName, customAppIconName)) &&
@@ -3130,6 +3159,7 @@ class _$_Features implements _Features {
       const DeepCollectionEquality().hash(pinCodeWrongLimit) ^
       const DeepCollectionEquality().hash(oAuthServices) ^
       const DeepCollectionEquality().hash(iCEServers) ^
+      const DeepCollectionEquality().hash(iceTransportPolicy) ^
       const DeepCollectionEquality().hash(customServer) ^
       const DeepCollectionEquality().hash(installationType) ^
       const DeepCollectionEquality().hash(installationTitle) ^
@@ -3291,6 +3321,8 @@ abstract class _Features implements Features {
           List<OAuthService>? oAuthServices,
       @JsonKey(name: 'ice_servers')
           required List<ICEServer> iCEServers,
+      @JsonKey(name: 'ice_transport_policy')
+          String? iceTransportPolicy,
       @JsonKey(name: 'custom_server')
           required bool customServer,
       @JsonKey(name: 'installation_type')
@@ -3650,6 +3682,11 @@ abstract class _Features implements Features {
   /// ICE servers for WebRTC.
   @JsonKey(name: 'ice_servers')
   List<ICEServer> get iCEServers => throw _privateConstructorUsedError;
+  @override
+
+  /// IceTransportPolicy a ice transport policy.
+  @JsonKey(name: 'ice_transport_policy')
+  String? get iceTransportPolicy => throw _privateConstructorUsedError;
   @override
 
   /// True for premise installation.

@@ -9,6 +9,12 @@ part 'meetings_members_request_params.g.dart';
 class MeetingsMembersRequestParams with _$MeetingsMembersRequestParams {
   const factory MeetingsMembersRequestParams({
     /// .
+    @JsonKey(name: 'meeting_id') required String meetingId,
+
+    /// .
+    @JsonKey(name: 'team_uuid') required String teamUuid,
+
+    /// .
     @JsonKey(name: 'uuid_sections') List<String>? uuidSections,
 
     /// .
@@ -16,9 +22,6 @@ class MeetingsMembersRequestParams with _$MeetingsMembersRequestParams {
 
     /// .
     @JsonKey(name: 'status') String? status,
-
-    /// .
-    @JsonKey(name: 'meeting_id') required String meetingId,
 
     /// .
     @JsonKey(name: 'limit') int? limit,

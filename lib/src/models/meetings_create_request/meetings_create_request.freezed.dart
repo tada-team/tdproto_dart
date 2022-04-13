@@ -22,19 +22,25 @@ class _$MeetingsCreateRequestTearOff {
   const _$MeetingsCreateRequestTearOff();
 
   _MeetingsCreateRequest call(
-      {@JsonKey(name: 'team_uuid') String? teamUuid,
+      {@JsonKey(name: 'owner_uuid') required String ownerUuid,
+      @JsonKey(name: 'team_uuid') required String teamUuid,
+      @JsonKey(name: 'title') String? title,
+      @JsonKey(name: 'description') String? description,
       @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
-      @JsonKey(name: 'end_at') required String endAt,
+      @JsonKey(name: 'duration') required int duration,
       @JsonKey(name: 'freq') int? freq,
       @JsonKey(name: 'freq_days') List<int>? freqDays,
-      @JsonKey(name: 'members') required List<MeetingsCreateRequestMembers> members,
+      @JsonKey(name: 'members') required List<MeetingsMembersCreateParams> members,
       @JsonKey(name: 'is_public') bool? isPublic = false,
       @JsonKey(name: 'is_outside') bool? isOutside = false,
       @JsonKey(name: 'is_freq') required bool isFreq}) {
     return _MeetingsCreateRequest(
+      ownerUuid: ownerUuid,
       teamUuid: teamUuid,
+      title: title,
+      description: description,
       startAt: startAt,
-      endAt: endAt,
+      duration: duration,
       freq: freq,
       freqDays: freqDays,
       members: members,
@@ -55,8 +61,20 @@ const $MeetingsCreateRequest = _$MeetingsCreateRequestTearOff();
 /// @nodoc
 mixin _$MeetingsCreateRequest {
   /// .
+  @JsonKey(name: 'owner_uuid')
+  String get ownerUuid => throw _privateConstructorUsedError;
+
+  /// .
   @JsonKey(name: 'team_uuid')
-  String? get teamUuid => throw _privateConstructorUsedError;
+  String get teamUuid => throw _privateConstructorUsedError;
+
+  /// .
+  @JsonKey(name: 'title')
+  String? get title => throw _privateConstructorUsedError;
+
+  /// .
+  @JsonKey(name: 'description')
+  String? get description => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'start_at')
@@ -64,8 +82,8 @@ mixin _$MeetingsCreateRequest {
   DateTime get startAt => throw _privateConstructorUsedError;
 
   /// .
-  @JsonKey(name: 'end_at')
-  String get endAt => throw _privateConstructorUsedError;
+  @JsonKey(name: 'duration')
+  int get duration => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'freq')
@@ -77,7 +95,7 @@ mixin _$MeetingsCreateRequest {
 
   /// .
   @JsonKey(name: 'members')
-  List<MeetingsCreateRequestMembers> get members => throw _privateConstructorUsedError;
+  List<MeetingsMembersCreateParams> get members => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'is_public')
@@ -101,12 +119,15 @@ abstract class $MeetingsCreateRequestCopyWith<$Res> {
   factory $MeetingsCreateRequestCopyWith(MeetingsCreateRequest value, $Res Function(MeetingsCreateRequest) then) =
       _$MeetingsCreateRequestCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'team_uuid') String? teamUuid,
+      {@JsonKey(name: 'owner_uuid') String ownerUuid,
+      @JsonKey(name: 'team_uuid') String teamUuid,
+      @JsonKey(name: 'title') String? title,
+      @JsonKey(name: 'description') String? description,
       @JsonKey(name: 'start_at') @DateTimeConverter() DateTime startAt,
-      @JsonKey(name: 'end_at') String endAt,
+      @JsonKey(name: 'duration') int duration,
       @JsonKey(name: 'freq') int? freq,
       @JsonKey(name: 'freq_days') List<int>? freqDays,
-      @JsonKey(name: 'members') List<MeetingsCreateRequestMembers> members,
+      @JsonKey(name: 'members') List<MeetingsMembersCreateParams> members,
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'is_freq') bool isFreq});
@@ -122,9 +143,12 @@ class _$MeetingsCreateRequestCopyWithImpl<$Res> implements $MeetingsCreateReques
 
   @override
   $Res call({
+    Object? ownerUuid = freezed,
     Object? teamUuid = freezed,
+    Object? title = freezed,
+    Object? description = freezed,
     Object? startAt = freezed,
-    Object? endAt = freezed,
+    Object? duration = freezed,
     Object? freq = freezed,
     Object? freqDays = freezed,
     Object? members = freezed,
@@ -133,18 +157,30 @@ class _$MeetingsCreateRequestCopyWithImpl<$Res> implements $MeetingsCreateReques
     Object? isFreq = freezed,
   }) {
     return _then(_value.copyWith(
+      ownerUuid: ownerUuid == freezed
+          ? _value.ownerUuid
+          : ownerUuid // ignore: cast_nullable_to_non_nullable
+              as String,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
               as String?,
       startAt: startAt == freezed
           ? _value.startAt
           : startAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      endAt: endAt == freezed
-          ? _value.endAt
-          : endAt // ignore: cast_nullable_to_non_nullable
-              as String,
+      duration: duration == freezed
+          ? _value.duration
+          : duration // ignore: cast_nullable_to_non_nullable
+              as int,
       freq: freq == freezed
           ? _value.freq
           : freq // ignore: cast_nullable_to_non_nullable
@@ -156,7 +192,7 @@ class _$MeetingsCreateRequestCopyWithImpl<$Res> implements $MeetingsCreateReques
       members: members == freezed
           ? _value.members
           : members // ignore: cast_nullable_to_non_nullable
-              as List<MeetingsCreateRequestMembers>,
+              as List<MeetingsMembersCreateParams>,
       isPublic: isPublic == freezed
           ? _value.isPublic
           : isPublic // ignore: cast_nullable_to_non_nullable
@@ -179,12 +215,15 @@ abstract class _$MeetingsCreateRequestCopyWith<$Res> implements $MeetingsCreateR
       __$MeetingsCreateRequestCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'team_uuid') String? teamUuid,
+      {@JsonKey(name: 'owner_uuid') String ownerUuid,
+      @JsonKey(name: 'team_uuid') String teamUuid,
+      @JsonKey(name: 'title') String? title,
+      @JsonKey(name: 'description') String? description,
       @JsonKey(name: 'start_at') @DateTimeConverter() DateTime startAt,
-      @JsonKey(name: 'end_at') String endAt,
+      @JsonKey(name: 'duration') int duration,
       @JsonKey(name: 'freq') int? freq,
       @JsonKey(name: 'freq_days') List<int>? freqDays,
-      @JsonKey(name: 'members') List<MeetingsCreateRequestMembers> members,
+      @JsonKey(name: 'members') List<MeetingsMembersCreateParams> members,
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'is_freq') bool isFreq});
@@ -201,9 +240,12 @@ class __$MeetingsCreateRequestCopyWithImpl<$Res> extends _$MeetingsCreateRequest
 
   @override
   $Res call({
+    Object? ownerUuid = freezed,
     Object? teamUuid = freezed,
+    Object? title = freezed,
+    Object? description = freezed,
     Object? startAt = freezed,
-    Object? endAt = freezed,
+    Object? duration = freezed,
     Object? freq = freezed,
     Object? freqDays = freezed,
     Object? members = freezed,
@@ -212,18 +254,30 @@ class __$MeetingsCreateRequestCopyWithImpl<$Res> extends _$MeetingsCreateRequest
     Object? isFreq = freezed,
   }) {
     return _then(_MeetingsCreateRequest(
+      ownerUuid: ownerUuid == freezed
+          ? _value.ownerUuid
+          : ownerUuid // ignore: cast_nullable_to_non_nullable
+              as String,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
               as String?,
       startAt: startAt == freezed
           ? _value.startAt
           : startAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      endAt: endAt == freezed
-          ? _value.endAt
-          : endAt // ignore: cast_nullable_to_non_nullable
-              as String,
+      duration: duration == freezed
+          ? _value.duration
+          : duration // ignore: cast_nullable_to_non_nullable
+              as int,
       freq: freq == freezed
           ? _value.freq
           : freq // ignore: cast_nullable_to_non_nullable
@@ -235,7 +289,7 @@ class __$MeetingsCreateRequestCopyWithImpl<$Res> extends _$MeetingsCreateRequest
       members: members == freezed
           ? _value.members
           : members // ignore: cast_nullable_to_non_nullable
-              as List<MeetingsCreateRequestMembers>,
+              as List<MeetingsMembersCreateParams>,
       isPublic: isPublic == freezed
           ? _value.isPublic
           : isPublic // ignore: cast_nullable_to_non_nullable
@@ -256,9 +310,12 @@ class __$MeetingsCreateRequestCopyWithImpl<$Res> extends _$MeetingsCreateRequest
 @JsonSerializable()
 class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
   const _$_MeetingsCreateRequest(
-      {@JsonKey(name: 'team_uuid') this.teamUuid,
+      {@JsonKey(name: 'owner_uuid') required this.ownerUuid,
+      @JsonKey(name: 'team_uuid') required this.teamUuid,
+      @JsonKey(name: 'title') this.title,
+      @JsonKey(name: 'description') this.description,
       @JsonKey(name: 'start_at') @DateTimeConverter() required this.startAt,
-      @JsonKey(name: 'end_at') required this.endAt,
+      @JsonKey(name: 'duration') required this.duration,
       @JsonKey(name: 'freq') this.freq,
       @JsonKey(name: 'freq_days') this.freqDays,
       @JsonKey(name: 'members') required this.members,
@@ -271,8 +328,23 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
   @override
 
   /// .
+  @JsonKey(name: 'owner_uuid')
+  final String ownerUuid;
+  @override
+
+  /// .
   @JsonKey(name: 'team_uuid')
-  final String? teamUuid;
+  final String teamUuid;
+  @override
+
+  /// .
+  @JsonKey(name: 'title')
+  final String? title;
+  @override
+
+  /// .
+  @JsonKey(name: 'description')
+  final String? description;
   @override
 
   /// .
@@ -282,8 +354,8 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
   @override
 
   /// .
-  @JsonKey(name: 'end_at')
-  final String endAt;
+  @JsonKey(name: 'duration')
+  final int duration;
   @override
 
   /// .
@@ -298,7 +370,7 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
 
   /// .
   @JsonKey(name: 'members')
-  final List<MeetingsCreateRequestMembers> members;
+  final List<MeetingsMembersCreateParams> members;
   @override
 
   /// .
@@ -317,16 +389,21 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
 
   @override
   String toString() {
-    return 'MeetingsCreateRequest(teamUuid: $teamUuid, startAt: $startAt, endAt: $endAt, freq: $freq, freqDays: $freqDays, members: $members, isPublic: $isPublic, isOutside: $isOutside, isFreq: $isFreq)';
+    return 'MeetingsCreateRequest(ownerUuid: $ownerUuid, teamUuid: $teamUuid, title: $title, description: $description, startAt: $startAt, duration: $duration, freq: $freq, freqDays: $freqDays, members: $members, isPublic: $isPublic, isOutside: $isOutside, isFreq: $isFreq)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _MeetingsCreateRequest &&
+            (identical(other.ownerUuid, ownerUuid) ||
+                const DeepCollectionEquality().equals(other.ownerUuid, ownerUuid)) &&
             (identical(other.teamUuid, teamUuid) || const DeepCollectionEquality().equals(other.teamUuid, teamUuid)) &&
+            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
+            (identical(other.description, description) ||
+                const DeepCollectionEquality().equals(other.description, description)) &&
             (identical(other.startAt, startAt) || const DeepCollectionEquality().equals(other.startAt, startAt)) &&
-            (identical(other.endAt, endAt) || const DeepCollectionEquality().equals(other.endAt, endAt)) &&
+            (identical(other.duration, duration) || const DeepCollectionEquality().equals(other.duration, duration)) &&
             (identical(other.freq, freq) || const DeepCollectionEquality().equals(other.freq, freq)) &&
             (identical(other.freqDays, freqDays) || const DeepCollectionEquality().equals(other.freqDays, freqDays)) &&
             (identical(other.members, members) || const DeepCollectionEquality().equals(other.members, members)) &&
@@ -339,9 +416,12 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
   @override
   int get hashCode =>
       runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(ownerUuid) ^
       const DeepCollectionEquality().hash(teamUuid) ^
+      const DeepCollectionEquality().hash(title) ^
+      const DeepCollectionEquality().hash(description) ^
       const DeepCollectionEquality().hash(startAt) ^
-      const DeepCollectionEquality().hash(endAt) ^
+      const DeepCollectionEquality().hash(duration) ^
       const DeepCollectionEquality().hash(freq) ^
       const DeepCollectionEquality().hash(freqDays) ^
       const DeepCollectionEquality().hash(members) ^
@@ -362,12 +442,15 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
 
 abstract class _MeetingsCreateRequest implements MeetingsCreateRequest {
   const factory _MeetingsCreateRequest(
-      {@JsonKey(name: 'team_uuid') String? teamUuid,
+      {@JsonKey(name: 'owner_uuid') required String ownerUuid,
+      @JsonKey(name: 'team_uuid') required String teamUuid,
+      @JsonKey(name: 'title') String? title,
+      @JsonKey(name: 'description') String? description,
       @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
-      @JsonKey(name: 'end_at') required String endAt,
+      @JsonKey(name: 'duration') required int duration,
       @JsonKey(name: 'freq') int? freq,
       @JsonKey(name: 'freq_days') List<int>? freqDays,
-      @JsonKey(name: 'members') required List<MeetingsCreateRequestMembers> members,
+      @JsonKey(name: 'members') required List<MeetingsMembersCreateParams> members,
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'is_freq') required bool isFreq}) = _$_MeetingsCreateRequest;
@@ -377,8 +460,23 @@ abstract class _MeetingsCreateRequest implements MeetingsCreateRequest {
   @override
 
   /// .
+  @JsonKey(name: 'owner_uuid')
+  String get ownerUuid => throw _privateConstructorUsedError;
+  @override
+
+  /// .
   @JsonKey(name: 'team_uuid')
-  String? get teamUuid => throw _privateConstructorUsedError;
+  String get teamUuid => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'title')
+  String? get title => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'description')
+  String? get description => throw _privateConstructorUsedError;
   @override
 
   /// .
@@ -388,8 +486,8 @@ abstract class _MeetingsCreateRequest implements MeetingsCreateRequest {
   @override
 
   /// .
-  @JsonKey(name: 'end_at')
-  String get endAt => throw _privateConstructorUsedError;
+  @JsonKey(name: 'duration')
+  int get duration => throw _privateConstructorUsedError;
   @override
 
   /// .
@@ -404,7 +502,7 @@ abstract class _MeetingsCreateRequest implements MeetingsCreateRequest {
 
   /// .
   @JsonKey(name: 'members')
-  List<MeetingsCreateRequestMembers> get members => throw _privateConstructorUsedError;
+  List<MeetingsMembersCreateParams> get members => throw _privateConstructorUsedError;
   @override
 
   /// .

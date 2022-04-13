@@ -9,6 +9,9 @@ part 'meetings_delete_request_params.g.dart';
 class MeetingsDeleteRequestParams with _$MeetingsDeleteRequestParams {
   const factory MeetingsDeleteRequestParams({
     /// .
+    @JsonKey(name: 'team_uuid') required String teamUuid,
+
+    /// .
     @JsonKey(name: 'date') @DateTimeConverter() DateTime? date,
   }) = _MeetingsDeleteRequestParams;
 

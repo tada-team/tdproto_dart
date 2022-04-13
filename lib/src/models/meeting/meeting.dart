@@ -15,16 +15,28 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'team_uuid') required String teamUuid,
 
     /// .
-    @JsonKey(name: 'chat_uuid') required String chatUuid,
+    @JsonKey(name: 'group_uuid') required String groupUuid,
+
+    /// .
+    @JsonKey(name: 'owner_uuid') required String ownerUuid,
+
+    /// .
+    @JsonKey(name: 'personal_account_id') String? personalAccountId,
+
+    /// .
+    @JsonKey(name: 'title') String? title,
+
+    /// .
+    @JsonKey(name: 'description') String? description,
 
     /// .
     @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
 
     /// .
-    @JsonKey(name: 'end_at') @DateTimeConverter() required DateTime endAt,
+    @JsonKey(name: 'duration') required int duration,
 
     /// .
-    @JsonKey(name: 'personal_account_id') required String personalAccountId,
+    @JsonKey(name: 'is_freq') required bool isFreq,
 
     /// .
     @JsonKey(name: 'freq_days') List<int>? freqDays,
@@ -54,7 +66,7 @@ class Meeting with _$Meeting {
     @Default(false) @JsonKey(name: 'can_join') bool? canJoin,
 
     /// .
-    @JsonKey(name: 'is_freq') required bool isFreq,
+    @JsonKey(name: 'meeting_members') List<MeetingMember>? members,
   }) = _Meeting;
 
   factory Meeting.fromJson(Map<String, dynamic> json) => _$MeetingFromJson(json);

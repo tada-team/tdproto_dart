@@ -9,7 +9,7 @@ part 'meetings_request_params.g.dart';
 class MeetingsRequestParams with _$MeetingsRequestParams {
   const factory MeetingsRequestParams({
     /// .
-    @JsonKey(name: 'personal_account_id') required String personalAccountId,
+    @JsonKey(name: 'team_uuid') required String teamUuid,
 
     /// .
     @JsonKey(name: 'year') required int year,
@@ -19,9 +19,6 @@ class MeetingsRequestParams with _$MeetingsRequestParams {
 
     /// .
     @JsonKey(name: 'day') int? day,
-
-    /// .
-    @JsonKey(name: 'team_uuid') String? teamUuid,
 
     /// .
     @JsonKey(name: 'members') List<String>? members,

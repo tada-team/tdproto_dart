@@ -22,10 +22,13 @@ class _$MeetingsMembersUpdateRequestTearOff {
   const _$MeetingsMembersUpdateRequestTearOff();
 
   _MeetingsMembersUpdateRequest call(
-      {@JsonKey(name: 'status') String? status, @JsonKey(name: 'is_required') bool? isRequired = false}) {
+      {@JsonKey(name: 'status') String? status,
+      @JsonKey(name: 'is_required') bool? isRequired = false,
+      @JsonKey(name: 'team_uuid') String? teamUuid}) {
     return _MeetingsMembersUpdateRequest(
       status: status,
       isRequired: isRequired,
+      teamUuid: teamUuid,
     );
   }
 
@@ -47,6 +50,10 @@ mixin _$MeetingsMembersUpdateRequest {
   @JsonKey(name: 'is_required')
   bool? get isRequired => throw _privateConstructorUsedError;
 
+  /// .
+  @JsonKey(name: 'team_uuid')
+  String? get teamUuid => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $MeetingsMembersUpdateRequestCopyWith<MeetingsMembersUpdateRequest> get copyWith =>
@@ -58,7 +65,10 @@ abstract class $MeetingsMembersUpdateRequestCopyWith<$Res> {
   factory $MeetingsMembersUpdateRequestCopyWith(
           MeetingsMembersUpdateRequest value, $Res Function(MeetingsMembersUpdateRequest) then) =
       _$MeetingsMembersUpdateRequestCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'status') String? status, @JsonKey(name: 'is_required') bool? isRequired});
+  $Res call(
+      {@JsonKey(name: 'status') String? status,
+      @JsonKey(name: 'is_required') bool? isRequired,
+      @JsonKey(name: 'team_uuid') String? teamUuid});
 }
 
 /// @nodoc
@@ -73,6 +83,7 @@ class _$MeetingsMembersUpdateRequestCopyWithImpl<$Res> implements $MeetingsMembe
   $Res call({
     Object? status = freezed,
     Object? isRequired = freezed,
+    Object? teamUuid = freezed,
   }) {
     return _then(_value.copyWith(
       status: status == freezed
@@ -83,6 +94,10 @@ class _$MeetingsMembersUpdateRequestCopyWithImpl<$Res> implements $MeetingsMembe
           ? _value.isRequired
           : isRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
+      teamUuid: teamUuid == freezed
+          ? _value.teamUuid
+          : teamUuid // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -93,7 +108,10 @@ abstract class _$MeetingsMembersUpdateRequestCopyWith<$Res> implements $Meetings
           _MeetingsMembersUpdateRequest value, $Res Function(_MeetingsMembersUpdateRequest) then) =
       __$MeetingsMembersUpdateRequestCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'status') String? status, @JsonKey(name: 'is_required') bool? isRequired});
+  $Res call(
+      {@JsonKey(name: 'status') String? status,
+      @JsonKey(name: 'is_required') bool? isRequired,
+      @JsonKey(name: 'team_uuid') String? teamUuid});
 }
 
 /// @nodoc
@@ -110,6 +128,7 @@ class __$MeetingsMembersUpdateRequestCopyWithImpl<$Res> extends _$MeetingsMember
   $Res call({
     Object? status = freezed,
     Object? isRequired = freezed,
+    Object? teamUuid = freezed,
   }) {
     return _then(_MeetingsMembersUpdateRequest(
       status: status == freezed
@@ -120,6 +139,10 @@ class __$MeetingsMembersUpdateRequestCopyWithImpl<$Res> extends _$MeetingsMember
           ? _value.isRequired
           : isRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
+      teamUuid: teamUuid == freezed
+          ? _value.teamUuid
+          : teamUuid // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -128,7 +151,9 @@ class __$MeetingsMembersUpdateRequestCopyWithImpl<$Res> extends _$MeetingsMember
 @JsonSerializable()
 class _$_MeetingsMembersUpdateRequest implements _MeetingsMembersUpdateRequest {
   const _$_MeetingsMembersUpdateRequest(
-      {@JsonKey(name: 'status') this.status, @JsonKey(name: 'is_required') this.isRequired = false});
+      {@JsonKey(name: 'status') this.status,
+      @JsonKey(name: 'is_required') this.isRequired = false,
+      @JsonKey(name: 'team_uuid') this.teamUuid});
 
   factory _$_MeetingsMembersUpdateRequest.fromJson(Map<String, dynamic> json) =>
       _$$_MeetingsMembersUpdateRequestFromJson(json);
@@ -143,10 +168,15 @@ class _$_MeetingsMembersUpdateRequest implements _MeetingsMembersUpdateRequest {
   /// .
   @JsonKey(name: 'is_required')
   final bool? isRequired;
+  @override
+
+  /// .
+  @JsonKey(name: 'team_uuid')
+  final String? teamUuid;
 
   @override
   String toString() {
-    return 'MeetingsMembersUpdateRequest(status: $status, isRequired: $isRequired)';
+    return 'MeetingsMembersUpdateRequest(status: $status, isRequired: $isRequired, teamUuid: $teamUuid)';
   }
 
   @override
@@ -155,14 +185,16 @@ class _$_MeetingsMembersUpdateRequest implements _MeetingsMembersUpdateRequest {
         (other is _MeetingsMembersUpdateRequest &&
             (identical(other.status, status) || const DeepCollectionEquality().equals(other.status, status)) &&
             (identical(other.isRequired, isRequired) ||
-                const DeepCollectionEquality().equals(other.isRequired, isRequired)));
+                const DeepCollectionEquality().equals(other.isRequired, isRequired)) &&
+            (identical(other.teamUuid, teamUuid) || const DeepCollectionEquality().equals(other.teamUuid, teamUuid)));
   }
 
   @override
   int get hashCode =>
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(status) ^
-      const DeepCollectionEquality().hash(isRequired);
+      const DeepCollectionEquality().hash(isRequired) ^
+      const DeepCollectionEquality().hash(teamUuid);
 
   @JsonKey(ignore: true)
   @override
@@ -178,7 +210,8 @@ class _$_MeetingsMembersUpdateRequest implements _MeetingsMembersUpdateRequest {
 abstract class _MeetingsMembersUpdateRequest implements MeetingsMembersUpdateRequest {
   const factory _MeetingsMembersUpdateRequest(
       {@JsonKey(name: 'status') String? status,
-      @JsonKey(name: 'is_required') bool? isRequired}) = _$_MeetingsMembersUpdateRequest;
+      @JsonKey(name: 'is_required') bool? isRequired,
+      @JsonKey(name: 'team_uuid') String? teamUuid}) = _$_MeetingsMembersUpdateRequest;
 
   factory _MeetingsMembersUpdateRequest.fromJson(Map<String, dynamic> json) = _$_MeetingsMembersUpdateRequest.fromJson;
 
@@ -192,6 +225,11 @@ abstract class _MeetingsMembersUpdateRequest implements MeetingsMembersUpdateReq
   /// .
   @JsonKey(name: 'is_required')
   bool? get isRequired => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'team_uuid')
+  String? get teamUuid => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MeetingsMembersUpdateRequestCopyWith<_MeetingsMembersUpdateRequest> get copyWith =>

@@ -7,7 +7,8 @@ part of 'meeting_member.dart';
 // **************************************************************************
 
 _$_MeetingMember _$$_MeetingMemberFromJson(Map<String, dynamic> json) => _$_MeetingMember(
-      meetingId: json['meeting_id'] as String?,
+      meetingId: json['meeting_id'] as String,
+      chatUuid: json['chat_uuid'] as String,
       contact: Contact.fromJson(json['contact'] as Map<String, dynamic>),
       presence: json['presence'] as String,
       status: json['status'] as String,
@@ -19,6 +20,7 @@ _$_MeetingMember _$$_MeetingMemberFromJson(Map<String, dynamic> json) => _$_Meet
 
 Map<String, dynamic> _$$_MeetingMemberToJson(_$_MeetingMember instance) => <String, dynamic>{
       'meeting_id': instance.meetingId,
+      'chat_uuid': instance.chatUuid,
       'contact': instance.contact.toJson(),
       'presence': instance.presence,
       'status': instance.status,

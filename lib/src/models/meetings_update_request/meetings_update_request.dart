@@ -12,16 +12,16 @@ class MeetingsUpdateRequest with _$MeetingsUpdateRequest {
     @JsonKey(name: 'meeting_id') required String meetingId,
 
     /// .
+    @JsonKey(name: 'team_uuid') String? teamUuid,
+
+    /// .
     @JsonKey(name: 'active_from') String? activeFrom,
 
     /// .
     @JsonKey(name: 'start_at') String? startAt,
 
     /// .
-    @JsonKey(name: 'end_at') String? endAt,
-
-    /// .
-    @JsonKey(name: 'team_uuid') String? teamUuid,
+    @JsonKey(name: 'duration') int? duration,
 
     /// .
     @JsonKey(name: 'freq') int? freq,

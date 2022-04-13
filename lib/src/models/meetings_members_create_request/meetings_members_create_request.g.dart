@@ -8,14 +8,14 @@ part of 'meetings_members_create_request.dart';
 
 _$_MeetingsMembersCreateRequest _$$_MeetingsMembersCreateRequestFromJson(Map<String, dynamic> json) =>
     _$_MeetingsMembersCreateRequest(
-      jid: json['jid'] as String,
-      status: json['status'] as String?,
-      isRequired: json['is_required'] as bool? ?? false,
+      members: (json['members'] as List<dynamic>)
+          .map((e) => MeetingsMembersCreateParams.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      teamUuid: json['team_uuid'] as String,
     );
 
 Map<String, dynamic> _$$_MeetingsMembersCreateRequestToJson(_$_MeetingsMembersCreateRequest instance) =>
     <String, dynamic>{
-      'jid': instance.jid,
-      'status': instance.status,
-      'is_required': instance.isRequired,
+      'members': instance.members.map((e) => e.toJson()).toList(),
+      'team_uuid': instance.teamUuid,
     };

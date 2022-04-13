@@ -22,13 +22,11 @@ class _$MeetingsMembersCreateRequestTearOff {
   const _$MeetingsMembersCreateRequestTearOff();
 
   _MeetingsMembersCreateRequest call(
-      {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'status') String? status,
-      @JsonKey(name: 'is_required') bool? isRequired = false}) {
+      {@JsonKey(name: 'members') required List<MeetingsMembersCreateParams> members,
+      @JsonKey(name: 'team_uuid') required String teamUuid}) {
     return _MeetingsMembersCreateRequest(
-      jid: jid,
-      status: status,
-      isRequired: isRequired,
+      members: members,
+      teamUuid: teamUuid,
     );
   }
 
@@ -43,16 +41,12 @@ const $MeetingsMembersCreateRequest = _$MeetingsMembersCreateRequestTearOff();
 /// @nodoc
 mixin _$MeetingsMembersCreateRequest {
   /// .
-  @JsonKey(name: 'jid')
-  String get jid => throw _privateConstructorUsedError;
+  @JsonKey(name: 'members')
+  List<MeetingsMembersCreateParams> get members => throw _privateConstructorUsedError;
 
   /// .
-  @JsonKey(name: 'status')
-  String? get status => throw _privateConstructorUsedError;
-
-  /// .
-  @JsonKey(name: 'is_required')
-  bool? get isRequired => throw _privateConstructorUsedError;
+  @JsonKey(name: 'team_uuid')
+  String get teamUuid => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -66,9 +60,8 @@ abstract class $MeetingsMembersCreateRequestCopyWith<$Res> {
           MeetingsMembersCreateRequest value, $Res Function(MeetingsMembersCreateRequest) then) =
       _$MeetingsMembersCreateRequestCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'status') String? status,
-      @JsonKey(name: 'is_required') bool? isRequired});
+      {@JsonKey(name: 'members') List<MeetingsMembersCreateParams> members,
+      @JsonKey(name: 'team_uuid') String teamUuid});
 }
 
 /// @nodoc
@@ -81,23 +74,18 @@ class _$MeetingsMembersCreateRequestCopyWithImpl<$Res> implements $MeetingsMembe
 
   @override
   $Res call({
-    Object? jid = freezed,
-    Object? status = freezed,
-    Object? isRequired = freezed,
+    Object? members = freezed,
+    Object? teamUuid = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed
-          ? _value.jid
-          : jid // ignore: cast_nullable_to_non_nullable
+      members: members == freezed
+          ? _value.members
+          : members // ignore: cast_nullable_to_non_nullable
+              as List<MeetingsMembersCreateParams>,
+      teamUuid: teamUuid == freezed
+          ? _value.teamUuid
+          : teamUuid // ignore: cast_nullable_to_non_nullable
               as String,
-      status: status == freezed
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as String?,
-      isRequired: isRequired == freezed
-          ? _value.isRequired
-          : isRequired // ignore: cast_nullable_to_non_nullable
-              as bool?,
     ));
   }
 }
@@ -109,9 +97,8 @@ abstract class _$MeetingsMembersCreateRequestCopyWith<$Res> implements $Meetings
       __$MeetingsMembersCreateRequestCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'status') String? status,
-      @JsonKey(name: 'is_required') bool? isRequired});
+      {@JsonKey(name: 'members') List<MeetingsMembersCreateParams> members,
+      @JsonKey(name: 'team_uuid') String teamUuid});
 }
 
 /// @nodoc
@@ -126,23 +113,18 @@ class __$MeetingsMembersCreateRequestCopyWithImpl<$Res> extends _$MeetingsMember
 
   @override
   $Res call({
-    Object? jid = freezed,
-    Object? status = freezed,
-    Object? isRequired = freezed,
+    Object? members = freezed,
+    Object? teamUuid = freezed,
   }) {
     return _then(_MeetingsMembersCreateRequest(
-      jid: jid == freezed
-          ? _value.jid
-          : jid // ignore: cast_nullable_to_non_nullable
+      members: members == freezed
+          ? _value.members
+          : members // ignore: cast_nullable_to_non_nullable
+              as List<MeetingsMembersCreateParams>,
+      teamUuid: teamUuid == freezed
+          ? _value.teamUuid
+          : teamUuid // ignore: cast_nullable_to_non_nullable
               as String,
-      status: status == freezed
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as String?,
-      isRequired: isRequired == freezed
-          ? _value.isRequired
-          : isRequired // ignore: cast_nullable_to_non_nullable
-              as bool?,
     ));
   }
 }
@@ -151,9 +133,7 @@ class __$MeetingsMembersCreateRequestCopyWithImpl<$Res> extends _$MeetingsMember
 @JsonSerializable()
 class _$_MeetingsMembersCreateRequest implements _MeetingsMembersCreateRequest {
   const _$_MeetingsMembersCreateRequest(
-      {@JsonKey(name: 'jid') required this.jid,
-      @JsonKey(name: 'status') this.status,
-      @JsonKey(name: 'is_required') this.isRequired = false});
+      {@JsonKey(name: 'members') required this.members, @JsonKey(name: 'team_uuid') required this.teamUuid});
 
   factory _$_MeetingsMembersCreateRequest.fromJson(Map<String, dynamic> json) =>
       _$$_MeetingsMembersCreateRequestFromJson(json);
@@ -161,40 +141,32 @@ class _$_MeetingsMembersCreateRequest implements _MeetingsMembersCreateRequest {
   @override
 
   /// .
-  @JsonKey(name: 'jid')
-  final String jid;
+  @JsonKey(name: 'members')
+  final List<MeetingsMembersCreateParams> members;
   @override
 
   /// .
-  @JsonKey(name: 'status')
-  final String? status;
-  @override
-
-  /// .
-  @JsonKey(name: 'is_required')
-  final bool? isRequired;
+  @JsonKey(name: 'team_uuid')
+  final String teamUuid;
 
   @override
   String toString() {
-    return 'MeetingsMembersCreateRequest(jid: $jid, status: $status, isRequired: $isRequired)';
+    return 'MeetingsMembersCreateRequest(members: $members, teamUuid: $teamUuid)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _MeetingsMembersCreateRequest &&
-            (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
-            (identical(other.status, status) || const DeepCollectionEquality().equals(other.status, status)) &&
-            (identical(other.isRequired, isRequired) ||
-                const DeepCollectionEquality().equals(other.isRequired, isRequired)));
+            (identical(other.members, members) || const DeepCollectionEquality().equals(other.members, members)) &&
+            (identical(other.teamUuid, teamUuid) || const DeepCollectionEquality().equals(other.teamUuid, teamUuid)));
   }
 
   @override
   int get hashCode =>
       runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(jid) ^
-      const DeepCollectionEquality().hash(status) ^
-      const DeepCollectionEquality().hash(isRequired);
+      const DeepCollectionEquality().hash(members) ^
+      const DeepCollectionEquality().hash(teamUuid);
 
   @JsonKey(ignore: true)
   @override
@@ -209,27 +181,21 @@ class _$_MeetingsMembersCreateRequest implements _MeetingsMembersCreateRequest {
 
 abstract class _MeetingsMembersCreateRequest implements MeetingsMembersCreateRequest {
   const factory _MeetingsMembersCreateRequest(
-      {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'status') String? status,
-      @JsonKey(name: 'is_required') bool? isRequired}) = _$_MeetingsMembersCreateRequest;
+      {@JsonKey(name: 'members') required List<MeetingsMembersCreateParams> members,
+      @JsonKey(name: 'team_uuid') required String teamUuid}) = _$_MeetingsMembersCreateRequest;
 
   factory _MeetingsMembersCreateRequest.fromJson(Map<String, dynamic> json) = _$_MeetingsMembersCreateRequest.fromJson;
 
   @override
 
   /// .
-  @JsonKey(name: 'jid')
-  String get jid => throw _privateConstructorUsedError;
+  @JsonKey(name: 'members')
+  List<MeetingsMembersCreateParams> get members => throw _privateConstructorUsedError;
   @override
 
   /// .
-  @JsonKey(name: 'status')
-  String? get status => throw _privateConstructorUsedError;
-  @override
-
-  /// .
-  @JsonKey(name: 'is_required')
-  bool? get isRequired => throw _privateConstructorUsedError;
+  @JsonKey(name: 'team_uuid')
+  String get teamUuid => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MeetingsMembersCreateRequestCopyWith<_MeetingsMembersCreateRequest> get copyWith =>

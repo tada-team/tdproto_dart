@@ -9,13 +9,10 @@ part 'meetings_members_create_request.g.dart';
 class MeetingsMembersCreateRequest with _$MeetingsMembersCreateRequest {
   const factory MeetingsMembersCreateRequest({
     /// .
-    @JsonKey(name: 'jid') required String jid,
+    @JsonKey(name: 'members') required List<MeetingsMembersCreateParams> members,
 
     /// .
-    @JsonKey(name: 'status') String? status,
-
-    /// .
-    @Default(false) @JsonKey(name: 'is_required') bool? isRequired,
+    @JsonKey(name: 'team_uuid') required String teamUuid,
   }) = _MeetingsMembersCreateRequest;
 
   factory MeetingsMembersCreateRequest.fromJson(Map<String, dynamic> json) =>

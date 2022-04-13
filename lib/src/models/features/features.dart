@@ -158,6 +158,9 @@ class Features with _$Features {
     /// ICE servers for WebRTC.
     @JsonKey(name: 'ice_servers') required List<ICEServer> iCEServers,
 
+    /// IceTransportPolicy a ice transport policy.
+    @JsonKey(name: 'ice_transport_policy') String? iceTransportPolicy,
+
     /// True for premise installation.
     @JsonKey(name: 'custom_server') required bool customServer,
 

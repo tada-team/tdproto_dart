@@ -22,17 +22,19 @@ class _$MeetingsMembersRequestParamsTearOff {
   const _$MeetingsMembersRequestParamsTearOff();
 
   _MeetingsMembersRequestParams call(
-      {@JsonKey(name: 'uuid_sections') List<String>? uuidSections,
+      {@JsonKey(name: 'meeting_id') required String meetingId,
+      @JsonKey(name: 'team_uuid') required String teamUuid,
+      @JsonKey(name: 'uuid_sections') List<String>? uuidSections,
       @JsonKey(name: 'presence') String? presence,
       @JsonKey(name: 'status') String? status,
-      @JsonKey(name: 'meeting_id') required String meetingId,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset}) {
     return _MeetingsMembersRequestParams(
+      meetingId: meetingId,
+      teamUuid: teamUuid,
       uuidSections: uuidSections,
       presence: presence,
       status: status,
-      meetingId: meetingId,
       limit: limit,
       offset: offset,
     );
@@ -49,6 +51,14 @@ const $MeetingsMembersRequestParams = _$MeetingsMembersRequestParamsTearOff();
 /// @nodoc
 mixin _$MeetingsMembersRequestParams {
   /// .
+  @JsonKey(name: 'meeting_id')
+  String get meetingId => throw _privateConstructorUsedError;
+
+  /// .
+  @JsonKey(name: 'team_uuid')
+  String get teamUuid => throw _privateConstructorUsedError;
+
+  /// .
   @JsonKey(name: 'uuid_sections')
   List<String>? get uuidSections => throw _privateConstructorUsedError;
 
@@ -59,10 +69,6 @@ mixin _$MeetingsMembersRequestParams {
   /// .
   @JsonKey(name: 'status')
   String? get status => throw _privateConstructorUsedError;
-
-  /// .
-  @JsonKey(name: 'meeting_id')
-  String get meetingId => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'limit')
@@ -84,10 +90,11 @@ abstract class $MeetingsMembersRequestParamsCopyWith<$Res> {
           MeetingsMembersRequestParams value, $Res Function(MeetingsMembersRequestParams) then) =
       _$MeetingsMembersRequestParamsCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'uuid_sections') List<String>? uuidSections,
+      {@JsonKey(name: 'meeting_id') String meetingId,
+      @JsonKey(name: 'team_uuid') String teamUuid,
+      @JsonKey(name: 'uuid_sections') List<String>? uuidSections,
       @JsonKey(name: 'presence') String? presence,
       @JsonKey(name: 'status') String? status,
-      @JsonKey(name: 'meeting_id') String meetingId,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset});
 }
@@ -102,14 +109,23 @@ class _$MeetingsMembersRequestParamsCopyWithImpl<$Res> implements $MeetingsMembe
 
   @override
   $Res call({
+    Object? meetingId = freezed,
+    Object? teamUuid = freezed,
     Object? uuidSections = freezed,
     Object? presence = freezed,
     Object? status = freezed,
-    Object? meetingId = freezed,
     Object? limit = freezed,
     Object? offset = freezed,
   }) {
     return _then(_value.copyWith(
+      meetingId: meetingId == freezed
+          ? _value.meetingId
+          : meetingId // ignore: cast_nullable_to_non_nullable
+              as String,
+      teamUuid: teamUuid == freezed
+          ? _value.teamUuid
+          : teamUuid // ignore: cast_nullable_to_non_nullable
+              as String,
       uuidSections: uuidSections == freezed
           ? _value.uuidSections
           : uuidSections // ignore: cast_nullable_to_non_nullable
@@ -122,10 +138,6 @@ class _$MeetingsMembersRequestParamsCopyWithImpl<$Res> implements $MeetingsMembe
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String?,
-      meetingId: meetingId == freezed
-          ? _value.meetingId
-          : meetingId // ignore: cast_nullable_to_non_nullable
-              as String,
       limit: limit == freezed
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
@@ -145,10 +157,11 @@ abstract class _$MeetingsMembersRequestParamsCopyWith<$Res> implements $Meetings
       __$MeetingsMembersRequestParamsCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'uuid_sections') List<String>? uuidSections,
+      {@JsonKey(name: 'meeting_id') String meetingId,
+      @JsonKey(name: 'team_uuid') String teamUuid,
+      @JsonKey(name: 'uuid_sections') List<String>? uuidSections,
       @JsonKey(name: 'presence') String? presence,
       @JsonKey(name: 'status') String? status,
-      @JsonKey(name: 'meeting_id') String meetingId,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset});
 }
@@ -165,14 +178,23 @@ class __$MeetingsMembersRequestParamsCopyWithImpl<$Res> extends _$MeetingsMember
 
   @override
   $Res call({
+    Object? meetingId = freezed,
+    Object? teamUuid = freezed,
     Object? uuidSections = freezed,
     Object? presence = freezed,
     Object? status = freezed,
-    Object? meetingId = freezed,
     Object? limit = freezed,
     Object? offset = freezed,
   }) {
     return _then(_MeetingsMembersRequestParams(
+      meetingId: meetingId == freezed
+          ? _value.meetingId
+          : meetingId // ignore: cast_nullable_to_non_nullable
+              as String,
+      teamUuid: teamUuid == freezed
+          ? _value.teamUuid
+          : teamUuid // ignore: cast_nullable_to_non_nullable
+              as String,
       uuidSections: uuidSections == freezed
           ? _value.uuidSections
           : uuidSections // ignore: cast_nullable_to_non_nullable
@@ -185,10 +207,6 @@ class __$MeetingsMembersRequestParamsCopyWithImpl<$Res> extends _$MeetingsMember
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String?,
-      meetingId: meetingId == freezed
-          ? _value.meetingId
-          : meetingId // ignore: cast_nullable_to_non_nullable
-              as String,
       limit: limit == freezed
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
@@ -205,16 +223,27 @@ class __$MeetingsMembersRequestParamsCopyWithImpl<$Res> extends _$MeetingsMember
 @JsonSerializable()
 class _$_MeetingsMembersRequestParams implements _MeetingsMembersRequestParams {
   const _$_MeetingsMembersRequestParams(
-      {@JsonKey(name: 'uuid_sections') this.uuidSections,
+      {@JsonKey(name: 'meeting_id') required this.meetingId,
+      @JsonKey(name: 'team_uuid') required this.teamUuid,
+      @JsonKey(name: 'uuid_sections') this.uuidSections,
       @JsonKey(name: 'presence') this.presence,
       @JsonKey(name: 'status') this.status,
-      @JsonKey(name: 'meeting_id') required this.meetingId,
       @JsonKey(name: 'limit') this.limit,
       @JsonKey(name: 'offset') this.offset});
 
   factory _$_MeetingsMembersRequestParams.fromJson(Map<String, dynamic> json) =>
       _$$_MeetingsMembersRequestParamsFromJson(json);
 
+  @override
+
+  /// .
+  @JsonKey(name: 'meeting_id')
+  final String meetingId;
+  @override
+
+  /// .
+  @JsonKey(name: 'team_uuid')
+  final String teamUuid;
   @override
 
   /// .
@@ -233,11 +262,6 @@ class _$_MeetingsMembersRequestParams implements _MeetingsMembersRequestParams {
   @override
 
   /// .
-  @JsonKey(name: 'meeting_id')
-  final String meetingId;
-  @override
-
-  /// .
   @JsonKey(name: 'limit')
   final int? limit;
   @override
@@ -248,19 +272,20 @@ class _$_MeetingsMembersRequestParams implements _MeetingsMembersRequestParams {
 
   @override
   String toString() {
-    return 'MeetingsMembersRequestParams(uuidSections: $uuidSections, presence: $presence, status: $status, meetingId: $meetingId, limit: $limit, offset: $offset)';
+    return 'MeetingsMembersRequestParams(meetingId: $meetingId, teamUuid: $teamUuid, uuidSections: $uuidSections, presence: $presence, status: $status, limit: $limit, offset: $offset)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _MeetingsMembersRequestParams &&
+            (identical(other.meetingId, meetingId) ||
+                const DeepCollectionEquality().equals(other.meetingId, meetingId)) &&
+            (identical(other.teamUuid, teamUuid) || const DeepCollectionEquality().equals(other.teamUuid, teamUuid)) &&
             (identical(other.uuidSections, uuidSections) ||
                 const DeepCollectionEquality().equals(other.uuidSections, uuidSections)) &&
             (identical(other.presence, presence) || const DeepCollectionEquality().equals(other.presence, presence)) &&
             (identical(other.status, status) || const DeepCollectionEquality().equals(other.status, status)) &&
-            (identical(other.meetingId, meetingId) ||
-                const DeepCollectionEquality().equals(other.meetingId, meetingId)) &&
             (identical(other.limit, limit) || const DeepCollectionEquality().equals(other.limit, limit)) &&
             (identical(other.offset, offset) || const DeepCollectionEquality().equals(other.offset, offset)));
   }
@@ -268,10 +293,11 @@ class _$_MeetingsMembersRequestParams implements _MeetingsMembersRequestParams {
   @override
   int get hashCode =>
       runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(meetingId) ^
+      const DeepCollectionEquality().hash(teamUuid) ^
       const DeepCollectionEquality().hash(uuidSections) ^
       const DeepCollectionEquality().hash(presence) ^
       const DeepCollectionEquality().hash(status) ^
-      const DeepCollectionEquality().hash(meetingId) ^
       const DeepCollectionEquality().hash(limit) ^
       const DeepCollectionEquality().hash(offset);
 
@@ -288,15 +314,26 @@ class _$_MeetingsMembersRequestParams implements _MeetingsMembersRequestParams {
 
 abstract class _MeetingsMembersRequestParams implements MeetingsMembersRequestParams {
   const factory _MeetingsMembersRequestParams(
-      {@JsonKey(name: 'uuid_sections') List<String>? uuidSections,
+      {@JsonKey(name: 'meeting_id') required String meetingId,
+      @JsonKey(name: 'team_uuid') required String teamUuid,
+      @JsonKey(name: 'uuid_sections') List<String>? uuidSections,
       @JsonKey(name: 'presence') String? presence,
       @JsonKey(name: 'status') String? status,
-      @JsonKey(name: 'meeting_id') required String meetingId,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset}) = _$_MeetingsMembersRequestParams;
 
   factory _MeetingsMembersRequestParams.fromJson(Map<String, dynamic> json) = _$_MeetingsMembersRequestParams.fromJson;
 
+  @override
+
+  /// .
+  @JsonKey(name: 'meeting_id')
+  String get meetingId => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'team_uuid')
+  String get teamUuid => throw _privateConstructorUsedError;
   @override
 
   /// .
@@ -312,11 +349,6 @@ abstract class _MeetingsMembersRequestParams implements MeetingsMembersRequestPa
   /// .
   @JsonKey(name: 'status')
   String? get status => throw _privateConstructorUsedError;
-  @override
-
-  /// .
-  @JsonKey(name: 'meeting_id')
-  String get meetingId => throw _privateConstructorUsedError;
   @override
 
   /// .

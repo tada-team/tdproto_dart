@@ -9,13 +9,22 @@ part 'meetings_create_request.g.dart';
 class MeetingsCreateRequest with _$MeetingsCreateRequest {
   const factory MeetingsCreateRequest({
     /// .
-    @JsonKey(name: 'team_uuid') String? teamUuid,
+    @JsonKey(name: 'owner_uuid') required String ownerUuid,
+
+    /// .
+    @JsonKey(name: 'team_uuid') required String teamUuid,
+
+    /// .
+    @JsonKey(name: 'title') String? title,
+
+    /// .
+    @JsonKey(name: 'description') String? description,
 
     /// .
     @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
 
     /// .
-    @JsonKey(name: 'end_at') required String endAt,
+    @JsonKey(name: 'duration') required int duration,
 
     /// .
     @JsonKey(name: 'freq') int? freq,
@@ -24,7 +33,7 @@ class MeetingsCreateRequest with _$MeetingsCreateRequest {
     @JsonKey(name: 'freq_days') List<int>? freqDays,
 
     /// .
-    @JsonKey(name: 'members') required List<MeetingsCreateRequestMembers> members,
+    @JsonKey(name: 'members') required List<MeetingsMembersCreateParams> members,
 
     /// .
     @Default(false) @JsonKey(name: 'is_public') bool? isPublic,

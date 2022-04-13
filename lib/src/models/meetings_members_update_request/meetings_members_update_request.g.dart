@@ -10,10 +10,12 @@ _$_MeetingsMembersUpdateRequest _$$_MeetingsMembersUpdateRequestFromJson(Map<Str
     _$_MeetingsMembersUpdateRequest(
       status: json['status'] as String?,
       isRequired: json['is_required'] as bool? ?? false,
+      teamUuid: json['team_uuid'] as String?,
     );
 
 Map<String, dynamic> _$$_MeetingsMembersUpdateRequestToJson(_$_MeetingsMembersUpdateRequest instance) =>
     <String, dynamic>{
       'status': instance.status,
       'is_required': instance.isRequired,
+      'team_uuid': instance.teamUuid,
     };

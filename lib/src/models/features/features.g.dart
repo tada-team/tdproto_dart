@@ -60,6 +60,7 @@ _$_Features _$$_FeaturesFromJson(Map<String, dynamic> json) => _$_Features(
           .toList(),
       iCEServers:
           (json['ice_servers'] as List<dynamic>).map((e) => ICEServer.fromJson(e as Map<String, dynamic>)).toList(),
+      iceTransportPolicy: json['ice_transport_policy'] as String?,
       customServer: json['custom_server'] as bool,
       installationType: json['installation_type'] as String,
       installationTitle: json['installation_title'] as String?,
@@ -163,6 +164,7 @@ Map<String, dynamic> _$$_FeaturesToJson(_$_Features instance) => <String, dynami
       'pin_code_wrong_limit': instance.pinCodeWrongLimit,
       'oauth_services': instance.oAuthServices?.map((e) => e.toJson()).toList(),
       'ice_servers': instance.iCEServers.map((e) => e.toJson()).toList(),
+      'ice_transport_policy': instance.iceTransportPolicy,
       'custom_server': instance.customServer,
       'installation_type': instance.installationType,
       'installation_title': instance.installationTitle,

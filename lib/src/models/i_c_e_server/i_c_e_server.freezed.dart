@@ -21,9 +21,14 @@ ICEServer _$ICEServerFromJson(Map<String, dynamic> json) {
 class _$ICEServerTearOff {
   const _$ICEServerTearOff();
 
-  _ICEServer call({@JsonKey(name: 'urls') required String urls}) {
+  _ICEServer call(
+      {@JsonKey(name: 'urls') required String urls,
+      @JsonKey(name: 'username') String? userName,
+      @JsonKey(name: 'credential') String? credential}) {
     return _ICEServer(
       urls: urls,
+      userName: userName,
+      credential: credential,
     );
   }
 
@@ -37,9 +42,17 @@ const $ICEServer = _$ICEServerTearOff();
 
 /// @nodoc
 mixin _$ICEServer {
-  /// URls.
+  /// Urls - STUN or TURN addresses.
   @JsonKey(name: 'urls')
   String get urls => throw _privateConstructorUsedError;
+
+  /// UserName - username for TURN server.
+  @JsonKey(name: 'username')
+  String? get userName => throw _privateConstructorUsedError;
+
+  /// Credential - credential for TURN server.
+  @JsonKey(name: 'credential')
+  String? get credential => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -49,7 +62,10 @@ mixin _$ICEServer {
 /// @nodoc
 abstract class $ICEServerCopyWith<$Res> {
   factory $ICEServerCopyWith(ICEServer value, $Res Function(ICEServer) then) = _$ICEServerCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'urls') String urls});
+  $Res call(
+      {@JsonKey(name: 'urls') String urls,
+      @JsonKey(name: 'username') String? userName,
+      @JsonKey(name: 'credential') String? credential});
 }
 
 /// @nodoc
@@ -63,12 +79,22 @@ class _$ICEServerCopyWithImpl<$Res> implements $ICEServerCopyWith<$Res> {
   @override
   $Res call({
     Object? urls = freezed,
+    Object? userName = freezed,
+    Object? credential = freezed,
   }) {
     return _then(_value.copyWith(
       urls: urls == freezed
           ? _value.urls
           : urls // ignore: cast_nullable_to_non_nullable
               as String,
+      userName: userName == freezed
+          ? _value.userName
+          : userName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      credential: credential == freezed
+          ? _value.credential
+          : credential // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -77,7 +103,10 @@ class _$ICEServerCopyWithImpl<$Res> implements $ICEServerCopyWith<$Res> {
 abstract class _$ICEServerCopyWith<$Res> implements $ICEServerCopyWith<$Res> {
   factory _$ICEServerCopyWith(_ICEServer value, $Res Function(_ICEServer) then) = __$ICEServerCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'urls') String urls});
+  $Res call(
+      {@JsonKey(name: 'urls') String urls,
+      @JsonKey(name: 'username') String? userName,
+      @JsonKey(name: 'credential') String? credential});
 }
 
 /// @nodoc
@@ -91,12 +120,22 @@ class __$ICEServerCopyWithImpl<$Res> extends _$ICEServerCopyWithImpl<$Res> imple
   @override
   $Res call({
     Object? urls = freezed,
+    Object? userName = freezed,
+    Object? credential = freezed,
   }) {
     return _then(_ICEServer(
       urls: urls == freezed
           ? _value.urls
           : urls // ignore: cast_nullable_to_non_nullable
               as String,
+      userName: userName == freezed
+          ? _value.userName
+          : userName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      credential: credential == freezed
+          ? _value.credential
+          : credential // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -104,30 +143,50 @@ class __$ICEServerCopyWithImpl<$Res> extends _$ICEServerCopyWithImpl<$Res> imple
 /// @nodoc
 @JsonSerializable()
 class _$_ICEServer implements _ICEServer {
-  const _$_ICEServer({@JsonKey(name: 'urls') required this.urls});
+  const _$_ICEServer(
+      {@JsonKey(name: 'urls') required this.urls,
+      @JsonKey(name: 'username') this.userName,
+      @JsonKey(name: 'credential') this.credential});
 
   factory _$_ICEServer.fromJson(Map<String, dynamic> json) => _$$_ICEServerFromJson(json);
 
   @override
 
-  /// URls.
+  /// Urls - STUN or TURN addresses.
   @JsonKey(name: 'urls')
   final String urls;
+  @override
+
+  /// UserName - username for TURN server.
+  @JsonKey(name: 'username')
+  final String? userName;
+  @override
+
+  /// Credential - credential for TURN server.
+  @JsonKey(name: 'credential')
+  final String? credential;
 
   @override
   String toString() {
-    return 'ICEServer(urls: $urls)';
+    return 'ICEServer(urls: $urls, userName: $userName, credential: $credential)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _ICEServer &&
-            (identical(other.urls, urls) || const DeepCollectionEquality().equals(other.urls, urls)));
+            (identical(other.urls, urls) || const DeepCollectionEquality().equals(other.urls, urls)) &&
+            (identical(other.userName, userName) || const DeepCollectionEquality().equals(other.userName, userName)) &&
+            (identical(other.credential, credential) ||
+                const DeepCollectionEquality().equals(other.credential, credential)));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(urls);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(urls) ^
+      const DeepCollectionEquality().hash(userName) ^
+      const DeepCollectionEquality().hash(credential);
 
   @JsonKey(ignore: true)
   @override
@@ -140,15 +199,28 @@ class _$_ICEServer implements _ICEServer {
 }
 
 abstract class _ICEServer implements ICEServer {
-  const factory _ICEServer({@JsonKey(name: 'urls') required String urls}) = _$_ICEServer;
+  const factory _ICEServer(
+      {@JsonKey(name: 'urls') required String urls,
+      @JsonKey(name: 'username') String? userName,
+      @JsonKey(name: 'credential') String? credential}) = _$_ICEServer;
 
   factory _ICEServer.fromJson(Map<String, dynamic> json) = _$_ICEServer.fromJson;
 
   @override
 
-  /// URls.
+  /// Urls - STUN or TURN addresses.
   @JsonKey(name: 'urls')
   String get urls => throw _privateConstructorUsedError;
+  @override
+
+  /// UserName - username for TURN server.
+  @JsonKey(name: 'username')
+  String? get userName => throw _privateConstructorUsedError;
+  @override
+
+  /// Credential - credential for TURN server.
+  @JsonKey(name: 'credential')
+  String? get credential => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ICEServerCopyWith<_ICEServer> get copyWith => throw _privateConstructorUsedError;

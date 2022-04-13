@@ -9,7 +9,10 @@ part 'meeting_member.g.dart';
 class MeetingMember with _$MeetingMember {
   const factory MeetingMember({
     /// .
-    @JsonKey(name: 'meeting_id') String? meetingId,
+    @JsonKey(name: 'meeting_id') required String meetingId,
+
+    /// .
+    @JsonKey(name: 'chat_uuid') required String chatUuid,
 
     /// .
     @JsonKey(name: 'contact') required Contact contact,
