@@ -12,11 +12,9 @@ _$_MeetingsUpdateRequest _$$_MeetingsUpdateRequestFromJson(Map<String, dynamic> 
       activeFrom: json['active_from'] as String?,
       startAt: json['start_at'] as String?,
       duration: json['duration'] as int?,
-      freq: json['freq'] as int?,
-      freqDays: (json['freq_days'] as List<dynamic>?)?.map((e) => e as int).toList(),
+      freq: json['freq'] == null ? null : Freq.fromJson(json['freq'] as Map<String, dynamic>),
       isPublic: json['is_public'] as bool? ?? false,
       isOutside: json['is_outside'] as bool? ?? false,
-      isFreq: json['is_freq'] as bool,
     );
 
 Map<String, dynamic> _$$_MeetingsUpdateRequestToJson(_$_MeetingsUpdateRequest instance) => <String, dynamic>{
@@ -25,9 +23,7 @@ Map<String, dynamic> _$$_MeetingsUpdateRequestToJson(_$_MeetingsUpdateRequest in
       'active_from': instance.activeFrom,
       'start_at': instance.startAt,
       'duration': instance.duration,
-      'freq': instance.freq,
-      'freq_days': instance.freqDays,
+      'freq': instance.freq?.toJson(),
       'is_public': instance.isPublic,
       'is_outside': instance.isOutside,
-      'is_freq': instance.isFreq,
     };

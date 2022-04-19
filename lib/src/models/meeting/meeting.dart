@@ -36,13 +36,7 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'duration') required int duration,
 
     /// .
-    @JsonKey(name: 'is_freq') required bool isFreq,
-
-    /// .
-    @JsonKey(name: 'freq_days') List<int>? freqDays,
-
-    /// .
-    @JsonKey(name: 'freq') int? freq,
+    @JsonKey(name: 'freq') Freq? freq,
 
     /// .
     @Default(false) @JsonKey(name: 'is_archive') bool? isArchive,

@@ -24,19 +24,13 @@ class MeetingsUpdateRequest with _$MeetingsUpdateRequest {
     @JsonKey(name: 'duration') int? duration,
 
     /// .
-    @JsonKey(name: 'freq') int? freq,
-
-    /// .
-    @JsonKey(name: 'freq_days') List<int>? freqDays,
+    @JsonKey(name: 'freq') Freq? freq,
 
     /// .
     @Default(false) @JsonKey(name: 'is_public') bool? isPublic,
 
     /// .
     @Default(false) @JsonKey(name: 'is_outside') bool? isOutside,
-
-    /// .
-    @JsonKey(name: 'is_freq') required bool isFreq,
   }) = _MeetingsUpdateRequest;
 
   factory MeetingsUpdateRequest.fromJson(Map<String, dynamic> json) => _$MeetingsUpdateRequestFromJson(json);

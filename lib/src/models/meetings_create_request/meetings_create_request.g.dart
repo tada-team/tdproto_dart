@@ -13,14 +13,12 @@ _$_MeetingsCreateRequest _$$_MeetingsCreateRequestFromJson(Map<String, dynamic> 
       description: json['description'] as String?,
       startAt: const DateTimeConverter().fromJson(json['start_at'] as String),
       duration: json['duration'] as int,
-      freq: json['freq'] as int?,
-      freqDays: (json['freq_days'] as List<dynamic>?)?.map((e) => e as int).toList(),
+      freq: json['freq'] == null ? null : Freq.fromJson(json['freq'] as Map<String, dynamic>),
       members: (json['members'] as List<dynamic>)
           .map((e) => MeetingsMembersCreateParams.fromJson(e as Map<String, dynamic>))
           .toList(),
       isPublic: json['is_public'] as bool? ?? false,
       isOutside: json['is_outside'] as bool? ?? false,
-      isFreq: json['is_freq'] as bool,
     );
 
 Map<String, dynamic> _$$_MeetingsCreateRequestToJson(_$_MeetingsCreateRequest instance) => <String, dynamic>{
@@ -30,10 +28,8 @@ Map<String, dynamic> _$$_MeetingsCreateRequestToJson(_$_MeetingsCreateRequest in
       'description': instance.description,
       'start_at': const DateTimeConverter().toJson(instance.startAt),
       'duration': instance.duration,
-      'freq': instance.freq,
-      'freq_days': instance.freqDays,
+      'freq': instance.freq?.toJson(),
       'members': instance.members.map((e) => e.toJson()).toList(),
       'is_public': instance.isPublic,
       'is_outside': instance.isOutside,
-      'is_freq': instance.isFreq,
     };

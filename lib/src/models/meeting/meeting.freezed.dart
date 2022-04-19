@@ -31,9 +31,7 @@ class _$MeetingTearOff {
       @JsonKey(name: 'description') String? description,
       @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
       @JsonKey(name: 'duration') required int duration,
-      @JsonKey(name: 'is_freq') required bool isFreq,
-      @JsonKey(name: 'freq_days') List<int>? freqDays,
-      @JsonKey(name: 'freq') int? freq,
+      @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'is_archive') bool? isArchive = false,
       @JsonKey(name: 'is_public') bool? isPublic = false,
       @JsonKey(name: 'is_outside') bool? isOutside = false,
@@ -52,8 +50,6 @@ class _$MeetingTearOff {
       description: description,
       startAt: startAt,
       duration: duration,
-      isFreq: isFreq,
-      freqDays: freqDays,
       freq: freq,
       isArchive: isArchive,
       isPublic: isPublic,
@@ -114,16 +110,8 @@ mixin _$Meeting {
   int get duration => throw _privateConstructorUsedError;
 
   /// .
-  @JsonKey(name: 'is_freq')
-  bool get isFreq => throw _privateConstructorUsedError;
-
-  /// .
-  @JsonKey(name: 'freq_days')
-  List<int>? get freqDays => throw _privateConstructorUsedError;
-
-  /// .
   @JsonKey(name: 'freq')
-  int? get freq => throw _privateConstructorUsedError;
+  Freq? get freq => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'is_archive')
@@ -175,9 +163,7 @@ abstract class $MeetingCopyWith<$Res> {
       @JsonKey(name: 'description') String? description,
       @JsonKey(name: 'start_at') @DateTimeConverter() DateTime startAt,
       @JsonKey(name: 'duration') int duration,
-      @JsonKey(name: 'is_freq') bool isFreq,
-      @JsonKey(name: 'freq_days') List<int>? freqDays,
-      @JsonKey(name: 'freq') int? freq,
+      @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'is_archive') bool? isArchive,
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
@@ -186,6 +172,8 @@ abstract class $MeetingCopyWith<$Res> {
       @JsonKey(name: 'can_edit') bool? canEdit,
       @JsonKey(name: 'can_join') bool? canJoin,
       @JsonKey(name: 'meeting_members') List<MeetingMember>? members});
+
+  $FreqCopyWith<$Res>? get freq;
 }
 
 /// @nodoc
@@ -207,8 +195,6 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
     Object? description = freezed,
     Object? startAt = freezed,
     Object? duration = freezed,
-    Object? isFreq = freezed,
-    Object? freqDays = freezed,
     Object? freq = freezed,
     Object? isArchive = freezed,
     Object? isPublic = freezed,
@@ -256,18 +242,10 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as int,
-      isFreq: isFreq == freezed
-          ? _value.isFreq
-          : isFreq // ignore: cast_nullable_to_non_nullable
-              as bool,
-      freqDays: freqDays == freezed
-          ? _value.freqDays
-          : freqDays // ignore: cast_nullable_to_non_nullable
-              as List<int>?,
       freq: freq == freezed
           ? _value.freq
           : freq // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as Freq?,
       isArchive: isArchive == freezed
           ? _value.isArchive
           : isArchive // ignore: cast_nullable_to_non_nullable
@@ -302,6 +280,17 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
               as List<MeetingMember>?,
     ));
   }
+
+  @override
+  $FreqCopyWith<$Res>? get freq {
+    if (_value.freq == null) {
+      return null;
+    }
+
+    return $FreqCopyWith<$Res>(_value.freq!, (value) {
+      return _then(_value.copyWith(freq: value));
+    });
+  }
 }
 
 /// @nodoc
@@ -318,9 +307,7 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
       @JsonKey(name: 'description') String? description,
       @JsonKey(name: 'start_at') @DateTimeConverter() DateTime startAt,
       @JsonKey(name: 'duration') int duration,
-      @JsonKey(name: 'is_freq') bool isFreq,
-      @JsonKey(name: 'freq_days') List<int>? freqDays,
-      @JsonKey(name: 'freq') int? freq,
+      @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'is_archive') bool? isArchive,
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
@@ -329,6 +316,9 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
       @JsonKey(name: 'can_edit') bool? canEdit,
       @JsonKey(name: 'can_join') bool? canJoin,
       @JsonKey(name: 'meeting_members') List<MeetingMember>? members});
+
+  @override
+  $FreqCopyWith<$Res>? get freq;
 }
 
 /// @nodoc
@@ -349,8 +339,6 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res> implement
     Object? description = freezed,
     Object? startAt = freezed,
     Object? duration = freezed,
-    Object? isFreq = freezed,
-    Object? freqDays = freezed,
     Object? freq = freezed,
     Object? isArchive = freezed,
     Object? isPublic = freezed,
@@ -398,18 +386,10 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res> implement
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as int,
-      isFreq: isFreq == freezed
-          ? _value.isFreq
-          : isFreq // ignore: cast_nullable_to_non_nullable
-              as bool,
-      freqDays: freqDays == freezed
-          ? _value.freqDays
-          : freqDays // ignore: cast_nullable_to_non_nullable
-              as List<int>?,
       freq: freq == freezed
           ? _value.freq
           : freq // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as Freq?,
       isArchive: isArchive == freezed
           ? _value.isArchive
           : isArchive // ignore: cast_nullable_to_non_nullable
@@ -459,8 +439,6 @@ class _$_Meeting implements _Meeting {
       @JsonKey(name: 'description') this.description,
       @JsonKey(name: 'start_at') @DateTimeConverter() required this.startAt,
       @JsonKey(name: 'duration') required this.duration,
-      @JsonKey(name: 'is_freq') required this.isFreq,
-      @JsonKey(name: 'freq_days') this.freqDays,
       @JsonKey(name: 'freq') this.freq,
       @JsonKey(name: 'is_archive') this.isArchive = false,
       @JsonKey(name: 'is_public') this.isPublic = false,
@@ -522,18 +500,8 @@ class _$_Meeting implements _Meeting {
   @override
 
   /// .
-  @JsonKey(name: 'is_freq')
-  final bool isFreq;
-  @override
-
-  /// .
-  @JsonKey(name: 'freq_days')
-  final List<int>? freqDays;
-  @override
-
-  /// .
   @JsonKey(name: 'freq')
-  final int? freq;
+  final Freq? freq;
   @override
 
   /// .
@@ -577,7 +545,7 @@ class _$_Meeting implements _Meeting {
 
   @override
   String toString() {
-    return 'Meeting(id: $id, teamUuid: $teamUuid, groupUuid: $groupUuid, ownerUuid: $ownerUuid, personalAccountId: $personalAccountId, title: $title, description: $description, startAt: $startAt, duration: $duration, isFreq: $isFreq, freqDays: $freqDays, freq: $freq, isArchive: $isArchive, isPublic: $isPublic, isOutside: $isOutside, canAddMember: $canAddMember, canDelete: $canDelete, canEdit: $canEdit, canJoin: $canJoin, members: $members)';
+    return 'Meeting(id: $id, teamUuid: $teamUuid, groupUuid: $groupUuid, ownerUuid: $ownerUuid, personalAccountId: $personalAccountId, title: $title, description: $description, startAt: $startAt, duration: $duration, freq: $freq, isArchive: $isArchive, isPublic: $isPublic, isOutside: $isOutside, canAddMember: $canAddMember, canDelete: $canDelete, canEdit: $canEdit, canJoin: $canJoin, members: $members)';
   }
 
   @override
@@ -597,8 +565,6 @@ class _$_Meeting implements _Meeting {
                 const DeepCollectionEquality().equals(other.description, description)) &&
             (identical(other.startAt, startAt) || const DeepCollectionEquality().equals(other.startAt, startAt)) &&
             (identical(other.duration, duration) || const DeepCollectionEquality().equals(other.duration, duration)) &&
-            (identical(other.isFreq, isFreq) || const DeepCollectionEquality().equals(other.isFreq, isFreq)) &&
-            (identical(other.freqDays, freqDays) || const DeepCollectionEquality().equals(other.freqDays, freqDays)) &&
             (identical(other.freq, freq) || const DeepCollectionEquality().equals(other.freq, freq)) &&
             (identical(other.isArchive, isArchive) ||
                 const DeepCollectionEquality().equals(other.isArchive, isArchive)) &&
@@ -626,8 +592,6 @@ class _$_Meeting implements _Meeting {
       const DeepCollectionEquality().hash(description) ^
       const DeepCollectionEquality().hash(startAt) ^
       const DeepCollectionEquality().hash(duration) ^
-      const DeepCollectionEquality().hash(isFreq) ^
-      const DeepCollectionEquality().hash(freqDays) ^
       const DeepCollectionEquality().hash(freq) ^
       const DeepCollectionEquality().hash(isArchive) ^
       const DeepCollectionEquality().hash(isPublic) ^
@@ -659,9 +623,7 @@ abstract class _Meeting implements Meeting {
       @JsonKey(name: 'description') String? description,
       @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
       @JsonKey(name: 'duration') required int duration,
-      @JsonKey(name: 'is_freq') required bool isFreq,
-      @JsonKey(name: 'freq_days') List<int>? freqDays,
-      @JsonKey(name: 'freq') int? freq,
+      @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'is_archive') bool? isArchive,
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
@@ -722,18 +684,8 @@ abstract class _Meeting implements Meeting {
   @override
 
   /// .
-  @JsonKey(name: 'is_freq')
-  bool get isFreq => throw _privateConstructorUsedError;
-  @override
-
-  /// .
-  @JsonKey(name: 'freq_days')
-  List<int>? get freqDays => throw _privateConstructorUsedError;
-  @override
-
-  /// .
   @JsonKey(name: 'freq')
-  int? get freq => throw _privateConstructorUsedError;
+  Freq? get freq => throw _privateConstructorUsedError;
   @override
 
   /// .

@@ -27,10 +27,7 @@ class MeetingsCreateRequest with _$MeetingsCreateRequest {
     @JsonKey(name: 'duration') required int duration,
 
     /// .
-    @JsonKey(name: 'freq') int? freq,
-
-    /// .
-    @JsonKey(name: 'freq_days') List<int>? freqDays,
+    @JsonKey(name: 'freq') Freq? freq,
 
     /// .
     @JsonKey(name: 'members') required List<MeetingsMembersCreateParams> members,
@@ -40,9 +37,6 @@ class MeetingsCreateRequest with _$MeetingsCreateRequest {
 
     /// .
     @Default(false) @JsonKey(name: 'is_outside') bool? isOutside,
-
-    /// .
-    @JsonKey(name: 'is_freq') required bool isFreq,
   }) = _MeetingsCreateRequest;
 
   factory MeetingsCreateRequest.fromJson(Map<String, dynamic> json) => _$MeetingsCreateRequestFromJson(json);
