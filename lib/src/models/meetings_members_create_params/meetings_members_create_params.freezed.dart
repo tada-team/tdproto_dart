@@ -22,13 +22,10 @@ class _$MeetingsMembersCreateParamsTearOff {
   const _$MeetingsMembersCreateParamsTearOff();
 
   _MeetingsMembersCreateParams call(
-      {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'status') String? status,
-      @JsonKey(name: 'is_required') bool? isRequired = false}) {
+      {@JsonKey(name: 'jid') required String jid, @JsonKey(name: 'status') String? status}) {
     return _MeetingsMembersCreateParams(
       jid: jid,
       status: status,
-      isRequired: isRequired,
     );
   }
 
@@ -50,10 +47,6 @@ mixin _$MeetingsMembersCreateParams {
   @JsonKey(name: 'status')
   String? get status => throw _privateConstructorUsedError;
 
-  /// .
-  @JsonKey(name: 'is_required')
-  bool? get isRequired => throw _privateConstructorUsedError;
-
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $MeetingsMembersCreateParamsCopyWith<MeetingsMembersCreateParams> get copyWith => throw _privateConstructorUsedError;
@@ -64,10 +57,7 @@ abstract class $MeetingsMembersCreateParamsCopyWith<$Res> {
   factory $MeetingsMembersCreateParamsCopyWith(
           MeetingsMembersCreateParams value, $Res Function(MeetingsMembersCreateParams) then) =
       _$MeetingsMembersCreateParamsCopyWithImpl<$Res>;
-  $Res call(
-      {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'status') String? status,
-      @JsonKey(name: 'is_required') bool? isRequired});
+  $Res call({@JsonKey(name: 'jid') String jid, @JsonKey(name: 'status') String? status});
 }
 
 /// @nodoc
@@ -82,7 +72,6 @@ class _$MeetingsMembersCreateParamsCopyWithImpl<$Res> implements $MeetingsMember
   $Res call({
     Object? jid = freezed,
     Object? status = freezed,
-    Object? isRequired = freezed,
   }) {
     return _then(_value.copyWith(
       jid: jid == freezed
@@ -93,10 +82,6 @@ class _$MeetingsMembersCreateParamsCopyWithImpl<$Res> implements $MeetingsMember
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String?,
-      isRequired: isRequired == freezed
-          ? _value.isRequired
-          : isRequired // ignore: cast_nullable_to_non_nullable
-              as bool?,
     ));
   }
 }
@@ -107,10 +92,7 @@ abstract class _$MeetingsMembersCreateParamsCopyWith<$Res> implements $MeetingsM
           _MeetingsMembersCreateParams value, $Res Function(_MeetingsMembersCreateParams) then) =
       __$MeetingsMembersCreateParamsCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'status') String? status,
-      @JsonKey(name: 'is_required') bool? isRequired});
+  $Res call({@JsonKey(name: 'jid') String jid, @JsonKey(name: 'status') String? status});
 }
 
 /// @nodoc
@@ -127,7 +109,6 @@ class __$MeetingsMembersCreateParamsCopyWithImpl<$Res> extends _$MeetingsMembers
   $Res call({
     Object? jid = freezed,
     Object? status = freezed,
-    Object? isRequired = freezed,
   }) {
     return _then(_MeetingsMembersCreateParams(
       jid: jid == freezed
@@ -138,10 +119,6 @@ class __$MeetingsMembersCreateParamsCopyWithImpl<$Res> extends _$MeetingsMembers
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String?,
-      isRequired: isRequired == freezed
-          ? _value.isRequired
-          : isRequired // ignore: cast_nullable_to_non_nullable
-              as bool?,
     ));
   }
 }
@@ -149,10 +126,7 @@ class __$MeetingsMembersCreateParamsCopyWithImpl<$Res> extends _$MeetingsMembers
 /// @nodoc
 @JsonSerializable()
 class _$_MeetingsMembersCreateParams implements _MeetingsMembersCreateParams {
-  const _$_MeetingsMembersCreateParams(
-      {@JsonKey(name: 'jid') required this.jid,
-      @JsonKey(name: 'status') this.status,
-      @JsonKey(name: 'is_required') this.isRequired = false});
+  const _$_MeetingsMembersCreateParams({@JsonKey(name: 'jid') required this.jid, @JsonKey(name: 'status') this.status});
 
   factory _$_MeetingsMembersCreateParams.fromJson(Map<String, dynamic> json) =>
       _$$_MeetingsMembersCreateParamsFromJson(json);
@@ -167,15 +141,10 @@ class _$_MeetingsMembersCreateParams implements _MeetingsMembersCreateParams {
   /// .
   @JsonKey(name: 'status')
   final String? status;
-  @override
-
-  /// .
-  @JsonKey(name: 'is_required')
-  final bool? isRequired;
 
   @override
   String toString() {
-    return 'MeetingsMembersCreateParams(jid: $jid, status: $status, isRequired: $isRequired)';
+    return 'MeetingsMembersCreateParams(jid: $jid, status: $status)';
   }
 
   @override
@@ -183,17 +152,12 @@ class _$_MeetingsMembersCreateParams implements _MeetingsMembersCreateParams {
     return identical(this, other) ||
         (other is _MeetingsMembersCreateParams &&
             (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
-            (identical(other.status, status) || const DeepCollectionEquality().equals(other.status, status)) &&
-            (identical(other.isRequired, isRequired) ||
-                const DeepCollectionEquality().equals(other.isRequired, isRequired)));
+            (identical(other.status, status) || const DeepCollectionEquality().equals(other.status, status)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(jid) ^
-      const DeepCollectionEquality().hash(status) ^
-      const DeepCollectionEquality().hash(isRequired);
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(jid) ^ const DeepCollectionEquality().hash(status);
 
   @JsonKey(ignore: true)
   @override
@@ -209,8 +173,7 @@ class _$_MeetingsMembersCreateParams implements _MeetingsMembersCreateParams {
 abstract class _MeetingsMembersCreateParams implements MeetingsMembersCreateParams {
   const factory _MeetingsMembersCreateParams(
       {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'status') String? status,
-      @JsonKey(name: 'is_required') bool? isRequired}) = _$_MeetingsMembersCreateParams;
+      @JsonKey(name: 'status') String? status}) = _$_MeetingsMembersCreateParams;
 
   factory _MeetingsMembersCreateParams.fromJson(Map<String, dynamic> json) = _$_MeetingsMembersCreateParams.fromJson;
 
@@ -224,11 +187,6 @@ abstract class _MeetingsMembersCreateParams implements MeetingsMembersCreatePara
   /// .
   @JsonKey(name: 'status')
   String? get status => throw _privateConstructorUsedError;
-  @override
-
-  /// .
-  @JsonKey(name: 'is_required')
-  bool? get isRequired => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MeetingsMembersCreateParamsCopyWith<_MeetingsMembersCreateParams> get copyWith =>

@@ -12,9 +12,6 @@ class MeetingsMembersUpdateRequest with _$MeetingsMembersUpdateRequest {
     @JsonKey(name: 'status') String? status,
 
     /// .
-    @Default(false) @JsonKey(name: 'is_required') bool? isRequired,
-
-    /// .
     @JsonKey(name: 'team_uuid') String? teamUuid,
   }) = _MeetingsMembersUpdateRequest;
 

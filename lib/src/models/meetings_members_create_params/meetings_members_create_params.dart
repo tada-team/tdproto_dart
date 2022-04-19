@@ -13,9 +13,6 @@ class MeetingsMembersCreateParams with _$MeetingsMembersCreateParams {
 
     /// .
     @JsonKey(name: 'status') String? status,
-
-    /// .
-    @Default(false) @JsonKey(name: 'is_required') bool? isRequired,
   }) = _MeetingsMembersCreateParams;
 
   factory MeetingsMembersCreateParams.fromJson(Map<String, dynamic> json) =>

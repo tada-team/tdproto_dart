@@ -27,7 +27,6 @@ class _$MeetingMemberTearOff {
       @JsonKey(name: 'contact') required Contact contact,
       @JsonKey(name: 'presence') required String presence,
       @JsonKey(name: 'status') required String status,
-      @JsonKey(name: 'is_required') bool? isRequired = false,
       @JsonKey(name: 'can_change_presence') bool? canChangePresence = false,
       @JsonKey(name: 'can_change_status') bool? canChangeStatus = false,
       @JsonKey(name: 'can_remove') bool? canRemove = false}) {
@@ -37,7 +36,6 @@ class _$MeetingMemberTearOff {
       contact: contact,
       presence: presence,
       status: status,
-      isRequired: isRequired,
       canChangePresence: canChangePresence,
       canChangeStatus: canChangeStatus,
       canRemove: canRemove,
@@ -75,10 +73,6 @@ mixin _$MeetingMember {
   String get status => throw _privateConstructorUsedError;
 
   /// .
-  @JsonKey(name: 'is_required')
-  bool? get isRequired => throw _privateConstructorUsedError;
-
-  /// .
   @JsonKey(name: 'can_change_presence')
   bool? get canChangePresence => throw _privateConstructorUsedError;
 
@@ -105,7 +99,6 @@ abstract class $MeetingMemberCopyWith<$Res> {
       @JsonKey(name: 'contact') Contact contact,
       @JsonKey(name: 'presence') String presence,
       @JsonKey(name: 'status') String status,
-      @JsonKey(name: 'is_required') bool? isRequired,
       @JsonKey(name: 'can_change_presence') bool? canChangePresence,
       @JsonKey(name: 'can_change_status') bool? canChangeStatus,
       @JsonKey(name: 'can_remove') bool? canRemove});
@@ -128,7 +121,6 @@ class _$MeetingMemberCopyWithImpl<$Res> implements $MeetingMemberCopyWith<$Res> 
     Object? contact = freezed,
     Object? presence = freezed,
     Object? status = freezed,
-    Object? isRequired = freezed,
     Object? canChangePresence = freezed,
     Object? canChangeStatus = freezed,
     Object? canRemove = freezed,
@@ -154,10 +146,6 @@ class _$MeetingMemberCopyWithImpl<$Res> implements $MeetingMemberCopyWith<$Res> 
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String,
-      isRequired: isRequired == freezed
-          ? _value.isRequired
-          : isRequired // ignore: cast_nullable_to_non_nullable
-              as bool?,
       canChangePresence: canChangePresence == freezed
           ? _value.canChangePresence
           : canChangePresence // ignore: cast_nullable_to_non_nullable
@@ -192,7 +180,6 @@ abstract class _$MeetingMemberCopyWith<$Res> implements $MeetingMemberCopyWith<$
       @JsonKey(name: 'contact') Contact contact,
       @JsonKey(name: 'presence') String presence,
       @JsonKey(name: 'status') String status,
-      @JsonKey(name: 'is_required') bool? isRequired,
       @JsonKey(name: 'can_change_presence') bool? canChangePresence,
       @JsonKey(name: 'can_change_status') bool? canChangeStatus,
       @JsonKey(name: 'can_remove') bool? canRemove});
@@ -217,7 +204,6 @@ class __$MeetingMemberCopyWithImpl<$Res> extends _$MeetingMemberCopyWithImpl<$Re
     Object? contact = freezed,
     Object? presence = freezed,
     Object? status = freezed,
-    Object? isRequired = freezed,
     Object? canChangePresence = freezed,
     Object? canChangeStatus = freezed,
     Object? canRemove = freezed,
@@ -243,10 +229,6 @@ class __$MeetingMemberCopyWithImpl<$Res> extends _$MeetingMemberCopyWithImpl<$Re
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String,
-      isRequired: isRequired == freezed
-          ? _value.isRequired
-          : isRequired // ignore: cast_nullable_to_non_nullable
-              as bool?,
       canChangePresence: canChangePresence == freezed
           ? _value.canChangePresence
           : canChangePresence // ignore: cast_nullable_to_non_nullable
@@ -272,7 +254,6 @@ class _$_MeetingMember implements _MeetingMember {
       @JsonKey(name: 'contact') required this.contact,
       @JsonKey(name: 'presence') required this.presence,
       @JsonKey(name: 'status') required this.status,
-      @JsonKey(name: 'is_required') this.isRequired = false,
       @JsonKey(name: 'can_change_presence') this.canChangePresence = false,
       @JsonKey(name: 'can_change_status') this.canChangeStatus = false,
       @JsonKey(name: 'can_remove') this.canRemove = false});
@@ -307,11 +288,6 @@ class _$_MeetingMember implements _MeetingMember {
   @override
 
   /// .
-  @JsonKey(name: 'is_required')
-  final bool? isRequired;
-  @override
-
-  /// .
   @JsonKey(name: 'can_change_presence')
   final bool? canChangePresence;
   @override
@@ -327,7 +303,7 @@ class _$_MeetingMember implements _MeetingMember {
 
   @override
   String toString() {
-    return 'MeetingMember(meetingId: $meetingId, chatUuid: $chatUuid, contact: $contact, presence: $presence, status: $status, isRequired: $isRequired, canChangePresence: $canChangePresence, canChangeStatus: $canChangeStatus, canRemove: $canRemove)';
+    return 'MeetingMember(meetingId: $meetingId, chatUuid: $chatUuid, contact: $contact, presence: $presence, status: $status, canChangePresence: $canChangePresence, canChangeStatus: $canChangeStatus, canRemove: $canRemove)';
   }
 
   @override
@@ -340,8 +316,6 @@ class _$_MeetingMember implements _MeetingMember {
             (identical(other.contact, contact) || const DeepCollectionEquality().equals(other.contact, contact)) &&
             (identical(other.presence, presence) || const DeepCollectionEquality().equals(other.presence, presence)) &&
             (identical(other.status, status) || const DeepCollectionEquality().equals(other.status, status)) &&
-            (identical(other.isRequired, isRequired) ||
-                const DeepCollectionEquality().equals(other.isRequired, isRequired)) &&
             (identical(other.canChangePresence, canChangePresence) ||
                 const DeepCollectionEquality().equals(other.canChangePresence, canChangePresence)) &&
             (identical(other.canChangeStatus, canChangeStatus) ||
@@ -358,7 +332,6 @@ class _$_MeetingMember implements _MeetingMember {
       const DeepCollectionEquality().hash(contact) ^
       const DeepCollectionEquality().hash(presence) ^
       const DeepCollectionEquality().hash(status) ^
-      const DeepCollectionEquality().hash(isRequired) ^
       const DeepCollectionEquality().hash(canChangePresence) ^
       const DeepCollectionEquality().hash(canChangeStatus) ^
       const DeepCollectionEquality().hash(canRemove);
@@ -381,7 +354,6 @@ abstract class _MeetingMember implements MeetingMember {
       @JsonKey(name: 'contact') required Contact contact,
       @JsonKey(name: 'presence') required String presence,
       @JsonKey(name: 'status') required String status,
-      @JsonKey(name: 'is_required') bool? isRequired,
       @JsonKey(name: 'can_change_presence') bool? canChangePresence,
       @JsonKey(name: 'can_change_status') bool? canChangeStatus,
       @JsonKey(name: 'can_remove') bool? canRemove}) = _$_MeetingMember;
@@ -413,11 +385,6 @@ abstract class _MeetingMember implements MeetingMember {
   /// .
   @JsonKey(name: 'status')
   String get status => throw _privateConstructorUsedError;
-  @override
-
-  /// .
-  @JsonKey(name: 'is_required')
-  bool? get isRequired => throw _privateConstructorUsedError;
   @override
 
   /// .

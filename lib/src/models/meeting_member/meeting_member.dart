@@ -24,9 +24,6 @@ class MeetingMember with _$MeetingMember {
     @JsonKey(name: 'status') required String status,
 
     /// .
-    @Default(false) @JsonKey(name: 'is_required') bool? isRequired,
-
-    /// .
     @Default(false) @JsonKey(name: 'can_change_presence') bool? canChangePresence,
 
     /// .

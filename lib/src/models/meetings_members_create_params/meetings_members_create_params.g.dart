@@ -10,12 +10,10 @@ _$_MeetingsMembersCreateParams _$$_MeetingsMembersCreateParamsFromJson(Map<Strin
     _$_MeetingsMembersCreateParams(
       jid: json['jid'] as String,
       status: json['status'] as String?,
-      isRequired: json['is_required'] as bool? ?? false,
     );
 
 Map<String, dynamic> _$$_MeetingsMembersCreateParamsToJson(_$_MeetingsMembersCreateParams instance) =>
     <String, dynamic>{
       'jid': instance.jid,
       'status': instance.status,
-      'is_required': instance.isRequired,
     };
