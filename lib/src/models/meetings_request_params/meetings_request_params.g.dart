@@ -18,6 +18,7 @@ _$_MeetingsRequestParams _$$_MeetingsRequestParamsFromJson(Map<String, dynamic> 
       isFreq: json['is_freq'] as bool? ?? false,
       isPublic: json['is_public'] as bool? ?? false,
       isOutside: json['is_outside'] as bool? ?? false,
+      isRequired: json['is_required'] as bool? ?? false,
     );
 
 Map<String, dynamic> _$$_MeetingsRequestParamsToJson(_$_MeetingsRequestParams instance) => <String, dynamic>{
@@ -32,4 +33,5 @@ Map<String, dynamic> _$$_MeetingsRequestParamsToJson(_$_MeetingsRequestParams in
       'is_freq': instance.isFreq,
       'is_public': instance.isPublic,
       'is_outside': instance.isOutside,
+      'is_required': instance.isRequired,
     };

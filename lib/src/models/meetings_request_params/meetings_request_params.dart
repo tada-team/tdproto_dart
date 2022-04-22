@@ -40,6 +40,9 @@ class MeetingsRequestParams with _$MeetingsRequestParams {
 
     /// .
     @Default(false) @JsonKey(name: 'is_outside') bool? isOutside,
+
+    /// .
+    @Default(false) @JsonKey(name: 'is_required') bool? isRequired,
   }) = _MeetingsRequestParams;
 
   factory MeetingsRequestParams.fromJson(Map<String, dynamic> json) => _$MeetingsRequestParamsFromJson(json);

@@ -35,6 +35,7 @@ class _$MeetingTearOff {
       @JsonKey(name: 'is_archive') bool? isArchive = false,
       @JsonKey(name: 'is_public') bool? isPublic = false,
       @JsonKey(name: 'is_outside') bool? isOutside = false,
+      @JsonKey(name: 'is_required') bool? isRequired = false,
       @JsonKey(name: 'can_add_member') bool? canAddMember = false,
       @JsonKey(name: 'can_delete') bool? canDelete = false,
       @JsonKey(name: 'can_edit') bool? canEdit = false,
@@ -54,6 +55,7 @@ class _$MeetingTearOff {
       isArchive: isArchive,
       isPublic: isPublic,
       isOutside: isOutside,
+      isRequired: isRequired,
       canAddMember: canAddMember,
       canDelete: canDelete,
       canEdit: canEdit,
@@ -126,6 +128,10 @@ mixin _$Meeting {
   bool? get isOutside => throw _privateConstructorUsedError;
 
   /// .
+  @JsonKey(name: 'is_required')
+  bool? get isRequired => throw _privateConstructorUsedError;
+
+  /// .
   @JsonKey(name: 'can_add_member')
   bool? get canAddMember => throw _privateConstructorUsedError;
 
@@ -167,6 +173,7 @@ abstract class $MeetingCopyWith<$Res> {
       @JsonKey(name: 'is_archive') bool? isArchive,
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'is_required') bool? isRequired,
       @JsonKey(name: 'can_add_member') bool? canAddMember,
       @JsonKey(name: 'can_delete') bool? canDelete,
       @JsonKey(name: 'can_edit') bool? canEdit,
@@ -199,6 +206,7 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
     Object? isArchive = freezed,
     Object? isPublic = freezed,
     Object? isOutside = freezed,
+    Object? isRequired = freezed,
     Object? canAddMember = freezed,
     Object? canDelete = freezed,
     Object? canEdit = freezed,
@@ -258,6 +266,10 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
           ? _value.isOutside
           : isOutside // ignore: cast_nullable_to_non_nullable
               as bool?,
+      isRequired: isRequired == freezed
+          ? _value.isRequired
+          : isRequired // ignore: cast_nullable_to_non_nullable
+              as bool?,
       canAddMember: canAddMember == freezed
           ? _value.canAddMember
           : canAddMember // ignore: cast_nullable_to_non_nullable
@@ -311,6 +323,7 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
       @JsonKey(name: 'is_archive') bool? isArchive,
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'is_required') bool? isRequired,
       @JsonKey(name: 'can_add_member') bool? canAddMember,
       @JsonKey(name: 'can_delete') bool? canDelete,
       @JsonKey(name: 'can_edit') bool? canEdit,
@@ -343,6 +356,7 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res> implement
     Object? isArchive = freezed,
     Object? isPublic = freezed,
     Object? isOutside = freezed,
+    Object? isRequired = freezed,
     Object? canAddMember = freezed,
     Object? canDelete = freezed,
     Object? canEdit = freezed,
@@ -402,6 +416,10 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res> implement
           ? _value.isOutside
           : isOutside // ignore: cast_nullable_to_non_nullable
               as bool?,
+      isRequired: isRequired == freezed
+          ? _value.isRequired
+          : isRequired // ignore: cast_nullable_to_non_nullable
+              as bool?,
       canAddMember: canAddMember == freezed
           ? _value.canAddMember
           : canAddMember // ignore: cast_nullable_to_non_nullable
@@ -443,6 +461,7 @@ class _$_Meeting implements _Meeting {
       @JsonKey(name: 'is_archive') this.isArchive = false,
       @JsonKey(name: 'is_public') this.isPublic = false,
       @JsonKey(name: 'is_outside') this.isOutside = false,
+      @JsonKey(name: 'is_required') this.isRequired = false,
       @JsonKey(name: 'can_add_member') this.canAddMember = false,
       @JsonKey(name: 'can_delete') this.canDelete = false,
       @JsonKey(name: 'can_edit') this.canEdit = false,
@@ -520,6 +539,11 @@ class _$_Meeting implements _Meeting {
   @override
 
   /// .
+  @JsonKey(name: 'is_required')
+  final bool? isRequired;
+  @override
+
+  /// .
   @JsonKey(name: 'can_add_member')
   final bool? canAddMember;
   @override
@@ -545,7 +569,7 @@ class _$_Meeting implements _Meeting {
 
   @override
   String toString() {
-    return 'Meeting(id: $id, teamUuid: $teamUuid, groupUuid: $groupUuid, ownerUuid: $ownerUuid, personalAccountId: $personalAccountId, title: $title, description: $description, startAt: $startAt, duration: $duration, freq: $freq, isArchive: $isArchive, isPublic: $isPublic, isOutside: $isOutside, canAddMember: $canAddMember, canDelete: $canDelete, canEdit: $canEdit, canJoin: $canJoin, members: $members)';
+    return 'Meeting(id: $id, teamUuid: $teamUuid, groupUuid: $groupUuid, ownerUuid: $ownerUuid, personalAccountId: $personalAccountId, title: $title, description: $description, startAt: $startAt, duration: $duration, freq: $freq, isArchive: $isArchive, isPublic: $isPublic, isOutside: $isOutside, isRequired: $isRequired, canAddMember: $canAddMember, canDelete: $canDelete, canEdit: $canEdit, canJoin: $canJoin, members: $members)';
   }
 
   @override
@@ -571,6 +595,8 @@ class _$_Meeting implements _Meeting {
             (identical(other.isPublic, isPublic) || const DeepCollectionEquality().equals(other.isPublic, isPublic)) &&
             (identical(other.isOutside, isOutside) ||
                 const DeepCollectionEquality().equals(other.isOutside, isOutside)) &&
+            (identical(other.isRequired, isRequired) ||
+                const DeepCollectionEquality().equals(other.isRequired, isRequired)) &&
             (identical(other.canAddMember, canAddMember) ||
                 const DeepCollectionEquality().equals(other.canAddMember, canAddMember)) &&
             (identical(other.canDelete, canDelete) ||
@@ -596,6 +622,7 @@ class _$_Meeting implements _Meeting {
       const DeepCollectionEquality().hash(isArchive) ^
       const DeepCollectionEquality().hash(isPublic) ^
       const DeepCollectionEquality().hash(isOutside) ^
+      const DeepCollectionEquality().hash(isRequired) ^
       const DeepCollectionEquality().hash(canAddMember) ^
       const DeepCollectionEquality().hash(canDelete) ^
       const DeepCollectionEquality().hash(canEdit) ^
@@ -627,6 +654,7 @@ abstract class _Meeting implements Meeting {
       @JsonKey(name: 'is_archive') bool? isArchive,
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'is_required') bool? isRequired,
       @JsonKey(name: 'can_add_member') bool? canAddMember,
       @JsonKey(name: 'can_delete') bool? canDelete,
       @JsonKey(name: 'can_edit') bool? canEdit,
@@ -701,6 +729,11 @@ abstract class _Meeting implements Meeting {
   /// .
   @JsonKey(name: 'is_outside')
   bool? get isOutside => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'is_required')
+  bool? get isRequired => throw _privateConstructorUsedError;
   @override
 
   /// .

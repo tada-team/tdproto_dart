@@ -48,6 +48,9 @@ class Meeting with _$Meeting {
     @Default(false) @JsonKey(name: 'is_outside') bool? isOutside,
 
     /// .
+    @Default(false) @JsonKey(name: 'is_required') bool? isRequired,
+
+    /// .
     @Default(false) @JsonKey(name: 'can_add_member') bool? canAddMember,
 
     /// .

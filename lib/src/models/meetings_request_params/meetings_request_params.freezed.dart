@@ -32,7 +32,8 @@ class _$MeetingsRequestParamsTearOff {
       @JsonKey(name: 'is_archive') bool? isArchive = false,
       @JsonKey(name: 'is_freq') bool? isFreq = false,
       @JsonKey(name: 'is_public') bool? isPublic = false,
-      @JsonKey(name: 'is_outside') bool? isOutside = false}) {
+      @JsonKey(name: 'is_outside') bool? isOutside = false,
+      @JsonKey(name: 'is_required') bool? isRequired = false}) {
     return _MeetingsRequestParams(
       teamUuid: teamUuid,
       year: year,
@@ -45,6 +46,7 @@ class _$MeetingsRequestParamsTearOff {
       isFreq: isFreq,
       isPublic: isPublic,
       isOutside: isOutside,
+      isRequired: isRequired,
     );
   }
 
@@ -102,6 +104,10 @@ mixin _$MeetingsRequestParams {
   @JsonKey(name: 'is_outside')
   bool? get isOutside => throw _privateConstructorUsedError;
 
+  /// .
+  @JsonKey(name: 'is_required')
+  bool? get isRequired => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $MeetingsRequestParamsCopyWith<MeetingsRequestParams> get copyWith => throw _privateConstructorUsedError;
@@ -122,7 +128,8 @@ abstract class $MeetingsRequestParamsCopyWith<$Res> {
       @JsonKey(name: 'is_archive') bool? isArchive,
       @JsonKey(name: 'is_freq') bool? isFreq,
       @JsonKey(name: 'is_public') bool? isPublic,
-      @JsonKey(name: 'is_outside') bool? isOutside});
+      @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'is_required') bool? isRequired});
 }
 
 /// @nodoc
@@ -146,6 +153,7 @@ class _$MeetingsRequestParamsCopyWithImpl<$Res> implements $MeetingsRequestParam
     Object? isFreq = freezed,
     Object? isPublic = freezed,
     Object? isOutside = freezed,
+    Object? isRequired = freezed,
   }) {
     return _then(_value.copyWith(
       teamUuid: teamUuid == freezed
@@ -192,6 +200,10 @@ class _$MeetingsRequestParamsCopyWithImpl<$Res> implements $MeetingsRequestParam
           ? _value.isOutside
           : isOutside // ignore: cast_nullable_to_non_nullable
               as bool?,
+      isRequired: isRequired == freezed
+          ? _value.isRequired
+          : isRequired // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -212,7 +224,8 @@ abstract class _$MeetingsRequestParamsCopyWith<$Res> implements $MeetingsRequest
       @JsonKey(name: 'is_archive') bool? isArchive,
       @JsonKey(name: 'is_freq') bool? isFreq,
       @JsonKey(name: 'is_public') bool? isPublic,
-      @JsonKey(name: 'is_outside') bool? isOutside});
+      @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'is_required') bool? isRequired});
 }
 
 /// @nodoc
@@ -237,6 +250,7 @@ class __$MeetingsRequestParamsCopyWithImpl<$Res> extends _$MeetingsRequestParams
     Object? isFreq = freezed,
     Object? isPublic = freezed,
     Object? isOutside = freezed,
+    Object? isRequired = freezed,
   }) {
     return _then(_MeetingsRequestParams(
       teamUuid: teamUuid == freezed
@@ -283,6 +297,10 @@ class __$MeetingsRequestParamsCopyWithImpl<$Res> extends _$MeetingsRequestParams
           ? _value.isOutside
           : isOutside // ignore: cast_nullable_to_non_nullable
               as bool?,
+      isRequired: isRequired == freezed
+          ? _value.isRequired
+          : isRequired // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -301,7 +319,8 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
       @JsonKey(name: 'is_archive') this.isArchive = false,
       @JsonKey(name: 'is_freq') this.isFreq = false,
       @JsonKey(name: 'is_public') this.isPublic = false,
-      @JsonKey(name: 'is_outside') this.isOutside = false});
+      @JsonKey(name: 'is_outside') this.isOutside = false,
+      @JsonKey(name: 'is_required') this.isRequired = false});
 
   factory _$_MeetingsRequestParams.fromJson(Map<String, dynamic> json) => _$$_MeetingsRequestParamsFromJson(json);
 
@@ -360,10 +379,15 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
   /// .
   @JsonKey(name: 'is_outside')
   final bool? isOutside;
+  @override
+
+  /// .
+  @JsonKey(name: 'is_required')
+  final bool? isRequired;
 
   @override
   String toString() {
-    return 'MeetingsRequestParams(teamUuid: $teamUuid, year: $year, month: $month, day: $day, members: $members, limit: $limit, offset: $offset, isArchive: $isArchive, isFreq: $isFreq, isPublic: $isPublic, isOutside: $isOutside)';
+    return 'MeetingsRequestParams(teamUuid: $teamUuid, year: $year, month: $month, day: $day, members: $members, limit: $limit, offset: $offset, isArchive: $isArchive, isFreq: $isFreq, isPublic: $isPublic, isOutside: $isOutside, isRequired: $isRequired)';
   }
 
   @override
@@ -382,7 +406,9 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
             (identical(other.isFreq, isFreq) || const DeepCollectionEquality().equals(other.isFreq, isFreq)) &&
             (identical(other.isPublic, isPublic) || const DeepCollectionEquality().equals(other.isPublic, isPublic)) &&
             (identical(other.isOutside, isOutside) ||
-                const DeepCollectionEquality().equals(other.isOutside, isOutside)));
+                const DeepCollectionEquality().equals(other.isOutside, isOutside)) &&
+            (identical(other.isRequired, isRequired) ||
+                const DeepCollectionEquality().equals(other.isRequired, isRequired)));
   }
 
   @override
@@ -398,7 +424,8 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
       const DeepCollectionEquality().hash(isArchive) ^
       const DeepCollectionEquality().hash(isFreq) ^
       const DeepCollectionEquality().hash(isPublic) ^
-      const DeepCollectionEquality().hash(isOutside);
+      const DeepCollectionEquality().hash(isOutside) ^
+      const DeepCollectionEquality().hash(isRequired);
 
   @JsonKey(ignore: true)
   @override
@@ -423,7 +450,8 @@ abstract class _MeetingsRequestParams implements MeetingsRequestParams {
       @JsonKey(name: 'is_archive') bool? isArchive,
       @JsonKey(name: 'is_freq') bool? isFreq,
       @JsonKey(name: 'is_public') bool? isPublic,
-      @JsonKey(name: 'is_outside') bool? isOutside}) = _$_MeetingsRequestParams;
+      @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'is_required') bool? isRequired}) = _$_MeetingsRequestParams;
 
   factory _MeetingsRequestParams.fromJson(Map<String, dynamic> json) = _$_MeetingsRequestParams.fromJson;
 
@@ -482,6 +510,11 @@ abstract class _MeetingsRequestParams implements MeetingsRequestParams {
   /// .
   @JsonKey(name: 'is_outside')
   bool? get isOutside => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'is_required')
+  bool? get isRequired => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MeetingsRequestParamsCopyWith<_MeetingsRequestParams> get copyWith => throw _privateConstructorUsedError;
