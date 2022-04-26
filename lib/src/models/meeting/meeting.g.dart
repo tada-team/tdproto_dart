@@ -9,7 +9,7 @@ part of 'meeting.dart';
 _$_Meeting _$$_MeetingFromJson(Map<String, dynamic> json) => _$_Meeting(
       id: json['id'] as String,
       teamUuid: json['team_uuid'] as String,
-      groupUuid: json['group_uuid'] as String,
+      chatUuid: json['chat_uuid'] as String,
       ownerUuid: json['owner_uuid'] as String,
       personalAccountId: json['personal_account_id'] as String?,
       title: json['title'] as String?,
@@ -33,7 +33,7 @@ _$_Meeting _$$_MeetingFromJson(Map<String, dynamic> json) => _$_Meeting(
 Map<String, dynamic> _$$_MeetingToJson(_$_Meeting instance) => <String, dynamic>{
       'id': instance.id,
       'team_uuid': instance.teamUuid,
-      'group_uuid': instance.groupUuid,
+      'chat_uuid': instance.chatUuid,
       'owner_uuid': instance.ownerUuid,
       'personal_account_id': instance.personalAccountId,
       'title': instance.title,

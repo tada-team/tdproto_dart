@@ -15,7 +15,7 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'team_uuid') required String teamUuid,
 
     /// .
-    @JsonKey(name: 'group_uuid') required String groupUuid,
+    @JsonKey(name: 'chat_uuid') required String chatUuid,
 
     /// .
     @JsonKey(name: 'owner_uuid') required String ownerUuid,
