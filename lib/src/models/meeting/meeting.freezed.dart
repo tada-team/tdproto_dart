@@ -25,6 +25,7 @@ class _$MeetingTearOff {
       {@JsonKey(name: 'id') required String id,
       @JsonKey(name: 'team_uuid') required String teamUuid,
       @JsonKey(name: 'chat_uuid') required String chatUuid,
+      @JsonKey(name: 'owner_jid') required String ownerJid,
       @JsonKey(name: 'owner_uuid') required String ownerUuid,
       @JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'title') String? title,
@@ -45,6 +46,7 @@ class _$MeetingTearOff {
       id: id,
       teamUuid: teamUuid,
       chatUuid: chatUuid,
+      ownerJid: ownerJid,
       ownerUuid: ownerUuid,
       personalAccountId: personalAccountId,
       title: title,
@@ -85,6 +87,10 @@ mixin _$Meeting {
   /// .
   @JsonKey(name: 'chat_uuid')
   String get chatUuid => throw _privateConstructorUsedError;
+
+  /// .
+  @JsonKey(name: 'owner_jid')
+  String get ownerJid => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'owner_uuid')
@@ -163,6 +169,7 @@ abstract class $MeetingCopyWith<$Res> {
       {@JsonKey(name: 'id') String id,
       @JsonKey(name: 'team_uuid') String teamUuid,
       @JsonKey(name: 'chat_uuid') String chatUuid,
+      @JsonKey(name: 'owner_jid') String ownerJid,
       @JsonKey(name: 'owner_uuid') String ownerUuid,
       @JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'title') String? title,
@@ -196,6 +203,7 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
     Object? id = freezed,
     Object? teamUuid = freezed,
     Object? chatUuid = freezed,
+    Object? ownerJid = freezed,
     Object? ownerUuid = freezed,
     Object? personalAccountId = freezed,
     Object? title = freezed,
@@ -225,6 +233,10 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
       chatUuid: chatUuid == freezed
           ? _value.chatUuid
           : chatUuid // ignore: cast_nullable_to_non_nullable
+              as String,
+      ownerJid: ownerJid == freezed
+          ? _value.ownerJid
+          : ownerJid // ignore: cast_nullable_to_non_nullable
               as String,
       ownerUuid: ownerUuid == freezed
           ? _value.ownerUuid
@@ -313,6 +325,7 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
       {@JsonKey(name: 'id') String id,
       @JsonKey(name: 'team_uuid') String teamUuid,
       @JsonKey(name: 'chat_uuid') String chatUuid,
+      @JsonKey(name: 'owner_jid') String ownerJid,
       @JsonKey(name: 'owner_uuid') String ownerUuid,
       @JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'title') String? title,
@@ -346,6 +359,7 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res> implement
     Object? id = freezed,
     Object? teamUuid = freezed,
     Object? chatUuid = freezed,
+    Object? ownerJid = freezed,
     Object? ownerUuid = freezed,
     Object? personalAccountId = freezed,
     Object? title = freezed,
@@ -375,6 +389,10 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res> implement
       chatUuid: chatUuid == freezed
           ? _value.chatUuid
           : chatUuid // ignore: cast_nullable_to_non_nullable
+              as String,
+      ownerJid: ownerJid == freezed
+          ? _value.ownerJid
+          : ownerJid // ignore: cast_nullable_to_non_nullable
               as String,
       ownerUuid: ownerUuid == freezed
           ? _value.ownerUuid
@@ -451,6 +469,7 @@ class _$_Meeting implements _Meeting {
       {@JsonKey(name: 'id') required this.id,
       @JsonKey(name: 'team_uuid') required this.teamUuid,
       @JsonKey(name: 'chat_uuid') required this.chatUuid,
+      @JsonKey(name: 'owner_jid') required this.ownerJid,
       @JsonKey(name: 'owner_uuid') required this.ownerUuid,
       @JsonKey(name: 'personal_account_id') this.personalAccountId,
       @JsonKey(name: 'title') this.title,
@@ -485,6 +504,11 @@ class _$_Meeting implements _Meeting {
   /// .
   @JsonKey(name: 'chat_uuid')
   final String chatUuid;
+  @override
+
+  /// .
+  @JsonKey(name: 'owner_jid')
+  final String ownerJid;
   @override
 
   /// .
@@ -569,7 +593,7 @@ class _$_Meeting implements _Meeting {
 
   @override
   String toString() {
-    return 'Meeting(id: $id, teamUuid: $teamUuid, chatUuid: $chatUuid, ownerUuid: $ownerUuid, personalAccountId: $personalAccountId, title: $title, description: $description, startAt: $startAt, duration: $duration, freq: $freq, isArchive: $isArchive, isPublic: $isPublic, isOutside: $isOutside, isRequired: $isRequired, canAddMember: $canAddMember, canDelete: $canDelete, canEdit: $canEdit, canJoin: $canJoin, members: $members)';
+    return 'Meeting(id: $id, teamUuid: $teamUuid, chatUuid: $chatUuid, ownerJid: $ownerJid, ownerUuid: $ownerUuid, personalAccountId: $personalAccountId, title: $title, description: $description, startAt: $startAt, duration: $duration, freq: $freq, isArchive: $isArchive, isPublic: $isPublic, isOutside: $isOutside, isRequired: $isRequired, canAddMember: $canAddMember, canDelete: $canDelete, canEdit: $canEdit, canJoin: $canJoin, members: $members)';
   }
 
   @override
@@ -579,6 +603,7 @@ class _$_Meeting implements _Meeting {
             (identical(other.id, id) || const DeepCollectionEquality().equals(other.id, id)) &&
             (identical(other.teamUuid, teamUuid) || const DeepCollectionEquality().equals(other.teamUuid, teamUuid)) &&
             (identical(other.chatUuid, chatUuid) || const DeepCollectionEquality().equals(other.chatUuid, chatUuid)) &&
+            (identical(other.ownerJid, ownerJid) || const DeepCollectionEquality().equals(other.ownerJid, ownerJid)) &&
             (identical(other.ownerUuid, ownerUuid) ||
                 const DeepCollectionEquality().equals(other.ownerUuid, ownerUuid)) &&
             (identical(other.personalAccountId, personalAccountId) ||
@@ -611,6 +636,7 @@ class _$_Meeting implements _Meeting {
       const DeepCollectionEquality().hash(id) ^
       const DeepCollectionEquality().hash(teamUuid) ^
       const DeepCollectionEquality().hash(chatUuid) ^
+      const DeepCollectionEquality().hash(ownerJid) ^
       const DeepCollectionEquality().hash(ownerUuid) ^
       const DeepCollectionEquality().hash(personalAccountId) ^
       const DeepCollectionEquality().hash(title) ^
@@ -643,6 +669,7 @@ abstract class _Meeting implements Meeting {
       {@JsonKey(name: 'id') required String id,
       @JsonKey(name: 'team_uuid') required String teamUuid,
       @JsonKey(name: 'chat_uuid') required String chatUuid,
+      @JsonKey(name: 'owner_jid') required String ownerJid,
       @JsonKey(name: 'owner_uuid') required String ownerUuid,
       @JsonKey(name: 'personal_account_id') String? personalAccountId,
       @JsonKey(name: 'title') String? title,
@@ -677,6 +704,11 @@ abstract class _Meeting implements Meeting {
   /// .
   @JsonKey(name: 'chat_uuid')
   String get chatUuid => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'owner_jid')
+  String get ownerJid => throw _privateConstructorUsedError;
   @override
 
   /// .
