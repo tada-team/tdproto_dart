@@ -28,7 +28,8 @@ class _$SubtaskTearOff {
       @JsonKey(name: 'num') required int num,
       @JsonKey(name: 'display_name') required String displayName,
       @JsonKey(name: 'public') bool? isPublic = false,
-      @JsonKey(name: 'task_status') String? taskStatus}) {
+      @JsonKey(name: 'task_status') String? taskStatus,
+      @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline}) {
     return _Subtask(
       jid: jid,
       assignee: assignee,
@@ -37,6 +38,7 @@ class _$SubtaskTearOff {
       displayName: displayName,
       isPublic: isPublic,
       taskStatus: taskStatus,
+      deadline: deadline,
     );
   }
 
@@ -78,6 +80,11 @@ mixin _$Subtask {
   @JsonKey(name: 'task_status')
   String? get taskStatus => throw _privateConstructorUsedError;
 
+  /// Deadline task deadline.
+  @JsonKey(name: 'deadline')
+  @DateTimeConverter()
+  DateTime? get deadline => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $SubtaskCopyWith<Subtask> get copyWith => throw _privateConstructorUsedError;
@@ -93,7 +100,8 @@ abstract class $SubtaskCopyWith<$Res> {
       @JsonKey(name: 'num') int num,
       @JsonKey(name: 'display_name') String displayName,
       @JsonKey(name: 'public') bool? isPublic,
-      @JsonKey(name: 'task_status') String? taskStatus});
+      @JsonKey(name: 'task_status') String? taskStatus,
+      @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline});
 }
 
 /// @nodoc
@@ -113,6 +121,7 @@ class _$SubtaskCopyWithImpl<$Res> implements $SubtaskCopyWith<$Res> {
     Object? displayName = freezed,
     Object? isPublic = freezed,
     Object? taskStatus = freezed,
+    Object? deadline = freezed,
   }) {
     return _then(_value.copyWith(
       jid: jid == freezed
@@ -143,6 +152,10 @@ class _$SubtaskCopyWithImpl<$Res> implements $SubtaskCopyWith<$Res> {
           ? _value.taskStatus
           : taskStatus // ignore: cast_nullable_to_non_nullable
               as String?,
+      deadline: deadline == freezed
+          ? _value.deadline
+          : deadline // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
     ));
   }
 }
@@ -158,7 +171,8 @@ abstract class _$SubtaskCopyWith<$Res> implements $SubtaskCopyWith<$Res> {
       @JsonKey(name: 'num') int num,
       @JsonKey(name: 'display_name') String displayName,
       @JsonKey(name: 'public') bool? isPublic,
-      @JsonKey(name: 'task_status') String? taskStatus});
+      @JsonKey(name: 'task_status') String? taskStatus,
+      @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline});
 }
 
 /// @nodoc
@@ -177,6 +191,7 @@ class __$SubtaskCopyWithImpl<$Res> extends _$SubtaskCopyWithImpl<$Res> implement
     Object? displayName = freezed,
     Object? isPublic = freezed,
     Object? taskStatus = freezed,
+    Object? deadline = freezed,
   }) {
     return _then(_Subtask(
       jid: jid == freezed
@@ -207,6 +222,10 @@ class __$SubtaskCopyWithImpl<$Res> extends _$SubtaskCopyWithImpl<$Res> implement
           ? _value.taskStatus
           : taskStatus // ignore: cast_nullable_to_non_nullable
               as String?,
+      deadline: deadline == freezed
+          ? _value.deadline
+          : deadline // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
     ));
   }
 }
@@ -221,7 +240,8 @@ class _$_Subtask implements _Subtask {
       @JsonKey(name: 'num') required this.num,
       @JsonKey(name: 'display_name') required this.displayName,
       @JsonKey(name: 'public') this.isPublic = false,
-      @JsonKey(name: 'task_status') this.taskStatus});
+      @JsonKey(name: 'task_status') this.taskStatus,
+      @JsonKey(name: 'deadline') @DateTimeConverter() this.deadline});
 
   factory _$_Subtask.fromJson(Map<String, dynamic> json) => _$$_SubtaskFromJson(json);
 
@@ -260,10 +280,16 @@ class _$_Subtask implements _Subtask {
   /// Subtask task status.
   @JsonKey(name: 'task_status')
   final String? taskStatus;
+  @override
+
+  /// Deadline task deadline.
+  @JsonKey(name: 'deadline')
+  @DateTimeConverter()
+  final DateTime? deadline;
 
   @override
   String toString() {
-    return 'Subtask(jid: $jid, assignee: $assignee, title: $title, num: $num, displayName: $displayName, isPublic: $isPublic, taskStatus: $taskStatus)';
+    return 'Subtask(jid: $jid, assignee: $assignee, title: $title, num: $num, displayName: $displayName, isPublic: $isPublic, taskStatus: $taskStatus, deadline: $deadline)';
   }
 
   @override
@@ -278,7 +304,8 @@ class _$_Subtask implements _Subtask {
                 const DeepCollectionEquality().equals(other.displayName, displayName)) &&
             (identical(other.isPublic, isPublic) || const DeepCollectionEquality().equals(other.isPublic, isPublic)) &&
             (identical(other.taskStatus, taskStatus) ||
-                const DeepCollectionEquality().equals(other.taskStatus, taskStatus)));
+                const DeepCollectionEquality().equals(other.taskStatus, taskStatus)) &&
+            (identical(other.deadline, deadline) || const DeepCollectionEquality().equals(other.deadline, deadline)));
   }
 
   @override
@@ -290,7 +317,8 @@ class _$_Subtask implements _Subtask {
       const DeepCollectionEquality().hash(num) ^
       const DeepCollectionEquality().hash(displayName) ^
       const DeepCollectionEquality().hash(isPublic) ^
-      const DeepCollectionEquality().hash(taskStatus);
+      const DeepCollectionEquality().hash(taskStatus) ^
+      const DeepCollectionEquality().hash(deadline);
 
   @JsonKey(ignore: true)
   @override
@@ -310,7 +338,8 @@ abstract class _Subtask implements Subtask {
       @JsonKey(name: 'num') required int num,
       @JsonKey(name: 'display_name') required String displayName,
       @JsonKey(name: 'public') bool? isPublic,
-      @JsonKey(name: 'task_status') String? taskStatus}) = _$_Subtask;
+      @JsonKey(name: 'task_status') String? taskStatus,
+      @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline}) = _$_Subtask;
 
   factory _Subtask.fromJson(Map<String, dynamic> json) = _$_Subtask.fromJson;
 
@@ -349,6 +378,12 @@ abstract class _Subtask implements Subtask {
   /// Subtask task status.
   @JsonKey(name: 'task_status')
   String? get taskStatus => throw _privateConstructorUsedError;
+  @override
+
+  /// Deadline task deadline.
+  @JsonKey(name: 'deadline')
+  @DateTimeConverter()
+  DateTime? get deadline => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$SubtaskCopyWith<_Subtask> get copyWith => throw _privateConstructorUsedError;
