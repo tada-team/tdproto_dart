@@ -2,7 +2,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'meetings_members_request_params.dart';
+part of 'meetings_members_get_request_params.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -13,15 +13,15 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-MeetingsMembersRequestParams _$MeetingsMembersRequestParamsFromJson(Map<String, dynamic> json) {
-  return _MeetingsMembersRequestParams.fromJson(json);
+MeetingsMembersGetRequestParams _$MeetingsMembersGetRequestParamsFromJson(Map<String, dynamic> json) {
+  return _MeetingsMembersGetRequestParams.fromJson(json);
 }
 
 /// @nodoc
-class _$MeetingsMembersRequestParamsTearOff {
-  const _$MeetingsMembersRequestParamsTearOff();
+class _$MeetingsMembersGetRequestParamsTearOff {
+  const _$MeetingsMembersGetRequestParamsTearOff();
 
-  _MeetingsMembersRequestParams call(
+  _MeetingsMembersGetRequestParams call(
       {@JsonKey(name: 'meeting_id') required String meetingId,
       @JsonKey(name: 'team_uuid') required String teamUuid,
       @JsonKey(name: 'uuid_sections') List<String>? uuidSections,
@@ -29,7 +29,7 @@ class _$MeetingsMembersRequestParamsTearOff {
       @JsonKey(name: 'status') String? status,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset}) {
-    return _MeetingsMembersRequestParams(
+    return _MeetingsMembersGetRequestParams(
       meetingId: meetingId,
       teamUuid: teamUuid,
       uuidSections: uuidSections,
@@ -40,16 +40,16 @@ class _$MeetingsMembersRequestParamsTearOff {
     );
   }
 
-  MeetingsMembersRequestParams fromJson(Map<String, Object> json) {
-    return MeetingsMembersRequestParams.fromJson(json);
+  MeetingsMembersGetRequestParams fromJson(Map<String, Object> json) {
+    return MeetingsMembersGetRequestParams.fromJson(json);
   }
 }
 
 /// @nodoc
-const $MeetingsMembersRequestParams = _$MeetingsMembersRequestParamsTearOff();
+const $MeetingsMembersGetRequestParams = _$MeetingsMembersGetRequestParamsTearOff();
 
 /// @nodoc
-mixin _$MeetingsMembersRequestParams {
+mixin _$MeetingsMembersGetRequestParams {
   /// .
   @JsonKey(name: 'meeting_id')
   String get meetingId => throw _privateConstructorUsedError;
@@ -80,15 +80,15 @@ mixin _$MeetingsMembersRequestParams {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $MeetingsMembersRequestParamsCopyWith<MeetingsMembersRequestParams> get copyWith =>
+  $MeetingsMembersGetRequestParamsCopyWith<MeetingsMembersGetRequestParams> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $MeetingsMembersRequestParamsCopyWith<$Res> {
-  factory $MeetingsMembersRequestParamsCopyWith(
-          MeetingsMembersRequestParams value, $Res Function(MeetingsMembersRequestParams) then) =
-      _$MeetingsMembersRequestParamsCopyWithImpl<$Res>;
+abstract class $MeetingsMembersGetRequestParamsCopyWith<$Res> {
+  factory $MeetingsMembersGetRequestParamsCopyWith(
+          MeetingsMembersGetRequestParams value, $Res Function(MeetingsMembersGetRequestParams) then) =
+      _$MeetingsMembersGetRequestParamsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'meeting_id') String meetingId,
       @JsonKey(name: 'team_uuid') String teamUuid,
@@ -100,12 +100,12 @@ abstract class $MeetingsMembersRequestParamsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MeetingsMembersRequestParamsCopyWithImpl<$Res> implements $MeetingsMembersRequestParamsCopyWith<$Res> {
-  _$MeetingsMembersRequestParamsCopyWithImpl(this._value, this._then);
+class _$MeetingsMembersGetRequestParamsCopyWithImpl<$Res> implements $MeetingsMembersGetRequestParamsCopyWith<$Res> {
+  _$MeetingsMembersGetRequestParamsCopyWithImpl(this._value, this._then);
 
-  final MeetingsMembersRequestParams _value;
+  final MeetingsMembersGetRequestParams _value;
   // ignore: unused_field
-  final $Res Function(MeetingsMembersRequestParams) _then;
+  final $Res Function(MeetingsMembersGetRequestParams) _then;
 
   @override
   $Res call({
@@ -151,10 +151,11 @@ class _$MeetingsMembersRequestParamsCopyWithImpl<$Res> implements $MeetingsMembe
 }
 
 /// @nodoc
-abstract class _$MeetingsMembersRequestParamsCopyWith<$Res> implements $MeetingsMembersRequestParamsCopyWith<$Res> {
-  factory _$MeetingsMembersRequestParamsCopyWith(
-          _MeetingsMembersRequestParams value, $Res Function(_MeetingsMembersRequestParams) then) =
-      __$MeetingsMembersRequestParamsCopyWithImpl<$Res>;
+abstract class _$MeetingsMembersGetRequestParamsCopyWith<$Res>
+    implements $MeetingsMembersGetRequestParamsCopyWith<$Res> {
+  factory _$MeetingsMembersGetRequestParamsCopyWith(
+          _MeetingsMembersGetRequestParams value, $Res Function(_MeetingsMembersGetRequestParams) then) =
+      __$MeetingsMembersGetRequestParamsCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'meeting_id') String meetingId,
@@ -167,14 +168,14 @@ abstract class _$MeetingsMembersRequestParamsCopyWith<$Res> implements $Meetings
 }
 
 /// @nodoc
-class __$MeetingsMembersRequestParamsCopyWithImpl<$Res> extends _$MeetingsMembersRequestParamsCopyWithImpl<$Res>
-    implements _$MeetingsMembersRequestParamsCopyWith<$Res> {
-  __$MeetingsMembersRequestParamsCopyWithImpl(
-      _MeetingsMembersRequestParams _value, $Res Function(_MeetingsMembersRequestParams) _then)
-      : super(_value, (v) => _then(v as _MeetingsMembersRequestParams));
+class __$MeetingsMembersGetRequestParamsCopyWithImpl<$Res> extends _$MeetingsMembersGetRequestParamsCopyWithImpl<$Res>
+    implements _$MeetingsMembersGetRequestParamsCopyWith<$Res> {
+  __$MeetingsMembersGetRequestParamsCopyWithImpl(
+      _MeetingsMembersGetRequestParams _value, $Res Function(_MeetingsMembersGetRequestParams) _then)
+      : super(_value, (v) => _then(v as _MeetingsMembersGetRequestParams));
 
   @override
-  _MeetingsMembersRequestParams get _value => super._value as _MeetingsMembersRequestParams;
+  _MeetingsMembersGetRequestParams get _value => super._value as _MeetingsMembersGetRequestParams;
 
   @override
   $Res call({
@@ -186,7 +187,7 @@ class __$MeetingsMembersRequestParamsCopyWithImpl<$Res> extends _$MeetingsMember
     Object? limit = freezed,
     Object? offset = freezed,
   }) {
-    return _then(_MeetingsMembersRequestParams(
+    return _then(_MeetingsMembersGetRequestParams(
       meetingId: meetingId == freezed
           ? _value.meetingId
           : meetingId // ignore: cast_nullable_to_non_nullable
@@ -221,8 +222,8 @@ class __$MeetingsMembersRequestParamsCopyWithImpl<$Res> extends _$MeetingsMember
 
 /// @nodoc
 @JsonSerializable()
-class _$_MeetingsMembersRequestParams implements _MeetingsMembersRequestParams {
-  const _$_MeetingsMembersRequestParams(
+class _$_MeetingsMembersGetRequestParams implements _MeetingsMembersGetRequestParams {
+  const _$_MeetingsMembersGetRequestParams(
       {@JsonKey(name: 'meeting_id') required this.meetingId,
       @JsonKey(name: 'team_uuid') required this.teamUuid,
       @JsonKey(name: 'uuid_sections') this.uuidSections,
@@ -231,8 +232,8 @@ class _$_MeetingsMembersRequestParams implements _MeetingsMembersRequestParams {
       @JsonKey(name: 'limit') this.limit,
       @JsonKey(name: 'offset') this.offset});
 
-  factory _$_MeetingsMembersRequestParams.fromJson(Map<String, dynamic> json) =>
-      _$$_MeetingsMembersRequestParamsFromJson(json);
+  factory _$_MeetingsMembersGetRequestParams.fromJson(Map<String, dynamic> json) =>
+      _$$_MeetingsMembersGetRequestParamsFromJson(json);
 
   @override
 
@@ -272,13 +273,13 @@ class _$_MeetingsMembersRequestParams implements _MeetingsMembersRequestParams {
 
   @override
   String toString() {
-    return 'MeetingsMembersRequestParams(meetingId: $meetingId, teamUuid: $teamUuid, uuidSections: $uuidSections, presence: $presence, status: $status, limit: $limit, offset: $offset)';
+    return 'MeetingsMembersGetRequestParams(meetingId: $meetingId, teamUuid: $teamUuid, uuidSections: $uuidSections, presence: $presence, status: $status, limit: $limit, offset: $offset)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _MeetingsMembersRequestParams &&
+        (other is _MeetingsMembersGetRequestParams &&
             (identical(other.meetingId, meetingId) ||
                 const DeepCollectionEquality().equals(other.meetingId, meetingId)) &&
             (identical(other.teamUuid, teamUuid) || const DeepCollectionEquality().equals(other.teamUuid, teamUuid)) &&
@@ -303,26 +304,27 @@ class _$_MeetingsMembersRequestParams implements _MeetingsMembersRequestParams {
 
   @JsonKey(ignore: true)
   @override
-  _$MeetingsMembersRequestParamsCopyWith<_MeetingsMembersRequestParams> get copyWith =>
-      __$MeetingsMembersRequestParamsCopyWithImpl<_MeetingsMembersRequestParams>(this, _$identity);
+  _$MeetingsMembersGetRequestParamsCopyWith<_MeetingsMembersGetRequestParams> get copyWith =>
+      __$MeetingsMembersGetRequestParamsCopyWithImpl<_MeetingsMembersGetRequestParams>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MeetingsMembersRequestParamsToJson(this);
+    return _$$_MeetingsMembersGetRequestParamsToJson(this);
   }
 }
 
-abstract class _MeetingsMembersRequestParams implements MeetingsMembersRequestParams {
-  const factory _MeetingsMembersRequestParams(
+abstract class _MeetingsMembersGetRequestParams implements MeetingsMembersGetRequestParams {
+  const factory _MeetingsMembersGetRequestParams(
       {@JsonKey(name: 'meeting_id') required String meetingId,
       @JsonKey(name: 'team_uuid') required String teamUuid,
       @JsonKey(name: 'uuid_sections') List<String>? uuidSections,
       @JsonKey(name: 'presence') String? presence,
       @JsonKey(name: 'status') String? status,
       @JsonKey(name: 'limit') int? limit,
-      @JsonKey(name: 'offset') int? offset}) = _$_MeetingsMembersRequestParams;
+      @JsonKey(name: 'offset') int? offset}) = _$_MeetingsMembersGetRequestParams;
 
-  factory _MeetingsMembersRequestParams.fromJson(Map<String, dynamic> json) = _$_MeetingsMembersRequestParams.fromJson;
+  factory _MeetingsMembersGetRequestParams.fromJson(Map<String, dynamic> json) =
+      _$_MeetingsMembersGetRequestParams.fromJson;
 
   @override
 
@@ -361,6 +363,6 @@ abstract class _MeetingsMembersRequestParams implements MeetingsMembersRequestPa
   int? get offset => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$MeetingsMembersRequestParamsCopyWith<_MeetingsMembersRequestParams> get copyWith =>
+  _$MeetingsMembersGetRequestParamsCopyWith<_MeetingsMembersGetRequestParams> get copyWith =>
       throw _privateConstructorUsedError;
 }

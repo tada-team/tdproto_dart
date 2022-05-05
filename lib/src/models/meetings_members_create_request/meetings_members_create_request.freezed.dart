@@ -22,7 +22,7 @@ class _$MeetingsMembersCreateRequestTearOff {
   const _$MeetingsMembersCreateRequestTearOff();
 
   _MeetingsMembersCreateRequest call(
-      {@JsonKey(name: 'members') required List<MeetingsMembersCreateParams> members,
+      {@JsonKey(name: 'members') required List<MeetingsMemberCreateParams> members,
       @JsonKey(name: 'team_uuid') required String teamUuid}) {
     return _MeetingsMembersCreateRequest(
       members: members,
@@ -42,7 +42,7 @@ const $MeetingsMembersCreateRequest = _$MeetingsMembersCreateRequestTearOff();
 mixin _$MeetingsMembersCreateRequest {
   /// .
   @JsonKey(name: 'members')
-  List<MeetingsMembersCreateParams> get members => throw _privateConstructorUsedError;
+  List<MeetingsMemberCreateParams> get members => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'team_uuid')
@@ -60,7 +60,7 @@ abstract class $MeetingsMembersCreateRequestCopyWith<$Res> {
           MeetingsMembersCreateRequest value, $Res Function(MeetingsMembersCreateRequest) then) =
       _$MeetingsMembersCreateRequestCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'members') List<MeetingsMembersCreateParams> members,
+      {@JsonKey(name: 'members') List<MeetingsMemberCreateParams> members,
       @JsonKey(name: 'team_uuid') String teamUuid});
 }
 
@@ -81,7 +81,7 @@ class _$MeetingsMembersCreateRequestCopyWithImpl<$Res> implements $MeetingsMembe
       members: members == freezed
           ? _value.members
           : members // ignore: cast_nullable_to_non_nullable
-              as List<MeetingsMembersCreateParams>,
+              as List<MeetingsMemberCreateParams>,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
@@ -97,7 +97,7 @@ abstract class _$MeetingsMembersCreateRequestCopyWith<$Res> implements $Meetings
       __$MeetingsMembersCreateRequestCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'members') List<MeetingsMembersCreateParams> members,
+      {@JsonKey(name: 'members') List<MeetingsMemberCreateParams> members,
       @JsonKey(name: 'team_uuid') String teamUuid});
 }
 
@@ -120,7 +120,7 @@ class __$MeetingsMembersCreateRequestCopyWithImpl<$Res> extends _$MeetingsMember
       members: members == freezed
           ? _value.members
           : members // ignore: cast_nullable_to_non_nullable
-              as List<MeetingsMembersCreateParams>,
+              as List<MeetingsMemberCreateParams>,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
@@ -142,7 +142,7 @@ class _$_MeetingsMembersCreateRequest implements _MeetingsMembersCreateRequest {
 
   /// .
   @JsonKey(name: 'members')
-  final List<MeetingsMembersCreateParams> members;
+  final List<MeetingsMemberCreateParams> members;
   @override
 
   /// .
@@ -181,7 +181,7 @@ class _$_MeetingsMembersCreateRequest implements _MeetingsMembersCreateRequest {
 
 abstract class _MeetingsMembersCreateRequest implements MeetingsMembersCreateRequest {
   const factory _MeetingsMembersCreateRequest(
-      {@JsonKey(name: 'members') required List<MeetingsMembersCreateParams> members,
+      {@JsonKey(name: 'members') required List<MeetingsMemberCreateParams> members,
       @JsonKey(name: 'team_uuid') required String teamUuid}) = _$_MeetingsMembersCreateRequest;
 
   factory _MeetingsMembersCreateRequest.fromJson(Map<String, dynamic> json) = _$_MeetingsMembersCreateRequest.fromJson;
@@ -190,7 +190,7 @@ abstract class _MeetingsMembersCreateRequest implements MeetingsMembersCreateReq
 
   /// .
   @JsonKey(name: 'members')
-  List<MeetingsMembersCreateParams> get members => throw _privateConstructorUsedError;
+  List<MeetingsMemberCreateParams> get members => throw _privateConstructorUsedError;
   @override
 
   /// .

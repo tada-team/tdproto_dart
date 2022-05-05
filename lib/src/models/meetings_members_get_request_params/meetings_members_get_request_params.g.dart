@@ -1,13 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'meetings_members_request_params.dart';
+part of 'meetings_members_get_request_params.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MeetingsMembersRequestParams _$$_MeetingsMembersRequestParamsFromJson(Map<String, dynamic> json) =>
-    _$_MeetingsMembersRequestParams(
+_$_MeetingsMembersGetRequestParams _$$_MeetingsMembersGetRequestParamsFromJson(Map<String, dynamic> json) =>
+    _$_MeetingsMembersGetRequestParams(
       meetingId: json['meeting_id'] as String,
       teamUuid: json['team_uuid'] as String,
       uuidSections: (json['uuid_sections'] as List<dynamic>?)?.map((e) => e as String).toList(),
@@ -17,7 +17,7 @@ _$_MeetingsMembersRequestParams _$$_MeetingsMembersRequestParamsFromJson(Map<Str
       offset: json['offset'] as int?,
     );
 
-Map<String, dynamic> _$$_MeetingsMembersRequestParamsToJson(_$_MeetingsMembersRequestParams instance) =>
+Map<String, dynamic> _$$_MeetingsMembersGetRequestParamsToJson(_$_MeetingsMembersGetRequestParams instance) =>
     <String, dynamic>{
       'meeting_id': instance.meetingId,
       'team_uuid': instance.teamUuid,

@@ -29,7 +29,7 @@ class _$MeetingsCreateRequestTearOff {
       @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
       @JsonKey(name: 'duration') required int duration,
       @JsonKey(name: 'freq') Freq? freq,
-      @JsonKey(name: 'members') required List<MeetingsMembersCreateParams> members,
+      @JsonKey(name: 'members') required List<MeetingsMemberCreateParams> members,
       @JsonKey(name: 'is_public') bool? isPublic = false,
       @JsonKey(name: 'is_outside') bool? isOutside = false}) {
     return _MeetingsCreateRequest(
@@ -87,7 +87,7 @@ mixin _$MeetingsCreateRequest {
 
   /// .
   @JsonKey(name: 'members')
-  List<MeetingsMembersCreateParams> get members => throw _privateConstructorUsedError;
+  List<MeetingsMemberCreateParams> get members => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'is_public')
@@ -114,7 +114,7 @@ abstract class $MeetingsCreateRequestCopyWith<$Res> {
       @JsonKey(name: 'start_at') @DateTimeConverter() DateTime startAt,
       @JsonKey(name: 'duration') int duration,
       @JsonKey(name: 'freq') Freq? freq,
-      @JsonKey(name: 'members') List<MeetingsMembersCreateParams> members,
+      @JsonKey(name: 'members') List<MeetingsMemberCreateParams> members,
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside});
 
@@ -174,7 +174,7 @@ class _$MeetingsCreateRequestCopyWithImpl<$Res> implements $MeetingsCreateReques
       members: members == freezed
           ? _value.members
           : members // ignore: cast_nullable_to_non_nullable
-              as List<MeetingsMembersCreateParams>,
+              as List<MeetingsMemberCreateParams>,
       isPublic: isPublic == freezed
           ? _value.isPublic
           : isPublic // ignore: cast_nullable_to_non_nullable
@@ -211,7 +211,7 @@ abstract class _$MeetingsCreateRequestCopyWith<$Res> implements $MeetingsCreateR
       @JsonKey(name: 'start_at') @DateTimeConverter() DateTime startAt,
       @JsonKey(name: 'duration') int duration,
       @JsonKey(name: 'freq') Freq? freq,
-      @JsonKey(name: 'members') List<MeetingsMembersCreateParams> members,
+      @JsonKey(name: 'members') List<MeetingsMemberCreateParams> members,
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside});
 
@@ -273,7 +273,7 @@ class __$MeetingsCreateRequestCopyWithImpl<$Res> extends _$MeetingsCreateRequest
       members: members == freezed
           ? _value.members
           : members // ignore: cast_nullable_to_non_nullable
-              as List<MeetingsMembersCreateParams>,
+              as List<MeetingsMemberCreateParams>,
       isPublic: isPublic == freezed
           ? _value.isPublic
           : isPublic // ignore: cast_nullable_to_non_nullable
@@ -343,7 +343,7 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
 
   /// .
   @JsonKey(name: 'members')
-  final List<MeetingsMembersCreateParams> members;
+  final List<MeetingsMemberCreateParams> members;
   @override
 
   /// .
@@ -413,7 +413,7 @@ abstract class _MeetingsCreateRequest implements MeetingsCreateRequest {
       @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
       @JsonKey(name: 'duration') required int duration,
       @JsonKey(name: 'freq') Freq? freq,
-      @JsonKey(name: 'members') required List<MeetingsMembersCreateParams> members,
+      @JsonKey(name: 'members') required List<MeetingsMemberCreateParams> members,
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside}) = _$_MeetingsCreateRequest;
 
@@ -459,7 +459,7 @@ abstract class _MeetingsCreateRequest implements MeetingsCreateRequest {
 
   /// .
   @JsonKey(name: 'members')
-  List<MeetingsMembersCreateParams> get members => throw _privateConstructorUsedError;
+  List<MeetingsMemberCreateParams> get members => throw _privateConstructorUsedError;
   @override
 
   /// .

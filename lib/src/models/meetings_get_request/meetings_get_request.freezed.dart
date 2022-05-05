@@ -2,7 +2,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'meetings_request_params.dart';
+part of 'meetings_get_request.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -13,19 +13,18 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-MeetingsRequestParams _$MeetingsRequestParamsFromJson(Map<String, dynamic> json) {
-  return _MeetingsRequestParams.fromJson(json);
+MeetingsGetRequest _$MeetingsGetRequestFromJson(Map<String, dynamic> json) {
+  return _MeetingsGetRequest.fromJson(json);
 }
 
 /// @nodoc
-class _$MeetingsRequestParamsTearOff {
-  const _$MeetingsRequestParamsTearOff();
+class _$MeetingsGetRequestTearOff {
+  const _$MeetingsGetRequestTearOff();
 
-  _MeetingsRequestParams call(
+  _MeetingsGetRequest call(
       {@JsonKey(name: 'team_uuid') required String teamUuid,
-      @JsonKey(name: 'year') required int year,
-      @JsonKey(name: 'month') required int month,
-      @JsonKey(name: 'day') int? day,
+      @JsonKey(name: 'date_from') @DateTimeConverter() required DateTime dateFrom,
+      @JsonKey(name: 'date_to') @DateTimeConverter() required DateTime dateTo,
       @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
@@ -34,11 +33,10 @@ class _$MeetingsRequestParamsTearOff {
       @JsonKey(name: 'is_public') bool? isPublic = false,
       @JsonKey(name: 'is_outside') bool? isOutside = false,
       @JsonKey(name: 'is_required') bool? isRequired = false}) {
-    return _MeetingsRequestParams(
+    return _MeetingsGetRequest(
       teamUuid: teamUuid,
-      year: year,
-      month: month,
-      day: day,
+      dateFrom: dateFrom,
+      dateTo: dateTo,
       members: members,
       limit: limit,
       offset: offset,
@@ -50,31 +48,29 @@ class _$MeetingsRequestParamsTearOff {
     );
   }
 
-  MeetingsRequestParams fromJson(Map<String, Object> json) {
-    return MeetingsRequestParams.fromJson(json);
+  MeetingsGetRequest fromJson(Map<String, Object> json) {
+    return MeetingsGetRequest.fromJson(json);
   }
 }
 
 /// @nodoc
-const $MeetingsRequestParams = _$MeetingsRequestParamsTearOff();
+const $MeetingsGetRequest = _$MeetingsGetRequestTearOff();
 
 /// @nodoc
-mixin _$MeetingsRequestParams {
+mixin _$MeetingsGetRequest {
   /// .
   @JsonKey(name: 'team_uuid')
   String get teamUuid => throw _privateConstructorUsedError;
 
   /// .
-  @JsonKey(name: 'year')
-  int get year => throw _privateConstructorUsedError;
+  @JsonKey(name: 'date_from')
+  @DateTimeConverter()
+  DateTime get dateFrom => throw _privateConstructorUsedError;
 
   /// .
-  @JsonKey(name: 'month')
-  int get month => throw _privateConstructorUsedError;
-
-  /// .
-  @JsonKey(name: 'day')
-  int? get day => throw _privateConstructorUsedError;
+  @JsonKey(name: 'date_to')
+  @DateTimeConverter()
+  DateTime get dateTo => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'members')
@@ -110,18 +106,17 @@ mixin _$MeetingsRequestParams {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $MeetingsRequestParamsCopyWith<MeetingsRequestParams> get copyWith => throw _privateConstructorUsedError;
+  $MeetingsGetRequestCopyWith<MeetingsGetRequest> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $MeetingsRequestParamsCopyWith<$Res> {
-  factory $MeetingsRequestParamsCopyWith(MeetingsRequestParams value, $Res Function(MeetingsRequestParams) then) =
-      _$MeetingsRequestParamsCopyWithImpl<$Res>;
+abstract class $MeetingsGetRequestCopyWith<$Res> {
+  factory $MeetingsGetRequestCopyWith(MeetingsGetRequest value, $Res Function(MeetingsGetRequest) then) =
+      _$MeetingsGetRequestCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'team_uuid') String teamUuid,
-      @JsonKey(name: 'year') int year,
-      @JsonKey(name: 'month') int month,
-      @JsonKey(name: 'day') int? day,
+      @JsonKey(name: 'date_from') @DateTimeConverter() DateTime dateFrom,
+      @JsonKey(name: 'date_to') @DateTimeConverter() DateTime dateTo,
       @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
@@ -133,19 +128,18 @@ abstract class $MeetingsRequestParamsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MeetingsRequestParamsCopyWithImpl<$Res> implements $MeetingsRequestParamsCopyWith<$Res> {
-  _$MeetingsRequestParamsCopyWithImpl(this._value, this._then);
+class _$MeetingsGetRequestCopyWithImpl<$Res> implements $MeetingsGetRequestCopyWith<$Res> {
+  _$MeetingsGetRequestCopyWithImpl(this._value, this._then);
 
-  final MeetingsRequestParams _value;
+  final MeetingsGetRequest _value;
   // ignore: unused_field
-  final $Res Function(MeetingsRequestParams) _then;
+  final $Res Function(MeetingsGetRequest) _then;
 
   @override
   $Res call({
     Object? teamUuid = freezed,
-    Object? year = freezed,
-    Object? month = freezed,
-    Object? day = freezed,
+    Object? dateFrom = freezed,
+    Object? dateTo = freezed,
     Object? members = freezed,
     Object? limit = freezed,
     Object? offset = freezed,
@@ -160,18 +154,14 @@ class _$MeetingsRequestParamsCopyWithImpl<$Res> implements $MeetingsRequestParam
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
               as String,
-      year: year == freezed
-          ? _value.year
-          : year // ignore: cast_nullable_to_non_nullable
-              as int,
-      month: month == freezed
-          ? _value.month
-          : month // ignore: cast_nullable_to_non_nullable
-              as int,
-      day: day == freezed
-          ? _value.day
-          : day // ignore: cast_nullable_to_non_nullable
-              as int?,
+      dateFrom: dateFrom == freezed
+          ? _value.dateFrom
+          : dateFrom // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      dateTo: dateTo == freezed
+          ? _value.dateTo
+          : dateTo // ignore: cast_nullable_to_non_nullable
+              as DateTime,
       members: members == freezed
           ? _value.members
           : members // ignore: cast_nullable_to_non_nullable
@@ -209,15 +199,14 @@ class _$MeetingsRequestParamsCopyWithImpl<$Res> implements $MeetingsRequestParam
 }
 
 /// @nodoc
-abstract class _$MeetingsRequestParamsCopyWith<$Res> implements $MeetingsRequestParamsCopyWith<$Res> {
-  factory _$MeetingsRequestParamsCopyWith(_MeetingsRequestParams value, $Res Function(_MeetingsRequestParams) then) =
-      __$MeetingsRequestParamsCopyWithImpl<$Res>;
+abstract class _$MeetingsGetRequestCopyWith<$Res> implements $MeetingsGetRequestCopyWith<$Res> {
+  factory _$MeetingsGetRequestCopyWith(_MeetingsGetRequest value, $Res Function(_MeetingsGetRequest) then) =
+      __$MeetingsGetRequestCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'team_uuid') String teamUuid,
-      @JsonKey(name: 'year') int year,
-      @JsonKey(name: 'month') int month,
-      @JsonKey(name: 'day') int? day,
+      @JsonKey(name: 'date_from') @DateTimeConverter() DateTime dateFrom,
+      @JsonKey(name: 'date_to') @DateTimeConverter() DateTime dateTo,
       @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
@@ -229,20 +218,19 @@ abstract class _$MeetingsRequestParamsCopyWith<$Res> implements $MeetingsRequest
 }
 
 /// @nodoc
-class __$MeetingsRequestParamsCopyWithImpl<$Res> extends _$MeetingsRequestParamsCopyWithImpl<$Res>
-    implements _$MeetingsRequestParamsCopyWith<$Res> {
-  __$MeetingsRequestParamsCopyWithImpl(_MeetingsRequestParams _value, $Res Function(_MeetingsRequestParams) _then)
-      : super(_value, (v) => _then(v as _MeetingsRequestParams));
+class __$MeetingsGetRequestCopyWithImpl<$Res> extends _$MeetingsGetRequestCopyWithImpl<$Res>
+    implements _$MeetingsGetRequestCopyWith<$Res> {
+  __$MeetingsGetRequestCopyWithImpl(_MeetingsGetRequest _value, $Res Function(_MeetingsGetRequest) _then)
+      : super(_value, (v) => _then(v as _MeetingsGetRequest));
 
   @override
-  _MeetingsRequestParams get _value => super._value as _MeetingsRequestParams;
+  _MeetingsGetRequest get _value => super._value as _MeetingsGetRequest;
 
   @override
   $Res call({
     Object? teamUuid = freezed,
-    Object? year = freezed,
-    Object? month = freezed,
-    Object? day = freezed,
+    Object? dateFrom = freezed,
+    Object? dateTo = freezed,
     Object? members = freezed,
     Object? limit = freezed,
     Object? offset = freezed,
@@ -252,23 +240,19 @@ class __$MeetingsRequestParamsCopyWithImpl<$Res> extends _$MeetingsRequestParams
     Object? isOutside = freezed,
     Object? isRequired = freezed,
   }) {
-    return _then(_MeetingsRequestParams(
+    return _then(_MeetingsGetRequest(
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
               as String,
-      year: year == freezed
-          ? _value.year
-          : year // ignore: cast_nullable_to_non_nullable
-              as int,
-      month: month == freezed
-          ? _value.month
-          : month // ignore: cast_nullable_to_non_nullable
-              as int,
-      day: day == freezed
-          ? _value.day
-          : day // ignore: cast_nullable_to_non_nullable
-              as int?,
+      dateFrom: dateFrom == freezed
+          ? _value.dateFrom
+          : dateFrom // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      dateTo: dateTo == freezed
+          ? _value.dateTo
+          : dateTo // ignore: cast_nullable_to_non_nullable
+              as DateTime,
       members: members == freezed
           ? _value.members
           : members // ignore: cast_nullable_to_non_nullable
@@ -307,12 +291,11 @@ class __$MeetingsRequestParamsCopyWithImpl<$Res> extends _$MeetingsRequestParams
 
 /// @nodoc
 @JsonSerializable()
-class _$_MeetingsRequestParams implements _MeetingsRequestParams {
-  const _$_MeetingsRequestParams(
+class _$_MeetingsGetRequest implements _MeetingsGetRequest {
+  const _$_MeetingsGetRequest(
       {@JsonKey(name: 'team_uuid') required this.teamUuid,
-      @JsonKey(name: 'year') required this.year,
-      @JsonKey(name: 'month') required this.month,
-      @JsonKey(name: 'day') this.day,
+      @JsonKey(name: 'date_from') @DateTimeConverter() required this.dateFrom,
+      @JsonKey(name: 'date_to') @DateTimeConverter() required this.dateTo,
       @JsonKey(name: 'members') this.members,
       @JsonKey(name: 'limit') this.limit,
       @JsonKey(name: 'offset') this.offset,
@@ -322,7 +305,7 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
       @JsonKey(name: 'is_outside') this.isOutside = false,
       @JsonKey(name: 'is_required') this.isRequired = false});
 
-  factory _$_MeetingsRequestParams.fromJson(Map<String, dynamic> json) => _$$_MeetingsRequestParamsFromJson(json);
+  factory _$_MeetingsGetRequest.fromJson(Map<String, dynamic> json) => _$$_MeetingsGetRequestFromJson(json);
 
   @override
 
@@ -332,18 +315,15 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
   @override
 
   /// .
-  @JsonKey(name: 'year')
-  final int year;
+  @JsonKey(name: 'date_from')
+  @DateTimeConverter()
+  final DateTime dateFrom;
   @override
 
   /// .
-  @JsonKey(name: 'month')
-  final int month;
-  @override
-
-  /// .
-  @JsonKey(name: 'day')
-  final int? day;
+  @JsonKey(name: 'date_to')
+  @DateTimeConverter()
+  final DateTime dateTo;
   @override
 
   /// .
@@ -387,17 +367,16 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
 
   @override
   String toString() {
-    return 'MeetingsRequestParams(teamUuid: $teamUuid, year: $year, month: $month, day: $day, members: $members, limit: $limit, offset: $offset, isArchive: $isArchive, isFreq: $isFreq, isPublic: $isPublic, isOutside: $isOutside, isRequired: $isRequired)';
+    return 'MeetingsGetRequest(teamUuid: $teamUuid, dateFrom: $dateFrom, dateTo: $dateTo, members: $members, limit: $limit, offset: $offset, isArchive: $isArchive, isFreq: $isFreq, isPublic: $isPublic, isOutside: $isOutside, isRequired: $isRequired)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _MeetingsRequestParams &&
+        (other is _MeetingsGetRequest &&
             (identical(other.teamUuid, teamUuid) || const DeepCollectionEquality().equals(other.teamUuid, teamUuid)) &&
-            (identical(other.year, year) || const DeepCollectionEquality().equals(other.year, year)) &&
-            (identical(other.month, month) || const DeepCollectionEquality().equals(other.month, month)) &&
-            (identical(other.day, day) || const DeepCollectionEquality().equals(other.day, day)) &&
+            (identical(other.dateFrom, dateFrom) || const DeepCollectionEquality().equals(other.dateFrom, dateFrom)) &&
+            (identical(other.dateTo, dateTo) || const DeepCollectionEquality().equals(other.dateTo, dateTo)) &&
             (identical(other.members, members) || const DeepCollectionEquality().equals(other.members, members)) &&
             (identical(other.limit, limit) || const DeepCollectionEquality().equals(other.limit, limit)) &&
             (identical(other.offset, offset) || const DeepCollectionEquality().equals(other.offset, offset)) &&
@@ -415,9 +394,8 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
   int get hashCode =>
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(teamUuid) ^
-      const DeepCollectionEquality().hash(year) ^
-      const DeepCollectionEquality().hash(month) ^
-      const DeepCollectionEquality().hash(day) ^
+      const DeepCollectionEquality().hash(dateFrom) ^
+      const DeepCollectionEquality().hash(dateTo) ^
       const DeepCollectionEquality().hash(members) ^
       const DeepCollectionEquality().hash(limit) ^
       const DeepCollectionEquality().hash(offset) ^
@@ -429,21 +407,20 @@ class _$_MeetingsRequestParams implements _MeetingsRequestParams {
 
   @JsonKey(ignore: true)
   @override
-  _$MeetingsRequestParamsCopyWith<_MeetingsRequestParams> get copyWith =>
-      __$MeetingsRequestParamsCopyWithImpl<_MeetingsRequestParams>(this, _$identity);
+  _$MeetingsGetRequestCopyWith<_MeetingsGetRequest> get copyWith =>
+      __$MeetingsGetRequestCopyWithImpl<_MeetingsGetRequest>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MeetingsRequestParamsToJson(this);
+    return _$$_MeetingsGetRequestToJson(this);
   }
 }
 
-abstract class _MeetingsRequestParams implements MeetingsRequestParams {
-  const factory _MeetingsRequestParams(
+abstract class _MeetingsGetRequest implements MeetingsGetRequest {
+  const factory _MeetingsGetRequest(
       {@JsonKey(name: 'team_uuid') required String teamUuid,
-      @JsonKey(name: 'year') required int year,
-      @JsonKey(name: 'month') required int month,
-      @JsonKey(name: 'day') int? day,
+      @JsonKey(name: 'date_from') @DateTimeConverter() required DateTime dateFrom,
+      @JsonKey(name: 'date_to') @DateTimeConverter() required DateTime dateTo,
       @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
@@ -451,9 +428,9 @@ abstract class _MeetingsRequestParams implements MeetingsRequestParams {
       @JsonKey(name: 'is_freq') bool? isFreq,
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
-      @JsonKey(name: 'is_required') bool? isRequired}) = _$_MeetingsRequestParams;
+      @JsonKey(name: 'is_required') bool? isRequired}) = _$_MeetingsGetRequest;
 
-  factory _MeetingsRequestParams.fromJson(Map<String, dynamic> json) = _$_MeetingsRequestParams.fromJson;
+  factory _MeetingsGetRequest.fromJson(Map<String, dynamic> json) = _$_MeetingsGetRequest.fromJson;
 
   @override
 
@@ -463,18 +440,15 @@ abstract class _MeetingsRequestParams implements MeetingsRequestParams {
   @override
 
   /// .
-  @JsonKey(name: 'year')
-  int get year => throw _privateConstructorUsedError;
+  @JsonKey(name: 'date_from')
+  @DateTimeConverter()
+  DateTime get dateFrom => throw _privateConstructorUsedError;
   @override
 
   /// .
-  @JsonKey(name: 'month')
-  int get month => throw _privateConstructorUsedError;
-  @override
-
-  /// .
-  @JsonKey(name: 'day')
-  int? get day => throw _privateConstructorUsedError;
+  @JsonKey(name: 'date_to')
+  @DateTimeConverter()
+  DateTime get dateTo => throw _privateConstructorUsedError;
   @override
 
   /// .
@@ -517,5 +491,5 @@ abstract class _MeetingsRequestParams implements MeetingsRequestParams {
   bool? get isRequired => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$MeetingsRequestParamsCopyWith<_MeetingsRequestParams> get copyWith => throw _privateConstructorUsedError;
+  _$MeetingsGetRequestCopyWith<_MeetingsGetRequest> get copyWith => throw _privateConstructorUsedError;
 }

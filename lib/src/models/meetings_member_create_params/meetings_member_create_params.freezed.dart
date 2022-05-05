@@ -2,7 +2,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'meetings_members_create_params.dart';
+part of 'meetings_member_create_params.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -13,32 +13,32 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-MeetingsMembersCreateParams _$MeetingsMembersCreateParamsFromJson(Map<String, dynamic> json) {
-  return _MeetingsMembersCreateParams.fromJson(json);
+MeetingsMemberCreateParams _$MeetingsMemberCreateParamsFromJson(Map<String, dynamic> json) {
+  return _MeetingsMemberCreateParams.fromJson(json);
 }
 
 /// @nodoc
-class _$MeetingsMembersCreateParamsTearOff {
-  const _$MeetingsMembersCreateParamsTearOff();
+class _$MeetingsMemberCreateParamsTearOff {
+  const _$MeetingsMemberCreateParamsTearOff();
 
-  _MeetingsMembersCreateParams call(
+  _MeetingsMemberCreateParams call(
       {@JsonKey(name: 'jid') required String jid, @JsonKey(name: 'status') String? status}) {
-    return _MeetingsMembersCreateParams(
+    return _MeetingsMemberCreateParams(
       jid: jid,
       status: status,
     );
   }
 
-  MeetingsMembersCreateParams fromJson(Map<String, Object> json) {
-    return MeetingsMembersCreateParams.fromJson(json);
+  MeetingsMemberCreateParams fromJson(Map<String, Object> json) {
+    return MeetingsMemberCreateParams.fromJson(json);
   }
 }
 
 /// @nodoc
-const $MeetingsMembersCreateParams = _$MeetingsMembersCreateParamsTearOff();
+const $MeetingsMemberCreateParams = _$MeetingsMemberCreateParamsTearOff();
 
 /// @nodoc
-mixin _$MeetingsMembersCreateParams {
+mixin _$MeetingsMemberCreateParams {
   /// .
   @JsonKey(name: 'jid')
   String get jid => throw _privateConstructorUsedError;
@@ -49,24 +49,24 @@ mixin _$MeetingsMembersCreateParams {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $MeetingsMembersCreateParamsCopyWith<MeetingsMembersCreateParams> get copyWith => throw _privateConstructorUsedError;
+  $MeetingsMemberCreateParamsCopyWith<MeetingsMemberCreateParams> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $MeetingsMembersCreateParamsCopyWith<$Res> {
-  factory $MeetingsMembersCreateParamsCopyWith(
-          MeetingsMembersCreateParams value, $Res Function(MeetingsMembersCreateParams) then) =
-      _$MeetingsMembersCreateParamsCopyWithImpl<$Res>;
+abstract class $MeetingsMemberCreateParamsCopyWith<$Res> {
+  factory $MeetingsMemberCreateParamsCopyWith(
+          MeetingsMemberCreateParams value, $Res Function(MeetingsMemberCreateParams) then) =
+      _$MeetingsMemberCreateParamsCopyWithImpl<$Res>;
   $Res call({@JsonKey(name: 'jid') String jid, @JsonKey(name: 'status') String? status});
 }
 
 /// @nodoc
-class _$MeetingsMembersCreateParamsCopyWithImpl<$Res> implements $MeetingsMembersCreateParamsCopyWith<$Res> {
-  _$MeetingsMembersCreateParamsCopyWithImpl(this._value, this._then);
+class _$MeetingsMemberCreateParamsCopyWithImpl<$Res> implements $MeetingsMemberCreateParamsCopyWith<$Res> {
+  _$MeetingsMemberCreateParamsCopyWithImpl(this._value, this._then);
 
-  final MeetingsMembersCreateParams _value;
+  final MeetingsMemberCreateParams _value;
   // ignore: unused_field
-  final $Res Function(MeetingsMembersCreateParams) _then;
+  final $Res Function(MeetingsMemberCreateParams) _then;
 
   @override
   $Res call({
@@ -87,30 +87,30 @@ class _$MeetingsMembersCreateParamsCopyWithImpl<$Res> implements $MeetingsMember
 }
 
 /// @nodoc
-abstract class _$MeetingsMembersCreateParamsCopyWith<$Res> implements $MeetingsMembersCreateParamsCopyWith<$Res> {
-  factory _$MeetingsMembersCreateParamsCopyWith(
-          _MeetingsMembersCreateParams value, $Res Function(_MeetingsMembersCreateParams) then) =
-      __$MeetingsMembersCreateParamsCopyWithImpl<$Res>;
+abstract class _$MeetingsMemberCreateParamsCopyWith<$Res> implements $MeetingsMemberCreateParamsCopyWith<$Res> {
+  factory _$MeetingsMemberCreateParamsCopyWith(
+          _MeetingsMemberCreateParams value, $Res Function(_MeetingsMemberCreateParams) then) =
+      __$MeetingsMemberCreateParamsCopyWithImpl<$Res>;
   @override
   $Res call({@JsonKey(name: 'jid') String jid, @JsonKey(name: 'status') String? status});
 }
 
 /// @nodoc
-class __$MeetingsMembersCreateParamsCopyWithImpl<$Res> extends _$MeetingsMembersCreateParamsCopyWithImpl<$Res>
-    implements _$MeetingsMembersCreateParamsCopyWith<$Res> {
-  __$MeetingsMembersCreateParamsCopyWithImpl(
-      _MeetingsMembersCreateParams _value, $Res Function(_MeetingsMembersCreateParams) _then)
-      : super(_value, (v) => _then(v as _MeetingsMembersCreateParams));
+class __$MeetingsMemberCreateParamsCopyWithImpl<$Res> extends _$MeetingsMemberCreateParamsCopyWithImpl<$Res>
+    implements _$MeetingsMemberCreateParamsCopyWith<$Res> {
+  __$MeetingsMemberCreateParamsCopyWithImpl(
+      _MeetingsMemberCreateParams _value, $Res Function(_MeetingsMemberCreateParams) _then)
+      : super(_value, (v) => _then(v as _MeetingsMemberCreateParams));
 
   @override
-  _MeetingsMembersCreateParams get _value => super._value as _MeetingsMembersCreateParams;
+  _MeetingsMemberCreateParams get _value => super._value as _MeetingsMemberCreateParams;
 
   @override
   $Res call({
     Object? jid = freezed,
     Object? status = freezed,
   }) {
-    return _then(_MeetingsMembersCreateParams(
+    return _then(_MeetingsMemberCreateParams(
       jid: jid == freezed
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
@@ -125,11 +125,11 @@ class __$MeetingsMembersCreateParamsCopyWithImpl<$Res> extends _$MeetingsMembers
 
 /// @nodoc
 @JsonSerializable()
-class _$_MeetingsMembersCreateParams implements _MeetingsMembersCreateParams {
-  const _$_MeetingsMembersCreateParams({@JsonKey(name: 'jid') required this.jid, @JsonKey(name: 'status') this.status});
+class _$_MeetingsMemberCreateParams implements _MeetingsMemberCreateParams {
+  const _$_MeetingsMemberCreateParams({@JsonKey(name: 'jid') required this.jid, @JsonKey(name: 'status') this.status});
 
-  factory _$_MeetingsMembersCreateParams.fromJson(Map<String, dynamic> json) =>
-      _$$_MeetingsMembersCreateParamsFromJson(json);
+  factory _$_MeetingsMemberCreateParams.fromJson(Map<String, dynamic> json) =>
+      _$$_MeetingsMemberCreateParamsFromJson(json);
 
   @override
 
@@ -144,13 +144,13 @@ class _$_MeetingsMembersCreateParams implements _MeetingsMembersCreateParams {
 
   @override
   String toString() {
-    return 'MeetingsMembersCreateParams(jid: $jid, status: $status)';
+    return 'MeetingsMemberCreateParams(jid: $jid, status: $status)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _MeetingsMembersCreateParams &&
+        (other is _MeetingsMemberCreateParams &&
             (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
             (identical(other.status, status) || const DeepCollectionEquality().equals(other.status, status)));
   }
@@ -161,21 +161,21 @@ class _$_MeetingsMembersCreateParams implements _MeetingsMembersCreateParams {
 
   @JsonKey(ignore: true)
   @override
-  _$MeetingsMembersCreateParamsCopyWith<_MeetingsMembersCreateParams> get copyWith =>
-      __$MeetingsMembersCreateParamsCopyWithImpl<_MeetingsMembersCreateParams>(this, _$identity);
+  _$MeetingsMemberCreateParamsCopyWith<_MeetingsMemberCreateParams> get copyWith =>
+      __$MeetingsMemberCreateParamsCopyWithImpl<_MeetingsMemberCreateParams>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MeetingsMembersCreateParamsToJson(this);
+    return _$$_MeetingsMemberCreateParamsToJson(this);
   }
 }
 
-abstract class _MeetingsMembersCreateParams implements MeetingsMembersCreateParams {
-  const factory _MeetingsMembersCreateParams(
+abstract class _MeetingsMemberCreateParams implements MeetingsMemberCreateParams {
+  const factory _MeetingsMemberCreateParams(
       {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'status') String? status}) = _$_MeetingsMembersCreateParams;
+      @JsonKey(name: 'status') String? status}) = _$_MeetingsMemberCreateParams;
 
-  factory _MeetingsMembersCreateParams.fromJson(Map<String, dynamic> json) = _$_MeetingsMembersCreateParams.fromJson;
+  factory _MeetingsMemberCreateParams.fromJson(Map<String, dynamic> json) = _$_MeetingsMemberCreateParams.fromJson;
 
   @override
 
@@ -189,6 +189,5 @@ abstract class _MeetingsMembersCreateParams implements MeetingsMembersCreatePara
   String? get status => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$MeetingsMembersCreateParamsCopyWith<_MeetingsMembersCreateParams> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$MeetingsMemberCreateParamsCopyWith<_MeetingsMemberCreateParams> get copyWith => throw _privateConstructorUsedError;
 }

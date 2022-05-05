@@ -1,13 +1,13 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:tdproto_dart/tdproto_dart.dart';
 
-part 'meetings_members_request_params.freezed.dart';
-part 'meetings_members_request_params.g.dart';
+part 'meetings_members_get_request_params.freezed.dart';
+part 'meetings_members_get_request_params.g.dart';
 
 /// .
 @freezed
-class MeetingsMembersRequestParams with _$MeetingsMembersRequestParams {
-  const factory MeetingsMembersRequestParams({
+class MeetingsMembersGetRequestParams with _$MeetingsMembersGetRequestParams {
+  const factory MeetingsMembersGetRequestParams({
     /// .
     @JsonKey(name: 'meeting_id') required String meetingId,
 
@@ -28,8 +28,8 @@ class MeetingsMembersRequestParams with _$MeetingsMembersRequestParams {
 
     /// .
     @JsonKey(name: 'offset') int? offset,
-  }) = _MeetingsMembersRequestParams;
+  }) = _MeetingsMembersGetRequestParams;
 
-  factory MeetingsMembersRequestParams.fromJson(Map<String, dynamic> json) =>
-      _$MeetingsMembersRequestParamsFromJson(json);
+  factory MeetingsMembersGetRequestParams.fromJson(Map<String, dynamic> json) =>
+      _$MeetingsMembersGetRequestParamsFromJson(json);
 }

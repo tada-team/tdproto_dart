@@ -1,16 +1,15 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'meetings_request_params.dart';
+part of 'meetings_get_request.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MeetingsRequestParams _$$_MeetingsRequestParamsFromJson(Map<String, dynamic> json) => _$_MeetingsRequestParams(
+_$_MeetingsGetRequest _$$_MeetingsGetRequestFromJson(Map<String, dynamic> json) => _$_MeetingsGetRequest(
       teamUuid: json['team_uuid'] as String,
-      year: json['year'] as int,
-      month: json['month'] as int,
-      day: json['day'] as int?,
+      dateFrom: const DateTimeConverter().fromJson(json['date_from'] as String),
+      dateTo: const DateTimeConverter().fromJson(json['date_to'] as String),
       members: (json['members'] as List<dynamic>?)?.map((e) => e as String).toList(),
       limit: json['limit'] as int?,
       offset: json['offset'] as int?,
@@ -21,11 +20,10 @@ _$_MeetingsRequestParams _$$_MeetingsRequestParamsFromJson(Map<String, dynamic> 
       isRequired: json['is_required'] as bool? ?? false,
     );
 
-Map<String, dynamic> _$$_MeetingsRequestParamsToJson(_$_MeetingsRequestParams instance) => <String, dynamic>{
+Map<String, dynamic> _$$_MeetingsGetRequestToJson(_$_MeetingsGetRequest instance) => <String, dynamic>{
       'team_uuid': instance.teamUuid,
-      'year': instance.year,
-      'month': instance.month,
-      'day': instance.day,
+      'date_from': const DateTimeConverter().toJson(instance.dateFrom),
+      'date_to': const DateTimeConverter().toJson(instance.dateTo),
       'members': instance.members,
       'limit': instance.limit,
       'offset': instance.offset,

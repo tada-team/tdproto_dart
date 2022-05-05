@@ -30,7 +30,7 @@ class MeetingsCreateRequest with _$MeetingsCreateRequest {
     @JsonKey(name: 'freq') Freq? freq,
 
     /// .
-    @JsonKey(name: 'members') required List<MeetingsMembersCreateParams> members,
+    @JsonKey(name: 'members') required List<MeetingsMemberCreateParams> members,
 
     /// .
     @Default(false) @JsonKey(name: 'is_public') bool? isPublic,

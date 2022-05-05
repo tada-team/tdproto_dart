@@ -1,24 +1,21 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:tdproto_dart/tdproto_dart.dart';
 
-part 'meetings_request_params.freezed.dart';
-part 'meetings_request_params.g.dart';
+part 'meetings_get_request.freezed.dart';
+part 'meetings_get_request.g.dart';
 
 /// .
 @freezed
-class MeetingsRequestParams with _$MeetingsRequestParams {
-  const factory MeetingsRequestParams({
+class MeetingsGetRequest with _$MeetingsGetRequest {
+  const factory MeetingsGetRequest({
     /// .
     @JsonKey(name: 'team_uuid') required String teamUuid,
 
     /// .
-    @JsonKey(name: 'year') required int year,
+    @JsonKey(name: 'date_from') @DateTimeConverter() required DateTime dateFrom,
 
     /// .
-    @JsonKey(name: 'month') required int month,
-
-    /// .
-    @JsonKey(name: 'day') int? day,
+    @JsonKey(name: 'date_to') @DateTimeConverter() required DateTime dateTo,
 
     /// .
     @JsonKey(name: 'members') List<String>? members,
@@ -43,7 +40,7 @@ class MeetingsRequestParams with _$MeetingsRequestParams {
 
     /// .
     @Default(false) @JsonKey(name: 'is_required') bool? isRequired,
-  }) = _MeetingsRequestParams;
+  }) = _MeetingsGetRequest;
 
-  factory MeetingsRequestParams.fromJson(Map<String, dynamic> json) => _$MeetingsRequestParamsFromJson(json);
+  factory MeetingsGetRequest.fromJson(Map<String, dynamic> json) => _$MeetingsGetRequestFromJson(json);
 }

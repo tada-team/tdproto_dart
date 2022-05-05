@@ -15,7 +15,7 @@ _$_MeetingsCreateRequest _$$_MeetingsCreateRequestFromJson(Map<String, dynamic> 
       duration: json['duration'] as int,
       freq: json['freq'] == null ? null : Freq.fromJson(json['freq'] as Map<String, dynamic>),
       members: (json['members'] as List<dynamic>)
-          .map((e) => MeetingsMembersCreateParams.fromJson(e as Map<String, dynamic>))
+          .map((e) => MeetingsMemberCreateParams.fromJson(e as Map<String, dynamic>))
           .toList(),
       isPublic: json['is_public'] as bool? ?? false,
       isOutside: json['is_outside'] as bool? ?? false,
