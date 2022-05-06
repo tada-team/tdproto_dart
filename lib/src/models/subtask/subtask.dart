@@ -29,8 +29,11 @@ class Subtask with _$Subtask {
     /// Subtask task status.
     @JsonKey(name: 'task_status') String? taskStatus,
 
-    /// Deadline task deadline.
+    /// Subtask deadline in iso format, if any.
     @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
+
+    /// Is subtask deadline expired.
+    @Default(false) @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
   }) = _Subtask;
 
   factory Subtask.fromJson(Map<String, dynamic> json) => _$SubtaskFromJson(json);

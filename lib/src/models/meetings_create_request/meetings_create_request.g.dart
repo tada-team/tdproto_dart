@@ -7,7 +7,7 @@ part of 'meetings_create_request.dart';
 // **************************************************************************
 
 _$_MeetingsCreateRequest _$$_MeetingsCreateRequestFromJson(Map<String, dynamic> json) => _$_MeetingsCreateRequest(
-      ownerUuid: json['owner_uuid'] as String,
+      ownerContactUuid: json['owner_contact_uuid'] as String,
       teamUuid: json['team_uuid'] as String,
       title: json['title'] as String?,
       description: json['description'] as String?,
@@ -22,7 +22,7 @@ _$_MeetingsCreateRequest _$$_MeetingsCreateRequestFromJson(Map<String, dynamic> 
     );
 
 Map<String, dynamic> _$$_MeetingsCreateRequestToJson(_$_MeetingsCreateRequest instance) => <String, dynamic>{
-      'owner_uuid': instance.ownerUuid,
+      'owner_contact_uuid': instance.ownerContactUuid,
       'team_uuid': instance.teamUuid,
       'title': instance.title,
       'description': instance.description,

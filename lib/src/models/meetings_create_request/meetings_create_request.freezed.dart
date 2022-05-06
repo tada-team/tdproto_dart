@@ -22,7 +22,7 @@ class _$MeetingsCreateRequestTearOff {
   const _$MeetingsCreateRequestTearOff();
 
   _MeetingsCreateRequest call(
-      {@JsonKey(name: 'owner_uuid') required String ownerUuid,
+      {@JsonKey(name: 'owner_contact_uuid') required String ownerContactUuid,
       @JsonKey(name: 'team_uuid') required String teamUuid,
       @JsonKey(name: 'title') String? title,
       @JsonKey(name: 'description') String? description,
@@ -33,7 +33,7 @@ class _$MeetingsCreateRequestTearOff {
       @JsonKey(name: 'is_public') bool? isPublic = false,
       @JsonKey(name: 'is_outside') bool? isOutside = false}) {
     return _MeetingsCreateRequest(
-      ownerUuid: ownerUuid,
+      ownerContactUuid: ownerContactUuid,
       teamUuid: teamUuid,
       title: title,
       description: description,
@@ -57,8 +57,8 @@ const $MeetingsCreateRequest = _$MeetingsCreateRequestTearOff();
 /// @nodoc
 mixin _$MeetingsCreateRequest {
   /// .
-  @JsonKey(name: 'owner_uuid')
-  String get ownerUuid => throw _privateConstructorUsedError;
+  @JsonKey(name: 'owner_contact_uuid')
+  String get ownerContactUuid => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'team_uuid')
@@ -107,7 +107,7 @@ abstract class $MeetingsCreateRequestCopyWith<$Res> {
   factory $MeetingsCreateRequestCopyWith(MeetingsCreateRequest value, $Res Function(MeetingsCreateRequest) then) =
       _$MeetingsCreateRequestCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'owner_uuid') String ownerUuid,
+      {@JsonKey(name: 'owner_contact_uuid') String ownerContactUuid,
       @JsonKey(name: 'team_uuid') String teamUuid,
       @JsonKey(name: 'title') String? title,
       @JsonKey(name: 'description') String? description,
@@ -131,7 +131,7 @@ class _$MeetingsCreateRequestCopyWithImpl<$Res> implements $MeetingsCreateReques
 
   @override
   $Res call({
-    Object? ownerUuid = freezed,
+    Object? ownerContactUuid = freezed,
     Object? teamUuid = freezed,
     Object? title = freezed,
     Object? description = freezed,
@@ -143,9 +143,9 @@ class _$MeetingsCreateRequestCopyWithImpl<$Res> implements $MeetingsCreateReques
     Object? isOutside = freezed,
   }) {
     return _then(_value.copyWith(
-      ownerUuid: ownerUuid == freezed
-          ? _value.ownerUuid
-          : ownerUuid // ignore: cast_nullable_to_non_nullable
+      ownerContactUuid: ownerContactUuid == freezed
+          ? _value.ownerContactUuid
+          : ownerContactUuid // ignore: cast_nullable_to_non_nullable
               as String,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
@@ -204,7 +204,7 @@ abstract class _$MeetingsCreateRequestCopyWith<$Res> implements $MeetingsCreateR
       __$MeetingsCreateRequestCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'owner_uuid') String ownerUuid,
+      {@JsonKey(name: 'owner_contact_uuid') String ownerContactUuid,
       @JsonKey(name: 'team_uuid') String teamUuid,
       @JsonKey(name: 'title') String? title,
       @JsonKey(name: 'description') String? description,
@@ -230,7 +230,7 @@ class __$MeetingsCreateRequestCopyWithImpl<$Res> extends _$MeetingsCreateRequest
 
   @override
   $Res call({
-    Object? ownerUuid = freezed,
+    Object? ownerContactUuid = freezed,
     Object? teamUuid = freezed,
     Object? title = freezed,
     Object? description = freezed,
@@ -242,9 +242,9 @@ class __$MeetingsCreateRequestCopyWithImpl<$Res> extends _$MeetingsCreateRequest
     Object? isOutside = freezed,
   }) {
     return _then(_MeetingsCreateRequest(
-      ownerUuid: ownerUuid == freezed
-          ? _value.ownerUuid
-          : ownerUuid // ignore: cast_nullable_to_non_nullable
+      ownerContactUuid: ownerContactUuid == freezed
+          ? _value.ownerContactUuid
+          : ownerContactUuid // ignore: cast_nullable_to_non_nullable
               as String,
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
@@ -290,7 +290,7 @@ class __$MeetingsCreateRequestCopyWithImpl<$Res> extends _$MeetingsCreateRequest
 @JsonSerializable()
 class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
   const _$_MeetingsCreateRequest(
-      {@JsonKey(name: 'owner_uuid') required this.ownerUuid,
+      {@JsonKey(name: 'owner_contact_uuid') required this.ownerContactUuid,
       @JsonKey(name: 'team_uuid') required this.teamUuid,
       @JsonKey(name: 'title') this.title,
       @JsonKey(name: 'description') this.description,
@@ -306,8 +306,8 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
   @override
 
   /// .
-  @JsonKey(name: 'owner_uuid')
-  final String ownerUuid;
+  @JsonKey(name: 'owner_contact_uuid')
+  final String ownerContactUuid;
   @override
 
   /// .
@@ -357,15 +357,15 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
 
   @override
   String toString() {
-    return 'MeetingsCreateRequest(ownerUuid: $ownerUuid, teamUuid: $teamUuid, title: $title, description: $description, startAt: $startAt, duration: $duration, freq: $freq, members: $members, isPublic: $isPublic, isOutside: $isOutside)';
+    return 'MeetingsCreateRequest(ownerContactUuid: $ownerContactUuid, teamUuid: $teamUuid, title: $title, description: $description, startAt: $startAt, duration: $duration, freq: $freq, members: $members, isPublic: $isPublic, isOutside: $isOutside)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _MeetingsCreateRequest &&
-            (identical(other.ownerUuid, ownerUuid) ||
-                const DeepCollectionEquality().equals(other.ownerUuid, ownerUuid)) &&
+            (identical(other.ownerContactUuid, ownerContactUuid) ||
+                const DeepCollectionEquality().equals(other.ownerContactUuid, ownerContactUuid)) &&
             (identical(other.teamUuid, teamUuid) || const DeepCollectionEquality().equals(other.teamUuid, teamUuid)) &&
             (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
             (identical(other.description, description) ||
@@ -382,7 +382,7 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
   @override
   int get hashCode =>
       runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(ownerUuid) ^
+      const DeepCollectionEquality().hash(ownerContactUuid) ^
       const DeepCollectionEquality().hash(teamUuid) ^
       const DeepCollectionEquality().hash(title) ^
       const DeepCollectionEquality().hash(description) ^
@@ -406,7 +406,7 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
 
 abstract class _MeetingsCreateRequest implements MeetingsCreateRequest {
   const factory _MeetingsCreateRequest(
-      {@JsonKey(name: 'owner_uuid') required String ownerUuid,
+      {@JsonKey(name: 'owner_contact_uuid') required String ownerContactUuid,
       @JsonKey(name: 'team_uuid') required String teamUuid,
       @JsonKey(name: 'title') String? title,
       @JsonKey(name: 'description') String? description,
@@ -422,8 +422,8 @@ abstract class _MeetingsCreateRequest implements MeetingsCreateRequest {
   @override
 
   /// .
-  @JsonKey(name: 'owner_uuid')
-  String get ownerUuid => throw _privateConstructorUsedError;
+  @JsonKey(name: 'owner_contact_uuid')
+  String get ownerContactUuid => throw _privateConstructorUsedError;
   @override
 
   /// .

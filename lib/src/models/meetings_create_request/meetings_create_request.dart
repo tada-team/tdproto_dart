@@ -9,7 +9,7 @@ part 'meetings_create_request.g.dart';
 class MeetingsCreateRequest with _$MeetingsCreateRequest {
   const factory MeetingsCreateRequest({
     /// .
-    @JsonKey(name: 'owner_uuid') required String ownerUuid,
+    @JsonKey(name: 'owner_contact_uuid') required String ownerContactUuid,
 
     /// .
     @JsonKey(name: 'team_uuid') required String teamUuid,

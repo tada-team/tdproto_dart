@@ -184,6 +184,7 @@ export 'src/models/online_call/online_call.dart';
 export 'src/models/online_contact/online_contact.dart';
 export 'src/models/paginated_chats/paginated_chats.dart';
 export 'src/models/paginated_contacts/paginated_contacts.dart';
+export 'src/models/paginated_meetings/paginated_meetings.dart';
 export 'src/models/paginated_messages/paginated_messages.dart';
 export 'src/models/paginated_upload_short_messages/paginated_upload_short_messages.dart';
 export 'src/models/payment/payment.dart';
