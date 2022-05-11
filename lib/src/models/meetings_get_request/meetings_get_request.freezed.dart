@@ -23,8 +23,8 @@ class _$MeetingsGetRequestTearOff {
 
   _MeetingsGetRequest call(
       {@JsonKey(name: 'team_uuid') required String teamUuid,
-      @JsonKey(name: 'date_from') @DateTimeConverter() required DateTime dateFrom,
-      @JsonKey(name: 'date_to') @DateTimeConverter() required DateTime dateTo,
+      @JsonKey(name: 'date_from') required String dateFrom,
+      @JsonKey(name: 'date_to') required String dateTo,
       @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
@@ -64,13 +64,11 @@ mixin _$MeetingsGetRequest {
 
   /// .
   @JsonKey(name: 'date_from')
-  @DateTimeConverter()
-  DateTime get dateFrom => throw _privateConstructorUsedError;
+  String get dateFrom => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'date_to')
-  @DateTimeConverter()
-  DateTime get dateTo => throw _privateConstructorUsedError;
+  String get dateTo => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'members')
@@ -115,8 +113,8 @@ abstract class $MeetingsGetRequestCopyWith<$Res> {
       _$MeetingsGetRequestCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'team_uuid') String teamUuid,
-      @JsonKey(name: 'date_from') @DateTimeConverter() DateTime dateFrom,
-      @JsonKey(name: 'date_to') @DateTimeConverter() DateTime dateTo,
+      @JsonKey(name: 'date_from') String dateFrom,
+      @JsonKey(name: 'date_to') String dateTo,
       @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
@@ -157,11 +155,11 @@ class _$MeetingsGetRequestCopyWithImpl<$Res> implements $MeetingsGetRequestCopyW
       dateFrom: dateFrom == freezed
           ? _value.dateFrom
           : dateFrom // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       dateTo: dateTo == freezed
           ? _value.dateTo
           : dateTo // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       members: members == freezed
           ? _value.members
           : members // ignore: cast_nullable_to_non_nullable
@@ -205,8 +203,8 @@ abstract class _$MeetingsGetRequestCopyWith<$Res> implements $MeetingsGetRequest
   @override
   $Res call(
       {@JsonKey(name: 'team_uuid') String teamUuid,
-      @JsonKey(name: 'date_from') @DateTimeConverter() DateTime dateFrom,
-      @JsonKey(name: 'date_to') @DateTimeConverter() DateTime dateTo,
+      @JsonKey(name: 'date_from') String dateFrom,
+      @JsonKey(name: 'date_to') String dateTo,
       @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
@@ -248,11 +246,11 @@ class __$MeetingsGetRequestCopyWithImpl<$Res> extends _$MeetingsGetRequestCopyWi
       dateFrom: dateFrom == freezed
           ? _value.dateFrom
           : dateFrom // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       dateTo: dateTo == freezed
           ? _value.dateTo
           : dateTo // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       members: members == freezed
           ? _value.members
           : members // ignore: cast_nullable_to_non_nullable
@@ -294,8 +292,8 @@ class __$MeetingsGetRequestCopyWithImpl<$Res> extends _$MeetingsGetRequestCopyWi
 class _$_MeetingsGetRequest implements _MeetingsGetRequest {
   const _$_MeetingsGetRequest(
       {@JsonKey(name: 'team_uuid') required this.teamUuid,
-      @JsonKey(name: 'date_from') @DateTimeConverter() required this.dateFrom,
-      @JsonKey(name: 'date_to') @DateTimeConverter() required this.dateTo,
+      @JsonKey(name: 'date_from') required this.dateFrom,
+      @JsonKey(name: 'date_to') required this.dateTo,
       @JsonKey(name: 'members') this.members,
       @JsonKey(name: 'limit') this.limit,
       @JsonKey(name: 'offset') this.offset,
@@ -316,14 +314,12 @@ class _$_MeetingsGetRequest implements _MeetingsGetRequest {
 
   /// .
   @JsonKey(name: 'date_from')
-  @DateTimeConverter()
-  final DateTime dateFrom;
+  final String dateFrom;
   @override
 
   /// .
   @JsonKey(name: 'date_to')
-  @DateTimeConverter()
-  final DateTime dateTo;
+  final String dateTo;
   @override
 
   /// .
@@ -419,8 +415,8 @@ class _$_MeetingsGetRequest implements _MeetingsGetRequest {
 abstract class _MeetingsGetRequest implements MeetingsGetRequest {
   const factory _MeetingsGetRequest(
       {@JsonKey(name: 'team_uuid') required String teamUuid,
-      @JsonKey(name: 'date_from') @DateTimeConverter() required DateTime dateFrom,
-      @JsonKey(name: 'date_to') @DateTimeConverter() required DateTime dateTo,
+      @JsonKey(name: 'date_from') required String dateFrom,
+      @JsonKey(name: 'date_to') required String dateTo,
       @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
@@ -441,14 +437,12 @@ abstract class _MeetingsGetRequest implements MeetingsGetRequest {
 
   /// .
   @JsonKey(name: 'date_from')
-  @DateTimeConverter()
-  DateTime get dateFrom => throw _privateConstructorUsedError;
+  String get dateFrom => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'date_to')
-  @DateTimeConverter()
-  DateTime get dateTo => throw _privateConstructorUsedError;
+  String get dateTo => throw _privateConstructorUsedError;
   @override
 
   /// .

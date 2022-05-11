@@ -8,8 +8,8 @@ part of 'meetings_get_request.dart';
 
 _$_MeetingsGetRequest _$$_MeetingsGetRequestFromJson(Map<String, dynamic> json) => _$_MeetingsGetRequest(
       teamUuid: json['team_uuid'] as String,
-      dateFrom: const DateTimeConverter().fromJson(json['date_from'] as String),
-      dateTo: const DateTimeConverter().fromJson(json['date_to'] as String),
+      dateFrom: json['date_from'] as String,
+      dateTo: json['date_to'] as String,
       members: (json['members'] as List<dynamic>?)?.map((e) => e as String).toList(),
       limit: json['limit'] as int?,
       offset: json['offset'] as int?,
@@ -22,8 +22,8 @@ _$_MeetingsGetRequest _$$_MeetingsGetRequestFromJson(Map<String, dynamic> json) 
 
 Map<String, dynamic> _$$_MeetingsGetRequestToJson(_$_MeetingsGetRequest instance) => <String, dynamic>{
       'team_uuid': instance.teamUuid,
-      'date_from': const DateTimeConverter().toJson(instance.dateFrom),
-      'date_to': const DateTimeConverter().toJson(instance.dateTo),
+      'date_from': instance.dateFrom,
+      'date_to': instance.dateTo,
       'members': instance.members,
       'limit': instance.limit,
       'offset': instance.offset,

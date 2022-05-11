@@ -12,10 +12,10 @@ class MeetingsGetRequest with _$MeetingsGetRequest {
     @JsonKey(name: 'team_uuid') required String teamUuid,
 
     /// .
-    @JsonKey(name: 'date_from') @DateTimeConverter() required DateTime dateFrom,
+    @JsonKey(name: 'date_from') required String dateFrom,
 
     /// .
-    @JsonKey(name: 'date_to') @DateTimeConverter() required DateTime dateTo,
+    @JsonKey(name: 'date_to') required String dateTo,
 
     /// .
     @JsonKey(name: 'members') List<String>? members,
