@@ -9,16 +9,16 @@ part 'meetings_response.g.dart';
 class MeetingsResponse with _$MeetingsResponse {
   const factory MeetingsResponse({
     /// .
-    @JsonKey(name: 'items') required List<Meeting> items,
+    @JsonKey(name: 'objects') required List<Meeting> objects,
 
     /// .
-    @JsonKey(name: 'limit') int? limit,
+    @JsonKey(name: 'count') required int count,
 
     /// .
-    @JsonKey(name: 'offset') int? offset,
+    @JsonKey(name: 'limit') required int limit,
 
     /// .
-    @JsonKey(name: 'total') int? total,
+    @JsonKey(name: 'offset') required int offset,
   }) = _MeetingsResponse;
 
   factory MeetingsResponse.fromJson(Map<String, dynamic> json) => _$MeetingsResponseFromJson(json);

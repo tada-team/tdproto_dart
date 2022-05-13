@@ -22,15 +22,15 @@ class _$MeetingsResponseTearOff {
   const _$MeetingsResponseTearOff();
 
   _MeetingsResponse call(
-      {@JsonKey(name: 'items') required List<Meeting> items,
-      @JsonKey(name: 'limit') int? limit,
-      @JsonKey(name: 'offset') int? offset,
-      @JsonKey(name: 'total') int? total}) {
+      {@JsonKey(name: 'objects') required List<Meeting> objects,
+      @JsonKey(name: 'count') required int count,
+      @JsonKey(name: 'limit') required int limit,
+      @JsonKey(name: 'offset') required int offset}) {
     return _MeetingsResponse(
-      items: items,
+      objects: objects,
+      count: count,
       limit: limit,
       offset: offset,
-      total: total,
     );
   }
 
@@ -45,20 +45,20 @@ const $MeetingsResponse = _$MeetingsResponseTearOff();
 /// @nodoc
 mixin _$MeetingsResponse {
   /// .
-  @JsonKey(name: 'items')
-  List<Meeting> get items => throw _privateConstructorUsedError;
+  @JsonKey(name: 'objects')
+  List<Meeting> get objects => throw _privateConstructorUsedError;
+
+  /// .
+  @JsonKey(name: 'count')
+  int get count => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'limit')
-  int? get limit => throw _privateConstructorUsedError;
+  int get limit => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'offset')
-  int? get offset => throw _privateConstructorUsedError;
-
-  /// .
-  @JsonKey(name: 'total')
-  int? get total => throw _privateConstructorUsedError;
+  int get offset => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -70,10 +70,10 @@ abstract class $MeetingsResponseCopyWith<$Res> {
   factory $MeetingsResponseCopyWith(MeetingsResponse value, $Res Function(MeetingsResponse) then) =
       _$MeetingsResponseCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'items') List<Meeting> items,
-      @JsonKey(name: 'limit') int? limit,
-      @JsonKey(name: 'offset') int? offset,
-      @JsonKey(name: 'total') int? total});
+      {@JsonKey(name: 'objects') List<Meeting> objects,
+      @JsonKey(name: 'count') int count,
+      @JsonKey(name: 'limit') int limit,
+      @JsonKey(name: 'offset') int offset});
 }
 
 /// @nodoc
@@ -86,28 +86,28 @@ class _$MeetingsResponseCopyWithImpl<$Res> implements $MeetingsResponseCopyWith<
 
   @override
   $Res call({
-    Object? items = freezed,
+    Object? objects = freezed,
+    Object? count = freezed,
     Object? limit = freezed,
     Object? offset = freezed,
-    Object? total = freezed,
   }) {
     return _then(_value.copyWith(
-      items: items == freezed
-          ? _value.items
-          : items // ignore: cast_nullable_to_non_nullable
+      objects: objects == freezed
+          ? _value.objects
+          : objects // ignore: cast_nullable_to_non_nullable
               as List<Meeting>,
+      count: count == freezed
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as int,
       limit: limit == freezed
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as int,
       offset: offset == freezed
           ? _value.offset
           : offset // ignore: cast_nullable_to_non_nullable
-              as int?,
-      total: total == freezed
-          ? _value.total
-          : total // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as int,
     ));
   }
 }
@@ -118,10 +118,10 @@ abstract class _$MeetingsResponseCopyWith<$Res> implements $MeetingsResponseCopy
       __$MeetingsResponseCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'items') List<Meeting> items,
-      @JsonKey(name: 'limit') int? limit,
-      @JsonKey(name: 'offset') int? offset,
-      @JsonKey(name: 'total') int? total});
+      {@JsonKey(name: 'objects') List<Meeting> objects,
+      @JsonKey(name: 'count') int count,
+      @JsonKey(name: 'limit') int limit,
+      @JsonKey(name: 'offset') int offset});
 }
 
 /// @nodoc
@@ -135,28 +135,28 @@ class __$MeetingsResponseCopyWithImpl<$Res> extends _$MeetingsResponseCopyWithIm
 
   @override
   $Res call({
-    Object? items = freezed,
+    Object? objects = freezed,
+    Object? count = freezed,
     Object? limit = freezed,
     Object? offset = freezed,
-    Object? total = freezed,
   }) {
     return _then(_MeetingsResponse(
-      items: items == freezed
-          ? _value.items
-          : items // ignore: cast_nullable_to_non_nullable
+      objects: objects == freezed
+          ? _value.objects
+          : objects // ignore: cast_nullable_to_non_nullable
               as List<Meeting>,
+      count: count == freezed
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as int,
       limit: limit == freezed
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as int,
       offset: offset == freezed
           ? _value.offset
           : offset // ignore: cast_nullable_to_non_nullable
-              as int?,
-      total: total == freezed
-          ? _value.total
-          : total // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as int,
     ));
   }
 }
@@ -165,56 +165,56 @@ class __$MeetingsResponseCopyWithImpl<$Res> extends _$MeetingsResponseCopyWithIm
 @JsonSerializable()
 class _$_MeetingsResponse implements _MeetingsResponse {
   const _$_MeetingsResponse(
-      {@JsonKey(name: 'items') required this.items,
-      @JsonKey(name: 'limit') this.limit,
-      @JsonKey(name: 'offset') this.offset,
-      @JsonKey(name: 'total') this.total});
+      {@JsonKey(name: 'objects') required this.objects,
+      @JsonKey(name: 'count') required this.count,
+      @JsonKey(name: 'limit') required this.limit,
+      @JsonKey(name: 'offset') required this.offset});
 
   factory _$_MeetingsResponse.fromJson(Map<String, dynamic> json) => _$$_MeetingsResponseFromJson(json);
 
   @override
 
   /// .
-  @JsonKey(name: 'items')
-  final List<Meeting> items;
+  @JsonKey(name: 'objects')
+  final List<Meeting> objects;
+  @override
+
+  /// .
+  @JsonKey(name: 'count')
+  final int count;
   @override
 
   /// .
   @JsonKey(name: 'limit')
-  final int? limit;
+  final int limit;
   @override
 
   /// .
   @JsonKey(name: 'offset')
-  final int? offset;
-  @override
-
-  /// .
-  @JsonKey(name: 'total')
-  final int? total;
+  final int offset;
 
   @override
   String toString() {
-    return 'MeetingsResponse(items: $items, limit: $limit, offset: $offset, total: $total)';
+    return 'MeetingsResponse(objects: $objects, count: $count, limit: $limit, offset: $offset)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _MeetingsResponse &&
-            (identical(other.items, items) || const DeepCollectionEquality().equals(other.items, items)) &&
+            (identical(other.objects, objects) || const DeepCollectionEquality().equals(other.objects, objects)) &&
+            (identical(other.count, count) || const DeepCollectionEquality().equals(other.count, count)) &&
             (identical(other.limit, limit) || const DeepCollectionEquality().equals(other.limit, limit)) &&
-            (identical(other.offset, offset) || const DeepCollectionEquality().equals(other.offset, offset)) &&
-            (identical(other.total, total) || const DeepCollectionEquality().equals(other.total, total)));
+            (identical(other.offset, offset) || const DeepCollectionEquality().equals(other.offset, offset)));
   }
 
   @override
   int get hashCode =>
       runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(items) ^
+      const DeepCollectionEquality().hash(objects) ^
+      const DeepCollectionEquality().hash(count) ^
       const DeepCollectionEquality().hash(limit) ^
-      const DeepCollectionEquality().hash(offset) ^
-      const DeepCollectionEquality().hash(total);
+      const DeepCollectionEquality().hash(offset);
 
   @JsonKey(ignore: true)
   @override
@@ -229,33 +229,33 @@ class _$_MeetingsResponse implements _MeetingsResponse {
 
 abstract class _MeetingsResponse implements MeetingsResponse {
   const factory _MeetingsResponse(
-      {@JsonKey(name: 'items') required List<Meeting> items,
-      @JsonKey(name: 'limit') int? limit,
-      @JsonKey(name: 'offset') int? offset,
-      @JsonKey(name: 'total') int? total}) = _$_MeetingsResponse;
+      {@JsonKey(name: 'objects') required List<Meeting> objects,
+      @JsonKey(name: 'count') required int count,
+      @JsonKey(name: 'limit') required int limit,
+      @JsonKey(name: 'offset') required int offset}) = _$_MeetingsResponse;
 
   factory _MeetingsResponse.fromJson(Map<String, dynamic> json) = _$_MeetingsResponse.fromJson;
 
   @override
 
   /// .
-  @JsonKey(name: 'items')
-  List<Meeting> get items => throw _privateConstructorUsedError;
+  @JsonKey(name: 'objects')
+  List<Meeting> get objects => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'count')
+  int get count => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'limit')
-  int? get limit => throw _privateConstructorUsedError;
+  int get limit => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'offset')
-  int? get offset => throw _privateConstructorUsedError;
-  @override
-
-  /// .
-  @JsonKey(name: 'total')
-  int? get total => throw _privateConstructorUsedError;
+  int get offset => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MeetingsResponseCopyWith<_MeetingsResponse> get copyWith => throw _privateConstructorUsedError;
