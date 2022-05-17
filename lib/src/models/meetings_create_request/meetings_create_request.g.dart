@@ -11,7 +11,7 @@ _$_MeetingsCreateRequest _$$_MeetingsCreateRequestFromJson(Map<String, dynamic> 
       teamUuid: json['team_uuid'] as String,
       title: json['title'] as String?,
       description: json['description'] as String?,
-      startAt: const DateTimeConverter().fromJson(json['start_at'] as String),
+      startAt: json['start_at'] as String,
       duration: json['duration'] as int,
       freq: json['freq'] == null ? null : Freq.fromJson(json['freq'] as Map<String, dynamic>),
       members: (json['members'] as List<dynamic>)
@@ -26,7 +26,7 @@ Map<String, dynamic> _$$_MeetingsCreateRequestToJson(_$_MeetingsCreateRequest in
       'team_uuid': instance.teamUuid,
       'title': instance.title,
       'description': instance.description,
-      'start_at': const DateTimeConverter().toJson(instance.startAt),
+      'start_at': instance.startAt,
       'duration': instance.duration,
       'freq': instance.freq?.toJson(),
       'members': instance.members.map((e) => e.toJson()).toList(),

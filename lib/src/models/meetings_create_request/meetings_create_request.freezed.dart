@@ -26,7 +26,7 @@ class _$MeetingsCreateRequestTearOff {
       @JsonKey(name: 'team_uuid') required String teamUuid,
       @JsonKey(name: 'title') String? title,
       @JsonKey(name: 'description') String? description,
-      @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
+      @JsonKey(name: 'start_at') required String startAt,
       @JsonKey(name: 'duration') required int duration,
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'members') required List<MeetingsMemberCreateParams> members,
@@ -74,8 +74,7 @@ mixin _$MeetingsCreateRequest {
 
   /// .
   @JsonKey(name: 'start_at')
-  @DateTimeConverter()
-  DateTime get startAt => throw _privateConstructorUsedError;
+  String get startAt => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'duration')
@@ -111,7 +110,7 @@ abstract class $MeetingsCreateRequestCopyWith<$Res> {
       @JsonKey(name: 'team_uuid') String teamUuid,
       @JsonKey(name: 'title') String? title,
       @JsonKey(name: 'description') String? description,
-      @JsonKey(name: 'start_at') @DateTimeConverter() DateTime startAt,
+      @JsonKey(name: 'start_at') String startAt,
       @JsonKey(name: 'duration') int duration,
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'members') List<MeetingsMemberCreateParams> members,
@@ -162,7 +161,7 @@ class _$MeetingsCreateRequestCopyWithImpl<$Res> implements $MeetingsCreateReques
       startAt: startAt == freezed
           ? _value.startAt
           : startAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       duration: duration == freezed
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
@@ -208,7 +207,7 @@ abstract class _$MeetingsCreateRequestCopyWith<$Res> implements $MeetingsCreateR
       @JsonKey(name: 'team_uuid') String teamUuid,
       @JsonKey(name: 'title') String? title,
       @JsonKey(name: 'description') String? description,
-      @JsonKey(name: 'start_at') @DateTimeConverter() DateTime startAt,
+      @JsonKey(name: 'start_at') String startAt,
       @JsonKey(name: 'duration') int duration,
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'members') List<MeetingsMemberCreateParams> members,
@@ -261,7 +260,7 @@ class __$MeetingsCreateRequestCopyWithImpl<$Res> extends _$MeetingsCreateRequest
       startAt: startAt == freezed
           ? _value.startAt
           : startAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       duration: duration == freezed
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
@@ -294,7 +293,7 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
       @JsonKey(name: 'team_uuid') required this.teamUuid,
       @JsonKey(name: 'title') this.title,
       @JsonKey(name: 'description') this.description,
-      @JsonKey(name: 'start_at') @DateTimeConverter() required this.startAt,
+      @JsonKey(name: 'start_at') required this.startAt,
       @JsonKey(name: 'duration') required this.duration,
       @JsonKey(name: 'freq') this.freq,
       @JsonKey(name: 'members') required this.members,
@@ -327,8 +326,7 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
 
   /// .
   @JsonKey(name: 'start_at')
-  @DateTimeConverter()
-  final DateTime startAt;
+  final String startAt;
   @override
 
   /// .
@@ -410,7 +408,7 @@ abstract class _MeetingsCreateRequest implements MeetingsCreateRequest {
       @JsonKey(name: 'team_uuid') required String teamUuid,
       @JsonKey(name: 'title') String? title,
       @JsonKey(name: 'description') String? description,
-      @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
+      @JsonKey(name: 'start_at') required String startAt,
       @JsonKey(name: 'duration') required int duration,
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'members') required List<MeetingsMemberCreateParams> members,
@@ -443,8 +441,7 @@ abstract class _MeetingsCreateRequest implements MeetingsCreateRequest {
 
   /// .
   @JsonKey(name: 'start_at')
-  @DateTimeConverter()
-  DateTime get startAt => throw _privateConstructorUsedError;
+  String get startAt => throw _privateConstructorUsedError;
   @override
 
   /// .

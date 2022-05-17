@@ -21,7 +21,7 @@ class MeetingsCreateRequest with _$MeetingsCreateRequest {
     @JsonKey(name: 'description') String? description,
 
     /// .
-    @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
+    @JsonKey(name: 'start_at') required String startAt,
 
     /// .
     @JsonKey(name: 'duration') required int duration,
