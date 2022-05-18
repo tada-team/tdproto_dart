@@ -157,6 +157,7 @@ export 'src/models/jsep/jsep.dart';
 export 'src/models/markup_entity/markup_entity.dart';
 export 'src/models/meeting/meeting.dart';
 export 'src/models/meeting_member/meeting_member.dart';
+export 'src/models/meetings_count_response/meetings_count_response.dart';
 export 'src/models/meetings_create_request/meetings_create_request.dart';
 export 'src/models/meetings_dates_response/meetings_dates_response.dart';
 export 'src/models/meetings_delete_request_params/meetings_delete_request_params.dart';

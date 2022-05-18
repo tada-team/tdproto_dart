@@ -27,7 +27,7 @@ class _$MeetingTearOff {
       @JsonKey(name: 'owner_contact_uuid') required String ownerContactUuid,
       @JsonKey(name: 'owner_user_uuid') required String ownerUserUuid,
       @JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'start_at') required String startAt,
+      @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
       @JsonKey(name: 'duration') required int duration,
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'is_archive') bool? isArchive,
@@ -224,7 +224,8 @@ mixin _$Meeting {
 
   /// .
   @JsonKey(name: 'start_at')
-  String get startAt => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get startAt => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'duration')
@@ -553,7 +554,7 @@ abstract class $MeetingCopyWith<$Res> {
       @JsonKey(name: 'owner_contact_uuid') String ownerContactUuid,
       @JsonKey(name: 'owner_user_uuid') String ownerUserUuid,
       @JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'start_at') String startAt,
+      @JsonKey(name: 'start_at') @DateTimeConverter() DateTime startAt,
       @JsonKey(name: 'duration') int duration,
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'is_archive') bool? isArchive,
@@ -757,7 +758,7 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
       startAt: startAt == freezed
           ? _value.startAt
           : startAt // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       duration: duration == freezed
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
@@ -1131,7 +1132,7 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
       @JsonKey(name: 'owner_contact_uuid') String ownerContactUuid,
       @JsonKey(name: 'owner_user_uuid') String ownerUserUuid,
       @JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'start_at') String startAt,
+      @JsonKey(name: 'start_at') @DateTimeConverter() DateTime startAt,
       @JsonKey(name: 'duration') int duration,
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'is_archive') bool? isArchive,
@@ -1339,7 +1340,7 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res> implement
       startAt: startAt == freezed
           ? _value.startAt
           : startAt // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       duration: duration == freezed
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
@@ -1661,7 +1662,7 @@ class _$_Meeting implements _Meeting {
       @JsonKey(name: 'owner_contact_uuid') required this.ownerContactUuid,
       @JsonKey(name: 'owner_user_uuid') required this.ownerUserUuid,
       @JsonKey(name: 'personal_account_id') this.personalAccountId,
-      @JsonKey(name: 'start_at') required this.startAt,
+      @JsonKey(name: 'start_at') @DateTimeConverter() required this.startAt,
       @JsonKey(name: 'duration') required this.duration,
       @JsonKey(name: 'freq') this.freq,
       @JsonKey(name: 'is_archive') this.isArchive,
@@ -1771,7 +1772,8 @@ class _$_Meeting implements _Meeting {
 
   /// .
   @JsonKey(name: 'start_at')
-  final String startAt;
+  @DateTimeConverter()
+  final DateTime startAt;
   @override
 
   /// .
@@ -2405,7 +2407,7 @@ abstract class _Meeting implements Meeting {
       @JsonKey(name: 'owner_contact_uuid') required String ownerContactUuid,
       @JsonKey(name: 'owner_user_uuid') required String ownerUserUuid,
       @JsonKey(name: 'personal_account_id') String? personalAccountId,
-      @JsonKey(name: 'start_at') required String startAt,
+      @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
       @JsonKey(name: 'duration') required int duration,
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'is_archive') bool? isArchive,
@@ -2515,7 +2517,8 @@ abstract class _Meeting implements Meeting {
 
   /// .
   @JsonKey(name: 'start_at')
-  String get startAt => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get startAt => throw _privateConstructorUsedError;
   @override
 
   /// .
