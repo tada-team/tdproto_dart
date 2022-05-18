@@ -243,6 +243,8 @@ export 'src/models/server_debug/server_debug.dart';
 export 'src/models/server_debug_params/server_debug_params.dart';
 export 'src/models/server_login/server_login.dart';
 export 'src/models/server_login_params/server_login_params.dart';
+export 'src/models/server_meeting_updated/server_meeting_updated.dart';
+export 'src/models/server_meeting_updated_params/server_meeting_updated_params.dart';
 export 'src/models/server_message_push/server_message_push.dart';
 export 'src/models/server_message_received/server_message_received.dart';
 export 'src/models/server_message_received_params/server_message_received_params.dart';
