@@ -12,10 +12,10 @@ class ClientChatComposingParams with _$ClientChatComposingParams {
     @JsonKey(name: 'jid') required String jid,
 
     /// true = audiomessage, false = text typing.
-    @Default(false) @JsonKey(name: 'is_audio') bool? isAudio,
+    @JsonKey(name: 'is_audio') bool? isAudio,
 
     /// true = start typing / audio recording, false = stop.
-    @Default(false) @JsonKey(name: 'composing') bool? composing,
+    @JsonKey(name: 'composing') bool? composing,
 
     /// Message draft data.
     @JsonKey(name: 'draft') String? draft,

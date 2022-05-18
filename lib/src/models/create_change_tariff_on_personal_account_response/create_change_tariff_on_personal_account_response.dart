@@ -9,7 +9,7 @@ part 'create_change_tariff_on_personal_account_response.g.dart';
 class CreateChangeTariffOnPersonalAccountResponse with _$CreateChangeTariffOnPersonalAccountResponse {
   const factory CreateChangeTariffOnPersonalAccountResponse({
     /// .
-    @Default(false) @JsonKey(name: 'success') bool? success,
+    @JsonKey(name: 'success') bool? success,
   }) = _CreateChangeTariffOnPersonalAccountResponse;
 
   factory CreateChangeTariffOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>

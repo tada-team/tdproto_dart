@@ -24,7 +24,7 @@ class MessageLink with _$MessageLink {
     @JsonKey(name: 'uploads') List<Upload>? uploads,
 
     /// Website previews disabled.
-    @Default(false) @JsonKey(name: 'nopreview') bool? noPreview,
+    @JsonKey(name: 'nopreview') bool? noPreview,
 
     /// Optional youtube movie id.
     @JsonKey(name: 'youtube_id') String? youtubeId,

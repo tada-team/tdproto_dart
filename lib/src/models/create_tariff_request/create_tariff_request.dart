@@ -30,13 +30,13 @@ class CreateTariffRequest with _$CreateTariffRequest {
     @JsonKey(name: 'free_workplaces') int? freeWorkplaces,
 
     /// Flag of availability of free seats when exceeding FreeWorkplace.
-    @Default(false) @JsonKey(name: 'is_billing_free') bool? isBillingFree,
+    @JsonKey(name: 'is_billing_free') bool? isBillingFree,
 
     /// Flag of accounting without looking at the number of days before the billing period.
-    @Default(false) @JsonKey(name: 'is_billing_full_time') bool? isBillingFullTime,
+    @JsonKey(name: 'is_billing_full_time') bool? isBillingFullTime,
 
     /// Flag for accounting for unspent days when switching to a new tariff.
-    @Default(false) @JsonKey(name: 'is_recalc_change_tariff') bool? isRecalcChangeTariff,
+    @JsonKey(name: 'is_recalc_change_tariff') bool? isRecalcChangeTariff,
 
     /// Maximum count of users in voice conference.
     @JsonKey(name: 'max_voice_user') int? maxVoiceUser,
@@ -51,7 +51,7 @@ class CreateTariffRequest with _$CreateTariffRequest {
     @JsonKey(name: 'video_sharing_bitrate') required int videoSharingBitrate,
 
     /// Default tariff flag that is set when registering an account.
-    @Default(false) @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
+    @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
 
     /// Date of opening tariff.
     @JsonKey(name: 'open_date') String? openDate,

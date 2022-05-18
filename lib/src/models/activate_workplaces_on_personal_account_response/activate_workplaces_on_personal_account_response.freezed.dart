@@ -22,7 +22,7 @@ ActivateWorkplacesOnPersonalAccountResponse _$ActivateWorkplacesOnPersonalAccoun
 class _$ActivateWorkplacesOnPersonalAccountResponseTearOff {
   const _$ActivateWorkplacesOnPersonalAccountResponseTearOff();
 
-  _ActivateWorkplacesOnPersonalAccountResponse call({@JsonKey(name: 'success') bool? success = false}) {
+  _ActivateWorkplacesOnPersonalAccountResponse call({@JsonKey(name: 'success') bool? success}) {
     return _ActivateWorkplacesOnPersonalAccountResponse(
       success: success,
     );
@@ -116,7 +116,7 @@ class __$ActivateWorkplacesOnPersonalAccountResponseCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_ActivateWorkplacesOnPersonalAccountResponse implements _ActivateWorkplacesOnPersonalAccountResponse {
-  const _$_ActivateWorkplacesOnPersonalAccountResponse({@JsonKey(name: 'success') this.success = false});
+  const _$_ActivateWorkplacesOnPersonalAccountResponse({@JsonKey(name: 'success') this.success});
 
   factory _$_ActivateWorkplacesOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
       _$$_ActivateWorkplacesOnPersonalAccountResponseFromJson(json);

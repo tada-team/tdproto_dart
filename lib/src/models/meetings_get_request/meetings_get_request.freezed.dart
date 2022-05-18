@@ -28,11 +28,11 @@ class _$MeetingsGetRequestTearOff {
       @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
-      @JsonKey(name: 'is_archive') bool? isArchive = false,
-      @JsonKey(name: 'is_freq') bool? isFreq = false,
-      @JsonKey(name: 'is_public') bool? isPublic = false,
-      @JsonKey(name: 'is_outside') bool? isOutside = false,
-      @JsonKey(name: 'is_required') bool? isRequired = false}) {
+      @JsonKey(name: 'is_archive') bool? isArchive,
+      @JsonKey(name: 'is_freq') bool? isFreq,
+      @JsonKey(name: 'is_public') bool? isPublic,
+      @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'is_required') bool? isRequired}) {
     return _MeetingsGetRequest(
       teamUuid: teamUuid,
       dateFrom: dateFrom,
@@ -297,11 +297,11 @@ class _$_MeetingsGetRequest implements _MeetingsGetRequest {
       @JsonKey(name: 'members') this.members,
       @JsonKey(name: 'limit') this.limit,
       @JsonKey(name: 'offset') this.offset,
-      @JsonKey(name: 'is_archive') this.isArchive = false,
-      @JsonKey(name: 'is_freq') this.isFreq = false,
-      @JsonKey(name: 'is_public') this.isPublic = false,
-      @JsonKey(name: 'is_outside') this.isOutside = false,
-      @JsonKey(name: 'is_required') this.isRequired = false});
+      @JsonKey(name: 'is_archive') this.isArchive,
+      @JsonKey(name: 'is_freq') this.isFreq,
+      @JsonKey(name: 'is_public') this.isPublic,
+      @JsonKey(name: 'is_outside') this.isOutside,
+      @JsonKey(name: 'is_required') this.isRequired});
 
   factory _$_MeetingsGetRequest.fromJson(Map<String, dynamic> json) => _$$_MeetingsGetRequestFromJson(json);
 

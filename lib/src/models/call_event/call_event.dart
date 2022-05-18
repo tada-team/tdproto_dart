@@ -15,7 +15,7 @@ class CallEvent with _$CallEvent {
     @JsonKey(name: 'uid') required String uid,
 
     /// Call buzzing.
-    @Default(false) @JsonKey(name: 'buzz') bool? buzz,
+    @JsonKey(name: 'buzz') bool? buzz,
 
     /// Creation date, iso datetime.
     @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,

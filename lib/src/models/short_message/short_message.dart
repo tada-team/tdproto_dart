@@ -30,7 +30,7 @@ class ShortMessage with _$ShortMessage {
     @JsonKey(name: 'chat') required String chat,
 
     /// This message is archive. True or null.
-    @Default(false) @JsonKey(name: 'is_archive') bool? isArchive,
+    @JsonKey(name: 'is_archive') bool? isArchive,
   }) = _ShortMessage;
 
   factory ShortMessage.fromJson(Map<String, dynamic> json) => _$ShortMessageFromJson(json);

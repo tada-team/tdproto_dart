@@ -27,7 +27,7 @@ class _$MessageLinkTearOff {
       @JsonKey(name: 'text') required String text,
       @JsonKey(name: 'preview') MessageLinkPreview? preview,
       @JsonKey(name: 'uploads') List<Upload>? uploads,
-      @JsonKey(name: 'nopreview') bool? noPreview = false,
+      @JsonKey(name: 'nopreview') bool? noPreview,
       @JsonKey(name: 'youtube_id') String? youtubeId}) {
     return _MessageLink(
       pattern: pattern,
@@ -238,7 +238,7 @@ class _$_MessageLink implements _MessageLink {
       @JsonKey(name: 'text') required this.text,
       @JsonKey(name: 'preview') this.preview,
       @JsonKey(name: 'uploads') this.uploads,
-      @JsonKey(name: 'nopreview') this.noPreview = false,
+      @JsonKey(name: 'nopreview') this.noPreview,
       @JsonKey(name: 'youtube_id') this.youtubeId});
 
   factory _$_MessageLink.fromJson(Map<String, dynamic> json) => _$$_MessageLinkFromJson(json);

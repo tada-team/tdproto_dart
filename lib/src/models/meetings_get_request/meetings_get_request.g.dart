@@ -13,11 +13,11 @@ _$_MeetingsGetRequest _$$_MeetingsGetRequestFromJson(Map<String, dynamic> json) 
       members: (json['members'] as List<dynamic>?)?.map((e) => e as String).toList(),
       limit: json['limit'] as int?,
       offset: json['offset'] as int?,
-      isArchive: json['is_archive'] as bool? ?? false,
-      isFreq: json['is_freq'] as bool? ?? false,
-      isPublic: json['is_public'] as bool? ?? false,
-      isOutside: json['is_outside'] as bool? ?? false,
-      isRequired: json['is_required'] as bool? ?? false,
+      isArchive: json['is_archive'] as bool?,
+      isFreq: json['is_freq'] as bool?,
+      isPublic: json['is_public'] as bool?,
+      isOutside: json['is_outside'] as bool?,
+      isRequired: json['is_required'] as bool?,
     );
 
 Map<String, dynamic> _$$_MeetingsGetRequestToJson(_$_MeetingsGetRequest instance) => <String, dynamic>{

@@ -12,7 +12,7 @@ _$_Section _$$_SectionFromJson(Map<String, dynamic> json) => _$_Section(
       name: json['name'] as String,
       gentime: json['gentime'] as int,
       description: json['description'] as String?,
-      isArchive: json['is_archive'] as bool? ?? false,
+      isArchive: json['is_archive'] as bool?,
     );
 
 Map<String, dynamic> _$$_SectionToJson(_$_Section instance) => <String, dynamic>{

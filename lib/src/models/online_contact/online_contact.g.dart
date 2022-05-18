@@ -8,8 +8,8 @@ part of 'online_contact.dart';
 
 _$_OnlineContact _$$_OnlineContactFromJson(Map<String, dynamic> json) => _$_OnlineContact(
       jid: json['jid'] as String,
-      afk: json['afk'] as bool? ?? false,
-      focused: json['focused'] as bool? ?? false,
+      afk: json['afk'] as bool?,
+      focused: json['focused'] as bool?,
       mobile: json['mobile'] as bool,
     );
 

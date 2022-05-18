@@ -24,16 +24,16 @@ class ClientMessageUpdatedParams with _$ClientMessageUpdatedParams {
     @JsonKey(name: 'linked_messages') List<String>? linkedMessages,
 
     /// Important flag. Not required. Default: false.
-    @Default(false) @JsonKey(name: 'important') bool? important,
+    @JsonKey(name: 'important') bool? important,
 
     /// Disable links preview generation. Not required. Default: false.
-    @Default(false) @JsonKey(name: 'nopreview') bool? nopreview,
+    @JsonKey(name: 'nopreview') bool? nopreview,
 
     /// Message attachments.
     @JsonKey(name: 'uploads') List<String>? uploads,
 
     /// Backward compatibility mode.
-    @Default(false) @JsonKey(name: 'old_style_attachment') bool? oldStyleAttachment,
+    @JsonKey(name: 'old_style_attachment') bool? oldStyleAttachment,
 
     /// Deprecated.
     @Deprecated('Deprecated.') @JsonKey(name: 'comment') String? comment,

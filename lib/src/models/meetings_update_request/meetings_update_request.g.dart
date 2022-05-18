@@ -13,8 +13,8 @@ _$_MeetingsUpdateRequest _$$_MeetingsUpdateRequestFromJson(Map<String, dynamic> 
       startAt: json['start_at'] as String?,
       duration: json['duration'] as int?,
       freq: json['freq'] == null ? null : Freq.fromJson(json['freq'] as Map<String, dynamic>),
-      isPublic: json['is_public'] as bool? ?? false,
-      isOutside: json['is_outside'] as bool? ?? false,
+      isPublic: json['is_public'] as bool?,
+      isOutside: json['is_outside'] as bool?,
     );
 
 Map<String, dynamic> _$$_MeetingsUpdateRequestToJson(_$_MeetingsUpdateRequest instance) => <String, dynamic>{

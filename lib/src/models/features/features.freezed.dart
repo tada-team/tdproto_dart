@@ -95,21 +95,21 @@ class _$FeaturesTearOff {
       @JsonKey(name: 'max_message_search_limit')
           required int maxMessageSearchLimit,
       @JsonKey(name: 'multi_nodes')
-          bool? multiNodes = false,
+          bool? multiNodes,
       @JsonKey(name: 'afk_age')
           required int afkAge,
       @JsonKey(name: 'auth_by_password')
-          bool? authByPassword = false,
+          bool? authByPassword,
       @JsonKey(name: 'auth_by_qr_code')
-          bool? authByQrCode = false,
+          bool? authByQrCode,
       @JsonKey(name: 'auth_by_sms')
-          bool? authBySms = false,
+          bool? authBySms,
       @JsonKey(name: 'auth_2fa')
-          bool? auth2fa = false,
+          bool? auth2fa,
       @JsonKey(name: 'auth_by_kerberos')
-          bool? authByKerberos = false,
+          bool? authByKerberos,
       @JsonKey(name: 'is_recaptcha_enabled')
-          bool? reCaptchaEnabled = false,
+          bool? reCaptchaEnabled,
       @JsonKey(name: 'recaptcha_web_key_v3')
           String? reCaptchaWebKeyV3,
       @JsonKey(name: 'recaptcha_web_key_v2')
@@ -177,7 +177,7 @@ class _$FeaturesTearOff {
       @JsonKey(name: 'calls_record')
           required bool callsRecord,
       @JsonKey(name: 'only_one_device_per_call')
-          bool? onlyOneDevicePerCall = false,
+          bool? onlyOneDevicePerCall,
       @JsonKey(name: 'max_participants_per_call')
           int? maxParticipantsPerCall,
       @JsonKey(name: 'safari_push_id')
@@ -191,7 +191,7 @@ class _$FeaturesTearOff {
       @JsonKey(name: 'wiki_pages')
           required bool wikiPages,
       @JsonKey(name: 'allow_admin_mute')
-          bool? allowAdminMute = false,
+          bool? allowAdminMute,
       @JsonKey(name: 'default_wallpaper')
           Wallpaper? defaultWallpaper,
       @JsonKey(name: 'support_email')
@@ -220,7 +220,7 @@ class _$FeaturesTearOff {
       @JsonKey(name: 'calls')
           required bool calls,
       @JsonKey(name: 'billing')
-          bool? billing = false,
+          bool? billing,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'min_app_version')
           required String minAppVersion,
@@ -229,7 +229,7 @@ class _$FeaturesTearOff {
       @JsonKey(name: 'file_extension_blacklist')
           List<String>? fileExtensionBlacklist,
       @JsonKey(name: 'file_extension_whitelist_priority')
-          bool? fileExtensionWhitelistPriority = false}) {
+          bool? fileExtensionWhitelistPriority}) {
     return _Features(
       host: host,
       build: build,
@@ -2308,21 +2308,21 @@ class _$_Features implements _Features {
       @JsonKey(name: 'max_message_search_limit')
           required this.maxMessageSearchLimit,
       @JsonKey(name: 'multi_nodes')
-          this.multiNodes = false,
+          this.multiNodes,
       @JsonKey(name: 'afk_age')
           required this.afkAge,
       @JsonKey(name: 'auth_by_password')
-          this.authByPassword = false,
+          this.authByPassword,
       @JsonKey(name: 'auth_by_qr_code')
-          this.authByQrCode = false,
+          this.authByQrCode,
       @JsonKey(name: 'auth_by_sms')
-          this.authBySms = false,
+          this.authBySms,
       @JsonKey(name: 'auth_2fa')
-          this.auth2fa = false,
+          this.auth2fa,
       @JsonKey(name: 'auth_by_kerberos')
-          this.authByKerberos = false,
+          this.authByKerberos,
       @JsonKey(name: 'is_recaptcha_enabled')
-          this.reCaptchaEnabled = false,
+          this.reCaptchaEnabled,
       @JsonKey(name: 'recaptcha_web_key_v3')
           this.reCaptchaWebKeyV3,
       @JsonKey(name: 'recaptcha_web_key_v2')
@@ -2390,7 +2390,7 @@ class _$_Features implements _Features {
       @JsonKey(name: 'calls_record')
           required this.callsRecord,
       @JsonKey(name: 'only_one_device_per_call')
-          this.onlyOneDevicePerCall = false,
+          this.onlyOneDevicePerCall,
       @JsonKey(name: 'max_participants_per_call')
           this.maxParticipantsPerCall,
       @JsonKey(name: 'safari_push_id')
@@ -2404,7 +2404,7 @@ class _$_Features implements _Features {
       @JsonKey(name: 'wiki_pages')
           required this.wikiPages,
       @JsonKey(name: 'allow_admin_mute')
-          this.allowAdminMute = false,
+          this.allowAdminMute,
       @JsonKey(name: 'default_wallpaper')
           this.defaultWallpaper,
       @JsonKey(name: 'support_email')
@@ -2433,7 +2433,7 @@ class _$_Features implements _Features {
       @JsonKey(name: 'calls')
           required this.calls,
       @JsonKey(name: 'billing')
-          this.billing = false,
+          this.billing,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'min_app_version')
           required this.minAppVersion,
@@ -2442,7 +2442,7 @@ class _$_Features implements _Features {
       @JsonKey(name: 'file_extension_blacklist')
           this.fileExtensionBlacklist,
       @JsonKey(name: 'file_extension_whitelist_priority')
-          this.fileExtensionWhitelistPriority = false});
+          this.fileExtensionWhitelistPriority});
 
   factory _$_Features.fromJson(Map<String, dynamic> json) => _$$_FeaturesFromJson(json);
 

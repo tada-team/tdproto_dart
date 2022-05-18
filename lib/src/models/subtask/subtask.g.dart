@@ -12,10 +12,10 @@ _$_Subtask _$$_SubtaskFromJson(Map<String, dynamic> json) => _$_Subtask(
       title: json['title'] as String,
       num: json['num'] as int,
       displayName: json['display_name'] as String,
-      isPublic: json['public'] as bool? ?? false,
+      isPublic: json['public'] as bool?,
       taskStatus: json['task_status'] as String?,
       deadline: json['deadline'] == null ? null : DateTime.parse(json['deadline'] as String),
-      deadlineExpired: json['deadline_expired'] as bool? ?? false,
+      deadlineExpired: json['deadline_expired'] as bool?,
     );
 
 Map<String, dynamic> _$$_SubtaskToJson(_$_Subtask instance) => <String, dynamic>{

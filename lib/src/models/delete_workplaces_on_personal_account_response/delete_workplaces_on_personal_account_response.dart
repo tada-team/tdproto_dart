@@ -9,7 +9,7 @@ part 'delete_workplaces_on_personal_account_response.g.dart';
 class DeleteWorkplacesOnPersonalAccountResponse with _$DeleteWorkplacesOnPersonalAccountResponse {
   const factory DeleteWorkplacesOnPersonalAccountResponse({
     /// .
-    @Default(false) @JsonKey(name: 'success') bool? success,
+    @JsonKey(name: 'success') bool? success,
   }) = _DeleteWorkplacesOnPersonalAccountResponse;
 
   factory DeleteWorkplacesOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>

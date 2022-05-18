@@ -9,7 +9,7 @@ part 'delete_user_from_workplace_response.g.dart';
 class DeleteUserFromWorkplaceResponse with _$DeleteUserFromWorkplaceResponse {
   const factory DeleteUserFromWorkplaceResponse({
     /// .
-    @Default(false) @JsonKey(name: 'success') bool? success,
+    @JsonKey(name: 'success') bool? success,
   }) = _DeleteUserFromWorkplaceResponse;
 
   factory DeleteUserFromWorkplaceResponse.fromJson(Map<String, dynamic> json) =>

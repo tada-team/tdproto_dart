@@ -26,9 +26,9 @@ class _$TaskItemTearOff {
       @JsonKey(name: 'gentime') required int gentime,
       @JsonKey(name: 'sort_ordering') int? sortOrdering,
       @JsonKey(name: 'text') required String text,
-      @JsonKey(name: 'checked') bool? checked = false,
-      @JsonKey(name: 'can_toggle') bool? canToggle = false,
-      @JsonKey(name: 'can_change') bool? canChange = false,
+      @JsonKey(name: 'checked') bool? checked,
+      @JsonKey(name: 'can_toggle') bool? canToggle,
+      @JsonKey(name: 'can_change') bool? canChange,
       @JsonKey(name: 'subtask') Subtask? subtask}) {
     return _TaskItem(
       uid: uid,
@@ -254,9 +254,9 @@ class _$_TaskItem implements _TaskItem {
       @JsonKey(name: 'gentime') required this.gentime,
       @JsonKey(name: 'sort_ordering') this.sortOrdering,
       @JsonKey(name: 'text') required this.text,
-      @JsonKey(name: 'checked') this.checked = false,
-      @JsonKey(name: 'can_toggle') this.canToggle = false,
-      @JsonKey(name: 'can_change') this.canChange = false,
+      @JsonKey(name: 'checked') this.checked,
+      @JsonKey(name: 'can_toggle') this.canToggle,
+      @JsonKey(name: 'can_change') this.canChange,
       @JsonKey(name: 'subtask') this.subtask});
 
   factory _$_TaskItem.fromJson(Map<String, dynamic> json) => _$$_TaskItemFromJson(json);

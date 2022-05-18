@@ -15,7 +15,7 @@ _$_Task _$$_TaskFromJson(Map<String, dynamic> json) => _$_Task(
       items: (json['items'] as List<dynamic>?)?.map((e) => e as String).toList(),
       assignee: json['assignee'] as String?,
       deadline: json['deadline'] == null ? null : DateTime.parse(json['deadline'] as String),
-      isPublic: json['public'] as bool? ?? false,
+      isPublic: json['public'] as bool?,
       remindAt: json['remind_at'] == null ? null : DateTime.parse(json['remind_at'] as String),
       taskStatus: json['task_status'] as String?,
       importance: json['importance'] as int?,

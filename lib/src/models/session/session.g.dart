@@ -11,8 +11,8 @@ _$_Session _$$_SessionFromJson(Map<String, dynamic> json) => _$_Session(
       created: const DateTimeConverter().fromJson(json['created'] as String),
       lang: json['lang'] as String?,
       team: json['team'] as String?,
-      isMobile: json['is_mobile'] as bool? ?? false,
-      afk: json['afk'] as bool? ?? false,
+      isMobile: json['is_mobile'] as bool?,
+      afk: json['afk'] as bool?,
       useragent: json['useragent'] as String?,
       addr: json['addr'] as String?,
     );

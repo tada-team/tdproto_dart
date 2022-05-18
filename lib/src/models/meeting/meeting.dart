@@ -33,16 +33,16 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'freq') Freq? freq,
 
     /// .
-    @Default(false) @JsonKey(name: 'is_archive') bool? isArchive,
+    @JsonKey(name: 'is_archive') bool? isArchive,
 
     /// .
-    @Default(false) @JsonKey(name: 'is_outside') bool? isOutside,
+    @JsonKey(name: 'is_outside') bool? isOutside,
 
     /// .
-    @Default(false) @JsonKey(name: 'is_required') bool? isRequired,
+    @JsonKey(name: 'is_required') bool? isRequired,
 
     /// .
-    @Default(false) @JsonKey(name: 'can_edit') bool? canEdit,
+    @JsonKey(name: 'can_edit') bool? canEdit,
 
     /// .
     @JsonKey(name: 'meeting_members') List<MeetingMember>? meetingMembers,
@@ -69,19 +69,19 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'icons') required IconData icons,
 
     /// Include unread messages to counters.
-    @Default(false) @JsonKey(name: 'counters_enabled') bool? countersEnabled,
+    @JsonKey(name: 'counters_enabled') bool? countersEnabled,
 
     /// Can I call to this chat.
-    @Default(false) @JsonKey(name: 'can_call') bool? canCall,
+    @JsonKey(name: 'can_call') bool? canCall,
 
     /// Can I send message to this chat.
-    @Default(false) @JsonKey(name: 'can_send_message') bool? canSendMessage,
+    @JsonKey(name: 'can_send_message') bool? canSendMessage,
 
     /// Why I can't send message to this chat (if can't).
     @JsonKey(name: 'cant_send_message_reason') String? cantSendMessageReason,
 
     /// Description collapsed. Used for tasks only.
-    @Default(false) @JsonKey(name: 'collapsed') bool? collapsed,
+    @JsonKey(name: 'collapsed') bool? collapsed,
 
     /// Last message draft, if any.
     @JsonKey(name: 'draft') String? draft,
@@ -90,10 +90,10 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'draft_gentime') int? draftGentime,
 
     /// Hidden chat.
-    @Default(false) @JsonKey(name: 'hidden') bool? hidden,
+    @JsonKey(name: 'hidden') bool? hidden,
 
     /// Push notifications enabled.
-    @Default(false) @JsonKey(name: 'notifications_enabled') bool? notificationsEnabled,
+    @JsonKey(name: 'notifications_enabled') bool? notificationsEnabled,
 
     /// Number of important messages.
     @JsonKey(name: 'num_importants') int? numImportants,
@@ -117,7 +117,7 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'changeable_fields') List<String>? changeableFields,
 
     /// Is chat pinned on top.
-    @Default(false) @JsonKey(name: 'pinned') bool? pinned,
+    @JsonKey(name: 'pinned') bool? pinned,
 
     /// Sort ordering for pinned chat.
     @JsonKey(name: 'pinned_sort_ordering') int? pinnedSortOrdering,
@@ -126,7 +126,7 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'num_members') int? numMembers,
 
     /// Can I delete this chat.
-    @Default(false) @JsonKey(name: 'can_delete') bool? canDelete,
+    @JsonKey(name: 'can_delete') bool? canDelete,
 
     /// Group or task description.
     @JsonKey(name: 'description') String? description,
@@ -135,7 +135,7 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'markup') List<MarkupEntity>? markup,
 
     /// Present in feed (main screen).
-    @Default(false) @JsonKey(name: 'feed') bool? feed,
+    @JsonKey(name: 'feed') bool? feed,
 
     /// Pinned message for this chat.
     @JsonKey(name: 'pinned_message') Message? pinnedMessage,
@@ -177,7 +177,7 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
 
     /// Is task deadline expired.
-    @Default(false) @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
+    @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
 
     /// Links in description.
     @JsonKey(name: 'links') MessageLink? links,
@@ -219,37 +219,37 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'members') List<GroupMembership>? members,
 
     /// Can I add member to this group chat.
-    @Default(false) @JsonKey(name: 'can_add_member') bool? canAddMember,
+    @JsonKey(name: 'can_add_member') bool? canAddMember,
 
     /// Can I remove member from this group chat.
-    @Default(false) @JsonKey(name: 'can_remove_member') bool? canRemoveMember,
+    @JsonKey(name: 'can_remove_member') bool? canRemoveMember,
 
     /// Can I change member status in this group chat.
-    @Default(false) @JsonKey(name: 'can_change_member_status') bool? canChangeMemberStatus,
+    @JsonKey(name: 'can_change_member_status') bool? canChangeMemberStatus,
 
     /// deprecated: use changeable fields.
-    @Default(false) @JsonKey(name: 'can_change_settings') bool? canChangeSettings,
+    @JsonKey(name: 'can_change_settings') bool? canChangeSettings,
 
     /// Any new team member will be added to this group chat.
-    @Default(false) @JsonKey(name: 'default_for_all') bool? defaultForAll,
+    @JsonKey(name: 'default_for_all') bool? defaultForAll,
 
     /// Readonly for non-admins group chat (Like Channels in Telegram but switchable).
-    @Default(false) @JsonKey(name: 'readonly_for_members') bool? readonlyForMembers,
+    @JsonKey(name: 'readonly_for_members') bool? readonlyForMembers,
 
     /// Delete messages in this chat in seconds. Experimental function.
     @JsonKey(name: 'autocleanup_age') int? autocleanupAge,
 
     /// Can other team member see this task/group chat.
-    @Default(false) @JsonKey(name: 'public') bool? isPublic,
+    @JsonKey(name: 'public') bool? isPublic,
 
     /// Can I join to this public group/task.
-    @Default(false) @JsonKey(name: 'can_join') bool? canJoin,
+    @JsonKey(name: 'can_join') bool? canJoin,
 
     /// Can I delete any message in this chat.
-    @Default(false) @JsonKey(name: 'can_delete_any_message') bool? canDeleteAnyMessage,
+    @JsonKey(name: 'can_delete_any_message') bool? canDeleteAnyMessage,
 
     /// Can I change Important flag in any message in this chat.
-    @Default(false) @JsonKey(name: 'can_set_important_any_message') bool? canSetImportantAnyMessage,
+    @JsonKey(name: 'can_set_important_any_message') bool? canSetImportantAnyMessage,
 
     /// Date of the last message sent even if it was deleted.
     @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,

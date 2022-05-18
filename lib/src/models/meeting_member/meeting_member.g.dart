@@ -12,9 +12,9 @@ _$_MeetingMember _$$_MeetingMemberFromJson(Map<String, dynamic> json) => _$_Meet
       contact: Contact.fromJson(json['contact'] as Map<String, dynamic>),
       presence: json['presence'] as String,
       status: json['status'] as String,
-      canChangePresence: json['can_change_presence'] as bool? ?? false,
-      canChangeStatus: json['can_change_status'] as bool? ?? false,
-      canRemove: json['can_remove'] as bool? ?? false,
+      canChangePresence: json['can_change_presence'] as bool?,
+      canChangeStatus: json['can_change_status'] as bool?,
+      canRemove: json['can_remove'] as bool?,
     );
 
 Map<String, dynamic> _$$_MeetingMemberToJson(_$_MeetingMember instance) => <String, dynamic>{

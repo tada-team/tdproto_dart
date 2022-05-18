@@ -9,7 +9,7 @@ part 'update_personal_account_response.g.dart';
 class UpdatePersonalAccountResponse with _$UpdatePersonalAccountResponse {
   const factory UpdatePersonalAccountResponse({
     /// .
-    @Default(false) @JsonKey(name: 'success') bool? success,
+    @JsonKey(name: 'success') bool? success,
   }) = _UpdatePersonalAccountResponse;
 
   factory UpdatePersonalAccountResponse.fromJson(Map<String, dynamic> json) =>

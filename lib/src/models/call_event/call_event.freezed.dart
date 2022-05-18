@@ -24,7 +24,7 @@ class _$CallEventTearOff {
   _CallEvent call(
       {@JsonKey(name: 'jid') required String jid,
       @JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'buzz') bool? buzz = false,
+      @JsonKey(name: 'buzz') bool? buzz,
       @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
       @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
       @JsonKey(name: 'finish') @DateTimeConverter() DateTime? finish,
@@ -276,7 +276,7 @@ class _$_CallEvent implements _CallEvent {
   const _$_CallEvent(
       {@JsonKey(name: 'jid') required this.jid,
       @JsonKey(name: 'uid') required this.uid,
-      @JsonKey(name: 'buzz') this.buzz = false,
+      @JsonKey(name: 'buzz') this.buzz,
       @JsonKey(name: 'created') @DateTimeConverter() required this.created,
       @JsonKey(name: 'start') @DateTimeConverter() this.start,
       @JsonKey(name: 'finish') @DateTimeConverter() this.finish,

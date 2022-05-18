@@ -9,7 +9,7 @@ part 'delete_team_from_personal_account_response.g.dart';
 class DeleteTeamFromPersonalAccountResponse with _$DeleteTeamFromPersonalAccountResponse {
   const factory DeleteTeamFromPersonalAccountResponse({
     /// .
-    @Default(false) @JsonKey(name: 'success') bool? success,
+    @JsonKey(name: 'success') bool? success,
   }) = _DeleteTeamFromPersonalAccountResponse;
 
   factory DeleteTeamFromPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>

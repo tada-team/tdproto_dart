@@ -12,7 +12,7 @@ class Team with _$Team {
     @JsonKey(name: 'uid') required String uid,
 
     /// Team deleted.
-    @Default(false) @JsonKey(name: 'is_archive') bool? isArchive,
+    @JsonKey(name: 'is_archive') bool? isArchive,
 
     /// Object version.
     @JsonKey(name: 'gentime') required int gentime,
@@ -36,22 +36,22 @@ class Team with _$Team {
     @JsonKey(name: 'changeable_statuses') List<String>? changeableStatuses,
 
     /// My profile in this team isn't full.
-    @Default(false) @JsonKey(name: 'bad_profile') bool? badProfile,
+    @JsonKey(name: 'bad_profile') bool? badProfile,
 
     /// Need confirmation after invite to this team.
     @JsonKey(name: 'need_confirmation') required bool needConfirmation,
 
     /// Patronymic in usernames for this team.
-    @Default(false) @JsonKey(name: 'use_patronymic') bool? usePatronymic,
+    @JsonKey(name: 'use_patronymic') bool? usePatronymic,
 
     /// Username fields ordering. Possible values: "family_name", "given_name", "patronymic".
     @JsonKey(name: 'user_fields') required List<String> userFields,
 
     /// Family name should be first in display name.
-    @Default(false) @JsonKey(name: 'display_family_name_first') bool? displayFamilyNameFirst,
+    @JsonKey(name: 'display_family_name_first') bool? displayFamilyNameFirst,
 
     /// Use importance field in task.
-    @Default(false) @JsonKey(name: 'use_task_importance') bool? useTaskImportance,
+    @JsonKey(name: 'use_task_importance') bool? useTaskImportance,
 
     /// Minimal value of task importance. Default is 1.
     @JsonKey(name: 'task_importance_min') int? taskImportanceMin,
@@ -60,16 +60,16 @@ class Team with _$Team {
     @JsonKey(name: 'task_importance_max') int? taskImportanceMax,
 
     /// Bigger number = bigger importance. Default: lower number = bigger importance.
-    @Default(false) @JsonKey(name: 'task_importance_rev') bool? taskImportanceRev,
+    @JsonKey(name: 'task_importance_rev') bool? taskImportanceRev,
 
     /// Use urgency field in task.
-    @Default(false) @JsonKey(name: 'use_task_urgency') bool? useTaskUrgency,
+    @JsonKey(name: 'use_task_urgency') bool? useTaskUrgency,
 
     /// Use complexity field in task.
-    @Default(false) @JsonKey(name: 'use_task_complexity') bool? useTaskComplexity,
+    @JsonKey(name: 'use_task_complexity') bool? useTaskComplexity,
 
     /// Use spent time field in task.
-    @Default(false) @JsonKey(name: 'use_task_spent_time') bool? useTaskSpentTime,
+    @JsonKey(name: 'use_task_spent_time') bool? useTaskSpentTime,
 
     /// Total uploads size, bytes.
     @JsonKey(name: 'uploads_size') int? uploadsSize,
@@ -93,10 +93,10 @@ class Team with _$Team {
     @JsonKey(name: 'theme') Theme? theme,
 
     /// Don't show archived users by default.
-    @Default(false) @JsonKey(name: 'hide_archived_users') bool? hideArchivedUsers,
+    @JsonKey(name: 'hide_archived_users') bool? hideArchivedUsers,
 
     /// Team pinned.
-    @Default(false) @JsonKey(name: 'pinned') bool? pinned,
+    @JsonKey(name: 'pinned') bool? pinned,
 
     /// Team's available tariff by includig archive ones.
     @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,

@@ -23,8 +23,8 @@ class _$OnlineContactTearOff {
 
   _OnlineContact call(
       {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'afk') bool? afk = false,
-      @JsonKey(name: 'focused') bool? focused = false,
+      @JsonKey(name: 'afk') bool? afk,
+      @JsonKey(name: 'focused') bool? focused,
       @JsonKey(name: 'mobile') required bool mobile}) {
     return _OnlineContact(
       jid: jid,
@@ -166,8 +166,8 @@ class __$OnlineContactCopyWithImpl<$Res> extends _$OnlineContactCopyWithImpl<$Re
 class _$_OnlineContact implements _OnlineContact {
   const _$_OnlineContact(
       {@JsonKey(name: 'jid') required this.jid,
-      @JsonKey(name: 'afk') this.afk = false,
-      @JsonKey(name: 'focused') this.focused = false,
+      @JsonKey(name: 'afk') this.afk,
+      @JsonKey(name: 'focused') this.focused,
       @JsonKey(name: 'mobile') required this.mobile});
 
   factory _$_OnlineContact.fromJson(Map<String, dynamic> json) => _$$_OnlineContactFromJson(json);

@@ -23,8 +23,8 @@ class _$ClientChatComposingParamsTearOff {
 
   _ClientChatComposingParams call(
       {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'is_audio') bool? isAudio = false,
-      @JsonKey(name: 'composing') bool? composing = false,
+      @JsonKey(name: 'is_audio') bool? isAudio,
+      @JsonKey(name: 'composing') bool? composing,
       @JsonKey(name: 'draft') String? draft}) {
     return _ClientChatComposingParams(
       jid: jid,
@@ -169,8 +169,8 @@ class __$ClientChatComposingParamsCopyWithImpl<$Res> extends _$ClientChatComposi
 class _$_ClientChatComposingParams implements _ClientChatComposingParams {
   const _$_ClientChatComposingParams(
       {@JsonKey(name: 'jid') required this.jid,
-      @JsonKey(name: 'is_audio') this.isAudio = false,
-      @JsonKey(name: 'composing') this.composing = false,
+      @JsonKey(name: 'is_audio') this.isAudio,
+      @JsonKey(name: 'composing') this.composing,
       @JsonKey(name: 'draft') this.draft});
 
   factory _$_ClientChatComposingParams.fromJson(Map<String, dynamic> json) =>

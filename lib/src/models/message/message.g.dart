@@ -19,15 +19,15 @@ _$_Message _$$_MessageFromJson(Map<String, dynamic> json) => _$_Message(
       chat: json['chat'] as String,
       links: json['links'] == null ? null : MessageLink.fromJson(json['links'] as Map<String, dynamic>),
       markup: (json['markup'] as List<dynamic>?)?.map((e) => MarkupEntity.fromJson(e as Map<String, dynamic>)).toList(),
-      important: json['important'] as bool? ?? false,
+      important: json['important'] as bool?,
       edited: json['edited'] == null ? null : DateTime.parse(json['edited'] as String),
-      received: json['received'] as bool? ?? false,
+      received: json['received'] as bool?,
       numReceived: json['num_received'] as int?,
-      nopreview: json['nopreview'] as bool? ?? false,
-      hasPreviews: json['has_previews'] as bool? ?? false,
+      nopreview: json['nopreview'] as bool?,
+      hasPreviews: json['has_previews'] as bool?,
       prev: json['prev'] as String?,
-      isFirst: json['is_first'] as bool? ?? false,
-      isLast: json['is_last'] as bool? ?? false,
+      isFirst: json['is_first'] as bool?,
+      isLast: json['is_last'] as bool?,
       uploads: (json['uploads'] as List<dynamic>?)?.map((e) => Upload.fromJson(e as Map<String, dynamic>)).toList(),
       reactions: (json['reactions'] as List<dynamic>?)
           ?.map((e) => MessageReaction.fromJson(e as Map<String, dynamic>))
@@ -35,11 +35,11 @@ _$_Message _$$_MessageFromJson(Map<String, dynamic> json) => _$_Message(
       replyTo: json['reply_to'] == null ? null : Message.fromJson(json['reply_to'] as Map<String, dynamic>),
       linkedMessages:
           (json['linked_messages'] as List<dynamic>?)?.map((e) => Message.fromJson(e as Map<String, dynamic>)).toList(),
-      notice: json['notice'] as bool? ?? false,
-      silently: json['silently'] as bool? ?? false,
+      notice: json['notice'] as bool?,
+      silently: json['silently'] as bool?,
       editableUntil: json['editable_until'] == null ? null : DateTime.parse(json['editable_until'] as String),
       num: json['num'] as int?,
-      isArchive: json['is_archive'] as bool? ?? false,
+      isArchive: json['is_archive'] as bool?,
       debug: json['_debug'] as String?,
     );
 

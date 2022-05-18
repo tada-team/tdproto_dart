@@ -8,7 +8,7 @@ part of 'delete_user_from_workplace_response.dart';
 
 _$_DeleteUserFromWorkplaceResponse _$$_DeleteUserFromWorkplaceResponseFromJson(Map<String, dynamic> json) =>
     _$_DeleteUserFromWorkplaceResponse(
-      success: json['success'] as bool? ?? false,
+      success: json['success'] as bool?,
     );
 
 Map<String, dynamic> _$$_DeleteUserFromWorkplaceResponseToJson(_$_DeleteUserFromWorkplaceResponse instance) =>

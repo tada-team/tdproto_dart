@@ -9,7 +9,7 @@ part of 'create_change_tariff_on_personal_account_response.dart';
 _$_CreateChangeTariffOnPersonalAccountResponse _$$_CreateChangeTariffOnPersonalAccountResponseFromJson(
         Map<String, dynamic> json) =>
     _$_CreateChangeTariffOnPersonalAccountResponse(
-      success: json['success'] as bool? ?? false,
+      success: json['success'] as bool?,
     );
 
 Map<String, dynamic> _$$_CreateChangeTariffOnPersonalAccountResponseToJson(

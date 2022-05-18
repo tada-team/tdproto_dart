@@ -9,8 +9,8 @@ part of 'client_chat_composing_params.dart';
 _$_ClientChatComposingParams _$$_ClientChatComposingParamsFromJson(Map<String, dynamic> json) =>
     _$_ClientChatComposingParams(
       jid: json['jid'] as String,
-      isAudio: json['is_audio'] as bool? ?? false,
-      composing: json['composing'] as bool? ?? false,
+      isAudio: json['is_audio'] as bool?,
+      composing: json['composing'] as bool?,
       draft: json['draft'] as String?,
     );
 

@@ -15,7 +15,7 @@ class GroupMembership with _$GroupMembership {
     @JsonKey(name: 'status') String? status,
 
     /// Can I remove this member.
-    @Default(false) @JsonKey(name: 'can_remove') bool? canRemove,
+    @JsonKey(name: 'can_remove') bool? canRemove,
   }) = _GroupMembership;
 
   factory GroupMembership.fromJson(Map<String, dynamic> json) => _$GroupMembershipFromJson(json);

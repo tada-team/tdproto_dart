@@ -21,7 +21,7 @@ class TaskStatus with _$TaskStatus {
     @JsonKey(name: 'title') required String title,
 
     /// Status not used anymore.
-    @Default(false) @JsonKey(name: 'is_archive') bool? isArchive,
+    @JsonKey(name: 'is_archive') bool? isArchive,
   }) = _TaskStatus;
 
   factory TaskStatus.fromJson(Map<String, dynamic> json) => _$TaskStatusFromJson(json);

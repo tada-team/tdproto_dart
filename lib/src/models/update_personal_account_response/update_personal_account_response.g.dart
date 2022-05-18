@@ -8,7 +8,7 @@ part of 'update_personal_account_response.dart';
 
 _$_UpdatePersonalAccountResponse _$$_UpdatePersonalAccountResponseFromJson(Map<String, dynamic> json) =>
     _$_UpdatePersonalAccountResponse(
-      success: json['success'] as bool? ?? false,
+      success: json['success'] as bool?,
     );
 
 Map<String, dynamic> _$$_UpdatePersonalAccountResponseToJson(_$_UpdatePersonalAccountResponse instance) =>

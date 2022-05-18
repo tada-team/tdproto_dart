@@ -117,28 +117,28 @@ class Features with _$Features {
     @JsonKey(name: 'max_message_search_limit') required int maxMessageSearchLimit,
 
     /// Multi nodes mode (federation) enabled.
-    @Default(false) @JsonKey(name: 'multi_nodes') bool? multiNodes,
+    @JsonKey(name: 'multi_nodes') bool? multiNodes,
 
     /// Max inactivity seconds.
     @JsonKey(name: 'afk_age') required int afkAge,
 
     /// Password authentication enabled.
-    @Default(false) @JsonKey(name: 'auth_by_password') bool? authByPassword,
+    @JsonKey(name: 'auth_by_password') bool? authByPassword,
 
     /// QR-code / link authentication enabled.
-    @Default(false) @JsonKey(name: 'auth_by_qr_code') bool? authByQrCode,
+    @JsonKey(name: 'auth_by_qr_code') bool? authByQrCode,
 
     /// SMS authentication enabled.
-    @Default(false) @JsonKey(name: 'auth_by_sms') bool? authBySms,
+    @JsonKey(name: 'auth_by_sms') bool? authBySms,
 
     /// Two-factor authentication (2FA) enabled.
-    @Default(false) @JsonKey(name: 'auth_2fa') bool? auth2fa,
+    @JsonKey(name: 'auth_2fa') bool? auth2fa,
 
     /// Kerberos authentication enabled.
-    @Default(false) @JsonKey(name: 'auth_by_kerberos') bool? authByKerberos,
+    @JsonKey(name: 'auth_by_kerberos') bool? authByKerberos,
 
     /// Captcha enabled.
-    @Default(false) @JsonKey(name: 'is_recaptcha_enabled') bool? reCaptchaEnabled,
+    @JsonKey(name: 'is_recaptcha_enabled') bool? reCaptchaEnabled,
 
     /// ReCaptcha Web Key V3.
     @JsonKey(name: 'recaptcha_web_key_v3') String? reCaptchaWebKeyV3,
@@ -240,7 +240,7 @@ class Features with _$Features {
     @JsonKey(name: 'calls_record') required bool callsRecord,
 
     /// Disallow call from multiple devices. Experimental.
-    @Default(false) @JsonKey(name: 'only_one_device_per_call') bool? onlyOneDevicePerCall,
+    @JsonKey(name: 'only_one_device_per_call') bool? onlyOneDevicePerCall,
 
     /// Maximum number of participants per call.
     @JsonKey(name: 'max_participants_per_call') int? maxParticipantsPerCall,
@@ -261,7 +261,7 @@ class Features with _$Features {
     @JsonKey(name: 'wiki_pages') required bool wikiPages,
 
     /// Wiki pages in chats. Experimental.
-    @Default(false) @JsonKey(name: 'allow_admin_mute') bool? allowAdminMute,
+    @JsonKey(name: 'allow_admin_mute') bool? allowAdminMute,
 
     /// Default wallpaper url for mobile apps, if any.
     @JsonKey(name: 'default_wallpaper') Wallpaper? defaultWallpaper,
@@ -294,7 +294,7 @@ class Features with _$Features {
     @Deprecated('Deprecated.') @JsonKey(name: 'calls') required bool calls,
 
     /// Billing services integrations.
-    @Default(false) @JsonKey(name: 'billing') bool? billing,
+    @JsonKey(name: 'billing') bool? billing,
 
     /// Deprecated.
     @Deprecated('Deprecated.') @JsonKey(name: 'min_app_version') required String minAppVersion,
@@ -306,7 +306,7 @@ class Features with _$Features {
     @JsonKey(name: 'file_extension_blacklist') List<String>? fileExtensionBlacklist,
 
     /// File Extension Whitelist Priority.
-    @Default(false) @JsonKey(name: 'file_extension_whitelist_priority') bool? fileExtensionWhitelistPriority,
+    @JsonKey(name: 'file_extension_whitelist_priority') bool? fileExtensionWhitelistPriority,
   }) = _Features;
 
   factory Features.fromJson(Map<String, dynamic> json) => _$FeaturesFromJson(json);

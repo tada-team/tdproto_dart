@@ -27,19 +27,19 @@ class MeetingsGetRequest with _$MeetingsGetRequest {
     @JsonKey(name: 'offset') int? offset,
 
     /// .
-    @Default(false) @JsonKey(name: 'is_archive') bool? isArchive,
+    @JsonKey(name: 'is_archive') bool? isArchive,
 
     /// .
-    @Default(false) @JsonKey(name: 'is_freq') bool? isFreq,
+    @JsonKey(name: 'is_freq') bool? isFreq,
 
     /// .
-    @Default(false) @JsonKey(name: 'is_public') bool? isPublic,
+    @JsonKey(name: 'is_public') bool? isPublic,
 
     /// .
-    @Default(false) @JsonKey(name: 'is_outside') bool? isOutside,
+    @JsonKey(name: 'is_outside') bool? isOutside,
 
     /// .
-    @Default(false) @JsonKey(name: 'is_required') bool? isRequired,
+    @JsonKey(name: 'is_required') bool? isRequired,
   }) = _MeetingsGetRequest;
 
   factory MeetingsGetRequest.fromJson(Map<String, dynamic> json) => _$MeetingsGetRequestFromJson(json);

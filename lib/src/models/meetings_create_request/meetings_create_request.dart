@@ -33,10 +33,10 @@ class MeetingsCreateRequest with _$MeetingsCreateRequest {
     @JsonKey(name: 'members') required List<MeetingsMemberCreateParams> members,
 
     /// .
-    @Default(false) @JsonKey(name: 'is_public') bool? isPublic,
+    @JsonKey(name: 'is_public') bool? isPublic,
 
     /// .
-    @Default(false) @JsonKey(name: 'is_outside') bool? isOutside,
+    @JsonKey(name: 'is_outside') bool? isOutside,
   }) = _MeetingsCreateRequest;
 
   factory MeetingsCreateRequest.fromJson(Map<String, dynamic> json) => _$MeetingsCreateRequestFromJson(json);

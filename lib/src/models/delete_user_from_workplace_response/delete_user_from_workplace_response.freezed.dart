@@ -21,7 +21,7 @@ DeleteUserFromWorkplaceResponse _$DeleteUserFromWorkplaceResponseFromJson(Map<St
 class _$DeleteUserFromWorkplaceResponseTearOff {
   const _$DeleteUserFromWorkplaceResponseTearOff();
 
-  _DeleteUserFromWorkplaceResponse call({@JsonKey(name: 'success') bool? success = false}) {
+  _DeleteUserFromWorkplaceResponse call({@JsonKey(name: 'success') bool? success}) {
     return _DeleteUserFromWorkplaceResponse(
       success: success,
     );
@@ -112,7 +112,7 @@ class __$DeleteUserFromWorkplaceResponseCopyWithImpl<$Res> extends _$DeleteUserF
 /// @nodoc
 @JsonSerializable()
 class _$_DeleteUserFromWorkplaceResponse implements _DeleteUserFromWorkplaceResponse {
-  const _$_DeleteUserFromWorkplaceResponse({@JsonKey(name: 'success') this.success = false});
+  const _$_DeleteUserFromWorkplaceResponse({@JsonKey(name: 'success') this.success});
 
   factory _$_DeleteUserFromWorkplaceResponse.fromJson(Map<String, dynamic> json) =>
       _$$_DeleteUserFromWorkplaceResponseFromJson(json);

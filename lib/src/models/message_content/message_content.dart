@@ -30,7 +30,6 @@ class MessageContent with _$MessageContent {
     @Deprecated('Upload duration, if any. Deprecated: use Uploads instead.') @JsonKey(name: 'duration') int? duration,
 
     /// Upload still processing, if any. Deprecated: use Uploads instead.
-    @Default(false)
     @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
     @JsonKey(name: 'processing')
         bool? processing,
@@ -64,7 +63,6 @@ class MessageContent with _$MessageContent {
     @Deprecated('Upload name, if any. Deprecated: use Uploads instead.') @JsonKey(name: 'name') String? name,
 
     /// Upload is animated image, if any. Deprecated: use Uploads instead.
-    @Default(false)
     @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
     @JsonKey(name: 'animated')
         bool? animated,

@@ -9,7 +9,7 @@ part 'add_user_in_workplace_response.g.dart';
 class AddUserInWorkplaceResponse with _$AddUserInWorkplaceResponse {
   const factory AddUserInWorkplaceResponse({
     /// .
-    @Default(false) @JsonKey(name: 'success') bool? success,
+    @JsonKey(name: 'success') bool? success,
   }) = _AddUserInWorkplaceResponse;
 
   factory AddUserInWorkplaceResponse.fromJson(Map<String, dynamic> json) => _$AddUserInWorkplaceResponseFromJson(json);

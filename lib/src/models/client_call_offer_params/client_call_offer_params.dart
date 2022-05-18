@@ -24,10 +24,10 @@ class ClientCallOfferParams with _$ClientCallOfferParams {
     @JsonKey(name: 'call_type') String? callType,
 
     /// Audio state.
-    @Default(false) @JsonKey(name: 'enabled_audio') bool? enabledAudio,
+    @JsonKey(name: 'enabled_audio') bool? enabledAudio,
 
     /// Video state.
-    @Default(false) @JsonKey(name: 'enabled_video') bool? enabledVideo,
+    @JsonKey(name: 'enabled_video') bool? enabledVideo,
   }) = _ClientCallOfferParams;
 
   factory ClientCallOfferParams.fromJson(Map<String, dynamic> json) => _$ClientCallOfferParamsFromJson(json);

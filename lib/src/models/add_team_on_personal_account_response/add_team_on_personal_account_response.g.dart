@@ -8,7 +8,7 @@ part of 'add_team_on_personal_account_response.dart';
 
 _$_AddTeamOnPersonalAccountResponse _$$_AddTeamOnPersonalAccountResponseFromJson(Map<String, dynamic> json) =>
     _$_AddTeamOnPersonalAccountResponse(
-      success: json['success'] as bool? ?? false,
+      success: json['success'] as bool?,
     );
 
 Map<String, dynamic> _$$_AddTeamOnPersonalAccountResponseToJson(_$_AddTeamOnPersonalAccountResponse instance) =>

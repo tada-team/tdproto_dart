@@ -24,7 +24,7 @@ class _$UpdateTariffRequestTearOff {
   _UpdateTariffRequest call(
       {@JsonKey(name: 'tariff_id') required String tariffId,
       @JsonKey(name: 'close_date') String? closeDate,
-      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff = false,
+      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
       @JsonKey(name: 'status') String? status}) {
     return _UpdateTariffRequest(
       tariffId: tariffId,
@@ -167,7 +167,7 @@ class _$_UpdateTariffRequest implements _UpdateTariffRequest {
   const _$_UpdateTariffRequest(
       {@JsonKey(name: 'tariff_id') required this.tariffId,
       @JsonKey(name: 'close_date') this.closeDate,
-      @JsonKey(name: 'is_default_tariff') this.isDefaultTariff = false,
+      @JsonKey(name: 'is_default_tariff') this.isDefaultTariff,
       @JsonKey(name: 'status') this.status});
 
   factory _$_UpdateTariffRequest.fromJson(Map<String, dynamic> json) => _$$_UpdateTariffRequestFromJson(json);

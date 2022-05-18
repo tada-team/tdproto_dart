@@ -11,9 +11,9 @@ _$_TaskItem _$$_TaskItemFromJson(Map<String, dynamic> json) => _$_TaskItem(
       gentime: json['gentime'] as int,
       sortOrdering: json['sort_ordering'] as int?,
       text: json['text'] as String,
-      checked: json['checked'] as bool? ?? false,
-      canToggle: json['can_toggle'] as bool? ?? false,
-      canChange: json['can_change'] as bool? ?? false,
+      checked: json['checked'] as bool?,
+      canToggle: json['can_toggle'] as bool?,
+      canChange: json['can_change'] as bool?,
       subtask: json['subtask'] == null ? null : Subtask.fromJson(json['subtask'] as Map<String, dynamic>),
     );
 

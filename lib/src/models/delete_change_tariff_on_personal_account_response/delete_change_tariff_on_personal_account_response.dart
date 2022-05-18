@@ -9,7 +9,7 @@ part 'delete_change_tariff_on_personal_account_response.g.dart';
 class DeleteChangeTariffOnPersonalAccountResponse with _$DeleteChangeTariffOnPersonalAccountResponse {
   const factory DeleteChangeTariffOnPersonalAccountResponse({
     /// .
-    @Default(false) @JsonKey(name: 'success') bool? success,
+    @JsonKey(name: 'success') bool? success,
   }) = _DeleteChangeTariffOnPersonalAccountResponse;
 
   factory DeleteChangeTariffOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>

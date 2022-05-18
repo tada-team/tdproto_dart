@@ -24,7 +24,7 @@ class _$GroupMembershipTearOff {
   _GroupMembership call(
       {@JsonKey(name: 'jid') required String jid,
       @JsonKey(name: 'status') String? status,
-      @JsonKey(name: 'can_remove') bool? canRemove = false}) {
+      @JsonKey(name: 'can_remove') bool? canRemove}) {
     return _GroupMembership(
       jid: jid,
       status: status,
@@ -149,7 +149,7 @@ class _$_GroupMembership implements _GroupMembership {
   const _$_GroupMembership(
       {@JsonKey(name: 'jid') required this.jid,
       @JsonKey(name: 'status') this.status,
-      @JsonKey(name: 'can_remove') this.canRemove = false});
+      @JsonKey(name: 'can_remove') this.canRemove});
 
   factory _$_GroupMembership.fromJson(Map<String, dynamic> json) => _$$_GroupMembershipFromJson(json);
 

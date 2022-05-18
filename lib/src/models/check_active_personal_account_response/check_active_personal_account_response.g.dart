@@ -8,7 +8,7 @@ part of 'check_active_personal_account_response.dart';
 
 _$_CheckActivePersonalAccountResponse _$$_CheckActivePersonalAccountResponseFromJson(Map<String, dynamic> json) =>
     _$_CheckActivePersonalAccountResponse(
-      success: json['success'] as bool? ?? false,
+      success: json['success'] as bool?,
     );
 
 Map<String, dynamic> _$$_CheckActivePersonalAccountResponseToJson(_$_CheckActivePersonalAccountResponse instance) =>

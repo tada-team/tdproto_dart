@@ -27,9 +27,9 @@ class _$MeetingMemberTearOff {
       @JsonKey(name: 'contact') required Contact contact,
       @JsonKey(name: 'presence') required String presence,
       @JsonKey(name: 'status') required String status,
-      @JsonKey(name: 'can_change_presence') bool? canChangePresence = false,
-      @JsonKey(name: 'can_change_status') bool? canChangeStatus = false,
-      @JsonKey(name: 'can_remove') bool? canRemove = false}) {
+      @JsonKey(name: 'can_change_presence') bool? canChangePresence,
+      @JsonKey(name: 'can_change_status') bool? canChangeStatus,
+      @JsonKey(name: 'can_remove') bool? canRemove}) {
     return _MeetingMember(
       meetingId: meetingId,
       chatUuid: chatUuid,
@@ -254,9 +254,9 @@ class _$_MeetingMember implements _MeetingMember {
       @JsonKey(name: 'contact') required this.contact,
       @JsonKey(name: 'presence') required this.presence,
       @JsonKey(name: 'status') required this.status,
-      @JsonKey(name: 'can_change_presence') this.canChangePresence = false,
-      @JsonKey(name: 'can_change_status') this.canChangeStatus = false,
-      @JsonKey(name: 'can_remove') this.canRemove = false});
+      @JsonKey(name: 'can_change_presence') this.canChangePresence,
+      @JsonKey(name: 'can_change_status') this.canChangeStatus,
+      @JsonKey(name: 'can_remove') this.canRemove});
 
   factory _$_MeetingMember.fromJson(Map<String, dynamic> json) => _$$_MeetingMemberFromJson(json);
 

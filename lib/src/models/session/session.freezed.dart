@@ -26,8 +26,8 @@ class _$SessionTearOff {
       @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
       @JsonKey(name: 'lang') String? lang,
       @JsonKey(name: 'team') String? team,
-      @JsonKey(name: 'is_mobile') bool? isMobile = false,
-      @JsonKey(name: 'afk') bool? afk = false,
+      @JsonKey(name: 'is_mobile') bool? isMobile,
+      @JsonKey(name: 'afk') bool? afk,
       @JsonKey(name: 'useragent') String? useragent,
       @JsonKey(name: 'addr') String? addr}) {
     return _Session(
@@ -238,8 +238,8 @@ class _$_Session implements _Session {
       @JsonKey(name: 'created') @DateTimeConverter() required this.created,
       @JsonKey(name: 'lang') this.lang,
       @JsonKey(name: 'team') this.team,
-      @JsonKey(name: 'is_mobile') this.isMobile = false,
-      @JsonKey(name: 'afk') this.afk = false,
+      @JsonKey(name: 'is_mobile') this.isMobile,
+      @JsonKey(name: 'afk') this.afk,
       @JsonKey(name: 'useragent') this.useragent,
       @JsonKey(name: 'addr') this.addr});
 

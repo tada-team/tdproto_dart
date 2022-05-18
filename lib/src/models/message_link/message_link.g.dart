@@ -12,7 +12,7 @@ _$_MessageLink _$$_MessageLinkFromJson(Map<String, dynamic> json) => _$_MessageL
       text: json['text'] as String,
       preview: json['preview'] == null ? null : MessageLinkPreview.fromJson(json['preview'] as Map<String, dynamic>),
       uploads: (json['uploads'] as List<dynamic>?)?.map((e) => Upload.fromJson(e as Map<String, dynamic>)).toList(),
-      noPreview: json['nopreview'] as bool? ?? false,
+      noPreview: json['nopreview'] as bool?,
       youtubeId: json['youtube_id'] as String?,
     );
 

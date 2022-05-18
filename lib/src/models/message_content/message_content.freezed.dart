@@ -42,7 +42,7 @@ class _$MessageContentTearOff {
           int? duration,
       @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'processing')
-          bool? processing = false,
+          bool? processing,
       @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
       @JsonKey(name: 'blurhash')
           String? blurhash,
@@ -63,7 +63,7 @@ class _$MessageContentTearOff {
           String? name,
       @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'animated')
-          bool? animated = false,
+          bool? animated,
       @JsonKey(name: 'title')
           String? title,
       @JsonKey(name: 'old')
@@ -744,7 +744,7 @@ class _$_MessageContent implements _MessageContent {
           this.duration,
       @Deprecated('Upload still processing, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'processing')
-          this.processing = false,
+          this.processing,
       @Deprecated('Compact representation of a placeholder for an image. Deprecated: use Uploads instead.')
       @JsonKey(name: 'blurhash')
           this.blurhash,
@@ -765,7 +765,7 @@ class _$_MessageContent implements _MessageContent {
           this.name,
       @Deprecated('Upload is animated image, if any. Deprecated: use Uploads instead.')
       @JsonKey(name: 'animated')
-          this.animated = false,
+          this.animated,
       @JsonKey(name: 'title')
           this.title,
       @JsonKey(name: 'old')

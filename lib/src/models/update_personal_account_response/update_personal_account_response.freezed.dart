@@ -21,7 +21,7 @@ UpdatePersonalAccountResponse _$UpdatePersonalAccountResponseFromJson(Map<String
 class _$UpdatePersonalAccountResponseTearOff {
   const _$UpdatePersonalAccountResponseTearOff();
 
-  _UpdatePersonalAccountResponse call({@JsonKey(name: 'success') bool? success = false}) {
+  _UpdatePersonalAccountResponse call({@JsonKey(name: 'success') bool? success}) {
     return _UpdatePersonalAccountResponse(
       success: success,
     );
@@ -111,7 +111,7 @@ class __$UpdatePersonalAccountResponseCopyWithImpl<$Res> extends _$UpdatePersona
 /// @nodoc
 @JsonSerializable()
 class _$_UpdatePersonalAccountResponse implements _UpdatePersonalAccountResponse {
-  const _$_UpdatePersonalAccountResponse({@JsonKey(name: 'success') this.success = false});
+  const _$_UpdatePersonalAccountResponse({@JsonKey(name: 'success') this.success});
 
   factory _$_UpdatePersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
       _$$_UpdatePersonalAccountResponseFromJson(json);

@@ -30,9 +30,9 @@ class _$UploadTearOff {
       @JsonKey(name: 'url') required String url,
       @JsonKey(name: 'preview') UploadPreview? preview,
       @JsonKey(name: 'content_type') required String contentType,
-      @JsonKey(name: 'animated') bool? animated = false,
+      @JsonKey(name: 'animated') bool? animated,
       @JsonKey(name: 'blurhash') String? blurhash,
-      @JsonKey(name: 'processing') bool? processing = false,
+      @JsonKey(name: 'processing') bool? processing,
       @JsonKey(name: 'pdf_version') PdfVersion? pdfVersion,
       @JsonKey(name: 'type') required String mediaType}) {
     return _Upload(
@@ -362,9 +362,9 @@ class _$_Upload implements _Upload {
       @JsonKey(name: 'url') required this.url,
       @JsonKey(name: 'preview') this.preview,
       @JsonKey(name: 'content_type') required this.contentType,
-      @JsonKey(name: 'animated') this.animated = false,
+      @JsonKey(name: 'animated') this.animated,
       @JsonKey(name: 'blurhash') this.blurhash,
-      @JsonKey(name: 'processing') this.processing = false,
+      @JsonKey(name: 'processing') this.processing,
       @JsonKey(name: 'pdf_version') this.pdfVersion,
       @JsonKey(name: 'type') required this.mediaType});
 

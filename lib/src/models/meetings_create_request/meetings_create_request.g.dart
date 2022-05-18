@@ -17,8 +17,8 @@ _$_MeetingsCreateRequest _$$_MeetingsCreateRequestFromJson(Map<String, dynamic> 
       members: (json['members'] as List<dynamic>)
           .map((e) => MeetingsMemberCreateParams.fromJson(e as Map<String, dynamic>))
           .toList(),
-      isPublic: json['is_public'] as bool? ?? false,
-      isOutside: json['is_outside'] as bool? ?? false,
+      isPublic: json['is_public'] as bool?,
+      isOutside: json['is_outside'] as bool?,
     );
 
 Map<String, dynamic> _$$_MeetingsCreateRequestToJson(_$_MeetingsCreateRequest instance) => <String, dynamic>{

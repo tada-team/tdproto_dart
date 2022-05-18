@@ -21,13 +21,13 @@ class ColorRule with _$ColorRule {
     @JsonKey(name: 'color_index') required int colorIndex,
 
     /// Project filter enabled.
-    @Default(false) @JsonKey(name: 'section_enabled') bool? projectEnabled,
+    @JsonKey(name: 'section_enabled') bool? projectEnabled,
 
     /// Project id if project filter enabled.
     @JsonKey(name: 'section') String? project,
 
     /// Tags filter enabled.
-    @Default(false) @JsonKey(name: 'tags_enabled') bool? tagsEnabled,
+    @JsonKey(name: 'tags_enabled') bool? tagsEnabled,
 
     /// Tag ids if tags filter enabled.
     @JsonKey(name: 'tags') List<String>? tags,
@@ -36,13 +36,13 @@ class ColorRule with _$ColorRule {
     @JsonKey(name: 'task_status') String? taskStatus,
 
     /// Task importance filter enabled.
-    @Default(false) @JsonKey(name: 'task_importance_enabled') bool? taskImportanceEnabled,
+    @JsonKey(name: 'task_importance_enabled') bool? taskImportanceEnabled,
 
     /// Task importance if task importance filter enabled.
     @JsonKey(name: 'task_importance') int? taskImportance,
 
     /// Task urgency filter enabled.
-    @Default(false) @JsonKey(name: 'task_urgency_enabled') bool? taskUrgencyEnabled,
+    @JsonKey(name: 'task_urgency_enabled') bool? taskUrgencyEnabled,
 
     /// Task urgency if task urgency filter enabled.
     @JsonKey(name: 'task_urgency') int? taskUrgency,

@@ -28,8 +28,8 @@ class _$MeetingsUpdateRequestTearOff {
       @JsonKey(name: 'start_at') String? startAt,
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'freq') Freq? freq,
-      @JsonKey(name: 'is_public') bool? isPublic = false,
-      @JsonKey(name: 'is_outside') bool? isOutside = false}) {
+      @JsonKey(name: 'is_public') bool? isPublic,
+      @JsonKey(name: 'is_outside') bool? isOutside}) {
     return _MeetingsUpdateRequest(
       meetingId: meetingId,
       teamUuid: teamUuid,
@@ -259,8 +259,8 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
       @JsonKey(name: 'start_at') this.startAt,
       @JsonKey(name: 'duration') this.duration,
       @JsonKey(name: 'freq') this.freq,
-      @JsonKey(name: 'is_public') this.isPublic = false,
-      @JsonKey(name: 'is_outside') this.isOutside = false});
+      @JsonKey(name: 'is_public') this.isPublic,
+      @JsonKey(name: 'is_outside') this.isOutside});
 
   factory _$_MeetingsUpdateRequest.fromJson(Map<String, dynamic> json) => _$$_MeetingsUpdateRequestFromJson(json);
 

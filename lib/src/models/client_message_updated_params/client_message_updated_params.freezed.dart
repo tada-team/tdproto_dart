@@ -27,10 +27,10 @@ class _$ClientMessageUpdatedParamsTearOff {
       @JsonKey(name: 'message_id') String? messageId,
       @JsonKey(name: 'reply_to') String? replyTo,
       @JsonKey(name: 'linked_messages') List<String>? linkedMessages,
-      @JsonKey(name: 'important') bool? important = false,
-      @JsonKey(name: 'nopreview') bool? nopreview = false,
+      @JsonKey(name: 'important') bool? important,
+      @JsonKey(name: 'nopreview') bool? nopreview,
       @JsonKey(name: 'uploads') List<String>? uploads,
-      @JsonKey(name: 'old_style_attachment') bool? oldStyleAttachment = false,
+      @JsonKey(name: 'old_style_attachment') bool? oldStyleAttachment,
       @Deprecated('Deprecated.') @JsonKey(name: 'comment') String? comment}) {
     return _ClientMessageUpdatedParams(
       to: to,
@@ -294,10 +294,10 @@ class _$_ClientMessageUpdatedParams implements _ClientMessageUpdatedParams {
       @JsonKey(name: 'message_id') this.messageId,
       @JsonKey(name: 'reply_to') this.replyTo,
       @JsonKey(name: 'linked_messages') this.linkedMessages,
-      @JsonKey(name: 'important') this.important = false,
-      @JsonKey(name: 'nopreview') this.nopreview = false,
+      @JsonKey(name: 'important') this.important,
+      @JsonKey(name: 'nopreview') this.nopreview,
       @JsonKey(name: 'uploads') this.uploads,
-      @JsonKey(name: 'old_style_attachment') this.oldStyleAttachment = false,
+      @JsonKey(name: 'old_style_attachment') this.oldStyleAttachment,
       @Deprecated('Deprecated.') @JsonKey(name: 'comment') this.comment});
 
   factory _$_ClientMessageUpdatedParams.fromJson(Map<String, dynamic> json) =>

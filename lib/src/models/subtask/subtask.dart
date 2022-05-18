@@ -24,7 +24,7 @@ class Subtask with _$Subtask {
     @JsonKey(name: 'display_name') required String displayName,
 
     /// Is task or group public for non-guests.
-    @Default(false) @JsonKey(name: 'public') bool? isPublic,
+    @JsonKey(name: 'public') bool? isPublic,
 
     /// Subtask task status.
     @JsonKey(name: 'task_status') String? taskStatus,
@@ -33,7 +33,7 @@ class Subtask with _$Subtask {
     @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
 
     /// Is subtask deadline expired.
-    @Default(false) @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
+    @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
   }) = _Subtask;
 
   factory Subtask.fromJson(Map<String, dynamic> json) => _$SubtaskFromJson(json);

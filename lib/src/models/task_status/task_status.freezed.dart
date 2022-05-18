@@ -26,7 +26,7 @@ class _$TaskStatusTearOff {
       @JsonKey(name: 'sort_ordering') required int sortOrdering,
       @JsonKey(name: 'name') required String name,
       @JsonKey(name: 'title') required String title,
-      @JsonKey(name: 'is_archive') bool? isArchive = false}) {
+      @JsonKey(name: 'is_archive') bool? isArchive}) {
     return _TaskStatus(
       uid: uid,
       sortOrdering: sortOrdering,
@@ -184,7 +184,7 @@ class _$_TaskStatus implements _TaskStatus {
       @JsonKey(name: 'sort_ordering') required this.sortOrdering,
       @JsonKey(name: 'name') required this.name,
       @JsonKey(name: 'title') required this.title,
-      @JsonKey(name: 'is_archive') this.isArchive = false});
+      @JsonKey(name: 'is_archive') this.isArchive});
 
   factory _$_TaskStatus.fromJson(Map<String, dynamic> json) => _$$_TaskStatusFromJson(json);
 

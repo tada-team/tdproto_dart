@@ -9,7 +9,7 @@ part 'add_workplaces_on_personal_account_response.g.dart';
 class AddWorkplacesOnPersonalAccountResponse with _$AddWorkplacesOnPersonalAccountResponse {
   const factory AddWorkplacesOnPersonalAccountResponse({
     /// .
-    @Default(false) @JsonKey(name: 'success') bool? success,
+    @JsonKey(name: 'success') bool? success,
   }) = _AddWorkplacesOnPersonalAccountResponse;
 
   factory AddWorkplacesOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>

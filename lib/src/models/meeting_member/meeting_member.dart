@@ -24,13 +24,13 @@ class MeetingMember with _$MeetingMember {
     @JsonKey(name: 'status') required String status,
 
     /// .
-    @Default(false) @JsonKey(name: 'can_change_presence') bool? canChangePresence,
+    @JsonKey(name: 'can_change_presence') bool? canChangePresence,
 
     /// .
-    @Default(false) @JsonKey(name: 'can_change_status') bool? canChangeStatus,
+    @JsonKey(name: 'can_change_status') bool? canChangeStatus,
 
     /// .
-    @Default(false) @JsonKey(name: 'can_remove') bool? canRemove,
+    @JsonKey(name: 'can_remove') bool? canRemove,
   }) = _MeetingMember;
 
   factory MeetingMember.fromJson(Map<String, dynamic> json) => _$MeetingMemberFromJson(json);

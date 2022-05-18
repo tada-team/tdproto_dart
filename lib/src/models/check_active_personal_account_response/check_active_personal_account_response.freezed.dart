@@ -21,7 +21,7 @@ CheckActivePersonalAccountResponse _$CheckActivePersonalAccountResponseFromJson(
 class _$CheckActivePersonalAccountResponseTearOff {
   const _$CheckActivePersonalAccountResponseTearOff();
 
-  _CheckActivePersonalAccountResponse call({@JsonKey(name: 'success') bool? success = false}) {
+  _CheckActivePersonalAccountResponse call({@JsonKey(name: 'success') bool? success}) {
     return _CheckActivePersonalAccountResponse(
       success: success,
     );
@@ -114,7 +114,7 @@ class __$CheckActivePersonalAccountResponseCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_CheckActivePersonalAccountResponse implements _CheckActivePersonalAccountResponse {
-  const _$_CheckActivePersonalAccountResponse({@JsonKey(name: 'success') this.success = false});
+  const _$_CheckActivePersonalAccountResponse({@JsonKey(name: 'success') this.success});
 
   factory _$_CheckActivePersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
       _$$_CheckActivePersonalAccountResponseFromJson(json);

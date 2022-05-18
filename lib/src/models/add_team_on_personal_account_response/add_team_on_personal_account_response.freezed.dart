@@ -21,7 +21,7 @@ AddTeamOnPersonalAccountResponse _$AddTeamOnPersonalAccountResponseFromJson(Map<
 class _$AddTeamOnPersonalAccountResponseTearOff {
   const _$AddTeamOnPersonalAccountResponseTearOff();
 
-  _AddTeamOnPersonalAccountResponse call({@JsonKey(name: 'success') bool? success = false}) {
+  _AddTeamOnPersonalAccountResponse call({@JsonKey(name: 'success') bool? success}) {
     return _AddTeamOnPersonalAccountResponse(
       success: success,
     );
@@ -112,7 +112,7 @@ class __$AddTeamOnPersonalAccountResponseCopyWithImpl<$Res> extends _$AddTeamOnP
 /// @nodoc
 @JsonSerializable()
 class _$_AddTeamOnPersonalAccountResponse implements _AddTeamOnPersonalAccountResponse {
-  const _$_AddTeamOnPersonalAccountResponse({@JsonKey(name: 'success') this.success = false});
+  const _$_AddTeamOnPersonalAccountResponse({@JsonKey(name: 'success') this.success});
 
   factory _$_AddTeamOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
       _$$_AddTeamOnPersonalAccountResponseFromJson(json);

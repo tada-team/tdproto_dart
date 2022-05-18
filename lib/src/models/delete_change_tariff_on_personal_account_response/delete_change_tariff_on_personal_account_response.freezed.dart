@@ -22,7 +22,7 @@ DeleteChangeTariffOnPersonalAccountResponse _$DeleteChangeTariffOnPersonalAccoun
 class _$DeleteChangeTariffOnPersonalAccountResponseTearOff {
   const _$DeleteChangeTariffOnPersonalAccountResponseTearOff();
 
-  _DeleteChangeTariffOnPersonalAccountResponse call({@JsonKey(name: 'success') bool? success = false}) {
+  _DeleteChangeTariffOnPersonalAccountResponse call({@JsonKey(name: 'success') bool? success}) {
     return _DeleteChangeTariffOnPersonalAccountResponse(
       success: success,
     );
@@ -116,7 +116,7 @@ class __$DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_DeleteChangeTariffOnPersonalAccountResponse implements _DeleteChangeTariffOnPersonalAccountResponse {
-  const _$_DeleteChangeTariffOnPersonalAccountResponse({@JsonKey(name: 'success') this.success = false});
+  const _$_DeleteChangeTariffOnPersonalAccountResponse({@JsonKey(name: 'success') this.success});
 
   factory _$_DeleteChangeTariffOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
       _$$_DeleteChangeTariffOnPersonalAccountResponseFromJson(json);

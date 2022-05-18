@@ -21,10 +21,10 @@ class Session with _$Session {
     @JsonKey(name: 'team') String? team,
 
     /// Mobile.
-    @Default(false) @JsonKey(name: 'is_mobile') bool? isMobile,
+    @JsonKey(name: 'is_mobile') bool? isMobile,
 
     /// Away from keyboard.
-    @Default(false) @JsonKey(name: 'afk') bool? afk,
+    @JsonKey(name: 'afk') bool? afk,
 
     /// User agent.
     @JsonKey(name: 'useragent') String? useragent,

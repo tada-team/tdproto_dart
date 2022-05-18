@@ -18,10 +18,10 @@ class Country with _$Country {
     @JsonKey(name: 'name') required String name,
 
     /// Selected by default.
-    @Default(false) @JsonKey(name: 'default') bool? isDefault,
+    @JsonKey(name: 'default') bool? isDefault,
 
     /// Is popular, need to cache.
-    @Default(false) @JsonKey(name: 'popular') bool? popular,
+    @JsonKey(name: 'popular') bool? popular,
   }) = _Country;
 
   factory Country.fromJson(Map<String, dynamic> json) => _$CountryFromJson(json);

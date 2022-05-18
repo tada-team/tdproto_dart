@@ -11,14 +11,14 @@ _$_ColorRule _$$_ColorRuleFromJson(Map<String, dynamic> json) => _$_ColorRule(
       priority: json['priority'] as int,
       description: json['description'] as String?,
       colorIndex: json['color_index'] as int,
-      projectEnabled: json['section_enabled'] as bool? ?? false,
+      projectEnabled: json['section_enabled'] as bool?,
       project: json['section'] as String?,
-      tagsEnabled: json['tags_enabled'] as bool? ?? false,
+      tagsEnabled: json['tags_enabled'] as bool?,
       tags: (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList(),
       taskStatus: json['task_status'] as String?,
-      taskImportanceEnabled: json['task_importance_enabled'] as bool? ?? false,
+      taskImportanceEnabled: json['task_importance_enabled'] as bool?,
       taskImportance: json['task_importance'] as int?,
-      taskUrgencyEnabled: json['task_urgency_enabled'] as bool? ?? false,
+      taskUrgencyEnabled: json['task_urgency_enabled'] as bool?,
       taskUrgency: json['task_urgency'] as int?,
     );
 

@@ -26,14 +26,14 @@ class _$ColorRuleTearOff {
       @JsonKey(name: 'priority') required int priority,
       @JsonKey(name: 'description') String? description,
       @JsonKey(name: 'color_index') required int colorIndex,
-      @JsonKey(name: 'section_enabled') bool? projectEnabled = false,
+      @JsonKey(name: 'section_enabled') bool? projectEnabled,
       @JsonKey(name: 'section') String? project,
-      @JsonKey(name: 'tags_enabled') bool? tagsEnabled = false,
+      @JsonKey(name: 'tags_enabled') bool? tagsEnabled,
       @JsonKey(name: 'tags') List<String>? tags,
       @JsonKey(name: 'task_status') String? taskStatus,
-      @JsonKey(name: 'task_importance_enabled') bool? taskImportanceEnabled = false,
+      @JsonKey(name: 'task_importance_enabled') bool? taskImportanceEnabled,
       @JsonKey(name: 'task_importance') int? taskImportance,
-      @JsonKey(name: 'task_urgency_enabled') bool? taskUrgencyEnabled = false,
+      @JsonKey(name: 'task_urgency_enabled') bool? taskUrgencyEnabled,
       @JsonKey(name: 'task_urgency') int? taskUrgency}) {
     return _ColorRule(
       uid: uid,
@@ -328,14 +328,14 @@ class _$_ColorRule implements _ColorRule {
       @JsonKey(name: 'priority') required this.priority,
       @JsonKey(name: 'description') this.description,
       @JsonKey(name: 'color_index') required this.colorIndex,
-      @JsonKey(name: 'section_enabled') this.projectEnabled = false,
+      @JsonKey(name: 'section_enabled') this.projectEnabled,
       @JsonKey(name: 'section') this.project,
-      @JsonKey(name: 'tags_enabled') this.tagsEnabled = false,
+      @JsonKey(name: 'tags_enabled') this.tagsEnabled,
       @JsonKey(name: 'tags') this.tags,
       @JsonKey(name: 'task_status') this.taskStatus,
-      @JsonKey(name: 'task_importance_enabled') this.taskImportanceEnabled = false,
+      @JsonKey(name: 'task_importance_enabled') this.taskImportanceEnabled,
       @JsonKey(name: 'task_importance') this.taskImportance,
-      @JsonKey(name: 'task_urgency_enabled') this.taskUrgencyEnabled = false,
+      @JsonKey(name: 'task_urgency_enabled') this.taskUrgencyEnabled,
       @JsonKey(name: 'task_urgency') this.taskUrgency});
 
   factory _$_ColorRule.fromJson(Map<String, dynamic> json) => _$$_ColorRuleFromJson(json);

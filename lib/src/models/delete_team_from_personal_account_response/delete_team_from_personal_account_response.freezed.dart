@@ -21,7 +21,7 @@ DeleteTeamFromPersonalAccountResponse _$DeleteTeamFromPersonalAccountResponseFro
 class _$DeleteTeamFromPersonalAccountResponseTearOff {
   const _$DeleteTeamFromPersonalAccountResponseTearOff();
 
-  _DeleteTeamFromPersonalAccountResponse call({@JsonKey(name: 'success') bool? success = false}) {
+  _DeleteTeamFromPersonalAccountResponse call({@JsonKey(name: 'success') bool? success}) {
     return _DeleteTeamFromPersonalAccountResponse(
       success: success,
     );
@@ -114,7 +114,7 @@ class __$DeleteTeamFromPersonalAccountResponseCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_DeleteTeamFromPersonalAccountResponse implements _DeleteTeamFromPersonalAccountResponse {
-  const _$_DeleteTeamFromPersonalAccountResponse({@JsonKey(name: 'success') this.success = false});
+  const _$_DeleteTeamFromPersonalAccountResponse({@JsonKey(name: 'success') this.success});
 
   factory _$_DeleteTeamFromPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
       _$$_DeleteTeamFromPersonalAccountResponseFromJson(json);

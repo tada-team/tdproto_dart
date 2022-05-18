@@ -21,13 +21,13 @@ class TaskItem with _$TaskItem {
     @JsonKey(name: 'text') required String text,
 
     /// Item checked.
-    @Default(false) @JsonKey(name: 'checked') bool? checked,
+    @JsonKey(name: 'checked') bool? checked,
 
     /// Can I toggle this item.
-    @Default(false) @JsonKey(name: 'can_toggle') bool? canToggle,
+    @JsonKey(name: 'can_toggle') bool? canToggle,
 
     /// Can I change this item.
-    @Default(false) @JsonKey(name: 'can_change') bool? canChange,
+    @JsonKey(name: 'can_change') bool? canChange,
 
     /// Link to subtask. Optional.
     @JsonKey(name: 'subtask') Subtask? subtask,

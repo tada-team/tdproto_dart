@@ -9,7 +9,7 @@ part 'add_team_on_personal_account_response.g.dart';
 class AddTeamOnPersonalAccountResponse with _$AddTeamOnPersonalAccountResponse {
   const factory AddTeamOnPersonalAccountResponse({
     /// .
-    @Default(false) @JsonKey(name: 'success') bool? success,
+    @JsonKey(name: 'success') bool? success,
   }) = _AddTeamOnPersonalAccountResponse;
 
   factory AddTeamOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>

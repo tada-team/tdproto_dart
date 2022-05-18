@@ -8,7 +8,7 @@ part of 'add_user_in_workplace_response.dart';
 
 _$_AddUserInWorkplaceResponse _$$_AddUserInWorkplaceResponseFromJson(Map<String, dynamic> json) =>
     _$_AddUserInWorkplaceResponse(
-      success: json['success'] as bool? ?? false,
+      success: json['success'] as bool?,
     );
 
 Map<String, dynamic> _$$_AddUserInWorkplaceResponseToJson(_$_AddUserInWorkplaceResponse instance) => <String, dynamic>{

@@ -22,7 +22,7 @@ CreateChangeTariffOnPersonalAccountResponse _$CreateChangeTariffOnPersonalAccoun
 class _$CreateChangeTariffOnPersonalAccountResponseTearOff {
   const _$CreateChangeTariffOnPersonalAccountResponseTearOff();
 
-  _CreateChangeTariffOnPersonalAccountResponse call({@JsonKey(name: 'success') bool? success = false}) {
+  _CreateChangeTariffOnPersonalAccountResponse call({@JsonKey(name: 'success') bool? success}) {
     return _CreateChangeTariffOnPersonalAccountResponse(
       success: success,
     );
@@ -116,7 +116,7 @@ class __$CreateChangeTariffOnPersonalAccountResponseCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_CreateChangeTariffOnPersonalAccountResponse implements _CreateChangeTariffOnPersonalAccountResponse {
-  const _$_CreateChangeTariffOnPersonalAccountResponse({@JsonKey(name: 'success') this.success = false});
+  const _$_CreateChangeTariffOnPersonalAccountResponse({@JsonKey(name: 'success') this.success});
 
   factory _$_CreateChangeTariffOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
       _$$_CreateChangeTariffOnPersonalAccountResponseFromJson(json);

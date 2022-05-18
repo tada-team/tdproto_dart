@@ -24,10 +24,10 @@ class _$SharpLinkMetaTearOff {
   _SharpLinkMeta call(
       {@JsonKey(name: 'jid') required String jid,
       @JsonKey(name: 'chat_type') required String chatType,
-      @JsonKey(name: 'public') bool? isPublic = false,
+      @JsonKey(name: 'public') bool? isPublic,
       @JsonKey(name: 'task_status') String? taskStatus,
       @JsonKey(name: 'num') int? num,
-      @Deprecated('Deprecated: use `TaskStatus == "done"` comparsion.') @JsonKey(name: 'done') bool? done = false}) {
+      @Deprecated('Deprecated: use `TaskStatus == "done"` comparsion.') @JsonKey(name: 'done') bool? done}) {
     return _SharpLinkMeta(
       jid: jid,
       chatType: chatType,
@@ -204,10 +204,10 @@ class _$_SharpLinkMeta implements _SharpLinkMeta {
   const _$_SharpLinkMeta(
       {@JsonKey(name: 'jid') required this.jid,
       @JsonKey(name: 'chat_type') required this.chatType,
-      @JsonKey(name: 'public') this.isPublic = false,
+      @JsonKey(name: 'public') this.isPublic,
       @JsonKey(name: 'task_status') this.taskStatus,
       @JsonKey(name: 'num') this.num,
-      @Deprecated('Deprecated: use `TaskStatus == "done"` comparsion.') @JsonKey(name: 'done') this.done = false});
+      @Deprecated('Deprecated: use `TaskStatus == "done"` comparsion.') @JsonKey(name: 'done') this.done});
 
   factory _$_SharpLinkMeta.fromJson(Map<String, dynamic> json) => _$$_SharpLinkMetaFromJson(json);
 

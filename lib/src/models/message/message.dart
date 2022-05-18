@@ -45,31 +45,31 @@ class Message with _$Message {
     @JsonKey(name: 'markup') List<MarkupEntity>? markup,
 
     /// Importance flag.
-    @Default(false) @JsonKey(name: 'important') bool? important,
+    @JsonKey(name: 'important') bool? important,
 
     /// ISODateTimeString of message modification or deletion.
     @JsonKey(name: 'edited') @DateTimeConverter() DateTime? edited,
 
     /// Message was seen by anybody in chat. True or null.
-    @Default(false) @JsonKey(name: 'received') bool? received,
+    @JsonKey(name: 'received') bool? received,
 
     /// Unused yet.
     @JsonKey(name: 'num_received') int? numReceived,
 
     /// Disable link previews. True or null.
-    @Default(false) @JsonKey(name: 'nopreview') bool? nopreview,
+    @JsonKey(name: 'nopreview') bool? nopreview,
 
     /// Has link previews. True or null.
-    @Default(false) @JsonKey(name: 'has_previews') bool? hasPreviews,
+    @JsonKey(name: 'has_previews') bool? hasPreviews,
 
     /// Previous message id in this chat. Uid or null.
     @JsonKey(name: 'prev') String? prev,
 
     /// This message is first in this chat. True or null.
-    @Default(false) @JsonKey(name: 'is_first') bool? isFirst,
+    @JsonKey(name: 'is_first') bool? isFirst,
 
     /// This message is last in this chat. True or null.
-    @Default(false) @JsonKey(name: 'is_last') bool? isLast,
+    @JsonKey(name: 'is_last') bool? isLast,
 
     /// Message uploads.
     @JsonKey(name: 'uploads') List<Upload>? uploads,
@@ -84,10 +84,10 @@ class Message with _$Message {
     @JsonKey(name: 'linked_messages') List<Message>? linkedMessages,
 
     /// Has mention (@). True or null.
-    @Default(false) @JsonKey(name: 'notice') bool? notice,
+    @JsonKey(name: 'notice') bool? notice,
 
     /// Message has no pushes and did not affect any counters.
-    @Default(false) @JsonKey(name: 'silently') bool? silently,
+    @JsonKey(name: 'silently') bool? silently,
 
     /// Author can change this message until date. Can be null.
     @JsonKey(name: 'editable_until') @DateTimeConverter() DateTime? editableUntil,
@@ -96,7 +96,7 @@ class Message with _$Message {
     @JsonKey(name: 'num') int? num,
 
     /// This message is archive. True or null.
-    @Default(false) @JsonKey(name: 'is_archive') bool? isArchive,
+    @JsonKey(name: 'is_archive') bool? isArchive,
 
     /// Debug information, if any.
     @JsonKey(name: '_debug') String? debug,

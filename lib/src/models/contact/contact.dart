@@ -45,7 +45,7 @@ class Contact with _$Contact {
     @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,
 
     /// Contact deleted.
-    @Default(false) @JsonKey(name: 'is_archive') bool? isArchive,
+    @JsonKey(name: 'is_archive') bool? isArchive,
 
     /// Bot name. Empty for users.
     @JsonKey(name: 'botname') String? botname,
@@ -54,25 +54,25 @@ class Contact with _$Contact {
     @JsonKey(name: 'sections') required List<String> sections,
 
     /// Can I send message to this contact.
-    @Default(false) @JsonKey(name: 'can_send_message') bool? canSendMessage,
+    @JsonKey(name: 'can_send_message') bool? canSendMessage,
 
     /// Why I can't send message to this chat (if can't).
     @JsonKey(name: 'cant_send_message_reason') String? cantSendMessageReason,
 
     /// Can I call to this contact.
-    @Default(false) @JsonKey(name: 'can_call') bool? canCall,
+    @JsonKey(name: 'can_call') bool? canCall,
 
     /// Can I create task for this contact.
-    @Default(false) @JsonKey(name: 'can_create_task') bool? canCreateTask,
+    @JsonKey(name: 'can_create_task') bool? canCreateTask,
 
     /// Can I import tasks in this team.
-    @Default(false) @JsonKey(name: 'can_import_tasks') bool? canImportTasks,
+    @JsonKey(name: 'can_import_tasks') bool? canImportTasks,
 
     /// Can I add this contact to group chats.
-    @Default(false) @JsonKey(name: 'can_add_to_group') bool? canAddToGroup,
+    @JsonKey(name: 'can_add_to_group') bool? canAddToGroup,
 
     /// Can I remove this contact from team.
-    @Default(false) @JsonKey(name: 'can_delete') bool? canDelete,
+    @JsonKey(name: 'can_delete') bool? canDelete,
 
     /// Changeable fields.
     @JsonKey(name: 'changeable_fields') List<String>? changeableFields,
@@ -90,22 +90,22 @@ class Contact with _$Contact {
     @JsonKey(name: 'default_lang') String? defaultLang,
 
     /// Enable debug messages in UI.
-    @Default(false) @JsonKey(name: 'debug_show_activity') bool? debugShowActivity,
+    @JsonKey(name: 'debug_show_activity') bool? debugShowActivity,
 
     /// Enable remove all messages experimental features.
-    @Default(false) @JsonKey(name: 'dropall_enabled') bool? dropallEnabled,
+    @JsonKey(name: 'dropall_enabled') bool? dropallEnabled,
 
     /// Use Ctrl/Cmd + Enter instead Enter.
-    @Default(false) @JsonKey(name: 'alt_send') bool? altSend,
+    @JsonKey(name: 'alt_send') bool? altSend,
 
     /// Use * as @ for mentions.
-    @Default(false) @JsonKey(name: 'asterisk_mention') bool? asteriskMention,
+    @JsonKey(name: 'asterisk_mention') bool? asteriskMention,
 
     /// Send push notifications even contact is online.
-    @Default(false) @JsonKey(name: 'always_send_pushes') bool? alwaysSendPushes,
+    @JsonKey(name: 'always_send_pushes') bool? alwaysSendPushes,
 
     /// Hide pushes body.
-    @Default(false) @JsonKey(name: 'hide_pushes_content') bool? hidePushesContent,
+    @JsonKey(name: 'hide_pushes_content') bool? hidePushesContent,
 
     /// Timezone, if any.
     @JsonKey(name: 'timezone') String? timezone,
@@ -120,76 +120,76 @@ class Contact with _$Contact {
     @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime? focusUntil,
 
     /// Push notifications for group chats.
-    @Default(false) @JsonKey(name: 'group_notifications_enabled') bool? groupNotificationsEnabled,
+    @JsonKey(name: 'group_notifications_enabled') bool? groupNotificationsEnabled,
 
     /// Push notifications for task chats.
-    @Default(false) @JsonKey(name: 'task_notifications_enabled') bool? taskNotificationsEnabled,
+    @JsonKey(name: 'task_notifications_enabled') bool? taskNotificationsEnabled,
 
     /// Short view in contact list.
-    @Default(false) @JsonKey(name: 'contact_short_view') bool? contactShortView,
+    @JsonKey(name: 'contact_short_view') bool? contactShortView,
 
     /// Short view in group list.
-    @Default(false) @JsonKey(name: 'group_short_view') bool? groupShortView,
+    @JsonKey(name: 'group_short_view') bool? groupShortView,
 
     /// Short view in task list.
-    @Default(false) @JsonKey(name: 'task_short_view') bool? taskShortView,
+    @JsonKey(name: 'task_short_view') bool? taskShortView,
 
     /// Short view in contact list in mobile app.
-    @Default(false) @JsonKey(name: 'contact_mshort_view') bool? contactMshortView,
+    @JsonKey(name: 'contact_mshort_view') bool? contactMshortView,
 
     /// Short view in group list in mobile app.
-    @Default(false) @JsonKey(name: 'group_mshort_view') bool? groupMshortView,
+    @JsonKey(name: 'group_mshort_view') bool? groupMshortView,
 
     /// Two-factor authentication is configured and confirmed.
-    @Default(false) @JsonKey(name: 'auth_2fa_enabled') bool? auth2faEnabled,
+    @JsonKey(name: 'auth_2fa_enabled') bool? auth2faEnabled,
 
     /// Two-factor authentication status.
     @JsonKey(name: 'auth_2fa_status') String? auth2faStatus,
 
     /// Short view in task list in mobile app.
-    @Default(false) @JsonKey(name: 'task_mshort_view') bool? taskMshortView,
+    @JsonKey(name: 'task_mshort_view') bool? taskMshortView,
 
     /// Show archived contacts in contact list.
-    @Default(false) @JsonKey(name: 'contact_show_archived') bool? contactShowArchived,
+    @JsonKey(name: 'contact_show_archived') bool? contactShowArchived,
 
     /// Show unread chats first in feed.
-    @Default(false) @JsonKey(name: 'unread_first') bool? unreadFirst,
+    @JsonKey(name: 'unread_first') bool? unreadFirst,
 
     /// Show unread chats first in feed in mobile app.
-    @Default(false) @JsonKey(name: 'munread_first') bool? mUnreadFirst,
+    @JsonKey(name: 'munread_first') bool? mUnreadFirst,
 
     /// Can I add new members to this team.
-    @Default(false) @JsonKey(name: 'can_add_to_team') bool? canAddToTeam,
+    @JsonKey(name: 'can_add_to_team') bool? canAddToTeam,
 
     /// Can I manage contact sections in this team.
-    @Default(false) @JsonKey(name: 'can_manage_sections') bool? canManageSections,
+    @JsonKey(name: 'can_manage_sections') bool? canManageSections,
 
     /// Can I manage task projects in this team.
-    @Default(false) @JsonKey(name: 'can_manage_projects') bool? canManageProjects,
+    @JsonKey(name: 'can_manage_projects') bool? canManageProjects,
 
     /// Can I manage tags in this team.
-    @Default(false) @JsonKey(name: 'can_manage_tags') bool? canManageTags,
+    @JsonKey(name: 'can_manage_tags') bool? canManageTags,
 
     /// Can I manage integrations in this team.
-    @Default(false) @JsonKey(name: 'can_manage_integrations') bool? canManageIntegrations,
+    @JsonKey(name: 'can_manage_integrations') bool? canManageIntegrations,
 
     /// Can I manage color rules in this team.
-    @Default(false) @JsonKey(name: 'can_manage_color_rules') bool? canManageColorRules,
+    @JsonKey(name: 'can_manage_color_rules') bool? canManageColorRules,
 
     /// Can I create group chats in this team.
-    @Default(false) @JsonKey(name: 'can_create_group') bool? canCreateGroup,
+    @JsonKey(name: 'can_create_group') bool? canCreateGroup,
 
     /// Can I view/join public group in this team.
-    @Default(false) @JsonKey(name: 'can_join_public_groups') bool? canJoinPublicGroups,
+    @JsonKey(name: 'can_join_public_groups') bool? canJoinPublicGroups,
 
     /// Can I view/join public tasks in this team.
-    @Default(false) @JsonKey(name: 'can_join_public_tasks') bool? canJoinPublicTasks,
+    @JsonKey(name: 'can_join_public_tasks') bool? canJoinPublicTasks,
 
     /// Extra contact fields.
     @JsonKey(name: 'custom_fields') ContactCustomFields? customFields,
 
     /// Deprecated.
-    @Default(false) @Deprecated('Deprecated.') @JsonKey(name: 'can_delete_any_message') bool? canDeleteAnyMessage,
+    @Deprecated('Deprecated.') @JsonKey(name: 'can_delete_any_message') bool? canDeleteAnyMessage,
   }) = _Contact;
 
   factory Contact.fromJson(Map<String, dynamic> json) => _$ContactFromJson(json);

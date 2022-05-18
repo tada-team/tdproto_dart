@@ -25,8 +25,8 @@ class _$CountryTearOff {
       {@JsonKey(name: 'code') required String code,
       @JsonKey(name: 'iso') required String iso,
       @JsonKey(name: 'name') required String name,
-      @JsonKey(name: 'default') bool? isDefault = false,
-      @JsonKey(name: 'popular') bool? popular = false}) {
+      @JsonKey(name: 'default') bool? isDefault,
+      @JsonKey(name: 'popular') bool? popular}) {
     return _Country(
       code: code,
       iso: iso,
@@ -182,8 +182,8 @@ class _$_Country implements _Country {
       {@JsonKey(name: 'code') required this.code,
       @JsonKey(name: 'iso') required this.iso,
       @JsonKey(name: 'name') required this.name,
-      @JsonKey(name: 'default') this.isDefault = false,
-      @JsonKey(name: 'popular') this.popular = false});
+      @JsonKey(name: 'default') this.isDefault,
+      @JsonKey(name: 'popular') this.popular});
 
   factory _$_Country.fromJson(Map<String, dynamic> json) => _$$_CountryFromJson(json);
 

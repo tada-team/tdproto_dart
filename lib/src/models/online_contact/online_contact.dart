@@ -12,10 +12,10 @@ class OnlineContact with _$OnlineContact {
     @JsonKey(name: 'jid') required String jid,
 
     /// Is away from keyboard.
-    @Default(false) @JsonKey(name: 'afk') bool? afk,
+    @JsonKey(name: 'afk') bool? afk,
 
     /// Focus mode enabled.
-    @Default(false) @JsonKey(name: 'focused') bool? focused,
+    @JsonKey(name: 'focused') bool? focused,
 
     /// Is mobile client.
     @JsonKey(name: 'mobile') required bool mobile,

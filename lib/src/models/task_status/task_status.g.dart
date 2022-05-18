@@ -11,7 +11,7 @@ _$_TaskStatus _$$_TaskStatusFromJson(Map<String, dynamic> json) => _$_TaskStatus
       sortOrdering: json['sort_ordering'] as int,
       name: json['name'] as String,
       title: json['title'] as String,
-      isArchive: json['is_archive'] as bool? ?? false,
+      isArchive: json['is_archive'] as bool?,
     );
 
 Map<String, dynamic> _$$_TaskStatusToJson(_$_TaskStatus instance) => <String, dynamic>{

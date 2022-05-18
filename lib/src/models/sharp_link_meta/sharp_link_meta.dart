@@ -15,7 +15,7 @@ class SharpLinkMeta with _$SharpLinkMeta {
     @JsonKey(name: 'chat_type') required String chatType,
 
     /// Is task or group public for non-guests.
-    @Default(false) @JsonKey(name: 'public') bool? isPublic,
+    @JsonKey(name: 'public') bool? isPublic,
 
     /// Task status (for tasks).
     @JsonKey(name: 'task_status') String? taskStatus,
@@ -24,7 +24,7 @@ class SharpLinkMeta with _$SharpLinkMeta {
     @JsonKey(name: 'num') int? num,
 
     /// Deprecated: use `TaskStatus == "done"` comparsion.
-    @Default(false) @Deprecated('Deprecated: use `TaskStatus == "done"` comparsion.') @JsonKey(name: 'done') bool? done,
+    @Deprecated('Deprecated: use `TaskStatus == "done"` comparsion.') @JsonKey(name: 'done') bool? done,
   }) = _SharpLinkMeta;
 
   factory SharpLinkMeta.fromJson(Map<String, dynamic> json) => _$SharpLinkMetaFromJson(json);

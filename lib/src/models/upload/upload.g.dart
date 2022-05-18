@@ -15,9 +15,9 @@ _$_Upload _$$_UploadFromJson(Map<String, dynamic> json) => _$_Upload(
       url: json['url'] as String,
       preview: json['preview'] == null ? null : UploadPreview.fromJson(json['preview'] as Map<String, dynamic>),
       contentType: json['content_type'] as String,
-      animated: json['animated'] as bool? ?? false,
+      animated: json['animated'] as bool?,
       blurhash: json['blurhash'] as String?,
-      processing: json['processing'] as bool? ?? false,
+      processing: json['processing'] as bool?,
       pdfVersion: json['pdf_version'] == null ? null : PdfVersion.fromJson(json['pdf_version'] as Map<String, dynamic>),
       mediaType: json['type'] as String,
     );

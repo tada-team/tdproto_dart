@@ -14,7 +14,7 @@ _$_ShortMessage _$$_ShortMessageFromJson(Map<String, dynamic> json) => _$_ShortM
       gentime: json['gentime'] as int,
       chatType: json['chat_type'] as String,
       chat: json['chat'] as String,
-      isArchive: json['is_archive'] as bool? ?? false,
+      isArchive: json['is_archive'] as bool?,
     );
 
 Map<String, dynamic> _$$_ShortMessageToJson(_$_ShortMessage instance) => <String, dynamic>{

@@ -27,7 +27,7 @@ class _$SectionTearOff {
       @JsonKey(name: 'name') required String name,
       @JsonKey(name: 'gentime') required int gentime,
       @JsonKey(name: 'description') String? description,
-      @JsonKey(name: 'is_archive') bool? isArchive = false}) {
+      @JsonKey(name: 'is_archive') bool? isArchive}) {
     return _Section(
       uid: uid,
       sortOrdering: sortOrdering,
@@ -202,7 +202,7 @@ class _$_Section implements _Section {
       @JsonKey(name: 'name') required this.name,
       @JsonKey(name: 'gentime') required this.gentime,
       @JsonKey(name: 'description') this.description,
-      @JsonKey(name: 'is_archive') this.isArchive = false});
+      @JsonKey(name: 'is_archive') this.isArchive});
 
   factory _$_Section.fromJson(Map<String, dynamic> json) => _$$_SectionFromJson(json);
 

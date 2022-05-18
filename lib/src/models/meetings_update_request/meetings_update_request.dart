@@ -27,10 +27,10 @@ class MeetingsUpdateRequest with _$MeetingsUpdateRequest {
     @JsonKey(name: 'freq') Freq? freq,
 
     /// .
-    @Default(false) @JsonKey(name: 'is_public') bool? isPublic,
+    @JsonKey(name: 'is_public') bool? isPublic,
 
     /// .
-    @Default(false) @JsonKey(name: 'is_outside') bool? isOutside,
+    @JsonKey(name: 'is_outside') bool? isOutside,
   }) = _MeetingsUpdateRequest;
 
   factory MeetingsUpdateRequest.fromJson(Map<String, dynamic> json) => _$MeetingsUpdateRequestFromJson(json);

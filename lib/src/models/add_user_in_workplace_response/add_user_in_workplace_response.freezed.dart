@@ -21,7 +21,7 @@ AddUserInWorkplaceResponse _$AddUserInWorkplaceResponseFromJson(Map<String, dyna
 class _$AddUserInWorkplaceResponseTearOff {
   const _$AddUserInWorkplaceResponseTearOff();
 
-  _AddUserInWorkplaceResponse call({@JsonKey(name: 'success') bool? success = false}) {
+  _AddUserInWorkplaceResponse call({@JsonKey(name: 'success') bool? success}) {
     return _AddUserInWorkplaceResponse(
       success: success,
     );
@@ -110,7 +110,7 @@ class __$AddUserInWorkplaceResponseCopyWithImpl<$Res> extends _$AddUserInWorkpla
 /// @nodoc
 @JsonSerializable()
 class _$_AddUserInWorkplaceResponse implements _AddUserInWorkplaceResponse {
-  const _$_AddUserInWorkplaceResponse({@JsonKey(name: 'success') this.success = false});
+  const _$_AddUserInWorkplaceResponse({@JsonKey(name: 'success') this.success});
 
   factory _$_AddUserInWorkplaceResponse.fromJson(Map<String, dynamic> json) =>
       _$$_AddUserInWorkplaceResponseFromJson(json);

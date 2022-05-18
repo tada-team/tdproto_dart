@@ -29,7 +29,7 @@ class _$ShortMessageTearOff {
       @JsonKey(name: 'gentime') required int gentime,
       @JsonKey(name: 'chat_type') required String chatType,
       @JsonKey(name: 'chat') required String chat,
-      @JsonKey(name: 'is_archive') bool? isArchive = false}) {
+      @JsonKey(name: 'is_archive') bool? isArchive}) {
     return _ShortMessage(
       from: from,
       to: to,
@@ -245,7 +245,7 @@ class _$_ShortMessage implements _ShortMessage {
       @JsonKey(name: 'gentime') required this.gentime,
       @JsonKey(name: 'chat_type') required this.chatType,
       @JsonKey(name: 'chat') required this.chat,
-      @JsonKey(name: 'is_archive') this.isArchive = false});
+      @JsonKey(name: 'is_archive') this.isArchive});
 
   factory _$_ShortMessage.fromJson(Map<String, dynamic> json) => _$$_ShortMessageFromJson(json);
 

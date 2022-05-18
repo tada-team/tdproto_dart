@@ -33,13 +33,13 @@ class Upload with _$Upload {
     @JsonKey(name: 'content_type') required String contentType,
 
     /// Is animated (images only).
-    @Default(false) @JsonKey(name: 'animated') bool? animated,
+    @JsonKey(name: 'animated') bool? animated,
 
     /// Compact representation of a placeholder for an image (images only).
     @JsonKey(name: 'blurhash') String? blurhash,
 
     /// File still processing (video only).
-    @Default(false) @JsonKey(name: 'processing') bool? processing,
+    @JsonKey(name: 'processing') bool? processing,
 
     /// PDF version of file. Experimental.
     @JsonKey(name: 'pdf_version') PdfVersion? pdfVersion,

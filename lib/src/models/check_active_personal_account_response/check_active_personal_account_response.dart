@@ -9,7 +9,7 @@ part 'check_active_personal_account_response.g.dart';
 class CheckActivePersonalAccountResponse with _$CheckActivePersonalAccountResponse {
   const factory CheckActivePersonalAccountResponse({
     /// .
-    @Default(false) @JsonKey(name: 'success') bool? success,
+    @JsonKey(name: 'success') bool? success,
   }) = _CheckActivePersonalAccountResponse;
 
   factory CheckActivePersonalAccountResponse.fromJson(Map<String, dynamic> json) =>

@@ -27,8 +27,8 @@ class _$ClientCallOfferParamsTearOff {
       @JsonKey(name: 'trickle') required bool trickle,
       @JsonKey(name: 'sdp') required String sdp,
       @JsonKey(name: 'call_type') String? callType,
-      @JsonKey(name: 'enabled_audio') bool? enabledAudio = false,
-      @JsonKey(name: 'enabled_video') bool? enabledVideo = false}) {
+      @JsonKey(name: 'enabled_audio') bool? enabledAudio,
+      @JsonKey(name: 'enabled_video') bool? enabledVideo}) {
     return _ClientCallOfferParams(
       jid: jid,
       muted: muted,
@@ -225,8 +225,8 @@ class _$_ClientCallOfferParams implements _ClientCallOfferParams {
       @JsonKey(name: 'trickle') required this.trickle,
       @JsonKey(name: 'sdp') required this.sdp,
       @JsonKey(name: 'call_type') this.callType,
-      @JsonKey(name: 'enabled_audio') this.enabledAudio = false,
-      @JsonKey(name: 'enabled_video') this.enabledVideo = false});
+      @JsonKey(name: 'enabled_audio') this.enabledAudio,
+      @JsonKey(name: 'enabled_video') this.enabledVideo});
 
   factory _$_ClientCallOfferParams.fromJson(Map<String, dynamic> json) => _$$_ClientCallOfferParamsFromJson(json);
 

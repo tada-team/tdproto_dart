@@ -24,7 +24,7 @@ class Section with _$Section {
     @JsonKey(name: 'description') String? description,
 
     /// Is deleted.
-    @Default(false) @JsonKey(name: 'is_archive') bool? isArchive,
+    @JsonKey(name: 'is_archive') bool? isArchive,
   }) = _Section;
 
   factory Section.fromJson(Map<String, dynamic> json) => _$SectionFromJson(json);

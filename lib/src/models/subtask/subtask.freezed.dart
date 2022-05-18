@@ -27,10 +27,10 @@ class _$SubtaskTearOff {
       @JsonKey(name: 'title') required String title,
       @JsonKey(name: 'num') required int num,
       @JsonKey(name: 'display_name') required String displayName,
-      @JsonKey(name: 'public') bool? isPublic = false,
+      @JsonKey(name: 'public') bool? isPublic,
       @JsonKey(name: 'task_status') String? taskStatus,
       @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
-      @JsonKey(name: 'deadline_expired') bool? deadlineExpired = false}) {
+      @JsonKey(name: 'deadline_expired') bool? deadlineExpired}) {
     return _Subtask(
       jid: jid,
       assignee: assignee,
@@ -257,10 +257,10 @@ class _$_Subtask implements _Subtask {
       @JsonKey(name: 'title') required this.title,
       @JsonKey(name: 'num') required this.num,
       @JsonKey(name: 'display_name') required this.displayName,
-      @JsonKey(name: 'public') this.isPublic = false,
+      @JsonKey(name: 'public') this.isPublic,
       @JsonKey(name: 'task_status') this.taskStatus,
       @JsonKey(name: 'deadline') @DateTimeConverter() this.deadline,
-      @JsonKey(name: 'deadline_expired') this.deadlineExpired = false});
+      @JsonKey(name: 'deadline_expired') this.deadlineExpired});
 
   factory _$_Subtask.fromJson(Map<String, dynamic> json) => _$$_SubtaskFromJson(json);
 

@@ -9,7 +9,7 @@ part of 'call_event.dart';
 _$_CallEvent _$$_CallEventFromJson(Map<String, dynamic> json) => _$_CallEvent(
       jid: json['jid'] as String,
       uid: json['uid'] as String,
-      buzz: json['buzz'] as bool? ?? false,
+      buzz: json['buzz'] as bool?,
       created: const DateTimeConverter().fromJson(json['created'] as String),
       start: json['start'] == null ? null : DateTime.parse(json['start'] as String),
       finish: json['finish'] == null ? null : DateTime.parse(json['finish'] as String),

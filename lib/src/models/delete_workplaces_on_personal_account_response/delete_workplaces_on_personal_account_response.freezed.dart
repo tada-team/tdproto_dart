@@ -22,7 +22,7 @@ DeleteWorkplacesOnPersonalAccountResponse _$DeleteWorkplacesOnPersonalAccountRes
 class _$DeleteWorkplacesOnPersonalAccountResponseTearOff {
   const _$DeleteWorkplacesOnPersonalAccountResponseTearOff();
 
-  _DeleteWorkplacesOnPersonalAccountResponse call({@JsonKey(name: 'success') bool? success = false}) {
+  _DeleteWorkplacesOnPersonalAccountResponse call({@JsonKey(name: 'success') bool? success}) {
     return _DeleteWorkplacesOnPersonalAccountResponse(
       success: success,
     );
@@ -115,7 +115,7 @@ class __$DeleteWorkplacesOnPersonalAccountResponseCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_DeleteWorkplacesOnPersonalAccountResponse implements _DeleteWorkplacesOnPersonalAccountResponse {
-  const _$_DeleteWorkplacesOnPersonalAccountResponse({@JsonKey(name: 'success') this.success = false});
+  const _$_DeleteWorkplacesOnPersonalAccountResponse({@JsonKey(name: 'success') this.success});
 
   factory _$_DeleteWorkplacesOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
       _$$_DeleteWorkplacesOnPersonalAccountResponseFromJson(json);

@@ -30,8 +30,8 @@ class _$MeetingsCreateRequestTearOff {
       @JsonKey(name: 'duration') required int duration,
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'members') required List<MeetingsMemberCreateParams> members,
-      @JsonKey(name: 'is_public') bool? isPublic = false,
-      @JsonKey(name: 'is_outside') bool? isOutside = false}) {
+      @JsonKey(name: 'is_public') bool? isPublic,
+      @JsonKey(name: 'is_outside') bool? isOutside}) {
     return _MeetingsCreateRequest(
       ownerContactUuid: ownerContactUuid,
       teamUuid: teamUuid,
@@ -297,8 +297,8 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
       @JsonKey(name: 'duration') required this.duration,
       @JsonKey(name: 'freq') this.freq,
       @JsonKey(name: 'members') required this.members,
-      @JsonKey(name: 'is_public') this.isPublic = false,
-      @JsonKey(name: 'is_outside') this.isOutside = false});
+      @JsonKey(name: 'is_public') this.isPublic,
+      @JsonKey(name: 'is_outside') this.isOutside});
 
   factory _$_MeetingsCreateRequest.fromJson(Map<String, dynamic> json) => _$$_MeetingsCreateRequestFromJson(json);
 

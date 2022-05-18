@@ -9,10 +9,10 @@ part of 'sharp_link_meta.dart';
 _$_SharpLinkMeta _$$_SharpLinkMetaFromJson(Map<String, dynamic> json) => _$_SharpLinkMeta(
       jid: json['jid'] as String,
       chatType: json['chat_type'] as String,
-      isPublic: json['public'] as bool? ?? false,
+      isPublic: json['public'] as bool?,
       taskStatus: json['task_status'] as String?,
       num: json['num'] as int?,
-      done: json['done'] as bool? ?? false,
+      done: json['done'] as bool?,
     );
 
 Map<String, dynamic> _$$_SharpLinkMetaToJson(_$_SharpLinkMeta instance) => <String, dynamic>{
