@@ -29,7 +29,9 @@ class _$MeetingsUpdateRequestTearOff {
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'is_public') bool? isPublic,
-      @JsonKey(name: 'is_outside') bool? isOutside}) {
+      @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'title') String? title,
+      @JsonKey(name: 'description') String? description}) {
     return _MeetingsUpdateRequest(
       meetingId: meetingId,
       teamUuid: teamUuid,
@@ -39,6 +41,8 @@ class _$MeetingsUpdateRequestTearOff {
       freq: freq,
       isPublic: isPublic,
       isOutside: isOutside,
+      title: title,
+      description: description,
     );
   }
 
@@ -84,6 +88,14 @@ mixin _$MeetingsUpdateRequest {
   @JsonKey(name: 'is_outside')
   bool? get isOutside => throw _privateConstructorUsedError;
 
+  /// .
+  @JsonKey(name: 'title')
+  String? get title => throw _privateConstructorUsedError;
+
+  /// .
+  @JsonKey(name: 'description')
+  String? get description => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $MeetingsUpdateRequestCopyWith<MeetingsUpdateRequest> get copyWith => throw _privateConstructorUsedError;
@@ -101,7 +113,9 @@ abstract class $MeetingsUpdateRequestCopyWith<$Res> {
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'is_public') bool? isPublic,
-      @JsonKey(name: 'is_outside') bool? isOutside});
+      @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'title') String? title,
+      @JsonKey(name: 'description') String? description});
 
   $FreqCopyWith<$Res>? get freq;
 }
@@ -124,6 +138,8 @@ class _$MeetingsUpdateRequestCopyWithImpl<$Res> implements $MeetingsUpdateReques
     Object? freq = freezed,
     Object? isPublic = freezed,
     Object? isOutside = freezed,
+    Object? title = freezed,
+    Object? description = freezed,
   }) {
     return _then(_value.copyWith(
       meetingId: meetingId == freezed
@@ -158,6 +174,14 @@ class _$MeetingsUpdateRequestCopyWithImpl<$Res> implements $MeetingsUpdateReques
           ? _value.isOutside
           : isOutside // ignore: cast_nullable_to_non_nullable
               as bool?,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
@@ -186,7 +210,9 @@ abstract class _$MeetingsUpdateRequestCopyWith<$Res> implements $MeetingsUpdateR
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'is_public') bool? isPublic,
-      @JsonKey(name: 'is_outside') bool? isOutside});
+      @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'title') String? title,
+      @JsonKey(name: 'description') String? description});
 
   @override
   $FreqCopyWith<$Res>? get freq;
@@ -211,6 +237,8 @@ class __$MeetingsUpdateRequestCopyWithImpl<$Res> extends _$MeetingsUpdateRequest
     Object? freq = freezed,
     Object? isPublic = freezed,
     Object? isOutside = freezed,
+    Object? title = freezed,
+    Object? description = freezed,
   }) {
     return _then(_MeetingsUpdateRequest(
       meetingId: meetingId == freezed
@@ -245,6 +273,14 @@ class __$MeetingsUpdateRequestCopyWithImpl<$Res> extends _$MeetingsUpdateRequest
           ? _value.isOutside
           : isOutside // ignore: cast_nullable_to_non_nullable
               as bool?,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -260,7 +296,9 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
       @JsonKey(name: 'duration') this.duration,
       @JsonKey(name: 'freq') this.freq,
       @JsonKey(name: 'is_public') this.isPublic,
-      @JsonKey(name: 'is_outside') this.isOutside});
+      @JsonKey(name: 'is_outside') this.isOutside,
+      @JsonKey(name: 'title') this.title,
+      @JsonKey(name: 'description') this.description});
 
   factory _$_MeetingsUpdateRequest.fromJson(Map<String, dynamic> json) => _$$_MeetingsUpdateRequestFromJson(json);
 
@@ -304,10 +342,20 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
   /// .
   @JsonKey(name: 'is_outside')
   final bool? isOutside;
+  @override
+
+  /// .
+  @JsonKey(name: 'title')
+  final String? title;
+  @override
+
+  /// .
+  @JsonKey(name: 'description')
+  final String? description;
 
   @override
   String toString() {
-    return 'MeetingsUpdateRequest(meetingId: $meetingId, teamUuid: $teamUuid, activeFrom: $activeFrom, startAt: $startAt, duration: $duration, freq: $freq, isPublic: $isPublic, isOutside: $isOutside)';
+    return 'MeetingsUpdateRequest(meetingId: $meetingId, teamUuid: $teamUuid, activeFrom: $activeFrom, startAt: $startAt, duration: $duration, freq: $freq, isPublic: $isPublic, isOutside: $isOutside, title: $title, description: $description)';
   }
 
   @override
@@ -324,7 +372,10 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
             (identical(other.freq, freq) || const DeepCollectionEquality().equals(other.freq, freq)) &&
             (identical(other.isPublic, isPublic) || const DeepCollectionEquality().equals(other.isPublic, isPublic)) &&
             (identical(other.isOutside, isOutside) ||
-                const DeepCollectionEquality().equals(other.isOutside, isOutside)));
+                const DeepCollectionEquality().equals(other.isOutside, isOutside)) &&
+            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
+            (identical(other.description, description) ||
+                const DeepCollectionEquality().equals(other.description, description)));
   }
 
   @override
@@ -337,7 +388,9 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
       const DeepCollectionEquality().hash(duration) ^
       const DeepCollectionEquality().hash(freq) ^
       const DeepCollectionEquality().hash(isPublic) ^
-      const DeepCollectionEquality().hash(isOutside);
+      const DeepCollectionEquality().hash(isOutside) ^
+      const DeepCollectionEquality().hash(title) ^
+      const DeepCollectionEquality().hash(description);
 
   @JsonKey(ignore: true)
   @override
@@ -359,7 +412,9 @@ abstract class _MeetingsUpdateRequest implements MeetingsUpdateRequest {
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'is_public') bool? isPublic,
-      @JsonKey(name: 'is_outside') bool? isOutside}) = _$_MeetingsUpdateRequest;
+      @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'title') String? title,
+      @JsonKey(name: 'description') String? description}) = _$_MeetingsUpdateRequest;
 
   factory _MeetingsUpdateRequest.fromJson(Map<String, dynamic> json) = _$_MeetingsUpdateRequest.fromJson;
 
@@ -403,6 +458,16 @@ abstract class _MeetingsUpdateRequest implements MeetingsUpdateRequest {
   /// .
   @JsonKey(name: 'is_outside')
   bool? get isOutside => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'title')
+  String? get title => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'description')
+  String? get description => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MeetingsUpdateRequestCopyWith<_MeetingsUpdateRequest> get copyWith => throw _privateConstructorUsedError;

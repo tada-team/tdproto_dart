@@ -31,6 +31,12 @@ class MeetingsUpdateRequest with _$MeetingsUpdateRequest {
 
     /// .
     @JsonKey(name: 'is_outside') bool? isOutside,
+
+    /// .
+    @JsonKey(name: 'title') String? title,
+
+    /// .
+    @JsonKey(name: 'description') String? description,
   }) = _MeetingsUpdateRequest;
 
   factory MeetingsUpdateRequest.fromJson(Map<String, dynamic> json) => _$MeetingsUpdateRequestFromJson(json);
