@@ -15,9 +15,6 @@ class MeetingsUpdateRequest with _$MeetingsUpdateRequest {
     @JsonKey(name: 'team_uuid') String? teamUuid,
 
     /// .
-    @JsonKey(name: 'active_from') String? activeFrom,
-
-    /// .
     @JsonKey(name: 'start_at') String? startAt,
 
     /// .

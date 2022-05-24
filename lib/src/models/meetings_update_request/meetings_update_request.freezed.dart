@@ -24,7 +24,6 @@ class _$MeetingsUpdateRequestTearOff {
   _MeetingsUpdateRequest call(
       {@JsonKey(name: 'meeting_id') required String meetingId,
       @JsonKey(name: 'team_uuid') String? teamUuid,
-      @JsonKey(name: 'active_from') String? activeFrom,
       @JsonKey(name: 'start_at') String? startAt,
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'freq') Freq? freq,
@@ -35,7 +34,6 @@ class _$MeetingsUpdateRequestTearOff {
     return _MeetingsUpdateRequest(
       meetingId: meetingId,
       teamUuid: teamUuid,
-      activeFrom: activeFrom,
       startAt: startAt,
       duration: duration,
       freq: freq,
@@ -63,10 +61,6 @@ mixin _$MeetingsUpdateRequest {
   /// .
   @JsonKey(name: 'team_uuid')
   String? get teamUuid => throw _privateConstructorUsedError;
-
-  /// .
-  @JsonKey(name: 'active_from')
-  String? get activeFrom => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'start_at')
@@ -108,7 +102,6 @@ abstract class $MeetingsUpdateRequestCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'meeting_id') String meetingId,
       @JsonKey(name: 'team_uuid') String? teamUuid,
-      @JsonKey(name: 'active_from') String? activeFrom,
       @JsonKey(name: 'start_at') String? startAt,
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'freq') Freq? freq,
@@ -132,7 +125,6 @@ class _$MeetingsUpdateRequestCopyWithImpl<$Res> implements $MeetingsUpdateReques
   $Res call({
     Object? meetingId = freezed,
     Object? teamUuid = freezed,
-    Object? activeFrom = freezed,
     Object? startAt = freezed,
     Object? duration = freezed,
     Object? freq = freezed,
@@ -149,10 +141,6 @@ class _$MeetingsUpdateRequestCopyWithImpl<$Res> implements $MeetingsUpdateReques
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
-              as String?,
-      activeFrom: activeFrom == freezed
-          ? _value.activeFrom
-          : activeFrom // ignore: cast_nullable_to_non_nullable
               as String?,
       startAt: startAt == freezed
           ? _value.startAt
@@ -205,7 +193,6 @@ abstract class _$MeetingsUpdateRequestCopyWith<$Res> implements $MeetingsUpdateR
   $Res call(
       {@JsonKey(name: 'meeting_id') String meetingId,
       @JsonKey(name: 'team_uuid') String? teamUuid,
-      @JsonKey(name: 'active_from') String? activeFrom,
       @JsonKey(name: 'start_at') String? startAt,
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'freq') Freq? freq,
@@ -231,7 +218,6 @@ class __$MeetingsUpdateRequestCopyWithImpl<$Res> extends _$MeetingsUpdateRequest
   $Res call({
     Object? meetingId = freezed,
     Object? teamUuid = freezed,
-    Object? activeFrom = freezed,
     Object? startAt = freezed,
     Object? duration = freezed,
     Object? freq = freezed,
@@ -248,10 +234,6 @@ class __$MeetingsUpdateRequestCopyWithImpl<$Res> extends _$MeetingsUpdateRequest
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
-              as String?,
-      activeFrom: activeFrom == freezed
-          ? _value.activeFrom
-          : activeFrom // ignore: cast_nullable_to_non_nullable
               as String?,
       startAt: startAt == freezed
           ? _value.startAt
@@ -291,7 +273,6 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
   const _$_MeetingsUpdateRequest(
       {@JsonKey(name: 'meeting_id') required this.meetingId,
       @JsonKey(name: 'team_uuid') this.teamUuid,
-      @JsonKey(name: 'active_from') this.activeFrom,
       @JsonKey(name: 'start_at') this.startAt,
       @JsonKey(name: 'duration') this.duration,
       @JsonKey(name: 'freq') this.freq,
@@ -312,11 +293,6 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
   /// .
   @JsonKey(name: 'team_uuid')
   final String? teamUuid;
-  @override
-
-  /// .
-  @JsonKey(name: 'active_from')
-  final String? activeFrom;
   @override
 
   /// .
@@ -355,7 +331,7 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
 
   @override
   String toString() {
-    return 'MeetingsUpdateRequest(meetingId: $meetingId, teamUuid: $teamUuid, activeFrom: $activeFrom, startAt: $startAt, duration: $duration, freq: $freq, isPublic: $isPublic, isOutside: $isOutside, title: $title, description: $description)';
+    return 'MeetingsUpdateRequest(meetingId: $meetingId, teamUuid: $teamUuid, startAt: $startAt, duration: $duration, freq: $freq, isPublic: $isPublic, isOutside: $isOutside, title: $title, description: $description)';
   }
 
   @override
@@ -365,8 +341,6 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
             (identical(other.meetingId, meetingId) ||
                 const DeepCollectionEquality().equals(other.meetingId, meetingId)) &&
             (identical(other.teamUuid, teamUuid) || const DeepCollectionEquality().equals(other.teamUuid, teamUuid)) &&
-            (identical(other.activeFrom, activeFrom) ||
-                const DeepCollectionEquality().equals(other.activeFrom, activeFrom)) &&
             (identical(other.startAt, startAt) || const DeepCollectionEquality().equals(other.startAt, startAt)) &&
             (identical(other.duration, duration) || const DeepCollectionEquality().equals(other.duration, duration)) &&
             (identical(other.freq, freq) || const DeepCollectionEquality().equals(other.freq, freq)) &&
@@ -383,7 +357,6 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(meetingId) ^
       const DeepCollectionEquality().hash(teamUuid) ^
-      const DeepCollectionEquality().hash(activeFrom) ^
       const DeepCollectionEquality().hash(startAt) ^
       const DeepCollectionEquality().hash(duration) ^
       const DeepCollectionEquality().hash(freq) ^
@@ -407,7 +380,6 @@ abstract class _MeetingsUpdateRequest implements MeetingsUpdateRequest {
   const factory _MeetingsUpdateRequest(
       {@JsonKey(name: 'meeting_id') required String meetingId,
       @JsonKey(name: 'team_uuid') String? teamUuid,
-      @JsonKey(name: 'active_from') String? activeFrom,
       @JsonKey(name: 'start_at') String? startAt,
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'freq') Freq? freq,
@@ -428,11 +400,6 @@ abstract class _MeetingsUpdateRequest implements MeetingsUpdateRequest {
   /// .
   @JsonKey(name: 'team_uuid')
   String? get teamUuid => throw _privateConstructorUsedError;
-  @override
-
-  /// .
-  @JsonKey(name: 'active_from')
-  String? get activeFrom => throw _privateConstructorUsedError;
   @override
 
   /// .
