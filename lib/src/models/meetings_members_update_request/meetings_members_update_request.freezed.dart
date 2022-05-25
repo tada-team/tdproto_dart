@@ -22,7 +22,7 @@ class _$MeetingsMembersUpdateRequestTearOff {
   const _$MeetingsMembersUpdateRequestTearOff();
 
   _MeetingsMembersUpdateRequest call(
-      {@JsonKey(name: 'status') String? status, @JsonKey(name: 'team_uuid') String? teamUuid}) {
+      {@JsonKey(name: 'status') String? status, @JsonKey(name: 'team_uuid') required String teamUuid}) {
     return _MeetingsMembersUpdateRequest(
       status: status,
       teamUuid: teamUuid,
@@ -45,7 +45,7 @@ mixin _$MeetingsMembersUpdateRequest {
 
   /// .
   @JsonKey(name: 'team_uuid')
-  String? get teamUuid => throw _privateConstructorUsedError;
+  String get teamUuid => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -58,7 +58,7 @@ abstract class $MeetingsMembersUpdateRequestCopyWith<$Res> {
   factory $MeetingsMembersUpdateRequestCopyWith(
           MeetingsMembersUpdateRequest value, $Res Function(MeetingsMembersUpdateRequest) then) =
       _$MeetingsMembersUpdateRequestCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'status') String? status, @JsonKey(name: 'team_uuid') String? teamUuid});
+  $Res call({@JsonKey(name: 'status') String? status, @JsonKey(name: 'team_uuid') String teamUuid});
 }
 
 /// @nodoc
@@ -82,7 +82,7 @@ class _$MeetingsMembersUpdateRequestCopyWithImpl<$Res> implements $MeetingsMembe
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
     ));
   }
 }
@@ -93,7 +93,7 @@ abstract class _$MeetingsMembersUpdateRequestCopyWith<$Res> implements $Meetings
           _MeetingsMembersUpdateRequest value, $Res Function(_MeetingsMembersUpdateRequest) then) =
       __$MeetingsMembersUpdateRequestCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'status') String? status, @JsonKey(name: 'team_uuid') String? teamUuid});
+  $Res call({@JsonKey(name: 'status') String? status, @JsonKey(name: 'team_uuid') String teamUuid});
 }
 
 /// @nodoc
@@ -119,7 +119,7 @@ class __$MeetingsMembersUpdateRequestCopyWithImpl<$Res> extends _$MeetingsMember
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
     ));
   }
 }
@@ -128,7 +128,7 @@ class __$MeetingsMembersUpdateRequestCopyWithImpl<$Res> extends _$MeetingsMember
 @JsonSerializable()
 class _$_MeetingsMembersUpdateRequest implements _MeetingsMembersUpdateRequest {
   const _$_MeetingsMembersUpdateRequest(
-      {@JsonKey(name: 'status') this.status, @JsonKey(name: 'team_uuid') this.teamUuid});
+      {@JsonKey(name: 'status') this.status, @JsonKey(name: 'team_uuid') required this.teamUuid});
 
   factory _$_MeetingsMembersUpdateRequest.fromJson(Map<String, dynamic> json) =>
       _$$_MeetingsMembersUpdateRequestFromJson(json);
@@ -142,7 +142,7 @@ class _$_MeetingsMembersUpdateRequest implements _MeetingsMembersUpdateRequest {
 
   /// .
   @JsonKey(name: 'team_uuid')
-  final String? teamUuid;
+  final String teamUuid;
 
   @override
   String toString() {
@@ -177,7 +177,7 @@ class _$_MeetingsMembersUpdateRequest implements _MeetingsMembersUpdateRequest {
 abstract class _MeetingsMembersUpdateRequest implements MeetingsMembersUpdateRequest {
   const factory _MeetingsMembersUpdateRequest(
       {@JsonKey(name: 'status') String? status,
-      @JsonKey(name: 'team_uuid') String? teamUuid}) = _$_MeetingsMembersUpdateRequest;
+      @JsonKey(name: 'team_uuid') required String teamUuid}) = _$_MeetingsMembersUpdateRequest;
 
   factory _MeetingsMembersUpdateRequest.fromJson(Map<String, dynamic> json) = _$_MeetingsMembersUpdateRequest.fromJson;
 
@@ -190,7 +190,7 @@ abstract class _MeetingsMembersUpdateRequest implements MeetingsMembersUpdateReq
 
   /// .
   @JsonKey(name: 'team_uuid')
-  String? get teamUuid => throw _privateConstructorUsedError;
+  String get teamUuid => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MeetingsMembersUpdateRequestCopyWith<_MeetingsMembersUpdateRequest> get copyWith =>

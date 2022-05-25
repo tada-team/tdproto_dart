@@ -23,7 +23,7 @@ class _$MeetingsUpdateRequestTearOff {
 
   _MeetingsUpdateRequest call(
       {@JsonKey(name: 'meeting_id') required String meetingId,
-      @JsonKey(name: 'team_uuid') String? teamUuid,
+      @JsonKey(name: 'team_uuid') required String teamUuid,
       @JsonKey(name: 'start_at') String? startAt,
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'freq') Freq? freq,
@@ -60,7 +60,7 @@ mixin _$MeetingsUpdateRequest {
 
   /// .
   @JsonKey(name: 'team_uuid')
-  String? get teamUuid => throw _privateConstructorUsedError;
+  String get teamUuid => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'start_at')
@@ -101,7 +101,7 @@ abstract class $MeetingsUpdateRequestCopyWith<$Res> {
       _$MeetingsUpdateRequestCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'meeting_id') String meetingId,
-      @JsonKey(name: 'team_uuid') String? teamUuid,
+      @JsonKey(name: 'team_uuid') String teamUuid,
       @JsonKey(name: 'start_at') String? startAt,
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'freq') Freq? freq,
@@ -141,7 +141,7 @@ class _$MeetingsUpdateRequestCopyWithImpl<$Res> implements $MeetingsUpdateReques
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       startAt: startAt == freezed
           ? _value.startAt
           : startAt // ignore: cast_nullable_to_non_nullable
@@ -192,7 +192,7 @@ abstract class _$MeetingsUpdateRequestCopyWith<$Res> implements $MeetingsUpdateR
   @override
   $Res call(
       {@JsonKey(name: 'meeting_id') String meetingId,
-      @JsonKey(name: 'team_uuid') String? teamUuid,
+      @JsonKey(name: 'team_uuid') String teamUuid,
       @JsonKey(name: 'start_at') String? startAt,
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'freq') Freq? freq,
@@ -234,7 +234,7 @@ class __$MeetingsUpdateRequestCopyWithImpl<$Res> extends _$MeetingsUpdateRequest
       teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       startAt: startAt == freezed
           ? _value.startAt
           : startAt // ignore: cast_nullable_to_non_nullable
@@ -272,7 +272,7 @@ class __$MeetingsUpdateRequestCopyWithImpl<$Res> extends _$MeetingsUpdateRequest
 class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
   const _$_MeetingsUpdateRequest(
       {@JsonKey(name: 'meeting_id') required this.meetingId,
-      @JsonKey(name: 'team_uuid') this.teamUuid,
+      @JsonKey(name: 'team_uuid') required this.teamUuid,
       @JsonKey(name: 'start_at') this.startAt,
       @JsonKey(name: 'duration') this.duration,
       @JsonKey(name: 'freq') this.freq,
@@ -292,7 +292,7 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
 
   /// .
   @JsonKey(name: 'team_uuid')
-  final String? teamUuid;
+  final String teamUuid;
   @override
 
   /// .
@@ -379,7 +379,7 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
 abstract class _MeetingsUpdateRequest implements MeetingsUpdateRequest {
   const factory _MeetingsUpdateRequest(
       {@JsonKey(name: 'meeting_id') required String meetingId,
-      @JsonKey(name: 'team_uuid') String? teamUuid,
+      @JsonKey(name: 'team_uuid') required String teamUuid,
       @JsonKey(name: 'start_at') String? startAt,
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'freq') Freq? freq,
@@ -399,7 +399,7 @@ abstract class _MeetingsUpdateRequest implements MeetingsUpdateRequest {
 
   /// .
   @JsonKey(name: 'team_uuid')
-  String? get teamUuid => throw _privateConstructorUsedError;
+  String get teamUuid => throw _privateConstructorUsedError;
   @override
 
   /// .
