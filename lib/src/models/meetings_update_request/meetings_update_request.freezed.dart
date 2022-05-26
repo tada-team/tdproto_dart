@@ -30,7 +30,9 @@ class _$MeetingsUpdateRequestTearOff {
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'title') String? title,
-      @JsonKey(name: 'description') String? description}) {
+      @JsonKey(name: 'description') String? description,
+      @JsonKey(name: 'add_members') List<MeetingsMemberCreateParams>? addMembers,
+      @JsonKey(name: 'remove_members') List<String>? removeMembers}) {
     return _MeetingsUpdateRequest(
       meetingId: meetingId,
       teamUuid: teamUuid,
@@ -41,6 +43,8 @@ class _$MeetingsUpdateRequestTearOff {
       isOutside: isOutside,
       title: title,
       description: description,
+      addMembers: addMembers,
+      removeMembers: removeMembers,
     );
   }
 
@@ -90,6 +94,14 @@ mixin _$MeetingsUpdateRequest {
   @JsonKey(name: 'description')
   String? get description => throw _privateConstructorUsedError;
 
+  /// .
+  @JsonKey(name: 'add_members')
+  List<MeetingsMemberCreateParams>? get addMembers => throw _privateConstructorUsedError;
+
+  /// .
+  @JsonKey(name: 'remove_members')
+  List<String>? get removeMembers => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $MeetingsUpdateRequestCopyWith<MeetingsUpdateRequest> get copyWith => throw _privateConstructorUsedError;
@@ -108,7 +120,9 @@ abstract class $MeetingsUpdateRequestCopyWith<$Res> {
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'title') String? title,
-      @JsonKey(name: 'description') String? description});
+      @JsonKey(name: 'description') String? description,
+      @JsonKey(name: 'add_members') List<MeetingsMemberCreateParams>? addMembers,
+      @JsonKey(name: 'remove_members') List<String>? removeMembers});
 
   $FreqCopyWith<$Res>? get freq;
 }
@@ -132,6 +146,8 @@ class _$MeetingsUpdateRequestCopyWithImpl<$Res> implements $MeetingsUpdateReques
     Object? isOutside = freezed,
     Object? title = freezed,
     Object? description = freezed,
+    Object? addMembers = freezed,
+    Object? removeMembers = freezed,
   }) {
     return _then(_value.copyWith(
       meetingId: meetingId == freezed
@@ -170,6 +186,14 @@ class _$MeetingsUpdateRequestCopyWithImpl<$Res> implements $MeetingsUpdateReques
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
+      addMembers: addMembers == freezed
+          ? _value.addMembers
+          : addMembers // ignore: cast_nullable_to_non_nullable
+              as List<MeetingsMemberCreateParams>?,
+      removeMembers: removeMembers == freezed
+          ? _value.removeMembers
+          : removeMembers // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
     ));
   }
 
@@ -199,7 +223,9 @@ abstract class _$MeetingsUpdateRequestCopyWith<$Res> implements $MeetingsUpdateR
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'title') String? title,
-      @JsonKey(name: 'description') String? description});
+      @JsonKey(name: 'description') String? description,
+      @JsonKey(name: 'add_members') List<MeetingsMemberCreateParams>? addMembers,
+      @JsonKey(name: 'remove_members') List<String>? removeMembers});
 
   @override
   $FreqCopyWith<$Res>? get freq;
@@ -225,6 +251,8 @@ class __$MeetingsUpdateRequestCopyWithImpl<$Res> extends _$MeetingsUpdateRequest
     Object? isOutside = freezed,
     Object? title = freezed,
     Object? description = freezed,
+    Object? addMembers = freezed,
+    Object? removeMembers = freezed,
   }) {
     return _then(_MeetingsUpdateRequest(
       meetingId: meetingId == freezed
@@ -263,6 +291,14 @@ class __$MeetingsUpdateRequestCopyWithImpl<$Res> extends _$MeetingsUpdateRequest
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
+      addMembers: addMembers == freezed
+          ? _value.addMembers
+          : addMembers // ignore: cast_nullable_to_non_nullable
+              as List<MeetingsMemberCreateParams>?,
+      removeMembers: removeMembers == freezed
+          ? _value.removeMembers
+          : removeMembers // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
     ));
   }
 }
@@ -279,7 +315,9 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
       @JsonKey(name: 'is_public') this.isPublic,
       @JsonKey(name: 'is_outside') this.isOutside,
       @JsonKey(name: 'title') this.title,
-      @JsonKey(name: 'description') this.description});
+      @JsonKey(name: 'description') this.description,
+      @JsonKey(name: 'add_members') this.addMembers,
+      @JsonKey(name: 'remove_members') this.removeMembers});
 
   factory _$_MeetingsUpdateRequest.fromJson(Map<String, dynamic> json) => _$$_MeetingsUpdateRequestFromJson(json);
 
@@ -328,10 +366,20 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
   /// .
   @JsonKey(name: 'description')
   final String? description;
+  @override
+
+  /// .
+  @JsonKey(name: 'add_members')
+  final List<MeetingsMemberCreateParams>? addMembers;
+  @override
+
+  /// .
+  @JsonKey(name: 'remove_members')
+  final List<String>? removeMembers;
 
   @override
   String toString() {
-    return 'MeetingsUpdateRequest(meetingId: $meetingId, teamUuid: $teamUuid, startAt: $startAt, duration: $duration, freq: $freq, isPublic: $isPublic, isOutside: $isOutside, title: $title, description: $description)';
+    return 'MeetingsUpdateRequest(meetingId: $meetingId, teamUuid: $teamUuid, startAt: $startAt, duration: $duration, freq: $freq, isPublic: $isPublic, isOutside: $isOutside, title: $title, description: $description, addMembers: $addMembers, removeMembers: $removeMembers)';
   }
 
   @override
@@ -349,7 +397,11 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
                 const DeepCollectionEquality().equals(other.isOutside, isOutside)) &&
             (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
             (identical(other.description, description) ||
-                const DeepCollectionEquality().equals(other.description, description)));
+                const DeepCollectionEquality().equals(other.description, description)) &&
+            (identical(other.addMembers, addMembers) ||
+                const DeepCollectionEquality().equals(other.addMembers, addMembers)) &&
+            (identical(other.removeMembers, removeMembers) ||
+                const DeepCollectionEquality().equals(other.removeMembers, removeMembers)));
   }
 
   @override
@@ -363,7 +415,9 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
       const DeepCollectionEquality().hash(isPublic) ^
       const DeepCollectionEquality().hash(isOutside) ^
       const DeepCollectionEquality().hash(title) ^
-      const DeepCollectionEquality().hash(description);
+      const DeepCollectionEquality().hash(description) ^
+      const DeepCollectionEquality().hash(addMembers) ^
+      const DeepCollectionEquality().hash(removeMembers);
 
   @JsonKey(ignore: true)
   @override
@@ -386,7 +440,9 @@ abstract class _MeetingsUpdateRequest implements MeetingsUpdateRequest {
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'title') String? title,
-      @JsonKey(name: 'description') String? description}) = _$_MeetingsUpdateRequest;
+      @JsonKey(name: 'description') String? description,
+      @JsonKey(name: 'add_members') List<MeetingsMemberCreateParams>? addMembers,
+      @JsonKey(name: 'remove_members') List<String>? removeMembers}) = _$_MeetingsUpdateRequest;
 
   factory _MeetingsUpdateRequest.fromJson(Map<String, dynamic> json) = _$_MeetingsUpdateRequest.fromJson;
 
@@ -435,6 +491,16 @@ abstract class _MeetingsUpdateRequest implements MeetingsUpdateRequest {
   /// .
   @JsonKey(name: 'description')
   String? get description => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'add_members')
+  List<MeetingsMemberCreateParams>? get addMembers => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'remove_members')
+  List<String>? get removeMembers => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MeetingsUpdateRequestCopyWith<_MeetingsUpdateRequest> get copyWith => throw _privateConstructorUsedError;

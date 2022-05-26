@@ -34,6 +34,12 @@ class MeetingsUpdateRequest with _$MeetingsUpdateRequest {
 
     /// .
     @JsonKey(name: 'description') String? description,
+
+    /// .
+    @JsonKey(name: 'add_members') List<MeetingsMemberCreateParams>? addMembers,
+
+    /// .
+    @JsonKey(name: 'remove_members') List<String>? removeMembers,
   }) = _MeetingsUpdateRequest;
 
   factory MeetingsUpdateRequest.fromJson(Map<String, dynamic> json) => _$MeetingsUpdateRequestFromJson(json);

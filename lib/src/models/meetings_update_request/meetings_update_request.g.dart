@@ -16,6 +16,10 @@ _$_MeetingsUpdateRequest _$$_MeetingsUpdateRequestFromJson(Map<String, dynamic> 
       isOutside: json['is_outside'] as bool?,
       title: json['title'] as String?,
       description: json['description'] as String?,
+      addMembers: (json['add_members'] as List<dynamic>?)
+          ?.map((e) => MeetingsMemberCreateParams.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      removeMembers: (json['remove_members'] as List<dynamic>?)?.map((e) => e as String).toList(),
     );
 
 Map<String, dynamic> _$$_MeetingsUpdateRequestToJson(_$_MeetingsUpdateRequest instance) => <String, dynamic>{
@@ -28,4 +32,6 @@ Map<String, dynamic> _$$_MeetingsUpdateRequestToJson(_$_MeetingsUpdateRequest in
       'is_outside': instance.isOutside,
       'title': instance.title,
       'description': instance.description,
+      'add_members': instance.addMembers?.map((e) => e.toJson()).toList(),
+      'remove_members': instance.removeMembers,
     };
