@@ -11,8 +11,11 @@ class ServerMeetingUpdatedParams with _$ServerMeetingUpdatedParams {
     /// Meeting info.
     @JsonKey(name: 'meetings') required List<Meeting> meetings,
 
-    /// Meetings count.
-    @JsonKey(name: 'meetings_count') required int meetingsCount,
+    /// Team Meetings count.
+    @JsonKey(name: 'team_meetings_count') required int teamMeetingsCount,
+
+    /// User Meetings count.
+    @JsonKey(name: 'user_meetings_count') required int userMeetingsCount,
   }) = _ServerMeetingUpdatedParams;
 
   factory ServerMeetingUpdatedParams.fromJson(Map<String, dynamic> json) => _$ServerMeetingUpdatedParamsFromJson(json);
