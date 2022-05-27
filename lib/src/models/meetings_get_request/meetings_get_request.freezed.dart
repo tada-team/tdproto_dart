@@ -33,7 +33,7 @@ class _$MeetingsGetRequestTearOff {
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'is_required') bool? isRequired,
-      @JsonKey(name: 'is_only_mу_meetings') bool? isOnlyMyMeetings}) {
+      @JsonKey(name: 'members_jids') List<String>? membersJids}) {
     return _MeetingsGetRequest(
       teamUuid: teamUuid,
       dateFrom: dateFrom,
@@ -46,7 +46,7 @@ class _$MeetingsGetRequestTearOff {
       isPublic: isPublic,
       isOutside: isOutside,
       isRequired: isRequired,
-      isOnlyMyMeetings: isOnlyMyMeetings,
+      membersJids: membersJids,
     );
   }
 
@@ -105,8 +105,8 @@ mixin _$MeetingsGetRequest {
   bool? get isRequired => throw _privateConstructorUsedError;
 
   /// .
-  @JsonKey(name: 'is_only_mу_meetings')
-  bool? get isOnlyMyMeetings => throw _privateConstructorUsedError;
+  @JsonKey(name: 'members_jids')
+  List<String>? get membersJids => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -129,7 +129,7 @@ abstract class $MeetingsGetRequestCopyWith<$Res> {
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'is_required') bool? isRequired,
-      @JsonKey(name: 'is_only_mу_meetings') bool? isOnlyMyMeetings});
+      @JsonKey(name: 'members_jids') List<String>? membersJids});
 }
 
 /// @nodoc
@@ -153,7 +153,7 @@ class _$MeetingsGetRequestCopyWithImpl<$Res> implements $MeetingsGetRequestCopyW
     Object? isPublic = freezed,
     Object? isOutside = freezed,
     Object? isRequired = freezed,
-    Object? isOnlyMyMeetings = freezed,
+    Object? membersJids = freezed,
   }) {
     return _then(_value.copyWith(
       teamUuid: teamUuid == freezed
@@ -200,10 +200,10 @@ class _$MeetingsGetRequestCopyWithImpl<$Res> implements $MeetingsGetRequestCopyW
           ? _value.isRequired
           : isRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isOnlyMyMeetings: isOnlyMyMeetings == freezed
-          ? _value.isOnlyMyMeetings
-          : isOnlyMyMeetings // ignore: cast_nullable_to_non_nullable
-              as bool?,
+      membersJids: membersJids == freezed
+          ? _value.membersJids
+          : membersJids // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
     ));
   }
 }
@@ -225,7 +225,7 @@ abstract class _$MeetingsGetRequestCopyWith<$Res> implements $MeetingsGetRequest
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'is_required') bool? isRequired,
-      @JsonKey(name: 'is_only_mу_meetings') bool? isOnlyMyMeetings});
+      @JsonKey(name: 'members_jids') List<String>? membersJids});
 }
 
 /// @nodoc
@@ -250,7 +250,7 @@ class __$MeetingsGetRequestCopyWithImpl<$Res> extends _$MeetingsGetRequestCopyWi
     Object? isPublic = freezed,
     Object? isOutside = freezed,
     Object? isRequired = freezed,
-    Object? isOnlyMyMeetings = freezed,
+    Object? membersJids = freezed,
   }) {
     return _then(_MeetingsGetRequest(
       teamUuid: teamUuid == freezed
@@ -297,10 +297,10 @@ class __$MeetingsGetRequestCopyWithImpl<$Res> extends _$MeetingsGetRequestCopyWi
           ? _value.isRequired
           : isRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isOnlyMyMeetings: isOnlyMyMeetings == freezed
-          ? _value.isOnlyMyMeetings
-          : isOnlyMyMeetings // ignore: cast_nullable_to_non_nullable
-              as bool?,
+      membersJids: membersJids == freezed
+          ? _value.membersJids
+          : membersJids // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
     ));
   }
 }
@@ -320,7 +320,7 @@ class _$_MeetingsGetRequest implements _MeetingsGetRequest {
       @JsonKey(name: 'is_public') this.isPublic,
       @JsonKey(name: 'is_outside') this.isOutside,
       @JsonKey(name: 'is_required') this.isRequired,
-      @JsonKey(name: 'is_only_mу_meetings') this.isOnlyMyMeetings});
+      @JsonKey(name: 'members_jids') this.membersJids});
 
   factory _$_MeetingsGetRequest.fromJson(Map<String, dynamic> json) => _$$_MeetingsGetRequestFromJson(json);
 
@@ -382,12 +382,12 @@ class _$_MeetingsGetRequest implements _MeetingsGetRequest {
   @override
 
   /// .
-  @JsonKey(name: 'is_only_mу_meetings')
-  final bool? isOnlyMyMeetings;
+  @JsonKey(name: 'members_jids')
+  final List<String>? membersJids;
 
   @override
   String toString() {
-    return 'MeetingsGetRequest(teamUuid: $teamUuid, dateFrom: $dateFrom, dateTo: $dateTo, members: $members, limit: $limit, offset: $offset, isArchive: $isArchive, isFreq: $isFreq, isPublic: $isPublic, isOutside: $isOutside, isRequired: $isRequired, isOnlyMyMeetings: $isOnlyMyMeetings)';
+    return 'MeetingsGetRequest(teamUuid: $teamUuid, dateFrom: $dateFrom, dateTo: $dateTo, members: $members, limit: $limit, offset: $offset, isArchive: $isArchive, isFreq: $isFreq, isPublic: $isPublic, isOutside: $isOutside, isRequired: $isRequired, membersJids: $membersJids)';
   }
 
   @override
@@ -408,8 +408,8 @@ class _$_MeetingsGetRequest implements _MeetingsGetRequest {
                 const DeepCollectionEquality().equals(other.isOutside, isOutside)) &&
             (identical(other.isRequired, isRequired) ||
                 const DeepCollectionEquality().equals(other.isRequired, isRequired)) &&
-            (identical(other.isOnlyMyMeetings, isOnlyMyMeetings) ||
-                const DeepCollectionEquality().equals(other.isOnlyMyMeetings, isOnlyMyMeetings)));
+            (identical(other.membersJids, membersJids) ||
+                const DeepCollectionEquality().equals(other.membersJids, membersJids)));
   }
 
   @override
@@ -426,7 +426,7 @@ class _$_MeetingsGetRequest implements _MeetingsGetRequest {
       const DeepCollectionEquality().hash(isPublic) ^
       const DeepCollectionEquality().hash(isOutside) ^
       const DeepCollectionEquality().hash(isRequired) ^
-      const DeepCollectionEquality().hash(isOnlyMyMeetings);
+      const DeepCollectionEquality().hash(membersJids);
 
   @JsonKey(ignore: true)
   @override
@@ -452,7 +452,7 @@ abstract class _MeetingsGetRequest implements MeetingsGetRequest {
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'is_required') bool? isRequired,
-      @JsonKey(name: 'is_only_mу_meetings') bool? isOnlyMyMeetings}) = _$_MeetingsGetRequest;
+      @JsonKey(name: 'members_jids') List<String>? membersJids}) = _$_MeetingsGetRequest;
 
   factory _MeetingsGetRequest.fromJson(Map<String, dynamic> json) = _$_MeetingsGetRequest.fromJson;
 
@@ -514,8 +514,8 @@ abstract class _MeetingsGetRequest implements MeetingsGetRequest {
   @override
 
   /// .
-  @JsonKey(name: 'is_only_mу_meetings')
-  bool? get isOnlyMyMeetings => throw _privateConstructorUsedError;
+  @JsonKey(name: 'members_jids')
+  List<String>? get membersJids => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MeetingsGetRequestCopyWith<_MeetingsGetRequest> get copyWith => throw _privateConstructorUsedError;

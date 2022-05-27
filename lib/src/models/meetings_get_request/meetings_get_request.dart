@@ -42,7 +42,7 @@ class MeetingsGetRequest with _$MeetingsGetRequest {
     @JsonKey(name: 'is_required') bool? isRequired,
 
     /// .
-    @JsonKey(name: 'is_only_mу_meetings') bool? isOnlyMyMeetings,
+    @JsonKey(name: 'members_jids') List<String>? membersJids,
   }) = _MeetingsGetRequest;
 
   factory MeetingsGetRequest.fromJson(Map<String, dynamic> json) => _$MeetingsGetRequestFromJson(json);

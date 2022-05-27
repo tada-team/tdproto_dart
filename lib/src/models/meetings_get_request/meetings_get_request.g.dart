@@ -18,7 +18,7 @@ _$_MeetingsGetRequest _$$_MeetingsGetRequestFromJson(Map<String, dynamic> json) 
       isPublic: json['is_public'] as bool?,
       isOutside: json['is_outside'] as bool?,
       isRequired: json['is_required'] as bool?,
-      isOnlyMyMeetings: json['is_only_mу_meetings'] as bool?,
+      membersJids: (json['members_jids'] as List<dynamic>?)?.map((e) => e as String).toList(),
     );
 
 Map<String, dynamic> _$$_MeetingsGetRequestToJson(_$_MeetingsGetRequest instance) => <String, dynamic>{
@@ -33,5 +33,5 @@ Map<String, dynamic> _$$_MeetingsGetRequestToJson(_$_MeetingsGetRequest instance
       'is_public': instance.isPublic,
       'is_outside': instance.isOutside,
       'is_required': instance.isRequired,
-      'is_only_mу_meetings': instance.isOnlyMyMeetings,
+      'members_jids': instance.membersJids,
     };
