@@ -18,7 +18,7 @@ _$_MeetingsGetRequest _$$_MeetingsGetRequestFromJson(Map<String, dynamic> json) 
       isPublic: json['is_public'] as bool?,
       isOutside: json['is_outside'] as bool?,
       isRequired: json['is_required'] as bool?,
-      membersJids: (json['members_jids'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      membersJids: json['members_jids'] as String?,
     );
 
 Map<String, dynamic> _$$_MeetingsGetRequestToJson(_$_MeetingsGetRequest instance) => <String, dynamic>{
