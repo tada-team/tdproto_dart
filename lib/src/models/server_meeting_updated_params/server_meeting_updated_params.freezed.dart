@@ -24,11 +24,15 @@ class _$ServerMeetingUpdatedParamsTearOff {
   _ServerMeetingUpdatedParams call(
       {@JsonKey(name: 'meetings') required List<Meeting> meetings,
       @JsonKey(name: 'team_meetings_count') required int teamMeetingsCount,
-      @JsonKey(name: 'user_meetings_count') required int userMeetingsCount}) {
+      @JsonKey(name: 'user_meetings_count') required int userMeetingsCount,
+      @JsonKey(name: 'team_meetings_dates') required List<String> teamMeetingsDates,
+      @JsonKey(name: 'user_meetings_dates') required List<String> userMeetingsDates}) {
     return _ServerMeetingUpdatedParams(
       meetings: meetings,
       teamMeetingsCount: teamMeetingsCount,
       userMeetingsCount: userMeetingsCount,
+      teamMeetingsDates: teamMeetingsDates,
+      userMeetingsDates: userMeetingsDates,
     );
   }
 
@@ -54,6 +58,14 @@ mixin _$ServerMeetingUpdatedParams {
   @JsonKey(name: 'user_meetings_count')
   int get userMeetingsCount => throw _privateConstructorUsedError;
 
+  /// Dates of team meetings.
+  @JsonKey(name: 'team_meetings_dates')
+  List<String> get teamMeetingsDates => throw _privateConstructorUsedError;
+
+  /// Dates of user meetings.
+  @JsonKey(name: 'user_meetings_dates')
+  List<String> get userMeetingsDates => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $ServerMeetingUpdatedParamsCopyWith<ServerMeetingUpdatedParams> get copyWith => throw _privateConstructorUsedError;
@@ -67,7 +79,9 @@ abstract class $ServerMeetingUpdatedParamsCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'meetings') List<Meeting> meetings,
       @JsonKey(name: 'team_meetings_count') int teamMeetingsCount,
-      @JsonKey(name: 'user_meetings_count') int userMeetingsCount});
+      @JsonKey(name: 'user_meetings_count') int userMeetingsCount,
+      @JsonKey(name: 'team_meetings_dates') List<String> teamMeetingsDates,
+      @JsonKey(name: 'user_meetings_dates') List<String> userMeetingsDates});
 }
 
 /// @nodoc
@@ -83,6 +97,8 @@ class _$ServerMeetingUpdatedParamsCopyWithImpl<$Res> implements $ServerMeetingUp
     Object? meetings = freezed,
     Object? teamMeetingsCount = freezed,
     Object? userMeetingsCount = freezed,
+    Object? teamMeetingsDates = freezed,
+    Object? userMeetingsDates = freezed,
   }) {
     return _then(_value.copyWith(
       meetings: meetings == freezed
@@ -97,6 +113,14 @@ class _$ServerMeetingUpdatedParamsCopyWithImpl<$Res> implements $ServerMeetingUp
           ? _value.userMeetingsCount
           : userMeetingsCount // ignore: cast_nullable_to_non_nullable
               as int,
+      teamMeetingsDates: teamMeetingsDates == freezed
+          ? _value.teamMeetingsDates
+          : teamMeetingsDates // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      userMeetingsDates: userMeetingsDates == freezed
+          ? _value.userMeetingsDates
+          : userMeetingsDates // ignore: cast_nullable_to_non_nullable
+              as List<String>,
     ));
   }
 }
@@ -110,7 +134,9 @@ abstract class _$ServerMeetingUpdatedParamsCopyWith<$Res> implements $ServerMeet
   $Res call(
       {@JsonKey(name: 'meetings') List<Meeting> meetings,
       @JsonKey(name: 'team_meetings_count') int teamMeetingsCount,
-      @JsonKey(name: 'user_meetings_count') int userMeetingsCount});
+      @JsonKey(name: 'user_meetings_count') int userMeetingsCount,
+      @JsonKey(name: 'team_meetings_dates') List<String> teamMeetingsDates,
+      @JsonKey(name: 'user_meetings_dates') List<String> userMeetingsDates});
 }
 
 /// @nodoc
@@ -128,6 +154,8 @@ class __$ServerMeetingUpdatedParamsCopyWithImpl<$Res> extends _$ServerMeetingUpd
     Object? meetings = freezed,
     Object? teamMeetingsCount = freezed,
     Object? userMeetingsCount = freezed,
+    Object? teamMeetingsDates = freezed,
+    Object? userMeetingsDates = freezed,
   }) {
     return _then(_ServerMeetingUpdatedParams(
       meetings: meetings == freezed
@@ -142,6 +170,14 @@ class __$ServerMeetingUpdatedParamsCopyWithImpl<$Res> extends _$ServerMeetingUpd
           ? _value.userMeetingsCount
           : userMeetingsCount // ignore: cast_nullable_to_non_nullable
               as int,
+      teamMeetingsDates: teamMeetingsDates == freezed
+          ? _value.teamMeetingsDates
+          : teamMeetingsDates // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      userMeetingsDates: userMeetingsDates == freezed
+          ? _value.userMeetingsDates
+          : userMeetingsDates // ignore: cast_nullable_to_non_nullable
+              as List<String>,
     ));
   }
 }
@@ -152,7 +188,9 @@ class _$_ServerMeetingUpdatedParams implements _ServerMeetingUpdatedParams {
   const _$_ServerMeetingUpdatedParams(
       {@JsonKey(name: 'meetings') required this.meetings,
       @JsonKey(name: 'team_meetings_count') required this.teamMeetingsCount,
-      @JsonKey(name: 'user_meetings_count') required this.userMeetingsCount});
+      @JsonKey(name: 'user_meetings_count') required this.userMeetingsCount,
+      @JsonKey(name: 'team_meetings_dates') required this.teamMeetingsDates,
+      @JsonKey(name: 'user_meetings_dates') required this.userMeetingsDates});
 
   factory _$_ServerMeetingUpdatedParams.fromJson(Map<String, dynamic> json) =>
       _$$_ServerMeetingUpdatedParamsFromJson(json);
@@ -172,10 +210,20 @@ class _$_ServerMeetingUpdatedParams implements _ServerMeetingUpdatedParams {
   /// User Meetings count.
   @JsonKey(name: 'user_meetings_count')
   final int userMeetingsCount;
+  @override
+
+  /// Dates of team meetings.
+  @JsonKey(name: 'team_meetings_dates')
+  final List<String> teamMeetingsDates;
+  @override
+
+  /// Dates of user meetings.
+  @JsonKey(name: 'user_meetings_dates')
+  final List<String> userMeetingsDates;
 
   @override
   String toString() {
-    return 'ServerMeetingUpdatedParams(meetings: $meetings, teamMeetingsCount: $teamMeetingsCount, userMeetingsCount: $userMeetingsCount)';
+    return 'ServerMeetingUpdatedParams(meetings: $meetings, teamMeetingsCount: $teamMeetingsCount, userMeetingsCount: $userMeetingsCount, teamMeetingsDates: $teamMeetingsDates, userMeetingsDates: $userMeetingsDates)';
   }
 
   @override
@@ -186,7 +234,11 @@ class _$_ServerMeetingUpdatedParams implements _ServerMeetingUpdatedParams {
             (identical(other.teamMeetingsCount, teamMeetingsCount) ||
                 const DeepCollectionEquality().equals(other.teamMeetingsCount, teamMeetingsCount)) &&
             (identical(other.userMeetingsCount, userMeetingsCount) ||
-                const DeepCollectionEquality().equals(other.userMeetingsCount, userMeetingsCount)));
+                const DeepCollectionEquality().equals(other.userMeetingsCount, userMeetingsCount)) &&
+            (identical(other.teamMeetingsDates, teamMeetingsDates) ||
+                const DeepCollectionEquality().equals(other.teamMeetingsDates, teamMeetingsDates)) &&
+            (identical(other.userMeetingsDates, userMeetingsDates) ||
+                const DeepCollectionEquality().equals(other.userMeetingsDates, userMeetingsDates)));
   }
 
   @override
@@ -194,7 +246,9 @@ class _$_ServerMeetingUpdatedParams implements _ServerMeetingUpdatedParams {
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(meetings) ^
       const DeepCollectionEquality().hash(teamMeetingsCount) ^
-      const DeepCollectionEquality().hash(userMeetingsCount);
+      const DeepCollectionEquality().hash(userMeetingsCount) ^
+      const DeepCollectionEquality().hash(teamMeetingsDates) ^
+      const DeepCollectionEquality().hash(userMeetingsDates);
 
   @JsonKey(ignore: true)
   @override
@@ -211,7 +265,9 @@ abstract class _ServerMeetingUpdatedParams implements ServerMeetingUpdatedParams
   const factory _ServerMeetingUpdatedParams(
       {@JsonKey(name: 'meetings') required List<Meeting> meetings,
       @JsonKey(name: 'team_meetings_count') required int teamMeetingsCount,
-      @JsonKey(name: 'user_meetings_count') required int userMeetingsCount}) = _$_ServerMeetingUpdatedParams;
+      @JsonKey(name: 'user_meetings_count') required int userMeetingsCount,
+      @JsonKey(name: 'team_meetings_dates') required List<String> teamMeetingsDates,
+      @JsonKey(name: 'user_meetings_dates') required List<String> userMeetingsDates}) = _$_ServerMeetingUpdatedParams;
 
   factory _ServerMeetingUpdatedParams.fromJson(Map<String, dynamic> json) = _$_ServerMeetingUpdatedParams.fromJson;
 
@@ -230,6 +286,16 @@ abstract class _ServerMeetingUpdatedParams implements ServerMeetingUpdatedParams
   /// User Meetings count.
   @JsonKey(name: 'user_meetings_count')
   int get userMeetingsCount => throw _privateConstructorUsedError;
+  @override
+
+  /// Dates of team meetings.
+  @JsonKey(name: 'team_meetings_dates')
+  List<String> get teamMeetingsDates => throw _privateConstructorUsedError;
+  @override
+
+  /// Dates of user meetings.
+  @JsonKey(name: 'user_meetings_dates')
+  List<String> get userMeetingsDates => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ServerMeetingUpdatedParamsCopyWith<_ServerMeetingUpdatedParams> get copyWith => throw _privateConstructorUsedError;
