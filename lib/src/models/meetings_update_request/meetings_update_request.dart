@@ -42,7 +42,7 @@ class MeetingsUpdateRequest with _$MeetingsUpdateRequest {
     @JsonKey(name: 'remove_members') List<String>? removeMembers,
 
     /// .
-    @JsonKey(name: 'notification_enabled') bool? notificationEnabled,
+    @JsonKey(name: 'notifications_enabled') bool? notificationsEnabled,
   }) = _MeetingsUpdateRequest;
 
   factory MeetingsUpdateRequest.fromJson(Map<String, dynamic> json) => _$MeetingsUpdateRequestFromJson(json);

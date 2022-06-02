@@ -20,7 +20,7 @@ _$_MeetingsUpdateRequest _$$_MeetingsUpdateRequestFromJson(Map<String, dynamic> 
           ?.map((e) => MeetingsMemberCreateParams.fromJson(e as Map<String, dynamic>))
           .toList(),
       removeMembers: (json['remove_members'] as List<dynamic>?)?.map((e) => e as String).toList(),
-      notificationEnabled: json['notification_enabled'] as bool?,
+      notificationsEnabled: json['notifications_enabled'] as bool?,
     );
 
 Map<String, dynamic> _$$_MeetingsUpdateRequestToJson(_$_MeetingsUpdateRequest instance) => <String, dynamic>{
@@ -35,5 +35,5 @@ Map<String, dynamic> _$$_MeetingsUpdateRequestToJson(_$_MeetingsUpdateRequest in
       'description': instance.description,
       'add_members': instance.addMembers?.map((e) => e.toJson()).toList(),
       'remove_members': instance.removeMembers,
-      'notification_enabled': instance.notificationEnabled,
+      'notifications_enabled': instance.notificationsEnabled,
     };
