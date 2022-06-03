@@ -33,7 +33,8 @@ class _$MeetingsUpdateRequestTearOff {
       @JsonKey(name: 'description') String? description,
       @JsonKey(name: 'add_members') List<MeetingsMemberCreateParams>? addMembers,
       @JsonKey(name: 'remove_members') List<String>? removeMembers,
-      @JsonKey(name: 'notifications_enabled') bool? notificationsEnabled}) {
+      @JsonKey(name: 'notifications_enabled') bool? notificationsEnabled,
+      @JsonKey(name: 'counters_enabled') bool? countersEnabled}) {
     return _MeetingsUpdateRequest(
       meetingId: meetingId,
       teamUuid: teamUuid,
@@ -47,6 +48,7 @@ class _$MeetingsUpdateRequestTearOff {
       addMembers: addMembers,
       removeMembers: removeMembers,
       notificationsEnabled: notificationsEnabled,
+      countersEnabled: countersEnabled,
     );
   }
 
@@ -108,6 +110,10 @@ mixin _$MeetingsUpdateRequest {
   @JsonKey(name: 'notifications_enabled')
   bool? get notificationsEnabled => throw _privateConstructorUsedError;
 
+  /// .
+  @JsonKey(name: 'counters_enabled')
+  bool? get countersEnabled => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $MeetingsUpdateRequestCopyWith<MeetingsUpdateRequest> get copyWith => throw _privateConstructorUsedError;
@@ -129,7 +135,8 @@ abstract class $MeetingsUpdateRequestCopyWith<$Res> {
       @JsonKey(name: 'description') String? description,
       @JsonKey(name: 'add_members') List<MeetingsMemberCreateParams>? addMembers,
       @JsonKey(name: 'remove_members') List<String>? removeMembers,
-      @JsonKey(name: 'notifications_enabled') bool? notificationsEnabled});
+      @JsonKey(name: 'notifications_enabled') bool? notificationsEnabled,
+      @JsonKey(name: 'counters_enabled') bool? countersEnabled});
 
   $FreqCopyWith<$Res>? get freq;
 }
@@ -156,6 +163,7 @@ class _$MeetingsUpdateRequestCopyWithImpl<$Res> implements $MeetingsUpdateReques
     Object? addMembers = freezed,
     Object? removeMembers = freezed,
     Object? notificationsEnabled = freezed,
+    Object? countersEnabled = freezed,
   }) {
     return _then(_value.copyWith(
       meetingId: meetingId == freezed
@@ -206,6 +214,10 @@ class _$MeetingsUpdateRequestCopyWithImpl<$Res> implements $MeetingsUpdateReques
           ? _value.notificationsEnabled
           : notificationsEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
+      countersEnabled: countersEnabled == freezed
+          ? _value.countersEnabled
+          : countersEnabled // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 
@@ -238,7 +250,8 @@ abstract class _$MeetingsUpdateRequestCopyWith<$Res> implements $MeetingsUpdateR
       @JsonKey(name: 'description') String? description,
       @JsonKey(name: 'add_members') List<MeetingsMemberCreateParams>? addMembers,
       @JsonKey(name: 'remove_members') List<String>? removeMembers,
-      @JsonKey(name: 'notifications_enabled') bool? notificationsEnabled});
+      @JsonKey(name: 'notifications_enabled') bool? notificationsEnabled,
+      @JsonKey(name: 'counters_enabled') bool? countersEnabled});
 
   @override
   $FreqCopyWith<$Res>? get freq;
@@ -267,6 +280,7 @@ class __$MeetingsUpdateRequestCopyWithImpl<$Res> extends _$MeetingsUpdateRequest
     Object? addMembers = freezed,
     Object? removeMembers = freezed,
     Object? notificationsEnabled = freezed,
+    Object? countersEnabled = freezed,
   }) {
     return _then(_MeetingsUpdateRequest(
       meetingId: meetingId == freezed
@@ -317,6 +331,10 @@ class __$MeetingsUpdateRequestCopyWithImpl<$Res> extends _$MeetingsUpdateRequest
           ? _value.notificationsEnabled
           : notificationsEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
+      countersEnabled: countersEnabled == freezed
+          ? _value.countersEnabled
+          : countersEnabled // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -336,7 +354,8 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
       @JsonKey(name: 'description') this.description,
       @JsonKey(name: 'add_members') this.addMembers,
       @JsonKey(name: 'remove_members') this.removeMembers,
-      @JsonKey(name: 'notifications_enabled') this.notificationsEnabled});
+      @JsonKey(name: 'notifications_enabled') this.notificationsEnabled,
+      @JsonKey(name: 'counters_enabled') this.countersEnabled});
 
   factory _$_MeetingsUpdateRequest.fromJson(Map<String, dynamic> json) => _$$_MeetingsUpdateRequestFromJson(json);
 
@@ -400,10 +419,15 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
   /// .
   @JsonKey(name: 'notifications_enabled')
   final bool? notificationsEnabled;
+  @override
+
+  /// .
+  @JsonKey(name: 'counters_enabled')
+  final bool? countersEnabled;
 
   @override
   String toString() {
-    return 'MeetingsUpdateRequest(meetingId: $meetingId, teamUuid: $teamUuid, startAt: $startAt, duration: $duration, freq: $freq, isPublic: $isPublic, isOutside: $isOutside, title: $title, description: $description, addMembers: $addMembers, removeMembers: $removeMembers, notificationsEnabled: $notificationsEnabled)';
+    return 'MeetingsUpdateRequest(meetingId: $meetingId, teamUuid: $teamUuid, startAt: $startAt, duration: $duration, freq: $freq, isPublic: $isPublic, isOutside: $isOutside, title: $title, description: $description, addMembers: $addMembers, removeMembers: $removeMembers, notificationsEnabled: $notificationsEnabled, countersEnabled: $countersEnabled)';
   }
 
   @override
@@ -427,7 +451,9 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
             (identical(other.removeMembers, removeMembers) ||
                 const DeepCollectionEquality().equals(other.removeMembers, removeMembers)) &&
             (identical(other.notificationsEnabled, notificationsEnabled) ||
-                const DeepCollectionEquality().equals(other.notificationsEnabled, notificationsEnabled)));
+                const DeepCollectionEquality().equals(other.notificationsEnabled, notificationsEnabled)) &&
+            (identical(other.countersEnabled, countersEnabled) ||
+                const DeepCollectionEquality().equals(other.countersEnabled, countersEnabled)));
   }
 
   @override
@@ -444,7 +470,8 @@ class _$_MeetingsUpdateRequest implements _MeetingsUpdateRequest {
       const DeepCollectionEquality().hash(description) ^
       const DeepCollectionEquality().hash(addMembers) ^
       const DeepCollectionEquality().hash(removeMembers) ^
-      const DeepCollectionEquality().hash(notificationsEnabled);
+      const DeepCollectionEquality().hash(notificationsEnabled) ^
+      const DeepCollectionEquality().hash(countersEnabled);
 
   @JsonKey(ignore: true)
   @override
@@ -470,7 +497,8 @@ abstract class _MeetingsUpdateRequest implements MeetingsUpdateRequest {
       @JsonKey(name: 'description') String? description,
       @JsonKey(name: 'add_members') List<MeetingsMemberCreateParams>? addMembers,
       @JsonKey(name: 'remove_members') List<String>? removeMembers,
-      @JsonKey(name: 'notifications_enabled') bool? notificationsEnabled}) = _$_MeetingsUpdateRequest;
+      @JsonKey(name: 'notifications_enabled') bool? notificationsEnabled,
+      @JsonKey(name: 'counters_enabled') bool? countersEnabled}) = _$_MeetingsUpdateRequest;
 
   factory _MeetingsUpdateRequest.fromJson(Map<String, dynamic> json) = _$_MeetingsUpdateRequest.fromJson;
 
@@ -534,6 +562,11 @@ abstract class _MeetingsUpdateRequest implements MeetingsUpdateRequest {
   /// .
   @JsonKey(name: 'notifications_enabled')
   bool? get notificationsEnabled => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'counters_enabled')
+  bool? get countersEnabled => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MeetingsUpdateRequestCopyWith<_MeetingsUpdateRequest> get copyWith => throw _privateConstructorUsedError;
