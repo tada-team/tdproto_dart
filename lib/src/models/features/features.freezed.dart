@@ -46,6 +46,8 @@ class _$FeaturesTearOff {
           required String iOSCorpApp,
       @JsonKey(name: 'android_corp_app')
           required String androidCorpApp,
+      @JsonKey(name: 'rumarket_app')
+          required String rumarketApp,
       @JsonKey(name: 'theme')
           required String theme,
       @JsonKey(name: 'min_ios_version')
@@ -243,6 +245,7 @@ class _$FeaturesTearOff {
       androidApp: androidApp,
       iOSCorpApp: iOSCorpApp,
       androidCorpApp: androidCorpApp,
+      rumarketApp: rumarketApp,
       theme: theme,
       minIOSVersion: minIOSVersion,
       minAndroidVersion: minAndroidVersion,
@@ -390,6 +393,10 @@ mixin _$Features {
   /// Link to Google Play for corporate app.
   @JsonKey(name: 'android_corp_app')
   String get androidCorpApp => throw _privateConstructorUsedError;
+
+  /// Link to Rumarket store.
+  @JsonKey(name: 'rumarket_app')
+  String get rumarketApp => throw _privateConstructorUsedError;
 
   /// Default UI theme.
   @JsonKey(name: 'theme')
@@ -782,6 +789,8 @@ abstract class $FeaturesCopyWith<$Res> {
           String iOSCorpApp,
       @JsonKey(name: 'android_corp_app')
           String androidCorpApp,
+      @JsonKey(name: 'rumarket_app')
+          String rumarketApp,
       @JsonKey(name: 'theme')
           String theme,
       @JsonKey(name: 'min_ios_version')
@@ -993,6 +1002,7 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     Object? androidApp = freezed,
     Object? iOSCorpApp = freezed,
     Object? androidCorpApp = freezed,
+    Object? rumarketApp = freezed,
     Object? theme = freezed,
     Object? minIOSVersion = freezed,
     Object? minAndroidVersion = freezed,
@@ -1129,6 +1139,10 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
       androidCorpApp: androidCorpApp == freezed
           ? _value.androidCorpApp
           : androidCorpApp // ignore: cast_nullable_to_non_nullable
+              as String,
+      rumarketApp: rumarketApp == freezed
+          ? _value.rumarketApp
+          : rumarketApp // ignore: cast_nullable_to_non_nullable
               as String,
       theme: theme == freezed
           ? _value.theme
@@ -1529,6 +1543,8 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
           String iOSCorpApp,
       @JsonKey(name: 'android_corp_app')
           String androidCorpApp,
+      @JsonKey(name: 'rumarket_app')
+          String rumarketApp,
       @JsonKey(name: 'theme')
           String theme,
       @JsonKey(name: 'min_ios_version')
@@ -1742,6 +1758,7 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
     Object? androidApp = freezed,
     Object? iOSCorpApp = freezed,
     Object? androidCorpApp = freezed,
+    Object? rumarketApp = freezed,
     Object? theme = freezed,
     Object? minIOSVersion = freezed,
     Object? minAndroidVersion = freezed,
@@ -1878,6 +1895,10 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
       androidCorpApp: androidCorpApp == freezed
           ? _value.androidCorpApp
           : androidCorpApp // ignore: cast_nullable_to_non_nullable
+              as String,
+      rumarketApp: rumarketApp == freezed
+          ? _value.rumarketApp
+          : rumarketApp // ignore: cast_nullable_to_non_nullable
               as String,
       theme: theme == freezed
           ? _value.theme
@@ -2259,6 +2280,8 @@ class _$_Features implements _Features {
           required this.iOSCorpApp,
       @JsonKey(name: 'android_corp_app')
           required this.androidCorpApp,
+      @JsonKey(name: 'rumarket_app')
+          required this.rumarketApp,
       @JsonKey(name: 'theme')
           required this.theme,
       @JsonKey(name: 'min_ios_version')
@@ -2506,6 +2529,11 @@ class _$_Features implements _Features {
   /// Link to Google Play for corporate app.
   @JsonKey(name: 'android_corp_app')
   final String androidCorpApp;
+  @override
+
+  /// Link to Rumarket store.
+  @JsonKey(name: 'rumarket_app')
+  final String rumarketApp;
   @override
 
   /// Default UI theme.
@@ -2954,7 +2982,7 @@ class _$_Features implements _Features {
 
   @override
   String toString() {
-    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, authByKerberos: $authByKerberos, reCaptchaEnabled: $reCaptchaEnabled, reCaptchaWebKeyV3: $reCaptchaWebKeyV3, reCaptchaWebKeyV2: $reCaptchaWebKeyV2, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, iceTransportPolicy: $iceTransportPolicy, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, callsAudioEnabled: $callsAudioEnabled, callsVideoEnabled: $callsVideoEnabled, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, billing: $billing, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority)';
+    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, rumarketApp: $rumarketApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, authByKerberos: $authByKerberos, reCaptchaEnabled: $reCaptchaEnabled, reCaptchaWebKeyV3: $reCaptchaWebKeyV3, reCaptchaWebKeyV2: $reCaptchaWebKeyV2, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, iceTransportPolicy: $iceTransportPolicy, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, callsAudioEnabled: $callsAudioEnabled, callsVideoEnabled: $callsVideoEnabled, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, billing: $billing, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority)';
   }
 
   @override
@@ -2980,6 +3008,8 @@ class _$_Features implements _Features {
                 const DeepCollectionEquality().equals(other.iOSCorpApp, iOSCorpApp)) &&
             (identical(other.androidCorpApp, androidCorpApp) ||
                 const DeepCollectionEquality().equals(other.androidCorpApp, androidCorpApp)) &&
+            (identical(other.rumarketApp, rumarketApp) ||
+                const DeepCollectionEquality().equals(other.rumarketApp, rumarketApp)) &&
             (identical(other.theme, theme) || const DeepCollectionEquality().equals(other.theme, theme)) &&
             (identical(other.minIOSVersion, minIOSVersion) ||
                 const DeepCollectionEquality().equals(other.minIOSVersion, minIOSVersion)) &&
@@ -3054,8 +3084,7 @@ class _$_Features implements _Features {
                 const DeepCollectionEquality().equals(other.oAuthServices, oAuthServices)) &&
             (identical(other.iCEServers, iCEServers) ||
                 const DeepCollectionEquality().equals(other.iCEServers, iCEServers)) &&
-            (identical(other.iceTransportPolicy, iceTransportPolicy) ||
-                const DeepCollectionEquality().equals(other.iceTransportPolicy, iceTransportPolicy)) &&
+            (identical(other.iceTransportPolicy, iceTransportPolicy) || const DeepCollectionEquality().equals(other.iceTransportPolicy, iceTransportPolicy)) &&
             (identical(other.customServer, customServer) || const DeepCollectionEquality().equals(other.customServer, customServer)) &&
             (identical(other.installationType, installationType) || const DeepCollectionEquality().equals(other.installationType, installationType)) &&
             (identical(other.installationTitle, installationTitle) || const DeepCollectionEquality().equals(other.installationTitle, installationTitle)) &&
@@ -3121,6 +3150,7 @@ class _$_Features implements _Features {
       const DeepCollectionEquality().hash(androidApp) ^
       const DeepCollectionEquality().hash(iOSCorpApp) ^
       const DeepCollectionEquality().hash(androidCorpApp) ^
+      const DeepCollectionEquality().hash(rumarketApp) ^
       const DeepCollectionEquality().hash(theme) ^
       const DeepCollectionEquality().hash(minIOSVersion) ^
       const DeepCollectionEquality().hash(minAndroidVersion) ^
@@ -3245,6 +3275,8 @@ abstract class _Features implements Features {
           required String iOSCorpApp,
       @JsonKey(name: 'android_corp_app')
           required String androidCorpApp,
+      @JsonKey(name: 'rumarket_app')
+          required String rumarketApp,
       @JsonKey(name: 'theme')
           required String theme,
       @JsonKey(name: 'min_ios_version')
@@ -3492,6 +3524,11 @@ abstract class _Features implements Features {
   /// Link to Google Play for corporate app.
   @JsonKey(name: 'android_corp_app')
   String get androidCorpApp => throw _privateConstructorUsedError;
+  @override
+
+  /// Link to Rumarket store.
+  @JsonKey(name: 'rumarket_app')
+  String get rumarketApp => throw _privateConstructorUsedError;
   @override
 
   /// Default UI theme.

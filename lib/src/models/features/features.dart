@@ -44,6 +44,9 @@ class Features with _$Features {
     /// Link to Google Play for corporate app.
     @JsonKey(name: 'android_corp_app') required String androidCorpApp,
 
+    /// Link to Rumarket store.
+    @JsonKey(name: 'rumarket_app') required String rumarketApp,
+
     /// Default UI theme.
     @JsonKey(name: 'theme') required String theme,
 
