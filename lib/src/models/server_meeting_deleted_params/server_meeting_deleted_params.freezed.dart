@@ -21,18 +21,9 @@ ServerMeetingDeletedParams _$ServerMeetingDeletedParamsFromJson(Map<String, dyna
 class _$ServerMeetingDeletedParamsTearOff {
   const _$ServerMeetingDeletedParamsTearOff();
 
-  _ServerMeetingDeletedParams call(
-      {@JsonKey(name: 'meeting_id') required String meetingId,
-      @JsonKey(name: 'team_meetings_count') required int teamMeetingsCount,
-      @JsonKey(name: 'user_meetings_count') required int userMeetingsCount,
-      @JsonKey(name: 'team_meetings_dates') required List<String> teamMeetingsDates,
-      @JsonKey(name: 'user_meetings_dates') required List<String> userMeetingsDates}) {
+  _ServerMeetingDeletedParams call({@JsonKey(name: 'meeting_id') required List<String> meetingIds}) {
     return _ServerMeetingDeletedParams(
-      meetingId: meetingId,
-      teamMeetingsCount: teamMeetingsCount,
-      userMeetingsCount: userMeetingsCount,
-      teamMeetingsDates: teamMeetingsDates,
-      userMeetingsDates: userMeetingsDates,
+      meetingIds: meetingIds,
     );
   }
 
@@ -48,23 +39,7 @@ const $ServerMeetingDeletedParams = _$ServerMeetingDeletedParamsTearOff();
 mixin _$ServerMeetingDeletedParams {
   /// Meeting info.
   @JsonKey(name: 'meeting_id')
-  String get meetingId => throw _privateConstructorUsedError;
-
-  /// Team Meetings count.
-  @JsonKey(name: 'team_meetings_count')
-  int get teamMeetingsCount => throw _privateConstructorUsedError;
-
-  /// User Meetings count.
-  @JsonKey(name: 'user_meetings_count')
-  int get userMeetingsCount => throw _privateConstructorUsedError;
-
-  /// Dates of team meetings.
-  @JsonKey(name: 'team_meetings_dates')
-  List<String> get teamMeetingsDates => throw _privateConstructorUsedError;
-
-  /// Dates of user meetings.
-  @JsonKey(name: 'user_meetings_dates')
-  List<String> get userMeetingsDates => throw _privateConstructorUsedError;
+  List<String> get meetingIds => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -76,12 +51,7 @@ abstract class $ServerMeetingDeletedParamsCopyWith<$Res> {
   factory $ServerMeetingDeletedParamsCopyWith(
           ServerMeetingDeletedParams value, $Res Function(ServerMeetingDeletedParams) then) =
       _$ServerMeetingDeletedParamsCopyWithImpl<$Res>;
-  $Res call(
-      {@JsonKey(name: 'meeting_id') String meetingId,
-      @JsonKey(name: 'team_meetings_count') int teamMeetingsCount,
-      @JsonKey(name: 'user_meetings_count') int userMeetingsCount,
-      @JsonKey(name: 'team_meetings_dates') List<String> teamMeetingsDates,
-      @JsonKey(name: 'user_meetings_dates') List<String> userMeetingsDates});
+  $Res call({@JsonKey(name: 'meeting_id') List<String> meetingIds});
 }
 
 /// @nodoc
@@ -94,32 +64,12 @@ class _$ServerMeetingDeletedParamsCopyWithImpl<$Res> implements $ServerMeetingDe
 
   @override
   $Res call({
-    Object? meetingId = freezed,
-    Object? teamMeetingsCount = freezed,
-    Object? userMeetingsCount = freezed,
-    Object? teamMeetingsDates = freezed,
-    Object? userMeetingsDates = freezed,
+    Object? meetingIds = freezed,
   }) {
     return _then(_value.copyWith(
-      meetingId: meetingId == freezed
-          ? _value.meetingId
-          : meetingId // ignore: cast_nullable_to_non_nullable
-              as String,
-      teamMeetingsCount: teamMeetingsCount == freezed
-          ? _value.teamMeetingsCount
-          : teamMeetingsCount // ignore: cast_nullable_to_non_nullable
-              as int,
-      userMeetingsCount: userMeetingsCount == freezed
-          ? _value.userMeetingsCount
-          : userMeetingsCount // ignore: cast_nullable_to_non_nullable
-              as int,
-      teamMeetingsDates: teamMeetingsDates == freezed
-          ? _value.teamMeetingsDates
-          : teamMeetingsDates // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-      userMeetingsDates: userMeetingsDates == freezed
-          ? _value.userMeetingsDates
-          : userMeetingsDates // ignore: cast_nullable_to_non_nullable
+      meetingIds: meetingIds == freezed
+          ? _value.meetingIds
+          : meetingIds // ignore: cast_nullable_to_non_nullable
               as List<String>,
     ));
   }
@@ -131,12 +81,7 @@ abstract class _$ServerMeetingDeletedParamsCopyWith<$Res> implements $ServerMeet
           _ServerMeetingDeletedParams value, $Res Function(_ServerMeetingDeletedParams) then) =
       __$ServerMeetingDeletedParamsCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {@JsonKey(name: 'meeting_id') String meetingId,
-      @JsonKey(name: 'team_meetings_count') int teamMeetingsCount,
-      @JsonKey(name: 'user_meetings_count') int userMeetingsCount,
-      @JsonKey(name: 'team_meetings_dates') List<String> teamMeetingsDates,
-      @JsonKey(name: 'user_meetings_dates') List<String> userMeetingsDates});
+  $Res call({@JsonKey(name: 'meeting_id') List<String> meetingIds});
 }
 
 /// @nodoc
@@ -151,32 +96,12 @@ class __$ServerMeetingDeletedParamsCopyWithImpl<$Res> extends _$ServerMeetingDel
 
   @override
   $Res call({
-    Object? meetingId = freezed,
-    Object? teamMeetingsCount = freezed,
-    Object? userMeetingsCount = freezed,
-    Object? teamMeetingsDates = freezed,
-    Object? userMeetingsDates = freezed,
+    Object? meetingIds = freezed,
   }) {
     return _then(_ServerMeetingDeletedParams(
-      meetingId: meetingId == freezed
-          ? _value.meetingId
-          : meetingId // ignore: cast_nullable_to_non_nullable
-              as String,
-      teamMeetingsCount: teamMeetingsCount == freezed
-          ? _value.teamMeetingsCount
-          : teamMeetingsCount // ignore: cast_nullable_to_non_nullable
-              as int,
-      userMeetingsCount: userMeetingsCount == freezed
-          ? _value.userMeetingsCount
-          : userMeetingsCount // ignore: cast_nullable_to_non_nullable
-              as int,
-      teamMeetingsDates: teamMeetingsDates == freezed
-          ? _value.teamMeetingsDates
-          : teamMeetingsDates // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-      userMeetingsDates: userMeetingsDates == freezed
-          ? _value.userMeetingsDates
-          : userMeetingsDates // ignore: cast_nullable_to_non_nullable
+      meetingIds: meetingIds == freezed
+          ? _value.meetingIds
+          : meetingIds // ignore: cast_nullable_to_non_nullable
               as List<String>,
     ));
   }
@@ -185,12 +110,7 @@ class __$ServerMeetingDeletedParamsCopyWithImpl<$Res> extends _$ServerMeetingDel
 /// @nodoc
 @JsonSerializable()
 class _$_ServerMeetingDeletedParams implements _ServerMeetingDeletedParams {
-  const _$_ServerMeetingDeletedParams(
-      {@JsonKey(name: 'meeting_id') required this.meetingId,
-      @JsonKey(name: 'team_meetings_count') required this.teamMeetingsCount,
-      @JsonKey(name: 'user_meetings_count') required this.userMeetingsCount,
-      @JsonKey(name: 'team_meetings_dates') required this.teamMeetingsDates,
-      @JsonKey(name: 'user_meetings_dates') required this.userMeetingsDates});
+  const _$_ServerMeetingDeletedParams({@JsonKey(name: 'meeting_id') required this.meetingIds});
 
   factory _$_ServerMeetingDeletedParams.fromJson(Map<String, dynamic> json) =>
       _$$_ServerMeetingDeletedParamsFromJson(json);
@@ -199,57 +119,23 @@ class _$_ServerMeetingDeletedParams implements _ServerMeetingDeletedParams {
 
   /// Meeting info.
   @JsonKey(name: 'meeting_id')
-  final String meetingId;
-  @override
-
-  /// Team Meetings count.
-  @JsonKey(name: 'team_meetings_count')
-  final int teamMeetingsCount;
-  @override
-
-  /// User Meetings count.
-  @JsonKey(name: 'user_meetings_count')
-  final int userMeetingsCount;
-  @override
-
-  /// Dates of team meetings.
-  @JsonKey(name: 'team_meetings_dates')
-  final List<String> teamMeetingsDates;
-  @override
-
-  /// Dates of user meetings.
-  @JsonKey(name: 'user_meetings_dates')
-  final List<String> userMeetingsDates;
+  final List<String> meetingIds;
 
   @override
   String toString() {
-    return 'ServerMeetingDeletedParams(meetingId: $meetingId, teamMeetingsCount: $teamMeetingsCount, userMeetingsCount: $userMeetingsCount, teamMeetingsDates: $teamMeetingsDates, userMeetingsDates: $userMeetingsDates)';
+    return 'ServerMeetingDeletedParams(meetingIds: $meetingIds)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _ServerMeetingDeletedParams &&
-            (identical(other.meetingId, meetingId) ||
-                const DeepCollectionEquality().equals(other.meetingId, meetingId)) &&
-            (identical(other.teamMeetingsCount, teamMeetingsCount) ||
-                const DeepCollectionEquality().equals(other.teamMeetingsCount, teamMeetingsCount)) &&
-            (identical(other.userMeetingsCount, userMeetingsCount) ||
-                const DeepCollectionEquality().equals(other.userMeetingsCount, userMeetingsCount)) &&
-            (identical(other.teamMeetingsDates, teamMeetingsDates) ||
-                const DeepCollectionEquality().equals(other.teamMeetingsDates, teamMeetingsDates)) &&
-            (identical(other.userMeetingsDates, userMeetingsDates) ||
-                const DeepCollectionEquality().equals(other.userMeetingsDates, userMeetingsDates)));
+            (identical(other.meetingIds, meetingIds) ||
+                const DeepCollectionEquality().equals(other.meetingIds, meetingIds)));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(meetingId) ^
-      const DeepCollectionEquality().hash(teamMeetingsCount) ^
-      const DeepCollectionEquality().hash(userMeetingsCount) ^
-      const DeepCollectionEquality().hash(teamMeetingsDates) ^
-      const DeepCollectionEquality().hash(userMeetingsDates);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(meetingIds);
 
   @JsonKey(ignore: true)
   @override
@@ -263,12 +149,8 @@ class _$_ServerMeetingDeletedParams implements _ServerMeetingDeletedParams {
 }
 
 abstract class _ServerMeetingDeletedParams implements ServerMeetingDeletedParams {
-  const factory _ServerMeetingDeletedParams(
-      {@JsonKey(name: 'meeting_id') required String meetingId,
-      @JsonKey(name: 'team_meetings_count') required int teamMeetingsCount,
-      @JsonKey(name: 'user_meetings_count') required int userMeetingsCount,
-      @JsonKey(name: 'team_meetings_dates') required List<String> teamMeetingsDates,
-      @JsonKey(name: 'user_meetings_dates') required List<String> userMeetingsDates}) = _$_ServerMeetingDeletedParams;
+  const factory _ServerMeetingDeletedParams({@JsonKey(name: 'meeting_id') required List<String> meetingIds}) =
+      _$_ServerMeetingDeletedParams;
 
   factory _ServerMeetingDeletedParams.fromJson(Map<String, dynamic> json) = _$_ServerMeetingDeletedParams.fromJson;
 
@@ -276,27 +158,7 @@ abstract class _ServerMeetingDeletedParams implements ServerMeetingDeletedParams
 
   /// Meeting info.
   @JsonKey(name: 'meeting_id')
-  String get meetingId => throw _privateConstructorUsedError;
-  @override
-
-  /// Team Meetings count.
-  @JsonKey(name: 'team_meetings_count')
-  int get teamMeetingsCount => throw _privateConstructorUsedError;
-  @override
-
-  /// User Meetings count.
-  @JsonKey(name: 'user_meetings_count')
-  int get userMeetingsCount => throw _privateConstructorUsedError;
-  @override
-
-  /// Dates of team meetings.
-  @JsonKey(name: 'team_meetings_dates')
-  List<String> get teamMeetingsDates => throw _privateConstructorUsedError;
-  @override
-
-  /// Dates of user meetings.
-  @JsonKey(name: 'user_meetings_dates')
-  List<String> get userMeetingsDates => throw _privateConstructorUsedError;
+  List<String> get meetingIds => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ServerMeetingDeletedParamsCopyWith<_ServerMeetingDeletedParams> get copyWith => throw _privateConstructorUsedError;
