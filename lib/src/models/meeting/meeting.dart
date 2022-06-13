@@ -180,7 +180,7 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
 
     /// Links in description.
-    @JsonKey(name: 'links') MessageLink? links,
+    @JsonKey(name: 'links') List<MessageLink>? links,
 
     /// Task tags list, if any.
     @JsonKey(name: 'tags') List<String>? tags,

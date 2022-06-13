@@ -32,7 +32,7 @@ class _$MessageTearOff {
       @JsonKey(name: 'gentime') required int gentime,
       @JsonKey(name: 'chat_type') required String chatType,
       @JsonKey(name: 'chat') required String chat,
-      @JsonKey(name: 'links') MessageLink? links,
+      @JsonKey(name: 'links') List<MessageLink>? links,
       @JsonKey(name: 'markup') List<MarkupEntity>? markup,
       @JsonKey(name: 'important') bool? important,
       @JsonKey(name: 'edited') @DateTimeConverter() DateTime? edited,
@@ -142,7 +142,7 @@ mixin _$Message {
 
   /// External/internals links.
   @JsonKey(name: 'links')
-  MessageLink? get links => throw _privateConstructorUsedError;
+  List<MessageLink>? get links => throw _privateConstructorUsedError;
 
   /// Markup entities. Experimental.
   @JsonKey(name: 'markup')
@@ -245,7 +245,7 @@ abstract class $MessageCopyWith<$Res> {
       @JsonKey(name: 'gentime') int gentime,
       @JsonKey(name: 'chat_type') String chatType,
       @JsonKey(name: 'chat') String chat,
-      @JsonKey(name: 'links') MessageLink? links,
+      @JsonKey(name: 'links') List<MessageLink>? links,
       @JsonKey(name: 'markup') List<MarkupEntity>? markup,
       @JsonKey(name: 'important') bool? important,
       @JsonKey(name: 'edited') @DateTimeConverter() DateTime? edited,
@@ -268,7 +268,6 @@ abstract class $MessageCopyWith<$Res> {
       @JsonKey(name: '_debug') String? debug});
 
   $MessageContentCopyWith<$Res> get content;
-  $MessageLinkCopyWith<$Res>? get links;
   $MessageCopyWith<$Res>? get replyTo;
 }
 
@@ -358,7 +357,7 @@ class _$MessageCopyWithImpl<$Res> implements $MessageCopyWith<$Res> {
       links: links == freezed
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
-              as MessageLink?,
+              as List<MessageLink>?,
       markup: markup == freezed
           ? _value.markup
           : markup // ignore: cast_nullable_to_non_nullable
@@ -450,17 +449,6 @@ class _$MessageCopyWithImpl<$Res> implements $MessageCopyWith<$Res> {
   }
 
   @override
-  $MessageLinkCopyWith<$Res>? get links {
-    if (_value.links == null) {
-      return null;
-    }
-
-    return $MessageLinkCopyWith<$Res>(_value.links!, (value) {
-      return _then(_value.copyWith(links: value));
-    });
-  }
-
-  @override
   $MessageCopyWith<$Res>? get replyTo {
     if (_value.replyTo == null) {
       return null;
@@ -487,7 +475,7 @@ abstract class _$MessageCopyWith<$Res> implements $MessageCopyWith<$Res> {
       @JsonKey(name: 'gentime') int gentime,
       @JsonKey(name: 'chat_type') String chatType,
       @JsonKey(name: 'chat') String chat,
-      @JsonKey(name: 'links') MessageLink? links,
+      @JsonKey(name: 'links') List<MessageLink>? links,
       @JsonKey(name: 'markup') List<MarkupEntity>? markup,
       @JsonKey(name: 'important') bool? important,
       @JsonKey(name: 'edited') @DateTimeConverter() DateTime? edited,
@@ -511,8 +499,6 @@ abstract class _$MessageCopyWith<$Res> implements $MessageCopyWith<$Res> {
 
   @override
   $MessageContentCopyWith<$Res> get content;
-  @override
-  $MessageLinkCopyWith<$Res>? get links;
   @override
   $MessageCopyWith<$Res>? get replyTo;
 }
@@ -602,7 +588,7 @@ class __$MessageCopyWithImpl<$Res> extends _$MessageCopyWithImpl<$Res> implement
       links: links == freezed
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
-              as MessageLink?,
+              as List<MessageLink>?,
       markup: markup == freezed
           ? _value.markup
           : markup // ignore: cast_nullable_to_non_nullable
@@ -781,7 +767,7 @@ class _$_Message implements _Message {
 
   /// External/internals links.
   @JsonKey(name: 'links')
-  final MessageLink? links;
+  final List<MessageLink>? links;
   @override
 
   /// Markup entities. Experimental.
@@ -993,7 +979,7 @@ abstract class _Message implements Message {
       @JsonKey(name: 'gentime') required int gentime,
       @JsonKey(name: 'chat_type') required String chatType,
       @JsonKey(name: 'chat') required String chat,
-      @JsonKey(name: 'links') MessageLink? links,
+      @JsonKey(name: 'links') List<MessageLink>? links,
       @JsonKey(name: 'markup') List<MarkupEntity>? markup,
       @JsonKey(name: 'important') bool? important,
       @JsonKey(name: 'edited') @DateTimeConverter() DateTime? edited,
@@ -1073,7 +1059,7 @@ abstract class _Message implements Message {
 
   /// External/internals links.
   @JsonKey(name: 'links')
-  MessageLink? get links => throw _privateConstructorUsedError;
+  List<MessageLink>? get links => throw _privateConstructorUsedError;
   @override
 
   /// Markup entities. Experimental.

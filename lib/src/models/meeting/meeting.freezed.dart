@@ -79,7 +79,7 @@ class _$MeetingTearOff {
       @JsonKey(name: 'done_reason') String? doneReason,
       @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
       @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
-      @JsonKey(name: 'links') MessageLink? links,
+      @JsonKey(name: 'links') List<MessageLink>? links,
       @JsonKey(name: 'tags') List<String>? tags,
       @JsonKey(name: 'importance') int? importance,
       @JsonKey(name: 'urgency') int? urgency,
@@ -436,7 +436,7 @@ mixin _$Meeting {
 
   /// Links in description.
   @JsonKey(name: 'links')
-  MessageLink? get links => throw _privateConstructorUsedError;
+  List<MessageLink>? get links => throw _privateConstructorUsedError;
 
   /// Task tags list, if any.
   @JsonKey(name: 'tags')
@@ -606,7 +606,7 @@ abstract class $MeetingCopyWith<$Res> {
       @JsonKey(name: 'done_reason') String? doneReason,
       @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
       @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
-      @JsonKey(name: 'links') MessageLink? links,
+      @JsonKey(name: 'links') List<MessageLink>? links,
       @JsonKey(name: 'tags') List<String>? tags,
       @JsonKey(name: 'importance') int? importance,
       @JsonKey(name: 'urgency') int? urgency,
@@ -637,7 +637,6 @@ abstract class $MeetingCopyWith<$Res> {
   $IconDataCopyWith<$Res> get icons;
   $MessageCopyWith<$Res>? get lastMessage;
   $MessageCopyWith<$Res>? get pinnedMessage;
-  $MessageLinkCopyWith<$Res>? get links;
 }
 
 /// @nodoc
@@ -966,7 +965,7 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
       links: links == freezed
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
-              as MessageLink?,
+              as List<MessageLink>?,
       tags: tags == freezed
           ? _value.tags
           : tags // ignore: cast_nullable_to_non_nullable
@@ -1109,17 +1108,6 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
       return _then(_value.copyWith(pinnedMessage: value));
     });
   }
-
-  @override
-  $MessageLinkCopyWith<$Res>? get links {
-    if (_value.links == null) {
-      return null;
-    }
-
-    return $MessageLinkCopyWith<$Res>(_value.links!, (value) {
-      return _then(_value.copyWith(links: value));
-    });
-  }
 }
 
 /// @nodoc
@@ -1184,7 +1172,7 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
       @JsonKey(name: 'done_reason') String? doneReason,
       @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
       @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
-      @JsonKey(name: 'links') MessageLink? links,
+      @JsonKey(name: 'links') List<MessageLink>? links,
       @JsonKey(name: 'tags') List<String>? tags,
       @JsonKey(name: 'importance') int? importance,
       @JsonKey(name: 'urgency') int? urgency,
@@ -1219,8 +1207,6 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
   $MessageCopyWith<$Res>? get lastMessage;
   @override
   $MessageCopyWith<$Res>? get pinnedMessage;
-  @override
-  $MessageLinkCopyWith<$Res>? get links;
 }
 
 /// @nodoc
@@ -1548,7 +1534,7 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res> implement
       links: links == freezed
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
-              as MessageLink?,
+              as List<MessageLink>?,
       tags: tags == freezed
           ? _value.tags
           : tags // ignore: cast_nullable_to_non_nullable
@@ -2036,7 +2022,7 @@ class _$_Meeting implements _Meeting {
 
   /// Links in description.
   @JsonKey(name: 'links')
-  final MessageLink? links;
+  final List<MessageLink>? links;
   @override
 
   /// Task tags list, if any.
@@ -2459,7 +2445,7 @@ abstract class _Meeting implements Meeting {
       @JsonKey(name: 'done_reason') String? doneReason,
       @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
       @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
-      @JsonKey(name: 'links') MessageLink? links,
+      @JsonKey(name: 'links') List<MessageLink>? links,
       @JsonKey(name: 'tags') List<String>? tags,
       @JsonKey(name: 'importance') int? importance,
       @JsonKey(name: 'urgency') int? urgency,
@@ -2781,7 +2767,7 @@ abstract class _Meeting implements Meeting {
 
   /// Links in description.
   @JsonKey(name: 'links')
-  MessageLink? get links => throw _privateConstructorUsedError;
+  List<MessageLink>? get links => throw _privateConstructorUsedError;
   @override
 
   /// Task tags list, if any.

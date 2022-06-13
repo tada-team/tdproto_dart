@@ -39,7 +39,7 @@ class Message with _$Message {
     @JsonKey(name: 'chat') required String chat,
 
     /// External/internals links.
-    @JsonKey(name: 'links') MessageLink? links,
+    @JsonKey(name: 'links') List<MessageLink>? links,
 
     /// Markup entities. Experimental.
     @JsonKey(name: 'markup') List<MarkupEntity>? markup,
