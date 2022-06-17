@@ -179,6 +179,9 @@ class Contact with _$Contact {
     /// Can I create group chats in this team.
     @JsonKey(name: 'can_create_group') bool? canCreateGroup,
 
+    /// Can I create meetings in this team.
+    @JsonKey(name: 'can_create_meeting') bool? canCreateMeeting,
+
     /// Can I view/join public group in this team.
     @JsonKey(name: 'can_join_public_groups') bool? canJoinPublicGroups,
 

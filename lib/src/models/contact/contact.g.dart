@@ -64,6 +64,7 @@ _$_Contact _$$_ContactFromJson(Map<String, dynamic> json) => _$_Contact(
       canManageIntegrations: json['can_manage_integrations'] as bool?,
       canManageColorRules: json['can_manage_color_rules'] as bool?,
       canCreateGroup: json['can_create_group'] as bool?,
+      canCreateMeeting: json['can_create_meeting'] as bool?,
       canJoinPublicGroups: json['can_join_public_groups'] as bool?,
       canJoinPublicTasks: json['can_join_public_tasks'] as bool?,
       customFields: json['custom_fields'] == null
@@ -130,6 +131,7 @@ Map<String, dynamic> _$$_ContactToJson(_$_Contact instance) => <String, dynamic>
       'can_manage_integrations': instance.canManageIntegrations,
       'can_manage_color_rules': instance.canManageColorRules,
       'can_create_group': instance.canCreateGroup,
+      'can_create_meeting': instance.canCreateMeeting,
       'can_join_public_groups': instance.canJoinPublicGroups,
       'can_join_public_tasks': instance.canJoinPublicTasks,
       'custom_fields': instance.customFields?.toJson(),
