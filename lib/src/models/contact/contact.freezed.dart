@@ -64,11 +64,13 @@ class _$ContactTearOff {
       @JsonKey(name: 'contact_short_view') bool? contactShortView,
       @JsonKey(name: 'group_short_view') bool? groupShortView,
       @JsonKey(name: 'task_short_view') bool? taskShortView,
+      @JsonKey(name: 'meeting_short_view') bool? meetingShortView,
       @JsonKey(name: 'contact_mshort_view') bool? contactMshortView,
       @JsonKey(name: 'group_mshort_view') bool? groupMshortView,
       @JsonKey(name: 'auth_2fa_enabled') bool? auth2faEnabled,
       @JsonKey(name: 'auth_2fa_status') String? auth2faStatus,
       @JsonKey(name: 'task_mshort_view') bool? taskMshortView,
+      @JsonKey(name: 'meeting_mshort_view') bool? meetingMshortView,
       @JsonKey(name: 'contact_show_archived') bool? contactShowArchived,
       @JsonKey(name: 'unread_first') bool? unreadFirst,
       @JsonKey(name: 'munread_first') bool? mUnreadFirst,
@@ -127,11 +129,13 @@ class _$ContactTearOff {
       contactShortView: contactShortView,
       groupShortView: groupShortView,
       taskShortView: taskShortView,
+      meetingShortView: meetingShortView,
       contactMshortView: contactMshortView,
       groupMshortView: groupMshortView,
       auth2faEnabled: auth2faEnabled,
       auth2faStatus: auth2faStatus,
       taskMshortView: taskMshortView,
+      meetingMshortView: meetingMshortView,
       contactShowArchived: contactShowArchived,
       unreadFirst: unreadFirst,
       mUnreadFirst: mUnreadFirst,
@@ -330,6 +334,10 @@ mixin _$Contact {
   @JsonKey(name: 'task_short_view')
   bool? get taskShortView => throw _privateConstructorUsedError;
 
+  /// Short view in meeting list.
+  @JsonKey(name: 'meeting_short_view')
+  bool? get meetingShortView => throw _privateConstructorUsedError;
+
   /// Short view in contact list in mobile app.
   @JsonKey(name: 'contact_mshort_view')
   bool? get contactMshortView => throw _privateConstructorUsedError;
@@ -349,6 +357,10 @@ mixin _$Contact {
   /// Short view in task list in mobile app.
   @JsonKey(name: 'task_mshort_view')
   bool? get taskMshortView => throw _privateConstructorUsedError;
+
+  /// Short view in meeting list in mobile app.
+  @JsonKey(name: 'meeting_mshort_view')
+  bool? get meetingMshortView => throw _privateConstructorUsedError;
 
   /// Show archived contacts in contact list.
   @JsonKey(name: 'contact_show_archived')
@@ -462,11 +474,13 @@ abstract class $ContactCopyWith<$Res> {
       @JsonKey(name: 'contact_short_view') bool? contactShortView,
       @JsonKey(name: 'group_short_view') bool? groupShortView,
       @JsonKey(name: 'task_short_view') bool? taskShortView,
+      @JsonKey(name: 'meeting_short_view') bool? meetingShortView,
       @JsonKey(name: 'contact_mshort_view') bool? contactMshortView,
       @JsonKey(name: 'group_mshort_view') bool? groupMshortView,
       @JsonKey(name: 'auth_2fa_enabled') bool? auth2faEnabled,
       @JsonKey(name: 'auth_2fa_status') String? auth2faStatus,
       @JsonKey(name: 'task_mshort_view') bool? taskMshortView,
+      @JsonKey(name: 'meeting_mshort_view') bool? meetingMshortView,
       @JsonKey(name: 'contact_show_archived') bool? contactShowArchived,
       @JsonKey(name: 'unread_first') bool? unreadFirst,
       @JsonKey(name: 'munread_first') bool? mUnreadFirst,
@@ -539,11 +553,13 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
     Object? contactShortView = freezed,
     Object? groupShortView = freezed,
     Object? taskShortView = freezed,
+    Object? meetingShortView = freezed,
     Object? contactMshortView = freezed,
     Object? groupMshortView = freezed,
     Object? auth2faEnabled = freezed,
     Object? auth2faStatus = freezed,
     Object? taskMshortView = freezed,
+    Object? meetingMshortView = freezed,
     Object? contactShowArchived = freezed,
     Object? unreadFirst = freezed,
     Object? mUnreadFirst = freezed,
@@ -729,6 +745,10 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
           ? _value.taskShortView
           : taskShortView // ignore: cast_nullable_to_non_nullable
               as bool?,
+      meetingShortView: meetingShortView == freezed
+          ? _value.meetingShortView
+          : meetingShortView // ignore: cast_nullable_to_non_nullable
+              as bool?,
       contactMshortView: contactMshortView == freezed
           ? _value.contactMshortView
           : contactMshortView // ignore: cast_nullable_to_non_nullable
@@ -748,6 +768,10 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
       taskMshortView: taskMshortView == freezed
           ? _value.taskMshortView
           : taskMshortView // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      meetingMshortView: meetingMshortView == freezed
+          ? _value.meetingMshortView
+          : meetingMshortView // ignore: cast_nullable_to_non_nullable
               as bool?,
       contactShowArchived: contactShowArchived == freezed
           ? _value.contactShowArchived
@@ -878,11 +902,13 @@ abstract class _$ContactCopyWith<$Res> implements $ContactCopyWith<$Res> {
       @JsonKey(name: 'contact_short_view') bool? contactShortView,
       @JsonKey(name: 'group_short_view') bool? groupShortView,
       @JsonKey(name: 'task_short_view') bool? taskShortView,
+      @JsonKey(name: 'meeting_short_view') bool? meetingShortView,
       @JsonKey(name: 'contact_mshort_view') bool? contactMshortView,
       @JsonKey(name: 'group_mshort_view') bool? groupMshortView,
       @JsonKey(name: 'auth_2fa_enabled') bool? auth2faEnabled,
       @JsonKey(name: 'auth_2fa_status') String? auth2faStatus,
       @JsonKey(name: 'task_mshort_view') bool? taskMshortView,
+      @JsonKey(name: 'meeting_mshort_view') bool? meetingMshortView,
       @JsonKey(name: 'contact_show_archived') bool? contactShowArchived,
       @JsonKey(name: 'unread_first') bool? unreadFirst,
       @JsonKey(name: 'munread_first') bool? mUnreadFirst,
@@ -956,11 +982,13 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res> implement
     Object? contactShortView = freezed,
     Object? groupShortView = freezed,
     Object? taskShortView = freezed,
+    Object? meetingShortView = freezed,
     Object? contactMshortView = freezed,
     Object? groupMshortView = freezed,
     Object? auth2faEnabled = freezed,
     Object? auth2faStatus = freezed,
     Object? taskMshortView = freezed,
+    Object? meetingMshortView = freezed,
     Object? contactShowArchived = freezed,
     Object? unreadFirst = freezed,
     Object? mUnreadFirst = freezed,
@@ -1146,6 +1174,10 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res> implement
           ? _value.taskShortView
           : taskShortView // ignore: cast_nullable_to_non_nullable
               as bool?,
+      meetingShortView: meetingShortView == freezed
+          ? _value.meetingShortView
+          : meetingShortView // ignore: cast_nullable_to_non_nullable
+              as bool?,
       contactMshortView: contactMshortView == freezed
           ? _value.contactMshortView
           : contactMshortView // ignore: cast_nullable_to_non_nullable
@@ -1165,6 +1197,10 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res> implement
       taskMshortView: taskMshortView == freezed
           ? _value.taskMshortView
           : taskMshortView // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      meetingMshortView: meetingMshortView == freezed
+          ? _value.meetingMshortView
+          : meetingMshortView // ignore: cast_nullable_to_non_nullable
               as bool?,
       contactShowArchived: contactShowArchived == freezed
           ? _value.contactShowArchived
@@ -1276,11 +1312,13 @@ class _$_Contact implements _Contact {
       @JsonKey(name: 'contact_short_view') this.contactShortView,
       @JsonKey(name: 'group_short_view') this.groupShortView,
       @JsonKey(name: 'task_short_view') this.taskShortView,
+      @JsonKey(name: 'meeting_short_view') this.meetingShortView,
       @JsonKey(name: 'contact_mshort_view') this.contactMshortView,
       @JsonKey(name: 'group_mshort_view') this.groupMshortView,
       @JsonKey(name: 'auth_2fa_enabled') this.auth2faEnabled,
       @JsonKey(name: 'auth_2fa_status') this.auth2faStatus,
       @JsonKey(name: 'task_mshort_view') this.taskMshortView,
+      @JsonKey(name: 'meeting_mshort_view') this.meetingMshortView,
       @JsonKey(name: 'contact_show_archived') this.contactShowArchived,
       @JsonKey(name: 'unread_first') this.unreadFirst,
       @JsonKey(name: 'munread_first') this.mUnreadFirst,
@@ -1513,6 +1551,11 @@ class _$_Contact implements _Contact {
   final bool? taskShortView;
   @override
 
+  /// Short view in meeting list.
+  @JsonKey(name: 'meeting_short_view')
+  final bool? meetingShortView;
+  @override
+
   /// Short view in contact list in mobile app.
   @JsonKey(name: 'contact_mshort_view')
   final bool? contactMshortView;
@@ -1536,6 +1579,11 @@ class _$_Contact implements _Contact {
   /// Short view in task list in mobile app.
   @JsonKey(name: 'task_mshort_view')
   final bool? taskMshortView;
+  @override
+
+  /// Short view in meeting list in mobile app.
+  @JsonKey(name: 'meeting_mshort_view')
+  final bool? meetingMshortView;
   @override
 
   /// Show archived contacts in contact list.
@@ -1615,7 +1663,7 @@ class _$_Contact implements _Contact {
 
   @override
   String toString() {
-    return 'Contact(jid: $jid, node: $node, displayName: $displayName, shortName: $shortName, contactEmail: $contactEmail, contactPhone: $contactPhone, icons: $icons, gentime: $gentime, role: $role, mood: $mood, teamStatus: $teamStatus, lastActivity: $lastActivity, isArchive: $isArchive, botname: $botname, sections: $sections, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, canCall: $canCall, canCreateTask: $canCreateTask, canImportTasks: $canImportTasks, canAddToGroup: $canAddToGroup, canDelete: $canDelete, changeableFields: $changeableFields, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, debugShowActivity: $debugShowActivity, dropallEnabled: $dropallEnabled, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, hidePushesContent: $hidePushesContent, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, focusUntil: $focusUntil, groupNotificationsEnabled: $groupNotificationsEnabled, taskNotificationsEnabled: $taskNotificationsEnabled, contactShortView: $contactShortView, groupShortView: $groupShortView, taskShortView: $taskShortView, contactMshortView: $contactMshortView, groupMshortView: $groupMshortView, auth2faEnabled: $auth2faEnabled, auth2faStatus: $auth2faStatus, taskMshortView: $taskMshortView, contactShowArchived: $contactShowArchived, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, canAddToTeam: $canAddToTeam, canManageSections: $canManageSections, canManageProjects: $canManageProjects, canManageTags: $canManageTags, canManageIntegrations: $canManageIntegrations, canManageColorRules: $canManageColorRules, canCreateGroup: $canCreateGroup, canCreateMeeting: $canCreateMeeting, canJoinPublicGroups: $canJoinPublicGroups, canJoinPublicTasks: $canJoinPublicTasks, customFields: $customFields, canDeleteAnyMessage: $canDeleteAnyMessage)';
+    return 'Contact(jid: $jid, node: $node, displayName: $displayName, shortName: $shortName, contactEmail: $contactEmail, contactPhone: $contactPhone, icons: $icons, gentime: $gentime, role: $role, mood: $mood, teamStatus: $teamStatus, lastActivity: $lastActivity, isArchive: $isArchive, botname: $botname, sections: $sections, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, canCall: $canCall, canCreateTask: $canCreateTask, canImportTasks: $canImportTasks, canAddToGroup: $canAddToGroup, canDelete: $canDelete, changeableFields: $changeableFields, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, debugShowActivity: $debugShowActivity, dropallEnabled: $dropallEnabled, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, hidePushesContent: $hidePushesContent, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, focusUntil: $focusUntil, groupNotificationsEnabled: $groupNotificationsEnabled, taskNotificationsEnabled: $taskNotificationsEnabled, contactShortView: $contactShortView, groupShortView: $groupShortView, taskShortView: $taskShortView, meetingShortView: $meetingShortView, contactMshortView: $contactMshortView, groupMshortView: $groupMshortView, auth2faEnabled: $auth2faEnabled, auth2faStatus: $auth2faStatus, taskMshortView: $taskMshortView, meetingMshortView: $meetingMshortView, contactShowArchived: $contactShowArchived, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, canAddToTeam: $canAddToTeam, canManageSections: $canManageSections, canManageProjects: $canManageProjects, canManageTags: $canManageTags, canManageIntegrations: $canManageIntegrations, canManageColorRules: $canManageColorRules, canCreateGroup: $canCreateGroup, canCreateMeeting: $canCreateMeeting, canJoinPublicGroups: $canJoinPublicGroups, canJoinPublicTasks: $canJoinPublicTasks, customFields: $customFields, canDeleteAnyMessage: $canDeleteAnyMessage)';
   }
 
   @override
@@ -1695,6 +1743,8 @@ class _$_Contact implements _Contact {
                 const DeepCollectionEquality().equals(other.groupShortView, groupShortView)) &&
             (identical(other.taskShortView, taskShortView) ||
                 const DeepCollectionEquality().equals(other.taskShortView, taskShortView)) &&
+            (identical(other.meetingShortView, meetingShortView) ||
+                const DeepCollectionEquality().equals(other.meetingShortView, meetingShortView)) &&
             (identical(other.contactMshortView, contactMshortView) ||
                 const DeepCollectionEquality().equals(other.contactMshortView, contactMshortView)) &&
             (identical(other.groupMshortView, groupMshortView) ||
@@ -1705,6 +1755,8 @@ class _$_Contact implements _Contact {
                 const DeepCollectionEquality().equals(other.auth2faStatus, auth2faStatus)) &&
             (identical(other.taskMshortView, taskMshortView) ||
                 const DeepCollectionEquality().equals(other.taskMshortView, taskMshortView)) &&
+            (identical(other.meetingMshortView, meetingMshortView) ||
+                const DeepCollectionEquality().equals(other.meetingMshortView, meetingMshortView)) &&
             (identical(other.contactShowArchived, contactShowArchived) ||
                 const DeepCollectionEquality().equals(other.contactShowArchived, contactShowArchived)) &&
             (identical(other.unreadFirst, unreadFirst) ||
@@ -1717,10 +1769,8 @@ class _$_Contact implements _Contact {
                 const DeepCollectionEquality().equals(other.canManageSections, canManageSections)) &&
             (identical(other.canManageProjects, canManageProjects) ||
                 const DeepCollectionEquality().equals(other.canManageProjects, canManageProjects)) &&
-            (identical(other.canManageTags, canManageTags) ||
-                const DeepCollectionEquality().equals(other.canManageTags, canManageTags)) &&
-            (identical(other.canManageIntegrations, canManageIntegrations) ||
-                const DeepCollectionEquality().equals(other.canManageIntegrations, canManageIntegrations)) &&
+            (identical(other.canManageTags, canManageTags) || const DeepCollectionEquality().equals(other.canManageTags, canManageTags)) &&
+            (identical(other.canManageIntegrations, canManageIntegrations) || const DeepCollectionEquality().equals(other.canManageIntegrations, canManageIntegrations)) &&
             (identical(other.canManageColorRules, canManageColorRules) || const DeepCollectionEquality().equals(other.canManageColorRules, canManageColorRules)) &&
             (identical(other.canCreateGroup, canCreateGroup) || const DeepCollectionEquality().equals(other.canCreateGroup, canCreateGroup)) &&
             (identical(other.canCreateMeeting, canCreateMeeting) || const DeepCollectionEquality().equals(other.canCreateMeeting, canCreateMeeting)) &&
@@ -1775,11 +1825,13 @@ class _$_Contact implements _Contact {
       const DeepCollectionEquality().hash(contactShortView) ^
       const DeepCollectionEquality().hash(groupShortView) ^
       const DeepCollectionEquality().hash(taskShortView) ^
+      const DeepCollectionEquality().hash(meetingShortView) ^
       const DeepCollectionEquality().hash(contactMshortView) ^
       const DeepCollectionEquality().hash(groupMshortView) ^
       const DeepCollectionEquality().hash(auth2faEnabled) ^
       const DeepCollectionEquality().hash(auth2faStatus) ^
       const DeepCollectionEquality().hash(taskMshortView) ^
+      const DeepCollectionEquality().hash(meetingMshortView) ^
       const DeepCollectionEquality().hash(contactShowArchived) ^
       const DeepCollectionEquality().hash(unreadFirst) ^
       const DeepCollectionEquality().hash(mUnreadFirst) ^
@@ -1850,11 +1902,13 @@ abstract class _Contact implements Contact {
       @JsonKey(name: 'contact_short_view') bool? contactShortView,
       @JsonKey(name: 'group_short_view') bool? groupShortView,
       @JsonKey(name: 'task_short_view') bool? taskShortView,
+      @JsonKey(name: 'meeting_short_view') bool? meetingShortView,
       @JsonKey(name: 'contact_mshort_view') bool? contactMshortView,
       @JsonKey(name: 'group_mshort_view') bool? groupMshortView,
       @JsonKey(name: 'auth_2fa_enabled') bool? auth2faEnabled,
       @JsonKey(name: 'auth_2fa_status') String? auth2faStatus,
       @JsonKey(name: 'task_mshort_view') bool? taskMshortView,
+      @JsonKey(name: 'meeting_mshort_view') bool? meetingMshortView,
       @JsonKey(name: 'contact_show_archived') bool? contactShowArchived,
       @JsonKey(name: 'unread_first') bool? unreadFirst,
       @JsonKey(name: 'munread_first') bool? mUnreadFirst,
@@ -2087,6 +2141,11 @@ abstract class _Contact implements Contact {
   bool? get taskShortView => throw _privateConstructorUsedError;
   @override
 
+  /// Short view in meeting list.
+  @JsonKey(name: 'meeting_short_view')
+  bool? get meetingShortView => throw _privateConstructorUsedError;
+  @override
+
   /// Short view in contact list in mobile app.
   @JsonKey(name: 'contact_mshort_view')
   bool? get contactMshortView => throw _privateConstructorUsedError;
@@ -2110,6 +2169,11 @@ abstract class _Contact implements Contact {
   /// Short view in task list in mobile app.
   @JsonKey(name: 'task_mshort_view')
   bool? get taskMshortView => throw _privateConstructorUsedError;
+  @override
+
+  /// Short view in meeting list in mobile app.
+  @JsonKey(name: 'meeting_mshort_view')
+  bool? get meetingMshortView => throw _privateConstructorUsedError;
   @override
 
   /// Show archived contacts in contact list.

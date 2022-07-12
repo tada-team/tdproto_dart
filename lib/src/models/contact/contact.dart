@@ -134,6 +134,9 @@ class Contact with _$Contact {
     /// Short view in task list.
     @JsonKey(name: 'task_short_view') bool? taskShortView,
 
+    /// Short view in meeting list.
+    @JsonKey(name: 'meeting_short_view') bool? meetingShortView,
+
     /// Short view in contact list in mobile app.
     @JsonKey(name: 'contact_mshort_view') bool? contactMshortView,
 
@@ -148,6 +151,9 @@ class Contact with _$Contact {
 
     /// Short view in task list in mobile app.
     @JsonKey(name: 'task_mshort_view') bool? taskMshortView,
+
+    /// Short view in meeting list in mobile app.
+    @JsonKey(name: 'meeting_mshort_view') bool? meetingMshortView,
 
     /// Show archived contacts in contact list.
     @JsonKey(name: 'contact_show_archived') bool? contactShowArchived,
