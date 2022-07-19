@@ -22,7 +22,7 @@ class _$MappedUserTearOff {
   const _$MappedUserTearOff();
 
   _MappedUser call(
-      {@JsonKey(name: 'contact_id') required String contactID,
+      {@JsonKey(name: 'contact') required ContactShort contactID,
       @JsonKey(name: 'external_user_id') required String externalUserID,
       @JsonKey(name: 'external_user_name') required String externalUserName,
       @JsonKey(name: 'is_deleted') required bool isDeleted,
@@ -48,9 +48,9 @@ const $MappedUser = _$MappedUserTearOff();
 
 /// @nodoc
 mixin _$MappedUser {
-  /// ContactID tada contact id.
-  @JsonKey(name: 'contact_id')
-  String get contactID => throw _privateConstructorUsedError;
+  /// Contact short tada contact data.
+  @JsonKey(name: 'contact')
+  ContactShort get contactID => throw _privateConstructorUsedError;
 
   /// ExternalUserID user id from messenger.
   @JsonKey(name: 'external_user_id')
@@ -81,12 +81,14 @@ mixin _$MappedUser {
 abstract class $MappedUserCopyWith<$Res> {
   factory $MappedUserCopyWith(MappedUser value, $Res Function(MappedUser) then) = _$MappedUserCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'contact_id') String contactID,
+      {@JsonKey(name: 'contact') ContactShort contactID,
       @JsonKey(name: 'external_user_id') String externalUserID,
       @JsonKey(name: 'external_user_name') String externalUserName,
       @JsonKey(name: 'is_deleted') bool isDeleted,
       @JsonKey(name: 'is_archive') bool isArchive,
       @JsonKey(name: 'is_admin') bool isAdmin});
+
+  $ContactShortCopyWith<$Res> get contactID;
 }
 
 /// @nodoc
@@ -110,7 +112,7 @@ class _$MappedUserCopyWithImpl<$Res> implements $MappedUserCopyWith<$Res> {
       contactID: contactID == freezed
           ? _value.contactID
           : contactID // ignore: cast_nullable_to_non_nullable
-              as String,
+              as ContactShort,
       externalUserID: externalUserID == freezed
           ? _value.externalUserID
           : externalUserID // ignore: cast_nullable_to_non_nullable
@@ -133,6 +135,13 @@ class _$MappedUserCopyWithImpl<$Res> implements $MappedUserCopyWith<$Res> {
               as bool,
     ));
   }
+
+  @override
+  $ContactShortCopyWith<$Res> get contactID {
+    return $ContactShortCopyWith<$Res>(_value.contactID, (value) {
+      return _then(_value.copyWith(contactID: value));
+    });
+  }
 }
 
 /// @nodoc
@@ -140,12 +149,15 @@ abstract class _$MappedUserCopyWith<$Res> implements $MappedUserCopyWith<$Res> {
   factory _$MappedUserCopyWith(_MappedUser value, $Res Function(_MappedUser) then) = __$MappedUserCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'contact_id') String contactID,
+      {@JsonKey(name: 'contact') ContactShort contactID,
       @JsonKey(name: 'external_user_id') String externalUserID,
       @JsonKey(name: 'external_user_name') String externalUserName,
       @JsonKey(name: 'is_deleted') bool isDeleted,
       @JsonKey(name: 'is_archive') bool isArchive,
       @JsonKey(name: 'is_admin') bool isAdmin});
+
+  @override
+  $ContactShortCopyWith<$Res> get contactID;
 }
 
 /// @nodoc
@@ -169,7 +181,7 @@ class __$MappedUserCopyWithImpl<$Res> extends _$MappedUserCopyWithImpl<$Res> imp
       contactID: contactID == freezed
           ? _value.contactID
           : contactID // ignore: cast_nullable_to_non_nullable
-              as String,
+              as ContactShort,
       externalUserID: externalUserID == freezed
           ? _value.externalUserID
           : externalUserID // ignore: cast_nullable_to_non_nullable
@@ -198,7 +210,7 @@ class __$MappedUserCopyWithImpl<$Res> extends _$MappedUserCopyWithImpl<$Res> imp
 @JsonSerializable()
 class _$_MappedUser implements _MappedUser {
   const _$_MappedUser(
-      {@JsonKey(name: 'contact_id') required this.contactID,
+      {@JsonKey(name: 'contact') required this.contactID,
       @JsonKey(name: 'external_user_id') required this.externalUserID,
       @JsonKey(name: 'external_user_name') required this.externalUserName,
       @JsonKey(name: 'is_deleted') required this.isDeleted,
@@ -209,9 +221,9 @@ class _$_MappedUser implements _MappedUser {
 
   @override
 
-  /// ContactID tada contact id.
-  @JsonKey(name: 'contact_id')
-  final String contactID;
+  /// Contact short tada contact data.
+  @JsonKey(name: 'contact')
+  final ContactShort contactID;
   @override
 
   /// ExternalUserID user id from messenger.
@@ -282,7 +294,7 @@ class _$_MappedUser implements _MappedUser {
 
 abstract class _MappedUser implements MappedUser {
   const factory _MappedUser(
-      {@JsonKey(name: 'contact_id') required String contactID,
+      {@JsonKey(name: 'contact') required ContactShort contactID,
       @JsonKey(name: 'external_user_id') required String externalUserID,
       @JsonKey(name: 'external_user_name') required String externalUserName,
       @JsonKey(name: 'is_deleted') required bool isDeleted,
@@ -293,9 +305,9 @@ abstract class _MappedUser implements MappedUser {
 
   @override
 
-  /// ContactID tada contact id.
-  @JsonKey(name: 'contact_id')
-  String get contactID => throw _privateConstructorUsedError;
+  /// Contact short tada contact data.
+  @JsonKey(name: 'contact')
+  ContactShort get contactID => throw _privateConstructorUsedError;
   @override
 
   /// ExternalUserID user id from messenger.

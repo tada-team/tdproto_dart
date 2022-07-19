@@ -7,7 +7,7 @@ part of 'mapped_user.dart';
 // **************************************************************************
 
 _$_MappedUser _$$_MappedUserFromJson(Map<String, dynamic> json) => _$_MappedUser(
-      contactID: json['contact_id'] as String,
+      contactID: ContactShort.fromJson(json['contact'] as Map<String, dynamic>),
       externalUserID: json['external_user_id'] as String,
       externalUserName: json['external_user_name'] as String,
       isDeleted: json['is_deleted'] as bool,
@@ -16,7 +16,7 @@ _$_MappedUser _$$_MappedUserFromJson(Map<String, dynamic> json) => _$_MappedUser
     );
 
 Map<String, dynamic> _$$_MappedUserToJson(_$_MappedUser instance) => <String, dynamic>{
-      'contact_id': instance.contactID,
+      'contact': instance.contactID.toJson(),
       'external_user_id': instance.externalUserID,
       'external_user_name': instance.externalUserName,
       'is_deleted': instance.isDeleted,

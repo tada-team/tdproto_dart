@@ -8,8 +8,8 @@ part 'mapped_user.g.dart';
 @freezed
 class MappedUser with _$MappedUser {
   const factory MappedUser({
-    /// ContactID tada contact id.
-    @JsonKey(name: 'contact_id') required String contactID,
+    /// Contact short tada contact data.
+    @JsonKey(name: 'contact') required ContactShort contactID,
 
     /// ExternalUserID user id from messenger.
     @JsonKey(name: 'external_user_id') required String externalUserID,
