@@ -310,6 +310,9 @@ class Features with _$Features {
 
     /// File Extension Whitelist Priority.
     @JsonKey(name: 'file_extension_whitelist_priority') bool? fileExtensionWhitelistPriority,
+
+    /// ChatsImportEnabled import chat feature.
+    @JsonKey(name: 'ChatsImportEnabled') required bool chatsImportEnabled,
   }) = _Features;
 
   factory Features.fromJson(Map<String, dynamic> json) => _$FeaturesFromJson(json);
