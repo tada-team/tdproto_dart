@@ -9,7 +9,7 @@ part 'mapped_user.g.dart';
 class MappedUser with _$MappedUser {
   const factory MappedUser({
     /// Contact tada contact data.
-    @JsonKey(name: 'contact') required Contact contact,
+    @JsonKey(name: 'contact') Contact? contact,
 
     /// ExternalUserID user id from messenger.
     @JsonKey(name: 'external_user_id') required String externalUserID,
