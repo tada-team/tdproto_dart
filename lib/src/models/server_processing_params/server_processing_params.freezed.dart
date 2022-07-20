@@ -23,12 +23,14 @@ class _$ServerProcessingParamsTearOff {
 
   _ServerProcessingParams call(
       {@JsonKey(name: 'action') required String action,
+      @JsonKey(name: 'action_type') String? actionType,
       @JsonKey(name: 'message') required String message,
       @JsonKey(name: 'has_error') required bool hasError,
       @JsonKey(name: 'num') required int num,
       @JsonKey(name: 'total') required int total}) {
     return _ServerProcessingParams(
       action: action,
+      actionType: actionType,
       message: message,
       hasError: hasError,
       num: num,
@@ -49,6 +51,10 @@ mixin _$ServerProcessingParams {
   /// Action name.
   @JsonKey(name: 'action')
   String get action => throw _privateConstructorUsedError;
+
+  /// ActionType. Ex: [contact_import || task_import || archive_unpacking || generate_chats].
+  @JsonKey(name: 'action_type')
+  String? get actionType => throw _privateConstructorUsedError;
 
   /// Message.
   @JsonKey(name: 'message')
@@ -77,6 +83,7 @@ abstract class $ServerProcessingParamsCopyWith<$Res> {
       _$ServerProcessingParamsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'action') String action,
+      @JsonKey(name: 'action_type') String? actionType,
       @JsonKey(name: 'message') String message,
       @JsonKey(name: 'has_error') bool hasError,
       @JsonKey(name: 'num') int num,
@@ -94,6 +101,7 @@ class _$ServerProcessingParamsCopyWithImpl<$Res> implements $ServerProcessingPar
   @override
   $Res call({
     Object? action = freezed,
+    Object? actionType = freezed,
     Object? message = freezed,
     Object? hasError = freezed,
     Object? num = freezed,
@@ -104,6 +112,10 @@ class _$ServerProcessingParamsCopyWithImpl<$Res> implements $ServerProcessingPar
           ? _value.action
           : action // ignore: cast_nullable_to_non_nullable
               as String,
+      actionType: actionType == freezed
+          ? _value.actionType
+          : actionType // ignore: cast_nullable_to_non_nullable
+              as String?,
       message: message == freezed
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -131,6 +143,7 @@ abstract class _$ServerProcessingParamsCopyWith<$Res> implements $ServerProcessi
   @override
   $Res call(
       {@JsonKey(name: 'action') String action,
+      @JsonKey(name: 'action_type') String? actionType,
       @JsonKey(name: 'message') String message,
       @JsonKey(name: 'has_error') bool hasError,
       @JsonKey(name: 'num') int num,
@@ -149,6 +162,7 @@ class __$ServerProcessingParamsCopyWithImpl<$Res> extends _$ServerProcessingPara
   @override
   $Res call({
     Object? action = freezed,
+    Object? actionType = freezed,
     Object? message = freezed,
     Object? hasError = freezed,
     Object? num = freezed,
@@ -159,6 +173,10 @@ class __$ServerProcessingParamsCopyWithImpl<$Res> extends _$ServerProcessingPara
           ? _value.action
           : action // ignore: cast_nullable_to_non_nullable
               as String,
+      actionType: actionType == freezed
+          ? _value.actionType
+          : actionType // ignore: cast_nullable_to_non_nullable
+              as String?,
       message: message == freezed
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -184,6 +202,7 @@ class __$ServerProcessingParamsCopyWithImpl<$Res> extends _$ServerProcessingPara
 class _$_ServerProcessingParams implements _ServerProcessingParams {
   const _$_ServerProcessingParams(
       {@JsonKey(name: 'action') required this.action,
+      @JsonKey(name: 'action_type') this.actionType,
       @JsonKey(name: 'message') required this.message,
       @JsonKey(name: 'has_error') required this.hasError,
       @JsonKey(name: 'num') required this.num,
@@ -196,6 +215,11 @@ class _$_ServerProcessingParams implements _ServerProcessingParams {
   /// Action name.
   @JsonKey(name: 'action')
   final String action;
+  @override
+
+  /// ActionType. Ex: [contact_import || task_import || archive_unpacking || generate_chats].
+  @JsonKey(name: 'action_type')
+  final String? actionType;
   @override
 
   /// Message.
@@ -219,7 +243,7 @@ class _$_ServerProcessingParams implements _ServerProcessingParams {
 
   @override
   String toString() {
-    return 'ServerProcessingParams(action: $action, message: $message, hasError: $hasError, num: $num, total: $total)';
+    return 'ServerProcessingParams(action: $action, actionType: $actionType, message: $message, hasError: $hasError, num: $num, total: $total)';
   }
 
   @override
@@ -227,6 +251,8 @@ class _$_ServerProcessingParams implements _ServerProcessingParams {
     return identical(this, other) ||
         (other is _ServerProcessingParams &&
             (identical(other.action, action) || const DeepCollectionEquality().equals(other.action, action)) &&
+            (identical(other.actionType, actionType) ||
+                const DeepCollectionEquality().equals(other.actionType, actionType)) &&
             (identical(other.message, message) || const DeepCollectionEquality().equals(other.message, message)) &&
             (identical(other.hasError, hasError) || const DeepCollectionEquality().equals(other.hasError, hasError)) &&
             (identical(other.num, num) || const DeepCollectionEquality().equals(other.num, num)) &&
@@ -237,6 +263,7 @@ class _$_ServerProcessingParams implements _ServerProcessingParams {
   int get hashCode =>
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(action) ^
+      const DeepCollectionEquality().hash(actionType) ^
       const DeepCollectionEquality().hash(message) ^
       const DeepCollectionEquality().hash(hasError) ^
       const DeepCollectionEquality().hash(num) ^
@@ -256,6 +283,7 @@ class _$_ServerProcessingParams implements _ServerProcessingParams {
 abstract class _ServerProcessingParams implements ServerProcessingParams {
   const factory _ServerProcessingParams(
       {@JsonKey(name: 'action') required String action,
+      @JsonKey(name: 'action_type') String? actionType,
       @JsonKey(name: 'message') required String message,
       @JsonKey(name: 'has_error') required bool hasError,
       @JsonKey(name: 'num') required int num,
@@ -268,6 +296,11 @@ abstract class _ServerProcessingParams implements ServerProcessingParams {
   /// Action name.
   @JsonKey(name: 'action')
   String get action => throw _privateConstructorUsedError;
+  @override
+
+  /// ActionType. Ex: [contact_import || task_import || archive_unpacking || generate_chats].
+  @JsonKey(name: 'action_type')
+  String? get actionType => throw _privateConstructorUsedError;
   @override
 
   /// Message.

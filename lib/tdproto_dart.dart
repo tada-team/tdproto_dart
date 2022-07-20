@@ -8,6 +8,7 @@ export 'src/interfaces/i_response.dart';
 export 'src/interfaces/i_websocket_event.dart';
 
 // Generated enums:
+export 'src/enums/action_type.dart';
 export 'src/enums/call_type.dart';
 export 'src/enums/chat_type.dart';
 export 'src/enums/currency.dart';

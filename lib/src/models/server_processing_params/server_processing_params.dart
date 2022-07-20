@@ -11,6 +11,9 @@ class ServerProcessingParams with _$ServerProcessingParams {
     /// Action name.
     @JsonKey(name: 'action') required String action,
 
+    /// ActionType. Ex: [contact_import || task_import || archive_unpacking || generate_chats].
+    @JsonKey(name: 'action_type') String? actionType,
+
     /// Message.
     @JsonKey(name: 'message') required String message,
 

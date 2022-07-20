@@ -8,6 +8,7 @@ part of 'server_processing_params.dart';
 
 _$_ServerProcessingParams _$$_ServerProcessingParamsFromJson(Map<String, dynamic> json) => _$_ServerProcessingParams(
       action: json['action'] as String,
+      actionType: json['action_type'] as String?,
       message: json['message'] as String,
       hasError: json['has_error'] as bool,
       num: json['num'] as int,
@@ -16,6 +17,7 @@ _$_ServerProcessingParams _$$_ServerProcessingParamsFromJson(Map<String, dynamic
 
 Map<String, dynamic> _$$_ServerProcessingParamsToJson(_$_ServerProcessingParams instance) => <String, dynamic>{
       'action': instance.action,
+      'action_type': instance.actionType,
       'message': instance.message,
       'has_error': instance.hasError,
       'num': instance.num,
