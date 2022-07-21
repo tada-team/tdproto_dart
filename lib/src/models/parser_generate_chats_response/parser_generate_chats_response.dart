@@ -4,7 +4,7 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'parser_generate_chats_response.freezed.dart';
 part 'parser_generate_chats_response.g.dart';
 
-/// ParserGenerateChatsResponse.
+/// ParserGenerateChatsResponse ...
 @freezed
 class ParserGenerateChatsResponse with _$ParserGenerateChatsResponse {
   const factory ParserGenerateChatsResponse({

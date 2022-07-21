@@ -16,6 +16,9 @@ enum ParseStatus {
   @JsonValue('completed')
   completed,
 
+  @JsonValue('not_found')
+  not_found,
+
   @JsonValue('error')
   error,
 }
