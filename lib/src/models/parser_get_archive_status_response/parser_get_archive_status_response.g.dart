@@ -9,9 +9,11 @@ part of 'parser_get_archive_status_response.dart';
 _$_ParserGetArchiveStatusResponse _$$_ParserGetArchiveStatusResponseFromJson(Map<String, dynamic> json) =>
     _$_ParserGetArchiveStatusResponse(
       status: json['status'] as String,
+      progress: json['progress'] as int,
     );
 
 Map<String, dynamic> _$$_ParserGetArchiveStatusResponseToJson(_$_ParserGetArchiveStatusResponse instance) =>
     <String, dynamic>{
       'status': instance.status,
+      'progress': instance.progress,
     };

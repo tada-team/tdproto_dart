@@ -8,10 +8,10 @@ part 'parser_send_archive_status_request.g.dart';
 @freezed
 class ParserSendArchiveStatusRequest with _$ParserSendArchiveStatusRequest {
   const factory ParserSendArchiveStatusRequest({
-    /// .
+    /// Status archive parse status.
     @JsonKey(name: 'status') required String status,
 
-    /// .
+    /// Progress of archive unpacking.
     @JsonKey(name: 'progress') required int progress,
   }) = _ParserSendArchiveStatusRequest;
 

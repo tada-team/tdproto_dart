@@ -39,11 +39,11 @@ const $ParserSendArchiveStatusRequest = _$ParserSendArchiveStatusRequestTearOff(
 
 /// @nodoc
 mixin _$ParserSendArchiveStatusRequest {
-  /// .
+  /// Status archive parse status.
   @JsonKey(name: 'status')
   String get status => throw _privateConstructorUsedError;
 
-  /// .
+  /// Progress of archive unpacking.
   @JsonKey(name: 'progress')
   int get progress => throw _privateConstructorUsedError;
 
@@ -135,12 +135,12 @@ class _$_ParserSendArchiveStatusRequest implements _ParserSendArchiveStatusReque
 
   @override
 
-  /// .
+  /// Status archive parse status.
   @JsonKey(name: 'status')
   final String status;
   @override
 
-  /// .
+  /// Progress of archive unpacking.
   @JsonKey(name: 'progress')
   final int progress;
 
@@ -184,12 +184,12 @@ abstract class _ParserSendArchiveStatusRequest implements ParserSendArchiveStatu
 
   @override
 
-  /// .
+  /// Status archive parse status.
   @JsonKey(name: 'status')
   String get status => throw _privateConstructorUsedError;
   @override
 
-  /// .
+  /// Progress of archive unpacking.
   @JsonKey(name: 'progress')
   int get progress => throw _privateConstructorUsedError;
   @override

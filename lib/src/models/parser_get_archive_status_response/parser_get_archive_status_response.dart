@@ -10,6 +10,9 @@ class ParserGetArchiveStatusResponse with _$ParserGetArchiveStatusResponse {
   const factory ParserGetArchiveStatusResponse({
     /// Status archive parse status.
     @JsonKey(name: 'status') required String status,
+
+    /// Progress of archive unpacking.
+    @JsonKey(name: 'progress') required int progress,
   }) = _ParserGetArchiveStatusResponse;
 
   factory ParserGetArchiveStatusResponse.fromJson(Map<String, dynamic> json) =>

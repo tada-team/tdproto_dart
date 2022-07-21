@@ -21,9 +21,11 @@ ParserGetArchiveStatusResponse _$ParserGetArchiveStatusResponseFromJson(Map<Stri
 class _$ParserGetArchiveStatusResponseTearOff {
   const _$ParserGetArchiveStatusResponseTearOff();
 
-  _ParserGetArchiveStatusResponse call({@JsonKey(name: 'status') required String status}) {
+  _ParserGetArchiveStatusResponse call(
+      {@JsonKey(name: 'status') required String status, @JsonKey(name: 'progress') required int progress}) {
     return _ParserGetArchiveStatusResponse(
       status: status,
+      progress: progress,
     );
   }
 
@@ -41,6 +43,10 @@ mixin _$ParserGetArchiveStatusResponse {
   @JsonKey(name: 'status')
   String get status => throw _privateConstructorUsedError;
 
+  /// Progress of archive unpacking.
+  @JsonKey(name: 'progress')
+  int get progress => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $ParserGetArchiveStatusResponseCopyWith<ParserGetArchiveStatusResponse> get copyWith =>
@@ -52,7 +58,7 @@ abstract class $ParserGetArchiveStatusResponseCopyWith<$Res> {
   factory $ParserGetArchiveStatusResponseCopyWith(
           ParserGetArchiveStatusResponse value, $Res Function(ParserGetArchiveStatusResponse) then) =
       _$ParserGetArchiveStatusResponseCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'status') String status});
+  $Res call({@JsonKey(name: 'status') String status, @JsonKey(name: 'progress') int progress});
 }
 
 /// @nodoc
@@ -66,12 +72,17 @@ class _$ParserGetArchiveStatusResponseCopyWithImpl<$Res> implements $ParserGetAr
   @override
   $Res call({
     Object? status = freezed,
+    Object? progress = freezed,
   }) {
     return _then(_value.copyWith(
       status: status == freezed
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String,
+      progress: progress == freezed
+          ? _value.progress
+          : progress // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -82,7 +93,7 @@ abstract class _$ParserGetArchiveStatusResponseCopyWith<$Res> implements $Parser
           _ParserGetArchiveStatusResponse value, $Res Function(_ParserGetArchiveStatusResponse) then) =
       __$ParserGetArchiveStatusResponseCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'status') String status});
+  $Res call({@JsonKey(name: 'status') String status, @JsonKey(name: 'progress') int progress});
 }
 
 /// @nodoc
@@ -98,12 +109,17 @@ class __$ParserGetArchiveStatusResponseCopyWithImpl<$Res> extends _$ParserGetArc
   @override
   $Res call({
     Object? status = freezed,
+    Object? progress = freezed,
   }) {
     return _then(_ParserGetArchiveStatusResponse(
       status: status == freezed
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String,
+      progress: progress == freezed
+          ? _value.progress
+          : progress // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -111,7 +127,8 @@ class __$ParserGetArchiveStatusResponseCopyWithImpl<$Res> extends _$ParserGetArc
 /// @nodoc
 @JsonSerializable()
 class _$_ParserGetArchiveStatusResponse implements _ParserGetArchiveStatusResponse {
-  const _$_ParserGetArchiveStatusResponse({@JsonKey(name: 'status') required this.status});
+  const _$_ParserGetArchiveStatusResponse(
+      {@JsonKey(name: 'status') required this.status, @JsonKey(name: 'progress') required this.progress});
 
   factory _$_ParserGetArchiveStatusResponse.fromJson(Map<String, dynamic> json) =>
       _$$_ParserGetArchiveStatusResponseFromJson(json);
@@ -121,21 +138,30 @@ class _$_ParserGetArchiveStatusResponse implements _ParserGetArchiveStatusRespon
   /// Status archive parse status.
   @JsonKey(name: 'status')
   final String status;
+  @override
+
+  /// Progress of archive unpacking.
+  @JsonKey(name: 'progress')
+  final int progress;
 
   @override
   String toString() {
-    return 'ParserGetArchiveStatusResponse(status: $status)';
+    return 'ParserGetArchiveStatusResponse(status: $status, progress: $progress)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _ParserGetArchiveStatusResponse &&
-            (identical(other.status, status) || const DeepCollectionEquality().equals(other.status, status)));
+            (identical(other.status, status) || const DeepCollectionEquality().equals(other.status, status)) &&
+            (identical(other.progress, progress) || const DeepCollectionEquality().equals(other.progress, progress)));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(status);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(status) ^
+      const DeepCollectionEquality().hash(progress);
 
   @JsonKey(ignore: true)
   @override
@@ -149,8 +175,9 @@ class _$_ParserGetArchiveStatusResponse implements _ParserGetArchiveStatusRespon
 }
 
 abstract class _ParserGetArchiveStatusResponse implements ParserGetArchiveStatusResponse {
-  const factory _ParserGetArchiveStatusResponse({@JsonKey(name: 'status') required String status}) =
-      _$_ParserGetArchiveStatusResponse;
+  const factory _ParserGetArchiveStatusResponse(
+      {@JsonKey(name: 'status') required String status,
+      @JsonKey(name: 'progress') required int progress}) = _$_ParserGetArchiveStatusResponse;
 
   factory _ParserGetArchiveStatusResponse.fromJson(Map<String, dynamic> json) =
       _$_ParserGetArchiveStatusResponse.fromJson;
@@ -160,6 +187,11 @@ abstract class _ParserGetArchiveStatusResponse implements ParserGetArchiveStatus
   /// Status archive parse status.
   @JsonKey(name: 'status')
   String get status => throw _privateConstructorUsedError;
+  @override
+
+  /// Progress of archive unpacking.
+  @JsonKey(name: 'progress')
+  int get progress => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ParserGetArchiveStatusResponseCopyWith<_ParserGetArchiveStatusResponse> get copyWith =>
