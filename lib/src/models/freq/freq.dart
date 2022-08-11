@@ -16,6 +16,9 @@ class Freq with _$Freq {
 
     /// .
     @JsonKey(name: 'repeatability_type') required String repeatabilityType,
+
+    /// .
+    @JsonKey(name: 'repeatability_description') String? repeatabilityDescription,
   }) = _Freq;
 
   factory Freq.fromJson(Map<String, dynamic> json) => _$FreqFromJson(json);

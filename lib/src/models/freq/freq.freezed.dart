@@ -24,11 +24,13 @@ class _$FreqTearOff {
   _Freq call(
       {@JsonKey(name: 'frequency') required int frequency,
       @JsonKey(name: 'freq_days') List<int>? freqDays,
-      @JsonKey(name: 'repeatability_type') required String repeatabilityType}) {
+      @JsonKey(name: 'repeatability_type') required String repeatabilityType,
+      @JsonKey(name: 'repeatability_description') String? repeatabilityDescription}) {
     return _Freq(
       frequency: frequency,
       freqDays: freqDays,
       repeatabilityType: repeatabilityType,
+      repeatabilityDescription: repeatabilityDescription,
     );
   }
 
@@ -54,6 +56,10 @@ mixin _$Freq {
   @JsonKey(name: 'repeatability_type')
   String get repeatabilityType => throw _privateConstructorUsedError;
 
+  /// .
+  @JsonKey(name: 'repeatability_description')
+  String? get repeatabilityDescription => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $FreqCopyWith<Freq> get copyWith => throw _privateConstructorUsedError;
@@ -65,7 +71,8 @@ abstract class $FreqCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'frequency') int frequency,
       @JsonKey(name: 'freq_days') List<int>? freqDays,
-      @JsonKey(name: 'repeatability_type') String repeatabilityType});
+      @JsonKey(name: 'repeatability_type') String repeatabilityType,
+      @JsonKey(name: 'repeatability_description') String? repeatabilityDescription});
 }
 
 /// @nodoc
@@ -81,6 +88,7 @@ class _$FreqCopyWithImpl<$Res> implements $FreqCopyWith<$Res> {
     Object? frequency = freezed,
     Object? freqDays = freezed,
     Object? repeatabilityType = freezed,
+    Object? repeatabilityDescription = freezed,
   }) {
     return _then(_value.copyWith(
       frequency: frequency == freezed
@@ -95,6 +103,10 @@ class _$FreqCopyWithImpl<$Res> implements $FreqCopyWith<$Res> {
           ? _value.repeatabilityType
           : repeatabilityType // ignore: cast_nullable_to_non_nullable
               as String,
+      repeatabilityDescription: repeatabilityDescription == freezed
+          ? _value.repeatabilityDescription
+          : repeatabilityDescription // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -106,7 +118,8 @@ abstract class _$FreqCopyWith<$Res> implements $FreqCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'frequency') int frequency,
       @JsonKey(name: 'freq_days') List<int>? freqDays,
-      @JsonKey(name: 'repeatability_type') String repeatabilityType});
+      @JsonKey(name: 'repeatability_type') String repeatabilityType,
+      @JsonKey(name: 'repeatability_description') String? repeatabilityDescription});
 }
 
 /// @nodoc
@@ -121,6 +134,7 @@ class __$FreqCopyWithImpl<$Res> extends _$FreqCopyWithImpl<$Res> implements _$Fr
     Object? frequency = freezed,
     Object? freqDays = freezed,
     Object? repeatabilityType = freezed,
+    Object? repeatabilityDescription = freezed,
   }) {
     return _then(_Freq(
       frequency: frequency == freezed
@@ -135,6 +149,10 @@ class __$FreqCopyWithImpl<$Res> extends _$FreqCopyWithImpl<$Res> implements _$Fr
           ? _value.repeatabilityType
           : repeatabilityType // ignore: cast_nullable_to_non_nullable
               as String,
+      repeatabilityDescription: repeatabilityDescription == freezed
+          ? _value.repeatabilityDescription
+          : repeatabilityDescription // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -145,7 +163,8 @@ class _$_Freq implements _Freq {
   const _$_Freq(
       {@JsonKey(name: 'frequency') required this.frequency,
       @JsonKey(name: 'freq_days') this.freqDays,
-      @JsonKey(name: 'repeatability_type') required this.repeatabilityType});
+      @JsonKey(name: 'repeatability_type') required this.repeatabilityType,
+      @JsonKey(name: 'repeatability_description') this.repeatabilityDescription});
 
   factory _$_Freq.fromJson(Map<String, dynamic> json) => _$$_FreqFromJson(json);
 
@@ -164,10 +183,15 @@ class _$_Freq implements _Freq {
   /// .
   @JsonKey(name: 'repeatability_type')
   final String repeatabilityType;
+  @override
+
+  /// .
+  @JsonKey(name: 'repeatability_description')
+  final String? repeatabilityDescription;
 
   @override
   String toString() {
-    return 'Freq(frequency: $frequency, freqDays: $freqDays, repeatabilityType: $repeatabilityType)';
+    return 'Freq(frequency: $frequency, freqDays: $freqDays, repeatabilityType: $repeatabilityType, repeatabilityDescription: $repeatabilityDescription)';
   }
 
   @override
@@ -178,7 +202,9 @@ class _$_Freq implements _Freq {
                 const DeepCollectionEquality().equals(other.frequency, frequency)) &&
             (identical(other.freqDays, freqDays) || const DeepCollectionEquality().equals(other.freqDays, freqDays)) &&
             (identical(other.repeatabilityType, repeatabilityType) ||
-                const DeepCollectionEquality().equals(other.repeatabilityType, repeatabilityType)));
+                const DeepCollectionEquality().equals(other.repeatabilityType, repeatabilityType)) &&
+            (identical(other.repeatabilityDescription, repeatabilityDescription) ||
+                const DeepCollectionEquality().equals(other.repeatabilityDescription, repeatabilityDescription)));
   }
 
   @override
@@ -186,7 +212,8 @@ class _$_Freq implements _Freq {
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(frequency) ^
       const DeepCollectionEquality().hash(freqDays) ^
-      const DeepCollectionEquality().hash(repeatabilityType);
+      const DeepCollectionEquality().hash(repeatabilityType) ^
+      const DeepCollectionEquality().hash(repeatabilityDescription);
 
   @JsonKey(ignore: true)
   @override
@@ -202,7 +229,8 @@ abstract class _Freq implements Freq {
   const factory _Freq(
       {@JsonKey(name: 'frequency') required int frequency,
       @JsonKey(name: 'freq_days') List<int>? freqDays,
-      @JsonKey(name: 'repeatability_type') required String repeatabilityType}) = _$_Freq;
+      @JsonKey(name: 'repeatability_type') required String repeatabilityType,
+      @JsonKey(name: 'repeatability_description') String? repeatabilityDescription}) = _$_Freq;
 
   factory _Freq.fromJson(Map<String, dynamic> json) = _$_Freq.fromJson;
 
@@ -221,6 +249,11 @@ abstract class _Freq implements Freq {
   /// .
   @JsonKey(name: 'repeatability_type')
   String get repeatabilityType => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'repeatability_description')
+  String? get repeatabilityDescription => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$FreqCopyWith<_Freq> get copyWith => throw _privateConstructorUsedError;
