@@ -10,10 +10,12 @@ _$_ParserGenerateChatsResponse _$$_ParserGenerateChatsResponseFromJson(Map<Strin
     _$_ParserGenerateChatsResponse(
       processingAction: json['processing_action'] as String,
       actionType: json['action_type'] as String,
+      archiveName: json['archive_name'] as String,
     );
 
 Map<String, dynamic> _$$_ParserGenerateChatsResponseToJson(_$_ParserGenerateChatsResponse instance) =>
     <String, dynamic>{
       'processing_action': instance.processingAction,
       'action_type': instance.actionType,
+      'archive_name': instance.archiveName,
     };

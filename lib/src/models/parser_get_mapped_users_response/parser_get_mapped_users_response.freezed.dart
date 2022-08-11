@@ -21,9 +21,11 @@ ParserGetMappedUsersResponse _$ParserGetMappedUsersResponseFromJson(Map<String, 
 class _$ParserGetMappedUsersResponseTearOff {
   const _$ParserGetMappedUsersResponseTearOff();
 
-  _ParserGetMappedUsersResponse call({@JsonKey(name: 'users') required List<MappedUser> users}) {
+  _ParserGetMappedUsersResponse call(
+      {@JsonKey(name: 'users') required List<MappedUser> users, @JsonKey(name: 'chat_name') required String chatName}) {
     return _ParserGetMappedUsersResponse(
       users: users,
+      chatName: chatName,
     );
   }
 
@@ -41,6 +43,10 @@ mixin _$ParserGetMappedUsersResponse {
   @JsonKey(name: 'users')
   List<MappedUser> get users => throw _privateConstructorUsedError;
 
+  /// ChatName ...
+  @JsonKey(name: 'chat_name')
+  String get chatName => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $ParserGetMappedUsersResponseCopyWith<ParserGetMappedUsersResponse> get copyWith =>
@@ -52,7 +58,7 @@ abstract class $ParserGetMappedUsersResponseCopyWith<$Res> {
   factory $ParserGetMappedUsersResponseCopyWith(
           ParserGetMappedUsersResponse value, $Res Function(ParserGetMappedUsersResponse) then) =
       _$ParserGetMappedUsersResponseCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'users') List<MappedUser> users});
+  $Res call({@JsonKey(name: 'users') List<MappedUser> users, @JsonKey(name: 'chat_name') String chatName});
 }
 
 /// @nodoc
@@ -66,12 +72,17 @@ class _$ParserGetMappedUsersResponseCopyWithImpl<$Res> implements $ParserGetMapp
   @override
   $Res call({
     Object? users = freezed,
+    Object? chatName = freezed,
   }) {
     return _then(_value.copyWith(
       users: users == freezed
           ? _value.users
           : users // ignore: cast_nullable_to_non_nullable
               as List<MappedUser>,
+      chatName: chatName == freezed
+          ? _value.chatName
+          : chatName // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -82,7 +93,7 @@ abstract class _$ParserGetMappedUsersResponseCopyWith<$Res> implements $ParserGe
           _ParserGetMappedUsersResponse value, $Res Function(_ParserGetMappedUsersResponse) then) =
       __$ParserGetMappedUsersResponseCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'users') List<MappedUser> users});
+  $Res call({@JsonKey(name: 'users') List<MappedUser> users, @JsonKey(name: 'chat_name') String chatName});
 }
 
 /// @nodoc
@@ -98,12 +109,17 @@ class __$ParserGetMappedUsersResponseCopyWithImpl<$Res> extends _$ParserGetMappe
   @override
   $Res call({
     Object? users = freezed,
+    Object? chatName = freezed,
   }) {
     return _then(_ParserGetMappedUsersResponse(
       users: users == freezed
           ? _value.users
           : users // ignore: cast_nullable_to_non_nullable
               as List<MappedUser>,
+      chatName: chatName == freezed
+          ? _value.chatName
+          : chatName // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -111,7 +127,8 @@ class __$ParserGetMappedUsersResponseCopyWithImpl<$Res> extends _$ParserGetMappe
 /// @nodoc
 @JsonSerializable()
 class _$_ParserGetMappedUsersResponse implements _ParserGetMappedUsersResponse {
-  const _$_ParserGetMappedUsersResponse({@JsonKey(name: 'users') required this.users});
+  const _$_ParserGetMappedUsersResponse(
+      {@JsonKey(name: 'users') required this.users, @JsonKey(name: 'chat_name') required this.chatName});
 
   factory _$_ParserGetMappedUsersResponse.fromJson(Map<String, dynamic> json) =>
       _$$_ParserGetMappedUsersResponseFromJson(json);
@@ -121,21 +138,28 @@ class _$_ParserGetMappedUsersResponse implements _ParserGetMappedUsersResponse {
   /// Users ...
   @JsonKey(name: 'users')
   final List<MappedUser> users;
+  @override
+
+  /// ChatName ...
+  @JsonKey(name: 'chat_name')
+  final String chatName;
 
   @override
   String toString() {
-    return 'ParserGetMappedUsersResponse(users: $users)';
+    return 'ParserGetMappedUsersResponse(users: $users, chatName: $chatName)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _ParserGetMappedUsersResponse &&
-            (identical(other.users, users) || const DeepCollectionEquality().equals(other.users, users)));
+            (identical(other.users, users) || const DeepCollectionEquality().equals(other.users, users)) &&
+            (identical(other.chatName, chatName) || const DeepCollectionEquality().equals(other.chatName, chatName)));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(users);
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(users) ^ const DeepCollectionEquality().hash(chatName);
 
   @JsonKey(ignore: true)
   @override
@@ -149,8 +173,9 @@ class _$_ParserGetMappedUsersResponse implements _ParserGetMappedUsersResponse {
 }
 
 abstract class _ParserGetMappedUsersResponse implements ParserGetMappedUsersResponse {
-  const factory _ParserGetMappedUsersResponse({@JsonKey(name: 'users') required List<MappedUser> users}) =
-      _$_ParserGetMappedUsersResponse;
+  const factory _ParserGetMappedUsersResponse(
+      {@JsonKey(name: 'users') required List<MappedUser> users,
+      @JsonKey(name: 'chat_name') required String chatName}) = _$_ParserGetMappedUsersResponse;
 
   factory _ParserGetMappedUsersResponse.fromJson(Map<String, dynamic> json) = _$_ParserGetMappedUsersResponse.fromJson;
 
@@ -159,6 +184,11 @@ abstract class _ParserGetMappedUsersResponse implements ParserGetMappedUsersResp
   /// Users ...
   @JsonKey(name: 'users')
   List<MappedUser> get users => throw _privateConstructorUsedError;
+  @override
+
+  /// ChatName ...
+  @JsonKey(name: 'chat_name')
+  String get chatName => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ParserGetMappedUsersResponseCopyWith<_ParserGetMappedUsersResponse> get copyWith =>

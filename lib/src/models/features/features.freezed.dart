@@ -231,9 +231,7 @@ class _$FeaturesTearOff {
       @JsonKey(name: 'file_extension_blacklist')
           List<String>? fileExtensionBlacklist,
       @JsonKey(name: 'file_extension_whitelist_priority')
-          bool? fileExtensionWhitelistPriority,
-      @JsonKey(name: 'ChatsImportEnabled')
-          required bool chatsImportEnabled}) {
+          bool? fileExtensionWhitelistPriority}) {
     return _Features(
       host: host,
       build: build,
@@ -335,7 +333,6 @@ class _$FeaturesTearOff {
       fileExtensionWhitelist: fileExtensionWhitelist,
       fileExtensionBlacklist: fileExtensionBlacklist,
       fileExtensionWhitelistPriority: fileExtensionWhitelistPriority,
-      chatsImportEnabled: chatsImportEnabled,
     );
   }
 
@@ -759,10 +756,6 @@ mixin _$Features {
   @JsonKey(name: 'file_extension_whitelist_priority')
   bool? get fileExtensionWhitelistPriority => throw _privateConstructorUsedError;
 
-  /// ChatsImportEnabled import chat feature.
-  @JsonKey(name: 'ChatsImportEnabled')
-  bool get chatsImportEnabled => throw _privateConstructorUsedError;
-
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $FeaturesCopyWith<Features> get copyWith => throw _privateConstructorUsedError;
@@ -981,9 +974,7 @@ abstract class $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'file_extension_blacklist')
           List<String>? fileExtensionBlacklist,
       @JsonKey(name: 'file_extension_whitelist_priority')
-          bool? fileExtensionWhitelistPriority,
-      @JsonKey(name: 'ChatsImportEnabled')
-          bool chatsImportEnabled});
+          bool? fileExtensionWhitelistPriority});
 
   $TermsCopyWith<$Res> get terms;
   $WallpaperCopyWith<$Res>? get defaultWallpaper;
@@ -1099,7 +1090,6 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     Object? fileExtensionWhitelist = freezed,
     Object? fileExtensionBlacklist = freezed,
     Object? fileExtensionWhitelistPriority = freezed,
-    Object? chatsImportEnabled = freezed,
   }) {
     return _then(_value.copyWith(
       host: host == freezed
@@ -1502,10 +1492,6 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
           ? _value.fileExtensionWhitelistPriority
           : fileExtensionWhitelistPriority // ignore: cast_nullable_to_non_nullable
               as bool?,
-      chatsImportEnabled: chatsImportEnabled == freezed
-          ? _value.chatsImportEnabled
-          : chatsImportEnabled // ignore: cast_nullable_to_non_nullable
-              as bool,
     ));
   }
 
@@ -1742,9 +1728,7 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
       @JsonKey(name: 'file_extension_blacklist')
           List<String>? fileExtensionBlacklist,
       @JsonKey(name: 'file_extension_whitelist_priority')
-          bool? fileExtensionWhitelistPriority,
-      @JsonKey(name: 'ChatsImportEnabled')
-          bool chatsImportEnabled});
+          bool? fileExtensionWhitelistPriority});
 
   @override
   $TermsCopyWith<$Res> get terms;
@@ -1862,7 +1846,6 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
     Object? fileExtensionWhitelist = freezed,
     Object? fileExtensionBlacklist = freezed,
     Object? fileExtensionWhitelistPriority = freezed,
-    Object? chatsImportEnabled = freezed,
   }) {
     return _then(_Features(
       host: host == freezed
@@ -2265,10 +2248,6 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
           ? _value.fileExtensionWhitelistPriority
           : fileExtensionWhitelistPriority // ignore: cast_nullable_to_non_nullable
               as bool?,
-      chatsImportEnabled: chatsImportEnabled == freezed
-          ? _value.chatsImportEnabled
-          : chatsImportEnabled // ignore: cast_nullable_to_non_nullable
-              as bool,
     ));
   }
 }
@@ -2486,9 +2465,7 @@ class _$_Features implements _Features {
       @JsonKey(name: 'file_extension_blacklist')
           this.fileExtensionBlacklist,
       @JsonKey(name: 'file_extension_whitelist_priority')
-          this.fileExtensionWhitelistPriority,
-      @JsonKey(name: 'ChatsImportEnabled')
-          required this.chatsImportEnabled});
+          this.fileExtensionWhitelistPriority});
 
   factory _$_Features.fromJson(Map<String, dynamic> json) => _$$_FeaturesFromJson(json);
 
@@ -3002,15 +2979,10 @@ class _$_Features implements _Features {
   /// File Extension Whitelist Priority.
   @JsonKey(name: 'file_extension_whitelist_priority')
   final bool? fileExtensionWhitelistPriority;
-  @override
-
-  /// ChatsImportEnabled import chat feature.
-  @JsonKey(name: 'ChatsImportEnabled')
-  final bool chatsImportEnabled;
 
   @override
   String toString() {
-    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, rumarketApp: $rumarketApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, authByKerberos: $authByKerberos, reCaptchaEnabled: $reCaptchaEnabled, reCaptchaWebKeyV3: $reCaptchaWebKeyV3, reCaptchaWebKeyV2: $reCaptchaWebKeyV2, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, iceTransportPolicy: $iceTransportPolicy, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, callsAudioEnabled: $callsAudioEnabled, callsVideoEnabled: $callsVideoEnabled, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, billing: $billing, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority, chatsImportEnabled: $chatsImportEnabled)';
+    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, rumarketApp: $rumarketApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, authByKerberos: $authByKerberos, reCaptchaEnabled: $reCaptchaEnabled, reCaptchaWebKeyV3: $reCaptchaWebKeyV3, reCaptchaWebKeyV2: $reCaptchaWebKeyV2, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, iceTransportPolicy: $iceTransportPolicy, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, callsAudioEnabled: $callsAudioEnabled, callsVideoEnabled: $callsVideoEnabled, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, billing: $billing, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority)';
   }
 
   @override
@@ -3160,8 +3132,7 @@ class _$_Features implements _Features {
             (identical(other.minAppVersion, minAppVersion) || const DeepCollectionEquality().equals(other.minAppVersion, minAppVersion)) &&
             (identical(other.fileExtensionWhitelist, fileExtensionWhitelist) || const DeepCollectionEquality().equals(other.fileExtensionWhitelist, fileExtensionWhitelist)) &&
             (identical(other.fileExtensionBlacklist, fileExtensionBlacklist) || const DeepCollectionEquality().equals(other.fileExtensionBlacklist, fileExtensionBlacklist)) &&
-            (identical(other.fileExtensionWhitelistPriority, fileExtensionWhitelistPriority) || const DeepCollectionEquality().equals(other.fileExtensionWhitelistPriority, fileExtensionWhitelistPriority)) &&
-            (identical(other.chatsImportEnabled, chatsImportEnabled) || const DeepCollectionEquality().equals(other.chatsImportEnabled, chatsImportEnabled)));
+            (identical(other.fileExtensionWhitelistPriority, fileExtensionWhitelistPriority) || const DeepCollectionEquality().equals(other.fileExtensionWhitelistPriority, fileExtensionWhitelistPriority)));
   }
 
   @override
@@ -3266,8 +3237,7 @@ class _$_Features implements _Features {
       const DeepCollectionEquality().hash(minAppVersion) ^
       const DeepCollectionEquality().hash(fileExtensionWhitelist) ^
       const DeepCollectionEquality().hash(fileExtensionBlacklist) ^
-      const DeepCollectionEquality().hash(fileExtensionWhitelistPriority) ^
-      const DeepCollectionEquality().hash(chatsImportEnabled);
+      const DeepCollectionEquality().hash(fileExtensionWhitelistPriority);
 
   @JsonKey(ignore: true)
   @override
@@ -3490,9 +3460,7 @@ abstract class _Features implements Features {
       @JsonKey(name: 'file_extension_blacklist')
           List<String>? fileExtensionBlacklist,
       @JsonKey(name: 'file_extension_whitelist_priority')
-          bool? fileExtensionWhitelistPriority,
-      @JsonKey(name: 'ChatsImportEnabled')
-          required bool chatsImportEnabled}) = _$_Features;
+          bool? fileExtensionWhitelistPriority}) = _$_Features;
 
   factory _Features.fromJson(Map<String, dynamic> json) = _$_Features.fromJson;
 
@@ -4006,11 +3974,6 @@ abstract class _Features implements Features {
   /// File Extension Whitelist Priority.
   @JsonKey(name: 'file_extension_whitelist_priority')
   bool? get fileExtensionWhitelistPriority => throw _privateConstructorUsedError;
-  @override
-
-  /// ChatsImportEnabled import chat feature.
-  @JsonKey(name: 'ChatsImportEnabled')
-  bool get chatsImportEnabled => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$FeaturesCopyWith<_Features> get copyWith => throw _privateConstructorUsedError;

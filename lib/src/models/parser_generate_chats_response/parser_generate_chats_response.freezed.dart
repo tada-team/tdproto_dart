@@ -23,10 +23,12 @@ class _$ParserGenerateChatsResponseTearOff {
 
   _ParserGenerateChatsResponse call(
       {@JsonKey(name: 'processing_action') required String processingAction,
-      @JsonKey(name: 'action_type') required String actionType}) {
+      @JsonKey(name: 'action_type') required String actionType,
+      @JsonKey(name: 'archive_name') required String archiveName}) {
     return _ParserGenerateChatsResponse(
       processingAction: processingAction,
       actionType: actionType,
+      archiveName: archiveName,
     );
   }
 
@@ -48,6 +50,10 @@ mixin _$ParserGenerateChatsResponse {
   @JsonKey(name: 'action_type')
   String get actionType => throw _privateConstructorUsedError;
 
+  /// ArchiveName name of archive.
+  @JsonKey(name: 'archive_name')
+  String get archiveName => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $ParserGenerateChatsResponseCopyWith<ParserGenerateChatsResponse> get copyWith => throw _privateConstructorUsedError;
@@ -59,7 +65,9 @@ abstract class $ParserGenerateChatsResponseCopyWith<$Res> {
           ParserGenerateChatsResponse value, $Res Function(ParserGenerateChatsResponse) then) =
       _$ParserGenerateChatsResponseCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'processing_action') String processingAction, @JsonKey(name: 'action_type') String actionType});
+      {@JsonKey(name: 'processing_action') String processingAction,
+      @JsonKey(name: 'action_type') String actionType,
+      @JsonKey(name: 'archive_name') String archiveName});
 }
 
 /// @nodoc
@@ -74,6 +82,7 @@ class _$ParserGenerateChatsResponseCopyWithImpl<$Res> implements $ParserGenerate
   $Res call({
     Object? processingAction = freezed,
     Object? actionType = freezed,
+    Object? archiveName = freezed,
   }) {
     return _then(_value.copyWith(
       processingAction: processingAction == freezed
@@ -83,6 +92,10 @@ class _$ParserGenerateChatsResponseCopyWithImpl<$Res> implements $ParserGenerate
       actionType: actionType == freezed
           ? _value.actionType
           : actionType // ignore: cast_nullable_to_non_nullable
+              as String,
+      archiveName: archiveName == freezed
+          ? _value.archiveName
+          : archiveName // ignore: cast_nullable_to_non_nullable
               as String,
     ));
   }
@@ -95,7 +108,9 @@ abstract class _$ParserGenerateChatsResponseCopyWith<$Res> implements $ParserGen
       __$ParserGenerateChatsResponseCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'processing_action') String processingAction, @JsonKey(name: 'action_type') String actionType});
+      {@JsonKey(name: 'processing_action') String processingAction,
+      @JsonKey(name: 'action_type') String actionType,
+      @JsonKey(name: 'archive_name') String archiveName});
 }
 
 /// @nodoc
@@ -112,6 +127,7 @@ class __$ParserGenerateChatsResponseCopyWithImpl<$Res> extends _$ParserGenerateC
   $Res call({
     Object? processingAction = freezed,
     Object? actionType = freezed,
+    Object? archiveName = freezed,
   }) {
     return _then(_ParserGenerateChatsResponse(
       processingAction: processingAction == freezed
@@ -122,6 +138,10 @@ class __$ParserGenerateChatsResponseCopyWithImpl<$Res> extends _$ParserGenerateC
           ? _value.actionType
           : actionType // ignore: cast_nullable_to_non_nullable
               as String,
+      archiveName: archiveName == freezed
+          ? _value.archiveName
+          : archiveName // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -131,7 +151,8 @@ class __$ParserGenerateChatsResponseCopyWithImpl<$Res> extends _$ParserGenerateC
 class _$_ParserGenerateChatsResponse implements _ParserGenerateChatsResponse {
   const _$_ParserGenerateChatsResponse(
       {@JsonKey(name: 'processing_action') required this.processingAction,
-      @JsonKey(name: 'action_type') required this.actionType});
+      @JsonKey(name: 'action_type') required this.actionType,
+      @JsonKey(name: 'archive_name') required this.archiveName});
 
   factory _$_ParserGenerateChatsResponse.fromJson(Map<String, dynamic> json) =>
       _$$_ParserGenerateChatsResponseFromJson(json);
@@ -146,10 +167,15 @@ class _$_ParserGenerateChatsResponse implements _ParserGenerateChatsResponse {
   /// ActionType must be generate_chat.
   @JsonKey(name: 'action_type')
   final String actionType;
+  @override
+
+  /// ArchiveName name of archive.
+  @JsonKey(name: 'archive_name')
+  final String archiveName;
 
   @override
   String toString() {
-    return 'ParserGenerateChatsResponse(processingAction: $processingAction, actionType: $actionType)';
+    return 'ParserGenerateChatsResponse(processingAction: $processingAction, actionType: $actionType, archiveName: $archiveName)';
   }
 
   @override
@@ -159,14 +185,17 @@ class _$_ParserGenerateChatsResponse implements _ParserGenerateChatsResponse {
             (identical(other.processingAction, processingAction) ||
                 const DeepCollectionEquality().equals(other.processingAction, processingAction)) &&
             (identical(other.actionType, actionType) ||
-                const DeepCollectionEquality().equals(other.actionType, actionType)));
+                const DeepCollectionEquality().equals(other.actionType, actionType)) &&
+            (identical(other.archiveName, archiveName) ||
+                const DeepCollectionEquality().equals(other.archiveName, archiveName)));
   }
 
   @override
   int get hashCode =>
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(processingAction) ^
-      const DeepCollectionEquality().hash(actionType);
+      const DeepCollectionEquality().hash(actionType) ^
+      const DeepCollectionEquality().hash(archiveName);
 
   @JsonKey(ignore: true)
   @override
@@ -182,7 +211,8 @@ class _$_ParserGenerateChatsResponse implements _ParserGenerateChatsResponse {
 abstract class _ParserGenerateChatsResponse implements ParserGenerateChatsResponse {
   const factory _ParserGenerateChatsResponse(
       {@JsonKey(name: 'processing_action') required String processingAction,
-      @JsonKey(name: 'action_type') required String actionType}) = _$_ParserGenerateChatsResponse;
+      @JsonKey(name: 'action_type') required String actionType,
+      @JsonKey(name: 'archive_name') required String archiveName}) = _$_ParserGenerateChatsResponse;
 
   factory _ParserGenerateChatsResponse.fromJson(Map<String, dynamic> json) = _$_ParserGenerateChatsResponse.fromJson;
 
@@ -196,6 +226,11 @@ abstract class _ParserGenerateChatsResponse implements ParserGenerateChatsRespon
   /// ActionType must be generate_chat.
   @JsonKey(name: 'action_type')
   String get actionType => throw _privateConstructorUsedError;
+  @override
+
+  /// ArchiveName name of archive.
+  @JsonKey(name: 'archive_name')
+  String get archiveName => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ParserGenerateChatsResponseCopyWith<_ParserGenerateChatsResponse> get copyWith =>

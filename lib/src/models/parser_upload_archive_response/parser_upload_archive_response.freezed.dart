@@ -24,11 +24,13 @@ class _$ParserUploadArchiveResponseTearOff {
   _ParserUploadArchiveResponse call(
       {@JsonKey(name: 'success') required bool success,
       @JsonKey(name: 'processing_action') required String processingAction,
-      @JsonKey(name: 'action_type') required String actionType}) {
+      @JsonKey(name: 'action_type') required String actionType,
+      @JsonKey(name: 'archive_name') required String archiveName}) {
     return _ParserUploadArchiveResponse(
       success: success,
       processingAction: processingAction,
       actionType: actionType,
+      archiveName: archiveName,
     );
   }
 
@@ -54,6 +56,10 @@ mixin _$ParserUploadArchiveResponse {
   @JsonKey(name: 'action_type')
   String get actionType => throw _privateConstructorUsedError;
 
+  /// ArchiveName name of archive.
+  @JsonKey(name: 'archive_name')
+  String get archiveName => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $ParserUploadArchiveResponseCopyWith<ParserUploadArchiveResponse> get copyWith => throw _privateConstructorUsedError;
@@ -67,7 +73,8 @@ abstract class $ParserUploadArchiveResponseCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'success') bool success,
       @JsonKey(name: 'processing_action') String processingAction,
-      @JsonKey(name: 'action_type') String actionType});
+      @JsonKey(name: 'action_type') String actionType,
+      @JsonKey(name: 'archive_name') String archiveName});
 }
 
 /// @nodoc
@@ -83,6 +90,7 @@ class _$ParserUploadArchiveResponseCopyWithImpl<$Res> implements $ParserUploadAr
     Object? success = freezed,
     Object? processingAction = freezed,
     Object? actionType = freezed,
+    Object? archiveName = freezed,
   }) {
     return _then(_value.copyWith(
       success: success == freezed
@@ -97,6 +105,10 @@ class _$ParserUploadArchiveResponseCopyWithImpl<$Res> implements $ParserUploadAr
           ? _value.actionType
           : actionType // ignore: cast_nullable_to_non_nullable
               as String,
+      archiveName: archiveName == freezed
+          ? _value.archiveName
+          : archiveName // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -110,7 +122,8 @@ abstract class _$ParserUploadArchiveResponseCopyWith<$Res> implements $ParserUpl
   $Res call(
       {@JsonKey(name: 'success') bool success,
       @JsonKey(name: 'processing_action') String processingAction,
-      @JsonKey(name: 'action_type') String actionType});
+      @JsonKey(name: 'action_type') String actionType,
+      @JsonKey(name: 'archive_name') String archiveName});
 }
 
 /// @nodoc
@@ -128,6 +141,7 @@ class __$ParserUploadArchiveResponseCopyWithImpl<$Res> extends _$ParserUploadArc
     Object? success = freezed,
     Object? processingAction = freezed,
     Object? actionType = freezed,
+    Object? archiveName = freezed,
   }) {
     return _then(_ParserUploadArchiveResponse(
       success: success == freezed
@@ -142,6 +156,10 @@ class __$ParserUploadArchiveResponseCopyWithImpl<$Res> extends _$ParserUploadArc
           ? _value.actionType
           : actionType // ignore: cast_nullable_to_non_nullable
               as String,
+      archiveName: archiveName == freezed
+          ? _value.archiveName
+          : archiveName // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -152,7 +170,8 @@ class _$_ParserUploadArchiveResponse implements _ParserUploadArchiveResponse {
   const _$_ParserUploadArchiveResponse(
       {@JsonKey(name: 'success') required this.success,
       @JsonKey(name: 'processing_action') required this.processingAction,
-      @JsonKey(name: 'action_type') required this.actionType});
+      @JsonKey(name: 'action_type') required this.actionType,
+      @JsonKey(name: 'archive_name') required this.archiveName});
 
   factory _$_ParserUploadArchiveResponse.fromJson(Map<String, dynamic> json) =>
       _$$_ParserUploadArchiveResponseFromJson(json);
@@ -172,10 +191,15 @@ class _$_ParserUploadArchiveResponse implements _ParserUploadArchiveResponse {
   /// ActionType must be archive_unpacking.
   @JsonKey(name: 'action_type')
   final String actionType;
+  @override
+
+  /// ArchiveName name of archive.
+  @JsonKey(name: 'archive_name')
+  final String archiveName;
 
   @override
   String toString() {
-    return 'ParserUploadArchiveResponse(success: $success, processingAction: $processingAction, actionType: $actionType)';
+    return 'ParserUploadArchiveResponse(success: $success, processingAction: $processingAction, actionType: $actionType, archiveName: $archiveName)';
   }
 
   @override
@@ -186,7 +210,9 @@ class _$_ParserUploadArchiveResponse implements _ParserUploadArchiveResponse {
             (identical(other.processingAction, processingAction) ||
                 const DeepCollectionEquality().equals(other.processingAction, processingAction)) &&
             (identical(other.actionType, actionType) ||
-                const DeepCollectionEquality().equals(other.actionType, actionType)));
+                const DeepCollectionEquality().equals(other.actionType, actionType)) &&
+            (identical(other.archiveName, archiveName) ||
+                const DeepCollectionEquality().equals(other.archiveName, archiveName)));
   }
 
   @override
@@ -194,7 +220,8 @@ class _$_ParserUploadArchiveResponse implements _ParserUploadArchiveResponse {
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(success) ^
       const DeepCollectionEquality().hash(processingAction) ^
-      const DeepCollectionEquality().hash(actionType);
+      const DeepCollectionEquality().hash(actionType) ^
+      const DeepCollectionEquality().hash(archiveName);
 
   @JsonKey(ignore: true)
   @override
@@ -211,7 +238,8 @@ abstract class _ParserUploadArchiveResponse implements ParserUploadArchiveRespon
   const factory _ParserUploadArchiveResponse(
       {@JsonKey(name: 'success') required bool success,
       @JsonKey(name: 'processing_action') required String processingAction,
-      @JsonKey(name: 'action_type') required String actionType}) = _$_ParserUploadArchiveResponse;
+      @JsonKey(name: 'action_type') required String actionType,
+      @JsonKey(name: 'archive_name') required String archiveName}) = _$_ParserUploadArchiveResponse;
 
   factory _ParserUploadArchiveResponse.fromJson(Map<String, dynamic> json) = _$_ParserUploadArchiveResponse.fromJson;
 
@@ -230,6 +258,11 @@ abstract class _ParserUploadArchiveResponse implements ParserUploadArchiveRespon
   /// ActionType must be archive_unpacking.
   @JsonKey(name: 'action_type')
   String get actionType => throw _privateConstructorUsedError;
+  @override
+
+  /// ArchiveName name of archive.
+  @JsonKey(name: 'archive_name')
+  String get archiveName => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ParserUploadArchiveResponseCopyWith<_ParserUploadArchiveResponse> get copyWith =>

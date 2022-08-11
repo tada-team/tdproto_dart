@@ -17,6 +17,9 @@ class ServerProcessingParams with _$ServerProcessingParams {
     /// Message.
     @JsonKey(name: 'message') required String message,
 
+    /// Body.
+    @JsonKey(name: 'body') String? body,
+
     /// Has error.
     @JsonKey(name: 'has_error') required bool hasError,
 

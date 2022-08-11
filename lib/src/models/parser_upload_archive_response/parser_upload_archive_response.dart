@@ -16,6 +16,9 @@ class ParserUploadArchiveResponse with _$ParserUploadArchiveResponse {
 
     /// ActionType must be archive_unpacking.
     @JsonKey(name: 'action_type') required String actionType,
+
+    /// ArchiveName name of archive.
+    @JsonKey(name: 'archive_name') required String archiveName,
   }) = _ParserUploadArchiveResponse;
 
   factory ParserUploadArchiveResponse.fromJson(Map<String, dynamic> json) =>

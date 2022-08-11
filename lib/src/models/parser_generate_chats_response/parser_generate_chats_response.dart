@@ -13,6 +13,9 @@ class ParserGenerateChatsResponse with _$ParserGenerateChatsResponse {
 
     /// ActionType must be generate_chat.
     @JsonKey(name: 'action_type') required String actionType,
+
+    /// ArchiveName name of archive.
+    @JsonKey(name: 'archive_name') required String archiveName,
   }) = _ParserGenerateChatsResponse;
 
   factory ParserGenerateChatsResponse.fromJson(Map<String, dynamic> json) =>

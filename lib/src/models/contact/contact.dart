@@ -194,6 +194,9 @@ class Contact with _$Contact {
     /// Can I view/join public tasks in this team.
     @JsonKey(name: 'can_join_public_tasks') bool? canJoinPublicTasks,
 
+    /// Can I import chats from external services (now its only telegram).
+    @JsonKey(name: 'can_import_chats') bool? canImportChats,
+
     /// Extra contact fields.
     @JsonKey(name: 'custom_fields') ContactCustomFields? customFields,
 

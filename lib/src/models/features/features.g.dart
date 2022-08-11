@@ -112,7 +112,6 @@ _$_Features _$$_FeaturesFromJson(Map<String, dynamic> json) => _$_Features(
       fileExtensionWhitelist: (json['file_extension_whitelist'] as List<dynamic>?)?.map((e) => e as String).toList(),
       fileExtensionBlacklist: (json['file_extension_blacklist'] as List<dynamic>?)?.map((e) => e as String).toList(),
       fileExtensionWhitelistPriority: json['file_extension_whitelist_priority'] as bool?,
-      chatsImportEnabled: json['ChatsImportEnabled'] as bool,
     );
 
 Map<String, dynamic> _$$_FeaturesToJson(_$_Features instance) => <String, dynamic>{
@@ -216,5 +215,4 @@ Map<String, dynamic> _$$_FeaturesToJson(_$_Features instance) => <String, dynami
       'file_extension_whitelist': instance.fileExtensionWhitelist,
       'file_extension_blacklist': instance.fileExtensionBlacklist,
       'file_extension_whitelist_priority': instance.fileExtensionWhitelistPriority,
-      'ChatsImportEnabled': instance.chatsImportEnabled,
     };

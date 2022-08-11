@@ -11,6 +11,7 @@ _$_ParserUploadArchiveResponse _$$_ParserUploadArchiveResponseFromJson(Map<Strin
       success: json['success'] as bool,
       processingAction: json['processing_action'] as String,
       actionType: json['action_type'] as String,
+      archiveName: json['archive_name'] as String,
     );
 
 Map<String, dynamic> _$$_ParserUploadArchiveResponseToJson(_$_ParserUploadArchiveResponse instance) =>
@@ -18,4 +19,5 @@ Map<String, dynamic> _$$_ParserUploadArchiveResponseToJson(_$_ParserUploadArchiv
       'success': instance.success,
       'processing_action': instance.processingAction,
       'action_type': instance.actionType,
+      'archive_name': instance.archiveName,
     };
