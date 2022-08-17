@@ -165,6 +165,7 @@ export 'src/models/meetings_count_response/meetings_count_response.dart';
 export 'src/models/meetings_create_request/meetings_create_request.dart';
 export 'src/models/meetings_dates_response/meetings_dates_response.dart';
 export 'src/models/meetings_delete_request_params/meetings_delete_request_params.dart';
+export 'src/models/meetings_get_frequency_description_params/meetings_get_frequency_description_params.dart';
 export 'src/models/meetings_get_request/meetings_get_request.dart';
 export 'src/models/meetings_member_create_params/meetings_member_create_params.dart';
 export 'src/models/meetings_members_batch_delete_request_params/meetings_members_batch_delete_request_params.dart';
