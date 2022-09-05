@@ -26,6 +26,9 @@ class CallOnliner with _$CallOnliner {
     /// Video state.
     @JsonKey(name: 'enabled_video') required bool enabledVideo,
 
+    /// Screenshare state.
+    @JsonKey(name: 'enabled_screenshare') required bool enabledScreenshare,
+
     /// Member devices, strictly one for now.
     @JsonKey(name: 'devices') required List<CallDevice> devices,
   }) = _CallOnliner;

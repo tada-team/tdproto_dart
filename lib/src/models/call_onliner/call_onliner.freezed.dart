@@ -28,6 +28,7 @@ class _$CallOnlinerTearOff {
       @JsonKey(name: 'icon') required String icon,
       @JsonKey(name: 'muted') required bool muted,
       @JsonKey(name: 'enabled_video') required bool enabledVideo,
+      @JsonKey(name: 'enabled_screenshare') required bool enabledScreenshare,
       @JsonKey(name: 'devices') required List<CallDevice> devices}) {
     return _CallOnliner(
       jid: jid,
@@ -36,6 +37,7 @@ class _$CallOnlinerTearOff {
       icon: icon,
       muted: muted,
       enabledVideo: enabledVideo,
+      enabledScreenshare: enabledScreenshare,
       devices: devices,
     );
   }
@@ -74,6 +76,10 @@ mixin _$CallOnliner {
   @JsonKey(name: 'enabled_video')
   bool get enabledVideo => throw _privateConstructorUsedError;
 
+  /// Screenshare state.
+  @JsonKey(name: 'enabled_screenshare')
+  bool get enabledScreenshare => throw _privateConstructorUsedError;
+
   /// Member devices, strictly one for now.
   @JsonKey(name: 'devices')
   List<CallDevice> get devices => throw _privateConstructorUsedError;
@@ -93,6 +99,7 @@ abstract class $CallOnlinerCopyWith<$Res> {
       @JsonKey(name: 'icon') String icon,
       @JsonKey(name: 'muted') bool muted,
       @JsonKey(name: 'enabled_video') bool enabledVideo,
+      @JsonKey(name: 'enabled_screenshare') bool enabledScreenshare,
       @JsonKey(name: 'devices') List<CallDevice> devices});
 }
 
@@ -112,6 +119,7 @@ class _$CallOnlinerCopyWithImpl<$Res> implements $CallOnlinerCopyWith<$Res> {
     Object? icon = freezed,
     Object? muted = freezed,
     Object? enabledVideo = freezed,
+    Object? enabledScreenshare = freezed,
     Object? devices = freezed,
   }) {
     return _then(_value.copyWith(
@@ -139,6 +147,10 @@ class _$CallOnlinerCopyWithImpl<$Res> implements $CallOnlinerCopyWith<$Res> {
           ? _value.enabledVideo
           : enabledVideo // ignore: cast_nullable_to_non_nullable
               as bool,
+      enabledScreenshare: enabledScreenshare == freezed
+          ? _value.enabledScreenshare
+          : enabledScreenshare // ignore: cast_nullable_to_non_nullable
+              as bool,
       devices: devices == freezed
           ? _value.devices
           : devices // ignore: cast_nullable_to_non_nullable
@@ -159,6 +171,7 @@ abstract class _$CallOnlinerCopyWith<$Res> implements $CallOnlinerCopyWith<$Res>
       @JsonKey(name: 'icon') String icon,
       @JsonKey(name: 'muted') bool muted,
       @JsonKey(name: 'enabled_video') bool enabledVideo,
+      @JsonKey(name: 'enabled_screenshare') bool enabledScreenshare,
       @JsonKey(name: 'devices') List<CallDevice> devices});
 }
 
@@ -178,6 +191,7 @@ class __$CallOnlinerCopyWithImpl<$Res> extends _$CallOnlinerCopyWithImpl<$Res> i
     Object? icon = freezed,
     Object? muted = freezed,
     Object? enabledVideo = freezed,
+    Object? enabledScreenshare = freezed,
     Object? devices = freezed,
   }) {
     return _then(_CallOnliner(
@@ -205,6 +219,10 @@ class __$CallOnlinerCopyWithImpl<$Res> extends _$CallOnlinerCopyWithImpl<$Res> i
           ? _value.enabledVideo
           : enabledVideo // ignore: cast_nullable_to_non_nullable
               as bool,
+      enabledScreenshare: enabledScreenshare == freezed
+          ? _value.enabledScreenshare
+          : enabledScreenshare // ignore: cast_nullable_to_non_nullable
+              as bool,
       devices: devices == freezed
           ? _value.devices
           : devices // ignore: cast_nullable_to_non_nullable
@@ -223,6 +241,7 @@ class _$_CallOnliner implements _CallOnliner {
       @JsonKey(name: 'icon') required this.icon,
       @JsonKey(name: 'muted') required this.muted,
       @JsonKey(name: 'enabled_video') required this.enabledVideo,
+      @JsonKey(name: 'enabled_screenshare') required this.enabledScreenshare,
       @JsonKey(name: 'devices') required this.devices});
 
   factory _$_CallOnliner.fromJson(Map<String, dynamic> json) => _$$_CallOnlinerFromJson(json);
@@ -259,13 +278,18 @@ class _$_CallOnliner implements _CallOnliner {
   final bool enabledVideo;
   @override
 
+  /// Screenshare state.
+  @JsonKey(name: 'enabled_screenshare')
+  final bool enabledScreenshare;
+  @override
+
   /// Member devices, strictly one for now.
   @JsonKey(name: 'devices')
   final List<CallDevice> devices;
 
   @override
   String toString() {
-    return 'CallOnliner(jid: $jid, displayName: $displayName, role: $role, icon: $icon, muted: $muted, enabledVideo: $enabledVideo, devices: $devices)';
+    return 'CallOnliner(jid: $jid, displayName: $displayName, role: $role, icon: $icon, muted: $muted, enabledVideo: $enabledVideo, enabledScreenshare: $enabledScreenshare, devices: $devices)';
   }
 
   @override
@@ -280,6 +304,8 @@ class _$_CallOnliner implements _CallOnliner {
             (identical(other.muted, muted) || const DeepCollectionEquality().equals(other.muted, muted)) &&
             (identical(other.enabledVideo, enabledVideo) ||
                 const DeepCollectionEquality().equals(other.enabledVideo, enabledVideo)) &&
+            (identical(other.enabledScreenshare, enabledScreenshare) ||
+                const DeepCollectionEquality().equals(other.enabledScreenshare, enabledScreenshare)) &&
             (identical(other.devices, devices) || const DeepCollectionEquality().equals(other.devices, devices)));
   }
 
@@ -292,6 +318,7 @@ class _$_CallOnliner implements _CallOnliner {
       const DeepCollectionEquality().hash(icon) ^
       const DeepCollectionEquality().hash(muted) ^
       const DeepCollectionEquality().hash(enabledVideo) ^
+      const DeepCollectionEquality().hash(enabledScreenshare) ^
       const DeepCollectionEquality().hash(devices);
 
   @JsonKey(ignore: true)
@@ -312,6 +339,7 @@ abstract class _CallOnliner implements CallOnliner {
       @JsonKey(name: 'icon') required String icon,
       @JsonKey(name: 'muted') required bool muted,
       @JsonKey(name: 'enabled_video') required bool enabledVideo,
+      @JsonKey(name: 'enabled_screenshare') required bool enabledScreenshare,
       @JsonKey(name: 'devices') required List<CallDevice> devices}) = _$_CallOnliner;
 
   factory _CallOnliner.fromJson(Map<String, dynamic> json) = _$_CallOnliner.fromJson;
@@ -346,6 +374,11 @@ abstract class _CallOnliner implements CallOnliner {
   /// Video state.
   @JsonKey(name: 'enabled_video')
   bool get enabledVideo => throw _privateConstructorUsedError;
+  @override
+
+  /// Screenshare state.
+  @JsonKey(name: 'enabled_screenshare')
+  bool get enabledScreenshare => throw _privateConstructorUsedError;
   @override
 
   /// Member devices, strictly one for now.
