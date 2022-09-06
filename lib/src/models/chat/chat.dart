@@ -217,6 +217,12 @@ class Chat with _$Chat {
 
     /// Deprecated.
     @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') int? draftNum,
+
+    /// Start date of meeting chat.
+    @JsonKey(name: 'meeting_start_at') @DateTimeConverter() DateTime? meetingStartAt,
+
+    /// Meeting has frequency.
+    @JsonKey(name: 'meeting_freq') bool? meetingFreq,
   }) = _Chat;
 
   factory Chat.fromJson(Map<String, dynamic> json) => _$ChatFromJson(json);

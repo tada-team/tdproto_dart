@@ -79,6 +79,8 @@ _$_Chat _$$_ChatFromJson(Map<String, dynamic> json) => _$_Chat(
       canSetImportantAnyMessage: json['can_set_important_any_message'] as bool?,
       lastActivity: json['last_activity'] == null ? null : DateTime.parse(json['last_activity'] as String),
       draftNum: json['draft_num'] as int?,
+      meetingStartAt: json['meeting_start_at'] == null ? null : DateTime.parse(json['meeting_start_at'] as String),
+      meetingFreq: json['meeting_freq'] as bool?,
     );
 
 Map<String, dynamic> _$$_ChatToJson(_$_Chat instance) => <String, dynamic>{
@@ -152,4 +154,6 @@ Map<String, dynamic> _$$_ChatToJson(_$_Chat instance) => <String, dynamic>{
       'can_set_important_any_message': instance.canSetImportantAnyMessage,
       'last_activity': instance.lastActivity?.toIso8601String(),
       'draft_num': instance.draftNum,
+      'meeting_start_at': instance.meetingStartAt?.toIso8601String(),
+      'meeting_freq': instance.meetingFreq,
     };
