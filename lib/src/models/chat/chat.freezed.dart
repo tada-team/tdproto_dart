@@ -93,7 +93,8 @@ class _$ChatTearOff {
       @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,
       @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') int? draftNum,
       @JsonKey(name: 'meeting_start_at') @DateTimeConverter() DateTime? meetingStartAt,
-      @JsonKey(name: 'meeting_freq') bool? meetingFreq}) {
+      @JsonKey(name: 'meeting_freq') bool? meetingFreq,
+      @JsonKey(name: 'meeting_duration') int? meetingDuration}) {
     return _Chat(
       jid: jid,
       chatType: chatType,
@@ -167,6 +168,7 @@ class _$ChatTearOff {
       draftNum: draftNum,
       meetingStartAt: meetingStartAt,
       meetingFreq: meetingFreq,
+      meetingDuration: meetingDuration,
     );
   }
 
@@ -474,6 +476,10 @@ mixin _$Chat {
   @JsonKey(name: 'meeting_freq')
   bool? get meetingFreq => throw _privateConstructorUsedError;
 
+  /// Meeting duration.
+  @JsonKey(name: 'meeting_duration')
+  int? get meetingDuration => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $ChatCopyWith<Chat> get copyWith => throw _privateConstructorUsedError;
@@ -554,7 +560,8 @@ abstract class $ChatCopyWith<$Res> {
       @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,
       @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') int? draftNum,
       @JsonKey(name: 'meeting_start_at') @DateTimeConverter() DateTime? meetingStartAt,
-      @JsonKey(name: 'meeting_freq') bool? meetingFreq});
+      @JsonKey(name: 'meeting_freq') bool? meetingFreq,
+      @JsonKey(name: 'meeting_duration') int? meetingDuration});
 
   $IconDataCopyWith<$Res> get icons;
   $MessageCopyWith<$Res>? get lastMessage;
@@ -643,6 +650,7 @@ class _$ChatCopyWithImpl<$Res> implements $ChatCopyWith<$Res> {
     Object? draftNum = freezed,
     Object? meetingStartAt = freezed,
     Object? meetingFreq = freezed,
+    Object? meetingDuration = freezed,
   }) {
     return _then(_value.copyWith(
       jid: jid == freezed
@@ -933,6 +941,10 @@ class _$ChatCopyWithImpl<$Res> implements $ChatCopyWith<$Res> {
           ? _value.meetingFreq
           : meetingFreq // ignore: cast_nullable_to_non_nullable
               as bool?,
+      meetingDuration: meetingDuration == freezed
+          ? _value.meetingDuration
+          : meetingDuration // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 
@@ -1042,7 +1054,8 @@ abstract class _$ChatCopyWith<$Res> implements $ChatCopyWith<$Res> {
       @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,
       @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') int? draftNum,
       @JsonKey(name: 'meeting_start_at') @DateTimeConverter() DateTime? meetingStartAt,
-      @JsonKey(name: 'meeting_freq') bool? meetingFreq});
+      @JsonKey(name: 'meeting_freq') bool? meetingFreq,
+      @JsonKey(name: 'meeting_duration') int? meetingDuration});
 
   @override
   $IconDataCopyWith<$Res> get icons;
@@ -1133,6 +1146,7 @@ class __$ChatCopyWithImpl<$Res> extends _$ChatCopyWithImpl<$Res> implements _$Ch
     Object? draftNum = freezed,
     Object? meetingStartAt = freezed,
     Object? meetingFreq = freezed,
+    Object? meetingDuration = freezed,
   }) {
     return _then(_Chat(
       jid: jid == freezed
@@ -1423,6 +1437,10 @@ class __$ChatCopyWithImpl<$Res> extends _$ChatCopyWithImpl<$Res> implements _$Ch
           ? _value.meetingFreq
           : meetingFreq // ignore: cast_nullable_to_non_nullable
               as bool?,
+      meetingDuration: meetingDuration == freezed
+          ? _value.meetingDuration
+          : meetingDuration // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 }
@@ -1502,7 +1520,8 @@ class _$_Chat implements _Chat {
       @JsonKey(name: 'last_activity') @DateTimeConverter() this.lastActivity,
       @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') this.draftNum,
       @JsonKey(name: 'meeting_start_at') @DateTimeConverter() this.meetingStartAt,
-      @JsonKey(name: 'meeting_freq') this.meetingFreq});
+      @JsonKey(name: 'meeting_freq') this.meetingFreq,
+      @JsonKey(name: 'meeting_duration') this.meetingDuration});
 
   factory _$_Chat.fromJson(Map<String, dynamic> json) => _$$_ChatFromJson(json);
 
@@ -1872,10 +1891,15 @@ class _$_Chat implements _Chat {
   /// Meeting has frequency.
   @JsonKey(name: 'meeting_freq')
   final bool? meetingFreq;
+  @override
+
+  /// Meeting duration.
+  @JsonKey(name: 'meeting_duration')
+  final int? meetingDuration;
 
   @override
   String toString() {
-    return 'Chat(jid: $jid, chatType: $chatType, baseGentime: $baseGentime, gentime: $gentime, created: $created, displayName: $displayName, icons: $icons, countersEnabled: $countersEnabled, canCall: $canCall, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, collapsed: $collapsed, draft: $draft, draftGentime: $draftGentime, hidden: $hidden, notificationsEnabled: $notificationsEnabled, numImportants: $numImportants, numUnread: $numUnread, numUnreadNotices: $numUnreadNotices, lastMessage: $lastMessage, lastReadMessageId: $lastReadMessageId, section: $section, changeableFields: $changeableFields, pinned: $pinned, pinnedSortOrdering: $pinnedSortOrdering, numMembers: $numMembers, canDelete: $canDelete, description: $description, markup: $markup, feed: $feed, pinnedMessage: $pinnedMessage, colorIndex: $colorIndex, numItems: $numItems, numCheckedItems: $numCheckedItems, assignee: $assignee, num: $num, observers: $observers, owner: $owner, taskStatus: $taskStatus, title: $title, done: $done, doneReason: $doneReason, deadline: $deadline, deadlineExpired: $deadlineExpired, links: $links, tags: $tags, importance: $importance, urgency: $urgency, spentTime: $spentTime, complexity: $complexity, linkedMessages: $linkedMessages, uploads: $uploads, items: $items, parents: $parents, tabs: $tabs, status: $status, members: $members, canAddMember: $canAddMember, canRemoveMember: $canRemoveMember, canChangeMemberStatus: $canChangeMemberStatus, canChangeSettings: $canChangeSettings, defaultForAll: $defaultForAll, readonlyForMembers: $readonlyForMembers, autocleanupAge: $autocleanupAge, isPublic: $isPublic, canJoin: $canJoin, canDeleteAnyMessage: $canDeleteAnyMessage, canSetImportantAnyMessage: $canSetImportantAnyMessage, lastActivity: $lastActivity, draftNum: $draftNum, meetingStartAt: $meetingStartAt, meetingFreq: $meetingFreq)';
+    return 'Chat(jid: $jid, chatType: $chatType, baseGentime: $baseGentime, gentime: $gentime, created: $created, displayName: $displayName, icons: $icons, countersEnabled: $countersEnabled, canCall: $canCall, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, collapsed: $collapsed, draft: $draft, draftGentime: $draftGentime, hidden: $hidden, notificationsEnabled: $notificationsEnabled, numImportants: $numImportants, numUnread: $numUnread, numUnreadNotices: $numUnreadNotices, lastMessage: $lastMessage, lastReadMessageId: $lastReadMessageId, section: $section, changeableFields: $changeableFields, pinned: $pinned, pinnedSortOrdering: $pinnedSortOrdering, numMembers: $numMembers, canDelete: $canDelete, description: $description, markup: $markup, feed: $feed, pinnedMessage: $pinnedMessage, colorIndex: $colorIndex, numItems: $numItems, numCheckedItems: $numCheckedItems, assignee: $assignee, num: $num, observers: $observers, owner: $owner, taskStatus: $taskStatus, title: $title, done: $done, doneReason: $doneReason, deadline: $deadline, deadlineExpired: $deadlineExpired, links: $links, tags: $tags, importance: $importance, urgency: $urgency, spentTime: $spentTime, complexity: $complexity, linkedMessages: $linkedMessages, uploads: $uploads, items: $items, parents: $parents, tabs: $tabs, status: $status, members: $members, canAddMember: $canAddMember, canRemoveMember: $canRemoveMember, canChangeMemberStatus: $canChangeMemberStatus, canChangeSettings: $canChangeSettings, defaultForAll: $defaultForAll, readonlyForMembers: $readonlyForMembers, autocleanupAge: $autocleanupAge, isPublic: $isPublic, canJoin: $canJoin, canDeleteAnyMessage: $canDeleteAnyMessage, canSetImportantAnyMessage: $canSetImportantAnyMessage, lastActivity: $lastActivity, draftNum: $draftNum, meetingStartAt: $meetingStartAt, meetingFreq: $meetingFreq, meetingDuration: $meetingDuration)';
   }
 
   @override
@@ -1994,7 +2018,9 @@ class _$_Chat implements _Chat {
             (identical(other.meetingStartAt, meetingStartAt) ||
                 const DeepCollectionEquality().equals(other.meetingStartAt, meetingStartAt)) &&
             (identical(other.meetingFreq, meetingFreq) ||
-                const DeepCollectionEquality().equals(other.meetingFreq, meetingFreq)));
+                const DeepCollectionEquality().equals(other.meetingFreq, meetingFreq)) &&
+            (identical(other.meetingDuration, meetingDuration) ||
+                const DeepCollectionEquality().equals(other.meetingDuration, meetingDuration)));
   }
 
   @override
@@ -2071,7 +2097,8 @@ class _$_Chat implements _Chat {
       const DeepCollectionEquality().hash(lastActivity) ^
       const DeepCollectionEquality().hash(draftNum) ^
       const DeepCollectionEquality().hash(meetingStartAt) ^
-      const DeepCollectionEquality().hash(meetingFreq);
+      const DeepCollectionEquality().hash(meetingFreq) ^
+      const DeepCollectionEquality().hash(meetingDuration);
 
   @JsonKey(ignore: true)
   @override
@@ -2156,7 +2183,8 @@ abstract class _Chat implements Chat {
       @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,
       @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') int? draftNum,
       @JsonKey(name: 'meeting_start_at') @DateTimeConverter() DateTime? meetingStartAt,
-      @JsonKey(name: 'meeting_freq') bool? meetingFreq}) = _$_Chat;
+      @JsonKey(name: 'meeting_freq') bool? meetingFreq,
+      @JsonKey(name: 'meeting_duration') int? meetingDuration}) = _$_Chat;
 
   factory _Chat.fromJson(Map<String, dynamic> json) = _$_Chat.fromJson;
 
@@ -2526,6 +2554,11 @@ abstract class _Chat implements Chat {
   /// Meeting has frequency.
   @JsonKey(name: 'meeting_freq')
   bool? get meetingFreq => throw _privateConstructorUsedError;
+  @override
+
+  /// Meeting duration.
+  @JsonKey(name: 'meeting_duration')
+  int? get meetingDuration => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ChatCopyWith<_Chat> get copyWith => throw _privateConstructorUsedError;

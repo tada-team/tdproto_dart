@@ -223,6 +223,9 @@ class Chat with _$Chat {
 
     /// Meeting has frequency.
     @JsonKey(name: 'meeting_freq') bool? meetingFreq,
+
+    /// Meeting duration.
+    @JsonKey(name: 'meeting_duration') int? meetingDuration,
   }) = _Chat;
 
   factory Chat.fromJson(Map<String, dynamic> json) => _$ChatFromJson(json);
