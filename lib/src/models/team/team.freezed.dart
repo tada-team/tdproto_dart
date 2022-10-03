@@ -53,7 +53,8 @@ class _$TeamTearOff {
       @JsonKey(name: 'hide_archived_users') bool? hideArchivedUsers,
       @JsonKey(name: 'pinned') bool? pinned,
       @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
-      @JsonKey(name: 'subscription') Subscription? subscription}) {
+      @JsonKey(name: 'subscription') Subscription? subscription,
+      @JsonKey(name: 'notebot') String? notebot}) {
     return _Team(
       uid: uid,
       isArchive: isArchive,
@@ -87,6 +88,7 @@ class _$TeamTearOff {
       pinned: pinned,
       availableTariffs: availableTariffs,
       subscription: subscription,
+      notebot: notebot,
     );
   }
 
@@ -228,6 +230,10 @@ mixin _$Team {
   @JsonKey(name: 'subscription')
   Subscription? get subscription => throw _privateConstructorUsedError;
 
+  /// Сurrent team favorites bot, jid of chat.
+  @JsonKey(name: 'notebot')
+  String? get notebot => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $TeamCopyWith<Team> get copyWith => throw _privateConstructorUsedError;
@@ -268,7 +274,8 @@ abstract class $TeamCopyWith<$Res> {
       @JsonKey(name: 'hide_archived_users') bool? hideArchivedUsers,
       @JsonKey(name: 'pinned') bool? pinned,
       @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
-      @JsonKey(name: 'subscription') Subscription? subscription});
+      @JsonKey(name: 'subscription') Subscription? subscription,
+      @JsonKey(name: 'notebot') String? notebot});
 
   $IconDataCopyWith<$Res> get icons;
   $TeamUnreadCopyWith<$Res>? get unreads;
@@ -319,6 +326,7 @@ class _$TeamCopyWithImpl<$Res> implements $TeamCopyWith<$Res> {
     Object? pinned = freezed,
     Object? availableTariffs = freezed,
     Object? subscription = freezed,
+    Object? notebot = freezed,
   }) {
     return _then(_value.copyWith(
       uid: uid == freezed
@@ -449,6 +457,10 @@ class _$TeamCopyWithImpl<$Res> implements $TeamCopyWith<$Res> {
           ? _value.subscription
           : subscription // ignore: cast_nullable_to_non_nullable
               as Subscription?,
+      notebot: notebot == freezed
+          ? _value.notebot
+          : notebot // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
@@ -536,7 +548,8 @@ abstract class _$TeamCopyWith<$Res> implements $TeamCopyWith<$Res> {
       @JsonKey(name: 'hide_archived_users') bool? hideArchivedUsers,
       @JsonKey(name: 'pinned') bool? pinned,
       @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
-      @JsonKey(name: 'subscription') Subscription? subscription});
+      @JsonKey(name: 'subscription') Subscription? subscription,
+      @JsonKey(name: 'notebot') String? notebot});
 
   @override
   $IconDataCopyWith<$Res> get icons;
@@ -591,6 +604,7 @@ class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res> implements _$Te
     Object? pinned = freezed,
     Object? availableTariffs = freezed,
     Object? subscription = freezed,
+    Object? notebot = freezed,
   }) {
     return _then(_Team(
       uid: uid == freezed
@@ -721,6 +735,10 @@ class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res> implements _$Te
           ? _value.subscription
           : subscription // ignore: cast_nullable_to_non_nullable
               as Subscription?,
+      notebot: notebot == freezed
+          ? _value.notebot
+          : notebot // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -760,7 +778,8 @@ class _$_Team implements _Team {
       @JsonKey(name: 'hide_archived_users') this.hideArchivedUsers,
       @JsonKey(name: 'pinned') this.pinned,
       @JsonKey(name: 'available_tariffs') this.availableTariffs,
-      @JsonKey(name: 'subscription') this.subscription});
+      @JsonKey(name: 'subscription') this.subscription,
+      @JsonKey(name: 'notebot') this.notebot});
 
   factory _$_Team.fromJson(Map<String, dynamic> json) => _$$_TeamFromJson(json);
 
@@ -924,10 +943,15 @@ class _$_Team implements _Team {
   /// Сurrent team subscription.
   @JsonKey(name: 'subscription')
   final Subscription? subscription;
+  @override
+
+  /// Сurrent team favorites bot, jid of chat.
+  @JsonKey(name: 'notebot')
+  final String? notebot;
 
   @override
   String toString() {
-    return 'Team(uid: $uid, isArchive: $isArchive, gentime: $gentime, name: $name, defaultTaskDeadline: $defaultTaskDeadline, maxMessageUpdateAge: $maxMessageUpdateAge, icons: $icons, lastActive: $lastActive, changeableStatuses: $changeableStatuses, badProfile: $badProfile, needConfirmation: $needConfirmation, usePatronymic: $usePatronymic, userFields: $userFields, displayFamilyNameFirst: $displayFamilyNameFirst, useTaskImportance: $useTaskImportance, taskImportanceMin: $taskImportanceMin, taskImportanceMax: $taskImportanceMax, taskImportanceRev: $taskImportanceRev, useTaskUrgency: $useTaskUrgency, useTaskComplexity: $useTaskComplexity, useTaskSpentTime: $useTaskSpentTime, uploadsSize: $uploadsSize, uploadsSizeLimit: $uploadsSizeLimit, unreads: $unreads, me: $me, contacts: $contacts, singleGroup: $singleGroup, theme: $theme, hideArchivedUsers: $hideArchivedUsers, pinned: $pinned, availableTariffs: $availableTariffs, subscription: $subscription)';
+    return 'Team(uid: $uid, isArchive: $isArchive, gentime: $gentime, name: $name, defaultTaskDeadline: $defaultTaskDeadline, maxMessageUpdateAge: $maxMessageUpdateAge, icons: $icons, lastActive: $lastActive, changeableStatuses: $changeableStatuses, badProfile: $badProfile, needConfirmation: $needConfirmation, usePatronymic: $usePatronymic, userFields: $userFields, displayFamilyNameFirst: $displayFamilyNameFirst, useTaskImportance: $useTaskImportance, taskImportanceMin: $taskImportanceMin, taskImportanceMax: $taskImportanceMax, taskImportanceRev: $taskImportanceRev, useTaskUrgency: $useTaskUrgency, useTaskComplexity: $useTaskComplexity, useTaskSpentTime: $useTaskSpentTime, uploadsSize: $uploadsSize, uploadsSizeLimit: $uploadsSizeLimit, unreads: $unreads, me: $me, contacts: $contacts, singleGroup: $singleGroup, theme: $theme, hideArchivedUsers: $hideArchivedUsers, pinned: $pinned, availableTariffs: $availableTariffs, subscription: $subscription, notebot: $notebot)';
   }
 
   @override
@@ -988,7 +1012,8 @@ class _$_Team implements _Team {
             (identical(other.availableTariffs, availableTariffs) ||
                 const DeepCollectionEquality().equals(other.availableTariffs, availableTariffs)) &&
             (identical(other.subscription, subscription) ||
-                const DeepCollectionEquality().equals(other.subscription, subscription)));
+                const DeepCollectionEquality().equals(other.subscription, subscription)) &&
+            (identical(other.notebot, notebot) || const DeepCollectionEquality().equals(other.notebot, notebot)));
   }
 
   @override
@@ -1025,7 +1050,8 @@ class _$_Team implements _Team {
       const DeepCollectionEquality().hash(hideArchivedUsers) ^
       const DeepCollectionEquality().hash(pinned) ^
       const DeepCollectionEquality().hash(availableTariffs) ^
-      const DeepCollectionEquality().hash(subscription);
+      const DeepCollectionEquality().hash(subscription) ^
+      const DeepCollectionEquality().hash(notebot);
 
   @JsonKey(ignore: true)
   @override
@@ -1070,7 +1096,8 @@ abstract class _Team implements Team {
       @JsonKey(name: 'hide_archived_users') bool? hideArchivedUsers,
       @JsonKey(name: 'pinned') bool? pinned,
       @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
-      @JsonKey(name: 'subscription') Subscription? subscription}) = _$_Team;
+      @JsonKey(name: 'subscription') Subscription? subscription,
+      @JsonKey(name: 'notebot') String? notebot}) = _$_Team;
 
   factory _Team.fromJson(Map<String, dynamic> json) = _$_Team.fromJson;
 
@@ -1234,6 +1261,11 @@ abstract class _Team implements Team {
   /// Сurrent team subscription.
   @JsonKey(name: 'subscription')
   Subscription? get subscription => throw _privateConstructorUsedError;
+  @override
+
+  /// Сurrent team favorites bot, jid of chat.
+  @JsonKey(name: 'notebot')
+  String? get notebot => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$TeamCopyWith<_Team> get copyWith => throw _privateConstructorUsedError;

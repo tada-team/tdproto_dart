@@ -103,6 +103,9 @@ class Team with _$Team {
 
     /// Сurrent team subscription.
     @JsonKey(name: 'subscription') Subscription? subscription,
+
+    /// Сurrent team favorites bot, jid of chat.
+    @JsonKey(name: 'notebot') String? notebot,
   }) = _Team;
 
   factory Team.fromJson(Map<String, dynamic> json) => _$TeamFromJson(json);
