@@ -31,7 +31,8 @@ class _$MeetingsCreateRequestTearOff {
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'members') required List<MeetingsMemberCreateParams> members,
       @JsonKey(name: 'is_public') bool? isPublic,
-      @JsonKey(name: 'is_outside') bool? isOutside}) {
+      @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'vcs_enabled') bool? vCSEnabled}) {
     return _MeetingsCreateRequest(
       ownerContactUuid: ownerContactUuid,
       teamUuid: teamUuid,
@@ -43,6 +44,7 @@ class _$MeetingsCreateRequestTearOff {
       members: members,
       isPublic: isPublic,
       isOutside: isOutside,
+      vCSEnabled: vCSEnabled,
     );
   }
 
@@ -96,6 +98,10 @@ mixin _$MeetingsCreateRequest {
   @JsonKey(name: 'is_outside')
   bool? get isOutside => throw _privateConstructorUsedError;
 
+  /// .
+  @JsonKey(name: 'vcs_enabled')
+  bool? get vCSEnabled => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $MeetingsCreateRequestCopyWith<MeetingsCreateRequest> get copyWith => throw _privateConstructorUsedError;
@@ -115,7 +121,8 @@ abstract class $MeetingsCreateRequestCopyWith<$Res> {
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'members') List<MeetingsMemberCreateParams> members,
       @JsonKey(name: 'is_public') bool? isPublic,
-      @JsonKey(name: 'is_outside') bool? isOutside});
+      @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'vcs_enabled') bool? vCSEnabled});
 
   $FreqCopyWith<$Res>? get freq;
 }
@@ -140,6 +147,7 @@ class _$MeetingsCreateRequestCopyWithImpl<$Res> implements $MeetingsCreateReques
     Object? members = freezed,
     Object? isPublic = freezed,
     Object? isOutside = freezed,
+    Object? vCSEnabled = freezed,
   }) {
     return _then(_value.copyWith(
       ownerContactUuid: ownerContactUuid == freezed
@@ -182,6 +190,10 @@ class _$MeetingsCreateRequestCopyWithImpl<$Res> implements $MeetingsCreateReques
           ? _value.isOutside
           : isOutside // ignore: cast_nullable_to_non_nullable
               as bool?,
+      vCSEnabled: vCSEnabled == freezed
+          ? _value.vCSEnabled
+          : vCSEnabled // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 
@@ -212,7 +224,8 @@ abstract class _$MeetingsCreateRequestCopyWith<$Res> implements $MeetingsCreateR
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'members') List<MeetingsMemberCreateParams> members,
       @JsonKey(name: 'is_public') bool? isPublic,
-      @JsonKey(name: 'is_outside') bool? isOutside});
+      @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'vcs_enabled') bool? vCSEnabled});
 
   @override
   $FreqCopyWith<$Res>? get freq;
@@ -239,6 +252,7 @@ class __$MeetingsCreateRequestCopyWithImpl<$Res> extends _$MeetingsCreateRequest
     Object? members = freezed,
     Object? isPublic = freezed,
     Object? isOutside = freezed,
+    Object? vCSEnabled = freezed,
   }) {
     return _then(_MeetingsCreateRequest(
       ownerContactUuid: ownerContactUuid == freezed
@@ -281,6 +295,10 @@ class __$MeetingsCreateRequestCopyWithImpl<$Res> extends _$MeetingsCreateRequest
           ? _value.isOutside
           : isOutside // ignore: cast_nullable_to_non_nullable
               as bool?,
+      vCSEnabled: vCSEnabled == freezed
+          ? _value.vCSEnabled
+          : vCSEnabled // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -298,7 +316,8 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
       @JsonKey(name: 'freq') this.freq,
       @JsonKey(name: 'members') required this.members,
       @JsonKey(name: 'is_public') this.isPublic,
-      @JsonKey(name: 'is_outside') this.isOutside});
+      @JsonKey(name: 'is_outside') this.isOutside,
+      @JsonKey(name: 'vcs_enabled') this.vCSEnabled});
 
   factory _$_MeetingsCreateRequest.fromJson(Map<String, dynamic> json) => _$$_MeetingsCreateRequestFromJson(json);
 
@@ -352,10 +371,15 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
   /// .
   @JsonKey(name: 'is_outside')
   final bool? isOutside;
+  @override
+
+  /// .
+  @JsonKey(name: 'vcs_enabled')
+  final bool? vCSEnabled;
 
   @override
   String toString() {
-    return 'MeetingsCreateRequest(ownerContactUuid: $ownerContactUuid, teamUuid: $teamUuid, title: $title, description: $description, startAt: $startAt, duration: $duration, freq: $freq, members: $members, isPublic: $isPublic, isOutside: $isOutside)';
+    return 'MeetingsCreateRequest(ownerContactUuid: $ownerContactUuid, teamUuid: $teamUuid, title: $title, description: $description, startAt: $startAt, duration: $duration, freq: $freq, members: $members, isPublic: $isPublic, isOutside: $isOutside, vCSEnabled: $vCSEnabled)';
   }
 
   @override
@@ -374,7 +398,9 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
             (identical(other.members, members) || const DeepCollectionEquality().equals(other.members, members)) &&
             (identical(other.isPublic, isPublic) || const DeepCollectionEquality().equals(other.isPublic, isPublic)) &&
             (identical(other.isOutside, isOutside) ||
-                const DeepCollectionEquality().equals(other.isOutside, isOutside)));
+                const DeepCollectionEquality().equals(other.isOutside, isOutside)) &&
+            (identical(other.vCSEnabled, vCSEnabled) ||
+                const DeepCollectionEquality().equals(other.vCSEnabled, vCSEnabled)));
   }
 
   @override
@@ -389,7 +415,8 @@ class _$_MeetingsCreateRequest implements _MeetingsCreateRequest {
       const DeepCollectionEquality().hash(freq) ^
       const DeepCollectionEquality().hash(members) ^
       const DeepCollectionEquality().hash(isPublic) ^
-      const DeepCollectionEquality().hash(isOutside);
+      const DeepCollectionEquality().hash(isOutside) ^
+      const DeepCollectionEquality().hash(vCSEnabled);
 
   @JsonKey(ignore: true)
   @override
@@ -413,7 +440,8 @@ abstract class _MeetingsCreateRequest implements MeetingsCreateRequest {
       @JsonKey(name: 'freq') Freq? freq,
       @JsonKey(name: 'members') required List<MeetingsMemberCreateParams> members,
       @JsonKey(name: 'is_public') bool? isPublic,
-      @JsonKey(name: 'is_outside') bool? isOutside}) = _$_MeetingsCreateRequest;
+      @JsonKey(name: 'is_outside') bool? isOutside,
+      @JsonKey(name: 'vcs_enabled') bool? vCSEnabled}) = _$_MeetingsCreateRequest;
 
   factory _MeetingsCreateRequest.fromJson(Map<String, dynamic> json) = _$_MeetingsCreateRequest.fromJson;
 
@@ -467,6 +495,11 @@ abstract class _MeetingsCreateRequest implements MeetingsCreateRequest {
   /// .
   @JsonKey(name: 'is_outside')
   bool? get isOutside => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'vcs_enabled')
+  bool? get vCSEnabled => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MeetingsCreateRequestCopyWith<_MeetingsCreateRequest> get copyWith => throw _privateConstructorUsedError;

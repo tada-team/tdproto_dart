@@ -19,6 +19,7 @@ _$_MeetingsCreateRequest _$$_MeetingsCreateRequestFromJson(Map<String, dynamic> 
           .toList(),
       isPublic: json['is_public'] as bool?,
       isOutside: json['is_outside'] as bool?,
+      vCSEnabled: json['vcs_enabled'] as bool?,
     );
 
 Map<String, dynamic> _$$_MeetingsCreateRequestToJson(_$_MeetingsCreateRequest instance) => <String, dynamic>{
@@ -32,4 +33,5 @@ Map<String, dynamic> _$$_MeetingsCreateRequestToJson(_$_MeetingsCreateRequest in
       'members': instance.members.map((e) => e.toJson()).toList(),
       'is_public': instance.isPublic,
       'is_outside': instance.isOutside,
+      'vcs_enabled': instance.vCSEnabled,
     };

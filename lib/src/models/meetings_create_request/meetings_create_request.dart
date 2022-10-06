@@ -37,6 +37,9 @@ class MeetingsCreateRequest with _$MeetingsCreateRequest {
 
     /// .
     @JsonKey(name: 'is_outside') bool? isOutside,
+
+    /// .
+    @JsonKey(name: 'vcs_enabled') bool? vCSEnabled,
   }) = _MeetingsCreateRequest;
 
   factory MeetingsCreateRequest.fromJson(Map<String, dynamic> json) => _$MeetingsCreateRequestFromJson(json);

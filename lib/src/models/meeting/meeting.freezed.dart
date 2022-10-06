@@ -35,6 +35,8 @@ class _$MeetingTearOff {
       @JsonKey(name: 'is_required') bool? isRequired,
       @JsonKey(name: 'can_edit') bool? canEdit,
       @JsonKey(name: 'meeting_members') List<MeetingMember>? meetingMembers,
+      @JsonKey(name: 'vcs_enabled') bool? vCSEnabled,
+      @JsonKey(name: 'ivcs_info') IVCSInfo? iVCSInfo,
       @JsonKey(name: 'jid') required String jid,
       @JsonKey(name: 'chat_type') required String chatType,
       @JsonKey(name: 'base_gentime') int? baseGentime,
@@ -122,6 +124,8 @@ class _$MeetingTearOff {
       isRequired: isRequired,
       canEdit: canEdit,
       meetingMembers: meetingMembers,
+      vCSEnabled: vCSEnabled,
+      iVCSInfo: iVCSInfo,
       jid: jid,
       chatType: chatType,
       baseGentime: baseGentime,
@@ -260,6 +264,14 @@ mixin _$Meeting {
   /// .
   @JsonKey(name: 'meeting_members')
   List<MeetingMember>? get meetingMembers => throw _privateConstructorUsedError;
+
+  /// .
+  @JsonKey(name: 'vcs_enabled')
+  bool? get vCSEnabled => throw _privateConstructorUsedError;
+
+  /// .
+  @JsonKey(name: 'ivcs_info')
+  IVCSInfo? get iVCSInfo => throw _privateConstructorUsedError;
 
   /// Group/Task/Contact id.
   @JsonKey(name: 'jid')
@@ -581,6 +593,8 @@ abstract class $MeetingCopyWith<$Res> {
       @JsonKey(name: 'is_required') bool? isRequired,
       @JsonKey(name: 'can_edit') bool? canEdit,
       @JsonKey(name: 'meeting_members') List<MeetingMember>? meetingMembers,
+      @JsonKey(name: 'vcs_enabled') bool? vCSEnabled,
+      @JsonKey(name: 'ivcs_info') IVCSInfo? iVCSInfo,
       @JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'chat_type') String chatType,
       @JsonKey(name: 'base_gentime') int? baseGentime,
@@ -656,6 +670,7 @@ abstract class $MeetingCopyWith<$Res> {
       @JsonKey(name: 'meeting_duration') int? meetingDuration});
 
   $FreqCopyWith<$Res>? get freq;
+  $IVCSInfoCopyWith<$Res>? get iVCSInfo;
   $IconDataCopyWith<$Res> get icons;
   $MessageCopyWith<$Res>? get lastMessage;
   $MessageCopyWith<$Res>? get pinnedMessage;
@@ -684,6 +699,8 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
     Object? isRequired = freezed,
     Object? canEdit = freezed,
     Object? meetingMembers = freezed,
+    Object? vCSEnabled = freezed,
+    Object? iVCSInfo = freezed,
     Object? jid = freezed,
     Object? chatType = freezed,
     Object? baseGentime = freezed,
@@ -811,6 +828,14 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
           ? _value.meetingMembers
           : meetingMembers // ignore: cast_nullable_to_non_nullable
               as List<MeetingMember>?,
+      vCSEnabled: vCSEnabled == freezed
+          ? _value.vCSEnabled
+          : vCSEnabled // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      iVCSInfo: iVCSInfo == freezed
+          ? _value.iVCSInfo
+          : iVCSInfo // ignore: cast_nullable_to_non_nullable
+              as IVCSInfo?,
       jid: jid == freezed
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
@@ -1118,6 +1143,17 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
   }
 
   @override
+  $IVCSInfoCopyWith<$Res>? get iVCSInfo {
+    if (_value.iVCSInfo == null) {
+      return null;
+    }
+
+    return $IVCSInfoCopyWith<$Res>(_value.iVCSInfo!, (value) {
+      return _then(_value.copyWith(iVCSInfo: value));
+    });
+  }
+
+  @override
   $IconDataCopyWith<$Res> get icons {
     return $IconDataCopyWith<$Res>(_value.icons, (value) {
       return _then(_value.copyWith(icons: value));
@@ -1165,6 +1201,8 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
       @JsonKey(name: 'is_required') bool? isRequired,
       @JsonKey(name: 'can_edit') bool? canEdit,
       @JsonKey(name: 'meeting_members') List<MeetingMember>? meetingMembers,
+      @JsonKey(name: 'vcs_enabled') bool? vCSEnabled,
+      @JsonKey(name: 'ivcs_info') IVCSInfo? iVCSInfo,
       @JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'chat_type') String chatType,
       @JsonKey(name: 'base_gentime') int? baseGentime,
@@ -1242,6 +1280,8 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
   @override
   $FreqCopyWith<$Res>? get freq;
   @override
+  $IVCSInfoCopyWith<$Res>? get iVCSInfo;
+  @override
   $IconDataCopyWith<$Res> get icons;
   @override
   $MessageCopyWith<$Res>? get lastMessage;
@@ -1271,6 +1311,8 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res> implement
     Object? isRequired = freezed,
     Object? canEdit = freezed,
     Object? meetingMembers = freezed,
+    Object? vCSEnabled = freezed,
+    Object? iVCSInfo = freezed,
     Object? jid = freezed,
     Object? chatType = freezed,
     Object? baseGentime = freezed,
@@ -1398,6 +1440,14 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res> implement
           ? _value.meetingMembers
           : meetingMembers // ignore: cast_nullable_to_non_nullable
               as List<MeetingMember>?,
+      vCSEnabled: vCSEnabled == freezed
+          ? _value.vCSEnabled
+          : vCSEnabled // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      iVCSInfo: iVCSInfo == freezed
+          ? _value.iVCSInfo
+          : iVCSInfo // ignore: cast_nullable_to_non_nullable
+              as IVCSInfo?,
       jid: jid == freezed
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
@@ -1711,6 +1761,8 @@ class _$_Meeting implements _Meeting {
       @JsonKey(name: 'is_required') this.isRequired,
       @JsonKey(name: 'can_edit') this.canEdit,
       @JsonKey(name: 'meeting_members') this.meetingMembers,
+      @JsonKey(name: 'vcs_enabled') this.vCSEnabled,
+      @JsonKey(name: 'ivcs_info') this.iVCSInfo,
       @JsonKey(name: 'jid') required this.jid,
       @JsonKey(name: 'chat_type') required this.chatType,
       @JsonKey(name: 'base_gentime') this.baseGentime,
@@ -1853,6 +1905,16 @@ class _$_Meeting implements _Meeting {
   /// .
   @JsonKey(name: 'meeting_members')
   final List<MeetingMember>? meetingMembers;
+  @override
+
+  /// .
+  @JsonKey(name: 'vcs_enabled')
+  final bool? vCSEnabled;
+  @override
+
+  /// .
+  @JsonKey(name: 'ivcs_info')
+  final IVCSInfo? iVCSInfo;
   @override
 
   /// Group/Task/Contact id.
@@ -2227,7 +2289,7 @@ class _$_Meeting implements _Meeting {
 
   @override
   String toString() {
-    return 'Meeting(id: $id, teamUuid: $teamUuid, ownerContactUuid: $ownerContactUuid, ownerUserUuid: $ownerUserUuid, personalAccountId: $personalAccountId, startAt: $startAt, duration: $duration, freq: $freq, isArchive: $isArchive, isOutside: $isOutside, isRequired: $isRequired, canEdit: $canEdit, meetingMembers: $meetingMembers, jid: $jid, chatType: $chatType, baseGentime: $baseGentime, gentime: $gentime, created: $created, displayName: $displayName, icons: $icons, countersEnabled: $countersEnabled, canCall: $canCall, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, collapsed: $collapsed, draft: $draft, draftGentime: $draftGentime, hidden: $hidden, notificationsEnabled: $notificationsEnabled, numImportants: $numImportants, numUnread: $numUnread, numUnreadNotices: $numUnreadNotices, lastMessage: $lastMessage, lastReadMessageId: $lastReadMessageId, section: $section, changeableFields: $changeableFields, pinned: $pinned, pinnedSortOrdering: $pinnedSortOrdering, numMembers: $numMembers, canDelete: $canDelete, description: $description, markup: $markup, feed: $feed, pinnedMessage: $pinnedMessage, colorIndex: $colorIndex, numItems: $numItems, numCheckedItems: $numCheckedItems, assignee: $assignee, num: $num, observers: $observers, owner: $owner, taskStatus: $taskStatus, title: $title, done: $done, doneReason: $doneReason, deadline: $deadline, deadlineExpired: $deadlineExpired, links: $links, tags: $tags, importance: $importance, urgency: $urgency, spentTime: $spentTime, complexity: $complexity, linkedMessages: $linkedMessages, uploads: $uploads, items: $items, parents: $parents, tabs: $tabs, status: $status, members: $members, canAddMember: $canAddMember, canRemoveMember: $canRemoveMember, canChangeMemberStatus: $canChangeMemberStatus, canChangeSettings: $canChangeSettings, defaultForAll: $defaultForAll, readonlyForMembers: $readonlyForMembers, autocleanupAge: $autocleanupAge, isPublic: $isPublic, canJoin: $canJoin, canDeleteAnyMessage: $canDeleteAnyMessage, canSetImportantAnyMessage: $canSetImportantAnyMessage, lastActivity: $lastActivity, draftNum: $draftNum, meetingStartAt: $meetingStartAt, meetingFreq: $meetingFreq, meetingDuration: $meetingDuration)';
+    return 'Meeting(id: $id, teamUuid: $teamUuid, ownerContactUuid: $ownerContactUuid, ownerUserUuid: $ownerUserUuid, personalAccountId: $personalAccountId, startAt: $startAt, duration: $duration, freq: $freq, isArchive: $isArchive, isOutside: $isOutside, isRequired: $isRequired, canEdit: $canEdit, meetingMembers: $meetingMembers, vCSEnabled: $vCSEnabled, iVCSInfo: $iVCSInfo, jid: $jid, chatType: $chatType, baseGentime: $baseGentime, gentime: $gentime, created: $created, displayName: $displayName, icons: $icons, countersEnabled: $countersEnabled, canCall: $canCall, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, collapsed: $collapsed, draft: $draft, draftGentime: $draftGentime, hidden: $hidden, notificationsEnabled: $notificationsEnabled, numImportants: $numImportants, numUnread: $numUnread, numUnreadNotices: $numUnreadNotices, lastMessage: $lastMessage, lastReadMessageId: $lastReadMessageId, section: $section, changeableFields: $changeableFields, pinned: $pinned, pinnedSortOrdering: $pinnedSortOrdering, numMembers: $numMembers, canDelete: $canDelete, description: $description, markup: $markup, feed: $feed, pinnedMessage: $pinnedMessage, colorIndex: $colorIndex, numItems: $numItems, numCheckedItems: $numCheckedItems, assignee: $assignee, num: $num, observers: $observers, owner: $owner, taskStatus: $taskStatus, title: $title, done: $done, doneReason: $doneReason, deadline: $deadline, deadlineExpired: $deadlineExpired, links: $links, tags: $tags, importance: $importance, urgency: $urgency, spentTime: $spentTime, complexity: $complexity, linkedMessages: $linkedMessages, uploads: $uploads, items: $items, parents: $parents, tabs: $tabs, status: $status, members: $members, canAddMember: $canAddMember, canRemoveMember: $canRemoveMember, canChangeMemberStatus: $canChangeMemberStatus, canChangeSettings: $canChangeSettings, defaultForAll: $defaultForAll, readonlyForMembers: $readonlyForMembers, autocleanupAge: $autocleanupAge, isPublic: $isPublic, canJoin: $canJoin, canDeleteAnyMessage: $canDeleteAnyMessage, canSetImportantAnyMessage: $canSetImportantAnyMessage, lastActivity: $lastActivity, draftNum: $draftNum, meetingStartAt: $meetingStartAt, meetingFreq: $meetingFreq, meetingDuration: $meetingDuration)';
   }
 
   @override
@@ -2254,6 +2316,9 @@ class _$_Meeting implements _Meeting {
             (identical(other.canEdit, canEdit) || const DeepCollectionEquality().equals(other.canEdit, canEdit)) &&
             (identical(other.meetingMembers, meetingMembers) ||
                 const DeepCollectionEquality().equals(other.meetingMembers, meetingMembers)) &&
+            (identical(other.vCSEnabled, vCSEnabled) ||
+                const DeepCollectionEquality().equals(other.vCSEnabled, vCSEnabled)) &&
+            (identical(other.iVCSInfo, iVCSInfo) || const DeepCollectionEquality().equals(other.iVCSInfo, iVCSInfo)) &&
             (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
             (identical(other.chatType, chatType) || const DeepCollectionEquality().equals(other.chatType, chatType)) &&
             (identical(other.baseGentime, baseGentime) ||
@@ -2356,8 +2421,7 @@ class _$_Meeting implements _Meeting {
                 const DeepCollectionEquality().equals(other.autocleanupAge, autocleanupAge)) &&
             (identical(other.isPublic, isPublic) || const DeepCollectionEquality().equals(other.isPublic, isPublic)) &&
             (identical(other.canJoin, canJoin) || const DeepCollectionEquality().equals(other.canJoin, canJoin)) &&
-            (identical(other.canDeleteAnyMessage, canDeleteAnyMessage) ||
-                const DeepCollectionEquality().equals(other.canDeleteAnyMessage, canDeleteAnyMessage)) &&
+            (identical(other.canDeleteAnyMessage, canDeleteAnyMessage) || const DeepCollectionEquality().equals(other.canDeleteAnyMessage, canDeleteAnyMessage)) &&
             (identical(other.canSetImportantAnyMessage, canSetImportantAnyMessage) || const DeepCollectionEquality().equals(other.canSetImportantAnyMessage, canSetImportantAnyMessage)) &&
             (identical(other.lastActivity, lastActivity) || const DeepCollectionEquality().equals(other.lastActivity, lastActivity)) &&
             (identical(other.draftNum, draftNum) || const DeepCollectionEquality().equals(other.draftNum, draftNum)) &&
@@ -2382,6 +2446,8 @@ class _$_Meeting implements _Meeting {
       const DeepCollectionEquality().hash(isRequired) ^
       const DeepCollectionEquality().hash(canEdit) ^
       const DeepCollectionEquality().hash(meetingMembers) ^
+      const DeepCollectionEquality().hash(vCSEnabled) ^
+      const DeepCollectionEquality().hash(iVCSInfo) ^
       const DeepCollectionEquality().hash(jid) ^
       const DeepCollectionEquality().hash(chatType) ^
       const DeepCollectionEquality().hash(baseGentime) ^
@@ -2481,6 +2547,8 @@ abstract class _Meeting implements Meeting {
       @JsonKey(name: 'is_required') bool? isRequired,
       @JsonKey(name: 'can_edit') bool? canEdit,
       @JsonKey(name: 'meeting_members') List<MeetingMember>? meetingMembers,
+      @JsonKey(name: 'vcs_enabled') bool? vCSEnabled,
+      @JsonKey(name: 'ivcs_info') IVCSInfo? iVCSInfo,
       @JsonKey(name: 'jid') required String jid,
       @JsonKey(name: 'chat_type') required String chatType,
       @JsonKey(name: 'base_gentime') int? baseGentime,
@@ -2623,6 +2691,16 @@ abstract class _Meeting implements Meeting {
   /// .
   @JsonKey(name: 'meeting_members')
   List<MeetingMember>? get meetingMembers => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'vcs_enabled')
+  bool? get vCSEnabled => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'ivcs_info')
+  IVCSInfo? get iVCSInfo => throw _privateConstructorUsedError;
   @override
 
   /// Group/Task/Contact id.

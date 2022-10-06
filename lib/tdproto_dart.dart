@@ -146,6 +146,7 @@ export 'src/models/get_workplaces_by_personal_account_response/get_workplaces_by
 export 'src/models/group_access_request/group_access_request.dart';
 export 'src/models/group_membership/group_membership.dart';
 export 'src/models/i_c_e_server/i_c_e_server.dart';
+export 'src/models/i_v_c_s_info/i_v_c_s_info.dart';
 export 'src/models/icon_colors/icon_colors.dart';
 export 'src/models/icon_data/icon_data.dart';
 export 'src/models/input_colors/input_colors.dart';

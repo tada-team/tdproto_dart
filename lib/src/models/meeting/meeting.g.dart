@@ -22,6 +22,8 @@ _$_Meeting _$$_MeetingFromJson(Map<String, dynamic> json) => _$_Meeting(
       meetingMembers: (json['meeting_members'] as List<dynamic>?)
           ?.map((e) => MeetingMember.fromJson(e as Map<String, dynamic>))
           .toList(),
+      vCSEnabled: json['vcs_enabled'] as bool?,
+      iVCSInfo: json['ivcs_info'] == null ? null : IVCSInfo.fromJson(json['ivcs_info'] as Map<String, dynamic>),
       jid: json['jid'] as String,
       chatType: json['chat_type'] as String,
       baseGentime: json['base_gentime'] as int?,
@@ -113,6 +115,8 @@ Map<String, dynamic> _$$_MeetingToJson(_$_Meeting instance) => <String, dynamic>
       'is_required': instance.isRequired,
       'can_edit': instance.canEdit,
       'meeting_members': instance.meetingMembers?.map((e) => e.toJson()).toList(),
+      'vcs_enabled': instance.vCSEnabled,
+      'ivcs_info': instance.iVCSInfo?.toJson(),
       'jid': instance.jid,
       'chat_type': instance.chatType,
       'base_gentime': instance.baseGentime,

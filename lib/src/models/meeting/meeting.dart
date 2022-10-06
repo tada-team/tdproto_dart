@@ -47,6 +47,12 @@ class Meeting with _$Meeting {
     /// .
     @JsonKey(name: 'meeting_members') List<MeetingMember>? meetingMembers,
 
+    /// .
+    @JsonKey(name: 'vcs_enabled') bool? vCSEnabled,
+
+    /// .
+    @JsonKey(name: 'ivcs_info') IVCSInfo? iVCSInfo,
+
     /// Group/Task/Contact id.
     @JsonKey(name: 'jid') required String jid,
 
