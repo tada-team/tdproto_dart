@@ -12,10 +12,7 @@ class IVCSInfo with _$IVCSInfo {
     @JsonKey(name: 'conference_id') String? conferenceID,
 
     /// .
-    @JsonKey(name: 'guest_join_token') String? guestJoinToken,
-
-    /// .
-    @JsonKey(name: 'moderator_join_token') String? moderatorJoinToken,
+    @JsonKey(name: 'join_token') String? joinToken,
   }) = _IVCSInfo;
 
   factory IVCSInfo.fromJson(Map<String, dynamic> json) => _$IVCSInfoFromJson(json);

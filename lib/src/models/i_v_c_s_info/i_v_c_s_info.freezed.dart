@@ -22,13 +22,10 @@ class _$IVCSInfoTearOff {
   const _$IVCSInfoTearOff();
 
   _IVCSInfo call(
-      {@JsonKey(name: 'conference_id') String? conferenceID,
-      @JsonKey(name: 'guest_join_token') String? guestJoinToken,
-      @JsonKey(name: 'moderator_join_token') String? moderatorJoinToken}) {
+      {@JsonKey(name: 'conference_id') String? conferenceID, @JsonKey(name: 'join_token') String? joinToken}) {
     return _IVCSInfo(
       conferenceID: conferenceID,
-      guestJoinToken: guestJoinToken,
-      moderatorJoinToken: moderatorJoinToken,
+      joinToken: joinToken,
     );
   }
 
@@ -47,12 +44,8 @@ mixin _$IVCSInfo {
   String? get conferenceID => throw _privateConstructorUsedError;
 
   /// .
-  @JsonKey(name: 'guest_join_token')
-  String? get guestJoinToken => throw _privateConstructorUsedError;
-
-  /// .
-  @JsonKey(name: 'moderator_join_token')
-  String? get moderatorJoinToken => throw _privateConstructorUsedError;
+  @JsonKey(name: 'join_token')
+  String? get joinToken => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -62,10 +55,7 @@ mixin _$IVCSInfo {
 /// @nodoc
 abstract class $IVCSInfoCopyWith<$Res> {
   factory $IVCSInfoCopyWith(IVCSInfo value, $Res Function(IVCSInfo) then) = _$IVCSInfoCopyWithImpl<$Res>;
-  $Res call(
-      {@JsonKey(name: 'conference_id') String? conferenceID,
-      @JsonKey(name: 'guest_join_token') String? guestJoinToken,
-      @JsonKey(name: 'moderator_join_token') String? moderatorJoinToken});
+  $Res call({@JsonKey(name: 'conference_id') String? conferenceID, @JsonKey(name: 'join_token') String? joinToken});
 }
 
 /// @nodoc
@@ -79,21 +69,16 @@ class _$IVCSInfoCopyWithImpl<$Res> implements $IVCSInfoCopyWith<$Res> {
   @override
   $Res call({
     Object? conferenceID = freezed,
-    Object? guestJoinToken = freezed,
-    Object? moderatorJoinToken = freezed,
+    Object? joinToken = freezed,
   }) {
     return _then(_value.copyWith(
       conferenceID: conferenceID == freezed
           ? _value.conferenceID
           : conferenceID // ignore: cast_nullable_to_non_nullable
               as String?,
-      guestJoinToken: guestJoinToken == freezed
-          ? _value.guestJoinToken
-          : guestJoinToken // ignore: cast_nullable_to_non_nullable
-              as String?,
-      moderatorJoinToken: moderatorJoinToken == freezed
-          ? _value.moderatorJoinToken
-          : moderatorJoinToken // ignore: cast_nullable_to_non_nullable
+      joinToken: joinToken == freezed
+          ? _value.joinToken
+          : joinToken // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
   }
@@ -103,10 +88,7 @@ class _$IVCSInfoCopyWithImpl<$Res> implements $IVCSInfoCopyWith<$Res> {
 abstract class _$IVCSInfoCopyWith<$Res> implements $IVCSInfoCopyWith<$Res> {
   factory _$IVCSInfoCopyWith(_IVCSInfo value, $Res Function(_IVCSInfo) then) = __$IVCSInfoCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {@JsonKey(name: 'conference_id') String? conferenceID,
-      @JsonKey(name: 'guest_join_token') String? guestJoinToken,
-      @JsonKey(name: 'moderator_join_token') String? moderatorJoinToken});
+  $Res call({@JsonKey(name: 'conference_id') String? conferenceID, @JsonKey(name: 'join_token') String? joinToken});
 }
 
 /// @nodoc
@@ -120,21 +102,16 @@ class __$IVCSInfoCopyWithImpl<$Res> extends _$IVCSInfoCopyWithImpl<$Res> impleme
   @override
   $Res call({
     Object? conferenceID = freezed,
-    Object? guestJoinToken = freezed,
-    Object? moderatorJoinToken = freezed,
+    Object? joinToken = freezed,
   }) {
     return _then(_IVCSInfo(
       conferenceID: conferenceID == freezed
           ? _value.conferenceID
           : conferenceID // ignore: cast_nullable_to_non_nullable
               as String?,
-      guestJoinToken: guestJoinToken == freezed
-          ? _value.guestJoinToken
-          : guestJoinToken // ignore: cast_nullable_to_non_nullable
-              as String?,
-      moderatorJoinToken: moderatorJoinToken == freezed
-          ? _value.moderatorJoinToken
-          : moderatorJoinToken // ignore: cast_nullable_to_non_nullable
+      joinToken: joinToken == freezed
+          ? _value.joinToken
+          : joinToken // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
   }
@@ -143,10 +120,7 @@ class __$IVCSInfoCopyWithImpl<$Res> extends _$IVCSInfoCopyWithImpl<$Res> impleme
 /// @nodoc
 @JsonSerializable()
 class _$_IVCSInfo implements _IVCSInfo {
-  const _$_IVCSInfo(
-      {@JsonKey(name: 'conference_id') this.conferenceID,
-      @JsonKey(name: 'guest_join_token') this.guestJoinToken,
-      @JsonKey(name: 'moderator_join_token') this.moderatorJoinToken});
+  const _$_IVCSInfo({@JsonKey(name: 'conference_id') this.conferenceID, @JsonKey(name: 'join_token') this.joinToken});
 
   factory _$_IVCSInfo.fromJson(Map<String, dynamic> json) => _$$_IVCSInfoFromJson(json);
 
@@ -158,17 +132,12 @@ class _$_IVCSInfo implements _IVCSInfo {
   @override
 
   /// .
-  @JsonKey(name: 'guest_join_token')
-  final String? guestJoinToken;
-  @override
-
-  /// .
-  @JsonKey(name: 'moderator_join_token')
-  final String? moderatorJoinToken;
+  @JsonKey(name: 'join_token')
+  final String? joinToken;
 
   @override
   String toString() {
-    return 'IVCSInfo(conferenceID: $conferenceID, guestJoinToken: $guestJoinToken, moderatorJoinToken: $moderatorJoinToken)';
+    return 'IVCSInfo(conferenceID: $conferenceID, joinToken: $joinToken)';
   }
 
   @override
@@ -177,18 +146,15 @@ class _$_IVCSInfo implements _IVCSInfo {
         (other is _IVCSInfo &&
             (identical(other.conferenceID, conferenceID) ||
                 const DeepCollectionEquality().equals(other.conferenceID, conferenceID)) &&
-            (identical(other.guestJoinToken, guestJoinToken) ||
-                const DeepCollectionEquality().equals(other.guestJoinToken, guestJoinToken)) &&
-            (identical(other.moderatorJoinToken, moderatorJoinToken) ||
-                const DeepCollectionEquality().equals(other.moderatorJoinToken, moderatorJoinToken)));
+            (identical(other.joinToken, joinToken) ||
+                const DeepCollectionEquality().equals(other.joinToken, joinToken)));
   }
 
   @override
   int get hashCode =>
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(conferenceID) ^
-      const DeepCollectionEquality().hash(guestJoinToken) ^
-      const DeepCollectionEquality().hash(moderatorJoinToken);
+      const DeepCollectionEquality().hash(joinToken);
 
   @JsonKey(ignore: true)
   @override
@@ -203,8 +169,7 @@ class _$_IVCSInfo implements _IVCSInfo {
 abstract class _IVCSInfo implements IVCSInfo {
   const factory _IVCSInfo(
       {@JsonKey(name: 'conference_id') String? conferenceID,
-      @JsonKey(name: 'guest_join_token') String? guestJoinToken,
-      @JsonKey(name: 'moderator_join_token') String? moderatorJoinToken}) = _$_IVCSInfo;
+      @JsonKey(name: 'join_token') String? joinToken}) = _$_IVCSInfo;
 
   factory _IVCSInfo.fromJson(Map<String, dynamic> json) = _$_IVCSInfo.fromJson;
 
@@ -216,13 +181,8 @@ abstract class _IVCSInfo implements IVCSInfo {
   @override
 
   /// .
-  @JsonKey(name: 'guest_join_token')
-  String? get guestJoinToken => throw _privateConstructorUsedError;
-  @override
-
-  /// .
-  @JsonKey(name: 'moderator_join_token')
-  String? get moderatorJoinToken => throw _privateConstructorUsedError;
+  @JsonKey(name: 'join_token')
+  String? get joinToken => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$IVCSInfoCopyWith<_IVCSInfo> get copyWith => throw _privateConstructorUsedError;
