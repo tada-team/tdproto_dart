@@ -19,6 +19,7 @@ export 'src/enums/mediasubtype.dart';
 export 'src/enums/mediatype.dart';
 export 'src/enums/meeting_member_status.dart';
 export 'src/enums/meeting_presence_status.dart';
+export 'src/enums/meeting_recipient_status.dart';
 export 'src/enums/meeting_repeatability_type.dart';
 export 'src/enums/messenger_type.dart';
 export 'src/enums/parse_state.dart';

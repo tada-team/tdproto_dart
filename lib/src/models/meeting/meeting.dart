@@ -12,19 +12,22 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'id') required String id,
 
     /// .
-    @JsonKey(name: 'team_uuid') required String teamUuid,
+    @JsonKey(name: 'team_uuid') String? teamUuid,
 
     /// .
-    @JsonKey(name: 'owner_contact_uuid') required String ownerContactUuid,
+    @JsonKey(name: 'owner_contact_uuid') String? ownerContactUuid,
 
     /// .
-    @JsonKey(name: 'owner_user_uuid') required String ownerUserUuid,
+    @JsonKey(name: 'owner_user_uuid') String? ownerUserUuid,
 
     /// .
     @JsonKey(name: 'personal_account_id') String? personalAccountId,
 
     /// .
     @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
+
+    /// .
+    @JsonKey(name: 'end_at') @DateTimeConverter() required DateTime endAt,
 
     /// .
     @JsonKey(name: 'duration') required int duration,
@@ -52,6 +55,9 @@ class Meeting with _$Meeting {
 
     /// .
     @JsonKey(name: 'ivcs_info') IVCSInfo? iVCSInfo,
+
+    /// .
+    @JsonKey(name: 'meeting_recipient_status') required String meetingRecipientStatus,
 
     /// Group/Task/Contact id.
     @JsonKey(name: 'jid') required String jid,
