@@ -236,6 +236,9 @@ class Features with _$Features {
     /// CallsVideoEnabled enabled or disabled video calls.
     @JsonKey(name: 'calls_video_enabled') required bool callsVideoEnabled,
 
+    /// VcsEnabled enabled or disabled vcs.
+    @JsonKey(name: 'vcs_enabled') required bool vcsEnabled,
+
     /// Calls functions enabled for mobile applications.
     @JsonKey(name: 'mobile_calls') required bool mobileCalls,
 
