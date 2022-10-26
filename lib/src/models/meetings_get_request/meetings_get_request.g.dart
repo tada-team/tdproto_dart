@@ -10,7 +10,6 @@ _$_MeetingsGetRequest _$$_MeetingsGetRequestFromJson(Map<String, dynamic> json) 
       teamUuid: json['team_uuid'] as String,
       dateFrom: json['date_from'] as String,
       dateTo: json['date_to'] as String,
-      members: (json['members'] as List<dynamic>?)?.map((e) => e as String).toList(),
       limit: json['limit'] as int?,
       offset: json['offset'] as int?,
       isArchive: json['is_archive'] as bool?,
@@ -18,14 +17,13 @@ _$_MeetingsGetRequest _$$_MeetingsGetRequestFromJson(Map<String, dynamic> json) 
       isPublic: json['is_public'] as bool?,
       isOutside: json['is_outside'] as bool?,
       isRequired: json['is_required'] as bool?,
-      membersJids: json['members_jids'] as String?,
+      membersJids: (json['members_jids'] as List<dynamic>?)?.map((e) => e as String).toList(),
     );
 
 Map<String, dynamic> _$$_MeetingsGetRequestToJson(_$_MeetingsGetRequest instance) => <String, dynamic>{
       'team_uuid': instance.teamUuid,
       'date_from': instance.dateFrom,
       'date_to': instance.dateTo,
-      'members': instance.members,
       'limit': instance.limit,
       'offset': instance.offset,
       'is_archive': instance.isArchive,

@@ -18,9 +18,6 @@ class MeetingsGetRequest with _$MeetingsGetRequest {
     @JsonKey(name: 'date_to') required String dateTo,
 
     /// .
-    @JsonKey(name: 'members') List<String>? members,
-
-    /// .
     @JsonKey(name: 'limit') int? limit,
 
     /// .
@@ -42,7 +39,7 @@ class MeetingsGetRequest with _$MeetingsGetRequest {
     @JsonKey(name: 'is_required') bool? isRequired,
 
     /// .
-    @JsonKey(name: 'members_jids') String? membersJids,
+    @JsonKey(name: 'members_jids') List<String>? membersJids,
   }) = _MeetingsGetRequest;
 
   factory MeetingsGetRequest.fromJson(Map<String, dynamic> json) => _$MeetingsGetRequestFromJson(json);

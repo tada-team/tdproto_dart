@@ -25,7 +25,6 @@ class _$MeetingsGetRequestTearOff {
       {@JsonKey(name: 'team_uuid') required String teamUuid,
       @JsonKey(name: 'date_from') required String dateFrom,
       @JsonKey(name: 'date_to') required String dateTo,
-      @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
       @JsonKey(name: 'is_archive') bool? isArchive,
@@ -33,12 +32,11 @@ class _$MeetingsGetRequestTearOff {
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'is_required') bool? isRequired,
-      @JsonKey(name: 'members_jids') String? membersJids}) {
+      @JsonKey(name: 'members_jids') List<String>? membersJids}) {
     return _MeetingsGetRequest(
       teamUuid: teamUuid,
       dateFrom: dateFrom,
       dateTo: dateTo,
-      members: members,
       limit: limit,
       offset: offset,
       isArchive: isArchive,
@@ -73,10 +71,6 @@ mixin _$MeetingsGetRequest {
   String get dateTo => throw _privateConstructorUsedError;
 
   /// .
-  @JsonKey(name: 'members')
-  List<String>? get members => throw _privateConstructorUsedError;
-
-  /// .
   @JsonKey(name: 'limit')
   int? get limit => throw _privateConstructorUsedError;
 
@@ -106,7 +100,7 @@ mixin _$MeetingsGetRequest {
 
   /// .
   @JsonKey(name: 'members_jids')
-  String? get membersJids => throw _privateConstructorUsedError;
+  List<String>? get membersJids => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -121,7 +115,6 @@ abstract class $MeetingsGetRequestCopyWith<$Res> {
       {@JsonKey(name: 'team_uuid') String teamUuid,
       @JsonKey(name: 'date_from') String dateFrom,
       @JsonKey(name: 'date_to') String dateTo,
-      @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
       @JsonKey(name: 'is_archive') bool? isArchive,
@@ -129,7 +122,7 @@ abstract class $MeetingsGetRequestCopyWith<$Res> {
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'is_required') bool? isRequired,
-      @JsonKey(name: 'members_jids') String? membersJids});
+      @JsonKey(name: 'members_jids') List<String>? membersJids});
 }
 
 /// @nodoc
@@ -145,7 +138,6 @@ class _$MeetingsGetRequestCopyWithImpl<$Res> implements $MeetingsGetRequestCopyW
     Object? teamUuid = freezed,
     Object? dateFrom = freezed,
     Object? dateTo = freezed,
-    Object? members = freezed,
     Object? limit = freezed,
     Object? offset = freezed,
     Object? isArchive = freezed,
@@ -168,10 +160,6 @@ class _$MeetingsGetRequestCopyWithImpl<$Res> implements $MeetingsGetRequestCopyW
           ? _value.dateTo
           : dateTo // ignore: cast_nullable_to_non_nullable
               as String,
-      members: members == freezed
-          ? _value.members
-          : members // ignore: cast_nullable_to_non_nullable
-              as List<String>?,
       limit: limit == freezed
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
@@ -203,7 +191,7 @@ class _$MeetingsGetRequestCopyWithImpl<$Res> implements $MeetingsGetRequestCopyW
       membersJids: membersJids == freezed
           ? _value.membersJids
           : membersJids // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as List<String>?,
     ));
   }
 }
@@ -217,7 +205,6 @@ abstract class _$MeetingsGetRequestCopyWith<$Res> implements $MeetingsGetRequest
       {@JsonKey(name: 'team_uuid') String teamUuid,
       @JsonKey(name: 'date_from') String dateFrom,
       @JsonKey(name: 'date_to') String dateTo,
-      @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
       @JsonKey(name: 'is_archive') bool? isArchive,
@@ -225,7 +212,7 @@ abstract class _$MeetingsGetRequestCopyWith<$Res> implements $MeetingsGetRequest
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'is_required') bool? isRequired,
-      @JsonKey(name: 'members_jids') String? membersJids});
+      @JsonKey(name: 'members_jids') List<String>? membersJids});
 }
 
 /// @nodoc
@@ -242,7 +229,6 @@ class __$MeetingsGetRequestCopyWithImpl<$Res> extends _$MeetingsGetRequestCopyWi
     Object? teamUuid = freezed,
     Object? dateFrom = freezed,
     Object? dateTo = freezed,
-    Object? members = freezed,
     Object? limit = freezed,
     Object? offset = freezed,
     Object? isArchive = freezed,
@@ -265,10 +251,6 @@ class __$MeetingsGetRequestCopyWithImpl<$Res> extends _$MeetingsGetRequestCopyWi
           ? _value.dateTo
           : dateTo // ignore: cast_nullable_to_non_nullable
               as String,
-      members: members == freezed
-          ? _value.members
-          : members // ignore: cast_nullable_to_non_nullable
-              as List<String>?,
       limit: limit == freezed
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
@@ -300,7 +282,7 @@ class __$MeetingsGetRequestCopyWithImpl<$Res> extends _$MeetingsGetRequestCopyWi
       membersJids: membersJids == freezed
           ? _value.membersJids
           : membersJids // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as List<String>?,
     ));
   }
 }
@@ -312,7 +294,6 @@ class _$_MeetingsGetRequest implements _MeetingsGetRequest {
       {@JsonKey(name: 'team_uuid') required this.teamUuid,
       @JsonKey(name: 'date_from') required this.dateFrom,
       @JsonKey(name: 'date_to') required this.dateTo,
-      @JsonKey(name: 'members') this.members,
       @JsonKey(name: 'limit') this.limit,
       @JsonKey(name: 'offset') this.offset,
       @JsonKey(name: 'is_archive') this.isArchive,
@@ -339,11 +320,6 @@ class _$_MeetingsGetRequest implements _MeetingsGetRequest {
   /// .
   @JsonKey(name: 'date_to')
   final String dateTo;
-  @override
-
-  /// .
-  @JsonKey(name: 'members')
-  final List<String>? members;
   @override
 
   /// .
@@ -383,11 +359,11 @@ class _$_MeetingsGetRequest implements _MeetingsGetRequest {
 
   /// .
   @JsonKey(name: 'members_jids')
-  final String? membersJids;
+  final List<String>? membersJids;
 
   @override
   String toString() {
-    return 'MeetingsGetRequest(teamUuid: $teamUuid, dateFrom: $dateFrom, dateTo: $dateTo, members: $members, limit: $limit, offset: $offset, isArchive: $isArchive, isFreq: $isFreq, isPublic: $isPublic, isOutside: $isOutside, isRequired: $isRequired, membersJids: $membersJids)';
+    return 'MeetingsGetRequest(teamUuid: $teamUuid, dateFrom: $dateFrom, dateTo: $dateTo, limit: $limit, offset: $offset, isArchive: $isArchive, isFreq: $isFreq, isPublic: $isPublic, isOutside: $isOutside, isRequired: $isRequired, membersJids: $membersJids)';
   }
 
   @override
@@ -397,7 +373,6 @@ class _$_MeetingsGetRequest implements _MeetingsGetRequest {
             (identical(other.teamUuid, teamUuid) || const DeepCollectionEquality().equals(other.teamUuid, teamUuid)) &&
             (identical(other.dateFrom, dateFrom) || const DeepCollectionEquality().equals(other.dateFrom, dateFrom)) &&
             (identical(other.dateTo, dateTo) || const DeepCollectionEquality().equals(other.dateTo, dateTo)) &&
-            (identical(other.members, members) || const DeepCollectionEquality().equals(other.members, members)) &&
             (identical(other.limit, limit) || const DeepCollectionEquality().equals(other.limit, limit)) &&
             (identical(other.offset, offset) || const DeepCollectionEquality().equals(other.offset, offset)) &&
             (identical(other.isArchive, isArchive) ||
@@ -418,7 +393,6 @@ class _$_MeetingsGetRequest implements _MeetingsGetRequest {
       const DeepCollectionEquality().hash(teamUuid) ^
       const DeepCollectionEquality().hash(dateFrom) ^
       const DeepCollectionEquality().hash(dateTo) ^
-      const DeepCollectionEquality().hash(members) ^
       const DeepCollectionEquality().hash(limit) ^
       const DeepCollectionEquality().hash(offset) ^
       const DeepCollectionEquality().hash(isArchive) ^
@@ -444,7 +418,6 @@ abstract class _MeetingsGetRequest implements MeetingsGetRequest {
       {@JsonKey(name: 'team_uuid') required String teamUuid,
       @JsonKey(name: 'date_from') required String dateFrom,
       @JsonKey(name: 'date_to') required String dateTo,
-      @JsonKey(name: 'members') List<String>? members,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset,
       @JsonKey(name: 'is_archive') bool? isArchive,
@@ -452,7 +425,7 @@ abstract class _MeetingsGetRequest implements MeetingsGetRequest {
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'is_required') bool? isRequired,
-      @JsonKey(name: 'members_jids') String? membersJids}) = _$_MeetingsGetRequest;
+      @JsonKey(name: 'members_jids') List<String>? membersJids}) = _$_MeetingsGetRequest;
 
   factory _MeetingsGetRequest.fromJson(Map<String, dynamic> json) = _$_MeetingsGetRequest.fromJson;
 
@@ -471,11 +444,6 @@ abstract class _MeetingsGetRequest implements MeetingsGetRequest {
   /// .
   @JsonKey(name: 'date_to')
   String get dateTo => throw _privateConstructorUsedError;
-  @override
-
-  /// .
-  @JsonKey(name: 'members')
-  List<String>? get members => throw _privateConstructorUsedError;
   @override
 
   /// .
@@ -515,7 +483,7 @@ abstract class _MeetingsGetRequest implements MeetingsGetRequest {
 
   /// .
   @JsonKey(name: 'members_jids')
-  String? get membersJids => throw _privateConstructorUsedError;
+  List<String>? get membersJids => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MeetingsGetRequestCopyWith<_MeetingsGetRequest> get copyWith => throw _privateConstructorUsedError;
