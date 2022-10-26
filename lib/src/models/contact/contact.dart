@@ -4,111 +4,204 @@ import 'package:tdproto_dart/tdproto_dart.dart';
 part 'contact.freezed.dart';
 part 'contact.g.dart';
 
-/// Contact invite/edit form.
+/// Contact.
 @freezed
 class Contact with _$Contact {
   const factory Contact({
-    /// User uid (for invitation from other team).
-    @JsonKey(name: 'user_uid') String? userUid,
+    /// Contact Id.
+    @JsonKey(name: 'jid') required String jid,
 
-    /// Phone number (for invitation by phone).
-    @JsonKey(name: 'phone') required String phone,
+    /// Node uid for external users.
+    @JsonKey(name: 'node') String? node,
 
-    /// Contact phone number (part of contact information in team, visible by all).
-    @JsonKey(name: 'contact_phone') required String contactPhone,
+    /// Full name in chats.
+    @JsonKey(name: 'display_name') required String displayName,
 
-    /// Contact email (part of contact information in team, visible by all).
+    /// Short name in chats.
+    @JsonKey(name: 'short_name') required String shortName,
+
+    /// Contact email in this team.
     @JsonKey(name: 'contact_email') required String contactEmail,
 
-    /// Family name.
-    @JsonKey(name: 'family_name') required String familyName,
+    /// Contact phone in this team.
+    @JsonKey(name: 'contact_phone') required String contactPhone,
 
-    /// Given name.
-    @JsonKey(name: 'given_name') required String givenName,
+    /// Icons data.
+    @JsonKey(name: 'icons') required IconData icons,
 
-    /// Patronymic.
-    @JsonKey(name: 'patronymic') required String patronymic,
+    /// Object version.
+    @JsonKey(name: 'gentime') required int gentime,
 
-    /// Role in team.
+    /// Role in this team.
     @JsonKey(name: 'role') required String role,
 
-    /// Mood in team.
-    @JsonKey(name: 'mood') required String mood,
+    /// Mood in this team.
+    @JsonKey(name: 'mood') String? mood,
 
-    /// Enable debug messages in UI.
-    @JsonKey(name: 'debug_show_activity') required bool debugShowActivity,
+    /// Status in this team.
+    @JsonKey(name: 'status') required String teamStatus,
 
-    /// Status in team.
-    @JsonKey(name: 'status') required String status,
+    /// Last activity in this team (iso datetime).
+    @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,
 
-    /// ContactSection uids, if any.
+    /// Contact deleted.
+    @JsonKey(name: 'is_archive') bool? isArchive,
+
+    /// Bot name. Empty for users.
+    @JsonKey(name: 'botname') String? botname,
+
+    /// Section ids.
     @JsonKey(name: 'sections') required List<String> sections,
 
-    /// Use Ctrl/Cmd + Enter instead Enter.
-    @JsonKey(name: 'alt_send') required bool altSend,
+    /// Can I send message to this contact.
+    @JsonKey(name: 'can_send_message') bool? canSendMessage,
 
-    /// Focus mode enabled until.
-    @JsonKey(name: 'focus_until') @DateTimeConverter() required DateTime focusUntil,
+    /// Why I can't send message to this chat (if can't).
+    @JsonKey(name: 'cant_send_message_reason') String? cantSendMessageReason,
 
-    /// Use * as @ for mentions.
-    @JsonKey(name: 'asterisk_mention') required bool asteriskMention,
+    /// Can I call to this contact.
+    @JsonKey(name: 'can_call') bool? canCall,
 
-    /// Send push notifications even contact is online.
-    @JsonKey(name: 'always_send_pushes') required bool alwaysSendPushes,
+    /// Can I create task for this contact.
+    @JsonKey(name: 'can_create_task') bool? canCreateTask,
 
-    /// Hide pushes body.
-    @JsonKey(name: 'hide_pushes_content') required bool hidePushesContent,
+    /// Can I import tasks in this team.
+    @JsonKey(name: 'can_import_tasks') bool? canImportTasks,
 
-    /// Show unread chats first (web/desktop).
-    @JsonKey(name: 'unread_first') required bool unreadFirst,
+    /// Can I add this contact to group chats.
+    @JsonKey(name: 'can_add_to_group') bool? canAddToGroup,
 
-    /// Show unread chats first (mobile app).
-    @JsonKey(name: 'munread_first') required bool munreadFirst,
+    /// Can I remove this contact from team.
+    @JsonKey(name: 'can_delete') bool? canDelete,
+
+    /// Changeable fields.
+    @JsonKey(name: 'changeable_fields') List<String>? changeableFields,
+
+    /// Family name.
+    @JsonKey(name: 'family_name') String? familyName,
+
+    /// Given name.
+    @JsonKey(name: 'given_name') String? givenName,
+
+    /// Patronymic, if any.
+    @JsonKey(name: 'patronymic') String? patronymic,
 
     /// Default language code.
-    @JsonKey(name: 'default_lang') required String defaultLang,
+    @JsonKey(name: 'default_lang') String? defaultLang,
+
+    /// Enable debug messages in UI.
+    @JsonKey(name: 'debug_show_activity') bool? debugShowActivity,
+
+    /// Enable remove all messages experimental features.
+    @JsonKey(name: 'dropall_enabled') bool? dropallEnabled,
+
+    /// Use Ctrl/Cmd + Enter instead Enter.
+    @JsonKey(name: 'alt_send') bool? altSend,
+
+    /// Use * as @ for mentions.
+    @JsonKey(name: 'asterisk_mention') bool? asteriskMention,
+
+    /// Send push notifications even contact is online.
+    @JsonKey(name: 'always_send_pushes') bool? alwaysSendPushes,
+
+    /// Hide pushes body.
+    @JsonKey(name: 'hide_pushes_content') bool? hidePushesContent,
 
     /// Timezone, if any.
-    @JsonKey(name: 'timezone') required String timezone,
+    @JsonKey(name: 'timezone') String? timezone,
 
-    /// Start silently time (no pushes, no sounds).
-    @JsonKey(name: 'quiet_time_start') required String quietTimeStart,
+    /// Quiet time start.
+    @JsonKey(name: 'quiet_time_start') String? quietTimeStart,
 
     /// Quiet time finish.
-    @JsonKey(name: 'quiet_time_finish') required String quietTimeFinish,
+    @JsonKey(name: 'quiet_time_finish') String? quietTimeFinish,
+
+    /// Focus mode enabled until.
+    @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime? focusUntil,
 
     /// Push notifications for group chats.
-    @JsonKey(name: 'group_notifications_enabled') required bool groupNotificationsEnabled,
+    @JsonKey(name: 'group_notifications_enabled') bool? groupNotificationsEnabled,
 
     /// Push notifications for task chats.
-    @JsonKey(name: 'task_notifications_enabled') required bool taskNotificationsEnabled,
+    @JsonKey(name: 'task_notifications_enabled') bool? taskNotificationsEnabled,
 
     /// Short view in contact list.
-    @JsonKey(name: 'contact_short_view') required bool contactShortView,
+    @JsonKey(name: 'contact_short_view') bool? contactShortView,
 
     /// Short view in group list.
-    @JsonKey(name: 'group_short_view') required bool groupShortView,
+    @JsonKey(name: 'group_short_view') bool? groupShortView,
 
     /// Short view in task list.
-    @JsonKey(name: 'task_short_view') required bool taskShortView,
+    @JsonKey(name: 'task_short_view') bool? taskShortView,
 
     /// Short view in meeting list.
-    @JsonKey(name: 'meeting_short_view') required bool meetingShortView,
+    @JsonKey(name: 'meeting_short_view') bool? meetingShortView,
 
     /// Short view in contact list in mobile app.
-    @JsonKey(name: 'contact_mshort_view') required bool contactMshortView,
-
-    /// Show archived contacts in contact list.
-    @JsonKey(name: 'contact_show_archived') required bool contactShowArchived,
+    @JsonKey(name: 'contact_mshort_view') bool? contactMshortView,
 
     /// Short view in group list in mobile app.
-    @JsonKey(name: 'group_mshort_view') required bool groupMshortView,
+    @JsonKey(name: 'group_mshort_view') bool? groupMshortView,
+
+    /// Two-factor authentication is configured and confirmed.
+    @JsonKey(name: 'auth_2fa_enabled') bool? auth2faEnabled,
+
+    /// Two-factor authentication status.
+    @JsonKey(name: 'auth_2fa_status') String? auth2faStatus,
 
     /// Short view in task list in mobile app.
-    @JsonKey(name: 'task_mshort_view') required bool taskMshortView,
+    @JsonKey(name: 'task_mshort_view') bool? taskMshortView,
 
     /// Short view in meeting list in mobile app.
-    @JsonKey(name: 'meeting_mshort_view') required bool meetingMshortView,
+    @JsonKey(name: 'meeting_mshort_view') bool? meetingMshortView,
+
+    /// Show archived contacts in contact list.
+    @JsonKey(name: 'contact_show_archived') bool? contactShowArchived,
+
+    /// Show unread chats first in feed.
+    @JsonKey(name: 'unread_first') bool? unreadFirst,
+
+    /// Show unread chats first in feed in mobile app.
+    @JsonKey(name: 'munread_first') bool? mUnreadFirst,
+
+    /// Can I add new members to this team.
+    @JsonKey(name: 'can_add_to_team') bool? canAddToTeam,
+
+    /// Can I manage contact sections in this team.
+    @JsonKey(name: 'can_manage_sections') bool? canManageSections,
+
+    /// Can I manage task projects in this team.
+    @JsonKey(name: 'can_manage_projects') bool? canManageProjects,
+
+    /// Can I manage tags in this team.
+    @JsonKey(name: 'can_manage_tags') bool? canManageTags,
+
+    /// Can I manage integrations in this team.
+    @JsonKey(name: 'can_manage_integrations') bool? canManageIntegrations,
+
+    /// Can I manage color rules in this team.
+    @JsonKey(name: 'can_manage_color_rules') bool? canManageColorRules,
+
+    /// Can I create group chats in this team.
+    @JsonKey(name: 'can_create_group') bool? canCreateGroup,
+
+    /// Can I create meetings in this team.
+    @JsonKey(name: 'can_create_meeting') bool? canCreateMeeting,
+
+    /// Can I view/join public group in this team.
+    @JsonKey(name: 'can_join_public_groups') bool? canJoinPublicGroups,
+
+    /// Can I view/join public tasks in this team.
+    @JsonKey(name: 'can_join_public_tasks') bool? canJoinPublicTasks,
+
+    /// Can I import chats from external services (now its only telegram).
+    @JsonKey(name: 'can_import_chats') bool? canImportChats,
+
+    /// Extra contact fields.
+    @JsonKey(name: 'custom_fields') ContactCustomFields? customFields,
+
+    /// Deprecated.
+    @Deprecated('Deprecated.') @JsonKey(name: 'can_delete_any_message') bool? canDeleteAnyMessage,
   }) = _Contact;
 
   factory Contact.fromJson(Map<String, dynamic> json) => _$ContactFromJson(json);
