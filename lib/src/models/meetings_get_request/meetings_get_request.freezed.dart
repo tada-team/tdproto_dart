@@ -32,7 +32,7 @@ class _$MeetingsGetRequestTearOff {
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'is_required') bool? isRequired,
-      @JsonKey(name: 'members_jids') List<String>? membersJids}) {
+      @JsonKey(name: 'members_jids') String? membersJids}) {
     return _MeetingsGetRequest(
       teamUuid: teamUuid,
       dateFrom: dateFrom,
@@ -100,7 +100,7 @@ mixin _$MeetingsGetRequest {
 
   /// .
   @JsonKey(name: 'members_jids')
-  List<String>? get membersJids => throw _privateConstructorUsedError;
+  String? get membersJids => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -122,7 +122,7 @@ abstract class $MeetingsGetRequestCopyWith<$Res> {
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'is_required') bool? isRequired,
-      @JsonKey(name: 'members_jids') List<String>? membersJids});
+      @JsonKey(name: 'members_jids') String? membersJids});
 }
 
 /// @nodoc
@@ -191,7 +191,7 @@ class _$MeetingsGetRequestCopyWithImpl<$Res> implements $MeetingsGetRequestCopyW
       membersJids: membersJids == freezed
           ? _value.membersJids
           : membersJids // ignore: cast_nullable_to_non_nullable
-              as List<String>?,
+              as String?,
     ));
   }
 }
@@ -212,7 +212,7 @@ abstract class _$MeetingsGetRequestCopyWith<$Res> implements $MeetingsGetRequest
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'is_required') bool? isRequired,
-      @JsonKey(name: 'members_jids') List<String>? membersJids});
+      @JsonKey(name: 'members_jids') String? membersJids});
 }
 
 /// @nodoc
@@ -282,7 +282,7 @@ class __$MeetingsGetRequestCopyWithImpl<$Res> extends _$MeetingsGetRequestCopyWi
       membersJids: membersJids == freezed
           ? _value.membersJids
           : membersJids // ignore: cast_nullable_to_non_nullable
-              as List<String>?,
+              as String?,
     ));
   }
 }
@@ -359,7 +359,7 @@ class _$_MeetingsGetRequest implements _MeetingsGetRequest {
 
   /// .
   @JsonKey(name: 'members_jids')
-  final List<String>? membersJids;
+  final String? membersJids;
 
   @override
   String toString() {
@@ -425,7 +425,7 @@ abstract class _MeetingsGetRequest implements MeetingsGetRequest {
       @JsonKey(name: 'is_public') bool? isPublic,
       @JsonKey(name: 'is_outside') bool? isOutside,
       @JsonKey(name: 'is_required') bool? isRequired,
-      @JsonKey(name: 'members_jids') List<String>? membersJids}) = _$_MeetingsGetRequest;
+      @JsonKey(name: 'members_jids') String? membersJids}) = _$_MeetingsGetRequest;
 
   factory _MeetingsGetRequest.fromJson(Map<String, dynamic> json) = _$_MeetingsGetRequest.fromJson;
 
@@ -483,7 +483,7 @@ abstract class _MeetingsGetRequest implements MeetingsGetRequest {
 
   /// .
   @JsonKey(name: 'members_jids')
-  List<String>? get membersJids => throw _privateConstructorUsedError;
+  String? get membersJids => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MeetingsGetRequestCopyWith<_MeetingsGetRequest> get copyWith => throw _privateConstructorUsedError;
