@@ -10,12 +10,14 @@ class ClientCallTrickle with _$ClientCallTrickle {
   const factory ClientCallTrickle({
     /// .
     @JsonKey(name: 'params') required ClientCallTrickleParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ClientCallTrickle;
 
   factory ClientCallTrickle.fromJson(Map<String, dynamic> json) => _$ClientCallTrickleFromJson(json);

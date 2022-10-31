@@ -6,7 +6,8 @@ part of 'tariff_billing.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_TariffBilling _$$_TariffBillingFromJson(Map<String, dynamic> json) => _$_TariffBilling(
+_$_TariffBilling _$$_TariffBillingFromJson(Map<String, dynamic> json) =>
+    _$_TariffBilling(
       closeDate: json['close_date'] as String?,
       costWorkplace: json['cost_workplace'] as String,
       currency: json['currency'] as String,
@@ -29,7 +30,8 @@ _$_TariffBilling _$$_TariffBillingFromJson(Map<String, dynamic> json) => _$_Tari
       tariffName: json['tariff_name'] as String,
     );
 
-Map<String, dynamic> _$$_TariffBillingToJson(_$_TariffBilling instance) => <String, dynamic>{
+Map<String, dynamic> _$$_TariffBillingToJson(_$_TariffBilling instance) =>
+    <String, dynamic>{
       'close_date': instance.closeDate,
       'cost_workplace': instance.costWorkplace,
       'currency': instance.currency,

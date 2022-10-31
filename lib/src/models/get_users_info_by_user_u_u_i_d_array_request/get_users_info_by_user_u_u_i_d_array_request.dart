@@ -10,14 +10,15 @@ class GetUsersInfoByUserUUIDArrayRequest with _$GetUsersInfoByUserUUIDArrayReque
   const factory GetUsersInfoByUserUUIDArrayRequest({
     /// .
     @JsonKey(name: 'user_uuid') required List<String> userUuid,
-
+    
     /// .
     @JsonKey(name: 'limit') int? limit,
-
+    
     /// .
     @JsonKey(name: 'offset') int? offset,
+    
+    
   }) = _GetUsersInfoByUserUUIDArrayRequest;
 
-  factory GetUsersInfoByUserUUIDArrayRequest.fromJson(Map<String, dynamic> json) =>
-      _$GetUsersInfoByUserUUIDArrayRequestFromJson(json);
+  factory GetUsersInfoByUserUUIDArrayRequest.fromJson(Map<String, dynamic> json) => _$GetUsersInfoByUserUUIDArrayRequestFromJson(json);
 }

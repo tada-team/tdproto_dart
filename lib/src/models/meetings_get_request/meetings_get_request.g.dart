@@ -6,7 +6,9 @@ part of 'meetings_get_request.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MeetingsGetRequest _$$_MeetingsGetRequestFromJson(Map<String, dynamic> json) => _$_MeetingsGetRequest(
+_$_MeetingsGetRequest _$$_MeetingsGetRequestFromJson(
+        Map<String, dynamic> json) =>
+    _$_MeetingsGetRequest(
       teamUuid: json['team_uuid'] as String,
       dateFrom: json['date_from'] as String,
       dateTo: json['date_to'] as String,
@@ -20,7 +22,9 @@ _$_MeetingsGetRequest _$$_MeetingsGetRequestFromJson(Map<String, dynamic> json) 
       membersJids: json['members_jids'] as String?,
     );
 
-Map<String, dynamic> _$$_MeetingsGetRequestToJson(_$_MeetingsGetRequest instance) => <String, dynamic>{
+Map<String, dynamic> _$$_MeetingsGetRequestToJson(
+        _$_MeetingsGetRequest instance) =>
+    <String, dynamic>{
       'team_uuid': instance.teamUuid,
       'date_from': instance.dateFrom,
       'date_to': instance.dateTo,

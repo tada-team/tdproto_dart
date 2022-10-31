@@ -6,7 +6,8 @@ part of 'font_colors.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_FontColors _$$_FontColorsFromJson(Map<String, dynamic> json) => _$_FontColors(
+_$_FontColors _$$_FontColorsFromJson(Map<String, dynamic> json) =>
+    _$_FontColors(
       text: json['text'] as String,
       title: json['title'] as String,
       sub: json['sub'] as String,
@@ -18,7 +19,8 @@ _$_FontColors _$$_FontColorsFromJson(Map<String, dynamic> json) => _$_FontColors
       textBadge: json['text_badge'] as String,
     );
 
-Map<String, dynamic> _$$_FontColorsToJson(_$_FontColors instance) => <String, dynamic>{
+Map<String, dynamic> _$$_FontColorsToJson(_$_FontColors instance) =>
+    <String, dynamic>{
       'text': instance.text,
       'title': instance.title,
       'sub': instance.sub,

@@ -10,6 +10,8 @@ class AddUserInWorkplaceResponse with _$AddUserInWorkplaceResponse {
   const factory AddUserInWorkplaceResponse({
     /// .
     @JsonKey(name: 'success') bool? success,
+    
+    
   }) = _AddUserInWorkplaceResponse;
 
   factory AddUserInWorkplaceResponse.fromJson(Map<String, dynamic> json) => _$AddUserInWorkplaceResponseFromJson(json);

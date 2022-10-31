@@ -10,12 +10,14 @@ class ServerRemindDeleted with _$ServerRemindDeleted {
   const factory ServerRemindDeleted({
     /// .
     @JsonKey(name: 'params') required ServerRemindDeletedParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerRemindDeleted;
 
   factory ServerRemindDeleted.fromJson(Map<String, dynamic> json) => _$ServerRemindDeletedFromJson(json);

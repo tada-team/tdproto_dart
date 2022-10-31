@@ -10,6 +10,8 @@ class ChatMessages with _$ChatMessages {
   const factory ChatMessages({
     /// .
     @JsonKey(name: 'messages') required List<Message> messages,
+    
+    
   }) = _ChatMessages;
 
   factory ChatMessages.fromJson(Map<String, dynamic> json) => _$ChatMessagesFromJson(json);

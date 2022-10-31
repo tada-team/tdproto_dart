@@ -10,9 +10,11 @@ class MeetingsMemberCreateParams with _$MeetingsMemberCreateParams {
   const factory MeetingsMemberCreateParams({
     /// .
     @JsonKey(name: 'jid') required String jid,
-
+    
     /// .
     @JsonKey(name: 'status') String? status,
+    
+    
   }) = _MeetingsMemberCreateParams;
 
   factory MeetingsMemberCreateParams.fromJson(Map<String, dynamic> json) => _$MeetingsMemberCreateParamsFromJson(json);

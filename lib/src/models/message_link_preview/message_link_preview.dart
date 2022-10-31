@@ -10,9 +10,11 @@ class MessageLinkPreview with _$MessageLinkPreview {
   const factory MessageLinkPreview({
     /// Website title or og:title content.
     @JsonKey(name: 'title') required String title,
-
+    
     /// Website description.
     @JsonKey(name: 'description') String? description,
+    
+    
   }) = _MessageLinkPreview;
 
   factory MessageLinkPreview.fromJson(Map<String, dynamic> json) => _$MessageLinkPreviewFromJson(json);

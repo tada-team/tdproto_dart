@@ -10,8 +10,9 @@ class SuspendPersonalAccountResponse with _$SuspendPersonalAccountResponse {
   const factory SuspendPersonalAccountResponse({
     /// .
     @JsonKey(name: 'success') required bool success,
+    
+    
   }) = _SuspendPersonalAccountResponse;
 
-  factory SuspendPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$SuspendPersonalAccountResponseFromJson(json);
+  factory SuspendPersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$SuspendPersonalAccountResponseFromJson(json);
 }

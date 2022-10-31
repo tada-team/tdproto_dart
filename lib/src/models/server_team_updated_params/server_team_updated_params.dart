@@ -10,6 +10,8 @@ class ServerTeamUpdatedParams with _$ServerTeamUpdatedParams {
   const factory ServerTeamUpdatedParams({
     /// .
     @JsonKey(name: 'teams') required List<Team> teams,
+    
+    
   }) = _ServerTeamUpdatedParams;
 
   factory ServerTeamUpdatedParams.fromJson(Map<String, dynamic> json) => _$ServerTeamUpdatedParamsFromJson(json);

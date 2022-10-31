@@ -10,6 +10,8 @@ class ServerTagDeletedParams with _$ServerTagDeletedParams {
   const factory ServerTagDeletedParams({
     /// Tags info.
     @JsonKey(name: 'tags') required List<DeletedTag> tags,
+    
+    
   }) = _ServerTagDeletedParams;
 
   factory ServerTagDeletedParams.fromJson(Map<String, dynamic> json) => _$ServerTagDeletedParamsFromJson(json);

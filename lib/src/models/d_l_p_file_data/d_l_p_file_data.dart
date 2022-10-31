@@ -10,9 +10,11 @@ class DLPFileData with _$DLPFileData {
   const factory DLPFileData({
     /// .
     @JsonKey(name: 'link') required String link,
-
+    
     /// Content []byte `json:"content"` // TODO.
     @JsonKey(name: 'comment') required String comment,
+    
+    
   }) = _DLPFileData;
 
   factory DLPFileData.fromJson(Map<String, dynamic> json) => _$DLPFileDataFromJson(json);

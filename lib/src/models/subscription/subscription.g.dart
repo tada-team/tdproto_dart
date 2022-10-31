@@ -6,7 +6,8 @@ part of 'subscription.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_Subscription _$$_SubscriptionFromJson(Map<String, dynamic> json) => _$_Subscription(
+_$_Subscription _$$_SubscriptionFromJson(Map<String, dynamic> json) =>
+    _$_Subscription(
       uid: json['uid'] as String,
       activated: json['activated'] as String?,
       expires: json['expires'] as String?,
@@ -14,7 +15,8 @@ _$_Subscription _$$_SubscriptionFromJson(Map<String, dynamic> json) => _$_Subscr
       userUid: json['user_uid'] as String?,
     );
 
-Map<String, dynamic> _$$_SubscriptionToJson(_$_Subscription instance) => <String, dynamic>{
+Map<String, dynamic> _$$_SubscriptionToJson(_$_Subscription instance) =>
+    <String, dynamic>{
       'uid': instance.uid,
       'activated': instance.activated,
       'expires': instance.expires,

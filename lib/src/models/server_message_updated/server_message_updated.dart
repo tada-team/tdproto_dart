@@ -10,12 +10,14 @@ class ServerMessageUpdated with _$ServerMessageUpdated {
   const factory ServerMessageUpdated({
     /// .
     @JsonKey(name: 'params') required ServerMessageUpdatedParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerMessageUpdated;
 
   factory ServerMessageUpdated.fromJson(Map<String, dynamic> json) => _$ServerMessageUpdatedFromJson(json);

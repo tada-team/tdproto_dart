@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_section_deleted_params.dart';
@@ -11,34 +12,12 @@ part of 'server_section_deleted_params.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-ServerSectionDeletedParams _$ServerSectionDeletedParamsFromJson(Map<String, dynamic> json) {
+ServerSectionDeletedParams _$ServerSectionDeletedParamsFromJson(
+    Map<String, dynamic> json) {
   return _ServerSectionDeletedParams.fromJson(json);
 }
-
-/// @nodoc
-class _$ServerSectionDeletedParamsTearOff {
-  const _$ServerSectionDeletedParamsTearOff();
-
-  _ServerSectionDeletedParams call(
-      {@JsonKey(name: 'chat_type') required String chatType,
-      @JsonKey(name: 'sections') required List<DeletedSection> sections,
-      @Deprecated('Deprecated.') @JsonKey(name: 'gentime') required int gentime}) {
-    return _ServerSectionDeletedParams(
-      chatType: chatType,
-      sections: sections,
-      gentime: gentime,
-    );
-  }
-
-  ServerSectionDeletedParams fromJson(Map<String, Object> json) {
-    return ServerSectionDeletedParams.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ServerSectionDeletedParams = _$ServerSectionDeletedParamsTearOff();
 
 /// @nodoc
 mixin _$ServerSectionDeletedParams {
@@ -57,14 +36,17 @@ mixin _$ServerSectionDeletedParams {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerSectionDeletedParamsCopyWith<ServerSectionDeletedParams> get copyWith => throw _privateConstructorUsedError;
+  $ServerSectionDeletedParamsCopyWith<ServerSectionDeletedParams>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ServerSectionDeletedParamsCopyWith<$Res> {
-  factory $ServerSectionDeletedParamsCopyWith(
-          ServerSectionDeletedParams value, $Res Function(ServerSectionDeletedParams) then) =
-      _$ServerSectionDeletedParamsCopyWithImpl<$Res>;
+  factory $ServerSectionDeletedParamsCopyWith(ServerSectionDeletedParams value,
+          $Res Function(ServerSectionDeletedParams) then) =
+      _$ServerSectionDeletedParamsCopyWithImpl<$Res,
+          ServerSectionDeletedParams>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'chat_type') String chatType,
       @JsonKey(name: 'sections') List<DeletedSection> sections,
@@ -72,42 +54,49 @@ abstract class $ServerSectionDeletedParamsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ServerSectionDeletedParamsCopyWithImpl<$Res> implements $ServerSectionDeletedParamsCopyWith<$Res> {
+class _$ServerSectionDeletedParamsCopyWithImpl<$Res,
+        $Val extends ServerSectionDeletedParams>
+    implements $ServerSectionDeletedParamsCopyWith<$Res> {
   _$ServerSectionDeletedParamsCopyWithImpl(this._value, this._then);
 
-  final ServerSectionDeletedParams _value;
   // ignore: unused_field
-  final $Res Function(ServerSectionDeletedParams) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? chatType = freezed,
-    Object? sections = freezed,
-    Object? gentime = freezed,
+    Object? chatType = null,
+    Object? sections = null,
+    Object? gentime = null,
   }) {
     return _then(_value.copyWith(
-      chatType: chatType == freezed
+      chatType: null == chatType
           ? _value.chatType
           : chatType // ignore: cast_nullable_to_non_nullable
               as String,
-      sections: sections == freezed
+      sections: null == sections
           ? _value.sections
           : sections // ignore: cast_nullable_to_non_nullable
               as List<DeletedSection>,
-      gentime: gentime == freezed
+      gentime: null == gentime
           ? _value.gentime
           : gentime // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ServerSectionDeletedParamsCopyWith<$Res> implements $ServerSectionDeletedParamsCopyWith<$Res> {
-  factory _$ServerSectionDeletedParamsCopyWith(
-          _ServerSectionDeletedParams value, $Res Function(_ServerSectionDeletedParams) then) =
-      __$ServerSectionDeletedParamsCopyWithImpl<$Res>;
+abstract class _$$_ServerSectionDeletedParamsCopyWith<$Res>
+    implements $ServerSectionDeletedParamsCopyWith<$Res> {
+  factory _$$_ServerSectionDeletedParamsCopyWith(
+          _$_ServerSectionDeletedParams value,
+          $Res Function(_$_ServerSectionDeletedParams) then) =
+      __$$_ServerSectionDeletedParamsCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'chat_type') String chatType,
       @JsonKey(name: 'sections') List<DeletedSection> sections,
@@ -115,31 +104,32 @@ abstract class _$ServerSectionDeletedParamsCopyWith<$Res> implements $ServerSect
 }
 
 /// @nodoc
-class __$ServerSectionDeletedParamsCopyWithImpl<$Res> extends _$ServerSectionDeletedParamsCopyWithImpl<$Res>
-    implements _$ServerSectionDeletedParamsCopyWith<$Res> {
-  __$ServerSectionDeletedParamsCopyWithImpl(
-      _ServerSectionDeletedParams _value, $Res Function(_ServerSectionDeletedParams) _then)
-      : super(_value, (v) => _then(v as _ServerSectionDeletedParams));
+class __$$_ServerSectionDeletedParamsCopyWithImpl<$Res>
+    extends _$ServerSectionDeletedParamsCopyWithImpl<$Res,
+        _$_ServerSectionDeletedParams>
+    implements _$$_ServerSectionDeletedParamsCopyWith<$Res> {
+  __$$_ServerSectionDeletedParamsCopyWithImpl(
+      _$_ServerSectionDeletedParams _value,
+      $Res Function(_$_ServerSectionDeletedParams) _then)
+      : super(_value, _then);
 
-  @override
-  _ServerSectionDeletedParams get _value => super._value as _ServerSectionDeletedParams;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? chatType = freezed,
-    Object? sections = freezed,
-    Object? gentime = freezed,
+    Object? chatType = null,
+    Object? sections = null,
+    Object? gentime = null,
   }) {
-    return _then(_ServerSectionDeletedParams(
-      chatType: chatType == freezed
+    return _then(_$_ServerSectionDeletedParams(
+      chatType: null == chatType
           ? _value.chatType
           : chatType // ignore: cast_nullable_to_non_nullable
               as String,
-      sections: sections == freezed
-          ? _value.sections
+      sections: null == sections
+          ? _value._sections
           : sections // ignore: cast_nullable_to_non_nullable
               as List<DeletedSection>,
-      gentime: gentime == freezed
+      gentime: null == gentime
           ? _value.gentime
           : gentime // ignore: cast_nullable_to_non_nullable
               as int,
@@ -151,26 +141,36 @@ class __$ServerSectionDeletedParamsCopyWithImpl<$Res> extends _$ServerSectionDel
 @JsonSerializable()
 class _$_ServerSectionDeletedParams implements _ServerSectionDeletedParams {
   const _$_ServerSectionDeletedParams(
-      {@JsonKey(name: 'chat_type') required this.chatType,
-      @JsonKey(name: 'sections') required this.sections,
-      @Deprecated('Deprecated.') @JsonKey(name: 'gentime') required this.gentime});
+      {@JsonKey(name: 'chat_type')
+          required this.chatType,
+      @JsonKey(name: 'sections')
+          required final List<DeletedSection> sections,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'gentime')
+          required this.gentime})
+      : _sections = sections;
 
   factory _$_ServerSectionDeletedParams.fromJson(Map<String, dynamic> json) =>
       _$$_ServerSectionDeletedParamsFromJson(json);
 
-  @override
-
   /// Chat type.
+  @override
   @JsonKey(name: 'chat_type')
   final String chatType;
-  @override
 
   /// Section/project info.
-  @JsonKey(name: 'sections')
-  final List<DeletedSection> sections;
+  final List<DeletedSection> _sections;
+
+  /// Section/project info.
   @override
+  @JsonKey(name: 'sections')
+  List<DeletedSection> get sections {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_sections);
+  }
 
   /// Deprecated.
+  @override
   @Deprecated('Deprecated.')
   @JsonKey(name: 'gentime')
   final int gentime;
@@ -183,55 +183,66 @@ class _$_ServerSectionDeletedParams implements _ServerSectionDeletedParams {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ServerSectionDeletedParams &&
-            (identical(other.chatType, chatType) || const DeepCollectionEquality().equals(other.chatType, chatType)) &&
-            (identical(other.sections, sections) || const DeepCollectionEquality().equals(other.sections, sections)) &&
-            (identical(other.gentime, gentime) || const DeepCollectionEquality().equals(other.gentime, gentime)));
+        (other.runtimeType == runtimeType &&
+            other is _$_ServerSectionDeletedParams &&
+            (identical(other.chatType, chatType) ||
+                other.chatType == chatType) &&
+            const DeepCollectionEquality().equals(other._sections, _sections) &&
+            (identical(other.gentime, gentime) || other.gentime == gentime));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(chatType) ^
-      const DeepCollectionEquality().hash(sections) ^
-      const DeepCollectionEquality().hash(gentime);
 
   @JsonKey(ignore: true)
   @override
-  _$ServerSectionDeletedParamsCopyWith<_ServerSectionDeletedParams> get copyWith =>
-      __$ServerSectionDeletedParamsCopyWithImpl<_ServerSectionDeletedParams>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, chatType,
+      const DeepCollectionEquality().hash(_sections), gentime);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_ServerSectionDeletedParamsCopyWith<_$_ServerSectionDeletedParams>
+      get copyWith => __$$_ServerSectionDeletedParamsCopyWithImpl<
+          _$_ServerSectionDeletedParams>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ServerSectionDeletedParamsToJson(this);
+    return _$$_ServerSectionDeletedParamsToJson(
+      this,
+    );
   }
 }
 
-abstract class _ServerSectionDeletedParams implements ServerSectionDeletedParams {
+abstract class _ServerSectionDeletedParams
+    implements ServerSectionDeletedParams {
   const factory _ServerSectionDeletedParams(
-      {@JsonKey(name: 'chat_type') required String chatType,
-      @JsonKey(name: 'sections') required List<DeletedSection> sections,
-      @Deprecated('Deprecated.') @JsonKey(name: 'gentime') required int gentime}) = _$_ServerSectionDeletedParams;
+      {@JsonKey(name: 'chat_type')
+          required final String chatType,
+      @JsonKey(name: 'sections')
+          required final List<DeletedSection> sections,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'gentime')
+          required final int gentime}) = _$_ServerSectionDeletedParams;
 
-  factory _ServerSectionDeletedParams.fromJson(Map<String, dynamic> json) = _$_ServerSectionDeletedParams.fromJson;
+  factory _ServerSectionDeletedParams.fromJson(Map<String, dynamic> json) =
+      _$_ServerSectionDeletedParams.fromJson;
 
   @override
 
   /// Chat type.
   @JsonKey(name: 'chat_type')
-  String get chatType => throw _privateConstructorUsedError;
+  String get chatType;
   @override
 
   /// Section/project info.
   @JsonKey(name: 'sections')
-  List<DeletedSection> get sections => throw _privateConstructorUsedError;
+  List<DeletedSection> get sections;
   @override
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'gentime')
-  int get gentime => throw _privateConstructorUsedError;
+  int get gentime;
   @override
   @JsonKey(ignore: true)
-  _$ServerSectionDeletedParamsCopyWith<_ServerSectionDeletedParams> get copyWith => throw _privateConstructorUsedError;
+  _$$_ServerSectionDeletedParamsCopyWith<_$_ServerSectionDeletedParams>
+      get copyWith => throw _privateConstructorUsedError;
 }

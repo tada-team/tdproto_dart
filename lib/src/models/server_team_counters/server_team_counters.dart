@@ -10,12 +10,14 @@ class ServerTeamCounters with _$ServerTeamCounters {
   const factory ServerTeamCounters({
     /// .
     @JsonKey(name: 'params') required ServerTeamCountersParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerTeamCounters;
 
   factory ServerTeamCounters.fromJson(Map<String, dynamic> json) => _$ServerTeamCountersFromJson(json);

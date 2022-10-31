@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'o_auth_service.dart';
@@ -11,30 +12,11 @@ part of 'o_auth_service.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 OAuthService _$OAuthServiceFromJson(Map<String, dynamic> json) {
   return _OAuthService.fromJson(json);
 }
-
-/// @nodoc
-class _$OAuthServiceTearOff {
-  const _$OAuthServiceTearOff();
-
-  _OAuthService call({@JsonKey(name: 'name') required String name, @JsonKey(name: 'url') required String url}) {
-    return _OAuthService(
-      name: name,
-      url: url,
-    );
-  }
-
-  OAuthService fromJson(Map<String, Object> json) {
-    return OAuthService.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $OAuthService = _$OAuthServiceTearOff();
 
 /// @nodoc
 mixin _$OAuthService {
@@ -48,70 +30,81 @@ mixin _$OAuthService {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $OAuthServiceCopyWith<OAuthService> get copyWith => throw _privateConstructorUsedError;
+  $OAuthServiceCopyWith<OAuthService> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $OAuthServiceCopyWith<$Res> {
-  factory $OAuthServiceCopyWith(OAuthService value, $Res Function(OAuthService) then) =
-      _$OAuthServiceCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'name') String name, @JsonKey(name: 'url') String url});
+  factory $OAuthServiceCopyWith(
+          OAuthService value, $Res Function(OAuthService) then) =
+      _$OAuthServiceCopyWithImpl<$Res, OAuthService>;
+  @useResult
+  $Res call(
+      {@JsonKey(name: 'name') String name, @JsonKey(name: 'url') String url});
 }
 
 /// @nodoc
-class _$OAuthServiceCopyWithImpl<$Res> implements $OAuthServiceCopyWith<$Res> {
+class _$OAuthServiceCopyWithImpl<$Res, $Val extends OAuthService>
+    implements $OAuthServiceCopyWith<$Res> {
   _$OAuthServiceCopyWithImpl(this._value, this._then);
 
-  final OAuthService _value;
   // ignore: unused_field
-  final $Res Function(OAuthService) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? url = freezed,
+    Object? name = null,
+    Object? url = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$OAuthServiceCopyWith<$Res> implements $OAuthServiceCopyWith<$Res> {
-  factory _$OAuthServiceCopyWith(_OAuthService value, $Res Function(_OAuthService) then) =
-      __$OAuthServiceCopyWithImpl<$Res>;
+abstract class _$$_OAuthServiceCopyWith<$Res>
+    implements $OAuthServiceCopyWith<$Res> {
+  factory _$$_OAuthServiceCopyWith(
+          _$_OAuthService value, $Res Function(_$_OAuthService) then) =
+      __$$_OAuthServiceCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'name') String name, @JsonKey(name: 'url') String url});
+  @useResult
+  $Res call(
+      {@JsonKey(name: 'name') String name, @JsonKey(name: 'url') String url});
 }
 
 /// @nodoc
-class __$OAuthServiceCopyWithImpl<$Res> extends _$OAuthServiceCopyWithImpl<$Res>
-    implements _$OAuthServiceCopyWith<$Res> {
-  __$OAuthServiceCopyWithImpl(_OAuthService _value, $Res Function(_OAuthService) _then)
-      : super(_value, (v) => _then(v as _OAuthService));
+class __$$_OAuthServiceCopyWithImpl<$Res>
+    extends _$OAuthServiceCopyWithImpl<$Res, _$_OAuthService>
+    implements _$$_OAuthServiceCopyWith<$Res> {
+  __$$_OAuthServiceCopyWithImpl(
+      _$_OAuthService _value, $Res Function(_$_OAuthService) _then)
+      : super(_value, _then);
 
-  @override
-  _OAuthService get _value => super._value as _OAuthService;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? url = freezed,
+    Object? name = null,
+    Object? url = null,
   }) {
-    return _then(_OAuthService(
-      name: name == freezed
+    return _then(_$_OAuthService(
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
@@ -122,18 +115,20 @@ class __$OAuthServiceCopyWithImpl<$Res> extends _$OAuthServiceCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_OAuthService implements _OAuthService {
-  const _$_OAuthService({@JsonKey(name: 'name') required this.name, @JsonKey(name: 'url') required this.url});
+  const _$_OAuthService(
+      {@JsonKey(name: 'name') required this.name,
+      @JsonKey(name: 'url') required this.url});
 
-  factory _$_OAuthService.fromJson(Map<String, dynamic> json) => _$$_OAuthServiceFromJson(json);
-
-  @override
+  factory _$_OAuthService.fromJson(Map<String, dynamic> json) =>
+      _$$_OAuthServiceFromJson(json);
 
   /// Integration title.
+  @override
   @JsonKey(name: 'name')
   final String name;
-  @override
 
   /// Redirect url.
+  @override
   @JsonKey(name: 'url')
   final String url;
 
@@ -145,42 +140,50 @@ class _$_OAuthService implements _OAuthService {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _OAuthService &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.url, url) || const DeepCollectionEquality().equals(other.url, url)));
+        (other.runtimeType == runtimeType &&
+            other is _$_OAuthService &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.url, url) || other.url == url));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(name) ^ const DeepCollectionEquality().hash(url);
 
   @JsonKey(ignore: true)
   @override
-  _$OAuthServiceCopyWith<_OAuthService> get copyWith => __$OAuthServiceCopyWithImpl<_OAuthService>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, name, url);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_OAuthServiceCopyWith<_$_OAuthService> get copyWith =>
+      __$$_OAuthServiceCopyWithImpl<_$_OAuthService>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_OAuthServiceToJson(this);
+    return _$$_OAuthServiceToJson(
+      this,
+    );
   }
 }
 
 abstract class _OAuthService implements OAuthService {
   const factory _OAuthService(
-      {@JsonKey(name: 'name') required String name, @JsonKey(name: 'url') required String url}) = _$_OAuthService;
+      {@JsonKey(name: 'name') required final String name,
+      @JsonKey(name: 'url') required final String url}) = _$_OAuthService;
 
-  factory _OAuthService.fromJson(Map<String, dynamic> json) = _$_OAuthService.fromJson;
+  factory _OAuthService.fromJson(Map<String, dynamic> json) =
+      _$_OAuthService.fromJson;
 
   @override
 
   /// Integration title.
   @JsonKey(name: 'name')
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
 
   /// Redirect url.
   @JsonKey(name: 'url')
-  String get url => throw _privateConstructorUsedError;
+  String get url;
   @override
   @JsonKey(ignore: true)
-  _$OAuthServiceCopyWith<_OAuthService> get copyWith => throw _privateConstructorUsedError;
+  _$$_OAuthServiceCopyWith<_$_OAuthService> get copyWith =>
+      throw _privateConstructorUsedError;
 }

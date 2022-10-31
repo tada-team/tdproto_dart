@@ -10,15 +10,17 @@ class PaginatedMeetings with _$PaginatedMeetings {
   const factory PaginatedMeetings({
     /// .
     @JsonKey(name: 'objects') required List<Meeting> objects,
-
+    
     /// .
     @JsonKey(name: 'count') required int count,
-
+    
     /// .
     @JsonKey(name: 'limit') required int limit,
-
+    
     /// .
     @JsonKey(name: 'offset') required int offset,
+    
+    
   }) = _PaginatedMeetings;
 
   factory PaginatedMeetings.fromJson(Map<String, dynamic> json) => _$PaginatedMeetingsFromJson(json);

@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'task_counters.dart';
@@ -11,34 +12,11 @@ part of 'task_counters.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 TaskCounters _$TaskCountersFromJson(Map<String, dynamic> json) {
   return _TaskCounters.fromJson(json);
 }
-
-/// @nodoc
-class _$TaskCountersTearOff {
-  const _$TaskCountersTearOff();
-
-  _TaskCounters call(
-      {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'num_unread') int? numUnread,
-      @JsonKey(name: 'num_unread_notices') int? numUnreadNotices}) {
-    return _TaskCounters(
-      jid: jid,
-      numUnread: numUnread,
-      numUnreadNotices: numUnreadNotices,
-    );
-  }
-
-  TaskCounters fromJson(Map<String, Object> json) {
-    return TaskCounters.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $TaskCounters = _$TaskCountersTearOff();
 
 /// @nodoc
 mixin _$TaskCounters {
@@ -56,13 +34,16 @@ mixin _$TaskCounters {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $TaskCountersCopyWith<TaskCounters> get copyWith => throw _privateConstructorUsedError;
+  $TaskCountersCopyWith<TaskCounters> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $TaskCountersCopyWith<$Res> {
-  factory $TaskCountersCopyWith(TaskCounters value, $Res Function(TaskCounters) then) =
-      _$TaskCountersCopyWithImpl<$Res>;
+  factory $TaskCountersCopyWith(
+          TaskCounters value, $Res Function(TaskCounters) then) =
+      _$TaskCountersCopyWithImpl<$Res, TaskCounters>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'num_unread') int? numUnread,
@@ -70,41 +51,47 @@ abstract class $TaskCountersCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$TaskCountersCopyWithImpl<$Res> implements $TaskCountersCopyWith<$Res> {
+class _$TaskCountersCopyWithImpl<$Res, $Val extends TaskCounters>
+    implements $TaskCountersCopyWith<$Res> {
   _$TaskCountersCopyWithImpl(this._value, this._then);
 
-  final TaskCounters _value;
   // ignore: unused_field
-  final $Res Function(TaskCounters) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? jid = freezed,
+    Object? jid = null,
     Object? numUnread = freezed,
     Object? numUnreadNotices = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed
+      jid: null == jid
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      numUnread: numUnread == freezed
+      numUnread: freezed == numUnread
           ? _value.numUnread
           : numUnread // ignore: cast_nullable_to_non_nullable
               as int?,
-      numUnreadNotices: numUnreadNotices == freezed
+      numUnreadNotices: freezed == numUnreadNotices
           ? _value.numUnreadNotices
           : numUnreadNotices // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$TaskCountersCopyWith<$Res> implements $TaskCountersCopyWith<$Res> {
-  factory _$TaskCountersCopyWith(_TaskCounters value, $Res Function(_TaskCounters) then) =
-      __$TaskCountersCopyWithImpl<$Res>;
+abstract class _$$_TaskCountersCopyWith<$Res>
+    implements $TaskCountersCopyWith<$Res> {
+  factory _$$_TaskCountersCopyWith(
+          _$_TaskCounters value, $Res Function(_$_TaskCounters) then) =
+      __$$_TaskCountersCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'num_unread') int? numUnread,
@@ -112,30 +99,30 @@ abstract class _$TaskCountersCopyWith<$Res> implements $TaskCountersCopyWith<$Re
 }
 
 /// @nodoc
-class __$TaskCountersCopyWithImpl<$Res> extends _$TaskCountersCopyWithImpl<$Res>
-    implements _$TaskCountersCopyWith<$Res> {
-  __$TaskCountersCopyWithImpl(_TaskCounters _value, $Res Function(_TaskCounters) _then)
-      : super(_value, (v) => _then(v as _TaskCounters));
+class __$$_TaskCountersCopyWithImpl<$Res>
+    extends _$TaskCountersCopyWithImpl<$Res, _$_TaskCounters>
+    implements _$$_TaskCountersCopyWith<$Res> {
+  __$$_TaskCountersCopyWithImpl(
+      _$_TaskCounters _value, $Res Function(_$_TaskCounters) _then)
+      : super(_value, _then);
 
-  @override
-  _TaskCounters get _value => super._value as _TaskCounters;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? jid = freezed,
+    Object? jid = null,
     Object? numUnread = freezed,
     Object? numUnreadNotices = freezed,
   }) {
-    return _then(_TaskCounters(
-      jid: jid == freezed
+    return _then(_$_TaskCounters(
+      jid: null == jid
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      numUnread: numUnread == freezed
+      numUnread: freezed == numUnread
           ? _value.numUnread
           : numUnread // ignore: cast_nullable_to_non_nullable
               as int?,
-      numUnreadNotices: numUnreadNotices == freezed
+      numUnreadNotices: freezed == numUnreadNotices
           ? _value.numUnreadNotices
           : numUnreadNotices // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -151,21 +138,21 @@ class _$_TaskCounters implements _TaskCounters {
       @JsonKey(name: 'num_unread') this.numUnread,
       @JsonKey(name: 'num_unread_notices') this.numUnreadNotices});
 
-  factory _$_TaskCounters.fromJson(Map<String, dynamic> json) => _$$_TaskCountersFromJson(json);
-
-  @override
+  factory _$_TaskCounters.fromJson(Map<String, dynamic> json) =>
+      _$$_TaskCountersFromJson(json);
 
   /// Task jid.
+  @override
   @JsonKey(name: 'jid')
   final String jid;
-  @override
 
   /// Unreads counter.
+  @override
   @JsonKey(name: 'num_unread')
   final int? numUnread;
-  @override
 
   /// Mentions (@) counter.
+  @override
   @JsonKey(name: 'num_unread_notices')
   final int? numUnreadNotices;
 
@@ -177,55 +164,61 @@ class _$_TaskCounters implements _TaskCounters {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _TaskCounters &&
-            (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_TaskCounters &&
+            (identical(other.jid, jid) || other.jid == jid) &&
             (identical(other.numUnread, numUnread) ||
-                const DeepCollectionEquality().equals(other.numUnread, numUnread)) &&
+                other.numUnread == numUnread) &&
             (identical(other.numUnreadNotices, numUnreadNotices) ||
-                const DeepCollectionEquality().equals(other.numUnreadNotices, numUnreadNotices)));
+                other.numUnreadNotices == numUnreadNotices));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(jid) ^
-      const DeepCollectionEquality().hash(numUnread) ^
-      const DeepCollectionEquality().hash(numUnreadNotices);
 
   @JsonKey(ignore: true)
   @override
-  _$TaskCountersCopyWith<_TaskCounters> get copyWith => __$TaskCountersCopyWithImpl<_TaskCounters>(this, _$identity);
+  int get hashCode =>
+      Object.hash(runtimeType, jid, numUnread, numUnreadNotices);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_TaskCountersCopyWith<_$_TaskCounters> get copyWith =>
+      __$$_TaskCountersCopyWithImpl<_$_TaskCounters>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_TaskCountersToJson(this);
+    return _$$_TaskCountersToJson(
+      this,
+    );
   }
 }
 
 abstract class _TaskCounters implements TaskCounters {
   const factory _TaskCounters(
-      {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'num_unread') int? numUnread,
-      @JsonKey(name: 'num_unread_notices') int? numUnreadNotices}) = _$_TaskCounters;
+          {@JsonKey(name: 'jid') required final String jid,
+          @JsonKey(name: 'num_unread') final int? numUnread,
+          @JsonKey(name: 'num_unread_notices') final int? numUnreadNotices}) =
+      _$_TaskCounters;
 
-  factory _TaskCounters.fromJson(Map<String, dynamic> json) = _$_TaskCounters.fromJson;
+  factory _TaskCounters.fromJson(Map<String, dynamic> json) =
+      _$_TaskCounters.fromJson;
 
   @override
 
   /// Task jid.
   @JsonKey(name: 'jid')
-  String get jid => throw _privateConstructorUsedError;
+  String get jid;
   @override
 
   /// Unreads counter.
   @JsonKey(name: 'num_unread')
-  int? get numUnread => throw _privateConstructorUsedError;
+  int? get numUnread;
   @override
 
   /// Mentions (@) counter.
   @JsonKey(name: 'num_unread_notices')
-  int? get numUnreadNotices => throw _privateConstructorUsedError;
+  int? get numUnreadNotices;
   @override
   @JsonKey(ignore: true)
-  _$TaskCountersCopyWith<_TaskCounters> get copyWith => throw _privateConstructorUsedError;
+  _$$_TaskCountersCopyWith<_$_TaskCounters> get copyWith =>
+      throw _privateConstructorUsedError;
 }

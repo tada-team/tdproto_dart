@@ -15,7 +15,8 @@ _$_IconData _$$_IconDataFromJson(Map<String, dynamic> json) => _$_IconData(
       stub: json['stub'] as String?,
     );
 
-Map<String, dynamic> _$$_IconDataToJson(_$_IconData instance) => <String, dynamic>{
+Map<String, dynamic> _$$_IconDataToJson(_$_IconData instance) =>
+    <String, dynamic>{
       'sm': instance.sm.toJson(),
       'lg': instance.lg.toJson(),
       'letters': instance.letters,

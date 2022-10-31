@@ -10,12 +10,14 @@ class ClientCallOffer with _$ClientCallOffer {
   const factory ClientCallOffer({
     /// .
     @JsonKey(name: 'params') required ClientCallOfferParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ClientCallOffer;
 
   factory ClientCallOffer.fromJson(Map<String, dynamic> json) => _$ClientCallOfferFromJson(json);

@@ -10,12 +10,14 @@ class ICEServer with _$ICEServer {
   const factory ICEServer({
     /// Urls - STUN or TURN addresses.
     @JsonKey(name: 'urls') required String urls,
-
+    
     /// UserName - username for TURN server.
     @JsonKey(name: 'username') String? userName,
-
+    
     /// Credential - credential for TURN server.
     @JsonKey(name: 'credential') String? credential,
+    
+    
   }) = _ICEServer;
 
   factory ICEServer.fromJson(Map<String, dynamic> json) => _$ICEServerFromJson(json);

@@ -14,7 +14,8 @@ _$_UserInfo _$$_UserInfoFromJson(Map<String, dynamic> json) => _$_UserInfo(
       lastActivity: json['last_activity'] as String?,
     );
 
-Map<String, dynamic> _$$_UserInfoToJson(_$_UserInfo instance) => <String, dynamic>{
+Map<String, dynamic> _$$_UserInfoToJson(_$_UserInfo instance) =>
+    <String, dynamic>{
       'uuid': instance.uuid,
       'full_name': instance.fullName,
       'phone': instance.phone,

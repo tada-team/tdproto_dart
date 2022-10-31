@@ -10,6 +10,8 @@ class ClientMessageDeletedParams with _$ClientMessageDeletedParams {
   const factory ClientMessageDeletedParams({
     /// Message id.
     @JsonKey(name: 'message_id') String? messageId,
+    
+    
   }) = _ClientMessageDeletedParams;
 
   factory ClientMessageDeletedParams.fromJson(Map<String, dynamic> json) => _$ClientMessageDeletedParamsFromJson(json);

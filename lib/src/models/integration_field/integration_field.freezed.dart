@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'integration_field.dart';
@@ -11,34 +12,11 @@ part of 'integration_field.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 IntegrationField _$IntegrationFieldFromJson(Map<String, dynamic> json) {
   return _IntegrationField.fromJson(json);
 }
-
-/// @nodoc
-class _$IntegrationFieldTearOff {
-  const _$IntegrationFieldTearOff();
-
-  _IntegrationField call(
-      {@JsonKey(name: 'label') required String label,
-      @JsonKey(name: 'readonly') required bool readonly,
-      @JsonKey(name: 'value') required String value}) {
-    return _IntegrationField(
-      label: label,
-      readonly: readonly,
-      value: value,
-    );
-  }
-
-  IntegrationField fromJson(Map<String, Object> json) {
-    return IntegrationField.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $IntegrationField = _$IntegrationFieldTearOff();
 
 /// @nodoc
 mixin _$IntegrationField {
@@ -56,13 +34,16 @@ mixin _$IntegrationField {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $IntegrationFieldCopyWith<IntegrationField> get copyWith => throw _privateConstructorUsedError;
+  $IntegrationFieldCopyWith<IntegrationField> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $IntegrationFieldCopyWith<$Res> {
-  factory $IntegrationFieldCopyWith(IntegrationField value, $Res Function(IntegrationField) then) =
-      _$IntegrationFieldCopyWithImpl<$Res>;
+  factory $IntegrationFieldCopyWith(
+          IntegrationField value, $Res Function(IntegrationField) then) =
+      _$IntegrationFieldCopyWithImpl<$Res, IntegrationField>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'label') String label,
       @JsonKey(name: 'readonly') bool readonly,
@@ -70,41 +51,47 @@ abstract class $IntegrationFieldCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$IntegrationFieldCopyWithImpl<$Res> implements $IntegrationFieldCopyWith<$Res> {
+class _$IntegrationFieldCopyWithImpl<$Res, $Val extends IntegrationField>
+    implements $IntegrationFieldCopyWith<$Res> {
   _$IntegrationFieldCopyWithImpl(this._value, this._then);
 
-  final IntegrationField _value;
   // ignore: unused_field
-  final $Res Function(IntegrationField) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? label = freezed,
-    Object? readonly = freezed,
-    Object? value = freezed,
+    Object? label = null,
+    Object? readonly = null,
+    Object? value = null,
   }) {
     return _then(_value.copyWith(
-      label: label == freezed
+      label: null == label
           ? _value.label
           : label // ignore: cast_nullable_to_non_nullable
               as String,
-      readonly: readonly == freezed
+      readonly: null == readonly
           ? _value.readonly
           : readonly // ignore: cast_nullable_to_non_nullable
               as bool,
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$IntegrationFieldCopyWith<$Res> implements $IntegrationFieldCopyWith<$Res> {
-  factory _$IntegrationFieldCopyWith(_IntegrationField value, $Res Function(_IntegrationField) then) =
-      __$IntegrationFieldCopyWithImpl<$Res>;
+abstract class _$$_IntegrationFieldCopyWith<$Res>
+    implements $IntegrationFieldCopyWith<$Res> {
+  factory _$$_IntegrationFieldCopyWith(
+          _$_IntegrationField value, $Res Function(_$_IntegrationField) then) =
+      __$$_IntegrationFieldCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'label') String label,
       @JsonKey(name: 'readonly') bool readonly,
@@ -112,30 +99,30 @@ abstract class _$IntegrationFieldCopyWith<$Res> implements $IntegrationFieldCopy
 }
 
 /// @nodoc
-class __$IntegrationFieldCopyWithImpl<$Res> extends _$IntegrationFieldCopyWithImpl<$Res>
-    implements _$IntegrationFieldCopyWith<$Res> {
-  __$IntegrationFieldCopyWithImpl(_IntegrationField _value, $Res Function(_IntegrationField) _then)
-      : super(_value, (v) => _then(v as _IntegrationField));
+class __$$_IntegrationFieldCopyWithImpl<$Res>
+    extends _$IntegrationFieldCopyWithImpl<$Res, _$_IntegrationField>
+    implements _$$_IntegrationFieldCopyWith<$Res> {
+  __$$_IntegrationFieldCopyWithImpl(
+      _$_IntegrationField _value, $Res Function(_$_IntegrationField) _then)
+      : super(_value, _then);
 
-  @override
-  _IntegrationField get _value => super._value as _IntegrationField;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? label = freezed,
-    Object? readonly = freezed,
-    Object? value = freezed,
+    Object? label = null,
+    Object? readonly = null,
+    Object? value = null,
   }) {
-    return _then(_IntegrationField(
-      label: label == freezed
+    return _then(_$_IntegrationField(
+      label: null == label
           ? _value.label
           : label // ignore: cast_nullable_to_non_nullable
               as String,
-      readonly: readonly == freezed
+      readonly: null == readonly
           ? _value.readonly
           : readonly // ignore: cast_nullable_to_non_nullable
               as bool,
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as String,
@@ -151,21 +138,21 @@ class _$_IntegrationField implements _IntegrationField {
       @JsonKey(name: 'readonly') required this.readonly,
       @JsonKey(name: 'value') required this.value});
 
-  factory _$_IntegrationField.fromJson(Map<String, dynamic> json) => _$$_IntegrationFieldFromJson(json);
-
-  @override
+  factory _$_IntegrationField.fromJson(Map<String, dynamic> json) =>
+      _$$_IntegrationFieldFromJson(json);
 
   /// Label.
+  @override
   @JsonKey(name: 'label')
   final String label;
-  @override
 
   /// Is field readonly.
+  @override
   @JsonKey(name: 'readonly')
   final bool readonly;
-  @override
 
   /// Current value.
+  @override
   @JsonKey(name: 'value')
   final String value;
 
@@ -177,54 +164,59 @@ class _$_IntegrationField implements _IntegrationField {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _IntegrationField &&
-            (identical(other.label, label) || const DeepCollectionEquality().equals(other.label, label)) &&
-            (identical(other.readonly, readonly) || const DeepCollectionEquality().equals(other.readonly, readonly)) &&
-            (identical(other.value, value) || const DeepCollectionEquality().equals(other.value, value)));
+        (other.runtimeType == runtimeType &&
+            other is _$_IntegrationField &&
+            (identical(other.label, label) || other.label == label) &&
+            (identical(other.readonly, readonly) ||
+                other.readonly == readonly) &&
+            (identical(other.value, value) || other.value == value));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(label) ^
-      const DeepCollectionEquality().hash(readonly) ^
-      const DeepCollectionEquality().hash(value);
 
   @JsonKey(ignore: true)
   @override
-  _$IntegrationFieldCopyWith<_IntegrationField> get copyWith =>
-      __$IntegrationFieldCopyWithImpl<_IntegrationField>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, label, readonly, value);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_IntegrationFieldCopyWith<_$_IntegrationField> get copyWith =>
+      __$$_IntegrationFieldCopyWithImpl<_$_IntegrationField>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_IntegrationFieldToJson(this);
+    return _$$_IntegrationFieldToJson(
+      this,
+    );
   }
 }
 
 abstract class _IntegrationField implements IntegrationField {
   const factory _IntegrationField(
-      {@JsonKey(name: 'label') required String label,
-      @JsonKey(name: 'readonly') required bool readonly,
-      @JsonKey(name: 'value') required String value}) = _$_IntegrationField;
+          {@JsonKey(name: 'label') required final String label,
+          @JsonKey(name: 'readonly') required final bool readonly,
+          @JsonKey(name: 'value') required final String value}) =
+      _$_IntegrationField;
 
-  factory _IntegrationField.fromJson(Map<String, dynamic> json) = _$_IntegrationField.fromJson;
+  factory _IntegrationField.fromJson(Map<String, dynamic> json) =
+      _$_IntegrationField.fromJson;
 
   @override
 
   /// Label.
   @JsonKey(name: 'label')
-  String get label => throw _privateConstructorUsedError;
+  String get label;
   @override
 
   /// Is field readonly.
   @JsonKey(name: 'readonly')
-  bool get readonly => throw _privateConstructorUsedError;
+  bool get readonly;
   @override
 
   /// Current value.
   @JsonKey(name: 'value')
-  String get value => throw _privateConstructorUsedError;
+  String get value;
   @override
   @JsonKey(ignore: true)
-  _$IntegrationFieldCopyWith<_IntegrationField> get copyWith => throw _privateConstructorUsedError;
+  _$$_IntegrationFieldCopyWith<_$_IntegrationField> get copyWith =>
+      throw _privateConstructorUsedError;
 }

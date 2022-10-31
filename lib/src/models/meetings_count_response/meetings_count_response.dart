@@ -10,9 +10,11 @@ class MeetingsCountResponse with _$MeetingsCountResponse {
   const factory MeetingsCountResponse({
     /// .
     @JsonKey(name: 'count_cells') required int countCells,
-
+    
     /// .
     @JsonKey(name: 'count_meetings') required int countMeetings,
+    
+    
   }) = _MeetingsCountResponse;
 
   factory MeetingsCountResponse.fromJson(Map<String, dynamic> json) => _$MeetingsCountResponseFromJson(json);

@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_online_params.dart';
@@ -11,32 +12,11 @@ part of 'server_online_params.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ServerOnlineParams _$ServerOnlineParamsFromJson(Map<String, dynamic> json) {
   return _ServerOnlineParams.fromJson(json);
 }
-
-/// @nodoc
-class _$ServerOnlineParamsTearOff {
-  const _$ServerOnlineParamsTearOff();
-
-  _ServerOnlineParams call(
-      {@JsonKey(name: 'contacts') required List<OnlineContact> contacts,
-      @JsonKey(name: 'calls') List<OnlineCall>? calls}) {
-    return _ServerOnlineParams(
-      contacts: contacts,
-      calls: calls,
-    );
-  }
-
-  ServerOnlineParams fromJson(Map<String, Object> json) {
-    return ServerOnlineParams.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ServerOnlineParams = _$ServerOnlineParamsTearOff();
 
 /// @nodoc
 mixin _$ServerOnlineParams {
@@ -50,71 +30,84 @@ mixin _$ServerOnlineParams {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerOnlineParamsCopyWith<ServerOnlineParams> get copyWith => throw _privateConstructorUsedError;
+  $ServerOnlineParamsCopyWith<ServerOnlineParams> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ServerOnlineParamsCopyWith<$Res> {
-  factory $ServerOnlineParamsCopyWith(ServerOnlineParams value, $Res Function(ServerOnlineParams) then) =
-      _$ServerOnlineParamsCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'contacts') List<OnlineContact> contacts, @JsonKey(name: 'calls') List<OnlineCall>? calls});
+  factory $ServerOnlineParamsCopyWith(
+          ServerOnlineParams value, $Res Function(ServerOnlineParams) then) =
+      _$ServerOnlineParamsCopyWithImpl<$Res, ServerOnlineParams>;
+  @useResult
+  $Res call(
+      {@JsonKey(name: 'contacts') List<OnlineContact> contacts,
+      @JsonKey(name: 'calls') List<OnlineCall>? calls});
 }
 
 /// @nodoc
-class _$ServerOnlineParamsCopyWithImpl<$Res> implements $ServerOnlineParamsCopyWith<$Res> {
+class _$ServerOnlineParamsCopyWithImpl<$Res, $Val extends ServerOnlineParams>
+    implements $ServerOnlineParamsCopyWith<$Res> {
   _$ServerOnlineParamsCopyWithImpl(this._value, this._then);
 
-  final ServerOnlineParams _value;
   // ignore: unused_field
-  final $Res Function(ServerOnlineParams) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? contacts = freezed,
+    Object? contacts = null,
     Object? calls = freezed,
   }) {
     return _then(_value.copyWith(
-      contacts: contacts == freezed
+      contacts: null == contacts
           ? _value.contacts
           : contacts // ignore: cast_nullable_to_non_nullable
               as List<OnlineContact>,
-      calls: calls == freezed
+      calls: freezed == calls
           ? _value.calls
           : calls // ignore: cast_nullable_to_non_nullable
               as List<OnlineCall>?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ServerOnlineParamsCopyWith<$Res> implements $ServerOnlineParamsCopyWith<$Res> {
-  factory _$ServerOnlineParamsCopyWith(_ServerOnlineParams value, $Res Function(_ServerOnlineParams) then) =
-      __$ServerOnlineParamsCopyWithImpl<$Res>;
+abstract class _$$_ServerOnlineParamsCopyWith<$Res>
+    implements $ServerOnlineParamsCopyWith<$Res> {
+  factory _$$_ServerOnlineParamsCopyWith(_$_ServerOnlineParams value,
+          $Res Function(_$_ServerOnlineParams) then) =
+      __$$_ServerOnlineParamsCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'contacts') List<OnlineContact> contacts, @JsonKey(name: 'calls') List<OnlineCall>? calls});
+  @useResult
+  $Res call(
+      {@JsonKey(name: 'contacts') List<OnlineContact> contacts,
+      @JsonKey(name: 'calls') List<OnlineCall>? calls});
 }
 
 /// @nodoc
-class __$ServerOnlineParamsCopyWithImpl<$Res> extends _$ServerOnlineParamsCopyWithImpl<$Res>
-    implements _$ServerOnlineParamsCopyWith<$Res> {
-  __$ServerOnlineParamsCopyWithImpl(_ServerOnlineParams _value, $Res Function(_ServerOnlineParams) _then)
-      : super(_value, (v) => _then(v as _ServerOnlineParams));
+class __$$_ServerOnlineParamsCopyWithImpl<$Res>
+    extends _$ServerOnlineParamsCopyWithImpl<$Res, _$_ServerOnlineParams>
+    implements _$$_ServerOnlineParamsCopyWith<$Res> {
+  __$$_ServerOnlineParamsCopyWithImpl(
+      _$_ServerOnlineParams _value, $Res Function(_$_ServerOnlineParams) _then)
+      : super(_value, _then);
 
-  @override
-  _ServerOnlineParams get _value => super._value as _ServerOnlineParams;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? contacts = freezed,
+    Object? contacts = null,
     Object? calls = freezed,
   }) {
-    return _then(_ServerOnlineParams(
-      contacts: contacts == freezed
-          ? _value.contacts
+    return _then(_$_ServerOnlineParams(
+      contacts: null == contacts
+          ? _value._contacts
           : contacts // ignore: cast_nullable_to_non_nullable
               as List<OnlineContact>,
-      calls: calls == freezed
-          ? _value.calls
+      calls: freezed == calls
+          ? _value._calls
           : calls // ignore: cast_nullable_to_non_nullable
               as List<OnlineCall>?,
     ));
@@ -124,20 +117,38 @@ class __$ServerOnlineParamsCopyWithImpl<$Res> extends _$ServerOnlineParamsCopyWi
 /// @nodoc
 @JsonSerializable()
 class _$_ServerOnlineParams implements _ServerOnlineParams {
-  const _$_ServerOnlineParams({@JsonKey(name: 'contacts') required this.contacts, @JsonKey(name: 'calls') this.calls});
+  const _$_ServerOnlineParams(
+      {@JsonKey(name: 'contacts') required final List<OnlineContact> contacts,
+      @JsonKey(name: 'calls') final List<OnlineCall>? calls})
+      : _contacts = contacts,
+        _calls = calls;
 
-  factory _$_ServerOnlineParams.fromJson(Map<String, dynamic> json) => _$$_ServerOnlineParamsFromJson(json);
-
-  @override
+  factory _$_ServerOnlineParams.fromJson(Map<String, dynamic> json) =>
+      _$$_ServerOnlineParamsFromJson(json);
 
   /// Online team members.
-  @JsonKey(name: 'contacts')
-  final List<OnlineContact> contacts;
+  final List<OnlineContact> _contacts;
+
+  /// Online team members.
   @override
+  @JsonKey(name: 'contacts')
+  List<OnlineContact> get contacts {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_contacts);
+  }
 
   /// Active calls.
+  final List<OnlineCall>? _calls;
+
+  /// Active calls.
+  @override
   @JsonKey(name: 'calls')
-  final List<OnlineCall>? calls;
+  List<OnlineCall>? get calls {
+    final value = _calls;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -147,44 +158,56 @@ class _$_ServerOnlineParams implements _ServerOnlineParams {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ServerOnlineParams &&
-            (identical(other.contacts, contacts) || const DeepCollectionEquality().equals(other.contacts, contacts)) &&
-            (identical(other.calls, calls) || const DeepCollectionEquality().equals(other.calls, calls)));
+        (other.runtimeType == runtimeType &&
+            other is _$_ServerOnlineParams &&
+            const DeepCollectionEquality().equals(other._contacts, _contacts) &&
+            const DeepCollectionEquality().equals(other._calls, _calls));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(contacts) ^ const DeepCollectionEquality().hash(calls);
 
   @JsonKey(ignore: true)
   @override
-  _$ServerOnlineParamsCopyWith<_ServerOnlineParams> get copyWith =>
-      __$ServerOnlineParamsCopyWithImpl<_ServerOnlineParams>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(_contacts),
+      const DeepCollectionEquality().hash(_calls));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_ServerOnlineParamsCopyWith<_$_ServerOnlineParams> get copyWith =>
+      __$$_ServerOnlineParamsCopyWithImpl<_$_ServerOnlineParams>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ServerOnlineParamsToJson(this);
+    return _$$_ServerOnlineParamsToJson(
+      this,
+    );
   }
 }
 
 abstract class _ServerOnlineParams implements ServerOnlineParams {
   const factory _ServerOnlineParams(
-      {@JsonKey(name: 'contacts') required List<OnlineContact> contacts,
-      @JsonKey(name: 'calls') List<OnlineCall>? calls}) = _$_ServerOnlineParams;
+      {@JsonKey(name: 'contacts')
+          required final List<OnlineContact> contacts,
+      @JsonKey(name: 'calls')
+          final List<OnlineCall>? calls}) = _$_ServerOnlineParams;
 
-  factory _ServerOnlineParams.fromJson(Map<String, dynamic> json) = _$_ServerOnlineParams.fromJson;
+  factory _ServerOnlineParams.fromJson(Map<String, dynamic> json) =
+      _$_ServerOnlineParams.fromJson;
 
   @override
 
   /// Online team members.
   @JsonKey(name: 'contacts')
-  List<OnlineContact> get contacts => throw _privateConstructorUsedError;
+  List<OnlineContact> get contacts;
   @override
 
   /// Active calls.
   @JsonKey(name: 'calls')
-  List<OnlineCall>? get calls => throw _privateConstructorUsedError;
+  List<OnlineCall>? get calls;
   @override
   @JsonKey(ignore: true)
-  _$ServerOnlineParamsCopyWith<_ServerOnlineParams> get copyWith => throw _privateConstructorUsedError;
+  _$$_ServerOnlineParamsCopyWith<_$_ServerOnlineParams> get copyWith =>
+      throw _privateConstructorUsedError;
 }

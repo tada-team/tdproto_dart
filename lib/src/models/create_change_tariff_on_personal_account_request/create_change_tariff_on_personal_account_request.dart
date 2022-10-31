@@ -10,11 +10,12 @@ class CreateChangeTariffOnPersonalAccountRequest with _$CreateChangeTariffOnPers
   const factory CreateChangeTariffOnPersonalAccountRequest({
     /// .
     @JsonKey(name: 'tariff_id') required String tariffId,
-
+    
     /// .
     @JsonKey(name: 'open_date') String? openDate,
+    
+    
   }) = _CreateChangeTariffOnPersonalAccountRequest;
 
-  factory CreateChangeTariffOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
-      _$CreateChangeTariffOnPersonalAccountRequestFromJson(json);
+  factory CreateChangeTariffOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) => _$CreateChangeTariffOnPersonalAccountRequestFromJson(json);
 }

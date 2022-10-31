@@ -10,8 +10,9 @@ class DeleteWorkplacesOnPersonalAccountRequest with _$DeleteWorkplacesOnPersonal
   const factory DeleteWorkplacesOnPersonalAccountRequest({
     /// .
     @JsonKey(name: 'count_workplaces') required int countWorkplaces,
+    
+    
   }) = _DeleteWorkplacesOnPersonalAccountRequest;
 
-  factory DeleteWorkplacesOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
-      _$DeleteWorkplacesOnPersonalAccountRequestFromJson(json);
+  factory DeleteWorkplacesOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) => _$DeleteWorkplacesOnPersonalAccountRequestFromJson(json);
 }

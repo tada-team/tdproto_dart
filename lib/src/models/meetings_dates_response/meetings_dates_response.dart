@@ -10,6 +10,8 @@ class MeetingsDatesResponse with _$MeetingsDatesResponse {
   const factory MeetingsDatesResponse({
     /// .
     @JsonKey(name: 'dates') required List<String> dates,
+    
+    
   }) = _MeetingsDatesResponse;
 
   factory MeetingsDatesResponse.fromJson(Map<String, dynamic> json) => _$MeetingsDatesResponseFromJson(json);

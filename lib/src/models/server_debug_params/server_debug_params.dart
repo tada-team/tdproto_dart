@@ -10,6 +10,8 @@ class ServerDebugParams with _$ServerDebugParams {
   const factory ServerDebugParams({
     /// Debug message.
     @JsonKey(name: 'text') required String text,
+    
+    
   }) = _ServerDebugParams;
 
   factory ServerDebugParams.fromJson(Map<String, dynamic> json) => _$ServerDebugParamsFromJson(json);

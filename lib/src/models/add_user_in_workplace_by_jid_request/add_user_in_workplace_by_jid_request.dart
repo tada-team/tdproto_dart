@@ -10,8 +10,9 @@ class AddUserInWorkplaceByJidRequest with _$AddUserInWorkplaceByJidRequest {
   const factory AddUserInWorkplaceByJidRequest({
     /// .
     @JsonKey(name: 'contact_uuid') String? contactUuid,
+    
+    
   }) = _AddUserInWorkplaceByJidRequest;
 
-  factory AddUserInWorkplaceByJidRequest.fromJson(Map<String, dynamic> json) =>
-      _$AddUserInWorkplaceByJidRequestFromJson(json);
+  factory AddUserInWorkplaceByJidRequest.fromJson(Map<String, dynamic> json) => _$AddUserInWorkplaceByJidRequestFromJson(json);
 }

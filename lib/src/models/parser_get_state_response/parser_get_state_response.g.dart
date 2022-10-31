@@ -6,7 +6,9 @@ part of 'parser_get_state_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ParserGetStateResponse _$$_ParserGetStateResponseFromJson(Map<String, dynamic> json) => _$_ParserGetStateResponse(
+_$_ParserGetStateResponse _$$_ParserGetStateResponseFromJson(
+        Map<String, dynamic> json) =>
+    _$_ParserGetStateResponse(
       state: json['state'] as String,
       progress: json['progress'] as int?,
       action: json['action'] as String?,
@@ -17,7 +19,9 @@ _$_ParserGetStateResponse _$$_ParserGetStateResponseFromJson(Map<String, dynamic
       hasError: json['has_error'] as bool,
     );
 
-Map<String, dynamic> _$$_ParserGetStateResponseToJson(_$_ParserGetStateResponse instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ParserGetStateResponseToJson(
+        _$_ParserGetStateResponse instance) =>
+    <String, dynamic>{
       'state': instance.state,
       'progress': instance.progress,
       'action': instance.action,

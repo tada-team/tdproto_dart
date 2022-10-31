@@ -10,9 +10,11 @@ class ServerTeamCountersParams with _$ServerTeamCountersParams {
   const factory ServerTeamCountersParams({
     /// Counters.
     @JsonKey(name: 'teams') required List<TeamCounter> teams,
-
+    
     /// Total number of unreads.
     @JsonKey(name: 'badge') required int badge,
+    
+    
   }) = _ServerTeamCountersParams;
 
   factory ServerTeamCountersParams.fromJson(Map<String, dynamic> json) => _$ServerTeamCountersParamsFromJson(json);

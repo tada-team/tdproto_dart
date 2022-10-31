@@ -10,8 +10,9 @@ class ActivatePersonalAccountResponse with _$ActivatePersonalAccountResponse {
   const factory ActivatePersonalAccountResponse({
     /// .
     @JsonKey(name: 'success') required bool success,
+    
+    
   }) = _ActivatePersonalAccountResponse;
 
-  factory ActivatePersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$ActivatePersonalAccountResponseFromJson(json);
+  factory ActivatePersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$ActivatePersonalAccountResponseFromJson(json);
 }

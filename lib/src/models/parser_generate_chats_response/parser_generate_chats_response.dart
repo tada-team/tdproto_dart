@@ -10,14 +10,15 @@ class ParserGenerateChatsResponse with _$ParserGenerateChatsResponse {
   const factory ParserGenerateChatsResponse({
     /// ProcessingAction action for background notifications about generation of chats and messages.
     @JsonKey(name: 'processing_action') required String processingAction,
-
+    
     /// ActionType must be generate_chat.
     @JsonKey(name: 'action_type') required String actionType,
-
+    
     /// ArchiveName name of archive.
     @JsonKey(name: 'archive_name') required String archiveName,
+    
+    
   }) = _ParserGenerateChatsResponse;
 
-  factory ParserGenerateChatsResponse.fromJson(Map<String, dynamic> json) =>
-      _$ParserGenerateChatsResponseFromJson(json);
+  factory ParserGenerateChatsResponse.fromJson(Map<String, dynamic> json) => _$ParserGenerateChatsResponseFromJson(json);
 }

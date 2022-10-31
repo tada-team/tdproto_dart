@@ -11,16 +11,23 @@ _$_DLPEvent _$$_DLPEventFromJson(Map<String, dynamic> json) => _$_DLPEvent(
       eventChannel: json['event_channel'] as String,
       eventTime: json['event_time'] as String,
       mediaType: json['media_type'] as String,
-      teamData: DLPBasicData.fromJson(json['team_data'] as Map<String, dynamic>),
-      senderData: DLPUserData.fromJson(json['sender_data'] as Map<String, dynamic>),
-      directData: DLPUserData.fromJson(json['direct_data'] as Map<String, dynamic>),
-      groupData: DLPBasicData.fromJson(json['group_data'] as Map<String, dynamic>),
-      taskData: DLPBasicData.fromJson(json['task_data'] as Map<String, dynamic>),
+      teamData:
+          DLPBasicData.fromJson(json['team_data'] as Map<String, dynamic>),
+      senderData:
+          DLPUserData.fromJson(json['sender_data'] as Map<String, dynamic>),
+      directData:
+          DLPUserData.fromJson(json['direct_data'] as Map<String, dynamic>),
+      groupData:
+          DLPBasicData.fromJson(json['group_data'] as Map<String, dynamic>),
+      taskData:
+          DLPBasicData.fromJson(json['task_data'] as Map<String, dynamic>),
       fileData: DLPFileData.fromJson(json['file_data'] as Map<String, dynamic>),
-      messageData: DLPMessageData.fromJson(json['message_data'] as Map<String, dynamic>),
+      messageData:
+          DLPMessageData.fromJson(json['message_data'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_DLPEventToJson(_$_DLPEvent instance) => <String, dynamic>{
+Map<String, dynamic> _$$_DLPEventToJson(_$_DLPEvent instance) =>
+    <String, dynamic>{
       'uuid': instance.uuid,
       'event_channel': instance.eventChannel,
       'event_time': instance.eventTime,

@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'markup_entity.dart';
@@ -11,46 +12,11 @@ part of 'markup_entity.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 MarkupEntity _$MarkupEntityFromJson(Map<String, dynamic> json) {
   return _MarkupEntity.fromJson(json);
 }
-
-/// @nodoc
-class _$MarkupEntityTearOff {
-  const _$MarkupEntityTearOff();
-
-  _MarkupEntity call(
-      {@JsonKey(name: 'op') required int open,
-      @JsonKey(name: 'oplen') int? openLength,
-      @JsonKey(name: 'cl') required int close,
-      @JsonKey(name: 'cllen') int? closeLength,
-      @JsonKey(name: 'typ') required String type,
-      @JsonKey(name: 'url') String? url,
-      @JsonKey(name: 'repl') String? repl,
-      @JsonKey(name: 'time') String? time,
-      @JsonKey(name: 'childs') List<MarkupEntity>? childs}) {
-    return _MarkupEntity(
-      open: open,
-      openLength: openLength,
-      close: close,
-      closeLength: closeLength,
-      type: type,
-      url: url,
-      repl: repl,
-      time: time,
-      childs: childs,
-    );
-  }
-
-  MarkupEntity fromJson(Map<String, Object> json) {
-    return MarkupEntity.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MarkupEntity = _$MarkupEntityTearOff();
 
 /// @nodoc
 mixin _$MarkupEntity {
@@ -92,13 +58,16 @@ mixin _$MarkupEntity {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $MarkupEntityCopyWith<MarkupEntity> get copyWith => throw _privateConstructorUsedError;
+  $MarkupEntityCopyWith<MarkupEntity> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $MarkupEntityCopyWith<$Res> {
-  factory $MarkupEntityCopyWith(MarkupEntity value, $Res Function(MarkupEntity) then) =
-      _$MarkupEntityCopyWithImpl<$Res>;
+  factory $MarkupEntityCopyWith(
+          MarkupEntity value, $Res Function(MarkupEntity) then) =
+      _$MarkupEntityCopyWithImpl<$Res, MarkupEntity>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'op') int open,
       @JsonKey(name: 'oplen') int? openLength,
@@ -112,71 +81,77 @@ abstract class $MarkupEntityCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MarkupEntityCopyWithImpl<$Res> implements $MarkupEntityCopyWith<$Res> {
+class _$MarkupEntityCopyWithImpl<$Res, $Val extends MarkupEntity>
+    implements $MarkupEntityCopyWith<$Res> {
   _$MarkupEntityCopyWithImpl(this._value, this._then);
 
-  final MarkupEntity _value;
   // ignore: unused_field
-  final $Res Function(MarkupEntity) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? open = freezed,
+    Object? open = null,
     Object? openLength = freezed,
-    Object? close = freezed,
+    Object? close = null,
     Object? closeLength = freezed,
-    Object? type = freezed,
+    Object? type = null,
     Object? url = freezed,
     Object? repl = freezed,
     Object? time = freezed,
     Object? childs = freezed,
   }) {
     return _then(_value.copyWith(
-      open: open == freezed
+      open: null == open
           ? _value.open
           : open // ignore: cast_nullable_to_non_nullable
               as int,
-      openLength: openLength == freezed
+      openLength: freezed == openLength
           ? _value.openLength
           : openLength // ignore: cast_nullable_to_non_nullable
               as int?,
-      close: close == freezed
+      close: null == close
           ? _value.close
           : close // ignore: cast_nullable_to_non_nullable
               as int,
-      closeLength: closeLength == freezed
+      closeLength: freezed == closeLength
           ? _value.closeLength
           : closeLength // ignore: cast_nullable_to_non_nullable
               as int?,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      repl: repl == freezed
+      repl: freezed == repl
           ? _value.repl
           : repl // ignore: cast_nullable_to_non_nullable
               as String?,
-      time: time == freezed
+      time: freezed == time
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
               as String?,
-      childs: childs == freezed
+      childs: freezed == childs
           ? _value.childs
           : childs // ignore: cast_nullable_to_non_nullable
               as List<MarkupEntity>?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MarkupEntityCopyWith<$Res> implements $MarkupEntityCopyWith<$Res> {
-  factory _$MarkupEntityCopyWith(_MarkupEntity value, $Res Function(_MarkupEntity) then) =
-      __$MarkupEntityCopyWithImpl<$Res>;
+abstract class _$$_MarkupEntityCopyWith<$Res>
+    implements $MarkupEntityCopyWith<$Res> {
+  factory _$$_MarkupEntityCopyWith(
+          _$_MarkupEntity value, $Res Function(_$_MarkupEntity) then) =
+      __$$_MarkupEntityCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'op') int open,
       @JsonKey(name: 'oplen') int? openLength,
@@ -190,61 +165,61 @@ abstract class _$MarkupEntityCopyWith<$Res> implements $MarkupEntityCopyWith<$Re
 }
 
 /// @nodoc
-class __$MarkupEntityCopyWithImpl<$Res> extends _$MarkupEntityCopyWithImpl<$Res>
-    implements _$MarkupEntityCopyWith<$Res> {
-  __$MarkupEntityCopyWithImpl(_MarkupEntity _value, $Res Function(_MarkupEntity) _then)
-      : super(_value, (v) => _then(v as _MarkupEntity));
+class __$$_MarkupEntityCopyWithImpl<$Res>
+    extends _$MarkupEntityCopyWithImpl<$Res, _$_MarkupEntity>
+    implements _$$_MarkupEntityCopyWith<$Res> {
+  __$$_MarkupEntityCopyWithImpl(
+      _$_MarkupEntity _value, $Res Function(_$_MarkupEntity) _then)
+      : super(_value, _then);
 
-  @override
-  _MarkupEntity get _value => super._value as _MarkupEntity;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? open = freezed,
+    Object? open = null,
     Object? openLength = freezed,
-    Object? close = freezed,
+    Object? close = null,
     Object? closeLength = freezed,
-    Object? type = freezed,
+    Object? type = null,
     Object? url = freezed,
     Object? repl = freezed,
     Object? time = freezed,
     Object? childs = freezed,
   }) {
-    return _then(_MarkupEntity(
-      open: open == freezed
+    return _then(_$_MarkupEntity(
+      open: null == open
           ? _value.open
           : open // ignore: cast_nullable_to_non_nullable
               as int,
-      openLength: openLength == freezed
+      openLength: freezed == openLength
           ? _value.openLength
           : openLength // ignore: cast_nullable_to_non_nullable
               as int?,
-      close: close == freezed
+      close: null == close
           ? _value.close
           : close // ignore: cast_nullable_to_non_nullable
               as int,
-      closeLength: closeLength == freezed
+      closeLength: freezed == closeLength
           ? _value.closeLength
           : closeLength // ignore: cast_nullable_to_non_nullable
               as int?,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String?,
-      repl: repl == freezed
+      repl: freezed == repl
           ? _value.repl
           : repl // ignore: cast_nullable_to_non_nullable
               as String?,
-      time: time == freezed
+      time: freezed == time
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
               as String?,
-      childs: childs == freezed
-          ? _value.childs
+      childs: freezed == childs
+          ? _value._childs
           : childs // ignore: cast_nullable_to_non_nullable
               as List<MarkupEntity>?,
     ));
@@ -263,55 +238,64 @@ class _$_MarkupEntity implements _MarkupEntity {
       @JsonKey(name: 'url') this.url,
       @JsonKey(name: 'repl') this.repl,
       @JsonKey(name: 'time') this.time,
-      @JsonKey(name: 'childs') this.childs});
+      @JsonKey(name: 'childs') final List<MarkupEntity>? childs})
+      : _childs = childs;
 
-  factory _$_MarkupEntity.fromJson(Map<String, dynamic> json) => _$$_MarkupEntityFromJson(json);
-
-  @override
+  factory _$_MarkupEntity.fromJson(Map<String, dynamic> json) =>
+      _$$_MarkupEntityFromJson(json);
 
   /// Open marker offset.
+  @override
   @JsonKey(name: 'op')
   final int open;
-  @override
 
   /// Open marker length.
+  @override
   @JsonKey(name: 'oplen')
   final int? openLength;
-  @override
 
   /// Close marker offset.
+  @override
   @JsonKey(name: 'cl')
   final int close;
-  @override
 
   /// Close marker length.
+  @override
   @JsonKey(name: 'cllen')
   final int? closeLength;
-  @override
 
   /// Marker type.
+  @override
   @JsonKey(name: 'typ')
   final String type;
-  @override
 
   /// Url, for Link type.
+  @override
   @JsonKey(name: 'url')
   final String? url;
-  @override
 
   /// Text replacement.
+  @override
   @JsonKey(name: 'repl')
   final String? repl;
-  @override
 
   /// Time, for Time type.
+  @override
   @JsonKey(name: 'time')
   final String? time;
-  @override
 
   /// List of internal markup entities.
+  final List<MarkupEntity>? _childs;
+
+  /// List of internal markup entities.
+  @override
   @JsonKey(name: 'childs')
-  final List<MarkupEntity>? childs;
+  List<MarkupEntity>? get childs {
+    final value = _childs;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -321,103 +305,112 @@ class _$_MarkupEntity implements _MarkupEntity {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _MarkupEntity &&
-            (identical(other.open, open) || const DeepCollectionEquality().equals(other.open, open)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_MarkupEntity &&
+            (identical(other.open, open) || other.open == open) &&
             (identical(other.openLength, openLength) ||
-                const DeepCollectionEquality().equals(other.openLength, openLength)) &&
-            (identical(other.close, close) || const DeepCollectionEquality().equals(other.close, close)) &&
+                other.openLength == openLength) &&
+            (identical(other.close, close) || other.close == close) &&
             (identical(other.closeLength, closeLength) ||
-                const DeepCollectionEquality().equals(other.closeLength, closeLength)) &&
-            (identical(other.type, type) || const DeepCollectionEquality().equals(other.type, type)) &&
-            (identical(other.url, url) || const DeepCollectionEquality().equals(other.url, url)) &&
-            (identical(other.repl, repl) || const DeepCollectionEquality().equals(other.repl, repl)) &&
-            (identical(other.time, time) || const DeepCollectionEquality().equals(other.time, time)) &&
-            (identical(other.childs, childs) || const DeepCollectionEquality().equals(other.childs, childs)));
+                other.closeLength == closeLength) &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.url, url) || other.url == url) &&
+            (identical(other.repl, repl) || other.repl == repl) &&
+            (identical(other.time, time) || other.time == time) &&
+            const DeepCollectionEquality().equals(other._childs, _childs));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(open) ^
-      const DeepCollectionEquality().hash(openLength) ^
-      const DeepCollectionEquality().hash(close) ^
-      const DeepCollectionEquality().hash(closeLength) ^
-      const DeepCollectionEquality().hash(type) ^
-      const DeepCollectionEquality().hash(url) ^
-      const DeepCollectionEquality().hash(repl) ^
-      const DeepCollectionEquality().hash(time) ^
-      const DeepCollectionEquality().hash(childs);
 
   @JsonKey(ignore: true)
   @override
-  _$MarkupEntityCopyWith<_MarkupEntity> get copyWith => __$MarkupEntityCopyWithImpl<_MarkupEntity>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      open,
+      openLength,
+      close,
+      closeLength,
+      type,
+      url,
+      repl,
+      time,
+      const DeepCollectionEquality().hash(_childs));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_MarkupEntityCopyWith<_$_MarkupEntity> get copyWith =>
+      __$$_MarkupEntityCopyWithImpl<_$_MarkupEntity>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MarkupEntityToJson(this);
+    return _$$_MarkupEntityToJson(
+      this,
+    );
   }
 }
 
 abstract class _MarkupEntity implements MarkupEntity {
   const factory _MarkupEntity(
-      {@JsonKey(name: 'op') required int open,
-      @JsonKey(name: 'oplen') int? openLength,
-      @JsonKey(name: 'cl') required int close,
-      @JsonKey(name: 'cllen') int? closeLength,
-      @JsonKey(name: 'typ') required String type,
-      @JsonKey(name: 'url') String? url,
-      @JsonKey(name: 'repl') String? repl,
-      @JsonKey(name: 'time') String? time,
-      @JsonKey(name: 'childs') List<MarkupEntity>? childs}) = _$_MarkupEntity;
+          {@JsonKey(name: 'op') required final int open,
+          @JsonKey(name: 'oplen') final int? openLength,
+          @JsonKey(name: 'cl') required final int close,
+          @JsonKey(name: 'cllen') final int? closeLength,
+          @JsonKey(name: 'typ') required final String type,
+          @JsonKey(name: 'url') final String? url,
+          @JsonKey(name: 'repl') final String? repl,
+          @JsonKey(name: 'time') final String? time,
+          @JsonKey(name: 'childs') final List<MarkupEntity>? childs}) =
+      _$_MarkupEntity;
 
-  factory _MarkupEntity.fromJson(Map<String, dynamic> json) = _$_MarkupEntity.fromJson;
+  factory _MarkupEntity.fromJson(Map<String, dynamic> json) =
+      _$_MarkupEntity.fromJson;
 
   @override
 
   /// Open marker offset.
   @JsonKey(name: 'op')
-  int get open => throw _privateConstructorUsedError;
+  int get open;
   @override
 
   /// Open marker length.
   @JsonKey(name: 'oplen')
-  int? get openLength => throw _privateConstructorUsedError;
+  int? get openLength;
   @override
 
   /// Close marker offset.
   @JsonKey(name: 'cl')
-  int get close => throw _privateConstructorUsedError;
+  int get close;
   @override
 
   /// Close marker length.
   @JsonKey(name: 'cllen')
-  int? get closeLength => throw _privateConstructorUsedError;
+  int? get closeLength;
   @override
 
   /// Marker type.
   @JsonKey(name: 'typ')
-  String get type => throw _privateConstructorUsedError;
+  String get type;
   @override
 
   /// Url, for Link type.
   @JsonKey(name: 'url')
-  String? get url => throw _privateConstructorUsedError;
+  String? get url;
   @override
 
   /// Text replacement.
   @JsonKey(name: 'repl')
-  String? get repl => throw _privateConstructorUsedError;
+  String? get repl;
   @override
 
   /// Time, for Time type.
   @JsonKey(name: 'time')
-  String? get time => throw _privateConstructorUsedError;
+  String? get time;
   @override
 
   /// List of internal markup entities.
   @JsonKey(name: 'childs')
-  List<MarkupEntity>? get childs => throw _privateConstructorUsedError;
+  List<MarkupEntity>? get childs;
   @override
   @JsonKey(ignore: true)
-  _$MarkupEntityCopyWith<_MarkupEntity> get copyWith => throw _privateConstructorUsedError;
+  _$$_MarkupEntityCopyWith<_$_MarkupEntity> get copyWith =>
+      throw _privateConstructorUsedError;
 }

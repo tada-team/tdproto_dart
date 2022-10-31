@@ -10,12 +10,14 @@ class ServerSectionDeletedParams with _$ServerSectionDeletedParams {
   const factory ServerSectionDeletedParams({
     /// Chat type.
     @JsonKey(name: 'chat_type') required String chatType,
-
+    
     /// Section/project info.
     @JsonKey(name: 'sections') required List<DeletedSection> sections,
-
+    
     /// Deprecated.
     @Deprecated('Deprecated.') @JsonKey(name: 'gentime') required int gentime,
+    
+    
   }) = _ServerSectionDeletedParams;
 
   factory ServerSectionDeletedParams.fromJson(Map<String, dynamic> json) => _$ServerSectionDeletedParamsFromJson(json);

@@ -10,9 +10,11 @@ class DLPMessageData with _$DLPMessageData {
   const factory DLPMessageData({
     /// .
     @JsonKey(name: 'text') required String text,
-
+    
     /// .
     @JsonKey(name: 'comment') required String comment,
+    
+    
   }) = _DLPMessageData;
 
   factory DLPMessageData.fromJson(Map<String, dynamic> json) => _$DLPMessageDataFromJson(json);

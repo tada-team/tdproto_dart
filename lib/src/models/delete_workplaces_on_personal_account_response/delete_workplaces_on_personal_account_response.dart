@@ -10,8 +10,9 @@ class DeleteWorkplacesOnPersonalAccountResponse with _$DeleteWorkplacesOnPersona
   const factory DeleteWorkplacesOnPersonalAccountResponse({
     /// .
     @JsonKey(name: 'success') bool? success,
+    
+    
   }) = _DeleteWorkplacesOnPersonalAccountResponse;
 
-  factory DeleteWorkplacesOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$DeleteWorkplacesOnPersonalAccountResponseFromJson(json);
+  factory DeleteWorkplacesOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$DeleteWorkplacesOnPersonalAccountResponseFromJson(json);
 }

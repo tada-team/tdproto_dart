@@ -10,8 +10,9 @@ class UnblockPersonalAccountResponse with _$UnblockPersonalAccountResponse {
   const factory UnblockPersonalAccountResponse({
     /// .
     @JsonKey(name: 'success') required bool success,
+    
+    
   }) = _UnblockPersonalAccountResponse;
 
-  factory UnblockPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$UnblockPersonalAccountResponseFromJson(json);
+  factory UnblockPersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$UnblockPersonalAccountResponseFromJson(json);
 }

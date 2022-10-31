@@ -6,12 +6,17 @@ part of 'client_call_buzz_params.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ClientCallBuzzParams _$$_ClientCallBuzzParamsFromJson(Map<String, dynamic> json) => _$_ClientCallBuzzParams(
+_$_ClientCallBuzzParams _$$_ClientCallBuzzParamsFromJson(
+        Map<String, dynamic> json) =>
+    _$_ClientCallBuzzParams(
       jid: json['jid'] as String,
-      members: (json['members'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      members:
+          (json['members'] as List<dynamic>?)?.map((e) => e as String).toList(),
     );
 
-Map<String, dynamic> _$$_ClientCallBuzzParamsToJson(_$_ClientCallBuzzParams instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ClientCallBuzzParamsToJson(
+        _$_ClientCallBuzzParams instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'members': instance.members,
     };

@@ -10,12 +10,14 @@ class ServerCallCheckFingerprint with _$ServerCallCheckFingerprint {
   const factory ServerCallCheckFingerprint({
     /// .
     @JsonKey(name: 'params') required ServerCallCheckFingerprintParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerCallCheckFingerprint;
 
   factory ServerCallCheckFingerprint.fromJson(Map<String, dynamic> json) => _$ServerCallCheckFingerprintFromJson(json);

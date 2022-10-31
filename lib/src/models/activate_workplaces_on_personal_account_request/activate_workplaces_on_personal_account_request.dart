@@ -10,8 +10,9 @@ class ActivateWorkplacesOnPersonalAccountRequest with _$ActivateWorkplacesOnPers
   const factory ActivateWorkplacesOnPersonalAccountRequest({
     /// .
     @JsonKey(name: 'count_workplaces') required int countWorkplaces,
+    
+    
   }) = _ActivateWorkplacesOnPersonalAccountRequest;
 
-  factory ActivateWorkplacesOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
-      _$ActivateWorkplacesOnPersonalAccountRequestFromJson(json);
+  factory ActivateWorkplacesOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) => _$ActivateWorkplacesOnPersonalAccountRequestFromJson(json);
 }

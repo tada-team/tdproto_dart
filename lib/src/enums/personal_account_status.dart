@@ -1,12 +1,13 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-enum PersonalAccountStatus {
+enum PersonalAccountStatus { 
   @JsonValue('PERSONAL_ACCOUNT_STATUS_ACTIVE')
   PERSONAL_ACCOUNT_STATUS_ACTIVE,
-
+  
   @JsonValue('PERSONAL_ACCOUNT_STATUS_SUSPENDED')
   PERSONAL_ACCOUNT_STATUS_SUSPENDED,
-
+  
   @JsonValue('PERSONAL_ACCOUNT_STATUS_BLOCKED')
   PERSONAL_ACCOUNT_STATUS_BLOCKED,
+  
 }

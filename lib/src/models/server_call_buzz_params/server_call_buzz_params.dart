@@ -10,33 +10,35 @@ class ServerCallBuzzParams with _$ServerCallBuzzParams {
   const factory ServerCallBuzzParams({
     /// Chat or contact id.
     @JsonKey(name: 'jid') required String jid,
-
+    
     /// Chat icons.
     @JsonKey(name: 'icons') required IconData icons,
-
+    
     /// Chat title.
     @JsonKey(name: 'display_name') required String displayName,
-
+    
     /// Short team information.
     @JsonKey(name: 'teaminfo') required TeamShort teamShort,
-
+    
     /// Short chat information.
     @JsonKey(name: 'chat') required ChatShort chatShort,
-
+    
     /// Short call creator information.
     @JsonKey(name: 'actor') required ContactShort actorShort,
-
+    
     /// Call id.
     @JsonKey(name: 'uid') required String uid,
-
+    
     /// Number of seconds for stop buzzing.
     @JsonKey(name: 'buzz_timeout') required int buzzTimeout,
-
+    
     /// Deprecated.
     @Deprecated('Deprecated.') @JsonKey(name: 'team') required String team,
-
+    
     /// CallType is a type of call("audio" - audio room, "video" - video room).
     @JsonKey(name: 'call_type') required String callType,
+    
+    
   }) = _ServerCallBuzzParams;
 
   factory ServerCallBuzzParams.fromJson(Map<String, dynamic> json) => _$ServerCallBuzzParamsFromJson(json);

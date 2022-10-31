@@ -10,12 +10,14 @@ class ClientCallLeave with _$ClientCallLeave {
   const factory ClientCallLeave({
     /// .
     @JsonKey(name: 'params') required ClientCallLeaveParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ClientCallLeave;
 
   factory ClientCallLeave.fromJson(Map<String, dynamic> json) => _$ClientCallLeaveFromJson(json);

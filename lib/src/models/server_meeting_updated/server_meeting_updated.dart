@@ -10,12 +10,14 @@ class ServerMeetingUpdated with _$ServerMeetingUpdated {
   const factory ServerMeetingUpdated({
     /// .
     @JsonKey(name: 'params') required ServerMeetingUpdatedParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerMeetingUpdated;
 
   factory ServerMeetingUpdated.fromJson(Map<String, dynamic> json) => _$ServerMeetingUpdatedFromJson(json);

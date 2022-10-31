@@ -10,12 +10,14 @@ class TeamShort with _$TeamShort {
   const factory TeamShort({
     /// Team id.
     @JsonKey(name: 'uid') required String uid,
-
+    
     /// Team name.
     @JsonKey(name: 'name') required String name,
-
+    
     /// Team icons.
     @JsonKey(name: 'icons') required IconData icons,
+    
+    
   }) = _TeamShort;
 
   factory TeamShort.fromJson(Map<String, dynamic> json) => _$TeamShortFromJson(json);

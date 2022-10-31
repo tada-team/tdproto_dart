@@ -13,7 +13,8 @@ _$_Payment _$$_PaymentFromJson(Map<String, dynamic> json) => _$_Payment(
       confirmationUrl: json['confirmation_url'] as String,
     );
 
-Map<String, dynamic> _$$_PaymentToJson(_$_Payment instance) => <String, dynamic>{
+Map<String, dynamic> _$$_PaymentToJson(_$_Payment instance) =>
+    <String, dynamic>{
       'tariff_uid': instance.tariffUid,
       'team_uid': instance.teamUid,
       'user_uid': instance.userUid,

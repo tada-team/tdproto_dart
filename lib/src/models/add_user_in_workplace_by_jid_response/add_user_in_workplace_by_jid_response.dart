@@ -10,20 +10,21 @@ class AddUserInWorkplaceByJidResponse with _$AddUserInWorkplaceByJidResponse {
   const factory AddUserInWorkplaceByJidResponse({
     /// .
     @JsonKey(name: 'uuid') required String uuid,
-
+    
     /// .
     @JsonKey(name: 'full_name') String? fullName,
-
+    
     /// .
     @JsonKey(name: 'phone') String? phone,
-
+    
     /// .
     @JsonKey(name: 'email') String? email,
-
+    
     /// .
     @JsonKey(name: 'last_activity') String? lastActivity,
+    
+    
   }) = _AddUserInWorkplaceByJidResponse;
 
-  factory AddUserInWorkplaceByJidResponse.fromJson(Map<String, dynamic> json) =>
-      _$AddUserInWorkplaceByJidResponseFromJson(json);
+  factory AddUserInWorkplaceByJidResponse.fromJson(Map<String, dynamic> json) => _$AddUserInWorkplaceByJidResponseFromJson(json);
 }

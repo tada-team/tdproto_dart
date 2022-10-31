@@ -10,11 +10,12 @@ class MeetingsMembersCreateResponse with _$MeetingsMembersCreateResponse {
   const factory MeetingsMembersCreateResponse({
     /// .
     @JsonKey(name: 'members') List<MeetingMember>? members,
-
+    
     /// .
     @JsonKey(name: 'errors') List<String>? errors,
+    
+    
   }) = _MeetingsMembersCreateResponse;
 
-  factory MeetingsMembersCreateResponse.fromJson(Map<String, dynamic> json) =>
-      _$MeetingsMembersCreateResponseFromJson(json);
+  factory MeetingsMembersCreateResponse.fromJson(Map<String, dynamic> json) => _$MeetingsMembersCreateResponseFromJson(json);
 }

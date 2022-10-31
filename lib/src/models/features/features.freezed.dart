@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'features.dart';
@@ -11,341 +12,11 @@ part of 'features.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Features _$FeaturesFromJson(Map<String, dynamic> json) {
   return _Features.fromJson(json);
 }
-
-/// @nodoc
-class _$FeaturesTearOff {
-  const _$FeaturesTearOff();
-
-  _Features call(
-      {@JsonKey(name: 'host')
-          required String host,
-      @JsonKey(name: 'build')
-          required String build,
-      @JsonKey(name: 'desktop_version')
-          required String desktopVersion,
-      @JsonKey(name: 'front_version')
-          required String frontVersion,
-      @JsonKey(name: 'app_title')
-          required String appTitle,
-      @JsonKey(name: 'landing_url')
-          String? landingUrl,
-      @JsonKey(name: 'app_schemes')
-          required List<String> appSchemes,
-      @JsonKey(name: 'userver')
-          required String userver,
-      @JsonKey(name: 'ios_app')
-          required String iOSApp,
-      @JsonKey(name: 'android_app')
-          required String androidApp,
-      @JsonKey(name: 'ios_corp_app')
-          required String iOSCorpApp,
-      @JsonKey(name: 'android_corp_app')
-          required String androidCorpApp,
-      @JsonKey(name: 'rumarket_app')
-          required String rumarketApp,
-      @JsonKey(name: 'theme')
-          required String theme,
-      @JsonKey(name: 'min_ios_version')
-          required String minIOSVersion,
-      @JsonKey(name: 'min_android_version')
-          required String minAndroidVersion,
-      @JsonKey(name: 'min_corp_ios_version')
-          required String minCorpIOSVersion,
-      @JsonKey(name: 'min_corp_android_version')
-          required String minCorpAndroidVersion,
-      @JsonKey(name: 'free_registration')
-          required bool freeRegistration,
-      @JsonKey(name: 'max_upload_mb')
-          required int maxUploadMb,
-      @JsonKey(name: 'max_linked_messages')
-          required int maxLinkedMessages,
-      @JsonKey(name: 'max_message_uploads')
-          required int maxMessageUploads,
-      @JsonKey(name: 'max_username_part_length')
-          required int maxUsernamePartLength,
-      @JsonKey(name: 'max_group_title_length')
-          required int maxGroupTitleLength,
-      @JsonKey(name: 'max_team_title_length')
-          required int maxTeamTitleLength,
-      @JsonKey(name: 'max_role_length')
-          required int maxRoleLength,
-      @JsonKey(name: 'max_mood_length')
-          required int maxMoodLength,
-      @JsonKey(name: 'max_message_length')
-          required int maxMessageLength,
-      @JsonKey(name: 'max_section_length')
-          required int maxSectionLength,
-      @JsonKey(name: 'max_project_length')
-          required int maxProjectLength,
-      @JsonKey(name: 'max_tag_length')
-          required int maxTagLength,
-      @JsonKey(name: 'max_task_title_length')
-          required int maxTaskTitleLength,
-      @JsonKey(name: 'max_color_rule_description_length')
-          required int maxColorRuleDescriptionLength,
-      @JsonKey(name: 'max_url_length')
-          required int maxUrlLength,
-      @JsonKey(name: 'max_integration_comment_length')
-          required int maxIntegrationCommentLength,
-      @JsonKey(name: 'max_teams')
-          required int maxTeams,
-      @JsonKey(name: 'max_message_search_limit')
-          required int maxMessageSearchLimit,
-      @JsonKey(name: 'multi_nodes')
-          bool? multiNodes,
-      @JsonKey(name: 'afk_age')
-          required int afkAge,
-      @JsonKey(name: 'auth_by_password')
-          bool? authByPassword,
-      @JsonKey(name: 'auth_by_qr_code')
-          bool? authByQrCode,
-      @JsonKey(name: 'auth_by_sms')
-          bool? authBySms,
-      @JsonKey(name: 'auth_2fa')
-          bool? auth2fa,
-      @JsonKey(name: 'auth_by_kerberos')
-          bool? authByKerberos,
-      @JsonKey(name: 'is_recaptcha_enabled')
-          bool? reCaptchaEnabled,
-      @JsonKey(name: 'recaptcha_web_key_v3')
-          String? reCaptchaWebKeyV3,
-      @JsonKey(name: 'recaptcha_web_key_v2')
-          String? reCaptchaWebKeyV2,
-      @JsonKey(name: 'is_pin_code_required')
-          required bool isPinCodeRequired,
-      @JsonKey(name: 'pin_code_wrong_limit')
-          required int pinCodeWrongLimit,
-      @JsonKey(name: 'oauth_services')
-          List<OAuthService>? oAuthServices,
-      @JsonKey(name: 'ice_servers')
-          required List<ICEServer> iCEServers,
-      @JsonKey(name: 'ice_transport_policy')
-          String? iceTransportPolicy,
-      @JsonKey(name: 'custom_server')
-          required bool customServer,
-      @JsonKey(name: 'installation_type')
-          required String installationType,
-      @JsonKey(name: 'installation_title')
-          String? installationTitle,
-      @JsonKey(name: 'custom_app_icon_name')
-          String? customAppIconName,
-      @JsonKey(name: 'app_login_background')
-          String? appLoginBackground,
-      @JsonKey(name: 'web_login_background')
-          String? webLoginBackground,
-      @JsonKey(name: 'is_testing')
-          required bool isTesting,
-      @JsonKey(name: 'metrika')
-          required String metrika,
-      @JsonKey(name: 'amplitude_api_key')
-          String? amplitudeApiKey,
-      @JsonKey(name: 'min_search_length')
-          required int minSearchLength,
-      @JsonKey(name: 'resend_timeout')
-          required int resendTimeout,
-      @JsonKey(name: 'sentry_dsn_js')
-          required String sentryDsnJS,
-      @JsonKey(name: 'server_drafts')
-          required bool serverDrafts,
-      @JsonKey(name: 'firebase_app_id')
-          required String firebaseAppId,
-      @JsonKey(name: 'firebase_sender_id')
-          required String firebaseSenderId,
-      @JsonKey(name: 'firebase_api_key')
-          required String firebaseApiKey,
-      @JsonKey(name: 'firebase_auth_domain')
-          required String firebaseAuthDomain,
-      @JsonKey(name: 'firebase_database_url')
-          required String firebaseDatabaseUrl,
-      @JsonKey(name: 'firebase_project_id')
-          required String firebaseProjectId,
-      @JsonKey(name: 'firebase_storage_bucket')
-          required String firebaseStorageBucket,
-      @Deprecated(
-          'Calls version. 0 = disabled, 1 = audio only, 2 = audio+video Deprecated: use CallsAudioEnabled and CallsVideoEnabled.')
-      @JsonKey(name: 'calls_version')
-          required int callsVersion,
-      @JsonKey(name: 'calls_audio_enabled')
-          required bool callsAudioEnabled,
-      @JsonKey(name: 'calls_video_enabled')
-          required bool callsVideoEnabled,
-      @JsonKey(name: 'vcs_enabled')
-          required bool vcsEnabled,
-      @JsonKey(name: 'mobile_calls')
-          required bool mobileCalls,
-      @JsonKey(name: 'calls_record')
-          required bool callsRecord,
-      @JsonKey(name: 'only_one_device_per_call')
-          bool? onlyOneDevicePerCall,
-      @JsonKey(name: 'max_participants_per_call')
-          int? maxParticipantsPerCall,
-      @JsonKey(name: 'safari_push_id')
-          required String safariPushId,
-      @JsonKey(name: 'message_uploads')
-          required bool messageUploads,
-      @JsonKey(name: 'terms')
-          required Terms terms,
-      @JsonKey(name: 'single_group_teams')
-          required bool singleGroupTeams,
-      @JsonKey(name: 'wiki_pages')
-          required bool wikiPages,
-      @JsonKey(name: 'allow_admin_mute')
-          bool? allowAdminMute,
-      @JsonKey(name: 'default_wallpaper')
-          Wallpaper? defaultWallpaper,
-      @JsonKey(name: 'support_email')
-          required String supportEmail,
-      @JsonKey(name: 'custom_theme')
-          required bool customTheme,
-      @Deprecated('Deprecated.')
-      @JsonKey(name: 'task_checklist')
-          required bool taskChecklist,
-      @Deprecated('Deprecated.')
-      @JsonKey(name: 'readonly_groups')
-          required bool readonlyGroups,
-      @Deprecated('Deprecated.')
-      @JsonKey(name: 'task_dashboard')
-          required bool taskDashboard,
-      @Deprecated('Deprecated.')
-      @JsonKey(name: 'task_messages')
-          required bool taskMessages,
-      @Deprecated('Deprecated.')
-      @JsonKey(name: 'task_public')
-          required bool taskPublic,
-      @Deprecated('Deprecated.')
-      @JsonKey(name: 'task_tags')
-          required bool taskTags,
-      @Deprecated('Deprecated.')
-      @JsonKey(name: 'calls')
-          required bool calls,
-      @JsonKey(name: 'billing')
-          bool? billing,
-      @Deprecated('Deprecated.')
-      @JsonKey(name: 'min_app_version')
-          required String minAppVersion,
-      @JsonKey(name: 'file_extension_whitelist')
-          List<String>? fileExtensionWhitelist,
-      @JsonKey(name: 'file_extension_blacklist')
-          List<String>? fileExtensionBlacklist,
-      @JsonKey(name: 'file_extension_whitelist_priority')
-          bool? fileExtensionWhitelistPriority}) {
-    return _Features(
-      host: host,
-      build: build,
-      desktopVersion: desktopVersion,
-      frontVersion: frontVersion,
-      appTitle: appTitle,
-      landingUrl: landingUrl,
-      appSchemes: appSchemes,
-      userver: userver,
-      iOSApp: iOSApp,
-      androidApp: androidApp,
-      iOSCorpApp: iOSCorpApp,
-      androidCorpApp: androidCorpApp,
-      rumarketApp: rumarketApp,
-      theme: theme,
-      minIOSVersion: minIOSVersion,
-      minAndroidVersion: minAndroidVersion,
-      minCorpIOSVersion: minCorpIOSVersion,
-      minCorpAndroidVersion: minCorpAndroidVersion,
-      freeRegistration: freeRegistration,
-      maxUploadMb: maxUploadMb,
-      maxLinkedMessages: maxLinkedMessages,
-      maxMessageUploads: maxMessageUploads,
-      maxUsernamePartLength: maxUsernamePartLength,
-      maxGroupTitleLength: maxGroupTitleLength,
-      maxTeamTitleLength: maxTeamTitleLength,
-      maxRoleLength: maxRoleLength,
-      maxMoodLength: maxMoodLength,
-      maxMessageLength: maxMessageLength,
-      maxSectionLength: maxSectionLength,
-      maxProjectLength: maxProjectLength,
-      maxTagLength: maxTagLength,
-      maxTaskTitleLength: maxTaskTitleLength,
-      maxColorRuleDescriptionLength: maxColorRuleDescriptionLength,
-      maxUrlLength: maxUrlLength,
-      maxIntegrationCommentLength: maxIntegrationCommentLength,
-      maxTeams: maxTeams,
-      maxMessageSearchLimit: maxMessageSearchLimit,
-      multiNodes: multiNodes,
-      afkAge: afkAge,
-      authByPassword: authByPassword,
-      authByQrCode: authByQrCode,
-      authBySms: authBySms,
-      auth2fa: auth2fa,
-      authByKerberos: authByKerberos,
-      reCaptchaEnabled: reCaptchaEnabled,
-      reCaptchaWebKeyV3: reCaptchaWebKeyV3,
-      reCaptchaWebKeyV2: reCaptchaWebKeyV2,
-      isPinCodeRequired: isPinCodeRequired,
-      pinCodeWrongLimit: pinCodeWrongLimit,
-      oAuthServices: oAuthServices,
-      iCEServers: iCEServers,
-      iceTransportPolicy: iceTransportPolicy,
-      customServer: customServer,
-      installationType: installationType,
-      installationTitle: installationTitle,
-      customAppIconName: customAppIconName,
-      appLoginBackground: appLoginBackground,
-      webLoginBackground: webLoginBackground,
-      isTesting: isTesting,
-      metrika: metrika,
-      amplitudeApiKey: amplitudeApiKey,
-      minSearchLength: minSearchLength,
-      resendTimeout: resendTimeout,
-      sentryDsnJS: sentryDsnJS,
-      serverDrafts: serverDrafts,
-      firebaseAppId: firebaseAppId,
-      firebaseSenderId: firebaseSenderId,
-      firebaseApiKey: firebaseApiKey,
-      firebaseAuthDomain: firebaseAuthDomain,
-      firebaseDatabaseUrl: firebaseDatabaseUrl,
-      firebaseProjectId: firebaseProjectId,
-      firebaseStorageBucket: firebaseStorageBucket,
-      callsVersion: callsVersion,
-      callsAudioEnabled: callsAudioEnabled,
-      callsVideoEnabled: callsVideoEnabled,
-      vcsEnabled: vcsEnabled,
-      mobileCalls: mobileCalls,
-      callsRecord: callsRecord,
-      onlyOneDevicePerCall: onlyOneDevicePerCall,
-      maxParticipantsPerCall: maxParticipantsPerCall,
-      safariPushId: safariPushId,
-      messageUploads: messageUploads,
-      terms: terms,
-      singleGroupTeams: singleGroupTeams,
-      wikiPages: wikiPages,
-      allowAdminMute: allowAdminMute,
-      defaultWallpaper: defaultWallpaper,
-      supportEmail: supportEmail,
-      customTheme: customTheme,
-      taskChecklist: taskChecklist,
-      readonlyGroups: readonlyGroups,
-      taskDashboard: taskDashboard,
-      taskMessages: taskMessages,
-      taskPublic: taskPublic,
-      taskTags: taskTags,
-      calls: calls,
-      billing: billing,
-      minAppVersion: minAppVersion,
-      fileExtensionWhitelist: fileExtensionWhitelist,
-      fileExtensionBlacklist: fileExtensionBlacklist,
-      fileExtensionWhitelistPriority: fileExtensionWhitelistPriority,
-    );
-  }
-
-  Features fromJson(Map<String, Object> json) {
-    return Features.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Features = _$FeaturesTearOff();
 
 /// @nodoc
 mixin _$Features {
@@ -753,24 +424,30 @@ mixin _$Features {
 
   /// File Extension Whitelist.
   @JsonKey(name: 'file_extension_whitelist')
-  List<String>? get fileExtensionWhitelist => throw _privateConstructorUsedError;
+  List<String>? get fileExtensionWhitelist =>
+      throw _privateConstructorUsedError;
 
   /// File Extension Blacklist.
   @JsonKey(name: 'file_extension_blacklist')
-  List<String>? get fileExtensionBlacklist => throw _privateConstructorUsedError;
+  List<String>? get fileExtensionBlacklist =>
+      throw _privateConstructorUsedError;
 
   /// File Extension Whitelist Priority.
   @JsonKey(name: 'file_extension_whitelist_priority')
-  bool? get fileExtensionWhitelistPriority => throw _privateConstructorUsedError;
+  bool? get fileExtensionWhitelistPriority =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $FeaturesCopyWith<Features> get copyWith => throw _privateConstructorUsedError;
+  $FeaturesCopyWith<Features> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $FeaturesCopyWith<$Res> {
-  factory $FeaturesCopyWith(Features value, $Res Function(Features) then) = _$FeaturesCopyWithImpl<$Res>;
+  factory $FeaturesCopyWith(Features value, $Res Function(Features) then) =
+      _$FeaturesCopyWithImpl<$Res, Features>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'host')
           String host,
@@ -990,54 +667,57 @@ abstract class $FeaturesCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
+class _$FeaturesCopyWithImpl<$Res, $Val extends Features>
+    implements $FeaturesCopyWith<$Res> {
   _$FeaturesCopyWithImpl(this._value, this._then);
 
-  final Features _value;
   // ignore: unused_field
-  final $Res Function(Features) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? host = freezed,
-    Object? build = freezed,
-    Object? desktopVersion = freezed,
-    Object? frontVersion = freezed,
-    Object? appTitle = freezed,
+    Object? host = null,
+    Object? build = null,
+    Object? desktopVersion = null,
+    Object? frontVersion = null,
+    Object? appTitle = null,
     Object? landingUrl = freezed,
-    Object? appSchemes = freezed,
-    Object? userver = freezed,
-    Object? iOSApp = freezed,
-    Object? androidApp = freezed,
-    Object? iOSCorpApp = freezed,
-    Object? androidCorpApp = freezed,
-    Object? rumarketApp = freezed,
-    Object? theme = freezed,
-    Object? minIOSVersion = freezed,
-    Object? minAndroidVersion = freezed,
-    Object? minCorpIOSVersion = freezed,
-    Object? minCorpAndroidVersion = freezed,
-    Object? freeRegistration = freezed,
-    Object? maxUploadMb = freezed,
-    Object? maxLinkedMessages = freezed,
-    Object? maxMessageUploads = freezed,
-    Object? maxUsernamePartLength = freezed,
-    Object? maxGroupTitleLength = freezed,
-    Object? maxTeamTitleLength = freezed,
-    Object? maxRoleLength = freezed,
-    Object? maxMoodLength = freezed,
-    Object? maxMessageLength = freezed,
-    Object? maxSectionLength = freezed,
-    Object? maxProjectLength = freezed,
-    Object? maxTagLength = freezed,
-    Object? maxTaskTitleLength = freezed,
-    Object? maxColorRuleDescriptionLength = freezed,
-    Object? maxUrlLength = freezed,
-    Object? maxIntegrationCommentLength = freezed,
-    Object? maxTeams = freezed,
-    Object? maxMessageSearchLimit = freezed,
+    Object? appSchemes = null,
+    Object? userver = null,
+    Object? iOSApp = null,
+    Object? androidApp = null,
+    Object? iOSCorpApp = null,
+    Object? androidCorpApp = null,
+    Object? rumarketApp = null,
+    Object? theme = null,
+    Object? minIOSVersion = null,
+    Object? minAndroidVersion = null,
+    Object? minCorpIOSVersion = null,
+    Object? minCorpAndroidVersion = null,
+    Object? freeRegistration = null,
+    Object? maxUploadMb = null,
+    Object? maxLinkedMessages = null,
+    Object? maxMessageUploads = null,
+    Object? maxUsernamePartLength = null,
+    Object? maxGroupTitleLength = null,
+    Object? maxTeamTitleLength = null,
+    Object? maxRoleLength = null,
+    Object? maxMoodLength = null,
+    Object? maxMessageLength = null,
+    Object? maxSectionLength = null,
+    Object? maxProjectLength = null,
+    Object? maxTagLength = null,
+    Object? maxTaskTitleLength = null,
+    Object? maxColorRuleDescriptionLength = null,
+    Object? maxUrlLength = null,
+    Object? maxIntegrationCommentLength = null,
+    Object? maxTeams = null,
+    Object? maxMessageSearchLimit = null,
     Object? multiNodes = freezed,
-    Object? afkAge = freezed,
+    Object? afkAge = null,
     Object? authByPassword = freezed,
     Object? authByQrCode = freezed,
     Object? authBySms = freezed,
@@ -1046,492 +726,497 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     Object? reCaptchaEnabled = freezed,
     Object? reCaptchaWebKeyV3 = freezed,
     Object? reCaptchaWebKeyV2 = freezed,
-    Object? isPinCodeRequired = freezed,
-    Object? pinCodeWrongLimit = freezed,
+    Object? isPinCodeRequired = null,
+    Object? pinCodeWrongLimit = null,
     Object? oAuthServices = freezed,
-    Object? iCEServers = freezed,
+    Object? iCEServers = null,
     Object? iceTransportPolicy = freezed,
-    Object? customServer = freezed,
-    Object? installationType = freezed,
+    Object? customServer = null,
+    Object? installationType = null,
     Object? installationTitle = freezed,
     Object? customAppIconName = freezed,
     Object? appLoginBackground = freezed,
     Object? webLoginBackground = freezed,
-    Object? isTesting = freezed,
-    Object? metrika = freezed,
+    Object? isTesting = null,
+    Object? metrika = null,
     Object? amplitudeApiKey = freezed,
-    Object? minSearchLength = freezed,
-    Object? resendTimeout = freezed,
-    Object? sentryDsnJS = freezed,
-    Object? serverDrafts = freezed,
-    Object? firebaseAppId = freezed,
-    Object? firebaseSenderId = freezed,
-    Object? firebaseApiKey = freezed,
-    Object? firebaseAuthDomain = freezed,
-    Object? firebaseDatabaseUrl = freezed,
-    Object? firebaseProjectId = freezed,
-    Object? firebaseStorageBucket = freezed,
-    Object? callsVersion = freezed,
-    Object? callsAudioEnabled = freezed,
-    Object? callsVideoEnabled = freezed,
-    Object? vcsEnabled = freezed,
-    Object? mobileCalls = freezed,
-    Object? callsRecord = freezed,
+    Object? minSearchLength = null,
+    Object? resendTimeout = null,
+    Object? sentryDsnJS = null,
+    Object? serverDrafts = null,
+    Object? firebaseAppId = null,
+    Object? firebaseSenderId = null,
+    Object? firebaseApiKey = null,
+    Object? firebaseAuthDomain = null,
+    Object? firebaseDatabaseUrl = null,
+    Object? firebaseProjectId = null,
+    Object? firebaseStorageBucket = null,
+    Object? callsVersion = null,
+    Object? callsAudioEnabled = null,
+    Object? callsVideoEnabled = null,
+    Object? vcsEnabled = null,
+    Object? mobileCalls = null,
+    Object? callsRecord = null,
     Object? onlyOneDevicePerCall = freezed,
     Object? maxParticipantsPerCall = freezed,
-    Object? safariPushId = freezed,
-    Object? messageUploads = freezed,
-    Object? terms = freezed,
-    Object? singleGroupTeams = freezed,
-    Object? wikiPages = freezed,
+    Object? safariPushId = null,
+    Object? messageUploads = null,
+    Object? terms = null,
+    Object? singleGroupTeams = null,
+    Object? wikiPages = null,
     Object? allowAdminMute = freezed,
     Object? defaultWallpaper = freezed,
-    Object? supportEmail = freezed,
-    Object? customTheme = freezed,
-    Object? taskChecklist = freezed,
-    Object? readonlyGroups = freezed,
-    Object? taskDashboard = freezed,
-    Object? taskMessages = freezed,
-    Object? taskPublic = freezed,
-    Object? taskTags = freezed,
-    Object? calls = freezed,
+    Object? supportEmail = null,
+    Object? customTheme = null,
+    Object? taskChecklist = null,
+    Object? readonlyGroups = null,
+    Object? taskDashboard = null,
+    Object? taskMessages = null,
+    Object? taskPublic = null,
+    Object? taskTags = null,
+    Object? calls = null,
     Object? billing = freezed,
-    Object? minAppVersion = freezed,
+    Object? minAppVersion = null,
     Object? fileExtensionWhitelist = freezed,
     Object? fileExtensionBlacklist = freezed,
     Object? fileExtensionWhitelistPriority = freezed,
   }) {
     return _then(_value.copyWith(
-      host: host == freezed
+      host: null == host
           ? _value.host
           : host // ignore: cast_nullable_to_non_nullable
               as String,
-      build: build == freezed
+      build: null == build
           ? _value.build
           : build // ignore: cast_nullable_to_non_nullable
               as String,
-      desktopVersion: desktopVersion == freezed
+      desktopVersion: null == desktopVersion
           ? _value.desktopVersion
           : desktopVersion // ignore: cast_nullable_to_non_nullable
               as String,
-      frontVersion: frontVersion == freezed
+      frontVersion: null == frontVersion
           ? _value.frontVersion
           : frontVersion // ignore: cast_nullable_to_non_nullable
               as String,
-      appTitle: appTitle == freezed
+      appTitle: null == appTitle
           ? _value.appTitle
           : appTitle // ignore: cast_nullable_to_non_nullable
               as String,
-      landingUrl: landingUrl == freezed
+      landingUrl: freezed == landingUrl
           ? _value.landingUrl
           : landingUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      appSchemes: appSchemes == freezed
+      appSchemes: null == appSchemes
           ? _value.appSchemes
           : appSchemes // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      userver: userver == freezed
+      userver: null == userver
           ? _value.userver
           : userver // ignore: cast_nullable_to_non_nullable
               as String,
-      iOSApp: iOSApp == freezed
+      iOSApp: null == iOSApp
           ? _value.iOSApp
           : iOSApp // ignore: cast_nullable_to_non_nullable
               as String,
-      androidApp: androidApp == freezed
+      androidApp: null == androidApp
           ? _value.androidApp
           : androidApp // ignore: cast_nullable_to_non_nullable
               as String,
-      iOSCorpApp: iOSCorpApp == freezed
+      iOSCorpApp: null == iOSCorpApp
           ? _value.iOSCorpApp
           : iOSCorpApp // ignore: cast_nullable_to_non_nullable
               as String,
-      androidCorpApp: androidCorpApp == freezed
+      androidCorpApp: null == androidCorpApp
           ? _value.androidCorpApp
           : androidCorpApp // ignore: cast_nullable_to_non_nullable
               as String,
-      rumarketApp: rumarketApp == freezed
+      rumarketApp: null == rumarketApp
           ? _value.rumarketApp
           : rumarketApp // ignore: cast_nullable_to_non_nullable
               as String,
-      theme: theme == freezed
+      theme: null == theme
           ? _value.theme
           : theme // ignore: cast_nullable_to_non_nullable
               as String,
-      minIOSVersion: minIOSVersion == freezed
+      minIOSVersion: null == minIOSVersion
           ? _value.minIOSVersion
           : minIOSVersion // ignore: cast_nullable_to_non_nullable
               as String,
-      minAndroidVersion: minAndroidVersion == freezed
+      minAndroidVersion: null == minAndroidVersion
           ? _value.minAndroidVersion
           : minAndroidVersion // ignore: cast_nullable_to_non_nullable
               as String,
-      minCorpIOSVersion: minCorpIOSVersion == freezed
+      minCorpIOSVersion: null == minCorpIOSVersion
           ? _value.minCorpIOSVersion
           : minCorpIOSVersion // ignore: cast_nullable_to_non_nullable
               as String,
-      minCorpAndroidVersion: minCorpAndroidVersion == freezed
+      minCorpAndroidVersion: null == minCorpAndroidVersion
           ? _value.minCorpAndroidVersion
           : minCorpAndroidVersion // ignore: cast_nullable_to_non_nullable
               as String,
-      freeRegistration: freeRegistration == freezed
+      freeRegistration: null == freeRegistration
           ? _value.freeRegistration
           : freeRegistration // ignore: cast_nullable_to_non_nullable
               as bool,
-      maxUploadMb: maxUploadMb == freezed
+      maxUploadMb: null == maxUploadMb
           ? _value.maxUploadMb
           : maxUploadMb // ignore: cast_nullable_to_non_nullable
               as int,
-      maxLinkedMessages: maxLinkedMessages == freezed
+      maxLinkedMessages: null == maxLinkedMessages
           ? _value.maxLinkedMessages
           : maxLinkedMessages // ignore: cast_nullable_to_non_nullable
               as int,
-      maxMessageUploads: maxMessageUploads == freezed
+      maxMessageUploads: null == maxMessageUploads
           ? _value.maxMessageUploads
           : maxMessageUploads // ignore: cast_nullable_to_non_nullable
               as int,
-      maxUsernamePartLength: maxUsernamePartLength == freezed
+      maxUsernamePartLength: null == maxUsernamePartLength
           ? _value.maxUsernamePartLength
           : maxUsernamePartLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxGroupTitleLength: maxGroupTitleLength == freezed
+      maxGroupTitleLength: null == maxGroupTitleLength
           ? _value.maxGroupTitleLength
           : maxGroupTitleLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxTeamTitleLength: maxTeamTitleLength == freezed
+      maxTeamTitleLength: null == maxTeamTitleLength
           ? _value.maxTeamTitleLength
           : maxTeamTitleLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxRoleLength: maxRoleLength == freezed
+      maxRoleLength: null == maxRoleLength
           ? _value.maxRoleLength
           : maxRoleLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxMoodLength: maxMoodLength == freezed
+      maxMoodLength: null == maxMoodLength
           ? _value.maxMoodLength
           : maxMoodLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxMessageLength: maxMessageLength == freezed
+      maxMessageLength: null == maxMessageLength
           ? _value.maxMessageLength
           : maxMessageLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxSectionLength: maxSectionLength == freezed
+      maxSectionLength: null == maxSectionLength
           ? _value.maxSectionLength
           : maxSectionLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxProjectLength: maxProjectLength == freezed
+      maxProjectLength: null == maxProjectLength
           ? _value.maxProjectLength
           : maxProjectLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxTagLength: maxTagLength == freezed
+      maxTagLength: null == maxTagLength
           ? _value.maxTagLength
           : maxTagLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxTaskTitleLength: maxTaskTitleLength == freezed
+      maxTaskTitleLength: null == maxTaskTitleLength
           ? _value.maxTaskTitleLength
           : maxTaskTitleLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxColorRuleDescriptionLength: maxColorRuleDescriptionLength == freezed
+      maxColorRuleDescriptionLength: null == maxColorRuleDescriptionLength
           ? _value.maxColorRuleDescriptionLength
           : maxColorRuleDescriptionLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxUrlLength: maxUrlLength == freezed
+      maxUrlLength: null == maxUrlLength
           ? _value.maxUrlLength
           : maxUrlLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxIntegrationCommentLength: maxIntegrationCommentLength == freezed
+      maxIntegrationCommentLength: null == maxIntegrationCommentLength
           ? _value.maxIntegrationCommentLength
           : maxIntegrationCommentLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxTeams: maxTeams == freezed
+      maxTeams: null == maxTeams
           ? _value.maxTeams
           : maxTeams // ignore: cast_nullable_to_non_nullable
               as int,
-      maxMessageSearchLimit: maxMessageSearchLimit == freezed
+      maxMessageSearchLimit: null == maxMessageSearchLimit
           ? _value.maxMessageSearchLimit
           : maxMessageSearchLimit // ignore: cast_nullable_to_non_nullable
               as int,
-      multiNodes: multiNodes == freezed
+      multiNodes: freezed == multiNodes
           ? _value.multiNodes
           : multiNodes // ignore: cast_nullable_to_non_nullable
               as bool?,
-      afkAge: afkAge == freezed
+      afkAge: null == afkAge
           ? _value.afkAge
           : afkAge // ignore: cast_nullable_to_non_nullable
               as int,
-      authByPassword: authByPassword == freezed
+      authByPassword: freezed == authByPassword
           ? _value.authByPassword
           : authByPassword // ignore: cast_nullable_to_non_nullable
               as bool?,
-      authByQrCode: authByQrCode == freezed
+      authByQrCode: freezed == authByQrCode
           ? _value.authByQrCode
           : authByQrCode // ignore: cast_nullable_to_non_nullable
               as bool?,
-      authBySms: authBySms == freezed
+      authBySms: freezed == authBySms
           ? _value.authBySms
           : authBySms // ignore: cast_nullable_to_non_nullable
               as bool?,
-      auth2fa: auth2fa == freezed
+      auth2fa: freezed == auth2fa
           ? _value.auth2fa
           : auth2fa // ignore: cast_nullable_to_non_nullable
               as bool?,
-      authByKerberos: authByKerberos == freezed
+      authByKerberos: freezed == authByKerberos
           ? _value.authByKerberos
           : authByKerberos // ignore: cast_nullable_to_non_nullable
               as bool?,
-      reCaptchaEnabled: reCaptchaEnabled == freezed
+      reCaptchaEnabled: freezed == reCaptchaEnabled
           ? _value.reCaptchaEnabled
           : reCaptchaEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      reCaptchaWebKeyV3: reCaptchaWebKeyV3 == freezed
+      reCaptchaWebKeyV3: freezed == reCaptchaWebKeyV3
           ? _value.reCaptchaWebKeyV3
           : reCaptchaWebKeyV3 // ignore: cast_nullable_to_non_nullable
               as String?,
-      reCaptchaWebKeyV2: reCaptchaWebKeyV2 == freezed
+      reCaptchaWebKeyV2: freezed == reCaptchaWebKeyV2
           ? _value.reCaptchaWebKeyV2
           : reCaptchaWebKeyV2 // ignore: cast_nullable_to_non_nullable
               as String?,
-      isPinCodeRequired: isPinCodeRequired == freezed
+      isPinCodeRequired: null == isPinCodeRequired
           ? _value.isPinCodeRequired
           : isPinCodeRequired // ignore: cast_nullable_to_non_nullable
               as bool,
-      pinCodeWrongLimit: pinCodeWrongLimit == freezed
+      pinCodeWrongLimit: null == pinCodeWrongLimit
           ? _value.pinCodeWrongLimit
           : pinCodeWrongLimit // ignore: cast_nullable_to_non_nullable
               as int,
-      oAuthServices: oAuthServices == freezed
+      oAuthServices: freezed == oAuthServices
           ? _value.oAuthServices
           : oAuthServices // ignore: cast_nullable_to_non_nullable
               as List<OAuthService>?,
-      iCEServers: iCEServers == freezed
+      iCEServers: null == iCEServers
           ? _value.iCEServers
           : iCEServers // ignore: cast_nullable_to_non_nullable
               as List<ICEServer>,
-      iceTransportPolicy: iceTransportPolicy == freezed
+      iceTransportPolicy: freezed == iceTransportPolicy
           ? _value.iceTransportPolicy
           : iceTransportPolicy // ignore: cast_nullable_to_non_nullable
               as String?,
-      customServer: customServer == freezed
+      customServer: null == customServer
           ? _value.customServer
           : customServer // ignore: cast_nullable_to_non_nullable
               as bool,
-      installationType: installationType == freezed
+      installationType: null == installationType
           ? _value.installationType
           : installationType // ignore: cast_nullable_to_non_nullable
               as String,
-      installationTitle: installationTitle == freezed
+      installationTitle: freezed == installationTitle
           ? _value.installationTitle
           : installationTitle // ignore: cast_nullable_to_non_nullable
               as String?,
-      customAppIconName: customAppIconName == freezed
+      customAppIconName: freezed == customAppIconName
           ? _value.customAppIconName
           : customAppIconName // ignore: cast_nullable_to_non_nullable
               as String?,
-      appLoginBackground: appLoginBackground == freezed
+      appLoginBackground: freezed == appLoginBackground
           ? _value.appLoginBackground
           : appLoginBackground // ignore: cast_nullable_to_non_nullable
               as String?,
-      webLoginBackground: webLoginBackground == freezed
+      webLoginBackground: freezed == webLoginBackground
           ? _value.webLoginBackground
           : webLoginBackground // ignore: cast_nullable_to_non_nullable
               as String?,
-      isTesting: isTesting == freezed
+      isTesting: null == isTesting
           ? _value.isTesting
           : isTesting // ignore: cast_nullable_to_non_nullable
               as bool,
-      metrika: metrika == freezed
+      metrika: null == metrika
           ? _value.metrika
           : metrika // ignore: cast_nullable_to_non_nullable
               as String,
-      amplitudeApiKey: amplitudeApiKey == freezed
+      amplitudeApiKey: freezed == amplitudeApiKey
           ? _value.amplitudeApiKey
           : amplitudeApiKey // ignore: cast_nullable_to_non_nullable
               as String?,
-      minSearchLength: minSearchLength == freezed
+      minSearchLength: null == minSearchLength
           ? _value.minSearchLength
           : minSearchLength // ignore: cast_nullable_to_non_nullable
               as int,
-      resendTimeout: resendTimeout == freezed
+      resendTimeout: null == resendTimeout
           ? _value.resendTimeout
           : resendTimeout // ignore: cast_nullable_to_non_nullable
               as int,
-      sentryDsnJS: sentryDsnJS == freezed
+      sentryDsnJS: null == sentryDsnJS
           ? _value.sentryDsnJS
           : sentryDsnJS // ignore: cast_nullable_to_non_nullable
               as String,
-      serverDrafts: serverDrafts == freezed
+      serverDrafts: null == serverDrafts
           ? _value.serverDrafts
           : serverDrafts // ignore: cast_nullable_to_non_nullable
               as bool,
-      firebaseAppId: firebaseAppId == freezed
+      firebaseAppId: null == firebaseAppId
           ? _value.firebaseAppId
           : firebaseAppId // ignore: cast_nullable_to_non_nullable
               as String,
-      firebaseSenderId: firebaseSenderId == freezed
+      firebaseSenderId: null == firebaseSenderId
           ? _value.firebaseSenderId
           : firebaseSenderId // ignore: cast_nullable_to_non_nullable
               as String,
-      firebaseApiKey: firebaseApiKey == freezed
+      firebaseApiKey: null == firebaseApiKey
           ? _value.firebaseApiKey
           : firebaseApiKey // ignore: cast_nullable_to_non_nullable
               as String,
-      firebaseAuthDomain: firebaseAuthDomain == freezed
+      firebaseAuthDomain: null == firebaseAuthDomain
           ? _value.firebaseAuthDomain
           : firebaseAuthDomain // ignore: cast_nullable_to_non_nullable
               as String,
-      firebaseDatabaseUrl: firebaseDatabaseUrl == freezed
+      firebaseDatabaseUrl: null == firebaseDatabaseUrl
           ? _value.firebaseDatabaseUrl
           : firebaseDatabaseUrl // ignore: cast_nullable_to_non_nullable
               as String,
-      firebaseProjectId: firebaseProjectId == freezed
+      firebaseProjectId: null == firebaseProjectId
           ? _value.firebaseProjectId
           : firebaseProjectId // ignore: cast_nullable_to_non_nullable
               as String,
-      firebaseStorageBucket: firebaseStorageBucket == freezed
+      firebaseStorageBucket: null == firebaseStorageBucket
           ? _value.firebaseStorageBucket
           : firebaseStorageBucket // ignore: cast_nullable_to_non_nullable
               as String,
-      callsVersion: callsVersion == freezed
+      callsVersion: null == callsVersion
           ? _value.callsVersion
           : callsVersion // ignore: cast_nullable_to_non_nullable
               as int,
-      callsAudioEnabled: callsAudioEnabled == freezed
+      callsAudioEnabled: null == callsAudioEnabled
           ? _value.callsAudioEnabled
           : callsAudioEnabled // ignore: cast_nullable_to_non_nullable
               as bool,
-      callsVideoEnabled: callsVideoEnabled == freezed
+      callsVideoEnabled: null == callsVideoEnabled
           ? _value.callsVideoEnabled
           : callsVideoEnabled // ignore: cast_nullable_to_non_nullable
               as bool,
-      vcsEnabled: vcsEnabled == freezed
+      vcsEnabled: null == vcsEnabled
           ? _value.vcsEnabled
           : vcsEnabled // ignore: cast_nullable_to_non_nullable
               as bool,
-      mobileCalls: mobileCalls == freezed
+      mobileCalls: null == mobileCalls
           ? _value.mobileCalls
           : mobileCalls // ignore: cast_nullable_to_non_nullable
               as bool,
-      callsRecord: callsRecord == freezed
+      callsRecord: null == callsRecord
           ? _value.callsRecord
           : callsRecord // ignore: cast_nullable_to_non_nullable
               as bool,
-      onlyOneDevicePerCall: onlyOneDevicePerCall == freezed
+      onlyOneDevicePerCall: freezed == onlyOneDevicePerCall
           ? _value.onlyOneDevicePerCall
           : onlyOneDevicePerCall // ignore: cast_nullable_to_non_nullable
               as bool?,
-      maxParticipantsPerCall: maxParticipantsPerCall == freezed
+      maxParticipantsPerCall: freezed == maxParticipantsPerCall
           ? _value.maxParticipantsPerCall
           : maxParticipantsPerCall // ignore: cast_nullable_to_non_nullable
               as int?,
-      safariPushId: safariPushId == freezed
+      safariPushId: null == safariPushId
           ? _value.safariPushId
           : safariPushId // ignore: cast_nullable_to_non_nullable
               as String,
-      messageUploads: messageUploads == freezed
+      messageUploads: null == messageUploads
           ? _value.messageUploads
           : messageUploads // ignore: cast_nullable_to_non_nullable
               as bool,
-      terms: terms == freezed
+      terms: null == terms
           ? _value.terms
           : terms // ignore: cast_nullable_to_non_nullable
               as Terms,
-      singleGroupTeams: singleGroupTeams == freezed
+      singleGroupTeams: null == singleGroupTeams
           ? _value.singleGroupTeams
           : singleGroupTeams // ignore: cast_nullable_to_non_nullable
               as bool,
-      wikiPages: wikiPages == freezed
+      wikiPages: null == wikiPages
           ? _value.wikiPages
           : wikiPages // ignore: cast_nullable_to_non_nullable
               as bool,
-      allowAdminMute: allowAdminMute == freezed
+      allowAdminMute: freezed == allowAdminMute
           ? _value.allowAdminMute
           : allowAdminMute // ignore: cast_nullable_to_non_nullable
               as bool?,
-      defaultWallpaper: defaultWallpaper == freezed
+      defaultWallpaper: freezed == defaultWallpaper
           ? _value.defaultWallpaper
           : defaultWallpaper // ignore: cast_nullable_to_non_nullable
               as Wallpaper?,
-      supportEmail: supportEmail == freezed
+      supportEmail: null == supportEmail
           ? _value.supportEmail
           : supportEmail // ignore: cast_nullable_to_non_nullable
               as String,
-      customTheme: customTheme == freezed
+      customTheme: null == customTheme
           ? _value.customTheme
           : customTheme // ignore: cast_nullable_to_non_nullable
               as bool,
-      taskChecklist: taskChecklist == freezed
+      taskChecklist: null == taskChecklist
           ? _value.taskChecklist
           : taskChecklist // ignore: cast_nullable_to_non_nullable
               as bool,
-      readonlyGroups: readonlyGroups == freezed
+      readonlyGroups: null == readonlyGroups
           ? _value.readonlyGroups
           : readonlyGroups // ignore: cast_nullable_to_non_nullable
               as bool,
-      taskDashboard: taskDashboard == freezed
+      taskDashboard: null == taskDashboard
           ? _value.taskDashboard
           : taskDashboard // ignore: cast_nullable_to_non_nullable
               as bool,
-      taskMessages: taskMessages == freezed
+      taskMessages: null == taskMessages
           ? _value.taskMessages
           : taskMessages // ignore: cast_nullable_to_non_nullable
               as bool,
-      taskPublic: taskPublic == freezed
+      taskPublic: null == taskPublic
           ? _value.taskPublic
           : taskPublic // ignore: cast_nullable_to_non_nullable
               as bool,
-      taskTags: taskTags == freezed
+      taskTags: null == taskTags
           ? _value.taskTags
           : taskTags // ignore: cast_nullable_to_non_nullable
               as bool,
-      calls: calls == freezed
+      calls: null == calls
           ? _value.calls
           : calls // ignore: cast_nullable_to_non_nullable
               as bool,
-      billing: billing == freezed
+      billing: freezed == billing
           ? _value.billing
           : billing // ignore: cast_nullable_to_non_nullable
               as bool?,
-      minAppVersion: minAppVersion == freezed
+      minAppVersion: null == minAppVersion
           ? _value.minAppVersion
           : minAppVersion // ignore: cast_nullable_to_non_nullable
               as String,
-      fileExtensionWhitelist: fileExtensionWhitelist == freezed
+      fileExtensionWhitelist: freezed == fileExtensionWhitelist
           ? _value.fileExtensionWhitelist
           : fileExtensionWhitelist // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      fileExtensionBlacklist: fileExtensionBlacklist == freezed
+      fileExtensionBlacklist: freezed == fileExtensionBlacklist
           ? _value.fileExtensionBlacklist
           : fileExtensionBlacklist // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      fileExtensionWhitelistPriority: fileExtensionWhitelistPriority == freezed
+      fileExtensionWhitelistPriority: freezed == fileExtensionWhitelistPriority
           ? _value.fileExtensionWhitelistPriority
           : fileExtensionWhitelistPriority // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $TermsCopyWith<$Res> get terms {
     return $TermsCopyWith<$Res>(_value.terms, (value) {
-      return _then(_value.copyWith(terms: value));
+      return _then(_value.copyWith(terms: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $WallpaperCopyWith<$Res>? get defaultWallpaper {
     if (_value.defaultWallpaper == null) {
       return null;
     }
 
     return $WallpaperCopyWith<$Res>(_value.defaultWallpaper!, (value) {
-      return _then(_value.copyWith(defaultWallpaper: value));
+      return _then(_value.copyWith(defaultWallpaper: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
-  factory _$FeaturesCopyWith(_Features value, $Res Function(_Features) then) = __$FeaturesCopyWithImpl<$Res>;
+abstract class _$$_FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
+  factory _$$_FeaturesCopyWith(
+          _$_Features value, $Res Function(_$_Features) then) =
+      __$$_FeaturesCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'host')
           String host,
@@ -1753,54 +1438,55 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> implements _$FeaturesCopyWith<$Res> {
-  __$FeaturesCopyWithImpl(_Features _value, $Res Function(_Features) _then)
-      : super(_value, (v) => _then(v as _Features));
+class __$$_FeaturesCopyWithImpl<$Res>
+    extends _$FeaturesCopyWithImpl<$Res, _$_Features>
+    implements _$$_FeaturesCopyWith<$Res> {
+  __$$_FeaturesCopyWithImpl(
+      _$_Features _value, $Res Function(_$_Features) _then)
+      : super(_value, _then);
 
-  @override
-  _Features get _value => super._value as _Features;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? host = freezed,
-    Object? build = freezed,
-    Object? desktopVersion = freezed,
-    Object? frontVersion = freezed,
-    Object? appTitle = freezed,
+    Object? host = null,
+    Object? build = null,
+    Object? desktopVersion = null,
+    Object? frontVersion = null,
+    Object? appTitle = null,
     Object? landingUrl = freezed,
-    Object? appSchemes = freezed,
-    Object? userver = freezed,
-    Object? iOSApp = freezed,
-    Object? androidApp = freezed,
-    Object? iOSCorpApp = freezed,
-    Object? androidCorpApp = freezed,
-    Object? rumarketApp = freezed,
-    Object? theme = freezed,
-    Object? minIOSVersion = freezed,
-    Object? minAndroidVersion = freezed,
-    Object? minCorpIOSVersion = freezed,
-    Object? minCorpAndroidVersion = freezed,
-    Object? freeRegistration = freezed,
-    Object? maxUploadMb = freezed,
-    Object? maxLinkedMessages = freezed,
-    Object? maxMessageUploads = freezed,
-    Object? maxUsernamePartLength = freezed,
-    Object? maxGroupTitleLength = freezed,
-    Object? maxTeamTitleLength = freezed,
-    Object? maxRoleLength = freezed,
-    Object? maxMoodLength = freezed,
-    Object? maxMessageLength = freezed,
-    Object? maxSectionLength = freezed,
-    Object? maxProjectLength = freezed,
-    Object? maxTagLength = freezed,
-    Object? maxTaskTitleLength = freezed,
-    Object? maxColorRuleDescriptionLength = freezed,
-    Object? maxUrlLength = freezed,
-    Object? maxIntegrationCommentLength = freezed,
-    Object? maxTeams = freezed,
-    Object? maxMessageSearchLimit = freezed,
+    Object? appSchemes = null,
+    Object? userver = null,
+    Object? iOSApp = null,
+    Object? androidApp = null,
+    Object? iOSCorpApp = null,
+    Object? androidCorpApp = null,
+    Object? rumarketApp = null,
+    Object? theme = null,
+    Object? minIOSVersion = null,
+    Object? minAndroidVersion = null,
+    Object? minCorpIOSVersion = null,
+    Object? minCorpAndroidVersion = null,
+    Object? freeRegistration = null,
+    Object? maxUploadMb = null,
+    Object? maxLinkedMessages = null,
+    Object? maxMessageUploads = null,
+    Object? maxUsernamePartLength = null,
+    Object? maxGroupTitleLength = null,
+    Object? maxTeamTitleLength = null,
+    Object? maxRoleLength = null,
+    Object? maxMoodLength = null,
+    Object? maxMessageLength = null,
+    Object? maxSectionLength = null,
+    Object? maxProjectLength = null,
+    Object? maxTagLength = null,
+    Object? maxTaskTitleLength = null,
+    Object? maxColorRuleDescriptionLength = null,
+    Object? maxUrlLength = null,
+    Object? maxIntegrationCommentLength = null,
+    Object? maxTeams = null,
+    Object? maxMessageSearchLimit = null,
     Object? multiNodes = freezed,
-    Object? afkAge = freezed,
+    Object? afkAge = null,
     Object? authByPassword = freezed,
     Object? authByQrCode = freezed,
     Object? authBySms = freezed,
@@ -1809,463 +1495,463 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res> impleme
     Object? reCaptchaEnabled = freezed,
     Object? reCaptchaWebKeyV3 = freezed,
     Object? reCaptchaWebKeyV2 = freezed,
-    Object? isPinCodeRequired = freezed,
-    Object? pinCodeWrongLimit = freezed,
+    Object? isPinCodeRequired = null,
+    Object? pinCodeWrongLimit = null,
     Object? oAuthServices = freezed,
-    Object? iCEServers = freezed,
+    Object? iCEServers = null,
     Object? iceTransportPolicy = freezed,
-    Object? customServer = freezed,
-    Object? installationType = freezed,
+    Object? customServer = null,
+    Object? installationType = null,
     Object? installationTitle = freezed,
     Object? customAppIconName = freezed,
     Object? appLoginBackground = freezed,
     Object? webLoginBackground = freezed,
-    Object? isTesting = freezed,
-    Object? metrika = freezed,
+    Object? isTesting = null,
+    Object? metrika = null,
     Object? amplitudeApiKey = freezed,
-    Object? minSearchLength = freezed,
-    Object? resendTimeout = freezed,
-    Object? sentryDsnJS = freezed,
-    Object? serverDrafts = freezed,
-    Object? firebaseAppId = freezed,
-    Object? firebaseSenderId = freezed,
-    Object? firebaseApiKey = freezed,
-    Object? firebaseAuthDomain = freezed,
-    Object? firebaseDatabaseUrl = freezed,
-    Object? firebaseProjectId = freezed,
-    Object? firebaseStorageBucket = freezed,
-    Object? callsVersion = freezed,
-    Object? callsAudioEnabled = freezed,
-    Object? callsVideoEnabled = freezed,
-    Object? vcsEnabled = freezed,
-    Object? mobileCalls = freezed,
-    Object? callsRecord = freezed,
+    Object? minSearchLength = null,
+    Object? resendTimeout = null,
+    Object? sentryDsnJS = null,
+    Object? serverDrafts = null,
+    Object? firebaseAppId = null,
+    Object? firebaseSenderId = null,
+    Object? firebaseApiKey = null,
+    Object? firebaseAuthDomain = null,
+    Object? firebaseDatabaseUrl = null,
+    Object? firebaseProjectId = null,
+    Object? firebaseStorageBucket = null,
+    Object? callsVersion = null,
+    Object? callsAudioEnabled = null,
+    Object? callsVideoEnabled = null,
+    Object? vcsEnabled = null,
+    Object? mobileCalls = null,
+    Object? callsRecord = null,
     Object? onlyOneDevicePerCall = freezed,
     Object? maxParticipantsPerCall = freezed,
-    Object? safariPushId = freezed,
-    Object? messageUploads = freezed,
-    Object? terms = freezed,
-    Object? singleGroupTeams = freezed,
-    Object? wikiPages = freezed,
+    Object? safariPushId = null,
+    Object? messageUploads = null,
+    Object? terms = null,
+    Object? singleGroupTeams = null,
+    Object? wikiPages = null,
     Object? allowAdminMute = freezed,
     Object? defaultWallpaper = freezed,
-    Object? supportEmail = freezed,
-    Object? customTheme = freezed,
-    Object? taskChecklist = freezed,
-    Object? readonlyGroups = freezed,
-    Object? taskDashboard = freezed,
-    Object? taskMessages = freezed,
-    Object? taskPublic = freezed,
-    Object? taskTags = freezed,
-    Object? calls = freezed,
+    Object? supportEmail = null,
+    Object? customTheme = null,
+    Object? taskChecklist = null,
+    Object? readonlyGroups = null,
+    Object? taskDashboard = null,
+    Object? taskMessages = null,
+    Object? taskPublic = null,
+    Object? taskTags = null,
+    Object? calls = null,
     Object? billing = freezed,
-    Object? minAppVersion = freezed,
+    Object? minAppVersion = null,
     Object? fileExtensionWhitelist = freezed,
     Object? fileExtensionBlacklist = freezed,
     Object? fileExtensionWhitelistPriority = freezed,
   }) {
-    return _then(_Features(
-      host: host == freezed
+    return _then(_$_Features(
+      host: null == host
           ? _value.host
           : host // ignore: cast_nullable_to_non_nullable
               as String,
-      build: build == freezed
+      build: null == build
           ? _value.build
           : build // ignore: cast_nullable_to_non_nullable
               as String,
-      desktopVersion: desktopVersion == freezed
+      desktopVersion: null == desktopVersion
           ? _value.desktopVersion
           : desktopVersion // ignore: cast_nullable_to_non_nullable
               as String,
-      frontVersion: frontVersion == freezed
+      frontVersion: null == frontVersion
           ? _value.frontVersion
           : frontVersion // ignore: cast_nullable_to_non_nullable
               as String,
-      appTitle: appTitle == freezed
+      appTitle: null == appTitle
           ? _value.appTitle
           : appTitle // ignore: cast_nullable_to_non_nullable
               as String,
-      landingUrl: landingUrl == freezed
+      landingUrl: freezed == landingUrl
           ? _value.landingUrl
           : landingUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      appSchemes: appSchemes == freezed
-          ? _value.appSchemes
+      appSchemes: null == appSchemes
+          ? _value._appSchemes
           : appSchemes // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      userver: userver == freezed
+      userver: null == userver
           ? _value.userver
           : userver // ignore: cast_nullable_to_non_nullable
               as String,
-      iOSApp: iOSApp == freezed
+      iOSApp: null == iOSApp
           ? _value.iOSApp
           : iOSApp // ignore: cast_nullable_to_non_nullable
               as String,
-      androidApp: androidApp == freezed
+      androidApp: null == androidApp
           ? _value.androidApp
           : androidApp // ignore: cast_nullable_to_non_nullable
               as String,
-      iOSCorpApp: iOSCorpApp == freezed
+      iOSCorpApp: null == iOSCorpApp
           ? _value.iOSCorpApp
           : iOSCorpApp // ignore: cast_nullable_to_non_nullable
               as String,
-      androidCorpApp: androidCorpApp == freezed
+      androidCorpApp: null == androidCorpApp
           ? _value.androidCorpApp
           : androidCorpApp // ignore: cast_nullable_to_non_nullable
               as String,
-      rumarketApp: rumarketApp == freezed
+      rumarketApp: null == rumarketApp
           ? _value.rumarketApp
           : rumarketApp // ignore: cast_nullable_to_non_nullable
               as String,
-      theme: theme == freezed
+      theme: null == theme
           ? _value.theme
           : theme // ignore: cast_nullable_to_non_nullable
               as String,
-      minIOSVersion: minIOSVersion == freezed
+      minIOSVersion: null == minIOSVersion
           ? _value.minIOSVersion
           : minIOSVersion // ignore: cast_nullable_to_non_nullable
               as String,
-      minAndroidVersion: minAndroidVersion == freezed
+      minAndroidVersion: null == minAndroidVersion
           ? _value.minAndroidVersion
           : minAndroidVersion // ignore: cast_nullable_to_non_nullable
               as String,
-      minCorpIOSVersion: minCorpIOSVersion == freezed
+      minCorpIOSVersion: null == minCorpIOSVersion
           ? _value.minCorpIOSVersion
           : minCorpIOSVersion // ignore: cast_nullable_to_non_nullable
               as String,
-      minCorpAndroidVersion: minCorpAndroidVersion == freezed
+      minCorpAndroidVersion: null == minCorpAndroidVersion
           ? _value.minCorpAndroidVersion
           : minCorpAndroidVersion // ignore: cast_nullable_to_non_nullable
               as String,
-      freeRegistration: freeRegistration == freezed
+      freeRegistration: null == freeRegistration
           ? _value.freeRegistration
           : freeRegistration // ignore: cast_nullable_to_non_nullable
               as bool,
-      maxUploadMb: maxUploadMb == freezed
+      maxUploadMb: null == maxUploadMb
           ? _value.maxUploadMb
           : maxUploadMb // ignore: cast_nullable_to_non_nullable
               as int,
-      maxLinkedMessages: maxLinkedMessages == freezed
+      maxLinkedMessages: null == maxLinkedMessages
           ? _value.maxLinkedMessages
           : maxLinkedMessages // ignore: cast_nullable_to_non_nullable
               as int,
-      maxMessageUploads: maxMessageUploads == freezed
+      maxMessageUploads: null == maxMessageUploads
           ? _value.maxMessageUploads
           : maxMessageUploads // ignore: cast_nullable_to_non_nullable
               as int,
-      maxUsernamePartLength: maxUsernamePartLength == freezed
+      maxUsernamePartLength: null == maxUsernamePartLength
           ? _value.maxUsernamePartLength
           : maxUsernamePartLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxGroupTitleLength: maxGroupTitleLength == freezed
+      maxGroupTitleLength: null == maxGroupTitleLength
           ? _value.maxGroupTitleLength
           : maxGroupTitleLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxTeamTitleLength: maxTeamTitleLength == freezed
+      maxTeamTitleLength: null == maxTeamTitleLength
           ? _value.maxTeamTitleLength
           : maxTeamTitleLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxRoleLength: maxRoleLength == freezed
+      maxRoleLength: null == maxRoleLength
           ? _value.maxRoleLength
           : maxRoleLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxMoodLength: maxMoodLength == freezed
+      maxMoodLength: null == maxMoodLength
           ? _value.maxMoodLength
           : maxMoodLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxMessageLength: maxMessageLength == freezed
+      maxMessageLength: null == maxMessageLength
           ? _value.maxMessageLength
           : maxMessageLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxSectionLength: maxSectionLength == freezed
+      maxSectionLength: null == maxSectionLength
           ? _value.maxSectionLength
           : maxSectionLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxProjectLength: maxProjectLength == freezed
+      maxProjectLength: null == maxProjectLength
           ? _value.maxProjectLength
           : maxProjectLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxTagLength: maxTagLength == freezed
+      maxTagLength: null == maxTagLength
           ? _value.maxTagLength
           : maxTagLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxTaskTitleLength: maxTaskTitleLength == freezed
+      maxTaskTitleLength: null == maxTaskTitleLength
           ? _value.maxTaskTitleLength
           : maxTaskTitleLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxColorRuleDescriptionLength: maxColorRuleDescriptionLength == freezed
+      maxColorRuleDescriptionLength: null == maxColorRuleDescriptionLength
           ? _value.maxColorRuleDescriptionLength
           : maxColorRuleDescriptionLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxUrlLength: maxUrlLength == freezed
+      maxUrlLength: null == maxUrlLength
           ? _value.maxUrlLength
           : maxUrlLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxIntegrationCommentLength: maxIntegrationCommentLength == freezed
+      maxIntegrationCommentLength: null == maxIntegrationCommentLength
           ? _value.maxIntegrationCommentLength
           : maxIntegrationCommentLength // ignore: cast_nullable_to_non_nullable
               as int,
-      maxTeams: maxTeams == freezed
+      maxTeams: null == maxTeams
           ? _value.maxTeams
           : maxTeams // ignore: cast_nullable_to_non_nullable
               as int,
-      maxMessageSearchLimit: maxMessageSearchLimit == freezed
+      maxMessageSearchLimit: null == maxMessageSearchLimit
           ? _value.maxMessageSearchLimit
           : maxMessageSearchLimit // ignore: cast_nullable_to_non_nullable
               as int,
-      multiNodes: multiNodes == freezed
+      multiNodes: freezed == multiNodes
           ? _value.multiNodes
           : multiNodes // ignore: cast_nullable_to_non_nullable
               as bool?,
-      afkAge: afkAge == freezed
+      afkAge: null == afkAge
           ? _value.afkAge
           : afkAge // ignore: cast_nullable_to_non_nullable
               as int,
-      authByPassword: authByPassword == freezed
+      authByPassword: freezed == authByPassword
           ? _value.authByPassword
           : authByPassword // ignore: cast_nullable_to_non_nullable
               as bool?,
-      authByQrCode: authByQrCode == freezed
+      authByQrCode: freezed == authByQrCode
           ? _value.authByQrCode
           : authByQrCode // ignore: cast_nullable_to_non_nullable
               as bool?,
-      authBySms: authBySms == freezed
+      authBySms: freezed == authBySms
           ? _value.authBySms
           : authBySms // ignore: cast_nullable_to_non_nullable
               as bool?,
-      auth2fa: auth2fa == freezed
+      auth2fa: freezed == auth2fa
           ? _value.auth2fa
           : auth2fa // ignore: cast_nullable_to_non_nullable
               as bool?,
-      authByKerberos: authByKerberos == freezed
+      authByKerberos: freezed == authByKerberos
           ? _value.authByKerberos
           : authByKerberos // ignore: cast_nullable_to_non_nullable
               as bool?,
-      reCaptchaEnabled: reCaptchaEnabled == freezed
+      reCaptchaEnabled: freezed == reCaptchaEnabled
           ? _value.reCaptchaEnabled
           : reCaptchaEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      reCaptchaWebKeyV3: reCaptchaWebKeyV3 == freezed
+      reCaptchaWebKeyV3: freezed == reCaptchaWebKeyV3
           ? _value.reCaptchaWebKeyV3
           : reCaptchaWebKeyV3 // ignore: cast_nullable_to_non_nullable
               as String?,
-      reCaptchaWebKeyV2: reCaptchaWebKeyV2 == freezed
+      reCaptchaWebKeyV2: freezed == reCaptchaWebKeyV2
           ? _value.reCaptchaWebKeyV2
           : reCaptchaWebKeyV2 // ignore: cast_nullable_to_non_nullable
               as String?,
-      isPinCodeRequired: isPinCodeRequired == freezed
+      isPinCodeRequired: null == isPinCodeRequired
           ? _value.isPinCodeRequired
           : isPinCodeRequired // ignore: cast_nullable_to_non_nullable
               as bool,
-      pinCodeWrongLimit: pinCodeWrongLimit == freezed
+      pinCodeWrongLimit: null == pinCodeWrongLimit
           ? _value.pinCodeWrongLimit
           : pinCodeWrongLimit // ignore: cast_nullable_to_non_nullable
               as int,
-      oAuthServices: oAuthServices == freezed
-          ? _value.oAuthServices
+      oAuthServices: freezed == oAuthServices
+          ? _value._oAuthServices
           : oAuthServices // ignore: cast_nullable_to_non_nullable
               as List<OAuthService>?,
-      iCEServers: iCEServers == freezed
-          ? _value.iCEServers
+      iCEServers: null == iCEServers
+          ? _value._iCEServers
           : iCEServers // ignore: cast_nullable_to_non_nullable
               as List<ICEServer>,
-      iceTransportPolicy: iceTransportPolicy == freezed
+      iceTransportPolicy: freezed == iceTransportPolicy
           ? _value.iceTransportPolicy
           : iceTransportPolicy // ignore: cast_nullable_to_non_nullable
               as String?,
-      customServer: customServer == freezed
+      customServer: null == customServer
           ? _value.customServer
           : customServer // ignore: cast_nullable_to_non_nullable
               as bool,
-      installationType: installationType == freezed
+      installationType: null == installationType
           ? _value.installationType
           : installationType // ignore: cast_nullable_to_non_nullable
               as String,
-      installationTitle: installationTitle == freezed
+      installationTitle: freezed == installationTitle
           ? _value.installationTitle
           : installationTitle // ignore: cast_nullable_to_non_nullable
               as String?,
-      customAppIconName: customAppIconName == freezed
+      customAppIconName: freezed == customAppIconName
           ? _value.customAppIconName
           : customAppIconName // ignore: cast_nullable_to_non_nullable
               as String?,
-      appLoginBackground: appLoginBackground == freezed
+      appLoginBackground: freezed == appLoginBackground
           ? _value.appLoginBackground
           : appLoginBackground // ignore: cast_nullable_to_non_nullable
               as String?,
-      webLoginBackground: webLoginBackground == freezed
+      webLoginBackground: freezed == webLoginBackground
           ? _value.webLoginBackground
           : webLoginBackground // ignore: cast_nullable_to_non_nullable
               as String?,
-      isTesting: isTesting == freezed
+      isTesting: null == isTesting
           ? _value.isTesting
           : isTesting // ignore: cast_nullable_to_non_nullable
               as bool,
-      metrika: metrika == freezed
+      metrika: null == metrika
           ? _value.metrika
           : metrika // ignore: cast_nullable_to_non_nullable
               as String,
-      amplitudeApiKey: amplitudeApiKey == freezed
+      amplitudeApiKey: freezed == amplitudeApiKey
           ? _value.amplitudeApiKey
           : amplitudeApiKey // ignore: cast_nullable_to_non_nullable
               as String?,
-      minSearchLength: minSearchLength == freezed
+      minSearchLength: null == minSearchLength
           ? _value.minSearchLength
           : minSearchLength // ignore: cast_nullable_to_non_nullable
               as int,
-      resendTimeout: resendTimeout == freezed
+      resendTimeout: null == resendTimeout
           ? _value.resendTimeout
           : resendTimeout // ignore: cast_nullable_to_non_nullable
               as int,
-      sentryDsnJS: sentryDsnJS == freezed
+      sentryDsnJS: null == sentryDsnJS
           ? _value.sentryDsnJS
           : sentryDsnJS // ignore: cast_nullable_to_non_nullable
               as String,
-      serverDrafts: serverDrafts == freezed
+      serverDrafts: null == serverDrafts
           ? _value.serverDrafts
           : serverDrafts // ignore: cast_nullable_to_non_nullable
               as bool,
-      firebaseAppId: firebaseAppId == freezed
+      firebaseAppId: null == firebaseAppId
           ? _value.firebaseAppId
           : firebaseAppId // ignore: cast_nullable_to_non_nullable
               as String,
-      firebaseSenderId: firebaseSenderId == freezed
+      firebaseSenderId: null == firebaseSenderId
           ? _value.firebaseSenderId
           : firebaseSenderId // ignore: cast_nullable_to_non_nullable
               as String,
-      firebaseApiKey: firebaseApiKey == freezed
+      firebaseApiKey: null == firebaseApiKey
           ? _value.firebaseApiKey
           : firebaseApiKey // ignore: cast_nullable_to_non_nullable
               as String,
-      firebaseAuthDomain: firebaseAuthDomain == freezed
+      firebaseAuthDomain: null == firebaseAuthDomain
           ? _value.firebaseAuthDomain
           : firebaseAuthDomain // ignore: cast_nullable_to_non_nullable
               as String,
-      firebaseDatabaseUrl: firebaseDatabaseUrl == freezed
+      firebaseDatabaseUrl: null == firebaseDatabaseUrl
           ? _value.firebaseDatabaseUrl
           : firebaseDatabaseUrl // ignore: cast_nullable_to_non_nullable
               as String,
-      firebaseProjectId: firebaseProjectId == freezed
+      firebaseProjectId: null == firebaseProjectId
           ? _value.firebaseProjectId
           : firebaseProjectId // ignore: cast_nullable_to_non_nullable
               as String,
-      firebaseStorageBucket: firebaseStorageBucket == freezed
+      firebaseStorageBucket: null == firebaseStorageBucket
           ? _value.firebaseStorageBucket
           : firebaseStorageBucket // ignore: cast_nullable_to_non_nullable
               as String,
-      callsVersion: callsVersion == freezed
+      callsVersion: null == callsVersion
           ? _value.callsVersion
           : callsVersion // ignore: cast_nullable_to_non_nullable
               as int,
-      callsAudioEnabled: callsAudioEnabled == freezed
+      callsAudioEnabled: null == callsAudioEnabled
           ? _value.callsAudioEnabled
           : callsAudioEnabled // ignore: cast_nullable_to_non_nullable
               as bool,
-      callsVideoEnabled: callsVideoEnabled == freezed
+      callsVideoEnabled: null == callsVideoEnabled
           ? _value.callsVideoEnabled
           : callsVideoEnabled // ignore: cast_nullable_to_non_nullable
               as bool,
-      vcsEnabled: vcsEnabled == freezed
+      vcsEnabled: null == vcsEnabled
           ? _value.vcsEnabled
           : vcsEnabled // ignore: cast_nullable_to_non_nullable
               as bool,
-      mobileCalls: mobileCalls == freezed
+      mobileCalls: null == mobileCalls
           ? _value.mobileCalls
           : mobileCalls // ignore: cast_nullable_to_non_nullable
               as bool,
-      callsRecord: callsRecord == freezed
+      callsRecord: null == callsRecord
           ? _value.callsRecord
           : callsRecord // ignore: cast_nullable_to_non_nullable
               as bool,
-      onlyOneDevicePerCall: onlyOneDevicePerCall == freezed
+      onlyOneDevicePerCall: freezed == onlyOneDevicePerCall
           ? _value.onlyOneDevicePerCall
           : onlyOneDevicePerCall // ignore: cast_nullable_to_non_nullable
               as bool?,
-      maxParticipantsPerCall: maxParticipantsPerCall == freezed
+      maxParticipantsPerCall: freezed == maxParticipantsPerCall
           ? _value.maxParticipantsPerCall
           : maxParticipantsPerCall // ignore: cast_nullable_to_non_nullable
               as int?,
-      safariPushId: safariPushId == freezed
+      safariPushId: null == safariPushId
           ? _value.safariPushId
           : safariPushId // ignore: cast_nullable_to_non_nullable
               as String,
-      messageUploads: messageUploads == freezed
+      messageUploads: null == messageUploads
           ? _value.messageUploads
           : messageUploads // ignore: cast_nullable_to_non_nullable
               as bool,
-      terms: terms == freezed
+      terms: null == terms
           ? _value.terms
           : terms // ignore: cast_nullable_to_non_nullable
               as Terms,
-      singleGroupTeams: singleGroupTeams == freezed
+      singleGroupTeams: null == singleGroupTeams
           ? _value.singleGroupTeams
           : singleGroupTeams // ignore: cast_nullable_to_non_nullable
               as bool,
-      wikiPages: wikiPages == freezed
+      wikiPages: null == wikiPages
           ? _value.wikiPages
           : wikiPages // ignore: cast_nullable_to_non_nullable
               as bool,
-      allowAdminMute: allowAdminMute == freezed
+      allowAdminMute: freezed == allowAdminMute
           ? _value.allowAdminMute
           : allowAdminMute // ignore: cast_nullable_to_non_nullable
               as bool?,
-      defaultWallpaper: defaultWallpaper == freezed
+      defaultWallpaper: freezed == defaultWallpaper
           ? _value.defaultWallpaper
           : defaultWallpaper // ignore: cast_nullable_to_non_nullable
               as Wallpaper?,
-      supportEmail: supportEmail == freezed
+      supportEmail: null == supportEmail
           ? _value.supportEmail
           : supportEmail // ignore: cast_nullable_to_non_nullable
               as String,
-      customTheme: customTheme == freezed
+      customTheme: null == customTheme
           ? _value.customTheme
           : customTheme // ignore: cast_nullable_to_non_nullable
               as bool,
-      taskChecklist: taskChecklist == freezed
+      taskChecklist: null == taskChecklist
           ? _value.taskChecklist
           : taskChecklist // ignore: cast_nullable_to_non_nullable
               as bool,
-      readonlyGroups: readonlyGroups == freezed
+      readonlyGroups: null == readonlyGroups
           ? _value.readonlyGroups
           : readonlyGroups // ignore: cast_nullable_to_non_nullable
               as bool,
-      taskDashboard: taskDashboard == freezed
+      taskDashboard: null == taskDashboard
           ? _value.taskDashboard
           : taskDashboard // ignore: cast_nullable_to_non_nullable
               as bool,
-      taskMessages: taskMessages == freezed
+      taskMessages: null == taskMessages
           ? _value.taskMessages
           : taskMessages // ignore: cast_nullable_to_non_nullable
               as bool,
-      taskPublic: taskPublic == freezed
+      taskPublic: null == taskPublic
           ? _value.taskPublic
           : taskPublic // ignore: cast_nullable_to_non_nullable
               as bool,
-      taskTags: taskTags == freezed
+      taskTags: null == taskTags
           ? _value.taskTags
           : taskTags // ignore: cast_nullable_to_non_nullable
               as bool,
-      calls: calls == freezed
+      calls: null == calls
           ? _value.calls
           : calls // ignore: cast_nullable_to_non_nullable
               as bool,
-      billing: billing == freezed
+      billing: freezed == billing
           ? _value.billing
           : billing // ignore: cast_nullable_to_non_nullable
               as bool?,
-      minAppVersion: minAppVersion == freezed
+      minAppVersion: null == minAppVersion
           ? _value.minAppVersion
           : minAppVersion // ignore: cast_nullable_to_non_nullable
               as String,
-      fileExtensionWhitelist: fileExtensionWhitelist == freezed
-          ? _value.fileExtensionWhitelist
+      fileExtensionWhitelist: freezed == fileExtensionWhitelist
+          ? _value._fileExtensionWhitelist
           : fileExtensionWhitelist // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      fileExtensionBlacklist: fileExtensionBlacklist == freezed
-          ? _value.fileExtensionBlacklist
+      fileExtensionBlacklist: freezed == fileExtensionBlacklist
+          ? _value._fileExtensionBlacklist
           : fileExtensionBlacklist // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      fileExtensionWhitelistPriority: fileExtensionWhitelistPriority == freezed
+      fileExtensionWhitelistPriority: freezed == fileExtensionWhitelistPriority
           ? _value.fileExtensionWhitelistPriority
           : fileExtensionWhitelistPriority // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -2290,7 +1976,7 @@ class _$_Features implements _Features {
       @JsonKey(name: 'landing_url')
           this.landingUrl,
       @JsonKey(name: 'app_schemes')
-          required this.appSchemes,
+          required final List<String> appSchemes,
       @JsonKey(name: 'userver')
           required this.userver,
       @JsonKey(name: 'ios_app')
@@ -2376,9 +2062,9 @@ class _$_Features implements _Features {
       @JsonKey(name: 'pin_code_wrong_limit')
           required this.pinCodeWrongLimit,
       @JsonKey(name: 'oauth_services')
-          this.oAuthServices,
+          final List<OAuthService>? oAuthServices,
       @JsonKey(name: 'ice_servers')
-          required this.iCEServers,
+          required final List<ICEServer> iCEServers,
       @JsonKey(name: 'ice_transport_policy')
           this.iceTransportPolicy,
       @JsonKey(name: 'custom_server')
@@ -2484,527 +2170,568 @@ class _$_Features implements _Features {
       @JsonKey(name: 'min_app_version')
           required this.minAppVersion,
       @JsonKey(name: 'file_extension_whitelist')
-          this.fileExtensionWhitelist,
+          final List<String>? fileExtensionWhitelist,
       @JsonKey(name: 'file_extension_blacklist')
-          this.fileExtensionBlacklist,
+          final List<String>? fileExtensionBlacklist,
       @JsonKey(name: 'file_extension_whitelist_priority')
-          this.fileExtensionWhitelistPriority});
+          this.fileExtensionWhitelistPriority})
+      : _appSchemes = appSchemes,
+        _oAuthServices = oAuthServices,
+        _iCEServers = iCEServers,
+        _fileExtensionWhitelist = fileExtensionWhitelist,
+        _fileExtensionBlacklist = fileExtensionBlacklist;
 
-  factory _$_Features.fromJson(Map<String, dynamic> json) => _$$_FeaturesFromJson(json);
-
-  @override
+  factory _$_Features.fromJson(Map<String, dynamic> json) =>
+      _$$_FeaturesFromJson(json);
 
   /// Current host.
+  @override
   @JsonKey(name: 'host')
   final String host;
-  @override
 
   /// Build/revision of server side.
+  @override
   @JsonKey(name: 'build')
   final String build;
-  @override
 
   /// Desktop application version.
+  @override
   @JsonKey(name: 'desktop_version')
   final String desktopVersion;
-  @override
 
   /// Webclient version.
+  @override
   @JsonKey(name: 'front_version')
   final String frontVersion;
-  @override
 
   /// Application title.
+  @override
   @JsonKey(name: 'app_title')
   final String appTitle;
-  @override
 
   /// Landing page address, if any.
+  @override
   @JsonKey(name: 'landing_url')
   final String? landingUrl;
-  @override
 
   /// Local applications urls.
-  @JsonKey(name: 'app_schemes')
-  final List<String> appSchemes;
+  final List<String> _appSchemes;
+
+  /// Local applications urls.
   @override
+  @JsonKey(name: 'app_schemes')
+  List<String> get appSchemes {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_appSchemes);
+  }
 
   /// Static files server address.
+  @override
   @JsonKey(name: 'userver')
   final String userver;
-  @override
 
   /// Link to AppStore.
+  @override
   @JsonKey(name: 'ios_app')
   final String iOSApp;
-  @override
 
   /// Link to Google Play.
+  @override
   @JsonKey(name: 'android_app')
   final String androidApp;
-  @override
 
   /// Link to AppStore for corporate app.
+  @override
   @JsonKey(name: 'ios_corp_app')
   final String iOSCorpApp;
-  @override
 
   /// Link to Google Play for corporate app.
+  @override
   @JsonKey(name: 'android_corp_app')
   final String androidCorpApp;
-  @override
 
   /// Link to Rumarket store.
+  @override
   @JsonKey(name: 'rumarket_app')
   final String rumarketApp;
-  @override
 
   /// Default UI theme.
+  @override
   @JsonKey(name: 'theme')
   final String theme;
-  @override
 
   /// Minimal iOS application version required for this server. Used for breaking changes.
+  @override
   @JsonKey(name: 'min_ios_version')
   final String minIOSVersion;
-  @override
 
   /// Minimal android application version required for this server. Used for breaking changes.
+  @override
   @JsonKey(name: 'min_android_version')
   final String minAndroidVersion;
-  @override
 
   /// Minimal iOS corp application version required for this server. Used for breaking changes.
+  @override
   @JsonKey(name: 'min_corp_ios_version')
   final String minCorpIOSVersion;
-  @override
 
   /// Minimal android corp application version required for this server. Used for breaking changes.
+  @override
   @JsonKey(name: 'min_corp_android_version')
   final String minCorpAndroidVersion;
-  @override
 
   /// Free registration allowed.
+  @override
   @JsonKey(name: 'free_registration')
   final bool freeRegistration;
-  @override
 
   /// Maximum size of user's upload.
+  @override
   @JsonKey(name: 'max_upload_mb')
   final int maxUploadMb;
-  @override
 
   /// Maximum number of forwarded messages.
+  @override
   @JsonKey(name: 'max_linked_messages')
   final int maxLinkedMessages;
-  @override
 
   /// Maximum number of message uploads.
+  @override
   @JsonKey(name: 'max_message_uploads')
   final int maxMessageUploads;
-  @override
 
   /// Maximum chars for: family_name, given_name, patronymic if any.
+  @override
   @JsonKey(name: 'max_username_part_length')
   final int maxUsernamePartLength;
-  @override
 
   /// Maximum chars for group chat name.
+  @override
   @JsonKey(name: 'max_group_title_length')
   final int maxGroupTitleLength;
-  @override
 
   /// Maximum chars for team name.
+  @override
   @JsonKey(name: 'max_team_title_length')
   final int maxTeamTitleLength;
-  @override
 
   /// Maximum chars for role in team.
+  @override
   @JsonKey(name: 'max_role_length')
   final int maxRoleLength;
-  @override
 
   /// Maximum chars for mood in team.
+  @override
   @JsonKey(name: 'max_mood_length')
   final int maxMoodLength;
-  @override
 
   /// Maximum chars for text message.
+  @override
   @JsonKey(name: 'max_message_length')
   final int maxMessageLength;
-  @override
 
   /// Maximum length for contact's sections names.
+  @override
   @JsonKey(name: 'max_section_length')
   final int maxSectionLength;
-  @override
 
   /// Maximum length for project.
+  @override
   @JsonKey(name: 'max_project_length')
   final int maxProjectLength;
-  @override
 
   /// Maximum length for tags.
+  @override
   @JsonKey(name: 'max_tag_length')
   final int maxTagLength;
-  @override
 
   /// Maximum length for task title.
+  @override
   @JsonKey(name: 'max_task_title_length')
   final int maxTaskTitleLength;
-  @override
 
   /// Maximum length for ColorRule description.
+  @override
   @JsonKey(name: 'max_color_rule_description_length')
   final int maxColorRuleDescriptionLength;
-  @override
 
   /// Maximum length for urls.
+  @override
   @JsonKey(name: 'max_url_length')
   final int maxUrlLength;
-  @override
 
   /// Maximum length for Integration comment.
+  @override
   @JsonKey(name: 'max_integration_comment_length')
   final int maxIntegrationCommentLength;
-  @override
 
   /// Maximum teams for one account.
+  @override
   @JsonKey(name: 'max_teams')
   final int maxTeams;
-  @override
 
   /// Maximum search result.
+  @override
   @JsonKey(name: 'max_message_search_limit')
   final int maxMessageSearchLimit;
-  @override
 
   /// Multi nodes mode (federation) enabled.
+  @override
   @JsonKey(name: 'multi_nodes')
   final bool? multiNodes;
-  @override
 
   /// Max inactivity seconds.
+  @override
   @JsonKey(name: 'afk_age')
   final int afkAge;
-  @override
 
   /// Password authentication enabled.
+  @override
   @JsonKey(name: 'auth_by_password')
   final bool? authByPassword;
-  @override
 
   /// QR-code / link authentication enabled.
+  @override
   @JsonKey(name: 'auth_by_qr_code')
   final bool? authByQrCode;
-  @override
 
   /// SMS authentication enabled.
+  @override
   @JsonKey(name: 'auth_by_sms')
   final bool? authBySms;
-  @override
 
   /// Two-factor authentication (2FA) enabled.
+  @override
   @JsonKey(name: 'auth_2fa')
   final bool? auth2fa;
-  @override
 
   /// Kerberos authentication enabled.
+  @override
   @JsonKey(name: 'auth_by_kerberos')
   final bool? authByKerberos;
-  @override
 
   /// Captcha enabled.
+  @override
   @JsonKey(name: 'is_recaptcha_enabled')
   final bool? reCaptchaEnabled;
-  @override
 
   /// ReCaptcha Web Key V3.
+  @override
   @JsonKey(name: 'recaptcha_web_key_v3')
   final String? reCaptchaWebKeyV3;
-  @override
 
   /// ReCaptcha Web Key V2.
+  @override
   @JsonKey(name: 'recaptcha_web_key_v2')
   final String? reCaptchaWebKeyV2;
-  @override
 
   /// Mandatory setting of the pin code in the application.
+  @override
   @JsonKey(name: 'is_pin_code_required')
   final bool isPinCodeRequired;
-  @override
 
   /// Max number of attempts to enter an invalid PIN code.
+  @override
   @JsonKey(name: 'pin_code_wrong_limit')
   final int pinCodeWrongLimit;
-  @override
 
   /// External services.
-  @JsonKey(name: 'oauth_services')
-  final List<OAuthService>? oAuthServices;
+  final List<OAuthService>? _oAuthServices;
+
+  /// External services.
   @override
+  @JsonKey(name: 'oauth_services')
+  List<OAuthService>? get oAuthServices {
+    final value = _oAuthServices;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   /// ICE servers for WebRTC.
-  @JsonKey(name: 'ice_servers')
-  final List<ICEServer> iCEServers;
+  final List<ICEServer> _iCEServers;
+
+  /// ICE servers for WebRTC.
   @override
+  @JsonKey(name: 'ice_servers')
+  List<ICEServer> get iCEServers {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_iCEServers);
+  }
 
   /// IceTransportPolicy a ice transport policy.
+  @override
   @JsonKey(name: 'ice_transport_policy')
   final String? iceTransportPolicy;
-  @override
 
   /// True for premise installation.
+  @override
   @JsonKey(name: 'custom_server')
   final bool customServer;
-  @override
 
   /// Name of installation.
+  @override
   @JsonKey(name: 'installation_type')
   final String installationType;
-  @override
 
   /// Installation title, used on login screen.
+  @override
   @JsonKey(name: 'installation_title')
   final String? installationTitle;
-  @override
 
   /// Custom application icon name, if any.
+  @override
   @JsonKey(name: 'custom_app_icon_name')
   final String? customAppIconName;
-  @override
 
   /// AppBackground image url, if any.
+  @override
   @JsonKey(name: 'app_login_background')
   final String? appLoginBackground;
-  @override
 
   /// WebBackground image url, if any.
+  @override
   @JsonKey(name: 'web_login_background')
   final String? webLoginBackground;
-  @override
 
   /// Testing installation.
+  @override
   @JsonKey(name: 'is_testing')
   final bool isTesting;
-  @override
 
   /// Yandex metrika counter id.
+  @override
   @JsonKey(name: 'metrika')
   final String metrika;
-  @override
 
   /// Amplitude api key.
+  @override
   @JsonKey(name: 'amplitude_api_key')
   final String? amplitudeApiKey;
-  @override
 
   /// Minimal chars number for starting global search.
+  @override
   @JsonKey(name: 'min_search_length')
   final int minSearchLength;
-  @override
 
   /// Resend message in n seconds if no confirmation from server given.
+  @override
   @JsonKey(name: 'resend_timeout')
   final int resendTimeout;
-  @override
 
   /// Frontend sentry.io settings.
+  @override
   @JsonKey(name: 'sentry_dsn_js')
   final String sentryDsnJS;
-  @override
 
   /// Message drafts saved on server.
+  @override
   @JsonKey(name: 'server_drafts')
   final bool serverDrafts;
-  @override
 
   /// Firebase settings for web-push notifications.
+  @override
   @JsonKey(name: 'firebase_app_id')
   final String firebaseAppId;
-  @override
 
   /// Firebase settings for web-push notifications.
+  @override
   @JsonKey(name: 'firebase_sender_id')
   final String firebaseSenderId;
-  @override
 
   /// Firebase settings for web-push notifications.
+  @override
   @JsonKey(name: 'firebase_api_key')
   final String firebaseApiKey;
-  @override
 
   /// Firebase settings for web-push notifications.
+  @override
   @JsonKey(name: 'firebase_auth_domain')
   final String firebaseAuthDomain;
-  @override
 
   /// Firebase settings for web-push notifications.
+  @override
   @JsonKey(name: 'firebase_database_url')
   final String firebaseDatabaseUrl;
-  @override
 
   /// Firebase settings for web-push notifications.
+  @override
   @JsonKey(name: 'firebase_project_id')
   final String firebaseProjectId;
-  @override
 
   /// Firebase settings for web-push notifications.
+  @override
   @JsonKey(name: 'firebase_storage_bucket')
   final String firebaseStorageBucket;
-  @override
 
   /// Calls version. 0 = disabled, 1 = audio only, 2 = audio+video Deprecated: use CallsAudioEnabled and CallsVideoEnabled.
+  @override
   @Deprecated(
       'Calls version. 0 = disabled, 1 = audio only, 2 = audio+video Deprecated: use CallsAudioEnabled and CallsVideoEnabled.')
   @JsonKey(name: 'calls_version')
   final int callsVersion;
-  @override
 
   /// CallsAudioEnabled enabled or disabled audio calls.
+  @override
   @JsonKey(name: 'calls_audio_enabled')
   final bool callsAudioEnabled;
-  @override
 
   /// CallsVideoEnabled enabled or disabled video calls.
+  @override
   @JsonKey(name: 'calls_video_enabled')
   final bool callsVideoEnabled;
-  @override
 
   /// VcsEnabled enabled or disabled vcs.
+  @override
   @JsonKey(name: 'vcs_enabled')
   final bool vcsEnabled;
-  @override
 
   /// Calls functions enabled for mobile applications.
+  @override
   @JsonKey(name: 'mobile_calls')
   final bool mobileCalls;
-  @override
 
   /// Calls record enabled.
+  @override
   @JsonKey(name: 'calls_record')
   final bool callsRecord;
-  @override
 
   /// Disallow call from multiple devices. Experimental.
+  @override
   @JsonKey(name: 'only_one_device_per_call')
   final bool? onlyOneDevicePerCall;
-  @override
 
   /// Maximum number of participants per call.
+  @override
   @JsonKey(name: 'max_participants_per_call')
   final int? maxParticipantsPerCall;
-  @override
 
   /// Safari push id for web-push notifications.
+  @override
   @JsonKey(name: 'safari_push_id')
   final String safariPushId;
-  @override
 
   /// Multiple message uploads.
+  @override
   @JsonKey(name: 'message_uploads')
   final bool messageUploads;
-  @override
 
   /// Team entity naming. Experimental.
+  @override
   @JsonKey(name: 'terms')
   final Terms terms;
-  @override
 
   /// Cross team communication. Experimental.
+  @override
   @JsonKey(name: 'single_group_teams')
   final bool singleGroupTeams;
-  @override
 
   /// Wiki pages in chats. Experimental.
+  @override
   @JsonKey(name: 'wiki_pages')
   final bool wikiPages;
-  @override
 
   /// Wiki pages in chats. Experimental.
+  @override
   @JsonKey(name: 'allow_admin_mute')
   final bool? allowAdminMute;
-  @override
 
   /// Default wallpaper url for mobile apps, if any.
+  @override
   @JsonKey(name: 'default_wallpaper')
   final Wallpaper? defaultWallpaper;
-  @override
 
   /// Support email.
+  @override
   @JsonKey(name: 'support_email')
   final String supportEmail;
-  @override
 
   /// True if server has custom theme.
+  @override
   @JsonKey(name: 'custom_theme')
   final bool customTheme;
-  @override
 
   /// Deprecated.
+  @override
   @Deprecated('Deprecated.')
   @JsonKey(name: 'task_checklist')
   final bool taskChecklist;
-  @override
 
   /// Deprecated.
+  @override
   @Deprecated('Deprecated.')
   @JsonKey(name: 'readonly_groups')
   final bool readonlyGroups;
-  @override
 
   /// Deprecated.
+  @override
   @Deprecated('Deprecated.')
   @JsonKey(name: 'task_dashboard')
   final bool taskDashboard;
-  @override
 
   /// Deprecated.
+  @override
   @Deprecated('Deprecated.')
   @JsonKey(name: 'task_messages')
   final bool taskMessages;
-  @override
 
   /// Deprecated.
+  @override
   @Deprecated('Deprecated.')
   @JsonKey(name: 'task_public')
   final bool taskPublic;
-  @override
 
   /// Deprecated.
+  @override
   @Deprecated('Deprecated.')
   @JsonKey(name: 'task_tags')
   final bool taskTags;
-  @override
 
   /// Deprecated.
+  @override
   @Deprecated('Deprecated.')
   @JsonKey(name: 'calls')
   final bool calls;
-  @override
 
   /// Billing services integrations.
+  @override
   @JsonKey(name: 'billing')
   final bool? billing;
-  @override
 
   /// Deprecated.
+  @override
   @Deprecated('Deprecated.')
   @JsonKey(name: 'min_app_version')
   final String minAppVersion;
-  @override
 
   /// File Extension Whitelist.
-  @JsonKey(name: 'file_extension_whitelist')
-  final List<String>? fileExtensionWhitelist;
+  final List<String>? _fileExtensionWhitelist;
+
+  /// File Extension Whitelist.
   @override
+  @JsonKey(name: 'file_extension_whitelist')
+  List<String>? get fileExtensionWhitelist {
+    final value = _fileExtensionWhitelist;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   /// File Extension Blacklist.
-  @JsonKey(name: 'file_extension_blacklist')
-  final List<String>? fileExtensionBlacklist;
+  final List<String>? _fileExtensionBlacklist;
+
+  /// File Extension Blacklist.
   @override
+  @JsonKey(name: 'file_extension_blacklist')
+  List<String>? get fileExtensionBlacklist {
+    final value = _fileExtensionBlacklist;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   /// File Extension Whitelist Priority.
+  @override
   @JsonKey(name: 'file_extension_whitelist_priority')
   final bool? fileExtensionWhitelistPriority;
 
@@ -3016,483 +2743,487 @@ class _$_Features implements _Features {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Features &&
-            (identical(other.host, host) || const DeepCollectionEquality().equals(other.host, host)) &&
-            (identical(other.build, build) || const DeepCollectionEquality().equals(other.build, build)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_Features &&
+            (identical(other.host, host) || other.host == host) &&
+            (identical(other.build, build) || other.build == build) &&
             (identical(other.desktopVersion, desktopVersion) ||
-                const DeepCollectionEquality().equals(other.desktopVersion, desktopVersion)) &&
+                other.desktopVersion == desktopVersion) &&
             (identical(other.frontVersion, frontVersion) ||
-                const DeepCollectionEquality().equals(other.frontVersion, frontVersion)) &&
-            (identical(other.appTitle, appTitle) || const DeepCollectionEquality().equals(other.appTitle, appTitle)) &&
+                other.frontVersion == frontVersion) &&
+            (identical(other.appTitle, appTitle) ||
+                other.appTitle == appTitle) &&
             (identical(other.landingUrl, landingUrl) ||
-                const DeepCollectionEquality().equals(other.landingUrl, landingUrl)) &&
-            (identical(other.appSchemes, appSchemes) ||
-                const DeepCollectionEquality().equals(other.appSchemes, appSchemes)) &&
-            (identical(other.userver, userver) || const DeepCollectionEquality().equals(other.userver, userver)) &&
-            (identical(other.iOSApp, iOSApp) || const DeepCollectionEquality().equals(other.iOSApp, iOSApp)) &&
+                other.landingUrl == landingUrl) &&
+            const DeepCollectionEquality()
+                .equals(other._appSchemes, _appSchemes) &&
+            (identical(other.userver, userver) || other.userver == userver) &&
+            (identical(other.iOSApp, iOSApp) || other.iOSApp == iOSApp) &&
             (identical(other.androidApp, androidApp) ||
-                const DeepCollectionEquality().equals(other.androidApp, androidApp)) &&
+                other.androidApp == androidApp) &&
             (identical(other.iOSCorpApp, iOSCorpApp) ||
-                const DeepCollectionEquality().equals(other.iOSCorpApp, iOSCorpApp)) &&
+                other.iOSCorpApp == iOSCorpApp) &&
             (identical(other.androidCorpApp, androidCorpApp) ||
-                const DeepCollectionEquality().equals(other.androidCorpApp, androidCorpApp)) &&
+                other.androidCorpApp == androidCorpApp) &&
             (identical(other.rumarketApp, rumarketApp) ||
-                const DeepCollectionEquality().equals(other.rumarketApp, rumarketApp)) &&
-            (identical(other.theme, theme) || const DeepCollectionEquality().equals(other.theme, theme)) &&
+                other.rumarketApp == rumarketApp) &&
+            (identical(other.theme, theme) || other.theme == theme) &&
             (identical(other.minIOSVersion, minIOSVersion) ||
-                const DeepCollectionEquality().equals(other.minIOSVersion, minIOSVersion)) &&
+                other.minIOSVersion == minIOSVersion) &&
             (identical(other.minAndroidVersion, minAndroidVersion) ||
-                const DeepCollectionEquality().equals(other.minAndroidVersion, minAndroidVersion)) &&
+                other.minAndroidVersion == minAndroidVersion) &&
             (identical(other.minCorpIOSVersion, minCorpIOSVersion) ||
-                const DeepCollectionEquality().equals(other.minCorpIOSVersion, minCorpIOSVersion)) &&
+                other.minCorpIOSVersion == minCorpIOSVersion) &&
             (identical(other.minCorpAndroidVersion, minCorpAndroidVersion) ||
-                const DeepCollectionEquality().equals(other.minCorpAndroidVersion, minCorpAndroidVersion)) &&
+                other.minCorpAndroidVersion == minCorpAndroidVersion) &&
             (identical(other.freeRegistration, freeRegistration) ||
-                const DeepCollectionEquality().equals(other.freeRegistration, freeRegistration)) &&
+                other.freeRegistration == freeRegistration) &&
             (identical(other.maxUploadMb, maxUploadMb) ||
-                const DeepCollectionEquality().equals(other.maxUploadMb, maxUploadMb)) &&
+                other.maxUploadMb == maxUploadMb) &&
             (identical(other.maxLinkedMessages, maxLinkedMessages) ||
-                const DeepCollectionEquality().equals(other.maxLinkedMessages, maxLinkedMessages)) &&
+                other.maxLinkedMessages == maxLinkedMessages) &&
             (identical(other.maxMessageUploads, maxMessageUploads) ||
-                const DeepCollectionEquality().equals(other.maxMessageUploads, maxMessageUploads)) &&
+                other.maxMessageUploads == maxMessageUploads) &&
             (identical(other.maxUsernamePartLength, maxUsernamePartLength) ||
-                const DeepCollectionEquality().equals(other.maxUsernamePartLength, maxUsernamePartLength)) &&
+                other.maxUsernamePartLength == maxUsernamePartLength) &&
             (identical(other.maxGroupTitleLength, maxGroupTitleLength) ||
-                const DeepCollectionEquality().equals(other.maxGroupTitleLength, maxGroupTitleLength)) &&
+                other.maxGroupTitleLength == maxGroupTitleLength) &&
             (identical(other.maxTeamTitleLength, maxTeamTitleLength) ||
-                const DeepCollectionEquality().equals(other.maxTeamTitleLength, maxTeamTitleLength)) &&
+                other.maxTeamTitleLength == maxTeamTitleLength) &&
             (identical(other.maxRoleLength, maxRoleLength) ||
-                const DeepCollectionEquality().equals(other.maxRoleLength, maxRoleLength)) &&
+                other.maxRoleLength == maxRoleLength) &&
             (identical(other.maxMoodLength, maxMoodLength) ||
-                const DeepCollectionEquality().equals(other.maxMoodLength, maxMoodLength)) &&
+                other.maxMoodLength == maxMoodLength) &&
             (identical(other.maxMessageLength, maxMessageLength) ||
-                const DeepCollectionEquality().equals(other.maxMessageLength, maxMessageLength)) &&
+                other.maxMessageLength == maxMessageLength) &&
             (identical(other.maxSectionLength, maxSectionLength) ||
-                const DeepCollectionEquality().equals(other.maxSectionLength, maxSectionLength)) &&
+                other.maxSectionLength == maxSectionLength) &&
             (identical(other.maxProjectLength, maxProjectLength) ||
-                const DeepCollectionEquality().equals(other.maxProjectLength, maxProjectLength)) &&
+                other.maxProjectLength == maxProjectLength) &&
             (identical(other.maxTagLength, maxTagLength) ||
-                const DeepCollectionEquality().equals(other.maxTagLength, maxTagLength)) &&
+                other.maxTagLength == maxTagLength) &&
             (identical(other.maxTaskTitleLength, maxTaskTitleLength) ||
-                const DeepCollectionEquality().equals(other.maxTaskTitleLength, maxTaskTitleLength)) &&
+                other.maxTaskTitleLength == maxTaskTitleLength) &&
             (identical(other.maxColorRuleDescriptionLength, maxColorRuleDescriptionLength) ||
-                const DeepCollectionEquality()
-                    .equals(other.maxColorRuleDescriptionLength, maxColorRuleDescriptionLength)) &&
+                other.maxColorRuleDescriptionLength ==
+                    maxColorRuleDescriptionLength) &&
             (identical(other.maxUrlLength, maxUrlLength) ||
-                const DeepCollectionEquality().equals(other.maxUrlLength, maxUrlLength)) &&
+                other.maxUrlLength == maxUrlLength) &&
             (identical(other.maxIntegrationCommentLength, maxIntegrationCommentLength) ||
-                const DeepCollectionEquality()
-                    .equals(other.maxIntegrationCommentLength, maxIntegrationCommentLength)) &&
-            (identical(other.maxTeams, maxTeams) || const DeepCollectionEquality().equals(other.maxTeams, maxTeams)) &&
+                other.maxIntegrationCommentLength ==
+                    maxIntegrationCommentLength) &&
+            (identical(other.maxTeams, maxTeams) ||
+                other.maxTeams == maxTeams) &&
             (identical(other.maxMessageSearchLimit, maxMessageSearchLimit) ||
-                const DeepCollectionEquality().equals(other.maxMessageSearchLimit, maxMessageSearchLimit)) &&
+                other.maxMessageSearchLimit == maxMessageSearchLimit) &&
             (identical(other.multiNodes, multiNodes) ||
-                const DeepCollectionEquality().equals(other.multiNodes, multiNodes)) &&
-            (identical(other.afkAge, afkAge) || const DeepCollectionEquality().equals(other.afkAge, afkAge)) &&
+                other.multiNodes == multiNodes) &&
+            (identical(other.afkAge, afkAge) || other.afkAge == afkAge) &&
             (identical(other.authByPassword, authByPassword) ||
-                const DeepCollectionEquality().equals(other.authByPassword, authByPassword)) &&
+                other.authByPassword == authByPassword) &&
             (identical(other.authByQrCode, authByQrCode) ||
-                const DeepCollectionEquality().equals(other.authByQrCode, authByQrCode)) &&
+                other.authByQrCode == authByQrCode) &&
             (identical(other.authBySms, authBySms) ||
-                const DeepCollectionEquality().equals(other.authBySms, authBySms)) &&
-            (identical(other.auth2fa, auth2fa) || const DeepCollectionEquality().equals(other.auth2fa, auth2fa)) &&
+                other.authBySms == authBySms) &&
+            (identical(other.auth2fa, auth2fa) || other.auth2fa == auth2fa) &&
             (identical(other.authByKerberos, authByKerberos) ||
-                const DeepCollectionEquality().equals(other.authByKerberos, authByKerberos)) &&
+                other.authByKerberos == authByKerberos) &&
             (identical(other.reCaptchaEnabled, reCaptchaEnabled) ||
-                const DeepCollectionEquality().equals(other.reCaptchaEnabled, reCaptchaEnabled)) &&
+                other.reCaptchaEnabled == reCaptchaEnabled) &&
             (identical(other.reCaptchaWebKeyV3, reCaptchaWebKeyV3) ||
-                const DeepCollectionEquality().equals(other.reCaptchaWebKeyV3, reCaptchaWebKeyV3)) &&
-            (identical(other.reCaptchaWebKeyV2, reCaptchaWebKeyV2) ||
-                const DeepCollectionEquality().equals(other.reCaptchaWebKeyV2, reCaptchaWebKeyV2)) &&
-            (identical(other.isPinCodeRequired, isPinCodeRequired) ||
-                const DeepCollectionEquality().equals(other.isPinCodeRequired, isPinCodeRequired)) &&
-            (identical(other.pinCodeWrongLimit, pinCodeWrongLimit) ||
-                const DeepCollectionEquality().equals(other.pinCodeWrongLimit, pinCodeWrongLimit)) &&
-            (identical(other.oAuthServices, oAuthServices) ||
-                const DeepCollectionEquality().equals(other.oAuthServices, oAuthServices)) &&
-            (identical(other.iCEServers, iCEServers) ||
-                const DeepCollectionEquality().equals(other.iCEServers, iCEServers)) &&
-            (identical(other.iceTransportPolicy, iceTransportPolicy) || const DeepCollectionEquality().equals(other.iceTransportPolicy, iceTransportPolicy)) &&
-            (identical(other.customServer, customServer) || const DeepCollectionEquality().equals(other.customServer, customServer)) &&
-            (identical(other.installationType, installationType) || const DeepCollectionEquality().equals(other.installationType, installationType)) &&
-            (identical(other.installationTitle, installationTitle) || const DeepCollectionEquality().equals(other.installationTitle, installationTitle)) &&
-            (identical(other.customAppIconName, customAppIconName) || const DeepCollectionEquality().equals(other.customAppIconName, customAppIconName)) &&
-            (identical(other.appLoginBackground, appLoginBackground) || const DeepCollectionEquality().equals(other.appLoginBackground, appLoginBackground)) &&
-            (identical(other.webLoginBackground, webLoginBackground) || const DeepCollectionEquality().equals(other.webLoginBackground, webLoginBackground)) &&
-            (identical(other.isTesting, isTesting) || const DeepCollectionEquality().equals(other.isTesting, isTesting)) &&
-            (identical(other.metrika, metrika) || const DeepCollectionEquality().equals(other.metrika, metrika)) &&
-            (identical(other.amplitudeApiKey, amplitudeApiKey) || const DeepCollectionEquality().equals(other.amplitudeApiKey, amplitudeApiKey)) &&
-            (identical(other.minSearchLength, minSearchLength) || const DeepCollectionEquality().equals(other.minSearchLength, minSearchLength)) &&
-            (identical(other.resendTimeout, resendTimeout) || const DeepCollectionEquality().equals(other.resendTimeout, resendTimeout)) &&
-            (identical(other.sentryDsnJS, sentryDsnJS) || const DeepCollectionEquality().equals(other.sentryDsnJS, sentryDsnJS)) &&
-            (identical(other.serverDrafts, serverDrafts) || const DeepCollectionEquality().equals(other.serverDrafts, serverDrafts)) &&
-            (identical(other.firebaseAppId, firebaseAppId) || const DeepCollectionEquality().equals(other.firebaseAppId, firebaseAppId)) &&
-            (identical(other.firebaseSenderId, firebaseSenderId) || const DeepCollectionEquality().equals(other.firebaseSenderId, firebaseSenderId)) &&
-            (identical(other.firebaseApiKey, firebaseApiKey) || const DeepCollectionEquality().equals(other.firebaseApiKey, firebaseApiKey)) &&
-            (identical(other.firebaseAuthDomain, firebaseAuthDomain) || const DeepCollectionEquality().equals(other.firebaseAuthDomain, firebaseAuthDomain)) &&
-            (identical(other.firebaseDatabaseUrl, firebaseDatabaseUrl) || const DeepCollectionEquality().equals(other.firebaseDatabaseUrl, firebaseDatabaseUrl)) &&
-            (identical(other.firebaseProjectId, firebaseProjectId) || const DeepCollectionEquality().equals(other.firebaseProjectId, firebaseProjectId)) &&
-            (identical(other.firebaseStorageBucket, firebaseStorageBucket) || const DeepCollectionEquality().equals(other.firebaseStorageBucket, firebaseStorageBucket)) &&
-            (identical(other.callsVersion, callsVersion) || const DeepCollectionEquality().equals(other.callsVersion, callsVersion)) &&
-            (identical(other.callsAudioEnabled, callsAudioEnabled) || const DeepCollectionEquality().equals(other.callsAudioEnabled, callsAudioEnabled)) &&
-            (identical(other.callsVideoEnabled, callsVideoEnabled) || const DeepCollectionEquality().equals(other.callsVideoEnabled, callsVideoEnabled)) &&
-            (identical(other.vcsEnabled, vcsEnabled) || const DeepCollectionEquality().equals(other.vcsEnabled, vcsEnabled)) &&
-            (identical(other.mobileCalls, mobileCalls) || const DeepCollectionEquality().equals(other.mobileCalls, mobileCalls)) &&
-            (identical(other.callsRecord, callsRecord) || const DeepCollectionEquality().equals(other.callsRecord, callsRecord)) &&
-            (identical(other.onlyOneDevicePerCall, onlyOneDevicePerCall) || const DeepCollectionEquality().equals(other.onlyOneDevicePerCall, onlyOneDevicePerCall)) &&
-            (identical(other.maxParticipantsPerCall, maxParticipantsPerCall) || const DeepCollectionEquality().equals(other.maxParticipantsPerCall, maxParticipantsPerCall)) &&
-            (identical(other.safariPushId, safariPushId) || const DeepCollectionEquality().equals(other.safariPushId, safariPushId)) &&
-            (identical(other.messageUploads, messageUploads) || const DeepCollectionEquality().equals(other.messageUploads, messageUploads)) &&
-            (identical(other.terms, terms) || const DeepCollectionEquality().equals(other.terms, terms)) &&
-            (identical(other.singleGroupTeams, singleGroupTeams) || const DeepCollectionEquality().equals(other.singleGroupTeams, singleGroupTeams)) &&
-            (identical(other.wikiPages, wikiPages) || const DeepCollectionEquality().equals(other.wikiPages, wikiPages)) &&
-            (identical(other.allowAdminMute, allowAdminMute) || const DeepCollectionEquality().equals(other.allowAdminMute, allowAdminMute)) &&
-            (identical(other.defaultWallpaper, defaultWallpaper) || const DeepCollectionEquality().equals(other.defaultWallpaper, defaultWallpaper)) &&
-            (identical(other.supportEmail, supportEmail) || const DeepCollectionEquality().equals(other.supportEmail, supportEmail)) &&
-            (identical(other.customTheme, customTheme) || const DeepCollectionEquality().equals(other.customTheme, customTheme)) &&
-            (identical(other.taskChecklist, taskChecklist) || const DeepCollectionEquality().equals(other.taskChecklist, taskChecklist)) &&
-            (identical(other.readonlyGroups, readonlyGroups) || const DeepCollectionEquality().equals(other.readonlyGroups, readonlyGroups)) &&
-            (identical(other.taskDashboard, taskDashboard) || const DeepCollectionEquality().equals(other.taskDashboard, taskDashboard)) &&
-            (identical(other.taskMessages, taskMessages) || const DeepCollectionEquality().equals(other.taskMessages, taskMessages)) &&
-            (identical(other.taskPublic, taskPublic) || const DeepCollectionEquality().equals(other.taskPublic, taskPublic)) &&
-            (identical(other.taskTags, taskTags) || const DeepCollectionEquality().equals(other.taskTags, taskTags)) &&
-            (identical(other.calls, calls) || const DeepCollectionEquality().equals(other.calls, calls)) &&
-            (identical(other.billing, billing) || const DeepCollectionEquality().equals(other.billing, billing)) &&
-            (identical(other.minAppVersion, minAppVersion) || const DeepCollectionEquality().equals(other.minAppVersion, minAppVersion)) &&
-            (identical(other.fileExtensionWhitelist, fileExtensionWhitelist) || const DeepCollectionEquality().equals(other.fileExtensionWhitelist, fileExtensionWhitelist)) &&
-            (identical(other.fileExtensionBlacklist, fileExtensionBlacklist) || const DeepCollectionEquality().equals(other.fileExtensionBlacklist, fileExtensionBlacklist)) &&
-            (identical(other.fileExtensionWhitelistPriority, fileExtensionWhitelistPriority) || const DeepCollectionEquality().equals(other.fileExtensionWhitelistPriority, fileExtensionWhitelistPriority)));
+                other.reCaptchaWebKeyV3 == reCaptchaWebKeyV3) &&
+            (identical(other.reCaptchaWebKeyV2, reCaptchaWebKeyV2) || other.reCaptchaWebKeyV2 == reCaptchaWebKeyV2) &&
+            (identical(other.isPinCodeRequired, isPinCodeRequired) || other.isPinCodeRequired == isPinCodeRequired) &&
+            (identical(other.pinCodeWrongLimit, pinCodeWrongLimit) || other.pinCodeWrongLimit == pinCodeWrongLimit) &&
+            const DeepCollectionEquality().equals(other._oAuthServices, _oAuthServices) &&
+            const DeepCollectionEquality().equals(other._iCEServers, _iCEServers) &&
+            (identical(other.iceTransportPolicy, iceTransportPolicy) || other.iceTransportPolicy == iceTransportPolicy) &&
+            (identical(other.customServer, customServer) || other.customServer == customServer) &&
+            (identical(other.installationType, installationType) || other.installationType == installationType) &&
+            (identical(other.installationTitle, installationTitle) || other.installationTitle == installationTitle) &&
+            (identical(other.customAppIconName, customAppIconName) || other.customAppIconName == customAppIconName) &&
+            (identical(other.appLoginBackground, appLoginBackground) || other.appLoginBackground == appLoginBackground) &&
+            (identical(other.webLoginBackground, webLoginBackground) || other.webLoginBackground == webLoginBackground) &&
+            (identical(other.isTesting, isTesting) || other.isTesting == isTesting) &&
+            (identical(other.metrika, metrika) || other.metrika == metrika) &&
+            (identical(other.amplitudeApiKey, amplitudeApiKey) || other.amplitudeApiKey == amplitudeApiKey) &&
+            (identical(other.minSearchLength, minSearchLength) || other.minSearchLength == minSearchLength) &&
+            (identical(other.resendTimeout, resendTimeout) || other.resendTimeout == resendTimeout) &&
+            (identical(other.sentryDsnJS, sentryDsnJS) || other.sentryDsnJS == sentryDsnJS) &&
+            (identical(other.serverDrafts, serverDrafts) || other.serverDrafts == serverDrafts) &&
+            (identical(other.firebaseAppId, firebaseAppId) || other.firebaseAppId == firebaseAppId) &&
+            (identical(other.firebaseSenderId, firebaseSenderId) || other.firebaseSenderId == firebaseSenderId) &&
+            (identical(other.firebaseApiKey, firebaseApiKey) || other.firebaseApiKey == firebaseApiKey) &&
+            (identical(other.firebaseAuthDomain, firebaseAuthDomain) || other.firebaseAuthDomain == firebaseAuthDomain) &&
+            (identical(other.firebaseDatabaseUrl, firebaseDatabaseUrl) || other.firebaseDatabaseUrl == firebaseDatabaseUrl) &&
+            (identical(other.firebaseProjectId, firebaseProjectId) || other.firebaseProjectId == firebaseProjectId) &&
+            (identical(other.firebaseStorageBucket, firebaseStorageBucket) || other.firebaseStorageBucket == firebaseStorageBucket) &&
+            (identical(other.callsVersion, callsVersion) || other.callsVersion == callsVersion) &&
+            (identical(other.callsAudioEnabled, callsAudioEnabled) || other.callsAudioEnabled == callsAudioEnabled) &&
+            (identical(other.callsVideoEnabled, callsVideoEnabled) || other.callsVideoEnabled == callsVideoEnabled) &&
+            (identical(other.vcsEnabled, vcsEnabled) || other.vcsEnabled == vcsEnabled) &&
+            (identical(other.mobileCalls, mobileCalls) || other.mobileCalls == mobileCalls) &&
+            (identical(other.callsRecord, callsRecord) || other.callsRecord == callsRecord) &&
+            (identical(other.onlyOneDevicePerCall, onlyOneDevicePerCall) || other.onlyOneDevicePerCall == onlyOneDevicePerCall) &&
+            (identical(other.maxParticipantsPerCall, maxParticipantsPerCall) || other.maxParticipantsPerCall == maxParticipantsPerCall) &&
+            (identical(other.safariPushId, safariPushId) || other.safariPushId == safariPushId) &&
+            (identical(other.messageUploads, messageUploads) || other.messageUploads == messageUploads) &&
+            (identical(other.terms, terms) || other.terms == terms) &&
+            (identical(other.singleGroupTeams, singleGroupTeams) || other.singleGroupTeams == singleGroupTeams) &&
+            (identical(other.wikiPages, wikiPages) || other.wikiPages == wikiPages) &&
+            (identical(other.allowAdminMute, allowAdminMute) || other.allowAdminMute == allowAdminMute) &&
+            (identical(other.defaultWallpaper, defaultWallpaper) || other.defaultWallpaper == defaultWallpaper) &&
+            (identical(other.supportEmail, supportEmail) || other.supportEmail == supportEmail) &&
+            (identical(other.customTheme, customTheme) || other.customTheme == customTheme) &&
+            (identical(other.taskChecklist, taskChecklist) || other.taskChecklist == taskChecklist) &&
+            (identical(other.readonlyGroups, readonlyGroups) || other.readonlyGroups == readonlyGroups) &&
+            (identical(other.taskDashboard, taskDashboard) || other.taskDashboard == taskDashboard) &&
+            (identical(other.taskMessages, taskMessages) || other.taskMessages == taskMessages) &&
+            (identical(other.taskPublic, taskPublic) || other.taskPublic == taskPublic) &&
+            (identical(other.taskTags, taskTags) || other.taskTags == taskTags) &&
+            (identical(other.calls, calls) || other.calls == calls) &&
+            (identical(other.billing, billing) || other.billing == billing) &&
+            (identical(other.minAppVersion, minAppVersion) || other.minAppVersion == minAppVersion) &&
+            const DeepCollectionEquality().equals(other._fileExtensionWhitelist, _fileExtensionWhitelist) &&
+            const DeepCollectionEquality().equals(other._fileExtensionBlacklist, _fileExtensionBlacklist) &&
+            (identical(other.fileExtensionWhitelistPriority, fileExtensionWhitelistPriority) || other.fileExtensionWhitelistPriority == fileExtensionWhitelistPriority));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(host) ^
-      const DeepCollectionEquality().hash(build) ^
-      const DeepCollectionEquality().hash(desktopVersion) ^
-      const DeepCollectionEquality().hash(frontVersion) ^
-      const DeepCollectionEquality().hash(appTitle) ^
-      const DeepCollectionEquality().hash(landingUrl) ^
-      const DeepCollectionEquality().hash(appSchemes) ^
-      const DeepCollectionEquality().hash(userver) ^
-      const DeepCollectionEquality().hash(iOSApp) ^
-      const DeepCollectionEquality().hash(androidApp) ^
-      const DeepCollectionEquality().hash(iOSCorpApp) ^
-      const DeepCollectionEquality().hash(androidCorpApp) ^
-      const DeepCollectionEquality().hash(rumarketApp) ^
-      const DeepCollectionEquality().hash(theme) ^
-      const DeepCollectionEquality().hash(minIOSVersion) ^
-      const DeepCollectionEquality().hash(minAndroidVersion) ^
-      const DeepCollectionEquality().hash(minCorpIOSVersion) ^
-      const DeepCollectionEquality().hash(minCorpAndroidVersion) ^
-      const DeepCollectionEquality().hash(freeRegistration) ^
-      const DeepCollectionEquality().hash(maxUploadMb) ^
-      const DeepCollectionEquality().hash(maxLinkedMessages) ^
-      const DeepCollectionEquality().hash(maxMessageUploads) ^
-      const DeepCollectionEquality().hash(maxUsernamePartLength) ^
-      const DeepCollectionEquality().hash(maxGroupTitleLength) ^
-      const DeepCollectionEquality().hash(maxTeamTitleLength) ^
-      const DeepCollectionEquality().hash(maxRoleLength) ^
-      const DeepCollectionEquality().hash(maxMoodLength) ^
-      const DeepCollectionEquality().hash(maxMessageLength) ^
-      const DeepCollectionEquality().hash(maxSectionLength) ^
-      const DeepCollectionEquality().hash(maxProjectLength) ^
-      const DeepCollectionEquality().hash(maxTagLength) ^
-      const DeepCollectionEquality().hash(maxTaskTitleLength) ^
-      const DeepCollectionEquality().hash(maxColorRuleDescriptionLength) ^
-      const DeepCollectionEquality().hash(maxUrlLength) ^
-      const DeepCollectionEquality().hash(maxIntegrationCommentLength) ^
-      const DeepCollectionEquality().hash(maxTeams) ^
-      const DeepCollectionEquality().hash(maxMessageSearchLimit) ^
-      const DeepCollectionEquality().hash(multiNodes) ^
-      const DeepCollectionEquality().hash(afkAge) ^
-      const DeepCollectionEquality().hash(authByPassword) ^
-      const DeepCollectionEquality().hash(authByQrCode) ^
-      const DeepCollectionEquality().hash(authBySms) ^
-      const DeepCollectionEquality().hash(auth2fa) ^
-      const DeepCollectionEquality().hash(authByKerberos) ^
-      const DeepCollectionEquality().hash(reCaptchaEnabled) ^
-      const DeepCollectionEquality().hash(reCaptchaWebKeyV3) ^
-      const DeepCollectionEquality().hash(reCaptchaWebKeyV2) ^
-      const DeepCollectionEquality().hash(isPinCodeRequired) ^
-      const DeepCollectionEquality().hash(pinCodeWrongLimit) ^
-      const DeepCollectionEquality().hash(oAuthServices) ^
-      const DeepCollectionEquality().hash(iCEServers) ^
-      const DeepCollectionEquality().hash(iceTransportPolicy) ^
-      const DeepCollectionEquality().hash(customServer) ^
-      const DeepCollectionEquality().hash(installationType) ^
-      const DeepCollectionEquality().hash(installationTitle) ^
-      const DeepCollectionEquality().hash(customAppIconName) ^
-      const DeepCollectionEquality().hash(appLoginBackground) ^
-      const DeepCollectionEquality().hash(webLoginBackground) ^
-      const DeepCollectionEquality().hash(isTesting) ^
-      const DeepCollectionEquality().hash(metrika) ^
-      const DeepCollectionEquality().hash(amplitudeApiKey) ^
-      const DeepCollectionEquality().hash(minSearchLength) ^
-      const DeepCollectionEquality().hash(resendTimeout) ^
-      const DeepCollectionEquality().hash(sentryDsnJS) ^
-      const DeepCollectionEquality().hash(serverDrafts) ^
-      const DeepCollectionEquality().hash(firebaseAppId) ^
-      const DeepCollectionEquality().hash(firebaseSenderId) ^
-      const DeepCollectionEquality().hash(firebaseApiKey) ^
-      const DeepCollectionEquality().hash(firebaseAuthDomain) ^
-      const DeepCollectionEquality().hash(firebaseDatabaseUrl) ^
-      const DeepCollectionEquality().hash(firebaseProjectId) ^
-      const DeepCollectionEquality().hash(firebaseStorageBucket) ^
-      const DeepCollectionEquality().hash(callsVersion) ^
-      const DeepCollectionEquality().hash(callsAudioEnabled) ^
-      const DeepCollectionEquality().hash(callsVideoEnabled) ^
-      const DeepCollectionEquality().hash(vcsEnabled) ^
-      const DeepCollectionEquality().hash(mobileCalls) ^
-      const DeepCollectionEquality().hash(callsRecord) ^
-      const DeepCollectionEquality().hash(onlyOneDevicePerCall) ^
-      const DeepCollectionEquality().hash(maxParticipantsPerCall) ^
-      const DeepCollectionEquality().hash(safariPushId) ^
-      const DeepCollectionEquality().hash(messageUploads) ^
-      const DeepCollectionEquality().hash(terms) ^
-      const DeepCollectionEquality().hash(singleGroupTeams) ^
-      const DeepCollectionEquality().hash(wikiPages) ^
-      const DeepCollectionEquality().hash(allowAdminMute) ^
-      const DeepCollectionEquality().hash(defaultWallpaper) ^
-      const DeepCollectionEquality().hash(supportEmail) ^
-      const DeepCollectionEquality().hash(customTheme) ^
-      const DeepCollectionEquality().hash(taskChecklist) ^
-      const DeepCollectionEquality().hash(readonlyGroups) ^
-      const DeepCollectionEquality().hash(taskDashboard) ^
-      const DeepCollectionEquality().hash(taskMessages) ^
-      const DeepCollectionEquality().hash(taskPublic) ^
-      const DeepCollectionEquality().hash(taskTags) ^
-      const DeepCollectionEquality().hash(calls) ^
-      const DeepCollectionEquality().hash(billing) ^
-      const DeepCollectionEquality().hash(minAppVersion) ^
-      const DeepCollectionEquality().hash(fileExtensionWhitelist) ^
-      const DeepCollectionEquality().hash(fileExtensionBlacklist) ^
-      const DeepCollectionEquality().hash(fileExtensionWhitelistPriority);
 
   @JsonKey(ignore: true)
   @override
-  _$FeaturesCopyWith<_Features> get copyWith => __$FeaturesCopyWithImpl<_Features>(this, _$identity);
+  int get hashCode => Object.hashAll([
+        runtimeType,
+        host,
+        build,
+        desktopVersion,
+        frontVersion,
+        appTitle,
+        landingUrl,
+        const DeepCollectionEquality().hash(_appSchemes),
+        userver,
+        iOSApp,
+        androidApp,
+        iOSCorpApp,
+        androidCorpApp,
+        rumarketApp,
+        theme,
+        minIOSVersion,
+        minAndroidVersion,
+        minCorpIOSVersion,
+        minCorpAndroidVersion,
+        freeRegistration,
+        maxUploadMb,
+        maxLinkedMessages,
+        maxMessageUploads,
+        maxUsernamePartLength,
+        maxGroupTitleLength,
+        maxTeamTitleLength,
+        maxRoleLength,
+        maxMoodLength,
+        maxMessageLength,
+        maxSectionLength,
+        maxProjectLength,
+        maxTagLength,
+        maxTaskTitleLength,
+        maxColorRuleDescriptionLength,
+        maxUrlLength,
+        maxIntegrationCommentLength,
+        maxTeams,
+        maxMessageSearchLimit,
+        multiNodes,
+        afkAge,
+        authByPassword,
+        authByQrCode,
+        authBySms,
+        auth2fa,
+        authByKerberos,
+        reCaptchaEnabled,
+        reCaptchaWebKeyV3,
+        reCaptchaWebKeyV2,
+        isPinCodeRequired,
+        pinCodeWrongLimit,
+        const DeepCollectionEquality().hash(_oAuthServices),
+        const DeepCollectionEquality().hash(_iCEServers),
+        iceTransportPolicy,
+        customServer,
+        installationType,
+        installationTitle,
+        customAppIconName,
+        appLoginBackground,
+        webLoginBackground,
+        isTesting,
+        metrika,
+        amplitudeApiKey,
+        minSearchLength,
+        resendTimeout,
+        sentryDsnJS,
+        serverDrafts,
+        firebaseAppId,
+        firebaseSenderId,
+        firebaseApiKey,
+        firebaseAuthDomain,
+        firebaseDatabaseUrl,
+        firebaseProjectId,
+        firebaseStorageBucket,
+        callsVersion,
+        callsAudioEnabled,
+        callsVideoEnabled,
+        vcsEnabled,
+        mobileCalls,
+        callsRecord,
+        onlyOneDevicePerCall,
+        maxParticipantsPerCall,
+        safariPushId,
+        messageUploads,
+        terms,
+        singleGroupTeams,
+        wikiPages,
+        allowAdminMute,
+        defaultWallpaper,
+        supportEmail,
+        customTheme,
+        taskChecklist,
+        readonlyGroups,
+        taskDashboard,
+        taskMessages,
+        taskPublic,
+        taskTags,
+        calls,
+        billing,
+        minAppVersion,
+        const DeepCollectionEquality().hash(_fileExtensionWhitelist),
+        const DeepCollectionEquality().hash(_fileExtensionBlacklist),
+        fileExtensionWhitelistPriority
+      ]);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_FeaturesCopyWith<_$_Features> get copyWith =>
+      __$$_FeaturesCopyWithImpl<_$_Features>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FeaturesToJson(this);
+    return _$$_FeaturesToJson(
+      this,
+    );
   }
 }
 
 abstract class _Features implements Features {
   const factory _Features(
       {@JsonKey(name: 'host')
-          required String host,
+          required final String host,
       @JsonKey(name: 'build')
-          required String build,
+          required final String build,
       @JsonKey(name: 'desktop_version')
-          required String desktopVersion,
+          required final String desktopVersion,
       @JsonKey(name: 'front_version')
-          required String frontVersion,
+          required final String frontVersion,
       @JsonKey(name: 'app_title')
-          required String appTitle,
+          required final String appTitle,
       @JsonKey(name: 'landing_url')
-          String? landingUrl,
+          final String? landingUrl,
       @JsonKey(name: 'app_schemes')
-          required List<String> appSchemes,
+          required final List<String> appSchemes,
       @JsonKey(name: 'userver')
-          required String userver,
+          required final String userver,
       @JsonKey(name: 'ios_app')
-          required String iOSApp,
+          required final String iOSApp,
       @JsonKey(name: 'android_app')
-          required String androidApp,
+          required final String androidApp,
       @JsonKey(name: 'ios_corp_app')
-          required String iOSCorpApp,
+          required final String iOSCorpApp,
       @JsonKey(name: 'android_corp_app')
-          required String androidCorpApp,
+          required final String androidCorpApp,
       @JsonKey(name: 'rumarket_app')
-          required String rumarketApp,
+          required final String rumarketApp,
       @JsonKey(name: 'theme')
-          required String theme,
+          required final String theme,
       @JsonKey(name: 'min_ios_version')
-          required String minIOSVersion,
+          required final String minIOSVersion,
       @JsonKey(name: 'min_android_version')
-          required String minAndroidVersion,
+          required final String minAndroidVersion,
       @JsonKey(name: 'min_corp_ios_version')
-          required String minCorpIOSVersion,
+          required final String minCorpIOSVersion,
       @JsonKey(name: 'min_corp_android_version')
-          required String minCorpAndroidVersion,
+          required final String minCorpAndroidVersion,
       @JsonKey(name: 'free_registration')
-          required bool freeRegistration,
+          required final bool freeRegistration,
       @JsonKey(name: 'max_upload_mb')
-          required int maxUploadMb,
+          required final int maxUploadMb,
       @JsonKey(name: 'max_linked_messages')
-          required int maxLinkedMessages,
+          required final int maxLinkedMessages,
       @JsonKey(name: 'max_message_uploads')
-          required int maxMessageUploads,
+          required final int maxMessageUploads,
       @JsonKey(name: 'max_username_part_length')
-          required int maxUsernamePartLength,
+          required final int maxUsernamePartLength,
       @JsonKey(name: 'max_group_title_length')
-          required int maxGroupTitleLength,
+          required final int maxGroupTitleLength,
       @JsonKey(name: 'max_team_title_length')
-          required int maxTeamTitleLength,
+          required final int maxTeamTitleLength,
       @JsonKey(name: 'max_role_length')
-          required int maxRoleLength,
+          required final int maxRoleLength,
       @JsonKey(name: 'max_mood_length')
-          required int maxMoodLength,
+          required final int maxMoodLength,
       @JsonKey(name: 'max_message_length')
-          required int maxMessageLength,
+          required final int maxMessageLength,
       @JsonKey(name: 'max_section_length')
-          required int maxSectionLength,
+          required final int maxSectionLength,
       @JsonKey(name: 'max_project_length')
-          required int maxProjectLength,
+          required final int maxProjectLength,
       @JsonKey(name: 'max_tag_length')
-          required int maxTagLength,
+          required final int maxTagLength,
       @JsonKey(name: 'max_task_title_length')
-          required int maxTaskTitleLength,
+          required final int maxTaskTitleLength,
       @JsonKey(name: 'max_color_rule_description_length')
-          required int maxColorRuleDescriptionLength,
+          required final int maxColorRuleDescriptionLength,
       @JsonKey(name: 'max_url_length')
-          required int maxUrlLength,
+          required final int maxUrlLength,
       @JsonKey(name: 'max_integration_comment_length')
-          required int maxIntegrationCommentLength,
+          required final int maxIntegrationCommentLength,
       @JsonKey(name: 'max_teams')
-          required int maxTeams,
+          required final int maxTeams,
       @JsonKey(name: 'max_message_search_limit')
-          required int maxMessageSearchLimit,
+          required final int maxMessageSearchLimit,
       @JsonKey(name: 'multi_nodes')
-          bool? multiNodes,
+          final bool? multiNodes,
       @JsonKey(name: 'afk_age')
-          required int afkAge,
+          required final int afkAge,
       @JsonKey(name: 'auth_by_password')
-          bool? authByPassword,
+          final bool? authByPassword,
       @JsonKey(name: 'auth_by_qr_code')
-          bool? authByQrCode,
+          final bool? authByQrCode,
       @JsonKey(name: 'auth_by_sms')
-          bool? authBySms,
+          final bool? authBySms,
       @JsonKey(name: 'auth_2fa')
-          bool? auth2fa,
+          final bool? auth2fa,
       @JsonKey(name: 'auth_by_kerberos')
-          bool? authByKerberos,
+          final bool? authByKerberos,
       @JsonKey(name: 'is_recaptcha_enabled')
-          bool? reCaptchaEnabled,
+          final bool? reCaptchaEnabled,
       @JsonKey(name: 'recaptcha_web_key_v3')
-          String? reCaptchaWebKeyV3,
+          final String? reCaptchaWebKeyV3,
       @JsonKey(name: 'recaptcha_web_key_v2')
-          String? reCaptchaWebKeyV2,
+          final String? reCaptchaWebKeyV2,
       @JsonKey(name: 'is_pin_code_required')
-          required bool isPinCodeRequired,
+          required final bool isPinCodeRequired,
       @JsonKey(name: 'pin_code_wrong_limit')
-          required int pinCodeWrongLimit,
+          required final int pinCodeWrongLimit,
       @JsonKey(name: 'oauth_services')
-          List<OAuthService>? oAuthServices,
+          final List<OAuthService>? oAuthServices,
       @JsonKey(name: 'ice_servers')
-          required List<ICEServer> iCEServers,
+          required final List<ICEServer> iCEServers,
       @JsonKey(name: 'ice_transport_policy')
-          String? iceTransportPolicy,
+          final String? iceTransportPolicy,
       @JsonKey(name: 'custom_server')
-          required bool customServer,
+          required final bool customServer,
       @JsonKey(name: 'installation_type')
-          required String installationType,
+          required final String installationType,
       @JsonKey(name: 'installation_title')
-          String? installationTitle,
+          final String? installationTitle,
       @JsonKey(name: 'custom_app_icon_name')
-          String? customAppIconName,
+          final String? customAppIconName,
       @JsonKey(name: 'app_login_background')
-          String? appLoginBackground,
+          final String? appLoginBackground,
       @JsonKey(name: 'web_login_background')
-          String? webLoginBackground,
+          final String? webLoginBackground,
       @JsonKey(name: 'is_testing')
-          required bool isTesting,
+          required final bool isTesting,
       @JsonKey(name: 'metrika')
-          required String metrika,
+          required final String metrika,
       @JsonKey(name: 'amplitude_api_key')
-          String? amplitudeApiKey,
+          final String? amplitudeApiKey,
       @JsonKey(name: 'min_search_length')
-          required int minSearchLength,
+          required final int minSearchLength,
       @JsonKey(name: 'resend_timeout')
-          required int resendTimeout,
+          required final int resendTimeout,
       @JsonKey(name: 'sentry_dsn_js')
-          required String sentryDsnJS,
+          required final String sentryDsnJS,
       @JsonKey(name: 'server_drafts')
-          required bool serverDrafts,
+          required final bool serverDrafts,
       @JsonKey(name: 'firebase_app_id')
-          required String firebaseAppId,
+          required final String firebaseAppId,
       @JsonKey(name: 'firebase_sender_id')
-          required String firebaseSenderId,
+          required final String firebaseSenderId,
       @JsonKey(name: 'firebase_api_key')
-          required String firebaseApiKey,
+          required final String firebaseApiKey,
       @JsonKey(name: 'firebase_auth_domain')
-          required String firebaseAuthDomain,
+          required final String firebaseAuthDomain,
       @JsonKey(name: 'firebase_database_url')
-          required String firebaseDatabaseUrl,
+          required final String firebaseDatabaseUrl,
       @JsonKey(name: 'firebase_project_id')
-          required String firebaseProjectId,
+          required final String firebaseProjectId,
       @JsonKey(name: 'firebase_storage_bucket')
-          required String firebaseStorageBucket,
+          required final String firebaseStorageBucket,
       @Deprecated(
           'Calls version. 0 = disabled, 1 = audio only, 2 = audio+video Deprecated: use CallsAudioEnabled and CallsVideoEnabled.')
       @JsonKey(name: 'calls_version')
-          required int callsVersion,
+          required final int callsVersion,
       @JsonKey(name: 'calls_audio_enabled')
-          required bool callsAudioEnabled,
+          required final bool callsAudioEnabled,
       @JsonKey(name: 'calls_video_enabled')
-          required bool callsVideoEnabled,
+          required final bool callsVideoEnabled,
       @JsonKey(name: 'vcs_enabled')
-          required bool vcsEnabled,
+          required final bool vcsEnabled,
       @JsonKey(name: 'mobile_calls')
-          required bool mobileCalls,
+          required final bool mobileCalls,
       @JsonKey(name: 'calls_record')
-          required bool callsRecord,
+          required final bool callsRecord,
       @JsonKey(name: 'only_one_device_per_call')
-          bool? onlyOneDevicePerCall,
+          final bool? onlyOneDevicePerCall,
       @JsonKey(name: 'max_participants_per_call')
-          int? maxParticipantsPerCall,
+          final int? maxParticipantsPerCall,
       @JsonKey(name: 'safari_push_id')
-          required String safariPushId,
+          required final String safariPushId,
       @JsonKey(name: 'message_uploads')
-          required bool messageUploads,
+          required final bool messageUploads,
       @JsonKey(name: 'terms')
-          required Terms terms,
+          required final Terms terms,
       @JsonKey(name: 'single_group_teams')
-          required bool singleGroupTeams,
+          required final bool singleGroupTeams,
       @JsonKey(name: 'wiki_pages')
-          required bool wikiPages,
+          required final bool wikiPages,
       @JsonKey(name: 'allow_admin_mute')
-          bool? allowAdminMute,
+          final bool? allowAdminMute,
       @JsonKey(name: 'default_wallpaper')
-          Wallpaper? defaultWallpaper,
+          final Wallpaper? defaultWallpaper,
       @JsonKey(name: 'support_email')
-          required String supportEmail,
+          required final String supportEmail,
       @JsonKey(name: 'custom_theme')
-          required bool customTheme,
+          required final bool customTheme,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'task_checklist')
-          required bool taskChecklist,
+          required final bool taskChecklist,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'readonly_groups')
-          required bool readonlyGroups,
+          required final bool readonlyGroups,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'task_dashboard')
-          required bool taskDashboard,
+          required final bool taskDashboard,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'task_messages')
-          required bool taskMessages,
+          required final bool taskMessages,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'task_public')
-          required bool taskPublic,
+          required final bool taskPublic,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'task_tags')
-          required bool taskTags,
+          required final bool taskTags,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'calls')
-          required bool calls,
+          required final bool calls,
       @JsonKey(name: 'billing')
-          bool? billing,
+          final bool? billing,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'min_app_version')
-          required String minAppVersion,
+          required final String minAppVersion,
       @JsonKey(name: 'file_extension_whitelist')
-          List<String>? fileExtensionWhitelist,
+          final List<String>? fileExtensionWhitelist,
       @JsonKey(name: 'file_extension_blacklist')
-          List<String>? fileExtensionBlacklist,
+          final List<String>? fileExtensionBlacklist,
       @JsonKey(name: 'file_extension_whitelist_priority')
-          bool? fileExtensionWhitelistPriority}) = _$_Features;
+          final bool? fileExtensionWhitelistPriority}) = _$_Features;
 
   factory _Features.fromJson(Map<String, dynamic> json) = _$_Features.fromJson;
 
@@ -3500,518 +3231,519 @@ abstract class _Features implements Features {
 
   /// Current host.
   @JsonKey(name: 'host')
-  String get host => throw _privateConstructorUsedError;
+  String get host;
   @override
 
   /// Build/revision of server side.
   @JsonKey(name: 'build')
-  String get build => throw _privateConstructorUsedError;
+  String get build;
   @override
 
   /// Desktop application version.
   @JsonKey(name: 'desktop_version')
-  String get desktopVersion => throw _privateConstructorUsedError;
+  String get desktopVersion;
   @override
 
   /// Webclient version.
   @JsonKey(name: 'front_version')
-  String get frontVersion => throw _privateConstructorUsedError;
+  String get frontVersion;
   @override
 
   /// Application title.
   @JsonKey(name: 'app_title')
-  String get appTitle => throw _privateConstructorUsedError;
+  String get appTitle;
   @override
 
   /// Landing page address, if any.
   @JsonKey(name: 'landing_url')
-  String? get landingUrl => throw _privateConstructorUsedError;
+  String? get landingUrl;
   @override
 
   /// Local applications urls.
   @JsonKey(name: 'app_schemes')
-  List<String> get appSchemes => throw _privateConstructorUsedError;
+  List<String> get appSchemes;
   @override
 
   /// Static files server address.
   @JsonKey(name: 'userver')
-  String get userver => throw _privateConstructorUsedError;
+  String get userver;
   @override
 
   /// Link to AppStore.
   @JsonKey(name: 'ios_app')
-  String get iOSApp => throw _privateConstructorUsedError;
+  String get iOSApp;
   @override
 
   /// Link to Google Play.
   @JsonKey(name: 'android_app')
-  String get androidApp => throw _privateConstructorUsedError;
+  String get androidApp;
   @override
 
   /// Link to AppStore for corporate app.
   @JsonKey(name: 'ios_corp_app')
-  String get iOSCorpApp => throw _privateConstructorUsedError;
+  String get iOSCorpApp;
   @override
 
   /// Link to Google Play for corporate app.
   @JsonKey(name: 'android_corp_app')
-  String get androidCorpApp => throw _privateConstructorUsedError;
+  String get androidCorpApp;
   @override
 
   /// Link to Rumarket store.
   @JsonKey(name: 'rumarket_app')
-  String get rumarketApp => throw _privateConstructorUsedError;
+  String get rumarketApp;
   @override
 
   /// Default UI theme.
   @JsonKey(name: 'theme')
-  String get theme => throw _privateConstructorUsedError;
+  String get theme;
   @override
 
   /// Minimal iOS application version required for this server. Used for breaking changes.
   @JsonKey(name: 'min_ios_version')
-  String get minIOSVersion => throw _privateConstructorUsedError;
+  String get minIOSVersion;
   @override
 
   /// Minimal android application version required for this server. Used for breaking changes.
   @JsonKey(name: 'min_android_version')
-  String get minAndroidVersion => throw _privateConstructorUsedError;
+  String get minAndroidVersion;
   @override
 
   /// Minimal iOS corp application version required for this server. Used for breaking changes.
   @JsonKey(name: 'min_corp_ios_version')
-  String get minCorpIOSVersion => throw _privateConstructorUsedError;
+  String get minCorpIOSVersion;
   @override
 
   /// Minimal android corp application version required for this server. Used for breaking changes.
   @JsonKey(name: 'min_corp_android_version')
-  String get minCorpAndroidVersion => throw _privateConstructorUsedError;
+  String get minCorpAndroidVersion;
   @override
 
   /// Free registration allowed.
   @JsonKey(name: 'free_registration')
-  bool get freeRegistration => throw _privateConstructorUsedError;
+  bool get freeRegistration;
   @override
 
   /// Maximum size of user's upload.
   @JsonKey(name: 'max_upload_mb')
-  int get maxUploadMb => throw _privateConstructorUsedError;
+  int get maxUploadMb;
   @override
 
   /// Maximum number of forwarded messages.
   @JsonKey(name: 'max_linked_messages')
-  int get maxLinkedMessages => throw _privateConstructorUsedError;
+  int get maxLinkedMessages;
   @override
 
   /// Maximum number of message uploads.
   @JsonKey(name: 'max_message_uploads')
-  int get maxMessageUploads => throw _privateConstructorUsedError;
+  int get maxMessageUploads;
   @override
 
   /// Maximum chars for: family_name, given_name, patronymic if any.
   @JsonKey(name: 'max_username_part_length')
-  int get maxUsernamePartLength => throw _privateConstructorUsedError;
+  int get maxUsernamePartLength;
   @override
 
   /// Maximum chars for group chat name.
   @JsonKey(name: 'max_group_title_length')
-  int get maxGroupTitleLength => throw _privateConstructorUsedError;
+  int get maxGroupTitleLength;
   @override
 
   /// Maximum chars for team name.
   @JsonKey(name: 'max_team_title_length')
-  int get maxTeamTitleLength => throw _privateConstructorUsedError;
+  int get maxTeamTitleLength;
   @override
 
   /// Maximum chars for role in team.
   @JsonKey(name: 'max_role_length')
-  int get maxRoleLength => throw _privateConstructorUsedError;
+  int get maxRoleLength;
   @override
 
   /// Maximum chars for mood in team.
   @JsonKey(name: 'max_mood_length')
-  int get maxMoodLength => throw _privateConstructorUsedError;
+  int get maxMoodLength;
   @override
 
   /// Maximum chars for text message.
   @JsonKey(name: 'max_message_length')
-  int get maxMessageLength => throw _privateConstructorUsedError;
+  int get maxMessageLength;
   @override
 
   /// Maximum length for contact's sections names.
   @JsonKey(name: 'max_section_length')
-  int get maxSectionLength => throw _privateConstructorUsedError;
+  int get maxSectionLength;
   @override
 
   /// Maximum length for project.
   @JsonKey(name: 'max_project_length')
-  int get maxProjectLength => throw _privateConstructorUsedError;
+  int get maxProjectLength;
   @override
 
   /// Maximum length for tags.
   @JsonKey(name: 'max_tag_length')
-  int get maxTagLength => throw _privateConstructorUsedError;
+  int get maxTagLength;
   @override
 
   /// Maximum length for task title.
   @JsonKey(name: 'max_task_title_length')
-  int get maxTaskTitleLength => throw _privateConstructorUsedError;
+  int get maxTaskTitleLength;
   @override
 
   /// Maximum length for ColorRule description.
   @JsonKey(name: 'max_color_rule_description_length')
-  int get maxColorRuleDescriptionLength => throw _privateConstructorUsedError;
+  int get maxColorRuleDescriptionLength;
   @override
 
   /// Maximum length for urls.
   @JsonKey(name: 'max_url_length')
-  int get maxUrlLength => throw _privateConstructorUsedError;
+  int get maxUrlLength;
   @override
 
   /// Maximum length for Integration comment.
   @JsonKey(name: 'max_integration_comment_length')
-  int get maxIntegrationCommentLength => throw _privateConstructorUsedError;
+  int get maxIntegrationCommentLength;
   @override
 
   /// Maximum teams for one account.
   @JsonKey(name: 'max_teams')
-  int get maxTeams => throw _privateConstructorUsedError;
+  int get maxTeams;
   @override
 
   /// Maximum search result.
   @JsonKey(name: 'max_message_search_limit')
-  int get maxMessageSearchLimit => throw _privateConstructorUsedError;
+  int get maxMessageSearchLimit;
   @override
 
   /// Multi nodes mode (federation) enabled.
   @JsonKey(name: 'multi_nodes')
-  bool? get multiNodes => throw _privateConstructorUsedError;
+  bool? get multiNodes;
   @override
 
   /// Max inactivity seconds.
   @JsonKey(name: 'afk_age')
-  int get afkAge => throw _privateConstructorUsedError;
+  int get afkAge;
   @override
 
   /// Password authentication enabled.
   @JsonKey(name: 'auth_by_password')
-  bool? get authByPassword => throw _privateConstructorUsedError;
+  bool? get authByPassword;
   @override
 
   /// QR-code / link authentication enabled.
   @JsonKey(name: 'auth_by_qr_code')
-  bool? get authByQrCode => throw _privateConstructorUsedError;
+  bool? get authByQrCode;
   @override
 
   /// SMS authentication enabled.
   @JsonKey(name: 'auth_by_sms')
-  bool? get authBySms => throw _privateConstructorUsedError;
+  bool? get authBySms;
   @override
 
   /// Two-factor authentication (2FA) enabled.
   @JsonKey(name: 'auth_2fa')
-  bool? get auth2fa => throw _privateConstructorUsedError;
+  bool? get auth2fa;
   @override
 
   /// Kerberos authentication enabled.
   @JsonKey(name: 'auth_by_kerberos')
-  bool? get authByKerberos => throw _privateConstructorUsedError;
+  bool? get authByKerberos;
   @override
 
   /// Captcha enabled.
   @JsonKey(name: 'is_recaptcha_enabled')
-  bool? get reCaptchaEnabled => throw _privateConstructorUsedError;
+  bool? get reCaptchaEnabled;
   @override
 
   /// ReCaptcha Web Key V3.
   @JsonKey(name: 'recaptcha_web_key_v3')
-  String? get reCaptchaWebKeyV3 => throw _privateConstructorUsedError;
+  String? get reCaptchaWebKeyV3;
   @override
 
   /// ReCaptcha Web Key V2.
   @JsonKey(name: 'recaptcha_web_key_v2')
-  String? get reCaptchaWebKeyV2 => throw _privateConstructorUsedError;
+  String? get reCaptchaWebKeyV2;
   @override
 
   /// Mandatory setting of the pin code in the application.
   @JsonKey(name: 'is_pin_code_required')
-  bool get isPinCodeRequired => throw _privateConstructorUsedError;
+  bool get isPinCodeRequired;
   @override
 
   /// Max number of attempts to enter an invalid PIN code.
   @JsonKey(name: 'pin_code_wrong_limit')
-  int get pinCodeWrongLimit => throw _privateConstructorUsedError;
+  int get pinCodeWrongLimit;
   @override
 
   /// External services.
   @JsonKey(name: 'oauth_services')
-  List<OAuthService>? get oAuthServices => throw _privateConstructorUsedError;
+  List<OAuthService>? get oAuthServices;
   @override
 
   /// ICE servers for WebRTC.
   @JsonKey(name: 'ice_servers')
-  List<ICEServer> get iCEServers => throw _privateConstructorUsedError;
+  List<ICEServer> get iCEServers;
   @override
 
   /// IceTransportPolicy a ice transport policy.
   @JsonKey(name: 'ice_transport_policy')
-  String? get iceTransportPolicy => throw _privateConstructorUsedError;
+  String? get iceTransportPolicy;
   @override
 
   /// True for premise installation.
   @JsonKey(name: 'custom_server')
-  bool get customServer => throw _privateConstructorUsedError;
+  bool get customServer;
   @override
 
   /// Name of installation.
   @JsonKey(name: 'installation_type')
-  String get installationType => throw _privateConstructorUsedError;
+  String get installationType;
   @override
 
   /// Installation title, used on login screen.
   @JsonKey(name: 'installation_title')
-  String? get installationTitle => throw _privateConstructorUsedError;
+  String? get installationTitle;
   @override
 
   /// Custom application icon name, if any.
   @JsonKey(name: 'custom_app_icon_name')
-  String? get customAppIconName => throw _privateConstructorUsedError;
+  String? get customAppIconName;
   @override
 
   /// AppBackground image url, if any.
   @JsonKey(name: 'app_login_background')
-  String? get appLoginBackground => throw _privateConstructorUsedError;
+  String? get appLoginBackground;
   @override
 
   /// WebBackground image url, if any.
   @JsonKey(name: 'web_login_background')
-  String? get webLoginBackground => throw _privateConstructorUsedError;
+  String? get webLoginBackground;
   @override
 
   /// Testing installation.
   @JsonKey(name: 'is_testing')
-  bool get isTesting => throw _privateConstructorUsedError;
+  bool get isTesting;
   @override
 
   /// Yandex metrika counter id.
   @JsonKey(name: 'metrika')
-  String get metrika => throw _privateConstructorUsedError;
+  String get metrika;
   @override
 
   /// Amplitude api key.
   @JsonKey(name: 'amplitude_api_key')
-  String? get amplitudeApiKey => throw _privateConstructorUsedError;
+  String? get amplitudeApiKey;
   @override
 
   /// Minimal chars number for starting global search.
   @JsonKey(name: 'min_search_length')
-  int get minSearchLength => throw _privateConstructorUsedError;
+  int get minSearchLength;
   @override
 
   /// Resend message in n seconds if no confirmation from server given.
   @JsonKey(name: 'resend_timeout')
-  int get resendTimeout => throw _privateConstructorUsedError;
+  int get resendTimeout;
   @override
 
   /// Frontend sentry.io settings.
   @JsonKey(name: 'sentry_dsn_js')
-  String get sentryDsnJS => throw _privateConstructorUsedError;
+  String get sentryDsnJS;
   @override
 
   /// Message drafts saved on server.
   @JsonKey(name: 'server_drafts')
-  bool get serverDrafts => throw _privateConstructorUsedError;
+  bool get serverDrafts;
   @override
 
   /// Firebase settings for web-push notifications.
   @JsonKey(name: 'firebase_app_id')
-  String get firebaseAppId => throw _privateConstructorUsedError;
+  String get firebaseAppId;
   @override
 
   /// Firebase settings for web-push notifications.
   @JsonKey(name: 'firebase_sender_id')
-  String get firebaseSenderId => throw _privateConstructorUsedError;
+  String get firebaseSenderId;
   @override
 
   /// Firebase settings for web-push notifications.
   @JsonKey(name: 'firebase_api_key')
-  String get firebaseApiKey => throw _privateConstructorUsedError;
+  String get firebaseApiKey;
   @override
 
   /// Firebase settings for web-push notifications.
   @JsonKey(name: 'firebase_auth_domain')
-  String get firebaseAuthDomain => throw _privateConstructorUsedError;
+  String get firebaseAuthDomain;
   @override
 
   /// Firebase settings for web-push notifications.
   @JsonKey(name: 'firebase_database_url')
-  String get firebaseDatabaseUrl => throw _privateConstructorUsedError;
+  String get firebaseDatabaseUrl;
   @override
 
   /// Firebase settings for web-push notifications.
   @JsonKey(name: 'firebase_project_id')
-  String get firebaseProjectId => throw _privateConstructorUsedError;
+  String get firebaseProjectId;
   @override
 
   /// Firebase settings for web-push notifications.
   @JsonKey(name: 'firebase_storage_bucket')
-  String get firebaseStorageBucket => throw _privateConstructorUsedError;
+  String get firebaseStorageBucket;
   @override
 
   /// Calls version. 0 = disabled, 1 = audio only, 2 = audio+video Deprecated: use CallsAudioEnabled and CallsVideoEnabled.
   @Deprecated(
       'Calls version. 0 = disabled, 1 = audio only, 2 = audio+video Deprecated: use CallsAudioEnabled and CallsVideoEnabled.')
   @JsonKey(name: 'calls_version')
-  int get callsVersion => throw _privateConstructorUsedError;
+  int get callsVersion;
   @override
 
   /// CallsAudioEnabled enabled or disabled audio calls.
   @JsonKey(name: 'calls_audio_enabled')
-  bool get callsAudioEnabled => throw _privateConstructorUsedError;
+  bool get callsAudioEnabled;
   @override
 
   /// CallsVideoEnabled enabled or disabled video calls.
   @JsonKey(name: 'calls_video_enabled')
-  bool get callsVideoEnabled => throw _privateConstructorUsedError;
+  bool get callsVideoEnabled;
   @override
 
   /// VcsEnabled enabled or disabled vcs.
   @JsonKey(name: 'vcs_enabled')
-  bool get vcsEnabled => throw _privateConstructorUsedError;
+  bool get vcsEnabled;
   @override
 
   /// Calls functions enabled for mobile applications.
   @JsonKey(name: 'mobile_calls')
-  bool get mobileCalls => throw _privateConstructorUsedError;
+  bool get mobileCalls;
   @override
 
   /// Calls record enabled.
   @JsonKey(name: 'calls_record')
-  bool get callsRecord => throw _privateConstructorUsedError;
+  bool get callsRecord;
   @override
 
   /// Disallow call from multiple devices. Experimental.
   @JsonKey(name: 'only_one_device_per_call')
-  bool? get onlyOneDevicePerCall => throw _privateConstructorUsedError;
+  bool? get onlyOneDevicePerCall;
   @override
 
   /// Maximum number of participants per call.
   @JsonKey(name: 'max_participants_per_call')
-  int? get maxParticipantsPerCall => throw _privateConstructorUsedError;
+  int? get maxParticipantsPerCall;
   @override
 
   /// Safari push id for web-push notifications.
   @JsonKey(name: 'safari_push_id')
-  String get safariPushId => throw _privateConstructorUsedError;
+  String get safariPushId;
   @override
 
   /// Multiple message uploads.
   @JsonKey(name: 'message_uploads')
-  bool get messageUploads => throw _privateConstructorUsedError;
+  bool get messageUploads;
   @override
 
   /// Team entity naming. Experimental.
   @JsonKey(name: 'terms')
-  Terms get terms => throw _privateConstructorUsedError;
+  Terms get terms;
   @override
 
   /// Cross team communication. Experimental.
   @JsonKey(name: 'single_group_teams')
-  bool get singleGroupTeams => throw _privateConstructorUsedError;
+  bool get singleGroupTeams;
   @override
 
   /// Wiki pages in chats. Experimental.
   @JsonKey(name: 'wiki_pages')
-  bool get wikiPages => throw _privateConstructorUsedError;
+  bool get wikiPages;
   @override
 
   /// Wiki pages in chats. Experimental.
   @JsonKey(name: 'allow_admin_mute')
-  bool? get allowAdminMute => throw _privateConstructorUsedError;
+  bool? get allowAdminMute;
   @override
 
   /// Default wallpaper url for mobile apps, if any.
   @JsonKey(name: 'default_wallpaper')
-  Wallpaper? get defaultWallpaper => throw _privateConstructorUsedError;
+  Wallpaper? get defaultWallpaper;
   @override
 
   /// Support email.
   @JsonKey(name: 'support_email')
-  String get supportEmail => throw _privateConstructorUsedError;
+  String get supportEmail;
   @override
 
   /// True if server has custom theme.
   @JsonKey(name: 'custom_theme')
-  bool get customTheme => throw _privateConstructorUsedError;
+  bool get customTheme;
   @override
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'task_checklist')
-  bool get taskChecklist => throw _privateConstructorUsedError;
+  bool get taskChecklist;
   @override
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'readonly_groups')
-  bool get readonlyGroups => throw _privateConstructorUsedError;
+  bool get readonlyGroups;
   @override
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'task_dashboard')
-  bool get taskDashboard => throw _privateConstructorUsedError;
+  bool get taskDashboard;
   @override
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'task_messages')
-  bool get taskMessages => throw _privateConstructorUsedError;
+  bool get taskMessages;
   @override
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'task_public')
-  bool get taskPublic => throw _privateConstructorUsedError;
+  bool get taskPublic;
   @override
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'task_tags')
-  bool get taskTags => throw _privateConstructorUsedError;
+  bool get taskTags;
   @override
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'calls')
-  bool get calls => throw _privateConstructorUsedError;
+  bool get calls;
   @override
 
   /// Billing services integrations.
   @JsonKey(name: 'billing')
-  bool? get billing => throw _privateConstructorUsedError;
+  bool? get billing;
   @override
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'min_app_version')
-  String get minAppVersion => throw _privateConstructorUsedError;
+  String get minAppVersion;
   @override
 
   /// File Extension Whitelist.
   @JsonKey(name: 'file_extension_whitelist')
-  List<String>? get fileExtensionWhitelist => throw _privateConstructorUsedError;
+  List<String>? get fileExtensionWhitelist;
   @override
 
   /// File Extension Blacklist.
   @JsonKey(name: 'file_extension_blacklist')
-  List<String>? get fileExtensionBlacklist => throw _privateConstructorUsedError;
+  List<String>? get fileExtensionBlacklist;
   @override
 
   /// File Extension Whitelist Priority.
   @JsonKey(name: 'file_extension_whitelist_priority')
-  bool? get fileExtensionWhitelistPriority => throw _privateConstructorUsedError;
+  bool? get fileExtensionWhitelistPriority;
   @override
   @JsonKey(ignore: true)
-  _$FeaturesCopyWith<_Features> get copyWith => throw _privateConstructorUsedError;
+  _$$_FeaturesCopyWith<_$_Features> get copyWith =>
+      throw _privateConstructorUsedError;
 }

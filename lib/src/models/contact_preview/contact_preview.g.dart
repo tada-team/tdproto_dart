@@ -6,7 +6,8 @@ part of 'contact_preview.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ContactPreview _$$_ContactPreviewFromJson(Map<String, dynamic> json) => _$_ContactPreview(
+_$_ContactPreview _$$_ContactPreviewFromJson(Map<String, dynamic> json) =>
+    _$_ContactPreview(
       error: json['_error'] as String?,
       phone: json['phone'] as String,
       givenName: json['given_name'] as String,
@@ -16,7 +17,8 @@ _$_ContactPreview _$$_ContactPreviewFromJson(Map<String, dynamic> json) => _$_Co
       section: json['section'] as String,
     );
 
-Map<String, dynamic> _$$_ContactPreviewToJson(_$_ContactPreview instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ContactPreviewToJson(_$_ContactPreview instance) =>
+    <String, dynamic>{
       '_error': instance.error,
       'phone': instance.phone,
       'given_name': instance.givenName,

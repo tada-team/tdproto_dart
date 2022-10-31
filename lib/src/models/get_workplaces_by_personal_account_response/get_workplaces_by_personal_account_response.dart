@@ -10,8 +10,9 @@ class GetWorkplacesByPersonalAccountResponse with _$GetWorkplacesByPersonalAccou
   const factory GetWorkplacesByPersonalAccountResponse({
     /// .
     @JsonKey(name: 'workplaces') List<WorkplaceBilling>? workplaces,
+    
+    
   }) = _GetWorkplacesByPersonalAccountResponse;
 
-  factory GetWorkplacesByPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$GetWorkplacesByPersonalAccountResponseFromJson(json);
+  factory GetWorkplacesByPersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$GetWorkplacesByPersonalAccountResponseFromJson(json);
 }

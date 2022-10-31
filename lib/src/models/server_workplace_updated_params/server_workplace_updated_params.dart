@@ -10,8 +10,9 @@ class ServerWorkplaceUpdatedParams with _$ServerWorkplaceUpdatedParams {
   const factory ServerWorkplaceUpdatedParams({
     /// Workplaces info.
     @JsonKey(name: 'workplaces') required List<UserInfo> workplaces,
+    
+    
   }) = _ServerWorkplaceUpdatedParams;
 
-  factory ServerWorkplaceUpdatedParams.fromJson(Map<String, dynamic> json) =>
-      _$ServerWorkplaceUpdatedParamsFromJson(json);
+  factory ServerWorkplaceUpdatedParams.fromJson(Map<String, dynamic> json) => _$ServerWorkplaceUpdatedParamsFromJson(json);
 }

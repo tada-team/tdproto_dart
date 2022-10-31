@@ -10,6 +10,8 @@ class ParserMapUsersRequest with _$ParserMapUsersRequest {
   const factory ParserMapUsersRequest({
     /// Users ...
     @JsonKey(name: 'users') required List<MappedUser> users,
+    
+    
   }) = _ParserMapUsersRequest;
 
   factory ParserMapUsersRequest.fromJson(Map<String, dynamic> json) => _$ParserMapUsersRequestFromJson(json);

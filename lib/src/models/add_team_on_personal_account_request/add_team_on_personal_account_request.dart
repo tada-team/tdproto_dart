@@ -10,11 +10,12 @@ class AddTeamOnPersonalAccountRequest with _$AddTeamOnPersonalAccountRequest {
   const factory AddTeamOnPersonalAccountRequest({
     /// .
     @JsonKey(name: 'team_uuid') String? teamUuid,
-
+    
     /// .
     @JsonKey(name: 'delete_date') String? deleteDate,
+    
+    
   }) = _AddTeamOnPersonalAccountRequest;
 
-  factory AddTeamOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
-      _$AddTeamOnPersonalAccountRequestFromJson(json);
+  factory AddTeamOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) => _$AddTeamOnPersonalAccountRequestFromJson(json);
 }

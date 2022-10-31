@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'contact.dart';
@@ -11,158 +12,11 @@ part of 'contact.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Contact _$ContactFromJson(Map<String, dynamic> json) {
   return _Contact.fromJson(json);
 }
-
-/// @nodoc
-class _$ContactTearOff {
-  const _$ContactTearOff();
-
-  _Contact call(
-      {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'node') String? node,
-      @JsonKey(name: 'display_name') required String displayName,
-      @JsonKey(name: 'short_name') required String shortName,
-      @JsonKey(name: 'contact_email') required String contactEmail,
-      @JsonKey(name: 'contact_phone') required String contactPhone,
-      @JsonKey(name: 'icons') required IconData icons,
-      @JsonKey(name: 'gentime') required int gentime,
-      @JsonKey(name: 'role') required String role,
-      @JsonKey(name: 'mood') String? mood,
-      @JsonKey(name: 'status') required String teamStatus,
-      @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,
-      @JsonKey(name: 'is_archive') bool? isArchive,
-      @JsonKey(name: 'botname') String? botname,
-      @JsonKey(name: 'sections') required List<String> sections,
-      @JsonKey(name: 'can_send_message') bool? canSendMessage,
-      @JsonKey(name: 'cant_send_message_reason') String? cantSendMessageReason,
-      @JsonKey(name: 'can_call') bool? canCall,
-      @JsonKey(name: 'can_create_task') bool? canCreateTask,
-      @JsonKey(name: 'can_import_tasks') bool? canImportTasks,
-      @JsonKey(name: 'can_add_to_group') bool? canAddToGroup,
-      @JsonKey(name: 'can_delete') bool? canDelete,
-      @JsonKey(name: 'changeable_fields') List<String>? changeableFields,
-      @JsonKey(name: 'family_name') String? familyName,
-      @JsonKey(name: 'given_name') String? givenName,
-      @JsonKey(name: 'patronymic') String? patronymic,
-      @JsonKey(name: 'default_lang') String? defaultLang,
-      @JsonKey(name: 'debug_show_activity') bool? debugShowActivity,
-      @JsonKey(name: 'dropall_enabled') bool? dropallEnabled,
-      @JsonKey(name: 'alt_send') bool? altSend,
-      @JsonKey(name: 'asterisk_mention') bool? asteriskMention,
-      @JsonKey(name: 'always_send_pushes') bool? alwaysSendPushes,
-      @JsonKey(name: 'hide_pushes_content') bool? hidePushesContent,
-      @JsonKey(name: 'timezone') String? timezone,
-      @JsonKey(name: 'quiet_time_start') String? quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish') String? quietTimeFinish,
-      @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime? focusUntil,
-      @JsonKey(name: 'group_notifications_enabled') bool? groupNotificationsEnabled,
-      @JsonKey(name: 'task_notifications_enabled') bool? taskNotificationsEnabled,
-      @JsonKey(name: 'contact_short_view') bool? contactShortView,
-      @JsonKey(name: 'group_short_view') bool? groupShortView,
-      @JsonKey(name: 'task_short_view') bool? taskShortView,
-      @JsonKey(name: 'meeting_short_view') bool? meetingShortView,
-      @JsonKey(name: 'contact_mshort_view') bool? contactMshortView,
-      @JsonKey(name: 'group_mshort_view') bool? groupMshortView,
-      @JsonKey(name: 'auth_2fa_enabled') bool? auth2faEnabled,
-      @JsonKey(name: 'auth_2fa_status') String? auth2faStatus,
-      @JsonKey(name: 'task_mshort_view') bool? taskMshortView,
-      @JsonKey(name: 'meeting_mshort_view') bool? meetingMshortView,
-      @JsonKey(name: 'contact_show_archived') bool? contactShowArchived,
-      @JsonKey(name: 'unread_first') bool? unreadFirst,
-      @JsonKey(name: 'munread_first') bool? mUnreadFirst,
-      @JsonKey(name: 'can_add_to_team') bool? canAddToTeam,
-      @JsonKey(name: 'can_manage_sections') bool? canManageSections,
-      @JsonKey(name: 'can_manage_projects') bool? canManageProjects,
-      @JsonKey(name: 'can_manage_tags') bool? canManageTags,
-      @JsonKey(name: 'can_manage_integrations') bool? canManageIntegrations,
-      @JsonKey(name: 'can_manage_color_rules') bool? canManageColorRules,
-      @JsonKey(name: 'can_create_group') bool? canCreateGroup,
-      @JsonKey(name: 'can_create_meeting') bool? canCreateMeeting,
-      @JsonKey(name: 'can_join_public_groups') bool? canJoinPublicGroups,
-      @JsonKey(name: 'can_join_public_tasks') bool? canJoinPublicTasks,
-      @JsonKey(name: 'can_import_chats') bool? canImportChats,
-      @JsonKey(name: 'custom_fields') ContactCustomFields? customFields,
-      @Deprecated('Deprecated.') @JsonKey(name: 'can_delete_any_message') bool? canDeleteAnyMessage}) {
-    return _Contact(
-      jid: jid,
-      node: node,
-      displayName: displayName,
-      shortName: shortName,
-      contactEmail: contactEmail,
-      contactPhone: contactPhone,
-      icons: icons,
-      gentime: gentime,
-      role: role,
-      mood: mood,
-      teamStatus: teamStatus,
-      lastActivity: lastActivity,
-      isArchive: isArchive,
-      botname: botname,
-      sections: sections,
-      canSendMessage: canSendMessage,
-      cantSendMessageReason: cantSendMessageReason,
-      canCall: canCall,
-      canCreateTask: canCreateTask,
-      canImportTasks: canImportTasks,
-      canAddToGroup: canAddToGroup,
-      canDelete: canDelete,
-      changeableFields: changeableFields,
-      familyName: familyName,
-      givenName: givenName,
-      patronymic: patronymic,
-      defaultLang: defaultLang,
-      debugShowActivity: debugShowActivity,
-      dropallEnabled: dropallEnabled,
-      altSend: altSend,
-      asteriskMention: asteriskMention,
-      alwaysSendPushes: alwaysSendPushes,
-      hidePushesContent: hidePushesContent,
-      timezone: timezone,
-      quietTimeStart: quietTimeStart,
-      quietTimeFinish: quietTimeFinish,
-      focusUntil: focusUntil,
-      groupNotificationsEnabled: groupNotificationsEnabled,
-      taskNotificationsEnabled: taskNotificationsEnabled,
-      contactShortView: contactShortView,
-      groupShortView: groupShortView,
-      taskShortView: taskShortView,
-      meetingShortView: meetingShortView,
-      contactMshortView: contactMshortView,
-      groupMshortView: groupMshortView,
-      auth2faEnabled: auth2faEnabled,
-      auth2faStatus: auth2faStatus,
-      taskMshortView: taskMshortView,
-      meetingMshortView: meetingMshortView,
-      contactShowArchived: contactShowArchived,
-      unreadFirst: unreadFirst,
-      mUnreadFirst: mUnreadFirst,
-      canAddToTeam: canAddToTeam,
-      canManageSections: canManageSections,
-      canManageProjects: canManageProjects,
-      canManageTags: canManageTags,
-      canManageIntegrations: canManageIntegrations,
-      canManageColorRules: canManageColorRules,
-      canCreateGroup: canCreateGroup,
-      canCreateMeeting: canCreateMeeting,
-      canJoinPublicGroups: canJoinPublicGroups,
-      canJoinPublicTasks: canJoinPublicTasks,
-      canImportChats: canImportChats,
-      customFields: customFields,
-      canDeleteAnyMessage: canDeleteAnyMessage,
-    );
-  }
-
-  Contact fromJson(Map<String, Object> json) {
-    return Contact.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Contact = _$ContactTearOff();
 
 /// @nodoc
 mixin _$Contact {
@@ -436,103 +290,176 @@ mixin _$Contact {
 
 /// @nodoc
 abstract class $ContactCopyWith<$Res> {
-  factory $ContactCopyWith(Contact value, $Res Function(Contact) then) = _$ContactCopyWithImpl<$Res>;
+  factory $ContactCopyWith(Contact value, $Res Function(Contact) then) =
+      _$ContactCopyWithImpl<$Res, Contact>;
+  @useResult
   $Res call(
-      {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'node') String? node,
-      @JsonKey(name: 'display_name') String displayName,
-      @JsonKey(name: 'short_name') String shortName,
-      @JsonKey(name: 'contact_email') String contactEmail,
-      @JsonKey(name: 'contact_phone') String contactPhone,
-      @JsonKey(name: 'icons') IconData icons,
-      @JsonKey(name: 'gentime') int gentime,
-      @JsonKey(name: 'role') String role,
-      @JsonKey(name: 'mood') String? mood,
-      @JsonKey(name: 'status') String teamStatus,
-      @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,
-      @JsonKey(name: 'is_archive') bool? isArchive,
-      @JsonKey(name: 'botname') String? botname,
-      @JsonKey(name: 'sections') List<String> sections,
-      @JsonKey(name: 'can_send_message') bool? canSendMessage,
-      @JsonKey(name: 'cant_send_message_reason') String? cantSendMessageReason,
-      @JsonKey(name: 'can_call') bool? canCall,
-      @JsonKey(name: 'can_create_task') bool? canCreateTask,
-      @JsonKey(name: 'can_import_tasks') bool? canImportTasks,
-      @JsonKey(name: 'can_add_to_group') bool? canAddToGroup,
-      @JsonKey(name: 'can_delete') bool? canDelete,
-      @JsonKey(name: 'changeable_fields') List<String>? changeableFields,
-      @JsonKey(name: 'family_name') String? familyName,
-      @JsonKey(name: 'given_name') String? givenName,
-      @JsonKey(name: 'patronymic') String? patronymic,
-      @JsonKey(name: 'default_lang') String? defaultLang,
-      @JsonKey(name: 'debug_show_activity') bool? debugShowActivity,
-      @JsonKey(name: 'dropall_enabled') bool? dropallEnabled,
-      @JsonKey(name: 'alt_send') bool? altSend,
-      @JsonKey(name: 'asterisk_mention') bool? asteriskMention,
-      @JsonKey(name: 'always_send_pushes') bool? alwaysSendPushes,
-      @JsonKey(name: 'hide_pushes_content') bool? hidePushesContent,
-      @JsonKey(name: 'timezone') String? timezone,
-      @JsonKey(name: 'quiet_time_start') String? quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish') String? quietTimeFinish,
-      @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime? focusUntil,
-      @JsonKey(name: 'group_notifications_enabled') bool? groupNotificationsEnabled,
-      @JsonKey(name: 'task_notifications_enabled') bool? taskNotificationsEnabled,
-      @JsonKey(name: 'contact_short_view') bool? contactShortView,
-      @JsonKey(name: 'group_short_view') bool? groupShortView,
-      @JsonKey(name: 'task_short_view') bool? taskShortView,
-      @JsonKey(name: 'meeting_short_view') bool? meetingShortView,
-      @JsonKey(name: 'contact_mshort_view') bool? contactMshortView,
-      @JsonKey(name: 'group_mshort_view') bool? groupMshortView,
-      @JsonKey(name: 'auth_2fa_enabled') bool? auth2faEnabled,
-      @JsonKey(name: 'auth_2fa_status') String? auth2faStatus,
-      @JsonKey(name: 'task_mshort_view') bool? taskMshortView,
-      @JsonKey(name: 'meeting_mshort_view') bool? meetingMshortView,
-      @JsonKey(name: 'contact_show_archived') bool? contactShowArchived,
-      @JsonKey(name: 'unread_first') bool? unreadFirst,
-      @JsonKey(name: 'munread_first') bool? mUnreadFirst,
-      @JsonKey(name: 'can_add_to_team') bool? canAddToTeam,
-      @JsonKey(name: 'can_manage_sections') bool? canManageSections,
-      @JsonKey(name: 'can_manage_projects') bool? canManageProjects,
-      @JsonKey(name: 'can_manage_tags') bool? canManageTags,
-      @JsonKey(name: 'can_manage_integrations') bool? canManageIntegrations,
-      @JsonKey(name: 'can_manage_color_rules') bool? canManageColorRules,
-      @JsonKey(name: 'can_create_group') bool? canCreateGroup,
-      @JsonKey(name: 'can_create_meeting') bool? canCreateMeeting,
-      @JsonKey(name: 'can_join_public_groups') bool? canJoinPublicGroups,
-      @JsonKey(name: 'can_join_public_tasks') bool? canJoinPublicTasks,
-      @JsonKey(name: 'can_import_chats') bool? canImportChats,
-      @JsonKey(name: 'custom_fields') ContactCustomFields? customFields,
-      @Deprecated('Deprecated.') @JsonKey(name: 'can_delete_any_message') bool? canDeleteAnyMessage});
+      {@JsonKey(name: 'jid')
+          String jid,
+      @JsonKey(name: 'node')
+          String? node,
+      @JsonKey(name: 'display_name')
+          String displayName,
+      @JsonKey(name: 'short_name')
+          String shortName,
+      @JsonKey(name: 'contact_email')
+          String contactEmail,
+      @JsonKey(name: 'contact_phone')
+          String contactPhone,
+      @JsonKey(name: 'icons')
+          IconData icons,
+      @JsonKey(name: 'gentime')
+          int gentime,
+      @JsonKey(name: 'role')
+          String role,
+      @JsonKey(name: 'mood')
+          String? mood,
+      @JsonKey(name: 'status')
+          String teamStatus,
+      @JsonKey(name: 'last_activity')
+      @DateTimeConverter()
+          DateTime? lastActivity,
+      @JsonKey(name: 'is_archive')
+          bool? isArchive,
+      @JsonKey(name: 'botname')
+          String? botname,
+      @JsonKey(name: 'sections')
+          List<String> sections,
+      @JsonKey(name: 'can_send_message')
+          bool? canSendMessage,
+      @JsonKey(name: 'cant_send_message_reason')
+          String? cantSendMessageReason,
+      @JsonKey(name: 'can_call')
+          bool? canCall,
+      @JsonKey(name: 'can_create_task')
+          bool? canCreateTask,
+      @JsonKey(name: 'can_import_tasks')
+          bool? canImportTasks,
+      @JsonKey(name: 'can_add_to_group')
+          bool? canAddToGroup,
+      @JsonKey(name: 'can_delete')
+          bool? canDelete,
+      @JsonKey(name: 'changeable_fields')
+          List<String>? changeableFields,
+      @JsonKey(name: 'family_name')
+          String? familyName,
+      @JsonKey(name: 'given_name')
+          String? givenName,
+      @JsonKey(name: 'patronymic')
+          String? patronymic,
+      @JsonKey(name: 'default_lang')
+          String? defaultLang,
+      @JsonKey(name: 'debug_show_activity')
+          bool? debugShowActivity,
+      @JsonKey(name: 'dropall_enabled')
+          bool? dropallEnabled,
+      @JsonKey(name: 'alt_send')
+          bool? altSend,
+      @JsonKey(name: 'asterisk_mention')
+          bool? asteriskMention,
+      @JsonKey(name: 'always_send_pushes')
+          bool? alwaysSendPushes,
+      @JsonKey(name: 'hide_pushes_content')
+          bool? hidePushesContent,
+      @JsonKey(name: 'timezone')
+          String? timezone,
+      @JsonKey(name: 'quiet_time_start')
+          String? quietTimeStart,
+      @JsonKey(name: 'quiet_time_finish')
+          String? quietTimeFinish,
+      @JsonKey(name: 'focus_until')
+      @DateTimeConverter()
+          DateTime? focusUntil,
+      @JsonKey(name: 'group_notifications_enabled')
+          bool? groupNotificationsEnabled,
+      @JsonKey(name: 'task_notifications_enabled')
+          bool? taskNotificationsEnabled,
+      @JsonKey(name: 'contact_short_view')
+          bool? contactShortView,
+      @JsonKey(name: 'group_short_view')
+          bool? groupShortView,
+      @JsonKey(name: 'task_short_view')
+          bool? taskShortView,
+      @JsonKey(name: 'meeting_short_view')
+          bool? meetingShortView,
+      @JsonKey(name: 'contact_mshort_view')
+          bool? contactMshortView,
+      @JsonKey(name: 'group_mshort_view')
+          bool? groupMshortView,
+      @JsonKey(name: 'auth_2fa_enabled')
+          bool? auth2faEnabled,
+      @JsonKey(name: 'auth_2fa_status')
+          String? auth2faStatus,
+      @JsonKey(name: 'task_mshort_view')
+          bool? taskMshortView,
+      @JsonKey(name: 'meeting_mshort_view')
+          bool? meetingMshortView,
+      @JsonKey(name: 'contact_show_archived')
+          bool? contactShowArchived,
+      @JsonKey(name: 'unread_first')
+          bool? unreadFirst,
+      @JsonKey(name: 'munread_first')
+          bool? mUnreadFirst,
+      @JsonKey(name: 'can_add_to_team')
+          bool? canAddToTeam,
+      @JsonKey(name: 'can_manage_sections')
+          bool? canManageSections,
+      @JsonKey(name: 'can_manage_projects')
+          bool? canManageProjects,
+      @JsonKey(name: 'can_manage_tags')
+          bool? canManageTags,
+      @JsonKey(name: 'can_manage_integrations')
+          bool? canManageIntegrations,
+      @JsonKey(name: 'can_manage_color_rules')
+          bool? canManageColorRules,
+      @JsonKey(name: 'can_create_group')
+          bool? canCreateGroup,
+      @JsonKey(name: 'can_create_meeting')
+          bool? canCreateMeeting,
+      @JsonKey(name: 'can_join_public_groups')
+          bool? canJoinPublicGroups,
+      @JsonKey(name: 'can_join_public_tasks')
+          bool? canJoinPublicTasks,
+      @JsonKey(name: 'can_import_chats')
+          bool? canImportChats,
+      @JsonKey(name: 'custom_fields')
+          ContactCustomFields? customFields,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'can_delete_any_message')
+          bool? canDeleteAnyMessage});
 
   $IconDataCopyWith<$Res> get icons;
   $ContactCustomFieldsCopyWith<$Res>? get customFields;
 }
 
 /// @nodoc
-class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
+class _$ContactCopyWithImpl<$Res, $Val extends Contact>
+    implements $ContactCopyWith<$Res> {
   _$ContactCopyWithImpl(this._value, this._then);
 
-  final Contact _value;
   // ignore: unused_field
-  final $Res Function(Contact) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? jid = freezed,
+    Object? jid = null,
     Object? node = freezed,
-    Object? displayName = freezed,
-    Object? shortName = freezed,
-    Object? contactEmail = freezed,
-    Object? contactPhone = freezed,
-    Object? icons = freezed,
-    Object? gentime = freezed,
-    Object? role = freezed,
+    Object? displayName = null,
+    Object? shortName = null,
+    Object? contactEmail = null,
+    Object? contactPhone = null,
+    Object? icons = null,
+    Object? gentime = null,
+    Object? role = null,
     Object? mood = freezed,
-    Object? teamStatus = freezed,
+    Object? teamStatus = null,
     Object? lastActivity = freezed,
     Object? isArchive = freezed,
     Object? botname = freezed,
-    Object? sections = freezed,
+    Object? sections = null,
     Object? canSendMessage = freezed,
     Object? cantSendMessageReason = freezed,
     Object? canCall = freezed,
@@ -585,358 +512,431 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
     Object? canDeleteAnyMessage = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed
+      jid: null == jid
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      node: node == freezed
+      node: freezed == node
           ? _value.node
           : node // ignore: cast_nullable_to_non_nullable
               as String?,
-      displayName: displayName == freezed
+      displayName: null == displayName
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String,
-      shortName: shortName == freezed
+      shortName: null == shortName
           ? _value.shortName
           : shortName // ignore: cast_nullable_to_non_nullable
               as String,
-      contactEmail: contactEmail == freezed
+      contactEmail: null == contactEmail
           ? _value.contactEmail
           : contactEmail // ignore: cast_nullable_to_non_nullable
               as String,
-      contactPhone: contactPhone == freezed
+      contactPhone: null == contactPhone
           ? _value.contactPhone
           : contactPhone // ignore: cast_nullable_to_non_nullable
               as String,
-      icons: icons == freezed
+      icons: null == icons
           ? _value.icons
           : icons // ignore: cast_nullable_to_non_nullable
               as IconData,
-      gentime: gentime == freezed
+      gentime: null == gentime
           ? _value.gentime
           : gentime // ignore: cast_nullable_to_non_nullable
               as int,
-      role: role == freezed
+      role: null == role
           ? _value.role
           : role // ignore: cast_nullable_to_non_nullable
               as String,
-      mood: mood == freezed
+      mood: freezed == mood
           ? _value.mood
           : mood // ignore: cast_nullable_to_non_nullable
               as String?,
-      teamStatus: teamStatus == freezed
+      teamStatus: null == teamStatus
           ? _value.teamStatus
           : teamStatus // ignore: cast_nullable_to_non_nullable
               as String,
-      lastActivity: lastActivity == freezed
+      lastActivity: freezed == lastActivity
           ? _value.lastActivity
           : lastActivity // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      isArchive: isArchive == freezed
+      isArchive: freezed == isArchive
           ? _value.isArchive
           : isArchive // ignore: cast_nullable_to_non_nullable
               as bool?,
-      botname: botname == freezed
+      botname: freezed == botname
           ? _value.botname
           : botname // ignore: cast_nullable_to_non_nullable
               as String?,
-      sections: sections == freezed
+      sections: null == sections
           ? _value.sections
           : sections // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      canSendMessage: canSendMessage == freezed
+      canSendMessage: freezed == canSendMessage
           ? _value.canSendMessage
           : canSendMessage // ignore: cast_nullable_to_non_nullable
               as bool?,
-      cantSendMessageReason: cantSendMessageReason == freezed
+      cantSendMessageReason: freezed == cantSendMessageReason
           ? _value.cantSendMessageReason
           : cantSendMessageReason // ignore: cast_nullable_to_non_nullable
               as String?,
-      canCall: canCall == freezed
+      canCall: freezed == canCall
           ? _value.canCall
           : canCall // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canCreateTask: canCreateTask == freezed
+      canCreateTask: freezed == canCreateTask
           ? _value.canCreateTask
           : canCreateTask // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canImportTasks: canImportTasks == freezed
+      canImportTasks: freezed == canImportTasks
           ? _value.canImportTasks
           : canImportTasks // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canAddToGroup: canAddToGroup == freezed
+      canAddToGroup: freezed == canAddToGroup
           ? _value.canAddToGroup
           : canAddToGroup // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canDelete: canDelete == freezed
+      canDelete: freezed == canDelete
           ? _value.canDelete
           : canDelete // ignore: cast_nullable_to_non_nullable
               as bool?,
-      changeableFields: changeableFields == freezed
+      changeableFields: freezed == changeableFields
           ? _value.changeableFields
           : changeableFields // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      familyName: familyName == freezed
+      familyName: freezed == familyName
           ? _value.familyName
           : familyName // ignore: cast_nullable_to_non_nullable
               as String?,
-      givenName: givenName == freezed
+      givenName: freezed == givenName
           ? _value.givenName
           : givenName // ignore: cast_nullable_to_non_nullable
               as String?,
-      patronymic: patronymic == freezed
+      patronymic: freezed == patronymic
           ? _value.patronymic
           : patronymic // ignore: cast_nullable_to_non_nullable
               as String?,
-      defaultLang: defaultLang == freezed
+      defaultLang: freezed == defaultLang
           ? _value.defaultLang
           : defaultLang // ignore: cast_nullable_to_non_nullable
               as String?,
-      debugShowActivity: debugShowActivity == freezed
+      debugShowActivity: freezed == debugShowActivity
           ? _value.debugShowActivity
           : debugShowActivity // ignore: cast_nullable_to_non_nullable
               as bool?,
-      dropallEnabled: dropallEnabled == freezed
+      dropallEnabled: freezed == dropallEnabled
           ? _value.dropallEnabled
           : dropallEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      altSend: altSend == freezed
+      altSend: freezed == altSend
           ? _value.altSend
           : altSend // ignore: cast_nullable_to_non_nullable
               as bool?,
-      asteriskMention: asteriskMention == freezed
+      asteriskMention: freezed == asteriskMention
           ? _value.asteriskMention
           : asteriskMention // ignore: cast_nullable_to_non_nullable
               as bool?,
-      alwaysSendPushes: alwaysSendPushes == freezed
+      alwaysSendPushes: freezed == alwaysSendPushes
           ? _value.alwaysSendPushes
           : alwaysSendPushes // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hidePushesContent: hidePushesContent == freezed
+      hidePushesContent: freezed == hidePushesContent
           ? _value.hidePushesContent
           : hidePushesContent // ignore: cast_nullable_to_non_nullable
               as bool?,
-      timezone: timezone == freezed
+      timezone: freezed == timezone
           ? _value.timezone
           : timezone // ignore: cast_nullable_to_non_nullable
               as String?,
-      quietTimeStart: quietTimeStart == freezed
+      quietTimeStart: freezed == quietTimeStart
           ? _value.quietTimeStart
           : quietTimeStart // ignore: cast_nullable_to_non_nullable
               as String?,
-      quietTimeFinish: quietTimeFinish == freezed
+      quietTimeFinish: freezed == quietTimeFinish
           ? _value.quietTimeFinish
           : quietTimeFinish // ignore: cast_nullable_to_non_nullable
               as String?,
-      focusUntil: focusUntil == freezed
+      focusUntil: freezed == focusUntil
           ? _value.focusUntil
           : focusUntil // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      groupNotificationsEnabled: groupNotificationsEnabled == freezed
+      groupNotificationsEnabled: freezed == groupNotificationsEnabled
           ? _value.groupNotificationsEnabled
           : groupNotificationsEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      taskNotificationsEnabled: taskNotificationsEnabled == freezed
+      taskNotificationsEnabled: freezed == taskNotificationsEnabled
           ? _value.taskNotificationsEnabled
           : taskNotificationsEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      contactShortView: contactShortView == freezed
+      contactShortView: freezed == contactShortView
           ? _value.contactShortView
           : contactShortView // ignore: cast_nullable_to_non_nullable
               as bool?,
-      groupShortView: groupShortView == freezed
+      groupShortView: freezed == groupShortView
           ? _value.groupShortView
           : groupShortView // ignore: cast_nullable_to_non_nullable
               as bool?,
-      taskShortView: taskShortView == freezed
+      taskShortView: freezed == taskShortView
           ? _value.taskShortView
           : taskShortView // ignore: cast_nullable_to_non_nullable
               as bool?,
-      meetingShortView: meetingShortView == freezed
+      meetingShortView: freezed == meetingShortView
           ? _value.meetingShortView
           : meetingShortView // ignore: cast_nullable_to_non_nullable
               as bool?,
-      contactMshortView: contactMshortView == freezed
+      contactMshortView: freezed == contactMshortView
           ? _value.contactMshortView
           : contactMshortView // ignore: cast_nullable_to_non_nullable
               as bool?,
-      groupMshortView: groupMshortView == freezed
+      groupMshortView: freezed == groupMshortView
           ? _value.groupMshortView
           : groupMshortView // ignore: cast_nullable_to_non_nullable
               as bool?,
-      auth2faEnabled: auth2faEnabled == freezed
+      auth2faEnabled: freezed == auth2faEnabled
           ? _value.auth2faEnabled
           : auth2faEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      auth2faStatus: auth2faStatus == freezed
+      auth2faStatus: freezed == auth2faStatus
           ? _value.auth2faStatus
           : auth2faStatus // ignore: cast_nullable_to_non_nullable
               as String?,
-      taskMshortView: taskMshortView == freezed
+      taskMshortView: freezed == taskMshortView
           ? _value.taskMshortView
           : taskMshortView // ignore: cast_nullable_to_non_nullable
               as bool?,
-      meetingMshortView: meetingMshortView == freezed
+      meetingMshortView: freezed == meetingMshortView
           ? _value.meetingMshortView
           : meetingMshortView // ignore: cast_nullable_to_non_nullable
               as bool?,
-      contactShowArchived: contactShowArchived == freezed
+      contactShowArchived: freezed == contactShowArchived
           ? _value.contactShowArchived
           : contactShowArchived // ignore: cast_nullable_to_non_nullable
               as bool?,
-      unreadFirst: unreadFirst == freezed
+      unreadFirst: freezed == unreadFirst
           ? _value.unreadFirst
           : unreadFirst // ignore: cast_nullable_to_non_nullable
               as bool?,
-      mUnreadFirst: mUnreadFirst == freezed
+      mUnreadFirst: freezed == mUnreadFirst
           ? _value.mUnreadFirst
           : mUnreadFirst // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canAddToTeam: canAddToTeam == freezed
+      canAddToTeam: freezed == canAddToTeam
           ? _value.canAddToTeam
           : canAddToTeam // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canManageSections: canManageSections == freezed
+      canManageSections: freezed == canManageSections
           ? _value.canManageSections
           : canManageSections // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canManageProjects: canManageProjects == freezed
+      canManageProjects: freezed == canManageProjects
           ? _value.canManageProjects
           : canManageProjects // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canManageTags: canManageTags == freezed
+      canManageTags: freezed == canManageTags
           ? _value.canManageTags
           : canManageTags // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canManageIntegrations: canManageIntegrations == freezed
+      canManageIntegrations: freezed == canManageIntegrations
           ? _value.canManageIntegrations
           : canManageIntegrations // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canManageColorRules: canManageColorRules == freezed
+      canManageColorRules: freezed == canManageColorRules
           ? _value.canManageColorRules
           : canManageColorRules // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canCreateGroup: canCreateGroup == freezed
+      canCreateGroup: freezed == canCreateGroup
           ? _value.canCreateGroup
           : canCreateGroup // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canCreateMeeting: canCreateMeeting == freezed
+      canCreateMeeting: freezed == canCreateMeeting
           ? _value.canCreateMeeting
           : canCreateMeeting // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canJoinPublicGroups: canJoinPublicGroups == freezed
+      canJoinPublicGroups: freezed == canJoinPublicGroups
           ? _value.canJoinPublicGroups
           : canJoinPublicGroups // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canJoinPublicTasks: canJoinPublicTasks == freezed
+      canJoinPublicTasks: freezed == canJoinPublicTasks
           ? _value.canJoinPublicTasks
           : canJoinPublicTasks // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canImportChats: canImportChats == freezed
+      canImportChats: freezed == canImportChats
           ? _value.canImportChats
           : canImportChats // ignore: cast_nullable_to_non_nullable
               as bool?,
-      customFields: customFields == freezed
+      customFields: freezed == customFields
           ? _value.customFields
           : customFields // ignore: cast_nullable_to_non_nullable
               as ContactCustomFields?,
-      canDeleteAnyMessage: canDeleteAnyMessage == freezed
+      canDeleteAnyMessage: freezed == canDeleteAnyMessage
           ? _value.canDeleteAnyMessage
           : canDeleteAnyMessage // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $IconDataCopyWith<$Res> get icons {
     return $IconDataCopyWith<$Res>(_value.icons, (value) {
-      return _then(_value.copyWith(icons: value));
+      return _then(_value.copyWith(icons: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $ContactCustomFieldsCopyWith<$Res>? get customFields {
     if (_value.customFields == null) {
       return null;
     }
 
     return $ContactCustomFieldsCopyWith<$Res>(_value.customFields!, (value) {
-      return _then(_value.copyWith(customFields: value));
+      return _then(_value.copyWith(customFields: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$ContactCopyWith<$Res> implements $ContactCopyWith<$Res> {
-  factory _$ContactCopyWith(_Contact value, $Res Function(_Contact) then) = __$ContactCopyWithImpl<$Res>;
+abstract class _$$_ContactCopyWith<$Res> implements $ContactCopyWith<$Res> {
+  factory _$$_ContactCopyWith(
+          _$_Contact value, $Res Function(_$_Contact) then) =
+      __$$_ContactCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'node') String? node,
-      @JsonKey(name: 'display_name') String displayName,
-      @JsonKey(name: 'short_name') String shortName,
-      @JsonKey(name: 'contact_email') String contactEmail,
-      @JsonKey(name: 'contact_phone') String contactPhone,
-      @JsonKey(name: 'icons') IconData icons,
-      @JsonKey(name: 'gentime') int gentime,
-      @JsonKey(name: 'role') String role,
-      @JsonKey(name: 'mood') String? mood,
-      @JsonKey(name: 'status') String teamStatus,
-      @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,
-      @JsonKey(name: 'is_archive') bool? isArchive,
-      @JsonKey(name: 'botname') String? botname,
-      @JsonKey(name: 'sections') List<String> sections,
-      @JsonKey(name: 'can_send_message') bool? canSendMessage,
-      @JsonKey(name: 'cant_send_message_reason') String? cantSendMessageReason,
-      @JsonKey(name: 'can_call') bool? canCall,
-      @JsonKey(name: 'can_create_task') bool? canCreateTask,
-      @JsonKey(name: 'can_import_tasks') bool? canImportTasks,
-      @JsonKey(name: 'can_add_to_group') bool? canAddToGroup,
-      @JsonKey(name: 'can_delete') bool? canDelete,
-      @JsonKey(name: 'changeable_fields') List<String>? changeableFields,
-      @JsonKey(name: 'family_name') String? familyName,
-      @JsonKey(name: 'given_name') String? givenName,
-      @JsonKey(name: 'patronymic') String? patronymic,
-      @JsonKey(name: 'default_lang') String? defaultLang,
-      @JsonKey(name: 'debug_show_activity') bool? debugShowActivity,
-      @JsonKey(name: 'dropall_enabled') bool? dropallEnabled,
-      @JsonKey(name: 'alt_send') bool? altSend,
-      @JsonKey(name: 'asterisk_mention') bool? asteriskMention,
-      @JsonKey(name: 'always_send_pushes') bool? alwaysSendPushes,
-      @JsonKey(name: 'hide_pushes_content') bool? hidePushesContent,
-      @JsonKey(name: 'timezone') String? timezone,
-      @JsonKey(name: 'quiet_time_start') String? quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish') String? quietTimeFinish,
-      @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime? focusUntil,
-      @JsonKey(name: 'group_notifications_enabled') bool? groupNotificationsEnabled,
-      @JsonKey(name: 'task_notifications_enabled') bool? taskNotificationsEnabled,
-      @JsonKey(name: 'contact_short_view') bool? contactShortView,
-      @JsonKey(name: 'group_short_view') bool? groupShortView,
-      @JsonKey(name: 'task_short_view') bool? taskShortView,
-      @JsonKey(name: 'meeting_short_view') bool? meetingShortView,
-      @JsonKey(name: 'contact_mshort_view') bool? contactMshortView,
-      @JsonKey(name: 'group_mshort_view') bool? groupMshortView,
-      @JsonKey(name: 'auth_2fa_enabled') bool? auth2faEnabled,
-      @JsonKey(name: 'auth_2fa_status') String? auth2faStatus,
-      @JsonKey(name: 'task_mshort_view') bool? taskMshortView,
-      @JsonKey(name: 'meeting_mshort_view') bool? meetingMshortView,
-      @JsonKey(name: 'contact_show_archived') bool? contactShowArchived,
-      @JsonKey(name: 'unread_first') bool? unreadFirst,
-      @JsonKey(name: 'munread_first') bool? mUnreadFirst,
-      @JsonKey(name: 'can_add_to_team') bool? canAddToTeam,
-      @JsonKey(name: 'can_manage_sections') bool? canManageSections,
-      @JsonKey(name: 'can_manage_projects') bool? canManageProjects,
-      @JsonKey(name: 'can_manage_tags') bool? canManageTags,
-      @JsonKey(name: 'can_manage_integrations') bool? canManageIntegrations,
-      @JsonKey(name: 'can_manage_color_rules') bool? canManageColorRules,
-      @JsonKey(name: 'can_create_group') bool? canCreateGroup,
-      @JsonKey(name: 'can_create_meeting') bool? canCreateMeeting,
-      @JsonKey(name: 'can_join_public_groups') bool? canJoinPublicGroups,
-      @JsonKey(name: 'can_join_public_tasks') bool? canJoinPublicTasks,
-      @JsonKey(name: 'can_import_chats') bool? canImportChats,
-      @JsonKey(name: 'custom_fields') ContactCustomFields? customFields,
-      @Deprecated('Deprecated.') @JsonKey(name: 'can_delete_any_message') bool? canDeleteAnyMessage});
+      {@JsonKey(name: 'jid')
+          String jid,
+      @JsonKey(name: 'node')
+          String? node,
+      @JsonKey(name: 'display_name')
+          String displayName,
+      @JsonKey(name: 'short_name')
+          String shortName,
+      @JsonKey(name: 'contact_email')
+          String contactEmail,
+      @JsonKey(name: 'contact_phone')
+          String contactPhone,
+      @JsonKey(name: 'icons')
+          IconData icons,
+      @JsonKey(name: 'gentime')
+          int gentime,
+      @JsonKey(name: 'role')
+          String role,
+      @JsonKey(name: 'mood')
+          String? mood,
+      @JsonKey(name: 'status')
+          String teamStatus,
+      @JsonKey(name: 'last_activity')
+      @DateTimeConverter()
+          DateTime? lastActivity,
+      @JsonKey(name: 'is_archive')
+          bool? isArchive,
+      @JsonKey(name: 'botname')
+          String? botname,
+      @JsonKey(name: 'sections')
+          List<String> sections,
+      @JsonKey(name: 'can_send_message')
+          bool? canSendMessage,
+      @JsonKey(name: 'cant_send_message_reason')
+          String? cantSendMessageReason,
+      @JsonKey(name: 'can_call')
+          bool? canCall,
+      @JsonKey(name: 'can_create_task')
+          bool? canCreateTask,
+      @JsonKey(name: 'can_import_tasks')
+          bool? canImportTasks,
+      @JsonKey(name: 'can_add_to_group')
+          bool? canAddToGroup,
+      @JsonKey(name: 'can_delete')
+          bool? canDelete,
+      @JsonKey(name: 'changeable_fields')
+          List<String>? changeableFields,
+      @JsonKey(name: 'family_name')
+          String? familyName,
+      @JsonKey(name: 'given_name')
+          String? givenName,
+      @JsonKey(name: 'patronymic')
+          String? patronymic,
+      @JsonKey(name: 'default_lang')
+          String? defaultLang,
+      @JsonKey(name: 'debug_show_activity')
+          bool? debugShowActivity,
+      @JsonKey(name: 'dropall_enabled')
+          bool? dropallEnabled,
+      @JsonKey(name: 'alt_send')
+          bool? altSend,
+      @JsonKey(name: 'asterisk_mention')
+          bool? asteriskMention,
+      @JsonKey(name: 'always_send_pushes')
+          bool? alwaysSendPushes,
+      @JsonKey(name: 'hide_pushes_content')
+          bool? hidePushesContent,
+      @JsonKey(name: 'timezone')
+          String? timezone,
+      @JsonKey(name: 'quiet_time_start')
+          String? quietTimeStart,
+      @JsonKey(name: 'quiet_time_finish')
+          String? quietTimeFinish,
+      @JsonKey(name: 'focus_until')
+      @DateTimeConverter()
+          DateTime? focusUntil,
+      @JsonKey(name: 'group_notifications_enabled')
+          bool? groupNotificationsEnabled,
+      @JsonKey(name: 'task_notifications_enabled')
+          bool? taskNotificationsEnabled,
+      @JsonKey(name: 'contact_short_view')
+          bool? contactShortView,
+      @JsonKey(name: 'group_short_view')
+          bool? groupShortView,
+      @JsonKey(name: 'task_short_view')
+          bool? taskShortView,
+      @JsonKey(name: 'meeting_short_view')
+          bool? meetingShortView,
+      @JsonKey(name: 'contact_mshort_view')
+          bool? contactMshortView,
+      @JsonKey(name: 'group_mshort_view')
+          bool? groupMshortView,
+      @JsonKey(name: 'auth_2fa_enabled')
+          bool? auth2faEnabled,
+      @JsonKey(name: 'auth_2fa_status')
+          String? auth2faStatus,
+      @JsonKey(name: 'task_mshort_view')
+          bool? taskMshortView,
+      @JsonKey(name: 'meeting_mshort_view')
+          bool? meetingMshortView,
+      @JsonKey(name: 'contact_show_archived')
+          bool? contactShowArchived,
+      @JsonKey(name: 'unread_first')
+          bool? unreadFirst,
+      @JsonKey(name: 'munread_first')
+          bool? mUnreadFirst,
+      @JsonKey(name: 'can_add_to_team')
+          bool? canAddToTeam,
+      @JsonKey(name: 'can_manage_sections')
+          bool? canManageSections,
+      @JsonKey(name: 'can_manage_projects')
+          bool? canManageProjects,
+      @JsonKey(name: 'can_manage_tags')
+          bool? canManageTags,
+      @JsonKey(name: 'can_manage_integrations')
+          bool? canManageIntegrations,
+      @JsonKey(name: 'can_manage_color_rules')
+          bool? canManageColorRules,
+      @JsonKey(name: 'can_create_group')
+          bool? canCreateGroup,
+      @JsonKey(name: 'can_create_meeting')
+          bool? canCreateMeeting,
+      @JsonKey(name: 'can_join_public_groups')
+          bool? canJoinPublicGroups,
+      @JsonKey(name: 'can_join_public_tasks')
+          bool? canJoinPublicTasks,
+      @JsonKey(name: 'can_import_chats')
+          bool? canImportChats,
+      @JsonKey(name: 'custom_fields')
+          ContactCustomFields? customFields,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'can_delete_any_message')
+          bool? canDeleteAnyMessage});
 
   @override
   $IconDataCopyWith<$Res> get icons;
@@ -945,29 +945,30 @@ abstract class _$ContactCopyWith<$Res> implements $ContactCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res> implements _$ContactCopyWith<$Res> {
-  __$ContactCopyWithImpl(_Contact _value, $Res Function(_Contact) _then) : super(_value, (v) => _then(v as _Contact));
+class __$$_ContactCopyWithImpl<$Res>
+    extends _$ContactCopyWithImpl<$Res, _$_Contact>
+    implements _$$_ContactCopyWith<$Res> {
+  __$$_ContactCopyWithImpl(_$_Contact _value, $Res Function(_$_Contact) _then)
+      : super(_value, _then);
 
-  @override
-  _Contact get _value => super._value as _Contact;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? jid = freezed,
+    Object? jid = null,
     Object? node = freezed,
-    Object? displayName = freezed,
-    Object? shortName = freezed,
-    Object? contactEmail = freezed,
-    Object? contactPhone = freezed,
-    Object? icons = freezed,
-    Object? gentime = freezed,
-    Object? role = freezed,
+    Object? displayName = null,
+    Object? shortName = null,
+    Object? contactEmail = null,
+    Object? contactPhone = null,
+    Object? icons = null,
+    Object? gentime = null,
+    Object? role = null,
     Object? mood = freezed,
-    Object? teamStatus = freezed,
+    Object? teamStatus = null,
     Object? lastActivity = freezed,
     Object? isArchive = freezed,
     Object? botname = freezed,
-    Object? sections = freezed,
+    Object? sections = null,
     Object? canSendMessage = freezed,
     Object? cantSendMessageReason = freezed,
     Object? canCall = freezed,
@@ -1019,264 +1020,264 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res> implement
     Object? customFields = freezed,
     Object? canDeleteAnyMessage = freezed,
   }) {
-    return _then(_Contact(
-      jid: jid == freezed
+    return _then(_$_Contact(
+      jid: null == jid
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      node: node == freezed
+      node: freezed == node
           ? _value.node
           : node // ignore: cast_nullable_to_non_nullable
               as String?,
-      displayName: displayName == freezed
+      displayName: null == displayName
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String,
-      shortName: shortName == freezed
+      shortName: null == shortName
           ? _value.shortName
           : shortName // ignore: cast_nullable_to_non_nullable
               as String,
-      contactEmail: contactEmail == freezed
+      contactEmail: null == contactEmail
           ? _value.contactEmail
           : contactEmail // ignore: cast_nullable_to_non_nullable
               as String,
-      contactPhone: contactPhone == freezed
+      contactPhone: null == contactPhone
           ? _value.contactPhone
           : contactPhone // ignore: cast_nullable_to_non_nullable
               as String,
-      icons: icons == freezed
+      icons: null == icons
           ? _value.icons
           : icons // ignore: cast_nullable_to_non_nullable
               as IconData,
-      gentime: gentime == freezed
+      gentime: null == gentime
           ? _value.gentime
           : gentime // ignore: cast_nullable_to_non_nullable
               as int,
-      role: role == freezed
+      role: null == role
           ? _value.role
           : role // ignore: cast_nullable_to_non_nullable
               as String,
-      mood: mood == freezed
+      mood: freezed == mood
           ? _value.mood
           : mood // ignore: cast_nullable_to_non_nullable
               as String?,
-      teamStatus: teamStatus == freezed
+      teamStatus: null == teamStatus
           ? _value.teamStatus
           : teamStatus // ignore: cast_nullable_to_non_nullable
               as String,
-      lastActivity: lastActivity == freezed
+      lastActivity: freezed == lastActivity
           ? _value.lastActivity
           : lastActivity // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      isArchive: isArchive == freezed
+      isArchive: freezed == isArchive
           ? _value.isArchive
           : isArchive // ignore: cast_nullable_to_non_nullable
               as bool?,
-      botname: botname == freezed
+      botname: freezed == botname
           ? _value.botname
           : botname // ignore: cast_nullable_to_non_nullable
               as String?,
-      sections: sections == freezed
-          ? _value.sections
+      sections: null == sections
+          ? _value._sections
           : sections // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      canSendMessage: canSendMessage == freezed
+      canSendMessage: freezed == canSendMessage
           ? _value.canSendMessage
           : canSendMessage // ignore: cast_nullable_to_non_nullable
               as bool?,
-      cantSendMessageReason: cantSendMessageReason == freezed
+      cantSendMessageReason: freezed == cantSendMessageReason
           ? _value.cantSendMessageReason
           : cantSendMessageReason // ignore: cast_nullable_to_non_nullable
               as String?,
-      canCall: canCall == freezed
+      canCall: freezed == canCall
           ? _value.canCall
           : canCall // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canCreateTask: canCreateTask == freezed
+      canCreateTask: freezed == canCreateTask
           ? _value.canCreateTask
           : canCreateTask // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canImportTasks: canImportTasks == freezed
+      canImportTasks: freezed == canImportTasks
           ? _value.canImportTasks
           : canImportTasks // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canAddToGroup: canAddToGroup == freezed
+      canAddToGroup: freezed == canAddToGroup
           ? _value.canAddToGroup
           : canAddToGroup // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canDelete: canDelete == freezed
+      canDelete: freezed == canDelete
           ? _value.canDelete
           : canDelete // ignore: cast_nullable_to_non_nullable
               as bool?,
-      changeableFields: changeableFields == freezed
-          ? _value.changeableFields
+      changeableFields: freezed == changeableFields
+          ? _value._changeableFields
           : changeableFields // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      familyName: familyName == freezed
+      familyName: freezed == familyName
           ? _value.familyName
           : familyName // ignore: cast_nullable_to_non_nullable
               as String?,
-      givenName: givenName == freezed
+      givenName: freezed == givenName
           ? _value.givenName
           : givenName // ignore: cast_nullable_to_non_nullable
               as String?,
-      patronymic: patronymic == freezed
+      patronymic: freezed == patronymic
           ? _value.patronymic
           : patronymic // ignore: cast_nullable_to_non_nullable
               as String?,
-      defaultLang: defaultLang == freezed
+      defaultLang: freezed == defaultLang
           ? _value.defaultLang
           : defaultLang // ignore: cast_nullable_to_non_nullable
               as String?,
-      debugShowActivity: debugShowActivity == freezed
+      debugShowActivity: freezed == debugShowActivity
           ? _value.debugShowActivity
           : debugShowActivity // ignore: cast_nullable_to_non_nullable
               as bool?,
-      dropallEnabled: dropallEnabled == freezed
+      dropallEnabled: freezed == dropallEnabled
           ? _value.dropallEnabled
           : dropallEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      altSend: altSend == freezed
+      altSend: freezed == altSend
           ? _value.altSend
           : altSend // ignore: cast_nullable_to_non_nullable
               as bool?,
-      asteriskMention: asteriskMention == freezed
+      asteriskMention: freezed == asteriskMention
           ? _value.asteriskMention
           : asteriskMention // ignore: cast_nullable_to_non_nullable
               as bool?,
-      alwaysSendPushes: alwaysSendPushes == freezed
+      alwaysSendPushes: freezed == alwaysSendPushes
           ? _value.alwaysSendPushes
           : alwaysSendPushes // ignore: cast_nullable_to_non_nullable
               as bool?,
-      hidePushesContent: hidePushesContent == freezed
+      hidePushesContent: freezed == hidePushesContent
           ? _value.hidePushesContent
           : hidePushesContent // ignore: cast_nullable_to_non_nullable
               as bool?,
-      timezone: timezone == freezed
+      timezone: freezed == timezone
           ? _value.timezone
           : timezone // ignore: cast_nullable_to_non_nullable
               as String?,
-      quietTimeStart: quietTimeStart == freezed
+      quietTimeStart: freezed == quietTimeStart
           ? _value.quietTimeStart
           : quietTimeStart // ignore: cast_nullable_to_non_nullable
               as String?,
-      quietTimeFinish: quietTimeFinish == freezed
+      quietTimeFinish: freezed == quietTimeFinish
           ? _value.quietTimeFinish
           : quietTimeFinish // ignore: cast_nullable_to_non_nullable
               as String?,
-      focusUntil: focusUntil == freezed
+      focusUntil: freezed == focusUntil
           ? _value.focusUntil
           : focusUntil // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      groupNotificationsEnabled: groupNotificationsEnabled == freezed
+      groupNotificationsEnabled: freezed == groupNotificationsEnabled
           ? _value.groupNotificationsEnabled
           : groupNotificationsEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      taskNotificationsEnabled: taskNotificationsEnabled == freezed
+      taskNotificationsEnabled: freezed == taskNotificationsEnabled
           ? _value.taskNotificationsEnabled
           : taskNotificationsEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      contactShortView: contactShortView == freezed
+      contactShortView: freezed == contactShortView
           ? _value.contactShortView
           : contactShortView // ignore: cast_nullable_to_non_nullable
               as bool?,
-      groupShortView: groupShortView == freezed
+      groupShortView: freezed == groupShortView
           ? _value.groupShortView
           : groupShortView // ignore: cast_nullable_to_non_nullable
               as bool?,
-      taskShortView: taskShortView == freezed
+      taskShortView: freezed == taskShortView
           ? _value.taskShortView
           : taskShortView // ignore: cast_nullable_to_non_nullable
               as bool?,
-      meetingShortView: meetingShortView == freezed
+      meetingShortView: freezed == meetingShortView
           ? _value.meetingShortView
           : meetingShortView // ignore: cast_nullable_to_non_nullable
               as bool?,
-      contactMshortView: contactMshortView == freezed
+      contactMshortView: freezed == contactMshortView
           ? _value.contactMshortView
           : contactMshortView // ignore: cast_nullable_to_non_nullable
               as bool?,
-      groupMshortView: groupMshortView == freezed
+      groupMshortView: freezed == groupMshortView
           ? _value.groupMshortView
           : groupMshortView // ignore: cast_nullable_to_non_nullable
               as bool?,
-      auth2faEnabled: auth2faEnabled == freezed
+      auth2faEnabled: freezed == auth2faEnabled
           ? _value.auth2faEnabled
           : auth2faEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      auth2faStatus: auth2faStatus == freezed
+      auth2faStatus: freezed == auth2faStatus
           ? _value.auth2faStatus
           : auth2faStatus // ignore: cast_nullable_to_non_nullable
               as String?,
-      taskMshortView: taskMshortView == freezed
+      taskMshortView: freezed == taskMshortView
           ? _value.taskMshortView
           : taskMshortView // ignore: cast_nullable_to_non_nullable
               as bool?,
-      meetingMshortView: meetingMshortView == freezed
+      meetingMshortView: freezed == meetingMshortView
           ? _value.meetingMshortView
           : meetingMshortView // ignore: cast_nullable_to_non_nullable
               as bool?,
-      contactShowArchived: contactShowArchived == freezed
+      contactShowArchived: freezed == contactShowArchived
           ? _value.contactShowArchived
           : contactShowArchived // ignore: cast_nullable_to_non_nullable
               as bool?,
-      unreadFirst: unreadFirst == freezed
+      unreadFirst: freezed == unreadFirst
           ? _value.unreadFirst
           : unreadFirst // ignore: cast_nullable_to_non_nullable
               as bool?,
-      mUnreadFirst: mUnreadFirst == freezed
+      mUnreadFirst: freezed == mUnreadFirst
           ? _value.mUnreadFirst
           : mUnreadFirst // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canAddToTeam: canAddToTeam == freezed
+      canAddToTeam: freezed == canAddToTeam
           ? _value.canAddToTeam
           : canAddToTeam // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canManageSections: canManageSections == freezed
+      canManageSections: freezed == canManageSections
           ? _value.canManageSections
           : canManageSections // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canManageProjects: canManageProjects == freezed
+      canManageProjects: freezed == canManageProjects
           ? _value.canManageProjects
           : canManageProjects // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canManageTags: canManageTags == freezed
+      canManageTags: freezed == canManageTags
           ? _value.canManageTags
           : canManageTags // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canManageIntegrations: canManageIntegrations == freezed
+      canManageIntegrations: freezed == canManageIntegrations
           ? _value.canManageIntegrations
           : canManageIntegrations // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canManageColorRules: canManageColorRules == freezed
+      canManageColorRules: freezed == canManageColorRules
           ? _value.canManageColorRules
           : canManageColorRules // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canCreateGroup: canCreateGroup == freezed
+      canCreateGroup: freezed == canCreateGroup
           ? _value.canCreateGroup
           : canCreateGroup // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canCreateMeeting: canCreateMeeting == freezed
+      canCreateMeeting: freezed == canCreateMeeting
           ? _value.canCreateMeeting
           : canCreateMeeting // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canJoinPublicGroups: canJoinPublicGroups == freezed
+      canJoinPublicGroups: freezed == canJoinPublicGroups
           ? _value.canJoinPublicGroups
           : canJoinPublicGroups // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canJoinPublicTasks: canJoinPublicTasks == freezed
+      canJoinPublicTasks: freezed == canJoinPublicTasks
           ? _value.canJoinPublicTasks
           : canJoinPublicTasks // ignore: cast_nullable_to_non_nullable
               as bool?,
-      canImportChats: canImportChats == freezed
+      canImportChats: freezed == canImportChats
           ? _value.canImportChats
           : canImportChats // ignore: cast_nullable_to_non_nullable
               as bool?,
-      customFields: customFields == freezed
+      customFields: freezed == customFields
           ? _value.customFields
           : customFields // ignore: cast_nullable_to_non_nullable
               as ContactCustomFields?,
-      canDeleteAnyMessage: canDeleteAnyMessage == freezed
+      canDeleteAnyMessage: freezed == canDeleteAnyMessage
           ? _value.canDeleteAnyMessage
           : canDeleteAnyMessage // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -1288,399 +1289,483 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res> implement
 @JsonSerializable()
 class _$_Contact implements _Contact {
   const _$_Contact(
-      {@JsonKey(name: 'jid') required this.jid,
-      @JsonKey(name: 'node') this.node,
-      @JsonKey(name: 'display_name') required this.displayName,
-      @JsonKey(name: 'short_name') required this.shortName,
-      @JsonKey(name: 'contact_email') required this.contactEmail,
-      @JsonKey(name: 'contact_phone') required this.contactPhone,
-      @JsonKey(name: 'icons') required this.icons,
-      @JsonKey(name: 'gentime') required this.gentime,
-      @JsonKey(name: 'role') required this.role,
-      @JsonKey(name: 'mood') this.mood,
-      @JsonKey(name: 'status') required this.teamStatus,
-      @JsonKey(name: 'last_activity') @DateTimeConverter() this.lastActivity,
-      @JsonKey(name: 'is_archive') this.isArchive,
-      @JsonKey(name: 'botname') this.botname,
-      @JsonKey(name: 'sections') required this.sections,
-      @JsonKey(name: 'can_send_message') this.canSendMessage,
-      @JsonKey(name: 'cant_send_message_reason') this.cantSendMessageReason,
-      @JsonKey(name: 'can_call') this.canCall,
-      @JsonKey(name: 'can_create_task') this.canCreateTask,
-      @JsonKey(name: 'can_import_tasks') this.canImportTasks,
-      @JsonKey(name: 'can_add_to_group') this.canAddToGroup,
-      @JsonKey(name: 'can_delete') this.canDelete,
-      @JsonKey(name: 'changeable_fields') this.changeableFields,
-      @JsonKey(name: 'family_name') this.familyName,
-      @JsonKey(name: 'given_name') this.givenName,
-      @JsonKey(name: 'patronymic') this.patronymic,
-      @JsonKey(name: 'default_lang') this.defaultLang,
-      @JsonKey(name: 'debug_show_activity') this.debugShowActivity,
-      @JsonKey(name: 'dropall_enabled') this.dropallEnabled,
-      @JsonKey(name: 'alt_send') this.altSend,
-      @JsonKey(name: 'asterisk_mention') this.asteriskMention,
-      @JsonKey(name: 'always_send_pushes') this.alwaysSendPushes,
-      @JsonKey(name: 'hide_pushes_content') this.hidePushesContent,
-      @JsonKey(name: 'timezone') this.timezone,
-      @JsonKey(name: 'quiet_time_start') this.quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish') this.quietTimeFinish,
-      @JsonKey(name: 'focus_until') @DateTimeConverter() this.focusUntil,
-      @JsonKey(name: 'group_notifications_enabled') this.groupNotificationsEnabled,
-      @JsonKey(name: 'task_notifications_enabled') this.taskNotificationsEnabled,
-      @JsonKey(name: 'contact_short_view') this.contactShortView,
-      @JsonKey(name: 'group_short_view') this.groupShortView,
-      @JsonKey(name: 'task_short_view') this.taskShortView,
-      @JsonKey(name: 'meeting_short_view') this.meetingShortView,
-      @JsonKey(name: 'contact_mshort_view') this.contactMshortView,
-      @JsonKey(name: 'group_mshort_view') this.groupMshortView,
-      @JsonKey(name: 'auth_2fa_enabled') this.auth2faEnabled,
-      @JsonKey(name: 'auth_2fa_status') this.auth2faStatus,
-      @JsonKey(name: 'task_mshort_view') this.taskMshortView,
-      @JsonKey(name: 'meeting_mshort_view') this.meetingMshortView,
-      @JsonKey(name: 'contact_show_archived') this.contactShowArchived,
-      @JsonKey(name: 'unread_first') this.unreadFirst,
-      @JsonKey(name: 'munread_first') this.mUnreadFirst,
-      @JsonKey(name: 'can_add_to_team') this.canAddToTeam,
-      @JsonKey(name: 'can_manage_sections') this.canManageSections,
-      @JsonKey(name: 'can_manage_projects') this.canManageProjects,
-      @JsonKey(name: 'can_manage_tags') this.canManageTags,
-      @JsonKey(name: 'can_manage_integrations') this.canManageIntegrations,
-      @JsonKey(name: 'can_manage_color_rules') this.canManageColorRules,
-      @JsonKey(name: 'can_create_group') this.canCreateGroup,
-      @JsonKey(name: 'can_create_meeting') this.canCreateMeeting,
-      @JsonKey(name: 'can_join_public_groups') this.canJoinPublicGroups,
-      @JsonKey(name: 'can_join_public_tasks') this.canJoinPublicTasks,
-      @JsonKey(name: 'can_import_chats') this.canImportChats,
-      @JsonKey(name: 'custom_fields') this.customFields,
-      @Deprecated('Deprecated.') @JsonKey(name: 'can_delete_any_message') this.canDeleteAnyMessage});
+      {@JsonKey(name: 'jid')
+          required this.jid,
+      @JsonKey(name: 'node')
+          this.node,
+      @JsonKey(name: 'display_name')
+          required this.displayName,
+      @JsonKey(name: 'short_name')
+          required this.shortName,
+      @JsonKey(name: 'contact_email')
+          required this.contactEmail,
+      @JsonKey(name: 'contact_phone')
+          required this.contactPhone,
+      @JsonKey(name: 'icons')
+          required this.icons,
+      @JsonKey(name: 'gentime')
+          required this.gentime,
+      @JsonKey(name: 'role')
+          required this.role,
+      @JsonKey(name: 'mood')
+          this.mood,
+      @JsonKey(name: 'status')
+          required this.teamStatus,
+      @JsonKey(name: 'last_activity')
+      @DateTimeConverter()
+          this.lastActivity,
+      @JsonKey(name: 'is_archive')
+          this.isArchive,
+      @JsonKey(name: 'botname')
+          this.botname,
+      @JsonKey(name: 'sections')
+          required final List<String> sections,
+      @JsonKey(name: 'can_send_message')
+          this.canSendMessage,
+      @JsonKey(name: 'cant_send_message_reason')
+          this.cantSendMessageReason,
+      @JsonKey(name: 'can_call')
+          this.canCall,
+      @JsonKey(name: 'can_create_task')
+          this.canCreateTask,
+      @JsonKey(name: 'can_import_tasks')
+          this.canImportTasks,
+      @JsonKey(name: 'can_add_to_group')
+          this.canAddToGroup,
+      @JsonKey(name: 'can_delete')
+          this.canDelete,
+      @JsonKey(name: 'changeable_fields')
+          final List<String>? changeableFields,
+      @JsonKey(name: 'family_name')
+          this.familyName,
+      @JsonKey(name: 'given_name')
+          this.givenName,
+      @JsonKey(name: 'patronymic')
+          this.patronymic,
+      @JsonKey(name: 'default_lang')
+          this.defaultLang,
+      @JsonKey(name: 'debug_show_activity')
+          this.debugShowActivity,
+      @JsonKey(name: 'dropall_enabled')
+          this.dropallEnabled,
+      @JsonKey(name: 'alt_send')
+          this.altSend,
+      @JsonKey(name: 'asterisk_mention')
+          this.asteriskMention,
+      @JsonKey(name: 'always_send_pushes')
+          this.alwaysSendPushes,
+      @JsonKey(name: 'hide_pushes_content')
+          this.hidePushesContent,
+      @JsonKey(name: 'timezone')
+          this.timezone,
+      @JsonKey(name: 'quiet_time_start')
+          this.quietTimeStart,
+      @JsonKey(name: 'quiet_time_finish')
+          this.quietTimeFinish,
+      @JsonKey(name: 'focus_until')
+      @DateTimeConverter()
+          this.focusUntil,
+      @JsonKey(name: 'group_notifications_enabled')
+          this.groupNotificationsEnabled,
+      @JsonKey(name: 'task_notifications_enabled')
+          this.taskNotificationsEnabled,
+      @JsonKey(name: 'contact_short_view')
+          this.contactShortView,
+      @JsonKey(name: 'group_short_view')
+          this.groupShortView,
+      @JsonKey(name: 'task_short_view')
+          this.taskShortView,
+      @JsonKey(name: 'meeting_short_view')
+          this.meetingShortView,
+      @JsonKey(name: 'contact_mshort_view')
+          this.contactMshortView,
+      @JsonKey(name: 'group_mshort_view')
+          this.groupMshortView,
+      @JsonKey(name: 'auth_2fa_enabled')
+          this.auth2faEnabled,
+      @JsonKey(name: 'auth_2fa_status')
+          this.auth2faStatus,
+      @JsonKey(name: 'task_mshort_view')
+          this.taskMshortView,
+      @JsonKey(name: 'meeting_mshort_view')
+          this.meetingMshortView,
+      @JsonKey(name: 'contact_show_archived')
+          this.contactShowArchived,
+      @JsonKey(name: 'unread_first')
+          this.unreadFirst,
+      @JsonKey(name: 'munread_first')
+          this.mUnreadFirst,
+      @JsonKey(name: 'can_add_to_team')
+          this.canAddToTeam,
+      @JsonKey(name: 'can_manage_sections')
+          this.canManageSections,
+      @JsonKey(name: 'can_manage_projects')
+          this.canManageProjects,
+      @JsonKey(name: 'can_manage_tags')
+          this.canManageTags,
+      @JsonKey(name: 'can_manage_integrations')
+          this.canManageIntegrations,
+      @JsonKey(name: 'can_manage_color_rules')
+          this.canManageColorRules,
+      @JsonKey(name: 'can_create_group')
+          this.canCreateGroup,
+      @JsonKey(name: 'can_create_meeting')
+          this.canCreateMeeting,
+      @JsonKey(name: 'can_join_public_groups')
+          this.canJoinPublicGroups,
+      @JsonKey(name: 'can_join_public_tasks')
+          this.canJoinPublicTasks,
+      @JsonKey(name: 'can_import_chats')
+          this.canImportChats,
+      @JsonKey(name: 'custom_fields')
+          this.customFields,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'can_delete_any_message')
+          this.canDeleteAnyMessage})
+      : _sections = sections,
+        _changeableFields = changeableFields;
 
-  factory _$_Contact.fromJson(Map<String, dynamic> json) => _$$_ContactFromJson(json);
-
-  @override
+  factory _$_Contact.fromJson(Map<String, dynamic> json) =>
+      _$$_ContactFromJson(json);
 
   /// Contact Id.
+  @override
   @JsonKey(name: 'jid')
   final String jid;
-  @override
 
   /// Node uid for external users.
+  @override
   @JsonKey(name: 'node')
   final String? node;
-  @override
 
   /// Full name in chats.
+  @override
   @JsonKey(name: 'display_name')
   final String displayName;
-  @override
 
   /// Short name in chats.
+  @override
   @JsonKey(name: 'short_name')
   final String shortName;
-  @override
 
   /// Contact email in this team.
+  @override
   @JsonKey(name: 'contact_email')
   final String contactEmail;
-  @override
 
   /// Contact phone in this team.
+  @override
   @JsonKey(name: 'contact_phone')
   final String contactPhone;
-  @override
 
   /// Icons data.
+  @override
   @JsonKey(name: 'icons')
   final IconData icons;
-  @override
 
   /// Object version.
+  @override
   @JsonKey(name: 'gentime')
   final int gentime;
-  @override
 
   /// Role in this team.
+  @override
   @JsonKey(name: 'role')
   final String role;
-  @override
 
   /// Mood in this team.
+  @override
   @JsonKey(name: 'mood')
   final String? mood;
-  @override
 
   /// Status in this team.
+  @override
   @JsonKey(name: 'status')
   final String teamStatus;
-  @override
 
   /// Last activity in this team (iso datetime).
+  @override
   @JsonKey(name: 'last_activity')
   @DateTimeConverter()
   final DateTime? lastActivity;
-  @override
 
   /// Contact deleted.
+  @override
   @JsonKey(name: 'is_archive')
   final bool? isArchive;
-  @override
 
   /// Bot name. Empty for users.
+  @override
   @JsonKey(name: 'botname')
   final String? botname;
-  @override
 
   /// Section ids.
-  @JsonKey(name: 'sections')
-  final List<String> sections;
+  final List<String> _sections;
+
+  /// Section ids.
   @override
+  @JsonKey(name: 'sections')
+  List<String> get sections {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_sections);
+  }
 
   /// Can I send message to this contact.
+  @override
   @JsonKey(name: 'can_send_message')
   final bool? canSendMessage;
-  @override
 
   /// Why I can't send message to this chat (if can't).
+  @override
   @JsonKey(name: 'cant_send_message_reason')
   final String? cantSendMessageReason;
-  @override
 
   /// Can I call to this contact.
+  @override
   @JsonKey(name: 'can_call')
   final bool? canCall;
-  @override
 
   /// Can I create task for this contact.
+  @override
   @JsonKey(name: 'can_create_task')
   final bool? canCreateTask;
-  @override
 
   /// Can I import tasks in this team.
+  @override
   @JsonKey(name: 'can_import_tasks')
   final bool? canImportTasks;
-  @override
 
   /// Can I add this contact to group chats.
+  @override
   @JsonKey(name: 'can_add_to_group')
   final bool? canAddToGroup;
-  @override
 
   /// Can I remove this contact from team.
+  @override
   @JsonKey(name: 'can_delete')
   final bool? canDelete;
-  @override
 
   /// Changeable fields.
-  @JsonKey(name: 'changeable_fields')
-  final List<String>? changeableFields;
+  final List<String>? _changeableFields;
+
+  /// Changeable fields.
   @override
+  @JsonKey(name: 'changeable_fields')
+  List<String>? get changeableFields {
+    final value = _changeableFields;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   /// Family name.
+  @override
   @JsonKey(name: 'family_name')
   final String? familyName;
-  @override
 
   /// Given name.
+  @override
   @JsonKey(name: 'given_name')
   final String? givenName;
-  @override
 
   /// Patronymic, if any.
+  @override
   @JsonKey(name: 'patronymic')
   final String? patronymic;
-  @override
 
   /// Default language code.
+  @override
   @JsonKey(name: 'default_lang')
   final String? defaultLang;
-  @override
 
   /// Enable debug messages in UI.
+  @override
   @JsonKey(name: 'debug_show_activity')
   final bool? debugShowActivity;
-  @override
 
   /// Enable remove all messages experimental features.
+  @override
   @JsonKey(name: 'dropall_enabled')
   final bool? dropallEnabled;
-  @override
 
   /// Use Ctrl/Cmd + Enter instead Enter.
+  @override
   @JsonKey(name: 'alt_send')
   final bool? altSend;
-  @override
 
   /// Use * as @ for mentions.
+  @override
   @JsonKey(name: 'asterisk_mention')
   final bool? asteriskMention;
-  @override
 
   /// Send push notifications even contact is online.
+  @override
   @JsonKey(name: 'always_send_pushes')
   final bool? alwaysSendPushes;
-  @override
 
   /// Hide pushes body.
+  @override
   @JsonKey(name: 'hide_pushes_content')
   final bool? hidePushesContent;
-  @override
 
   /// Timezone, if any.
+  @override
   @JsonKey(name: 'timezone')
   final String? timezone;
-  @override
 
   /// Quiet time start.
+  @override
   @JsonKey(name: 'quiet_time_start')
   final String? quietTimeStart;
-  @override
 
   /// Quiet time finish.
+  @override
   @JsonKey(name: 'quiet_time_finish')
   final String? quietTimeFinish;
-  @override
 
   /// Focus mode enabled until.
+  @override
   @JsonKey(name: 'focus_until')
   @DateTimeConverter()
   final DateTime? focusUntil;
-  @override
 
   /// Push notifications for group chats.
+  @override
   @JsonKey(name: 'group_notifications_enabled')
   final bool? groupNotificationsEnabled;
-  @override
 
   /// Push notifications for task chats.
+  @override
   @JsonKey(name: 'task_notifications_enabled')
   final bool? taskNotificationsEnabled;
-  @override
 
   /// Short view in contact list.
+  @override
   @JsonKey(name: 'contact_short_view')
   final bool? contactShortView;
-  @override
 
   /// Short view in group list.
+  @override
   @JsonKey(name: 'group_short_view')
   final bool? groupShortView;
-  @override
 
   /// Short view in task list.
+  @override
   @JsonKey(name: 'task_short_view')
   final bool? taskShortView;
-  @override
 
   /// Short view in meeting list.
+  @override
   @JsonKey(name: 'meeting_short_view')
   final bool? meetingShortView;
-  @override
 
   /// Short view in contact list in mobile app.
+  @override
   @JsonKey(name: 'contact_mshort_view')
   final bool? contactMshortView;
-  @override
 
   /// Short view in group list in mobile app.
+  @override
   @JsonKey(name: 'group_mshort_view')
   final bool? groupMshortView;
-  @override
 
   /// Two-factor authentication is configured and confirmed.
+  @override
   @JsonKey(name: 'auth_2fa_enabled')
   final bool? auth2faEnabled;
-  @override
 
   /// Two-factor authentication status.
+  @override
   @JsonKey(name: 'auth_2fa_status')
   final String? auth2faStatus;
-  @override
 
   /// Short view in task list in mobile app.
+  @override
   @JsonKey(name: 'task_mshort_view')
   final bool? taskMshortView;
-  @override
 
   /// Short view in meeting list in mobile app.
+  @override
   @JsonKey(name: 'meeting_mshort_view')
   final bool? meetingMshortView;
-  @override
 
   /// Show archived contacts in contact list.
+  @override
   @JsonKey(name: 'contact_show_archived')
   final bool? contactShowArchived;
-  @override
 
   /// Show unread chats first in feed.
+  @override
   @JsonKey(name: 'unread_first')
   final bool? unreadFirst;
-  @override
 
   /// Show unread chats first in feed in mobile app.
+  @override
   @JsonKey(name: 'munread_first')
   final bool? mUnreadFirst;
-  @override
 
   /// Can I add new members to this team.
+  @override
   @JsonKey(name: 'can_add_to_team')
   final bool? canAddToTeam;
-  @override
 
   /// Can I manage contact sections in this team.
+  @override
   @JsonKey(name: 'can_manage_sections')
   final bool? canManageSections;
-  @override
 
   /// Can I manage task projects in this team.
+  @override
   @JsonKey(name: 'can_manage_projects')
   final bool? canManageProjects;
-  @override
 
   /// Can I manage tags in this team.
+  @override
   @JsonKey(name: 'can_manage_tags')
   final bool? canManageTags;
-  @override
 
   /// Can I manage integrations in this team.
+  @override
   @JsonKey(name: 'can_manage_integrations')
   final bool? canManageIntegrations;
-  @override
 
   /// Can I manage color rules in this team.
+  @override
   @JsonKey(name: 'can_manage_color_rules')
   final bool? canManageColorRules;
-  @override
 
   /// Can I create group chats in this team.
+  @override
   @JsonKey(name: 'can_create_group')
   final bool? canCreateGroup;
-  @override
 
   /// Can I create meetings in this team.
+  @override
   @JsonKey(name: 'can_create_meeting')
   final bool? canCreateMeeting;
-  @override
 
   /// Can I view/join public group in this team.
+  @override
   @JsonKey(name: 'can_join_public_groups')
   final bool? canJoinPublicGroups;
-  @override
 
   /// Can I view/join public tasks in this team.
+  @override
   @JsonKey(name: 'can_join_public_tasks')
   final bool? canJoinPublicTasks;
-  @override
 
   /// Can I import chats from external services (now its only telegram).
+  @override
   @JsonKey(name: 'can_import_chats')
   final bool? canImportChats;
-  @override
 
   /// Extra contact fields.
+  @override
   @JsonKey(name: 'custom_fields')
   final ContactCustomFields? customFields;
-  @override
 
   /// Deprecated.
+  @override
   @Deprecated('Deprecated.')
   @JsonKey(name: 'can_delete_any_message')
   final bool? canDeleteAnyMessage;
@@ -1693,264 +1778,335 @@ class _$_Contact implements _Contact {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Contact &&
-            (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
-            (identical(other.node, node) || const DeepCollectionEquality().equals(other.node, node)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_Contact &&
+            (identical(other.jid, jid) || other.jid == jid) &&
+            (identical(other.node, node) || other.node == node) &&
             (identical(other.displayName, displayName) ||
-                const DeepCollectionEquality().equals(other.displayName, displayName)) &&
+                other.displayName == displayName) &&
             (identical(other.shortName, shortName) ||
-                const DeepCollectionEquality().equals(other.shortName, shortName)) &&
+                other.shortName == shortName) &&
             (identical(other.contactEmail, contactEmail) ||
-                const DeepCollectionEquality().equals(other.contactEmail, contactEmail)) &&
+                other.contactEmail == contactEmail) &&
             (identical(other.contactPhone, contactPhone) ||
-                const DeepCollectionEquality().equals(other.contactPhone, contactPhone)) &&
-            (identical(other.icons, icons) || const DeepCollectionEquality().equals(other.icons, icons)) &&
-            (identical(other.gentime, gentime) || const DeepCollectionEquality().equals(other.gentime, gentime)) &&
-            (identical(other.role, role) || const DeepCollectionEquality().equals(other.role, role)) &&
-            (identical(other.mood, mood) || const DeepCollectionEquality().equals(other.mood, mood)) &&
+                other.contactPhone == contactPhone) &&
+            (identical(other.icons, icons) || other.icons == icons) &&
+            (identical(other.gentime, gentime) || other.gentime == gentime) &&
+            (identical(other.role, role) || other.role == role) &&
+            (identical(other.mood, mood) || other.mood == mood) &&
             (identical(other.teamStatus, teamStatus) ||
-                const DeepCollectionEquality().equals(other.teamStatus, teamStatus)) &&
+                other.teamStatus == teamStatus) &&
             (identical(other.lastActivity, lastActivity) ||
-                const DeepCollectionEquality().equals(other.lastActivity, lastActivity)) &&
+                other.lastActivity == lastActivity) &&
             (identical(other.isArchive, isArchive) ||
-                const DeepCollectionEquality().equals(other.isArchive, isArchive)) &&
-            (identical(other.botname, botname) || const DeepCollectionEquality().equals(other.botname, botname)) &&
-            (identical(other.sections, sections) || const DeepCollectionEquality().equals(other.sections, sections)) &&
+                other.isArchive == isArchive) &&
+            (identical(other.botname, botname) || other.botname == botname) &&
+            const DeepCollectionEquality().equals(other._sections, _sections) &&
             (identical(other.canSendMessage, canSendMessage) ||
-                const DeepCollectionEquality().equals(other.canSendMessage, canSendMessage)) &&
+                other.canSendMessage == canSendMessage) &&
             (identical(other.cantSendMessageReason, cantSendMessageReason) ||
-                const DeepCollectionEquality().equals(other.cantSendMessageReason, cantSendMessageReason)) &&
-            (identical(other.canCall, canCall) || const DeepCollectionEquality().equals(other.canCall, canCall)) &&
+                other.cantSendMessageReason == cantSendMessageReason) &&
+            (identical(other.canCall, canCall) || other.canCall == canCall) &&
             (identical(other.canCreateTask, canCreateTask) ||
-                const DeepCollectionEquality().equals(other.canCreateTask, canCreateTask)) &&
+                other.canCreateTask == canCreateTask) &&
             (identical(other.canImportTasks, canImportTasks) ||
-                const DeepCollectionEquality().equals(other.canImportTasks, canImportTasks)) &&
+                other.canImportTasks == canImportTasks) &&
             (identical(other.canAddToGroup, canAddToGroup) ||
-                const DeepCollectionEquality().equals(other.canAddToGroup, canAddToGroup)) &&
+                other.canAddToGroup == canAddToGroup) &&
             (identical(other.canDelete, canDelete) ||
-                const DeepCollectionEquality().equals(other.canDelete, canDelete)) &&
-            (identical(other.changeableFields, changeableFields) ||
-                const DeepCollectionEquality().equals(other.changeableFields, changeableFields)) &&
+                other.canDelete == canDelete) &&
+            const DeepCollectionEquality()
+                .equals(other._changeableFields, _changeableFields) &&
             (identical(other.familyName, familyName) ||
-                const DeepCollectionEquality().equals(other.familyName, familyName)) &&
+                other.familyName == familyName) &&
             (identical(other.givenName, givenName) ||
-                const DeepCollectionEquality().equals(other.givenName, givenName)) &&
+                other.givenName == givenName) &&
             (identical(other.patronymic, patronymic) ||
-                const DeepCollectionEquality().equals(other.patronymic, patronymic)) &&
+                other.patronymic == patronymic) &&
             (identical(other.defaultLang, defaultLang) ||
-                const DeepCollectionEquality().equals(other.defaultLang, defaultLang)) &&
+                other.defaultLang == defaultLang) &&
             (identical(other.debugShowActivity, debugShowActivity) ||
-                const DeepCollectionEquality().equals(other.debugShowActivity, debugShowActivity)) &&
+                other.debugShowActivity == debugShowActivity) &&
             (identical(other.dropallEnabled, dropallEnabled) ||
-                const DeepCollectionEquality().equals(other.dropallEnabled, dropallEnabled)) &&
-            (identical(other.altSend, altSend) || const DeepCollectionEquality().equals(other.altSend, altSend)) &&
+                other.dropallEnabled == dropallEnabled) &&
+            (identical(other.altSend, altSend) || other.altSend == altSend) &&
             (identical(other.asteriskMention, asteriskMention) ||
-                const DeepCollectionEquality().equals(other.asteriskMention, asteriskMention)) &&
+                other.asteriskMention == asteriskMention) &&
             (identical(other.alwaysSendPushes, alwaysSendPushes) ||
-                const DeepCollectionEquality().equals(other.alwaysSendPushes, alwaysSendPushes)) &&
+                other.alwaysSendPushes == alwaysSendPushes) &&
             (identical(other.hidePushesContent, hidePushesContent) ||
-                const DeepCollectionEquality().equals(other.hidePushesContent, hidePushesContent)) &&
-            (identical(other.timezone, timezone) || const DeepCollectionEquality().equals(other.timezone, timezone)) &&
+                other.hidePushesContent == hidePushesContent) &&
+            (identical(other.timezone, timezone) ||
+                other.timezone == timezone) &&
             (identical(other.quietTimeStart, quietTimeStart) ||
-                const DeepCollectionEquality().equals(other.quietTimeStart, quietTimeStart)) &&
+                other.quietTimeStart == quietTimeStart) &&
             (identical(other.quietTimeFinish, quietTimeFinish) ||
-                const DeepCollectionEquality().equals(other.quietTimeFinish, quietTimeFinish)) &&
+                other.quietTimeFinish == quietTimeFinish) &&
             (identical(other.focusUntil, focusUntil) ||
-                const DeepCollectionEquality().equals(other.focusUntil, focusUntil)) &&
+                other.focusUntil == focusUntil) &&
             (identical(other.groupNotificationsEnabled, groupNotificationsEnabled) ||
-                const DeepCollectionEquality().equals(other.groupNotificationsEnabled, groupNotificationsEnabled)) &&
+                other.groupNotificationsEnabled == groupNotificationsEnabled) &&
             (identical(other.taskNotificationsEnabled, taskNotificationsEnabled) ||
-                const DeepCollectionEquality().equals(other.taskNotificationsEnabled, taskNotificationsEnabled)) &&
+                other.taskNotificationsEnabled == taskNotificationsEnabled) &&
             (identical(other.contactShortView, contactShortView) ||
-                const DeepCollectionEquality().equals(other.contactShortView, contactShortView)) &&
+                other.contactShortView == contactShortView) &&
             (identical(other.groupShortView, groupShortView) ||
-                const DeepCollectionEquality().equals(other.groupShortView, groupShortView)) &&
+                other.groupShortView == groupShortView) &&
             (identical(other.taskShortView, taskShortView) ||
-                const DeepCollectionEquality().equals(other.taskShortView, taskShortView)) &&
+                other.taskShortView == taskShortView) &&
             (identical(other.meetingShortView, meetingShortView) ||
-                const DeepCollectionEquality().equals(other.meetingShortView, meetingShortView)) &&
+                other.meetingShortView == meetingShortView) &&
             (identical(other.contactMshortView, contactMshortView) ||
-                const DeepCollectionEquality().equals(other.contactMshortView, contactMshortView)) &&
+                other.contactMshortView == contactMshortView) &&
             (identical(other.groupMshortView, groupMshortView) ||
-                const DeepCollectionEquality().equals(other.groupMshortView, groupMshortView)) &&
+                other.groupMshortView == groupMshortView) &&
             (identical(other.auth2faEnabled, auth2faEnabled) ||
-                const DeepCollectionEquality().equals(other.auth2faEnabled, auth2faEnabled)) &&
+                other.auth2faEnabled == auth2faEnabled) &&
             (identical(other.auth2faStatus, auth2faStatus) ||
-                const DeepCollectionEquality().equals(other.auth2faStatus, auth2faStatus)) &&
+                other.auth2faStatus == auth2faStatus) &&
             (identical(other.taskMshortView, taskMshortView) ||
-                const DeepCollectionEquality().equals(other.taskMshortView, taskMshortView)) &&
+                other.taskMshortView == taskMshortView) &&
             (identical(other.meetingMshortView, meetingMshortView) ||
-                const DeepCollectionEquality().equals(other.meetingMshortView, meetingMshortView)) &&
+                other.meetingMshortView == meetingMshortView) &&
             (identical(other.contactShowArchived, contactShowArchived) ||
-                const DeepCollectionEquality().equals(other.contactShowArchived, contactShowArchived)) &&
-            (identical(other.unreadFirst, unreadFirst) ||
-                const DeepCollectionEquality().equals(other.unreadFirst, unreadFirst)) &&
-            (identical(other.mUnreadFirst, mUnreadFirst) ||
-                const DeepCollectionEquality().equals(other.mUnreadFirst, mUnreadFirst)) &&
-            (identical(other.canAddToTeam, canAddToTeam) ||
-                const DeepCollectionEquality().equals(other.canAddToTeam, canAddToTeam)) &&
-            (identical(other.canManageSections, canManageSections) ||
-                const DeepCollectionEquality().equals(other.canManageSections, canManageSections)) &&
-            (identical(other.canManageProjects, canManageProjects) ||
-                const DeepCollectionEquality().equals(other.canManageProjects, canManageProjects)) &&
-            (identical(other.canManageTags, canManageTags) || const DeepCollectionEquality().equals(other.canManageTags, canManageTags)) &&
-            (identical(other.canManageIntegrations, canManageIntegrations) || const DeepCollectionEquality().equals(other.canManageIntegrations, canManageIntegrations)) &&
-            (identical(other.canManageColorRules, canManageColorRules) || const DeepCollectionEquality().equals(other.canManageColorRules, canManageColorRules)) &&
-            (identical(other.canCreateGroup, canCreateGroup) || const DeepCollectionEquality().equals(other.canCreateGroup, canCreateGroup)) &&
-            (identical(other.canCreateMeeting, canCreateMeeting) || const DeepCollectionEquality().equals(other.canCreateMeeting, canCreateMeeting)) &&
-            (identical(other.canJoinPublicGroups, canJoinPublicGroups) || const DeepCollectionEquality().equals(other.canJoinPublicGroups, canJoinPublicGroups)) &&
-            (identical(other.canJoinPublicTasks, canJoinPublicTasks) || const DeepCollectionEquality().equals(other.canJoinPublicTasks, canJoinPublicTasks)) &&
-            (identical(other.canImportChats, canImportChats) || const DeepCollectionEquality().equals(other.canImportChats, canImportChats)) &&
-            (identical(other.customFields, customFields) || const DeepCollectionEquality().equals(other.customFields, customFields)) &&
-            (identical(other.canDeleteAnyMessage, canDeleteAnyMessage) || const DeepCollectionEquality().equals(other.canDeleteAnyMessage, canDeleteAnyMessage)));
+                other.contactShowArchived == contactShowArchived) &&
+            (identical(other.unreadFirst, unreadFirst) || other.unreadFirst == unreadFirst) &&
+            (identical(other.mUnreadFirst, mUnreadFirst) || other.mUnreadFirst == mUnreadFirst) &&
+            (identical(other.canAddToTeam, canAddToTeam) || other.canAddToTeam == canAddToTeam) &&
+            (identical(other.canManageSections, canManageSections) || other.canManageSections == canManageSections) &&
+            (identical(other.canManageProjects, canManageProjects) || other.canManageProjects == canManageProjects) &&
+            (identical(other.canManageTags, canManageTags) || other.canManageTags == canManageTags) &&
+            (identical(other.canManageIntegrations, canManageIntegrations) || other.canManageIntegrations == canManageIntegrations) &&
+            (identical(other.canManageColorRules, canManageColorRules) || other.canManageColorRules == canManageColorRules) &&
+            (identical(other.canCreateGroup, canCreateGroup) || other.canCreateGroup == canCreateGroup) &&
+            (identical(other.canCreateMeeting, canCreateMeeting) || other.canCreateMeeting == canCreateMeeting) &&
+            (identical(other.canJoinPublicGroups, canJoinPublicGroups) || other.canJoinPublicGroups == canJoinPublicGroups) &&
+            (identical(other.canJoinPublicTasks, canJoinPublicTasks) || other.canJoinPublicTasks == canJoinPublicTasks) &&
+            (identical(other.canImportChats, canImportChats) || other.canImportChats == canImportChats) &&
+            (identical(other.customFields, customFields) || other.customFields == customFields) &&
+            (identical(other.canDeleteAnyMessage, canDeleteAnyMessage) || other.canDeleteAnyMessage == canDeleteAnyMessage));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(jid) ^
-      const DeepCollectionEquality().hash(node) ^
-      const DeepCollectionEquality().hash(displayName) ^
-      const DeepCollectionEquality().hash(shortName) ^
-      const DeepCollectionEquality().hash(contactEmail) ^
-      const DeepCollectionEquality().hash(contactPhone) ^
-      const DeepCollectionEquality().hash(icons) ^
-      const DeepCollectionEquality().hash(gentime) ^
-      const DeepCollectionEquality().hash(role) ^
-      const DeepCollectionEquality().hash(mood) ^
-      const DeepCollectionEquality().hash(teamStatus) ^
-      const DeepCollectionEquality().hash(lastActivity) ^
-      const DeepCollectionEquality().hash(isArchive) ^
-      const DeepCollectionEquality().hash(botname) ^
-      const DeepCollectionEquality().hash(sections) ^
-      const DeepCollectionEquality().hash(canSendMessage) ^
-      const DeepCollectionEquality().hash(cantSendMessageReason) ^
-      const DeepCollectionEquality().hash(canCall) ^
-      const DeepCollectionEquality().hash(canCreateTask) ^
-      const DeepCollectionEquality().hash(canImportTasks) ^
-      const DeepCollectionEquality().hash(canAddToGroup) ^
-      const DeepCollectionEquality().hash(canDelete) ^
-      const DeepCollectionEquality().hash(changeableFields) ^
-      const DeepCollectionEquality().hash(familyName) ^
-      const DeepCollectionEquality().hash(givenName) ^
-      const DeepCollectionEquality().hash(patronymic) ^
-      const DeepCollectionEquality().hash(defaultLang) ^
-      const DeepCollectionEquality().hash(debugShowActivity) ^
-      const DeepCollectionEquality().hash(dropallEnabled) ^
-      const DeepCollectionEquality().hash(altSend) ^
-      const DeepCollectionEquality().hash(asteriskMention) ^
-      const DeepCollectionEquality().hash(alwaysSendPushes) ^
-      const DeepCollectionEquality().hash(hidePushesContent) ^
-      const DeepCollectionEquality().hash(timezone) ^
-      const DeepCollectionEquality().hash(quietTimeStart) ^
-      const DeepCollectionEquality().hash(quietTimeFinish) ^
-      const DeepCollectionEquality().hash(focusUntil) ^
-      const DeepCollectionEquality().hash(groupNotificationsEnabled) ^
-      const DeepCollectionEquality().hash(taskNotificationsEnabled) ^
-      const DeepCollectionEquality().hash(contactShortView) ^
-      const DeepCollectionEquality().hash(groupShortView) ^
-      const DeepCollectionEquality().hash(taskShortView) ^
-      const DeepCollectionEquality().hash(meetingShortView) ^
-      const DeepCollectionEquality().hash(contactMshortView) ^
-      const DeepCollectionEquality().hash(groupMshortView) ^
-      const DeepCollectionEquality().hash(auth2faEnabled) ^
-      const DeepCollectionEquality().hash(auth2faStatus) ^
-      const DeepCollectionEquality().hash(taskMshortView) ^
-      const DeepCollectionEquality().hash(meetingMshortView) ^
-      const DeepCollectionEquality().hash(contactShowArchived) ^
-      const DeepCollectionEquality().hash(unreadFirst) ^
-      const DeepCollectionEquality().hash(mUnreadFirst) ^
-      const DeepCollectionEquality().hash(canAddToTeam) ^
-      const DeepCollectionEquality().hash(canManageSections) ^
-      const DeepCollectionEquality().hash(canManageProjects) ^
-      const DeepCollectionEquality().hash(canManageTags) ^
-      const DeepCollectionEquality().hash(canManageIntegrations) ^
-      const DeepCollectionEquality().hash(canManageColorRules) ^
-      const DeepCollectionEquality().hash(canCreateGroup) ^
-      const DeepCollectionEquality().hash(canCreateMeeting) ^
-      const DeepCollectionEquality().hash(canJoinPublicGroups) ^
-      const DeepCollectionEquality().hash(canJoinPublicTasks) ^
-      const DeepCollectionEquality().hash(canImportChats) ^
-      const DeepCollectionEquality().hash(customFields) ^
-      const DeepCollectionEquality().hash(canDeleteAnyMessage);
 
   @JsonKey(ignore: true)
   @override
-  _$ContactCopyWith<_Contact> get copyWith => __$ContactCopyWithImpl<_Contact>(this, _$identity);
+  int get hashCode => Object.hashAll([
+        runtimeType,
+        jid,
+        node,
+        displayName,
+        shortName,
+        contactEmail,
+        contactPhone,
+        icons,
+        gentime,
+        role,
+        mood,
+        teamStatus,
+        lastActivity,
+        isArchive,
+        botname,
+        const DeepCollectionEquality().hash(_sections),
+        canSendMessage,
+        cantSendMessageReason,
+        canCall,
+        canCreateTask,
+        canImportTasks,
+        canAddToGroup,
+        canDelete,
+        const DeepCollectionEquality().hash(_changeableFields),
+        familyName,
+        givenName,
+        patronymic,
+        defaultLang,
+        debugShowActivity,
+        dropallEnabled,
+        altSend,
+        asteriskMention,
+        alwaysSendPushes,
+        hidePushesContent,
+        timezone,
+        quietTimeStart,
+        quietTimeFinish,
+        focusUntil,
+        groupNotificationsEnabled,
+        taskNotificationsEnabled,
+        contactShortView,
+        groupShortView,
+        taskShortView,
+        meetingShortView,
+        contactMshortView,
+        groupMshortView,
+        auth2faEnabled,
+        auth2faStatus,
+        taskMshortView,
+        meetingMshortView,
+        contactShowArchived,
+        unreadFirst,
+        mUnreadFirst,
+        canAddToTeam,
+        canManageSections,
+        canManageProjects,
+        canManageTags,
+        canManageIntegrations,
+        canManageColorRules,
+        canCreateGroup,
+        canCreateMeeting,
+        canJoinPublicGroups,
+        canJoinPublicTasks,
+        canImportChats,
+        customFields,
+        canDeleteAnyMessage
+      ]);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_ContactCopyWith<_$_Contact> get copyWith =>
+      __$$_ContactCopyWithImpl<_$_Contact>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ContactToJson(this);
+    return _$$_ContactToJson(
+      this,
+    );
   }
 }
 
 abstract class _Contact implements Contact {
   const factory _Contact(
-      {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'node') String? node,
-      @JsonKey(name: 'display_name') required String displayName,
-      @JsonKey(name: 'short_name') required String shortName,
-      @JsonKey(name: 'contact_email') required String contactEmail,
-      @JsonKey(name: 'contact_phone') required String contactPhone,
-      @JsonKey(name: 'icons') required IconData icons,
-      @JsonKey(name: 'gentime') required int gentime,
-      @JsonKey(name: 'role') required String role,
-      @JsonKey(name: 'mood') String? mood,
-      @JsonKey(name: 'status') required String teamStatus,
-      @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,
-      @JsonKey(name: 'is_archive') bool? isArchive,
-      @JsonKey(name: 'botname') String? botname,
-      @JsonKey(name: 'sections') required List<String> sections,
-      @JsonKey(name: 'can_send_message') bool? canSendMessage,
-      @JsonKey(name: 'cant_send_message_reason') String? cantSendMessageReason,
-      @JsonKey(name: 'can_call') bool? canCall,
-      @JsonKey(name: 'can_create_task') bool? canCreateTask,
-      @JsonKey(name: 'can_import_tasks') bool? canImportTasks,
-      @JsonKey(name: 'can_add_to_group') bool? canAddToGroup,
-      @JsonKey(name: 'can_delete') bool? canDelete,
-      @JsonKey(name: 'changeable_fields') List<String>? changeableFields,
-      @JsonKey(name: 'family_name') String? familyName,
-      @JsonKey(name: 'given_name') String? givenName,
-      @JsonKey(name: 'patronymic') String? patronymic,
-      @JsonKey(name: 'default_lang') String? defaultLang,
-      @JsonKey(name: 'debug_show_activity') bool? debugShowActivity,
-      @JsonKey(name: 'dropall_enabled') bool? dropallEnabled,
-      @JsonKey(name: 'alt_send') bool? altSend,
-      @JsonKey(name: 'asterisk_mention') bool? asteriskMention,
-      @JsonKey(name: 'always_send_pushes') bool? alwaysSendPushes,
-      @JsonKey(name: 'hide_pushes_content') bool? hidePushesContent,
-      @JsonKey(name: 'timezone') String? timezone,
-      @JsonKey(name: 'quiet_time_start') String? quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish') String? quietTimeFinish,
-      @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime? focusUntil,
-      @JsonKey(name: 'group_notifications_enabled') bool? groupNotificationsEnabled,
-      @JsonKey(name: 'task_notifications_enabled') bool? taskNotificationsEnabled,
-      @JsonKey(name: 'contact_short_view') bool? contactShortView,
-      @JsonKey(name: 'group_short_view') bool? groupShortView,
-      @JsonKey(name: 'task_short_view') bool? taskShortView,
-      @JsonKey(name: 'meeting_short_view') bool? meetingShortView,
-      @JsonKey(name: 'contact_mshort_view') bool? contactMshortView,
-      @JsonKey(name: 'group_mshort_view') bool? groupMshortView,
-      @JsonKey(name: 'auth_2fa_enabled') bool? auth2faEnabled,
-      @JsonKey(name: 'auth_2fa_status') String? auth2faStatus,
-      @JsonKey(name: 'task_mshort_view') bool? taskMshortView,
-      @JsonKey(name: 'meeting_mshort_view') bool? meetingMshortView,
-      @JsonKey(name: 'contact_show_archived') bool? contactShowArchived,
-      @JsonKey(name: 'unread_first') bool? unreadFirst,
-      @JsonKey(name: 'munread_first') bool? mUnreadFirst,
-      @JsonKey(name: 'can_add_to_team') bool? canAddToTeam,
-      @JsonKey(name: 'can_manage_sections') bool? canManageSections,
-      @JsonKey(name: 'can_manage_projects') bool? canManageProjects,
-      @JsonKey(name: 'can_manage_tags') bool? canManageTags,
-      @JsonKey(name: 'can_manage_integrations') bool? canManageIntegrations,
-      @JsonKey(name: 'can_manage_color_rules') bool? canManageColorRules,
-      @JsonKey(name: 'can_create_group') bool? canCreateGroup,
-      @JsonKey(name: 'can_create_meeting') bool? canCreateMeeting,
-      @JsonKey(name: 'can_join_public_groups') bool? canJoinPublicGroups,
-      @JsonKey(name: 'can_join_public_tasks') bool? canJoinPublicTasks,
-      @JsonKey(name: 'can_import_chats') bool? canImportChats,
-      @JsonKey(name: 'custom_fields') ContactCustomFields? customFields,
-      @Deprecated('Deprecated.') @JsonKey(name: 'can_delete_any_message') bool? canDeleteAnyMessage}) = _$_Contact;
+      {@JsonKey(name: 'jid')
+          required final String jid,
+      @JsonKey(name: 'node')
+          final String? node,
+      @JsonKey(name: 'display_name')
+          required final String displayName,
+      @JsonKey(name: 'short_name')
+          required final String shortName,
+      @JsonKey(name: 'contact_email')
+          required final String contactEmail,
+      @JsonKey(name: 'contact_phone')
+          required final String contactPhone,
+      @JsonKey(name: 'icons')
+          required final IconData icons,
+      @JsonKey(name: 'gentime')
+          required final int gentime,
+      @JsonKey(name: 'role')
+          required final String role,
+      @JsonKey(name: 'mood')
+          final String? mood,
+      @JsonKey(name: 'status')
+          required final String teamStatus,
+      @JsonKey(name: 'last_activity')
+      @DateTimeConverter()
+          final DateTime? lastActivity,
+      @JsonKey(name: 'is_archive')
+          final bool? isArchive,
+      @JsonKey(name: 'botname')
+          final String? botname,
+      @JsonKey(name: 'sections')
+          required final List<String> sections,
+      @JsonKey(name: 'can_send_message')
+          final bool? canSendMessage,
+      @JsonKey(name: 'cant_send_message_reason')
+          final String? cantSendMessageReason,
+      @JsonKey(name: 'can_call')
+          final bool? canCall,
+      @JsonKey(name: 'can_create_task')
+          final bool? canCreateTask,
+      @JsonKey(name: 'can_import_tasks')
+          final bool? canImportTasks,
+      @JsonKey(name: 'can_add_to_group')
+          final bool? canAddToGroup,
+      @JsonKey(name: 'can_delete')
+          final bool? canDelete,
+      @JsonKey(name: 'changeable_fields')
+          final List<String>? changeableFields,
+      @JsonKey(name: 'family_name')
+          final String? familyName,
+      @JsonKey(name: 'given_name')
+          final String? givenName,
+      @JsonKey(name: 'patronymic')
+          final String? patronymic,
+      @JsonKey(name: 'default_lang')
+          final String? defaultLang,
+      @JsonKey(name: 'debug_show_activity')
+          final bool? debugShowActivity,
+      @JsonKey(name: 'dropall_enabled')
+          final bool? dropallEnabled,
+      @JsonKey(name: 'alt_send')
+          final bool? altSend,
+      @JsonKey(name: 'asterisk_mention')
+          final bool? asteriskMention,
+      @JsonKey(name: 'always_send_pushes')
+          final bool? alwaysSendPushes,
+      @JsonKey(name: 'hide_pushes_content')
+          final bool? hidePushesContent,
+      @JsonKey(name: 'timezone')
+          final String? timezone,
+      @JsonKey(name: 'quiet_time_start')
+          final String? quietTimeStart,
+      @JsonKey(name: 'quiet_time_finish')
+          final String? quietTimeFinish,
+      @JsonKey(name: 'focus_until')
+      @DateTimeConverter()
+          final DateTime? focusUntil,
+      @JsonKey(name: 'group_notifications_enabled')
+          final bool? groupNotificationsEnabled,
+      @JsonKey(name: 'task_notifications_enabled')
+          final bool? taskNotificationsEnabled,
+      @JsonKey(name: 'contact_short_view')
+          final bool? contactShortView,
+      @JsonKey(name: 'group_short_view')
+          final bool? groupShortView,
+      @JsonKey(name: 'task_short_view')
+          final bool? taskShortView,
+      @JsonKey(name: 'meeting_short_view')
+          final bool? meetingShortView,
+      @JsonKey(name: 'contact_mshort_view')
+          final bool? contactMshortView,
+      @JsonKey(name: 'group_mshort_view')
+          final bool? groupMshortView,
+      @JsonKey(name: 'auth_2fa_enabled')
+          final bool? auth2faEnabled,
+      @JsonKey(name: 'auth_2fa_status')
+          final String? auth2faStatus,
+      @JsonKey(name: 'task_mshort_view')
+          final bool? taskMshortView,
+      @JsonKey(name: 'meeting_mshort_view')
+          final bool? meetingMshortView,
+      @JsonKey(name: 'contact_show_archived')
+          final bool? contactShowArchived,
+      @JsonKey(name: 'unread_first')
+          final bool? unreadFirst,
+      @JsonKey(name: 'munread_first')
+          final bool? mUnreadFirst,
+      @JsonKey(name: 'can_add_to_team')
+          final bool? canAddToTeam,
+      @JsonKey(name: 'can_manage_sections')
+          final bool? canManageSections,
+      @JsonKey(name: 'can_manage_projects')
+          final bool? canManageProjects,
+      @JsonKey(name: 'can_manage_tags')
+          final bool? canManageTags,
+      @JsonKey(name: 'can_manage_integrations')
+          final bool? canManageIntegrations,
+      @JsonKey(name: 'can_manage_color_rules')
+          final bool? canManageColorRules,
+      @JsonKey(name: 'can_create_group')
+          final bool? canCreateGroup,
+      @JsonKey(name: 'can_create_meeting')
+          final bool? canCreateMeeting,
+      @JsonKey(name: 'can_join_public_groups')
+          final bool? canJoinPublicGroups,
+      @JsonKey(name: 'can_join_public_tasks')
+          final bool? canJoinPublicTasks,
+      @JsonKey(name: 'can_import_chats')
+          final bool? canImportChats,
+      @JsonKey(name: 'custom_fields')
+          final ContactCustomFields? customFields,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'can_delete_any_message')
+          final bool? canDeleteAnyMessage}) = _$_Contact;
 
   factory _Contact.fromJson(Map<String, dynamic> json) = _$_Contact.fromJson;
 
@@ -1958,331 +2114,332 @@ abstract class _Contact implements Contact {
 
   /// Contact Id.
   @JsonKey(name: 'jid')
-  String get jid => throw _privateConstructorUsedError;
+  String get jid;
   @override
 
   /// Node uid for external users.
   @JsonKey(name: 'node')
-  String? get node => throw _privateConstructorUsedError;
+  String? get node;
   @override
 
   /// Full name in chats.
   @JsonKey(name: 'display_name')
-  String get displayName => throw _privateConstructorUsedError;
+  String get displayName;
   @override
 
   /// Short name in chats.
   @JsonKey(name: 'short_name')
-  String get shortName => throw _privateConstructorUsedError;
+  String get shortName;
   @override
 
   /// Contact email in this team.
   @JsonKey(name: 'contact_email')
-  String get contactEmail => throw _privateConstructorUsedError;
+  String get contactEmail;
   @override
 
   /// Contact phone in this team.
   @JsonKey(name: 'contact_phone')
-  String get contactPhone => throw _privateConstructorUsedError;
+  String get contactPhone;
   @override
 
   /// Icons data.
   @JsonKey(name: 'icons')
-  IconData get icons => throw _privateConstructorUsedError;
+  IconData get icons;
   @override
 
   /// Object version.
   @JsonKey(name: 'gentime')
-  int get gentime => throw _privateConstructorUsedError;
+  int get gentime;
   @override
 
   /// Role in this team.
   @JsonKey(name: 'role')
-  String get role => throw _privateConstructorUsedError;
+  String get role;
   @override
 
   /// Mood in this team.
   @JsonKey(name: 'mood')
-  String? get mood => throw _privateConstructorUsedError;
+  String? get mood;
   @override
 
   /// Status in this team.
   @JsonKey(name: 'status')
-  String get teamStatus => throw _privateConstructorUsedError;
+  String get teamStatus;
   @override
 
   /// Last activity in this team (iso datetime).
   @JsonKey(name: 'last_activity')
   @DateTimeConverter()
-  DateTime? get lastActivity => throw _privateConstructorUsedError;
+  DateTime? get lastActivity;
   @override
 
   /// Contact deleted.
   @JsonKey(name: 'is_archive')
-  bool? get isArchive => throw _privateConstructorUsedError;
+  bool? get isArchive;
   @override
 
   /// Bot name. Empty for users.
   @JsonKey(name: 'botname')
-  String? get botname => throw _privateConstructorUsedError;
+  String? get botname;
   @override
 
   /// Section ids.
   @JsonKey(name: 'sections')
-  List<String> get sections => throw _privateConstructorUsedError;
+  List<String> get sections;
   @override
 
   /// Can I send message to this contact.
   @JsonKey(name: 'can_send_message')
-  bool? get canSendMessage => throw _privateConstructorUsedError;
+  bool? get canSendMessage;
   @override
 
   /// Why I can't send message to this chat (if can't).
   @JsonKey(name: 'cant_send_message_reason')
-  String? get cantSendMessageReason => throw _privateConstructorUsedError;
+  String? get cantSendMessageReason;
   @override
 
   /// Can I call to this contact.
   @JsonKey(name: 'can_call')
-  bool? get canCall => throw _privateConstructorUsedError;
+  bool? get canCall;
   @override
 
   /// Can I create task for this contact.
   @JsonKey(name: 'can_create_task')
-  bool? get canCreateTask => throw _privateConstructorUsedError;
+  bool? get canCreateTask;
   @override
 
   /// Can I import tasks in this team.
   @JsonKey(name: 'can_import_tasks')
-  bool? get canImportTasks => throw _privateConstructorUsedError;
+  bool? get canImportTasks;
   @override
 
   /// Can I add this contact to group chats.
   @JsonKey(name: 'can_add_to_group')
-  bool? get canAddToGroup => throw _privateConstructorUsedError;
+  bool? get canAddToGroup;
   @override
 
   /// Can I remove this contact from team.
   @JsonKey(name: 'can_delete')
-  bool? get canDelete => throw _privateConstructorUsedError;
+  bool? get canDelete;
   @override
 
   /// Changeable fields.
   @JsonKey(name: 'changeable_fields')
-  List<String>? get changeableFields => throw _privateConstructorUsedError;
+  List<String>? get changeableFields;
   @override
 
   /// Family name.
   @JsonKey(name: 'family_name')
-  String? get familyName => throw _privateConstructorUsedError;
+  String? get familyName;
   @override
 
   /// Given name.
   @JsonKey(name: 'given_name')
-  String? get givenName => throw _privateConstructorUsedError;
+  String? get givenName;
   @override
 
   /// Patronymic, if any.
   @JsonKey(name: 'patronymic')
-  String? get patronymic => throw _privateConstructorUsedError;
+  String? get patronymic;
   @override
 
   /// Default language code.
   @JsonKey(name: 'default_lang')
-  String? get defaultLang => throw _privateConstructorUsedError;
+  String? get defaultLang;
   @override
 
   /// Enable debug messages in UI.
   @JsonKey(name: 'debug_show_activity')
-  bool? get debugShowActivity => throw _privateConstructorUsedError;
+  bool? get debugShowActivity;
   @override
 
   /// Enable remove all messages experimental features.
   @JsonKey(name: 'dropall_enabled')
-  bool? get dropallEnabled => throw _privateConstructorUsedError;
+  bool? get dropallEnabled;
   @override
 
   /// Use Ctrl/Cmd + Enter instead Enter.
   @JsonKey(name: 'alt_send')
-  bool? get altSend => throw _privateConstructorUsedError;
+  bool? get altSend;
   @override
 
   /// Use * as @ for mentions.
   @JsonKey(name: 'asterisk_mention')
-  bool? get asteriskMention => throw _privateConstructorUsedError;
+  bool? get asteriskMention;
   @override
 
   /// Send push notifications even contact is online.
   @JsonKey(name: 'always_send_pushes')
-  bool? get alwaysSendPushes => throw _privateConstructorUsedError;
+  bool? get alwaysSendPushes;
   @override
 
   /// Hide pushes body.
   @JsonKey(name: 'hide_pushes_content')
-  bool? get hidePushesContent => throw _privateConstructorUsedError;
+  bool? get hidePushesContent;
   @override
 
   /// Timezone, if any.
   @JsonKey(name: 'timezone')
-  String? get timezone => throw _privateConstructorUsedError;
+  String? get timezone;
   @override
 
   /// Quiet time start.
   @JsonKey(name: 'quiet_time_start')
-  String? get quietTimeStart => throw _privateConstructorUsedError;
+  String? get quietTimeStart;
   @override
 
   /// Quiet time finish.
   @JsonKey(name: 'quiet_time_finish')
-  String? get quietTimeFinish => throw _privateConstructorUsedError;
+  String? get quietTimeFinish;
   @override
 
   /// Focus mode enabled until.
   @JsonKey(name: 'focus_until')
   @DateTimeConverter()
-  DateTime? get focusUntil => throw _privateConstructorUsedError;
+  DateTime? get focusUntil;
   @override
 
   /// Push notifications for group chats.
   @JsonKey(name: 'group_notifications_enabled')
-  bool? get groupNotificationsEnabled => throw _privateConstructorUsedError;
+  bool? get groupNotificationsEnabled;
   @override
 
   /// Push notifications for task chats.
   @JsonKey(name: 'task_notifications_enabled')
-  bool? get taskNotificationsEnabled => throw _privateConstructorUsedError;
+  bool? get taskNotificationsEnabled;
   @override
 
   /// Short view in contact list.
   @JsonKey(name: 'contact_short_view')
-  bool? get contactShortView => throw _privateConstructorUsedError;
+  bool? get contactShortView;
   @override
 
   /// Short view in group list.
   @JsonKey(name: 'group_short_view')
-  bool? get groupShortView => throw _privateConstructorUsedError;
+  bool? get groupShortView;
   @override
 
   /// Short view in task list.
   @JsonKey(name: 'task_short_view')
-  bool? get taskShortView => throw _privateConstructorUsedError;
+  bool? get taskShortView;
   @override
 
   /// Short view in meeting list.
   @JsonKey(name: 'meeting_short_view')
-  bool? get meetingShortView => throw _privateConstructorUsedError;
+  bool? get meetingShortView;
   @override
 
   /// Short view in contact list in mobile app.
   @JsonKey(name: 'contact_mshort_view')
-  bool? get contactMshortView => throw _privateConstructorUsedError;
+  bool? get contactMshortView;
   @override
 
   /// Short view in group list in mobile app.
   @JsonKey(name: 'group_mshort_view')
-  bool? get groupMshortView => throw _privateConstructorUsedError;
+  bool? get groupMshortView;
   @override
 
   /// Two-factor authentication is configured and confirmed.
   @JsonKey(name: 'auth_2fa_enabled')
-  bool? get auth2faEnabled => throw _privateConstructorUsedError;
+  bool? get auth2faEnabled;
   @override
 
   /// Two-factor authentication status.
   @JsonKey(name: 'auth_2fa_status')
-  String? get auth2faStatus => throw _privateConstructorUsedError;
+  String? get auth2faStatus;
   @override
 
   /// Short view in task list in mobile app.
   @JsonKey(name: 'task_mshort_view')
-  bool? get taskMshortView => throw _privateConstructorUsedError;
+  bool? get taskMshortView;
   @override
 
   /// Short view in meeting list in mobile app.
   @JsonKey(name: 'meeting_mshort_view')
-  bool? get meetingMshortView => throw _privateConstructorUsedError;
+  bool? get meetingMshortView;
   @override
 
   /// Show archived contacts in contact list.
   @JsonKey(name: 'contact_show_archived')
-  bool? get contactShowArchived => throw _privateConstructorUsedError;
+  bool? get contactShowArchived;
   @override
 
   /// Show unread chats first in feed.
   @JsonKey(name: 'unread_first')
-  bool? get unreadFirst => throw _privateConstructorUsedError;
+  bool? get unreadFirst;
   @override
 
   /// Show unread chats first in feed in mobile app.
   @JsonKey(name: 'munread_first')
-  bool? get mUnreadFirst => throw _privateConstructorUsedError;
+  bool? get mUnreadFirst;
   @override
 
   /// Can I add new members to this team.
   @JsonKey(name: 'can_add_to_team')
-  bool? get canAddToTeam => throw _privateConstructorUsedError;
+  bool? get canAddToTeam;
   @override
 
   /// Can I manage contact sections in this team.
   @JsonKey(name: 'can_manage_sections')
-  bool? get canManageSections => throw _privateConstructorUsedError;
+  bool? get canManageSections;
   @override
 
   /// Can I manage task projects in this team.
   @JsonKey(name: 'can_manage_projects')
-  bool? get canManageProjects => throw _privateConstructorUsedError;
+  bool? get canManageProjects;
   @override
 
   /// Can I manage tags in this team.
   @JsonKey(name: 'can_manage_tags')
-  bool? get canManageTags => throw _privateConstructorUsedError;
+  bool? get canManageTags;
   @override
 
   /// Can I manage integrations in this team.
   @JsonKey(name: 'can_manage_integrations')
-  bool? get canManageIntegrations => throw _privateConstructorUsedError;
+  bool? get canManageIntegrations;
   @override
 
   /// Can I manage color rules in this team.
   @JsonKey(name: 'can_manage_color_rules')
-  bool? get canManageColorRules => throw _privateConstructorUsedError;
+  bool? get canManageColorRules;
   @override
 
   /// Can I create group chats in this team.
   @JsonKey(name: 'can_create_group')
-  bool? get canCreateGroup => throw _privateConstructorUsedError;
+  bool? get canCreateGroup;
   @override
 
   /// Can I create meetings in this team.
   @JsonKey(name: 'can_create_meeting')
-  bool? get canCreateMeeting => throw _privateConstructorUsedError;
+  bool? get canCreateMeeting;
   @override
 
   /// Can I view/join public group in this team.
   @JsonKey(name: 'can_join_public_groups')
-  bool? get canJoinPublicGroups => throw _privateConstructorUsedError;
+  bool? get canJoinPublicGroups;
   @override
 
   /// Can I view/join public tasks in this team.
   @JsonKey(name: 'can_join_public_tasks')
-  bool? get canJoinPublicTasks => throw _privateConstructorUsedError;
+  bool? get canJoinPublicTasks;
   @override
 
   /// Can I import chats from external services (now its only telegram).
   @JsonKey(name: 'can_import_chats')
-  bool? get canImportChats => throw _privateConstructorUsedError;
+  bool? get canImportChats;
   @override
 
   /// Extra contact fields.
   @JsonKey(name: 'custom_fields')
-  ContactCustomFields? get customFields => throw _privateConstructorUsedError;
+  ContactCustomFields? get customFields;
   @override
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'can_delete_any_message')
-  bool? get canDeleteAnyMessage => throw _privateConstructorUsedError;
+  bool? get canDeleteAnyMessage;
   @override
   @JsonKey(ignore: true)
-  _$ContactCopyWith<_Contact> get copyWith => throw _privateConstructorUsedError;
+  _$$_ContactCopyWith<_$_Contact> get copyWith =>
+      throw _privateConstructorUsedError;
 }

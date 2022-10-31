@@ -10,27 +10,29 @@ class MeetingMember with _$MeetingMember {
   const factory MeetingMember({
     /// .
     @JsonKey(name: 'meeting_id') required String meetingId,
-
+    
     /// .
     @JsonKey(name: 'chat_uuid') required String chatUuid,
-
+    
     /// .
     @JsonKey(name: 'contact') required Contact contact,
-
+    
     /// .
     @JsonKey(name: 'presence') required String presence,
-
+    
     /// .
     @JsonKey(name: 'status') required String status,
-
+    
     /// .
     @JsonKey(name: 'can_change_presence') bool? canChangePresence,
-
+    
     /// .
     @JsonKey(name: 'can_change_status') bool? canChangeStatus,
-
+    
     /// .
     @JsonKey(name: 'can_remove') bool? canRemove,
+    
+    
   }) = _MeetingMember;
 
   factory MeetingMember.fromJson(Map<String, dynamic> json) => _$MeetingMemberFromJson(json);

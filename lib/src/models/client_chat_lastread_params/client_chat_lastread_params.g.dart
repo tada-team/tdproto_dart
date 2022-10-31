@@ -6,13 +6,16 @@ part of 'client_chat_lastread_params.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ClientChatLastreadParams _$$_ClientChatLastreadParamsFromJson(Map<String, dynamic> json) =>
+_$_ClientChatLastreadParams _$$_ClientChatLastreadParamsFromJson(
+        Map<String, dynamic> json) =>
     _$_ClientChatLastreadParams(
       jid: json['jid'] as String,
       lastReadMessageId: json['last_read_message_id'] as String?,
     );
 
-Map<String, dynamic> _$$_ClientChatLastreadParamsToJson(_$_ClientChatLastreadParams instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ClientChatLastreadParamsToJson(
+        _$_ClientChatLastreadParams instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'last_read_message_id': instance.lastReadMessageId,
     };

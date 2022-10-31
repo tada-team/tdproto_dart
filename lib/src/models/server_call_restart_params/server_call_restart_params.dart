@@ -10,12 +10,14 @@ class ServerCallRestartParams with _$ServerCallRestartParams {
   const factory ServerCallRestartParams({
     /// Chat or contact id.
     @JsonKey(name: 'jid') required String jid,
-
+    
     /// Call id.
     @JsonKey(name: 'uid') required String uid,
-
+    
     /// Team id.
     @JsonKey(name: 'team') required String team,
+    
+    
   }) = _ServerCallRestartParams;
 
   factory ServerCallRestartParams.fromJson(Map<String, dynamic> json) => _$ServerCallRestartParamsFromJson(json);

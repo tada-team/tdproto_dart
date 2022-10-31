@@ -18,10 +18,12 @@ _$_Contact _$$_ContactFromJson(Map<String, dynamic> json) => _$_Contact(
       role: json['role'] as String,
       mood: json['mood'] as String?,
       teamStatus: json['status'] as String,
-      lastActivity: json['last_activity'] == null ? null : DateTime.parse(json['last_activity'] as String),
+      lastActivity: _$JsonConverterFromJson<String, DateTime>(
+          json['last_activity'], const DateTimeConverter().fromJson),
       isArchive: json['is_archive'] as bool?,
       botname: json['botname'] as String?,
-      sections: (json['sections'] as List<dynamic>).map((e) => e as String).toList(),
+      sections:
+          (json['sections'] as List<dynamic>).map((e) => e as String).toList(),
       canSendMessage: json['can_send_message'] as bool?,
       cantSendMessageReason: json['cant_send_message_reason'] as String?,
       canCall: json['can_call'] as bool?,
@@ -29,7 +31,9 @@ _$_Contact _$$_ContactFromJson(Map<String, dynamic> json) => _$_Contact(
       canImportTasks: json['can_import_tasks'] as bool?,
       canAddToGroup: json['can_add_to_group'] as bool?,
       canDelete: json['can_delete'] as bool?,
-      changeableFields: (json['changeable_fields'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      changeableFields: (json['changeable_fields'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList(),
       familyName: json['family_name'] as String?,
       givenName: json['given_name'] as String?,
       patronymic: json['patronymic'] as String?,
@@ -43,7 +47,8 @@ _$_Contact _$$_ContactFromJson(Map<String, dynamic> json) => _$_Contact(
       timezone: json['timezone'] as String?,
       quietTimeStart: json['quiet_time_start'] as String?,
       quietTimeFinish: json['quiet_time_finish'] as String?,
-      focusUntil: json['focus_until'] == null ? null : DateTime.parse(json['focus_until'] as String),
+      focusUntil: _$JsonConverterFromJson<String, DateTime>(
+          json['focus_until'], const DateTimeConverter().fromJson),
       groupNotificationsEnabled: json['group_notifications_enabled'] as bool?,
       taskNotificationsEnabled: json['task_notifications_enabled'] as bool?,
       contactShortView: json['contact_short_view'] as bool?,
@@ -72,11 +77,13 @@ _$_Contact _$$_ContactFromJson(Map<String, dynamic> json) => _$_Contact(
       canImportChats: json['can_import_chats'] as bool?,
       customFields: json['custom_fields'] == null
           ? null
-          : ContactCustomFields.fromJson(json['custom_fields'] as Map<String, dynamic>),
+          : ContactCustomFields.fromJson(
+              json['custom_fields'] as Map<String, dynamic>),
       canDeleteAnyMessage: json['can_delete_any_message'] as bool?,
     );
 
-Map<String, dynamic> _$$_ContactToJson(_$_Contact instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ContactToJson(_$_Contact instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'node': instance.node,
       'display_name': instance.displayName,
@@ -88,7 +95,8 @@ Map<String, dynamic> _$$_ContactToJson(_$_Contact instance) => <String, dynamic>
       'role': instance.role,
       'mood': instance.mood,
       'status': instance.teamStatus,
-      'last_activity': instance.lastActivity?.toIso8601String(),
+      'last_activity': _$JsonConverterToJson<String, DateTime>(
+          instance.lastActivity, const DateTimeConverter().toJson),
       'is_archive': instance.isArchive,
       'botname': instance.botname,
       'sections': instance.sections,
@@ -113,7 +121,8 @@ Map<String, dynamic> _$$_ContactToJson(_$_Contact instance) => <String, dynamic>
       'timezone': instance.timezone,
       'quiet_time_start': instance.quietTimeStart,
       'quiet_time_finish': instance.quietTimeFinish,
-      'focus_until': instance.focusUntil?.toIso8601String(),
+      'focus_until': _$JsonConverterToJson<String, DateTime>(
+          instance.focusUntil, const DateTimeConverter().toJson),
       'group_notifications_enabled': instance.groupNotificationsEnabled,
       'task_notifications_enabled': instance.taskNotificationsEnabled,
       'contact_short_view': instance.contactShortView,
@@ -143,3 +152,15 @@ Map<String, dynamic> _$$_ContactToJson(_$_Contact instance) => <String, dynamic>
       'custom_fields': instance.customFields?.toJson(),
       'can_delete_any_message': instance.canDeleteAnyMessage,
     };
+
+Value? _$JsonConverterFromJson<Json, Value>(
+  Object? json,
+  Value? Function(Json json) fromJson,
+) =>
+    json == null ? null : fromJson(json as Json);
+
+Json? _$JsonConverterToJson<Json, Value>(
+  Value? value,
+  Json? Function(Value value) toJson,
+) =>
+    value == null ? null : toJson(value);

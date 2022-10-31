@@ -10,6 +10,8 @@ class ClientActivityParams with _$ClientActivityParams {
   const factory ClientActivityParams({
     /// Is away from keyboard.
     @JsonKey(name: 'afk') required bool afk,
+    
+    
   }) = _ClientActivityParams;
 
   factory ClientActivityParams.fromJson(Map<String, dynamic> json) => _$ClientActivityParamsFromJson(json);

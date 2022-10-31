@@ -20,7 +20,8 @@ _$_WebBase _$$_WebBaseFromJson(Map<String, dynamic> json) => _$_WebBase(
       fade: json['fade'] as String,
     );
 
-Map<String, dynamic> _$$_WebBaseToJson(_$_WebBase instance) => <String, dynamic>{
+Map<String, dynamic> _$$_WebBaseToJson(_$_WebBase instance) =>
+    <String, dynamic>{
       'brand': instance.brand,
       'brand_light': instance.brandLight,
       'brand_dark': instance.brandDark,

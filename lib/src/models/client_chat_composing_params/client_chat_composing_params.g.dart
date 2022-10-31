@@ -6,7 +6,8 @@ part of 'client_chat_composing_params.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ClientChatComposingParams _$$_ClientChatComposingParamsFromJson(Map<String, dynamic> json) =>
+_$_ClientChatComposingParams _$$_ClientChatComposingParamsFromJson(
+        Map<String, dynamic> json) =>
     _$_ClientChatComposingParams(
       jid: json['jid'] as String,
       isAudio: json['is_audio'] as bool?,
@@ -14,7 +15,9 @@ _$_ClientChatComposingParams _$$_ClientChatComposingParamsFromJson(Map<String, d
       draft: json['draft'] as String?,
     );
 
-Map<String, dynamic> _$$_ClientChatComposingParamsToJson(_$_ClientChatComposingParams instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ClientChatComposingParamsToJson(
+        _$_ClientChatComposingParams instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'is_audio': instance.isAudio,
       'composing': instance.composing,

@@ -10,11 +10,12 @@ class MeetingsDeleteRequestParams with _$MeetingsDeleteRequestParams {
   const factory MeetingsDeleteRequestParams({
     /// .
     @JsonKey(name: 'team_uuid') required String teamUuid,
-
+    
     /// .
     @JsonKey(name: 'date') @DateTimeConverter() DateTime? date,
+    
+    
   }) = _MeetingsDeleteRequestParams;
 
-  factory MeetingsDeleteRequestParams.fromJson(Map<String, dynamic> json) =>
-      _$MeetingsDeleteRequestParamsFromJson(json);
+  factory MeetingsDeleteRequestParams.fromJson(Map<String, dynamic> json) => _$MeetingsDeleteRequestParamsFromJson(json);
 }

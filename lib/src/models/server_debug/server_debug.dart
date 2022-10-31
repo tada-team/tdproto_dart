@@ -10,12 +10,14 @@ class ServerDebug with _$ServerDebug {
   const factory ServerDebug({
     /// .
     @JsonKey(name: 'params') required ServerDebugParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerDebug;
 
   factory ServerDebug.fromJson(Map<String, dynamic> json) => _$ServerDebugFromJson(json);

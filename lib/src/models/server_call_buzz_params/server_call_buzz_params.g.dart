@@ -6,7 +6,9 @@ part of 'server_call_buzz_params.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ServerCallBuzzParams _$$_ServerCallBuzzParamsFromJson(Map<String, dynamic> json) => _$_ServerCallBuzzParams(
+_$_ServerCallBuzzParams _$$_ServerCallBuzzParamsFromJson(
+        Map<String, dynamic> json) =>
+    _$_ServerCallBuzzParams(
       jid: json['jid'] as String,
       icons: IconData.fromJson(json['icons'] as Map<String, dynamic>),
       displayName: json['display_name'] as String,
@@ -19,7 +21,9 @@ _$_ServerCallBuzzParams _$$_ServerCallBuzzParamsFromJson(Map<String, dynamic> js
       callType: json['call_type'] as String,
     );
 
-Map<String, dynamic> _$$_ServerCallBuzzParamsToJson(_$_ServerCallBuzzParams instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ServerCallBuzzParamsToJson(
+        _$_ServerCallBuzzParams instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'icons': instance.icons.toJson(),
       'display_name': instance.displayName,

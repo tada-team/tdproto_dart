@@ -6,7 +6,8 @@ part of 'short_message.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ShortMessage _$$_ShortMessageFromJson(Map<String, dynamic> json) => _$_ShortMessage(
+_$_ShortMessage _$$_ShortMessageFromJson(Map<String, dynamic> json) =>
+    _$_ShortMessage(
       from: json['from'] as String,
       to: json['to'] as String,
       messageId: json['message_id'] as String,
@@ -17,7 +18,8 @@ _$_ShortMessage _$$_ShortMessageFromJson(Map<String, dynamic> json) => _$_ShortM
       isArchive: json['is_archive'] as bool?,
     );
 
-Map<String, dynamic> _$$_ShortMessageToJson(_$_ShortMessage instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ShortMessageToJson(_$_ShortMessage instance) =>
+    <String, dynamic>{
       'from': instance.from,
       'to': instance.to,
       'message_id': instance.messageId,

@@ -15,11 +15,15 @@ _$_Team _$$_TeamFromJson(Map<String, dynamic> json) => _$_Team(
       maxMessageUpdateAge: json['max_message_update_age'] as int,
       icons: IconData.fromJson(json['icons'] as Map<String, dynamic>),
       lastActive: json['last_active'] as bool,
-      changeableStatuses: (json['changeable_statuses'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      changeableStatuses: (json['changeable_statuses'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList(),
       badProfile: json['bad_profile'] as bool?,
       needConfirmation: json['need_confirmation'] as bool,
       usePatronymic: json['use_patronymic'] as bool?,
-      userFields: (json['user_fields'] as List<dynamic>).map((e) => e as String).toList(),
+      userFields: (json['user_fields'] as List<dynamic>)
+          .map((e) => e as String)
+          .toList(),
       displayFamilyNameFirst: json['display_family_name_first'] as bool?,
       useTaskImportance: json['use_task_importance'] as bool?,
       taskImportanceMin: json['task_importance_min'] as int?,
@@ -30,16 +34,25 @@ _$_Team _$$_TeamFromJson(Map<String, dynamic> json) => _$_Team(
       useTaskSpentTime: json['use_task_spent_time'] as bool?,
       uploadsSize: json['uploads_size'] as int?,
       uploadsSizeLimit: json['uploads_size_limit'] as int?,
-      unreads: json['unread'] == null ? null : TeamUnread.fromJson(json['unread'] as Map<String, dynamic>),
+      unreads: json['unread'] == null
+          ? null
+          : TeamUnread.fromJson(json['unread'] as Map<String, dynamic>),
       me: Contact.fromJson(json['me'] as Map<String, dynamic>),
-      contacts: (json['contacts'] as List<dynamic>?)?.map((e) => Contact.fromJson(e as Map<String, dynamic>)).toList(),
+      contacts: (json['contacts'] as List<dynamic>?)
+          ?.map((e) => Contact.fromJson(e as Map<String, dynamic>))
+          .toList(),
       singleGroup: json['single_group'] as String?,
-      theme: json['theme'] == null ? null : Theme.fromJson(json['theme'] as Map<String, dynamic>),
+      theme: json['theme'] == null
+          ? null
+          : Theme.fromJson(json['theme'] as Map<String, dynamic>),
       hideArchivedUsers: json['hide_archived_users'] as bool?,
       pinned: json['pinned'] as bool?,
-      availableTariffs: (json['available_tariffs'] as List<dynamic>?)?.map((e) => e as String).toList(),
-      subscription:
-          json['subscription'] == null ? null : Subscription.fromJson(json['subscription'] as Map<String, dynamic>),
+      availableTariffs: (json['available_tariffs'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList(),
+      subscription: json['subscription'] == null
+          ? null
+          : Subscription.fromJson(json['subscription'] as Map<String, dynamic>),
       notebot: json['notebot'] as String?,
     );
 

@@ -10,9 +10,11 @@ class PdfVersion with _$PdfVersion {
   const factory PdfVersion({
     /// Absolute url.
     @JsonKey(name: 'url') required String url,
-
+    
     /// First string of text content.
     @JsonKey(name: 'text_preview') String? textPreview,
+    
+    
   }) = _PdfVersion;
 
   factory PdfVersion.fromJson(Map<String, dynamic> json) => _$PdfVersionFromJson(json);

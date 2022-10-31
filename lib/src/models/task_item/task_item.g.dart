@@ -14,10 +14,13 @@ _$_TaskItem _$$_TaskItemFromJson(Map<String, dynamic> json) => _$_TaskItem(
       checked: json['checked'] as bool?,
       canToggle: json['can_toggle'] as bool?,
       canChange: json['can_change'] as bool?,
-      subtask: json['subtask'] == null ? null : Subtask.fromJson(json['subtask'] as Map<String, dynamic>),
+      subtask: json['subtask'] == null
+          ? null
+          : Subtask.fromJson(json['subtask'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_TaskItemToJson(_$_TaskItem instance) => <String, dynamic>{
+Map<String, dynamic> _$$_TaskItemToJson(_$_TaskItem instance) =>
+    <String, dynamic>{
       'uid': instance.uid,
       'gentime': instance.gentime,
       'sort_ordering': instance.sortOrdering,

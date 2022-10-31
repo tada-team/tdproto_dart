@@ -6,7 +6,8 @@ part of 'message_content.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MessageContent _$$_MessageContentFromJson(Map<String, dynamic> json) => _$_MessageContent(
+_$_MessageContent _$$_MessageContentFromJson(Map<String, dynamic> json) =>
+    _$_MessageContent(
       text: json['text'] as String,
       type: json['type'] as String,
       subtype: json['subtype'] as String?,
@@ -30,13 +31,18 @@ _$_MessageContent _$$_MessageContentFromJson(Map<String, dynamic> json) => _$_Me
       givenName: json['given_name'] as String?,
       familyName: json['family_name'] as String?,
       patronymic: json['patronymic'] as String?,
-      phones: (json['phones'] as List<dynamic>?)?.map((e) => e as String).toList(),
-      emails: (json['emails'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      phones:
+          (json['phones'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      emails:
+          (json['emails'] as List<dynamic>?)?.map((e) => e as String).toList(),
       stickerpack: json['stickerpack'] as String?,
-      pdfVersion: json['pdf_version'] == null ? null : PdfVersion.fromJson(json['pdf_version'] as Map<String, dynamic>),
+      pdfVersion: json['pdf_version'] == null
+          ? null
+          : PdfVersion.fromJson(json['pdf_version'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_MessageContentToJson(_$_MessageContent instance) => <String, dynamic>{
+Map<String, dynamic> _$$_MessageContentToJson(_$_MessageContent instance) =>
+    <String, dynamic>{
       'text': instance.text,
       'type': instance.type,
       'subtype': instance.subtype,

@@ -10,8 +10,9 @@ class AddTeamOnPersonalAccountResponse with _$AddTeamOnPersonalAccountResponse {
   const factory AddTeamOnPersonalAccountResponse({
     /// .
     @JsonKey(name: 'success') bool? success,
+    
+    
   }) = _AddTeamOnPersonalAccountResponse;
 
-  factory AddTeamOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$AddTeamOnPersonalAccountResponseFromJson(json);
+  factory AddTeamOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$AddTeamOnPersonalAccountResponseFromJson(json);
 }

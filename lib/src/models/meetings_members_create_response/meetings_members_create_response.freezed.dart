@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'meetings_members_create_response.dart';
@@ -11,31 +12,12 @@ part of 'meetings_members_create_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-MeetingsMembersCreateResponse _$MeetingsMembersCreateResponseFromJson(Map<String, dynamic> json) {
+MeetingsMembersCreateResponse _$MeetingsMembersCreateResponseFromJson(
+    Map<String, dynamic> json) {
   return _MeetingsMembersCreateResponse.fromJson(json);
 }
-
-/// @nodoc
-class _$MeetingsMembersCreateResponseTearOff {
-  const _$MeetingsMembersCreateResponseTearOff();
-
-  _MeetingsMembersCreateResponse call(
-      {@JsonKey(name: 'members') List<MeetingMember>? members, @JsonKey(name: 'errors') List<String>? errors}) {
-    return _MeetingsMembersCreateResponse(
-      members: members,
-      errors: errors,
-    );
-  }
-
-  MeetingsMembersCreateResponse fromJson(Map<String, Object> json) {
-    return MeetingsMembersCreateResponse.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MeetingsMembersCreateResponse = _$MeetingsMembersCreateResponseTearOff();
 
 /// @nodoc
 mixin _$MeetingsMembersCreateResponse {
@@ -49,75 +31,90 @@ mixin _$MeetingsMembersCreateResponse {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $MeetingsMembersCreateResponseCopyWith<MeetingsMembersCreateResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+  $MeetingsMembersCreateResponseCopyWith<MeetingsMembersCreateResponse>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $MeetingsMembersCreateResponseCopyWith<$Res> {
   factory $MeetingsMembersCreateResponseCopyWith(
-          MeetingsMembersCreateResponse value, $Res Function(MeetingsMembersCreateResponse) then) =
-      _$MeetingsMembersCreateResponseCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'members') List<MeetingMember>? members, @JsonKey(name: 'errors') List<String>? errors});
+          MeetingsMembersCreateResponse value,
+          $Res Function(MeetingsMembersCreateResponse) then) =
+      _$MeetingsMembersCreateResponseCopyWithImpl<$Res,
+          MeetingsMembersCreateResponse>;
+  @useResult
+  $Res call(
+      {@JsonKey(name: 'members') List<MeetingMember>? members,
+      @JsonKey(name: 'errors') List<String>? errors});
 }
 
 /// @nodoc
-class _$MeetingsMembersCreateResponseCopyWithImpl<$Res> implements $MeetingsMembersCreateResponseCopyWith<$Res> {
+class _$MeetingsMembersCreateResponseCopyWithImpl<$Res,
+        $Val extends MeetingsMembersCreateResponse>
+    implements $MeetingsMembersCreateResponseCopyWith<$Res> {
   _$MeetingsMembersCreateResponseCopyWithImpl(this._value, this._then);
 
-  final MeetingsMembersCreateResponse _value;
   // ignore: unused_field
-  final $Res Function(MeetingsMembersCreateResponse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? members = freezed,
     Object? errors = freezed,
   }) {
     return _then(_value.copyWith(
-      members: members == freezed
+      members: freezed == members
           ? _value.members
           : members // ignore: cast_nullable_to_non_nullable
               as List<MeetingMember>?,
-      errors: errors == freezed
+      errors: freezed == errors
           ? _value.errors
           : errors // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MeetingsMembersCreateResponseCopyWith<$Res> implements $MeetingsMembersCreateResponseCopyWith<$Res> {
-  factory _$MeetingsMembersCreateResponseCopyWith(
-          _MeetingsMembersCreateResponse value, $Res Function(_MeetingsMembersCreateResponse) then) =
-      __$MeetingsMembersCreateResponseCopyWithImpl<$Res>;
+abstract class _$$_MeetingsMembersCreateResponseCopyWith<$Res>
+    implements $MeetingsMembersCreateResponseCopyWith<$Res> {
+  factory _$$_MeetingsMembersCreateResponseCopyWith(
+          _$_MeetingsMembersCreateResponse value,
+          $Res Function(_$_MeetingsMembersCreateResponse) then) =
+      __$$_MeetingsMembersCreateResponseCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'members') List<MeetingMember>? members, @JsonKey(name: 'errors') List<String>? errors});
+  @useResult
+  $Res call(
+      {@JsonKey(name: 'members') List<MeetingMember>? members,
+      @JsonKey(name: 'errors') List<String>? errors});
 }
 
 /// @nodoc
-class __$MeetingsMembersCreateResponseCopyWithImpl<$Res> extends _$MeetingsMembersCreateResponseCopyWithImpl<$Res>
-    implements _$MeetingsMembersCreateResponseCopyWith<$Res> {
-  __$MeetingsMembersCreateResponseCopyWithImpl(
-      _MeetingsMembersCreateResponse _value, $Res Function(_MeetingsMembersCreateResponse) _then)
-      : super(_value, (v) => _then(v as _MeetingsMembersCreateResponse));
+class __$$_MeetingsMembersCreateResponseCopyWithImpl<$Res>
+    extends _$MeetingsMembersCreateResponseCopyWithImpl<$Res,
+        _$_MeetingsMembersCreateResponse>
+    implements _$$_MeetingsMembersCreateResponseCopyWith<$Res> {
+  __$$_MeetingsMembersCreateResponseCopyWithImpl(
+      _$_MeetingsMembersCreateResponse _value,
+      $Res Function(_$_MeetingsMembersCreateResponse) _then)
+      : super(_value, _then);
 
-  @override
-  _MeetingsMembersCreateResponse get _value => super._value as _MeetingsMembersCreateResponse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? members = freezed,
     Object? errors = freezed,
   }) {
-    return _then(_MeetingsMembersCreateResponse(
-      members: members == freezed
-          ? _value.members
+    return _then(_$_MeetingsMembersCreateResponse(
+      members: freezed == members
+          ? _value._members
           : members // ignore: cast_nullable_to_non_nullable
               as List<MeetingMember>?,
-      errors: errors == freezed
-          ? _value.errors
+      errors: freezed == errors
+          ? _value._errors
           : errors // ignore: cast_nullable_to_non_nullable
               as List<String>?,
     ));
@@ -126,23 +123,43 @@ class __$MeetingsMembersCreateResponseCopyWithImpl<$Res> extends _$MeetingsMembe
 
 /// @nodoc
 @JsonSerializable()
-class _$_MeetingsMembersCreateResponse implements _MeetingsMembersCreateResponse {
+class _$_MeetingsMembersCreateResponse
+    implements _MeetingsMembersCreateResponse {
   const _$_MeetingsMembersCreateResponse(
-      {@JsonKey(name: 'members') this.members, @JsonKey(name: 'errors') this.errors});
+      {@JsonKey(name: 'members') final List<MeetingMember>? members,
+      @JsonKey(name: 'errors') final List<String>? errors})
+      : _members = members,
+        _errors = errors;
 
-  factory _$_MeetingsMembersCreateResponse.fromJson(Map<String, dynamic> json) =>
+  factory _$_MeetingsMembersCreateResponse.fromJson(
+          Map<String, dynamic> json) =>
       _$$_MeetingsMembersCreateResponseFromJson(json);
 
-  @override
+  /// .
+  final List<MeetingMember>? _members;
 
   /// .
+  @override
   @JsonKey(name: 'members')
-  final List<MeetingMember>? members;
-  @override
+  List<MeetingMember>? get members {
+    final value = _members;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   /// .
+  final List<String>? _errors;
+
+  /// .
+  @override
   @JsonKey(name: 'errors')
-  final List<String>? errors;
+  List<String>? get errors {
+    final value = _errors;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -152,30 +169,40 @@ class _$_MeetingsMembersCreateResponse implements _MeetingsMembersCreateResponse
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _MeetingsMembersCreateResponse &&
-            (identical(other.members, members) || const DeepCollectionEquality().equals(other.members, members)) &&
-            (identical(other.errors, errors) || const DeepCollectionEquality().equals(other.errors, errors)));
+        (other.runtimeType == runtimeType &&
+            other is _$_MeetingsMembersCreateResponse &&
+            const DeepCollectionEquality().equals(other._members, _members) &&
+            const DeepCollectionEquality().equals(other._errors, _errors));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(members) ^ const DeepCollectionEquality().hash(errors);
 
   @JsonKey(ignore: true)
   @override
-  _$MeetingsMembersCreateResponseCopyWith<_MeetingsMembersCreateResponse> get copyWith =>
-      __$MeetingsMembersCreateResponseCopyWithImpl<_MeetingsMembersCreateResponse>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(_members),
+      const DeepCollectionEquality().hash(_errors));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_MeetingsMembersCreateResponseCopyWith<_$_MeetingsMembersCreateResponse>
+      get copyWith => __$$_MeetingsMembersCreateResponseCopyWithImpl<
+          _$_MeetingsMembersCreateResponse>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MeetingsMembersCreateResponseToJson(this);
+    return _$$_MeetingsMembersCreateResponseToJson(
+      this,
+    );
   }
 }
 
-abstract class _MeetingsMembersCreateResponse implements MeetingsMembersCreateResponse {
+abstract class _MeetingsMembersCreateResponse
+    implements MeetingsMembersCreateResponse {
   const factory _MeetingsMembersCreateResponse(
-      {@JsonKey(name: 'members') List<MeetingMember>? members,
-      @JsonKey(name: 'errors') List<String>? errors}) = _$_MeetingsMembersCreateResponse;
+          {@JsonKey(name: 'members') final List<MeetingMember>? members,
+          @JsonKey(name: 'errors') final List<String>? errors}) =
+      _$_MeetingsMembersCreateResponse;
 
   factory _MeetingsMembersCreateResponse.fromJson(Map<String, dynamic> json) =
       _$_MeetingsMembersCreateResponse.fromJson;
@@ -184,14 +211,14 @@ abstract class _MeetingsMembersCreateResponse implements MeetingsMembersCreateRe
 
   /// .
   @JsonKey(name: 'members')
-  List<MeetingMember>? get members => throw _privateConstructorUsedError;
+  List<MeetingMember>? get members;
   @override
 
   /// .
   @JsonKey(name: 'errors')
-  List<String>? get errors => throw _privateConstructorUsedError;
+  List<String>? get errors;
   @override
   @JsonKey(ignore: true)
-  _$MeetingsMembersCreateResponseCopyWith<_MeetingsMembersCreateResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$_MeetingsMembersCreateResponseCopyWith<_$_MeetingsMembersCreateResponse>
+      get copyWith => throw _privateConstructorUsedError;
 }

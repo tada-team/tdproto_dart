@@ -10,6 +10,8 @@ class ServerTeamDeletedParams with _$ServerTeamDeletedParams {
   const factory ServerTeamDeletedParams({
     /// Teams info.
     @JsonKey(name: 'teams') required List<DeletedTeam> teams,
+    
+    
   }) = _ServerTeamDeletedParams;
 
   factory ServerTeamDeletedParams.fromJson(Map<String, dynamic> json) => _$ServerTeamDeletedParamsFromJson(json);

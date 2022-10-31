@@ -6,7 +6,8 @@ part of 'get_personal_account_by_i_d_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_GetPersonalAccountByIDResponse _$$_GetPersonalAccountByIDResponseFromJson(Map<String, dynamic> json) =>
+_$_GetPersonalAccountByIDResponse _$$_GetPersonalAccountByIDResponseFromJson(
+        Map<String, dynamic> json) =>
     _$_GetPersonalAccountByIDResponse(
       personalAccountId: json['personal_account_id'] as String,
       fullName: json['full_name'] as String?,
@@ -25,7 +26,8 @@ _$_GetPersonalAccountByIDResponse _$$_GetPersonalAccountByIDResponseFromJson(Map
       paidWorkplaces: json['paid_workplaces'] as int,
     );
 
-Map<String, dynamic> _$$_GetPersonalAccountByIDResponseToJson(_$_GetPersonalAccountByIDResponse instance) =>
+Map<String, dynamic> _$$_GetPersonalAccountByIDResponseToJson(
+        _$_GetPersonalAccountByIDResponse instance) =>
     <String, dynamic>{
       'personal_account_id': instance.personalAccountId,
       'full_name': instance.fullName,

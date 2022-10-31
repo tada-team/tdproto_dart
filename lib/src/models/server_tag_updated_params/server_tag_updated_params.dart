@@ -10,6 +10,8 @@ class ServerTagUpdatedParams with _$ServerTagUpdatedParams {
   const factory ServerTagUpdatedParams({
     /// Tags info.
     @JsonKey(name: 'tags') required List<Tag> tags,
+    
+    
   }) = _ServerTagUpdatedParams;
 
   factory ServerTagUpdatedParams.fromJson(Map<String, dynamic> json) => _$ServerTagUpdatedParamsFromJson(json);

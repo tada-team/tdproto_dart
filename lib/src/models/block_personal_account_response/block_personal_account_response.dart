@@ -10,8 +10,9 @@ class BlockPersonalAccountResponse with _$BlockPersonalAccountResponse {
   const factory BlockPersonalAccountResponse({
     /// .
     @JsonKey(name: 'success') required bool success,
+    
+    
   }) = _BlockPersonalAccountResponse;
 
-  factory BlockPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$BlockPersonalAccountResponseFromJson(json);
+  factory BlockPersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$BlockPersonalAccountResponseFromJson(json);
 }

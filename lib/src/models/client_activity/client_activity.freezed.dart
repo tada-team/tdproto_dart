@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'client_activity.dart';
@@ -11,34 +12,11 @@ part of 'client_activity.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ClientActivity _$ClientActivityFromJson(Map<String, dynamic> json) {
   return _ClientActivity.fromJson(json);
 }
-
-/// @nodoc
-class _$ClientActivityTearOff {
-  const _$ClientActivityTearOff();
-
-  _ClientActivity call(
-      {@JsonKey(name: 'params') required ClientActivityParams params,
-      @JsonKey(name: 'event') required String name,
-      @JsonKey(name: 'confirm_id') String? confirmId}) {
-    return _ClientActivity(
-      params: params,
-      name: name,
-      confirmId: confirmId,
-    );
-  }
-
-  ClientActivity fromJson(Map<String, Object> json) {
-    return ClientActivity.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ClientActivity = _$ClientActivityTearOff();
 
 /// @nodoc
 mixin _$ClientActivity {
@@ -56,13 +34,16 @@ mixin _$ClientActivity {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ClientActivityCopyWith<ClientActivity> get copyWith => throw _privateConstructorUsedError;
+  $ClientActivityCopyWith<ClientActivity> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ClientActivityCopyWith<$Res> {
-  factory $ClientActivityCopyWith(ClientActivity value, $Res Function(ClientActivity) then) =
-      _$ClientActivityCopyWithImpl<$Res>;
+  factory $ClientActivityCopyWith(
+          ClientActivity value, $Res Function(ClientActivity) then) =
+      _$ClientActivityCopyWithImpl<$Res, ClientActivity>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'params') ClientActivityParams params,
       @JsonKey(name: 'event') String name,
@@ -72,48 +53,55 @@ abstract class $ClientActivityCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ClientActivityCopyWithImpl<$Res> implements $ClientActivityCopyWith<$Res> {
+class _$ClientActivityCopyWithImpl<$Res, $Val extends ClientActivity>
+    implements $ClientActivityCopyWith<$Res> {
   _$ClientActivityCopyWithImpl(this._value, this._then);
 
-  final ClientActivity _value;
   // ignore: unused_field
-  final $Res Function(ClientActivity) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? params = freezed,
-    Object? name = freezed,
+    Object? params = null,
+    Object? name = null,
     Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed
+      params: null == params
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ClientActivityParams,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: confirmId == freezed
+      confirmId: freezed == confirmId
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $ClientActivityParamsCopyWith<$Res> get params {
     return $ClientActivityParamsCopyWith<$Res>(_value.params, (value) {
-      return _then(_value.copyWith(params: value));
+      return _then(_value.copyWith(params: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$ClientActivityCopyWith<$Res> implements $ClientActivityCopyWith<$Res> {
-  factory _$ClientActivityCopyWith(_ClientActivity value, $Res Function(_ClientActivity) then) =
-      __$ClientActivityCopyWithImpl<$Res>;
+abstract class _$$_ClientActivityCopyWith<$Res>
+    implements $ClientActivityCopyWith<$Res> {
+  factory _$$_ClientActivityCopyWith(
+          _$_ClientActivity value, $Res Function(_$_ClientActivity) then) =
+      __$$_ClientActivityCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'params') ClientActivityParams params,
       @JsonKey(name: 'event') String name,
@@ -124,30 +112,30 @@ abstract class _$ClientActivityCopyWith<$Res> implements $ClientActivityCopyWith
 }
 
 /// @nodoc
-class __$ClientActivityCopyWithImpl<$Res> extends _$ClientActivityCopyWithImpl<$Res>
-    implements _$ClientActivityCopyWith<$Res> {
-  __$ClientActivityCopyWithImpl(_ClientActivity _value, $Res Function(_ClientActivity) _then)
-      : super(_value, (v) => _then(v as _ClientActivity));
+class __$$_ClientActivityCopyWithImpl<$Res>
+    extends _$ClientActivityCopyWithImpl<$Res, _$_ClientActivity>
+    implements _$$_ClientActivityCopyWith<$Res> {
+  __$$_ClientActivityCopyWithImpl(
+      _$_ClientActivity _value, $Res Function(_$_ClientActivity) _then)
+      : super(_value, _then);
 
-  @override
-  _ClientActivity get _value => super._value as _ClientActivity;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? params = freezed,
-    Object? name = freezed,
+    Object? params = null,
+    Object? name = null,
     Object? confirmId = freezed,
   }) {
-    return _then(_ClientActivity(
-      params: params == freezed
+    return _then(_$_ClientActivity(
+      params: null == params
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ClientActivityParams,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: confirmId == freezed
+      confirmId: freezed == confirmId
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -163,21 +151,21 @@ class _$_ClientActivity implements _ClientActivity {
       @JsonKey(name: 'event') required this.name,
       @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ClientActivity.fromJson(Map<String, dynamic> json) => _$$_ClientActivityFromJson(json);
-
-  @override
+  factory _$_ClientActivity.fromJson(Map<String, dynamic> json) =>
+      _$$_ClientActivityFromJson(json);
 
   /// .
+  @override
   @JsonKey(name: 'params')
   final ClientActivityParams params;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'event')
   final String name;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'confirm_id')
   final String? confirmId;
 
@@ -189,55 +177,59 @@ class _$_ClientActivity implements _ClientActivity {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ClientActivity &&
-            (identical(other.params, params) || const DeepCollectionEquality().equals(other.params, params)) &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_ClientActivity &&
+            (identical(other.params, params) || other.params == params) &&
+            (identical(other.name, name) || other.name == name) &&
             (identical(other.confirmId, confirmId) ||
-                const DeepCollectionEquality().equals(other.confirmId, confirmId)));
+                other.confirmId == confirmId));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(params) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(confirmId);
 
   @JsonKey(ignore: true)
   @override
-  _$ClientActivityCopyWith<_ClientActivity> get copyWith =>
-      __$ClientActivityCopyWithImpl<_ClientActivity>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, params, name, confirmId);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_ClientActivityCopyWith<_$_ClientActivity> get copyWith =>
+      __$$_ClientActivityCopyWithImpl<_$_ClientActivity>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ClientActivityToJson(this);
+    return _$$_ClientActivityToJson(
+      this,
+    );
   }
 }
 
 abstract class _ClientActivity implements ClientActivity {
   const factory _ClientActivity(
-      {@JsonKey(name: 'params') required ClientActivityParams params,
-      @JsonKey(name: 'event') required String name,
-      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ClientActivity;
+          {@JsonKey(name: 'params') required final ClientActivityParams params,
+          @JsonKey(name: 'event') required final String name,
+          @JsonKey(name: 'confirm_id') final String? confirmId}) =
+      _$_ClientActivity;
 
-  factory _ClientActivity.fromJson(Map<String, dynamic> json) = _$_ClientActivity.fromJson;
+  factory _ClientActivity.fromJson(Map<String, dynamic> json) =
+      _$_ClientActivity.fromJson;
 
   @override
 
   /// .
   @JsonKey(name: 'params')
-  ClientActivityParams get params => throw _privateConstructorUsedError;
+  ClientActivityParams get params;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String? get confirmId => throw _privateConstructorUsedError;
+  String? get confirmId;
   @override
   @JsonKey(ignore: true)
-  _$ClientActivityCopyWith<_ClientActivity> get copyWith => throw _privateConstructorUsedError;
+  _$$_ClientActivityCopyWith<_$_ClientActivity> get copyWith =>
+      throw _privateConstructorUsedError;
 }

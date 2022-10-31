@@ -10,8 +10,9 @@ class GetUnpaidWorkplacesByPersonalAccountResponse with _$GetUnpaidWorkplacesByP
   const factory GetUnpaidWorkplacesByPersonalAccountResponse({
     /// .
     @JsonKey(name: 'count') int? count,
+    
+    
   }) = _GetUnpaidWorkplacesByPersonalAccountResponse;
 
-  factory GetUnpaidWorkplacesByPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$GetUnpaidWorkplacesByPersonalAccountResponseFromJson(json);
+  factory GetUnpaidWorkplacesByPersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$GetUnpaidWorkplacesByPersonalAccountResponseFromJson(json);
 }

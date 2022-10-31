@@ -15,7 +15,8 @@ _$_Section _$$_SectionFromJson(Map<String, dynamic> json) => _$_Section(
       isArchive: json['is_archive'] as bool?,
     );
 
-Map<String, dynamic> _$$_SectionToJson(_$_Section instance) => <String, dynamic>{
+Map<String, dynamic> _$$_SectionToJson(_$_Section instance) =>
+    <String, dynamic>{
       'uid': instance.uid,
       'sort_ordering': instance.sortOrdering,
       'name': instance.name,

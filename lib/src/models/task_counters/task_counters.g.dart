@@ -6,13 +6,15 @@ part of 'task_counters.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_TaskCounters _$$_TaskCountersFromJson(Map<String, dynamic> json) => _$_TaskCounters(
+_$_TaskCounters _$$_TaskCountersFromJson(Map<String, dynamic> json) =>
+    _$_TaskCounters(
       jid: json['jid'] as String,
       numUnread: json['num_unread'] as int?,
       numUnreadNotices: json['num_unread_notices'] as int?,
     );
 
-Map<String, dynamic> _$$_TaskCountersToJson(_$_TaskCounters instance) => <String, dynamic>{
+Map<String, dynamic> _$$_TaskCountersToJson(_$_TaskCounters instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'num_unread': instance.numUnread,
       'num_unread_notices': instance.numUnreadNotices,

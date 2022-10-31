@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'meetings_response.dart';
@@ -11,36 +12,11 @@ part of 'meetings_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 MeetingsResponse _$MeetingsResponseFromJson(Map<String, dynamic> json) {
   return _MeetingsResponse.fromJson(json);
 }
-
-/// @nodoc
-class _$MeetingsResponseTearOff {
-  const _$MeetingsResponseTearOff();
-
-  _MeetingsResponse call(
-      {@JsonKey(name: 'objects') required List<Meeting> objects,
-      @JsonKey(name: 'count') required int count,
-      @JsonKey(name: 'limit') required int limit,
-      @JsonKey(name: 'offset') required int offset}) {
-    return _MeetingsResponse(
-      objects: objects,
-      count: count,
-      limit: limit,
-      offset: offset,
-    );
-  }
-
-  MeetingsResponse fromJson(Map<String, Object> json) {
-    return MeetingsResponse.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MeetingsResponse = _$MeetingsResponseTearOff();
 
 /// @nodoc
 mixin _$MeetingsResponse {
@@ -62,13 +38,16 @@ mixin _$MeetingsResponse {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $MeetingsResponseCopyWith<MeetingsResponse> get copyWith => throw _privateConstructorUsedError;
+  $MeetingsResponseCopyWith<MeetingsResponse> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $MeetingsResponseCopyWith<$Res> {
-  factory $MeetingsResponseCopyWith(MeetingsResponse value, $Res Function(MeetingsResponse) then) =
-      _$MeetingsResponseCopyWithImpl<$Res>;
+  factory $MeetingsResponseCopyWith(
+          MeetingsResponse value, $Res Function(MeetingsResponse) then) =
+      _$MeetingsResponseCopyWithImpl<$Res, MeetingsResponse>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'objects') List<Meeting> objects,
       @JsonKey(name: 'count') int count,
@@ -77,46 +56,52 @@ abstract class $MeetingsResponseCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MeetingsResponseCopyWithImpl<$Res> implements $MeetingsResponseCopyWith<$Res> {
+class _$MeetingsResponseCopyWithImpl<$Res, $Val extends MeetingsResponse>
+    implements $MeetingsResponseCopyWith<$Res> {
   _$MeetingsResponseCopyWithImpl(this._value, this._then);
 
-  final MeetingsResponse _value;
   // ignore: unused_field
-  final $Res Function(MeetingsResponse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? objects = freezed,
-    Object? count = freezed,
-    Object? limit = freezed,
-    Object? offset = freezed,
+    Object? objects = null,
+    Object? count = null,
+    Object? limit = null,
+    Object? offset = null,
   }) {
     return _then(_value.copyWith(
-      objects: objects == freezed
+      objects: null == objects
           ? _value.objects
           : objects // ignore: cast_nullable_to_non_nullable
               as List<Meeting>,
-      count: count == freezed
+      count: null == count
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
               as int,
-      limit: limit == freezed
+      limit: null == limit
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
               as int,
-      offset: offset == freezed
+      offset: null == offset
           ? _value.offset
           : offset // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MeetingsResponseCopyWith<$Res> implements $MeetingsResponseCopyWith<$Res> {
-  factory _$MeetingsResponseCopyWith(_MeetingsResponse value, $Res Function(_MeetingsResponse) then) =
-      __$MeetingsResponseCopyWithImpl<$Res>;
+abstract class _$$_MeetingsResponseCopyWith<$Res>
+    implements $MeetingsResponseCopyWith<$Res> {
+  factory _$$_MeetingsResponseCopyWith(
+          _$_MeetingsResponse value, $Res Function(_$_MeetingsResponse) then) =
+      __$$_MeetingsResponseCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'objects') List<Meeting> objects,
       @JsonKey(name: 'count') int count,
@@ -125,35 +110,35 @@ abstract class _$MeetingsResponseCopyWith<$Res> implements $MeetingsResponseCopy
 }
 
 /// @nodoc
-class __$MeetingsResponseCopyWithImpl<$Res> extends _$MeetingsResponseCopyWithImpl<$Res>
-    implements _$MeetingsResponseCopyWith<$Res> {
-  __$MeetingsResponseCopyWithImpl(_MeetingsResponse _value, $Res Function(_MeetingsResponse) _then)
-      : super(_value, (v) => _then(v as _MeetingsResponse));
+class __$$_MeetingsResponseCopyWithImpl<$Res>
+    extends _$MeetingsResponseCopyWithImpl<$Res, _$_MeetingsResponse>
+    implements _$$_MeetingsResponseCopyWith<$Res> {
+  __$$_MeetingsResponseCopyWithImpl(
+      _$_MeetingsResponse _value, $Res Function(_$_MeetingsResponse) _then)
+      : super(_value, _then);
 
-  @override
-  _MeetingsResponse get _value => super._value as _MeetingsResponse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? objects = freezed,
-    Object? count = freezed,
-    Object? limit = freezed,
-    Object? offset = freezed,
+    Object? objects = null,
+    Object? count = null,
+    Object? limit = null,
+    Object? offset = null,
   }) {
-    return _then(_MeetingsResponse(
-      objects: objects == freezed
-          ? _value.objects
+    return _then(_$_MeetingsResponse(
+      objects: null == objects
+          ? _value._objects
           : objects // ignore: cast_nullable_to_non_nullable
               as List<Meeting>,
-      count: count == freezed
+      count: null == count
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
               as int,
-      limit: limit == freezed
+      limit: null == limit
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
               as int,
-      offset: offset == freezed
+      offset: null == offset
           ? _value.offset
           : offset // ignore: cast_nullable_to_non_nullable
               as int,
@@ -165,31 +150,38 @@ class __$MeetingsResponseCopyWithImpl<$Res> extends _$MeetingsResponseCopyWithIm
 @JsonSerializable()
 class _$_MeetingsResponse implements _MeetingsResponse {
   const _$_MeetingsResponse(
-      {@JsonKey(name: 'objects') required this.objects,
+      {@JsonKey(name: 'objects') required final List<Meeting> objects,
       @JsonKey(name: 'count') required this.count,
       @JsonKey(name: 'limit') required this.limit,
-      @JsonKey(name: 'offset') required this.offset});
+      @JsonKey(name: 'offset') required this.offset})
+      : _objects = objects;
 
-  factory _$_MeetingsResponse.fromJson(Map<String, dynamic> json) => _$$_MeetingsResponseFromJson(json);
-
-  @override
+  factory _$_MeetingsResponse.fromJson(Map<String, dynamic> json) =>
+      _$$_MeetingsResponseFromJson(json);
 
   /// .
+  final List<Meeting> _objects;
+
+  /// .
+  @override
   @JsonKey(name: 'objects')
-  final List<Meeting> objects;
-  @override
+  List<Meeting> get objects {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_objects);
+  }
 
   /// .
+  @override
   @JsonKey(name: 'count')
   final int count;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'limit')
   final int limit;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'offset')
   final int offset;
 
@@ -201,62 +193,66 @@ class _$_MeetingsResponse implements _MeetingsResponse {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _MeetingsResponse &&
-            (identical(other.objects, objects) || const DeepCollectionEquality().equals(other.objects, objects)) &&
-            (identical(other.count, count) || const DeepCollectionEquality().equals(other.count, count)) &&
-            (identical(other.limit, limit) || const DeepCollectionEquality().equals(other.limit, limit)) &&
-            (identical(other.offset, offset) || const DeepCollectionEquality().equals(other.offset, offset)));
+        (other.runtimeType == runtimeType &&
+            other is _$_MeetingsResponse &&
+            const DeepCollectionEquality().equals(other._objects, _objects) &&
+            (identical(other.count, count) || other.count == count) &&
+            (identical(other.limit, limit) || other.limit == limit) &&
+            (identical(other.offset, offset) || other.offset == offset));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(objects) ^
-      const DeepCollectionEquality().hash(count) ^
-      const DeepCollectionEquality().hash(limit) ^
-      const DeepCollectionEquality().hash(offset);
 
   @JsonKey(ignore: true)
   @override
-  _$MeetingsResponseCopyWith<_MeetingsResponse> get copyWith =>
-      __$MeetingsResponseCopyWithImpl<_MeetingsResponse>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType,
+      const DeepCollectionEquality().hash(_objects), count, limit, offset);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_MeetingsResponseCopyWith<_$_MeetingsResponse> get copyWith =>
+      __$$_MeetingsResponseCopyWithImpl<_$_MeetingsResponse>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MeetingsResponseToJson(this);
+    return _$$_MeetingsResponseToJson(
+      this,
+    );
   }
 }
 
 abstract class _MeetingsResponse implements MeetingsResponse {
   const factory _MeetingsResponse(
-      {@JsonKey(name: 'objects') required List<Meeting> objects,
-      @JsonKey(name: 'count') required int count,
-      @JsonKey(name: 'limit') required int limit,
-      @JsonKey(name: 'offset') required int offset}) = _$_MeetingsResponse;
+          {@JsonKey(name: 'objects') required final List<Meeting> objects,
+          @JsonKey(name: 'count') required final int count,
+          @JsonKey(name: 'limit') required final int limit,
+          @JsonKey(name: 'offset') required final int offset}) =
+      _$_MeetingsResponse;
 
-  factory _MeetingsResponse.fromJson(Map<String, dynamic> json) = _$_MeetingsResponse.fromJson;
+  factory _MeetingsResponse.fromJson(Map<String, dynamic> json) =
+      _$_MeetingsResponse.fromJson;
 
   @override
 
   /// .
   @JsonKey(name: 'objects')
-  List<Meeting> get objects => throw _privateConstructorUsedError;
+  List<Meeting> get objects;
   @override
 
   /// .
   @JsonKey(name: 'count')
-  int get count => throw _privateConstructorUsedError;
+  int get count;
   @override
 
   /// .
   @JsonKey(name: 'limit')
-  int get limit => throw _privateConstructorUsedError;
+  int get limit;
   @override
 
   /// .
   @JsonKey(name: 'offset')
-  int get offset => throw _privateConstructorUsedError;
+  int get offset;
   @override
   @JsonKey(ignore: true)
-  _$MeetingsResponseCopyWith<_MeetingsResponse> get copyWith => throw _privateConstructorUsedError;
+  _$$_MeetingsResponseCopyWith<_$_MeetingsResponse> get copyWith =>
+      throw _privateConstructorUsedError;
 }

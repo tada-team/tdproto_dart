@@ -10,9 +10,11 @@ class ClientCallSoundParams with _$ClientCallSoundParams {
   const factory ClientCallSoundParams({
     /// Chat or contact id.
     @JsonKey(name: 'jid') required String jid,
-
+    
     /// Mute state.
     @JsonKey(name: 'muted') required bool muted,
+    
+    
   }) = _ClientCallSoundParams;
 
   factory ClientCallSoundParams.fromJson(Map<String, dynamic> json) => _$ClientCallSoundParamsFromJson(json);

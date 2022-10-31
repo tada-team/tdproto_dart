@@ -10,14 +10,15 @@ class GetWorkplaceByPersonalAccountResponse with _$GetWorkplaceByPersonalAccount
   const factory GetWorkplaceByPersonalAccountResponse({
     /// .
     @JsonKey(name: 'workplace_id') String? workplaceId,
-
+    
     /// .
     @JsonKey(name: 'user_id') String? userId,
-
+    
     /// .
     @JsonKey(name: 'user_uuid') String? userUuid,
+    
+    
   }) = _GetWorkplaceByPersonalAccountResponse;
 
-  factory GetWorkplaceByPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$GetWorkplaceByPersonalAccountResponseFromJson(json);
+  factory GetWorkplaceByPersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$GetWorkplaceByPersonalAccountResponseFromJson(json);
 }

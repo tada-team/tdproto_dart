@@ -10,11 +10,12 @@ class ClientCallScreenShareParams with _$ClientCallScreenShareParams {
   const factory ClientCallScreenShareParams({
     /// ScreenShareEnabled enabled or disabled screen share.
     @JsonKey(name: 'screenshare_enabled') required bool screenShareEnabled,
-
+    
     /// CallJid Chat or contact id.
     @JsonKey(name: 'call_jid') required String callJid,
+    
+    
   }) = _ClientCallScreenShareParams;
 
-  factory ClientCallScreenShareParams.fromJson(Map<String, dynamic> json) =>
-      _$ClientCallScreenShareParamsFromJson(json);
+  factory ClientCallScreenShareParams.fromJson(Map<String, dynamic> json) => _$ClientCallScreenShareParamsFromJson(json);
 }

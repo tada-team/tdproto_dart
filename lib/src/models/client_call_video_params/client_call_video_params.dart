@@ -10,9 +10,11 @@ class ClientCallVideoParams with _$ClientCallVideoParams {
   const factory ClientCallVideoParams({
     /// Chat or contact id.
     @JsonKey(name: 'jid') required String jid,
-
+    
     /// Enable video state.
     @JsonKey(name: 'enabled') required bool enabled,
+    
+    
   }) = _ClientCallVideoParams;
 
   factory ClientCallVideoParams.fromJson(Map<String, dynamic> json) => _$ClientCallVideoParamsFromJson(json);

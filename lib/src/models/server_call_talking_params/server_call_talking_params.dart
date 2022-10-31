@@ -10,12 +10,14 @@ class ServerCallTalkingParams with _$ServerCallTalkingParams {
   const factory ServerCallTalkingParams({
     /// Chat or contact id.
     @JsonKey(name: 'jid') required String jid,
-
+    
     /// Actor id.
     @JsonKey(name: 'actor') required String actor,
-
+    
     /// Is talking.
     @JsonKey(name: 'talking') required bool talking,
+    
+    
   }) = _ServerCallTalkingParams;
 
   factory ServerCallTalkingParams.fromJson(Map<String, dynamic> json) => _$ServerCallTalkingParamsFromJson(json);

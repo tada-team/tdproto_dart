@@ -17,7 +17,8 @@ _$_Session _$$_SessionFromJson(Map<String, dynamic> json) => _$_Session(
       addr: json['addr'] as String?,
     );
 
-Map<String, dynamic> _$$_SessionToJson(_$_Session instance) => <String, dynamic>{
+Map<String, dynamic> _$$_SessionToJson(_$_Session instance) =>
+    <String, dynamic>{
       'uid': instance.uid,
       'created': const DateTimeConverter().toJson(instance.created),
       'lang': instance.lang,

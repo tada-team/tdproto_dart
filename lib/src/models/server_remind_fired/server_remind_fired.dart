@@ -10,12 +10,14 @@ class ServerRemindFired with _$ServerRemindFired {
   const factory ServerRemindFired({
     /// .
     @JsonKey(name: 'params') required ServerRemindFiredParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerRemindFired;
 
   factory ServerRemindFired.fromJson(Map<String, dynamic> json) => _$ServerRemindFiredFromJson(json);

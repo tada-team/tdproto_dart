@@ -10,6 +10,8 @@ class ClientCallMuteAllParams with _$ClientCallMuteAllParams {
   const factory ClientCallMuteAllParams({
     /// Chat or contact id.
     @JsonKey(name: 'jid') required String jid,
+    
+    
   }) = _ClientCallMuteAllParams;
 
   factory ClientCallMuteAllParams.fromJson(Map<String, dynamic> json) => _$ClientCallMuteAllParamsFromJson(json);

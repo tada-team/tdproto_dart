@@ -10,6 +10,8 @@ class ParserMapUsersResponse with _$ParserMapUsersResponse {
   const factory ParserMapUsersResponse({
     /// Success result.
     @JsonKey(name: 'success') required bool success,
+    
+    
   }) = _ParserMapUsersResponse;
 
   factory ParserMapUsersResponse.fromJson(Map<String, dynamic> json) => _$ParserMapUsersResponseFromJson(json);

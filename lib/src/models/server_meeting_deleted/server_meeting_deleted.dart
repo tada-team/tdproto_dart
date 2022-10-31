@@ -10,12 +10,14 @@ class ServerMeetingDeleted with _$ServerMeetingDeleted {
   const factory ServerMeetingDeleted({
     /// .
     @JsonKey(name: 'params') required ServerMeetingDeletedParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerMeetingDeleted;
 
   factory ServerMeetingDeleted.fromJson(Map<String, dynamic> json) => _$ServerMeetingDeletedFromJson(json);

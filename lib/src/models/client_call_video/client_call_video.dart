@@ -10,12 +10,14 @@ class ClientCallVideo with _$ClientCallVideo {
   const factory ClientCallVideo({
     /// .
     @JsonKey(name: 'params') required ClientCallVideoParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ClientCallVideo;
 
   factory ClientCallVideo.fromJson(Map<String, dynamic> json) => _$ClientCallVideoFromJson(json);

@@ -10,9 +10,11 @@ class TeamBilling with _$TeamBilling {
   const factory TeamBilling({
     /// .
     @JsonKey(name: 'team_uuid') String? teamUuid,
-
+    
     /// .
     @JsonKey(name: 'delete_date') String? deleteDate,
+    
+    
   }) = _TeamBilling;
 
   factory TeamBilling.fromJson(Map<String, dynamic> json) => _$TeamBillingFromJson(json);

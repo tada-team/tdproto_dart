@@ -10,12 +10,14 @@ class ServerCallBuzzcancelParams with _$ServerCallBuzzcancelParams {
   const factory ServerCallBuzzcancelParams({
     /// Chat or contact id.
     @JsonKey(name: 'jid') required String jid,
-
+    
     /// Team id.
     @JsonKey(name: 'team') required String team,
-
+    
     /// Call id.
     @JsonKey(name: 'uid') required String uid,
+    
+    
   }) = _ServerCallBuzzcancelParams;
 
   factory ServerCallBuzzcancelParams.fromJson(Map<String, dynamic> json) => _$ServerCallBuzzcancelParamsFromJson(json);

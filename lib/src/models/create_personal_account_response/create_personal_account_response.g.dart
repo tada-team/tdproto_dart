@@ -6,7 +6,8 @@ part of 'create_personal_account_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CreatePersonalAccountResponse _$$_CreatePersonalAccountResponseFromJson(Map<String, dynamic> json) =>
+_$_CreatePersonalAccountResponse _$$_CreatePersonalAccountResponseFromJson(
+        Map<String, dynamic> json) =>
     _$_CreatePersonalAccountResponse(
       personalAccountId: json['personal_account_id'] as String,
       fullName: json['full_name'] as String?,
@@ -25,7 +26,8 @@ _$_CreatePersonalAccountResponse _$$_CreatePersonalAccountResponseFromJson(Map<S
       paidWorkplaces: json['paid_workplaces'] as int,
     );
 
-Map<String, dynamic> _$$_CreatePersonalAccountResponseToJson(_$_CreatePersonalAccountResponse instance) =>
+Map<String, dynamic> _$$_CreatePersonalAccountResponseToJson(
+        _$_CreatePersonalAccountResponse instance) =>
     <String, dynamic>{
       'personal_account_id': instance.personalAccountId,
       'full_name': instance.fullName,

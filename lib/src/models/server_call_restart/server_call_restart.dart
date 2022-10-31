@@ -10,12 +10,14 @@ class ServerCallRestart with _$ServerCallRestart {
   const factory ServerCallRestart({
     /// .
     @JsonKey(name: 'params') required ServerCallRestartParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerCallRestart;
 
   factory ServerCallRestart.fromJson(Map<String, dynamic> json) => _$ServerCallRestartFromJson(json);

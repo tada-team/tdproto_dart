@@ -14,7 +14,8 @@ _$_Country _$$_CountryFromJson(Map<String, dynamic> json) => _$_Country(
       popular: json['popular'] as bool?,
     );
 
-Map<String, dynamic> _$$_CountryToJson(_$_Country instance) => <String, dynamic>{
+Map<String, dynamic> _$$_CountryToJson(_$_Country instance) =>
+    <String, dynamic>{
       'code': instance.code,
       'iso': instance.iso,
       'name': instance.name,

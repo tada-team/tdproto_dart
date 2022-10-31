@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_chat_deleted_params.dart';
@@ -11,34 +12,12 @@ part of 'server_chat_deleted_params.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-ServerChatDeletedParams _$ServerChatDeletedParamsFromJson(Map<String, dynamic> json) {
+ServerChatDeletedParams _$ServerChatDeletedParamsFromJson(
+    Map<String, dynamic> json) {
   return _ServerChatDeletedParams.fromJson(json);
 }
-
-/// @nodoc
-class _$ServerChatDeletedParamsTearOff {
-  const _$ServerChatDeletedParamsTearOff();
-
-  _ServerChatDeletedParams call(
-      {@JsonKey(name: 'chats') required List<DeletedChat> chats,
-      @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
-      @JsonKey(name: 'badge') required int badge}) {
-    return _ServerChatDeletedParams(
-      chats: chats,
-      teamUnread: teamUnread,
-      badge: badge,
-    );
-  }
-
-  ServerChatDeletedParams fromJson(Map<String, Object> json) {
-    return ServerChatDeletedParams.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ServerChatDeletedParams = _$ServerChatDeletedParamsTearOff();
 
 /// @nodoc
 mixin _$ServerChatDeletedParams {
@@ -56,13 +35,16 @@ mixin _$ServerChatDeletedParams {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerChatDeletedParamsCopyWith<ServerChatDeletedParams> get copyWith => throw _privateConstructorUsedError;
+  $ServerChatDeletedParamsCopyWith<ServerChatDeletedParams> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ServerChatDeletedParamsCopyWith<$Res> {
-  factory $ServerChatDeletedParamsCopyWith(ServerChatDeletedParams value, $Res Function(ServerChatDeletedParams) then) =
-      _$ServerChatDeletedParamsCopyWithImpl<$Res>;
+  factory $ServerChatDeletedParamsCopyWith(ServerChatDeletedParams value,
+          $Res Function(ServerChatDeletedParams) then) =
+      _$ServerChatDeletedParamsCopyWithImpl<$Res, ServerChatDeletedParams>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'chats') List<DeletedChat> chats,
       @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
@@ -72,53 +54,60 @@ abstract class $ServerChatDeletedParamsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ServerChatDeletedParamsCopyWithImpl<$Res> implements $ServerChatDeletedParamsCopyWith<$Res> {
+class _$ServerChatDeletedParamsCopyWithImpl<$Res,
+        $Val extends ServerChatDeletedParams>
+    implements $ServerChatDeletedParamsCopyWith<$Res> {
   _$ServerChatDeletedParamsCopyWithImpl(this._value, this._then);
 
-  final ServerChatDeletedParams _value;
   // ignore: unused_field
-  final $Res Function(ServerChatDeletedParams) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? chats = freezed,
+    Object? chats = null,
     Object? teamUnread = freezed,
-    Object? badge = freezed,
+    Object? badge = null,
   }) {
     return _then(_value.copyWith(
-      chats: chats == freezed
+      chats: null == chats
           ? _value.chats
           : chats // ignore: cast_nullable_to_non_nullable
               as List<DeletedChat>,
-      teamUnread: teamUnread == freezed
+      teamUnread: freezed == teamUnread
           ? _value.teamUnread
           : teamUnread // ignore: cast_nullable_to_non_nullable
               as TeamUnread?,
-      badge: badge == freezed
+      badge: null == badge
           ? _value.badge
           : badge // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $TeamUnreadCopyWith<$Res>? get teamUnread {
     if (_value.teamUnread == null) {
       return null;
     }
 
     return $TeamUnreadCopyWith<$Res>(_value.teamUnread!, (value) {
-      return _then(_value.copyWith(teamUnread: value));
+      return _then(_value.copyWith(teamUnread: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$ServerChatDeletedParamsCopyWith<$Res> implements $ServerChatDeletedParamsCopyWith<$Res> {
-  factory _$ServerChatDeletedParamsCopyWith(
-          _ServerChatDeletedParams value, $Res Function(_ServerChatDeletedParams) then) =
-      __$ServerChatDeletedParamsCopyWithImpl<$Res>;
+abstract class _$$_ServerChatDeletedParamsCopyWith<$Res>
+    implements $ServerChatDeletedParamsCopyWith<$Res> {
+  factory _$$_ServerChatDeletedParamsCopyWith(_$_ServerChatDeletedParams value,
+          $Res Function(_$_ServerChatDeletedParams) then) =
+      __$$_ServerChatDeletedParamsCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'chats') List<DeletedChat> chats,
       @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
@@ -129,30 +118,31 @@ abstract class _$ServerChatDeletedParamsCopyWith<$Res> implements $ServerChatDel
 }
 
 /// @nodoc
-class __$ServerChatDeletedParamsCopyWithImpl<$Res> extends _$ServerChatDeletedParamsCopyWithImpl<$Res>
-    implements _$ServerChatDeletedParamsCopyWith<$Res> {
-  __$ServerChatDeletedParamsCopyWithImpl(_ServerChatDeletedParams _value, $Res Function(_ServerChatDeletedParams) _then)
-      : super(_value, (v) => _then(v as _ServerChatDeletedParams));
+class __$$_ServerChatDeletedParamsCopyWithImpl<$Res>
+    extends _$ServerChatDeletedParamsCopyWithImpl<$Res,
+        _$_ServerChatDeletedParams>
+    implements _$$_ServerChatDeletedParamsCopyWith<$Res> {
+  __$$_ServerChatDeletedParamsCopyWithImpl(_$_ServerChatDeletedParams _value,
+      $Res Function(_$_ServerChatDeletedParams) _then)
+      : super(_value, _then);
 
-  @override
-  _ServerChatDeletedParams get _value => super._value as _ServerChatDeletedParams;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? chats = freezed,
+    Object? chats = null,
     Object? teamUnread = freezed,
-    Object? badge = freezed,
+    Object? badge = null,
   }) {
-    return _then(_ServerChatDeletedParams(
-      chats: chats == freezed
-          ? _value.chats
+    return _then(_$_ServerChatDeletedParams(
+      chats: null == chats
+          ? _value._chats
           : chats // ignore: cast_nullable_to_non_nullable
               as List<DeletedChat>,
-      teamUnread: teamUnread == freezed
+      teamUnread: freezed == teamUnread
           ? _value.teamUnread
           : teamUnread // ignore: cast_nullable_to_non_nullable
               as TeamUnread?,
-      badge: badge == freezed
+      badge: null == badge
           ? _value.badge
           : badge // ignore: cast_nullable_to_non_nullable
               as int,
@@ -164,25 +154,32 @@ class __$ServerChatDeletedParamsCopyWithImpl<$Res> extends _$ServerChatDeletedPa
 @JsonSerializable()
 class _$_ServerChatDeletedParams implements _ServerChatDeletedParams {
   const _$_ServerChatDeletedParams(
-      {@JsonKey(name: 'chats') required this.chats,
+      {@JsonKey(name: 'chats') required final List<DeletedChat> chats,
       @JsonKey(name: 'team_unread') this.teamUnread,
-      @JsonKey(name: 'badge') required this.badge});
+      @JsonKey(name: 'badge') required this.badge})
+      : _chats = chats;
 
-  factory _$_ServerChatDeletedParams.fromJson(Map<String, dynamic> json) => _$$_ServerChatDeletedParamsFromJson(json);
-
-  @override
+  factory _$_ServerChatDeletedParams.fromJson(Map<String, dynamic> json) =>
+      _$$_ServerChatDeletedParamsFromJson(json);
 
   /// List of deleted chats.
-  @JsonKey(name: 'chats')
-  final List<DeletedChat> chats;
+  final List<DeletedChat> _chats;
+
+  /// List of deleted chats.
   @override
+  @JsonKey(name: 'chats')
+  List<DeletedChat> get chats {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_chats);
+  }
 
   /// Current team counters.
+  @override
   @JsonKey(name: 'team_unread')
   final TeamUnread? teamUnread;
-  @override
 
   /// Total number of unreads.
+  @override
   @JsonKey(name: 'badge')
   final int badge;
 
@@ -194,55 +191,62 @@ class _$_ServerChatDeletedParams implements _ServerChatDeletedParams {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ServerChatDeletedParams &&
-            (identical(other.chats, chats) || const DeepCollectionEquality().equals(other.chats, chats)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_ServerChatDeletedParams &&
+            const DeepCollectionEquality().equals(other._chats, _chats) &&
             (identical(other.teamUnread, teamUnread) ||
-                const DeepCollectionEquality().equals(other.teamUnread, teamUnread)) &&
-            (identical(other.badge, badge) || const DeepCollectionEquality().equals(other.badge, badge)));
+                other.teamUnread == teamUnread) &&
+            (identical(other.badge, badge) || other.badge == badge));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(chats) ^
-      const DeepCollectionEquality().hash(teamUnread) ^
-      const DeepCollectionEquality().hash(badge);
 
   @JsonKey(ignore: true)
   @override
-  _$ServerChatDeletedParamsCopyWith<_ServerChatDeletedParams> get copyWith =>
-      __$ServerChatDeletedParamsCopyWithImpl<_ServerChatDeletedParams>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType,
+      const DeepCollectionEquality().hash(_chats), teamUnread, badge);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_ServerChatDeletedParamsCopyWith<_$_ServerChatDeletedParams>
+      get copyWith =>
+          __$$_ServerChatDeletedParamsCopyWithImpl<_$_ServerChatDeletedParams>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ServerChatDeletedParamsToJson(this);
+    return _$$_ServerChatDeletedParamsToJson(
+      this,
+    );
   }
 }
 
 abstract class _ServerChatDeletedParams implements ServerChatDeletedParams {
   const factory _ServerChatDeletedParams(
-      {@JsonKey(name: 'chats') required List<DeletedChat> chats,
-      @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
-      @JsonKey(name: 'badge') required int badge}) = _$_ServerChatDeletedParams;
+          {@JsonKey(name: 'chats') required final List<DeletedChat> chats,
+          @JsonKey(name: 'team_unread') final TeamUnread? teamUnread,
+          @JsonKey(name: 'badge') required final int badge}) =
+      _$_ServerChatDeletedParams;
 
-  factory _ServerChatDeletedParams.fromJson(Map<String, dynamic> json) = _$_ServerChatDeletedParams.fromJson;
+  factory _ServerChatDeletedParams.fromJson(Map<String, dynamic> json) =
+      _$_ServerChatDeletedParams.fromJson;
 
   @override
 
   /// List of deleted chats.
   @JsonKey(name: 'chats')
-  List<DeletedChat> get chats => throw _privateConstructorUsedError;
+  List<DeletedChat> get chats;
   @override
 
   /// Current team counters.
   @JsonKey(name: 'team_unread')
-  TeamUnread? get teamUnread => throw _privateConstructorUsedError;
+  TeamUnread? get teamUnread;
   @override
 
   /// Total number of unreads.
   @JsonKey(name: 'badge')
-  int get badge => throw _privateConstructorUsedError;
+  int get badge;
   @override
   @JsonKey(ignore: true)
-  _$ServerChatDeletedParamsCopyWith<_ServerChatDeletedParams> get copyWith => throw _privateConstructorUsedError;
+  _$$_ServerChatDeletedParamsCopyWith<_$_ServerChatDeletedParams>
+      get copyWith => throw _privateConstructorUsedError;
 }

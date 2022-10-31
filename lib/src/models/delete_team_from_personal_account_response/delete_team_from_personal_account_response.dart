@@ -10,8 +10,9 @@ class DeleteTeamFromPersonalAccountResponse with _$DeleteTeamFromPersonalAccount
   const factory DeleteTeamFromPersonalAccountResponse({
     /// .
     @JsonKey(name: 'success') bool? success,
+    
+    
   }) = _DeleteTeamFromPersonalAccountResponse;
 
-  factory DeleteTeamFromPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$DeleteTeamFromPersonalAccountResponseFromJson(json);
+  factory DeleteTeamFromPersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$DeleteTeamFromPersonalAccountResponseFromJson(json);
 }

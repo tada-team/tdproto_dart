@@ -6,7 +6,8 @@ part of 'received_message.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ReceivedMessage _$$_ReceivedMessageFromJson(Map<String, dynamic> json) => _$_ReceivedMessage(
+_$_ReceivedMessage _$$_ReceivedMessageFromJson(Map<String, dynamic> json) =>
+    _$_ReceivedMessage(
       chat: json['chat'] as String,
       messageId: json['message_id'] as String,
       received: json['received'] as bool,
@@ -14,7 +15,8 @@ _$_ReceivedMessage _$$_ReceivedMessageFromJson(Map<String, dynamic> json) => _$_
       debug: json['_debug'] as String?,
     );
 
-Map<String, dynamic> _$$_ReceivedMessageToJson(_$_ReceivedMessage instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ReceivedMessageToJson(_$_ReceivedMessage instance) =>
+    <String, dynamic>{
       'chat': instance.chat,
       'message_id': instance.messageId,
       'received': instance.received,

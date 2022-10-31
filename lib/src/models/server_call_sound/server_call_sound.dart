@@ -10,12 +10,14 @@ class ServerCallSound with _$ServerCallSound {
   const factory ServerCallSound({
     /// .
     @JsonKey(name: 'params') required ServerCallSoundParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerCallSound;
 
   factory ServerCallSound.fromJson(Map<String, dynamic> json) => _$ServerCallSoundFromJson(json);

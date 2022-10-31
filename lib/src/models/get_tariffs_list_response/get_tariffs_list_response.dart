@@ -10,6 +10,8 @@ class GetTariffsListResponse with _$GetTariffsListResponse {
   const factory GetTariffsListResponse({
     /// .
     @JsonKey(name: 'tariffs') required List<TariffBilling> tariffs,
+    
+    
   }) = _GetTariffsListResponse;
 
   factory GetTariffsListResponse.fromJson(Map<String, dynamic> json) => _$GetTariffsListResponseFromJson(json);

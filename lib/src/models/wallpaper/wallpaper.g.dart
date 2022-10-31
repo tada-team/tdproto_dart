@@ -12,7 +12,8 @@ _$_Wallpaper _$$_WallpaperFromJson(Map<String, dynamic> json) => _$_Wallpaper(
       url: json['url'] as String,
     );
 
-Map<String, dynamic> _$$_WallpaperToJson(_$_Wallpaper instance) => <String, dynamic>{
+Map<String, dynamic> _$$_WallpaperToJson(_$_Wallpaper instance) =>
+    <String, dynamic>{
       'key': instance.key,
       'name': instance.name,
       'url': instance.url,

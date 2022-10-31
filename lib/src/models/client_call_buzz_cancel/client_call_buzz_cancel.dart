@@ -10,12 +10,14 @@ class ClientCallBuzzCancel with _$ClientCallBuzzCancel {
   const factory ClientCallBuzzCancel({
     /// .
     @JsonKey(name: 'params') required ClientCallBuzzCancelParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ClientCallBuzzCancel;
 
   factory ClientCallBuzzCancel.fromJson(Map<String, dynamic> json) => _$ClientCallBuzzCancelFromJson(json);

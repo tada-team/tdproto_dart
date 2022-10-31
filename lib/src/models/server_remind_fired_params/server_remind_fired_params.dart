@@ -10,6 +10,8 @@ class ServerRemindFiredParams with _$ServerRemindFiredParams {
   const factory ServerRemindFiredParams({
     /// Remind information.
     @JsonKey(name: 'reminds') required List<Remind> reminds,
+    
+    
   }) = _ServerRemindFiredParams;
 
   factory ServerRemindFiredParams.fromJson(Map<String, dynamic> json) => _$ServerRemindFiredParamsFromJson(json);

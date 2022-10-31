@@ -11,7 +11,8 @@ _$_IVCSInfo _$$_IVCSInfoFromJson(Map<String, dynamic> json) => _$_IVCSInfo(
       joinToken: json['join_token'] as String?,
     );
 
-Map<String, dynamic> _$$_IVCSInfoToJson(_$_IVCSInfo instance) => <String, dynamic>{
+Map<String, dynamic> _$$_IVCSInfoToJson(_$_IVCSInfo instance) =>
+    <String, dynamic>{
       'conference_id': instance.conferenceID,
       'join_token': instance.joinToken,
     };

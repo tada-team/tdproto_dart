@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'dist.dart';
@@ -11,30 +12,11 @@ part of 'dist.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Dist _$DistFromJson(Map<String, dynamic> json) {
   return _Dist.fromJson(json);
 }
-
-/// @nodoc
-class _$DistTearOff {
-  const _$DistTearOff();
-
-  _Dist call({@JsonKey(name: 'type') required String type, @JsonKey(name: 'url') required String url}) {
-    return _Dist(
-      type: type,
-      url: url,
-    );
-  }
-
-  Dist fromJson(Map<String, Object> json) {
-    return Dist.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Dist = _$DistTearOff();
 
 /// @nodoc
 mixin _$Dist {
@@ -53,61 +35,70 @@ mixin _$Dist {
 
 /// @nodoc
 abstract class $DistCopyWith<$Res> {
-  factory $DistCopyWith(Dist value, $Res Function(Dist) then) = _$DistCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'type') String type, @JsonKey(name: 'url') String url});
+  factory $DistCopyWith(Dist value, $Res Function(Dist) then) =
+      _$DistCopyWithImpl<$Res, Dist>;
+  @useResult
+  $Res call(
+      {@JsonKey(name: 'type') String type, @JsonKey(name: 'url') String url});
 }
 
 /// @nodoc
-class _$DistCopyWithImpl<$Res> implements $DistCopyWith<$Res> {
+class _$DistCopyWithImpl<$Res, $Val extends Dist>
+    implements $DistCopyWith<$Res> {
   _$DistCopyWithImpl(this._value, this._then);
 
-  final Dist _value;
   // ignore: unused_field
-  final $Res Function(Dist) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
-    Object? url = freezed,
+    Object? type = null,
+    Object? url = null,
   }) {
     return _then(_value.copyWith(
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DistCopyWith<$Res> implements $DistCopyWith<$Res> {
-  factory _$DistCopyWith(_Dist value, $Res Function(_Dist) then) = __$DistCopyWithImpl<$Res>;
+abstract class _$$_DistCopyWith<$Res> implements $DistCopyWith<$Res> {
+  factory _$$_DistCopyWith(_$_Dist value, $Res Function(_$_Dist) then) =
+      __$$_DistCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'type') String type, @JsonKey(name: 'url') String url});
+  @useResult
+  $Res call(
+      {@JsonKey(name: 'type') String type, @JsonKey(name: 'url') String url});
 }
 
 /// @nodoc
-class __$DistCopyWithImpl<$Res> extends _$DistCopyWithImpl<$Res> implements _$DistCopyWith<$Res> {
-  __$DistCopyWithImpl(_Dist _value, $Res Function(_Dist) _then) : super(_value, (v) => _then(v as _Dist));
+class __$$_DistCopyWithImpl<$Res> extends _$DistCopyWithImpl<$Res, _$_Dist>
+    implements _$$_DistCopyWith<$Res> {
+  __$$_DistCopyWithImpl(_$_Dist _value, $Res Function(_$_Dist) _then)
+      : super(_value, _then);
 
-  @override
-  _Dist get _value => super._value as _Dist;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
-    Object? url = freezed,
+    Object? type = null,
+    Object? url = null,
   }) {
-    return _then(_Dist(
-      type: type == freezed
+    return _then(_$_Dist(
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
@@ -118,18 +109,19 @@ class __$DistCopyWithImpl<$Res> extends _$DistCopyWithImpl<$Res> implements _$Di
 /// @nodoc
 @JsonSerializable()
 class _$_Dist implements _Dist {
-  const _$_Dist({@JsonKey(name: 'type') required this.type, @JsonKey(name: 'url') required this.url});
+  const _$_Dist(
+      {@JsonKey(name: 'type') required this.type,
+      @JsonKey(name: 'url') required this.url});
 
   factory _$_Dist.fromJson(Map<String, dynamic> json) => _$$_DistFromJson(json);
 
-  @override
-
   /// .
+  @override
   @JsonKey(name: 'type')
   final String type;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'url')
   final String url;
 
@@ -141,28 +133,34 @@ class _$_Dist implements _Dist {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Dist &&
-            (identical(other.type, type) || const DeepCollectionEquality().equals(other.type, type)) &&
-            (identical(other.url, url) || const DeepCollectionEquality().equals(other.url, url)));
+        (other.runtimeType == runtimeType &&
+            other is _$_Dist &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.url, url) || other.url == url));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(type) ^ const DeepCollectionEquality().hash(url);
 
   @JsonKey(ignore: true)
   @override
-  _$DistCopyWith<_Dist> get copyWith => __$DistCopyWithImpl<_Dist>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, type, url);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_DistCopyWith<_$_Dist> get copyWith =>
+      __$$_DistCopyWithImpl<_$_Dist>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DistToJson(this);
+    return _$$_DistToJson(
+      this,
+    );
   }
 }
 
 abstract class _Dist implements Dist {
-  const factory _Dist({@JsonKey(name: 'type') required String type, @JsonKey(name: 'url') required String url}) =
-      _$_Dist;
+  const factory _Dist(
+      {@JsonKey(name: 'type') required final String type,
+      @JsonKey(name: 'url') required final String url}) = _$_Dist;
 
   factory _Dist.fromJson(Map<String, dynamic> json) = _$_Dist.fromJson;
 
@@ -170,13 +168,13 @@ abstract class _Dist implements Dist {
 
   /// .
   @JsonKey(name: 'type')
-  String get type => throw _privateConstructorUsedError;
+  String get type;
   @override
 
   /// .
   @JsonKey(name: 'url')
-  String get url => throw _privateConstructorUsedError;
+  String get url;
   @override
   @JsonKey(ignore: true)
-  _$DistCopyWith<_Dist> get copyWith => throw _privateConstructorUsedError;
+  _$$_DistCopyWith<_$_Dist> get copyWith => throw _privateConstructorUsedError;
 }

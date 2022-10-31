@@ -10,8 +10,9 @@ class ServerMessageReceivedParams with _$ServerMessageReceivedParams {
   const factory ServerMessageReceivedParams({
     /// received message data.
     @JsonKey(name: 'messages') required List<ReceivedMessage> messages,
+    
+    
   }) = _ServerMessageReceivedParams;
 
-  factory ServerMessageReceivedParams.fromJson(Map<String, dynamic> json) =>
-      _$ServerMessageReceivedParamsFromJson(json);
+  factory ServerMessageReceivedParams.fromJson(Map<String, dynamic> json) => _$ServerMessageReceivedParamsFromJson(json);
 }

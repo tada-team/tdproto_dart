@@ -10,12 +10,14 @@ class ClientActivity with _$ClientActivity {
   const factory ClientActivity({
     /// .
     @JsonKey(name: 'params') required ClientActivityParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ClientActivity;
 
   factory ClientActivity.fromJson(Map<String, dynamic> json) => _$ClientActivityFromJson(json);

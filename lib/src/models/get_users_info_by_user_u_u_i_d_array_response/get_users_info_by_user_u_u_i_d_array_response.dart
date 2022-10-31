@@ -10,8 +10,9 @@ class GetUsersInfoByUserUUIDArrayResponse with _$GetUsersInfoByUserUUIDArrayResp
   const factory GetUsersInfoByUserUUIDArrayResponse({
     /// .
     @JsonKey(name: 'user_info') List<UserInfo>? userInfo,
+    
+    
   }) = _GetUsersInfoByUserUUIDArrayResponse;
 
-  factory GetUsersInfoByUserUUIDArrayResponse.fromJson(Map<String, dynamic> json) =>
-      _$GetUsersInfoByUserUUIDArrayResponseFromJson(json);
+  factory GetUsersInfoByUserUUIDArrayResponse.fromJson(Map<String, dynamic> json) => _$GetUsersInfoByUserUUIDArrayResponseFromJson(json);
 }

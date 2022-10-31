@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'auth.dart';
@@ -11,38 +12,11 @@ part of 'auth.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Auth _$AuthFromJson(Map<String, dynamic> json) {
   return _Auth.fromJson(json);
 }
-
-/// @nodoc
-class _$AuthTearOff {
-  const _$AuthTearOff();
-
-  _Auth call(
-      {@JsonKey(name: 'token') String? token,
-      @JsonKey(name: 'me') required UserWithMe me,
-      @JsonKey(name: 'required2fa') required bool required2fa,
-      @JsonKey(name: 'recovery2fa') required bool recovery2fa,
-      @JsonKey(name: 'method2fa') required String method2fa}) {
-    return _Auth(
-      token: token,
-      me: me,
-      required2fa: required2fa,
-      recovery2fa: recovery2fa,
-      method2fa: method2fa,
-    );
-  }
-
-  Auth fromJson(Map<String, Object> json) {
-    return Auth.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Auth = _$AuthTearOff();
 
 /// @nodoc
 mixin _$Auth {
@@ -73,7 +47,9 @@ mixin _$Auth {
 
 /// @nodoc
 abstract class $AuthCopyWith<$Res> {
-  factory $AuthCopyWith(Auth value, $Res Function(Auth) then) = _$AuthCopyWithImpl<$Res>;
+  factory $AuthCopyWith(Auth value, $Res Function(Auth) then) =
+      _$AuthCopyWithImpl<$Res, Auth>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'token') String? token,
       @JsonKey(name: 'me') UserWithMe me,
@@ -85,57 +61,63 @@ abstract class $AuthCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AuthCopyWithImpl<$Res> implements $AuthCopyWith<$Res> {
+class _$AuthCopyWithImpl<$Res, $Val extends Auth>
+    implements $AuthCopyWith<$Res> {
   _$AuthCopyWithImpl(this._value, this._then);
 
-  final Auth _value;
   // ignore: unused_field
-  final $Res Function(Auth) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? token = freezed,
-    Object? me = freezed,
-    Object? required2fa = freezed,
-    Object? recovery2fa = freezed,
-    Object? method2fa = freezed,
+    Object? me = null,
+    Object? required2fa = null,
+    Object? recovery2fa = null,
+    Object? method2fa = null,
   }) {
     return _then(_value.copyWith(
-      token: token == freezed
+      token: freezed == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as String?,
-      me: me == freezed
+      me: null == me
           ? _value.me
           : me // ignore: cast_nullable_to_non_nullable
               as UserWithMe,
-      required2fa: required2fa == freezed
+      required2fa: null == required2fa
           ? _value.required2fa
           : required2fa // ignore: cast_nullable_to_non_nullable
               as bool,
-      recovery2fa: recovery2fa == freezed
+      recovery2fa: null == recovery2fa
           ? _value.recovery2fa
           : recovery2fa // ignore: cast_nullable_to_non_nullable
               as bool,
-      method2fa: method2fa == freezed
+      method2fa: null == method2fa
           ? _value.method2fa
           : method2fa // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UserWithMeCopyWith<$Res> get me {
     return $UserWithMeCopyWith<$Res>(_value.me, (value) {
-      return _then(_value.copyWith(me: value));
+      return _then(_value.copyWith(me: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$AuthCopyWith<$Res> implements $AuthCopyWith<$Res> {
-  factory _$AuthCopyWith(_Auth value, $Res Function(_Auth) then) = __$AuthCopyWithImpl<$Res>;
+abstract class _$$_AuthCopyWith<$Res> implements $AuthCopyWith<$Res> {
+  factory _$$_AuthCopyWith(_$_Auth value, $Res Function(_$_Auth) then) =
+      __$$_AuthCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'token') String? token,
       @JsonKey(name: 'me') UserWithMe me,
@@ -148,38 +130,38 @@ abstract class _$AuthCopyWith<$Res> implements $AuthCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$AuthCopyWithImpl<$Res> extends _$AuthCopyWithImpl<$Res> implements _$AuthCopyWith<$Res> {
-  __$AuthCopyWithImpl(_Auth _value, $Res Function(_Auth) _then) : super(_value, (v) => _then(v as _Auth));
+class __$$_AuthCopyWithImpl<$Res> extends _$AuthCopyWithImpl<$Res, _$_Auth>
+    implements _$$_AuthCopyWith<$Res> {
+  __$$_AuthCopyWithImpl(_$_Auth _value, $Res Function(_$_Auth) _then)
+      : super(_value, _then);
 
-  @override
-  _Auth get _value => super._value as _Auth;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? token = freezed,
-    Object? me = freezed,
-    Object? required2fa = freezed,
-    Object? recovery2fa = freezed,
-    Object? method2fa = freezed,
+    Object? me = null,
+    Object? required2fa = null,
+    Object? recovery2fa = null,
+    Object? method2fa = null,
   }) {
-    return _then(_Auth(
-      token: token == freezed
+    return _then(_$_Auth(
+      token: freezed == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as String?,
-      me: me == freezed
+      me: null == me
           ? _value.me
           : me // ignore: cast_nullable_to_non_nullable
               as UserWithMe,
-      required2fa: required2fa == freezed
+      required2fa: null == required2fa
           ? _value.required2fa
           : required2fa // ignore: cast_nullable_to_non_nullable
               as bool,
-      recovery2fa: recovery2fa == freezed
+      recovery2fa: null == recovery2fa
           ? _value.recovery2fa
           : recovery2fa // ignore: cast_nullable_to_non_nullable
               as bool,
-      method2fa: method2fa == freezed
+      method2fa: null == method2fa
           ? _value.method2fa
           : method2fa // ignore: cast_nullable_to_non_nullable
               as String,
@@ -199,29 +181,28 @@ class _$_Auth implements _Auth {
 
   factory _$_Auth.fromJson(Map<String, dynamic> json) => _$$_AuthFromJson(json);
 
-  @override
-
   /// .
+  @override
   @JsonKey(name: 'token')
   final String? token;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'me')
   final UserWithMe me;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'required2fa')
   final bool required2fa;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'recovery2fa')
   final bool recovery2fa;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'method2fa')
   final String method2fa;
 
@@ -233,43 +214,44 @@ class _$_Auth implements _Auth {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Auth &&
-            (identical(other.token, token) || const DeepCollectionEquality().equals(other.token, token)) &&
-            (identical(other.me, me) || const DeepCollectionEquality().equals(other.me, me)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_Auth &&
+            (identical(other.token, token) || other.token == token) &&
+            (identical(other.me, me) || other.me == me) &&
             (identical(other.required2fa, required2fa) ||
-                const DeepCollectionEquality().equals(other.required2fa, required2fa)) &&
+                other.required2fa == required2fa) &&
             (identical(other.recovery2fa, recovery2fa) ||
-                const DeepCollectionEquality().equals(other.recovery2fa, recovery2fa)) &&
+                other.recovery2fa == recovery2fa) &&
             (identical(other.method2fa, method2fa) ||
-                const DeepCollectionEquality().equals(other.method2fa, method2fa)));
+                other.method2fa == method2fa));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(token) ^
-      const DeepCollectionEquality().hash(me) ^
-      const DeepCollectionEquality().hash(required2fa) ^
-      const DeepCollectionEquality().hash(recovery2fa) ^
-      const DeepCollectionEquality().hash(method2fa);
 
   @JsonKey(ignore: true)
   @override
-  _$AuthCopyWith<_Auth> get copyWith => __$AuthCopyWithImpl<_Auth>(this, _$identity);
+  int get hashCode =>
+      Object.hash(runtimeType, token, me, required2fa, recovery2fa, method2fa);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_AuthCopyWith<_$_Auth> get copyWith =>
+      __$$_AuthCopyWithImpl<_$_Auth>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AuthToJson(this);
+    return _$$_AuthToJson(
+      this,
+    );
   }
 }
 
 abstract class _Auth implements Auth {
   const factory _Auth(
-      {@JsonKey(name: 'token') String? token,
-      @JsonKey(name: 'me') required UserWithMe me,
-      @JsonKey(name: 'required2fa') required bool required2fa,
-      @JsonKey(name: 'recovery2fa') required bool recovery2fa,
-      @JsonKey(name: 'method2fa') required String method2fa}) = _$_Auth;
+      {@JsonKey(name: 'token') final String? token,
+      @JsonKey(name: 'me') required final UserWithMe me,
+      @JsonKey(name: 'required2fa') required final bool required2fa,
+      @JsonKey(name: 'recovery2fa') required final bool recovery2fa,
+      @JsonKey(name: 'method2fa') required final String method2fa}) = _$_Auth;
 
   factory _Auth.fromJson(Map<String, dynamic> json) = _$_Auth.fromJson;
 
@@ -277,28 +259,28 @@ abstract class _Auth implements Auth {
 
   /// .
   @JsonKey(name: 'token')
-  String? get token => throw _privateConstructorUsedError;
+  String? get token;
   @override
 
   /// .
   @JsonKey(name: 'me')
-  UserWithMe get me => throw _privateConstructorUsedError;
+  UserWithMe get me;
   @override
 
   /// .
   @JsonKey(name: 'required2fa')
-  bool get required2fa => throw _privateConstructorUsedError;
+  bool get required2fa;
   @override
 
   /// .
   @JsonKey(name: 'recovery2fa')
-  bool get recovery2fa => throw _privateConstructorUsedError;
+  bool get recovery2fa;
   @override
 
   /// .
   @JsonKey(name: 'method2fa')
-  String get method2fa => throw _privateConstructorUsedError;
+  String get method2fa;
   @override
   @JsonKey(ignore: true)
-  _$AuthCopyWith<_Auth> get copyWith => throw _privateConstructorUsedError;
+  _$$_AuthCopyWith<_$_Auth> get copyWith => throw _privateConstructorUsedError;
 }

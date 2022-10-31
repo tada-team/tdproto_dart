@@ -10,11 +10,12 @@ class MeetingsMembersBatchDeleteRequestParams with _$MeetingsMembersBatchDeleteR
   const factory MeetingsMembersBatchDeleteRequestParams({
     /// .
     @JsonKey(name: 'team_uuid') required String teamUuid,
-
+    
     /// .
     @JsonKey(name: 'members_jids') required List<String> membersJids,
+    
+    
   }) = _MeetingsMembersBatchDeleteRequestParams;
 
-  factory MeetingsMembersBatchDeleteRequestParams.fromJson(Map<String, dynamic> json) =>
-      _$MeetingsMembersBatchDeleteRequestParamsFromJson(json);
+  factory MeetingsMembersBatchDeleteRequestParams.fromJson(Map<String, dynamic> json) => _$MeetingsMembersBatchDeleteRequestParamsFromJson(json);
 }

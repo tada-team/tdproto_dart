@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'bot_command.dart';
@@ -11,34 +12,11 @@ part of 'bot_command.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 BotCommand _$BotCommandFromJson(Map<String, dynamic> json) {
   return _BotCommand.fromJson(json);
 }
-
-/// @nodoc
-class _$BotCommandTearOff {
-  const _$BotCommandTearOff();
-
-  _BotCommand call(
-      {@JsonKey(name: 'key') required String key,
-      @JsonKey(name: 'title') required String title,
-      @JsonKey(name: 'args') required List<String> args}) {
-    return _BotCommand(
-      key: key,
-      title: title,
-      args: args,
-    );
-  }
-
-  BotCommand fromJson(Map<String, Object> json) {
-    return BotCommand.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $BotCommand = _$BotCommandTearOff();
 
 /// @nodoc
 mixin _$BotCommand {
@@ -56,12 +34,16 @@ mixin _$BotCommand {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $BotCommandCopyWith<BotCommand> get copyWith => throw _privateConstructorUsedError;
+  $BotCommandCopyWith<BotCommand> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $BotCommandCopyWith<$Res> {
-  factory $BotCommandCopyWith(BotCommand value, $Res Function(BotCommand) then) = _$BotCommandCopyWithImpl<$Res>;
+  factory $BotCommandCopyWith(
+          BotCommand value, $Res Function(BotCommand) then) =
+      _$BotCommandCopyWithImpl<$Res, BotCommand>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'key') String key,
       @JsonKey(name: 'title') String title,
@@ -69,40 +51,47 @@ abstract class $BotCommandCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BotCommandCopyWithImpl<$Res> implements $BotCommandCopyWith<$Res> {
+class _$BotCommandCopyWithImpl<$Res, $Val extends BotCommand>
+    implements $BotCommandCopyWith<$Res> {
   _$BotCommandCopyWithImpl(this._value, this._then);
 
-  final BotCommand _value;
   // ignore: unused_field
-  final $Res Function(BotCommand) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? key = freezed,
-    Object? title = freezed,
-    Object? args = freezed,
+    Object? key = null,
+    Object? title = null,
+    Object? args = null,
   }) {
     return _then(_value.copyWith(
-      key: key == freezed
+      key: null == key
           ? _value.key
           : key // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      args: args == freezed
+      args: null == args
           ? _value.args
           : args // ignore: cast_nullable_to_non_nullable
               as List<String>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$BotCommandCopyWith<$Res> implements $BotCommandCopyWith<$Res> {
-  factory _$BotCommandCopyWith(_BotCommand value, $Res Function(_BotCommand) then) = __$BotCommandCopyWithImpl<$Res>;
+abstract class _$$_BotCommandCopyWith<$Res>
+    implements $BotCommandCopyWith<$Res> {
+  factory _$$_BotCommandCopyWith(
+          _$_BotCommand value, $Res Function(_$_BotCommand) then) =
+      __$$_BotCommandCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'key') String key,
       @JsonKey(name: 'title') String title,
@@ -110,30 +99,31 @@ abstract class _$BotCommandCopyWith<$Res> implements $BotCommandCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$BotCommandCopyWithImpl<$Res> extends _$BotCommandCopyWithImpl<$Res> implements _$BotCommandCopyWith<$Res> {
-  __$BotCommandCopyWithImpl(_BotCommand _value, $Res Function(_BotCommand) _then)
-      : super(_value, (v) => _then(v as _BotCommand));
+class __$$_BotCommandCopyWithImpl<$Res>
+    extends _$BotCommandCopyWithImpl<$Res, _$_BotCommand>
+    implements _$$_BotCommandCopyWith<$Res> {
+  __$$_BotCommandCopyWithImpl(
+      _$_BotCommand _value, $Res Function(_$_BotCommand) _then)
+      : super(_value, _then);
 
-  @override
-  _BotCommand get _value => super._value as _BotCommand;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? key = freezed,
-    Object? title = freezed,
-    Object? args = freezed,
+    Object? key = null,
+    Object? title = null,
+    Object? args = null,
   }) {
-    return _then(_BotCommand(
-      key: key == freezed
+    return _then(_$_BotCommand(
+      key: null == key
           ? _value.key
           : key // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      args: args == freezed
-          ? _value.args
+      args: null == args
+          ? _value._args
           : args // ignore: cast_nullable_to_non_nullable
               as List<String>,
     ));
@@ -146,25 +136,32 @@ class _$_BotCommand implements _BotCommand {
   const _$_BotCommand(
       {@JsonKey(name: 'key') required this.key,
       @JsonKey(name: 'title') required this.title,
-      @JsonKey(name: 'args') required this.args});
+      @JsonKey(name: 'args') required final List<String> args})
+      : _args = args;
 
-  factory _$_BotCommand.fromJson(Map<String, dynamic> json) => _$$_BotCommandFromJson(json);
-
-  @override
+  factory _$_BotCommand.fromJson(Map<String, dynamic> json) =>
+      _$$_BotCommandFromJson(json);
 
   /// What should be inserted to the chat.
+  @override
   @JsonKey(name: 'key')
   final String key;
-  @override
 
   /// What should be visible by user.
+  @override
   @JsonKey(name: 'title')
   final String title;
-  @override
 
   /// Command options, if any.
+  final List<String> _args;
+
+  /// Command options, if any.
+  @override
   @JsonKey(name: 'args')
-  final List<String> args;
+  List<String> get args {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_args);
+  }
 
   @override
   String toString() {
@@ -174,53 +171,58 @@ class _$_BotCommand implements _BotCommand {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _BotCommand &&
-            (identical(other.key, key) || const DeepCollectionEquality().equals(other.key, key)) &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)) &&
-            (identical(other.args, args) || const DeepCollectionEquality().equals(other.args, args)));
+        (other.runtimeType == runtimeType &&
+            other is _$_BotCommand &&
+            (identical(other.key, key) || other.key == key) &&
+            (identical(other.title, title) || other.title == title) &&
+            const DeepCollectionEquality().equals(other._args, _args));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(key) ^
-      const DeepCollectionEquality().hash(title) ^
-      const DeepCollectionEquality().hash(args);
 
   @JsonKey(ignore: true)
   @override
-  _$BotCommandCopyWith<_BotCommand> get copyWith => __$BotCommandCopyWithImpl<_BotCommand>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType, key, title, const DeepCollectionEquality().hash(_args));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_BotCommandCopyWith<_$_BotCommand> get copyWith =>
+      __$$_BotCommandCopyWithImpl<_$_BotCommand>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BotCommandToJson(this);
+    return _$$_BotCommandToJson(
+      this,
+    );
   }
 }
 
 abstract class _BotCommand implements BotCommand {
   const factory _BotCommand(
-      {@JsonKey(name: 'key') required String key,
-      @JsonKey(name: 'title') required String title,
-      @JsonKey(name: 'args') required List<String> args}) = _$_BotCommand;
+      {@JsonKey(name: 'key') required final String key,
+      @JsonKey(name: 'title') required final String title,
+      @JsonKey(name: 'args') required final List<String> args}) = _$_BotCommand;
 
-  factory _BotCommand.fromJson(Map<String, dynamic> json) = _$_BotCommand.fromJson;
+  factory _BotCommand.fromJson(Map<String, dynamic> json) =
+      _$_BotCommand.fromJson;
 
   @override
 
   /// What should be inserted to the chat.
   @JsonKey(name: 'key')
-  String get key => throw _privateConstructorUsedError;
+  String get key;
   @override
 
   /// What should be visible by user.
   @JsonKey(name: 'title')
-  String get title => throw _privateConstructorUsedError;
+  String get title;
   @override
 
   /// Command options, if any.
   @JsonKey(name: 'args')
-  List<String> get args => throw _privateConstructorUsedError;
+  List<String> get args;
   @override
   @JsonKey(ignore: true)
-  _$BotCommandCopyWith<_BotCommand> get copyWith => throw _privateConstructorUsedError;
+  _$$_BotCommandCopyWith<_$_BotCommand> get copyWith =>
+      throw _privateConstructorUsedError;
 }

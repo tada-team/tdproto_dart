@@ -10,6 +10,8 @@ class ServerLoginParams with _$ServerLoginParams {
   const factory ServerLoginParams({
     /// Device name.
     @JsonKey(name: 'device_name') required String deviceName,
+    
+    
   }) = _ServerLoginParams;
 
   factory ServerLoginParams.fromJson(Map<String, dynamic> json) => _$ServerLoginParamsFromJson(json);

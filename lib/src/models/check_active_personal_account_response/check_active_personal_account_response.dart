@@ -10,8 +10,9 @@ class CheckActivePersonalAccountResponse with _$CheckActivePersonalAccountRespon
   const factory CheckActivePersonalAccountResponse({
     /// .
     @JsonKey(name: 'success') bool? success,
+    
+    
   }) = _CheckActivePersonalAccountResponse;
 
-  factory CheckActivePersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$CheckActivePersonalAccountResponseFromJson(json);
+  factory CheckActivePersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$CheckActivePersonalAccountResponseFromJson(json);
 }

@@ -10,17 +10,18 @@ class PaginatedUploadShortMessages with _$PaginatedUploadShortMessages {
   const factory PaginatedUploadShortMessages({
     /// .
     @JsonKey(name: 'objects') required List<UploadShortMessage> objects,
-
+    
     /// .
     @JsonKey(name: 'count') required int count,
-
+    
     /// .
     @JsonKey(name: 'limit') required int limit,
-
+    
     /// .
     @JsonKey(name: 'offset') required int offset,
+    
+    
   }) = _PaginatedUploadShortMessages;
 
-  factory PaginatedUploadShortMessages.fromJson(Map<String, dynamic> json) =>
-      _$PaginatedUploadShortMessagesFromJson(json);
+  factory PaginatedUploadShortMessages.fromJson(Map<String, dynamic> json) => _$PaginatedUploadShortMessagesFromJson(json);
 }

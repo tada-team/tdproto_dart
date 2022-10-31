@@ -10,8 +10,9 @@ class DeleteUserFromWorkplaceRequest with _$DeleteUserFromWorkplaceRequest {
   const factory DeleteUserFromWorkplaceRequest({
     /// .
     @JsonKey(name: 'user_uuid') required String userUuid,
+    
+    
   }) = _DeleteUserFromWorkplaceRequest;
 
-  factory DeleteUserFromWorkplaceRequest.fromJson(Map<String, dynamic> json) =>
-      _$DeleteUserFromWorkplaceRequestFromJson(json);
+  factory DeleteUserFromWorkplaceRequest.fromJson(Map<String, dynamic> json) => _$DeleteUserFromWorkplaceRequestFromJson(json);
 }

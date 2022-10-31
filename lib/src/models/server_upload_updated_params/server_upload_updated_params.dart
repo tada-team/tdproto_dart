@@ -10,6 +10,8 @@ class ServerUploadUpdatedParams with _$ServerUploadUpdatedParams {
   const factory ServerUploadUpdatedParams({
     /// Uploads data.
     @JsonKey(name: 'uploads') required List<Upload> uploads,
+    
+    
   }) = _ServerUploadUpdatedParams;
 
   factory ServerUploadUpdatedParams.fromJson(Map<String, dynamic> json) => _$ServerUploadUpdatedParamsFromJson(json);

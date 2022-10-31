@@ -10,12 +10,14 @@ class ServerTagDeleted with _$ServerTagDeleted {
   const factory ServerTagDeleted({
     /// .
     @JsonKey(name: 'params') required ServerTagDeletedParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerTagDeleted;
 
   factory ServerTagDeleted.fromJson(Map<String, dynamic> json) => _$ServerTagDeletedFromJson(json);

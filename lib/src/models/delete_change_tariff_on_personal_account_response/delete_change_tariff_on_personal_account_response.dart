@@ -10,8 +10,9 @@ class DeleteChangeTariffOnPersonalAccountResponse with _$DeleteChangeTariffOnPer
   const factory DeleteChangeTariffOnPersonalAccountResponse({
     /// .
     @JsonKey(name: 'success') bool? success,
+    
+    
   }) = _DeleteChangeTariffOnPersonalAccountResponse;
 
-  factory DeleteChangeTariffOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$DeleteChangeTariffOnPersonalAccountResponseFromJson(json);
+  factory DeleteChangeTariffOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$DeleteChangeTariffOnPersonalAccountResponseFromJson(json);
 }

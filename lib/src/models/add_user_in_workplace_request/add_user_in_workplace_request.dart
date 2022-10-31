@@ -10,6 +10,8 @@ class AddUserInWorkplaceRequest with _$AddUserInWorkplaceRequest {
   const factory AddUserInWorkplaceRequest({
     /// .
     @JsonKey(name: 'user_uuid') required String userUuid,
+    
+    
   }) = _AddUserInWorkplaceRequest;
 
   factory AddUserInWorkplaceRequest.fromJson(Map<String, dynamic> json) => _$AddUserInWorkplaceRequestFromJson(json);

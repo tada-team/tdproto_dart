@@ -10,8 +10,9 @@ class AddWorkplacesOnPersonalAccountResponse with _$AddWorkplacesOnPersonalAccou
   const factory AddWorkplacesOnPersonalAccountResponse({
     /// .
     @JsonKey(name: 'success') bool? success,
+    
+    
   }) = _AddWorkplacesOnPersonalAccountResponse;
 
-  factory AddWorkplacesOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$AddWorkplacesOnPersonalAccountResponseFromJson(json);
+  factory AddWorkplacesOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$AddWorkplacesOnPersonalAccountResponseFromJson(json);
 }

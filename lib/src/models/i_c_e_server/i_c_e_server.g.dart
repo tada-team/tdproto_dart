@@ -12,7 +12,8 @@ _$_ICEServer _$$_ICEServerFromJson(Map<String, dynamic> json) => _$_ICEServer(
       credential: json['credential'] as String?,
     );
 
-Map<String, dynamic> _$$_ICEServerToJson(_$_ICEServer instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ICEServerToJson(_$_ICEServer instance) =>
+    <String, dynamic>{
       'urls': instance.urls,
       'username': instance.userName,
       'credential': instance.credential,

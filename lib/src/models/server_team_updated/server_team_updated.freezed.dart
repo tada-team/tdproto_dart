@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_team_updated.dart';
@@ -11,34 +12,11 @@ part of 'server_team_updated.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ServerTeamUpdated _$ServerTeamUpdatedFromJson(Map<String, dynamic> json) {
   return _ServerTeamUpdated.fromJson(json);
 }
-
-/// @nodoc
-class _$ServerTeamUpdatedTearOff {
-  const _$ServerTeamUpdatedTearOff();
-
-  _ServerTeamUpdated call(
-      {@JsonKey(name: 'params') required ServerTeamUpdatedParams params,
-      @JsonKey(name: 'event') required String name,
-      @JsonKey(name: 'confirm_id') String? confirmId}) {
-    return _ServerTeamUpdated(
-      params: params,
-      name: name,
-      confirmId: confirmId,
-    );
-  }
-
-  ServerTeamUpdated fromJson(Map<String, Object> json) {
-    return ServerTeamUpdated.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ServerTeamUpdated = _$ServerTeamUpdatedTearOff();
 
 /// @nodoc
 mixin _$ServerTeamUpdated {
@@ -56,13 +34,16 @@ mixin _$ServerTeamUpdated {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerTeamUpdatedCopyWith<ServerTeamUpdated> get copyWith => throw _privateConstructorUsedError;
+  $ServerTeamUpdatedCopyWith<ServerTeamUpdated> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ServerTeamUpdatedCopyWith<$Res> {
-  factory $ServerTeamUpdatedCopyWith(ServerTeamUpdated value, $Res Function(ServerTeamUpdated) then) =
-      _$ServerTeamUpdatedCopyWithImpl<$Res>;
+  factory $ServerTeamUpdatedCopyWith(
+          ServerTeamUpdated value, $Res Function(ServerTeamUpdated) then) =
+      _$ServerTeamUpdatedCopyWithImpl<$Res, ServerTeamUpdated>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'params') ServerTeamUpdatedParams params,
       @JsonKey(name: 'event') String name,
@@ -72,48 +53,55 @@ abstract class $ServerTeamUpdatedCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ServerTeamUpdatedCopyWithImpl<$Res> implements $ServerTeamUpdatedCopyWith<$Res> {
+class _$ServerTeamUpdatedCopyWithImpl<$Res, $Val extends ServerTeamUpdated>
+    implements $ServerTeamUpdatedCopyWith<$Res> {
   _$ServerTeamUpdatedCopyWithImpl(this._value, this._then);
 
-  final ServerTeamUpdated _value;
   // ignore: unused_field
-  final $Res Function(ServerTeamUpdated) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? params = freezed,
-    Object? name = freezed,
+    Object? params = null,
+    Object? name = null,
     Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed
+      params: null == params
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ServerTeamUpdatedParams,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: confirmId == freezed
+      confirmId: freezed == confirmId
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $ServerTeamUpdatedParamsCopyWith<$Res> get params {
     return $ServerTeamUpdatedParamsCopyWith<$Res>(_value.params, (value) {
-      return _then(_value.copyWith(params: value));
+      return _then(_value.copyWith(params: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$ServerTeamUpdatedCopyWith<$Res> implements $ServerTeamUpdatedCopyWith<$Res> {
-  factory _$ServerTeamUpdatedCopyWith(_ServerTeamUpdated value, $Res Function(_ServerTeamUpdated) then) =
-      __$ServerTeamUpdatedCopyWithImpl<$Res>;
+abstract class _$$_ServerTeamUpdatedCopyWith<$Res>
+    implements $ServerTeamUpdatedCopyWith<$Res> {
+  factory _$$_ServerTeamUpdatedCopyWith(_$_ServerTeamUpdated value,
+          $Res Function(_$_ServerTeamUpdated) then) =
+      __$$_ServerTeamUpdatedCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'params') ServerTeamUpdatedParams params,
       @JsonKey(name: 'event') String name,
@@ -124,30 +112,30 @@ abstract class _$ServerTeamUpdatedCopyWith<$Res> implements $ServerTeamUpdatedCo
 }
 
 /// @nodoc
-class __$ServerTeamUpdatedCopyWithImpl<$Res> extends _$ServerTeamUpdatedCopyWithImpl<$Res>
-    implements _$ServerTeamUpdatedCopyWith<$Res> {
-  __$ServerTeamUpdatedCopyWithImpl(_ServerTeamUpdated _value, $Res Function(_ServerTeamUpdated) _then)
-      : super(_value, (v) => _then(v as _ServerTeamUpdated));
+class __$$_ServerTeamUpdatedCopyWithImpl<$Res>
+    extends _$ServerTeamUpdatedCopyWithImpl<$Res, _$_ServerTeamUpdated>
+    implements _$$_ServerTeamUpdatedCopyWith<$Res> {
+  __$$_ServerTeamUpdatedCopyWithImpl(
+      _$_ServerTeamUpdated _value, $Res Function(_$_ServerTeamUpdated) _then)
+      : super(_value, _then);
 
-  @override
-  _ServerTeamUpdated get _value => super._value as _ServerTeamUpdated;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? params = freezed,
-    Object? name = freezed,
+    Object? params = null,
+    Object? name = null,
     Object? confirmId = freezed,
   }) {
-    return _then(_ServerTeamUpdated(
-      params: params == freezed
+    return _then(_$_ServerTeamUpdated(
+      params: null == params
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ServerTeamUpdatedParams,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: confirmId == freezed
+      confirmId: freezed == confirmId
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -163,21 +151,21 @@ class _$_ServerTeamUpdated implements _ServerTeamUpdated {
       @JsonKey(name: 'event') required this.name,
       @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ServerTeamUpdated.fromJson(Map<String, dynamic> json) => _$$_ServerTeamUpdatedFromJson(json);
-
-  @override
+  factory _$_ServerTeamUpdated.fromJson(Map<String, dynamic> json) =>
+      _$$_ServerTeamUpdatedFromJson(json);
 
   /// .
+  @override
   @JsonKey(name: 'params')
   final ServerTeamUpdatedParams params;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'event')
   final String name;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'confirm_id')
   final String? confirmId;
 
@@ -189,55 +177,62 @@ class _$_ServerTeamUpdated implements _ServerTeamUpdated {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ServerTeamUpdated &&
-            (identical(other.params, params) || const DeepCollectionEquality().equals(other.params, params)) &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_ServerTeamUpdated &&
+            (identical(other.params, params) || other.params == params) &&
+            (identical(other.name, name) || other.name == name) &&
             (identical(other.confirmId, confirmId) ||
-                const DeepCollectionEquality().equals(other.confirmId, confirmId)));
+                other.confirmId == confirmId));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(params) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(confirmId);
 
   @JsonKey(ignore: true)
   @override
-  _$ServerTeamUpdatedCopyWith<_ServerTeamUpdated> get copyWith =>
-      __$ServerTeamUpdatedCopyWithImpl<_ServerTeamUpdated>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, params, name, confirmId);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_ServerTeamUpdatedCopyWith<_$_ServerTeamUpdated> get copyWith =>
+      __$$_ServerTeamUpdatedCopyWithImpl<_$_ServerTeamUpdated>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ServerTeamUpdatedToJson(this);
+    return _$$_ServerTeamUpdatedToJson(
+      this,
+    );
   }
 }
 
 abstract class _ServerTeamUpdated implements ServerTeamUpdated {
   const factory _ServerTeamUpdated(
-      {@JsonKey(name: 'params') required ServerTeamUpdatedParams params,
-      @JsonKey(name: 'event') required String name,
-      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerTeamUpdated;
+      {@JsonKey(name: 'params')
+          required final ServerTeamUpdatedParams params,
+      @JsonKey(name: 'event')
+          required final String name,
+      @JsonKey(name: 'confirm_id')
+          final String? confirmId}) = _$_ServerTeamUpdated;
 
-  factory _ServerTeamUpdated.fromJson(Map<String, dynamic> json) = _$_ServerTeamUpdated.fromJson;
+  factory _ServerTeamUpdated.fromJson(Map<String, dynamic> json) =
+      _$_ServerTeamUpdated.fromJson;
 
   @override
 
   /// .
   @JsonKey(name: 'params')
-  ServerTeamUpdatedParams get params => throw _privateConstructorUsedError;
+  ServerTeamUpdatedParams get params;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String? get confirmId => throw _privateConstructorUsedError;
+  String? get confirmId;
   @override
   @JsonKey(ignore: true)
-  _$ServerTeamUpdatedCopyWith<_ServerTeamUpdated> get copyWith => throw _privateConstructorUsedError;
+  _$$_ServerTeamUpdatedCopyWith<_$_ServerTeamUpdated> get copyWith =>
+      throw _privateConstructorUsedError;
 }

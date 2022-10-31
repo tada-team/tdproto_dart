@@ -10,11 +10,12 @@ class MeetingsMembersCreateRequest with _$MeetingsMembersCreateRequest {
   const factory MeetingsMembersCreateRequest({
     /// .
     @JsonKey(name: 'members') required List<MeetingsMemberCreateParams> members,
-
+    
     /// .
     @JsonKey(name: 'team_uuid') required String teamUuid,
+    
+    
   }) = _MeetingsMembersCreateRequest;
 
-  factory MeetingsMembersCreateRequest.fromJson(Map<String, dynamic> json) =>
-      _$MeetingsMembersCreateRequestFromJson(json);
+  factory MeetingsMembersCreateRequest.fromJson(Map<String, dynamic> json) => _$MeetingsMembersCreateRequestFromJson(json);
 }

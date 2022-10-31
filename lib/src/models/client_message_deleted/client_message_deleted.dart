@@ -10,12 +10,14 @@ class ClientMessageDeleted with _$ClientMessageDeleted {
   const factory ClientMessageDeleted({
     /// .
     @JsonKey(name: 'params') required ClientMessageDeletedParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ClientMessageDeleted;
 
   factory ClientMessageDeleted.fromJson(Map<String, dynamic> json) => _$ClientMessageDeletedFromJson(json);

@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'client_call_reject.dart';
@@ -11,34 +12,11 @@ part of 'client_call_reject.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ClientCallReject _$ClientCallRejectFromJson(Map<String, dynamic> json) {
   return _ClientCallReject.fromJson(json);
 }
-
-/// @nodoc
-class _$ClientCallRejectTearOff {
-  const _$ClientCallRejectTearOff();
-
-  _ClientCallReject call(
-      {@JsonKey(name: 'params') required ClientCallRejectParams params,
-      @JsonKey(name: 'event') required String name,
-      @JsonKey(name: 'confirm_id') String? confirmId}) {
-    return _ClientCallReject(
-      params: params,
-      name: name,
-      confirmId: confirmId,
-    );
-  }
-
-  ClientCallReject fromJson(Map<String, Object> json) {
-    return ClientCallReject.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ClientCallReject = _$ClientCallRejectTearOff();
 
 /// @nodoc
 mixin _$ClientCallReject {
@@ -56,13 +34,16 @@ mixin _$ClientCallReject {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ClientCallRejectCopyWith<ClientCallReject> get copyWith => throw _privateConstructorUsedError;
+  $ClientCallRejectCopyWith<ClientCallReject> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ClientCallRejectCopyWith<$Res> {
-  factory $ClientCallRejectCopyWith(ClientCallReject value, $Res Function(ClientCallReject) then) =
-      _$ClientCallRejectCopyWithImpl<$Res>;
+  factory $ClientCallRejectCopyWith(
+          ClientCallReject value, $Res Function(ClientCallReject) then) =
+      _$ClientCallRejectCopyWithImpl<$Res, ClientCallReject>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'params') ClientCallRejectParams params,
       @JsonKey(name: 'event') String name,
@@ -72,48 +53,55 @@ abstract class $ClientCallRejectCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ClientCallRejectCopyWithImpl<$Res> implements $ClientCallRejectCopyWith<$Res> {
+class _$ClientCallRejectCopyWithImpl<$Res, $Val extends ClientCallReject>
+    implements $ClientCallRejectCopyWith<$Res> {
   _$ClientCallRejectCopyWithImpl(this._value, this._then);
 
-  final ClientCallReject _value;
   // ignore: unused_field
-  final $Res Function(ClientCallReject) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? params = freezed,
-    Object? name = freezed,
+    Object? params = null,
+    Object? name = null,
     Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed
+      params: null == params
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ClientCallRejectParams,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: confirmId == freezed
+      confirmId: freezed == confirmId
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $ClientCallRejectParamsCopyWith<$Res> get params {
     return $ClientCallRejectParamsCopyWith<$Res>(_value.params, (value) {
-      return _then(_value.copyWith(params: value));
+      return _then(_value.copyWith(params: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$ClientCallRejectCopyWith<$Res> implements $ClientCallRejectCopyWith<$Res> {
-  factory _$ClientCallRejectCopyWith(_ClientCallReject value, $Res Function(_ClientCallReject) then) =
-      __$ClientCallRejectCopyWithImpl<$Res>;
+abstract class _$$_ClientCallRejectCopyWith<$Res>
+    implements $ClientCallRejectCopyWith<$Res> {
+  factory _$$_ClientCallRejectCopyWith(
+          _$_ClientCallReject value, $Res Function(_$_ClientCallReject) then) =
+      __$$_ClientCallRejectCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'params') ClientCallRejectParams params,
       @JsonKey(name: 'event') String name,
@@ -124,30 +112,30 @@ abstract class _$ClientCallRejectCopyWith<$Res> implements $ClientCallRejectCopy
 }
 
 /// @nodoc
-class __$ClientCallRejectCopyWithImpl<$Res> extends _$ClientCallRejectCopyWithImpl<$Res>
-    implements _$ClientCallRejectCopyWith<$Res> {
-  __$ClientCallRejectCopyWithImpl(_ClientCallReject _value, $Res Function(_ClientCallReject) _then)
-      : super(_value, (v) => _then(v as _ClientCallReject));
+class __$$_ClientCallRejectCopyWithImpl<$Res>
+    extends _$ClientCallRejectCopyWithImpl<$Res, _$_ClientCallReject>
+    implements _$$_ClientCallRejectCopyWith<$Res> {
+  __$$_ClientCallRejectCopyWithImpl(
+      _$_ClientCallReject _value, $Res Function(_$_ClientCallReject) _then)
+      : super(_value, _then);
 
-  @override
-  _ClientCallReject get _value => super._value as _ClientCallReject;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? params = freezed,
-    Object? name = freezed,
+    Object? params = null,
+    Object? name = null,
     Object? confirmId = freezed,
   }) {
-    return _then(_ClientCallReject(
-      params: params == freezed
+    return _then(_$_ClientCallReject(
+      params: null == params
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ClientCallRejectParams,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: confirmId == freezed
+      confirmId: freezed == confirmId
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -163,21 +151,21 @@ class _$_ClientCallReject implements _ClientCallReject {
       @JsonKey(name: 'event') required this.name,
       @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ClientCallReject.fromJson(Map<String, dynamic> json) => _$$_ClientCallRejectFromJson(json);
-
-  @override
+  factory _$_ClientCallReject.fromJson(Map<String, dynamic> json) =>
+      _$$_ClientCallRejectFromJson(json);
 
   /// .
+  @override
   @JsonKey(name: 'params')
   final ClientCallRejectParams params;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'event')
   final String name;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'confirm_id')
   final String? confirmId;
 
@@ -189,55 +177,61 @@ class _$_ClientCallReject implements _ClientCallReject {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ClientCallReject &&
-            (identical(other.params, params) || const DeepCollectionEquality().equals(other.params, params)) &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_ClientCallReject &&
+            (identical(other.params, params) || other.params == params) &&
+            (identical(other.name, name) || other.name == name) &&
             (identical(other.confirmId, confirmId) ||
-                const DeepCollectionEquality().equals(other.confirmId, confirmId)));
+                other.confirmId == confirmId));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(params) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(confirmId);
 
   @JsonKey(ignore: true)
   @override
-  _$ClientCallRejectCopyWith<_ClientCallReject> get copyWith =>
-      __$ClientCallRejectCopyWithImpl<_ClientCallReject>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, params, name, confirmId);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_ClientCallRejectCopyWith<_$_ClientCallReject> get copyWith =>
+      __$$_ClientCallRejectCopyWithImpl<_$_ClientCallReject>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ClientCallRejectToJson(this);
+    return _$$_ClientCallRejectToJson(
+      this,
+    );
   }
 }
 
 abstract class _ClientCallReject implements ClientCallReject {
   const factory _ClientCallReject(
-      {@JsonKey(name: 'params') required ClientCallRejectParams params,
-      @JsonKey(name: 'event') required String name,
-      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ClientCallReject;
+      {@JsonKey(name: 'params')
+          required final ClientCallRejectParams params,
+      @JsonKey(name: 'event')
+          required final String name,
+      @JsonKey(name: 'confirm_id')
+          final String? confirmId}) = _$_ClientCallReject;
 
-  factory _ClientCallReject.fromJson(Map<String, dynamic> json) = _$_ClientCallReject.fromJson;
+  factory _ClientCallReject.fromJson(Map<String, dynamic> json) =
+      _$_ClientCallReject.fromJson;
 
   @override
 
   /// .
   @JsonKey(name: 'params')
-  ClientCallRejectParams get params => throw _privateConstructorUsedError;
+  ClientCallRejectParams get params;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String? get confirmId => throw _privateConstructorUsedError;
+  String? get confirmId;
   @override
   @JsonKey(ignore: true)
-  _$ClientCallRejectCopyWith<_ClientCallReject> get copyWith => throw _privateConstructorUsedError;
+  _$$_ClientCallRejectCopyWith<_$_ClientCallReject> get copyWith =>
+      throw _privateConstructorUsedError;
 }

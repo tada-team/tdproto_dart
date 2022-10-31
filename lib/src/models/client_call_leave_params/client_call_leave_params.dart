@@ -10,9 +10,11 @@ class ClientCallLeaveParams with _$ClientCallLeaveParams {
   const factory ClientCallLeaveParams({
     /// Chat or contact id.
     @JsonKey(name: 'jid') required String jid,
-
+    
     /// Reason, if any.
     @JsonKey(name: 'reason') String? reason,
+    
+    
   }) = _ClientCallLeaveParams;
 
   factory ClientCallLeaveParams.fromJson(Map<String, dynamic> json) => _$ClientCallLeaveParamsFromJson(json);

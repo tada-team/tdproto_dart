@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'deleted_chat.dart';
@@ -11,36 +12,11 @@ part of 'deleted_chat.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 DeletedChat _$DeletedChatFromJson(Map<String, dynamic> json) {
   return _DeletedChat.fromJson(json);
 }
-
-/// @nodoc
-class _$DeletedChatTearOff {
-  const _$DeletedChatTearOff();
-
-  _DeletedChat call(
-      {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'chat_type') required String chatType,
-      @JsonKey(name: 'gentime') required int gentime,
-      @JsonKey(name: 'is_archive') required bool isArchive}) {
-    return _DeletedChat(
-      jid: jid,
-      chatType: chatType,
-      gentime: gentime,
-      isArchive: isArchive,
-    );
-  }
-
-  DeletedChat fromJson(Map<String, Object> json) {
-    return DeletedChat.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $DeletedChat = _$DeletedChatTearOff();
 
 /// @nodoc
 mixin _$DeletedChat {
@@ -62,12 +38,16 @@ mixin _$DeletedChat {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $DeletedChatCopyWith<DeletedChat> get copyWith => throw _privateConstructorUsedError;
+  $DeletedChatCopyWith<DeletedChat> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $DeletedChatCopyWith<$Res> {
-  factory $DeletedChatCopyWith(DeletedChat value, $Res Function(DeletedChat) then) = _$DeletedChatCopyWithImpl<$Res>;
+  factory $DeletedChatCopyWith(
+          DeletedChat value, $Res Function(DeletedChat) then) =
+      _$DeletedChatCopyWithImpl<$Res, DeletedChat>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'chat_type') String chatType,
@@ -76,46 +56,52 @@ abstract class $DeletedChatCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$DeletedChatCopyWithImpl<$Res> implements $DeletedChatCopyWith<$Res> {
+class _$DeletedChatCopyWithImpl<$Res, $Val extends DeletedChat>
+    implements $DeletedChatCopyWith<$Res> {
   _$DeletedChatCopyWithImpl(this._value, this._then);
 
-  final DeletedChat _value;
   // ignore: unused_field
-  final $Res Function(DeletedChat) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? jid = freezed,
-    Object? chatType = freezed,
-    Object? gentime = freezed,
-    Object? isArchive = freezed,
+    Object? jid = null,
+    Object? chatType = null,
+    Object? gentime = null,
+    Object? isArchive = null,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed
+      jid: null == jid
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      chatType: chatType == freezed
+      chatType: null == chatType
           ? _value.chatType
           : chatType // ignore: cast_nullable_to_non_nullable
               as String,
-      gentime: gentime == freezed
+      gentime: null == gentime
           ? _value.gentime
           : gentime // ignore: cast_nullable_to_non_nullable
               as int,
-      isArchive: isArchive == freezed
+      isArchive: null == isArchive
           ? _value.isArchive
           : isArchive // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DeletedChatCopyWith<$Res> implements $DeletedChatCopyWith<$Res> {
-  factory _$DeletedChatCopyWith(_DeletedChat value, $Res Function(_DeletedChat) then) =
-      __$DeletedChatCopyWithImpl<$Res>;
+abstract class _$$_DeletedChatCopyWith<$Res>
+    implements $DeletedChatCopyWith<$Res> {
+  factory _$$_DeletedChatCopyWith(
+          _$_DeletedChat value, $Res Function(_$_DeletedChat) then) =
+      __$$_DeletedChatCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'chat_type') String chatType,
@@ -124,34 +110,35 @@ abstract class _$DeletedChatCopyWith<$Res> implements $DeletedChatCopyWith<$Res>
 }
 
 /// @nodoc
-class __$DeletedChatCopyWithImpl<$Res> extends _$DeletedChatCopyWithImpl<$Res> implements _$DeletedChatCopyWith<$Res> {
-  __$DeletedChatCopyWithImpl(_DeletedChat _value, $Res Function(_DeletedChat) _then)
-      : super(_value, (v) => _then(v as _DeletedChat));
+class __$$_DeletedChatCopyWithImpl<$Res>
+    extends _$DeletedChatCopyWithImpl<$Res, _$_DeletedChat>
+    implements _$$_DeletedChatCopyWith<$Res> {
+  __$$_DeletedChatCopyWithImpl(
+      _$_DeletedChat _value, $Res Function(_$_DeletedChat) _then)
+      : super(_value, _then);
 
-  @override
-  _DeletedChat get _value => super._value as _DeletedChat;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? jid = freezed,
-    Object? chatType = freezed,
-    Object? gentime = freezed,
-    Object? isArchive = freezed,
+    Object? jid = null,
+    Object? chatType = null,
+    Object? gentime = null,
+    Object? isArchive = null,
   }) {
-    return _then(_DeletedChat(
-      jid: jid == freezed
+    return _then(_$_DeletedChat(
+      jid: null == jid
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      chatType: chatType == freezed
+      chatType: null == chatType
           ? _value.chatType
           : chatType // ignore: cast_nullable_to_non_nullable
               as String,
-      gentime: gentime == freezed
+      gentime: null == gentime
           ? _value.gentime
           : gentime // ignore: cast_nullable_to_non_nullable
               as int,
-      isArchive: isArchive == freezed
+      isArchive: null == isArchive
           ? _value.isArchive
           : isArchive // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -168,26 +155,26 @@ class _$_DeletedChat implements _DeletedChat {
       @JsonKey(name: 'gentime') required this.gentime,
       @JsonKey(name: 'is_archive') required this.isArchive});
 
-  factory _$_DeletedChat.fromJson(Map<String, dynamic> json) => _$$_DeletedChatFromJson(json);
-
-  @override
+  factory _$_DeletedChat.fromJson(Map<String, dynamic> json) =>
+      _$$_DeletedChatFromJson(json);
 
   /// Group/Task/Contact id.
+  @override
   @JsonKey(name: 'jid')
   final String jid;
-  @override
 
   /// Chat type.
+  @override
   @JsonKey(name: 'chat_type')
   final String chatType;
-  @override
 
   /// Chat fields (related to concrete participant) version.
+  @override
   @JsonKey(name: 'gentime')
   final int gentime;
-  @override
 
   /// Archive flag. Always true for this structure.
+  @override
   @JsonKey(name: 'is_archive')
   final bool isArchive;
 
@@ -199,62 +186,68 @@ class _$_DeletedChat implements _DeletedChat {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _DeletedChat &&
-            (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
-            (identical(other.chatType, chatType) || const DeepCollectionEquality().equals(other.chatType, chatType)) &&
-            (identical(other.gentime, gentime) || const DeepCollectionEquality().equals(other.gentime, gentime)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_DeletedChat &&
+            (identical(other.jid, jid) || other.jid == jid) &&
+            (identical(other.chatType, chatType) ||
+                other.chatType == chatType) &&
+            (identical(other.gentime, gentime) || other.gentime == gentime) &&
             (identical(other.isArchive, isArchive) ||
-                const DeepCollectionEquality().equals(other.isArchive, isArchive)));
+                other.isArchive == isArchive));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(jid) ^
-      const DeepCollectionEquality().hash(chatType) ^
-      const DeepCollectionEquality().hash(gentime) ^
-      const DeepCollectionEquality().hash(isArchive);
 
   @JsonKey(ignore: true)
   @override
-  _$DeletedChatCopyWith<_DeletedChat> get copyWith => __$DeletedChatCopyWithImpl<_DeletedChat>(this, _$identity);
+  int get hashCode =>
+      Object.hash(runtimeType, jid, chatType, gentime, isArchive);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_DeletedChatCopyWith<_$_DeletedChat> get copyWith =>
+      __$$_DeletedChatCopyWithImpl<_$_DeletedChat>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DeletedChatToJson(this);
+    return _$$_DeletedChatToJson(
+      this,
+    );
   }
 }
 
 abstract class _DeletedChat implements DeletedChat {
   const factory _DeletedChat(
-      {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'chat_type') required String chatType,
-      @JsonKey(name: 'gentime') required int gentime,
-      @JsonKey(name: 'is_archive') required bool isArchive}) = _$_DeletedChat;
+          {@JsonKey(name: 'jid') required final String jid,
+          @JsonKey(name: 'chat_type') required final String chatType,
+          @JsonKey(name: 'gentime') required final int gentime,
+          @JsonKey(name: 'is_archive') required final bool isArchive}) =
+      _$_DeletedChat;
 
-  factory _DeletedChat.fromJson(Map<String, dynamic> json) = _$_DeletedChat.fromJson;
+  factory _DeletedChat.fromJson(Map<String, dynamic> json) =
+      _$_DeletedChat.fromJson;
 
   @override
 
   /// Group/Task/Contact id.
   @JsonKey(name: 'jid')
-  String get jid => throw _privateConstructorUsedError;
+  String get jid;
   @override
 
   /// Chat type.
   @JsonKey(name: 'chat_type')
-  String get chatType => throw _privateConstructorUsedError;
+  String get chatType;
   @override
 
   /// Chat fields (related to concrete participant) version.
   @JsonKey(name: 'gentime')
-  int get gentime => throw _privateConstructorUsedError;
+  int get gentime;
   @override
 
   /// Archive flag. Always true for this structure.
   @JsonKey(name: 'is_archive')
-  bool get isArchive => throw _privateConstructorUsedError;
+  bool get isArchive;
   @override
   @JsonKey(ignore: true)
-  _$DeletedChatCopyWith<_DeletedChat> get copyWith => throw _privateConstructorUsedError;
+  _$$_DeletedChatCopyWith<_$_DeletedChat> get copyWith =>
+      throw _privateConstructorUsedError;
 }

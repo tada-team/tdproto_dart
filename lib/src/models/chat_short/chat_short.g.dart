@@ -13,7 +13,8 @@ _$_ChatShort _$$_ChatShortFromJson(Map<String, dynamic> json) => _$_ChatShort(
       icons: IconData.fromJson(json['icons'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_ChatShortToJson(_$_ChatShort instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ChatShortToJson(_$_ChatShort instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'chat_type': instance.chatType,
       'display_name': instance.displayName,

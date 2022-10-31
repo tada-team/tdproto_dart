@@ -10,17 +10,18 @@ class CreatePersonalAccountRequest with _$CreatePersonalAccountRequest {
   const factory CreatePersonalAccountRequest({
     /// .
     @JsonKey(name: 'owner_uuid') required String ownerUuid,
-
+    
     /// .
     @JsonKey(name: 'full_name') String? fullName,
-
+    
     /// .
     @JsonKey(name: 'phone') String? phone,
-
+    
     /// .
     @JsonKey(name: 'team_uuid') required String teamUuid,
+    
+    
   }) = _CreatePersonalAccountRequest;
 
-  factory CreatePersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
-      _$CreatePersonalAccountRequestFromJson(json);
+  factory CreatePersonalAccountRequest.fromJson(Map<String, dynamic> json) => _$CreatePersonalAccountRequestFromJson(json);
 }

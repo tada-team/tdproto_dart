@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_confirm.dart';
@@ -11,34 +12,11 @@ part of 'server_confirm.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ServerConfirm _$ServerConfirmFromJson(Map<String, dynamic> json) {
   return _ServerConfirm.fromJson(json);
 }
-
-/// @nodoc
-class _$ServerConfirmTearOff {
-  const _$ServerConfirmTearOff();
-
-  _ServerConfirm call(
-      {@JsonKey(name: 'params') required ServerConfirmParams params,
-      @JsonKey(name: 'event') required String name,
-      @JsonKey(name: 'confirm_id') String? confirmId}) {
-    return _ServerConfirm(
-      params: params,
-      name: name,
-      confirmId: confirmId,
-    );
-  }
-
-  ServerConfirm fromJson(Map<String, Object> json) {
-    return ServerConfirm.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ServerConfirm = _$ServerConfirmTearOff();
 
 /// @nodoc
 mixin _$ServerConfirm {
@@ -56,13 +34,16 @@ mixin _$ServerConfirm {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerConfirmCopyWith<ServerConfirm> get copyWith => throw _privateConstructorUsedError;
+  $ServerConfirmCopyWith<ServerConfirm> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ServerConfirmCopyWith<$Res> {
-  factory $ServerConfirmCopyWith(ServerConfirm value, $Res Function(ServerConfirm) then) =
-      _$ServerConfirmCopyWithImpl<$Res>;
+  factory $ServerConfirmCopyWith(
+          ServerConfirm value, $Res Function(ServerConfirm) then) =
+      _$ServerConfirmCopyWithImpl<$Res, ServerConfirm>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'params') ServerConfirmParams params,
       @JsonKey(name: 'event') String name,
@@ -72,48 +53,55 @@ abstract class $ServerConfirmCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ServerConfirmCopyWithImpl<$Res> implements $ServerConfirmCopyWith<$Res> {
+class _$ServerConfirmCopyWithImpl<$Res, $Val extends ServerConfirm>
+    implements $ServerConfirmCopyWith<$Res> {
   _$ServerConfirmCopyWithImpl(this._value, this._then);
 
-  final ServerConfirm _value;
   // ignore: unused_field
-  final $Res Function(ServerConfirm) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? params = freezed,
-    Object? name = freezed,
+    Object? params = null,
+    Object? name = null,
     Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: params == freezed
+      params: null == params
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ServerConfirmParams,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: confirmId == freezed
+      confirmId: freezed == confirmId
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $ServerConfirmParamsCopyWith<$Res> get params {
     return $ServerConfirmParamsCopyWith<$Res>(_value.params, (value) {
-      return _then(_value.copyWith(params: value));
+      return _then(_value.copyWith(params: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$ServerConfirmCopyWith<$Res> implements $ServerConfirmCopyWith<$Res> {
-  factory _$ServerConfirmCopyWith(_ServerConfirm value, $Res Function(_ServerConfirm) then) =
-      __$ServerConfirmCopyWithImpl<$Res>;
+abstract class _$$_ServerConfirmCopyWith<$Res>
+    implements $ServerConfirmCopyWith<$Res> {
+  factory _$$_ServerConfirmCopyWith(
+          _$_ServerConfirm value, $Res Function(_$_ServerConfirm) then) =
+      __$$_ServerConfirmCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'params') ServerConfirmParams params,
       @JsonKey(name: 'event') String name,
@@ -124,30 +112,30 @@ abstract class _$ServerConfirmCopyWith<$Res> implements $ServerConfirmCopyWith<$
 }
 
 /// @nodoc
-class __$ServerConfirmCopyWithImpl<$Res> extends _$ServerConfirmCopyWithImpl<$Res>
-    implements _$ServerConfirmCopyWith<$Res> {
-  __$ServerConfirmCopyWithImpl(_ServerConfirm _value, $Res Function(_ServerConfirm) _then)
-      : super(_value, (v) => _then(v as _ServerConfirm));
+class __$$_ServerConfirmCopyWithImpl<$Res>
+    extends _$ServerConfirmCopyWithImpl<$Res, _$_ServerConfirm>
+    implements _$$_ServerConfirmCopyWith<$Res> {
+  __$$_ServerConfirmCopyWithImpl(
+      _$_ServerConfirm _value, $Res Function(_$_ServerConfirm) _then)
+      : super(_value, _then);
 
-  @override
-  _ServerConfirm get _value => super._value as _ServerConfirm;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? params = freezed,
-    Object? name = freezed,
+    Object? params = null,
+    Object? name = null,
     Object? confirmId = freezed,
   }) {
-    return _then(_ServerConfirm(
-      params: params == freezed
+    return _then(_$_ServerConfirm(
+      params: null == params
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ServerConfirmParams,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: confirmId == freezed
+      confirmId: freezed == confirmId
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -163,21 +151,21 @@ class _$_ServerConfirm implements _ServerConfirm {
       @JsonKey(name: 'event') required this.name,
       @JsonKey(name: 'confirm_id') this.confirmId});
 
-  factory _$_ServerConfirm.fromJson(Map<String, dynamic> json) => _$$_ServerConfirmFromJson(json);
-
-  @override
+  factory _$_ServerConfirm.fromJson(Map<String, dynamic> json) =>
+      _$$_ServerConfirmFromJson(json);
 
   /// .
+  @override
   @JsonKey(name: 'params')
   final ServerConfirmParams params;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'event')
   final String name;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'confirm_id')
   final String? confirmId;
 
@@ -189,55 +177,58 @@ class _$_ServerConfirm implements _ServerConfirm {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ServerConfirm &&
-            (identical(other.params, params) || const DeepCollectionEquality().equals(other.params, params)) &&
-            (identical(other.name, name) || const DeepCollectionEquality().equals(other.name, name)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_ServerConfirm &&
+            (identical(other.params, params) || other.params == params) &&
+            (identical(other.name, name) || other.name == name) &&
             (identical(other.confirmId, confirmId) ||
-                const DeepCollectionEquality().equals(other.confirmId, confirmId)));
+                other.confirmId == confirmId));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(params) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(confirmId);
 
   @JsonKey(ignore: true)
   @override
-  _$ServerConfirmCopyWith<_ServerConfirm> get copyWith =>
-      __$ServerConfirmCopyWithImpl<_ServerConfirm>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, params, name, confirmId);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_ServerConfirmCopyWith<_$_ServerConfirm> get copyWith =>
+      __$$_ServerConfirmCopyWithImpl<_$_ServerConfirm>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ServerConfirmToJson(this);
+    return _$$_ServerConfirmToJson(
+      this,
+    );
   }
 }
 
 abstract class _ServerConfirm implements ServerConfirm {
   const factory _ServerConfirm(
-      {@JsonKey(name: 'params') required ServerConfirmParams params,
-      @JsonKey(name: 'event') required String name,
-      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerConfirm;
+      {@JsonKey(name: 'params') required final ServerConfirmParams params,
+      @JsonKey(name: 'event') required final String name,
+      @JsonKey(name: 'confirm_id') final String? confirmId}) = _$_ServerConfirm;
 
-  factory _ServerConfirm.fromJson(Map<String, dynamic> json) = _$_ServerConfirm.fromJson;
+  factory _ServerConfirm.fromJson(Map<String, dynamic> json) =
+      _$_ServerConfirm.fromJson;
 
   @override
 
   /// .
   @JsonKey(name: 'params')
-  ServerConfirmParams get params => throw _privateConstructorUsedError;
+  ServerConfirmParams get params;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String? get confirmId => throw _privateConstructorUsedError;
+  String? get confirmId;
   @override
   @JsonKey(ignore: true)
-  _$ServerConfirmCopyWith<_ServerConfirm> get copyWith => throw _privateConstructorUsedError;
+  _$$_ServerConfirmCopyWith<_$_ServerConfirm> get copyWith =>
+      throw _privateConstructorUsedError;
 }

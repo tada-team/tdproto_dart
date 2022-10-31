@@ -10,14 +10,15 @@ class MeetingsGetFrequencyDescriptionParams with _$MeetingsGetFrequencyDescripti
   const factory MeetingsGetFrequencyDescriptionParams({
     /// .
     @JsonKey(name: 'frequency') required int frequency,
-
+    
     /// .
     @JsonKey(name: 'freq_days') String? freqDays,
-
+    
     /// .
     @JsonKey(name: 'repeatability_type') required String repeatabilityType,
+    
+    
   }) = _MeetingsGetFrequencyDescriptionParams;
 
-  factory MeetingsGetFrequencyDescriptionParams.fromJson(Map<String, dynamic> json) =>
-      _$MeetingsGetFrequencyDescriptionParamsFromJson(json);
+  factory MeetingsGetFrequencyDescriptionParams.fromJson(Map<String, dynamic> json) => _$MeetingsGetFrequencyDescriptionParamsFromJson(json);
 }

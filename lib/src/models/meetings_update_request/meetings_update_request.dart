@@ -10,45 +10,47 @@ class MeetingsUpdateRequest with _$MeetingsUpdateRequest {
   const factory MeetingsUpdateRequest({
     /// .
     @JsonKey(name: 'meeting_id') required String meetingId,
-
+    
     /// .
     @JsonKey(name: 'team_uuid') required String teamUuid,
-
+    
     /// .
     @JsonKey(name: 'start_at') String? startAt,
-
+    
     /// .
     @JsonKey(name: 'duration') int? duration,
-
+    
     /// .
     @JsonKey(name: 'freq') Freq? freq,
-
+    
     /// .
     @JsonKey(name: 'is_public') bool? isPublic,
-
+    
     /// .
     @JsonKey(name: 'is_outside') bool? isOutside,
-
+    
     /// .
     @JsonKey(name: 'title') String? title,
-
+    
     /// .
     @JsonKey(name: 'description') String? description,
-
+    
     /// .
     @JsonKey(name: 'add_members') List<MeetingsMemberCreateParams>? addMembers,
-
+    
     /// .
     @JsonKey(name: 'remove_members') List<String>? removeMembers,
-
+    
     /// .
     @JsonKey(name: 'notifications_enabled') bool? notificationsEnabled,
-
+    
     /// .
     @JsonKey(name: 'counters_enabled') bool? countersEnabled,
-
+    
     /// .
     @JsonKey(name: 'vcs_enabled') bool? vCSEnabled,
+    
+    
   }) = _MeetingsUpdateRequest;
 
   factory MeetingsUpdateRequest.fromJson(Map<String, dynamic> json) => _$MeetingsUpdateRequestFromJson(json);

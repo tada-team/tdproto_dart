@@ -6,7 +6,8 @@ part of 'push_device.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PushDevice _$$_PushDeviceFromJson(Map<String, dynamic> json) => _$_PushDevice(
+_$_PushDevice _$$_PushDeviceFromJson(Map<String, dynamic> json) =>
+    _$_PushDevice(
       type: json['type'] as String,
       deviceId: json['device_id'] as String,
       notificationToken: json['notification_token'] as String,
@@ -17,7 +18,8 @@ _$_PushDevice _$$_PushDeviceFromJson(Map<String, dynamic> json) => _$_PushDevice
       allowedNotifications: json['allowed_notifications'] as bool,
     );
 
-Map<String, dynamic> _$$_PushDeviceToJson(_$_PushDevice instance) => <String, dynamic>{
+Map<String, dynamic> _$$_PushDeviceToJson(_$_PushDevice instance) =>
+    <String, dynamic>{
       'type': instance.type,
       'device_id': instance.deviceId,
       'notification_token': instance.notificationToken,

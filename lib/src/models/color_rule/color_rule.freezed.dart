@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'color_rule.dart';
@@ -11,54 +12,11 @@ part of 'color_rule.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ColorRule _$ColorRuleFromJson(Map<String, dynamic> json) {
   return _ColorRule.fromJson(json);
 }
-
-/// @nodoc
-class _$ColorRuleTearOff {
-  const _$ColorRuleTearOff();
-
-  _ColorRule call(
-      {@JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'priority') required int priority,
-      @JsonKey(name: 'description') String? description,
-      @JsonKey(name: 'color_index') required int colorIndex,
-      @JsonKey(name: 'section_enabled') bool? projectEnabled,
-      @JsonKey(name: 'section') String? project,
-      @JsonKey(name: 'tags_enabled') bool? tagsEnabled,
-      @JsonKey(name: 'tags') List<String>? tags,
-      @JsonKey(name: 'task_status') String? taskStatus,
-      @JsonKey(name: 'task_importance_enabled') bool? taskImportanceEnabled,
-      @JsonKey(name: 'task_importance') int? taskImportance,
-      @JsonKey(name: 'task_urgency_enabled') bool? taskUrgencyEnabled,
-      @JsonKey(name: 'task_urgency') int? taskUrgency}) {
-    return _ColorRule(
-      uid: uid,
-      priority: priority,
-      description: description,
-      colorIndex: colorIndex,
-      projectEnabled: projectEnabled,
-      project: project,
-      tagsEnabled: tagsEnabled,
-      tags: tags,
-      taskStatus: taskStatus,
-      taskImportanceEnabled: taskImportanceEnabled,
-      taskImportance: taskImportance,
-      taskUrgencyEnabled: taskUrgencyEnabled,
-      taskUrgency: taskUrgency,
-    );
-  }
-
-  ColorRule fromJson(Map<String, Object> json) {
-    return ColorRule.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ColorRule = _$ColorRuleTearOff();
 
 /// @nodoc
 mixin _$ColorRule {
@@ -116,12 +74,15 @@ mixin _$ColorRule {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ColorRuleCopyWith<ColorRule> get copyWith => throw _privateConstructorUsedError;
+  $ColorRuleCopyWith<ColorRule> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ColorRuleCopyWith<$Res> {
-  factory $ColorRuleCopyWith(ColorRule value, $Res Function(ColorRule) then) = _$ColorRuleCopyWithImpl<$Res>;
+  factory $ColorRuleCopyWith(ColorRule value, $Res Function(ColorRule) then) =
+      _$ColorRuleCopyWithImpl<$Res, ColorRule>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'priority') int priority,
@@ -139,19 +100,22 @@ abstract class $ColorRuleCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ColorRuleCopyWithImpl<$Res> implements $ColorRuleCopyWith<$Res> {
+class _$ColorRuleCopyWithImpl<$Res, $Val extends ColorRule>
+    implements $ColorRuleCopyWith<$Res> {
   _$ColorRuleCopyWithImpl(this._value, this._then);
 
-  final ColorRule _value;
   // ignore: unused_field
-  final $Res Function(ColorRule) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? uid = freezed,
-    Object? priority = freezed,
+    Object? uid = null,
+    Object? priority = null,
     Object? description = freezed,
-    Object? colorIndex = freezed,
+    Object? colorIndex = null,
     Object? projectEnabled = freezed,
     Object? project = freezed,
     Object? tagsEnabled = freezed,
@@ -163,66 +127,69 @@ class _$ColorRuleCopyWithImpl<$Res> implements $ColorRuleCopyWith<$Res> {
     Object? taskUrgency = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed
+      uid: null == uid
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
               as String,
-      priority: priority == freezed
+      priority: null == priority
           ? _value.priority
           : priority // ignore: cast_nullable_to_non_nullable
               as int,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      colorIndex: colorIndex == freezed
+      colorIndex: null == colorIndex
           ? _value.colorIndex
           : colorIndex // ignore: cast_nullable_to_non_nullable
               as int,
-      projectEnabled: projectEnabled == freezed
+      projectEnabled: freezed == projectEnabled
           ? _value.projectEnabled
           : projectEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      project: project == freezed
+      project: freezed == project
           ? _value.project
           : project // ignore: cast_nullable_to_non_nullable
               as String?,
-      tagsEnabled: tagsEnabled == freezed
+      tagsEnabled: freezed == tagsEnabled
           ? _value.tagsEnabled
           : tagsEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      tags: tags == freezed
+      tags: freezed == tags
           ? _value.tags
           : tags // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      taskStatus: taskStatus == freezed
+      taskStatus: freezed == taskStatus
           ? _value.taskStatus
           : taskStatus // ignore: cast_nullable_to_non_nullable
               as String?,
-      taskImportanceEnabled: taskImportanceEnabled == freezed
+      taskImportanceEnabled: freezed == taskImportanceEnabled
           ? _value.taskImportanceEnabled
           : taskImportanceEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      taskImportance: taskImportance == freezed
+      taskImportance: freezed == taskImportance
           ? _value.taskImportance
           : taskImportance // ignore: cast_nullable_to_non_nullable
               as int?,
-      taskUrgencyEnabled: taskUrgencyEnabled == freezed
+      taskUrgencyEnabled: freezed == taskUrgencyEnabled
           ? _value.taskUrgencyEnabled
           : taskUrgencyEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      taskUrgency: taskUrgency == freezed
+      taskUrgency: freezed == taskUrgency
           ? _value.taskUrgency
           : taskUrgency // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ColorRuleCopyWith<$Res> implements $ColorRuleCopyWith<$Res> {
-  factory _$ColorRuleCopyWith(_ColorRule value, $Res Function(_ColorRule) then) = __$ColorRuleCopyWithImpl<$Res>;
+abstract class _$$_ColorRuleCopyWith<$Res> implements $ColorRuleCopyWith<$Res> {
+  factory _$$_ColorRuleCopyWith(
+          _$_ColorRule value, $Res Function(_$_ColorRule) then) =
+      __$$_ColorRuleCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'priority') int priority,
@@ -240,19 +207,20 @@ abstract class _$ColorRuleCopyWith<$Res> implements $ColorRuleCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$ColorRuleCopyWithImpl<$Res> extends _$ColorRuleCopyWithImpl<$Res> implements _$ColorRuleCopyWith<$Res> {
-  __$ColorRuleCopyWithImpl(_ColorRule _value, $Res Function(_ColorRule) _then)
-      : super(_value, (v) => _then(v as _ColorRule));
+class __$$_ColorRuleCopyWithImpl<$Res>
+    extends _$ColorRuleCopyWithImpl<$Res, _$_ColorRule>
+    implements _$$_ColorRuleCopyWith<$Res> {
+  __$$_ColorRuleCopyWithImpl(
+      _$_ColorRule _value, $Res Function(_$_ColorRule) _then)
+      : super(_value, _then);
 
-  @override
-  _ColorRule get _value => super._value as _ColorRule;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? uid = freezed,
-    Object? priority = freezed,
+    Object? uid = null,
+    Object? priority = null,
     Object? description = freezed,
-    Object? colorIndex = freezed,
+    Object? colorIndex = null,
     Object? projectEnabled = freezed,
     Object? project = freezed,
     Object? tagsEnabled = freezed,
@@ -263,56 +231,56 @@ class __$ColorRuleCopyWithImpl<$Res> extends _$ColorRuleCopyWithImpl<$Res> imple
     Object? taskUrgencyEnabled = freezed,
     Object? taskUrgency = freezed,
   }) {
-    return _then(_ColorRule(
-      uid: uid == freezed
+    return _then(_$_ColorRule(
+      uid: null == uid
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
               as String,
-      priority: priority == freezed
+      priority: null == priority
           ? _value.priority
           : priority // ignore: cast_nullable_to_non_nullable
               as int,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      colorIndex: colorIndex == freezed
+      colorIndex: null == colorIndex
           ? _value.colorIndex
           : colorIndex // ignore: cast_nullable_to_non_nullable
               as int,
-      projectEnabled: projectEnabled == freezed
+      projectEnabled: freezed == projectEnabled
           ? _value.projectEnabled
           : projectEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      project: project == freezed
+      project: freezed == project
           ? _value.project
           : project // ignore: cast_nullable_to_non_nullable
               as String?,
-      tagsEnabled: tagsEnabled == freezed
+      tagsEnabled: freezed == tagsEnabled
           ? _value.tagsEnabled
           : tagsEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      tags: tags == freezed
-          ? _value.tags
+      tags: freezed == tags
+          ? _value._tags
           : tags // ignore: cast_nullable_to_non_nullable
               as List<String>?,
-      taskStatus: taskStatus == freezed
+      taskStatus: freezed == taskStatus
           ? _value.taskStatus
           : taskStatus // ignore: cast_nullable_to_non_nullable
               as String?,
-      taskImportanceEnabled: taskImportanceEnabled == freezed
+      taskImportanceEnabled: freezed == taskImportanceEnabled
           ? _value.taskImportanceEnabled
           : taskImportanceEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      taskImportance: taskImportance == freezed
+      taskImportance: freezed == taskImportance
           ? _value.taskImportance
           : taskImportance // ignore: cast_nullable_to_non_nullable
               as int?,
-      taskUrgencyEnabled: taskUrgencyEnabled == freezed
+      taskUrgencyEnabled: freezed == taskUrgencyEnabled
           ? _value.taskUrgencyEnabled
           : taskUrgencyEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
-      taskUrgency: taskUrgency == freezed
+      taskUrgency: freezed == taskUrgency
           ? _value.taskUrgency
           : taskUrgency // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -331,78 +299,87 @@ class _$_ColorRule implements _ColorRule {
       @JsonKey(name: 'section_enabled') this.projectEnabled,
       @JsonKey(name: 'section') this.project,
       @JsonKey(name: 'tags_enabled') this.tagsEnabled,
-      @JsonKey(name: 'tags') this.tags,
+      @JsonKey(name: 'tags') final List<String>? tags,
       @JsonKey(name: 'task_status') this.taskStatus,
       @JsonKey(name: 'task_importance_enabled') this.taskImportanceEnabled,
       @JsonKey(name: 'task_importance') this.taskImportance,
       @JsonKey(name: 'task_urgency_enabled') this.taskUrgencyEnabled,
-      @JsonKey(name: 'task_urgency') this.taskUrgency});
+      @JsonKey(name: 'task_urgency') this.taskUrgency})
+      : _tags = tags;
 
-  factory _$_ColorRule.fromJson(Map<String, dynamic> json) => _$$_ColorRuleFromJson(json);
-
-  @override
+  factory _$_ColorRule.fromJson(Map<String, dynamic> json) =>
+      _$$_ColorRuleFromJson(json);
 
   /// Rule id.
+  @override
   @JsonKey(name: 'uid')
   final String uid;
-  @override
 
   /// Rule priority.
+  @override
   @JsonKey(name: 'priority')
   final int priority;
-  @override
 
   /// Rule description.
+  @override
   @JsonKey(name: 'description')
   final String? description;
-  @override
 
   /// Color index.
+  @override
   @JsonKey(name: 'color_index')
   final int colorIndex;
-  @override
 
   /// Project filter enabled.
+  @override
   @JsonKey(name: 'section_enabled')
   final bool? projectEnabled;
-  @override
 
   /// Project id if project filter enabled.
+  @override
   @JsonKey(name: 'section')
   final String? project;
-  @override
 
   /// Tags filter enabled.
+  @override
   @JsonKey(name: 'tags_enabled')
   final bool? tagsEnabled;
-  @override
 
   /// Tag ids if tags filter enabled.
-  @JsonKey(name: 'tags')
-  final List<String>? tags;
+  final List<String>? _tags;
+
+  /// Tag ids if tags filter enabled.
   @override
+  @JsonKey(name: 'tags')
+  List<String>? get tags {
+    final value = _tags;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   /// Task status.
+  @override
   @JsonKey(name: 'task_status')
   final String? taskStatus;
-  @override
 
   /// Task importance filter enabled.
+  @override
   @JsonKey(name: 'task_importance_enabled')
   final bool? taskImportanceEnabled;
-  @override
 
   /// Task importance if task importance filter enabled.
+  @override
   @JsonKey(name: 'task_importance')
   final int? taskImportance;
-  @override
 
   /// Task urgency filter enabled.
+  @override
   @JsonKey(name: 'task_urgency_enabled')
   final bool? taskUrgencyEnabled;
-  @override
 
   /// Task urgency if task urgency filter enabled.
+  @override
   @JsonKey(name: 'task_urgency')
   final int? taskUrgency;
 
@@ -414,142 +391,164 @@ class _$_ColorRule implements _ColorRule {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ColorRule &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.priority, priority) || const DeepCollectionEquality().equals(other.priority, priority)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_ColorRule &&
+            (identical(other.uid, uid) || other.uid == uid) &&
+            (identical(other.priority, priority) ||
+                other.priority == priority) &&
             (identical(other.description, description) ||
-                const DeepCollectionEquality().equals(other.description, description)) &&
+                other.description == description) &&
             (identical(other.colorIndex, colorIndex) ||
-                const DeepCollectionEquality().equals(other.colorIndex, colorIndex)) &&
+                other.colorIndex == colorIndex) &&
             (identical(other.projectEnabled, projectEnabled) ||
-                const DeepCollectionEquality().equals(other.projectEnabled, projectEnabled)) &&
-            (identical(other.project, project) || const DeepCollectionEquality().equals(other.project, project)) &&
+                other.projectEnabled == projectEnabled) &&
+            (identical(other.project, project) || other.project == project) &&
             (identical(other.tagsEnabled, tagsEnabled) ||
-                const DeepCollectionEquality().equals(other.tagsEnabled, tagsEnabled)) &&
-            (identical(other.tags, tags) || const DeepCollectionEquality().equals(other.tags, tags)) &&
+                other.tagsEnabled == tagsEnabled) &&
+            const DeepCollectionEquality().equals(other._tags, _tags) &&
             (identical(other.taskStatus, taskStatus) ||
-                const DeepCollectionEquality().equals(other.taskStatus, taskStatus)) &&
+                other.taskStatus == taskStatus) &&
             (identical(other.taskImportanceEnabled, taskImportanceEnabled) ||
-                const DeepCollectionEquality().equals(other.taskImportanceEnabled, taskImportanceEnabled)) &&
+                other.taskImportanceEnabled == taskImportanceEnabled) &&
             (identical(other.taskImportance, taskImportance) ||
-                const DeepCollectionEquality().equals(other.taskImportance, taskImportance)) &&
+                other.taskImportance == taskImportance) &&
             (identical(other.taskUrgencyEnabled, taskUrgencyEnabled) ||
-                const DeepCollectionEquality().equals(other.taskUrgencyEnabled, taskUrgencyEnabled)) &&
+                other.taskUrgencyEnabled == taskUrgencyEnabled) &&
             (identical(other.taskUrgency, taskUrgency) ||
-                const DeepCollectionEquality().equals(other.taskUrgency, taskUrgency)));
+                other.taskUrgency == taskUrgency));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(uid) ^
-      const DeepCollectionEquality().hash(priority) ^
-      const DeepCollectionEquality().hash(description) ^
-      const DeepCollectionEquality().hash(colorIndex) ^
-      const DeepCollectionEquality().hash(projectEnabled) ^
-      const DeepCollectionEquality().hash(project) ^
-      const DeepCollectionEquality().hash(tagsEnabled) ^
-      const DeepCollectionEquality().hash(tags) ^
-      const DeepCollectionEquality().hash(taskStatus) ^
-      const DeepCollectionEquality().hash(taskImportanceEnabled) ^
-      const DeepCollectionEquality().hash(taskImportance) ^
-      const DeepCollectionEquality().hash(taskUrgencyEnabled) ^
-      const DeepCollectionEquality().hash(taskUrgency);
 
   @JsonKey(ignore: true)
   @override
-  _$ColorRuleCopyWith<_ColorRule> get copyWith => __$ColorRuleCopyWithImpl<_ColorRule>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      uid,
+      priority,
+      description,
+      colorIndex,
+      projectEnabled,
+      project,
+      tagsEnabled,
+      const DeepCollectionEquality().hash(_tags),
+      taskStatus,
+      taskImportanceEnabled,
+      taskImportance,
+      taskUrgencyEnabled,
+      taskUrgency);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_ColorRuleCopyWith<_$_ColorRule> get copyWith =>
+      __$$_ColorRuleCopyWithImpl<_$_ColorRule>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ColorRuleToJson(this);
+    return _$$_ColorRuleToJson(
+      this,
+    );
   }
 }
 
 abstract class _ColorRule implements ColorRule {
   const factory _ColorRule(
-      {@JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'priority') required int priority,
-      @JsonKey(name: 'description') String? description,
-      @JsonKey(name: 'color_index') required int colorIndex,
-      @JsonKey(name: 'section_enabled') bool? projectEnabled,
-      @JsonKey(name: 'section') String? project,
-      @JsonKey(name: 'tags_enabled') bool? tagsEnabled,
-      @JsonKey(name: 'tags') List<String>? tags,
-      @JsonKey(name: 'task_status') String? taskStatus,
-      @JsonKey(name: 'task_importance_enabled') bool? taskImportanceEnabled,
-      @JsonKey(name: 'task_importance') int? taskImportance,
-      @JsonKey(name: 'task_urgency_enabled') bool? taskUrgencyEnabled,
-      @JsonKey(name: 'task_urgency') int? taskUrgency}) = _$_ColorRule;
+      {@JsonKey(name: 'uid')
+          required final String uid,
+      @JsonKey(name: 'priority')
+          required final int priority,
+      @JsonKey(name: 'description')
+          final String? description,
+      @JsonKey(name: 'color_index')
+          required final int colorIndex,
+      @JsonKey(name: 'section_enabled')
+          final bool? projectEnabled,
+      @JsonKey(name: 'section')
+          final String? project,
+      @JsonKey(name: 'tags_enabled')
+          final bool? tagsEnabled,
+      @JsonKey(name: 'tags')
+          final List<String>? tags,
+      @JsonKey(name: 'task_status')
+          final String? taskStatus,
+      @JsonKey(name: 'task_importance_enabled')
+          final bool? taskImportanceEnabled,
+      @JsonKey(name: 'task_importance')
+          final int? taskImportance,
+      @JsonKey(name: 'task_urgency_enabled')
+          final bool? taskUrgencyEnabled,
+      @JsonKey(name: 'task_urgency')
+          final int? taskUrgency}) = _$_ColorRule;
 
-  factory _ColorRule.fromJson(Map<String, dynamic> json) = _$_ColorRule.fromJson;
+  factory _ColorRule.fromJson(Map<String, dynamic> json) =
+      _$_ColorRule.fromJson;
 
   @override
 
   /// Rule id.
   @JsonKey(name: 'uid')
-  String get uid => throw _privateConstructorUsedError;
+  String get uid;
   @override
 
   /// Rule priority.
   @JsonKey(name: 'priority')
-  int get priority => throw _privateConstructorUsedError;
+  int get priority;
   @override
 
   /// Rule description.
   @JsonKey(name: 'description')
-  String? get description => throw _privateConstructorUsedError;
+  String? get description;
   @override
 
   /// Color index.
   @JsonKey(name: 'color_index')
-  int get colorIndex => throw _privateConstructorUsedError;
+  int get colorIndex;
   @override
 
   /// Project filter enabled.
   @JsonKey(name: 'section_enabled')
-  bool? get projectEnabled => throw _privateConstructorUsedError;
+  bool? get projectEnabled;
   @override
 
   /// Project id if project filter enabled.
   @JsonKey(name: 'section')
-  String? get project => throw _privateConstructorUsedError;
+  String? get project;
   @override
 
   /// Tags filter enabled.
   @JsonKey(name: 'tags_enabled')
-  bool? get tagsEnabled => throw _privateConstructorUsedError;
+  bool? get tagsEnabled;
   @override
 
   /// Tag ids if tags filter enabled.
   @JsonKey(name: 'tags')
-  List<String>? get tags => throw _privateConstructorUsedError;
+  List<String>? get tags;
   @override
 
   /// Task status.
   @JsonKey(name: 'task_status')
-  String? get taskStatus => throw _privateConstructorUsedError;
+  String? get taskStatus;
   @override
 
   /// Task importance filter enabled.
   @JsonKey(name: 'task_importance_enabled')
-  bool? get taskImportanceEnabled => throw _privateConstructorUsedError;
+  bool? get taskImportanceEnabled;
   @override
 
   /// Task importance if task importance filter enabled.
   @JsonKey(name: 'task_importance')
-  int? get taskImportance => throw _privateConstructorUsedError;
+  int? get taskImportance;
   @override
 
   /// Task urgency filter enabled.
   @JsonKey(name: 'task_urgency_enabled')
-  bool? get taskUrgencyEnabled => throw _privateConstructorUsedError;
+  bool? get taskUrgencyEnabled;
   @override
 
   /// Task urgency if task urgency filter enabled.
   @JsonKey(name: 'task_urgency')
-  int? get taskUrgency => throw _privateConstructorUsedError;
+  int? get taskUrgency;
   @override
   @JsonKey(ignore: true)
-  _$ColorRuleCopyWith<_ColorRule> get copyWith => throw _privateConstructorUsedError;
+  _$$_ColorRuleCopyWith<_$_ColorRule> get copyWith =>
+      throw _privateConstructorUsedError;
 }

@@ -10,12 +10,14 @@ class ServerChatLastread with _$ServerChatLastread {
   const factory ServerChatLastread({
     /// .
     @JsonKey(name: 'params') required ServerChatLastreadParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerChatLastread;
 
   factory ServerChatLastread.fromJson(Map<String, dynamic> json) => _$ServerChatLastreadFromJson(json);

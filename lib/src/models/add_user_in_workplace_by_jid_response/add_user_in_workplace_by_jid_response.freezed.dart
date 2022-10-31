@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'add_user_in_workplace_by_jid_response.dart';
@@ -11,38 +12,12 @@ part of 'add_user_in_workplace_by_jid_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-AddUserInWorkplaceByJidResponse _$AddUserInWorkplaceByJidResponseFromJson(Map<String, dynamic> json) {
+AddUserInWorkplaceByJidResponse _$AddUserInWorkplaceByJidResponseFromJson(
+    Map<String, dynamic> json) {
   return _AddUserInWorkplaceByJidResponse.fromJson(json);
 }
-
-/// @nodoc
-class _$AddUserInWorkplaceByJidResponseTearOff {
-  const _$AddUserInWorkplaceByJidResponseTearOff();
-
-  _AddUserInWorkplaceByJidResponse call(
-      {@JsonKey(name: 'uuid') required String uuid,
-      @JsonKey(name: 'full_name') String? fullName,
-      @JsonKey(name: 'phone') String? phone,
-      @JsonKey(name: 'email') String? email,
-      @JsonKey(name: 'last_activity') String? lastActivity}) {
-    return _AddUserInWorkplaceByJidResponse(
-      uuid: uuid,
-      fullName: fullName,
-      phone: phone,
-      email: email,
-      lastActivity: lastActivity,
-    );
-  }
-
-  AddUserInWorkplaceByJidResponse fromJson(Map<String, Object> json) {
-    return AddUserInWorkplaceByJidResponse.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $AddUserInWorkplaceByJidResponse = _$AddUserInWorkplaceByJidResponseTearOff();
 
 /// @nodoc
 mixin _$AddUserInWorkplaceByJidResponse {
@@ -68,15 +43,18 @@ mixin _$AddUserInWorkplaceByJidResponse {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $AddUserInWorkplaceByJidResponseCopyWith<AddUserInWorkplaceByJidResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+  $AddUserInWorkplaceByJidResponseCopyWith<AddUserInWorkplaceByJidResponse>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $AddUserInWorkplaceByJidResponseCopyWith<$Res> {
   factory $AddUserInWorkplaceByJidResponseCopyWith(
-          AddUserInWorkplaceByJidResponse value, $Res Function(AddUserInWorkplaceByJidResponse) then) =
-      _$AddUserInWorkplaceByJidResponseCopyWithImpl<$Res>;
+          AddUserInWorkplaceByJidResponse value,
+          $Res Function(AddUserInWorkplaceByJidResponse) then) =
+      _$AddUserInWorkplaceByJidResponseCopyWithImpl<$Res,
+          AddUserInWorkplaceByJidResponse>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'uuid') String uuid,
       @JsonKey(name: 'full_name') String? fullName,
@@ -86,53 +64,59 @@ abstract class $AddUserInWorkplaceByJidResponseCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AddUserInWorkplaceByJidResponseCopyWithImpl<$Res> implements $AddUserInWorkplaceByJidResponseCopyWith<$Res> {
+class _$AddUserInWorkplaceByJidResponseCopyWithImpl<$Res,
+        $Val extends AddUserInWorkplaceByJidResponse>
+    implements $AddUserInWorkplaceByJidResponseCopyWith<$Res> {
   _$AddUserInWorkplaceByJidResponseCopyWithImpl(this._value, this._then);
 
-  final AddUserInWorkplaceByJidResponse _value;
   // ignore: unused_field
-  final $Res Function(AddUserInWorkplaceByJidResponse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? uuid = freezed,
+    Object? uuid = null,
     Object? fullName = freezed,
     Object? phone = freezed,
     Object? email = freezed,
     Object? lastActivity = freezed,
   }) {
     return _then(_value.copyWith(
-      uuid: uuid == freezed
+      uuid: null == uuid
           ? _value.uuid
           : uuid // ignore: cast_nullable_to_non_nullable
               as String,
-      fullName: fullName == freezed
+      fullName: freezed == fullName
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
               as String?,
-      phone: phone == freezed
+      phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as String?,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      lastActivity: lastActivity == freezed
+      lastActivity: freezed == lastActivity
           ? _value.lastActivity
           : lastActivity // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$AddUserInWorkplaceByJidResponseCopyWith<$Res>
+abstract class _$$_AddUserInWorkplaceByJidResponseCopyWith<$Res>
     implements $AddUserInWorkplaceByJidResponseCopyWith<$Res> {
-  factory _$AddUserInWorkplaceByJidResponseCopyWith(
-          _AddUserInWorkplaceByJidResponse value, $Res Function(_AddUserInWorkplaceByJidResponse) then) =
-      __$AddUserInWorkplaceByJidResponseCopyWithImpl<$Res>;
+  factory _$$_AddUserInWorkplaceByJidResponseCopyWith(
+          _$_AddUserInWorkplaceByJidResponse value,
+          $Res Function(_$_AddUserInWorkplaceByJidResponse) then) =
+      __$$_AddUserInWorkplaceByJidResponseCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'uuid') String uuid,
       @JsonKey(name: 'full_name') String? fullName,
@@ -142,41 +126,42 @@ abstract class _$AddUserInWorkplaceByJidResponseCopyWith<$Res>
 }
 
 /// @nodoc
-class __$AddUserInWorkplaceByJidResponseCopyWithImpl<$Res> extends _$AddUserInWorkplaceByJidResponseCopyWithImpl<$Res>
-    implements _$AddUserInWorkplaceByJidResponseCopyWith<$Res> {
-  __$AddUserInWorkplaceByJidResponseCopyWithImpl(
-      _AddUserInWorkplaceByJidResponse _value, $Res Function(_AddUserInWorkplaceByJidResponse) _then)
-      : super(_value, (v) => _then(v as _AddUserInWorkplaceByJidResponse));
+class __$$_AddUserInWorkplaceByJidResponseCopyWithImpl<$Res>
+    extends _$AddUserInWorkplaceByJidResponseCopyWithImpl<$Res,
+        _$_AddUserInWorkplaceByJidResponse>
+    implements _$$_AddUserInWorkplaceByJidResponseCopyWith<$Res> {
+  __$$_AddUserInWorkplaceByJidResponseCopyWithImpl(
+      _$_AddUserInWorkplaceByJidResponse _value,
+      $Res Function(_$_AddUserInWorkplaceByJidResponse) _then)
+      : super(_value, _then);
 
-  @override
-  _AddUserInWorkplaceByJidResponse get _value => super._value as _AddUserInWorkplaceByJidResponse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? uuid = freezed,
+    Object? uuid = null,
     Object? fullName = freezed,
     Object? phone = freezed,
     Object? email = freezed,
     Object? lastActivity = freezed,
   }) {
-    return _then(_AddUserInWorkplaceByJidResponse(
-      uuid: uuid == freezed
+    return _then(_$_AddUserInWorkplaceByJidResponse(
+      uuid: null == uuid
           ? _value.uuid
           : uuid // ignore: cast_nullable_to_non_nullable
               as String,
-      fullName: fullName == freezed
+      fullName: freezed == fullName
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
               as String?,
-      phone: phone == freezed
+      phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as String?,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      lastActivity: lastActivity == freezed
+      lastActivity: freezed == lastActivity
           ? _value.lastActivity
           : lastActivity // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -186,7 +171,8 @@ class __$AddUserInWorkplaceByJidResponseCopyWithImpl<$Res> extends _$AddUserInWo
 
 /// @nodoc
 @JsonSerializable()
-class _$_AddUserInWorkplaceByJidResponse implements _AddUserInWorkplaceByJidResponse {
+class _$_AddUserInWorkplaceByJidResponse
+    implements _AddUserInWorkplaceByJidResponse {
   const _$_AddUserInWorkplaceByJidResponse(
       {@JsonKey(name: 'uuid') required this.uuid,
       @JsonKey(name: 'full_name') this.fullName,
@@ -194,32 +180,32 @@ class _$_AddUserInWorkplaceByJidResponse implements _AddUserInWorkplaceByJidResp
       @JsonKey(name: 'email') this.email,
       @JsonKey(name: 'last_activity') this.lastActivity});
 
-  factory _$_AddUserInWorkplaceByJidResponse.fromJson(Map<String, dynamic> json) =>
+  factory _$_AddUserInWorkplaceByJidResponse.fromJson(
+          Map<String, dynamic> json) =>
       _$$_AddUserInWorkplaceByJidResponseFromJson(json);
 
-  @override
-
   /// .
+  @override
   @JsonKey(name: 'uuid')
   final String uuid;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'full_name')
   final String? fullName;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'phone')
   final String? phone;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'email')
   final String? email;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'last_activity')
   final String? lastActivity;
 
@@ -231,42 +217,47 @@ class _$_AddUserInWorkplaceByJidResponse implements _AddUserInWorkplaceByJidResp
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _AddUserInWorkplaceByJidResponse &&
-            (identical(other.uuid, uuid) || const DeepCollectionEquality().equals(other.uuid, uuid)) &&
-            (identical(other.fullName, fullName) || const DeepCollectionEquality().equals(other.fullName, fullName)) &&
-            (identical(other.phone, phone) || const DeepCollectionEquality().equals(other.phone, phone)) &&
-            (identical(other.email, email) || const DeepCollectionEquality().equals(other.email, email)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_AddUserInWorkplaceByJidResponse &&
+            (identical(other.uuid, uuid) || other.uuid == uuid) &&
+            (identical(other.fullName, fullName) ||
+                other.fullName == fullName) &&
+            (identical(other.phone, phone) || other.phone == phone) &&
+            (identical(other.email, email) || other.email == email) &&
             (identical(other.lastActivity, lastActivity) ||
-                const DeepCollectionEquality().equals(other.lastActivity, lastActivity)));
+                other.lastActivity == lastActivity));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(uuid) ^
-      const DeepCollectionEquality().hash(fullName) ^
-      const DeepCollectionEquality().hash(phone) ^
-      const DeepCollectionEquality().hash(email) ^
-      const DeepCollectionEquality().hash(lastActivity);
 
   @JsonKey(ignore: true)
   @override
-  _$AddUserInWorkplaceByJidResponseCopyWith<_AddUserInWorkplaceByJidResponse> get copyWith =>
-      __$AddUserInWorkplaceByJidResponseCopyWithImpl<_AddUserInWorkplaceByJidResponse>(this, _$identity);
+  int get hashCode =>
+      Object.hash(runtimeType, uuid, fullName, phone, email, lastActivity);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_AddUserInWorkplaceByJidResponseCopyWith<
+          _$_AddUserInWorkplaceByJidResponse>
+      get copyWith => __$$_AddUserInWorkplaceByJidResponseCopyWithImpl<
+          _$_AddUserInWorkplaceByJidResponse>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AddUserInWorkplaceByJidResponseToJson(this);
+    return _$$_AddUserInWorkplaceByJidResponseToJson(
+      this,
+    );
   }
 }
 
-abstract class _AddUserInWorkplaceByJidResponse implements AddUserInWorkplaceByJidResponse {
+abstract class _AddUserInWorkplaceByJidResponse
+    implements AddUserInWorkplaceByJidResponse {
   const factory _AddUserInWorkplaceByJidResponse(
-      {@JsonKey(name: 'uuid') required String uuid,
-      @JsonKey(name: 'full_name') String? fullName,
-      @JsonKey(name: 'phone') String? phone,
-      @JsonKey(name: 'email') String? email,
-      @JsonKey(name: 'last_activity') String? lastActivity}) = _$_AddUserInWorkplaceByJidResponse;
+          {@JsonKey(name: 'uuid') required final String uuid,
+          @JsonKey(name: 'full_name') final String? fullName,
+          @JsonKey(name: 'phone') final String? phone,
+          @JsonKey(name: 'email') final String? email,
+          @JsonKey(name: 'last_activity') final String? lastActivity}) =
+      _$_AddUserInWorkplaceByJidResponse;
 
   factory _AddUserInWorkplaceByJidResponse.fromJson(Map<String, dynamic> json) =
       _$_AddUserInWorkplaceByJidResponse.fromJson;
@@ -275,29 +266,30 @@ abstract class _AddUserInWorkplaceByJidResponse implements AddUserInWorkplaceByJ
 
   /// .
   @JsonKey(name: 'uuid')
-  String get uuid => throw _privateConstructorUsedError;
+  String get uuid;
   @override
 
   /// .
   @JsonKey(name: 'full_name')
-  String? get fullName => throw _privateConstructorUsedError;
+  String? get fullName;
   @override
 
   /// .
   @JsonKey(name: 'phone')
-  String? get phone => throw _privateConstructorUsedError;
+  String? get phone;
   @override
 
   /// .
   @JsonKey(name: 'email')
-  String? get email => throw _privateConstructorUsedError;
+  String? get email;
   @override
 
   /// .
   @JsonKey(name: 'last_activity')
-  String? get lastActivity => throw _privateConstructorUsedError;
+  String? get lastActivity;
   @override
   @JsonKey(ignore: true)
-  _$AddUserInWorkplaceByJidResponseCopyWith<_AddUserInWorkplaceByJidResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$_AddUserInWorkplaceByJidResponseCopyWith<
+          _$_AddUserInWorkplaceByJidResponse>
+      get copyWith => throw _privateConstructorUsedError;
 }

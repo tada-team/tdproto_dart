@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_chat_draft_params.dart';
@@ -11,36 +12,12 @@ part of 'server_chat_draft_params.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-ServerChatDraftParams _$ServerChatDraftParamsFromJson(Map<String, dynamic> json) {
+ServerChatDraftParams _$ServerChatDraftParamsFromJson(
+    Map<String, dynamic> json) {
   return _ServerChatDraftParams.fromJson(json);
 }
-
-/// @nodoc
-class _$ServerChatDraftParamsTearOff {
-  const _$ServerChatDraftParamsTearOff();
-
-  _ServerChatDraftParams call(
-      {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'draft') required String draft,
-      @JsonKey(name: 'draft_gentime') required int draftGentime,
-      @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') required int draftNum}) {
-    return _ServerChatDraftParams(
-      jid: jid,
-      draft: draft,
-      draftGentime: draftGentime,
-      draftNum: draftNum,
-    );
-  }
-
-  ServerChatDraftParams fromJson(Map<String, Object> json) {
-    return ServerChatDraftParams.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ServerChatDraftParams = _$ServerChatDraftParamsTearOff();
 
 /// @nodoc
 mixin _$ServerChatDraftParams {
@@ -63,13 +40,16 @@ mixin _$ServerChatDraftParams {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ServerChatDraftParamsCopyWith<ServerChatDraftParams> get copyWith => throw _privateConstructorUsedError;
+  $ServerChatDraftParamsCopyWith<ServerChatDraftParams> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ServerChatDraftParamsCopyWith<$Res> {
-  factory $ServerChatDraftParamsCopyWith(ServerChatDraftParams value, $Res Function(ServerChatDraftParams) then) =
-      _$ServerChatDraftParamsCopyWithImpl<$Res>;
+  factory $ServerChatDraftParamsCopyWith(ServerChatDraftParams value,
+          $Res Function(ServerChatDraftParams) then) =
+      _$ServerChatDraftParamsCopyWithImpl<$Res, ServerChatDraftParams>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'draft') String draft,
@@ -78,46 +58,53 @@ abstract class $ServerChatDraftParamsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ServerChatDraftParamsCopyWithImpl<$Res> implements $ServerChatDraftParamsCopyWith<$Res> {
+class _$ServerChatDraftParamsCopyWithImpl<$Res,
+        $Val extends ServerChatDraftParams>
+    implements $ServerChatDraftParamsCopyWith<$Res> {
   _$ServerChatDraftParamsCopyWithImpl(this._value, this._then);
 
-  final ServerChatDraftParams _value;
   // ignore: unused_field
-  final $Res Function(ServerChatDraftParams) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? jid = freezed,
-    Object? draft = freezed,
-    Object? draftGentime = freezed,
-    Object? draftNum = freezed,
+    Object? jid = null,
+    Object? draft = null,
+    Object? draftGentime = null,
+    Object? draftNum = null,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed
+      jid: null == jid
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      draft: draft == freezed
+      draft: null == draft
           ? _value.draft
           : draft // ignore: cast_nullable_to_non_nullable
               as String,
-      draftGentime: draftGentime == freezed
+      draftGentime: null == draftGentime
           ? _value.draftGentime
           : draftGentime // ignore: cast_nullable_to_non_nullable
               as int,
-      draftNum: draftNum == freezed
+      draftNum: null == draftNum
           ? _value.draftNum
           : draftNum // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ServerChatDraftParamsCopyWith<$Res> implements $ServerChatDraftParamsCopyWith<$Res> {
-  factory _$ServerChatDraftParamsCopyWith(_ServerChatDraftParams value, $Res Function(_ServerChatDraftParams) then) =
-      __$ServerChatDraftParamsCopyWithImpl<$Res>;
+abstract class _$$_ServerChatDraftParamsCopyWith<$Res>
+    implements $ServerChatDraftParamsCopyWith<$Res> {
+  factory _$$_ServerChatDraftParamsCopyWith(_$_ServerChatDraftParams value,
+          $Res Function(_$_ServerChatDraftParams) then) =
+      __$$_ServerChatDraftParamsCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'draft') String draft,
@@ -126,35 +113,35 @@ abstract class _$ServerChatDraftParamsCopyWith<$Res> implements $ServerChatDraft
 }
 
 /// @nodoc
-class __$ServerChatDraftParamsCopyWithImpl<$Res> extends _$ServerChatDraftParamsCopyWithImpl<$Res>
-    implements _$ServerChatDraftParamsCopyWith<$Res> {
-  __$ServerChatDraftParamsCopyWithImpl(_ServerChatDraftParams _value, $Res Function(_ServerChatDraftParams) _then)
-      : super(_value, (v) => _then(v as _ServerChatDraftParams));
+class __$$_ServerChatDraftParamsCopyWithImpl<$Res>
+    extends _$ServerChatDraftParamsCopyWithImpl<$Res, _$_ServerChatDraftParams>
+    implements _$$_ServerChatDraftParamsCopyWith<$Res> {
+  __$$_ServerChatDraftParamsCopyWithImpl(_$_ServerChatDraftParams _value,
+      $Res Function(_$_ServerChatDraftParams) _then)
+      : super(_value, _then);
 
-  @override
-  _ServerChatDraftParams get _value => super._value as _ServerChatDraftParams;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? jid = freezed,
-    Object? draft = freezed,
-    Object? draftGentime = freezed,
-    Object? draftNum = freezed,
+    Object? jid = null,
+    Object? draft = null,
+    Object? draftGentime = null,
+    Object? draftNum = null,
   }) {
-    return _then(_ServerChatDraftParams(
-      jid: jid == freezed
+    return _then(_$_ServerChatDraftParams(
+      jid: null == jid
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      draft: draft == freezed
+      draft: null == draft
           ? _value.draft
           : draft // ignore: cast_nullable_to_non_nullable
               as String,
-      draftGentime: draftGentime == freezed
+      draftGentime: null == draftGentime
           ? _value.draftGentime
           : draftGentime // ignore: cast_nullable_to_non_nullable
               as int,
-      draftNum: draftNum == freezed
+      draftNum: null == draftNum
           ? _value.draftNum
           : draftNum // ignore: cast_nullable_to_non_nullable
               as int,
@@ -166,31 +153,36 @@ class __$ServerChatDraftParamsCopyWithImpl<$Res> extends _$ServerChatDraftParams
 @JsonSerializable()
 class _$_ServerChatDraftParams implements _ServerChatDraftParams {
   const _$_ServerChatDraftParams(
-      {@JsonKey(name: 'jid') required this.jid,
-      @JsonKey(name: 'draft') required this.draft,
-      @JsonKey(name: 'draft_gentime') required this.draftGentime,
-      @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') required this.draftNum});
+      {@JsonKey(name: 'jid')
+          required this.jid,
+      @JsonKey(name: 'draft')
+          required this.draft,
+      @JsonKey(name: 'draft_gentime')
+          required this.draftGentime,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'draft_num')
+          required this.draftNum});
 
-  factory _$_ServerChatDraftParams.fromJson(Map<String, dynamic> json) => _$$_ServerChatDraftParamsFromJson(json);
-
-  @override
+  factory _$_ServerChatDraftParams.fromJson(Map<String, dynamic> json) =>
+      _$$_ServerChatDraftParamsFromJson(json);
 
   /// Chat or contact id.
+  @override
   @JsonKey(name: 'jid')
   final String jid;
-  @override
 
   /// Draft text.
+  @override
   @JsonKey(name: 'draft')
   final String draft;
-  @override
 
   /// Draft version.
+  @override
   @JsonKey(name: 'draft_gentime')
   final int draftGentime;
-  @override
 
   /// Deprecated.
+  @override
   @Deprecated('Deprecated.')
   @JsonKey(name: 'draft_num')
   final int draftNum;
@@ -203,64 +195,74 @@ class _$_ServerChatDraftParams implements _ServerChatDraftParams {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ServerChatDraftParams &&
-            (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
-            (identical(other.draft, draft) || const DeepCollectionEquality().equals(other.draft, draft)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_ServerChatDraftParams &&
+            (identical(other.jid, jid) || other.jid == jid) &&
+            (identical(other.draft, draft) || other.draft == draft) &&
             (identical(other.draftGentime, draftGentime) ||
-                const DeepCollectionEquality().equals(other.draftGentime, draftGentime)) &&
-            (identical(other.draftNum, draftNum) || const DeepCollectionEquality().equals(other.draftNum, draftNum)));
+                other.draftGentime == draftGentime) &&
+            (identical(other.draftNum, draftNum) ||
+                other.draftNum == draftNum));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(jid) ^
-      const DeepCollectionEquality().hash(draft) ^
-      const DeepCollectionEquality().hash(draftGentime) ^
-      const DeepCollectionEquality().hash(draftNum);
 
   @JsonKey(ignore: true)
   @override
-  _$ServerChatDraftParamsCopyWith<_ServerChatDraftParams> get copyWith =>
-      __$ServerChatDraftParamsCopyWithImpl<_ServerChatDraftParams>(this, _$identity);
+  int get hashCode =>
+      Object.hash(runtimeType, jid, draft, draftGentime, draftNum);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_ServerChatDraftParamsCopyWith<_$_ServerChatDraftParams> get copyWith =>
+      __$$_ServerChatDraftParamsCopyWithImpl<_$_ServerChatDraftParams>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ServerChatDraftParamsToJson(this);
+    return _$$_ServerChatDraftParamsToJson(
+      this,
+    );
   }
 }
 
 abstract class _ServerChatDraftParams implements ServerChatDraftParams {
   const factory _ServerChatDraftParams(
-      {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'draft') required String draft,
-      @JsonKey(name: 'draft_gentime') required int draftGentime,
-      @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') required int draftNum}) = _$_ServerChatDraftParams;
+      {@JsonKey(name: 'jid')
+          required final String jid,
+      @JsonKey(name: 'draft')
+          required final String draft,
+      @JsonKey(name: 'draft_gentime')
+          required final int draftGentime,
+      @Deprecated('Deprecated.')
+      @JsonKey(name: 'draft_num')
+          required final int draftNum}) = _$_ServerChatDraftParams;
 
-  factory _ServerChatDraftParams.fromJson(Map<String, dynamic> json) = _$_ServerChatDraftParams.fromJson;
+  factory _ServerChatDraftParams.fromJson(Map<String, dynamic> json) =
+      _$_ServerChatDraftParams.fromJson;
 
   @override
 
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid => throw _privateConstructorUsedError;
+  String get jid;
   @override
 
   /// Draft text.
   @JsonKey(name: 'draft')
-  String get draft => throw _privateConstructorUsedError;
+  String get draft;
   @override
 
   /// Draft version.
   @JsonKey(name: 'draft_gentime')
-  int get draftGentime => throw _privateConstructorUsedError;
+  int get draftGentime;
   @override
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'draft_num')
-  int get draftNum => throw _privateConstructorUsedError;
+  int get draftNum;
   @override
   @JsonKey(ignore: true)
-  _$ServerChatDraftParamsCopyWith<_ServerChatDraftParams> get copyWith => throw _privateConstructorUsedError;
+  _$$_ServerChatDraftParamsCopyWith<_$_ServerChatDraftParams> get copyWith =>
+      throw _privateConstructorUsedError;
 }

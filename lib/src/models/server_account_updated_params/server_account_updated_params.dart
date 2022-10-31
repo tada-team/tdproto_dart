@@ -10,6 +10,8 @@ class ServerAccountUpdatedParams with _$ServerAccountUpdatedParams {
   const factory ServerAccountUpdatedParams({
     /// Personal Account info.
     @JsonKey(name: 'account') required PersonalAccountBilling account,
+    
+    
   }) = _ServerAccountUpdatedParams;
 
   factory ServerAccountUpdatedParams.fromJson(Map<String, dynamic> json) => _$ServerAccountUpdatedParamsFromJson(json);

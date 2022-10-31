@@ -10,12 +10,14 @@ class DeletedTeam with _$DeletedTeam {
   const factory DeletedTeam({
     /// Team id.
     @JsonKey(name: 'uid') required String uid,
-
+    
     /// Team deleted.
     @JsonKey(name: 'is_archive') required bool isArchive,
-
+    
     /// Object version.
     @JsonKey(name: 'gentime') required int gentime,
+    
+    
   }) = _DeletedTeam;
 
   factory DeletedTeam.fromJson(Map<String, dynamic> json) => _$DeletedTeamFromJson(json);

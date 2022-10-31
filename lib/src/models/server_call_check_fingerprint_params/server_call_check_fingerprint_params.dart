@@ -10,8 +10,9 @@ class ServerCallCheckFingerprintParams with _$ServerCallCheckFingerprintParams {
   const factory ServerCallCheckFingerprintParams({
     /// .
     @JsonKey(name: 'fingerprint') required String fingerprint,
+    
+    
   }) = _ServerCallCheckFingerprintParams;
 
-  factory ServerCallCheckFingerprintParams.fromJson(Map<String, dynamic> json) =>
-      _$ServerCallCheckFingerprintParamsFromJson(json);
+  factory ServerCallCheckFingerprintParams.fromJson(Map<String, dynamic> json) => _$ServerCallCheckFingerprintParamsFromJson(json);
 }

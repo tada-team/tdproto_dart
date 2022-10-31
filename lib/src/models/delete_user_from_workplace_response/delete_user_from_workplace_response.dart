@@ -10,8 +10,9 @@ class DeleteUserFromWorkplaceResponse with _$DeleteUserFromWorkplaceResponse {
   const factory DeleteUserFromWorkplaceResponse({
     /// .
     @JsonKey(name: 'success') bool? success,
+    
+    
   }) = _DeleteUserFromWorkplaceResponse;
 
-  factory DeleteUserFromWorkplaceResponse.fromJson(Map<String, dynamic> json) =>
-      _$DeleteUserFromWorkplaceResponseFromJson(json);
+  factory DeleteUserFromWorkplaceResponse.fromJson(Map<String, dynamic> json) => _$DeleteUserFromWorkplaceResponseFromJson(json);
 }

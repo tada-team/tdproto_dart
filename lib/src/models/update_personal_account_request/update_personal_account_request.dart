@@ -10,11 +10,12 @@ class UpdatePersonalAccountRequest with _$UpdatePersonalAccountRequest {
   const factory UpdatePersonalAccountRequest({
     /// .
     @JsonKey(name: 'full_name') String? fullName,
-
+    
     /// .
     @JsonKey(name: 'phone') String? phone,
+    
+    
   }) = _UpdatePersonalAccountRequest;
 
-  factory UpdatePersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
-      _$UpdatePersonalAccountRequestFromJson(json);
+  factory UpdatePersonalAccountRequest.fromJson(Map<String, dynamic> json) => _$UpdatePersonalAccountRequestFromJson(json);
 }

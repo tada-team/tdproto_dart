@@ -10,12 +10,14 @@ class ClientConfirm with _$ClientConfirm {
   const factory ClientConfirm({
     /// .
     @JsonKey(name: 'params') required ClientConfirmParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ClientConfirm;
 
   factory ClientConfirm.fromJson(Map<String, dynamic> json) => _$ClientConfirmFromJson(json);

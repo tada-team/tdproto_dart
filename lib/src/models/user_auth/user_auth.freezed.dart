@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'user_auth.dart';
@@ -11,48 +12,11 @@ part of 'user_auth.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 UserAuth _$UserAuthFromJson(Map<String, dynamic> json) {
   return _UserAuth.fromJson(json);
 }
-
-/// @nodoc
-class _$UserAuthTearOff {
-  const _$UserAuthTearOff();
-
-  _UserAuth call(
-      {@JsonKey(name: 'created') required String created,
-      @JsonKey(name: 'last_access') String? lastAccess,
-      @JsonKey(name: '_age') int? debugAge,
-      @JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'kind') required String kind,
-      @JsonKey(name: 'addr') String? addr,
-      @JsonKey(name: 'user_agent') String? useragent,
-      @JsonKey(name: 'country') String? country,
-      @JsonKey(name: 'region') String? region,
-      @JsonKey(name: 'device') PushDevice? device}) {
-    return _UserAuth(
-      created: created,
-      lastAccess: lastAccess,
-      debugAge: debugAge,
-      uid: uid,
-      kind: kind,
-      addr: addr,
-      useragent: useragent,
-      country: country,
-      region: region,
-      device: device,
-    );
-  }
-
-  UserAuth fromJson(Map<String, Object> json) {
-    return UserAuth.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UserAuth = _$UserAuthTearOff();
 
 /// @nodoc
 mixin _$UserAuth {
@@ -98,12 +62,15 @@ mixin _$UserAuth {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $UserAuthCopyWith<UserAuth> get copyWith => throw _privateConstructorUsedError;
+  $UserAuthCopyWith<UserAuth> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $UserAuthCopyWith<$Res> {
-  factory $UserAuthCopyWith(UserAuth value, $Res Function(UserAuth) then) = _$UserAuthCopyWithImpl<$Res>;
+  factory $UserAuthCopyWith(UserAuth value, $Res Function(UserAuth) then) =
+      _$UserAuthCopyWithImpl<$Res, UserAuth>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'created') String created,
       @JsonKey(name: 'last_access') String? lastAccess,
@@ -120,20 +87,23 @@ abstract class $UserAuthCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UserAuthCopyWithImpl<$Res> implements $UserAuthCopyWith<$Res> {
+class _$UserAuthCopyWithImpl<$Res, $Val extends UserAuth>
+    implements $UserAuthCopyWith<$Res> {
   _$UserAuthCopyWithImpl(this._value, this._then);
 
-  final UserAuth _value;
   // ignore: unused_field
-  final $Res Function(UserAuth) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? created = freezed,
+    Object? created = null,
     Object? lastAccess = freezed,
     Object? debugAge = freezed,
-    Object? uid = freezed,
-    Object? kind = freezed,
+    Object? uid = null,
+    Object? kind = null,
     Object? addr = freezed,
     Object? useragent = freezed,
     Object? country = freezed,
@@ -141,65 +111,69 @@ class _$UserAuthCopyWithImpl<$Res> implements $UserAuthCopyWith<$Res> {
     Object? device = freezed,
   }) {
     return _then(_value.copyWith(
-      created: created == freezed
+      created: null == created
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
               as String,
-      lastAccess: lastAccess == freezed
+      lastAccess: freezed == lastAccess
           ? _value.lastAccess
           : lastAccess // ignore: cast_nullable_to_non_nullable
               as String?,
-      debugAge: debugAge == freezed
+      debugAge: freezed == debugAge
           ? _value.debugAge
           : debugAge // ignore: cast_nullable_to_non_nullable
               as int?,
-      uid: uid == freezed
+      uid: null == uid
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
               as String,
-      kind: kind == freezed
+      kind: null == kind
           ? _value.kind
           : kind // ignore: cast_nullable_to_non_nullable
               as String,
-      addr: addr == freezed
+      addr: freezed == addr
           ? _value.addr
           : addr // ignore: cast_nullable_to_non_nullable
               as String?,
-      useragent: useragent == freezed
+      useragent: freezed == useragent
           ? _value.useragent
           : useragent // ignore: cast_nullable_to_non_nullable
               as String?,
-      country: country == freezed
+      country: freezed == country
           ? _value.country
           : country // ignore: cast_nullable_to_non_nullable
               as String?,
-      region: region == freezed
+      region: freezed == region
           ? _value.region
           : region // ignore: cast_nullable_to_non_nullable
               as String?,
-      device: device == freezed
+      device: freezed == device
           ? _value.device
           : device // ignore: cast_nullable_to_non_nullable
               as PushDevice?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PushDeviceCopyWith<$Res>? get device {
     if (_value.device == null) {
       return null;
     }
 
     return $PushDeviceCopyWith<$Res>(_value.device!, (value) {
-      return _then(_value.copyWith(device: value));
+      return _then(_value.copyWith(device: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UserAuthCopyWith<$Res> implements $UserAuthCopyWith<$Res> {
-  factory _$UserAuthCopyWith(_UserAuth value, $Res Function(_UserAuth) then) = __$UserAuthCopyWithImpl<$Res>;
+abstract class _$$_UserAuthCopyWith<$Res> implements $UserAuthCopyWith<$Res> {
+  factory _$$_UserAuthCopyWith(
+          _$_UserAuth value, $Res Function(_$_UserAuth) then) =
+      __$$_UserAuthCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'created') String created,
       @JsonKey(name: 'last_access') String? lastAccess,
@@ -217,64 +191,65 @@ abstract class _$UserAuthCopyWith<$Res> implements $UserAuthCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$UserAuthCopyWithImpl<$Res> extends _$UserAuthCopyWithImpl<$Res> implements _$UserAuthCopyWith<$Res> {
-  __$UserAuthCopyWithImpl(_UserAuth _value, $Res Function(_UserAuth) _then)
-      : super(_value, (v) => _then(v as _UserAuth));
+class __$$_UserAuthCopyWithImpl<$Res>
+    extends _$UserAuthCopyWithImpl<$Res, _$_UserAuth>
+    implements _$$_UserAuthCopyWith<$Res> {
+  __$$_UserAuthCopyWithImpl(
+      _$_UserAuth _value, $Res Function(_$_UserAuth) _then)
+      : super(_value, _then);
 
-  @override
-  _UserAuth get _value => super._value as _UserAuth;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? created = freezed,
+    Object? created = null,
     Object? lastAccess = freezed,
     Object? debugAge = freezed,
-    Object? uid = freezed,
-    Object? kind = freezed,
+    Object? uid = null,
+    Object? kind = null,
     Object? addr = freezed,
     Object? useragent = freezed,
     Object? country = freezed,
     Object? region = freezed,
     Object? device = freezed,
   }) {
-    return _then(_UserAuth(
-      created: created == freezed
+    return _then(_$_UserAuth(
+      created: null == created
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
               as String,
-      lastAccess: lastAccess == freezed
+      lastAccess: freezed == lastAccess
           ? _value.lastAccess
           : lastAccess // ignore: cast_nullable_to_non_nullable
               as String?,
-      debugAge: debugAge == freezed
+      debugAge: freezed == debugAge
           ? _value.debugAge
           : debugAge // ignore: cast_nullable_to_non_nullable
               as int?,
-      uid: uid == freezed
+      uid: null == uid
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
               as String,
-      kind: kind == freezed
+      kind: null == kind
           ? _value.kind
           : kind // ignore: cast_nullable_to_non_nullable
               as String,
-      addr: addr == freezed
+      addr: freezed == addr
           ? _value.addr
           : addr // ignore: cast_nullable_to_non_nullable
               as String?,
-      useragent: useragent == freezed
+      useragent: freezed == useragent
           ? _value.useragent
           : useragent // ignore: cast_nullable_to_non_nullable
               as String?,
-      country: country == freezed
+      country: freezed == country
           ? _value.country
           : country // ignore: cast_nullable_to_non_nullable
               as String?,
-      region: region == freezed
+      region: freezed == region
           ? _value.region
           : region // ignore: cast_nullable_to_non_nullable
               as String?,
-      device: device == freezed
+      device: freezed == device
           ? _value.device
           : device // ignore: cast_nullable_to_non_nullable
               as PushDevice?,
@@ -297,56 +272,56 @@ class _$_UserAuth implements _UserAuth {
       @JsonKey(name: 'region') this.region,
       @JsonKey(name: 'device') this.device});
 
-  factory _$_UserAuth.fromJson(Map<String, dynamic> json) => _$$_UserAuthFromJson(json);
-
-  @override
+  factory _$_UserAuth.fromJson(Map<String, dynamic> json) =>
+      _$$_UserAuthFromJson(json);
 
   /// .
+  @override
   @JsonKey(name: 'created')
   final String created;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'last_access')
   final String? lastAccess;
-  @override
 
   /// .
+  @override
   @JsonKey(name: '_age')
   final int? debugAge;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'uid')
   final String uid;
-  @override
 
   /// type of auth.
+  @override
   @JsonKey(name: 'kind')
   final String kind;
-  @override
 
   /// ip address.
+  @override
   @JsonKey(name: 'addr')
   final String? addr;
-  @override
 
   /// info about useragent.
+  @override
   @JsonKey(name: 'user_agent')
   final String? useragent;
-  @override
 
   /// name of country.
+  @override
   @JsonKey(name: 'country')
   final String? country;
-  @override
 
   /// name of region.
+  @override
   @JsonKey(name: 'region')
   final String? region;
-  @override
 
   /// info about device (struct).
+  @override
   @JsonKey(name: 'device')
   final PushDevice? device;
 
@@ -358,57 +333,54 @@ class _$_UserAuth implements _UserAuth {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _UserAuth &&
-            (identical(other.created, created) || const DeepCollectionEquality().equals(other.created, created)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_UserAuth &&
+            (identical(other.created, created) || other.created == created) &&
             (identical(other.lastAccess, lastAccess) ||
-                const DeepCollectionEquality().equals(other.lastAccess, lastAccess)) &&
-            (identical(other.debugAge, debugAge) || const DeepCollectionEquality().equals(other.debugAge, debugAge)) &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.kind, kind) || const DeepCollectionEquality().equals(other.kind, kind)) &&
-            (identical(other.addr, addr) || const DeepCollectionEquality().equals(other.addr, addr)) &&
+                other.lastAccess == lastAccess) &&
+            (identical(other.debugAge, debugAge) ||
+                other.debugAge == debugAge) &&
+            (identical(other.uid, uid) || other.uid == uid) &&
+            (identical(other.kind, kind) || other.kind == kind) &&
+            (identical(other.addr, addr) || other.addr == addr) &&
             (identical(other.useragent, useragent) ||
-                const DeepCollectionEquality().equals(other.useragent, useragent)) &&
-            (identical(other.country, country) || const DeepCollectionEquality().equals(other.country, country)) &&
-            (identical(other.region, region) || const DeepCollectionEquality().equals(other.region, region)) &&
-            (identical(other.device, device) || const DeepCollectionEquality().equals(other.device, device)));
+                other.useragent == useragent) &&
+            (identical(other.country, country) || other.country == country) &&
+            (identical(other.region, region) || other.region == region) &&
+            (identical(other.device, device) || other.device == device));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(created) ^
-      const DeepCollectionEquality().hash(lastAccess) ^
-      const DeepCollectionEquality().hash(debugAge) ^
-      const DeepCollectionEquality().hash(uid) ^
-      const DeepCollectionEquality().hash(kind) ^
-      const DeepCollectionEquality().hash(addr) ^
-      const DeepCollectionEquality().hash(useragent) ^
-      const DeepCollectionEquality().hash(country) ^
-      const DeepCollectionEquality().hash(region) ^
-      const DeepCollectionEquality().hash(device);
 
   @JsonKey(ignore: true)
   @override
-  _$UserAuthCopyWith<_UserAuth> get copyWith => __$UserAuthCopyWithImpl<_UserAuth>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, created, lastAccess, debugAge,
+      uid, kind, addr, useragent, country, region, device);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_UserAuthCopyWith<_$_UserAuth> get copyWith =>
+      __$$_UserAuthCopyWithImpl<_$_UserAuth>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UserAuthToJson(this);
+    return _$$_UserAuthToJson(
+      this,
+    );
   }
 }
 
 abstract class _UserAuth implements UserAuth {
   const factory _UserAuth(
-      {@JsonKey(name: 'created') required String created,
-      @JsonKey(name: 'last_access') String? lastAccess,
-      @JsonKey(name: '_age') int? debugAge,
-      @JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'kind') required String kind,
-      @JsonKey(name: 'addr') String? addr,
-      @JsonKey(name: 'user_agent') String? useragent,
-      @JsonKey(name: 'country') String? country,
-      @JsonKey(name: 'region') String? region,
-      @JsonKey(name: 'device') PushDevice? device}) = _$_UserAuth;
+      {@JsonKey(name: 'created') required final String created,
+      @JsonKey(name: 'last_access') final String? lastAccess,
+      @JsonKey(name: '_age') final int? debugAge,
+      @JsonKey(name: 'uid') required final String uid,
+      @JsonKey(name: 'kind') required final String kind,
+      @JsonKey(name: 'addr') final String? addr,
+      @JsonKey(name: 'user_agent') final String? useragent,
+      @JsonKey(name: 'country') final String? country,
+      @JsonKey(name: 'region') final String? region,
+      @JsonKey(name: 'device') final PushDevice? device}) = _$_UserAuth;
 
   factory _UserAuth.fromJson(Map<String, dynamic> json) = _$_UserAuth.fromJson;
 
@@ -416,53 +388,54 @@ abstract class _UserAuth implements UserAuth {
 
   /// .
   @JsonKey(name: 'created')
-  String get created => throw _privateConstructorUsedError;
+  String get created;
   @override
 
   /// .
   @JsonKey(name: 'last_access')
-  String? get lastAccess => throw _privateConstructorUsedError;
+  String? get lastAccess;
   @override
 
   /// .
   @JsonKey(name: '_age')
-  int? get debugAge => throw _privateConstructorUsedError;
+  int? get debugAge;
   @override
 
   /// .
   @JsonKey(name: 'uid')
-  String get uid => throw _privateConstructorUsedError;
+  String get uid;
   @override
 
   /// type of auth.
   @JsonKey(name: 'kind')
-  String get kind => throw _privateConstructorUsedError;
+  String get kind;
   @override
 
   /// ip address.
   @JsonKey(name: 'addr')
-  String? get addr => throw _privateConstructorUsedError;
+  String? get addr;
   @override
 
   /// info about useragent.
   @JsonKey(name: 'user_agent')
-  String? get useragent => throw _privateConstructorUsedError;
+  String? get useragent;
   @override
 
   /// name of country.
   @JsonKey(name: 'country')
-  String? get country => throw _privateConstructorUsedError;
+  String? get country;
   @override
 
   /// name of region.
   @JsonKey(name: 'region')
-  String? get region => throw _privateConstructorUsedError;
+  String? get region;
   @override
 
   /// info about device (struct).
   @JsonKey(name: 'device')
-  PushDevice? get device => throw _privateConstructorUsedError;
+  PushDevice? get device;
   @override
   @JsonKey(ignore: true)
-  _$UserAuthCopyWith<_UserAuth> get copyWith => throw _privateConstructorUsedError;
+  _$$_UserAuthCopyWith<_$_UserAuth> get copyWith =>
+      throw _privateConstructorUsedError;
 }

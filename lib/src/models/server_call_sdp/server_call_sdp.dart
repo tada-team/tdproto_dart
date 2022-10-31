@@ -10,12 +10,14 @@ class ServerCallSdp with _$ServerCallSdp {
   const factory ServerCallSdp({
     /// .
     @JsonKey(name: 'params') required ServerCallSdpParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerCallSdp;
 
   factory ServerCallSdp.fromJson(Map<String, dynamic> json) => _$ServerCallSdpFromJson(json);

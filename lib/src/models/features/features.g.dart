@@ -13,7 +13,9 @@ _$_Features _$$_FeaturesFromJson(Map<String, dynamic> json) => _$_Features(
       frontVersion: json['front_version'] as String,
       appTitle: json['app_title'] as String,
       landingUrl: json['landing_url'] as String?,
-      appSchemes: (json['app_schemes'] as List<dynamic>).map((e) => e as String).toList(),
+      appSchemes: (json['app_schemes'] as List<dynamic>)
+          .map((e) => e as String)
+          .toList(),
       userver: json['userver'] as String,
       iOSApp: json['ios_app'] as String,
       androidApp: json['android_app'] as String,
@@ -39,9 +41,11 @@ _$_Features _$$_FeaturesFromJson(Map<String, dynamic> json) => _$_Features(
       maxProjectLength: json['max_project_length'] as int,
       maxTagLength: json['max_tag_length'] as int,
       maxTaskTitleLength: json['max_task_title_length'] as int,
-      maxColorRuleDescriptionLength: json['max_color_rule_description_length'] as int,
+      maxColorRuleDescriptionLength:
+          json['max_color_rule_description_length'] as int,
       maxUrlLength: json['max_url_length'] as int,
-      maxIntegrationCommentLength: json['max_integration_comment_length'] as int,
+      maxIntegrationCommentLength:
+          json['max_integration_comment_length'] as int,
       maxTeams: json['max_teams'] as int,
       maxMessageSearchLimit: json['max_message_search_limit'] as int,
       multiNodes: json['multi_nodes'] as bool?,
@@ -59,8 +63,9 @@ _$_Features _$$_FeaturesFromJson(Map<String, dynamic> json) => _$_Features(
       oAuthServices: (json['oauth_services'] as List<dynamic>?)
           ?.map((e) => OAuthService.fromJson(e as Map<String, dynamic>))
           .toList(),
-      iCEServers:
-          (json['ice_servers'] as List<dynamic>).map((e) => ICEServer.fromJson(e as Map<String, dynamic>)).toList(),
+      iCEServers: (json['ice_servers'] as List<dynamic>)
+          .map((e) => ICEServer.fromJson(e as Map<String, dynamic>))
+          .toList(),
       iceTransportPolicy: json['ice_transport_policy'] as String?,
       customServer: json['custom_server'] as bool,
       installationType: json['installation_type'] as String,
@@ -98,7 +103,8 @@ _$_Features _$$_FeaturesFromJson(Map<String, dynamic> json) => _$_Features(
       allowAdminMute: json['allow_admin_mute'] as bool?,
       defaultWallpaper: json['default_wallpaper'] == null
           ? null
-          : Wallpaper.fromJson(json['default_wallpaper'] as Map<String, dynamic>),
+          : Wallpaper.fromJson(
+              json['default_wallpaper'] as Map<String, dynamic>),
       supportEmail: json['support_email'] as String,
       customTheme: json['custom_theme'] as bool,
       taskChecklist: json['task_checklist'] as bool,
@@ -110,12 +116,20 @@ _$_Features _$$_FeaturesFromJson(Map<String, dynamic> json) => _$_Features(
       calls: json['calls'] as bool,
       billing: json['billing'] as bool?,
       minAppVersion: json['min_app_version'] as String,
-      fileExtensionWhitelist: (json['file_extension_whitelist'] as List<dynamic>?)?.map((e) => e as String).toList(),
-      fileExtensionBlacklist: (json['file_extension_blacklist'] as List<dynamic>?)?.map((e) => e as String).toList(),
-      fileExtensionWhitelistPriority: json['file_extension_whitelist_priority'] as bool?,
+      fileExtensionWhitelist:
+          (json['file_extension_whitelist'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList(),
+      fileExtensionBlacklist:
+          (json['file_extension_blacklist'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList(),
+      fileExtensionWhitelistPriority:
+          json['file_extension_whitelist_priority'] as bool?,
     );
 
-Map<String, dynamic> _$$_FeaturesToJson(_$_Features instance) => <String, dynamic>{
+Map<String, dynamic> _$$_FeaturesToJson(_$_Features instance) =>
+    <String, dynamic>{
       'host': instance.host,
       'build': instance.build,
       'desktop_version': instance.desktopVersion,
@@ -148,7 +162,8 @@ Map<String, dynamic> _$$_FeaturesToJson(_$_Features instance) => <String, dynami
       'max_project_length': instance.maxProjectLength,
       'max_tag_length': instance.maxTagLength,
       'max_task_title_length': instance.maxTaskTitleLength,
-      'max_color_rule_description_length': instance.maxColorRuleDescriptionLength,
+      'max_color_rule_description_length':
+          instance.maxColorRuleDescriptionLength,
       'max_url_length': instance.maxUrlLength,
       'max_integration_comment_length': instance.maxIntegrationCommentLength,
       'max_teams': instance.maxTeams,
@@ -216,5 +231,6 @@ Map<String, dynamic> _$$_FeaturesToJson(_$_Features instance) => <String, dynami
       'min_app_version': instance.minAppVersion,
       'file_extension_whitelist': instance.fileExtensionWhitelist,
       'file_extension_blacklist': instance.fileExtensionBlacklist,
-      'file_extension_whitelist_priority': instance.fileExtensionWhitelistPriority,
+      'file_extension_whitelist_priority':
+          instance.fileExtensionWhitelistPriority,
     };

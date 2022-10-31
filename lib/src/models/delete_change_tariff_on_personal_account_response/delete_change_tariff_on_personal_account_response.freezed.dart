@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'delete_change_tariff_on_personal_account_response.dart';
@@ -11,30 +12,13 @@ part of 'delete_change_tariff_on_personal_account_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-DeleteChangeTariffOnPersonalAccountResponse _$DeleteChangeTariffOnPersonalAccountResponseFromJson(
-    Map<String, dynamic> json) {
+DeleteChangeTariffOnPersonalAccountResponse
+    _$DeleteChangeTariffOnPersonalAccountResponseFromJson(
+        Map<String, dynamic> json) {
   return _DeleteChangeTariffOnPersonalAccountResponse.fromJson(json);
 }
-
-/// @nodoc
-class _$DeleteChangeTariffOnPersonalAccountResponseTearOff {
-  const _$DeleteChangeTariffOnPersonalAccountResponseTearOff();
-
-  _DeleteChangeTariffOnPersonalAccountResponse call({@JsonKey(name: 'success') bool? success}) {
-    return _DeleteChangeTariffOnPersonalAccountResponse(
-      success: success,
-    );
-  }
-
-  DeleteChangeTariffOnPersonalAccountResponse fromJson(Map<String, Object> json) {
-    return DeleteChangeTariffOnPersonalAccountResponse.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $DeleteChangeTariffOnPersonalAccountResponse = _$DeleteChangeTariffOnPersonalAccountResponseTearOff();
 
 /// @nodoc
 mixin _$DeleteChangeTariffOnPersonalAccountResponse {
@@ -44,68 +28,77 @@ mixin _$DeleteChangeTariffOnPersonalAccountResponse {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $DeleteChangeTariffOnPersonalAccountResponseCopyWith<DeleteChangeTariffOnPersonalAccountResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+  $DeleteChangeTariffOnPersonalAccountResponseCopyWith<
+          DeleteChangeTariffOnPersonalAccountResponse>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $DeleteChangeTariffOnPersonalAccountResponseCopyWith<$Res> {
-  factory $DeleteChangeTariffOnPersonalAccountResponseCopyWith(DeleteChangeTariffOnPersonalAccountResponse value,
+  factory $DeleteChangeTariffOnPersonalAccountResponseCopyWith(
+          DeleteChangeTariffOnPersonalAccountResponse value,
           $Res Function(DeleteChangeTariffOnPersonalAccountResponse) then) =
-      _$DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl<$Res>;
+      _$DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl<$Res,
+          DeleteChangeTariffOnPersonalAccountResponse>;
+  @useResult
   $Res call({@JsonKey(name: 'success') bool? success});
 }
 
 /// @nodoc
-class _$DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl<$Res>
+class _$DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl<$Res,
+        $Val extends DeleteChangeTariffOnPersonalAccountResponse>
     implements $DeleteChangeTariffOnPersonalAccountResponseCopyWith<$Res> {
-  _$DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl(this._value, this._then);
+  _$DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl(
+      this._value, this._then);
 
-  final DeleteChangeTariffOnPersonalAccountResponse _value;
   // ignore: unused_field
-  final $Res Function(DeleteChangeTariffOnPersonalAccountResponse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? success = freezed,
   }) {
     return _then(_value.copyWith(
-      success: success == freezed
+      success: freezed == success
           ? _value.success
           : success // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$DeleteChangeTariffOnPersonalAccountResponseCopyWith<$Res>
+abstract class _$$_DeleteChangeTariffOnPersonalAccountResponseCopyWith<$Res>
     implements $DeleteChangeTariffOnPersonalAccountResponseCopyWith<$Res> {
-  factory _$DeleteChangeTariffOnPersonalAccountResponseCopyWith(_DeleteChangeTariffOnPersonalAccountResponse value,
-          $Res Function(_DeleteChangeTariffOnPersonalAccountResponse) then) =
-      __$DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl<$Res>;
+  factory _$$_DeleteChangeTariffOnPersonalAccountResponseCopyWith(
+          _$_DeleteChangeTariffOnPersonalAccountResponse value,
+          $Res Function(_$_DeleteChangeTariffOnPersonalAccountResponse) then) =
+      __$$_DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@JsonKey(name: 'success') bool? success});
 }
 
 /// @nodoc
-class __$DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl<$Res>
-    extends _$DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl<$Res>
-    implements _$DeleteChangeTariffOnPersonalAccountResponseCopyWith<$Res> {
-  __$DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl(_DeleteChangeTariffOnPersonalAccountResponse _value,
-      $Res Function(_DeleteChangeTariffOnPersonalAccountResponse) _then)
-      : super(_value, (v) => _then(v as _DeleteChangeTariffOnPersonalAccountResponse));
+class __$$_DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl<$Res>
+    extends _$DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl<$Res,
+        _$_DeleteChangeTariffOnPersonalAccountResponse>
+    implements _$$_DeleteChangeTariffOnPersonalAccountResponseCopyWith<$Res> {
+  __$$_DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl(
+      _$_DeleteChangeTariffOnPersonalAccountResponse _value,
+      $Res Function(_$_DeleteChangeTariffOnPersonalAccountResponse) _then)
+      : super(_value, _then);
 
-  @override
-  _DeleteChangeTariffOnPersonalAccountResponse get _value =>
-      super._value as _DeleteChangeTariffOnPersonalAccountResponse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? success = freezed,
   }) {
-    return _then(_DeleteChangeTariffOnPersonalAccountResponse(
-      success: success == freezed
+    return _then(_$_DeleteChangeTariffOnPersonalAccountResponse(
+      success: freezed == success
           ? _value.success
           : success // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -115,15 +108,17 @@ class __$DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DeleteChangeTariffOnPersonalAccountResponse implements _DeleteChangeTariffOnPersonalAccountResponse {
-  const _$_DeleteChangeTariffOnPersonalAccountResponse({@JsonKey(name: 'success') this.success});
+class _$_DeleteChangeTariffOnPersonalAccountResponse
+    implements _DeleteChangeTariffOnPersonalAccountResponse {
+  const _$_DeleteChangeTariffOnPersonalAccountResponse(
+      {@JsonKey(name: 'success') this.success});
 
-  factory _$_DeleteChangeTariffOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
+  factory _$_DeleteChangeTariffOnPersonalAccountResponse.fromJson(
+          Map<String, dynamic> json) =>
       _$$_DeleteChangeTariffOnPersonalAccountResponseFromJson(json);
 
-  @override
-
   /// .
+  @override
   @JsonKey(name: 'success')
   final bool? success;
 
@@ -135,39 +130,50 @@ class _$_DeleteChangeTariffOnPersonalAccountResponse implements _DeleteChangeTar
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _DeleteChangeTariffOnPersonalAccountResponse &&
-            (identical(other.success, success) || const DeepCollectionEquality().equals(other.success, success)));
+        (other.runtimeType == runtimeType &&
+            other is _$_DeleteChangeTariffOnPersonalAccountResponse &&
+            (identical(other.success, success) || other.success == success));
   }
-
-  @override
-  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(success);
 
   @JsonKey(ignore: true)
   @override
-  _$DeleteChangeTariffOnPersonalAccountResponseCopyWith<_DeleteChangeTariffOnPersonalAccountResponse> get copyWith =>
-      __$DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl<_DeleteChangeTariffOnPersonalAccountResponse>(
-          this, _$identity);
+  int get hashCode => Object.hash(runtimeType, success);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_DeleteChangeTariffOnPersonalAccountResponseCopyWith<
+          _$_DeleteChangeTariffOnPersonalAccountResponse>
+      get copyWith =>
+          __$$_DeleteChangeTariffOnPersonalAccountResponseCopyWithImpl<
+              _$_DeleteChangeTariffOnPersonalAccountResponse>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DeleteChangeTariffOnPersonalAccountResponseToJson(this);
+    return _$$_DeleteChangeTariffOnPersonalAccountResponseToJson(
+      this,
+    );
   }
 }
 
-abstract class _DeleteChangeTariffOnPersonalAccountResponse implements DeleteChangeTariffOnPersonalAccountResponse {
-  const factory _DeleteChangeTariffOnPersonalAccountResponse({@JsonKey(name: 'success') bool? success}) =
+abstract class _DeleteChangeTariffOnPersonalAccountResponse
+    implements DeleteChangeTariffOnPersonalAccountResponse {
+  const factory _DeleteChangeTariffOnPersonalAccountResponse(
+          {@JsonKey(name: 'success') final bool? success}) =
       _$_DeleteChangeTariffOnPersonalAccountResponse;
 
-  factory _DeleteChangeTariffOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =
+  factory _DeleteChangeTariffOnPersonalAccountResponse.fromJson(
+          Map<String, dynamic> json) =
       _$_DeleteChangeTariffOnPersonalAccountResponse.fromJson;
 
   @override
 
   /// .
   @JsonKey(name: 'success')
-  bool? get success => throw _privateConstructorUsedError;
+  bool? get success;
   @override
   @JsonKey(ignore: true)
-  _$DeleteChangeTariffOnPersonalAccountResponseCopyWith<_DeleteChangeTariffOnPersonalAccountResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$_DeleteChangeTariffOnPersonalAccountResponseCopyWith<
+          _$_DeleteChangeTariffOnPersonalAccountResponse>
+      get copyWith => throw _privateConstructorUsedError;
 }

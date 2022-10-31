@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'group_access_request.dart';
@@ -11,34 +12,11 @@ part of 'group_access_request.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 GroupAccessRequest _$GroupAccessRequestFromJson(Map<String, dynamic> json) {
   return _GroupAccessRequest.fromJson(json);
 }
-
-/// @nodoc
-class _$GroupAccessRequestTearOff {
-  const _$GroupAccessRequestTearOff();
-
-  _GroupAccessRequest call(
-      {@JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
-      @JsonKey(name: 'subject') required String subject}) {
-    return _GroupAccessRequest(
-      uid: uid,
-      created: created,
-      subject: subject,
-    );
-  }
-
-  GroupAccessRequest fromJson(Map<String, Object> json) {
-    return GroupAccessRequest.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $GroupAccessRequest = _$GroupAccessRequestTearOff();
 
 /// @nodoc
 mixin _$GroupAccessRequest {
@@ -57,13 +35,16 @@ mixin _$GroupAccessRequest {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $GroupAccessRequestCopyWith<GroupAccessRequest> get copyWith => throw _privateConstructorUsedError;
+  $GroupAccessRequestCopyWith<GroupAccessRequest> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $GroupAccessRequestCopyWith<$Res> {
-  factory $GroupAccessRequestCopyWith(GroupAccessRequest value, $Res Function(GroupAccessRequest) then) =
-      _$GroupAccessRequestCopyWithImpl<$Res>;
+  factory $GroupAccessRequestCopyWith(
+          GroupAccessRequest value, $Res Function(GroupAccessRequest) then) =
+      _$GroupAccessRequestCopyWithImpl<$Res, GroupAccessRequest>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
@@ -71,41 +52,47 @@ abstract class $GroupAccessRequestCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$GroupAccessRequestCopyWithImpl<$Res> implements $GroupAccessRequestCopyWith<$Res> {
+class _$GroupAccessRequestCopyWithImpl<$Res, $Val extends GroupAccessRequest>
+    implements $GroupAccessRequestCopyWith<$Res> {
   _$GroupAccessRequestCopyWithImpl(this._value, this._then);
 
-  final GroupAccessRequest _value;
   // ignore: unused_field
-  final $Res Function(GroupAccessRequest) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? uid = freezed,
-    Object? created = freezed,
-    Object? subject = freezed,
+    Object? uid = null,
+    Object? created = null,
+    Object? subject = null,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed
+      uid: null == uid
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
               as String,
-      created: created == freezed
+      created: null == created
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      subject: subject == freezed
+      subject: null == subject
           ? _value.subject
           : subject // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$GroupAccessRequestCopyWith<$Res> implements $GroupAccessRequestCopyWith<$Res> {
-  factory _$GroupAccessRequestCopyWith(_GroupAccessRequest value, $Res Function(_GroupAccessRequest) then) =
-      __$GroupAccessRequestCopyWithImpl<$Res>;
+abstract class _$$_GroupAccessRequestCopyWith<$Res>
+    implements $GroupAccessRequestCopyWith<$Res> {
+  factory _$$_GroupAccessRequestCopyWith(_$_GroupAccessRequest value,
+          $Res Function(_$_GroupAccessRequest) then) =
+      __$$_GroupAccessRequestCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
@@ -113,30 +100,30 @@ abstract class _$GroupAccessRequestCopyWith<$Res> implements $GroupAccessRequest
 }
 
 /// @nodoc
-class __$GroupAccessRequestCopyWithImpl<$Res> extends _$GroupAccessRequestCopyWithImpl<$Res>
-    implements _$GroupAccessRequestCopyWith<$Res> {
-  __$GroupAccessRequestCopyWithImpl(_GroupAccessRequest _value, $Res Function(_GroupAccessRequest) _then)
-      : super(_value, (v) => _then(v as _GroupAccessRequest));
+class __$$_GroupAccessRequestCopyWithImpl<$Res>
+    extends _$GroupAccessRequestCopyWithImpl<$Res, _$_GroupAccessRequest>
+    implements _$$_GroupAccessRequestCopyWith<$Res> {
+  __$$_GroupAccessRequestCopyWithImpl(
+      _$_GroupAccessRequest _value, $Res Function(_$_GroupAccessRequest) _then)
+      : super(_value, _then);
 
-  @override
-  _GroupAccessRequest get _value => super._value as _GroupAccessRequest;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? uid = freezed,
-    Object? created = freezed,
-    Object? subject = freezed,
+    Object? uid = null,
+    Object? created = null,
+    Object? subject = null,
   }) {
-    return _then(_GroupAccessRequest(
-      uid: uid == freezed
+    return _then(_$_GroupAccessRequest(
+      uid: null == uid
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
               as String,
-      created: created == freezed
+      created: null == created
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      subject: subject == freezed
+      subject: null == subject
           ? _value.subject
           : subject // ignore: cast_nullable_to_non_nullable
               as String,
@@ -152,22 +139,22 @@ class _$_GroupAccessRequest implements _GroupAccessRequest {
       @JsonKey(name: 'created') @DateTimeConverter() required this.created,
       @JsonKey(name: 'subject') required this.subject});
 
-  factory _$_GroupAccessRequest.fromJson(Map<String, dynamic> json) => _$$_GroupAccessRequestFromJson(json);
-
-  @override
+  factory _$_GroupAccessRequest.fromJson(Map<String, dynamic> json) =>
+      _$$_GroupAccessRequestFromJson(json);
 
   /// .
+  @override
   @JsonKey(name: 'uid')
   final String uid;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'created')
   @DateTimeConverter()
   final DateTime created;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'subject')
   final String subject;
 
@@ -179,55 +166,63 @@ class _$_GroupAccessRequest implements _GroupAccessRequest {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _GroupAccessRequest &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.created, created) || const DeepCollectionEquality().equals(other.created, created)) &&
-            (identical(other.subject, subject) || const DeepCollectionEquality().equals(other.subject, subject)));
+        (other.runtimeType == runtimeType &&
+            other is _$_GroupAccessRequest &&
+            (identical(other.uid, uid) || other.uid == uid) &&
+            (identical(other.created, created) || other.created == created) &&
+            (identical(other.subject, subject) || other.subject == subject));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(uid) ^
-      const DeepCollectionEquality().hash(created) ^
-      const DeepCollectionEquality().hash(subject);
 
   @JsonKey(ignore: true)
   @override
-  _$GroupAccessRequestCopyWith<_GroupAccessRequest> get copyWith =>
-      __$GroupAccessRequestCopyWithImpl<_GroupAccessRequest>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, uid, created, subject);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_GroupAccessRequestCopyWith<_$_GroupAccessRequest> get copyWith =>
+      __$$_GroupAccessRequestCopyWithImpl<_$_GroupAccessRequest>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_GroupAccessRequestToJson(this);
+    return _$$_GroupAccessRequestToJson(
+      this,
+    );
   }
 }
 
 abstract class _GroupAccessRequest implements GroupAccessRequest {
   const factory _GroupAccessRequest(
-      {@JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
-      @JsonKey(name: 'subject') required String subject}) = _$_GroupAccessRequest;
+      {@JsonKey(name: 'uid')
+          required final String uid,
+      @JsonKey(name: 'created')
+      @DateTimeConverter()
+          required final DateTime created,
+      @JsonKey(name: 'subject')
+          required final String subject}) = _$_GroupAccessRequest;
 
-  factory _GroupAccessRequest.fromJson(Map<String, dynamic> json) = _$_GroupAccessRequest.fromJson;
+  factory _GroupAccessRequest.fromJson(Map<String, dynamic> json) =
+      _$_GroupAccessRequest.fromJson;
 
   @override
 
   /// .
   @JsonKey(name: 'uid')
-  String get uid => throw _privateConstructorUsedError;
+  String get uid;
   @override
 
   /// .
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created => throw _privateConstructorUsedError;
+  DateTime get created;
   @override
 
   /// .
   @JsonKey(name: 'subject')
-  String get subject => throw _privateConstructorUsedError;
+  String get subject;
   @override
   @JsonKey(ignore: true)
-  _$GroupAccessRequestCopyWith<_GroupAccessRequest> get copyWith => throw _privateConstructorUsedError;
+  _$$_GroupAccessRequestCopyWith<_$_GroupAccessRequest> get copyWith =>
+      throw _privateConstructorUsedError;
 }

@@ -6,7 +6,8 @@ part of 'easy_api_message.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_EasyApiMessage _$$_EasyApiMessageFromJson(Map<String, dynamic> json) => _$_EasyApiMessage(
+_$_EasyApiMessage _$$_EasyApiMessageFromJson(Map<String, dynamic> json) =>
+    _$_EasyApiMessage(
       key: json['key'] as String,
       text: json['message'] as String,
       messageUid: json['message_id'] as String,
@@ -16,7 +17,8 @@ _$_EasyApiMessage _$$_EasyApiMessageFromJson(Map<String, dynamic> json) => _$_Ea
       convertLinebreaks: json['convert_linebreaks'] as bool,
     );
 
-Map<String, dynamic> _$$_EasyApiMessageToJson(_$_EasyApiMessage instance) => <String, dynamic>{
+Map<String, dynamic> _$$_EasyApiMessageToJson(_$_EasyApiMessage instance) =>
+    <String, dynamic>{
       'key': instance.key,
       'message': instance.text,
       'message_id': instance.messageUid,

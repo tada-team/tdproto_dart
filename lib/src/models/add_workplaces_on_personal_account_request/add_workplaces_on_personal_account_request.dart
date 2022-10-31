@@ -10,8 +10,9 @@ class AddWorkplacesOnPersonalAccountRequest with _$AddWorkplacesOnPersonalAccoun
   const factory AddWorkplacesOnPersonalAccountRequest({
     /// .
     @JsonKey(name: 'workplaces_count') required int workplacesCount,
+    
+    
   }) = _AddWorkplacesOnPersonalAccountRequest;
 
-  factory AddWorkplacesOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
-      _$AddWorkplacesOnPersonalAccountRequestFromJson(json);
+  factory AddWorkplacesOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) => _$AddWorkplacesOnPersonalAccountRequestFromJson(json);
 }

@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'check_active_personal_account_response.dart';
@@ -11,29 +12,12 @@ part of 'check_active_personal_account_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-CheckActivePersonalAccountResponse _$CheckActivePersonalAccountResponseFromJson(Map<String, dynamic> json) {
+CheckActivePersonalAccountResponse _$CheckActivePersonalAccountResponseFromJson(
+    Map<String, dynamic> json) {
   return _CheckActivePersonalAccountResponse.fromJson(json);
 }
-
-/// @nodoc
-class _$CheckActivePersonalAccountResponseTearOff {
-  const _$CheckActivePersonalAccountResponseTearOff();
-
-  _CheckActivePersonalAccountResponse call({@JsonKey(name: 'success') bool? success}) {
-    return _CheckActivePersonalAccountResponse(
-      success: success,
-    );
-  }
-
-  CheckActivePersonalAccountResponse fromJson(Map<String, Object> json) {
-    return CheckActivePersonalAccountResponse.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $CheckActivePersonalAccountResponse = _$CheckActivePersonalAccountResponseTearOff();
 
 /// @nodoc
 mixin _$CheckActivePersonalAccountResponse {
@@ -43,67 +27,76 @@ mixin _$CheckActivePersonalAccountResponse {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $CheckActivePersonalAccountResponseCopyWith<CheckActivePersonalAccountResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+  $CheckActivePersonalAccountResponseCopyWith<
+          CheckActivePersonalAccountResponse>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $CheckActivePersonalAccountResponseCopyWith<$Res> {
   factory $CheckActivePersonalAccountResponseCopyWith(
-          CheckActivePersonalAccountResponse value, $Res Function(CheckActivePersonalAccountResponse) then) =
-      _$CheckActivePersonalAccountResponseCopyWithImpl<$Res>;
+          CheckActivePersonalAccountResponse value,
+          $Res Function(CheckActivePersonalAccountResponse) then) =
+      _$CheckActivePersonalAccountResponseCopyWithImpl<$Res,
+          CheckActivePersonalAccountResponse>;
+  @useResult
   $Res call({@JsonKey(name: 'success') bool? success});
 }
 
 /// @nodoc
-class _$CheckActivePersonalAccountResponseCopyWithImpl<$Res>
+class _$CheckActivePersonalAccountResponseCopyWithImpl<$Res,
+        $Val extends CheckActivePersonalAccountResponse>
     implements $CheckActivePersonalAccountResponseCopyWith<$Res> {
   _$CheckActivePersonalAccountResponseCopyWithImpl(this._value, this._then);
 
-  final CheckActivePersonalAccountResponse _value;
   // ignore: unused_field
-  final $Res Function(CheckActivePersonalAccountResponse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? success = freezed,
   }) {
     return _then(_value.copyWith(
-      success: success == freezed
+      success: freezed == success
           ? _value.success
           : success // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$CheckActivePersonalAccountResponseCopyWith<$Res>
+abstract class _$$_CheckActivePersonalAccountResponseCopyWith<$Res>
     implements $CheckActivePersonalAccountResponseCopyWith<$Res> {
-  factory _$CheckActivePersonalAccountResponseCopyWith(
-          _CheckActivePersonalAccountResponse value, $Res Function(_CheckActivePersonalAccountResponse) then) =
-      __$CheckActivePersonalAccountResponseCopyWithImpl<$Res>;
+  factory _$$_CheckActivePersonalAccountResponseCopyWith(
+          _$_CheckActivePersonalAccountResponse value,
+          $Res Function(_$_CheckActivePersonalAccountResponse) then) =
+      __$$_CheckActivePersonalAccountResponseCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({@JsonKey(name: 'success') bool? success});
 }
 
 /// @nodoc
-class __$CheckActivePersonalAccountResponseCopyWithImpl<$Res>
-    extends _$CheckActivePersonalAccountResponseCopyWithImpl<$Res>
-    implements _$CheckActivePersonalAccountResponseCopyWith<$Res> {
-  __$CheckActivePersonalAccountResponseCopyWithImpl(
-      _CheckActivePersonalAccountResponse _value, $Res Function(_CheckActivePersonalAccountResponse) _then)
-      : super(_value, (v) => _then(v as _CheckActivePersonalAccountResponse));
+class __$$_CheckActivePersonalAccountResponseCopyWithImpl<$Res>
+    extends _$CheckActivePersonalAccountResponseCopyWithImpl<$Res,
+        _$_CheckActivePersonalAccountResponse>
+    implements _$$_CheckActivePersonalAccountResponseCopyWith<$Res> {
+  __$$_CheckActivePersonalAccountResponseCopyWithImpl(
+      _$_CheckActivePersonalAccountResponse _value,
+      $Res Function(_$_CheckActivePersonalAccountResponse) _then)
+      : super(_value, _then);
 
-  @override
-  _CheckActivePersonalAccountResponse get _value => super._value as _CheckActivePersonalAccountResponse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? success = freezed,
   }) {
-    return _then(_CheckActivePersonalAccountResponse(
-      success: success == freezed
+    return _then(_$_CheckActivePersonalAccountResponse(
+      success: freezed == success
           ? _value.success
           : success // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -113,15 +106,17 @@ class __$CheckActivePersonalAccountResponseCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CheckActivePersonalAccountResponse implements _CheckActivePersonalAccountResponse {
-  const _$_CheckActivePersonalAccountResponse({@JsonKey(name: 'success') this.success});
+class _$_CheckActivePersonalAccountResponse
+    implements _CheckActivePersonalAccountResponse {
+  const _$_CheckActivePersonalAccountResponse(
+      {@JsonKey(name: 'success') this.success});
 
-  factory _$_CheckActivePersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
+  factory _$_CheckActivePersonalAccountResponse.fromJson(
+          Map<String, dynamic> json) =>
       _$$_CheckActivePersonalAccountResponseFromJson(json);
 
-  @override
-
   /// .
+  @override
   @JsonKey(name: 'success')
   final bool? success;
 
@@ -133,38 +128,49 @@ class _$_CheckActivePersonalAccountResponse implements _CheckActivePersonalAccou
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _CheckActivePersonalAccountResponse &&
-            (identical(other.success, success) || const DeepCollectionEquality().equals(other.success, success)));
+        (other.runtimeType == runtimeType &&
+            other is _$_CheckActivePersonalAccountResponse &&
+            (identical(other.success, success) || other.success == success));
   }
-
-  @override
-  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(success);
 
   @JsonKey(ignore: true)
   @override
-  _$CheckActivePersonalAccountResponseCopyWith<_CheckActivePersonalAccountResponse> get copyWith =>
-      __$CheckActivePersonalAccountResponseCopyWithImpl<_CheckActivePersonalAccountResponse>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, success);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_CheckActivePersonalAccountResponseCopyWith<
+          _$_CheckActivePersonalAccountResponse>
+      get copyWith => __$$_CheckActivePersonalAccountResponseCopyWithImpl<
+          _$_CheckActivePersonalAccountResponse>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CheckActivePersonalAccountResponseToJson(this);
+    return _$$_CheckActivePersonalAccountResponseToJson(
+      this,
+    );
   }
 }
 
-abstract class _CheckActivePersonalAccountResponse implements CheckActivePersonalAccountResponse {
-  const factory _CheckActivePersonalAccountResponse({@JsonKey(name: 'success') bool? success}) =
+abstract class _CheckActivePersonalAccountResponse
+    implements CheckActivePersonalAccountResponse {
+  const factory _CheckActivePersonalAccountResponse(
+          {@JsonKey(name: 'success') final bool? success}) =
       _$_CheckActivePersonalAccountResponse;
 
-  factory _CheckActivePersonalAccountResponse.fromJson(Map<String, dynamic> json) =
+  factory _CheckActivePersonalAccountResponse.fromJson(
+          Map<String, dynamic> json) =
       _$_CheckActivePersonalAccountResponse.fromJson;
 
   @override
 
   /// .
   @JsonKey(name: 'success')
-  bool? get success => throw _privateConstructorUsedError;
+  bool? get success;
   @override
   @JsonKey(ignore: true)
-  _$CheckActivePersonalAccountResponseCopyWith<_CheckActivePersonalAccountResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$_CheckActivePersonalAccountResponseCopyWith<
+          _$_CheckActivePersonalAccountResponse>
+      get copyWith => throw _privateConstructorUsedError;
 }

@@ -10,15 +10,17 @@ class ClientChatComposingParams with _$ClientChatComposingParams {
   const factory ClientChatComposingParams({
     /// Chat or contact id.
     @JsonKey(name: 'jid') required String jid,
-
+    
     /// true = audiomessage, false = text typing.
     @JsonKey(name: 'is_audio') bool? isAudio,
-
+    
     /// true = start typing / audio recording, false = stop.
     @JsonKey(name: 'composing') bool? composing,
-
+    
     /// Message draft data.
     @JsonKey(name: 'draft') String? draft,
+    
+    
   }) = _ClientChatComposingParams;
 
   factory ClientChatComposingParams.fromJson(Map<String, dynamic> json) => _$ClientChatComposingParamsFromJson(json);

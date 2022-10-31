@@ -10,9 +10,11 @@ class DeletedSection with _$DeletedSection {
   const factory DeletedSection({
     /// Section uid.
     @JsonKey(name: 'uid') required String uid,
-
+    
     /// Object version.
     @JsonKey(name: 'gentime') required int gentime,
+    
+    
   }) = _DeletedSection;
 
   factory DeletedSection.fromJson(Map<String, dynamic> json) => _$DeletedSectionFromJson(json);

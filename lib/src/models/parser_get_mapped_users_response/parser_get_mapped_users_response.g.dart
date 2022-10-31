@@ -6,13 +6,17 @@ part of 'parser_get_mapped_users_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ParserGetMappedUsersResponse _$$_ParserGetMappedUsersResponseFromJson(Map<String, dynamic> json) =>
+_$_ParserGetMappedUsersResponse _$$_ParserGetMappedUsersResponseFromJson(
+        Map<String, dynamic> json) =>
     _$_ParserGetMappedUsersResponse(
-      users: (json['users'] as List<dynamic>).map((e) => MappedUser.fromJson(e as Map<String, dynamic>)).toList(),
+      users: (json['users'] as List<dynamic>)
+          .map((e) => MappedUser.fromJson(e as Map<String, dynamic>))
+          .toList(),
       chatName: json['chat_name'] as String,
     );
 
-Map<String, dynamic> _$$_ParserGetMappedUsersResponseToJson(_$_ParserGetMappedUsersResponse instance) =>
+Map<String, dynamic> _$$_ParserGetMappedUsersResponseToJson(
+        _$_ParserGetMappedUsersResponse instance) =>
     <String, dynamic>{
       'users': instance.users.map((e) => e.toJson()).toList(),
       'chat_name': instance.chatName,

@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'get_personal_accounts_list_response.dart';
@@ -11,99 +12,96 @@ part of 'get_personal_accounts_list_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-GetPersonalAccountsListResponse _$GetPersonalAccountsListResponseFromJson(Map<String, dynamic> json) {
+GetPersonalAccountsListResponse _$GetPersonalAccountsListResponseFromJson(
+    Map<String, dynamic> json) {
   return _GetPersonalAccountsListResponse.fromJson(json);
 }
-
-/// @nodoc
-class _$GetPersonalAccountsListResponseTearOff {
-  const _$GetPersonalAccountsListResponseTearOff();
-
-  _GetPersonalAccountsListResponse call(
-      {@JsonKey(name: 'personal_accounts') List<PersonalAccountBilling>? personalAccounts}) {
-    return _GetPersonalAccountsListResponse(
-      personalAccounts: personalAccounts,
-    );
-  }
-
-  GetPersonalAccountsListResponse fromJson(Map<String, Object> json) {
-    return GetPersonalAccountsListResponse.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $GetPersonalAccountsListResponse = _$GetPersonalAccountsListResponseTearOff();
 
 /// @nodoc
 mixin _$GetPersonalAccountsListResponse {
   /// .
   @JsonKey(name: 'personal_accounts')
-  List<PersonalAccountBilling>? get personalAccounts => throw _privateConstructorUsedError;
+  List<PersonalAccountBilling>? get personalAccounts =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $GetPersonalAccountsListResponseCopyWith<GetPersonalAccountsListResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+  $GetPersonalAccountsListResponseCopyWith<GetPersonalAccountsListResponse>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $GetPersonalAccountsListResponseCopyWith<$Res> {
   factory $GetPersonalAccountsListResponseCopyWith(
-          GetPersonalAccountsListResponse value, $Res Function(GetPersonalAccountsListResponse) then) =
-      _$GetPersonalAccountsListResponseCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'personal_accounts') List<PersonalAccountBilling>? personalAccounts});
+          GetPersonalAccountsListResponse value,
+          $Res Function(GetPersonalAccountsListResponse) then) =
+      _$GetPersonalAccountsListResponseCopyWithImpl<$Res,
+          GetPersonalAccountsListResponse>;
+  @useResult
+  $Res call(
+      {@JsonKey(name: 'personal_accounts')
+          List<PersonalAccountBilling>? personalAccounts});
 }
 
 /// @nodoc
-class _$GetPersonalAccountsListResponseCopyWithImpl<$Res> implements $GetPersonalAccountsListResponseCopyWith<$Res> {
+class _$GetPersonalAccountsListResponseCopyWithImpl<$Res,
+        $Val extends GetPersonalAccountsListResponse>
+    implements $GetPersonalAccountsListResponseCopyWith<$Res> {
   _$GetPersonalAccountsListResponseCopyWithImpl(this._value, this._then);
 
-  final GetPersonalAccountsListResponse _value;
   // ignore: unused_field
-  final $Res Function(GetPersonalAccountsListResponse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? personalAccounts = freezed,
   }) {
     return _then(_value.copyWith(
-      personalAccounts: personalAccounts == freezed
+      personalAccounts: freezed == personalAccounts
           ? _value.personalAccounts
           : personalAccounts // ignore: cast_nullable_to_non_nullable
               as List<PersonalAccountBilling>?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$GetPersonalAccountsListResponseCopyWith<$Res>
+abstract class _$$_GetPersonalAccountsListResponseCopyWith<$Res>
     implements $GetPersonalAccountsListResponseCopyWith<$Res> {
-  factory _$GetPersonalAccountsListResponseCopyWith(
-          _GetPersonalAccountsListResponse value, $Res Function(_GetPersonalAccountsListResponse) then) =
-      __$GetPersonalAccountsListResponseCopyWithImpl<$Res>;
+  factory _$$_GetPersonalAccountsListResponseCopyWith(
+          _$_GetPersonalAccountsListResponse value,
+          $Res Function(_$_GetPersonalAccountsListResponse) then) =
+      __$$_GetPersonalAccountsListResponseCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'personal_accounts') List<PersonalAccountBilling>? personalAccounts});
+  @useResult
+  $Res call(
+      {@JsonKey(name: 'personal_accounts')
+          List<PersonalAccountBilling>? personalAccounts});
 }
 
 /// @nodoc
-class __$GetPersonalAccountsListResponseCopyWithImpl<$Res> extends _$GetPersonalAccountsListResponseCopyWithImpl<$Res>
-    implements _$GetPersonalAccountsListResponseCopyWith<$Res> {
-  __$GetPersonalAccountsListResponseCopyWithImpl(
-      _GetPersonalAccountsListResponse _value, $Res Function(_GetPersonalAccountsListResponse) _then)
-      : super(_value, (v) => _then(v as _GetPersonalAccountsListResponse));
+class __$$_GetPersonalAccountsListResponseCopyWithImpl<$Res>
+    extends _$GetPersonalAccountsListResponseCopyWithImpl<$Res,
+        _$_GetPersonalAccountsListResponse>
+    implements _$$_GetPersonalAccountsListResponseCopyWith<$Res> {
+  __$$_GetPersonalAccountsListResponseCopyWithImpl(
+      _$_GetPersonalAccountsListResponse _value,
+      $Res Function(_$_GetPersonalAccountsListResponse) _then)
+      : super(_value, _then);
 
-  @override
-  _GetPersonalAccountsListResponse get _value => super._value as _GetPersonalAccountsListResponse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? personalAccounts = freezed,
   }) {
-    return _then(_GetPersonalAccountsListResponse(
-      personalAccounts: personalAccounts == freezed
-          ? _value.personalAccounts
+    return _then(_$_GetPersonalAccountsListResponse(
+      personalAccounts: freezed == personalAccounts
+          ? _value._personalAccounts
           : personalAccounts // ignore: cast_nullable_to_non_nullable
               as List<PersonalAccountBilling>?,
     ));
@@ -112,17 +110,29 @@ class __$GetPersonalAccountsListResponseCopyWithImpl<$Res> extends _$GetPersonal
 
 /// @nodoc
 @JsonSerializable()
-class _$_GetPersonalAccountsListResponse implements _GetPersonalAccountsListResponse {
-  const _$_GetPersonalAccountsListResponse({@JsonKey(name: 'personal_accounts') this.personalAccounts});
+class _$_GetPersonalAccountsListResponse
+    implements _GetPersonalAccountsListResponse {
+  const _$_GetPersonalAccountsListResponse(
+      {@JsonKey(name: 'personal_accounts')
+          final List<PersonalAccountBilling>? personalAccounts})
+      : _personalAccounts = personalAccounts;
 
-  factory _$_GetPersonalAccountsListResponse.fromJson(Map<String, dynamic> json) =>
+  factory _$_GetPersonalAccountsListResponse.fromJson(
+          Map<String, dynamic> json) =>
       _$$_GetPersonalAccountsListResponseFromJson(json);
 
-  @override
+  /// .
+  final List<PersonalAccountBilling>? _personalAccounts;
 
   /// .
+  @override
   @JsonKey(name: 'personal_accounts')
-  final List<PersonalAccountBilling>? personalAccounts;
+  List<PersonalAccountBilling>? get personalAccounts {
+    final value = _personalAccounts;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -132,28 +142,38 @@ class _$_GetPersonalAccountsListResponse implements _GetPersonalAccountsListResp
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _GetPersonalAccountsListResponse &&
-            (identical(other.personalAccounts, personalAccounts) ||
-                const DeepCollectionEquality().equals(other.personalAccounts, personalAccounts)));
+        (other.runtimeType == runtimeType &&
+            other is _$_GetPersonalAccountsListResponse &&
+            const DeepCollectionEquality()
+                .equals(other._personalAccounts, _personalAccounts));
   }
-
-  @override
-  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(personalAccounts);
 
   @JsonKey(ignore: true)
   @override
-  _$GetPersonalAccountsListResponseCopyWith<_GetPersonalAccountsListResponse> get copyWith =>
-      __$GetPersonalAccountsListResponseCopyWithImpl<_GetPersonalAccountsListResponse>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(_personalAccounts));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_GetPersonalAccountsListResponseCopyWith<
+          _$_GetPersonalAccountsListResponse>
+      get copyWith => __$$_GetPersonalAccountsListResponseCopyWithImpl<
+          _$_GetPersonalAccountsListResponse>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_GetPersonalAccountsListResponseToJson(this);
+    return _$$_GetPersonalAccountsListResponseToJson(
+      this,
+    );
   }
 }
 
-abstract class _GetPersonalAccountsListResponse implements GetPersonalAccountsListResponse {
+abstract class _GetPersonalAccountsListResponse
+    implements GetPersonalAccountsListResponse {
   const factory _GetPersonalAccountsListResponse(
-          {@JsonKey(name: 'personal_accounts') List<PersonalAccountBilling>? personalAccounts}) =
+          {@JsonKey(name: 'personal_accounts')
+              final List<PersonalAccountBilling>? personalAccounts}) =
       _$_GetPersonalAccountsListResponse;
 
   factory _GetPersonalAccountsListResponse.fromJson(Map<String, dynamic> json) =
@@ -163,9 +183,10 @@ abstract class _GetPersonalAccountsListResponse implements GetPersonalAccountsLi
 
   /// .
   @JsonKey(name: 'personal_accounts')
-  List<PersonalAccountBilling>? get personalAccounts => throw _privateConstructorUsedError;
+  List<PersonalAccountBilling>? get personalAccounts;
   @override
   @JsonKey(ignore: true)
-  _$GetPersonalAccountsListResponseCopyWith<_GetPersonalAccountsListResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$_GetPersonalAccountsListResponseCopyWith<
+          _$_GetPersonalAccountsListResponse>
+      get copyWith => throw _privateConstructorUsedError;
 }

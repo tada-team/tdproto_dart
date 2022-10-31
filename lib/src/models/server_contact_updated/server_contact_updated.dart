@@ -10,12 +10,14 @@ class ServerContactUpdated with _$ServerContactUpdated {
   const factory ServerContactUpdated({
     /// .
     @JsonKey(name: 'params') required ServerContactUpdatedParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerContactUpdated;
 
   factory ServerContactUpdated.fromJson(Map<String, dynamic> json) => _$ServerContactUpdatedFromJson(json);

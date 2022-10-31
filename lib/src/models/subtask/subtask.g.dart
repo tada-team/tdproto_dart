@@ -14,11 +14,13 @@ _$_Subtask _$$_SubtaskFromJson(Map<String, dynamic> json) => _$_Subtask(
       displayName: json['display_name'] as String,
       isPublic: json['public'] as bool?,
       taskStatus: json['task_status'] as String?,
-      deadline: json['deadline'] == null ? null : DateTime.parse(json['deadline'] as String),
+      deadline: _$JsonConverterFromJson<String, DateTime>(
+          json['deadline'], const DateTimeConverter().fromJson),
       deadlineExpired: json['deadline_expired'] as bool?,
     );
 
-Map<String, dynamic> _$$_SubtaskToJson(_$_Subtask instance) => <String, dynamic>{
+Map<String, dynamic> _$$_SubtaskToJson(_$_Subtask instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'assignee': instance.assignee,
       'title': instance.title,
@@ -26,6 +28,19 @@ Map<String, dynamic> _$$_SubtaskToJson(_$_Subtask instance) => <String, dynamic>
       'display_name': instance.displayName,
       'public': instance.isPublic,
       'task_status': instance.taskStatus,
-      'deadline': instance.deadline?.toIso8601String(),
+      'deadline': _$JsonConverterToJson<String, DateTime>(
+          instance.deadline, const DateTimeConverter().toJson),
       'deadline_expired': instance.deadlineExpired,
     };
+
+Value? _$JsonConverterFromJson<Json, Value>(
+  Object? json,
+  Value? Function(Json json) fromJson,
+) =>
+    json == null ? null : fromJson(json as Json);
+
+Json? _$JsonConverterToJson<Json, Value>(
+  Value? value,
+  Json? Function(Value value) toJson,
+) =>
+    value == null ? null : toJson(value);

@@ -10,12 +10,14 @@ class ServerWarning with _$ServerWarning {
   const factory ServerWarning({
     /// .
     @JsonKey(name: 'params') required ServerWarningParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerWarning;
 
   factory ServerWarning.fromJson(Map<String, dynamic> json) => _$ServerWarningFromJson(json);

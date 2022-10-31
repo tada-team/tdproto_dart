@@ -10,12 +10,14 @@ class ServerChatComposing with _$ServerChatComposing {
   const factory ServerChatComposing({
     /// .
     @JsonKey(name: 'params') required ServerChatComposingParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerChatComposing;
 
   factory ServerChatComposing.fromJson(Map<String, dynamic> json) => _$ServerChatComposingFromJson(json);

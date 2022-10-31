@@ -10,12 +10,14 @@ class ClientCallSdp with _$ClientCallSdp {
   const factory ClientCallSdp({
     /// .
     @JsonKey(name: 'params') required ClientCallSdpParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ClientCallSdp;
 
   factory ClientCallSdp.fromJson(Map<String, dynamic> json) => _$ClientCallSdpFromJson(json);

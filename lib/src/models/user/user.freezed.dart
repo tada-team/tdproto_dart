@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'user.dart';
@@ -11,60 +12,11 @@ part of 'user.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 User _$UserFromJson(Map<String, dynamic> json) {
   return _User.fromJson(json);
 }
-
-/// @nodoc
-class _$UserTearOff {
-  const _$UserTearOff();
-
-  _User call(
-      {@JsonKey(name: 'phone') String? phone,
-      @JsonKey(name: 'email') String? email,
-      @JsonKey(name: 'family_name') String? familyName,
-      @JsonKey(name: 'given_name') String? givenName,
-      @JsonKey(name: 'patronymic') String? patronymic,
-      @JsonKey(name: 'default_lang') String? defaultLang,
-      @JsonKey(name: 'alt_send') required bool altSend,
-      @JsonKey(name: 'asterisk_mention') required bool asteriskMention,
-      @JsonKey(name: 'always_send_pushes') required bool alwaysSendPushes,
-      @JsonKey(name: 'hide_pushes_content') required bool hidePushesContent,
-      @JsonKey(name: 'unread_first') required bool unreadFirst,
-      @JsonKey(name: 'munread_first') required bool mUnreadFirst,
-      @JsonKey(name: 'timezone') required String timezone,
-      @JsonKey(name: 'quiet_time_start') String? quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish') String? quietTimeFinish,
-      @JsonKey(name: 'icons') required IconData icons}) {
-    return _User(
-      phone: phone,
-      email: email,
-      familyName: familyName,
-      givenName: givenName,
-      patronymic: patronymic,
-      defaultLang: defaultLang,
-      altSend: altSend,
-      asteriskMention: asteriskMention,
-      alwaysSendPushes: alwaysSendPushes,
-      hidePushesContent: hidePushesContent,
-      unreadFirst: unreadFirst,
-      mUnreadFirst: mUnreadFirst,
-      timezone: timezone,
-      quietTimeStart: quietTimeStart,
-      quietTimeFinish: quietTimeFinish,
-      icons: icons,
-    );
-  }
-
-  User fromJson(Map<String, Object> json) {
-    return User.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $User = _$UserTearOff();
 
 /// @nodoc
 mixin _$User {
@@ -139,7 +91,9 @@ mixin _$User {
 
 /// @nodoc
 abstract class $UserCopyWith<$Res> {
-  factory $UserCopyWith(User value, $Res Function(User) then) = _$UserCopyWithImpl<$Res>;
+  factory $UserCopyWith(User value, $Res Function(User) then) =
+      _$UserCopyWithImpl<$Res, User>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'email') String? email,
@@ -162,13 +116,16 @@ abstract class $UserCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UserCopyWithImpl<$Res> implements $UserCopyWith<$Res> {
+class _$UserCopyWithImpl<$Res, $Val extends User>
+    implements $UserCopyWith<$Res> {
   _$UserCopyWithImpl(this._value, this._then);
 
-  final User _value;
   // ignore: unused_field
-  final $Res Function(User) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? phone = freezed,
@@ -177,97 +134,100 @@ class _$UserCopyWithImpl<$Res> implements $UserCopyWith<$Res> {
     Object? givenName = freezed,
     Object? patronymic = freezed,
     Object? defaultLang = freezed,
-    Object? altSend = freezed,
-    Object? asteriskMention = freezed,
-    Object? alwaysSendPushes = freezed,
-    Object? hidePushesContent = freezed,
-    Object? unreadFirst = freezed,
-    Object? mUnreadFirst = freezed,
-    Object? timezone = freezed,
+    Object? altSend = null,
+    Object? asteriskMention = null,
+    Object? alwaysSendPushes = null,
+    Object? hidePushesContent = null,
+    Object? unreadFirst = null,
+    Object? mUnreadFirst = null,
+    Object? timezone = null,
     Object? quietTimeStart = freezed,
     Object? quietTimeFinish = freezed,
-    Object? icons = freezed,
+    Object? icons = null,
   }) {
     return _then(_value.copyWith(
-      phone: phone == freezed
+      phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as String?,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      familyName: familyName == freezed
+      familyName: freezed == familyName
           ? _value.familyName
           : familyName // ignore: cast_nullable_to_non_nullable
               as String?,
-      givenName: givenName == freezed
+      givenName: freezed == givenName
           ? _value.givenName
           : givenName // ignore: cast_nullable_to_non_nullable
               as String?,
-      patronymic: patronymic == freezed
+      patronymic: freezed == patronymic
           ? _value.patronymic
           : patronymic // ignore: cast_nullable_to_non_nullable
               as String?,
-      defaultLang: defaultLang == freezed
+      defaultLang: freezed == defaultLang
           ? _value.defaultLang
           : defaultLang // ignore: cast_nullable_to_non_nullable
               as String?,
-      altSend: altSend == freezed
+      altSend: null == altSend
           ? _value.altSend
           : altSend // ignore: cast_nullable_to_non_nullable
               as bool,
-      asteriskMention: asteriskMention == freezed
+      asteriskMention: null == asteriskMention
           ? _value.asteriskMention
           : asteriskMention // ignore: cast_nullable_to_non_nullable
               as bool,
-      alwaysSendPushes: alwaysSendPushes == freezed
+      alwaysSendPushes: null == alwaysSendPushes
           ? _value.alwaysSendPushes
           : alwaysSendPushes // ignore: cast_nullable_to_non_nullable
               as bool,
-      hidePushesContent: hidePushesContent == freezed
+      hidePushesContent: null == hidePushesContent
           ? _value.hidePushesContent
           : hidePushesContent // ignore: cast_nullable_to_non_nullable
               as bool,
-      unreadFirst: unreadFirst == freezed
+      unreadFirst: null == unreadFirst
           ? _value.unreadFirst
           : unreadFirst // ignore: cast_nullable_to_non_nullable
               as bool,
-      mUnreadFirst: mUnreadFirst == freezed
+      mUnreadFirst: null == mUnreadFirst
           ? _value.mUnreadFirst
           : mUnreadFirst // ignore: cast_nullable_to_non_nullable
               as bool,
-      timezone: timezone == freezed
+      timezone: null == timezone
           ? _value.timezone
           : timezone // ignore: cast_nullable_to_non_nullable
               as String,
-      quietTimeStart: quietTimeStart == freezed
+      quietTimeStart: freezed == quietTimeStart
           ? _value.quietTimeStart
           : quietTimeStart // ignore: cast_nullable_to_non_nullable
               as String?,
-      quietTimeFinish: quietTimeFinish == freezed
+      quietTimeFinish: freezed == quietTimeFinish
           ? _value.quietTimeFinish
           : quietTimeFinish // ignore: cast_nullable_to_non_nullable
               as String?,
-      icons: icons == freezed
+      icons: null == icons
           ? _value.icons
           : icons // ignore: cast_nullable_to_non_nullable
               as IconData,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $IconDataCopyWith<$Res> get icons {
     return $IconDataCopyWith<$Res>(_value.icons, (value) {
-      return _then(_value.copyWith(icons: value));
+      return _then(_value.copyWith(icons: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$UserCopyWith<$Res> implements $UserCopyWith<$Res> {
-  factory _$UserCopyWith(_User value, $Res Function(_User) then) = __$UserCopyWithImpl<$Res>;
+abstract class _$$_UserCopyWith<$Res> implements $UserCopyWith<$Res> {
+  factory _$$_UserCopyWith(_$_User value, $Res Function(_$_User) then) =
+      __$$_UserCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'phone') String? phone,
       @JsonKey(name: 'email') String? email,
@@ -291,12 +251,12 @@ abstract class _$UserCopyWith<$Res> implements $UserCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res> implements _$UserCopyWith<$Res> {
-  __$UserCopyWithImpl(_User _value, $Res Function(_User) _then) : super(_value, (v) => _then(v as _User));
+class __$$_UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res, _$_User>
+    implements _$$_UserCopyWith<$Res> {
+  __$$_UserCopyWithImpl(_$_User _value, $Res Function(_$_User) _then)
+      : super(_value, _then);
 
-  @override
-  _User get _value => super._value as _User;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? phone = freezed,
@@ -305,79 +265,79 @@ class __$UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res> implements _$Us
     Object? givenName = freezed,
     Object? patronymic = freezed,
     Object? defaultLang = freezed,
-    Object? altSend = freezed,
-    Object? asteriskMention = freezed,
-    Object? alwaysSendPushes = freezed,
-    Object? hidePushesContent = freezed,
-    Object? unreadFirst = freezed,
-    Object? mUnreadFirst = freezed,
-    Object? timezone = freezed,
+    Object? altSend = null,
+    Object? asteriskMention = null,
+    Object? alwaysSendPushes = null,
+    Object? hidePushesContent = null,
+    Object? unreadFirst = null,
+    Object? mUnreadFirst = null,
+    Object? timezone = null,
     Object? quietTimeStart = freezed,
     Object? quietTimeFinish = freezed,
-    Object? icons = freezed,
+    Object? icons = null,
   }) {
-    return _then(_User(
-      phone: phone == freezed
+    return _then(_$_User(
+      phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as String?,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      familyName: familyName == freezed
+      familyName: freezed == familyName
           ? _value.familyName
           : familyName // ignore: cast_nullable_to_non_nullable
               as String?,
-      givenName: givenName == freezed
+      givenName: freezed == givenName
           ? _value.givenName
           : givenName // ignore: cast_nullable_to_non_nullable
               as String?,
-      patronymic: patronymic == freezed
+      patronymic: freezed == patronymic
           ? _value.patronymic
           : patronymic // ignore: cast_nullable_to_non_nullable
               as String?,
-      defaultLang: defaultLang == freezed
+      defaultLang: freezed == defaultLang
           ? _value.defaultLang
           : defaultLang // ignore: cast_nullable_to_non_nullable
               as String?,
-      altSend: altSend == freezed
+      altSend: null == altSend
           ? _value.altSend
           : altSend // ignore: cast_nullable_to_non_nullable
               as bool,
-      asteriskMention: asteriskMention == freezed
+      asteriskMention: null == asteriskMention
           ? _value.asteriskMention
           : asteriskMention // ignore: cast_nullable_to_non_nullable
               as bool,
-      alwaysSendPushes: alwaysSendPushes == freezed
+      alwaysSendPushes: null == alwaysSendPushes
           ? _value.alwaysSendPushes
           : alwaysSendPushes // ignore: cast_nullable_to_non_nullable
               as bool,
-      hidePushesContent: hidePushesContent == freezed
+      hidePushesContent: null == hidePushesContent
           ? _value.hidePushesContent
           : hidePushesContent // ignore: cast_nullable_to_non_nullable
               as bool,
-      unreadFirst: unreadFirst == freezed
+      unreadFirst: null == unreadFirst
           ? _value.unreadFirst
           : unreadFirst // ignore: cast_nullable_to_non_nullable
               as bool,
-      mUnreadFirst: mUnreadFirst == freezed
+      mUnreadFirst: null == mUnreadFirst
           ? _value.mUnreadFirst
           : mUnreadFirst // ignore: cast_nullable_to_non_nullable
               as bool,
-      timezone: timezone == freezed
+      timezone: null == timezone
           ? _value.timezone
           : timezone // ignore: cast_nullable_to_non_nullable
               as String,
-      quietTimeStart: quietTimeStart == freezed
+      quietTimeStart: freezed == quietTimeStart
           ? _value.quietTimeStart
           : quietTimeStart // ignore: cast_nullable_to_non_nullable
               as String?,
-      quietTimeFinish: quietTimeFinish == freezed
+      quietTimeFinish: freezed == quietTimeFinish
           ? _value.quietTimeFinish
           : quietTimeFinish // ignore: cast_nullable_to_non_nullable
               as String?,
-      icons: icons == freezed
+      icons: null == icons
           ? _value.icons
           : icons // ignore: cast_nullable_to_non_nullable
               as IconData,
@@ -408,84 +368,83 @@ class _$_User implements _User {
 
   factory _$_User.fromJson(Map<String, dynamic> json) => _$$_UserFromJson(json);
 
-  @override
-
   /// Phone for login.
+  @override
   @JsonKey(name: 'phone')
   final String? phone;
-  @override
 
   /// Email for login.
+  @override
   @JsonKey(name: 'email')
   final String? email;
-  @override
 
   /// Family name.
+  @override
   @JsonKey(name: 'family_name')
   final String? familyName;
-  @override
 
   /// Given name.
+  @override
   @JsonKey(name: 'given_name')
   final String? givenName;
-  @override
 
   /// Patronymic, if any.
+  @override
   @JsonKey(name: 'patronymic')
   final String? patronymic;
-  @override
 
   /// Default language code.
+  @override
   @JsonKey(name: 'default_lang')
   final String? defaultLang;
-  @override
 
   /// Use Ctrl/Cmd + Enter instead Enter.
+  @override
   @JsonKey(name: 'alt_send')
   final bool altSend;
-  @override
 
   /// Use * as @ for mentions.
+  @override
   @JsonKey(name: 'asterisk_mention')
   final bool asteriskMention;
-  @override
 
   /// Send pushes even user is online.
+  @override
   @JsonKey(name: 'always_send_pushes')
   final bool alwaysSendPushes;
-  @override
 
   /// Hide pushes body.
+  @override
   @JsonKey(name: 'hide_pushes_content')
   final bool hidePushesContent;
-  @override
 
   /// Show unread chats in chat list first.
+  @override
   @JsonKey(name: 'unread_first')
   final bool unreadFirst;
-  @override
 
   /// Show unread chats in chat list first on mobiles.
+  @override
   @JsonKey(name: 'munread_first')
   final bool mUnreadFirst;
-  @override
 
   /// Timezone.
+  @override
   @JsonKey(name: 'timezone')
   final String timezone;
-  @override
 
   /// Start silently time (no pushes, no sounds).
+  @override
   @JsonKey(name: 'quiet_time_start')
   final String? quietTimeStart;
-  @override
 
   /// Finish silently time (no pushes, no sounds).
+  @override
   @JsonKey(name: 'quiet_time_finish')
   final String? quietTimeFinish;
-  @override
 
   /// Icon data.
+  @override
   @JsonKey(name: 'icons')
   final IconData icons;
 
@@ -497,84 +456,107 @@ class _$_User implements _User {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _User &&
-            (identical(other.phone, phone) || const DeepCollectionEquality().equals(other.phone, phone)) &&
-            (identical(other.email, email) || const DeepCollectionEquality().equals(other.email, email)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_User &&
+            (identical(other.phone, phone) || other.phone == phone) &&
+            (identical(other.email, email) || other.email == email) &&
             (identical(other.familyName, familyName) ||
-                const DeepCollectionEquality().equals(other.familyName, familyName)) &&
+                other.familyName == familyName) &&
             (identical(other.givenName, givenName) ||
-                const DeepCollectionEquality().equals(other.givenName, givenName)) &&
+                other.givenName == givenName) &&
             (identical(other.patronymic, patronymic) ||
-                const DeepCollectionEquality().equals(other.patronymic, patronymic)) &&
+                other.patronymic == patronymic) &&
             (identical(other.defaultLang, defaultLang) ||
-                const DeepCollectionEquality().equals(other.defaultLang, defaultLang)) &&
-            (identical(other.altSend, altSend) || const DeepCollectionEquality().equals(other.altSend, altSend)) &&
+                other.defaultLang == defaultLang) &&
+            (identical(other.altSend, altSend) || other.altSend == altSend) &&
             (identical(other.asteriskMention, asteriskMention) ||
-                const DeepCollectionEquality().equals(other.asteriskMention, asteriskMention)) &&
+                other.asteriskMention == asteriskMention) &&
             (identical(other.alwaysSendPushes, alwaysSendPushes) ||
-                const DeepCollectionEquality().equals(other.alwaysSendPushes, alwaysSendPushes)) &&
+                other.alwaysSendPushes == alwaysSendPushes) &&
             (identical(other.hidePushesContent, hidePushesContent) ||
-                const DeepCollectionEquality().equals(other.hidePushesContent, hidePushesContent)) &&
+                other.hidePushesContent == hidePushesContent) &&
             (identical(other.unreadFirst, unreadFirst) ||
-                const DeepCollectionEquality().equals(other.unreadFirst, unreadFirst)) &&
+                other.unreadFirst == unreadFirst) &&
             (identical(other.mUnreadFirst, mUnreadFirst) ||
-                const DeepCollectionEquality().equals(other.mUnreadFirst, mUnreadFirst)) &&
-            (identical(other.timezone, timezone) || const DeepCollectionEquality().equals(other.timezone, timezone)) &&
+                other.mUnreadFirst == mUnreadFirst) &&
+            (identical(other.timezone, timezone) ||
+                other.timezone == timezone) &&
             (identical(other.quietTimeStart, quietTimeStart) ||
-                const DeepCollectionEquality().equals(other.quietTimeStart, quietTimeStart)) &&
+                other.quietTimeStart == quietTimeStart) &&
             (identical(other.quietTimeFinish, quietTimeFinish) ||
-                const DeepCollectionEquality().equals(other.quietTimeFinish, quietTimeFinish)) &&
-            (identical(other.icons, icons) || const DeepCollectionEquality().equals(other.icons, icons)));
+                other.quietTimeFinish == quietTimeFinish) &&
+            (identical(other.icons, icons) || other.icons == icons));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(phone) ^
-      const DeepCollectionEquality().hash(email) ^
-      const DeepCollectionEquality().hash(familyName) ^
-      const DeepCollectionEquality().hash(givenName) ^
-      const DeepCollectionEquality().hash(patronymic) ^
-      const DeepCollectionEquality().hash(defaultLang) ^
-      const DeepCollectionEquality().hash(altSend) ^
-      const DeepCollectionEquality().hash(asteriskMention) ^
-      const DeepCollectionEquality().hash(alwaysSendPushes) ^
-      const DeepCollectionEquality().hash(hidePushesContent) ^
-      const DeepCollectionEquality().hash(unreadFirst) ^
-      const DeepCollectionEquality().hash(mUnreadFirst) ^
-      const DeepCollectionEquality().hash(timezone) ^
-      const DeepCollectionEquality().hash(quietTimeStart) ^
-      const DeepCollectionEquality().hash(quietTimeFinish) ^
-      const DeepCollectionEquality().hash(icons);
 
   @JsonKey(ignore: true)
   @override
-  _$UserCopyWith<_User> get copyWith => __$UserCopyWithImpl<_User>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      phone,
+      email,
+      familyName,
+      givenName,
+      patronymic,
+      defaultLang,
+      altSend,
+      asteriskMention,
+      alwaysSendPushes,
+      hidePushesContent,
+      unreadFirst,
+      mUnreadFirst,
+      timezone,
+      quietTimeStart,
+      quietTimeFinish,
+      icons);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_UserCopyWith<_$_User> get copyWith =>
+      __$$_UserCopyWithImpl<_$_User>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UserToJson(this);
+    return _$$_UserToJson(
+      this,
+    );
   }
 }
 
 abstract class _User implements User {
   const factory _User(
-      {@JsonKey(name: 'phone') String? phone,
-      @JsonKey(name: 'email') String? email,
-      @JsonKey(name: 'family_name') String? familyName,
-      @JsonKey(name: 'given_name') String? givenName,
-      @JsonKey(name: 'patronymic') String? patronymic,
-      @JsonKey(name: 'default_lang') String? defaultLang,
-      @JsonKey(name: 'alt_send') required bool altSend,
-      @JsonKey(name: 'asterisk_mention') required bool asteriskMention,
-      @JsonKey(name: 'always_send_pushes') required bool alwaysSendPushes,
-      @JsonKey(name: 'hide_pushes_content') required bool hidePushesContent,
-      @JsonKey(name: 'unread_first') required bool unreadFirst,
-      @JsonKey(name: 'munread_first') required bool mUnreadFirst,
-      @JsonKey(name: 'timezone') required String timezone,
-      @JsonKey(name: 'quiet_time_start') String? quietTimeStart,
-      @JsonKey(name: 'quiet_time_finish') String? quietTimeFinish,
-      @JsonKey(name: 'icons') required IconData icons}) = _$_User;
+      {@JsonKey(name: 'phone')
+          final String? phone,
+      @JsonKey(name: 'email')
+          final String? email,
+      @JsonKey(name: 'family_name')
+          final String? familyName,
+      @JsonKey(name: 'given_name')
+          final String? givenName,
+      @JsonKey(name: 'patronymic')
+          final String? patronymic,
+      @JsonKey(name: 'default_lang')
+          final String? defaultLang,
+      @JsonKey(name: 'alt_send')
+          required final bool altSend,
+      @JsonKey(name: 'asterisk_mention')
+          required final bool asteriskMention,
+      @JsonKey(name: 'always_send_pushes')
+          required final bool alwaysSendPushes,
+      @JsonKey(name: 'hide_pushes_content')
+          required final bool hidePushesContent,
+      @JsonKey(name: 'unread_first')
+          required final bool unreadFirst,
+      @JsonKey(name: 'munread_first')
+          required final bool mUnreadFirst,
+      @JsonKey(name: 'timezone')
+          required final String timezone,
+      @JsonKey(name: 'quiet_time_start')
+          final String? quietTimeStart,
+      @JsonKey(name: 'quiet_time_finish')
+          final String? quietTimeFinish,
+      @JsonKey(name: 'icons')
+          required final IconData icons}) = _$_User;
 
   factory _User.fromJson(Map<String, dynamic> json) = _$_User.fromJson;
 
@@ -582,83 +564,83 @@ abstract class _User implements User {
 
   /// Phone for login.
   @JsonKey(name: 'phone')
-  String? get phone => throw _privateConstructorUsedError;
+  String? get phone;
   @override
 
   /// Email for login.
   @JsonKey(name: 'email')
-  String? get email => throw _privateConstructorUsedError;
+  String? get email;
   @override
 
   /// Family name.
   @JsonKey(name: 'family_name')
-  String? get familyName => throw _privateConstructorUsedError;
+  String? get familyName;
   @override
 
   /// Given name.
   @JsonKey(name: 'given_name')
-  String? get givenName => throw _privateConstructorUsedError;
+  String? get givenName;
   @override
 
   /// Patronymic, if any.
   @JsonKey(name: 'patronymic')
-  String? get patronymic => throw _privateConstructorUsedError;
+  String? get patronymic;
   @override
 
   /// Default language code.
   @JsonKey(name: 'default_lang')
-  String? get defaultLang => throw _privateConstructorUsedError;
+  String? get defaultLang;
   @override
 
   /// Use Ctrl/Cmd + Enter instead Enter.
   @JsonKey(name: 'alt_send')
-  bool get altSend => throw _privateConstructorUsedError;
+  bool get altSend;
   @override
 
   /// Use * as @ for mentions.
   @JsonKey(name: 'asterisk_mention')
-  bool get asteriskMention => throw _privateConstructorUsedError;
+  bool get asteriskMention;
   @override
 
   /// Send pushes even user is online.
   @JsonKey(name: 'always_send_pushes')
-  bool get alwaysSendPushes => throw _privateConstructorUsedError;
+  bool get alwaysSendPushes;
   @override
 
   /// Hide pushes body.
   @JsonKey(name: 'hide_pushes_content')
-  bool get hidePushesContent => throw _privateConstructorUsedError;
+  bool get hidePushesContent;
   @override
 
   /// Show unread chats in chat list first.
   @JsonKey(name: 'unread_first')
-  bool get unreadFirst => throw _privateConstructorUsedError;
+  bool get unreadFirst;
   @override
 
   /// Show unread chats in chat list first on mobiles.
   @JsonKey(name: 'munread_first')
-  bool get mUnreadFirst => throw _privateConstructorUsedError;
+  bool get mUnreadFirst;
   @override
 
   /// Timezone.
   @JsonKey(name: 'timezone')
-  String get timezone => throw _privateConstructorUsedError;
+  String get timezone;
   @override
 
   /// Start silently time (no pushes, no sounds).
   @JsonKey(name: 'quiet_time_start')
-  String? get quietTimeStart => throw _privateConstructorUsedError;
+  String? get quietTimeStart;
   @override
 
   /// Finish silently time (no pushes, no sounds).
   @JsonKey(name: 'quiet_time_finish')
-  String? get quietTimeFinish => throw _privateConstructorUsedError;
+  String? get quietTimeFinish;
   @override
 
   /// Icon data.
   @JsonKey(name: 'icons')
-  IconData get icons => throw _privateConstructorUsedError;
+  IconData get icons;
   @override
   @JsonKey(ignore: true)
-  _$UserCopyWith<_User> get copyWith => throw _privateConstructorUsedError;
+  _$$_UserCopyWith<_$_User> get copyWith => throw _privateConstructorUsedError;
 }

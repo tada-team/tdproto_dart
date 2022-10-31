@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'meetings_get_request.dart';
@@ -11,50 +12,11 @@ part of 'meetings_get_request.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 MeetingsGetRequest _$MeetingsGetRequestFromJson(Map<String, dynamic> json) {
   return _MeetingsGetRequest.fromJson(json);
 }
-
-/// @nodoc
-class _$MeetingsGetRequestTearOff {
-  const _$MeetingsGetRequestTearOff();
-
-  _MeetingsGetRequest call(
-      {@JsonKey(name: 'team_uuid') required String teamUuid,
-      @JsonKey(name: 'date_from') required String dateFrom,
-      @JsonKey(name: 'date_to') required String dateTo,
-      @JsonKey(name: 'limit') int? limit,
-      @JsonKey(name: 'offset') int? offset,
-      @JsonKey(name: 'is_archive') bool? isArchive,
-      @JsonKey(name: 'is_freq') bool? isFreq,
-      @JsonKey(name: 'is_public') bool? isPublic,
-      @JsonKey(name: 'is_outside') bool? isOutside,
-      @JsonKey(name: 'is_required') bool? isRequired,
-      @JsonKey(name: 'members_jids') String? membersJids}) {
-    return _MeetingsGetRequest(
-      teamUuid: teamUuid,
-      dateFrom: dateFrom,
-      dateTo: dateTo,
-      limit: limit,
-      offset: offset,
-      isArchive: isArchive,
-      isFreq: isFreq,
-      isPublic: isPublic,
-      isOutside: isOutside,
-      isRequired: isRequired,
-      membersJids: membersJids,
-    );
-  }
-
-  MeetingsGetRequest fromJson(Map<String, Object> json) {
-    return MeetingsGetRequest.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MeetingsGetRequest = _$MeetingsGetRequestTearOff();
 
 /// @nodoc
 mixin _$MeetingsGetRequest {
@@ -104,13 +66,16 @@ mixin _$MeetingsGetRequest {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $MeetingsGetRequestCopyWith<MeetingsGetRequest> get copyWith => throw _privateConstructorUsedError;
+  $MeetingsGetRequestCopyWith<MeetingsGetRequest> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $MeetingsGetRequestCopyWith<$Res> {
-  factory $MeetingsGetRequestCopyWith(MeetingsGetRequest value, $Res Function(MeetingsGetRequest) then) =
-      _$MeetingsGetRequestCopyWithImpl<$Res>;
+  factory $MeetingsGetRequestCopyWith(
+          MeetingsGetRequest value, $Res Function(MeetingsGetRequest) then) =
+      _$MeetingsGetRequestCopyWithImpl<$Res, MeetingsGetRequest>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'team_uuid') String teamUuid,
       @JsonKey(name: 'date_from') String dateFrom,
@@ -126,18 +91,21 @@ abstract class $MeetingsGetRequestCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MeetingsGetRequestCopyWithImpl<$Res> implements $MeetingsGetRequestCopyWith<$Res> {
+class _$MeetingsGetRequestCopyWithImpl<$Res, $Val extends MeetingsGetRequest>
+    implements $MeetingsGetRequestCopyWith<$Res> {
   _$MeetingsGetRequestCopyWithImpl(this._value, this._then);
 
-  final MeetingsGetRequest _value;
   // ignore: unused_field
-  final $Res Function(MeetingsGetRequest) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? teamUuid = freezed,
-    Object? dateFrom = freezed,
-    Object? dateTo = freezed,
+    Object? teamUuid = null,
+    Object? dateFrom = null,
+    Object? dateTo = null,
     Object? limit = freezed,
     Object? offset = freezed,
     Object? isArchive = freezed,
@@ -148,59 +116,62 @@ class _$MeetingsGetRequestCopyWithImpl<$Res> implements $MeetingsGetRequestCopyW
     Object? membersJids = freezed,
   }) {
     return _then(_value.copyWith(
-      teamUuid: teamUuid == freezed
+      teamUuid: null == teamUuid
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
               as String,
-      dateFrom: dateFrom == freezed
+      dateFrom: null == dateFrom
           ? _value.dateFrom
           : dateFrom // ignore: cast_nullable_to_non_nullable
               as String,
-      dateTo: dateTo == freezed
+      dateTo: null == dateTo
           ? _value.dateTo
           : dateTo // ignore: cast_nullable_to_non_nullable
               as String,
-      limit: limit == freezed
+      limit: freezed == limit
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
               as int?,
-      offset: offset == freezed
+      offset: freezed == offset
           ? _value.offset
           : offset // ignore: cast_nullable_to_non_nullable
               as int?,
-      isArchive: isArchive == freezed
+      isArchive: freezed == isArchive
           ? _value.isArchive
           : isArchive // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isFreq: isFreq == freezed
+      isFreq: freezed == isFreq
           ? _value.isFreq
           : isFreq // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isPublic: isPublic == freezed
+      isPublic: freezed == isPublic
           ? _value.isPublic
           : isPublic // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isOutside: isOutside == freezed
+      isOutside: freezed == isOutside
           ? _value.isOutside
           : isOutside // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isRequired: isRequired == freezed
+      isRequired: freezed == isRequired
           ? _value.isRequired
           : isRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      membersJids: membersJids == freezed
+      membersJids: freezed == membersJids
           ? _value.membersJids
           : membersJids // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MeetingsGetRequestCopyWith<$Res> implements $MeetingsGetRequestCopyWith<$Res> {
-  factory _$MeetingsGetRequestCopyWith(_MeetingsGetRequest value, $Res Function(_MeetingsGetRequest) then) =
-      __$MeetingsGetRequestCopyWithImpl<$Res>;
+abstract class _$$_MeetingsGetRequestCopyWith<$Res>
+    implements $MeetingsGetRequestCopyWith<$Res> {
+  factory _$$_MeetingsGetRequestCopyWith(_$_MeetingsGetRequest value,
+          $Res Function(_$_MeetingsGetRequest) then) =
+      __$$_MeetingsGetRequestCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'team_uuid') String teamUuid,
       @JsonKey(name: 'date_from') String dateFrom,
@@ -216,19 +187,19 @@ abstract class _$MeetingsGetRequestCopyWith<$Res> implements $MeetingsGetRequest
 }
 
 /// @nodoc
-class __$MeetingsGetRequestCopyWithImpl<$Res> extends _$MeetingsGetRequestCopyWithImpl<$Res>
-    implements _$MeetingsGetRequestCopyWith<$Res> {
-  __$MeetingsGetRequestCopyWithImpl(_MeetingsGetRequest _value, $Res Function(_MeetingsGetRequest) _then)
-      : super(_value, (v) => _then(v as _MeetingsGetRequest));
+class __$$_MeetingsGetRequestCopyWithImpl<$Res>
+    extends _$MeetingsGetRequestCopyWithImpl<$Res, _$_MeetingsGetRequest>
+    implements _$$_MeetingsGetRequestCopyWith<$Res> {
+  __$$_MeetingsGetRequestCopyWithImpl(
+      _$_MeetingsGetRequest _value, $Res Function(_$_MeetingsGetRequest) _then)
+      : super(_value, _then);
 
-  @override
-  _MeetingsGetRequest get _value => super._value as _MeetingsGetRequest;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? teamUuid = freezed,
-    Object? dateFrom = freezed,
-    Object? dateTo = freezed,
+    Object? teamUuid = null,
+    Object? dateFrom = null,
+    Object? dateTo = null,
     Object? limit = freezed,
     Object? offset = freezed,
     Object? isArchive = freezed,
@@ -238,48 +209,48 @@ class __$MeetingsGetRequestCopyWithImpl<$Res> extends _$MeetingsGetRequestCopyWi
     Object? isRequired = freezed,
     Object? membersJids = freezed,
   }) {
-    return _then(_MeetingsGetRequest(
-      teamUuid: teamUuid == freezed
+    return _then(_$_MeetingsGetRequest(
+      teamUuid: null == teamUuid
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
               as String,
-      dateFrom: dateFrom == freezed
+      dateFrom: null == dateFrom
           ? _value.dateFrom
           : dateFrom // ignore: cast_nullable_to_non_nullable
               as String,
-      dateTo: dateTo == freezed
+      dateTo: null == dateTo
           ? _value.dateTo
           : dateTo // ignore: cast_nullable_to_non_nullable
               as String,
-      limit: limit == freezed
+      limit: freezed == limit
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
               as int?,
-      offset: offset == freezed
+      offset: freezed == offset
           ? _value.offset
           : offset // ignore: cast_nullable_to_non_nullable
               as int?,
-      isArchive: isArchive == freezed
+      isArchive: freezed == isArchive
           ? _value.isArchive
           : isArchive // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isFreq: isFreq == freezed
+      isFreq: freezed == isFreq
           ? _value.isFreq
           : isFreq // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isPublic: isPublic == freezed
+      isPublic: freezed == isPublic
           ? _value.isPublic
           : isPublic // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isOutside: isOutside == freezed
+      isOutside: freezed == isOutside
           ? _value.isOutside
           : isOutside // ignore: cast_nullable_to_non_nullable
               as bool?,
-      isRequired: isRequired == freezed
+      isRequired: freezed == isRequired
           ? _value.isRequired
           : isRequired // ignore: cast_nullable_to_non_nullable
               as bool?,
-      membersJids: membersJids == freezed
+      membersJids: freezed == membersJids
           ? _value.membersJids
           : membersJids // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -303,61 +274,61 @@ class _$_MeetingsGetRequest implements _MeetingsGetRequest {
       @JsonKey(name: 'is_required') this.isRequired,
       @JsonKey(name: 'members_jids') this.membersJids});
 
-  factory _$_MeetingsGetRequest.fromJson(Map<String, dynamic> json) => _$$_MeetingsGetRequestFromJson(json);
-
-  @override
+  factory _$_MeetingsGetRequest.fromJson(Map<String, dynamic> json) =>
+      _$$_MeetingsGetRequestFromJson(json);
 
   /// .
+  @override
   @JsonKey(name: 'team_uuid')
   final String teamUuid;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'date_from')
   final String dateFrom;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'date_to')
   final String dateTo;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'limit')
   final int? limit;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'offset')
   final int? offset;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'is_archive')
   final bool? isArchive;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'is_freq')
   final bool? isFreq;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'is_public')
   final bool? isPublic;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'is_outside')
   final bool? isOutside;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'is_required')
   final bool? isRequired;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'members_jids')
   final String? membersJids;
 
@@ -369,122 +340,134 @@ class _$_MeetingsGetRequest implements _MeetingsGetRequest {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _MeetingsGetRequest &&
-            (identical(other.teamUuid, teamUuid) || const DeepCollectionEquality().equals(other.teamUuid, teamUuid)) &&
-            (identical(other.dateFrom, dateFrom) || const DeepCollectionEquality().equals(other.dateFrom, dateFrom)) &&
-            (identical(other.dateTo, dateTo) || const DeepCollectionEquality().equals(other.dateTo, dateTo)) &&
-            (identical(other.limit, limit) || const DeepCollectionEquality().equals(other.limit, limit)) &&
-            (identical(other.offset, offset) || const DeepCollectionEquality().equals(other.offset, offset)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_MeetingsGetRequest &&
+            (identical(other.teamUuid, teamUuid) ||
+                other.teamUuid == teamUuid) &&
+            (identical(other.dateFrom, dateFrom) ||
+                other.dateFrom == dateFrom) &&
+            (identical(other.dateTo, dateTo) || other.dateTo == dateTo) &&
+            (identical(other.limit, limit) || other.limit == limit) &&
+            (identical(other.offset, offset) || other.offset == offset) &&
             (identical(other.isArchive, isArchive) ||
-                const DeepCollectionEquality().equals(other.isArchive, isArchive)) &&
-            (identical(other.isFreq, isFreq) || const DeepCollectionEquality().equals(other.isFreq, isFreq)) &&
-            (identical(other.isPublic, isPublic) || const DeepCollectionEquality().equals(other.isPublic, isPublic)) &&
+                other.isArchive == isArchive) &&
+            (identical(other.isFreq, isFreq) || other.isFreq == isFreq) &&
+            (identical(other.isPublic, isPublic) ||
+                other.isPublic == isPublic) &&
             (identical(other.isOutside, isOutside) ||
-                const DeepCollectionEquality().equals(other.isOutside, isOutside)) &&
+                other.isOutside == isOutside) &&
             (identical(other.isRequired, isRequired) ||
-                const DeepCollectionEquality().equals(other.isRequired, isRequired)) &&
+                other.isRequired == isRequired) &&
             (identical(other.membersJids, membersJids) ||
-                const DeepCollectionEquality().equals(other.membersJids, membersJids)));
+                other.membersJids == membersJids));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(teamUuid) ^
-      const DeepCollectionEquality().hash(dateFrom) ^
-      const DeepCollectionEquality().hash(dateTo) ^
-      const DeepCollectionEquality().hash(limit) ^
-      const DeepCollectionEquality().hash(offset) ^
-      const DeepCollectionEquality().hash(isArchive) ^
-      const DeepCollectionEquality().hash(isFreq) ^
-      const DeepCollectionEquality().hash(isPublic) ^
-      const DeepCollectionEquality().hash(isOutside) ^
-      const DeepCollectionEquality().hash(isRequired) ^
-      const DeepCollectionEquality().hash(membersJids);
 
   @JsonKey(ignore: true)
   @override
-  _$MeetingsGetRequestCopyWith<_MeetingsGetRequest> get copyWith =>
-      __$MeetingsGetRequestCopyWithImpl<_MeetingsGetRequest>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      teamUuid,
+      dateFrom,
+      dateTo,
+      limit,
+      offset,
+      isArchive,
+      isFreq,
+      isPublic,
+      isOutside,
+      isRequired,
+      membersJids);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_MeetingsGetRequestCopyWith<_$_MeetingsGetRequest> get copyWith =>
+      __$$_MeetingsGetRequestCopyWithImpl<_$_MeetingsGetRequest>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MeetingsGetRequestToJson(this);
+    return _$$_MeetingsGetRequestToJson(
+      this,
+    );
   }
 }
 
 abstract class _MeetingsGetRequest implements MeetingsGetRequest {
   const factory _MeetingsGetRequest(
-      {@JsonKey(name: 'team_uuid') required String teamUuid,
-      @JsonKey(name: 'date_from') required String dateFrom,
-      @JsonKey(name: 'date_to') required String dateTo,
-      @JsonKey(name: 'limit') int? limit,
-      @JsonKey(name: 'offset') int? offset,
-      @JsonKey(name: 'is_archive') bool? isArchive,
-      @JsonKey(name: 'is_freq') bool? isFreq,
-      @JsonKey(name: 'is_public') bool? isPublic,
-      @JsonKey(name: 'is_outside') bool? isOutside,
-      @JsonKey(name: 'is_required') bool? isRequired,
-      @JsonKey(name: 'members_jids') String? membersJids}) = _$_MeetingsGetRequest;
+          {@JsonKey(name: 'team_uuid') required final String teamUuid,
+          @JsonKey(name: 'date_from') required final String dateFrom,
+          @JsonKey(name: 'date_to') required final String dateTo,
+          @JsonKey(name: 'limit') final int? limit,
+          @JsonKey(name: 'offset') final int? offset,
+          @JsonKey(name: 'is_archive') final bool? isArchive,
+          @JsonKey(name: 'is_freq') final bool? isFreq,
+          @JsonKey(name: 'is_public') final bool? isPublic,
+          @JsonKey(name: 'is_outside') final bool? isOutside,
+          @JsonKey(name: 'is_required') final bool? isRequired,
+          @JsonKey(name: 'members_jids') final String? membersJids}) =
+      _$_MeetingsGetRequest;
 
-  factory _MeetingsGetRequest.fromJson(Map<String, dynamic> json) = _$_MeetingsGetRequest.fromJson;
+  factory _MeetingsGetRequest.fromJson(Map<String, dynamic> json) =
+      _$_MeetingsGetRequest.fromJson;
 
   @override
 
   /// .
   @JsonKey(name: 'team_uuid')
-  String get teamUuid => throw _privateConstructorUsedError;
+  String get teamUuid;
   @override
 
   /// .
   @JsonKey(name: 'date_from')
-  String get dateFrom => throw _privateConstructorUsedError;
+  String get dateFrom;
   @override
 
   /// .
   @JsonKey(name: 'date_to')
-  String get dateTo => throw _privateConstructorUsedError;
+  String get dateTo;
   @override
 
   /// .
   @JsonKey(name: 'limit')
-  int? get limit => throw _privateConstructorUsedError;
+  int? get limit;
   @override
 
   /// .
   @JsonKey(name: 'offset')
-  int? get offset => throw _privateConstructorUsedError;
+  int? get offset;
   @override
 
   /// .
   @JsonKey(name: 'is_archive')
-  bool? get isArchive => throw _privateConstructorUsedError;
+  bool? get isArchive;
   @override
 
   /// .
   @JsonKey(name: 'is_freq')
-  bool? get isFreq => throw _privateConstructorUsedError;
+  bool? get isFreq;
   @override
 
   /// .
   @JsonKey(name: 'is_public')
-  bool? get isPublic => throw _privateConstructorUsedError;
+  bool? get isPublic;
   @override
 
   /// .
   @JsonKey(name: 'is_outside')
-  bool? get isOutside => throw _privateConstructorUsedError;
+  bool? get isOutside;
   @override
 
   /// .
   @JsonKey(name: 'is_required')
-  bool? get isRequired => throw _privateConstructorUsedError;
+  bool? get isRequired;
   @override
 
   /// .
   @JsonKey(name: 'members_jids')
-  String? get membersJids => throw _privateConstructorUsedError;
+  String? get membersJids;
   @override
   @JsonKey(ignore: true)
-  _$MeetingsGetRequestCopyWith<_MeetingsGetRequest> get copyWith => throw _privateConstructorUsedError;
+  _$$_MeetingsGetRequestCopyWith<_$_MeetingsGetRequest> get copyWith =>
+      throw _privateConstructorUsedError;
 }

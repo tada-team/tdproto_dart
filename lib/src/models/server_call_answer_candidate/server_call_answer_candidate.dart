@@ -10,9 +10,11 @@ class ServerCallAnswerCandidate with _$ServerCallAnswerCandidate {
   const factory ServerCallAnswerCandidate({
     /// .
     @JsonKey(name: 'candidate') required String candidate,
-
+    
     /// .
     @JsonKey(name: 'sdpMLineIndex') required int sdpMLineIndex,
+    
+    
   }) = _ServerCallAnswerCandidate;
 
   factory ServerCallAnswerCandidate.fromJson(Map<String, dynamic> json) => _$ServerCallAnswerCandidateFromJson(json);

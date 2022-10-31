@@ -10,8 +10,9 @@ class GetPersonalAccountsListResponse with _$GetPersonalAccountsListResponse {
   const factory GetPersonalAccountsListResponse({
     /// .
     @JsonKey(name: 'personal_accounts') List<PersonalAccountBilling>? personalAccounts,
+    
+    
   }) = _GetPersonalAccountsListResponse;
 
-  factory GetPersonalAccountsListResponse.fromJson(Map<String, dynamic> json) =>
-      _$GetPersonalAccountsListResponseFromJson(json);
+  factory GetPersonalAccountsListResponse.fromJson(Map<String, dynamic> json) => _$GetPersonalAccountsListResponseFromJson(json);
 }

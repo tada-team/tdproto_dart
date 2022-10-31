@@ -10,12 +10,14 @@ class ServerChatDeletedParams with _$ServerChatDeletedParams {
   const factory ServerChatDeletedParams({
     /// List of deleted chats.
     @JsonKey(name: 'chats') required List<DeletedChat> chats,
-
+    
     /// Current team counters.
     @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
-
+    
     /// Total number of unreads.
     @JsonKey(name: 'badge') required int badge,
+    
+    
   }) = _ServerChatDeletedParams;
 
   factory ServerChatDeletedParams.fromJson(Map<String, dynamic> json) => _$ServerChatDeletedParamsFromJson(json);

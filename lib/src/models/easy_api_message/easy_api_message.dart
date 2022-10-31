@@ -10,24 +10,26 @@ class EasyApiMessage with _$EasyApiMessage {
   const factory EasyApiMessage({
     /// Comma separated api keys (for /api/message calls only).
     @JsonKey(name: 'key') required String key,
-
+    
     /// Message text. Required.
     @JsonKey(name: 'message') required String text,
-
+    
     /// Message uuid. Optional.
     @JsonKey(name: 'message_id') required String messageUid,
-
+    
     /// Disable links preview.
     @JsonKey(name: 'nopreview') required bool nopreview,
-
+    
     /// Mark message as important.
     @JsonKey(name: 'important') required bool important,
-
+    
     /// Disable counters and push notifications.
     @JsonKey(name: 'silently') required bool silently,
-
+    
     /// Convert "\\n" to "\n".
     @JsonKey(name: 'convert_linebreaks') required bool convertLinebreaks,
+    
+    
   }) = _EasyApiMessage;
 
   factory EasyApiMessage.fromJson(Map<String, dynamic> json) => _$EasyApiMessageFromJson(json);

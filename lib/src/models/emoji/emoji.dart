@@ -10,9 +10,11 @@ class Emoji with _$Emoji {
   const factory Emoji({
     /// Unicode symbol.
     @JsonKey(name: 'char') required String char,
-
+    
     /// Text representation.
     @JsonKey(name: 'key') required String key,
+    
+    
   }) = _Emoji;
 
   factory Emoji.fromJson(Map<String, dynamic> json) => _$EmojiFromJson(json);

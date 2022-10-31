@@ -6,7 +6,8 @@ part of 'contact_short.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ContactShort _$$_ContactShortFromJson(Map<String, dynamic> json) => _$_ContactShort(
+_$_ContactShort _$$_ContactShortFromJson(Map<String, dynamic> json) =>
+    _$_ContactShort(
       jid: json['jid'] as String,
       displayName: json['display_name'] as String,
       shortName: json['short_name'] as String,
@@ -14,7 +15,8 @@ _$_ContactShort _$$_ContactShortFromJson(Map<String, dynamic> json) => _$_Contac
       gentime: json['gentime'] as int,
     );
 
-Map<String, dynamic> _$$_ContactShortToJson(_$_ContactShort instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ContactShortToJson(_$_ContactShort instance) =>
+    <String, dynamic>{
       'jid': instance.jid,
       'display_name': instance.displayName,
       'short_name': instance.shortName,

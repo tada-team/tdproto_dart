@@ -6,13 +6,16 @@ part of 'server_call_buzz.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ServerCallBuzz _$$_ServerCallBuzzFromJson(Map<String, dynamic> json) => _$_ServerCallBuzz(
-      params: ServerCallBuzzParams.fromJson(json['params'] as Map<String, dynamic>),
+_$_ServerCallBuzz _$$_ServerCallBuzzFromJson(Map<String, dynamic> json) =>
+    _$_ServerCallBuzz(
+      params:
+          ServerCallBuzzParams.fromJson(json['params'] as Map<String, dynamic>),
       name: json['event'] as String,
       confirmId: json['confirm_id'] as String?,
     );
 
-Map<String, dynamic> _$$_ServerCallBuzzToJson(_$_ServerCallBuzz instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ServerCallBuzzToJson(_$_ServerCallBuzz instance) =>
+    <String, dynamic>{
       'params': instance.params.toJson(),
       'event': instance.name,
       'confirm_id': instance.confirmId,

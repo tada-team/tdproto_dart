@@ -10,12 +10,14 @@ class ClientCallScreenShare with _$ClientCallScreenShare {
   const factory ClientCallScreenShare({
     /// .
     @JsonKey(name: 'params') required ClientCallScreenShareParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ClientCallScreenShare;
 
   factory ClientCallScreenShare.fromJson(Map<String, dynamic> json) => _$ClientCallScreenShareFromJson(json);

@@ -10,8 +10,9 @@ class CreateChangeTariffOnPersonalAccountResponse with _$CreateChangeTariffOnPer
   const factory CreateChangeTariffOnPersonalAccountResponse({
     /// .
     @JsonKey(name: 'success') bool? success,
+    
+    
   }) = _CreateChangeTariffOnPersonalAccountResponse;
 
-  factory CreateChangeTariffOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$CreateChangeTariffOnPersonalAccountResponseFromJson(json);
+  factory CreateChangeTariffOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$CreateChangeTariffOnPersonalAccountResponseFromJson(json);
 }

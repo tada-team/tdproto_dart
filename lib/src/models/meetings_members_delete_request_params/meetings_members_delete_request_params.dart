@@ -10,8 +10,9 @@ class MeetingsMembersDeleteRequestParams with _$MeetingsMembersDeleteRequestPara
   const factory MeetingsMembersDeleteRequestParams({
     /// .
     @JsonKey(name: 'team_uuid') required String teamUuid,
+    
+    
   }) = _MeetingsMembersDeleteRequestParams;
 
-  factory MeetingsMembersDeleteRequestParams.fromJson(Map<String, dynamic> json) =>
-      _$MeetingsMembersDeleteRequestParamsFromJson(json);
+  factory MeetingsMembersDeleteRequestParams.fromJson(Map<String, dynamic> json) => _$MeetingsMembersDeleteRequestParamsFromJson(json);
 }

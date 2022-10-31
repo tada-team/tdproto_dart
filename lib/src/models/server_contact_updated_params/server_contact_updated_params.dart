@@ -10,6 +10,8 @@ class ServerContactUpdatedParams with _$ServerContactUpdatedParams {
   const factory ServerContactUpdatedParams({
     /// Contact info.
     @JsonKey(name: 'contacts') required List<Contact> contacts,
+    
+    
   }) = _ServerContactUpdatedParams;
 
   factory ServerContactUpdatedParams.fromJson(Map<String, dynamic> json) => _$ServerContactUpdatedParamsFromJson(json);

@@ -10,8 +10,9 @@ class ActivateWorkplacesOnPersonalAccountResponse with _$ActivateWorkplacesOnPer
   const factory ActivateWorkplacesOnPersonalAccountResponse({
     /// .
     @JsonKey(name: 'success') bool? success,
+    
+    
   }) = _ActivateWorkplacesOnPersonalAccountResponse;
 
-  factory ActivateWorkplacesOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$ActivateWorkplacesOnPersonalAccountResponseFromJson(json);
+  factory ActivateWorkplacesOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$ActivateWorkplacesOnPersonalAccountResponseFromJson(json);
 }

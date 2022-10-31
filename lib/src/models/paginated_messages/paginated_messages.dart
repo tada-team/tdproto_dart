@@ -10,15 +10,17 @@ class PaginatedMessages with _$PaginatedMessages {
   const factory PaginatedMessages({
     /// .
     @JsonKey(name: 'objects') required List<Message> objects,
-
+    
     /// .
     @JsonKey(name: 'count') required int count,
-
+    
     /// .
     @JsonKey(name: 'limit') required int limit,
-
+    
     /// .
     @JsonKey(name: 'offset') required int offset,
+    
+    
   }) = _PaginatedMessages;
 
   factory PaginatedMessages.fromJson(Map<String, dynamic> json) => _$PaginatedMessagesFromJson(json);

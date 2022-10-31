@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'integration.dart';
@@ -11,46 +12,11 @@ part of 'integration.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Integration _$IntegrationFromJson(Map<String, dynamic> json) {
   return _Integration.fromJson(json);
 }
-
-/// @nodoc
-class _$IntegrationTearOff {
-  const _$IntegrationTearOff();
-
-  _Integration call(
-      {@JsonKey(name: 'uid') String? uid,
-      @JsonKey(name: 'comment') required String comment,
-      @JsonKey(name: 'created') @DateTimeConverter() DateTime? created,
-      @JsonKey(name: 'enabled') required bool enabled,
-      @JsonKey(name: 'form') required IntegrationForm form,
-      @JsonKey(name: 'group') required String group,
-      @JsonKey(name: 'help') String? help,
-      @JsonKey(name: 'kind') required String kind,
-      @JsonKey(name: '-') required String title}) {
-    return _Integration(
-      uid: uid,
-      comment: comment,
-      created: created,
-      enabled: enabled,
-      form: form,
-      group: group,
-      help: help,
-      kind: kind,
-      title: title,
-    );
-  }
-
-  Integration fromJson(Map<String, Object> json) {
-    return Integration.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Integration = _$IntegrationTearOff();
 
 /// @nodoc
 mixin _$Integration {
@@ -93,12 +59,16 @@ mixin _$Integration {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $IntegrationCopyWith<Integration> get copyWith => throw _privateConstructorUsedError;
+  $IntegrationCopyWith<Integration> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $IntegrationCopyWith<$Res> {
-  factory $IntegrationCopyWith(Integration value, $Res Function(Integration) then) = _$IntegrationCopyWithImpl<$Res>;
+  factory $IntegrationCopyWith(
+          Integration value, $Res Function(Integration) then) =
+      _$IntegrationCopyWithImpl<$Res, Integration>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'uid') String? uid,
       @JsonKey(name: 'comment') String comment,
@@ -114,78 +84,85 @@ abstract class $IntegrationCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$IntegrationCopyWithImpl<$Res> implements $IntegrationCopyWith<$Res> {
+class _$IntegrationCopyWithImpl<$Res, $Val extends Integration>
+    implements $IntegrationCopyWith<$Res> {
   _$IntegrationCopyWithImpl(this._value, this._then);
 
-  final Integration _value;
   // ignore: unused_field
-  final $Res Function(Integration) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? uid = freezed,
-    Object? comment = freezed,
+    Object? comment = null,
     Object? created = freezed,
-    Object? enabled = freezed,
-    Object? form = freezed,
-    Object? group = freezed,
+    Object? enabled = null,
+    Object? form = null,
+    Object? group = null,
     Object? help = freezed,
-    Object? kind = freezed,
-    Object? title = freezed,
+    Object? kind = null,
+    Object? title = null,
   }) {
     return _then(_value.copyWith(
-      uid: uid == freezed
+      uid: freezed == uid
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
               as String?,
-      comment: comment == freezed
+      comment: null == comment
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
               as String,
-      created: created == freezed
+      created: freezed == created
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      enabled: enabled == freezed
+      enabled: null == enabled
           ? _value.enabled
           : enabled // ignore: cast_nullable_to_non_nullable
               as bool,
-      form: form == freezed
+      form: null == form
           ? _value.form
           : form // ignore: cast_nullable_to_non_nullable
               as IntegrationForm,
-      group: group == freezed
+      group: null == group
           ? _value.group
           : group // ignore: cast_nullable_to_non_nullable
               as String,
-      help: help == freezed
+      help: freezed == help
           ? _value.help
           : help // ignore: cast_nullable_to_non_nullable
               as String?,
-      kind: kind == freezed
+      kind: null == kind
           ? _value.kind
           : kind // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $IntegrationFormCopyWith<$Res> get form {
     return $IntegrationFormCopyWith<$Res>(_value.form, (value) {
-      return _then(_value.copyWith(form: value));
+      return _then(_value.copyWith(form: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$IntegrationCopyWith<$Res> implements $IntegrationCopyWith<$Res> {
-  factory _$IntegrationCopyWith(_Integration value, $Res Function(_Integration) then) =
-      __$IntegrationCopyWithImpl<$Res>;
+abstract class _$$_IntegrationCopyWith<$Res>
+    implements $IntegrationCopyWith<$Res> {
+  factory _$$_IntegrationCopyWith(
+          _$_Integration value, $Res Function(_$_Integration) then) =
+      __$$_IntegrationCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'uid') String? uid,
       @JsonKey(name: 'comment') String comment,
@@ -202,59 +179,60 @@ abstract class _$IntegrationCopyWith<$Res> implements $IntegrationCopyWith<$Res>
 }
 
 /// @nodoc
-class __$IntegrationCopyWithImpl<$Res> extends _$IntegrationCopyWithImpl<$Res> implements _$IntegrationCopyWith<$Res> {
-  __$IntegrationCopyWithImpl(_Integration _value, $Res Function(_Integration) _then)
-      : super(_value, (v) => _then(v as _Integration));
+class __$$_IntegrationCopyWithImpl<$Res>
+    extends _$IntegrationCopyWithImpl<$Res, _$_Integration>
+    implements _$$_IntegrationCopyWith<$Res> {
+  __$$_IntegrationCopyWithImpl(
+      _$_Integration _value, $Res Function(_$_Integration) _then)
+      : super(_value, _then);
 
-  @override
-  _Integration get _value => super._value as _Integration;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? uid = freezed,
-    Object? comment = freezed,
+    Object? comment = null,
     Object? created = freezed,
-    Object? enabled = freezed,
-    Object? form = freezed,
-    Object? group = freezed,
+    Object? enabled = null,
+    Object? form = null,
+    Object? group = null,
     Object? help = freezed,
-    Object? kind = freezed,
-    Object? title = freezed,
+    Object? kind = null,
+    Object? title = null,
   }) {
-    return _then(_Integration(
-      uid: uid == freezed
+    return _then(_$_Integration(
+      uid: freezed == uid
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
               as String?,
-      comment: comment == freezed
+      comment: null == comment
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
               as String,
-      created: created == freezed
+      created: freezed == created
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      enabled: enabled == freezed
+      enabled: null == enabled
           ? _value.enabled
           : enabled // ignore: cast_nullable_to_non_nullable
               as bool,
-      form: form == freezed
+      form: null == form
           ? _value.form
           : form // ignore: cast_nullable_to_non_nullable
               as IntegrationForm,
-      group: group == freezed
+      group: null == group
           ? _value.group
           : group // ignore: cast_nullable_to_non_nullable
               as String,
-      help: help == freezed
+      help: freezed == help
           ? _value.help
           : help // ignore: cast_nullable_to_non_nullable
               as String?,
-      kind: kind == freezed
+      kind: null == kind
           ? _value.kind
           : kind // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
@@ -276,52 +254,52 @@ class _$_Integration implements _Integration {
       @JsonKey(name: 'kind') required this.kind,
       @JsonKey(name: '-') required this.title});
 
-  factory _$_Integration.fromJson(Map<String, dynamic> json) => _$$_IntegrationFromJson(json);
-
-  @override
+  factory _$_Integration.fromJson(Map<String, dynamic> json) =>
+      _$$_IntegrationFromJson(json);
 
   /// Id.
+  @override
   @JsonKey(name: 'uid')
   final String? uid;
-  @override
 
   /// Comment, if any.
+  @override
   @JsonKey(name: 'comment')
   final String comment;
-  @override
 
   /// Creation datetime, iso.
+  @override
   @JsonKey(name: 'created')
   @DateTimeConverter()
   final DateTime? created;
-  @override
 
   /// Integration enabled.
+  @override
   @JsonKey(name: 'enabled')
   final bool enabled;
-  @override
 
   /// Integration form.
+  @override
   @JsonKey(name: 'form')
   final IntegrationForm form;
-  @override
 
   /// Chat id.
+  @override
   @JsonKey(name: 'group')
   final String group;
-  @override
 
   /// Full description.
+  @override
   @JsonKey(name: 'help')
   final String? help;
-  @override
 
   /// Unique integration name.
+  @override
   @JsonKey(name: 'kind')
   final String kind;
-  @override
 
   /// .
+  @override
   @JsonKey(name: '-')
   final String title;
 
@@ -333,102 +311,101 @@ class _$_Integration implements _Integration {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Integration &&
-            (identical(other.uid, uid) || const DeepCollectionEquality().equals(other.uid, uid)) &&
-            (identical(other.comment, comment) || const DeepCollectionEquality().equals(other.comment, comment)) &&
-            (identical(other.created, created) || const DeepCollectionEquality().equals(other.created, created)) &&
-            (identical(other.enabled, enabled) || const DeepCollectionEquality().equals(other.enabled, enabled)) &&
-            (identical(other.form, form) || const DeepCollectionEquality().equals(other.form, form)) &&
-            (identical(other.group, group) || const DeepCollectionEquality().equals(other.group, group)) &&
-            (identical(other.help, help) || const DeepCollectionEquality().equals(other.help, help)) &&
-            (identical(other.kind, kind) || const DeepCollectionEquality().equals(other.kind, kind)) &&
-            (identical(other.title, title) || const DeepCollectionEquality().equals(other.title, title)));
+        (other.runtimeType == runtimeType &&
+            other is _$_Integration &&
+            (identical(other.uid, uid) || other.uid == uid) &&
+            (identical(other.comment, comment) || other.comment == comment) &&
+            (identical(other.created, created) || other.created == created) &&
+            (identical(other.enabled, enabled) || other.enabled == enabled) &&
+            (identical(other.form, form) || other.form == form) &&
+            (identical(other.group, group) || other.group == group) &&
+            (identical(other.help, help) || other.help == help) &&
+            (identical(other.kind, kind) || other.kind == kind) &&
+            (identical(other.title, title) || other.title == title));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(uid) ^
-      const DeepCollectionEquality().hash(comment) ^
-      const DeepCollectionEquality().hash(created) ^
-      const DeepCollectionEquality().hash(enabled) ^
-      const DeepCollectionEquality().hash(form) ^
-      const DeepCollectionEquality().hash(group) ^
-      const DeepCollectionEquality().hash(help) ^
-      const DeepCollectionEquality().hash(kind) ^
-      const DeepCollectionEquality().hash(title);
 
   @JsonKey(ignore: true)
   @override
-  _$IntegrationCopyWith<_Integration> get copyWith => __$IntegrationCopyWithImpl<_Integration>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, uid, comment, created, enabled,
+      form, group, help, kind, title);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_IntegrationCopyWith<_$_Integration> get copyWith =>
+      __$$_IntegrationCopyWithImpl<_$_Integration>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_IntegrationToJson(this);
+    return _$$_IntegrationToJson(
+      this,
+    );
   }
 }
 
 abstract class _Integration implements Integration {
   const factory _Integration(
-      {@JsonKey(name: 'uid') String? uid,
-      @JsonKey(name: 'comment') required String comment,
-      @JsonKey(name: 'created') @DateTimeConverter() DateTime? created,
-      @JsonKey(name: 'enabled') required bool enabled,
-      @JsonKey(name: 'form') required IntegrationForm form,
-      @JsonKey(name: 'group') required String group,
-      @JsonKey(name: 'help') String? help,
-      @JsonKey(name: 'kind') required String kind,
-      @JsonKey(name: '-') required String title}) = _$_Integration;
+      {@JsonKey(name: 'uid') final String? uid,
+      @JsonKey(name: 'comment') required final String comment,
+      @JsonKey(name: 'created') @DateTimeConverter() final DateTime? created,
+      @JsonKey(name: 'enabled') required final bool enabled,
+      @JsonKey(name: 'form') required final IntegrationForm form,
+      @JsonKey(name: 'group') required final String group,
+      @JsonKey(name: 'help') final String? help,
+      @JsonKey(name: 'kind') required final String kind,
+      @JsonKey(name: '-') required final String title}) = _$_Integration;
 
-  factory _Integration.fromJson(Map<String, dynamic> json) = _$_Integration.fromJson;
+  factory _Integration.fromJson(Map<String, dynamic> json) =
+      _$_Integration.fromJson;
 
   @override
 
   /// Id.
   @JsonKey(name: 'uid')
-  String? get uid => throw _privateConstructorUsedError;
+  String? get uid;
   @override
 
   /// Comment, if any.
   @JsonKey(name: 'comment')
-  String get comment => throw _privateConstructorUsedError;
+  String get comment;
   @override
 
   /// Creation datetime, iso.
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime? get created => throw _privateConstructorUsedError;
+  DateTime? get created;
   @override
 
   /// Integration enabled.
   @JsonKey(name: 'enabled')
-  bool get enabled => throw _privateConstructorUsedError;
+  bool get enabled;
   @override
 
   /// Integration form.
   @JsonKey(name: 'form')
-  IntegrationForm get form => throw _privateConstructorUsedError;
+  IntegrationForm get form;
   @override
 
   /// Chat id.
   @JsonKey(name: 'group')
-  String get group => throw _privateConstructorUsedError;
+  String get group;
   @override
 
   /// Full description.
   @JsonKey(name: 'help')
-  String? get help => throw _privateConstructorUsedError;
+  String? get help;
   @override
 
   /// Unique integration name.
   @JsonKey(name: 'kind')
-  String get kind => throw _privateConstructorUsedError;
+  String get kind;
   @override
 
   /// .
   @JsonKey(name: '-')
-  String get title => throw _privateConstructorUsedError;
+  String get title;
   @override
   @JsonKey(ignore: true)
-  _$IntegrationCopyWith<_Integration> get copyWith => throw _privateConstructorUsedError;
+  _$$_IntegrationCopyWith<_$_Integration> get copyWith =>
+      throw _privateConstructorUsedError;
 }

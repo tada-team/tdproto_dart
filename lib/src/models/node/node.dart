@@ -10,12 +10,14 @@ class Node with _$Node {
   const factory Node({
     /// Node uid.
     @JsonKey(name: 'uid') required String uid,
-
+    
     /// Node title.
     @JsonKey(name: 'title') required String title,
-
+    
     /// Synchronization with node works.
     @JsonKey(name: 'enabled') required bool enabled,
+    
+    
   }) = _Node;
 
   factory Node.fromJson(Map<String, dynamic> json) => _$NodeFromJson(json);

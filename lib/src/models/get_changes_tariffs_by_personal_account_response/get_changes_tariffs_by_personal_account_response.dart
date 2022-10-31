@@ -10,8 +10,9 @@ class GetChangesTariffsByPersonalAccountResponse with _$GetChangesTariffsByPerso
   const factory GetChangesTariffsByPersonalAccountResponse({
     /// .
     @JsonKey(name: 'tariffs_changes') List<ChangeTariffBilling>? tariffsChanges,
+    
+    
   }) = _GetChangesTariffsByPersonalAccountResponse;
 
-  factory GetChangesTariffsByPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$GetChangesTariffsByPersonalAccountResponseFromJson(json);
+  factory GetChangesTariffsByPersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$GetChangesTariffsByPersonalAccountResponseFromJson(json);
 }

@@ -6,7 +6,8 @@ part of 'message_push.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MessagePush _$$_MessagePushFromJson(Map<String, dynamic> json) => _$_MessagePush(
+_$_MessagePush _$$_MessagePushFromJson(Map<String, dynamic> json) =>
+    _$_MessagePush(
       title: json['title'] as String,
       subtitle: json['subtitle'] as String,
       message: json['message'] as String,
@@ -20,7 +21,8 @@ _$_MessagePush _$$_MessagePushFromJson(Map<String, dynamic> json) => _$_MessageP
       created: const DateTimeConverter().fromJson(json['created'] as String),
     );
 
-Map<String, dynamic> _$$_MessagePushToJson(_$_MessagePush instance) => <String, dynamic>{
+Map<String, dynamic> _$$_MessagePushToJson(_$_MessagePush instance) =>
+    <String, dynamic>{
       'title': instance.title,
       'subtitle': instance.subtitle,
       'message': instance.message,

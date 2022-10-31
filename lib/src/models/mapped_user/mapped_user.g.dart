@@ -6,8 +6,11 @@ part of 'mapped_user.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MappedUser _$$_MappedUserFromJson(Map<String, dynamic> json) => _$_MappedUser(
-      contact: json['contact'] == null ? null : Contact.fromJson(json['contact'] as Map<String, dynamic>),
+_$_MappedUser _$$_MappedUserFromJson(Map<String, dynamic> json) =>
+    _$_MappedUser(
+      contact: json['contact'] == null
+          ? null
+          : Contact.fromJson(json['contact'] as Map<String, dynamic>),
       externalUserID: json['external_user_id'] as String,
       externalUserName: json['external_user_name'] as String,
       isDeleted: json['is_deleted'] as bool,
@@ -15,7 +18,8 @@ _$_MappedUser _$$_MappedUserFromJson(Map<String, dynamic> json) => _$_MappedUser
       isAdmin: json['is_admin'] as bool,
     );
 
-Map<String, dynamic> _$$_MappedUserToJson(_$_MappedUser instance) => <String, dynamic>{
+Map<String, dynamic> _$$_MappedUserToJson(_$_MappedUser instance) =>
+    <String, dynamic>{
       'contact': instance.contact?.toJson(),
       'external_user_id': instance.externalUserID,
       'external_user_name': instance.externalUserName,

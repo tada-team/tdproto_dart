@@ -10,12 +10,14 @@ class ServerCallSdpParams with _$ServerCallSdpParams {
   const factory ServerCallSdpParams({
     /// Chat or contact id.
     @JsonKey(name: 'jid') required String jid,
-
+    
     /// Call id.
     @JsonKey(name: 'uid') required String uid,
-
+    
     /// SDP data.
     @JsonKey(name: 'jsep') required JSEP jsep,
+    
+    
   }) = _ServerCallSdpParams;
 
   factory ServerCallSdpParams.fromJson(Map<String, dynamic> json) => _$ServerCallSdpParamsFromJson(json);

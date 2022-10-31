@@ -10,8 +10,9 @@ class DeleteChangeTariffOnPersonalAccountRequest with _$DeleteChangeTariffOnPers
   const factory DeleteChangeTariffOnPersonalAccountRequest({
     /// .
     @JsonKey(name: 'tariff_id') required String tariffId,
+    
+    
   }) = _DeleteChangeTariffOnPersonalAccountRequest;
 
-  factory DeleteChangeTariffOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
-      _$DeleteChangeTariffOnPersonalAccountRequestFromJson(json);
+  factory DeleteChangeTariffOnPersonalAccountRequest.fromJson(Map<String, dynamic> json) => _$DeleteChangeTariffOnPersonalAccountRequestFromJson(json);
 }

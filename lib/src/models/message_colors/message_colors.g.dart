@@ -6,7 +6,8 @@ part of 'message_colors.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MessageColors _$$_MessageColorsFromJson(Map<String, dynamic> json) => _$_MessageColors(
+_$_MessageColors _$$_MessageColorsFromJson(Map<String, dynamic> json) =>
+    _$_MessageColors(
       bubbleSent: json['bubble_sent'] as String,
       bubbleReceived: json['bubble_received'] as String,
       bubbleImportant: json['bubble_important'] as String,
@@ -15,7 +16,8 @@ _$_MessageColors _$$_MessageColorsFromJson(Map<String, dynamic> json) => _$_Mess
       allocated: json['allocated'] as String,
     );
 
-Map<String, dynamic> _$$_MessageColorsToJson(_$_MessageColors instance) => <String, dynamic>{
+Map<String, dynamic> _$$_MessageColorsToJson(_$_MessageColors instance) =>
+    <String, dynamic>{
       'bubble_sent': instance.bubbleSent,
       'bubble_received': instance.bubbleReceived,
       'bubble_important': instance.bubbleImportant,

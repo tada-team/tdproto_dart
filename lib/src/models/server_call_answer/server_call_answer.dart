@@ -10,12 +10,14 @@ class ServerCallAnswer with _$ServerCallAnswer {
   const factory ServerCallAnswer({
     /// .
     @JsonKey(name: 'params') required ServerCallAnswerParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerCallAnswer;
 
   factory ServerCallAnswer.fromJson(Map<String, dynamic> json) => _$ServerCallAnswerFromJson(json);

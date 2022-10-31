@@ -6,7 +6,8 @@ part of 'd_l_p_user_data.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_DLPUserData _$$_DLPUserDataFromJson(Map<String, dynamic> json) => _$_DLPUserData(
+_$_DLPUserData _$$_DLPUserDataFromJson(Map<String, dynamic> json) =>
+    _$_DLPUserData(
       uuid: json['uuid'] as String,
       contactUUID: json['contact_uuid'] as String,
       name: json['name'] as String,
@@ -19,7 +20,8 @@ _$_DLPUserData _$$_DLPUserDataFromJson(Map<String, dynamic> json) => _$_DLPUserD
       isBot: json['is_bot'] as bool,
     );
 
-Map<String, dynamic> _$$_DLPUserDataToJson(_$_DLPUserData instance) => <String, dynamic>{
+Map<String, dynamic> _$$_DLPUserDataToJson(_$_DLPUserData instance) =>
+    <String, dynamic>{
       'uuid': instance.uuid,
       'contact_uuid': instance.contactUUID,
       'name': instance.name,

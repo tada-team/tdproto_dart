@@ -10,8 +10,9 @@ class GetTeamsOnPersonalAccountResponse with _$GetTeamsOnPersonalAccountResponse
   const factory GetTeamsOnPersonalAccountResponse({
     /// .
     @JsonKey(name: 'teams') required List<GetTeamOnPersonalAccountResponse> teams,
+    
+    
   }) = _GetTeamsOnPersonalAccountResponse;
 
-  factory GetTeamsOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
-      _$GetTeamsOnPersonalAccountResponseFromJson(json);
+  factory GetTeamsOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) => _$GetTeamsOnPersonalAccountResponseFromJson(json);
 }

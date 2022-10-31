@@ -10,29 +10,30 @@ class CreateBillingContactRequest with _$CreateBillingContactRequest {
   const factory CreateBillingContactRequest({
     /// .
     @JsonKey(name: 'phone') required String phone,
-
+    
     /// .
     @JsonKey(name: 'given_name') String? givenName,
-
+    
     /// .
     @JsonKey(name: 'family_name') String? familyName,
-
+    
     /// .
     @JsonKey(name: 'patronymic') String? patronymic,
-
+    
     /// .
     @JsonKey(name: 'status') String? status,
-
+    
     /// .
     @JsonKey(name: 'role') String? role,
-
+    
     /// .
     @JsonKey(name: 'user_uid') String? userUid,
-
+    
     /// .
     @JsonKey(name: 'sections') List<String>? sections,
+    
+    
   }) = _CreateBillingContactRequest;
 
-  factory CreateBillingContactRequest.fromJson(Map<String, dynamic> json) =>
-      _$CreateBillingContactRequestFromJson(json);
+  factory CreateBillingContactRequest.fromJson(Map<String, dynamic> json) => _$CreateBillingContactRequestFromJson(json);
 }

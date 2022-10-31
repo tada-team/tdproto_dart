@@ -6,7 +6,9 @@ part of 'create_tariff_request.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CreateTariffRequest _$$_CreateTariffRequestFromJson(Map<String, dynamic> json) => _$_CreateTariffRequest(
+_$_CreateTariffRequest _$$_CreateTariffRequestFromJson(
+        Map<String, dynamic> json) =>
+    _$_CreateTariffRequest(
       closeDate: json['close_date'] as String?,
       costWorkplace: json['cost_workplace'] as String?,
       currency: json['currency'] as String,
@@ -27,7 +29,9 @@ _$_CreateTariffRequest _$$_CreateTariffRequestFromJson(Map<String, dynamic> json
       tariffName: json['tariff_name'] as String,
     );
 
-Map<String, dynamic> _$$_CreateTariffRequestToJson(_$_CreateTariffRequest instance) => <String, dynamic>{
+Map<String, dynamic> _$$_CreateTariffRequestToJson(
+        _$_CreateTariffRequest instance) =>
+    <String, dynamic>{
       'close_date': instance.closeDate,
       'cost_workplace': instance.costWorkplace,
       'currency': instance.currency,

@@ -10,9 +10,11 @@ class MyReactions with _$MyReactions {
   const factory MyReactions({
     /// My frequently used reactions.
     @JsonKey(name: 'top') required List<Reaction> top,
-
+    
     /// All available reactions.
     @JsonKey(name: 'all') required List<Reaction> all,
+    
+    
   }) = _MyReactions;
 
   factory MyReactions.fromJson(Map<String, dynamic> json) => _$MyReactionsFromJson(json);

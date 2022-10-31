@@ -10,11 +10,12 @@ class DeleteTeamFromPersonalAccountRequest with _$DeleteTeamFromPersonalAccountR
   const factory DeleteTeamFromPersonalAccountRequest({
     /// .
     @JsonKey(name: 'team_uuid') String? teamUuid,
-
+    
     /// .
     @JsonKey(name: 'delete_date') String? deleteDate,
+    
+    
   }) = _DeleteTeamFromPersonalAccountRequest;
 
-  factory DeleteTeamFromPersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
-      _$DeleteTeamFromPersonalAccountRequestFromJson(json);
+  factory DeleteTeamFromPersonalAccountRequest.fromJson(Map<String, dynamic> json) => _$DeleteTeamFromPersonalAccountRequestFromJson(json);
 }

@@ -6,7 +6,8 @@ part of 'swipe_colors.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_SwipeColors _$$_SwipeColorsFromJson(Map<String, dynamic> json) => _$_SwipeColors(
+_$_SwipeColors _$$_SwipeColorsFromJson(Map<String, dynamic> json) =>
+    _$_SwipeColors(
       notification: json['notification'] as String,
       call: json['call'] as String,
       endCall: json['end_call'] as String,
@@ -15,7 +16,8 @@ _$_SwipeColors _$$_SwipeColorsFromJson(Map<String, dynamic> json) => _$_SwipeCol
       message: json['message'] as String,
     );
 
-Map<String, dynamic> _$$_SwipeColorsToJson(_$_SwipeColors instance) => <String, dynamic>{
+Map<String, dynamic> _$$_SwipeColorsToJson(_$_SwipeColors instance) =>
+    <String, dynamic>{
       'notification': instance.notification,
       'call': instance.call,
       'end_call': instance.endCall,

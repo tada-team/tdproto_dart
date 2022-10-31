@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'change_tariff_billing.dart';
@@ -11,36 +12,11 @@ part of 'change_tariff_billing.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ChangeTariffBilling _$ChangeTariffBillingFromJson(Map<String, dynamic> json) {
   return _ChangeTariffBilling.fromJson(json);
 }
-
-/// @nodoc
-class _$ChangeTariffBillingTearOff {
-  const _$ChangeTariffBillingTearOff();
-
-  _ChangeTariffBilling call(
-      {@JsonKey(name: 'tariff_id') required String tariffId,
-      @JsonKey(name: 'open_date') String? openDate,
-      @JsonKey(name: 'close_date') String? closeDate,
-      @JsonKey(name: 'create_date') String? createDate}) {
-    return _ChangeTariffBilling(
-      tariffId: tariffId,
-      openDate: openDate,
-      closeDate: closeDate,
-      createDate: createDate,
-    );
-  }
-
-  ChangeTariffBilling fromJson(Map<String, Object> json) {
-    return ChangeTariffBilling.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ChangeTariffBilling = _$ChangeTariffBillingTearOff();
 
 /// @nodoc
 mixin _$ChangeTariffBilling {
@@ -62,13 +38,16 @@ mixin _$ChangeTariffBilling {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ChangeTariffBillingCopyWith<ChangeTariffBilling> get copyWith => throw _privateConstructorUsedError;
+  $ChangeTariffBillingCopyWith<ChangeTariffBilling> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ChangeTariffBillingCopyWith<$Res> {
-  factory $ChangeTariffBillingCopyWith(ChangeTariffBilling value, $Res Function(ChangeTariffBilling) then) =
-      _$ChangeTariffBillingCopyWithImpl<$Res>;
+  factory $ChangeTariffBillingCopyWith(
+          ChangeTariffBilling value, $Res Function(ChangeTariffBilling) then) =
+      _$ChangeTariffBillingCopyWithImpl<$Res, ChangeTariffBilling>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'tariff_id') String tariffId,
       @JsonKey(name: 'open_date') String? openDate,
@@ -77,46 +56,52 @@ abstract class $ChangeTariffBillingCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ChangeTariffBillingCopyWithImpl<$Res> implements $ChangeTariffBillingCopyWith<$Res> {
+class _$ChangeTariffBillingCopyWithImpl<$Res, $Val extends ChangeTariffBilling>
+    implements $ChangeTariffBillingCopyWith<$Res> {
   _$ChangeTariffBillingCopyWithImpl(this._value, this._then);
 
-  final ChangeTariffBilling _value;
   // ignore: unused_field
-  final $Res Function(ChangeTariffBilling) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? tariffId = freezed,
+    Object? tariffId = null,
     Object? openDate = freezed,
     Object? closeDate = freezed,
     Object? createDate = freezed,
   }) {
     return _then(_value.copyWith(
-      tariffId: tariffId == freezed
+      tariffId: null == tariffId
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
               as String,
-      openDate: openDate == freezed
+      openDate: freezed == openDate
           ? _value.openDate
           : openDate // ignore: cast_nullable_to_non_nullable
               as String?,
-      closeDate: closeDate == freezed
+      closeDate: freezed == closeDate
           ? _value.closeDate
           : closeDate // ignore: cast_nullable_to_non_nullable
               as String?,
-      createDate: createDate == freezed
+      createDate: freezed == createDate
           ? _value.createDate
           : createDate // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ChangeTariffBillingCopyWith<$Res> implements $ChangeTariffBillingCopyWith<$Res> {
-  factory _$ChangeTariffBillingCopyWith(_ChangeTariffBilling value, $Res Function(_ChangeTariffBilling) then) =
-      __$ChangeTariffBillingCopyWithImpl<$Res>;
+abstract class _$$_ChangeTariffBillingCopyWith<$Res>
+    implements $ChangeTariffBillingCopyWith<$Res> {
+  factory _$$_ChangeTariffBillingCopyWith(_$_ChangeTariffBilling value,
+          $Res Function(_$_ChangeTariffBilling) then) =
+      __$$_ChangeTariffBillingCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'tariff_id') String tariffId,
       @JsonKey(name: 'open_date') String? openDate,
@@ -125,35 +110,35 @@ abstract class _$ChangeTariffBillingCopyWith<$Res> implements $ChangeTariffBilli
 }
 
 /// @nodoc
-class __$ChangeTariffBillingCopyWithImpl<$Res> extends _$ChangeTariffBillingCopyWithImpl<$Res>
-    implements _$ChangeTariffBillingCopyWith<$Res> {
-  __$ChangeTariffBillingCopyWithImpl(_ChangeTariffBilling _value, $Res Function(_ChangeTariffBilling) _then)
-      : super(_value, (v) => _then(v as _ChangeTariffBilling));
+class __$$_ChangeTariffBillingCopyWithImpl<$Res>
+    extends _$ChangeTariffBillingCopyWithImpl<$Res, _$_ChangeTariffBilling>
+    implements _$$_ChangeTariffBillingCopyWith<$Res> {
+  __$$_ChangeTariffBillingCopyWithImpl(_$_ChangeTariffBilling _value,
+      $Res Function(_$_ChangeTariffBilling) _then)
+      : super(_value, _then);
 
-  @override
-  _ChangeTariffBilling get _value => super._value as _ChangeTariffBilling;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? tariffId = freezed,
+    Object? tariffId = null,
     Object? openDate = freezed,
     Object? closeDate = freezed,
     Object? createDate = freezed,
   }) {
-    return _then(_ChangeTariffBilling(
-      tariffId: tariffId == freezed
+    return _then(_$_ChangeTariffBilling(
+      tariffId: null == tariffId
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
               as String,
-      openDate: openDate == freezed
+      openDate: freezed == openDate
           ? _value.openDate
           : openDate // ignore: cast_nullable_to_non_nullable
               as String?,
-      closeDate: closeDate == freezed
+      closeDate: freezed == closeDate
           ? _value.closeDate
           : closeDate // ignore: cast_nullable_to_non_nullable
               as String?,
-      createDate: createDate == freezed
+      createDate: freezed == createDate
           ? _value.createDate
           : createDate // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -170,26 +155,26 @@ class _$_ChangeTariffBilling implements _ChangeTariffBilling {
       @JsonKey(name: 'close_date') this.closeDate,
       @JsonKey(name: 'create_date') this.createDate});
 
-  factory _$_ChangeTariffBilling.fromJson(Map<String, dynamic> json) => _$$_ChangeTariffBillingFromJson(json);
-
-  @override
+  factory _$_ChangeTariffBilling.fromJson(Map<String, dynamic> json) =>
+      _$$_ChangeTariffBillingFromJson(json);
 
   /// .
+  @override
   @JsonKey(name: 'tariff_id')
   final String tariffId;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'open_date')
   final String? openDate;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'close_date')
   final String? closeDate;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'create_date')
   final String? createDate;
 
@@ -201,64 +186,71 @@ class _$_ChangeTariffBilling implements _ChangeTariffBilling {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ChangeTariffBilling &&
-            (identical(other.tariffId, tariffId) || const DeepCollectionEquality().equals(other.tariffId, tariffId)) &&
-            (identical(other.openDate, openDate) || const DeepCollectionEquality().equals(other.openDate, openDate)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_ChangeTariffBilling &&
+            (identical(other.tariffId, tariffId) ||
+                other.tariffId == tariffId) &&
+            (identical(other.openDate, openDate) ||
+                other.openDate == openDate) &&
             (identical(other.closeDate, closeDate) ||
-                const DeepCollectionEquality().equals(other.closeDate, closeDate)) &&
+                other.closeDate == closeDate) &&
             (identical(other.createDate, createDate) ||
-                const DeepCollectionEquality().equals(other.createDate, createDate)));
+                other.createDate == createDate));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(tariffId) ^
-      const DeepCollectionEquality().hash(openDate) ^
-      const DeepCollectionEquality().hash(closeDate) ^
-      const DeepCollectionEquality().hash(createDate);
 
   @JsonKey(ignore: true)
   @override
-  _$ChangeTariffBillingCopyWith<_ChangeTariffBilling> get copyWith =>
-      __$ChangeTariffBillingCopyWithImpl<_ChangeTariffBilling>(this, _$identity);
+  int get hashCode =>
+      Object.hash(runtimeType, tariffId, openDate, closeDate, createDate);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_ChangeTariffBillingCopyWith<_$_ChangeTariffBilling> get copyWith =>
+      __$$_ChangeTariffBillingCopyWithImpl<_$_ChangeTariffBilling>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ChangeTariffBillingToJson(this);
+    return _$$_ChangeTariffBillingToJson(
+      this,
+    );
   }
 }
 
 abstract class _ChangeTariffBilling implements ChangeTariffBilling {
   const factory _ChangeTariffBilling(
-      {@JsonKey(name: 'tariff_id') required String tariffId,
-      @JsonKey(name: 'open_date') String? openDate,
-      @JsonKey(name: 'close_date') String? closeDate,
-      @JsonKey(name: 'create_date') String? createDate}) = _$_ChangeTariffBilling;
+          {@JsonKey(name: 'tariff_id') required final String tariffId,
+          @JsonKey(name: 'open_date') final String? openDate,
+          @JsonKey(name: 'close_date') final String? closeDate,
+          @JsonKey(name: 'create_date') final String? createDate}) =
+      _$_ChangeTariffBilling;
 
-  factory _ChangeTariffBilling.fromJson(Map<String, dynamic> json) = _$_ChangeTariffBilling.fromJson;
+  factory _ChangeTariffBilling.fromJson(Map<String, dynamic> json) =
+      _$_ChangeTariffBilling.fromJson;
 
   @override
 
   /// .
   @JsonKey(name: 'tariff_id')
-  String get tariffId => throw _privateConstructorUsedError;
+  String get tariffId;
   @override
 
   /// .
   @JsonKey(name: 'open_date')
-  String? get openDate => throw _privateConstructorUsedError;
+  String? get openDate;
   @override
 
   /// .
   @JsonKey(name: 'close_date')
-  String? get closeDate => throw _privateConstructorUsedError;
+  String? get closeDate;
   @override
 
   /// .
   @JsonKey(name: 'create_date')
-  String? get createDate => throw _privateConstructorUsedError;
+  String? get createDate;
   @override
   @JsonKey(ignore: true)
-  _$ChangeTariffBillingCopyWith<_ChangeTariffBilling> get copyWith => throw _privateConstructorUsedError;
+  _$$_ChangeTariffBillingCopyWith<_$_ChangeTariffBilling> get copyWith =>
+      throw _privateConstructorUsedError;
 }

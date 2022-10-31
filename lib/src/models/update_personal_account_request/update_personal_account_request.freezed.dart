@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'update_personal_account_request.dart';
@@ -11,31 +12,12 @@ part of 'update_personal_account_request.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-UpdatePersonalAccountRequest _$UpdatePersonalAccountRequestFromJson(Map<String, dynamic> json) {
+UpdatePersonalAccountRequest _$UpdatePersonalAccountRequestFromJson(
+    Map<String, dynamic> json) {
   return _UpdatePersonalAccountRequest.fromJson(json);
 }
-
-/// @nodoc
-class _$UpdatePersonalAccountRequestTearOff {
-  const _$UpdatePersonalAccountRequestTearOff();
-
-  _UpdatePersonalAccountRequest call(
-      {@JsonKey(name: 'full_name') String? fullName, @JsonKey(name: 'phone') String? phone}) {
-    return _UpdatePersonalAccountRequest(
-      fullName: fullName,
-      phone: phone,
-    );
-  }
-
-  UpdatePersonalAccountRequest fromJson(Map<String, Object> json) {
-    return UpdatePersonalAccountRequest.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $UpdatePersonalAccountRequest = _$UpdatePersonalAccountRequestTearOff();
 
 /// @nodoc
 mixin _$UpdatePersonalAccountRequest {
@@ -49,74 +31,89 @@ mixin _$UpdatePersonalAccountRequest {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $UpdatePersonalAccountRequestCopyWith<UpdatePersonalAccountRequest> get copyWith =>
-      throw _privateConstructorUsedError;
+  $UpdatePersonalAccountRequestCopyWith<UpdatePersonalAccountRequest>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $UpdatePersonalAccountRequestCopyWith<$Res> {
   factory $UpdatePersonalAccountRequestCopyWith(
-          UpdatePersonalAccountRequest value, $Res Function(UpdatePersonalAccountRequest) then) =
-      _$UpdatePersonalAccountRequestCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'full_name') String? fullName, @JsonKey(name: 'phone') String? phone});
+          UpdatePersonalAccountRequest value,
+          $Res Function(UpdatePersonalAccountRequest) then) =
+      _$UpdatePersonalAccountRequestCopyWithImpl<$Res,
+          UpdatePersonalAccountRequest>;
+  @useResult
+  $Res call(
+      {@JsonKey(name: 'full_name') String? fullName,
+      @JsonKey(name: 'phone') String? phone});
 }
 
 /// @nodoc
-class _$UpdatePersonalAccountRequestCopyWithImpl<$Res> implements $UpdatePersonalAccountRequestCopyWith<$Res> {
+class _$UpdatePersonalAccountRequestCopyWithImpl<$Res,
+        $Val extends UpdatePersonalAccountRequest>
+    implements $UpdatePersonalAccountRequestCopyWith<$Res> {
   _$UpdatePersonalAccountRequestCopyWithImpl(this._value, this._then);
 
-  final UpdatePersonalAccountRequest _value;
   // ignore: unused_field
-  final $Res Function(UpdatePersonalAccountRequest) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? fullName = freezed,
     Object? phone = freezed,
   }) {
     return _then(_value.copyWith(
-      fullName: fullName == freezed
+      fullName: freezed == fullName
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
               as String?,
-      phone: phone == freezed
+      phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$UpdatePersonalAccountRequestCopyWith<$Res> implements $UpdatePersonalAccountRequestCopyWith<$Res> {
-  factory _$UpdatePersonalAccountRequestCopyWith(
-          _UpdatePersonalAccountRequest value, $Res Function(_UpdatePersonalAccountRequest) then) =
-      __$UpdatePersonalAccountRequestCopyWithImpl<$Res>;
+abstract class _$$_UpdatePersonalAccountRequestCopyWith<$Res>
+    implements $UpdatePersonalAccountRequestCopyWith<$Res> {
+  factory _$$_UpdatePersonalAccountRequestCopyWith(
+          _$_UpdatePersonalAccountRequest value,
+          $Res Function(_$_UpdatePersonalAccountRequest) then) =
+      __$$_UpdatePersonalAccountRequestCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'full_name') String? fullName, @JsonKey(name: 'phone') String? phone});
+  @useResult
+  $Res call(
+      {@JsonKey(name: 'full_name') String? fullName,
+      @JsonKey(name: 'phone') String? phone});
 }
 
 /// @nodoc
-class __$UpdatePersonalAccountRequestCopyWithImpl<$Res> extends _$UpdatePersonalAccountRequestCopyWithImpl<$Res>
-    implements _$UpdatePersonalAccountRequestCopyWith<$Res> {
-  __$UpdatePersonalAccountRequestCopyWithImpl(
-      _UpdatePersonalAccountRequest _value, $Res Function(_UpdatePersonalAccountRequest) _then)
-      : super(_value, (v) => _then(v as _UpdatePersonalAccountRequest));
+class __$$_UpdatePersonalAccountRequestCopyWithImpl<$Res>
+    extends _$UpdatePersonalAccountRequestCopyWithImpl<$Res,
+        _$_UpdatePersonalAccountRequest>
+    implements _$$_UpdatePersonalAccountRequestCopyWith<$Res> {
+  __$$_UpdatePersonalAccountRequestCopyWithImpl(
+      _$_UpdatePersonalAccountRequest _value,
+      $Res Function(_$_UpdatePersonalAccountRequest) _then)
+      : super(_value, _then);
 
-  @override
-  _UpdatePersonalAccountRequest get _value => super._value as _UpdatePersonalAccountRequest;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? fullName = freezed,
     Object? phone = freezed,
   }) {
-    return _then(_UpdatePersonalAccountRequest(
-      fullName: fullName == freezed
+    return _then(_$_UpdatePersonalAccountRequest(
+      fullName: freezed == fullName
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
               as String?,
-      phone: phone == freezed
+      phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -128,19 +125,19 @@ class __$UpdatePersonalAccountRequestCopyWithImpl<$Res> extends _$UpdatePersonal
 @JsonSerializable()
 class _$_UpdatePersonalAccountRequest implements _UpdatePersonalAccountRequest {
   const _$_UpdatePersonalAccountRequest(
-      {@JsonKey(name: 'full_name') this.fullName, @JsonKey(name: 'phone') this.phone});
+      {@JsonKey(name: 'full_name') this.fullName,
+      @JsonKey(name: 'phone') this.phone});
 
   factory _$_UpdatePersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
       _$$_UpdatePersonalAccountRequestFromJson(json);
 
-  @override
-
   /// .
+  @override
   @JsonKey(name: 'full_name')
   final String? fullName;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'phone')
   final String? phone;
 
@@ -152,45 +149,54 @@ class _$_UpdatePersonalAccountRequest implements _UpdatePersonalAccountRequest {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _UpdatePersonalAccountRequest &&
-            (identical(other.fullName, fullName) || const DeepCollectionEquality().equals(other.fullName, fullName)) &&
-            (identical(other.phone, phone) || const DeepCollectionEquality().equals(other.phone, phone)));
+        (other.runtimeType == runtimeType &&
+            other is _$_UpdatePersonalAccountRequest &&
+            (identical(other.fullName, fullName) ||
+                other.fullName == fullName) &&
+            (identical(other.phone, phone) || other.phone == phone));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(fullName) ^ const DeepCollectionEquality().hash(phone);
 
   @JsonKey(ignore: true)
   @override
-  _$UpdatePersonalAccountRequestCopyWith<_UpdatePersonalAccountRequest> get copyWith =>
-      __$UpdatePersonalAccountRequestCopyWithImpl<_UpdatePersonalAccountRequest>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, fullName, phone);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_UpdatePersonalAccountRequestCopyWith<_$_UpdatePersonalAccountRequest>
+      get copyWith => __$$_UpdatePersonalAccountRequestCopyWithImpl<
+          _$_UpdatePersonalAccountRequest>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UpdatePersonalAccountRequestToJson(this);
+    return _$$_UpdatePersonalAccountRequestToJson(
+      this,
+    );
   }
 }
 
-abstract class _UpdatePersonalAccountRequest implements UpdatePersonalAccountRequest {
+abstract class _UpdatePersonalAccountRequest
+    implements UpdatePersonalAccountRequest {
   const factory _UpdatePersonalAccountRequest(
-      {@JsonKey(name: 'full_name') String? fullName,
-      @JsonKey(name: 'phone') String? phone}) = _$_UpdatePersonalAccountRequest;
+          {@JsonKey(name: 'full_name') final String? fullName,
+          @JsonKey(name: 'phone') final String? phone}) =
+      _$_UpdatePersonalAccountRequest;
 
-  factory _UpdatePersonalAccountRequest.fromJson(Map<String, dynamic> json) = _$_UpdatePersonalAccountRequest.fromJson;
+  factory _UpdatePersonalAccountRequest.fromJson(Map<String, dynamic> json) =
+      _$_UpdatePersonalAccountRequest.fromJson;
 
   @override
 
   /// .
   @JsonKey(name: 'full_name')
-  String? get fullName => throw _privateConstructorUsedError;
+  String? get fullName;
   @override
 
   /// .
   @JsonKey(name: 'phone')
-  String? get phone => throw _privateConstructorUsedError;
+  String? get phone;
   @override
   @JsonKey(ignore: true)
-  _$UpdatePersonalAccountRequestCopyWith<_UpdatePersonalAccountRequest> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$_UpdatePersonalAccountRequestCopyWith<_$_UpdatePersonalAccountRequest>
+      get copyWith => throw _privateConstructorUsedError;
 }

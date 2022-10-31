@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'get_team_on_personal_account_response.dart';
@@ -11,38 +12,12 @@ part of 'get_team_on_personal_account_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-GetTeamOnPersonalAccountResponse _$GetTeamOnPersonalAccountResponseFromJson(Map<String, dynamic> json) {
+GetTeamOnPersonalAccountResponse _$GetTeamOnPersonalAccountResponseFromJson(
+    Map<String, dynamic> json) {
   return _GetTeamOnPersonalAccountResponse.fromJson(json);
 }
-
-/// @nodoc
-class _$GetTeamOnPersonalAccountResponseTearOff {
-  const _$GetTeamOnPersonalAccountResponseTearOff();
-
-  _GetTeamOnPersonalAccountResponse call(
-      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
-      @JsonKey(name: 'team_id') required String teamId,
-      @JsonKey(name: 'team_uuid') required String teamUuid,
-      @JsonKey(name: 'open_date') required String openDate,
-      @JsonKey(name: 'close_date') String? closeDate}) {
-    return _GetTeamOnPersonalAccountResponse(
-      personalAccountId: personalAccountId,
-      teamId: teamId,
-      teamUuid: teamUuid,
-      openDate: openDate,
-      closeDate: closeDate,
-    );
-  }
-
-  GetTeamOnPersonalAccountResponse fromJson(Map<String, Object> json) {
-    return GetTeamOnPersonalAccountResponse.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $GetTeamOnPersonalAccountResponse = _$GetTeamOnPersonalAccountResponseTearOff();
 
 /// @nodoc
 mixin _$GetTeamOnPersonalAccountResponse {
@@ -68,15 +43,18 @@ mixin _$GetTeamOnPersonalAccountResponse {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $GetTeamOnPersonalAccountResponseCopyWith<GetTeamOnPersonalAccountResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+  $GetTeamOnPersonalAccountResponseCopyWith<GetTeamOnPersonalAccountResponse>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $GetTeamOnPersonalAccountResponseCopyWith<$Res> {
   factory $GetTeamOnPersonalAccountResponseCopyWith(
-          GetTeamOnPersonalAccountResponse value, $Res Function(GetTeamOnPersonalAccountResponse) then) =
-      _$GetTeamOnPersonalAccountResponseCopyWithImpl<$Res>;
+          GetTeamOnPersonalAccountResponse value,
+          $Res Function(GetTeamOnPersonalAccountResponse) then) =
+      _$GetTeamOnPersonalAccountResponseCopyWithImpl<$Res,
+          GetTeamOnPersonalAccountResponse>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'personal_account_id') String personalAccountId,
       @JsonKey(name: 'team_id') String teamId,
@@ -86,53 +64,59 @@ abstract class $GetTeamOnPersonalAccountResponseCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$GetTeamOnPersonalAccountResponseCopyWithImpl<$Res> implements $GetTeamOnPersonalAccountResponseCopyWith<$Res> {
+class _$GetTeamOnPersonalAccountResponseCopyWithImpl<$Res,
+        $Val extends GetTeamOnPersonalAccountResponse>
+    implements $GetTeamOnPersonalAccountResponseCopyWith<$Res> {
   _$GetTeamOnPersonalAccountResponseCopyWithImpl(this._value, this._then);
 
-  final GetTeamOnPersonalAccountResponse _value;
   // ignore: unused_field
-  final $Res Function(GetTeamOnPersonalAccountResponse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? personalAccountId = freezed,
-    Object? teamId = freezed,
-    Object? teamUuid = freezed,
-    Object? openDate = freezed,
+    Object? personalAccountId = null,
+    Object? teamId = null,
+    Object? teamUuid = null,
+    Object? openDate = null,
     Object? closeDate = freezed,
   }) {
     return _then(_value.copyWith(
-      personalAccountId: personalAccountId == freezed
+      personalAccountId: null == personalAccountId
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
               as String,
-      teamId: teamId == freezed
+      teamId: null == teamId
           ? _value.teamId
           : teamId // ignore: cast_nullable_to_non_nullable
               as String,
-      teamUuid: teamUuid == freezed
+      teamUuid: null == teamUuid
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
               as String,
-      openDate: openDate == freezed
+      openDate: null == openDate
           ? _value.openDate
           : openDate // ignore: cast_nullable_to_non_nullable
               as String,
-      closeDate: closeDate == freezed
+      closeDate: freezed == closeDate
           ? _value.closeDate
           : closeDate // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$GetTeamOnPersonalAccountResponseCopyWith<$Res>
+abstract class _$$_GetTeamOnPersonalAccountResponseCopyWith<$Res>
     implements $GetTeamOnPersonalAccountResponseCopyWith<$Res> {
-  factory _$GetTeamOnPersonalAccountResponseCopyWith(
-          _GetTeamOnPersonalAccountResponse value, $Res Function(_GetTeamOnPersonalAccountResponse) then) =
-      __$GetTeamOnPersonalAccountResponseCopyWithImpl<$Res>;
+  factory _$$_GetTeamOnPersonalAccountResponseCopyWith(
+          _$_GetTeamOnPersonalAccountResponse value,
+          $Res Function(_$_GetTeamOnPersonalAccountResponse) then) =
+      __$$_GetTeamOnPersonalAccountResponseCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'personal_account_id') String personalAccountId,
       @JsonKey(name: 'team_id') String teamId,
@@ -142,41 +126,42 @@ abstract class _$GetTeamOnPersonalAccountResponseCopyWith<$Res>
 }
 
 /// @nodoc
-class __$GetTeamOnPersonalAccountResponseCopyWithImpl<$Res> extends _$GetTeamOnPersonalAccountResponseCopyWithImpl<$Res>
-    implements _$GetTeamOnPersonalAccountResponseCopyWith<$Res> {
-  __$GetTeamOnPersonalAccountResponseCopyWithImpl(
-      _GetTeamOnPersonalAccountResponse _value, $Res Function(_GetTeamOnPersonalAccountResponse) _then)
-      : super(_value, (v) => _then(v as _GetTeamOnPersonalAccountResponse));
+class __$$_GetTeamOnPersonalAccountResponseCopyWithImpl<$Res>
+    extends _$GetTeamOnPersonalAccountResponseCopyWithImpl<$Res,
+        _$_GetTeamOnPersonalAccountResponse>
+    implements _$$_GetTeamOnPersonalAccountResponseCopyWith<$Res> {
+  __$$_GetTeamOnPersonalAccountResponseCopyWithImpl(
+      _$_GetTeamOnPersonalAccountResponse _value,
+      $Res Function(_$_GetTeamOnPersonalAccountResponse) _then)
+      : super(_value, _then);
 
-  @override
-  _GetTeamOnPersonalAccountResponse get _value => super._value as _GetTeamOnPersonalAccountResponse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? personalAccountId = freezed,
-    Object? teamId = freezed,
-    Object? teamUuid = freezed,
-    Object? openDate = freezed,
+    Object? personalAccountId = null,
+    Object? teamId = null,
+    Object? teamUuid = null,
+    Object? openDate = null,
     Object? closeDate = freezed,
   }) {
-    return _then(_GetTeamOnPersonalAccountResponse(
-      personalAccountId: personalAccountId == freezed
+    return _then(_$_GetTeamOnPersonalAccountResponse(
+      personalAccountId: null == personalAccountId
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
               as String,
-      teamId: teamId == freezed
+      teamId: null == teamId
           ? _value.teamId
           : teamId // ignore: cast_nullable_to_non_nullable
               as String,
-      teamUuid: teamUuid == freezed
+      teamUuid: null == teamUuid
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
               as String,
-      openDate: openDate == freezed
+      openDate: null == openDate
           ? _value.openDate
           : openDate // ignore: cast_nullable_to_non_nullable
               as String,
-      closeDate: closeDate == freezed
+      closeDate: freezed == closeDate
           ? _value.closeDate
           : closeDate // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -186,7 +171,8 @@ class __$GetTeamOnPersonalAccountResponseCopyWithImpl<$Res> extends _$GetTeamOnP
 
 /// @nodoc
 @JsonSerializable()
-class _$_GetTeamOnPersonalAccountResponse implements _GetTeamOnPersonalAccountResponse {
+class _$_GetTeamOnPersonalAccountResponse
+    implements _GetTeamOnPersonalAccountResponse {
   const _$_GetTeamOnPersonalAccountResponse(
       {@JsonKey(name: 'personal_account_id') required this.personalAccountId,
       @JsonKey(name: 'team_id') required this.teamId,
@@ -194,32 +180,32 @@ class _$_GetTeamOnPersonalAccountResponse implements _GetTeamOnPersonalAccountRe
       @JsonKey(name: 'open_date') required this.openDate,
       @JsonKey(name: 'close_date') this.closeDate});
 
-  factory _$_GetTeamOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =>
+  factory _$_GetTeamOnPersonalAccountResponse.fromJson(
+          Map<String, dynamic> json) =>
       _$$_GetTeamOnPersonalAccountResponseFromJson(json);
 
-  @override
-
   /// .
+  @override
   @JsonKey(name: 'personal_account_id')
   final String personalAccountId;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'team_id')
   final String teamId;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'team_uuid')
   final String teamUuid;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'open_date')
   final String openDate;
-  @override
 
   /// .
+  @override
   @JsonKey(name: 'close_date')
   final String? closeDate;
 
@@ -231,74 +217,85 @@ class _$_GetTeamOnPersonalAccountResponse implements _GetTeamOnPersonalAccountRe
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _GetTeamOnPersonalAccountResponse &&
+        (other.runtimeType == runtimeType &&
+            other is _$_GetTeamOnPersonalAccountResponse &&
             (identical(other.personalAccountId, personalAccountId) ||
-                const DeepCollectionEquality().equals(other.personalAccountId, personalAccountId)) &&
-            (identical(other.teamId, teamId) || const DeepCollectionEquality().equals(other.teamId, teamId)) &&
-            (identical(other.teamUuid, teamUuid) || const DeepCollectionEquality().equals(other.teamUuid, teamUuid)) &&
-            (identical(other.openDate, openDate) || const DeepCollectionEquality().equals(other.openDate, openDate)) &&
+                other.personalAccountId == personalAccountId) &&
+            (identical(other.teamId, teamId) || other.teamId == teamId) &&
+            (identical(other.teamUuid, teamUuid) ||
+                other.teamUuid == teamUuid) &&
+            (identical(other.openDate, openDate) ||
+                other.openDate == openDate) &&
             (identical(other.closeDate, closeDate) ||
-                const DeepCollectionEquality().equals(other.closeDate, closeDate)));
+                other.closeDate == closeDate));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(personalAccountId) ^
-      const DeepCollectionEquality().hash(teamId) ^
-      const DeepCollectionEquality().hash(teamUuid) ^
-      const DeepCollectionEquality().hash(openDate) ^
-      const DeepCollectionEquality().hash(closeDate);
 
   @JsonKey(ignore: true)
   @override
-  _$GetTeamOnPersonalAccountResponseCopyWith<_GetTeamOnPersonalAccountResponse> get copyWith =>
-      __$GetTeamOnPersonalAccountResponseCopyWithImpl<_GetTeamOnPersonalAccountResponse>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType, personalAccountId, teamId, teamUuid, openDate, closeDate);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_GetTeamOnPersonalAccountResponseCopyWith<
+          _$_GetTeamOnPersonalAccountResponse>
+      get copyWith => __$$_GetTeamOnPersonalAccountResponseCopyWithImpl<
+          _$_GetTeamOnPersonalAccountResponse>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_GetTeamOnPersonalAccountResponseToJson(this);
+    return _$$_GetTeamOnPersonalAccountResponseToJson(
+      this,
+    );
   }
 }
 
-abstract class _GetTeamOnPersonalAccountResponse implements GetTeamOnPersonalAccountResponse {
+abstract class _GetTeamOnPersonalAccountResponse
+    implements GetTeamOnPersonalAccountResponse {
   const factory _GetTeamOnPersonalAccountResponse(
-      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
-      @JsonKey(name: 'team_id') required String teamId,
-      @JsonKey(name: 'team_uuid') required String teamUuid,
-      @JsonKey(name: 'open_date') required String openDate,
-      @JsonKey(name: 'close_date') String? closeDate}) = _$_GetTeamOnPersonalAccountResponse;
+      {@JsonKey(name: 'personal_account_id')
+          required final String personalAccountId,
+      @JsonKey(name: 'team_id')
+          required final String teamId,
+      @JsonKey(name: 'team_uuid')
+          required final String teamUuid,
+      @JsonKey(name: 'open_date')
+          required final String openDate,
+      @JsonKey(name: 'close_date')
+          final String? closeDate}) = _$_GetTeamOnPersonalAccountResponse;
 
-  factory _GetTeamOnPersonalAccountResponse.fromJson(Map<String, dynamic> json) =
-      _$_GetTeamOnPersonalAccountResponse.fromJson;
+  factory _GetTeamOnPersonalAccountResponse.fromJson(
+      Map<String, dynamic> json) = _$_GetTeamOnPersonalAccountResponse.fromJson;
 
   @override
 
   /// .
   @JsonKey(name: 'personal_account_id')
-  String get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId;
   @override
 
   /// .
   @JsonKey(name: 'team_id')
-  String get teamId => throw _privateConstructorUsedError;
+  String get teamId;
   @override
 
   /// .
   @JsonKey(name: 'team_uuid')
-  String get teamUuid => throw _privateConstructorUsedError;
+  String get teamUuid;
   @override
 
   /// .
   @JsonKey(name: 'open_date')
-  String get openDate => throw _privateConstructorUsedError;
+  String get openDate;
   @override
 
   /// .
   @JsonKey(name: 'close_date')
-  String? get closeDate => throw _privateConstructorUsedError;
+  String? get closeDate;
   @override
   @JsonKey(ignore: true)
-  _$GetTeamOnPersonalAccountResponseCopyWith<_GetTeamOnPersonalAccountResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$_GetTeamOnPersonalAccountResponseCopyWith<
+          _$_GetTeamOnPersonalAccountResponse>
+      get copyWith => throw _privateConstructorUsedError;
 }

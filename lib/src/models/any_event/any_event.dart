@@ -10,9 +10,11 @@ class AnyEvent with _$AnyEvent {
   const factory AnyEvent({
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _AnyEvent;
 
   factory AnyEvent.fromJson(Map<String, dynamic> json) => _$AnyEventFromJson(json);

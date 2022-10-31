@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'client_chat_composing_params.dart';
@@ -11,36 +12,12 @@ part of 'client_chat_composing_params.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-ClientChatComposingParams _$ClientChatComposingParamsFromJson(Map<String, dynamic> json) {
+ClientChatComposingParams _$ClientChatComposingParamsFromJson(
+    Map<String, dynamic> json) {
   return _ClientChatComposingParams.fromJson(json);
 }
-
-/// @nodoc
-class _$ClientChatComposingParamsTearOff {
-  const _$ClientChatComposingParamsTearOff();
-
-  _ClientChatComposingParams call(
-      {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'is_audio') bool? isAudio,
-      @JsonKey(name: 'composing') bool? composing,
-      @JsonKey(name: 'draft') String? draft}) {
-    return _ClientChatComposingParams(
-      jid: jid,
-      isAudio: isAudio,
-      composing: composing,
-      draft: draft,
-    );
-  }
-
-  ClientChatComposingParams fromJson(Map<String, Object> json) {
-    return ClientChatComposingParams.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ClientChatComposingParams = _$ClientChatComposingParamsTearOff();
 
 /// @nodoc
 mixin _$ClientChatComposingParams {
@@ -62,14 +39,16 @@ mixin _$ClientChatComposingParams {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ClientChatComposingParamsCopyWith<ClientChatComposingParams> get copyWith => throw _privateConstructorUsedError;
+  $ClientChatComposingParamsCopyWith<ClientChatComposingParams> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ClientChatComposingParamsCopyWith<$Res> {
-  factory $ClientChatComposingParamsCopyWith(
-          ClientChatComposingParams value, $Res Function(ClientChatComposingParams) then) =
-      _$ClientChatComposingParamsCopyWithImpl<$Res>;
+  factory $ClientChatComposingParamsCopyWith(ClientChatComposingParams value,
+          $Res Function(ClientChatComposingParams) then) =
+      _$ClientChatComposingParamsCopyWithImpl<$Res, ClientChatComposingParams>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'is_audio') bool? isAudio,
@@ -78,47 +57,54 @@ abstract class $ClientChatComposingParamsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ClientChatComposingParamsCopyWithImpl<$Res> implements $ClientChatComposingParamsCopyWith<$Res> {
+class _$ClientChatComposingParamsCopyWithImpl<$Res,
+        $Val extends ClientChatComposingParams>
+    implements $ClientChatComposingParamsCopyWith<$Res> {
   _$ClientChatComposingParamsCopyWithImpl(this._value, this._then);
 
-  final ClientChatComposingParams _value;
   // ignore: unused_field
-  final $Res Function(ClientChatComposingParams) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? jid = freezed,
+    Object? jid = null,
     Object? isAudio = freezed,
     Object? composing = freezed,
     Object? draft = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: jid == freezed
+      jid: null == jid
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      isAudio: isAudio == freezed
+      isAudio: freezed == isAudio
           ? _value.isAudio
           : isAudio // ignore: cast_nullable_to_non_nullable
               as bool?,
-      composing: composing == freezed
+      composing: freezed == composing
           ? _value.composing
           : composing // ignore: cast_nullable_to_non_nullable
               as bool?,
-      draft: draft == freezed
+      draft: freezed == draft
           ? _value.draft
           : draft // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ClientChatComposingParamsCopyWith<$Res> implements $ClientChatComposingParamsCopyWith<$Res> {
-  factory _$ClientChatComposingParamsCopyWith(
-          _ClientChatComposingParams value, $Res Function(_ClientChatComposingParams) then) =
-      __$ClientChatComposingParamsCopyWithImpl<$Res>;
+abstract class _$$_ClientChatComposingParamsCopyWith<$Res>
+    implements $ClientChatComposingParamsCopyWith<$Res> {
+  factory _$$_ClientChatComposingParamsCopyWith(
+          _$_ClientChatComposingParams value,
+          $Res Function(_$_ClientChatComposingParams) then) =
+      __$$_ClientChatComposingParamsCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'is_audio') bool? isAudio,
@@ -127,36 +113,37 @@ abstract class _$ClientChatComposingParamsCopyWith<$Res> implements $ClientChatC
 }
 
 /// @nodoc
-class __$ClientChatComposingParamsCopyWithImpl<$Res> extends _$ClientChatComposingParamsCopyWithImpl<$Res>
-    implements _$ClientChatComposingParamsCopyWith<$Res> {
-  __$ClientChatComposingParamsCopyWithImpl(
-      _ClientChatComposingParams _value, $Res Function(_ClientChatComposingParams) _then)
-      : super(_value, (v) => _then(v as _ClientChatComposingParams));
+class __$$_ClientChatComposingParamsCopyWithImpl<$Res>
+    extends _$ClientChatComposingParamsCopyWithImpl<$Res,
+        _$_ClientChatComposingParams>
+    implements _$$_ClientChatComposingParamsCopyWith<$Res> {
+  __$$_ClientChatComposingParamsCopyWithImpl(
+      _$_ClientChatComposingParams _value,
+      $Res Function(_$_ClientChatComposingParams) _then)
+      : super(_value, _then);
 
-  @override
-  _ClientChatComposingParams get _value => super._value as _ClientChatComposingParams;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? jid = freezed,
+    Object? jid = null,
     Object? isAudio = freezed,
     Object? composing = freezed,
     Object? draft = freezed,
   }) {
-    return _then(_ClientChatComposingParams(
-      jid: jid == freezed
+    return _then(_$_ClientChatComposingParams(
+      jid: null == jid
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      isAudio: isAudio == freezed
+      isAudio: freezed == isAudio
           ? _value.isAudio
           : isAudio // ignore: cast_nullable_to_non_nullable
               as bool?,
-      composing: composing == freezed
+      composing: freezed == composing
           ? _value.composing
           : composing // ignore: cast_nullable_to_non_nullable
               as bool?,
-      draft: draft == freezed
+      draft: freezed == draft
           ? _value.draft
           : draft // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -176,24 +163,23 @@ class _$_ClientChatComposingParams implements _ClientChatComposingParams {
   factory _$_ClientChatComposingParams.fromJson(Map<String, dynamic> json) =>
       _$$_ClientChatComposingParamsFromJson(json);
 
-  @override
-
   /// Chat or contact id.
+  @override
   @JsonKey(name: 'jid')
   final String jid;
-  @override
 
   /// true = audiomessage, false = text typing.
+  @override
   @JsonKey(name: 'is_audio')
   final bool? isAudio;
-  @override
 
   /// true = start typing / audio recording, false = stop.
+  @override
   @JsonKey(name: 'composing')
   final bool? composing;
-  @override
 
   /// Message draft data.
+  @override
   @JsonKey(name: 'draft')
   final String? draft;
 
@@ -205,63 +191,67 @@ class _$_ClientChatComposingParams implements _ClientChatComposingParams {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ClientChatComposingParams &&
-            (identical(other.jid, jid) || const DeepCollectionEquality().equals(other.jid, jid)) &&
-            (identical(other.isAudio, isAudio) || const DeepCollectionEquality().equals(other.isAudio, isAudio)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_ClientChatComposingParams &&
+            (identical(other.jid, jid) || other.jid == jid) &&
+            (identical(other.isAudio, isAudio) || other.isAudio == isAudio) &&
             (identical(other.composing, composing) ||
-                const DeepCollectionEquality().equals(other.composing, composing)) &&
-            (identical(other.draft, draft) || const DeepCollectionEquality().equals(other.draft, draft)));
+                other.composing == composing) &&
+            (identical(other.draft, draft) || other.draft == draft));
   }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(jid) ^
-      const DeepCollectionEquality().hash(isAudio) ^
-      const DeepCollectionEquality().hash(composing) ^
-      const DeepCollectionEquality().hash(draft);
 
   @JsonKey(ignore: true)
   @override
-  _$ClientChatComposingParamsCopyWith<_ClientChatComposingParams> get copyWith =>
-      __$ClientChatComposingParamsCopyWithImpl<_ClientChatComposingParams>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, jid, isAudio, composing, draft);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_ClientChatComposingParamsCopyWith<_$_ClientChatComposingParams>
+      get copyWith => __$$_ClientChatComposingParamsCopyWithImpl<
+          _$_ClientChatComposingParams>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ClientChatComposingParamsToJson(this);
+    return _$$_ClientChatComposingParamsToJson(
+      this,
+    );
   }
 }
 
 abstract class _ClientChatComposingParams implements ClientChatComposingParams {
   const factory _ClientChatComposingParams(
-      {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'is_audio') bool? isAudio,
-      @JsonKey(name: 'composing') bool? composing,
-      @JsonKey(name: 'draft') String? draft}) = _$_ClientChatComposingParams;
+          {@JsonKey(name: 'jid') required final String jid,
+          @JsonKey(name: 'is_audio') final bool? isAudio,
+          @JsonKey(name: 'composing') final bool? composing,
+          @JsonKey(name: 'draft') final String? draft}) =
+      _$_ClientChatComposingParams;
 
-  factory _ClientChatComposingParams.fromJson(Map<String, dynamic> json) = _$_ClientChatComposingParams.fromJson;
+  factory _ClientChatComposingParams.fromJson(Map<String, dynamic> json) =
+      _$_ClientChatComposingParams.fromJson;
 
   @override
 
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid => throw _privateConstructorUsedError;
+  String get jid;
   @override
 
   /// true = audiomessage, false = text typing.
   @JsonKey(name: 'is_audio')
-  bool? get isAudio => throw _privateConstructorUsedError;
+  bool? get isAudio;
   @override
 
   /// true = start typing / audio recording, false = stop.
   @JsonKey(name: 'composing')
-  bool? get composing => throw _privateConstructorUsedError;
+  bool? get composing;
   @override
 
   /// Message draft data.
   @JsonKey(name: 'draft')
-  String? get draft => throw _privateConstructorUsedError;
+  String? get draft;
   @override
   @JsonKey(ignore: true)
-  _$ClientChatComposingParamsCopyWith<_ClientChatComposingParams> get copyWith => throw _privateConstructorUsedError;
+  _$$_ClientChatComposingParamsCopyWith<_$_ClientChatComposingParams>
+      get copyWith => throw _privateConstructorUsedError;
 }

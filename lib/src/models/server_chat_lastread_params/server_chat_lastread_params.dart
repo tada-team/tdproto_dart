@@ -10,12 +10,14 @@ class ServerChatLastreadParams with _$ServerChatLastreadParams {
   const factory ServerChatLastreadParams({
     /// Chat counters.
     @JsonKey(name: 'chats') required List<ChatCounters> chats,
-
+    
     /// Current team counters.
     @JsonKey(name: 'team_unread') TeamUnread? teamUnread,
-
+    
     /// Total number of unreads.
     @JsonKey(name: 'badge') required int badge,
+    
+    
   }) = _ServerChatLastreadParams;
 
   factory ServerChatLastreadParams.fromJson(Map<String, dynamic> json) => _$ServerChatLastreadParamsFromJson(json);

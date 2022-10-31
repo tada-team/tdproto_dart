@@ -10,12 +10,14 @@ class ServerUiSettings with _$ServerUiSettings {
   const factory ServerUiSettings({
     /// .
     @JsonKey(name: 'params') required ServerUiSettingsParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerUiSettings;
 
   factory ServerUiSettings.fromJson(Map<String, dynamic> json) => _$ServerUiSettingsFromJson(json);

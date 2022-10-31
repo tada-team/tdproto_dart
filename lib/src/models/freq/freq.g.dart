@@ -8,7 +8,8 @@ part of 'freq.dart';
 
 _$_Freq _$$_FreqFromJson(Map<String, dynamic> json) => _$_Freq(
       frequency: json['frequency'] as int,
-      freqDays: (json['freq_days'] as List<dynamic>?)?.map((e) => e as int).toList(),
+      freqDays:
+          (json['freq_days'] as List<dynamic>?)?.map((e) => e as int).toList(),
       repeatabilityType: json['repeatability_type'] as String,
       repeatabilityDescription: json['repeatability_description'] as String?,
     );

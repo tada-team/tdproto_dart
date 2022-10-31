@@ -11,7 +11,8 @@ _$_TaskItems _$$_TaskItemsFromJson(Map<String, dynamic> json) => _$_TaskItems(
       checked: json['checked'] as bool,
     );
 
-Map<String, dynamic> _$$_TaskItemsToJson(_$_TaskItems instance) => <String, dynamic>{
+Map<String, dynamic> _$$_TaskItemsToJson(_$_TaskItems instance) =>
+    <String, dynamic>{
       'name': instance.name,
       'checked': instance.checked,
     };

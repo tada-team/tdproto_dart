@@ -10,6 +10,7 @@ _$_Reaction _$$_ReactionFromJson(Map<String, dynamic> json) => _$_Reaction(
       name: json['name'] as String,
     );
 
-Map<String, dynamic> _$$_ReactionToJson(_$_Reaction instance) => <String, dynamic>{
+Map<String, dynamic> _$$_ReactionToJson(_$_Reaction instance) =>
+    <String, dynamic>{
       'name': instance.name,
     };

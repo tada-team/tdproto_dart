@@ -12,10 +12,12 @@ _$_Sticker _$$_StickerFromJson(Map<String, dynamic> json) => _$_Sticker(
       icon100: json['icon100'] as String,
       icon128: json['icon128'] as String,
       icon200: json['icon200'] as String,
-      messageContent: MessageContent.fromJson(json['message_content'] as Map<String, dynamic>),
+      messageContent: MessageContent.fromJson(
+          json['message_content'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_StickerToJson(_$_Sticker instance) => <String, dynamic>{
+Map<String, dynamic> _$$_StickerToJson(_$_Sticker instance) =>
+    <String, dynamic>{
       'uid': instance.uid,
       'icon64': instance.icon64,
       'icon100': instance.icon100,

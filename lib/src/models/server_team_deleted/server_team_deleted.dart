@@ -10,12 +10,14 @@ class ServerTeamDeleted with _$ServerTeamDeleted {
   const factory ServerTeamDeleted({
     /// .
     @JsonKey(name: 'params') required ServerTeamDeletedParams params,
-
+    
     /// .
     @JsonKey(name: 'event') required String name,
-
+    
     /// .
     @JsonKey(name: 'confirm_id') String? confirmId,
+    
+    
   }) = _ServerTeamDeleted;
 
   factory ServerTeamDeleted.fromJson(Map<String, dynamic> json) => _$ServerTeamDeletedFromJson(json);

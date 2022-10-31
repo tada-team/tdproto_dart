@@ -10,9 +10,11 @@ class IVCSInfo with _$IVCSInfo {
   const factory IVCSInfo({
     /// .
     @JsonKey(name: 'conference_id') String? conferenceID,
-
+    
     /// .
     @JsonKey(name: 'join_token') String? joinToken,
+    
+    
   }) = _IVCSInfo;
 
   factory IVCSInfo.fromJson(Map<String, dynamic> json) => _$IVCSInfoFromJson(json);
