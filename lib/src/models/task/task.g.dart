@@ -17,11 +17,13 @@ _$_Task _$$_TaskFromJson(Map<String, dynamic> json) => _$_Task(
       items:
           (json['items'] as List<dynamic>?)?.map((e) => e as String).toList(),
       assignee: json['assignee'] as String?,
-      deadline: _$JsonConverterFromJson<String, DateTime>(
-          json['deadline'], const DateTimeConverter().fromJson),
+      deadline: json['deadline'] == null
+          ? null
+          : DateTime.parse(json['deadline'] as String),
       isPublic: json['public'] as bool?,
-      remindAt: _$JsonConverterFromJson<String, DateTime>(
-          json['remind_at'], const DateTimeConverter().fromJson),
+      remindAt: json['remind_at'] == null
+          ? null
+          : DateTime.parse(json['remind_at'] as String),
       taskStatus: json['task_status'] as String?,
       importance: json['importance'] as int?,
       urgency: json['urgency'] as int?,
@@ -42,11 +44,9 @@ Map<String, dynamic> _$$_TaskToJson(_$_Task instance) => <String, dynamic>{
       'observers': instance.observers,
       'items': instance.items,
       'assignee': instance.assignee,
-      'deadline': _$JsonConverterToJson<String, DateTime>(
-          instance.deadline, const DateTimeConverter().toJson),
+      'deadline': instance.deadline?.toIso8601String(),
       'public': instance.isPublic,
-      'remind_at': _$JsonConverterToJson<String, DateTime>(
-          instance.remindAt, const DateTimeConverter().toJson),
+      'remind_at': instance.remindAt?.toIso8601String(),
       'task_status': instance.taskStatus,
       'importance': instance.importance,
       'urgency': instance.urgency,
@@ -55,15 +55,3 @@ Map<String, dynamic> _$$_TaskToJson(_$_Task instance) => <String, dynamic>{
       'linked_messages': instance.linkedMessages,
       'uploads': instance.uploads,
     };
-
-Value? _$JsonConverterFromJson<Json, Value>(
-  Object? json,
-  Value? Function(Json json) fromJson,
-) =>
-    json == null ? null : fromJson(json as Json);
-
-Json? _$JsonConverterToJson<Json, Value>(
-  Value? value,
-  Json? Function(Value value) toJson,
-) =>
-    value == null ? null : toJson(value);

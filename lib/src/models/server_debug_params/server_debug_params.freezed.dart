@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_debug_params.dart';
@@ -12,11 +11,29 @@ part of 'server_debug_params.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ServerDebugParams _$ServerDebugParamsFromJson(Map<String, dynamic> json) {
   return _ServerDebugParams.fromJson(json);
 }
+
+/// @nodoc
+class _$ServerDebugParamsTearOff {
+  const _$ServerDebugParamsTearOff();
+
+  _ServerDebugParams call({@JsonKey(name: 'text') required String text}) {
+    return _ServerDebugParams(
+      text: text,
+    );
+  }
+
+  ServerDebugParams fromJson(Map<String, Object> json) {
+    return ServerDebugParams.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $ServerDebugParams = _$ServerDebugParamsTearOff();
 
 /// @nodoc
 mixin _$ServerDebugParams {
@@ -34,61 +51,59 @@ mixin _$ServerDebugParams {
 abstract class $ServerDebugParamsCopyWith<$Res> {
   factory $ServerDebugParamsCopyWith(
           ServerDebugParams value, $Res Function(ServerDebugParams) then) =
-      _$ServerDebugParamsCopyWithImpl<$Res, ServerDebugParams>;
-  @useResult
+      _$ServerDebugParamsCopyWithImpl<$Res>;
   $Res call({@JsonKey(name: 'text') String text});
 }
 
 /// @nodoc
-class _$ServerDebugParamsCopyWithImpl<$Res, $Val extends ServerDebugParams>
+class _$ServerDebugParamsCopyWithImpl<$Res>
     implements $ServerDebugParamsCopyWith<$Res> {
   _$ServerDebugParamsCopyWithImpl(this._value, this._then);
 
+  final ServerDebugParams _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(ServerDebugParams) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? text = null,
+    Object? text = freezed,
   }) {
     return _then(_value.copyWith(
-      text: null == text
+      text: text == freezed
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_ServerDebugParamsCopyWith<$Res>
+abstract class _$ServerDebugParamsCopyWith<$Res>
     implements $ServerDebugParamsCopyWith<$Res> {
-  factory _$$_ServerDebugParamsCopyWith(_$_ServerDebugParams value,
-          $Res Function(_$_ServerDebugParams) then) =
-      __$$_ServerDebugParamsCopyWithImpl<$Res>;
+  factory _$ServerDebugParamsCopyWith(
+          _ServerDebugParams value, $Res Function(_ServerDebugParams) then) =
+      __$ServerDebugParamsCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call({@JsonKey(name: 'text') String text});
 }
 
 /// @nodoc
-class __$$_ServerDebugParamsCopyWithImpl<$Res>
-    extends _$ServerDebugParamsCopyWithImpl<$Res, _$_ServerDebugParams>
-    implements _$$_ServerDebugParamsCopyWith<$Res> {
-  __$$_ServerDebugParamsCopyWithImpl(
-      _$_ServerDebugParams _value, $Res Function(_$_ServerDebugParams) _then)
-      : super(_value, _then);
+class __$ServerDebugParamsCopyWithImpl<$Res>
+    extends _$ServerDebugParamsCopyWithImpl<$Res>
+    implements _$ServerDebugParamsCopyWith<$Res> {
+  __$ServerDebugParamsCopyWithImpl(
+      _ServerDebugParams _value, $Res Function(_ServerDebugParams) _then)
+      : super(_value, (v) => _then(v as _ServerDebugParams));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _ServerDebugParams get _value => super._value as _ServerDebugParams;
+
   @override
   $Res call({
-    Object? text = null,
+    Object? text = freezed,
   }) {
-    return _then(_$_ServerDebugParams(
-      text: null == text
+    return _then(_ServerDebugParams(
+      text: text == freezed
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
@@ -104,8 +119,9 @@ class _$_ServerDebugParams implements _ServerDebugParams {
   factory _$_ServerDebugParams.fromJson(Map<String, dynamic> json) =>
       _$$_ServerDebugParamsFromJson(json);
 
-  /// Debug message.
   @override
+
+  /// Debug message.
   @JsonKey(name: 'text')
   final String text;
 
@@ -117,34 +133,29 @@ class _$_ServerDebugParams implements _ServerDebugParams {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ServerDebugParams &&
-            (identical(other.text, text) || other.text == text));
+        (other is _ServerDebugParams &&
+            (identical(other.text, text) ||
+                const DeepCollectionEquality().equals(other.text, text)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, text);
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(text);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_ServerDebugParamsCopyWith<_$_ServerDebugParams> get copyWith =>
-      __$$_ServerDebugParamsCopyWithImpl<_$_ServerDebugParams>(
-          this, _$identity);
+  _$ServerDebugParamsCopyWith<_ServerDebugParams> get copyWith =>
+      __$ServerDebugParamsCopyWithImpl<_ServerDebugParams>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ServerDebugParamsToJson(
-      this,
-    );
+    return _$$_ServerDebugParamsToJson(this);
   }
 }
 
 abstract class _ServerDebugParams implements ServerDebugParams {
   const factory _ServerDebugParams(
-          {@JsonKey(name: 'text') required final String text}) =
-      _$_ServerDebugParams;
+      {@JsonKey(name: 'text') required String text}) = _$_ServerDebugParams;
 
   factory _ServerDebugParams.fromJson(Map<String, dynamic> json) =
       _$_ServerDebugParams.fromJson;
@@ -153,9 +164,9 @@ abstract class _ServerDebugParams implements ServerDebugParams {
 
   /// Debug message.
   @JsonKey(name: 'text')
-  String get text;
+  String get text => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ServerDebugParamsCopyWith<_$_ServerDebugParams> get copyWith =>
+  _$ServerDebugParamsCopyWith<_ServerDebugParams> get copyWith =>
       throw _privateConstructorUsedError;
 }

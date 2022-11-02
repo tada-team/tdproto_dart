@@ -57,11 +57,12 @@ _$_Chat _$$_ChatFromJson(Map<String, dynamic> json) => _$_Chat(
       owner: json['owner'] as String?,
       taskStatus: json['task_status'] as String?,
       title: json['title'] as String?,
-      done: _$JsonConverterFromJson<String, DateTime>(
-          json['done'], const DateTimeConverter().fromJson),
+      done:
+          json['done'] == null ? null : DateTime.parse(json['done'] as String),
       doneReason: json['done_reason'] as String?,
-      deadline: _$JsonConverterFromJson<String, DateTime>(
-          json['deadline'], const DateTimeConverter().fromJson),
+      deadline: json['deadline'] == null
+          ? null
+          : DateTime.parse(json['deadline'] as String),
       deadlineExpired: json['deadline_expired'] as bool?,
       links: (json['links'] as List<dynamic>?)
           ?.map((e) => MessageLink.fromJson(e as Map<String, dynamic>))
@@ -97,11 +98,13 @@ _$_Chat _$$_ChatFromJson(Map<String, dynamic> json) => _$_Chat(
       canJoin: json['can_join'] as bool?,
       canDeleteAnyMessage: json['can_delete_any_message'] as bool?,
       canSetImportantAnyMessage: json['can_set_important_any_message'] as bool?,
-      lastActivity: _$JsonConverterFromJson<String, DateTime>(
-          json['last_activity'], const DateTimeConverter().fromJson),
+      lastActivity: json['last_activity'] == null
+          ? null
+          : DateTime.parse(json['last_activity'] as String),
       draftNum: json['draft_num'] as int?,
-      meetingStartAt: _$JsonConverterFromJson<String, DateTime>(
-          json['meeting_start_at'], const DateTimeConverter().fromJson),
+      meetingStartAt: json['meeting_start_at'] == null
+          ? null
+          : DateTime.parse(json['meeting_start_at'] as String),
       meetingFreq: json['meeting_freq'] as bool?,
       meetingDuration: json['meeting_duration'] as int?,
     );
@@ -147,11 +150,9 @@ Map<String, dynamic> _$$_ChatToJson(_$_Chat instance) => <String, dynamic>{
       'owner': instance.owner,
       'task_status': instance.taskStatus,
       'title': instance.title,
-      'done': _$JsonConverterToJson<String, DateTime>(
-          instance.done, const DateTimeConverter().toJson),
+      'done': instance.done?.toIso8601String(),
       'done_reason': instance.doneReason,
-      'deadline': _$JsonConverterToJson<String, DateTime>(
-          instance.deadline, const DateTimeConverter().toJson),
+      'deadline': instance.deadline?.toIso8601String(),
       'deadline_expired': instance.deadlineExpired,
       'links': instance.links?.map((e) => e.toJson()).toList(),
       'tags': instance.tags,
@@ -177,23 +178,9 @@ Map<String, dynamic> _$$_ChatToJson(_$_Chat instance) => <String, dynamic>{
       'can_join': instance.canJoin,
       'can_delete_any_message': instance.canDeleteAnyMessage,
       'can_set_important_any_message': instance.canSetImportantAnyMessage,
-      'last_activity': _$JsonConverterToJson<String, DateTime>(
-          instance.lastActivity, const DateTimeConverter().toJson),
+      'last_activity': instance.lastActivity?.toIso8601String(),
       'draft_num': instance.draftNum,
-      'meeting_start_at': _$JsonConverterToJson<String, DateTime>(
-          instance.meetingStartAt, const DateTimeConverter().toJson),
+      'meeting_start_at': instance.meetingStartAt?.toIso8601String(),
       'meeting_freq': instance.meetingFreq,
       'meeting_duration': instance.meetingDuration,
     };
-
-Value? _$JsonConverterFromJson<Json, Value>(
-  Object? json,
-  Value? Function(Json json) fromJson,
-) =>
-    json == null ? null : fromJson(json as Json);
-
-Json? _$JsonConverterToJson<Json, Value>(
-  Value? value,
-  Json? Function(Value value) toJson,
-) =>
-    value == null ? null : toJson(value);

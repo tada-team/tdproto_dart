@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'subtask.dart';
@@ -12,11 +11,46 @@ part of 'subtask.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Subtask _$SubtaskFromJson(Map<String, dynamic> json) {
   return _Subtask.fromJson(json);
 }
+
+/// @nodoc
+class _$SubtaskTearOff {
+  const _$SubtaskTearOff();
+
+  _Subtask call(
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'assignee') required String assignee,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'num') required int num,
+      @JsonKey(name: 'display_name') required String displayName,
+      @JsonKey(name: 'public') bool? isPublic,
+      @JsonKey(name: 'task_status') String? taskStatus,
+      @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
+      @JsonKey(name: 'deadline_expired') bool? deadlineExpired}) {
+    return _Subtask(
+      jid: jid,
+      assignee: assignee,
+      title: title,
+      num: num,
+      displayName: displayName,
+      isPublic: isPublic,
+      taskStatus: taskStatus,
+      deadline: deadline,
+      deadlineExpired: deadlineExpired,
+    );
+  }
+
+  Subtask fromJson(Map<String, Object> json) {
+    return Subtask.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $Subtask = _$SubtaskTearOff();
 
 /// @nodoc
 mixin _$Subtask {
@@ -65,8 +99,7 @@ mixin _$Subtask {
 /// @nodoc
 abstract class $SubtaskCopyWith<$Res> {
   factory $SubtaskCopyWith(Subtask value, $Res Function(Subtask) then) =
-      _$SubtaskCopyWithImpl<$Res, Subtask>;
-  @useResult
+      _$SubtaskCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'assignee') String assignee,
@@ -80,76 +113,71 @@ abstract class $SubtaskCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SubtaskCopyWithImpl<$Res, $Val extends Subtask>
-    implements $SubtaskCopyWith<$Res> {
+class _$SubtaskCopyWithImpl<$Res> implements $SubtaskCopyWith<$Res> {
   _$SubtaskCopyWithImpl(this._value, this._then);
 
+  final Subtask _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(Subtask) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? jid = null,
-    Object? assignee = null,
-    Object? title = null,
-    Object? num = null,
-    Object? displayName = null,
+    Object? jid = freezed,
+    Object? assignee = freezed,
+    Object? title = freezed,
+    Object? num = freezed,
+    Object? displayName = freezed,
     Object? isPublic = freezed,
     Object? taskStatus = freezed,
     Object? deadline = freezed,
     Object? deadlineExpired = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: null == jid
+      jid: jid == freezed
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      assignee: null == assignee
+      assignee: assignee == freezed
           ? _value.assignee
           : assignee // ignore: cast_nullable_to_non_nullable
               as String,
-      title: null == title
+      title: title == freezed
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      num: null == num
+      num: num == freezed
           ? _value.num
           : num // ignore: cast_nullable_to_non_nullable
               as int,
-      displayName: null == displayName
+      displayName: displayName == freezed
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String,
-      isPublic: freezed == isPublic
+      isPublic: isPublic == freezed
           ? _value.isPublic
           : isPublic // ignore: cast_nullable_to_non_nullable
               as bool?,
-      taskStatus: freezed == taskStatus
+      taskStatus: taskStatus == freezed
           ? _value.taskStatus
           : taskStatus // ignore: cast_nullable_to_non_nullable
               as String?,
-      deadline: freezed == deadline
+      deadline: deadline == freezed
           ? _value.deadline
           : deadline // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deadlineExpired: freezed == deadlineExpired
+      deadlineExpired: deadlineExpired == freezed
           ? _value.deadlineExpired
           : deadlineExpired // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_SubtaskCopyWith<$Res> implements $SubtaskCopyWith<$Res> {
-  factory _$$_SubtaskCopyWith(
-          _$_Subtask value, $Res Function(_$_Subtask) then) =
-      __$$_SubtaskCopyWithImpl<$Res>;
+abstract class _$SubtaskCopyWith<$Res> implements $SubtaskCopyWith<$Res> {
+  factory _$SubtaskCopyWith(_Subtask value, $Res Function(_Subtask) then) =
+      __$SubtaskCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'assignee') String assignee,
@@ -163,59 +191,60 @@ abstract class _$$_SubtaskCopyWith<$Res> implements $SubtaskCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_SubtaskCopyWithImpl<$Res>
-    extends _$SubtaskCopyWithImpl<$Res, _$_Subtask>
-    implements _$$_SubtaskCopyWith<$Res> {
-  __$$_SubtaskCopyWithImpl(_$_Subtask _value, $Res Function(_$_Subtask) _then)
-      : super(_value, _then);
+class __$SubtaskCopyWithImpl<$Res> extends _$SubtaskCopyWithImpl<$Res>
+    implements _$SubtaskCopyWith<$Res> {
+  __$SubtaskCopyWithImpl(_Subtask _value, $Res Function(_Subtask) _then)
+      : super(_value, (v) => _then(v as _Subtask));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _Subtask get _value => super._value as _Subtask;
+
   @override
   $Res call({
-    Object? jid = null,
-    Object? assignee = null,
-    Object? title = null,
-    Object? num = null,
-    Object? displayName = null,
+    Object? jid = freezed,
+    Object? assignee = freezed,
+    Object? title = freezed,
+    Object? num = freezed,
+    Object? displayName = freezed,
     Object? isPublic = freezed,
     Object? taskStatus = freezed,
     Object? deadline = freezed,
     Object? deadlineExpired = freezed,
   }) {
-    return _then(_$_Subtask(
-      jid: null == jid
+    return _then(_Subtask(
+      jid: jid == freezed
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      assignee: null == assignee
+      assignee: assignee == freezed
           ? _value.assignee
           : assignee // ignore: cast_nullable_to_non_nullable
               as String,
-      title: null == title
+      title: title == freezed
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      num: null == num
+      num: num == freezed
           ? _value.num
           : num // ignore: cast_nullable_to_non_nullable
               as int,
-      displayName: null == displayName
+      displayName: displayName == freezed
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String,
-      isPublic: freezed == isPublic
+      isPublic: isPublic == freezed
           ? _value.isPublic
           : isPublic // ignore: cast_nullable_to_non_nullable
               as bool?,
-      taskStatus: freezed == taskStatus
+      taskStatus: taskStatus == freezed
           ? _value.taskStatus
           : taskStatus // ignore: cast_nullable_to_non_nullable
               as String?,
-      deadline: freezed == deadline
+      deadline: deadline == freezed
           ? _value.deadline
           : deadline // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deadlineExpired: freezed == deadlineExpired
+      deadlineExpired: deadlineExpired == freezed
           ? _value.deadlineExpired
           : deadlineExpired // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -240,49 +269,50 @@ class _$_Subtask implements _Subtask {
   factory _$_Subtask.fromJson(Map<String, dynamic> json) =>
       _$$_SubtaskFromJson(json);
 
-  /// Task id.
   @override
+
+  /// Task id.
   @JsonKey(name: 'jid')
   final String jid;
+  @override
 
   /// Assignee contact id. Tasks only.
-  @override
   @JsonKey(name: 'assignee')
   final String assignee;
+  @override
 
   /// Task title. Generated from number and description.
-  @override
   @JsonKey(name: 'title')
   final String title;
+  @override
 
   /// Task number in this team.
-  @override
   @JsonKey(name: 'num')
   final int num;
+  @override
 
   /// Title.
-  @override
   @JsonKey(name: 'display_name')
   final String displayName;
+  @override
 
   /// Is task or group public for non-guests.
-  @override
   @JsonKey(name: 'public')
   final bool? isPublic;
+  @override
 
   /// Subtask task status.
-  @override
   @JsonKey(name: 'task_status')
   final String? taskStatus;
+  @override
 
   /// Subtask deadline in iso format, if any.
-  @override
   @JsonKey(name: 'deadline')
   @DateTimeConverter()
   final DateTime? deadline;
+  @override
 
   /// Is subtask deadline expired.
-  @override
   @JsonKey(name: 'deadline_expired')
   final bool? deadlineExpired;
 
@@ -294,65 +324,68 @@ class _$_Subtask implements _Subtask {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_Subtask &&
-            (identical(other.jid, jid) || other.jid == jid) &&
+        (other is _Subtask &&
+            (identical(other.jid, jid) ||
+                const DeepCollectionEquality().equals(other.jid, jid)) &&
             (identical(other.assignee, assignee) ||
-                other.assignee == assignee) &&
-            (identical(other.title, title) || other.title == title) &&
-            (identical(other.num, num) || other.num == num) &&
+                const DeepCollectionEquality()
+                    .equals(other.assignee, assignee)) &&
+            (identical(other.title, title) ||
+                const DeepCollectionEquality().equals(other.title, title)) &&
+            (identical(other.num, num) ||
+                const DeepCollectionEquality().equals(other.num, num)) &&
             (identical(other.displayName, displayName) ||
-                other.displayName == displayName) &&
+                const DeepCollectionEquality()
+                    .equals(other.displayName, displayName)) &&
             (identical(other.isPublic, isPublic) ||
-                other.isPublic == isPublic) &&
+                const DeepCollectionEquality()
+                    .equals(other.isPublic, isPublic)) &&
             (identical(other.taskStatus, taskStatus) ||
-                other.taskStatus == taskStatus) &&
+                const DeepCollectionEquality()
+                    .equals(other.taskStatus, taskStatus)) &&
             (identical(other.deadline, deadline) ||
-                other.deadline == deadline) &&
+                const DeepCollectionEquality()
+                    .equals(other.deadline, deadline)) &&
             (identical(other.deadlineExpired, deadlineExpired) ||
-                other.deadlineExpired == deadlineExpired));
+                const DeepCollectionEquality()
+                    .equals(other.deadlineExpired, deadlineExpired)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, jid, assignee, title, num,
-      displayName, isPublic, taskStatus, deadline, deadlineExpired);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(jid) ^
+      const DeepCollectionEquality().hash(assignee) ^
+      const DeepCollectionEquality().hash(title) ^
+      const DeepCollectionEquality().hash(num) ^
+      const DeepCollectionEquality().hash(displayName) ^
+      const DeepCollectionEquality().hash(isPublic) ^
+      const DeepCollectionEquality().hash(taskStatus) ^
+      const DeepCollectionEquality().hash(deadline) ^
+      const DeepCollectionEquality().hash(deadlineExpired);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_SubtaskCopyWith<_$_Subtask> get copyWith =>
-      __$$_SubtaskCopyWithImpl<_$_Subtask>(this, _$identity);
+  _$SubtaskCopyWith<_Subtask> get copyWith =>
+      __$SubtaskCopyWithImpl<_Subtask>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_SubtaskToJson(
-      this,
-    );
+    return _$$_SubtaskToJson(this);
   }
 }
 
 abstract class _Subtask implements Subtask {
   const factory _Subtask(
-      {@JsonKey(name: 'jid')
-          required final String jid,
-      @JsonKey(name: 'assignee')
-          required final String assignee,
-      @JsonKey(name: 'title')
-          required final String title,
-      @JsonKey(name: 'num')
-          required final int num,
-      @JsonKey(name: 'display_name')
-          required final String displayName,
-      @JsonKey(name: 'public')
-          final bool? isPublic,
-      @JsonKey(name: 'task_status')
-          final String? taskStatus,
-      @JsonKey(name: 'deadline')
-      @DateTimeConverter()
-          final DateTime? deadline,
-      @JsonKey(name: 'deadline_expired')
-          final bool? deadlineExpired}) = _$_Subtask;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'assignee') required String assignee,
+      @JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'num') required int num,
+      @JsonKey(name: 'display_name') required String displayName,
+      @JsonKey(name: 'public') bool? isPublic,
+      @JsonKey(name: 'task_status') String? taskStatus,
+      @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
+      @JsonKey(name: 'deadline_expired') bool? deadlineExpired}) = _$_Subtask;
 
   factory _Subtask.fromJson(Map<String, dynamic> json) = _$_Subtask.fromJson;
 
@@ -360,50 +393,50 @@ abstract class _Subtask implements Subtask {
 
   /// Task id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Assignee contact id. Tasks only.
   @JsonKey(name: 'assignee')
-  String get assignee;
+  String get assignee => throw _privateConstructorUsedError;
   @override
 
   /// Task title. Generated from number and description.
   @JsonKey(name: 'title')
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
 
   /// Task number in this team.
   @JsonKey(name: 'num')
-  int get num;
+  int get num => throw _privateConstructorUsedError;
   @override
 
   /// Title.
   @JsonKey(name: 'display_name')
-  String get displayName;
+  String get displayName => throw _privateConstructorUsedError;
   @override
 
   /// Is task or group public for non-guests.
   @JsonKey(name: 'public')
-  bool? get isPublic;
+  bool? get isPublic => throw _privateConstructorUsedError;
   @override
 
   /// Subtask task status.
   @JsonKey(name: 'task_status')
-  String? get taskStatus;
+  String? get taskStatus => throw _privateConstructorUsedError;
   @override
 
   /// Subtask deadline in iso format, if any.
   @JsonKey(name: 'deadline')
   @DateTimeConverter()
-  DateTime? get deadline;
+  DateTime? get deadline => throw _privateConstructorUsedError;
   @override
 
   /// Is subtask deadline expired.
   @JsonKey(name: 'deadline_expired')
-  bool? get deadlineExpired;
+  bool? get deadlineExpired => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_SubtaskCopyWith<_$_Subtask> get copyWith =>
+  _$SubtaskCopyWith<_Subtask> get copyWith =>
       throw _privateConstructorUsedError;
 }

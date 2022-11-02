@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'workplace_billing.dart';
@@ -12,11 +11,34 @@ part of 'workplace_billing.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 WorkplaceBilling _$WorkplaceBillingFromJson(Map<String, dynamic> json) {
   return _WorkplaceBilling.fromJson(json);
 }
+
+/// @nodoc
+class _$WorkplaceBillingTearOff {
+  const _$WorkplaceBillingTearOff();
+
+  _WorkplaceBilling call(
+      {@JsonKey(name: 'workplace_id') String? workplaceId,
+      @JsonKey(name: 'user_id') String? userId,
+      @JsonKey(name: 'user_uuid') String? userUuid}) {
+    return _WorkplaceBilling(
+      workplaceId: workplaceId,
+      userId: userId,
+      userUuid: userUuid,
+    );
+  }
+
+  WorkplaceBilling fromJson(Map<String, Object> json) {
+    return WorkplaceBilling.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $WorkplaceBilling = _$WorkplaceBillingTearOff();
 
 /// @nodoc
 mixin _$WorkplaceBilling {
@@ -42,8 +64,7 @@ mixin _$WorkplaceBilling {
 abstract class $WorkplaceBillingCopyWith<$Res> {
   factory $WorkplaceBillingCopyWith(
           WorkplaceBilling value, $Res Function(WorkplaceBilling) then) =
-      _$WorkplaceBillingCopyWithImpl<$Res, WorkplaceBilling>;
-  @useResult
+      _$WorkplaceBillingCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'workplace_id') String? workplaceId,
       @JsonKey(name: 'user_id') String? userId,
@@ -51,16 +72,14 @@ abstract class $WorkplaceBillingCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$WorkplaceBillingCopyWithImpl<$Res, $Val extends WorkplaceBilling>
+class _$WorkplaceBillingCopyWithImpl<$Res>
     implements $WorkplaceBillingCopyWith<$Res> {
   _$WorkplaceBillingCopyWithImpl(this._value, this._then);
 
+  final WorkplaceBilling _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(WorkplaceBilling) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? workplaceId = freezed,
@@ -68,30 +87,29 @@ class _$WorkplaceBillingCopyWithImpl<$Res, $Val extends WorkplaceBilling>
     Object? userUuid = freezed,
   }) {
     return _then(_value.copyWith(
-      workplaceId: freezed == workplaceId
+      workplaceId: workplaceId == freezed
           ? _value.workplaceId
           : workplaceId // ignore: cast_nullable_to_non_nullable
               as String?,
-      userId: freezed == userId
+      userId: userId == freezed
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as String?,
-      userUuid: freezed == userUuid
+      userUuid: userUuid == freezed
           ? _value.userUuid
           : userUuid // ignore: cast_nullable_to_non_nullable
               as String?,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_WorkplaceBillingCopyWith<$Res>
+abstract class _$WorkplaceBillingCopyWith<$Res>
     implements $WorkplaceBillingCopyWith<$Res> {
-  factory _$$_WorkplaceBillingCopyWith(
-          _$_WorkplaceBilling value, $Res Function(_$_WorkplaceBilling) then) =
-      __$$_WorkplaceBillingCopyWithImpl<$Res>;
+  factory _$WorkplaceBillingCopyWith(
+          _WorkplaceBilling value, $Res Function(_WorkplaceBilling) then) =
+      __$WorkplaceBillingCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'workplace_id') String? workplaceId,
       @JsonKey(name: 'user_id') String? userId,
@@ -99,30 +117,32 @@ abstract class _$$_WorkplaceBillingCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_WorkplaceBillingCopyWithImpl<$Res>
-    extends _$WorkplaceBillingCopyWithImpl<$Res, _$_WorkplaceBilling>
-    implements _$$_WorkplaceBillingCopyWith<$Res> {
-  __$$_WorkplaceBillingCopyWithImpl(
-      _$_WorkplaceBilling _value, $Res Function(_$_WorkplaceBilling) _then)
-      : super(_value, _then);
+class __$WorkplaceBillingCopyWithImpl<$Res>
+    extends _$WorkplaceBillingCopyWithImpl<$Res>
+    implements _$WorkplaceBillingCopyWith<$Res> {
+  __$WorkplaceBillingCopyWithImpl(
+      _WorkplaceBilling _value, $Res Function(_WorkplaceBilling) _then)
+      : super(_value, (v) => _then(v as _WorkplaceBilling));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _WorkplaceBilling get _value => super._value as _WorkplaceBilling;
+
   @override
   $Res call({
     Object? workplaceId = freezed,
     Object? userId = freezed,
     Object? userUuid = freezed,
   }) {
-    return _then(_$_WorkplaceBilling(
-      workplaceId: freezed == workplaceId
+    return _then(_WorkplaceBilling(
+      workplaceId: workplaceId == freezed
           ? _value.workplaceId
           : workplaceId // ignore: cast_nullable_to_non_nullable
               as String?,
-      userId: freezed == userId
+      userId: userId == freezed
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as String?,
-      userUuid: freezed == userUuid
+      userUuid: userUuid == freezed
           ? _value.userUuid
           : userUuid // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -141,18 +161,19 @@ class _$_WorkplaceBilling implements _WorkplaceBilling {
   factory _$_WorkplaceBilling.fromJson(Map<String, dynamic> json) =>
       _$$_WorkplaceBillingFromJson(json);
 
-  /// .
   @override
+
+  /// .
   @JsonKey(name: 'workplace_id')
   final String? workplaceId;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'user_id')
   final String? userId;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'user_uuid')
   final String? userUuid;
 
@@ -164,39 +185,40 @@ class _$_WorkplaceBilling implements _WorkplaceBilling {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_WorkplaceBilling &&
+        (other is _WorkplaceBilling &&
             (identical(other.workplaceId, workplaceId) ||
-                other.workplaceId == workplaceId) &&
-            (identical(other.userId, userId) || other.userId == userId) &&
+                const DeepCollectionEquality()
+                    .equals(other.workplaceId, workplaceId)) &&
+            (identical(other.userId, userId) ||
+                const DeepCollectionEquality().equals(other.userId, userId)) &&
             (identical(other.userUuid, userUuid) ||
-                other.userUuid == userUuid));
+                const DeepCollectionEquality()
+                    .equals(other.userUuid, userUuid)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, workplaceId, userId, userUuid);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(workplaceId) ^
+      const DeepCollectionEquality().hash(userId) ^
+      const DeepCollectionEquality().hash(userUuid);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_WorkplaceBillingCopyWith<_$_WorkplaceBilling> get copyWith =>
-      __$$_WorkplaceBillingCopyWithImpl<_$_WorkplaceBilling>(this, _$identity);
+  _$WorkplaceBillingCopyWith<_WorkplaceBilling> get copyWith =>
+      __$WorkplaceBillingCopyWithImpl<_WorkplaceBilling>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_WorkplaceBillingToJson(
-      this,
-    );
+    return _$$_WorkplaceBillingToJson(this);
   }
 }
 
 abstract class _WorkplaceBilling implements WorkplaceBilling {
   const factory _WorkplaceBilling(
-          {@JsonKey(name: 'workplace_id') final String? workplaceId,
-          @JsonKey(name: 'user_id') final String? userId,
-          @JsonKey(name: 'user_uuid') final String? userUuid}) =
-      _$_WorkplaceBilling;
+      {@JsonKey(name: 'workplace_id') String? workplaceId,
+      @JsonKey(name: 'user_id') String? userId,
+      @JsonKey(name: 'user_uuid') String? userUuid}) = _$_WorkplaceBilling;
 
   factory _WorkplaceBilling.fromJson(Map<String, dynamic> json) =
       _$_WorkplaceBilling.fromJson;
@@ -205,19 +227,19 @@ abstract class _WorkplaceBilling implements WorkplaceBilling {
 
   /// .
   @JsonKey(name: 'workplace_id')
-  String? get workplaceId;
+  String? get workplaceId => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'user_id')
-  String? get userId;
+  String? get userId => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'user_uuid')
-  String? get userUuid;
+  String? get userUuid => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_WorkplaceBillingCopyWith<_$_WorkplaceBilling> get copyWith =>
+  _$WorkplaceBillingCopyWith<_WorkplaceBilling> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'get_users_info_by_user_u_u_i_d_array_excluding_team_members_response.dart';
@@ -12,7 +11,7 @@ part of 'get_users_info_by_user_u_u_i_d_array_excluding_team_members_response.da
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse
     _$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseFromJson(
@@ -20,6 +19,28 @@ GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse
   return _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse.fromJson(
       json);
 }
+
+/// @nodoc
+class _$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseTearOff {
+  const _$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseTearOff();
+
+  _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse call(
+      {@JsonKey(name: 'user_info') List<UserInfo>? userInfo}) {
+    return _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse(
+      userInfo: userInfo,
+    );
+  }
+
+  GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse fromJson(
+      Map<String, Object> json) {
+    return GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse.fromJson(
+        json);
+  }
+}
+
+/// @nodoc
+const $GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse =
+    _$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseTearOff();
 
 /// @nodoc
 mixin _$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse {
@@ -42,78 +63,80 @@ abstract class $GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWith<
           $Res Function(GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse)
               then) =
       _$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWithImpl<
-          $Res, GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse>;
-  @useResult
+          $Res>;
   $Res call({@JsonKey(name: 'user_info') List<UserInfo>? userInfo});
 }
 
 /// @nodoc
 class _$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWithImpl<
-        $Res,
-        $Val extends GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse>
+        $Res>
     implements
         $GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWith<$Res> {
   _$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWithImpl(
       this._value, this._then);
 
+  final GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse)
+      _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? userInfo = freezed,
   }) {
     return _then(_value.copyWith(
-      userInfo: freezed == userInfo
+      userInfo: userInfo == freezed
           ? _value.userInfo
           : userInfo // ignore: cast_nullable_to_non_nullable
               as List<UserInfo>?,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWith<
+abstract class _$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWith<
         $Res>
     implements
         $GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWith<$Res> {
-  factory _$$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWith(
-          _$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse value,
+  factory _$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWith(
+          _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse value,
           $Res Function(
-                  _$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse)
+                  _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse)
               then) =
-      __$$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWithImpl<
+      __$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWithImpl<
           $Res>;
   @override
-  @useResult
   $Res call({@JsonKey(name: 'user_info') List<UserInfo>? userInfo});
 }
 
 /// @nodoc
-class __$$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWithImpl<
+class __$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWithImpl<
         $Res>
     extends _$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWithImpl<
-        $Res, _$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse>
+        $Res>
     implements
-        _$$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWith<
+        _$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWith<
             $Res> {
-  __$$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWithImpl(
-      _$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse _value,
-      $Res Function(_$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse)
+  __$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWithImpl(
+      _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse _value,
+      $Res Function(_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse)
           _then)
-      : super(_value, _then);
+      : super(
+            _value,
+            (v) => _then(
+                v as _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse get _value =>
+      super._value as _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse;
+
   @override
   $Res call({
     Object? userInfo = freezed,
   }) {
-    return _then(_$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse(
-      userInfo: freezed == userInfo
-          ? _value._userInfo
+    return _then(_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse(
+      userInfo: userInfo == freezed
+          ? _value.userInfo
           : userInfo // ignore: cast_nullable_to_non_nullable
               as List<UserInfo>?,
     ));
@@ -125,25 +148,17 @@ class __$$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWithImpl<
 class _$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse
     implements _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse {
   const _$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse(
-      {@JsonKey(name: 'user_info') final List<UserInfo>? userInfo})
-      : _userInfo = userInfo;
+      {@JsonKey(name: 'user_info') this.userInfo});
 
   factory _$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse.fromJson(
           Map<String, dynamic> json) =>
       _$$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseFromJson(json);
 
-  /// .
-  final List<UserInfo>? _userInfo;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'user_info')
-  List<UserInfo>? get userInfo {
-    final value = _userInfo;
-    if (value == null) return null;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
-  }
+  final List<UserInfo>? userInfo;
 
   @override
   String toString() {
@@ -153,39 +168,36 @@ class _$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other
-                is _$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse &&
-            const DeepCollectionEquality().equals(other._userInfo, _userInfo));
+        (other is _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse &&
+            (identical(other.userInfo, userInfo) ||
+                const DeepCollectionEquality()
+                    .equals(other.userInfo, userInfo)));
   }
 
-  @JsonKey(ignore: true)
   @override
   int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_userInfo));
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(userInfo);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWith<
-          _$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse>
+  _$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWith<
+          _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse>
       get copyWith =>
-          __$$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWithImpl<
-                  _$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse>(
+          __$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWithImpl<
+                  _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse>(
               this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
     return _$$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseToJson(
-      this,
-    );
+        this);
   }
 }
 
 abstract class _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse
     implements GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse {
   const factory _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse(
-          {@JsonKey(name: 'user_info') final List<UserInfo>? userInfo}) =
+          {@JsonKey(name: 'user_info') List<UserInfo>? userInfo}) =
       _$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse;
 
   factory _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse.fromJson(
@@ -196,10 +208,10 @@ abstract class _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse
 
   /// .
   @JsonKey(name: 'user_info')
-  List<UserInfo>? get userInfo;
+  List<UserInfo>? get userInfo => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWith<
-          _$_GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse>
+  _$GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponseCopyWith<
+          _GetUsersInfoByUserUUIDArrayExcludingTeamMembersResponse>
       get copyWith => throw _privateConstructorUsedError;
 }

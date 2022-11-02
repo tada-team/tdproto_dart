@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'message_link.dart';
@@ -12,11 +11,42 @@ part of 'message_link.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 MessageLink _$MessageLinkFromJson(Map<String, dynamic> json) {
   return _MessageLink.fromJson(json);
 }
+
+/// @nodoc
+class _$MessageLinkTearOff {
+  const _$MessageLinkTearOff();
+
+  _MessageLink call(
+      {@JsonKey(name: 'pattern') required String pattern,
+      @JsonKey(name: 'url') required String url,
+      @JsonKey(name: 'text') required String text,
+      @JsonKey(name: 'preview') MessageLinkPreview? preview,
+      @JsonKey(name: 'uploads') List<Upload>? uploads,
+      @JsonKey(name: 'nopreview') bool? noPreview,
+      @JsonKey(name: 'youtube_id') String? youtubeId}) {
+    return _MessageLink(
+      pattern: pattern,
+      url: url,
+      text: text,
+      preview: preview,
+      uploads: uploads,
+      noPreview: noPreview,
+      youtubeId: youtubeId,
+    );
+  }
+
+  MessageLink fromJson(Map<String, Object> json) {
+    return MessageLink.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $MessageLink = _$MessageLinkTearOff();
 
 /// @nodoc
 mixin _$MessageLink {
@@ -58,8 +88,7 @@ mixin _$MessageLink {
 abstract class $MessageLinkCopyWith<$Res> {
   factory $MessageLinkCopyWith(
           MessageLink value, $Res Function(MessageLink) then) =
-      _$MessageLinkCopyWithImpl<$Res, MessageLink>;
-  @useResult
+      _$MessageLinkCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'pattern') String pattern,
       @JsonKey(name: 'url') String url,
@@ -73,79 +102,74 @@ abstract class $MessageLinkCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MessageLinkCopyWithImpl<$Res, $Val extends MessageLink>
-    implements $MessageLinkCopyWith<$Res> {
+class _$MessageLinkCopyWithImpl<$Res> implements $MessageLinkCopyWith<$Res> {
   _$MessageLinkCopyWithImpl(this._value, this._then);
 
+  final MessageLink _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(MessageLink) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? pattern = null,
-    Object? url = null,
-    Object? text = null,
+    Object? pattern = freezed,
+    Object? url = freezed,
+    Object? text = freezed,
     Object? preview = freezed,
     Object? uploads = freezed,
     Object? noPreview = freezed,
     Object? youtubeId = freezed,
   }) {
     return _then(_value.copyWith(
-      pattern: null == pattern
+      pattern: pattern == freezed
           ? _value.pattern
           : pattern // ignore: cast_nullable_to_non_nullable
               as String,
-      url: null == url
+      url: url == freezed
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      text: null == text
+      text: text == freezed
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
-      preview: freezed == preview
+      preview: preview == freezed
           ? _value.preview
           : preview // ignore: cast_nullable_to_non_nullable
               as MessageLinkPreview?,
-      uploads: freezed == uploads
+      uploads: uploads == freezed
           ? _value.uploads
           : uploads // ignore: cast_nullable_to_non_nullable
               as List<Upload>?,
-      noPreview: freezed == noPreview
+      noPreview: noPreview == freezed
           ? _value.noPreview
           : noPreview // ignore: cast_nullable_to_non_nullable
               as bool?,
-      youtubeId: freezed == youtubeId
+      youtubeId: youtubeId == freezed
           ? _value.youtubeId
           : youtubeId // ignore: cast_nullable_to_non_nullable
               as String?,
-    ) as $Val);
+    ));
   }
 
   @override
-  @pragma('vm:prefer-inline')
   $MessageLinkPreviewCopyWith<$Res>? get preview {
     if (_value.preview == null) {
       return null;
     }
 
     return $MessageLinkPreviewCopyWith<$Res>(_value.preview!, (value) {
-      return _then(_value.copyWith(preview: value) as $Val);
+      return _then(_value.copyWith(preview: value));
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_MessageLinkCopyWith<$Res>
+abstract class _$MessageLinkCopyWith<$Res>
     implements $MessageLinkCopyWith<$Res> {
-  factory _$$_MessageLinkCopyWith(
-          _$_MessageLink value, $Res Function(_$_MessageLink) then) =
-      __$$_MessageLinkCopyWithImpl<$Res>;
+  factory _$MessageLinkCopyWith(
+          _MessageLink value, $Res Function(_MessageLink) then) =
+      __$MessageLinkCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'pattern') String pattern,
       @JsonKey(name: 'url') String url,
@@ -160,50 +184,51 @@ abstract class _$$_MessageLinkCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_MessageLinkCopyWithImpl<$Res>
-    extends _$MessageLinkCopyWithImpl<$Res, _$_MessageLink>
-    implements _$$_MessageLinkCopyWith<$Res> {
-  __$$_MessageLinkCopyWithImpl(
-      _$_MessageLink _value, $Res Function(_$_MessageLink) _then)
-      : super(_value, _then);
+class __$MessageLinkCopyWithImpl<$Res> extends _$MessageLinkCopyWithImpl<$Res>
+    implements _$MessageLinkCopyWith<$Res> {
+  __$MessageLinkCopyWithImpl(
+      _MessageLink _value, $Res Function(_MessageLink) _then)
+      : super(_value, (v) => _then(v as _MessageLink));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _MessageLink get _value => super._value as _MessageLink;
+
   @override
   $Res call({
-    Object? pattern = null,
-    Object? url = null,
-    Object? text = null,
+    Object? pattern = freezed,
+    Object? url = freezed,
+    Object? text = freezed,
     Object? preview = freezed,
     Object? uploads = freezed,
     Object? noPreview = freezed,
     Object? youtubeId = freezed,
   }) {
-    return _then(_$_MessageLink(
-      pattern: null == pattern
+    return _then(_MessageLink(
+      pattern: pattern == freezed
           ? _value.pattern
           : pattern // ignore: cast_nullable_to_non_nullable
               as String,
-      url: null == url
+      url: url == freezed
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      text: null == text
+      text: text == freezed
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
-      preview: freezed == preview
+      preview: preview == freezed
           ? _value.preview
           : preview // ignore: cast_nullable_to_non_nullable
               as MessageLinkPreview?,
-      uploads: freezed == uploads
-          ? _value._uploads
+      uploads: uploads == freezed
+          ? _value.uploads
           : uploads // ignore: cast_nullable_to_non_nullable
               as List<Upload>?,
-      noPreview: freezed == noPreview
+      noPreview: noPreview == freezed
           ? _value.noPreview
           : noPreview // ignore: cast_nullable_to_non_nullable
               as bool?,
-      youtubeId: freezed == youtubeId
+      youtubeId: youtubeId == freezed
           ? _value.youtubeId
           : youtubeId // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -219,54 +244,46 @@ class _$_MessageLink implements _MessageLink {
       @JsonKey(name: 'url') required this.url,
       @JsonKey(name: 'text') required this.text,
       @JsonKey(name: 'preview') this.preview,
-      @JsonKey(name: 'uploads') final List<Upload>? uploads,
+      @JsonKey(name: 'uploads') this.uploads,
       @JsonKey(name: 'nopreview') this.noPreview,
-      @JsonKey(name: 'youtube_id') this.youtubeId})
-      : _uploads = uploads;
+      @JsonKey(name: 'youtube_id') this.youtubeId});
 
   factory _$_MessageLink.fromJson(Map<String, dynamic> json) =>
       _$$_MessageLinkFromJson(json);
 
-  /// Text fragment that should be replaced by link.
   @override
+
+  /// Text fragment that should be replaced by link.
   @JsonKey(name: 'pattern')
   final String pattern;
+  @override
 
   /// Internal or external link.
-  @override
   @JsonKey(name: 'url')
   final String url;
+  @override
 
   /// Text replacement.
-  @override
   @JsonKey(name: 'text')
   final String text;
+  @override
 
   /// Optional preview info, for websites.
-  @override
   @JsonKey(name: 'preview')
   final MessageLinkPreview? preview;
-
-  /// Optional upload info.
-  final List<Upload>? _uploads;
-
-  /// Optional upload info.
   @override
+
+  /// Optional upload info.
   @JsonKey(name: 'uploads')
-  List<Upload>? get uploads {
-    final value = _uploads;
-    if (value == null) return null;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
-  }
+  final List<Upload>? uploads;
+  @override
 
   /// Website previews disabled.
-  @override
   @JsonKey(name: 'nopreview')
   final bool? noPreview;
+  @override
 
   /// Optional youtube movie id.
-  @override
   @JsonKey(name: 'youtube_id')
   final String? youtubeId;
 
@@ -278,47 +295,59 @@ class _$_MessageLink implements _MessageLink {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_MessageLink &&
-            (identical(other.pattern, pattern) || other.pattern == pattern) &&
-            (identical(other.url, url) || other.url == url) &&
-            (identical(other.text, text) || other.text == text) &&
-            (identical(other.preview, preview) || other.preview == preview) &&
-            const DeepCollectionEquality().equals(other._uploads, _uploads) &&
+        (other is _MessageLink &&
+            (identical(other.pattern, pattern) ||
+                const DeepCollectionEquality()
+                    .equals(other.pattern, pattern)) &&
+            (identical(other.url, url) ||
+                const DeepCollectionEquality().equals(other.url, url)) &&
+            (identical(other.text, text) ||
+                const DeepCollectionEquality().equals(other.text, text)) &&
+            (identical(other.preview, preview) ||
+                const DeepCollectionEquality()
+                    .equals(other.preview, preview)) &&
+            (identical(other.uploads, uploads) ||
+                const DeepCollectionEquality()
+                    .equals(other.uploads, uploads)) &&
             (identical(other.noPreview, noPreview) ||
-                other.noPreview == noPreview) &&
+                const DeepCollectionEquality()
+                    .equals(other.noPreview, noPreview)) &&
             (identical(other.youtubeId, youtubeId) ||
-                other.youtubeId == youtubeId));
+                const DeepCollectionEquality()
+                    .equals(other.youtubeId, youtubeId)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, pattern, url, text, preview,
-      const DeepCollectionEquality().hash(_uploads), noPreview, youtubeId);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(pattern) ^
+      const DeepCollectionEquality().hash(url) ^
+      const DeepCollectionEquality().hash(text) ^
+      const DeepCollectionEquality().hash(preview) ^
+      const DeepCollectionEquality().hash(uploads) ^
+      const DeepCollectionEquality().hash(noPreview) ^
+      const DeepCollectionEquality().hash(youtubeId);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_MessageLinkCopyWith<_$_MessageLink> get copyWith =>
-      __$$_MessageLinkCopyWithImpl<_$_MessageLink>(this, _$identity);
+  _$MessageLinkCopyWith<_MessageLink> get copyWith =>
+      __$MessageLinkCopyWithImpl<_MessageLink>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MessageLinkToJson(
-      this,
-    );
+    return _$$_MessageLinkToJson(this);
   }
 }
 
 abstract class _MessageLink implements MessageLink {
   const factory _MessageLink(
-      {@JsonKey(name: 'pattern') required final String pattern,
-      @JsonKey(name: 'url') required final String url,
-      @JsonKey(name: 'text') required final String text,
-      @JsonKey(name: 'preview') final MessageLinkPreview? preview,
-      @JsonKey(name: 'uploads') final List<Upload>? uploads,
-      @JsonKey(name: 'nopreview') final bool? noPreview,
-      @JsonKey(name: 'youtube_id') final String? youtubeId}) = _$_MessageLink;
+      {@JsonKey(name: 'pattern') required String pattern,
+      @JsonKey(name: 'url') required String url,
+      @JsonKey(name: 'text') required String text,
+      @JsonKey(name: 'preview') MessageLinkPreview? preview,
+      @JsonKey(name: 'uploads') List<Upload>? uploads,
+      @JsonKey(name: 'nopreview') bool? noPreview,
+      @JsonKey(name: 'youtube_id') String? youtubeId}) = _$_MessageLink;
 
   factory _MessageLink.fromJson(Map<String, dynamic> json) =
       _$_MessageLink.fromJson;
@@ -327,39 +356,39 @@ abstract class _MessageLink implements MessageLink {
 
   /// Text fragment that should be replaced by link.
   @JsonKey(name: 'pattern')
-  String get pattern;
+  String get pattern => throw _privateConstructorUsedError;
   @override
 
   /// Internal or external link.
   @JsonKey(name: 'url')
-  String get url;
+  String get url => throw _privateConstructorUsedError;
   @override
 
   /// Text replacement.
   @JsonKey(name: 'text')
-  String get text;
+  String get text => throw _privateConstructorUsedError;
   @override
 
   /// Optional preview info, for websites.
   @JsonKey(name: 'preview')
-  MessageLinkPreview? get preview;
+  MessageLinkPreview? get preview => throw _privateConstructorUsedError;
   @override
 
   /// Optional upload info.
   @JsonKey(name: 'uploads')
-  List<Upload>? get uploads;
+  List<Upload>? get uploads => throw _privateConstructorUsedError;
   @override
 
   /// Website previews disabled.
   @JsonKey(name: 'nopreview')
-  bool? get noPreview;
+  bool? get noPreview => throw _privateConstructorUsedError;
   @override
 
   /// Optional youtube movie id.
   @JsonKey(name: 'youtube_id')
-  String? get youtubeId;
+  String? get youtubeId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_MessageLinkCopyWith<_$_MessageLink> get copyWith =>
+  _$MessageLinkCopyWith<_MessageLink> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'paginated_upload_short_messages.dart';
@@ -12,12 +11,37 @@ part of 'paginated_upload_short_messages.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 PaginatedUploadShortMessages _$PaginatedUploadShortMessagesFromJson(
     Map<String, dynamic> json) {
   return _PaginatedUploadShortMessages.fromJson(json);
 }
+
+/// @nodoc
+class _$PaginatedUploadShortMessagesTearOff {
+  const _$PaginatedUploadShortMessagesTearOff();
+
+  _PaginatedUploadShortMessages call(
+      {@JsonKey(name: 'objects') required List<UploadShortMessage> objects,
+      @JsonKey(name: 'count') required int count,
+      @JsonKey(name: 'limit') required int limit,
+      @JsonKey(name: 'offset') required int offset}) {
+    return _PaginatedUploadShortMessages(
+      objects: objects,
+      count: count,
+      limit: limit,
+      offset: offset,
+    );
+  }
+
+  PaginatedUploadShortMessages fromJson(Map<String, Object> json) {
+    return PaginatedUploadShortMessages.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PaginatedUploadShortMessages = _$PaginatedUploadShortMessagesTearOff();
 
 /// @nodoc
 mixin _$PaginatedUploadShortMessages {
@@ -48,9 +72,7 @@ abstract class $PaginatedUploadShortMessagesCopyWith<$Res> {
   factory $PaginatedUploadShortMessagesCopyWith(
           PaginatedUploadShortMessages value,
           $Res Function(PaginatedUploadShortMessages) then) =
-      _$PaginatedUploadShortMessagesCopyWithImpl<$Res,
-          PaginatedUploadShortMessages>;
-  @useResult
+      _$PaginatedUploadShortMessagesCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'objects') List<UploadShortMessage> objects,
       @JsonKey(name: 'count') int count,
@@ -59,54 +81,50 @@ abstract class $PaginatedUploadShortMessagesCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PaginatedUploadShortMessagesCopyWithImpl<$Res,
-        $Val extends PaginatedUploadShortMessages>
+class _$PaginatedUploadShortMessagesCopyWithImpl<$Res>
     implements $PaginatedUploadShortMessagesCopyWith<$Res> {
   _$PaginatedUploadShortMessagesCopyWithImpl(this._value, this._then);
 
+  final PaginatedUploadShortMessages _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(PaginatedUploadShortMessages) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? objects = null,
-    Object? count = null,
-    Object? limit = null,
-    Object? offset = null,
+    Object? objects = freezed,
+    Object? count = freezed,
+    Object? limit = freezed,
+    Object? offset = freezed,
   }) {
     return _then(_value.copyWith(
-      objects: null == objects
+      objects: objects == freezed
           ? _value.objects
           : objects // ignore: cast_nullable_to_non_nullable
               as List<UploadShortMessage>,
-      count: null == count
+      count: count == freezed
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
               as int,
-      limit: null == limit
+      limit: limit == freezed
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
               as int,
-      offset: null == offset
+      offset: offset == freezed
           ? _value.offset
           : offset // ignore: cast_nullable_to_non_nullable
               as int,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_PaginatedUploadShortMessagesCopyWith<$Res>
+abstract class _$PaginatedUploadShortMessagesCopyWith<$Res>
     implements $PaginatedUploadShortMessagesCopyWith<$Res> {
-  factory _$$_PaginatedUploadShortMessagesCopyWith(
-          _$_PaginatedUploadShortMessages value,
-          $Res Function(_$_PaginatedUploadShortMessages) then) =
-      __$$_PaginatedUploadShortMessagesCopyWithImpl<$Res>;
+  factory _$PaginatedUploadShortMessagesCopyWith(
+          _PaginatedUploadShortMessages value,
+          $Res Function(_PaginatedUploadShortMessages) then) =
+      __$PaginatedUploadShortMessagesCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'objects') List<UploadShortMessage> objects,
       @JsonKey(name: 'count') int count,
@@ -115,37 +133,39 @@ abstract class _$$_PaginatedUploadShortMessagesCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_PaginatedUploadShortMessagesCopyWithImpl<$Res>
-    extends _$PaginatedUploadShortMessagesCopyWithImpl<$Res,
-        _$_PaginatedUploadShortMessages>
-    implements _$$_PaginatedUploadShortMessagesCopyWith<$Res> {
-  __$$_PaginatedUploadShortMessagesCopyWithImpl(
-      _$_PaginatedUploadShortMessages _value,
-      $Res Function(_$_PaginatedUploadShortMessages) _then)
-      : super(_value, _then);
+class __$PaginatedUploadShortMessagesCopyWithImpl<$Res>
+    extends _$PaginatedUploadShortMessagesCopyWithImpl<$Res>
+    implements _$PaginatedUploadShortMessagesCopyWith<$Res> {
+  __$PaginatedUploadShortMessagesCopyWithImpl(
+      _PaginatedUploadShortMessages _value,
+      $Res Function(_PaginatedUploadShortMessages) _then)
+      : super(_value, (v) => _then(v as _PaginatedUploadShortMessages));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _PaginatedUploadShortMessages get _value =>
+      super._value as _PaginatedUploadShortMessages;
+
   @override
   $Res call({
-    Object? objects = null,
-    Object? count = null,
-    Object? limit = null,
-    Object? offset = null,
+    Object? objects = freezed,
+    Object? count = freezed,
+    Object? limit = freezed,
+    Object? offset = freezed,
   }) {
-    return _then(_$_PaginatedUploadShortMessages(
-      objects: null == objects
-          ? _value._objects
+    return _then(_PaginatedUploadShortMessages(
+      objects: objects == freezed
+          ? _value.objects
           : objects // ignore: cast_nullable_to_non_nullable
               as List<UploadShortMessage>,
-      count: null == count
+      count: count == freezed
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
               as int,
-      limit: null == limit
+      limit: limit == freezed
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
               as int,
-      offset: null == offset
+      offset: offset == freezed
           ? _value.offset
           : offset // ignore: cast_nullable_to_non_nullable
               as int,
@@ -157,42 +177,32 @@ class __$$_PaginatedUploadShortMessagesCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_PaginatedUploadShortMessages implements _PaginatedUploadShortMessages {
   const _$_PaginatedUploadShortMessages(
-      {@JsonKey(name: 'objects')
-          required final List<UploadShortMessage> objects,
-      @JsonKey(name: 'count')
-          required this.count,
-      @JsonKey(name: 'limit')
-          required this.limit,
-      @JsonKey(name: 'offset')
-          required this.offset})
-      : _objects = objects;
+      {@JsonKey(name: 'objects') required this.objects,
+      @JsonKey(name: 'count') required this.count,
+      @JsonKey(name: 'limit') required this.limit,
+      @JsonKey(name: 'offset') required this.offset});
 
   factory _$_PaginatedUploadShortMessages.fromJson(Map<String, dynamic> json) =>
       _$$_PaginatedUploadShortMessagesFromJson(json);
 
-  /// .
-  final List<UploadShortMessage> _objects;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'objects')
-  List<UploadShortMessage> get objects {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_objects);
-  }
+  final List<UploadShortMessage> objects;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'count')
   final int count;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'limit')
   final int limit;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'offset')
   final int offset;
 
@@ -204,45 +214,46 @@ class _$_PaginatedUploadShortMessages implements _PaginatedUploadShortMessages {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_PaginatedUploadShortMessages &&
-            const DeepCollectionEquality().equals(other._objects, _objects) &&
-            (identical(other.count, count) || other.count == count) &&
-            (identical(other.limit, limit) || other.limit == limit) &&
-            (identical(other.offset, offset) || other.offset == offset));
+        (other is _PaginatedUploadShortMessages &&
+            (identical(other.objects, objects) ||
+                const DeepCollectionEquality()
+                    .equals(other.objects, objects)) &&
+            (identical(other.count, count) ||
+                const DeepCollectionEquality().equals(other.count, count)) &&
+            (identical(other.limit, limit) ||
+                const DeepCollectionEquality().equals(other.limit, limit)) &&
+            (identical(other.offset, offset) ||
+                const DeepCollectionEquality().equals(other.offset, offset)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType,
-      const DeepCollectionEquality().hash(_objects), count, limit, offset);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(objects) ^
+      const DeepCollectionEquality().hash(count) ^
+      const DeepCollectionEquality().hash(limit) ^
+      const DeepCollectionEquality().hash(offset);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_PaginatedUploadShortMessagesCopyWith<_$_PaginatedUploadShortMessages>
-      get copyWith => __$$_PaginatedUploadShortMessagesCopyWithImpl<
-          _$_PaginatedUploadShortMessages>(this, _$identity);
+  _$PaginatedUploadShortMessagesCopyWith<_PaginatedUploadShortMessages>
+      get copyWith => __$PaginatedUploadShortMessagesCopyWithImpl<
+          _PaginatedUploadShortMessages>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaginatedUploadShortMessagesToJson(
-      this,
-    );
+    return _$$_PaginatedUploadShortMessagesToJson(this);
   }
 }
 
 abstract class _PaginatedUploadShortMessages
     implements PaginatedUploadShortMessages {
   const factory _PaginatedUploadShortMessages(
-      {@JsonKey(name: 'objects')
-          required final List<UploadShortMessage> objects,
-      @JsonKey(name: 'count')
-          required final int count,
-      @JsonKey(name: 'limit')
-          required final int limit,
-      @JsonKey(name: 'offset')
-          required final int offset}) = _$_PaginatedUploadShortMessages;
+          {@JsonKey(name: 'objects') required List<UploadShortMessage> objects,
+          @JsonKey(name: 'count') required int count,
+          @JsonKey(name: 'limit') required int limit,
+          @JsonKey(name: 'offset') required int offset}) =
+      _$_PaginatedUploadShortMessages;
 
   factory _PaginatedUploadShortMessages.fromJson(Map<String, dynamic> json) =
       _$_PaginatedUploadShortMessages.fromJson;
@@ -251,24 +262,24 @@ abstract class _PaginatedUploadShortMessages
 
   /// .
   @JsonKey(name: 'objects')
-  List<UploadShortMessage> get objects;
+  List<UploadShortMessage> get objects => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'count')
-  int get count;
+  int get count => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'limit')
-  int get limit;
+  int get limit => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'offset')
-  int get offset;
+  int get offset => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_PaginatedUploadShortMessagesCopyWith<_$_PaginatedUploadShortMessages>
+  _$PaginatedUploadShortMessagesCopyWith<_PaginatedUploadShortMessages>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'client_call_screen_share.dart';
@@ -12,12 +11,35 @@ part of 'client_call_screen_share.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ClientCallScreenShare _$ClientCallScreenShareFromJson(
     Map<String, dynamic> json) {
   return _ClientCallScreenShare.fromJson(json);
 }
+
+/// @nodoc
+class _$ClientCallScreenShareTearOff {
+  const _$ClientCallScreenShareTearOff();
+
+  _ClientCallScreenShare call(
+      {@JsonKey(name: 'params') required ClientCallScreenShareParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
+    return _ClientCallScreenShare(
+      params: params,
+      name: name,
+      confirmId: confirmId,
+    );
+  }
+
+  ClientCallScreenShare fromJson(Map<String, Object> json) {
+    return ClientCallScreenShare.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $ClientCallScreenShare = _$ClientCallScreenShareTearOff();
 
 /// @nodoc
 mixin _$ClientCallScreenShare {
@@ -43,8 +65,7 @@ mixin _$ClientCallScreenShare {
 abstract class $ClientCallScreenShareCopyWith<$Res> {
   factory $ClientCallScreenShareCopyWith(ClientCallScreenShare value,
           $Res Function(ClientCallScreenShare) then) =
-      _$ClientCallScreenShareCopyWithImpl<$Res, ClientCallScreenShare>;
-  @useResult
+      _$ClientCallScreenShareCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'params') ClientCallScreenShareParams params,
       @JsonKey(name: 'event') String name,
@@ -54,56 +75,51 @@ abstract class $ClientCallScreenShareCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ClientCallScreenShareCopyWithImpl<$Res,
-        $Val extends ClientCallScreenShare>
+class _$ClientCallScreenShareCopyWithImpl<$Res>
     implements $ClientCallScreenShareCopyWith<$Res> {
   _$ClientCallScreenShareCopyWithImpl(this._value, this._then);
 
+  final ClientCallScreenShare _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(ClientCallScreenShare) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? params = null,
-    Object? name = null,
+    Object? params = freezed,
+    Object? name = freezed,
     Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: null == params
+      params: params == freezed
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ClientCallScreenShareParams,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: freezed == confirmId
+      confirmId: confirmId == freezed
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
-    ) as $Val);
+    ));
   }
 
   @override
-  @pragma('vm:prefer-inline')
   $ClientCallScreenShareParamsCopyWith<$Res> get params {
     return $ClientCallScreenShareParamsCopyWith<$Res>(_value.params, (value) {
-      return _then(_value.copyWith(params: value) as $Val);
+      return _then(_value.copyWith(params: value));
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_ClientCallScreenShareCopyWith<$Res>
+abstract class _$ClientCallScreenShareCopyWith<$Res>
     implements $ClientCallScreenShareCopyWith<$Res> {
-  factory _$$_ClientCallScreenShareCopyWith(_$_ClientCallScreenShare value,
-          $Res Function(_$_ClientCallScreenShare) then) =
-      __$$_ClientCallScreenShareCopyWithImpl<$Res>;
+  factory _$ClientCallScreenShareCopyWith(_ClientCallScreenShare value,
+          $Res Function(_ClientCallScreenShare) then) =
+      __$ClientCallScreenShareCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'params') ClientCallScreenShareParams params,
       @JsonKey(name: 'event') String name,
@@ -114,30 +130,32 @@ abstract class _$$_ClientCallScreenShareCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ClientCallScreenShareCopyWithImpl<$Res>
-    extends _$ClientCallScreenShareCopyWithImpl<$Res, _$_ClientCallScreenShare>
-    implements _$$_ClientCallScreenShareCopyWith<$Res> {
-  __$$_ClientCallScreenShareCopyWithImpl(_$_ClientCallScreenShare _value,
-      $Res Function(_$_ClientCallScreenShare) _then)
-      : super(_value, _then);
+class __$ClientCallScreenShareCopyWithImpl<$Res>
+    extends _$ClientCallScreenShareCopyWithImpl<$Res>
+    implements _$ClientCallScreenShareCopyWith<$Res> {
+  __$ClientCallScreenShareCopyWithImpl(_ClientCallScreenShare _value,
+      $Res Function(_ClientCallScreenShare) _then)
+      : super(_value, (v) => _then(v as _ClientCallScreenShare));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _ClientCallScreenShare get _value => super._value as _ClientCallScreenShare;
+
   @override
   $Res call({
-    Object? params = null,
-    Object? name = null,
+    Object? params = freezed,
+    Object? name = freezed,
     Object? confirmId = freezed,
   }) {
-    return _then(_$_ClientCallScreenShare(
-      params: null == params
+    return _then(_ClientCallScreenShare(
+      params: params == freezed
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ClientCallScreenShareParams,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: freezed == confirmId
+      confirmId: confirmId == freezed
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -156,18 +174,19 @@ class _$_ClientCallScreenShare implements _ClientCallScreenShare {
   factory _$_ClientCallScreenShare.fromJson(Map<String, dynamic> json) =>
       _$$_ClientCallScreenShareFromJson(json);
 
-  /// .
   @override
+
+  /// .
   @JsonKey(name: 'params')
   final ClientCallScreenShareParams params;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'event')
   final String name;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'confirm_id')
   final String? confirmId;
 
@@ -179,41 +198,41 @@ class _$_ClientCallScreenShare implements _ClientCallScreenShare {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ClientCallScreenShare &&
-            (identical(other.params, params) || other.params == params) &&
-            (identical(other.name, name) || other.name == name) &&
+        (other is _ClientCallScreenShare &&
+            (identical(other.params, params) ||
+                const DeepCollectionEquality().equals(other.params, params)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
             (identical(other.confirmId, confirmId) ||
-                other.confirmId == confirmId));
+                const DeepCollectionEquality()
+                    .equals(other.confirmId, confirmId)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, params, name, confirmId);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(params) ^
+      const DeepCollectionEquality().hash(name) ^
+      const DeepCollectionEquality().hash(confirmId);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_ClientCallScreenShareCopyWith<_$_ClientCallScreenShare> get copyWith =>
-      __$$_ClientCallScreenShareCopyWithImpl<_$_ClientCallScreenShare>(
+  _$ClientCallScreenShareCopyWith<_ClientCallScreenShare> get copyWith =>
+      __$ClientCallScreenShareCopyWithImpl<_ClientCallScreenShare>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ClientCallScreenShareToJson(
-      this,
-    );
+    return _$$_ClientCallScreenShareToJson(this);
   }
 }
 
 abstract class _ClientCallScreenShare implements ClientCallScreenShare {
   const factory _ClientCallScreenShare(
-      {@JsonKey(name: 'params')
-          required final ClientCallScreenShareParams params,
-      @JsonKey(name: 'event')
-          required final String name,
-      @JsonKey(name: 'confirm_id')
-          final String? confirmId}) = _$_ClientCallScreenShare;
+          {@JsonKey(name: 'params') required ClientCallScreenShareParams params,
+          @JsonKey(name: 'event') required String name,
+          @JsonKey(name: 'confirm_id') String? confirmId}) =
+      _$_ClientCallScreenShare;
 
   factory _ClientCallScreenShare.fromJson(Map<String, dynamic> json) =
       _$_ClientCallScreenShare.fromJson;
@@ -222,19 +241,19 @@ abstract class _ClientCallScreenShare implements ClientCallScreenShare {
 
   /// .
   @JsonKey(name: 'params')
-  ClientCallScreenShareParams get params;
+  ClientCallScreenShareParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String? get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ClientCallScreenShareCopyWith<_$_ClientCallScreenShare> get copyWith =>
+  _$ClientCallScreenShareCopyWith<_ClientCallScreenShare> get copyWith =>
       throw _privateConstructorUsedError;
 }

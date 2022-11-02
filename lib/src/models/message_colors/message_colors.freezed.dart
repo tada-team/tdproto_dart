@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'message_colors.dart';
@@ -12,11 +11,40 @@ part of 'message_colors.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 MessageColors _$MessageColorsFromJson(Map<String, dynamic> json) {
   return _MessageColors.fromJson(json);
 }
+
+/// @nodoc
+class _$MessageColorsTearOff {
+  const _$MessageColorsTearOff();
+
+  _MessageColors call(
+      {@JsonKey(name: 'bubble_sent') required String bubbleSent,
+      @JsonKey(name: 'bubble_received') required String bubbleReceived,
+      @JsonKey(name: 'bubble_important') required String bubbleImportant,
+      @JsonKey(name: 'status_feed') required String statusFeed,
+      @JsonKey(name: 'status_bubble') required String statusBubble,
+      @JsonKey(name: 'allocated') required String allocated}) {
+    return _MessageColors(
+      bubbleSent: bubbleSent,
+      bubbleReceived: bubbleReceived,
+      bubbleImportant: bubbleImportant,
+      statusFeed: statusFeed,
+      statusBubble: statusBubble,
+      allocated: allocated,
+    );
+  }
+
+  MessageColors fromJson(Map<String, Object> json) {
+    return MessageColors.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $MessageColors = _$MessageColorsTearOff();
 
 /// @nodoc
 mixin _$MessageColors {
@@ -54,8 +82,7 @@ mixin _$MessageColors {
 abstract class $MessageColorsCopyWith<$Res> {
   factory $MessageColorsCopyWith(
           MessageColors value, $Res Function(MessageColors) then) =
-      _$MessageColorsCopyWithImpl<$Res, MessageColors>;
-  @useResult
+      _$MessageColorsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'bubble_sent') String bubbleSent,
       @JsonKey(name: 'bubble_received') String bubbleReceived,
@@ -66,62 +93,59 @@ abstract class $MessageColorsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MessageColorsCopyWithImpl<$Res, $Val extends MessageColors>
+class _$MessageColorsCopyWithImpl<$Res>
     implements $MessageColorsCopyWith<$Res> {
   _$MessageColorsCopyWithImpl(this._value, this._then);
 
+  final MessageColors _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(MessageColors) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? bubbleSent = null,
-    Object? bubbleReceived = null,
-    Object? bubbleImportant = null,
-    Object? statusFeed = null,
-    Object? statusBubble = null,
-    Object? allocated = null,
+    Object? bubbleSent = freezed,
+    Object? bubbleReceived = freezed,
+    Object? bubbleImportant = freezed,
+    Object? statusFeed = freezed,
+    Object? statusBubble = freezed,
+    Object? allocated = freezed,
   }) {
     return _then(_value.copyWith(
-      bubbleSent: null == bubbleSent
+      bubbleSent: bubbleSent == freezed
           ? _value.bubbleSent
           : bubbleSent // ignore: cast_nullable_to_non_nullable
               as String,
-      bubbleReceived: null == bubbleReceived
+      bubbleReceived: bubbleReceived == freezed
           ? _value.bubbleReceived
           : bubbleReceived // ignore: cast_nullable_to_non_nullable
               as String,
-      bubbleImportant: null == bubbleImportant
+      bubbleImportant: bubbleImportant == freezed
           ? _value.bubbleImportant
           : bubbleImportant // ignore: cast_nullable_to_non_nullable
               as String,
-      statusFeed: null == statusFeed
+      statusFeed: statusFeed == freezed
           ? _value.statusFeed
           : statusFeed // ignore: cast_nullable_to_non_nullable
               as String,
-      statusBubble: null == statusBubble
+      statusBubble: statusBubble == freezed
           ? _value.statusBubble
           : statusBubble // ignore: cast_nullable_to_non_nullable
               as String,
-      allocated: null == allocated
+      allocated: allocated == freezed
           ? _value.allocated
           : allocated // ignore: cast_nullable_to_non_nullable
               as String,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_MessageColorsCopyWith<$Res>
+abstract class _$MessageColorsCopyWith<$Res>
     implements $MessageColorsCopyWith<$Res> {
-  factory _$$_MessageColorsCopyWith(
-          _$_MessageColors value, $Res Function(_$_MessageColors) then) =
-      __$$_MessageColorsCopyWithImpl<$Res>;
+  factory _$MessageColorsCopyWith(
+          _MessageColors value, $Res Function(_MessageColors) then) =
+      __$MessageColorsCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'bubble_sent') String bubbleSent,
       @JsonKey(name: 'bubble_received') String bubbleReceived,
@@ -132,45 +156,47 @@ abstract class _$$_MessageColorsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_MessageColorsCopyWithImpl<$Res>
-    extends _$MessageColorsCopyWithImpl<$Res, _$_MessageColors>
-    implements _$$_MessageColorsCopyWith<$Res> {
-  __$$_MessageColorsCopyWithImpl(
-      _$_MessageColors _value, $Res Function(_$_MessageColors) _then)
-      : super(_value, _then);
+class __$MessageColorsCopyWithImpl<$Res>
+    extends _$MessageColorsCopyWithImpl<$Res>
+    implements _$MessageColorsCopyWith<$Res> {
+  __$MessageColorsCopyWithImpl(
+      _MessageColors _value, $Res Function(_MessageColors) _then)
+      : super(_value, (v) => _then(v as _MessageColors));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _MessageColors get _value => super._value as _MessageColors;
+
   @override
   $Res call({
-    Object? bubbleSent = null,
-    Object? bubbleReceived = null,
-    Object? bubbleImportant = null,
-    Object? statusFeed = null,
-    Object? statusBubble = null,
-    Object? allocated = null,
+    Object? bubbleSent = freezed,
+    Object? bubbleReceived = freezed,
+    Object? bubbleImportant = freezed,
+    Object? statusFeed = freezed,
+    Object? statusBubble = freezed,
+    Object? allocated = freezed,
   }) {
-    return _then(_$_MessageColors(
-      bubbleSent: null == bubbleSent
+    return _then(_MessageColors(
+      bubbleSent: bubbleSent == freezed
           ? _value.bubbleSent
           : bubbleSent // ignore: cast_nullable_to_non_nullable
               as String,
-      bubbleReceived: null == bubbleReceived
+      bubbleReceived: bubbleReceived == freezed
           ? _value.bubbleReceived
           : bubbleReceived // ignore: cast_nullable_to_non_nullable
               as String,
-      bubbleImportant: null == bubbleImportant
+      bubbleImportant: bubbleImportant == freezed
           ? _value.bubbleImportant
           : bubbleImportant // ignore: cast_nullable_to_non_nullable
               as String,
-      statusFeed: null == statusFeed
+      statusFeed: statusFeed == freezed
           ? _value.statusFeed
           : statusFeed // ignore: cast_nullable_to_non_nullable
               as String,
-      statusBubble: null == statusBubble
+      statusBubble: statusBubble == freezed
           ? _value.statusBubble
           : statusBubble // ignore: cast_nullable_to_non_nullable
               as String,
-      allocated: null == allocated
+      allocated: allocated == freezed
           ? _value.allocated
           : allocated // ignore: cast_nullable_to_non_nullable
               as String,
@@ -192,33 +218,34 @@ class _$_MessageColors implements _MessageColors {
   factory _$_MessageColors.fromJson(Map<String, dynamic> json) =>
       _$$_MessageColorsFromJson(json);
 
-  /// Bubble sent color.
   @override
+
+  /// Bubble sent color.
   @JsonKey(name: 'bubble_sent')
   final String bubbleSent;
+  @override
 
   /// Bubble received color.
-  @override
   @JsonKey(name: 'bubble_received')
   final String bubbleReceived;
+  @override
 
   /// Bubble important color.
-  @override
   @JsonKey(name: 'bubble_important')
   final String bubbleImportant;
+  @override
 
   /// Status feed color.
-  @override
   @JsonKey(name: 'status_feed')
   final String statusFeed;
+  @override
 
   /// Status bubble color.
-  @override
   @JsonKey(name: 'status_bubble')
   final String statusBubble;
+  @override
 
   /// Allocated color.
-  @override
   @JsonKey(name: 'allocated')
   final String allocated;
 
@@ -230,55 +257,57 @@ class _$_MessageColors implements _MessageColors {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_MessageColors &&
+        (other is _MessageColors &&
             (identical(other.bubbleSent, bubbleSent) ||
-                other.bubbleSent == bubbleSent) &&
+                const DeepCollectionEquality()
+                    .equals(other.bubbleSent, bubbleSent)) &&
             (identical(other.bubbleReceived, bubbleReceived) ||
-                other.bubbleReceived == bubbleReceived) &&
+                const DeepCollectionEquality()
+                    .equals(other.bubbleReceived, bubbleReceived)) &&
             (identical(other.bubbleImportant, bubbleImportant) ||
-                other.bubbleImportant == bubbleImportant) &&
+                const DeepCollectionEquality()
+                    .equals(other.bubbleImportant, bubbleImportant)) &&
             (identical(other.statusFeed, statusFeed) ||
-                other.statusFeed == statusFeed) &&
+                const DeepCollectionEquality()
+                    .equals(other.statusFeed, statusFeed)) &&
             (identical(other.statusBubble, statusBubble) ||
-                other.statusBubble == statusBubble) &&
+                const DeepCollectionEquality()
+                    .equals(other.statusBubble, statusBubble)) &&
             (identical(other.allocated, allocated) ||
-                other.allocated == allocated));
+                const DeepCollectionEquality()
+                    .equals(other.allocated, allocated)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, bubbleSent, bubbleReceived,
-      bubbleImportant, statusFeed, statusBubble, allocated);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(bubbleSent) ^
+      const DeepCollectionEquality().hash(bubbleReceived) ^
+      const DeepCollectionEquality().hash(bubbleImportant) ^
+      const DeepCollectionEquality().hash(statusFeed) ^
+      const DeepCollectionEquality().hash(statusBubble) ^
+      const DeepCollectionEquality().hash(allocated);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_MessageColorsCopyWith<_$_MessageColors> get copyWith =>
-      __$$_MessageColorsCopyWithImpl<_$_MessageColors>(this, _$identity);
+  _$MessageColorsCopyWith<_MessageColors> get copyWith =>
+      __$MessageColorsCopyWithImpl<_MessageColors>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MessageColorsToJson(
-      this,
-    );
+    return _$$_MessageColorsToJson(this);
   }
 }
 
 abstract class _MessageColors implements MessageColors {
   const factory _MessageColors(
-      {@JsonKey(name: 'bubble_sent')
-          required final String bubbleSent,
-      @JsonKey(name: 'bubble_received')
-          required final String bubbleReceived,
-      @JsonKey(name: 'bubble_important')
-          required final String bubbleImportant,
-      @JsonKey(name: 'status_feed')
-          required final String statusFeed,
-      @JsonKey(name: 'status_bubble')
-          required final String statusBubble,
-      @JsonKey(name: 'allocated')
-          required final String allocated}) = _$_MessageColors;
+          {@JsonKey(name: 'bubble_sent') required String bubbleSent,
+          @JsonKey(name: 'bubble_received') required String bubbleReceived,
+          @JsonKey(name: 'bubble_important') required String bubbleImportant,
+          @JsonKey(name: 'status_feed') required String statusFeed,
+          @JsonKey(name: 'status_bubble') required String statusBubble,
+          @JsonKey(name: 'allocated') required String allocated}) =
+      _$_MessageColors;
 
   factory _MessageColors.fromJson(Map<String, dynamic> json) =
       _$_MessageColors.fromJson;
@@ -287,34 +316,34 @@ abstract class _MessageColors implements MessageColors {
 
   /// Bubble sent color.
   @JsonKey(name: 'bubble_sent')
-  String get bubbleSent;
+  String get bubbleSent => throw _privateConstructorUsedError;
   @override
 
   /// Bubble received color.
   @JsonKey(name: 'bubble_received')
-  String get bubbleReceived;
+  String get bubbleReceived => throw _privateConstructorUsedError;
   @override
 
   /// Bubble important color.
   @JsonKey(name: 'bubble_important')
-  String get bubbleImportant;
+  String get bubbleImportant => throw _privateConstructorUsedError;
   @override
 
   /// Status feed color.
   @JsonKey(name: 'status_feed')
-  String get statusFeed;
+  String get statusFeed => throw _privateConstructorUsedError;
   @override
 
   /// Status bubble color.
   @JsonKey(name: 'status_bubble')
-  String get statusBubble;
+  String get statusBubble => throw _privateConstructorUsedError;
   @override
 
   /// Allocated color.
   @JsonKey(name: 'allocated')
-  String get allocated;
+  String get allocated => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_MessageColorsCopyWith<_$_MessageColors> get copyWith =>
+  _$MessageColorsCopyWith<_MessageColors> get copyWith =>
       throw _privateConstructorUsedError;
 }

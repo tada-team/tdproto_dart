@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'get_personal_account_by_i_d_response.dart';
@@ -12,12 +11,60 @@ part of 'get_personal_account_by_i_d_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 GetPersonalAccountByIDResponse _$GetPersonalAccountByIDResponseFromJson(
     Map<String, dynamic> json) {
   return _GetPersonalAccountByIDResponse.fromJson(json);
 }
+
+/// @nodoc
+class _$GetPersonalAccountByIDResponseTearOff {
+  const _$GetPersonalAccountByIDResponseTearOff();
+
+  _GetPersonalAccountByIDResponse call(
+      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
+      @JsonKey(name: 'full_name') String? fullName,
+      @JsonKey(name: 'phone') String? phone,
+      @JsonKey(name: 'owner_uuid') required String ownerUuid,
+      @JsonKey(name: 'tariff_id') required String tariffId,
+      @JsonKey(name: 'tariff_name') required String tariffName,
+      @JsonKey(name: 'discount_id') required String discountId,
+      @JsonKey(name: 'discount_amount') required int discountAmount,
+      @JsonKey(name: 'status') required String status,
+      @JsonKey(name: 'next_billing_date') required String nextBillingDate,
+      @JsonKey(name: 'team_count') required int teamCount,
+      @JsonKey(name: 'workplace_count') required int workplaceCount,
+      @JsonKey(name: 'users_count') required int usersCount,
+      @JsonKey(name: 'free_workplaces') required int freeWorkplaces,
+      @JsonKey(name: 'paid_workplaces') required int paidWorkplaces}) {
+    return _GetPersonalAccountByIDResponse(
+      personalAccountId: personalAccountId,
+      fullName: fullName,
+      phone: phone,
+      ownerUuid: ownerUuid,
+      tariffId: tariffId,
+      tariffName: tariffName,
+      discountId: discountId,
+      discountAmount: discountAmount,
+      status: status,
+      nextBillingDate: nextBillingDate,
+      teamCount: teamCount,
+      workplaceCount: workplaceCount,
+      usersCount: usersCount,
+      freeWorkplaces: freeWorkplaces,
+      paidWorkplaces: paidWorkplaces,
+    );
+  }
+
+  GetPersonalAccountByIDResponse fromJson(Map<String, Object> json) {
+    return GetPersonalAccountByIDResponse.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $GetPersonalAccountByIDResponse =
+    _$GetPersonalAccountByIDResponseTearOff();
 
 /// @nodoc
 mixin _$GetPersonalAccountByIDResponse {
@@ -92,9 +139,7 @@ abstract class $GetPersonalAccountByIDResponseCopyWith<$Res> {
   factory $GetPersonalAccountByIDResponseCopyWith(
           GetPersonalAccountByIDResponse value,
           $Res Function(GetPersonalAccountByIDResponse) then) =
-      _$GetPersonalAccountByIDResponseCopyWithImpl<$Res,
-          GetPersonalAccountByIDResponse>;
-  @useResult
+      _$GetPersonalAccountByIDResponseCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'personal_account_id') String personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
@@ -114,109 +159,105 @@ abstract class $GetPersonalAccountByIDResponseCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$GetPersonalAccountByIDResponseCopyWithImpl<$Res,
-        $Val extends GetPersonalAccountByIDResponse>
+class _$GetPersonalAccountByIDResponseCopyWithImpl<$Res>
     implements $GetPersonalAccountByIDResponseCopyWith<$Res> {
   _$GetPersonalAccountByIDResponseCopyWithImpl(this._value, this._then);
 
+  final GetPersonalAccountByIDResponse _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(GetPersonalAccountByIDResponse) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? personalAccountId = null,
+    Object? personalAccountId = freezed,
     Object? fullName = freezed,
     Object? phone = freezed,
-    Object? ownerUuid = null,
-    Object? tariffId = null,
-    Object? tariffName = null,
-    Object? discountId = null,
-    Object? discountAmount = null,
-    Object? status = null,
-    Object? nextBillingDate = null,
-    Object? teamCount = null,
-    Object? workplaceCount = null,
-    Object? usersCount = null,
-    Object? freeWorkplaces = null,
-    Object? paidWorkplaces = null,
+    Object? ownerUuid = freezed,
+    Object? tariffId = freezed,
+    Object? tariffName = freezed,
+    Object? discountId = freezed,
+    Object? discountAmount = freezed,
+    Object? status = freezed,
+    Object? nextBillingDate = freezed,
+    Object? teamCount = freezed,
+    Object? workplaceCount = freezed,
+    Object? usersCount = freezed,
+    Object? freeWorkplaces = freezed,
+    Object? paidWorkplaces = freezed,
   }) {
     return _then(_value.copyWith(
-      personalAccountId: null == personalAccountId
+      personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
               as String,
-      fullName: freezed == fullName
+      fullName: fullName == freezed
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
               as String?,
-      phone: freezed == phone
+      phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as String?,
-      ownerUuid: null == ownerUuid
+      ownerUuid: ownerUuid == freezed
           ? _value.ownerUuid
           : ownerUuid // ignore: cast_nullable_to_non_nullable
               as String,
-      tariffId: null == tariffId
+      tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
               as String,
-      tariffName: null == tariffName
+      tariffName: tariffName == freezed
           ? _value.tariffName
           : tariffName // ignore: cast_nullable_to_non_nullable
               as String,
-      discountId: null == discountId
+      discountId: discountId == freezed
           ? _value.discountId
           : discountId // ignore: cast_nullable_to_non_nullable
               as String,
-      discountAmount: null == discountAmount
+      discountAmount: discountAmount == freezed
           ? _value.discountAmount
           : discountAmount // ignore: cast_nullable_to_non_nullable
               as int,
-      status: null == status
+      status: status == freezed
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String,
-      nextBillingDate: null == nextBillingDate
+      nextBillingDate: nextBillingDate == freezed
           ? _value.nextBillingDate
           : nextBillingDate // ignore: cast_nullable_to_non_nullable
               as String,
-      teamCount: null == teamCount
+      teamCount: teamCount == freezed
           ? _value.teamCount
           : teamCount // ignore: cast_nullable_to_non_nullable
               as int,
-      workplaceCount: null == workplaceCount
+      workplaceCount: workplaceCount == freezed
           ? _value.workplaceCount
           : workplaceCount // ignore: cast_nullable_to_non_nullable
               as int,
-      usersCount: null == usersCount
+      usersCount: usersCount == freezed
           ? _value.usersCount
           : usersCount // ignore: cast_nullable_to_non_nullable
               as int,
-      freeWorkplaces: null == freeWorkplaces
+      freeWorkplaces: freeWorkplaces == freezed
           ? _value.freeWorkplaces
           : freeWorkplaces // ignore: cast_nullable_to_non_nullable
               as int,
-      paidWorkplaces: null == paidWorkplaces
+      paidWorkplaces: paidWorkplaces == freezed
           ? _value.paidWorkplaces
           : paidWorkplaces // ignore: cast_nullable_to_non_nullable
               as int,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_GetPersonalAccountByIDResponseCopyWith<$Res>
+abstract class _$GetPersonalAccountByIDResponseCopyWith<$Res>
     implements $GetPersonalAccountByIDResponseCopyWith<$Res> {
-  factory _$$_GetPersonalAccountByIDResponseCopyWith(
-          _$_GetPersonalAccountByIDResponse value,
-          $Res Function(_$_GetPersonalAccountByIDResponse) then) =
-      __$$_GetPersonalAccountByIDResponseCopyWithImpl<$Res>;
+  factory _$GetPersonalAccountByIDResponseCopyWith(
+          _GetPersonalAccountByIDResponse value,
+          $Res Function(_GetPersonalAccountByIDResponse) then) =
+      __$GetPersonalAccountByIDResponseCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'personal_account_id') String personalAccountId,
       @JsonKey(name: 'full_name') String? fullName,
@@ -236,92 +277,94 @@ abstract class _$$_GetPersonalAccountByIDResponseCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_GetPersonalAccountByIDResponseCopyWithImpl<$Res>
-    extends _$GetPersonalAccountByIDResponseCopyWithImpl<$Res,
-        _$_GetPersonalAccountByIDResponse>
-    implements _$$_GetPersonalAccountByIDResponseCopyWith<$Res> {
-  __$$_GetPersonalAccountByIDResponseCopyWithImpl(
-      _$_GetPersonalAccountByIDResponse _value,
-      $Res Function(_$_GetPersonalAccountByIDResponse) _then)
-      : super(_value, _then);
+class __$GetPersonalAccountByIDResponseCopyWithImpl<$Res>
+    extends _$GetPersonalAccountByIDResponseCopyWithImpl<$Res>
+    implements _$GetPersonalAccountByIDResponseCopyWith<$Res> {
+  __$GetPersonalAccountByIDResponseCopyWithImpl(
+      _GetPersonalAccountByIDResponse _value,
+      $Res Function(_GetPersonalAccountByIDResponse) _then)
+      : super(_value, (v) => _then(v as _GetPersonalAccountByIDResponse));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _GetPersonalAccountByIDResponse get _value =>
+      super._value as _GetPersonalAccountByIDResponse;
+
   @override
   $Res call({
-    Object? personalAccountId = null,
+    Object? personalAccountId = freezed,
     Object? fullName = freezed,
     Object? phone = freezed,
-    Object? ownerUuid = null,
-    Object? tariffId = null,
-    Object? tariffName = null,
-    Object? discountId = null,
-    Object? discountAmount = null,
-    Object? status = null,
-    Object? nextBillingDate = null,
-    Object? teamCount = null,
-    Object? workplaceCount = null,
-    Object? usersCount = null,
-    Object? freeWorkplaces = null,
-    Object? paidWorkplaces = null,
+    Object? ownerUuid = freezed,
+    Object? tariffId = freezed,
+    Object? tariffName = freezed,
+    Object? discountId = freezed,
+    Object? discountAmount = freezed,
+    Object? status = freezed,
+    Object? nextBillingDate = freezed,
+    Object? teamCount = freezed,
+    Object? workplaceCount = freezed,
+    Object? usersCount = freezed,
+    Object? freeWorkplaces = freezed,
+    Object? paidWorkplaces = freezed,
   }) {
-    return _then(_$_GetPersonalAccountByIDResponse(
-      personalAccountId: null == personalAccountId
+    return _then(_GetPersonalAccountByIDResponse(
+      personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
               as String,
-      fullName: freezed == fullName
+      fullName: fullName == freezed
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
               as String?,
-      phone: freezed == phone
+      phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as String?,
-      ownerUuid: null == ownerUuid
+      ownerUuid: ownerUuid == freezed
           ? _value.ownerUuid
           : ownerUuid // ignore: cast_nullable_to_non_nullable
               as String,
-      tariffId: null == tariffId
+      tariffId: tariffId == freezed
           ? _value.tariffId
           : tariffId // ignore: cast_nullable_to_non_nullable
               as String,
-      tariffName: null == tariffName
+      tariffName: tariffName == freezed
           ? _value.tariffName
           : tariffName // ignore: cast_nullable_to_non_nullable
               as String,
-      discountId: null == discountId
+      discountId: discountId == freezed
           ? _value.discountId
           : discountId // ignore: cast_nullable_to_non_nullable
               as String,
-      discountAmount: null == discountAmount
+      discountAmount: discountAmount == freezed
           ? _value.discountAmount
           : discountAmount // ignore: cast_nullable_to_non_nullable
               as int,
-      status: null == status
+      status: status == freezed
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String,
-      nextBillingDate: null == nextBillingDate
+      nextBillingDate: nextBillingDate == freezed
           ? _value.nextBillingDate
           : nextBillingDate // ignore: cast_nullable_to_non_nullable
               as String,
-      teamCount: null == teamCount
+      teamCount: teamCount == freezed
           ? _value.teamCount
           : teamCount // ignore: cast_nullable_to_non_nullable
               as int,
-      workplaceCount: null == workplaceCount
+      workplaceCount: workplaceCount == freezed
           ? _value.workplaceCount
           : workplaceCount // ignore: cast_nullable_to_non_nullable
               as int,
-      usersCount: null == usersCount
+      usersCount: usersCount == freezed
           ? _value.usersCount
           : usersCount // ignore: cast_nullable_to_non_nullable
               as int,
-      freeWorkplaces: null == freeWorkplaces
+      freeWorkplaces: freeWorkplaces == freezed
           ? _value.freeWorkplaces
           : freeWorkplaces // ignore: cast_nullable_to_non_nullable
               as int,
-      paidWorkplaces: null == paidWorkplaces
+      paidWorkplaces: paidWorkplaces == freezed
           ? _value.paidWorkplaces
           : paidWorkplaces // ignore: cast_nullable_to_non_nullable
               as int,
@@ -354,78 +397,79 @@ class _$_GetPersonalAccountByIDResponse
           Map<String, dynamic> json) =>
       _$$_GetPersonalAccountByIDResponseFromJson(json);
 
-  /// PersonalAccountBilling ID.
   @override
+
+  /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
   final String personalAccountId;
+  @override
 
   /// Full name of owner personal account.
-  @override
   @JsonKey(name: 'full_name')
   final String? fullName;
+  @override
 
   /// Phone number of owner account.
-  @override
   @JsonKey(name: 'phone')
   final String? phone;
+  @override
 
   /// ID User who owns this personal account.
-  @override
   @JsonKey(name: 'owner_uuid')
   final String ownerUuid;
+  @override
 
   /// ID Tariff on this personal account.
-  @override
   @JsonKey(name: 'tariff_id')
   final String tariffId;
+  @override
 
   /// Name Tariff on this personal account.
-  @override
   @JsonKey(name: 'tariff_name')
   final String tariffName;
+  @override
 
   /// ID Discount on personal account.
-  @override
   @JsonKey(name: 'discount_id')
   final String discountId;
+  @override
 
   /// Amount of Discount on personal account.
-  @override
   @JsonKey(name: 'discount_amount')
   final int discountAmount;
+  @override
 
   /// Status of personal account.
-  @override
   @JsonKey(name: 'status')
   final String status;
+  @override
 
   /// Date of next debiting funds.
-  @override
   @JsonKey(name: 'next_billing_date')
   final String nextBillingDate;
+  @override
 
   /// Count of teams on personal account.
-  @override
   @JsonKey(name: 'team_count')
   final int teamCount;
+  @override
 
   /// Count of workplaces on personal account.
-  @override
   @JsonKey(name: 'workplace_count')
   final int workplaceCount;
+  @override
 
   /// Count of user on personal account.
-  @override
   @JsonKey(name: 'users_count')
   final int usersCount;
+  @override
 
   /// Count of free workplaces on personal account.
-  @override
   @JsonKey(name: 'free_workplaces')
   final int freeWorkplaces;
+  @override
 
   /// Count of paid workplaces on personal account.
-  @override
   @JsonKey(name: 'paid_workplaces')
   final int paidWorkplaces;
 
@@ -437,107 +481,116 @@ class _$_GetPersonalAccountByIDResponse
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_GetPersonalAccountByIDResponse &&
+        (other is _GetPersonalAccountByIDResponse &&
             (identical(other.personalAccountId, personalAccountId) ||
-                other.personalAccountId == personalAccountId) &&
+                const DeepCollectionEquality()
+                    .equals(other.personalAccountId, personalAccountId)) &&
             (identical(other.fullName, fullName) ||
-                other.fullName == fullName) &&
-            (identical(other.phone, phone) || other.phone == phone) &&
+                const DeepCollectionEquality()
+                    .equals(other.fullName, fullName)) &&
+            (identical(other.phone, phone) ||
+                const DeepCollectionEquality().equals(other.phone, phone)) &&
             (identical(other.ownerUuid, ownerUuid) ||
-                other.ownerUuid == ownerUuid) &&
+                const DeepCollectionEquality()
+                    .equals(other.ownerUuid, ownerUuid)) &&
             (identical(other.tariffId, tariffId) ||
-                other.tariffId == tariffId) &&
+                const DeepCollectionEquality()
+                    .equals(other.tariffId, tariffId)) &&
             (identical(other.tariffName, tariffName) ||
-                other.tariffName == tariffName) &&
+                const DeepCollectionEquality()
+                    .equals(other.tariffName, tariffName)) &&
             (identical(other.discountId, discountId) ||
-                other.discountId == discountId) &&
+                const DeepCollectionEquality()
+                    .equals(other.discountId, discountId)) &&
             (identical(other.discountAmount, discountAmount) ||
-                other.discountAmount == discountAmount) &&
-            (identical(other.status, status) || other.status == status) &&
+                const DeepCollectionEquality()
+                    .equals(other.discountAmount, discountAmount)) &&
+            (identical(other.status, status) ||
+                const DeepCollectionEquality().equals(other.status, status)) &&
             (identical(other.nextBillingDate, nextBillingDate) ||
-                other.nextBillingDate == nextBillingDate) &&
+                const DeepCollectionEquality()
+                    .equals(other.nextBillingDate, nextBillingDate)) &&
             (identical(other.teamCount, teamCount) ||
-                other.teamCount == teamCount) &&
+                const DeepCollectionEquality()
+                    .equals(other.teamCount, teamCount)) &&
             (identical(other.workplaceCount, workplaceCount) ||
-                other.workplaceCount == workplaceCount) &&
+                const DeepCollectionEquality()
+                    .equals(other.workplaceCount, workplaceCount)) &&
             (identical(other.usersCount, usersCount) ||
-                other.usersCount == usersCount) &&
+                const DeepCollectionEquality()
+                    .equals(other.usersCount, usersCount)) &&
             (identical(other.freeWorkplaces, freeWorkplaces) ||
-                other.freeWorkplaces == freeWorkplaces) &&
+                const DeepCollectionEquality()
+                    .equals(other.freeWorkplaces, freeWorkplaces)) &&
             (identical(other.paidWorkplaces, paidWorkplaces) ||
-                other.paidWorkplaces == paidWorkplaces));
+                const DeepCollectionEquality()
+                    .equals(other.paidWorkplaces, paidWorkplaces)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      personalAccountId,
-      fullName,
-      phone,
-      ownerUuid,
-      tariffId,
-      tariffName,
-      discountId,
-      discountAmount,
-      status,
-      nextBillingDate,
-      teamCount,
-      workplaceCount,
-      usersCount,
-      freeWorkplaces,
-      paidWorkplaces);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(personalAccountId) ^
+      const DeepCollectionEquality().hash(fullName) ^
+      const DeepCollectionEquality().hash(phone) ^
+      const DeepCollectionEquality().hash(ownerUuid) ^
+      const DeepCollectionEquality().hash(tariffId) ^
+      const DeepCollectionEquality().hash(tariffName) ^
+      const DeepCollectionEquality().hash(discountId) ^
+      const DeepCollectionEquality().hash(discountAmount) ^
+      const DeepCollectionEquality().hash(status) ^
+      const DeepCollectionEquality().hash(nextBillingDate) ^
+      const DeepCollectionEquality().hash(teamCount) ^
+      const DeepCollectionEquality().hash(workplaceCount) ^
+      const DeepCollectionEquality().hash(usersCount) ^
+      const DeepCollectionEquality().hash(freeWorkplaces) ^
+      const DeepCollectionEquality().hash(paidWorkplaces);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_GetPersonalAccountByIDResponseCopyWith<_$_GetPersonalAccountByIDResponse>
-      get copyWith => __$$_GetPersonalAccountByIDResponseCopyWithImpl<
-          _$_GetPersonalAccountByIDResponse>(this, _$identity);
+  _$GetPersonalAccountByIDResponseCopyWith<_GetPersonalAccountByIDResponse>
+      get copyWith => __$GetPersonalAccountByIDResponseCopyWithImpl<
+          _GetPersonalAccountByIDResponse>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_GetPersonalAccountByIDResponseToJson(
-      this,
-    );
+    return _$$_GetPersonalAccountByIDResponseToJson(this);
   }
 }
 
 abstract class _GetPersonalAccountByIDResponse
     implements GetPersonalAccountByIDResponse {
   const factory _GetPersonalAccountByIDResponse(
-          {@JsonKey(name: 'personal_account_id')
-              required final String personalAccountId,
-          @JsonKey(name: 'full_name')
-              final String? fullName,
-          @JsonKey(name: 'phone')
-              final String? phone,
-          @JsonKey(name: 'owner_uuid')
-              required final String ownerUuid,
-          @JsonKey(name: 'tariff_id')
-              required final String tariffId,
-          @JsonKey(name: 'tariff_name')
-              required final String tariffName,
-          @JsonKey(name: 'discount_id')
-              required final String discountId,
-          @JsonKey(name: 'discount_amount')
-              required final int discountAmount,
-          @JsonKey(name: 'status')
-              required final String status,
-          @JsonKey(name: 'next_billing_date')
-              required final String nextBillingDate,
-          @JsonKey(name: 'team_count')
-              required final int teamCount,
-          @JsonKey(name: 'workplace_count')
-              required final int workplaceCount,
-          @JsonKey(name: 'users_count')
-              required final int usersCount,
-          @JsonKey(name: 'free_workplaces')
-              required final int freeWorkplaces,
-          @JsonKey(name: 'paid_workplaces')
-              required final int paidWorkplaces}) =
-      _$_GetPersonalAccountByIDResponse;
+      {@JsonKey(name: 'personal_account_id')
+          required String personalAccountId,
+      @JsonKey(name: 'full_name')
+          String? fullName,
+      @JsonKey(name: 'phone')
+          String? phone,
+      @JsonKey(name: 'owner_uuid')
+          required String ownerUuid,
+      @JsonKey(name: 'tariff_id')
+          required String tariffId,
+      @JsonKey(name: 'tariff_name')
+          required String tariffName,
+      @JsonKey(name: 'discount_id')
+          required String discountId,
+      @JsonKey(name: 'discount_amount')
+          required int discountAmount,
+      @JsonKey(name: 'status')
+          required String status,
+      @JsonKey(name: 'next_billing_date')
+          required String nextBillingDate,
+      @JsonKey(name: 'team_count')
+          required int teamCount,
+      @JsonKey(name: 'workplace_count')
+          required int workplaceCount,
+      @JsonKey(name: 'users_count')
+          required int usersCount,
+      @JsonKey(name: 'free_workplaces')
+          required int freeWorkplaces,
+      @JsonKey(name: 'paid_workplaces')
+          required int paidWorkplaces}) = _$_GetPersonalAccountByIDResponse;
 
   factory _GetPersonalAccountByIDResponse.fromJson(Map<String, dynamic> json) =
       _$_GetPersonalAccountByIDResponse.fromJson;
@@ -546,79 +599,79 @@ abstract class _GetPersonalAccountByIDResponse
 
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  String get personalAccountId;
+  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// Full name of owner personal account.
   @JsonKey(name: 'full_name')
-  String? get fullName;
+  String? get fullName => throw _privateConstructorUsedError;
   @override
 
   /// Phone number of owner account.
   @JsonKey(name: 'phone')
-  String? get phone;
+  String? get phone => throw _privateConstructorUsedError;
   @override
 
   /// ID User who owns this personal account.
   @JsonKey(name: 'owner_uuid')
-  String get ownerUuid;
+  String get ownerUuid => throw _privateConstructorUsedError;
   @override
 
   /// ID Tariff on this personal account.
   @JsonKey(name: 'tariff_id')
-  String get tariffId;
+  String get tariffId => throw _privateConstructorUsedError;
   @override
 
   /// Name Tariff on this personal account.
   @JsonKey(name: 'tariff_name')
-  String get tariffName;
+  String get tariffName => throw _privateConstructorUsedError;
   @override
 
   /// ID Discount on personal account.
   @JsonKey(name: 'discount_id')
-  String get discountId;
+  String get discountId => throw _privateConstructorUsedError;
   @override
 
   /// Amount of Discount on personal account.
   @JsonKey(name: 'discount_amount')
-  int get discountAmount;
+  int get discountAmount => throw _privateConstructorUsedError;
   @override
 
   /// Status of personal account.
   @JsonKey(name: 'status')
-  String get status;
+  String get status => throw _privateConstructorUsedError;
   @override
 
   /// Date of next debiting funds.
   @JsonKey(name: 'next_billing_date')
-  String get nextBillingDate;
+  String get nextBillingDate => throw _privateConstructorUsedError;
   @override
 
   /// Count of teams on personal account.
   @JsonKey(name: 'team_count')
-  int get teamCount;
+  int get teamCount => throw _privateConstructorUsedError;
   @override
 
   /// Count of workplaces on personal account.
   @JsonKey(name: 'workplace_count')
-  int get workplaceCount;
+  int get workplaceCount => throw _privateConstructorUsedError;
   @override
 
   /// Count of user on personal account.
   @JsonKey(name: 'users_count')
-  int get usersCount;
+  int get usersCount => throw _privateConstructorUsedError;
   @override
 
   /// Count of free workplaces on personal account.
   @JsonKey(name: 'free_workplaces')
-  int get freeWorkplaces;
+  int get freeWorkplaces => throw _privateConstructorUsedError;
   @override
 
   /// Count of paid workplaces on personal account.
   @JsonKey(name: 'paid_workplaces')
-  int get paidWorkplaces;
+  int get paidWorkplaces => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_GetPersonalAccountByIDResponseCopyWith<_$_GetPersonalAccountByIDResponse>
+  _$GetPersonalAccountByIDResponseCopyWith<_GetPersonalAccountByIDResponse>
       get copyWith => throw _privateConstructorUsedError;
 }

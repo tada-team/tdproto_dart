@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'team_short.dart';
@@ -12,11 +11,34 @@ part of 'team_short.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 TeamShort _$TeamShortFromJson(Map<String, dynamic> json) {
   return _TeamShort.fromJson(json);
 }
+
+/// @nodoc
+class _$TeamShortTearOff {
+  const _$TeamShortTearOff();
+
+  _TeamShort call(
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'icons') required IconData icons}) {
+    return _TeamShort(
+      uid: uid,
+      name: name,
+      icons: icons,
+    );
+  }
+
+  TeamShort fromJson(Map<String, Object> json) {
+    return TeamShort.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $TeamShort = _$TeamShortTearOff();
 
 /// @nodoc
 mixin _$TeamShort {
@@ -41,8 +63,7 @@ mixin _$TeamShort {
 /// @nodoc
 abstract class $TeamShortCopyWith<$Res> {
   factory $TeamShortCopyWith(TeamShort value, $Res Function(TeamShort) then) =
-      _$TeamShortCopyWithImpl<$Res, TeamShort>;
-  @useResult
+      _$TeamShortCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'name') String name,
@@ -52,54 +73,49 @@ abstract class $TeamShortCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$TeamShortCopyWithImpl<$Res, $Val extends TeamShort>
-    implements $TeamShortCopyWith<$Res> {
+class _$TeamShortCopyWithImpl<$Res> implements $TeamShortCopyWith<$Res> {
   _$TeamShortCopyWithImpl(this._value, this._then);
 
+  final TeamShort _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(TeamShort) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? uid = null,
-    Object? name = null,
-    Object? icons = null,
+    Object? uid = freezed,
+    Object? name = freezed,
+    Object? icons = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: null == uid
+      uid: uid == freezed
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
               as String,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      icons: null == icons
+      icons: icons == freezed
           ? _value.icons
           : icons // ignore: cast_nullable_to_non_nullable
               as IconData,
-    ) as $Val);
+    ));
   }
 
   @override
-  @pragma('vm:prefer-inline')
   $IconDataCopyWith<$Res> get icons {
     return $IconDataCopyWith<$Res>(_value.icons, (value) {
-      return _then(_value.copyWith(icons: value) as $Val);
+      return _then(_value.copyWith(icons: value));
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_TeamShortCopyWith<$Res> implements $TeamShortCopyWith<$Res> {
-  factory _$$_TeamShortCopyWith(
-          _$_TeamShort value, $Res Function(_$_TeamShort) then) =
-      __$$_TeamShortCopyWithImpl<$Res>;
+abstract class _$TeamShortCopyWith<$Res> implements $TeamShortCopyWith<$Res> {
+  factory _$TeamShortCopyWith(
+          _TeamShort value, $Res Function(_TeamShort) then) =
+      __$TeamShortCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'name') String name,
@@ -110,30 +126,30 @@ abstract class _$$_TeamShortCopyWith<$Res> implements $TeamShortCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_TeamShortCopyWithImpl<$Res>
-    extends _$TeamShortCopyWithImpl<$Res, _$_TeamShort>
-    implements _$$_TeamShortCopyWith<$Res> {
-  __$$_TeamShortCopyWithImpl(
-      _$_TeamShort _value, $Res Function(_$_TeamShort) _then)
-      : super(_value, _then);
+class __$TeamShortCopyWithImpl<$Res> extends _$TeamShortCopyWithImpl<$Res>
+    implements _$TeamShortCopyWith<$Res> {
+  __$TeamShortCopyWithImpl(_TeamShort _value, $Res Function(_TeamShort) _then)
+      : super(_value, (v) => _then(v as _TeamShort));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _TeamShort get _value => super._value as _TeamShort;
+
   @override
   $Res call({
-    Object? uid = null,
-    Object? name = null,
-    Object? icons = null,
+    Object? uid = freezed,
+    Object? name = freezed,
+    Object? icons = freezed,
   }) {
-    return _then(_$_TeamShort(
-      uid: null == uid
+    return _then(_TeamShort(
+      uid: uid == freezed
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
               as String,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      icons: null == icons
+      icons: icons == freezed
           ? _value.icons
           : icons // ignore: cast_nullable_to_non_nullable
               as IconData,
@@ -152,18 +168,19 @@ class _$_TeamShort implements _TeamShort {
   factory _$_TeamShort.fromJson(Map<String, dynamic> json) =>
       _$$_TeamShortFromJson(json);
 
-  /// Team id.
   @override
+
+  /// Team id.
   @JsonKey(name: 'uid')
   final String uid;
+  @override
 
   /// Team name.
-  @override
   @JsonKey(name: 'name')
   final String name;
+  @override
 
   /// Team icons.
-  @override
   @JsonKey(name: 'icons')
   final IconData icons;
 
@@ -175,36 +192,38 @@ class _$_TeamShort implements _TeamShort {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_TeamShort &&
-            (identical(other.uid, uid) || other.uid == uid) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.icons, icons) || other.icons == icons));
+        (other is _TeamShort &&
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
+            (identical(other.icons, icons) ||
+                const DeepCollectionEquality().equals(other.icons, icons)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, uid, name, icons);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(uid) ^
+      const DeepCollectionEquality().hash(name) ^
+      const DeepCollectionEquality().hash(icons);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_TeamShortCopyWith<_$_TeamShort> get copyWith =>
-      __$$_TeamShortCopyWithImpl<_$_TeamShort>(this, _$identity);
+  _$TeamShortCopyWith<_TeamShort> get copyWith =>
+      __$TeamShortCopyWithImpl<_TeamShort>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_TeamShortToJson(
-      this,
-    );
+    return _$$_TeamShortToJson(this);
   }
 }
 
 abstract class _TeamShort implements TeamShort {
   const factory _TeamShort(
-      {@JsonKey(name: 'uid') required final String uid,
-      @JsonKey(name: 'name') required final String name,
-      @JsonKey(name: 'icons') required final IconData icons}) = _$_TeamShort;
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'icons') required IconData icons}) = _$_TeamShort;
 
   factory _TeamShort.fromJson(Map<String, dynamic> json) =
       _$_TeamShort.fromJson;
@@ -213,19 +232,19 @@ abstract class _TeamShort implements TeamShort {
 
   /// Team id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// Team name.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// Team icons.
   @JsonKey(name: 'icons')
-  IconData get icons;
+  IconData get icons => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_TeamShortCopyWith<_$_TeamShort> get copyWith =>
+  _$TeamShortCopyWith<_TeamShort> get copyWith =>
       throw _privateConstructorUsedError;
 }

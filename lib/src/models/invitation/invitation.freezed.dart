@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'invitation.dart';
@@ -12,11 +11,36 @@ part of 'invitation.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Invitation _$InvitationFromJson(Map<String, dynamic> json) {
   return _Invitation.fromJson(json);
 }
+
+/// @nodoc
+class _$InvitationTearOff {
+  const _$InvitationTearOff();
+
+  _Invitation call(
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'token') required String token,
+      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'qr') required String qr}) {
+    return _Invitation(
+      uid: uid,
+      token: token,
+      created: created,
+      qr: qr,
+    );
+  }
+
+  Invitation fromJson(Map<String, Object> json) {
+    return Invitation.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $Invitation = _$InvitationTearOff();
 
 /// @nodoc
 mixin _$Invitation {
@@ -47,8 +71,7 @@ mixin _$Invitation {
 abstract class $InvitationCopyWith<$Res> {
   factory $InvitationCopyWith(
           Invitation value, $Res Function(Invitation) then) =
-      _$InvitationCopyWithImpl<$Res, Invitation>;
-  @useResult
+      _$InvitationCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'token') String token,
@@ -57,52 +80,47 @@ abstract class $InvitationCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$InvitationCopyWithImpl<$Res, $Val extends Invitation>
-    implements $InvitationCopyWith<$Res> {
+class _$InvitationCopyWithImpl<$Res> implements $InvitationCopyWith<$Res> {
   _$InvitationCopyWithImpl(this._value, this._then);
 
+  final Invitation _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(Invitation) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? uid = null,
-    Object? token = null,
-    Object? created = null,
-    Object? qr = null,
+    Object? uid = freezed,
+    Object? token = freezed,
+    Object? created = freezed,
+    Object? qr = freezed,
   }) {
     return _then(_value.copyWith(
-      uid: null == uid
+      uid: uid == freezed
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
               as String,
-      token: null == token
+      token: token == freezed
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as String,
-      created: null == created
+      created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      qr: null == qr
+      qr: qr == freezed
           ? _value.qr
           : qr // ignore: cast_nullable_to_non_nullable
               as String,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_InvitationCopyWith<$Res>
-    implements $InvitationCopyWith<$Res> {
-  factory _$$_InvitationCopyWith(
-          _$_Invitation value, $Res Function(_$_Invitation) then) =
-      __$$_InvitationCopyWithImpl<$Res>;
+abstract class _$InvitationCopyWith<$Res> implements $InvitationCopyWith<$Res> {
+  factory _$InvitationCopyWith(
+          _Invitation value, $Res Function(_Invitation) then) =
+      __$InvitationCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'token') String token,
@@ -111,35 +129,36 @@ abstract class _$$_InvitationCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_InvitationCopyWithImpl<$Res>
-    extends _$InvitationCopyWithImpl<$Res, _$_Invitation>
-    implements _$$_InvitationCopyWith<$Res> {
-  __$$_InvitationCopyWithImpl(
-      _$_Invitation _value, $Res Function(_$_Invitation) _then)
-      : super(_value, _then);
+class __$InvitationCopyWithImpl<$Res> extends _$InvitationCopyWithImpl<$Res>
+    implements _$InvitationCopyWith<$Res> {
+  __$InvitationCopyWithImpl(
+      _Invitation _value, $Res Function(_Invitation) _then)
+      : super(_value, (v) => _then(v as _Invitation));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _Invitation get _value => super._value as _Invitation;
+
   @override
   $Res call({
-    Object? uid = null,
-    Object? token = null,
-    Object? created = null,
-    Object? qr = null,
+    Object? uid = freezed,
+    Object? token = freezed,
+    Object? created = freezed,
+    Object? qr = freezed,
   }) {
-    return _then(_$_Invitation(
-      uid: null == uid
+    return _then(_Invitation(
+      uid: uid == freezed
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
               as String,
-      token: null == token
+      token: token == freezed
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as String,
-      created: null == created
+      created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      qr: null == qr
+      qr: qr == freezed
           ? _value.qr
           : qr // ignore: cast_nullable_to_non_nullable
               as String,
@@ -159,24 +178,25 @@ class _$_Invitation implements _Invitation {
   factory _$_Invitation.fromJson(Map<String, dynamic> json) =>
       _$$_InvitationFromJson(json);
 
-  /// .
   @override
+
+  /// .
   @JsonKey(name: 'uid')
   final String uid;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'token')
   final String token;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'created')
   @DateTimeConverter()
   final DateTime created;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'qr')
   final String qr;
 
@@ -188,43 +208,43 @@ class _$_Invitation implements _Invitation {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_Invitation &&
-            (identical(other.uid, uid) || other.uid == uid) &&
-            (identical(other.token, token) || other.token == token) &&
-            (identical(other.created, created) || other.created == created) &&
-            (identical(other.qr, qr) || other.qr == qr));
+        (other is _Invitation &&
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
+            (identical(other.token, token) ||
+                const DeepCollectionEquality().equals(other.token, token)) &&
+            (identical(other.created, created) ||
+                const DeepCollectionEquality()
+                    .equals(other.created, created)) &&
+            (identical(other.qr, qr) ||
+                const DeepCollectionEquality().equals(other.qr, qr)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, uid, token, created, qr);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(uid) ^
+      const DeepCollectionEquality().hash(token) ^
+      const DeepCollectionEquality().hash(created) ^
+      const DeepCollectionEquality().hash(qr);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_InvitationCopyWith<_$_Invitation> get copyWith =>
-      __$$_InvitationCopyWithImpl<_$_Invitation>(this, _$identity);
+  _$InvitationCopyWith<_Invitation> get copyWith =>
+      __$InvitationCopyWithImpl<_Invitation>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_InvitationToJson(
-      this,
-    );
+    return _$$_InvitationToJson(this);
   }
 }
 
 abstract class _Invitation implements Invitation {
   const factory _Invitation(
-      {@JsonKey(name: 'uid')
-          required final String uid,
-      @JsonKey(name: 'token')
-          required final String token,
-      @JsonKey(name: 'created')
-      @DateTimeConverter()
-          required final DateTime created,
-      @JsonKey(name: 'qr')
-          required final String qr}) = _$_Invitation;
+      {@JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'token') required String token,
+      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'qr') required String qr}) = _$_Invitation;
 
   factory _Invitation.fromJson(Map<String, dynamic> json) =
       _$_Invitation.fromJson;
@@ -233,25 +253,25 @@ abstract class _Invitation implements Invitation {
 
   /// .
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'token')
-  String get token;
+  String get token => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created;
+  DateTime get created => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'qr')
-  String get qr;
+  String get qr => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_InvitationCopyWith<_$_Invitation> get copyWith =>
+  _$InvitationCopyWith<_Invitation> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'd_l_p_user_data.dart';
@@ -12,11 +11,48 @@ part of 'd_l_p_user_data.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 DLPUserData _$DLPUserDataFromJson(Map<String, dynamic> json) {
   return _DLPUserData.fromJson(json);
 }
+
+/// @nodoc
+class _$DLPUserDataTearOff {
+  const _$DLPUserDataTearOff();
+
+  _DLPUserData call(
+      {@JsonKey(name: 'uuid') required String uuid,
+      @JsonKey(name: 'contact_uuid') required String contactUUID,
+      @JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'first_name') required String firstName,
+      @JsonKey(name: 'middle_name') required String middleName,
+      @JsonKey(name: 'last_name') required String lastName,
+      @JsonKey(name: 'role') required String role,
+      @JsonKey(name: 'contact_phone') required String contactPhone,
+      @JsonKey(name: 'contact_email') required String contactEmail,
+      @JsonKey(name: 'is_bot') required bool isBot}) {
+    return _DLPUserData(
+      uuid: uuid,
+      contactUUID: contactUUID,
+      name: name,
+      firstName: firstName,
+      middleName: middleName,
+      lastName: lastName,
+      role: role,
+      contactPhone: contactPhone,
+      contactEmail: contactEmail,
+      isBot: isBot,
+    );
+  }
+
+  DLPUserData fromJson(Map<String, Object> json) {
+    return DLPUserData.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $DLPUserData = _$DLPUserDataTearOff();
 
 /// @nodoc
 mixin _$DLPUserData {
@@ -70,8 +106,7 @@ mixin _$DLPUserData {
 abstract class $DLPUserDataCopyWith<$Res> {
   factory $DLPUserDataCopyWith(
           DLPUserData value, $Res Function(DLPUserData) then) =
-      _$DLPUserDataCopyWithImpl<$Res, DLPUserData>;
-  @useResult
+      _$DLPUserDataCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uuid') String uuid,
       @JsonKey(name: 'contact_uuid') String contactUUID,
@@ -86,82 +121,78 @@ abstract class $DLPUserDataCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$DLPUserDataCopyWithImpl<$Res, $Val extends DLPUserData>
-    implements $DLPUserDataCopyWith<$Res> {
+class _$DLPUserDataCopyWithImpl<$Res> implements $DLPUserDataCopyWith<$Res> {
   _$DLPUserDataCopyWithImpl(this._value, this._then);
 
+  final DLPUserData _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(DLPUserData) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? uuid = null,
-    Object? contactUUID = null,
-    Object? name = null,
-    Object? firstName = null,
-    Object? middleName = null,
-    Object? lastName = null,
-    Object? role = null,
-    Object? contactPhone = null,
-    Object? contactEmail = null,
-    Object? isBot = null,
+    Object? uuid = freezed,
+    Object? contactUUID = freezed,
+    Object? name = freezed,
+    Object? firstName = freezed,
+    Object? middleName = freezed,
+    Object? lastName = freezed,
+    Object? role = freezed,
+    Object? contactPhone = freezed,
+    Object? contactEmail = freezed,
+    Object? isBot = freezed,
   }) {
     return _then(_value.copyWith(
-      uuid: null == uuid
+      uuid: uuid == freezed
           ? _value.uuid
           : uuid // ignore: cast_nullable_to_non_nullable
               as String,
-      contactUUID: null == contactUUID
+      contactUUID: contactUUID == freezed
           ? _value.contactUUID
           : contactUUID // ignore: cast_nullable_to_non_nullable
               as String,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      firstName: null == firstName
+      firstName: firstName == freezed
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
               as String,
-      middleName: null == middleName
+      middleName: middleName == freezed
           ? _value.middleName
           : middleName // ignore: cast_nullable_to_non_nullable
               as String,
-      lastName: null == lastName
+      lastName: lastName == freezed
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
               as String,
-      role: null == role
+      role: role == freezed
           ? _value.role
           : role // ignore: cast_nullable_to_non_nullable
               as String,
-      contactPhone: null == contactPhone
+      contactPhone: contactPhone == freezed
           ? _value.contactPhone
           : contactPhone // ignore: cast_nullable_to_non_nullable
               as String,
-      contactEmail: null == contactEmail
+      contactEmail: contactEmail == freezed
           ? _value.contactEmail
           : contactEmail // ignore: cast_nullable_to_non_nullable
               as String,
-      isBot: null == isBot
+      isBot: isBot == freezed
           ? _value.isBot
           : isBot // ignore: cast_nullable_to_non_nullable
               as bool,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_DLPUserDataCopyWith<$Res>
+abstract class _$DLPUserDataCopyWith<$Res>
     implements $DLPUserDataCopyWith<$Res> {
-  factory _$$_DLPUserDataCopyWith(
-          _$_DLPUserData value, $Res Function(_$_DLPUserData) then) =
-      __$$_DLPUserDataCopyWithImpl<$Res>;
+  factory _$DLPUserDataCopyWith(
+          _DLPUserData value, $Res Function(_DLPUserData) then) =
+      __$DLPUserDataCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'uuid') String uuid,
       @JsonKey(name: 'contact_uuid') String contactUUID,
@@ -176,65 +207,66 @@ abstract class _$$_DLPUserDataCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_DLPUserDataCopyWithImpl<$Res>
-    extends _$DLPUserDataCopyWithImpl<$Res, _$_DLPUserData>
-    implements _$$_DLPUserDataCopyWith<$Res> {
-  __$$_DLPUserDataCopyWithImpl(
-      _$_DLPUserData _value, $Res Function(_$_DLPUserData) _then)
-      : super(_value, _then);
+class __$DLPUserDataCopyWithImpl<$Res> extends _$DLPUserDataCopyWithImpl<$Res>
+    implements _$DLPUserDataCopyWith<$Res> {
+  __$DLPUserDataCopyWithImpl(
+      _DLPUserData _value, $Res Function(_DLPUserData) _then)
+      : super(_value, (v) => _then(v as _DLPUserData));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _DLPUserData get _value => super._value as _DLPUserData;
+
   @override
   $Res call({
-    Object? uuid = null,
-    Object? contactUUID = null,
-    Object? name = null,
-    Object? firstName = null,
-    Object? middleName = null,
-    Object? lastName = null,
-    Object? role = null,
-    Object? contactPhone = null,
-    Object? contactEmail = null,
-    Object? isBot = null,
+    Object? uuid = freezed,
+    Object? contactUUID = freezed,
+    Object? name = freezed,
+    Object? firstName = freezed,
+    Object? middleName = freezed,
+    Object? lastName = freezed,
+    Object? role = freezed,
+    Object? contactPhone = freezed,
+    Object? contactEmail = freezed,
+    Object? isBot = freezed,
   }) {
-    return _then(_$_DLPUserData(
-      uuid: null == uuid
+    return _then(_DLPUserData(
+      uuid: uuid == freezed
           ? _value.uuid
           : uuid // ignore: cast_nullable_to_non_nullable
               as String,
-      contactUUID: null == contactUUID
+      contactUUID: contactUUID == freezed
           ? _value.contactUUID
           : contactUUID // ignore: cast_nullable_to_non_nullable
               as String,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      firstName: null == firstName
+      firstName: firstName == freezed
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
               as String,
-      middleName: null == middleName
+      middleName: middleName == freezed
           ? _value.middleName
           : middleName // ignore: cast_nullable_to_non_nullable
               as String,
-      lastName: null == lastName
+      lastName: lastName == freezed
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
               as String,
-      role: null == role
+      role: role == freezed
           ? _value.role
           : role // ignore: cast_nullable_to_non_nullable
               as String,
-      contactPhone: null == contactPhone
+      contactPhone: contactPhone == freezed
           ? _value.contactPhone
           : contactPhone // ignore: cast_nullable_to_non_nullable
               as String,
-      contactEmail: null == contactEmail
+      contactEmail: contactEmail == freezed
           ? _value.contactEmail
           : contactEmail // ignore: cast_nullable_to_non_nullable
               as String,
-      isBot: null == isBot
+      isBot: isBot == freezed
           ? _value.isBot
           : isBot // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -260,53 +292,54 @@ class _$_DLPUserData implements _DLPUserData {
   factory _$_DLPUserData.fromJson(Map<String, dynamic> json) =>
       _$$_DLPUserDataFromJson(json);
 
-  /// .
   @override
+
+  /// .
   @JsonKey(name: 'uuid')
   final String uuid;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'contact_uuid')
   final String contactUUID;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'name')
   final String name;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'first_name')
   final String firstName;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'middle_name')
   final String middleName;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'last_name')
   final String lastName;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'role')
   final String role;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'contact_phone')
   final String contactPhone;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'contact_email')
   final String contactEmail;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'is_bot')
   final bool isBot;
 
@@ -318,57 +351,72 @@ class _$_DLPUserData implements _DLPUserData {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_DLPUserData &&
-            (identical(other.uuid, uuid) || other.uuid == uuid) &&
+        (other is _DLPUserData &&
+            (identical(other.uuid, uuid) ||
+                const DeepCollectionEquality().equals(other.uuid, uuid)) &&
             (identical(other.contactUUID, contactUUID) ||
-                other.contactUUID == contactUUID) &&
-            (identical(other.name, name) || other.name == name) &&
+                const DeepCollectionEquality()
+                    .equals(other.contactUUID, contactUUID)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
             (identical(other.firstName, firstName) ||
-                other.firstName == firstName) &&
+                const DeepCollectionEquality()
+                    .equals(other.firstName, firstName)) &&
             (identical(other.middleName, middleName) ||
-                other.middleName == middleName) &&
+                const DeepCollectionEquality()
+                    .equals(other.middleName, middleName)) &&
             (identical(other.lastName, lastName) ||
-                other.lastName == lastName) &&
-            (identical(other.role, role) || other.role == role) &&
+                const DeepCollectionEquality()
+                    .equals(other.lastName, lastName)) &&
+            (identical(other.role, role) ||
+                const DeepCollectionEquality().equals(other.role, role)) &&
             (identical(other.contactPhone, contactPhone) ||
-                other.contactPhone == contactPhone) &&
+                const DeepCollectionEquality()
+                    .equals(other.contactPhone, contactPhone)) &&
             (identical(other.contactEmail, contactEmail) ||
-                other.contactEmail == contactEmail) &&
-            (identical(other.isBot, isBot) || other.isBot == isBot));
+                const DeepCollectionEquality()
+                    .equals(other.contactEmail, contactEmail)) &&
+            (identical(other.isBot, isBot) ||
+                const DeepCollectionEquality().equals(other.isBot, isBot)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, uuid, contactUUID, name,
-      firstName, middleName, lastName, role, contactPhone, contactEmail, isBot);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(uuid) ^
+      const DeepCollectionEquality().hash(contactUUID) ^
+      const DeepCollectionEquality().hash(name) ^
+      const DeepCollectionEquality().hash(firstName) ^
+      const DeepCollectionEquality().hash(middleName) ^
+      const DeepCollectionEquality().hash(lastName) ^
+      const DeepCollectionEquality().hash(role) ^
+      const DeepCollectionEquality().hash(contactPhone) ^
+      const DeepCollectionEquality().hash(contactEmail) ^
+      const DeepCollectionEquality().hash(isBot);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_DLPUserDataCopyWith<_$_DLPUserData> get copyWith =>
-      __$$_DLPUserDataCopyWithImpl<_$_DLPUserData>(this, _$identity);
+  _$DLPUserDataCopyWith<_DLPUserData> get copyWith =>
+      __$DLPUserDataCopyWithImpl<_DLPUserData>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_DLPUserDataToJson(
-      this,
-    );
+    return _$$_DLPUserDataToJson(this);
   }
 }
 
 abstract class _DLPUserData implements DLPUserData {
   const factory _DLPUserData(
-      {@JsonKey(name: 'uuid') required final String uuid,
-      @JsonKey(name: 'contact_uuid') required final String contactUUID,
-      @JsonKey(name: 'name') required final String name,
-      @JsonKey(name: 'first_name') required final String firstName,
-      @JsonKey(name: 'middle_name') required final String middleName,
-      @JsonKey(name: 'last_name') required final String lastName,
-      @JsonKey(name: 'role') required final String role,
-      @JsonKey(name: 'contact_phone') required final String contactPhone,
-      @JsonKey(name: 'contact_email') required final String contactEmail,
-      @JsonKey(name: 'is_bot') required final bool isBot}) = _$_DLPUserData;
+      {@JsonKey(name: 'uuid') required String uuid,
+      @JsonKey(name: 'contact_uuid') required String contactUUID,
+      @JsonKey(name: 'name') required String name,
+      @JsonKey(name: 'first_name') required String firstName,
+      @JsonKey(name: 'middle_name') required String middleName,
+      @JsonKey(name: 'last_name') required String lastName,
+      @JsonKey(name: 'role') required String role,
+      @JsonKey(name: 'contact_phone') required String contactPhone,
+      @JsonKey(name: 'contact_email') required String contactEmail,
+      @JsonKey(name: 'is_bot') required bool isBot}) = _$_DLPUserData;
 
   factory _DLPUserData.fromJson(Map<String, dynamic> json) =
       _$_DLPUserData.fromJson;
@@ -377,54 +425,54 @@ abstract class _DLPUserData implements DLPUserData {
 
   /// .
   @JsonKey(name: 'uuid')
-  String get uuid;
+  String get uuid => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'contact_uuid')
-  String get contactUUID;
+  String get contactUUID => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'first_name')
-  String get firstName;
+  String get firstName => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'middle_name')
-  String get middleName;
+  String get middleName => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'last_name')
-  String get lastName;
+  String get lastName => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'role')
-  String get role;
+  String get role => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'contact_phone')
-  String get contactPhone;
+  String get contactPhone => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'contact_email')
-  String get contactEmail;
+  String get contactEmail => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'is_bot')
-  bool get isBot;
+  bool get isBot => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_DLPUserDataCopyWith<_$_DLPUserData> get copyWith =>
+  _$DLPUserDataCopyWith<_DLPUserData> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_remind_deleted.dart';
@@ -12,11 +11,34 @@ part of 'server_remind_deleted.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ServerRemindDeleted _$ServerRemindDeletedFromJson(Map<String, dynamic> json) {
   return _ServerRemindDeleted.fromJson(json);
 }
+
+/// @nodoc
+class _$ServerRemindDeletedTearOff {
+  const _$ServerRemindDeletedTearOff();
+
+  _ServerRemindDeleted call(
+      {@JsonKey(name: 'params') required ServerRemindDeletedParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
+    return _ServerRemindDeleted(
+      params: params,
+      name: name,
+      confirmId: confirmId,
+    );
+  }
+
+  ServerRemindDeleted fromJson(Map<String, Object> json) {
+    return ServerRemindDeleted.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $ServerRemindDeleted = _$ServerRemindDeletedTearOff();
 
 /// @nodoc
 mixin _$ServerRemindDeleted {
@@ -42,8 +64,7 @@ mixin _$ServerRemindDeleted {
 abstract class $ServerRemindDeletedCopyWith<$Res> {
   factory $ServerRemindDeletedCopyWith(
           ServerRemindDeleted value, $Res Function(ServerRemindDeleted) then) =
-      _$ServerRemindDeletedCopyWithImpl<$Res, ServerRemindDeleted>;
-  @useResult
+      _$ServerRemindDeletedCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'params') ServerRemindDeletedParams params,
       @JsonKey(name: 'event') String name,
@@ -53,55 +74,51 @@ abstract class $ServerRemindDeletedCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ServerRemindDeletedCopyWithImpl<$Res, $Val extends ServerRemindDeleted>
+class _$ServerRemindDeletedCopyWithImpl<$Res>
     implements $ServerRemindDeletedCopyWith<$Res> {
   _$ServerRemindDeletedCopyWithImpl(this._value, this._then);
 
+  final ServerRemindDeleted _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(ServerRemindDeleted) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? params = null,
-    Object? name = null,
+    Object? params = freezed,
+    Object? name = freezed,
     Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: null == params
+      params: params == freezed
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ServerRemindDeletedParams,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: freezed == confirmId
+      confirmId: confirmId == freezed
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
-    ) as $Val);
+    ));
   }
 
   @override
-  @pragma('vm:prefer-inline')
   $ServerRemindDeletedParamsCopyWith<$Res> get params {
     return $ServerRemindDeletedParamsCopyWith<$Res>(_value.params, (value) {
-      return _then(_value.copyWith(params: value) as $Val);
+      return _then(_value.copyWith(params: value));
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_ServerRemindDeletedCopyWith<$Res>
+abstract class _$ServerRemindDeletedCopyWith<$Res>
     implements $ServerRemindDeletedCopyWith<$Res> {
-  factory _$$_ServerRemindDeletedCopyWith(_$_ServerRemindDeleted value,
-          $Res Function(_$_ServerRemindDeleted) then) =
-      __$$_ServerRemindDeletedCopyWithImpl<$Res>;
+  factory _$ServerRemindDeletedCopyWith(_ServerRemindDeleted value,
+          $Res Function(_ServerRemindDeleted) then) =
+      __$ServerRemindDeletedCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'params') ServerRemindDeletedParams params,
       @JsonKey(name: 'event') String name,
@@ -112,30 +129,32 @@ abstract class _$$_ServerRemindDeletedCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ServerRemindDeletedCopyWithImpl<$Res>
-    extends _$ServerRemindDeletedCopyWithImpl<$Res, _$_ServerRemindDeleted>
-    implements _$$_ServerRemindDeletedCopyWith<$Res> {
-  __$$_ServerRemindDeletedCopyWithImpl(_$_ServerRemindDeleted _value,
-      $Res Function(_$_ServerRemindDeleted) _then)
-      : super(_value, _then);
+class __$ServerRemindDeletedCopyWithImpl<$Res>
+    extends _$ServerRemindDeletedCopyWithImpl<$Res>
+    implements _$ServerRemindDeletedCopyWith<$Res> {
+  __$ServerRemindDeletedCopyWithImpl(
+      _ServerRemindDeleted _value, $Res Function(_ServerRemindDeleted) _then)
+      : super(_value, (v) => _then(v as _ServerRemindDeleted));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _ServerRemindDeleted get _value => super._value as _ServerRemindDeleted;
+
   @override
   $Res call({
-    Object? params = null,
-    Object? name = null,
+    Object? params = freezed,
+    Object? name = freezed,
     Object? confirmId = freezed,
   }) {
-    return _then(_$_ServerRemindDeleted(
-      params: null == params
+    return _then(_ServerRemindDeleted(
+      params: params == freezed
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ServerRemindDeletedParams,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: freezed == confirmId
+      confirmId: confirmId == freezed
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -154,18 +173,19 @@ class _$_ServerRemindDeleted implements _ServerRemindDeleted {
   factory _$_ServerRemindDeleted.fromJson(Map<String, dynamic> json) =>
       _$$_ServerRemindDeletedFromJson(json);
 
-  /// .
   @override
+
+  /// .
   @JsonKey(name: 'params')
   final ServerRemindDeletedParams params;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'event')
   final String name;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'confirm_id')
   final String? confirmId;
 
@@ -177,41 +197,40 @@ class _$_ServerRemindDeleted implements _ServerRemindDeleted {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ServerRemindDeleted &&
-            (identical(other.params, params) || other.params == params) &&
-            (identical(other.name, name) || other.name == name) &&
+        (other is _ServerRemindDeleted &&
+            (identical(other.params, params) ||
+                const DeepCollectionEquality().equals(other.params, params)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
             (identical(other.confirmId, confirmId) ||
-                other.confirmId == confirmId));
+                const DeepCollectionEquality()
+                    .equals(other.confirmId, confirmId)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, params, name, confirmId);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(params) ^
+      const DeepCollectionEquality().hash(name) ^
+      const DeepCollectionEquality().hash(confirmId);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_ServerRemindDeletedCopyWith<_$_ServerRemindDeleted> get copyWith =>
-      __$$_ServerRemindDeletedCopyWithImpl<_$_ServerRemindDeleted>(
+  _$ServerRemindDeletedCopyWith<_ServerRemindDeleted> get copyWith =>
+      __$ServerRemindDeletedCopyWithImpl<_ServerRemindDeleted>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ServerRemindDeletedToJson(
-      this,
-    );
+    return _$$_ServerRemindDeletedToJson(this);
   }
 }
 
 abstract class _ServerRemindDeleted implements ServerRemindDeleted {
   const factory _ServerRemindDeleted(
-      {@JsonKey(name: 'params')
-          required final ServerRemindDeletedParams params,
-      @JsonKey(name: 'event')
-          required final String name,
-      @JsonKey(name: 'confirm_id')
-          final String? confirmId}) = _$_ServerRemindDeleted;
+      {@JsonKey(name: 'params') required ServerRemindDeletedParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerRemindDeleted;
 
   factory _ServerRemindDeleted.fromJson(Map<String, dynamic> json) =
       _$_ServerRemindDeleted.fromJson;
@@ -220,19 +239,19 @@ abstract class _ServerRemindDeleted implements ServerRemindDeleted {
 
   /// .
   @JsonKey(name: 'params')
-  ServerRemindDeletedParams get params;
+  ServerRemindDeletedParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String? get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ServerRemindDeletedCopyWith<_$_ServerRemindDeleted> get copyWith =>
+  _$ServerRemindDeletedCopyWith<_ServerRemindDeleted> get copyWith =>
       throw _privateConstructorUsedError;
 }

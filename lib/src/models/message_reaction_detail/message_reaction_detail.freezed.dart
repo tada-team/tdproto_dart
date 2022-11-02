@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'message_reaction_detail.dart';
@@ -12,12 +11,35 @@ part of 'message_reaction_detail.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 MessageReactionDetail _$MessageReactionDetailFromJson(
     Map<String, dynamic> json) {
   return _MessageReactionDetail.fromJson(json);
 }
+
+/// @nodoc
+class _$MessageReactionDetailTearOff {
+  const _$MessageReactionDetailTearOff();
+
+  _MessageReactionDetail call(
+      {@JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'sender') required String sender,
+      @JsonKey(name: 'name') required String name}) {
+    return _MessageReactionDetail(
+      created: created,
+      sender: sender,
+      name: name,
+    );
+  }
+
+  MessageReactionDetail fromJson(Map<String, Object> json) {
+    return MessageReactionDetail.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $MessageReactionDetail = _$MessageReactionDetailTearOff();
 
 /// @nodoc
 mixin _$MessageReactionDetail {
@@ -44,8 +66,7 @@ mixin _$MessageReactionDetail {
 abstract class $MessageReactionDetailCopyWith<$Res> {
   factory $MessageReactionDetailCopyWith(MessageReactionDetail value,
           $Res Function(MessageReactionDetail) then) =
-      _$MessageReactionDetailCopyWithImpl<$Res, MessageReactionDetail>;
-  @useResult
+      _$MessageReactionDetailCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @JsonKey(name: 'sender') String sender,
@@ -53,48 +74,44 @@ abstract class $MessageReactionDetailCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MessageReactionDetailCopyWithImpl<$Res,
-        $Val extends MessageReactionDetail>
+class _$MessageReactionDetailCopyWithImpl<$Res>
     implements $MessageReactionDetailCopyWith<$Res> {
   _$MessageReactionDetailCopyWithImpl(this._value, this._then);
 
+  final MessageReactionDetail _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(MessageReactionDetail) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? created = null,
-    Object? sender = null,
-    Object? name = null,
+    Object? created = freezed,
+    Object? sender = freezed,
+    Object? name = freezed,
   }) {
     return _then(_value.copyWith(
-      created: null == created
+      created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      sender: null == sender
+      sender: sender == freezed
           ? _value.sender
           : sender // ignore: cast_nullable_to_non_nullable
               as String,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_MessageReactionDetailCopyWith<$Res>
+abstract class _$MessageReactionDetailCopyWith<$Res>
     implements $MessageReactionDetailCopyWith<$Res> {
-  factory _$$_MessageReactionDetailCopyWith(_$_MessageReactionDetail value,
-          $Res Function(_$_MessageReactionDetail) then) =
-      __$$_MessageReactionDetailCopyWithImpl<$Res>;
+  factory _$MessageReactionDetailCopyWith(_MessageReactionDetail value,
+          $Res Function(_MessageReactionDetail) then) =
+      __$MessageReactionDetailCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @JsonKey(name: 'sender') String sender,
@@ -102,30 +119,32 @@ abstract class _$$_MessageReactionDetailCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_MessageReactionDetailCopyWithImpl<$Res>
-    extends _$MessageReactionDetailCopyWithImpl<$Res, _$_MessageReactionDetail>
-    implements _$$_MessageReactionDetailCopyWith<$Res> {
-  __$$_MessageReactionDetailCopyWithImpl(_$_MessageReactionDetail _value,
-      $Res Function(_$_MessageReactionDetail) _then)
-      : super(_value, _then);
+class __$MessageReactionDetailCopyWithImpl<$Res>
+    extends _$MessageReactionDetailCopyWithImpl<$Res>
+    implements _$MessageReactionDetailCopyWith<$Res> {
+  __$MessageReactionDetailCopyWithImpl(_MessageReactionDetail _value,
+      $Res Function(_MessageReactionDetail) _then)
+      : super(_value, (v) => _then(v as _MessageReactionDetail));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _MessageReactionDetail get _value => super._value as _MessageReactionDetail;
+
   @override
   $Res call({
-    Object? created = null,
-    Object? sender = null,
-    Object? name = null,
+    Object? created = freezed,
+    Object? sender = freezed,
+    Object? name = freezed,
   }) {
-    return _then(_$_MessageReactionDetail(
-      created: null == created
+    return _then(_MessageReactionDetail(
+      created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      sender: null == sender
+      sender: sender == freezed
           ? _value.sender
           : sender // ignore: cast_nullable_to_non_nullable
               as String,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
@@ -144,19 +163,20 @@ class _$_MessageReactionDetail implements _MessageReactionDetail {
   factory _$_MessageReactionDetail.fromJson(Map<String, dynamic> json) =>
       _$$_MessageReactionDetailFromJson(json);
 
-  /// When reaction added, iso datetime.
   @override
+
+  /// When reaction added, iso datetime.
   @JsonKey(name: 'created')
   @DateTimeConverter()
   final DateTime created;
+  @override
 
   /// Reaction author.
-  @override
   @JsonKey(name: 'sender')
   final String sender;
+  @override
 
   /// Reaction emoji.
-  @override
   @JsonKey(name: 'name')
   final String name;
 
@@ -168,41 +188,40 @@ class _$_MessageReactionDetail implements _MessageReactionDetail {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_MessageReactionDetail &&
-            (identical(other.created, created) || other.created == created) &&
-            (identical(other.sender, sender) || other.sender == sender) &&
-            (identical(other.name, name) || other.name == name));
+        (other is _MessageReactionDetail &&
+            (identical(other.created, created) ||
+                const DeepCollectionEquality()
+                    .equals(other.created, created)) &&
+            (identical(other.sender, sender) ||
+                const DeepCollectionEquality().equals(other.sender, sender)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, created, sender, name);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(created) ^
+      const DeepCollectionEquality().hash(sender) ^
+      const DeepCollectionEquality().hash(name);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_MessageReactionDetailCopyWith<_$_MessageReactionDetail> get copyWith =>
-      __$$_MessageReactionDetailCopyWithImpl<_$_MessageReactionDetail>(
+  _$MessageReactionDetailCopyWith<_MessageReactionDetail> get copyWith =>
+      __$MessageReactionDetailCopyWithImpl<_MessageReactionDetail>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MessageReactionDetailToJson(
-      this,
-    );
+    return _$$_MessageReactionDetailToJson(this);
   }
 }
 
 abstract class _MessageReactionDetail implements MessageReactionDetail {
   const factory _MessageReactionDetail(
-      {@JsonKey(name: 'created')
-      @DateTimeConverter()
-          required final DateTime created,
-      @JsonKey(name: 'sender')
-          required final String sender,
-      @JsonKey(name: 'name')
-          required final String name}) = _$_MessageReactionDetail;
+      {@JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'sender') required String sender,
+      @JsonKey(name: 'name') required String name}) = _$_MessageReactionDetail;
 
   factory _MessageReactionDetail.fromJson(Map<String, dynamic> json) =
       _$_MessageReactionDetail.fromJson;
@@ -212,19 +231,19 @@ abstract class _MessageReactionDetail implements MessageReactionDetail {
   /// When reaction added, iso datetime.
   @JsonKey(name: 'created')
   @DateTimeConverter()
-  DateTime get created;
+  DateTime get created => throw _privateConstructorUsedError;
   @override
 
   /// Reaction author.
   @JsonKey(name: 'sender')
-  String get sender;
+  String get sender => throw _privateConstructorUsedError;
   @override
 
   /// Reaction emoji.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_MessageReactionDetailCopyWith<_$_MessageReactionDetail> get copyWith =>
+  _$MessageReactionDetailCopyWith<_MessageReactionDetail> get copyWith =>
       throw _privateConstructorUsedError;
 }

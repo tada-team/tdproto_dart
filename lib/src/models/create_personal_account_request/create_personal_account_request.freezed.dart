@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'create_personal_account_request.dart';
@@ -12,12 +11,37 @@ part of 'create_personal_account_request.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 CreatePersonalAccountRequest _$CreatePersonalAccountRequestFromJson(
     Map<String, dynamic> json) {
   return _CreatePersonalAccountRequest.fromJson(json);
 }
+
+/// @nodoc
+class _$CreatePersonalAccountRequestTearOff {
+  const _$CreatePersonalAccountRequestTearOff();
+
+  _CreatePersonalAccountRequest call(
+      {@JsonKey(name: 'owner_uuid') required String ownerUuid,
+      @JsonKey(name: 'full_name') String? fullName,
+      @JsonKey(name: 'phone') String? phone,
+      @JsonKey(name: 'team_uuid') required String teamUuid}) {
+    return _CreatePersonalAccountRequest(
+      ownerUuid: ownerUuid,
+      fullName: fullName,
+      phone: phone,
+      teamUuid: teamUuid,
+    );
+  }
+
+  CreatePersonalAccountRequest fromJson(Map<String, Object> json) {
+    return CreatePersonalAccountRequest.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $CreatePersonalAccountRequest = _$CreatePersonalAccountRequestTearOff();
 
 /// @nodoc
 mixin _$CreatePersonalAccountRequest {
@@ -48,9 +72,7 @@ abstract class $CreatePersonalAccountRequestCopyWith<$Res> {
   factory $CreatePersonalAccountRequestCopyWith(
           CreatePersonalAccountRequest value,
           $Res Function(CreatePersonalAccountRequest) then) =
-      _$CreatePersonalAccountRequestCopyWithImpl<$Res,
-          CreatePersonalAccountRequest>;
-  @useResult
+      _$CreatePersonalAccountRequestCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'owner_uuid') String ownerUuid,
       @JsonKey(name: 'full_name') String? fullName,
@@ -59,54 +81,50 @@ abstract class $CreatePersonalAccountRequestCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$CreatePersonalAccountRequestCopyWithImpl<$Res,
-        $Val extends CreatePersonalAccountRequest>
+class _$CreatePersonalAccountRequestCopyWithImpl<$Res>
     implements $CreatePersonalAccountRequestCopyWith<$Res> {
   _$CreatePersonalAccountRequestCopyWithImpl(this._value, this._then);
 
+  final CreatePersonalAccountRequest _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(CreatePersonalAccountRequest) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? ownerUuid = null,
+    Object? ownerUuid = freezed,
     Object? fullName = freezed,
     Object? phone = freezed,
-    Object? teamUuid = null,
+    Object? teamUuid = freezed,
   }) {
     return _then(_value.copyWith(
-      ownerUuid: null == ownerUuid
+      ownerUuid: ownerUuid == freezed
           ? _value.ownerUuid
           : ownerUuid // ignore: cast_nullable_to_non_nullable
               as String,
-      fullName: freezed == fullName
+      fullName: fullName == freezed
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
               as String?,
-      phone: freezed == phone
+      phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as String?,
-      teamUuid: null == teamUuid
+      teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
               as String,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_CreatePersonalAccountRequestCopyWith<$Res>
+abstract class _$CreatePersonalAccountRequestCopyWith<$Res>
     implements $CreatePersonalAccountRequestCopyWith<$Res> {
-  factory _$$_CreatePersonalAccountRequestCopyWith(
-          _$_CreatePersonalAccountRequest value,
-          $Res Function(_$_CreatePersonalAccountRequest) then) =
-      __$$_CreatePersonalAccountRequestCopyWithImpl<$Res>;
+  factory _$CreatePersonalAccountRequestCopyWith(
+          _CreatePersonalAccountRequest value,
+          $Res Function(_CreatePersonalAccountRequest) then) =
+      __$CreatePersonalAccountRequestCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'owner_uuid') String ownerUuid,
       @JsonKey(name: 'full_name') String? fullName,
@@ -115,37 +133,39 @@ abstract class _$$_CreatePersonalAccountRequestCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_CreatePersonalAccountRequestCopyWithImpl<$Res>
-    extends _$CreatePersonalAccountRequestCopyWithImpl<$Res,
-        _$_CreatePersonalAccountRequest>
-    implements _$$_CreatePersonalAccountRequestCopyWith<$Res> {
-  __$$_CreatePersonalAccountRequestCopyWithImpl(
-      _$_CreatePersonalAccountRequest _value,
-      $Res Function(_$_CreatePersonalAccountRequest) _then)
-      : super(_value, _then);
+class __$CreatePersonalAccountRequestCopyWithImpl<$Res>
+    extends _$CreatePersonalAccountRequestCopyWithImpl<$Res>
+    implements _$CreatePersonalAccountRequestCopyWith<$Res> {
+  __$CreatePersonalAccountRequestCopyWithImpl(
+      _CreatePersonalAccountRequest _value,
+      $Res Function(_CreatePersonalAccountRequest) _then)
+      : super(_value, (v) => _then(v as _CreatePersonalAccountRequest));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _CreatePersonalAccountRequest get _value =>
+      super._value as _CreatePersonalAccountRequest;
+
   @override
   $Res call({
-    Object? ownerUuid = null,
+    Object? ownerUuid = freezed,
     Object? fullName = freezed,
     Object? phone = freezed,
-    Object? teamUuid = null,
+    Object? teamUuid = freezed,
   }) {
-    return _then(_$_CreatePersonalAccountRequest(
-      ownerUuid: null == ownerUuid
+    return _then(_CreatePersonalAccountRequest(
+      ownerUuid: ownerUuid == freezed
           ? _value.ownerUuid
           : ownerUuid // ignore: cast_nullable_to_non_nullable
               as String,
-      fullName: freezed == fullName
+      fullName: fullName == freezed
           ? _value.fullName
           : fullName // ignore: cast_nullable_to_non_nullable
               as String?,
-      phone: freezed == phone
+      phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as String?,
-      teamUuid: null == teamUuid
+      teamUuid: teamUuid == freezed
           ? _value.teamUuid
           : teamUuid // ignore: cast_nullable_to_non_nullable
               as String,
@@ -165,23 +185,24 @@ class _$_CreatePersonalAccountRequest implements _CreatePersonalAccountRequest {
   factory _$_CreatePersonalAccountRequest.fromJson(Map<String, dynamic> json) =>
       _$$_CreatePersonalAccountRequestFromJson(json);
 
-  /// .
   @override
+
+  /// .
   @JsonKey(name: 'owner_uuid')
   final String ownerUuid;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'full_name')
   final String? fullName;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'phone')
   final String? phone;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'team_uuid')
   final String teamUuid;
 
@@ -193,44 +214,47 @@ class _$_CreatePersonalAccountRequest implements _CreatePersonalAccountRequest {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_CreatePersonalAccountRequest &&
+        (other is _CreatePersonalAccountRequest &&
             (identical(other.ownerUuid, ownerUuid) ||
-                other.ownerUuid == ownerUuid) &&
+                const DeepCollectionEquality()
+                    .equals(other.ownerUuid, ownerUuid)) &&
             (identical(other.fullName, fullName) ||
-                other.fullName == fullName) &&
-            (identical(other.phone, phone) || other.phone == phone) &&
+                const DeepCollectionEquality()
+                    .equals(other.fullName, fullName)) &&
+            (identical(other.phone, phone) ||
+                const DeepCollectionEquality().equals(other.phone, phone)) &&
             (identical(other.teamUuid, teamUuid) ||
-                other.teamUuid == teamUuid));
+                const DeepCollectionEquality()
+                    .equals(other.teamUuid, teamUuid)));
   }
 
-  @JsonKey(ignore: true)
   @override
   int get hashCode =>
-      Object.hash(runtimeType, ownerUuid, fullName, phone, teamUuid);
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(ownerUuid) ^
+      const DeepCollectionEquality().hash(fullName) ^
+      const DeepCollectionEquality().hash(phone) ^
+      const DeepCollectionEquality().hash(teamUuid);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_CreatePersonalAccountRequestCopyWith<_$_CreatePersonalAccountRequest>
-      get copyWith => __$$_CreatePersonalAccountRequestCopyWithImpl<
-          _$_CreatePersonalAccountRequest>(this, _$identity);
+  _$CreatePersonalAccountRequestCopyWith<_CreatePersonalAccountRequest>
+      get copyWith => __$CreatePersonalAccountRequestCopyWithImpl<
+          _CreatePersonalAccountRequest>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CreatePersonalAccountRequestToJson(
-      this,
-    );
+    return _$$_CreatePersonalAccountRequestToJson(this);
   }
 }
 
 abstract class _CreatePersonalAccountRequest
     implements CreatePersonalAccountRequest {
   const factory _CreatePersonalAccountRequest(
-          {@JsonKey(name: 'owner_uuid') required final String ownerUuid,
-          @JsonKey(name: 'full_name') final String? fullName,
-          @JsonKey(name: 'phone') final String? phone,
-          @JsonKey(name: 'team_uuid') required final String teamUuid}) =
+          {@JsonKey(name: 'owner_uuid') required String ownerUuid,
+          @JsonKey(name: 'full_name') String? fullName,
+          @JsonKey(name: 'phone') String? phone,
+          @JsonKey(name: 'team_uuid') required String teamUuid}) =
       _$_CreatePersonalAccountRequest;
 
   factory _CreatePersonalAccountRequest.fromJson(Map<String, dynamic> json) =
@@ -240,24 +264,24 @@ abstract class _CreatePersonalAccountRequest
 
   /// .
   @JsonKey(name: 'owner_uuid')
-  String get ownerUuid;
+  String get ownerUuid => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'full_name')
-  String? get fullName;
+  String? get fullName => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'phone')
-  String? get phone;
+  String? get phone => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'team_uuid')
-  String get teamUuid;
+  String get teamUuid => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_CreatePersonalAccountRequestCopyWith<_$_CreatePersonalAccountRequest>
+  _$CreatePersonalAccountRequestCopyWith<_CreatePersonalAccountRequest>
       get copyWith => throw _privateConstructorUsedError;
 }

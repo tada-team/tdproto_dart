@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_call_buzz_params.dart';
@@ -12,11 +11,48 @@ part of 'server_call_buzz_params.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ServerCallBuzzParams _$ServerCallBuzzParamsFromJson(Map<String, dynamic> json) {
   return _ServerCallBuzzParams.fromJson(json);
 }
+
+/// @nodoc
+class _$ServerCallBuzzParamsTearOff {
+  const _$ServerCallBuzzParamsTearOff();
+
+  _ServerCallBuzzParams call(
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'icons') required IconData icons,
+      @JsonKey(name: 'display_name') required String displayName,
+      @JsonKey(name: 'teaminfo') required TeamShort teamShort,
+      @JsonKey(name: 'chat') required ChatShort chatShort,
+      @JsonKey(name: 'actor') required ContactShort actorShort,
+      @JsonKey(name: 'uid') required String uid,
+      @JsonKey(name: 'buzz_timeout') required int buzzTimeout,
+      @Deprecated('Deprecated.') @JsonKey(name: 'team') required String team,
+      @JsonKey(name: 'call_type') required String callType}) {
+    return _ServerCallBuzzParams(
+      jid: jid,
+      icons: icons,
+      displayName: displayName,
+      teamShort: teamShort,
+      chatShort: chatShort,
+      actorShort: actorShort,
+      uid: uid,
+      buzzTimeout: buzzTimeout,
+      team: team,
+      callType: callType,
+    );
+  }
+
+  ServerCallBuzzParams fromJson(Map<String, Object> json) {
+    return ServerCallBuzzParams.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $ServerCallBuzzParams = _$ServerCallBuzzParamsTearOff();
 
 /// @nodoc
 mixin _$ServerCallBuzzParams {
@@ -71,8 +107,7 @@ mixin _$ServerCallBuzzParams {
 abstract class $ServerCallBuzzParamsCopyWith<$Res> {
   factory $ServerCallBuzzParamsCopyWith(ServerCallBuzzParams value,
           $Res Function(ServerCallBuzzParams) then) =
-      _$ServerCallBuzzParamsCopyWithImpl<$Res, ServerCallBuzzParams>;
-  @useResult
+      _$ServerCallBuzzParamsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'icons') IconData icons,
@@ -92,115 +127,107 @@ abstract class $ServerCallBuzzParamsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ServerCallBuzzParamsCopyWithImpl<$Res,
-        $Val extends ServerCallBuzzParams>
+class _$ServerCallBuzzParamsCopyWithImpl<$Res>
     implements $ServerCallBuzzParamsCopyWith<$Res> {
   _$ServerCallBuzzParamsCopyWithImpl(this._value, this._then);
 
+  final ServerCallBuzzParams _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(ServerCallBuzzParams) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? jid = null,
-    Object? icons = null,
-    Object? displayName = null,
-    Object? teamShort = null,
-    Object? chatShort = null,
-    Object? actorShort = null,
-    Object? uid = null,
-    Object? buzzTimeout = null,
-    Object? team = null,
-    Object? callType = null,
+    Object? jid = freezed,
+    Object? icons = freezed,
+    Object? displayName = freezed,
+    Object? teamShort = freezed,
+    Object? chatShort = freezed,
+    Object? actorShort = freezed,
+    Object? uid = freezed,
+    Object? buzzTimeout = freezed,
+    Object? team = freezed,
+    Object? callType = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: null == jid
+      jid: jid == freezed
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      icons: null == icons
+      icons: icons == freezed
           ? _value.icons
           : icons // ignore: cast_nullable_to_non_nullable
               as IconData,
-      displayName: null == displayName
+      displayName: displayName == freezed
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String,
-      teamShort: null == teamShort
+      teamShort: teamShort == freezed
           ? _value.teamShort
           : teamShort // ignore: cast_nullable_to_non_nullable
               as TeamShort,
-      chatShort: null == chatShort
+      chatShort: chatShort == freezed
           ? _value.chatShort
           : chatShort // ignore: cast_nullable_to_non_nullable
               as ChatShort,
-      actorShort: null == actorShort
+      actorShort: actorShort == freezed
           ? _value.actorShort
           : actorShort // ignore: cast_nullable_to_non_nullable
               as ContactShort,
-      uid: null == uid
+      uid: uid == freezed
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
               as String,
-      buzzTimeout: null == buzzTimeout
+      buzzTimeout: buzzTimeout == freezed
           ? _value.buzzTimeout
           : buzzTimeout // ignore: cast_nullable_to_non_nullable
               as int,
-      team: null == team
+      team: team == freezed
           ? _value.team
           : team // ignore: cast_nullable_to_non_nullable
               as String,
-      callType: null == callType
+      callType: callType == freezed
           ? _value.callType
           : callType // ignore: cast_nullable_to_non_nullable
               as String,
-    ) as $Val);
+    ));
   }
 
   @override
-  @pragma('vm:prefer-inline')
   $IconDataCopyWith<$Res> get icons {
     return $IconDataCopyWith<$Res>(_value.icons, (value) {
-      return _then(_value.copyWith(icons: value) as $Val);
+      return _then(_value.copyWith(icons: value));
     });
   }
 
   @override
-  @pragma('vm:prefer-inline')
   $TeamShortCopyWith<$Res> get teamShort {
     return $TeamShortCopyWith<$Res>(_value.teamShort, (value) {
-      return _then(_value.copyWith(teamShort: value) as $Val);
+      return _then(_value.copyWith(teamShort: value));
     });
   }
 
   @override
-  @pragma('vm:prefer-inline')
   $ChatShortCopyWith<$Res> get chatShort {
     return $ChatShortCopyWith<$Res>(_value.chatShort, (value) {
-      return _then(_value.copyWith(chatShort: value) as $Val);
+      return _then(_value.copyWith(chatShort: value));
     });
   }
 
   @override
-  @pragma('vm:prefer-inline')
   $ContactShortCopyWith<$Res> get actorShort {
     return $ContactShortCopyWith<$Res>(_value.actorShort, (value) {
-      return _then(_value.copyWith(actorShort: value) as $Val);
+      return _then(_value.copyWith(actorShort: value));
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_ServerCallBuzzParamsCopyWith<$Res>
+abstract class _$ServerCallBuzzParamsCopyWith<$Res>
     implements $ServerCallBuzzParamsCopyWith<$Res> {
-  factory _$$_ServerCallBuzzParamsCopyWith(_$_ServerCallBuzzParams value,
-          $Res Function(_$_ServerCallBuzzParams) then) =
-      __$$_ServerCallBuzzParamsCopyWithImpl<$Res>;
+  factory _$ServerCallBuzzParamsCopyWith(_ServerCallBuzzParams value,
+          $Res Function(_ServerCallBuzzParams) then) =
+      __$ServerCallBuzzParamsCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'icons') IconData icons,
@@ -224,65 +251,67 @@ abstract class _$$_ServerCallBuzzParamsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ServerCallBuzzParamsCopyWithImpl<$Res>
-    extends _$ServerCallBuzzParamsCopyWithImpl<$Res, _$_ServerCallBuzzParams>
-    implements _$$_ServerCallBuzzParamsCopyWith<$Res> {
-  __$$_ServerCallBuzzParamsCopyWithImpl(_$_ServerCallBuzzParams _value,
-      $Res Function(_$_ServerCallBuzzParams) _then)
-      : super(_value, _then);
+class __$ServerCallBuzzParamsCopyWithImpl<$Res>
+    extends _$ServerCallBuzzParamsCopyWithImpl<$Res>
+    implements _$ServerCallBuzzParamsCopyWith<$Res> {
+  __$ServerCallBuzzParamsCopyWithImpl(
+      _ServerCallBuzzParams _value, $Res Function(_ServerCallBuzzParams) _then)
+      : super(_value, (v) => _then(v as _ServerCallBuzzParams));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _ServerCallBuzzParams get _value => super._value as _ServerCallBuzzParams;
+
   @override
   $Res call({
-    Object? jid = null,
-    Object? icons = null,
-    Object? displayName = null,
-    Object? teamShort = null,
-    Object? chatShort = null,
-    Object? actorShort = null,
-    Object? uid = null,
-    Object? buzzTimeout = null,
-    Object? team = null,
-    Object? callType = null,
+    Object? jid = freezed,
+    Object? icons = freezed,
+    Object? displayName = freezed,
+    Object? teamShort = freezed,
+    Object? chatShort = freezed,
+    Object? actorShort = freezed,
+    Object? uid = freezed,
+    Object? buzzTimeout = freezed,
+    Object? team = freezed,
+    Object? callType = freezed,
   }) {
-    return _then(_$_ServerCallBuzzParams(
-      jid: null == jid
+    return _then(_ServerCallBuzzParams(
+      jid: jid == freezed
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      icons: null == icons
+      icons: icons == freezed
           ? _value.icons
           : icons // ignore: cast_nullable_to_non_nullable
               as IconData,
-      displayName: null == displayName
+      displayName: displayName == freezed
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String,
-      teamShort: null == teamShort
+      teamShort: teamShort == freezed
           ? _value.teamShort
           : teamShort // ignore: cast_nullable_to_non_nullable
               as TeamShort,
-      chatShort: null == chatShort
+      chatShort: chatShort == freezed
           ? _value.chatShort
           : chatShort // ignore: cast_nullable_to_non_nullable
               as ChatShort,
-      actorShort: null == actorShort
+      actorShort: actorShort == freezed
           ? _value.actorShort
           : actorShort // ignore: cast_nullable_to_non_nullable
               as ContactShort,
-      uid: null == uid
+      uid: uid == freezed
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
               as String,
-      buzzTimeout: null == buzzTimeout
+      buzzTimeout: buzzTimeout == freezed
           ? _value.buzzTimeout
           : buzzTimeout // ignore: cast_nullable_to_non_nullable
               as int,
-      team: null == team
+      team: team == freezed
           ? _value.team
           : team // ignore: cast_nullable_to_non_nullable
               as String,
-      callType: null == callType
+      callType: callType == freezed
           ? _value.callType
           : callType // ignore: cast_nullable_to_non_nullable
               as String,
@@ -308,54 +337,55 @@ class _$_ServerCallBuzzParams implements _ServerCallBuzzParams {
   factory _$_ServerCallBuzzParams.fromJson(Map<String, dynamic> json) =>
       _$$_ServerCallBuzzParamsFromJson(json);
 
-  /// Chat or contact id.
   @override
+
+  /// Chat or contact id.
   @JsonKey(name: 'jid')
   final String jid;
+  @override
 
   /// Chat icons.
-  @override
   @JsonKey(name: 'icons')
   final IconData icons;
+  @override
 
   /// Chat title.
-  @override
   @JsonKey(name: 'display_name')
   final String displayName;
+  @override
 
   /// Short team information.
-  @override
   @JsonKey(name: 'teaminfo')
   final TeamShort teamShort;
+  @override
 
   /// Short chat information.
-  @override
   @JsonKey(name: 'chat')
   final ChatShort chatShort;
+  @override
 
   /// Short call creator information.
-  @override
   @JsonKey(name: 'actor')
   final ContactShort actorShort;
+  @override
 
   /// Call id.
-  @override
   @JsonKey(name: 'uid')
   final String uid;
+  @override
 
   /// Number of seconds for stop buzzing.
-  @override
   @JsonKey(name: 'buzz_timeout')
   final int buzzTimeout;
+  @override
 
   /// Deprecated.
-  @override
   @Deprecated('Deprecated.')
   @JsonKey(name: 'team')
   final String team;
+  @override
 
   /// CallType is a type of call("audio" - audio room, "video" - video room).
-  @override
   @JsonKey(name: 'call_type')
   final String callType;
 
@@ -367,69 +397,84 @@ class _$_ServerCallBuzzParams implements _ServerCallBuzzParams {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ServerCallBuzzParams &&
-            (identical(other.jid, jid) || other.jid == jid) &&
-            (identical(other.icons, icons) || other.icons == icons) &&
+        (other is _ServerCallBuzzParams &&
+            (identical(other.jid, jid) ||
+                const DeepCollectionEquality().equals(other.jid, jid)) &&
+            (identical(other.icons, icons) ||
+                const DeepCollectionEquality().equals(other.icons, icons)) &&
             (identical(other.displayName, displayName) ||
-                other.displayName == displayName) &&
+                const DeepCollectionEquality()
+                    .equals(other.displayName, displayName)) &&
             (identical(other.teamShort, teamShort) ||
-                other.teamShort == teamShort) &&
+                const DeepCollectionEquality()
+                    .equals(other.teamShort, teamShort)) &&
             (identical(other.chatShort, chatShort) ||
-                other.chatShort == chatShort) &&
+                const DeepCollectionEquality()
+                    .equals(other.chatShort, chatShort)) &&
             (identical(other.actorShort, actorShort) ||
-                other.actorShort == actorShort) &&
-            (identical(other.uid, uid) || other.uid == uid) &&
+                const DeepCollectionEquality()
+                    .equals(other.actorShort, actorShort)) &&
+            (identical(other.uid, uid) ||
+                const DeepCollectionEquality().equals(other.uid, uid)) &&
             (identical(other.buzzTimeout, buzzTimeout) ||
-                other.buzzTimeout == buzzTimeout) &&
-            (identical(other.team, team) || other.team == team) &&
+                const DeepCollectionEquality()
+                    .equals(other.buzzTimeout, buzzTimeout)) &&
+            (identical(other.team, team) ||
+                const DeepCollectionEquality().equals(other.team, team)) &&
             (identical(other.callType, callType) ||
-                other.callType == callType));
+                const DeepCollectionEquality()
+                    .equals(other.callType, callType)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, jid, icons, displayName,
-      teamShort, chatShort, actorShort, uid, buzzTimeout, team, callType);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(jid) ^
+      const DeepCollectionEquality().hash(icons) ^
+      const DeepCollectionEquality().hash(displayName) ^
+      const DeepCollectionEquality().hash(teamShort) ^
+      const DeepCollectionEquality().hash(chatShort) ^
+      const DeepCollectionEquality().hash(actorShort) ^
+      const DeepCollectionEquality().hash(uid) ^
+      const DeepCollectionEquality().hash(buzzTimeout) ^
+      const DeepCollectionEquality().hash(team) ^
+      const DeepCollectionEquality().hash(callType);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_ServerCallBuzzParamsCopyWith<_$_ServerCallBuzzParams> get copyWith =>
-      __$$_ServerCallBuzzParamsCopyWithImpl<_$_ServerCallBuzzParams>(
+  _$ServerCallBuzzParamsCopyWith<_ServerCallBuzzParams> get copyWith =>
+      __$ServerCallBuzzParamsCopyWithImpl<_ServerCallBuzzParams>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ServerCallBuzzParamsToJson(
-      this,
-    );
+    return _$$_ServerCallBuzzParamsToJson(this);
   }
 }
 
 abstract class _ServerCallBuzzParams implements ServerCallBuzzParams {
   const factory _ServerCallBuzzParams(
       {@JsonKey(name: 'jid')
-          required final String jid,
+          required String jid,
       @JsonKey(name: 'icons')
-          required final IconData icons,
+          required IconData icons,
       @JsonKey(name: 'display_name')
-          required final String displayName,
+          required String displayName,
       @JsonKey(name: 'teaminfo')
-          required final TeamShort teamShort,
+          required TeamShort teamShort,
       @JsonKey(name: 'chat')
-          required final ChatShort chatShort,
+          required ChatShort chatShort,
       @JsonKey(name: 'actor')
-          required final ContactShort actorShort,
+          required ContactShort actorShort,
       @JsonKey(name: 'uid')
-          required final String uid,
+          required String uid,
       @JsonKey(name: 'buzz_timeout')
-          required final int buzzTimeout,
+          required int buzzTimeout,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'team')
-          required final String team,
+          required String team,
       @JsonKey(name: 'call_type')
-          required final String callType}) = _$_ServerCallBuzzParams;
+          required String callType}) = _$_ServerCallBuzzParams;
 
   factory _ServerCallBuzzParams.fromJson(Map<String, dynamic> json) =
       _$_ServerCallBuzzParams.fromJson;
@@ -438,55 +483,55 @@ abstract class _ServerCallBuzzParams implements ServerCallBuzzParams {
 
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Chat icons.
   @JsonKey(name: 'icons')
-  IconData get icons;
+  IconData get icons => throw _privateConstructorUsedError;
   @override
 
   /// Chat title.
   @JsonKey(name: 'display_name')
-  String get displayName;
+  String get displayName => throw _privateConstructorUsedError;
   @override
 
   /// Short team information.
   @JsonKey(name: 'teaminfo')
-  TeamShort get teamShort;
+  TeamShort get teamShort => throw _privateConstructorUsedError;
   @override
 
   /// Short chat information.
   @JsonKey(name: 'chat')
-  ChatShort get chatShort;
+  ChatShort get chatShort => throw _privateConstructorUsedError;
   @override
 
   /// Short call creator information.
   @JsonKey(name: 'actor')
-  ContactShort get actorShort;
+  ContactShort get actorShort => throw _privateConstructorUsedError;
   @override
 
   /// Call id.
   @JsonKey(name: 'uid')
-  String get uid;
+  String get uid => throw _privateConstructorUsedError;
   @override
 
   /// Number of seconds for stop buzzing.
   @JsonKey(name: 'buzz_timeout')
-  int get buzzTimeout;
+  int get buzzTimeout => throw _privateConstructorUsedError;
   @override
 
   /// Deprecated.
   @Deprecated('Deprecated.')
   @JsonKey(name: 'team')
-  String get team;
+  String get team => throw _privateConstructorUsedError;
   @override
 
   /// CallType is a type of call("audio" - audio room, "video" - video room).
   @JsonKey(name: 'call_type')
-  String get callType;
+  String get callType => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ServerCallBuzzParamsCopyWith<_$_ServerCallBuzzParams> get copyWith =>
+  _$ServerCallBuzzParamsCopyWith<_ServerCallBuzzParams> get copyWith =>
       throw _privateConstructorUsedError;
 }

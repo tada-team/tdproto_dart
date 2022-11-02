@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_message_received.dart';
@@ -12,12 +11,35 @@ part of 'server_message_received.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ServerMessageReceived _$ServerMessageReceivedFromJson(
     Map<String, dynamic> json) {
   return _ServerMessageReceived.fromJson(json);
 }
+
+/// @nodoc
+class _$ServerMessageReceivedTearOff {
+  const _$ServerMessageReceivedTearOff();
+
+  _ServerMessageReceived call(
+      {@JsonKey(name: 'params') required ServerMessageReceivedParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
+    return _ServerMessageReceived(
+      params: params,
+      name: name,
+      confirmId: confirmId,
+    );
+  }
+
+  ServerMessageReceived fromJson(Map<String, Object> json) {
+    return ServerMessageReceived.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $ServerMessageReceived = _$ServerMessageReceivedTearOff();
 
 /// @nodoc
 mixin _$ServerMessageReceived {
@@ -43,8 +65,7 @@ mixin _$ServerMessageReceived {
 abstract class $ServerMessageReceivedCopyWith<$Res> {
   factory $ServerMessageReceivedCopyWith(ServerMessageReceived value,
           $Res Function(ServerMessageReceived) then) =
-      _$ServerMessageReceivedCopyWithImpl<$Res, ServerMessageReceived>;
-  @useResult
+      _$ServerMessageReceivedCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'params') ServerMessageReceivedParams params,
       @JsonKey(name: 'event') String name,
@@ -54,56 +75,51 @@ abstract class $ServerMessageReceivedCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ServerMessageReceivedCopyWithImpl<$Res,
-        $Val extends ServerMessageReceived>
+class _$ServerMessageReceivedCopyWithImpl<$Res>
     implements $ServerMessageReceivedCopyWith<$Res> {
   _$ServerMessageReceivedCopyWithImpl(this._value, this._then);
 
+  final ServerMessageReceived _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(ServerMessageReceived) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? params = null,
-    Object? name = null,
+    Object? params = freezed,
+    Object? name = freezed,
     Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: null == params
+      params: params == freezed
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ServerMessageReceivedParams,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: freezed == confirmId
+      confirmId: confirmId == freezed
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
-    ) as $Val);
+    ));
   }
 
   @override
-  @pragma('vm:prefer-inline')
   $ServerMessageReceivedParamsCopyWith<$Res> get params {
     return $ServerMessageReceivedParamsCopyWith<$Res>(_value.params, (value) {
-      return _then(_value.copyWith(params: value) as $Val);
+      return _then(_value.copyWith(params: value));
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_ServerMessageReceivedCopyWith<$Res>
+abstract class _$ServerMessageReceivedCopyWith<$Res>
     implements $ServerMessageReceivedCopyWith<$Res> {
-  factory _$$_ServerMessageReceivedCopyWith(_$_ServerMessageReceived value,
-          $Res Function(_$_ServerMessageReceived) then) =
-      __$$_ServerMessageReceivedCopyWithImpl<$Res>;
+  factory _$ServerMessageReceivedCopyWith(_ServerMessageReceived value,
+          $Res Function(_ServerMessageReceived) then) =
+      __$ServerMessageReceivedCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'params') ServerMessageReceivedParams params,
       @JsonKey(name: 'event') String name,
@@ -114,30 +130,32 @@ abstract class _$$_ServerMessageReceivedCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ServerMessageReceivedCopyWithImpl<$Res>
-    extends _$ServerMessageReceivedCopyWithImpl<$Res, _$_ServerMessageReceived>
-    implements _$$_ServerMessageReceivedCopyWith<$Res> {
-  __$$_ServerMessageReceivedCopyWithImpl(_$_ServerMessageReceived _value,
-      $Res Function(_$_ServerMessageReceived) _then)
-      : super(_value, _then);
+class __$ServerMessageReceivedCopyWithImpl<$Res>
+    extends _$ServerMessageReceivedCopyWithImpl<$Res>
+    implements _$ServerMessageReceivedCopyWith<$Res> {
+  __$ServerMessageReceivedCopyWithImpl(_ServerMessageReceived _value,
+      $Res Function(_ServerMessageReceived) _then)
+      : super(_value, (v) => _then(v as _ServerMessageReceived));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _ServerMessageReceived get _value => super._value as _ServerMessageReceived;
+
   @override
   $Res call({
-    Object? params = null,
-    Object? name = null,
+    Object? params = freezed,
+    Object? name = freezed,
     Object? confirmId = freezed,
   }) {
-    return _then(_$_ServerMessageReceived(
-      params: null == params
+    return _then(_ServerMessageReceived(
+      params: params == freezed
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ServerMessageReceivedParams,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: freezed == confirmId
+      confirmId: confirmId == freezed
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -156,18 +174,19 @@ class _$_ServerMessageReceived implements _ServerMessageReceived {
   factory _$_ServerMessageReceived.fromJson(Map<String, dynamic> json) =>
       _$$_ServerMessageReceivedFromJson(json);
 
-  /// .
   @override
+
+  /// .
   @JsonKey(name: 'params')
   final ServerMessageReceivedParams params;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'event')
   final String name;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'confirm_id')
   final String? confirmId;
 
@@ -179,41 +198,41 @@ class _$_ServerMessageReceived implements _ServerMessageReceived {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ServerMessageReceived &&
-            (identical(other.params, params) || other.params == params) &&
-            (identical(other.name, name) || other.name == name) &&
+        (other is _ServerMessageReceived &&
+            (identical(other.params, params) ||
+                const DeepCollectionEquality().equals(other.params, params)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
             (identical(other.confirmId, confirmId) ||
-                other.confirmId == confirmId));
+                const DeepCollectionEquality()
+                    .equals(other.confirmId, confirmId)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, params, name, confirmId);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(params) ^
+      const DeepCollectionEquality().hash(name) ^
+      const DeepCollectionEquality().hash(confirmId);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_ServerMessageReceivedCopyWith<_$_ServerMessageReceived> get copyWith =>
-      __$$_ServerMessageReceivedCopyWithImpl<_$_ServerMessageReceived>(
+  _$ServerMessageReceivedCopyWith<_ServerMessageReceived> get copyWith =>
+      __$ServerMessageReceivedCopyWithImpl<_ServerMessageReceived>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ServerMessageReceivedToJson(
-      this,
-    );
+    return _$$_ServerMessageReceivedToJson(this);
   }
 }
 
 abstract class _ServerMessageReceived implements ServerMessageReceived {
   const factory _ServerMessageReceived(
-      {@JsonKey(name: 'params')
-          required final ServerMessageReceivedParams params,
-      @JsonKey(name: 'event')
-          required final String name,
-      @JsonKey(name: 'confirm_id')
-          final String? confirmId}) = _$_ServerMessageReceived;
+          {@JsonKey(name: 'params') required ServerMessageReceivedParams params,
+          @JsonKey(name: 'event') required String name,
+          @JsonKey(name: 'confirm_id') String? confirmId}) =
+      _$_ServerMessageReceived;
 
   factory _ServerMessageReceived.fromJson(Map<String, dynamic> json) =
       _$_ServerMessageReceived.fromJson;
@@ -222,19 +241,19 @@ abstract class _ServerMessageReceived implements ServerMessageReceived {
 
   /// .
   @JsonKey(name: 'params')
-  ServerMessageReceivedParams get params;
+  ServerMessageReceivedParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String? get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ServerMessageReceivedCopyWith<_$_ServerMessageReceived> get copyWith =>
+  _$ServerMessageReceivedCopyWith<_ServerMessageReceived> get copyWith =>
       throw _privateConstructorUsedError;
 }

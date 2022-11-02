@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'reaction.dart';
@@ -12,11 +11,29 @@ part of 'reaction.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Reaction _$ReactionFromJson(Map<String, dynamic> json) {
   return _Reaction.fromJson(json);
 }
+
+/// @nodoc
+class _$ReactionTearOff {
+  const _$ReactionTearOff();
+
+  _Reaction call({@JsonKey(name: 'name') required String name}) {
+    return _Reaction(
+      name: name,
+    );
+  }
+
+  Reaction fromJson(Map<String, Object> json) {
+    return Reaction.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $Reaction = _$ReactionTearOff();
 
 /// @nodoc
 mixin _$Reaction {
@@ -33,60 +50,54 @@ mixin _$Reaction {
 /// @nodoc
 abstract class $ReactionCopyWith<$Res> {
   factory $ReactionCopyWith(Reaction value, $Res Function(Reaction) then) =
-      _$ReactionCopyWithImpl<$Res, Reaction>;
-  @useResult
+      _$ReactionCopyWithImpl<$Res>;
   $Res call({@JsonKey(name: 'name') String name});
 }
 
 /// @nodoc
-class _$ReactionCopyWithImpl<$Res, $Val extends Reaction>
-    implements $ReactionCopyWith<$Res> {
+class _$ReactionCopyWithImpl<$Res> implements $ReactionCopyWith<$Res> {
   _$ReactionCopyWithImpl(this._value, this._then);
 
+  final Reaction _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(Reaction) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = null,
+    Object? name = freezed,
   }) {
     return _then(_value.copyWith(
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_ReactionCopyWith<$Res> implements $ReactionCopyWith<$Res> {
-  factory _$$_ReactionCopyWith(
-          _$_Reaction value, $Res Function(_$_Reaction) then) =
-      __$$_ReactionCopyWithImpl<$Res>;
+abstract class _$ReactionCopyWith<$Res> implements $ReactionCopyWith<$Res> {
+  factory _$ReactionCopyWith(_Reaction value, $Res Function(_Reaction) then) =
+      __$ReactionCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call({@JsonKey(name: 'name') String name});
 }
 
 /// @nodoc
-class __$$_ReactionCopyWithImpl<$Res>
-    extends _$ReactionCopyWithImpl<$Res, _$_Reaction>
-    implements _$$_ReactionCopyWith<$Res> {
-  __$$_ReactionCopyWithImpl(
-      _$_Reaction _value, $Res Function(_$_Reaction) _then)
-      : super(_value, _then);
+class __$ReactionCopyWithImpl<$Res> extends _$ReactionCopyWithImpl<$Res>
+    implements _$ReactionCopyWith<$Res> {
+  __$ReactionCopyWithImpl(_Reaction _value, $Res Function(_Reaction) _then)
+      : super(_value, (v) => _then(v as _Reaction));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _Reaction get _value => super._value as _Reaction;
+
   @override
   $Res call({
-    Object? name = null,
+    Object? name = freezed,
   }) {
-    return _then(_$_Reaction(
-      name: null == name
+    return _then(_Reaction(
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
@@ -102,8 +113,9 @@ class _$_Reaction implements _Reaction {
   factory _$_Reaction.fromJson(Map<String, dynamic> json) =>
       _$$_ReactionFromJson(json);
 
-  /// Unicode symbol.
   @override
+
+  /// Unicode symbol.
   @JsonKey(name: 'name')
   final String name;
 
@@ -115,31 +127,28 @@ class _$_Reaction implements _Reaction {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_Reaction &&
-            (identical(other.name, name) || other.name == name));
+        (other is _Reaction &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, name);
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(name);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_ReactionCopyWith<_$_Reaction> get copyWith =>
-      __$$_ReactionCopyWithImpl<_$_Reaction>(this, _$identity);
+  _$ReactionCopyWith<_Reaction> get copyWith =>
+      __$ReactionCopyWithImpl<_Reaction>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ReactionToJson(
-      this,
-    );
+    return _$$_ReactionToJson(this);
   }
 }
 
 abstract class _Reaction implements Reaction {
-  const factory _Reaction({@JsonKey(name: 'name') required final String name}) =
+  const factory _Reaction({@JsonKey(name: 'name') required String name}) =
       _$_Reaction;
 
   factory _Reaction.fromJson(Map<String, dynamic> json) = _$_Reaction.fromJson;
@@ -148,9 +157,9 @@ abstract class _Reaction implements Reaction {
 
   /// Unicode symbol.
   @JsonKey(name: 'name')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ReactionCopyWith<_$_Reaction> get copyWith =>
+  _$ReactionCopyWith<_Reaction> get copyWith =>
       throw _privateConstructorUsedError;
 }

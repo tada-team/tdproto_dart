@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'client_call_reject_params.dart';
@@ -12,12 +11,33 @@ part of 'client_call_reject_params.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ClientCallRejectParams _$ClientCallRejectParamsFromJson(
     Map<String, dynamic> json) {
   return _ClientCallRejectParams.fromJson(json);
 }
+
+/// @nodoc
+class _$ClientCallRejectParamsTearOff {
+  const _$ClientCallRejectParamsTearOff();
+
+  _ClientCallRejectParams call(
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'reason') String? reason}) {
+    return _ClientCallRejectParams(
+      jid: jid,
+      reason: reason,
+    );
+  }
+
+  ClientCallRejectParams fromJson(Map<String, Object> json) {
+    return ClientCallRejectParams.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $ClientCallRejectParams = _$ClientCallRejectParamsTearOff();
 
 /// @nodoc
 mixin _$ClientCallRejectParams {
@@ -39,77 +59,73 @@ mixin _$ClientCallRejectParams {
 abstract class $ClientCallRejectParamsCopyWith<$Res> {
   factory $ClientCallRejectParamsCopyWith(ClientCallRejectParams value,
           $Res Function(ClientCallRejectParams) then) =
-      _$ClientCallRejectParamsCopyWithImpl<$Res, ClientCallRejectParams>;
-  @useResult
+      _$ClientCallRejectParamsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'reason') String? reason});
 }
 
 /// @nodoc
-class _$ClientCallRejectParamsCopyWithImpl<$Res,
-        $Val extends ClientCallRejectParams>
+class _$ClientCallRejectParamsCopyWithImpl<$Res>
     implements $ClientCallRejectParamsCopyWith<$Res> {
   _$ClientCallRejectParamsCopyWithImpl(this._value, this._then);
 
+  final ClientCallRejectParams _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(ClientCallRejectParams) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? jid = null,
+    Object? jid = freezed,
     Object? reason = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: null == jid
+      jid: jid == freezed
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      reason: freezed == reason
+      reason: reason == freezed
           ? _value.reason
           : reason // ignore: cast_nullable_to_non_nullable
               as String?,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_ClientCallRejectParamsCopyWith<$Res>
+abstract class _$ClientCallRejectParamsCopyWith<$Res>
     implements $ClientCallRejectParamsCopyWith<$Res> {
-  factory _$$_ClientCallRejectParamsCopyWith(_$_ClientCallRejectParams value,
-          $Res Function(_$_ClientCallRejectParams) then) =
-      __$$_ClientCallRejectParamsCopyWithImpl<$Res>;
+  factory _$ClientCallRejectParamsCopyWith(_ClientCallRejectParams value,
+          $Res Function(_ClientCallRejectParams) then) =
+      __$ClientCallRejectParamsCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'reason') String? reason});
 }
 
 /// @nodoc
-class __$$_ClientCallRejectParamsCopyWithImpl<$Res>
-    extends _$ClientCallRejectParamsCopyWithImpl<$Res,
-        _$_ClientCallRejectParams>
-    implements _$$_ClientCallRejectParamsCopyWith<$Res> {
-  __$$_ClientCallRejectParamsCopyWithImpl(_$_ClientCallRejectParams _value,
-      $Res Function(_$_ClientCallRejectParams) _then)
-      : super(_value, _then);
+class __$ClientCallRejectParamsCopyWithImpl<$Res>
+    extends _$ClientCallRejectParamsCopyWithImpl<$Res>
+    implements _$ClientCallRejectParamsCopyWith<$Res> {
+  __$ClientCallRejectParamsCopyWithImpl(_ClientCallRejectParams _value,
+      $Res Function(_ClientCallRejectParams) _then)
+      : super(_value, (v) => _then(v as _ClientCallRejectParams));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _ClientCallRejectParams get _value => super._value as _ClientCallRejectParams;
+
   @override
   $Res call({
-    Object? jid = null,
+    Object? jid = freezed,
     Object? reason = freezed,
   }) {
-    return _then(_$_ClientCallRejectParams(
-      jid: null == jid
+    return _then(_ClientCallRejectParams(
+      jid: jid == freezed
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      reason: freezed == reason
+      reason: reason == freezed
           ? _value.reason
           : reason // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -127,13 +143,14 @@ class _$_ClientCallRejectParams implements _ClientCallRejectParams {
   factory _$_ClientCallRejectParams.fromJson(Map<String, dynamic> json) =>
       _$$_ClientCallRejectParamsFromJson(json);
 
-  /// Chat or contact id.
   @override
+
+  /// Chat or contact id.
   @JsonKey(name: 'jid')
   final String jid;
+  @override
 
   /// Reason, if any.
-  @override
   @JsonKey(name: 'reason')
   final String? reason;
 
@@ -145,36 +162,35 @@ class _$_ClientCallRejectParams implements _ClientCallRejectParams {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ClientCallRejectParams &&
-            (identical(other.jid, jid) || other.jid == jid) &&
-            (identical(other.reason, reason) || other.reason == reason));
+        (other is _ClientCallRejectParams &&
+            (identical(other.jid, jid) ||
+                const DeepCollectionEquality().equals(other.jid, jid)) &&
+            (identical(other.reason, reason) ||
+                const DeepCollectionEquality().equals(other.reason, reason)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, jid, reason);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(jid) ^
+      const DeepCollectionEquality().hash(reason);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_ClientCallRejectParamsCopyWith<_$_ClientCallRejectParams> get copyWith =>
-      __$$_ClientCallRejectParamsCopyWithImpl<_$_ClientCallRejectParams>(
+  _$ClientCallRejectParamsCopyWith<_ClientCallRejectParams> get copyWith =>
+      __$ClientCallRejectParamsCopyWithImpl<_ClientCallRejectParams>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ClientCallRejectParamsToJson(
-      this,
-    );
+    return _$$_ClientCallRejectParamsToJson(this);
   }
 }
 
 abstract class _ClientCallRejectParams implements ClientCallRejectParams {
   const factory _ClientCallRejectParams(
-          {@JsonKey(name: 'jid') required final String jid,
-          @JsonKey(name: 'reason') final String? reason}) =
-      _$_ClientCallRejectParams;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'reason') String? reason}) = _$_ClientCallRejectParams;
 
   factory _ClientCallRejectParams.fromJson(Map<String, dynamic> json) =
       _$_ClientCallRejectParams.fromJson;
@@ -183,14 +199,14 @@ abstract class _ClientCallRejectParams implements ClientCallRejectParams {
 
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Reason, if any.
   @JsonKey(name: 'reason')
-  String? get reason;
+  String? get reason => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ClientCallRejectParamsCopyWith<_$_ClientCallRejectParams> get copyWith =>
+  _$ClientCallRejectParamsCopyWith<_ClientCallRejectParams> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_call_buzzcancel.dart';
@@ -12,11 +11,34 @@ part of 'server_call_buzzcancel.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ServerCallBuzzcancel _$ServerCallBuzzcancelFromJson(Map<String, dynamic> json) {
   return _ServerCallBuzzcancel.fromJson(json);
 }
+
+/// @nodoc
+class _$ServerCallBuzzcancelTearOff {
+  const _$ServerCallBuzzcancelTearOff();
+
+  _ServerCallBuzzcancel call(
+      {@JsonKey(name: 'params') required ServerCallBuzzcancelParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
+    return _ServerCallBuzzcancel(
+      params: params,
+      name: name,
+      confirmId: confirmId,
+    );
+  }
+
+  ServerCallBuzzcancel fromJson(Map<String, Object> json) {
+    return ServerCallBuzzcancel.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $ServerCallBuzzcancel = _$ServerCallBuzzcancelTearOff();
 
 /// @nodoc
 mixin _$ServerCallBuzzcancel {
@@ -42,8 +64,7 @@ mixin _$ServerCallBuzzcancel {
 abstract class $ServerCallBuzzcancelCopyWith<$Res> {
   factory $ServerCallBuzzcancelCopyWith(ServerCallBuzzcancel value,
           $Res Function(ServerCallBuzzcancel) then) =
-      _$ServerCallBuzzcancelCopyWithImpl<$Res, ServerCallBuzzcancel>;
-  @useResult
+      _$ServerCallBuzzcancelCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'params') ServerCallBuzzcancelParams params,
       @JsonKey(name: 'event') String name,
@@ -53,56 +74,51 @@ abstract class $ServerCallBuzzcancelCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ServerCallBuzzcancelCopyWithImpl<$Res,
-        $Val extends ServerCallBuzzcancel>
+class _$ServerCallBuzzcancelCopyWithImpl<$Res>
     implements $ServerCallBuzzcancelCopyWith<$Res> {
   _$ServerCallBuzzcancelCopyWithImpl(this._value, this._then);
 
+  final ServerCallBuzzcancel _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(ServerCallBuzzcancel) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? params = null,
-    Object? name = null,
+    Object? params = freezed,
+    Object? name = freezed,
     Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: null == params
+      params: params == freezed
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ServerCallBuzzcancelParams,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: freezed == confirmId
+      confirmId: confirmId == freezed
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
-    ) as $Val);
+    ));
   }
 
   @override
-  @pragma('vm:prefer-inline')
   $ServerCallBuzzcancelParamsCopyWith<$Res> get params {
     return $ServerCallBuzzcancelParamsCopyWith<$Res>(_value.params, (value) {
-      return _then(_value.copyWith(params: value) as $Val);
+      return _then(_value.copyWith(params: value));
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_ServerCallBuzzcancelCopyWith<$Res>
+abstract class _$ServerCallBuzzcancelCopyWith<$Res>
     implements $ServerCallBuzzcancelCopyWith<$Res> {
-  factory _$$_ServerCallBuzzcancelCopyWith(_$_ServerCallBuzzcancel value,
-          $Res Function(_$_ServerCallBuzzcancel) then) =
-      __$$_ServerCallBuzzcancelCopyWithImpl<$Res>;
+  factory _$ServerCallBuzzcancelCopyWith(_ServerCallBuzzcancel value,
+          $Res Function(_ServerCallBuzzcancel) then) =
+      __$ServerCallBuzzcancelCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'params') ServerCallBuzzcancelParams params,
       @JsonKey(name: 'event') String name,
@@ -113,30 +129,32 @@ abstract class _$$_ServerCallBuzzcancelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ServerCallBuzzcancelCopyWithImpl<$Res>
-    extends _$ServerCallBuzzcancelCopyWithImpl<$Res, _$_ServerCallBuzzcancel>
-    implements _$$_ServerCallBuzzcancelCopyWith<$Res> {
-  __$$_ServerCallBuzzcancelCopyWithImpl(_$_ServerCallBuzzcancel _value,
-      $Res Function(_$_ServerCallBuzzcancel) _then)
-      : super(_value, _then);
+class __$ServerCallBuzzcancelCopyWithImpl<$Res>
+    extends _$ServerCallBuzzcancelCopyWithImpl<$Res>
+    implements _$ServerCallBuzzcancelCopyWith<$Res> {
+  __$ServerCallBuzzcancelCopyWithImpl(
+      _ServerCallBuzzcancel _value, $Res Function(_ServerCallBuzzcancel) _then)
+      : super(_value, (v) => _then(v as _ServerCallBuzzcancel));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _ServerCallBuzzcancel get _value => super._value as _ServerCallBuzzcancel;
+
   @override
   $Res call({
-    Object? params = null,
-    Object? name = null,
+    Object? params = freezed,
+    Object? name = freezed,
     Object? confirmId = freezed,
   }) {
-    return _then(_$_ServerCallBuzzcancel(
-      params: null == params
+    return _then(_ServerCallBuzzcancel(
+      params: params == freezed
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ServerCallBuzzcancelParams,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: freezed == confirmId
+      confirmId: confirmId == freezed
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -155,18 +173,19 @@ class _$_ServerCallBuzzcancel implements _ServerCallBuzzcancel {
   factory _$_ServerCallBuzzcancel.fromJson(Map<String, dynamic> json) =>
       _$$_ServerCallBuzzcancelFromJson(json);
 
-  /// .
   @override
+
+  /// .
   @JsonKey(name: 'params')
   final ServerCallBuzzcancelParams params;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'event')
   final String name;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'confirm_id')
   final String? confirmId;
 
@@ -178,41 +197,41 @@ class _$_ServerCallBuzzcancel implements _ServerCallBuzzcancel {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ServerCallBuzzcancel &&
-            (identical(other.params, params) || other.params == params) &&
-            (identical(other.name, name) || other.name == name) &&
+        (other is _ServerCallBuzzcancel &&
+            (identical(other.params, params) ||
+                const DeepCollectionEquality().equals(other.params, params)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
             (identical(other.confirmId, confirmId) ||
-                other.confirmId == confirmId));
+                const DeepCollectionEquality()
+                    .equals(other.confirmId, confirmId)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, params, name, confirmId);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(params) ^
+      const DeepCollectionEquality().hash(name) ^
+      const DeepCollectionEquality().hash(confirmId);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_ServerCallBuzzcancelCopyWith<_$_ServerCallBuzzcancel> get copyWith =>
-      __$$_ServerCallBuzzcancelCopyWithImpl<_$_ServerCallBuzzcancel>(
+  _$ServerCallBuzzcancelCopyWith<_ServerCallBuzzcancel> get copyWith =>
+      __$ServerCallBuzzcancelCopyWithImpl<_ServerCallBuzzcancel>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ServerCallBuzzcancelToJson(
-      this,
-    );
+    return _$$_ServerCallBuzzcancelToJson(this);
   }
 }
 
 abstract class _ServerCallBuzzcancel implements ServerCallBuzzcancel {
   const factory _ServerCallBuzzcancel(
-      {@JsonKey(name: 'params')
-          required final ServerCallBuzzcancelParams params,
-      @JsonKey(name: 'event')
-          required final String name,
-      @JsonKey(name: 'confirm_id')
-          final String? confirmId}) = _$_ServerCallBuzzcancel;
+          {@JsonKey(name: 'params') required ServerCallBuzzcancelParams params,
+          @JsonKey(name: 'event') required String name,
+          @JsonKey(name: 'confirm_id') String? confirmId}) =
+      _$_ServerCallBuzzcancel;
 
   factory _ServerCallBuzzcancel.fromJson(Map<String, dynamic> json) =
       _$_ServerCallBuzzcancel.fromJson;
@@ -221,19 +240,19 @@ abstract class _ServerCallBuzzcancel implements ServerCallBuzzcancel {
 
   /// .
   @JsonKey(name: 'params')
-  ServerCallBuzzcancelParams get params;
+  ServerCallBuzzcancelParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String? get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ServerCallBuzzcancelCopyWith<_$_ServerCallBuzzcancel> get copyWith =>
+  _$ServerCallBuzzcancelCopyWith<_ServerCallBuzzcancel> get copyWith =>
       throw _privateConstructorUsedError;
 }

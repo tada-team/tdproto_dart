@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_call_muteall.dart';
@@ -12,11 +11,34 @@ part of 'server_call_muteall.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ServerCallMuteall _$ServerCallMuteallFromJson(Map<String, dynamic> json) {
   return _ServerCallMuteall.fromJson(json);
 }
+
+/// @nodoc
+class _$ServerCallMuteallTearOff {
+  const _$ServerCallMuteallTearOff();
+
+  _ServerCallMuteall call(
+      {@JsonKey(name: 'params') required ServerCallMuteallParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
+    return _ServerCallMuteall(
+      params: params,
+      name: name,
+      confirmId: confirmId,
+    );
+  }
+
+  ServerCallMuteall fromJson(Map<String, Object> json) {
+    return ServerCallMuteall.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $ServerCallMuteall = _$ServerCallMuteallTearOff();
 
 /// @nodoc
 mixin _$ServerCallMuteall {
@@ -42,8 +64,7 @@ mixin _$ServerCallMuteall {
 abstract class $ServerCallMuteallCopyWith<$Res> {
   factory $ServerCallMuteallCopyWith(
           ServerCallMuteall value, $Res Function(ServerCallMuteall) then) =
-      _$ServerCallMuteallCopyWithImpl<$Res, ServerCallMuteall>;
-  @useResult
+      _$ServerCallMuteallCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'params') ServerCallMuteallParams params,
       @JsonKey(name: 'event') String name,
@@ -53,55 +74,51 @@ abstract class $ServerCallMuteallCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ServerCallMuteallCopyWithImpl<$Res, $Val extends ServerCallMuteall>
+class _$ServerCallMuteallCopyWithImpl<$Res>
     implements $ServerCallMuteallCopyWith<$Res> {
   _$ServerCallMuteallCopyWithImpl(this._value, this._then);
 
+  final ServerCallMuteall _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(ServerCallMuteall) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? params = null,
-    Object? name = null,
+    Object? params = freezed,
+    Object? name = freezed,
     Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: null == params
+      params: params == freezed
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ServerCallMuteallParams,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: freezed == confirmId
+      confirmId: confirmId == freezed
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
-    ) as $Val);
+    ));
   }
 
   @override
-  @pragma('vm:prefer-inline')
   $ServerCallMuteallParamsCopyWith<$Res> get params {
     return $ServerCallMuteallParamsCopyWith<$Res>(_value.params, (value) {
-      return _then(_value.copyWith(params: value) as $Val);
+      return _then(_value.copyWith(params: value));
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_ServerCallMuteallCopyWith<$Res>
+abstract class _$ServerCallMuteallCopyWith<$Res>
     implements $ServerCallMuteallCopyWith<$Res> {
-  factory _$$_ServerCallMuteallCopyWith(_$_ServerCallMuteall value,
-          $Res Function(_$_ServerCallMuteall) then) =
-      __$$_ServerCallMuteallCopyWithImpl<$Res>;
+  factory _$ServerCallMuteallCopyWith(
+          _ServerCallMuteall value, $Res Function(_ServerCallMuteall) then) =
+      __$ServerCallMuteallCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'params') ServerCallMuteallParams params,
       @JsonKey(name: 'event') String name,
@@ -112,30 +129,32 @@ abstract class _$$_ServerCallMuteallCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ServerCallMuteallCopyWithImpl<$Res>
-    extends _$ServerCallMuteallCopyWithImpl<$Res, _$_ServerCallMuteall>
-    implements _$$_ServerCallMuteallCopyWith<$Res> {
-  __$$_ServerCallMuteallCopyWithImpl(
-      _$_ServerCallMuteall _value, $Res Function(_$_ServerCallMuteall) _then)
-      : super(_value, _then);
+class __$ServerCallMuteallCopyWithImpl<$Res>
+    extends _$ServerCallMuteallCopyWithImpl<$Res>
+    implements _$ServerCallMuteallCopyWith<$Res> {
+  __$ServerCallMuteallCopyWithImpl(
+      _ServerCallMuteall _value, $Res Function(_ServerCallMuteall) _then)
+      : super(_value, (v) => _then(v as _ServerCallMuteall));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _ServerCallMuteall get _value => super._value as _ServerCallMuteall;
+
   @override
   $Res call({
-    Object? params = null,
-    Object? name = null,
+    Object? params = freezed,
+    Object? name = freezed,
     Object? confirmId = freezed,
   }) {
-    return _then(_$_ServerCallMuteall(
-      params: null == params
+    return _then(_ServerCallMuteall(
+      params: params == freezed
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ServerCallMuteallParams,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: freezed == confirmId
+      confirmId: confirmId == freezed
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -154,18 +173,19 @@ class _$_ServerCallMuteall implements _ServerCallMuteall {
   factory _$_ServerCallMuteall.fromJson(Map<String, dynamic> json) =>
       _$$_ServerCallMuteallFromJson(json);
 
-  /// .
   @override
+
+  /// .
   @JsonKey(name: 'params')
   final ServerCallMuteallParams params;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'event')
   final String name;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'confirm_id')
   final String? confirmId;
 
@@ -177,41 +197,39 @@ class _$_ServerCallMuteall implements _ServerCallMuteall {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ServerCallMuteall &&
-            (identical(other.params, params) || other.params == params) &&
-            (identical(other.name, name) || other.name == name) &&
+        (other is _ServerCallMuteall &&
+            (identical(other.params, params) ||
+                const DeepCollectionEquality().equals(other.params, params)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
             (identical(other.confirmId, confirmId) ||
-                other.confirmId == confirmId));
+                const DeepCollectionEquality()
+                    .equals(other.confirmId, confirmId)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, params, name, confirmId);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(params) ^
+      const DeepCollectionEquality().hash(name) ^
+      const DeepCollectionEquality().hash(confirmId);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_ServerCallMuteallCopyWith<_$_ServerCallMuteall> get copyWith =>
-      __$$_ServerCallMuteallCopyWithImpl<_$_ServerCallMuteall>(
-          this, _$identity);
+  _$ServerCallMuteallCopyWith<_ServerCallMuteall> get copyWith =>
+      __$ServerCallMuteallCopyWithImpl<_ServerCallMuteall>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ServerCallMuteallToJson(
-      this,
-    );
+    return _$$_ServerCallMuteallToJson(this);
   }
 }
 
 abstract class _ServerCallMuteall implements ServerCallMuteall {
   const factory _ServerCallMuteall(
-      {@JsonKey(name: 'params')
-          required final ServerCallMuteallParams params,
-      @JsonKey(name: 'event')
-          required final String name,
-      @JsonKey(name: 'confirm_id')
-          final String? confirmId}) = _$_ServerCallMuteall;
+      {@JsonKey(name: 'params') required ServerCallMuteallParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerCallMuteall;
 
   factory _ServerCallMuteall.fromJson(Map<String, dynamic> json) =
       _$_ServerCallMuteall.fromJson;
@@ -220,19 +238,19 @@ abstract class _ServerCallMuteall implements ServerCallMuteall {
 
   /// .
   @JsonKey(name: 'params')
-  ServerCallMuteallParams get params;
+  ServerCallMuteallParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String? get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ServerCallMuteallCopyWith<_$_ServerCallMuteall> get copyWith =>
+  _$ServerCallMuteallCopyWith<_ServerCallMuteall> get copyWith =>
       throw _privateConstructorUsedError;
 }

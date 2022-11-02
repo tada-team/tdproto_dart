@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_team_counters.dart';
@@ -12,11 +11,34 @@ part of 'server_team_counters.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ServerTeamCounters _$ServerTeamCountersFromJson(Map<String, dynamic> json) {
   return _ServerTeamCounters.fromJson(json);
 }
+
+/// @nodoc
+class _$ServerTeamCountersTearOff {
+  const _$ServerTeamCountersTearOff();
+
+  _ServerTeamCounters call(
+      {@JsonKey(name: 'params') required ServerTeamCountersParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
+    return _ServerTeamCounters(
+      params: params,
+      name: name,
+      confirmId: confirmId,
+    );
+  }
+
+  ServerTeamCounters fromJson(Map<String, Object> json) {
+    return ServerTeamCounters.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $ServerTeamCounters = _$ServerTeamCountersTearOff();
 
 /// @nodoc
 mixin _$ServerTeamCounters {
@@ -42,8 +64,7 @@ mixin _$ServerTeamCounters {
 abstract class $ServerTeamCountersCopyWith<$Res> {
   factory $ServerTeamCountersCopyWith(
           ServerTeamCounters value, $Res Function(ServerTeamCounters) then) =
-      _$ServerTeamCountersCopyWithImpl<$Res, ServerTeamCounters>;
-  @useResult
+      _$ServerTeamCountersCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'params') ServerTeamCountersParams params,
       @JsonKey(name: 'event') String name,
@@ -53,55 +74,51 @@ abstract class $ServerTeamCountersCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ServerTeamCountersCopyWithImpl<$Res, $Val extends ServerTeamCounters>
+class _$ServerTeamCountersCopyWithImpl<$Res>
     implements $ServerTeamCountersCopyWith<$Res> {
   _$ServerTeamCountersCopyWithImpl(this._value, this._then);
 
+  final ServerTeamCounters _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(ServerTeamCounters) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? params = null,
-    Object? name = null,
+    Object? params = freezed,
+    Object? name = freezed,
     Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: null == params
+      params: params == freezed
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ServerTeamCountersParams,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: freezed == confirmId
+      confirmId: confirmId == freezed
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
-    ) as $Val);
+    ));
   }
 
   @override
-  @pragma('vm:prefer-inline')
   $ServerTeamCountersParamsCopyWith<$Res> get params {
     return $ServerTeamCountersParamsCopyWith<$Res>(_value.params, (value) {
-      return _then(_value.copyWith(params: value) as $Val);
+      return _then(_value.copyWith(params: value));
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_ServerTeamCountersCopyWith<$Res>
+abstract class _$ServerTeamCountersCopyWith<$Res>
     implements $ServerTeamCountersCopyWith<$Res> {
-  factory _$$_ServerTeamCountersCopyWith(_$_ServerTeamCounters value,
-          $Res Function(_$_ServerTeamCounters) then) =
-      __$$_ServerTeamCountersCopyWithImpl<$Res>;
+  factory _$ServerTeamCountersCopyWith(
+          _ServerTeamCounters value, $Res Function(_ServerTeamCounters) then) =
+      __$ServerTeamCountersCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'params') ServerTeamCountersParams params,
       @JsonKey(name: 'event') String name,
@@ -112,30 +129,32 @@ abstract class _$$_ServerTeamCountersCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ServerTeamCountersCopyWithImpl<$Res>
-    extends _$ServerTeamCountersCopyWithImpl<$Res, _$_ServerTeamCounters>
-    implements _$$_ServerTeamCountersCopyWith<$Res> {
-  __$$_ServerTeamCountersCopyWithImpl(
-      _$_ServerTeamCounters _value, $Res Function(_$_ServerTeamCounters) _then)
-      : super(_value, _then);
+class __$ServerTeamCountersCopyWithImpl<$Res>
+    extends _$ServerTeamCountersCopyWithImpl<$Res>
+    implements _$ServerTeamCountersCopyWith<$Res> {
+  __$ServerTeamCountersCopyWithImpl(
+      _ServerTeamCounters _value, $Res Function(_ServerTeamCounters) _then)
+      : super(_value, (v) => _then(v as _ServerTeamCounters));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _ServerTeamCounters get _value => super._value as _ServerTeamCounters;
+
   @override
   $Res call({
-    Object? params = null,
-    Object? name = null,
+    Object? params = freezed,
+    Object? name = freezed,
     Object? confirmId = freezed,
   }) {
-    return _then(_$_ServerTeamCounters(
-      params: null == params
+    return _then(_ServerTeamCounters(
+      params: params == freezed
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ServerTeamCountersParams,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: freezed == confirmId
+      confirmId: confirmId == freezed
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -154,18 +173,19 @@ class _$_ServerTeamCounters implements _ServerTeamCounters {
   factory _$_ServerTeamCounters.fromJson(Map<String, dynamic> json) =>
       _$$_ServerTeamCountersFromJson(json);
 
-  /// .
   @override
+
+  /// .
   @JsonKey(name: 'params')
   final ServerTeamCountersParams params;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'event')
   final String name;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'confirm_id')
   final String? confirmId;
 
@@ -177,41 +197,39 @@ class _$_ServerTeamCounters implements _ServerTeamCounters {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ServerTeamCounters &&
-            (identical(other.params, params) || other.params == params) &&
-            (identical(other.name, name) || other.name == name) &&
+        (other is _ServerTeamCounters &&
+            (identical(other.params, params) ||
+                const DeepCollectionEquality().equals(other.params, params)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
             (identical(other.confirmId, confirmId) ||
-                other.confirmId == confirmId));
+                const DeepCollectionEquality()
+                    .equals(other.confirmId, confirmId)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, params, name, confirmId);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(params) ^
+      const DeepCollectionEquality().hash(name) ^
+      const DeepCollectionEquality().hash(confirmId);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_ServerTeamCountersCopyWith<_$_ServerTeamCounters> get copyWith =>
-      __$$_ServerTeamCountersCopyWithImpl<_$_ServerTeamCounters>(
-          this, _$identity);
+  _$ServerTeamCountersCopyWith<_ServerTeamCounters> get copyWith =>
+      __$ServerTeamCountersCopyWithImpl<_ServerTeamCounters>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ServerTeamCountersToJson(
-      this,
-    );
+    return _$$_ServerTeamCountersToJson(this);
   }
 }
 
 abstract class _ServerTeamCounters implements ServerTeamCounters {
   const factory _ServerTeamCounters(
-      {@JsonKey(name: 'params')
-          required final ServerTeamCountersParams params,
-      @JsonKey(name: 'event')
-          required final String name,
-      @JsonKey(name: 'confirm_id')
-          final String? confirmId}) = _$_ServerTeamCounters;
+      {@JsonKey(name: 'params') required ServerTeamCountersParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerTeamCounters;
 
   factory _ServerTeamCounters.fromJson(Map<String, dynamic> json) =
       _$_ServerTeamCounters.fromJson;
@@ -220,19 +238,19 @@ abstract class _ServerTeamCounters implements ServerTeamCounters {
 
   /// .
   @JsonKey(name: 'params')
-  ServerTeamCountersParams get params;
+  ServerTeamCountersParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String? get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ServerTeamCountersCopyWith<_$_ServerTeamCounters> get copyWith =>
+  _$ServerTeamCountersCopyWith<_ServerTeamCounters> get copyWith =>
       throw _privateConstructorUsedError;
 }

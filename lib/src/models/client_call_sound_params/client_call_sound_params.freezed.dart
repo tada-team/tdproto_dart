@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'client_call_sound_params.dart';
@@ -12,12 +11,33 @@ part of 'client_call_sound_params.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ClientCallSoundParams _$ClientCallSoundParamsFromJson(
     Map<String, dynamic> json) {
   return _ClientCallSoundParams.fromJson(json);
 }
+
+/// @nodoc
+class _$ClientCallSoundParamsTearOff {
+  const _$ClientCallSoundParamsTearOff();
+
+  _ClientCallSoundParams call(
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'muted') required bool muted}) {
+    return _ClientCallSoundParams(
+      jid: jid,
+      muted: muted,
+    );
+  }
+
+  ClientCallSoundParams fromJson(Map<String, Object> json) {
+    return ClientCallSoundParams.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $ClientCallSoundParams = _$ClientCallSoundParamsTearOff();
 
 /// @nodoc
 mixin _$ClientCallSoundParams {
@@ -39,74 +59,71 @@ mixin _$ClientCallSoundParams {
 abstract class $ClientCallSoundParamsCopyWith<$Res> {
   factory $ClientCallSoundParamsCopyWith(ClientCallSoundParams value,
           $Res Function(ClientCallSoundParams) then) =
-      _$ClientCallSoundParamsCopyWithImpl<$Res, ClientCallSoundParams>;
-  @useResult
+      _$ClientCallSoundParamsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'jid') String jid, @JsonKey(name: 'muted') bool muted});
 }
 
 /// @nodoc
-class _$ClientCallSoundParamsCopyWithImpl<$Res,
-        $Val extends ClientCallSoundParams>
+class _$ClientCallSoundParamsCopyWithImpl<$Res>
     implements $ClientCallSoundParamsCopyWith<$Res> {
   _$ClientCallSoundParamsCopyWithImpl(this._value, this._then);
 
+  final ClientCallSoundParams _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(ClientCallSoundParams) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? jid = null,
-    Object? muted = null,
+    Object? jid = freezed,
+    Object? muted = freezed,
   }) {
     return _then(_value.copyWith(
-      jid: null == jid
+      jid: jid == freezed
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      muted: null == muted
+      muted: muted == freezed
           ? _value.muted
           : muted // ignore: cast_nullable_to_non_nullable
               as bool,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_ClientCallSoundParamsCopyWith<$Res>
+abstract class _$ClientCallSoundParamsCopyWith<$Res>
     implements $ClientCallSoundParamsCopyWith<$Res> {
-  factory _$$_ClientCallSoundParamsCopyWith(_$_ClientCallSoundParams value,
-          $Res Function(_$_ClientCallSoundParams) then) =
-      __$$_ClientCallSoundParamsCopyWithImpl<$Res>;
+  factory _$ClientCallSoundParamsCopyWith(_ClientCallSoundParams value,
+          $Res Function(_ClientCallSoundParams) then) =
+      __$ClientCallSoundParamsCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'jid') String jid, @JsonKey(name: 'muted') bool muted});
 }
 
 /// @nodoc
-class __$$_ClientCallSoundParamsCopyWithImpl<$Res>
-    extends _$ClientCallSoundParamsCopyWithImpl<$Res, _$_ClientCallSoundParams>
-    implements _$$_ClientCallSoundParamsCopyWith<$Res> {
-  __$$_ClientCallSoundParamsCopyWithImpl(_$_ClientCallSoundParams _value,
-      $Res Function(_$_ClientCallSoundParams) _then)
-      : super(_value, _then);
+class __$ClientCallSoundParamsCopyWithImpl<$Res>
+    extends _$ClientCallSoundParamsCopyWithImpl<$Res>
+    implements _$ClientCallSoundParamsCopyWith<$Res> {
+  __$ClientCallSoundParamsCopyWithImpl(_ClientCallSoundParams _value,
+      $Res Function(_ClientCallSoundParams) _then)
+      : super(_value, (v) => _then(v as _ClientCallSoundParams));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _ClientCallSoundParams get _value => super._value as _ClientCallSoundParams;
+
   @override
   $Res call({
-    Object? jid = null,
-    Object? muted = null,
+    Object? jid = freezed,
+    Object? muted = freezed,
   }) {
-    return _then(_$_ClientCallSoundParams(
-      jid: null == jid
+    return _then(_ClientCallSoundParams(
+      jid: jid == freezed
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
-      muted: null == muted
+      muted: muted == freezed
           ? _value.muted
           : muted // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -124,13 +141,14 @@ class _$_ClientCallSoundParams implements _ClientCallSoundParams {
   factory _$_ClientCallSoundParams.fromJson(Map<String, dynamic> json) =>
       _$$_ClientCallSoundParamsFromJson(json);
 
-  /// Chat or contact id.
   @override
+
+  /// Chat or contact id.
   @JsonKey(name: 'jid')
   final String jid;
+  @override
 
   /// Mute state.
-  @override
   @JsonKey(name: 'muted')
   final bool muted;
 
@@ -142,36 +160,35 @@ class _$_ClientCallSoundParams implements _ClientCallSoundParams {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ClientCallSoundParams &&
-            (identical(other.jid, jid) || other.jid == jid) &&
-            (identical(other.muted, muted) || other.muted == muted));
+        (other is _ClientCallSoundParams &&
+            (identical(other.jid, jid) ||
+                const DeepCollectionEquality().equals(other.jid, jid)) &&
+            (identical(other.muted, muted) ||
+                const DeepCollectionEquality().equals(other.muted, muted)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, jid, muted);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(jid) ^
+      const DeepCollectionEquality().hash(muted);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_ClientCallSoundParamsCopyWith<_$_ClientCallSoundParams> get copyWith =>
-      __$$_ClientCallSoundParamsCopyWithImpl<_$_ClientCallSoundParams>(
+  _$ClientCallSoundParamsCopyWith<_ClientCallSoundParams> get copyWith =>
+      __$ClientCallSoundParamsCopyWithImpl<_ClientCallSoundParams>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ClientCallSoundParamsToJson(
-      this,
-    );
+    return _$$_ClientCallSoundParamsToJson(this);
   }
 }
 
 abstract class _ClientCallSoundParams implements ClientCallSoundParams {
   const factory _ClientCallSoundParams(
-          {@JsonKey(name: 'jid') required final String jid,
-          @JsonKey(name: 'muted') required final bool muted}) =
-      _$_ClientCallSoundParams;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'muted') required bool muted}) = _$_ClientCallSoundParams;
 
   factory _ClientCallSoundParams.fromJson(Map<String, dynamic> json) =
       _$_ClientCallSoundParams.fromJson;
@@ -180,14 +197,14 @@ abstract class _ClientCallSoundParams implements ClientCallSoundParams {
 
   /// Chat or contact id.
   @JsonKey(name: 'jid')
-  String get jid;
+  String get jid => throw _privateConstructorUsedError;
   @override
 
   /// Mute state.
   @JsonKey(name: 'muted')
-  bool get muted;
+  bool get muted => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ClientCallSoundParamsCopyWith<_$_ClientCallSoundParams> get copyWith =>
+  _$ClientCallSoundParamsCopyWith<_ClientCallSoundParams> get copyWith =>
       throw _privateConstructorUsedError;
 }

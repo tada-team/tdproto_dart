@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'activate_workplaces_on_personal_account_response.dart';
@@ -12,13 +11,34 @@ part of 'activate_workplaces_on_personal_account_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ActivateWorkplacesOnPersonalAccountResponse
     _$ActivateWorkplacesOnPersonalAccountResponseFromJson(
         Map<String, dynamic> json) {
   return _ActivateWorkplacesOnPersonalAccountResponse.fromJson(json);
 }
+
+/// @nodoc
+class _$ActivateWorkplacesOnPersonalAccountResponseTearOff {
+  const _$ActivateWorkplacesOnPersonalAccountResponseTearOff();
+
+  _ActivateWorkplacesOnPersonalAccountResponse call(
+      {@JsonKey(name: 'success') bool? success}) {
+    return _ActivateWorkplacesOnPersonalAccountResponse(
+      success: success,
+    );
+  }
+
+  ActivateWorkplacesOnPersonalAccountResponse fromJson(
+      Map<String, Object> json) {
+    return ActivateWorkplacesOnPersonalAccountResponse.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $ActivateWorkplacesOnPersonalAccountResponse =
+    _$ActivateWorkplacesOnPersonalAccountResponseTearOff();
 
 /// @nodoc
 mixin _$ActivateWorkplacesOnPersonalAccountResponse {
@@ -38,67 +58,64 @@ abstract class $ActivateWorkplacesOnPersonalAccountResponseCopyWith<$Res> {
   factory $ActivateWorkplacesOnPersonalAccountResponseCopyWith(
           ActivateWorkplacesOnPersonalAccountResponse value,
           $Res Function(ActivateWorkplacesOnPersonalAccountResponse) then) =
-      _$ActivateWorkplacesOnPersonalAccountResponseCopyWithImpl<$Res,
-          ActivateWorkplacesOnPersonalAccountResponse>;
-  @useResult
+      _$ActivateWorkplacesOnPersonalAccountResponseCopyWithImpl<$Res>;
   $Res call({@JsonKey(name: 'success') bool? success});
 }
 
 /// @nodoc
-class _$ActivateWorkplacesOnPersonalAccountResponseCopyWithImpl<$Res,
-        $Val extends ActivateWorkplacesOnPersonalAccountResponse>
+class _$ActivateWorkplacesOnPersonalAccountResponseCopyWithImpl<$Res>
     implements $ActivateWorkplacesOnPersonalAccountResponseCopyWith<$Res> {
   _$ActivateWorkplacesOnPersonalAccountResponseCopyWithImpl(
       this._value, this._then);
 
+  final ActivateWorkplacesOnPersonalAccountResponse _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(ActivateWorkplacesOnPersonalAccountResponse) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? success = freezed,
   }) {
     return _then(_value.copyWith(
-      success: freezed == success
+      success: success == freezed
           ? _value.success
           : success // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_ActivateWorkplacesOnPersonalAccountResponseCopyWith<$Res>
+abstract class _$ActivateWorkplacesOnPersonalAccountResponseCopyWith<$Res>
     implements $ActivateWorkplacesOnPersonalAccountResponseCopyWith<$Res> {
-  factory _$$_ActivateWorkplacesOnPersonalAccountResponseCopyWith(
-          _$_ActivateWorkplacesOnPersonalAccountResponse value,
-          $Res Function(_$_ActivateWorkplacesOnPersonalAccountResponse) then) =
-      __$$_ActivateWorkplacesOnPersonalAccountResponseCopyWithImpl<$Res>;
+  factory _$ActivateWorkplacesOnPersonalAccountResponseCopyWith(
+          _ActivateWorkplacesOnPersonalAccountResponse value,
+          $Res Function(_ActivateWorkplacesOnPersonalAccountResponse) then) =
+      __$ActivateWorkplacesOnPersonalAccountResponseCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call({@JsonKey(name: 'success') bool? success});
 }
 
 /// @nodoc
-class __$$_ActivateWorkplacesOnPersonalAccountResponseCopyWithImpl<$Res>
-    extends _$ActivateWorkplacesOnPersonalAccountResponseCopyWithImpl<$Res,
-        _$_ActivateWorkplacesOnPersonalAccountResponse>
-    implements _$$_ActivateWorkplacesOnPersonalAccountResponseCopyWith<$Res> {
-  __$$_ActivateWorkplacesOnPersonalAccountResponseCopyWithImpl(
-      _$_ActivateWorkplacesOnPersonalAccountResponse _value,
-      $Res Function(_$_ActivateWorkplacesOnPersonalAccountResponse) _then)
-      : super(_value, _then);
+class __$ActivateWorkplacesOnPersonalAccountResponseCopyWithImpl<$Res>
+    extends _$ActivateWorkplacesOnPersonalAccountResponseCopyWithImpl<$Res>
+    implements _$ActivateWorkplacesOnPersonalAccountResponseCopyWith<$Res> {
+  __$ActivateWorkplacesOnPersonalAccountResponseCopyWithImpl(
+      _ActivateWorkplacesOnPersonalAccountResponse _value,
+      $Res Function(_ActivateWorkplacesOnPersonalAccountResponse) _then)
+      : super(_value,
+            (v) => _then(v as _ActivateWorkplacesOnPersonalAccountResponse));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _ActivateWorkplacesOnPersonalAccountResponse get _value =>
+      super._value as _ActivateWorkplacesOnPersonalAccountResponse;
+
   @override
   $Res call({
     Object? success = freezed,
   }) {
-    return _then(_$_ActivateWorkplacesOnPersonalAccountResponse(
-      success: freezed == success
+    return _then(_ActivateWorkplacesOnPersonalAccountResponse(
+      success: success == freezed
           ? _value.success
           : success // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -117,8 +134,9 @@ class _$_ActivateWorkplacesOnPersonalAccountResponse
           Map<String, dynamic> json) =>
       _$$_ActivateWorkplacesOnPersonalAccountResponseFromJson(json);
 
-  /// .
   @override
+
+  /// .
   @JsonKey(name: 'success')
   final bool? success;
 
@@ -130,36 +148,33 @@ class _$_ActivateWorkplacesOnPersonalAccountResponse
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ActivateWorkplacesOnPersonalAccountResponse &&
-            (identical(other.success, success) || other.success == success));
+        (other is _ActivateWorkplacesOnPersonalAccountResponse &&
+            (identical(other.success, success) ||
+                const DeepCollectionEquality().equals(other.success, success)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, success);
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(success);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_ActivateWorkplacesOnPersonalAccountResponseCopyWith<
-          _$_ActivateWorkplacesOnPersonalAccountResponse>
+  _$ActivateWorkplacesOnPersonalAccountResponseCopyWith<
+          _ActivateWorkplacesOnPersonalAccountResponse>
       get copyWith =>
-          __$$_ActivateWorkplacesOnPersonalAccountResponseCopyWithImpl<
-              _$_ActivateWorkplacesOnPersonalAccountResponse>(this, _$identity);
+          __$ActivateWorkplacesOnPersonalAccountResponseCopyWithImpl<
+              _ActivateWorkplacesOnPersonalAccountResponse>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ActivateWorkplacesOnPersonalAccountResponseToJson(
-      this,
-    );
+    return _$$_ActivateWorkplacesOnPersonalAccountResponseToJson(this);
   }
 }
 
 abstract class _ActivateWorkplacesOnPersonalAccountResponse
     implements ActivateWorkplacesOnPersonalAccountResponse {
   const factory _ActivateWorkplacesOnPersonalAccountResponse(
-          {@JsonKey(name: 'success') final bool? success}) =
+          {@JsonKey(name: 'success') bool? success}) =
       _$_ActivateWorkplacesOnPersonalAccountResponse;
 
   factory _ActivateWorkplacesOnPersonalAccountResponse.fromJson(
@@ -170,10 +185,10 @@ abstract class _ActivateWorkplacesOnPersonalAccountResponse
 
   /// .
   @JsonKey(name: 'success')
-  bool? get success;
+  bool? get success => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ActivateWorkplacesOnPersonalAccountResponseCopyWith<
-          _$_ActivateWorkplacesOnPersonalAccountResponse>
+  _$ActivateWorkplacesOnPersonalAccountResponseCopyWith<
+          _ActivateWorkplacesOnPersonalAccountResponse>
       get copyWith => throw _privateConstructorUsedError;
 }

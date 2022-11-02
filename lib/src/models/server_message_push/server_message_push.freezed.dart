@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_message_push.dart';
@@ -12,11 +11,34 @@ part of 'server_message_push.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ServerMessagePush _$ServerMessagePushFromJson(Map<String, dynamic> json) {
   return _ServerMessagePush.fromJson(json);
 }
+
+/// @nodoc
+class _$ServerMessagePushTearOff {
+  const _$ServerMessagePushTearOff();
+
+  _ServerMessagePush call(
+      {@JsonKey(name: 'params') required MessagePush params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
+    return _ServerMessagePush(
+      params: params,
+      name: name,
+      confirmId: confirmId,
+    );
+  }
+
+  ServerMessagePush fromJson(Map<String, Object> json) {
+    return ServerMessagePush.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $ServerMessagePush = _$ServerMessagePushTearOff();
 
 /// @nodoc
 mixin _$ServerMessagePush {
@@ -42,8 +64,7 @@ mixin _$ServerMessagePush {
 abstract class $ServerMessagePushCopyWith<$Res> {
   factory $ServerMessagePushCopyWith(
           ServerMessagePush value, $Res Function(ServerMessagePush) then) =
-      _$ServerMessagePushCopyWithImpl<$Res, ServerMessagePush>;
-  @useResult
+      _$ServerMessagePushCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'params') MessagePush params,
       @JsonKey(name: 'event') String name,
@@ -53,55 +74,51 @@ abstract class $ServerMessagePushCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ServerMessagePushCopyWithImpl<$Res, $Val extends ServerMessagePush>
+class _$ServerMessagePushCopyWithImpl<$Res>
     implements $ServerMessagePushCopyWith<$Res> {
   _$ServerMessagePushCopyWithImpl(this._value, this._then);
 
+  final ServerMessagePush _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(ServerMessagePush) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? params = null,
-    Object? name = null,
+    Object? params = freezed,
+    Object? name = freezed,
     Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: null == params
+      params: params == freezed
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as MessagePush,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: freezed == confirmId
+      confirmId: confirmId == freezed
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
-    ) as $Val);
+    ));
   }
 
   @override
-  @pragma('vm:prefer-inline')
   $MessagePushCopyWith<$Res> get params {
     return $MessagePushCopyWith<$Res>(_value.params, (value) {
-      return _then(_value.copyWith(params: value) as $Val);
+      return _then(_value.copyWith(params: value));
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_ServerMessagePushCopyWith<$Res>
+abstract class _$ServerMessagePushCopyWith<$Res>
     implements $ServerMessagePushCopyWith<$Res> {
-  factory _$$_ServerMessagePushCopyWith(_$_ServerMessagePush value,
-          $Res Function(_$_ServerMessagePush) then) =
-      __$$_ServerMessagePushCopyWithImpl<$Res>;
+  factory _$ServerMessagePushCopyWith(
+          _ServerMessagePush value, $Res Function(_ServerMessagePush) then) =
+      __$ServerMessagePushCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'params') MessagePush params,
       @JsonKey(name: 'event') String name,
@@ -112,30 +129,32 @@ abstract class _$$_ServerMessagePushCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ServerMessagePushCopyWithImpl<$Res>
-    extends _$ServerMessagePushCopyWithImpl<$Res, _$_ServerMessagePush>
-    implements _$$_ServerMessagePushCopyWith<$Res> {
-  __$$_ServerMessagePushCopyWithImpl(
-      _$_ServerMessagePush _value, $Res Function(_$_ServerMessagePush) _then)
-      : super(_value, _then);
+class __$ServerMessagePushCopyWithImpl<$Res>
+    extends _$ServerMessagePushCopyWithImpl<$Res>
+    implements _$ServerMessagePushCopyWith<$Res> {
+  __$ServerMessagePushCopyWithImpl(
+      _ServerMessagePush _value, $Res Function(_ServerMessagePush) _then)
+      : super(_value, (v) => _then(v as _ServerMessagePush));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _ServerMessagePush get _value => super._value as _ServerMessagePush;
+
   @override
   $Res call({
-    Object? params = null,
-    Object? name = null,
+    Object? params = freezed,
+    Object? name = freezed,
     Object? confirmId = freezed,
   }) {
-    return _then(_$_ServerMessagePush(
-      params: null == params
+    return _then(_ServerMessagePush(
+      params: params == freezed
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as MessagePush,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: freezed == confirmId
+      confirmId: confirmId == freezed
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -154,18 +173,19 @@ class _$_ServerMessagePush implements _ServerMessagePush {
   factory _$_ServerMessagePush.fromJson(Map<String, dynamic> json) =>
       _$$_ServerMessagePushFromJson(json);
 
-  /// .
   @override
+
+  /// .
   @JsonKey(name: 'params')
   final MessagePush params;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'event')
   final String name;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'confirm_id')
   final String? confirmId;
 
@@ -177,39 +197,39 @@ class _$_ServerMessagePush implements _ServerMessagePush {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ServerMessagePush &&
-            (identical(other.params, params) || other.params == params) &&
-            (identical(other.name, name) || other.name == name) &&
+        (other is _ServerMessagePush &&
+            (identical(other.params, params) ||
+                const DeepCollectionEquality().equals(other.params, params)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
             (identical(other.confirmId, confirmId) ||
-                other.confirmId == confirmId));
+                const DeepCollectionEquality()
+                    .equals(other.confirmId, confirmId)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, params, name, confirmId);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(params) ^
+      const DeepCollectionEquality().hash(name) ^
+      const DeepCollectionEquality().hash(confirmId);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_ServerMessagePushCopyWith<_$_ServerMessagePush> get copyWith =>
-      __$$_ServerMessagePushCopyWithImpl<_$_ServerMessagePush>(
-          this, _$identity);
+  _$ServerMessagePushCopyWith<_ServerMessagePush> get copyWith =>
+      __$ServerMessagePushCopyWithImpl<_ServerMessagePush>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ServerMessagePushToJson(
-      this,
-    );
+    return _$$_ServerMessagePushToJson(this);
   }
 }
 
 abstract class _ServerMessagePush implements ServerMessagePush {
   const factory _ServerMessagePush(
-          {@JsonKey(name: 'params') required final MessagePush params,
-          @JsonKey(name: 'event') required final String name,
-          @JsonKey(name: 'confirm_id') final String? confirmId}) =
-      _$_ServerMessagePush;
+      {@JsonKey(name: 'params') required MessagePush params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerMessagePush;
 
   factory _ServerMessagePush.fromJson(Map<String, dynamic> json) =
       _$_ServerMessagePush.fromJson;
@@ -218,19 +238,19 @@ abstract class _ServerMessagePush implements ServerMessagePush {
 
   /// .
   @JsonKey(name: 'params')
-  MessagePush get params;
+  MessagePush get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String? get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ServerMessagePushCopyWith<_$_ServerMessagePush> get copyWith =>
+  _$ServerMessagePushCopyWith<_ServerMessagePush> get copyWith =>
       throw _privateConstructorUsedError;
 }

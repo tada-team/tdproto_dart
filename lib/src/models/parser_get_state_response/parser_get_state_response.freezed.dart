@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'parser_get_state_response.dart';
@@ -12,12 +11,45 @@ part of 'parser_get_state_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ParserGetStateResponse _$ParserGetStateResponseFromJson(
     Map<String, dynamic> json) {
   return _ParserGetStateResponse.fromJson(json);
 }
+
+/// @nodoc
+class _$ParserGetStateResponseTearOff {
+  const _$ParserGetStateResponseTearOff();
+
+  _ParserGetStateResponse call(
+      {@JsonKey(name: 'state') required String state,
+      @JsonKey(name: 'progress') int? progress,
+      @JsonKey(name: 'action') String? action,
+      @JsonKey(name: 'action_type') String? actionType,
+      @JsonKey(name: 'message') String? message,
+      @JsonKey(name: 'body') String? body,
+      @JsonKey(name: 'archive_name') required String archiveName,
+      @JsonKey(name: 'has_error') required bool hasError}) {
+    return _ParserGetStateResponse(
+      state: state,
+      progress: progress,
+      action: action,
+      actionType: actionType,
+      message: message,
+      body: body,
+      archiveName: archiveName,
+      hasError: hasError,
+    );
+  }
+
+  ParserGetStateResponse fromJson(Map<String, Object> json) {
+    return ParserGetStateResponse.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $ParserGetStateResponse = _$ParserGetStateResponseTearOff();
 
 /// @nodoc
 mixin _$ParserGetStateResponse {
@@ -63,8 +95,7 @@ mixin _$ParserGetStateResponse {
 abstract class $ParserGetStateResponseCopyWith<$Res> {
   factory $ParserGetStateResponseCopyWith(ParserGetStateResponse value,
           $Res Function(ParserGetStateResponse) then) =
-      _$ParserGetStateResponseCopyWithImpl<$Res, ParserGetStateResponse>;
-  @useResult
+      _$ParserGetStateResponseCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'state') String state,
       @JsonKey(name: 'progress') int? progress,
@@ -77,73 +108,69 @@ abstract class $ParserGetStateResponseCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ParserGetStateResponseCopyWithImpl<$Res,
-        $Val extends ParserGetStateResponse>
+class _$ParserGetStateResponseCopyWithImpl<$Res>
     implements $ParserGetStateResponseCopyWith<$Res> {
   _$ParserGetStateResponseCopyWithImpl(this._value, this._then);
 
+  final ParserGetStateResponse _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(ParserGetStateResponse) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? state = null,
+    Object? state = freezed,
     Object? progress = freezed,
     Object? action = freezed,
     Object? actionType = freezed,
     Object? message = freezed,
     Object? body = freezed,
-    Object? archiveName = null,
-    Object? hasError = null,
+    Object? archiveName = freezed,
+    Object? hasError = freezed,
   }) {
     return _then(_value.copyWith(
-      state: null == state
+      state: state == freezed
           ? _value.state
           : state // ignore: cast_nullable_to_non_nullable
               as String,
-      progress: freezed == progress
+      progress: progress == freezed
           ? _value.progress
           : progress // ignore: cast_nullable_to_non_nullable
               as int?,
-      action: freezed == action
+      action: action == freezed
           ? _value.action
           : action // ignore: cast_nullable_to_non_nullable
               as String?,
-      actionType: freezed == actionType
+      actionType: actionType == freezed
           ? _value.actionType
           : actionType // ignore: cast_nullable_to_non_nullable
               as String?,
-      message: freezed == message
+      message: message == freezed
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
               as String?,
-      body: freezed == body
+      body: body == freezed
           ? _value.body
           : body // ignore: cast_nullable_to_non_nullable
               as String?,
-      archiveName: null == archiveName
+      archiveName: archiveName == freezed
           ? _value.archiveName
           : archiveName // ignore: cast_nullable_to_non_nullable
               as String,
-      hasError: null == hasError
+      hasError: hasError == freezed
           ? _value.hasError
           : hasError // ignore: cast_nullable_to_non_nullable
               as bool,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_ParserGetStateResponseCopyWith<$Res>
+abstract class _$ParserGetStateResponseCopyWith<$Res>
     implements $ParserGetStateResponseCopyWith<$Res> {
-  factory _$$_ParserGetStateResponseCopyWith(_$_ParserGetStateResponse value,
-          $Res Function(_$_ParserGetStateResponse) then) =
-      __$$_ParserGetStateResponseCopyWithImpl<$Res>;
+  factory _$ParserGetStateResponseCopyWith(_ParserGetStateResponse value,
+          $Res Function(_ParserGetStateResponse) then) =
+      __$ParserGetStateResponseCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'state') String state,
       @JsonKey(name: 'progress') int? progress,
@@ -156,56 +183,57 @@ abstract class _$$_ParserGetStateResponseCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ParserGetStateResponseCopyWithImpl<$Res>
-    extends _$ParserGetStateResponseCopyWithImpl<$Res,
-        _$_ParserGetStateResponse>
-    implements _$$_ParserGetStateResponseCopyWith<$Res> {
-  __$$_ParserGetStateResponseCopyWithImpl(_$_ParserGetStateResponse _value,
-      $Res Function(_$_ParserGetStateResponse) _then)
-      : super(_value, _then);
+class __$ParserGetStateResponseCopyWithImpl<$Res>
+    extends _$ParserGetStateResponseCopyWithImpl<$Res>
+    implements _$ParserGetStateResponseCopyWith<$Res> {
+  __$ParserGetStateResponseCopyWithImpl(_ParserGetStateResponse _value,
+      $Res Function(_ParserGetStateResponse) _then)
+      : super(_value, (v) => _then(v as _ParserGetStateResponse));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _ParserGetStateResponse get _value => super._value as _ParserGetStateResponse;
+
   @override
   $Res call({
-    Object? state = null,
+    Object? state = freezed,
     Object? progress = freezed,
     Object? action = freezed,
     Object? actionType = freezed,
     Object? message = freezed,
     Object? body = freezed,
-    Object? archiveName = null,
-    Object? hasError = null,
+    Object? archiveName = freezed,
+    Object? hasError = freezed,
   }) {
-    return _then(_$_ParserGetStateResponse(
-      state: null == state
+    return _then(_ParserGetStateResponse(
+      state: state == freezed
           ? _value.state
           : state // ignore: cast_nullable_to_non_nullable
               as String,
-      progress: freezed == progress
+      progress: progress == freezed
           ? _value.progress
           : progress // ignore: cast_nullable_to_non_nullable
               as int?,
-      action: freezed == action
+      action: action == freezed
           ? _value.action
           : action // ignore: cast_nullable_to_non_nullable
               as String?,
-      actionType: freezed == actionType
+      actionType: actionType == freezed
           ? _value.actionType
           : actionType // ignore: cast_nullable_to_non_nullable
               as String?,
-      message: freezed == message
+      message: message == freezed
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
               as String?,
-      body: freezed == body
+      body: body == freezed
           ? _value.body
           : body // ignore: cast_nullable_to_non_nullable
               as String?,
-      archiveName: null == archiveName
+      archiveName: archiveName == freezed
           ? _value.archiveName
           : archiveName // ignore: cast_nullable_to_non_nullable
               as String,
-      hasError: null == hasError
+      hasError: hasError == freezed
           ? _value.hasError
           : hasError // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -229,43 +257,44 @@ class _$_ParserGetStateResponse implements _ParserGetStateResponse {
   factory _$_ParserGetStateResponse.fromJson(Map<String, dynamic> json) =>
       _$$_ParserGetStateResponseFromJson(json);
 
-  /// State of import chats.
   @override
+
+  /// State of import chats.
   @JsonKey(name: 'state')
   final String state;
+  @override
 
   /// Progress of archive unpacking.
-  @override
   @JsonKey(name: 'progress')
   final int? progress;
+  @override
 
   /// Action name.
-  @override
   @JsonKey(name: 'action')
   final String? action;
+  @override
 
   /// ActionType. Ex: [archive_unpacking || generate_chats].
-  @override
   @JsonKey(name: 'action_type')
   final String? actionType;
+  @override
 
   /// Localized Message.
-  @override
   @JsonKey(name: 'message')
   final String? message;
+  @override
 
   /// Localized Body.
-  @override
   @JsonKey(name: 'body')
   final String? body;
+  @override
 
   /// ArchiveName name of archive.
-  @override
   @JsonKey(name: 'archive_name')
   final String archiveName;
+  @override
 
   /// Has error.
-  @override
   @JsonKey(name: 'has_error')
   final bool hasError;
 
@@ -277,52 +306,64 @@ class _$_ParserGetStateResponse implements _ParserGetStateResponse {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ParserGetStateResponse &&
-            (identical(other.state, state) || other.state == state) &&
+        (other is _ParserGetStateResponse &&
+            (identical(other.state, state) ||
+                const DeepCollectionEquality().equals(other.state, state)) &&
             (identical(other.progress, progress) ||
-                other.progress == progress) &&
-            (identical(other.action, action) || other.action == action) &&
+                const DeepCollectionEquality()
+                    .equals(other.progress, progress)) &&
+            (identical(other.action, action) ||
+                const DeepCollectionEquality().equals(other.action, action)) &&
             (identical(other.actionType, actionType) ||
-                other.actionType == actionType) &&
-            (identical(other.message, message) || other.message == message) &&
-            (identical(other.body, body) || other.body == body) &&
+                const DeepCollectionEquality()
+                    .equals(other.actionType, actionType)) &&
+            (identical(other.message, message) ||
+                const DeepCollectionEquality()
+                    .equals(other.message, message)) &&
+            (identical(other.body, body) ||
+                const DeepCollectionEquality().equals(other.body, body)) &&
             (identical(other.archiveName, archiveName) ||
-                other.archiveName == archiveName) &&
+                const DeepCollectionEquality()
+                    .equals(other.archiveName, archiveName)) &&
             (identical(other.hasError, hasError) ||
-                other.hasError == hasError));
+                const DeepCollectionEquality()
+                    .equals(other.hasError, hasError)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, state, progress, action,
-      actionType, message, body, archiveName, hasError);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(state) ^
+      const DeepCollectionEquality().hash(progress) ^
+      const DeepCollectionEquality().hash(action) ^
+      const DeepCollectionEquality().hash(actionType) ^
+      const DeepCollectionEquality().hash(message) ^
+      const DeepCollectionEquality().hash(body) ^
+      const DeepCollectionEquality().hash(archiveName) ^
+      const DeepCollectionEquality().hash(hasError);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_ParserGetStateResponseCopyWith<_$_ParserGetStateResponse> get copyWith =>
-      __$$_ParserGetStateResponseCopyWithImpl<_$_ParserGetStateResponse>(
+  _$ParserGetStateResponseCopyWith<_ParserGetStateResponse> get copyWith =>
+      __$ParserGetStateResponseCopyWithImpl<_ParserGetStateResponse>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ParserGetStateResponseToJson(
-      this,
-    );
+    return _$$_ParserGetStateResponseToJson(this);
   }
 }
 
 abstract class _ParserGetStateResponse implements ParserGetStateResponse {
   const factory _ParserGetStateResponse(
-          {@JsonKey(name: 'state') required final String state,
-          @JsonKey(name: 'progress') final int? progress,
-          @JsonKey(name: 'action') final String? action,
-          @JsonKey(name: 'action_type') final String? actionType,
-          @JsonKey(name: 'message') final String? message,
-          @JsonKey(name: 'body') final String? body,
-          @JsonKey(name: 'archive_name') required final String archiveName,
-          @JsonKey(name: 'has_error') required final bool hasError}) =
+          {@JsonKey(name: 'state') required String state,
+          @JsonKey(name: 'progress') int? progress,
+          @JsonKey(name: 'action') String? action,
+          @JsonKey(name: 'action_type') String? actionType,
+          @JsonKey(name: 'message') String? message,
+          @JsonKey(name: 'body') String? body,
+          @JsonKey(name: 'archive_name') required String archiveName,
+          @JsonKey(name: 'has_error') required bool hasError}) =
       _$_ParserGetStateResponse;
 
   factory _ParserGetStateResponse.fromJson(Map<String, dynamic> json) =
@@ -332,44 +373,44 @@ abstract class _ParserGetStateResponse implements ParserGetStateResponse {
 
   /// State of import chats.
   @JsonKey(name: 'state')
-  String get state;
+  String get state => throw _privateConstructorUsedError;
   @override
 
   /// Progress of archive unpacking.
   @JsonKey(name: 'progress')
-  int? get progress;
+  int? get progress => throw _privateConstructorUsedError;
   @override
 
   /// Action name.
   @JsonKey(name: 'action')
-  String? get action;
+  String? get action => throw _privateConstructorUsedError;
   @override
 
   /// ActionType. Ex: [archive_unpacking || generate_chats].
   @JsonKey(name: 'action_type')
-  String? get actionType;
+  String? get actionType => throw _privateConstructorUsedError;
   @override
 
   /// Localized Message.
   @JsonKey(name: 'message')
-  String? get message;
+  String? get message => throw _privateConstructorUsedError;
   @override
 
   /// Localized Body.
   @JsonKey(name: 'body')
-  String? get body;
+  String? get body => throw _privateConstructorUsedError;
   @override
 
   /// ArchiveName name of archive.
   @JsonKey(name: 'archive_name')
-  String get archiveName;
+  String get archiveName => throw _privateConstructorUsedError;
   @override
 
   /// Has error.
   @JsonKey(name: 'has_error')
-  bool get hasError;
+  bool get hasError => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ParserGetStateResponseCopyWith<_$_ParserGetStateResponse> get copyWith =>
+  _$ParserGetStateResponseCopyWith<_ParserGetStateResponse> get copyWith =>
       throw _privateConstructorUsedError;
 }

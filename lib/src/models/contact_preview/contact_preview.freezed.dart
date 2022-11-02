@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'contact_preview.dart';
@@ -12,11 +11,42 @@ part of 'contact_preview.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ContactPreview _$ContactPreviewFromJson(Map<String, dynamic> json) {
   return _ContactPreview.fromJson(json);
 }
+
+/// @nodoc
+class _$ContactPreviewTearOff {
+  const _$ContactPreviewTearOff();
+
+  _ContactPreview call(
+      {@JsonKey(name: '_error') String? error,
+      @JsonKey(name: 'phone') required String phone,
+      @JsonKey(name: 'given_name') required String givenName,
+      @JsonKey(name: 'family_name') required String familyName,
+      @JsonKey(name: 'patronymic') String? patronymic,
+      @JsonKey(name: 'role') required String role,
+      @JsonKey(name: 'section') required String section}) {
+    return _ContactPreview(
+      error: error,
+      phone: phone,
+      givenName: givenName,
+      familyName: familyName,
+      patronymic: patronymic,
+      role: role,
+      section: section,
+    );
+  }
+
+  ContactPreview fromJson(Map<String, Object> json) {
+    return ContactPreview.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $ContactPreview = _$ContactPreviewTearOff();
 
 /// @nodoc
 mixin _$ContactPreview {
@@ -58,8 +88,7 @@ mixin _$ContactPreview {
 abstract class $ContactPreviewCopyWith<$Res> {
   factory $ContactPreviewCopyWith(
           ContactPreview value, $Res Function(ContactPreview) then) =
-      _$ContactPreviewCopyWithImpl<$Res, ContactPreview>;
-  @useResult
+      _$ContactPreviewCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: '_error') String? error,
       @JsonKey(name: 'phone') String phone,
@@ -71,67 +100,64 @@ abstract class $ContactPreviewCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ContactPreviewCopyWithImpl<$Res, $Val extends ContactPreview>
+class _$ContactPreviewCopyWithImpl<$Res>
     implements $ContactPreviewCopyWith<$Res> {
   _$ContactPreviewCopyWithImpl(this._value, this._then);
 
+  final ContactPreview _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(ContactPreview) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? error = freezed,
-    Object? phone = null,
-    Object? givenName = null,
-    Object? familyName = null,
+    Object? phone = freezed,
+    Object? givenName = freezed,
+    Object? familyName = freezed,
     Object? patronymic = freezed,
-    Object? role = null,
-    Object? section = null,
+    Object? role = freezed,
+    Object? section = freezed,
   }) {
     return _then(_value.copyWith(
-      error: freezed == error
+      error: error == freezed
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as String?,
-      phone: null == phone
+      phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as String,
-      givenName: null == givenName
+      givenName: givenName == freezed
           ? _value.givenName
           : givenName // ignore: cast_nullable_to_non_nullable
               as String,
-      familyName: null == familyName
+      familyName: familyName == freezed
           ? _value.familyName
           : familyName // ignore: cast_nullable_to_non_nullable
               as String,
-      patronymic: freezed == patronymic
+      patronymic: patronymic == freezed
           ? _value.patronymic
           : patronymic // ignore: cast_nullable_to_non_nullable
               as String?,
-      role: null == role
+      role: role == freezed
           ? _value.role
           : role // ignore: cast_nullable_to_non_nullable
               as String,
-      section: null == section
+      section: section == freezed
           ? _value.section
           : section // ignore: cast_nullable_to_non_nullable
               as String,
-    ) as $Val);
+    ));
   }
 }
 
 /// @nodoc
-abstract class _$$_ContactPreviewCopyWith<$Res>
+abstract class _$ContactPreviewCopyWith<$Res>
     implements $ContactPreviewCopyWith<$Res> {
-  factory _$$_ContactPreviewCopyWith(
-          _$_ContactPreview value, $Res Function(_$_ContactPreview) then) =
-      __$$_ContactPreviewCopyWithImpl<$Res>;
+  factory _$ContactPreviewCopyWith(
+          _ContactPreview value, $Res Function(_ContactPreview) then) =
+      __$ContactPreviewCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: '_error') String? error,
       @JsonKey(name: 'phone') String phone,
@@ -143,50 +169,52 @@ abstract class _$$_ContactPreviewCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ContactPreviewCopyWithImpl<$Res>
-    extends _$ContactPreviewCopyWithImpl<$Res, _$_ContactPreview>
-    implements _$$_ContactPreviewCopyWith<$Res> {
-  __$$_ContactPreviewCopyWithImpl(
-      _$_ContactPreview _value, $Res Function(_$_ContactPreview) _then)
-      : super(_value, _then);
+class __$ContactPreviewCopyWithImpl<$Res>
+    extends _$ContactPreviewCopyWithImpl<$Res>
+    implements _$ContactPreviewCopyWith<$Res> {
+  __$ContactPreviewCopyWithImpl(
+      _ContactPreview _value, $Res Function(_ContactPreview) _then)
+      : super(_value, (v) => _then(v as _ContactPreview));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _ContactPreview get _value => super._value as _ContactPreview;
+
   @override
   $Res call({
     Object? error = freezed,
-    Object? phone = null,
-    Object? givenName = null,
-    Object? familyName = null,
+    Object? phone = freezed,
+    Object? givenName = freezed,
+    Object? familyName = freezed,
     Object? patronymic = freezed,
-    Object? role = null,
-    Object? section = null,
+    Object? role = freezed,
+    Object? section = freezed,
   }) {
-    return _then(_$_ContactPreview(
-      error: freezed == error
+    return _then(_ContactPreview(
+      error: error == freezed
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as String?,
-      phone: null == phone
+      phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as String,
-      givenName: null == givenName
+      givenName: givenName == freezed
           ? _value.givenName
           : givenName // ignore: cast_nullable_to_non_nullable
               as String,
-      familyName: null == familyName
+      familyName: familyName == freezed
           ? _value.familyName
           : familyName // ignore: cast_nullable_to_non_nullable
               as String,
-      patronymic: freezed == patronymic
+      patronymic: patronymic == freezed
           ? _value.patronymic
           : patronymic // ignore: cast_nullable_to_non_nullable
               as String?,
-      role: null == role
+      role: role == freezed
           ? _value.role
           : role // ignore: cast_nullable_to_non_nullable
               as String,
-      section: null == section
+      section: section == freezed
           ? _value.section
           : section // ignore: cast_nullable_to_non_nullable
               as String,
@@ -209,38 +237,39 @@ class _$_ContactPreview implements _ContactPreview {
   factory _$_ContactPreview.fromJson(Map<String, dynamic> json) =>
       _$$_ContactPreviewFromJson(json);
 
-  /// .
   @override
+
+  /// .
   @JsonKey(name: '_error')
   final String? error;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'phone')
   final String phone;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'given_name')
   final String givenName;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'family_name')
   final String familyName;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'patronymic')
   final String? patronymic;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'role')
   final String role;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'section')
   final String section;
 
@@ -252,49 +281,57 @@ class _$_ContactPreview implements _ContactPreview {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ContactPreview &&
-            (identical(other.error, error) || other.error == error) &&
-            (identical(other.phone, phone) || other.phone == phone) &&
+        (other is _ContactPreview &&
+            (identical(other.error, error) ||
+                const DeepCollectionEquality().equals(other.error, error)) &&
+            (identical(other.phone, phone) ||
+                const DeepCollectionEquality().equals(other.phone, phone)) &&
             (identical(other.givenName, givenName) ||
-                other.givenName == givenName) &&
+                const DeepCollectionEquality()
+                    .equals(other.givenName, givenName)) &&
             (identical(other.familyName, familyName) ||
-                other.familyName == familyName) &&
+                const DeepCollectionEquality()
+                    .equals(other.familyName, familyName)) &&
             (identical(other.patronymic, patronymic) ||
-                other.patronymic == patronymic) &&
-            (identical(other.role, role) || other.role == role) &&
-            (identical(other.section, section) || other.section == section));
+                const DeepCollectionEquality()
+                    .equals(other.patronymic, patronymic)) &&
+            (identical(other.role, role) ||
+                const DeepCollectionEquality().equals(other.role, role)) &&
+            (identical(other.section, section) ||
+                const DeepCollectionEquality().equals(other.section, section)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, error, phone, givenName,
-      familyName, patronymic, role, section);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(error) ^
+      const DeepCollectionEquality().hash(phone) ^
+      const DeepCollectionEquality().hash(givenName) ^
+      const DeepCollectionEquality().hash(familyName) ^
+      const DeepCollectionEquality().hash(patronymic) ^
+      const DeepCollectionEquality().hash(role) ^
+      const DeepCollectionEquality().hash(section);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_ContactPreviewCopyWith<_$_ContactPreview> get copyWith =>
-      __$$_ContactPreviewCopyWithImpl<_$_ContactPreview>(this, _$identity);
+  _$ContactPreviewCopyWith<_ContactPreview> get copyWith =>
+      __$ContactPreviewCopyWithImpl<_ContactPreview>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ContactPreviewToJson(
-      this,
-    );
+    return _$$_ContactPreviewToJson(this);
   }
 }
 
 abstract class _ContactPreview implements ContactPreview {
   const factory _ContactPreview(
-          {@JsonKey(name: '_error') final String? error,
-          @JsonKey(name: 'phone') required final String phone,
-          @JsonKey(name: 'given_name') required final String givenName,
-          @JsonKey(name: 'family_name') required final String familyName,
-          @JsonKey(name: 'patronymic') final String? patronymic,
-          @JsonKey(name: 'role') required final String role,
-          @JsonKey(name: 'section') required final String section}) =
-      _$_ContactPreview;
+      {@JsonKey(name: '_error') String? error,
+      @JsonKey(name: 'phone') required String phone,
+      @JsonKey(name: 'given_name') required String givenName,
+      @JsonKey(name: 'family_name') required String familyName,
+      @JsonKey(name: 'patronymic') String? patronymic,
+      @JsonKey(name: 'role') required String role,
+      @JsonKey(name: 'section') required String section}) = _$_ContactPreview;
 
   factory _ContactPreview.fromJson(Map<String, dynamic> json) =
       _$_ContactPreview.fromJson;
@@ -303,39 +340,39 @@ abstract class _ContactPreview implements ContactPreview {
 
   /// .
   @JsonKey(name: '_error')
-  String? get error;
+  String? get error => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'phone')
-  String get phone;
+  String get phone => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'given_name')
-  String get givenName;
+  String get givenName => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'family_name')
-  String get familyName;
+  String get familyName => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'patronymic')
-  String? get patronymic;
+  String? get patronymic => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'role')
-  String get role;
+  String get role => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'section')
-  String get section;
+  String get section => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ContactPreviewCopyWith<_$_ContactPreview> get copyWith =>
+  _$ContactPreviewCopyWith<_ContactPreview> get copyWith =>
       throw _privateConstructorUsedError;
 }

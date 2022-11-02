@@ -1,6 +1,5 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'server_call_leave.dart';
@@ -12,11 +11,34 @@ part of 'server_call_leave.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 ServerCallLeave _$ServerCallLeaveFromJson(Map<String, dynamic> json) {
   return _ServerCallLeave.fromJson(json);
 }
+
+/// @nodoc
+class _$ServerCallLeaveTearOff {
+  const _$ServerCallLeaveTearOff();
+
+  _ServerCallLeave call(
+      {@JsonKey(name: 'params') required ServerCallLeaveParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) {
+    return _ServerCallLeave(
+      params: params,
+      name: name,
+      confirmId: confirmId,
+    );
+  }
+
+  ServerCallLeave fromJson(Map<String, Object> json) {
+    return ServerCallLeave.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $ServerCallLeave = _$ServerCallLeaveTearOff();
 
 /// @nodoc
 mixin _$ServerCallLeave {
@@ -42,8 +64,7 @@ mixin _$ServerCallLeave {
 abstract class $ServerCallLeaveCopyWith<$Res> {
   factory $ServerCallLeaveCopyWith(
           ServerCallLeave value, $Res Function(ServerCallLeave) then) =
-      _$ServerCallLeaveCopyWithImpl<$Res, ServerCallLeave>;
-  @useResult
+      _$ServerCallLeaveCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'params') ServerCallLeaveParams params,
       @JsonKey(name: 'event') String name,
@@ -53,55 +74,51 @@ abstract class $ServerCallLeaveCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ServerCallLeaveCopyWithImpl<$Res, $Val extends ServerCallLeave>
+class _$ServerCallLeaveCopyWithImpl<$Res>
     implements $ServerCallLeaveCopyWith<$Res> {
   _$ServerCallLeaveCopyWithImpl(this._value, this._then);
 
+  final ServerCallLeave _value;
   // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final $Res Function(ServerCallLeave) _then;
 
-  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? params = null,
-    Object? name = null,
+    Object? params = freezed,
+    Object? name = freezed,
     Object? confirmId = freezed,
   }) {
     return _then(_value.copyWith(
-      params: null == params
+      params: params == freezed
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ServerCallLeaveParams,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: freezed == confirmId
+      confirmId: confirmId == freezed
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
-    ) as $Val);
+    ));
   }
 
   @override
-  @pragma('vm:prefer-inline')
   $ServerCallLeaveParamsCopyWith<$Res> get params {
     return $ServerCallLeaveParamsCopyWith<$Res>(_value.params, (value) {
-      return _then(_value.copyWith(params: value) as $Val);
+      return _then(_value.copyWith(params: value));
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_ServerCallLeaveCopyWith<$Res>
+abstract class _$ServerCallLeaveCopyWith<$Res>
     implements $ServerCallLeaveCopyWith<$Res> {
-  factory _$$_ServerCallLeaveCopyWith(
-          _$_ServerCallLeave value, $Res Function(_$_ServerCallLeave) then) =
-      __$$_ServerCallLeaveCopyWithImpl<$Res>;
+  factory _$ServerCallLeaveCopyWith(
+          _ServerCallLeave value, $Res Function(_ServerCallLeave) then) =
+      __$ServerCallLeaveCopyWithImpl<$Res>;
   @override
-  @useResult
   $Res call(
       {@JsonKey(name: 'params') ServerCallLeaveParams params,
       @JsonKey(name: 'event') String name,
@@ -112,30 +129,32 @@ abstract class _$$_ServerCallLeaveCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ServerCallLeaveCopyWithImpl<$Res>
-    extends _$ServerCallLeaveCopyWithImpl<$Res, _$_ServerCallLeave>
-    implements _$$_ServerCallLeaveCopyWith<$Res> {
-  __$$_ServerCallLeaveCopyWithImpl(
-      _$_ServerCallLeave _value, $Res Function(_$_ServerCallLeave) _then)
-      : super(_value, _then);
+class __$ServerCallLeaveCopyWithImpl<$Res>
+    extends _$ServerCallLeaveCopyWithImpl<$Res>
+    implements _$ServerCallLeaveCopyWith<$Res> {
+  __$ServerCallLeaveCopyWithImpl(
+      _ServerCallLeave _value, $Res Function(_ServerCallLeave) _then)
+      : super(_value, (v) => _then(v as _ServerCallLeave));
 
-  @pragma('vm:prefer-inline')
+  @override
+  _ServerCallLeave get _value => super._value as _ServerCallLeave;
+
   @override
   $Res call({
-    Object? params = null,
-    Object? name = null,
+    Object? params = freezed,
+    Object? name = freezed,
     Object? confirmId = freezed,
   }) {
-    return _then(_$_ServerCallLeave(
-      params: null == params
+    return _then(_ServerCallLeave(
+      params: params == freezed
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
               as ServerCallLeaveParams,
-      name: null == name
+      name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      confirmId: freezed == confirmId
+      confirmId: confirmId == freezed
           ? _value.confirmId
           : confirmId // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -154,18 +173,19 @@ class _$_ServerCallLeave implements _ServerCallLeave {
   factory _$_ServerCallLeave.fromJson(Map<String, dynamic> json) =>
       _$$_ServerCallLeaveFromJson(json);
 
-  /// .
   @override
+
+  /// .
   @JsonKey(name: 'params')
   final ServerCallLeaveParams params;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'event')
   final String name;
+  @override
 
   /// .
-  @override
   @JsonKey(name: 'confirm_id')
   final String? confirmId;
 
@@ -177,38 +197,39 @@ class _$_ServerCallLeave implements _ServerCallLeave {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ServerCallLeave &&
-            (identical(other.params, params) || other.params == params) &&
-            (identical(other.name, name) || other.name == name) &&
+        (other is _ServerCallLeave &&
+            (identical(other.params, params) ||
+                const DeepCollectionEquality().equals(other.params, params)) &&
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
             (identical(other.confirmId, confirmId) ||
-                other.confirmId == confirmId));
+                const DeepCollectionEquality()
+                    .equals(other.confirmId, confirmId)));
   }
 
-  @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, params, name, confirmId);
+  int get hashCode =>
+      runtimeType.hashCode ^
+      const DeepCollectionEquality().hash(params) ^
+      const DeepCollectionEquality().hash(name) ^
+      const DeepCollectionEquality().hash(confirmId);
 
   @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$_ServerCallLeaveCopyWith<_$_ServerCallLeave> get copyWith =>
-      __$$_ServerCallLeaveCopyWithImpl<_$_ServerCallLeave>(this, _$identity);
+  _$ServerCallLeaveCopyWith<_ServerCallLeave> get copyWith =>
+      __$ServerCallLeaveCopyWithImpl<_ServerCallLeave>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ServerCallLeaveToJson(
-      this,
-    );
+    return _$$_ServerCallLeaveToJson(this);
   }
 }
 
 abstract class _ServerCallLeave implements ServerCallLeave {
   const factory _ServerCallLeave(
-          {@JsonKey(name: 'params') required final ServerCallLeaveParams params,
-          @JsonKey(name: 'event') required final String name,
-          @JsonKey(name: 'confirm_id') final String? confirmId}) =
-      _$_ServerCallLeave;
+      {@JsonKey(name: 'params') required ServerCallLeaveParams params,
+      @JsonKey(name: 'event') required String name,
+      @JsonKey(name: 'confirm_id') String? confirmId}) = _$_ServerCallLeave;
 
   factory _ServerCallLeave.fromJson(Map<String, dynamic> json) =
       _$_ServerCallLeave.fromJson;
@@ -217,19 +238,19 @@ abstract class _ServerCallLeave implements ServerCallLeave {
 
   /// .
   @JsonKey(name: 'params')
-  ServerCallLeaveParams get params;
+  ServerCallLeaveParams get params => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'event')
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'confirm_id')
-  String? get confirmId;
+  String? get confirmId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ServerCallLeaveCopyWith<_$_ServerCallLeave> get copyWith =>
+  _$ServerCallLeaveCopyWith<_ServerCallLeave> get copyWith =>
       throw _privateConstructorUsedError;
 }
