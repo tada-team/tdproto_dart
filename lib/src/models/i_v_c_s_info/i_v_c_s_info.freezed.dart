@@ -23,10 +23,12 @@ class _$IVCSInfoTearOff {
 
   _IVCSInfo call(
       {@JsonKey(name: 'conference_id') String? conferenceID,
-      @JsonKey(name: 'join_token') String? joinToken}) {
+      @JsonKey(name: 'join_token') String? joinToken,
+      @JsonKey(name: 'invite_link') String? inviteLink}) {
     return _IVCSInfo(
       conferenceID: conferenceID,
       joinToken: joinToken,
+      inviteLink: inviteLink,
     );
   }
 
@@ -48,6 +50,10 @@ mixin _$IVCSInfo {
   @JsonKey(name: 'join_token')
   String? get joinToken => throw _privateConstructorUsedError;
 
+  /// .
+  @JsonKey(name: 'invite_link')
+  String? get inviteLink => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $IVCSInfoCopyWith<IVCSInfo> get copyWith =>
@@ -60,7 +66,8 @@ abstract class $IVCSInfoCopyWith<$Res> {
       _$IVCSInfoCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'conference_id') String? conferenceID,
-      @JsonKey(name: 'join_token') String? joinToken});
+      @JsonKey(name: 'join_token') String? joinToken,
+      @JsonKey(name: 'invite_link') String? inviteLink});
 }
 
 /// @nodoc
@@ -75,6 +82,7 @@ class _$IVCSInfoCopyWithImpl<$Res> implements $IVCSInfoCopyWith<$Res> {
   $Res call({
     Object? conferenceID = freezed,
     Object? joinToken = freezed,
+    Object? inviteLink = freezed,
   }) {
     return _then(_value.copyWith(
       conferenceID: conferenceID == freezed
@@ -84,6 +92,10 @@ class _$IVCSInfoCopyWithImpl<$Res> implements $IVCSInfoCopyWith<$Res> {
       joinToken: joinToken == freezed
           ? _value.joinToken
           : joinToken // ignore: cast_nullable_to_non_nullable
+              as String?,
+      inviteLink: inviteLink == freezed
+          ? _value.inviteLink
+          : inviteLink // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
   }
@@ -96,7 +108,8 @@ abstract class _$IVCSInfoCopyWith<$Res> implements $IVCSInfoCopyWith<$Res> {
   @override
   $Res call(
       {@JsonKey(name: 'conference_id') String? conferenceID,
-      @JsonKey(name: 'join_token') String? joinToken});
+      @JsonKey(name: 'join_token') String? joinToken,
+      @JsonKey(name: 'invite_link') String? inviteLink});
 }
 
 /// @nodoc
@@ -112,6 +125,7 @@ class __$IVCSInfoCopyWithImpl<$Res> extends _$IVCSInfoCopyWithImpl<$Res>
   $Res call({
     Object? conferenceID = freezed,
     Object? joinToken = freezed,
+    Object? inviteLink = freezed,
   }) {
     return _then(_IVCSInfo(
       conferenceID: conferenceID == freezed
@@ -122,6 +136,10 @@ class __$IVCSInfoCopyWithImpl<$Res> extends _$IVCSInfoCopyWithImpl<$Res>
           ? _value.joinToken
           : joinToken // ignore: cast_nullable_to_non_nullable
               as String?,
+      inviteLink: inviteLink == freezed
+          ? _value.inviteLink
+          : inviteLink // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -131,7 +149,8 @@ class __$IVCSInfoCopyWithImpl<$Res> extends _$IVCSInfoCopyWithImpl<$Res>
 class _$_IVCSInfo implements _IVCSInfo {
   const _$_IVCSInfo(
       {@JsonKey(name: 'conference_id') this.conferenceID,
-      @JsonKey(name: 'join_token') this.joinToken});
+      @JsonKey(name: 'join_token') this.joinToken,
+      @JsonKey(name: 'invite_link') this.inviteLink});
 
   factory _$_IVCSInfo.fromJson(Map<String, dynamic> json) =>
       _$$_IVCSInfoFromJson(json);
@@ -146,10 +165,15 @@ class _$_IVCSInfo implements _IVCSInfo {
   /// .
   @JsonKey(name: 'join_token')
   final String? joinToken;
+  @override
+
+  /// .
+  @JsonKey(name: 'invite_link')
+  final String? inviteLink;
 
   @override
   String toString() {
-    return 'IVCSInfo(conferenceID: $conferenceID, joinToken: $joinToken)';
+    return 'IVCSInfo(conferenceID: $conferenceID, joinToken: $joinToken, inviteLink: $inviteLink)';
   }
 
   @override
@@ -161,14 +185,18 @@ class _$_IVCSInfo implements _IVCSInfo {
                     .equals(other.conferenceID, conferenceID)) &&
             (identical(other.joinToken, joinToken) ||
                 const DeepCollectionEquality()
-                    .equals(other.joinToken, joinToken)));
+                    .equals(other.joinToken, joinToken)) &&
+            (identical(other.inviteLink, inviteLink) ||
+                const DeepCollectionEquality()
+                    .equals(other.inviteLink, inviteLink)));
   }
 
   @override
   int get hashCode =>
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(conferenceID) ^
-      const DeepCollectionEquality().hash(joinToken);
+      const DeepCollectionEquality().hash(joinToken) ^
+      const DeepCollectionEquality().hash(inviteLink);
 
   @JsonKey(ignore: true)
   @override
@@ -184,7 +212,8 @@ class _$_IVCSInfo implements _IVCSInfo {
 abstract class _IVCSInfo implements IVCSInfo {
   const factory _IVCSInfo(
       {@JsonKey(name: 'conference_id') String? conferenceID,
-      @JsonKey(name: 'join_token') String? joinToken}) = _$_IVCSInfo;
+      @JsonKey(name: 'join_token') String? joinToken,
+      @JsonKey(name: 'invite_link') String? inviteLink}) = _$_IVCSInfo;
 
   factory _IVCSInfo.fromJson(Map<String, dynamic> json) = _$_IVCSInfo.fromJson;
 
@@ -198,6 +227,11 @@ abstract class _IVCSInfo implements IVCSInfo {
   /// .
   @JsonKey(name: 'join_token')
   String? get joinToken => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'invite_link')
+  String? get inviteLink => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$IVCSInfoCopyWith<_IVCSInfo> get copyWith =>

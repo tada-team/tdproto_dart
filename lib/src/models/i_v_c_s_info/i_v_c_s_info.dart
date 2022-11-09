@@ -14,6 +14,9 @@ class IVCSInfo with _$IVCSInfo {
     /// .
     @JsonKey(name: 'join_token') String? joinToken,
     
+    /// .
+    @JsonKey(name: 'invite_link') String? inviteLink,
+    
     
   }) = _IVCSInfo;
 
