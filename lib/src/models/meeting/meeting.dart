@@ -24,10 +24,10 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'personal_account_id') String? personalAccountId,
     
     /// .
-    @JsonKey(name: 'start_at') @DateTimeConverter() required DateTime startAt,
+    @JsonKey(name: 'start_at') required String startAt,
     
     /// .
-    @JsonKey(name: 'end_at') @DateTimeConverter() required DateTime endAt,
+    @JsonKey(name: 'end_at') required String endAt,
     
     /// .
     @JsonKey(name: 'duration') required int duration,
@@ -72,7 +72,7 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'gentime') required int gentime,
     
     /// Creation date, iso datetime.
-    @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+    @JsonKey(name: 'created') required String created,
     
     /// Title.
     @JsonKey(name: 'display_name') required String displayName,
@@ -180,13 +180,13 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'title') String? title,
     
     /// Task done date in iso format, if any.
-    @JsonKey(name: 'done') @DateTimeConverter() DateTime? done,
+    @JsonKey(name: 'done') String? done,
     
     /// Task done reason, if any.
     @JsonKey(name: 'done_reason') String? doneReason,
     
     /// Task deadline in iso format, if any.
-    @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
+    @JsonKey(name: 'deadline') String? deadline,
     
     /// Is task deadline expired.
     @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
@@ -264,13 +264,13 @@ class Meeting with _$Meeting {
     @JsonKey(name: 'can_set_important_any_message') bool? canSetImportantAnyMessage,
     
     /// Date of the last message sent even if it was deleted.
-    @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,
+    @JsonKey(name: 'last_activity') String? lastActivity,
     
     /// Deprecated.
     @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') int? draftNum,
     
     /// Start date of meeting chat.
-    @JsonKey(name: 'meeting_start_at') @DateTimeConverter() DateTime? meetingStartAt,
+    @JsonKey(name: 'meeting_start_at') String? meetingStartAt,
     
     /// Meeting has frequency.
     @JsonKey(name: 'meeting_freq') bool? meetingFreq,

@@ -10,7 +10,7 @@ _$_GroupAccessRequest _$$_GroupAccessRequestFromJson(
         Map<String, dynamic> json) =>
     _$_GroupAccessRequest(
       uid: json['uid'] as String,
-      created: const DateTimeConverter().fromJson(json['created'] as String),
+      created: json['created'] as String,
       subject: json['subject'] as String,
     );
 
@@ -18,6 +18,6 @@ Map<String, dynamic> _$$_GroupAccessRequestToJson(
         _$_GroupAccessRequest instance) =>
     <String, dynamic>{
       'uid': instance.uid,
-      'created': const DateTimeConverter().toJson(instance.created),
+      'created': instance.created,
       'subject': instance.subject,
     };

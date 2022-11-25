@@ -18,9 +18,7 @@ _$_Contact _$$_ContactFromJson(Map<String, dynamic> json) => _$_Contact(
       role: json['role'] as String,
       mood: json['mood'] as String?,
       teamStatus: json['status'] as String,
-      lastActivity: json['last_activity'] == null
-          ? null
-          : DateTime.parse(json['last_activity'] as String),
+      lastActivity: json['last_activity'] as String?,
       isArchive: json['is_archive'] as bool?,
       botname: json['botname'] as String?,
       sections:
@@ -48,9 +46,7 @@ _$_Contact _$$_ContactFromJson(Map<String, dynamic> json) => _$_Contact(
       timezone: json['timezone'] as String?,
       quietTimeStart: json['quiet_time_start'] as String?,
       quietTimeFinish: json['quiet_time_finish'] as String?,
-      focusUntil: json['focus_until'] == null
-          ? null
-          : DateTime.parse(json['focus_until'] as String),
+      focusUntil: json['focus_until'] as String?,
       groupNotificationsEnabled: json['group_notifications_enabled'] as bool?,
       taskNotificationsEnabled: json['task_notifications_enabled'] as bool?,
       contactShortView: json['contact_short_view'] as bool?,
@@ -97,7 +93,7 @@ Map<String, dynamic> _$$_ContactToJson(_$_Contact instance) =>
       'role': instance.role,
       'mood': instance.mood,
       'status': instance.teamStatus,
-      'last_activity': instance.lastActivity?.toIso8601String(),
+      'last_activity': instance.lastActivity,
       'is_archive': instance.isArchive,
       'botname': instance.botname,
       'sections': instance.sections,
@@ -122,7 +118,7 @@ Map<String, dynamic> _$$_ContactToJson(_$_Contact instance) =>
       'timezone': instance.timezone,
       'quiet_time_start': instance.quietTimeStart,
       'quiet_time_finish': instance.quietTimeFinish,
-      'focus_until': instance.focusUntil?.toIso8601String(),
+      'focus_until': instance.focusUntil,
       'group_notifications_enabled': instance.groupNotificationsEnabled,
       'task_notifications_enabled': instance.taskNotificationsEnabled,
       'contact_short_view': instance.contactShortView,

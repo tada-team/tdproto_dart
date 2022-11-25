@@ -45,8 +45,7 @@ class _$ContactTearOff {
       @JsonKey(name: 'status')
           required String teamStatus,
       @JsonKey(name: 'last_activity')
-      @DateTimeConverter()
-          DateTime? lastActivity,
+          String? lastActivity,
       @JsonKey(name: 'is_archive')
           bool? isArchive,
       @JsonKey(name: 'botname')
@@ -96,8 +95,7 @@ class _$ContactTearOff {
       @JsonKey(name: 'quiet_time_finish')
           String? quietTimeFinish,
       @JsonKey(name: 'focus_until')
-      @DateTimeConverter()
-          DateTime? focusUntil,
+          String? focusUntil,
       @JsonKey(name: 'group_notifications_enabled')
           bool? groupNotificationsEnabled,
       @JsonKey(name: 'task_notifications_enabled')
@@ -280,8 +278,7 @@ mixin _$Contact {
 
   /// Last activity in this team (iso datetime).
   @JsonKey(name: 'last_activity')
-  @DateTimeConverter()
-  DateTime? get lastActivity => throw _privateConstructorUsedError;
+  String? get lastActivity => throw _privateConstructorUsedError;
 
   /// Contact deleted.
   @JsonKey(name: 'is_archive')
@@ -381,8 +378,7 @@ mixin _$Contact {
 
   /// Focus mode enabled until.
   @JsonKey(name: 'focus_until')
-  @DateTimeConverter()
-  DateTime? get focusUntil => throw _privateConstructorUsedError;
+  String? get focusUntil => throw _privateConstructorUsedError;
 
   /// Push notifications for group chats.
   @JsonKey(name: 'group_notifications_enabled')
@@ -530,8 +526,7 @@ abstract class $ContactCopyWith<$Res> {
       @JsonKey(name: 'status')
           String teamStatus,
       @JsonKey(name: 'last_activity')
-      @DateTimeConverter()
-          DateTime? lastActivity,
+          String? lastActivity,
       @JsonKey(name: 'is_archive')
           bool? isArchive,
       @JsonKey(name: 'botname')
@@ -581,8 +576,7 @@ abstract class $ContactCopyWith<$Res> {
       @JsonKey(name: 'quiet_time_finish')
           String? quietTimeFinish,
       @JsonKey(name: 'focus_until')
-      @DateTimeConverter()
-          DateTime? focusUntil,
+          String? focusUntil,
       @JsonKey(name: 'group_notifications_enabled')
           bool? groupNotificationsEnabled,
       @JsonKey(name: 'task_notifications_enabled')
@@ -769,7 +763,7 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
       lastActivity: lastActivity == freezed
           ? _value.lastActivity
           : lastActivity // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       isArchive: isArchive == freezed
           ? _value.isArchive
           : isArchive // ignore: cast_nullable_to_non_nullable
@@ -869,7 +863,7 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
       focusUntil: focusUntil == freezed
           ? _value.focusUntil
           : focusUntil // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       groupNotificationsEnabled: groupNotificationsEnabled == freezed
           ? _value.groupNotificationsEnabled
           : groupNotificationsEnabled // ignore: cast_nullable_to_non_nullable
@@ -1033,8 +1027,7 @@ abstract class _$ContactCopyWith<$Res> implements $ContactCopyWith<$Res> {
       @JsonKey(name: 'status')
           String teamStatus,
       @JsonKey(name: 'last_activity')
-      @DateTimeConverter()
-          DateTime? lastActivity,
+          String? lastActivity,
       @JsonKey(name: 'is_archive')
           bool? isArchive,
       @JsonKey(name: 'botname')
@@ -1084,8 +1077,7 @@ abstract class _$ContactCopyWith<$Res> implements $ContactCopyWith<$Res> {
       @JsonKey(name: 'quiet_time_finish')
           String? quietTimeFinish,
       @JsonKey(name: 'focus_until')
-      @DateTimeConverter()
-          DateTime? focusUntil,
+          String? focusUntil,
       @JsonKey(name: 'group_notifications_enabled')
           bool? groupNotificationsEnabled,
       @JsonKey(name: 'task_notifications_enabled')
@@ -1275,7 +1267,7 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res>
       lastActivity: lastActivity == freezed
           ? _value.lastActivity
           : lastActivity // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       isArchive: isArchive == freezed
           ? _value.isArchive
           : isArchive // ignore: cast_nullable_to_non_nullable
@@ -1375,7 +1367,7 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res>
       focusUntil: focusUntil == freezed
           ? _value.focusUntil
           : focusUntil // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       groupNotificationsEnabled: groupNotificationsEnabled == freezed
           ? _value.groupNotificationsEnabled
           : groupNotificationsEnabled // ignore: cast_nullable_to_non_nullable
@@ -1519,7 +1511,6 @@ class _$_Contact implements _Contact {
       @JsonKey(name: 'status')
           required this.teamStatus,
       @JsonKey(name: 'last_activity')
-      @DateTimeConverter()
           this.lastActivity,
       @JsonKey(name: 'is_archive')
           this.isArchive,
@@ -1570,7 +1561,6 @@ class _$_Contact implements _Contact {
       @JsonKey(name: 'quiet_time_finish')
           this.quietTimeFinish,
       @JsonKey(name: 'focus_until')
-      @DateTimeConverter()
           this.focusUntil,
       @JsonKey(name: 'group_notifications_enabled')
           this.groupNotificationsEnabled,
@@ -1692,8 +1682,7 @@ class _$_Contact implements _Contact {
 
   /// Last activity in this team (iso datetime).
   @JsonKey(name: 'last_activity')
-  @DateTimeConverter()
-  final DateTime? lastActivity;
+  final String? lastActivity;
   @override
 
   /// Contact deleted.
@@ -1818,8 +1807,7 @@ class _$_Contact implements _Contact {
 
   /// Focus mode enabled until.
   @JsonKey(name: 'focus_until')
-  @DateTimeConverter()
-  final DateTime? focusUntil;
+  final String? focusUntil;
   @override
 
   /// Push notifications for group chats.
@@ -2186,8 +2174,7 @@ abstract class _Contact implements Contact {
       @JsonKey(name: 'status')
           required String teamStatus,
       @JsonKey(name: 'last_activity')
-      @DateTimeConverter()
-          DateTime? lastActivity,
+          String? lastActivity,
       @JsonKey(name: 'is_archive')
           bool? isArchive,
       @JsonKey(name: 'botname')
@@ -2237,8 +2224,7 @@ abstract class _Contact implements Contact {
       @JsonKey(name: 'quiet_time_finish')
           String? quietTimeFinish,
       @JsonKey(name: 'focus_until')
-      @DateTimeConverter()
-          DateTime? focusUntil,
+          String? focusUntil,
       @JsonKey(name: 'group_notifications_enabled')
           bool? groupNotificationsEnabled,
       @JsonKey(name: 'task_notifications_enabled')
@@ -2358,8 +2344,7 @@ abstract class _Contact implements Contact {
 
   /// Last activity in this team (iso datetime).
   @JsonKey(name: 'last_activity')
-  @DateTimeConverter()
-  DateTime? get lastActivity => throw _privateConstructorUsedError;
+  String? get lastActivity => throw _privateConstructorUsedError;
   @override
 
   /// Contact deleted.
@@ -2484,8 +2469,7 @@ abstract class _Contact implements Contact {
 
   /// Focus mode enabled until.
   @JsonKey(name: 'focus_until')
-  @DateTimeConverter()
-  DateTime? get focusUntil => throw _privateConstructorUsedError;
+  String? get focusUntil => throw _privateConstructorUsedError;
   @override
 
   /// Push notifications for group chats.

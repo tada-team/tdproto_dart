@@ -8,7 +8,7 @@ part of 'upload.dart';
 
 _$_Upload _$$_UploadFromJson(Map<String, dynamic> json) => _$_Upload(
       uid: json['uid'] as String,
-      created: const DateTimeConverter().fromJson(json['created'] as String),
+      created: json['created'] as String,
       size: json['size'] as int,
       duration: json['duration'] as int?,
       name: json['name'] as String,
@@ -28,7 +28,7 @@ _$_Upload _$$_UploadFromJson(Map<String, dynamic> json) => _$_Upload(
 
 Map<String, dynamic> _$$_UploadToJson(_$_Upload instance) => <String, dynamic>{
       'uid': instance.uid,
-      'created': const DateTimeConverter().toJson(instance.created),
+      'created': instance.created,
       'size': instance.size,
       'duration': instance.duration,
       'name': instance.name,

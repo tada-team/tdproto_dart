@@ -13,9 +13,7 @@ _$_ServerChatComposingParams _$$_ServerChatComposingParamsFromJson(
       actor: json['actor'] as String,
       composing: json['composing'] as bool,
       isAudio: json['is_audio'] as bool?,
-      validUntil: json['valid_until'] == null
-          ? null
-          : DateTime.parse(json['valid_until'] as String),
+      validUntil: json['valid_until'] as String?,
     );
 
 Map<String, dynamic> _$$_ServerChatComposingParamsToJson(
@@ -25,5 +23,5 @@ Map<String, dynamic> _$$_ServerChatComposingParamsToJson(
       'actor': instance.actor,
       'composing': instance.composing,
       'is_audio': instance.isAudio,
-      'valid_until': instance.validUntil?.toIso8601String(),
+      'valid_until': instance.validUntil,
     };

@@ -30,7 +30,7 @@ class Subtask with _$Subtask {
     @JsonKey(name: 'task_status') String? taskStatus,
     
     /// Subtask deadline in iso format, if any.
-    @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
+    @JsonKey(name: 'deadline') String? deadline,
     
     /// Is subtask deadline expired.
     @JsonKey(name: 'deadline_expired') bool? deadlineExpired,

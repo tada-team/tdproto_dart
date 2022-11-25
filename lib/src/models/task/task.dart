@@ -30,13 +30,13 @@ class Task with _$Task {
     @JsonKey(name: 'assignee') String? assignee,
     
     /// Deadline time, if any.
-    @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
+    @JsonKey(name: 'deadline') String? deadline,
     
     /// Is task or group public for non-guests.
     @JsonKey(name: 'public') bool? isPublic,
     
     /// Fire a reminder at this time.
-    @JsonKey(name: 'remind_at') @DateTimeConverter() DateTime? remindAt,
+    @JsonKey(name: 'remind_at') String? remindAt,
     
     /// Task status.
     @JsonKey(name: 'task_status') String? taskStatus,

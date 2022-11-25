@@ -12,7 +12,7 @@ class GroupAccessRequest with _$GroupAccessRequest {
     @JsonKey(name: 'uid') required String uid,
     
     /// .
-    @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+    @JsonKey(name: 'created') required String created,
     
     /// .
     @JsonKey(name: 'subject') required String subject,

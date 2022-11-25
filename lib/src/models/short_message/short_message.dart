@@ -18,7 +18,7 @@ class ShortMessage with _$ShortMessage {
     @JsonKey(name: 'message_id') required String messageId,
     
     /// Message creation datetime (set by server side) or sending datetime in future for draft messages.
-    @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+    @JsonKey(name: 'created') required String created,
     
     /// Object version.
     @JsonKey(name: 'gentime') required int gentime,

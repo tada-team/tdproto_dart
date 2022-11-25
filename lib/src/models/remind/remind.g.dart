@@ -9,13 +9,13 @@ part of 'remind.dart';
 _$_Remind _$$_RemindFromJson(Map<String, dynamic> json) => _$_Remind(
       uid: json['uid'] as String,
       chat: json['chat'] as String,
-      fireAt: const DateTimeConverter().fromJson(json['fire_at'] as String),
+      fireAt: json['fire_at'] as String,
       comment: json['comment'] as String?,
     );
 
 Map<String, dynamic> _$$_RemindToJson(_$_Remind instance) => <String, dynamic>{
       'uid': instance.uid,
       'chat': instance.chat,
-      'fire_at': const DateTimeConverter().toJson(instance.fireAt),
+      'fire_at': instance.fireAt,
       'comment': instance.comment,
     };

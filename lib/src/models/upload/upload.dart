@@ -12,7 +12,7 @@ class Upload with _$Upload {
     @JsonKey(name: 'uid') required String uid,
     
     /// Uploaded at.
-    @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+    @JsonKey(name: 'created') required String created,
     
     /// Upload size in bytes.
     @JsonKey(name: 'size') required int size,

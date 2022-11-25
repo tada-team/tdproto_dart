@@ -29,9 +29,9 @@ class _$TaskTearOff {
       @JsonKey(name: 'observers') List<String>? observers,
       @JsonKey(name: 'items') List<String>? items,
       @JsonKey(name: 'assignee') String? assignee,
-      @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
+      @JsonKey(name: 'deadline') String? deadline,
       @JsonKey(name: 'public') bool? isPublic,
-      @JsonKey(name: 'remind_at') @DateTimeConverter() DateTime? remindAt,
+      @JsonKey(name: 'remind_at') String? remindAt,
       @JsonKey(name: 'task_status') String? taskStatus,
       @JsonKey(name: 'importance') int? importance,
       @JsonKey(name: 'urgency') int? urgency,
@@ -100,8 +100,7 @@ mixin _$Task {
 
   /// Deadline time, if any.
   @JsonKey(name: 'deadline')
-  @DateTimeConverter()
-  DateTime? get deadline => throw _privateConstructorUsedError;
+  String? get deadline => throw _privateConstructorUsedError;
 
   /// Is task or group public for non-guests.
   @JsonKey(name: 'public')
@@ -109,8 +108,7 @@ mixin _$Task {
 
   /// Fire a reminder at this time.
   @JsonKey(name: 'remind_at')
-  @DateTimeConverter()
-  DateTime? get remindAt => throw _privateConstructorUsedError;
+  String? get remindAt => throw _privateConstructorUsedError;
 
   /// Task status.
   @JsonKey(name: 'task_status')
@@ -157,9 +155,9 @@ abstract class $TaskCopyWith<$Res> {
       @JsonKey(name: 'observers') List<String>? observers,
       @JsonKey(name: 'items') List<String>? items,
       @JsonKey(name: 'assignee') String? assignee,
-      @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
+      @JsonKey(name: 'deadline') String? deadline,
       @JsonKey(name: 'public') bool? isPublic,
-      @JsonKey(name: 'remind_at') @DateTimeConverter() DateTime? remindAt,
+      @JsonKey(name: 'remind_at') String? remindAt,
       @JsonKey(name: 'task_status') String? taskStatus,
       @JsonKey(name: 'importance') int? importance,
       @JsonKey(name: 'urgency') int? urgency,
@@ -229,7 +227,7 @@ class _$TaskCopyWithImpl<$Res> implements $TaskCopyWith<$Res> {
       deadline: deadline == freezed
           ? _value.deadline
           : deadline // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       isPublic: isPublic == freezed
           ? _value.isPublic
           : isPublic // ignore: cast_nullable_to_non_nullable
@@ -237,7 +235,7 @@ class _$TaskCopyWithImpl<$Res> implements $TaskCopyWith<$Res> {
       remindAt: remindAt == freezed
           ? _value.remindAt
           : remindAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       taskStatus: taskStatus == freezed
           ? _value.taskStatus
           : taskStatus // ignore: cast_nullable_to_non_nullable
@@ -283,9 +281,9 @@ abstract class _$TaskCopyWith<$Res> implements $TaskCopyWith<$Res> {
       @JsonKey(name: 'observers') List<String>? observers,
       @JsonKey(name: 'items') List<String>? items,
       @JsonKey(name: 'assignee') String? assignee,
-      @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
+      @JsonKey(name: 'deadline') String? deadline,
       @JsonKey(name: 'public') bool? isPublic,
-      @JsonKey(name: 'remind_at') @DateTimeConverter() DateTime? remindAt,
+      @JsonKey(name: 'remind_at') String? remindAt,
       @JsonKey(name: 'task_status') String? taskStatus,
       @JsonKey(name: 'importance') int? importance,
       @JsonKey(name: 'urgency') int? urgency,
@@ -356,7 +354,7 @@ class __$TaskCopyWithImpl<$Res> extends _$TaskCopyWithImpl<$Res>
       deadline: deadline == freezed
           ? _value.deadline
           : deadline // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       isPublic: isPublic == freezed
           ? _value.isPublic
           : isPublic // ignore: cast_nullable_to_non_nullable
@@ -364,7 +362,7 @@ class __$TaskCopyWithImpl<$Res> extends _$TaskCopyWithImpl<$Res>
       remindAt: remindAt == freezed
           ? _value.remindAt
           : remindAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       taskStatus: taskStatus == freezed
           ? _value.taskStatus
           : taskStatus // ignore: cast_nullable_to_non_nullable
@@ -408,9 +406,9 @@ class _$_Task implements _Task {
       @JsonKey(name: 'observers') this.observers,
       @JsonKey(name: 'items') this.items,
       @JsonKey(name: 'assignee') this.assignee,
-      @JsonKey(name: 'deadline') @DateTimeConverter() this.deadline,
+      @JsonKey(name: 'deadline') this.deadline,
       @JsonKey(name: 'public') this.isPublic,
-      @JsonKey(name: 'remind_at') @DateTimeConverter() this.remindAt,
+      @JsonKey(name: 'remind_at') this.remindAt,
       @JsonKey(name: 'task_status') this.taskStatus,
       @JsonKey(name: 'importance') this.importance,
       @JsonKey(name: 'urgency') this.urgency,
@@ -460,8 +458,7 @@ class _$_Task implements _Task {
 
   /// Deadline time, if any.
   @JsonKey(name: 'deadline')
-  @DateTimeConverter()
-  final DateTime? deadline;
+  final String? deadline;
   @override
 
   /// Is task or group public for non-guests.
@@ -471,8 +468,7 @@ class _$_Task implements _Task {
 
   /// Fire a reminder at this time.
   @JsonKey(name: 'remind_at')
-  @DateTimeConverter()
-  final DateTime? remindAt;
+  final String? remindAt;
   @override
 
   /// Task status.
@@ -609,9 +605,9 @@ abstract class _Task implements Task {
       @JsonKey(name: 'observers') List<String>? observers,
       @JsonKey(name: 'items') List<String>? items,
       @JsonKey(name: 'assignee') String? assignee,
-      @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
+      @JsonKey(name: 'deadline') String? deadline,
       @JsonKey(name: 'public') bool? isPublic,
-      @JsonKey(name: 'remind_at') @DateTimeConverter() DateTime? remindAt,
+      @JsonKey(name: 'remind_at') String? remindAt,
       @JsonKey(name: 'task_status') String? taskStatus,
       @JsonKey(name: 'importance') int? importance,
       @JsonKey(name: 'urgency') int? urgency,
@@ -661,8 +657,7 @@ abstract class _Task implements Task {
 
   /// Deadline time, if any.
   @JsonKey(name: 'deadline')
-  @DateTimeConverter()
-  DateTime? get deadline => throw _privateConstructorUsedError;
+  String? get deadline => throw _privateConstructorUsedError;
   @override
 
   /// Is task or group public for non-guests.
@@ -672,8 +667,7 @@ abstract class _Task implements Task {
 
   /// Fire a reminder at this time.
   @JsonKey(name: 'remind_at')
-  @DateTimeConverter()
-  DateTime? get remindAt => throw _privateConstructorUsedError;
+  String? get remindAt => throw _privateConstructorUsedError;
   @override
 
   /// Task status.

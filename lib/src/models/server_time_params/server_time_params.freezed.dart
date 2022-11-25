@@ -21,8 +21,7 @@ ServerTimeParams _$ServerTimeParamsFromJson(Map<String, dynamic> json) {
 class _$ServerTimeParamsTearOff {
   const _$ServerTimeParamsTearOff();
 
-  _ServerTimeParams call(
-      {@JsonKey(name: 'time') @DateTimeConverter() required DateTime time}) {
+  _ServerTimeParams call({@JsonKey(name: 'time') required String time}) {
     return _ServerTimeParams(
       time: time,
     );
@@ -40,8 +39,7 @@ const $ServerTimeParams = _$ServerTimeParamsTearOff();
 mixin _$ServerTimeParams {
   /// Current time.
   @JsonKey(name: 'time')
-  @DateTimeConverter()
-  DateTime get time => throw _privateConstructorUsedError;
+  String get time => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -54,7 +52,7 @@ abstract class $ServerTimeParamsCopyWith<$Res> {
   factory $ServerTimeParamsCopyWith(
           ServerTimeParams value, $Res Function(ServerTimeParams) then) =
       _$ServerTimeParamsCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'time') @DateTimeConverter() DateTime time});
+  $Res call({@JsonKey(name: 'time') String time});
 }
 
 /// @nodoc
@@ -74,7 +72,7 @@ class _$ServerTimeParamsCopyWithImpl<$Res>
       time: time == freezed
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
     ));
   }
 }
@@ -86,7 +84,7 @@ abstract class _$ServerTimeParamsCopyWith<$Res>
           _ServerTimeParams value, $Res Function(_ServerTimeParams) then) =
       __$ServerTimeParamsCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'time') @DateTimeConverter() DateTime time});
+  $Res call({@JsonKey(name: 'time') String time});
 }
 
 /// @nodoc
@@ -108,7 +106,7 @@ class __$ServerTimeParamsCopyWithImpl<$Res>
       time: time == freezed
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
     ));
   }
 }
@@ -116,8 +114,7 @@ class __$ServerTimeParamsCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_ServerTimeParams implements _ServerTimeParams {
-  const _$_ServerTimeParams(
-      {@JsonKey(name: 'time') @DateTimeConverter() required this.time});
+  const _$_ServerTimeParams({@JsonKey(name: 'time') required this.time});
 
   factory _$_ServerTimeParams.fromJson(Map<String, dynamic> json) =>
       _$$_ServerTimeParamsFromJson(json);
@@ -126,8 +123,7 @@ class _$_ServerTimeParams implements _ServerTimeParams {
 
   /// Current time.
   @JsonKey(name: 'time')
-  @DateTimeConverter()
-  final DateTime time;
+  final String time;
 
   @override
   String toString() {
@@ -159,9 +155,7 @@ class _$_ServerTimeParams implements _ServerTimeParams {
 
 abstract class _ServerTimeParams implements ServerTimeParams {
   const factory _ServerTimeParams(
-      {@JsonKey(name: 'time')
-      @DateTimeConverter()
-          required DateTime time}) = _$_ServerTimeParams;
+      {@JsonKey(name: 'time') required String time}) = _$_ServerTimeParams;
 
   factory _ServerTimeParams.fromJson(Map<String, dynamic> json) =
       _$_ServerTimeParams.fromJson;
@@ -170,8 +164,7 @@ abstract class _ServerTimeParams implements ServerTimeParams {
 
   /// Current time.
   @JsonKey(name: 'time')
-  @DateTimeConverter()
-  DateTime get time => throw _privateConstructorUsedError;
+  String get time => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ServerTimeParamsCopyWith<_ServerTimeParams> get copyWith =>

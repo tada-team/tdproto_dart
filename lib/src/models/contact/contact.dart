@@ -42,7 +42,7 @@ class Contact with _$Contact {
     @JsonKey(name: 'status') required String teamStatus,
     
     /// Last activity in this team (iso datetime).
-    @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,
+    @JsonKey(name: 'last_activity') String? lastActivity,
     
     /// Contact deleted.
     @JsonKey(name: 'is_archive') bool? isArchive,
@@ -117,7 +117,7 @@ class Contact with _$Contact {
     @JsonKey(name: 'quiet_time_finish') String? quietTimeFinish,
     
     /// Focus mode enabled until.
-    @JsonKey(name: 'focus_until') @DateTimeConverter() DateTime? focusUntil,
+    @JsonKey(name: 'focus_until') String? focusUntil,
     
     /// Push notifications for group chats.
     @JsonKey(name: 'group_notifications_enabled') bool? groupNotificationsEnabled,

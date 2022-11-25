@@ -10,9 +10,7 @@ _$_Integration _$$_IntegrationFromJson(Map<String, dynamic> json) =>
     _$_Integration(
       uid: json['uid'] as String?,
       comment: json['comment'] as String,
-      created: json['created'] == null
-          ? null
-          : DateTime.parse(json['created'] as String),
+      created: json['created'] as String?,
       enabled: json['enabled'] as bool,
       form: IntegrationForm.fromJson(json['form'] as Map<String, dynamic>),
       group: json['group'] as String,
@@ -25,7 +23,7 @@ Map<String, dynamic> _$$_IntegrationToJson(_$_Integration instance) =>
     <String, dynamic>{
       'uid': instance.uid,
       'comment': instance.comment,
-      'created': instance.created?.toIso8601String(),
+      'created': instance.created,
       'enabled': instance.enabled,
       'form': instance.form.toJson(),
       'group': instance.group,

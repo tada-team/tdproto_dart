@@ -22,72 +22,37 @@ class _$MessageTearOff {
   const _$MessageTearOff();
 
   _Message call(
-      {@JsonKey(name: 'content')
-          required MessageContent content,
-      @JsonKey(name: 'push_text')
-          String? pushText,
-      @JsonKey(name: 'from')
-          required String from,
-      @JsonKey(name: 'to')
-          required String to,
-      @JsonKey(name: 'message_id')
-          required String messageId,
-      @JsonKey(name: 'created')
-      @DateTimeConverter()
-          required DateTime created,
-      @JsonKey(name: 'drafted')
-      @DateTimeConverter()
-          DateTime? drafted,
-      @JsonKey(name: 'gentime')
-          required int gentime,
-      @JsonKey(name: 'chat_type')
-          required String chatType,
-      @JsonKey(name: 'chat')
-          required String chat,
-      @JsonKey(name: 'links')
-          List<MessageLink>? links,
-      @JsonKey(name: 'markup')
-          List<MarkupEntity>? markup,
-      @JsonKey(name: 'important')
-          bool? important,
-      @JsonKey(name: 'edited')
-      @DateTimeConverter()
-          DateTime? edited,
-      @JsonKey(name: 'received')
-          bool? received,
-      @JsonKey(name: 'num_received')
-          int? numReceived,
-      @JsonKey(name: 'nopreview')
-          bool? nopreview,
-      @JsonKey(name: 'has_previews')
-          bool? hasPreviews,
-      @JsonKey(name: 'prev')
-          String? prev,
-      @JsonKey(name: 'is_first')
-          bool? isFirst,
-      @JsonKey(name: 'is_last')
-          bool? isLast,
-      @JsonKey(name: 'uploads')
-          List<Upload>? uploads,
-      @JsonKey(name: 'reactions')
-          List<MessageReaction>? reactions,
-      @JsonKey(name: 'reply_to')
-          Message? replyTo,
-      @JsonKey(name: 'linked_messages')
-          List<Message>? linkedMessages,
-      @JsonKey(name: 'notice')
-          bool? notice,
-      @JsonKey(name: 'silently')
-          bool? silently,
-      @JsonKey(name: 'editable_until')
-      @DateTimeConverter()
-          DateTime? editableUntil,
-      @JsonKey(name: 'num')
-          int? num,
-      @JsonKey(name: 'is_archive')
-          bool? isArchive,
-      @JsonKey(name: '_debug')
-          String? debug}) {
+      {@JsonKey(name: 'content') required MessageContent content,
+      @JsonKey(name: 'push_text') String? pushText,
+      @JsonKey(name: 'from') required String from,
+      @JsonKey(name: 'to') required String to,
+      @JsonKey(name: 'message_id') required String messageId,
+      @JsonKey(name: 'created') required String created,
+      @JsonKey(name: 'drafted') String? drafted,
+      @JsonKey(name: 'gentime') required int gentime,
+      @JsonKey(name: 'chat_type') required String chatType,
+      @JsonKey(name: 'chat') required String chat,
+      @JsonKey(name: 'links') List<MessageLink>? links,
+      @JsonKey(name: 'markup') List<MarkupEntity>? markup,
+      @JsonKey(name: 'important') bool? important,
+      @JsonKey(name: 'edited') String? edited,
+      @JsonKey(name: 'received') bool? received,
+      @JsonKey(name: 'num_received') int? numReceived,
+      @JsonKey(name: 'nopreview') bool? nopreview,
+      @JsonKey(name: 'has_previews') bool? hasPreviews,
+      @JsonKey(name: 'prev') String? prev,
+      @JsonKey(name: 'is_first') bool? isFirst,
+      @JsonKey(name: 'is_last') bool? isLast,
+      @JsonKey(name: 'uploads') List<Upload>? uploads,
+      @JsonKey(name: 'reactions') List<MessageReaction>? reactions,
+      @JsonKey(name: 'reply_to') Message? replyTo,
+      @JsonKey(name: 'linked_messages') List<Message>? linkedMessages,
+      @JsonKey(name: 'notice') bool? notice,
+      @JsonKey(name: 'silently') bool? silently,
+      @JsonKey(name: 'editable_until') String? editableUntil,
+      @JsonKey(name: 'num') int? num,
+      @JsonKey(name: 'is_archive') bool? isArchive,
+      @JsonKey(name: '_debug') String? debug}) {
     return _Message(
       content: content,
       pushText: pushText,
@@ -155,13 +120,11 @@ mixin _$Message {
 
   /// Message creation datetime (set by server side) or sending datetime in future for draft messages.
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  DateTime get created => throw _privateConstructorUsedError;
+  String get created => throw _privateConstructorUsedError;
 
   /// Creation datetime for draft messages.
   @JsonKey(name: 'drafted')
-  @DateTimeConverter()
-  DateTime? get drafted => throw _privateConstructorUsedError;
+  String? get drafted => throw _privateConstructorUsedError;
 
   /// Object version.
   @JsonKey(name: 'gentime')
@@ -189,8 +152,7 @@ mixin _$Message {
 
   /// ISODateTimeString of message modification or deletion.
   @JsonKey(name: 'edited')
-  @DateTimeConverter()
-  DateTime? get edited => throw _privateConstructorUsedError;
+  String? get edited => throw _privateConstructorUsedError;
 
   /// Message was seen by anybody in chat. True or null.
   @JsonKey(name: 'received')
@@ -246,8 +208,7 @@ mixin _$Message {
 
   /// Author can change this message until date. Can be null.
   @JsonKey(name: 'editable_until')
-  @DateTimeConverter()
-  DateTime? get editableUntil => throw _privateConstructorUsedError;
+  String? get editableUntil => throw _privateConstructorUsedError;
 
   /// Index number of this message. Starts from 0. Null for deleted messages. Changes when any previous message wad deleted.
   @JsonKey(name: 'num')
@@ -271,72 +232,37 @@ abstract class $MessageCopyWith<$Res> {
   factory $MessageCopyWith(Message value, $Res Function(Message) then) =
       _$MessageCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'content')
-          MessageContent content,
-      @JsonKey(name: 'push_text')
-          String? pushText,
-      @JsonKey(name: 'from')
-          String from,
-      @JsonKey(name: 'to')
-          String to,
-      @JsonKey(name: 'message_id')
-          String messageId,
-      @JsonKey(name: 'created')
-      @DateTimeConverter()
-          DateTime created,
-      @JsonKey(name: 'drafted')
-      @DateTimeConverter()
-          DateTime? drafted,
-      @JsonKey(name: 'gentime')
-          int gentime,
-      @JsonKey(name: 'chat_type')
-          String chatType,
-      @JsonKey(name: 'chat')
-          String chat,
-      @JsonKey(name: 'links')
-          List<MessageLink>? links,
-      @JsonKey(name: 'markup')
-          List<MarkupEntity>? markup,
-      @JsonKey(name: 'important')
-          bool? important,
-      @JsonKey(name: 'edited')
-      @DateTimeConverter()
-          DateTime? edited,
-      @JsonKey(name: 'received')
-          bool? received,
-      @JsonKey(name: 'num_received')
-          int? numReceived,
-      @JsonKey(name: 'nopreview')
-          bool? nopreview,
-      @JsonKey(name: 'has_previews')
-          bool? hasPreviews,
-      @JsonKey(name: 'prev')
-          String? prev,
-      @JsonKey(name: 'is_first')
-          bool? isFirst,
-      @JsonKey(name: 'is_last')
-          bool? isLast,
-      @JsonKey(name: 'uploads')
-          List<Upload>? uploads,
-      @JsonKey(name: 'reactions')
-          List<MessageReaction>? reactions,
-      @JsonKey(name: 'reply_to')
-          Message? replyTo,
-      @JsonKey(name: 'linked_messages')
-          List<Message>? linkedMessages,
-      @JsonKey(name: 'notice')
-          bool? notice,
-      @JsonKey(name: 'silently')
-          bool? silently,
-      @JsonKey(name: 'editable_until')
-      @DateTimeConverter()
-          DateTime? editableUntil,
-      @JsonKey(name: 'num')
-          int? num,
-      @JsonKey(name: 'is_archive')
-          bool? isArchive,
-      @JsonKey(name: '_debug')
-          String? debug});
+      {@JsonKey(name: 'content') MessageContent content,
+      @JsonKey(name: 'push_text') String? pushText,
+      @JsonKey(name: 'from') String from,
+      @JsonKey(name: 'to') String to,
+      @JsonKey(name: 'message_id') String messageId,
+      @JsonKey(name: 'created') String created,
+      @JsonKey(name: 'drafted') String? drafted,
+      @JsonKey(name: 'gentime') int gentime,
+      @JsonKey(name: 'chat_type') String chatType,
+      @JsonKey(name: 'chat') String chat,
+      @JsonKey(name: 'links') List<MessageLink>? links,
+      @JsonKey(name: 'markup') List<MarkupEntity>? markup,
+      @JsonKey(name: 'important') bool? important,
+      @JsonKey(name: 'edited') String? edited,
+      @JsonKey(name: 'received') bool? received,
+      @JsonKey(name: 'num_received') int? numReceived,
+      @JsonKey(name: 'nopreview') bool? nopreview,
+      @JsonKey(name: 'has_previews') bool? hasPreviews,
+      @JsonKey(name: 'prev') String? prev,
+      @JsonKey(name: 'is_first') bool? isFirst,
+      @JsonKey(name: 'is_last') bool? isLast,
+      @JsonKey(name: 'uploads') List<Upload>? uploads,
+      @JsonKey(name: 'reactions') List<MessageReaction>? reactions,
+      @JsonKey(name: 'reply_to') Message? replyTo,
+      @JsonKey(name: 'linked_messages') List<Message>? linkedMessages,
+      @JsonKey(name: 'notice') bool? notice,
+      @JsonKey(name: 'silently') bool? silently,
+      @JsonKey(name: 'editable_until') String? editableUntil,
+      @JsonKey(name: 'num') int? num,
+      @JsonKey(name: 'is_archive') bool? isArchive,
+      @JsonKey(name: '_debug') String? debug});
 
   $MessageContentCopyWith<$Res> get content;
   $MessageCopyWith<$Res>? get replyTo;
@@ -408,11 +334,11 @@ class _$MessageCopyWithImpl<$Res> implements $MessageCopyWith<$Res> {
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       drafted: drafted == freezed
           ? _value.drafted
           : drafted // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       gentime: gentime == freezed
           ? _value.gentime
           : gentime // ignore: cast_nullable_to_non_nullable
@@ -440,7 +366,7 @@ class _$MessageCopyWithImpl<$Res> implements $MessageCopyWith<$Res> {
       edited: edited == freezed
           ? _value.edited
           : edited // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       received: received == freezed
           ? _value.received
           : received // ignore: cast_nullable_to_non_nullable
@@ -496,7 +422,7 @@ class _$MessageCopyWithImpl<$Res> implements $MessageCopyWith<$Res> {
       editableUntil: editableUntil == freezed
           ? _value.editableUntil
           : editableUntil // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       num: num == freezed
           ? _value.num
           : num // ignore: cast_nullable_to_non_nullable
@@ -537,72 +463,37 @@ abstract class _$MessageCopyWith<$Res> implements $MessageCopyWith<$Res> {
       __$MessageCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'content')
-          MessageContent content,
-      @JsonKey(name: 'push_text')
-          String? pushText,
-      @JsonKey(name: 'from')
-          String from,
-      @JsonKey(name: 'to')
-          String to,
-      @JsonKey(name: 'message_id')
-          String messageId,
-      @JsonKey(name: 'created')
-      @DateTimeConverter()
-          DateTime created,
-      @JsonKey(name: 'drafted')
-      @DateTimeConverter()
-          DateTime? drafted,
-      @JsonKey(name: 'gentime')
-          int gentime,
-      @JsonKey(name: 'chat_type')
-          String chatType,
-      @JsonKey(name: 'chat')
-          String chat,
-      @JsonKey(name: 'links')
-          List<MessageLink>? links,
-      @JsonKey(name: 'markup')
-          List<MarkupEntity>? markup,
-      @JsonKey(name: 'important')
-          bool? important,
-      @JsonKey(name: 'edited')
-      @DateTimeConverter()
-          DateTime? edited,
-      @JsonKey(name: 'received')
-          bool? received,
-      @JsonKey(name: 'num_received')
-          int? numReceived,
-      @JsonKey(name: 'nopreview')
-          bool? nopreview,
-      @JsonKey(name: 'has_previews')
-          bool? hasPreviews,
-      @JsonKey(name: 'prev')
-          String? prev,
-      @JsonKey(name: 'is_first')
-          bool? isFirst,
-      @JsonKey(name: 'is_last')
-          bool? isLast,
-      @JsonKey(name: 'uploads')
-          List<Upload>? uploads,
-      @JsonKey(name: 'reactions')
-          List<MessageReaction>? reactions,
-      @JsonKey(name: 'reply_to')
-          Message? replyTo,
-      @JsonKey(name: 'linked_messages')
-          List<Message>? linkedMessages,
-      @JsonKey(name: 'notice')
-          bool? notice,
-      @JsonKey(name: 'silently')
-          bool? silently,
-      @JsonKey(name: 'editable_until')
-      @DateTimeConverter()
-          DateTime? editableUntil,
-      @JsonKey(name: 'num')
-          int? num,
-      @JsonKey(name: 'is_archive')
-          bool? isArchive,
-      @JsonKey(name: '_debug')
-          String? debug});
+      {@JsonKey(name: 'content') MessageContent content,
+      @JsonKey(name: 'push_text') String? pushText,
+      @JsonKey(name: 'from') String from,
+      @JsonKey(name: 'to') String to,
+      @JsonKey(name: 'message_id') String messageId,
+      @JsonKey(name: 'created') String created,
+      @JsonKey(name: 'drafted') String? drafted,
+      @JsonKey(name: 'gentime') int gentime,
+      @JsonKey(name: 'chat_type') String chatType,
+      @JsonKey(name: 'chat') String chat,
+      @JsonKey(name: 'links') List<MessageLink>? links,
+      @JsonKey(name: 'markup') List<MarkupEntity>? markup,
+      @JsonKey(name: 'important') bool? important,
+      @JsonKey(name: 'edited') String? edited,
+      @JsonKey(name: 'received') bool? received,
+      @JsonKey(name: 'num_received') int? numReceived,
+      @JsonKey(name: 'nopreview') bool? nopreview,
+      @JsonKey(name: 'has_previews') bool? hasPreviews,
+      @JsonKey(name: 'prev') String? prev,
+      @JsonKey(name: 'is_first') bool? isFirst,
+      @JsonKey(name: 'is_last') bool? isLast,
+      @JsonKey(name: 'uploads') List<Upload>? uploads,
+      @JsonKey(name: 'reactions') List<MessageReaction>? reactions,
+      @JsonKey(name: 'reply_to') Message? replyTo,
+      @JsonKey(name: 'linked_messages') List<Message>? linkedMessages,
+      @JsonKey(name: 'notice') bool? notice,
+      @JsonKey(name: 'silently') bool? silently,
+      @JsonKey(name: 'editable_until') String? editableUntil,
+      @JsonKey(name: 'num') int? num,
+      @JsonKey(name: 'is_archive') bool? isArchive,
+      @JsonKey(name: '_debug') String? debug});
 
   @override
   $MessageContentCopyWith<$Res> get content;
@@ -677,11 +568,11 @@ class __$MessageCopyWithImpl<$Res> extends _$MessageCopyWithImpl<$Res>
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       drafted: drafted == freezed
           ? _value.drafted
           : drafted // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       gentime: gentime == freezed
           ? _value.gentime
           : gentime // ignore: cast_nullable_to_non_nullable
@@ -709,7 +600,7 @@ class __$MessageCopyWithImpl<$Res> extends _$MessageCopyWithImpl<$Res>
       edited: edited == freezed
           ? _value.edited
           : edited // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       received: received == freezed
           ? _value.received
           : received // ignore: cast_nullable_to_non_nullable
@@ -765,7 +656,7 @@ class __$MessageCopyWithImpl<$Res> extends _$MessageCopyWithImpl<$Res>
       editableUntil: editableUntil == freezed
           ? _value.editableUntil
           : editableUntil // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       num: num == freezed
           ? _value.num
           : num // ignore: cast_nullable_to_non_nullable
@@ -791,15 +682,15 @@ class _$_Message implements _Message {
       @JsonKey(name: 'from') required this.from,
       @JsonKey(name: 'to') required this.to,
       @JsonKey(name: 'message_id') required this.messageId,
-      @JsonKey(name: 'created') @DateTimeConverter() required this.created,
-      @JsonKey(name: 'drafted') @DateTimeConverter() this.drafted,
+      @JsonKey(name: 'created') required this.created,
+      @JsonKey(name: 'drafted') this.drafted,
       @JsonKey(name: 'gentime') required this.gentime,
       @JsonKey(name: 'chat_type') required this.chatType,
       @JsonKey(name: 'chat') required this.chat,
       @JsonKey(name: 'links') this.links,
       @JsonKey(name: 'markup') this.markup,
       @JsonKey(name: 'important') this.important,
-      @JsonKey(name: 'edited') @DateTimeConverter() this.edited,
+      @JsonKey(name: 'edited') this.edited,
       @JsonKey(name: 'received') this.received,
       @JsonKey(name: 'num_received') this.numReceived,
       @JsonKey(name: 'nopreview') this.nopreview,
@@ -813,7 +704,7 @@ class _$_Message implements _Message {
       @JsonKey(name: 'linked_messages') this.linkedMessages,
       @JsonKey(name: 'notice') this.notice,
       @JsonKey(name: 'silently') this.silently,
-      @JsonKey(name: 'editable_until') @DateTimeConverter() this.editableUntil,
+      @JsonKey(name: 'editable_until') this.editableUntil,
       @JsonKey(name: 'num') this.num,
       @JsonKey(name: 'is_archive') this.isArchive,
       @JsonKey(name: '_debug') this.debug});
@@ -850,14 +741,12 @@ class _$_Message implements _Message {
 
   /// Message creation datetime (set by server side) or sending datetime in future for draft messages.
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  final DateTime created;
+  final String created;
   @override
 
   /// Creation datetime for draft messages.
   @JsonKey(name: 'drafted')
-  @DateTimeConverter()
-  final DateTime? drafted;
+  final String? drafted;
   @override
 
   /// Object version.
@@ -892,8 +781,7 @@ class _$_Message implements _Message {
 
   /// ISODateTimeString of message modification or deletion.
   @JsonKey(name: 'edited')
-  @DateTimeConverter()
-  final DateTime? edited;
+  final String? edited;
   @override
 
   /// Message was seen by anybody in chat. True or null.
@@ -963,8 +851,7 @@ class _$_Message implements _Message {
 
   /// Author can change this message until date. Can be null.
   @JsonKey(name: 'editable_until')
-  @DateTimeConverter()
-  final DateTime? editableUntil;
+  final String? editableUntil;
   @override
 
   /// Index number of this message. Starts from 0. Null for deleted messages. Changes when any previous message wad deleted.
@@ -1114,72 +1001,37 @@ class _$_Message implements _Message {
 
 abstract class _Message implements Message {
   const factory _Message(
-      {@JsonKey(name: 'content')
-          required MessageContent content,
-      @JsonKey(name: 'push_text')
-          String? pushText,
-      @JsonKey(name: 'from')
-          required String from,
-      @JsonKey(name: 'to')
-          required String to,
-      @JsonKey(name: 'message_id')
-          required String messageId,
-      @JsonKey(name: 'created')
-      @DateTimeConverter()
-          required DateTime created,
-      @JsonKey(name: 'drafted')
-      @DateTimeConverter()
-          DateTime? drafted,
-      @JsonKey(name: 'gentime')
-          required int gentime,
-      @JsonKey(name: 'chat_type')
-          required String chatType,
-      @JsonKey(name: 'chat')
-          required String chat,
-      @JsonKey(name: 'links')
-          List<MessageLink>? links,
-      @JsonKey(name: 'markup')
-          List<MarkupEntity>? markup,
-      @JsonKey(name: 'important')
-          bool? important,
-      @JsonKey(name: 'edited')
-      @DateTimeConverter()
-          DateTime? edited,
-      @JsonKey(name: 'received')
-          bool? received,
-      @JsonKey(name: 'num_received')
-          int? numReceived,
-      @JsonKey(name: 'nopreview')
-          bool? nopreview,
-      @JsonKey(name: 'has_previews')
-          bool? hasPreviews,
-      @JsonKey(name: 'prev')
-          String? prev,
-      @JsonKey(name: 'is_first')
-          bool? isFirst,
-      @JsonKey(name: 'is_last')
-          bool? isLast,
-      @JsonKey(name: 'uploads')
-          List<Upload>? uploads,
-      @JsonKey(name: 'reactions')
-          List<MessageReaction>? reactions,
-      @JsonKey(name: 'reply_to')
-          Message? replyTo,
-      @JsonKey(name: 'linked_messages')
-          List<Message>? linkedMessages,
-      @JsonKey(name: 'notice')
-          bool? notice,
-      @JsonKey(name: 'silently')
-          bool? silently,
-      @JsonKey(name: 'editable_until')
-      @DateTimeConverter()
-          DateTime? editableUntil,
-      @JsonKey(name: 'num')
-          int? num,
-      @JsonKey(name: 'is_archive')
-          bool? isArchive,
-      @JsonKey(name: '_debug')
-          String? debug}) = _$_Message;
+      {@JsonKey(name: 'content') required MessageContent content,
+      @JsonKey(name: 'push_text') String? pushText,
+      @JsonKey(name: 'from') required String from,
+      @JsonKey(name: 'to') required String to,
+      @JsonKey(name: 'message_id') required String messageId,
+      @JsonKey(name: 'created') required String created,
+      @JsonKey(name: 'drafted') String? drafted,
+      @JsonKey(name: 'gentime') required int gentime,
+      @JsonKey(name: 'chat_type') required String chatType,
+      @JsonKey(name: 'chat') required String chat,
+      @JsonKey(name: 'links') List<MessageLink>? links,
+      @JsonKey(name: 'markup') List<MarkupEntity>? markup,
+      @JsonKey(name: 'important') bool? important,
+      @JsonKey(name: 'edited') String? edited,
+      @JsonKey(name: 'received') bool? received,
+      @JsonKey(name: 'num_received') int? numReceived,
+      @JsonKey(name: 'nopreview') bool? nopreview,
+      @JsonKey(name: 'has_previews') bool? hasPreviews,
+      @JsonKey(name: 'prev') String? prev,
+      @JsonKey(name: 'is_first') bool? isFirst,
+      @JsonKey(name: 'is_last') bool? isLast,
+      @JsonKey(name: 'uploads') List<Upload>? uploads,
+      @JsonKey(name: 'reactions') List<MessageReaction>? reactions,
+      @JsonKey(name: 'reply_to') Message? replyTo,
+      @JsonKey(name: 'linked_messages') List<Message>? linkedMessages,
+      @JsonKey(name: 'notice') bool? notice,
+      @JsonKey(name: 'silently') bool? silently,
+      @JsonKey(name: 'editable_until') String? editableUntil,
+      @JsonKey(name: 'num') int? num,
+      @JsonKey(name: 'is_archive') bool? isArchive,
+      @JsonKey(name: '_debug') String? debug}) = _$_Message;
 
   factory _Message.fromJson(Map<String, dynamic> json) = _$_Message.fromJson;
 
@@ -1212,14 +1064,12 @@ abstract class _Message implements Message {
 
   /// Message creation datetime (set by server side) or sending datetime in future for draft messages.
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  DateTime get created => throw _privateConstructorUsedError;
+  String get created => throw _privateConstructorUsedError;
   @override
 
   /// Creation datetime for draft messages.
   @JsonKey(name: 'drafted')
-  @DateTimeConverter()
-  DateTime? get drafted => throw _privateConstructorUsedError;
+  String? get drafted => throw _privateConstructorUsedError;
   @override
 
   /// Object version.
@@ -1254,8 +1104,7 @@ abstract class _Message implements Message {
 
   /// ISODateTimeString of message modification or deletion.
   @JsonKey(name: 'edited')
-  @DateTimeConverter()
-  DateTime? get edited => throw _privateConstructorUsedError;
+  String? get edited => throw _privateConstructorUsedError;
   @override
 
   /// Message was seen by anybody in chat. True or null.
@@ -1325,8 +1174,7 @@ abstract class _Message implements Message {
 
   /// Author can change this message until date. Can be null.
   @JsonKey(name: 'editable_until')
-  @DateTimeConverter()
-  DateTime? get editableUntil => throw _privateConstructorUsedError;
+  String? get editableUntil => throw _privateConstructorUsedError;
   @override
 
   /// Index number of this message. Starts from 0. Null for deleted messages. Changes when any previous message wad deleted.

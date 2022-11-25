@@ -22,21 +22,13 @@ class _$ChatCountersTearOff {
   const _$ChatCountersTearOff();
 
   _ChatCounters call(
-      {@JsonKey(name: 'jid')
-          required String jid,
-      @JsonKey(name: 'chat_type')
-          required String chatType,
-      @JsonKey(name: 'gentime')
-          required int gentime,
-      @JsonKey(name: 'num_unread')
-          required int numUnread,
-      @JsonKey(name: 'num_unread_notices')
-          required int numUnreadNotices,
-      @JsonKey(name: 'last_read_message_id')
-          String? lastReadMessageUid,
-      @JsonKey(name: 'last_activity')
-      @DateTimeConverter()
-          DateTime? lastActivity}) {
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'chat_type') required String chatType,
+      @JsonKey(name: 'gentime') required int gentime,
+      @JsonKey(name: 'num_unread') required int numUnread,
+      @JsonKey(name: 'num_unread_notices') required int numUnreadNotices,
+      @JsonKey(name: 'last_read_message_id') String? lastReadMessageUid,
+      @JsonKey(name: 'last_activity') String? lastActivity}) {
     return _ChatCounters(
       jid: jid,
       chatType: chatType,
@@ -84,8 +76,7 @@ mixin _$ChatCounters {
 
   /// .
   @JsonKey(name: 'last_activity')
-  @DateTimeConverter()
-  DateTime? get lastActivity => throw _privateConstructorUsedError;
+  String? get lastActivity => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -99,21 +90,13 @@ abstract class $ChatCountersCopyWith<$Res> {
           ChatCounters value, $Res Function(ChatCounters) then) =
       _$ChatCountersCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'jid')
-          String jid,
-      @JsonKey(name: 'chat_type')
-          String chatType,
-      @JsonKey(name: 'gentime')
-          int gentime,
-      @JsonKey(name: 'num_unread')
-          int numUnread,
-      @JsonKey(name: 'num_unread_notices')
-          int numUnreadNotices,
-      @JsonKey(name: 'last_read_message_id')
-          String? lastReadMessageUid,
-      @JsonKey(name: 'last_activity')
-      @DateTimeConverter()
-          DateTime? lastActivity});
+      {@JsonKey(name: 'jid') String jid,
+      @JsonKey(name: 'chat_type') String chatType,
+      @JsonKey(name: 'gentime') int gentime,
+      @JsonKey(name: 'num_unread') int numUnread,
+      @JsonKey(name: 'num_unread_notices') int numUnreadNotices,
+      @JsonKey(name: 'last_read_message_id') String? lastReadMessageUid,
+      @JsonKey(name: 'last_activity') String? lastActivity});
 }
 
 /// @nodoc
@@ -162,7 +145,7 @@ class _$ChatCountersCopyWithImpl<$Res> implements $ChatCountersCopyWith<$Res> {
       lastActivity: lastActivity == freezed
           ? _value.lastActivity
           : lastActivity // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
     ));
   }
 }
@@ -175,21 +158,13 @@ abstract class _$ChatCountersCopyWith<$Res>
       __$ChatCountersCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'jid')
-          String jid,
-      @JsonKey(name: 'chat_type')
-          String chatType,
-      @JsonKey(name: 'gentime')
-          int gentime,
-      @JsonKey(name: 'num_unread')
-          int numUnread,
-      @JsonKey(name: 'num_unread_notices')
-          int numUnreadNotices,
-      @JsonKey(name: 'last_read_message_id')
-          String? lastReadMessageUid,
-      @JsonKey(name: 'last_activity')
-      @DateTimeConverter()
-          DateTime? lastActivity});
+      {@JsonKey(name: 'jid') String jid,
+      @JsonKey(name: 'chat_type') String chatType,
+      @JsonKey(name: 'gentime') int gentime,
+      @JsonKey(name: 'num_unread') int numUnread,
+      @JsonKey(name: 'num_unread_notices') int numUnreadNotices,
+      @JsonKey(name: 'last_read_message_id') String? lastReadMessageUid,
+      @JsonKey(name: 'last_activity') String? lastActivity});
 }
 
 /// @nodoc
@@ -240,7 +215,7 @@ class __$ChatCountersCopyWithImpl<$Res> extends _$ChatCountersCopyWithImpl<$Res>
       lastActivity: lastActivity == freezed
           ? _value.lastActivity
           : lastActivity // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
     ));
   }
 }
@@ -255,7 +230,7 @@ class _$_ChatCounters implements _ChatCounters {
       @JsonKey(name: 'num_unread') required this.numUnread,
       @JsonKey(name: 'num_unread_notices') required this.numUnreadNotices,
       @JsonKey(name: 'last_read_message_id') this.lastReadMessageUid,
-      @JsonKey(name: 'last_activity') @DateTimeConverter() this.lastActivity});
+      @JsonKey(name: 'last_activity') this.lastActivity});
 
   factory _$_ChatCounters.fromJson(Map<String, dynamic> json) =>
       _$$_ChatCountersFromJson(json);
@@ -294,8 +269,7 @@ class _$_ChatCounters implements _ChatCounters {
 
   /// .
   @JsonKey(name: 'last_activity')
-  @DateTimeConverter()
-  final DateTime? lastActivity;
+  final String? lastActivity;
 
   @override
   String toString() {
@@ -352,21 +326,13 @@ class _$_ChatCounters implements _ChatCounters {
 
 abstract class _ChatCounters implements ChatCounters {
   const factory _ChatCounters(
-      {@JsonKey(name: 'jid')
-          required String jid,
-      @JsonKey(name: 'chat_type')
-          required String chatType,
-      @JsonKey(name: 'gentime')
-          required int gentime,
-      @JsonKey(name: 'num_unread')
-          required int numUnread,
-      @JsonKey(name: 'num_unread_notices')
-          required int numUnreadNotices,
-      @JsonKey(name: 'last_read_message_id')
-          String? lastReadMessageUid,
-      @JsonKey(name: 'last_activity')
-      @DateTimeConverter()
-          DateTime? lastActivity}) = _$_ChatCounters;
+      {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'chat_type') required String chatType,
+      @JsonKey(name: 'gentime') required int gentime,
+      @JsonKey(name: 'num_unread') required int numUnread,
+      @JsonKey(name: 'num_unread_notices') required int numUnreadNotices,
+      @JsonKey(name: 'last_read_message_id') String? lastReadMessageUid,
+      @JsonKey(name: 'last_activity') String? lastActivity}) = _$_ChatCounters;
 
   factory _ChatCounters.fromJson(Map<String, dynamic> json) =
       _$_ChatCounters.fromJson;
@@ -405,8 +371,7 @@ abstract class _ChatCounters implements ChatCounters {
 
   /// .
   @JsonKey(name: 'last_activity')
-  @DateTimeConverter()
-  DateTime? get lastActivity => throw _privateConstructorUsedError;
+  String? get lastActivity => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ChatCountersCopyWith<_ChatCounters> get copyWith =>

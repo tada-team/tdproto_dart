@@ -12,8 +12,8 @@ _$_Meeting _$$_MeetingFromJson(Map<String, dynamic> json) => _$_Meeting(
       ownerContactUuid: json['owner_contact_uuid'] as String?,
       ownerUserUuid: json['owner_user_uuid'] as String?,
       personalAccountId: json['personal_account_id'] as String?,
-      startAt: const DateTimeConverter().fromJson(json['start_at'] as String),
-      endAt: const DateTimeConverter().fromJson(json['end_at'] as String),
+      startAt: json['start_at'] as String,
+      endAt: json['end_at'] as String,
       duration: json['duration'] as int,
       freq: json['freq'] == null
           ? null
@@ -34,7 +34,7 @@ _$_Meeting _$$_MeetingFromJson(Map<String, dynamic> json) => _$_Meeting(
       chatType: json['chat_type'] as String,
       baseGentime: json['base_gentime'] as int?,
       gentime: json['gentime'] as int,
-      created: const DateTimeConverter().fromJson(json['created'] as String),
+      created: json['created'] as String,
       displayName: json['display_name'] as String,
       icons: IconData.fromJson(json['icons'] as Map<String, dynamic>),
       countersEnabled: json['counters_enabled'] as bool?,
@@ -80,12 +80,9 @@ _$_Meeting _$$_MeetingFromJson(Map<String, dynamic> json) => _$_Meeting(
       owner: json['owner'] as String?,
       taskStatus: json['task_status'] as String?,
       title: json['title'] as String?,
-      done:
-          json['done'] == null ? null : DateTime.parse(json['done'] as String),
+      done: json['done'] as String?,
       doneReason: json['done_reason'] as String?,
-      deadline: json['deadline'] == null
-          ? null
-          : DateTime.parse(json['deadline'] as String),
+      deadline: json['deadline'] as String?,
       deadlineExpired: json['deadline_expired'] as bool?,
       links: (json['links'] as List<dynamic>?)
           ?.map((e) => MessageLink.fromJson(e as Map<String, dynamic>))
@@ -121,13 +118,9 @@ _$_Meeting _$$_MeetingFromJson(Map<String, dynamic> json) => _$_Meeting(
       canJoin: json['can_join'] as bool?,
       canDeleteAnyMessage: json['can_delete_any_message'] as bool?,
       canSetImportantAnyMessage: json['can_set_important_any_message'] as bool?,
-      lastActivity: json['last_activity'] == null
-          ? null
-          : DateTime.parse(json['last_activity'] as String),
+      lastActivity: json['last_activity'] as String?,
       draftNum: json['draft_num'] as int?,
-      meetingStartAt: json['meeting_start_at'] == null
-          ? null
-          : DateTime.parse(json['meeting_start_at'] as String),
+      meetingStartAt: json['meeting_start_at'] as String?,
       meetingFreq: json['meeting_freq'] as bool?,
       meetingDuration: json['meeting_duration'] as int?,
     );
@@ -139,8 +132,8 @@ Map<String, dynamic> _$$_MeetingToJson(_$_Meeting instance) =>
       'owner_contact_uuid': instance.ownerContactUuid,
       'owner_user_uuid': instance.ownerUserUuid,
       'personal_account_id': instance.personalAccountId,
-      'start_at': const DateTimeConverter().toJson(instance.startAt),
-      'end_at': const DateTimeConverter().toJson(instance.endAt),
+      'start_at': instance.startAt,
+      'end_at': instance.endAt,
       'duration': instance.duration,
       'freq': instance.freq?.toJson(),
       'is_archive': instance.isArchive,
@@ -156,7 +149,7 @@ Map<String, dynamic> _$$_MeetingToJson(_$_Meeting instance) =>
       'chat_type': instance.chatType,
       'base_gentime': instance.baseGentime,
       'gentime': instance.gentime,
-      'created': const DateTimeConverter().toJson(instance.created),
+      'created': instance.created,
       'display_name': instance.displayName,
       'icons': instance.icons.toJson(),
       'counters_enabled': instance.countersEnabled,
@@ -192,9 +185,9 @@ Map<String, dynamic> _$$_MeetingToJson(_$_Meeting instance) =>
       'owner': instance.owner,
       'task_status': instance.taskStatus,
       'title': instance.title,
-      'done': instance.done?.toIso8601String(),
+      'done': instance.done,
       'done_reason': instance.doneReason,
-      'deadline': instance.deadline?.toIso8601String(),
+      'deadline': instance.deadline,
       'deadline_expired': instance.deadlineExpired,
       'links': instance.links?.map((e) => e.toJson()).toList(),
       'tags': instance.tags,
@@ -220,9 +213,9 @@ Map<String, dynamic> _$$_MeetingToJson(_$_Meeting instance) =>
       'can_join': instance.canJoin,
       'can_delete_any_message': instance.canDeleteAnyMessage,
       'can_set_important_any_message': instance.canSetImportantAnyMessage,
-      'last_activity': instance.lastActivity?.toIso8601String(),
+      'last_activity': instance.lastActivity,
       'draft_num': instance.draftNum,
-      'meeting_start_at': instance.meetingStartAt?.toIso8601String(),
+      'meeting_start_at': instance.meetingStartAt,
       'meeting_freq': instance.meetingFreq,
       'meeting_duration': instance.meetingDuration,
     };

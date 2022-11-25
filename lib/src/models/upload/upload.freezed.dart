@@ -23,7 +23,7 @@ class _$UploadTearOff {
 
   _Upload call(
       {@JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'created') required String created,
       @JsonKey(name: 'size') required int size,
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'name') required String name,
@@ -68,8 +68,7 @@ mixin _$Upload {
 
   /// Uploaded at.
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  DateTime get created => throw _privateConstructorUsedError;
+  String get created => throw _privateConstructorUsedError;
 
   /// Upload size in bytes.
   @JsonKey(name: 'size')
@@ -126,7 +125,7 @@ abstract class $UploadCopyWith<$Res> {
       _$UploadCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
+      @JsonKey(name: 'created') String created,
       @JsonKey(name: 'size') int size,
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'name') String name,
@@ -175,7 +174,7 @@ class _$UploadCopyWithImpl<$Res> implements $UploadCopyWith<$Res> {
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       size: size == freezed
           ? _value.size
           : size // ignore: cast_nullable_to_non_nullable
@@ -253,7 +252,7 @@ abstract class _$UploadCopyWith<$Res> implements $UploadCopyWith<$Res> {
   @override
   $Res call(
       {@JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
+      @JsonKey(name: 'created') String created,
       @JsonKey(name: 'size') int size,
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'name') String name,
@@ -305,7 +304,7 @@ class __$UploadCopyWithImpl<$Res> extends _$UploadCopyWithImpl<$Res>
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       size: size == freezed
           ? _value.size
           : size // ignore: cast_nullable_to_non_nullable
@@ -359,7 +358,7 @@ class __$UploadCopyWithImpl<$Res> extends _$UploadCopyWithImpl<$Res>
 class _$_Upload implements _Upload {
   const _$_Upload(
       {@JsonKey(name: 'uid') required this.uid,
-      @JsonKey(name: 'created') @DateTimeConverter() required this.created,
+      @JsonKey(name: 'created') required this.created,
       @JsonKey(name: 'size') required this.size,
       @JsonKey(name: 'duration') this.duration,
       @JsonKey(name: 'name') required this.name,
@@ -384,8 +383,7 @@ class _$_Upload implements _Upload {
 
   /// Uploaded at.
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  final DateTime created;
+  final String created;
   @override
 
   /// Upload size in bytes.
@@ -519,7 +517,7 @@ class _$_Upload implements _Upload {
 abstract class _Upload implements Upload {
   const factory _Upload(
       {@JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'created') required String created,
       @JsonKey(name: 'size') required int size,
       @JsonKey(name: 'duration') int? duration,
       @JsonKey(name: 'name') required String name,
@@ -543,8 +541,7 @@ abstract class _Upload implements Upload {
 
   /// Uploaded at.
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  DateTime get created => throw _privateConstructorUsedError;
+  String get created => throw _privateConstructorUsedError;
   @override
 
   /// Upload size in bytes.

@@ -8,7 +8,7 @@ part of 'session.dart';
 
 _$_Session _$$_SessionFromJson(Map<String, dynamic> json) => _$_Session(
       uid: json['uid'] as String,
-      created: const DateTimeConverter().fromJson(json['created'] as String),
+      created: json['created'] as String,
       lang: json['lang'] as String?,
       team: json['team'] as String?,
       isMobile: json['is_mobile'] as bool?,
@@ -20,7 +20,7 @@ _$_Session _$$_SessionFromJson(Map<String, dynamic> json) => _$_Session(
 Map<String, dynamic> _$$_SessionToJson(_$_Session instance) =>
     <String, dynamic>{
       'uid': instance.uid,
-      'created': const DateTimeConverter().toJson(instance.created),
+      'created': instance.created,
       'lang': instance.lang,
       'team': instance.team,
       'is_mobile': instance.isMobile,

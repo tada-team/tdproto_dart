@@ -12,7 +12,7 @@ class MeetingsDeleteRequestParams with _$MeetingsDeleteRequestParams {
     @JsonKey(name: 'team_uuid') required String teamUuid,
     
     /// .
-    @JsonKey(name: 'date') @DateTimeConverter() DateTime? date,
+    @JsonKey(name: 'date') String? date,
     
     
   }) = _MeetingsDeleteRequestParams;

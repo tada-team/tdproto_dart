@@ -25,7 +25,7 @@ class _$ShortMessageTearOff {
       {@JsonKey(name: 'from') required String from,
       @JsonKey(name: 'to') required String to,
       @JsonKey(name: 'message_id') required String messageId,
-      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'created') required String created,
       @JsonKey(name: 'gentime') required int gentime,
       @JsonKey(name: 'chat_type') required String chatType,
       @JsonKey(name: 'chat') required String chat,
@@ -66,8 +66,7 @@ mixin _$ShortMessage {
 
   /// Message creation datetime (set by server side) or sending datetime in future for draft messages.
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  DateTime get created => throw _privateConstructorUsedError;
+  String get created => throw _privateConstructorUsedError;
 
   /// Object version.
   @JsonKey(name: 'gentime')
@@ -100,7 +99,7 @@ abstract class $ShortMessageCopyWith<$Res> {
       {@JsonKey(name: 'from') String from,
       @JsonKey(name: 'to') String to,
       @JsonKey(name: 'message_id') String messageId,
-      @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
+      @JsonKey(name: 'created') String created,
       @JsonKey(name: 'gentime') int gentime,
       @JsonKey(name: 'chat_type') String chatType,
       @JsonKey(name: 'chat') String chat,
@@ -142,7 +141,7 @@ class _$ShortMessageCopyWithImpl<$Res> implements $ShortMessageCopyWith<$Res> {
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       gentime: gentime == freezed
           ? _value.gentime
           : gentime // ignore: cast_nullable_to_non_nullable
@@ -174,7 +173,7 @@ abstract class _$ShortMessageCopyWith<$Res>
       {@JsonKey(name: 'from') String from,
       @JsonKey(name: 'to') String to,
       @JsonKey(name: 'message_id') String messageId,
-      @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
+      @JsonKey(name: 'created') String created,
       @JsonKey(name: 'gentime') int gentime,
       @JsonKey(name: 'chat_type') String chatType,
       @JsonKey(name: 'chat') String chat,
@@ -218,7 +217,7 @@ class __$ShortMessageCopyWithImpl<$Res> extends _$ShortMessageCopyWithImpl<$Res>
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       gentime: gentime == freezed
           ? _value.gentime
           : gentime // ignore: cast_nullable_to_non_nullable
@@ -246,7 +245,7 @@ class _$_ShortMessage implements _ShortMessage {
       {@JsonKey(name: 'from') required this.from,
       @JsonKey(name: 'to') required this.to,
       @JsonKey(name: 'message_id') required this.messageId,
-      @JsonKey(name: 'created') @DateTimeConverter() required this.created,
+      @JsonKey(name: 'created') required this.created,
       @JsonKey(name: 'gentime') required this.gentime,
       @JsonKey(name: 'chat_type') required this.chatType,
       @JsonKey(name: 'chat') required this.chat,
@@ -274,8 +273,7 @@ class _$_ShortMessage implements _ShortMessage {
 
   /// Message creation datetime (set by server side) or sending datetime in future for draft messages.
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  final DateTime created;
+  final String created;
   @override
 
   /// Object version.
@@ -357,7 +355,7 @@ abstract class _ShortMessage implements ShortMessage {
       {@JsonKey(name: 'from') required String from,
       @JsonKey(name: 'to') required String to,
       @JsonKey(name: 'message_id') required String messageId,
-      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'created') required String created,
       @JsonKey(name: 'gentime') required int gentime,
       @JsonKey(name: 'chat_type') required String chatType,
       @JsonKey(name: 'chat') required String chat,
@@ -385,8 +383,7 @@ abstract class _ShortMessage implements ShortMessage {
 
   /// Message creation datetime (set by server side) or sending datetime in future for draft messages.
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  DateTime get created => throw _privateConstructorUsedError;
+  String get created => throw _privateConstructorUsedError;
   @override
 
   /// Object version.

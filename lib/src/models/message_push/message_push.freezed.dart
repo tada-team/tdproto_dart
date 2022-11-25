@@ -22,29 +22,17 @@ class _$MessagePushTearOff {
   const _$MessagePushTearOff();
 
   _MessagePush call(
-      {@JsonKey(name: 'title')
-          required String title,
-      @JsonKey(name: 'subtitle')
-          required String subtitle,
-      @JsonKey(name: 'message')
-          required String message,
-      @JsonKey(name: 'icon_url')
-          required String iconUrl,
-      @JsonKey(name: 'click_action')
-          required String clickAction,
-      @JsonKey(name: 'tag')
-          required String tag,
-      @JsonKey(name: 'team')
-          required String team,
-      @JsonKey(name: 'sender')
-          required String sender,
-      @JsonKey(name: 'chat')
-          required String chat,
-      @JsonKey(name: 'message_id')
-          required String messageId,
-      @JsonKey(name: 'created')
-      @DateTimeConverter()
-          required DateTime created}) {
+      {@JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'subtitle') required String subtitle,
+      @JsonKey(name: 'message') required String message,
+      @JsonKey(name: 'icon_url') required String iconUrl,
+      @JsonKey(name: 'click_action') required String clickAction,
+      @JsonKey(name: 'tag') required String tag,
+      @JsonKey(name: 'team') required String team,
+      @JsonKey(name: 'sender') required String sender,
+      @JsonKey(name: 'chat') required String chat,
+      @JsonKey(name: 'message_id') required String messageId,
+      @JsonKey(name: 'created') required String created}) {
     return _MessagePush(
       title: title,
       subtitle: subtitle,
@@ -112,8 +100,7 @@ mixin _$MessagePush {
 
   /// Message creation iso datetime.
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  DateTime get created => throw _privateConstructorUsedError;
+  String get created => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -137,7 +124,7 @@ abstract class $MessagePushCopyWith<$Res> {
       @JsonKey(name: 'sender') String sender,
       @JsonKey(name: 'chat') String chat,
       @JsonKey(name: 'message_id') String messageId,
-      @JsonKey(name: 'created') @DateTimeConverter() DateTime created});
+      @JsonKey(name: 'created') String created});
 }
 
 /// @nodoc
@@ -206,7 +193,7 @@ class _$MessagePushCopyWithImpl<$Res> implements $MessagePushCopyWith<$Res> {
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
     ));
   }
 }
@@ -229,7 +216,7 @@ abstract class _$MessagePushCopyWith<$Res>
       @JsonKey(name: 'sender') String sender,
       @JsonKey(name: 'chat') String chat,
       @JsonKey(name: 'message_id') String messageId,
-      @JsonKey(name: 'created') @DateTimeConverter() DateTime created});
+      @JsonKey(name: 'created') String created});
 }
 
 /// @nodoc
@@ -300,7 +287,7 @@ class __$MessagePushCopyWithImpl<$Res> extends _$MessagePushCopyWithImpl<$Res>
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
     ));
   }
 }
@@ -319,7 +306,7 @@ class _$_MessagePush implements _MessagePush {
       @JsonKey(name: 'sender') required this.sender,
       @JsonKey(name: 'chat') required this.chat,
       @JsonKey(name: 'message_id') required this.messageId,
-      @JsonKey(name: 'created') @DateTimeConverter() required this.created});
+      @JsonKey(name: 'created') required this.created});
 
   factory _$_MessagePush.fromJson(Map<String, dynamic> json) =>
       _$$_MessagePushFromJson(json);
@@ -378,8 +365,7 @@ class _$_MessagePush implements _MessagePush {
 
   /// Message creation iso datetime.
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  final DateTime created;
+  final String created;
 
   @override
   String toString() {
@@ -447,29 +433,17 @@ class _$_MessagePush implements _MessagePush {
 
 abstract class _MessagePush implements MessagePush {
   const factory _MessagePush(
-      {@JsonKey(name: 'title')
-          required String title,
-      @JsonKey(name: 'subtitle')
-          required String subtitle,
-      @JsonKey(name: 'message')
-          required String message,
-      @JsonKey(name: 'icon_url')
-          required String iconUrl,
-      @JsonKey(name: 'click_action')
-          required String clickAction,
-      @JsonKey(name: 'tag')
-          required String tag,
-      @JsonKey(name: 'team')
-          required String team,
-      @JsonKey(name: 'sender')
-          required String sender,
-      @JsonKey(name: 'chat')
-          required String chat,
-      @JsonKey(name: 'message_id')
-          required String messageId,
-      @JsonKey(name: 'created')
-      @DateTimeConverter()
-          required DateTime created}) = _$_MessagePush;
+      {@JsonKey(name: 'title') required String title,
+      @JsonKey(name: 'subtitle') required String subtitle,
+      @JsonKey(name: 'message') required String message,
+      @JsonKey(name: 'icon_url') required String iconUrl,
+      @JsonKey(name: 'click_action') required String clickAction,
+      @JsonKey(name: 'tag') required String tag,
+      @JsonKey(name: 'team') required String team,
+      @JsonKey(name: 'sender') required String sender,
+      @JsonKey(name: 'chat') required String chat,
+      @JsonKey(name: 'message_id') required String messageId,
+      @JsonKey(name: 'created') required String created}) = _$_MessagePush;
 
   factory _MessagePush.fromJson(Map<String, dynamic> json) =
       _$_MessagePush.fromJson;
@@ -528,8 +502,7 @@ abstract class _MessagePush implements MessagePush {
 
   /// Message creation iso datetime.
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  DateTime get created => throw _privateConstructorUsedError;
+  String get created => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MessagePushCopyWith<_MessagePush> get copyWith =>

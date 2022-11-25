@@ -23,7 +23,7 @@ class _$SessionTearOff {
 
   _Session call(
       {@JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'created') required String created,
       @JsonKey(name: 'lang') String? lang,
       @JsonKey(name: 'team') String? team,
       @JsonKey(name: 'is_mobile') bool? isMobile,
@@ -58,8 +58,7 @@ mixin _$Session {
 
   /// Creation datetime.
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  DateTime get created => throw _privateConstructorUsedError;
+  String get created => throw _privateConstructorUsedError;
 
   /// Language code.
   @JsonKey(name: 'lang')
@@ -96,7 +95,7 @@ abstract class $SessionCopyWith<$Res> {
       _$SessionCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
+      @JsonKey(name: 'created') String created,
       @JsonKey(name: 'lang') String? lang,
       @JsonKey(name: 'team') String? team,
       @JsonKey(name: 'is_mobile') bool? isMobile,
@@ -132,7 +131,7 @@ class _$SessionCopyWithImpl<$Res> implements $SessionCopyWith<$Res> {
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       lang: lang == freezed
           ? _value.lang
           : lang // ignore: cast_nullable_to_non_nullable
@@ -168,7 +167,7 @@ abstract class _$SessionCopyWith<$Res> implements $SessionCopyWith<$Res> {
   @override
   $Res call(
       {@JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
+      @JsonKey(name: 'created') String created,
       @JsonKey(name: 'lang') String? lang,
       @JsonKey(name: 'team') String? team,
       @JsonKey(name: 'is_mobile') bool? isMobile,
@@ -205,7 +204,7 @@ class __$SessionCopyWithImpl<$Res> extends _$SessionCopyWithImpl<$Res>
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       lang: lang == freezed
           ? _value.lang
           : lang // ignore: cast_nullable_to_non_nullable
@@ -239,7 +238,7 @@ class __$SessionCopyWithImpl<$Res> extends _$SessionCopyWithImpl<$Res>
 class _$_Session implements _Session {
   const _$_Session(
       {@JsonKey(name: 'uid') required this.uid,
-      @JsonKey(name: 'created') @DateTimeConverter() required this.created,
+      @JsonKey(name: 'created') required this.created,
       @JsonKey(name: 'lang') this.lang,
       @JsonKey(name: 'team') this.team,
       @JsonKey(name: 'is_mobile') this.isMobile,
@@ -259,8 +258,7 @@ class _$_Session implements _Session {
 
   /// Creation datetime.
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  final DateTime created;
+  final String created;
   @override
 
   /// Language code.
@@ -348,7 +346,7 @@ class _$_Session implements _Session {
 abstract class _Session implements Session {
   const factory _Session(
       {@JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'created') required String created,
       @JsonKey(name: 'lang') String? lang,
       @JsonKey(name: 'team') String? team,
       @JsonKey(name: 'is_mobile') bool? isMobile,
@@ -367,8 +365,7 @@ abstract class _Session implements Session {
 
   /// Creation datetime.
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  DateTime get created => throw _privateConstructorUsedError;
+  String get created => throw _privateConstructorUsedError;
   @override
 
   /// Language code.

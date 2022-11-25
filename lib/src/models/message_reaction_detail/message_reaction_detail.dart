@@ -9,7 +9,7 @@ part 'message_reaction_detail.g.dart';
 class MessageReactionDetail with _$MessageReactionDetail {
   const factory MessageReactionDetail({
     /// When reaction added, iso datetime.
-    @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+    @JsonKey(name: 'created') required String created,
     
     /// Reaction author.
     @JsonKey(name: 'sender') required String sender,

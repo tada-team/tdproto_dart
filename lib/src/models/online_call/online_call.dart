@@ -15,7 +15,7 @@ class OnlineCall with _$OnlineCall {
     @JsonKey(name: 'uid') required String uid,
     
     /// Call start.
-    @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
+    @JsonKey(name: 'start') String? start,
     
     /// Number participants in call.
     @JsonKey(name: 'online_count') int? onlineCount,

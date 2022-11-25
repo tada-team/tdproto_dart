@@ -24,7 +24,7 @@ class _$InvitationTearOff {
   _Invitation call(
       {@JsonKey(name: 'uid') required String uid,
       @JsonKey(name: 'token') required String token,
-      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'created') required String created,
       @JsonKey(name: 'qr') required String qr}) {
     return _Invitation(
       uid: uid,
@@ -54,8 +54,7 @@ mixin _$Invitation {
 
   /// .
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  DateTime get created => throw _privateConstructorUsedError;
+  String get created => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'qr')
@@ -75,7 +74,7 @@ abstract class $InvitationCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'token') String token,
-      @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
+      @JsonKey(name: 'created') String created,
       @JsonKey(name: 'qr') String qr});
 }
 
@@ -106,7 +105,7 @@ class _$InvitationCopyWithImpl<$Res> implements $InvitationCopyWith<$Res> {
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       qr: qr == freezed
           ? _value.qr
           : qr // ignore: cast_nullable_to_non_nullable
@@ -124,7 +123,7 @@ abstract class _$InvitationCopyWith<$Res> implements $InvitationCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'token') String token,
-      @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
+      @JsonKey(name: 'created') String created,
       @JsonKey(name: 'qr') String qr});
 }
 
@@ -157,7 +156,7 @@ class __$InvitationCopyWithImpl<$Res> extends _$InvitationCopyWithImpl<$Res>
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+              as String,
       qr: qr == freezed
           ? _value.qr
           : qr // ignore: cast_nullable_to_non_nullable
@@ -172,7 +171,7 @@ class _$_Invitation implements _Invitation {
   const _$_Invitation(
       {@JsonKey(name: 'uid') required this.uid,
       @JsonKey(name: 'token') required this.token,
-      @JsonKey(name: 'created') @DateTimeConverter() required this.created,
+      @JsonKey(name: 'created') required this.created,
       @JsonKey(name: 'qr') required this.qr});
 
   factory _$_Invitation.fromJson(Map<String, dynamic> json) =>
@@ -192,8 +191,7 @@ class _$_Invitation implements _Invitation {
 
   /// .
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  final DateTime created;
+  final String created;
   @override
 
   /// .
@@ -243,7 +241,7 @@ abstract class _Invitation implements Invitation {
   const factory _Invitation(
       {@JsonKey(name: 'uid') required String uid,
       @JsonKey(name: 'token') required String token,
-      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
+      @JsonKey(name: 'created') required String created,
       @JsonKey(name: 'qr') required String qr}) = _$_Invitation;
 
   factory _Invitation.fromJson(Map<String, dynamic> json) =
@@ -263,8 +261,7 @@ abstract class _Invitation implements Invitation {
 
   /// .
   @JsonKey(name: 'created')
-  @DateTimeConverter()
-  DateTime get created => throw _privateConstructorUsedError;
+  String get created => throw _privateConstructorUsedError;
   @override
 
   /// .
