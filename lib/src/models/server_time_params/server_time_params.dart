@@ -9,7 +9,7 @@ part 'server_time_params.g.dart';
 class ServerTimeParams with _$ServerTimeParams {
   const factory ServerTimeParams({
     /// Current time.
-    @JsonKey(name: 'time') required String time,
+    @JsonKey(name: 'time') @DateTimeConverter() required DateTime time,
     
     
   }) = _ServerTimeParams;

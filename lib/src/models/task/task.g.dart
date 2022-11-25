@@ -17,9 +17,13 @@ _$_Task _$$_TaskFromJson(Map<String, dynamic> json) => _$_Task(
       items:
           (json['items'] as List<dynamic>?)?.map((e) => e as String).toList(),
       assignee: json['assignee'] as String?,
-      deadline: json['deadline'] as String?,
+      deadline: json['deadline'] == null
+          ? null
+          : DateTime.parse(json['deadline'] as String),
       isPublic: json['public'] as bool?,
-      remindAt: json['remind_at'] as String?,
+      remindAt: json['remind_at'] == null
+          ? null
+          : DateTime.parse(json['remind_at'] as String),
       taskStatus: json['task_status'] as String?,
       importance: json['importance'] as int?,
       urgency: json['urgency'] as int?,
@@ -40,9 +44,9 @@ Map<String, dynamic> _$$_TaskToJson(_$_Task instance) => <String, dynamic>{
       'observers': instance.observers,
       'items': instance.items,
       'assignee': instance.assignee,
-      'deadline': instance.deadline,
+      'deadline': instance.deadline?.toIso8601String(),
       'public': instance.isPublic,
-      'remind_at': instance.remindAt,
+      'remind_at': instance.remindAt?.toIso8601String(),
       'task_status': instance.taskStatus,
       'importance': instance.importance,
       'urgency': instance.urgency,

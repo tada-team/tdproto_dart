@@ -22,9 +22,13 @@ class _$InvitationToMeetingTearOff {
   const _$InvitationToMeetingTearOff();
 
   _InvitationToMeeting call(
-      {@JsonKey(name: 'description') required String description,
-      @JsonKey(name: 'date_start') required String dateStart,
-      @JsonKey(name: 'meeting_jid') required String meetingJid}) {
+      {@JsonKey(name: 'description')
+          required String description,
+      @JsonKey(name: 'date_start')
+      @DateTimeConverter()
+          required DateTime dateStart,
+      @JsonKey(name: 'meeting_jid')
+          required String meetingJid}) {
     return _InvitationToMeeting(
       description: description,
       dateStart: dateStart,
@@ -48,7 +52,8 @@ mixin _$InvitationToMeeting {
 
   /// .
   @JsonKey(name: 'date_start')
-  String get dateStart => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get dateStart => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'meeting_jid')
@@ -67,7 +72,7 @@ abstract class $InvitationToMeetingCopyWith<$Res> {
       _$InvitationToMeetingCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'description') String description,
-      @JsonKey(name: 'date_start') String dateStart,
+      @JsonKey(name: 'date_start') @DateTimeConverter() DateTime dateStart,
       @JsonKey(name: 'meeting_jid') String meetingJid});
 }
 
@@ -94,7 +99,7 @@ class _$InvitationToMeetingCopyWithImpl<$Res>
       dateStart: dateStart == freezed
           ? _value.dateStart
           : dateStart // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       meetingJid: meetingJid == freezed
           ? _value.meetingJid
           : meetingJid // ignore: cast_nullable_to_non_nullable
@@ -112,7 +117,7 @@ abstract class _$InvitationToMeetingCopyWith<$Res>
   @override
   $Res call(
       {@JsonKey(name: 'description') String description,
-      @JsonKey(name: 'date_start') String dateStart,
+      @JsonKey(name: 'date_start') @DateTimeConverter() DateTime dateStart,
       @JsonKey(name: 'meeting_jid') String meetingJid});
 }
 
@@ -141,7 +146,7 @@ class __$InvitationToMeetingCopyWithImpl<$Res>
       dateStart: dateStart == freezed
           ? _value.dateStart
           : dateStart // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       meetingJid: meetingJid == freezed
           ? _value.meetingJid
           : meetingJid // ignore: cast_nullable_to_non_nullable
@@ -155,7 +160,7 @@ class __$InvitationToMeetingCopyWithImpl<$Res>
 class _$_InvitationToMeeting implements _InvitationToMeeting {
   const _$_InvitationToMeeting(
       {@JsonKey(name: 'description') required this.description,
-      @JsonKey(name: 'date_start') required this.dateStart,
+      @JsonKey(name: 'date_start') @DateTimeConverter() required this.dateStart,
       @JsonKey(name: 'meeting_jid') required this.meetingJid});
 
   factory _$_InvitationToMeeting.fromJson(Map<String, dynamic> json) =>
@@ -170,7 +175,8 @@ class _$_InvitationToMeeting implements _InvitationToMeeting {
 
   /// .
   @JsonKey(name: 'date_start')
-  final String dateStart;
+  @DateTimeConverter()
+  final DateTime dateStart;
   @override
 
   /// .
@@ -218,10 +224,13 @@ class _$_InvitationToMeeting implements _InvitationToMeeting {
 
 abstract class _InvitationToMeeting implements InvitationToMeeting {
   const factory _InvitationToMeeting(
-          {@JsonKey(name: 'description') required String description,
-          @JsonKey(name: 'date_start') required String dateStart,
-          @JsonKey(name: 'meeting_jid') required String meetingJid}) =
-      _$_InvitationToMeeting;
+      {@JsonKey(name: 'description')
+          required String description,
+      @JsonKey(name: 'date_start')
+      @DateTimeConverter()
+          required DateTime dateStart,
+      @JsonKey(name: 'meeting_jid')
+          required String meetingJid}) = _$_InvitationToMeeting;
 
   factory _InvitationToMeeting.fromJson(Map<String, dynamic> json) =
       _$_InvitationToMeeting.fromJson;
@@ -235,7 +244,8 @@ abstract class _InvitationToMeeting implements InvitationToMeeting {
 
   /// .
   @JsonKey(name: 'date_start')
-  String get dateStart => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get dateStart => throw _privateConstructorUsedError;
   @override
 
   /// .

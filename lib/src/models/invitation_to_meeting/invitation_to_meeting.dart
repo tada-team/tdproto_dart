@@ -12,7 +12,7 @@ class InvitationToMeeting with _$InvitationToMeeting {
     @JsonKey(name: 'description') required String description,
     
     /// .
-    @JsonKey(name: 'date_start') required String dateStart,
+    @JsonKey(name: 'date_start') @DateTimeConverter() required DateTime dateStart,
     
     /// .
     @JsonKey(name: 'meeting_jid') required String meetingJid,

@@ -29,11 +29,14 @@ class _$CallEventTearOff {
       @JsonKey(name: 'buzz')
           bool? buzz,
       @JsonKey(name: 'created')
-          required String created,
+      @DateTimeConverter()
+          required DateTime created,
       @JsonKey(name: 'start')
-          String? start,
+      @DateTimeConverter()
+          DateTime? start,
       @JsonKey(name: 'finish')
-          String? finish,
+      @DateTimeConverter()
+          DateTime? finish,
       @JsonKey(name: 'audiorecord')
           required bool audiorecord,
       @JsonKey(name: 'onliners')
@@ -81,15 +84,18 @@ mixin _$CallEvent {
 
   /// Creation date, iso datetime.
   @JsonKey(name: 'created')
-  String get created => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get created => throw _privateConstructorUsedError;
 
   /// Call start. For direct calls can be empty when buzzing.
   @JsonKey(name: 'start')
-  String? get start => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get start => throw _privateConstructorUsedError;
 
   /// Call finish.
   @JsonKey(name: 'finish')
-  String? get finish => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get finish => throw _privateConstructorUsedError;
 
   /// Call record enabled.
   @JsonKey(name: 'audiorecord')
@@ -126,11 +132,14 @@ abstract class $CallEventCopyWith<$Res> {
       @JsonKey(name: 'buzz')
           bool? buzz,
       @JsonKey(name: 'created')
-          String created,
+      @DateTimeConverter()
+          DateTime created,
       @JsonKey(name: 'start')
-          String? start,
+      @DateTimeConverter()
+          DateTime? start,
       @JsonKey(name: 'finish')
-          String? finish,
+      @DateTimeConverter()
+          DateTime? finish,
       @JsonKey(name: 'audiorecord')
           bool audiorecord,
       @JsonKey(name: 'onliners')
@@ -179,15 +188,15 @@ class _$CallEventCopyWithImpl<$Res> implements $CallEventCopyWith<$Res> {
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       start: start == freezed
           ? _value.start
           : start // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       finish: finish == freezed
           ? _value.finish
           : finish // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       audiorecord: audiorecord == freezed
           ? _value.audiorecord
           : audiorecord // ignore: cast_nullable_to_non_nullable
@@ -222,11 +231,14 @@ abstract class _$CallEventCopyWith<$Res> implements $CallEventCopyWith<$Res> {
       @JsonKey(name: 'buzz')
           bool? buzz,
       @JsonKey(name: 'created')
-          String created,
+      @DateTimeConverter()
+          DateTime created,
       @JsonKey(name: 'start')
-          String? start,
+      @DateTimeConverter()
+          DateTime? start,
       @JsonKey(name: 'finish')
-          String? finish,
+      @DateTimeConverter()
+          DateTime? finish,
       @JsonKey(name: 'audiorecord')
           bool audiorecord,
       @JsonKey(name: 'onliners')
@@ -276,15 +288,15 @@ class __$CallEventCopyWithImpl<$Res> extends _$CallEventCopyWithImpl<$Res>
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       start: start == freezed
           ? _value.start
           : start // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       finish: finish == freezed
           ? _value.finish
           : finish // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       audiorecord: audiorecord == freezed
           ? _value.audiorecord
           : audiorecord // ignore: cast_nullable_to_non_nullable
@@ -316,10 +328,13 @@ class _$_CallEvent implements _CallEvent {
       @JsonKey(name: 'buzz')
           this.buzz,
       @JsonKey(name: 'created')
+      @DateTimeConverter()
           required this.created,
       @JsonKey(name: 'start')
+      @DateTimeConverter()
           this.start,
       @JsonKey(name: 'finish')
+      @DateTimeConverter()
           this.finish,
       @JsonKey(name: 'audiorecord')
           required this.audiorecord,
@@ -353,17 +368,20 @@ class _$_CallEvent implements _CallEvent {
 
   /// Creation date, iso datetime.
   @JsonKey(name: 'created')
-  final String created;
+  @DateTimeConverter()
+  final DateTime created;
   @override
 
   /// Call start. For direct calls can be empty when buzzing.
   @JsonKey(name: 'start')
-  final String? start;
+  @DateTimeConverter()
+  final DateTime? start;
   @override
 
   /// Call finish.
   @JsonKey(name: 'finish')
-  final String? finish;
+  @DateTimeConverter()
+  final DateTime? finish;
   @override
 
   /// Call record enabled.
@@ -456,11 +474,14 @@ abstract class _CallEvent implements CallEvent {
       @JsonKey(name: 'buzz')
           bool? buzz,
       @JsonKey(name: 'created')
-          required String created,
+      @DateTimeConverter()
+          required DateTime created,
       @JsonKey(name: 'start')
-          String? start,
+      @DateTimeConverter()
+          DateTime? start,
       @JsonKey(name: 'finish')
-          String? finish,
+      @DateTimeConverter()
+          DateTime? finish,
       @JsonKey(name: 'audiorecord')
           required bool audiorecord,
       @JsonKey(name: 'onliners')
@@ -493,17 +514,20 @@ abstract class _CallEvent implements CallEvent {
 
   /// Creation date, iso datetime.
   @JsonKey(name: 'created')
-  String get created => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get created => throw _privateConstructorUsedError;
   @override
 
   /// Call start. For direct calls can be empty when buzzing.
   @JsonKey(name: 'start')
-  String? get start => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get start => throw _privateConstructorUsedError;
   @override
 
   /// Call finish.
   @JsonKey(name: 'finish')
-  String? get finish => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get finish => throw _privateConstructorUsedError;
   @override
 
   /// Call record enabled.

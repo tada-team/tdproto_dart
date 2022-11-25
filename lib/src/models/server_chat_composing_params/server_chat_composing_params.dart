@@ -21,7 +21,7 @@ class ServerChatComposingParams with _$ServerChatComposingParams {
     @JsonKey(name: 'is_audio') bool? isAudio,
     
     /// Composing event max lifetime.
-    @JsonKey(name: 'valid_until') String? validUntil,
+    @JsonKey(name: 'valid_until') @DateTimeConverter() DateTime? validUntil,
     
     
   }) = _ServerChatComposingParams;

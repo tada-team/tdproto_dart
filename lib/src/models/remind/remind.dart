@@ -15,7 +15,7 @@ class Remind with _$Remind {
     @JsonKey(name: 'chat') required String chat,
     
     /// Activation time, iso.
-    @JsonKey(name: 'fire_at') required String fireAt,
+    @JsonKey(name: 'fire_at') @DateTimeConverter() required DateTime fireAt,
     
     /// Comment, if any.
     @JsonKey(name: 'comment') String? comment,

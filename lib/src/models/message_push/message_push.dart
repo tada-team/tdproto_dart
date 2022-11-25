@@ -39,7 +39,7 @@ class MessagePush with _$MessagePush {
     @JsonKey(name: 'message_id') required String messageId,
     
     /// Message creation iso datetime.
-    @JsonKey(name: 'created') required String created,
+    @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
     
     
   }) = _MessagePush;

@@ -14,7 +14,9 @@ _$_ChatCounters _$$_ChatCountersFromJson(Map<String, dynamic> json) =>
       numUnread: json['num_unread'] as int,
       numUnreadNotices: json['num_unread_notices'] as int,
       lastReadMessageUid: json['last_read_message_id'] as String?,
-      lastActivity: json['last_activity'] as String?,
+      lastActivity: json['last_activity'] == null
+          ? null
+          : DateTime.parse(json['last_activity'] as String),
     );
 
 Map<String, dynamic> _$$_ChatCountersToJson(_$_ChatCounters instance) =>
@@ -25,5 +27,5 @@ Map<String, dynamic> _$$_ChatCountersToJson(_$_ChatCounters instance) =>
       'num_unread': instance.numUnread,
       'num_unread_notices': instance.numUnreadNotices,
       'last_read_message_id': instance.lastReadMessageUid,
-      'last_activity': instance.lastActivity,
+      'last_activity': instance.lastActivity?.toIso8601String(),
     };

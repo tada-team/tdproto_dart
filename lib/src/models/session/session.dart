@@ -12,7 +12,7 @@ class Session with _$Session {
     @JsonKey(name: 'uid') required String uid,
     
     /// Creation datetime.
-    @JsonKey(name: 'created') required String created,
+    @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
     
     /// Language code.
     @JsonKey(name: 'lang') String? lang,

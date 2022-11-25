@@ -12,8 +12,10 @@ _$_Message _$$_MessageFromJson(Map<String, dynamic> json) => _$_Message(
       from: json['from'] as String,
       to: json['to'] as String,
       messageId: json['message_id'] as String,
-      created: json['created'] as String,
-      drafted: json['drafted'] as String?,
+      created: const DateTimeConverter().fromJson(json['created'] as String),
+      drafted: json['drafted'] == null
+          ? null
+          : DateTime.parse(json['drafted'] as String),
       gentime: json['gentime'] as int,
       chatType: json['chat_type'] as String,
       chat: json['chat'] as String,
@@ -24,7 +26,9 @@ _$_Message _$$_MessageFromJson(Map<String, dynamic> json) => _$_Message(
           ?.map((e) => MarkupEntity.fromJson(e as Map<String, dynamic>))
           .toList(),
       important: json['important'] as bool?,
-      edited: json['edited'] as String?,
+      edited: json['edited'] == null
+          ? null
+          : DateTime.parse(json['edited'] as String),
       received: json['received'] as bool?,
       numReceived: json['num_received'] as int?,
       nopreview: json['nopreview'] as bool?,
@@ -46,7 +50,9 @@ _$_Message _$$_MessageFromJson(Map<String, dynamic> json) => _$_Message(
           .toList(),
       notice: json['notice'] as bool?,
       silently: json['silently'] as bool?,
-      editableUntil: json['editable_until'] as String?,
+      editableUntil: json['editable_until'] == null
+          ? null
+          : DateTime.parse(json['editable_until'] as String),
       num: json['num'] as int?,
       isArchive: json['is_archive'] as bool?,
       debug: json['_debug'] as String?,
@@ -59,15 +65,15 @@ Map<String, dynamic> _$$_MessageToJson(_$_Message instance) =>
       'from': instance.from,
       'to': instance.to,
       'message_id': instance.messageId,
-      'created': instance.created,
-      'drafted': instance.drafted,
+      'created': const DateTimeConverter().toJson(instance.created),
+      'drafted': instance.drafted?.toIso8601String(),
       'gentime': instance.gentime,
       'chat_type': instance.chatType,
       'chat': instance.chat,
       'links': instance.links?.map((e) => e.toJson()).toList(),
       'markup': instance.markup?.map((e) => e.toJson()).toList(),
       'important': instance.important,
-      'edited': instance.edited,
+      'edited': instance.edited?.toIso8601String(),
       'received': instance.received,
       'num_received': instance.numReceived,
       'nopreview': instance.nopreview,
@@ -82,7 +88,7 @@ Map<String, dynamic> _$$_MessageToJson(_$_Message instance) =>
           instance.linkedMessages?.map((e) => e.toJson()).toList(),
       'notice': instance.notice,
       'silently': instance.silently,
-      'editable_until': instance.editableUntil,
+      'editable_until': instance.editableUntil?.toIso8601String(),
       'num': instance.num,
       'is_archive': instance.isArchive,
       '_debug': instance.debug,

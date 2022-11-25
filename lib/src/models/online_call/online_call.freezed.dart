@@ -24,7 +24,7 @@ class _$OnlineCallTearOff {
   _OnlineCall call(
       {@JsonKey(name: 'jid') required String jid,
       @JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'start') String? start,
+      @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
       @JsonKey(name: 'online_count') int? onlineCount,
       @JsonKey(name: 'call_type') required String callType}) {
     return _OnlineCall(
@@ -56,7 +56,8 @@ mixin _$OnlineCall {
 
   /// Call start.
   @JsonKey(name: 'start')
-  String? get start => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get start => throw _privateConstructorUsedError;
 
   /// Number participants in call.
   @JsonKey(name: 'online_count')
@@ -80,7 +81,7 @@ abstract class $OnlineCallCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'start') String? start,
+      @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
       @JsonKey(name: 'online_count') int? onlineCount,
       @JsonKey(name: 'call_type') String callType});
 }
@@ -113,7 +114,7 @@ class _$OnlineCallCopyWithImpl<$Res> implements $OnlineCallCopyWith<$Res> {
       start: start == freezed
           ? _value.start
           : start // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       onlineCount: onlineCount == freezed
           ? _value.onlineCount
           : onlineCount // ignore: cast_nullable_to_non_nullable
@@ -135,7 +136,7 @@ abstract class _$OnlineCallCopyWith<$Res> implements $OnlineCallCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'jid') String jid,
       @JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'start') String? start,
+      @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
       @JsonKey(name: 'online_count') int? onlineCount,
       @JsonKey(name: 'call_type') String callType});
 }
@@ -170,7 +171,7 @@ class __$OnlineCallCopyWithImpl<$Res> extends _$OnlineCallCopyWithImpl<$Res>
       start: start == freezed
           ? _value.start
           : start // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       onlineCount: onlineCount == freezed
           ? _value.onlineCount
           : onlineCount // ignore: cast_nullable_to_non_nullable
@@ -189,7 +190,7 @@ class _$_OnlineCall implements _OnlineCall {
   const _$_OnlineCall(
       {@JsonKey(name: 'jid') required this.jid,
       @JsonKey(name: 'uid') required this.uid,
-      @JsonKey(name: 'start') this.start,
+      @JsonKey(name: 'start') @DateTimeConverter() this.start,
       @JsonKey(name: 'online_count') this.onlineCount,
       @JsonKey(name: 'call_type') required this.callType});
 
@@ -210,7 +211,8 @@ class _$_OnlineCall implements _OnlineCall {
 
   /// Call start.
   @JsonKey(name: 'start')
-  final String? start;
+  @DateTimeConverter()
+  final DateTime? start;
   @override
 
   /// Number participants in call.
@@ -269,7 +271,7 @@ abstract class _OnlineCall implements OnlineCall {
   const factory _OnlineCall(
       {@JsonKey(name: 'jid') required String jid,
       @JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'start') String? start,
+      @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
       @JsonKey(name: 'online_count') int? onlineCount,
       @JsonKey(name: 'call_type') required String callType}) = _$_OnlineCall;
 
@@ -290,7 +292,8 @@ abstract class _OnlineCall implements OnlineCall {
 
   /// Call start.
   @JsonKey(name: 'start')
-  String? get start => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get start => throw _privateConstructorUsedError;
   @override
 
   /// Number participants in call.

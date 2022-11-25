@@ -23,7 +23,7 @@ class _$GroupAccessRequestTearOff {
 
   _GroupAccessRequest call(
       {@JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'created') required String created,
+      @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
       @JsonKey(name: 'subject') required String subject}) {
     return _GroupAccessRequest(
       uid: uid,
@@ -48,7 +48,8 @@ mixin _$GroupAccessRequest {
 
   /// .
   @JsonKey(name: 'created')
-  String get created => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get created => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'subject')
@@ -67,7 +68,7 @@ abstract class $GroupAccessRequestCopyWith<$Res> {
       _$GroupAccessRequestCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'created') String created,
+      @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @JsonKey(name: 'subject') String subject});
 }
 
@@ -94,7 +95,7 @@ class _$GroupAccessRequestCopyWithImpl<$Res>
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       subject: subject == freezed
           ? _value.subject
           : subject // ignore: cast_nullable_to_non_nullable
@@ -112,7 +113,7 @@ abstract class _$GroupAccessRequestCopyWith<$Res>
   @override
   $Res call(
       {@JsonKey(name: 'uid') String uid,
-      @JsonKey(name: 'created') String created,
+      @JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @JsonKey(name: 'subject') String subject});
 }
 
@@ -141,7 +142,7 @@ class __$GroupAccessRequestCopyWithImpl<$Res>
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       subject: subject == freezed
           ? _value.subject
           : subject // ignore: cast_nullable_to_non_nullable
@@ -155,7 +156,7 @@ class __$GroupAccessRequestCopyWithImpl<$Res>
 class _$_GroupAccessRequest implements _GroupAccessRequest {
   const _$_GroupAccessRequest(
       {@JsonKey(name: 'uid') required this.uid,
-      @JsonKey(name: 'created') required this.created,
+      @JsonKey(name: 'created') @DateTimeConverter() required this.created,
       @JsonKey(name: 'subject') required this.subject});
 
   factory _$_GroupAccessRequest.fromJson(Map<String, dynamic> json) =>
@@ -170,7 +171,8 @@ class _$_GroupAccessRequest implements _GroupAccessRequest {
 
   /// .
   @JsonKey(name: 'created')
-  final String created;
+  @DateTimeConverter()
+  final DateTime created;
   @override
 
   /// .
@@ -215,10 +217,13 @@ class _$_GroupAccessRequest implements _GroupAccessRequest {
 
 abstract class _GroupAccessRequest implements GroupAccessRequest {
   const factory _GroupAccessRequest(
-          {@JsonKey(name: 'uid') required String uid,
-          @JsonKey(name: 'created') required String created,
-          @JsonKey(name: 'subject') required String subject}) =
-      _$_GroupAccessRequest;
+      {@JsonKey(name: 'uid')
+          required String uid,
+      @JsonKey(name: 'created')
+      @DateTimeConverter()
+          required DateTime created,
+      @JsonKey(name: 'subject')
+          required String subject}) = _$_GroupAccessRequest;
 
   factory _GroupAccessRequest.fromJson(Map<String, dynamic> json) =
       _$_GroupAccessRequest.fromJson;
@@ -232,7 +237,8 @@ abstract class _GroupAccessRequest implements GroupAccessRequest {
 
   /// .
   @JsonKey(name: 'created')
-  String get created => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get created => throw _privateConstructorUsedError;
   @override
 
   /// .

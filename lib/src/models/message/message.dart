@@ -24,10 +24,10 @@ class Message with _$Message {
     @JsonKey(name: 'message_id') required String messageId,
     
     /// Message creation datetime (set by server side) or sending datetime in future for draft messages.
-    @JsonKey(name: 'created') required String created,
+    @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
     
     /// Creation datetime for draft messages.
-    @JsonKey(name: 'drafted') String? drafted,
+    @JsonKey(name: 'drafted') @DateTimeConverter() DateTime? drafted,
     
     /// Object version.
     @JsonKey(name: 'gentime') required int gentime,
@@ -48,7 +48,7 @@ class Message with _$Message {
     @JsonKey(name: 'important') bool? important,
     
     /// ISODateTimeString of message modification or deletion.
-    @JsonKey(name: 'edited') String? edited,
+    @JsonKey(name: 'edited') @DateTimeConverter() DateTime? edited,
     
     /// Message was seen by anybody in chat. True or null.
     @JsonKey(name: 'received') bool? received,
@@ -90,7 +90,7 @@ class Message with _$Message {
     @JsonKey(name: 'silently') bool? silently,
     
     /// Author can change this message until date. Can be null.
-    @JsonKey(name: 'editable_until') String? editableUntil,
+    @JsonKey(name: 'editable_until') @DateTimeConverter() DateTime? editableUntil,
     
     /// Index number of this message. Starts from 0. Null for deleted messages. Changes when any previous message wad deleted.
     @JsonKey(name: 'num') int? num,

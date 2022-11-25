@@ -31,7 +31,8 @@ class _$ChatTearOff {
       @JsonKey(name: 'gentime')
           required int gentime,
       @JsonKey(name: 'created')
-          required String created,
+      @DateTimeConverter()
+          required DateTime created,
       @JsonKey(name: 'display_name')
           required String displayName,
       @JsonKey(name: 'icons')
@@ -103,11 +104,13 @@ class _$ChatTearOff {
       @JsonKey(name: 'title')
           String? title,
       @JsonKey(name: 'done')
-          String? done,
+      @DateTimeConverter()
+          DateTime? done,
       @JsonKey(name: 'done_reason')
           String? doneReason,
       @JsonKey(name: 'deadline')
-          String? deadline,
+      @DateTimeConverter()
+          DateTime? deadline,
       @JsonKey(name: 'deadline_expired')
           bool? deadlineExpired,
       @JsonKey(name: 'links')
@@ -159,12 +162,14 @@ class _$ChatTearOff {
       @JsonKey(name: 'can_set_important_any_message')
           bool? canSetImportantAnyMessage,
       @JsonKey(name: 'last_activity')
-          String? lastActivity,
+      @DateTimeConverter()
+          DateTime? lastActivity,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'draft_num')
           int? draftNum,
       @JsonKey(name: 'meeting_start_at')
-          String? meetingStartAt,
+      @DateTimeConverter()
+          DateTime? meetingStartAt,
       @JsonKey(name: 'meeting_freq')
           bool? meetingFreq,
       @JsonKey(name: 'meeting_duration')
@@ -274,7 +279,8 @@ mixin _$Chat {
 
   /// Creation date, iso datetime.
   @JsonKey(name: 'created')
-  String get created => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get created => throw _privateConstructorUsedError;
 
   /// Title.
   @JsonKey(name: 'display_name')
@@ -418,7 +424,8 @@ mixin _$Chat {
 
   /// Task done date in iso format, if any.
   @JsonKey(name: 'done')
-  String? get done => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get done => throw _privateConstructorUsedError;
 
   /// Task done reason, if any.
   @JsonKey(name: 'done_reason')
@@ -426,7 +433,8 @@ mixin _$Chat {
 
   /// Task deadline in iso format, if any.
   @JsonKey(name: 'deadline')
-  String? get deadline => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get deadline => throw _privateConstructorUsedError;
 
   /// Is task deadline expired.
   @JsonKey(name: 'deadline_expired')
@@ -530,7 +538,8 @@ mixin _$Chat {
 
   /// Date of the last message sent even if it was deleted.
   @JsonKey(name: 'last_activity')
-  String? get lastActivity => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get lastActivity => throw _privateConstructorUsedError;
 
   /// Deprecated.
   @Deprecated('Deprecated.')
@@ -539,7 +548,8 @@ mixin _$Chat {
 
   /// Start date of meeting chat.
   @JsonKey(name: 'meeting_start_at')
-  String? get meetingStartAt => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get meetingStartAt => throw _privateConstructorUsedError;
 
   /// Meeting has frequency.
   @JsonKey(name: 'meeting_freq')
@@ -568,7 +578,8 @@ abstract class $ChatCopyWith<$Res> {
       @JsonKey(name: 'gentime')
           int gentime,
       @JsonKey(name: 'created')
-          String created,
+      @DateTimeConverter()
+          DateTime created,
       @JsonKey(name: 'display_name')
           String displayName,
       @JsonKey(name: 'icons')
@@ -640,11 +651,13 @@ abstract class $ChatCopyWith<$Res> {
       @JsonKey(name: 'title')
           String? title,
       @JsonKey(name: 'done')
-          String? done,
+      @DateTimeConverter()
+          DateTime? done,
       @JsonKey(name: 'done_reason')
           String? doneReason,
       @JsonKey(name: 'deadline')
-          String? deadline,
+      @DateTimeConverter()
+          DateTime? deadline,
       @JsonKey(name: 'deadline_expired')
           bool? deadlineExpired,
       @JsonKey(name: 'links')
@@ -696,12 +709,14 @@ abstract class $ChatCopyWith<$Res> {
       @JsonKey(name: 'can_set_important_any_message')
           bool? canSetImportantAnyMessage,
       @JsonKey(name: 'last_activity')
-          String? lastActivity,
+      @DateTimeConverter()
+          DateTime? lastActivity,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'draft_num')
           int? draftNum,
       @JsonKey(name: 'meeting_start_at')
-          String? meetingStartAt,
+      @DateTimeConverter()
+          DateTime? meetingStartAt,
       @JsonKey(name: 'meeting_freq')
           bool? meetingFreq,
       @JsonKey(name: 'meeting_duration')
@@ -816,7 +831,7 @@ class _$ChatCopyWithImpl<$Res> implements $ChatCopyWith<$Res> {
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       displayName: displayName == freezed
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
@@ -960,7 +975,7 @@ class _$ChatCopyWithImpl<$Res> implements $ChatCopyWith<$Res> {
       done: done == freezed
           ? _value.done
           : done // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       doneReason: doneReason == freezed
           ? _value.doneReason
           : doneReason // ignore: cast_nullable_to_non_nullable
@@ -968,7 +983,7 @@ class _$ChatCopyWithImpl<$Res> implements $ChatCopyWith<$Res> {
       deadline: deadline == freezed
           ? _value.deadline
           : deadline // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       deadlineExpired: deadlineExpired == freezed
           ? _value.deadlineExpired
           : deadlineExpired // ignore: cast_nullable_to_non_nullable
@@ -1072,7 +1087,7 @@ class _$ChatCopyWithImpl<$Res> implements $ChatCopyWith<$Res> {
       lastActivity: lastActivity == freezed
           ? _value.lastActivity
           : lastActivity // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       draftNum: draftNum == freezed
           ? _value.draftNum
           : draftNum // ignore: cast_nullable_to_non_nullable
@@ -1080,7 +1095,7 @@ class _$ChatCopyWithImpl<$Res> implements $ChatCopyWith<$Res> {
       meetingStartAt: meetingStartAt == freezed
           ? _value.meetingStartAt
           : meetingStartAt // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       meetingFreq: meetingFreq == freezed
           ? _value.meetingFreq
           : meetingFreq // ignore: cast_nullable_to_non_nullable
@@ -1137,7 +1152,8 @@ abstract class _$ChatCopyWith<$Res> implements $ChatCopyWith<$Res> {
       @JsonKey(name: 'gentime')
           int gentime,
       @JsonKey(name: 'created')
-          String created,
+      @DateTimeConverter()
+          DateTime created,
       @JsonKey(name: 'display_name')
           String displayName,
       @JsonKey(name: 'icons')
@@ -1209,11 +1225,13 @@ abstract class _$ChatCopyWith<$Res> implements $ChatCopyWith<$Res> {
       @JsonKey(name: 'title')
           String? title,
       @JsonKey(name: 'done')
-          String? done,
+      @DateTimeConverter()
+          DateTime? done,
       @JsonKey(name: 'done_reason')
           String? doneReason,
       @JsonKey(name: 'deadline')
-          String? deadline,
+      @DateTimeConverter()
+          DateTime? deadline,
       @JsonKey(name: 'deadline_expired')
           bool? deadlineExpired,
       @JsonKey(name: 'links')
@@ -1265,12 +1283,14 @@ abstract class _$ChatCopyWith<$Res> implements $ChatCopyWith<$Res> {
       @JsonKey(name: 'can_set_important_any_message')
           bool? canSetImportantAnyMessage,
       @JsonKey(name: 'last_activity')
-          String? lastActivity,
+      @DateTimeConverter()
+          DateTime? lastActivity,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'draft_num')
           int? draftNum,
       @JsonKey(name: 'meeting_start_at')
-          String? meetingStartAt,
+      @DateTimeConverter()
+          DateTime? meetingStartAt,
       @JsonKey(name: 'meeting_freq')
           bool? meetingFreq,
       @JsonKey(name: 'meeting_duration')
@@ -1389,7 +1409,7 @@ class __$ChatCopyWithImpl<$Res> extends _$ChatCopyWithImpl<$Res>
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       displayName: displayName == freezed
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
@@ -1533,7 +1553,7 @@ class __$ChatCopyWithImpl<$Res> extends _$ChatCopyWithImpl<$Res>
       done: done == freezed
           ? _value.done
           : done // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       doneReason: doneReason == freezed
           ? _value.doneReason
           : doneReason // ignore: cast_nullable_to_non_nullable
@@ -1541,7 +1561,7 @@ class __$ChatCopyWithImpl<$Res> extends _$ChatCopyWithImpl<$Res>
       deadline: deadline == freezed
           ? _value.deadline
           : deadline // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       deadlineExpired: deadlineExpired == freezed
           ? _value.deadlineExpired
           : deadlineExpired // ignore: cast_nullable_to_non_nullable
@@ -1645,7 +1665,7 @@ class __$ChatCopyWithImpl<$Res> extends _$ChatCopyWithImpl<$Res>
       lastActivity: lastActivity == freezed
           ? _value.lastActivity
           : lastActivity // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       draftNum: draftNum == freezed
           ? _value.draftNum
           : draftNum // ignore: cast_nullable_to_non_nullable
@@ -1653,7 +1673,7 @@ class __$ChatCopyWithImpl<$Res> extends _$ChatCopyWithImpl<$Res>
       meetingStartAt: meetingStartAt == freezed
           ? _value.meetingStartAt
           : meetingStartAt // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       meetingFreq: meetingFreq == freezed
           ? _value.meetingFreq
           : meetingFreq // ignore: cast_nullable_to_non_nullable
@@ -1679,6 +1699,7 @@ class _$_Chat implements _Chat {
       @JsonKey(name: 'gentime')
           required this.gentime,
       @JsonKey(name: 'created')
+      @DateTimeConverter()
           required this.created,
       @JsonKey(name: 'display_name')
           required this.displayName,
@@ -1751,10 +1772,12 @@ class _$_Chat implements _Chat {
       @JsonKey(name: 'title')
           this.title,
       @JsonKey(name: 'done')
+      @DateTimeConverter()
           this.done,
       @JsonKey(name: 'done_reason')
           this.doneReason,
       @JsonKey(name: 'deadline')
+      @DateTimeConverter()
           this.deadline,
       @JsonKey(name: 'deadline_expired')
           this.deadlineExpired,
@@ -1807,11 +1830,13 @@ class _$_Chat implements _Chat {
       @JsonKey(name: 'can_set_important_any_message')
           this.canSetImportantAnyMessage,
       @JsonKey(name: 'last_activity')
+      @DateTimeConverter()
           this.lastActivity,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'draft_num')
           this.draftNum,
       @JsonKey(name: 'meeting_start_at')
+      @DateTimeConverter()
           this.meetingStartAt,
       @JsonKey(name: 'meeting_freq')
           this.meetingFreq,
@@ -1844,7 +1869,8 @@ class _$_Chat implements _Chat {
 
   /// Creation date, iso datetime.
   @JsonKey(name: 'created')
-  final String created;
+  @DateTimeConverter()
+  final DateTime created;
   @override
 
   /// Title.
@@ -2024,7 +2050,8 @@ class _$_Chat implements _Chat {
 
   /// Task done date in iso format, if any.
   @JsonKey(name: 'done')
-  final String? done;
+  @DateTimeConverter()
+  final DateTime? done;
   @override
 
   /// Task done reason, if any.
@@ -2034,7 +2061,8 @@ class _$_Chat implements _Chat {
 
   /// Task deadline in iso format, if any.
   @JsonKey(name: 'deadline')
-  final String? deadline;
+  @DateTimeConverter()
+  final DateTime? deadline;
   @override
 
   /// Is task deadline expired.
@@ -2164,7 +2192,8 @@ class _$_Chat implements _Chat {
 
   /// Date of the last message sent even if it was deleted.
   @JsonKey(name: 'last_activity')
-  final String? lastActivity;
+  @DateTimeConverter()
+  final DateTime? lastActivity;
   @override
 
   /// Deprecated.
@@ -2175,7 +2204,8 @@ class _$_Chat implements _Chat {
 
   /// Start date of meeting chat.
   @JsonKey(name: 'meeting_start_at')
-  final String? meetingStartAt;
+  @DateTimeConverter()
+  final DateTime? meetingStartAt;
   @override
 
   /// Meeting has frequency.
@@ -2412,7 +2442,8 @@ abstract class _Chat implements Chat {
       @JsonKey(name: 'gentime')
           required int gentime,
       @JsonKey(name: 'created')
-          required String created,
+      @DateTimeConverter()
+          required DateTime created,
       @JsonKey(name: 'display_name')
           required String displayName,
       @JsonKey(name: 'icons')
@@ -2484,11 +2515,13 @@ abstract class _Chat implements Chat {
       @JsonKey(name: 'title')
           String? title,
       @JsonKey(name: 'done')
-          String? done,
+      @DateTimeConverter()
+          DateTime? done,
       @JsonKey(name: 'done_reason')
           String? doneReason,
       @JsonKey(name: 'deadline')
-          String? deadline,
+      @DateTimeConverter()
+          DateTime? deadline,
       @JsonKey(name: 'deadline_expired')
           bool? deadlineExpired,
       @JsonKey(name: 'links')
@@ -2540,12 +2573,14 @@ abstract class _Chat implements Chat {
       @JsonKey(name: 'can_set_important_any_message')
           bool? canSetImportantAnyMessage,
       @JsonKey(name: 'last_activity')
-          String? lastActivity,
+      @DateTimeConverter()
+          DateTime? lastActivity,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'draft_num')
           int? draftNum,
       @JsonKey(name: 'meeting_start_at')
-          String? meetingStartAt,
+      @DateTimeConverter()
+          DateTime? meetingStartAt,
       @JsonKey(name: 'meeting_freq')
           bool? meetingFreq,
       @JsonKey(name: 'meeting_duration')
@@ -2577,7 +2612,8 @@ abstract class _Chat implements Chat {
 
   /// Creation date, iso datetime.
   @JsonKey(name: 'created')
-  String get created => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get created => throw _privateConstructorUsedError;
   @override
 
   /// Title.
@@ -2757,7 +2793,8 @@ abstract class _Chat implements Chat {
 
   /// Task done date in iso format, if any.
   @JsonKey(name: 'done')
-  String? get done => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get done => throw _privateConstructorUsedError;
   @override
 
   /// Task done reason, if any.
@@ -2767,7 +2804,8 @@ abstract class _Chat implements Chat {
 
   /// Task deadline in iso format, if any.
   @JsonKey(name: 'deadline')
-  String? get deadline => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get deadline => throw _privateConstructorUsedError;
   @override
 
   /// Is task deadline expired.
@@ -2897,7 +2935,8 @@ abstract class _Chat implements Chat {
 
   /// Date of the last message sent even if it was deleted.
   @JsonKey(name: 'last_activity')
-  String? get lastActivity => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get lastActivity => throw _privateConstructorUsedError;
   @override
 
   /// Deprecated.
@@ -2908,7 +2947,8 @@ abstract class _Chat implements Chat {
 
   /// Start date of meeting chat.
   @JsonKey(name: 'meeting_start_at')
-  String? get meetingStartAt => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get meetingStartAt => throw _privateConstructorUsedError;
   @override
 
   /// Meeting has frequency.

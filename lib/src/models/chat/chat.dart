@@ -21,7 +21,7 @@ class Chat with _$Chat {
     @JsonKey(name: 'gentime') required int gentime,
     
     /// Creation date, iso datetime.
-    @JsonKey(name: 'created') required String created,
+    @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
     
     /// Title.
     @JsonKey(name: 'display_name') required String displayName,
@@ -129,13 +129,13 @@ class Chat with _$Chat {
     @JsonKey(name: 'title') String? title,
     
     /// Task done date in iso format, if any.
-    @JsonKey(name: 'done') String? done,
+    @JsonKey(name: 'done') @DateTimeConverter() DateTime? done,
     
     /// Task done reason, if any.
     @JsonKey(name: 'done_reason') String? doneReason,
     
     /// Task deadline in iso format, if any.
-    @JsonKey(name: 'deadline') String? deadline,
+    @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
     
     /// Is task deadline expired.
     @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
@@ -213,13 +213,13 @@ class Chat with _$Chat {
     @JsonKey(name: 'can_set_important_any_message') bool? canSetImportantAnyMessage,
     
     /// Date of the last message sent even if it was deleted.
-    @JsonKey(name: 'last_activity') String? lastActivity,
+    @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,
     
     /// Deprecated.
     @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') int? draftNum,
     
     /// Start date of meeting chat.
-    @JsonKey(name: 'meeting_start_at') String? meetingStartAt,
+    @JsonKey(name: 'meeting_start_at') @DateTimeConverter() DateTime? meetingStartAt,
     
     /// Meeting has frequency.
     @JsonKey(name: 'meeting_freq') bool? meetingFreq,

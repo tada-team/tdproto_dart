@@ -29,7 +29,7 @@ class _$SubtaskTearOff {
       @JsonKey(name: 'display_name') required String displayName,
       @JsonKey(name: 'public') bool? isPublic,
       @JsonKey(name: 'task_status') String? taskStatus,
-      @JsonKey(name: 'deadline') String? deadline,
+      @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
       @JsonKey(name: 'deadline_expired') bool? deadlineExpired}) {
     return _Subtask(
       jid: jid,
@@ -84,7 +84,8 @@ mixin _$Subtask {
 
   /// Subtask deadline in iso format, if any.
   @JsonKey(name: 'deadline')
-  String? get deadline => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get deadline => throw _privateConstructorUsedError;
 
   /// Is subtask deadline expired.
   @JsonKey(name: 'deadline_expired')
@@ -107,7 +108,7 @@ abstract class $SubtaskCopyWith<$Res> {
       @JsonKey(name: 'display_name') String displayName,
       @JsonKey(name: 'public') bool? isPublic,
       @JsonKey(name: 'task_status') String? taskStatus,
-      @JsonKey(name: 'deadline') String? deadline,
+      @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
       @JsonKey(name: 'deadline_expired') bool? deadlineExpired});
 }
 
@@ -163,7 +164,7 @@ class _$SubtaskCopyWithImpl<$Res> implements $SubtaskCopyWith<$Res> {
       deadline: deadline == freezed
           ? _value.deadline
           : deadline // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       deadlineExpired: deadlineExpired == freezed
           ? _value.deadlineExpired
           : deadlineExpired // ignore: cast_nullable_to_non_nullable
@@ -185,7 +186,7 @@ abstract class _$SubtaskCopyWith<$Res> implements $SubtaskCopyWith<$Res> {
       @JsonKey(name: 'display_name') String displayName,
       @JsonKey(name: 'public') bool? isPublic,
       @JsonKey(name: 'task_status') String? taskStatus,
-      @JsonKey(name: 'deadline') String? deadline,
+      @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
       @JsonKey(name: 'deadline_expired') bool? deadlineExpired});
 }
 
@@ -242,7 +243,7 @@ class __$SubtaskCopyWithImpl<$Res> extends _$SubtaskCopyWithImpl<$Res>
       deadline: deadline == freezed
           ? _value.deadline
           : deadline // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       deadlineExpired: deadlineExpired == freezed
           ? _value.deadlineExpired
           : deadlineExpired // ignore: cast_nullable_to_non_nullable
@@ -262,7 +263,7 @@ class _$_Subtask implements _Subtask {
       @JsonKey(name: 'display_name') required this.displayName,
       @JsonKey(name: 'public') this.isPublic,
       @JsonKey(name: 'task_status') this.taskStatus,
-      @JsonKey(name: 'deadline') this.deadline,
+      @JsonKey(name: 'deadline') @DateTimeConverter() this.deadline,
       @JsonKey(name: 'deadline_expired') this.deadlineExpired});
 
   factory _$_Subtask.fromJson(Map<String, dynamic> json) =>
@@ -307,7 +308,8 @@ class _$_Subtask implements _Subtask {
 
   /// Subtask deadline in iso format, if any.
   @JsonKey(name: 'deadline')
-  final String? deadline;
+  @DateTimeConverter()
+  final DateTime? deadline;
   @override
 
   /// Is subtask deadline expired.
@@ -382,7 +384,7 @@ abstract class _Subtask implements Subtask {
       @JsonKey(name: 'display_name') required String displayName,
       @JsonKey(name: 'public') bool? isPublic,
       @JsonKey(name: 'task_status') String? taskStatus,
-      @JsonKey(name: 'deadline') String? deadline,
+      @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
       @JsonKey(name: 'deadline_expired') bool? deadlineExpired}) = _$_Subtask;
 
   factory _Subtask.fromJson(Map<String, dynamic> json) = _$_Subtask.fromJson;
@@ -426,7 +428,8 @@ abstract class _Subtask implements Subtask {
 
   /// Subtask deadline in iso format, if any.
   @JsonKey(name: 'deadline')
-  String? get deadline => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get deadline => throw _privateConstructorUsedError;
   @override
 
   /// Is subtask deadline expired.

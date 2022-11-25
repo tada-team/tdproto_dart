@@ -18,7 +18,7 @@ _$_MessagePush _$$_MessagePushFromJson(Map<String, dynamic> json) =>
       sender: json['sender'] as String,
       chat: json['chat'] as String,
       messageId: json['message_id'] as String,
-      created: json['created'] as String,
+      created: const DateTimeConverter().fromJson(json['created'] as String),
     );
 
 Map<String, dynamic> _$$_MessagePushToJson(_$_MessagePush instance) =>
@@ -33,5 +33,5 @@ Map<String, dynamic> _$$_MessagePushToJson(_$_MessagePush instance) =>
       'sender': instance.sender,
       'chat': instance.chat,
       'message_id': instance.messageId,
-      'created': instance.created,
+      'created': const DateTimeConverter().toJson(instance.created),
     };

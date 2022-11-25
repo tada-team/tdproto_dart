@@ -15,7 +15,7 @@ class Invitation with _$Invitation {
     @JsonKey(name: 'token') required String token,
     
     /// .
-    @JsonKey(name: 'created') required String created,
+    @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
     
     /// .
     @JsonKey(name: 'qr') required String qr,

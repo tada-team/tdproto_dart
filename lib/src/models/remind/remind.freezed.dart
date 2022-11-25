@@ -24,7 +24,7 @@ class _$RemindTearOff {
   _Remind call(
       {@JsonKey(name: 'uid') required String uid,
       @JsonKey(name: 'chat') required String chat,
-      @JsonKey(name: 'fire_at') required String fireAt,
+      @JsonKey(name: 'fire_at') @DateTimeConverter() required DateTime fireAt,
       @JsonKey(name: 'comment') String? comment}) {
     return _Remind(
       uid: uid,
@@ -54,7 +54,8 @@ mixin _$Remind {
 
   /// Activation time, iso.
   @JsonKey(name: 'fire_at')
-  String get fireAt => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get fireAt => throw _privateConstructorUsedError;
 
   /// Comment, if any.
   @JsonKey(name: 'comment')
@@ -72,7 +73,7 @@ abstract class $RemindCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'chat') String chat,
-      @JsonKey(name: 'fire_at') String fireAt,
+      @JsonKey(name: 'fire_at') @DateTimeConverter() DateTime fireAt,
       @JsonKey(name: 'comment') String? comment});
 }
 
@@ -103,7 +104,7 @@ class _$RemindCopyWithImpl<$Res> implements $RemindCopyWith<$Res> {
       fireAt: fireAt == freezed
           ? _value.fireAt
           : fireAt // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       comment: comment == freezed
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
@@ -120,7 +121,7 @@ abstract class _$RemindCopyWith<$Res> implements $RemindCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'chat') String chat,
-      @JsonKey(name: 'fire_at') String fireAt,
+      @JsonKey(name: 'fire_at') @DateTimeConverter() DateTime fireAt,
       @JsonKey(name: 'comment') String? comment});
 }
 
@@ -152,7 +153,7 @@ class __$RemindCopyWithImpl<$Res> extends _$RemindCopyWithImpl<$Res>
       fireAt: fireAt == freezed
           ? _value.fireAt
           : fireAt // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       comment: comment == freezed
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
@@ -167,7 +168,7 @@ class _$_Remind implements _Remind {
   const _$_Remind(
       {@JsonKey(name: 'uid') required this.uid,
       @JsonKey(name: 'chat') required this.chat,
-      @JsonKey(name: 'fire_at') required this.fireAt,
+      @JsonKey(name: 'fire_at') @DateTimeConverter() required this.fireAt,
       @JsonKey(name: 'comment') this.comment});
 
   factory _$_Remind.fromJson(Map<String, dynamic> json) =>
@@ -187,7 +188,8 @@ class _$_Remind implements _Remind {
 
   /// Activation time, iso.
   @JsonKey(name: 'fire_at')
-  final String fireAt;
+  @DateTimeConverter()
+  final DateTime fireAt;
   @override
 
   /// Comment, if any.
@@ -236,7 +238,7 @@ abstract class _Remind implements Remind {
   const factory _Remind(
       {@JsonKey(name: 'uid') required String uid,
       @JsonKey(name: 'chat') required String chat,
-      @JsonKey(name: 'fire_at') required String fireAt,
+      @JsonKey(name: 'fire_at') @DateTimeConverter() required DateTime fireAt,
       @JsonKey(name: 'comment') String? comment}) = _$_Remind;
 
   factory _Remind.fromJson(Map<String, dynamic> json) = _$_Remind.fromJson;
@@ -255,7 +257,8 @@ abstract class _Remind implements Remind {
 
   /// Activation time, iso.
   @JsonKey(name: 'fire_at')
-  String get fireAt => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get fireAt => throw _privateConstructorUsedError;
   @override
 
   /// Comment, if any.

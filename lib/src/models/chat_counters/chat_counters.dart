@@ -27,7 +27,7 @@ class ChatCounters with _$ChatCounters {
     @JsonKey(name: 'last_read_message_id') String? lastReadMessageUid,
     
     /// .
-    @JsonKey(name: 'last_activity') String? lastActivity,
+    @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,
     
     
   }) = _ChatCounters;

@@ -24,7 +24,7 @@ class _$IntegrationTearOff {
   _Integration call(
       {@JsonKey(name: 'uid') String? uid,
       @JsonKey(name: 'comment') required String comment,
-      @JsonKey(name: 'created') String? created,
+      @JsonKey(name: 'created') @DateTimeConverter() DateTime? created,
       @JsonKey(name: 'enabled') required bool enabled,
       @JsonKey(name: 'form') required IntegrationForm form,
       @JsonKey(name: 'group') required String group,
@@ -64,7 +64,8 @@ mixin _$Integration {
 
   /// Creation datetime, iso.
   @JsonKey(name: 'created')
-  String? get created => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get created => throw _privateConstructorUsedError;
 
   /// Integration enabled.
   @JsonKey(name: 'enabled')
@@ -104,7 +105,7 @@ abstract class $IntegrationCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'uid') String? uid,
       @JsonKey(name: 'comment') String comment,
-      @JsonKey(name: 'created') String? created,
+      @JsonKey(name: 'created') @DateTimeConverter() DateTime? created,
       @JsonKey(name: 'enabled') bool enabled,
       @JsonKey(name: 'form') IntegrationForm form,
       @JsonKey(name: 'group') String group,
@@ -147,7 +148,7 @@ class _$IntegrationCopyWithImpl<$Res> implements $IntegrationCopyWith<$Res> {
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       enabled: enabled == freezed
           ? _value.enabled
           : enabled // ignore: cast_nullable_to_non_nullable
@@ -193,7 +194,7 @@ abstract class _$IntegrationCopyWith<$Res>
   $Res call(
       {@JsonKey(name: 'uid') String? uid,
       @JsonKey(name: 'comment') String comment,
-      @JsonKey(name: 'created') String? created,
+      @JsonKey(name: 'created') @DateTimeConverter() DateTime? created,
       @JsonKey(name: 'enabled') bool enabled,
       @JsonKey(name: 'form') IntegrationForm form,
       @JsonKey(name: 'group') String group,
@@ -239,7 +240,7 @@ class __$IntegrationCopyWithImpl<$Res> extends _$IntegrationCopyWithImpl<$Res>
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       enabled: enabled == freezed
           ? _value.enabled
           : enabled // ignore: cast_nullable_to_non_nullable
@@ -274,7 +275,7 @@ class _$_Integration implements _Integration {
   const _$_Integration(
       {@JsonKey(name: 'uid') this.uid,
       @JsonKey(name: 'comment') required this.comment,
-      @JsonKey(name: 'created') this.created,
+      @JsonKey(name: 'created') @DateTimeConverter() this.created,
       @JsonKey(name: 'enabled') required this.enabled,
       @JsonKey(name: 'form') required this.form,
       @JsonKey(name: 'group') required this.group,
@@ -299,7 +300,8 @@ class _$_Integration implements _Integration {
 
   /// Creation datetime, iso.
   @JsonKey(name: 'created')
-  final String? created;
+  @DateTimeConverter()
+  final DateTime? created;
   @override
 
   /// Integration enabled.
@@ -391,7 +393,7 @@ abstract class _Integration implements Integration {
   const factory _Integration(
       {@JsonKey(name: 'uid') String? uid,
       @JsonKey(name: 'comment') required String comment,
-      @JsonKey(name: 'created') String? created,
+      @JsonKey(name: 'created') @DateTimeConverter() DateTime? created,
       @JsonKey(name: 'enabled') required bool enabled,
       @JsonKey(name: 'form') required IntegrationForm form,
       @JsonKey(name: 'group') required String group,
@@ -416,7 +418,8 @@ abstract class _Integration implements Integration {
 
   /// Creation datetime, iso.
   @JsonKey(name: 'created')
-  String? get created => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get created => throw _privateConstructorUsedError;
   @override
 
   /// Integration enabled.

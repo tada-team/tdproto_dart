@@ -23,7 +23,7 @@ class _$MessageReactionDetailTearOff {
   const _$MessageReactionDetailTearOff();
 
   _MessageReactionDetail call(
-      {@JsonKey(name: 'created') required String created,
+      {@JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
       @JsonKey(name: 'sender') required String sender,
       @JsonKey(name: 'name') required String name}) {
     return _MessageReactionDetail(
@@ -45,7 +45,8 @@ const $MessageReactionDetail = _$MessageReactionDetailTearOff();
 mixin _$MessageReactionDetail {
   /// When reaction added, iso datetime.
   @JsonKey(name: 'created')
-  String get created => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get created => throw _privateConstructorUsedError;
 
   /// Reaction author.
   @JsonKey(name: 'sender')
@@ -67,7 +68,7 @@ abstract class $MessageReactionDetailCopyWith<$Res> {
           $Res Function(MessageReactionDetail) then) =
       _$MessageReactionDetailCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'created') String created,
+      {@JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @JsonKey(name: 'sender') String sender,
       @JsonKey(name: 'name') String name});
 }
@@ -91,7 +92,7 @@ class _$MessageReactionDetailCopyWithImpl<$Res>
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       sender: sender == freezed
           ? _value.sender
           : sender // ignore: cast_nullable_to_non_nullable
@@ -112,7 +113,7 @@ abstract class _$MessageReactionDetailCopyWith<$Res>
       __$MessageReactionDetailCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'created') String created,
+      {@JsonKey(name: 'created') @DateTimeConverter() DateTime created,
       @JsonKey(name: 'sender') String sender,
       @JsonKey(name: 'name') String name});
 }
@@ -138,7 +139,7 @@ class __$MessageReactionDetailCopyWithImpl<$Res>
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       sender: sender == freezed
           ? _value.sender
           : sender // ignore: cast_nullable_to_non_nullable
@@ -155,7 +156,7 @@ class __$MessageReactionDetailCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_MessageReactionDetail implements _MessageReactionDetail {
   const _$_MessageReactionDetail(
-      {@JsonKey(name: 'created') required this.created,
+      {@JsonKey(name: 'created') @DateTimeConverter() required this.created,
       @JsonKey(name: 'sender') required this.sender,
       @JsonKey(name: 'name') required this.name});
 
@@ -166,7 +167,8 @@ class _$_MessageReactionDetail implements _MessageReactionDetail {
 
   /// When reaction added, iso datetime.
   @JsonKey(name: 'created')
-  final String created;
+  @DateTimeConverter()
+  final DateTime created;
   @override
 
   /// Reaction author.
@@ -217,7 +219,7 @@ class _$_MessageReactionDetail implements _MessageReactionDetail {
 
 abstract class _MessageReactionDetail implements MessageReactionDetail {
   const factory _MessageReactionDetail(
-      {@JsonKey(name: 'created') required String created,
+      {@JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
       @JsonKey(name: 'sender') required String sender,
       @JsonKey(name: 'name') required String name}) = _$_MessageReactionDetail;
 
@@ -228,7 +230,8 @@ abstract class _MessageReactionDetail implements MessageReactionDetail {
 
   /// When reaction added, iso datetime.
   @JsonKey(name: 'created')
-  String get created => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get created => throw _privateConstructorUsedError;
   @override
 
   /// Reaction author.

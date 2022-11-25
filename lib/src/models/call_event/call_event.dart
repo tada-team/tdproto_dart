@@ -18,13 +18,13 @@ class CallEvent with _$CallEvent {
     @JsonKey(name: 'buzz') bool? buzz,
     
     /// Creation date, iso datetime.
-    @JsonKey(name: 'created') required String created,
+    @JsonKey(name: 'created') @DateTimeConverter() required DateTime created,
     
     /// Call start. For direct calls can be empty when buzzing.
-    @JsonKey(name: 'start') String? start,
+    @JsonKey(name: 'start') @DateTimeConverter() DateTime? start,
     
     /// Call finish.
-    @JsonKey(name: 'finish') String? finish,
+    @JsonKey(name: 'finish') @DateTimeConverter() DateTime? finish,
     
     /// Call record enabled.
     @JsonKey(name: 'audiorecord') required bool audiorecord,

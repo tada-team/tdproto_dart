@@ -33,9 +33,11 @@ class _$MeetingTearOff {
       @JsonKey(name: 'personal_account_id')
           String? personalAccountId,
       @JsonKey(name: 'start_at')
-          required String startAt,
+      @DateTimeConverter()
+          required DateTime startAt,
       @JsonKey(name: 'end_at')
-          required String endAt,
+      @DateTimeConverter()
+          required DateTime endAt,
       @JsonKey(name: 'duration')
           required int duration,
       @JsonKey(name: 'freq')
@@ -65,7 +67,8 @@ class _$MeetingTearOff {
       @JsonKey(name: 'gentime')
           required int gentime,
       @JsonKey(name: 'created')
-          required String created,
+      @DateTimeConverter()
+          required DateTime created,
       @JsonKey(name: 'display_name')
           required String displayName,
       @JsonKey(name: 'icons')
@@ -137,11 +140,13 @@ class _$MeetingTearOff {
       @JsonKey(name: 'title')
           String? title,
       @JsonKey(name: 'done')
-          String? done,
+      @DateTimeConverter()
+          DateTime? done,
       @JsonKey(name: 'done_reason')
           String? doneReason,
       @JsonKey(name: 'deadline')
-          String? deadline,
+      @DateTimeConverter()
+          DateTime? deadline,
       @JsonKey(name: 'deadline_expired')
           bool? deadlineExpired,
       @JsonKey(name: 'links')
@@ -193,12 +198,14 @@ class _$MeetingTearOff {
       @JsonKey(name: 'can_set_important_any_message')
           bool? canSetImportantAnyMessage,
       @JsonKey(name: 'last_activity')
-          String? lastActivity,
+      @DateTimeConverter()
+          DateTime? lastActivity,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'draft_num')
           int? draftNum,
       @JsonKey(name: 'meeting_start_at')
-          String? meetingStartAt,
+      @DateTimeConverter()
+          DateTime? meetingStartAt,
       @JsonKey(name: 'meeting_freq')
           bool? meetingFreq,
       @JsonKey(name: 'meeting_duration')
@@ -329,11 +336,13 @@ mixin _$Meeting {
 
   /// .
   @JsonKey(name: 'start_at')
-  String get startAt => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get startAt => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'end_at')
-  String get endAt => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get endAt => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'duration')
@@ -393,7 +402,8 @@ mixin _$Meeting {
 
   /// Creation date, iso datetime.
   @JsonKey(name: 'created')
-  String get created => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get created => throw _privateConstructorUsedError;
 
   /// Title.
   @JsonKey(name: 'display_name')
@@ -537,7 +547,8 @@ mixin _$Meeting {
 
   /// Task done date in iso format, if any.
   @JsonKey(name: 'done')
-  String? get done => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get done => throw _privateConstructorUsedError;
 
   /// Task done reason, if any.
   @JsonKey(name: 'done_reason')
@@ -545,7 +556,8 @@ mixin _$Meeting {
 
   /// Task deadline in iso format, if any.
   @JsonKey(name: 'deadline')
-  String? get deadline => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get deadline => throw _privateConstructorUsedError;
 
   /// Is task deadline expired.
   @JsonKey(name: 'deadline_expired')
@@ -649,7 +661,8 @@ mixin _$Meeting {
 
   /// Date of the last message sent even if it was deleted.
   @JsonKey(name: 'last_activity')
-  String? get lastActivity => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get lastActivity => throw _privateConstructorUsedError;
 
   /// Deprecated.
   @Deprecated('Deprecated.')
@@ -658,7 +671,8 @@ mixin _$Meeting {
 
   /// Start date of meeting chat.
   @JsonKey(name: 'meeting_start_at')
-  String? get meetingStartAt => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get meetingStartAt => throw _privateConstructorUsedError;
 
   /// Meeting has frequency.
   @JsonKey(name: 'meeting_freq')
@@ -689,9 +703,11 @@ abstract class $MeetingCopyWith<$Res> {
       @JsonKey(name: 'personal_account_id')
           String? personalAccountId,
       @JsonKey(name: 'start_at')
-          String startAt,
+      @DateTimeConverter()
+          DateTime startAt,
       @JsonKey(name: 'end_at')
-          String endAt,
+      @DateTimeConverter()
+          DateTime endAt,
       @JsonKey(name: 'duration')
           int duration,
       @JsonKey(name: 'freq')
@@ -721,7 +737,8 @@ abstract class $MeetingCopyWith<$Res> {
       @JsonKey(name: 'gentime')
           int gentime,
       @JsonKey(name: 'created')
-          String created,
+      @DateTimeConverter()
+          DateTime created,
       @JsonKey(name: 'display_name')
           String displayName,
       @JsonKey(name: 'icons')
@@ -793,11 +810,13 @@ abstract class $MeetingCopyWith<$Res> {
       @JsonKey(name: 'title')
           String? title,
       @JsonKey(name: 'done')
-          String? done,
+      @DateTimeConverter()
+          DateTime? done,
       @JsonKey(name: 'done_reason')
           String? doneReason,
       @JsonKey(name: 'deadline')
-          String? deadline,
+      @DateTimeConverter()
+          DateTime? deadline,
       @JsonKey(name: 'deadline_expired')
           bool? deadlineExpired,
       @JsonKey(name: 'links')
@@ -849,12 +868,14 @@ abstract class $MeetingCopyWith<$Res> {
       @JsonKey(name: 'can_set_important_any_message')
           bool? canSetImportantAnyMessage,
       @JsonKey(name: 'last_activity')
-          String? lastActivity,
+      @DateTimeConverter()
+          DateTime? lastActivity,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'draft_num')
           int? draftNum,
       @JsonKey(name: 'meeting_start_at')
-          String? meetingStartAt,
+      @DateTimeConverter()
+          DateTime? meetingStartAt,
       @JsonKey(name: 'meeting_freq')
           bool? meetingFreq,
       @JsonKey(name: 'meeting_duration')
@@ -992,11 +1013,11 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
       startAt: startAt == freezed
           ? _value.startAt
           : startAt // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       endAt: endAt == freezed
           ? _value.endAt
           : endAt // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       duration: duration == freezed
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
@@ -1056,7 +1077,7 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       displayName: displayName == freezed
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
@@ -1200,7 +1221,7 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
       done: done == freezed
           ? _value.done
           : done // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       doneReason: doneReason == freezed
           ? _value.doneReason
           : doneReason // ignore: cast_nullable_to_non_nullable
@@ -1208,7 +1229,7 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
       deadline: deadline == freezed
           ? _value.deadline
           : deadline // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       deadlineExpired: deadlineExpired == freezed
           ? _value.deadlineExpired
           : deadlineExpired // ignore: cast_nullable_to_non_nullable
@@ -1312,7 +1333,7 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
       lastActivity: lastActivity == freezed
           ? _value.lastActivity
           : lastActivity // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       draftNum: draftNum == freezed
           ? _value.draftNum
           : draftNum // ignore: cast_nullable_to_non_nullable
@@ -1320,7 +1341,7 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
       meetingStartAt: meetingStartAt == freezed
           ? _value.meetingStartAt
           : meetingStartAt // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       meetingFreq: meetingFreq == freezed
           ? _value.meetingFreq
           : meetingFreq // ignore: cast_nullable_to_non_nullable
@@ -1401,9 +1422,11 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
       @JsonKey(name: 'personal_account_id')
           String? personalAccountId,
       @JsonKey(name: 'start_at')
-          String startAt,
+      @DateTimeConverter()
+          DateTime startAt,
       @JsonKey(name: 'end_at')
-          String endAt,
+      @DateTimeConverter()
+          DateTime endAt,
       @JsonKey(name: 'duration')
           int duration,
       @JsonKey(name: 'freq')
@@ -1433,7 +1456,8 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
       @JsonKey(name: 'gentime')
           int gentime,
       @JsonKey(name: 'created')
-          String created,
+      @DateTimeConverter()
+          DateTime created,
       @JsonKey(name: 'display_name')
           String displayName,
       @JsonKey(name: 'icons')
@@ -1505,11 +1529,13 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
       @JsonKey(name: 'title')
           String? title,
       @JsonKey(name: 'done')
-          String? done,
+      @DateTimeConverter()
+          DateTime? done,
       @JsonKey(name: 'done_reason')
           String? doneReason,
       @JsonKey(name: 'deadline')
-          String? deadline,
+      @DateTimeConverter()
+          DateTime? deadline,
       @JsonKey(name: 'deadline_expired')
           bool? deadlineExpired,
       @JsonKey(name: 'links')
@@ -1561,12 +1587,14 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
       @JsonKey(name: 'can_set_important_any_message')
           bool? canSetImportantAnyMessage,
       @JsonKey(name: 'last_activity')
-          String? lastActivity,
+      @DateTimeConverter()
+          DateTime? lastActivity,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'draft_num')
           int? draftNum,
       @JsonKey(name: 'meeting_start_at')
-          String? meetingStartAt,
+      @DateTimeConverter()
+          DateTime? meetingStartAt,
       @JsonKey(name: 'meeting_freq')
           bool? meetingFreq,
       @JsonKey(name: 'meeting_duration')
@@ -1710,11 +1738,11 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res>
       startAt: startAt == freezed
           ? _value.startAt
           : startAt // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       endAt: endAt == freezed
           ? _value.endAt
           : endAt // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       duration: duration == freezed
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
@@ -1774,7 +1802,7 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res>
       created: created == freezed
           ? _value.created
           : created // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime,
       displayName: displayName == freezed
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
@@ -1918,7 +1946,7 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res>
       done: done == freezed
           ? _value.done
           : done // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       doneReason: doneReason == freezed
           ? _value.doneReason
           : doneReason // ignore: cast_nullable_to_non_nullable
@@ -1926,7 +1954,7 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res>
       deadline: deadline == freezed
           ? _value.deadline
           : deadline // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       deadlineExpired: deadlineExpired == freezed
           ? _value.deadlineExpired
           : deadlineExpired // ignore: cast_nullable_to_non_nullable
@@ -2030,7 +2058,7 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res>
       lastActivity: lastActivity == freezed
           ? _value.lastActivity
           : lastActivity // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       draftNum: draftNum == freezed
           ? _value.draftNum
           : draftNum // ignore: cast_nullable_to_non_nullable
@@ -2038,7 +2066,7 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res>
       meetingStartAt: meetingStartAt == freezed
           ? _value.meetingStartAt
           : meetingStartAt // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
       meetingFreq: meetingFreq == freezed
           ? _value.meetingFreq
           : meetingFreq // ignore: cast_nullable_to_non_nullable
@@ -2066,8 +2094,10 @@ class _$_Meeting implements _Meeting {
       @JsonKey(name: 'personal_account_id')
           this.personalAccountId,
       @JsonKey(name: 'start_at')
+      @DateTimeConverter()
           required this.startAt,
       @JsonKey(name: 'end_at')
+      @DateTimeConverter()
           required this.endAt,
       @JsonKey(name: 'duration')
           required this.duration,
@@ -2098,6 +2128,7 @@ class _$_Meeting implements _Meeting {
       @JsonKey(name: 'gentime')
           required this.gentime,
       @JsonKey(name: 'created')
+      @DateTimeConverter()
           required this.created,
       @JsonKey(name: 'display_name')
           required this.displayName,
@@ -2170,10 +2201,12 @@ class _$_Meeting implements _Meeting {
       @JsonKey(name: 'title')
           this.title,
       @JsonKey(name: 'done')
+      @DateTimeConverter()
           this.done,
       @JsonKey(name: 'done_reason')
           this.doneReason,
       @JsonKey(name: 'deadline')
+      @DateTimeConverter()
           this.deadline,
       @JsonKey(name: 'deadline_expired')
           this.deadlineExpired,
@@ -2226,11 +2259,13 @@ class _$_Meeting implements _Meeting {
       @JsonKey(name: 'can_set_important_any_message')
           this.canSetImportantAnyMessage,
       @JsonKey(name: 'last_activity')
+      @DateTimeConverter()
           this.lastActivity,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'draft_num')
           this.draftNum,
       @JsonKey(name: 'meeting_start_at')
+      @DateTimeConverter()
           this.meetingStartAt,
       @JsonKey(name: 'meeting_freq')
           this.meetingFreq,
@@ -2269,12 +2304,14 @@ class _$_Meeting implements _Meeting {
 
   /// .
   @JsonKey(name: 'start_at')
-  final String startAt;
+  @DateTimeConverter()
+  final DateTime startAt;
   @override
 
   /// .
   @JsonKey(name: 'end_at')
-  final String endAt;
+  @DateTimeConverter()
+  final DateTime endAt;
   @override
 
   /// .
@@ -2349,7 +2386,8 @@ class _$_Meeting implements _Meeting {
 
   /// Creation date, iso datetime.
   @JsonKey(name: 'created')
-  final String created;
+  @DateTimeConverter()
+  final DateTime created;
   @override
 
   /// Title.
@@ -2529,7 +2567,8 @@ class _$_Meeting implements _Meeting {
 
   /// Task done date in iso format, if any.
   @JsonKey(name: 'done')
-  final String? done;
+  @DateTimeConverter()
+  final DateTime? done;
   @override
 
   /// Task done reason, if any.
@@ -2539,7 +2578,8 @@ class _$_Meeting implements _Meeting {
 
   /// Task deadline in iso format, if any.
   @JsonKey(name: 'deadline')
-  final String? deadline;
+  @DateTimeConverter()
+  final DateTime? deadline;
   @override
 
   /// Is task deadline expired.
@@ -2669,7 +2709,8 @@ class _$_Meeting implements _Meeting {
 
   /// Date of the last message sent even if it was deleted.
   @JsonKey(name: 'last_activity')
-  final String? lastActivity;
+  @DateTimeConverter()
+  final DateTime? lastActivity;
   @override
 
   /// Deprecated.
@@ -2680,7 +2721,8 @@ class _$_Meeting implements _Meeting {
 
   /// Start date of meeting chat.
   @JsonKey(name: 'meeting_start_at')
-  final String? meetingStartAt;
+  @DateTimeConverter()
+  final DateTime? meetingStartAt;
   @override
 
   /// Meeting has frequency.
@@ -2954,9 +2996,11 @@ abstract class _Meeting implements Meeting {
       @JsonKey(name: 'personal_account_id')
           String? personalAccountId,
       @JsonKey(name: 'start_at')
-          required String startAt,
+      @DateTimeConverter()
+          required DateTime startAt,
       @JsonKey(name: 'end_at')
-          required String endAt,
+      @DateTimeConverter()
+          required DateTime endAt,
       @JsonKey(name: 'duration')
           required int duration,
       @JsonKey(name: 'freq')
@@ -2986,7 +3030,8 @@ abstract class _Meeting implements Meeting {
       @JsonKey(name: 'gentime')
           required int gentime,
       @JsonKey(name: 'created')
-          required String created,
+      @DateTimeConverter()
+          required DateTime created,
       @JsonKey(name: 'display_name')
           required String displayName,
       @JsonKey(name: 'icons')
@@ -3058,11 +3103,13 @@ abstract class _Meeting implements Meeting {
       @JsonKey(name: 'title')
           String? title,
       @JsonKey(name: 'done')
-          String? done,
+      @DateTimeConverter()
+          DateTime? done,
       @JsonKey(name: 'done_reason')
           String? doneReason,
       @JsonKey(name: 'deadline')
-          String? deadline,
+      @DateTimeConverter()
+          DateTime? deadline,
       @JsonKey(name: 'deadline_expired')
           bool? deadlineExpired,
       @JsonKey(name: 'links')
@@ -3114,12 +3161,14 @@ abstract class _Meeting implements Meeting {
       @JsonKey(name: 'can_set_important_any_message')
           bool? canSetImportantAnyMessage,
       @JsonKey(name: 'last_activity')
-          String? lastActivity,
+      @DateTimeConverter()
+          DateTime? lastActivity,
       @Deprecated('Deprecated.')
       @JsonKey(name: 'draft_num')
           int? draftNum,
       @JsonKey(name: 'meeting_start_at')
-          String? meetingStartAt,
+      @DateTimeConverter()
+          DateTime? meetingStartAt,
       @JsonKey(name: 'meeting_freq')
           bool? meetingFreq,
       @JsonKey(name: 'meeting_duration')
@@ -3156,12 +3205,14 @@ abstract class _Meeting implements Meeting {
 
   /// .
   @JsonKey(name: 'start_at')
-  String get startAt => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get startAt => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'end_at')
-  String get endAt => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get endAt => throw _privateConstructorUsedError;
   @override
 
   /// .
@@ -3236,7 +3287,8 @@ abstract class _Meeting implements Meeting {
 
   /// Creation date, iso datetime.
   @JsonKey(name: 'created')
-  String get created => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get created => throw _privateConstructorUsedError;
   @override
 
   /// Title.
@@ -3416,7 +3468,8 @@ abstract class _Meeting implements Meeting {
 
   /// Task done date in iso format, if any.
   @JsonKey(name: 'done')
-  String? get done => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get done => throw _privateConstructorUsedError;
   @override
 
   /// Task done reason, if any.
@@ -3426,7 +3479,8 @@ abstract class _Meeting implements Meeting {
 
   /// Task deadline in iso format, if any.
   @JsonKey(name: 'deadline')
-  String? get deadline => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get deadline => throw _privateConstructorUsedError;
   @override
 
   /// Is task deadline expired.
@@ -3556,7 +3610,8 @@ abstract class _Meeting implements Meeting {
 
   /// Date of the last message sent even if it was deleted.
   @JsonKey(name: 'last_activity')
-  String? get lastActivity => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get lastActivity => throw _privateConstructorUsedError;
   @override
 
   /// Deprecated.
@@ -3567,7 +3622,8 @@ abstract class _Meeting implements Meeting {
 
   /// Start date of meeting chat.
   @JsonKey(name: 'meeting_start_at')
-  String? get meetingStartAt => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get meetingStartAt => throw _privateConstructorUsedError;
   @override
 
   /// Meeting has frequency.

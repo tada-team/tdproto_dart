@@ -24,7 +24,7 @@ class _$MeetingsDeleteRequestParamsTearOff {
 
   _MeetingsDeleteRequestParams call(
       {@JsonKey(name: 'team_uuid') required String teamUuid,
-      @JsonKey(name: 'date') String? date}) {
+      @JsonKey(name: 'date') @DateTimeConverter() DateTime? date}) {
     return _MeetingsDeleteRequestParams(
       teamUuid: teamUuid,
       date: date,
@@ -47,7 +47,8 @@ mixin _$MeetingsDeleteRequestParams {
 
   /// .
   @JsonKey(name: 'date')
-  String? get date => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get date => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -63,7 +64,7 @@ abstract class $MeetingsDeleteRequestParamsCopyWith<$Res> {
       _$MeetingsDeleteRequestParamsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'team_uuid') String teamUuid,
-      @JsonKey(name: 'date') String? date});
+      @JsonKey(name: 'date') @DateTimeConverter() DateTime? date});
 }
 
 /// @nodoc
@@ -88,7 +89,7 @@ class _$MeetingsDeleteRequestParamsCopyWithImpl<$Res>
       date: date == freezed
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
     ));
   }
 }
@@ -103,7 +104,7 @@ abstract class _$MeetingsDeleteRequestParamsCopyWith<$Res>
   @override
   $Res call(
       {@JsonKey(name: 'team_uuid') String teamUuid,
-      @JsonKey(name: 'date') String? date});
+      @JsonKey(name: 'date') @DateTimeConverter() DateTime? date});
 }
 
 /// @nodoc
@@ -132,7 +133,7 @@ class __$MeetingsDeleteRequestParamsCopyWithImpl<$Res>
       date: date == freezed
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as DateTime?,
     ));
   }
 }
@@ -142,7 +143,7 @@ class __$MeetingsDeleteRequestParamsCopyWithImpl<$Res>
 class _$_MeetingsDeleteRequestParams implements _MeetingsDeleteRequestParams {
   const _$_MeetingsDeleteRequestParams(
       {@JsonKey(name: 'team_uuid') required this.teamUuid,
-      @JsonKey(name: 'date') this.date});
+      @JsonKey(name: 'date') @DateTimeConverter() this.date});
 
   factory _$_MeetingsDeleteRequestParams.fromJson(Map<String, dynamic> json) =>
       _$$_MeetingsDeleteRequestParamsFromJson(json);
@@ -156,7 +157,8 @@ class _$_MeetingsDeleteRequestParams implements _MeetingsDeleteRequestParams {
 
   /// .
   @JsonKey(name: 'date')
-  final String? date;
+  @DateTimeConverter()
+  final DateTime? date;
 
   @override
   String toString() {
@@ -195,8 +197,9 @@ class _$_MeetingsDeleteRequestParams implements _MeetingsDeleteRequestParams {
 abstract class _MeetingsDeleteRequestParams
     implements MeetingsDeleteRequestParams {
   const factory _MeetingsDeleteRequestParams(
-      {@JsonKey(name: 'team_uuid') required String teamUuid,
-      @JsonKey(name: 'date') String? date}) = _$_MeetingsDeleteRequestParams;
+          {@JsonKey(name: 'team_uuid') required String teamUuid,
+          @JsonKey(name: 'date') @DateTimeConverter() DateTime? date}) =
+      _$_MeetingsDeleteRequestParams;
 
   factory _MeetingsDeleteRequestParams.fromJson(Map<String, dynamic> json) =
       _$_MeetingsDeleteRequestParams.fromJson;
@@ -210,7 +213,8 @@ abstract class _MeetingsDeleteRequestParams
 
   /// .
   @JsonKey(name: 'date')
-  String? get date => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get date => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MeetingsDeleteRequestParamsCopyWith<_MeetingsDeleteRequestParams>

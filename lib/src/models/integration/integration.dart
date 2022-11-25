@@ -15,7 +15,7 @@ class Integration with _$Integration {
     @JsonKey(name: 'comment') required String comment,
     
     /// Creation datetime, iso.
-    @JsonKey(name: 'created') String? created,
+    @JsonKey(name: 'created') @DateTimeConverter() DateTime? created,
     
     /// Integration enabled.
     @JsonKey(name: 'enabled') required bool enabled,
