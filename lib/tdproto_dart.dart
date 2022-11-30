@@ -180,6 +180,7 @@ export 'src/models/meetings_members_get_request_params/meetings_members_get_requ
 export 'src/models/meetings_members_response/meetings_members_response.dart';
 export 'src/models/meetings_members_update_request/meetings_members_update_request.dart';
 export 'src/models/meetings_response/meetings_response.dart';
+export 'src/models/meetings_update_cell_request/meetings_update_cell_request.dart';
 export 'src/models/meetings_update_request/meetings_update_request.dart';
 export 'src/models/message/message.dart';
 export 'src/models/message_colors/message_colors.dart';
@@ -260,6 +261,8 @@ export 'src/models/server_debug/server_debug.dart';
 export 'src/models/server_debug_params/server_debug_params.dart';
 export 'src/models/server_login/server_login.dart';
 export 'src/models/server_login_params/server_login_params.dart';
+export 'src/models/server_meeting_cell_updated/server_meeting_cell_updated.dart';
+export 'src/models/server_meeting_cell_updated_params/server_meeting_cell_updated_params.dart';
 export 'src/models/server_meeting_deleted/server_meeting_deleted.dart';
 export 'src/models/server_meeting_deleted_params/server_meeting_deleted_params.dart';
 export 'src/models/server_meeting_updated/server_meeting_updated.dart';
