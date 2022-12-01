@@ -18,9 +18,6 @@ class MeetingsUpdateCellRequest with _$MeetingsUpdateCellRequest {
     @JsonKey(name: 'duration') required int duration,
     
     /// .
-    @JsonKey(name: 'is_outside') required bool isOutside,
-    
-    /// .
     @JsonKey(name: 'cell_start_old_date') required String cellStartOldDate,
     
     /// .

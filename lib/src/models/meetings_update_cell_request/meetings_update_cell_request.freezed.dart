@@ -26,14 +26,12 @@ class _$MeetingsUpdateCellRequestTearOff {
       {@JsonKey(name: 'meeting_id') required String meetingId,
       @JsonKey(name: 'team_uuid') required String teamUuid,
       @JsonKey(name: 'duration') required int duration,
-      @JsonKey(name: 'is_outside') required bool isOutside,
       @JsonKey(name: 'cell_start_old_date') required String cellStartOldDate,
       @JsonKey(name: 'cell_start_new_date') required String cellStartNewDate}) {
     return _MeetingsUpdateCellRequest(
       meetingId: meetingId,
       teamUuid: teamUuid,
       duration: duration,
-      isOutside: isOutside,
       cellStartOldDate: cellStartOldDate,
       cellStartNewDate: cellStartNewDate,
     );
@@ -62,10 +60,6 @@ mixin _$MeetingsUpdateCellRequest {
   int get duration => throw _privateConstructorUsedError;
 
   /// .
-  @JsonKey(name: 'is_outside')
-  bool get isOutside => throw _privateConstructorUsedError;
-
-  /// .
   @JsonKey(name: 'cell_start_old_date')
   String get cellStartOldDate => throw _privateConstructorUsedError;
 
@@ -88,7 +82,6 @@ abstract class $MeetingsUpdateCellRequestCopyWith<$Res> {
       {@JsonKey(name: 'meeting_id') String meetingId,
       @JsonKey(name: 'team_uuid') String teamUuid,
       @JsonKey(name: 'duration') int duration,
-      @JsonKey(name: 'is_outside') bool isOutside,
       @JsonKey(name: 'cell_start_old_date') String cellStartOldDate,
       @JsonKey(name: 'cell_start_new_date') String cellStartNewDate});
 }
@@ -107,7 +100,6 @@ class _$MeetingsUpdateCellRequestCopyWithImpl<$Res>
     Object? meetingId = freezed,
     Object? teamUuid = freezed,
     Object? duration = freezed,
-    Object? isOutside = freezed,
     Object? cellStartOldDate = freezed,
     Object? cellStartNewDate = freezed,
   }) {
@@ -124,10 +116,6 @@ class _$MeetingsUpdateCellRequestCopyWithImpl<$Res>
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as int,
-      isOutside: isOutside == freezed
-          ? _value.isOutside
-          : isOutside // ignore: cast_nullable_to_non_nullable
-              as bool,
       cellStartOldDate: cellStartOldDate == freezed
           ? _value.cellStartOldDate
           : cellStartOldDate // ignore: cast_nullable_to_non_nullable
@@ -151,7 +139,6 @@ abstract class _$MeetingsUpdateCellRequestCopyWith<$Res>
       {@JsonKey(name: 'meeting_id') String meetingId,
       @JsonKey(name: 'team_uuid') String teamUuid,
       @JsonKey(name: 'duration') int duration,
-      @JsonKey(name: 'is_outside') bool isOutside,
       @JsonKey(name: 'cell_start_old_date') String cellStartOldDate,
       @JsonKey(name: 'cell_start_new_date') String cellStartNewDate});
 }
@@ -173,7 +160,6 @@ class __$MeetingsUpdateCellRequestCopyWithImpl<$Res>
     Object? meetingId = freezed,
     Object? teamUuid = freezed,
     Object? duration = freezed,
-    Object? isOutside = freezed,
     Object? cellStartOldDate = freezed,
     Object? cellStartNewDate = freezed,
   }) {
@@ -190,10 +176,6 @@ class __$MeetingsUpdateCellRequestCopyWithImpl<$Res>
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as int,
-      isOutside: isOutside == freezed
-          ? _value.isOutside
-          : isOutside // ignore: cast_nullable_to_non_nullable
-              as bool,
       cellStartOldDate: cellStartOldDate == freezed
           ? _value.cellStartOldDate
           : cellStartOldDate // ignore: cast_nullable_to_non_nullable
@@ -213,7 +195,6 @@ class _$_MeetingsUpdateCellRequest implements _MeetingsUpdateCellRequest {
       {@JsonKey(name: 'meeting_id') required this.meetingId,
       @JsonKey(name: 'team_uuid') required this.teamUuid,
       @JsonKey(name: 'duration') required this.duration,
-      @JsonKey(name: 'is_outside') required this.isOutside,
       @JsonKey(name: 'cell_start_old_date') required this.cellStartOldDate,
       @JsonKey(name: 'cell_start_new_date') required this.cellStartNewDate});
 
@@ -238,11 +219,6 @@ class _$_MeetingsUpdateCellRequest implements _MeetingsUpdateCellRequest {
   @override
 
   /// .
-  @JsonKey(name: 'is_outside')
-  final bool isOutside;
-  @override
-
-  /// .
   @JsonKey(name: 'cell_start_old_date')
   final String cellStartOldDate;
   @override
@@ -253,7 +229,7 @@ class _$_MeetingsUpdateCellRequest implements _MeetingsUpdateCellRequest {
 
   @override
   String toString() {
-    return 'MeetingsUpdateCellRequest(meetingId: $meetingId, teamUuid: $teamUuid, duration: $duration, isOutside: $isOutside, cellStartOldDate: $cellStartOldDate, cellStartNewDate: $cellStartNewDate)';
+    return 'MeetingsUpdateCellRequest(meetingId: $meetingId, teamUuid: $teamUuid, duration: $duration, cellStartOldDate: $cellStartOldDate, cellStartNewDate: $cellStartNewDate)';
   }
 
   @override
@@ -269,9 +245,6 @@ class _$_MeetingsUpdateCellRequest implements _MeetingsUpdateCellRequest {
             (identical(other.duration, duration) ||
                 const DeepCollectionEquality()
                     .equals(other.duration, duration)) &&
-            (identical(other.isOutside, isOutside) ||
-                const DeepCollectionEquality()
-                    .equals(other.isOutside, isOutside)) &&
             (identical(other.cellStartOldDate, cellStartOldDate) ||
                 const DeepCollectionEquality()
                     .equals(other.cellStartOldDate, cellStartOldDate)) &&
@@ -286,7 +259,6 @@ class _$_MeetingsUpdateCellRequest implements _MeetingsUpdateCellRequest {
       const DeepCollectionEquality().hash(meetingId) ^
       const DeepCollectionEquality().hash(teamUuid) ^
       const DeepCollectionEquality().hash(duration) ^
-      const DeepCollectionEquality().hash(isOutside) ^
       const DeepCollectionEquality().hash(cellStartOldDate) ^
       const DeepCollectionEquality().hash(cellStartNewDate);
 
@@ -311,8 +283,6 @@ abstract class _MeetingsUpdateCellRequest implements MeetingsUpdateCellRequest {
           required String teamUuid,
       @JsonKey(name: 'duration')
           required int duration,
-      @JsonKey(name: 'is_outside')
-          required bool isOutside,
       @JsonKey(name: 'cell_start_old_date')
           required String cellStartOldDate,
       @JsonKey(name: 'cell_start_new_date')
@@ -336,11 +306,6 @@ abstract class _MeetingsUpdateCellRequest implements MeetingsUpdateCellRequest {
   /// .
   @JsonKey(name: 'duration')
   int get duration => throw _privateConstructorUsedError;
-  @override
-
-  /// .
-  @JsonKey(name: 'is_outside')
-  bool get isOutside => throw _privateConstructorUsedError;
   @override
 
   /// .
