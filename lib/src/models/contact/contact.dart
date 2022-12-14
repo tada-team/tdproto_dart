@@ -125,6 +125,9 @@ class Contact with _$Contact {
     /// Push notifications for task chats.
     @JsonKey(name: 'task_notifications_enabled') bool? taskNotificationsEnabled,
     
+    /// Push notifications for meeting chats.
+    @JsonKey(name: 'meeting_notifications_enabled') bool? meetingNotificationsEnabled,
+    
     /// Short view in contact list.
     @JsonKey(name: 'contact_short_view') bool? contactShortView,
     

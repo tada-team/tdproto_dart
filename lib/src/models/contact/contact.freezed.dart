@@ -102,6 +102,8 @@ class _$ContactTearOff {
           bool? groupNotificationsEnabled,
       @JsonKey(name: 'task_notifications_enabled')
           bool? taskNotificationsEnabled,
+      @JsonKey(name: 'meeting_notifications_enabled')
+          bool? meetingNotificationsEnabled,
       @JsonKey(name: 'contact_short_view')
           bool? contactShortView,
       @JsonKey(name: 'group_short_view')
@@ -195,6 +197,7 @@ class _$ContactTearOff {
       focusUntil: focusUntil,
       groupNotificationsEnabled: groupNotificationsEnabled,
       taskNotificationsEnabled: taskNotificationsEnabled,
+      meetingNotificationsEnabled: meetingNotificationsEnabled,
       contactShortView: contactShortView,
       groupShortView: groupShortView,
       taskShortView: taskShortView,
@@ -392,6 +395,10 @@ mixin _$Contact {
   @JsonKey(name: 'task_notifications_enabled')
   bool? get taskNotificationsEnabled => throw _privateConstructorUsedError;
 
+  /// Push notifications for meeting chats.
+  @JsonKey(name: 'meeting_notifications_enabled')
+  bool? get meetingNotificationsEnabled => throw _privateConstructorUsedError;
+
   /// Short view in contact list.
   @JsonKey(name: 'contact_short_view')
   bool? get contactShortView => throw _privateConstructorUsedError;
@@ -587,6 +594,8 @@ abstract class $ContactCopyWith<$Res> {
           bool? groupNotificationsEnabled,
       @JsonKey(name: 'task_notifications_enabled')
           bool? taskNotificationsEnabled,
+      @JsonKey(name: 'meeting_notifications_enabled')
+          bool? meetingNotificationsEnabled,
       @JsonKey(name: 'contact_short_view')
           bool? contactShortView,
       @JsonKey(name: 'group_short_view')
@@ -694,6 +703,7 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
     Object? focusUntil = freezed,
     Object? groupNotificationsEnabled = freezed,
     Object? taskNotificationsEnabled = freezed,
+    Object? meetingNotificationsEnabled = freezed,
     Object? contactShortView = freezed,
     Object? groupShortView = freezed,
     Object? taskShortView = freezed,
@@ -877,6 +887,10 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
       taskNotificationsEnabled: taskNotificationsEnabled == freezed
           ? _value.taskNotificationsEnabled
           : taskNotificationsEnabled // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      meetingNotificationsEnabled: meetingNotificationsEnabled == freezed
+          ? _value.meetingNotificationsEnabled
+          : meetingNotificationsEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
       contactShortView: contactShortView == freezed
           ? _value.contactShortView
@@ -1090,6 +1104,8 @@ abstract class _$ContactCopyWith<$Res> implements $ContactCopyWith<$Res> {
           bool? groupNotificationsEnabled,
       @JsonKey(name: 'task_notifications_enabled')
           bool? taskNotificationsEnabled,
+      @JsonKey(name: 'meeting_notifications_enabled')
+          bool? meetingNotificationsEnabled,
       @JsonKey(name: 'contact_short_view')
           bool? contactShortView,
       @JsonKey(name: 'group_short_view')
@@ -1200,6 +1216,7 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res>
     Object? focusUntil = freezed,
     Object? groupNotificationsEnabled = freezed,
     Object? taskNotificationsEnabled = freezed,
+    Object? meetingNotificationsEnabled = freezed,
     Object? contactShortView = freezed,
     Object? groupShortView = freezed,
     Object? taskShortView = freezed,
@@ -1383,6 +1400,10 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res>
       taskNotificationsEnabled: taskNotificationsEnabled == freezed
           ? _value.taskNotificationsEnabled
           : taskNotificationsEnabled // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      meetingNotificationsEnabled: meetingNotificationsEnabled == freezed
+          ? _value.meetingNotificationsEnabled
+          : meetingNotificationsEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
       contactShortView: contactShortView == freezed
           ? _value.contactShortView
@@ -1576,6 +1597,8 @@ class _$_Contact implements _Contact {
           this.groupNotificationsEnabled,
       @JsonKey(name: 'task_notifications_enabled')
           this.taskNotificationsEnabled,
+      @JsonKey(name: 'meeting_notifications_enabled')
+          this.meetingNotificationsEnabled,
       @JsonKey(name: 'contact_short_view')
           this.contactShortView,
       @JsonKey(name: 'group_short_view')
@@ -1832,6 +1855,11 @@ class _$_Contact implements _Contact {
   final bool? taskNotificationsEnabled;
   @override
 
+  /// Push notifications for meeting chats.
+  @JsonKey(name: 'meeting_notifications_enabled')
+  final bool? meetingNotificationsEnabled;
+  @override
+
   /// Short view in contact list.
   @JsonKey(name: 'contact_short_view')
   final bool? contactShortView;
@@ -1964,7 +1992,7 @@ class _$_Contact implements _Contact {
 
   @override
   String toString() {
-    return 'Contact(jid: $jid, node: $node, displayName: $displayName, shortName: $shortName, contactEmail: $contactEmail, contactPhone: $contactPhone, icons: $icons, gentime: $gentime, role: $role, mood: $mood, teamStatus: $teamStatus, lastActivity: $lastActivity, isArchive: $isArchive, botname: $botname, sections: $sections, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, canCall: $canCall, canCreateTask: $canCreateTask, canImportTasks: $canImportTasks, canAddToGroup: $canAddToGroup, canDelete: $canDelete, changeableFields: $changeableFields, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, debugShowActivity: $debugShowActivity, dropallEnabled: $dropallEnabled, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, hidePushesContent: $hidePushesContent, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, focusUntil: $focusUntil, groupNotificationsEnabled: $groupNotificationsEnabled, taskNotificationsEnabled: $taskNotificationsEnabled, contactShortView: $contactShortView, groupShortView: $groupShortView, taskShortView: $taskShortView, meetingShortView: $meetingShortView, contactMshortView: $contactMshortView, groupMshortView: $groupMshortView, auth2faEnabled: $auth2faEnabled, auth2faStatus: $auth2faStatus, taskMshortView: $taskMshortView, meetingMshortView: $meetingMshortView, contactShowArchived: $contactShowArchived, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, canAddToTeam: $canAddToTeam, canManageSections: $canManageSections, canManageProjects: $canManageProjects, canManageTags: $canManageTags, canManageIntegrations: $canManageIntegrations, canManageColorRules: $canManageColorRules, canCreateGroup: $canCreateGroup, canCreateMeeting: $canCreateMeeting, canJoinPublicGroups: $canJoinPublicGroups, canJoinPublicTasks: $canJoinPublicTasks, canImportChats: $canImportChats, customFields: $customFields, canDeleteAnyMessage: $canDeleteAnyMessage)';
+    return 'Contact(jid: $jid, node: $node, displayName: $displayName, shortName: $shortName, contactEmail: $contactEmail, contactPhone: $contactPhone, icons: $icons, gentime: $gentime, role: $role, mood: $mood, teamStatus: $teamStatus, lastActivity: $lastActivity, isArchive: $isArchive, botname: $botname, sections: $sections, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, canCall: $canCall, canCreateTask: $canCreateTask, canImportTasks: $canImportTasks, canAddToGroup: $canAddToGroup, canDelete: $canDelete, changeableFields: $changeableFields, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, debugShowActivity: $debugShowActivity, dropallEnabled: $dropallEnabled, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, hidePushesContent: $hidePushesContent, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, focusUntil: $focusUntil, groupNotificationsEnabled: $groupNotificationsEnabled, taskNotificationsEnabled: $taskNotificationsEnabled, meetingNotificationsEnabled: $meetingNotificationsEnabled, contactShortView: $contactShortView, groupShortView: $groupShortView, taskShortView: $taskShortView, meetingShortView: $meetingShortView, contactMshortView: $contactMshortView, groupMshortView: $groupMshortView, auth2faEnabled: $auth2faEnabled, auth2faStatus: $auth2faStatus, taskMshortView: $taskMshortView, meetingMshortView: $meetingMshortView, contactShowArchived: $contactShowArchived, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, canAddToTeam: $canAddToTeam, canManageSections: $canManageSections, canManageProjects: $canManageProjects, canManageTags: $canManageTags, canManageIntegrations: $canManageIntegrations, canManageColorRules: $canManageColorRules, canCreateGroup: $canCreateGroup, canCreateMeeting: $canCreateMeeting, canJoinPublicGroups: $canJoinPublicGroups, canJoinPublicTasks: $canJoinPublicTasks, canImportChats: $canImportChats, customFields: $customFields, canDeleteAnyMessage: $canDeleteAnyMessage)';
   }
 
   @override
@@ -2053,6 +2081,7 @@ class _$_Contact implements _Contact {
             (identical(other.focusUntil, focusUntil) || const DeepCollectionEquality().equals(other.focusUntil, focusUntil)) &&
             (identical(other.groupNotificationsEnabled, groupNotificationsEnabled) || const DeepCollectionEquality().equals(other.groupNotificationsEnabled, groupNotificationsEnabled)) &&
             (identical(other.taskNotificationsEnabled, taskNotificationsEnabled) || const DeepCollectionEquality().equals(other.taskNotificationsEnabled, taskNotificationsEnabled)) &&
+            (identical(other.meetingNotificationsEnabled, meetingNotificationsEnabled) || const DeepCollectionEquality().equals(other.meetingNotificationsEnabled, meetingNotificationsEnabled)) &&
             (identical(other.contactShortView, contactShortView) || const DeepCollectionEquality().equals(other.contactShortView, contactShortView)) &&
             (identical(other.groupShortView, groupShortView) || const DeepCollectionEquality().equals(other.groupShortView, groupShortView)) &&
             (identical(other.taskShortView, taskShortView) || const DeepCollectionEquality().equals(other.taskShortView, taskShortView)) &&
@@ -2123,6 +2152,7 @@ class _$_Contact implements _Contact {
       const DeepCollectionEquality().hash(focusUntil) ^
       const DeepCollectionEquality().hash(groupNotificationsEnabled) ^
       const DeepCollectionEquality().hash(taskNotificationsEnabled) ^
+      const DeepCollectionEquality().hash(meetingNotificationsEnabled) ^
       const DeepCollectionEquality().hash(contactShortView) ^
       const DeepCollectionEquality().hash(groupShortView) ^
       const DeepCollectionEquality().hash(taskShortView) ^
@@ -2243,6 +2273,8 @@ abstract class _Contact implements Contact {
           bool? groupNotificationsEnabled,
       @JsonKey(name: 'task_notifications_enabled')
           bool? taskNotificationsEnabled,
+      @JsonKey(name: 'meeting_notifications_enabled')
+          bool? meetingNotificationsEnabled,
       @JsonKey(name: 'contact_short_view')
           bool? contactShortView,
       @JsonKey(name: 'group_short_view')
@@ -2496,6 +2528,11 @@ abstract class _Contact implements Contact {
   /// Push notifications for task chats.
   @JsonKey(name: 'task_notifications_enabled')
   bool? get taskNotificationsEnabled => throw _privateConstructorUsedError;
+  @override
+
+  /// Push notifications for meeting chats.
+  @JsonKey(name: 'meeting_notifications_enabled')
+  bool? get meetingNotificationsEnabled => throw _privateConstructorUsedError;
   @override
 
   /// Short view in contact list.
