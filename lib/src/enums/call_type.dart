@@ -7,4 +7,7 @@ enum CallType {
   @JsonValue('video')
   video,
   
+  @JsonValue('video_multistream')
+  video_multistream,
+  
 }

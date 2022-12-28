@@ -23,10 +23,12 @@ class _$ServerCallSdpParamsTearOff {
 
   _ServerCallSdpParams call(
       {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'jids') required List<String> jids,
       @JsonKey(name: 'uid') required String uid,
       @JsonKey(name: 'jsep') required JSEP jsep}) {
     return _ServerCallSdpParams(
       jid: jid,
+      jids: jids,
       uid: uid,
       jsep: jsep,
     );
@@ -42,9 +44,13 @@ const $ServerCallSdpParams = _$ServerCallSdpParamsTearOff();
 
 /// @nodoc
 mixin _$ServerCallSdpParams {
-  /// Chat or contact id.
+  /// Chat or contact id in singlesteam mode.
   @JsonKey(name: 'jid')
   String get jid => throw _privateConstructorUsedError;
+
+  /// Jids for tracks in multistream mode.
+  @JsonKey(name: 'jids')
+  List<String> get jids => throw _privateConstructorUsedError;
 
   /// Call id.
   @JsonKey(name: 'uid')
@@ -67,6 +73,7 @@ abstract class $ServerCallSdpParamsCopyWith<$Res> {
       _$ServerCallSdpParamsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'jid') String jid,
+      @JsonKey(name: 'jids') List<String> jids,
       @JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'jsep') JSEP jsep});
 
@@ -85,6 +92,7 @@ class _$ServerCallSdpParamsCopyWithImpl<$Res>
   @override
   $Res call({
     Object? jid = freezed,
+    Object? jids = freezed,
     Object? uid = freezed,
     Object? jsep = freezed,
   }) {
@@ -93,6 +101,10 @@ class _$ServerCallSdpParamsCopyWithImpl<$Res>
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
+      jids: jids == freezed
+          ? _value.jids
+          : jids // ignore: cast_nullable_to_non_nullable
+              as List<String>,
       uid: uid == freezed
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
@@ -121,6 +133,7 @@ abstract class _$ServerCallSdpParamsCopyWith<$Res>
   @override
   $Res call(
       {@JsonKey(name: 'jid') String jid,
+      @JsonKey(name: 'jids') List<String> jids,
       @JsonKey(name: 'uid') String uid,
       @JsonKey(name: 'jsep') JSEP jsep});
 
@@ -142,6 +155,7 @@ class __$ServerCallSdpParamsCopyWithImpl<$Res>
   @override
   $Res call({
     Object? jid = freezed,
+    Object? jids = freezed,
     Object? uid = freezed,
     Object? jsep = freezed,
   }) {
@@ -150,6 +164,10 @@ class __$ServerCallSdpParamsCopyWithImpl<$Res>
           ? _value.jid
           : jid // ignore: cast_nullable_to_non_nullable
               as String,
+      jids: jids == freezed
+          ? _value.jids
+          : jids // ignore: cast_nullable_to_non_nullable
+              as List<String>,
       uid: uid == freezed
           ? _value.uid
           : uid // ignore: cast_nullable_to_non_nullable
@@ -167,6 +185,7 @@ class __$ServerCallSdpParamsCopyWithImpl<$Res>
 class _$_ServerCallSdpParams implements _ServerCallSdpParams {
   const _$_ServerCallSdpParams(
       {@JsonKey(name: 'jid') required this.jid,
+      @JsonKey(name: 'jids') required this.jids,
       @JsonKey(name: 'uid') required this.uid,
       @JsonKey(name: 'jsep') required this.jsep});
 
@@ -175,9 +194,14 @@ class _$_ServerCallSdpParams implements _ServerCallSdpParams {
 
   @override
 
-  /// Chat or contact id.
+  /// Chat or contact id in singlesteam mode.
   @JsonKey(name: 'jid')
   final String jid;
+  @override
+
+  /// Jids for tracks in multistream mode.
+  @JsonKey(name: 'jids')
+  final List<String> jids;
   @override
 
   /// Call id.
@@ -191,7 +215,7 @@ class _$_ServerCallSdpParams implements _ServerCallSdpParams {
 
   @override
   String toString() {
-    return 'ServerCallSdpParams(jid: $jid, uid: $uid, jsep: $jsep)';
+    return 'ServerCallSdpParams(jid: $jid, jids: $jids, uid: $uid, jsep: $jsep)';
   }
 
   @override
@@ -200,6 +224,8 @@ class _$_ServerCallSdpParams implements _ServerCallSdpParams {
         (other is _ServerCallSdpParams &&
             (identical(other.jid, jid) ||
                 const DeepCollectionEquality().equals(other.jid, jid)) &&
+            (identical(other.jids, jids) ||
+                const DeepCollectionEquality().equals(other.jids, jids)) &&
             (identical(other.uid, uid) ||
                 const DeepCollectionEquality().equals(other.uid, uid)) &&
             (identical(other.jsep, jsep) ||
@@ -210,6 +236,7 @@ class _$_ServerCallSdpParams implements _ServerCallSdpParams {
   int get hashCode =>
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(jid) ^
+      const DeepCollectionEquality().hash(jids) ^
       const DeepCollectionEquality().hash(uid) ^
       const DeepCollectionEquality().hash(jsep);
 
@@ -228,6 +255,7 @@ class _$_ServerCallSdpParams implements _ServerCallSdpParams {
 abstract class _ServerCallSdpParams implements ServerCallSdpParams {
   const factory _ServerCallSdpParams(
       {@JsonKey(name: 'jid') required String jid,
+      @JsonKey(name: 'jids') required List<String> jids,
       @JsonKey(name: 'uid') required String uid,
       @JsonKey(name: 'jsep') required JSEP jsep}) = _$_ServerCallSdpParams;
 
@@ -236,9 +264,14 @@ abstract class _ServerCallSdpParams implements ServerCallSdpParams {
 
   @override
 
-  /// Chat or contact id.
+  /// Chat or contact id in singlesteam mode.
   @JsonKey(name: 'jid')
   String get jid => throw _privateConstructorUsedError;
+  @override
+
+  /// Jids for tracks in multistream mode.
+  @JsonKey(name: 'jids')
+  List<String> get jids => throw _privateConstructorUsedError;
   @override
 
   /// Call id.

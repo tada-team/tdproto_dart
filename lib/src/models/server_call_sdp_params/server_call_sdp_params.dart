@@ -8,8 +8,11 @@ part 'server_call_sdp_params.g.dart';
 @freezed
 class ServerCallSdpParams with _$ServerCallSdpParams {
   const factory ServerCallSdpParams({
-    /// Chat or contact id.
+    /// Chat or contact id in singlesteam mode.
     @JsonKey(name: 'jid') required String jid,
+    
+    /// Jids for tracks in multistream mode.
+    @JsonKey(name: 'jids') required List<String> jids,
     
     /// Call id.
     @JsonKey(name: 'uid') required String uid,
