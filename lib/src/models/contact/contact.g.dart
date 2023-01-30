@@ -55,6 +55,8 @@ _$_Contact _$$_ContactFromJson(Map<String, dynamic> json) => _$_Contact(
       taskNotificationsEnabled: json['task_notifications_enabled'] as bool?,
       meetingNotificationsEnabled:
           json['meeting_notifications_enabled'] as bool?,
+      systembotNotificationsEnabled:
+          json['systembot_notifications_enabled'] as bool?,
       contactShortView: json['contact_short_view'] as bool?,
       groupShortView: json['group_short_view'] as bool?,
       taskShortView: json['task_short_view'] as bool?,
@@ -128,6 +130,7 @@ Map<String, dynamic> _$$_ContactToJson(_$_Contact instance) =>
       'group_notifications_enabled': instance.groupNotificationsEnabled,
       'task_notifications_enabled': instance.taskNotificationsEnabled,
       'meeting_notifications_enabled': instance.meetingNotificationsEnabled,
+      'systembot_notifications_enabled': instance.systembotNotificationsEnabled,
       'contact_short_view': instance.contactShortView,
       'group_short_view': instance.groupShortView,
       'task_short_view': instance.taskShortView,

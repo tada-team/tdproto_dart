@@ -128,6 +128,9 @@ class Contact with _$Contact {
     /// Push notifications for meeting chats.
     @JsonKey(name: 'meeting_notifications_enabled') bool? meetingNotificationsEnabled,
     
+    /// Push notifications from systembot.
+    @JsonKey(name: 'systembot_notifications_enabled') bool? systembotNotificationsEnabled,
+    
     /// Short view in contact list.
     @JsonKey(name: 'contact_short_view') bool? contactShortView,
     
