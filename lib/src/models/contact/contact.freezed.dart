@@ -106,6 +106,8 @@ class _$ContactTearOff {
           bool? meetingNotificationsEnabled,
       @JsonKey(name: 'systembot_notifications_enabled')
           bool? systembotNotificationsEnabled,
+      @JsonKey(name: 'reaction_notifications_enabled')
+          bool? reactionNotificationsEnabled,
       @JsonKey(name: 'contact_short_view')
           bool? contactShortView,
       @JsonKey(name: 'group_short_view')
@@ -201,6 +203,7 @@ class _$ContactTearOff {
       taskNotificationsEnabled: taskNotificationsEnabled,
       meetingNotificationsEnabled: meetingNotificationsEnabled,
       systembotNotificationsEnabled: systembotNotificationsEnabled,
+      reactionNotificationsEnabled: reactionNotificationsEnabled,
       contactShortView: contactShortView,
       groupShortView: groupShortView,
       taskShortView: taskShortView,
@@ -406,6 +409,10 @@ mixin _$Contact {
   @JsonKey(name: 'systembot_notifications_enabled')
   bool? get systembotNotificationsEnabled => throw _privateConstructorUsedError;
 
+  /// Push notifications for reactions.
+  @JsonKey(name: 'reaction_notifications_enabled')
+  bool? get reactionNotificationsEnabled => throw _privateConstructorUsedError;
+
   /// Short view in contact list.
   @JsonKey(name: 'contact_short_view')
   bool? get contactShortView => throw _privateConstructorUsedError;
@@ -605,6 +612,8 @@ abstract class $ContactCopyWith<$Res> {
           bool? meetingNotificationsEnabled,
       @JsonKey(name: 'systembot_notifications_enabled')
           bool? systembotNotificationsEnabled,
+      @JsonKey(name: 'reaction_notifications_enabled')
+          bool? reactionNotificationsEnabled,
       @JsonKey(name: 'contact_short_view')
           bool? contactShortView,
       @JsonKey(name: 'group_short_view')
@@ -714,6 +723,7 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
     Object? taskNotificationsEnabled = freezed,
     Object? meetingNotificationsEnabled = freezed,
     Object? systembotNotificationsEnabled = freezed,
+    Object? reactionNotificationsEnabled = freezed,
     Object? contactShortView = freezed,
     Object? groupShortView = freezed,
     Object? taskShortView = freezed,
@@ -905,6 +915,10 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
       systembotNotificationsEnabled: systembotNotificationsEnabled == freezed
           ? _value.systembotNotificationsEnabled
           : systembotNotificationsEnabled // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      reactionNotificationsEnabled: reactionNotificationsEnabled == freezed
+          ? _value.reactionNotificationsEnabled
+          : reactionNotificationsEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
       contactShortView: contactShortView == freezed
           ? _value.contactShortView
@@ -1122,6 +1136,8 @@ abstract class _$ContactCopyWith<$Res> implements $ContactCopyWith<$Res> {
           bool? meetingNotificationsEnabled,
       @JsonKey(name: 'systembot_notifications_enabled')
           bool? systembotNotificationsEnabled,
+      @JsonKey(name: 'reaction_notifications_enabled')
+          bool? reactionNotificationsEnabled,
       @JsonKey(name: 'contact_short_view')
           bool? contactShortView,
       @JsonKey(name: 'group_short_view')
@@ -1234,6 +1250,7 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res>
     Object? taskNotificationsEnabled = freezed,
     Object? meetingNotificationsEnabled = freezed,
     Object? systembotNotificationsEnabled = freezed,
+    Object? reactionNotificationsEnabled = freezed,
     Object? contactShortView = freezed,
     Object? groupShortView = freezed,
     Object? taskShortView = freezed,
@@ -1425,6 +1442,10 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res>
       systembotNotificationsEnabled: systembotNotificationsEnabled == freezed
           ? _value.systembotNotificationsEnabled
           : systembotNotificationsEnabled // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      reactionNotificationsEnabled: reactionNotificationsEnabled == freezed
+          ? _value.reactionNotificationsEnabled
+          : reactionNotificationsEnabled // ignore: cast_nullable_to_non_nullable
               as bool?,
       contactShortView: contactShortView == freezed
           ? _value.contactShortView
@@ -1622,6 +1643,8 @@ class _$_Contact implements _Contact {
           this.meetingNotificationsEnabled,
       @JsonKey(name: 'systembot_notifications_enabled')
           this.systembotNotificationsEnabled,
+      @JsonKey(name: 'reaction_notifications_enabled')
+          this.reactionNotificationsEnabled,
       @JsonKey(name: 'contact_short_view')
           this.contactShortView,
       @JsonKey(name: 'group_short_view')
@@ -1888,6 +1911,11 @@ class _$_Contact implements _Contact {
   final bool? systembotNotificationsEnabled;
   @override
 
+  /// Push notifications for reactions.
+  @JsonKey(name: 'reaction_notifications_enabled')
+  final bool? reactionNotificationsEnabled;
+  @override
+
   /// Short view in contact list.
   @JsonKey(name: 'contact_short_view')
   final bool? contactShortView;
@@ -2020,7 +2048,7 @@ class _$_Contact implements _Contact {
 
   @override
   String toString() {
-    return 'Contact(jid: $jid, node: $node, displayName: $displayName, shortName: $shortName, contactEmail: $contactEmail, contactPhone: $contactPhone, icons: $icons, gentime: $gentime, role: $role, mood: $mood, teamStatus: $teamStatus, lastActivity: $lastActivity, isArchive: $isArchive, botname: $botname, sections: $sections, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, canCall: $canCall, canCreateTask: $canCreateTask, canImportTasks: $canImportTasks, canAddToGroup: $canAddToGroup, canDelete: $canDelete, changeableFields: $changeableFields, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, debugShowActivity: $debugShowActivity, dropallEnabled: $dropallEnabled, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, hidePushesContent: $hidePushesContent, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, focusUntil: $focusUntil, groupNotificationsEnabled: $groupNotificationsEnabled, taskNotificationsEnabled: $taskNotificationsEnabled, meetingNotificationsEnabled: $meetingNotificationsEnabled, systembotNotificationsEnabled: $systembotNotificationsEnabled, contactShortView: $contactShortView, groupShortView: $groupShortView, taskShortView: $taskShortView, meetingShortView: $meetingShortView, contactMshortView: $contactMshortView, groupMshortView: $groupMshortView, auth2faEnabled: $auth2faEnabled, auth2faStatus: $auth2faStatus, taskMshortView: $taskMshortView, meetingMshortView: $meetingMshortView, contactShowArchived: $contactShowArchived, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, canAddToTeam: $canAddToTeam, canManageSections: $canManageSections, canManageProjects: $canManageProjects, canManageTags: $canManageTags, canManageIntegrations: $canManageIntegrations, canManageColorRules: $canManageColorRules, canCreateGroup: $canCreateGroup, canCreateMeeting: $canCreateMeeting, canJoinPublicGroups: $canJoinPublicGroups, canJoinPublicTasks: $canJoinPublicTasks, canImportChats: $canImportChats, customFields: $customFields, canDeleteAnyMessage: $canDeleteAnyMessage)';
+    return 'Contact(jid: $jid, node: $node, displayName: $displayName, shortName: $shortName, contactEmail: $contactEmail, contactPhone: $contactPhone, icons: $icons, gentime: $gentime, role: $role, mood: $mood, teamStatus: $teamStatus, lastActivity: $lastActivity, isArchive: $isArchive, botname: $botname, sections: $sections, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, canCall: $canCall, canCreateTask: $canCreateTask, canImportTasks: $canImportTasks, canAddToGroup: $canAddToGroup, canDelete: $canDelete, changeableFields: $changeableFields, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, debugShowActivity: $debugShowActivity, dropallEnabled: $dropallEnabled, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, hidePushesContent: $hidePushesContent, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, focusUntil: $focusUntil, groupNotificationsEnabled: $groupNotificationsEnabled, taskNotificationsEnabled: $taskNotificationsEnabled, meetingNotificationsEnabled: $meetingNotificationsEnabled, systembotNotificationsEnabled: $systembotNotificationsEnabled, reactionNotificationsEnabled: $reactionNotificationsEnabled, contactShortView: $contactShortView, groupShortView: $groupShortView, taskShortView: $taskShortView, meetingShortView: $meetingShortView, contactMshortView: $contactMshortView, groupMshortView: $groupMshortView, auth2faEnabled: $auth2faEnabled, auth2faStatus: $auth2faStatus, taskMshortView: $taskMshortView, meetingMshortView: $meetingMshortView, contactShowArchived: $contactShowArchived, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, canAddToTeam: $canAddToTeam, canManageSections: $canManageSections, canManageProjects: $canManageProjects, canManageTags: $canManageTags, canManageIntegrations: $canManageIntegrations, canManageColorRules: $canManageColorRules, canCreateGroup: $canCreateGroup, canCreateMeeting: $canCreateMeeting, canJoinPublicGroups: $canJoinPublicGroups, canJoinPublicTasks: $canJoinPublicTasks, canImportChats: $canImportChats, customFields: $customFields, canDeleteAnyMessage: $canDeleteAnyMessage)';
   }
 
   @override
@@ -2111,6 +2139,7 @@ class _$_Contact implements _Contact {
             (identical(other.taskNotificationsEnabled, taskNotificationsEnabled) || const DeepCollectionEquality().equals(other.taskNotificationsEnabled, taskNotificationsEnabled)) &&
             (identical(other.meetingNotificationsEnabled, meetingNotificationsEnabled) || const DeepCollectionEquality().equals(other.meetingNotificationsEnabled, meetingNotificationsEnabled)) &&
             (identical(other.systembotNotificationsEnabled, systembotNotificationsEnabled) || const DeepCollectionEquality().equals(other.systembotNotificationsEnabled, systembotNotificationsEnabled)) &&
+            (identical(other.reactionNotificationsEnabled, reactionNotificationsEnabled) || const DeepCollectionEquality().equals(other.reactionNotificationsEnabled, reactionNotificationsEnabled)) &&
             (identical(other.contactShortView, contactShortView) || const DeepCollectionEquality().equals(other.contactShortView, contactShortView)) &&
             (identical(other.groupShortView, groupShortView) || const DeepCollectionEquality().equals(other.groupShortView, groupShortView)) &&
             (identical(other.taskShortView, taskShortView) || const DeepCollectionEquality().equals(other.taskShortView, taskShortView)) &&
@@ -2183,6 +2212,7 @@ class _$_Contact implements _Contact {
       const DeepCollectionEquality().hash(taskNotificationsEnabled) ^
       const DeepCollectionEquality().hash(meetingNotificationsEnabled) ^
       const DeepCollectionEquality().hash(systembotNotificationsEnabled) ^
+      const DeepCollectionEquality().hash(reactionNotificationsEnabled) ^
       const DeepCollectionEquality().hash(contactShortView) ^
       const DeepCollectionEquality().hash(groupShortView) ^
       const DeepCollectionEquality().hash(taskShortView) ^
@@ -2307,6 +2337,8 @@ abstract class _Contact implements Contact {
           bool? meetingNotificationsEnabled,
       @JsonKey(name: 'systembot_notifications_enabled')
           bool? systembotNotificationsEnabled,
+      @JsonKey(name: 'reaction_notifications_enabled')
+          bool? reactionNotificationsEnabled,
       @JsonKey(name: 'contact_short_view')
           bool? contactShortView,
       @JsonKey(name: 'group_short_view')
@@ -2570,6 +2602,11 @@ abstract class _Contact implements Contact {
   /// Push notifications from systembot.
   @JsonKey(name: 'systembot_notifications_enabled')
   bool? get systembotNotificationsEnabled => throw _privateConstructorUsedError;
+  @override
+
+  /// Push notifications for reactions.
+  @JsonKey(name: 'reaction_notifications_enabled')
+  bool? get reactionNotificationsEnabled => throw _privateConstructorUsedError;
   @override
 
   /// Short view in contact list.
