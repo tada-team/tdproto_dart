@@ -55,6 +55,7 @@ class _$TeamTearOff {
       @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
       @JsonKey(name: 'subscription') Subscription? subscription,
       @JsonKey(name: 'notebot') String? notebot,
+      @JsonKey(name: 'account_status') String? accountStatus,
       @JsonKey(name: 'owner') Contact? owner}) {
     return _Team(
       uid: uid,
@@ -90,6 +91,7 @@ class _$TeamTearOff {
       availableTariffs: availableTariffs,
       subscription: subscription,
       notebot: notebot,
+      accountStatus: accountStatus,
       owner: owner,
     );
   }
@@ -236,6 +238,10 @@ mixin _$Team {
   @JsonKey(name: 'notebot')
   String? get notebot => throw _privateConstructorUsedError;
 
+  /// Personal account status for current team.
+  @JsonKey(name: 'account_status')
+  String? get accountStatus => throw _privateConstructorUsedError;
+
   /// Team owner.
   @JsonKey(name: 'owner')
   Contact? get owner => throw _privateConstructorUsedError;
@@ -283,6 +289,7 @@ abstract class $TeamCopyWith<$Res> {
       @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
       @JsonKey(name: 'subscription') Subscription? subscription,
       @JsonKey(name: 'notebot') String? notebot,
+      @JsonKey(name: 'account_status') String? accountStatus,
       @JsonKey(name: 'owner') Contact? owner});
 
   $IconDataCopyWith<$Res> get icons;
@@ -336,6 +343,7 @@ class _$TeamCopyWithImpl<$Res> implements $TeamCopyWith<$Res> {
     Object? availableTariffs = freezed,
     Object? subscription = freezed,
     Object? notebot = freezed,
+    Object? accountStatus = freezed,
     Object? owner = freezed,
   }) {
     return _then(_value.copyWith(
@@ -471,6 +479,10 @@ class _$TeamCopyWithImpl<$Res> implements $TeamCopyWith<$Res> {
           ? _value.notebot
           : notebot // ignore: cast_nullable_to_non_nullable
               as String?,
+      accountStatus: accountStatus == freezed
+          ? _value.accountStatus
+          : accountStatus // ignore: cast_nullable_to_non_nullable
+              as String?,
       owner: owner == freezed
           ? _value.owner
           : owner // ignore: cast_nullable_to_non_nullable
@@ -576,6 +588,7 @@ abstract class _$TeamCopyWith<$Res> implements $TeamCopyWith<$Res> {
       @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
       @JsonKey(name: 'subscription') Subscription? subscription,
       @JsonKey(name: 'notebot') String? notebot,
+      @JsonKey(name: 'account_status') String? accountStatus,
       @JsonKey(name: 'owner') Contact? owner});
 
   @override
@@ -636,6 +649,7 @@ class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res>
     Object? availableTariffs = freezed,
     Object? subscription = freezed,
     Object? notebot = freezed,
+    Object? accountStatus = freezed,
     Object? owner = freezed,
   }) {
     return _then(_Team(
@@ -771,6 +785,10 @@ class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res>
           ? _value.notebot
           : notebot // ignore: cast_nullable_to_non_nullable
               as String?,
+      accountStatus: accountStatus == freezed
+          ? _value.accountStatus
+          : accountStatus // ignore: cast_nullable_to_non_nullable
+              as String?,
       owner: owner == freezed
           ? _value.owner
           : owner // ignore: cast_nullable_to_non_nullable
@@ -849,6 +867,8 @@ class _$_Team implements _Team {
           this.subscription,
       @JsonKey(name: 'notebot')
           this.notebot,
+      @JsonKey(name: 'account_status')
+          this.accountStatus,
       @JsonKey(name: 'owner')
           this.owner});
 
@@ -1021,13 +1041,18 @@ class _$_Team implements _Team {
   final String? notebot;
   @override
 
+  /// Personal account status for current team.
+  @JsonKey(name: 'account_status')
+  final String? accountStatus;
+  @override
+
   /// Team owner.
   @JsonKey(name: 'owner')
   final Contact? owner;
 
   @override
   String toString() {
-    return 'Team(uid: $uid, isArchive: $isArchive, gentime: $gentime, name: $name, defaultTaskDeadline: $defaultTaskDeadline, maxMessageUpdateAge: $maxMessageUpdateAge, icons: $icons, lastActive: $lastActive, changeableStatuses: $changeableStatuses, badProfile: $badProfile, needConfirmation: $needConfirmation, usePatronymic: $usePatronymic, userFields: $userFields, displayFamilyNameFirst: $displayFamilyNameFirst, useTaskImportance: $useTaskImportance, taskImportanceMin: $taskImportanceMin, taskImportanceMax: $taskImportanceMax, taskImportanceRev: $taskImportanceRev, useTaskUrgency: $useTaskUrgency, useTaskComplexity: $useTaskComplexity, useTaskSpentTime: $useTaskSpentTime, uploadsSize: $uploadsSize, uploadsSizeLimit: $uploadsSizeLimit, unreads: $unreads, me: $me, contacts: $contacts, singleGroup: $singleGroup, theme: $theme, hideArchivedUsers: $hideArchivedUsers, pinned: $pinned, availableTariffs: $availableTariffs, subscription: $subscription, notebot: $notebot, owner: $owner)';
+    return 'Team(uid: $uid, isArchive: $isArchive, gentime: $gentime, name: $name, defaultTaskDeadline: $defaultTaskDeadline, maxMessageUpdateAge: $maxMessageUpdateAge, icons: $icons, lastActive: $lastActive, changeableStatuses: $changeableStatuses, badProfile: $badProfile, needConfirmation: $needConfirmation, usePatronymic: $usePatronymic, userFields: $userFields, displayFamilyNameFirst: $displayFamilyNameFirst, useTaskImportance: $useTaskImportance, taskImportanceMin: $taskImportanceMin, taskImportanceMax: $taskImportanceMax, taskImportanceRev: $taskImportanceRev, useTaskUrgency: $useTaskUrgency, useTaskComplexity: $useTaskComplexity, useTaskSpentTime: $useTaskSpentTime, uploadsSize: $uploadsSize, uploadsSizeLimit: $uploadsSizeLimit, unreads: $unreads, me: $me, contacts: $contacts, singleGroup: $singleGroup, theme: $theme, hideArchivedUsers: $hideArchivedUsers, pinned: $pinned, availableTariffs: $availableTariffs, subscription: $subscription, notebot: $notebot, accountStatus: $accountStatus, owner: $owner)';
   }
 
   @override
@@ -1110,6 +1135,7 @@ class _$_Team implements _Team {
             (identical(other.availableTariffs, availableTariffs) || const DeepCollectionEquality().equals(other.availableTariffs, availableTariffs)) &&
             (identical(other.subscription, subscription) || const DeepCollectionEquality().equals(other.subscription, subscription)) &&
             (identical(other.notebot, notebot) || const DeepCollectionEquality().equals(other.notebot, notebot)) &&
+            (identical(other.accountStatus, accountStatus) || const DeepCollectionEquality().equals(other.accountStatus, accountStatus)) &&
             (identical(other.owner, owner) || const DeepCollectionEquality().equals(other.owner, owner)));
   }
 
@@ -1149,6 +1175,7 @@ class _$_Team implements _Team {
       const DeepCollectionEquality().hash(availableTariffs) ^
       const DeepCollectionEquality().hash(subscription) ^
       const DeepCollectionEquality().hash(notebot) ^
+      const DeepCollectionEquality().hash(accountStatus) ^
       const DeepCollectionEquality().hash(owner);
 
   @JsonKey(ignore: true)
@@ -1197,6 +1224,7 @@ abstract class _Team implements Team {
       @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
       @JsonKey(name: 'subscription') Subscription? subscription,
       @JsonKey(name: 'notebot') String? notebot,
+      @JsonKey(name: 'account_status') String? accountStatus,
       @JsonKey(name: 'owner') Contact? owner}) = _$_Team;
 
   factory _Team.fromJson(Map<String, dynamic> json) = _$_Team.fromJson;
@@ -1366,6 +1394,11 @@ abstract class _Team implements Team {
   /// Сurrent team favorites bot, jid of chat.
   @JsonKey(name: 'notebot')
   String? get notebot => throw _privateConstructorUsedError;
+  @override
+
+  /// Personal account status for current team.
+  @JsonKey(name: 'account_status')
+  String? get accountStatus => throw _privateConstructorUsedError;
   @override
 
   /// Team owner.
