@@ -107,6 +107,9 @@ class Team with _$Team {
     /// Сurrent team favorites bot, jid of chat.
     @JsonKey(name: 'notebot') String? notebot,
     
+    /// Team owner.
+    @JsonKey(name: 'owner') Contact? owner,
+    
     
   }) = _Team;
 

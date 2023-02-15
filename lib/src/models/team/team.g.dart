@@ -54,6 +54,9 @@ _$_Team _$$_TeamFromJson(Map<String, dynamic> json) => _$_Team(
           ? null
           : Subscription.fromJson(json['subscription'] as Map<String, dynamic>),
       notebot: json['notebot'] as String?,
+      owner: json['owner'] == null
+          ? null
+          : Contact.fromJson(json['owner'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_TeamToJson(_$_Team instance) => <String, dynamic>{
@@ -90,4 +93,5 @@ Map<String, dynamic> _$$_TeamToJson(_$_Team instance) => <String, dynamic>{
       'available_tariffs': instance.availableTariffs,
       'subscription': instance.subscription?.toJson(),
       'notebot': instance.notebot,
+      'owner': instance.owner?.toJson(),
     };
