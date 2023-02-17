@@ -55,7 +55,7 @@ class _$TeamTearOff {
       @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
       @JsonKey(name: 'subscription') Subscription? subscription,
       @JsonKey(name: 'notebot') String? notebot,
-      @JsonKey(name: 'account_status') String? accountStatus,
+      @JsonKey(name: 'account_status') required String accountStatus,
       @JsonKey(name: 'owner') Contact? owner}) {
     return _Team(
       uid: uid,
@@ -240,7 +240,7 @@ mixin _$Team {
 
   /// Personal account status for current team.
   @JsonKey(name: 'account_status')
-  String? get accountStatus => throw _privateConstructorUsedError;
+  String get accountStatus => throw _privateConstructorUsedError;
 
   /// Team owner.
   @JsonKey(name: 'owner')
@@ -289,7 +289,7 @@ abstract class $TeamCopyWith<$Res> {
       @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
       @JsonKey(name: 'subscription') Subscription? subscription,
       @JsonKey(name: 'notebot') String? notebot,
-      @JsonKey(name: 'account_status') String? accountStatus,
+      @JsonKey(name: 'account_status') String accountStatus,
       @JsonKey(name: 'owner') Contact? owner});
 
   $IconDataCopyWith<$Res> get icons;
@@ -482,7 +482,7 @@ class _$TeamCopyWithImpl<$Res> implements $TeamCopyWith<$Res> {
       accountStatus: accountStatus == freezed
           ? _value.accountStatus
           : accountStatus // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       owner: owner == freezed
           ? _value.owner
           : owner // ignore: cast_nullable_to_non_nullable
@@ -588,7 +588,7 @@ abstract class _$TeamCopyWith<$Res> implements $TeamCopyWith<$Res> {
       @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
       @JsonKey(name: 'subscription') Subscription? subscription,
       @JsonKey(name: 'notebot') String? notebot,
-      @JsonKey(name: 'account_status') String? accountStatus,
+      @JsonKey(name: 'account_status') String accountStatus,
       @JsonKey(name: 'owner') Contact? owner});
 
   @override
@@ -788,7 +788,7 @@ class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res>
       accountStatus: accountStatus == freezed
           ? _value.accountStatus
           : accountStatus // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       owner: owner == freezed
           ? _value.owner
           : owner // ignore: cast_nullable_to_non_nullable
@@ -868,7 +868,7 @@ class _$_Team implements _Team {
       @JsonKey(name: 'notebot')
           this.notebot,
       @JsonKey(name: 'account_status')
-          this.accountStatus,
+          required this.accountStatus,
       @JsonKey(name: 'owner')
           this.owner});
 
@@ -1043,7 +1043,7 @@ class _$_Team implements _Team {
 
   /// Personal account status for current team.
   @JsonKey(name: 'account_status')
-  final String? accountStatus;
+  final String accountStatus;
   @override
 
   /// Team owner.
@@ -1224,7 +1224,7 @@ abstract class _Team implements Team {
       @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
       @JsonKey(name: 'subscription') Subscription? subscription,
       @JsonKey(name: 'notebot') String? notebot,
-      @JsonKey(name: 'account_status') String? accountStatus,
+      @JsonKey(name: 'account_status') required String accountStatus,
       @JsonKey(name: 'owner') Contact? owner}) = _$_Team;
 
   factory _Team.fromJson(Map<String, dynamic> json) = _$_Team.fromJson;
@@ -1398,7 +1398,7 @@ abstract class _Team implements Team {
 
   /// Personal account status for current team.
   @JsonKey(name: 'account_status')
-  String? get accountStatus => throw _privateConstructorUsedError;
+  String get accountStatus => throw _privateConstructorUsedError;
   @override
 
   /// Team owner.

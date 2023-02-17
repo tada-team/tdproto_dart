@@ -54,7 +54,7 @@ _$_Team _$$_TeamFromJson(Map<String, dynamic> json) => _$_Team(
           ? null
           : Subscription.fromJson(json['subscription'] as Map<String, dynamic>),
       notebot: json['notebot'] as String?,
-      accountStatus: json['account_status'] as String?,
+      accountStatus: json['account_status'] as String,
       owner: json['owner'] == null
           ? null
           : Contact.fromJson(json['owner'] as Map<String, dynamic>),

@@ -108,7 +108,7 @@ class Team with _$Team {
     @JsonKey(name: 'notebot') String? notebot,
     
     /// Personal account status for current team.
-    @JsonKey(name: 'account_status') String? accountStatus,
+    @JsonKey(name: 'account_status') required String accountStatus,
     
     /// Team owner.
     @JsonKey(name: 'owner') Contact? owner,
