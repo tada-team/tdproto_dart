@@ -212,6 +212,9 @@ class Chat with _$Chat {
     /// Can I change Important flag in any message in this chat.
     @JsonKey(name: 'can_set_important_any_message') bool? canSetImportantAnyMessage,
     
+    /// Can I mute all in call.
+    @JsonKey(name: 'can_mute_all') bool? canMuteAll,
+    
     /// Date of the last message sent even if it was deleted.
     @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,
     

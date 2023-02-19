@@ -161,6 +161,8 @@ class _$ChatTearOff {
           bool? canDeleteAnyMessage,
       @JsonKey(name: 'can_set_important_any_message')
           bool? canSetImportantAnyMessage,
+      @JsonKey(name: 'can_mute_all')
+          bool? canMuteAll,
       @JsonKey(name: 'last_activity')
       @DateTimeConverter()
           DateTime? lastActivity,
@@ -243,6 +245,7 @@ class _$ChatTearOff {
       canJoin: canJoin,
       canDeleteAnyMessage: canDeleteAnyMessage,
       canSetImportantAnyMessage: canSetImportantAnyMessage,
+      canMuteAll: canMuteAll,
       lastActivity: lastActivity,
       draftNum: draftNum,
       meetingStartAt: meetingStartAt,
@@ -536,6 +539,10 @@ mixin _$Chat {
   @JsonKey(name: 'can_set_important_any_message')
   bool? get canSetImportantAnyMessage => throw _privateConstructorUsedError;
 
+  /// Can I mute all in call.
+  @JsonKey(name: 'can_mute_all')
+  bool? get canMuteAll => throw _privateConstructorUsedError;
+
   /// Date of the last message sent even if it was deleted.
   @JsonKey(name: 'last_activity')
   @DateTimeConverter()
@@ -708,6 +715,8 @@ abstract class $ChatCopyWith<$Res> {
           bool? canDeleteAnyMessage,
       @JsonKey(name: 'can_set_important_any_message')
           bool? canSetImportantAnyMessage,
+      @JsonKey(name: 'can_mute_all')
+          bool? canMuteAll,
       @JsonKey(name: 'last_activity')
       @DateTimeConverter()
           DateTime? lastActivity,
@@ -805,6 +814,7 @@ class _$ChatCopyWithImpl<$Res> implements $ChatCopyWith<$Res> {
     Object? canJoin = freezed,
     Object? canDeleteAnyMessage = freezed,
     Object? canSetImportantAnyMessage = freezed,
+    Object? canMuteAll = freezed,
     Object? lastActivity = freezed,
     Object? draftNum = freezed,
     Object? meetingStartAt = freezed,
@@ -1084,6 +1094,10 @@ class _$ChatCopyWithImpl<$Res> implements $ChatCopyWith<$Res> {
           ? _value.canSetImportantAnyMessage
           : canSetImportantAnyMessage // ignore: cast_nullable_to_non_nullable
               as bool?,
+      canMuteAll: canMuteAll == freezed
+          ? _value.canMuteAll
+          : canMuteAll // ignore: cast_nullable_to_non_nullable
+              as bool?,
       lastActivity: lastActivity == freezed
           ? _value.lastActivity
           : lastActivity // ignore: cast_nullable_to_non_nullable
@@ -1282,6 +1296,8 @@ abstract class _$ChatCopyWith<$Res> implements $ChatCopyWith<$Res> {
           bool? canDeleteAnyMessage,
       @JsonKey(name: 'can_set_important_any_message')
           bool? canSetImportantAnyMessage,
+      @JsonKey(name: 'can_mute_all')
+          bool? canMuteAll,
       @JsonKey(name: 'last_activity')
       @DateTimeConverter()
           DateTime? lastActivity,
@@ -1383,6 +1399,7 @@ class __$ChatCopyWithImpl<$Res> extends _$ChatCopyWithImpl<$Res>
     Object? canJoin = freezed,
     Object? canDeleteAnyMessage = freezed,
     Object? canSetImportantAnyMessage = freezed,
+    Object? canMuteAll = freezed,
     Object? lastActivity = freezed,
     Object? draftNum = freezed,
     Object? meetingStartAt = freezed,
@@ -1662,6 +1679,10 @@ class __$ChatCopyWithImpl<$Res> extends _$ChatCopyWithImpl<$Res>
           ? _value.canSetImportantAnyMessage
           : canSetImportantAnyMessage // ignore: cast_nullable_to_non_nullable
               as bool?,
+      canMuteAll: canMuteAll == freezed
+          ? _value.canMuteAll
+          : canMuteAll // ignore: cast_nullable_to_non_nullable
+              as bool?,
       lastActivity: lastActivity == freezed
           ? _value.lastActivity
           : lastActivity // ignore: cast_nullable_to_non_nullable
@@ -1829,6 +1850,8 @@ class _$_Chat implements _Chat {
           this.canDeleteAnyMessage,
       @JsonKey(name: 'can_set_important_any_message')
           this.canSetImportantAnyMessage,
+      @JsonKey(name: 'can_mute_all')
+          this.canMuteAll,
       @JsonKey(name: 'last_activity')
       @DateTimeConverter()
           this.lastActivity,
@@ -2190,6 +2213,11 @@ class _$_Chat implements _Chat {
   final bool? canSetImportantAnyMessage;
   @override
 
+  /// Can I mute all in call.
+  @JsonKey(name: 'can_mute_all')
+  final bool? canMuteAll;
+  @override
+
   /// Date of the last message sent even if it was deleted.
   @JsonKey(name: 'last_activity')
   @DateTimeConverter()
@@ -2219,7 +2247,7 @@ class _$_Chat implements _Chat {
 
   @override
   String toString() {
-    return 'Chat(jid: $jid, chatType: $chatType, baseGentime: $baseGentime, gentime: $gentime, created: $created, displayName: $displayName, icons: $icons, countersEnabled: $countersEnabled, canCall: $canCall, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, collapsed: $collapsed, draft: $draft, draftGentime: $draftGentime, hidden: $hidden, notificationsEnabled: $notificationsEnabled, numImportants: $numImportants, numUnread: $numUnread, numUnreadNotices: $numUnreadNotices, lastMessage: $lastMessage, lastReadMessageId: $lastReadMessageId, section: $section, changeableFields: $changeableFields, pinned: $pinned, pinnedSortOrdering: $pinnedSortOrdering, numMembers: $numMembers, canDelete: $canDelete, description: $description, markup: $markup, feed: $feed, pinnedMessage: $pinnedMessage, colorIndex: $colorIndex, numItems: $numItems, numCheckedItems: $numCheckedItems, assignee: $assignee, num: $num, observers: $observers, owner: $owner, taskStatus: $taskStatus, title: $title, done: $done, doneReason: $doneReason, deadline: $deadline, deadlineExpired: $deadlineExpired, links: $links, tags: $tags, importance: $importance, urgency: $urgency, spentTime: $spentTime, complexity: $complexity, linkedMessages: $linkedMessages, uploads: $uploads, items: $items, parents: $parents, tabs: $tabs, status: $status, members: $members, canAddMember: $canAddMember, canRemoveMember: $canRemoveMember, canChangeMemberStatus: $canChangeMemberStatus, canChangeSettings: $canChangeSettings, defaultForAll: $defaultForAll, readonlyForMembers: $readonlyForMembers, autocleanupAge: $autocleanupAge, isPublic: $isPublic, canJoin: $canJoin, canDeleteAnyMessage: $canDeleteAnyMessage, canSetImportantAnyMessage: $canSetImportantAnyMessage, lastActivity: $lastActivity, draftNum: $draftNum, meetingStartAt: $meetingStartAt, meetingFreq: $meetingFreq, meetingDuration: $meetingDuration)';
+    return 'Chat(jid: $jid, chatType: $chatType, baseGentime: $baseGentime, gentime: $gentime, created: $created, displayName: $displayName, icons: $icons, countersEnabled: $countersEnabled, canCall: $canCall, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, collapsed: $collapsed, draft: $draft, draftGentime: $draftGentime, hidden: $hidden, notificationsEnabled: $notificationsEnabled, numImportants: $numImportants, numUnread: $numUnread, numUnreadNotices: $numUnreadNotices, lastMessage: $lastMessage, lastReadMessageId: $lastReadMessageId, section: $section, changeableFields: $changeableFields, pinned: $pinned, pinnedSortOrdering: $pinnedSortOrdering, numMembers: $numMembers, canDelete: $canDelete, description: $description, markup: $markup, feed: $feed, pinnedMessage: $pinnedMessage, colorIndex: $colorIndex, numItems: $numItems, numCheckedItems: $numCheckedItems, assignee: $assignee, num: $num, observers: $observers, owner: $owner, taskStatus: $taskStatus, title: $title, done: $done, doneReason: $doneReason, deadline: $deadline, deadlineExpired: $deadlineExpired, links: $links, tags: $tags, importance: $importance, urgency: $urgency, spentTime: $spentTime, complexity: $complexity, linkedMessages: $linkedMessages, uploads: $uploads, items: $items, parents: $parents, tabs: $tabs, status: $status, members: $members, canAddMember: $canAddMember, canRemoveMember: $canRemoveMember, canChangeMemberStatus: $canChangeMemberStatus, canChangeSettings: $canChangeSettings, defaultForAll: $defaultForAll, readonlyForMembers: $readonlyForMembers, autocleanupAge: $autocleanupAge, isPublic: $isPublic, canJoin: $canJoin, canDeleteAnyMessage: $canDeleteAnyMessage, canSetImportantAnyMessage: $canSetImportantAnyMessage, canMuteAll: $canMuteAll, lastActivity: $lastActivity, draftNum: $draftNum, meetingStartAt: $meetingStartAt, meetingFreq: $meetingFreq, meetingDuration: $meetingDuration)';
   }
 
   @override
@@ -2336,6 +2364,7 @@ class _$_Chat implements _Chat {
             (identical(other.canJoin, canJoin) || const DeepCollectionEquality().equals(other.canJoin, canJoin)) &&
             (identical(other.canDeleteAnyMessage, canDeleteAnyMessage) || const DeepCollectionEquality().equals(other.canDeleteAnyMessage, canDeleteAnyMessage)) &&
             (identical(other.canSetImportantAnyMessage, canSetImportantAnyMessage) || const DeepCollectionEquality().equals(other.canSetImportantAnyMessage, canSetImportantAnyMessage)) &&
+            (identical(other.canMuteAll, canMuteAll) || const DeepCollectionEquality().equals(other.canMuteAll, canMuteAll)) &&
             (identical(other.lastActivity, lastActivity) || const DeepCollectionEquality().equals(other.lastActivity, lastActivity)) &&
             (identical(other.draftNum, draftNum) || const DeepCollectionEquality().equals(other.draftNum, draftNum)) &&
             (identical(other.meetingStartAt, meetingStartAt) || const DeepCollectionEquality().equals(other.meetingStartAt, meetingStartAt)) &&
@@ -2414,6 +2443,7 @@ class _$_Chat implements _Chat {
       const DeepCollectionEquality().hash(canJoin) ^
       const DeepCollectionEquality().hash(canDeleteAnyMessage) ^
       const DeepCollectionEquality().hash(canSetImportantAnyMessage) ^
+      const DeepCollectionEquality().hash(canMuteAll) ^
       const DeepCollectionEquality().hash(lastActivity) ^
       const DeepCollectionEquality().hash(draftNum) ^
       const DeepCollectionEquality().hash(meetingStartAt) ^
@@ -2572,6 +2602,8 @@ abstract class _Chat implements Chat {
           bool? canDeleteAnyMessage,
       @JsonKey(name: 'can_set_important_any_message')
           bool? canSetImportantAnyMessage,
+      @JsonKey(name: 'can_mute_all')
+          bool? canMuteAll,
       @JsonKey(name: 'last_activity')
       @DateTimeConverter()
           DateTime? lastActivity,
@@ -2931,6 +2963,11 @@ abstract class _Chat implements Chat {
   /// Can I change Important flag in any message in this chat.
   @JsonKey(name: 'can_set_important_any_message')
   bool? get canSetImportantAnyMessage => throw _privateConstructorUsedError;
+  @override
+
+  /// Can I mute all in call.
+  @JsonKey(name: 'can_mute_all')
+  bool? get canMuteAll => throw _privateConstructorUsedError;
   @override
 
   /// Date of the last message sent even if it was deleted.

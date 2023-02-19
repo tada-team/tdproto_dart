@@ -194,6 +194,8 @@ class _$FeaturesTearOff {
           required bool singleGroupTeams,
       @JsonKey(name: 'wiki_pages')
           required bool wikiPages,
+      @Deprecated(
+          'Wiki pages in chats. Experimental Deprecated: this field is not used.')
       @JsonKey(name: 'allow_admin_mute')
           bool? allowAdminMute,
       @JsonKey(name: 'default_wallpaper')
@@ -691,7 +693,9 @@ mixin _$Features {
   @JsonKey(name: 'wiki_pages')
   bool get wikiPages => throw _privateConstructorUsedError;
 
-  /// Wiki pages in chats. Experimental.
+  /// Wiki pages in chats. Experimental Deprecated: this field is not used.
+  @Deprecated(
+      'Wiki pages in chats. Experimental Deprecated: this field is not used.')
   @JsonKey(name: 'allow_admin_mute')
   bool? get allowAdminMute => throw _privateConstructorUsedError;
 
@@ -949,6 +953,8 @@ abstract class $FeaturesCopyWith<$Res> {
           bool singleGroupTeams,
       @JsonKey(name: 'wiki_pages')
           bool wikiPages,
+      @Deprecated(
+          'Wiki pages in chats. Experimental Deprecated: this field is not used.')
       @JsonKey(name: 'allow_admin_mute')
           bool? allowAdminMute,
       @JsonKey(name: 'default_wallpaper')
@@ -1711,6 +1717,8 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
           bool singleGroupTeams,
       @JsonKey(name: 'wiki_pages')
           bool wikiPages,
+      @Deprecated(
+          'Wiki pages in chats. Experimental Deprecated: this field is not used.')
       @JsonKey(name: 'allow_admin_mute')
           bool? allowAdminMute,
       @JsonKey(name: 'default_wallpaper')
@@ -2456,6 +2464,8 @@ class _$_Features implements _Features {
           required this.singleGroupTeams,
       @JsonKey(name: 'wiki_pages')
           required this.wikiPages,
+      @Deprecated(
+          'Wiki pages in chats. Experimental Deprecated: this field is not used.')
       @JsonKey(name: 'allow_admin_mute')
           this.allowAdminMute,
       @JsonKey(name: 'default_wallpaper')
@@ -2929,7 +2939,9 @@ class _$_Features implements _Features {
   final bool wikiPages;
   @override
 
-  /// Wiki pages in chats. Experimental.
+  /// Wiki pages in chats. Experimental Deprecated: this field is not used.
+  @Deprecated(
+      'Wiki pages in chats. Experimental Deprecated: this field is not used.')
   @JsonKey(name: 'allow_admin_mute')
   final bool? allowAdminMute;
   @override
@@ -3460,6 +3472,8 @@ abstract class _Features implements Features {
           required bool singleGroupTeams,
       @JsonKey(name: 'wiki_pages')
           required bool wikiPages,
+      @Deprecated(
+          'Wiki pages in chats. Experimental Deprecated: this field is not used.')
       @JsonKey(name: 'allow_admin_mute')
           bool? allowAdminMute,
       @JsonKey(name: 'default_wallpaper')
@@ -3932,7 +3946,9 @@ abstract class _Features implements Features {
   bool get wikiPages => throw _privateConstructorUsedError;
   @override
 
-  /// Wiki pages in chats. Experimental.
+  /// Wiki pages in chats. Experimental Deprecated: this field is not used.
+  @Deprecated(
+      'Wiki pages in chats. Experimental Deprecated: this field is not used.')
   @JsonKey(name: 'allow_admin_mute')
   bool? get allowAdminMute => throw _privateConstructorUsedError;
   @override

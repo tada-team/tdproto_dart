@@ -263,8 +263,8 @@ class Features with _$Features {
     /// Wiki pages in chats. Experimental.
     @JsonKey(name: 'wiki_pages') required bool wikiPages,
     
-    /// Wiki pages in chats. Experimental.
-    @JsonKey(name: 'allow_admin_mute') bool? allowAdminMute,
+    /// Wiki pages in chats. Experimental Deprecated: this field is not used.
+    @Deprecated('Wiki pages in chats. Experimental Deprecated: this field is not used.') @JsonKey(name: 'allow_admin_mute') bool? allowAdminMute,
     
     /// Default wallpaper url for mobile apps, if any.
     @JsonKey(name: 'default_wallpaper') Wallpaper? defaultWallpaper,

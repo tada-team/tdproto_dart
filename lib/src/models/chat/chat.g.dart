@@ -98,6 +98,7 @@ _$_Chat _$$_ChatFromJson(Map<String, dynamic> json) => _$_Chat(
       canJoin: json['can_join'] as bool?,
       canDeleteAnyMessage: json['can_delete_any_message'] as bool?,
       canSetImportantAnyMessage: json['can_set_important_any_message'] as bool?,
+      canMuteAll: json['can_mute_all'] as bool?,
       lastActivity: json['last_activity'] == null
           ? null
           : DateTime.parse(json['last_activity'] as String),
@@ -178,6 +179,7 @@ Map<String, dynamic> _$$_ChatToJson(_$_Chat instance) => <String, dynamic>{
       'can_join': instance.canJoin,
       'can_delete_any_message': instance.canDeleteAnyMessage,
       'can_set_important_any_message': instance.canSetImportantAnyMessage,
+      'can_mute_all': instance.canMuteAll,
       'last_activity': instance.lastActivity?.toIso8601String(),
       'draft_num': instance.draftNum,
       'meeting_start_at': instance.meetingStartAt?.toIso8601String(),
