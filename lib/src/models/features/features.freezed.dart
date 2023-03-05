@@ -174,6 +174,8 @@ class _$FeaturesTearOff {
           required bool callsAudioEnabled,
       @JsonKey(name: 'calls_video_enabled')
           required bool callsVideoEnabled,
+      @JsonKey(name: 'calls_video_multistream_enabled')
+          required bool callsVideoMultistreamEnabled,
       @JsonKey(name: 'vcs_enabled')
           required bool vcsEnabled,
       @JsonKey(name: 'mobile_calls')
@@ -312,6 +314,7 @@ class _$FeaturesTearOff {
       callsVersion: callsVersion,
       callsAudioEnabled: callsAudioEnabled,
       callsVideoEnabled: callsVideoEnabled,
+      callsVideoMultistreamEnabled: callsVideoMultistreamEnabled,
       vcsEnabled: vcsEnabled,
       mobileCalls: mobileCalls,
       callsRecord: callsRecord,
@@ -653,6 +656,10 @@ mixin _$Features {
   @JsonKey(name: 'calls_video_enabled')
   bool get callsVideoEnabled => throw _privateConstructorUsedError;
 
+  /// CallsVideoMultistreamEnabled enabled or disabled video in multistream mode (for janus).
+  @JsonKey(name: 'calls_video_multistream_enabled')
+  bool get callsVideoMultistreamEnabled => throw _privateConstructorUsedError;
+
   /// VcsEnabled enabled or disabled vcs.
   @JsonKey(name: 'vcs_enabled')
   bool get vcsEnabled => throw _privateConstructorUsedError;
@@ -933,6 +940,8 @@ abstract class $FeaturesCopyWith<$Res> {
           bool callsAudioEnabled,
       @JsonKey(name: 'calls_video_enabled')
           bool callsVideoEnabled,
+      @JsonKey(name: 'calls_video_multistream_enabled')
+          bool callsVideoMultistreamEnabled,
       @JsonKey(name: 'vcs_enabled')
           bool vcsEnabled,
       @JsonKey(name: 'mobile_calls')
@@ -1085,6 +1094,7 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
     Object? callsVersion = freezed,
     Object? callsAudioEnabled = freezed,
     Object? callsVideoEnabled = freezed,
+    Object? callsVideoMultistreamEnabled = freezed,
     Object? vcsEnabled = freezed,
     Object? mobileCalls = freezed,
     Object? callsRecord = freezed,
@@ -1413,6 +1423,10 @@ class _$FeaturesCopyWithImpl<$Res> implements $FeaturesCopyWith<$Res> {
           ? _value.callsVideoEnabled
           : callsVideoEnabled // ignore: cast_nullable_to_non_nullable
               as bool,
+      callsVideoMultistreamEnabled: callsVideoMultistreamEnabled == freezed
+          ? _value.callsVideoMultistreamEnabled
+          : callsVideoMultistreamEnabled // ignore: cast_nullable_to_non_nullable
+              as bool,
       vcsEnabled: vcsEnabled == freezed
           ? _value.vcsEnabled
           : vcsEnabled // ignore: cast_nullable_to_non_nullable
@@ -1697,6 +1711,8 @@ abstract class _$FeaturesCopyWith<$Res> implements $FeaturesCopyWith<$Res> {
           bool callsAudioEnabled,
       @JsonKey(name: 'calls_video_enabled')
           bool callsVideoEnabled,
+      @JsonKey(name: 'calls_video_multistream_enabled')
+          bool callsVideoMultistreamEnabled,
       @JsonKey(name: 'vcs_enabled')
           bool vcsEnabled,
       @JsonKey(name: 'mobile_calls')
@@ -1852,6 +1868,7 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res>
     Object? callsVersion = freezed,
     Object? callsAudioEnabled = freezed,
     Object? callsVideoEnabled = freezed,
+    Object? callsVideoMultistreamEnabled = freezed,
     Object? vcsEnabled = freezed,
     Object? mobileCalls = freezed,
     Object? callsRecord = freezed,
@@ -2180,6 +2197,10 @@ class __$FeaturesCopyWithImpl<$Res> extends _$FeaturesCopyWithImpl<$Res>
           ? _value.callsVideoEnabled
           : callsVideoEnabled // ignore: cast_nullable_to_non_nullable
               as bool,
+      callsVideoMultistreamEnabled: callsVideoMultistreamEnabled == freezed
+          ? _value.callsVideoMultistreamEnabled
+          : callsVideoMultistreamEnabled // ignore: cast_nullable_to_non_nullable
+              as bool,
       vcsEnabled: vcsEnabled == freezed
           ? _value.vcsEnabled
           : vcsEnabled // ignore: cast_nullable_to_non_nullable
@@ -2444,6 +2465,8 @@ class _$_Features implements _Features {
           required this.callsAudioEnabled,
       @JsonKey(name: 'calls_video_enabled')
           required this.callsVideoEnabled,
+      @JsonKey(name: 'calls_video_multistream_enabled')
+          required this.callsVideoMultistreamEnabled,
       @JsonKey(name: 'vcs_enabled')
           required this.vcsEnabled,
       @JsonKey(name: 'mobile_calls')
@@ -2889,6 +2912,11 @@ class _$_Features implements _Features {
   final bool callsVideoEnabled;
   @override
 
+  /// CallsVideoMultistreamEnabled enabled or disabled video in multistream mode (for janus).
+  @JsonKey(name: 'calls_video_multistream_enabled')
+  final bool callsVideoMultistreamEnabled;
+  @override
+
   /// VcsEnabled enabled or disabled vcs.
   @JsonKey(name: 'vcs_enabled')
   final bool vcsEnabled;
@@ -3030,7 +3058,7 @@ class _$_Features implements _Features {
 
   @override
   String toString() {
-    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, rumarketApp: $rumarketApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, authByKerberos: $authByKerberos, reCaptchaEnabled: $reCaptchaEnabled, reCaptchaWebKeyV3: $reCaptchaWebKeyV3, reCaptchaWebKeyV2: $reCaptchaWebKeyV2, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, iceTransportPolicy: $iceTransportPolicy, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, callsAudioEnabled: $callsAudioEnabled, callsVideoEnabled: $callsVideoEnabled, vcsEnabled: $vcsEnabled, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, billing: $billing, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority)';
+    return 'Features(host: $host, build: $build, desktopVersion: $desktopVersion, frontVersion: $frontVersion, appTitle: $appTitle, landingUrl: $landingUrl, appSchemes: $appSchemes, userver: $userver, iOSApp: $iOSApp, androidApp: $androidApp, iOSCorpApp: $iOSCorpApp, androidCorpApp: $androidCorpApp, rumarketApp: $rumarketApp, theme: $theme, minIOSVersion: $minIOSVersion, minAndroidVersion: $minAndroidVersion, minCorpIOSVersion: $minCorpIOSVersion, minCorpAndroidVersion: $minCorpAndroidVersion, freeRegistration: $freeRegistration, maxUploadMb: $maxUploadMb, maxLinkedMessages: $maxLinkedMessages, maxMessageUploads: $maxMessageUploads, maxUsernamePartLength: $maxUsernamePartLength, maxGroupTitleLength: $maxGroupTitleLength, maxTeamTitleLength: $maxTeamTitleLength, maxRoleLength: $maxRoleLength, maxMoodLength: $maxMoodLength, maxMessageLength: $maxMessageLength, maxSectionLength: $maxSectionLength, maxProjectLength: $maxProjectLength, maxTagLength: $maxTagLength, maxTaskTitleLength: $maxTaskTitleLength, maxColorRuleDescriptionLength: $maxColorRuleDescriptionLength, maxUrlLength: $maxUrlLength, maxIntegrationCommentLength: $maxIntegrationCommentLength, maxTeams: $maxTeams, maxMessageSearchLimit: $maxMessageSearchLimit, multiNodes: $multiNodes, afkAge: $afkAge, authByPassword: $authByPassword, authByQrCode: $authByQrCode, authBySms: $authBySms, auth2fa: $auth2fa, authByKerberos: $authByKerberos, reCaptchaEnabled: $reCaptchaEnabled, reCaptchaWebKeyV3: $reCaptchaWebKeyV3, reCaptchaWebKeyV2: $reCaptchaWebKeyV2, isPinCodeRequired: $isPinCodeRequired, pinCodeWrongLimit: $pinCodeWrongLimit, oAuthServices: $oAuthServices, iCEServers: $iCEServers, iceTransportPolicy: $iceTransportPolicy, customServer: $customServer, installationType: $installationType, installationTitle: $installationTitle, customAppIconName: $customAppIconName, appLoginBackground: $appLoginBackground, webLoginBackground: $webLoginBackground, isTesting: $isTesting, metrika: $metrika, amplitudeApiKey: $amplitudeApiKey, minSearchLength: $minSearchLength, resendTimeout: $resendTimeout, sentryDsnJS: $sentryDsnJS, serverDrafts: $serverDrafts, firebaseAppId: $firebaseAppId, firebaseSenderId: $firebaseSenderId, firebaseApiKey: $firebaseApiKey, firebaseAuthDomain: $firebaseAuthDomain, firebaseDatabaseUrl: $firebaseDatabaseUrl, firebaseProjectId: $firebaseProjectId, firebaseStorageBucket: $firebaseStorageBucket, callsVersion: $callsVersion, callsAudioEnabled: $callsAudioEnabled, callsVideoEnabled: $callsVideoEnabled, callsVideoMultistreamEnabled: $callsVideoMultistreamEnabled, vcsEnabled: $vcsEnabled, mobileCalls: $mobileCalls, callsRecord: $callsRecord, onlyOneDevicePerCall: $onlyOneDevicePerCall, maxParticipantsPerCall: $maxParticipantsPerCall, safariPushId: $safariPushId, messageUploads: $messageUploads, terms: $terms, singleGroupTeams: $singleGroupTeams, wikiPages: $wikiPages, allowAdminMute: $allowAdminMute, defaultWallpaper: $defaultWallpaper, supportEmail: $supportEmail, customTheme: $customTheme, taskChecklist: $taskChecklist, readonlyGroups: $readonlyGroups, taskDashboard: $taskDashboard, taskMessages: $taskMessages, taskPublic: $taskPublic, taskTags: $taskTags, calls: $calls, billing: $billing, minAppVersion: $minAppVersion, fileExtensionWhitelist: $fileExtensionWhitelist, fileExtensionBlacklist: $fileExtensionBlacklist, fileExtensionWhitelistPriority: $fileExtensionWhitelistPriority)';
   }
 
   @override
@@ -3154,6 +3182,7 @@ class _$_Features implements _Features {
             (identical(other.callsVersion, callsVersion) || const DeepCollectionEquality().equals(other.callsVersion, callsVersion)) &&
             (identical(other.callsAudioEnabled, callsAudioEnabled) || const DeepCollectionEquality().equals(other.callsAudioEnabled, callsAudioEnabled)) &&
             (identical(other.callsVideoEnabled, callsVideoEnabled) || const DeepCollectionEquality().equals(other.callsVideoEnabled, callsVideoEnabled)) &&
+            (identical(other.callsVideoMultistreamEnabled, callsVideoMultistreamEnabled) || const DeepCollectionEquality().equals(other.callsVideoMultistreamEnabled, callsVideoMultistreamEnabled)) &&
             (identical(other.vcsEnabled, vcsEnabled) || const DeepCollectionEquality().equals(other.vcsEnabled, vcsEnabled)) &&
             (identical(other.mobileCalls, mobileCalls) || const DeepCollectionEquality().equals(other.mobileCalls, mobileCalls)) &&
             (identical(other.callsRecord, callsRecord) || const DeepCollectionEquality().equals(other.callsRecord, callsRecord)) &&
@@ -3260,6 +3289,7 @@ class _$_Features implements _Features {
       const DeepCollectionEquality().hash(callsVersion) ^
       const DeepCollectionEquality().hash(callsAudioEnabled) ^
       const DeepCollectionEquality().hash(callsVideoEnabled) ^
+      const DeepCollectionEquality().hash(callsVideoMultistreamEnabled) ^
       const DeepCollectionEquality().hash(vcsEnabled) ^
       const DeepCollectionEquality().hash(mobileCalls) ^
       const DeepCollectionEquality().hash(callsRecord) ^
@@ -3452,6 +3482,8 @@ abstract class _Features implements Features {
           required bool callsAudioEnabled,
       @JsonKey(name: 'calls_video_enabled')
           required bool callsVideoEnabled,
+      @JsonKey(name: 'calls_video_multistream_enabled')
+          required bool callsVideoMultistreamEnabled,
       @JsonKey(name: 'vcs_enabled')
           required bool vcsEnabled,
       @JsonKey(name: 'mobile_calls')
@@ -3894,6 +3926,11 @@ abstract class _Features implements Features {
   /// CallsVideoEnabled enabled or disabled video calls.
   @JsonKey(name: 'calls_video_enabled')
   bool get callsVideoEnabled => throw _privateConstructorUsedError;
+  @override
+
+  /// CallsVideoMultistreamEnabled enabled or disabled video in multistream mode (for janus).
+  @JsonKey(name: 'calls_video_multistream_enabled')
+  bool get callsVideoMultistreamEnabled => throw _privateConstructorUsedError;
   @override
 
   /// VcsEnabled enabled or disabled vcs.

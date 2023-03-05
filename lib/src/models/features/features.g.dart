@@ -90,6 +90,8 @@ _$_Features _$$_FeaturesFromJson(Map<String, dynamic> json) => _$_Features(
       callsVersion: json['calls_version'] as int,
       callsAudioEnabled: json['calls_audio_enabled'] as bool,
       callsVideoEnabled: json['calls_video_enabled'] as bool,
+      callsVideoMultistreamEnabled:
+          json['calls_video_multistream_enabled'] as bool,
       vcsEnabled: json['vcs_enabled'] as bool,
       mobileCalls: json['mobile_calls'] as bool,
       callsRecord: json['calls_record'] as bool,
@@ -206,6 +208,7 @@ Map<String, dynamic> _$$_FeaturesToJson(_$_Features instance) =>
       'calls_version': instance.callsVersion,
       'calls_audio_enabled': instance.callsAudioEnabled,
       'calls_video_enabled': instance.callsVideoEnabled,
+      'calls_video_multistream_enabled': instance.callsVideoMultistreamEnabled,
       'vcs_enabled': instance.vcsEnabled,
       'mobile_calls': instance.mobileCalls,
       'calls_record': instance.callsRecord,

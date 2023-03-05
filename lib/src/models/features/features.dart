@@ -233,6 +233,9 @@ class Features with _$Features {
     /// CallsVideoEnabled enabled or disabled video calls.
     @JsonKey(name: 'calls_video_enabled') required bool callsVideoEnabled,
     
+    /// CallsVideoMultistreamEnabled enabled or disabled video in multistream mode (for janus).
+    @JsonKey(name: 'calls_video_multistream_enabled') required bool callsVideoMultistreamEnabled,
+    
     /// VcsEnabled enabled or disabled vcs.
     @JsonKey(name: 'vcs_enabled') required bool vcsEnabled,
     
