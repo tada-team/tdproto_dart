@@ -24,12 +24,12 @@ class _$UpdateTariffRequestTearOff {
   _UpdateTariffRequest call(
       {@JsonKey(name: 'tariff_id') required String tariffId,
       @JsonKey(name: 'close_date') String? closeDate,
-      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
+      @JsonKey(name: 'is_default') bool? isDefault,
       @JsonKey(name: 'status') String? status}) {
     return _UpdateTariffRequest(
       tariffId: tariffId,
       closeDate: closeDate,
-      isDefaultTariff: isDefaultTariff,
+      isDefault: isDefault,
       status: status,
     );
   }
@@ -53,8 +53,8 @@ mixin _$UpdateTariffRequest {
   String? get closeDate => throw _privateConstructorUsedError;
 
   /// Default tariff flag that is set when registering an account.
-  @JsonKey(name: 'is_default_tariff')
-  bool? get isDefaultTariff => throw _privateConstructorUsedError;
+  @JsonKey(name: 'is_default')
+  bool? get isDefault => throw _privateConstructorUsedError;
 
   /// Status of tariff.
   @JsonKey(name: 'status')
@@ -74,7 +74,7 @@ abstract class $UpdateTariffRequestCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'tariff_id') String tariffId,
       @JsonKey(name: 'close_date') String? closeDate,
-      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
+      @JsonKey(name: 'is_default') bool? isDefault,
       @JsonKey(name: 'status') String? status});
 }
 
@@ -91,7 +91,7 @@ class _$UpdateTariffRequestCopyWithImpl<$Res>
   $Res call({
     Object? tariffId = freezed,
     Object? closeDate = freezed,
-    Object? isDefaultTariff = freezed,
+    Object? isDefault = freezed,
     Object? status = freezed,
   }) {
     return _then(_value.copyWith(
@@ -103,9 +103,9 @@ class _$UpdateTariffRequestCopyWithImpl<$Res>
           ? _value.closeDate
           : closeDate // ignore: cast_nullable_to_non_nullable
               as String?,
-      isDefaultTariff: isDefaultTariff == freezed
-          ? _value.isDefaultTariff
-          : isDefaultTariff // ignore: cast_nullable_to_non_nullable
+      isDefault: isDefault == freezed
+          ? _value.isDefault
+          : isDefault // ignore: cast_nullable_to_non_nullable
               as bool?,
       status: status == freezed
           ? _value.status
@@ -125,7 +125,7 @@ abstract class _$UpdateTariffRequestCopyWith<$Res>
   $Res call(
       {@JsonKey(name: 'tariff_id') String tariffId,
       @JsonKey(name: 'close_date') String? closeDate,
-      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
+      @JsonKey(name: 'is_default') bool? isDefault,
       @JsonKey(name: 'status') String? status});
 }
 
@@ -144,7 +144,7 @@ class __$UpdateTariffRequestCopyWithImpl<$Res>
   $Res call({
     Object? tariffId = freezed,
     Object? closeDate = freezed,
-    Object? isDefaultTariff = freezed,
+    Object? isDefault = freezed,
     Object? status = freezed,
   }) {
     return _then(_UpdateTariffRequest(
@@ -156,9 +156,9 @@ class __$UpdateTariffRequestCopyWithImpl<$Res>
           ? _value.closeDate
           : closeDate // ignore: cast_nullable_to_non_nullable
               as String?,
-      isDefaultTariff: isDefaultTariff == freezed
-          ? _value.isDefaultTariff
-          : isDefaultTariff // ignore: cast_nullable_to_non_nullable
+      isDefault: isDefault == freezed
+          ? _value.isDefault
+          : isDefault // ignore: cast_nullable_to_non_nullable
               as bool?,
       status: status == freezed
           ? _value.status
@@ -174,7 +174,7 @@ class _$_UpdateTariffRequest implements _UpdateTariffRequest {
   const _$_UpdateTariffRequest(
       {@JsonKey(name: 'tariff_id') required this.tariffId,
       @JsonKey(name: 'close_date') this.closeDate,
-      @JsonKey(name: 'is_default_tariff') this.isDefaultTariff,
+      @JsonKey(name: 'is_default') this.isDefault,
       @JsonKey(name: 'status') this.status});
 
   factory _$_UpdateTariffRequest.fromJson(Map<String, dynamic> json) =>
@@ -193,8 +193,8 @@ class _$_UpdateTariffRequest implements _UpdateTariffRequest {
   @override
 
   /// Default tariff flag that is set when registering an account.
-  @JsonKey(name: 'is_default_tariff')
-  final bool? isDefaultTariff;
+  @JsonKey(name: 'is_default')
+  final bool? isDefault;
   @override
 
   /// Status of tariff.
@@ -203,7 +203,7 @@ class _$_UpdateTariffRequest implements _UpdateTariffRequest {
 
   @override
   String toString() {
-    return 'UpdateTariffRequest(tariffId: $tariffId, closeDate: $closeDate, isDefaultTariff: $isDefaultTariff, status: $status)';
+    return 'UpdateTariffRequest(tariffId: $tariffId, closeDate: $closeDate, isDefault: $isDefault, status: $status)';
   }
 
   @override
@@ -216,9 +216,9 @@ class _$_UpdateTariffRequest implements _UpdateTariffRequest {
             (identical(other.closeDate, closeDate) ||
                 const DeepCollectionEquality()
                     .equals(other.closeDate, closeDate)) &&
-            (identical(other.isDefaultTariff, isDefaultTariff) ||
+            (identical(other.isDefault, isDefault) ||
                 const DeepCollectionEquality()
-                    .equals(other.isDefaultTariff, isDefaultTariff)) &&
+                    .equals(other.isDefault, isDefault)) &&
             (identical(other.status, status) ||
                 const DeepCollectionEquality().equals(other.status, status)));
   }
@@ -228,7 +228,7 @@ class _$_UpdateTariffRequest implements _UpdateTariffRequest {
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(tariffId) ^
       const DeepCollectionEquality().hash(closeDate) ^
-      const DeepCollectionEquality().hash(isDefaultTariff) ^
+      const DeepCollectionEquality().hash(isDefault) ^
       const DeepCollectionEquality().hash(status);
 
   @JsonKey(ignore: true)
@@ -247,7 +247,7 @@ abstract class _UpdateTariffRequest implements UpdateTariffRequest {
   const factory _UpdateTariffRequest(
       {@JsonKey(name: 'tariff_id') required String tariffId,
       @JsonKey(name: 'close_date') String? closeDate,
-      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
+      @JsonKey(name: 'is_default') bool? isDefault,
       @JsonKey(name: 'status') String? status}) = _$_UpdateTariffRequest;
 
   factory _UpdateTariffRequest.fromJson(Map<String, dynamic> json) =
@@ -266,8 +266,8 @@ abstract class _UpdateTariffRequest implements UpdateTariffRequest {
   @override
 
   /// Default tariff flag that is set when registering an account.
-  @JsonKey(name: 'is_default_tariff')
-  bool? get isDefaultTariff => throw _privateConstructorUsedError;
+  @JsonKey(name: 'is_default')
+  bool? get isDefault => throw _privateConstructorUsedError;
   @override
 
   /// Status of tariff.

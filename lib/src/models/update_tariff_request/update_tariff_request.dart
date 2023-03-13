@@ -15,7 +15,7 @@ class UpdateTariffRequest with _$UpdateTariffRequest {
     @JsonKey(name: 'close_date') String? closeDate,
     
     /// Default tariff flag that is set when registering an account.
-    @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
+    @JsonKey(name: 'is_default') bool? isDefault,
     
     /// Status of tariff.
     @JsonKey(name: 'status') String? status,

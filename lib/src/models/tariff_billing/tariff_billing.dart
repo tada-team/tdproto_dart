@@ -8,38 +8,47 @@ part 'tariff_billing.g.dart';
 @freezed
 class TariffBilling with _$TariffBilling {
   const factory TariffBilling({
-    /// Date of closing tariff.
-    @JsonKey(name: 'close_date') String? closeDate,
+    /// Tariff id.
+    @JsonKey(name: 'id') required int id,
     
-    /// Cost of one workplace.
-    @JsonKey(name: 'cost_workplace') required String costWorkplace,
+    /// Name of tariff.
+    @JsonKey(name: 'name') required String name,
+    
+    /// Nomenclature name of tariff.
+    @JsonKey(name: 'nomenclature_name') required String nomenclatureName,
+    
+    /// Description of tariff.
+    @JsonKey(name: 'description') required String description,
+    
+    /// Benefit of tariff.
+    @JsonKey(name: 'benefit') String? benefit,
     
     /// Currency of tariff.
     @JsonKey(name: 'currency') required String currency,
     
+    /// Priority of tariff.
+    @JsonKey(name: 'priority') int? priority,
+    
+    /// Cost of one workplace.
+    @JsonKey(name: 'cost_workplace') required String costWorkplace,
+    
+    /// Count of maximum workspaces on tariff.
+    @JsonKey(name: 'max_workplace_count') int? maxWorkplaceCount,
+    
     /// Count of minimum workspaces on tariff.
-    @JsonKey(name: 'min_tariff_workplaces') required int minTariffWorkplaces,
+    @JsonKey(name: 'min_workplace_count') int? minWorkplaceCount,
+    
+    /// Count of free workspaces.
+    @JsonKey(name: 'free_workplace_count') required int freeWorkplaceCount,
     
     /// Minimum step of change count workspaces on tariff.
-    @JsonKey(name: 'min_step_workplaces') required int minStepWorkplaces,
+    @JsonKey(name: 'step_increasing_workplaces') required int stepIncreasingWorkplaces,
     
     /// Disk space limit per user.
     @JsonKey(name: 'disk_space_quota_mb') required String diskSpaceQuotaMb,
     
-    /// Count of free workspaces.
-    @JsonKey(name: 'free_workplaces') required int freeWorkplaces,
-    
-    /// Flag of availability of free seats when exceeding FreeWorkplace.
-    @JsonKey(name: 'is_billing_free') required bool isBillingFree,
-    
-    /// Flag of accounting without looking at the number of days before the billing period.
-    @JsonKey(name: 'is_billing_full_time') required bool isBillingFullTime,
-    
-    /// Default tariff flag that is set when registering an account.
-    @JsonKey(name: 'is_default_tariff') required bool isDefaultTariff,
-    
-    /// Flag for accounting for unspent days when switching to a new tariff.
-    @JsonKey(name: 'is_recalc_change_tariff') required bool isRecalcChangeTariff,
+    /// Number of paid days.
+    @JsonKey(name: 'period_days') required int periodDays,
     
     /// Maximum count of users in voice conference.
     @JsonKey(name: 'max_voice_user') required int maxVoiceUser,
@@ -53,20 +62,23 @@ class TariffBilling with _$TariffBilling {
     /// Bitrate of video in video sharing.
     @JsonKey(name: 'video_sharing_bitrate') required int videoSharingBitrate,
     
+    /// Flag of availability of free seats when exceeding FreeWorkplace.
+    @JsonKey(name: 'is_free') required bool isFree,
+    
+    /// Flag of publicity.
+    @JsonKey(name: 'is_public') required bool isPublic,
+    
+    /// Default tariff flag that is set when registering an account.
+    @JsonKey(name: 'is_default') required bool isDefault,
+    
     /// Date of opening tariff.
     @JsonKey(name: 'open_date') String? openDate,
     
-    /// Number of paid days.
-    @JsonKey(name: 'period_days') required int periodDays,
+    /// Date of closing tariff.
+    @JsonKey(name: 'close_date') String? closeDate,
     
     /// Status of tariff.
     @JsonKey(name: 'status') required String status,
-    
-    /// Tariff id.
-    @JsonKey(name: 'tariff_id') required String tariffId,
-    
-    /// Name of tariff.
-    @JsonKey(name: 'tariff_name') required String tariffName,
     
     
   }) = _TariffBilling;

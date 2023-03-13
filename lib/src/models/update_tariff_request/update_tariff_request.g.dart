@@ -11,7 +11,7 @@ _$_UpdateTariffRequest _$$_UpdateTariffRequestFromJson(
     _$_UpdateTariffRequest(
       tariffId: json['tariff_id'] as String,
       closeDate: json['close_date'] as String?,
-      isDefaultTariff: json['is_default_tariff'] as bool?,
+      isDefault: json['is_default'] as bool?,
       status: json['status'] as String?,
     );
 
@@ -20,6 +20,6 @@ Map<String, dynamic> _$$_UpdateTariffRequestToJson(
     <String, dynamic>{
       'tariff_id': instance.tariffId,
       'close_date': instance.closeDate,
-      'is_default_tariff': instance.isDefaultTariff,
+      'is_default': instance.isDefault,
       'status': instance.status,
     };

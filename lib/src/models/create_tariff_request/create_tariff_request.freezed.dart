@@ -22,43 +22,70 @@ class _$CreateTariffRequestTearOff {
   const _$CreateTariffRequestTearOff();
 
   _CreateTariffRequest call(
-      {@JsonKey(name: 'close_date') String? closeDate,
-      @JsonKey(name: 'cost_workplace') String? costWorkplace,
-      @JsonKey(name: 'currency') required String currency,
-      @JsonKey(name: 'min_tariff_workplaces') required int minTariffWorkplaces,
-      @JsonKey(name: 'min_step_workplaces') required int minStepWorkplaces,
-      @JsonKey(name: 'disk_space_quota_mb') String? diskSpaceQuotaMb,
-      @JsonKey(name: 'free_workplaces') int? freeWorkplaces,
-      @JsonKey(name: 'is_billing_free') bool? isBillingFree,
-      @JsonKey(name: 'is_billing_full_time') bool? isBillingFullTime,
-      @JsonKey(name: 'is_recalc_change_tariff') bool? isRecalcChangeTariff,
-      @JsonKey(name: 'max_voice_user') int? maxVoiceUser,
-      @JsonKey(name: 'max_video_user') int? maxVideoUser,
-      @JsonKey(name: 'video_call_bitrate') required int videoCallBitrate,
-      @JsonKey(name: 'video_sharing_bitrate') required int videoSharingBitrate,
-      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
-      @JsonKey(name: 'open_date') String? openDate,
-      @JsonKey(name: 'period_days') required int periodDays,
-      @JsonKey(name: 'tariff_name') required String tariffName}) {
+      {@JsonKey(name: 'name')
+          required String name,
+      @JsonKey(name: 'nomenclature_name')
+          required String nomenclatureName,
+      @JsonKey(name: 'description')
+          String? description,
+      @JsonKey(name: 'benefit')
+          String? benefit,
+      @JsonKey(name: 'currency')
+          required String currency,
+      @JsonKey(name: 'cost_workplace')
+          required String costWorkplace,
+      @JsonKey(name: 'priority')
+          int? priority,
+      @JsonKey(name: 'max_workplace_count')
+          int? maxWorkplaceCount,
+      @JsonKey(name: 'min_workplace_count')
+          int? minWorkplaceCount,
+      @JsonKey(name: 'free_workplace_countt')
+          int? freeWorkplaceCount,
+      @JsonKey(name: 'step_increasing_workplaces')
+          int? stepIncreasingWorkplaces,
+      @JsonKey(name: 'disk_space_quota_mb')
+          String? diskSpaceQuotaMb,
+      @JsonKey(name: 'period_days')
+          required int periodDays,
+      @JsonKey(name: 'max_voice_user')
+          int? maxVoiceUser,
+      @JsonKey(name: 'max_video_user')
+          int? maxVideoUser,
+      @JsonKey(name: 'video_call_bitrate')
+          int? videoCallBitrate,
+      @JsonKey(name: 'video_sharing_bitrate')
+          int? videoSharingBitrate,
+      @JsonKey(name: 'is_free')
+          bool? isFree,
+      @JsonKey(name: 'is_public')
+          bool? isPublic,
+      @JsonKey(name: 'is_default')
+          bool? isDefault,
+      @JsonKey(name: 'open_date')
+          String? openDate}) {
     return _CreateTariffRequest(
-      closeDate: closeDate,
-      costWorkplace: costWorkplace,
+      name: name,
+      nomenclatureName: nomenclatureName,
+      description: description,
+      benefit: benefit,
       currency: currency,
-      minTariffWorkplaces: minTariffWorkplaces,
-      minStepWorkplaces: minStepWorkplaces,
+      costWorkplace: costWorkplace,
+      priority: priority,
+      maxWorkplaceCount: maxWorkplaceCount,
+      minWorkplaceCount: minWorkplaceCount,
+      freeWorkplaceCount: freeWorkplaceCount,
+      stepIncreasingWorkplaces: stepIncreasingWorkplaces,
       diskSpaceQuotaMb: diskSpaceQuotaMb,
-      freeWorkplaces: freeWorkplaces,
-      isBillingFree: isBillingFree,
-      isBillingFullTime: isBillingFullTime,
-      isRecalcChangeTariff: isRecalcChangeTariff,
+      periodDays: periodDays,
       maxVoiceUser: maxVoiceUser,
       maxVideoUser: maxVideoUser,
       videoCallBitrate: videoCallBitrate,
       videoSharingBitrate: videoSharingBitrate,
-      isDefaultTariff: isDefaultTariff,
+      isFree: isFree,
+      isPublic: isPublic,
+      isDefault: isDefault,
       openDate: openDate,
-      periodDays: periodDays,
-      tariffName: tariffName,
     );
   }
 
@@ -72,45 +99,57 @@ const $CreateTariffRequest = _$CreateTariffRequestTearOff();
 
 /// @nodoc
 mixin _$CreateTariffRequest {
-  /// Date of closing tariff.
-  @JsonKey(name: 'close_date')
-  String? get closeDate => throw _privateConstructorUsedError;
+  /// Name of tariff.
+  @JsonKey(name: 'name')
+  String get name => throw _privateConstructorUsedError;
 
-  /// Cost of one workplace.
-  @JsonKey(name: 'cost_workplace')
-  String? get costWorkplace => throw _privateConstructorUsedError;
+  /// Nomenclature name of tariff.
+  @JsonKey(name: 'nomenclature_name')
+  String get nomenclatureName => throw _privateConstructorUsedError;
+
+  /// Description of tariff.
+  @JsonKey(name: 'description')
+  String? get description => throw _privateConstructorUsedError;
+
+  /// Benefit of tariff.
+  @JsonKey(name: 'benefit')
+  String? get benefit => throw _privateConstructorUsedError;
 
   /// Currency of tariff.
   @JsonKey(name: 'currency')
   String get currency => throw _privateConstructorUsedError;
 
+  /// Cost of one workplace.
+  @JsonKey(name: 'cost_workplace')
+  String get costWorkplace => throw _privateConstructorUsedError;
+
+  /// Priority of tariff.
+  @JsonKey(name: 'priority')
+  int? get priority => throw _privateConstructorUsedError;
+
+  /// Count of maximum workspaces on tariff.
+  @JsonKey(name: 'max_workplace_count')
+  int? get maxWorkplaceCount => throw _privateConstructorUsedError;
+
   /// Count of minimum workspaces on tariff.
-  @JsonKey(name: 'min_tariff_workplaces')
-  int get minTariffWorkplaces => throw _privateConstructorUsedError;
+  @JsonKey(name: 'min_workplace_count')
+  int? get minWorkplaceCount => throw _privateConstructorUsedError;
+
+  /// Count of free workspaces.
+  @JsonKey(name: 'free_workplace_countt')
+  int? get freeWorkplaceCount => throw _privateConstructorUsedError;
 
   /// Minimum step of change count workspaces on tariff.
-  @JsonKey(name: 'min_step_workplaces')
-  int get minStepWorkplaces => throw _privateConstructorUsedError;
+  @JsonKey(name: 'step_increasing_workplaces')
+  int? get stepIncreasingWorkplaces => throw _privateConstructorUsedError;
 
   /// Disk space limit per user.
   @JsonKey(name: 'disk_space_quota_mb')
   String? get diskSpaceQuotaMb => throw _privateConstructorUsedError;
 
-  /// Count of free workspaces.
-  @JsonKey(name: 'free_workplaces')
-  int? get freeWorkplaces => throw _privateConstructorUsedError;
-
-  /// Flag of availability of free seats when exceeding FreeWorkplace.
-  @JsonKey(name: 'is_billing_free')
-  bool? get isBillingFree => throw _privateConstructorUsedError;
-
-  /// Flag of accounting without looking at the number of days before the billing period.
-  @JsonKey(name: 'is_billing_full_time')
-  bool? get isBillingFullTime => throw _privateConstructorUsedError;
-
-  /// Flag for accounting for unspent days when switching to a new tariff.
-  @JsonKey(name: 'is_recalc_change_tariff')
-  bool? get isRecalcChangeTariff => throw _privateConstructorUsedError;
+  /// Number of paid days.
+  @JsonKey(name: 'period_days')
+  int get periodDays => throw _privateConstructorUsedError;
 
   /// Maximum count of users in voice conference.
   @JsonKey(name: 'max_voice_user')
@@ -122,27 +161,27 @@ mixin _$CreateTariffRequest {
 
   /// Bitrate of video in video co.
   @JsonKey(name: 'video_call_bitrate')
-  int get videoCallBitrate => throw _privateConstructorUsedError;
+  int? get videoCallBitrate => throw _privateConstructorUsedError;
 
   /// Bitrate of video in video sharing.
   @JsonKey(name: 'video_sharing_bitrate')
-  int get videoSharingBitrate => throw _privateConstructorUsedError;
+  int? get videoSharingBitrate => throw _privateConstructorUsedError;
+
+  /// Flag of availability of free seats when exceeding FreeWorkplace.
+  @JsonKey(name: 'is_free')
+  bool? get isFree => throw _privateConstructorUsedError;
+
+  /// Flag of publicity.
+  @JsonKey(name: 'is_public')
+  bool? get isPublic => throw _privateConstructorUsedError;
 
   /// Default tariff flag that is set when registering an account.
-  @JsonKey(name: 'is_default_tariff')
-  bool? get isDefaultTariff => throw _privateConstructorUsedError;
+  @JsonKey(name: 'is_default')
+  bool? get isDefault => throw _privateConstructorUsedError;
 
   /// Date of opening tariff.
   @JsonKey(name: 'open_date')
   String? get openDate => throw _privateConstructorUsedError;
-
-  /// Number of paid days.
-  @JsonKey(name: 'period_days')
-  int get periodDays => throw _privateConstructorUsedError;
-
-  /// Name of tariff.
-  @JsonKey(name: 'tariff_name')
-  String get tariffName => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -156,24 +195,48 @@ abstract class $CreateTariffRequestCopyWith<$Res> {
           CreateTariffRequest value, $Res Function(CreateTariffRequest) then) =
       _$CreateTariffRequestCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'close_date') String? closeDate,
-      @JsonKey(name: 'cost_workplace') String? costWorkplace,
-      @JsonKey(name: 'currency') String currency,
-      @JsonKey(name: 'min_tariff_workplaces') int minTariffWorkplaces,
-      @JsonKey(name: 'min_step_workplaces') int minStepWorkplaces,
-      @JsonKey(name: 'disk_space_quota_mb') String? diskSpaceQuotaMb,
-      @JsonKey(name: 'free_workplaces') int? freeWorkplaces,
-      @JsonKey(name: 'is_billing_free') bool? isBillingFree,
-      @JsonKey(name: 'is_billing_full_time') bool? isBillingFullTime,
-      @JsonKey(name: 'is_recalc_change_tariff') bool? isRecalcChangeTariff,
-      @JsonKey(name: 'max_voice_user') int? maxVoiceUser,
-      @JsonKey(name: 'max_video_user') int? maxVideoUser,
-      @JsonKey(name: 'video_call_bitrate') int videoCallBitrate,
-      @JsonKey(name: 'video_sharing_bitrate') int videoSharingBitrate,
-      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
-      @JsonKey(name: 'open_date') String? openDate,
-      @JsonKey(name: 'period_days') int periodDays,
-      @JsonKey(name: 'tariff_name') String tariffName});
+      {@JsonKey(name: 'name')
+          String name,
+      @JsonKey(name: 'nomenclature_name')
+          String nomenclatureName,
+      @JsonKey(name: 'description')
+          String? description,
+      @JsonKey(name: 'benefit')
+          String? benefit,
+      @JsonKey(name: 'currency')
+          String currency,
+      @JsonKey(name: 'cost_workplace')
+          String costWorkplace,
+      @JsonKey(name: 'priority')
+          int? priority,
+      @JsonKey(name: 'max_workplace_count')
+          int? maxWorkplaceCount,
+      @JsonKey(name: 'min_workplace_count')
+          int? minWorkplaceCount,
+      @JsonKey(name: 'free_workplace_countt')
+          int? freeWorkplaceCount,
+      @JsonKey(name: 'step_increasing_workplaces')
+          int? stepIncreasingWorkplaces,
+      @JsonKey(name: 'disk_space_quota_mb')
+          String? diskSpaceQuotaMb,
+      @JsonKey(name: 'period_days')
+          int periodDays,
+      @JsonKey(name: 'max_voice_user')
+          int? maxVoiceUser,
+      @JsonKey(name: 'max_video_user')
+          int? maxVideoUser,
+      @JsonKey(name: 'video_call_bitrate')
+          int? videoCallBitrate,
+      @JsonKey(name: 'video_sharing_bitrate')
+          int? videoSharingBitrate,
+      @JsonKey(name: 'is_free')
+          bool? isFree,
+      @JsonKey(name: 'is_public')
+          bool? isPublic,
+      @JsonKey(name: 'is_default')
+          bool? isDefault,
+      @JsonKey(name: 'open_date')
+          String? openDate});
 }
 
 /// @nodoc
@@ -187,66 +250,81 @@ class _$CreateTariffRequestCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? closeDate = freezed,
-    Object? costWorkplace = freezed,
+    Object? name = freezed,
+    Object? nomenclatureName = freezed,
+    Object? description = freezed,
+    Object? benefit = freezed,
     Object? currency = freezed,
-    Object? minTariffWorkplaces = freezed,
-    Object? minStepWorkplaces = freezed,
+    Object? costWorkplace = freezed,
+    Object? priority = freezed,
+    Object? maxWorkplaceCount = freezed,
+    Object? minWorkplaceCount = freezed,
+    Object? freeWorkplaceCount = freezed,
+    Object? stepIncreasingWorkplaces = freezed,
     Object? diskSpaceQuotaMb = freezed,
-    Object? freeWorkplaces = freezed,
-    Object? isBillingFree = freezed,
-    Object? isBillingFullTime = freezed,
-    Object? isRecalcChangeTariff = freezed,
+    Object? periodDays = freezed,
     Object? maxVoiceUser = freezed,
     Object? maxVideoUser = freezed,
     Object? videoCallBitrate = freezed,
     Object? videoSharingBitrate = freezed,
-    Object? isDefaultTariff = freezed,
+    Object? isFree = freezed,
+    Object? isPublic = freezed,
+    Object? isDefault = freezed,
     Object? openDate = freezed,
-    Object? periodDays = freezed,
-    Object? tariffName = freezed,
   }) {
     return _then(_value.copyWith(
-      closeDate: closeDate == freezed
-          ? _value.closeDate
-          : closeDate // ignore: cast_nullable_to_non_nullable
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      nomenclatureName: nomenclatureName == freezed
+          ? _value.nomenclatureName
+          : nomenclatureName // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      costWorkplace: costWorkplace == freezed
-          ? _value.costWorkplace
-          : costWorkplace // ignore: cast_nullable_to_non_nullable
+      benefit: benefit == freezed
+          ? _value.benefit
+          : benefit // ignore: cast_nullable_to_non_nullable
               as String?,
       currency: currency == freezed
           ? _value.currency
           : currency // ignore: cast_nullable_to_non_nullable
               as String,
-      minTariffWorkplaces: minTariffWorkplaces == freezed
-          ? _value.minTariffWorkplaces
-          : minTariffWorkplaces // ignore: cast_nullable_to_non_nullable
-              as int,
-      minStepWorkplaces: minStepWorkplaces == freezed
-          ? _value.minStepWorkplaces
-          : minStepWorkplaces // ignore: cast_nullable_to_non_nullable
-              as int,
+      costWorkplace: costWorkplace == freezed
+          ? _value.costWorkplace
+          : costWorkplace // ignore: cast_nullable_to_non_nullable
+              as String,
+      priority: priority == freezed
+          ? _value.priority
+          : priority // ignore: cast_nullable_to_non_nullable
+              as int?,
+      maxWorkplaceCount: maxWorkplaceCount == freezed
+          ? _value.maxWorkplaceCount
+          : maxWorkplaceCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      minWorkplaceCount: minWorkplaceCount == freezed
+          ? _value.minWorkplaceCount
+          : minWorkplaceCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freeWorkplaceCount: freeWorkplaceCount == freezed
+          ? _value.freeWorkplaceCount
+          : freeWorkplaceCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      stepIncreasingWorkplaces: stepIncreasingWorkplaces == freezed
+          ? _value.stepIncreasingWorkplaces
+          : stepIncreasingWorkplaces // ignore: cast_nullable_to_non_nullable
+              as int?,
       diskSpaceQuotaMb: diskSpaceQuotaMb == freezed
           ? _value.diskSpaceQuotaMb
           : diskSpaceQuotaMb // ignore: cast_nullable_to_non_nullable
               as String?,
-      freeWorkplaces: freeWorkplaces == freezed
-          ? _value.freeWorkplaces
-          : freeWorkplaces // ignore: cast_nullable_to_non_nullable
-              as int?,
-      isBillingFree: isBillingFree == freezed
-          ? _value.isBillingFree
-          : isBillingFree // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      isBillingFullTime: isBillingFullTime == freezed
-          ? _value.isBillingFullTime
-          : isBillingFullTime // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      isRecalcChangeTariff: isRecalcChangeTariff == freezed
-          ? _value.isRecalcChangeTariff
-          : isRecalcChangeTariff // ignore: cast_nullable_to_non_nullable
-              as bool?,
+      periodDays: periodDays == freezed
+          ? _value.periodDays
+          : periodDays // ignore: cast_nullable_to_non_nullable
+              as int,
       maxVoiceUser: maxVoiceUser == freezed
           ? _value.maxVoiceUser
           : maxVoiceUser // ignore: cast_nullable_to_non_nullable
@@ -258,27 +336,27 @@ class _$CreateTariffRequestCopyWithImpl<$Res>
       videoCallBitrate: videoCallBitrate == freezed
           ? _value.videoCallBitrate
           : videoCallBitrate // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       videoSharingBitrate: videoSharingBitrate == freezed
           ? _value.videoSharingBitrate
           : videoSharingBitrate // ignore: cast_nullable_to_non_nullable
-              as int,
-      isDefaultTariff: isDefaultTariff == freezed
-          ? _value.isDefaultTariff
-          : isDefaultTariff // ignore: cast_nullable_to_non_nullable
+              as int?,
+      isFree: isFree == freezed
+          ? _value.isFree
+          : isFree // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      isPublic: isPublic == freezed
+          ? _value.isPublic
+          : isPublic // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      isDefault: isDefault == freezed
+          ? _value.isDefault
+          : isDefault // ignore: cast_nullable_to_non_nullable
               as bool?,
       openDate: openDate == freezed
           ? _value.openDate
           : openDate // ignore: cast_nullable_to_non_nullable
               as String?,
-      periodDays: periodDays == freezed
-          ? _value.periodDays
-          : periodDays // ignore: cast_nullable_to_non_nullable
-              as int,
-      tariffName: tariffName == freezed
-          ? _value.tariffName
-          : tariffName // ignore: cast_nullable_to_non_nullable
-              as String,
     ));
   }
 }
@@ -291,24 +369,48 @@ abstract class _$CreateTariffRequestCopyWith<$Res>
       __$CreateTariffRequestCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'close_date') String? closeDate,
-      @JsonKey(name: 'cost_workplace') String? costWorkplace,
-      @JsonKey(name: 'currency') String currency,
-      @JsonKey(name: 'min_tariff_workplaces') int minTariffWorkplaces,
-      @JsonKey(name: 'min_step_workplaces') int minStepWorkplaces,
-      @JsonKey(name: 'disk_space_quota_mb') String? diskSpaceQuotaMb,
-      @JsonKey(name: 'free_workplaces') int? freeWorkplaces,
-      @JsonKey(name: 'is_billing_free') bool? isBillingFree,
-      @JsonKey(name: 'is_billing_full_time') bool? isBillingFullTime,
-      @JsonKey(name: 'is_recalc_change_tariff') bool? isRecalcChangeTariff,
-      @JsonKey(name: 'max_voice_user') int? maxVoiceUser,
-      @JsonKey(name: 'max_video_user') int? maxVideoUser,
-      @JsonKey(name: 'video_call_bitrate') int videoCallBitrate,
-      @JsonKey(name: 'video_sharing_bitrate') int videoSharingBitrate,
-      @JsonKey(name: 'is_default_tariff') bool? isDefaultTariff,
-      @JsonKey(name: 'open_date') String? openDate,
-      @JsonKey(name: 'period_days') int periodDays,
-      @JsonKey(name: 'tariff_name') String tariffName});
+      {@JsonKey(name: 'name')
+          String name,
+      @JsonKey(name: 'nomenclature_name')
+          String nomenclatureName,
+      @JsonKey(name: 'description')
+          String? description,
+      @JsonKey(name: 'benefit')
+          String? benefit,
+      @JsonKey(name: 'currency')
+          String currency,
+      @JsonKey(name: 'cost_workplace')
+          String costWorkplace,
+      @JsonKey(name: 'priority')
+          int? priority,
+      @JsonKey(name: 'max_workplace_count')
+          int? maxWorkplaceCount,
+      @JsonKey(name: 'min_workplace_count')
+          int? minWorkplaceCount,
+      @JsonKey(name: 'free_workplace_countt')
+          int? freeWorkplaceCount,
+      @JsonKey(name: 'step_increasing_workplaces')
+          int? stepIncreasingWorkplaces,
+      @JsonKey(name: 'disk_space_quota_mb')
+          String? diskSpaceQuotaMb,
+      @JsonKey(name: 'period_days')
+          int periodDays,
+      @JsonKey(name: 'max_voice_user')
+          int? maxVoiceUser,
+      @JsonKey(name: 'max_video_user')
+          int? maxVideoUser,
+      @JsonKey(name: 'video_call_bitrate')
+          int? videoCallBitrate,
+      @JsonKey(name: 'video_sharing_bitrate')
+          int? videoSharingBitrate,
+      @JsonKey(name: 'is_free')
+          bool? isFree,
+      @JsonKey(name: 'is_public')
+          bool? isPublic,
+      @JsonKey(name: 'is_default')
+          bool? isDefault,
+      @JsonKey(name: 'open_date')
+          String? openDate});
 }
 
 /// @nodoc
@@ -324,66 +426,81 @@ class __$CreateTariffRequestCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? closeDate = freezed,
-    Object? costWorkplace = freezed,
+    Object? name = freezed,
+    Object? nomenclatureName = freezed,
+    Object? description = freezed,
+    Object? benefit = freezed,
     Object? currency = freezed,
-    Object? minTariffWorkplaces = freezed,
-    Object? minStepWorkplaces = freezed,
+    Object? costWorkplace = freezed,
+    Object? priority = freezed,
+    Object? maxWorkplaceCount = freezed,
+    Object? minWorkplaceCount = freezed,
+    Object? freeWorkplaceCount = freezed,
+    Object? stepIncreasingWorkplaces = freezed,
     Object? diskSpaceQuotaMb = freezed,
-    Object? freeWorkplaces = freezed,
-    Object? isBillingFree = freezed,
-    Object? isBillingFullTime = freezed,
-    Object? isRecalcChangeTariff = freezed,
+    Object? periodDays = freezed,
     Object? maxVoiceUser = freezed,
     Object? maxVideoUser = freezed,
     Object? videoCallBitrate = freezed,
     Object? videoSharingBitrate = freezed,
-    Object? isDefaultTariff = freezed,
+    Object? isFree = freezed,
+    Object? isPublic = freezed,
+    Object? isDefault = freezed,
     Object? openDate = freezed,
-    Object? periodDays = freezed,
-    Object? tariffName = freezed,
   }) {
     return _then(_CreateTariffRequest(
-      closeDate: closeDate == freezed
-          ? _value.closeDate
-          : closeDate // ignore: cast_nullable_to_non_nullable
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      nomenclatureName: nomenclatureName == freezed
+          ? _value.nomenclatureName
+          : nomenclatureName // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      costWorkplace: costWorkplace == freezed
-          ? _value.costWorkplace
-          : costWorkplace // ignore: cast_nullable_to_non_nullable
+      benefit: benefit == freezed
+          ? _value.benefit
+          : benefit // ignore: cast_nullable_to_non_nullable
               as String?,
       currency: currency == freezed
           ? _value.currency
           : currency // ignore: cast_nullable_to_non_nullable
               as String,
-      minTariffWorkplaces: minTariffWorkplaces == freezed
-          ? _value.minTariffWorkplaces
-          : minTariffWorkplaces // ignore: cast_nullable_to_non_nullable
-              as int,
-      minStepWorkplaces: minStepWorkplaces == freezed
-          ? _value.minStepWorkplaces
-          : minStepWorkplaces // ignore: cast_nullable_to_non_nullable
-              as int,
+      costWorkplace: costWorkplace == freezed
+          ? _value.costWorkplace
+          : costWorkplace // ignore: cast_nullable_to_non_nullable
+              as String,
+      priority: priority == freezed
+          ? _value.priority
+          : priority // ignore: cast_nullable_to_non_nullable
+              as int?,
+      maxWorkplaceCount: maxWorkplaceCount == freezed
+          ? _value.maxWorkplaceCount
+          : maxWorkplaceCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      minWorkplaceCount: minWorkplaceCount == freezed
+          ? _value.minWorkplaceCount
+          : minWorkplaceCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freeWorkplaceCount: freeWorkplaceCount == freezed
+          ? _value.freeWorkplaceCount
+          : freeWorkplaceCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      stepIncreasingWorkplaces: stepIncreasingWorkplaces == freezed
+          ? _value.stepIncreasingWorkplaces
+          : stepIncreasingWorkplaces // ignore: cast_nullable_to_non_nullable
+              as int?,
       diskSpaceQuotaMb: diskSpaceQuotaMb == freezed
           ? _value.diskSpaceQuotaMb
           : diskSpaceQuotaMb // ignore: cast_nullable_to_non_nullable
               as String?,
-      freeWorkplaces: freeWorkplaces == freezed
-          ? _value.freeWorkplaces
-          : freeWorkplaces // ignore: cast_nullable_to_non_nullable
-              as int?,
-      isBillingFree: isBillingFree == freezed
-          ? _value.isBillingFree
-          : isBillingFree // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      isBillingFullTime: isBillingFullTime == freezed
-          ? _value.isBillingFullTime
-          : isBillingFullTime // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      isRecalcChangeTariff: isRecalcChangeTariff == freezed
-          ? _value.isRecalcChangeTariff
-          : isRecalcChangeTariff // ignore: cast_nullable_to_non_nullable
-              as bool?,
+      periodDays: periodDays == freezed
+          ? _value.periodDays
+          : periodDays // ignore: cast_nullable_to_non_nullable
+              as int,
       maxVoiceUser: maxVoiceUser == freezed
           ? _value.maxVoiceUser
           : maxVoiceUser // ignore: cast_nullable_to_non_nullable
@@ -395,27 +512,27 @@ class __$CreateTariffRequestCopyWithImpl<$Res>
       videoCallBitrate: videoCallBitrate == freezed
           ? _value.videoCallBitrate
           : videoCallBitrate // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       videoSharingBitrate: videoSharingBitrate == freezed
           ? _value.videoSharingBitrate
           : videoSharingBitrate // ignore: cast_nullable_to_non_nullable
-              as int,
-      isDefaultTariff: isDefaultTariff == freezed
-          ? _value.isDefaultTariff
-          : isDefaultTariff // ignore: cast_nullable_to_non_nullable
+              as int?,
+      isFree: isFree == freezed
+          ? _value.isFree
+          : isFree // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      isPublic: isPublic == freezed
+          ? _value.isPublic
+          : isPublic // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      isDefault: isDefault == freezed
+          ? _value.isDefault
+          : isDefault // ignore: cast_nullable_to_non_nullable
               as bool?,
       openDate: openDate == freezed
           ? _value.openDate
           : openDate // ignore: cast_nullable_to_non_nullable
               as String?,
-      periodDays: periodDays == freezed
-          ? _value.periodDays
-          : periodDays // ignore: cast_nullable_to_non_nullable
-              as int,
-      tariffName: tariffName == freezed
-          ? _value.tariffName
-          : tariffName // ignore: cast_nullable_to_non_nullable
-              as String,
     ));
   }
 }
@@ -424,38 +541,72 @@ class __$CreateTariffRequestCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_CreateTariffRequest implements _CreateTariffRequest {
   const _$_CreateTariffRequest(
-      {@JsonKey(name: 'close_date') this.closeDate,
-      @JsonKey(name: 'cost_workplace') this.costWorkplace,
-      @JsonKey(name: 'currency') required this.currency,
-      @JsonKey(name: 'min_tariff_workplaces') required this.minTariffWorkplaces,
-      @JsonKey(name: 'min_step_workplaces') required this.minStepWorkplaces,
-      @JsonKey(name: 'disk_space_quota_mb') this.diskSpaceQuotaMb,
-      @JsonKey(name: 'free_workplaces') this.freeWorkplaces,
-      @JsonKey(name: 'is_billing_free') this.isBillingFree,
-      @JsonKey(name: 'is_billing_full_time') this.isBillingFullTime,
-      @JsonKey(name: 'is_recalc_change_tariff') this.isRecalcChangeTariff,
-      @JsonKey(name: 'max_voice_user') this.maxVoiceUser,
-      @JsonKey(name: 'max_video_user') this.maxVideoUser,
-      @JsonKey(name: 'video_call_bitrate') required this.videoCallBitrate,
-      @JsonKey(name: 'video_sharing_bitrate') required this.videoSharingBitrate,
-      @JsonKey(name: 'is_default_tariff') this.isDefaultTariff,
-      @JsonKey(name: 'open_date') this.openDate,
-      @JsonKey(name: 'period_days') required this.periodDays,
-      @JsonKey(name: 'tariff_name') required this.tariffName});
+      {@JsonKey(name: 'name')
+          required this.name,
+      @JsonKey(name: 'nomenclature_name')
+          required this.nomenclatureName,
+      @JsonKey(name: 'description')
+          this.description,
+      @JsonKey(name: 'benefit')
+          this.benefit,
+      @JsonKey(name: 'currency')
+          required this.currency,
+      @JsonKey(name: 'cost_workplace')
+          required this.costWorkplace,
+      @JsonKey(name: 'priority')
+          this.priority,
+      @JsonKey(name: 'max_workplace_count')
+          this.maxWorkplaceCount,
+      @JsonKey(name: 'min_workplace_count')
+          this.minWorkplaceCount,
+      @JsonKey(name: 'free_workplace_countt')
+          this.freeWorkplaceCount,
+      @JsonKey(name: 'step_increasing_workplaces')
+          this.stepIncreasingWorkplaces,
+      @JsonKey(name: 'disk_space_quota_mb')
+          this.diskSpaceQuotaMb,
+      @JsonKey(name: 'period_days')
+          required this.periodDays,
+      @JsonKey(name: 'max_voice_user')
+          this.maxVoiceUser,
+      @JsonKey(name: 'max_video_user')
+          this.maxVideoUser,
+      @JsonKey(name: 'video_call_bitrate')
+          this.videoCallBitrate,
+      @JsonKey(name: 'video_sharing_bitrate')
+          this.videoSharingBitrate,
+      @JsonKey(name: 'is_free')
+          this.isFree,
+      @JsonKey(name: 'is_public')
+          this.isPublic,
+      @JsonKey(name: 'is_default')
+          this.isDefault,
+      @JsonKey(name: 'open_date')
+          this.openDate});
 
   factory _$_CreateTariffRequest.fromJson(Map<String, dynamic> json) =>
       _$$_CreateTariffRequestFromJson(json);
 
   @override
 
-  /// Date of closing tariff.
-  @JsonKey(name: 'close_date')
-  final String? closeDate;
+  /// Name of tariff.
+  @JsonKey(name: 'name')
+  final String name;
   @override
 
-  /// Cost of one workplace.
-  @JsonKey(name: 'cost_workplace')
-  final String? costWorkplace;
+  /// Nomenclature name of tariff.
+  @JsonKey(name: 'nomenclature_name')
+  final String nomenclatureName;
+  @override
+
+  /// Description of tariff.
+  @JsonKey(name: 'description')
+  final String? description;
+  @override
+
+  /// Benefit of tariff.
+  @JsonKey(name: 'benefit')
+  final String? benefit;
   @override
 
   /// Currency of tariff.
@@ -463,14 +614,34 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
   final String currency;
   @override
 
+  /// Cost of one workplace.
+  @JsonKey(name: 'cost_workplace')
+  final String costWorkplace;
+  @override
+
+  /// Priority of tariff.
+  @JsonKey(name: 'priority')
+  final int? priority;
+  @override
+
+  /// Count of maximum workspaces on tariff.
+  @JsonKey(name: 'max_workplace_count')
+  final int? maxWorkplaceCount;
+  @override
+
   /// Count of minimum workspaces on tariff.
-  @JsonKey(name: 'min_tariff_workplaces')
-  final int minTariffWorkplaces;
+  @JsonKey(name: 'min_workplace_count')
+  final int? minWorkplaceCount;
+  @override
+
+  /// Count of free workspaces.
+  @JsonKey(name: 'free_workplace_countt')
+  final int? freeWorkplaceCount;
   @override
 
   /// Minimum step of change count workspaces on tariff.
-  @JsonKey(name: 'min_step_workplaces')
-  final int minStepWorkplaces;
+  @JsonKey(name: 'step_increasing_workplaces')
+  final int? stepIncreasingWorkplaces;
   @override
 
   /// Disk space limit per user.
@@ -478,24 +649,9 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
   final String? diskSpaceQuotaMb;
   @override
 
-  /// Count of free workspaces.
-  @JsonKey(name: 'free_workplaces')
-  final int? freeWorkplaces;
-  @override
-
-  /// Flag of availability of free seats when exceeding FreeWorkplace.
-  @JsonKey(name: 'is_billing_free')
-  final bool? isBillingFree;
-  @override
-
-  /// Flag of accounting without looking at the number of days before the billing period.
-  @JsonKey(name: 'is_billing_full_time')
-  final bool? isBillingFullTime;
-  @override
-
-  /// Flag for accounting for unspent days when switching to a new tariff.
-  @JsonKey(name: 'is_recalc_change_tariff')
-  final bool? isRecalcChangeTariff;
+  /// Number of paid days.
+  @JsonKey(name: 'period_days')
+  final int periodDays;
   @override
 
   /// Maximum count of users in voice conference.
@@ -510,72 +666,81 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
 
   /// Bitrate of video in video co.
   @JsonKey(name: 'video_call_bitrate')
-  final int videoCallBitrate;
+  final int? videoCallBitrate;
   @override
 
   /// Bitrate of video in video sharing.
   @JsonKey(name: 'video_sharing_bitrate')
-  final int videoSharingBitrate;
+  final int? videoSharingBitrate;
+  @override
+
+  /// Flag of availability of free seats when exceeding FreeWorkplace.
+  @JsonKey(name: 'is_free')
+  final bool? isFree;
+  @override
+
+  /// Flag of publicity.
+  @JsonKey(name: 'is_public')
+  final bool? isPublic;
   @override
 
   /// Default tariff flag that is set when registering an account.
-  @JsonKey(name: 'is_default_tariff')
-  final bool? isDefaultTariff;
+  @JsonKey(name: 'is_default')
+  final bool? isDefault;
   @override
 
   /// Date of opening tariff.
   @JsonKey(name: 'open_date')
   final String? openDate;
-  @override
-
-  /// Number of paid days.
-  @JsonKey(name: 'period_days')
-  final int periodDays;
-  @override
-
-  /// Name of tariff.
-  @JsonKey(name: 'tariff_name')
-  final String tariffName;
 
   @override
   String toString() {
-    return 'CreateTariffRequest(closeDate: $closeDate, costWorkplace: $costWorkplace, currency: $currency, minTariffWorkplaces: $minTariffWorkplaces, minStepWorkplaces: $minStepWorkplaces, diskSpaceQuotaMb: $diskSpaceQuotaMb, freeWorkplaces: $freeWorkplaces, isBillingFree: $isBillingFree, isBillingFullTime: $isBillingFullTime, isRecalcChangeTariff: $isRecalcChangeTariff, maxVoiceUser: $maxVoiceUser, maxVideoUser: $maxVideoUser, videoCallBitrate: $videoCallBitrate, videoSharingBitrate: $videoSharingBitrate, isDefaultTariff: $isDefaultTariff, openDate: $openDate, periodDays: $periodDays, tariffName: $tariffName)';
+    return 'CreateTariffRequest(name: $name, nomenclatureName: $nomenclatureName, description: $description, benefit: $benefit, currency: $currency, costWorkplace: $costWorkplace, priority: $priority, maxWorkplaceCount: $maxWorkplaceCount, minWorkplaceCount: $minWorkplaceCount, freeWorkplaceCount: $freeWorkplaceCount, stepIncreasingWorkplaces: $stepIncreasingWorkplaces, diskSpaceQuotaMb: $diskSpaceQuotaMb, periodDays: $periodDays, maxVoiceUser: $maxVoiceUser, maxVideoUser: $maxVideoUser, videoCallBitrate: $videoCallBitrate, videoSharingBitrate: $videoSharingBitrate, isFree: $isFree, isPublic: $isPublic, isDefault: $isDefault, openDate: $openDate)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _CreateTariffRequest &&
-            (identical(other.closeDate, closeDate) ||
+            (identical(other.name, name) ||
+                const DeepCollectionEquality().equals(other.name, name)) &&
+            (identical(other.nomenclatureName, nomenclatureName) ||
                 const DeepCollectionEquality()
-                    .equals(other.closeDate, closeDate)) &&
-            (identical(other.costWorkplace, costWorkplace) ||
+                    .equals(other.nomenclatureName, nomenclatureName)) &&
+            (identical(other.description, description) ||
                 const DeepCollectionEquality()
-                    .equals(other.costWorkplace, costWorkplace)) &&
+                    .equals(other.description, description)) &&
+            (identical(other.benefit, benefit) ||
+                const DeepCollectionEquality()
+                    .equals(other.benefit, benefit)) &&
             (identical(other.currency, currency) ||
                 const DeepCollectionEquality()
                     .equals(other.currency, currency)) &&
-            (identical(other.minTariffWorkplaces, minTariffWorkplaces) ||
+            (identical(other.costWorkplace, costWorkplace) ||
                 const DeepCollectionEquality()
-                    .equals(other.minTariffWorkplaces, minTariffWorkplaces)) &&
-            (identical(other.minStepWorkplaces, minStepWorkplaces) ||
+                    .equals(other.costWorkplace, costWorkplace)) &&
+            (identical(other.priority, priority) ||
                 const DeepCollectionEquality()
-                    .equals(other.minStepWorkplaces, minStepWorkplaces)) &&
+                    .equals(other.priority, priority)) &&
+            (identical(other.maxWorkplaceCount, maxWorkplaceCount) ||
+                const DeepCollectionEquality()
+                    .equals(other.maxWorkplaceCount, maxWorkplaceCount)) &&
+            (identical(other.minWorkplaceCount, minWorkplaceCount) ||
+                const DeepCollectionEquality()
+                    .equals(other.minWorkplaceCount, minWorkplaceCount)) &&
+            (identical(other.freeWorkplaceCount, freeWorkplaceCount) ||
+                const DeepCollectionEquality()
+                    .equals(other.freeWorkplaceCount, freeWorkplaceCount)) &&
+            (identical(other.stepIncreasingWorkplaces, stepIncreasingWorkplaces) ||
+                const DeepCollectionEquality().equals(
+                    other.stepIncreasingWorkplaces,
+                    stepIncreasingWorkplaces)) &&
             (identical(other.diskSpaceQuotaMb, diskSpaceQuotaMb) ||
                 const DeepCollectionEquality()
                     .equals(other.diskSpaceQuotaMb, diskSpaceQuotaMb)) &&
-            (identical(other.freeWorkplaces, freeWorkplaces) ||
+            (identical(other.periodDays, periodDays) ||
                 const DeepCollectionEquality()
-                    .equals(other.freeWorkplaces, freeWorkplaces)) &&
-            (identical(other.isBillingFree, isBillingFree) ||
-                const DeepCollectionEquality()
-                    .equals(other.isBillingFree, isBillingFree)) &&
-            (identical(other.isBillingFullTime, isBillingFullTime) ||
-                const DeepCollectionEquality()
-                    .equals(other.isBillingFullTime, isBillingFullTime)) &&
-            (identical(other.isRecalcChangeTariff, isRecalcChangeTariff) ||
-                const DeepCollectionEquality().equals(
-                    other.isRecalcChangeTariff, isRecalcChangeTariff)) &&
+                    .equals(other.periodDays, periodDays)) &&
             (identical(other.maxVoiceUser, maxVoiceUser) ||
                 const DeepCollectionEquality()
                     .equals(other.maxVoiceUser, maxVoiceUser)) &&
@@ -588,41 +753,41 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
             (identical(other.videoSharingBitrate, videoSharingBitrate) ||
                 const DeepCollectionEquality()
                     .equals(other.videoSharingBitrate, videoSharingBitrate)) &&
-            (identical(other.isDefaultTariff, isDefaultTariff) ||
+            (identical(other.isFree, isFree) ||
+                const DeepCollectionEquality().equals(other.isFree, isFree)) &&
+            (identical(other.isPublic, isPublic) ||
                 const DeepCollectionEquality()
-                    .equals(other.isDefaultTariff, isDefaultTariff)) &&
-            (identical(other.openDate, openDate) ||
+                    .equals(other.isPublic, isPublic)) &&
+            (identical(other.isDefault, isDefault) ||
                 const DeepCollectionEquality()
-                    .equals(other.openDate, openDate)) &&
-            (identical(other.periodDays, periodDays) ||
-                const DeepCollectionEquality()
-                    .equals(other.periodDays, periodDays)) &&
-            (identical(other.tariffName, tariffName) ||
-                const DeepCollectionEquality()
-                    .equals(other.tariffName, tariffName)));
+                    .equals(other.isDefault, isDefault)) &&
+            (identical(other.openDate, openDate) || const DeepCollectionEquality().equals(other.openDate, openDate)));
   }
 
   @override
   int get hashCode =>
       runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(closeDate) ^
-      const DeepCollectionEquality().hash(costWorkplace) ^
+      const DeepCollectionEquality().hash(name) ^
+      const DeepCollectionEquality().hash(nomenclatureName) ^
+      const DeepCollectionEquality().hash(description) ^
+      const DeepCollectionEquality().hash(benefit) ^
       const DeepCollectionEquality().hash(currency) ^
-      const DeepCollectionEquality().hash(minTariffWorkplaces) ^
-      const DeepCollectionEquality().hash(minStepWorkplaces) ^
+      const DeepCollectionEquality().hash(costWorkplace) ^
+      const DeepCollectionEquality().hash(priority) ^
+      const DeepCollectionEquality().hash(maxWorkplaceCount) ^
+      const DeepCollectionEquality().hash(minWorkplaceCount) ^
+      const DeepCollectionEquality().hash(freeWorkplaceCount) ^
+      const DeepCollectionEquality().hash(stepIncreasingWorkplaces) ^
       const DeepCollectionEquality().hash(diskSpaceQuotaMb) ^
-      const DeepCollectionEquality().hash(freeWorkplaces) ^
-      const DeepCollectionEquality().hash(isBillingFree) ^
-      const DeepCollectionEquality().hash(isBillingFullTime) ^
-      const DeepCollectionEquality().hash(isRecalcChangeTariff) ^
+      const DeepCollectionEquality().hash(periodDays) ^
       const DeepCollectionEquality().hash(maxVoiceUser) ^
       const DeepCollectionEquality().hash(maxVideoUser) ^
       const DeepCollectionEquality().hash(videoCallBitrate) ^
       const DeepCollectionEquality().hash(videoSharingBitrate) ^
-      const DeepCollectionEquality().hash(isDefaultTariff) ^
-      const DeepCollectionEquality().hash(openDate) ^
-      const DeepCollectionEquality().hash(periodDays) ^
-      const DeepCollectionEquality().hash(tariffName);
+      const DeepCollectionEquality().hash(isFree) ^
+      const DeepCollectionEquality().hash(isPublic) ^
+      const DeepCollectionEquality().hash(isDefault) ^
+      const DeepCollectionEquality().hash(openDate);
 
   @JsonKey(ignore: true)
   @override
@@ -638,56 +803,72 @@ class _$_CreateTariffRequest implements _CreateTariffRequest {
 
 abstract class _CreateTariffRequest implements CreateTariffRequest {
   const factory _CreateTariffRequest(
-      {@JsonKey(name: 'close_date')
-          String? closeDate,
-      @JsonKey(name: 'cost_workplace')
-          String? costWorkplace,
+      {@JsonKey(name: 'name')
+          required String name,
+      @JsonKey(name: 'nomenclature_name')
+          required String nomenclatureName,
+      @JsonKey(name: 'description')
+          String? description,
+      @JsonKey(name: 'benefit')
+          String? benefit,
       @JsonKey(name: 'currency')
           required String currency,
-      @JsonKey(name: 'min_tariff_workplaces')
-          required int minTariffWorkplaces,
-      @JsonKey(name: 'min_step_workplaces')
-          required int minStepWorkplaces,
+      @JsonKey(name: 'cost_workplace')
+          required String costWorkplace,
+      @JsonKey(name: 'priority')
+          int? priority,
+      @JsonKey(name: 'max_workplace_count')
+          int? maxWorkplaceCount,
+      @JsonKey(name: 'min_workplace_count')
+          int? minWorkplaceCount,
+      @JsonKey(name: 'free_workplace_countt')
+          int? freeWorkplaceCount,
+      @JsonKey(name: 'step_increasing_workplaces')
+          int? stepIncreasingWorkplaces,
       @JsonKey(name: 'disk_space_quota_mb')
           String? diskSpaceQuotaMb,
-      @JsonKey(name: 'free_workplaces')
-          int? freeWorkplaces,
-      @JsonKey(name: 'is_billing_free')
-          bool? isBillingFree,
-      @JsonKey(name: 'is_billing_full_time')
-          bool? isBillingFullTime,
-      @JsonKey(name: 'is_recalc_change_tariff')
-          bool? isRecalcChangeTariff,
+      @JsonKey(name: 'period_days')
+          required int periodDays,
       @JsonKey(name: 'max_voice_user')
           int? maxVoiceUser,
       @JsonKey(name: 'max_video_user')
           int? maxVideoUser,
       @JsonKey(name: 'video_call_bitrate')
-          required int videoCallBitrate,
+          int? videoCallBitrate,
       @JsonKey(name: 'video_sharing_bitrate')
-          required int videoSharingBitrate,
-      @JsonKey(name: 'is_default_tariff')
-          bool? isDefaultTariff,
+          int? videoSharingBitrate,
+      @JsonKey(name: 'is_free')
+          bool? isFree,
+      @JsonKey(name: 'is_public')
+          bool? isPublic,
+      @JsonKey(name: 'is_default')
+          bool? isDefault,
       @JsonKey(name: 'open_date')
-          String? openDate,
-      @JsonKey(name: 'period_days')
-          required int periodDays,
-      @JsonKey(name: 'tariff_name')
-          required String tariffName}) = _$_CreateTariffRequest;
+          String? openDate}) = _$_CreateTariffRequest;
 
   factory _CreateTariffRequest.fromJson(Map<String, dynamic> json) =
       _$_CreateTariffRequest.fromJson;
 
   @override
 
-  /// Date of closing tariff.
-  @JsonKey(name: 'close_date')
-  String? get closeDate => throw _privateConstructorUsedError;
+  /// Name of tariff.
+  @JsonKey(name: 'name')
+  String get name => throw _privateConstructorUsedError;
   @override
 
-  /// Cost of one workplace.
-  @JsonKey(name: 'cost_workplace')
-  String? get costWorkplace => throw _privateConstructorUsedError;
+  /// Nomenclature name of tariff.
+  @JsonKey(name: 'nomenclature_name')
+  String get nomenclatureName => throw _privateConstructorUsedError;
+  @override
+
+  /// Description of tariff.
+  @JsonKey(name: 'description')
+  String? get description => throw _privateConstructorUsedError;
+  @override
+
+  /// Benefit of tariff.
+  @JsonKey(name: 'benefit')
+  String? get benefit => throw _privateConstructorUsedError;
   @override
 
   /// Currency of tariff.
@@ -695,14 +876,34 @@ abstract class _CreateTariffRequest implements CreateTariffRequest {
   String get currency => throw _privateConstructorUsedError;
   @override
 
+  /// Cost of one workplace.
+  @JsonKey(name: 'cost_workplace')
+  String get costWorkplace => throw _privateConstructorUsedError;
+  @override
+
+  /// Priority of tariff.
+  @JsonKey(name: 'priority')
+  int? get priority => throw _privateConstructorUsedError;
+  @override
+
+  /// Count of maximum workspaces on tariff.
+  @JsonKey(name: 'max_workplace_count')
+  int? get maxWorkplaceCount => throw _privateConstructorUsedError;
+  @override
+
   /// Count of minimum workspaces on tariff.
-  @JsonKey(name: 'min_tariff_workplaces')
-  int get minTariffWorkplaces => throw _privateConstructorUsedError;
+  @JsonKey(name: 'min_workplace_count')
+  int? get minWorkplaceCount => throw _privateConstructorUsedError;
+  @override
+
+  /// Count of free workspaces.
+  @JsonKey(name: 'free_workplace_countt')
+  int? get freeWorkplaceCount => throw _privateConstructorUsedError;
   @override
 
   /// Minimum step of change count workspaces on tariff.
-  @JsonKey(name: 'min_step_workplaces')
-  int get minStepWorkplaces => throw _privateConstructorUsedError;
+  @JsonKey(name: 'step_increasing_workplaces')
+  int? get stepIncreasingWorkplaces => throw _privateConstructorUsedError;
   @override
 
   /// Disk space limit per user.
@@ -710,24 +911,9 @@ abstract class _CreateTariffRequest implements CreateTariffRequest {
   String? get diskSpaceQuotaMb => throw _privateConstructorUsedError;
   @override
 
-  /// Count of free workspaces.
-  @JsonKey(name: 'free_workplaces')
-  int? get freeWorkplaces => throw _privateConstructorUsedError;
-  @override
-
-  /// Flag of availability of free seats when exceeding FreeWorkplace.
-  @JsonKey(name: 'is_billing_free')
-  bool? get isBillingFree => throw _privateConstructorUsedError;
-  @override
-
-  /// Flag of accounting without looking at the number of days before the billing period.
-  @JsonKey(name: 'is_billing_full_time')
-  bool? get isBillingFullTime => throw _privateConstructorUsedError;
-  @override
-
-  /// Flag for accounting for unspent days when switching to a new tariff.
-  @JsonKey(name: 'is_recalc_change_tariff')
-  bool? get isRecalcChangeTariff => throw _privateConstructorUsedError;
+  /// Number of paid days.
+  @JsonKey(name: 'period_days')
+  int get periodDays => throw _privateConstructorUsedError;
   @override
 
   /// Maximum count of users in voice conference.
@@ -742,32 +928,32 @@ abstract class _CreateTariffRequest implements CreateTariffRequest {
 
   /// Bitrate of video in video co.
   @JsonKey(name: 'video_call_bitrate')
-  int get videoCallBitrate => throw _privateConstructorUsedError;
+  int? get videoCallBitrate => throw _privateConstructorUsedError;
   @override
 
   /// Bitrate of video in video sharing.
   @JsonKey(name: 'video_sharing_bitrate')
-  int get videoSharingBitrate => throw _privateConstructorUsedError;
+  int? get videoSharingBitrate => throw _privateConstructorUsedError;
+  @override
+
+  /// Flag of availability of free seats when exceeding FreeWorkplace.
+  @JsonKey(name: 'is_free')
+  bool? get isFree => throw _privateConstructorUsedError;
+  @override
+
+  /// Flag of publicity.
+  @JsonKey(name: 'is_public')
+  bool? get isPublic => throw _privateConstructorUsedError;
   @override
 
   /// Default tariff flag that is set when registering an account.
-  @JsonKey(name: 'is_default_tariff')
-  bool? get isDefaultTariff => throw _privateConstructorUsedError;
+  @JsonKey(name: 'is_default')
+  bool? get isDefault => throw _privateConstructorUsedError;
   @override
 
   /// Date of opening tariff.
   @JsonKey(name: 'open_date')
   String? get openDate => throw _privateConstructorUsedError;
-  @override
-
-  /// Number of paid days.
-  @JsonKey(name: 'period_days')
-  int get periodDays => throw _privateConstructorUsedError;
-  @override
-
-  /// Name of tariff.
-  @JsonKey(name: 'tariff_name')
-  String get tariffName => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$CreateTariffRequestCopyWith<_CreateTariffRequest> get copyWith =>
