@@ -9,49 +9,52 @@ part 'create_personal_account_response.g.dart';
 class CreatePersonalAccountResponse with _$CreatePersonalAccountResponse {
   const factory CreatePersonalAccountResponse({
     /// PersonalAccountBilling ID.
-    @JsonKey(name: 'personal_account_id') required String personalAccountId,
-    
-    /// Full name of owner personal account.
-    @JsonKey(name: 'full_name') String? fullName,
-    
-    /// Phone number of owner account.
-    @JsonKey(name: 'phone') String? phone,
+    @JsonKey(name: 'personal_account_id') required int personalAccountId,
     
     /// ID User who owns this personal account.
+    @JsonKey(name: 'owner_id') required int ownerID,
+    
+    /// UUID of User who owns this personal account.
     @JsonKey(name: 'owner_uuid') required String ownerUuid,
     
-    /// ID Tariff on this personal account.
-    @JsonKey(name: 'tariff_id') required String tariffId,
-    
-    /// Name Tariff on this personal account.
-    @JsonKey(name: 'tariff_name') required String tariffName,
-    
-    /// ID Discount on personal account.
-    @JsonKey(name: 'discount_id') required String discountId,
-    
-    /// Amount of Discount on personal account.
-    @JsonKey(name: 'discount_amount') required int discountAmount,
-    
-    /// Status of personal account.
-    @JsonKey(name: 'status') required String status,
-    
-    /// Date of next debiting funds.
-    @JsonKey(name: 'next_billing_date') required String nextBillingDate,
-    
     /// Count of teams on personal account.
-    @JsonKey(name: 'team_count') required int teamCount,
+    @JsonKey(name: 'teams_count') required int teamsCount,
     
     /// Count of workplaces on personal account.
     @JsonKey(name: 'workplace_count') required int workplaceCount,
     
-    /// Count of user on personal account.
-    @JsonKey(name: 'users_count') required int usersCount,
+    /// Count of empty workplaces on personal account.
+    @JsonKey(name: 'empty_workplace_count') required int emptyWorkplaceCount,
+    
+    /// Count of occupied workplaces on personal account.
+    @JsonKey(name: 'occupied_workplace_count') required int occupiedWorkplaceCount,
     
     /// Count of free workplaces on personal account.
-    @JsonKey(name: 'free_workplaces') required int freeWorkplaces,
+    @JsonKey(name: 'free_workplace_count') required int freeWorkplaceCount,
     
     /// Count of paid workplaces on personal account.
-    @JsonKey(name: 'paid_workplaces') required int paidWorkplaces,
+    @JsonKey(name: 'paid_workplace_count') required int paidWorkplaceCount,
+    
+    /// Is the account blocked.
+    @JsonKey(name: 'is_blocked') required bool isBlocked,
+    
+    /// Is the account suspended.
+    @JsonKey(name: 'is_suspended') required bool isSuspended,
+    
+    /// Date of next debiting funds.
+    @JsonKey(name: 'next_billing_date') String? nextBillingDate,
+    
+    /// Account blocking date.
+    @JsonKey(name: 'block_date') String? blockDate,
+    
+    /// Account suspending date.
+    @JsonKey(name: 'suspend_date') String? suspendDate,
+    
+    /// Status of personal account.
+    @JsonKey(name: 'status') required String status,
+    
+    /// Tariff on this personal account.
+    @JsonKey(name: 'tariff') required TariffBilling tariff,
     
     
   }) = _CreatePersonalAccountResponse;

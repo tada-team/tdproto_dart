@@ -30,7 +30,7 @@ class TariffBilling with _$TariffBilling {
     @JsonKey(name: 'priority') int? priority,
     
     /// Cost of one workplace.
-    @JsonKey(name: 'cost_workplace') required String costWorkplace,
+    @JsonKey(name: 'cost_workplace') required double costWorkplace,
     
     /// Count of maximum workspaces on tariff.
     @JsonKey(name: 'max_workplace_count') int? maxWorkplaceCount,
@@ -45,7 +45,7 @@ class TariffBilling with _$TariffBilling {
     @JsonKey(name: 'step_increasing_workplaces') required int stepIncreasingWorkplaces,
     
     /// Disk space limit per user.
-    @JsonKey(name: 'disk_space_quota_mb') required String diskSpaceQuotaMb,
+    @JsonKey(name: 'disk_space_quota_mb') required double diskSpaceQuotaMb,
     
     /// Number of paid days.
     @JsonKey(name: 'period_days') required int periodDays,

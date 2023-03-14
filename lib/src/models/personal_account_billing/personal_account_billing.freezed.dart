@@ -23,37 +23,55 @@ class _$PersonalAccountBillingTearOff {
   const _$PersonalAccountBillingTearOff();
 
   _PersonalAccountBilling call(
-      {@JsonKey(name: 'personal_account_id') required String personalAccountId,
-      @JsonKey(name: 'full_name') String? fullName,
-      @JsonKey(name: 'phone') String? phone,
-      @JsonKey(name: 'owner_uuid') required String ownerUuid,
-      @JsonKey(name: 'tariff_id') required String tariffId,
-      @JsonKey(name: 'tariff_name') required String tariffName,
-      @JsonKey(name: 'discount_id') required String discountId,
-      @JsonKey(name: 'discount_amount') required int discountAmount,
-      @JsonKey(name: 'status') required String status,
-      @JsonKey(name: 'next_billing_date') required String nextBillingDate,
-      @JsonKey(name: 'team_count') required int teamCount,
-      @JsonKey(name: 'workplace_count') required int workplaceCount,
-      @JsonKey(name: 'users_count') required int usersCount,
-      @JsonKey(name: 'free_workplaces') required int freeWorkplaces,
-      @JsonKey(name: 'paid_workplaces') required int paidWorkplaces}) {
+      {@JsonKey(name: 'personal_account_id')
+          required int personalAccountId,
+      @JsonKey(name: 'owner_id')
+          required int ownerID,
+      @JsonKey(name: 'owner_uuid')
+          required String ownerUuid,
+      @JsonKey(name: 'teams_count')
+          required int teamsCount,
+      @JsonKey(name: 'workplace_count')
+          required int workplaceCount,
+      @JsonKey(name: 'empty_workplace_count')
+          required int emptyWorkplaceCount,
+      @JsonKey(name: 'occupied_workplace_count')
+          required int occupiedWorkplaceCount,
+      @JsonKey(name: 'free_workplace_count')
+          required int freeWorkplaceCount,
+      @JsonKey(name: 'paid_workplace_count')
+          required int paidWorkplaceCount,
+      @JsonKey(name: 'is_blocked')
+          required bool isBlocked,
+      @JsonKey(name: 'is_suspended')
+          required bool isSuspended,
+      @JsonKey(name: 'next_billing_date')
+          String? nextBillingDate,
+      @JsonKey(name: 'block_date')
+          String? blockDate,
+      @JsonKey(name: 'suspend_date')
+          String? suspendDate,
+      @JsonKey(name: 'status')
+          required String status,
+      @JsonKey(name: 'tariff')
+          required TariffBilling tariff}) {
     return _PersonalAccountBilling(
       personalAccountId: personalAccountId,
-      fullName: fullName,
-      phone: phone,
+      ownerID: ownerID,
       ownerUuid: ownerUuid,
-      tariffId: tariffId,
-      tariffName: tariffName,
-      discountId: discountId,
-      discountAmount: discountAmount,
-      status: status,
-      nextBillingDate: nextBillingDate,
-      teamCount: teamCount,
+      teamsCount: teamsCount,
       workplaceCount: workplaceCount,
-      usersCount: usersCount,
-      freeWorkplaces: freeWorkplaces,
-      paidWorkplaces: paidWorkplaces,
+      emptyWorkplaceCount: emptyWorkplaceCount,
+      occupiedWorkplaceCount: occupiedWorkplaceCount,
+      freeWorkplaceCount: freeWorkplaceCount,
+      paidWorkplaceCount: paidWorkplaceCount,
+      isBlocked: isBlocked,
+      isSuspended: isSuspended,
+      nextBillingDate: nextBillingDate,
+      blockDate: blockDate,
+      suspendDate: suspendDate,
+      status: status,
+      tariff: tariff,
     );
   }
 
@@ -69,63 +87,67 @@ const $PersonalAccountBilling = _$PersonalAccountBillingTearOff();
 mixin _$PersonalAccountBilling {
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  String get personalAccountId => throw _privateConstructorUsedError;
-
-  /// Full name of owner personal account.
-  @JsonKey(name: 'full_name')
-  String? get fullName => throw _privateConstructorUsedError;
-
-  /// Phone number of owner account.
-  @JsonKey(name: 'phone')
-  String? get phone => throw _privateConstructorUsedError;
+  int get personalAccountId => throw _privateConstructorUsedError;
 
   /// ID User who owns this personal account.
+  @JsonKey(name: 'owner_id')
+  int get ownerID => throw _privateConstructorUsedError;
+
+  /// UUID of User who owns this personal account.
   @JsonKey(name: 'owner_uuid')
   String get ownerUuid => throw _privateConstructorUsedError;
 
-  /// ID Tariff on this personal account.
-  @JsonKey(name: 'tariff_id')
-  String get tariffId => throw _privateConstructorUsedError;
-
-  /// Name Tariff on this personal account.
-  @JsonKey(name: 'tariff_name')
-  String get tariffName => throw _privateConstructorUsedError;
-
-  /// ID Discount on personal account.
-  @JsonKey(name: 'discount_id')
-  String get discountId => throw _privateConstructorUsedError;
-
-  /// Amount of Discount on personal account.
-  @JsonKey(name: 'discount_amount')
-  int get discountAmount => throw _privateConstructorUsedError;
-
-  /// Status of personal account.
-  @JsonKey(name: 'status')
-  String get status => throw _privateConstructorUsedError;
-
-  /// Date of next debiting funds.
-  @JsonKey(name: 'next_billing_date')
-  String get nextBillingDate => throw _privateConstructorUsedError;
-
   /// Count of teams on personal account.
-  @JsonKey(name: 'team_count')
-  int get teamCount => throw _privateConstructorUsedError;
+  @JsonKey(name: 'teams_count')
+  int get teamsCount => throw _privateConstructorUsedError;
 
   /// Count of workplaces on personal account.
   @JsonKey(name: 'workplace_count')
   int get workplaceCount => throw _privateConstructorUsedError;
 
-  /// Count of user on personal account.
-  @JsonKey(name: 'users_count')
-  int get usersCount => throw _privateConstructorUsedError;
+  /// Count of empty workplaces on personal account.
+  @JsonKey(name: 'empty_workplace_count')
+  int get emptyWorkplaceCount => throw _privateConstructorUsedError;
+
+  /// Count of occupied workplaces on personal account.
+  @JsonKey(name: 'occupied_workplace_count')
+  int get occupiedWorkplaceCount => throw _privateConstructorUsedError;
 
   /// Count of free workplaces on personal account.
-  @JsonKey(name: 'free_workplaces')
-  int get freeWorkplaces => throw _privateConstructorUsedError;
+  @JsonKey(name: 'free_workplace_count')
+  int get freeWorkplaceCount => throw _privateConstructorUsedError;
 
   /// Count of paid workplaces on personal account.
-  @JsonKey(name: 'paid_workplaces')
-  int get paidWorkplaces => throw _privateConstructorUsedError;
+  @JsonKey(name: 'paid_workplace_count')
+  int get paidWorkplaceCount => throw _privateConstructorUsedError;
+
+  /// Is the account blocked.
+  @JsonKey(name: 'is_blocked')
+  bool get isBlocked => throw _privateConstructorUsedError;
+
+  /// Is the account suspended.
+  @JsonKey(name: 'is_suspended')
+  bool get isSuspended => throw _privateConstructorUsedError;
+
+  /// Date of next debiting funds.
+  @JsonKey(name: 'next_billing_date')
+  String? get nextBillingDate => throw _privateConstructorUsedError;
+
+  /// Account blocking date.
+  @JsonKey(name: 'block_date')
+  String? get blockDate => throw _privateConstructorUsedError;
+
+  /// Account suspending date.
+  @JsonKey(name: 'suspend_date')
+  String? get suspendDate => throw _privateConstructorUsedError;
+
+  /// Status of personal account.
+  @JsonKey(name: 'status')
+  String get status => throw _privateConstructorUsedError;
+
+  /// Tariff on this personal account.
+  @JsonKey(name: 'tariff')
+  TariffBilling get tariff => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -139,21 +161,24 @@ abstract class $PersonalAccountBillingCopyWith<$Res> {
           $Res Function(PersonalAccountBilling) then) =
       _$PersonalAccountBillingCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') String personalAccountId,
-      @JsonKey(name: 'full_name') String? fullName,
-      @JsonKey(name: 'phone') String? phone,
+      {@JsonKey(name: 'personal_account_id') int personalAccountId,
+      @JsonKey(name: 'owner_id') int ownerID,
       @JsonKey(name: 'owner_uuid') String ownerUuid,
-      @JsonKey(name: 'tariff_id') String tariffId,
-      @JsonKey(name: 'tariff_name') String tariffName,
-      @JsonKey(name: 'discount_id') String discountId,
-      @JsonKey(name: 'discount_amount') int discountAmount,
-      @JsonKey(name: 'status') String status,
-      @JsonKey(name: 'next_billing_date') String nextBillingDate,
-      @JsonKey(name: 'team_count') int teamCount,
+      @JsonKey(name: 'teams_count') int teamsCount,
       @JsonKey(name: 'workplace_count') int workplaceCount,
-      @JsonKey(name: 'users_count') int usersCount,
-      @JsonKey(name: 'free_workplaces') int freeWorkplaces,
-      @JsonKey(name: 'paid_workplaces') int paidWorkplaces});
+      @JsonKey(name: 'empty_workplace_count') int emptyWorkplaceCount,
+      @JsonKey(name: 'occupied_workplace_count') int occupiedWorkplaceCount,
+      @JsonKey(name: 'free_workplace_count') int freeWorkplaceCount,
+      @JsonKey(name: 'paid_workplace_count') int paidWorkplaceCount,
+      @JsonKey(name: 'is_blocked') bool isBlocked,
+      @JsonKey(name: 'is_suspended') bool isSuspended,
+      @JsonKey(name: 'next_billing_date') String? nextBillingDate,
+      @JsonKey(name: 'block_date') String? blockDate,
+      @JsonKey(name: 'suspend_date') String? suspendDate,
+      @JsonKey(name: 'status') String status,
+      @JsonKey(name: 'tariff') TariffBilling tariff});
+
+  $TariffBillingCopyWith<$Res> get tariff;
 }
 
 /// @nodoc
@@ -168,83 +193,95 @@ class _$PersonalAccountBillingCopyWithImpl<$Res>
   @override
   $Res call({
     Object? personalAccountId = freezed,
-    Object? fullName = freezed,
-    Object? phone = freezed,
+    Object? ownerID = freezed,
     Object? ownerUuid = freezed,
-    Object? tariffId = freezed,
-    Object? tariffName = freezed,
-    Object? discountId = freezed,
-    Object? discountAmount = freezed,
-    Object? status = freezed,
-    Object? nextBillingDate = freezed,
-    Object? teamCount = freezed,
+    Object? teamsCount = freezed,
     Object? workplaceCount = freezed,
-    Object? usersCount = freezed,
-    Object? freeWorkplaces = freezed,
-    Object? paidWorkplaces = freezed,
+    Object? emptyWorkplaceCount = freezed,
+    Object? occupiedWorkplaceCount = freezed,
+    Object? freeWorkplaceCount = freezed,
+    Object? paidWorkplaceCount = freezed,
+    Object? isBlocked = freezed,
+    Object? isSuspended = freezed,
+    Object? nextBillingDate = freezed,
+    Object? blockDate = freezed,
+    Object? suspendDate = freezed,
+    Object? status = freezed,
+    Object? tariff = freezed,
   }) {
     return _then(_value.copyWith(
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String,
-      fullName: fullName == freezed
-          ? _value.fullName
-          : fullName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      phone: phone == freezed
-          ? _value.phone
-          : phone // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as int,
+      ownerID: ownerID == freezed
+          ? _value.ownerID
+          : ownerID // ignore: cast_nullable_to_non_nullable
+              as int,
       ownerUuid: ownerUuid == freezed
           ? _value.ownerUuid
           : ownerUuid // ignore: cast_nullable_to_non_nullable
               as String,
-      tariffId: tariffId == freezed
-          ? _value.tariffId
-          : tariffId // ignore: cast_nullable_to_non_nullable
-              as String,
-      tariffName: tariffName == freezed
-          ? _value.tariffName
-          : tariffName // ignore: cast_nullable_to_non_nullable
-              as String,
-      discountId: discountId == freezed
-          ? _value.discountId
-          : discountId // ignore: cast_nullable_to_non_nullable
-              as String,
-      discountAmount: discountAmount == freezed
-          ? _value.discountAmount
-          : discountAmount // ignore: cast_nullable_to_non_nullable
-              as int,
-      status: status == freezed
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as String,
-      nextBillingDate: nextBillingDate == freezed
-          ? _value.nextBillingDate
-          : nextBillingDate // ignore: cast_nullable_to_non_nullable
-              as String,
-      teamCount: teamCount == freezed
-          ? _value.teamCount
-          : teamCount // ignore: cast_nullable_to_non_nullable
+      teamsCount: teamsCount == freezed
+          ? _value.teamsCount
+          : teamsCount // ignore: cast_nullable_to_non_nullable
               as int,
       workplaceCount: workplaceCount == freezed
           ? _value.workplaceCount
           : workplaceCount // ignore: cast_nullable_to_non_nullable
               as int,
-      usersCount: usersCount == freezed
-          ? _value.usersCount
-          : usersCount // ignore: cast_nullable_to_non_nullable
+      emptyWorkplaceCount: emptyWorkplaceCount == freezed
+          ? _value.emptyWorkplaceCount
+          : emptyWorkplaceCount // ignore: cast_nullable_to_non_nullable
               as int,
-      freeWorkplaces: freeWorkplaces == freezed
-          ? _value.freeWorkplaces
-          : freeWorkplaces // ignore: cast_nullable_to_non_nullable
+      occupiedWorkplaceCount: occupiedWorkplaceCount == freezed
+          ? _value.occupiedWorkplaceCount
+          : occupiedWorkplaceCount // ignore: cast_nullable_to_non_nullable
               as int,
-      paidWorkplaces: paidWorkplaces == freezed
-          ? _value.paidWorkplaces
-          : paidWorkplaces // ignore: cast_nullable_to_non_nullable
+      freeWorkplaceCount: freeWorkplaceCount == freezed
+          ? _value.freeWorkplaceCount
+          : freeWorkplaceCount // ignore: cast_nullable_to_non_nullable
               as int,
+      paidWorkplaceCount: paidWorkplaceCount == freezed
+          ? _value.paidWorkplaceCount
+          : paidWorkplaceCount // ignore: cast_nullable_to_non_nullable
+              as int,
+      isBlocked: isBlocked == freezed
+          ? _value.isBlocked
+          : isBlocked // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isSuspended: isSuspended == freezed
+          ? _value.isSuspended
+          : isSuspended // ignore: cast_nullable_to_non_nullable
+              as bool,
+      nextBillingDate: nextBillingDate == freezed
+          ? _value.nextBillingDate
+          : nextBillingDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      blockDate: blockDate == freezed
+          ? _value.blockDate
+          : blockDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      suspendDate: suspendDate == freezed
+          ? _value.suspendDate
+          : suspendDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: status == freezed
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as String,
+      tariff: tariff == freezed
+          ? _value.tariff
+          : tariff // ignore: cast_nullable_to_non_nullable
+              as TariffBilling,
     ));
+  }
+
+  @override
+  $TariffBillingCopyWith<$Res> get tariff {
+    return $TariffBillingCopyWith<$Res>(_value.tariff, (value) {
+      return _then(_value.copyWith(tariff: value));
+    });
   }
 }
 
@@ -256,21 +293,25 @@ abstract class _$PersonalAccountBillingCopyWith<$Res>
       __$PersonalAccountBillingCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') String personalAccountId,
-      @JsonKey(name: 'full_name') String? fullName,
-      @JsonKey(name: 'phone') String? phone,
+      {@JsonKey(name: 'personal_account_id') int personalAccountId,
+      @JsonKey(name: 'owner_id') int ownerID,
       @JsonKey(name: 'owner_uuid') String ownerUuid,
-      @JsonKey(name: 'tariff_id') String tariffId,
-      @JsonKey(name: 'tariff_name') String tariffName,
-      @JsonKey(name: 'discount_id') String discountId,
-      @JsonKey(name: 'discount_amount') int discountAmount,
-      @JsonKey(name: 'status') String status,
-      @JsonKey(name: 'next_billing_date') String nextBillingDate,
-      @JsonKey(name: 'team_count') int teamCount,
+      @JsonKey(name: 'teams_count') int teamsCount,
       @JsonKey(name: 'workplace_count') int workplaceCount,
-      @JsonKey(name: 'users_count') int usersCount,
-      @JsonKey(name: 'free_workplaces') int freeWorkplaces,
-      @JsonKey(name: 'paid_workplaces') int paidWorkplaces});
+      @JsonKey(name: 'empty_workplace_count') int emptyWorkplaceCount,
+      @JsonKey(name: 'occupied_workplace_count') int occupiedWorkplaceCount,
+      @JsonKey(name: 'free_workplace_count') int freeWorkplaceCount,
+      @JsonKey(name: 'paid_workplace_count') int paidWorkplaceCount,
+      @JsonKey(name: 'is_blocked') bool isBlocked,
+      @JsonKey(name: 'is_suspended') bool isSuspended,
+      @JsonKey(name: 'next_billing_date') String? nextBillingDate,
+      @JsonKey(name: 'block_date') String? blockDate,
+      @JsonKey(name: 'suspend_date') String? suspendDate,
+      @JsonKey(name: 'status') String status,
+      @JsonKey(name: 'tariff') TariffBilling tariff});
+
+  @override
+  $TariffBillingCopyWith<$Res> get tariff;
 }
 
 /// @nodoc
@@ -287,82 +328,87 @@ class __$PersonalAccountBillingCopyWithImpl<$Res>
   @override
   $Res call({
     Object? personalAccountId = freezed,
-    Object? fullName = freezed,
-    Object? phone = freezed,
+    Object? ownerID = freezed,
     Object? ownerUuid = freezed,
-    Object? tariffId = freezed,
-    Object? tariffName = freezed,
-    Object? discountId = freezed,
-    Object? discountAmount = freezed,
-    Object? status = freezed,
-    Object? nextBillingDate = freezed,
-    Object? teamCount = freezed,
+    Object? teamsCount = freezed,
     Object? workplaceCount = freezed,
-    Object? usersCount = freezed,
-    Object? freeWorkplaces = freezed,
-    Object? paidWorkplaces = freezed,
+    Object? emptyWorkplaceCount = freezed,
+    Object? occupiedWorkplaceCount = freezed,
+    Object? freeWorkplaceCount = freezed,
+    Object? paidWorkplaceCount = freezed,
+    Object? isBlocked = freezed,
+    Object? isSuspended = freezed,
+    Object? nextBillingDate = freezed,
+    Object? blockDate = freezed,
+    Object? suspendDate = freezed,
+    Object? status = freezed,
+    Object? tariff = freezed,
   }) {
     return _then(_PersonalAccountBilling(
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as String,
-      fullName: fullName == freezed
-          ? _value.fullName
-          : fullName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      phone: phone == freezed
-          ? _value.phone
-          : phone // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as int,
+      ownerID: ownerID == freezed
+          ? _value.ownerID
+          : ownerID // ignore: cast_nullable_to_non_nullable
+              as int,
       ownerUuid: ownerUuid == freezed
           ? _value.ownerUuid
           : ownerUuid // ignore: cast_nullable_to_non_nullable
               as String,
-      tariffId: tariffId == freezed
-          ? _value.tariffId
-          : tariffId // ignore: cast_nullable_to_non_nullable
-              as String,
-      tariffName: tariffName == freezed
-          ? _value.tariffName
-          : tariffName // ignore: cast_nullable_to_non_nullable
-              as String,
-      discountId: discountId == freezed
-          ? _value.discountId
-          : discountId // ignore: cast_nullable_to_non_nullable
-              as String,
-      discountAmount: discountAmount == freezed
-          ? _value.discountAmount
-          : discountAmount // ignore: cast_nullable_to_non_nullable
-              as int,
-      status: status == freezed
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as String,
-      nextBillingDate: nextBillingDate == freezed
-          ? _value.nextBillingDate
-          : nextBillingDate // ignore: cast_nullable_to_non_nullable
-              as String,
-      teamCount: teamCount == freezed
-          ? _value.teamCount
-          : teamCount // ignore: cast_nullable_to_non_nullable
+      teamsCount: teamsCount == freezed
+          ? _value.teamsCount
+          : teamsCount // ignore: cast_nullable_to_non_nullable
               as int,
       workplaceCount: workplaceCount == freezed
           ? _value.workplaceCount
           : workplaceCount // ignore: cast_nullable_to_non_nullable
               as int,
-      usersCount: usersCount == freezed
-          ? _value.usersCount
-          : usersCount // ignore: cast_nullable_to_non_nullable
+      emptyWorkplaceCount: emptyWorkplaceCount == freezed
+          ? _value.emptyWorkplaceCount
+          : emptyWorkplaceCount // ignore: cast_nullable_to_non_nullable
               as int,
-      freeWorkplaces: freeWorkplaces == freezed
-          ? _value.freeWorkplaces
-          : freeWorkplaces // ignore: cast_nullable_to_non_nullable
+      occupiedWorkplaceCount: occupiedWorkplaceCount == freezed
+          ? _value.occupiedWorkplaceCount
+          : occupiedWorkplaceCount // ignore: cast_nullable_to_non_nullable
               as int,
-      paidWorkplaces: paidWorkplaces == freezed
-          ? _value.paidWorkplaces
-          : paidWorkplaces // ignore: cast_nullable_to_non_nullable
+      freeWorkplaceCount: freeWorkplaceCount == freezed
+          ? _value.freeWorkplaceCount
+          : freeWorkplaceCount // ignore: cast_nullable_to_non_nullable
               as int,
+      paidWorkplaceCount: paidWorkplaceCount == freezed
+          ? _value.paidWorkplaceCount
+          : paidWorkplaceCount // ignore: cast_nullable_to_non_nullable
+              as int,
+      isBlocked: isBlocked == freezed
+          ? _value.isBlocked
+          : isBlocked // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isSuspended: isSuspended == freezed
+          ? _value.isSuspended
+          : isSuspended // ignore: cast_nullable_to_non_nullable
+              as bool,
+      nextBillingDate: nextBillingDate == freezed
+          ? _value.nextBillingDate
+          : nextBillingDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      blockDate: blockDate == freezed
+          ? _value.blockDate
+          : blockDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      suspendDate: suspendDate == freezed
+          ? _value.suspendDate
+          : suspendDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: status == freezed
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as String,
+      tariff: tariff == freezed
+          ? _value.tariff
+          : tariff // ignore: cast_nullable_to_non_nullable
+              as TariffBilling,
     ));
   }
 }
@@ -371,21 +417,38 @@ class __$PersonalAccountBillingCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_PersonalAccountBilling implements _PersonalAccountBilling {
   const _$_PersonalAccountBilling(
-      {@JsonKey(name: 'personal_account_id') required this.personalAccountId,
-      @JsonKey(name: 'full_name') this.fullName,
-      @JsonKey(name: 'phone') this.phone,
-      @JsonKey(name: 'owner_uuid') required this.ownerUuid,
-      @JsonKey(name: 'tariff_id') required this.tariffId,
-      @JsonKey(name: 'tariff_name') required this.tariffName,
-      @JsonKey(name: 'discount_id') required this.discountId,
-      @JsonKey(name: 'discount_amount') required this.discountAmount,
-      @JsonKey(name: 'status') required this.status,
-      @JsonKey(name: 'next_billing_date') required this.nextBillingDate,
-      @JsonKey(name: 'team_count') required this.teamCount,
-      @JsonKey(name: 'workplace_count') required this.workplaceCount,
-      @JsonKey(name: 'users_count') required this.usersCount,
-      @JsonKey(name: 'free_workplaces') required this.freeWorkplaces,
-      @JsonKey(name: 'paid_workplaces') required this.paidWorkplaces});
+      {@JsonKey(name: 'personal_account_id')
+          required this.personalAccountId,
+      @JsonKey(name: 'owner_id')
+          required this.ownerID,
+      @JsonKey(name: 'owner_uuid')
+          required this.ownerUuid,
+      @JsonKey(name: 'teams_count')
+          required this.teamsCount,
+      @JsonKey(name: 'workplace_count')
+          required this.workplaceCount,
+      @JsonKey(name: 'empty_workplace_count')
+          required this.emptyWorkplaceCount,
+      @JsonKey(name: 'occupied_workplace_count')
+          required this.occupiedWorkplaceCount,
+      @JsonKey(name: 'free_workplace_count')
+          required this.freeWorkplaceCount,
+      @JsonKey(name: 'paid_workplace_count')
+          required this.paidWorkplaceCount,
+      @JsonKey(name: 'is_blocked')
+          required this.isBlocked,
+      @JsonKey(name: 'is_suspended')
+          required this.isSuspended,
+      @JsonKey(name: 'next_billing_date')
+          this.nextBillingDate,
+      @JsonKey(name: 'block_date')
+          this.blockDate,
+      @JsonKey(name: 'suspend_date')
+          this.suspendDate,
+      @JsonKey(name: 'status')
+          required this.status,
+      @JsonKey(name: 'tariff')
+          required this.tariff});
 
   factory _$_PersonalAccountBilling.fromJson(Map<String, dynamic> json) =>
       _$$_PersonalAccountBillingFromJson(json);
@@ -394,57 +457,22 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
 
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  final String personalAccountId;
-  @override
-
-  /// Full name of owner personal account.
-  @JsonKey(name: 'full_name')
-  final String? fullName;
-  @override
-
-  /// Phone number of owner account.
-  @JsonKey(name: 'phone')
-  final String? phone;
+  final int personalAccountId;
   @override
 
   /// ID User who owns this personal account.
+  @JsonKey(name: 'owner_id')
+  final int ownerID;
+  @override
+
+  /// UUID of User who owns this personal account.
   @JsonKey(name: 'owner_uuid')
   final String ownerUuid;
   @override
 
-  /// ID Tariff on this personal account.
-  @JsonKey(name: 'tariff_id')
-  final String tariffId;
-  @override
-
-  /// Name Tariff on this personal account.
-  @JsonKey(name: 'tariff_name')
-  final String tariffName;
-  @override
-
-  /// ID Discount on personal account.
-  @JsonKey(name: 'discount_id')
-  final String discountId;
-  @override
-
-  /// Amount of Discount on personal account.
-  @JsonKey(name: 'discount_amount')
-  final int discountAmount;
-  @override
-
-  /// Status of personal account.
-  @JsonKey(name: 'status')
-  final String status;
-  @override
-
-  /// Date of next debiting funds.
-  @JsonKey(name: 'next_billing_date')
-  final String nextBillingDate;
-  @override
-
   /// Count of teams on personal account.
-  @JsonKey(name: 'team_count')
-  final int teamCount;
+  @JsonKey(name: 'teams_count')
+  final int teamsCount;
   @override
 
   /// Count of workplaces on personal account.
@@ -452,23 +480,63 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
   final int workplaceCount;
   @override
 
-  /// Count of user on personal account.
-  @JsonKey(name: 'users_count')
-  final int usersCount;
+  /// Count of empty workplaces on personal account.
+  @JsonKey(name: 'empty_workplace_count')
+  final int emptyWorkplaceCount;
+  @override
+
+  /// Count of occupied workplaces on personal account.
+  @JsonKey(name: 'occupied_workplace_count')
+  final int occupiedWorkplaceCount;
   @override
 
   /// Count of free workplaces on personal account.
-  @JsonKey(name: 'free_workplaces')
-  final int freeWorkplaces;
+  @JsonKey(name: 'free_workplace_count')
+  final int freeWorkplaceCount;
   @override
 
   /// Count of paid workplaces on personal account.
-  @JsonKey(name: 'paid_workplaces')
-  final int paidWorkplaces;
+  @JsonKey(name: 'paid_workplace_count')
+  final int paidWorkplaceCount;
+  @override
+
+  /// Is the account blocked.
+  @JsonKey(name: 'is_blocked')
+  final bool isBlocked;
+  @override
+
+  /// Is the account suspended.
+  @JsonKey(name: 'is_suspended')
+  final bool isSuspended;
+  @override
+
+  /// Date of next debiting funds.
+  @JsonKey(name: 'next_billing_date')
+  final String? nextBillingDate;
+  @override
+
+  /// Account blocking date.
+  @JsonKey(name: 'block_date')
+  final String? blockDate;
+  @override
+
+  /// Account suspending date.
+  @JsonKey(name: 'suspend_date')
+  final String? suspendDate;
+  @override
+
+  /// Status of personal account.
+  @JsonKey(name: 'status')
+  final String status;
+  @override
+
+  /// Tariff on this personal account.
+  @JsonKey(name: 'tariff')
+  final TariffBilling tariff;
 
   @override
   String toString() {
-    return 'PersonalAccountBilling(personalAccountId: $personalAccountId, fullName: $fullName, phone: $phone, ownerUuid: $ownerUuid, tariffId: $tariffId, tariffName: $tariffName, discountId: $discountId, discountAmount: $discountAmount, status: $status, nextBillingDate: $nextBillingDate, teamCount: $teamCount, workplaceCount: $workplaceCount, usersCount: $usersCount, freeWorkplaces: $freeWorkplaces, paidWorkplaces: $paidWorkplaces)';
+    return 'PersonalAccountBilling(personalAccountId: $personalAccountId, ownerID: $ownerID, ownerUuid: $ownerUuid, teamsCount: $teamsCount, workplaceCount: $workplaceCount, emptyWorkplaceCount: $emptyWorkplaceCount, occupiedWorkplaceCount: $occupiedWorkplaceCount, freeWorkplaceCount: $freeWorkplaceCount, paidWorkplaceCount: $paidWorkplaceCount, isBlocked: $isBlocked, isSuspended: $isSuspended, nextBillingDate: $nextBillingDate, blockDate: $blockDate, suspendDate: $suspendDate, status: $status, tariff: $tariff)';
   }
 
   @override
@@ -478,66 +546,70 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
             (identical(other.personalAccountId, personalAccountId) ||
                 const DeepCollectionEquality()
                     .equals(other.personalAccountId, personalAccountId)) &&
-            (identical(other.fullName, fullName) ||
+            (identical(other.ownerID, ownerID) ||
                 const DeepCollectionEquality()
-                    .equals(other.fullName, fullName)) &&
-            (identical(other.phone, phone) ||
-                const DeepCollectionEquality().equals(other.phone, phone)) &&
+                    .equals(other.ownerID, ownerID)) &&
             (identical(other.ownerUuid, ownerUuid) ||
                 const DeepCollectionEquality()
                     .equals(other.ownerUuid, ownerUuid)) &&
-            (identical(other.tariffId, tariffId) ||
+            (identical(other.teamsCount, teamsCount) ||
                 const DeepCollectionEquality()
-                    .equals(other.tariffId, tariffId)) &&
-            (identical(other.tariffName, tariffName) ||
-                const DeepCollectionEquality()
-                    .equals(other.tariffName, tariffName)) &&
-            (identical(other.discountId, discountId) ||
-                const DeepCollectionEquality()
-                    .equals(other.discountId, discountId)) &&
-            (identical(other.discountAmount, discountAmount) ||
-                const DeepCollectionEquality()
-                    .equals(other.discountAmount, discountAmount)) &&
-            (identical(other.status, status) ||
-                const DeepCollectionEquality().equals(other.status, status)) &&
-            (identical(other.nextBillingDate, nextBillingDate) ||
-                const DeepCollectionEquality()
-                    .equals(other.nextBillingDate, nextBillingDate)) &&
-            (identical(other.teamCount, teamCount) ||
-                const DeepCollectionEquality()
-                    .equals(other.teamCount, teamCount)) &&
+                    .equals(other.teamsCount, teamsCount)) &&
             (identical(other.workplaceCount, workplaceCount) ||
                 const DeepCollectionEquality()
                     .equals(other.workplaceCount, workplaceCount)) &&
-            (identical(other.usersCount, usersCount) ||
+            (identical(other.emptyWorkplaceCount, emptyWorkplaceCount) ||
                 const DeepCollectionEquality()
-                    .equals(other.usersCount, usersCount)) &&
-            (identical(other.freeWorkplaces, freeWorkplaces) ||
+                    .equals(other.emptyWorkplaceCount, emptyWorkplaceCount)) &&
+            (identical(other.occupiedWorkplaceCount, occupiedWorkplaceCount) ||
+                const DeepCollectionEquality().equals(
+                    other.occupiedWorkplaceCount, occupiedWorkplaceCount)) &&
+            (identical(other.freeWorkplaceCount, freeWorkplaceCount) ||
                 const DeepCollectionEquality()
-                    .equals(other.freeWorkplaces, freeWorkplaces)) &&
-            (identical(other.paidWorkplaces, paidWorkplaces) ||
+                    .equals(other.freeWorkplaceCount, freeWorkplaceCount)) &&
+            (identical(other.paidWorkplaceCount, paidWorkplaceCount) ||
                 const DeepCollectionEquality()
-                    .equals(other.paidWorkplaces, paidWorkplaces)));
+                    .equals(other.paidWorkplaceCount, paidWorkplaceCount)) &&
+            (identical(other.isBlocked, isBlocked) ||
+                const DeepCollectionEquality()
+                    .equals(other.isBlocked, isBlocked)) &&
+            (identical(other.isSuspended, isSuspended) ||
+                const DeepCollectionEquality()
+                    .equals(other.isSuspended, isSuspended)) &&
+            (identical(other.nextBillingDate, nextBillingDate) ||
+                const DeepCollectionEquality()
+                    .equals(other.nextBillingDate, nextBillingDate)) &&
+            (identical(other.blockDate, blockDate) ||
+                const DeepCollectionEquality()
+                    .equals(other.blockDate, blockDate)) &&
+            (identical(other.suspendDate, suspendDate) ||
+                const DeepCollectionEquality()
+                    .equals(other.suspendDate, suspendDate)) &&
+            (identical(other.status, status) ||
+                const DeepCollectionEquality().equals(other.status, status)) &&
+            (identical(other.tariff, tariff) ||
+                const DeepCollectionEquality().equals(other.tariff, tariff)));
   }
 
   @override
   int get hashCode =>
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(personalAccountId) ^
-      const DeepCollectionEquality().hash(fullName) ^
-      const DeepCollectionEquality().hash(phone) ^
+      const DeepCollectionEquality().hash(ownerID) ^
       const DeepCollectionEquality().hash(ownerUuid) ^
-      const DeepCollectionEquality().hash(tariffId) ^
-      const DeepCollectionEquality().hash(tariffName) ^
-      const DeepCollectionEquality().hash(discountId) ^
-      const DeepCollectionEquality().hash(discountAmount) ^
-      const DeepCollectionEquality().hash(status) ^
-      const DeepCollectionEquality().hash(nextBillingDate) ^
-      const DeepCollectionEquality().hash(teamCount) ^
+      const DeepCollectionEquality().hash(teamsCount) ^
       const DeepCollectionEquality().hash(workplaceCount) ^
-      const DeepCollectionEquality().hash(usersCount) ^
-      const DeepCollectionEquality().hash(freeWorkplaces) ^
-      const DeepCollectionEquality().hash(paidWorkplaces);
+      const DeepCollectionEquality().hash(emptyWorkplaceCount) ^
+      const DeepCollectionEquality().hash(occupiedWorkplaceCount) ^
+      const DeepCollectionEquality().hash(freeWorkplaceCount) ^
+      const DeepCollectionEquality().hash(paidWorkplaceCount) ^
+      const DeepCollectionEquality().hash(isBlocked) ^
+      const DeepCollectionEquality().hash(isSuspended) ^
+      const DeepCollectionEquality().hash(nextBillingDate) ^
+      const DeepCollectionEquality().hash(blockDate) ^
+      const DeepCollectionEquality().hash(suspendDate) ^
+      const DeepCollectionEquality().hash(status) ^
+      const DeepCollectionEquality().hash(tariff);
 
   @JsonKey(ignore: true)
   @override
@@ -554,35 +626,37 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
 abstract class _PersonalAccountBilling implements PersonalAccountBilling {
   const factory _PersonalAccountBilling(
       {@JsonKey(name: 'personal_account_id')
-          required String personalAccountId,
-      @JsonKey(name: 'full_name')
-          String? fullName,
-      @JsonKey(name: 'phone')
-          String? phone,
+          required int personalAccountId,
+      @JsonKey(name: 'owner_id')
+          required int ownerID,
       @JsonKey(name: 'owner_uuid')
           required String ownerUuid,
-      @JsonKey(name: 'tariff_id')
-          required String tariffId,
-      @JsonKey(name: 'tariff_name')
-          required String tariffName,
-      @JsonKey(name: 'discount_id')
-          required String discountId,
-      @JsonKey(name: 'discount_amount')
-          required int discountAmount,
-      @JsonKey(name: 'status')
-          required String status,
-      @JsonKey(name: 'next_billing_date')
-          required String nextBillingDate,
-      @JsonKey(name: 'team_count')
-          required int teamCount,
+      @JsonKey(name: 'teams_count')
+          required int teamsCount,
       @JsonKey(name: 'workplace_count')
           required int workplaceCount,
-      @JsonKey(name: 'users_count')
-          required int usersCount,
-      @JsonKey(name: 'free_workplaces')
-          required int freeWorkplaces,
-      @JsonKey(name: 'paid_workplaces')
-          required int paidWorkplaces}) = _$_PersonalAccountBilling;
+      @JsonKey(name: 'empty_workplace_count')
+          required int emptyWorkplaceCount,
+      @JsonKey(name: 'occupied_workplace_count')
+          required int occupiedWorkplaceCount,
+      @JsonKey(name: 'free_workplace_count')
+          required int freeWorkplaceCount,
+      @JsonKey(name: 'paid_workplace_count')
+          required int paidWorkplaceCount,
+      @JsonKey(name: 'is_blocked')
+          required bool isBlocked,
+      @JsonKey(name: 'is_suspended')
+          required bool isSuspended,
+      @JsonKey(name: 'next_billing_date')
+          String? nextBillingDate,
+      @JsonKey(name: 'block_date')
+          String? blockDate,
+      @JsonKey(name: 'suspend_date')
+          String? suspendDate,
+      @JsonKey(name: 'status')
+          required String status,
+      @JsonKey(name: 'tariff')
+          required TariffBilling tariff}) = _$_PersonalAccountBilling;
 
   factory _PersonalAccountBilling.fromJson(Map<String, dynamic> json) =
       _$_PersonalAccountBilling.fromJson;
@@ -591,57 +665,22 @@ abstract class _PersonalAccountBilling implements PersonalAccountBilling {
 
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  String get personalAccountId => throw _privateConstructorUsedError;
-  @override
-
-  /// Full name of owner personal account.
-  @JsonKey(name: 'full_name')
-  String? get fullName => throw _privateConstructorUsedError;
-  @override
-
-  /// Phone number of owner account.
-  @JsonKey(name: 'phone')
-  String? get phone => throw _privateConstructorUsedError;
+  int get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// ID User who owns this personal account.
+  @JsonKey(name: 'owner_id')
+  int get ownerID => throw _privateConstructorUsedError;
+  @override
+
+  /// UUID of User who owns this personal account.
   @JsonKey(name: 'owner_uuid')
   String get ownerUuid => throw _privateConstructorUsedError;
   @override
 
-  /// ID Tariff on this personal account.
-  @JsonKey(name: 'tariff_id')
-  String get tariffId => throw _privateConstructorUsedError;
-  @override
-
-  /// Name Tariff on this personal account.
-  @JsonKey(name: 'tariff_name')
-  String get tariffName => throw _privateConstructorUsedError;
-  @override
-
-  /// ID Discount on personal account.
-  @JsonKey(name: 'discount_id')
-  String get discountId => throw _privateConstructorUsedError;
-  @override
-
-  /// Amount of Discount on personal account.
-  @JsonKey(name: 'discount_amount')
-  int get discountAmount => throw _privateConstructorUsedError;
-  @override
-
-  /// Status of personal account.
-  @JsonKey(name: 'status')
-  String get status => throw _privateConstructorUsedError;
-  @override
-
-  /// Date of next debiting funds.
-  @JsonKey(name: 'next_billing_date')
-  String get nextBillingDate => throw _privateConstructorUsedError;
-  @override
-
   /// Count of teams on personal account.
-  @JsonKey(name: 'team_count')
-  int get teamCount => throw _privateConstructorUsedError;
+  @JsonKey(name: 'teams_count')
+  int get teamsCount => throw _privateConstructorUsedError;
   @override
 
   /// Count of workplaces on personal account.
@@ -649,19 +688,59 @@ abstract class _PersonalAccountBilling implements PersonalAccountBilling {
   int get workplaceCount => throw _privateConstructorUsedError;
   @override
 
-  /// Count of user on personal account.
-  @JsonKey(name: 'users_count')
-  int get usersCount => throw _privateConstructorUsedError;
+  /// Count of empty workplaces on personal account.
+  @JsonKey(name: 'empty_workplace_count')
+  int get emptyWorkplaceCount => throw _privateConstructorUsedError;
+  @override
+
+  /// Count of occupied workplaces on personal account.
+  @JsonKey(name: 'occupied_workplace_count')
+  int get occupiedWorkplaceCount => throw _privateConstructorUsedError;
   @override
 
   /// Count of free workplaces on personal account.
-  @JsonKey(name: 'free_workplaces')
-  int get freeWorkplaces => throw _privateConstructorUsedError;
+  @JsonKey(name: 'free_workplace_count')
+  int get freeWorkplaceCount => throw _privateConstructorUsedError;
   @override
 
   /// Count of paid workplaces on personal account.
-  @JsonKey(name: 'paid_workplaces')
-  int get paidWorkplaces => throw _privateConstructorUsedError;
+  @JsonKey(name: 'paid_workplace_count')
+  int get paidWorkplaceCount => throw _privateConstructorUsedError;
+  @override
+
+  /// Is the account blocked.
+  @JsonKey(name: 'is_blocked')
+  bool get isBlocked => throw _privateConstructorUsedError;
+  @override
+
+  /// Is the account suspended.
+  @JsonKey(name: 'is_suspended')
+  bool get isSuspended => throw _privateConstructorUsedError;
+  @override
+
+  /// Date of next debiting funds.
+  @JsonKey(name: 'next_billing_date')
+  String? get nextBillingDate => throw _privateConstructorUsedError;
+  @override
+
+  /// Account blocking date.
+  @JsonKey(name: 'block_date')
+  String? get blockDate => throw _privateConstructorUsedError;
+  @override
+
+  /// Account suspending date.
+  @JsonKey(name: 'suspend_date')
+  String? get suspendDate => throw _privateConstructorUsedError;
+  @override
+
+  /// Status of personal account.
+  @JsonKey(name: 'status')
+  String get status => throw _privateConstructorUsedError;
+  @override
+
+  /// Tariff on this personal account.
+  @JsonKey(name: 'tariff')
+  TariffBilling get tariff => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$PersonalAccountBillingCopyWith<_PersonalAccountBilling> get copyWith =>

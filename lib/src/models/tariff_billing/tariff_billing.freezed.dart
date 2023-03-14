@@ -37,7 +37,7 @@ class _$TariffBillingTearOff {
       @JsonKey(name: 'priority')
           int? priority,
       @JsonKey(name: 'cost_workplace')
-          required String costWorkplace,
+          required double costWorkplace,
       @JsonKey(name: 'max_workplace_count')
           int? maxWorkplaceCount,
       @JsonKey(name: 'min_workplace_count')
@@ -47,7 +47,7 @@ class _$TariffBillingTearOff {
       @JsonKey(name: 'step_increasing_workplaces')
           required int stepIncreasingWorkplaces,
       @JsonKey(name: 'disk_space_quota_mb')
-          required String diskSpaceQuotaMb,
+          required double diskSpaceQuotaMb,
       @JsonKey(name: 'period_days')
           required int periodDays,
       @JsonKey(name: 'max_voice_user')
@@ -138,7 +138,7 @@ mixin _$TariffBilling {
 
   /// Cost of one workplace.
   @JsonKey(name: 'cost_workplace')
-  String get costWorkplace => throw _privateConstructorUsedError;
+  double get costWorkplace => throw _privateConstructorUsedError;
 
   /// Count of maximum workspaces on tariff.
   @JsonKey(name: 'max_workplace_count')
@@ -158,7 +158,7 @@ mixin _$TariffBilling {
 
   /// Disk space limit per user.
   @JsonKey(name: 'disk_space_quota_mb')
-  String get diskSpaceQuotaMb => throw _privateConstructorUsedError;
+  double get diskSpaceQuotaMb => throw _privateConstructorUsedError;
 
   /// Number of paid days.
   @JsonKey(name: 'period_days')
@@ -223,12 +223,12 @@ abstract class $TariffBillingCopyWith<$Res> {
       @JsonKey(name: 'benefit') String? benefit,
       @JsonKey(name: 'currency') String currency,
       @JsonKey(name: 'priority') int? priority,
-      @JsonKey(name: 'cost_workplace') String costWorkplace,
+      @JsonKey(name: 'cost_workplace') double costWorkplace,
       @JsonKey(name: 'max_workplace_count') int? maxWorkplaceCount,
       @JsonKey(name: 'min_workplace_count') int? minWorkplaceCount,
       @JsonKey(name: 'free_workplace_count') int freeWorkplaceCount,
       @JsonKey(name: 'step_increasing_workplaces') int stepIncreasingWorkplaces,
-      @JsonKey(name: 'disk_space_quota_mb') String diskSpaceQuotaMb,
+      @JsonKey(name: 'disk_space_quota_mb') double diskSpaceQuotaMb,
       @JsonKey(name: 'period_days') int periodDays,
       @JsonKey(name: 'max_voice_user') int maxVoiceUser,
       @JsonKey(name: 'max_video_user') int maxVideoUser,
@@ -310,7 +310,7 @@ class _$TariffBillingCopyWithImpl<$Res>
       costWorkplace: costWorkplace == freezed
           ? _value.costWorkplace
           : costWorkplace // ignore: cast_nullable_to_non_nullable
-              as String,
+              as double,
       maxWorkplaceCount: maxWorkplaceCount == freezed
           ? _value.maxWorkplaceCount
           : maxWorkplaceCount // ignore: cast_nullable_to_non_nullable
@@ -330,7 +330,7 @@ class _$TariffBillingCopyWithImpl<$Res>
       diskSpaceQuotaMb: diskSpaceQuotaMb == freezed
           ? _value.diskSpaceQuotaMb
           : diskSpaceQuotaMb // ignore: cast_nullable_to_non_nullable
-              as String,
+              as double,
       periodDays: periodDays == freezed
           ? _value.periodDays
           : periodDays // ignore: cast_nullable_to_non_nullable
@@ -394,12 +394,12 @@ abstract class _$TariffBillingCopyWith<$Res>
       @JsonKey(name: 'benefit') String? benefit,
       @JsonKey(name: 'currency') String currency,
       @JsonKey(name: 'priority') int? priority,
-      @JsonKey(name: 'cost_workplace') String costWorkplace,
+      @JsonKey(name: 'cost_workplace') double costWorkplace,
       @JsonKey(name: 'max_workplace_count') int? maxWorkplaceCount,
       @JsonKey(name: 'min_workplace_count') int? minWorkplaceCount,
       @JsonKey(name: 'free_workplace_count') int freeWorkplaceCount,
       @JsonKey(name: 'step_increasing_workplaces') int stepIncreasingWorkplaces,
-      @JsonKey(name: 'disk_space_quota_mb') String diskSpaceQuotaMb,
+      @JsonKey(name: 'disk_space_quota_mb') double diskSpaceQuotaMb,
       @JsonKey(name: 'period_days') int periodDays,
       @JsonKey(name: 'max_voice_user') int maxVoiceUser,
       @JsonKey(name: 'max_video_user') int maxVideoUser,
@@ -483,7 +483,7 @@ class __$TariffBillingCopyWithImpl<$Res>
       costWorkplace: costWorkplace == freezed
           ? _value.costWorkplace
           : costWorkplace // ignore: cast_nullable_to_non_nullable
-              as String,
+              as double,
       maxWorkplaceCount: maxWorkplaceCount == freezed
           ? _value.maxWorkplaceCount
           : maxWorkplaceCount // ignore: cast_nullable_to_non_nullable
@@ -503,7 +503,7 @@ class __$TariffBillingCopyWithImpl<$Res>
       diskSpaceQuotaMb: diskSpaceQuotaMb == freezed
           ? _value.diskSpaceQuotaMb
           : diskSpaceQuotaMb // ignore: cast_nullable_to_non_nullable
-              as String,
+              as double,
       periodDays: periodDays == freezed
           ? _value.periodDays
           : periodDays // ignore: cast_nullable_to_non_nullable
@@ -647,7 +647,7 @@ class _$_TariffBilling implements _TariffBilling {
 
   /// Cost of one workplace.
   @JsonKey(name: 'cost_workplace')
-  final String costWorkplace;
+  final double costWorkplace;
   @override
 
   /// Count of maximum workspaces on tariff.
@@ -672,7 +672,7 @@ class _$_TariffBilling implements _TariffBilling {
 
   /// Disk space limit per user.
   @JsonKey(name: 'disk_space_quota_mb')
-  final String diskSpaceQuotaMb;
+  final double diskSpaceQuotaMb;
   @override
 
   /// Number of paid days.
@@ -859,7 +859,7 @@ abstract class _TariffBilling implements TariffBilling {
       @JsonKey(name: 'priority')
           int? priority,
       @JsonKey(name: 'cost_workplace')
-          required String costWorkplace,
+          required double costWorkplace,
       @JsonKey(name: 'max_workplace_count')
           int? maxWorkplaceCount,
       @JsonKey(name: 'min_workplace_count')
@@ -869,7 +869,7 @@ abstract class _TariffBilling implements TariffBilling {
       @JsonKey(name: 'step_increasing_workplaces')
           required int stepIncreasingWorkplaces,
       @JsonKey(name: 'disk_space_quota_mb')
-          required String diskSpaceQuotaMb,
+          required double diskSpaceQuotaMb,
       @JsonKey(name: 'period_days')
           required int periodDays,
       @JsonKey(name: 'max_voice_user')
@@ -935,7 +935,7 @@ abstract class _TariffBilling implements TariffBilling {
 
   /// Cost of one workplace.
   @JsonKey(name: 'cost_workplace')
-  String get costWorkplace => throw _privateConstructorUsedError;
+  double get costWorkplace => throw _privateConstructorUsedError;
   @override
 
   /// Count of maximum workspaces on tariff.
@@ -960,7 +960,7 @@ abstract class _TariffBilling implements TariffBilling {
 
   /// Disk space limit per user.
   @JsonKey(name: 'disk_space_quota_mb')
-  String get diskSpaceQuotaMb => throw _privateConstructorUsedError;
+  double get diskSpaceQuotaMb => throw _privateConstructorUsedError;
   @override
 
   /// Number of paid days.
