@@ -23,9 +23,9 @@ class _$GetTariffsListResponseTearOff {
   const _$GetTariffsListResponseTearOff();
 
   _GetTariffsListResponse call(
-      {@JsonKey(name: 'tariffs') required List<TariffBilling> tariffs}) {
+      {@JsonKey(name: 'tariff_list') required List<TariffBilling> tariffList}) {
     return _GetTariffsListResponse(
-      tariffs: tariffs,
+      tariffList: tariffList,
     );
   }
 
@@ -40,8 +40,8 @@ const $GetTariffsListResponse = _$GetTariffsListResponseTearOff();
 /// @nodoc
 mixin _$GetTariffsListResponse {
   /// .
-  @JsonKey(name: 'tariffs')
-  List<TariffBilling> get tariffs => throw _privateConstructorUsedError;
+  @JsonKey(name: 'tariff_list')
+  List<TariffBilling> get tariffList => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -54,7 +54,7 @@ abstract class $GetTariffsListResponseCopyWith<$Res> {
   factory $GetTariffsListResponseCopyWith(GetTariffsListResponse value,
           $Res Function(GetTariffsListResponse) then) =
       _$GetTariffsListResponseCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'tariffs') List<TariffBilling> tariffs});
+  $Res call({@JsonKey(name: 'tariff_list') List<TariffBilling> tariffList});
 }
 
 /// @nodoc
@@ -68,12 +68,12 @@ class _$GetTariffsListResponseCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? tariffs = freezed,
+    Object? tariffList = freezed,
   }) {
     return _then(_value.copyWith(
-      tariffs: tariffs == freezed
-          ? _value.tariffs
-          : tariffs // ignore: cast_nullable_to_non_nullable
+      tariffList: tariffList == freezed
+          ? _value.tariffList
+          : tariffList // ignore: cast_nullable_to_non_nullable
               as List<TariffBilling>,
     ));
   }
@@ -86,7 +86,7 @@ abstract class _$GetTariffsListResponseCopyWith<$Res>
           $Res Function(_GetTariffsListResponse) then) =
       __$GetTariffsListResponseCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'tariffs') List<TariffBilling> tariffs});
+  $Res call({@JsonKey(name: 'tariff_list') List<TariffBilling> tariffList});
 }
 
 /// @nodoc
@@ -102,12 +102,12 @@ class __$GetTariffsListResponseCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? tariffs = freezed,
+    Object? tariffList = freezed,
   }) {
     return _then(_GetTariffsListResponse(
-      tariffs: tariffs == freezed
-          ? _value.tariffs
-          : tariffs // ignore: cast_nullable_to_non_nullable
+      tariffList: tariffList == freezed
+          ? _value.tariffList
+          : tariffList // ignore: cast_nullable_to_non_nullable
               as List<TariffBilling>,
     ));
   }
@@ -117,7 +117,7 @@ class __$GetTariffsListResponseCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_GetTariffsListResponse implements _GetTariffsListResponse {
   const _$_GetTariffsListResponse(
-      {@JsonKey(name: 'tariffs') required this.tariffs});
+      {@JsonKey(name: 'tariff_list') required this.tariffList});
 
   factory _$_GetTariffsListResponse.fromJson(Map<String, dynamic> json) =>
       _$$_GetTariffsListResponseFromJson(json);
@@ -125,25 +125,26 @@ class _$_GetTariffsListResponse implements _GetTariffsListResponse {
   @override
 
   /// .
-  @JsonKey(name: 'tariffs')
-  final List<TariffBilling> tariffs;
+  @JsonKey(name: 'tariff_list')
+  final List<TariffBilling> tariffList;
 
   @override
   String toString() {
-    return 'GetTariffsListResponse(tariffs: $tariffs)';
+    return 'GetTariffsListResponse(tariffList: $tariffList)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _GetTariffsListResponse &&
-            (identical(other.tariffs, tariffs) ||
-                const DeepCollectionEquality().equals(other.tariffs, tariffs)));
+            (identical(other.tariffList, tariffList) ||
+                const DeepCollectionEquality()
+                    .equals(other.tariffList, tariffList)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(tariffs);
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(tariffList);
 
   @JsonKey(ignore: true)
   @override
@@ -159,8 +160,8 @@ class _$_GetTariffsListResponse implements _GetTariffsListResponse {
 
 abstract class _GetTariffsListResponse implements GetTariffsListResponse {
   const factory _GetTariffsListResponse(
-          {@JsonKey(name: 'tariffs') required List<TariffBilling> tariffs}) =
-      _$_GetTariffsListResponse;
+      {@JsonKey(name: 'tariff_list')
+          required List<TariffBilling> tariffList}) = _$_GetTariffsListResponse;
 
   factory _GetTariffsListResponse.fromJson(Map<String, dynamic> json) =
       _$_GetTariffsListResponse.fromJson;
@@ -168,8 +169,8 @@ abstract class _GetTariffsListResponse implements GetTariffsListResponse {
   @override
 
   /// .
-  @JsonKey(name: 'tariffs')
-  List<TariffBilling> get tariffs => throw _privateConstructorUsedError;
+  @JsonKey(name: 'tariff_list')
+  List<TariffBilling> get tariffList => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$GetTariffsListResponseCopyWith<_GetTariffsListResponse> get copyWith =>

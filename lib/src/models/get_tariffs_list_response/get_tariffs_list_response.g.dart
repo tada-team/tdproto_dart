@@ -9,7 +9,7 @@ part of 'get_tariffs_list_response.dart';
 _$_GetTariffsListResponse _$$_GetTariffsListResponseFromJson(
         Map<String, dynamic> json) =>
     _$_GetTariffsListResponse(
-      tariffs: (json['tariffs'] as List<dynamic>)
+      tariffList: (json['tariff_list'] as List<dynamic>)
           .map((e) => TariffBilling.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
@@ -17,5 +17,5 @@ _$_GetTariffsListResponse _$$_GetTariffsListResponseFromJson(
 Map<String, dynamic> _$$_GetTariffsListResponseToJson(
         _$_GetTariffsListResponse instance) =>
     <String, dynamic>{
-      'tariffs': instance.tariffs.map((e) => e.toJson()).toList(),
+      'tariff_list': instance.tariffList.map((e) => e.toJson()).toList(),
     };

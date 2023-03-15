@@ -9,7 +9,7 @@ part 'get_active_tariffs_list_response.g.dart';
 class GetActiveTariffsListResponse with _$GetActiveTariffsListResponse {
   const factory GetActiveTariffsListResponse({
     /// .
-    @JsonKey(name: 'tariffs') required List<TariffBilling> tariffs,
+    @JsonKey(name: 'tariff_list') required List<TariffBilling> tariffList,
     
     
   }) = _GetActiveTariffsListResponse;
