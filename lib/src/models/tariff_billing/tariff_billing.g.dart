@@ -8,7 +8,7 @@ part of 'tariff_billing.dart';
 
 _$_TariffBilling _$$_TariffBillingFromJson(Map<String, dynamic> json) =>
     _$_TariffBilling(
-      id: json['id'] as int,
+      id: json['id'] as String,
       name: json['name'] as String,
       nomenclatureName: json['nomenclature_name'] as String,
       description: json['description'] as String,

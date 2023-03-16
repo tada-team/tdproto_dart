@@ -23,7 +23,7 @@ class _$TariffBillingTearOff {
 
   _TariffBilling call(
       {@JsonKey(name: 'id')
-          required int id,
+          required String id,
       @JsonKey(name: 'name')
           required String name,
       @JsonKey(name: 'nomenclature_name')
@@ -110,7 +110,7 @@ const $TariffBilling = _$TariffBillingTearOff();
 mixin _$TariffBilling {
   /// Tariff id.
   @JsonKey(name: 'id')
-  int get id => throw _privateConstructorUsedError;
+  String get id => throw _privateConstructorUsedError;
 
   /// Name of tariff.
   @JsonKey(name: 'name')
@@ -216,7 +216,7 @@ abstract class $TariffBillingCopyWith<$Res> {
           TariffBilling value, $Res Function(TariffBilling) then) =
       _$TariffBillingCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'id') int id,
+      {@JsonKey(name: 'id') String id,
       @JsonKey(name: 'name') String name,
       @JsonKey(name: 'nomenclature_name') String nomenclatureName,
       @JsonKey(name: 'description') String description,
@@ -282,7 +282,7 @@ class _$TariffBillingCopyWithImpl<$Res>
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -387,7 +387,7 @@ abstract class _$TariffBillingCopyWith<$Res>
       __$TariffBillingCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'id') int id,
+      {@JsonKey(name: 'id') String id,
       @JsonKey(name: 'name') String name,
       @JsonKey(name: 'nomenclature_name') String nomenclatureName,
       @JsonKey(name: 'description') String description,
@@ -455,7 +455,7 @@ class __$TariffBillingCopyWithImpl<$Res>
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -612,7 +612,7 @@ class _$_TariffBilling implements _TariffBilling {
 
   /// Tariff id.
   @JsonKey(name: 'id')
-  final int id;
+  final String id;
   @override
 
   /// Name of tariff.
@@ -845,7 +845,7 @@ class _$_TariffBilling implements _TariffBilling {
 abstract class _TariffBilling implements TariffBilling {
   const factory _TariffBilling(
       {@JsonKey(name: 'id')
-          required int id,
+          required String id,
       @JsonKey(name: 'name')
           required String name,
       @JsonKey(name: 'nomenclature_name')
@@ -900,7 +900,7 @@ abstract class _TariffBilling implements TariffBilling {
 
   /// Tariff id.
   @JsonKey(name: 'id')
-  int get id => throw _privateConstructorUsedError;
+  String get id => throw _privateConstructorUsedError;
   @override
 
   /// Name of tariff.
