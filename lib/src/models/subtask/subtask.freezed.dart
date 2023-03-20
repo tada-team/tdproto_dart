@@ -30,7 +30,9 @@ class _$SubtaskTearOff {
       @JsonKey(name: 'public') bool? isPublic,
       @JsonKey(name: 'task_status') String? taskStatus,
       @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
-      @JsonKey(name: 'deadline_expired') bool? deadlineExpired}) {
+      @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
+      @JsonKey(name: 'importance') int? importance,
+      @JsonKey(name: 'complexity') int? complexity}) {
     return _Subtask(
       jid: jid,
       assignee: assignee,
@@ -41,6 +43,8 @@ class _$SubtaskTearOff {
       taskStatus: taskStatus,
       deadline: deadline,
       deadlineExpired: deadlineExpired,
+      importance: importance,
+      complexity: complexity,
     );
   }
 
@@ -91,6 +95,14 @@ mixin _$Subtask {
   @JsonKey(name: 'deadline_expired')
   bool? get deadlineExpired => throw _privateConstructorUsedError;
 
+  /// Subtask importance, if available in team.
+  @JsonKey(name: 'importance')
+  int? get importance => throw _privateConstructorUsedError;
+
+  /// Subtask complexity, number.
+  @JsonKey(name: 'complexity')
+  int? get complexity => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $SubtaskCopyWith<Subtask> get copyWith => throw _privateConstructorUsedError;
@@ -109,7 +121,9 @@ abstract class $SubtaskCopyWith<$Res> {
       @JsonKey(name: 'public') bool? isPublic,
       @JsonKey(name: 'task_status') String? taskStatus,
       @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
-      @JsonKey(name: 'deadline_expired') bool? deadlineExpired});
+      @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
+      @JsonKey(name: 'importance') int? importance,
+      @JsonKey(name: 'complexity') int? complexity});
 }
 
 /// @nodoc
@@ -131,6 +145,8 @@ class _$SubtaskCopyWithImpl<$Res> implements $SubtaskCopyWith<$Res> {
     Object? taskStatus = freezed,
     Object? deadline = freezed,
     Object? deadlineExpired = freezed,
+    Object? importance = freezed,
+    Object? complexity = freezed,
   }) {
     return _then(_value.copyWith(
       jid: jid == freezed
@@ -169,6 +185,14 @@ class _$SubtaskCopyWithImpl<$Res> implements $SubtaskCopyWith<$Res> {
           ? _value.deadlineExpired
           : deadlineExpired // ignore: cast_nullable_to_non_nullable
               as bool?,
+      importance: importance == freezed
+          ? _value.importance
+          : importance // ignore: cast_nullable_to_non_nullable
+              as int?,
+      complexity: complexity == freezed
+          ? _value.complexity
+          : complexity // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 }
@@ -187,7 +211,9 @@ abstract class _$SubtaskCopyWith<$Res> implements $SubtaskCopyWith<$Res> {
       @JsonKey(name: 'public') bool? isPublic,
       @JsonKey(name: 'task_status') String? taskStatus,
       @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
-      @JsonKey(name: 'deadline_expired') bool? deadlineExpired});
+      @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
+      @JsonKey(name: 'importance') int? importance,
+      @JsonKey(name: 'complexity') int? complexity});
 }
 
 /// @nodoc
@@ -210,6 +236,8 @@ class __$SubtaskCopyWithImpl<$Res> extends _$SubtaskCopyWithImpl<$Res>
     Object? taskStatus = freezed,
     Object? deadline = freezed,
     Object? deadlineExpired = freezed,
+    Object? importance = freezed,
+    Object? complexity = freezed,
   }) {
     return _then(_Subtask(
       jid: jid == freezed
@@ -248,6 +276,14 @@ class __$SubtaskCopyWithImpl<$Res> extends _$SubtaskCopyWithImpl<$Res>
           ? _value.deadlineExpired
           : deadlineExpired // ignore: cast_nullable_to_non_nullable
               as bool?,
+      importance: importance == freezed
+          ? _value.importance
+          : importance // ignore: cast_nullable_to_non_nullable
+              as int?,
+      complexity: complexity == freezed
+          ? _value.complexity
+          : complexity // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 }
@@ -264,7 +300,9 @@ class _$_Subtask implements _Subtask {
       @JsonKey(name: 'public') this.isPublic,
       @JsonKey(name: 'task_status') this.taskStatus,
       @JsonKey(name: 'deadline') @DateTimeConverter() this.deadline,
-      @JsonKey(name: 'deadline_expired') this.deadlineExpired});
+      @JsonKey(name: 'deadline_expired') this.deadlineExpired,
+      @JsonKey(name: 'importance') this.importance,
+      @JsonKey(name: 'complexity') this.complexity});
 
   factory _$_Subtask.fromJson(Map<String, dynamic> json) =>
       _$$_SubtaskFromJson(json);
@@ -315,10 +353,20 @@ class _$_Subtask implements _Subtask {
   /// Is subtask deadline expired.
   @JsonKey(name: 'deadline_expired')
   final bool? deadlineExpired;
+  @override
+
+  /// Subtask importance, if available in team.
+  @JsonKey(name: 'importance')
+  final int? importance;
+  @override
+
+  /// Subtask complexity, number.
+  @JsonKey(name: 'complexity')
+  final int? complexity;
 
   @override
   String toString() {
-    return 'Subtask(jid: $jid, assignee: $assignee, title: $title, num: $num, displayName: $displayName, isPublic: $isPublic, taskStatus: $taskStatus, deadline: $deadline, deadlineExpired: $deadlineExpired)';
+    return 'Subtask(jid: $jid, assignee: $assignee, title: $title, num: $num, displayName: $displayName, isPublic: $isPublic, taskStatus: $taskStatus, deadline: $deadline, deadlineExpired: $deadlineExpired, importance: $importance, complexity: $complexity)';
   }
 
   @override
@@ -348,7 +396,13 @@ class _$_Subtask implements _Subtask {
                     .equals(other.deadline, deadline)) &&
             (identical(other.deadlineExpired, deadlineExpired) ||
                 const DeepCollectionEquality()
-                    .equals(other.deadlineExpired, deadlineExpired)));
+                    .equals(other.deadlineExpired, deadlineExpired)) &&
+            (identical(other.importance, importance) ||
+                const DeepCollectionEquality()
+                    .equals(other.importance, importance)) &&
+            (identical(other.complexity, complexity) ||
+                const DeepCollectionEquality()
+                    .equals(other.complexity, complexity)));
   }
 
   @override
@@ -362,7 +416,9 @@ class _$_Subtask implements _Subtask {
       const DeepCollectionEquality().hash(isPublic) ^
       const DeepCollectionEquality().hash(taskStatus) ^
       const DeepCollectionEquality().hash(deadline) ^
-      const DeepCollectionEquality().hash(deadlineExpired);
+      const DeepCollectionEquality().hash(deadlineExpired) ^
+      const DeepCollectionEquality().hash(importance) ^
+      const DeepCollectionEquality().hash(complexity);
 
   @JsonKey(ignore: true)
   @override
@@ -385,7 +441,9 @@ abstract class _Subtask implements Subtask {
       @JsonKey(name: 'public') bool? isPublic,
       @JsonKey(name: 'task_status') String? taskStatus,
       @JsonKey(name: 'deadline') @DateTimeConverter() DateTime? deadline,
-      @JsonKey(name: 'deadline_expired') bool? deadlineExpired}) = _$_Subtask;
+      @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
+      @JsonKey(name: 'importance') int? importance,
+      @JsonKey(name: 'complexity') int? complexity}) = _$_Subtask;
 
   factory _Subtask.fromJson(Map<String, dynamic> json) = _$_Subtask.fromJson;
 
@@ -435,6 +493,16 @@ abstract class _Subtask implements Subtask {
   /// Is subtask deadline expired.
   @JsonKey(name: 'deadline_expired')
   bool? get deadlineExpired => throw _privateConstructorUsedError;
+  @override
+
+  /// Subtask importance, if available in team.
+  @JsonKey(name: 'importance')
+  int? get importance => throw _privateConstructorUsedError;
+  @override
+
+  /// Subtask complexity, number.
+  @JsonKey(name: 'complexity')
+  int? get complexity => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$SubtaskCopyWith<_Subtask> get copyWith =>

@@ -35,6 +35,12 @@ class Subtask with _$Subtask {
     /// Is subtask deadline expired.
     @JsonKey(name: 'deadline_expired') bool? deadlineExpired,
     
+    /// Subtask importance, if available in team.
+    @JsonKey(name: 'importance') int? importance,
+    
+    /// Subtask complexity, number.
+    @JsonKey(name: 'complexity') int? complexity,
+    
     
   }) = _Subtask;
 

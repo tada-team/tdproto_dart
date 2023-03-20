@@ -18,6 +18,8 @@ _$_Subtask _$$_SubtaskFromJson(Map<String, dynamic> json) => _$_Subtask(
           ? null
           : DateTime.parse(json['deadline'] as String),
       deadlineExpired: json['deadline_expired'] as bool?,
+      importance: json['importance'] as int?,
+      complexity: json['complexity'] as int?,
     );
 
 Map<String, dynamic> _$$_SubtaskToJson(_$_Subtask instance) =>
@@ -31,4 +33,6 @@ Map<String, dynamic> _$$_SubtaskToJson(_$_Subtask instance) =>
       'task_status': instance.taskStatus,
       'deadline': instance.deadline?.toIso8601String(),
       'deadline_expired': instance.deadlineExpired,
+      'importance': instance.importance,
+      'complexity': instance.complexity,
     };
