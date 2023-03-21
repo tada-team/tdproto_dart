@@ -156,6 +156,8 @@ class _$ContactTearOff {
           bool? canJoinPublicTasks,
       @JsonKey(name: 'can_import_chats')
           bool? canImportChats,
+      @JsonKey(name: 'can_create_team')
+          bool? canCreateTeam,
       @JsonKey(name: 'custom_fields')
           ContactCustomFields? customFields,
       @Deprecated('Deprecated.')
@@ -228,6 +230,7 @@ class _$ContactTearOff {
       canJoinPublicGroups: canJoinPublicGroups,
       canJoinPublicTasks: canJoinPublicTasks,
       canImportChats: canImportChats,
+      canCreateTeam: canCreateTeam,
       customFields: customFields,
       canDeleteAnyMessage: canDeleteAnyMessage,
     );
@@ -509,6 +512,10 @@ mixin _$Contact {
   @JsonKey(name: 'can_import_chats')
   bool? get canImportChats => throw _privateConstructorUsedError;
 
+  /// Can i create new team.
+  @JsonKey(name: 'can_create_team')
+  bool? get canCreateTeam => throw _privateConstructorUsedError;
+
   /// Extra contact fields.
   @JsonKey(name: 'custom_fields')
   ContactCustomFields? get customFields => throw _privateConstructorUsedError;
@@ -662,6 +669,8 @@ abstract class $ContactCopyWith<$Res> {
           bool? canJoinPublicTasks,
       @JsonKey(name: 'can_import_chats')
           bool? canImportChats,
+      @JsonKey(name: 'can_create_team')
+          bool? canCreateTeam,
       @JsonKey(name: 'custom_fields')
           ContactCustomFields? customFields,
       @Deprecated('Deprecated.')
@@ -748,6 +757,7 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
     Object? canJoinPublicGroups = freezed,
     Object? canJoinPublicTasks = freezed,
     Object? canImportChats = freezed,
+    Object? canCreateTeam = freezed,
     Object? customFields = freezed,
     Object? canDeleteAnyMessage = freezed,
   }) {
@@ -1016,6 +1026,10 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
           ? _value.canImportChats
           : canImportChats // ignore: cast_nullable_to_non_nullable
               as bool?,
+      canCreateTeam: canCreateTeam == freezed
+          ? _value.canCreateTeam
+          : canCreateTeam // ignore: cast_nullable_to_non_nullable
+              as bool?,
       customFields: customFields == freezed
           ? _value.customFields
           : customFields // ignore: cast_nullable_to_non_nullable
@@ -1186,6 +1200,8 @@ abstract class _$ContactCopyWith<$Res> implements $ContactCopyWith<$Res> {
           bool? canJoinPublicTasks,
       @JsonKey(name: 'can_import_chats')
           bool? canImportChats,
+      @JsonKey(name: 'can_create_team')
+          bool? canCreateTeam,
       @JsonKey(name: 'custom_fields')
           ContactCustomFields? customFields,
       @Deprecated('Deprecated.')
@@ -1275,6 +1291,7 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res>
     Object? canJoinPublicGroups = freezed,
     Object? canJoinPublicTasks = freezed,
     Object? canImportChats = freezed,
+    Object? canCreateTeam = freezed,
     Object? customFields = freezed,
     Object? canDeleteAnyMessage = freezed,
   }) {
@@ -1543,6 +1560,10 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res>
           ? _value.canImportChats
           : canImportChats // ignore: cast_nullable_to_non_nullable
               as bool?,
+      canCreateTeam: canCreateTeam == freezed
+          ? _value.canCreateTeam
+          : canCreateTeam // ignore: cast_nullable_to_non_nullable
+              as bool?,
       customFields: customFields == freezed
           ? _value.customFields
           : customFields // ignore: cast_nullable_to_non_nullable
@@ -1693,6 +1714,8 @@ class _$_Contact implements _Contact {
           this.canJoinPublicTasks,
       @JsonKey(name: 'can_import_chats')
           this.canImportChats,
+      @JsonKey(name: 'can_create_team')
+          this.canCreateTeam,
       @JsonKey(name: 'custom_fields')
           this.customFields,
       @Deprecated('Deprecated.')
@@ -2036,6 +2059,11 @@ class _$_Contact implements _Contact {
   final bool? canImportChats;
   @override
 
+  /// Can i create new team.
+  @JsonKey(name: 'can_create_team')
+  final bool? canCreateTeam;
+  @override
+
   /// Extra contact fields.
   @JsonKey(name: 'custom_fields')
   final ContactCustomFields? customFields;
@@ -2048,7 +2076,7 @@ class _$_Contact implements _Contact {
 
   @override
   String toString() {
-    return 'Contact(jid: $jid, node: $node, displayName: $displayName, shortName: $shortName, contactEmail: $contactEmail, contactPhone: $contactPhone, icons: $icons, gentime: $gentime, role: $role, mood: $mood, teamStatus: $teamStatus, lastActivity: $lastActivity, isArchive: $isArchive, botname: $botname, sections: $sections, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, canCall: $canCall, canCreateTask: $canCreateTask, canImportTasks: $canImportTasks, canAddToGroup: $canAddToGroup, canDelete: $canDelete, changeableFields: $changeableFields, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, debugShowActivity: $debugShowActivity, dropallEnabled: $dropallEnabled, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, hidePushesContent: $hidePushesContent, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, focusUntil: $focusUntil, groupNotificationsEnabled: $groupNotificationsEnabled, taskNotificationsEnabled: $taskNotificationsEnabled, meetingNotificationsEnabled: $meetingNotificationsEnabled, systembotNotificationsEnabled: $systembotNotificationsEnabled, reactionNotificationsEnabled: $reactionNotificationsEnabled, contactShortView: $contactShortView, groupShortView: $groupShortView, taskShortView: $taskShortView, meetingShortView: $meetingShortView, contactMshortView: $contactMshortView, groupMshortView: $groupMshortView, auth2faEnabled: $auth2faEnabled, auth2faStatus: $auth2faStatus, taskMshortView: $taskMshortView, meetingMshortView: $meetingMshortView, contactShowArchived: $contactShowArchived, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, canAddToTeam: $canAddToTeam, canManageSections: $canManageSections, canManageProjects: $canManageProjects, canManageTags: $canManageTags, canManageIntegrations: $canManageIntegrations, canManageColorRules: $canManageColorRules, canCreateGroup: $canCreateGroup, canCreateMeeting: $canCreateMeeting, canJoinPublicGroups: $canJoinPublicGroups, canJoinPublicTasks: $canJoinPublicTasks, canImportChats: $canImportChats, customFields: $customFields, canDeleteAnyMessage: $canDeleteAnyMessage)';
+    return 'Contact(jid: $jid, node: $node, displayName: $displayName, shortName: $shortName, contactEmail: $contactEmail, contactPhone: $contactPhone, icons: $icons, gentime: $gentime, role: $role, mood: $mood, teamStatus: $teamStatus, lastActivity: $lastActivity, isArchive: $isArchive, botname: $botname, sections: $sections, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, canCall: $canCall, canCreateTask: $canCreateTask, canImportTasks: $canImportTasks, canAddToGroup: $canAddToGroup, canDelete: $canDelete, changeableFields: $changeableFields, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, debugShowActivity: $debugShowActivity, dropallEnabled: $dropallEnabled, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, hidePushesContent: $hidePushesContent, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, focusUntil: $focusUntil, groupNotificationsEnabled: $groupNotificationsEnabled, taskNotificationsEnabled: $taskNotificationsEnabled, meetingNotificationsEnabled: $meetingNotificationsEnabled, systembotNotificationsEnabled: $systembotNotificationsEnabled, reactionNotificationsEnabled: $reactionNotificationsEnabled, contactShortView: $contactShortView, groupShortView: $groupShortView, taskShortView: $taskShortView, meetingShortView: $meetingShortView, contactMshortView: $contactMshortView, groupMshortView: $groupMshortView, auth2faEnabled: $auth2faEnabled, auth2faStatus: $auth2faStatus, taskMshortView: $taskMshortView, meetingMshortView: $meetingMshortView, contactShowArchived: $contactShowArchived, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, canAddToTeam: $canAddToTeam, canManageSections: $canManageSections, canManageProjects: $canManageProjects, canManageTags: $canManageTags, canManageIntegrations: $canManageIntegrations, canManageColorRules: $canManageColorRules, canCreateGroup: $canCreateGroup, canCreateMeeting: $canCreateMeeting, canJoinPublicGroups: $canJoinPublicGroups, canJoinPublicTasks: $canJoinPublicTasks, canImportChats: $canImportChats, canCreateTeam: $canCreateTeam, customFields: $customFields, canDeleteAnyMessage: $canDeleteAnyMessage)';
   }
 
   @override
@@ -2164,6 +2192,7 @@ class _$_Contact implements _Contact {
             (identical(other.canJoinPublicGroups, canJoinPublicGroups) || const DeepCollectionEquality().equals(other.canJoinPublicGroups, canJoinPublicGroups)) &&
             (identical(other.canJoinPublicTasks, canJoinPublicTasks) || const DeepCollectionEquality().equals(other.canJoinPublicTasks, canJoinPublicTasks)) &&
             (identical(other.canImportChats, canImportChats) || const DeepCollectionEquality().equals(other.canImportChats, canImportChats)) &&
+            (identical(other.canCreateTeam, canCreateTeam) || const DeepCollectionEquality().equals(other.canCreateTeam, canCreateTeam)) &&
             (identical(other.customFields, customFields) || const DeepCollectionEquality().equals(other.customFields, customFields)) &&
             (identical(other.canDeleteAnyMessage, canDeleteAnyMessage) || const DeepCollectionEquality().equals(other.canDeleteAnyMessage, canDeleteAnyMessage)));
   }
@@ -2237,6 +2266,7 @@ class _$_Contact implements _Contact {
       const DeepCollectionEquality().hash(canJoinPublicGroups) ^
       const DeepCollectionEquality().hash(canJoinPublicTasks) ^
       const DeepCollectionEquality().hash(canImportChats) ^
+      const DeepCollectionEquality().hash(canCreateTeam) ^
       const DeepCollectionEquality().hash(customFields) ^
       const DeepCollectionEquality().hash(canDeleteAnyMessage);
 
@@ -2387,6 +2417,8 @@ abstract class _Contact implements Contact {
           bool? canJoinPublicTasks,
       @JsonKey(name: 'can_import_chats')
           bool? canImportChats,
+      @JsonKey(name: 'can_create_team')
+          bool? canCreateTeam,
       @JsonKey(name: 'custom_fields')
           ContactCustomFields? customFields,
       @Deprecated('Deprecated.')
@@ -2727,6 +2759,11 @@ abstract class _Contact implements Contact {
   /// Can I import chats from external services (now its only telegram).
   @JsonKey(name: 'can_import_chats')
   bool? get canImportChats => throw _privateConstructorUsedError;
+  @override
+
+  /// Can i create new team.
+  @JsonKey(name: 'can_create_team')
+  bool? get canCreateTeam => throw _privateConstructorUsedError;
   @override
 
   /// Extra contact fields.

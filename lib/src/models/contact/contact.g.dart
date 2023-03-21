@@ -83,6 +83,7 @@ _$_Contact _$$_ContactFromJson(Map<String, dynamic> json) => _$_Contact(
       canJoinPublicGroups: json['can_join_public_groups'] as bool?,
       canJoinPublicTasks: json['can_join_public_tasks'] as bool?,
       canImportChats: json['can_import_chats'] as bool?,
+      canCreateTeam: json['can_create_team'] as bool?,
       customFields: json['custom_fields'] == null
           ? null
           : ContactCustomFields.fromJson(
@@ -158,6 +159,7 @@ Map<String, dynamic> _$$_ContactToJson(_$_Contact instance) =>
       'can_join_public_groups': instance.canJoinPublicGroups,
       'can_join_public_tasks': instance.canJoinPublicTasks,
       'can_import_chats': instance.canImportChats,
+      'can_create_team': instance.canCreateTeam,
       'custom_fields': instance.customFields?.toJson(),
       'can_delete_any_message': instance.canDeleteAnyMessage,
     };

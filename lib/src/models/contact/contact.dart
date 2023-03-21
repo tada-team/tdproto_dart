@@ -206,6 +206,9 @@ class Contact with _$Contact {
     /// Can I import chats from external services (now its only telegram).
     @JsonKey(name: 'can_import_chats') bool? canImportChats,
     
+    /// Can i create new team.
+    @JsonKey(name: 'can_create_team') bool? canCreateTeam,
+    
     /// Extra contact fields.
     @JsonKey(name: 'custom_fields') ContactCustomFields? customFields,
     
