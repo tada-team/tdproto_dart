@@ -25,6 +25,9 @@ _$_CreatePersonalAccountResponse _$$_CreatePersonalAccountResponseFromJson(
       suspendDate: json['suspend_date'] as String?,
       status: json['status'] as String,
       tariff: TariffBilling.fromJson(json['tariff'] as Map<String, dynamic>),
+      owner: json['owner'] == null
+          ? null
+          : Contact.fromJson(json['owner'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_CreatePersonalAccountResponseToJson(
@@ -46,4 +49,5 @@ Map<String, dynamic> _$$_CreatePersonalAccountResponseToJson(
       'suspend_date': instance.suspendDate,
       'status': instance.status,
       'tariff': instance.tariff.toJson(),
+      'owner': instance.owner?.toJson(),
     };

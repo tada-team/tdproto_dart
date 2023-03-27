@@ -54,7 +54,9 @@ class _$PersonalAccountBillingTearOff {
       @JsonKey(name: 'status')
           required String status,
       @JsonKey(name: 'tariff')
-          required TariffBilling tariff}) {
+          required TariffBilling tariff,
+      @JsonKey(name: 'owner')
+          Contact? owner}) {
     return _PersonalAccountBilling(
       personalAccountId: personalAccountId,
       ownerID: ownerID,
@@ -72,6 +74,7 @@ class _$PersonalAccountBillingTearOff {
       suspendDate: suspendDate,
       status: status,
       tariff: tariff,
+      owner: owner,
     );
   }
 
@@ -149,6 +152,10 @@ mixin _$PersonalAccountBilling {
   @JsonKey(name: 'tariff')
   TariffBilling get tariff => throw _privateConstructorUsedError;
 
+  /// Owner of this personal account.
+  @JsonKey(name: 'owner')
+  Contact? get owner => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $PersonalAccountBillingCopyWith<PersonalAccountBilling> get copyWith =>
@@ -176,9 +183,11 @@ abstract class $PersonalAccountBillingCopyWith<$Res> {
       @JsonKey(name: 'block_date') String? blockDate,
       @JsonKey(name: 'suspend_date') String? suspendDate,
       @JsonKey(name: 'status') String status,
-      @JsonKey(name: 'tariff') TariffBilling tariff});
+      @JsonKey(name: 'tariff') TariffBilling tariff,
+      @JsonKey(name: 'owner') Contact? owner});
 
   $TariffBillingCopyWith<$Res> get tariff;
+  $ContactCopyWith<$Res>? get owner;
 }
 
 /// @nodoc
@@ -208,6 +217,7 @@ class _$PersonalAccountBillingCopyWithImpl<$Res>
     Object? suspendDate = freezed,
     Object? status = freezed,
     Object? tariff = freezed,
+    Object? owner = freezed,
   }) {
     return _then(_value.copyWith(
       personalAccountId: personalAccountId == freezed
@@ -274,6 +284,10 @@ class _$PersonalAccountBillingCopyWithImpl<$Res>
           ? _value.tariff
           : tariff // ignore: cast_nullable_to_non_nullable
               as TariffBilling,
+      owner: owner == freezed
+          ? _value.owner
+          : owner // ignore: cast_nullable_to_non_nullable
+              as Contact?,
     ));
   }
 
@@ -281,6 +295,17 @@ class _$PersonalAccountBillingCopyWithImpl<$Res>
   $TariffBillingCopyWith<$Res> get tariff {
     return $TariffBillingCopyWith<$Res>(_value.tariff, (value) {
       return _then(_value.copyWith(tariff: value));
+    });
+  }
+
+  @override
+  $ContactCopyWith<$Res>? get owner {
+    if (_value.owner == null) {
+      return null;
+    }
+
+    return $ContactCopyWith<$Res>(_value.owner!, (value) {
+      return _then(_value.copyWith(owner: value));
     });
   }
 }
@@ -308,10 +333,13 @@ abstract class _$PersonalAccountBillingCopyWith<$Res>
       @JsonKey(name: 'block_date') String? blockDate,
       @JsonKey(name: 'suspend_date') String? suspendDate,
       @JsonKey(name: 'status') String status,
-      @JsonKey(name: 'tariff') TariffBilling tariff});
+      @JsonKey(name: 'tariff') TariffBilling tariff,
+      @JsonKey(name: 'owner') Contact? owner});
 
   @override
   $TariffBillingCopyWith<$Res> get tariff;
+  @override
+  $ContactCopyWith<$Res>? get owner;
 }
 
 /// @nodoc
@@ -343,6 +371,7 @@ class __$PersonalAccountBillingCopyWithImpl<$Res>
     Object? suspendDate = freezed,
     Object? status = freezed,
     Object? tariff = freezed,
+    Object? owner = freezed,
   }) {
     return _then(_PersonalAccountBilling(
       personalAccountId: personalAccountId == freezed
@@ -409,6 +438,10 @@ class __$PersonalAccountBillingCopyWithImpl<$Res>
           ? _value.tariff
           : tariff // ignore: cast_nullable_to_non_nullable
               as TariffBilling,
+      owner: owner == freezed
+          ? _value.owner
+          : owner // ignore: cast_nullable_to_non_nullable
+              as Contact?,
     ));
   }
 }
@@ -448,7 +481,9 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
       @JsonKey(name: 'status')
           required this.status,
       @JsonKey(name: 'tariff')
-          required this.tariff});
+          required this.tariff,
+      @JsonKey(name: 'owner')
+          this.owner});
 
   factory _$_PersonalAccountBilling.fromJson(Map<String, dynamic> json) =>
       _$$_PersonalAccountBillingFromJson(json);
@@ -533,10 +568,15 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
   /// Tariff on this personal account.
   @JsonKey(name: 'tariff')
   final TariffBilling tariff;
+  @override
+
+  /// Owner of this personal account.
+  @JsonKey(name: 'owner')
+  final Contact? owner;
 
   @override
   String toString() {
-    return 'PersonalAccountBilling(personalAccountId: $personalAccountId, ownerID: $ownerID, ownerUuid: $ownerUuid, teamsCount: $teamsCount, workplaceCount: $workplaceCount, emptyWorkplaceCount: $emptyWorkplaceCount, occupiedWorkplaceCount: $occupiedWorkplaceCount, freeWorkplaceCount: $freeWorkplaceCount, paidWorkplaceCount: $paidWorkplaceCount, isBlocked: $isBlocked, isSuspended: $isSuspended, nextBillingDate: $nextBillingDate, blockDate: $blockDate, suspendDate: $suspendDate, status: $status, tariff: $tariff)';
+    return 'PersonalAccountBilling(personalAccountId: $personalAccountId, ownerID: $ownerID, ownerUuid: $ownerUuid, teamsCount: $teamsCount, workplaceCount: $workplaceCount, emptyWorkplaceCount: $emptyWorkplaceCount, occupiedWorkplaceCount: $occupiedWorkplaceCount, freeWorkplaceCount: $freeWorkplaceCount, paidWorkplaceCount: $paidWorkplaceCount, isBlocked: $isBlocked, isSuspended: $isSuspended, nextBillingDate: $nextBillingDate, blockDate: $blockDate, suspendDate: $suspendDate, status: $status, tariff: $tariff, owner: $owner)';
   }
 
   @override
@@ -588,7 +628,9 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
             (identical(other.status, status) ||
                 const DeepCollectionEquality().equals(other.status, status)) &&
             (identical(other.tariff, tariff) ||
-                const DeepCollectionEquality().equals(other.tariff, tariff)));
+                const DeepCollectionEquality().equals(other.tariff, tariff)) &&
+            (identical(other.owner, owner) ||
+                const DeepCollectionEquality().equals(other.owner, owner)));
   }
 
   @override
@@ -609,7 +651,8 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
       const DeepCollectionEquality().hash(blockDate) ^
       const DeepCollectionEquality().hash(suspendDate) ^
       const DeepCollectionEquality().hash(status) ^
-      const DeepCollectionEquality().hash(tariff);
+      const DeepCollectionEquality().hash(tariff) ^
+      const DeepCollectionEquality().hash(owner);
 
   @JsonKey(ignore: true)
   @override
@@ -656,7 +699,9 @@ abstract class _PersonalAccountBilling implements PersonalAccountBilling {
       @JsonKey(name: 'status')
           required String status,
       @JsonKey(name: 'tariff')
-          required TariffBilling tariff}) = _$_PersonalAccountBilling;
+          required TariffBilling tariff,
+      @JsonKey(name: 'owner')
+          Contact? owner}) = _$_PersonalAccountBilling;
 
   factory _PersonalAccountBilling.fromJson(Map<String, dynamic> json) =
       _$_PersonalAccountBilling.fromJson;
@@ -741,6 +786,11 @@ abstract class _PersonalAccountBilling implements PersonalAccountBilling {
   /// Tariff on this personal account.
   @JsonKey(name: 'tariff')
   TariffBilling get tariff => throw _privateConstructorUsedError;
+  @override
+
+  /// Owner of this personal account.
+  @JsonKey(name: 'owner')
+  Contact? get owner => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$PersonalAccountBillingCopyWith<_PersonalAccountBilling> get copyWith =>

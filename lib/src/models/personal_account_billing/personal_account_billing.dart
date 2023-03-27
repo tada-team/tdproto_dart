@@ -56,6 +56,9 @@ class PersonalAccountBilling with _$PersonalAccountBilling {
     /// Tariff on this personal account.
     @JsonKey(name: 'tariff') required TariffBilling tariff,
     
+    /// Owner of this personal account.
+    @JsonKey(name: 'owner') Contact? owner,
+    
     
   }) = _PersonalAccountBilling;
 
