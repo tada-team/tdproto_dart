@@ -23,9 +23,7 @@ class _$CounterpartyUpdateRequestTearOff {
   const _$CounterpartyUpdateRequestTearOff();
 
   _CounterpartyUpdateRequest call(
-      {@JsonKey(name: 'id')
-          required String id,
-      @JsonKey(name: 'personal_account_id')
+      {@JsonKey(name: 'personal_account_id')
           required String personalAccountId,
       @JsonKey(name: 'electronic_document_management_id')
           String? electronicDocumentManagementId,
@@ -44,7 +42,6 @@ class _$CounterpartyUpdateRequestTearOff {
       @JsonKey(name: 'counterparty_type')
           required String counterpartyType}) {
     return _CounterpartyUpdateRequest(
-      id: id,
       personalAccountId: personalAccountId,
       electronicDocumentManagementId: electronicDocumentManagementId,
       fullName: fullName,
@@ -67,10 +64,6 @@ const $CounterpartyUpdateRequest = _$CounterpartyUpdateRequestTearOff();
 
 /// @nodoc
 mixin _$CounterpartyUpdateRequest {
-  /// .
-  @JsonKey(name: 'id')
-  String get id => throw _privateConstructorUsedError;
-
   /// .
   @JsonKey(name: 'personal_account_id')
   String get personalAccountId => throw _privateConstructorUsedError;
@@ -121,9 +114,7 @@ abstract class $CounterpartyUpdateRequestCopyWith<$Res> {
           $Res Function(CounterpartyUpdateRequest) then) =
       _$CounterpartyUpdateRequestCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'id')
-          String id,
-      @JsonKey(name: 'personal_account_id')
+      {@JsonKey(name: 'personal_account_id')
           String personalAccountId,
       @JsonKey(name: 'electronic_document_management_id')
           String? electronicDocumentManagementId,
@@ -154,7 +145,6 @@ class _$CounterpartyUpdateRequestCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? id = freezed,
     Object? personalAccountId = freezed,
     Object? electronicDocumentManagementId = freezed,
     Object? fullName = freezed,
@@ -166,10 +156,6 @@ class _$CounterpartyUpdateRequestCopyWithImpl<$Res>
     Object? counterpartyType = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
@@ -219,9 +205,7 @@ abstract class _$CounterpartyUpdateRequestCopyWith<$Res>
       __$CounterpartyUpdateRequestCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'id')
-          String id,
-      @JsonKey(name: 'personal_account_id')
+      {@JsonKey(name: 'personal_account_id')
           String personalAccountId,
       @JsonKey(name: 'electronic_document_management_id')
           String? electronicDocumentManagementId,
@@ -255,7 +239,6 @@ class __$CounterpartyUpdateRequestCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? id = freezed,
     Object? personalAccountId = freezed,
     Object? electronicDocumentManagementId = freezed,
     Object? fullName = freezed,
@@ -267,10 +250,6 @@ class __$CounterpartyUpdateRequestCopyWithImpl<$Res>
     Object? counterpartyType = freezed,
   }) {
     return _then(_CounterpartyUpdateRequest(
-      id: id == freezed
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
@@ -316,9 +295,7 @@ class __$CounterpartyUpdateRequestCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_CounterpartyUpdateRequest implements _CounterpartyUpdateRequest {
   const _$_CounterpartyUpdateRequest(
-      {@JsonKey(name: 'id')
-          required this.id,
-      @JsonKey(name: 'personal_account_id')
+      {@JsonKey(name: 'personal_account_id')
           required this.personalAccountId,
       @JsonKey(name: 'electronic_document_management_id')
           this.electronicDocumentManagementId,
@@ -340,11 +317,6 @@ class _$_CounterpartyUpdateRequest implements _CounterpartyUpdateRequest {
   factory _$_CounterpartyUpdateRequest.fromJson(Map<String, dynamic> json) =>
       _$$_CounterpartyUpdateRequestFromJson(json);
 
-  @override
-
-  /// .
-  @JsonKey(name: 'id')
-  final String id;
   @override
 
   /// .
@@ -393,19 +365,18 @@ class _$_CounterpartyUpdateRequest implements _CounterpartyUpdateRequest {
 
   @override
   String toString() {
-    return 'CounterpartyUpdateRequest(id: $id, personalAccountId: $personalAccountId, electronicDocumentManagementId: $electronicDocumentManagementId, fullName: $fullName, taxpayerIdentificationNumber: $taxpayerIdentificationNumber, legalAddress: $legalAddress, physicalAddress: $physicalAddress, accountingDictionaryCode: $accountingDictionaryCode, classifierOfIndustrialEnterprises: $classifierOfIndustrialEnterprises, counterpartyType: $counterpartyType)';
+    return 'CounterpartyUpdateRequest(personalAccountId: $personalAccountId, electronicDocumentManagementId: $electronicDocumentManagementId, fullName: $fullName, taxpayerIdentificationNumber: $taxpayerIdentificationNumber, legalAddress: $legalAddress, physicalAddress: $physicalAddress, accountingDictionaryCode: $accountingDictionaryCode, classifierOfIndustrialEnterprises: $classifierOfIndustrialEnterprises, counterpartyType: $counterpartyType)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _CounterpartyUpdateRequest &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
             (identical(other.personalAccountId, personalAccountId) ||
                 const DeepCollectionEquality()
                     .equals(other.personalAccountId, personalAccountId)) &&
-            (identical(other.electronicDocumentManagementId, electronicDocumentManagementId) ||
+            (identical(other.electronicDocumentManagementId,
+                    electronicDocumentManagementId) ||
                 const DeepCollectionEquality().equals(
                     other.electronicDocumentManagementId,
                     electronicDocumentManagementId)) &&
@@ -422,8 +393,7 @@ class _$_CounterpartyUpdateRequest implements _CounterpartyUpdateRequest {
             (identical(other.physicalAddress, physicalAddress) ||
                 const DeepCollectionEquality()
                     .equals(other.physicalAddress, physicalAddress)) &&
-            (identical(
-                    other.accountingDictionaryCode, accountingDictionaryCode) ||
+            (identical(other.accountingDictionaryCode, accountingDictionaryCode) ||
                 const DeepCollectionEquality().equals(
                     other.accountingDictionaryCode,
                     accountingDictionaryCode)) &&
@@ -440,7 +410,6 @@ class _$_CounterpartyUpdateRequest implements _CounterpartyUpdateRequest {
   @override
   int get hashCode =>
       runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
       const DeepCollectionEquality().hash(personalAccountId) ^
       const DeepCollectionEquality().hash(electronicDocumentManagementId) ^
       const DeepCollectionEquality().hash(fullName) ^
@@ -466,9 +435,7 @@ class _$_CounterpartyUpdateRequest implements _CounterpartyUpdateRequest {
 
 abstract class _CounterpartyUpdateRequest implements CounterpartyUpdateRequest {
   const factory _CounterpartyUpdateRequest(
-      {@JsonKey(name: 'id')
-          required String id,
-      @JsonKey(name: 'personal_account_id')
+      {@JsonKey(name: 'personal_account_id')
           required String personalAccountId,
       @JsonKey(name: 'electronic_document_management_id')
           String? electronicDocumentManagementId,
@@ -490,11 +457,6 @@ abstract class _CounterpartyUpdateRequest implements CounterpartyUpdateRequest {
   factory _CounterpartyUpdateRequest.fromJson(Map<String, dynamic> json) =
       _$_CounterpartyUpdateRequest.fromJson;
 
-  @override
-
-  /// .
-  @JsonKey(name: 'id')
-  String get id => throw _privateConstructorUsedError;
   @override
 
   /// .

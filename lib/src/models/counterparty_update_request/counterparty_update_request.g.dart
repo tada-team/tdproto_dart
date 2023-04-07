@@ -9,7 +9,6 @@ part of 'counterparty_update_request.dart';
 _$_CounterpartyUpdateRequest _$$_CounterpartyUpdateRequestFromJson(
         Map<String, dynamic> json) =>
     _$_CounterpartyUpdateRequest(
-      id: json['id'] as String,
       personalAccountId: json['personal_account_id'] as String,
       electronicDocumentManagementId:
           json['electronic_document_management_id'] as String?,
@@ -27,7 +26,6 @@ _$_CounterpartyUpdateRequest _$$_CounterpartyUpdateRequestFromJson(
 Map<String, dynamic> _$$_CounterpartyUpdateRequestToJson(
         _$_CounterpartyUpdateRequest instance) =>
     <String, dynamic>{
-      'id': instance.id,
       'personal_account_id': instance.personalAccountId,
       'electronic_document_management_id':
           instance.electronicDocumentManagementId,

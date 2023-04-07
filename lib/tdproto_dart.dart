@@ -103,7 +103,6 @@ export 'src/models/contacts_section_get_request/contacts_section_get_request.dar
 export 'src/models/counterparty/counterparty.dart';
 export 'src/models/counterparty_create_request/counterparty_create_request.dart';
 export 'src/models/counterparty_create_response/counterparty_create_response.dart';
-export 'src/models/counterparty_delete_request/counterparty_delete_request.dart';
 export 'src/models/counterparty_get_request/counterparty_get_request.dart';
 export 'src/models/counterparty_get_response/counterparty_get_response.dart';
 export 'src/models/counterparty_update_request/counterparty_update_request.dart';

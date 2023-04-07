@@ -9,9 +9,6 @@ part 'counterparty_update_request.g.dart';
 class CounterpartyUpdateRequest with _$CounterpartyUpdateRequest {
   const factory CounterpartyUpdateRequest({
     /// .
-    @JsonKey(name: 'id') required String id,
-    
-    /// .
     @JsonKey(name: 'personal_account_id') required String personalAccountId,
     
     /// .
