@@ -98,6 +98,9 @@ class Team with _$Team {
     /// Team pinned.
     @JsonKey(name: 'pinned') bool? pinned,
     
+    /// Sort ordering for pinned team.
+    @JsonKey(name: 'pinned_sort_ordering') int? pinnedSortOrdering,
+    
     /// Team's available tariff by includig archive ones.
     @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
     

@@ -47,6 +47,7 @@ _$_Team _$$_TeamFromJson(Map<String, dynamic> json) => _$_Team(
           : Theme.fromJson(json['theme'] as Map<String, dynamic>),
       hideArchivedUsers: json['hide_archived_users'] as bool?,
       pinned: json['pinned'] as bool?,
+      pinnedSortOrdering: json['pinned_sort_ordering'] as int?,
       availableTariffs: (json['available_tariffs'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList(),
@@ -91,6 +92,7 @@ Map<String, dynamic> _$$_TeamToJson(_$_Team instance) => <String, dynamic>{
       'theme': instance.theme?.toJson(),
       'hide_archived_users': instance.hideArchivedUsers,
       'pinned': instance.pinned,
+      'pinned_sort_ordering': instance.pinnedSortOrdering,
       'available_tariffs': instance.availableTariffs,
       'subscription': instance.subscription?.toJson(),
       'notebot': instance.notebot,

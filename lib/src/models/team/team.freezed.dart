@@ -52,6 +52,7 @@ class _$TeamTearOff {
       @JsonKey(name: 'theme') Theme? theme,
       @JsonKey(name: 'hide_archived_users') bool? hideArchivedUsers,
       @JsonKey(name: 'pinned') bool? pinned,
+      @JsonKey(name: 'pinned_sort_ordering') int? pinnedSortOrdering,
       @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
       @JsonKey(name: 'subscription') Subscription? subscription,
       @JsonKey(name: 'notebot') String? notebot,
@@ -88,6 +89,7 @@ class _$TeamTearOff {
       theme: theme,
       hideArchivedUsers: hideArchivedUsers,
       pinned: pinned,
+      pinnedSortOrdering: pinnedSortOrdering,
       availableTariffs: availableTariffs,
       subscription: subscription,
       notebot: notebot,
@@ -226,6 +228,10 @@ mixin _$Team {
   @JsonKey(name: 'pinned')
   bool? get pinned => throw _privateConstructorUsedError;
 
+  /// Sort ordering for pinned team.
+  @JsonKey(name: 'pinned_sort_ordering')
+  int? get pinnedSortOrdering => throw _privateConstructorUsedError;
+
   /// Team's available tariff by includig archive ones.
   @JsonKey(name: 'available_tariffs')
   List<String>? get availableTariffs => throw _privateConstructorUsedError;
@@ -286,6 +292,7 @@ abstract class $TeamCopyWith<$Res> {
       @JsonKey(name: 'theme') Theme? theme,
       @JsonKey(name: 'hide_archived_users') bool? hideArchivedUsers,
       @JsonKey(name: 'pinned') bool? pinned,
+      @JsonKey(name: 'pinned_sort_ordering') int? pinnedSortOrdering,
       @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
       @JsonKey(name: 'subscription') Subscription? subscription,
       @JsonKey(name: 'notebot') String? notebot,
@@ -340,6 +347,7 @@ class _$TeamCopyWithImpl<$Res> implements $TeamCopyWith<$Res> {
     Object? theme = freezed,
     Object? hideArchivedUsers = freezed,
     Object? pinned = freezed,
+    Object? pinnedSortOrdering = freezed,
     Object? availableTariffs = freezed,
     Object? subscription = freezed,
     Object? notebot = freezed,
@@ -467,6 +475,10 @@ class _$TeamCopyWithImpl<$Res> implements $TeamCopyWith<$Res> {
           ? _value.pinned
           : pinned // ignore: cast_nullable_to_non_nullable
               as bool?,
+      pinnedSortOrdering: pinnedSortOrdering == freezed
+          ? _value.pinnedSortOrdering
+          : pinnedSortOrdering // ignore: cast_nullable_to_non_nullable
+              as int?,
       availableTariffs: availableTariffs == freezed
           ? _value.availableTariffs
           : availableTariffs // ignore: cast_nullable_to_non_nullable
@@ -585,6 +597,7 @@ abstract class _$TeamCopyWith<$Res> implements $TeamCopyWith<$Res> {
       @JsonKey(name: 'theme') Theme? theme,
       @JsonKey(name: 'hide_archived_users') bool? hideArchivedUsers,
       @JsonKey(name: 'pinned') bool? pinned,
+      @JsonKey(name: 'pinned_sort_ordering') int? pinnedSortOrdering,
       @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
       @JsonKey(name: 'subscription') Subscription? subscription,
       @JsonKey(name: 'notebot') String? notebot,
@@ -646,6 +659,7 @@ class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res>
     Object? theme = freezed,
     Object? hideArchivedUsers = freezed,
     Object? pinned = freezed,
+    Object? pinnedSortOrdering = freezed,
     Object? availableTariffs = freezed,
     Object? subscription = freezed,
     Object? notebot = freezed,
@@ -773,6 +787,10 @@ class __$TeamCopyWithImpl<$Res> extends _$TeamCopyWithImpl<$Res>
           ? _value.pinned
           : pinned // ignore: cast_nullable_to_non_nullable
               as bool?,
+      pinnedSortOrdering: pinnedSortOrdering == freezed
+          ? _value.pinnedSortOrdering
+          : pinnedSortOrdering // ignore: cast_nullable_to_non_nullable
+              as int?,
       availableTariffs: availableTariffs == freezed
           ? _value.availableTariffs
           : availableTariffs // ignore: cast_nullable_to_non_nullable
@@ -861,6 +879,8 @@ class _$_Team implements _Team {
           this.hideArchivedUsers,
       @JsonKey(name: 'pinned')
           this.pinned,
+      @JsonKey(name: 'pinned_sort_ordering')
+          this.pinnedSortOrdering,
       @JsonKey(name: 'available_tariffs')
           this.availableTariffs,
       @JsonKey(name: 'subscription')
@@ -1026,6 +1046,11 @@ class _$_Team implements _Team {
   final bool? pinned;
   @override
 
+  /// Sort ordering for pinned team.
+  @JsonKey(name: 'pinned_sort_ordering')
+  final int? pinnedSortOrdering;
+  @override
+
   /// Team's available tariff by includig archive ones.
   @JsonKey(name: 'available_tariffs')
   final List<String>? availableTariffs;
@@ -1052,7 +1077,7 @@ class _$_Team implements _Team {
 
   @override
   String toString() {
-    return 'Team(uid: $uid, isArchive: $isArchive, gentime: $gentime, name: $name, defaultTaskDeadline: $defaultTaskDeadline, maxMessageUpdateAge: $maxMessageUpdateAge, icons: $icons, lastActive: $lastActive, changeableStatuses: $changeableStatuses, badProfile: $badProfile, needConfirmation: $needConfirmation, usePatronymic: $usePatronymic, userFields: $userFields, displayFamilyNameFirst: $displayFamilyNameFirst, useTaskImportance: $useTaskImportance, taskImportanceMin: $taskImportanceMin, taskImportanceMax: $taskImportanceMax, taskImportanceRev: $taskImportanceRev, useTaskUrgency: $useTaskUrgency, useTaskComplexity: $useTaskComplexity, useTaskSpentTime: $useTaskSpentTime, uploadsSize: $uploadsSize, uploadsSizeLimit: $uploadsSizeLimit, unreads: $unreads, me: $me, contacts: $contacts, singleGroup: $singleGroup, theme: $theme, hideArchivedUsers: $hideArchivedUsers, pinned: $pinned, availableTariffs: $availableTariffs, subscription: $subscription, notebot: $notebot, accountStatus: $accountStatus, owner: $owner)';
+    return 'Team(uid: $uid, isArchive: $isArchive, gentime: $gentime, name: $name, defaultTaskDeadline: $defaultTaskDeadline, maxMessageUpdateAge: $maxMessageUpdateAge, icons: $icons, lastActive: $lastActive, changeableStatuses: $changeableStatuses, badProfile: $badProfile, needConfirmation: $needConfirmation, usePatronymic: $usePatronymic, userFields: $userFields, displayFamilyNameFirst: $displayFamilyNameFirst, useTaskImportance: $useTaskImportance, taskImportanceMin: $taskImportanceMin, taskImportanceMax: $taskImportanceMax, taskImportanceRev: $taskImportanceRev, useTaskUrgency: $useTaskUrgency, useTaskComplexity: $useTaskComplexity, useTaskSpentTime: $useTaskSpentTime, uploadsSize: $uploadsSize, uploadsSizeLimit: $uploadsSizeLimit, unreads: $unreads, me: $me, contacts: $contacts, singleGroup: $singleGroup, theme: $theme, hideArchivedUsers: $hideArchivedUsers, pinned: $pinned, pinnedSortOrdering: $pinnedSortOrdering, availableTariffs: $availableTariffs, subscription: $subscription, notebot: $notebot, accountStatus: $accountStatus, owner: $owner)';
   }
 
   @override
@@ -1132,6 +1157,7 @@ class _$_Team implements _Team {
             (identical(other.theme, theme) || const DeepCollectionEquality().equals(other.theme, theme)) &&
             (identical(other.hideArchivedUsers, hideArchivedUsers) || const DeepCollectionEquality().equals(other.hideArchivedUsers, hideArchivedUsers)) &&
             (identical(other.pinned, pinned) || const DeepCollectionEquality().equals(other.pinned, pinned)) &&
+            (identical(other.pinnedSortOrdering, pinnedSortOrdering) || const DeepCollectionEquality().equals(other.pinnedSortOrdering, pinnedSortOrdering)) &&
             (identical(other.availableTariffs, availableTariffs) || const DeepCollectionEquality().equals(other.availableTariffs, availableTariffs)) &&
             (identical(other.subscription, subscription) || const DeepCollectionEquality().equals(other.subscription, subscription)) &&
             (identical(other.notebot, notebot) || const DeepCollectionEquality().equals(other.notebot, notebot)) &&
@@ -1172,6 +1198,7 @@ class _$_Team implements _Team {
       const DeepCollectionEquality().hash(theme) ^
       const DeepCollectionEquality().hash(hideArchivedUsers) ^
       const DeepCollectionEquality().hash(pinned) ^
+      const DeepCollectionEquality().hash(pinnedSortOrdering) ^
       const DeepCollectionEquality().hash(availableTariffs) ^
       const DeepCollectionEquality().hash(subscription) ^
       const DeepCollectionEquality().hash(notebot) ^
@@ -1221,6 +1248,7 @@ abstract class _Team implements Team {
       @JsonKey(name: 'theme') Theme? theme,
       @JsonKey(name: 'hide_archived_users') bool? hideArchivedUsers,
       @JsonKey(name: 'pinned') bool? pinned,
+      @JsonKey(name: 'pinned_sort_ordering') int? pinnedSortOrdering,
       @JsonKey(name: 'available_tariffs') List<String>? availableTariffs,
       @JsonKey(name: 'subscription') Subscription? subscription,
       @JsonKey(name: 'notebot') String? notebot,
@@ -1379,6 +1407,11 @@ abstract class _Team implements Team {
   /// Team pinned.
   @JsonKey(name: 'pinned')
   bool? get pinned => throw _privateConstructorUsedError;
+  @override
+
+  /// Sort ordering for pinned team.
+  @JsonKey(name: 'pinned_sort_ordering')
+  int? get pinnedSortOrdering => throw _privateConstructorUsedError;
   @override
 
   /// Team's available tariff by includig archive ones.
