@@ -1,0 +1,22 @@
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+enum EnquiryStatus { 
+  @JsonValue('ENQUIRY_STATUS_UNSPECIFIED')
+  ENQUIRY_STATUS_UNSPECIFIED,
+  
+  @JsonValue('ENQUIRY_STATUS_WAITING')
+  ENQUIRY_STATUS_WAITING,
+  
+  @JsonValue('ENQUIRY_STATUS_CANCELLED')
+  ENQUIRY_STATUS_CANCELLED,
+  
+  @JsonValue('ENQUIRY_STATUS_ACTIVE')
+  ENQUIRY_STATUS_ACTIVE,
+  
+  @JsonValue('ENQUIRY_STATUS_EXPIRED')
+  ENQUIRY_STATUS_EXPIRED,
+  
+  @JsonValue('ENQUIRY_STATUS_DONE')
+  ENQUIRY_STATUS_DONE,
+  
+}
