@@ -50,10 +50,14 @@ class _$EnquiryTearOff {
           String? actuallyPaidAt,
       @JsonKey(name: 'fixation_paid_at')
           String? fixationPaidAt,
-      @JsonKey(name: 'expiration_at')
-          String? expirationAt,
+      @JsonKey(name: 'expiration_date')
+          String? expirationDate,
+      @JsonKey(name: 'expired_at')
+          String? expiredAt,
       @JsonKey(name: 'activate_at')
           String? activateAt,
+      @JsonKey(name: 'deactivate_at')
+          String? deactivateAt,
       @JsonKey(name: 'enquiry_type')
           required String enquiryType,
       @JsonKey(name: 'enquiry_status')
@@ -81,8 +85,10 @@ class _$EnquiryTearOff {
       creditedAt: creditedAt,
       actuallyPaidAt: actuallyPaidAt,
       fixationPaidAt: fixationPaidAt,
-      expirationAt: expirationAt,
+      expirationDate: expirationDate,
+      expiredAt: expiredAt,
       activateAt: activateAt,
+      deactivateAt: deactivateAt,
       enquiryType: enquiryType,
       enquiryStatus: enquiryStatus,
       enquiryPaymentStatus: enquiryPaymentStatus,
@@ -159,12 +165,20 @@ mixin _$Enquiry {
   String? get fixationPaidAt => throw _privateConstructorUsedError;
 
   /// .
-  @JsonKey(name: 'expiration_at')
-  String? get expirationAt => throw _privateConstructorUsedError;
+  @JsonKey(name: 'expiration_date')
+  String? get expirationDate => throw _privateConstructorUsedError;
+
+  /// .
+  @JsonKey(name: 'expired_at')
+  String? get expiredAt => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'activate_at')
   String? get activateAt => throw _privateConstructorUsedError;
+
+  /// .
+  @JsonKey(name: 'deactivate_at')
+  String? get deactivateAt => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'enquiry_type')
@@ -214,8 +228,10 @@ abstract class $EnquiryCopyWith<$Res> {
       @JsonKey(name: 'credited_at') String? creditedAt,
       @JsonKey(name: 'actually_paid_at') String? actuallyPaidAt,
       @JsonKey(name: 'fixation_paid_at') String? fixationPaidAt,
-      @JsonKey(name: 'expiration_at') String? expirationAt,
+      @JsonKey(name: 'expiration_date') String? expirationDate,
+      @JsonKey(name: 'expired_at') String? expiredAt,
       @JsonKey(name: 'activate_at') String? activateAt,
+      @JsonKey(name: 'deactivate_at') String? deactivateAt,
       @JsonKey(name: 'enquiry_type') String enquiryType,
       @JsonKey(name: 'enquiry_status') String enquiryStatus,
       @JsonKey(name: 'enquiry_payment_status') String enquiryPaymentStatus,
@@ -248,8 +264,10 @@ class _$EnquiryCopyWithImpl<$Res> implements $EnquiryCopyWith<$Res> {
     Object? creditedAt = freezed,
     Object? actuallyPaidAt = freezed,
     Object? fixationPaidAt = freezed,
-    Object? expirationAt = freezed,
+    Object? expirationDate = freezed,
+    Object? expiredAt = freezed,
     Object? activateAt = freezed,
+    Object? deactivateAt = freezed,
     Object? enquiryType = freezed,
     Object? enquiryStatus = freezed,
     Object? enquiryPaymentStatus = freezed,
@@ -314,13 +332,21 @@ class _$EnquiryCopyWithImpl<$Res> implements $EnquiryCopyWith<$Res> {
           ? _value.fixationPaidAt
           : fixationPaidAt // ignore: cast_nullable_to_non_nullable
               as String?,
-      expirationAt: expirationAt == freezed
-          ? _value.expirationAt
-          : expirationAt // ignore: cast_nullable_to_non_nullable
+      expirationDate: expirationDate == freezed
+          ? _value.expirationDate
+          : expirationDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      expiredAt: expiredAt == freezed
+          ? _value.expiredAt
+          : expiredAt // ignore: cast_nullable_to_non_nullable
               as String?,
       activateAt: activateAt == freezed
           ? _value.activateAt
           : activateAt // ignore: cast_nullable_to_non_nullable
+              as String?,
+      deactivateAt: deactivateAt == freezed
+          ? _value.deactivateAt
+          : deactivateAt // ignore: cast_nullable_to_non_nullable
               as String?,
       enquiryType: enquiryType == freezed
           ? _value.enquiryType
@@ -370,8 +396,10 @@ abstract class _$EnquiryCopyWith<$Res> implements $EnquiryCopyWith<$Res> {
       @JsonKey(name: 'credited_at') String? creditedAt,
       @JsonKey(name: 'actually_paid_at') String? actuallyPaidAt,
       @JsonKey(name: 'fixation_paid_at') String? fixationPaidAt,
-      @JsonKey(name: 'expiration_at') String? expirationAt,
+      @JsonKey(name: 'expiration_date') String? expirationDate,
+      @JsonKey(name: 'expired_at') String? expiredAt,
       @JsonKey(name: 'activate_at') String? activateAt,
+      @JsonKey(name: 'deactivate_at') String? deactivateAt,
       @JsonKey(name: 'enquiry_type') String enquiryType,
       @JsonKey(name: 'enquiry_status') String enquiryStatus,
       @JsonKey(name: 'enquiry_payment_status') String enquiryPaymentStatus,
@@ -405,8 +433,10 @@ class __$EnquiryCopyWithImpl<$Res> extends _$EnquiryCopyWithImpl<$Res>
     Object? creditedAt = freezed,
     Object? actuallyPaidAt = freezed,
     Object? fixationPaidAt = freezed,
-    Object? expirationAt = freezed,
+    Object? expirationDate = freezed,
+    Object? expiredAt = freezed,
     Object? activateAt = freezed,
+    Object? deactivateAt = freezed,
     Object? enquiryType = freezed,
     Object? enquiryStatus = freezed,
     Object? enquiryPaymentStatus = freezed,
@@ -471,13 +501,21 @@ class __$EnquiryCopyWithImpl<$Res> extends _$EnquiryCopyWithImpl<$Res>
           ? _value.fixationPaidAt
           : fixationPaidAt // ignore: cast_nullable_to_non_nullable
               as String?,
-      expirationAt: expirationAt == freezed
-          ? _value.expirationAt
-          : expirationAt // ignore: cast_nullable_to_non_nullable
+      expirationDate: expirationDate == freezed
+          ? _value.expirationDate
+          : expirationDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      expiredAt: expiredAt == freezed
+          ? _value.expiredAt
+          : expiredAt // ignore: cast_nullable_to_non_nullable
               as String?,
       activateAt: activateAt == freezed
           ? _value.activateAt
           : activateAt // ignore: cast_nullable_to_non_nullable
+              as String?,
+      deactivateAt: deactivateAt == freezed
+          ? _value.deactivateAt
+          : deactivateAt // ignore: cast_nullable_to_non_nullable
               as String?,
       enquiryType: enquiryType == freezed
           ? _value.enquiryType
@@ -539,10 +577,14 @@ class _$_Enquiry implements _Enquiry {
           this.actuallyPaidAt,
       @JsonKey(name: 'fixation_paid_at')
           this.fixationPaidAt,
-      @JsonKey(name: 'expiration_at')
-          this.expirationAt,
+      @JsonKey(name: 'expiration_date')
+          this.expirationDate,
+      @JsonKey(name: 'expired_at')
+          this.expiredAt,
       @JsonKey(name: 'activate_at')
           this.activateAt,
+      @JsonKey(name: 'deactivate_at')
+          this.deactivateAt,
       @JsonKey(name: 'enquiry_type')
           required this.enquiryType,
       @JsonKey(name: 'enquiry_status')
@@ -632,13 +674,23 @@ class _$_Enquiry implements _Enquiry {
   @override
 
   /// .
-  @JsonKey(name: 'expiration_at')
-  final String? expirationAt;
+  @JsonKey(name: 'expiration_date')
+  final String? expirationDate;
+  @override
+
+  /// .
+  @JsonKey(name: 'expired_at')
+  final String? expiredAt;
   @override
 
   /// .
   @JsonKey(name: 'activate_at')
   final String? activateAt;
+  @override
+
+  /// .
+  @JsonKey(name: 'deactivate_at')
+  final String? deactivateAt;
   @override
 
   /// .
@@ -672,7 +724,7 @@ class _$_Enquiry implements _Enquiry {
 
   @override
   String toString() {
-    return 'Enquiry(id: $id, personalAccountId: $personalAccountId, selectableWorkplaceCount: $selectableWorkplaceCount, amount: $amount, tariffName: $tariffName, workplacePrice: $workplacePrice, periodDays: $periodDays, freeWorkplaceCount: $freeWorkplaceCount, activationDate: $activationDate, deactivationDate: $deactivationDate, createdAt: $createdAt, creditedAt: $creditedAt, actuallyPaidAt: $actuallyPaidAt, fixationPaidAt: $fixationPaidAt, expirationAt: $expirationAt, activateAt: $activateAt, enquiryType: $enquiryType, enquiryStatus: $enquiryStatus, enquiryPaymentStatus: $enquiryPaymentStatus, paymentType: $paymentType, fileName: $fileName, mediaUrl: $mediaUrl)';
+    return 'Enquiry(id: $id, personalAccountId: $personalAccountId, selectableWorkplaceCount: $selectableWorkplaceCount, amount: $amount, tariffName: $tariffName, workplacePrice: $workplacePrice, periodDays: $periodDays, freeWorkplaceCount: $freeWorkplaceCount, activationDate: $activationDate, deactivationDate: $deactivationDate, createdAt: $createdAt, creditedAt: $creditedAt, actuallyPaidAt: $actuallyPaidAt, fixationPaidAt: $fixationPaidAt, expirationDate: $expirationDate, expiredAt: $expiredAt, activateAt: $activateAt, deactivateAt: $deactivateAt, enquiryType: $enquiryType, enquiryStatus: $enquiryStatus, enquiryPaymentStatus: $enquiryPaymentStatus, paymentType: $paymentType, fileName: $fileName, mediaUrl: $mediaUrl)';
   }
 
   @override
@@ -720,15 +772,17 @@ class _$_Enquiry implements _Enquiry {
             (identical(other.fixationPaidAt, fixationPaidAt) ||
                 const DeepCollectionEquality()
                     .equals(other.fixationPaidAt, fixationPaidAt)) &&
-            (identical(other.expirationAt, expirationAt) ||
+            (identical(other.expirationDate, expirationDate) ||
                 const DeepCollectionEquality()
-                    .equals(other.expirationAt, expirationAt)) &&
+                    .equals(other.expirationDate, expirationDate)) &&
+            (identical(other.expiredAt, expiredAt) ||
+                const DeepCollectionEquality()
+                    .equals(other.expiredAt, expiredAt)) &&
             (identical(other.activateAt, activateAt) ||
                 const DeepCollectionEquality()
                     .equals(other.activateAt, activateAt)) &&
-            (identical(other.enquiryType, enquiryType) ||
-                const DeepCollectionEquality()
-                    .equals(other.enquiryType, enquiryType)) &&
+            (identical(other.deactivateAt, deactivateAt) || const DeepCollectionEquality().equals(other.deactivateAt, deactivateAt)) &&
+            (identical(other.enquiryType, enquiryType) || const DeepCollectionEquality().equals(other.enquiryType, enquiryType)) &&
             (identical(other.enquiryStatus, enquiryStatus) || const DeepCollectionEquality().equals(other.enquiryStatus, enquiryStatus)) &&
             (identical(other.enquiryPaymentStatus, enquiryPaymentStatus) || const DeepCollectionEquality().equals(other.enquiryPaymentStatus, enquiryPaymentStatus)) &&
             (identical(other.paymentType, paymentType) || const DeepCollectionEquality().equals(other.paymentType, paymentType)) &&
@@ -753,8 +807,10 @@ class _$_Enquiry implements _Enquiry {
       const DeepCollectionEquality().hash(creditedAt) ^
       const DeepCollectionEquality().hash(actuallyPaidAt) ^
       const DeepCollectionEquality().hash(fixationPaidAt) ^
-      const DeepCollectionEquality().hash(expirationAt) ^
+      const DeepCollectionEquality().hash(expirationDate) ^
+      const DeepCollectionEquality().hash(expiredAt) ^
       const DeepCollectionEquality().hash(activateAt) ^
+      const DeepCollectionEquality().hash(deactivateAt) ^
       const DeepCollectionEquality().hash(enquiryType) ^
       const DeepCollectionEquality().hash(enquiryStatus) ^
       const DeepCollectionEquality().hash(enquiryPaymentStatus) ^
@@ -803,10 +859,14 @@ abstract class _Enquiry implements Enquiry {
           String? actuallyPaidAt,
       @JsonKey(name: 'fixation_paid_at')
           String? fixationPaidAt,
-      @JsonKey(name: 'expiration_at')
-          String? expirationAt,
+      @JsonKey(name: 'expiration_date')
+          String? expirationDate,
+      @JsonKey(name: 'expired_at')
+          String? expiredAt,
       @JsonKey(name: 'activate_at')
           String? activateAt,
+      @JsonKey(name: 'deactivate_at')
+          String? deactivateAt,
       @JsonKey(name: 'enquiry_type')
           required String enquiryType,
       @JsonKey(name: 'enquiry_status')
@@ -895,13 +955,23 @@ abstract class _Enquiry implements Enquiry {
   @override
 
   /// .
-  @JsonKey(name: 'expiration_at')
-  String? get expirationAt => throw _privateConstructorUsedError;
+  @JsonKey(name: 'expiration_date')
+  String? get expirationDate => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'expired_at')
+  String? get expiredAt => throw _privateConstructorUsedError;
   @override
 
   /// .
   @JsonKey(name: 'activate_at')
   String? get activateAt => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'deactivate_at')
+  String? get deactivateAt => throw _privateConstructorUsedError;
   @override
 
   /// .

@@ -51,10 +51,16 @@ class Enquiry with _$Enquiry {
     @JsonKey(name: 'fixation_paid_at') String? fixationPaidAt,
     
     /// .
-    @JsonKey(name: 'expiration_at') String? expirationAt,
+    @JsonKey(name: 'expiration_date') String? expirationDate,
+    
+    /// .
+    @JsonKey(name: 'expired_at') String? expiredAt,
     
     /// .
     @JsonKey(name: 'activate_at') String? activateAt,
+    
+    /// .
+    @JsonKey(name: 'deactivate_at') String? deactivateAt,
     
     /// .
     @JsonKey(name: 'enquiry_type') required String enquiryType,
