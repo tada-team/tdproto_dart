@@ -21,10 +21,7 @@ class EnquiryGetListRequest with _$EnquiryGetListRequest {
     @JsonKey(name: 'date_deactivate_to') String? dateDeactivateTo,
     
     /// .
-    @JsonKey(name: 'enquiry_status') String? enquiryStatus,
-    
-    /// .
-    @JsonKey(name: 'enquiry_payment_status') String? enquiryPaymentStatus,
+    @JsonKey(name: 'enquiry_status_filter') String? enquiryStatusFilter,
     
     /// .
     @JsonKey(name: 'limit') int? limit,

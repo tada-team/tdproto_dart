@@ -27,8 +27,7 @@ class _$EnquiryGetListRequestTearOff {
       @JsonKey(name: 'date_create_to') String? dateCreateTo,
       @JsonKey(name: 'date_activate_to') String? dateActivateTo,
       @JsonKey(name: 'date_deactivate_to') String? dateDeactivateTo,
-      @JsonKey(name: 'enquiry_status') String? enquiryStatus,
-      @JsonKey(name: 'enquiry_payment_status') String? enquiryPaymentStatus,
+      @JsonKey(name: 'enquiry_status_filter') String? enquiryStatusFilter,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset}) {
     return _EnquiryGetListRequest(
@@ -36,8 +35,7 @@ class _$EnquiryGetListRequestTearOff {
       dateCreateTo: dateCreateTo,
       dateActivateTo: dateActivateTo,
       dateDeactivateTo: dateDeactivateTo,
-      enquiryStatus: enquiryStatus,
-      enquiryPaymentStatus: enquiryPaymentStatus,
+      enquiryStatusFilter: enquiryStatusFilter,
       limit: limit,
       offset: offset,
     );
@@ -70,12 +68,8 @@ mixin _$EnquiryGetListRequest {
   String? get dateDeactivateTo => throw _privateConstructorUsedError;
 
   /// .
-  @JsonKey(name: 'enquiry_status')
-  String? get enquiryStatus => throw _privateConstructorUsedError;
-
-  /// .
-  @JsonKey(name: 'enquiry_payment_status')
-  String? get enquiryPaymentStatus => throw _privateConstructorUsedError;
+  @JsonKey(name: 'enquiry_status_filter')
+  String? get enquiryStatusFilter => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'limit')
@@ -101,8 +95,7 @@ abstract class $EnquiryGetListRequestCopyWith<$Res> {
       @JsonKey(name: 'date_create_to') String? dateCreateTo,
       @JsonKey(name: 'date_activate_to') String? dateActivateTo,
       @JsonKey(name: 'date_deactivate_to') String? dateDeactivateTo,
-      @JsonKey(name: 'enquiry_status') String? enquiryStatus,
-      @JsonKey(name: 'enquiry_payment_status') String? enquiryPaymentStatus,
+      @JsonKey(name: 'enquiry_status_filter') String? enquiryStatusFilter,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset});
 }
@@ -122,8 +115,7 @@ class _$EnquiryGetListRequestCopyWithImpl<$Res>
     Object? dateCreateTo = freezed,
     Object? dateActivateTo = freezed,
     Object? dateDeactivateTo = freezed,
-    Object? enquiryStatus = freezed,
-    Object? enquiryPaymentStatus = freezed,
+    Object? enquiryStatusFilter = freezed,
     Object? limit = freezed,
     Object? offset = freezed,
   }) {
@@ -144,13 +136,9 @@ class _$EnquiryGetListRequestCopyWithImpl<$Res>
           ? _value.dateDeactivateTo
           : dateDeactivateTo // ignore: cast_nullable_to_non_nullable
               as String?,
-      enquiryStatus: enquiryStatus == freezed
-          ? _value.enquiryStatus
-          : enquiryStatus // ignore: cast_nullable_to_non_nullable
-              as String?,
-      enquiryPaymentStatus: enquiryPaymentStatus == freezed
-          ? _value.enquiryPaymentStatus
-          : enquiryPaymentStatus // ignore: cast_nullable_to_non_nullable
+      enquiryStatusFilter: enquiryStatusFilter == freezed
+          ? _value.enquiryStatusFilter
+          : enquiryStatusFilter // ignore: cast_nullable_to_non_nullable
               as String?,
       limit: limit == freezed
           ? _value.limit
@@ -176,8 +164,7 @@ abstract class _$EnquiryGetListRequestCopyWith<$Res>
       @JsonKey(name: 'date_create_to') String? dateCreateTo,
       @JsonKey(name: 'date_activate_to') String? dateActivateTo,
       @JsonKey(name: 'date_deactivate_to') String? dateDeactivateTo,
-      @JsonKey(name: 'enquiry_status') String? enquiryStatus,
-      @JsonKey(name: 'enquiry_payment_status') String? enquiryPaymentStatus,
+      @JsonKey(name: 'enquiry_status_filter') String? enquiryStatusFilter,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset});
 }
@@ -199,8 +186,7 @@ class __$EnquiryGetListRequestCopyWithImpl<$Res>
     Object? dateCreateTo = freezed,
     Object? dateActivateTo = freezed,
     Object? dateDeactivateTo = freezed,
-    Object? enquiryStatus = freezed,
-    Object? enquiryPaymentStatus = freezed,
+    Object? enquiryStatusFilter = freezed,
     Object? limit = freezed,
     Object? offset = freezed,
   }) {
@@ -221,13 +207,9 @@ class __$EnquiryGetListRequestCopyWithImpl<$Res>
           ? _value.dateDeactivateTo
           : dateDeactivateTo // ignore: cast_nullable_to_non_nullable
               as String?,
-      enquiryStatus: enquiryStatus == freezed
-          ? _value.enquiryStatus
-          : enquiryStatus // ignore: cast_nullable_to_non_nullable
-              as String?,
-      enquiryPaymentStatus: enquiryPaymentStatus == freezed
-          ? _value.enquiryPaymentStatus
-          : enquiryPaymentStatus // ignore: cast_nullable_to_non_nullable
+      enquiryStatusFilter: enquiryStatusFilter == freezed
+          ? _value.enquiryStatusFilter
+          : enquiryStatusFilter // ignore: cast_nullable_to_non_nullable
               as String?,
       limit: limit == freezed
           ? _value.limit
@@ -249,8 +231,7 @@ class _$_EnquiryGetListRequest implements _EnquiryGetListRequest {
       @JsonKey(name: 'date_create_to') this.dateCreateTo,
       @JsonKey(name: 'date_activate_to') this.dateActivateTo,
       @JsonKey(name: 'date_deactivate_to') this.dateDeactivateTo,
-      @JsonKey(name: 'enquiry_status') this.enquiryStatus,
-      @JsonKey(name: 'enquiry_payment_status') this.enquiryPaymentStatus,
+      @JsonKey(name: 'enquiry_status_filter') this.enquiryStatusFilter,
       @JsonKey(name: 'limit') this.limit,
       @JsonKey(name: 'offset') this.offset});
 
@@ -280,13 +261,8 @@ class _$_EnquiryGetListRequest implements _EnquiryGetListRequest {
   @override
 
   /// .
-  @JsonKey(name: 'enquiry_status')
-  final String? enquiryStatus;
-  @override
-
-  /// .
-  @JsonKey(name: 'enquiry_payment_status')
-  final String? enquiryPaymentStatus;
+  @JsonKey(name: 'enquiry_status_filter')
+  final String? enquiryStatusFilter;
   @override
 
   /// .
@@ -300,7 +276,7 @@ class _$_EnquiryGetListRequest implements _EnquiryGetListRequest {
 
   @override
   String toString() {
-    return 'EnquiryGetListRequest(dateCreateFrom: $dateCreateFrom, dateCreateTo: $dateCreateTo, dateActivateTo: $dateActivateTo, dateDeactivateTo: $dateDeactivateTo, enquiryStatus: $enquiryStatus, enquiryPaymentStatus: $enquiryPaymentStatus, limit: $limit, offset: $offset)';
+    return 'EnquiryGetListRequest(dateCreateFrom: $dateCreateFrom, dateCreateTo: $dateCreateTo, dateActivateTo: $dateActivateTo, dateDeactivateTo: $dateDeactivateTo, enquiryStatusFilter: $enquiryStatusFilter, limit: $limit, offset: $offset)';
   }
 
   @override
@@ -319,12 +295,9 @@ class _$_EnquiryGetListRequest implements _EnquiryGetListRequest {
             (identical(other.dateDeactivateTo, dateDeactivateTo) ||
                 const DeepCollectionEquality()
                     .equals(other.dateDeactivateTo, dateDeactivateTo)) &&
-            (identical(other.enquiryStatus, enquiryStatus) ||
+            (identical(other.enquiryStatusFilter, enquiryStatusFilter) ||
                 const DeepCollectionEquality()
-                    .equals(other.enquiryStatus, enquiryStatus)) &&
-            (identical(other.enquiryPaymentStatus, enquiryPaymentStatus) ||
-                const DeepCollectionEquality().equals(
-                    other.enquiryPaymentStatus, enquiryPaymentStatus)) &&
+                    .equals(other.enquiryStatusFilter, enquiryStatusFilter)) &&
             (identical(other.limit, limit) ||
                 const DeepCollectionEquality().equals(other.limit, limit)) &&
             (identical(other.offset, offset) ||
@@ -338,8 +311,7 @@ class _$_EnquiryGetListRequest implements _EnquiryGetListRequest {
       const DeepCollectionEquality().hash(dateCreateTo) ^
       const DeepCollectionEquality().hash(dateActivateTo) ^
       const DeepCollectionEquality().hash(dateDeactivateTo) ^
-      const DeepCollectionEquality().hash(enquiryStatus) ^
-      const DeepCollectionEquality().hash(enquiryPaymentStatus) ^
+      const DeepCollectionEquality().hash(enquiryStatusFilter) ^
       const DeepCollectionEquality().hash(limit) ^
       const DeepCollectionEquality().hash(offset);
 
@@ -361,8 +333,7 @@ abstract class _EnquiryGetListRequest implements EnquiryGetListRequest {
       @JsonKey(name: 'date_create_to') String? dateCreateTo,
       @JsonKey(name: 'date_activate_to') String? dateActivateTo,
       @JsonKey(name: 'date_deactivate_to') String? dateDeactivateTo,
-      @JsonKey(name: 'enquiry_status') String? enquiryStatus,
-      @JsonKey(name: 'enquiry_payment_status') String? enquiryPaymentStatus,
+      @JsonKey(name: 'enquiry_status_filter') String? enquiryStatusFilter,
       @JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset}) = _$_EnquiryGetListRequest;
 
@@ -392,13 +363,8 @@ abstract class _EnquiryGetListRequest implements EnquiryGetListRequest {
   @override
 
   /// .
-  @JsonKey(name: 'enquiry_status')
-  String? get enquiryStatus => throw _privateConstructorUsedError;
-  @override
-
-  /// .
-  @JsonKey(name: 'enquiry_payment_status')
-  String? get enquiryPaymentStatus => throw _privateConstructorUsedError;
+  @JsonKey(name: 'enquiry_status_filter')
+  String? get enquiryStatusFilter => throw _privateConstructorUsedError;
   @override
 
   /// .
