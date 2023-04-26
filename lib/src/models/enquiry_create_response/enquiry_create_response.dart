@@ -66,10 +66,7 @@ class EnquiryCreateResponse with _$EnquiryCreateResponse {
     @JsonKey(name: 'enquiry_type') required String enquiryType,
     
     /// .
-    @JsonKey(name: 'enquiry_status') required String enquiryStatus,
-    
-    /// .
-    @JsonKey(name: 'enquiry_payment_status') required String enquiryPaymentStatus,
+    @JsonKey(name: 'status') required String status,
     
     /// .
     @JsonKey(name: 'payment_type') required String paymentType,

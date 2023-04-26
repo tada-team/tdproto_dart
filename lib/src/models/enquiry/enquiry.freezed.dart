@@ -60,10 +60,8 @@ class _$EnquiryTearOff {
           String? deactivateAt,
       @JsonKey(name: 'enquiry_type')
           required String enquiryType,
-      @JsonKey(name: 'enquiry_status')
-          required String enquiryStatus,
-      @JsonKey(name: 'enquiry_payment_status')
-          required String enquiryPaymentStatus,
+      @JsonKey(name: 'status')
+          required String status,
       @JsonKey(name: 'payment_type')
           required String paymentType,
       @JsonKey(name: 'file_name')
@@ -90,8 +88,7 @@ class _$EnquiryTearOff {
       activateAt: activateAt,
       deactivateAt: deactivateAt,
       enquiryType: enquiryType,
-      enquiryStatus: enquiryStatus,
-      enquiryPaymentStatus: enquiryPaymentStatus,
+      status: status,
       paymentType: paymentType,
       fileName: fileName,
       mediaUrl: mediaUrl,
@@ -185,12 +182,8 @@ mixin _$Enquiry {
   String get enquiryType => throw _privateConstructorUsedError;
 
   /// .
-  @JsonKey(name: 'enquiry_status')
-  String get enquiryStatus => throw _privateConstructorUsedError;
-
-  /// .
-  @JsonKey(name: 'enquiry_payment_status')
-  String get enquiryPaymentStatus => throw _privateConstructorUsedError;
+  @JsonKey(name: 'status')
+  String get status => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'payment_type')
@@ -233,8 +226,7 @@ abstract class $EnquiryCopyWith<$Res> {
       @JsonKey(name: 'activate_at') String? activateAt,
       @JsonKey(name: 'deactivate_at') String? deactivateAt,
       @JsonKey(name: 'enquiry_type') String enquiryType,
-      @JsonKey(name: 'enquiry_status') String enquiryStatus,
-      @JsonKey(name: 'enquiry_payment_status') String enquiryPaymentStatus,
+      @JsonKey(name: 'status') String status,
       @JsonKey(name: 'payment_type') String paymentType,
       @JsonKey(name: 'file_name') String? fileName,
       @JsonKey(name: 'media_url') String? mediaUrl});
@@ -269,8 +261,7 @@ class _$EnquiryCopyWithImpl<$Res> implements $EnquiryCopyWith<$Res> {
     Object? activateAt = freezed,
     Object? deactivateAt = freezed,
     Object? enquiryType = freezed,
-    Object? enquiryStatus = freezed,
-    Object? enquiryPaymentStatus = freezed,
+    Object? status = freezed,
     Object? paymentType = freezed,
     Object? fileName = freezed,
     Object? mediaUrl = freezed,
@@ -352,13 +343,9 @@ class _$EnquiryCopyWithImpl<$Res> implements $EnquiryCopyWith<$Res> {
           ? _value.enquiryType
           : enquiryType // ignore: cast_nullable_to_non_nullable
               as String,
-      enquiryStatus: enquiryStatus == freezed
-          ? _value.enquiryStatus
-          : enquiryStatus // ignore: cast_nullable_to_non_nullable
-              as String,
-      enquiryPaymentStatus: enquiryPaymentStatus == freezed
-          ? _value.enquiryPaymentStatus
-          : enquiryPaymentStatus // ignore: cast_nullable_to_non_nullable
+      status: status == freezed
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
               as String,
       paymentType: paymentType == freezed
           ? _value.paymentType
@@ -401,8 +388,7 @@ abstract class _$EnquiryCopyWith<$Res> implements $EnquiryCopyWith<$Res> {
       @JsonKey(name: 'activate_at') String? activateAt,
       @JsonKey(name: 'deactivate_at') String? deactivateAt,
       @JsonKey(name: 'enquiry_type') String enquiryType,
-      @JsonKey(name: 'enquiry_status') String enquiryStatus,
-      @JsonKey(name: 'enquiry_payment_status') String enquiryPaymentStatus,
+      @JsonKey(name: 'status') String status,
       @JsonKey(name: 'payment_type') String paymentType,
       @JsonKey(name: 'file_name') String? fileName,
       @JsonKey(name: 'media_url') String? mediaUrl});
@@ -438,8 +424,7 @@ class __$EnquiryCopyWithImpl<$Res> extends _$EnquiryCopyWithImpl<$Res>
     Object? activateAt = freezed,
     Object? deactivateAt = freezed,
     Object? enquiryType = freezed,
-    Object? enquiryStatus = freezed,
-    Object? enquiryPaymentStatus = freezed,
+    Object? status = freezed,
     Object? paymentType = freezed,
     Object? fileName = freezed,
     Object? mediaUrl = freezed,
@@ -521,13 +506,9 @@ class __$EnquiryCopyWithImpl<$Res> extends _$EnquiryCopyWithImpl<$Res>
           ? _value.enquiryType
           : enquiryType // ignore: cast_nullable_to_non_nullable
               as String,
-      enquiryStatus: enquiryStatus == freezed
-          ? _value.enquiryStatus
-          : enquiryStatus // ignore: cast_nullable_to_non_nullable
-              as String,
-      enquiryPaymentStatus: enquiryPaymentStatus == freezed
-          ? _value.enquiryPaymentStatus
-          : enquiryPaymentStatus // ignore: cast_nullable_to_non_nullable
+      status: status == freezed
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
               as String,
       paymentType: paymentType == freezed
           ? _value.paymentType
@@ -587,10 +568,8 @@ class _$_Enquiry implements _Enquiry {
           this.deactivateAt,
       @JsonKey(name: 'enquiry_type')
           required this.enquiryType,
-      @JsonKey(name: 'enquiry_status')
-          required this.enquiryStatus,
-      @JsonKey(name: 'enquiry_payment_status')
-          required this.enquiryPaymentStatus,
+      @JsonKey(name: 'status')
+          required this.status,
       @JsonKey(name: 'payment_type')
           required this.paymentType,
       @JsonKey(name: 'file_name')
@@ -699,13 +678,8 @@ class _$_Enquiry implements _Enquiry {
   @override
 
   /// .
-  @JsonKey(name: 'enquiry_status')
-  final String enquiryStatus;
-  @override
-
-  /// .
-  @JsonKey(name: 'enquiry_payment_status')
-  final String enquiryPaymentStatus;
+  @JsonKey(name: 'status')
+  final String status;
   @override
 
   /// .
@@ -724,7 +698,7 @@ class _$_Enquiry implements _Enquiry {
 
   @override
   String toString() {
-    return 'Enquiry(id: $id, personalAccountId: $personalAccountId, selectableWorkplaceCount: $selectableWorkplaceCount, amount: $amount, tariffName: $tariffName, workplacePrice: $workplacePrice, periodDays: $periodDays, freeWorkplaceCount: $freeWorkplaceCount, activationDate: $activationDate, deactivationDate: $deactivationDate, createdAt: $createdAt, creditedAt: $creditedAt, actuallyPaidAt: $actuallyPaidAt, fixationPaidAt: $fixationPaidAt, expirationDate: $expirationDate, expiredAt: $expiredAt, activateAt: $activateAt, deactivateAt: $deactivateAt, enquiryType: $enquiryType, enquiryStatus: $enquiryStatus, enquiryPaymentStatus: $enquiryPaymentStatus, paymentType: $paymentType, fileName: $fileName, mediaUrl: $mediaUrl)';
+    return 'Enquiry(id: $id, personalAccountId: $personalAccountId, selectableWorkplaceCount: $selectableWorkplaceCount, amount: $amount, tariffName: $tariffName, workplacePrice: $workplacePrice, periodDays: $periodDays, freeWorkplaceCount: $freeWorkplaceCount, activationDate: $activationDate, deactivationDate: $deactivationDate, createdAt: $createdAt, creditedAt: $creditedAt, actuallyPaidAt: $actuallyPaidAt, fixationPaidAt: $fixationPaidAt, expirationDate: $expirationDate, expiredAt: $expiredAt, activateAt: $activateAt, deactivateAt: $deactivateAt, enquiryType: $enquiryType, status: $status, paymentType: $paymentType, fileName: $fileName, mediaUrl: $mediaUrl)';
   }
 
   @override
@@ -783,8 +757,7 @@ class _$_Enquiry implements _Enquiry {
                     .equals(other.activateAt, activateAt)) &&
             (identical(other.deactivateAt, deactivateAt) || const DeepCollectionEquality().equals(other.deactivateAt, deactivateAt)) &&
             (identical(other.enquiryType, enquiryType) || const DeepCollectionEquality().equals(other.enquiryType, enquiryType)) &&
-            (identical(other.enquiryStatus, enquiryStatus) || const DeepCollectionEquality().equals(other.enquiryStatus, enquiryStatus)) &&
-            (identical(other.enquiryPaymentStatus, enquiryPaymentStatus) || const DeepCollectionEquality().equals(other.enquiryPaymentStatus, enquiryPaymentStatus)) &&
+            (identical(other.status, status) || const DeepCollectionEquality().equals(other.status, status)) &&
             (identical(other.paymentType, paymentType) || const DeepCollectionEquality().equals(other.paymentType, paymentType)) &&
             (identical(other.fileName, fileName) || const DeepCollectionEquality().equals(other.fileName, fileName)) &&
             (identical(other.mediaUrl, mediaUrl) || const DeepCollectionEquality().equals(other.mediaUrl, mediaUrl)));
@@ -812,8 +785,7 @@ class _$_Enquiry implements _Enquiry {
       const DeepCollectionEquality().hash(activateAt) ^
       const DeepCollectionEquality().hash(deactivateAt) ^
       const DeepCollectionEquality().hash(enquiryType) ^
-      const DeepCollectionEquality().hash(enquiryStatus) ^
-      const DeepCollectionEquality().hash(enquiryPaymentStatus) ^
+      const DeepCollectionEquality().hash(status) ^
       const DeepCollectionEquality().hash(paymentType) ^
       const DeepCollectionEquality().hash(fileName) ^
       const DeepCollectionEquality().hash(mediaUrl);
@@ -869,10 +841,8 @@ abstract class _Enquiry implements Enquiry {
           String? deactivateAt,
       @JsonKey(name: 'enquiry_type')
           required String enquiryType,
-      @JsonKey(name: 'enquiry_status')
-          required String enquiryStatus,
-      @JsonKey(name: 'enquiry_payment_status')
-          required String enquiryPaymentStatus,
+      @JsonKey(name: 'status')
+          required String status,
       @JsonKey(name: 'payment_type')
           required String paymentType,
       @JsonKey(name: 'file_name')
@@ -980,13 +950,8 @@ abstract class _Enquiry implements Enquiry {
   @override
 
   /// .
-  @JsonKey(name: 'enquiry_status')
-  String get enquiryStatus => throw _privateConstructorUsedError;
-  @override
-
-  /// .
-  @JsonKey(name: 'enquiry_payment_status')
-  String get enquiryPaymentStatus => throw _privateConstructorUsedError;
+  @JsonKey(name: 'status')
+  String get status => throw _privateConstructorUsedError;
   @override
 
   /// .
