@@ -24,9 +24,9 @@ class _$PersonalAccountBillingTearOff {
 
   _PersonalAccountBilling call(
       {@JsonKey(name: 'personal_account_id')
-          required int personalAccountId,
+          required String personalAccountId,
       @JsonKey(name: 'owner_id')
-          required int ownerID,
+          required String ownerID,
       @JsonKey(name: 'owner_uuid')
           required String ownerUuid,
       @JsonKey(name: 'teams_count')
@@ -90,11 +90,11 @@ const $PersonalAccountBilling = _$PersonalAccountBillingTearOff();
 mixin _$PersonalAccountBilling {
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
 
   /// ID User who owns this personal account.
   @JsonKey(name: 'owner_id')
-  int get ownerID => throw _privateConstructorUsedError;
+  String get ownerID => throw _privateConstructorUsedError;
 
   /// UUID of User who owns this personal account.
   @JsonKey(name: 'owner_uuid')
@@ -168,8 +168,8 @@ abstract class $PersonalAccountBillingCopyWith<$Res> {
           $Res Function(PersonalAccountBilling) then) =
       _$PersonalAccountBillingCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int personalAccountId,
-      @JsonKey(name: 'owner_id') int ownerID,
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
+      @JsonKey(name: 'owner_id') String ownerID,
       @JsonKey(name: 'owner_uuid') String ownerUuid,
       @JsonKey(name: 'teams_count') int teamsCount,
       @JsonKey(name: 'workplace_count') int workplaceCount,
@@ -223,11 +223,11 @@ class _$PersonalAccountBillingCopyWithImpl<$Res>
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       ownerID: ownerID == freezed
           ? _value.ownerID
           : ownerID // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       ownerUuid: ownerUuid == freezed
           ? _value.ownerUuid
           : ownerUuid // ignore: cast_nullable_to_non_nullable
@@ -318,8 +318,8 @@ abstract class _$PersonalAccountBillingCopyWith<$Res>
       __$PersonalAccountBillingCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'personal_account_id') int personalAccountId,
-      @JsonKey(name: 'owner_id') int ownerID,
+      {@JsonKey(name: 'personal_account_id') String personalAccountId,
+      @JsonKey(name: 'owner_id') String ownerID,
       @JsonKey(name: 'owner_uuid') String ownerUuid,
       @JsonKey(name: 'teams_count') int teamsCount,
       @JsonKey(name: 'workplace_count') int workplaceCount,
@@ -377,11 +377,11 @@ class __$PersonalAccountBillingCopyWithImpl<$Res>
       personalAccountId: personalAccountId == freezed
           ? _value.personalAccountId
           : personalAccountId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       ownerID: ownerID == freezed
           ? _value.ownerID
           : ownerID // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       ownerUuid: ownerUuid == freezed
           ? _value.ownerUuid
           : ownerUuid // ignore: cast_nullable_to_non_nullable
@@ -492,12 +492,12 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
 
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  final int personalAccountId;
+  final String personalAccountId;
   @override
 
   /// ID User who owns this personal account.
   @JsonKey(name: 'owner_id')
-  final int ownerID;
+  final String ownerID;
   @override
 
   /// UUID of User who owns this personal account.
@@ -669,9 +669,9 @@ class _$_PersonalAccountBilling implements _PersonalAccountBilling {
 abstract class _PersonalAccountBilling implements PersonalAccountBilling {
   const factory _PersonalAccountBilling(
       {@JsonKey(name: 'personal_account_id')
-          required int personalAccountId,
+          required String personalAccountId,
       @JsonKey(name: 'owner_id')
-          required int ownerID,
+          required String ownerID,
       @JsonKey(name: 'owner_uuid')
           required String ownerUuid,
       @JsonKey(name: 'teams_count')
@@ -710,12 +710,12 @@ abstract class _PersonalAccountBilling implements PersonalAccountBilling {
 
   /// PersonalAccountBilling ID.
   @JsonKey(name: 'personal_account_id')
-  int get personalAccountId => throw _privateConstructorUsedError;
+  String get personalAccountId => throw _privateConstructorUsedError;
   @override
 
   /// ID User who owns this personal account.
   @JsonKey(name: 'owner_id')
-  int get ownerID => throw _privateConstructorUsedError;
+  String get ownerID => throw _privateConstructorUsedError;
   @override
 
   /// UUID of User who owns this personal account.

@@ -9,7 +9,6 @@ part of 'responsible_person_create_request.dart';
 _$_ResponsiblePersonCreateRequest _$$_ResponsiblePersonCreateRequestFromJson(
         Map<String, dynamic> json) =>
     _$_ResponsiblePersonCreateRequest(
-      personalAccountId: json['personal_account_id'] as String,
       firstName: json['first_name'] as String,
       lastName: json['last_name'] as String,
       patronymic: json['patronymic'] as String?,
@@ -21,7 +20,6 @@ _$_ResponsiblePersonCreateRequest _$$_ResponsiblePersonCreateRequestFromJson(
 Map<String, dynamic> _$$_ResponsiblePersonCreateRequestToJson(
         _$_ResponsiblePersonCreateRequest instance) =>
     <String, dynamic>{
-      'personal_account_id': instance.personalAccountId,
       'first_name': instance.firstName,
       'last_name': instance.lastName,
       'patronymic': instance.patronymic,

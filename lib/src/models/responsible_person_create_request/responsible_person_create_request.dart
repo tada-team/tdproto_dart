@@ -9,9 +9,6 @@ part 'responsible_person_create_request.g.dart';
 class ResponsiblePersonCreateRequest with _$ResponsiblePersonCreateRequest {
   const factory ResponsiblePersonCreateRequest({
     /// .
-    @JsonKey(name: 'personal_account_id') required String personalAccountId,
-    
-    /// .
     @JsonKey(name: 'first_name') required String firstName,
     
     /// .

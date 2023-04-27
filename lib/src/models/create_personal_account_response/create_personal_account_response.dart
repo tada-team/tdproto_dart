@@ -9,10 +9,10 @@ part 'create_personal_account_response.g.dart';
 class CreatePersonalAccountResponse with _$CreatePersonalAccountResponse {
   const factory CreatePersonalAccountResponse({
     /// PersonalAccountBilling ID.
-    @JsonKey(name: 'personal_account_id') required int personalAccountId,
+    @JsonKey(name: 'personal_account_id') required String personalAccountId,
     
     /// ID User who owns this personal account.
-    @JsonKey(name: 'owner_id') required int ownerID,
+    @JsonKey(name: 'owner_id') required String ownerID,
     
     /// UUID of User who owns this personal account.
     @JsonKey(name: 'owner_uuid') required String ownerUuid,

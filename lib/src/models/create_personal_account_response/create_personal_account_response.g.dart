@@ -9,8 +9,8 @@ part of 'create_personal_account_response.dart';
 _$_CreatePersonalAccountResponse _$$_CreatePersonalAccountResponseFromJson(
         Map<String, dynamic> json) =>
     _$_CreatePersonalAccountResponse(
-      personalAccountId: json['personal_account_id'] as int,
-      ownerID: json['owner_id'] as int,
+      personalAccountId: json['personal_account_id'] as String,
+      ownerID: json['owner_id'] as String,
       ownerUuid: json['owner_uuid'] as String,
       teamsCount: json['teams_count'] as int,
       workplaceCount: json['workplace_count'] as int,

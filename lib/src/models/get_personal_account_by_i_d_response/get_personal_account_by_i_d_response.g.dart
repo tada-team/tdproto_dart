@@ -9,8 +9,8 @@ part of 'get_personal_account_by_i_d_response.dart';
 _$_GetPersonalAccountByIDResponse _$$_GetPersonalAccountByIDResponseFromJson(
         Map<String, dynamic> json) =>
     _$_GetPersonalAccountByIDResponse(
-      personalAccountId: json['personal_account_id'] as int,
-      ownerID: json['owner_id'] as int,
+      personalAccountId: json['personal_account_id'] as String,
+      ownerID: json['owner_id'] as String,
       ownerUuid: json['owner_uuid'] as String,
       teamsCount: json['teams_count'] as int,
       workplaceCount: json['workplace_count'] as int,
