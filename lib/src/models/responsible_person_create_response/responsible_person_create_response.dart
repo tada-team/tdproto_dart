@@ -12,7 +12,7 @@ class ResponsiblePersonCreateResponse with _$ResponsiblePersonCreateResponse {
     @JsonKey(name: 'id') required String id,
     
     /// .
-    @JsonKey(name: 'counterparty_id') required String counterpartyId,
+    @JsonKey(name: 'display_name') required String displayName,
     
     /// .
     @JsonKey(name: 'first_name') required String firstName,
@@ -28,6 +28,9 @@ class ResponsiblePersonCreateResponse with _$ResponsiblePersonCreateResponse {
     
     /// .
     @JsonKey(name: 'email') required String email,
+    
+    /// .
+    @JsonKey(name: 'held_post') String? heldPost,
     
     
   }) = _ResponsiblePersonCreateResponse;

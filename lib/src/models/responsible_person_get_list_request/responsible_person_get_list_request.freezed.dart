@@ -23,11 +23,9 @@ class _$ResponsiblePersonGetListRequestTearOff {
   const _$ResponsiblePersonGetListRequestTearOff();
 
   _ResponsiblePersonGetListRequest call(
-      {@JsonKey(name: 'counterparty_id') String? counterpartyId,
-      @JsonKey(name: 'limit') int? limit,
+      {@JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset}) {
     return _ResponsiblePersonGetListRequest(
-      counterpartyId: counterpartyId,
       limit: limit,
       offset: offset,
     );
@@ -44,10 +42,6 @@ const $ResponsiblePersonGetListRequest =
 
 /// @nodoc
 mixin _$ResponsiblePersonGetListRequest {
-  /// .
-  @JsonKey(name: 'counterparty_id')
-  String? get counterpartyId => throw _privateConstructorUsedError;
-
   /// .
   @JsonKey(name: 'limit')
   int? get limit => throw _privateConstructorUsedError;
@@ -69,8 +63,7 @@ abstract class $ResponsiblePersonGetListRequestCopyWith<$Res> {
           $Res Function(ResponsiblePersonGetListRequest) then) =
       _$ResponsiblePersonGetListRequestCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'counterparty_id') String? counterpartyId,
-      @JsonKey(name: 'limit') int? limit,
+      {@JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset});
 }
 
@@ -85,15 +78,10 @@ class _$ResponsiblePersonGetListRequestCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? counterpartyId = freezed,
     Object? limit = freezed,
     Object? offset = freezed,
   }) {
     return _then(_value.copyWith(
-      counterpartyId: counterpartyId == freezed
-          ? _value.counterpartyId
-          : counterpartyId // ignore: cast_nullable_to_non_nullable
-              as String?,
       limit: limit == freezed
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
@@ -115,8 +103,7 @@ abstract class _$ResponsiblePersonGetListRequestCopyWith<$Res>
       __$ResponsiblePersonGetListRequestCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'counterparty_id') String? counterpartyId,
-      @JsonKey(name: 'limit') int? limit,
+      {@JsonKey(name: 'limit') int? limit,
       @JsonKey(name: 'offset') int? offset});
 }
 
@@ -135,15 +122,10 @@ class __$ResponsiblePersonGetListRequestCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? counterpartyId = freezed,
     Object? limit = freezed,
     Object? offset = freezed,
   }) {
     return _then(_ResponsiblePersonGetListRequest(
-      counterpartyId: counterpartyId == freezed
-          ? _value.counterpartyId
-          : counterpartyId // ignore: cast_nullable_to_non_nullable
-              as String?,
       limit: limit == freezed
           ? _value.limit
           : limit // ignore: cast_nullable_to_non_nullable
@@ -161,19 +143,13 @@ class __$ResponsiblePersonGetListRequestCopyWithImpl<$Res>
 class _$_ResponsiblePersonGetListRequest
     implements _ResponsiblePersonGetListRequest {
   const _$_ResponsiblePersonGetListRequest(
-      {@JsonKey(name: 'counterparty_id') this.counterpartyId,
-      @JsonKey(name: 'limit') this.limit,
+      {@JsonKey(name: 'limit') this.limit,
       @JsonKey(name: 'offset') this.offset});
 
   factory _$_ResponsiblePersonGetListRequest.fromJson(
           Map<String, dynamic> json) =>
       _$$_ResponsiblePersonGetListRequestFromJson(json);
 
-  @override
-
-  /// .
-  @JsonKey(name: 'counterparty_id')
-  final String? counterpartyId;
   @override
 
   /// .
@@ -187,16 +163,13 @@ class _$_ResponsiblePersonGetListRequest
 
   @override
   String toString() {
-    return 'ResponsiblePersonGetListRequest(counterpartyId: $counterpartyId, limit: $limit, offset: $offset)';
+    return 'ResponsiblePersonGetListRequest(limit: $limit, offset: $offset)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _ResponsiblePersonGetListRequest &&
-            (identical(other.counterpartyId, counterpartyId) ||
-                const DeepCollectionEquality()
-                    .equals(other.counterpartyId, counterpartyId)) &&
             (identical(other.limit, limit) ||
                 const DeepCollectionEquality().equals(other.limit, limit)) &&
             (identical(other.offset, offset) ||
@@ -206,7 +179,6 @@ class _$_ResponsiblePersonGetListRequest
   @override
   int get hashCode =>
       runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(counterpartyId) ^
       const DeepCollectionEquality().hash(limit) ^
       const DeepCollectionEquality().hash(offset);
 
@@ -225,19 +197,13 @@ class _$_ResponsiblePersonGetListRequest
 abstract class _ResponsiblePersonGetListRequest
     implements ResponsiblePersonGetListRequest {
   const factory _ResponsiblePersonGetListRequest(
-          {@JsonKey(name: 'counterparty_id') String? counterpartyId,
-          @JsonKey(name: 'limit') int? limit,
+          {@JsonKey(name: 'limit') int? limit,
           @JsonKey(name: 'offset') int? offset}) =
       _$_ResponsiblePersonGetListRequest;
 
   factory _ResponsiblePersonGetListRequest.fromJson(Map<String, dynamic> json) =
       _$_ResponsiblePersonGetListRequest.fromJson;
 
-  @override
-
-  /// .
-  @JsonKey(name: 'counterparty_id')
-  String? get counterpartyId => throw _privateConstructorUsedError;
   @override
 
   /// .

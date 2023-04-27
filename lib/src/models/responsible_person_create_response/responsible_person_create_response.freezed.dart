@@ -24,20 +24,22 @@ class _$ResponsiblePersonCreateResponseTearOff {
 
   _ResponsiblePersonCreateResponse call(
       {@JsonKey(name: 'id') required String id,
-      @JsonKey(name: 'counterparty_id') required String counterpartyId,
+      @JsonKey(name: 'display_name') required String displayName,
       @JsonKey(name: 'first_name') required String firstName,
       @JsonKey(name: 'last_name') required String lastName,
       @JsonKey(name: 'patronymic') String? patronymic,
       @JsonKey(name: 'phone') required String phone,
-      @JsonKey(name: 'email') required String email}) {
+      @JsonKey(name: 'email') required String email,
+      @JsonKey(name: 'held_post') String? heldPost}) {
     return _ResponsiblePersonCreateResponse(
       id: id,
-      counterpartyId: counterpartyId,
+      displayName: displayName,
       firstName: firstName,
       lastName: lastName,
       patronymic: patronymic,
       phone: phone,
       email: email,
+      heldPost: heldPost,
     );
   }
 
@@ -57,8 +59,8 @@ mixin _$ResponsiblePersonCreateResponse {
   String get id => throw _privateConstructorUsedError;
 
   /// .
-  @JsonKey(name: 'counterparty_id')
-  String get counterpartyId => throw _privateConstructorUsedError;
+  @JsonKey(name: 'display_name')
+  String get displayName => throw _privateConstructorUsedError;
 
   /// .
   @JsonKey(name: 'first_name')
@@ -80,6 +82,10 @@ mixin _$ResponsiblePersonCreateResponse {
   @JsonKey(name: 'email')
   String get email => throw _privateConstructorUsedError;
 
+  /// .
+  @JsonKey(name: 'held_post')
+  String? get heldPost => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $ResponsiblePersonCreateResponseCopyWith<ResponsiblePersonCreateResponse>
@@ -94,12 +100,13 @@ abstract class $ResponsiblePersonCreateResponseCopyWith<$Res> {
       _$ResponsiblePersonCreateResponseCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'id') String id,
-      @JsonKey(name: 'counterparty_id') String counterpartyId,
+      @JsonKey(name: 'display_name') String displayName,
       @JsonKey(name: 'first_name') String firstName,
       @JsonKey(name: 'last_name') String lastName,
       @JsonKey(name: 'patronymic') String? patronymic,
       @JsonKey(name: 'phone') String phone,
-      @JsonKey(name: 'email') String email});
+      @JsonKey(name: 'email') String email,
+      @JsonKey(name: 'held_post') String? heldPost});
 }
 
 /// @nodoc
@@ -114,21 +121,22 @@ class _$ResponsiblePersonCreateResponseCopyWithImpl<$Res>
   @override
   $Res call({
     Object? id = freezed,
-    Object? counterpartyId = freezed,
+    Object? displayName = freezed,
     Object? firstName = freezed,
     Object? lastName = freezed,
     Object? patronymic = freezed,
     Object? phone = freezed,
     Object? email = freezed,
+    Object? heldPost = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      counterpartyId: counterpartyId == freezed
-          ? _value.counterpartyId
-          : counterpartyId // ignore: cast_nullable_to_non_nullable
+      displayName: displayName == freezed
+          ? _value.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
               as String,
       firstName: firstName == freezed
           ? _value.firstName
@@ -150,6 +158,10 @@ class _$ResponsiblePersonCreateResponseCopyWithImpl<$Res>
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
+      heldPost: heldPost == freezed
+          ? _value.heldPost
+          : heldPost // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -164,12 +176,13 @@ abstract class _$ResponsiblePersonCreateResponseCopyWith<$Res>
   @override
   $Res call(
       {@JsonKey(name: 'id') String id,
-      @JsonKey(name: 'counterparty_id') String counterpartyId,
+      @JsonKey(name: 'display_name') String displayName,
       @JsonKey(name: 'first_name') String firstName,
       @JsonKey(name: 'last_name') String lastName,
       @JsonKey(name: 'patronymic') String? patronymic,
       @JsonKey(name: 'phone') String phone,
-      @JsonKey(name: 'email') String email});
+      @JsonKey(name: 'email') String email,
+      @JsonKey(name: 'held_post') String? heldPost});
 }
 
 /// @nodoc
@@ -188,21 +201,22 @@ class __$ResponsiblePersonCreateResponseCopyWithImpl<$Res>
   @override
   $Res call({
     Object? id = freezed,
-    Object? counterpartyId = freezed,
+    Object? displayName = freezed,
     Object? firstName = freezed,
     Object? lastName = freezed,
     Object? patronymic = freezed,
     Object? phone = freezed,
     Object? email = freezed,
+    Object? heldPost = freezed,
   }) {
     return _then(_ResponsiblePersonCreateResponse(
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      counterpartyId: counterpartyId == freezed
-          ? _value.counterpartyId
-          : counterpartyId // ignore: cast_nullable_to_non_nullable
+      displayName: displayName == freezed
+          ? _value.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
               as String,
       firstName: firstName == freezed
           ? _value.firstName
@@ -224,6 +238,10 @@ class __$ResponsiblePersonCreateResponseCopyWithImpl<$Res>
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
+      heldPost: heldPost == freezed
+          ? _value.heldPost
+          : heldPost // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -234,12 +252,13 @@ class _$_ResponsiblePersonCreateResponse
     implements _ResponsiblePersonCreateResponse {
   const _$_ResponsiblePersonCreateResponse(
       {@JsonKey(name: 'id') required this.id,
-      @JsonKey(name: 'counterparty_id') required this.counterpartyId,
+      @JsonKey(name: 'display_name') required this.displayName,
       @JsonKey(name: 'first_name') required this.firstName,
       @JsonKey(name: 'last_name') required this.lastName,
       @JsonKey(name: 'patronymic') this.patronymic,
       @JsonKey(name: 'phone') required this.phone,
-      @JsonKey(name: 'email') required this.email});
+      @JsonKey(name: 'email') required this.email,
+      @JsonKey(name: 'held_post') this.heldPost});
 
   factory _$_ResponsiblePersonCreateResponse.fromJson(
           Map<String, dynamic> json) =>
@@ -253,8 +272,8 @@ class _$_ResponsiblePersonCreateResponse
   @override
 
   /// .
-  @JsonKey(name: 'counterparty_id')
-  final String counterpartyId;
+  @JsonKey(name: 'display_name')
+  final String displayName;
   @override
 
   /// .
@@ -280,10 +299,15 @@ class _$_ResponsiblePersonCreateResponse
   /// .
   @JsonKey(name: 'email')
   final String email;
+  @override
+
+  /// .
+  @JsonKey(name: 'held_post')
+  final String? heldPost;
 
   @override
   String toString() {
-    return 'ResponsiblePersonCreateResponse(id: $id, counterpartyId: $counterpartyId, firstName: $firstName, lastName: $lastName, patronymic: $patronymic, phone: $phone, email: $email)';
+    return 'ResponsiblePersonCreateResponse(id: $id, displayName: $displayName, firstName: $firstName, lastName: $lastName, patronymic: $patronymic, phone: $phone, email: $email, heldPost: $heldPost)';
   }
 
   @override
@@ -292,9 +316,9 @@ class _$_ResponsiblePersonCreateResponse
         (other is _ResponsiblePersonCreateResponse &&
             (identical(other.id, id) ||
                 const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.counterpartyId, counterpartyId) ||
+            (identical(other.displayName, displayName) ||
                 const DeepCollectionEquality()
-                    .equals(other.counterpartyId, counterpartyId)) &&
+                    .equals(other.displayName, displayName)) &&
             (identical(other.firstName, firstName) ||
                 const DeepCollectionEquality()
                     .equals(other.firstName, firstName)) &&
@@ -307,19 +331,23 @@ class _$_ResponsiblePersonCreateResponse
             (identical(other.phone, phone) ||
                 const DeepCollectionEquality().equals(other.phone, phone)) &&
             (identical(other.email, email) ||
-                const DeepCollectionEquality().equals(other.email, email)));
+                const DeepCollectionEquality().equals(other.email, email)) &&
+            (identical(other.heldPost, heldPost) ||
+                const DeepCollectionEquality()
+                    .equals(other.heldPost, heldPost)));
   }
 
   @override
   int get hashCode =>
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(counterpartyId) ^
+      const DeepCollectionEquality().hash(displayName) ^
       const DeepCollectionEquality().hash(firstName) ^
       const DeepCollectionEquality().hash(lastName) ^
       const DeepCollectionEquality().hash(patronymic) ^
       const DeepCollectionEquality().hash(phone) ^
-      const DeepCollectionEquality().hash(email);
+      const DeepCollectionEquality().hash(email) ^
+      const DeepCollectionEquality().hash(heldPost);
 
   @JsonKey(ignore: true)
   @override
@@ -337,12 +365,13 @@ abstract class _ResponsiblePersonCreateResponse
     implements ResponsiblePersonCreateResponse {
   const factory _ResponsiblePersonCreateResponse(
           {@JsonKey(name: 'id') required String id,
-          @JsonKey(name: 'counterparty_id') required String counterpartyId,
+          @JsonKey(name: 'display_name') required String displayName,
           @JsonKey(name: 'first_name') required String firstName,
           @JsonKey(name: 'last_name') required String lastName,
           @JsonKey(name: 'patronymic') String? patronymic,
           @JsonKey(name: 'phone') required String phone,
-          @JsonKey(name: 'email') required String email}) =
+          @JsonKey(name: 'email') required String email,
+          @JsonKey(name: 'held_post') String? heldPost}) =
       _$_ResponsiblePersonCreateResponse;
 
   factory _ResponsiblePersonCreateResponse.fromJson(Map<String, dynamic> json) =
@@ -356,8 +385,8 @@ abstract class _ResponsiblePersonCreateResponse
   @override
 
   /// .
-  @JsonKey(name: 'counterparty_id')
-  String get counterpartyId => throw _privateConstructorUsedError;
+  @JsonKey(name: 'display_name')
+  String get displayName => throw _privateConstructorUsedError;
   @override
 
   /// .
@@ -383,6 +412,11 @@ abstract class _ResponsiblePersonCreateResponse
   /// .
   @JsonKey(name: 'email')
   String get email => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'held_post')
+  String? get heldPost => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ResponsiblePersonCreateResponseCopyWith<_ResponsiblePersonCreateResponse>

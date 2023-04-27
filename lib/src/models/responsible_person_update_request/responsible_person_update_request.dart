@@ -12,7 +12,7 @@ class ResponsiblePersonUpdateRequest with _$ResponsiblePersonUpdateRequest {
     @JsonKey(name: 'id') required String id,
     
     /// .
-    @JsonKey(name: 'counterparty_id') required String counterpartyId,
+    @JsonKey(name: 'display_name') required String displayName,
     
     /// .
     @JsonKey(name: 'first_name') required String firstName,
@@ -21,13 +21,16 @@ class ResponsiblePersonUpdateRequest with _$ResponsiblePersonUpdateRequest {
     @JsonKey(name: 'last_name') required String lastName,
     
     /// .
-    @JsonKey(name: 'patronymic') required String patronymic,
+    @JsonKey(name: 'patronymic') String? patronymic,
     
     /// .
     @JsonKey(name: 'phone') required String phone,
     
     /// .
     @JsonKey(name: 'email') required String email,
+    
+    /// .
+    @JsonKey(name: 'held_post') String? heldPost,
     
     
   }) = _ResponsiblePersonUpdateRequest;

@@ -9,7 +9,7 @@ part 'responsible_person_create_request.g.dart';
 class ResponsiblePersonCreateRequest with _$ResponsiblePersonCreateRequest {
   const factory ResponsiblePersonCreateRequest({
     /// .
-    @JsonKey(name: 'counterparty_id') required String counterpartyId,
+    @JsonKey(name: 'personal_account_id') required String personalAccountId,
     
     /// .
     @JsonKey(name: 'first_name') required String firstName,
@@ -25,6 +25,9 @@ class ResponsiblePersonCreateRequest with _$ResponsiblePersonCreateRequest {
     
     /// .
     @JsonKey(name: 'email') required String email,
+    
+    /// .
+    @JsonKey(name: 'held_post') String? heldPost,
     
     
   }) = _ResponsiblePersonCreateRequest;

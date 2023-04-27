@@ -9,9 +9,6 @@ part 'responsible_person_get_list_request.g.dart';
 class ResponsiblePersonGetListRequest with _$ResponsiblePersonGetListRequest {
   const factory ResponsiblePersonGetListRequest({
     /// .
-    @JsonKey(name: 'counterparty_id') String? counterpartyId,
-    
-    /// .
     @JsonKey(name: 'limit') int? limit,
     
     /// .
