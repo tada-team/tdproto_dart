@@ -13,7 +13,7 @@ _$_EnquiryGetListRequest _$$_EnquiryGetListRequestFromJson(
       dateCreateTo: json['date_create_to'] as String?,
       dateActivateTo: json['date_activate_to'] as String?,
       dateDeactivateTo: json['date_deactivate_to'] as String?,
-      enquiryStatusFilter: json['enquiry_status_filter'] as String?,
+      status: json['status'] as String?,
       limit: json['limit'] as int?,
       offset: json['offset'] as int?,
     );
@@ -25,7 +25,7 @@ Map<String, dynamic> _$$_EnquiryGetListRequestToJson(
       'date_create_to': instance.dateCreateTo,
       'date_activate_to': instance.dateActivateTo,
       'date_deactivate_to': instance.dateDeactivateTo,
-      'enquiry_status_filter': instance.enquiryStatusFilter,
+      'status': instance.status,
       'limit': instance.limit,
       'offset': instance.offset,
     };
