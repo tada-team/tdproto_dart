@@ -10,7 +10,7 @@ _$_GetUsersInfoByUserUUIDArrayResponse
     _$$_GetUsersInfoByUserUUIDArrayResponseFromJson(
             Map<String, dynamic> json) =>
         _$_GetUsersInfoByUserUUIDArrayResponse(
-          userInfo: (json['user_info'] as List<dynamic>?)
+          userList: (json['user_list'] as List<dynamic>?)
               ?.map((e) => UserInfo.fromJson(e as Map<String, dynamic>))
               .toList(),
         );
@@ -18,5 +18,5 @@ _$_GetUsersInfoByUserUUIDArrayResponse
 Map<String, dynamic> _$$_GetUsersInfoByUserUUIDArrayResponseToJson(
         _$_GetUsersInfoByUserUUIDArrayResponse instance) =>
     <String, dynamic>{
-      'user_info': instance.userInfo?.map((e) => e.toJson()).toList(),
+      'user_list': instance.userList?.map((e) => e.toJson()).toList(),
     };

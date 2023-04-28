@@ -23,9 +23,9 @@ class _$GetUsersInfoByUserUUIDArrayResponseTearOff {
   const _$GetUsersInfoByUserUUIDArrayResponseTearOff();
 
   _GetUsersInfoByUserUUIDArrayResponse call(
-      {@JsonKey(name: 'user_info') List<UserInfo>? userInfo}) {
+      {@JsonKey(name: 'user_list') List<UserInfo>? userList}) {
     return _GetUsersInfoByUserUUIDArrayResponse(
-      userInfo: userInfo,
+      userList: userList,
     );
   }
 
@@ -41,8 +41,8 @@ const $GetUsersInfoByUserUUIDArrayResponse =
 /// @nodoc
 mixin _$GetUsersInfoByUserUUIDArrayResponse {
   /// .
-  @JsonKey(name: 'user_info')
-  List<UserInfo>? get userInfo => throw _privateConstructorUsedError;
+  @JsonKey(name: 'user_list')
+  List<UserInfo>? get userList => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -57,7 +57,7 @@ abstract class $GetUsersInfoByUserUUIDArrayResponseCopyWith<$Res> {
           GetUsersInfoByUserUUIDArrayResponse value,
           $Res Function(GetUsersInfoByUserUUIDArrayResponse) then) =
       _$GetUsersInfoByUserUUIDArrayResponseCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'user_info') List<UserInfo>? userInfo});
+  $Res call({@JsonKey(name: 'user_list') List<UserInfo>? userList});
 }
 
 /// @nodoc
@@ -71,12 +71,12 @@ class _$GetUsersInfoByUserUUIDArrayResponseCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? userInfo = freezed,
+    Object? userList = freezed,
   }) {
     return _then(_value.copyWith(
-      userInfo: userInfo == freezed
-          ? _value.userInfo
-          : userInfo // ignore: cast_nullable_to_non_nullable
+      userList: userList == freezed
+          ? _value.userList
+          : userList // ignore: cast_nullable_to_non_nullable
               as List<UserInfo>?,
     ));
   }
@@ -90,7 +90,7 @@ abstract class _$GetUsersInfoByUserUUIDArrayResponseCopyWith<$Res>
           $Res Function(_GetUsersInfoByUserUUIDArrayResponse) then) =
       __$GetUsersInfoByUserUUIDArrayResponseCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'user_info') List<UserInfo>? userInfo});
+  $Res call({@JsonKey(name: 'user_list') List<UserInfo>? userList});
 }
 
 /// @nodoc
@@ -108,12 +108,12 @@ class __$GetUsersInfoByUserUUIDArrayResponseCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? userInfo = freezed,
+    Object? userList = freezed,
   }) {
     return _then(_GetUsersInfoByUserUUIDArrayResponse(
-      userInfo: userInfo == freezed
-          ? _value.userInfo
-          : userInfo // ignore: cast_nullable_to_non_nullable
+      userList: userList == freezed
+          ? _value.userList
+          : userList // ignore: cast_nullable_to_non_nullable
               as List<UserInfo>?,
     ));
   }
@@ -124,7 +124,7 @@ class __$GetUsersInfoByUserUUIDArrayResponseCopyWithImpl<$Res>
 class _$_GetUsersInfoByUserUUIDArrayResponse
     implements _GetUsersInfoByUserUUIDArrayResponse {
   const _$_GetUsersInfoByUserUUIDArrayResponse(
-      {@JsonKey(name: 'user_info') this.userInfo});
+      {@JsonKey(name: 'user_list') this.userList});
 
   factory _$_GetUsersInfoByUserUUIDArrayResponse.fromJson(
           Map<String, dynamic> json) =>
@@ -133,26 +133,26 @@ class _$_GetUsersInfoByUserUUIDArrayResponse
   @override
 
   /// .
-  @JsonKey(name: 'user_info')
-  final List<UserInfo>? userInfo;
+  @JsonKey(name: 'user_list')
+  final List<UserInfo>? userList;
 
   @override
   String toString() {
-    return 'GetUsersInfoByUserUUIDArrayResponse(userInfo: $userInfo)';
+    return 'GetUsersInfoByUserUUIDArrayResponse(userList: $userList)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _GetUsersInfoByUserUUIDArrayResponse &&
-            (identical(other.userInfo, userInfo) ||
+            (identical(other.userList, userList) ||
                 const DeepCollectionEquality()
-                    .equals(other.userInfo, userInfo)));
+                    .equals(other.userList, userList)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(userInfo);
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(userList);
 
   @JsonKey(ignore: true)
   @override
@@ -170,7 +170,7 @@ class _$_GetUsersInfoByUserUUIDArrayResponse
 abstract class _GetUsersInfoByUserUUIDArrayResponse
     implements GetUsersInfoByUserUUIDArrayResponse {
   const factory _GetUsersInfoByUserUUIDArrayResponse(
-          {@JsonKey(name: 'user_info') List<UserInfo>? userInfo}) =
+          {@JsonKey(name: 'user_list') List<UserInfo>? userList}) =
       _$_GetUsersInfoByUserUUIDArrayResponse;
 
   factory _GetUsersInfoByUserUUIDArrayResponse.fromJson(
@@ -180,8 +180,8 @@ abstract class _GetUsersInfoByUserUUIDArrayResponse
   @override
 
   /// .
-  @JsonKey(name: 'user_info')
-  List<UserInfo>? get userInfo => throw _privateConstructorUsedError;
+  @JsonKey(name: 'user_list')
+  List<UserInfo>? get userList => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$GetUsersInfoByUserUUIDArrayResponseCopyWith<

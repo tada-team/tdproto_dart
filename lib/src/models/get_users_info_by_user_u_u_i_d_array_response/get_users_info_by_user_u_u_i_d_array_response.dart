@@ -9,7 +9,7 @@ part 'get_users_info_by_user_u_u_i_d_array_response.g.dart';
 class GetUsersInfoByUserUUIDArrayResponse with _$GetUsersInfoByUserUUIDArrayResponse {
   const factory GetUsersInfoByUserUUIDArrayResponse({
     /// .
-    @JsonKey(name: 'user_info') List<UserInfo>? userInfo,
+    @JsonKey(name: 'user_list') List<UserInfo>? userList,
     
     
   }) = _GetUsersInfoByUserUUIDArrayResponse;
