@@ -152,6 +152,7 @@ export 'src/models/get_personal_account_by_i_d_response/get_personal_account_by_
 export 'src/models/get_personal_accounts_list_response/get_personal_accounts_list_response.dart';
 export 'src/models/get_tariffs_list_response/get_tariffs_list_response.dart';
 export 'src/models/get_team_on_personal_account_response/get_team_on_personal_account_response.dart';
+export 'src/models/get_teams_filter/get_teams_filter.dart';
 export 'src/models/get_teams_on_personal_account_response/get_teams_on_personal_account_response.dart';
 export 'src/models/get_unpaid_workplaces_by_personal_account_response/get_unpaid_workplaces_by_personal_account_response.dart';
 export 'src/models/get_users_info_by_user_u_u_i_d_array_excluding_team_members_request/get_users_info_by_user_u_u_i_d_array_excluding_team_members_request.dart';
