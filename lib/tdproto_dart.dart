@@ -289,6 +289,8 @@ export 'src/models/server_debug/server_debug.dart';
 export 'src/models/server_debug_params/server_debug_params.dart';
 export 'src/models/server_login/server_login.dart';
 export 'src/models/server_login_params/server_login_params.dart';
+export 'src/models/server_logout/server_logout.dart';
+export 'src/models/server_logout_params/server_logout_params.dart';
 export 'src/models/server_meeting_cell_updated/server_meeting_cell_updated.dart';
 export 'src/models/server_meeting_cell_updated_params/server_meeting_cell_updated_params.dart';
 export 'src/models/server_meeting_deleted/server_meeting_deleted.dart';
