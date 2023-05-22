@@ -86,10 +86,10 @@ class _$MeetingTearOff {
       @JsonKey(name: 'draft')
           String? draft,
       @Deprecated(
-          'Last message draft version, if any Deprecated: use DraftRevision instead.')
+          'Deprecated: use DraftRevision instead. Last message draft version, if any.')
       @JsonKey(name: 'draft_gentime')
           int? draftGentime,
-      @JsonKey(name: 'revision')
+      @JsonKey(name: 'draft_revision')
           int? draftRevision,
       @JsonKey(name: 'hidden')
           bool? hidden,
@@ -445,14 +445,14 @@ mixin _$Meeting {
   @JsonKey(name: 'draft')
   String? get draft => throw _privateConstructorUsedError;
 
-  /// Last message draft version, if any Deprecated: use DraftRevision instead.
+  /// Deprecated: use DraftRevision instead. Last message draft version, if any.
   @Deprecated(
-      'Last message draft version, if any Deprecated: use DraftRevision instead.')
+      'Deprecated: use DraftRevision instead. Last message draft version, if any.')
   @JsonKey(name: 'draft_gentime')
   int? get draftGentime => throw _privateConstructorUsedError;
 
-  /// Last message draft version, if any, Unixtime(ms).
-  @JsonKey(name: 'revision')
+  /// Last message draft version, if any. unixtime(ms).
+  @JsonKey(name: 'draft_revision')
   int? get draftRevision => throw _privateConstructorUsedError;
 
   /// Hidden chat.
@@ -774,10 +774,10 @@ abstract class $MeetingCopyWith<$Res> {
       @JsonKey(name: 'draft')
           String? draft,
       @Deprecated(
-          'Last message draft version, if any Deprecated: use DraftRevision instead.')
+          'Deprecated: use DraftRevision instead. Last message draft version, if any.')
       @JsonKey(name: 'draft_gentime')
           int? draftGentime,
-      @JsonKey(name: 'revision')
+      @JsonKey(name: 'draft_revision')
           int? draftRevision,
       @JsonKey(name: 'hidden')
           bool? hidden,
@@ -1509,10 +1509,10 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
       @JsonKey(name: 'draft')
           String? draft,
       @Deprecated(
-          'Last message draft version, if any Deprecated: use DraftRevision instead.')
+          'Deprecated: use DraftRevision instead. Last message draft version, if any.')
       @JsonKey(name: 'draft_gentime')
           int? draftGentime,
-      @JsonKey(name: 'revision')
+      @JsonKey(name: 'draft_revision')
           int? draftRevision,
       @JsonKey(name: 'hidden')
           bool? hidden,
@@ -2197,10 +2197,10 @@ class _$_Meeting implements _Meeting {
       @JsonKey(name: 'draft')
           this.draft,
       @Deprecated(
-          'Last message draft version, if any Deprecated: use DraftRevision instead.')
+          'Deprecated: use DraftRevision instead. Last message draft version, if any.')
       @JsonKey(name: 'draft_gentime')
           this.draftGentime,
-      @JsonKey(name: 'revision')
+      @JsonKey(name: 'draft_revision')
           this.draftRevision,
       @JsonKey(name: 'hidden')
           this.hidden,
@@ -2486,15 +2486,15 @@ class _$_Meeting implements _Meeting {
   final String? draft;
   @override
 
-  /// Last message draft version, if any Deprecated: use DraftRevision instead.
+  /// Deprecated: use DraftRevision instead. Last message draft version, if any.
   @Deprecated(
-      'Last message draft version, if any Deprecated: use DraftRevision instead.')
+      'Deprecated: use DraftRevision instead. Last message draft version, if any.')
   @JsonKey(name: 'draft_gentime')
   final int? draftGentime;
   @override
 
-  /// Last message draft version, if any, Unixtime(ms).
-  @JsonKey(name: 'revision')
+  /// Last message draft version, if any. unixtime(ms).
+  @JsonKey(name: 'draft_revision')
   final int? draftRevision;
   @override
 
@@ -3121,10 +3121,10 @@ abstract class _Meeting implements Meeting {
       @JsonKey(name: 'draft')
           String? draft,
       @Deprecated(
-          'Last message draft version, if any Deprecated: use DraftRevision instead.')
+          'Deprecated: use DraftRevision instead. Last message draft version, if any.')
       @JsonKey(name: 'draft_gentime')
           int? draftGentime,
-      @JsonKey(name: 'revision')
+      @JsonKey(name: 'draft_revision')
           int? draftRevision,
       @JsonKey(name: 'hidden')
           bool? hidden,
@@ -3409,15 +3409,15 @@ abstract class _Meeting implements Meeting {
   String? get draft => throw _privateConstructorUsedError;
   @override
 
-  /// Last message draft version, if any Deprecated: use DraftRevision instead.
+  /// Deprecated: use DraftRevision instead. Last message draft version, if any.
   @Deprecated(
-      'Last message draft version, if any Deprecated: use DraftRevision instead.')
+      'Deprecated: use DraftRevision instead. Last message draft version, if any.')
   @JsonKey(name: 'draft_gentime')
   int? get draftGentime => throw _privateConstructorUsedError;
   @override
 
-  /// Last message draft version, if any, Unixtime(ms).
-  @JsonKey(name: 'revision')
+  /// Last message draft version, if any. unixtime(ms).
+  @JsonKey(name: 'draft_revision')
   int? get draftRevision => throw _privateConstructorUsedError;
   @override
 

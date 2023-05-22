@@ -50,10 +50,10 @@ class _$ChatTearOff {
       @JsonKey(name: 'draft')
           String? draft,
       @Deprecated(
-          'Last message draft version, if any Deprecated: use DraftRevision instead.')
+          'Deprecated: use DraftRevision instead. Last message draft version, if any.')
       @JsonKey(name: 'draft_gentime')
           int? draftGentime,
-      @JsonKey(name: 'revision')
+      @JsonKey(name: 'draft_revision')
           int? draftRevision,
       @JsonKey(name: 'hidden')
           bool? hidden,
@@ -322,14 +322,14 @@ mixin _$Chat {
   @JsonKey(name: 'draft')
   String? get draft => throw _privateConstructorUsedError;
 
-  /// Last message draft version, if any Deprecated: use DraftRevision instead.
+  /// Deprecated: use DraftRevision instead. Last message draft version, if any.
   @Deprecated(
-      'Last message draft version, if any Deprecated: use DraftRevision instead.')
+      'Deprecated: use DraftRevision instead. Last message draft version, if any.')
   @JsonKey(name: 'draft_gentime')
   int? get draftGentime => throw _privateConstructorUsedError;
 
-  /// Last message draft version, if any, Unixtime(ms).
-  @JsonKey(name: 'revision')
+  /// Last message draft version, if any. unixtime(ms).
+  @JsonKey(name: 'draft_revision')
   int? get draftRevision => throw _privateConstructorUsedError;
 
   /// Hidden chat.
@@ -615,10 +615,10 @@ abstract class $ChatCopyWith<$Res> {
       @JsonKey(name: 'draft')
           String? draft,
       @Deprecated(
-          'Last message draft version, if any Deprecated: use DraftRevision instead.')
+          'Deprecated: use DraftRevision instead. Last message draft version, if any.')
       @JsonKey(name: 'draft_gentime')
           int? draftGentime,
-      @JsonKey(name: 'revision')
+      @JsonKey(name: 'draft_revision')
           int? draftRevision,
       @JsonKey(name: 'hidden')
           bool? hidden,
@@ -1205,10 +1205,10 @@ abstract class _$ChatCopyWith<$Res> implements $ChatCopyWith<$Res> {
       @JsonKey(name: 'draft')
           String? draft,
       @Deprecated(
-          'Last message draft version, if any Deprecated: use DraftRevision instead.')
+          'Deprecated: use DraftRevision instead. Last message draft version, if any.')
       @JsonKey(name: 'draft_gentime')
           int? draftGentime,
-      @JsonKey(name: 'revision')
+      @JsonKey(name: 'draft_revision')
           int? draftRevision,
       @JsonKey(name: 'hidden')
           bool? hidden,
@@ -1768,10 +1768,10 @@ class _$_Chat implements _Chat {
       @JsonKey(name: 'draft')
           this.draft,
       @Deprecated(
-          'Last message draft version, if any Deprecated: use DraftRevision instead.')
+          'Deprecated: use DraftRevision instead. Last message draft version, if any.')
       @JsonKey(name: 'draft_gentime')
           this.draftGentime,
-      @JsonKey(name: 'revision')
+      @JsonKey(name: 'draft_revision')
           this.draftRevision,
       @JsonKey(name: 'hidden')
           this.hidden,
@@ -1969,15 +1969,15 @@ class _$_Chat implements _Chat {
   final String? draft;
   @override
 
-  /// Last message draft version, if any Deprecated: use DraftRevision instead.
+  /// Deprecated: use DraftRevision instead. Last message draft version, if any.
   @Deprecated(
-      'Last message draft version, if any Deprecated: use DraftRevision instead.')
+      'Deprecated: use DraftRevision instead. Last message draft version, if any.')
   @JsonKey(name: 'draft_gentime')
   final int? draftGentime;
   @override
 
-  /// Last message draft version, if any, Unixtime(ms).
-  @JsonKey(name: 'revision')
+  /// Last message draft version, if any. unixtime(ms).
+  @JsonKey(name: 'draft_revision')
   final int? draftRevision;
   @override
 
@@ -2533,10 +2533,10 @@ abstract class _Chat implements Chat {
       @JsonKey(name: 'draft')
           String? draft,
       @Deprecated(
-          'Last message draft version, if any Deprecated: use DraftRevision instead.')
+          'Deprecated: use DraftRevision instead. Last message draft version, if any.')
       @JsonKey(name: 'draft_gentime')
           int? draftGentime,
-      @JsonKey(name: 'revision')
+      @JsonKey(name: 'draft_revision')
           int? draftRevision,
       @JsonKey(name: 'hidden')
           bool? hidden,
@@ -2734,15 +2734,15 @@ abstract class _Chat implements Chat {
   String? get draft => throw _privateConstructorUsedError;
   @override
 
-  /// Last message draft version, if any Deprecated: use DraftRevision instead.
+  /// Deprecated: use DraftRevision instead. Last message draft version, if any.
   @Deprecated(
-      'Last message draft version, if any Deprecated: use DraftRevision instead.')
+      'Deprecated: use DraftRevision instead. Last message draft version, if any.')
   @JsonKey(name: 'draft_gentime')
   int? get draftGentime => throw _privateConstructorUsedError;
   @override
 
-  /// Last message draft version, if any, Unixtime(ms).
-  @JsonKey(name: 'revision')
+  /// Last message draft version, if any. unixtime(ms).
+  @JsonKey(name: 'draft_revision')
   int? get draftRevision => throw _privateConstructorUsedError;
   @override
 
