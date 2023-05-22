@@ -12,6 +12,7 @@ _$_ServerChatDraftParams _$$_ServerChatDraftParamsFromJson(
       jid: json['jid'] as String,
       draft: json['draft'] as String,
       draftGentime: json['draft_gentime'] as int,
+      revision: json['revision'] as int,
       draftNum: json['draft_num'] as int,
     );
 
@@ -21,5 +22,6 @@ Map<String, dynamic> _$$_ServerChatDraftParamsToJson(
       'jid': instance.jid,
       'draft': instance.draft,
       'draft_gentime': instance.draftGentime,
+      'revision': instance.revision,
       'draft_num': instance.draftNum,
     };

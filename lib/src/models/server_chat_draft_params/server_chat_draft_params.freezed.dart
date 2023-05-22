@@ -27,15 +27,19 @@ class _$ServerChatDraftParamsTearOff {
           required String jid,
       @JsonKey(name: 'draft')
           required String draft,
+      @Deprecated('Draft version Deprecated: use Revision instead.')
       @JsonKey(name: 'draft_gentime')
           required int draftGentime,
-      @Deprecated('Deprecated.')
+      @JsonKey(name: 'revision')
+          required int revision,
+      @Deprecated('Deprecated: use Revision instead.')
       @JsonKey(name: 'draft_num')
           required int draftNum}) {
     return _ServerChatDraftParams(
       jid: jid,
       draft: draft,
       draftGentime: draftGentime,
+      revision: revision,
       draftNum: draftNum,
     );
   }
@@ -58,12 +62,17 @@ mixin _$ServerChatDraftParams {
   @JsonKey(name: 'draft')
   String get draft => throw _privateConstructorUsedError;
 
-  /// Draft version.
+  /// Draft version Deprecated: use Revision instead.
+  @Deprecated('Draft version Deprecated: use Revision instead.')
   @JsonKey(name: 'draft_gentime')
   int get draftGentime => throw _privateConstructorUsedError;
 
-  /// Deprecated.
-  @Deprecated('Deprecated.')
+  /// Revision Unixtime(ms).
+  @JsonKey(name: 'revision')
+  int get revision => throw _privateConstructorUsedError;
+
+  /// Deprecated: use Revision instead.
+  @Deprecated('Deprecated: use Revision instead.')
   @JsonKey(name: 'draft_num')
   int get draftNum => throw _privateConstructorUsedError;
 
@@ -79,10 +88,18 @@ abstract class $ServerChatDraftParamsCopyWith<$Res> {
           $Res Function(ServerChatDraftParams) then) =
       _$ServerChatDraftParamsCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'draft') String draft,
-      @JsonKey(name: 'draft_gentime') int draftGentime,
-      @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') int draftNum});
+      {@JsonKey(name: 'jid')
+          String jid,
+      @JsonKey(name: 'draft')
+          String draft,
+      @Deprecated('Draft version Deprecated: use Revision instead.')
+      @JsonKey(name: 'draft_gentime')
+          int draftGentime,
+      @JsonKey(name: 'revision')
+          int revision,
+      @Deprecated('Deprecated: use Revision instead.')
+      @JsonKey(name: 'draft_num')
+          int draftNum});
 }
 
 /// @nodoc
@@ -99,6 +116,7 @@ class _$ServerChatDraftParamsCopyWithImpl<$Res>
     Object? jid = freezed,
     Object? draft = freezed,
     Object? draftGentime = freezed,
+    Object? revision = freezed,
     Object? draftNum = freezed,
   }) {
     return _then(_value.copyWith(
@@ -113,6 +131,10 @@ class _$ServerChatDraftParamsCopyWithImpl<$Res>
       draftGentime: draftGentime == freezed
           ? _value.draftGentime
           : draftGentime // ignore: cast_nullable_to_non_nullable
+              as int,
+      revision: revision == freezed
+          ? _value.revision
+          : revision // ignore: cast_nullable_to_non_nullable
               as int,
       draftNum: draftNum == freezed
           ? _value.draftNum
@@ -130,10 +152,18 @@ abstract class _$ServerChatDraftParamsCopyWith<$Res>
       __$ServerChatDraftParamsCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'draft') String draft,
-      @JsonKey(name: 'draft_gentime') int draftGentime,
-      @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') int draftNum});
+      {@JsonKey(name: 'jid')
+          String jid,
+      @JsonKey(name: 'draft')
+          String draft,
+      @Deprecated('Draft version Deprecated: use Revision instead.')
+      @JsonKey(name: 'draft_gentime')
+          int draftGentime,
+      @JsonKey(name: 'revision')
+          int revision,
+      @Deprecated('Deprecated: use Revision instead.')
+      @JsonKey(name: 'draft_num')
+          int draftNum});
 }
 
 /// @nodoc
@@ -152,6 +182,7 @@ class __$ServerChatDraftParamsCopyWithImpl<$Res>
     Object? jid = freezed,
     Object? draft = freezed,
     Object? draftGentime = freezed,
+    Object? revision = freezed,
     Object? draftNum = freezed,
   }) {
     return _then(_ServerChatDraftParams(
@@ -166,6 +197,10 @@ class __$ServerChatDraftParamsCopyWithImpl<$Res>
       draftGentime: draftGentime == freezed
           ? _value.draftGentime
           : draftGentime // ignore: cast_nullable_to_non_nullable
+              as int,
+      revision: revision == freezed
+          ? _value.revision
+          : revision // ignore: cast_nullable_to_non_nullable
               as int,
       draftNum: draftNum == freezed
           ? _value.draftNum
@@ -183,9 +218,12 @@ class _$_ServerChatDraftParams implements _ServerChatDraftParams {
           required this.jid,
       @JsonKey(name: 'draft')
           required this.draft,
+      @Deprecated('Draft version Deprecated: use Revision instead.')
       @JsonKey(name: 'draft_gentime')
           required this.draftGentime,
-      @Deprecated('Deprecated.')
+      @JsonKey(name: 'revision')
+          required this.revision,
+      @Deprecated('Deprecated: use Revision instead.')
       @JsonKey(name: 'draft_num')
           required this.draftNum});
 
@@ -204,19 +242,25 @@ class _$_ServerChatDraftParams implements _ServerChatDraftParams {
   final String draft;
   @override
 
-  /// Draft version.
+  /// Draft version Deprecated: use Revision instead.
+  @Deprecated('Draft version Deprecated: use Revision instead.')
   @JsonKey(name: 'draft_gentime')
   final int draftGentime;
   @override
 
-  /// Deprecated.
-  @Deprecated('Deprecated.')
+  /// Revision Unixtime(ms).
+  @JsonKey(name: 'revision')
+  final int revision;
+  @override
+
+  /// Deprecated: use Revision instead.
+  @Deprecated('Deprecated: use Revision instead.')
   @JsonKey(name: 'draft_num')
   final int draftNum;
 
   @override
   String toString() {
-    return 'ServerChatDraftParams(jid: $jid, draft: $draft, draftGentime: $draftGentime, draftNum: $draftNum)';
+    return 'ServerChatDraftParams(jid: $jid, draft: $draft, draftGentime: $draftGentime, revision: $revision, draftNum: $draftNum)';
   }
 
   @override
@@ -230,6 +274,9 @@ class _$_ServerChatDraftParams implements _ServerChatDraftParams {
             (identical(other.draftGentime, draftGentime) ||
                 const DeepCollectionEquality()
                     .equals(other.draftGentime, draftGentime)) &&
+            (identical(other.revision, revision) ||
+                const DeepCollectionEquality()
+                    .equals(other.revision, revision)) &&
             (identical(other.draftNum, draftNum) ||
                 const DeepCollectionEquality()
                     .equals(other.draftNum, draftNum)));
@@ -241,6 +288,7 @@ class _$_ServerChatDraftParams implements _ServerChatDraftParams {
       const DeepCollectionEquality().hash(jid) ^
       const DeepCollectionEquality().hash(draft) ^
       const DeepCollectionEquality().hash(draftGentime) ^
+      const DeepCollectionEquality().hash(revision) ^
       const DeepCollectionEquality().hash(draftNum);
 
   @JsonKey(ignore: true)
@@ -261,9 +309,12 @@ abstract class _ServerChatDraftParams implements ServerChatDraftParams {
           required String jid,
       @JsonKey(name: 'draft')
           required String draft,
+      @Deprecated('Draft version Deprecated: use Revision instead.')
       @JsonKey(name: 'draft_gentime')
           required int draftGentime,
-      @Deprecated('Deprecated.')
+      @JsonKey(name: 'revision')
+          required int revision,
+      @Deprecated('Deprecated: use Revision instead.')
       @JsonKey(name: 'draft_num')
           required int draftNum}) = _$_ServerChatDraftParams;
 
@@ -282,13 +333,19 @@ abstract class _ServerChatDraftParams implements ServerChatDraftParams {
   String get draft => throw _privateConstructorUsedError;
   @override
 
-  /// Draft version.
+  /// Draft version Deprecated: use Revision instead.
+  @Deprecated('Draft version Deprecated: use Revision instead.')
   @JsonKey(name: 'draft_gentime')
   int get draftGentime => throw _privateConstructorUsedError;
   @override
 
-  /// Deprecated.
-  @Deprecated('Deprecated.')
+  /// Revision Unixtime(ms).
+  @JsonKey(name: 'revision')
+  int get revision => throw _privateConstructorUsedError;
+  @override
+
+  /// Deprecated: use Revision instead.
+  @Deprecated('Deprecated: use Revision instead.')
   @JsonKey(name: 'draft_num')
   int get draftNum => throw _privateConstructorUsedError;
   @override

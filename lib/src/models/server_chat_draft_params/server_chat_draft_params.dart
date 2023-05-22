@@ -14,11 +14,14 @@ class ServerChatDraftParams with _$ServerChatDraftParams {
     /// Draft text.
     @JsonKey(name: 'draft') required String draft,
     
-    /// Draft version.
-    @JsonKey(name: 'draft_gentime') required int draftGentime,
+    /// Draft version Deprecated: use Revision instead.
+    @Deprecated('Draft version Deprecated: use Revision instead.') @JsonKey(name: 'draft_gentime') required int draftGentime,
     
-    /// Deprecated.
-    @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') required int draftNum,
+    /// Revision Unixtime(ms).
+    @JsonKey(name: 'revision') required int revision,
+    
+    /// Deprecated: use Revision instead.
+    @Deprecated('Deprecated: use Revision instead.') @JsonKey(name: 'draft_num') required int draftNum,
     
     
   }) = _ServerChatDraftParams;

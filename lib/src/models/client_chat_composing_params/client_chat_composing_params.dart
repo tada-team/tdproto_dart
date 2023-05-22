@@ -17,8 +17,8 @@ class ClientChatComposingParams with _$ClientChatComposingParams {
     /// true = start typing / audio recording, false = stop.
     @JsonKey(name: 'composing') bool? composing,
     
-    /// Message draft data.
-    @JsonKey(name: 'draft') String? draft,
+    /// Message draft data Deprecated.
+    @Deprecated('Message draft data Deprecated.') @JsonKey(name: 'draft') String? draft,
     
     
   }) = _ClientChatComposingParams;

@@ -23,10 +23,15 @@ class _$ClientChatComposingParamsTearOff {
   const _$ClientChatComposingParamsTearOff();
 
   _ClientChatComposingParams call(
-      {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'is_audio') bool? isAudio,
-      @JsonKey(name: 'composing') bool? composing,
-      @JsonKey(name: 'draft') String? draft}) {
+      {@JsonKey(name: 'jid')
+          required String jid,
+      @JsonKey(name: 'is_audio')
+          bool? isAudio,
+      @JsonKey(name: 'composing')
+          bool? composing,
+      @Deprecated('Message draft data Deprecated.')
+      @JsonKey(name: 'draft')
+          String? draft}) {
     return _ClientChatComposingParams(
       jid: jid,
       isAudio: isAudio,
@@ -57,7 +62,8 @@ mixin _$ClientChatComposingParams {
   @JsonKey(name: 'composing')
   bool? get composing => throw _privateConstructorUsedError;
 
-  /// Message draft data.
+  /// Message draft data Deprecated.
+  @Deprecated('Message draft data Deprecated.')
   @JsonKey(name: 'draft')
   String? get draft => throw _privateConstructorUsedError;
 
@@ -73,10 +79,15 @@ abstract class $ClientChatComposingParamsCopyWith<$Res> {
           $Res Function(ClientChatComposingParams) then) =
       _$ClientChatComposingParamsCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'is_audio') bool? isAudio,
-      @JsonKey(name: 'composing') bool? composing,
-      @JsonKey(name: 'draft') String? draft});
+      {@JsonKey(name: 'jid')
+          String jid,
+      @JsonKey(name: 'is_audio')
+          bool? isAudio,
+      @JsonKey(name: 'composing')
+          bool? composing,
+      @Deprecated('Message draft data Deprecated.')
+      @JsonKey(name: 'draft')
+          String? draft});
 }
 
 /// @nodoc
@@ -124,10 +135,15 @@ abstract class _$ClientChatComposingParamsCopyWith<$Res>
       __$ClientChatComposingParamsCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'jid') String jid,
-      @JsonKey(name: 'is_audio') bool? isAudio,
-      @JsonKey(name: 'composing') bool? composing,
-      @JsonKey(name: 'draft') String? draft});
+      {@JsonKey(name: 'jid')
+          String jid,
+      @JsonKey(name: 'is_audio')
+          bool? isAudio,
+      @JsonKey(name: 'composing')
+          bool? composing,
+      @Deprecated('Message draft data Deprecated.')
+      @JsonKey(name: 'draft')
+          String? draft});
 }
 
 /// @nodoc
@@ -174,10 +190,15 @@ class __$ClientChatComposingParamsCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_ClientChatComposingParams implements _ClientChatComposingParams {
   const _$_ClientChatComposingParams(
-      {@JsonKey(name: 'jid') required this.jid,
-      @JsonKey(name: 'is_audio') this.isAudio,
-      @JsonKey(name: 'composing') this.composing,
-      @JsonKey(name: 'draft') this.draft});
+      {@JsonKey(name: 'jid')
+          required this.jid,
+      @JsonKey(name: 'is_audio')
+          this.isAudio,
+      @JsonKey(name: 'composing')
+          this.composing,
+      @Deprecated('Message draft data Deprecated.')
+      @JsonKey(name: 'draft')
+          this.draft});
 
   factory _$_ClientChatComposingParams.fromJson(Map<String, dynamic> json) =>
       _$$_ClientChatComposingParamsFromJson(json);
@@ -199,7 +220,8 @@ class _$_ClientChatComposingParams implements _ClientChatComposingParams {
   final bool? composing;
   @override
 
-  /// Message draft data.
+  /// Message draft data Deprecated.
+  @Deprecated('Message draft data Deprecated.')
   @JsonKey(name: 'draft')
   final String? draft;
 
@@ -247,10 +269,15 @@ class _$_ClientChatComposingParams implements _ClientChatComposingParams {
 
 abstract class _ClientChatComposingParams implements ClientChatComposingParams {
   const factory _ClientChatComposingParams(
-      {@JsonKey(name: 'jid') required String jid,
-      @JsonKey(name: 'is_audio') bool? isAudio,
-      @JsonKey(name: 'composing') bool? composing,
-      @JsonKey(name: 'draft') String? draft}) = _$_ClientChatComposingParams;
+      {@JsonKey(name: 'jid')
+          required String jid,
+      @JsonKey(name: 'is_audio')
+          bool? isAudio,
+      @JsonKey(name: 'composing')
+          bool? composing,
+      @Deprecated('Message draft data Deprecated.')
+      @JsonKey(name: 'draft')
+          String? draft}) = _$_ClientChatComposingParams;
 
   factory _ClientChatComposingParams.fromJson(Map<String, dynamic> json) =
       _$_ClientChatComposingParams.fromJson;
@@ -272,7 +299,8 @@ abstract class _ClientChatComposingParams implements ClientChatComposingParams {
   bool? get composing => throw _privateConstructorUsedError;
   @override
 
-  /// Message draft data.
+  /// Message draft data Deprecated.
+  @Deprecated('Message draft data Deprecated.')
   @JsonKey(name: 'draft')
   String? get draft => throw _privateConstructorUsedError;
   @override

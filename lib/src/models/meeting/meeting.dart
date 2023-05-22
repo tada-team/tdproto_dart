@@ -98,8 +98,11 @@ class Meeting with _$Meeting {
     /// Last message draft, if any.
     @JsonKey(name: 'draft') String? draft,
     
-    /// Last message draft version, if any.
-    @JsonKey(name: 'draft_gentime') int? draftGentime,
+    /// Last message draft version, if any Deprecated: use DraftRevision instead.
+    @Deprecated('Last message draft version, if any Deprecated: use DraftRevision instead.') @JsonKey(name: 'draft_gentime') int? draftGentime,
+    
+    /// Last message draft version, if any, Unixtime(ms).
+    @JsonKey(name: 'revision') int? draftRevision,
     
     /// Hidden chat.
     @JsonKey(name: 'hidden') bool? hidden,
@@ -269,8 +272,8 @@ class Meeting with _$Meeting {
     /// Date of the last message sent even if it was deleted.
     @JsonKey(name: 'last_activity') @DateTimeConverter() DateTime? lastActivity,
     
-    /// Deprecated.
-    @Deprecated('Deprecated.') @JsonKey(name: 'draft_num') int? draftNum,
+    /// Deprecated: use DraftRevision instead.
+    @Deprecated('Deprecated: use DraftRevision instead.') @JsonKey(name: 'draft_num') int? draftNum,
     
     /// Start date of meeting chat.
     @JsonKey(name: 'meeting_start_at') @DateTimeConverter() DateTime? meetingStartAt,

@@ -85,8 +85,12 @@ class _$MeetingTearOff {
           bool? collapsed,
       @JsonKey(name: 'draft')
           String? draft,
+      @Deprecated(
+          'Last message draft version, if any Deprecated: use DraftRevision instead.')
       @JsonKey(name: 'draft_gentime')
           int? draftGentime,
+      @JsonKey(name: 'revision')
+          int? draftRevision,
       @JsonKey(name: 'hidden')
           bool? hidden,
       @JsonKey(name: 'notifications_enabled')
@@ -202,7 +206,7 @@ class _$MeetingTearOff {
       @JsonKey(name: 'last_activity')
       @DateTimeConverter()
           DateTime? lastActivity,
-      @Deprecated('Deprecated.')
+      @Deprecated('Deprecated: use DraftRevision instead.')
       @JsonKey(name: 'draft_num')
           int? draftNum,
       @JsonKey(name: 'meeting_start_at')
@@ -244,6 +248,7 @@ class _$MeetingTearOff {
       collapsed: collapsed,
       draft: draft,
       draftGentime: draftGentime,
+      draftRevision: draftRevision,
       hidden: hidden,
       notificationsEnabled: notificationsEnabled,
       numImportants: numImportants,
@@ -440,9 +445,15 @@ mixin _$Meeting {
   @JsonKey(name: 'draft')
   String? get draft => throw _privateConstructorUsedError;
 
-  /// Last message draft version, if any.
+  /// Last message draft version, if any Deprecated: use DraftRevision instead.
+  @Deprecated(
+      'Last message draft version, if any Deprecated: use DraftRevision instead.')
   @JsonKey(name: 'draft_gentime')
   int? get draftGentime => throw _privateConstructorUsedError;
+
+  /// Last message draft version, if any, Unixtime(ms).
+  @JsonKey(name: 'revision')
+  int? get draftRevision => throw _privateConstructorUsedError;
 
   /// Hidden chat.
   @JsonKey(name: 'hidden')
@@ -671,8 +682,8 @@ mixin _$Meeting {
   @DateTimeConverter()
   DateTime? get lastActivity => throw _privateConstructorUsedError;
 
-  /// Deprecated.
-  @Deprecated('Deprecated.')
+  /// Deprecated: use DraftRevision instead.
+  @Deprecated('Deprecated: use DraftRevision instead.')
   @JsonKey(name: 'draft_num')
   int? get draftNum => throw _privateConstructorUsedError;
 
@@ -762,8 +773,12 @@ abstract class $MeetingCopyWith<$Res> {
           bool? collapsed,
       @JsonKey(name: 'draft')
           String? draft,
+      @Deprecated(
+          'Last message draft version, if any Deprecated: use DraftRevision instead.')
       @JsonKey(name: 'draft_gentime')
           int? draftGentime,
+      @JsonKey(name: 'revision')
+          int? draftRevision,
       @JsonKey(name: 'hidden')
           bool? hidden,
       @JsonKey(name: 'notifications_enabled')
@@ -879,7 +894,7 @@ abstract class $MeetingCopyWith<$Res> {
       @JsonKey(name: 'last_activity')
       @DateTimeConverter()
           DateTime? lastActivity,
-      @Deprecated('Deprecated.')
+      @Deprecated('Deprecated: use DraftRevision instead.')
       @JsonKey(name: 'draft_num')
           int? draftNum,
       @JsonKey(name: 'meeting_start_at')
@@ -938,6 +953,7 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
     Object? collapsed = freezed,
     Object? draft = freezed,
     Object? draftGentime = freezed,
+    Object? draftRevision = freezed,
     Object? hidden = freezed,
     Object? notificationsEnabled = freezed,
     Object? numImportants = freezed,
@@ -1123,6 +1139,10 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
       draftGentime: draftGentime == freezed
           ? _value.draftGentime
           : draftGentime // ignore: cast_nullable_to_non_nullable
+              as int?,
+      draftRevision: draftRevision == freezed
+          ? _value.draftRevision
+          : draftRevision // ignore: cast_nullable_to_non_nullable
               as int?,
       hidden: hidden == freezed
           ? _value.hidden
@@ -1488,8 +1508,12 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
           bool? collapsed,
       @JsonKey(name: 'draft')
           String? draft,
+      @Deprecated(
+          'Last message draft version, if any Deprecated: use DraftRevision instead.')
       @JsonKey(name: 'draft_gentime')
           int? draftGentime,
+      @JsonKey(name: 'revision')
+          int? draftRevision,
       @JsonKey(name: 'hidden')
           bool? hidden,
       @JsonKey(name: 'notifications_enabled')
@@ -1605,7 +1629,7 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
       @JsonKey(name: 'last_activity')
       @DateTimeConverter()
           DateTime? lastActivity,
-      @Deprecated('Deprecated.')
+      @Deprecated('Deprecated: use DraftRevision instead.')
       @JsonKey(name: 'draft_num')
           int? draftNum,
       @JsonKey(name: 'meeting_start_at')
@@ -1670,6 +1694,7 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res>
     Object? collapsed = freezed,
     Object? draft = freezed,
     Object? draftGentime = freezed,
+    Object? draftRevision = freezed,
     Object? hidden = freezed,
     Object? notificationsEnabled = freezed,
     Object? numImportants = freezed,
@@ -1855,6 +1880,10 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res>
       draftGentime: draftGentime == freezed
           ? _value.draftGentime
           : draftGentime // ignore: cast_nullable_to_non_nullable
+              as int?,
+      draftRevision: draftRevision == freezed
+          ? _value.draftRevision
+          : draftRevision // ignore: cast_nullable_to_non_nullable
               as int?,
       hidden: hidden == freezed
           ? _value.hidden
@@ -2167,8 +2196,12 @@ class _$_Meeting implements _Meeting {
           this.collapsed,
       @JsonKey(name: 'draft')
           this.draft,
+      @Deprecated(
+          'Last message draft version, if any Deprecated: use DraftRevision instead.')
       @JsonKey(name: 'draft_gentime')
           this.draftGentime,
+      @JsonKey(name: 'revision')
+          this.draftRevision,
       @JsonKey(name: 'hidden')
           this.hidden,
       @JsonKey(name: 'notifications_enabled')
@@ -2284,7 +2317,7 @@ class _$_Meeting implements _Meeting {
       @JsonKey(name: 'last_activity')
       @DateTimeConverter()
           this.lastActivity,
-      @Deprecated('Deprecated.')
+      @Deprecated('Deprecated: use DraftRevision instead.')
       @JsonKey(name: 'draft_num')
           this.draftNum,
       @JsonKey(name: 'meeting_start_at')
@@ -2453,9 +2486,16 @@ class _$_Meeting implements _Meeting {
   final String? draft;
   @override
 
-  /// Last message draft version, if any.
+  /// Last message draft version, if any Deprecated: use DraftRevision instead.
+  @Deprecated(
+      'Last message draft version, if any Deprecated: use DraftRevision instead.')
   @JsonKey(name: 'draft_gentime')
   final int? draftGentime;
+  @override
+
+  /// Last message draft version, if any, Unixtime(ms).
+  @JsonKey(name: 'revision')
+  final int? draftRevision;
   @override
 
   /// Hidden chat.
@@ -2741,8 +2781,8 @@ class _$_Meeting implements _Meeting {
   final DateTime? lastActivity;
   @override
 
-  /// Deprecated.
-  @Deprecated('Deprecated.')
+  /// Deprecated: use DraftRevision instead.
+  @Deprecated('Deprecated: use DraftRevision instead.')
   @JsonKey(name: 'draft_num')
   final int? draftNum;
   @override
@@ -2764,7 +2804,7 @@ class _$_Meeting implements _Meeting {
 
   @override
   String toString() {
-    return 'Meeting(id: $id, teamUuid: $teamUuid, ownerContactUuid: $ownerContactUuid, ownerUserUuid: $ownerUserUuid, personalAccountId: $personalAccountId, startAt: $startAt, endAt: $endAt, duration: $duration, freq: $freq, isArchive: $isArchive, isOutside: $isOutside, isRequired: $isRequired, canEdit: $canEdit, meetingMembers: $meetingMembers, vCSEnabled: $vCSEnabled, iVCSInfo: $iVCSInfo, meetingRecipientStatus: $meetingRecipientStatus, jid: $jid, chatType: $chatType, baseGentime: $baseGentime, gentime: $gentime, created: $created, displayName: $displayName, icons: $icons, countersEnabled: $countersEnabled, canCall: $canCall, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, collapsed: $collapsed, draft: $draft, draftGentime: $draftGentime, hidden: $hidden, notificationsEnabled: $notificationsEnabled, numImportants: $numImportants, numUnread: $numUnread, numUnreadNotices: $numUnreadNotices, lastMessage: $lastMessage, lastReadMessageId: $lastReadMessageId, section: $section, changeableFields: $changeableFields, pinned: $pinned, pinnedSortOrdering: $pinnedSortOrdering, numMembers: $numMembers, canDelete: $canDelete, description: $description, markup: $markup, feed: $feed, pinnedMessage: $pinnedMessage, colorIndex: $colorIndex, numItems: $numItems, numCheckedItems: $numCheckedItems, assignee: $assignee, num: $num, observers: $observers, owner: $owner, taskStatus: $taskStatus, title: $title, done: $done, doneReason: $doneReason, deadline: $deadline, deadlineExpired: $deadlineExpired, links: $links, tags: $tags, importance: $importance, urgency: $urgency, spentTime: $spentTime, complexity: $complexity, linkedMessages: $linkedMessages, uploads: $uploads, items: $items, parents: $parents, tabs: $tabs, status: $status, members: $members, canAddMember: $canAddMember, canRemoveMember: $canRemoveMember, canChangeMemberStatus: $canChangeMemberStatus, canChangeSettings: $canChangeSettings, defaultForAll: $defaultForAll, readonlyForMembers: $readonlyForMembers, autocleanupAge: $autocleanupAge, isPublic: $isPublic, canJoin: $canJoin, canDeleteAnyMessage: $canDeleteAnyMessage, canSetImportantAnyMessage: $canSetImportantAnyMessage, canMuteAll: $canMuteAll, lastActivity: $lastActivity, draftNum: $draftNum, meetingStartAt: $meetingStartAt, meetingFreq: $meetingFreq, meetingDuration: $meetingDuration)';
+    return 'Meeting(id: $id, teamUuid: $teamUuid, ownerContactUuid: $ownerContactUuid, ownerUserUuid: $ownerUserUuid, personalAccountId: $personalAccountId, startAt: $startAt, endAt: $endAt, duration: $duration, freq: $freq, isArchive: $isArchive, isOutside: $isOutside, isRequired: $isRequired, canEdit: $canEdit, meetingMembers: $meetingMembers, vCSEnabled: $vCSEnabled, iVCSInfo: $iVCSInfo, meetingRecipientStatus: $meetingRecipientStatus, jid: $jid, chatType: $chatType, baseGentime: $baseGentime, gentime: $gentime, created: $created, displayName: $displayName, icons: $icons, countersEnabled: $countersEnabled, canCall: $canCall, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, collapsed: $collapsed, draft: $draft, draftGentime: $draftGentime, draftRevision: $draftRevision, hidden: $hidden, notificationsEnabled: $notificationsEnabled, numImportants: $numImportants, numUnread: $numUnread, numUnreadNotices: $numUnreadNotices, lastMessage: $lastMessage, lastReadMessageId: $lastReadMessageId, section: $section, changeableFields: $changeableFields, pinned: $pinned, pinnedSortOrdering: $pinnedSortOrdering, numMembers: $numMembers, canDelete: $canDelete, description: $description, markup: $markup, feed: $feed, pinnedMessage: $pinnedMessage, colorIndex: $colorIndex, numItems: $numItems, numCheckedItems: $numCheckedItems, assignee: $assignee, num: $num, observers: $observers, owner: $owner, taskStatus: $taskStatus, title: $title, done: $done, doneReason: $doneReason, deadline: $deadline, deadlineExpired: $deadlineExpired, links: $links, tags: $tags, importance: $importance, urgency: $urgency, spentTime: $spentTime, complexity: $complexity, linkedMessages: $linkedMessages, uploads: $uploads, items: $items, parents: $parents, tabs: $tabs, status: $status, members: $members, canAddMember: $canAddMember, canRemoveMember: $canRemoveMember, canChangeMemberStatus: $canChangeMemberStatus, canChangeSettings: $canChangeSettings, defaultForAll: $defaultForAll, readonlyForMembers: $readonlyForMembers, autocleanupAge: $autocleanupAge, isPublic: $isPublic, canJoin: $canJoin, canDeleteAnyMessage: $canDeleteAnyMessage, canSetImportantAnyMessage: $canSetImportantAnyMessage, canMuteAll: $canMuteAll, lastActivity: $lastActivity, draftNum: $draftNum, meetingStartAt: $meetingStartAt, meetingFreq: $meetingFreq, meetingDuration: $meetingDuration)';
   }
 
   @override
@@ -2845,6 +2885,7 @@ class _$_Meeting implements _Meeting {
             (identical(other.collapsed, collapsed) || const DeepCollectionEquality().equals(other.collapsed, collapsed)) &&
             (identical(other.draft, draft) || const DeepCollectionEquality().equals(other.draft, draft)) &&
             (identical(other.draftGentime, draftGentime) || const DeepCollectionEquality().equals(other.draftGentime, draftGentime)) &&
+            (identical(other.draftRevision, draftRevision) || const DeepCollectionEquality().equals(other.draftRevision, draftRevision)) &&
             (identical(other.hidden, hidden) || const DeepCollectionEquality().equals(other.hidden, hidden)) &&
             (identical(other.notificationsEnabled, notificationsEnabled) || const DeepCollectionEquality().equals(other.notificationsEnabled, notificationsEnabled)) &&
             (identical(other.numImportants, numImportants) || const DeepCollectionEquality().equals(other.numImportants, numImportants)) &&
@@ -2941,6 +2982,7 @@ class _$_Meeting implements _Meeting {
       const DeepCollectionEquality().hash(collapsed) ^
       const DeepCollectionEquality().hash(draft) ^
       const DeepCollectionEquality().hash(draftGentime) ^
+      const DeepCollectionEquality().hash(draftRevision) ^
       const DeepCollectionEquality().hash(hidden) ^
       const DeepCollectionEquality().hash(notificationsEnabled) ^
       const DeepCollectionEquality().hash(numImportants) ^
@@ -3078,8 +3120,12 @@ abstract class _Meeting implements Meeting {
           bool? collapsed,
       @JsonKey(name: 'draft')
           String? draft,
+      @Deprecated(
+          'Last message draft version, if any Deprecated: use DraftRevision instead.')
       @JsonKey(name: 'draft_gentime')
           int? draftGentime,
+      @JsonKey(name: 'revision')
+          int? draftRevision,
       @JsonKey(name: 'hidden')
           bool? hidden,
       @JsonKey(name: 'notifications_enabled')
@@ -3195,7 +3241,7 @@ abstract class _Meeting implements Meeting {
       @JsonKey(name: 'last_activity')
       @DateTimeConverter()
           DateTime? lastActivity,
-      @Deprecated('Deprecated.')
+      @Deprecated('Deprecated: use DraftRevision instead.')
       @JsonKey(name: 'draft_num')
           int? draftNum,
       @JsonKey(name: 'meeting_start_at')
@@ -3363,9 +3409,16 @@ abstract class _Meeting implements Meeting {
   String? get draft => throw _privateConstructorUsedError;
   @override
 
-  /// Last message draft version, if any.
+  /// Last message draft version, if any Deprecated: use DraftRevision instead.
+  @Deprecated(
+      'Last message draft version, if any Deprecated: use DraftRevision instead.')
   @JsonKey(name: 'draft_gentime')
   int? get draftGentime => throw _privateConstructorUsedError;
+  @override
+
+  /// Last message draft version, if any, Unixtime(ms).
+  @JsonKey(name: 'revision')
+  int? get draftRevision => throw _privateConstructorUsedError;
   @override
 
   /// Hidden chat.
@@ -3651,8 +3704,8 @@ abstract class _Meeting implements Meeting {
   DateTime? get lastActivity => throw _privateConstructorUsedError;
   @override
 
-  /// Deprecated.
-  @Deprecated('Deprecated.')
+  /// Deprecated: use DraftRevision instead.
+  @Deprecated('Deprecated: use DraftRevision instead.')
   @JsonKey(name: 'draft_num')
   int? get draftNum => throw _privateConstructorUsedError;
   @override
