@@ -13,6 +13,7 @@ export 'src/enums/call_type.dart';
 export 'src/enums/chat_type.dart';
 export 'src/enums/counterparty_type.dart';
 export 'src/enums/currency.dart';
+export 'src/enums/enquiry_payment_status.dart';
 export 'src/enums/enquiry_status.dart';
 export 'src/enums/enquiry_type.dart';
 export 'src/enums/group_status.dart';

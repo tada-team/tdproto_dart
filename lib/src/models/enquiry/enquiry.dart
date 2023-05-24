@@ -69,6 +69,9 @@ class Enquiry with _$Enquiry {
     @JsonKey(name: 'status') required String status,
     
     /// .
+    @JsonKey(name: 'payment_status') required String paymentStatus,
+    
+    /// .
     @JsonKey(name: 'payment_type') required String paymentType,
     
     /// .

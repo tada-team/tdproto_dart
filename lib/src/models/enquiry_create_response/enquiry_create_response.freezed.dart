@@ -63,6 +63,8 @@ class _$EnquiryCreateResponseTearOff {
           required String enquiryType,
       @JsonKey(name: 'status')
           required String status,
+      @JsonKey(name: 'payment_status')
+          required String paymentStatus,
       @JsonKey(name: 'payment_type')
           required String paymentType,
       @JsonKey(name: 'file_name')
@@ -90,6 +92,7 @@ class _$EnquiryCreateResponseTearOff {
       deactivateAt: deactivateAt,
       enquiryType: enquiryType,
       status: status,
+      paymentStatus: paymentStatus,
       paymentType: paymentType,
       fileName: fileName,
       mediaUrl: mediaUrl,
@@ -187,6 +190,10 @@ mixin _$EnquiryCreateResponse {
   String get status => throw _privateConstructorUsedError;
 
   /// .
+  @JsonKey(name: 'payment_status')
+  String get paymentStatus => throw _privateConstructorUsedError;
+
+  /// .
   @JsonKey(name: 'payment_type')
   String get paymentType => throw _privateConstructorUsedError;
 
@@ -230,6 +237,7 @@ abstract class $EnquiryCreateResponseCopyWith<$Res> {
       @JsonKey(name: 'deactivate_at') String? deactivateAt,
       @JsonKey(name: 'enquiry_type') String enquiryType,
       @JsonKey(name: 'status') String status,
+      @JsonKey(name: 'payment_status') String paymentStatus,
       @JsonKey(name: 'payment_type') String paymentType,
       @JsonKey(name: 'file_name') String? fileName,
       @JsonKey(name: 'media_url') String? mediaUrl});
@@ -266,6 +274,7 @@ class _$EnquiryCreateResponseCopyWithImpl<$Res>
     Object? deactivateAt = freezed,
     Object? enquiryType = freezed,
     Object? status = freezed,
+    Object? paymentStatus = freezed,
     Object? paymentType = freezed,
     Object? fileName = freezed,
     Object? mediaUrl = freezed,
@@ -351,6 +360,10 @@ class _$EnquiryCreateResponseCopyWithImpl<$Res>
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String,
+      paymentStatus: paymentStatus == freezed
+          ? _value.paymentStatus
+          : paymentStatus // ignore: cast_nullable_to_non_nullable
+              as String,
       paymentType: paymentType == freezed
           ? _value.paymentType
           : paymentType // ignore: cast_nullable_to_non_nullable
@@ -395,6 +408,7 @@ abstract class _$EnquiryCreateResponseCopyWith<$Res>
       @JsonKey(name: 'deactivate_at') String? deactivateAt,
       @JsonKey(name: 'enquiry_type') String enquiryType,
       @JsonKey(name: 'status') String status,
+      @JsonKey(name: 'payment_status') String paymentStatus,
       @JsonKey(name: 'payment_type') String paymentType,
       @JsonKey(name: 'file_name') String? fileName,
       @JsonKey(name: 'media_url') String? mediaUrl});
@@ -433,6 +447,7 @@ class __$EnquiryCreateResponseCopyWithImpl<$Res>
     Object? deactivateAt = freezed,
     Object? enquiryType = freezed,
     Object? status = freezed,
+    Object? paymentStatus = freezed,
     Object? paymentType = freezed,
     Object? fileName = freezed,
     Object? mediaUrl = freezed,
@@ -518,6 +533,10 @@ class __$EnquiryCreateResponseCopyWithImpl<$Res>
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String,
+      paymentStatus: paymentStatus == freezed
+          ? _value.paymentStatus
+          : paymentStatus // ignore: cast_nullable_to_non_nullable
+              as String,
       paymentType: paymentType == freezed
           ? _value.paymentType
           : paymentType // ignore: cast_nullable_to_non_nullable
@@ -578,6 +597,8 @@ class _$_EnquiryCreateResponse implements _EnquiryCreateResponse {
           required this.enquiryType,
       @JsonKey(name: 'status')
           required this.status,
+      @JsonKey(name: 'payment_status')
+          required this.paymentStatus,
       @JsonKey(name: 'payment_type')
           required this.paymentType,
       @JsonKey(name: 'file_name')
@@ -691,6 +712,11 @@ class _$_EnquiryCreateResponse implements _EnquiryCreateResponse {
   @override
 
   /// .
+  @JsonKey(name: 'payment_status')
+  final String paymentStatus;
+  @override
+
+  /// .
   @JsonKey(name: 'payment_type')
   final String paymentType;
   @override
@@ -706,7 +732,7 @@ class _$_EnquiryCreateResponse implements _EnquiryCreateResponse {
 
   @override
   String toString() {
-    return 'EnquiryCreateResponse(id: $id, personalAccountId: $personalAccountId, selectableWorkplaceCount: $selectableWorkplaceCount, amount: $amount, tariffName: $tariffName, workplacePrice: $workplacePrice, periodDays: $periodDays, freeWorkplaceCount: $freeWorkplaceCount, activationDate: $activationDate, deactivationDate: $deactivationDate, createdAt: $createdAt, creditedAt: $creditedAt, actuallyPaidAt: $actuallyPaidAt, fixationPaidAt: $fixationPaidAt, expirationDate: $expirationDate, expiredAt: $expiredAt, activateAt: $activateAt, deactivateAt: $deactivateAt, enquiryType: $enquiryType, status: $status, paymentType: $paymentType, fileName: $fileName, mediaUrl: $mediaUrl)';
+    return 'EnquiryCreateResponse(id: $id, personalAccountId: $personalAccountId, selectableWorkplaceCount: $selectableWorkplaceCount, amount: $amount, tariffName: $tariffName, workplacePrice: $workplacePrice, periodDays: $periodDays, freeWorkplaceCount: $freeWorkplaceCount, activationDate: $activationDate, deactivationDate: $deactivationDate, createdAt: $createdAt, creditedAt: $creditedAt, actuallyPaidAt: $actuallyPaidAt, fixationPaidAt: $fixationPaidAt, expirationDate: $expirationDate, expiredAt: $expiredAt, activateAt: $activateAt, deactivateAt: $deactivateAt, enquiryType: $enquiryType, status: $status, paymentStatus: $paymentStatus, paymentType: $paymentType, fileName: $fileName, mediaUrl: $mediaUrl)';
   }
 
   @override
@@ -766,6 +792,7 @@ class _$_EnquiryCreateResponse implements _EnquiryCreateResponse {
             (identical(other.deactivateAt, deactivateAt) || const DeepCollectionEquality().equals(other.deactivateAt, deactivateAt)) &&
             (identical(other.enquiryType, enquiryType) || const DeepCollectionEquality().equals(other.enquiryType, enquiryType)) &&
             (identical(other.status, status) || const DeepCollectionEquality().equals(other.status, status)) &&
+            (identical(other.paymentStatus, paymentStatus) || const DeepCollectionEquality().equals(other.paymentStatus, paymentStatus)) &&
             (identical(other.paymentType, paymentType) || const DeepCollectionEquality().equals(other.paymentType, paymentType)) &&
             (identical(other.fileName, fileName) || const DeepCollectionEquality().equals(other.fileName, fileName)) &&
             (identical(other.mediaUrl, mediaUrl) || const DeepCollectionEquality().equals(other.mediaUrl, mediaUrl)));
@@ -794,6 +821,7 @@ class _$_EnquiryCreateResponse implements _EnquiryCreateResponse {
       const DeepCollectionEquality().hash(deactivateAt) ^
       const DeepCollectionEquality().hash(enquiryType) ^
       const DeepCollectionEquality().hash(status) ^
+      const DeepCollectionEquality().hash(paymentStatus) ^
       const DeepCollectionEquality().hash(paymentType) ^
       const DeepCollectionEquality().hash(fileName) ^
       const DeepCollectionEquality().hash(mediaUrl);
@@ -852,6 +880,8 @@ abstract class _EnquiryCreateResponse implements EnquiryCreateResponse {
           required String enquiryType,
       @JsonKey(name: 'status')
           required String status,
+      @JsonKey(name: 'payment_status')
+          required String paymentStatus,
       @JsonKey(name: 'payment_type')
           required String paymentType,
       @JsonKey(name: 'file_name')
@@ -962,6 +992,11 @@ abstract class _EnquiryCreateResponse implements EnquiryCreateResponse {
   /// .
   @JsonKey(name: 'status')
   String get status => throw _privateConstructorUsedError;
+  @override
+
+  /// .
+  @JsonKey(name: 'payment_status')
+  String get paymentStatus => throw _privateConstructorUsedError;
   @override
 
   /// .
