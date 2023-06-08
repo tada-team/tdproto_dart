@@ -26,13 +26,15 @@ class _$InvitableUserTearOff {
       @JsonKey(name: 'node') String? node,
       @JsonKey(name: 'display_name') required String displayName,
       @JsonKey(name: 'icons') required IconData icons,
-      @JsonKey(name: 'teams') List<String>? teams}) {
+      @JsonKey(name: 'teams') List<String>? teams,
+      @JsonKey(name: 'from_another_account') bool? fromAnotherAccount}) {
     return _InvitableUser(
       uid: uid,
       node: node,
       displayName: displayName,
       icons: icons,
       teams: teams,
+      fromAnotherAccount: fromAnotherAccount,
     );
   }
 
@@ -66,6 +68,10 @@ mixin _$InvitableUser {
   @JsonKey(name: 'teams')
   List<String>? get teams => throw _privateConstructorUsedError;
 
+  /// Флаг нахождения пользователя на другом аккаунте.
+  @JsonKey(name: 'from_another_account')
+  bool? get fromAnotherAccount => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $InvitableUserCopyWith<InvitableUser> get copyWith =>
@@ -82,7 +88,8 @@ abstract class $InvitableUserCopyWith<$Res> {
       @JsonKey(name: 'node') String? node,
       @JsonKey(name: 'display_name') String displayName,
       @JsonKey(name: 'icons') IconData icons,
-      @JsonKey(name: 'teams') List<String>? teams});
+      @JsonKey(name: 'teams') List<String>? teams,
+      @JsonKey(name: 'from_another_account') bool? fromAnotherAccount});
 
   $IconDataCopyWith<$Res> get icons;
 }
@@ -103,6 +110,7 @@ class _$InvitableUserCopyWithImpl<$Res>
     Object? displayName = freezed,
     Object? icons = freezed,
     Object? teams = freezed,
+    Object? fromAnotherAccount = freezed,
   }) {
     return _then(_value.copyWith(
       uid: uid == freezed
@@ -125,6 +133,10 @@ class _$InvitableUserCopyWithImpl<$Res>
           ? _value.teams
           : teams // ignore: cast_nullable_to_non_nullable
               as List<String>?,
+      fromAnotherAccount: fromAnotherAccount == freezed
+          ? _value.fromAnotherAccount
+          : fromAnotherAccount // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 
@@ -148,7 +160,8 @@ abstract class _$InvitableUserCopyWith<$Res>
       @JsonKey(name: 'node') String? node,
       @JsonKey(name: 'display_name') String displayName,
       @JsonKey(name: 'icons') IconData icons,
-      @JsonKey(name: 'teams') List<String>? teams});
+      @JsonKey(name: 'teams') List<String>? teams,
+      @JsonKey(name: 'from_another_account') bool? fromAnotherAccount});
 
   @override
   $IconDataCopyWith<$Res> get icons;
@@ -172,6 +185,7 @@ class __$InvitableUserCopyWithImpl<$Res>
     Object? displayName = freezed,
     Object? icons = freezed,
     Object? teams = freezed,
+    Object? fromAnotherAccount = freezed,
   }) {
     return _then(_InvitableUser(
       uid: uid == freezed
@@ -194,6 +208,10 @@ class __$InvitableUserCopyWithImpl<$Res>
           ? _value.teams
           : teams // ignore: cast_nullable_to_non_nullable
               as List<String>?,
+      fromAnotherAccount: fromAnotherAccount == freezed
+          ? _value.fromAnotherAccount
+          : fromAnotherAccount // ignore: cast_nullable_to_non_nullable
+              as bool?,
     ));
   }
 }
@@ -206,7 +224,8 @@ class _$_InvitableUser implements _InvitableUser {
       @JsonKey(name: 'node') this.node,
       @JsonKey(name: 'display_name') required this.displayName,
       @JsonKey(name: 'icons') required this.icons,
-      @JsonKey(name: 'teams') this.teams});
+      @JsonKey(name: 'teams') this.teams,
+      @JsonKey(name: 'from_another_account') this.fromAnotherAccount});
 
   factory _$_InvitableUser.fromJson(Map<String, dynamic> json) =>
       _$$_InvitableUserFromJson(json);
@@ -236,10 +255,15 @@ class _$_InvitableUser implements _InvitableUser {
   /// Common team uids, if any.
   @JsonKey(name: 'teams')
   final List<String>? teams;
+  @override
+
+  /// Флаг нахождения пользователя на другом аккаунте.
+  @JsonKey(name: 'from_another_account')
+  final bool? fromAnotherAccount;
 
   @override
   String toString() {
-    return 'InvitableUser(uid: $uid, node: $node, displayName: $displayName, icons: $icons, teams: $teams)';
+    return 'InvitableUser(uid: $uid, node: $node, displayName: $displayName, icons: $icons, teams: $teams, fromAnotherAccount: $fromAnotherAccount)';
   }
 
   @override
@@ -256,7 +280,10 @@ class _$_InvitableUser implements _InvitableUser {
             (identical(other.icons, icons) ||
                 const DeepCollectionEquality().equals(other.icons, icons)) &&
             (identical(other.teams, teams) ||
-                const DeepCollectionEquality().equals(other.teams, teams)));
+                const DeepCollectionEquality().equals(other.teams, teams)) &&
+            (identical(other.fromAnotherAccount, fromAnotherAccount) ||
+                const DeepCollectionEquality()
+                    .equals(other.fromAnotherAccount, fromAnotherAccount)));
   }
 
   @override
@@ -266,7 +293,8 @@ class _$_InvitableUser implements _InvitableUser {
       const DeepCollectionEquality().hash(node) ^
       const DeepCollectionEquality().hash(displayName) ^
       const DeepCollectionEquality().hash(icons) ^
-      const DeepCollectionEquality().hash(teams);
+      const DeepCollectionEquality().hash(teams) ^
+      const DeepCollectionEquality().hash(fromAnotherAccount);
 
   @JsonKey(ignore: true)
   @override
@@ -281,11 +309,13 @@ class _$_InvitableUser implements _InvitableUser {
 
 abstract class _InvitableUser implements InvitableUser {
   const factory _InvitableUser(
-      {@JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'node') String? node,
-      @JsonKey(name: 'display_name') required String displayName,
-      @JsonKey(name: 'icons') required IconData icons,
-      @JsonKey(name: 'teams') List<String>? teams}) = _$_InvitableUser;
+          {@JsonKey(name: 'uid') required String uid,
+          @JsonKey(name: 'node') String? node,
+          @JsonKey(name: 'display_name') required String displayName,
+          @JsonKey(name: 'icons') required IconData icons,
+          @JsonKey(name: 'teams') List<String>? teams,
+          @JsonKey(name: 'from_another_account') bool? fromAnotherAccount}) =
+      _$_InvitableUser;
 
   factory _InvitableUser.fromJson(Map<String, dynamic> json) =
       _$_InvitableUser.fromJson;
@@ -315,6 +345,11 @@ abstract class _InvitableUser implements InvitableUser {
   /// Common team uids, if any.
   @JsonKey(name: 'teams')
   List<String>? get teams => throw _privateConstructorUsedError;
+  @override
+
+  /// Флаг нахождения пользователя на другом аккаунте.
+  @JsonKey(name: 'from_another_account')
+  bool? get fromAnotherAccount => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$InvitableUserCopyWith<_InvitableUser> get copyWith =>

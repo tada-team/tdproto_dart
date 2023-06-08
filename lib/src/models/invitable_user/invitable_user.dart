@@ -23,6 +23,9 @@ class InvitableUser with _$InvitableUser {
     /// Common team uids, if any.
     @JsonKey(name: 'teams') List<String>? teams,
     
+    /// Флаг нахождения пользователя на другом аккаунте.
+    @JsonKey(name: 'from_another_account') bool? fromAnotherAccount,
+    
     
   }) = _InvitableUser;
 
