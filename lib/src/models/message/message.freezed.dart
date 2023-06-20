@@ -87,7 +87,11 @@ class _$MessageTearOff {
       @JsonKey(name: 'is_archive')
           bool? isArchive,
       @JsonKey(name: '_debug')
-          String? debug}) {
+          String? debug,
+      @JsonKey(name: 'thread_jid')
+          String? threadJID,
+      @JsonKey(name: 'thread_messages_count')
+          int? threadMessagesCount}) {
     return _Message(
       content: content,
       pushText: pushText,
@@ -120,6 +124,8 @@ class _$MessageTearOff {
       num: num,
       isArchive: isArchive,
       debug: debug,
+      threadJID: threadJID,
+      threadMessagesCount: threadMessagesCount,
     );
   }
 
@@ -261,6 +267,14 @@ mixin _$Message {
   @JsonKey(name: '_debug')
   String? get debug => throw _privateConstructorUsedError;
 
+  /// ThreadJID.
+  @JsonKey(name: 'thread_jid')
+  String? get threadJID => throw _privateConstructorUsedError;
+
+  /// Thread Messages Count.
+  @JsonKey(name: 'thread_messages_count')
+  int? get threadMessagesCount => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $MessageCopyWith<Message> get copyWith => throw _privateConstructorUsedError;
@@ -336,7 +350,11 @@ abstract class $MessageCopyWith<$Res> {
       @JsonKey(name: 'is_archive')
           bool? isArchive,
       @JsonKey(name: '_debug')
-          String? debug});
+          String? debug,
+      @JsonKey(name: 'thread_jid')
+          String? threadJID,
+      @JsonKey(name: 'thread_messages_count')
+          int? threadMessagesCount});
 
   $MessageContentCopyWith<$Res> get content;
   $MessageCopyWith<$Res>? get replyTo;
@@ -383,6 +401,8 @@ class _$MessageCopyWithImpl<$Res> implements $MessageCopyWith<$Res> {
     Object? num = freezed,
     Object? isArchive = freezed,
     Object? debug = freezed,
+    Object? threadJID = freezed,
+    Object? threadMessagesCount = freezed,
   }) {
     return _then(_value.copyWith(
       content: content == freezed
@@ -509,6 +529,14 @@ class _$MessageCopyWithImpl<$Res> implements $MessageCopyWith<$Res> {
           ? _value.debug
           : debug // ignore: cast_nullable_to_non_nullable
               as String?,
+      threadJID: threadJID == freezed
+          ? _value.threadJID
+          : threadJID // ignore: cast_nullable_to_non_nullable
+              as String?,
+      threadMessagesCount: threadMessagesCount == freezed
+          ? _value.threadMessagesCount
+          : threadMessagesCount // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 
@@ -602,7 +630,11 @@ abstract class _$MessageCopyWith<$Res> implements $MessageCopyWith<$Res> {
       @JsonKey(name: 'is_archive')
           bool? isArchive,
       @JsonKey(name: '_debug')
-          String? debug});
+          String? debug,
+      @JsonKey(name: 'thread_jid')
+          String? threadJID,
+      @JsonKey(name: 'thread_messages_count')
+          int? threadMessagesCount});
 
   @override
   $MessageContentCopyWith<$Res> get content;
@@ -652,6 +684,8 @@ class __$MessageCopyWithImpl<$Res> extends _$MessageCopyWithImpl<$Res>
     Object? num = freezed,
     Object? isArchive = freezed,
     Object? debug = freezed,
+    Object? threadJID = freezed,
+    Object? threadMessagesCount = freezed,
   }) {
     return _then(_Message(
       content: content == freezed
@@ -778,6 +812,14 @@ class __$MessageCopyWithImpl<$Res> extends _$MessageCopyWithImpl<$Res>
           ? _value.debug
           : debug // ignore: cast_nullable_to_non_nullable
               as String?,
+      threadJID: threadJID == freezed
+          ? _value.threadJID
+          : threadJID // ignore: cast_nullable_to_non_nullable
+              as String?,
+      threadMessagesCount: threadMessagesCount == freezed
+          ? _value.threadMessagesCount
+          : threadMessagesCount // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 }
@@ -816,7 +858,9 @@ class _$_Message implements _Message {
       @JsonKey(name: 'editable_until') @DateTimeConverter() this.editableUntil,
       @JsonKey(name: 'num') this.num,
       @JsonKey(name: 'is_archive') this.isArchive,
-      @JsonKey(name: '_debug') this.debug});
+      @JsonKey(name: '_debug') this.debug,
+      @JsonKey(name: 'thread_jid') this.threadJID,
+      @JsonKey(name: 'thread_messages_count') this.threadMessagesCount});
 
   factory _$_Message.fromJson(Map<String, dynamic> json) =>
       _$$_MessageFromJson(json);
@@ -980,10 +1024,20 @@ class _$_Message implements _Message {
   /// Debug information, if any.
   @JsonKey(name: '_debug')
   final String? debug;
+  @override
+
+  /// ThreadJID.
+  @JsonKey(name: 'thread_jid')
+  final String? threadJID;
+  @override
+
+  /// Thread Messages Count.
+  @JsonKey(name: 'thread_messages_count')
+  final int? threadMessagesCount;
 
   @override
   String toString() {
-    return 'Message(content: $content, pushText: $pushText, from: $from, to: $to, messageId: $messageId, created: $created, drafted: $drafted, gentime: $gentime, chatType: $chatType, chat: $chat, links: $links, markup: $markup, important: $important, edited: $edited, received: $received, numReceived: $numReceived, nopreview: $nopreview, hasPreviews: $hasPreviews, prev: $prev, isFirst: $isFirst, isLast: $isLast, uploads: $uploads, reactions: $reactions, replyTo: $replyTo, linkedMessages: $linkedMessages, notice: $notice, silently: $silently, editableUntil: $editableUntil, num: $num, isArchive: $isArchive, debug: $debug)';
+    return 'Message(content: $content, pushText: $pushText, from: $from, to: $to, messageId: $messageId, created: $created, drafted: $drafted, gentime: $gentime, chatType: $chatType, chat: $chat, links: $links, markup: $markup, important: $important, edited: $edited, received: $received, numReceived: $numReceived, nopreview: $nopreview, hasPreviews: $hasPreviews, prev: $prev, isFirst: $isFirst, isLast: $isLast, uploads: $uploads, reactions: $reactions, replyTo: $replyTo, linkedMessages: $linkedMessages, notice: $notice, silently: $silently, editableUntil: $editableUntil, num: $num, isArchive: $isArchive, debug: $debug, threadJID: $threadJID, threadMessagesCount: $threadMessagesCount)';
   }
 
   @override
@@ -1063,7 +1117,9 @@ class _$_Message implements _Message {
             (identical(other.editableUntil, editableUntil) || const DeepCollectionEquality().equals(other.editableUntil, editableUntil)) &&
             (identical(other.num, num) || const DeepCollectionEquality().equals(other.num, num)) &&
             (identical(other.isArchive, isArchive) || const DeepCollectionEquality().equals(other.isArchive, isArchive)) &&
-            (identical(other.debug, debug) || const DeepCollectionEquality().equals(other.debug, debug)));
+            (identical(other.debug, debug) || const DeepCollectionEquality().equals(other.debug, debug)) &&
+            (identical(other.threadJID, threadJID) || const DeepCollectionEquality().equals(other.threadJID, threadJID)) &&
+            (identical(other.threadMessagesCount, threadMessagesCount) || const DeepCollectionEquality().equals(other.threadMessagesCount, threadMessagesCount)));
   }
 
   @override
@@ -1099,7 +1155,9 @@ class _$_Message implements _Message {
       const DeepCollectionEquality().hash(editableUntil) ^
       const DeepCollectionEquality().hash(num) ^
       const DeepCollectionEquality().hash(isArchive) ^
-      const DeepCollectionEquality().hash(debug);
+      const DeepCollectionEquality().hash(debug) ^
+      const DeepCollectionEquality().hash(threadJID) ^
+      const DeepCollectionEquality().hash(threadMessagesCount);
 
   @JsonKey(ignore: true)
   @override
@@ -1179,7 +1237,11 @@ abstract class _Message implements Message {
       @JsonKey(name: 'is_archive')
           bool? isArchive,
       @JsonKey(name: '_debug')
-          String? debug}) = _$_Message;
+          String? debug,
+      @JsonKey(name: 'thread_jid')
+          String? threadJID,
+      @JsonKey(name: 'thread_messages_count')
+          int? threadMessagesCount}) = _$_Message;
 
   factory _Message.fromJson(Map<String, dynamic> json) = _$_Message.fromJson;
 
@@ -1342,6 +1404,16 @@ abstract class _Message implements Message {
   /// Debug information, if any.
   @JsonKey(name: '_debug')
   String? get debug => throw _privateConstructorUsedError;
+  @override
+
+  /// ThreadJID.
+  @JsonKey(name: 'thread_jid')
+  String? get threadJID => throw _privateConstructorUsedError;
+  @override
+
+  /// Thread Messages Count.
+  @JsonKey(name: 'thread_messages_count')
+  int? get threadMessagesCount => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MessageCopyWith<_Message> get copyWith =>

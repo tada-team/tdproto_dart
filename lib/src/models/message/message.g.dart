@@ -56,6 +56,8 @@ _$_Message _$$_MessageFromJson(Map<String, dynamic> json) => _$_Message(
       num: json['num'] as int?,
       isArchive: json['is_archive'] as bool?,
       debug: json['_debug'] as String?,
+      threadJID: json['thread_jid'] as String?,
+      threadMessagesCount: json['thread_messages_count'] as int?,
     );
 
 Map<String, dynamic> _$$_MessageToJson(_$_Message instance) =>
@@ -92,4 +94,6 @@ Map<String, dynamic> _$$_MessageToJson(_$_Message instance) =>
       'num': instance.num,
       'is_archive': instance.isArchive,
       '_debug': instance.debug,
+      'thread_jid': instance.threadJID,
+      'thread_messages_count': instance.threadMessagesCount,
     };

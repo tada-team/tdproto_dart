@@ -13,4 +13,7 @@ enum ChatType {
   @JsonValue('meeting')
   meeting,
   
+  @JsonValue('thread')
+  thread,
+  
 }

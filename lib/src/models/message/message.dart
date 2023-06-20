@@ -101,6 +101,12 @@ class Message with _$Message {
     /// Debug information, if any.
     @JsonKey(name: '_debug') String? debug,
     
+    /// ThreadJID.
+    @JsonKey(name: 'thread_jid') String? threadJID,
+    
+    /// Thread Messages Count.
+    @JsonKey(name: 'thread_messages_count') int? threadMessagesCount,
+    
     
   }) = _Message;
 
