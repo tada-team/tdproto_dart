@@ -132,6 +132,8 @@ _$_Meeting _$$_MeetingFromJson(Map<String, dynamic> json) => _$_Meeting(
           : DateTime.parse(json['meeting_start_at'] as String),
       meetingFreq: json['meeting_freq'] as bool?,
       meetingDuration: json['meeting_duration'] as int?,
+      parentMessageId: json['parent_message_id'] as String?,
+      parentChatId: json['parent_chat_id'] as String?,
     );
 
 Map<String, dynamic> _$$_MeetingToJson(_$_Meeting instance) =>
@@ -229,4 +231,6 @@ Map<String, dynamic> _$$_MeetingToJson(_$_Meeting instance) =>
       'meeting_start_at': instance.meetingStartAt?.toIso8601String(),
       'meeting_freq': instance.meetingFreq,
       'meeting_duration': instance.meetingDuration,
+      'parent_message_id': instance.parentMessageId,
+      'parent_chat_id': instance.parentChatId,
     };

@@ -233,6 +233,12 @@ class Chat with _$Chat {
     /// Meeting duration.
     @JsonKey(name: 'meeting_duration') int? meetingDuration,
     
+    /// Parent message uid for thread.
+    @JsonKey(name: 'parent_message_id') String? parentMessageId,
+    
+    /// Parent chat uid for thread.
+    @JsonKey(name: 'parent_chat_id') String? parentChatId,
+    
     
   }) = _Chat;
 
