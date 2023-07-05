@@ -314,6 +314,9 @@ class Features with _$Features {
     /// File Extension Whitelist Priority.
     @JsonKey(name: 'file_extension_whitelist_priority') bool? fileExtensionWhitelistPriority,
     
+    /// Thread enabled flag.
+    @JsonKey(name: 'threads_enabled') bool? threadsEnabled,
+    
     
   }) = _Features;
 

@@ -128,6 +128,7 @@ _$_Features _$$_FeaturesFromJson(Map<String, dynamic> json) => _$_Features(
               .toList(),
       fileExtensionWhitelistPriority:
           json['file_extension_whitelist_priority'] as bool?,
+      threadsEnabled: json['threads_enabled'] as bool?,
     );
 
 Map<String, dynamic> _$$_FeaturesToJson(_$_Features instance) =>
@@ -236,4 +237,5 @@ Map<String, dynamic> _$$_FeaturesToJson(_$_Features instance) =>
       'file_extension_blacklist': instance.fileExtensionBlacklist,
       'file_extension_whitelist_priority':
           instance.fileExtensionWhitelistPriority,
+      'threads_enabled': instance.threadsEnabled,
     };
