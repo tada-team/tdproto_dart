@@ -7,4 +7,7 @@ enum Mediasubtype {
   @JsonValue('newtask')
   newtask,
   
+  @JsonValue('named')
+  named,
+  
 }

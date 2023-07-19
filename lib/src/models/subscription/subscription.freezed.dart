@@ -26,13 +26,15 @@ class _$SubscriptionTearOff {
       @JsonKey(name: 'activated') String? activated,
       @JsonKey(name: 'expires') String? expires,
       @JsonKey(name: 'tariff_uid') String? tariffUid,
-      @JsonKey(name: 'user_uid') String? userUid}) {
+      @JsonKey(name: 'user_uid') String? userUid,
+      @JsonKey(name: 'empty_workplace_count') int? emptyWorkplaceCount}) {
     return _Subscription(
       uid: uid,
       activated: activated,
       expires: expires,
       tariffUid: tariffUid,
       userUid: userUid,
+      emptyWorkplaceCount: emptyWorkplaceCount,
     );
   }
 
@@ -66,6 +68,10 @@ mixin _$Subscription {
   @JsonKey(name: 'user_uid')
   String? get userUid => throw _privateConstructorUsedError;
 
+  /// EmptyWorkplaceCount empty workplace count.
+  @JsonKey(name: 'empty_workplace_count')
+  int? get emptyWorkplaceCount => throw _privateConstructorUsedError;
+
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $SubscriptionCopyWith<Subscription> get copyWith =>
@@ -82,7 +88,8 @@ abstract class $SubscriptionCopyWith<$Res> {
       @JsonKey(name: 'activated') String? activated,
       @JsonKey(name: 'expires') String? expires,
       @JsonKey(name: 'tariff_uid') String? tariffUid,
-      @JsonKey(name: 'user_uid') String? userUid});
+      @JsonKey(name: 'user_uid') String? userUid,
+      @JsonKey(name: 'empty_workplace_count') int? emptyWorkplaceCount});
 }
 
 /// @nodoc
@@ -100,6 +107,7 @@ class _$SubscriptionCopyWithImpl<$Res> implements $SubscriptionCopyWith<$Res> {
     Object? expires = freezed,
     Object? tariffUid = freezed,
     Object? userUid = freezed,
+    Object? emptyWorkplaceCount = freezed,
   }) {
     return _then(_value.copyWith(
       uid: uid == freezed
@@ -122,6 +130,10 @@ class _$SubscriptionCopyWithImpl<$Res> implements $SubscriptionCopyWith<$Res> {
           ? _value.userUid
           : userUid // ignore: cast_nullable_to_non_nullable
               as String?,
+      emptyWorkplaceCount: emptyWorkplaceCount == freezed
+          ? _value.emptyWorkplaceCount
+          : emptyWorkplaceCount // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 }
@@ -138,7 +150,8 @@ abstract class _$SubscriptionCopyWith<$Res>
       @JsonKey(name: 'activated') String? activated,
       @JsonKey(name: 'expires') String? expires,
       @JsonKey(name: 'tariff_uid') String? tariffUid,
-      @JsonKey(name: 'user_uid') String? userUid});
+      @JsonKey(name: 'user_uid') String? userUid,
+      @JsonKey(name: 'empty_workplace_count') int? emptyWorkplaceCount});
 }
 
 /// @nodoc
@@ -158,6 +171,7 @@ class __$SubscriptionCopyWithImpl<$Res> extends _$SubscriptionCopyWithImpl<$Res>
     Object? expires = freezed,
     Object? tariffUid = freezed,
     Object? userUid = freezed,
+    Object? emptyWorkplaceCount = freezed,
   }) {
     return _then(_Subscription(
       uid: uid == freezed
@@ -180,6 +194,10 @@ class __$SubscriptionCopyWithImpl<$Res> extends _$SubscriptionCopyWithImpl<$Res>
           ? _value.userUid
           : userUid // ignore: cast_nullable_to_non_nullable
               as String?,
+      emptyWorkplaceCount: emptyWorkplaceCount == freezed
+          ? _value.emptyWorkplaceCount
+          : emptyWorkplaceCount // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 }
@@ -192,7 +210,8 @@ class _$_Subscription implements _Subscription {
       @JsonKey(name: 'activated') this.activated,
       @JsonKey(name: 'expires') this.expires,
       @JsonKey(name: 'tariff_uid') this.tariffUid,
-      @JsonKey(name: 'user_uid') this.userUid});
+      @JsonKey(name: 'user_uid') this.userUid,
+      @JsonKey(name: 'empty_workplace_count') this.emptyWorkplaceCount});
 
   factory _$_Subscription.fromJson(Map<String, dynamic> json) =>
       _$$_SubscriptionFromJson(json);
@@ -222,10 +241,15 @@ class _$_Subscription implements _Subscription {
   /// ID of the user who subscribed.
   @JsonKey(name: 'user_uid')
   final String? userUid;
+  @override
+
+  /// EmptyWorkplaceCount empty workplace count.
+  @JsonKey(name: 'empty_workplace_count')
+  final int? emptyWorkplaceCount;
 
   @override
   String toString() {
-    return 'Subscription(uid: $uid, activated: $activated, expires: $expires, tariffUid: $tariffUid, userUid: $userUid)';
+    return 'Subscription(uid: $uid, activated: $activated, expires: $expires, tariffUid: $tariffUid, userUid: $userUid, emptyWorkplaceCount: $emptyWorkplaceCount)';
   }
 
   @override
@@ -244,7 +268,11 @@ class _$_Subscription implements _Subscription {
                 const DeepCollectionEquality()
                     .equals(other.tariffUid, tariffUid)) &&
             (identical(other.userUid, userUid) ||
-                const DeepCollectionEquality().equals(other.userUid, userUid)));
+                const DeepCollectionEquality()
+                    .equals(other.userUid, userUid)) &&
+            (identical(other.emptyWorkplaceCount, emptyWorkplaceCount) ||
+                const DeepCollectionEquality()
+                    .equals(other.emptyWorkplaceCount, emptyWorkplaceCount)));
   }
 
   @override
@@ -254,7 +282,8 @@ class _$_Subscription implements _Subscription {
       const DeepCollectionEquality().hash(activated) ^
       const DeepCollectionEquality().hash(expires) ^
       const DeepCollectionEquality().hash(tariffUid) ^
-      const DeepCollectionEquality().hash(userUid);
+      const DeepCollectionEquality().hash(userUid) ^
+      const DeepCollectionEquality().hash(emptyWorkplaceCount);
 
   @JsonKey(ignore: true)
   @override
@@ -269,11 +298,13 @@ class _$_Subscription implements _Subscription {
 
 abstract class _Subscription implements Subscription {
   const factory _Subscription(
-      {@JsonKey(name: 'uid') required String uid,
-      @JsonKey(name: 'activated') String? activated,
-      @JsonKey(name: 'expires') String? expires,
-      @JsonKey(name: 'tariff_uid') String? tariffUid,
-      @JsonKey(name: 'user_uid') String? userUid}) = _$_Subscription;
+          {@JsonKey(name: 'uid') required String uid,
+          @JsonKey(name: 'activated') String? activated,
+          @JsonKey(name: 'expires') String? expires,
+          @JsonKey(name: 'tariff_uid') String? tariffUid,
+          @JsonKey(name: 'user_uid') String? userUid,
+          @JsonKey(name: 'empty_workplace_count') int? emptyWorkplaceCount}) =
+      _$_Subscription;
 
   factory _Subscription.fromJson(Map<String, dynamic> json) =
       _$_Subscription.fromJson;
@@ -303,6 +334,11 @@ abstract class _Subscription implements Subscription {
   /// ID of the user who subscribed.
   @JsonKey(name: 'user_uid')
   String? get userUid => throw _privateConstructorUsedError;
+  @override
+
+  /// EmptyWorkplaceCount empty workplace count.
+  @JsonKey(name: 'empty_workplace_count')
+  int? get emptyWorkplaceCount => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$SubscriptionCopyWith<_Subscription> get copyWith =>

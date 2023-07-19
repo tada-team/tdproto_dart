@@ -23,6 +23,9 @@ class Subscription with _$Subscription {
     /// ID of the user who subscribed.
     @JsonKey(name: 'user_uid') String? userUid,
     
+    /// EmptyWorkplaceCount empty workplace count.
+    @JsonKey(name: 'empty_workplace_count') int? emptyWorkplaceCount,
+    
     
   }) = _Subscription;
 

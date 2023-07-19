@@ -13,6 +13,7 @@ _$_Subscription _$$_SubscriptionFromJson(Map<String, dynamic> json) =>
       expires: json['expires'] as String?,
       tariffUid: json['tariff_uid'] as String?,
       userUid: json['user_uid'] as String?,
+      emptyWorkplaceCount: json['empty_workplace_count'] as int?,
     );
 
 Map<String, dynamic> _$$_SubscriptionToJson(_$_Subscription instance) =>
@@ -22,4 +23,5 @@ Map<String, dynamic> _$$_SubscriptionToJson(_$_Subscription instance) =>
       'expires': instance.expires,
       'tariff_uid': instance.tariffUid,
       'user_uid': instance.userUid,
+      'empty_workplace_count': instance.emptyWorkplaceCount,
     };
