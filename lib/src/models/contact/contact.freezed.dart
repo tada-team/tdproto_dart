@@ -40,6 +40,8 @@ class _$ContactTearOff {
           required int gentime,
       @JsonKey(name: 'role')
           required String role,
+      @JsonKey(name: 'public_status')
+          ContactPublicStatus? publicStatus,
       @JsonKey(name: 'mood')
           String? mood,
       @JsonKey(name: 'status')
@@ -173,6 +175,7 @@ class _$ContactTearOff {
       icons: icons,
       gentime: gentime,
       role: role,
+      publicStatus: publicStatus,
       mood: mood,
       teamStatus: teamStatus,
       lastActivity: lastActivity,
@@ -281,6 +284,10 @@ mixin _$Contact {
   /// Role in this team.
   @JsonKey(name: 'role')
   String get role => throw _privateConstructorUsedError;
+
+  /// Public Status.
+  @JsonKey(name: 'public_status')
+  ContactPublicStatus? get publicStatus => throw _privateConstructorUsedError;
 
   /// Mood in this team.
   @JsonKey(name: 'mood')
@@ -553,6 +560,8 @@ abstract class $ContactCopyWith<$Res> {
           int gentime,
       @JsonKey(name: 'role')
           String role,
+      @JsonKey(name: 'public_status')
+          ContactPublicStatus? publicStatus,
       @JsonKey(name: 'mood')
           String? mood,
       @JsonKey(name: 'status')
@@ -678,6 +687,7 @@ abstract class $ContactCopyWith<$Res> {
           bool? canDeleteAnyMessage});
 
   $IconDataCopyWith<$Res> get icons;
+  $ContactPublicStatusCopyWith<$Res>? get publicStatus;
   $ContactCustomFieldsCopyWith<$Res>? get customFields;
 }
 
@@ -700,6 +710,7 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
     Object? icons = freezed,
     Object? gentime = freezed,
     Object? role = freezed,
+    Object? publicStatus = freezed,
     Object? mood = freezed,
     Object? teamStatus = freezed,
     Object? lastActivity = freezed,
@@ -798,6 +809,10 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
           ? _value.role
           : role // ignore: cast_nullable_to_non_nullable
               as String,
+      publicStatus: publicStatus == freezed
+          ? _value.publicStatus
+          : publicStatus // ignore: cast_nullable_to_non_nullable
+              as ContactPublicStatus?,
       mood: mood == freezed
           ? _value.mood
           : mood // ignore: cast_nullable_to_non_nullable
@@ -1049,6 +1064,17 @@ class _$ContactCopyWithImpl<$Res> implements $ContactCopyWith<$Res> {
   }
 
   @override
+  $ContactPublicStatusCopyWith<$Res>? get publicStatus {
+    if (_value.publicStatus == null) {
+      return null;
+    }
+
+    return $ContactPublicStatusCopyWith<$Res>(_value.publicStatus!, (value) {
+      return _then(_value.copyWith(publicStatus: value));
+    });
+  }
+
+  @override
   $ContactCustomFieldsCopyWith<$Res>? get customFields {
     if (_value.customFields == null) {
       return null;
@@ -1084,6 +1110,8 @@ abstract class _$ContactCopyWith<$Res> implements $ContactCopyWith<$Res> {
           int gentime,
       @JsonKey(name: 'role')
           String role,
+      @JsonKey(name: 'public_status')
+          ContactPublicStatus? publicStatus,
       @JsonKey(name: 'mood')
           String? mood,
       @JsonKey(name: 'status')
@@ -1211,6 +1239,8 @@ abstract class _$ContactCopyWith<$Res> implements $ContactCopyWith<$Res> {
   @override
   $IconDataCopyWith<$Res> get icons;
   @override
+  $ContactPublicStatusCopyWith<$Res>? get publicStatus;
+  @override
   $ContactCustomFieldsCopyWith<$Res>? get customFields;
 }
 
@@ -1234,6 +1264,7 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res>
     Object? icons = freezed,
     Object? gentime = freezed,
     Object? role = freezed,
+    Object? publicStatus = freezed,
     Object? mood = freezed,
     Object? teamStatus = freezed,
     Object? lastActivity = freezed,
@@ -1332,6 +1363,10 @@ class __$ContactCopyWithImpl<$Res> extends _$ContactCopyWithImpl<$Res>
           ? _value.role
           : role // ignore: cast_nullable_to_non_nullable
               as String,
+      publicStatus: publicStatus == freezed
+          ? _value.publicStatus
+          : publicStatus // ignore: cast_nullable_to_non_nullable
+              as ContactPublicStatus?,
       mood: mood == freezed
           ? _value.mood
           : mood // ignore: cast_nullable_to_non_nullable
@@ -1598,6 +1633,8 @@ class _$_Contact implements _Contact {
           required this.gentime,
       @JsonKey(name: 'role')
           required this.role,
+      @JsonKey(name: 'public_status')
+          this.publicStatus,
       @JsonKey(name: 'mood')
           this.mood,
       @JsonKey(name: 'status')
@@ -1770,6 +1807,11 @@ class _$_Contact implements _Contact {
   /// Role in this team.
   @JsonKey(name: 'role')
   final String role;
+  @override
+
+  /// Public Status.
+  @JsonKey(name: 'public_status')
+  final ContactPublicStatus? publicStatus;
   @override
 
   /// Mood in this team.
@@ -2076,7 +2118,7 @@ class _$_Contact implements _Contact {
 
   @override
   String toString() {
-    return 'Contact(jid: $jid, node: $node, displayName: $displayName, shortName: $shortName, contactEmail: $contactEmail, contactPhone: $contactPhone, icons: $icons, gentime: $gentime, role: $role, mood: $mood, teamStatus: $teamStatus, lastActivity: $lastActivity, isArchive: $isArchive, botname: $botname, sections: $sections, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, canCall: $canCall, canCreateTask: $canCreateTask, canImportTasks: $canImportTasks, canAddToGroup: $canAddToGroup, canDelete: $canDelete, changeableFields: $changeableFields, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, debugShowActivity: $debugShowActivity, dropallEnabled: $dropallEnabled, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, hidePushesContent: $hidePushesContent, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, focusUntil: $focusUntil, groupNotificationsEnabled: $groupNotificationsEnabled, taskNotificationsEnabled: $taskNotificationsEnabled, meetingNotificationsEnabled: $meetingNotificationsEnabled, systembotNotificationsEnabled: $systembotNotificationsEnabled, reactionNotificationsEnabled: $reactionNotificationsEnabled, contactShortView: $contactShortView, groupShortView: $groupShortView, taskShortView: $taskShortView, meetingShortView: $meetingShortView, contactMshortView: $contactMshortView, groupMshortView: $groupMshortView, auth2faEnabled: $auth2faEnabled, auth2faStatus: $auth2faStatus, taskMshortView: $taskMshortView, meetingMshortView: $meetingMshortView, contactShowArchived: $contactShowArchived, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, canAddToTeam: $canAddToTeam, canManageSections: $canManageSections, canManageProjects: $canManageProjects, canManageTags: $canManageTags, canManageIntegrations: $canManageIntegrations, canManageColorRules: $canManageColorRules, canCreateGroup: $canCreateGroup, canCreateMeeting: $canCreateMeeting, canJoinPublicGroups: $canJoinPublicGroups, canJoinPublicTasks: $canJoinPublicTasks, canImportChats: $canImportChats, canCreateTeam: $canCreateTeam, customFields: $customFields, canDeleteAnyMessage: $canDeleteAnyMessage)';
+    return 'Contact(jid: $jid, node: $node, displayName: $displayName, shortName: $shortName, contactEmail: $contactEmail, contactPhone: $contactPhone, icons: $icons, gentime: $gentime, role: $role, publicStatus: $publicStatus, mood: $mood, teamStatus: $teamStatus, lastActivity: $lastActivity, isArchive: $isArchive, botname: $botname, sections: $sections, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, canCall: $canCall, canCreateTask: $canCreateTask, canImportTasks: $canImportTasks, canAddToGroup: $canAddToGroup, canDelete: $canDelete, changeableFields: $changeableFields, familyName: $familyName, givenName: $givenName, patronymic: $patronymic, defaultLang: $defaultLang, debugShowActivity: $debugShowActivity, dropallEnabled: $dropallEnabled, altSend: $altSend, asteriskMention: $asteriskMention, alwaysSendPushes: $alwaysSendPushes, hidePushesContent: $hidePushesContent, timezone: $timezone, quietTimeStart: $quietTimeStart, quietTimeFinish: $quietTimeFinish, focusUntil: $focusUntil, groupNotificationsEnabled: $groupNotificationsEnabled, taskNotificationsEnabled: $taskNotificationsEnabled, meetingNotificationsEnabled: $meetingNotificationsEnabled, systembotNotificationsEnabled: $systembotNotificationsEnabled, reactionNotificationsEnabled: $reactionNotificationsEnabled, contactShortView: $contactShortView, groupShortView: $groupShortView, taskShortView: $taskShortView, meetingShortView: $meetingShortView, contactMshortView: $contactMshortView, groupMshortView: $groupMshortView, auth2faEnabled: $auth2faEnabled, auth2faStatus: $auth2faStatus, taskMshortView: $taskMshortView, meetingMshortView: $meetingMshortView, contactShowArchived: $contactShowArchived, unreadFirst: $unreadFirst, mUnreadFirst: $mUnreadFirst, canAddToTeam: $canAddToTeam, canManageSections: $canManageSections, canManageProjects: $canManageProjects, canManageTags: $canManageTags, canManageIntegrations: $canManageIntegrations, canManageColorRules: $canManageColorRules, canCreateGroup: $canCreateGroup, canCreateMeeting: $canCreateMeeting, canJoinPublicGroups: $canJoinPublicGroups, canJoinPublicTasks: $canJoinPublicTasks, canImportChats: $canImportChats, canCreateTeam: $canCreateTeam, customFields: $customFields, canDeleteAnyMessage: $canDeleteAnyMessage)';
   }
 
   @override
@@ -2106,6 +2148,9 @@ class _$_Contact implements _Contact {
                     .equals(other.gentime, gentime)) &&
             (identical(other.role, role) ||
                 const DeepCollectionEquality().equals(other.role, role)) &&
+            (identical(other.publicStatus, publicStatus) ||
+                const DeepCollectionEquality()
+                    .equals(other.publicStatus, publicStatus)) &&
             (identical(other.mood, mood) ||
                 const DeepCollectionEquality().equals(other.mood, mood)) &&
             (identical(other.teamStatus, teamStatus) ||
@@ -2147,9 +2192,7 @@ class _$_Contact implements _Contact {
             (identical(other.changeableFields, changeableFields) ||
                 const DeepCollectionEquality()
                     .equals(other.changeableFields, changeableFields)) &&
-            (identical(other.familyName, familyName) ||
-                const DeepCollectionEquality()
-                    .equals(other.familyName, familyName)) &&
+            (identical(other.familyName, familyName) || const DeepCollectionEquality().equals(other.familyName, familyName)) &&
             (identical(other.givenName, givenName) || const DeepCollectionEquality().equals(other.givenName, givenName)) &&
             (identical(other.patronymic, patronymic) || const DeepCollectionEquality().equals(other.patronymic, patronymic)) &&
             (identical(other.defaultLang, defaultLang) || const DeepCollectionEquality().equals(other.defaultLang, defaultLang)) &&
@@ -2209,6 +2252,7 @@ class _$_Contact implements _Contact {
       const DeepCollectionEquality().hash(icons) ^
       const DeepCollectionEquality().hash(gentime) ^
       const DeepCollectionEquality().hash(role) ^
+      const DeepCollectionEquality().hash(publicStatus) ^
       const DeepCollectionEquality().hash(mood) ^
       const DeepCollectionEquality().hash(teamStatus) ^
       const DeepCollectionEquality().hash(lastActivity) ^
@@ -2301,6 +2345,8 @@ abstract class _Contact implements Contact {
           required int gentime,
       @JsonKey(name: 'role')
           required String role,
+      @JsonKey(name: 'public_status')
+          ContactPublicStatus? publicStatus,
       @JsonKey(name: 'mood')
           String? mood,
       @JsonKey(name: 'status')
@@ -2472,6 +2518,11 @@ abstract class _Contact implements Contact {
   /// Role in this team.
   @JsonKey(name: 'role')
   String get role => throw _privateConstructorUsedError;
+  @override
+
+  /// Public Status.
+  @JsonKey(name: 'public_status')
+  ContactPublicStatus? get publicStatus => throw _privateConstructorUsedError;
   @override
 
   /// Mood in this team.

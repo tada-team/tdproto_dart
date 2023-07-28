@@ -16,6 +16,10 @@ _$_Contact _$$_ContactFromJson(Map<String, dynamic> json) => _$_Contact(
       icons: IconData.fromJson(json['icons'] as Map<String, dynamic>),
       gentime: json['gentime'] as int,
       role: json['role'] as String,
+      publicStatus: json['public_status'] == null
+          ? null
+          : ContactPublicStatus.fromJson(
+              json['public_status'] as Map<String, dynamic>),
       mood: json['mood'] as String?,
       teamStatus: json['status'] as String,
       lastActivity: json['last_activity'] == null
@@ -102,6 +106,7 @@ Map<String, dynamic> _$$_ContactToJson(_$_Contact instance) =>
       'icons': instance.icons.toJson(),
       'gentime': instance.gentime,
       'role': instance.role,
+      'public_status': instance.publicStatus?.toJson(),
       'mood': instance.mood,
       'status': instance.teamStatus,
       'last_activity': instance.lastActivity?.toIso8601String(),

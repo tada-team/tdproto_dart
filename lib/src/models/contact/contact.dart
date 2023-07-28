@@ -35,6 +35,9 @@ class Contact with _$Contact {
     /// Role in this team.
     @JsonKey(name: 'role') required String role,
     
+    /// Public Status.
+    @JsonKey(name: 'public_status') ContactPublicStatus? publicStatus,
+    
     /// Mood in this team.
     @JsonKey(name: 'mood') String? mood,
     
