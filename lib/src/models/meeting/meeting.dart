@@ -77,6 +77,9 @@ class Meeting with _$Meeting {
     /// Title.
     @JsonKey(name: 'display_name') required String displayName,
     
+    /// Public Status.
+    @JsonKey(name: 'public_status') PublicStatus? publicStatus,
+    
     /// Icons info.
     @JsonKey(name: 'icons') required IconData icons,
     

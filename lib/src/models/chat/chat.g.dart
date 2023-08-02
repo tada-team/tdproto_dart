@@ -13,6 +13,10 @@ _$_Chat _$$_ChatFromJson(Map<String, dynamic> json) => _$_Chat(
       gentime: json['gentime'] as int,
       created: const DateTimeConverter().fromJson(json['created'] as String),
       displayName: json['display_name'] as String,
+      publicStatus: json['public_status'] == null
+          ? null
+          : PublicStatus.fromJson(
+              json['public_status'] as Map<String, dynamic>),
       icons: IconData.fromJson(json['icons'] as Map<String, dynamic>),
       countersEnabled: json['counters_enabled'] as bool?,
       canCall: json['can_call'] as bool?,
@@ -120,6 +124,7 @@ Map<String, dynamic> _$$_ChatToJson(_$_Chat instance) => <String, dynamic>{
       'gentime': instance.gentime,
       'created': const DateTimeConverter().toJson(instance.created),
       'display_name': instance.displayName,
+      'public_status': instance.publicStatus?.toJson(),
       'icons': instance.icons.toJson(),
       'counters_enabled': instance.countersEnabled,
       'can_call': instance.canCall,

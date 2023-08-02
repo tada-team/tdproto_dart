@@ -71,6 +71,8 @@ class _$MeetingTearOff {
           required DateTime created,
       @JsonKey(name: 'display_name')
           required String displayName,
+      @JsonKey(name: 'public_status')
+          PublicStatus? publicStatus,
       @JsonKey(name: 'icons')
           required IconData icons,
       @JsonKey(name: 'counters_enabled')
@@ -244,6 +246,7 @@ class _$MeetingTearOff {
       gentime: gentime,
       created: created,
       displayName: displayName,
+      publicStatus: publicStatus,
       icons: icons,
       countersEnabled: countersEnabled,
       canCall: canCall,
@@ -422,6 +425,10 @@ mixin _$Meeting {
   /// Title.
   @JsonKey(name: 'display_name')
   String get displayName => throw _privateConstructorUsedError;
+
+  /// Public Status.
+  @JsonKey(name: 'public_status')
+  PublicStatus? get publicStatus => throw _privateConstructorUsedError;
 
   /// Icons info.
   @JsonKey(name: 'icons')
@@ -773,6 +780,8 @@ abstract class $MeetingCopyWith<$Res> {
           DateTime created,
       @JsonKey(name: 'display_name')
           String displayName,
+      @JsonKey(name: 'public_status')
+          PublicStatus? publicStatus,
       @JsonKey(name: 'icons')
           IconData icons,
       @JsonKey(name: 'counters_enabled')
@@ -925,6 +934,7 @@ abstract class $MeetingCopyWith<$Res> {
 
   $FreqCopyWith<$Res>? get freq;
   $IVCSInfoCopyWith<$Res>? get iVCSInfo;
+  $PublicStatusCopyWith<$Res>? get publicStatus;
   $IconDataCopyWith<$Res> get icons;
   $MessageCopyWith<$Res>? get lastMessage;
   $MessageCopyWith<$Res>? get pinnedMessage;
@@ -963,6 +973,7 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
     Object? gentime = freezed,
     Object? created = freezed,
     Object? displayName = freezed,
+    Object? publicStatus = freezed,
     Object? icons = freezed,
     Object? countersEnabled = freezed,
     Object? canCall = freezed,
@@ -1128,6 +1139,10 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String,
+      publicStatus: publicStatus == freezed
+          ? _value.publicStatus
+          : publicStatus // ignore: cast_nullable_to_non_nullable
+              as PublicStatus?,
       icons: icons == freezed
           ? _value.icons
           : icons // ignore: cast_nullable_to_non_nullable
@@ -1438,6 +1453,17 @@ class _$MeetingCopyWithImpl<$Res> implements $MeetingCopyWith<$Res> {
   }
 
   @override
+  $PublicStatusCopyWith<$Res>? get publicStatus {
+    if (_value.publicStatus == null) {
+      return null;
+    }
+
+    return $PublicStatusCopyWith<$Res>(_value.publicStatus!, (value) {
+      return _then(_value.copyWith(publicStatus: value));
+    });
+  }
+
+  @override
   $IconDataCopyWith<$Res> get icons {
     return $IconDataCopyWith<$Res>(_value.icons, (value) {
       return _then(_value.copyWith(icons: value));
@@ -1522,6 +1548,8 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
           DateTime created,
       @JsonKey(name: 'display_name')
           String displayName,
+      @JsonKey(name: 'public_status')
+          PublicStatus? publicStatus,
       @JsonKey(name: 'icons')
           IconData icons,
       @JsonKey(name: 'counters_enabled')
@@ -1677,6 +1705,8 @@ abstract class _$MeetingCopyWith<$Res> implements $MeetingCopyWith<$Res> {
   @override
   $IVCSInfoCopyWith<$Res>? get iVCSInfo;
   @override
+  $PublicStatusCopyWith<$Res>? get publicStatus;
+  @override
   $IconDataCopyWith<$Res> get icons;
   @override
   $MessageCopyWith<$Res>? get lastMessage;
@@ -1718,6 +1748,7 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res>
     Object? gentime = freezed,
     Object? created = freezed,
     Object? displayName = freezed,
+    Object? publicStatus = freezed,
     Object? icons = freezed,
     Object? countersEnabled = freezed,
     Object? canCall = freezed,
@@ -1883,6 +1914,10 @@ class __$MeetingCopyWithImpl<$Res> extends _$MeetingCopyWithImpl<$Res>
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String,
+      publicStatus: publicStatus == freezed
+          ? _value.publicStatus
+          : publicStatus // ignore: cast_nullable_to_non_nullable
+              as PublicStatus?,
       icons: icons == freezed
           ? _value.icons
           : icons // ignore: cast_nullable_to_non_nullable
@@ -2224,6 +2259,8 @@ class _$_Meeting implements _Meeting {
           required this.created,
       @JsonKey(name: 'display_name')
           required this.displayName,
+      @JsonKey(name: 'public_status')
+          this.publicStatus,
       @JsonKey(name: 'icons')
           required this.icons,
       @JsonKey(name: 'counters_enabled')
@@ -2495,6 +2532,11 @@ class _$_Meeting implements _Meeting {
   /// Title.
   @JsonKey(name: 'display_name')
   final String displayName;
+  @override
+
+  /// Public Status.
+  @JsonKey(name: 'public_status')
+  final PublicStatus? publicStatus;
   @override
 
   /// Icons info.
@@ -2860,7 +2902,7 @@ class _$_Meeting implements _Meeting {
 
   @override
   String toString() {
-    return 'Meeting(id: $id, teamUuid: $teamUuid, ownerContactUuid: $ownerContactUuid, ownerUserUuid: $ownerUserUuid, personalAccountId: $personalAccountId, startAt: $startAt, endAt: $endAt, duration: $duration, freq: $freq, isArchive: $isArchive, isOutside: $isOutside, isRequired: $isRequired, canEdit: $canEdit, meetingMembers: $meetingMembers, vCSEnabled: $vCSEnabled, iVCSInfo: $iVCSInfo, meetingRecipientStatus: $meetingRecipientStatus, jid: $jid, chatType: $chatType, baseGentime: $baseGentime, gentime: $gentime, created: $created, displayName: $displayName, icons: $icons, countersEnabled: $countersEnabled, canCall: $canCall, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, collapsed: $collapsed, draft: $draft, draftGentime: $draftGentime, draftRevision: $draftRevision, hidden: $hidden, notificationsEnabled: $notificationsEnabled, numImportants: $numImportants, numUnread: $numUnread, numUnreadNotices: $numUnreadNotices, lastMessage: $lastMessage, lastReadMessageId: $lastReadMessageId, section: $section, changeableFields: $changeableFields, pinned: $pinned, pinnedSortOrdering: $pinnedSortOrdering, numMembers: $numMembers, canDelete: $canDelete, description: $description, markup: $markup, feed: $feed, pinnedMessage: $pinnedMessage, colorIndex: $colorIndex, numItems: $numItems, numCheckedItems: $numCheckedItems, assignee: $assignee, num: $num, observers: $observers, owner: $owner, taskStatus: $taskStatus, title: $title, done: $done, doneReason: $doneReason, deadline: $deadline, deadlineExpired: $deadlineExpired, links: $links, tags: $tags, importance: $importance, urgency: $urgency, spentTime: $spentTime, complexity: $complexity, linkedMessages: $linkedMessages, uploads: $uploads, items: $items, parents: $parents, tabs: $tabs, status: $status, members: $members, canAddMember: $canAddMember, canRemoveMember: $canRemoveMember, canChangeMemberStatus: $canChangeMemberStatus, canChangeSettings: $canChangeSettings, defaultForAll: $defaultForAll, readonlyForMembers: $readonlyForMembers, autocleanupAge: $autocleanupAge, isPublic: $isPublic, canJoin: $canJoin, canDeleteAnyMessage: $canDeleteAnyMessage, canSetImportantAnyMessage: $canSetImportantAnyMessage, canMuteAll: $canMuteAll, lastActivity: $lastActivity, draftNum: $draftNum, meetingStartAt: $meetingStartAt, meetingFreq: $meetingFreq, meetingDuration: $meetingDuration, parentMessageId: $parentMessageId, parentChatId: $parentChatId)';
+    return 'Meeting(id: $id, teamUuid: $teamUuid, ownerContactUuid: $ownerContactUuid, ownerUserUuid: $ownerUserUuid, personalAccountId: $personalAccountId, startAt: $startAt, endAt: $endAt, duration: $duration, freq: $freq, isArchive: $isArchive, isOutside: $isOutside, isRequired: $isRequired, canEdit: $canEdit, meetingMembers: $meetingMembers, vCSEnabled: $vCSEnabled, iVCSInfo: $iVCSInfo, meetingRecipientStatus: $meetingRecipientStatus, jid: $jid, chatType: $chatType, baseGentime: $baseGentime, gentime: $gentime, created: $created, displayName: $displayName, publicStatus: $publicStatus, icons: $icons, countersEnabled: $countersEnabled, canCall: $canCall, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, collapsed: $collapsed, draft: $draft, draftGentime: $draftGentime, draftRevision: $draftRevision, hidden: $hidden, notificationsEnabled: $notificationsEnabled, numImportants: $numImportants, numUnread: $numUnread, numUnreadNotices: $numUnreadNotices, lastMessage: $lastMessage, lastReadMessageId: $lastReadMessageId, section: $section, changeableFields: $changeableFields, pinned: $pinned, pinnedSortOrdering: $pinnedSortOrdering, numMembers: $numMembers, canDelete: $canDelete, description: $description, markup: $markup, feed: $feed, pinnedMessage: $pinnedMessage, colorIndex: $colorIndex, numItems: $numItems, numCheckedItems: $numCheckedItems, assignee: $assignee, num: $num, observers: $observers, owner: $owner, taskStatus: $taskStatus, title: $title, done: $done, doneReason: $doneReason, deadline: $deadline, deadlineExpired: $deadlineExpired, links: $links, tags: $tags, importance: $importance, urgency: $urgency, spentTime: $spentTime, complexity: $complexity, linkedMessages: $linkedMessages, uploads: $uploads, items: $items, parents: $parents, tabs: $tabs, status: $status, members: $members, canAddMember: $canAddMember, canRemoveMember: $canRemoveMember, canChangeMemberStatus: $canChangeMemberStatus, canChangeSettings: $canChangeSettings, defaultForAll: $defaultForAll, readonlyForMembers: $readonlyForMembers, autocleanupAge: $autocleanupAge, isPublic: $isPublic, canJoin: $canJoin, canDeleteAnyMessage: $canDeleteAnyMessage, canSetImportantAnyMessage: $canSetImportantAnyMessage, canMuteAll: $canMuteAll, lastActivity: $lastActivity, draftNum: $draftNum, meetingStartAt: $meetingStartAt, meetingFreq: $meetingFreq, meetingDuration: $meetingDuration, parentMessageId: $parentMessageId, parentChatId: $parentChatId)';
   }
 
   @override
@@ -2932,8 +2974,9 @@ class _$_Meeting implements _Meeting {
             (identical(other.displayName, displayName) ||
                 const DeepCollectionEquality()
                     .equals(other.displayName, displayName)) &&
-            (identical(other.icons, icons) ||
-                const DeepCollectionEquality().equals(other.icons, icons)) &&
+            (identical(other.publicStatus, publicStatus) ||
+                const DeepCollectionEquality().equals(other.publicStatus, publicStatus)) &&
+            (identical(other.icons, icons) || const DeepCollectionEquality().equals(other.icons, icons)) &&
             (identical(other.countersEnabled, countersEnabled) || const DeepCollectionEquality().equals(other.countersEnabled, countersEnabled)) &&
             (identical(other.canCall, canCall) || const DeepCollectionEquality().equals(other.canCall, canCall)) &&
             (identical(other.canSendMessage, canSendMessage) || const DeepCollectionEquality().equals(other.canSendMessage, canSendMessage)) &&
@@ -3032,6 +3075,7 @@ class _$_Meeting implements _Meeting {
       const DeepCollectionEquality().hash(gentime) ^
       const DeepCollectionEquality().hash(created) ^
       const DeepCollectionEquality().hash(displayName) ^
+      const DeepCollectionEquality().hash(publicStatus) ^
       const DeepCollectionEquality().hash(icons) ^
       const DeepCollectionEquality().hash(countersEnabled) ^
       const DeepCollectionEquality().hash(canCall) ^
@@ -3166,6 +3210,8 @@ abstract class _Meeting implements Meeting {
           required DateTime created,
       @JsonKey(name: 'display_name')
           required String displayName,
+      @JsonKey(name: 'public_status')
+          PublicStatus? publicStatus,
       @JsonKey(name: 'icons')
           required IconData icons,
       @JsonKey(name: 'counters_enabled')
@@ -3436,6 +3482,11 @@ abstract class _Meeting implements Meeting {
   /// Title.
   @JsonKey(name: 'display_name')
   String get displayName => throw _privateConstructorUsedError;
+  @override
+
+  /// Public Status.
+  @JsonKey(name: 'public_status')
+  PublicStatus? get publicStatus => throw _privateConstructorUsedError;
   @override
 
   /// Icons info.

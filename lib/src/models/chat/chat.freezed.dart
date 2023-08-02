@@ -35,6 +35,8 @@ class _$ChatTearOff {
           required DateTime created,
       @JsonKey(name: 'display_name')
           required String displayName,
+      @JsonKey(name: 'public_status')
+          PublicStatus? publicStatus,
       @JsonKey(name: 'icons')
           required IconData icons,
       @JsonKey(name: 'counters_enabled')
@@ -191,6 +193,7 @@ class _$ChatTearOff {
       gentime: gentime,
       created: created,
       displayName: displayName,
+      publicStatus: publicStatus,
       icons: icons,
       countersEnabled: countersEnabled,
       canCall: canCall,
@@ -299,6 +302,10 @@ mixin _$Chat {
   /// Title.
   @JsonKey(name: 'display_name')
   String get displayName => throw _privateConstructorUsedError;
+
+  /// Public Status.
+  @JsonKey(name: 'public_status')
+  PublicStatus? get publicStatus => throw _privateConstructorUsedError;
 
   /// Icons info.
   @JsonKey(name: 'icons')
@@ -614,6 +621,8 @@ abstract class $ChatCopyWith<$Res> {
           DateTime created,
       @JsonKey(name: 'display_name')
           String displayName,
+      @JsonKey(name: 'public_status')
+          PublicStatus? publicStatus,
       @JsonKey(name: 'icons')
           IconData icons,
       @JsonKey(name: 'counters_enabled')
@@ -764,6 +773,7 @@ abstract class $ChatCopyWith<$Res> {
       @JsonKey(name: 'parent_chat_id')
           String? parentChatId});
 
+  $PublicStatusCopyWith<$Res>? get publicStatus;
   $IconDataCopyWith<$Res> get icons;
   $MessageCopyWith<$Res>? get lastMessage;
   $MessageCopyWith<$Res>? get pinnedMessage;
@@ -785,6 +795,7 @@ class _$ChatCopyWithImpl<$Res> implements $ChatCopyWith<$Res> {
     Object? gentime = freezed,
     Object? created = freezed,
     Object? displayName = freezed,
+    Object? publicStatus = freezed,
     Object? icons = freezed,
     Object? countersEnabled = freezed,
     Object? canCall = freezed,
@@ -882,6 +893,10 @@ class _$ChatCopyWithImpl<$Res> implements $ChatCopyWith<$Res> {
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String,
+      publicStatus: publicStatus == freezed
+          ? _value.publicStatus
+          : publicStatus // ignore: cast_nullable_to_non_nullable
+              as PublicStatus?,
       icons: icons == freezed
           ? _value.icons
           : icons // ignore: cast_nullable_to_non_nullable
@@ -1170,6 +1185,17 @@ class _$ChatCopyWithImpl<$Res> implements $ChatCopyWith<$Res> {
   }
 
   @override
+  $PublicStatusCopyWith<$Res>? get publicStatus {
+    if (_value.publicStatus == null) {
+      return null;
+    }
+
+    return $PublicStatusCopyWith<$Res>(_value.publicStatus!, (value) {
+      return _then(_value.copyWith(publicStatus: value));
+    });
+  }
+
+  @override
   $IconDataCopyWith<$Res> get icons {
     return $IconDataCopyWith<$Res>(_value.icons, (value) {
       return _then(_value.copyWith(icons: value));
@@ -1218,6 +1244,8 @@ abstract class _$ChatCopyWith<$Res> implements $ChatCopyWith<$Res> {
           DateTime created,
       @JsonKey(name: 'display_name')
           String displayName,
+      @JsonKey(name: 'public_status')
+          PublicStatus? publicStatus,
       @JsonKey(name: 'icons')
           IconData icons,
       @JsonKey(name: 'counters_enabled')
@@ -1369,6 +1397,8 @@ abstract class _$ChatCopyWith<$Res> implements $ChatCopyWith<$Res> {
           String? parentChatId});
 
   @override
+  $PublicStatusCopyWith<$Res>? get publicStatus;
+  @override
   $IconDataCopyWith<$Res> get icons;
   @override
   $MessageCopyWith<$Res>? get lastMessage;
@@ -1393,6 +1423,7 @@ class __$ChatCopyWithImpl<$Res> extends _$ChatCopyWithImpl<$Res>
     Object? gentime = freezed,
     Object? created = freezed,
     Object? displayName = freezed,
+    Object? publicStatus = freezed,
     Object? icons = freezed,
     Object? countersEnabled = freezed,
     Object? canCall = freezed,
@@ -1490,6 +1521,10 @@ class __$ChatCopyWithImpl<$Res> extends _$ChatCopyWithImpl<$Res>
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String,
+      publicStatus: publicStatus == freezed
+          ? _value.publicStatus
+          : publicStatus // ignore: cast_nullable_to_non_nullable
+              as PublicStatus?,
       icons: icons == freezed
           ? _value.icons
           : icons // ignore: cast_nullable_to_non_nullable
@@ -1795,6 +1830,8 @@ class _$_Chat implements _Chat {
           required this.created,
       @JsonKey(name: 'display_name')
           required this.displayName,
+      @JsonKey(name: 'public_status')
+          this.publicStatus,
       @JsonKey(name: 'icons')
           required this.icons,
       @JsonKey(name: 'counters_enabled')
@@ -1978,6 +2015,11 @@ class _$_Chat implements _Chat {
   /// Title.
   @JsonKey(name: 'display_name')
   final String displayName;
+  @override
+
+  /// Public Status.
+  @JsonKey(name: 'public_status')
+  final PublicStatus? publicStatus;
   @override
 
   /// Icons info.
@@ -2343,7 +2385,7 @@ class _$_Chat implements _Chat {
 
   @override
   String toString() {
-    return 'Chat(jid: $jid, chatType: $chatType, baseGentime: $baseGentime, gentime: $gentime, created: $created, displayName: $displayName, icons: $icons, countersEnabled: $countersEnabled, canCall: $canCall, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, collapsed: $collapsed, draft: $draft, draftGentime: $draftGentime, draftRevision: $draftRevision, hidden: $hidden, notificationsEnabled: $notificationsEnabled, numImportants: $numImportants, numUnread: $numUnread, numUnreadNotices: $numUnreadNotices, lastMessage: $lastMessage, lastReadMessageId: $lastReadMessageId, section: $section, changeableFields: $changeableFields, pinned: $pinned, pinnedSortOrdering: $pinnedSortOrdering, numMembers: $numMembers, canDelete: $canDelete, description: $description, markup: $markup, feed: $feed, pinnedMessage: $pinnedMessage, colorIndex: $colorIndex, numItems: $numItems, numCheckedItems: $numCheckedItems, assignee: $assignee, num: $num, observers: $observers, owner: $owner, taskStatus: $taskStatus, title: $title, done: $done, doneReason: $doneReason, deadline: $deadline, deadlineExpired: $deadlineExpired, links: $links, tags: $tags, importance: $importance, urgency: $urgency, spentTime: $spentTime, complexity: $complexity, linkedMessages: $linkedMessages, uploads: $uploads, items: $items, parents: $parents, tabs: $tabs, status: $status, members: $members, canAddMember: $canAddMember, canRemoveMember: $canRemoveMember, canChangeMemberStatus: $canChangeMemberStatus, canChangeSettings: $canChangeSettings, defaultForAll: $defaultForAll, readonlyForMembers: $readonlyForMembers, autocleanupAge: $autocleanupAge, isPublic: $isPublic, canJoin: $canJoin, canDeleteAnyMessage: $canDeleteAnyMessage, canSetImportantAnyMessage: $canSetImportantAnyMessage, canMuteAll: $canMuteAll, lastActivity: $lastActivity, draftNum: $draftNum, meetingStartAt: $meetingStartAt, meetingFreq: $meetingFreq, meetingDuration: $meetingDuration, parentMessageId: $parentMessageId, parentChatId: $parentChatId)';
+    return 'Chat(jid: $jid, chatType: $chatType, baseGentime: $baseGentime, gentime: $gentime, created: $created, displayName: $displayName, publicStatus: $publicStatus, icons: $icons, countersEnabled: $countersEnabled, canCall: $canCall, canSendMessage: $canSendMessage, cantSendMessageReason: $cantSendMessageReason, collapsed: $collapsed, draft: $draft, draftGentime: $draftGentime, draftRevision: $draftRevision, hidden: $hidden, notificationsEnabled: $notificationsEnabled, numImportants: $numImportants, numUnread: $numUnread, numUnreadNotices: $numUnreadNotices, lastMessage: $lastMessage, lastReadMessageId: $lastReadMessageId, section: $section, changeableFields: $changeableFields, pinned: $pinned, pinnedSortOrdering: $pinnedSortOrdering, numMembers: $numMembers, canDelete: $canDelete, description: $description, markup: $markup, feed: $feed, pinnedMessage: $pinnedMessage, colorIndex: $colorIndex, numItems: $numItems, numCheckedItems: $numCheckedItems, assignee: $assignee, num: $num, observers: $observers, owner: $owner, taskStatus: $taskStatus, title: $title, done: $done, doneReason: $doneReason, deadline: $deadline, deadlineExpired: $deadlineExpired, links: $links, tags: $tags, importance: $importance, urgency: $urgency, spentTime: $spentTime, complexity: $complexity, linkedMessages: $linkedMessages, uploads: $uploads, items: $items, parents: $parents, tabs: $tabs, status: $status, members: $members, canAddMember: $canAddMember, canRemoveMember: $canRemoveMember, canChangeMemberStatus: $canChangeMemberStatus, canChangeSettings: $canChangeSettings, defaultForAll: $defaultForAll, readonlyForMembers: $readonlyForMembers, autocleanupAge: $autocleanupAge, isPublic: $isPublic, canJoin: $canJoin, canDeleteAnyMessage: $canDeleteAnyMessage, canSetImportantAnyMessage: $canSetImportantAnyMessage, canMuteAll: $canMuteAll, lastActivity: $lastActivity, draftNum: $draftNum, meetingStartAt: $meetingStartAt, meetingFreq: $meetingFreq, meetingDuration: $meetingDuration, parentMessageId: $parentMessageId, parentChatId: $parentChatId)';
   }
 
   @override
@@ -2367,6 +2409,9 @@ class _$_Chat implements _Chat {
             (identical(other.displayName, displayName) ||
                 const DeepCollectionEquality()
                     .equals(other.displayName, displayName)) &&
+            (identical(other.publicStatus, publicStatus) ||
+                const DeepCollectionEquality()
+                    .equals(other.publicStatus, publicStatus)) &&
             (identical(other.icons, icons) ||
                 const DeepCollectionEquality().equals(other.icons, icons)) &&
             (identical(other.countersEnabled, countersEnabled) ||
@@ -2412,9 +2457,7 @@ class _$_Chat implements _Chat {
             (identical(other.lastReadMessageId, lastReadMessageId) ||
                 const DeepCollectionEquality()
                     .equals(other.lastReadMessageId, lastReadMessageId)) &&
-            (identical(other.section, section) ||
-                const DeepCollectionEquality()
-                    .equals(other.section, section)) &&
+            (identical(other.section, section) || const DeepCollectionEquality().equals(other.section, section)) &&
             (identical(other.changeableFields, changeableFields) || const DeepCollectionEquality().equals(other.changeableFields, changeableFields)) &&
             (identical(other.pinned, pinned) || const DeepCollectionEquality().equals(other.pinned, pinned)) &&
             (identical(other.pinnedSortOrdering, pinnedSortOrdering) || const DeepCollectionEquality().equals(other.pinnedSortOrdering, pinnedSortOrdering)) &&
@@ -2480,6 +2523,7 @@ class _$_Chat implements _Chat {
       const DeepCollectionEquality().hash(gentime) ^
       const DeepCollectionEquality().hash(created) ^
       const DeepCollectionEquality().hash(displayName) ^
+      const DeepCollectionEquality().hash(publicStatus) ^
       const DeepCollectionEquality().hash(icons) ^
       const DeepCollectionEquality().hash(countersEnabled) ^
       const DeepCollectionEquality().hash(canCall) ^
@@ -2578,6 +2622,8 @@ abstract class _Chat implements Chat {
           required DateTime created,
       @JsonKey(name: 'display_name')
           required String displayName,
+      @JsonKey(name: 'public_status')
+          PublicStatus? publicStatus,
       @JsonKey(name: 'icons')
           required IconData icons,
       @JsonKey(name: 'counters_enabled')
@@ -2761,6 +2807,11 @@ abstract class _Chat implements Chat {
   /// Title.
   @JsonKey(name: 'display_name')
   String get displayName => throw _privateConstructorUsedError;
+  @override
+
+  /// Public Status.
+  @JsonKey(name: 'public_status')
+  PublicStatus? get publicStatus => throw _privateConstructorUsedError;
   @override
 
   /// Icons info.
