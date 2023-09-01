@@ -19,6 +19,10 @@ _$_UserWithMe _$$_UserWithMeFromJson(Map<String, dynamic> json) =>
           ? null
           : PersonalAccountBilling.fromJson(
               json['account'] as Map<String, dynamic>),
+      teamAccount: json['team_account'] == null
+          ? null
+          : PersonalAccountBilling.fromJson(
+              json['team_account'] as Map<String, dynamic>),
       phone: json['phone'] as String?,
       email: json['email'] as String?,
       familyName: json['family_name'] as String?,
@@ -43,6 +47,7 @@ Map<String, dynamic> _$$_UserWithMeToJson(_$_UserWithMe instance) =>
       'teams': instance.teams.map((e) => e.toJson()).toList(),
       'devices': instance.devices.map((e) => e.toJson()).toList(),
       'account': instance.account?.toJson(),
+      'team_account': instance.teamAccount?.toJson(),
       'phone': instance.phone,
       'email': instance.email,
       'family_name': instance.familyName,

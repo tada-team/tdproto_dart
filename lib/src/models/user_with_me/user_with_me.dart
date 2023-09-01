@@ -20,6 +20,9 @@ class UserWithMe with _$UserWithMe {
     /// Personal account from billing.
     @JsonKey(name: 'account') PersonalAccountBilling? account,
     
+    /// Personal account from billing by opened team.
+    @JsonKey(name: 'team_account') PersonalAccountBilling? teamAccount,
+    
     /// Phone for login.
     @JsonKey(name: 'phone') String? phone,
     
